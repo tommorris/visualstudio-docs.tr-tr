@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89cc146a64e1e74c2682163ba3bebc16ed5a84e7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>SharePoint Çözümlerini Yerelleştirme
   Böylece tüm dünyada kullanılabilir uygulamalarınız Hazırlama işlemi yerelleştirme bilinir. Yerelleştirme, belirli bir kültür kaynaklara çevirme. Daha fazla bilgi için bkz: [Globalizing ve yerelleştirme uygulamaları](/visualstudio/ide/globalizing-and-localizing-applications). Bu konu, bir SharePoint çözüm yerelleştirme hakkında genel bir bakış sağlar.  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
  Kaynak dosyaları özellik oluşturduktan sonra çevrilen dizeleri bunlara ekleyin. Yerelleştirilmiş dizeleri aşağıdaki biçimde bir ifade ile erişim:  
   
-```  
+```aspx-csharp  
 $Resources:String ID  
 ```  
   
@@ -85,25 +85,25 @@ $Resources:String ID
   
  Tüm sabit kodlanmış özellik dizelerini ASPX sayfalar ve denetimler biçimlendirme, aşağıdaki biçimde bir ifade ile değiştirin:  
   
-```  
+```aspx-csharp  
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Örneğin:  
   
-```  
+```aspx-csharp  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
 ```  
   
  Metin olarak ASPX için bir ifade aşağıdaki biçimi kullanın:  
   
-```  
+```aspx-csharp  
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Örneğin:  
   
-```  
+```aspx-csharp  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
@@ -120,7 +120,7 @@ $Resources:String ID
   
  Kodunuzda çağrıları sabit kodlanmış dizeler yerine <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> yöntemi aşağıdaki sözdizimini kullanarak:  
   
-```  
+```aspx-csharp  
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   

@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>Değiştirilebilir Parametreler
   Değiştirilebilir parametreler veya *belirteçleri*, proje dosyalarını gerçek değerleri tasarım zamanında bilinmiyor SharePoint çözüm öğeleri için değerler sağlamak için kullanılabilir. Standart işlevinde benzer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] şablonu belirteçleri. Daha fazla bilgi için bkz: [şablon parametreleri](/visualstudio/ide/template-parameters).  
   
 ## <a name="token-format"></a>Belirteci biçimi  
- Belirteçleri başlar ve bir dolar işareti ($) karakteri ile bitmelidir. Bir proje dağıtım sırasında bir SharePoint çözüm paketi (.wsp) dosyası paketlendiğinde kullanılan herhangi bir belirtece gerçek değerlerle değiştirilir. Örneğin, belirteç **$SharePoint.Package.Name$** "Test SharePoint paketi." dizeye giderebilecek  
+ Belirteçleri başlar ve bir dolar işareti ($) karakteri ile bitmelidir. Bir proje bir SharePoint çözüm paketi (.wsp dosyası) paketlendiğinde, dağıtımda kullanılan herhangi bir belirtece gerçek değerlerle değiştirilir. Örneğin, belirteç **$SharePoint.Package.Name$** "Test SharePoint paketi." dizeye giderebilecek  
   
 ## <a name="token-rules"></a>Belirteç kuralları  
  Belirteçleri aşağıdaki kurallar geçerli olur:  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  Bu kurallar izlemeyin belirteçleri, bir uyarı veya hata sağlamadan göz ardı edilir.  
   
- Dize değerlerini tarafından belirteçleri değiştirme, böylece belirteçlerini kullanmak üzere bir kullanıcı tarafından düzenlenmiş olan bildirim şablonları sağlar hemen bildirim dönüştürme sonra yapılır.  
+ Dize değerlerini tarafından belirteçleri değiştirme hemen bildirim dönüştürme işleminin ardından gerçekleştirilir. Bu değişikliği bildirim şablonları belirteçleri ile düzenlemesine olanak tanır.  
   
 ### <a name="token-name-resolution"></a>Belirteç ad çözümlemesi  
  Çoğu durumda, burada bulunan bağımsız olarak belirli bir değere bir belirteç çözümler. Ancak, belirtecin bir paket veya özellik ilişkili ise, belirtecin değeri, bulunduğu üzerinde bağlıdır. Örneğin, bir özellik ise bir, daha sonra belirteç paketini `$SharePoint.Package.Name$` "Paketi A." değerine çözümler Aynı özellik paketi b'de sonra olup olmadığını `$SharePoint.Package.Name$` "İçin paket b" çözümler  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  Bu uzantıları tarafından tanımlanan `<TokenReplacementFileExtensions>` Microsoft.VisualStudio.SharePoint.targets dosyasında bulunan öğe... \\< program dosyaları\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools klasör.  
   
- Ancak, ek dosya uzantıları listesine ekleyebilirsiniz. Bunu yapmak için ekleyin bir `<TokenReplacementFileExtensions>` önce tanımlanan tüm PropertyGroup SharePoint proje dosyasında öğesine \<alma > SharePoint hedefleri dosyasının.  
+ Ancak, ek dosya uzantıları listesine ekleyebilirsiniz. Ekleme bir `<TokenReplacementFileExtensions>` önce tanımlanan tüm PropertyGroup SharePoint proje dosyasında öğesine \<alma > SharePoint hedefleri dosyasının.  
   
 > [!NOTE]  
 >  Bir proje derlendikten sonra belirteci değiştirme oluştuğundan, dosya uzantılarını derlenen dosya türleri için .cs, .vb veya .resx gibi eklemeyin. Belirteçleri değil derlenen dosyalar değiştirilir.  
   
- Örneğin, dosya adı uzantıları ".myextension" ve ".yourextension" belirteci değiştirme dosya adı uzantıları listesine eklemek için aşağıdaki .csproj dosyasına ekleyin:  
+ Örneğin, dosya adı uzantıları ".myextension" ve ".yourextension" belirteci değiştirme dosya adı uzantıları listesine eklemek için aşağıdaki eklediğiniz bir `.csproj` dosyası:  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- Alternatif olarak, doğrudan .targets dosya uzantısını ekleyebilirsiniz. Ancak, bunu yerel sistemde yalnızca paketlenmiş tüm SharePoint projeleri için uzantıları listesi değiştirir kendi. Sistemdeki tek Geliştirici olduğunda veya projelerinizi çoğunu gerektiriyorsa, bu bağlantı kullanışlı olabilir. Ancak, sisteme özgü olduğundan, bu yaklaşım çok taşınabilir değildir ve bu nedenle, önerilir, tüm uzantılar için proje dosyası yerine ekleyin.  
+ Doğrudan .targets dosya uzantısını ekleyebilirsiniz. Ancak, bunu yerel sistemde yalnızca paketlenmiş tüm SharePoint projeleri için uzantıları listesi değiştirir kendi. Sistemdeki tek Geliştirici olduğunda veya projelerinizi çoğunu gerektiriyorsa, bu bağlantı kullanışlı olabilir. Ancak, sisteme özgü olduğundan, bu yaklaşım çok taşınabilir değildir ve bu nedenle, önerilir, tüm uzantılar için proje dosyası yerine ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  

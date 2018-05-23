@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66b6ccc1d62cdbf163a67d5c76d310f896766819
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Nasıl yapılır: Web Önbellek Verilerini Kullanan Sanal Kullanıcıların Yüzdesini Belirtme
 
@@ -29,21 +29,21 @@ Yük testi ile oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, senaryoları
 
 Çok sayıda görüntülerine sahip büyük bir olasılıkla dönüş kullanıcılar bir Web sitesi test yük varsa ve bu diğer alınabilir yerel olarak ardından bir ayar için % 100 oranında önbelleğe alınmış içeriği **yeni kullanıcı yüzdesi** özelliği daha üretir Gerçek kullanımını oluşacak fazla indirme istek. Bu durumda, kullanıcılar ilk kez web sitesinin ve ayarlama ziyaretleriniz Web sitenize yüzdesini tahmin **yeni kullanıcı yüzdesi** özelliği uygun şekilde.
 
-## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Bir senaryo için kullanılacak aracıları belirtmek için
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Bir senaryo için yeni kullanıcı yüzdesini belirtmek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
      **Yük Testi Düzenleyicisi** görüntülenir. Yük testi ağacı görüntülenir.
 
-2.  Ağaçları yük testi **senaryoları** klasörü için kullanılacak aracıları belirtmek istediğiniz senaryo düğümünü seçin.
+2. Ağaçları yük testi **senaryoları** klasörü, yeni kullanıcı yüzdesi değerini değiştirmek istediğiniz senaryo düğümünü seçin.
 
-3.  Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
+3. Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
 
      Senaryonun kategoriler ve Özellikler Özellikler penceresinde görüntülenir.
 
-4.  Değeri ayarlanamıyor **yeni kullanıcı yüzdesi** yeni kullanıcı yüzdesi için bir sayı girerek özelliği.
+4. Değeri ayarlanamıyor **yeni kullanıcı yüzdesi** yeni kullanıcı yüzdesi için bir sayı girerek özelliği.
 
-5.  Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından yeni kullanarak yük testlerini çalıştırabilirsiniz **yeni kullanıcı yüzdesi** değeri.
+5. Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından yeni kullanarak yük testlerini çalıştırabilirsiniz **yeni kullanıcı yüzdesi** değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: "&lt;formRegion&gt; öğesi (Visual Studio'da Office Geliştirme) | Microsoft Docs"
+title: "&lt;formRegion&gt; öğesi (Visual Studio'da Office Geliştirme)"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af7dd4f3472692def9f05a937297d54d13c6f0d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2fd8036ea2a437ffc9fb68a523d8f25db964b5f6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; öğesi (Visual Studio'da Office Geliştirme)
   `formRegion` Öğesinin `vstov4` ad alanı VSTO eklenti ile ilişkilendirilen bir Microsoft Office Outlook form bölgesi tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```xml  
 <formRegion  
   name>  
   <messageClass  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği gösterilmektedir bir `formRegion` Outlook VSTO kullanılarak dağıtılan eklenti için bir uygulama bildirimi öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu bir form bölgesini ile ilişkili üç ileti sınıfları vardır. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
   
-```  
+```xml  
 <vstov4:formRegion  
     name="OutlookAddIn1.FormRegion1">  
   <vstov4:messageClass name="IPM.Note" />  
@@ -68,10 +68,10 @@ ms.lasthandoff: 04/16/2018
 </vstov4:formRegion>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

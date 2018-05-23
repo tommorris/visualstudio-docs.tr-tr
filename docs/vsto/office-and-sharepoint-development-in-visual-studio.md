@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio'da Office ve SharePoint Geliştirme
   Microsoft Office ve SharePoint basit bir uygulama oluşturarak genişletebilir ve kullanıcılar indirir, eklenti [Office deposu](https://store.office.com/) ya da bir kuruluş katalog veya .NET Framework tabanlı bir çözümdür, kullanıcıların oluşturarak yüklemek bir bilgisayar.  
@@ -50,11 +50,7 @@ ms.lasthandoff: 04/16/2018
   
  ![Office ve SharePoint kavramsal model için uygulamalar](../vsto/media/officeandsharepointapps2015.png "Office ve SharePoint kavramsal model için uygulamalar")  
   
- **Daha fazla bilgi edinin**  
-  
-|Bitiş|Bkz. |  
-|--------|---------|  
-|Napa Office 365 geliştirme araçları hakkında daha fazla bilgi edinin.|[Napa Office 365 geliştirme araçları](https://msdn.microsoft.com/library/dn974046.aspx)|  
+
   
 ### <a name="build-an-office-add-in"></a>Bir Office Eklentisi oluşturma  
  Office işlevselliğini genişletmek için Office Eklentisi oluşturun. Temel olarak, Excel, Word, Outlook ve PowerPoint gibi bir Office uygulamasında barındırılan bir Web sayfasıdır. Uygulamanızı işlevselliği belgelere, çalışma sayfaları, e-posta iletilerini, randevuları, sunuları ve projeleri ekleyebilirsiniz.  
@@ -71,7 +67,6 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Office eklentileri hakkında daha fazla bilgi ve bir yapı.|[Office eklentileri](http://msdn.microsoft.com/office/dn448457)|  
 |İçinde Office ve genişletmek için kullanabileceğiniz, bir uygulama veya bir Office Eklentisi kullanıp kullanmayacağınızı karar farklı yolları karşılaştırın.|[Office eklentileri, VSTO ve VBA için yol haritası](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Napa Office 365 geliştirme araçları hakkında daha fazla bilgi edinin.|[Napa Office 365 geliştirme araçları](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Bir SharePoint eklentisi oluşturma  
  Kullanıcılarınız için SharePoint genişletmek için bir SharePoint eklentisi oluşturun. Temel olarak, kullanıcılar ya da iş gereksinimini çözdü küçük, kullanımı kolay, tek başına bir uygulama olduğundan.  
@@ -88,8 +83,7 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |SharePoint eklentiler hakkında daha fazla bilgi ve bir yapı.|[SharePoint eklentileri](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Eklentiler için SharePoint ile geleneksel SharePoint çözümlerini karşılaştırın.|[SharePoint çözümleri ile karşılaştırıldığında SharePoint eklentileri](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Bir SharePoint eklentisi veya bir SharePoint çözüm oluşturmak isteyip istemediğinizi seçin.|[SharePoint eklentiler ve SharePoint çözümleri arasında seçim yapma](https://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Napa Office 365 geliştirme araçları hakkında daha fazla bilgi edinin.|[Napa Office 365 geliştirme araçları](https://msdn.microsoft.com/library/dn974046.aspx)|  
+|Bir SharePoint eklentisi veya bir SharePoint çözüm oluşturmak isteyip istemediğinizi seçin.|[SharePoint eklentiler ve SharePoint çözümleri arasında seçim yapma](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Bir VSTO eklentisi oluşturma  
  Bir VSTO eklentisinin Office 2007 veya Office 2010'u hedefleyecek şekilde ya da Office 2013 ve Office 2016 ile Office eklentileri olası nedir ötesine genişletmek için oluşturun. VSTO eklentilerini yalnızca masaüstünde çalıştırın. Kullanıcıların VSTO eklentileri, dağıtmak ve Destek genellikle daha zor bulunmaları yüklemeniz gerekir.  Ancak, VSTO eklentinizi daha yakından Office ile tümleştirilebilir. Örneğin, bunu sekmeler ve denetimler için Office Şerit ekleyin ve belgelerin birleştirilmesi veya grafikleri değiştirme gibi gelişmiş bir otomatikleştirme görevleri gerçekleştirin. Office nesnelerle etkileşim kurmak için C# ve Visual Basic kullanın ve .NET Framework yararlanın.  

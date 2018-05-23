@@ -4,11 +4,11 @@ hide_bc: true
 title: Visual Studio belgeleri | Microsoft Docs
 description: Uygulamaları, hizmetleri ve platformlar ve cihazlar için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio 2017 kullanmayı öğrenin.
 ms.topic: hub-page
-ms.openlocfilehash: 3e97752779c09c89107e784a0001737a8f5d77e2
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/22/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -854,7 +854,7 @@ ms.lasthandoff: 05/17/2018
                 <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Yığın Taşması </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833104"> Sorun bildirimi </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=874480"> Sorun bildirimi </a>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833105"> Kullanıcı sesi </a>

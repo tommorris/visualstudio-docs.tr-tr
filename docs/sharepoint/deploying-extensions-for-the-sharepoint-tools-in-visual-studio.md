@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları
   Bir SharePoint araçları uzantısı dağıtmak için Oluştur bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantı derlemesi ve uzantısıyla dağıtmak istediğiniz diğer dosyaları içeren uzantısı (VSIX) paketi. VSIX paketi açık paketleme kuralları (OPC) standart izleyen sıkıştırılmış bir dosyadır. VSIX paket .vsix uzantısına sahiptir.  
@@ -133,13 +133,13 @@ ms.lasthandoff: 04/16/2018
   
 8.  Aşağıdaki bulun `VSTemplate` proje öğesi.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
     ```  
   
 9. Bu öğe aşağıdaki XML ile değiştirin.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, bir SharePoint araçları uzantısı için bir extension.vsixmanifest dosyasının içeriğini gösterir. Uzantı Contoso.ProjectExtension.dll adlı bir derlemede uygulanır. Contoso.ExtensionCommands.dll ve adlı bir klasörü altında bir öğe şablonu adlı bir SharePoint komutu derleme uzantısı içeren **öğe şablonları** VSIX paketi. Bu örnek, derlemeler her ikisi de VSIX paketi extension.vsixmanifest dosyasında ile aynı klasörde olduğunu varsayar.  
   
-```  
+```xml 
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">  
   <Metadata>  
     <Identity Id="CustomActionProjectItem.Microsoft.b99efe4d-cef3-4afd-b9af-034ca0c52743" Version="1.0" Language="en-US" Publisher="Microsoft" />  

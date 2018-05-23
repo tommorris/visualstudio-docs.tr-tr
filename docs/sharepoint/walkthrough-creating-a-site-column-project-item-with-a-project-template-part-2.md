@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: bir proje şablonu, bölüm 2 ile bir Site sütunu proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türü tanımlama ve Visual Studio Proje şablonu ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Proje öğesi içeren yeni bir proje oluşturmak için şablonunuzu kullanılırken kullanıcılardan bilgi toplamak için sihirbazı kullanabilirsiniz. Topladığınız bilgileri, proje öğesi başlatmak için kullanılabilir.  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Visual Basic projesinde geliştiriyorsanız kaldırmak `ProjectTemplateWizard` ad alanından `WizardWindow` sınıf adında `x:Class` özniteliği `Window` öğesi. XAML ilk satırda öğedir. İşiniz bittiğinde, ilk satırın aşağıdaki örnekteki gibi görünmelidir.  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Visual Basic projesinde geliştiriyorsanız kaldırmak `ProjectTemplateWizard` ad alanından `Page1` sınıf adında `x:Class` özniteliği `UserControl` öğesi. XAML ilk satırda budur. İşiniz bittiğinde, ilk satırı aşağıdaki gibi görünmelidir.  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page1"  
     ```  
   
@@ -281,7 +281,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Visual Basic projesinde geliştiriyorsanız kaldırmak `ProjectTemplateWizard` ad alanından `Page2` sınıf adında `x:Class` özniteliği `UserControl` öğesi. XAML ilk satırda budur. İşiniz bittiğinde, ilk satırı aşağıdaki gibi görünmelidir.  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page2"  
     ```  
   
@@ -332,7 +332,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Altında **SiteColumnProjectTemplate** düğümü, SiteColumnProjectTemplate.vstemplate dosyasını açın ve ardından aşağıdaki öğeyi buradan kaldırın.  
   
-    ```  
+    ```xml  
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
     ```  
   
@@ -340,16 +340,16 @@ ms.lasthandoff: 04/16/2018
   
 5.  Altında **SiteColumnProjectTemplate** düğümü, ProjectTemplate.csproj veya ProjectTemplate.vbproj dosyasını açın ve ardından aşağıdaki kaldırın `PropertyGroup` onu öğesinden.  
   
-    ```  
+    ```xml  
     <PropertyGroup>  
       <SignAssembly>true</SignAssembly>  
       <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>  
     </PropertyGroup>  
-    ```  
+    ``` 
   
 6.  Aşağıdaki kaldırmak `None` öğesi.  
   
-    ```  
+    ```xml  
     <None Include="key.snk" />  
     ```  
   
@@ -384,7 +384,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Aşağıdaki komutu çalıştırın değiştirme *PathToWizardAssembly* geliştirme bilgisayarınızda ProjectTemplateWizard projesi için yerleşik ProjectTemplateWizard.dll derleme tam yoluna sahip:  
   
-    ```  
+    ```cmd  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Dosyanın sonuna yakın aşağıdakileri ekleyin `WizardExtension` öğesi arasında `</TemplateContent>` ve `</VSTemplate>` etiketler. Değiştir *belirtecinizi* değerini `PublicKeyToken` özniteliği önceki yordamda edinilen ortak anahtar belirteci ile.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ProjectTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=your token</Assembly>  
       <FullClassName>ProjectTemplateWizard.SiteColumnProjectWizard</FullClassName>  
@@ -418,7 +418,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  SiteColumnProjectTemplate projesinde Elements.xml dosyasının içeriğini aşağıdaki XML ile değiştirin.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   

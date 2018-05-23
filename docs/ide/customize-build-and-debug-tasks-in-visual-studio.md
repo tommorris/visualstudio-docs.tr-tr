@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859a3687e2dde0d5bedb9f4084bb83b844ca28e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c4b915f632179ff118247e8c046ce980a824ea2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Yapı özelleştirebilir ve görevler "Klasör Aç" geliştirme için hata ayıklama
 
@@ -315,4 +315,4 @@ Ayarları okumak *.gitignore* dosya üst dizinini ve tüm alt dizinler için uyg
 - [C++ için açık klasörü projeler](/cpp/ide/non-msbuild-projects)
 - [C++'ta CMake projeleri](/cpp/ide/cmake-tools-for-visual-cpp)
 - [NMAKE başvurusu](/cpp/build/nmake-reference)
-- [Kod ve Metin Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Kod Düzenleyicisi özellikleri](../ide/writing-code-in-the-code-and-text-editor.md)

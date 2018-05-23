@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e86f8f856963a979b8e64ba0e613cdb73685a9a0
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
 
@@ -57,7 +57,7 @@ Daha fazla bilgi için:
 - Belgeler: [kod biçimlendirme](formatting-python-code.md)
 - Belgeler: [yeniden düzenleme](refactoring-python-code.md)
 - Belgeler: [Linting](linting-python-code.md)
-- Genel Visual Studio özellik belgeleri: [kod ve Metin Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)
+- Genel Visual Studio özellik belgeleri: [Kod Düzenleyicisi özellikleri](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Etkileşimli penceresi
 
@@ -191,7 +191,7 @@ Visual Studio 2015 ve önceki kullanılabilir [visualstudio.com/vs/older-downloa
 | PIP/kolay yükleme | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Proje sistemi | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
+| Proje Sistemi | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Var olan koddan yeni proje | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Tüm dosyaları göster | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |

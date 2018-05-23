@@ -9,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 227b12f2da07d3d610f3d043348dc59680fc17ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -31,7 +31,7 @@ Visual Studio bu C++ test çerçevelerini hiçbir ek indirmeler gerekli içerir:
 
 Yüklü çerçeveleri yanı sıra, Visual Studio içinde kullanmak istediğiniz her çerçevesi için kendi test bağdaştırıcısı yazabilirsiniz. Bir test bağdaştırıcısı ile birim testleri tümleştirebilirsiniz **Test Gezgini** penceresi. Bazı üçüncü taraf bağdaştırıcıları kullanılabilir [Visual Studio Market'te](https://marketplace.visualstudio.com). Daha fazla bilgi için bkz: [üçüncü taraf birim test çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 sürüm 15,5**
+**Visual Studio 2017 sürüm 15.5**
 
 - **Google Test bağdaştırıcısı** varsayılan bileşeni olarak bulunur **C++ ile masaüstü geliştirme** iş yükü. Bir çözüm ekleyebileceğiniz bir proje şablonu sahip **Yeni Proje Ekle** çözüm düğümünde bağlam menüsünde **Çözüm Gezgini**ve yoluyla yapılandırabileceğiniz seçenekleri **Araçlar | Seçenekler**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Google Test kullanın](how-to-use-google-test-for-cpp.md).
 
@@ -74,7 +74,7 @@ Test projenizin .cpp dosyasında saplama sınıf ve size nasıl yazılacağını
 
 ![Ekleme yönergeleri dahil](media/cpp-write-test-methods.png "C++ test eklemek için üst bilgi dosyaları içerir")
 
-TEST_CLASS ve TEST_METHOD [Microsoft Yerel Test Framework]((microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). parçasıdır **Test Gezgini** desteklenen diğer çerçeveler test yöntemleri benzer şekilde bulur.
+TEST_CLASS ve TEST_METHOD parçası olan [Microsoft Yerel Test Framework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Test Gezgini** desteklenen diğer çerçeveler test yöntemleri benzer şekilde bulur.
 
 Bir TEST_METHOD void döndürür. Test sonucu oluşturmak için statik yöntemleri kullanın `Assert` test gerekenin karşı gerçek sonuçları sınıfı. Aşağıdaki örnekte, varsayalım `MyClass` alan bir oluşturucuya sahip bir `std::string`. Biz Oluşturucu beklendiği gibi sınıfı başlatır test sözlüğüdür:
 

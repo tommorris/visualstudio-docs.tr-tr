@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: ff3391023d9a863bd9f06b4608b327902a17f0ac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Taşınabilir, özel düzenleyici ayarları EditorConfig ile oluşturma
 
-Visual Studio 2017 içinde ekleyebileceğiniz bir [EditorConfig](http://editorconfig.org/) dosyası projeye ya da tutarlı kodlama zorlamak için codebase stiller herkesin codebase çalışır. EditorConfig ayarları genel Visual Studio Metin Düzenleyici ayarları göre önceliklidir. Bunun anlamı, uyarlayabileceğiniz her codebase bu projeye özel metin düzenleyici ayarları kullanmak için. Visual Studio'da kendi kişisel Düzenleyicisi tercihleri hala ayarlayabilirsiniz **seçenekleri** iletişim kutusu. Codebase içinde çalışırken sürekli bu ayarları uygulamak bir *.editorconfig* dosyası veya ne zaman *.editorconfig* dosya belirli bir ayarı geçersiz kılma değil. Bu tür bir tercih girinti stili örneğidir&mdash;sekme veya boşluk.
+Visual Studio 2017 içinde ekleyebileceğiniz bir [EditorConfig](http://editorconfig.org/) dosyası projeye ya da tutarlı kodlama zorlamak için codebase stiller herkesin codebase çalışır. EditorConfig ayarları genel Visual Studio Metin Düzenleyici ayarları göre önceliklidir. Bu, her kod temelini o projeye özel metin düzenleyici ayarlarını kullanmak üzere uyarlayabileceğiniz anlamına gelir. Visual Studio'da kendi kişisel Düzenleyicisi tercihleri hala ayarlayabilirsiniz **seçenekleri** iletişim kutusu. Codebase içinde çalışırken sürekli bu ayarları uygulamak bir *.editorconfig* dosyası veya ne zaman *.editorconfig* dosya belirli bir ayarı geçersiz kılma değil. Bu tür bir tercih girinti stili örneğidir&mdash;sekme veya boşluk.
 
 EditorConfig ayarlar, çok sayıda kod düzenleyicileri ve Visual Studio dahil olmak üzere IDE tarafından desteklenir. Bu, kodunuzu seyahat ediyor ve Visual Studio dışında bile kodlama stillerini zorunlu kılabilir taşınabilir bir bileşenidir.
 
@@ -162,4 +162,4 @@ Ayarlayarak EditorConfig kuralları kapsamını denetleyebilirsiniz ```root=true
 - [.NET adlandırma kuralları](../ide/editorconfig-naming-conventions.md)
 - [İçin bir dil hizmeti EditorConfig destekleme](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
-- [Kod Düzenleyicisi'nde yazma](writing-code-in-the-code-and-text-editor.md)
+- [Kod Düzenleyicisi özellikleri](writing-code-in-the-code-and-text-editor.md)

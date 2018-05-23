@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 629b63b8645f1b5ebd84d25a04a4cec4e8bca6a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Nasıl yapılır: MSBuild Görevlerini Kullanarak bir SharePoint Çözüm Paketi Oluşturma
   Yapı, temizleme ve geliştirme bilgisayarındaki komut satırı MSBuild görevlerini kullanarak bir SharePoint paketi (.wsp) doğrulama. Bu komutlar, yapı işlemi bir yapı bilgisayarında Team Foundation Server kullanarak otomatik hale getirmek için de kullanabilirsiniz.  
@@ -36,13 +36,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Proje için bir paket oluşturmak için aşağıdaki komutu girin. Değiştir *ProjectFileName* proje adı.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ProjectFileName  
     ```  
   
      Örneğin, ListDefinition1 adlı bir SharePoint Proje paketlemek için aşağıdaki komutlardan birini çalıştırabilirsiniz.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ListDefinition1.vbproj  
     msbuild /t:Package ListDefinition1.csproj  
     ```  
@@ -57,13 +57,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Proje için bir paket temizlemek için aşağıdaki komutu girin. Değiştir *ProjectFileName* proje adı.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
      Örneğin, ListDefinition1 adlı bir SharePoint Proje temizlemek için aşağıdaki komutlardan birini çalıştırabilirsiniz.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
@@ -78,13 +78,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Proje için bir paket doğrulamak için aşağıdaki komutu girin. Değiştir *ProjectFileName* proje adı.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
      Örneğin, ListDefinition1 adlı bir SharePoint Proje doğrulamak için aşağıdaki komutlardan birini çalıştırabilirsiniz.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
@@ -99,13 +99,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Proje için bir paketteki bir özelliği ayarlamak için aşağıdaki komutu girin. Değiştir *PropertyName* ayarlamak istediğiniz özelliğine sahip.  
   
-    ```  
+    ```cmd  
     msbuild /property:PropertyName=Value  
     ```  
   
      Örneğin, uyarı düzeyini ayarlamak için aşağıdaki komutu çalıştırabilirsiniz.  
   
-    ```  
+    ```cmd  
     msbuild /property:WarningLevel = 2  
     ```  
   

@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>İzlenecek yol: Örnekleme Yöntemini Kullanarak Komut Satırı Profili Oluşturma
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>İzlenecek yol: Komut satırı kullanarak profil örnekleme
 
 Bu kılavuz, bir uygulama komut satırı araçlarını kullanarak ve performans sorunlarını tanımlamak için örnekleme profili gösterilmiştir.
 
@@ -98,10 +98,10 @@ Bu kılavuzda, şu adımları izler:
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Performans oturumuna genel bakış](../profiling/performance-session-overview.md)  
-[Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)  
+[Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
 [Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)  
-[Performans Raporu Görünümleri](../profiling/performance-report-views.md)
+[Performans rapor görünümleri](../profiling/performance-report-views.md)

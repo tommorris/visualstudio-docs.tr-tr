@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için Site Sütunu, İçerik Türü ve Liste Oluşturma
   Aşağıdaki yordamlar özel SharePoint site sütunları oluşturulacağını göstermektedir — veya *alanları*— yanı sıra site sütunlarını kullanan bir içerik türü. Ayrıca, yeni içerik türünü kullanan bir listesinin nasıl oluşturulacağı gösterilir.  
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Site sütunun Elements.xml dosyasında bırakın **türü** olarak ayarlama **metin**, değiştirip **grup** ayarını **Clinic Site sütunları**. Tamamlandığında, site sütunun Elements.xml dosyasını aşağıdaki gibi görünmelidir.  
   
-    ```  
+    ```xml  
     <Field  
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"  
          Name="Clinic - Patient Name"  
@@ -143,7 +143,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  İçinde **şablonları** bölmesinde seçin **listesi** şablonu, adına değiştirmek **hastalar**ve ardından **Ekle** düğmesi.  
   
-5.  Bırakın **dayanan liste özelleştirme** olarak ayarlama **varsayılan (boş)**ve ardından **son** düğmesi.  
+5.  Bırakın **dayanan liste özelleştirme** olarak ayarlama **varsayılan (boş)** ve ardından **son** düğmesi.  
   
 6.  Liste Tasarımcısı'nda seçin **içerik türleri** görüntülemek için düğmesini **içerik türü ayarları** iletişim kutusu.  
   

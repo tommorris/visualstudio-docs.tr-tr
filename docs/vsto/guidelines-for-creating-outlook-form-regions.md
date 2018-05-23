@@ -1,5 +1,5 @@
 ---
-title: Outlook oluşturma yönergeleri Form bölgeleri | Microsoft Docs
+title: Outlook form bölgeleri oluşturma yönergeleri
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="guidelines-for-creating-outlook-form-regions"></a>Outlook Form Bölgeleri Oluşturma Yönergeleri
+# <a name="guidelines-for-creating-outlook-form-regions"></a>Outlook form bölgeleri oluşturma yönergeleri
   Aşağıdaki bilgiler, form bölgeleri en iyi duruma getirme ve olası sorunları önlemenize yardımcı olabilir:  
   
--   [Form bölgesi adlarını kullanma](#UsingFormRegions).  
+-   [Form bölgesi adlarını kullanın](#UsingFormRegions).  
   
--   [Form bölgesi devralmayı devre dışı bırakarak](#DisablingInheritance).  
+-   [Form bölgesi devralmayı devre dışı](#DisablingInheritance).  
   
--   [Sınıf adları türlerini anlama ve ileti](#ClassNames).  
+-   [Türlerini anlamanıza ve sınıf adları iletisi](#ClassNames).  
   
 -   [Okuma Bölmesi için bitişik form bölgeleri tasarlama](#ReadingPane).  
   

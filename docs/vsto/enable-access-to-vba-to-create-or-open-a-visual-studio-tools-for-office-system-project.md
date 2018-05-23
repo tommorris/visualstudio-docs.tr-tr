@@ -1,6 +1,6 @@
 ---
 title: VBA oluşturmak veya Microsoft Office sistemi projesi için Visual Studio araçlarını açmak için erişimi etkinleştir
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office System project
+decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -20,11 +20,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05c7296412ffd3f87433f4790617f4b27ca75ae3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>VBA oluşturmak veya Microsoft Office sistemi projesi için Visual Studio araçlarını açmak için erişimi etkinleştir
 
@@ -61,7 +61,7 @@ Oluşturmak veya Microsoft Office sistemi projesi için Visual Studio araçları
 
 6. **Tamam**'ı tıklatın.
 
-### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Etkinleştirme veya devre dışı erişimle 2007 Microsoft Office sistemi için Visual Basic projeleri
+### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Etkinleştirmek veya Visual Basic projeleri 2007 Microsoft Office sistemi ile erişimi devre dışı bırakmak için
 
 1. Üzerinde **Araçları** menü Word veya Excel işaret **makrosu**ve ardından **güvenlik**.
 
@@ -128,4 +128,4 @@ Oluşturmak veya Microsoft Office sistemi projesi için Visual Studio araçları
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)
+ [Office çözümleri güvenli](../vsto/securing-office-solutions.md)

@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>İzlenecek yol: Sunucu Gezginini Web Bölümlerini Görüntülemek Üzere Genişletme
   Visual Studio'da kullandığınız **SharePoint bağlantıları** düğümünün **Sunucu Gezgini** SharePoint sitelerinde bileşenleri görüntülemek için. Ancak, **Sunucu Gezgini** bazı bileşenler varsayılan olarak görüntülemez. Bu kılavuzda, genişletme **Sunucu Gezgini** Web Bölümü Galerisi görüntüler böylece her SharePoint sitesine bağlı.  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  İletişim kutusunun üstündeki seçin **.NET Framework 3.5** .NET Framework sürümleri listesinde.  
   
-4.  
-  
-5.  Proje şablonları listesinden seçip **sınıf kitaplığı**, proje adı **WebPartCommands**ve ardından **Tamam** düğmesi.  
+4.  Proje şablonları listesinden seçip **sınıf kitaplığı**, proje adı **WebPartCommands**ve ardından **Tamam** düğmesi.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **WebPartCommands** çözüme proje ve varsayılan Class1 kod dosyasını açar.  
   
-6.  Class1 kod dosyasının projeden silin.  
+5.  Class1 kod dosyasının projeden silin.  
   
 ## <a name="configuring-the-projects"></a>Projeleri yapılandırma  
  Uzantı oluşturmak için kod yazmadan önce ve derleme başvurularını kod dosyaları ekleyin ve proje ayarlarını yapılandırmanız gerekir.  

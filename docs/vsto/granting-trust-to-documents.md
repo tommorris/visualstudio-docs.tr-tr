@@ -1,5 +1,5 @@
 ---
-title: Belgelere güven verme | Microsoft Docs
+title: Belgelere güven verme
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8556f77b74ee1dab6a257f5ed3634da4bf798cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f95887d5d540fd1acd95b8af1275c4b4054c8764
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="granting-trust-to-documents"></a>Belgelere Güven Verme
+# <a name="grant-trust-to-documents"></a>Belgelere güven verme
   Belge düzeyi projesi uygulama düzeyi projelere aynı güvenlik gereksinimlerine sahiptir: bir sertifika ile bildirimleri imzalama veya güven istemi tıklatarak. Ayrıca, belge veya çalışma kitabı güvenilir bir konum olarak belirlenmiş bir dizinde yer almalıdır.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -39,15 +39,15 @@ ms.lasthandoff: 04/16/2018
   
 -   Yerel klasör daha güvenli ve örtük olarak güvenilir olarak kabul edilir. Dosya paylaşımları gibi uzak konumlar güvenilir konumlar olarak işaretlenmesi gerekir.  
   
--   Bir dizin güvenilir konumlara eklediğinizde, bu eylem yalnızca Office çözümleri için aynı zamanda VBA ve ActiveX kod için tam güven verir. Bu nedenle, güvenilen kök dizini ve klasörleri olarak atanmamalıdır Belgelerim.  
+-   Bir dizin güvenilir konumlara eklediğinizde, bu eylem yalnızca Office çözümleri için aynı zamanda VBA ve ActiveX kod için tam güven verir. Bu nedenle, kök dizini ve *Belgelerim* klasörleri değil atanmış olarak güvenilir.  
   
--   Belge güvenilen konumları kullanarak güvenilen rağmen özelleştirme güvenmeyi ek izinler gerekir. Bir sertifika ile bildirimleri imzalama, güven istemi tıklatarak veya Program dosyaları dizinine Office çözümü yükleme kullanarak özelleştirme tam güven verebilirsiniz.  
+-   Belge güvenilen konumları kullanarak güvenilen rağmen özelleştirme güvenmeyi ek izinler gerekir. Bir sertifika ile bildirimleri imzalama, güven istemi tıklatarak veya Office çözümü yükleme kullanarak özelleştirme tam güven verebilirsiniz *Program Files* dizin.  
   
--   Belge ya da bir belge düzeyi çözümü çalışma kitabını derlemeyle aynı dizinde veya farklı bir dizinde depolayabilirsiniz. Örneğin, belgeyi bir SharePoint sunucusu üzerine bulunamıyor ve bir ağ dosya paylaşımında derleme bulunamıyor. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint sunucusu kullanarak ClickOnce tarafından için belge düzeyi Office çözümü yayımlama](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   Belge ya da bir belge düzeyi çözümü çalışma kitabını derlemeyle aynı dizinde veya farklı bir dizinde depolayabilirsiniz. Örneğin, belgeyi bir SharePoint sunucusu üzerine bulunamıyor ve bir ağ dosya paylaşımında derleme bulunamıyor. Daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce kullanarak bir SharePoint sunucusu için belge düzeyi Office çözümü yayımlama](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)   
- [Office çözüm güvenliğinde sorunu giderme](../vsto/troubleshooting-office-solution-security.md)   
- [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)  
+ [Office çözüm güvenlik sorunlarını giderme](../vsto/troubleshooting-office-solution-security.md)   
+ [Office çözümleri güvenli](../vsto/securing-office-solutions.md)  
   
   

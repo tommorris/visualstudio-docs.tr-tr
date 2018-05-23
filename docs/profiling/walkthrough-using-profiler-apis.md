@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profilini Oluşturucu API'ler Kullanma
+# <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil Oluşturucu API'ler kullanma
 İzlenecek yol bir C# uygulamasını nasıl kullanılacağını göstermek için kullanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları API'leri. İzleme profili oluşturma sırasında toplanan veri miktarını sınırlamak için profil oluşturucu API kullanır.  
   
  Bu izlenecek adımları genellikle C/C++ uygulaması için geçerlidir. Her bir dil için yapı ortamınıza uygun şekilde yapılandırmanız gerekir.  
   
  Genellikle, örnek profil kullanarak uygulama performansını çözümlemek başlar. Profil oluşturma araçları örnek profil bir performans sorunu pinpoints bilgileri sağlamazsa, büyük bir ayrıntı düzeyini sağlayabilirsiniz. Profil oluşturma araçları, iş parçacığı etkileşim araştırma için çok kullanışlıdır.  
   
- Ancak, büyük bir ayrıntı düzeyini daha fazla veri toplanır anlamına gelir. Profil oluşturma araçları büyük veri dosyalarını oluşturur bulabilirsiniz. Ayrıca, araçları uygulamanın performansını etkileyip daha yüksektir. Daha fazla bilgi için bkz: [anlama izleme veri değerlerini](../profiling/understanding-instrumentation-data-values.md) ve [örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)  
+ Ancak, büyük bir ayrıntı düzeyini daha fazla veri toplanır anlamına gelir. Profil oluşturma araçları büyük veri dosyalarını oluşturur bulabilirsiniz. Ayrıca, araçları uygulamanın performansını etkileyip daha yüksektir. Daha fazla bilgi için bkz: [izleme veri değerlerini anlama](../profiling/understanding-instrumentation-data-values.md) ve [örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)  
   
  Visual Studio Profil Oluşturucu veri koleksiyonunu sınırlamanıza olanak sağlar. Bu kılavuzda profil oluşturucu API kullanarak veri koleksiyonunu sınırlamak nasıl bir örnek sunar. Visual Studio profil oluşturucu, bir uygulama denetleme veri toplama için bir API sağlar.  
   
@@ -37,9 +37,9 @@ ms.lasthandoff: 05/11/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzda, tercih ettiğiniz geliştirme ortamı hata ayıklama ve örnekleme desteklemek üzere yapılandırılmış varsayar. Aşağıdaki konular bu Önkoşullar genel bir bakış sağlar:  
   
- [Nasıl yapılır: Koleksiyon yöntemleri seçme](../profiling/how-to-choose-collection-methods.md)  
+ [Nasıl yapılır: Toplama metotlarını seçme](../profiling/how-to-choose-collection-methods.md)  
   
- [Nasıl yapılır: başvuru pencereleri sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Nasıl yapılır: Başvuru pencereleri sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Profil Oluşturucu başlatıldığında, varsayılan olarak, profil oluşturucu genel düzeyde veri toplar. Aşağıdaki kod program başlangıcında kapalı profil oluşturma genel etkinleştirir.  
   
@@ -51,7 +51,7 @@ DataCollection.CurrentId);
   
  Veri toplama komut satırında bir API çağrısı kullanmadan devre dışı bırakabilirsiniz. Aşağıdaki adımlar komut satırı derleme ortamınızı profil oluşturma araçları çalıştırmak üzere yapılandırılmış varsayar ve geliştirme araçları olarak. Vsınstr ve VSPerfCmd için gerekli olan ayarları içerir. Komut satırı Profil Araçları konusuna bakın.  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>Profil Oluşturucu API'lerini kullanarak veri toplama sınırlaması  
+## <a name="limit-data-collection-using-profiler-apis"></a>Profil Oluşturucu API kullanarak veri toplama sınırla  
   
 #### <a name="to-create-the-code-to-profile"></a>Kod profil oluşturmak için  
   
@@ -159,7 +159,7 @@ DataCollection.CurrentId);
   
      Bir .csv dosyası geçerli dizinde sonuç performans verileri ile oluşturulur.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio profil oluşturucu API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Başlarken](../profiling/getting-started-with-performance-tools.md)   

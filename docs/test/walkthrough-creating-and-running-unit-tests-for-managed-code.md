@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 29472e2590a767c98c5674bce14712171f16fdbf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturmak ve yönetilen kod için birim testleri çalıştırma
 
@@ -285,7 +285,7 @@ Durum geri miktar Bakiye'den büyük olduğunda sınamak için aşağıdaki adı
 
 Ancak, son iki test yöntemleri de kaygı değildir. Her iki testi çalıştırdığınızda, hangi koşul altında test yöntemi özel durum oluşturur olamazsınız. Negatif borç tutarı veya bakiye büyük bir miktarını, iki koşul ayrım yapma, bazı şekilde testlerinde, güvenirlik artırır.
 
-Looki yeniden test ve her iki koşullu deyimler kullanmak bildirimi altında yöntemi, bir `ArgumentOutOfRangeException` yalnızca oluşturucu bağımsız değişkeni bir parametre olarak adını alır:
+Bakabilir test altındaki yöntemi yeniden ve her iki koşullu deyimler kullandığına dikkat edin bir `ArgumentOutOfRangeException` yalnızca oluşturucu bağımsız değişkeni bir parametre olarak adını alır:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

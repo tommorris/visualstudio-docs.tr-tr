@@ -1,5 +1,5 @@
 ---
-title: "&lt;formRegions&gt; öğesi (Visual Studio'da Office Geliştirme) | Microsoft Docs"
+title: "&lt;formRegions&gt; öğesi (Visual Studio'da Office Geliştirme)"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c51b626c104d5342c00dbd45a2c565315c9c2225
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36741e5e3bcd39dbb6e4ea0746e1877acc581e70
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; öğesi (Visual Studio'da Office Geliştirme)
   `formRegions` Öğesinin `vstov4` ad alanı, VSTO eklenti ile ilişkili Microsoft Office Outlook form bölgeleri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```xml  
 <formRegions>  
   <formRegion>  
   </formRegion>  
@@ -47,14 +47,14 @@ ms.lasthandoff: 04/16/2018
 ### <a name="formregion"></a>formRegion  
  Outlook VSTO form bölgeleri içeren eklentileri için gereklidir. `formRegion` Öğesi tanımlanmış [ &#60;formRegion&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
   
-## <a name="vsto-add-in-example"></a>VSTO eklentileri örneği  
+## <a name="vsto-add-in-example"></a>VSTO eklenti örneği  
   
 ### <a name="description"></a>Açıklama  
  Aşağıdaki kod örneği gösterilmektedir bir `formRegions` kullanarak dağıtılmış uygulama düzeyi Office çözümü için bir uygulama bildirimi öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstov4:formRegions>  
   <vstov4:formRegion  
       name="OutlookAddIn1.FormRegion1">  
@@ -65,9 +65,9 @@ ms.lasthandoff: 04/16/2018
 </vstov4:formRegions>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

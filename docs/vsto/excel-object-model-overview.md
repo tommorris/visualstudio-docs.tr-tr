@@ -1,5 +1,5 @@
 ---
-title: Excel nesne modeline genel bakış | Microsoft Docs
+title: Excel nesne modeline genel bakış
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="excel-object-model-overview"></a>Excel Nesne Modeline Genel Bakış
+# <a name="excel-object-model-overview"></a>Excel nesne modeline genel bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesnelerle etkileşim kurabilirsiniz. Bu konu en önemli nesneleri sunar:  
   
 -   <xref:Microsoft.Office.Interop.Excel.Application>  
@@ -43,14 +43,14 @@ ms.lasthandoff: 04/16/2018
   
  Nesne modeli kullanıcı arabirimini yakından takip eder. <xref:Microsoft.Office.Interop.Excel.Application> Nesnesini temsil eden tüm uygulama ve her <xref:Microsoft.Office.Interop.Excel.Workbook> nesnesini içeren koleksiyonu `Worksheet` nesneleri. Buradan, hücreleri gösteren ana soyutlamadır <xref:Microsoft.Office.Interop.Excel.Range> nesnesi, tek tek veya grup hücre ile çalışmanıza olanak sağlar.  
   
- Excel nesne modeline ek olarak, Visual Studio'da Office projeleri sağlar *konak öğelerini* ve *konak denetimlerini* Excel nesne modelindeki bazı nesneleri genişletir. Konak denetimlerinin ve konak öğelerinin bunlar genişletmek Excel nesneleri gibi davranır, ancak aynı zamanda veri bağlama özellikleri ve fazladan olaylar gibi ek işlevlere sahiptirler. Daha fazla bilgi için bkz: [otomatikleştirme Excel genişletilmiş nesneleri kullanarak tarafından](../vsto/automating-excel-by-using-extended-objects.md) ve [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
+ Excel nesne modeline ek olarak, Visual Studio'da Office projeleri sağlar *konak öğelerini* ve *konak denetimlerini* Excel nesne modelindeki bazı nesneleri genişletir. Konak denetimlerinin ve konak öğelerinin bunlar genişletmek Excel nesneleri gibi davranır, ancak aynı zamanda veri bağlama özellikleri ve fazladan olaylar gibi ek işlevlere sahiptirler. Daha fazla bilgi için bkz: [Excel genişletilmiş nesneleri kullanarak otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md) ve [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
   
- Bu konu Excel nesne modeline kısa bir genel bakış sağlar. Burada, öğrenin tüm Excel nesne modeli hakkında daha fazla kaynaklar için bkz [Excel nesne modeli belgelerini kullanarak](#ExcelOMDocumentation).  
+ Bu konu Excel nesne modeline kısa bir genel bakış sağlar. Burada, öğrenin tüm Excel nesne modeli hakkında daha fazla kaynaklar için bkz [Excel nesne modeli belgeleri kullanın](#ExcelOMDocumentation).  
   
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: kullanım olay işleyicileri içinde bir Excel 2007 eklenti?](http://go.microsoft.com/fwlink/?LinkID=130291), ve [nasıl yapmak I: kullanım kabarcık grafiği oluşturmak için şekiller Excel'de? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz [nasıl I: kullanım olay işleyicileri içinde bir Excel 2007 eklenti musunuz?](http://go.microsoft.com/fwlink/?LinkID=130291), ve [I: kullanım şekilleri kabarcık grafiği oluşturmak için nasıl yapılacağı Excel'de? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
-## <a name="accessing-objects-in-an-excel-project"></a>Excel projesinde nesnelere erişme  
- Excel için yeni bir VSTO eklenti projesi oluşturduğunuzda, Visual Studio ThisAddIn.vb veya ThisAddIn.cs kod dosyasını otomatik olarak oluşturur. Uygulama nesnesi kullanarak erişebilirsiniz `Me.Application` veya `this.Application`.  
+## <a name="access-objects-in-an-excel-project"></a>Excel projesinde nesnelere erişme  
+ Excel için yeni bir VSTO eklenti projesi oluşturduğunuzda, Visual Studio otomatik olarak oluşturur bir *ThisAddIn.vb* veya *ThisAddIn.cs* kod dosyası. Uygulama nesnesi kullanarak erişebilirsiniz `Me.Application` veya `this.Application`.  
   
  Excel için yeni bir belge düzeyi projesi oluşturduğunuzda, yeni bir Excel çalışma kitabı veya Excel Şablonu proje oluşturma seçeneğiniz vardır. Visual Studio aşağıdaki kod dosyalarını projenizde yeni Excel çalışma kitabı ve şablon projeleri için otomatik olarak oluşturur.  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 04/16/2018
   
  Visual Studio genişletir <xref:Microsoft.Office.Interop.Excel.Range> sağlayarak nesne <xref:Microsoft.Office.Tools.Excel.NamedRange> ve <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> türleri. Bu tür aynı özelliklerin çoğunu sahip bir <xref:Microsoft.Office.Interop.Excel.Range> veri bağlama yetenekleri ve yeni olaylar gibi yeni özellikler yanı sıra nesnesi. Daha fazla bilgi için bkz: [NamedRange denetimi](../vsto/namedrange-control.md) ve [XmlMappedRange denetimi](../vsto/xmlmappedrange-control.md).  
   
-##  <a name="ExcelOMDocumentation"></a> Excel nesne modeli belgelerini kullanma  
+##  <a name="ExcelOMDocumentation"></a> Excel nesne modeli belgeleri kullanın  
  Excel nesne modeli hakkında tam bilgi için Excel birincil birlikte çalışma derlemesi (PIA) başvurusu ve VBA nesne modeli başvurusu başvurabilir.  
   
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma derleme başvurusu  
@@ -114,13 +114,13 @@ ms.lasthandoff: 04/16/2018
   
  Tüm nesneleri ve VBA nesne modeli başvurusu üyeleri türleri ve Excel PIA üyelerine karşılık gelir. Örneğin, çalışma sayfası nesnesi VBA nesne modeli başvurusu için karşılık gelen <xref:Microsoft.Office.Interop.Excel.Worksheet> Excel PIA nesne. VBA nesne modeli başvurusu kod örnekleri çoğu özellikleri, yöntemleri ve olayları sağlasa da, bunları Excel projesinde, Visual Studio kullanarak oluşturduğunuz kullanmak istiyorsanız, Visual Basic veya Visual C# bu başvurusu VBA kodu Çevir gerekir.  
   
-### <a name="related-topics"></a>İlgili Konular  
+### <a name="related-topics"></a>İlgili konular  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Excel Çözümleri](../vsto/excel-solutions.md)|Microsoft Office Excel için nasıl belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturabileceğiniz açıklanmaktadır.|  
-|[Aralıklarla Çalışma](../vsto/working-with-ranges.md)|Aralıkları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
-|[Çalışma Sayfaları ile Çalışma](../vsto/working-with-worksheets.md)|Çalışma sayfaları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
-|[Çalışma Kitaplarıyla Çalışma](../vsto/working-with-workbooks.md)|Çalışma kitapları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
+|[Excel çözümleri](../vsto/excel-solutions.md)|Microsoft Office Excel için nasıl belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturabileceğiniz açıklanmaktadır.|  
+|[Aralıkları ile çalışma](../vsto/working-with-ranges.md)|Aralıkları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
+|[Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)|Çalışma sayfaları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
+|[Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)|Çalışma kitapları ile ortak görevler gerçekleştirmek nasıl Göster örnekler verilmektedir.|  
   
   

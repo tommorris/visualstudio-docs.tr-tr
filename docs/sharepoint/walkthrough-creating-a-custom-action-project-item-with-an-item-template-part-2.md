@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>İzlenecek yol: Öğe Şablonu, Bölüm 2 ile Özel bir Eylem Proje Öğesi Oluşturma
   Özel bir SharePoint proje öğesi türü tanımlama ve Visual Studio öğe şablonunda ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Yeni bir proje öğesi örneğini bir projeye eklemek için şablon kullanılırken kullanıcılardan bilgi toplamak için sihirbazı kullanabilirsiniz. Topladığınız bilgileri, proje öğesi başlatmak için kullanılabilir.  
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Visual Basic projesinde geliştiriyorsanız kaldırmak `ItemTemplateWizard` ad alanından `WizardWindow` sınıf adında `x:Class` özniteliği `Window` öğesi. XAML ilk satırda öğedir. İşiniz bittiğinde, ilk satırın aşağıdaki kodu benzemelidir:  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -187,7 +187,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırarak komutu, değiştirme *PathToWizardAssembly* geliştirme ItemTemplateWizard projede yerleşik ItemTemplateWizard.dll bütünleştirilmiş kod tam yoluna sahip bilgisayar.  
   
-    ```  
+    ```xml  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Dosyanın sonuna yakın aşağıdakileri ekleyin `WizardExtension` öğesi arasında `</TemplateContent>` ve `</VSTemplate>` etiketler. Değiştir *YourToken* değerini `PublicKeyToken` özniteliği önceki yordamda edinilen ortak anahtar belirteci ile.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ItemTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=YourToken</Assembly>  
       <FullClassName>ItemTemplateWizard.CustomActionWizard</FullClassName>  
@@ -221,7 +221,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  ItemTemplate projesinde Elements.xml dosyasının içeriğini aşağıdaki XML ile değiştirin.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="$IdValue$"  

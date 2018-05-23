@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a78921ff3415203a26da570a1966e41538ac5535
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Bir yük testi senaryosunda test yinelemelerini yapılandırma
 
@@ -46,24 +46,24 @@ Değiştirmek için Yük Testi Düzenleyicisini kullanarak Çalıştırılacak t
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Yüksek test yinelemeleri sayısını belirtmek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  Yük Testi Düzenleyicisi görüntülenir. Yük testi ağacı görüntülenir.
+2. Yük Testi Düzenleyicisi görüntülenir. Yük testi ağacı görüntülenir.
 
-3.  Ağaçları yük testi **senaryoları** klasörü, test yineleme sayısını belirtmek istediğiniz senaryo düğümünü seçin.
+3. Ağaçları yük testi **senaryoları** klasörü, test yineleme sayısını belirtmek istediğiniz senaryo düğümünü seçin.
 
-4.  Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
+4. Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
 
      Kategoriler ve Özellikler senaryonun Özellikler penceresinde görüntülenir.
 
-5.  Metin kutusunda **en yüksek Test Yinelemeleri** özelliği, bir yük testi çalıştırdığınızda, testi senaryosu için en fazla sayısını belirten bir değer yazın.
+5. Metin kutusunda **en yüksek Test Yinelemeleri** özelliği, bir yük testi çalıştırdığınızda, testi senaryosu için en fazla sayısını belirten bir değer yazın.
 
     > [!NOTE]
     > İçin 0 değerini kullanarak **en yüksek Test Yinelemeleri** özelliği, hiç en fazla yineleme belirtir.
 
-6.  Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından, yeni kullanarak yük testlerini çalıştırabilirsiniz **en yüksek Test Yinelemeleri** değeri.
+6. Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından, yeni kullanarak yük testlerini çalıştırabilirsiniz **en yüksek Test Yinelemeleri** değeri.
 
-## <a name="specifying-think-times-between-test-iterations-for-a-scenario"></a>Bir senaryo için Test Yinelemeleri arasındaki düşünme sürelerini belirtme
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Bir senaryo için Test Yinelemeleri arasındaki düşünme sürelerini belirtme
 
 **Test Yinelemeleri Arasındaki Düşünme süresi** özelliği, Yük Testi Düzenleyicisi'nde yük testi senaryosu özellikleri düzenlerken Özellikler penceresini kullanarak ayarlanır.
 
@@ -72,21 +72,21 @@ Değiştirmek için Yük Testi Düzenleyicisini kullanarak Çalıştırılacak t
 > [!NOTE]
 > Yük testi senaryosu özellikleri ve açıklamalarının tam listesi için bkz: [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
 
-### <a name="to-specify-the-think-times-between-test-iterations"></a>Test yinelemeleri arasındaki düşünme sürelerini belirtmek için
+### <a name="to-specify-the-think-time-between-test-iterations"></a>Test yinelemeleri arasındaki düşünme süresi belirtmek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
      **Yük Testi Düzenleyicisi** görüntülenir. Yük testi ağacı görüntülenir.
 
-2.  Ağaçları yük testi **senaryoları** klasörü, kullanılacak aracıları belirtmek istediğiniz senaryo düğümünü seçin.
+2. Ağaçları yük testi **senaryoları** klasörü için düşünme süresi belirtmek istediğiniz senaryo düğümünü seçin.
 
-3.  Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
+3. Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
 
      Senaryonun kategoriler ve Özellikler Özellikler penceresinde görüntülenir.
 
-4.  İçin değer **Test Yinelemeleri Arasındaki Düşünme süresi** özelliği, bir sonraki test yinelemesini başlatmadan önce beklenecek saniye sayısını temsil eden bir sayı girin.
+4. İçin değer **Test Yinelemeleri Arasındaki Düşünme süresi** özelliği, bir sonraki test yinelemesini başlatmadan önce beklenecek saniye sayısını temsil eden bir sayı girin.
 
-5.  Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından yeni kullanarak yük testlerini çalıştırabilirsiniz **Test Yinelemeleri Arasındaki Düşünme süresi** değeri.
+5. Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından yeni kullanarak yük testlerini çalıştırabilirsiniz **Test Yinelemeleri Arasındaki Düşünme süresi** değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

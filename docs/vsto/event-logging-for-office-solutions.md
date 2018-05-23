@@ -1,5 +1,5 @@
 ---
-title: Office çözümleri için olay günlüğü | Microsoft Docs
+title: Office çözümleri için olay günlüğü
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b1319e906060a1fe4d94fbd2e6bb0a3f9d53eb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="event-logging-for-office-solutions"></a>Office Çözümleri İçin Olay Günlüğüne Kaydetme
+# <a name="event-logging-for-office-solutions"></a>Office çözümleri için olay günlüğü
   Tarafından yakalanan özel durum iletilerini görmek için Windows Olay Görüntüleyicisi'ni kullanabilirsiniz [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] yüklediğinizde veya Office çözümleri kaldırın. Bu olay günlükçüsü iletilerden yükleme ve dağıtım sorunlarını gidermek için kullanabilirsiniz.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="reading-the-event-log"></a>Olay günlüğünü okuma  
+## <a name="read-the-event-log"></a>Olay günlüğünü okuma  
  Açık **Olay Görüntüleyicisi'ni** ve görmek istediğiniz olaylar için filtre.  
   
-#### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Windows Server 2003 ve Windows XP'de olay günlüğünü okumak için  
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Windows Server 2003 ve Windows XP'de olay günlüğünü okumak için  
   
 1.  Denetim Masası'nda açmak **Yönetimsel Araçlar**.  
   
@@ -76,15 +76,15 @@ ms.lasthandoff: 04/16/2018
   
  Office çözümünü kaldırıldıktan sonra özel durum iletilerini olay günlüğüne kalır.  
   
- Göster veya Office çözümü çalışırken özel durum iletilerini günlüğe kaydetmek için bkz: [Office projelerinde hata ayıklama](../vsto/debugging-office-projects.md) ve [Office projelerinde hata ayıklama](../vsto/debugging-office-projects.md).  
+ Göster veya Office çözümü çalışırken özel durum iletilerini günlüğe kaydetmek için bkz: [hata ayıklama Office projeleri](../vsto/debugging-office-projects.md) ve [hata ayıklama Office projeleri](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Yerelleştirme  
  Özel durum iletisi dil Office çalışma zamanı dil için Visual Studio Araçları tarafından belirlenir. Örneğin, son kullanıcının bilgisayarına yüklü Japonca dil paketi varsa, özel durum iletisi Japonca olay günlüğüne yazılır.  
   
-## <a name="disabling-the-event-logger"></a>Olay günlüğü devre dışı bırakma  
+## <a name="disable-the-event-logger"></a>Olay günlüğü devre dışı bırak  
  Yükleme veya Office çözümlerini kaldırma durumunda varsayılan olarak, olay günlükçüsü etkinleştirilir. Olay günlükçüsü VSTO_EVENTLOGDISABLED ortam değişkeni "1" (bir) ayarlayarak devre dışı bırakabilirsiniz.  
   
-#### <a name="to-disable-the-event-log"></a>Olay günlüğünü devre dışı bırakmak için  
+### <a name="to-disable-the-event-log"></a>Olay günlüğünü devre dışı bırakmak için  
   
 1.  Denetim Masası'nda açmak **sistem**.  
   
@@ -98,8 +98,8 @@ ms.lasthandoff: 04/16/2018
   
 6.  **Tamam**'ı tıklatın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Office Çözümü Dağıtımında Sorunu Giderme](../vsto/troubleshooting-office-solution-deployment.md)  
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
+ [Office çözümleri dağıtımı sorunlarını giderme](../vsto/troubleshooting-office-solution-deployment.md)  
   
   

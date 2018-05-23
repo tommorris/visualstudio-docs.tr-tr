@@ -1,5 +1,5 @@
 ---
-title: Office Projelerindeki Olaylar | Microsoft Docs
+title: Office Projelerindeki Olaylar
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -35,11 +35,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3136bf1ac0937b60b5f0dec1b0be673e3127a470
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 10cd0e1740aa53902d266ed0af6820b500a453e9
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
   Her Office proje şablonu otomatik olarak birçok olay işleyicisi oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri VSTO eklentileri için olay işleyicileri biraz farklıdır.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  Visual Studio yeni veya var olan belgeler veya belge düzeyi özelleştirmelerinde çalışma sayfalarını arkasındaki oluşturulan kod sağlar. Bu kod iki farklı olayları başlatır: **başlangıç** ve **kapatma**.  
   
 ### <a name="startup-event"></a>Startup olayı  
- **Başlangıç** olayı her ana bilgisayar öğeleri (belge, çalışma kitabını veya çalışma) için belge çalışıyorken ve derlemedeki tüm başlatma kod çalıştırdıktan sonra. Kodunuzun çalıştığı sınıf çalıştırılacak son şeydir. Konak öğeleri hakkında daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
+ **Başlangıç** olayı her ana bilgisayar öğeleri (belge, çalışma kitabını veya çalışma) için belge çalışıyorken ve derlemedeki tüm başlatma kod çalıştırdıktan sonra. Kodunuzun çalıştığı sınıf çalıştırılacak son şeydir. Konak öğeleri hakkında daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
   
  Belge düzeyi projesi oluşturduğunuzda, Visual Studio için olay işleyicileri oluşturur **başlangıç** oluşturulan kod dosyalarında olay:  
   
@@ -127,7 +127,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Sıralı diğer sayfalar.  
   
- Projesi derlendiğinde sırası belirlenir. Kullanıcı sayfaları çalışma zamanında yeniden düzenler, olaylar çalışma kitabı açık veya kapalı başlatıldığında oluşturulur sipariş değiştirmez.  
+ Projesi derlendiğinde sırası belirlenir. Kullanıcı çalışma zamanında sayfaları yeniden düzenler, olaylar çalışma kitabı açık veya kapalı başlatıldığında oluşturulur sipariş değiştirmez.  
   
 ## <a name="vsto-add-in-projects"></a>VSTO eklentisi projelerine  
  Visual Studio VSTO eklentileri oluşturulan kod sağlar. Bu kod iki farklı olayları başlatır: <xref:Microsoft.Office.Tools.AddInBase.Startup> ve <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.  
@@ -137,14 +137,14 @@ ms.lasthandoff: 04/16/2018
   
  Kod `ThisAddIn_Startup` işleyicidir çalıştırmak için ilk kullanıcı kodu VSTO eklentinizi geçersiz kılmadıkça <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> yöntemi. Bu durumda, `ThisAddIn_Startup` olay işleyicisi sonra çağrılır <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.  
   
- Kodda eklemeyin `ThisAdd-In_Startup` kod açılması için bir belge gerektiriyorsa olay işleyicisi. Bunun yerine, bir kullanıcı oluşturur veya bir belgeyi açtığında, Office uygulaması oluşturan bir olay bu kodu ekleyin. Daha fazla bilgi için bkz: [bir belgeyi Office uygulama başlatılır erişme](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+ Kodda eklemeyin `ThisAdd-In_Startup` kod açılması için bir belge gerektiriyorsa olay işleyicisi. Bunun yerine, bir kullanıcı oluşturur veya bir belgeyi açtığında, Office uygulaması oluşturan bir olay bu kodu ekleyin. Daha fazla bilgi için bkz: [Office uygulaması başlatıldığında, bir belgeye erişme](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
  VSTO eklentileri başlatma sırası hakkında daha fazla bilgi için bkz: [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).  
   
 ### <a name="shutdown-event"></a>Shutdown olayı  
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Olayı kodunuzun yüklendiği uygulama etki alanı kaldırılmak üzere olduğunda oluşturulur. Bu olay tarafından işlenen `ThisAddIn_Shutdown` oluşturulan kod dosyasındaki yöntemi. Bu olay işleyicisi için VSTO eklentisi kaldırıldığında çalıştırmak için son kullanıcı kodudur.  
   
-#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Shutdown olayı Outlook VSTO eklentileri  
+#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Outlook VSTO eklentileri kapatma olayı  
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Yalnızca kullanıcı için VSTO eklentisi Outlook'ta COM eklentileri iletişim kutusunu kullanarak devre dışı bıraktığında olayı oluşturulur. Outlook çıktığında yükseltilmiş değil. Outlook çıktığında, çalıştırmanız gereken kodu varsa, aşağıdaki olaylardan biri ya da işler:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Olayı <xref:Microsoft.Office.Interop.Outlook.Application> nesnesi.  
@@ -152,13 +152,13 @@ ms.lasthandoff: 04/16/2018
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Olayı <xref:Microsoft.Office.Interop.Outlook.Explorer> nesnesi.  
   
 > [!NOTE]  
->  Yükseltmek için Outlook zorlayabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.Shutdown> kayıt defterini değiştirerek çıktığında olay. Bir yöneticinin bu ayarı döndürüyorsa, ancak herhangi bir için ekleme kodu `ThisAddIn_Shutdown` yöntemi artık Outlook çıktığında çalıştırır. Daha fazla bilgi için bkz: [Outlook 2010 için kapatma değişiklikleri](http://go.microsoft.com/fwlink/?LinkID=184614).  
+>  Yükseltmek için Outlook zorlayabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.Shutdown> kayıt defterini değiştirerek çıktığında olay. Bir yöneticinin bu ayarı döndürüyorsa, ancak herhangi bir için ekleme kodu `ThisAddIn_Shutdown` yöntemi artık Outlook çıktığında çalıştırır. Daha fazla bilgi için bkz: [kapatma değişiklikleri Outlook 2010 için](http://go.microsoft.com/fwlink/?LinkID=184614).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Office çözümleri geliştirmek](../vsto/developing-office-solutions.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
- [Office Proje Şablonlarına Genel Bakış](../vsto/office-project-templates-overview.md)  
+ [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
   
   

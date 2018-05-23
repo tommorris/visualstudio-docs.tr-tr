@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="editing-python-code"></a>Python kodu düzenleme
 
@@ -27,7 +27,7 @@ Düzenleyici ayrıca kod iki arasında exchange kolaylaşır Visual Studio etkil
 |---|---|
 | ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Microsoft Virtual Academy) bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) Python kodu (2 m 30s) düzenleme tanıtımı için.|
 
-Visual Studio'da kod düzenleme genel belgeler için bkz: [kod ve Metin Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md). Ayrıca bkz. [Visual Studio'da anahat oluşturma](../ide/outlining.md), kodunuzu belirli bölümlerini odaklanmış olmanıza yardımcı olur.
+Visual Studio'da kod düzenleme genel belgeler için bkz: [Kod düzenleyicisinde özelliklerini](../ide/writing-code-in-the-code-and-text-editor.md). Ayrıca bkz. [Visual Studio'da anahat oluşturma](../ide/outlining.md), kodunuzu belirli bölümlerini odaklanmış olmanıza yardımcı olur.
 
 Visual Studio nesne tarayıcısı da kullanabilirsiniz (**Görünüm > Diğer Pencereler > Nesne Tarayıcısı** veya Ctrl + W, J) her modülünde tanımlandığı Python sınıfları ve bu sınıfların tanımlanan işlevler İnceleme için.
 

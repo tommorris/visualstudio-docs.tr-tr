@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>EventSource Olaylarını İşaretleyici Olarak Görselleştirme
+# <a name="visualize-eventsource-events-as-markers"></a>EventSource olaylarını işaretleyici olarak Görselleştirme
 Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olarak görüntüleyebilir ve işaretlerinin görüntülenme biçimini kontrol edebilirsiniz. EventSource işaretçileri görüntülemek için GUID ETW sağlayıcısını kullanarak kayıt [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu. Eşzamanlılık görselleştiricisi EventSource olaylarını olarak göstermek için varsayılan kuralları sahip [bayrak işaretleyicileri](../profiling/flag-markers.md), [aralık işaretçileri](../profiling/span-markers.md), ve [ileti işaretçileri](../profiling/message-markers.md). EventSource olaylarını olaylara özel alanlar ekleyerek görüntülenme biçimini özelleştirebilirsiniz. İşaretçileri hakkında daha fazla bilgi için bkz: [eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md). EventSource olaylarını hakkında daha fazla bilgi için bkz: <xref:System.Diagnostics.Tracing>.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>EventSource olayların varsayılan Görselleştirme  
@@ -52,7 +52,7 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
 ### <a name="text"></a>Metin  
  Printf türü biçimlendirilmiş metin iletisi olay için tanımlanan değilse işaret açıklaması görüntülenir. Aksi takdirde, olayın adı ve her yükü alanının değeri açıklamasıdır.  
   
-## <a name="customizing-visualization-of-eventsource-events"></a>EventSource olaylarını görselleştirme özelleştirme  
+## <a name="customize-visualization-of-eventsource-events"></a>EventSource olaylarını görselleştirme özelleştirme  
  EventSource olaylarını olaya uygun alanlar ekleyerek aşağıdaki bölümlerde açıklandığı gibi görüntülenme biçimini özelleştirebilirsiniz.  
   
 ### <a name="marker-type"></a>İşaret türü  
@@ -94,5 +94,5 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
 > [!NOTE]
 >  Bunları kısmen aynı iş parçacığı üzerinde üst üste veya bunları bir iş parçacığında başlatmaya izin vermek yayılma, iç içe SpanID kullanılmasına izin verin ve başka bir uç desteklenmiyor.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Görselleştiricisi İşaretleyicileri](../profiling/concurrency-visualizer-markers.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md)

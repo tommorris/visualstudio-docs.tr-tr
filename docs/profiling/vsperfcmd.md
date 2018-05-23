@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 **VSPerfCmd.exe** aracı performans verileri toplama durdurmak ve başlatmak için kullanılır. Aşağıdaki sözdizimini kullanır:  
@@ -54,7 +54,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn ve ThreadOff](../profiling/threadon-and-threadoff.md) **:** *komutu*|Belirtilen iş parçacığı için profil oluşturma duraklatır. Kullanım **ThreadOff** yalnızca profil oluşturma araçları yöntemi ile olduğunda.|  
 |[İşareti](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Profil oluşturma veri dosyası, isteğe bağlı bir metin işareti ekler.|  
   
-## <a name="sampling-method-options"></a>Örnekleme yöntemi seçenekleri  
+## <a name="sample-method-options"></a>Örnek yöntemi seçenekleri  
  Örnekleme profili oluşturma yöntemi kullanırken aşağıdaki seçeneklerden yalnızca kullanılabilir.  
   
 |Seçenek|Açıklama|  
@@ -66,7 +66,7 @@ VSPerfCmd [/U] [/options]
 |[Detach](../profiling/detach.md)[**: *** PID*[,*PID*]]|Profil oluşturma belirtilen işlemleri durdurur. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir. Profil oluşturma hiçbir işlem belirtilmişse, tüm işlemler için durdurulur.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**ayırma**`&#124;`**ömrü**}]|.NET bellek ayırma ve nesne yaşam verisi toplar. Yalnızca kullanmak **VSPerfCmdLaunch** seçeneği.|  
   
-### <a name="sampling-interval-options"></a>Örnekleme aralığı seçenekleri  
+### <a name="sample-interval-options"></a>Örnek aralığı seçenekleri  
  Türü ve süresi örnekleme aralıkları, aşağıdaki seçenekleri belirtin. Varsayılan değer **Zamanlayıcı**. Kullanarak aralığı olarak CPU sayaç belirtebilirsiniz **sayaç** seçeneği. Bu seçenekler yalnızca ile belirtilebilir **başlatma** veya ilk ile **Attach** profil oluşturma oturumu.  
   
 |Seçenek|Açıklama|  

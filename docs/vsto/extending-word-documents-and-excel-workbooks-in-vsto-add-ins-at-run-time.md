@@ -1,5 +1,5 @@
 ---
-title: Word belgelerini ve Excel çalışma kitaplarını VSTO eklentilerini çalışma zamanında genişletme | Microsoft Docs
+title: Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f95c7cb0dfa5fb867807e32366157839725db85
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3dd4bd7c2b473b4bb48481fee6a991dde748eb26
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>VSTO Eklentilerindeki Word Belgelerini ve Excel Çalışma Kitaplarını Çalışma Zamanında Genişletme
+# <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO eklentilerini genişletme
   Bir VSTO eklentisi, Word belgelerini ve Excel çalışma kitapları aşağıdaki şekillerde özelleştirmek için kullanabilirsiniz:  
   
 -   Yönetilen denetimleri herhangi bir açık belgeye veya çalışma sayfası ekleyin.  
@@ -40,63 +40,63 @@ ms.lasthandoff: 04/16/2018
   
  **Uygulandığı öğe:** Bu konu başlığı altındaki bilgiler şu uygulamalar için VSTO eklentisi projelerine yöneliktir: Excel ve Word. Daha fazla bilgi için bkz: [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
-## <a name="generating-extended-objects-in-vsto-add-ins"></a>VSTO eklentilerinde genişletilmiş nesneleri oluşturma  
- *Genişletilmiş nesneleri* yerel Word veya Excel nesne modellerinde varolan nesnelere işlevsellik ekleyen Office çalışma zamanı için Visual Studio Araçları tarafından sağlanan türleri örnekleridir (adlı *yerel Office nesneleri*). Genişletilmiş nesne Word veya Excel nesnesi oluşturmak için GetVstoObject yöntemi kullanın. İlk kez için belirtilen bir Word veya Excel nesne, GetVstoObject yöntemi çağırdığınızda belirtilen nesne genişleten yeni bir nesne döndürür. Yöntemini çağırın ve aynı Word veya Excel belirtin her zaman nesne aynı genişletilmiş nesnesi döndürür.  
+## <a name="generate-extended-objects-in-vsto-add-ins"></a>VSTO eklentileri Genişletilmiş nesneler oluşturmak  
+ *Genişletilmiş nesneleri* yerel Word veya Excel nesne modellerinde varolan nesnelere işlevsellik ekleyen Office çalışma zamanı için Visual Studio Araçları tarafından sağlanan türleri örnekleridir (adlı *yerel Office nesneleri*). Genişletilmiş nesne Word veya Excel nesnesi oluşturmak için kullanmak `GetVstoObject` yöntemi. İlk kez, çağırdığınızda `GetVstoObject` yöntemi belirtilen Word veya Excel nesne, belirtilen nesne genişleten yeni bir nesne döndürür. Yöntemini çağırın ve aynı Word veya Excel belirtin her zaman nesne aynı genişletilmiş nesnesi döndürür.  
   
- Genişletilmiş nesne türünü yerel Office nesnesinin türü aynı ada sahip, ancak türü tanımlanan <xref:Microsoft.Office.Tools.Excel> veya <xref:Microsoft.Office.Tools.Word> ad alanı. Örneğin, genişletilecek GetVstoObject yöntemini çağırırsanız bir <xref:Microsoft.Office.Interop.Word.Document> nesne, yöntem bir <xref:Microsoft.Office.Tools.Word.Document> nesnesi.  
+ Genişletilmiş nesne türünü yerel Office nesnesinin türü aynı ada sahip, ancak türü tanımlanan <xref:Microsoft.Office.Tools.Excel> veya <xref:Microsoft.Office.Tools.Word> ad alanı. Örneğin, çağırırsanız `GetVstoObject` genişletmek için yöntemi bir <xref:Microsoft.Office.Interop.Word.Document> nesne, yöntem döndürür bir <xref:Microsoft.Office.Tools.Word.Document> nesnesi.  
   
- GetVstoObject yöntemleri öncelikle VSTO eklentisi projelerine kullanılmak üzere tasarlanmıştır. Belge düzeyi projelerine de bu yöntemleri kullanabilirsiniz, ancak farklı şekilde davranır ve daha az kullanıma sahiptirler.  
+ `GetVstoObject` Yöntemleri öncelikle VSTO eklentisi projelerine kullanılacak yöneliktir. Belge düzeyi projelerine de bu yöntemleri kullanabilirsiniz, ancak farklı şekilde davranır ve daha az kullanıma sahiptirler.  
   
- Genişletilmiş nesne için belirli bir yerel Office nesnesi zaten oluşturulmuş olup olmadığını belirlemek için HasVstoObject yöntemi kullanın. Daha fazla bilgi için bkz: [belirleme olup olmadığını bir Office nesnesi genişletilmişse](#HasVstoObject).  
+ Genişletilmiş nesne için belirli bir yerel Office nesnesi zaten oluşturulmuş olup olmadığını belirlemek için `HasVstoObject` yöntemi. Daha fazla bilgi için bkz: [Office nesne genişletilmiş olup olmadığını belirlemek](#HasVstoObject).  
   
-### <a name="generating-host-items"></a>Konak öğeleri oluşturma  
- Belge düzeyi nesneyi genişletmek için GetVstoObject kullandığınızda (diğer bir deyişle, bir <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, veya <xref:Microsoft.Office.Interop.Word.Document>), döndürülen nesne adında bir *konak öğesi*. Bir konak öğesi diğer genişletilmiş nesneler ve denetimler de dahil olmak üzere diğer nesneleri içeren bir türüdür. Karşılık gelen türünü Word veya Excel birincil birlikte çalışma derlemesi benzer, ancak ek özelliklere sahiptir. Konak öğeleri hakkında daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
+### <a name="generate-host-items"></a>Konak öğeleri oluşturma  
+ Kullandığınızda `GetVstoObject` belge düzeyinde bir nesne genişletmek için (diğer bir deyişle, bir <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, veya <xref:Microsoft.Office.Interop.Word.Document>), döndürülen nesne adında bir *konak öğesi*. Bir konak öğesi diğer genişletilmiş nesneler ve denetimler de dahil olmak üzere diğer nesneleri içeren bir türüdür. Karşılık gelen türünü Word veya Excel birincil birlikte çalışma derlemesi benzer, ancak ek özelliklere sahiptir. Konak öğeleri hakkında daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
   
- Bir konak öğesi oluşturduktan sonra yönetilen denetimleri belge, çalışma kitabı veya çalışma sayfası eklemek için kullanabilirsiniz. Daha fazla bilgi için bkz: [belgelere ve çalışma sayfaları yönetilen denetimleri ekleme](#AddControls).  
+ Bir konak öğesi oluşturduktan sonra yönetilen denetimleri belge, çalışma kitabı veya çalışma sayfası eklemek için kullanabilirsiniz. Daha fazla bilgi için bkz: [Ekle yönetilen denetimleri belgelere ve çalışma sayfaları](#AddControls).  
   
-##### <a name="to-generate-a-host-item-for-a-word-document"></a>Bir Word belgesi için bir konak öğesi oluşturmak için  
+#### <a name="to-generate-a-host-item-for-a-word-document"></a>Bir Word belgesi için bir konak öğesi oluşturmak için  
   
 -   Aşağıdaki kod örneğinde etkin belge için bir konak öğesi oluşturmak nasıl gösterir.  
   
      [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
      [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]  
   
-##### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>Bir Excel çalışma kitabı konak öğesi oluşturmak için  
+#### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>Bir Excel çalışma kitabı konak öğesi oluşturmak için  
   
 -   Aşağıdaki kod örneğinde, etkin çalışma kitabı konak öğesi oluşturmak gösterilmiştir.  
   
      [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]  
   
-##### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>Excel çalışma sayfası konak öğesi oluşturmak için  
+#### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>Excel çalışma sayfası konak öğesi oluşturmak için  
   
 -   Aşağıdaki kod örneğinde, etkin çalışma sayfası konak öğesi projedeki gösterilmiştir.  
   
      [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]  
   
-### <a name="generating-listobject-host-controls"></a>ListObject konak denetimleri oluşturma  
- GetVstoObject yöntemi genişletmek için kullandığınızda bir <xref:Microsoft.Office.Interop.Excel.ListObject>, yöntem bir <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Tüm özellikleri özgün sahip <xref:Microsoft.Office.Interop.Excel.ListObject>, ancak verilere Windows Forms veri bağlama modelini kullanarak bağlanması yeteneği gibi ek işlevleri de vardır. Daha fazla bilgi için bkz: [ListObject denetimi](../vsto/listobject-control.md).  
+### <a name="generate-listobject-host-controls"></a>ListObject ana bilgisayar denetimleri  
+ Kullandığınızda `GetVstoObject` genişletmek için yöntemi bir <xref:Microsoft.Office.Interop.Excel.ListObject>, yöntem bir <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Tüm özellikleri özgün sahip <xref:Microsoft.Office.Interop.Excel.ListObject>, ancak verilere Windows Forms veri bağlama modelini kullanarak bağlanması yeteneği gibi ek işlevleri de vardır. Daha fazla bilgi için bkz: [ListObject denetimi](../vsto/listobject-control.md).  
   
-##### <a name="to-generate-a-host-control-for-a-listobject"></a>ListObject konak denetimi oluşturmak için  
+#### <a name="to-generate-a-host-control-for-a-listobject"></a>ListObject konak denetimi oluşturmak için  
   
 -   Aşağıdaki kod örneğinde nasıl oluşturulacağını gösteren bir <xref:Microsoft.Office.Tools.Excel.ListObject> ilk kez <xref:Microsoft.Office.Interop.Excel.ListObject> projesinde etkin çalışma sayfasında.  
   
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
-##  <a name="AddControls"></a> Belgeler ve çalışma sayfalarını yönetilen denetimler ekleme  
+###  <a name="AddControls"></a> Yönetilen denetimleri belgelere ve çalışma kitaplarına ekleme  
  Oluşturduğunuz sonra bir <xref:Microsoft.Office.Tools.Word.Document> veya <xref:Microsoft.Office.Tools.Excel.Worksheet>bu genişletilmiş çalışma nesneleri temsil etmek veya belgeye denetimleri ekleyebilirsiniz. Bunu yapmak için denetim özelliğini kullanın <xref:Microsoft.Office.Tools.Word.Document> veya <xref:Microsoft.Office.Tools.Excel.Worksheet>. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Windows Forms denetimleri ekleme veya *konak denetimlerini*. Bir konak kontrolü tarafından sağlanan bir denetimdir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , karşılık gelen bir denetim Word veya Excel birincil birlikte çalışma derlemesindeki sarmalar. Konak kontrolü tüm yerel Office nesnesini davranışını gösterir, ancak aynı zamanda olayları başlatır ve verilere Windows Forms veri bağlama modelini kullanarak bağlanabilir. Daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
+ Windows Forms denetimleri ekleme veya *konak denetimlerini*. Bir konak kontrolü tarafından sağlanan bir denetimdir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , karşılık gelen bir denetim Word veya Excel birincil birlikte çalışma derlemesindeki sarmalar. Konak kontrolü tüm yerel Office nesnesini davranışını gösterir, ancak aynı zamanda olayları başlatır ve verilere Windows Forms veri bağlama modelini kullanarak bağlanabilir. Daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
   
 > [!NOTE]  
->  Ekleyemezsiniz bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> bir çalışma sayfasına denetim veya <xref:Microsoft.Office.Tools.Word.XMLNode> veya <xref:Microsoft.Office.Tools.Word.XMLNodes> denetimini VSTO eklenti kullanarak belgeye. Bu ana bilgisayar denetimleri programlı olarak eklenemez. Daha fazla bilgi için bkz: [programsal sınırlamalar, ana bilgisayar öğeleri ve ana bilgisayar denetimleri](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+>  Ekleyemezsiniz bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> bir çalışma sayfasına denetim veya <xref:Microsoft.Office.Tools.Word.XMLNode> veya <xref:Microsoft.Office.Tools.Word.XMLNodes> denetimini VSTO eklenti kullanarak belgeye. Bu ana bilgisayar denetimleri programlı olarak eklenemez. Daha fazla bilgi için bkz: [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
-### <a name="persisting-and-removing-controls"></a>Kalıcı ve denetimleri kaldırma  
- Bir belge ya da çalışma sayfasına yönetilen denetimler eklediğinizde, Belge kaydedildiğinde ve sonra kapalı olduğunda denetimleri kalıcı değildir. Tüm ana bilgisayar denetimleri, böylece yalnızca arka plandaki yerel Office nesneleri geride bıraktığı kaldırılır. Örneğin, bir <xref:Microsoft.Office.Tools.Excel.ListObject> hale bir <xref:Microsoft.Office.Interop.Excel.ListObject>. Tüm Windows Forms denetimleri de kaldırılır, ancak denetimler için ActiveX sarmalayıcıları belgede geride bıraktığı. VSTO eklentinizi içinde Denetimleri'ni temizlemek için ya da belge bir sonraki açılışında denetimleri yeniden oluşturmak için kod eklemeniz gerekir. Daha fazla bilgi için bkz: [Office belgelerinde Dinamik denetimleri kalıcı kılma](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+### <a name="persist-and-remove-controls"></a>Kalıcı ve denetimleri kaldırma  
+ Bir belge ya da çalışma sayfasına yönetilen denetimler eklediğinizde, Belge kaydedildiğinde ve sonra kapalı olduğunda denetimleri kalıcı değildir. Tüm ana bilgisayar denetimleri, böylece yalnızca arka plandaki yerel Office nesneleri geride bıraktığı kaldırılır. Örneğin, bir <xref:Microsoft.Office.Tools.Excel.ListObject> hale bir <xref:Microsoft.Office.Interop.Excel.ListObject>. Tüm Windows Forms denetimleri de kaldırılır, ancak denetimler için ActiveX sarmalayıcıları belgede geride bıraktığı. VSTO eklentinizi içinde Denetimleri'ni temizlemek için ya da belge bir sonraki açılışında denetimleri yeniden oluşturmak için kod eklemeniz gerekir. Daha fazla bilgi için bkz: [Office belgelerinde Dinamik denetimleri kalıcı](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
-## <a name="accessing-application-level-events-on-documents-and-workbooks"></a>Uygulama düzeyi olaylarına belgeleri ve çalışma kitaplarını erişme  
+## <a name="access-application-level-events-on-documents-and-workbooks"></a>Erişim uygulama düzeyi olaylarına belgeler ve çalışma kitapları  
  Yerel Word ve Excel nesne modelleri bazı belge, çalışma kitabı ve çalışma olayları yalnızca uygulama düzeyinde oluşturulur. Örneğin, <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> olayı Word'de belge açıldığında, ancak bu olay tanımlanan <xref:Microsoft.Office.Interop.Word.Application> sınıfı, yerine <xref:Microsoft.Office.Interop.Word.Document> sınıfı.  
   
  VSTO eklentinizi içinde yalnızca yerel Office nesneleri kullandığınızda, bu uygulama düzeyi olayları işlemek ve olayı belge bir özelleştirilmiş olup olmadığını belirlemek için ek kod yazmanız gerekir. Konak öğeleri belirli bir belge için olayları işlemek daha kolay için bu olayları belge düzeyinde sağlar. Bir konak öğesi oluşturmak ve ardından o konak öğesi için olayını işle.  
@@ -116,13 +116,13 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]  
   
 ##  <a name="HasVstoObject"></a> Office nesne genişletilmiş olup olmadığını belirleme  
- Genişletilmiş nesne için belirli bir yerel Office nesnesi zaten oluşturulmuş olup olmadığını belirlemek için HasVstoObject yöntemi kullanın. Bu yöntem **true** genişletilmiş bir nesne zaten oluşturulduysa; Aksi takdirde, döndürür **false**.  
+ Genişletilmiş nesne için belirli bir yerel Office nesnesi zaten oluşturulmuş olup olmadığını belirlemek için `HasVstoObject` yöntemi. Bu yöntem **true** genişletilmiş bir nesne zaten oluşturulduysa; Aksi takdirde, döndürür **false**.  
   
- Globals.Factory.HasVstoMethod yöntemini kullanın. Yerel Word veya Excel nesnesi gibi geçirmek bir <xref:Microsoft.Office.Interop.Word.Document> veya <xref:Microsoft.Office.Interop.Excel.Worksheet>, Genişletilmiş nesne için test etmek istediğiniz.  
+ Kullanım `Globals.Factory.HasVstoMethod` yöntemi. Yerel Word veya Excel nesnesi gibi geçirmek bir <xref:Microsoft.Office.Interop.Word.Document> veya <xref:Microsoft.Office.Interop.Excel.Worksheet>, Genişletilmiş nesne için test etmek istediğiniz.  
   
- HasVstoObject yöntemi, yalnızca belirtilen bir Office nesnesi Genişletilmiş nesne olduğunda kodu çalıştırmak istediğinizde yararlıdır. Örneğin, bir Word VSTO işleyen eklenti varsa <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> bir belgeyi daha önce yönetilen denetimleri kaldırmak için olay kaydedilir, belge genişletilmiş olup olmadığını belirlemek için HasVstoObject yöntemi kullanabilirsiniz. Belgede Denetimleri temizlemek çalışmadan belge genişletilmedi, yönetilen denetimler içeremez ve bu nedenle olay işleyicisi kolayca kaldırabilirsiniz döndürür.  
+ `HasVstoObject` Yöntemi, yalnızca belirtilen bir Office nesnesi Genişletilmiş nesne olduğunda kodu çalıştırmak istediğinizde yararlıdır. Örneğin, bir Word VSTO işleyen eklenti varsa <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> bir belgeyi daha önce yönetilen denetimleri kaldırmak için olay kaydedilir, kullanabilirsiniz `HasVstoObject` belge genişletilmiş olup olmadığını belirlemek amacıyla yöntemi. Belgede Denetimleri temizlemek çalışmadan belge genişletilmedi, yönetilen denetimler içeremez ve bu nedenle olay işleyicisi kolayca kaldırabilirsiniz döndürür.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   

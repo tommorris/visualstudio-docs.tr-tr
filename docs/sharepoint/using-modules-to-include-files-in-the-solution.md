@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9389e5928c74e5ee60bee90b375671777f1b807
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Çözüme Dosyaları Dahil Etmek için Modül Kullanma
   SharePoint server gibi yeni ana sayfalar kendi dosya türü ne olursa olsun dosyaları dağıtmak istediğinizde zamanlar olabilir. Bunu yapmak için kullanabileceğiniz *modülleri* (ile karıştırılmamalıdır [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] kod modülleri). Modüller, bir SharePoint çözüm dosyalarında kapsayıcılardır. Çözüm dağıtıldığında, modül dosyalarında SharePoint sunucusunda belirtilen klasörlerine kopyalanır.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
  Aşağıda, bir modül Elements.xml dosyası örneği verilmiştir:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
     <Module Name="Module1">  

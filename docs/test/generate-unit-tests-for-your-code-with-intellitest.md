@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af013fe81ca464f6433b35429e3bbf077f78e2f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 28ba3f0abd948714e17ef0c69267eb7c1df9162e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Intellitest ile kodunuz için birim testleri oluşturma
 Intellitest test verileri ve birim testleri dizisi oluşturmak için .NET kodunuzu araştırır. Koddaki her deyim için bir test giriş oluşturulan bu deyim yürütülecek. Servis talebi çözümleme kodda koşullu her dal için gerçekleştirilir. Örneğin, `if` deyimleri, onaylar ve özel durumlar oluşturan tüm işlemleri analiz edilir. Bu çözümleme yüksek kod kapsamı ile birim testleri oluşturmak, yöntemlerin her biri için parametreli birim testi için test verileri oluşturmak için kullanılır.
@@ -143,7 +143,7 @@ Girişleri ve çıkışları doğrulamak için oluşturulan birim testleri isted
 **Y:** Evet, şu adımları izleyin [bulma ve diğer çerçeveler yükleme](../test/install-third-party-unit-test-frameworks.md).
 Test framework uzantıları, aynı zamanda Visual Studio Market'te bulunabilir kullanılabilir:
 
-* [Test oluşturucuları için NUnit uzantısı](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [Test oluşturucuları için NUnit uzantısı](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 * [Test oluşturucuları için xUnit.net uzantısı](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b0b0941959b0d70fa5dfb0ae72aed181b1cd42e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperf"></a>VSPerf
 Kullanım **VsPerf** komut satırı aracı:  
@@ -67,6 +67,6 @@ Kullanım **VsPerf** komut satırı aracı:
 |**/ Ayır**|Veri toplamayı Durdur, ancak çalışmaya devam hedef işlemler sağlar.|  
 |**/ Status**|Profil Oluşturucu durumunu gösterir.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Windows 8 ve Windows Server 2012 uygulamaların performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
- [Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)

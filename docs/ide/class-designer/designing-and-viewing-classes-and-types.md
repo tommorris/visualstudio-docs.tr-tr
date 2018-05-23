@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdc89faaebff31981e7cece07c8530600f32454
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Tasarım ve görünüm sınıfları ve Sınıf Tasarımcısı ile türleri
 
@@ -36,7 +36,7 @@ Tasarım, görselleştirin ve sınıfları ve diğer türleri ile kodunuzda yeni
 
 - **Yeniden Düzenle**: geçersiz kılma yöntemleri, tanımlayıcıları yeniden adlandırın, parametreleri yeniden düzenlemeniz ve arabirimleri ve soyut sınıflar uygular.
 
-## <a name="view-types-and-relationships"></a>Görünüm türleri ve ilişkileri
+## <a name="view-types-and-relationships"></a>Türleri ve ilişkileri görüntüleme
 
 Sınıf diyagramları türleri, örneğin, bağlı üyeleri ve aralarındaki ilişkilerin ayrıntılarını gösterin. Bu varlıklar görselleştirme dinamik koda görülmektedir. Bu tasarımcıda türlerini düzenlemek ve varlığın kaynak kodunda yansıtılan düzenlemeleriniz bkz anlamına gelir. Benzer şekilde, sınıf diyagramı kod dosyalarında yapılan değişiklikler ile senkronize tutulur.
 
@@ -58,5 +58,5 @@ Bir veya daha fazla sınıf diyagramları ince ayar sonra Microsoft Office belge
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Düzenleyici'de kod yazma](../writing-code-in-the-code-and-text-editor.md)
+- [Kod Düzenleyicisi özellikleri](../writing-code-in-the-code-and-text-editor.md)
 - [Çözümlerinizdeki bağımlılıkları eşleme](../../modeling/map-dependencies-across-your-solutions.md)

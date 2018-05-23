@@ -16,13 +16,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60ea2bcf1770e8c20db61c93a2b4ed6516b0daff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffe35d7b2467147c5f9f244357371f2d5dadb76b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="vsinstr-warnings"></a>VSInstr Uyarıları
+# <a name="vsinstr-warnings"></a>Vsınstr uyarıları
 Aşağıdaki tabloda VSInstr.exe aracı tarafından verilen uyarılar listeler. Görünmesini gizlemek için uyarı numaralarını NOWARN seçeneğiyle kullanabilirsiniz.  
   
 |Uyarı sayısı|Açıklama|  
@@ -43,5 +43,5 @@ Aşağıdaki tabloda VSInstr.exe aracı tarafından verilen uyarılar listeler. 
 |**VSP2013**|Bu görüntüyü bir 32 bitlik işlem olarak çalışmasını gerektirir. CLR üstbilgi bayrakları bu yansıtacak şekilde güncelleştirildi.<br /><br /> Profil Oluşturucu ikili 64-bit işletim sistemlerinin 32 bit işlem WOW64 öykünücüsünde açabilirsiniz şekilde değiştirir. Varolan bir 64-bit işlemde yüklenen kitaplıklarını (DLL'ler) bu başarısız olabilir. Bu uyarı bağımlılığın kullanıcıyı uyarır.|  
 |**VSP2014**|Sonuçta elde edilen izleme eklenmiş görüntü geçersiz olduğu belirlendi ve çalışmayabilir.<br /><br /> Bu ileti, geçersiz bir PE üstbilgi son Araçlı derleme sahip oluşur.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VSInstr](../profiling/vsinstr.md)

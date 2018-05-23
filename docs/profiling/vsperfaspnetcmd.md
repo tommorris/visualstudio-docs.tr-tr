@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ddfb73e6871a30cabcece0711b0cf5b4c63175
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c6e4420b0466857177cad356de7bb4a737968f3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
-**VSPerfASPNetCmd.exe** komut satırı aracı sağlar, ASP.Net Web siteleri profiline gerektirmeden ortam değişkenlerini ayarlama veya bilgisayarınızı yeniden başlatın. Kullanım **VSPerfASPNetCmd.exe** yerine [VSPerfCmd](../profiling/vsperfcmd.md) zaman ASP.NET Web siteleri profil ve tarafından sağlanan ek işlevsellik gerekmez **VSPerfCmd**. Hakkında daha fazla bilgi için **VSPerfASPNetCmd**, bkz: [VSPerfASPNETCmd ile Hızlı Web sitesi profil](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** bir ASP.NET Web sitesi profilini bağımsız profil oluşturucu kullanırken kullanmak için tercih edilen komut satırı aracıdır.  
+**VSPerfASPNetCmd.exe** komut satırı aracı sağlar, ASP.Net Web siteleri profiline gerektirmeden ortam değişkenlerini ayarlama veya bilgisayarınızı yeniden başlatın. Kullanım **VSPerfASPNetCmd.exe** yerine [VSPerfCmd](../profiling/vsperfcmd.md) zaman ASP.NET Web siteleri profil ve tarafından sağlanan ek işlevsellik gerekmez **VSPerfCmd**. Hakkında daha fazla bilgi için **VSPerfASPNetCmd**, bkz: [VSPerfASPNETCmd ile hızlı web sitesi profili oluşturma](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** bir ASP.NET Web sitesi profilini bağımsız profil oluşturucu kullanırken kullanmak için tercih edilen komut satırı aracıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
  **vsperfaspnetcmd** [/*seçenekleri*] *Web sitesi*  
@@ -39,6 +39,6 @@ ms.lasthandoff: 04/19/2018
 |**/ Kapat:** `Website`veya   **/d:**`Website`|Profil oluşturma devre dışı bırakır. Kullandıktan sonra komut satırındaki tek seçenek olarak kullanın **/nowait** seçeneği, başla veya profil oluşturucu beklenmedik şekilde sona erer. Özgün kullandığınız aynı URL'yi belirtin **VSPerfASPNETCmd** komutu.|  
 |`Website`|Profili için Web sitesi URL'si.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Profil oluşturma VSPerfASPNETCmd ile Hızlı Web sitesi](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)   
- [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Profil oluşturma VSPerfASPNETCmd ile hızlı web sitesi](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)   
+ [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)

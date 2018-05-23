@@ -19,25 +19,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="encodings-and-line-breaks"></a>Kodlamalar ve satır sonları
+# <a name="encodings-and-line-endings"></a>Kodlamalar ve satır sonları
 
 Visual Studio'da satır sonları gibi karakterlerden yorumlanır:
 
--   Satır başı + satır besleme CR LF:, 000 D + 000A Unicode karakter
+- Satır başı + satır besleme CR LF:, 000 D + 000A Unicode karakter
 
--   LF: satır besleme, Unicode karakter 000A
+- LF: satır besleme, Unicode karakter 000A
 
--   No: Sonraki satırında, Unicode karakter 0085
+- No: Sonraki satırında, Unicode karakter 0085
 
--   LS: Satır ayırıcı, Unicode karakter 2028
+- LS: Satır ayırıcı, Unicode karakter 2028
 
--   PS: Paragraf ayırıcı, Unicode karakter 2029
+- PS: Paragraf ayırıcı, Unicode karakter 2029
 
 Diğer uygulamalardan kopyalanan metni özgün kodlama ve satır sonu karakterleri tutar. Örneğin, Not Defteri'nden metni kopyalayın ve Visual Studio bir metin dosyasına yapıştırın, metni Not Defteri'nde vardı aynı ayarlara sahip.
 
@@ -56,4 +56,4 @@ Kullanabileceğiniz **dosya** > **Gelişmiş kaydetme seçenekleri** iletişim k
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod Düzenleyicisi'nde yazma](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Kod Düzenleyicisi özellikleri](../ide/writing-code-in-the-code-and-text-editor.md)

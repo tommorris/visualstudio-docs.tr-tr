@@ -1,5 +1,5 @@
 ---
-title: Getautoınsertextensions yöntemi | Microsoft Docs
+title: Getautoınsertextensions yöntemi
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,35 +13,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67f6bfcb0ee38acf9abb604f28fa95eeaa605fde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions Metodu
+# <a name="getautoinsertextensions-method"></a>Getautoınsertextensions yöntemi
   Hata ayıklama sırasında otomatik olarak eklenmesini olan Office için uygulamalar hakkındaki bilgileri alır.  
   
  Bu yöntem, gelecekte kullanılmak üzere ayrılmış.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```c  
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
 |*psaExtensionNames*|Office uygulamaları uzantısı adlarını.|  
   
-## <a name="return-value"></a>Dönüş Değeri  
+## <a name="return-value"></a>Dönüş değeri  
  Yöntemi başarıyla tamamlanmış olup olmadığını belirten bir HRESULT değer.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Her uygulama için eklenecek Office HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer altındaki bir değere karşılık gelen bir Office uygulaması uzantı adı olarak döndürülür. Konak, bu kayıt defteri değerlerini aramak ve uzantıları otomatik olarak ekler.  
+ Her uygulama için eklenecek Office bir değere karşılık gelen bir Office uygulaması uzantı adı olarak döndürülür **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Konak, bu kayıt defteri değerlerini aramak ve uzantıları otomatik olarak ekler.  
   
   

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport komut satırı aracını kullanarak raporlar oluşturmak için kullanılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma veri dosyaları profil oluşturma araçları. Varsayılan rapor bir .csv dosyası biçimidir.  
@@ -90,5 +90,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:**[*columnname*]|Bu belirli sütun karşılaştırma değerlerini kullanın. Varsayılan özel örnekler yüzde sütundur.|  
 |**QueryDiffTables**|Geçerli tablolar ve sütunlar sağlanan iki rapor dosyaların listesi.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Performans Raporu Görünümleri](../profiling/performance-report-views.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Performans rapor görünümleri](../profiling/performance-report-views.md)

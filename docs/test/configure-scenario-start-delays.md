@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Test yük Senaryo Başlatma Gecikmelerini Yapılandırma
+title: Yük testi için Senaryo Başlatma Gecikmelerini Yapılandırma
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Yük testlerinde Senaryo Başlatma Gecikmelerini Yapılandırma
 
@@ -72,11 +72,11 @@ Değiştirmek için Yük Testi Düzenleyicisi'ni kullanarak bir yük testinde se
 
      **Yük Testi Düzenleyicisi** görüntülenir. Yük testi ağacı görüntülenir.
 
-2. Ağaçları yük testi **senaryoları** klasörü, kullanılacak aracıları belirtmek istediğiniz senaryo düğümünü seçin.
+2. Ağaçları yük testi **senaryoları** klasörünü Isınma davranışını değiştirmek istediğiniz senaryo düğümünü seçin.
 
 3. Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
 
-     Senaryonun kategoriler ve Özellikler Özellikler penceresinde görüntülenir.
+     Senaryonun kategoriler ve özellikler görüntülenir **özellikleri** penceresi.
 
      İçinde **Isınma sırasında devre dışı bırak** özelliği, şunlardan birini seçin **True** veya **False.**
 

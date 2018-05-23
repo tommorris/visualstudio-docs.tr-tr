@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 yükleyin
 
@@ -79,7 +79,7 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 
 1. Bulmak istediğiniz iş yükünü **Visual Studio'yu yükleme** ekran.
 
- ![Visual Studio 2017 Kurulum iletişim kutusundan bir iş yükünü seçme](../install/media/install-visual-studio-enterprise.png)
+ ![Visual Studio 2017 Kurulum iletişim kutusundan bir iş yükünü seçme](../install/media/install-visual-studio-community.png)
 
      Örneğin, ".NET masaüstü geliştirme" iş yükünü seçin. Temel kod düzenleme açın ve bir projeye gerek kalmadan herhangi bir klasörden kodu düzenleme yeteneğini 20'den dil için destek içerir ve kaynak kodu denetimi tümleşik varsayılan çekirdek düzenleyicisiyle gelir.  
 

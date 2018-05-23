@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e887109c1edb6bad2ee130c6623d5b7538167ca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48d18ef87bdda3abb147310bd49738a10d31040f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>Başlarken (Visual Studio'da SharePoint Geliştirme)
   Bu bölüm ile çalışmaya başlamanıza yardımcı olur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] yararlanmak SharePoint çözümleri geliştirmek için [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
@@ -36,7 +36,6 @@ ms.lasthandoff: 04/16/2018
 |-----------|-----------------|  
 |[SharePoint Çözümleri Geliştirmek için Gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|SharePoint için geliştirmek için yazılım gereksinimleri listelenmiştir.|  
 |[SharePoint Hataları için Ek Bilgi](../sharepoint/additional-information-for-sharepoint-errors.md)|SharePoint geliştirme ve sorun giderme sırasında Yardım nerede açıklar.|  
-|||  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
   

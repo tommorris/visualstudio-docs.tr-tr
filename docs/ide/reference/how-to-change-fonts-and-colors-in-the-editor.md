@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Nasıl Yapılır: Düzenleyicideki Yazı Tiplerini ve Renkleri Değiştirme
 Varsayılan yazı tipi değiştirmek, yazı tipi boyutunu ayarlamak ve çeşitli metin ön ve arka plan renklerini değiştirme **görüntülemek öğeleri** Kod Düzenleyicisi'nde. Ne zaman yazı tipi ayarlarını değiştirmeyi aşağıdaki bilgileri unutmayın:
@@ -56,5 +56,5 @@ Varsayılan yazı tipi değiştirmek, yazı tipi boyutunu ayarlamak ve çeşitli
 
 - [Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)
 - [Metin Düzenleyici Seçenekleri iletişim Kutusu](../../ide/reference/text-editor-options-dialog-box.md)
-- [Kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Kod Düzenleyicisi özellikleri](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Nasıl yapılır: yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

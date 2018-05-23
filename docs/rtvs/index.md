@@ -10,11 +10,11 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d571252c34a286e26fbf97537c5fe4a527743d72
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Visual Studio'da R ile çalışma
 
@@ -32,12 +32,12 @@ Visual Studio'da R deneyimi için:
 
 Ardından R güvenlikle ilgili özellikler ve bunun yanı sıra, Visual Studio'nun kendisi genel özellikleri hakkında daha fazla bilgi için aşağıdaki bağlantıları izleyin.
 
-| Özellik | Açıklama | Genel Visual Studio belgeleri | 
+| Özellik | Açıklama | Genel Visual Studio belgeleri |
 | --- | --- | --- |
 | [Visual Studio Proje sistemi](r-projects-in-visual-studio.md) | Düzenleyebilir ve kullanışlı bir yapı ilişkili dosyaları yönetmek ve R kodu, R belgeleri, R Markdown, SQL sorguları ve saklı yordamlar gibi öğeleri için yararlı şablonlar yararlanın. Ayrıca keyfini [Paket Yöneticisi](r-package-manager-in-visual-studio.md) ve [SQL Server Integration](integrating-sql-server-with-r.md).  | [Visual Studio’da Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Çalışma alanı](r-workspaces-in-visual-studio.md) | RTVS R kodu daha küçük veri kümeleri ile yerel olarak geliştirmenize olanak tanıyan yerel ve uzak çalışma alanları için bağ sonra kolayca daha güçlü bulut tabanlı bilgisayarlarda çok daha büyük veri kümeleriyle kodu çalıştırın. | yok |
 | [R Araçlar Seçenekler](options-for-r-tools-in-visual-studio.md) | RTVS çeşitli yönlerini denetler. | [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Zengin düzenleme, IntelliSense ve kod parçacıkları](editing-r-code-in-visual-studio.md) | Söz dizimi renklendirme, içeren [IntelliSense](r-intellisense.md) tüm kodunuz ve kitaplıkları arasında kod, imza Yardım biçimlendirme Git tanımı, tüm başvuruları Bul [kod parçacıkları](code-snippets-for-r.md)ve daha fazlası. | [Kod ve Metin Düzenleyici'de Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Zengin düzenleme, IntelliSense ve kod parçacıkları](editing-r-code-in-visual-studio.md) | Söz dizimi renklendirme, içeren [IntelliSense](r-intellisense.md) tüm kodunuz ve kitaplıkları arasında kod, imza Yardım biçimlendirme Git tanımı, tüm başvuruları Bul [kod parçacıkları](code-snippets-for-r.md)ve daha fazlası. | [Kod Düzenleyicisi özellikleri](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown-with-r-in-visual-studio.md) | R Markdown belgeler markdown kod blokları içinde tümleşik R kodu ile veri sonuçlarınızı paylaşmanıza yardımcı. | yok |
 | [Etkileşimli penceresi](interactive-repl-for-r-in-visual-studio.md) | Tam REPL deneyimi için R kolayca etkileşimli penceresi kaynak dosyasında kodu çalıştırma olanağı sağlar. | yok |
 | [Verileri görselleştirme](visualizing-data-with-r-in-visual-studio.md) | Çizdirmek R deneyiminin ayrılmaz bir parçası olan ve RTVS destekleyen birden çok bağımsız çizim windows, her biri kendi geçmişi ve taşıma yeteneğini çizer pencereler arasında. Çizimler bit eşlem ve PDF dosyaları için kaydedilmiş veya bir bit eşlem ya da meta dosyası olarak panoya kopyalandı.  | yok |

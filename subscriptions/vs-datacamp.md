@@ -9,11 +9,11 @@ description: Seçili Visual Studio aboneliklerle dahil DataCamp eğitim aboneli�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde DataCamp eğitim avantajı
 
@@ -74,7 +74,7 @@ Herhangi bir noktada durdurmak ve eğitim sonraki oturumunuzda sürdürün.  Yal
 
 
 
-<sup>1</sup>*içerir: satışı (NFR), FTE, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark, uygunluğu onaylanmamıştır için düşünün* 
+<sup>1</sup>*içerir: satışı (NFR), FTE, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark, uygunluğu onaylanmamıştır için düşünün*
 
 
 Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
@@ -83,6 +83,7 @@ Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visu
 ## <a name="support-resources"></a>Destek kaynakları
 -  DataCamp kullanma konusunda Yardım gerekiyor mu?  Bu kaynaklara gözatın:
     - [DataCamp topluluk](https://www.datacamp.com/community/tutorials), forumlar ve öğreticiler özelliklerine sahip.
-    - [SSS](https://datacamp.groovehq.com/help_center).  SSS sayfasında, aynı zamanda bir e-posta destek isteği göndermek için olanağına sahip.
+    - [DataCamp Yardım Merkezi](https://support.datacamp.com/hc)burada destek konuları aramak ve istek kullanıcı soruları konusuna bakın.  
+    - [Bir destek isteği gönder](https://support.datacamp.com/hc/requests/new)
 -  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 

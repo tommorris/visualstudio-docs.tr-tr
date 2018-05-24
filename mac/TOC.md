@@ -66,4 +66,5 @@
 # [Erişilebilirlik](accessibility.md)
 
 # [Sorun giderme](troubleshooting.md)
+## [Visual Studio Müşteri Deneyimi Geliştirme Programı](visual-studio-experience-improvement-program.md)
 ## [Sorun Bildirin](report-a-problem.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kısayol menülerine komut ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: kısayol menülerine komut ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,43 +16,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d1bf0aee988e194b51220588a710a4b5b8d66ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb86a0c906ae2ae43308833cdec79195344abb7a
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Nasıl Yapılır: Kısayol Menülerine Komut Ekleme
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Nasıl yapılır: kısayol menülerine komut ekleme
   Bu konu, komutları bir kısayol menüsü bir Office uygulamasında bir VSTO eklenti kullanarak nasıl ekleneceğini gösterir.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Kısayol menüleri Office komutları eklemek için  
   
-1.  Ekle bir **Şerit XML** belge düzeyi veya VSTO eklenti proje öğesi. Daha fazla bilgi için bkz: [nasıl yapılır: Get Şerit özelleştirme başlatılan](../vsto/how-to-get-started-customizing-the-ribbon.md). İçindeki  
+1.  Ekle bir **Şerit XML** belge düzeyi veya VSTO eklenti proje öğesi. Daha fazla bilgi için bkz: [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md). İçindeki  
   
 2.  **Çözüm Gezgini**seçin **ThisAddIn.cs** veya **ThisAddIn.vb**.  
   
-3.  Menü çubuğunda seçin **Görünüm**, **kod**.  
+3.  Menü çubuğunda seçin **Görünüm** > **kod**.  
   
      **ThisAddIn** sınıf dosyası Kod Düzenleyicisi'nde açar.  
   
-4.  Aşağıdaki kodu ekleyin **ThisAddIn** sınıfı. Bu kod yöntemini geçersiz kılar ve Şerit XML sınıfını Office uygulamaya döndürür.  
+4.  Aşağıdaki kodu ekleyin **ThisAddIn** sınıfı. Bu kodu geçersiz kılmaları `CreateRibbonExtensibilityObject` yöntemi Şerit XML sınıfını döndüren Office uygulaması.  
   
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]  
   
-5.  İçinde **Çözüm Gezgini**, Şerit XML dosyası seçin. Varsayılan olarak, Ribbon1.xml Şerit XML dosyasının adı.  
+5.  İçinde **Çözüm Gezgini**, Şerit XML dosyası seçin. Varsayılan olarak, Şerit XML dosyasının adı *Ribbon1.xml*.  
   
-6.  Menü çubuğunda seçin **Görünüm**, **kod**.  
+6.  Menü çubuğunda seçin **Görünüm** > **kod**.  
   
      Şerit xml dosyası Kod Düzenleyicisi'nde açılır.  
   
 7.  Kod Düzenleyicisi'nde kısayol menüsünü ve kısayol menüsünün eklemek istediğiniz denetimi açıklayan XML ekleyin.  
   
-     Aşağıdaki örnek, bir düğme, menü ve galeri denetimi bir word belgesi için kısayol menüsünü ekler. Denetim bu kısayol menüsünü ContextMenuText kimliğidir. Office 2010 kısayol denetimi tam bir listesi için kimlikleri bkz [Office 2010 Yardım dosyalarını: Office Fluent kullanıcı arabirimi denetim tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Aşağıdaki örnek, bir düğme, menü ve galeri denetimi bir word belgesi için kısayol menüsünü ekler. Denetim bu kısayol menüsünü ContextMenuText kimliğidir. Office 2010 kısayol denetimi tam bir listesi için kimlikleri bkz [Office 2010 Yardım dosyalarını: Office fluent kullanıcı arabirimi denetim tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
-    ```  
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
     <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">  
       <contextMenus>  
@@ -81,10 +81,9 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [İzlenecek yol: Yer işaretleri için kısayol menüleri oluşturma](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)   
- [Office 2010 bağlam menülerini özelleştirme](http://go.microsoft.com/fwlink/?LinkId=182186)  
-  
+ [Office 2010 bağlam menülerini özelleştirin](http://go.microsoft.com/fwlink/?LinkId=182186)  
   

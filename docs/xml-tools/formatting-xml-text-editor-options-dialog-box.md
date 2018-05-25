@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1046655812bf88f51af7590fd1b39ccea11f8eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Biçimlendirme, XML, metin düzenleyici, Seçenekler iletişim kutusu
 
@@ -65,7 +65,7 @@ Bu iletişim kutusu için XML Düzenleyicisi biçimlendirme ayarları belirtmeni
 </dir>
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [XML Belge Özellikleri, Özellik Penceresi](../xml-tools/xml-document-properties-properties-window.md)
-- [XML Düzenleyicisi Bileşenleri](../xml-tools/xml-editor-components.md)
+- [XML belge özellikleri, özellik penceresi](../xml-tools/xml-document-properties-properties-window.md)
+- [XML Düzenleyicisi bileşenleri](../xml-tools/xml-editor-components.md)

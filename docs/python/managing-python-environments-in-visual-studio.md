@@ -11,17 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9abd63dc9320a194746a5517f3c5953ee85703b2
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio Python ortamlarında yönetme
 
 Bir Python *ortam* conda ortamları ise, Python kodu çalıştırmak ve içeren genel, sanal bir bağlam. Bir ortam bir yorumlayıcı, bir kitaplık (genellikle Python standart kitaplığı) ve yüklü paketler kümesini oluşur. Bu bileşenlerin, birlikte hangi dil yapıları ve sözdizimi geçerli olduğunu belirlemek hangi işletim sistemi işlevselliği erişebilir ve hangi paketleri kullanabilirsiniz.
 
-Windows, Visual Studio'da [Python ortamları penceresi](#the-python-environments-window) , bu makalede açıklanan penceredir burada bu ortamlarını yönetebilir ve yeni projeler için varsayılan olarak seçin. Verilen herhangi bir projeye için Ayrıca belirli bir ortam seçin yerine, varsayılan kullanın.
+Windows, Visual Studio'da [Python ortamları penceresi](#the-python-environments-window) , bu makalede açıklanan penceredir burada bu ortamlarını yönetebilir ve yeni projeler için varsayılan olarak seçin. Verilen herhangi bir projeye için kullanabileceğiniz [belirli bir ortam seçin](selecting-a-python-environment-for-a-project.md) yerine varsayılan kullanın.
 
 **Not**: Visual Studio'da Python yeniyseniz, gerekli arka plan için aşağıdaki makalelere bakın:
 
@@ -30,7 +30,7 @@ Windows, Visual Studio'da [Python ortamları penceresi](#the-python-environments
 
 Ayrıca başka bir deyişle Python kodu için ortamları yönetemez not yalnızca bir klasör kullanılarak açılır olarak **dosya** > **açık** > **klasörü** komutu. Bunun yerine, [var olan koddan Python projesi oluşturma](quickstart-01-python-in-visual-studio-project-from-existing-code.md) Visual Studio'nun ortam özellikleri keyfini için.
 
-Bir ortamda paketleri yüklemek istiyorsanız, başvurmak [Paketleri sekmesi](python-environments-window-tab-reference.md#packages-tab).
+Bir ortamda paketleri yüklemek istiyorsanız, başvurmak [paketleri sekme başvurusu](python-environments-window-tab-reference.md#packages-tab).
 
 ## <a name="types-of-environments"></a>Tür ortamlarda
 
@@ -55,10 +55,11 @@ Conda ortam biri kullanılarak oluşturulan `conda` aracı veya Visual Studio 20
 
 Conda ortamları depolandığı, conda sürümü ve diğer bilgileri görmek için çalıştırın `conda info` bir Anaconda komut isteminde (diğer bir deyişle, Anaconda yolunda olduğu bir komut istemi):
 
-```bash
+```cli
 conda info
 ```
-Conda ortam klasörleri şu şekilde görünür:
+
+Conda ortam klasörlerinizi şu şekilde görünür:
 
 ```output
        envs directories : c:\anaconda3\envs
@@ -85,17 +86,18 @@ Her iki durumda da **Python ortamları** Çözüm Gezgini eşdüzey sekmeye olar
 
 ![Python ortamları penceresi](media/environments-default-view.png)
 
-Tüm yeni projeler için Visual Studio kullanan Python 3.6 kalın olarak varsayılan ortamıdır. Herhangi bir türde herhangi bir listelenen ortam varsayılan olarak kullanılabilir.
+Listenin beklenen bir ortamda görmüyorsanız bkz [el ile varolan bir ortama tanımlamanız](#manually-identify-an-existing-environment).
 
-Gördüğünüz gibi belirli yüklemesi seçilen yorumlayıcısı penceresinin alt kısmındaki komutları uygulamak içinde `C:\Python36-32` (kalın varsayılan ortam Anaconda yüklemenin parçası olan). Beklediğiniz bir ortam görmüyorsanız bkz [el ile varolan bir ortama tanımlamanız](#manually-identify-an-existing-environment).
+Listedeki bir ortam seçilmesi görüntüler çeşitli özellikler ve bu ortam için komutları üzerinde **genel bakış** sekmesi. Örneğin, yukarıdaki resimde Yorumlayıcı'nın konumu olduğunu gördüğünüz `C:\Python36-32`. Farklı sekmelere gibi geçmek için ortamları listesinin altındaki aşağı açılan listeyi kullanın **paketleri**, ve **IntelliSense**. Bu sekmeleri açıklanan [Python ortamları penceresinde sekme başvurusu](python-environments-window-tab-reference.md).
 
-Listelenen her ortam sağındaki bu ortam için etkileşimli bir pencere açılır bir denetimdir. (Visual Studio 2017 15,5 ve önceki sürümlerinde, başka bir denetim görünür, bu ortam için IntelliSense veritabanı yeniler. Bkz: [ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab) veritabanı hakkındaki ayrıntılar için).
+Bir ortam seçerek herhangi bir şekilde etkinleştirmez. Kalın listesinde gösterilen varsayılan, tüm yeni projeler için Visual Studio kullanan şu anda etkinleştirilmiş ortam ortamıdır. Farklı bir ortam etkinleştirmek için kullandığınız **bu yeni projelere yönelik varsayılan ortam hale** komutu. Bir proje bağlamında farklı bir ortam her zaman etkinleştirebilirsiniz. Daha fazla bilgi için bkz: [bir proje için bir ortam seçerek](selecting-a-python-environment-for-a-project.md).
 
-Ortamlar açılan Seçici için listesidir **genel bakış**, **paketleri**, ve **IntelliSense** açıklanan seçenekler [Python ortamları Pencere sekme başvurusu](python-environments-window-tab-reference.md). Ayrıca, genişletirseniz **Python ortamları** yetecek kadar geniş penceresinde, bu seçenekleri ile çalışmak daha kolay bulabilirsiniz sekmeleri olarak gösterilir:
+Listelenen her ortam sağındaki bu ortam için etkileşimli bir pencere açılır bir denetimdir. (Visual Studio 2017 15,5 ve önceki sürümlerinde, başka bir denetim görünür, bu ortam için IntelliSense veritabanı yeniler. Bkz: [ortamları penceresinde sekme başvurusu](python-environments-window-tab-reference.md#intellisense-tab) veritabanı hakkındaki ayrıntılar için).
 
-![Python ortamları genişletilmiş penceresi görünümü](media/environments-expanded-view.png)
-
-Yukarıdaki resimde ortamlar oluşturmak için ek komutlar yanı sıra belirli bu bilgisayarda ortamlar tam listesini görebilirsiniz.
+> [!Tip]
+> Genişlettiğinizde **Python ortamları** penceresinde yetecek kadar geniş çalışmak daha kolay bulabilirsiniz ortamınızı daha eksiksiz bir görünümünü alın.
+>
+> ![Python ortamları genişletilmiş penceresi görünümü](media/environments-expanded-view.png)
 
 > [!Note]
 > Visual Studio sistemi site paketleri seçeneği dikkate alır ancak ondan Visual Studio içinde değiştirmek için bir yol sağlamaz.

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>Başlangıç görüntüleyin
 
@@ -26,9 +26,9 @@ Başlangıç XML Şeması (XSD) Tasarımcısı için başlangıç noktası gör�
 
 ## <a name="watermark"></a>Filigran
 
-Filigran bölmesinde tüm XSD Tasarımcısı görünümler, XML Düzenleyicisi ve XML Şeması Gezgini bağlantılar listesini içerir. Şema kümesini hata varsa, aşağıdaki metni listesinin sonunda görüntülenir: "Görüntülemek ve kümesinde hataları düzeltmek için hata listesi kullanın."
+Filigran bölmesinde tüm XSD Tasarımcısı görünümler, bir XML Düzenleyici, bağlantılar listesini içerir ve **XML Şeması Explorer**. Şema kümesini hata varsa, aşağıdaki metni listesinin sonunda görüntülenir: "Görüntülemek ve kümesinde hataları düzeltmek için hata listesi kullanın."
 
-## <a name="schema-set-details"></a>Şema kümesi ayrıntıları
+## <a name="schema-set-details"></a>Şema ayrıntıları ayarlayın
 
 **Şema ayarlamak ayrıntılarını** bölmesi genel şeması düğüm türlerini listeler ve kaç tane şemada vardır her tür görüntüler. Kullanabileceğiniz **ekleme** yeni düğümler için çalışma alanına eklemek için düğüm türleri yanındaki bağlantılar.
 
@@ -42,11 +42,11 @@ Başlangıç'ı etkin olduğunda aşağıdaki düğmeler XSD Designer araç çub
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**Başlangıç görünümü göster**|Başlangıç görünümüne geçiş yapar. Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 1**.|
-|**İçerik modeli görünümü göster**|İçerik modeli görünüm geçer. Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 2**.|
-|**Grafik Görünümü Göster**|Grafik görünümü geçer. Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 3**.|
+|**Başlangıç görünümü göster**|Başlangıç görünümüne geçiş yapar. Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**1**.|
+|**İçerik modeli görünümü göster**|İçerik modeli görünüm geçer. Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**2**.|
+|**Grafik Görünümü Göster**|Grafik görünümü geçer. Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**3**.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Şema Gezgini](../xml-tools/xml-schema-explorer.md)
 - [Graf Görünümü](../xml-tools/graph-view.md)

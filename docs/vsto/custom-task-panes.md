@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4dff9c5f8602f1e11ef020400a11d7d165b23b04
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="custom-task-panes"></a>Özel görev bölmeleri
   Görev bölmeleri genellikle bir tarafa bir Microsoft Office uygulamasında penceresinin yerleştirilmiş kullanıcı arabirimi bölmeleri sunulmuştur. Özel görev bölmeleri kendi görev bölmesi oluşturmak ve kullanıcıların çözümünüzün özelliklerine erişmek için tanıdık bir arabirim sağlamak için bir yol sağlar. Örneğin, arabirim belgelerini değiştirme veya bir veri kaynağından görüntülemek için kodu çalıştırma denetimlerini içerebilir.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 05/17/2018
 ### <a name="familiar-user-interface"></a>Tanıdık kullanıcı arabirimi  
  Microsoft Office sistemi uygulamalarında kullanıcılarının görev bölmeleri gibi kullandıysanız zaten **stiller ve biçimlendirme** Word görev bölmesinde. Özel görev bölmeleri, Microsoft Office sistemi diğer görev bölmeleri gibi davranır. Kullanıcıların uygulama penceresinin farklı kenarlara özel görev bölmeleri sabitleyebilirsiniz veya penceresinde herhangi bir konuma özel görev bölmeleri sürükleyebilirsiniz. Bir VSTO aynı anda birden çok özel görev bölmeleri görüntüleyen eklenti oluşturabilirsiniz ve kullanıcıların her görev bölmesini ayrı ayrı kontrol edebilirsiniz.  
   
-### <a name="windows-forms-support"></a>Windows Forms desteği  
+### <a name="windows-forms-support"></a>Windows forms desteği  
  Visual Studio'da Office geliştirme araçlarını kullanarak oluşturduğunuz özel görev bölmesini kullanıcı arabiriminin Windows Forms denetimlerindeki temel alır. Özel görev bölmesini için kullanıcı arabirimi tasarlamak için tanıdık Windows Form Tasarımcısı'nı kullanabilirsiniz. Görev bölmesindeki denetimlere veri kaynağı bağlamak için Windows Forms veri bağlama desteği de kullanabilirsiniz.  
   
 ## <a name="create-a-custom-task-pane"></a>Özel görev bölmesini oluşturun  
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="access-the-application-from-the-task-pane"></a>Görev bölmesinden uygulamaya erişim  
  Uygulamayı kullanıcı denetiminden otomatikleştirmek istiyorsanız, doğrudan nesne modelini kullanarak erişebilirsiniz `Globals.ThisAddIn.Application` kodunuzda. Statik `Globals` sınıfı erişim sağlar `ThisAddIn` nesnesi. `Application` Bu nesnenin alan uygulamanın nesne modeline giriş noktasıdır.  
   
- Hakkında daha fazla bilgi için `Application` alanını `ThisAddIn` nesne için bkz: [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md). Bir uygulamayı özel görev bölmesinden otomatikleştirme izlenecek yol için bkz: [izlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Hakkında daha fazla bilgi için `Globals` sınıfı için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
+ Hakkında daha fazla bilgi için `Application` alanını `ThisAddIn` nesne için bkz: [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md). Bir uygulamayı özel görev bölmesinden otomatikleştirme izlenecek yol için bkz: [izlenecek yol: uygulamayı özel görev bölmesinden otomatik](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Hakkında daha fazla bilgi için `Globals` sınıfı için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Görev bölmesine kullanıcı arabiriminin yönetme  
  Görev bölmesi oluşturduktan sonra özellikleri ve olayları kullanabilirsiniz <xref:Microsoft.Office.Tools.CustomTaskPane> nesne görev bölmesinde kullanıcı arabiriminin denetlemek ve kullanıcı görev bölmesini değiştirdiğinde yanıt vermek için.  
@@ -147,11 +147,6 @@ ms.lasthandoff: 05/17/2018
  Çoklu Explorer veya Inspector windows birlikte özel görev bölmesini görüntülemek istiyorsanız, bir Explorer veya Inspector penceresi açıldığında özel görev bölmesini yeni bir örneğini oluşturmanız gerekir. Bunu yapmak için bir Explorer veya Inspector penceresi oluşturulduğunda bir olayı işlemek ve sonra görev bölmesi olay işleyicisini oluşturun. Görüntü görev bölmeleri hangi pencerenin bağlı olarak görünür veya gizlemek için Explorer veya Inspector olaylarını de işleyebilirsiniz.  
   
  Görev bölmesine bir belirli Explorer veya Inspector ile ilişkilendirmek için kullanın <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> görev bölmesi oluşturmak ve geçirmek için yöntem <xref:Microsoft.Office.Interop.Outlook.Explorer> veya <xref:Microsoft.Office.Interop.Outlook.Inspector> nesnesini *penceresi* parametresi. Özel görev bölmelerini oluşturma hakkında daha fazla bilgi için bkz: [özel görev bölmeleri genel bakış](../vsto/custom-task-panes.md).  
-  
- Görev bölmesi açılır her e-posta iletisi oluşturmak nasıl izlenecek yol için bkz: [izlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
-  
-### <a name="outlook-events"></a>Outlook olayları  
- Windows Explorer durumunu izlemek için aşağıdaki Explorer ilgili olayları işleyebilir:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   

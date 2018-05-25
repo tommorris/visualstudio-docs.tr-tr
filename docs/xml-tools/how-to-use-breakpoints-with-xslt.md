@@ -9,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1c3a5e2001726c0f082bf17d279eb22a03fc86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 430b7f14f35506b45fe73be47d056cdd7b6a9c95
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Nasıl yapılır: kesme noktaları XSLT ile kullanma
 
 XSLT stil sayfasını veya XML kaynak belge kesme noktaları ayarlayabilirsiniz. Ayarlarsanız bir kesme noktası etikette yürütme kesme başladığında, kaynak satırı bilgileri içeren sonraki ifadeye taşınır.
 
-Daha fazla bilgi için bkz: [hata ayıklama temelleri: kesme noktaları](../debugger/using-breakpoints.md).
+Daha fazla bilgi için bkz: [temelleri hata ayıklama: kesme noktaları](../debugger/using-breakpoints.md).
 
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Bir stil sayfanızda bir kesme noktası ayarlama
 
@@ -59,4 +59,4 @@ Kesme noktaları öğeleri, öznitelikleri, düğüm ad, açıklama, işlem yön
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek Yol: XSLT Stil Sayfasında Hata Ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [İzlenecek yol: bir XSLT stil sayfası hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

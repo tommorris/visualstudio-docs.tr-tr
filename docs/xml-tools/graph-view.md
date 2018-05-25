@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab09bec8f2fc7d75ab21c3635f34069ad613b3e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="graph-view"></a>Grafik görünümü
 
@@ -26,13 +26,13 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 
 ## <a name="design-surface"></a>Tasarım yüzeyi
 
- Grafik görünümünün tasarım yüzeyi içeriğini görüntüler [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md). Çalışma alanı şema kümesinden genel tüm düğümleri içeriyorsa, grafik görünümü tasarım yüzeyine düğümleri gösterilir ve ilişkilerine sahip düğümler arasında oklarla çizilir.
+ Grafik görünümünün tasarım yüzeyi içeriğini görüntüler [XML şema Tasarımcısı çalışma alanı](../xml-tools/xml-schema-designer-workspace.md). Çalışma alanı şema kümesinden genel tüm düğümleri içeriyorsa, grafik görünümü tasarım yüzeyine düğümleri gösterilir ve ilişkilerine sahip düğümler arasında oklarla çizilir.
 
  Grafik görünümünde bir düğüm çift XML düzenleyicisini getirir.
 
- Seçilen düğümler çalışma alanından silmek için XSD Designer araç veya DELETE anahtar kullanın.
+ Seçili düğümler çalışma alanından silmek için XSD Designer araç kullanın veya **silmek** anahtarı.
 
- Tasarım yüzeyine boş ise, XML Düzenleyicisi'ni, XML Şeması Gezgini ve filigran gösterilir. *Filigran* tüm XSD Tasarımcısı görünümleri bağlanan bir listesi verilmiştir.
+ Tasarım yüzeyine boşsa, XML Düzenleyicisi'ni **XML Şeması Explorer**, ve filigran gösterilir. *Filigran* tüm XSD Tasarımcısı görünümleri bağlanan bir listesi verilmiştir.
 
  ![XSD Tasarımcısı; Grafik görünümü](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
 
@@ -54,9 +54,9 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 |**Çalışma alanını temizleyin**|Çalışma alanı ve tasarım yüzeyine temizler.|
 |**Çalışma alanından kaldırın**|Çalışma alanı ve tasarım yüzeyine seçilen düğümleri kaldırır.|
 |**Çalışma alanından seçimi dışında tümünü Kaldır**|Çalışma alanı ve tasarım yüzeyine seçili olmadığında düğümlerini kaldırır.|
-|**Diyagram görüntü olarak dışarı aktar...**|Tasarım yüzeyine bir XPS dosyasına kaydeder.|
+|**Görüntü olarak dışarı aktarma diyagramı**|Tasarım yüzeyine bir XPS dosyasına kaydeder.|
 |**Tümünü Seç**|Tasarım yüzeyine tüm düğümlerde seçer.|
-|**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. XML şema Explorer'da seçili öğe ayrıca XML Düzenleyicisi'nde seçili olur.|
+|**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. Seçili öğeyi **XML Şeması Explorer** XML Düzenleyicisi'nde da seçilir.|
 |**Özellik Penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|
 
  Yukarıda açıklanan ortak seçeneklerin yanı sıra genel öğeleri için bağlam menüsünde de aşağıdaki seçenekler vardır:
@@ -90,7 +90,7 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 |------------|-----------------|
 |**Tüm başvurular ekleyin**|Grubu ve aralarındaki ilişkilerin göstermek amacıyla oklar çizer tüm düğümleri ekler.|
 
-## <a name="properties-window"></a>Özellikler Penceresi
+## <a name="properties-window"></a>Özellik penceresi
 
  Başlangıçta açmak için bağlam menüsünü kullanın **özellikleri** penceresi. Varsayılan olarak, **özellikleri** penceresi Visual Studio'nun sağ alt köşesinde görüntülenir. İçerik modeli görünümünde işlenen bir düğümüne tıkladığınızda, bu düğüm özelliklerini görüntülenmesi **özellikleri** penceresi.
 
@@ -102,20 +102,20 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**Başlangıç görünümü göster**|Geçiş yapar [Başlat Görünüm](../xml-tools/start-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 1**.|
-|**İçerik modeli görünümü göster**|Geçiş yapar [içerik modeli Görünüm](../xml-tools/content-model-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 2**.|
-|**Grafik Görünümü Göster**|Geçiş yapar [grafik görünümü](../xml-tools/graph-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 3**.|
+|**Başlangıç görünümü göster**|Geçiş yapar [Başlat Görünüm](../xml-tools/start-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**1**.|
+|**İçerik modeli görünümü göster**|Geçiş yapar [içerik modeli Görünüm](../xml-tools/content-model-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**2**.|
+|**Grafik Görünümü Göster**|Geçiş yapar [grafik görünümü](../xml-tools/graph-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**3**.|
 |**Çalışma alanını temizleyin**|Çalışma alanı ve tasarım yüzeyine temizler.|
-|**Çalışma alanından kaldırın**|Çalışma alanı ve tasarım serface seçilen düğümleri kaldırır.|
-|**Çalışma alanından seçimi dışında tümünü Kaldır**|Çalışma alanı ve tasarım serface seçili olmadığında düğümlerini kaldırır. Bu seçenek, içerik modeli görünümü ve grafik görünümünde etkindir.|
-|**Soldan sağa**|Grafik görünümü düzeninde bir soldan sağa hiyerarşik gösterimine düğümlerinin değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + sağ ok**.|
-|**Sağdan sola**|Grafik görünümü düzeninde bir sağdan sola hiyerarşik gösterimine düğümlerinin değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + Sol Ok**.|
-|**Üstten alta**|Grafik görünümü düzeninde bir üst-alt hiyerarşik gösterimine düğümlerinin değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + Aşağı ok**.|
-|**Aşağıdan yukarıya**|Grafik görünümü düzende bottom-to-top hiyerarşik gösterimini düğümler için değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + Yukarı ok**.|
+|**Çalışma alanından kaldırın**|Çalışma alanı ve tasarım yüzeyine seçilen düğümleri kaldırır.|
+|**Çalışma alanından seçimi dışında tümünü Kaldır**|Çalışma alanı ve tasarım yüzeyine seçili olmadığında düğümlerini kaldırır. Bu seçenek, içerik modeli görünümü ve grafik görünümünde etkindir.|
+|**Soldan sağa**|Grafik görünümü düzeninde bir soldan sağa hiyerarşik gösterimine düğümlerinin değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt**+**sağ ok**.|
+|**Sağdan sola**|Grafik görünümü düzeninde bir sağdan sola hiyerarşik gösterimine düğümlerinin değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt**+**sol ok**.|
+|**Üstten alta**|Grafik görünümü düzeninde bir üst-alt hiyerarşik gösterimine düğümlerinin değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt**+**aşağı ok**.|
+|**Aşağıdan yukarıya**|Grafik görünümü düzende bottom-to-top hiyerarşik gösterimini düğümler için değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt**+**yukarı ok**.|
 
 ## <a name="panscroll"></a>PAN/kaydırma
 
- Kaydırma çubukları kullanarak veya fare sürükleyip sırasında CTRL tuşunu basılı tutarak tasarım yüzeyine kaydırma yapabilirsiniz. ' I tıklatın ve sürükleyin kullanarak tasarım yüzeyi PAN imleci dört yönde çapraz dört oklar değiştirilir.
+ Kaydırma çubukları kullanarak veya tutarak tasarım yüzeyine kaydırabilirsiniz **Ctrl** anahtar'ı tıklatın ve fareyi sürükleyin. ' I tıklatın ve sürükleyin kullanarak tasarım yüzeyi PAN imleci dört yönde çapraz dört oklar değiştirilir.
 
 ## <a name="undoredo"></a>Geri alma/yineleme
 
@@ -133,18 +133,18 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 
  Yakınlaştırma aşağıdaki yollarla denetlenebilir:
 
--   CTRL tuşunu basılı tutarak ve fare grafik görünümü yüzeyini getirildiğinde fare tekerleği dönmesini.
+-   Tutarak **Ctrl** anahtar ve fare dönmesini Tekerlek fare grafik görünümü yüzeyini getirildiğinde.
 
 -   Kaydırıcı denetimi kullanarak. Kaydırıcı geçerli yakınlaştırma düzeyini gösterir.
 
-Bu da, üzerine getirin seçtiğinizde veya CTRL yakınlaştırma için fare tekerleğinin ile kullanın yakınlaştırma kaydırıcıyı donuk; diğer tüm zamanlarda saydamdır.
+Bunu seçtiğinizde, üzerine getirin veya kullanmak yakınlaştırma kaydırıcıyı donuk **Ctrl** yakınlaştırma için fare tekerleğinin; her zaman saydamdır.
 
 ## <a name="xml-editor-integration"></a>XML Düzenleyicisi tümleştirme
 
  Bir düğüm tıklayarak ve Görünüm Kodu bağlam menüsünü kullanarak grafik görünümü ve XML düzenleyicisini arasında ileri ve geri geçebilirsiniz.
 
- XML Düzenleyicisi'nde ayarlamak şema değişiklik yaparsanız, değişiklikleri Grafik görünümünde eşitlenir. Daha fazla bilgi için bkz: [tümleştirme XML Düzenleyicisi ile](../xml-tools/integration-with-xml-editor.md).
+ XML Düzenleyicisi'nde ayarlamak şema değişiklik yaparsanız, değişiklikleri Grafik görünümünde eşitlenir. Daha fazla bilgi için bkz: [XML Düzenleyicisi ile tümleştirme](../xml-tools/integration-with-xml-editor.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Tasarım yüzeyi](../xml-tools/xml-schema-designer-workspace.md)

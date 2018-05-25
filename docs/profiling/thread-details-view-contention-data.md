@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d45d2da94535f4f017fab838a661a3c3e4bc438d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="thread-details-view---contention-data"></a>İş parçacığı Ayrıntıları görünümü - çakışma verileri
 İş parçacığı Ayrıntıları görünümü tarafından çekişmeleri kaynaklar kaynaklanan engelleme olayları Seçili iş parçacığında bir profil oluşturma çalışma zaman çizelgesi grafiğini gösterir. Başka bir iş parçacığı bir kaynağa erişim kilitlediği için yürütme askıya almak için iş parçacığı zorlandığında bir engelleme olayı oluşur.  
   
- Bu görünüm, yürütme zaman çizelgesi yatay bir çubuk olarak iş parçacığı ve iş parçacığı için yatay bir zaman çizelgesi üzerinde dikey çubuk olarak engelleme olayları temsil eder. Gerekli olduğunda olayları tek tek görüntülemek için zaman çizelgesi bir bölümünü yakınlaştırabilirsiniz. Olaya neden işlevleri yürütme yolunu görüntülemek için olay Çubuğu'nu tıklatın. İşlevler çağrı yığını penceresinde görünür. Bir işlev için kaynak kodunu kullanılabilir olduğunda, Visual Studio IDE kaynak dosyasında düzenlemek için işlev adı tıklatabilirsiniz.  
+ Bu görünüm, yürütme zaman çizelgesi yatay bir çubuk olarak iş parçacığı ve iş parçacığı için yatay bir zaman çizelgesi üzerinde dikey çubuk olarak engelleme olayları temsil eder. Gerekli olduğunda olayları tek tek görüntülemek için zaman çizelgesi bir bölümünü yakınlaştırabilirsiniz. Olaya neden işlevleri yürütme yolunu görüntülemek için olay Çubuğu'nu tıklatın. İşlevler görünür **çağrı yığını** penceresi. Bir işlev için kaynak kodunu kullanılabilir olduğunda, Visual Studio IDE kaynak dosyasında düzenlemek için işlev adı tıklatabilirsiniz.  
   
-## <a name="navigating-the-timeline"></a>Zaman Çizelgesi gezinme  
+## <a name="navigate-the-timeline"></a>Zaman Çizelgesi gidin  
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Bir zaman çizelgesi segmenti yakınlaştırmak için  
   
@@ -41,11 +41,11 @@ ms.lasthandoff: 04/19/2018
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>Bir olay çağrı yığınını görüntülemek için  
   
--   Zaman Çizelgesi grafiğinde olay gösteren dikey çubuğu'nu tıklatın...  
+-   Zaman Çizelgesi grafiğinde olay gösteren dikey çubuğu'nu tıklatın.  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Görüntülemek veya kaynak kodu çağrı yığınında işlevinin düzenlemek için  
   
--   Çağrı yığını penceresinde işlevi adına tıklayın.  
+-   İçinde **çağrı yığını** penceresinde işlevi adına tıklayın.  
   
  İşlev kaynak kodu, geçerli projenin bir parçası olması gerekir.  
   

@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32782b5c2d303e54901462de589d076990f579d2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2e78013c97bf7f2cf3bcd60f642f51e9da01b25d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="troubleshooting-performance-tools-issues"></a>Sorunları araçları performans sorunlarını giderme
+# <a name="troubleshoot-performance-tools-issues"></a>Performans Araçları sorunlarını giderme
 Profil oluşturma araçları kullandığınızda aşağıdaki sorunlardan biriyle karşılaşabilirsiniz:  
   
 -   [Profil oluşturma araçları tarafından hiçbir veri toplanmadı](#NoDataCollected)  
   
 -   [Performans görünümleri ve raporlar için işlev adlarını sayıları görüntüleme](#NoSymbols)  
   
-##  <a name="NoDataCollected"></a> Profil oluşturma araçları tarafından hiçbir veri toplanmadı  
- Bir uygulama profili sonra bir profil oluşturma verileri (.vsp) dosyası oluşturulmadı ve çıktı penceresinde veya komut penceresinde aşağıdaki uyarıyı alırsınız:  
+## <a name="no-data-is-collected-by-the-profiling-tools"></a>Profil oluşturma araçları tarafından hiçbir veri toplanmadı  
+ Profil oluşturma verileri bir uygulama profili sonra (. *Vsp*) dosyası oluşturulmadı ve çıktı penceresinde veya komut penceresinde aşağıdaki uyarıyı alırsınız:  
   
  PRF0025: Hiçbir veri toplanmıştır.  
   
@@ -32,18 +32,18 @@ Profil oluşturma araçları kullandığınızda aşağıdaki sorunlardan biriyl
   
 -   Örnekleme veya .NET bellek yöntemi kullanarak profili bir işlem uygulama çalışma gerçekleştirir işlem hale bir alt işlem başlatır. Örneğin, bazı uygulamalar, bir Windows uygulaması veya bir komut satırı uygulaması olarak başlatılmış olup olmadığını belirlemek için komut satırını okur. Bir Windows uygulaması istediyseniz özgün işlem bir Windows uygulaması olarak yapılandırılmış yeni bir işlem başlatır ve özgün işlem çıkar. Profil oluşturma araçları otomatik olarak alt işlemleri için veri toplamak için hiçbir veri toplanmadı.  
   
-     Bu durumda profil oluşturma verileri toplamak için Profil Oluşturucu ile uygulama başlangıç yerine alt işlem profil oluşturucu ekleme. Daha fazla bilgi için bkz: [nasıl yapılır: ekleme ve ayırma performans araçları çalışan işlemler için](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) ve [Ekle (VSPerfCmd)](../profiling/attach.md)  
+     Bu durumda profil oluşturma verileri toplamak için Profil Oluşturucu ile uygulama başlangıç yerine alt işlem profil oluşturucu ekleme. Daha fazla bilgi için bkz: [nasıl yapılır: ekleme ve çalışan işlemleri için performans araçları ayırma](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) ve [Ekle (VSPerfCmd)](../profiling/attach.md)  
   
-##  <a name="NoSymbols"></a> Performans görünümleri ve raporlar için işlev adlarını sayıları görüntüleme  
+## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Performans görünümleri ve raporlar için işlev adlarını sayıları görüntüleme  
  Bir uygulama profili sonra raporları ve görünümlerde işlev adları yerine numaralarını bakın.  
   
- Bu sorun, kaynak kodu bilgilerini, bu tür işlev adları ve satır numaralarını derlenmiş dosyaya eşler sembol bilgilerini içeren .pdb dosyaları bulmak erişememe profil oluşturma araçları Çözümleme altyapısı kaynaklanır. Uygulama dosyasını yapılandırıldığında varsayılan olarak, derleyici .pdb dosyasını oluşturur. .Pdb dosyasının yerel dizin başvuru derlenmiş uygulama içinde depolanır. Çözümleme altyapısı .pdb dosyasını başvurulan dizinde bulunan ve ardından şu anda uygulama dosyasını içeren dosyayı arar. .Pdb dosyasını bulunmazsa, Çözümleme altyapısı işlevi uzaklıkları yerine işlev adlarını kullanır.  
+ Bulunacak erişememe profil oluşturma araçları Çözümleme altyapısı tarafından bu soruna neden *.pdb* eşlemeleri kod bilgileri, bu tür işlev adları ve satır numaralarını derlenmiş dosya için kaynak sembol bilgileri içeren dosyalar. Varsayılan olarak, derleyici oluşturur *.pdb* dosya uygulama dosyası yapılandırıldığında. Bir yerel dizinin başvuru *.pdb* dosya derlenmiş uygulama içinde depolanır. Çözümleme altyapısı başvurulan dizinini arar *.pdb* dosya ve ardından dosyasında şu anda uygulama dosyasını içeren. Varsa *.pdb* dosyası bulunamadı, Çözümleme altyapısı işlevi uzaklıkları yerine işlev adlarını kullanır.  
   
  İki yoldan biriyle sorunu düzeltebilir:  
   
--   .Pdb dosyaları bulmak ve uygulama dosyalarını aynı dizine koyun.  
+-   Bulun. *pdb* dosyaları ve uygulama dosyalarını aynı dizine koyun.  
   
--   Sembol bilgilerini profil oluşturma veri (.vsp) dosyasına ekleme. Daha fazla bilgi için bkz: [performans veri dosyalarıyla kaydetme sembol bilgileri](../profiling/saving-symbol-information-with-performance-data-files.md).  
+-   Sembol bilgilerini profil oluşturma verileri katıştırma (. *Vsp*) dosyası. Daha fazla bilgi için bkz: [sembol bilgileri performans ile veri dosyalarını Kaydet](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Çözümleme altyapısı .pdb dosyasını derlenmiş uygulama dosyası ile aynı sürüme olmasını gerektirir. Önceki veya sonraki bir yapı uygulama dosyasının .pdb dosyasından çalışmaz.
+>  Çözümleme altyapısı gerektirir. *pdb* derlenmiş uygulama dosyası ile aynı sürüme bir dosyadır. A *.pdb* önceki veya sonraki bir yapı uygulama dosyasının dosyasından çalışmaz.

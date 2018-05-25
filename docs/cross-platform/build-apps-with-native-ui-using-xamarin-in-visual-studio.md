@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 3d813226dfa79a65da85a2b17e54306d12a4ed09
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 67d8b2147426a048f2af92b0525fd6c8139b4558
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma
 
@@ -144,7 +144,7 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
     {  
         public class DataService  
         {  
-            public static async Task<dynamic> getDataFromService(string queryString)  
+            public static async Task<dynamic> GetDataFromService(string queryString)  
             {  
                 HttpClient client = new HttpClient();  
                 var response = await client.GetAsync(queryString);  

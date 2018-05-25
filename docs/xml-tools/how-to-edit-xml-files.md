@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e35baa6d6d7c5cba696ab7b5e0bb57dd722b5d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3754bcf87d77a3a67801ef7f9df8e07dc687b052
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-edit-xml-files"></a>Nasıl yapılır: XML dosyalarını düzenleme
 
-XML Düzenleyicisi'ni XML dosyaları için yeni düzenleyicisidir. Visual Studio Proje ile ilişkili bir dosya veya tek başına bir XML dosyası üzerinde kullanılabilir. XML Düzenleyicisi'ni aşağıdaki dosya uzantıları ile ilişkilidir: .config, .dtd, .xml, .xsd, .xdr, .xsl, .xslt ve .vssettings. XML Düzenleyicisi'ni, belirli bir düzenleyici kayıtlı olan ve XML veya DTD içeriği içeren başka bir dosya türü ile de ilişkilidir.
+XML Düzenleyicisi'ni XML dosyaları için yeni düzenleyicisidir. Visual Studio Proje ile ilişkili bir dosya veya tek başına bir XML dosyası üzerinde kullanılabilir. XML Düzenleyicisi'ni aşağıdaki dosya uzantıları ile ilişkilidir: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, ve *.vssettings*. XML Düzenleyicisi'ni, belirli bir düzenleyici kayıtlı olan ve XML veya DTD içeriği içeren başka bir dosya türü ile de ilişkilidir.
 
 > [!NOTE]
 > XHTML belgeleri, HTML düzenleyicisi tarafından işlenir.
@@ -67,8 +67,8 @@ XML Düzenleyicisi'ni XML dosyaları için yeni düzenleyicisidir. Visual Studio
 
      XML Düzenleyicisi'ni bu projeye eklemek şemaları bulur ve bunları doğrulama ve IntelliSense herhangi bir XML, şema veya bu proje açıkken düzenlediğiniz XSLT dosyaları için kullanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)
-- [XML Belge Özellikleri, Özellik Penceresi](../xml-tools/xml-document-properties-properties-window.md)
-- [Nasıl Yapılır: XML Belgesinden XML Şeması Oluşturma](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [XML belge özellikleri, özellik penceresi](../xml-tools/xml-document-properties-properties-window.md)
+- [Nasıl yapılır: bir XML belgesinden bir XML Şeması oluşturun](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

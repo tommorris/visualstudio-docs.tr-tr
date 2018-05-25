@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5f731e5d40205776682e706aa4e32d988a76f0f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b3cfe8d0af7bebac5bce48e82b4237de071a41d8
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ile ASP.NET hata ayıklama
 
@@ -41,7 +41,7 @@ Visual Studio hata ayıklayıcısı uygulamalarınızı hata ayıklama yardımc�
 
 1. Çözüm Gezgini'nde, About.cshtml.cs (altında Pages/About.cshtml) açın ve aşağıdaki kodu değiştirin
 
-    ```c#
+    ```csharp
     public void OnGet()
     {
         Message = "Your application description page.";
@@ -50,7 +50,7 @@ Visual Studio hata ayıklayıcısı uygulamalarınızı hata ayıklama yardımc�
 
     Bu kodu:
 
-    ```c#
+    ```csharp
     public void OnGet()
     {
         LinkedList<int> result = doWork();

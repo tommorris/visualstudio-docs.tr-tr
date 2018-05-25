@@ -1,7 +1,7 @@
 ---
 title: Visual Studio uzaktan hata ayıklama | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422714c1180ef94d32d8d323c796ed2c84258bf3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Başka bir bilgisayara dağıtılan bir Visual Studio uygulama ayıklayabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcı kullanın.
@@ -47,22 +47,63 @@ Yalnızca uzaktan hata ayıklayıcı karşıdan yükleyip istiyorsanız ve senar
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
+## <a name="unblock_msvsmon"></a> Windows Server'da uzak araçları yüklenmesini engellemesini kaldırma
+
+Windows Server Internet Explorer'da varsayılan güvenlik ayarlarını uzak araçları gibi bileşenleri yüklemek zaman yapabilirsiniz.
+
+* Açarak Web siteleri ve kaynak içeren etki alanını açıkça izin verilmediği sürece web kaynaklarına erişmesini önler Internet Explorer Artırılmış Güvenlik Yapılandırması etkin (diğer bir deyişle, güvenilir).
+
+* Windows Server 2016, varsayılan ayar **Internet Seçenekleri** > **güvenlik** > **Internet**  >   **Özel düzey** > **indirmeleri** ayrıca yüklemeleri devre dışı bırakır dosya. Doğrudan Windows Server'da uzak araçları karşıdan yüklemeyi seçerseniz, dosya indirme etkinleştirmeniz gerekir.
+
+Windows Server'da Araçları'nı indirmek için aşağıdakilerden birini öneririz:
+
+* Bir çalışan Visual Studio gibi farklı bir bilgisayarda Uzak araçları indirin ve ardından kopyalama *.exe* Windows Server dosya.
+
+* Uzaktan hata ayıklayıcı çalıştırmak [dosya paylaşımından](#fileshare_msvsmon) Visual Studio makinenizde.
+
+* Doğrudan Windows Server'da uzak Araçları'nı indirmek ve Güvenilen siteler eklemek için komut istemlerini kabul edin. Bu komut istemlerini çok miktarda sonuçlanabilir şekilde Modern Web siteleri genellikle çok sayıda üçüncü taraf kaynakları içerir. Ayrıca, yeniden yönlendirilen bağlantıları el ile eklenmesi gerekebilir. Yükleme başlamadan önce Güvenilen siteler bazıları eklemeyi seçebilirsiniz. Git **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri** ve aşağıdaki siteleri ekleyin.
+
+  * visualstudio.com
+  * download.VisualStudio.microsoft.com
+  * hakkında: boş
+
+  Hata ayıklayıcıyı my.visualstudio.com daha eski sürümleri için bu oturum açma başarılı olduğundan emin olmak için bu ek siteleri ekleyin:
+
+  * Microsoft.com
+  * go.microsoft.com
+  * download.microsoft.com
+  * My.VisualStudio.com
+  * login.microsoftonline.com
+  * Login.live.com
+  * secure.aadcdn.microsoftonline-p.com
+  * MSFT.STS.microsoft.com
+  * auth.Gfx.MS
+  * app.vssps.visualstudio.com
+  * vlscppe.microsoft.com
+  * Query.prod.cms.RT.microsoft.com
+
+    Uzak Araçlar indirilirken bu etki alanı eklemek seçin ve ardından, **Ekle** istendiğinde.
+
+    ![Engellenen içerik iletişim kutusu](../debugger/media/remotedbg-blocked-content.png)
+
+    Yazılım yüklediğinizde, çeşitli web sitesi komut dosyaları ve kaynakları yükleme izni vermek için bazı ek istekler alın. My.VisualStudio.com üzerinde bu oturum açma başarılı olduğundan emin olmak için ek etki alanları eklemenizi öneririz.
+
 ### <a name="fileshare_msvsmon"></a> (İsteğe bağlı) Uzaktan hata ayıklayıcı dosya paylaşımından çalıştırmak için
 
-Uzaktan hata ayıklayıcı bulabilirsiniz (**msvsmon.exe**) Visual Studio Community, Professional veya Enterprise zaten yüklü olan bir bilgisayarda. Bazı senaryolarda, uzaktan hata ayıklama Kurulumu en kolay yolu uzaktan hata ayıklayıcı (msvsmon.exe) bir dosya paylaşımından çalıştırmaktır. Kullanım kısıtlamaları için uzaktan hata ayıklayıcı'nın yardım sayfasına bakın (**Yardım > kullanım** uzaktan hata ayıklayıcı).
+Uzaktan hata ayıklayıcı bulabilirsiniz (*msvsmon.exe*) Visual Studio Community, Professional veya Enterprise zaten yüklü olan bir bilgisayarda. Bazı senaryolarda, uzaktan hata ayıklama Kurulumu en kolay yolu uzaktan hata ayıklayıcı (msvsmon.exe) bir dosya paylaşımından çalıştırmaktır. Kullanım kısıtlamaları için uzaktan hata ayıklayıcı'nın yardım sayfasına bakın (**Yardım > kullanım** uzaktan hata ayıklayıcı).
 
-1. Bul **msvsmon.exe** Visual Studio sürümünüzle eşleşen dizininde. Visual Studio Enterprise 2017 için:
+1. Bul *msvsmon.exe* Visual Studio sürümünüzle eşleşen dizininde. Visual Studio Enterprise 2017 için:
 
-      **Program dosyaları (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      *Program dosyaları (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
       
-      **Program dosyaları (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      *Program dosyaları (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. Paylaşım **uzaktan hata ayıklayıcı** Visual Studio bilgisayardaki klasör.
 
-3. Uzak bilgisayarda çalıştırmak **msvsmon.exe**. İzleyin [kurulum yönergeleri](#bkmk_setup).
+3. Uzak bilgisayarda çalıştırmak *msvsmon.exe*. İzleyin [kurulum yönergeleri](#bkmk_setup).
 
 > [!TIP] 
-> Komut satırı yüklemesi ve komut satırı başvurusu için yönelik yardım sayfasına bakın **msvsmon.exe** yazarak ``msvsmon.exe /?`` Visual Studio'nun yüklü olan bilgisayarda bir komut satırında (veya gitmek **Yardım > kullanım**uzaktan hata ayıklayıcı).
+> Komut satırı yüklemesi ve komut satırı başvurusu için yönelik yardım sayfasına bakın *msvsmon.exe* yazarak ``msvsmon.exe /?`` Visual Studio'nun yüklü olan bilgisayarda bir komut satırında (veya gitmek **Yardım > kullanım**uzaktan hata ayıklayıcı).
   
 ## <a name="requirements_msvsmon"></a> Gereksinimleri
 

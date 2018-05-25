@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a27148619879ea90dba21704a0aa57fdf5f04551
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın
 
@@ -60,7 +60,7 @@ Komut satırı seçeneklerini indirme işlemi başlatan bir küçük (yaklaşık
 | `--installPath <dir>` | Yükleme dizini için görev örneği. Yükleme için bu komuttur **isteğe bağlı** ve örnek yükleneceği. Diğer komutlar için budur **gerekli** ve önceden yüklenmiş örneği yüklendiği. |
 | `--addProductLang <language-locale>` | **İsteğe bağlı**: bir yükleme sırasında veya değiştirme işlemi, bu ürünü yüklü UI dil paketlerini belirler. Birden çok dil paketlerini eklemek için komut satırında birden çok kez yer alabilir. Yoksa, yükleme makine yerel ayar kullanır. Daha fazla bilgi için bkz: [dil yerel ayarları listesi](#list-of-language-locales) bu sayfadaki bölümü.|
 | `--removeProductLang <language-locale>` | **İsteğe bağlı**: bir yükleme sırasında veya değiştirme işlemi, bu ürün kaldırılacak UI dil paketlerini belirler. Birden çok dil paketlerini eklemek için komut satırında birden çok kez yer alabilir. Daha fazla bilgi için bkz: [dil yerel ayarları listesi](#list-of-language-locales) bu sayfadaki bölümü.|
-| `--add <one or more workload or component IDs>` | **İsteğe bağlı**: bir veya daha fazla iş yükü ya da bileşen kimlikleri ekleyin. Yapı gerekli bileşenlerini, önerilen veya isteğe bağlı bileşenlerini değil yüklenir. Genel olarak kullanarak ek bileşenleri denetleyebilirsiniz `--includeRecommended` ve/veya `--includeOptional`. Geçirmiş denetimi için ekleyebilirsiniz `;includeRecommended` veya `;includeOptional` kimliği (örneğin, `--add Workload1;includeRecommended` veya `--add Workload2;includeRecommended;includeOptional`). Daha fazla bilgi için bkz: [iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası. Bu seçenek gerektiği gibi yineleyebilirsiniz.|
+| `--add <one or more workload or component IDs>` | **İsteğe bağlı**: bir veya daha fazla iş yükü ya da bileşen kimlikleri ekleyin. Yapı gerekli bileşenlerini, önerilen veya isteğe bağlı bileşenlerini değil yüklenir. Genel olarak kullanarak ek bileşenleri denetleyebilirsiniz `--includeRecommended` ve/veya `--includeOptional`. Birden çok iş yükleri veya bileşenleri içerecek şekilde yineleyin `--add` komutu (örneğin, `--add Workload1 --add Workload2`). Geçirmiş denetimi için ekleyebilirsiniz `;includeRecommended` veya `;includeOptional` kimliği (örneğin, `--add Workload1;includeRecommended` veya `--add Workload2;includeRecommended;includeOptional`). Daha fazla bilgi için bkz: [iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası. Bu seçenek gerektiği gibi yineleyebilirsiniz.|
 | `--remove <one or more workload or component IDs>` | **İsteğe bağlı**: bir veya daha fazla iş yükü veya kaldırmak için Bileşen kimlikleri. Daha fazla bilgi için bizim [iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası. Bu seçenek gerektiği gibi yineleyebilirsiniz.|
 | `--in <path>` | **İsteğe bağlı**: URI veya bir yanıt dosyasının yolu.  |
 | `--all` | **İsteğe bağlı**: tüm iş yükleri ve bir ürün için bileşenleri yüklemeyi. |

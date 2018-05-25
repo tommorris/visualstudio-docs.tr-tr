@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e3aee55728f312aaa1ff7d8c44a6bbd6c04bfd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6c7cfc4cd1aa5736b4027155bd52be3ab095e60
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Visual Studio'da profili uygulama performansı
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **CPU kullanımı** sekmesi, uygulamanız için performans verilerini almak için tanılama araçları. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
@@ -46,7 +46,7 @@ Bu öğreticide şunları yapacaksınız:
 > * CPU kullanım verilerini toplama
 > * CPU kullanım verilerini çözümleme
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla 
+## <a name="step-1-collect-profiling-data"></a>1. adım: profil oluşturma verilerini topla 
   
 1.  Visual Studio'da hata ayıklama ve CPU kullanımını incelemek istediğiniz bir noktada, uygulamanızda bir kesme noktası ayarlamak istediğiniz projeyi açın.
 
@@ -97,7 +97,7 @@ Bu öğreticide şunları yapacaksınız:
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="Step2"></a> 2. adım: CPU kullanım verilerini çözümleme
+## <a name="step-2-analyze-cpu-usage-data"></a>2. adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve her biri daha ayrıntılı bir bakış alma verilerinizi incelemeye başlamak öneririz.
 
@@ -145,7 +145,7 @@ Sütun değerleri hakkında daha fazla bilgi aşağıdadır:
 
 ## <a name="BKMK_External_Code"></a>Dış görünümü kodu
 
-Harici kod olan sistem ve framework bileşenleri işlevlerde yazdığınız kodu tarafından yürütülür. Harici kod başlatın ve uygulamayı durdurun, UI çizin, iş parçacığı oluşturma denetleyen ve diğer alt düzey uygulama hizmetleri sağlamak işlevler içerir. Çoğu durumda, dış kodda ilgilenen olmayacaktır ve böylece CPU kullanımı Aracı'nı toplar kullanıcı yönteminin dış işlevler birine **[dış kodu]** düğümü.
+Yazdığınız kodu tarafından gerçekleştirilen sistem ve framework bileşenleri işlevlerde dış kodu var. Harici kod başlatın ve uygulamayı durdurun, UI çizin, iş parçacığı oluşturma denetleyen ve diğer alt düzey uygulama hizmetleri sağlamak işlevler içerir. Çoğu durumda, dış kodda ilgilenen olmayacaktır ve böylece CPU kullanımı Aracı'nı toplar kullanıcı yönteminin dış işlevler birine **[dış kodu]** düğümü.
   
 Harici kod çağrısı yollarını görüntülemek istiyorsanız, tercih **Göster harici kod** gelen **filtre görünümü** listeleyin ve ardından **Uygula**.  
   
@@ -163,4 +163,4 @@ Aradığınız bir düğüm bulmak için arama kutusunu kullanın, sonra veriler
 Bu öğreticide, toplamak ve CPU kullanım verilerini analiz etme öğrendiniz. Zaten tamamladıysanız [profil oluşturucu Turu](../profiling/profiling-feature-tour.md), uygulamalarınızdaki bellek kullanımını analiz etme hızlı bir bakış almak isteyebilirsiniz.
 
 > [!div class="nextstepaction"]
-> [Bellek kullanımını çözümleme](../profiling/memory-usage.md) 
+> [Bellek kullanımını analiz etme](../profiling/memory-usage.md) 

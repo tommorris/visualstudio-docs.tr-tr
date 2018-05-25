@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f7f15cc3ce8396e4cd10a49a1427f1ba1be76b50
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel nesne modeline genel bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesnelerle etkileşim kurabilirsiniz. Bu konu en önemli nesneleri sunar:  
@@ -107,7 +107,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma derleme başvurusu  
  Excel PIA başvuru belgeleri Excel için birincil birlikte çalışma derlemesindeki türler açıklanmaktadır. Bu belge aşağıdaki konumdan kullanılabilir: [Excel 2010 birincil birlikte çalışma derleme başvurusu](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
- Sınıflar ve arabirimler arasındaki farklar PIA ve olayları PIA nasıl uygulandığı, örneğin Excel PIA tasarımı hakkında daha fazla bilgi için bkz: [genel bakış, sınıflar ve arabirimler Office birincil birlikte çalışma derlemeleriiçinde](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ Sınıflar ve arabirimler arasındaki farklar PIA ve olayları PIA nasıl uygulandığı, örneğin Excel PIA tasarımı hakkında daha fazla bilgi için bkz: [sınıflar ve arabirimler Office birincil birlikte çalışma derlemeleriiçindegenelbakış](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>VBA nesne modeli başvurusu  
  Visual Basic for Applications (VBA) kodundaki sunulur gibi VBA nesne modeli başvurusu Excel nesne modeline belgeler. Daha fazla bilgi için bkz: [Excel 2010 nesne modeli başvurusu](http://go.microsoft.com/fwlink/?LinkId=199768).  

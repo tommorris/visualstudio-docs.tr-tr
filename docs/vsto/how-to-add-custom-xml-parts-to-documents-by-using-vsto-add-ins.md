@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d652f0890b32197bb13a3f73221f9ee2a92bcfc8
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 803a0c146bbf17ee79f79fe5de95fdf2ee2151da
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme
   Bir VSTO eklenti özel bir XML parçasına oluşturarak belgelerin aşağıdaki türlerden XML veri depolayabilirsiniz:  
@@ -41,7 +41,7 @@ ms.lasthandoff: 05/17/2018
   
  **Uygulandığı öğe:** Bu konu başlığı altındaki bilgiler Excel, PowerPoint ve Word için uygulama düzeyi projelerine yöneliktir. Daha fazla bilgi için bkz: [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
-### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Bir Excel çalışma kitabı için özel bir XML parçasına eklemek için  
+## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Bir Excel çalışma kitabı için özel bir XML parçasına eklemek için  
   
 1.  Yeni bir ekleme <xref:Microsoft.Office.Core.CustomXMLPart> nesnesine <xref:Microsoft.Office.Interop.Excel._Workbook.CustomXMLParts%2A> çalışma kitabı koleksiyonu. <xref:Microsoft.Office.Core.CustomXMLPart> Çalışma kitabında saklamak istediğiniz XML dizesini içerir.  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  Projenizdeki başka koddan yöntemi çağırın. Örneğin, bir çalışma kitabı kullanıcı oturum açtığında özel XML parçaları oluşturmak için yöntemi için bir olay işleyicisi çağırmanıza <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> olay.  
   
-### <a name="to-add-a-custom-xml-part-to-a-word-document"></a>Özel bir XML parçasına Word belgesine eklemek için  
+## <a name="to-add-a-custom-xml-part-to-a-word-document"></a>Özel bir XML parçasına Word belgesine eklemek için  
   
 1.  Yeni bir ekleme <xref:Microsoft.Office.Core.CustomXMLPart> nesnesine <xref:Microsoft.Office.Interop.Word._Document.CustomXMLParts%2A> belge koleksiyonu. <xref:Microsoft.Office.Core.CustomXMLPart> Belgede depolamak istediğiniz XML dizesini içerir.  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  Projenizdeki başka koddan yöntemi çağırın. Örneğin, kullanıcı bir belgeyi açtığında özel XML parçaları oluşturmak için yöntemi için bir olay işleyicisi çağırmanıza <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> olay.  
   
-### <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Özel bir XML parçasına PowerPoint sunusunu eklemek için  
+## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Özel bir XML parçasına PowerPoint sunusunu eklemek için  
   
 1.  Yeni bir ekleme <xref:Microsoft.Office.Core.CustomXMLPart> nesnesine <xref:Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts%2A> sunu koleksiyonu. <xref:Microsoft.Office.Core.CustomXMLPart> Sunuya depolamak istediğiniz XML dizesini içerir.  
   

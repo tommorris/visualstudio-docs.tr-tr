@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: aeb74bac5196450ec98426727a1456a009adb5c1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Öğretici: Visual Studio yönetilen ve yerel kodda hata ayıklama
 
@@ -116,7 +116,7 @@ Bu öğreticide şunları yapacaksınız:
 
 1. İçinde *Program.cs*, varsayılan kodu aşağıdaki kodla değiştirin:
 
-    ```c#
+    ```csharp
     using System;
     using System.Runtime.InteropServices;
     
@@ -183,7 +183,7 @@ Visual Studio 2017 çoğu sürümlerini .NET Core kullanarak uygulama yerel kod 
 
 1. C# projesinde, açık *Program.cs* ve sol kenar boşluğunda tıklayarak aşağıdaki kod satırında bir kesme noktası ayarlayın:
 
-    ```c#
+    ```csharp
     int result = Multiply(7, 7);
     ```
 

@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 207d5941527d51c18c6690166ef751b4782b481c
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve hızlı uygulama oluşturma
 Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
@@ -49,9 +49,9 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 1. Visual Studio 2017'ni açın.
 
-1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
+1. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulama**ve ardından **Tamam**.
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulama** ve ardından **Tamam**.
 
      Görmüyorsanız, **temel Azure Node.js Express 4 uygulama** proje şablonu, yüklemelisiniz **Node.js geliştirme** iş yükü ilk.
 
@@ -194,7 +194,7 @@ Bu öğreticide, bilgi nasıl yapılır:
 
     İçinde **uygulama hizmeti** iletişim kutusunda, Azure hesabınızda oturum açın ve mevcut Azure aboneliklerine bağlanma.
 
-1. Bir aboneliği seçin, seçin veya bir kaynak grubu oluşturmak, seçin veya bir uygulama hizmeti düzlemi oluşturmak için kalan adımları izleyin ve sonra için Azure yayımlama isteyip istemediğiniz sorulduğunda adımları izleyin. Daha ayrıntılı yönergeler için bkz: [Azure Web sitesi için Web dağıtımı kullanarak yayımla](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy).
+1. Bir aboneliği seçin, seçin veya bir kaynak grubu oluşturmak, seçin veya bir uygulama hizmeti düzlemi oluşturmak için kalan adımları izleyin ve sonra için Azure yayımlama isteyip istemediğiniz sorulduğunda adımları izleyin. Daha ayrıntılı yönergeler için bkz: [Yayımla web kullanarak Azure Web sitesine dağıtmak](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy).
 
 1. **Çıkış** penceresi Azure'a dağıtma hakkında ilerleme durumunu gösterir.
 
@@ -209,4 +209,4 @@ Bu öğreticiyi tamamlamak Tebrikler!
 Bu öğreticide, oluşturmak ve Express kullanarak bir Node.js uygulaması çalıştırmak ve hata ayıklayıcıyı kullanma bir kesme noktası isabet öğrendiniz.
 
 > [!div class="nextstepaction"]
-> [Visual Studio için Node.js Araçları](https://github.com/Microsoft/nodejstools)
+> [Visual Studio için node.js araçları](https://github.com/Microsoft/nodejstools)

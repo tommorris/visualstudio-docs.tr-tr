@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbe34a1ddb738b31c9362eb511a04ba970402ab
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 3f18e8ab05cf6331049e71c552d7b72a6b9235e0
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` İşlevi .vsp dosyasında bir sayısal işaret ve bir metin dizesi ekler. Açıklama ve işareti için içeren iş parçacığı için profil oluşturma `CommentMarkProfile` işlevi açık olması gerekir.  
@@ -39,7 +39,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
   
  İşaretçi eklemek için metin dizesi. Dize NULL Sonlandırıcı dahil olmak üzere 256 karakterden kısa olmalıdır.  
   
-## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri  
+## <a name="property-valuereturn-value"></a>Özellik değeri/dönüş değeri  
  Kullanarak işlevi başarısını veya başarısızlığını gösterir **PROFILE_COMMAND_STATUS** numaralandırması. Dönüş değeri aşağıdakilerden biri olabilir:  
   
 |Numaralandırıcı|Açıklama|  
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 > [!IMPORTANT]
 >  CommentMarkProfile yöntemi yalnızca araçları ile kullanılabilir.  
   
-## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri  
+## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>İşlev bilgisi  
@@ -110,5 +110,5 @@ void ExerciseCommentMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio profil oluşturucu API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)

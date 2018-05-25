@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edda7ab4875381b6213e893169fc8bc837427757
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d835a8592108b549a109f7bb7e128a8ae5b01611
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Nasıl yapılır: kullanılacak XML şemaları seçin
 
-XML Düzenleyicisi'ni %InstallDir%\Xml\Schemas dizininde yer alan bir şema önbelleği sağlar. Şema önbelleğinin IntelliSense ve XML belge doğrulama için kullanılan iyi bilinen XML şemaları içerir.
+Bulunan bir şema önbelleği XML Düzenleyicisi sağlar *%InstallDir%\Xml\Schemas* dizini. Şema önbelleğinin IntelliSense ve XML belge doğrulama için kullanılan iyi bilinen XML şemaları içerir.
 
 **Şemaları** belge özelliği kullanmak için bir veya daha fazla XML Şeması Tanım Dili (XSD) şeması/şemaları seçmek için kullanılır. Şemalar şema önbelleğinde seçin ya da önbellekte bulunmayan bir şema belirtmek için sağlar.
 
-Belirttiğiniz şemaları diğer yanı sıra tüm XML belge özellikleri gizli bir çözüm kullanıcı seçenekleri dosyasında (.suo) kaydedilir. Sonuç olarak, bu değerleri çözüm bir sonraki açışınızda yeniden girmeniz gerekmez.
+Belirttiğiniz şemaları gizli çözüm kullanıcı seçenekleri dosyasında kaydedilir (. *suo*), yanı sıra diğer tüm XML belge özellikleri. Sonuç olarak, bu değerleri çözüm bir sonraki açışınızda yeniden girmeniz gerekmez.
 
 > [!NOTE]
 > Düzenleyici bir satır içi şema veya başvurduğu bir şema kullanarak doğrulayabilirsiniz `xsd:schemaLocation` özniteliği. Daha fazla bilgi için bkz: [XML belge doğrulama](../xml-tools/xml-document-validation.md).
@@ -33,7 +33,7 @@ Belirttiğiniz şemaları diğer yanı sıra tüm XML belge özellikleri gizli b
 
 2.  Belge Özellikleri penceresinde üzerinde düğmesini **şemaları** alan.
 
-     **XML şemaları** iletişim kutusu görüntülenir. İletişim kutusu (catalog.xml dosyasında başvurulan şemaları dahil) şema önbelleğinde .xsd uzantısına sahip tüm şemaları listeler ve geçerli çözümde olduğu herhangi bir şema açmak için ayrıca başvurulan Visual Studio bir `xsd:schemaLocation` özniteliği ya da başvuru **şemaları** özelliği.
+     **XML şemaları** iletişim kutusu görüntülenir. İletişim kutusu tüm şemalarda listeler bir. *xsd* uzantı şema önbelleğinde (başvurulan şemaları dahil olmak üzere *catalog.xml* dosyası) ve ayrıca Visual Studio'da Aç Geçerli çözümde başvuru hiçbir şema bir `xsd:schemaLocation` öznitelik veya başvurulan **şemaları** özelliği.
 
 3.  Aşağıdakilerden birini yaparak doğrulama için kullanılacak şemaları seçin:
 
@@ -72,8 +72,8 @@ Belirttiğiniz şemaları diğer yanı sıra tüm XML belge özellikleri gizli b
     > [!NOTE]
     > Hala şema başvurusu varsa bir `schemaLocation` özniteliği veya eşleşen bir `targetNamespace` sonra **kaldırmak** otomatik ilişki nedeniyle bu durumda çalışmaz. Bu durumda şeması olarak işaretlemek önerilir **seçili şemaları kullanmayın** içinde **kullanmak** sütun.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Şema Önbelleği](../xml-tools/schema-cache.md)
-- [XML Şemaları İletişim Kutusu](../xml-tools/xml-schemas-dialog-box.md)
+- [Şema önbelleği](../xml-tools/schema-cache.md)
+- [XML şemaları iletişim kutusu](../xml-tools/xml-schemas-dialog-box.md)
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)

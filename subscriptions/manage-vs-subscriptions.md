@@ -9,11 +9,11 @@ description: En Visual Studio aboneliklerinizi dışında alma hakkında bilgi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="managing-subscriptions"></a>Aboneliklerini Yönetme
 
@@ -25,7 +25,7 @@ Visual Studio aboneliğinize Hoş Geldiniz!  Aboneliğinizi tüm yazılım ve ya
 ### <a name="first-time-access"></a>İlk saat erişimi
 Aboneliğinizi ilk kez kullanmak üzere adımlar aboneliğinizi nasıl elde bağlıdır.  
 
-#### <a name="microsoft-store"></a>Microsoft Store
+#### <a name="microsoft-store"></a>Microsoft deposu
 Visual Studio abonelik Microsoft Store aracılığıyla satın aldığınız, etkinleştirme adımları ödeme başlatılabilir **onay sayfası** veya **onay e-postası.**  
 1.  "Onay sayfasında" veya "onay e-posta"'ı tıklatarak **oturum açmak için burayı tıklatın**.  İçin yönlendirilecek https://my.visualstudio.com/subscriptions/activate.
 2.  Kullandığınız abone portalında oturum açın ve'ı tıklatın e-posta adresini girin **devam**.
@@ -118,3 +118,21 @@ Başka bir hesaba eklemek için:
 ![Alternatif hesabı](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Başka bir hesaba ekledikten sonra güncelleştirmek veya tıklayarak herhangi bir zamanda kaldırmak **abonelikleri** sekmesi ve uygun seçeneği seçerek **ilgili bağlantılar** bölümü.  
+
+## <a name="frequently-asked-questions"></a>Sık sorulan sorular   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>S: ne kadar süreyle Aboneliğimi yenilememeyi, Microsoft verilerimi tutar?
+A: satın alma kanal bağlı olarak, Microsoft müşteri verileri için farklı süreler boyunca tutar.
+
+| Kanal                                                | Süre (gün) |
+|--------------------------------------------------------|-----------------|
+|    Perakende (örneğin aracılığıyla Microsoft Store)               |    360          |
+|    Toplu Lisanslama hizmeti Merkezi (VLSC)              |    180          |
+|    Microsoft Ürün ve Hizmet Sözleşmesi'ni (MPSA)    |    180          |
+|    Visual Studio bulut abonelikleri                   |    180          |
+|    Program (örneğin MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Satış amaçlı olmayan (örneğin, MVP, MSP)                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - Azure AD veya Microsoft Account kapatmak seçerseniz, kişisel bilgileriniz hemen anonim.  
+> - Etkin aboneliğiniz varsa biz tam olarak tüm kişisel verileri kaldırmaz. 

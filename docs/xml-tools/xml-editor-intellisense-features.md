@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b87f9d1b850ce93851d78a8b43420ae473c41
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense özellikleri
 
@@ -80,7 +80,7 @@ XML Düzenleyicisi'ni bir ad alanı ekleme olanağı da sahip bir ad alanı tam 
 `<e:Book xmlns:e="http://books"`
 
 ## <a name="brace-matching"></a>Ayraç eşleştirme
- XML Düzenleyicisi'ni küme parantezi vurgulama kapalı öğelerde hemen görüş sağlar. Klavye kısayolu (CTRL +]), bir ayraç eşleşen ayraç atlamak için de kullanabilirsiniz.
+ XML Düzenleyicisi'ni küme parantezi vurgulama kapalı öğelerde hemen görüş sağlar. Klavye kısayolu da kullanabilirsiniz (**Ctrl**+**]**) için eşleşen küme parantezi bir ayraç atlamak için.
 
  XML Düzenleyicisi'ni bu aşağıdaki öğeler için yapar:
 
@@ -98,8 +98,8 @@ XML Düzenleyicisi'ni bir ad alanı ekleme olanağı da sahip bir ad alanı tam 
 
 -   Dosyaları açma ve kapama öznitelikleri tekliflerinde.
 
-## <a name="modifying-the-intellisense-options"></a>IntelliSense seçenekleri değiştirme
- IntelliSense ve otomatik tamamlama özellikler varsayılan olarak etkindir. Ancak, bu Araçlar Seçenekler ayarlarınızı değiştirerek değiştirebilirsiniz.
+## <a name="modify-the-intellisense-options"></a>IntelliSense seçeneklerini değiştirin
+ IntelliSense ve otomatik tamamlama özellikler varsayılan olarak etkindir. Ancak, bu değiştirerek değiştirebilirsiniz, **Araçları** > **seçenekleri** ayarlar.
 
  **Otomatik ekleme** bölümünü **çeşitli** sayfa aşağıdaki davranışı denetler:
 
@@ -109,7 +109,7 @@ XML Düzenleyicisi'ni bir ad alanı ekleme olanağı da sahip bir ad alanı tam 
 |Öznitelik tırnak işaretleri|Yeni bir öznitelik adını girin, öznitelik değer tırnakları ekler.|
 |Diğer biçimlendirme|Açıklamalar, CDATA, DOCTYPE, işleme yönergeleri ve diğer biçimlendirme bildirimleri tamamlar.|
 
-#### <a name="to-change-the-auto-completion-behavior"></a>Otomatik Tamamlama davranışını değiştirmek için
+### <a name="to-change-the-auto-completion-behavior"></a>Otomatik Tamamlama davranışını değiştirmek için
 
 1.  Seçin **seçenekleri** gelen **Araçları** menüsü.
 
@@ -117,7 +117,7 @@ XML Düzenleyicisi'ni bir ad alanı ekleme olanağı da sahip bir ad alanı tam 
 
 3.  Hiçbir değişiklik **otomatik ekleme** 'ye tıklayın **Tamam**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)
 - [IntelliSense Kullanma](../ide/using-intellisense.md)

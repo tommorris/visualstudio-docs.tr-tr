@@ -14,13 +14,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e63e208d0442b50d30ffd9e286dd92de4bb17610
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="threads-view-parallel-performance"></a>İş Parçacıkları Görünümü (Paralel Performans)
+# <a name="threads-view-parallel-performance"></a>İş Parçacıkları görünümü (paralel performans)
 **İş parçacıkları görünümü** en ayrıntılı ve zengin eşzamanlılık görselleştiricisi görünümde (seçin **Çözümle** > **eşzamanlılık görselleştiricisi** başlatmak için Eşzamanlılık görselleştiricisi). Bu görünümü kullanarak, iş parçacıkları yürütme veya eşitleme, g/ç veya başka bir nedenle nedeniyle engelleme olup olmadığını belirleyebilirsiniz.  
   
  Profil Çözümleme sırasında her bir uygulama iş parçacığı için tüm işletim sistemi bağlamı anahtar olayları eşzamanlılık görselleştiricisi inceler. İçerik Geçişi, bunlar gibi birçok nedeniyle oluşabilir:  
@@ -54,7 +54,7 @@ ms.lasthandoff: 04/19/2018
   
 -   Çalışan iş parçacıkları ve yürütme kritik yolları arasında bağımlılıklar anlayın.  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>Belirli zaman aralıkları ve iş parçacıkları inceleniyor  
+## <a name="examine-specific-time-intervals-and-threads"></a>Belirli zaman aralıkları ve iş parçacıkları inceleyin  
  İş Parçacıkları görünümü zaman çizelgesi gösterir. Yakınlaştırma ve kaydırma belirli aralıklarla ve iş parçacıkları, uygulamanızın incelemek için zaman çizelgesi içinde. X ekseni üzerinde saat ve ekseninde birden fazla kanal:  
   
 -   Sistem, bir kanalı için okuma ve yazma için bir tane her disk için iki g/ç kanalı.  
@@ -115,7 +115,7 @@ ms.lasthandoff: 04/19/2018
 #### <a name="current-stack"></a>Geçerli yığın  
  Bu sekme seçilen noktaya çağrı yığını zaman çizelgesi grafikte bir iş parçacığı kesimindeki gösterir. Çağrı yığınları programınıza ilgili etkinlik gösterilecek atılır.  
   
-#### <a name="unblocking-stack"></a>Yığın Engellemesini Kaldırma  
+#### <a name="unblocking-stack"></a>Yığın engellemesini kaldırma  
  Seçili iş parçacığı hangi iş parçacığı engellemesini görmek ve hangi kod satırında seçmek için **Unblocking yığın** sekmesi.  
   
 #### <a name="execution"></a>Yürütme  
@@ -132,7 +132,7 @@ ms.lasthandoff: 04/19/2018
 #### <a name="sleep"></a>Uyku  
  Uyku raporda uyku blokları, her çağrı yığını sürelerinin engelleme toplama sorumlu olan çağrıları gösterilir. Daha fazla bilgi için bkz: [uyku zaman](../profiling/sleep-time.md).  
   
-#### <a name="memory-management"></a>Bellek Yönetimi  
+#### <a name="memory-management"></a>Bellek yönetimi  
  Bellek yönetimi raporu, bellek yönetimi blokları, her çağrı yığını sürelerinin engelleme toplama birlikte oluştuğu çağrıları gösterilir. Aşırı disk belleği veya atık toplama sorunları olan alanları belirlemek için bu bilgileri kullanın.  Daha fazla bilgi için bkz: [bellek yönetimi zamanı](../profiling/memory-management-time.md).  
   
 #### <a name="preemption"></a>Önalım  
@@ -142,10 +142,10 @@ ms.lasthandoff: 04/19/2018
  UI işleme rapor her çağrı yığını sürelerinin engelleme toplama birlikte blokları işleme için kullanıcı Arabirimi sorumlu çağrıları gösterir. Daha fazla bilgi için bkz: [UI işleme zamanı](../profiling/ui-processing-time.md).  
   
 #### <a name="per-thread-summary"></a>İş parçacığı özeti  
- Bu sekme ren kodlu sütun görünümü toplam süre, her iş parçacığı Çalıştır harcanan, engellenmiş, g/ç ve diğer durumlar gösterir. Sütunları altındaki etiketlenir. Bu sekme, zaman çizelgesi grafikte yakınlaştırma düzeyini ayarladığınızda, otomatik olarak güncelleştirilir. Bazı yakınlaştırma düzeylerinde bazı iş parçacıkları görüntülenmeyebilir. Bu durumda, üç nokta sağdaki görüntülenir. İstediğiniz iş parçacığı görünmüyorsa, başka bir iş parçacığı gizleyebilirsiniz. Daha fazla bilgi için bkz: [başına iş parçacığı özet raporu](../profiling/per-thread-summary-report.md).  
+ Bu sekme ren kodlu sütun görünümü toplam süre, her iş parçacığı Çalıştır harcanan, engellenmiş, g/ç ve diğer durumlar gösterir. Sütunları altındaki etiketlenir. Bu sekme, zaman çizelgesi grafikte yakınlaştırma düzeyini ayarladığınızda, otomatik olarak güncelleştirilir. Bazı yakınlaştırma düzeylerinde bazı iş parçacıkları görüntülenmeyebilir. Bu durumda, üç nokta sağdaki görüntülenir. İstediğiniz iş parçacığı görünmüyorsa, başka bir iş parçacığı gizleyebilirsiniz. Daha fazla bilgi için bkz: [iş parçacığı özet raporu başına](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Disk işlemleri  
  İş parçacığı disk g/ç bunlar (örneğin, yüklenen DLL'ler) işlemdeki, hangi dosyaların kaç bayt okuma işlemleri, geçerli işlemin ve diğer bilgileri adına katılan ve bu sekme hangi işlemlerin gösterir. Özellikle, işlem bağlı g/ç görünüyor, dosyaları yürütme sırasında erişirken harcanan zamanı değerlendirmek için bu raporu kullanın. Daha fazla bilgi için bkz: [Disk işlemleri raporu](../profiling/disk-operations-report-threads-view.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)

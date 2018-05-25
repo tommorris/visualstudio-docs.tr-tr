@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2956e0c19e7cf50fdde39765bc5b26112986b84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 02492f2e1760df3ce5cd6751808303bae75577e2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Nasıl yapılır: bir XPath ifadesi değerlendir
 
@@ -29,7 +29,7 @@ XPath ifadelerle değerlendirebilir **QuickWatch** iletişim kutusu. XPath ifade
 -   Kullanıcı tanımlı işlevler desteklenmez.
 
 > [!NOTE]
-> Aşağıdaki yordam belowAvg.xsl ve books.xml dosyalarından kullanır [izlenecek yol: bir XSLT stil sayfası hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) konu.
+> Aşağıdaki yordam kullanır *belowAvg.xsl* ve *books.xml* dosyaları buradan [izlenecek yol: bir XSLT stil sayfası hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) konu.
 
 ## <a name="to-evaluate-an-xpath-expression"></a>Bir XPath ifadesi değerlendirmek için
 
@@ -51,6 +51,6 @@ XPath ifadelerle değerlendirebilir **QuickWatch** iletişim kutusu. XPath ifade
 
      **Değeri** kutusu gösterir XPath ifadesi hesaplandığında sonucunu `true`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)

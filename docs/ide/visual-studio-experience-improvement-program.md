@@ -10,15 +10,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4558e086ec53aa0e264fd55a322d4b5acaac7aa
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: 57338d465710e608079bf289db4516de46a88277
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimini Geliştirme Programı
 
-Visual Studio Müşteri Deneyimi Geliştirme Programı (VSCEIP), zaman içinde Visual Studio geliştirmesine yardımcı olmak için tasarlanmış bir programdır. Bu program bilgisayar donanımıyla ve kişiler Visual Studio, kullanıcıların bilgisayardaki görevlerini kesintiye uğratmadan kullanma hakkında bilgi toplar. Toplanan bilgiler, Microsoft'un hangi özellikleri iyileştireceğini belirlemesine yardımcı olur. Bu belge içinde veya dışında VSCEIP opt alınmaktadır.
+Visual Studio Müşteri Deneyimi Geliştirme Programı (VSCEIP), zaman içinde Visual Studio geliştirmesine yardımcı olmak için tasarlanmıştır. Bu program [hatalar hakkında bilgi toplar](../ide/diagnostic-data-collection.md), bilgisayar donanımı ve kullanıcıların bilgisayardaki görevlerini kesintiye uğratmadan kişi Visual Studio nasıl kullanır. Toplanan bilgiler, Microsoft'un hangi özellikleri iyileştireceğini belirlemesine yardımcı olur. Bu belge içinde veya dışında VSCEIP opt alınmaktadır.
 
 ## <a name="opt-in-or-out"></a>Giriş veya çıkış iptal et
 
@@ -58,6 +58,7 @@ Değer = (DWORD)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+* [Visual Studio tarafından toplanan tanılama bilgileri](diagnostic-data-collection.md)
 * [Bizimle iletişime geçin](../ide/talk-to-us.md)
 * [Visual Studio ile ilgili bir sorun bildirme](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 * [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/)

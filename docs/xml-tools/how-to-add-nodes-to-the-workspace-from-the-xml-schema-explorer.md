@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 010cdbbb23b1e376ec12e7a6a6a903664a069d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Nasıl yapılır: XML şema Gezgini'nden çalışma alanına düğümleri eklemek
 
-Bu konuda düğüm ekleme açıklanmaktadır [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md) XML Şeması Gezgini'nden. Bu bir XSD Tasarımcısı görünümü üzerine XML Şeması Gezgini'nden düğümleri bırakarak veya XML Şeması Explorer'ın bağlam menüsünü kullanarak elde edilebilir. XML şema Gezgini tarafından gerçekleştirilen bir arama sonucunda vurgulanmış düğümleri de ekleyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: şema ayarlamak arama sonucu düğümleri Ekle çalışma alanına](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+Bu konuda düğüm ekleme açıklanmaktadır [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md) gelen **XML Şeması Explorer**. Bu düğümlerden bırakarak sağlanabilir **XML Şeması Explorer** kullanarak veya bir XSD Tasarımcısı görünümü üzerine **XML Şeması Explorer'ın** bağlam menüsü. Tarafından gerçekleştirilen bir arama sonucunda vurgulanmış düğümleri de ekleyebilirsiniz **XML Şeması Explorer**. Daha fazla bilgi için bkz: [nasıl yapılır: çalışma alanı'na şema kümesi arama sonucu düğümleri eklemek](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
 > Yalnızca genel düğümler eklenebilir [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md).
@@ -33,11 +33,11 @@ Bu konuda düğüm ekleme açıklanmaktadır [XML şema Tasarımcısı çalışm
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Bir düğüm bir görünümü açın, sürüklenip
 
-1.  Sağ tıklayın `PurchaseOrderType` grafik görünümü düğümünde. Seçin **Göster XML Şeması Explorer'da**.
+1.  Sağ `PurchaseOrderType` grafik görünümü düğümünde. Seçin **Göster XML Şeması Explorer'da**.
 
-     Düğüm XML Şeması Gezgini'nde vurgulanır.
+     Düğüm vurgulanan **XML Şeması Explorer**.
 
-2.  Sağ tıklayın `PurchaseOrderType` seçin ve XML Şeması Explorer düğümünde **Göster tüm başvuruları**.
+2.  Sağ tıklayın `PurchaseOrderType` düğümünde **XML Şeması Explorer** seçip **Göster tüm başvuruları**.
 
      `purchaseOrder` Düğüm vurgulanacak.
 
@@ -51,7 +51,7 @@ Bu konuda düğüm ekleme açıklanmaktadır [XML şema Tasarımcısı çalışm
 
      ![XML şema Explorer anahtar sözcük aramasını](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Arama sonuçları XML Şeması Gezgini'nde vurgulanır ve çizgilerine dikey kaydırma çubuğunda olarak işaretlenmiş.
+     İçinde arama sonuçlarında vurgulanır **XML Şeması Explorer** ve çizgilerine dikey kaydırma çubuğunda olarak işaretlenmiş.
 
 2.  Arama sonuçlarını çalışma alanı'na tıklayarak ekleyin **çalışma alanına vurgulanan düğümleri eklemek** Özet Sonuçlar bölmesindeki düğmesi.
 
@@ -59,6 +59,6 @@ Bu konuda düğüm ekleme açıklanmaktadır [XML şema Tasarımcısı çalışm
 
      `purchaseOrder` Düğümü ve `PurchaseOrderType` düğümünün görünen diğer yanındaki tasarım yüzeyine [grafik görünümü](../xml-tools/graph-view.md). İki düğüm birbiriyle ilişkili olmadığından ( `purchaseOrder` öğesidir `PurchaseOrderType` türü), bir ok aralarında çizilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Şema Gezgini](../xml-tools/xml-schema-explorer.md)

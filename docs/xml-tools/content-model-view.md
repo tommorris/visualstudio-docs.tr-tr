@@ -10,33 +10,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e5dc903c37b91be46efb7c049fa74f0ed76366
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="content-model-view"></a>İçerik modeli görünümü
 
-İçerik modeli görünümü yerel ve genel şema düğümleri ve basit ve karmaşık türleri, öğeleri, model grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere bileşenleri, grafik bir gösterimini sağlar. XML açıklamaları ve işleme talimatları içerik modeli görünümünde görüntülenemiyor. İçerik modeli görünümü iki bölme içerir: bir **çalışma** düğümlerin listesini içeren paneli [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md)ve burada görebilirsiniz şema içerik modeli tasarım yüzeyi Seçili düğümleri **çalışma** paneli. İçerik modeli görünümü, XML şema Tasarımcısı araç ve içerik haritası çubuğunu de içerir.
+İçerik modeli görünümü yerel ve genel şema düğümleri ve basit ve karmaşık türleri, öğeleri, model grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere bileşenleri, grafik bir gösterimini sağlar. XML açıklamaları ve işleme talimatları içerik modeli görünümünde görüntülenemiyor. İçerik modeli görünümü iki bölme içerir: bir **çalışma** düğümlerin listesini içeren paneli [XML şema Tasarımcısı çalışma alanı](../xml-tools/xml-schema-designer-workspace.md)ve burada görebilirsiniz şema içerik modeli tasarım yüzeyi Seçili düğümleri **çalışma** paneli. İçerik modeli görünümü, XML şema Tasarımcısı araç ve içerik haritası çubuğunu de içerir.
 
- Aşağıdaki görüntüde, çalışma Masası altı şema düğümleri içerir. `purchaseOrder` Düğüm Workpace panelinde seçilir ve tasarım yüzeyine görüntülenir.
+ Aşağıdaki görüntüde **çalışma** paneli altı şema düğümleri içerir. `purchaseOrder` Düğümü seçildiğinde, **çalışma** panel ve tasarım yüzeyine görüntülenir.
 
  ![XML şema Tasarımcısı içerik modeli görünümü](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
 
 ## <a name="workspace-panel"></a>Çalışma alanı paneli
 
- Düğümler için çalışma alanına ekledikten sonra düğüm listesi görünür **çalışma** içerik modeli görünümü panelini. Düğümler seçtiğinizde **çalışma** paneli, içerik modeli görünümü tasarım yüzeyine görünürler. Workpsace düğümleri silmek için XSD Designer araç kullanmak **çalışma** Masası bağlam menüsü veya DELETE anahtar.
+ Düğümler için çalışma alanına ekledikten sonra düğüm listesi görünür **çalışma** içerik modeli görünümü panelini. Düğümler seçtiğinizde **çalışma** paneli, içerik modeli görünümü tasarım yüzeyine görünürler. Çalışma alanından düğümleri silmek için XSD Designer araç kullanın **çalışma** Masası bağlam menüsü veya **silmek** anahtarı.
 
- Düğümler ekleme hakkında daha fazla bilgi için "Ekleme düğümler için çalışma alanı" bölümüne bakın [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md).
+ Düğümler ekleme hakkında daha fazla bilgi için "Ekleme düğümler için çalışma alanı" bölümüne bakın [XML şema Tasarımcısı çalışma alanı](../xml-tools/xml-schema-designer-workspace.md).
 
 ## <a name="design-surface"></a>Tasarım yüzeyi
 
- Çalışma Masası'ndaki bir düğümü seçildiğinde, düğümün ayrıntılarını görüntüleyebileceğiniz içerik modeli görünümü tasarım yüzeyine eklenir.
+ İçinde bir düğümü seçildiğinde **çalışma** paneli, düğümün ayrıntılarını görüntüleyebileceğiniz içerik modeli görünümü tasarım yüzeyine eklenir.
 
- Bir düğümün içerik modeli öğeleri ve özniteliklerinin ağaç düğümleri olarak görünen içeren genişletilebilir bir grafik ağacı temsil edilir. Varsayılan olarak, yalnızca bir düzey genişletilir. Compositors, tür adları, grupları ve diğer kapsayıcılar gibi diğer bilgileri öğeleri ve bunların içine öznitelikleri (genişletildiğinde) içinde dikey çubuk yerleştirilir. Dikey çubuk çift tıkladığınızda, yatay haline gelir ve ağaç daraltır. Yatay çubuk çift tıkladığınızda dikey haline gelir ve ağacını genişletir. Dikey çubuk seçilmesi tüm düğümleri kapsayıcısında seçer. Bir öğenin genişletilmiş veya daraltılmış Genişleticileri bir düğüme sağ tarafta görünür.
+ Bir düğümün içerik modeli öğeleri ve özniteliklerinin ağaç düğümleri olarak görünen içeren genişletilebilir bir grafik ağacı temsil edilir. Varsayılan olarak, yalnızca bir düzey genişletilir. Compositors, tür adları, grupları ve diğer kapsayıcılar gibi diğer bilgileri öğeleri ve bunların içine öznitelikleri (genişletildiğinde) içinde dikey çubuk yerleştirilir. Dikey çubuk çift tıkladığınızda, yatay haline gelir ve ağaç daraltır. Yatay çubuk çift tıkladığınızda dikey haline gelir ve ağacını genişletir. Tüm düğümleri, dikey çubuk seçerek kapsayıcısında seçer. Bir öğenin genişletilmiş veya daraltılmış Genişleticileri bir düğüme sağ tarafta görünür.
 
- Tasarım yüzeyine boş ise, XML Düzenleyicisi'ni, XML Şeması Gezgini ve filigran gösterilir. *Filigran* tüm XSD Tasarımcısı görünümleri bağlanan bir listesi verilmiştir. Şema kümesini hata varsa, aşağıdaki metni listesinin sonunda görüntülenir: "Görüntülemek ve kümesinde hataları düzeltmek için hata listesi kullanın."
+ Tasarım yüzeyine boşsa, XML Düzenleyicisi'ni **XML Şeması Explorer**, ve filigran gösterilir. *Filigran* tüm XSD Tasarımcısı görünümleri bağlanan bir listesi verilmiştir. Şema kümesini hata varsa, aşağıdaki metni listesinin sonunda görüntülenir: "Görüntülemek ve kümesinde hataları düzeltmek için hata listesi kullanın."
 
 ## <a name="breadcrumb-bar"></a>İçerik haritası çubuğu
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="context-menus"></a>Bağlam menüleri
 
- Tasarım yüzeyi veya çalışma panelinde bir öğeyi sağ tıklattığınızda, bağlam menüsü görüntülenir. Aşağıdaki tabloda, içerik modeli görünümü tasarım yüzeyi için kullanılabilir olan seçenekler açıklanmaktadır.
+ Tasarım yüzeyine bir öğeyi sağ veya **çalışma** panelinde, bir bağlam menüsü görüntülenir. Aşağıdaki tabloda, içerik modeli görünümü tasarım yüzeyi için kullanılabilir olan seçenekler açıklanmaktadır.
 
 |Seçenek|Açıklama|
 |------------|-----------------|
@@ -52,11 +52,11 @@ ms.lasthandoff: 04/26/2018
 |**Grafik görünümünde göster**|Grafik görünümü geçer.|
 |**Örnek XML oluştur**|Yalnızca genel öğeler için kullanılabilir. Bir genel öğesi için örnek bir XML dosyası oluşturur.|
 |**Belge Göster**|Gösterir veya gizler ek açıklama/belge düğümü içeriği.|
-|**Diyagram görüntü olarak dışarı aktar...**|Tasarım yüzeyine bir XPS dosyasına kaydeder.|
-|**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. XML şema Explorer'da seçili öğe ayrıca XML Düzenleyicisi'nde seçili olur.|
+|**Görüntü olarak dışarı aktarma diyagramı**|Tasarım yüzeyine bir XPS dosyasına kaydeder.|
+|**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. Seçili öğeyi **XML Şeması Explorer** XML Düzenleyicisi'nde da seçilir.|
 |**Özellik Penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|
 
- Aşağıdaki tabloda çalışma paneli kullanılabilir seçenekler açıklanmaktadır.
+ Aşağıdaki tabloda kullanılabilir seçenekler açıklanmaktadır **çalışma** paneli.
 
 |Seçenek|Açıklama|
 |------------|-----------------|
@@ -66,13 +66,13 @@ ms.lasthandoff: 04/26/2018
 |**Çalışma alanından kaldırın**|Çalışma alanı ve tasarım yüzeyine seçilen düğümleri kaldırır.|
 |**Çalışma alanından seçimi dışında tümünü Kaldır**|Çalışma alanı ve tasarım yüzeyine seçili olmadığında düğümlerini kaldırır.|
 |**Örnek XML oluştur**|Yalnızca genel öğeler için kullanılabilir. Bir genel öğesi için örnek bir XML dosyası oluşturur.|
-|**Tümünü Seç**|Tüm düğümleri çalışma panelinde seçer.|
-|**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. XML şema Explorer'da seçili öğe ayrıca XML Düzenleyicisi'nde seçili olur.|
+|**Tümünü Seç**|Tüm düğümlerin seçer **çalışma** paneli.|
+|**Görünümü Kodu**|Seçili düğümün XML Düzenleyicisi'nde içeren dosyayı açar. Seçili öğeyi **XML Şeması Explorer** XML Düzenleyicisi'nde da seçilir.|
 |**Özellik Penceresi**|Açılır **özellikleri** (Bu zaten açık değilse) penceresi. Bu pencere düğüm hakkındaki bilgileri görüntüler.|
 
-## <a name="properties-window"></a>Özellikler Penceresi
+## <a name="properties-window"></a>Özellik penceresi
 
- Başlangıçta açmak için bağlam menüsünü kullanın **özellikleri** penceresi. Varsayılan olarak, **özellikleri** penceresi Visual Studio'nun sağ alt köşesinde görüntülenir. İçerik modeli görünümünde işlenen bir düğümüne tıkladığınızda, bu düğüm özelliklerini görüntülenmesi **özellikleri** penceresi.
+ Başlangıçta açmak için bağlam menüsünü kullanın **özellikleri** penceresi. Varsayılan olarak, **özellikleri** penceresi Visual Studio'nun sağ alt köşesinde görüntülenir. İçerik modeli görünümünde işlenen bir düğümüne tıkladığınızda, bu düğüm özelliklerini görüntülenir **özellikleri** penceresi.
 
 ## <a name="xsd-designer-toolbar"></a>XSD tasarımcı araç çubuğu
 
@@ -82,17 +82,17 @@ ms.lasthandoff: 04/26/2018
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**Başlangıç görünümü göster**|Geçiş yapar [Başlat Görünüm](../xml-tools/start-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 1**.|
-|**İçerik modeli görünümü göster**|Geçiş yapar [içerik modeli Görünüm](../xml-tools/content-model-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 2**.|
-|**Grafik Görünümü Göster**|Geçiş yapar [grafik görünümü](../xml-tools/graph-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **CTRL + 3**.|
+|**Başlangıç görünümü göster**|Geçiş yapar [Başlat Görünüm](../xml-tools/start-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**1**.|
+|**İçerik modeli görünümü göster**|Geçiş yapar [içerik modeli Görünüm](../xml-tools/content-model-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**2**.|
+|**Grafik Görünümü Göster**|Geçiş yapar [grafik görünümü](../xml-tools/graph-view.md). Bu görünüm, klavye kısayolunu kullanarak erişilebilir: **Ctrl**+**3**.|
 |**Çalışma alanını temizleyin**|Çalışma alanı ve tasarım yüzeyine temizler.|
-|**Çalışma alanından kaldırın**|Çalışma alanı ve tasarım serface seçilen düğümleri kaldırır.|
-|**Çalışma alanından seçimi dışında tümünü Kaldır**|Çalışma alanı ve tasarım serface seçili olmadığında düğümlerini kaldırır.|
+|**Çalışma alanından kaldırın**|Çalışma alanı ve tasarım yüzeyine seçilen düğümleri kaldırır.|
+|**Çalışma alanından seçimi dışında tümünü Kaldır**|Çalışma alanı ve tasarım yüzeyine seçili olmadığında düğümlerini kaldırır.|
 |**Belge Göster**|Gösterir veya gizler ek açıklama/belge düğümü içeriği.|
 
 ## <a name="panscroll"></a>PAN/kaydırma
 
- Kaydırma çubukları kullanarak veya fare sürükleyip sırasında CTRL tuşunu basılı tutarak tasarım yüzeyine kaydırma yapabilirsiniz. ' I tıklatın ve sürükleyin kullanarak tasarım yüzeyi PAN imleci dört yönde çapraz dört oklar değiştirilir.
+ Kaydırma çubukları kullanarak veya tutarak tasarım yüzeyine kaydırabilirsiniz **Ctrl** anahtar'ı tıklatın ve fareyi sürükleyin. ' I tıklatın ve sürükleyin kullanarak tasarım yüzeyi PAN imleci dört yönde çapraz dört oklar değiştirir.
 
 ## <a name="undoredo"></a>Geri alma/yineleme
 
@@ -108,22 +108,22 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="zoom"></a>Yakınlaştır
 
- Yakınlaştırma bulunan içerik modeli görünümü alt sağ köşesindeki.
+ Yakınlaştırma içerik modeli görünümün sağ alt köşesinde kullanılabilir.
 
  Yakınlaştırma aşağıdaki yollarla denetlenebilir:
 
--   CTRL tuşunu basılı tutarak ve fare içerik modeli görünümü yüzeyini getirildiğinde fare tekerleği dönmesini.
+-   Tutarak **Ctrl** anahtar ve fare dönmesini Tekerlek fare içerik modeli görünümü yüzeyini getirildiğinde.
 
 -   Kaydırıcı denetimi kullanarak. Kaydırıcı geçerli yakınlaştırma düzeyini gösterir.
 
-Bu da, üzerine getirin seçtiğinizde veya CTRL yakınlaştırma için fare tekerleğinin ile kullanın yakınlaştırma kaydırıcıyı donuk; diğer tüm zamanlarda saydamdır.
+Bunu seçtiğinizde, üzerine getirin veya kullanmak yakınlaştırma kaydırıcıyı donuk **Ctrl** yakınlaştırma için fare tekerleğinin; her zaman saydamdır.
 
 ## <a name="xml-editor-integration"></a>XML Düzenleyicisi tümleştirme
 
- XSD Tasarımcısı ve XML düzenleyicisini arasında bağlam menüsünü kullanarak İleri ve geri geçebilirsiniz.
+ İleri ve geri arasında geçiş yapabilirsiniz **XSD Tasarımcısı** ve bağlam menüsünü kullanarak XML Düzenleyicisi'ni.
 
- XML Düzenleyicisi'nde ayarlamak şema değişiklik yaparsanız, değişiklikleri içerik modeli görünümünde eşitlenir. Daha fazla bilgi için bkz: [tümleştirme XML Düzenleyicisi ile](../xml-tools/integration-with-xml-editor.md).
+ XML Düzenleyicisi'nde ayarlamak şema değişiklik yaparsanız, değişiklikleri içerik modeli görünümünde eşitlenir. Daha fazla bilgi için bkz: [XML Düzenleyicisi ile tümleştirme](../xml-tools/integration-with-xml-editor.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Şema Tasarımcısı Çalışma Alanı](../xml-tools/xml-schema-designer-workspace.md)

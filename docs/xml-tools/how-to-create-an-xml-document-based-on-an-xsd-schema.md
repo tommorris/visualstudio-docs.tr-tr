@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec095bd3228eb2291f77bf9fadceb0b74d8a37
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Nasıl yapılır: bir XSD şemasını temel alan bir XML belgesi oluşturma
 
@@ -46,7 +46,7 @@ Ayrıca, unutmayın `xs:base64Binary` içeriği yalnızca numaralandırma türü
 
 2.  İçinde [XML Şeması Explorer](../xml-tools/xml-schema-explorer.md), sağ `PurchaseOrder` genel öğesi. Seçin **örnek XML oluşturmak**.
 
-     Bu seçeneği seçtiğinizde, aşağıdaki örnek XML içeriği PurchaseOrder.xml dosyasıyla oluşturulur ve XML Düzenleyicisi'nde açılır:
+     Bu seçenek, PurchaseOrder seçtiğinizde. *xml* dosya aşağıdaki örnek XML içeriği ile oluşturulan ve XML Düzenleyicisi'nde açılır:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -75,6 +75,6 @@ Ayrıca, unutmayın `xs:base64Binary` içeriği yalnızca numaralandırma türü
     </PurchaseOrder>
     ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [XML Verileriyle Çalışma](../xml-tools/working-with-xml-data.md)
+- [XML verileri ile çalışma](../xml-tools/working-with-xml-data.md)

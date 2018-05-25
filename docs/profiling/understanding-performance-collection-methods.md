@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5a584402473d9576376d6357dd67e6c47f391c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="understanding-performance-collection-methods"></a>Performans koleksiyon yöntemleri anlama
+# <a name="understand-performance-collection-methods"></a>Performans koleksiyon yöntemleri anlama
 
 Profil oluşturma Visual Studio Araçları performans verilerini toplamak için kullanabileceğiniz beş yöntemleri sağlar. Bu konuda farklı yöntemleri açıklar ve belirli bir yöntem ile veri toplama uygun olabilir bazı senaryolar önerir.
 
@@ -36,7 +36,7 @@ Profil oluşturma Visual Studio Araçları performans verilerini toplamak için 
 
 Bazı profil oluşturma yöntemlerini kullanarak, yazılım ve donanım performans sayaçları gibi ek verilerini de toplayabilirsiniz. Daha fazla bilgi için bkz: [ek performans verileri toplama](../profiling/collecting-additional-performance-data.md).
 
-## <a name="sampling"></a> Örnekleme
+## <a name="sampling"></a>Örnekleme
 
 Örnekleme profili oluşturma yöntemi, profil çalıştırılması sırasında bir uygulama tarafından gerçekleştirilen iş hakkında istatistiksel veriler toplar. Örnekleme yöntemi basit ve uygulama yöntemlerini yürütülmesi üzerinde çok az etkisi yoktur.
 
@@ -53,9 +53,9 @@ Varsayılan olarak, profil oluşturucu örnekleme aralığı için CPU döngüle
 
 [Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)
 
-[Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)
+[Örnek yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)
 
-## <a name="instrumentation"></a> İzleme
+## <a name="instrumentation"></a>İzleme
 
 İzleme profili oluşturma yöntemi, bir profili uygulamasında işlev çağrıları için ayrıntılı zamanlama toplar. Profil oluşturma araçları aşağıdakiler için yararlıdır:
 
@@ -78,9 +78,9 @@ Varsayılan olarak, profil oluşturucu örnekleme aralığı için CPU döngüle
 
 [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)
 
-[İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)
+[İzleme yöntemi veri görünümleri](../profiling/instrumentation-method-data-views.md)
 
-## <a name="concurrency"></a> Eşzamanlılık
+## <a name="concurrency"></a>Eşzamanlılık
 
 Eşzamanlılık profili oluşturma, birden çok iş parçacıklı uygulamalar hakkında bilgi toplar. Paylaşılan bir kaynağa erişim beklemek için bu rekabeti iş parçacıklarının her zaman ayrıntılı çağrı yığını bilgileri toplar profil kaynak çekişmesini zorlandı. Eşzamanlılık görselleştirme ayrıca birden çok iş parçacıklı uygulamanızın kendisini, donanım, işletim sistemi ve diğer işlemleri ana bilgisayar ile nasıl etkileşim kurduğu hakkında daha fazla genel bilgi toplar:
 
@@ -92,11 +92,11 @@ Eşzamanlılık profili oluşturma, birden çok iş parçacıklı uygulamalar ha
 
 [İş parçacığı ve işlem eşzamanlılık verileri toplama](../profiling/collecting-thread-and-process-concurrency-data.md)
 
-[Kaynak Çakışması Veri Görünümleri](../profiling/resource-contention-data-views.md)
+[Kaynak çakışması veri görünümleri](../profiling/resource-contention-data-views.md)
 
 [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)
 
-## <a name="net_memory"></a> .NET bellek
+## <a name="net-memory"></a>.NET bellek
 
 .NET bellek ayırma profil oluşturma yöntemi, bir .NET Framework nesnesinin profili uygulamadaki her ayırma bilgisayar işlemci kesintiye uğratır. Nesne yaşam verisi ayrıca toplandığında, profil oluşturucu işlemci her .NET Framework atık toplama sonra kesintiye uğratır.
 
@@ -112,25 +112,25 @@ Profil Oluşturucu türü, boyut ve bir ayırma oluşturulan ya da bir atık top
 
 - .NET bellek profili oluşturma araçları modunda çalıştırdığınızda, birlikte (bunlar dahil) ve özel ayırma değerleri ayrıntılı zamanlama bilgileri toplanır.
 
-[Bellek ayırma ve nesne yaşam verisi değerlerini anlama](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
+[Bellek ayırma ve nesne yaşam süresi veri değerlerini anlama](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
 
 [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
 [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)
 
-## <a name="tier_interaction"></a> Katman etkileşimli
+## <a name="tier-interaction"></a>Katman etkileşimli
 
 Katman etkileşimli profil oluşturma ekler bilgi zaman uyumlu hakkında bir profil oluşturma veri dosyası [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] arasında çağıran bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sayfa veya başka bir uygulama ve [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanı. Veri sayısı ve zaman çağrılarının ve maksimum ve minimum içerir. Katman etkileşimli veri örnekleme, izleme, .NET bellek veya eşzamanlılık yöntemleri ile toplanan verileri profil için eklenebilir.
 
-![Katman etkileşimli profil oluşturma veri](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Katman etkileşim profil verileri](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 Profil oluşturma araçları tarafından toplanan katman etkileşim verileri
 
 [Katman etkileşim verileri toplama](../profiling/collecting-tier-interaction-data.md)
 
-[Katman Etkileşimi Görünümleri](../profiling/tier-interaction-views.md)
+[Etkileşim görünümleri](../profiling/tier-interaction-views.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: bir Web sitesi için performans verilerini topla](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Nasıl yapılır: bir web sitesi için performans verileri toplama](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
 [Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)

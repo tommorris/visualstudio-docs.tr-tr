@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a7d850f8045ce70166bec3324470abaf61b6de
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="editing-xslt-style-sheets"></a>XSLT stil sayfalarını düzenleme
+# <a name="edit-xslt-style-sheets"></a>XSLT stil sayfalarını düzenleme
 
 XML Düzenleyicisi'ni XSLT stil sayfaları düzenlemek için de kullanılabilir. Anahat oluşturma, IntelliSense, XML parçacıkları gibi Düzenleyicisi özellikleri varsayılan yararlanmak ve benzeri. Ayrıca, ayrıca geliştirmek XSLT kolaylaştıran yeni özellikler vardır.
 
@@ -29,7 +29,7 @@ XML Düzenleyicisi'ni XSLT stil sayfaları düzenlemek için de kullanılabilir.
 
  **Dalgalı alt çizgiler**
 
- XML Düzenleyicisi'ni XSLT stil sayfaları doğrulamak için yüklü xslt.xsd dosyasını kullanır. Doğrulama hataları Mavi dalgalı alt çizgiler gösterilir. XML Düzenleyicisi'ni de stil sayfası arka plan ve raporları derleyici hataları ya da uygun dalgalı alt çizgiler uyarılarla derler.
+ XML Düzenleyicisi'ni yüklü kullanan *xslt.xsd* XSLT stil sayfaları doğrulamak için dosya. Doğrulama hataları Mavi dalgalı alt çizgiler gösterilir. XML Düzenleyicisi'ni de stil sayfası arka plan ve raporları derleyici hataları ya da uygun dalgalı alt çizgiler uyarılarla derler.
 
  **Komut dosyası blokları desteği**
 
@@ -43,6 +43,6 @@ XML Düzenleyicisi'ni XSLT stil sayfaları düzenlemek için de kullanılabilir.
 
  XSLT hata ayıklayıcı XSLT dosyasından XML Düzenleyicisi'nde başlatabilirsiniz. Hata ayıklayıcı XSLT dosyası, görüntüleme XSLT yürütme durumu ve benzeri ayarı kesme noktalarını destekler. Değişkenin değerini içeren bir araç ipucunu oluşturan bir XSLT değişkeninden bekleyerek getirir. Hata ayıklayıcı bir stil sayfası hata ayıklama veya başka bir uygulamadan çağrılan derlenmiş bir XSL dönüşümü hata ayıklamak için kullanılabilir. Daha fazla bilgi için bkz: [hata ayıklama XSLT](../xml-tools/debugging-xslt.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)

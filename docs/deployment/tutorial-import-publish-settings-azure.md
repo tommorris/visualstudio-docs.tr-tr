@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -37,7 +37,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio yüklü olmalıdır ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
+* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
 
     Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
 
@@ -92,21 +92,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Visual Studio'da yayımlama ayarlarını içeri aktarın ve dağıtın
 
-1. Visual Studio'da açın ASP.NET projesi olduğu bilgisayarda, Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**.
-
-1. Tüm yayımlama profillerini daha önce yapılandırdıysanız **Yayımla** bölmesinde görünür. Tıklatın **yeni profil oluşturmak**.
-
-1. İçinde **yayımlama hedefi çekme** iletişim kutusu, tıklatın **profilini içeri aktarma**.
-
-    ![Seçin yayımlama](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Önceki bölümde oluşturduğunuz yayımlama ayarları dosyası konumuna gidin.
-
-1. İçinde **alma yayımlama ayarları dosyası** iletişim kutusunda, önceki bölümde oluşturduğunuz profili seçin ve tıklayın **açık**.
-
-1. İki alınan profillerinden birini seçin ve tıklayın **Yayımla**.
-
-    Visual Studio dağıtım işlemi başlar ve çıktı penceresi ilerleme durumunu ve sonuçlarını gösterir.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

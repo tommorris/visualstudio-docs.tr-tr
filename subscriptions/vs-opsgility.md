@@ -9,11 +9,11 @@ description: Visual Studio abonelik sekected ile dahil avantajı eğitim Opsgili
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Opsgility avantajı
 
@@ -52,8 +52,6 @@ Seçili Visual Studio abonelikleri isteğe bağlı eğitim erişimin bir yıl ve
 Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Yardım Opsgility mı gerekiyor?  Bu kaynaklara gözatın:
-    - [SSS](https://www.opsgility.com/Home/FAQ)
-    - Bir destek bileti aracılığıyla gönderme [bize](https://www.opsgility.com/SupportTicket) sayfası. 
+-  Yardım Opsgility mı gerekiyor?  Bir destek bileti aracılığıyla gönderme [bize](https://www.opsgility.com/SupportTicket) sayfası. 
 -  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b372d3d76153b5f5c885a6987d898cf55254b413
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımı analiz
 Uygulamanızda performans sorunları araştırmak gerektiğinde başlatmak için uygun bir yerdir nasıl CPU kullandığı anlamaktır. **CPU kullanımı** aracı gösterir, CPU Visual C++, Visual C# yürütme süresi yeri harcıyorsa / Visual Basic ve JavaScript kodu. Visual Studio 2015 güncelleştirme 1'de başlayarak, hata ayıklayıcı ayrılmadan CPU kullanımı işlevi başına dökümünü görebilirsiniz. Hata ayıklama sırasında CPU açma ve kapatma profil açın ve yürütme, örneğin bir kesme noktasında durdurulduğunda sonuçları görüntüleyin.  
@@ -72,7 +72,7 @@ Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme göste
 |![Adım 4](../profiling/media/procguid_4.png "ProcGuid_4")|Bir yöntemin alt düğümleri yalnızca üst yöntemi çağrıları verilerini içerir. Zaman **Göster harici kod** olan devre dışı, uygulama yöntemlerini de içerebilir bir **[dış kodu]** düğümü.|  
   
 ####  <a name="BKMK_External_Code"></a> Harici kod  
- Harici kod olan sistem ve framework bileşenleri işlevlerde yazdığınız kodu tarafından yürütülür. Harici kod başlatın ve uygulamayı durdurun, UI çizin, iş parçacığı oluşturma denetleyen ve diğer alt düzey uygulama hizmetleri sağlamak işlevler içerir. Çoğu durumda, dış kodda ilgilenen olmayacak ve bu nedenle CPU kullanımı çağırın ağaç toplar kullanıcı yönteminin dış işlevler birine **[dış kodu]** düğümü.  
+ Yazdığınız kodu tarafından gerçekleştirilen sistem ve framework bileşenleri işlevlerde dış kodu var. Harici kod başlatın ve uygulamayı durdurun, UI çizin, iş parçacığı oluşturma denetleyen ve diğer alt düzey uygulama hizmetleri sağlamak işlevler içerir. Çoğu durumda, dış kodda ilgilenen olmayacak ve bu nedenle CPU kullanımı çağırın ağaç toplar kullanıcı yönteminin dış işlevler birine **[dış kodu]** düğümü.  
   
  Harici kod çağrısı yollarını görüntülemek istediğinizde, belirleyin **Göster harici kod** gelen **filtre görünümü** listeleyin ve ardından **Uygula**.  
   
@@ -93,7 +93,7 @@ Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme göste
 |**Toplam CPU (%)**|![Toplam % veri eşitlik](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Uygulamanın CPU etkinlik işlev ve işlev tarafından çağrılan işlev çağrıları tarafından kullanılan seçili zaman aralığı içinde yüzdesi. Bu farklı olduğuna dikkat edin **CPU kullanımı** bir zaman aralığı için toplam kullanılabilir CPU kapasitesini uygulamada yapılan toplam etkinliği karşılaştırır zaman çizelgesi grafik.|  
 |**Kendi kendini CPU (%)**|![Kendi kendine % eşitlik](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> İşlev çağrıları tarafından kullanılan seçili zaman aralığı uygulamanın CPU etkinliğinde yüzdesi, işlevleri etkinliğini hariç işlev tarafından çağrılır.|  
 |**Toplam CPU (ms)**|Seçili zaman aralığı içinde işlev ve işlev tarafından adı veriliyordu işlev çağrılarında milisaniye sayısını harcanan.|  
-|**Kendi kendini CPU (ms)**|Seçili zaman aralığı içinde işlev ve işlev tarafından adı veriliyordu işlev çağrılarında milisaniye sayısını harcanan.|  
+|**Kendi kendini CPU (ms)**|Seçili zaman aralığı işlevinde ve işlevleri işlev tarafından çağrılan etkinliğini hariç işlev tarafından çağrılan işlev çağrılarında milisaniye sayısını harcanan.|  
 |**Modülü**|İşlev veya işlevleri [dış kodu] düğümünde içeren modüllerin sayısını içeren modülü adı.|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU kullanımı zaman uyumsuz işlevlerde çağrı ağacı  

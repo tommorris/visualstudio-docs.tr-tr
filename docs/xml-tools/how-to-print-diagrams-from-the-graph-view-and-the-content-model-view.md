@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bdcada913b926b27ccffdf1d7c0a6b2488ead8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dcb65958f7b339338b99495646bab57bd77af054
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Nasıl yapılır: grafik görünümü ve içerik modeli görünüm diyagramlarını yazdırma
+# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Nasıl yapılır: grafik görünümü ve içerik modeli görünümü diyagramlarını yazdırma
 
 Bu konu, grafik görünümü veya içerik modeli görünümü, XML şema Tasarımcısı diyagram yazdırma açıklar.
 
@@ -24,14 +24,14 @@ Bu konu, grafik görünümü veya içerik modeli görünümü, XML şema Tasarı
 
 1.  Visual Studio'da bir XSD dosyası açın ve bazı düğüm ekleme [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Diyagram kullanarak bir XPS dosyasına dışarı **diyagramı görüntü olarak dışarı aktar...**  grafik görünümü veya içerik modeli görünümü bağlam menüsü öğesini tasarım yüzeyine içinde.
+2.  Diyagram kullanarak bir XPS dosyasına dışarı **görüntü olarak dışarı aktarma diyagramı** grafik görünümü veya içerik modeli görünümü bağlam menüsü öğesini tasarım yüzeyine içinde.
 
      Bir diyagram Grafik görünümden dışa aktardığınızda, tüm tasarım yüzeyine XPS dosyasına dışarı aktarılır. İçerik modeli görünümünden bir diyagram dışarı aktarma ve birden fazla düğüm içerik modeli görünümün tasarım yüzeyine görüntülendiğinde yalnızca ilk düğümü XPS dosyasına dışarı aktarılır.
 
 3.  XPS dosyasında kaydedilen resmi bir XPS Görüntüleyicisi'ni kullanarak yazdırma.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Graf Görünümü](../xml-tools/graph-view.md)
 - [İçerik Modeli Görünümü](../xml-tools/content-model-view.md)
-- [XML Şema Tasarımcısı Çalışma Alanı](../xml-tools/xml-schema-designer-workspace.md)
+- [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md)

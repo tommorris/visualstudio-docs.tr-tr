@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Bağlam menüleri (XML Şeması Gezgini)
 
 Aşağıdaki bağlam menüsü öğelerine, şema özgü arar ve diğer işlemleri gerçekleştirmek için kullanılır.
 
-## <a name="node-type-schema-set"></a>Düğüm türü: Şema ayarlama
+## <a name="node-type-schema-set"></a>Düğüm türü: şema ayarlayın
 
 Aşağıdaki tabloda bir şema düğüm kümesi için kullanılabilen seçenekler açıklanmaktadır.
 
@@ -95,7 +95,7 @@ Aşağıdaki tabloda bir şema düğüm kümesi için kullanılabilen seçenekle
 |**Orijinal özniteliği gidin**|Öznitelik başvurular için öznitelik gerçek tanımına gider.|
 |**Tüm başvuruları göster**|Genel öznitelikler için bulur ve tüm başvuruları vurgular (sahip diğer öznitelikleri `ref="selectedAttribute"`) seçili öznitelik için.|
 
-## <a name="node-type-attribute-group"></a>Düğüm türü: Öznitelik grubu
+## <a name="node-type-attribute-group"></a>Düğüm türü: öznitelik grubu
  Yukarıda açıklanan genel düğüm seçeneklerin yanı sıra, öznitelik grubu düğümleri için bağlam menüsünde aşağıdaki seçenekler vardır:
 
 |Seçenek|Açıklama|
@@ -104,7 +104,7 @@ Aşağıdaki tabloda bir şema düğüm kümesi için kullanılabilen seçenekle
 |**Tüm üyeleri Göster**|Bulur ve öznitelik grubun tüm üyelerini vurgular.|
 |**Tüm başvuruları göster**|Bulur ve tüm başvuruları vurgular (özniteliği olan grupları `ref="selectedAttributeGroup"`) seçili öznitelik grubu için.|
 
-## <a name="node-type-named-group"></a>Düğüm türü: Adlandırılmış grubu
+## <a name="node-type-named-group"></a>Düğüm türü: Grup adı
  Yukarıda açıklanan genel düğüm seçeneklerin yanı sıra, adlandırılmış Grup düğümleri için bağlam menüsünde aşağıdaki seçenekler vardır:
 
 |Seçenek|Açıklama|
@@ -113,7 +113,7 @@ Aşağıdaki tabloda bir şema düğüm kümesi için kullanılabilen seçenekle
 |**Tüm üyeleri Göster**|Bulur ve adlandırılmış grubun tüm üyelerini vurgular.|
 |**Tüm başvuruları göster**|Bulur ve tüm başvuruları vurgular (olan grupları `ref="selectedGroup"`) seçilen gruba.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Şema Gezgini](../xml-tools/xml-schema-explorer.md)
-- [Şema Kümesini Arama](../xml-tools/searching-the-schema-set.md)
+- [Şema kümesini arama](../xml-tools/searching-the-schema-set.md)

@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: fc9df99b2d3cf28f5c548f1b794ad3f565f4d8b7
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Gelişmiş Ayarlar iletişim kutusu (eşzamanlılık görselleştiricisi)
 Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselleştirici izlemeleri nasıl toplanır denetleyebilirsiniz.  İletişim kutusu sembolleri, sadece kendi kodumu, arabelleğe alma, filtreleme, CLR olayları, işaretçileri, sağlayıcıları ve dosyaları için sekme bulunur.  
@@ -54,12 +54,12 @@ Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselle�
  Dosya g/ç olayları geçerli işlem adına diske erişimleri temsil eder.  Dosya g/ç olayları devre dışı bırakırsanız, izleme boyutunu azalır, ancak iş parçacıkları görünümü herhangi bir bilgi disk kanalları ya da Disk işlemleri hakkında bildirmez.  
   
 ## <a name="markers"></a>İşaretçileri  
- İşaretçileri sekmesinde eşzamanlılık görselleştiricisi işaretleyici olarak gösterilen ETW sağlayıcılar kümesini yapılandırabilirsiniz.  Ayrıca işaretleyici koleksiyonu önem düzeyini ve ETW kategorisine göre filtreleyebilirsiniz.  Kullanıyorsanız [eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md) ve böylece iş parçacıkları görünümünde görünür kendi işaret sağlayıcısını kullanarak, bunu burada kaydedebilirsiniz.  
+ Üzerinde **işaretçileri** sekmesinde eşzamanlılık görselleştiricisi işaretleyici olarak gösterilen ETW sağlayıcılar kümesini yapılandırabilirsiniz.  Ayrıca işaretleyici koleksiyonu önem düzeyini ve ETW kategorisine göre filtreleyebilirsiniz.  Kullanıyorsanız [eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md) ve böylece iş parçacıkları görünümünde görünür kendi işaret sağlayıcısını kullanarak, bunu burada kaydedebilirsiniz.  
   
 ### <a name="adding-a-new-provider"></a>Yeni bir sağlayıcı ekleme  
  Kodunuzu kullanıyorsa [eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md) veya izleyin ETW olayları oluşturur <xref:System.Diagnostics.Tracing.EventSource> kuralı, görüntüleyebilirsiniz bu olayları eşzamanlılık görselleştiricisi bu iletişim kutusunda kaydederek.  
   
- Ad alanında sağlayıcı tarafından oluşturulan olaylar türlerini açıklayan bir ad girin.  GUID alanına bu sağlayıcıyla ilişkili GUID girin. (Bir GUID her ETW sağlayıcı ile ilişkilidir.)  
+ İçinde **adı** alanında, sağlayıcı tarafından oluşturulan olaylar türlerini açıklayan bir ad girin.  İçinde **GUID** alan, bu sağlayıcıyla ilişkili GUID girin. (Bir GUID her ETW sağlayıcı ile ilişkilidir.)  
   
  İsteğe bağlı olarak, kategori veya önem düzeyi temelinde bu sağlayıcı olayları filtrelemek belirtebilirsiniz.  Kategori kullanabilirsiniz filtrelemek için alan eşzamanlılık görselleştiricisi SDK kategorisine bağlı.  Bunu yapmak için virgülle ayrılmış bir dize kategorilerinin veya kategorileri aralıklarını girin.  Bu olayların kategorilerini göstermek için geçerli sağlayıcıda belirtir.  Ekliyorsanız bir <xref:System.Diagnostics.Tracing.EventSource> sağlayıcısı ETW anahtar sözcüğe göre filtre uygulamak için kategori alanı kullanabilir.  Anahtar sözcüğü bir bit maskesi olduğundan, virgülle ayrılmış bir dize tamsayıların hangi bit maskesi kümesini belirlemek için kullanabilirsiniz. Örneğin, "1,2" ilk ve ikinci BITS ayarlar ve bu ondalık 6 dönüşür.  
   
@@ -86,4 +86,4 @@ Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselle�
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Yalnızca kendi kodum](../profiling/just-my-code-threads-view.md)   
- [Eşzamanlılık Görselleştiricisi İşaretleyicileri](../profiling/concurrency-visualizer-markers.md)
+ [Eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md)

@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 **Araçlar > Seçenekler > hata ayıklama > Genel** sayfasında aşağıdaki seçenekleri ayarlamanıza olanak tanır:  
@@ -94,11 +94,11 @@ Kaynak dosyaları SrcSrv uygulayan kaynak sunuculardan almak için Visual Studio
 - **Kaynak sunucu için kısmi güven derlemeleri (sadece yönetilen) izin ver**  
     Kaynak sunucu desteği etkinleştirildiğinde, bu ayar kaynakları için kısmi güven derlemeleri almadığınızdan varsayılan davranışı geçersiz kılar.  
 
-- **Kaynak bağlantı desteğini etkinleştir**  
+**Kaynak bağlantısı desteğini etkinleştir**  
     Kaynak dosyalarını kaynağı bağlantı bilgilerini içeren .pdb dosyaları indirmek için Visual Studio hata ayıklayıcısı söyler. Kaynak bağlantısı hakkında daha fazla bilgi için bkz: [kaynak bağlantı belirtimi](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
-    >  Kaynak bağlantısı http veya https kullanarak dosyaları indirir çünkü .pdb dosyasını güvendiğinizden emin olun.  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **Kesme noktaları ve geçerli deyimi (C++ yalnızca) için tüm satırı vurgulayın**  
 Hata ayıklayıcı bir kesme noktası ya da geçerli deyimi vurgular, tüm satırı vurgular.  

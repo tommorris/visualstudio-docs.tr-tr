@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="vsperf"></a>VSPerf
 Kullanım **VsPerf** komut satırı aracı:  
@@ -25,16 +25,7 @@ Kullanım **VsPerf** komut satırı aracı:
   
  Profil oluşturma seçenekleriniz hakkında daha fazla bilgi için bkz: [Windows 8 ve Windows Server 2012 uygulamaların performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
- Bu konu ile kullanabileceğiniz seçenekleri açıklar `vsperf.exe` komut satırı aracı. Konu aşağıdaki bölümleri içerir:  
-  
- [Yalnızca UWP uygulamaları](#BKMK_windows_store_apps_only)  
-  
- [Windows 8 Masaüstü uygulamaları ve yalnızca Windows Server 2012 uygulamaları](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [Tüm uygulamalar](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> Yalnızca UWP uygulamaları  
+## <a name="uwp-apps-only"></a>Yalnızca UWP uygulamaları  
  Bu seçenekler yalnızca UWP uygulamalar için geçerlidir.  
   
 |||  
@@ -45,7 +36,7 @@ Kullanım **VsPerf** komut satırı aracı:
 |**/noclr**|İsteğe bağlı. CLR veri toplamaz.<br /><br /> Yalnızca /package ile kullanım veya / ekleyin.<br /><br /> En iyi duruma getirme, yönetilen simge çözer.|  
 |**/listapps**|Uygulama adları ve PackageFullNames yüklü listele.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8 Masaüstü uygulamaları ve yalnızca Windows Server 2012 uygulamaları  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Windows 8 Masaüstü uygulamaları ve yalnızca Windows Server 2012 uygulamaları  
  Bu seçenekler, UWP uygulamaları çalışmaz.  
   
 |||  
@@ -54,7 +45,7 @@ Kullanım **VsPerf** komut satırı aracı:
 |**/args: {ExecutableArguments}**|Geçirilecek komut satırı bağımsız değişkenlerini belirtir **/başlatma** hedef.|  
 |**/ Console**|Çalıştırır **/başlatma** yeni bir komut penceresinde hedef.|  
   
-##  <a name="BKMK_All_applications"></a> Tüm uygulamalar  
+## <a name="all-applications"></a>Tüm uygulamalar  
  Bu seçenek, herhangi bir Windows 8 veya Windows Server 2012 uygulama için geçerlidir.  
   
 |||  

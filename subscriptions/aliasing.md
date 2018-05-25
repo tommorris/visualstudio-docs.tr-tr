@@ -9,11 +9,11 @@ description: Diğer adlar veya kolay adlar kullanılıyorsa, oturum açma başar
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikler için oturum açma diğer adlar kullanırken başarısız olabilir
 
@@ -48,25 +48,26 @@ Lütfen bir dizin hesabı ile yeni bir abonelik eklemek için aşağıdaki adım
 1. Ziyaret [Toplu Lisans Hizmet Merkezi](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) ve oturum açın.
 2. VLSC yönetim sayfasından tıklatın **abonelikleri** ve ardından **Visual Studio abonelikleri**.
 
-    ![Abonelikleri menüsü](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. Tıklatın **anlaşma numarası** Visual Studio abonelikle ilişkili.
 
-    ![Anlaşma Seç](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
 4. Tıklatın **atamak abonelik**.
 
-    ![Abonelik atayın](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. İstenen seçin **abonelik düzeyinde**.
 
-    ![Abonelik düzeyi](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. Doğrulama atayın ve kullanılabilir abonelikler sahip **sonraki**.
 7.  E-posta adresi alanı abone ayrıntıları ve dizin adresi girip'ı tıklatın **sonraki**.
 
-    ![E-posta Adresi](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. Abone bilgisi doğrulamak ve tıklatın **son**.
 
 9. Aboneliğini kullanarak sağlanmış abone bildir aşağıda [şablon](#notifying-your-subscribers-with-directory-addresses).
@@ -96,7 +97,7 @@ Lütfen izleyin sahip bir dizin hesabı var olan aboneyi güncelleştirmek için
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>Dizin adresleriyle abonelerinizin bildirme
 Hoş Geldiniz e-posta, abone başarılı bir şekilde ulaşmaz olduğundan, Lütfen kopyalama ve yapıştırma bir e-posta ve gönderme, aboneye iletisine aşağıda. Her abonelik için uygun bilgilerle WORD % değiştirin.
 
------------ Copy Below (Ctrl+C) -----------
+---Kopyalama aşağıdaki (Ctrl + C)---
 
 Merhaba % abone adı %
 
@@ -141,7 +142,7 @@ Bir abonelik için abonelik atandıktan sonra bunları ziyaret etmek isteyen bir
 
 Yukarıda özetlenen senaryoda, abone bir "Hoş Geldiniz e-posta" alırsınız, ancak yumuşatma nedeniyle oturum açamıyor buldukları.  Kullanabileceğiniz altındaki metin, yukarıdaki adımları abonesi bilgilendirin ve gerekirse destek seçenekleri öneririz.  Her abonelik için uygun bilgilerle WORD % değiştirin.
 
------------ Copy Below (Ctrl+C) -----------
+---Kopyalama aşağıdaki (Ctrl + C)---
 
 Merhaba % abone adı %
 

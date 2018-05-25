@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2bb1bcc13ad908b69a847662178cd6cd13aeec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 650478a92ea2dabc9aeef239a68bdff428429cd7
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Nasıl yapılır: içerik modeli içerik modeli görünümü kullanarak düğümler, İnceleme
 
@@ -26,7 +26,7 @@ Bu konu, kullanarak düğümleriniz keşfetmek açıklar [içerik modeli görün
 
 2.  Tıklatın **görüntülemek ve temel alınan XML şema dosyasını düzenlemek için XML Düzenleyicisi'ni kullanma** Başlat görünüm.
 
-3.  XML Şeması örnek kodunu kopyalama [örnek XML şeması: satın alma siparişi şeması](../xml-tools/sample-xsd-file-purchase-order-schema.md) ve yeni XSD dosyası varsayılan olarak eklenen kodu değiştirmek için yapıştırın.
+3.  XML Şeması örnek kodunu kopyalama [örnek XML şeması: Satınalma siparişi şeması](../xml-tools/sample-xsd-file-purchase-order-schema.md) ve yeni XSD dosyası varsayılan olarak eklenen kodu değiştirmek için yapıştırın.
 
 4.  Seçin `purchaseOrder` sağ tıklanarak şema Gezgini'nde öğe `purchaseOrder` öğesi XML Düzenleyicisi'ni seçerek **Göster XML Explorer'da**.
 

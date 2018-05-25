@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak IIS uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -38,13 +38,11 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio yüklü olmalıdır ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
+* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
 
     Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
 
-    Bu makaledeki adımlarda Visual Studio 2017 üzerinde temel alır
-
-* IIS yayımlama ayarları dosyası oluşturmak için doğru yapılandırılmış IIS 8.0 Web sunucusu rolü Windows Server 2012 çalıştıran bir bilgisayar ve ASP.NET 4.5 veya ASP.NET Core yüklenmiş olmalıdır. ASP.NET Core için bkz: [IIS yayımlama](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Yayımlama ayarları dosyası, IIS'den oluşturmak için Windows Server 2012 veya Windows Server 2016 çalıştıran bir bilgisayar olması gerekir ve doğru yapılandırılmış bir IIS Web sunucusu rolü bulunmalıdır. ASP.NET 4.5 veya ASP.NET Core ayrıca yüklenmesi gerekir. ASP.NET Core için bkz: [IIS yayımlama](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio'da yeni bir ASP.NET projesi oluşturma
 
@@ -68,62 +66,13 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Windows Server'da IIS'de yayımlama ayarları dosyası oluşturma
 
-1. IIS, sağ **varsayılan Web sitesi**, seçin **dağıtma** > **yapılandırma Web dağıtımı yayımlama**.
-
-    ![Web dağıtımı yapılandırma yapılandırma](../deployment/media/tutorial-configure-web-deploy-publishing.png)
-
-1. İçinde **yapılandırma Web dağıtımı yayımlama** iletişim kutusunda, ayarları inceleyin.
-
-1. Tıklatın **Kurulum**.
-
-    İçinde **sonuçları** paneli, erişim haklarını çıktısında verildi belirtilen kullanıcı ve, bir dosya bir *.publishsettings* dosya uzantısı, gösterilen konumda oluşturuldu iletişim kutusu.
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <publishData>
-      <publishProfile
-        publishUrl="https://myhostname:8172/msdeploy.axd"
-        msdeploySite="Default Web Site"
-        destinationAppUrl="http://myhostname:80/"
-        mySQLDBConnectionString=""
-        SQLServerDBConnectionString=""
-        profileName="Default Settings"
-        publishMethod="MSDeploy"
-        userName="myhostname\myusername" />
-    </publishData>
-    ```
-
-    Windows Server ve IIS yapılandırmasına bağlı olarak farklı değerler görürsünüz. Birkaç ayrıntılarını gördüğünüz değerleri şunlardır:
-
-    * *Msdeploy.axd* başvurulan dosya `publishUrl` dinamik olarak oluşturulan HTTP işleyicisi için bir dosya Web dağıtımı bir özniteliktir. (Test amacıyla, `http://myhostname:8172` genellikle de çalışır.)
-    * `publishUrl` Bağlantı noktası için Web dağıtımı için varsayılan olmayan bağlantı noktası 8172, genellikle ayarlanır.
-    * `destinationAppUrl` Bağlantı noktası, IIS için varsayılan bağlantı noktası 80, genellikle ayarlanır.
-    * Visual Studio'da (daha sonraki adımlarda) konak adını kullanarak uzak ana bilgisayara bağlanmak erişemiyorsanız ana bilgisayar adı yerine IP adresi sınayın.
-
-    > [!NOTE]
-    > Bir Azure VM'de çalışan IIS yayımlıyorsa, Web dağıtımı ve IIS bağlantı noktalarının ağ güvenlik grubu listesinde açılması gerekir. Ayrıntılı bilgi için bkz: [yükleme ve çalıştırma IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
-
-1. Bu dosyayı Visual Studio çalıştırdığınız bilgisayara kopyalayın.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Visual Studio'da yayımlama ayarlarını içeri aktarın ve dağıtın
 
-1. Visual Studio'da açın ASP.NET projesi olduğu bilgisayarda, Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-1. Tüm yayımlama profillerini daha önce yapılandırdıysanız **Yayımla** bölmesinde görünür. Tıklatın **yeni profil oluşturmak**.
-
-1. İçinde **yayımlama hedefi çekme** iletişim kutusu, tıklatın **profilini içeri aktarma**.
-
-    ![Seçin yayımlama](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Önceki bölümde oluşturduğunuz yayımlama ayarları dosyası konumuna gidin.
-
-1. İçinde **alma yayımlama ayarları dosyası** iletişim kutusu, gidin ve önceki bölümde oluşturduğunuz profili seçin ve tıklayın **açık**.
-
-    Visual Studio dağıtım işlemi başlar ve çıktı penceresi ilerleme durumunu ve sonuçlarını gösterir.
-
-    Herhangi bir dağıtım hataları alırsanız tıklatın **ayarları** ayarlarını düzenlemek için. Ayarları değiştirin ve tıklayın **doğrulama** yeni ayarlarını test etmek için.
-
-    ![Yayımla aracı ayarlarını düzenleyin](../deployment/media/tutorial-configure-publish-settings-in-tool.png)
+Uygulama başarıyla dağıtıldıktan sonra otomatik olarak başlamanız gerekir. Visual Studio'dan başlamazsa, IIS'de uygulamayı başlatın. ASP.NET Core için uygulama havuzu için alan emin olmanız gerekir. **DefaultAppPool** ayarlanır **yönetilen kod yok**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

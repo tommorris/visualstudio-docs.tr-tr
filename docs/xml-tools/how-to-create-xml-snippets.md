@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Nasıl yapılır: XML parçacıkları oluşturma
 
@@ -30,7 +30,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
 
 3.  Düzenleyici Bölmesi'nde sağ tıklatıp **Ekle parçacığı**.
 
-4.  Seçin **parçacığı** listesi ve ENTER tuşuna basın.
+4.  Seçin **parçacığı** basın ve liste **Enter**.
 
 5.  Yeni kod parçacığını tüm değişiklikleri yapın.
 
@@ -40,13 +40,13 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
 
 7.  Yeni kod parçacığını için ad girin ve **parçacık dosyaları** gelen **farklı türde Kaydet** açılır penceresi.
 
-8.  Kullanım **kaydetmek** My Documents\Visual Studio 2005\Code Snippets\XML\My XML parçacıkları klasörüne dosyasının konumunu değiştirmek ve ENTER tuşuna basın, aşağı açılan liste **kaydetmek**.
+8.  Kullanım **kaydetmek** dosyasının konumunu değiştirmek için aşağı açılan liste *My Documents\Visual Studio 2005\Code Snippets\XML\My XML parçacıkları* klasörü yazın ve ENTER tuşuna **kaydetmek**.
 
 ## <a name="snippet-description"></a>Kod parçacığında açıklaması
 
  Bu bölümde bazı Demirbaş kod parçacığını anahtar öğeleri açıklanmaktadır. XML parçacıkları tarafından kullanılan şema öğeleri hakkında daha fazla bilgi için bkz: [kod parçacıkları şema başvurusu](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>SnippetType Öğesi
+### <a name="snippettype-element"></a>SnippetType öğesi
 
  Düzenleyici iki parçacığı türlerini destekler:
 
@@ -59,7 +59,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
 
  `Expansion` Türü belirler çağırdığınızda, kod parçacığında görünüp görünmeyeceğini **Ekle parçacığı** komutu. `SurroundsWith` Türü belirler çağırdığınızda, kod parçacığında görünüp görünmeyeceğini **Surrounds ile** komutu.
 
-### <a name="code-element"></a>Code Öğesi
+### <a name="code-element"></a>Kod öğesi
 
  `Code` Öğesi kod parçacığını çağrıldığında eklenir XML metni tanımlar.
 
@@ -83,7 +83,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
 
 -   Seçili $$ önceden tanımlanmış bir değişkendir. XML Düzenleyicisi'nde kod parçacığını çağırmadan önce seçilmedi metni temsil eder. Seçili metni, seçimi çevreleyen kod parçacığında göründüğü Bu değişken yerleşimini belirler.
 
--   $end$ önceden tanımlanmış bir değişkendir. Kullanıcı kod parçacığını alanları düzenleme bitirmek için ENTER tuşuna bastığında, bu değişken şapka (^) burada taşınır belirler.
+-   $end$ önceden tanımlanmış bir değişkendir. Kullanıcı bastığında **Enter** kod parçacığını alanları düzenleme tamamlamak için bu değişkeni şapka (^) burada taşınır belirler.
 
  Yukarıdaki `Code` öğesi aşağıdaki XML metni ekler:
 
@@ -95,7 +95,7 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
 
  Name öğesi değerini düzenlenebilir bölgeyi işaretlenir.
 
-### <a name="literal-element"></a>Literal Öğesi
+### <a name="literal-element"></a>Değişmez değer öğesi
 
  `Literal` Öğe dosyasına eklendikten sonra özelleştirilebilir değiştirme metnini tanımlamak için kullanılır. Örneğin, değişmez değer dizeleri, sayısal değerler ve bazı değişken adları değişmez değerler bildirilebilir. Kod parçacığını içinde birden çok kez den başvurabilir ve XML parçacığında herhangi bir sayıda değişmez değerleri tanımlayabilirsiniz. Aşağıdaki örneğidir bir `Literal` varsayılan değeri olan "ad" $name$ değişkeni öğesi
 
@@ -117,8 +117,8 @@ XML Düzenleyicisi'ni yeni XML parçacıkları oluşturmak için kullanılabilir
 
  $Prefix$ değişkeni XML parçacığında sonra bir başka bir yerde kullanılabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [XML Kod Parçacıkları](../xml-tools/xml-snippets.md)
-- [Nasıl Yapılır: XML Kod Parçacıklarını Kullanma](../xml-tools/how-to-use-xml-snippets.md)
-- [Nasıl Yapılır: XML Şemasından XML Kod Parçacığı Oluşturma](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [XML parçacıkları](../xml-tools/xml-snippets.md)
+- [Nasıl yapılır: XML kullanım parçacıkları](../xml-tools/how-to-use-xml-snippets.md)
+- [Nasıl yapılır: XML şemasından bir XML parçacığını oluştur](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

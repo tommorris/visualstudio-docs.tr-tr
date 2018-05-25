@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74432b7807f901253646f28a3e1bf4664f673326
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Nasıl yapılır: XML Düzenleyicisi'nden XSLT dönüştürmesi yürütme
 
 XML Düzenleyicisi'ni dönüştürme gerçekleştirmek ve çıktı görüntülemek XSLT stil sayfasını bir XML belgesi ile ilişkilendirmenizi sağlar. XSLT dönüşümü sonuç çıktısı, yeni bir belge penceresi görüntülenir.
 
-**Çıkış** özelliği, çıktı için dosya adını belirtir. Varsa **çıkış** özelliği boşsa, bir dosya adı, geçici dizinde oluşturulur. Dosya uzantısı dayanır `xsl:output` stilinize öğesinde sayfa ve .xml, .txt veya .htm olabilir.
+**Çıkış** özelliği, çıktı için dosya adını belirtir. Varsa **çıkış** özelliği boşsa, bir dosya adı, geçici dizinde oluşturulur. Dosya uzantısı dayanır `xsl:output` stilinize öğesinde sayfa ve olabilir. *XML*,. *txt* veya. *htm*.
 
-Varsa **çıkış** özelliği, bir dosya adı ile bir .htm belirtir veya .html uzantısı, XSLT çıkış önizlemesi kullanarak [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Diğer tüm dosya uzantıları tarafından seçilen varsayılan Düzenleyicisi'ni kullanarak açıldığından [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Örneğin, .xml dosya uzantısı ise, Visual Studio XML Düzenleyicisi'ni kullanır.
+Varsa **çıkış** özelliği, bir dosya adıyla belirtir bir. *htm* veya. *HTML* XSLT çıkış uzantısıdır kullanarak önizleme uygulanan [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Diğer tüm dosya uzantıları tarafından seçilen varsayılan Düzenleyicisi'ni kullanarak açıldığından [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Örneğin, dosya uzantısı varsa. *xml*, Visual Studio XML Düzenleyicisi'ni kullanır.
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Bir XML belgesinden XSLT dönüştürmesi yürütmek için
 
@@ -64,6 +64,6 @@ Varsa **çıkış** özelliği, bir dosya adı ile bir .htm belirtir veya .html 
 
      XSLT dönüşümü sonuç çıktısı bir yeni belge penceresinde görüntülenir ve çıkış penceresinde kullanılan Düzenleyicisi'nin dosya uzantısı bağlıdır, **çıkış** belge özelliği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)

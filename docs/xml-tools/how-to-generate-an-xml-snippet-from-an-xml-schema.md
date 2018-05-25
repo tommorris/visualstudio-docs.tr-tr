@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f598f01116d7ce2aec5759c411e456083f6932b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML şemasından bir XML parçacığını oluştur
 
-XML Düzenleyicisi'ni bir XML Şeması Tanım Dili (XSD) şemadan XML parçacıkları oluşturabilme özelliği vardır. Örneğin, öğe adı yanındaki konumlandırılmış sırada bir XML dosyasına yazma gibi öğenin bu öğe için şema bilgileri üretilen XML verileri ile doldurmak için SEKME tuşuna basabilirsiniz.
+XML Düzenleyicisi'ni bir XML Şeması Tanım Dili (XSD) şemadan XML parçacıkları oluşturabilme özelliği vardır. Örneğin, öğe adı yanındaki konumlandırılmış sırada bir XML dosyasına yazma gibi basabilirsiniz **sekmesini** öğesi bu öğe için şema bilgileri üretilen XML verileri ile doldurmak için.
 
 Bu özellik, yalnızca öğeleri üzerinde kullanılabilir. Aşağıdaki kuralları da geçerlidir:
 
@@ -44,7 +44,7 @@ Varsayılan değerler oluşturulan ve düzenlenebilir değerleri olarak kaydedil
 
 ## <a name="example"></a>Örnek
 
- Bu bölümdeki adımları şema oluşturulan XML parçacığını özelliği XML Düzenleyicisi'nin kullanımını gösterir.
+ Bu bölümdeki adımları şema oluşturulan XML parçacığını özelliğinin XML Düzenleyicisi'nin nasıl kullanılacağı gösterir.
 
 > [!NOTE]
 > Bu yordamlara başlamadan önce şema dosyasını yerel bilgisayarınıza kaydedin.
@@ -85,11 +85,11 @@ Varsayılan değerler oluşturulan ve düzenlenebilir değerleri olarak kaydedil
 
      **Kişi** kök öğesi eklemek için.
 
-3.  Seçin **kişi** üye listesi ve ENTER tuşuna basın.
+3.  Seçin **kişi** basın ve üye listesi **Enter**.
 
      Düzenleyici başlangıç etiketi ekler `<Contact` ve sonra öğe adı imleci yerleştirir.
 
-4.  XML verileri oluşturmak için SEKME tuşuna basın `Contact` öğesi dayalı, şema bilgileri.
+4.  Tuşuna **sekmesini** için XML verileri oluşturmak için `Contact` öğesi dayalı, şema bilgileri.
 
 ## <a name="input"></a>Giriş
 
@@ -155,7 +155,7 @@ Varsayılan değerler oluşturulan ve düzenlenebilir değerleri olarak kaydedil
 </Contact>
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [XML Kod Parçacıkları](../xml-tools/xml-snippets.md)
-- [Nasıl Yapılır: XML Kod Parçacıklarını Kullanma](../xml-tools/how-to-use-xml-snippets.md)
+- [XML parçacıkları](../xml-tools/xml-snippets.md)
+- [Nasıl yapılır: XML kullanım parçacıkları](../xml-tools/how-to-use-xml-snippets.md)

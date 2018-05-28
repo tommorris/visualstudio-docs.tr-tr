@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 3fd57edf89210370fa05247afc55569c4401baf8
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)
+# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe), böylece bunları için Visual Studio eşzamanlılık görselleştiricisi görebilirsiniz komut satırından izlemeleri toplamak için kullanabilirsiniz. Araçlar Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
   
 > [!NOTE]
@@ -51,7 +51,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCo
 |İşlem|Attach komutunu ne zaman yürütülür için eklemek için işlem veya işlem Analiz komutunu çalıştırıldığında çözümlemek için bir izleme belirtir. Attach ve analiz komutları için geçerlidir.|PID veya işlemin adı.|Yok.|  
 |Config|Koleksiyon ayarlarını Varsayılanları dışında istiyorsanız, yapılandırma dosyasının yolunu belirtir.   Başlatma, Ekle ve analiz komutları için geçerlidir.|Dizin yolu veya XML yapılandırma dosyası göreli yolu.|Yok.|  
   
-## <a name="customizing-configuration-settings"></a>Yapılandırma ayarları özelleştirme  
+## <a name="customize-configuration-settings"></a>Yapılandırma ayarları özelleştirme  
  İzlemeleri toplamak için CVCollectionCmd kullanıyorsanız ve koleksiyon ayarlarını özelleştirmek istediğiniz, sonra bunları belirtmek için bir yapılandırma dosyası'nı kullanın.  
   
 > [!NOTE]

@@ -9,11 +9,12 @@ description: Visual Studio abonelikleri – neden Hotmail veya Gmail adresleri M
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3ac8a86bae706b4a68b8e3ccde94a9ee84d608a9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a9b0e02acd0c362759997938cec91983a5d48547
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335726"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Hotmail veya Gmail adresleri my aboneleri için neden görüyorum visual Studio abonelikleri –? 
 
@@ -34,6 +35,6 @@ Son olarak, yönetici geçiş VLSC adresi ile ilgili abonenin"oturum açma e-pos
 
 ## <a name="solution"></a>Çözüm
 
-Sorunu düzeltmek için oturum açma e-posta adreslerini güncelleştirmek için abone bilgilerini düzenlemek gerekir.  Düzenlemeler, tek tek aboneleri için ya da toplu yapılabilir. Tam bilgi için lütfen ziyaret [bir abonelik](/visualstudio/subscriptions/edit-license).  
+Sorunu düzeltmek için oturum açma e-posta adreslerini güncelleştirmek için abone bilgilerini düzenlemek gerekir.  Düzenlemeler, tek tek aboneleri için ya da toplu yapılabilir. Tam bilgi için lütfen ziyaret [bir abonelik](edit-license.md).  
 
 Subscriber(s) e-posta adresleri güncelleştirdikten sonra kullanıcıların oturum açma bilgileri değişti bildirmek isteyebilirsiniz.  Bunlar, ayrıca güncelleştirilmiş bilgileri içeren bir e-posta alırsınız.   

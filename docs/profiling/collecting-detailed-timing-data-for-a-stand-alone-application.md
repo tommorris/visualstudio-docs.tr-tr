@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d791c19d0dccaf5f4fdf4f8aa1bb2c80d74c8ba
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335820"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak bağımsız bir uygulama için ayrıntılı zamanlama verileri toplama
 Bu bölümdeki yordamları ve ayrıntılı performans toplamak için seçenekleri açıklar komut satırından izleme yöntemini kullanarak bir istemci (tek başına) bileşeni için verileri.  
   
-## <a name="common-tasks"></a>Ortak görevler
+## <a name="common-tasks"></a>Ortak görevler  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  

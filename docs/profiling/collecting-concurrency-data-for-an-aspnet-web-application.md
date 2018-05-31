@@ -1,5 +1,5 @@
 ---
-title: Profil oluşturucu komut satırını kullanarak bir ASP.NET Web uygulaması için eşzamanlılık verileri toplama | Microsoft Docs
+title: ASP.NET Web kullanarak bir uygulama için profil oluşturucu komut satırını eşzamanlılık verileri toplamak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 049da82fe05e52393280d3f301caf7ece3cb04ec
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: a5cdb1a0a77ece78f623a0fa21bc48672d1624cb
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335924"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak bir ASP.NET web uygulaması için eşzamanlılık verileri toplama
 Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, kaynak çakışması veri toplamanıza olanak sağlar.  
@@ -40,6 +41,7 @@ Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
 |**Örnekleme yöntemini kullanarak profil**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
 |**İzleme metodunu kullanarak profil**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
 |**Bellek ayırma ve atık toplama profil**|-   [Bellek verileri toplama](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+
   
 ### <a name="profile-concurrency-issues"></a>Profil eşzamanlılık sorunları  
   

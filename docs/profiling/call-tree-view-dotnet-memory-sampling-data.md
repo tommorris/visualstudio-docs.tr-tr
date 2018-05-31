@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3bba583c110188b45a11c51ee4780a3d8ad861d1
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: c3c7c70057380289272e86cf7187680746dafdd2
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336051"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Çağrı ağacı görünümü - .NET bellek örnekleme verileri
 Çağrı ağacı görünümü profili uygulamada geçiş işlevi yürütme yollarını görüntüler. Ağaç kök uygulama veya bileşenin giriş noktasıdır. Her işlevi düğümü adlı tüm işlevleri ve bu işlev çağrıları hakkında .NET bellek ayırma verileri listeler.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 05/17/2018
 |**Özel bayt sayısı**|Bu işlev çağrısı ağacında üst işlevi tarafından adı veriliyordu örnekler tarafından ayrılan belleği bayt sayısı. Bu sayı, alt işlevleri tarafından yapılan ayırmaları içermez.|  
 |**Özel bayt %**|Profil çalışmasını ayrılan tüm bayt bellek yüzdesi bu işlevin özel ayırmaları yoktu.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Çağrı ağacı görünümü - izleme](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Çağrı ağacı görünümü](../profiling/call-tree-view-sampling-data.md)   
  [Çağrı ağacı görünümü](../profiling/call-tree-view-instrumentation-data.md)

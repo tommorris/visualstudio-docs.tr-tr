@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c2e33d01095181dcf497b19da8f9310c7c4d20
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 9c0dd9fef26538ef6f7208fc32ea00591eb5c608
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335833"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Profil oluşturucu komut satırından izleme yöntemini kullanarak hizmetler için ayrıntılı zamanlama verileri toplama
 Bu bölümdeki yordamları ve ayrıntılı performans toplamak için seçenekleri açıklar komut satırından izleme metodunu kullanarak Windows Hizmetleri için veri.  
@@ -46,3 +47,4 @@ Bu bölümdeki yordamları ve ayrıntılı performans toplamak için seçenekler
   
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>İzleme veri görünümleri ve raporları analiz eder.  
  [İzleme yöntemi veri görünümleri](../profiling/instrumentation-method-data-views.md)
+

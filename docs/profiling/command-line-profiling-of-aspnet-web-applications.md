@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6c5b97460defeaa22ad20e9a1ff4be38514b020a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 032a2084ea70d6afb22de63d829a89362ad72dd7
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335664"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET web uygulamalarının komut satırı profili oluşturma
 Bu bölümde yordamlar ve performans verilerini toplamak için seçenekleri açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut satırından profil oluşturma araçları.  
@@ -37,6 +38,7 @@ Bu bölümde yordamlar ve performans verilerini toplamak için seçenekleri aç�
 |**Katman etkileşim verileri ekleme:** zaman uyumlu ilgili performans verileri ekleyebilirsiniz [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] çağrısı [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması için bir Microsoft yapar [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanı.|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler
+
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  

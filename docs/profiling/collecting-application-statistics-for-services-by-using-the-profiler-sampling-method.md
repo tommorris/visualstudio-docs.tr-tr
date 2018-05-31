@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6d9ef9af4f616ff7432a9ace1cc3080be34e8f
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: bb6e5fe61e6210826ce0b37ae2650da8d6af86c9
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335612"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Profil Oluşturucu örnekleme yöntemini kullanarak hizmetler için uygulama istatistikleri toplama
 Bu bölümde, yordamlar ve komut satırından örnekleme yöntemini kullanarak Windows Hizmetleri için performans istatistikleri toplamak için seçenekleri açıklar.  
@@ -40,7 +41,8 @@ Bu bölümde, yordamlar ve komut satırından örnekleme yöntemini kullanarak W
 |**.NET bellek ayırma ve atık toplama profil**|-   [.NET bellek verileri toplama](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
 |**Kaynak çakışması ve iş parçacığı etkinliği profil**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### <a name="profile-by-using-the-sampling-method"></a>Örnekleme yöntemini kullanarak profili  
+
+### <a name="profile-by-using-the-sampling-method"></a>Örnekleme yöntemini kullanarak profil  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
@@ -49,3 +51,5 @@ Bu bölümde, yordamlar ve komut satırından örnekleme yöntemini kullanarak W
   
 ### <a name="analyze-sampling-data-views-and-reports"></a>Veri görünümlerini örnekleme ve raporları analiz eder.  
  [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)
+
+  

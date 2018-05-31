@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1a49c476b56974ee9e0be6026db93c6564ac7d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: f63ee0e28a432e43f30377b9f876004b69cd13dc
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335739"
 ---
 # <a name="automark"></a>AutoMark
 **Otomatik işaret** seçeneği, Windows yazılım performans sayacı olaylarını toplama arasındaki milisaniye sayısını belirtir. Windows performans sayaçlarını belirtilir **WinCounter** seçeneği.  
@@ -43,8 +44,8 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /WinCounter:"\Process(*)\% Pr
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)

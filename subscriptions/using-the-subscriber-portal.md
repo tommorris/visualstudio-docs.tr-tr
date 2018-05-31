@@ -9,17 +9,18 @@ description: Visual Studio abonelikleri portalında kullanılabilir avantajları
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 1fc8c77e71f32e2bb559426b3447d0bbc293e785
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335937"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>-Abone portalı kullanarak my. <span> </span>Visual Studio<span></span>.com
 
 Visual Studio abonelikleri Portal [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs), tam aralığın Visual Studio aboneliğiniz ile sağlanan avantajlarından yararlanmak için hepsi bir arada kaynak. 
 
-Portalı kullanarak aboneliğinizle ilişkili kimlik bilgilerinizle oturum gerektirir.  Bu, Microsoft hesabı (MSA) ya da size, işvereniniz ya da Okul gibi bir kuruluş tarafından sağlanan e-posta adresi olabilir.  Hakkında bilgi edinin [oturum açma](/visualstudio/subscriptions/signing-in).
+Portalı kullanarak aboneliğinizle ilişkili kimlik bilgilerinizle oturum gerektirir.  Bu, Microsoft hesabı (MSA) ya da size, işvereniniz ya da Okul gibi bir kuruluş tarafından sağlanan e-posta adresi olabilir.  Hakkında bilgi edinin [oturum açma](signing-in.md).
 
 Portal altı sayfalarında düzenlenmiştir.  Her bir sayfada, farklı ürünleri veya hizmetleri aboneliğinizle dahil erişim sağlar.  Altı avantajları, indirmeler, ürün anahtarları, abonelikler, destek ve Market sayfalarıdır.  
 

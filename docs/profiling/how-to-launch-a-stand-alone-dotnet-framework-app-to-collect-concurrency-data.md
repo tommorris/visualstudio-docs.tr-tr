@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d194ddfb83570b4e2a5461dc70a0368215aaca5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cece8a5b97f3a9c78bdda8c5e841661d2b4d58d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335586"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: Komut Satırını Kullanarak Eşzamanlılık Verileri Toplamak için Bağımsız bir .NET Framework Uygulamasını Başlatma
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: komut satırını kullanarak eşzamanlılık verileri toplamak için bağımsız bir .NET Framework uygulamasını Profil Oluşturucu ile başlatma
 Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir .NET Framework tek başına (istemci) uygulamasını başlatın ve işlemi ve iş parçacığı eşzamanlılık verileri toplamak için profil oluşturma araçları komut satırı araçları  
   
 > [!NOTE]
@@ -24,7 +25,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
   
  Profil Oluşturucu uygulamaya bağlı olsa da, duraklatma ve veri toplama sürdürme. Profil oluşturma oturumu sona erdirmek için profil oluşturucu artık uygulamaya bağlı olması gerekir ve profil oluşturucu açıkça kapatılmalıdır.  
   
-## <a name="starting-the-application-with-the-profiler"></a>Profil Oluşturucu ile uygulama başlatma  
+## <a name="start-the-application-with-the-profiler"></a>Profil Oluşturucu ile uygulama Başlat  
  Bir .NET Framework hedef uygulamayı başlatmak için .NET Framework'te profil oluşturma değişkenleri ayarlamak için VSPerfClrEnv.exe kullanın. Ardından VSPerfCmd kullandığınız **/start** ve **/başlatma** profil oluşturucu başlatın ve uygulamayı başlatmak için Seçenekler. Belirleyebileceğiniz **/start** ve **/başlatma** ve bunların ilgili tek bir komut satırı seçenekleri. Ayrıca ekleyebileceğiniz **/globaloff** hedef uygulama başlatıldığında veri toplamayı duraklatmak için komut satırı seçeneği. Daha sonra **/globalon** veri toplamaya başlamak için ayrı bir komut satırında.  
   
 #### <a name="to-start-an-application-with-the-profiler"></a>Profil Oluşturucu ile bir uygulamayı başlatmak için  
@@ -67,7 +68,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
     |[/ Console](../profiling/console.md)|Hedef komut satırı uygulaması ayrı bir pencerede başlatır.|  
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|Ortak dil çalışma zamanı (CLR) bir uygulamada birden fazla çalışma zamanı sürümü yüklendiğinde profilini sürümünü belirtir.|  
   
-## <a name="controlling-data-collection"></a>Veri Toplama Denetimi  
+## <a name="control-data-collection"></a>Denetimin veri toplama  
  Hedef uygulama çalışırken, başlatma ve VSPerfCmd.exe seçenekleri kullanarak verileri dosyaya yazma durdurma tarafından veri toplama kontrol edebilirsiniz. Veri toplama denetimi, program yürütme, başlatma veya kapatma uygulamanın gibi belirli bir bölümü için veri toplamanıza olanak sağlar.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak için  
@@ -80,7 +81,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlatır (**/processon**) veya durdurulduğunda (**/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplama (`PID`).|  
     |[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ attach** işlem kimliği tarafından belirtilen işlem için veri toplamaya başlar (`PID`) veya işlem adı (ProcName). **/ detach** belirli bir işlemin belirtilmezse, tüm işlemler veya belirtilen işlem için veri toplamayı durdurur.|  
   
-## <a name="ending-the-profiling-session"></a>Profil oluşturma oturumu sona erdirme  
+## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme  
  Profil oluşturma oturumu sona erdirmek için Profil Oluşturucu veri toplamadığı gerekir. Profili uygulamayı kapatmak veya çağırma eşzamanlılık verileri toplama durdurabilirsiniz **VSPerfCmd / detach** seçeneği. Ardından çağırma **VSPerfCmd shutdown** profil oluşturucu devre dışı bırakma ve profil oluşturma veri dosyası kapatmak için seçeneği. **VSPerfClrEnv / kapalı** komutu profil ortam değişkenleri temizler.  
   
 #### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumu sona erdirmek için  
@@ -97,5 +98,5 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
   
      **VSPerfCmd**[Shutdown](../profiling/shutdown.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)

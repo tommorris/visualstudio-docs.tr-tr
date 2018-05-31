@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e5c8d7a1edc7af76870f3d120d66365d2f1cf4
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 35493114b9dcc0d71248f7edf046c835e04ae374
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335794"
 ---
 # <a name="command-line-profiling-of-services"></a>Komut satırı hizmetler profili oluşturma
 Bu bölümdeki yordamları ve kullanarak Windows Hizmetleri için performans verilerini toplamak için seçenekleri açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut satırından profil oluşturma araçları.  
@@ -26,6 +27,7 @@ Bu bölümdeki yordamları ve kullanarak Windows Hizmetleri için performans ver
 >  Gelişmiş güvenlik özellikleri Windows 8 ve Windows Server 2012 Visual Studio profil oluşturucu bu platformlarda toplar şekilde önemli değişiklikler gerekmiştir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bkz: [Windows 8 ve Windows Server 2012 uygulamaların performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="common-tasks"></a>Ortak görevler
+
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  

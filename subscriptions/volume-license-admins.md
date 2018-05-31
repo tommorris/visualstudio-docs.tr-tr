@@ -9,15 +9,16 @@ description: Nasıl abonelik yöneticileri yönetim portalına erişmek ve Toplu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335898"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Portal erişme ve yöneticileri - Toplu Lisanslama (toplu lisans aracılığıyla) alınan abonelikler için yönetme
 
-**Volume License Service Center (VLSC)**
+**Toplu Lisans Hizmet Merkezi (VLSC)**
 
 1 Mart 2017'dan sonra portal hazırlanma ve geçiş sürecinde çalışmaya devam müşteriler kendi aboneliklerini içinde Toplu Lisanslama hizmeti Merkezi (VLSC) yönetmek gerekir. 
 
@@ -36,7 +37,7 @@ Kuruluşunuz Visual Studio abonelikleri yönetim portalına edildi olması hazı
 
      a. E-posta ile birincil ve bildirimler kişiler benzersiz bir bağlantı ve bunların genel müşteri numarası (PCN), son üç basamak ile sağlanır.  (Birincil veya bildirimler kişiler birden fazla e-posta almaya devam ederseniz, bu birden fazla PCN sahip oldukları anlamına gelir. Bunlar her e-posta ile başvurulan PCN için benzersiz bağlantıyı kullanarak işlemini tamamlamak gerekir.)
 
-     b. Tüm PCN elde etmek için birincil ilgili kişinin VLSC'ye oturum açmak gerekir. [PCN bulmak için yönergeler](/find-pcn/) 
+     b. Tüm PCN elde etmek için birincil ilgili kişinin VLSC'ye oturum açmak gerekir. [PCN bulmak için yönergeler](find-pcn.md) 
 
      c. PCN aldıktan sonra bunları oturum açmak için ister kendi benzersiz bağlantı seçmeniz gerekir. Bunlar, kuruluşunuzun AAD üzerinde değilse, bir iş/Okul hesabı (Kuruluşunuz AAD üzerinde ise) ya da bir Microsoft hesabı (MSA) kullanarak oturum mümkün olacaktır. 
 
@@ -46,6 +47,6 @@ Kuruluşunuz Visual Studio abonelikleri yönetim portalına edildi olması hazı
 
 3.  Yeni Abonelik Yönetim portalına erişim. Kuruluşunuz geçirildikten sonra e-postalar yeni eklenen Süper yöneticileri ve yeni portalına erişmek ve abonelik yönetimi başlamak için Yöneticiler bunları davet gönderilir.  
 
-Yeni Visual Studio abonelikleri yönetim portalına eklenmesi gerekir ve, birincil/bildirimler kişiniz olan emin değilseniz, oturum açtıktan sonra bu bilgileri bulabilirsiniz [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Bir göz atalım [Bul bilgisayarınızı birincil ilgili kişinin](/find-primary-contact/) birincil/bildirimler kişiniz VLSC bulmak için adımları için konu.
+Yeni Visual Studio abonelikleri yönetim portalına eklenmesi gerekir ve, birincil/bildirimler kişiniz olan emin değilseniz, oturum açtıktan sonra bu bilgileri bulabilirsiniz [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Bir göz atalım [Bul bilgisayarınızı birincil ilgili kişinin](find-primary-contact.md) birincil/bildirimler kişiniz VLSC bulmak için adımları için konu.
 
 Zaten bir yönetici olarak ayarlanmış olan sonra Visual Studio abonelikleri doğrudan yönetim portalında gidebilirsiniz: [ https://manage.visualstudio.com ](https://manage.visualstudio.com). 

@@ -1,5 +1,5 @@
 ---
-title: Profil oluşturucu komut satırını kullanarak bağımsız uygulamalar için eşzamanlılık verileri toplama | Microsoft Docs
+title: Profil oluşturucu komut satırını kullanarak tek başına uygulamalar için eşzamanlılık verileri toplamak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,16 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d9932a0a2c8c44de236a4df91342ad739fa8b0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 20ae775a6dc49dd2a6dd3cb391eeaf69ff7fa32c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335950"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak bağımsız uygulamalar için eşzamanlılık verileri toplama
 Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, kaynak çakışması veri ve gösterir, CPU kullanımı, iş parçacığı Çekişme, iş parçacığı geçiş, eşitleme gecikmeler, alanları çakışan GÇ ve diğer iş parçacığı etkinliği verilerini toplamak sağlar sistem olayları.  
   
-## <a name="common-tasks"></a>Ortak görevler
+
+## <a name="common-tasks"></a>Ortak görevler  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  

@@ -74,10 +74,9 @@
 #### [MPN için Abonelikleri Yönetme](manage-mpn-subscriptions.md)
 #### [Startup’lar için Microsoft](program-startups.md)
 ## Kaynaklar
-### [Visual Studio Lisans Koşulları](vs-license-terms.md)
 ### [Visual Studio Lisanslama Teknik İncelemesi](http://aka.ms/vslicensing)
 ### [Abonelik seçeneklerini ve fiyatlandırmalarını karşılaştırma](https://www.visualstudio.com/vs/pricing)
 ### [Visual Studio IDE özelliklerini karşılaştırma](https://www.visualstudio.com/vs/compare)
 ### [Visual Studio Yönetim ve Abonelik Desteği](https://www.visualstudio.com/support/support-overview-vs)
-### [Toplu Lisans ve Ürün Kullanım Hakları (PUR)](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Toplu Lisanslama Hükümleri](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Microsoft Ürün ve Hizmet Sözleşmesi (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

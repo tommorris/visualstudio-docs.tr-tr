@@ -9,11 +9,12 @@ description: Toplu Lisans Hizmet Merkezi Yönetim geçiş SSS
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336132"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio abonelikleri yönetim geçiş
 
@@ -78,7 +79,7 @@ Visual Studio, kuruluşunuzun geçirilmiş olan ve yeni Portalı'nda yönetilmey
 Oturum [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) ve aşağıdaki yola gidin: **abonelikleri** > **Visual Studio abonelikleri**. PCN altında bulunan **sözleşmesi/genel müşteri numarası sonuçları**. Bu konuda, PCN bulma hakkında adım adım yönergeleri almak [Yardım makalesinin](/find-pcn/). 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>My birincil ya da bildirimler kişi kim olduğunu nasıl bulabilirim?
-Oturum [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) ve aşağıdaki yola gidin: **lisansları > ilişki Özet** seçin, **lisans kimliği > kişiler**. Birincil ya da bildirimler kişi bu bulma konusunda adım adım yönergeler alın [Yardım makalesinin](/find-primary-contact/). 
+Oturum [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) ve aşağıdaki yola gidin: **lisansları > ilişki Özet** seçin, **lisans kimliği > kişiler**. Birincil ya da bildirimler kişi bu bulma konusunda adım adım yönergeler alın [Yardım makalesinin](find-primary-contact.md). 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Ne my birincil ya da bildirimler kişi, şirket ile artık veya tamamlamak için kullanılabilir gitti?
 Etmeniz [desteğine başvurun](https://www.visualstudio.com/subscriptions/support/#talktous) ve VLSC Aboneliklerini yönetmek için kullanılan e-posta sağlayın. Doğruladıktan sonra desteği ekleme işleminde size yardımcı erişemezsiniz. 
@@ -106,8 +107,8 @@ Bu geçiş ilgili tarih bilgisi kadar çoğu için lütfen bizim Visual Studio a
 
 - Visual Studio abonelikleri ve Yönetim [desteği](https://www.visualstudio.com/subscriptions/support/) 
 
-- [My PCN bulma](/find-pcn/)
+- [My PCN bulma](find-pcn.md)
 
-- [My birincil ya da bildirimler kişi bulma](/find-primary-contact/) 
+- [My birincil ya da bildirimler kişi bulma](find-primary-contact.md) 
 
 - [Video](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) eklenmesi için kuruluş ve yöneten yöneticiler 

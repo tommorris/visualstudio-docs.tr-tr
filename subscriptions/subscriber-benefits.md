@@ -9,11 +9,12 @@ description: Visual Studio aboneliğinize dahil avantajları hakkında bilgi edi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335599"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio aboneliğinize dahil avantajları
 
@@ -22,7 +23,7 @@ Visual Studio abonelikleri kaynakları oluşturmak, dağıtmak ve tercih edilen 
 Avantajları üç kategorilerde gruplanır:
 
 ## <a name="tools"></a>Araçlar
-Araçlar kategori çok çeşitli flagship avantajları gibi yararlar erişim sağlayan [Visual Studio IDE](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/), ve [Azure](/vs-azure/) .  Abonelik düzeyinizi bağlı olarak, Windows ve Office 365 Geliştirici hesaplarını, Visual Studio Uygulama Merkezi ve WhiteSource Cıvata ve ModernRequirements gibi ortaklardan avantajları da görürsünüz.
+Araçlar kategori çok çeşitli flagship avantajları gibi yararlar erişim sağlayan [Visual Studio IDE](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md), ve [Azure](vs-azure.md) .  Abonelik düzeyinizi bağlı olarak, Windows ve Office 365 Geliştirici hesaplarını, Visual Studio Uygulama Merkezi ve WhiteSource Cıvata ve ModernRequirements gibi ortaklardan avantajları da görürsünüz.
 
 ## <a name="professional-development"></a>Profesyonel Geliştirme
 Skillset geliştirmek ve en son teknolojileriyle takip edin, continously yardımcı olmak için erişim bazı en iyi çevrimiçi eğitim kullanılabilir endüstri kılavuzları sunuyoruz. Kullanılabilir harika içeriği örnekleri şunlardır:

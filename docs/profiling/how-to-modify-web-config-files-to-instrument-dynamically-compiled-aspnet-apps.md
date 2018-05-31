@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21a4916e9e8398096e239ca1736238b0ffe8145
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336038"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: Dinamik Olarak Derlenmiş ASP.NET Web Uygulamalarını İzlemek ve Profilini Oluşturmak için Web.Config Dosyalarını Değiştirme
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: izleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme
 Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ayrıntılı zamanlama verileri, .NET bellek ayırma verileri ve .NET nesne yaşam süresi verilerini dinamik olarak toplamak için profil oluşturma araçları izleme yöntemini derlenmiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.  
   
  Bu konu, araçları ve, profil oluşturma etkinleştirmek için web.config yapılandırma dosyasını değiştirmek açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.  
@@ -75,15 +76,16 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ay
   
      `PathToASPNetHelperDll` Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll dosya URL'sidir. Varsa [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] varsayılan konumda yüklü **href** değeri olmalıdır `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
             <assemblyBinding   
                 xmlns="urn:schemas-microsoft-com:asm.v1"  
             >  
                 <dependentAssembly>  
-                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
-                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
+                    <assemblyIdentity name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
+                        publicKeyToken="b03f5f7f11d50a3a"
+                        culture="neutral"   
                     />  
                     <codeBase   
                         version="10.0.0.0"  
@@ -110,7 +112,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ay
     |--------------------|---------------------|  
     |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, sürüm 10.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a**|  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
         . . .  
@@ -152,7 +154,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ay
   
      `PerformanceToolsFolder` Profil Oluşturucu yürütülebilir dosyalar yoludur. Varsa [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yüklü olduğu varsayılan konumda değer olacaktır **C:\Program Files\Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları**  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
         . . .  
@@ -176,7 +178,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ay
 ## <a name="example"></a>Örnek  
  Aşağıdaki izleme ve, profil olanak sağlayan bir tam web.config dosyasıdır dinamik olarak derlenmiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları. Bu örnek, herhangi bir değişiklik yapılmadan önce dosya ayarlarında olduğunu varsayar.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
     <configuration>  
         <runtime>  
@@ -219,6 +221,6 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ay
   
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET uygulamasını izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
  [Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET uygulamasını izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

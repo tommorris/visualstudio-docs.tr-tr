@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e801bae6d832f15ea42e4c46f3c18012f85c05
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: b2e1ca6816a0c2d65d00e29c0e7c350f80aa8f50
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335859"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Bağımsız uygulamaların komut satırı profili oluşturma
 Bu bölümdeki yordamlar ve kullanarak tek başına (istemci) uygulamaları için performans verilerini toplamak için seçenekleri açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut satırından profil oluşturma araçları.  
@@ -32,6 +33,7 @@ Bu bölümdeki yordamlar ve kullanarak tek başına (istemci) uygulamaları içi
 |**Eşzamanlılık verileri toplamak:** kaynak çakışması veri ve gösterir, CPU kullanımı, iş parçacığı Çekişme, iş parçacığı geçiş, eşitleme gecikmeler, alanları çakışan g/ç ve diğer iş parçacığı etkinliği verilerini toplamak için eşzamanlılık yöntemini kullanın sistem olayları.|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
 |**Katman etkileşim verileri ekleme:** zaman uyumlu ADO.NET ilgili performans verileri çağrıları, bir Microsoft yapılan uygulama ekleyebileceğiniz [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanı. Profil oluşturma çalışmaya katman etkileşim verileri ekleme belirli yordamları profil oluşturma araçları komut satırıyla gerektirir.|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
 |**Deneyin:** örnekleme veya izleme yöntemini kullanarak örnek bir istemci uygulama profili için adım adım yordamları kullanın.|-   [İzlenecek yol: Komut satırı kullanarak profil örnekleme](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [İzlenecek yol: İzleme kullanarak komut satırı profili oluşturma](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)|  
+
   
 ## <a name="related-tasks"></a>İlişkili görevler  
   

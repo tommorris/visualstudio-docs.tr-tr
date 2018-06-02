@@ -15,10 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b736e89bb9ec7c4bdb71ea49566cd057f7a0bd85
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476657"
 ---
 # <a name="thread-ready-connector"></a>İş parçacığı hazır bağlayıcı
 Çağrı yığını ve kendi yığın engellemesini kaldırma görmek için engelleme kesimi tıkladığınızda, iş parçacığı hazır bağlayıcı da görüntülenebilir. Engellemeyi kaldırma olay geçerli işlemdeki başka bir iş parçacığında oluştuysa, iş parçacığı hazır bağlayıcı yürütme devam etmek engellenmiş iş parçacığı etkin iş parçacığı ve yürütme segment görsel olarak tanımlar.

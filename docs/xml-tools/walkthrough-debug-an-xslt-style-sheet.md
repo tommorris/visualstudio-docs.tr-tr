@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir XSLT stil sayfası hata ayıklama'
+title: 'İzlenecek Yol: XSLT Stil Sayfasında Hata Ayıklama'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c2b986318940dc7103997eaef1681d2c239e01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebc8e8f8700690a2ae74fcc91384fb77b238ea33
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693402"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>İzlenecek yol: bir XSLT stil sayfası hata ayıklama
 
@@ -32,13 +33,13 @@ Bu izlenecek adımları XSLT hata ayıklayıcı kullanımını göstermektedir. 
 
 1.  Gelen **dosya** menüsündeki **açık**, tıklatıp **dosya**.
 
-2.  BelowAvg.xsl dosyasını bulun ve tıklatın **açık**.
+2.  Bulun *belowAvg.xsl* dosya ve tıklayın **açık**.
 
      Stil sayfası XML Düzenleyicisi'nde açılır.
 
 3.  Gözat düğmesine (**...** ) üzerinde **giriş** belge penceresinin alan.
 
-4.  Books.xml dosyasını bulun ve tıklatın **açık**.
+4.  Bulun *books.xml* dosya ve tıklayın **açık**.
 
      XSLT dönüşümü için kullanılan kaynak belge dosyasını ayarlar.
 
@@ -48,9 +49,9 @@ Bu izlenecek adımları XSLT hata ayıklayıcı kullanımını göstermektedir. 
 
 Bu hata ayıklama işlemi başlatır ve hata ayıklayıcı tarafından kullanılan birkaç yeni pencereler açılır.
 
-Giriş belgesi ve stil sayfasını görüntülemek iki windows vardır. Hata ayıklayıcı bu windows geçerli yürütme durumunu göstermek için kullanır. Hata ayıklayıcı üzerinde konumlandırılmış `xsl:if` stil sayfasının ve books.xml dosyanın ilk kitap düğümünde öğesi.
+Giriş belgesi ve stil sayfasını görüntülemek iki windows vardır. Hata ayıklayıcı bu windows geçerli yürütme durumunu göstermek için kullanır. Hata ayıklayıcı üzerinde konumlandırılmış `xsl:if` öğesi stil sayfasının ve ilk kitap düğümünde *books.xml* dosya.
 
-Yerel öğeler penceresi, tüm yerel değişkenleri ve geçerli değerlerini görüntüler. Bu, stil sayfası ve ayrıca hata ayıklayıcı bağlamda düğümlerini izlemek için kullandığı değişkenleri tanımlanan değişkenler içerir.
+**Yereller** penceresi, tüm yerel değişkenleri ve geçerli değerlerini görüntüler. Bu, stil sayfası ve ayrıca hata ayıklayıcı bağlamda düğümlerini izlemek için kullandığı değişkenleri tanımlanan değişkenler içerir.
 
 **XSL çıkış** penceresi XSL dönüşümün çıktısını görüntüler. Bu pencere ayrıdır **Visual Studio çıkış** penceresi.
 
@@ -60,13 +61,13 @@ Yerel öğeler penceresi, tüm yerel değişkenleri ve geçerli değerlerini gö
 
 1.  Gelen **hata ayıklama** menüsündeki **Windows**, işaret **izleme**, tıklatıp **izleme 1**.
 
-     Bu izleme 1 pencere görünür hale getirir.
+     Böylece **izleme 1** penceresi görünür.
 
-2.  Tür `$bookAverage` içinde **adı** alan ve ENTER tuşuna basın.
+2.  Tür `$bookAverage` içinde **adı** alan ve tuşuna **Enter**.
 
      Değeri `$bookAverage` değişken penceresinde görüntülenir.
 
-3.  Tür `self::node()` içinde **adı** alan ve ENTER tuşuna basın.
+3.  Tür `self::node()` içinde **adı** alan ve tuşuna **Enter**.
 
      `self::node()` Geçerli bağlam düğüme değerlendiren bir XPath ifadesidir. Değeri `self::node()` XPath ifadesi ilk kitap düğümü. Bu biz dönüştürme ilerledikçe değiştirir.
 
@@ -74,26 +75,26 @@ Yerel öğeler penceresi, tüm yerel değişkenleri ve geçerli değerlerini gö
 
      Bu kitap Fiyat değerini görmenize olanak sağlar ve kendisine kolayca karşılaştırabilirsiniz `$bookAverage` değeri. Kitap fiyat Ortalamanın altında olduğundan `xsl:if` koşul başarılı olması gerekir.
 
-## <a name="step-through-the-code"></a>Kod aracılığıyla adım
+## <a name="step-through-the-code"></a>Kod üzerinden adım
  Hata ayıklayıcı aynı anda bir satır kod yürütmek sağlar.
 
 ### <a name="to-step-through-the-code"></a>Kod arasında
 
 1.  Tuşuna **F5** devam etmek için.
 
-     İlk kitap düğümü memnun çünkü `xsl:if` koşul, kitap düğümü XSL çıkış penceresine eklenir. Hata ayıklayıcı üzerinde yeniden konumlandırılmış kadar yürütmeye devam eder `xsl:if` stil sayfası öğesinde. Hata ayıklayıcı şimdi books.xml dosyanın ikinci kitap düğümünde konumlandırıldı.
+     İlk kitap düğümü memnun çünkü `xsl:if` koşul, kitap düğüm eklenmiş olup **XSL çıkış** penceresi. Hata ayıklayıcı üzerinde yeniden konumlandırılmış kadar yürütmeye devam eder `xsl:if` stil sayfası öğesinde. Hata ayıklayıcı Şimdi ikinci kitap düğümünde konumlandırılmış *books.xml* dosya.
 
-     Watch1 penceresinde `self::node()` değeri ikinci kitap düğüme değiştirir. Fiyat öğenin değerini inceleyerek, fiyat üzerinde ortalama, böylece olduğunu anlayabilirsiniz `xsl:if` koşulu başarısız olmalıdır.
+     İçinde **izleme 1** penceresi `self::node()` değeri ikinci kitap düğüme değiştirir. Fiyat öğenin değerini inceleyerek, fiyat üzerinde ortalama, böylece olduğunu anlayabilirsiniz `xsl:if` koşulu başarısız olmalıdır.
 
 2.  Tuşuna **F5** devam etmek için.
 
-     İkinci kitap düğümü karşılamadığı çünkü `xsl:if` koşul, kitap düğüm XSL çıkış penceresine eklenmez. Hata ayıklayıcı üzerinde yeniden konumlandırılmış kadar yürütmeye devam eder `xsl:if` stil sayfası öğesinde. Hata ayıklayıcı artık üçüncü konumlandırılmış `book` books.xml dosyasında düğümü.
+     İkinci kitap düğümü karşılamadığı için `xsl:if` koşul, kitap düğümü eklenmez **XSL çıkış** penceresi. Hata ayıklayıcı üzerinde yeniden konumlandırılmış kadar yürütmeye devam eder `xsl:if` stil sayfası öğesinde. Hata ayıklayıcı artık üçüncü konumlandırılmış `book` düğümünde *books.xml* dosya.
 
-     Watch1 penceresinde `self::node()` değeri üçüncü kitap düğüme değiştirir. Değerini inceleyerek tarafından `price` öğesi, fiyat ortalama, böylece olduğunu belirleyebilir `xsl:if` koşul başarılı olması gerekir.
+     İçinde **izleme 1** penceresi `self::node()` değeri üçüncü kitap düğüme değiştirir. Değerini inceleyerek tarafından `price` öğesi, fiyat ortalama, böylece olduğunu belirleyebilir `xsl:if` koşul başarılı olması gerekir.
 
 3.  Tuşuna **F5** devam etmek için.
 
-     Çünkü `xsl:if` koşulu karşılandı üçüncü kitap XSL çıkış penceresine eklenir. XML belgesi tüm kitapları işlenir ve hata ayıklayıcısı durdurur.
+     Çünkü `xsl:if` koşulu karşılandı üçüncü kitap eklenen **XSL çıkış** penceresi. XML belgesi tüm kitapları işlenir ve hata ayıklayıcısı durdurur.
 
 ## <a name="sample-files"></a>Örnek dosyaları
 
@@ -154,6 +155,6 @@ Aşağıdaki iki dosyaları izlenecek yol tarafından kullanılır.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)

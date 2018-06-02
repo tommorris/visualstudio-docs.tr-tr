@@ -20,20 +20,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94f93d58933ad0aba6cde985dc260fe3341aa5d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691969"
 ---
-# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>SharePoint Proje Öğeleri için Öğe Şablonları ve Proje Şablonları Oluşturma
+# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Öğe şablonları ve SharePoint Proje öğeleri için proje şablonları oluşturma
   Özel bir SharePoint Proje öğe türüne tanımladığınızda, diğer geliştiriciler Visual Studio Proje öğesi kullanabilmesi, onu bir öğe şablonu veya bir proje şablonu ile ilişkilendirebilirsiniz. Şablon için bir sihirbaz de oluşturabilirsiniz.  
   
  Örneğin, Visual Studio Proje şablonu veya bir SharePoint sitesine bir alan eklemek için öğe şablonu içermez. Bir alanı temsil eden bir SharePoint Proje öğe türüne tanımlayabilir ve diğer geliştiriciler alanı öğesi bir SharePoint projesine eklemek için kullanabileceğiniz bir öğesi şablonu oluşturun. Veya, geliştiriciler alan öğesini içeren yeni bir SharePoint Proje oluşturabilmesi için bir proje şablonu oluşturabilirsiniz. Her iki durumda da, geliştiricilerin şablonunuzu kullanırken görüntülenen Sihirbazı'nı da sağlayabilir. Bu sihirbaz yeni öğe veya projesini yapılandırma geliştiricilerden bilgi toplayabilir.  
   
  Öğe şablonları ve proje şablonları bir proje öğesi veya projesi oluşturmak için Visual Studio tarafından kullanılan dosyaları içeren .zip dosyalarıdır. Öğe şablonları ve proje şablonları temelleri hakkında daha fazla bilgi için bkz: [oluşturma proje ve öğe şablonlarını](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a> Öğe şablonları oluşturma  
+## <a name="create-item-templates"></a>Öğe şablonları oluşturma
  Bir SharePoint proje öğesi için bir öğe şablonu oluşturduğunuzda, bazı her zaman gerekli dosyaları ve belirli türde bir proje öğeleri tarafından kullanılan isteğe bağlı dosyalar vardır. Bir SharePoint Proje öğe türüne tanımlamak ve bir öğe şablonu oluşturmak nasıl izlenecek yol için bkz: [izlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Aşağıdaki tabloda, bir SharePoint proje öğesi için bir öğe şablonu oluşturmak için gereken dosyalar listelenmektedir.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
 |.aspx|Bir ASP.NET sayfası dosyası. Bu dosya uygulama sayfası tanımlayan XML biçimlendirme içeriyor.|  
 |.cs veya .vb dosyaları|Bu kod dosyaları Visual C# veya Visual Basic kodu, uygulama sayfaları, Web Bölümleri ve iş akışları gibi erişilebilen bir programlama modeli sahip SharePoint özelleştirmeleri davranışını tanımlar.|  
   
-## <a name="creating-project-templates"></a>Proje şablonları oluşturma  
+## <a name="create-project-templates"></a>Proje şablonları oluşturma
  Bir SharePoint Proje şablonu oluşturduğunuzda, belirli türde bir projeler tarafından kullanılan gerekli ve isteğe bağlı dosyaları her zaman kullanılan bazı dosyaları vardır. Genellikle, en az bir SharePoint proje öğesi SharePoint projeleri içerir. Ancak, bu gerekli değildir. Örneğin, yalnızca başka projelerde oluşturulan SharePoint çözümlerini dağıtmak için kullanılması hedeflenen bir SharePoint Proje şablonu tanımlayabilirsiniz.  
   
  Bir SharePoint Proje öğe türüne tanımlamak ve bir proje şablonu oluşturmak nasıl izlenecek yol için bkz: [izlenecek yol: bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -77,12 +78,12 @@ ms.lasthandoff: 04/16/2018
 |*featureName*.feature|Bu dosya, dağıtım için birkaç proje öğeleri gruplandırmak için kullanılan bir SharePoint özelliğini tanımlar. Bir özellik projenizde özelleştirmek için Özellik Tasarımcısı'nı kullandığınızda, Visual Studio özelliğiyle ilgili veri bu dosyada depolar. Proje öğeleri farklı gruplamanızı istiyorsanız, birden çok .feature dosyaları dahil edebilirsiniz.<br /><br /> Yalnızca en az gerekli içerik her .feature dosyasına eklenecek ve API'leri kullanarak özellikleri, yapılandırdığınız özel bir SharePoint Proje şablonu oluşturduğunuzda, öneririz <xref:Microsoft.VisualStudio.SharePoint.Features> ad alanı ile ilişkili bir uzantı Proje şablonu. Bunu yaparsanız, proje şablonu .feature dosyasının yapısını gelecekteki değişiklikler korunur. .Feature dosya yalnızca gerekli minimum içerik nasıl oluşturulacağını gösteren bir örnek için bkz [izlenecek yol: bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> .Feature dosyasını doğrudan değiştirmek istiyorsanız, % Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd. şema kullanarak içeriği doğrulayabilirsiniz|  
 |*featureName*. Template.XML|Bu dosya temel projeden oluşturulan her bir özellik için özellik bildirim dosyası (Feature.xml dosyasına) sağlar. Proje türü kullanıcılar tarafından değiştirilmesi amaçlanmamıştır bazı davranışı belirtmek istiyorsanız, bu dosyaya içerik ekleyebilirsiniz. Daha fazla bilgi için bkz: [yapı taşı: Özellikler](http://go.microsoft.com/fwlink/?LinkId=169183) ve [Feature.xml dosyasına](http://go.microsoft.com/fwlink/?LinkId=177795) dosyaları.<br /><br /> Projeye ait bir çözüm paketi oluşturma sırasında Visual Studio her çifti içeriğini birleştirir *featureName*.feature dosya ve *featureName*. Özellik bildirim dosyası Template.xml dosyalarıyla. Çözüm paketleri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint çözüm paketi (wsp) oluşturma](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b).|  
   
-## <a name="creating-wizards-for-item-templates-and-project-templates"></a>Öğe şablonları ve proje şablonları için sihirbazları oluşturma  
+## <a name="create-wizards-for-item-templates-and-project-templates"></a>Sihirbazlar için öğe şablonları ve proje şablonları oluşturma
  Bir SharePoint proje öğesi türü tanımlama ve bir öğe veya proje şablonuyla ilişkilendirin sonra bir Sihirbazı da oluşturabilirsiniz. Sihirbaz, bir geliştirici SharePoint proje öğesi için bir proje eklemek için öğe şablonu kullandığında ya da bir geliştirici SharePoint proje öğesi içeren yeni bir proje oluşturmak için proje şablonu kullandığında görüntüler. Sihirbaz, geliştiricilerin bilgi toplamak ve yeni SharePoint proje öğesi başlatmak için kullanılabilir.  
   
  Öğe şablonları ve proje şablonları için sihirbazları oluşturma gösteren talimatlara için bkz: [izlenecek yol: bir öğe şablonu, bölüm 2 ile özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) ve [izlenecek yol: bir Site oluşturma Sütunu proje öğesi ile bir proje şablonu, bölüm 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Özel SharePoint proje öğesi türlerini tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [İzlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [İzlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
@@ -90,4 +91,4 @@ ms.lasthandoff: 04/16/2018
  [İzlenecek yol: bir proje şablonu, bölüm 2 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [Proje ve Öğe Şablonları Oluşturma](/visualstudio/ide/creating-project-and-item-templates)  
   
-  
+ 

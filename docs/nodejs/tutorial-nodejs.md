@@ -14,10 +14,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 207d5941527d51c18c6690166ef751b4782b481c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477255"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve hızlı uygulama oluşturma
 Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
@@ -170,7 +171,7 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 1. Üzerine gelerek `getData` bir DataTip içinde özelliklerini görmek için
 
-    ![Değişkenleri inceleyin.](../nodejs/media/tutorial-nodejs-inspect-variables.png)
+    ![Değişkenleri inceleme](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
 1. Tuşuna **F5** (**hata ayıklama** > **devam**) devam etmek için.
 
@@ -188,7 +189,7 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 1. Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**.
 
-   ![Azure App Service'te yayımlama](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
+   ![Azure App Service’e yayımlama](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. Seçin **Microsoft Azure uygulama hizmeti**.
 

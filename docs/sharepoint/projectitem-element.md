@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1805ea5b09eac6fbe1efffe8581c347c586442cd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f6d273e0fa980e25c8b8d0c7ea6b1a8eb5d537c9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692047"
 ---
 # <a name="projectitem-element"></a>ProjectItem Öğesi
   Bir SharePoint proje öğesi temsil eder. Bu öğe the.spdata dosyasının gerekli kök öğesi.  
@@ -72,7 +73,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel|  
 |**Şema adı**|SharePoint proje öğesi şeması|  
 |**Dosya doğrulama**|ProjectItemModelSchema.xsd|  
 |**Boş olamaz**|Hayır|  

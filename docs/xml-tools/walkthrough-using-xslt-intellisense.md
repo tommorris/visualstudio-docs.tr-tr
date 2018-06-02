@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: XSLT IntelliSense kullanma'
+title: 'İzlenecek Yol: XSLT IntelliSense Kullanma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3240868ce8f749bf97a12054aac4760018c71d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693529"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>İzlenecek yol: XSLT IntelliSense kullanma
+# <a name="walkthrough-using-xslt-intellisense"></a>İzlenecek Yol: XSLT IntelliSense Kullanma
 
 Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı özniteliklerin için nasıl kullanılacağı gösterilir.
 
@@ -46,7 +47,7 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
     </xsl:stylesheet>
     ```
 
-2.  Ekle imleci sonra `<xsl:template name="msg23" match="msg23">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:call-template` öğe:
+2.  Ekle imleci sonra `<xsl:template name="msg23" match="msg23">` ve basın **Enter**. Aşağıdaki yazmaya başlayın `xsl:call-template` öğe:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -55,7 +56,7 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
 
      Şablon adları listesi görünür `name=""` özniteliği `xsl:call-template` yazarken öğesi.
 
-3.  Ekle imleci sonra `<xsl:call-template name="localized-message">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:with-param` öğe:
+3.  Ekle imleci sonra `<xsl:call-template name="localized-message">` ve basın **Enter**. Aşağıdaki yazmaya başlayın `xsl:with-param` öğe:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -112,7 +113,7 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
     </xsl:stylesheet>
     ```
 
-2.  Ekle imleci sonra `<xsl:apply-templates select="phone" />` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl: apply-templates` öğe:
+2.  Ekle imleci sonra `<xsl:apply-templates select="phone" />` ve basın **Enter**. Aşağıdaki yazmaya başlayın `xsl: apply-templates` öğe:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -153,7 +154,7 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
     </xsl:stylesheet>
     ```
 
-2.  Ekle imleci sonra `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:namespace-alias` öğe:
+2.  Ekle imleci sonra `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ve basın **Enter**. Aşağıdaki yazmaya başlayın `xsl:namespace-alias` öğe:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
@@ -163,4 +164,4 @@ Bu anlatımda XSLT IntelliSense otomatik tamamlama değerinin bazı öznitelikle
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [XML Düzenleyicisi IntelliSense Özellikleri](../xml-tools/xml-editor-intellisense-features.md)
+- [XML Düzenleyicisi IntelliSense özellikleri](../xml-tools/xml-editor-intellisense-features.md)

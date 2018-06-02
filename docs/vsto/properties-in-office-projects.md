@@ -1,5 +1,5 @@
 ---
-title: Office projelerinde Özellikler | Microsoft Docs
+title: Office projelerinde Özellikler
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,19 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47af1dae914528a3a338503989e53f081dfffde5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b5c5e0719f7b619fa00a3a0f4333ae0080c0715
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692778"
 ---
-# <a name="properties-in-office-projects"></a>Office Projelerinde Özellikler
+# <a name="properties-in-office-projects"></a>Office projelerinde Özellikler
   Visual Studio'da Office projeleri için kullanılabilen çeşitli önemli özellikler vardır. Bu özellikleri erişilebilen **özellikleri** penceresi.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="namespace-for-host-item"></a>Namespace konak öğesi  
- Kullanım **Namespace konak öğesi için** konak öğesi sınıfları için ad alanı değiştirmek için özelliği (örneğin, `ThisAddIn`, `ThisWorkbook`, veya `ThisDocument` sınıfları) Visual C# projelerine. Bu özellik görünür **özellikleri** (örneğin, Excel veya Word'den VSTO eklenti projesindeki (örneğin, ExcelWorkbook1.xlsx veya WordDocument1.docx) belge düzeyi projede belge düğümü veya uygulama düğümünü seçtiğinizde penceresi ) içinde **Çözüm Gezgini**.  
+ Kullanım **Namespace konak öğesi için** konak öğesi sınıfları için ad alanı değiştirmek için özelliği (örneğin, `ThisAddIn`, `ThisWorkbook`, veya `ThisDocument` sınıfları) Visual C# projelerine. Bu özellik görünür **özellikleri** belge düzeyi projede belge düğümünü seçtiğinizde penceresi (gibi *ExcelWorkbook1.xlsx* veya *WordDocument1.docx* ) veya bir VSTO eklenti projesindeki (örneğin, Excel veya Word'den) içinde uygulama düğümü **Çözüm Gezgini**.  
   
  Visual C# Office proje oluşturduğunuzda, ana bilgisayar öğeleri proje adını temel alarak bir ad verilir. Kullanmanız önerilir **Namespace konak öğesi için** yerine ad değiştirmek için kodu düzenleme özelliği dosyaları doğrudan. Bu özellik kullandığınızda, ad alanı oluşturulan (gizli) kod dosyalarında yanı sıra görünür kod dosyalarında değiştirilir.  
   
@@ -46,14 +47,14 @@ ms.lasthandoff: 04/16/2018
   
 -   Seçin **false** belgede önbelleğe alınacak veri kümesi istemiyorsanız.  
   
- Verileri önbelleğe alma hakkında daha fazla bilgi için bkz: [önbelleğe alınmış verileri belge düzeyi özelleştirmelerinde](../vsto/cached-data-in-document-level-customizations.md).  
+ Verileri önbelleğe alma hakkında daha fazla bilgi için bkz: [belge düzeyi özelleştirmelerinde verileri önbelleğe](../vsto/cached-data-in-document-level-customizations.md).  
   
 ## <a name="value2"></a>Value2  
  **Value2** özelliktir yalnızca Excel çalışma kitabı veya şablon projeleri için kullanılabilir. Altında görünür **veri bağlamaları** özelliği düğümünde **özellikleri** seçtiğinizde penceresi bir <xref:Microsoft.Office.Tools.Excel.NamedRange> çalışma sayfası tasarımcısında denetim.  
   
  Kullanım **Value2** özelliğinde **özellikleri** bağlamak için pencere <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliği <xref:Microsoft.Office.Tools.Excel.NamedRange> , veri kaynağında bir alan için.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
  [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)   
  [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md)  

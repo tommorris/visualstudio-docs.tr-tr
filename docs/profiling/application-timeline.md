@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d5eca01cc5a9f910c16685f4aec36cd69f37a94
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691030"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Kaynak tüketimini ve kullanıcı Arabirimi iş parçacığı etkinliği (XAML) çözümler.
 Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek için Profil Oluşturucu ile ilgili performans sorunları XAML uygulamaları. Bu araç, uygulamaları kaynak tüketimini ayrıntılı bir görünümünü sağlayarak XAML uygulamalarının performansını artırmaya yardımcı olur. UI çerçeveler (düzeni ve işleme) hazırlama, ağ ve disk isteklere hizmet uygulamanızı ve uygulama başlatma, sayfa yükleme gibi senaryolarda zamanın çözümleyebilir ve Windows yeniden boyutlandırın.  
@@ -34,10 +35,10 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 5.  Windows 7  
   
 > [!NOTE]
->  Toplamak ve CPU kullanım verilerini ve enerji Tüketim verileri ile birlikte çözümlemek **ApplicationTimeline** veri. Bkz: [ile veya olmadan hata ayıklayıcı Profil Araçları çalıştıran](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+>  Toplamak ve CPU kullanım verilerini ve enerji Tüketim verileri ile birlikte çözümlemek **ApplicationTimeline** veri. Bkz: [Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırmak](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 ## <a name="collect-application-timeline-data"></a>Uygulama zaman çizelgesi verilerini topla  
- Yerel makinenize, bağlı bir aygıt, Visual Studio simulator veya Öykünücüler veya uzak bir aygıt, uygulamanızın yanıtlama hızı profil. Bkz: [ile veya olmadan hata ayıklayıcı Profil Araçları çalıştıran](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+ Yerel makinenize, bağlı bir aygıt, Visual Studio simulator veya Öykünücüler veya uzak bir aygıt, uygulamanızın yanıtlama hızı profil. Bkz: [Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırmak](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
 >  Mümkünse, doğrudan cihazda uygulamayı çalıştırın. Uygulama performansı simulator'da gözlenen veya bir Uzak Masaüstü Bağlantısı gerçek performans aygıtta aynı olmayabilir. Diğer taraftan, Visual Studio uzak araçlar kullanarak veri toplama performans verilerini etkilemez.  
@@ -51,7 +52,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 3.  Seçin **uygulama zaman çizelgesi** ve ardından **Başlat** pencerenin altındaki.  
   
     > [!NOTE]
-    >  VsEtwCollector.exe çalıştırmak için izninizi isteyen bir kullanıcı hesabı denetimi penceresinde görebilirsiniz. **Evet**'i tıklayın.  
+    >  Çalıştırmak için izninizi isteyen bir kullanıcı hesabı denetimi penceresinde görebilirsiniz *VsEtwCollector.exe*. **Evet**'i tıklayın.  
   
 4.  Uygulamanızı performans verilerini toplamak için profil ilgilendiğiniz senaryosu çalıştırabilirsiniz.  
   
@@ -96,7 +97,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 |||  
 |-|-|  
 |**Ayrıştırma**|Ayrıştırma XAML dosyaları ve oluşturma nesneleri için harcanan süre.<br /><br /> Genişleyen bir **ayrıştırma** düğümünde **zaman çizelgesi ayrıntıları** sonucunda kök olay Ayrıştırılan tüm XAML dosyaları bağımlılık zinciri görüntüler. Bu, gereksiz dosya ayrıştırma ve nesne oluşturma performans hassas senaryolarda tanımlamak ve bunları en iyi duruma getirmek olanak tanır.|  
-|**Düzen**|Büyük uygulamalarda, aynı anda ekranda öğeleri binlerce gösterilebilir. Bu bir düşük UI kare hızı ve buna bağlı olarak zayıf uygulama yanıt hızını neden olabilir. Düzen olay doğru şekilde her öğe (Düzenle, ölçü, ApplyTemplate, ArrangeOverride ve ArrangeOverride harcanan zaman) düzenlemeyi maliyetini belirler ve bölüm düzeni geçişinde sürdü görsel ağaçlar oluşturur. Bu görselleştirme, mantıksal ağaçları ayıklanacağını ya da diğer erteleme mekanizmaları düzeni geçişi en iyi duruma getirme değerlendirmek için hangisinin belirlemek için kullanabilirsiniz.|  
+|**Düzen**|Büyük uygulamalarda, aynı anda ekranda öğeleri binlerce gösterilebilir. Bu bir düşük UI kare hızı ve buna bağlı olarak zayıf uygulama yanıt hızını neden olabilir. Düzen olay doğru şekilde her öğe yerleştirmede maliyetini belirler (diğer bir deyişle, harcanan zamanı Yerleştir, ölçü, ApplyTemplate, ArrangeOverride ve ArrangeOverride) ve bölüm düzeni geçişinde sürdü görsel ağaçlar oluşturur. Bu görselleştirme, mantıksal ağaçları ayıklanacağını ya da diğer erteleme mekanizmaları düzeni geçişi en iyi duruma getirme değerlendirmek için hangisinin belirlemek için kullanabilirsiniz.|  
 |**İşleme**|Çizim XAML öğeleri ekranda geçirilen süre.|  
 |**T / 0**|Harcanan zamanı yerel diskten veya üzerinden erişilen ağ kaynaklarına veri alma [Microsoft Windows Internet (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Uygulama kodu**|Ayrıştırma veya düzenine ilgili olmayan uygulama (kullanıcı) kod çalıştırırken için harcanan süre.|  

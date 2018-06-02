@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a135115dc6d004e8b853822d4fc6024d5aec84
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
-ms.translationtype: HT
+ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690633"
 ---
 # <a name="attach"></a>İliştir
-VSPerfCmd.exe **Attach** seçeneği başlar çalışan işleminin işlem kimliği (PID) tarafından belirtilen örnek profil.  
+*VSPerfCmd.exe* **Attach** seçeneği başlar çalışan işleminin işlem kimliği (PID) tarafından belirtilen örnek profil.  
   
  Kullanılacak **Attach** seçeneğini belirtmelisiniz **örnek** başlangıç seçeneği yöntemi.  
   
@@ -74,8 +75,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Attach:12345  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [ASP.NET web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)

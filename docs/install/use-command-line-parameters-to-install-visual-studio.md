@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'yu yüklemek için komut satırı parametreleri kullanma
+title: Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme
 description: Komut satırı parametreleri denetlemek veya Visual Studio yüklemenizi özelleştirmek için nasıl kullanılacağını öğrenin.
 ms.custom: ''
 ms.date: 05/07/2018
@@ -17,10 +17,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a27148619879ea90dba21704a0aa57fdf5f04551
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477372"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017 yüklemek için komut satırı parametreleri kullanın
 

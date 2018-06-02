@@ -15,10 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477112"
 ---
 # <a name="utilization-view"></a>Kullanım Görünümü
 **Kullanım görünümü** CPU, GPU ve geçerli işlem tarafından kullanılan diğer sistem kaynaklarını hakkındaki bilgileri görüntüler (seçin **Çözümle** > **eşzamanlılık Görselleştirici** eşzamanlılık görselleştiricisi başlatmak için). Çözümlenen işlemi, boşta işlemi, sistem işlem ve zaman içinde sistem üzerinde çalışan diğer işlemler tarafından ortalama Çekirdek kullanımını gösterir. Hangi belirli çekirdek herhangi bir anda etkin göstermez. Örneğin, iki çekirdek her belirli bir süre için yüzde 50 kapasiteyle çalıştırıyorsanız, bu görünüm kullanılan bir mantıksal çekirdek gösterir. Profil oluşturma süresi kısa bir süre parçalara bölerek oluşturulan görüntüleyin. Her segment için grafiğin üzerinde mantıksal çekirdekler bu zaman aralığı boyunca yürütülen işlem iş parçacıklarının ortalama sayısı çizer.  

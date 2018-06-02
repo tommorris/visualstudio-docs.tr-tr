@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9df99b2d3cf28f5c548f1b794ad3f565f4d8b7
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690799"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Gelişmiş Ayarlar iletişim kutusu (eşzamanlılık görselleştiricisi)
 Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselleştirici izlemeleri nasıl toplanır denetleyebilirsiniz.  İletişim kutusu sembolleri, sadece kendi kodumu, arabelleğe alma, filtreleme, CLR olayları, işaretçileri, sağlayıcıları ve dosyaları için sekme bulunur.  
@@ -25,9 +26,9 @@ Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselle�
  Eşzamanlılık görselleştiricisi Visual Studio hata ayıklayıcısında simge ayarlarının aynısını kullanır. Eşzamanlılık görselleştiricisi ayarları performans verileri ile ilişkili çağrı yığınları çözümlemek için kullanır.  Eşzamanlılık görselleştiricisi izlemeleri işlediğinde, Ayarları sayfasında belirtilen simge sunucuları erişir.  Bu verileri bir ağ üzerinden erişildiğinde izleme işleme yavaşlar.  Simgeler çözümlemek için gerekli süreyi azaltmak için simgeler yerel olarak önbelleğe alabilir. Visual Studio simgeler yüklenmişse, bunları yerel önbellekten yükler.  
   
 ## <a name="just-my-code"></a>Yalnızca Kendi Kodum  
- Varsayılan olarak, sadece kendi kodumu Visual Studio geçerli çözümde ile ilişkili olan .exe ve .dll dosyaları kümesidir. Çağrı yığınları filtrelemek için sadece kendi kodumu özelliğini kullandığınızda eşzamanlılık görselleştiricisi bu dosyaları kümesini değerlendirir. Sadece kendi kodumu sekmesinde sadece kendi kodumu eşzamanlılık görselleştiricisi kullanan konumlara .exe ve .dll dosyalarını içeren dizinler ekleyebilirsiniz.  
+ Varsayılan olarak, sadece kendi kodumu kümesidir. *exe* ve. *dll* Visual Studio geçerli çözümde ile ilişkili olan dosyaları. Çağrı yığınları filtrelemek için sadece kendi kodumu özelliğini kullandığınızda eşzamanlılık görselleştiricisi bu dosyaları kümesini değerlendirir. Sadece kendi kodumu sekmesinde içeren dizinler ekleyebilirsiniz. *exe* ve. *dll* eşzamanlılık görselleştiricisi sadece kendi kodumu kullanan konumlara dosyaları.  
   
- İzleme toplandığında .exe ve .dll dosyalarını yollarını izleme dosyasında depolanır.  Bu ayarı değiştirmek daha önce toplanan tüm izlemeleri etkilemez.  
+ Yollarını. *exe* ve. *dll* dosyaları izleme toplandığında izleme dosyasında saklanır.  Bu ayarı değiştirmek daha önce toplanan tüm izlemeleri etkilemez.  
   
 ## <a name="buffering"></a>Arabelleğe alma  
  Eşzamanlılık görselleştiricisi izleme topladığı olay Windows için izleme (ETW) kullanır.  ETW olaylarını depolayan çeşitli arabellekleri kullanır.  Varsayılan ETW arabellek ayarları tüm durumlarda ve bazı durumlarda en iyi olmayabilir, kaybedilen olaylar gibi sorunlara neden olabilir.  ETW arabellek ayarlarını yapılandırmak için arabelleğe kaydetme açık sekmesini kullanabilirsiniz. Daha fazla bilgi için bkz: [olay izleme](http://go.microsoft.com/fwlink/?LinkId=234579) ve [EVENT_TRACE_PROPERTIES yapısı](http://go.microsoft.com/fwlink/?LinkId=234580).  
@@ -56,7 +57,7 @@ Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselle�
 ## <a name="markers"></a>İşaretçileri  
  Üzerinde **işaretçileri** sekmesinde eşzamanlılık görselleştiricisi işaretleyici olarak gösterilen ETW sağlayıcılar kümesini yapılandırabilirsiniz.  Ayrıca işaretleyici koleksiyonu önem düzeyini ve ETW kategorisine göre filtreleyebilirsiniz.  Kullanıyorsanız [eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md) ve böylece iş parçacıkları görünümünde görünür kendi işaret sağlayıcısını kullanarak, bunu burada kaydedebilirsiniz.  
   
-### <a name="adding-a-new-provider"></a>Yeni bir sağlayıcı ekleme  
+### <a name="add-a-new-provider"></a>Yeni bir sağlayıcı Ekle  
  Kodunuzu kullanıyorsa [eşzamanlılık görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md) veya izleyin ETW olayları oluşturur <xref:System.Diagnostics.Tracing.EventSource> kuralı, görüntüleyebilirsiniz bu olayları eşzamanlılık görselleştiricisi bu iletişim kutusunda kaydederek.  
   
  İçinde **adı** alanında, sağlayıcı tarafından oluşturulan olaylar türlerini açıklayan bir ad girin.  İçinde **GUID** alan, bu sağlayıcıyla ilişkili GUID girin. (Bir GUID her ETW sağlayıcı ile ilişkilidir.)  
@@ -74,13 +75,13 @@ Kullanarak **Gelişmiş ayarları** iletişim kutusu Eş zamanlılık Görselle�
 ## <a name="files"></a>Dosyalar  
  Üzerinde **dosyaları** sekmesi altında hangi izleme dosyaları depolanır her zaman bir izleme dizini toplanır belirtebilirsiniz.  Eşzamanlılık görselleştiricisi topladığı her izleme için dört dosyaları oluşturur:  
   
--   Bir çekirdek modu olay izleme (ETL) günlük dosyası (*. kernel.etl)  
+-   Bir çekirdek modu olay izleme (ETL) günlük dosyası (*.* Kernel.etl*)  
   
--   Bir kullanıcı modu olay izleme günlük dosyasını (*. user.etl)  
+-   Bir kullanıcı modu olay izleme günlük dosyasını (*.* User.etl*)  
   
--   Eşzamanlılık görselleştiricisi veri dosyası (*. CVData)  
+-   Eşzamanlılık görselleştiricisi veri dosyası (*.* CVData*)  
   
--   Eşzamanlılık görselleştiricisi izleme dosyası (*. CVTrace)  
+-   Eşzamanlılık görselleştiricisi izleme dosyası (*.* CVTrace*)  
   
  İki ETL dosya Ham izleme verilerini depolamak ve işlenen verilerin iki eşzamanlılık görselleştiricisi dosyaları depolamak.  Bir izleme işlendikten sonra ham ETL dosyaları genellikle kullanılmaz.  Seçme **silmek olay izleme günlüğü (ETL) dosyaları çözümleme sonrasında** onay kutusu, diskte depolanan izleme veri miktarını azaltır.  
   

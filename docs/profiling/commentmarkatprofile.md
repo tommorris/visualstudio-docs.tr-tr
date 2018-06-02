@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe58f2ac769a75ea6422a7877fe4846eefc918c3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 1ced0f3e882025e4a6e1bdd940f5aa0d189beb58
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690981"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-`CommentMarkAtProfile` Yöntemi .vsp dosyasında bir zaman damgası değeri, sayısal işareti ve bir açıklama dizesi ekler. Zaman damgası değeri dış olayları eşitlemek için kullanılır. CommentMarkAtProfile işlevi içeriyor iş parçacığı için profil oluşturma, işareti ve eklenecek açıklama için açık olması gerekir.  
+`CommentMarkAtProfile` Yöntemi, bir zaman damgası değeri, sayısal işareti ve bir açıklama dizesi olarak ekler. *Vsp* dosya. Zaman damgası değeri dış olayları eşitlemek için kullanılır. CommentMarkAtProfile işlevi içeriyor iş parçacığı için profil oluşturma, işareti ve eklenecek açıklama için açık olması gerekir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

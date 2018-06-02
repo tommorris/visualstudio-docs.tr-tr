@@ -13,10 +13,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 424675726dd91664923cde0a3a5ad5573d51b4d5
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548345"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>İş parçacığı ve işlem eşzamanlılık verileri toplama
 

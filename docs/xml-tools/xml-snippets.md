@@ -1,5 +1,5 @@
 ---
-title: XML parçacıkları
+title: XML Kod Parçacıkları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f92b96f09353bf8e432d6a3931a534064ad7c446
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 07ddb1dd64e5d972c23a032cb1eb752515d92ab6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693857"
 ---
 # <a name="xml-snippets"></a>XML parçacıkları
 
@@ -40,18 +41,18 @@ Bazı genel görevleri kapsayan birçok parçacıkları XML Düzenleyicisi'ni i�
 
  İki yolla parçacıkları ekleyebilirsiniz. **Ekle parçacığı** komutu XML parçacığını İmleç konumuna ekler. **Surround With** komutu seçili metninin çevresindeki XML parçacığını sarmalar. Her iki komutlar ya da kullanılabilir gelen **IntelliSense** altında alt **Düzenle** menüsünde veya Düzenleyicisi kısayol menüsünden.
 
- Daha fazla bilgi için bkz: [nasıl yapılır: XML Parçacıkları kullanma](../xml-tools/how-to-use-xml-snippets.md).
+ Daha fazla bilgi için bkz: [nasıl yapılır: kullanım XML parçacıkları](../xml-tools/how-to-use-xml-snippets.md).
 
-## <a name="schema-generated-xml-snippets"></a>XML şema oluşturulan kod parçacıkları
+## <a name="schema-generated-xml-snippets"></a>Şema oluşturulan XML parçacıkları
  XML Düzenleyicisi'ni, aynı zamanda bir XML şemasından bir XML parçacığını oluşturmak için silebilir. Bu özellik, bu öğe için şema bilgileri üretilen XML öğeleri olan bir öğe doldurmak sağlar.
 
- Daha fazla bilgi için bkz: [nasıl yapılır: XML parçacığını gelen bir XML şeması oluşturmak](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
+ Daha fazla bilgi için bkz: [nasıl yapılır: XML şemasından bir XML parçacığını oluşturmak](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
 ## <a name="create-new-xml-snippets"></a>Yeni XML parçacıkları oluşturma
  Dahil edilen parçacıkları yanı sıra [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio varsayılan olarak da oluşturabilir ve kendi XML parçacıkları kullanın.
 
- Daha fazla bilgi için bkz: [nasıl yapılır: XML parçacıkları oluşturma](../xml-tools/how-to-create-xml-snippets.md).
+ Daha fazla bilgi için bkz: [nasıl yapılır: XML oluşturmak parçacıkları](../xml-tools/how-to-create-xml-snippets.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)

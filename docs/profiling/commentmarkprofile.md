@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f18e8ab05cf6331049e71c552d7b72a6b9235e0
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: aaae7a6ce1185426f23a8182ddcdf0c969f39a4b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691049"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-`CommentMarkProfile` İşlevi .vsp dosyasında bir sayısal işaret ve bir metin dizesi ekler. Açıklama ve işareti için içeren iş parçacığı için profil oluşturma `CommentMarkProfile` işlevi açık olması gerekir.  
+`CommentMarkProfile` İşlevi ekler sayısal işaret ve bir metin dizesi içinde. *Vsp* dosya. Açıklama ve işareti için içeren iş parçacığı için profil oluşturma `CommentMarkProfile` işlevi açık olması gerekir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -55,7 +56,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Açıklamalar  
  İşaretleri ve yorumları Vsınstr işareti komutuyla veya işlevler (CommentMarkAtProfile, CommentMarkProfile veya MarkProfile) ile eklendiğinde işareti profili işlevi içeren iş parçacığı için profil oluşturma durumu olmalıdır.  
   
- Profil işaretleri kapsamda geneldir. Örneğin, bir iş parçacığında eklenen bir profili işareti başlangıç ya da herhangi bir iş parçacığı .vsp dosyasındaki veri segmentinin sonunu işaretlemek için kullanılabilir.  
+ Profil işaretleri kapsamda geneldir. Örneğin, bir iş parçacığında eklenen bir profili işareti başlangıç ya da herhangi bir iş parçacığı veri segmentinin sonunu işaretlemek için kullanılabilir. *vsp* dosya.  
   
 > [!IMPORTANT]
 >  CommentMarkProfile yöntemi yalnızca araçları ile kullanılabilir.  

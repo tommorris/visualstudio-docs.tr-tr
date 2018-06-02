@@ -1,5 +1,5 @@
 ---
-title: Veritabanına veri kaydetme
+title: Verileri yeniden veritabanına kaydetme
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691140"
 ---
-# <a name="save-data-back-to-the-database"></a>Veritabanına veri kaydetme
+# <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 Veri kümesi, veri bir bellek içi kopyasıdır. Bu verileri değiştirirseniz, bu değişiklikleri veritabanına kaydetmek için iyi bir uygulamadır. Bu üç yöntemden birini yapın:
 
 -   Bir TableAdapter güncelleştirme yöntemlerden birini çağırarak
@@ -221,7 +222,7 @@ Bir veri kümesinde değişiklikler yapıldıktan sonra bir veri kaynağına yap
 
  Güncelleştirmeleri nasıl yapılacağını çizim, uygulamanızın tek veri tablosu içeren bir veri kümesi kullandığını varsayın. Uygulama veritabanından iki satır getirir. Sonra alma, bellek içi veri tablosu şöyle görünür:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ Bir veri kümesinde değişiklikler yapıldıktan sonra bir veri kaynağına yap
 
  Uygulamanızı Nancy Buchanan'ın durumunu "Tercih edilen olarak." değiştirir. Değeri, bu değişikliğin sonucu olarak <xref:System.Data.DataRow.RowState%2A> ilgili satır özelliğini değiştirir <xref:System.Data.DataRowState.Unchanged> için <xref:System.Data.DataRowState.Modified>. Değeri <xref:System.Data.DataRow.RowState%2A> ilk satırın özelliğinin kalır <xref:System.Data.DataRowState.Unchanged>. Veri tablosu şimdi şöyle görünür:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

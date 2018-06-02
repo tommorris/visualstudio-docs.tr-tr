@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693675"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sıralama, filtreleme ve gruplandırma (XML Şeması Gezgini)
 
-Bu konu aracılığıyla kullanılabilir seçenekler açıklanmaktadır **sıralama, filtreleme ve gruplandırma seçeneklerini** XML Şeması Explorer araç çubuğundaki menüsü.
+Bu konu aracılığıyla kullanılabilir seçenekler açıklanmaktadır **sıralama, filtreleme ve gruplandırma seçeneklerini** menüsünde **XML Şeması Explorer** araç.
 
 ## <a name="filter-options"></a>Filtre Seçenekleri
 
@@ -32,7 +33,7 @@ Bu konu aracılığıyla kullanılabilir seçenekler açıklanmaktadır **sıral
 
 ## <a name="sorting-options"></a>Sıralama seçenekleri
 
- Aşağıdaki sıralama seçenekleri kullanılabilir. Varsayılan değer **türe göre sırala**. Sıralama ölçütü seçenekleri dosyaları ve ad alanları için geçerli değildir.
+ Aşağıdaki sıralama seçenekleri kullanılabilir. Varsayılan değer **türe göre sırala**. **Sıralama ölçütü** seçenekleri dosyaları ve ad alanları için geçerli değildir.
 
 -   **Türe Göre Sırala**.
 

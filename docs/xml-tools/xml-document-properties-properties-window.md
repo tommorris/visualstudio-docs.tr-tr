@@ -1,5 +1,5 @@
 ---
-title: XML belge özellikleri, özellik penceresi
+title: XML Belge Özellikleri, Özellik Penceresi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4610a2574fbd822e4468436655668cff3892270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693571"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML belge özellikleri, özellik penceresi
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
  Farklı stil sayfası olması gerektiğini belirtmek için bir XSLT dosyası düzenlerken, bu özellik kullanılabilir olduğunda kullanılabilir **XSLT çıkış Göster** veya **hata ayıklama XSLT** komutu seçilidir. Örneğin, bir üst stil sayfasında bulunan bir stil sayfası düzenlerken bunu yapmak isteyebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)
-- [XML Düzenleyicisi Bileşenleri](../xml-tools/xml-editor-components.md)
+- [XML Düzenleyicisi bileşenleri](../xml-tools/xml-editor-components.md)

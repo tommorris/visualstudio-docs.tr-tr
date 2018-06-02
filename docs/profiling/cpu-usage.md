@@ -11,12 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b372d3d76153b5f5c885a6987d898cf55254b413
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477528"
 ---
-# <a name="analyze-cpu-usage"></a>CPU kullanımı analiz
+# <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme
 Uygulamanızda performans sorunları araştırmak gerektiğinde başlatmak için uygun bir yerdir nasıl CPU kullandığı anlamaktır. **CPU kullanımı** aracı gösterir, CPU Visual C++, Visual C# yürütme süresi yeri harcıyorsa / Visual Basic ve JavaScript kodu. Visual Studio 2015 güncelleştirme 1'de başlayarak, hata ayıklayıcı ayrılmadan CPU kullanımı işlevi başına dökümünü görebilirsiniz. Hata ayıklama sırasında CPU açma ve kapatma profil açın ve yürütme, örneğin bir kesme noktasında durdurulduğunda sonuçları görüntüleyin.  
   
 Çalıştıran ve tanılama oturumunuz yönetmek için birkaç seçeneğiniz vardır. Örneğin, çalıştırabilirsiniz **CPU kullanımı** aracı yerel veya uzak makinelerde veya üzerinde bir simulator veya öykünücü. Visual Studio'da çalışan bir uygulama için bağlı, açık bir projesi performansını analiz ya da Microsoft Store yüklü bir uygulamayı başlatın. Daha fazla bilgi için bkz: [çalıştırmak profil oluşturma araçları ile veya olmadan hata ayıklayıcı](../profiling/running-profiling-tools-with-or-without-the-debugger.md).

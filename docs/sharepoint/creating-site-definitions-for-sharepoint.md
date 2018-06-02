@@ -18,24 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691810"
 ---
-# <a name="creating-site-definitions-for-sharepoint"></a>SharePoint için Site Tanımları Oluşturma
+# <a name="creating-site-definitions-for-sharepoint"></a>SharePoint için site tanımları oluşturma
   SharePoint Site tanımı projesinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturmanıza olanak tanır bir *site tanım*, hangi yeni bir SharePoint sitesi için bir temel olarak hizmet verir. Bu tanımları yalnızca görünümünü ve davranışını SharePoint sitesi, ancak aynı zamanda varsayılan içeriğini ve işlevleri belirler. Tanımı'nda, önceden yapılandırılmış listeleri, içerik türleri, Olay alıcıları, resimleri ve diğer öğeleri koyabilirsiniz. Örneğin, SharePoint BLOG gibi bazı site tanımları içerir. BLOG sitesi tanımına dayalı olarak bir site oluşturduğunuzda, site listeler, Web Bölümleri ve bir blog sitesi gerektiren diğer öğeleri içerir.  
   
  Site tanımları hakkında daha fazla bilgi için bkz: [Site şablonları ve tanımları](http://go.microsoft.com/fwlink/?LinkId=179134).  
   
-## <a name="site-definition-projects"></a>Site Tanımı Projeleri  
+## <a name="site-definition-projects"></a>Site tanımı projeleri
  Site tanımı projelerinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir SharePoint sitesi gereken temel dosyaları sağlar; herhangi bir varsayılan işlevsellik belirtmeyin. Dosyaları ve istediğiniz işlevselliği sağlamak için içeriği eklemeniz gerekir. Site oluşturma ve sizin için gereken dosyaları ekleyerek el ile oluşturabilirsiniz.  
   
-## <a name="feature-stapling"></a>Özellik Zımbalama  
+## <a name="feature-stapling"></a>Zımbalı özelliği
  Site tanımları oluşturma yararlarından biri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otomatik olarak kullandıkları olan *özelliği Zımbalı*. Özellik Zımbalama işlevselliğini site tanımı kendisi yerine site tanımı bir özellik ekler. Bunun yapılması, özgün site tanımı değiştirmeden site tanımı kullanılarak oluşturulan herhangi bir siteye özelliği eklemenizi sağlar. Daha fazla bilgi için bkz: [özelliği Zımbalı](http://go.microsoft.com/fwlink/?LinkID=119283).  
   
-## <a name="site-definition-project-components"></a>Site Tanımı Proje Bileşenleri  
+## <a name="site-definition-project-components"></a>Site tanımı projesi bileşenleri
  Bir site tanımı çözüm oluşturduğunuzda aşağıdaki varsayılan dosyaları eklenir, **SiteDefinition** düğümü.  
   
 |Dosya Adı|Açıklama|  
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/16/2018
 |onet.XML|Yeni sitenin yapılandırmasını, bileşenlerini site tanımı şablonu ve varsayılan davranışını belirtir. Bu ayarlar, öznitelikler etkinleştirilen, içerik türleri gibi varsayılan liste görünümleri belge şablonu dosyaları içerir ve Web sitesiyle dahil bölümleri. Varsayılan olarak, `Modules` bölümü SharePoint sitesine ve nasıl yapılandırıldıklarına eklenecek dosyalar listeler.|  
 |webtemp_*SiteDefinitionName*.xml|Görünür site tanımı yapılandırmaları belirtir **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
   
- Varsayılan olarak, tüm site tanımları depolanmış *sürücü:*\Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates klasör. Her bir site tanımı kendi alt vardır.  
+ Varsayılan olarak, tüm site tanımları depolanmış *sürücü:* \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates klasör. Her bir site tanımı kendi alt vardır.  
   
-## <a name="related-topics"></a>İlgili Konular  
+## <a name="related-topics"></a>İlgili konular
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |[Programlama ASP.NET Web sayfaları](http://go.microsoft.com/fwlink/?LinkId=178728)|Olay işleyicileri oluşturma hakkında bilgi sağlar [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfaları ve istemci komut dosyası ile çalışmaya nasıl.|  
 |[Windows SharePoint Services programlama](http://go.microsoft.com/fwlink/?LinkId=178729)|Sağlanan yönetilen nesne modeli kullanmayı açıklar [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   
-  
+ 

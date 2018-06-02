@@ -1,5 +1,5 @@
 ---
-title: Hata ayıklayıcı ilk bakma
+title: Hata ayıklayıcıya ilk bakış
 description: Visual Studio hata ayıklayıcısı farklı özelliklerine hızlı göz atın.
 ms.custom: mvc
 ms.date: 03/27/2018
@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691098"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ilk bakma
 
@@ -76,7 +77,7 @@ Hata ayıklayıcı karşın, bir satır kod kadar üzerine gelerek **çalıştı
 
 ![I Çalıştır](../debugger/media/dbg-tour-run-to-click-2.png "çalıştırmak için tıklatın")
 
->  [!NOTE] 
+> [!NOTE]
 > **Tıklatın çalıştırmak** (burada Çalıştır yürütme) düğmesini yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Tıklatın **tıklatın çalıştırmak** (burada Çalıştır yürütme) düğmesi. Hata ayıklayıcı tıklattığınız kod satırına ilerler.
@@ -104,7 +105,6 @@ Hata ayıklayıcı kesme noktası ayarlarsanız, bu trafik ilk kesme duraklatır
 Seçtiğiniz kod satırı ulaşana kadar F5 tuşuna basın **çalıştırmak için imleç**.
 
 Bu komut, kod düzenleme ve hızlı bir şekilde geçici bir kesme noktası ayarlayın ve hata ayıklayıcısı başlatmak istediğinizde yararlıdır.
-
 
 > [!NOTE]
 > Kullanabileceğiniz **çalıştırmak için imleç** içinde **çağrı yığını** hata ayıklarken penceresi.
@@ -179,7 +179,7 @@ Sağ menülerden de kullanabilirsiniz **çağrı yığını** başka şeyler iç
 ## <a name="examine-an-exception"></a>Bir özel durum inceleyin
 
 Hata ayıklayıcı uygulamanızı bir özel durum oluşturduğunda, bir özel durum belirtti kod satırına alır.
-     
+
 ![Özel durum Yardımcısı](../debugger/media/dbg-tour-exception-helper.png "özel durum Yardımcısı")
 
 Bu örnekte, **özel durum Yardımcısı** , gösterir bir `System.Argument` özel durumu ve yolun geçerli bir biçimde olmadığını bildiren bir hata iletisi. Bu nedenle, bir yöntemi veya işlev bağımsız değişken bir hata oluştu biliyoruz.
@@ -188,7 +188,7 @@ Bu örnekte, `DirectoryInfo` çağrısı depolanan boş dize üzerinde hata verm
 
 Özel durum Yardımcısı hataları hata ayıklama yardımcı olabilecek harika bir özelliktir. Ayrıca, hata ayrıntıları görünümü gibi şeyler ve özel durum Yardımcısı bir izleme ekleyin. Ya da gerekirse, belirli özel durum atma koşulları değiştirebilirsiniz.
 
->  [!NOTE] 
+>  [!NOTE]
 > Özel durum Yardımcısı özel durum Yardımcısı'nda değiştirir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Genişletme **Exception ayarlarını** düğümü bu özel durum türü, ancak işleme konusunda daha fazla seçenek görmek için bu tur değişikliği gerekmez!
@@ -209,7 +209,7 @@ Daha fazla bilgi için bkz: [Debug anlık görüntü hata ayıklayıcı kullanar
 
 Gidin ve görüntülemek anlık görüntülerini kullanarak **adım geriye dönük** ve **İleri** hata ayıklama araç çubuğu düğmeleri. Bu düğmeleri görünür olayları gidin **olayları** sekmesinde **tanılama araçları** penceresi.
 
-![Geri ve İleri düğmelerini adım](../debugger/media/intellitrace-step-back-icons-description.png  "adım geri ve İleri düğmelerini")  
+![Geri ve İleri düğmelerini adım](../debugger/media/intellitrace-step-back-icons-description.png  "adım geri ve İleri düğmelerini")
 
 Daha fazla bilgi için bkz: [görüntülemek IntelliTrace adım geri kullanarak anlık görüntüsünü](../debugger/how-to-use-intellitrace-step-back.md) sayfası.
 

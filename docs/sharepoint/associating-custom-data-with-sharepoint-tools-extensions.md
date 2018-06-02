@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 106f6a828035393273d7157c4b3e5bd898322e46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691376"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>SharePoint Araç Uzantıları ile Özel Verileri İlişkilendirme
+# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>SharePoint araç uzantıları ile özel verileri ilişkilendirme
   SharePoint araç uzantıları belirli nesneleri özel veri ekleyebilirsiniz. Bu, verileri daha sonra diğer koddan uzantınızı erişmek istediğiniz uzantınızı bir parçası olduğunda yararlıdır. Depolamak ve verilere erişmek için özel bir şekilde uygulamak yerine, verileri olan bir nesne uzantı ilişkilendirin ve ardından aynı nesneden daha sonra verileri.  
   
  Visual Studio'da belirli bir öğesiyle ilgili olan verileri korumak istediğiniz özel veri nesne eklemeyi de yararlıdır. SharePoint araç uzantıları yalnızca Visual Studio'da, bu nedenle uzantınızı birkaç farklı öğeleriyle çalışma bir kez yüklenir (projeleri gibi öğeler, proje veya **Sunucu Gezgini** düğümleri) herhangi bir zamanda. Yalnızca belirli bir öğe için ilgili özel veri varsa, bu öğeyi temsil eden nesne verileri ekleyebilirsiniz.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
  SharePoint Proje sisteminin uzantılarında uzantı kaldırılır sonra devam ederse dize verilerini da kaydedebilirsiniz. Daha fazla bilgi için bkz: [SharePoint Proje sisteminin uzantılarında veri kaydetme](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="objects-that-can-contain-custom-data"></a>Özel veri içerebilen nesneleri  
+## <a name="objects-that-can-contain-custom-data"></a>Özel veri içerebilen nesneleri
  Özel veri uygulayan SharePoint araçları nesne modelinde herhangi bir nesne ekleyebileceğiniz <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> arabirimi. Bu arabirim yalnızca bir özelliğini tanımlar <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, özel veri nesneleri koleksiyonu. Aşağıdaki türleri uygulayan <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>  
   
-## <a name="adding-and-retrieving-custom-data"></a>Ekleme ve özel veri alma  
+## <a name="add-and-retrieve-custom-data"></a>Ekleme ve özel veri alma
  Bir nesne bir SharePoint araçları uzantısı'nda özel veri eklemek için alma <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> verileri ekleyin ve ardından kullanmak istediğiniz nesnesinin özelliğini <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> nesnesine verileri eklemek için yöntem.  
   
  Bir SharePoint araçları uzantısı'nda bir nesneden özel veri almak için get <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> nesne ve ardından kullanın aşağıdaki yöntemlerden birini özelliği:  
@@ -81,10 +82,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint araç uzantıları için programlama kavramları ve Özellikler](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
  [İzlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Nasıl yapılır: özel SharePoint Proje öğe türüne özellik ekleme] (.. /SharePoint/How-to-add-a-property-to-a-Custom-SharePoint-Project-item-Type.MD   
-  
+ 

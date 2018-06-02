@@ -1,5 +1,5 @@
 ---
-title: Yayımla Sayfası, Proje Tasarımcısı (Visual Studio'da Office Geliştirme) | Microsoft Docs
+title: Yayımla Sayfası, Proje Tasarımcısı (Visual Studio'da Office Geliştirme)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,21 +19,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692850"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Yayımlama Sayfası, Proje Tasarımcısı (Visual Studio'da Office Geliştirme)
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Yayımla Sayfası, Proje Tasarımcısı (Visual Studio'da Office Geliştirme)
   **Yayımla** sayfasında **Proje Tasarımcısı** dağıtım özelliklerini yapılandırmak için kullanılır.  
   
  Bu sayfaya erişmek için projede seçin **Çözüm Gezgini**ve ardından **proje** menüsünde seçin *Projectname* **özellikleri** . Varsa **Yayımla** sayfası görüntülenmez, seçin **Yayımla** sekmesi.  
   
 > [!NOTE]  
->  De yayımlama konumu ayarlayabilirsiniz **Yayımlama Sihirbazı**. Daha fazla bilgi için bkz: [nasıl yapılır: Office çözümünü kullanarak ClickOnce tarafından yayımlama](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  De yayımlama konumu ayarlayabilirsiniz **Yayımlama Sihirbazı**. Daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
-## <a name="uielement-list"></a>UIElement Listesi  
+## <a name="uielement-list"></a>UIElement listesi  
  **Yayımlama klasörü konumu (web sitesi, ftp sunucusu veya dosya yolu)**  
  Gerekli.  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  Yerel bilgisayar, bir UNC dosya paylaşımı veya bir HTTP/HTTPS web sitesi seçenekleri içerir. Yol yerel olabilir (*c:\foldername\publishfolder*), göreli (*yayımlama\\*), ya da tam bir konum (*\\\servername\foldername* veya http://*SunucuAdı/KlasörAdı*).  
   
- Varsayılan olarak, yayımlama konumdur *http://localhost/projectname/* IIS yüklü veya bunu yaparsanız publish\ dizin IIS yüklü.  
+ Varsayılan olarak, yayımlama konumdur *http://localhost/projectname/* , IIS yüklü değilse veya *yayımlama\\*  IIS yüklü değil ise dizin.  
   
  **Yükleme klasörü URL'si**  
  İsteğe bağlı.  
@@ -110,8 +111,8 @@ ms.lasthandoff: 04/16/2018
  **Şimdi Yayımla**  
  Geçerli ayarları kullanarak uygulamayı yayımlar. Eşdeğer **son** düğmesini **Yayımlama Sihirbazı**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [ClickOnce kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Dağıtım için Office çözümleri önkoşulları](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
   

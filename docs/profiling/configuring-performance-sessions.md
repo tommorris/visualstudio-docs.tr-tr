@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5735c1c4cd1ec5521b9eea00bdc31ab53e67b325
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: df9ba88809303e5d093c4fb644e4b936dfbcf1f0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692206"
 ---
 # <a name="configure-performance-sessions"></a>Performans oturumlarını yapılandırma
 Kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, çok çeşitli çok sayıda uygulama türleri için performans verilerini toplayabilir. Bu bölümde Performans oturumunu ve hedef ikili performans Wizardand özelliklerini ilginizi çeken verileri toplamak için profil oluşturma araçları yapılandırmak için nasıl kullanılacağını gösterir. Profil oluşturma araçları yapılandırma özellikleri de profil çalıştırılmasıyla toplanan veri miktarını denetlemek için kullanılabilir. Daha fazla bilgi için bkz: [denetim veri toplama](../profiling/controlling-data-collection.md).  
@@ -38,5 +39,5 @@ Kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil olu�
 ## <a name="related-sections"></a>İlgili bölümler  
  [Veri toplamayı denetleme](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Performans Gezgini](../profiling/performance-explorer.md)

@@ -11,12 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 141341c09d9028e90900a29c702667304cfea7f7
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477718"
 ---
-# <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Komut satırından performans verilerini toplamak için profil oluşturma yöntemlerini kullanma
+# <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Komut satırından performans verileri toplamak için profil oluşturma metotlarını kullanma
 Tercih ettiğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları komut satırı araçları ve seçenekleri etkenlere bağlıdır tür bir uygulama gibi profil olduğunu, kullanmak istediğiniz ve olup hedef uygulama yazılmış yerel ya da Profiloluşturmayöntemi[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kodu.  
   
  Bu konu, komut satırı yordam konularını seçtiğiniz profil yönteme göre düzenler.  

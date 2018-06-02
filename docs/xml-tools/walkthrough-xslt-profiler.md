@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: XSLT Profil Oluşturucu'
+title: 'İzlenecek Yol: XSLT Profil Oluşturucusu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693805"
 ---
-# <a name="walkthrough-xslt-profiler"></a>İzlenecek yol: XSLT Profil Oluşturucu
+# <a name="walkthrough-xslt-profiler"></a>İzlenecek Yol: XSLT Profil Oluşturucusu
 
 XSLT profil oluşturucu ölçü Yardım, değerlendirmek ve performans ile ilgili sorunlar XSLT kodda hedef ayrıntılı XSLT performans raporları oluşturur. XSLT profil oluşturucu yararlı ipuçları XSL ve XSLT stil sayfası iyileştirmeler içerir. XSLT uygulamaları için isteğe bağlı en yüksek performans, bu aracı gerekli olabilir.
 
@@ -88,7 +89,7 @@ Aşağıdaki örneklerde yordamlarda, Visual Studio ve .NET Framework sürüm 4.
 
 5.  Sütun adları tıklayarak veri daha da sıralayabilirsiniz.
 
-### <a name="select-calltree-view"></a>CallTree Görüntüle'yi seçin
+### <a name="select-call-tree-view"></a>Çağrı ağacı görünümü seçin
 
 1.  Seçin **çağrı ağacı görünümü** içinde **Geçerli Görünüm** aşağı açılan liste. Bu görünüm, program yürütme ağacı görünümdür.
 
@@ -108,6 +109,6 @@ Aşağıdaki örneklerde yordamlarda, Visual Studio ve .NET Framework sürüm 4.
 
 4.  İşlem görünümü içeren bir tablo görüntüler **işlem kimliği**, **işlem adı**, **başlaması zamanı**ve **bitiş zamanı**. Veri sütunu adları tıklayarak sıralanabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek Yol: XSLT Hiyerarşisi Kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [İzlenecek yol: XSLT hiyerarşi kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)

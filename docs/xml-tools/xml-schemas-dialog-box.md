@@ -1,5 +1,5 @@
 ---
-title: XML şemaları iletişim kutusu
+title: XML Şemaları İletişim Kutusu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeea4b015cf728b2b6b40375ce87bcd3c1dd2b89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693646"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML şemaları iletişim kutusu
 
@@ -49,8 +50,8 @@ Açılır **açık XSD şema** form veya iletişim şema kümesine eklemek için
 
 Şu anda seçili şeması şema kümesinden kaldırır. Bellek içi şema önbelleğinden ancak dosya sisteminden Bu şemayı kaldırır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [XML Düzenleyicisi Bileşenleri](../xml-tools/xml-editor-components.md)
-- [Nasıl Yapılır: Kullanılacak XML Şemalarını Seçme](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
-- [Şema Önbelleği](../xml-tools/schema-cache.md)
+- [XML Düzenleyicisi bileşenleri](../xml-tools/xml-editor-components.md)
+- [Nasıl yapılır: kullanılacak XML şemaları seçin](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Şema önbelleği](../xml-tools/schema-cache.md)

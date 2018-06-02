@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: XSLT hiyerarşi kullanma'
+title: 'İzlenecek Yol: XSLT Hiyerarşisi Kullanma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693451"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>İzlenecek yol: XSLT hiyerarşi kullanma
+# <a name="walkthrough-use-xslt-hierarchy"></a>İzlenecek yol: Kullanmak XSLT hiyerarşisi
 
 XSLT hiyerarşi aracı birçok XML geliştirme görevlerini basitleştirir. XSLT stil sayfasını sık kullandığı `includes` ve `imports` yönergeler. Asıl stil sayfası içinden derleme başlatır, ancak bir XSLT stil sayfası derleme sonucu olarak hata gördüğünüzde, hata asıl stil sayfası'den başka bir kaynaktan gelebilir. Hata düzelttikten veya stil sayfası düzenleme eklenen veya içeri aktarılan stil sayfaları erişim gerektirebilir. Hata ayıklayıcı stil sayfası doğruluk dahil ve içeri aktarılan stil sayfasını açabilir ve bir veya daha fazla dahil edilen stil sayfaları, belirli bir noktada bir kesme noktası eklemek isteyebilirsiniz.
 
@@ -47,7 +48,7 @@ Bu konudaki örnek bir başvurulan stil sayfanızda hata ayıklama gösterir.
     </COLLECTION>
     ```
 
-1. Aşağıdakileri ekleyin `xslincludefile.xsl`:
+1. Aşağıdakileri ekleyin *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ Bu konudaki örnek bir başvurulan stil sayfanızda hata ayıklama gösterir.
     </xsl:stylesheet>
     ```
 
-3.  Aşağıdakileri ekleyin `xslinclude.xsl` dosyası:
+3.  Aşağıdakileri ekleyin *xslinclude.xsl* dosyası:
 
     ```xml
     <?xml version='1.0'?>
@@ -112,4 +113,4 @@ Bu konudaki örnek bir başvurulan stil sayfanızda hata ayıklama gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek Yol: XSLT Profil Oluşturucusu](../xml-tools/walkthrough-xslt-profiler.md)
+- [İzlenecek yol: XSLT Profil Oluşturucu](../xml-tools/walkthrough-xslt-profiler.md)

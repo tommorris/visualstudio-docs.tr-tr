@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31fd55358023e0ec3b11fbb048bdfa2b240b1859
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693844"
 ---
 # <a name="xml-document-validation"></a>XML belge doğrulama
 
@@ -22,7 +23,7 @@ XML Düzenleyicisi'ni XML 1.0 sözdizimi denetler ve yazarken veri doğrulama da
 
  Doğrulama kullanılan şemalar eşleştirerek bulunduğunda `targetNamespace` öğenin xmlns bildirimiyle derlenmiş şemanın. Derlenen şemalar, öncelik sırasına göre listelenen aşağıdaki konumlardan birini yüklenir:
 
--   Belirtilen dosya adından **şemaları** belge penceresinin alan.
+-   Belirtilen dosya adından **şemaları** belgenin alan **özellikleri** penceresi.
 
 -   Satır içi şema veya DTD.
 
@@ -39,11 +40,11 @@ XML Düzenleyicisi'ni XML 1.0 sözdizimi denetler ve yazarken veri doğrulama da
 -   Şema önbellek dizini şemadan.
 
 ## <a name="xslt-files"></a>XSLT dosyaları
- XSLT dosyasının düzenlenmesi sırasında şema önbelleğinde bulunan xslt.xsd dosyasını doğrulama için kullanılır. Doğrulama hataları Mavi dalgalı alt çizgiler gösterilir. XSLT derleyici hatalarını kırmızı dalgalı alt çizgiler gösterilir.
+ XSLT dosyasının düzenlenmesi sırasında *xslt.xsd* şema önbelleğinde bulunan dosya doğrulama için kullanılır. Doğrulama hataları Mavi dalgalı alt çizgiler gösterilir. XSLT derleyici hatalarını kırmızı dalgalı alt çizgiler gösterilir.
 
 ## <a name="xml-schema-xsd-files"></a>XML şema (XSD) dosyaları
- Bir XML Şeması dosyasının düzenlenmesi sırasında şema önbelleğinde bulunan xsdschema.xsd dosyasını doğrulama için kullanılır. Doğrulama hataları Mavi dalgalı alt çizgiler gösterilir. Derleme hataları kırmızı dalgalı alt çizgi ile de gösterilir.
+ Bir XML Şeması dosyasının düzenlenmesi sırasında *xsdschema.xsd* şema önbelleğinde bulunan dosya doğrulama için kullanılır. Doğrulama hataları Mavi dalgalı alt çizgiler gösterilir. Derleme hataları kırmızı dalgalı alt çizgi ile de gösterilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)

@@ -14,10 +14,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34549012"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Hatalı davranan çok iş parçacıklı uygulamalar için ortak desenler
 

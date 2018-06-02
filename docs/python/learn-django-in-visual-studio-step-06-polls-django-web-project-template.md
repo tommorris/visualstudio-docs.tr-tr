@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 78cb5f54994c24fcf79f81fd6eff31eedd884908
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691452"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Öğreticisi Adım 6: yoklamalar Django Web projesi şablonu kullanın
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-Burada kullanılan daha karmaşık normal ifadeler bilmiyorsanız ifadenin içine yapıştırabilirsiniz [regex101.com](https://regex101.com/) düz dilde bir açıklama için. (Eğik kaçış gerekir `/` ters eğik çizgi ekleyerek `\`önlerinde h; kaçışı nedeniyle python'da gerekli değildir `r` "ham" anlamına gelen dize öneki).
+Burada kullanılan daha karmaşık normal ifadeler bilmiyorsanız ifadenin içine yapıştırabilirsiniz [regex101.com](https://regex101.com/) düz dilde bir açıklama için. (Eğik kaçış gerekir `/` ters eğik çizgi ekleyerek `\` daha önce; kaçışı nedeniyle python'da gerekli değil `r` "ham" anlamına gelen dize öneki).
 
 Django, söz dizimi içinde `?P<name>pattern` adlı bir grup oluşturur `name`, hangi geçirilen bağımsız değişken olarak göründükleri sırada için görünümleri. Daha önce gösterilen kodda `PollsDetailView` ve `PollsResultsView` adlı bir bağımsız değişken alma `pk` ve `app.views.vote` adlı bir bağımsız değişken alan `poll_id`.
 

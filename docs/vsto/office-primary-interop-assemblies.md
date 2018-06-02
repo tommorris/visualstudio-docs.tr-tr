@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ab565dfbc4fec21c646aa72b54f3694d99e6a1f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1851fd05999bfc2d925cbe4a079be3a9f4139db
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693477"
 ---
-# <a name="office-primary-interop-assemblies"></a>Office Birincil Birlikte Çalışma Derlemeleri
+# <a name="office-primary-interop-assemblies"></a>Office birincil birlikte çalışma derlemeleri
   Bir Microsoft Office uygulamasından bir Office proje özelliklerini kullanmak için uygulama için birincil birlikte çalışma derlemesi (PIA) kullanmanız gerekir. PIA bir Microsoft Office uygulamasının COM tabanlı nesne modeli ile etkileşim kurmak yönetilen kod sağlar.  
   
  Yeni bir Office proje oluşturduğunuzda, Visual Studio projesi oluşturmak için gerekli PIA başvuruları ekler. Bazı senaryolarda (örneğin, Microsoft Office Excel için Microsoft Office Word'ün özellik projesinde kullanmak istiyorsanız) ek PIA başvuruları eklemeniz gerekebilir.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/16/2018
   
  Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [birincil birlikte çalışma derlemeleri](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
   
-##  <a name="separateassemblies"></a> Birincil birlikte çalışma derlemeleri oluşturma ve çalıştırma projeler için ayrı  
+##  <a name="separateassemblies"></a> Oluşturma ve çalıştırma projeler için ayrı birincil birlikte çalışma derlemeleri  
  Visual Studio geliştirme bilgisayarınızda PIA farklı kümesi kullanır. Derlemelerin farklı bu kümeleri aşağıdaki konumlarda bulunur:  
   
 -   Program files dizini klasöründe.  
@@ -56,28 +57,28 @@ ms.lasthandoff: 04/16/2018
   
  Visual Studio geliştirme bilgisayarında aşağıdaki konumlara PIA bu kopyasını yükler:  
   
--   %ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Office\PIA\Office14 için Araçlar  
+-   *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Office\PIA\Office14 için Araçlar*  
   
-     (veya % ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14 64-bit işletim sistemlerinde)  
+     (veya *% ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14* 64-bit işletim sistemlerinde)  
   
--   %ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Office\PIA\Office15 için Araçlar  
+-   *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Office\PIA\Office15 için Araçlar*  
   
-     (veya % ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15 64-bit işletim sistemlerinde)  
+     (veya *% ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15* 64-bit işletim sistemlerinde)  
   
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Genel derleme önbelleğinde birincil birlikte çalışma derlemeleri  
- Belirli geliştirme görevleri gerçekleştirmek için PIA yüklü ve geliştirme bilgisayarındaki genel derleme önbelleğinde kaydedilmesi gerekir. Genellikle, geliştirme bilgisayarınızda Office yüklediğinizde PIA otomatik olarak yüklenir. Daha fazla bilgi edinmek için bkz. [Bir Bilgisayarı Office Çözümleri Geliştirmek Üzere Yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+ Belirli geliştirme görevleri gerçekleştirmek için PIA yüklü ve geliştirme bilgisayarındaki genel derleme önbelleğinde kaydedilmesi gerekir. Genellikle, geliştirme bilgisayarınızda Office yüklediğinizde PIA otomatik olarak yüklenir. Daha fazla bilgi için bkz: [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
- Office PIA son kullanıcı bilgisayarlarında Office çözümlerini çalıştırmak için gerekli değildir. Daha fazla bilgi için bkz: [tasarlama ve oluşturma Office çözümleri](../vsto/designing-and-creating-office-solutions.md).  
+ Office PIA son kullanıcı bilgisayarlarında Office çözümlerini çalıştırmak için gerekli değildir. Daha fazla bilgi için bkz: [tasarım ve Office çözümleri oluşturmak](../vsto/designing-and-creating-office-solutions.md).  
   
 ##  <a name="usingfeatures"></a> Tek bir projede birden çok Microsoft Office uygulamaları özelliklerini kullanma  
  Visual Studio içindeki her Office proje şablonu, tek bir Microsoft Office uygulaması ile çalışmak üzere tasarlanmıştır. Birden çok Microsoft Office uygulamalarında özelliklerini kullanmak ya da bir uygulama ya da Visual Studio Proje yok bileşeni özellikleri kullanmak için gerekli PIA bir başvuru eklemeniz gerekir.  
   
- Çoğu durumda, Visual Studio tarafından %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Araçları Office\PIA\ dizini altında yüklü olan PIA başvuruları eklemeniz gerekir. Derlemeleri'nın bu sürümlerini görünür **Framework** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Daha fazla bilgi için bkz: [nasıl yapılır: hedef Office uygulamaları aracılığıyla birincil birlikte çalışma derlemeleri](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ Çoğu durumda, Visual Studio tarafından Office\PIA için Visual Studio 12.0\Visual Studio Araçları *%ProgramFiles%\Microsoft altında yüklenen PIA başvuruları eklemelisiniz\* dizin. Derlemeleri'nın bu sürümlerini görünür **Framework** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Daha fazla bilgi için bkz: [nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
  Derlemeleri'nın bu sürümlerini yüklediyseniz ve Genel Derleme Önbelleği'nde PIA kayıtlı görünür **COM** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Bunları kullandığınızda oluşabilecek bazı geliştirme sorunları olduğundan derlemeleri'nın bu sürümlerini başvuruları ekleme kaçınmalısınız. Genel derleme önbelleğinde PIA farklı sürümlerini kaydolduysanız, örneğin, projenize otomatik olarak en son kaydedilen derleme sürüme bağlayacaksınız — üzerinde derlemenin farklı bir sürüm belirtin olsa bile  **COM** sekmesinde **başvuru Yöneticisi** iletişim kutusu.  
   
 > [!NOTE]  
->  Bunları başvuruda bulunan bir derleme eklendiğinde bazı derlemeleri projeye otomatik olarak eklenir. Örneğin, Word, Excel, Outlook, Microsoft Forms veya grafik derlemeleri başvuru eklediğinizde Office.dll ve Microsoft.Vbe.Interop.dll derlemelerine başvurular otomatik olarak eklenir.  
+>  Bunları başvuruda bulunan bir derleme eklendiğinde bazı derlemeleri projeye otomatik olarak eklenir. Örneğin, başvurular *Office.dll* ve *Microsoft.Vbe.Interop.dll* derlemeler Word, Excel, Outlook, Microsoft Forms veya grafiği bir başvuru eklediğinizde otomatik olarak eklenir derlemeler.  
   
 ##  <a name="pialist"></a> Microsoft Office uygulamaları için birincil birlikte çalışma derlemeleri  
  Aşağıdaki tabloda kullanılabilir birincil birlikte çalışma derlemeleri listeler [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
@@ -106,10 +107,10 @@ ms.lasthandoff: 04/16/2018
 |Microsoft Visual Basic for Applications genişletilebilirliği 5.3|Microsoft.Vbe.Interop.dll|  
   
 ### <a name="binding-redirect-assemblies"></a>Bağlama yeniden yönlendirme derlemeler  
- Yüklediğinizde ve Genel Derleme Önbelleği (veya Office ile yeniden dağıtılabilir paketi için PIA yükleyerek) Office PIA kaydetmek bağlama yeniden yönlendirme derlemeleri genel derleme önbelleğinde da yüklenir. Bu derlemeler birincil birlikte çalışma derlemeleri doğru sürümü çalışma zamanında yüklenir sağlanmasına yardımcı olur. Örneğin, bir çözüm, başvurduğunda bir [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] derleme olan bir bilgisayarda çalışan [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aynı birincil birlikte çalışma derlemesi sürümü, bağlama yeniden yönlendirme derleme bildirir [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] yüklemek için çalışma zamanı [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] birincil birlikte çalışma derlemesi sürümü. Daha fazla bilgi için bkz: [nasıl yapılır: etkinleştirme ve devre dışı bırakmak, bağlama otomatik yeniden yönlendirme](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+ Yüklediğinizde ve Genel Derleme Önbelleği (veya Office ile yeniden dağıtılabilir paketi için PIA yükleyerek) Office PIA kaydetmek bağlama yeniden yönlendirme derlemeleri genel derleme önbelleğinde da yüklenir. Bu derlemeler birincil birlikte çalışma derlemeleri doğru sürümü çalışma zamanında yüklenir sağlanmasına yardımcı olur. Örneğin, bir çözüm, başvurduğunda bir [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] derleme olan bir bilgisayarda çalışan [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aynı birincil birlikte çalışma derlemesi sürümü, bağlama yeniden yönlendirme derleme bildirir [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] yüklemek için çalışma zamanı [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] birincil birlikte çalışma derlemesi sürümü. Daha fazla bilgi için bkz: [nasıl yapılır: etkinleştirme ve otomatik bağlama yönlendirmesini devre dışı](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: birincil birlikte çalışma derlemeleriyle Office uygulamalarını](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)   
  [InfoPath çözümleri](../vsto/infopath-solutions.md)   
  [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)   

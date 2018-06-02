@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IntelliSense
-ms.date: 11/04/2016
+title: Parametre bilgisi, listesi üyeleri ve hızlı bilgi
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -17,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: c4960e1f829e2f5d673b1e7069b5813b68ab7bdb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690945"
 ---
-# <a name="using-intellisense-in-visual-studio"></a>Visual Studio'da IntelliSense kullanma
+# <a name="intellisense-in-visual-studio"></a>Visual Studio'da IntelliSense
 
-IntelliSense; Üyeleri Listeleme, Parametre Bilgisi, Hızlı Bilgi ve Tam Sözcük gibi bir dizi özellik için kullanılan genel bir terimdir. Bu özellikler, yalnızca birkaç tuş vuruşu ile kullandığınız kod hakkında daha fazla bilgi edinmenize, yazmakta olduğunuz parametreleri izlemenize ve özellik ve yöntem çağrıları eklemenize yardımcı olur.
+IntelliSense olan bir dizi özellik içeren bir kod tamamlama Yardımı: listesi üyeleri, parametre bilgisi, hızlı bilgi ve tam sözcük. Bu özellikler, kullanmakta olduğunuz kod hakkında daha fazla bilgi için yazmakta olduğunuz ve özellikleri ve yöntemleri yalnızca birkaç tuş vuruşları ile çağrıları ekleme parametreleri izlemenize yardımcı olur.
 
 IntelliSense'in birçok yönü dile özgüdür. Farklı diller için IntelliSense hakkında daha fazla bilgi için listelenen konulara bakın [Ayrıca bkz.](#see-also) bölümü.
 

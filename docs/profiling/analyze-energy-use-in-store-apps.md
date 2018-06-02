@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c6b319953f3d38814934b2fd8e80f06008f95013
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 4ad28707c6f90a84d69734959f783851e3bc783c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692141"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını çözümleme
 Visual Studio **enerji tüketimi** profil oluşturucu UWP uygulamaları kendi pille saat bölümünü veya tümünü Çalıştır düşük güç tablet cihazlarda güç ve enerji tüketimi analiz etmenize yardımcı olur. Enerjisini pilden alan bir aygıtta çok fazla enerji kullanan bir uygulama, çok fazla müşteri memnuniyetsizliğine neden olabilir ve sonunda müşteriler uygulamayı kaldırmaya da karar verebilir. Enerji kullanımını en iyi duruma getirme, uygulamanızın benimseme artırmak ve müşteriler tarafından kullanın.  
@@ -92,7 +93,7 @@ if (performance && performance.mark) {
 2.  Seçin **enerji tüketimi** ve ardından **Başlat**.  
   
     > [!NOTE]
-    >  Başlattığınızda **enerji tüketimi** profil oluşturucu, görebileceği bir **kullanıcı hesabı denetimi** VsEtwCollector.exe çalıştırmak için izninizi isteyen penceresi. Seçin **Evet**.  
+    >  Başlattığınızda **enerji tüketimi** profil oluşturucu, görebileceği bir **kullanıcı hesabı denetimi** çalıştırmak için izninizi isteyen penceresi *VsEtwCollector.exe*. Seçin **Evet**.  
   
 3.  Veri toplamak için uygulamanızda alıştırma yapın.  
   

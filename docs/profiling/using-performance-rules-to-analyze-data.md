@@ -11,12 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ed7a44d66f8e13d5ca000ed505ff53ff2336ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477749"
 ---
-# <a name="use-performance-rules-to-analyze-data"></a>Verileri çözümlemek için performans kurallarını kullanma
+# <a name="use-performance-rules-to-analyze-data"></a>Performans kurallarını kullanarak verileri analiz etme
 Performans uyarıları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları program yürütme yavaşlatabilir profili bir uygulama sorunları gösterir. Uyarılar, daha kullanışlı verileri toplamak için koleksiyon yöntemleri değiştirmeniz gerekebilir de belirtebilirsiniz. Performans uyarıları, bir profil oluşturma oturumu otomatik olarak oluşturulur. Uyarılar görüntülenir **hata listesi** bir profil oluşturma veri dosyası Visual Studio'da açıldığında penceresi. Gelen **hata listesi** penceresinde, sorunu kaynak kodunu bulun ve sorunun nasıl giderileceği hakkındaki bilgiler gibi hatayla ilgili ayrıntılı bilgileri görüntüleyebilirsiniz. Ayrıca, ilgilendiğiniz değil uyarılarını devre dışı bırakabilirsiniz.  
   
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: Şerit nesne modeline genel bakış | Microsoft Docs
+title: Şerit nesne modeline genel bakış
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2be8f0ecdb4f2d7a8ea379474c4b5ec0062d2b57
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692967"
 ---
-# <a name="ribbon-object-model-overview"></a>Şerit Nesne Modeline Genel Bakış
-  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Almak ve Şerit denetimlerini çalışma zamanında ayarlamak için kullanabileceğiniz bir kesin türü belirtilmiş nesne modeli sunar. Örneğin, dinamik olarak menü denetimleri doldurmak veya gösterebilir ve denetimleri bağlam gizle. Şerit, ancak yalnızca Şerit Office uygulaması tarafından yüklenmeden sekmeler, gruplar ve denetimler de ekleyebilirsiniz. Bilgi için bkz: [ayarı özellikleri, hale salt okunur](#SettingReadOnlyProperties).  
+# <a name="ribbon-object-model-overview"></a>Şerit nesne modeline genel bakış
+  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Almak ve Şerit denetimlerini çalışma zamanında ayarlamak için kullanabileceğiniz bir kesin türü belirtilmiş nesne modeli sunar. Örneğin, dinamik olarak menü denetimleri doldurmak veya gösterebilir ve denetimleri bağlam gizle. Şerit, ancak yalnızca Şerit Office uygulaması tarafından yüklenmeden sekmeler, gruplar ve denetimler de ekleyebilirsiniz. Bilgi için bkz: [salt okunur duruma özelliklerini ayarlama](#SettingReadOnlyProperties).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>Şerit denetimlerini kullanarak ortak görevleri  
  Her `Ribbon` denetimi bir denetim için etiket atama veya gizleme ve denetimleri görüntüleme gibi çeşitli görevleri gerçekleştirmek için kullanabileceğiniz özellikler içerir.  
   
- Bazı durumlarda, Özellikler Şerit yüklemeden sonra veya bir denetim dinamik menüye eklendikten sonra salt okunur hale gelir. Daha fazla bilgi için bkz: [ayarı özellikleri salt okunur bu Become](#SettingReadOnlyProperties).  
+ Bazı durumlarda, Özellikler Şerit yükledikten sonra veya bir denetim dinamik menüye eklendikten sonra salt okunur hale gelir. Daha fazla bilgi için bkz: [salt okunur duruma özelliklerini ayarlama](#SettingReadOnlyProperties).  
   
  Aşağıdaki tabloda kullanarak gerçekleştirebileceğiniz görevlerden bazıları açıklanmaktadır `Ribbon` denetleyen özellikler.  
   
@@ -86,47 +87,47 @@ ms.lasthandoff: 04/16/2018
 |Kullanıcı tanımlı veri için bir denetim ekleyin.|Tag özelliği kullanın.|  
 |Öğeleri alma bir <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, veya<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> Denetim.|Öğeleri özelliğini kullanın.|  
 |Öğeleri Ekle bir <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, veya <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> denetim.|Öğeleri özelliğini kullanın.|  
-|Denetimler ekleme bir <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Öğeleri özelliğini kullanın.<br /><br /> Denetimler eklemek için <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> Şerit Office uygulamasına yüklendikten sonra ayarlamalısınız <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> özelliğine **true** Şerit Office uygulamasına yüklenmeden önce. Bilgi için bkz: [ayarı özellikleri, hale salt okunur](#SettingReadOnlyProperties).|  
+|Denetimler ekleme bir <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Öğeleri özelliğini kullanın.<br /><br /> Denetimler eklemek için <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> Şerit Office uygulamasına yüklendikten sonra ayarlamalısınız <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> özelliğine **true** Şerit Office uygulamasına yüklenmeden önce. Bilgi için bkz: [salt okunur duruma özelliklerini ayarlama](#SettingReadOnlyProperties).|  
 |Seçilen öğe, almak bir <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, veya <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|SelectedItem özelliğini kullanın. İçin bir <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, kullanın <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> özelliği.|  
 |Grupları alma bir <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> özelliği.|  
 |Satır ve sütun sayısı, görünen belirtin bir <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> ve <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> özellikleri.|  
   
-##  <a name="SettingReadOnlyProperties"></a> Salt okunur ayarı özellikleri  
+##  <a name="SettingReadOnlyProperties"></a> Salt okunur duruma özelliklerini ayarlama  
  Şerit yüklemeden önce bazı özellikleri yalnızca ayarlayabilirsiniz. Bu özellikleri ayarlamak için üç yerde vardır:  
   
 -   Visual Studio'da **özellikleri** penceresi.  
   
 -   Oluşturucusunun içinde **Şerit** sınıfı.  
   
--   Yöntemini içinde `ThisAddin`, `ThisWorkbook`, veya `ThisDocument` projenizin sınıfı.  
+-   İçinde `CreateRibbonExtensibilityObject` yöntemi `ThisAddin`, `ThisWorkbook`, veya `ThisDocument` projenizin sınıfı.  
   
- Dinamik menüler bazı özel durumlar sağlar. Yeni denetimler oluşturma, bunların özelliklerini ayarlamak ve sonra bile menüyü içeren Şerit yüklendikten sonra çalışma zamanında dinamik menüye ekleyin.  
+ Dinamik menüler bazı özel durumlar sağlar. Yeni denetimler oluşturma, bunların özelliklerini ayarlamak ve menüyü içeren Şerit bile yüklendikten sonra sonra çalışma zamanında dinamik menüye ekleyin.  
   
  Dinamik menüye eklediğiniz denetimlerin özelliklerini herhangi bir zamanda ayarlanabilir.  
   
- Daha fazla bilgi için bkz: [özellikleri salt okunur bu Become](#ReadOnlyProperties).  
+ Daha fazla bilgi için bkz: [salt okunur özellikler](#ReadOnlyProperties).  
   
-### <a name="setting-properties-in-the-constructor-of-the-ribbon"></a>Şerit oluşturucuda özelliklerini ayarlama  
+### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>Şerit oluşturucuda özelliklerini ayarlama  
  Özellikleri ayarlayabilirsiniz bir `Ribbon` oluşturucusunun denetiminde **Şerit** sınıfı. Çağrısından sonra bu kodu görünmelidir `InitializeComponent` yöntemi. Geçerli saat 17:00 ise aşağıdaki örnek yeni bir düğme bir gruba ekler. Pasifik Saati (UTC-8) veya sonraki bir sürümü.  
   
  Aşağıdaki kodu ekleyin.  
   
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
+ [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
+ [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
   
  Visual Studio 2008'den yükseltilen Visual C# projelerinde, yapıcı Şerit kod dosyasında görünür.  
   
  Visual Basic projeleri ya da, oluşturduğunuz Visual C# projeleri [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], yapıcı Şerit Tasarımcısı kod dosyasında görünür. Bu dosya adlı *ŞeritÖğeniz*. Designer.cs veya *ŞeritÖğeniz*. Designer.vb olarak adlandırılır. Visual Basic projelerinde bu dosyayı görmek için önce tıklatmalısınız **tüm dosyaları göster** Çözüm Gezgini'nde düğmesi.  
   
-### <a name="setting-properties-in-the-createribbonextensibilityobject-method"></a>Yöntemini özelliklerini ayarlama  
- Özellikleri ayarlayabilirsiniz bir `Ribbon` yöntemini de kıldığınızda kontrol `ThisAddin`, `ThisWorkbook`, veya `ThisDocument` projenizin sınıfı. Yöntemini hakkında daha fazla bilgi için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).  
+### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>Yöntemini de özelliklerini ayarlama  
+ Özellikleri ayarlayabilirsiniz bir `Ribbon` kıldığınızda kontrol `CreateRibbonExtensibilityObject` yönteminde `ThisAddin`, `ThisWorkbook`, veya `ThisDocument` projenizin sınıfı. Hakkında daha fazla bilgi için `CreateRibbonExtensibilityObject` yöntemi, bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).  
   
- Aşağıdaki örnek, yöntemindeki içinde Şerit özelliklerini ayarlar `ThisWorkbook` Excel çalışma kitabı sınıfı.  
+ Aşağıdaki örnek Şerit özelliklerini ayarlar `CreateRibbonExtensibilityObject` yöntemi `ThisWorkbook` Excel çalışma kitabı sınıfı.  
   
  Aşağıdaki kodu ekleyin.  
   
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
+ [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
+ [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
 ###  <a name="ReadOnlyProperties"></a> Salt okunur özellikler  
  Aşağıdaki tabloda Şerit yüklemeden önce yalnızca ayarlanabilir özellikleri gösterir.  
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/16/2018
 |**Sekmeleri**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Başlık**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
   
-### <a name="setting-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Outlook Inspector görünen Şerit özelliklerini ayarlama  
+### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Outlook Inspector görünen Şerit özelliklerini ayarlama  
  Şerit yeni bir örneğini bir kullanıcı Inspector Şerit göründüğü her açtığında oluşturulur. Ancak, yalnızca Şerit ilk örneği oluşturulmadan önce yukarıdaki tabloda listelenen özellikleri ayarlayabilirsiniz. Sonra ilk örneği oluşturulduğunda, bu özellikleri ilk örnek Outlook'un Şerit'i yüklemek için kullandığı XML dosyası tanımladığından salt okunur hale gelir.  
   
  Şerit'ın diğer örneklerini oluşturduğunuzda, bu özelliklerden herhangi biri için farklı bir değer ayarlar koşullu mantık varsa, bu kod hiçbir etkisi olmayacaktır.  
@@ -186,17 +187,16 @@ ms.lasthandoff: 04/16/2018
 |*Gönderen*|Bir <xref:System.Object> olayı denetimi temsil eder.|  
 |*e*|A <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> içeren bir <xref:Microsoft.Office.Core.IRibbonControl>. Tarafından sağlanan Şerit nesne modeli kullanılamıyor herhangi bir özelliğe erişmek için bu denetimi kullanın [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Şerit Tasarımcısı](../vsto/ribbon-designer.md)   
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [İzlenecek yol: Şerit denetimlerini çalışma zamanında güncelleme](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [İzlenecek yol: çalışma zamanında Şerit denetimlerini güncelleştirme](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)   
  [Nasıl yapılır: Backstage görünümüne denetimler ekleme](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Nasıl yapılır: Şerit Şerit Tasarımcısından Şerit XML dışarı aktarma](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Nasıl Yapılır: Eklenti Kullanıcı Arayüzü Hatalarını Gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)  
-  
-  
+ [Nasıl yapılır: Şerit Şerit Tasarımcısından Şerit XML'ine verebilir.](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Nasıl yapılır: kullanıcı arayüzü hatalarını gösterme eklentisi](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ 

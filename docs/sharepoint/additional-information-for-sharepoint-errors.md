@@ -21,16 +21,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c4585ace17669205345554477cafefb7965dd15
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691361"
 ---
-# <a name="additional-information-for-sharepoint-errors"></a>SharePoint Hataları için Ek Bilgi
+# <a name="additional-information-for-sharepoint-errors"></a>SharePoint hataları için ek bilgiler
   Sorun gidermede yardım bulabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları hataları ve sorun giderme konuları ve Microsoft Developer Network (MSDN) ortak forumlar uyarılar.  
   
-## <a name="troubleshooting-errors-and-issues"></a>Hatalarını ve sorunlarını giderme  
+## <a name="troubleshoot-errors-and-issues"></a>Hatalarını ve sorunlarını giderme
  Bazı yaygın hatalar ve diğer sorunlar ile ilgili Yardım için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları, aşağıdaki konulara bakın:  
   
 -   [SharePoint Çözümlerinde Sorun Giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [SharePoint Paketleme ve Dağıtım Sorunlarını Giderme](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
-## <a name="other-resources"></a>Diğer Kaynaklar  
+## <a name="other-resources"></a>Diğer kaynaklar
  Aşağıdaki tabloda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları forumlar ve diğer kaynakları MSDN'de kullanılabilir.  
   
 |Terim|Tanım|  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Gereksinim duyduğunuz yanıtları hala bulamazsanız, çevrimiçi destek seçenekleri, Microsoft Ürün Destek Hizmetleri ile iletişim veya Bilgi Bankası makaleleri arama yapma gibi erişebilirsiniz. Daha fazla bilgi için bkz: [Microsoft Help ve Destek](http://go.microsoft.com/fwlink/?LinkID=155371) sayfası.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
-  
+ 

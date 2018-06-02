@@ -11,10 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: cc361925d26bb6274a90d62c0b0c2085b47210c4
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476707"
 ---
 # <a name="timer"></a>Zamanlayıcı
 VSPerfCmd.exe **Zamanlayıcı** seçeneği işlemci saat döngüsü örneklenen ve isteğe bağlı olarak bir örnekleme aralığı içinde döngüsü sayısını 10,000,000 varsayılandan değişiklikleri profil olayını ayarlar. 1GH (bir gigahertz) işlemci üzerinde 10,000,000 saat döngüleri saniyede yaklaşık 100 örnek olur. Minimum belirtilebilir döngüleri 50.000 sayısıdır.  

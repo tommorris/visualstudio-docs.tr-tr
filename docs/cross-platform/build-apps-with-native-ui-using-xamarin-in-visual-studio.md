@@ -11,12 +11,13 @@ manager: crdun
 ms.workload:
 - xamarin
 ms.openlocfilehash: 67d8b2147426a048f2af92b0525fd6c8139b4558
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477623"
 ---
-# <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Xamarin Visual Studio kullanarak yerel kullanıcı Arabirimi ile uygulamalar oluşturma
+# <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma
 
 Platformlar arası mobil uygulamaları yazmak için Xamarin, C# seçen Çoğu geliştirici Xamarin.Forms kullanın. Xamarin.Forms iOS, Android ve evrensel Windows Platformu (UWP) yerel denetimlerinde eşleyen bir kullanıcı arabirimi tanımlar. Xamarin.Forms makalesinde açıklanan [Xamarin.Forms Visual Studio ile uygulama oluşturma temellerini öğrenin](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).
 

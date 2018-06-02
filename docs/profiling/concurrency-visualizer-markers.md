@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692307"
 ---
-# <a name="concurrency-visualizer-markers"></a>Eşzamanlılık Görselleştiricisi İşaretleyicileri
+# <a name="concurrency-visualizer-markers"></a>Eşzamanlılık görselleştiricisi işaretleyicileri
 Eşzamanlılık görselleştiricisi içinde işaretlerinin bir uygulama olayları temsil eden simgelerdir.  Genellikle, bu olayların aşamaları veya bir uygulamadaki oluşum belirlemek için uygulama oluşturur.  Olayları, uygulama veya kitaplıkları ve uygulamanın kullandığı çalışma zamanları tarafından oluşturulabilir.  
   
 ## <a name="kinds-of-markers"></a>İşaretçileri türleri  
@@ -59,10 +60,10 @@ Eşzamanlılık görselleştiricisi içinde işaretlerinin bir uygulama olaylar�
  İşaretçileri sekmesindeki kullanabilir [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) çeşitli kaynaklardan işaretçileri eşzamanlılık görselleştiricisi ve, görüntülenen denetlemek için iletişim kutusunu işaretlerin önem ve kategorisine göre filtre uygulayabilirsiniz.  
   
 ## <a name="markers-from-eventsource"></a>EventSource işaretçilerini  
- Eşzamanlılık görselleştiricisi EventSource olaylarını da görüntüleyebilirsiniz.  Daha fazla bilgi için bkz: [EventSource olaylarını işaretleyici olarak görselleştirme](../profiling/visualizing-eventsource-events-as-markers.md).  
+ Eşzamanlılık görselleştiricisi EventSource olaylarını da görüntüleyebilirsiniz.  Daha fazla bilgi için bkz: [görselleştirmek EventSource olaylarını işaretleyici olarak](../profiling/visualizing-eventsource-events-as-markers.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Bayrak işaretleyicileri](../profiling/flag-markers.md)   
  [İleti işaretçileri](../profiling/message-markers.md)   
  [Kapsam işaretleyicileri](../profiling/span-markers.md)   
- [EventSource Olaylarını İşaretleyici Olarak Görselleştirme](../profiling/visualizing-eventsource-events-as-markers.md)
+ [EventSource olaylarını işaretleyici olarak Görselleştirme](../profiling/visualizing-eventsource-events-as-markers.md)

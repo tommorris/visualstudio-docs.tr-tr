@@ -19,11 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b8a1865dc6fce56f11faa453a4786ae799af7e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691218"
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 Bu kılavuz, verileri bir biçimden diğerine geçirmek için adım adım yönergeler sağlar. Northwind siparişleri tablolardan ve müşteriler kullanarak, bir form kullanıcıların bir müşteri seçmesine izin verir ve seçilen müşterinin siparişleri ikinci bir form görüntüler. Bu kılavuzda ilk formundan verileri alan ikinci form üzerinde bir yöntem oluşturulacağını gösterir.
@@ -145,7 +146,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 5.  WHERE yan tümcesi dönmek için sorguya eklemek `Orders` göre `CustomerID`. Sorgu aşağıdakine benzemelidir:
 
-    ```
+    ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
     FROM Orders
     WHERE CustomerID = @CustomerID

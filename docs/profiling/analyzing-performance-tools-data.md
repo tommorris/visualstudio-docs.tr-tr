@@ -18,13 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b5f5000ab18360d5146603862381e056b37284
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690858"
 ---
-# <a name="analyze-performance-tools-data"></a>Performans araçları verilerini çözümleme
+# <a name="analyze-performance-tools-data"></a>Performans araçları verilerini analiz etme
 Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları görüntülemek ve uygulama performans sorunları çözümlemek etkinleştirin. Bu bölümde performans raporları ve performans verilerini incelemek için kullanılan görünümleri genel bakış sağlar.  
   
 ## <a name="common-tasks"></a>Ortak görevler  
@@ -33,7 +34,7 @@ Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 
 |----------|---------------------|  
 |**Hızlı bir şekilde sorunları belirlemek için performans kurallarını kullanın:** Profil Araçları performans kurallarını tanımlamak ortak sorunlar ve Yardım sorunu içeren kaynak koduna kolayca gidin. Ayrıntılı Yardım konuları genellikle bir çözüm önerebilir.|-   [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)|  
 |**Rapor Görünümü Ayrıntıları Anlama:** profil oluşturma Araçlar rapor görünümlerini işlemler, iş parçacıkları, modüller ve bir çalıştırma profil oluşturma işlevler için toplanan performans verilerini sağlar. Görüntülenen verileri verileri toplamak için kullanılan profil yöntemine bağlıdır.|-   [Performans rapor görünümleri](../profiling/performance-report-views.md)|  
-|**Yapılandırma, sıralama ve filtreleme rapor görünümleri:** belirtin ve bir rapor görüntülemek için Rapor satırları sıralama veri sütunları sıralama ve yalnızca belirttiğiniz bir zaman diliminin dahil edilecek verileri filtreleyin.|-   [Özelleştirme performans Araçlar rapor görünümleri](../profiling/customizing-performance-tools-report-views.md)|  
+|**Yapılandırma, sıralama ve filtreleme rapor görünümleri:** belirtin ve bir rapor görüntülemek için Rapor satırları sıralama veri sütunları sıralama ve yalnızca belirttiğiniz bir zaman diliminin dahil edilecek verileri filtreleyin.|-   [Performans araçları rapor görünümlerini özelleştirme](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>İlgili bölümler  
  [Performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md)  

@@ -10,10 +10,11 @@ ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.openlocfilehash: 751f2fb7931c2081be8c146b6bc3959cc60c2a85
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477281"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Microsoft Store alınan abonelik nasıl etkinleştirilsin mi?
 Visual Studio abonelik Microsoft Store aracılığıyla satın aldığınız, etkinleştirme adımları ödeme "Onay sayfası" veya "Onay sonra satın aldığınız e-posta" başlatılabilir. 

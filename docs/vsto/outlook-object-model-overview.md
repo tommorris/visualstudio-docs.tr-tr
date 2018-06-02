@@ -21,22 +21,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9dbf629961a72bc1294da4f3abea563476922716
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e2d0141611a13e7b1ee9b20b8988466c92f3ce2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693052"
 ---
-# <a name="outlook-object-model-overview"></a>Outlook Nesne Modeline Genel Bakış
+# <a name="outlook-object-model-overview"></a>Outlook nesne modeline genel bakış
   Microsoft Office Outlook için VSTO eklentileri geliştirmek için Outlook nesne modeli tarafından sağlanan nesnelerle etkileşim kurabilirsiniz. Outlook nesne modeli sınıfları ve kullanıcı arabirimi öğelerini temsil eden arabirimler sağlar. Örneğin, <xref:Microsoft.Office.Interop.Outlook.Application> nesnesini temsil eden tüm uygulama <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> nesnesi, e-posta veya diğer öğeleri içeren bir klasörü temsil eder ve <xref:Microsoft.Office.Interop.Outlook.MailItem> nesnesi, bir e-posta iletisini temsil eder.  
   
- Bu konu, bazı Outlook nesne modeli içindeki ana nesneler kısa bir genel bakış sağlar. Burada, öğrenin tüm Outlook nesne modeli hakkında daha fazla kaynaklar için bkz [Outlook nesne modeli belgelerini kullanarak](#refdoc).  
+ Bu konu, bazı Outlook nesne modeli içindeki ana nesneler kısa bir genel bakış sağlar. Burada, öğrenin tüm Outlook nesne modeli hakkında daha fazla kaynaklar için bkz [Outlook nesne modeli belgeleri kullanın](#refdoc).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: bir özel görev raporu oluşturmak için Outlook'u kullanma?](http://go.microsoft.com/fwlink/?LinkID=130315).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl Outlook'u özel görev raporu oluşturmak için I: kullanma musunuz?](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
-## <a name="accessing-objects-in-an-outlook-project"></a>Outlook projesinde nesnelere erişme  
+## <a name="access-objects-in-an-outlook-project"></a>Outlook projesinde nesnelere erişme  
  Outlook ile etkileşim kurabilen birçok nesne sağlar. Nesne modeli etkili bir şekilde kullanmak için aşağıdaki üst düzey nesneleriyle bilgi sahibi olmanız:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.Application>  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> Bir e-posta iletisi veya toplantı isteği gibi tek bir öğenin içeriğini görüntülemek windows erişmek için kullanabileceğiniz özelliği.  
   
- Bir örneğini almak <xref:Microsoft.Office.Interop.Outlook.Application> nesne, uygulama alanının kullanmak `ThisAddIn` projenizdeki sınıfı. Daha fazla bilgi için bkz: [programlama VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
+ Bir örneğini almak <xref:Microsoft.Office.Interop.Outlook.Application> nesne, uygulama alanının kullanmak `ThisAddIn` projenizdeki sınıfı. Daha fazla bilgi için bkz: [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Özellikleri ve Outlook nesne modeli Koruması tarafından engellenen yöntemleri kullandığınızda güvenlik uyarılarını önlemek için uygulama alanından Outlook nesnelerini Al `ThisAddIn` sınıfı. Daha fazla bilgi için bkz: [Office çözümleri için belirli güvenlik konuları](../vsto/specific-security-considerations-for-office-solutions.md).  
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> nesnesi <xref:Microsoft.Office.Interop.Outlook.Explorer> geçerli odağa sahip.  
   
--   T:Microsoft.Office.Interop.Outlook.Explorer yöntemi kullanın <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> nesnesi <xref:Microsoft.Office.Interop.Outlook.Explorer> geçerli klasör için.  
+-   Kullanım `GetExplorer` yöntemi <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> nesnesi <xref:Microsoft.Office.Interop.Outlook.Explorer> geçerli klasör için.  
   
 ### <a name="inspector-object"></a>Inspector nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.Inspector> Nesnesi bir e-posta iletisi, görev veya randevu gibi tek bir öğeyi görüntüleyen bir pencereyi temsil eder. <xref:Microsoft.Office.Interop.Outlook.Inspector> Nesne yöntemleri ve pencereyi değiştirmek için kullanabileceğiniz özellikler ve pencere değiştiğinde oluşan olayları içerir.  
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> nesnesi <xref:Microsoft.Office.Interop.Outlook.Inspector> geçerli odağa sahip.  
   
--   Belirli bir öğeyi GetInspector gibi kullandığınız bir <xref:Microsoft.Office.Interop.Outlook.MailItem> veya <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, onunla ilişkilendirilen denetçisi almak için.  
+-   Kullanım `GetInspector` gibi belirli bir yöntemi öğesi bir <xref:Microsoft.Office.Interop.Outlook.MailItem> veya <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, onunla ilişkilendirilen denetçisi almak için.  
   
 ### <a name="mapifolder-object"></a>MAPIFolder nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> Nesnesi, e-posta, kişiler, görevler ve diğer öğeleri içeren bir klasörü temsil eder. Outlook 16 varsayılan sağlar <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> nesneleri.  
@@ -98,7 +99,7 @@ ms.lasthandoff: 04/16/2018
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox karşılık gelen **gelen** Outlook klasöründe.  
   
- Varsayılan erişim gösteren bir örnek <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> ve yeni bir <xref:Microsoft.Office.Interop.Outlook.MAPIFolder>, bkz: [nasıl yapılır: program aracılığıyla özel klasör öğeleri Oluştur](../vsto/how-to-programmatically-create-custom-folder-items.md).  
+ Varsayılan erişim gösteren bir örnek <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> ve yeni bir <xref:Microsoft.Office.Interop.Outlook.MAPIFolder>, bkz: [nasıl yapılır: program aracılığıyla özel klasör öğeleri oluşturma](../vsto/how-to-programmatically-create-custom-folder-items.md).  
   
 ### <a name="mailitem-object"></a>MailItem Nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.MailItem> Nesnesi, bir e-posta iletisini temsil eder. <xref:Microsoft.Office.Interop.Outlook.MailItem> nesneleridir genellikle klasörler gibi **gelen**, **Gönderilmiş öğeler**, ve **Giden Kutusu**. <xref:Microsoft.Office.Interop.Outlook.MailItem> özellikleri ve oluşturmak ve e-posta iletileri göndermek için kullanılan yöntemleri gösterir.  
@@ -118,9 +119,9 @@ ms.lasthandoff: 04/16/2018
 ### <a name="contactitem-object"></a>ContactItem nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>Nesnesini temsil eden bir kişi **kişiler** klasör. <xref:Microsoft.Office.Interop.Outlook.ContactItem> Bunlar, adresini, e-posta adresleri ve telefon numaraları gibi temsil eden kişiler için kişi bilgilerini, çeşitli nesneleri içerir.  
   
- Yeni bir kişinin nasıl oluşturulduğunu gösteren bir örnek için bkz: [nasıl yapılır: Outlook Kişilerine program aracılığıyla giriş ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Var olan bir kişi arama gösteren örnek için bkz: [nasıl yapılır: program aracılığıyla belirli bir kişi için arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
+ Yeni bir kişinin nasıl oluşturulduğunu gösteren bir örnek için bkz: [nasıl yapılır: Outlook Kişilerine program aracılığıyla giriş ekleme](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Var olan bir kişi arama gösteren örnek için bkz: [nasıl yapılır: program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
   
-##  <a name="refdoc"></a> Outlook nesne modeli belgelerini kullanma  
+##  <a name="refdoc"></a> Outlook nesne modeli belgeleri kullanın  
  Outlook nesne modeli hakkında tam bilgi için Outlook birincil birlikte çalışma derlemesi (PIA) başvuru ve VBA nesne modeli başvurusu başvurabilir.  
   
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma derleme başvurusu  
@@ -133,13 +134,13 @@ ms.lasthandoff: 04/16/2018
   
  Tüm nesneleri ve VBA nesne modeli başvurusu üyeleri türleri ve Outlook PIA üyelerine karşılık gelir. VBA nesne modeli başvurusu denetçisi nesnesinde Örneğin, karşılık gelen <xref:Microsoft.Office.Interop.Outlook.Inspector> Outlook PIA nesne. VBA nesne modeli başvurusu kod örnekleri çoğu özellikleri, yöntemleri ve olayları sağlasa da, bunları kullanarak oluşturduğunuz Outlook VSTO eklenti projesindeki kullanmak istiyorsanız, Visual Basic veya Visual C# bu başvurusu VBA kodu çevrilmelidir Visual Studio.  
   
-### <a name="related-topics"></a>İlgili Konular  
+### <a name="related-topics"></a>İlgili konular  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Kişi Öğeleriyle Çalışma](../vsto/working-with-contact-items.md)|Kişilerle görevlerin nasıl gerçekleştirileceği Göster konuları sağlar.|  
-|[Posta Öğeleriyle Çalışma](../vsto/working-with-mail-items.md)|Posta öğeleri görevleri gerçekleştirmek nasıl Göster konuları sağlar.|  
-|[Klasörlerle Çalışma](../vsto/working-with-folders.md)|Klasörlerle görevlerin nasıl gerçekleştirileceği Göster konuları sağlar.|  
-|[Takvim Öğeleriyle Çalışma](../vsto/working-with-calendar-items.md)|Takvim öğeleri görevleri gerçekleştirmek nasıl Göster konuları sağlar.|  
-|[Nasıl yapılır: Program Aracılığıyla Geçerli Outlook Öğesini Belirleme](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Görünen adı geçerli klasörde ve seçili öğe hakkında bazı bilgiler gösterilmektedir.|  
+|[Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)|Kişilerle görevlerin nasıl gerçekleştirileceği Göster konuları sağlar.|  
+|[Posta öğeleriyle çalışma](../vsto/working-with-mail-items.md)|Posta öğeleri görevleri gerçekleştirmek nasıl Göster konuları sağlar.|  
+|[Klasörlerle çalışma](../vsto/working-with-folders.md)|Klasörlerle görevlerin nasıl gerçekleştirileceği Göster konuları sağlar.|  
+|[Takvim öğeleriyle çalışma](../vsto/working-with-calendar-items.md)|Takvim öğeleri görevleri gerçekleştirmek nasıl Göster konuları sağlar.|  
+|[Nasıl yapılır: program aracılığıyla geçerli Outlook öğesini belirleme](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Görünen adı geçerli klasörde ve seçili öğe hakkında bazı bilgiler gösterilmektedir.|  
   

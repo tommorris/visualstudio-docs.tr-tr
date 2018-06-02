@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690672"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Nasıl yapılır: ayarlama hata ayıklama ve yayın yapılandırmaları Visual Studio'da
 Visual Studio projeleri ayrı sürümü ve hata ayıklama yapılandırmaları programınızın. Adları kapsıyor gibi hata ayıklama için hata ayıklama sürümü ve yayın sürümü son sürüm dağıtım oluşturun.  
@@ -60,7 +61,7 @@ Derleme yapılandırmasını değiştirebilirsiniz **yapı** menüsünde, araç 
   
      Bu araç Express sürümlerinde kullanılabilir değil. Kullanabileceğiniz **yapı çözümü F6** ve **hata ayıklamayı Başlat F5'e** menü öğeleri yapılandırmayı seçin.
 
-## <a name="BKMK_symbols_release"></a>Simge (.pbd) dosyaları bir yapı için oluşturma
+## <a name="BKMK_symbols_release"></a>Simge (.pdb) dosyaları bir yapı için oluşturma
 
 Çoğu proje türleri için .pdb dosyaları hem hata ayıklama için varsayılan olarak oluşturulan ve yayın derlemeleri, ancak varsayılan ayarlar, belirli bir proje türü ve Visual Studio sürümüne bağlı olarak farklı olur. Yapılandırabileceğiniz olup .pdb dosyaları derleyici oluşturur ve ne tür bir hata ayıklama bilgilerini içerir.
 

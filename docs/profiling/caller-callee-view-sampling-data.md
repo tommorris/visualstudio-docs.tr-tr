@@ -14,10 +14,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548716"
 ---
 # <a name="callercallee-view---sampling-data"></a>Arayan/Aranan görünümü - örnekleme verileri
 Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil bilgilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  

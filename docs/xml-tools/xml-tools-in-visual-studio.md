@@ -34,19 +34,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 446378df2d73f4d0c2bb8eac45075fa51365cd6d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693740"
 ---
-# <a name="xml-tools-in-visual-studio"></a>Visual Studio'daki XML Araçları
+# <a name="xml-tools-in-visual-studio"></a>Visual Studio'daki XML araçları
 
 *Genişletilebilir İşaretleme Dili (XML)* veri tanımlamak için bir biçim sağlayan bir biçimlendirme dilidir. Bu içerik ve daha anlamlı arama sonuçlarının daha kesin bildirimleri birden çok platform genelinde kolaylaştırır. Ayrıca, XML verileri sunudan ayrımı sağlar. Örneğin, HTML etiketleri kalın veya Yatık olarak verileri görüntülemek için tarayıcı bildirmek için kullandığınız; XML'de yalnızca şehir adı, sıcaklık ve barometric baskısı gibi verileri tanımlamak için etiketleri kullanın. XML'de, stil sayfaları Genişletilebilir Stil sayfası Dili'nin (XML) gibi ve geçişli stil sayfaları (CSS) bir tarayıcıda verileri sunmak için kullanın. XML verileri sunu ve işlem ayırır. Bu, farklı stil sayfaları ve uygulamaları uygulayarak istediğiniz gibi verileri işlemek ve görüntülemesini sağlar.
 
-XML Web üzerinden teslimat için optimize edilmiştir SGML alt kümesidir. World Wide Web Konsorsiyumu (W3C) tarafından tanımlanır. Bu Standartlaştırma yapılandırılmış veri Tekdüzen ve uygulamaları veya satıcılar bağımsız olarak olacağını garanti eder.
+XML Web üzerinden teslimat için optimize edilmiştir SGML alt kümesidir. World Wide Web Konsorsiyumu (W3C) tarafından tanımlanır. Bu Standartlaştırma yapılandırılmış veri Tekdüzen ve uygulamaları veya satıcılar bağımsız olarak güvence altına alır.
 
-Visual Studio ve .NET Framework özelliklerinin çoğu özünde XML'dir. Aşağıdaki konu listesi adları araçları ve Visual Studio ve .NET Framework sunulan XML ilgili özellikler.
+Visual Studio ve .NET Framework özelliklerinin çoğu özünde XML'dir. Aşağıdaki makalede liste adları araçları ve Visual Studio ve .NET Framework sunulan XML ilgili özellikler.
 
 Daha fazla bilgi için bkz: <xref:System.Xml?displayProperty=fullName> belgeleri.
 
@@ -60,7 +61,7 @@ Daha fazla bilgi için bkz: <xref:System.Xml?displayProperty=fullName> belgeleri
 
 <xref:System.Xml.Serialization?displayProperty=fullName> Sınıfları ve oluşturan diğer öğeleri açıklar <xref:System.Xml.Serialization> ad alanı ve her öğe hakkında daha ayrıntılı bilgi için bağlantılar sağlar.
 
-## <a name="related-sections"></a>İlgili Bölümler
+## <a name="related-sections"></a>İlgili bölümler
 
 [XML belge nesne modeli (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom) Describes nasıl <xref:System.Xml.XmlDocument> ve onun ilişkili sınıfları W3C belge nesne modeli (Temel) Düzey 1 ve Düzey 2 ad alanı destek belirtimleri uymak.
 
@@ -68,6 +69,6 @@ Daha fazla bilgi için bkz: <xref:System.Xml?displayProperty=fullName> belgeleri
 
 [XSLT dönüştürmeleri](/dotnet/standard/data/xml/xslt-transformations) Describes nasıl <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT 1.0 öneri uygular.
 
-[XML verileri kullanarak XPath veri modeli işlemek](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) Describes nasıl <xref:System.Xml.XPath.XPathNavigator> sınıfı tarafından depolanan XML veri işlenebilecek bir <xref:System.Xml.XPath.XPathDocument> veya bir <xref:System.Xml.XmlDocument> nesnesi. <xref:System.Xml.XPath.XPathNavigator> Sınıfı XQuery 1.0 ve XPath 2.0 veri modelini temel alır ve gidin ve XML verileri düzenlemek için kullanılabilir.
+[İşlem XPath veri modeli kullanarak XML verilerini](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) Describes nasıl <xref:System.Xml.XPath.XPathNavigator> sınıfı tarafından depolanan XML veri işlenebilecek bir <xref:System.Xml.XPath.XPathDocument> veya bir <xref:System.Xml.XmlDocument> nesnesi. <xref:System.Xml.XPath.XPathNavigator> Sınıfı XQuery 1.0 ve XPath 2.0 veri modelini temel alır ve gidin ve XML verileri düzenlemek için kullanılabilir.
 
 [XML Şeması nesne modeli (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som) sağlayarak XML şemaları, düzenleme ve oluşturmak için kullanılan sınıflar açıklayan bir <xref:System.Xml.Schema.XmlSchema> yüklemek ve bir şema düzenlemek için sınıf.

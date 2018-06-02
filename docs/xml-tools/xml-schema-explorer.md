@@ -1,5 +1,5 @@
 ---
-title: XML şema Gezgini
+title: XML Şema Gezgini
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,25 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23492d45a0cd88566ab36dbdb803f68dd46037
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693948"
 ---
-# <a name="xml-schema-explorer"></a>XML şema Gezgini
+# <a name="xml-schema-explorer"></a>XML Şema Gezgini
 
-XML şema Explorer XML Şeması Tanım Dili (XSD) şemalarda çalışmanıza olanak sağlamak için Microsoft Visual Studio ve XML düzenleyicisini tümleşiktir. Bir XML Şeması dosyayı açtığınızda **şema ayarlamak** düğümü XML Şeması Gezgini'nde görüntülenir. Tüm dahil, içe aktarılan ya da yeniden tanımlanan şemaları aracılığıyla başvurulan herhangi bir dosya yanı sıra, hedef dosya için bir `include` veya `import` deyimi, ayrıca XML Şeması Gezgini'nde görünür.
+**XML Şeması Explorer** XML Şeması Tanım Dili (XSD) şemalarda çalışmanıza olanak sağlamak için Microsoft Visual Studio ve XML Düzenleyicisi ile tümleşiktir. Bir XML Şeması dosyayı açtığınızda **şema ayarlamak** düğümü görünür **XML Şeması Explorer**. Tüm dahil, içe aktarılan ya da yeniden tanımlanan şemaları aracılığıyla başvurulan herhangi bir dosya yanı sıra, hedef dosya için bir `include` veya `import` deyimi, da görünür **XML Şeması Explorer**.
 
- XML şema Explorer aşağıdakileri sağlar:
+ **XML Şeması Explorer** aşağıdakileri sağlar:
 
 -   Şema kümesini hızlı bir genel bakış alın.
 
 -   Gözat ve ağaç gidin.
 
--   Anahtar sözcüğü ve şema özgü aramaları gerçekleştirin. Daha fazla bilgi için bkz: [şema ayarlamak arama](../xml-tools/searching-the-schema-set.md).
+-   Anahtar sözcüğü ve şema özgü aramaları gerçekleştirin. Daha fazla bilgi için bkz: [şema kümesini arama](../xml-tools/searching-the-schema-set.md).
 
--   Arama sonuçlarını grafik görünümü veya içerik Modle görünümü ekleme
+-   Arama sonuçlarını grafik görünümü veya içerik modeli görünümü ekleme
 
 -   Belge sipariş, türü veya ad ağacında sıralayın. Daha fazla bilgi için bkz: [sıralama, filtreleme ve gruplandırma](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
@@ -36,18 +37,18 @@ XML şema Explorer XML Şeması Tanım Dili (XSD) şemalarda çalışmanıza ola
 
 -   Genel öğeler için XML örneği oluşturur.
 
-XML şema Gezgini ağaç görünümü ayarlamak şemanın hiyerarşik bir görünümü sağlar. XML şema Explorer arama, filtreleme, gezinti ve sıralama de sağlar. XML şema Explorer erişmek için aşağıdakilerden birini yapın:
+**XML Şeması Explorer** ağaç görünümü ayarlamak şema hiyerarşik bir görünümünü sağlar. **XML Şeması Explorer** arama, filtreleme, gezinti ve sıralama de sağlar. Erişim için **XML Şeması Explorer**, aşağıdakilerden birini yapın:
 
 -   Kullanıyorsanız [Başlangıç'ı](../xml-tools/start-view.md), tıklatın **XML Şeması Explorer** bağlantı.
 
--   Kullanıyorsanız [grafik görünümü](../xml-tools/graph-view.md) veya [içerik modeli görünümü](../xml-tools/content-model-view.md) ve çalışma alanınızda düğümünüz, bağlam menüsü XML Şeması Explorer seçmek için kullanın.
+-   Kullanıyorsanız [grafik görünümü](../xml-tools/graph-view.md) veya [içerik modeli görünümü](../xml-tools/content-model-view.md) ve çalışma alanınızda düğümünüz, seçmek için bağlam menüsü kullanma **XML Şeması Explorer**.
 
--   XML şema Explorerfrom öğesini de seçebilirsiniz **Görünüm** menüsü.
+-   Öğesini de seçebilirsiniz **XML Şeması Explorer** gelen **Görünüm** menüsü.
 
--   XML şema Explorerfrom bir Visual Basic bir .xsd dosyasıyla ilişkili XML değişmez değer içeren bir .vb dosyası erişebilir. Şemanın XML Şeması Explorer'da ayarlayın, bir XML düğümü sabit bir XML veya XML ad alanı içe sağ tıklatın ve seçin görmek için **Göster şema Explorer'da** komutu. Daha fazla bilgi için bkz: [XML Şeması Gezgini ile XML değişmez tümleştirme](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+-   Erişebileceğiniz **XML Şeması Explorer** gelen bir *.vb* ile ilişkili bir Visual Basic XML değişmez değeri olan dosyayı bir *.xsd* dosya. Şema görmek için kümesinde **XML Şeması Explorer**, bir XML değişmez değeri veya bir XML ad alanı içe aktardığınız XML düğümünü sağ tıklatın ve seçin **Göster şema Explorer'da** komutu. Daha fazla bilgi için bkz: [XML Şeması Gezgini ile tümleştirme, XML değişmez değerleri](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Ağaç görünümü
- XML şema Explorer ağaç yapısında önceden derlenmiş şema kümesi bilgilerini görüntüler. Ağaç yapısı şu şekilde düzenlenmiştir:
+ **XML Şeması Explorer** görüntüler önceden derlenmiş şema bilgileri ağaç yapısında ayarlayın. Ağaç yapısı şu şekilde düzenlenmiştir:
 
 -   En üst düzeyinde şema düğümü ayarlanır.
 
@@ -72,13 +73,13 @@ Bir ağaç yapısı örneği verilmiştir:
 
 -   Bir SchemaSet veya bir ad alanı düğümü etkinleştirme hiçbir şey yapmaz.
 
-## <a name="draging-and-dropping-nodes"></a>Draging ve düğümler bırakma
+## <a name="drag-and-drop-nodes"></a>Düğüm sürükleme ve bırakma
  Sürükleme ve genel düğümleri, dosya düğümleri ve ad alanı düğümleri bir XSD Tasarımcısı görünümü üzerine bırakın. Geçerli Görünüm ise [Başlangıç'ı](../xml-tools/start-view.md), görünümü açın bir düğüm sürükleme açılır [grafik görünümü](../xml-tools/graph-view.md). Geçerli Görünüm ise [içerik modeli görünümü](../xml-tools/content-model-view.md) veya grafik görünümü, görünümün bir düğüm üzerine bıraktığınızda değiştirmez.
 
  Görünüm dosyalarda bırakarak ekleyecek genel tüm düğümleri dosyasında [XSD Designer çalışma](../xml-tools/xml-schema-designer-workspace.md). Ad alanları görünümünden bırakmayı tüm genel düğümlerini ad alanında çalışma alanına ekleyecek. Çalışma alanı görünüm arasında paylaşılır.
 
  Sürükleme ve yerel düğümler veya içeri aktarmalar bırakın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl Yapılır: XML Şema Gezgininden Çalışma Alanına Düğüm Ekleme](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Nasıl yapılır: XML şema Gezgini'nden çalışma alanına düğümleri eklemek](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

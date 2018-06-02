@@ -20,16 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f823c8c67750dec31c6c2b534ecc7500e20defaf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691502"
 ---
-# <a name="creating-a-business-data-connectivity-model"></a>İş Verileri Bağlantı Modeli Oluşturma
+# <a name="creating-a-business-data-connectivity-model"></a>İş verileri bağlantı modeli oluşturma
   İş verileri bağlantı (BDC) modeli oluşturma veya Visual Studio kullanarak mevcut bir BDC modeli özelleştirebilirsiniz. Her SharePoint Proje yalnızca bir model içerebilir. Daha fazla bilgi için bkz: [iş verilerini SharePoint tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
-## <a name="creating-a-new-model"></a>Yeni bir Model oluşturma  
+## <a name="create-a-new-model"></a>Yeni bir model oluşturma
  Yeni bir model oluşturmak için Oluştur bir **iş verileri bağlantı modeli** proje veya ekleme bir **iş verileri bağlantı modeli** öğesinin bir **boş SharePoint proje**.  
   
 > [!NOTE]  
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Projenin hata ayıklamasını yaparken visual Studio derleme konumlarının her ikisinde de, yerel bilgisayarınızda kopyalar.  
   
-## <a name="adding-an-existing-model"></a>Varolan modeli ekleme  
+## <a name="add-an-existing-model"></a>Varolan modeli ekleme
  SharePoint Designer gibi diğer araçlar kullanılarak oluşturulmuş bir model içeri aktarabilirsiniz. Projeniz aşağıdaki durumlarda var olan bir model almayı da tercih edebilirsiniz:  
   
 -   Bir SharePoint sunucu grubuna zaten dağıtılmış bir model özelleştirmek için.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
  Bir seçenek olarak seçerek alınan modele bir LOB Sistem türü .NET Framework derlemesinin ekleyebilirsiniz **eklemek .NET derlemesi LobSystem**. Bu, özel kod yazmanıza ve içe aktarılan model için meta verileri tanımlamak için bir tasarımcı kullanmanıza olanak sağlar.  
   
-## <a name="related-topics"></a>İlgili Konular  
+## <a name="related-topics"></a>İlgili konular
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
@@ -73,4 +74,4 @@ ms.lasthandoff: 04/16/2018
 |[Nasıl yapılır: Yerelleştirilmiş Adlar. Özellikler ve İzinleri Belirtmek için Kaynak Dosyası Kullanma](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Model bir Web Bölümü veya Web sayfası tarafından tüketilen model meta verileri ile birleştirilen dizeleri sunmak açıklar.|  
 |[Nasıl yapılır: Bir BDC Özelliğine Özel bir Derlemeyi Dahil Etme](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Özelliğine özel bir derlemeyi dahil etme kullanmayı gösterir.|  
   
-  
+ 

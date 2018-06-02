@@ -1,5 +1,5 @@
 ---
-title: XML verileri ile çalışma
+title: XML Verileriyle Çalışma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693727"
 ---
 # <a name="working-with-xml-data"></a>XML verileri ile çalışma
 
@@ -35,7 +36,7 @@ Ek özellikleri içerir:
 
 - XSLT stil sayfaları, IntelliSense desteği dahil olmak üzere düzenleme desteği.
 
-- XML şema Gezgini.
+- **XML şema Explorer**.
 
 ## <a name="xml-schema-designer"></a>XML şema Tasarımcısı
 
@@ -57,4 +58,4 @@ Visual Studio hata ayıklama XSLT stil sayfaları destekler. Hata ayıklayıcıy
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)
+- [Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)

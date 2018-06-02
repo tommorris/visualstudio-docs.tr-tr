@@ -28,18 +28,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 088afa321e5f4026735e88c3068900b0bfc8c07c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691485"
 ---
-# <a name="bdc-model-design-tools-overview"></a>BDC Modeli Tasarım Araçlarına Genel Bakış
+# <a name="bdc-model-design-tools-overview"></a>BDC modeli tasarım araçlarına genel bakış
   BDC Tasarımcısı kullanarak iş verileri bağlantı (BDC) modeli tasarlayabilirsiniz **BDC yöntem ayrıntıları** penceresinde ve **BDC Gezgini**.  
   
  **BDC Gezgini** model göz atın, model aramak ve tür tanımlayıcısı tanımlamak sağlar.  
   
-## <a name="bdc-designer"></a>BDC Tasarımcısı  
+## <a name="bdc-designer"></a>BDC Tasarımcısı
  BDC Tasarımcısı modelinizde varlıklarını tanımlama ve görsel olarak birbirleriyle ilişkilerini düzenlemeyi sağlar. BDC Tasarımcısı aşağıdaki görevleri gerçekleştirmek için kullanın:  
   
 -   Varlıkları modele ekleyin.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  BDC Tasarımcısı'nı açmak için projenizdeki model dosyasını çift tıklatın veya model dosyası için kısayol menüsünü açın ve ardından **açmak**. Sürükleyerek ya da kopyalayarak modele bir varlık eklemek bir **varlık** gelen **araç** tasarımcıya. İki varlık arasında bir ilişki oluşturmak için seçtiğiniz **ilişkilendirme** denetim **araç**ilk varlık seçin ve ardından ikinci varlığı seçin.  
   
-## <a name="bdc-method-details-window"></a>BDC yöntemi Ayrıntıları penceresi  
+## <a name="bdc-method-details-window"></a>BDC yöntemi Ayrıntıları penceresi
  Kullanım **BDC yöntem ayrıntıları** örnekleri parametrelerini tanımlamak ve bir yöntemin tanımlayıcıları filtrelemek için penceresi.  
   
  Finder, belirli bir Bulucu, Creator, güncelleştirici ve Silici yöntemlerinde hemen oluşturabilirsiniz **BDC yöntem ayrıntıları** penceresi. Bu yöntemleri oluşturduğunuzda, Visual Studio yönteme parametre, örnekleri ve tür tanımlayıcısı gibi meta veri ekler. Size özel senaryonun karşılamak için bu meta verileri değiştirebilirsiniz.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
  Genişlet veya daralt düğümler **BDC yöntem ayrıntıları** parametreleri, örneklerini tanımlayın ve tanımlayıcıları filtrelemek için penceresi. Kullanım **BDC Gezgini** tür tanımlayıcısı tanımlamak için.  
   
-## <a name="bdc-explorer"></a>BDC Gezgini  
+## <a name="bdc-explorer"></a>BDC Gezgini
  **BDC Gezgini** modelini olun öğelerini görüntüler. Açmak için **BDC Gezgini**, menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **BDC Gezgini**. Model göz atmak için düğümleri genişletin **BDC Gezgini**. Her düğüm model dosyası XML bir öğeyi temsil eder.  
   
  Düğümler seçerken **BDC Gezgini**, seçtiğiniz her bir düğüm özelliklerini görünür **özellikleri** penceresi. Bu özelliklerin çoğu öznitelikler model dosyasında karşılık gelir. En üstte arama kutusunu kullanarak model arayabilirsiniz **BDC Gezgini**.  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  **BDC Gezgini** tanımlayıcıları, özel özellikler, yerelleştirilmiş dizeleri, ilişki gruplar, Eylemler, filtre tanımlayıcıları, eylem denetim listeleri ve varsayılan parametre değerlerini görüntülemez.  
   
-### <a name="defining-type-descriptors"></a>Tür tanımlayıcısı tanımlama  
+### <a name="define-type-descriptors"></a>Tür tanımlayıcısı tanımlayın
  Kullanım **BDC Gezgini** tür tanımlayıcısı tanımlamak için. BDC Gezgini, bir kez bir tür tanımlayıcı tanımlayabilir ve bu tür tanımlayıcı modelinizdeki başka bir yerde daha sonra yeniden olanak sağlar. Bunu gerçekleştirmek için bir tür tanımlayıcı kopyalayın ve herhangi bir parametre yapıştırın veya tür tanımlayıcısı.  
   
 > [!NOTE]  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
  Daha fazla bilgi için bkz: [nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: bir BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)   
  [Nasıl yapılır: bir modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Nasıl yapılır: bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-finder-method.md)   
@@ -91,4 +92,4 @@ ms.lasthandoff: 04/16/2018
  [İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [İş Verileri Bağlantı Modeli Tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
-  
+ 

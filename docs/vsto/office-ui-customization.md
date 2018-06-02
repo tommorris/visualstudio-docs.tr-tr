@@ -1,5 +1,5 @@
 ---
-title: Office kullanıcı arabirimini özelleştirme | Microsoft Docs
+title: Office kullanıcı arabirimini özelleştirme
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a35ca6a868aa1fff2a4bd4bfbd3ec466d5a2107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0152fea139d6351c947412260247c47f79bb6b66
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692466"
 ---
-# <a name="office-ui-customization"></a>Office Kullanıcı Arabirimini Özelleştirme
+# <a name="office-ui-customization"></a>Office kullanıcı arabirimini özelleştirme
   Visual Studio'da Office geliştirici araçları kullanarak, kullanıcı arabirimi (UI) Microsoft Office uygulamalarının özelleştirebilirsiniz. Bu konu aşağıdaki bölümlerde özelleştirebileceğiniz UI özellikleri açıklanmaktadır:  
   
 -   [UI özellikleri karşılaştırması](#Comparison)  
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Backstage görünümü](#Backstage)  
   
--   [Outlook Form bölgeleri](#FormRegion)  
+-   [Outlook form bölgeleri](#FormRegion)  
   
 -   [Belgelerindeki denetimler](#Controls)  
   
@@ -78,34 +79,34 @@ ms.lasthandoff: 04/16/2018
   
  Visual Studio Tasarımcısı veya API'leri Backstage görünümünü özelleştirmek için sağlamaz. Ancak, eklerseniz bir **Şerit (XML)** öğesi Office projenize XML Backstage görünümünü özelleştirmek için Şerit XML dosyasına ekleyebilirsiniz. Hakkında daha fazla bilgi için **Şerit (XML)** öğeler, bkz: [Şerit XML](../vsto/ribbon-xml.md).  
   
- Backstage görünümünü özelleştirme hakkında daha fazla bilgi için bkz: [giriş geliştiricilerin Office 2010 Backstage görünümüne](http://go.microsoft.com/fwlink/?LinkId=182189) ve [geliştiricilerin Office 2010 Backstage görünümünü özelleştirme](http://go.microsoft.com/fwlink/?LinkId=182188).  
+ Backstage görünümünü özelleştirme hakkında daha fazla bilgi için bkz: [giriş geliştiricilerin Office 2010 Backstage görünümüne](http://go.microsoft.com/fwlink/?LinkId=182189) ve [geliştiriciler için Office 2010 Backstage görünümünü özelleştirme](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
-##  <a name="FormRegion"></a> Outlook Form bölgeleri  
+##  <a name="FormRegion"></a> Outlook form bölgeleri  
  Form bölgeleri için standart Microsoft Office Outlook form özel işlevsellik eklemek için kullanın. Varolan bir formu ek alanlar veya denetimleri ile genişletmek form bölgeleri oluşturabilirsiniz. Visual Studio'da Office geliştirme araçlarını kullanarak yeni bir form bölgesi oluşturursanız, yalnızca Windows Forms denetimleri form bölgesi üzerindeki kullanabilirsiniz. Outlook'ta tasarlanan form bölgesini içe aktarırsanız, sadece yerel Outlook denetimleri kullanabilirsiniz.  
   
  Outlook UI işleminin farklı alanları kaplar form bölgeleri oluşturabilirsiniz. Örneğin, bitişik form bölgeleri formun ilk sayfasının en altında görüntülenir ve her bitişik form bölgesi daraltılabilir. Bir tam ek form sayfası olarak görüntülenir ve görünen, ayrı form bölgesini de, herhangi bir varolan standart form veya özel form da ekleyebilirsiniz.  
   
- Daha fazla bilgi için bkz: [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md).  
+ Daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="Controls"></a> Belgelerindeki denetimler  
  Word belgelerini ve Excel çalışma sayfaları için denetimleri çeşitli ekleyebilirsiniz. Örneğin, böylece kullanıcı standart bir biçimde tarihleri girin veya bir veritabanına veri göndermek için bir çalışma sayfası üzerinde bir düğme put tarih seçici denetimi belge eklemek isteyebilirsiniz.  
   
- Excel veya Word için belge düzeyi projelerine geliştirirken denetimleri projenizdeki belge veya çalışma kitabına tasarım zamanında eklemek için Visual Studio tasarımcısını kullanabilirsiniz veya çalışma zamanında denetimlerini programlı olarak ekleyebilirsiniz. Excel veya Word için VSTO eklentisi projelerine geliştirdiğinizde, programlı olarak denetimleri herhangi bir açık belge veya çalışma zamanında ekleyebilirsiniz.  
+ Excel veya Word için belge düzeyi projelerine geliştirirken denetimleri projenizdeki belge veya çalışma kitabına tasarım zamanında eklemek için Visual Studio tasarımcısını kullanabilirsiniz veya çalışma zamanında denetimlerini programlı olarak ekleyebilirsiniz. Excel veya Word için VSTO eklentisi projelerine geliştirirken, herhangi bir açık belge veya çalışma zamanında çalışma kitabı denetimlerini programlı olarak ekleyebilirsiniz.  
   
- Daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md) ve [Office belgeleri genel bakış Windows Forms denetimleri](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md) ve [Windows forms denetimleri Office belgeleri genel bakış üzerinde](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Kısayol menüleri  
- Bir belge veya bir uygulama penceresinin sağ tıklattığınızda bir kısayol menüsü görüntülenir. Bir olay bir kullanıcı bir belge, çalışma kitabı veya konak denetimi tıklattığında gibi gerçekleştikten sonra görünmesi bir kısayol menüsü ayarlayabilirsiniz. Birkaç farklı menü komutları veya denetimlerin bir kısayol menüsüne ekleyebilirsiniz. Kısayol menüleri XML kullanarak oluşturun. Eklerseniz bir **Şerit (XML)** öğesi Office projenize kısayol menüleri oluşturmak için Şerit XML dosyasını XML ekleyebilirsiniz. Kısayol menüleri oluşturmak için XML kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: kısayol menüleri ekleme komutları](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Bir belge veya bir uygulama penceresinin sağ tıklattığınızda bir kısayol menüsü görüntülenir. Bir olay bir kullanıcı bir belge, çalışma kitabı veya konak denetimi tıklattığında gibi gerçekleştikten sonra görünmesi bir kısayol menüsü ayarlayabilirsiniz. Birkaç farklı menü komutları veya denetimlerin bir kısayol menüsüne ekleyebilirsiniz. Kısayol menüleri XML kullanarak oluşturun. Eklerseniz bir **Şerit (XML)** öğesi Office projenize kısayol menüleri oluşturmak için Şerit XML dosyasını XML ekleyebilirsiniz. Kısayol menüleri oluşturmak için XML kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: kısayol menülerine komut eklemek](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
- [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Windows forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)   
- [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
+ [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
  [Özel görev bölmeleri](../vsto/custom-task-panes.md)   
  [Office çözümlerinde WPF denetimlerini kullanma](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Nasıl yapılır: eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [İzlenecek Yol: Windows Formu Kullanarak Veri Toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
+ [Nasıl yapılır: kullanıcı arayüzü hatalarını gösterme eklentisi](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [İzlenecek yol: bir Windows formu kullanarak veri toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
   
   

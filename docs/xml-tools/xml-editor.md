@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693792"
 ---
 # <a name="xml-editor"></a>XML Düzenleyicisi
 
@@ -39,7 +40,7 @@ XML Düzenleyicisi'ni üzerinde Visual Studio Metin Düzenleyicisi'ni temel alı
 
 - İle tümleştirme [XML Şeması Explorer](../xml-tools/xml-schema-explorer.md). XML şemaları hiyerarşik bir görünümünü sağlar.
 
-XML Düzenleyicisi'ni, .xml, .xsd, .xsl ve .config gibi bilinen dosya uzantıları için çağrılır. XML içerecek şekilde dosya görünüyorsa, ayrıca tüm bilinmeyen dosya uzantısına göre çağrılır. Kullanarak XML Düzenleyicisi ile herhangi bir dosyayı açabilirsiniz **birlikte Aç** seçeneği ve XML Düzenleyicisi'ni listeden seçerek.
+XML Düzenleyicisi'ni gibi bilinen dosya uzantıları için çağrılan *.xml*, *.xsd*, *.xsl*, ve *.config*. XML içerecek şekilde dosya görünüyorsa, ayrıca tüm bilinmeyen dosya uzantısına göre çağrılır. Kullanarak XML Düzenleyicisi ile herhangi bir dosyayı açabilirsiniz **birlikte Aç** seçeneği ve XML Düzenleyicisi'ni listeden seçerek.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -57,4 +58,4 @@ XML Düzenleyicisi'ni, .xml, .xsd, .xsl ve .config gibi bilinen dosya uzantılar
 
 - [Kod Düzenleyicisi özelliklerini](../ide/writing-code-in-the-code-and-text-editor.md) Metin Düzenleyicisi hakkında bilgi sağlar.
 - [XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD), XML Şeması Tanım Dili (XSD) ve XSLT dahil olmak üzere XML teknolojileri hakkında bilgi sağlar.
-- [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)
+- [Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)

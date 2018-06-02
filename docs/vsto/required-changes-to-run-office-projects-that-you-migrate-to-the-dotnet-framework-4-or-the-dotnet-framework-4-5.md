@@ -1,5 +1,5 @@
 ---
-title: .NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerini çalıştırmak için değişiklikler gerekli | Microsoft Docs
+title: .NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerini çalıştırmak için gereken değişiklikler
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5df72bcf36907dbb556e8d7fffd30cb224bfd41c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 53a6b138509648af102a50217a8bab4d32b27a2a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693922"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5'e Geçirdiğiniz Office Projelerini Çalıştırmak için Gereken Değişiklikler
+# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerini çalıştırmak için gereken değişiklikler
   Bir Office projesinin hedef Framework'ü değiştirilirse [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha önceki .NET Framework sürümünden çözümü geliştirme bilgisayarındaki ve son kullanıcı bilgisayarlarında çalıştığından emin olmak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  
   
 -   Kaldırma <xref:System.Security.SecurityTransparentAttribute> Visual Studio 2008'den yükseltme yaptıysanız, projeye ait.  
@@ -34,10 +35,10 @@ ms.lasthandoff: 04/16/2018
   
  Her bir bu görevler hakkında daha fazla bilgi için aşağıdaki ilgili bölümlere bakın.  
   
-## <a name="removing-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Visual Studio 2008'den yükseltme projelerinden SecurityTransparent özniteliğini kaldırma  
+## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Visual Studio 2008'den yükseltme projeleri SecurityTransparent özniteliğini kaldırın  
  Visual Studio 2008 ve hedef Framework'ü bir Office proje yükseltirseniz, proje sonradan değişikliklerini [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra kaldırmanız <xref:System.Security.SecurityTransparentAttribute> projeden. Visual Studio otomatik olarak bu öznitelik için kaldırmaz. Bu öznitelik kaldırmazsanız, projeyi derlerken bir hata iletisi alırsınız.  
   
- Visual Studio yükseltilmiş projenin hedef çerçevesini değiştirebilir durumları hakkında daha fazla bilgi için [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bkz: [yükseltme ve geçirme Office çözümleri](../vsto/upgrading-and-migrating-office-solutions.md).  
+ Visual Studio yükseltilmiş projenin hedef çerçevesini değiştirebilir durumları hakkında daha fazla bilgi için [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bkz: [yükseltme ve Office çözümleri geçirmek](../vsto/upgrading-and-migrating-office-solutions.md).  
   
 #### <a name="to-remove-the-securitytransparentattribute"></a>SecurityTransparentAttribute'unu kaldırmak için  
   
@@ -58,20 +59,20 @@ ms.lasthandoff: 04/16/2018
     [assembly: SecurityTransparent()]  
     ```  
   
-## <a name="performing-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Hata ayıklama veya bir proje geliştirme bilgisayarınızda çalışmaya Temizle komutunu çalıştırma  
+## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Hata ayıklama veya bir proje geliştirme bilgisayarınızda çalışmaya temiz komutu gerçekleştirme  
  Bir Office proje projenin hedef çerçevesini değiştirilmeden önce oluşturulduysa [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra gerçekleştirmeniz gereken bir **temiz** komut ve hedef Framework'ü değiştirildikten sonra projeyi yeniden derleyin. Varsa gerçekleştirme bir **temiz** komutunu alırsınız bir <xref:System.Runtime.InteropServices.COMException> çalıştığınızda hata ayıklama veya güncellendiyse projesini çalıştırın.  
   
- Hakkında daha fazla bilgi için **temiz** komutu, bkz: [Office çözümleri oluşturma](../vsto/building-office-solutions.md).  
+ Hakkında daha fazla bilgi için **temiz** komutu, bkz: [yapı Office çözümleri](../vsto/building-office-solutions.md).  
   
-## <a name="updating-the-prerequisites-for-deployment"></a>Güncelleştirme dağıtımı için Önkoşullar  
+## <a name="update-the-prerequisites-for-deployment"></a>Güncelleştirme dağıtımı için Önkoşullar  
  Bir Office projesine hedeflediğinizde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra da karşılık gelen .NET Framework önkoşullarını da güncelleştirmeniz gerekir **Önkoşullar** iletişim kutusu. Aksi takdirde ClickOnce dağıtımı veya InstallShield Limited Edition proje olup olmadığını denetler ve .NET Framework'ün önceki sürümünü yükler.  
   
- Son kullanıcı bilgisayarlarında dağıtımı için Önkoşullar güncelleştirme hakkında daha fazla bilgi için bkz [nasıl yapılır: Office çözümlerini çalıştırmak için yükleme önkoşulları son kullanıcı bilgisayarlarında](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Son kullanıcı bilgisayarlarında dağıtımı için Önkoşullar güncelleştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office çözümlerini çalıştırmak için son kullanıcı bilgisayarlarında Önkoşulları Yükleme](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
-## <a name="reinstalling-solutions-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında çözümleri yeniden yükleme  
+## <a name="reinstall-solutions-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında çözümleri yeniden  
  .NET Framework 3.5 hedefleyen Office çözümünü dağıtmak için ClickOnce kullanırsanız ve projeyi yeniden hedefleyin [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra son kullanıcılar çözümü kaldırıp yeniden yayınladıktan sonra sonra çözümü yeniden yüklemeniz gerekir. Güncellendiyse çözümü yeniden yayımlamanız ve çözüm son kullanıcı bilgisayarlarında güncelleştirilir, son kullanıcıların alacak bir <xref:System.Runtime.InteropServices.COMException> güncellenen çözümü çalıştırdıklarında.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Office Çözümlerini .NET Framework 4 veya Sonraki Sürümlere Geçirme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)  
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Office çözümlerini .NET Framework 4 veya sonraki bir sürümüne geçirme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)  
   
   

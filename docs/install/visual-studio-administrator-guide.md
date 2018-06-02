@@ -2,7 +2,7 @@
 title: Visual Studio Yönetici Kılavuzu
 description: Visual Studio bir kuruluş ortamında dağıtma hakkında daha fazla bilgi edinin.
 ms.custom: ''
-ms.date: 05/15/2017
+ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,17 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691124"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 Yönetici Kılavuzu
 
 Kurumsal ortamlarda, sistem yönetim yazılımının kullanarak veya bir ağ paylaşımından yüklemeleri son kullanıcılara dağıtmak sistem yöneticileri için yaygın bir sorundur. Sistem yöneticileri yükleme işlemi sırasında ürün anahtarları dağıtmak için Yükleme varsayılanlarını önceden yapılandırmak için bir ağ yükleme konumu oluşturma olanağı izin vererek biz kurumsal dağıtım desteği için Visual Studio Kurulumu altyapısı tasarladık, ve sonra başarılı bir sunum ürün güncelleştirmeleri yönetebilirsiniz. Bu Yönetici Kılavuzu senaryo tabanlı ağa bağlı ortamlarda kurumsal dağıtım için yönergeler sağlar.
 
-## <a name="deploying-visual-studio-2017-in-an-enterprise-environment"></a>Visual Studio 2017 bir kuruluş ortamında dağıtma
+## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Visual Studio 2017 bir kuruluş ortamında dağıtma
 
 Her hedef bilgisayar karşılıyorsa, Visual Studio 2017 istemci iş istasyonlarına dağıtabilirsiniz [minimum yükleme gereksinimlerini](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). System Center gibi yazılım ya da bir toplu iş dosyası dağıtıyorsunuz olsun, genellikle aşağıdaki adımlarda size Git isteyeceksiniz:
 
@@ -49,12 +50,26 @@ Her hedef bilgisayar karşılıyorsa, Visual Studio 2017 istemci iş istasyonlar
 > [!IMPORTANT]
 > Ağ üzerinden paylaşımı "kaynak konumu unutmayın" yüklemeleri bunlar geldiğini unutmayın. Bu, bir istemci makine onarımını istemci ilk olarak yüklenen ağ paylaşımı geri dönmek gerektiği anlamına gelir. Böylece, kuruluşunuzda çalışan Visual Studio 2017 istemcileri sahip olmayı beklediğiniz kullanım ömrü hizalar ağ konumunuzu dikkatle seçin.
 
-## <a name="visual-studio-tools"></a>Visual Studio Araçları
+## <a name="use-visual-studio-tools"></a>Visual Studio Araçları'nı kullanın
 
 Yardımcı olması kullanılabilen çeşitli araçlar sahibiz [algılamak ve yüklü Visual Studio Örnekleri yönetmek](tools-for-managing-visual-studio-instances.md) istemci makinelerde.
 
 > [!TIP]
 > Yönetici Kılavuzu'ndaki belgeleri ek olarak, iyi bir Visual Studio 2017 kurulumu hakkında bilgi kaynağıdır [sistem durumu Ilgaz'ın blogu](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+
+## <a name="specify-customer-feedback-settings"></a>Müşteri geri bildirim ayarlarını belirtin
+
+Varsayılan olarak, Visual Studio yükleme müşteri geri bildirim sağlar. Grup İlkesi etkinleştirdiğinizde, müşteri geri bildirimi tek tek bilgisayarlarda devre dışı bırakmak için Visual Studio yapılandırabilirsiniz. Bunu yapmak için aşağıdaki anahtarı kayıt defteri tabanlı bir ilke ayarlayın:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+
+Giriş = **OptIn**
+
+Değer = (DWORD)
+* **0** geri çevrildi
+* **1** içinde seçti
+
+Müşteri geri bildirim ayarları hakkında daha fazla bilgi için bkz: [Visual Studio Müşteri Deneyimini Geliştirme Programı](../ide/visual-studio-experience-improvement-program.md) sayfası.
 
 ## <a name="get-support"></a>Destek alma
 

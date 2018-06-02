@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05ee17519019713b5e1bb89472dc06d5bc20ead1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 48c29cb41c80d75c6f873171b7e9c758a2513612
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691943"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem Öğesi
   SharePoint proje öğesi anahtar/değer biçimi ile ilişkili bir özel veri öğesi. Anahtar ve değer dize olmalıdır.  
@@ -57,7 +58,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel| 
 |**Şema adı**|SharePoint proje öğesi şeması|  
 |**Dosya doğrulama**|ProjectItemModelSchema.xsd|  
 |**Boş olamaz**|Hayır|  

@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc0864db659642336368d20a314057d63859c30
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a5adb5f5177afc59f560a988f9c86e1ebbede759
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691231"
 ---
 # <a name="concurrency-visualizer"></a>Eşzamanlılık Görselleştiricisi
 > [!NOTE]
@@ -51,8 +52,8 @@ ms.lasthandoff: 04/19/2018
 |[Visual Studio Web günlüğündeki paralel geliştirme](http://go.microsoft.com/fwlink/?LinkId=235385)|İpuçları ve en iyi uygulamalar için eşzamanlılık görselleştiricisi sağlar.|  
 |[Performans Raporu Görünümleri](../profiling/performance-report-views.md)|Visual Studio profil oluşturma araçları görünümlerini ve raporlar için başvuru bilgileri sağlar.|  
 |[Eşzamanlılık Görselleştiricisi SDK](../profiling/concurrency-visualizer-sdk.md)|Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için kaynak kodu işaretlemesini açıklar.|  
-|[Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe) toplamak ve izlemelerini Visual Studio sahip olmayan makinelere işlemek için nasıl kullanılacağını açıklar.|  
+|[Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe) toplamak ve izlemelerini Visual Studio sahip olmayan makinelere işlemek için nasıl kullanılacağını açıklar.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Özellik turu profil oluşturma](../profiling/profiling-feature-tour.md)
+ [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)

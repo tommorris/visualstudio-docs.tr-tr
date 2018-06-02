@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: caa1fd5317cf7f5bfd7a7f5a309734002112cc6a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693893"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar
 
@@ -69,7 +70,7 @@ Desteklenen yapılandırmalar ve platformlar için Visual Studio Enterprise içi
 |Citrix/Terminal Hizmetleri|Terminal sunucusu kaydı eylemleri öneririz yok. Kaydedici, aynı anda birden çok örneği çalıştıran desteklemiyor.|
 |PowerBuilder|Kısmen desteklenir.<br /><br /> Desteğin kapsamı, PowerBuilder denetimleri için erişilebilirliğin etkin olduğu kadardır.|
 
- Diğer platformları destekleyecek uzantılar oluşturma hakkında daha fazla bilgi için bkz: [etkinleştirmek kodlanmış UI testi, bilgisayarınızı denetimleri](../test/enable-coded-ui-testing-of-your-controls.md) ve [genişletme kodlanmış UI testleri ve Eylem kayıtlarını Microsoft Excel'i desteklemek için](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
+ Diğer platformları destekleyecek uzantılar oluşturma hakkında daha fazla bilgi için bkz: [etkinleştirmek kodlanmış UI testi, bilgisayarınızı denetimleri](../test/enable-coded-ui-testing-of-your-controls.md) ve [genişletme kodlanmış UI testleri ve eylem kayıtları](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -12,10 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 1a9d878ee8b5384784ba77cb6de2d9eee1289d0c
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34469017"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Öğreticisi 2. adım: görünümlerle bir Django uygulaması oluşturma ve sayfa şablonları
 

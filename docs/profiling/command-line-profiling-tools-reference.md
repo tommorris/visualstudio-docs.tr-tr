@@ -11,12 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: f1ed732e33706defed975a3a05986f53081b4337
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548186"
 ---
-# <a name="command-line-profiling-tools-reference"></a>Komut satırı profil araçları başvurusu
+# <a name="command-line-profiling-tools-reference"></a>Komut satırı profil oluşturma araçları başvurusu
 Komut satırı performans araçları uygulamalarını komut isteminden profil programcıların izin verin. Aşağıdaki komut satırı profil oluşturma araçları, komut isteminden profil kodu izin verir.  
   
 ## <a name="in-this-section"></a>Bu bölümde  

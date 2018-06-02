@@ -1,5 +1,5 @@
 ---
-title: Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme) | Microsoft Docs
+title: Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692726"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme)
   Kullanım **Yayımlama Sihirbazı** belirtilen bir konuma çözüm dosyalarını kopyalamak için bildirim dosyalarını oluşturmak ve Kurulum programını oluşturun.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/16/2018
   
  Disk yolu, dosya paylaşımı, FTP sitesi veya web sitesi URL'si konumunu yazın veya tıklatın **Gözat** konumuna gözatmak için düğmeyi. Yol aşağıdaki biçimlerde olabilir:  
   
--   C:\Deploy\MyApplication veya \MyApplication gibi standart Windows biçiminde göreli veya mutlak bir yol.  
+-   Göreli veya mutlak bir yol standart Windows, gibi biçimde *C:\Deploy\MyApplication* veya *\MyApplication*.  
   
--   Bir Evrensel Adlandırma Kuralı (UNC) yolu gibi \\\ServerName\MyApplication\\.  
+-   Bir Evrensel Adlandırma Kuralı (UNC) yolu gibi  *\\\ServerName\MyApplication\\*.  
   
 -   Bir URL bir Web sitesi, gibi http://www.microsoft.com/MyApplication.  
   
@@ -67,9 +68,9 @@ ms.lasthandoff: 04/16/2018
   
  Visual Studio, CD veya DVD yazma değil. Çıktı bir CD veya DVD elle kopyalamanız gerekir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Yayımla Sayfası, Proje Tasarımcısı &#40;Visual Studio'da Office geliştirme&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
- [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
+ [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)  
   
   

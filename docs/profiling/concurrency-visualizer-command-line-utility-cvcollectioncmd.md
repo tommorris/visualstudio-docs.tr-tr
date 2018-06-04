@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd57edf89210370fa05247afc55569c4401baf8
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691153"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)
-Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCollectionCmd.exe), böylece bunları için Visual Studio eşzamanlılık görselleştiricisi görebilirsiniz komut satırından izlemeleri toplamak için kullanabilirsiniz. Araçlar Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
+Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kullanabilirsiniz (*CVCollectionCmd.exe*) bunları için Visual Studio eşzamanlılık görselleştiricisi görüntüleyebilmek komut satırından izlemeleri toplamak için. Araçlar Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
   
 > [!NOTE]
 >  Eşzamanlılık görselleştiricisi, Visual Studio 2013'ten başlayarak, isteğe bağlı bir uzantıdır. (Daha önce bunu Visual Studio'da dahil edilmiş.) İndirebilirsiniz [eşzamanlılık görselleştiricisi toplama araçları Visual Studio 2015 için](http://www.microsoft.com/en-in/download/details.aspx?id=49103) İndirme Merkezi'nden.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programını indirin  
- Karşıdan yükleme ve komut satırı yardımcı programını yüklemek için Git [eşzamanlılık görselleştiricisi toplama araçları Visual Studio 2015 için](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyonu Tools\ CVCollectionCmd.exe yüklenir (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyonu Tools\ x64 üzerinde bilgisayarlar).  
+ Karşıdan yükleme ve komut satırı yardımcı programını yüklemek için Git [eşzamanlılık görselleştiricisi toplama araçları Visual Studio 2015 için](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak, *CVCollectionCmd.exe* %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyonu Tools\ yüklü (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyonu Tools\ x64 üzerinde bilgisayarlar).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Bir izleme CVCollectionCmd ile Topla  
  Uygulama CVCollectionCmd ile başlatarak veya eklemeyi izleme toplayabilir. Aşağıdaki komut başvurusu seçeneklerinizi için bkz. Örneğin  
@@ -57,7 +58,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını (CVCo
 > [!NOTE]
 >  İzlemeleri toplamak için Visual Studio kullandığınızda, yapılandırma dosyasını doğrudan değiştirmeyin.  Bunun yerine, kullanın [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ayarlarını değiştirmek için iletişim kutusu.  
   
- Koleksiyon ayarlarını değiştirmek için CVCollectionCmd yardımcı programı çalıştırdığı makinedeki bir yapılandırma dosyası oluşturun. Yapılandırma dosyası sıfırdan oluşturabilir veya Visual Studio'nun yüklü olduğu bilgisayarın üzerindeki yapılandırma dosyasını kopyalayıp, değiştirebilirsiniz. Dosya adında `UserConfig.xml` ve bulunan **Yerel AppData** klasör. Yardımcı programını çalıştırdığınızda, başlatma, Attach veya Çözümle komutu ile birlikte yapılandırma seçeneğini kullanın.  Yapılandırma seçeneğiyle ilişkilendirilmiş parametresinde yapılandırma dosyasının yolunu belirtin.  
+ Koleksiyon ayarlarını değiştirmek için CVCollectionCmd yardımcı programı çalıştırdığı makinedeki bir yapılandırma dosyası oluşturun. Yapılandırma dosyası sıfırdan oluşturabilir veya Visual Studio'nun yüklü olduğu bilgisayarın üzerindeki yapılandırma dosyasını kopyalayıp, değiştirebilirsiniz. Dosya adında *UserConfig.xml* ve bulunan *Yerel AppData* klasör. Yardımcı programını çalıştırdığınızda, başlatma, Attach veya Çözümle komutu ile birlikte yapılandırma seçeneğini kullanın.  Yapılandırma seçeneğiyle ilişkilendirilmiş parametresinde yapılandırma dosyasının yolunu belirtin.  
   
 ### <a name="configuration-file-tags"></a>Yapılandırma dosyası etiketleri  
  XML tabanlı yapılandırma dosyasıdır. Geçerli etiketler ve değerler şunlardır:  

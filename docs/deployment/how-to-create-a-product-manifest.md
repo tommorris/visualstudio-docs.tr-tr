@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815775"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Nasıl yapılır: Ürün Bildirimi Oluşturma
 Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi oluşturabilirsiniz. Paket bildirimi ancak tek bir ürün bildirim dosyası her yerel ayar için bir önyükleyici paketi içerir. Paket bildirimi paketinizin yerelleştirmeye özgü yönlerini içerir. Bu dizeler, son kullanıcı lisans sözleşmesi ve dil paketlerini içerir.  
@@ -41,7 +42,7 @@ Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi olu�
   
 3.  XML ad alanı ve ürün kodu için paket açıklamak için aşağıdaki XML ekleyin. Ürün kodunu paket için benzersiz bir tanımlayıcı ile değiştirin.  
   
-    ```  
+    ```xml  
     <Product  
     xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"   
     ProductCode="Custom.Bootstrapper.Package">  
@@ -49,7 +50,7 @@ Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi olu�
   
 4.  Paketi bir bağımlılık olduğunu belirtmek için XML ekleyin. Bu örnek, bir bağımlılık Microsoft Windows Installer 3.1 kullanır.  
   
-    ```  
+    ```xml  
     <RelatedProducts>  
         <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />  
       </RelatedProducts>  
@@ -57,7 +58,7 @@ Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi olu�
   
 5.  Önyükleyici paketinde bulunan tüm dosyaları listelemek için XML ekleyin. Bu örnek paket dosyası adı CorePackage.msi kullanır.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
         <PackageFile Name="CorePackage.msi"/>  
     </PackageFiles>  
@@ -67,14 +68,14 @@ Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi olu�
   
 7.  Önyükleyici komutlarını kullanarak paketi yüklemek için XML ekleyin. Önyükleyici otomatik olarak ekler **/qn** sessizce yükleyecek .msi dosyasına bayrağı. Dosyanın .exe olması durumunda önyükleyici Kabuğu'nu kullanarak .exe dosyasını çalıştırır. Aşağıdaki XML CorePackage.msi öğesine bağımsız değişkenler gösterir, ancak komut satırı bağımsız değişkeni bağımsız değişkenler özniteliği koyabilirsiniz.  
   
-    ```  
+    ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
 8.  Bu önyükleyici paketinin yüklü olup olmadığını denetlemek için aşağıdaki XML ekleyin. Ürün kodunu yeniden dağıtılabilir bileşeni için GUID ile değiştirin.  
   
-    ```  
+    ```xml  
     <InstallChecks>  
         <MsiProductCheck   
             Property="IsMsiInstalled"   
@@ -84,7 +85,7 @@ Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi olu�
   
 9. Önyükleyici bileşeninin zaten yüklüyse, bağlı olarak önyükleyici davranışını değiştirmek için XML ekleyin. Bileşeni yüklüyse, önyükleyici paketi çalışmaz. Aşağıdaki XML bu bileşen yönetici ayrıcalıkları gereklidir çünkü geçerli kullanıcının yönetici olup olmadığını denetler.  
   
-    ```  
+    ```xml  
     <InstallConditions>  
         <BypassIf   
            Property="IsMsiInstalled"   
@@ -97,7 +98,7 @@ Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi olu�
   
 10. Çıkış kodları yüklemenin başarılı olup olmadığını ve yeniden başlatma gerekli olup olmadığını ayarlamak için XML ekleyin. Aşağıdaki XML hata ve FailReboot çıkış önyükleyici paketleri yüklemeye devam edeceğini gösteren kodları gösterir.  
   
-    ```  
+    ```xml  
     <ExitCodes>  
         <ExitCode Value="0" Result="Success"/>  
         <ExitCode Value="1641" Result="SuccessReboot"/>  
@@ -108,7 +109,7 @@ Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi olu�
   
 11. Önyükleyici komutlar bölümünü sonlandırmak için aşağıdaki XML ekleyin.  
   
-    ```  
+    ```xml  
         </Command>  
     </Commands>  
     ```  
@@ -118,7 +119,7 @@ Uygulamanız için önkoşulları dağıtmak için bir önyükleyici paketi olu�
 ## <a name="example"></a>Örnek  
  Ürün bildirimi özel Önkoşullar için yükleme yönergeleri içerir.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Product  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  

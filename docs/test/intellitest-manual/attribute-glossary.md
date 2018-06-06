@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e42b9cae54186ed723c6c0567b5af247796d23d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 64e02cae39497a14cc087791a60b4f61c9bcd8fd
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815918"
 ---
 # <a name="attribute-glossary"></a>Öznitelik sözlüğü
 
@@ -51,7 +52,7 @@ Bu öznitelik governed değeri olamaz onaylar **null**. İçin eklenebilir:
 
 * bir **parametresi** parametreli test yöntemi
 
-  ```
+  ```csharp
   // assume foo is not null
   [PexMethod]
   public void SomeTest([PexAssumeNotNull]IFoo foo, ...) {}
@@ -59,7 +60,7 @@ Bu öznitelik governed değeri olamaz onaylar **null**. İçin eklenebilir:
 
 * bir **alan**
 
-  ```
+  ```csharp
   public class Foo {
      // this field should not be null
      [PexAssumeNotNull]
@@ -69,7 +70,7 @@ Bu öznitelik governed değeri olamaz onaylar **null**. İçin eklenebilir:
 
 * A **türü**
 
-  ```
+  ```csharp
   // never consider null for Foo types
   [PexAssumeNotNull]
   public class Foo {}
@@ -94,7 +95,7 @@ Bu sınıfları oluşturmak için de önemle önerilir **kısmi** Intellitest b�
 
 **Ek paketi ve kategorileri**:
 
-```
+```csharp
 [TestClass] // MSTest test fixture attribute
 [PexClass(Suite = "checkin")] // fixture attribute
 public partial class MyTests { ... }
@@ -102,7 +103,7 @@ public partial class MyTests { ... }
 
 **Test altındaki türünü belirtme**:
 
-```
+```csharp
 [PexClass(typeof(Foo))] // this is a test for Foo
 public partial class FooTest { ... }
 ```
@@ -131,7 +132,7 @@ Parametreli birim testi:
 
 **Örnek**
 
-```
+```csharp
 [PexClass]
 public partial class MyTests {
      [PexMethod]
@@ -150,7 +151,7 @@ public partial class MyTests {
 
 Bu öznitelik, tüm explorations için varsayılan ayar değerleri geçersiz kılmak için derleme düzeyinde ayarlanabilir.
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
 [assembly: PexAssemblySettings(TestFramework = "Naked")]
@@ -161,7 +162,7 @@ using Microsoft.Pex.Framework;
 
 Bu öznitelik geçerli test projesi tarafından test edilmekte olan derleme belirtir. 
 
-```
+```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]
 ```
 
@@ -172,7 +173,7 @@ Bu öznitelik izlenmiş için bir derlemeyi belirtmek için kullanılır.
 
 **Örnek**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 
 // the assembly containing ATypeFromTheAssemblyToInstrument should be instrumented
@@ -189,7 +190,7 @@ Bu öznitelik, belirli bir tür (soyut) temel türleri veya arabirimlerini örne
 
 **Örnek**
 
-```
+```csharp
 [PexMethod]
 [PexUseType(typeof(A))]
 [PexUseType(typeof(B))]
@@ -208,7 +209,7 @@ Bu öznitelik için bağlıysa bir [PexMethod](#pexmethod) (veya bir [PexClass](
 
 Aşağıdaki sınama belirleyen oluşturucusunun **yığın** atabilir bir **ArgumentOutOfRangeException**:
 
-```
+```csharp
 class Stack {
   int[] _elements;
   int _count;
@@ -223,7 +224,7 @@ class Stack {
 
 Filtre için donanımı (Bu da derleme veya test düzeyinde tanımlanabilir) aşağıdaki gibi eklenir:
 
-```
+```csharp
 [PexMethod]
 [PexAllowedException(typeof(ArgumentOutOfRangeException))]
 class CtorTest(int capacity) {

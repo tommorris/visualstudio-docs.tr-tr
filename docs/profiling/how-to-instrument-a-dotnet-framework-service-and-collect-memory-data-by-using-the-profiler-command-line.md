@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03c676100487acb7aff9cb28071192ff6b04ed29
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 54087adb9c1f78d5ff8a218464ccd616b57c962e
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815437"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Profil Oluşturucu Komut Satırını Kullanarak .NET Framework Hizmetini İzleme ve Bellek Verileri Toplama
-Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Gereci için profil oluşturma araçları komut satırı araçları bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hizmet ve bellek kullanım verileri toplar. Bellek ayırma verileri toplayabilir veya bellek ayırma ve nesne yaşam verisi toplayabilirsiniz.  
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: .NET Framework hizmetini izleme ve profil oluşturucu komut satırını kullanarak bellek verileri toplama
+Bu makalede nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Gereci için profil oluşturma araçları komut satırı araçları bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hizmet ve bellek kullanım verileri toplar. Bellek ayırma verileri toplayabilir veya bellek ayırma ve nesne yaşam verisi toplayabilirsiniz.  
   
 > [!NOTE]
 >  Gelişmiş güvenlik özellikleri Windows 8 ve Windows Server 2012 Visual Studio profil oluşturucu bu platformlarda toplar şekilde önemli değişiklikler gerekmiştir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bkz: [Windows 8 ve Windows Server 2012 uygulamaların performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -25,9 +26,9 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
 > [!NOTE]
 >  Bilgisayar başlatıldıktan sonra hizmeti yeniden başlatılamıyor, bir hizmeti izleme yöntemiyle profil olamaz, işletim sistemi başlatıldığında, bu tür bir hizmet başlatın.  
 >   
->  Profil oluşturma araçları komut satırı araçları \Team Tools\Performance araçları alt dizininde bulunan [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64 bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresini PATH ortam değişkenine ekleyin veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil oluşturma araçları komut satırı araçları içinde bulunur *\Team Tools\Performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresini PATH ortam değişkenine ekleyin veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
-## <a name="starting-the-profiling-session"></a>Profil oluşturma oturumu başlatılıyor  
+## <a name="start-the-profiling-session"></a>Profil oluşturma oturumu Başlat  
  Performans verileri toplamak için bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hizmeti, kullandığınız [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) uygun ortam değişkenlerini başlatmak için araç ve [VSInstr.exe](../profiling/vsinstr.md) bir Araçlı oluşturmak için aracı Hizmet ikili dosyasının bir kopyası.  
   
  Profil oluşturma için yapılandırmak için hizmeti barındıran bilgisayarın yeniden başlatılması gerekir. Hizmet ayrıca el ile ve Hizmet Denetim Yöneticisi'nden başlamalıdır. Profil Oluşturucu başlatın ve sonra Başlat [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hizmet.  
@@ -61,7 +62,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
   
 7.  Profil Oluşturucu başlatın. Tür:  
   
-     **VSPerfCmd**[/start](../profiling/start.md) **: izleme**[/çıkış](../profiling/output.md) **:** `OutputFile` [`Options`]      
+     **VSPerfCmd**[/start](../profiling/start.md) **: izleme**[/çıkış](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
     -   **/Başlat: çakışma** seçeneği profil oluşturucu başlatır.  
   
@@ -75,13 +76,13 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
     |Seçenek|Açıklama|  
     |------------|-----------------|  
     |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|ASP.NET çalışan işlemin sahibi olan hesabın etki alanı ve kullanıcı adını belirtir. İşlem oturum açan kullanıcının başka bir kullanıcı olarak çalışıyorsa, bu seçeneği gereklidir. İşlem sahibi, Windows Görev Yöneticisi'nin İşlemler sekmesinde kullanıcı adı sütununda listelenir.|  
-    |[/crosssession](../profiling/crosssession.md)|Etkinleştirir, diğer oturum açma oturumları işlemleri profil oluşturma. ASP.NET uygulamasını farklı bir oturumda çalışıyorsa, bu seçeneği gereklidir. Oturum kimliği, Windows Görev Yöneticisi'nin İşlemler sekmesinde oturum kimliği sütununda listelenir. **/CS** için bir kısaltma olarak belirtilen **/crosssession**.|  
+    |[/crosssession](../profiling/crosssession.md)|Etkinleştirir, diğer oturum açma oturumları işlemleri profil oluşturma. ASP.NET uygulamasını farklı bir oturumda çalışıyorsa, bu seçeneği gereklidir. Oturum kimliği listelenen **oturum kimliği** sütunu **işlemleri** sekmesi Windows Görev Yöneticisi'nin. **/CS** için bir kısaltma olarak belirtilen **/crosssession**.|  
     |[/waitstart](../profiling/waitstart.md)[**:**`Interval`]|Bir hata döndürmeden önce başlatmak profil oluşturucu için beklenecek saniye sayısını belirtir. Varsa `Interval` belirtilmezse, profil oluşturucu sonsuza kadar bekler. Varsayılan olarak, **/start** hemen döndürür.|  
     |[/globaloff](../profiling/globalon-and-globaloff.md)|Profil Oluşturucu ile veri toplama başlatmak için duraklatıldı, ekleme **/globaloff** için seçenek **/start** komut satırı. Kullanım **/globalon** profil sürdürmek için.|  
     |[/ sayacı](../profiling/counter.md) **:** `Config`|İşlemci performansı sayaç yapılandırma dosyasında belirtilen bilgi toplar. Sayaç bilgileri her profil olay, toplanan veriler eklenir.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Profil oluşturma sırasında toplanması için bir Windows performans sayacı belirtir.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|İle kullandığınız **/wincounter** yalnızca. Windows performans sayacı toplama olayları arasındaki milisaniye sayısını belirtir. Varsayılan değer 500 ms ' dir.|  
-    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Profil oluşturma sırasında toplanacak olay Windows için izleme (ETW) olayı belirtir. ETW olayları ayrı (.etl) dosyasında toplanır.|  
+    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Profil oluşturma sırasında toplanacak olay Windows için izleme (ETW) olayı belirtir. ETW olayları ayrı bir toplanır (. *etl*) dosyası.|  
   
 8.  Gerekirse, hizmeti başlatın.  
   
@@ -91,8 +92,8 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
   
     -   İşlem kimliği veya hizmetin işlem adı belirtin. Windows Görev Yöneticisi'nde işlem kimlikleri ve adları tüm çalışan işlemleri görüntüleyebilirsiniz.  
   
-## <a name="controlling-data-collection"></a>Veri Toplama Denetimi  
- Hizmet çalışırken, başlatma ve durdurma dosya ile veri yazma tarafından veri toplama denetleyebilirsiniz **VSPerfCmd.exe** seçenekleri. Veri toplama denetimi, program yürütme, başlatılıyor veya uygulama kapatılmadan gibi belirli bir bölümü için veri toplamanıza olanak sağlar.  
+## <a name="control-data-collection"></a>Veri toplamayı denetleme  
+ Hizmet çalışırken, başlatma ve durdurma dosya ile veri yazma tarafından veri toplama denetleyebilirsiniz *VSPerfCmd.exe* seçenekleri. Veri toplama denetimi, program yürütme, başlatılıyor veya uygulama kapatılmadan gibi belirli bir bölümü için veri toplamanıza olanak sağlar.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak için  
   
@@ -104,7 +105,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlatır (**/processon**) veya durdurulduğunda (**/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplama (`PID`).|  
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Başlatır (**/threadon**) veya durdurulduğunda (**/threadoff**) Kimlikli iş parçacığı tarafından belirtilen iş parçacığı için veri toplama (`TID`).|  
   
-## <a name="ending-the-profiling-session"></a>Profil oluşturma oturumu sona erdirme  
+## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme  
  Profil oluşturma oturumu sona erdirmek için Kapat Araçlı bileşenini çalıştıran uygulama sonra Başlat **VSPerfCmd** [shutdown](../profiling/shutdown.md) profil oluşturucu kapatmak ve profil oluşturma veri dosyası kapatmak için seçeneği. **VSPerfClrEnv /globaloff** komutu profil ortam değişkenleri temizler.  
   
 #### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumu sona erdirmek için  
@@ -123,6 +124,6 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
   
 4.  Bilgisayarı yeniden başlatın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)   
  [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)

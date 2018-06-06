@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815028"
 ---
 # <a name="test-generation"></a>Test oluşturma
 
@@ -27,7 +28,7 @@ Geleneksel birim testi bir test birkaç şey oluşur:
 
 Bir örnek test yapısı aşağıdadır:
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ Intellitest nesneleri oluşturmak gerektiğinde oluşturucular ve Fabrika yönte
 
 Yerleştirmelerin kullanılarak tanımlanır [PexMethod](attribute-glossary.md#pexmethod) mstest'i (veya NUnit, xUnit) benzer bir şekilde özel öznitelik. Yerleştirmelerin yöntemlerdir ile etiketlenmiş sınıflardaki mantıksal olarak gruplandırılmış örneği [PexClass](attribute-glossary.md#pexclass). Aşağıdaki örnek, depolanan basit PUT gösterir **MyPexTest** sınıfı:
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 Burada **ReplaceFirstChar** ilk karakteri bir dize olarak değiştiren bir yöntemdir:
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 Bu sınamadan Intellitest otomatik olarak yapabilirsiniz [girişleri oluşturmak](input-generation.md) test edilen kodu birçok yürütme yollarını kapsayan PUT için. Her, bir farklı yürütmesi yolu alır "seri" birim testi kapsayan giriş:
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 Parametreli birim testleri genel yöntemler olabilir. Bu durumda, kullanıcı yöntemi kullanarak örneği oluşturmak için kullanılan türleri belirtmelidir [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ Intellitest beklenen özel durumlar olarak değerlendirme özel durumlar ve bekl
 
 Özel durumlar oluşturma ile ilgili ek açıklama negatif test çalışmaları gibi beklenen **ExpectedException (typeof (*xxx*))**, başarısız olan test çalışmalarını beklenmeyen özel durum oluşturur.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ Doğrulayıcıları şunlardır:
 
 "Bu görebileceği sürece Intellitest iç türleri sınayabilirsiniz". Türlerini görmek Intellitest için aşağıdaki öznitelik ürün veya test projeniz için Visual Studio Intellitest sihirbazları tarafından eklenir:
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ Kullanıcıların varsayımlar ve onaylar express için kullanabileceğiniz [ön
 
 Onaylamalardır iyi bilinen bir kavram normal birim test çerçevelerini olarak Intellitest zaten "yerleşik anlar şekilde" **Assert** her desteklenen test çerçevesi tarafından sağlanan sınıfları. Bununla birlikte, çoğu çerçeveleri sağlıyor mu bir **varsay** sınıfı. Bu durumda, Intellitest sağlar [PexAssume](static-helper-classes.md#pexassume) sınıfı. Varolan bir test çerçevesi kullanmak istemiyorsanız, Intellitest de sahip [PexAssert](static-helper-classes.md#pexassert) sınıfı.
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 Özellikle, nullness olmayan varsayımına özel öznitelik olarak kodlanmış olmalıdır:
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ Parçası olarak test çerçeveleri ile tümleştirme, algılama ve çalışan I
 
 **Örnek**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 

@@ -28,18 +28,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fee364b7116bf69b961726ec2154809f66f9bc45
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815041"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması)
 Uygulama için gerekli olan bir platform veya derleme bağımlılığı tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```xml  
   
       <dependency>  
    <dependentOS  
@@ -173,7 +174,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılığı tanımla
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği gösterilmektedir `dependency` öğelerinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md) konu.  
   
-```  
+```xml  
 <dependency>  
   <dependentOS>  
     <osVersionInfo>  

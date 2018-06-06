@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 19de1453722629e880a5fc64ad0b5f4d63175eba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815801"
 ---
-# <a name="warnings-and-errors"></a>Uyarıları ve hataları
+# <a name="warnings-and-errors"></a>Uyarıları ve hatalar
 
 ## <a name="warnings-and-errors-by-category"></a>Uyarıları ve hataları kategoriye göre
 
@@ -62,13 +63,13 @@ Her koşullu ve koşulsuz dal yürütülen ve izlenen kod girişler için dayanm
 
 Örneğin, aşağıdaki kodu 100 sırasına göre dalları kullanır:
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
 Düzenleyebileceğiniz **MaxBranches** seçeneği bir özniteliğin türetilen **PexSettingsAttributeBase**, gibi [PexClass](attribute-glossary.md#pexclass) veya [PexMethod](attribute-glossary.md#pexmethod) . Aşağıdaki örnek, etkili bir şekilde bu bağlı kaldırır:
 
-```
+```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -79,7 +80,7 @@ Ayrıca ayarlayabilirsiniz **TestExcludePathBoundsExceeded** Intellitest bu soru
 
 Test kodda kullandığınız [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) döngü koşul tarafından oluşturulan kısıtlamaları yoksaymak için:
 
-```
+```csharp
 for (int i=0; 
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
     i++) 
@@ -102,7 +103,7 @@ Girişler için bağlıdır her koşullu dal [parametreli birim testi](test-gene
 
 Örneğin, aşağıdaki kodu her yolunda tüketir **n + 1** koşullar:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     // conditions are "0<n", "1<n", ..., "!(n<n)"
@@ -117,7 +118,7 @@ void ParameterizedTest(int n) {
 
 Düzenleyebileceğiniz **MaxConditions** seçeneği bir özniteliğin türetilen **PexSettingsAttributeBase**, gibi [PexClass](attribute-glossary.md#pexclass) veya [PexMethod](attribute-glossary.md#pexmethod). Örneğin:
 
-```
+```csharp
 [PexMethod(MaxConditions=10000)]
 void ParameterizedTest(int n) {
     // ...
@@ -128,7 +129,7 @@ Ayrıca ayarlayabilirsiniz **TestExcludePathBoundsExceeded** genellikle bu sorun
 
 Kullanabileceğiniz [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) döngü koşul tarafından oluşturulan kısıtlamaları yoksaymak için:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
@@ -148,7 +149,7 @@ Her çağrı (doğrudan, dolaylı, sanal veya atlama) yürütülen ve izlenen ko
 
 Düzenleyebileceğiniz **MaxCalls** seçeneği bir özniteliğin türetilen **PexSettingsAttributeBase**, gibi [PexClass](attribute-glossary.md#pexclass) veya [PexMethod](attribute-glossary.md#pexmethod). Aşağıdaki örnek, etkili bir şekilde bu bağlı kaldırır:
 
-```
+```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -164,7 +165,7 @@ Intellitest sınırlar sırasında araştırır herhangi bir yürütme yol çağ
 
 Düzenleyebileceğiniz **MaxStack** seçeneği bir özniteliğin türetilen **PexSettingsAttributeBase**, gibi [PexClass](attribute-glossary.md#pexclass) veya [PexMethod](attribute-glossary.md#pexmethod). Aşağıdaki örnek, etkili bir şekilde (önerilmez) bu bağlı kaldırır:
 
-```
+```csharp
 [PexMethod(MaxStack=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -182,7 +183,7 @@ Intellitest parametreli test belirli girişle her çalıştığında, yeni bir t
 
 Düzenleyebileceğiniz **MaxRuns** seçeneği bir özniteliğin türetilen **PexSettingsAttributeBase**, gibi [PexClass](attribute-glossary.md#pexclass) veya [PexMethod](attribute-glossary.md#pexmethod). Aşağıdaki örnek, etkili bir şekilde (önerilmez) bu bağlı kaldırır:
 
-```
+```csharp
 [PexMethod(MaxRuns=2000)]
 public void MyTest(...) {
     // ....
@@ -200,7 +201,7 @@ Başlangıçta, genellikle bulur birçok ilginç test girişleri Intellitest ols
 
 Düzenleyebileceğiniz **MaxRunsWithoutNewTests** seçeneği bir özniteliğin türetilen **PexSettingsAttributeBase**, gibi [PexClass](attribute-glossary.md#pexclass) veya [PexMethod](attribute-glossary.md#pexmethod). Aşağıdaki örnek, etkili bir şekilde (önerilmez) bu bağlı kaldırır:
 
-```
+```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
 public void MyTest(...) {
     // ....
@@ -236,7 +237,7 @@ Kısıtlamalarla eşleşen bir veya daha fazla türlerine göstererek Intellites
 
   Örneğin, BT Intellitest raporları, "tüm türleri için atanabilir bilmez **System.Collections.IDictionary**", aşağıdaki ekleyerek yardımcı olabilir **PexUseTypeAttribute** test (veya donanımı sınıfı için):
 
-  ```
+  ```csharp
   [PexMethod]
   [PexUseType(typeof(System.Collections.Hashtable))]
   public void MyTest(IDictionary[] dictionaries) { ... }
@@ -244,7 +245,7 @@ Kısıtlamalarla eşleşen bir veya daha fazla türlerine göstererek Intellites
 
 * **Bir derleme düzeyi özniteliği**
 
-  ```
+  ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 

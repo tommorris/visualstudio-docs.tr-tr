@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45115b03fe62ecd78815861d6e82f1a0e6b98449
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 506222b3c0f140d6a6a941d50dddc4cebd92188b
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814892"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: Komut Satırını Kullanarak Eşzamanlılık Verileri Toplamak için Bağımsız bir Yerel Uygulamayı Başlatma
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: komut satırını kullanarak eşzamanlılık verileri toplamak için bağımsız bir yerel uygulamayı Profil Oluşturucu ile Başlat
 Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yerel tek başına (istemci) uygulaması başlatmak ve işlem ve iş parçacığı eşzamanlılık verileri toplamak için profil oluşturma araçları komut satırı araçları.  
   
  Profil oluşturma oturumu aşağıdaki bölümleri içerir:  
@@ -28,9 +29,9 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
 -   Profil oluşturma oturumu sona erdirme  
   
 > [!NOTE]
->  Profil oluşturma araçları komut satırı araçları \Team Tools\Performance araçları alt dizininde bulunan [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut isteminde kullanmak için Araçlar yolu PATH ortam değişkenine eklemeniz gerekir **komut istemi** penceresi veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil oluşturma araçları komut satırı araçları içinde bulunur *\Team Tools\Performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut isteminde kullanmak için Araçlar yolu PATH ortam değişkenine eklemeniz gerekir **komut istemi** penceresi veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
-## <a name="starting-the-application-with-the-profiler"></a>Profil Oluşturucu ile uygulama başlatma  
+## <a name="start-the-application-with-the-profiler"></a>Profil Oluşturucu ile uygulama Başlat  
  Profil Oluşturucu ile bir hedef uygulamayı başlatmak için kullandığınız [VSPerfCmd.exe](../profiling/vsperfcmd.md)**/start** ve **/başlatma** profil oluşturucu başlatın ve uygulamayı başlatmak için Seçenekler. Belirleyebileceğiniz **/start** ve **/başlatma** ve bunlara karşılık gelen seçenekleri. Ayrıca ekleyebileceğiniz **/globaloff** hedef uygulama başlangıcında veri toplamayı duraklatmak için seçeneği. Daha sonra **/globalon** veri toplamaya başlamak için.  
   
 #### <a name="to-start-an-application-with-the-profiler"></a>Profil Oluşturucu ile bir uygulamayı başlatmak için  
@@ -51,7 +52,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
   
 2.  Hedef uygulama yazarak başlatın:  
   
-     **VSPerfCmd**[/başlatma](../profiling/launch.md) **:** `AppName` [`Options`]    
+     **VSPerfCmd**[/başlatma](../profiling/launch.md) **:** `AppName` [`Options`]  
   
      Aşağıdaki tablo ile seçeneklerinden herhangi birini kullanabilirsiniz **/başlatma** seçeneği.  
   
@@ -61,8 +62,8 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
     |[/ Console](../profiling/console.md)|Hedef komut satırı uygulaması ayrı bir pencerede başlatır.|  
     |[/targetclr](../profiling/targetclr.md) **:** `CLRVersion`|Ortak dil çalışma zamanı (CLR) uygulama CLR birden fazla sürümünü yüklerse profilini sürümünü belirtir.|  
   
-## <a name="controlling-data-collection"></a>Veri Toplama Denetimi  
- Hedef uygulama çalışırken, başlatma ve durdurma verileri VSPerfCmd.exe seçeneklerle dosyaya yazma tarafından veri toplama kontrol edebilirsiniz. Denetleme veri toplama işlemi tarafından program yürütme başlangıç veya uygulamayı kapatılıyor gibi belirli bir parçası için verileri toplayabilir.  
+## <a name="control-data-collection"></a>Veri toplamayı denetleme  
+ Hedef uygulama çalışırken, başlatma ve durdurma dosya ile veri yazma tarafından veri toplama denetleyebilirsiniz *VSPerfCmd.exe* seçenekleri. Denetleme veri toplama işlemi tarafından program yürütme başlangıç veya uygulamayı kapatılıyor gibi belirli bir parçası için verileri toplayabilir.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak için  
   
@@ -76,7 +77,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
   
 -   Aynı zamanda **VSPerfCmd.exe**[/işaretlemek](../profiling/mark.md) profil işareti veri dosyasına eklemek için seçeneği. **/İşaretlemek** komut tanımlayıcı, bir zaman damgası ve bir kullanıcı tanımlı isteğe bağlı bir metin dizesi ekler. İşaretleri Profil Oluşturucusu rapor ve veri görünümleri verilerini filtrelemek için kullanılabilir.  
   
-## <a name="ending-the-profiling-session"></a>Profil oluşturma oturumu sona erdirme  
+## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme  
  Profil oluşturma oturumu sona erdirmek için Profil Oluşturucu veri toplamadığı gerekir. Profili uygulamayı kapatmak veya çağırma eşzamanlılık verileri toplama durdurabilirsiniz **VSPerfCmd / detach** seçeneği. Ardından çağırma **VSPerfCmd shutdown** profil oluşturucu devre dışı bırakma ve profil oluşturma veri dosyası kapatmak için seçeneği.  
   
 #### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumu sona erdirmek için  

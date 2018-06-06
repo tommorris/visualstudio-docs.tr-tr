@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815905"
 ---
 # <a name="static-helper-classes"></a>Statik yardımcı sınıfları
 
@@ -41,7 +42,7 @@ Varsayılan koşul giriş, bazı test için barındırmıyorsa bir **PexAssumeFa
 
 Aşağıdaki parametreli test değil değerlendirir **j = 0**:
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 Yukarıdaki kod neredeyse eşdeğerdir:
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ Onaylanan koşul giriş, bazı test için barındırmıyorsa bir **PexAssertFail
 
 Tamsayı mutlak değeri pozitif olduğunu onaylar:
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ Uygulamak için kullanılan bir teste yardımcı giriş değerlerini sağlayan b
 
 * Basit Arama **PexChoose.Value** yeni bir değer üretmek için:
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ Adlandırılmış değerler oturum için statik bir sınıf.
 
 Kod Intellitest araştırır zaman **PexObserve** kendi biçimlendirilmiş dize Beyanları kullanılarak hesaplanan değerler kaydetmek için kullanılır. Değerlerin benzersiz adı ile ilişkilendirilir.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **Örnek**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ Normalde, yürütme sırasında tüm yürütme yolları kodunun kapsayacak şeki
 
 Bu örnek uygulaması gösterir **PexAssume.Arrays.ElementsAreNotNull** yöntemi. Yönteminde dizinin farklı boyutlarda oluşturmaya çalışırken Intellitest önlemek için dize değeri lengh kısıtlamalar yoksay. Kısıtlamalar yalnızca burada göz ardı edilir. Test edilen kodu için farklı dizisi uzunluklarının farklı şekilde davranan, Intellitest test edilmiş kod kısıtlamaları farklı boyutlu diziler oluşturulamıyor.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {

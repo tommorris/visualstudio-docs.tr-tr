@@ -13,26 +13,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815619"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Nasıl yapılır: Bağımsız Profil Oluşturucuyu Yükleme
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir komut satırı tabanlı yüklemeden çalıştırılabilir bağımsız profil oluşturucuyu sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Bir bilgisayar yok ya da yüklü bir geliştirme ortamı olamaz bu durum oluşur. Örneğin, bir üretim Web sunucusunda bir geliştirme ortamı yüklememelidir.  
+# <a name="how-to-install-the-stand-alone-profiler"></a>Nasıl yapılır: bağımsız profil oluşturucuyu yükleme
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir komut satırı tabanlı yüklemeden çalıştırılabilir bağımsız profil oluşturucuyu sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Bir bilgisayar yok ya da yüklü bir geliştirme ortamı olamaz bu durum oluşur. Örneğin, bir üretim web sunucusunda bir geliştirme ortamı yüklememelidir.  
   
 > [!NOTE]
->  ASP.NET Web sitesi için performans verilerini toplamak için bağımsız profil oluşturucuyu kullanırken [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) Çizgi aracı üzerinden önerilir [VSPerfCmd](../profiling/vsperfcmd.md) aracı.  
+>  Bir ASP.NET web sitesi için performans verilerini toplamak için bağımsız profil oluşturucuyu kullanırken [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) Çizgi aracı üzerinden önerilir [VSPerfCmd](../profiling/vsperfcmd.md) aracı.  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Bağımsız profil oluşturucuyu yükleme  
   
-1.  Bağımsız Profil Yükleyicisi (vs_profiler.exe) bulmak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yükleme medyasını Directory'de \Standalone profil oluşturucu yolu içerir ve çalıştırın.  
+1.  Bağımsız Profil yükleyicisini bulun (*vs_profiler.exe*) üzerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yükleme medyasını içeren dizinde *\Standalone profil oluşturucu* yolu ve çalıştırın.  
   
-2.  Vsintr.exe ve msdis150.dll yollarının sistem yoluna ekleyin.  
+2.  İçin yollar ekleme *vsintr.exe* ve *msdis150.dll* sistem yolu.  
   
     > [!NOTE]
-    >  Varsayılan yüklemesinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vsinstr.exe ve msdis150.dll Files\Visual Studio 10\Team Araçlar\Performans araçları bulunur.  
+    >  Varsayılan yüklemesinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *vsinstr.exe* ve *msdis150.dll* bulunan *Files\Visual Studio 10\Team Araçlar\Performans Araçları*.  
   
 3.  Komut isteminde **Vsınstr**.  
   
@@ -46,13 +47,13 @@ ms.lasthandoff: 04/19/2018
      **COMSPEC % Başlat**  
   
     > [!NOTE]
-    >  Sembol sunucu paketi ayarlama hakkında ayrıntılı yönergeler için bkz: [nasıl yapılır: başvuru pencereleri sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
+    >  Sembol sunucu paketi ayarlama hakkında ayrıntılı yönergeler için bkz: [nasıl yapılır: başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6.  Kullanım [VSPerfReport](../profiling/vsperfreport.md) profil oluşturma veri (.vsp) dosyasına, simgeler serileştirmek için aracı. Kullanım **VSPerfReport /summary:all /packsymbols** anahtarları. Veri dosyasında eklenen simgeleri yoksa _NT_SYMBOL_PATH ortam değişkeni kümesi olduğundan emin olun.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [İzlenecek yol: Örnekleme kullanarak komut satırı profili oluşturma](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [İzlenecek yol: Komut satırı kullanarak profil örnekleme](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [İzlenecek yol: İzleme kullanarak komut satırı profili oluşturma](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
- [Nasıl yapılır: başvuru pencereleri sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Nasıl yapılır: başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

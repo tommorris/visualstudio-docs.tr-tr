@@ -16,15 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 842ce89c687c1f39bc013a7b1eb2c4b330a86f47
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3a68ed7789e1f77e6bd130ff29bcbb82700f3507
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814911"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Nasıl yapılır: Windows Sayaç Verileri Toplama
+# <a name="how-to-collect-windows-counter-data"></a>Nasıl yapılır: Windows sayaç verileri toplama
 
-Windows sayaçlarını profil oluşturma sırasında belirlenen aralıklarla toplanabilir sistem performans sayaçları ' dir. Profil oluşturma araçları rapor işaretleri görünümünde bir satırın etiketli **otomatik işaret** her toplama aralığı için. Satır bu aralıkta performans sayacı değerlerini tanımlamak sütunları içerir. İki belirli işaretleri arasında bir süre için analiz kısıtlamak için işaretleri, sağ tıklatın ve ardından seçin **Filtresi tarafından** ->  **işaretleri** kısayol menüsünden.
+Windows sayaçlarını profil oluşturma sırasında belirlenen aralıklarla toplanabilir sistem performans sayaçları ' dir. Profil oluşturma araçları rapor işaretleri görünümünde bir satırın etiketli **otomatik işaret** her toplama aralığı için. Satır bu aralıkta performans sayacı değerlerini tanımlamak sütunları içerir. İki belirli işaretleri arasında bir süre için analiz kısıtlamak için işaretleri, sağ tıklatın ve ardından seçin **Filtresi tarafından**>**işaretleri** kısayol menüsünden.
 
 > [!NOTE]
 > Gelişmiş güvenlik özellikleri Windows 8 ve Windows Server 2012 Visual Studio profil oluşturucu bu platformlarda toplar şekilde önemli değişiklikler gerekmiştir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bkz: [Windows 8 ve Windows Server 2012 uygulamaların performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -50,5 +51,5 @@ Windows sayaçlarını profil oluşturma sırasında belirlenen aralıklarla top
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
-[Performans oturum özellikleri](../profiling/performance-session-properties.md)  
+[Performans oturumu özellikleri](../profiling/performance-session-properties.md)  
 [CPU ve Windows sayaçları](../profiling/cpu-and-windows-counters.md)

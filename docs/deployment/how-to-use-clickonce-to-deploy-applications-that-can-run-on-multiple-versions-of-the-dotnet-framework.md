@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c05d1317c2b8040baf23c98cff8a032f14f47798
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815080"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl yapılır: .NET Framework'ün Birden Çok Sürümünde Çalışan Uygulamaları Dağıtmak için ClickOnce'ı Kullanma
 ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürümlerini hedefleyen bir uygulama dağıtabilirsiniz. Bu, oluşturma ve uygulama ve dağıtım bildirimlerini güncelleştirme gerektirir.  
@@ -85,13 +86,13 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
 2.  Ekleme `group="framework"` sentinel derlemeler için XML bağımlı (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, ve `System.Data.Entity`). Örneğin, XML aşağıdaki gibi görünmelidir:  
   
-    ```  
+    ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
 3.  Sürüm numarasını güncelleştirmek `<assemblyIdentity>` Microsoft.Windows.CommonLanguageRuntime'a öğesi en düşük genel payda olan .NET Framework sürüm numarası. Örneğin, uygulama .NET Framework 3.5 hedefliyorsa ve [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], kullanım 2.0.50727.0 sürüm numarasını ve XML aşağıdaki gibi görünmelidir:  
   
-    ```  
+    ```xml  
     <dependency>  
       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  

@@ -10,31 +10,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77251c14cfdfb5829b16137f28148a0f0c8b9d8e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815858"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Komut satırından taşınabilir profil oluşturma veri dosyaları oluşturma
-Profil oluşturma verilerini daha kolay paylaşımı yapmak için kullanabileceğiniz [VSPerfReport](../profiling/vsperfreport.md) profil .vsp dosyasına çalıştırmak için simgeleri eklemek için komut satırı aracı.  
+Profil oluşturma verilerini daha kolay paylaşımı yapmak için kullanabileceğiniz [VSPerfReport](../profiling/vsperfreport.md) profil içine çalıştırmak için simgeleri eklemek için komut satırı aracı. *Vsp* dosya.  
   
- Daha küçüktür ve IDE içinde yüklemek daha hızlı bir şekilde önceden çözümlenen bir profil oluşturma veri (.vsps) dosyası da oluşturabilirsiniz.  
+ Önceden çözümlenen bir profil verileri de oluşturabilirsiniz (. *vsps*) daha küçük olan ve IDE içinde yüklemek daha hızlı bir şekilde dosyası.  
   
 > [!NOTE]
->  Simge (.pdb) dosyaları için kullanılabilir olduğundan emin olun **VSPerfReport**. Daha fazla bilgi için bkz: [nasıl yapılır: simge dosyası konumlarını komut satırından belirtme](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+>  Simgenin emin olun (. *pdb*) dosyaları için kullanılabilir **VSPerfReport**. Daha fazla bilgi için bkz: [nasıl yapılır: simge dosyası konumlarını komut satırından belirtme](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
 >   
 >  Yolu hakkında bilgi için **VSReport**, bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 >   
->  Profil oluşturma verileri .vsps dosyasında filtrelenemez.  
+>  Profil oluşturma verileri bir. *vsps* dosya olamaz filtre.  
   
-### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Bir profil bir profil oluşturma veri (.vsp) dosyasına çalıştırmak için simgeleri eklemek için  
+### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Bir profil bir profil oluşturma verilerini çalıştırmak için simgeleri eklemek için (. *Vsp*) dosyası  
   
 -   Bir komut istemi penceresinde, aşağıdaki komutu yazın:  
   
      \<Yolu >**VSPerfReport \<** VSP Dosya > **/PackSymbols**  
   
-     Varsayılan olarak, .vsps dosya .vsp dosyasının temel adı ile adlandırılır. Kullanarak bir diğer ad belirtebilirsiniz **çıkış** seçeneği.  
+     Varsayılan olarak,. *vsps* dosya temel adı ile adlandırılır. *Vsp* dosya. Kullanarak bir diğer ad belirtebilirsiniz **çıkış** seçeneği.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Özet bir profil oluşturma veri dosyası oluşturmak için  
   
@@ -42,4 +43,4 @@ Profil oluşturma verilerini daha kolay paylaşımı yapmak için kullanabilece�
   
      \<Yolu >**VSPerfReport \<** VSP Dosya > **/SummaryFile** [**/çıktı:**\<dosya adı >]  
   
-     Varsayılan olarak, .vsps dosya .vsp dosyasının temel adı ile adlandırılır. Kullanarak bir diğer ad belirtebilirsiniz **çıkış** seçeneği.
+     Varsayılan olarak,. *vsps* dosya temel adı ile adlandırılır. *Vsp* dosya. Kullanarak bir diğer ad belirtebilirsiniz **çıkış** seçeneği.

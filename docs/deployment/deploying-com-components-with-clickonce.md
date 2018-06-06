@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815879"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce ile COM Bileşenleri Dağıtma
 Eski COM bileşenlerini dağıtımını geleneksel zor bir görev olmuştur. Bileşenleri Genel kayıtlı olması gerekir ve bu nedenle örtüşen uygulamalar arasında istenmeyen yan etkileri neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumlu değildir çünkü bu durum genelde .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenleri Windows XP veya daha yüksek işletim sistemi dağıtmanıza olanak tanır.  
@@ -69,7 +70,7 @@ Eski COM bileşenlerini dağıtımını geleneksel zor bir görev olmuştur. Bil
   
 4.  Class1.vb içinde için oluşturulan koddan sonra aşağıdaki kodu ekleyin `New` yöntemi:  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ Eski COM bileşenlerini dağıtımını geleneksel zor bir görev olmuştur. Bil
   
 8.  İşleyici kod eklemek için düğmesini çift tıklayın ve böylece işleyici aşağıdaki gibidir kod dosyasında kodu ekleyin:  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  

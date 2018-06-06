@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815551"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulamasına bir Veri Dosyası Dahil Etme
 Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklediğiniz uygulama burada uygulama yönetebilir, kendi veri hedef bilgisayarın yerel disk üzerinde veri dizinine atanır. Veri dosyaları, tüm dosya türlerini içerebilir: metin dosyaları, XML dosyalarını veya hatta Microsoft Access veritabanı (.mdb) dosyaları. Aşağıdaki yordamlar herhangi türde bir veri dosyası ekleme gösterir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
@@ -35,7 +36,7 @@ Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklediğ
   
 2.  Uygulama bildiriminizi listesi veri dosyasını güncelleştirin.  
   
-     **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      Bu görevi gerçekleştirme uygulama bildiriminizi dosyaların listesini yeniden oluşturur ve karma imzaları da otomatik olarak oluşturur.  
   
@@ -53,13 +54,11 @@ Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklediğ
   
      Uygulama bildiriminin, karma değiştiğinden Dağıtım bildiriminizi yeniden oturum açmanız gerekir.  
   
-     **Mage -s uygulama bildirimi - cf cert_file - pwd parola**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **Mage -u dağıtım bildirim - appm uygulama bildirimi**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **Mage -s dağıtım bildirimi - cf SertifikaDosyası - pwd parola**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>MageUI.exe kullanarak bir veri dosyası eklemek için  
   

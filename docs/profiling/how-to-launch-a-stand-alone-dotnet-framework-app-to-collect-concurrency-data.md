@@ -10,23 +10,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5cece8a5b97f3a9c78bdda8c5e841661d2b4d58d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 8a44fd95ec8561df7de0970ac81446757f122121
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335586"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815729"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: komut satırını kullanarak eşzamanlılık verileri toplamak için bağımsız bir .NET Framework uygulamasını Profil Oluşturucu ile başlatma
 Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir .NET Framework tek başına (istemci) uygulamasını başlatın ve işlemi ve iş parçacığı eşzamanlılık verileri toplamak için profil oluşturma araçları komut satırı araçları  
   
 > [!NOTE]
->  Profil oluşturma araçları komut satırı araçları \Team Tools\Performance araçları alt dizininde bulunan [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64 bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresini PATH ortam değişkenine ekleyin veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Profil oluşturma araçları komut satırı araçları içinde bulunur *\Team Tools\Performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresini PATH ortam değişkenine ekleyin veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Profil Oluşturucu uygulamaya bağlı olsa da, duraklatma ve veri toplama sürdürme. Profil oluşturma oturumu sona erdirmek için profil oluşturucu artık uygulamaya bağlı olması gerekir ve profil oluşturucu açıkça kapatılmalıdır.  
   
 ## <a name="start-the-application-with-the-profiler"></a>Profil Oluşturucu ile uygulama Başlat  
- Bir .NET Framework hedef uygulamayı başlatmak için .NET Framework'te profil oluşturma değişkenleri ayarlamak için VSPerfClrEnv.exe kullanın. Ardından VSPerfCmd kullandığınız **/start** ve **/başlatma** profil oluşturucu başlatın ve uygulamayı başlatmak için Seçenekler. Belirleyebileceğiniz **/start** ve **/başlatma** ve bunların ilgili tek bir komut satırı seçenekleri. Ayrıca ekleyebileceğiniz **/globaloff** hedef uygulama başlatıldığında veri toplamayı duraklatmak için komut satırı seçeneği. Daha sonra **/globalon** veri toplamaya başlamak için ayrı bir komut satırında.  
+ Bir .NET Framework hedef uygulamayı başlatmak için kullandığınız *VSPerfClrEnv.exe* değişkenleri profil .NET Framework ayarlamak için. Ardından VSPerfCmd kullandığınız **/start** ve **/başlatma** profil oluşturucu başlatın ve uygulamayı başlatmak için Seçenekler. Belirleyebileceğiniz **/start** ve **/başlatma** ve bunların ilgili tek bir komut satırı seçenekleri. Ayrıca ekleyebileceğiniz **/globaloff** hedef uygulama başlatıldığında veri toplamayı duraklatmak için komut satırı seçeneği. Daha sonra **/globalon** veri toplamaya başlamak için ayrı bir komut satırında.  
   
 #### <a name="to-start-an-application-with-the-profiler"></a>Profil Oluşturucu ile bir uygulamayı başlatmak için  
   
@@ -54,7 +54,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
     |[/crosssession](../profiling/crosssession.md)|Etkinleştirir, diğer oturum açma oturumları işlemleri profil oluşturma.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Profil oluşturma sırasında toplanması için bir Windows performans sayacı belirtir.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|İle kullandığınız **/wincounter** yalnızca. Windows performans sayacı toplama olayları arasındaki milisaniye sayısını belirtir. Varsayılan değer 500 ms ' dir.|  
-    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Profil oluşturma sırasında toplanacak olay Windows için izleme (ETW) olayı belirtir. ETW olayları ayrı (.etl) dosyasında toplanır.|  
+    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Profil oluşturma sırasında toplanacak olay Windows için izleme (ETW) olayı belirtir. ETW olayları ayrı bir toplanır (. *etl*) dosyası.|  
   
 3.  Hedef uygulama başlatın. Tür:  
   
@@ -68,12 +68,12 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
     |[/ Console](../profiling/console.md)|Hedef komut satırı uygulaması ayrı bir pencerede başlatır.|  
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|Ortak dil çalışma zamanı (CLR) bir uygulamada birden fazla çalışma zamanı sürümü yüklendiğinde profilini sürümünü belirtir.|  
   
-## <a name="control-data-collection"></a>Denetimin veri toplama  
- Hedef uygulama çalışırken, başlatma ve VSPerfCmd.exe seçenekleri kullanarak verileri dosyaya yazma durdurma tarafından veri toplama kontrol edebilirsiniz. Veri toplama denetimi, program yürütme, başlatma veya kapatma uygulamanın gibi belirli bir bölümü için veri toplamanıza olanak sağlar.  
+## <a name="control-data-collection"></a>Veri toplamayı denetleme  
+ Hedef uygulama çalışırken, başlatma ve kullanarak verileri dosyaya yazma durdurma tarafından veri toplama denetleyebilirsiniz *VSPerfCmd.exe* seçenekleri. Veri toplama denetimi, program yürütme, başlatma veya kapatma uygulamanın gibi belirli bir bölümü için veri toplamanıza olanak sağlar.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak için  
   
-1.  VSPerfCmd.exe seçenekleri aşağıdaki çiftleri başlatın ve veri toplama işlemini durdurun. Her komut satırı ayrı bir seçeneği belirtin. Veri toplama, birden çok kez açıp kapatabilirsiniz.  
+1.  Aşağıdaki çiftleri *VSPerfCmd.exe* seçenekleri başlatma ve durdurma veri toplama. Her komut satırı ayrı bir seçeneği belirtin. Veri toplama, birden çok kez açıp kapatabilirsiniz.  
   
     |Seçenek|Açıklama|  
     |------------|-----------------|  
@@ -90,7 +90,7 @@ Bu konuda nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality
   
     -   Hedef uygulamayı kapatın.  
   
-         -veya-  
+         veya  
   
     -   Tür **VSPerfCmd / Ayır**  
   

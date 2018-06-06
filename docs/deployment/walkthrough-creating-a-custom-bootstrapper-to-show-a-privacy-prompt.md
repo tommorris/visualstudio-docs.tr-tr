@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816048"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>İzlenecek yol: bir gizlilik İstemi ile özel bir önyükleyici oluşturma
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>İzlenecek yol: Bir gizlilik istemiyle özel bir önyükleyici oluşturma
 Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir olduğunda otomatik olarak güncelleştirmek için ClickOnce uygulamalarını yapılandırabilirsiniz. Müşterileriniz için bu davranışı kabul emin olmak için bunları bir gizlilik istemi görüntüleyebilirsiniz. Ardından, bunlar otomatik olarak güncelleştirmek için uygulama izni vermek seçebilirsiniz. Uygulama otomatik olarak güncelleştirmeye izin verilmiyorsa, yüklemez.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -165,7 +166,7 @@ Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir ol
   
 2.  Product.xml dosyasında aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
   
-    ```  
+    ```xml  
     <Product  
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       ProductCode="Microsoft.Sample.EULA">  
@@ -197,7 +198,7 @@ Derlemeleri yeni dosya sürümleri ve derleme sürümleri ile kullanılabilir ol
   
 2.  Package.xml dosyasında yerel tanımlar ve Yazılım Lisans Koşulları'nı eklemek için aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
   
-    ```  
+    ```xml  
     <Package   
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       Name="DisplayName"  

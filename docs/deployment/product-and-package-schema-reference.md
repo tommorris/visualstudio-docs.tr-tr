@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815580"
 ---
 # <a name="product-and-package-schema-reference"></a>Ürün ve Paket Şema Başvurusu
 A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML bildirim bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Dış bağımlılıkları örneklerindendir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ve Microsoft Data Access Components (MDAC). Bir paket dosyası ürün dosyasına benzer ancak bir bağımlılığın yerelleştirilmiş derlemeler, lisans sözleşmelerini ve belgeler gibi kültüre bağlı bileşenlerini yüklemek için kullanılır.  
@@ -56,7 +57,7 @@ A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML b
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği yüklemek için bir tam ürün dosyası gösterir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  

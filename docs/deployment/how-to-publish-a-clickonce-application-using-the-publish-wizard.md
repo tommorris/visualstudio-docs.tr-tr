@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 613c576e895042055d5faee9eeb7c8ca27da078a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ed2080c34908f67c83baed182d8e958eb1776b8f
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815827"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Nasıl yapılır: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama
 ClickOnce uygulaması kullanıcılar tarafından kullanılabilmesi için bir dosya paylaşımı veya yolu, FTP sunucusu veya çıkarılabilir medya yayımlamanız gerekir. Uygulama Yayımlama Sihirbazı'nı kullanarak yayımlayabilirsiniz; yayımlama ile ilgili ek özellikler bulunur **Yayımla** sayfasında **Proje Tasarımcısı**. Daha fazla bilgi için bkz: [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md).  
@@ -101,4 +102,4 @@ ClickOnce uygulaması kullanıcılar tarafından kullanılabilmesi için bir dos
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   
- [ClickOnce Kullanarak Office Çözümü Dağıtma](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)
+ [ClickOnce Kullanarak Office Çözümü Dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md)

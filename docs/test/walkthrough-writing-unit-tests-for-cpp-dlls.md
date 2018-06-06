@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751838"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Nasıl yapılır: C++ DLL'ler için birim testleri yazma
 
@@ -45,11 +46,11 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
      Bu kılavuzda, test projesinin adlı `NativeRooterTest`.
 
-     ![C++ birim testi projesi oluşturma](../test/media/utecpp01.png "UteCpp01")
+     ![C++ birim testi projesi oluşturma](../test/media/utecpp01.png)
 
 2.  Yeni projede incelemek **unittest1.cpp**
 
-     ![TEST ile test projesi&#95;sınıfı ve TEST&#95;yöntemi](../test/media/utecpp2.png "UteCpp2")
+     ![TEST ile test projesi&#95;sınıfı ve TEST&#95;yöntemi](../test/media/utecpp2.png)
 
      Şunlara dikkat edin:
 
@@ -82,7 +83,7 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
          Test altında görünür **testleri geçti**.
 
-         ![Birim Test Gezgini ile geçirilen test](../test/media/utecpp04.png "UteCpp04")
+         ![Birim Test Gezgini ile geçirilen test](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> DLL projesi oluşturma
 
@@ -90,17 +91,17 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
      Bu kılavuzda, proje adı `RootFinder`.
 
-     ![C++ Win32 Proje oluşturma](../test/media/utecpp05.png "UteCpp05")
+     ![C++ Win32 Proje oluşturma](../test/media/utecpp05.png)
 
 2.  Seçin **DLL** ve **verme simgeleri** Win32 Uygulama Sihirbazı'nda.
 
      **Sembolleri dışa aktar** seçeneği, dışa aktarılan yöntemleri bildirmek için kullanabileceğiniz uygun bir makrosu üretir.
 
-     ![C++ projesi Sihirbazı DLL ve sembolleri dışa aktar için ayarlama](../test/media/utecpp06.png "UteCpp06")
+     ![DLL ve sembolleri dışa aktar için ayarlanmış C++ projesi Sihirbazı](../test/media/utecpp06.png)
 
 3.  Dışarı aktarılan bir işlevin asıl .h dosyasında bildirin:
 
-     ![Yeni DLL kodunu projeyi ve .h dosya API makroları ile](../test/media/utecpp07.png "UteCpp07")
+     ![Yeni DLL kodunu projeyi ve .h dosyasıyla API makroları](../test/media/utecpp07.png)
 
      Bildirimcisi `__declspec(dllexport)` dışında DLL görünür olması ortak ve korumalı üyeleri sınıfın neden olur. Daha fazla bilgi için bkz: [C++ sınıflarında dllimport ve dllexport kullanma](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
@@ -120,13 +121,13 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
     1.  Oluşturduğunuz test projesinin özelliklerini açın ve seçin **ortak özellikleri**, **Framework ve başvurular**.
 
-         ![C++ proje özellikleri | Framework ve başvuruları](../test/media/utecpp08.png "UteCpp08")
+         ![C++ proje özellikleri | Framework ve başvurular](../test/media/utecpp08.png)
 
     2.  Seçin **Yeni Başvuru Ekle**.
 
          İçinde **Başvuru Ekle** iletişim kutusunda, DLL projesi seçin ve Seç **Ekle**.
 
-         ![C++ proje özellikleri | Yeni Başvuru Ekle](../test/media/utecpp09.png "UteCpp09")
+         ![C++ proje özellikleri | Yeni Başvuru Ekle](../test/media/utecpp09.png)
 
 2.  Asıl birim test .cpp dosyasında DLL kodunun .h dosyası şunları içerir:
 
@@ -160,7 +161,7 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
 5.  Test Gezgini seçin **tümünü Çalıştır**.
 
-     ![Birim Test Gezgini &#45; temel geçirilen Test](../test/media/utecpp10.png "UteCpp10")
+     ![Birim Test Gezgini &#45; temel sınaması başarılı oldu](../test/media/utecpp10.png)
 
  Test ve kod projeleri ayarlayabilir ve kod projesinde işlevlerini Çalıştırma testleri çalıştırabilirsiniz doğrulandı. Şimdi, gerçek testleri ve kod yazmaya başlayabilirsiniz.
 
@@ -189,7 +190,7 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
      Yeni test başarısız olur.
 
-     ![RangeTest başarısız](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest başarısız](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Hemen yazdıktan sonra her bir test başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay hata önlemenize yardımcı olur.
@@ -217,7 +218,7 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
      Her iki testleri geçirin.
 
-     ![Birim Test Gezgini &#45; aralığı geçirilen Test](../test/media/utecpp12.png "UteCpp12")
+     ![Birim Test Gezgini &#45; aralığı sınaması başarılı oldu](../test/media/utecpp12.png)
 
     > [!TIP]
     > Kod, aynı anda testleri bir ekleyerek geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.
@@ -263,7 +264,7 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
      Başarısız onaylama vurgulanır. Hata iletisi Test Gezgini ayrıntı bölmesinde görünür olur.
 
-     ![Başarısız NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests başarısız oldu](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  Neden sınama başarısız görmek için işleviyle adım:
 
@@ -291,10 +292,10 @@ Bu kılavuz, yerel C++ önce test yöntemi kullanarak DLL'den geliştirmek açı
 
 6.  Tüm testler şimdi geçirin.
 
-     ![Tüm sınamaları geçmesi](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Tüm sınamaları geçmesi](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+> Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğunda iki durumlu düğme. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
 
 ##  <a name="refactor"></a> Testleri değiştirmeden kodu yeniden düzenleyin

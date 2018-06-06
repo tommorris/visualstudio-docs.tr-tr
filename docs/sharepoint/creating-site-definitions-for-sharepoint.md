@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1fae92a9ca958f3d6702ec0f2d1678b33d471bab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691810"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765498"
 ---
-# <a name="creating-site-definitions-for-sharepoint"></a>SharePoint için site tanımları oluşturma
+# <a name="create-site-definitions-for-sharepoint"></a>SharePoint için site tanımları oluşturma
   SharePoint Site tanımı projesinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturmanıza olanak tanır bir *site tanım*, hangi yeni bir SharePoint sitesi için bir temel olarak hizmet verir. Bu tanımları yalnızca görünümünü ve davranışını SharePoint sitesi, ancak aynı zamanda varsayılan içeriğini ve işlevleri belirler. Tanımı'nda, önceden yapılandırılmış listeleri, içerik türleri, Olay alıcıları, resimleri ve diğer öğeleri koyabilirsiniz. Örneğin, SharePoint BLOG gibi bazı site tanımları içerir. BLOG sitesi tanımına dayalı olarak bir site oluşturduğunuzda, site listeler, Web Bölümleri ve bir blog sitesi gerektiren diğer öğeleri içerir.  
   
  Site tanımları hakkında daha fazla bilgi için bkz: [Site şablonları ve tanımları](http://go.microsoft.com/fwlink/?LinkId=179134).  
@@ -41,11 +41,11 @@ ms.locfileid: "34691810"
   
 |Dosya Adı|Açıklama|  
 |---------------|-----------------|  
-|Default.aspx|Yeni SharePoint sitesi için varsayılan ASPX giriş sayfası.|  
-|onet.XML|Yeni sitenin yapılandırmasını, bileşenlerini site tanımı şablonu ve varsayılan davranışını belirtir. Bu ayarlar, öznitelikler etkinleştirilen, içerik türleri gibi varsayılan liste görünümleri belge şablonu dosyaları içerir ve Web sitesiyle dahil bölümleri. Varsayılan olarak, `Modules` bölümü SharePoint sitesine ve nasıl yapılandırıldıklarına eklenecek dosyalar listeler.|  
-|webtemp_*SiteDefinitionName*.xml|Görünür site tanımı yapılandırmaları belirtir **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
+|*Default.aspx*|Yeni SharePoint sitesi için varsayılan ASPX giriş sayfası.|  
+|*onet.XML*|Yeni sitenin yapılandırmasını, bileşenlerini site tanımı şablonu ve varsayılan davranışını belirtir. Bu ayarlar, öznitelikler etkinleştirilen, içerik türleri gibi varsayılan liste görünümleri belge şablonu dosyaları içerir ve Web sitesiyle dahil bölümleri. Varsayılan olarak, `Modules` bölümü SharePoint sitesine ve nasıl yapılandırıldıklarına eklenecek dosyalar listeler.|  
+|*webtemp_ {SiteDefinitionName} .xml*|Görünür site tanımı yapılandırmaları belirtir **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
   
- Varsayılan olarak, tüm site tanımları depolanmış *sürücü:* \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates klasör. Her bir site tanımı kendi alt vardır.  
+ Varsayılan olarak, tüm site tanımları depolanmış *{sürücü:} \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* klasör. Her bir site tanımı kendi alt vardır.  
   
 ## <a name="related-topics"></a>İlgili konular
   
@@ -53,7 +53,7 @@ ms.locfileid: "34691810"
 |-----------|-----------------|  
 |[İzlenecek yol: Temel bir Site Tanımı Projesi Oluşturma](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Adım adım bir temel site tanımı projesi oluşturma aracılığıyla sizi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Nasıl yapılır: özel Site Tanım ve yapılandırma oluşturma](http://go.microsoft.com/fwlink/?LinkId=183309)|Varolan bir site tanımı kopyalama ve bu kopyayı değiştirerek bir özel site tanımı SharePoint'te oluşturmayı açıklar.|  
-|[WebTemp.xml](http://go.microsoft.com/fwlink/?LinkId=183310)|Kullanılabilir site tanımları belirtir özgün dosya anlatılmakta **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
+|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|Kullanılabilir site tanımları belirtir özgün dosya anlatılmakta **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
 |[SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)|SharePoint çözümlerini genel kullanım için hazırlamayı açıklar.|  
 |[SharePoint için Web Bölümleri Oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|Kullanıcılar değiştirebilir bir SharePoint sayfasına bölümlerini nasıl oluşturabileceğiniz açıklanmaktadır.|  
 |[Web Bölümleri veya Uygulama Sayfaları için Yeniden Kullanılabilir Denetimler Oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Uygulama sayfaları ve Web Bölümleri çalıştıran yeniden kullanılabilir denetimler nasıl oluşturabileceğiniz açıklanmaktadır.|  

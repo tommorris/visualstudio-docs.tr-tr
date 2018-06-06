@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2aaa32de4742d5c3897ec2290e77223b0d6cdd56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752669"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -69,7 +70,7 @@ IDE komutları, dosyalar ve yalnızca ilgili bilgiler, geçerli görev gösterme
 
 - **İletişim kutuları, menü komutları ve seçenekleri bulmak**. İçinde [hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) kutusuna, anahtar sözcükleri veya tümcecikleri bulmaya çalıştığınız öğeleri için girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür `new project`:
 
-    !['Yeni Proje' için hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    !['Yeni Proje' için hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png)
 
     **Hızlı başlatma** bağlantılar görüntüler **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu ve **projeler ve çözümler** sayfasında**Seçenekleri** iletişim kutusu, diğerlerinin yanı sıra. Hızlı Başlatma sonuçları proje dosyalarını ve aracı windows de içerir.
 
@@ -79,7 +80,7 @@ Hata ayıklama çok zaman kullanabileceğinden, ancak aşağıdaki ipuçları ya
 
 - **Sayfa, uygulama veya site farklı tarayıcılarda test**. Kodunuzdaki hataları ayıklamanıza gibi dahil olmak üzere yüklü web tarayıcıları arasında kolayca geçiş yapabilirsiniz [sayfa denetçisi (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), açmak zorunda kalmadan **Gözat ile** iletişim kutusu. Kullanabilirsiniz **hata ayıklama hedefi** açıktır listesi **standart** yanındaki araç **hata ayıklamayı Başlat** hata ayıklama gibi kullanmakta olduğunuz tarayıcı hızlı bir şekilde doğrulamak için düğmesini veya sayfalarını görüntüleyin.
 
-    ![Web tarayıcısı hata ayıklama seçeneklerini](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Web tarayıcısı hata ayıklama seçeneklerini seçin](../ide/media/webbrowserdropdowntoolbar.png)
 
 - **Kesme geçici**. Kodu geçerli satırda geçici bir kesme noktası oluşturun ve hata ayıklayıcı eşzamanlı olarak başlatılır. Bu kod satırı isabet olduğunda hata ayıklayıcı kesme moduna girer. Daha fazla bilgi için bkz: [hata ayıklayıcısı ile kodlarda Bul](../debugger/navigating-through-code-with-the-debugger.md).
 

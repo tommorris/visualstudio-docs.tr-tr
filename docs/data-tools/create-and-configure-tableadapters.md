@@ -1,5 +1,5 @@
 ---
-title: Oluşturma ve TableAdapters öğelerini yapılandırma
+title: TableAdapter’lar oluşturma ve yapılandırma
 ms.date: 09/01/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748963"
 ---
-# <a name="create-and-configure-tableadapters"></a>Oluşturma ve TableAdapters öğelerini yapılandırma
+# <a name="create-and-configure-tableadapters"></a>TableAdapter’lar oluşturma ve yapılandırma
 TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritabanı, çalışma sorgular veya saklı yordamlar bağlanmak ve ya da yeni bir veri dönüş tablo veya varolan bir dolgu <xref:System.Data.DataTable> döndürülen verilerle. TableAdapters veritabanına uygulamanızdan güncelleştirilen verileri de gönderebilirsiniz.
 
 Aşağıdaki eylemlerden birini gerçekleştirdiğinizde TableAdapters sizin için oluşturulur:
@@ -40,7 +41,7 @@ TableAdapters giriş için bkz: [TableAdapters kullanarak veri kümelerini doldu
 ## <a name="use-the-tableadapter-configuration-wizard"></a>TableAdapter Yapılandırma Sihirbazı'nı kullanın
 Çalıştırma **TableAdapter Yapılandırma Sihirbazı'nı** oluşturmak veya TableAdapters ve bunların ilişkili DataTables düzenlemek için. Varolan bir TableAdapter içinde üzerinde sağ tıklayarak yapılandırabileceğiniz **veri kümesi Tasarımcısı**.
 
-![Tablo bağdaştırıcısı Yapılandırma Sihirbazı'nı raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata tablo bağdaştırıcısı Yapılandırma Sihirbazı")
+![raddata tablo bağdaştırıcısı Yapılandırma Sihirbazı](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
 Yeni bir TableAdapter Araç Kutusu'ndan sürükleyin durumunda olduğunda **veri kümesi Tasarımcısı** odak Sihirbazı başlatılır ve istemleri, hangi verileri belirtmek için kaynak TableAdapter bağlanmak için kullanılıyor. Sonraki sayfada, ne tür bir komutları ile saklı yordamları veya SQL deyimlerini veritabanıyla iletişim kurmak üzere kullanmalısınız sihirbaz sorar. (Zaten bir veri kaynağı ile ilişkili bir TableAdapter yapılandırıyorsanız, bu görmezsiniz.)
 
@@ -63,7 +64,7 @@ Seçili saklı yordamdan veri tablosunda karşılık gelen sütunlara parametrel
 ## <a name="configure-a-tableadapters-fill-method"></a>TableAdapter'ın dolgu yöntemini yapılandırma
 Bazen TableAdapter'ın tablonun şeması değiştirmek isteyebilirsiniz. Bunu yapmak için TableAdapter'ın birincil değiştirmeniz `Fill` yöntemi. TableAdapters birincil ile oluşturulan `Fill` ilişkili veriler tablo şemasını tanımlayan yöntemi. Birincil `Fill` yöntemi sorgu veya saklı yordam TableAdapter ilk olarak yapılandırıldığında girdiğiniz dayanır. Bu ilk (en üstteki) veri tablosu veri kümesi Tasarımcısı'nda altında yöntemdir.
 
-![Birden çok sorguyla TableAdapter](../data-tools/media/tableadapter.gif "TableAdapter")
+![TableAdapter ile birden çok sorgu](../data-tools/media/tableadapter.gif)
 
 TableAdapter yaptığınız tüm değişiklikler ana `Fill` yöntemi ilişkili veri tablosu şemada yansıtılır. Örneğin, ana sorgudan bir sütun kaldırma `Fill` yöntemi de ilişkili veriler tablodan sütun kaldırır. Ayrıca, sütun ana kaldırma `Fill` yöntemi bu TableAdapter için hiçbir ek sorgularından sütun kaldırır.
 

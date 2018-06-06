@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d885a09551510e38e54efa4b30a02d16b57a728
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749326"
 ---
-# <a name="cvwritealert-function"></a>CvWriteAlert İşlevi
+# <a name="cvwritealert-function"></a>CvWriteAlert işlevi
 Bir uyarı eşzamanlılık görselleştiricisi izleme dosyasına yazar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -65,15 +66,15 @@ HRESULT CvWriteAlertVA(
  `pMessage`  
  İleti biçimi dizesi. NULL olamaz.  
   
-## <a name="return-value"></a>Dönüş Değeri  
+## <a name="return-value"></a>Dönüş değeri  
  İletiyi başarıyla yazıldığında S_OK. Hata kodu vardı herhangi bir hata durumunda. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cvmarkers.h  
+ **Başlık:** *cvmarkers.h*  
   
  **Unicode:** CvWriteAlertW, CvWriteAlertVW  
   
  **ANSI:** CvWriteAlertA, CvWriteAlertVA  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)

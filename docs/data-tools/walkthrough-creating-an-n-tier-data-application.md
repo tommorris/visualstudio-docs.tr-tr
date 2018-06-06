@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35733a737f10fccab7d9fd6cab350478182b2259
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747007"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>İzlenecek Yol: N Katmanlı Bir Veri Uygulaması Oluşturma
 *N katmanlı* veri uygulamalardır verilere erişebilir ve birden çok mantıksal katmanlara ayrılır uygulamalar veya *katmanları*. Uygulama bileşenlerini farklı katmanlara ayırmak uygulamanızın yönetilebilirliğini ve ölçeklenebilirliğini artırır. Bunu, tüm çözümü yeniden tasarlamanıza gerek kalmadan tek bir katmana uygulanabilen yeni teknolojilerin daha kolay benimsenmesini sağlayarak yapar. N katmanlı mimaride bir sunu katmanı, bir orta katman ve bir veri katmanı bulunur. Orta katmanda genellikle bir veri erişim katmanı, iş mantığı katmanı ve kimlik doğrulaması ve doğrulama gibi paylaşılan bileşenler bulunur. Veri katmanında ilişkisel bir veritabanı vardır. N katmanlı uygulamalar hassas bilgileri orta katmanın veri erişimi katmanında depolayarak sunu katmanına erişimi olan son kullanıcılardan uzakta tutulmasını sağlar. Daha fazla bilgi için bkz: [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md).
@@ -49,7 +50,7 @@ Bu kılavuzda aşağıdaki adımları gerçekleştireceksiniz:
 
 -   Veri tablolarını doldurmak için kod yazma.
 
-![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") bu konuda video sürümü için bkz: [Video nasıl yapılır: N katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).
+![video bağlantı](../data-tools/media/playvideo.gif) bu konuda video sürümü için bkz: [Video nasıl yapılır: N katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Önkoşullar
 Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanılır.
@@ -78,7 +79,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
 
-2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Klasik Masaüstü**.
+2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
 3. Orta bölmede seçin **sınıf kitaplığı** proje türü.
 
@@ -121,7 +122,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
      Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-     -veya-
+     veya
 
      Seçin **yeni bağlantı** açmak için **Bağlantı Ekle** iletişim kutusu.
 
@@ -289,7 +290,7 @@ Bu kılavuz, bir WCF hizmeti kullanarak veri erişim katmanı erişmek için yen
 
 1.  Çözüm Gezgini'ndeki çözüme sağ tıklayın ve seçin **Ekle**, **yeni proje...** .
 
-2.  İçinde **yeni proje** iletişim kutusunda, sol bölmesinde, **Windows Klasik Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması**.
+2.  İçinde **yeni proje** iletişim kutusunda, sol bölmesinde, **Windows Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması**.
 
 3.  Proje adı **PresentationTier** tıklatıp **Tamam**.
 

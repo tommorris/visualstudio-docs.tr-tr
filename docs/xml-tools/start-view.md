@@ -10,19 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751851"
 ---
-# <a name="start-view"></a>Başlangıç görüntüleyin
+# <a name="start-view"></a>Başlangıç Görünümü
 
 Başlangıç XML Şeması (XSD) Tasarımcısı için başlangıç noktası görünümüdür. Yeni bir XSD dosyası oluşturduğunuzda, başlangıçta Başlangıç'ı göreceksiniz.
 
 İki ana bölüme Başlangıç'ı içeren *Filigran* ve **şema ayarlamak ayrıntılarını** bölmesi. Ayrıca, tüm XSD Tasarımcısı görünümlerde kullanılabilir araç çubuğu'nu içerir.
 
-![XML şema Tasarımcısı başlangıç görünümü](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![XML şema Tasarımcısı başlangıç görünümü](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Filigran
 
@@ -36,7 +37,7 @@ Filigran bölmesinde tüm XSD Tasarımcısı görünümler, bir XML Düzenleyici
 
 Başlangıç görünüm arasında gezinebilirsiniz [içerik modeli görünümü](../xml-tools/content-model-view.md) ve [grafik görünümü](../xml-tools/graph-view.md) XML Schema Designer araç çubuğundan.
 
-![XML şema Tasarımcısı araç](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![XML şema Tasarımcısı araç çubuğu](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Başlangıç'ı etkin olduğunda aşağıdaki düğmeler XSD Designer araç çubuğunda etkinleştirilir:
 

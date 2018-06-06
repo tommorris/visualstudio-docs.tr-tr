@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767783"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Nasıl yapılır: Ek Derlemeler Ekleme ve Kaldırma
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Nasıl yapılır: ekleme ve ek derlemeleri kaldırma
   İşlev veya veri için diğer derlemeleri SharePoint paketi bağımlı olması durumunda, çözüm paketinizi (.wsp) derlemelerini ekleyebilirsiniz. Bu şekilde, SharePoint server özel derlemeler bir paket zaten yüklü olduğundan emin hale getirir.  
   
  Ayrıca, ekleyin ve güvenli denetimler ve derlemeler ile ilişkilendirilmiş sınıf kaynak dosyaları değiştirin.  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  Delete anahtar seçin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
  [Nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Nasıl yapılır: SharePoint Özelliklerine Öğe Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

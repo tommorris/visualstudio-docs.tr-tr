@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b372d3d76153b5f5c885a6987d898cf55254b413
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb48c27ab305908ddbf68334fd818bb9c07cfd1e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34477528"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748806"
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme
 Uygulamanızda performans sorunları araştırmak gerektiğinde başlatmak için uygun bir yerdir nasıl CPU kullandığı anlamaktır. **CPU kullanımı** aracı gösterir, CPU Visual C++, Visual C# yürütme süresi yeri harcıyorsa / Visual Basic ve JavaScript kodu. Visual Studio 2015 güncelleştirme 1'de başlayarak, hata ayıklayıcı ayrılmadan CPU kullanımı işlevi başına dökümünü görebilirsiniz. Hata ayıklama sırasında CPU açma ve kapatma profil açın ve yürütme, örneğin bir kesme noktasında durdurulduğunda sonuçları görüntüleyin.  
@@ -27,7 +27,7 @@ Burada, toplamak ve yayın derlemeleri ile CPU kullanımını analiz etme göste
 > [!NOTE]
 > .NET Core ve ASP.NET Core için CPU kullanımını aracı taşınabilir PBDs ile doğru sonuçlar şu anda sağlamaz. Bunun yerine tam pdb kullanın.
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU kullanım verilerini toplama  
+##  <a name="collect-cpu-usage-data"></a>CPU kullanım verilerini toplama  
   
 1.  Visual Studio'da çözüm yapılandırma kümesi **sürüm** ve dağıtım hedefini seçin.  
   

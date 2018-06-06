@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1a9d878ee8b5384784ba77cb6de2d9eee1289d0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34469017"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750512"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Öğreticisi 2. adım: görünümlerle bir Django uygulaması oluşturma ve sayfa şablonları
 
@@ -107,7 +107,7 @@ Visual Studio'da projeyi yeniden çalıştırırsanız, bu noktada (araç çubu�
 
 Kodunuzu değişiklik yaptınız ve bunları başarılı bir şekilde test olduğundan, gözden geçirmek ve kaynak denetimi değişikliklerinizi uygulamak için çok fazla zaman sunulmuştur. Bu öğreticide sonraki adımlarda kaynak denetimine yeniden kaydetmek için uygun saati anımsatmak ve geri bu bölümüne bakın.
 
-1. Hangi gider Visual Studio (daireler aşağıdaki), alt boyunca değişiklikleri düğmesini seçin **Takım Gezgini**.
+1. Gider değişiklikleri düğmesi (aşağıda yuvarlak içine alınmıştır) Visual Studio alt boyunca seçin **Takım Gezgini**.
 
     ![Visual Studio durum çubuğundaki Kaynak Denetim değişiklikleri düğmesi](media/django/step02-source-control-changes-button.png)
 
@@ -211,9 +211,7 @@ Aşağıdaki adımlarda, sayfa şablonlarının kullanımı gösterilmektedir:
 
 1. Projeyi çalıştırın ve çıktıyı inceleyin. 2-2, şablon çalıştığını gösteren görülen bu adıma benzer bir ileti görürsünüz.
 
-    Ancak, HTML olarak kullandığınız gözlemlemek `content` özelliği, çünkü yalnızca düz metin olarak işleyen `render` işlevi otomatik olarak bu HTML çıkışları. Kaçış geçici alabilirsiniz rağmen satır içi HTML ilk başta kullanarak ideal kaçınmalısınız. Biçimlendirme ve stil oluşturma en iyi saklanır değil kodda sayfa şablonu ve ek değişkenleri oluşturmak üzere basit bir konudur gerektiğinde.
-
-    Örneğin, değiştirme `templates/index.html` sayfa başlığı ve tutar sayfa şablonunun tüm biçimlendirme ekler aşağıdaki biçimlendirme eşleştirmek için:
+    Ancak, HTML olarak kullandığınız gözlemlemek `content` özelliği, çünkü yalnızca düz metin olarak işleyen `render` işlevi otomatik olarak bu HTML çıkışları. Kaçış otomatik yanlışlıkla güvenlik açıklarına ekleme saldırıları önlemek: geliştiriciler genellikle giriş sayfadan toplayın ve şablon yer tutucu aracılığıyla başka bir değer olarak kullanın. Kaçış Ayrıca, yeniden HTML sayfası şablonu ve kod dışında tutmak en iyi olduğunu anımsatıcısı görevi görür. Neyse ki, bu ek değişkenleri oluşturmak üzere bir basit konudur gerektiğinde. Örneğin, değiştirme `templates/index.html` sayfa başlığı ve tutar sayfa şablonunun tüm biçimlendirme ekler aşağıdaki biçimlendirme eşleştirmek için:
 
     ```html
     <html>

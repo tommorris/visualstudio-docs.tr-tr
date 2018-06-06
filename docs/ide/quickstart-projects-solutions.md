@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747514"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: Projeler ve çözümler
 
@@ -27,7 +28,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://a
 > [!NOTE]
 > Çözümler ve projeler Visual Studio'daki uygulamaları geliştirmek için gerekli değildir. Ayrıca, kodu içeren bir klasörü açın ve kodlama, derleme ve hata ayıklama başlatın. GitHub depo kopyalarsanız, örneğin, bunu Visual Studio projeler ve çözümler içermeyebilir. Daha fazla bilgi için bkz: [projeleri veya çözümler olmadan kod Visual Studio geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="solutions"></a>Çözümleri
+## <a name="solutions"></a>Çözümler
 
 Çözümleri bir düzenlemek için Visual Studio tarafından kullanılan kapsayıcılardır veya projeleri ilgili daha fazla. Visual Studio'da bir çözümü açtığınızda, içerdiği tüm projeleri otomatik olarak yükler.
 
@@ -57,7 +58,7 @@ Artık ilk Projemizin çözüme ekleyelim. Biz, boş bir proje ile başlatın ve
 
    **Yeni Proje Ekle** iletişim kutusu açılır.
 
-1. Sol bölmede **Visual C#** ve **Windows Klasik Masaüstü**. Orta bölmede, ardından **boş proje (.NET Framework)**. Projeyi "QuickDate" olarak adlandırın ve ardından **Tamam** düğmesi.
+1. Sol bölmede **Visual C#** ve **Windows Masaüstü**. Orta bölmede, ardından **boş proje (.NET Framework)**. Projeyi "QuickDate" olarak adlandırın ve ardından **Tamam** düğmesi.
 
    Çözümde altındaki "QuickDate" adlı bir proje görünür **Çözüm Gezgini**. Şu anda tek dosyalı çağrılan içeren *App.config*.
 

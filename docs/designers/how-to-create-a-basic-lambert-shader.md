@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11e8c592bb91fc516ad6a5379330201198c65c14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748211"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Nasıl Yapılır: Temel Lambert Gölgelendiricisi Oluşturma
 
@@ -41,13 +42,13 @@ Başlamadan önce emin olun **özellikleri** penceresi ve **araç** görüntüle
 > [!NOTE]
 > Bu çizimde gölgelendirici etkisini daha iyi göstermek için turuncu bir renk kullanarak belirtilmiş **MaterialDiffuse** Gölgelendirici parametresi. Oyun veya uygulama bu parametre her nesne için bir benzersiz renk değeri sağlamak için kullanabilirsiniz. Önizleme gölgelendiriciler bölümünde malzeme parametreleri hakkında daha fazla bilgi için bkz [gölgelendirici Tasarımcısı](../designers/shader-designer.md).
 
- ![Gölgelendirici grafik ve etkisini önizlemesini. ] (../designers/media/digit-lambert-effect-graph.png "Lambert etkisi grafik basamak")
+ ![Gölgelendirici grafik ve etkisini önizlemesini.](../designers/media/digit-lambert-effect-graph.png)
 
  Belirli şekillerin daha iyi önizlemeleri için bazı gölgelendiriciler sağlayabilir. Önizleme gölgelendiriciler bölümünde gölgelendirici Tasarımcısı'nda gölgelendiriciler önizleme hakkında daha fazla bilgi için bkz [gölgelendirici Tasarımcısı](../designers/shader-designer.md).
 
  Aşağıdaki çizimde, 3B modeline uygulanan bu belgede açıklanan gölgelendirici gösterir.
 
- ![Lambert aydınlatma bir modele uygulanır. ] (../designers/media/digit-lambert-effect-result.png "Lambert etkisi sonucu basamak")
+ ![Lambert aydınlatma bir modele uygulanır.](../designers/media/digit-lambert-effect-result.png)
 
  Gölgelendirici uygulama 3B bir modeli hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

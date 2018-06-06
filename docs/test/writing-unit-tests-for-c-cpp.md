@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752085"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -51,19 +52,19 @@ Aşağıdaki bölümlerde C++ birim testi başlamanıza yardımcı olmak için t
 
 Test etmek istediğiniz kod olarak aynı çözüme bulunan bir veya daha fazla test projeleri içinde testler ve tanımlayın. Varolan bir çözüme yeni bir test projesi eklemek için'nde çözüme sağ tıklayın **Çözüm Gezgini** ve **Ekle | Yeni proje**. Sol bölmede seçin **Visual C++ Test** ve merkezi bölmesinden proje türlerinden birini seçin. Ne zaman kullanılabilir test projeleri aşağıda gösterilmiştir **C++ ile masaüstü geliştirme** iş yükü yüklenir:
 
-![C++ projeleri Test](media/cpp-new-test-project.png "C++ yeni test proje şablonları")
+![C++ Test projeleri](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Bir çözümde diğer projelere başvurular oluşturun
 
 Sınanacak proje işlevlerde erişmek test kodunuzu etkinleştirmek için test projenizde projesine bir başvuru ekleyin. ' Nde test proje düğümüne sağ tıklayın **Çözüm Gezgini** ve **Ekle | Başvuru**. Ardından iletişim kutusunda, test etmek istediğiniz proje seçin.
 
-![Başvuru ekleme](media/cpp-add-ref-test-project.png "C++ test sınanacak projelerine başvuru ekleme")
+![Başvuru ekleme](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Ekleme #include yönergelerini üstbilgi dosyaları
 
 Ardından, birim testi .cpp dosyanızda ekleyin bir `#include` test etmek istediğiniz türler ve İşlevler bildiren üstbilgi dosyaları için yönerge. Tür `#include "` ve seçmenize yardımcı olmak için IntelliSense sonra etkinleşir. Tüm ek üstbilgi için yineleyin.
 
-![Ekleme yönergeleri dahil](media/cpp-add-includes-test-project.png "C++ test eklemek için üst bilgi dosyaları içerir")
+![Ekleme yönergeleri içerir](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Test yöntemleri yazma
 
@@ -72,7 +73,7 @@ Ardından, birim testi .cpp dosyanızda ekleyin bir `#include` test etmek istedi
 
 Test projenizin .cpp dosyasında saplama sınıf ve size nasıl yazılacağını örneği olarak tanımlanan yöntemi kodu test içeriyor. İmzaları yöntemleri Test Gezgini penceresinden bulunabilir duruma TEST_CLASS ve TEST_METHOD makroları kullandığını unutmayın.
 
-![Ekleme yönergeleri dahil](media/cpp-write-test-methods.png "C++ test eklemek için üst bilgi dosyaları içerir")
+![Ekleme yönergeleri içerir](media/cpp-write-test-methods.png)
 
 TEST_CLASS ve TEST_METHOD parçası olan [Microsoft Yerel Test Framework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Test Gezgini** desteklenen diğer çerçeveler test yöntemleri benzer şekilde bulur.
 
@@ -94,7 +95,7 @@ Ekleyebileceğiniz *nitelikler* yöntemleri test sahipleri, öncelik ve diğer b
 
 1. Üzerinde **Test** menüsünde seçin **Windows** > **Test Gezgini**. Aşağıdaki çizimde olan testleri henüz çalıştırılmamış test projesi gösterir.
 
-   ![Test Gezgini testleri çalıştırmadan önce](media/cpp-test-explorer.png "C++ Test Gezgini")
+   ![Testleri çalıştırmadan önce test Gezgini](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > İle CTest tümleştirme **Test Gezgini** henüz kullanılabilir değil. CMake ana menüden CTest testleri çalıştırın.
@@ -103,7 +104,7 @@ Ekleyebileceğiniz *nitelikler* yöntemleri test sahipleri, öncelik ve diğer b
 
 1. Test Gezgini seçin **tümünü Çalıştır**, veya çalıştırmak istediğiniz belirli testleri seçin. Bir test ile kesme noktaları etkin hata ayıklama modunda çalışan dahil olmak üzere diğer seçenekler için sağ tıklayın. Tüm testler çalıştırıldıktan sonra penceresi geçirilen hangi testlerin ve hangilerinin başarısız gösterir:
 
-![Testler çalıştıktan sonra Explorer test](media/cpp-test-explorer-passed.png "testleri çalıştırdıktan sonra C++ Test Gezgini")
+![Testler çalıştıktan sonra test Gezgini](media/cpp-test-explorer-passed.png)
 
 Başarısız testler için ileti nedeni tanılamanıza yardımcı olan ayrıntılar sunar. Başarısız test sağ tıklatın ve seçin **seçili Testlerde Hata Ayıkla** hatanın oluştuğu işlevi aracılığıyla adıma.
 

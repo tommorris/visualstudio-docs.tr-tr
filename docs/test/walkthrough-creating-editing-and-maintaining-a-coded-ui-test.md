@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8f811905fb6fed0e0cbc061128622c72bf09fc07
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692333"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751656"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koru
 
@@ -50,7 +50,7 @@ Bu kılavuzda, oluşturmak, düzenlemek ve kodlanmış bir UI sınamak için bir
 
 12. Onay kutusu denetimini seçin. Özellikler penceresinde değerini değiştirin **adı** özelliğinden \<No Name > checkBox1 ve Temizle **IsEnabled** özelliği.
 
-     ![Basit WPF uygulaması](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")
+     ![Basit WPF uygulaması](../test/media/codedui_wpfapp.png)
 
 13. Düğme denetimi click olay işleyicisi eklemek için çift tıklayın.
 
@@ -353,11 +353,11 @@ Bu kılavuzda, oluşturmak, düzenlemek ve kodlanmış bir UI sınamak için bir
 
 ## <a name="videos"></a>Videolar
 
-![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [kodlanmış UI testleri ile çalışmaya başlama](http://go.microsoft.com/fwlink/?LinkID=230573)
+![video bağlantı](../data-tools/media/playvideo.gif) [kodlanmış UI testleri ile çalışmaya başlama](http://go.microsoft.com/fwlink/?LinkID=230573)
 
-![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [, Bakım ve hata ayıklama kodlanmış UI testleri](http://go.microsoft.com/fwlink/?LinkID=230574)
+![video bağlantı](../data-tools/media/playvideo.gif) [, Bakım ve hata ayıklama kodlanmış UI testleri](http://go.microsoft.com/fwlink/?LinkID=230574)
 
-![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [elle kodlama kodlanmış UI testleri](http://go.microsoft.com/fwlink/?LinkID=230575)
+![video bağlantı](../data-tools/media/playvideo.gif) [elle kodlama kodlanmış UI testleri](http://go.microsoft.com/fwlink/?LinkID=230575)
 
 ## <a name="faq"></a>SSS
 

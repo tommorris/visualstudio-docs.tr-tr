@@ -1,5 +1,5 @@
 ---
-title: (Birden çok tablo) veritabanına veri kaydetme
+title: Bir veritabanına (birden çok tablo) veri kaydetme
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5be0cccd71a356a78a04c3d15cdb2f080e30c9e4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b087c9f92576edbd3f13ec89ff8716feb95be3e1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752365"
 ---
-# <a name="save-data-to-a-database-multiple-tables"></a>(Birden çok tablo) veritabanına veri kaydetme
+# <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 En yaygın senaryolar uygulama geliştirme, bir Windows uygulaması formunda veri görüntüleme, verileri düzenleme ve güncelleştirilmiş verileri veritabanına geri göndermek için biridir. Bu kılavuzda iki ilgili tablolarındaki verileri görüntüleyen ve kaydını düzenlemek ve değişiklikleri veritabanına kaydetmek gösterilmektedir bir form oluşturur. Bu örnekte `Customers` ve `Orders` Northwind örnek veritabanı tablolarından.
 
  Çağırarak uygulamanızda veritabanına veri kaydedebilirsiniz `Update` bir TableAdapter yöntemi. Tablodan sürüklediğinizde **veri kaynakları** forma, verileri kaydetmek için gerekli olan kod penceresi otomatik olarak eklenir. Forma eklenen ek tabloları bu kodu el ile eklenmesi gerekir. Bu kılavuz birden fazla tablodan güncelleştirmeleri kaydetmek üzere kod eklemek nasıl gösterir.
@@ -70,7 +71,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
 
-2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Klasik Masaüstü**.
+2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 
@@ -93,7 +94,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-         -veya-
+         veya
 
     -   Seçin **yeni bağlantı** açmak için **Ekle/Değiştir bağlantı** iletişim kutusu.
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 102b3eb7fa440e9c666020ddeda6e6763c208b23
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1ad00d05bf6eba2a3853c0af79bf9decaaba236f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692388"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751734"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
@@ -100,7 +100,7 @@ Kodlanmış UI test araçları ve şablonları erişmek için yüklemeniz **kodl
 
      Onaylama işlemi penceresini kapatın ve seçin **kodu oluştur**.
 
-     ![Kodlanmış UI testi öğesi hedefleme](../test/media/codedui_1.png "CodedUI_1")
+     ![Kodlanmış UI test hedefleme öğesi](../test/media/codedui_1.png)
 
     > [!TIP]
     > Eylemlerini kaydederek ve değerleri doğrulama arasında geçiş yapar. Her bir dizi eylem veya Doğrulamalar sonunda kod oluşturur. İsterseniz, yeni eylemleri ve Doğrulamalar daha sonra eklemeniz mümkün olacaktır.
@@ -134,7 +134,7 @@ Kodlanmış UI test araçları ve şablonları erişmek için yüklemeniz **kodl
 
      UIMap.uitest açın. Bu dosya kodlanmış UI testi Burada, kaydettiğiniz eylemleri herhangi bir dizi Düzenle yanı sıra onayları Düzen Düzenleyicisi'nde açılır.
 
-     ![Kodlanmış UI Test Düzenleyicisi'ni](../test/media/cuit_editor_edit.png "CUIT_Editor_edit")
+     ![Kodlanmış UI Test Düzenleyicisi](../test/media/cuit_editor_edit.png)
 
      Daha fazla bilgi için bkz: [kodlanmış UI Test Düzenleyicisi'ni kullanarak düzenleme kodlanmış UI testlerini](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -164,20 +164,20 @@ Kullanabileceğiniz **kodlanmış UI Test oluşturucusunu** bir kullanıcı arab
 
 Onaylamaları için kullanıcı Arabirimi denetimlerini oluşturmak için seçin **eklemek onaylar** aracı kodlanmış UI Test derleyicisini ve doğrulamak istediğiniz test altındaki uygulama denetimine doğru sürükleyin. Denetim kutusu özetlenmektedir, fareyi bırakın. Denetim sınıfı kodu hemen oluşturulan `UIMap.Designer.cs` dosyası.
 
-![Kodlanmış UI testi öğesi hedefleme](../test/media/codedui_1.png "CodedUI_1")
+![Kodlanmış UI test hedefleme öğesi](../test/media/codedui_1.png)
 
 Bu denetim için özellikleri artık listelenen **eklemek onaylar** iletişim kutusu.
 
 Belirli bir denetim için gezinme başka bir yolu oku seçmektir **(<<)** görünümünü genişletmek için **UI denetim eşlemesi**. Bir üst, eşdüzey veya alt denetim bulmak için harita üzerinde herhangi bir yere tıklayın ve ağaç taşımak için ok tuşlarını kullanın.
 
-![Kodlanmış UI testi özellikleri](../test/media/codedui_2.png "CodedUI_2")
+![Kodlanmış UI testi özellikleri](../test/media/codedui_2.png)
 
 > [!TIP]
 > Uygulamanızda bir denetim seçin ya da denetim UI denetim eşlemesindeki görmüyorum herhangi bir özellik görmüyorsanız, denetimi uygulama kodunda benzersiz bir kimlik olduğunu doğrulayın. Benzersiz kimliği, bir HTML kimliği öznitelik veya bir WPF UId olabilir.
 
 Ardından, özelliği doğrulayın ve ardından istediğiniz UI denetimi için kısayol menüsünden açmak **onay Ekle**. İçinde **onay Ekle** iletişim kutusunda **karşılaştırıcı** örneğin değerinizi <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>ve değeri değerinizi içinde yazın **karşılaştırma değeri**.
 
-![Kodlanmış UI testi onaylar](../test/media/codedui_3.png "CodedUI_3")
+![Kodlanmış UI test onaylar](../test/media/codedui_3.png)
 
 Testiniz için tüm onayları eklendiğinde seçin **Tamam**.
 
@@ -198,7 +198,7 @@ Onayları kodunu oluşturmak ve denetimi UI eşlemesine eklemek için tercih **k
 
 - Adlı bir yöntem ekler `AssertForAddTwoNumbers` UI eşlemenize (UIMap.uitest). Bu dosya kodlanmış UI testi onaylar düzenleyebileceğiniz Düzenleyicisi'nde açılır.
 
-     ![Düzen assert kodlanmış UI Test Düzenleyicisi'ni kullanarak](../test/media/cuit_editor_assert.png "CUIT_Editor_assert")
+     ![Düzen assert kodlanmış UI Test Düzenleyicisi'ni kullanma](../test/media/cuit_editor_assert.png)
 
      Daha fazla bilgi için bkz: [kodlanmış UI Test Düzenleyicisi'ni kullanarak düzenleme kodlanmış UI testlerini](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -217,7 +217,7 @@ Seçmek istediğiniz denetim odağı kaybettiğinde ve kodlanmış UI Test Oluş
 
 Bazı durumlarda, denetimleri ekleme ve bunların özelliklerini doğrulayın, klavye kullanmanız gerekebilir. Örneğin, bir bağlam menüsü denetimi kullanan kodlanmış bir UI testi kaydetmeye çalıştığınızda denetiminde menü öğeleri listesi odak kaybeder ve kodlanmış UI Test oluşturucusunu ekleme onaylar Aracı'nı seçmek çalıştığınızda kaybolur. Bu, burada Internet Explorer'da bağlam menüsünde odağı kaybettiğinde ve ekleme onaylar aracıyla seçmeye çalışırsanız kaybolur aşağıdaki çizimde gösterilmiştir.
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")
+![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 UI denetim seçmek için klavyeyi kullanmak için Denetim fareyle üzerine gelerek. Ardından basılı **Ctrl** anahtarı ve **ı** aynı zamanda anahtar. Tuşları serbest bırakın. Denetim kodlanmış UT Test Oluşturucusu tarafından kaydedilir.
 
@@ -232,7 +232,7 @@ Bazı durumlarda, kullanılmakta olan belirli bir denetim kodlanmış bir UI tes
 
 Kodlanmış UI testi gerçekleştirdiğinizde, denetimin üzerine gelin. Tuşuna basın ve Ctrl, basılı klavyenizde kaydırma ve R tuşlarını basılı tutarak. Tuşları serbest bırakın. Fare vurgulu olay kodlanmış UT Test Oluşturucusu tarafından kaydedilir.
 
-![CodedUI&#95;vurgulu](../test/media/codedui_hover.png "CodedUI_Hover")
+![CodedUI&#95;getirin](../test/media/codedui_hover.png)
 
 Test yöntemi oluşturduktan sonra aşağıdaki örneğe benzer bir kod UIMap.Desinger.cs dosyasına eklenecek:
 

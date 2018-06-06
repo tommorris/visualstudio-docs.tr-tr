@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d25e93c0c5fefeae2d7891d458373d81d5ff370
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750889"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Nasıl yapılır: Microsoft Word Kullanılarak bir Yük Testi Başarım Raporunu El ile Oluşturma
 
@@ -45,7 +46,7 @@ Grafik görünümü ve kopyalayıp yapıştırarak Yük Test sonuçları Özet g
 
 2.  (İsteğe bağlı) Aşağıdaki çizimde gösterildiği gibi Microsoft Word belgesine kopyalamak istediğiniz belirli grafikte yakınlaştırma. Daha fazla bilgi için bkz: [nasıl yapılır: üzerinde grafiğin bir bölgesine yakınlaştırma yapma](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
-     ![Grafik görünümü yakınlaştırma denetimi](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![Grafik görünümü yakınlaştırma denetimi](../test/media/ltest_zoomcontrol.png)
 
 3.  Microsoft Word belgeniz kopyalamak istediğiniz grafik üzerinde sağ tıklatıp **kopya**.
 

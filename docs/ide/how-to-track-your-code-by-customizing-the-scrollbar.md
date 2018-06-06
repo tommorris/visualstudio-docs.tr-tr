@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745743"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Nasıl yapılır: scrollbar özelleştirerek kodunuzu izleme
 
@@ -33,11 +34,11 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
 
     İşte nasıl bir dize için bir arama sonra kaydırma çubuğu arar. Dizesinin tüm örnekleri görüntülendiğine dikkat edin.
 
-    ![Bir dize için arama sonra kaydırma çubuğu. ] (../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![Bir dize için arama sonra kaydırma çubuğu.](../ide/media/enhancedscrollbarsearch.png)
 
     Dizesinin tüm örnekleri değiştirildikten sonra kaydırma çubuğu aşağıdadır. İşlemi bazı sorunlara neden hemen görebilirsiniz.
 
-    ![Bir dize hatalarla değiştirildikten sonra scrollbar](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![Bir dize hatalarla değiştirildikten sonra kaydırma çubuğu](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Kaydırma çubuğu görüntü modu ayarlamak için
 
@@ -47,11 +48,11 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
 
     İşte eşleme modu açık olduğunda arama örnek nasıl göründüğünü ve genişliği ayarı **orta**:
 
-    ![Kaydırma çubuğu harita modunda](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![Harita modunda kaydırma çubuğu](../ide/media/enhancedscrollbar.png)
 
 2. İmleç kaydırma çubuğu yukarı ve Aşağı Taşı kodunun önizlemeleri etkinleştirmek için eşleme modu seçin **Göster önizleme araç ipucu** seçeneği. İşte bu şekilde görünür:
 
-    ![Kaydırma çubuğu araç ipucu ile](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![Bir araç ipucu ile kaydırma çubuğu](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     Davranış ve önizleme araç ipucu kaydırma eşleme modu tutmak istiyor, ancak kaynak kod genel bakış görmek istemiyorsanız, ayarlayabileceğiniz **kaynak genel bakış** için **devre dışı**.
 

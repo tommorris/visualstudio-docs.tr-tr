@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750977"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Nasıl yapılır: Yük Testi Sonuçlarında Grafiğin Bir Bölgesine Yakınlaştırma Yapma
 
@@ -39,7 +40,7 @@ Bir yük testi tamamladıktan sonra yakınlaştırma ve kaydırma grafiğin bir 
 > [!TIP]
 > Kullanabileceğiniz **Yatay Yakınlaştırma Denetimlerini Eşitle** otomatik yatay yakınlaştırma eşitlemesini açmak veya kapatmak geçiş yapmak için araç çubuğunda. Üzerinde hiçbir yakınlaştırma eşitleme ile uygulanan diğer grafikleri grafikler görünümünde olması grafik için de geçerlidir.
 
- ![Grafik görünümü yakınlaştırma denetimi](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") grafik görünümü yakınlaştırma denetimi
+ ![Grafik görünümü yakınlaştırma denetimi](../test/media/ltest_zoomcontrol.png) grafik görünümü yakınlaştırma denetimi
 
  Önceki çizimde, Test grafik altında sistem eşik sorunlarını araştırmak için seçeneğinde. Eşik ihlalleri kullanarak etkinleştirilmiş **Eşik İhlallerini Grafikte Göster** gelen **grafik seçenekleri** araç çubuğundaki açılan.
 

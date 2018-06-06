@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751611"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Bir yük testi senaryosunda test yinelemelerini yapılandırma
 
@@ -42,7 +43,7 @@ Değiştirmek için Yük Testi Düzenleyicisini kullanarak Çalıştırılacak t
 
  **En yüksek Test Yinelemeleri** özelliği çeşitli durumlar için yararlıdır. Bazı yükleme sınayıcıları yineleme tabanlı testleri, diğer yükleme sınayıcıları süre tabanlı testleri yürütün tercih ancak yürütün tercih edilir.
 
- ![Bir senaryosunda test yinelemelerini belirtme](../test/media/loadtest_prop.png "LoadTest_Prop")
+ ![Bir senaryosunda test yinelemelerini belirtme](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Yüksek test yinelemeleri sayısını belirtmek için
 

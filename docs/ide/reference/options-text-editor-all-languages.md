@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749235"
 ---
 # <a name="options-text-editor-all-languages"></a>Seçenekler, Metin Düzenleyici, Tüm Diller
 Bu iletişim kutusu, Kod Düzenleyicisi'nin varsayılan davranışı değiştirmenizi sağlar. Bu ayarlar üzerinde kod düzenleyicisinde, HTML Tasarımcısı kaynağı görünümü gibi temel diğer düzenleyiciler için de geçerlidir. Bu iletişim kutusunu açmak için seçin **seçenekleri** gelen **Araçları** menüsü. İçinde **metin düzenleyici** klasörünü genişletin **tüm diller** alt ve ardından **genel**.
@@ -70,7 +71,7 @@ Bu iletişim kutusu, Kod Düzenleyicisi'nin varsayılan davranışı değiştirm
 
  Seçili olduğunda, bir return ok göstergesi burada uzun bir satır ikinci bir satır sarmalar görüntülenir.
 
- ![LineBreakSymbol ekran görüntüsü](../../ide/reference/media/linebreak.gif "linebreak")
+ ![LineBreakSymbol ekran görüntüsü](../../ide/reference/media/linebreak.gif)
 
  Bu göstergeler görüntülememek tercih ediyorsanız bu seçeneği temizleyin.
 

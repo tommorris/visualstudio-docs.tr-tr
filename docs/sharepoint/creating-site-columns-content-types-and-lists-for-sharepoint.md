@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c1869f11d4202237d628ff3f15f73906822ec47
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692528"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764926"
 ---
-# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint için site sütunları, içerik türleri ve listeler oluşturma
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint için site sütunları, içerik türleri ve listeler oluşturma
   Visual Studio Proje öğesi şablonları dahil olmak üzere birçok farklı temel SharePoint öğeleri için sağlar *listeler* ve *içerik türlerine*, her ikisi de site sütunları dahil edebilirsiniz (veya  *alanları*). İçerik türleri ve listeler için yeni tasarımcıları bu öğelerin her zamankinden daha kolay oluşturma olun.  
   
 ## <a name="site-columns"></a>Site sütunları
  Site sütunları bir SharePoint projesine ekleyebileceğiniz en temel öğeleri biridir. Bir site sütunu, bir telefon numarası, açıklama veya bir kişinin bir kişi listesinde şehir adı gibi veri türünü temsil eder.  
   
- Yeni site sütunu proje öğesi şablonu oluşturma site sütunları Visual Studio'nun önceki sürümünde daha kolay hale getirir. Yeni bir site sütunu oluşturduktan sonra site sütunun Elements.xml dosyasındaki XML görünen adını, veri türünü ve site sütunu SharePoint'te görüntülenmesini istediğiniz grubu gibi istediğiniz bilgileri içerecek şekilde değiştirebilirsiniz. Site sütunları hakkında daha fazla bilgi için bkz: [sütunları giriş](http://go.microsoft.com/fwlink/?LinkId=224996).  
+ Yeni site sütunu proje öğesi şablonu oluşturma site sütunları Visual Studio'nun önceki sürümünde daha kolay hale getirir. Yeni bir site sütunu oluşturduktan sonra site sütunun XML'de değiştirebilirsiniz *Elements.xml* görünen adını, veri türünü ve site sütunu görünmesini istediğiniz Grup gibi istediğiniz bilgileri içeren dosya SharePoint. Site sütunları hakkında daha fazla bilgi için bkz: [sütunları giriş](http://go.microsoft.com/fwlink/?LinkId=224996).  
   
 ## <a name="content-types-and-lists"></a>İçerik türleri ve listeler
  İçerik türleri ve listeler arasında en sık kullanılan SharePoint öğelerdir.  

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3618c33c1d5dca9c676177cdce362b14b7f1858
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745584"
 ---
 # <a name="how-to-model-3d-terrain"></a>Nasıl yapılır: Model 3B Terrain
 
@@ -26,7 +27,7 @@ Bir 3B terrain ek yüzeyleri yapmak için bir düzlemi kümelere bölme ve ilgin
 
 İşlemi tamamladığınızda, model aşağıdaki gibi görünmelidir:
 
-![3&#45;terrain modelini gösteren D Sahne](../designers/media/digit-terrain-model.png "basamaklı Terrain modeli")
+![3&#45;terrain modelini gösteren D Sahne](../designers/media/digit-terrain-model.png)
 
 Başlamadan önce emin olun **özellikleri** penceresi ve **araç** görüntülenir.
 
@@ -52,7 +53,7 @@ Başlamadan önce emin olun **özellikleri** penceresi ve **araç** görüntüle
 
 Tam terrain modelidir. İşte son modeli yeniden uygulanan Phong gölgelendirme ile:
 
-![3&#45;terrain modelini gösteren D Sahne](../designers/media/digit-terrain-model.png "basamaklı Terrain modeli")
+![3&#45;terrain modelini gösteren D Sahne](../designers/media/digit-terrain-model.png)
 
 Açıklanan gradyan gölgelendirici etkisini göstermek için bu terrain modelini kullanabilirsiniz [nasıl yapılır: bir geometri tabanlı gradyan gölgelendirici oluşturma](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

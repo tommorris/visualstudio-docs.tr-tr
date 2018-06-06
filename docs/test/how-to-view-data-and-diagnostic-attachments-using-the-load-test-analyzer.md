@@ -10,21 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2bed9c90bb7562072c2f0855c361fc307227976d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751371"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Çözümleyicisi Kullanarak Verileri ve Tanılama Eklerini Görüntüleme
 
 Bir yük çalıştırılmadan önce test, kullanmak istediğiniz tanılama ve veri bağdaştırıcılarını belirten bir test ayarını seçebilirsiniz. Yük testi tamamlandıktan sonra sonuçlarını analiz ederken bu tanılama ve veri bağdaştırıcıları ayrıntılarını görüntülemek için Yük Testi Çözümleyicisi'ni kullanın. Veri ve tanılama bağdaştırıcısı ayrıntılarını görüntülemek için seçin **görünüm verileri ve tanılama eklerini** Yük Testi Çözümleyicisinin araç çubuğunda. Örneğin, yük testi test ortamında yapılandırılmış bir sistem bilgileri bağdaştırıcısına sahipse, yük testi çalıştırdığınızda, kullanılan makinenin sistem bilgileri görüntüleyebilirsiniz.
 
-![Tanılama veri bağdaştırıcısı ek iletişim seçme](../test/media/load_adapterdialog.png "Load_AdapterDialog")
+![Tanılama veri bağdaştırıcısı ek iletişim seçme](../test/media/load_adapterdialog.png)
 
 Test ayarında IntelliTrace bağdaştırıcısı içeren yük testi başka bir örnektir. IntelliTrace bağdaştırıcısı IntelliTrace Özet sayfasını açmanızı sağlar.
 
-![IntelliTrace Özet](../test/media/load_intellitrace.png "Load_IntelliTrace")
+![IntelliTrace özeti](../test/media/load_intellitrace.png)
 
 Daha fazla bilgi için bkz: [toplamak tanılama bilgileri Test ayarlarını kullanarak](../test/collect-diagnostic-information-using-test-settings.md) ve [toplamak IntelliTrace verilerini](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 

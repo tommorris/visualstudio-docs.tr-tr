@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750434"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual Studio çözümü oluşturun. Çözüm önemli bir parçası DslDefinition.dsl depolanan DSL tanımı diyagramıdır. DSL tanımı DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri ekleme, daha ayrıntılı DSL özelleştirmek için program kodunu ekleyebilirsiniz.
@@ -48,7 +49,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
 1.  Bir çözüm oluşturmak **etki alanına özgü dil** altında bulunan şablon **diğer proje türleri/genişletilebilirlik** içinde **yeni proje** iletişim kutusu.
 
-     ![Oluştur iletişim kutusu DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Oluştur DSL iletişim kutusu](../modeling/media/create_dsldialog.png)
 
      Tıkladığınızda **Tamam**, **etki alanına özgü dil Sihirbazı** açar ve şablon DSL çözümlerinin listesini görüntüler.
 
@@ -86,7 +87,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
  Kullanıcı arabirimi şimdi aşağıdaki resimde benzer.
 
- ![DSL Tasarımcısı](../modeling/media/dsl_designer.png "dsl_designer")
+ ![DSL Tasarımcısı](../modeling/media/dsl_designer.png)
 
  Bu çözüm, etki alanı belirli bir dil tanımlar. Daha fazla bilgi için bkz: [etki alanına özgü dil araçları kullanıcı arabirimi genel bakış](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -99,7 +100,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
  Bir çözüm çalıştırırsanız, gelen oluşturduğunuz **en az bir dil** şablonu, Deneysel, Visual Studio, aşağıdaki örnekte benzer:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  Araçları ile deneyin. Öğeleri oluşturmak ve bunları bağlayın.
 
@@ -139,11 +140,11 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
  Bu konudaki örnek olarak kullanılan DSL sınıflar ve ilişkiler parçası aşağıdaki şekilde gösterilmiştir.
 
- ![Katıştırma ve başvuru ilişkileri](../modeling/media/music_classes.png "Music_Classes")
+ ![Katıştırma ve başvuru ilişkileri](../modeling/media/music_classes.png)
 
  Sonraki şekilde, bu DSL örnek modelinin gösterilmiştir:
 
- ![Oluşturulan DSL örneği modelinin](../modeling/media/music_instance.png "Music_Instance")
+ ![Oluşturulan DSL örnek modeli](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  "Model" kullanıcıların oluşturmak ve genellikle bir diyagram görüntülenir, DSL örneği ifade eder. Bu konuda, hem DSL tanımı diyagramı hem de, DSL kullanıldığında görüntülenen modeli diyagramları anlatılmaktadır.
@@ -235,7 +236,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Bir sınıf diyagramında şekiller olarak görüntülenen öğelerin tanımlamak için
 
-1.  **Tanımlama ve açıklandığı gibi bir etki alanı sınıf test**[etki alanı sınıfları tanımlama](#classes) **.** 
+1.  **Tanımlama ve açıklandığı gibi bir etki alanı sınıf test**[etki alanı sınıfları tanımlama](#classes) **.**
 
     -   Üst sınıfın kök sınıf olmalıdır. Diğer bir deyişle, kök ve yeni etki alanı sınıf arasında katıştırma bir ilişki olmalıdır.
 
@@ -285,7 +286,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
     4.  Her oluşturma öğesi adının bir onay işareti görünür olduğundan emin olun.
 
-     ![Şekil eşlemeleri ve DSL ayrıntıları penceresini](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![Şekil eşlemeleri ve DSL Ayrıntıları penceresi](../modeling/media/dsldetailswindow.png)
 
 7.  **Etki alanı sınıfının öğeleri oluşturmak için bir araç kutusu öğesi olun.**
 
@@ -331,7 +332,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
  Örneğin, müzik albümlerini ve sanatçılar, Diyagram şekilleri olarak görüntülenmiyorsa, işe yaradığını albümleri Sanatçılar bağlantılar ArtistsAppearedOnAlbums adlı bir ilişki tanımlayabilirsiniz. Şekil örneğe bakın.
 
- ![Oluşturulan DSL örneği modelinin](../modeling/media/music_instance.png "Music_Instance")
+ ![Oluşturulan DSL örnek modeli](../modeling/media/music_instance.png)
 
  Başvuru ilişkileri Ayrıca aynı türdeki öğeleri bağlayabilirsiniz. Örneğin, Aile ağacı temsil eden bir DSL üst ve alt öğeleri arasındaki ilişki bir başvuru kişi başka bir kişi ilişkidir.
 
@@ -348,7 +349,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
  **İlişkinin verir yineleme özelliğini ayarlayın** aynı sınıfın birden fazla bağlantı modeli öğeleri aynı çifti arasında varsa. Örneğin, birden fazla aynı Öğrenci tabi öğretmeyi Öğretmen izin verebilir.
 
- ![Şekil eşlemeleri bağlayıcıların](../modeling/media/music_connector.png "Music_Connector")
+ ![Bağlayıcılar için Şekil eşlemeleri](../modeling/media/music_connector.png)
 
  Daha fazla bilgi için bkz: [etki alanı ilişkilerini özellikleri](../modeling/properties-of-domain-relationships.md) ve [etki alanı özellikleri rolleri](../modeling/properties-of-domain-roles.md).
 
@@ -411,11 +412,11 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 ##  <a name="compartments"></a> Listeleri içeren şekilleri tanımlama: Compartment şekiller
  Bir bölme şekil öğeleri bir veya daha fazla listesini içerir. Örneğin, Müzik Kitaplığı DSL müzik albümleri temsil etmek için bölme şekiller kullanabilirsiniz. Her albümü, şarkıya listesini yoktur.
 
- ![Şekil compartment](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![Bölme şekli](../modeling/media/compartmentshape.png)
 
  En basit yöntemi, bu etkiyi DSL tanımında elde kapsayıcı için bir etki alanı sınıf ve her bir listesi için bir etki alanı sınıfı tanımlar. Kapsayıcı sınıfı bölme şekle eşlenir.
 
- ![Şekil harita](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![Şekil eşleme](../modeling/media/music_mapcomp.png)
 
  Daha fazla bilgi için bkz: [bölme şekiller özellikleri](../modeling/properties-of-compartment-shapes.md).
 
@@ -505,7 +506,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak üzere bir şablondan bir Visual 
 
 7.  Dil Gezgini'ni açın. İçinde liste öğesi düğümlerle kapsayıcı düğümleri görebildiğini doğrulayın.
 
- ![Oluşturulan explorer'ın DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Oluşturulan explorer'ın DSL](../modeling/media/music_explorer.png)
 
  Bir bölme şekli ilk test ettikten sonra özelliklerini ayarlamanıza ve daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için bkz: [özelleştirme ve bir etki alanına özgü dil genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
 

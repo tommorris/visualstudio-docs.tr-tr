@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750486"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;Visual Studio 2017 yenilikler
 
@@ -57,7 +58,7 @@ Burada'nın bazı en önemli geliştirmeler ve Visual Studio 2017'teki yeni öze
 
 İş yükleri gerekir ve gerektiğinde bunları değiştirmek seçin.
 
- ![Visual Studio 2017 Kurulum iletişim](../install/media/install-visual-studio-enterprise.png "Visual Studio 2017 Kurulum Ekranı")
+ ![Visual Studio 2017 Kurulumu iletişim kutusu](../install/media/install-visual-studio-enterprise.png)
 
 Ve yüklemenizi çok ince ayar yapmak için seçenekler var:
 
@@ -89,7 +90,7 @@ Yeni Visual Studio performans merkezi IDE başlatma süresini en iyi hale getirm
 
 Visual Studio uzantılarını taşıma (ve üçüncü taraf uzantıları ile çok çalışma) isteğe bağlı yükleme böylece yerine IDE başlangıçta. Hangi uzantıları etkisi başlangıç, çözüm yük ve yazma performansını merak ediyor? Bu bilgileri görebilirsiniz **yardımcı** > **yönetmek Visual Studio performans**.
 
-  ![Visual Studio 2017 Seçenekleri iletişim kutusunda](../ide/media/vs2017ide-manage-vs-perf.png "Visual Studio Yardım iletişim kutusu - performans yönetimi")
+  ![Visual Studio 2017'te Seçenekler iletişim kutusu](../ide/media/vs2017ide-manage-vs-perf.png)
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Uzantılarınızın gezici uzantıları Yöneticisi ile yönetme
 
@@ -97,19 +98,19 @@ Visual Studio'da oturum açtığınızda sık kullandığınız uzantılarla her
 
 Visual Studio'da uzantılarınızın listesini görmek için tıklatın **Araçları** > **uzantıları & güncelleştirmeleri**ve ardından **gezici Uzantı Yöneticisi**.
 
-![Visual Studio 2017 - Uzantılar ve güncelleştirmeler iletişim](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - Araçlar > Uzantılar ve güncelleştirmeler iletişim")
+![Visual Studio 2017 - Uzantılar ve güncelleştirmeler iletişim](../ide/media/vs2017ide-extensions-and-updates.png)
 
 Uzantı dolaşımı Yöneticisi'ni yüklediğiniz tüm uzantıları izler, ancak Dolaşım listenize eklemek istediğiniz hangilerinin seçebilirsiniz.
 
-![Visual Studio 2017 - Uzantılar ve güncelleştirmeler iletişim](../ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 - gezici Uzantı Yöneticisi")
+![Visual Studio 2017 - Uzantılar ve güncelleştirmeler iletişim](../ide/media/vs2017ide-RoamingExtensionManager.png)
 
 Uzantı dolaşımı Yöneticisi'ni kullandığınızda, listenizde üç simge türü vardır:
 
-* ![Dolaşıma açıldı simgesi](../ide/media/vs2017ide-roamedicon.png "çıkan simgesi") ***dolaşıma açıldı***: Bu gezici liste parçası, ancak makinenize yüklü olan uzantı.
+* ![Dolaşıma açıldı simgesi](../ide/media/vs2017ide-roamedicon.png) ***dolaşıma açıldı***: Bu gezici liste parçası, ancak makinenize yüklü olan uzantı.
   (Bu kullanarak yükleyebileceğiniz **karşıdan** düğmesini.)
-* ![Dolaşıma açıldı ve yüklendi simgesi](../ide/media/vs2017ide-roamedinstalledicon.png "dolaşıma açıldı ve yüklü simgesi") ***çıkan & yüklü***: Bu gezici liste parçası ve geliştirme ortamınızda yüklü olan tüm uzantıları.
+* ![Dolaşıma açıldı ve yüklendi simgesi](../ide/media/vs2017ide-roamedinstalledicon.png) ***çıkan & yüklü***: Bu gezici liste parçası ve geliştirme ortamınızda yüklü olan tüm uzantıları.
   (Dolaşımda istemiyorsanız karar verirseniz, bunları kullanarak kaldırabilirsiniz **dolaşımı Durdur** düğmesini.)
-* ![Yüklü simgesi](../ide/media/vs2017ide-installedicon.png "yüklü simgesi") ***yüklü***: Bu ortamda yüklü, ancak Dolaşım listenize parçası olmayan tüm uzantıları.
+* ![Yüklü simgesi](../ide/media/vs2017ide-installedicon.png) ***yüklü***: Bu ortamda yüklü, ancak Dolaşım listenize parçası olmayan tüm uzantıları.
   (Uzantıları kullanarak gezici listeye eklemek için **Başlat gezici** düğmesini.)
 
 Oturum sırasında karşıdan uzantısı listenize eklenir **çıkan & yüklü**. Uzantı buna herhangi makineden erişmenizi Dolaşım listenize bir parçası olur.
@@ -118,7 +119,7 @@ Oturum sırasında karşıdan uzantısı listenize eklenir **çıkan & yüklü**
 
 Visual Studio Enterprise 2017 birim testi kodlama ederken birim test sonuçlarını ve kod kapsamı Düzenleyicisi'nde yaşadığınız verir dinamik. .NET Framework ve .NET Core için C# ve Visual Basic projeleri ile çalışır ve üç test çerçevelerini mstest'i, xUnit ve NUnit destekler.
 
-![Canlı birim testi](../ide/media/lut-codewindow.png "Visual Studio Enterprise sürümü yeni dinamik birim testi özelliği örneği")
+![Live Unit Testing](../ide/media/lut-codewindow.png)
 
 Daha fazla bilgi için bkz: [Tanıtımı Canlı birim testi](../test/live-unit-testing-intro.md). Visual Studio Enterprise 2017 her sürümde eklenen yeni özellikler listesi için bkz: [birim testine Canlı yenilikler](../test/live-unit-testing-whats-new.md).
 
@@ -153,27 +154,27 @@ Daha fazla bilgi için bkz: [hızlı Eylemler](../ide/common-quick-actions.md).
 
 Visual Studio'da bir proje ile çalışırken, size ayarlayabilir ve hızlı bir şekilde tamamlama ve kodunuz için bir Git hizmet yayımlama. Git depoları sağ alt köşesinde IDE içinde menü tıklatmaların düğmelerini kullanarak da yönetebilirsiniz.
 
-![Visual Studio 2017 Git iletişim kutusu ile etkileşime giren](../ide/media/vsIDE-GitInteraction.png "Git araçları Visual Studio IDE içinde")
+![Visual Studio 2017 Git iletişim kutusu ile etkileşime girer](../ide/media/vsIDE-GitInteraction.png)
 
 #### <a name="experience-improved-navigation-controls"></a>Geliştirilmiş Gezinti denetimlerinin deneyimi
 
 Biz A'dan B büyük güvenle ve daha az karışıklıkları yardımcı olmak için gezinme deneyimi yenilenir.
 
-* **15.4 yeni**: **Tanıma Git** (**Ctrl**+**tıklatın** veya **F12**) &ndash; fare kullanıcılar üye tanımına tuşlarına basarak gitmek için daha kolay bir yolu olması **Ctrl** üye'ye tıklayın. Tuşuna basarak **Ctrl** ve kod simgesinin getirildiğinde, altı çizili ve bir bağlantıya açın. Bkz: [Tanıma Git ve Peek tanımı](../ide/go-to-and-peek-definition.md) daha fazla bilgi için.  
+* **15.4 yeni**: **Tanıma Git** (**Ctrl**+**tıklatın** veya **F12**) &ndash; fare kullanıcılar üye tanımına tuşlarına basarak gitmek için daha kolay bir yolu olması **Ctrl** üye'ye tıklayın. Tuşuna basarak **Ctrl** ve kod simgesinin getirildiğinde, altı çizili ve bir bağlantıya açın. Bkz: [Tanıma Git ve Peek tanımı](../ide/go-to-and-peek-definition.md) daha fazla bilgi için.
 
 * **Uygulama Git** (**Ctrl**+**F12**) &ndash; çeşitli uygulamaları herhangi bir temel tür veya üye gidin.
 
 * **Tüm gidin** (**Ctrl**+**T** veya **Ctrl**+**,**) &ndash; gidin doğrudan herhangi dosya/tür/üye/simgesi bildirimine. Sonuç listesini filtrelemek veya sorgu sözdizimini (örneğin, "f searchTerm" dosyalar için.), "t searchTerm" türleri, vb. için kullanın.
 
-  ![Tüm Git geliştirilmiş](../ide/media/vs2017ide-navigation-go-to.png "geliştirilmiş tüm Git özelliği örneği")
+  ![Tüm geliştirilmiş Git](../ide/media/vs2017ide-navigation-go-to.png)
 
 * **Tüm başvuruları Bul** (**Shift**+**F12**) &ndash; ile söz dizimi renklendirme, proje, tanımı, bir bileşimiyle tüm başvurusu Bul sonuçları gruplandırabilirsiniz ve yolu. "Özgün sonuçlarınızı kaybetmeden başvuruları bulmak devam edebilmesi için bu da sonuçları kilitleyebilirsiniz".
 
-  ![Yeni tüm başvuruları Bul aracı](../ide/media/vs2017ide-find-all-references.png "yeni tüm başvuruları Bul aracı örneği")
+  ![Yeni tüm başvuruları Bul aracı](../ide/media/vs2017ide-find-all-references.png)
 
-* **Yapı Görselleştirici** &ndash; noktalı gri dikey çizgileri (Girinti kılavuzları) bilinen yerler Çerçevenizi görünümünün bağlamına sağlamak için kod görevi görür. Bunları popüler üretkenlik Güç Araçları'ndan algılayabilir. Görselleştirme ve hangi kod bloğunun herhangi bir zamanda kaydırma yapmak zorunda kalmadan açtınız bulmak için bunları kullanabilirsiniz. Çizgilerin getirildiğinde, engelleme ve üst öğelerinden açılmasını gösteren bir araç ipucu görüntüler. TextMate aynı yanı sıra C#, Visual Basic ve XAML desteklenen tüm dillerde kullanılabilir.  
+* **Yapı Görselleştirici** &ndash; noktalı gri dikey çizgileri (Girinti kılavuzları) bilinen yerler Çerçevenizi görünümünün bağlamına sağlamak için kod görevi görür. Bunları popüler üretkenlik Güç Araçları'ndan algılayabilir. Görselleştirme ve hangi kod bloğunun herhangi bir zamanda kaydırma yapmak zorunda kalmadan açtınız bulmak için bunları kullanabilirsiniz. Çizgilerin getirildiğinde, engelleme ve üst öğelerinden açılmasını gösteren bir araç ipucu görüntüler. TextMate aynı yanı sıra C#, Visual Basic ve XAML desteklenen tüm dillerde kullanılabilir.
 
-  ![Visual Studio 2017 yapısı Görselleştirici](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio'da yapısı Görselleştirici")
+  ![Visual Studio 2017 yapısı Görselleştirici](../ide/media/vsIDE-StructureVisualizer.png)
 
 Yeni verimlilik özellikleri hakkında daha fazla bilgi için bkz: [Visual Studio 2017 üretkenlik](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) blog gönderisi işareti Wilson-Thomas'tarafından.
 
@@ -191,13 +192,13 @@ Tüm Ayrıntılar için bkz: [Visual 2017'de Visual C++ yenilikleri](/cpp/top/wh
 
 Şimdi, daha kolay devam istediğiniz satıra durdurmak için kesme noktası ayarlama olmadan hata ayıklama sırasında atlayabilirsiniz. Hata ayıklayıcıda durduğunda, yalnızca kod satırı yanındaki görünür simgesine tıklayın. Kodunuzu çalıştırmak ve söz konusu satıra kod yolunda isabet sonraki açışınızda durdurun.
 
-![Visual Studio 2017 hata ayıklama - için Çalıştır'ı tıklatın](../ide/media/vs2017ide-RunToClick.png "için Çalıştır Visual Studio hata ayıklama ve tanılama")
+![Visual Studio 2017 hata ayıklama - için Çalıştır'ı tıklatın](../ide/media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>Yeni özel durum Yardımcısı
 
 Yeni özel durum Yardımcısı, özel durum bilgileri bir bakışta görmenize yardımcı olur. Bilgiler, iç özel durumlara anında erişim compact formda sunulur. NullReferenceException Tanılama, şu özel durum Yardımcısı içinde boştu hızlı şekilde görebilirsiniz.
 
-![Visual Studio'da yeni özel durum Yardımcısı iletişim kutusu](../ide/media/vs2017ide-ExceptionHelper.png "yeni özel durum Yardımcısı iletişim kutusu")
+![Visual Studio'da yeni özel durum Yardımcısı iletişim kutusu](../ide/media/vs2017ide-ExceptionHelper.png)
 
 Daha fazla bilgi için bkz: [Visual Studio'da yeni özel durum Yardımcısı kullanın](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blog postası.
 
@@ -247,7 +248,7 @@ Daha fazla bilgi için bkz: [Debug snappoints ve logpoints kullanarak canlı ASP
 
 Evrensel Windows Platformu (UWP), Windows 10 için uygulama platformudur. Tek bir API kümesi, bir uygulama paketi ve tüm Windows 10 cihazlara ulaşmak için bir depolama için UWP uygulamaları geliştirebilirsiniz &ndash; PC, tablet, telefon, Xbox, HoloLens, Surface Hub ve daha fazlası. UWP farklı ekran boyutlarına ve etkileşim modeller, çeşitli yoksa dokunma, fare ve klavye, bir oyun denetleyicisi veya kalem mı destekler. UWP uygulamaları özünde kullanıcı deneyimlerini tüm cihazlarıyla mobil olmasını istediğiniz ve cihaz ne olursa olsun elinizdeki için en uygun üretken mı kullanmak istediğinizden emin olur.
 
- ![Evrensel Windows platformu](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+ ![Evrensel Windows Platformu](../cross-platform/media/uwp_coreextensions.png)
 
 Tercih edilen geliştirme dilini seçin&mdash;C#, Visual Basic, C++ ya da JavaScript&mdash;Windows 10 cihazlar için evrensel Windows platformu uygulamasını oluşturmak için. Visual Studio 2017 tüm cihazlar için tek bir proje oluşturmanıza olanak sağlayan her dil için bir UWP uygulaması şablonu sağlar. İş tamamlandığında, bir uygulama paketi oluşturabilir ve herhangi bir Windows 10 cihaz müşterilere uygulamanızı ulaşmak için Visual Studio içinde Microsoft Store gönderebilirsiniz.
 
@@ -270,7 +271,7 @@ Daha fazla bilgi için bkz: [Visual Studio ve Xamarin](../cross-platform/visual-
 
 **15.3 yeni**: iOS geliştirme gereksinimleriniz için tek başına bir yetkilendirmeler Düzenleyicisi ekledik. Kolayca gözatılabilir kullanıcı dostu bir kullanıcı Arabirimi içerir. Başlatmak için çift tıklayın, *entitlements.plist* dosya.
 
-![Xamarin için yetkilendirme Düzenleyicisi](../ide/media/xamarin-entitlements-editor.png "Xamarin için yetkilendirme Düzenleyicisi")
+![Xamarin için yetkilendirme Düzenleyicisi](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Xamarin için Visual Studio Araçları
 
@@ -309,9 +310,9 @@ Daha fazla bilgi için bkz: [Redgate veri araçlarını Visual Studio 2017](http
 
 .NET Core platform yönetilen derleyicileri, çalışma zamanı, temel sınıf kitaplıkları ve ASP.NET Core gibi çok sayıda uygulama modelleri dahil birçok bileşenin yapılır. .NET core üç ana işletim sistemlerini destekliyor: Windows, Linux ve macOS. Cihaz, Bulut ve katıştırılmış IOT senaryolarını .NET Core kullanabilirsiniz.
 
-Ve şimdi Docker destek içerir.  
+Ve şimdi Docker destek içerir.
 
-**15.3 yeni**: Visual Studio 2017 sürüm 15.3 .NET Core 2.0 geliştirme destekler. .NET Core 2.0 kullanarak .NET Core 2.0 SDK'sı ayrı olarak yükleyip gerektirir.  
+**15.3 yeni**: Visual Studio 2017 sürüm 15.3 .NET Core 2.0 geliştirme destekler. .NET Core 2.0 kullanarak .NET Core 2.0 SDK'sı ayrı olarak yükleyip gerektirir.
 
 Daha fazla bilgi için bkz: [.NET Core Kılavuzu](/dotnet/core/index) sayfası.
 

@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751877"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL test etme
 
@@ -31,11 +32,11 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 3.  Proje adı `RooterLibTests`; konumu belirtin; çözüm adı `RooterLib`; ve emin olun **çözüm için dizin oluştur** denetlenir.
 
-     ![Çözüm ve proje adını ve konumunu belirtin](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Çözüm ve proje adı ve konumu belirtin](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  Yeni projede açmak **unittest1.cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![UnitTest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Aşağıdakilere dikkat edin:
 
@@ -64,13 +65,13 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
      Test projesi oluşturur ve çalıştırır. Test Gezgini penceresi görünür ve test altında listelenen **testleri geçti**. Pencerenin altındaki Özet bölmesinde seçilen testi hakkında ek ayrıntılar sağlar.
 
-     ![Test Gezgini](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Test Gezgini](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> DLL projesi ekleyin
 
 1.  Çözüm Gezgini'nde, çözüm adı seçin. Kısayol menüsünden **Ekle**ve ardından **Yeni Proje Ekle**.
 
-     ![RooterLib projesi oluşturma](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![RooterLib projesi oluşturma](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  İçinde **Yeni Proje Ekle** iletişim kutusunda, seçin **DLL (UWP uygulamaları)**.
 
@@ -104,7 +105,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
     1.  Çözüm Gezgini'nde seçin **RooterLib** proje ve ardından **özellikleri** kısayol menüsünden.
 
-         ![Önişlemci sembolü tanımını ekleyin](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Önişlemci sembolü tanımını ekleyin](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  RooterLib özellik sayfası iletişim kutusunda genişletin **yapılandırma özellikleri**, genişletin **C++** ve **önişlemci**.
 
@@ -175,7 +176,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 5.  Test Gezgini seçin **tümünü Çalıştır**.
 
-     ![Geçirilen temel Test](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Temel sınaması başarılı oldu](../test/media/ute_cpp_testexplorer_basictest.png)
 
  Test ve kod projeleri ayarlayabilir ve kod projesinde işlevlerini Çalıştırma testleri çalıştırabilirsiniz doğrulandı. Şimdi, gerçek testleri ve kod yazmaya başlayabilirsiniz.
 
@@ -206,7 +207,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 3.  Sınama başarısız olur.
 
-     ![RangeTest başarısız](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest başarısız](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Hemen yazdıktan sonra her bir test başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay hata önlemenize yardımcı olur.
@@ -278,7 +279,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
      Sınama başarısız olur. Test adı Test Explorer'da seçin. Başarısız onaylama vurgulanır. Hata iletisi Test Gezgini ayrıntı bölmesinde görünür olur.
 
-     ![Başarısız NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests başarısız oldu](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  Neden sınama başarısız görmek için işleviyle adım:
 
@@ -308,7 +309,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
  Tüm testler şimdi geçirin.
 
- ![Tüm sınamaları geçmesi](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![Tüm sınamaları geçmesi](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Testleri değiştirmeden kodu yeniden düzenleyin
 

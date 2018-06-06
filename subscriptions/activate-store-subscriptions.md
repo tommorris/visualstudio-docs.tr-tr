@@ -13,7 +13,7 @@ ms.openlocfilehash: 751f2fb7931c2081be8c146b6bc3959cc60c2a85
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34477281"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Microsoft Store alınan abonelik nasıl etkinleştirilsin mi?

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766265"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Öğretici: Visual Studio kullanarak hata ayıklama öğrenin
 
@@ -39,6 +40,14 @@ Bu öğreticide şunları yapacaksınız:
 > * Veri ipuçları ve hata ayıklayıcı windows değişkenler inceleyin.
 > * Çağrı yığını inceleyin
 > * Özel durum Yardımcısını kullanma
+
+## <a name="prerequisites"></a>Önkoşullar
+
+* Visual Studio 2017 yüklü olması gerekir ve. **NET masaüstü geliştirme** iş yükü.
+
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
+    İş yükü yüklenir ancak tıklatın Visual Studio zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio yükleyicisi başlatır. ' I seçin. **NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
 ## <a name="start-the-debugger"></a>Hata ayıklayıcı başlayın!
 

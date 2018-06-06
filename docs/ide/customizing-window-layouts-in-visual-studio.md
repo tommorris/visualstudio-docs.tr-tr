@@ -25,11 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2cd35623f1c90dbfa47204d901fdaa48340fc5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746851"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Visual Studio'da pencere düzenlerini özelleştirme
 
@@ -94,23 +95,23 @@ En son sabitlenmiş konumuna araç penceresi ya da belge penceresine dönmek iç
 
 Aşağıdaki çizimde, yalnızca düzenleme çerçevesinde yerleşik belge pencereleri kılavuz elmas gösterir:
 
-![Belge penceresi kılavuz elmas](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
+![Belge penceresi kılavuz elmas](../ide/media/documentwindowguidediamonds.png)
 
 Araç Pencereleri IDE veya düzenleme çerçevesinde çerçevesinin bir tarafa tutturulabilir. Araç penceresi kolayca penceresini yeniden yerleştirme yardımcı olmak üzere başka bir konuma sürüklediğinizde kılavuz elmas görünür.
 
 Araç pencereleri için kılavuz elmas
 
-![Araç penceresi Kılavuzu Karo](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+![Araç penceresi Kılavuzu Karo](../ide/media/vs10guidediamond.png)
 
 Aşağıdaki çizimde gösterildiği **Çözüm Gezgini** mavi gölgeli alana göre gösterilen yeni bir konumda yerleştirildi:
 
-![Çözüm Gezgini'nde yeni bir konuma yerleştirme](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")
+![Çözüm Gezgini'nde yeni bir konuma yerleştirme](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Kapatın ve araç pencereleri otomatik gizleme
 
 Araç penceresi tıklayarak kapatabilirsiniz **X** pencere yeniden açmak için sağ başlık çubuğunda; üst içinde kendi klavye kısayol veya menü komutunu kullanın. Araç pencereleri destek adlı bir özellik *Otomatik Gizle*, farklı bir pencere kullandığınızda göz önünden kaydırarak açmak bir pencere neden olur. Bir pencere otomatik gizli olduğunda adını IDE kenarında sekmesinde görüntülenir. Pencereyi yeniden kullanmak için böylece penceresi slayt görünüme geri sekmesine gelin.
 
-![Otomatik Gizle](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")
+![Otomatik Gizle](../ide/media/vs2015_auto_hide.png)
 
 > [!NOTE]
 > Aracını kullanarak Otomatik Gizle çalışan ayarlanacağını windows ayrı ayrı veya sabitlenmiş gruplar halinde seçin veya temizleyin **otomatik gizle düğmesi, yalnızca active aracı windows etkiler** içinde **seçenekleri** iletişim kutusu. Daha fazla bilgi için bkz: [genel, ortam, Seçenekler iletişim kutusu](../ide/reference/general-environment-options-dialog-box.md).
@@ -167,7 +168,7 @@ Visual Studio, en fazla 10 özel pencere düzenlerini kaydetmek ve kolayca arala
 
 Düzenleri arasında geçiş yapmak için klavye kısayollarını kullanın veya ana menüden **penceresi** > **pencere düzenini Uygula**.
 
-![Uygula penceresi Düzen menüsü](../ide/media/vs2015_applywindowlayout.png "VS2017_ApplyWindowLayout")
+![Uygula penceresi Düzen menüsü](../ide/media/vs2015_applywindowlayout.png)
 
 UI düzeni uyguladıktan sonra düzenleme modunda hem hata ayıklama modunda düzenini nasıl korunur unutmayın.
 
@@ -180,7 +181,7 @@ UI düzeni uyguladıktan sonra düzenleme modunda hem hata ayıklama modunda dü
 
 Kaldırabilir, yeniden adlandırmak veya seçerek özel düzeninizi yeniden sıralamak **penceresi** > **yönetmek pencere düzenlerini**. Bir düzen taşırsanız, anahtar bağlama listenin yeni konumda yansıtacak şekilde otomatik olarak düzeltilir. Değişiklik bağlamaları aksi olamaz ve bu nedenle aynı anda en fazla 10 düzenleri depolayabilirsiniz.
 
-![Pencere düzenlerini yönetmek](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+![Pencere düzenlerini yönetme](../ide/media/managewindowlayouts.png)
 
 Kendinize anımsatmak hangi klavye kısayol hangi düzenin atandığı, seçin **penceresi** > **pencere düzenini Uygula**.
 

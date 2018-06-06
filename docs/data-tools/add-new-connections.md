@@ -9,11 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5ea053e6b3f448311118b733c30b9ade5160288d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747098"
 ---
 # <a name="add-new-connections"></a>Yeni bağlantı ekleme
 
@@ -35,23 +36,23 @@ Bir veritabanı veya hizmet bağlantınızı test ve veritabanı içeriklerini v
 
 Veritabanına bir bağlantı oluşturmak için tıklatın **Bağlantı Ekle** simgesine **Sunucu Gezgini**, veya sağ **Sunucu Gezgini** üzerinde **veri Bağlantıları** düğümü ve select **Bağlantı Ekle**. Buradan, başka bir sunucuda, bir SharePoint hizmeti veya bir Azure hizmeti bir veritabanına bağlanabilir.
 
-![Sunucu Gezgini yeni bağlantı simgesi](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata Sunucu Gezgini yeni bağlantı simgesi")
+![Sunucu Gezgini yeni bağlantı simgesi](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
 Bu işlem sonrasında **Bağlantı Ekle** iletişim kutusu. Burada, biz SQL Server yerel veritabanı örneğinin adı girdiniz.
 
-![Yeni bağlantı ekleme](../data-tools/media/raddata-add-new-connection-dialog.png "raddata Ekle yeni bağlantı iletişim kutusu")
+![Yeni bağlantı ekleme](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Sağlayıcı değiştirme
 
 Veri kaynağı istemezsiniz ise, tıklatın **değişiklik** düğmesi yeni bir veri kaynağı ve/veya yeni bir ADO.NET veri sağlayıcı seçin. Yeni sağlayıcıyı nasıl yapılandırdığınıza bağlı olarak, kimlik bilgilerini isteyebilir.
 
-![Değiştirme AD0.NET veri sağlayıcısı](../data-tools/media/raddata-change-ad0.net-data-provider.png "raddata değişiklik AD0.NET veri sağlayıcısı")
+![Değişiklik AD0.NET veri sağlayıcısı](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>Bağlantıyı sınayın
 
 Veri kaynağını seçtikten sonra tıklatın **Bağlantıyı Sına**. İşlemi başarılı değil, sorun giderme satıcısının belgelerine göre yapmanız gerekir.
 
-![Bağlantı sınama](../data-tools/media/raddata-test-connection.png "raddata Bağlantıyı Sına")
+![Bağlantıyı Sına](../data-tools/media/raddata-test-connection.png)
 
 Test başarılı olursa, oluşturmak için hazır bir *veri kaynağı*, gerçekten anlamına gelir bir Visual Studio terimi olduğu bir *veri modeli* temel alınan veritabanı veya hizmet tabanlı.
 

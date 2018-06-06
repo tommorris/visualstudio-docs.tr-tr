@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 508ba3cd803aee877e022d447f061e6e3d495e51
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97e2e745b59a22110f6392e2cd6fec1aea0a667a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750239"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Pek çok çekirdek örneği
 |||  
@@ -33,12 +34,12 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Sebep  
  Uygulama için toplanan çağrı yığını örnekleri önemli bir kısmının çekirdek modunda yürütülüyor. Farklı bir profil oluşturma yöntemi kullanarak uygulamanızı profil göz önünde bulundurun.  
   
-## <a name="rule-description"></a>Kural Tanımı  
- Windows, çekirdek modu veya kullanıcı modunda kod çalıştırılabilir. (Çekirdek modu da ayrıcalıklı modu olarak adlandırılır.) Bir aygıt sürücüleri gibi alt düzey sistem kodu yalnızca çekirdek modunda çalışır. Bir kullanıcı modu uygulaması için iş parçacığı veya işlem eşitleme temelleri bekleyin ya da sistem çağrıları yapmak için g/ç işlemleri gerçekleştirmek için çekirdek moduna geçiş yapabilir.  
+## <a name="rule-description"></a>Kural açıklaması  
+ Windows, çekirdek modu veya kullanıcı modunda kod çalıştırılabilir. (Çekirdek modu da ayrıcalıklı modu olarak adlandırılır.) Bir aygıt sürücüsü gibi alt düzey sistem kodu yalnızca çekirdek modunda çalışır. Bir kullanıcı modu uygulaması için iş parçacığı veya işlem eşitleme temelleri bekleyin ya da sistem çağrıları yapmak için g/ç işlemleri gerçekleştirmek için çekirdek moduna geçiş yapabilir.  
   
  Profil oluşturma çoğu kullanıcı modunda çalışarak zamanlarının harcamanız uygulamaları örnekleme en etkilidir. Uygulama çekirdek modunda yürütülürken toplanan örnek sayısını sık g/ç işlemleri belirtebilir veya anahtarları oluşan bu bağlamı gösterebilir. Bu işlemlerin hiçbiri örnekleme yöntemini kullanarak araştırılması. Çok fazla sayıda çekirdek modu örneği alınır, örnekleme verileri istatistiksel olarak önemli olacak yeterli kullanıcı modu örnek içerebilir.  
   
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
+## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl  
  Aşağıdaki seçeneklerden birini kullanarak yeniden uygulamanız profil göz önünde bulundurun:  
   
 -   İzleme metodunu kullanarak profil.  

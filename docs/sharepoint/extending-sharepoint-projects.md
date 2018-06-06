@@ -17,32 +17,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 622596249e92d73dd4f504a445d43405847e9629
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab99253efbef61a3a041f261e44e8944bc7d6024
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764159"
 ---
-# <a name="extending-sharepoint-projects"></a>SharePoint Projelerini Genişletme
+# <a name="extend-sharepoint-projects"></a>SharePoint projeleri genişletme
   SharePoint projeleri proje düzeyi özelliklerini özelleştirmek istediğiniz zaman bir proje uzantısı oluşturma. Örneğin, özel Proje özelliklerini eklemek ya da kullanıcı bir SharePoint çözüm Visual Studio'da geliştirir başlatılan proje düzeyi olaylara yanıt.  
   
-## <a name="creating-project-extensions"></a>Proje uzantıları oluşturma  
+## <a name="create-project-extensions"></a>Proje uzantıları oluşturma
  Bir proje öğesi genişletmek için uygulayan bir Visual Studio uzantısı derleme <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> arabirimi. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
  Bir proje uzantısı oluşturduğunuzda, SharePoint projelerine aşağıdaki işlevler de ekleyebilirsiniz:  
   
--   Bir kısayol menü öğesi ekleyin. Bir SharePoint proje düğümünde için kısayol menüsünü açtığınızda menü öğesi görünür **Çözüm Gezgini** düğümünü sağ tıklayarak veya seçmeden ve SHIFT + F10 seçme anahtarları. Daha fazla bilgi için bkz: [nasıl yapılır: bir kısayol menü öğesini SharePoint projelerine ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).  
+-   Bir kısayol menü öğesi ekleyin. Bir SharePoint proje düğümünde için kısayol menüsünü açtığınızda menü öğesi görünür **Çözüm Gezgini** düğümünü sağ tıklayarak veya seçmeden ve ardından seçme **Shift** +  **F10** anahtarları. Daha fazla bilgi için bkz: [nasıl yapılır: bir kısayol menü öğesini SharePoint projelerine ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).  
   
 -   Bir özel özellik ekleyin. Özellik görünür **özellikleri** bir SharePoint Proje seçtiğinizde penceresi **Çözüm Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
   
  Oluşturma, dağıtma ve bir proje uzantısı test izlenecek yol için bkz: [izlenecek yol: bir SharePoint proje uzantısı oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).  
   
-## <a name="understanding-the-relationship-between-project-extensions-and-project-instances"></a>Proje uzantıları ve proje Örnekler arasındaki ilişkiyi anlama  
+## <a name="understand-the-relationship-between-project-extensions-and-project-instances"></a>Proje uzantıları ve proje Örnekler arasındaki ilişkiyi anlama
  Bir proje uzantısı oluşturma, herhangi bir SharePoint proje türünü açıldığında uzantıyı yükler [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Liste tanımları, içerik türleri ve Olay alıcıları gibi birkaç SharePoint proje şablonları içerir. Ancak, yalnızca bir SharePoint proje türü yok. Görüntülenen Proje türleri **yeni proje** iletişim kutusu, yalnızca bir veya daha fazla SharePoint Proje öğeleri birlikte paketini şablonlardır. Yalnızca bir SharePoint proje türü olduğundan, bir proje için oluşturulmuş uzantıları tüm SharePoint projeler için geçerlidir. Örneğin, yalnızca geçerli uzantı oluşturamazsınız bir **içerik türü** projesi.  
   
  Belirli bir proje örneğine erişmek için aşağıdakilerden birini ele <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> olayları *projectService* parametresi uygulamanızda <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> yöntemi. Örneğin, bir SharePoint projesine bir çözüme eklendiğinde belirlemek için tanıtıcı <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> olay. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Nasıl yapılır: bir kısayol menü öğesini SharePoint projelerine ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [Nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   

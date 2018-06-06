@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751348"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Yük testindeki bilgisayarlar için sayaç kümelerini ve eşik kurallarını belirtin
 
@@ -51,7 +52,7 @@ Sayaç verileri sunucusunda ve herhangi bir bilgisayarda test çalıştırdığ�
 
 Üç sayaç kategorisi vardır: yüzdeleri, sayıları ve ortalamalar. Bazı örnekler % CPU kullanımı, SQL Server kilidi sayar ve Saniyedeki IIS istekleri ' dir.
 
-![Yük Testi Sayaç kümeleri](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Yük Testi Sayaç kümeleri](../test/media/loadtestcountersets.png)
 
 Tek tek HTTP istekleri için performans verilerini bir test çalıştıran bilgisayar tarafından bildirilir. Aracı bilgisayar gibi. İstekleri için ortalama süre için ilk bayta kalan, yanıt süresi ve saniye başına istek sayısı gibi verileri izlemek.
 

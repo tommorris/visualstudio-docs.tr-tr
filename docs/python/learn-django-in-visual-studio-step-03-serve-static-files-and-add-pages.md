@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750340"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Öğreticisi 3. adım: hizmet statik dosyalar, sayfa ekleyin ve şablon devralma kullanın
 
 **Önceki adımda: [görünümlerle bir Django uygulaması oluşturma ve sayfa şablonları](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-Bu öğreticinin önceki adımlarda kendi içinde bulunan HTML tek bir sayfayla en az bir Django uygulaması oluşturma öğrendiniz. Modern web uygulamaları, ancak birçok sayfaları genellikle oluşurlar ve CSS ve JavaScript gibi paylaşılan kaynakları kullanabilirsiniz ve tutarlı stil ve davranışı sağlamak için dosya yapın.
+Bu öğreticinin önceki adımlarda kendi içinde bulunan HTML tek bir sayfayla en az bir Django uygulaması oluşturma öğrendiniz. Modern web uygulamaları, ancak birçok sayfaları genellikle oluşurlar ve olun tutarlı stil ve davranışı sağlamak için CSS ve JavaScript dosyaları gibi paylaşılan kaynakları.
 
 Bu adımda, bilgi nasıl yapılır:
 
@@ -40,8 +41,6 @@ Kullanılabilir şablonların görmek için Git **Çözüm Gezgini**, select ö�
 ![Visual Studio'da yeni öğe iletişim ekleyin](media/django/step03-add-new-item-dialog.png)
 
 Bir şablonu kullanmak için istediğiniz şablonu seçin, dosya için bir ad belirtin ve seçin **Tamam**. Bu şekilde otomatik olarak bir öğe ekleme dosyayı Visual Studio projenize ekler ve değişiklikleri kaynak denetimi için işaretler.
-
-Visual Studio için sık kullanılan bazı seçenekler de ekler **Ekle** doğrudan menüsü. Python projede, örneğin, görebilirsiniz **HTML sayfası** veya **stil sayfası** alt kısmındaki komutları **Ekle** bir adı ister ve bir dosya oluşturur, menüsü.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Soru: nasıl Visual Studio hangi öğesi sunmak için şablonlar biliyor?
 
@@ -187,7 +186,7 @@ Temel bir şablon kullanarak blokları betimleyen `{% block <block_name> %}` ve 
 
 Aşağıdaki adımlarda, devralma gösterilmektedir:
 
-1. Uygulamasının `templates/HelloDjangoApp` klasörü, yeni bir HTML dosyası oluşturun (kullanarak **Ekle** > **yeni öğe** bağlam menüsü veya **Ekle**  >   **HTML sayfası**) olarak adlandırılan `layout.html`, içeriğini yapıştırın. Bu şablon "içerik" adlı bir blok tüm değiştirmek için başvuran sayfa gereksinimi olan içerdiğini görebilirsiniz:
+1. Uygulamasının `templates/HelloDjangoApp` klasörü, yeni bir HTML dosyası oluşturun (kullanarak **Ekle** > **yeni öğe** bağlam menüsü veya **Ekle**  >   **HTML sayfası**) olarak adlandırılan `layout.html`ve yerine kendi biçimlendirme ile. Bu şablon "içerik" adlı bir blok tüm değiştirmek için başvuran sayfa gereksinimi olan içerdiğini görebilirsiniz:
 
     ```html
     <!DOCTYPE html>

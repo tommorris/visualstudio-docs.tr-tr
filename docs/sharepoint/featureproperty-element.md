@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ff9571adc23c9ddc86de96736b9d37ef1cec5d3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a937310ddbb866cbe046ea2975f8d76e75fe2a98
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691824"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766971"
 ---
-# <a name="featureproperty-element"></a>FeatureProperty Öğesi
+# <a name="featureproperty-element"></a>FeatureProperty öğesi
   SharePoint'e dağıtıldığında, sahip bir özellik bulunan özel bir özelliği temsil eder. Bir özellik dağıtıldıktan sonra kodunuzda özelliği erişebilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -32,7 +32,7 @@ ms.locfileid: "34691824"
     Value = "Property value" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
   
 ### <a name="attributes"></a>Öznitelikler  
@@ -42,10 +42,10 @@ ms.locfileid: "34691824"
 |**Key**|Gerekli **xs: String** özniteliği.<br /><br /> Depolamak ve özellik değerini almak için kullanılan anahtar. Her bir özellik özellik içinde benzersiz olduğu bir anahtara sahip olmalıdır.|  
 |**Değer**|Gerekli **xs: String** özniteliği.<br /><br /> Özellik değeri.|  
   
-### <a name="child-elements"></a>Alt Öğeler  
+### <a name="child-elements"></a>Alt öğeleri
  Yok.  
   
-### <a name="parent-elements"></a>Üst Öğeler  
+### <a name="parent-elements"></a>Üst öğeler
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691824"
 ## <a name="remarks"></a>Açıklamalar  
  Özellik özellikleri hakkında daha fazla bilgi için bkz: [sağlama paketleme ve dağıtım bilgileri proje öğelerinde](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Öğe Bilgisi  
+## <a name="element-information"></a>Öğe bilgileri
   
 |||  
 |-|-|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691824"
 |**Dosya doğrulama**|ProjectItemModelSchema.xsd|  
 |**Boş olamaz**|Hayır|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Proje Öğelerinde Paketleme ve Dağıtım Bilgileri Sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

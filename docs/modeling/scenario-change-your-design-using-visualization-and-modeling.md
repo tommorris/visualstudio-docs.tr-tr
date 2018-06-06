@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750174"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -150,13 +151,13 @@ Takımlar yaptıkları değişiklikleri iade etmeden önce bağımlılık doğru
 
  Örneğin, geliştiricinin kod Haritası oluşturur. Aynen yeni senaryodan etkilenecek alanlarına odaklanmak için kapsamı ayarlar. Bu alanlar seçilir ve haritada vurgulanmış:
 
- ![Namespace bağımlılık grafiğinin](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![Namespace bağımlılık grafiği](../modeling/media/namespace_reviewsystem.png)
 
  **Namespace kod Haritası**
 
  Geliştirici, kendi sınıfları, yöntemleri ve ilişkileri görmek için seçilen ad alanlarını genişletir:
 
- ![Genişletilmiş ad alanı bağımlılık grafiğinin](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![Genişletilmiş ad alanı bağımlılık grafiği](../modeling/media/dep_reviewsystem.png)
 
  **Genişletilmiş ad alanı kod Haritası görünür gruplar arası bağlantılar**
 
@@ -177,7 +178,7 @@ Takımlar yaptıkları değişiklikleri iade etmeden önce bağımlılık doğru
 
  Örneğin, aşağıdaki bağımlılık diyagramda katmanları ve her bir katman ile ilişkili yapıları sayısı arasındaki bağımlılıkları açıklanmaktadır:
 
- ![Tümleşik ödeme sistemi bağımlılık diyagramı](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Tümleşik ödeme sistemi bağımlılık diyagramı](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Bağımlılık diyagramı**
 
@@ -277,19 +278,19 @@ Kod haritaları kodda mevcut organizasyon ve ilişkileri gösterir. Öğeleri te
 
 Aşağıdaki harita PaymentProcessing sınıfı ve seçili görünen diğer bölümleri şimdi Yemeği sistemi arasındaki bağımlılıkları gösterir:
 
-![Bağımlılık grafiğinin şimdi Yemeği Ödeme sistemi için](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Bağımlılık grafiğinin şimdi Yemeği Ödeme sistemi](../modeling/media/dep_dnpayment.png)
 
 **Şimdi Yemeği Ödeme sistemi için kod Haritası**
 
 Geliştirici PaymentProcessing sınıfı genişletme ve büyük olasılıkla etkilenen alanları görmek için üyelerini seçerek eşleme ele:
 
-![PaymentProcessing ve bağımlılıkları içinde yer alan yöntemler](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![PaymentProcessing ve bağımlılıkları içinde yer alan yöntemler](../modeling/media/depgraph_expandeddn.png)
 
 **PaymentProcessing sınıfı ve bağımlılıklarını içinde yöntemleri**
 
 Bunlar sınıfları, yöntemleri ve bağımlılıklarını incelemek bellek ödeme sistemi için aşağıdaki eşlemesi oluşturun. Takım bellek sistem diğer bölümleri şimdi Yemeği ile etkileşim kurmak için çalışma gerektirebilir görür:
 
-![Bağımlılık grafiğinin bellek ödeme sistemi için](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Bağımlılık grafiğinin bellek ödeme sistemi](../modeling/media/depgraph_lucernepay.png)
 
 **Kod Haritası bellek ödeme sistemi**
 
@@ -297,7 +298,7 @@ Her iki ekip iki sistemi tümleştirmek için gereken değişiklikleri belirleme
 
 Kod yeniden düzenledikten sonra takımlar güncelleştirilmiş yapısı ve ilişkileri görmek için yeni bir kod Haritası Oluştur:
 
-![Bağımlılık grafiğinin yeniden düzenlenen koduyla](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Bağımlılık grafiğinin yeniden düzenlenen kodu](../modeling/media/depgraph_integrated.png)
 
 **Yeniden düzenlenen kodu içeren kod Haritası**
 
@@ -338,7 +339,7 @@ Bu haritada PaymentApprover sınıfı DinnerNow.Business ad alanında sunulmuşt
 
  Açıklar ve İşlem Ödemesi kullanım örneğine katılan varlıklar ele bellek yardımcı olmak için aşağıdaki sınıf diyagramı çizim:
 
- ![Sınıf diyagramında Ödeme varlıkları işlemek](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![Sınıf diyagramında İşlem Ödemesi varlıkları](../modeling/media/uml_payentities.png)
 
  **Sınıf diyagramında İşlem Ödemesi varlıkları**
 
@@ -346,7 +347,7 @@ Bu haritada PaymentApprover sınıfı DinnerNow.Business ad alanında sunulmuşt
 
  Geliştirme sırasında bellek açıklar ve her sınıfın ayrıntılarını tartışmak için aşağıdaki sınıf diyagramı kullanır:
 
- ![Sınıf diyagramında Ödeme varlık ayrıntıları işlem](../modeling/media/uml_payment.png "UML_Payment")
+ ![Sınıf diyagramında İşlem ödeme varlık ayrıntıları](../modeling/media/uml_payment.png)
 
  **Sınıf diyagramında İşlem ödeme ayrıntıları**
 
@@ -407,7 +408,7 @@ Keşfetmek ve varolan sınıfları tartışmak için başlangıç noktası olara
 
  Kodu tasarım ile tutarlı tutmak için şimdi Yemeği ve bellek aşağıdaki bağımlılık diyagram geliştikçe kodlarını doğrulamak için kullanın:
 
- ![Tümleşik ödeme sistemi bağımlılık diyagramı](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Tümleşik ödeme sistemi bağımlılık diyagramı](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Yemeği Şimdi bellek ile tümleşik için bağımlılık diyagramı**
 
@@ -417,13 +418,13 @@ Keşfetmek ve varolan sınıfları tartışmak için başlangıç noktası olara
 
  Aşağıdaki kod Haritası şimdi Yemeği ve PaymentApprover arasındaki yeni çağrıları gösterir:
 
- ![Güncelleştirilmiş bağımlılık grafiğinin tümleşik sistemiyle](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![Tümleşik sistemiyle güncelleştirilmiş bağımlılık grafiği](../modeling/media/depgraph_intsystem.png)
 
  **Güncelleştirilmiş yöntem çağrılarını kod Haritası**
 
  Sistem beklendiği gibi çalıştığını onayladıktan sonra şimdi Yemeği PaymentProcessing kodunu açıklamalar. Katman doğrulama raporları temiz ve sonuçta elde edilen kod Haritası PaymentProcessing bağımlılığının bulunmadığını gösterir:
 
- ![Bağımlılık grafiğinin PaymentProcessing olmadan](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![Bağımlılık grafiğinin PaymentProcessing olmadan](../modeling/media/depgraph_nomore.png)
 
  **Kod Haritası PaymentProcessing olmadan**
 

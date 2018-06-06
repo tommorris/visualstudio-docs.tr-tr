@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82f7de8649e36c03f1ae1004c01c93dd7580b3a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34469004"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750304"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğreticisi 1. adım: Visual Studio Django web framework kullanmaya başlama
 
@@ -34,11 +34,13 @@ Bu öğreticide, bilgi nasıl yapılır:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio 2017 aşağıdaki seçeneklere sahip:
+- Visual Studio 2017 Windows aşağıdaki seçeneklere sahip:
   - **Python geliştirme** iş yükü (**iş yükü** yükleyici sekmesinde). Yönergeler için bkz: [yükleme Python desteği Visual Studio'da](installing-python-support-in-visual-studio.md).
   - **Windows için Git** ve **Visual Studio için GitHub uzantısı** üzerinde **bileşenleri tek tek** altında sekmesinde **kod Araçları**.
 
 Ayrıntılar ne (özellikle farklı Django framework'ün önceki sürümleriyle) bu öğreticideki açıklanan alanından farklı olabilir ancak Django proje şablonları da Visual Studio için Python Araçları'nın tüm eski sürümlerini dahil edilir.
+
+Python geliştirme Visual Studio şu anda Mac için desteklenmiyor Mac ve Linux üzerinde kullanmak [Visual Studio Code Python uzantı](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ### <a name="visual-studio-projects-and-django-projects"></a>"Visual Studio projeleri" ve "Django projeler"
 

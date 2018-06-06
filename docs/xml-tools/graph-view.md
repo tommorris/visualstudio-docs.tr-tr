@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751708"
 ---
 # <a name="graph-view"></a>Grafik görünümü
 
@@ -22,7 +23,7 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 
  Aşağıdaki resimde, tasarım yüzeyine altı genel düğümlerle grafik görünümü gösterir.
 
- ![XML şema Tasarımcısı grafik görünümü](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![XML şema Tasarımcısı grafik görünümü](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Tasarım yüzeyi
 
@@ -34,7 +35,7 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 
  Tasarım yüzeyine boşsa, XML Düzenleyicisi'ni **XML Şeması Explorer**, ve filigran gösterilir. *Filigran* tüm XSD Tasarımcısı görünümleri bağlanan bir listesi verilmiştir.
 
- ![XSD Tasarımcısı; Grafik görünümü](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![XSD Tasarımcısı; Grafik görünümü](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  Şema kümesini hata varsa, aşağıdaki metni listesinin sonunda görüntülenir: "Görüntülemek ve kümesinde hataları düzeltmek için hata listesi kullanın."
 
@@ -98,7 +99,7 @@ Grafik görünümü genel şeması düğümlerin ve düğümler arasındaki ili�
 
  Grafik görünümü etkin olduğunda aşağıdaki XSD araç çubuğu düğmeleri etkinleştirilir.
 
- ![XML şema Tasarımcısı araç](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![XML şema Tasarımcısı araç çubuğu](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Seçenek|Açıklama|
 |------------|-----------------|

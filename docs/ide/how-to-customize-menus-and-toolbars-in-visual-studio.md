@@ -29,11 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6400f1d501ef6a89a6f98cf040d2f729469ccf71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745955"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl yapılır: menüleri ve Visual Studio içinde araç çubuklarını özelleştirme
 
@@ -52,7 +53,7 @@ Visual Studio yalnızca araç çubukları ve menü çubuğunda menüleri ekleyer
 
     -   Menü eklemek için **yeni menü ekleme** düğmesini tıklatın, seçin **Seçimi Değiştir** düğmesine tıklayın ve ardından eklemek istediğiniz menü adı.
 
-        ![Özelleştir iletişim kutusu bir menü ekleme gösteren](../ide/media/addmenu.png "MenüEkle")
+        ![Özelleştir iletişim kutusu gösteren bir menü ekleme](../ide/media/addmenu.png)
 
     -   Bir menüyü kaldırmak için bunu seçin **denetimleri** listeleyin ve ardından **silmek** düğmesi.
 
@@ -68,7 +69,7 @@ Visual Studio yalnızca araç çubukları ve menü çubuğunda menüleri ekleyer
 
     -   Araç çubuğu eklemek için **yeni** düğmesini tıklatın, eklemek ve ardından istediğiniz araç için bir ad belirtin **Tamam** düğmesi.
 
-        ![Özelleştir iletişim kutusu bir araç eklemek nasıl gösteren](../ide/media/addtoolbar.png "AddToolbar")
+        ![Özelleştir iletişim kutusu gösteren bir araç çubuğu ekleme](../ide/media/addtoolbar.png)
 
     -   Özel bir araç çubuğu kaldırmak için bunu seçin **araç çubukları** listeleyin ve ardından **silmek** düğmesi.
 
@@ -96,7 +97,7 @@ Visual Studio yalnızca araç çubukları ve menü çubuğunda menüleri ekleyer
 
         İçinde **Add komutunu** iletişim kutusunda, bir öğe seçin **kategorileri** listesinde, bir öğe seçin **komutları** listeleyin ve ardından **Tamam**düğmesi.
 
-        ![Visual Studio'da Ekle komutu iletişim kutusu](../ide/media/addcommand.png "AddCommand")
+        ![Visual Studio'da Ekle komutu iletişim kutusu](../ide/media/addcommand.png)
 
     -   Bir komut silmek için bunu seçin **denetimleri** listeleyin ve ardından **silmek** düğmesi.
 

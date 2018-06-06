@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19e9bfac449598e9edb203dadbf2a49b0047f098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d45e5ea6e4739e4be7242c97489abaf412652a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764962"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: İşlem için Bayt Cinsinden Ortalama Çalışma Kümesinin profili oluşturuluyor
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Ortalama çalışma kümesinin profili oluşturuluyor işlem için bayt cinsinden
 |||  
 |-|-|  
 |Kural Kimliği|DA0503|  
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/19/2018
   
  Örnekleme, .NET bellek veya kaynak çakışması yöntemlerini kullanarak profil, bu kural tetiklemek için en az 10 örnekleri toplamanız gerekir.  
   
-## <a name="rule-description"></a>Kural Tanımı  
+## <a name="rule-description"></a>Kural açıklaması  
  Bu ileti ortalama işlem şu anda bayt (çalışma kümesi) kullanarak fiziksel bellek miktarını raporlar. İşlem çalışma kümesi şu anda fiziksel bellekte bulunan işlem adres alanından sayfaları temsil eder.  
   
  Bildirilen değer işlemi başvurmuş paylaşılan bellek kesimleri yerleşik sayfalarından içerir. İşlem başvuruları sayılan paylaşılan bellek segmentlerinde bulunan paylaşılan dll dosyaları. İşlem çalışma kümesi değerini paylaşılan bellek kesimler nedeniyle işlemin ayırdığı sanal bellek miktarından daha yüksek olabilir.  

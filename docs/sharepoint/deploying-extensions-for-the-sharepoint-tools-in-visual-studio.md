@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dba88bde834ddf8e5eba938325b21434560827a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767266"
 ---
-# <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları
-  Bir SharePoint araçları uzantısı dağıtmak için Oluştur bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantı derlemesi ve uzantısıyla dağıtmak istediğiniz diğer dosyaları içeren uzantısı (VSIX) paketi. VSIX paketi açık paketleme kuralları (OPC) standart izleyen sıkıştırılmış bir dosyadır. VSIX paket .vsix uzantısına sahiptir.  
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio'da SharePoint araçları için uzantıları dağıtma
+  Bir SharePoint araçları uzantısı dağıtmak için Oluştur bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantı derlemesi ve uzantısıyla dağıtmak istediğiniz diğer dosyaları içeren uzantısı (VSIX) paketi. VSIX paketi açık paketleme kuralları (OPC) standart izleyen sıkıştırılmış bir dosyadır. VSIX paketleriniz varsa *.vsix* uzantısı.  
   
  VSIX paketi oluşturduktan sonra diğer kullanıcıların uzantınızı yüklemek için .vsix dosyasını çalıştırabilirsiniz. Bir kullanıcı uzantınızı yüklendiğinde, tüm dosyaları %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions klasörüne yüklenir. Uzantıyı dağıtmak için VSIX paketi yükleyebilirsiniz [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi veya dağıtmak paket müşterileriniz için başka bir yöntemle bir ağ paylaşımına veya başka bir Web sitesinin paketinin barındırma gibi bazı.  
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 05/22/2018
   
  VSIX paketi kullanarak oluşturabileceğiniz **VSIX proje** Visual Studio veya şablonda oluşturabilirsiniz VSIX paketi el ile.  
   
-## <a name="using-vsix-projects-to-create-vsix-packages"></a>VSIX paket oluşturmak için VSIX projeleri kullanma  
+## <a name="use-vsix-projects-to-create-vsix-packages"></a>VSIX projeleri VSIX paket oluşturmak için kullanın
  Kullanabileceğiniz **VSIX proje** Visual Studio SharePoint araç uzantılarının VSIX paket oluşturmak için SDK tarafından sağlanan şablonu. VSIX proje kullanarak VSIX paketi el ile oluşturma üzerinde çeşitli avantajlar sunar:  
   
 -   Projeyi derlerken visual Studio VSIX paketi otomatik olarak oluşturur. Paketi dağıtım dosyaları eklemeyi ve paketi için [Content_Types] .xml dosyası oluşturma gibi görevleri sizin için yapılır.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/22/2018
   
  VSIX proje kullanma hakkında daha fazla bilgi için bkz: [VSIX proje şablonu](/visualstudio/extensibility/vsix-project-template).  
   
-### <a name="organizing-your-projects"></a>Projelerinizi düzenleme  
+### <a name="organize-your-projects"></a>Projelerinizi düzenleme
  Varsayılan olarak, VSIX projeleri yalnızca VSIX paket, değil derlemeleri oluşturur. Bu nedenle, genellikle bir SharePoint araçları uzantısı bir VSIX proje ile kullanılmaz. Genellikle en az iki projelerle çalışmak:  
   
 -   Bir VSIX proje.  
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/22/2018
   
  Tüm projeleri aynı Visual Studio çözümünde eklerseniz, Sınıf Kitaplığı projelerinde derleme çıktısı dahil etmek için VSIX proje source.extension.vsixmanifest dosyasında değiştirebilirsiniz.  
   
-### <a name="editing-the-vsix-manifest"></a>VSIX bildirimini düzenleme  
+### <a name="edit-the-vsix-manifest"></a>VSIX bildirimini Düzenle
  Uzantı dahil etmek istediğiniz tüm öğelerin girişlerini dahil etmek için VSIX proje source.extension.vsixmanifest dosyasını düzenlemeniz gerekir. Kendi kısayol menüsünden source.extension.vsixmanifest dosyayı açtığınızda, dosya dosyasındaki XML düzenleme için bir kullanıcı Arabirimi sağlayan bir Tasarımcısı'nda görünür. Daha fazla bilgi için bkz: [VSIX bildirim Tasarımcısı](/visualstudio/extensibility/vsix-manifest-designer).  
   
  Aşağıdaki öğeler için source.extension.vsixmanifest dosyası girişleri eklemeniz gerekir:  
@@ -167,7 +168,7 @@ ms.lasthandoff: 05/22/2018
   
      *YourTemplateName*.zip  
   
-     Örneğin, İngilizce (ABD) yerel destekleyen ContosoCustomAction.zip adlı bir öğe şablonu varsa, tam yolunu ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip olabilir.  
+     Örneğin, İngilizce (ABD) yerel destekleyen ContosoCustomAction.zip adlı bir öğe şablonu varsa, tam yolunu olabilir *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.  
   
 3.  İçinde **Çözüm Gezgini**, şablon dosyası seçin (*YourTemplateName*.zip).  
   
@@ -185,7 +186,7 @@ ms.lasthandoff: 05/22/2018
   
 8.  İçinde **kaynak** listesinde, seçin **filesystem dosyada**.  
   
-9. İçinde **yolu** alanında, derlemeye tam yolunu girin (örneğin, **ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip**, veya **Gözat**bulun ve derleme Seç düğmesine ve ardından **Tamam** düğmesi.  
+9. İçinde **yolu** alanında, derlemeye tam yolunu girin (örneğin, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, veya **Gözat**bulun ve derleme Seç düğmesine ve ardından **Tamam** düğmesi.  
   
 ##### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Bir proje şablonu veya öğe şablonu için bir sihirbaz eklemek için  
   
@@ -207,7 +208,7 @@ ms.lasthandoff: 05/22/2018
   
 5.  Seçin **Tamam** düğmesi.  
   
-### <a name="related-walkthroughs"></a>İlgili izlenecek yollar  
+### <a name="related-walkthroughs"></a>İlgili izlenecek yollar
  Aşağıdaki tabloda VSIX proje SharePoint araç uzantıları farklı türlerde dağıtmak için nasıl kullanılacağını gösteren talimatlara listeler.  
   
 |Uzantı türü|İlgili izlenecek yollar|  
@@ -217,7 +218,7 @@ ms.lasthandoff: 05/22/2018
 |Visual Studio şablon içeren uzantısı|[İzlenecek yol: Öğe Şablonu, Bölüm 1 ile Özel bir Eylem Proje Öğesi Oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [İzlenecek yol: Proje Şablonu, Bölüm 1 ile bir Site Sütunu Proje Öğesi Oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|  
 |İçeren bir şablon Sihirbazı uzantısı|[İzlenecek yol: Öğe Şablonu, Bölüm 2 ile Özel bir Eylem Proje Öğesi Oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [İzlenecek yol: Proje Şablonu, Bölüm 2 ile bir Site Sütunu Proje Öğesi Oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|  
   
-## <a name="creating-vsix-packages-manually"></a>VSIX paket el ile oluşturma  
+## <a name="create-vsix-packages-manually"></a>VSIX paket el ile oluşturma
  SharePoint araçları Uzantınız için VSIX paket el ile oluşturmak istiyorsanız, aşağıdaki adımları gerçekleştirin:  
   
 1.  Extension.vsixmanifest dosyasını ve [Content_Types] .xml dosyasını yeni bir klasör oluşturun. Daha fazla bilgi için bkz: [VSIX paketi anatomisi](/visualstudio/extensibility/anatomy-of-a-vsix-package).  
@@ -260,10 +261,9 @@ ms.lasthandoff: 05/22/2018
   
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
   

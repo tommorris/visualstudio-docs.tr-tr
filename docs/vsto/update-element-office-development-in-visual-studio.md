@@ -1,5 +1,5 @@
 ---
-title: "&lt;Güncelleştirme&gt; öğesi (Visual Studio'da Office Geliştirme) | Microsoft Docs"
+title: "&lt;Güncelleştirme&gt; öğesi (Visual Studio'da Office Geliştirme)"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f0e1fdc26e285ce9b6a1fd5ecc1aa638fe909b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767614"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Güncelleştirme&gt; öğesi (Visual Studio'da Office Geliştirme)
   `update` Öğesi çözüm denetleyecek güncelleştirmelere yönelik aralığı belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```xml  
 <update  
   enabled>  
   <expiration  
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`maximumAge`|-Gerekli. Bu, bir tamsayıya eşit ayarlayın.|  
+|`maximumAge`|   Gerekli. Bu, bir tamsayıya eşit ayarlayın.|  
 |`unit`|Gerekli. Ayarlama `unit` aşağıdaki değerlerden birine:<br /><br /> -   **Saatleri**<br />-   **gün**<br />-   **Hafta**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Her zaman güncelleştirmeleri denetleniyor örneği  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:update enabled="true" />  
 ```  
   
@@ -77,16 +78,16 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:update enabled="true">  
     <vstav3:expiration maximumAge="7" unit="days" />  
 </vstav3:update>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

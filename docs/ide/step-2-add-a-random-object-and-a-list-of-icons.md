@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95996165351be2ead2f24556da1bfdcdd6fcc048
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746838"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2. adım: rasgele nesne ve simge listesi ekleme
 Bu adımda, oyun için bir grup eşleşen simge oluşturuyorsunuz. Her simge, form üzerindeki TableLayoutPanel denetiminde rasgele iki hücreye eklenir. Bunu yapmak için iki kullandığınız `new` deyimleri iki nesne oluşturma. İlki bir <xref:System.Random> gibi matematik testi oyunda kullanılan nesne. Bu koddaki kullanım amacıysa, TableLayoutPanel denetiminde rasgele hücre seçmektir. Size yeni olabilir, ikinci nesne bir <xref:System.Collections.Generic.List%601> rastgele seçilmiş simgeleri depolamak için kullanılan nesne.
@@ -35,7 +36,7 @@ Bu adımda, oyun için bir grup eşleşen simge oluşturuyorsunuz. Her simge, fo
 
 3.  Liste nesnesi eklerken, **IntelliSense** açılır penceresi. Aşağıdaki bir Visual C# örneği olmakla birlikte, Visual Basic'te liste eklediğinizde de benzer bir metin görüntülenir.
 
-     ![Özellikler penceresini tıklatın gösteren olay](../ide/media/express_listintellisense.png "Express_ListIntellisense") IntelliSense penceresi
+     ![Özellikler penceresini tıklatın gösteren olay](../ide/media/express_listintellisense.png) IntelliSense penceresi
 
     > [!NOTE]
     >  Yalnızca kodu el ile girdiğinizde, IntelliSense penceresi görüntülenir. Kodu kopyalayıp yapıştırırsanız görünmez.

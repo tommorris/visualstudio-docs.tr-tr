@@ -15,10 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477359"
 ---
 # <a name="thread-details-view---contention-data"></a>İş parçacığı Ayrıntıları görünümü - çakışma verileri
 İş parçacığı Ayrıntıları görünümü tarafından çekişmeleri kaynaklar kaynaklanan engelleme olayları Seçili iş parçacığında bir profil oluşturma çalışma zaman çizelgesi grafiğini gösterir. Başka bir iş parçacığı bir kaynağa erişim kilitlediği için yürütme askıya almak için iş parçacığı zorlandığında bir engelleme olayı oluşur.  

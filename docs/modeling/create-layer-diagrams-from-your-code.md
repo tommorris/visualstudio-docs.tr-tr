@@ -14,17 +14,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3a34d52bb4b9af535d1b11843967ac5b9619a153
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73f3cf2bbb5903a3c2dda8c531f28e9aa81facad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749707"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Kodunuz aracılığıyla bağımlılık diyagramları oluşturma
 
 Yazılım sisteminizin üst düzey, mantıksal mimarisi görselleştirmek için oluşturun bir *bağımlılık diyagramı* Visual Studio. Kodunuzu bu tasarım ile tutarlı kalmasını sağlamak için bir bağımlılık diyagramı ile kodunuzu doğrulayın. Visual C# ve Visual Basic projeleri için bağımlılık diyagramları oluşturabilirsiniz. Bu özellik, Visual Studio'nun hangi sürümleri desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-![Bir bağımlılık diyagramı oluşturmak](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+![Bir bağımlılık diyagramı oluşturma](../modeling/media/layerdiagramvisualizecode.png)
 
 Bir bağımlılık diyagramı, Visual Studio çözüm öğeleri olarak adlandırılan mantıksal, soyut gruplar halinde düzenlemenizi sağlar *katmanları*. Bu yapıların gerçekleştirdiği temel görevleri veya sistemin ana bileşenlerini açıklamak için katmanları kullanabilirsiniz. Her katman, daha ayrıntılı görevleri açıklayan başka katmanlar içerebilir. Hedeflenen veya varolan da belirtebilirsiniz *bağımlılıkları* katmanlar arasında. Oklar olarak temsil edilen bu bağımlılıklar, hangi katmanların diğer katmanlar tarafından temsil edilen işlevi kullanabileceğini veya kullanmakta olduğunu gösterir. Kodunun mimari denetimini sağlamak için diyagram üzerinde hedeflenen bağımlılıkları gösterin ve ardından kodu diyagrama karşı doğrulayın.
 
@@ -49,7 +50,7 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü modelleme pro
 
 4.  İçinde **eklemek modelleme projesine**bulun ve var olan bir modelleme projesi, çözümünüz seçin.
 
-     -veya-
+     veya
 
      Seçin **yeni bir modelleme projesi oluşturma** çözüme yeni bir modelleme projesi eklemek için.
 

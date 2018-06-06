@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ced3059b516c7285d525666a69d2c63a654a83a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748042"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>İzlenecek yol: bir gerçekçi 3B bilardo Top oluşturma
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Gerçekçi bir 3B bilardo topu oluşturma
 
 Bu kılavuz, Visual Studio'da gölgelendirici Tasarımcısı ve görüntü Düzenleyicisi'ni kullanarak bir gerçekçi 3B bilardo Top oluşturmak gösterilmiştir. Bilardo Top 3B görünümünü uygun doku kaynaklarla birkaç gölgelendirici teknikleri birleştirerek elde edilir.
 
@@ -56,11 +57,11 @@ Küre gölgelendirici Tasarımcısı'nı varsayılan Önizleme şeklinde olur; f
 
      Doku şuna benzer görünmelidir:
 
-     ![Doku bilardo Top için](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")
+     ![Doku bilardo Top için](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png)
 
 4.  İsteğe bağlı olarak, bu doku depolama gereksinimlerini azaltmak isteyebilirsiniz. Bunu kendi yüksekliğini eşleşecek şekilde doku genişliğini azaltarak yapabilirsiniz. Bu dokuyu eni boyunca sıkıştırır ancak bilardo Top işlendiğinde doku küre eşlendi yöntemi nedeniyle, genişletilecek. Yeniden boyutlandırma sonra doku şuna benzer görünmelidir:
 
-     ![Kare sıkıştırılmış bilardo doku](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")
+     ![Kare sıkıştırılmış bilardo doku](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png)
 
  Artık bu doku modeline uygulanan gölgelendirici oluşturabilirsiniz.
 
@@ -70,11 +71,11 @@ Küre gölgelendirici Tasarımcısı'nı varsayılan Önizleme şeklinde olur; f
 
      Varsayılan olarak, bir gölgelendirici grafiği şuna benzer:
 
-     ![Varsayılan gölgelendirici grafik](../designers/media/gfx_shader_demo_billiard_step_0.png "gfx_shader_demo_billiard_step_0")
+     ![Varsayılan gölgelendirici grafiği](../designers/media/gfx_shader_demo_billiard_step_0.png)
 
 2.  Bir doku örnek değeri geçerli piksel uygulanmasını varsayılan gölgelendirici değiştirin. Gölgelendirici grafiği aşağıdaki gibi görünmelidir:
 
-     ![Doku bir nesne için geçerli bir gölgelendirici grafik](../designers/media/gfx_shader_demo_billiard_step_1.png "gfx_shader_demo_billiard_step_1")
+     ![Doku bir nesne için geçerli bir gölgelendirici grafiği](../designers/media/gfx_shader_demo_billiard_step_1.png)
 
 3.  Doku özelliklerini yapılandırarak önceki yordamda oluşturduğunuz doku uygulayın. Değerini ayarlamak **doku** özelliği **doku örnek** düğüme **Texture1**, doku dosyasını kullanarak Calls **Filename**özelliği **Texture1** aynı özellik penceresinde özellik grubu.
 
@@ -82,7 +83,7 @@ Küre gölgelendirici Tasarımcısı'nı varsayılan Önizleme şeklinde olur; f
 
  Bilardo Top şuna benzer görünmelidir:
 
- ![Doku bilardo Top, closeup](../designers/media/gfx_shader_demo_.png "gfx_shader_demo_")
+ ![Doku bilardo Top, closeup](../designers/media/gfx_shader_demo_.png)
 
 ## <a name="create-depth-with-the-lambert-lighting-model"></a>Derinlik Lambert aydınlatma modeliyle oluşturma
 
@@ -96,7 +97,7 @@ Küre gölgelendirici Tasarımcısı'nı varsayılan Önizleme şeklinde olur; f
 
 -   Doku örnek değer Lambert aydınlatma değeriyle modulate, gölgelendirici değiştirin. Gölgelendirici grafiği aşağıdaki gibi görünmelidir:
 
-     ![Gölgelendirici grafik eklenen Lambert aydınlatma ile](../designers/media/gfx_shader_demo_billiard_step_2.png "gfx_shader_demo_billiard_step_2")
+     ![Eklenen Lambert aydınlatma gölgelendirici grafiği](../designers/media/gfx_shader_demo_billiard_step_2.png)
 
 -   İsteğe bağlı olarak yapılandırarak aydınlatma nasıl davranacağını ayarlayabilirsiniz **MaterialDiffuse** gölgelendirici grafik özelliği. Gölgelendirici grafik özelliklerine erişmek için tasarım yüzeyine boş alanı seçip erişmek istediğiniz özellik bulun **özellikleri** penceresi.
 
@@ -104,7 +105,7 @@ Küre gölgelendirici Tasarımcısı'nı varsayılan Önizleme şeklinde olur; f
 
  Uygulanan Lambert aydınlatma ile bilardo Top şuna benzer görünmelidir:
 
- ![Doku ve aydınlatılmış bilardo Top, closeup](../designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")
+ ![Doku ve aydınlatılmış bilardo Top, closeup](../designers/media/gfx_shader_demo_billiard_ball_2.png)
 
 ## <a name="enhance-the-basic-appearance-with-specular-highlights"></a>Temel görünümünü aynasal vurgular geliştirmek
 
@@ -118,7 +119,7 @@ Küre gölgelendirici Tasarımcısı'nı varsayılan Önizleme şeklinde olur; f
 
 1.  Ek karıştırma kullanarak aynasal katkı eklemek için gölgelendirici değiştirin. Gölgelendirici grafiği aşağıdaki gibi görünmelidir:
 
-     ![Gölgelendirici grafik eklenen aynasal aydınlatma ile](../designers/media/gfx_shader_demo_billiard_step_3.png "gfx_shader_demo_billiard_step_3")
+     ![Eklenen aynasal aydınlatma gölgelendirici grafiği](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
 2.  İsteğe bağlı olarak, aynasal özellikleri yapılandırarak aynasal vurgu davranış biçimini de ayarlayabilirsiniz (**MaterialSpecular** ve **MaterialSpecularPower**) gölgelendirici grafik. Boş bir alana tasarım yüzeyi ve ardından gölgelendirici grafik erişim özelliklerine seçin **özellikleri** penceresinde erişmek istediğiniz özelliği bulunamadı.
 
@@ -126,7 +127,7 @@ Küre gölgelendirici Tasarımcısı'nı varsayılan Önizleme şeklinde olur; f
 
  Aynasal uygulanan vurgulama, bilardo Top şuna benzer görünmelidir:
 
- ![Closeup aynasal ile bilardo Top, eklenen](../designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")
+ ![Aynasal ile bilardo Top, closeup eklendi](../designers/media/gfx_shader_demo_billiard_ball_3.png)
 
 ## <a name="create-a-sense-of-space-by-reflecting-the-environment"></a>Ortam yansıtma tarafından bir fikir alanı oluşturma
 
@@ -150,13 +151,13 @@ Uygulanan aynasal vurgular ile bilardo Top oldukça ikna edici arar. Sağ şekli
 
 4.  İlk olarak aynı boyutta ikinci bir doku oluşturun. Bu doku yüzeyini ve bilardo tablo yanlarından ve bilardo tablo etrafına karşılık gelen küp harita dört tarafına yinelenir. Alt doku olduğu gibi aynı renk kullanarak bu doku bilardo tablo yüzeyinin çizmek emin olun. Doku şuna benzer görünmelidir:
 
-     ![Cubemap yanlarından doku](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")
+     ![Cubemap yanlarından doku](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png)
 
      Bir yansıma harita etkili olması için fotoğraf kalitesinde olması gerekmez unutmayın; Örneğin, bu makaledeki görüntüleri oluşturmak için kullanılan küp eşlemesi altı yerine yalnızca dört cep içerir.
 
 5.  Başkalarının aynı boyutta üçüncü bir doku oluşturun. Bu doku bilardo tablonun üstündeki tavan karşılık gelen küp haritanın üst olacaktır. Yansıma bu kısmı daha ilginç hale getirmek için gölgelendirici önceki yordamda eklediğiniz aynasal vurgular pekiştirmek için genel bir açık çizebilirsiniz. Doku şuna benzer görünmelidir:
 
-     ![Doku cubemap üst](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")
+     ![Cubemap üstündeki doku](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
  Küp harita yanlarından için tek tek doku oluşturduğunuza göre bunları tek .dds dokuyu depolanan bir küp harita halinde birleştirmek için bir aracı kullanabilirsiniz. Küp harita .dds doku biçiminde kaydedebilirsiniz sürece küp harita oluşturmak istediğiniz herhangi bir programı kullanabilirsiniz. Bu anlatımda Haziran 2010 bir parçası olan DirectX doku aracı kullanarak dokuyu oluşturmak nasıl gösterilir DirectX SDK.
 
@@ -180,7 +181,7 @@ Uygulanan aynasal vurgular ile bilardo Top oldukça ikna edici arar. Sağ şekli
 
  Bu gibi küp harita düzenini hayal edebildiğiniz:
 
- ![Ortam küp harita yerleşimini](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")
+ ![Ortam küp harita düzeni](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png)
 
  Üst görüntü artı (+ Y) Y küp yüz durumundadır; soldan sağa, Orta olduğu -X + Z + X ve -Z, yüzler küp; alt kısmında -Y küp yüz vardır.
 
@@ -190,13 +191,13 @@ Uygulanan aynasal vurgular ile bilardo Top oldukça ikna edici arar. Sağ şekli
 
 1.  Ek karıştırma kullanarak ortam eşleme katkı eklemek için gölgelendirici değiştirin. Gölgelendirici grafiği aşağıdaki gibi görünmelidir:
 
-     ![Her iki tür yansıtıcı gölgelendirici düğümlerinin closeup](../designers/media/gfx_shader_demo_billiard_step_4b.png "gfx_shader_demo_billiard_step_4b")
+     ![Her iki tür yansıtıcı gölgelendirici düğümünün closeup](../designers/media/gfx_shader_demo_billiard_step_4b.png)
 
      Kullanabileceğiniz Not bir **Çarp ekleme** gölgelendirici grafik basitleştirmek için düğüm.
 
      Daha ayrıntılı bir görünüm ortamı eşleme uygulamak gölgelendirici düğümlerin şöyledir:
 
-     ![Eklenen ortamı eşleme ile gölgelendirici grafik](../designers/media/gfx_shader_demo_billiard_step_4a.png "gfx_shader_demo_billiard_step_4a")
+     ![Eklenen ortamı eşleme ile gölgelendirici grafiği](../designers/media/gfx_shader_demo_billiard_step_4a.png)
 
 2.  Küp harita doku özelliklerini yapılandırarak önceki yordamda oluşturduğunuz doku uygulayın. Değerini ayarlamak **doku** özelliği **Cubemap örnek** düğüme **Texture2**, doku dosyasını kullanarak Calls **Filename**özelliği **Texture2** özellik grubu.
 
@@ -204,7 +205,7 @@ Uygulanan aynasal vurgular ile bilardo Top oldukça ikna edici arar. Sağ şekli
 
  Uygulanan ortamı eşlemesi ile bilardo Top şuna benzer görünmelidir:
 
- ![Ortamının closeup eşlenen bilardo top](../designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")
+ ![Ortamının closeup bilardo Top eşlenmiş](../designers/media/gfx_shader_demo_billiard_ball_4.png)
 
  Bu son görüntüde nasıl eklediğiniz etkilerini verici bilardo Top oluşturmak için araya gelmesi dikkat edin. Şekli, doku ve Aydınlatma 3B bir nesneyi temel görünümünü oluşturmak ve aynasal vurgular ve yansımalarını bilardo Top daha ilginç hale ve onun ortamının bir parçası gibi bakın.
 

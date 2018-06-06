@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c70ddc12b2c790a360f5124e7deeb8e99189742c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b7f673adc1c5f93c3cf356218c510cad7f8d229
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749872"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Denetim akışı için özel durumlar kullanmaktan kaçının
 |||  
@@ -35,12 +36,12 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Sebep  
  .NET Framework özel durum işleyicileri yüksek oranda profil oluşturma verileri çağrılır. Oluşturulan özel durum sayısını azaltmak için diğer denetim akışı mantığı kullanmayı düşünün.  
   
-## <a name="rule-description"></a>Kural Tanımı  
- Hataları ve program yürütme kesintiye diğer olayları yakalamak için özel durum işleyicilerini kullanmak iyi bir uygulama olsa da, normal program yürütme mantığının parçası olarak özel durum işleyici kullanımını pahalı olabilir ve kaçınılmalıdır. Çoğu durumda, özel durumlar seyrek oluşur ve değil beklenen durumlarda kullanılması gereken... Özel durumlar programın normal akışının bir parçası değer döndürmek için kullanılmamalıdır. Çoğu durumda, değerlerini doğrulama ve koşullu mantık soruna neden deyimleri yürütülmesini durdurmak için kullanarak özel durumlarını oluşturma önleyebilirsiniz.  
+## <a name="rule-description"></a>Kural açıklaması  
+ Hataları ve program yürütme kesintiye diğer olayları yakalamak için özel durum işleyicilerini kullanmak iyi bir uygulama olsa da, normal program yürütme mantığının parçası olarak özel durum işleyici kullanımını pahalı olabilir ve kaçınılmalıdır. Çoğu durumda, özel durumlar seyrek oluşur ve değil beklenen durumlarda kullanılmalıdır. Özel durumlar programın normal akışının bir parçası değer döndürmek için kullanılmamalıdır. Çoğu durumda, değerlerini doğrulama ve koşullu mantık soruna neden deyimleri yürütülmesini durdurmak için kullanarak özel durumlarını oluşturma önleyebilirsiniz.  
   
  Daha fazla bilgi için bkz: [özel durum yönetimi](http://go.microsoft.com/fwlink/?LinkID=177825) bölümünü **bölüm 5 — yönetilen kod performansı artırma** içinde **artırma .NET uygulama performansı ve ölçeklenebilirliği** hacmi **Microsoft Patterns and Practices** MSDN'deki kitaplığı.  
   
 ## <a name="how-to-investigate-a-warning"></a>Bir uyarıyı araştırmak nasıl  
- İşaretleri görünümüne gitmek için hata listesi penceresini iletisinde çift tıklayın. İçeren bir sütun Bul **.NET CLR özel durumları (@ProcessInstance)\\atılan / sn** ölçümleri. Olup olmadığını program yürütme belirli aşamaları özel durum işleme diğerlerinden daha sık olduğu belirler. Throw deyimleri tanımlamak ve try/catch blokları sık özel durum oluşturmak örnekleme profili kullanarak deneyin. Gerekirse, catch blokları hangi özel durumların en sık işlendiğini anlamanıza yardımcı olması için mantık ekleyin. Mümkünse, sık çalıştırılan Değiştir throw deyimleri veya basit akış catch blokları mantığı veya doğrulama kodunu denetler.  
+ İşaretleri görünümüne gitmek için hata listesi penceresini iletisinde çift tıklayın. İçeren bir sütun Bul **.NET CLR özel durumları (@ProcessInstance)\\Excels durum sayısı / sn** ölçümleri. Olup olmadığını program yürütme belirli aşamaları özel durum işleme diğerlerinden daha sık olduğu belirler. Throw deyimleri tanımlamak ve try/catch blokları sık özel durum oluşturmak örnekleme profili kullanarak deneyin. Gerekirse, catch blokları hangi özel durumların en sık işlendiğini anlamanıza yardımcı olması için mantık ekleyin. Mümkünse, sık çalıştırılan Değiştir throw deyimleri veya basit akış catch blokları mantığı veya doğrulama kodunu denetler.  
   
- Bul olsaydınız Örneğin, uygulamanızın mantığı sıfır değerleri olan kesirler denetlemek için program için uygulamanın performansını artırır ekleme sık DivideByZeroException özel durumların işlenmesi oluştu.
+ Bul olsaydınız Örneğin, uygulamanızın sıfır değerleri olan kesirler denetlemek için program mantığı uygulama performansını iyileştirir ekleme sık DivideByZeroException özel durumların işlenmesi oluştu.

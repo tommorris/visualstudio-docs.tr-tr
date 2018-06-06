@@ -9,13 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751429"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile güdümlü geliştirme test etme
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme
 
 Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu tutmaya yardımcı olmak için birim testleri oluşturmanızı öneririz. Bazı üçüncü taraflar tarafından geliştirilen dahil olmak üzere, birim testleri yazmak için kullanabileceğiniz birkaç çerçeveleri vardır. Bazı test çerçevelerini farklı dil ya da platformlar testi için özelleştirilmiş. Test Gezgini birim testlerinde bu çerçeveleri için tek bir arabirim sağlar. Bağdaştırıcılar için en yaygın olarak kullanılan çerçeveleri tarafından kullanılabilir ve diğer çerçeveler için kendi bağdaştırıcıları yazabilirsiniz.
 
@@ -28,7 +29,7 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 -   Bir pencerede gerek duyduğunuz tüm bilgileri görebilirsiniz.
 
 ## <a name="using-test-explorer"></a>Test Gezgini kullanma
- ![Birim Test Gezgini gösteren tümünü Çalıştır düğmesini](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![Birim Test Gezgini gösterme tümünü Çalıştır düğmesi](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Birim testi Gezgini'ni kullanarak Testleri Çalıştır için
 
@@ -44,7 +45,7 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 
     2.  Her birim testi bir yöntem olarak yazma. Her test yöntemi ile önek `[TestMethod]` özniteliği.
 
-2.  Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+2.  Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
 3.  Menü çubuğunda seçin **Test**, **Birim Testleri Çalıştır**, **tüm testleri**.
 
@@ -79,7 +80,7 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 
     -   İçinde **yeni proje** iletişim kutusunda, seçin **Visual C#**, **Test** ve ardından **birim testi projesi**.
 
-         ![Yeni koduna ve test projeleri](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![Yeni koduna ve test projeleri](../test/media/unittestexplorerwalk1.png)
 
 3.  Temel test yöntemi yazın. Belirli bir giriş için elde edilen sonucu doğrulayın:
 
@@ -125,7 +126,7 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 
 7.  Altında öğeleri seçin **yığın izleme** test başarısız olduğu görmek için.
 
- ![Birim testi başarısız gösteren Explorer'ı sınayın. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![Birim testi başarısız gösteren Explorer'ı sınayın.](../test/media/unittestexplorerwalkthrough2.png)
 
  Bu noktada, test ve değiştirecek ve böylece test başarılı bir saplama oluşturdunuz.
 
@@ -146,7 +147,7 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 
      Test başarılı olur.
 
-     ![Birim Test Gezgini geçirme test gösteriliyor. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Birim Test Gezgini geçirme test gösteriliyor.](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Girdi aralığı genişletmek için testleri ekleme
 
@@ -288,4 +289,4 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 
      Tüm testler hala geçirin.
 
-     ![Birim testi 3 geçirilen testleri gösteren Gezgini. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Birim testi 3 geçirilen testleri gösteren Gezgini.](../test/media/unittestexplorerwalkthrough4.png)

@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767656"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Nasıl yapılır: Belirli bir Bulucu Yöntemi Ekleme
+# <a name="how-to-add-a-specific-finder-method"></a>Nasıl yapılır: belirli bir Bulucu yöntemi ekleme
   Tek varlık örneğini oluşturarak döndürebilir bir *belirli bir Bulucu* yöntemi. Bir kullanıcı, bir iş veri web bölümü veya dış listedeki bir varlık seçtiğinde iş verileri bağlantı (BDC) hizmeti belirli bir Bulucu yöntemi yürütür. Daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-specific-finder-method"></a>Belirli bir Bulucu yöntemi oluşturmak için  
+### <a name="to-create-a-specific-finder-method"></a>Belirli bir Bulucu yöntemi oluşturmak için
   
-1.  Bir varlık BDC designer'ı seçin.  
+1.  Üzerinde **BDC Tasarımcısı**, bir varlık seçin.  
   
-     Visual Studio'da BDC Tasarımcısı için bir varlık ekleme hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     Bir varlık ekleme hakkında bilgi için **BDC Tasarımcısı** Visual Studio'da görmek [nasıl yapılır: bir modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  Menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **BDC yöntem ayrıntıları**.  
+2.  Menü çubuğunda seçin **Görünüm** > **diğer pencereler**, **BDC yöntem ayrıntıları**.  
   
      **BDC yöntem ayrıntıları** penceresi açılır. Bu pencere hakkında daha fazla bilgi için bkz: [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Nasıl yapılır: bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-finder-method.md)   
  [Nasıl yapılır: bir yaratıcı yöntemi ekleme](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)   
  [Nasıl yapılır: bir yönteme parametre ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Nasıl yapılır: Metot Örneği Tanımlama](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

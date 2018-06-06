@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 514bbd4b4b65a2f32b42a1f260368f219972e22c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745756"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio’da XAML Tasarımcısı’nı kullanarak kullanıcı arabirimi oluşturma
 Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygulamaları yardımcı olması için görsel bir arabirim sağlar. Denetimlerden sürükleyerek, uygulamalarınız için kullanıcı arabirimleri oluşturabilirsiniz **araç** ve özelliklerini ayarlama **özellikleri** penceresi. XAML doğrudan XAML görünümünde de düzenleyebilirsiniz.
@@ -34,7 +35,7 @@ Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygul
 
  Tasarım görünümünde pencere içeren *çalışma yüzeyi* etkin pencere ve bir birincil çalışma yüzeyi olarak kullanın. Ekleyerek veya öğeleri çizim ve bunları değiştirerek bir sayfa uygulamanızda görsel olarak tasarlamak için kullanabilirsiniz. Daha fazla bilgi için bkz: [XAML Tasarımcısı'nda öğeleri ile çalışma](../designers/working-with-elements-in-xaml-designer.md). Bu örnekte çalışma yüzeyi Tasarım görünümünde gösterilmiştir.
 
- ![Tasarım görünümü XAML Tasarımcısı'nın](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![XAML Tasarımcısı'nın tasarım görünümü](../designers/media/xaml_editor_design_view.png)
 
  Bu özellikler, çalışma yüzeyine kullanılabilir:
 
@@ -56,7 +57,7 @@ Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygul
 
  Tasarım görünümünde, aşağıda gösterildiği gibi ek çalışma yüzeyi komutları ekranın sol alt bölgesine kullanılabilir:
 
- ![Tasarım görünümü komutları](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![Tasarım görünümü komutları](../designers/media/xaml_editor_design_controls.png)
 
  Bu komutlar, bu araç çubuğunda kullanılabilir:
 
@@ -70,7 +71,7 @@ Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygul
 
  XAML görünümünde XAML Düzenleyicisi'ni içeren etkin penceresidir ve XAML Düzenleyicisi'ni, birincil geliştirme aracıdır. Genişletilebilir uygulama biçimlendirme dili (XAML), bir uygulamanın kullanıcı arabiriminde belirlemek için bir bildirim temelli, XML tabanlı sözlüğünü sağlar. XAML görünümü IntelliSense, otomatik biçimlendirme, sözdizimi vurgulama ve etiket Gezinti içerir. Bu çizim XAML görünüm gösterir:
 
- ![XAML görünümü](../designers/media/xaml_editor.png "xaml_editor")
+ ![XAML görünümü](../designers/media/xaml_editor.png)
 
  **Bölme Görünüm Çubuğu** XAML Düzenleyicisi'ni alt pencerede olduğunda bölme Görünüm Çubuğu XAML görünümü üstünde görünür. Bölme Görünüm Çubuğu Tasarım görünümü ve XAML görünümü boyutlarını denetlemenize olanak sağlar. Görünümleri konumlarını gönderip alabilir (kullanarak **takas bölmeleri** düğmesi), görünümleri yatay veya dikey olarak düzenlenmiş belirtin ve ya da Görünüm daraltın.
 
@@ -79,7 +80,7 @@ Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygul
 ## <a name="device-window"></a>Aygıt penceresi
  XAML Tasarımcısı'nda Aygıt penceresi, çeşitli görünümleri, görüntüler, tasarım zamanında benzetimini ve görüntüleme seçeneklerini projeniz için olanak sağlar. Aygıt penceresi kullanılabilir **tasarım** XAML Tasarımcısı'nda çalışırken menüsü. İşte bu şekilde görünür:
 
- ![Aygıt penceresi](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![Aygıt penceresi](../designers/media/xaml_editor_device_panel.png)
 
  Cihaz penceresindeki Seçenekler şunlardır:
 
@@ -114,7 +115,7 @@ Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygul
 
  Belge Anahattı penceresi görüntülemek için menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **belge anahattı**.
 
- ![Belge Anahattı penceresi](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![Belge Anahattı penceresi](../designers/media/xaml_editor_doc_outline.png)
 
  Belge Anahattı penceresi kullanılabilir seçenekleri şunlardır:
 
@@ -129,7 +130,7 @@ Visual Studio'da XAML Tasarımcısı tasarım XAML tabanlı Windows ve Web uygul
 ## <a name="properties-window"></a>Özellik penceresi
  Özellikler penceresini denetimlerinde özellik değerlerini ayarlamanıza olanak tanır. İşte bu şekilde görünür:
 
- ![Özellikler penceresi](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![Özellik penceresi](../designers/media/xaml_editor_prop_window.png)
 
  Özellikler penceresini üstündeki çeşitli seçenekler vardır. Seçili olan öğenin adını kullanarak değiştirebilirsiniz **adı** kutusu. Sol üst köşesinde şu anda seçilen öğeyi temsil eden bir simge yoktur. Kategoriye göre veya alfabetik olarak özelliklerini düzenlemek için tıklayın **kategori**, **adı**, veya **kaynak** içinde **düzenleme ölçütü** listesi. Bir denetim için olayların listesini görmek için tıklatın **olayları** Şimşek Cıvata simgesi görüntüler düğmesi. Özelliğin adını yazmanız bir özellik için arama yapmak için başlangıç **arama özellikleri** kutusu. Özellikler penceresini yazarken aramanızla eşleşen özelliklerini görüntüler. Bazı özellikler, Gelişmiş Özellikler aşağı ok düğmesini seçerek ayarlamanıza olanak tanır. Olayları işleme ve özelliklerini kullanma daha fazla bilgi için bkz: [hızlı başlangıç: denetimler ekleme ve olayları işleme](http://go.microsoft.com/fwlink/?LinkID=247983)
 

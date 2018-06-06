@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765875"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Hızlı Başlangıç: Visual Studio'da XAML ve C ile ilk Evrensel Windows platformu uygulamanızı oluşturma&#35;
 
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), herhangi bir Windows 10 aygıtta çalışan bir "Hello World" uygulaması oluşturacaksınız. Bunu yapmak için bir evrensel Windows Platformu (UWP) proje şablonu, Genişletilebilir uygulama biçimlendirme dili (XAML) ve C# programlama dili kullanmanız.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
@@ -59,7 +60,7 @@ Geliştirmeye başlamak için zamanı. Düğme denetimi ekleyin eylem düğme ek
 
   ![MainPage.xaml Çözüm Gezgini'nden açın ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  İki bölme vardır: **XAML Tasarımcısı**, bir tasarım tuvali içerir ve **XAML Düzenleyicisi'ni**, burada ekleyebilir veya kodu değiştirin.    
+  İki bölme vardır: **XAML Tasarımcısı**, bir tasarım tuvali içerir ve **XAML Düzenleyicisi'ni**, burada ekleyebilir veya kodu değiştirin.
 
   ![XAML Düzenleyicisi'ni XAML Tasarımcısı bölmesinde](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ Oluşturun, dağıtın ve ne göründüğünü ve benzer görmek için "Hello Wo
 
 1. Seçin **yerel makine** uygulamayı başlatmak için.
 
-   ![Başlatmak ve UWP uygulamanızın hatalarını ayıklama için yerel makineye tıklayın](../ide/media/uwp-start-or-debug.png "başlatmak ve UWP uygulamanızın hatalarını ayıklama için yerel makine tıklatın")
+   ![Yerel makinenin Başlat ve UWP uygulamanızın hatalarını ayıklama için tıklatın](../ide/media/uwp-start-or-debug.png)
 
    (Alternatif olarak, seçebileceğiniz **hata ayıklama** > **hata ayıklamayı Başlat** menü çubuğu veya tuşuna **F5** uygulamanızı başlatmak için.)
 

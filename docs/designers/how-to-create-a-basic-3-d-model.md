@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceeb6bdd5acb878ceb2f3cd6e6e38dada607e1a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745691"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Nasıl yapılır: temel bir 3B modeli oluşturma
 
@@ -30,12 +31,12 @@ Bu makalede, Model Düzenleyicisinde temel 3B model oluşturmak için nasıl kul
 
 -   Kullanarak **Triangulate** komutu
 
-## <a name="create-a-basic-3d-model"></a>Temel bir 3B modeli oluşturma
+## <a name="create-a-basic-3d-model"></a>Temel 3B model oluşturma
  3B modeller ve oyun veya uygulama için planda oluşturmak ve değiştirmek için Model Düzenleyicisi'ni kullanabilirsiniz. Aşağıdaki adımlar, Model Düzenleyicisinde evin Basitleştirilmiş 3B model oluşturmak için nasıl kullanılacağını gösterir. Basitleştirilmiş bir model stand-in hala, çakışma algılaması için bir kafes olarak ya da daha ayrıntılı işleme yararlanmaya temsil ettiği nesne çok uzakta olduğunda kullanılacak düşük ayrıntı modeli olarak oluşturulan son resim varlıklar için kullanılabilir.
 
  İşlemi tamamladığınızda, model aşağıdaki gibi görünmelidir:
 
- ![Basitleştirilmiş house tamamlanmış modelinin](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")
+ ![Basitleştirilmiş house tamamlanmış modeli](../designers/media/gfx_model_demo_house_final.png)
 
  Başlamadan önce emin olun **özellikleri** penceresi ve **araç** görüntülenir.
 
@@ -49,27 +50,27 @@ Bu makalede, Model Düzenleyicisinde temel 3B model oluşturmak için nasıl kul
 
 4.  Küpün üstündeki ayırabilir. Yüz seçim modunda seçimini etkinleştirmek için bir kez küp seçin ve en üst yüz seçmek için küp seçin. Model Düzenleyicisi araç çubuğunda seçin **yüz ayırabilir**. Bu, dört eşit boyutta bölümlere bölme küp üstüne yeni köşeleri ekler.
 
-     ![Küpün üstündeki bölünmüştür](../designers/media/gfx_model_demo_house_subdiv.png "gfx_model_demo_house_subdiv")
+     ![Küpün üstündeki bölünmüştür](../designers/media/gfx_model_demo_house_subdiv.png)
 
 5.  Küpün iki bitişik kenara Yükselt — Örneğin, ön ve sol tarafında kübün. Yüz seçim modunda küp seçimini etkinleştirmek ve bir tarafındaki küp seçmek için bir kez seçin. Tuşuna basın ve CTRL tuşunu basılı tutun, ilk seçtiğiniz yan bitişik küp başka bir tarafını seçin ve ardından Model Düzenleyicisi araç çubuğunda **yüz Yükselt**.
 
-     ![Küpün yanlarından yükseltilmiş](../designers/media/gfx_model_demo_house_extrude.png "gfx_model_demo_house_extrude")
+     ![Küpün yanlarından yükseltilmiş](../designers/media/gfx_model_demo_house_extrude.png)
 
 6.  Extrusions birini genişletin. Yeni yüzeyleri birini yükseltilmiş seçin ve ardından, Model Düzenleyicisi araç çubuğunda **çevir** aracı ve kalıp ile aynı yönde çeviri manipulator taşıyın.
 
-     ![Küpün sütunlardan daha fazla yükseltilmiş. ] (../designers/media/gfx_model_demo_house_extend.png "gfx_model_demo_house_extend")
+     ![Küpün sütunlardan daha fazla yükseltilmiş.](../designers/media/gfx_model_demo_house_extend.png)
 
 7.  Model triangulate. Model Düzenleyicisi araç çubuğunda seçin **Gelişmiş**, **Araçları**, **Triangulate**.
 
 8.  Ev tavan oluşturun. Seçerek kenar seçim moduna geç **seçin kenar** Model Düzenleyicisi araç çubuğunda ve etkinleştirmek için küp seçin. Burada gösterilen kenarları seçerken denetim tuşunu basılı tutun:
 
-     ![Tavan yoğun oluşturacak kenarları](../designers/media/gfx_model_demo_house_edges.png "gfx_model_demo_house_edges")
+     ![Tavan yoğun oluşturacak kenarları](../designers/media/gfx_model_demo_house_edges.png)
 
      Kenarları seçildiğinde Model Düzenleyicisi araç çubuğunda seçin **çevir** aracı ve ardından yukarı evin tavan oluşturmak için çeviri manipulator taşıyın.
 
  Basitleştirilmiş house modeli tamamlanır. İşte son modeli yeniden uygulanan düz gölgelendirme ile:
 
- ![Basitleştirilmiş house tamamlanmış modelinin](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")
+ ![Basitleştirilmiş house tamamlanmış modeli](../designers/media/gfx_model_demo_house_final.png)
 
  Sonraki adım olarak, bu 3D modele gölgelendirici uygulayabilirsiniz. Bilgi için bkz: [nasıl yapılır: bir 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

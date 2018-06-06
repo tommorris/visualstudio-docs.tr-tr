@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752033"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Nasıl yapılır: bir iş akışı iş akışı Tasarımcısı'nda açıklamaları ekleme
 
@@ -52,11 +53,11 @@ Daha büyük ve daha karmaşık iş akışları oluşturma kolaylaştırmak içi
 
    Ek açıklamanın etkinliğin Tasarımcısı'nda görüntülenir. Aşağıdaki ekran görüntüsünde, ek açıklama "İş akışındaki başlangıç etkinliği" etkinliğin Tasarımcısı'nda görüntülenir.
 
-   ![Etkinlik Tasarımcısı'nda gösterilen ek açıklama](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+   ![Etkinlik Tasarımcısı'nda gösterilen ek açıklaması](../workflow-designer/media/annotationindesigner.png)
 
 1. Etkinliğin Tasarımcısı dışında ek açıklama görüntülemek için etkinliğin Tasarımcısı'nda ek açıklama alanı üzerine getirin ve tıklatın **telefondaki** simgesi
 
-   ![Ek açıklama dışında bir etkinliğin designe görüntülenen](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+   ![Bir etkinliğin designe dışında görüntülenen ek açıklaması](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>Gösterme veya gizleme tüm ek açıklamaları
 

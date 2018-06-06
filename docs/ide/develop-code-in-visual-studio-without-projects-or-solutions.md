@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a2fee12882275d78d759e39d69674b4aef2f38b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746033"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Visual Studio projeleri veya çözümler olmadan kod geliştirme
 
@@ -65,7 +66,7 @@ Aşağıdaki örnek, bir GitHub deposuna kopyalamak ve kendi kod Visual Studio'd
 
 |         |         |
 |---------|---------|
-|  ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin")|    [Bir video izlemek](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) nasıl kopyalamak ve kod'i GitHub deposuna Visual Studio'da açın. |
+|  ![video film kamera simgesi](../install/media/video-icon.png)|    [Bir video izlemek](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) nasıl kopyalamak ve kod'i GitHub deposuna Visual Studio'da açın. |
 
 ## <a name="run-and-debug-your-code"></a>Çalıştırın ve kodunuzu hata ayıklama
 
@@ -112,7 +113,7 @@ Kod klasörünüze Visual Studio projesi içeriyorsa, proje başlangıç öğesi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yapı özelleştirebilir ve görevleri hata ayıklama](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
+- [Yapı özelleştirme ve hata ayıklama görevleri](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [C++ için açık klasörü projeler](/cpp/ide/non-msbuild-projects)
 - [C++'ta CMake projeleri](/cpp/ide/cmake-tools-for-visual-cpp)
 - [Kod ve Metin Düzenleyici'de kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)

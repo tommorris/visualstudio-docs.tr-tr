@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3dec7405e6d9964a1e622d5d872ad31efcd541d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748731"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Etki Alanına Özgü Dil Araçları Kullanıcı Arabirimine Genel Bakış
 İlk açtığınızda bir etki alanına özgü dil Araçları (DSL araçları) çözümde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], kullanıcı arabirimi aşağıdaki resme benzeyecektir.
 
- ![DSL Tasarımcısı](../modeling/media/dsl_designer.png "dsl_designer")
+ ![DSL Tasarımcısı](../modeling/media/dsl_designer.png)
 
  Aşağıdaki tabloda, UI parçalarını nasıl kullanılacağını açıklar.
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="the-domain-model-diagram"></a>Etki alanı modeli diyagramı
  Etki alanı modeli diyagramını iki bölüme ayrılmıştır. Diyagramın bir yan modeldeki öğeleri ve ilişkileri gösterir. Diğer taraftaki nasıl model görüntülenecek gösterilir ve öğeleri ve model diyagramı özelliklerini görüntülemek için kullanılan şekiller içerir. Aşağıdaki resimde diyagram öğelerini gösterir.
 
- ![kulvarlı DSL Tasarımcısı](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![kulvarlı DSL Tasarımcısı](../modeling/media/dsl_desinger.png)
 
  Aşağıdaki tabloda bazı etki alanı model diyagramı öğeleri açıklanır.
 

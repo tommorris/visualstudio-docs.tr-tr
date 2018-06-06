@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4960e1f829e2f5d673b1e7069b5813b68ab7bdb
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690945"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748481"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio'da IntelliSense
 
@@ -38,7 +38,7 @@ Bir öğe seçtikten sonra kodunuza tuşlarına basarak eklenebilir **sekmesini*
 
 Üye listesinde, soldaki simge ad alanı, sınıf, işlev veya değişken gibi bir üye türünü temsil eder. Simge listesi için bkz [sınıf görünümü ve Nesne Tarayıcısı simgeleri](../ide/class-view-and-object-browser-icons.md). Basabilirsiniz şekilde listesi çok uzun olabilir **PgUp** ve **PgDn** listede yukarı veya aşağı gitme.
 
-![Visual Studio üye listesi](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Visual Studio üye listesi](../ide/media/vs2015_intellisense.png)
 
 Çağırabilirsiniz **listesi üyeleri** yazarak el ile özellik **Ctrl**+**J**, seçme **Düzenle**  >  **IntelliSense** > **listesi üyeleri**, veya seçerek **listesi üyeleri** Düzenleyicisi araç çubuğunda. Boş bir satırda veya tanınabilir bir kapsamın dışında çağrıldığında, bu liste genel ad alanında simgeleri görüntüler.
 
@@ -52,7 +52,7 @@ Parametre Bilgisi; bir yöntem, öznitelik genel tür parametresi (C#) veya şab
 
 Kalın yazı tipli parametre, işlevi yazarken gerekli olan bir sonraki parametreyi gösterir. Aşırı yüklenen işlevler için kullandığınız **yukarı** ve **aşağı** işlev aşırı yüklemelerinin alternatif parametre bilgilerini görüntülemek için ok tuşlarını.
 
-![Parametre bilgisi](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![Parametre Bilgisi](../ide/media/vs2015_param_info.png)
 
 XML Belgeleri yorumlarıyla işlevlere ve parametrelere ek açıklamalar koyduğunuzda, yorumlar Parametre Bilgisi olarak görüntülenir. Daha fazla bilgi için bkz: [tedarik XML kodu açıklamaları](../ide/supplying-xml-code-comments.md).
 
@@ -62,11 +62,11 @@ Parametre bilgisi seçerek el ile çalıştırabilirsiniz **Düzenle** > **Intel
 
 Hızlı bilgi kodunuzdaki herhangi bir tanımlayıcı için bütün bildirimi görüntüler.
 
-![Visual Studio hızlı bilgi](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Visual Studio hızlı bilgi](../ide/media/vs2015_quick_info.png)
 
 Üyeden seçtiğinizde **listesi üyeleri** kutusunda, hızlı bilgi de görünür.
 
-![Parametre bilgisi bir c&#35; kod dosyası](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Parametre bilgisi bir c&#35; kod dosyası](../ide/media/vs2015_paraminfo.png)
 
 Seçerek el ile hızlı bilgi çağırabileceği **Düzenle** > **IntelliSense** > **hızlı bilgi**, basarak **Ctrl** + **I**, veya seçerek **hızlı bilgi** Düzenleyicisi araç çubuğunda.
 

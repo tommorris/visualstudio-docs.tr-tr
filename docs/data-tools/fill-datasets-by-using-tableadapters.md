@@ -21,11 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3f3dd16bef85ebe8b90dd5f456f4e386113a8b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745704"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters kullanarak veri kümelerini doldurma
 Bir TableAdapter bileşeni veritabanından bir veya daha fazla sorgular veya belirttiğiniz saklı yordamlar göre verileri içeren bir veri kümesi doldurur. TableAdapters de gerçekleştirebilir ekler, güncelleştirmeleri ve veri kümesi için yaptığınız değişiklikleri kalıcı hale getirmek için veritabanı üzerinde siler. Ayrıca, belirli bir tabloya ilgisiz Genel komutlar da verebilir.
@@ -49,7 +50,7 @@ Bir TableAdapter bileşeni veritabanından bir veya daha fazla sorgular veya bel
 ## <a name="tableadapter-overview"></a>TableAdapter genel bakış
  TableAdapters bir veritabanı, çalışma sorguları ya da saklı yordamları ve bunların DataTable döndürülen verilerle doldurmak tasarımcısı tarafından oluşturulan bileşenleridir. TableAdapters güncelleştirilen verileri veritabanına uygulamanızdan de gönderir. TableAdapter ilişkili olduğu tablo şemaya uyan veri döndürmeleri sürece bir TableAdapter üzerinde istediğiniz tüm sorguları çalıştırabilirsiniz. Aşağıdaki diyagramda, veritabanları ve diğer nesnelerle bellekte TableAdapters nasıl etkileşim kurduğu gösterilmektedir:
 
- ![Bir istemci uygulamasında veri akışı](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")
+ ![Bir istemci uygulamasında veri akışı](../data-tools/media/clientdatadiagram.gif)
 
  TableAdapters ile tasarlanmıştır sırada **veri kümesi Tasarımcısı**, TableAdapter sınıfları iç içe geçmiş sınıflar oluşturulmaz <xref:System.Data.DataSet>. Bunlar her veri kümesi için belirli ayrı ad alanları bulunur. Adlı bir veri varsa, örneğin, `NorthwindDataSet`, ilişkili TableAdapters <xref:System.Data.DataTable>s `NorthwindDataSet` içinde olacaktır `NorthwindDataSetTableAdapters` ad alanı. Belirli bir TableAdapter bağdaştırıcısına program aracılığıyla erişmek için TableAdapter'ın yeni bir örneğini bildirmeniz gerekir. Örneğin:
 
@@ -63,7 +64,7 @@ Bir TableAdapter bileşeni veritabanından bir veya daha fazla sorgular veya bel
  Bir TableAdapter güncelleştirme işlevselliğini ne kadar bilgi TableAdapter Sihirbazı'nı ana sorgusunda kullanılabilir olduğuna bağlıdır. Örneğin, değerleri birden çok tablodan (JOIN), skalar değerden veya görünümden ya da toplu işlevlerin sonuçlarından alacak şekilde yapılandırılan TableAdapter bağdaştırıcıları, başlangıçta güncelleştirmeleri temel alınan veritabanına geri gönderebilme özelliğiyle oluşturulmaz. Ancak, INSERT, UPDATE ve DELETE komutları el ile yapılandırabilirsiniz **özellikleri** penceresi.
 
 ## <a name="tableadapter-queries"></a>TableAdapter sorguları
- ![Birden çok sorguyla TableAdapter](../data-tools/media/tableadapter.gif "TableAdapter")
+ ![TableAdapter ile birden çok sorgu](../data-tools/media/tableadapter.gif)
 
  TableAdapters ilişkili veri tablolarıyla doldurmak için birden çok sorgu içerebilir. Bir TableAdapter için, her sorgu ilişkili olduğu veri tablosunun şemasına uyan veriler döndürdüğü sürece, uygulamanızın gerektirdiği sayıda sorgu tanımlayabilirsiniz. Bu özellik farklı ölçütlere göre farklı sonuçlar yüklemek bir TableAdapter sağlar.
 

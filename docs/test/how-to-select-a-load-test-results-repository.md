@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752007"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Nasıl yapılır: Yük Testi Sonuçları Deposunu Seçme
 
@@ -37,7 +38,7 @@ Aracıları hakkında daha fazla bilgi için bkz: [Test denetleyicileri ve test 
 
 2.  Gelen **yük testi** araç seçin **Test Denetleyicilerini Yönet**. Test denetleyicisi Yönet iletişim kutusu görüntülenir. Aracıyı uzaktan kullanıyorsanız, bir denetleyici seçmelisiniz.
 
-     ![Yük testi sonuçları deposunu bağlantı özelliklerini](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") yük testi sonuçları deposunu bağlantı özellikleri
+     ![Yük testi sonuçları deposunu bağlantı özelliklerini](../test/media/loadtestconnectionproperties.png) yük testi sonuçları deposunu bağlantı özellikleri
 
 3.  İçinde **Yük Testi Sonuçları Deposu**, (...) görüntülemek için tıklatın **bağlantı özelliklerini** iletişim kutusu.
 

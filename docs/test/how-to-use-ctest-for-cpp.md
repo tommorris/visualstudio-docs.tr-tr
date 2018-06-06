@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ec0dd78b7bfdc3389a9867478e546c5456e42437
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751039"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Visual Studio'da c++ CTest kullanma
 
@@ -29,7 +30,7 @@ Visual Studio 2017 içinde sürüm 15,6, CTest tam olarak tümleşiktir **Test G
 
 Aşağıdaki çizimde Google Test Çerçevesi kullanarak çalışacak bir CTest sonuçlarını gösterir:
 
-![Google Test çerçevesinde VS2017 ile CTest 15,6](media/ctest-test-explorer.png "CTest ve Google testinde Test Gezgini")
+![Google Test çerçevesinde VS2017 ile CTest 15,6](media/ctest-test-explorer.png)
 
 CTest ancak değil Google veya artırma bağdaştırıcıları kullanıyorsanız, tek tek yerine CTest düzeyinde yöntemi düzeyi test sonuçları görürsünüz. Hata ayıklama ve Adımla yalnızca CTest yürütülebilir dosyaları, ancak Yığın izlemeleri tek tek testlerin üzerinde desteklenmez.
 
@@ -37,7 +38,7 @@ CTest ancak değil Google veya artırma bağdaştırıcıları kullanıyorsanız
 
 İçinde **Visual Studio 2017 sürüm 15,5**, CTest ile tümleşik değildir **Test Gezgini**. Testlerinizi CMake ana menüden veya bağlam menüsünden çalıştırabilirsiniz bir **CMakeLists.txt** dosyasını **Çözüm Gezgini**. Visual Studio test sonuçlarını yönergelerine uygun **çıktı penceresi**.
 
-![VS2017 15,5 CTest testler](media/cpp-cmake-run-tests.png "çalıştırmak CTest içinde 15,5 testleri")
+![VS2017 15,5 CTest testleri çalıştırma](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

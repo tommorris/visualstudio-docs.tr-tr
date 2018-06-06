@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750941"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Hangi Web başarımı, birim ve kodlanmış UI testleri bir yük testi senaryosunda içerecek şekilde belirlemek için Test Karışımını düzenleme
 
@@ -36,7 +37,7 @@ Yeni Yük Testi Sihirbazı'nı kullanarak yeni bir senaryoya oluşturduğunuzda,
 
 Yük Testi Düzenleyicisini kullanarak karışımına senaryo için daha fazla Web performansı ve birim testleri ekleyebilirsiniz.
 
-![Mevcut bir yük testi için test ekleme](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![Mevcut bir yük testi için test ekleme](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Daha fazla testleri varolan bir senaryoyu eklemek için
 
@@ -55,7 +56,7 @@ Yük Testi Düzenleyicisini kullanarak karışımına senaryo için daha fazla W
 5.  (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın. Daha fazla bilgi için bkz: [karışımı denetimi hakkında](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ##  <a name="EditingTestMixRemoveTest"></a> Senaryodan testleri kaldırma
- ![Varolan yük testten test kaldırma](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![Varolan yük testten test kaldırma](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Senaryodan testleri kaldırmak için
 

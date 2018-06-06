@@ -19,7 +19,7 @@ ms.openlocfilehash: 53a6b138509648af102a50217a8bab4d32b27a2a
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693922"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerini çalıştırmak için gereken değişiklikler

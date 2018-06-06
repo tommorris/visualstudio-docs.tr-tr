@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d80881d69addd2d1f92bdf2c9b47c6f528945d30
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50cbb0eb3a9c0c24abaa3734b7fa9cbd01e839b7
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766733"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Nasıl yapılır: Özel bir SharePoint Proje Öğe Uzantısına Özellik Ekleme
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Nasıl yapılır: bir SharePoint Proje öğe uzantısına özellik ekleme
   Visual Studio'da zaten yüklü herhangi bir SharePoint proje öğesi bir özellik eklemek için bir proje öğesi uzantısı kullanabilirsiniz. Özellik görünür **özellikleri** proje öğesi seçildiğinde penceresi **Çözüm Gezgini**.  
   
  Aşağıdaki adımlar, bir proje öğesi uzantısı zaten oluşturduğunuzu varsayalım. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:System.ComponentModel.EditorAttribute>: Özelliği değiştirmek için kullanılacak özel bir düzenleyici belirtir.  
   
-## <a name="compiling-the-code"></a>Kod Derleniyor  
+## <a name="compiling-the-code"></a>Kod derleme  
  Bu örnekler bir sınıf kitaplığı projesi aşağıdaki derlemeler başvuruları gerektirir:  
   
 -   Microsoft.VisualStudio.SharePoint  
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="deploying-the-extension"></a>Uzantısını dağıtma  
  Uzantıyı dağıtmak için oluşturma bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer dosyalar için. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
  [Nasıl yapılır: bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [SharePoint proje öğelerini genişletme](../sharepoint/extending-sharepoint-project-items.md)   

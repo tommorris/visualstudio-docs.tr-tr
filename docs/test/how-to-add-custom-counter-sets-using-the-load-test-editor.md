@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bd58cc29368ed66d3dd8c35fa4bdf3c87aa6a747
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752020"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini Kullanarak Özel Sayaç Kümeleri Ekleme
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 Sayaçlarınızın içinde yönetmek **Yük Testi Düzenleyicisi**. Teste zaten ekli sayaç kümelerini görünür **sayaç kümelerini** yük testi düğümü. Bir yük testi oluşturduktan sonra yeni özel sayaç kümeleri ekleyebilirsiniz.
 
-![Özel sayaç kümesi](../test/media/loadtestcustomcounter.png "LoadTestCustomCounter")
+![Özel sayaç kümesi](../test/media/loadtestcustomcounter.png)
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Özel sayaç kümesi bir yük testine eklemek için
 

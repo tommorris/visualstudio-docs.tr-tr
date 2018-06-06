@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690932"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747046"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Bir veritabanı oluşturun ve Visual Studio'da tablolar ekleyin
 Visual Studio oluşturmak ve SQL Server Express LocalDB yerel veritabanı dosyasında güncelleştirmek için kullanabilirsiniz. Transact-SQL deyimlerinde yürüterek bir veritabanı oluşturabilirsiniz **SQL Server Nesne Gezgini** Visual Studio'daki aracı. Bu konuda, biz .mdf dosyası oluşturun ve Tablo Tasarımcısı kullanarak tablolar ile anahtarlar eklemek.
@@ -36,7 +36,7 @@ Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama v
 
 3.  Öğe şablonları listesinde aşağı kaydırın ve seçin **hizmet tabanlı veritabanı**.
 
-     ![Öğe şablonları iletişim kutusu](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![Öğe şablonları iletişim kutusu](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  Veritabanı adı **SampleDatabase**ve ardından **Ekle** düğmesi.
 
@@ -95,7 +95,7 @@ Bu bölümde, iki tablo, her bir tablo ve birkaç örnek veri satırı bir birin
 
     Şöyle bir şey görmeniz gerekir:
 
-    ![Tablo Tasarımcısı](../data-tools/media/raddata-table-designer.png "raddata Tablo Tasarımcısı")
+    ![Tablo Tasarımcısı](../data-tools/media/raddata-table-designer.png)
 
 7.  Sol üst köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme** düğmesi.
 
@@ -130,7 +130,7 @@ Bu bölümde, iki tablo, her bir tablo ve birkaç örnek veri satırı bir birin
 ### <a name="to-create-a-foreign-key"></a>Yabancı anahtar oluşturmak için
 1.  Izgaranın sağ tarafındaki içerik bölmesinde için kısayol menüsünü açın **yabancı anahtarlar**ve ardından **yeni yabancı anahtar Ekle**, aşağıdaki çizimde gösterildiği gibi.
 
-     ![Tablo Tasarımcısı'nda bir yabancı anahtar ekleme](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Tablo Tasarımcısı'nda bir yabancı anahtar ekleme](../data-tools/media/foreignkey.png)
 
 2.  Görüntülenen metin kutusunda, yerine **ToTable** ile `Customers`.
 

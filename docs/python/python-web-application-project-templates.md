@@ -1,7 +1,7 @@
 ---
 title: Python için Web Uygulama Şablonları
 description: Visual Studio şablonları Python yapılandırmaları hata ayıklama ve Azure App Service'te yayımlama da dahil olmak üzere Bottle, Flask ve Django çerçeveler kullanılarak yazılmış web uygulamaları için genel bakış.
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752046"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -41,7 +42,7 @@ Bir proje ile daha fazla tüm "Boş (framework) Web projesi" şablonlar oluştur
 | --- | --- |
 | Boş Bottle Web projesi | En az bir uygulamada oluşturur `app.py` için bir giriş sayfası ile `/` ve `/hello/<name>` görüntülemektedir sayfa `<name>` çok kısa satır içi sayfa şablonu kullanarak. |
 | Boş Django Web projesi | Çekirdek Django sitesi yapısını ancak hiçbir Django uygulamaları ile Django projesi oluşturur. Daha fazla bilgi için bkz: [Django şablonları](python-django-web-application-project-template.md) ve [öğrenme Django adım 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| Boş Flask Web projesi | Bir tek "Hello World!" ile en az bir uygulama oluşturur için sayfa `/`. Bu uygulamanın ayrıntılı adımlarını izleyerek sonucunu benzer [hızlı başlangıç: ilk Python web uygulamanızı oluşturmak için Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default).
+| Boş Flask Web projesi | Bir tek "Hello World!" ile en az bir uygulama oluşturur için sayfa `/`. Bu uygulamanın ayrıntılı adımlarını izleyerek sonucunu benzer [hızlı başlangıç: ilk Python web uygulamanızı oluşturmak için Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default). Ayrıca bkz. [öğrenme Flask adım 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Web grubu
 
@@ -51,19 +52,19 @@ Tüm "(Framework) Web projesi" şablonları, seçilen framework bakılmaksızın
 | --- | --- |
 | Bottle Web projesi | Yalnızca statik dosyalar içerdiği bir uygulama oluşturur `static` klasörü ve kodda aracılığıyla işlenmesini `app.py`. Tek tek sayfaları için yönlendirme içinde barındırılan `routes.py`ve `views` klasörü sayfası şablonları içerir.|
 | Django Web projesi | Django proje ve üç sayfaları, kimlik doğrulama desteği ve bir SQLite veritabanı (ancak hiçbir veri modelleri) ile Django uygulamasını oluşturur. Daha fazla bilgi için bkz: [Django şablonları](python-django-web-application-project-template.md) ve [öğrenme Django adım 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| Flask Web projesi | Yalnızca statik dosyalar içerdiği bir uygulama oluşturur `static` klasör. Kod `views.py` işler sayfası şablonlarını içinde yer alan Jinja altyapısını kullanarak yönlendirme `templates` klasör. `runserver.py` Dosyası başlangıç kodu sağlar. |
-| Flask/Jade Web projesi | "Flask Web projesi" şablonu ancak Jade şablon motoru kullanarak uygulamayı olarak oluşturur. |
+| Flask Web projesi | Yalnızca statik dosyalar içerdiği bir uygulama oluşturur `static` klasör. Kod `views.py` işler sayfası şablonlarını içinde yer alan Jinja altyapısını kullanarak yönlendirme `templates` klasör. `runserver.py` Dosyası başlangıç kodu sağlar. Bkz: [Flask adım 4 öğrenme](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
+| Flask/Jade Web projesi | "Flask Web projesi" şablonu ancak Jade uzantısı için Jinja şablon motoru kullanarak uygulamayı olarak oluşturur. |
 
 ### <a name="polls-group"></a>Anketler grubu
 
-"Yoklamalar (framework) Web projesi" şablonları ilgili farklı yoklama soruları üzerinden kullanıcıların oy bir başlangıç web uygulaması oluşturun. Her uygulama anketler ve kullanıcı yanıtlarını yönetmek için bir veritabanını kullanmak için "Web" proje şablonlarını yapısı oluşturur. Uygun veri modelleri dahil uygulamalar ve sayfa ("/ çekirdek"), özel bir uygulama yoklamalar dan yükleyen bir `samples.json` dosyası.
+"Yoklamalar (framework) Web projesi" şablonları ilgili farklı yoklama soruları üzerinden kullanıcıların oy bir başlangıç web uygulaması oluşturun. Her uygulama anketler ve kullanıcı yanıtlarını yönetmek için bir veritabanını kullanmak için "Web" proje şablonlarını yapısı oluşturur. Uygun veri modelleri dahil uygulamalar ve sayfa (/ Temel), özel bir uygulama yoklamalar dan yükleyen bir `samples.json` dosyası.
 
 | Şablon | Açıklama |
 | --- | --- |
 | Anketler Bottle Web projesi | Bellek içi veritabanı, MongoDB veya kullanılarak yapılandırılan Azure Table Storage karşı çalıştırabilirsiniz bir uygulama oluşturur `REPOSITORY_NAME` ortam değişkeni. Veri modelleri ve veri deposu kodu bulunan `models` klasörünü ve `settings.py` dosyası, hangi veri deposu kullanıldığını belirlemek için kod içerir. |
 | Yoklamalar Django Web projesi | Django proje ve bir Django uygulamayla üç sayfaları ve bir SQLite veritabanı oluşturur. Kimliği doğrulanmış yönetici oluşturmak ve anketler yönetmek izin vermek için Django yönetim arabirimini özelleştirmeleri içerir. Daha fazla bilgi için bkz: [Django şablonları](python-django-web-application-project-template.md) ve [öğrenme Django adım 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| Anketler Flask Web projesi | Bellek içi veritabanı, MongoDB veya kullanılarak yapılandırılan Azure Table Storage karşı çalıştırabilirsiniz bir uygulama oluşturur `REPOSITORY_NAME` ortam değişkeni. Veri modelleri ve veri deposu kodu bulunan `models` klasörünü ve `settings.py` dosyası, hangi veri deposu kullanıldığını belirlemek için kod içerir. Uygulama için sayfa şablonları Jinja altyapısı kullanır. |
-| Anketler Flask/Jade Web projesi | "Yoklamalar Flask Web projesi" şablonu ancak Jade şablon motoru kullanarak uygulamayı olarak oluşturur. |
+| Anketler Flask Web projesi | Bellek içi veritabanı, MongoDB veya kullanılarak yapılandırılan Azure Table Storage karşı çalıştırabilirsiniz bir uygulama oluşturur `REPOSITORY_NAME` ortam değişkeni. Veri modelleri ve veri deposu kodu bulunan `models` klasörünü ve `settings.py` dosyası, hangi veri deposu kullanıldığını belirlemek için kod içerir. Uygulama için sayfa şablonları Jinja altyapısı kullanır. Bkz: [adım 5'in Flask öğrenme](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
+| Anketler Flask/Jade Web projesi | "Yoklamalar Flask Web projesi" şablonu ancak Jade uzantısı için Jinja şablon motoru kullanarak uygulamayı olarak oluşturur. |
 
 ## <a name="installing-project-requirements"></a>Proje gereksinimlerini yükleme
 
@@ -71,7 +72,7 @@ Bir proje çerçeveye özel şablonu oluştururken, PIP kullanarak gerekli paket
 
 ![İletişim kutusu için bir proje şablonu paketleri gerekli](media/template-web-requirements-txt-wizard.png)
 
-Kaynak denetimi kullanıyorsanız, bu ortam yalnızca kullanılarak yeniden oluşturulması gibi genellikle sonra sanal ortam klasörü atlayın `requirements.txt`. Klasörü dışlamak için en iyi yolu ilk seçmektir **ı bunları kendim yükleyecek** isteminde yukarıda gösterilen, ardından otomatik tamamlama sanal ortamı oluşturmadan önce devre dışı bırakın. Ayrıntılar için bkz [öğrenme Django Öğreticisi - 1-2 ve 1-3 adımları](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+Kaynak denetimi kullanıyorsanız, bu ortam yalnızca kullanılarak yeniden oluşturulması gibi genellikle sonra sanal ortam klasörü atlayın `requirements.txt`. Klasörü dışlamak için en iyi yolu ilk seçmektir **ı bunları kendim yükleyecek** isteminde yukarıda gösterilen, ardından otomatik tamamlama sanal ortamı oluşturmadan önce devre dışı bırakın. Ayrıntılar için bkz [öğrenme Django Öğreticisi - 1-2 ve 1-3 adımları](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) ve [öğrenme Flask Öğreticisi - 1-2 ve 1-3 adımları](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
 
 Microsoft Azure App Service'e dağıtırken Python sürümünü seçin bir [site uzantısı](https://aka.ms/PythonOnAppService) ve paketleri el ile yükleyin. Ayrıca, Azure App Service yaptığından **değil** paketleri otomatik olarak yüklemek bir `requirements.txt` dosya Visual Studio'dan dağıtıldığında, yapılandırma ayrıntılarını izleyin [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 

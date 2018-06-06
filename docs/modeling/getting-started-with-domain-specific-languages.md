@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750265"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Etki Alanına Özgü Dillerle Çalışmaya Başlama
 Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir etki alanına özgü dil (DSL) kullanarak temel kavramlar açıklanmaktadır.
@@ -28,7 +29,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
  DSL tasarlarken, Visual Studio Tümleştirme Uzantısı (VSIX) paketinin bir parçası olarak dağıtabilirsiniz. Visual Studio'da DSL ile kullanıcılar çalışır:
 
- ![Aile ağacı diyagramı, araç ve Gezgini](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Aile ağacı diyagramı, araç ve Gezgini](../modeling/media/familyt_instance.png)
 
  Gösterimi DSL yalnızca bir parçası olur. Gösterimi birlikte VSIX paketi kullanıcılar bunları düzenleyin ve bunların modellerinden malzemesi oluşturmak amacıyla uygulayabilir araçlarını içerir.
 
@@ -60,7 +61,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
 3.  Tıklatın **etki alanına özgü dil Tasarımcısı**.
 
-     ![Oluştur iletişim kutusu DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Oluştur DSL iletişim kutusu](../modeling/media/create_dsldialog.png)
 
 4.  İçinde **adı** kutusuna **FamilyTree**. **Tamam**'ı tıklatın.
 
@@ -87,7 +88,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
  Kullanıcı arabirimi şimdi aşağıdaki resimde benzer.
 
- ![DSL Tasarımcısı](../modeling/media/dsl_designer.png "dsl_designer")
+ ![DSL Tasarımcısı](../modeling/media/dsl_designer.png)
 
  Bu çözüm, etki alanı belirli bir dil tanımlar. Daha fazla bilgi için bkz: [etki alanına özgü dil araçları kullanıcı arabirimi genel bakış](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -136,7 +137,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
  Aşağıdaki örnek, Deneysel Visual Studio benzeyecektir:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Bir Model içeriği
  DSL örneği bir dosyanın içeriğini adlı bir *modeli*. Modeli içeren *modeli ** öğeleri* ve *bağlantılar* olan öğeler arasında. Model öğelerini ne tür DSL tanımı belirtir ve bağlantıları modelde bulunabilir. Örneğin, en az bir dil şablondan oluşturulan bir DSL içinde var. bir model öğesi türünü ve bir bağlantı türü
@@ -196,7 +197,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
 1.  DslDefinition şemada yeniden adlandırma **ExampleModel** için **FamilyTreeModel**, **ExampleElement** için **kişi**,  **Hedefleri** için **üst**, ve **kaynakları** için **alt**. Değiştirmek için her etiket tıklatabilirsiniz.
 
-     ![DSL tanımı diyagramı &#45; Aile Ağacı Modeli](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![DSL tanımı diyagramı &#45; Aile Ağacı Modeli](../modeling/media/familyt_person.png)
 
 2.  Öğe ve bağlayıcı Araçlar yeniden adlandırın.
 
@@ -255,7 +256,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
     4.  Her yeni oluşturma öğesi seçin ve Özellikler penceresinde ayarlayın **konumu** alan. Bu, etki alanı özellik değeri şeklin üzerinde nerede görüntüleneceğini belirler. Örneğin, **InnerBottomLeft** ve **InnerBottomRight**.
 
-         ![Şekil tanımı compartment](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![Bölme şekli tanımı](../modeling/media/familyt_compartment.png)
 
 3.  Dekoratörler özelliklerine eşlenir.
 
@@ -271,7 +272,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
 6.  .Tt dosyasında her birinin özelliklerini alır kodu ekleyebilirsiniz.
 
- ![Aile ağacı diyagramı, araç ve Gezgini](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Aile ağacı diyagramı, araç ve Gezgini](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Yeni sınıflar tanımlayın
  Bir model için etki alanı sınıflar ve ilişkiler ekleyebilirsiniz. Örneğin, şehir ve bir kişi bir piyasada yaşamakta temsil etmek için yeni bir ilişki temsil etmek için yeni bir sınıf oluşturabilirsiniz.
@@ -297,7 +298,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
     1.  Tıklatın **başvuru ilişkisi** aracı, kişi'yi tıklatın ve sonra Şehir'ı tıklatın.
 
-         ![DSL tanımı parça: Aile ağacı kök](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![DSL tanımı parça: Aile ağacı kök](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Başvuru ilişkileri çapraz bir model ağacına bölümünden diğerine temsil eder.
@@ -322,7 +323,7 @@ Bu konuda tanımlama ve modelleme SDK ile Visual Studio için oluşturulmuş bir
 
     2.  Kullanım **diyagram öğesi harita** kişi ve şehir arasındaki ilişkiyi yeni bağlayıcı bağlamak için aracı.
 
-         ![Şekil eklendi harita Aile ağacı tanımıyla](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![Şekil eklendi harita Aile ağacı tanımıyla](../modeling/media/familyt_shapemap.png)
 
 6.  Yeni Şehir yapmak için bir öğe aracı oluşturun.
 

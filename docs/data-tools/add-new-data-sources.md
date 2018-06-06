@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745600"
 ---
 # <a name="add-new-data-sources"></a>Yeni veri kaynakları ekleyin
 Visual Studio'da .NET veri araçları bağlamında terimi *veri kaynağı* , bir veri deposuna bağlanmak ve .NET uygulama verileri kullanıma .NET nesneleri gösterir. Visual Studio tasarımcıları veritabanı nesnelerini sürükleyip yükleyen formlara veri bağlar Demirbaş kod oluşturmak için veri kaynağı çıktı tüketebileceği **veri kaynakları** penceresi. Bu türdeki veri kaynağının aşağıdakilerden biri olabilir:
@@ -39,11 +40,11 @@ Visual Studio'da .NET veri araçları bağlamında terimi *veri kaynağı* , bir
 
  Oluşturma ve veri kaynakları kullanarak düzenleme **veri kaynağı Yapılandırma Sihirbazı** bir Windows Forms ya da Windows Presentation Foundation uygulamasında. Entity Framework için ilk varlık sınıfı oluşturun ve ardından seçerek Sihirbazı'nı başlatmak **proje** > **yeni veri kaynağı Ekle** (Bu makalenin sonraki bölümlerinde daha ayrıntılı açıklanmıştır).
 
- ![Veri Kaynağı Yapılandırma Sihirbazı'nı](../data-tools/media/data-source-configuration-wizard.png "veri kaynağı Yapılandırma Sihirbazı")
+ ![Veri Kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png)
 
  Bir veri kaynağı oluşturduktan sonra görünür **veri kaynakları** araç penceresi (Shift + Alt + D veya **Görünüm** > **diğer pencereler**  >  **Veri kaynağı**). Bir veri kaynağından sürükleyebilirsiniz **veri kaynakları** form Tasarım yüzeyi veya denetimi penceresi. Bu Demirbaş kod oluşturulmasına neden olur — kullanıcı veri deposundaki kaynaklı verileri görüntüler kodu. Aşağıdaki çizimde Windows formunuza bırakılan bir veri kümesini gösterir. Uygulamanın F5 seçtiyseniz, veritabanından alınan veri formun denetimlerinde görüntülenir.
 
- ![Veri kaynağı sürükleme işlemi](../data-tools/media/raddata-data-source-drag-operation.png "raddata veri kaynağı işlemi sürükleyin")
+ ![Veri kaynağı sürükleme işlemi](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Bir veritabanı veya veritabanı dosyası için veri kaynağı
 
@@ -53,15 +54,15 @@ Visual Studio'da .NET veri araçları bağlamında terimi *veri kaynağı* , bir
 ### <a name="entity-classes"></a>Varlık sınıfı
  Veri kaynağı olarak bir Entity Framework modelini oluşturmak için ilk çalıştırma **varlık veri modeli Sihirbazı** varlık sınıfları oluşturmak için (**proje** > **Yeni Öğe Ekle**  >  **ADO.NET varlık veri modeli**).
 
- ![Yeni Entity Framework modelini proje öğesi](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata yeni Entity Framework modelini proje öğesi")
+ ![Yeni Entity Framework modelini proje öğesi](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  Model oluşturmak istediğiniz yöntemi seçin.
 
- ![Varlık veri modeli Sihirbazı](../data-tools/media/raddata-entity-data-model-wizard.png "raddata varlık veri modeli Sihirbazı")
+ ![Varlık veri modeli Sihirbazı](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  Model bir veri kaynağı olarak ekleyin. Oluşturulan sınıflar görünür **veri kaynağı Yapılandırma Sihirbazı** seçtiğinizde **nesneleri** kategorisi.
 
- ![Veri Kaynağı Yapılandırma Sihirbazı varlık sınıflarla](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata sınıflar ile veri kaynağı Yapılandırma Sihirbazı")
+ ![Sınıflar ile veri kaynağı Yapılandırma Sihirbazı](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Bir hizmet için veri kaynağı
  Bir veri kaynağı alanından bir hizmet oluşturmak için çalıştırın **veri kaynağı Yapılandırma Sihirbazı** ve **hizmet** veri kaynağı türü. Bu gerçekten yalnızca kısayoludur **hizmet Başvurusu Ekle** projeye sağ tıklayarak da erişebilirsiniz iletişim kutusu, **Çözüm Gezgini** ve seçerek **hizmet Başvurusu Ekle** .

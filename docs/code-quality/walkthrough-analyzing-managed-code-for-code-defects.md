@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746565"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod çözümleme yönetilen kod kusurlarını
 
@@ -30,7 +31,7 @@ Bu kılavuzda Microsoft .NET Framework tasarım yönergeleri ile uyumluluk için
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje...** .
 
-1. İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü** > **Visual C#** ve ardından **Windows Klasik Masaüstü**.
+1. İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü** > **Visual C#** ve ardından **Windows Masaüstü**.
 
 1. Seçin **sınıf kitaplığı (.NET Framework)** şablonu.
 

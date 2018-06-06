@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691485"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765758"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC modeli tasarım araçlarına genel bakış
   BDC Tasarımcısı kullanarak iş verileri bağlantı (BDC) modeli tasarlayabilirsiniz **BDC yöntem ayrıntıları** penceresinde ve **BDC Gezgini**.  
@@ -56,14 +56,14 @@ ms.locfileid: "34691485"
   
  Finder, belirli bir Bulucu, Creator, güncelleştirici ve Silici yöntemlerinde hemen oluşturabilirsiniz **BDC yöntem ayrıntıları** penceresi. Bu yöntemleri oluşturduğunuzda, Visual Studio yönteme parametre, örnekleri ve tür tanımlayıcısı gibi meta veri ekler. Size özel senaryonun karşılamak için bu meta verileri değiştirebilirsiniz.  
   
- Açmak için **BDC yöntem ayrıntıları** menü çubuğunda, pencere **Görünüm**, **diğer pencereler**, **BDC yöntem ayrıntıları**.  
+ Açmak için **BDC yöntem ayrıntıları** menü çubuğunda, pencere **Görünüm** > **diğer pencereler** > **BDC yöntem ayrıntıları** .  
   
  Yöntemleri görüntülemek için **BDC yöntem ayrıntıları** penceresinde BDC Tasarımcısı'nda varlığı seçin. Seçilen varlığın yöntemlerinin görünür **BDC yöntem ayrıntıları** penceresi. BDC Tasarımcısı'nda bir varlık seçmezseniz **BDC yöntem ayrıntıları** penceresi hiçbir bilgi görüntüler.  
   
  Genişlet veya daralt düğümler **BDC yöntem ayrıntıları** parametreleri, örneklerini tanımlayın ve tanımlayıcıları filtrelemek için penceresi. Kullanım **BDC Gezgini** tür tanımlayıcısı tanımlamak için.  
   
 ## <a name="bdc-explorer"></a>BDC Gezgini
- **BDC Gezgini** modelini olun öğelerini görüntüler. Açmak için **BDC Gezgini**, menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **BDC Gezgini**. Model göz atmak için düğümleri genişletin **BDC Gezgini**. Her düğüm model dosyası XML bir öğeyi temsil eder.  
+ **BDC Gezgini** modelini olun öğelerini görüntüler. Açmak için **BDC Gezgini**, menü çubuğunda seçin **Görünüm** > **diğer pencereler** > **BDC Gezgini**. Model göz atmak için düğümleri genişletin **BDC Gezgini**. Her düğüm model dosyası XML bir öğeyi temsil eder.  
   
  Düğümler seçerken **BDC Gezgini**, seçtiğiniz her bir düğüm özelliklerini görünür **özellikleri** penceresi. Bu özelliklerin çoğu öznitelikler model dosyasında karşılık gelir. En üstte arama kutusunu kullanarak model arayabilirsiniz **BDC Gezgini**.  
   

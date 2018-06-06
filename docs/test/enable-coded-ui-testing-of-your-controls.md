@@ -9,32 +9,33 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 42c5e312aa467eea494e6c667f61157d953dddd0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751760"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Denetimlerinizin kodlanmış UI testlerini etkinleştirme
 
 Denetim daha sınanabilir yapmak framework kodlanmış UI testi için destek uygular. Artan düzeyde destek artımlı olarak ekleyebilirsiniz. Kaydı ve kayıttan yürütme ve özellik doğrulama destekleyerek başlatın. Ardından, bu konudaki denetiminizin özel özellikler tanımak kodlanmış UI test derleyicisini etkinleştirmek için oluşturun. Oluşturulan koddan bu özelliklere erişmek için özel sınıflar sağlar. Kodlanmış UI test Oluşturucu yakalama eylemlerini kaydedilen eylem amacı yakın bir şekilde de yardımcı olabilir.
 
-![CUIT&#95;tam](../test/media/cuit_full.png "CUIT_Full")
+![CUIT&#95;tam](../test/media/cuit_full.png)
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Erişilebilirlik uygulayarak kaydı ve kayıttan yürütme ve özellik doğrulama desteği
 
 Kodlanmış UI test derleyicisini kayıt sırasında karşılaştığı ve bu oturuma yeniden yürütme için kod oluşturur denetimleri hakkında bilgi yakalar. Denetim erişilebilirlik desteklemiyorsa, kodlanmış UI test derleyicisini ekran koordinatları kullanarak (fare tıklamaları gibi) eylemleri yakalar. Test çalınma olduğunda oluşturulan kod aynı ekran koordinatları Eylemler yayınlar. Testi kayıttan yürütülürken denetiminizi farklı bir yerde ekranda görünürse oluşturulan kod eylemi gerçekleştirmek başarısız olur. Denetim için erişilebilirlik uygulayarak değil, görebilirsiniz Testi kayıttan farklı ortamlarda, farklı ekran yapılandırmaları çalınması veya UI Düzen değiştirdiğinde hataları test.
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
  Erişilebilirlik uygularsanız, kodlanmış UI test derleyicisini test kaydettiğinde, denetimi hakkında bilgi yakalamak için kullanılır. Testi çalıştırdığınızda, kullanıcı arabiriminde başka bir yere olsa bile, daha sonra oluşturulan kodu karşı denetim olayları kullanılmaya devam. Test yazarlar da oluşturabilir, denetim temel özelliklerini kullanarak onaylar.
 
- ![CUIT&#95;kaydı](../test/media/cuit_record.png "CUIT_Record")
+ ![CUIT&#95;kaydı](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Destek kaydı ve kayıttan yürütme ve bir Windows Forms denetimi için gezinme özelliği doğrulama
  Aşağıdaki yordamda özetlendiği gibi denetim için erişilebilirlik uygulamak ve ayrıntılı olarak açıklanmıştır <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;erişilebilir](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;erişilebilir](../test/media/cuit_accessible.png)
 
 1.  Türeyen bir sınıf uygulama <xref:System.Windows.Forms.Control.ControlAccessibleObject>ve geçersiz kılma <xref:System.Windows.Forms.Control.AccessibilityObject%2A> özelliği, sınıfın bir nesnesi döndürür.
 
@@ -74,11 +75,11 @@ Kodlanmış UI test derleyicisini kayıt sırasında karşılaştığı ve bu ot
 
 Kaydı ve kayıttan yürütme ve özelliği doğrulama için temel destek uyguladıktan sonra denetiminizin özel özellikler kodlanmış UI testleri için uygulayarak koyabileceğiniz bir <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> eklentisi. Örneğin, aşağıdaki yordamı grafik denetiminin CurveLegend alt denetimleri State özelliği erişmek kodlanmış UI testleri sağlayan bir özellik sağlayıcısı oluşturur:
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Özel özellik doğrulamayı desteklemek için
 
-![CUIT&#95;özellik](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;özellik](../test/media/cuit_props.png)
 
 1. Eğri gösterge erişilebilir nesnenin geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Description%2A> zengin özellik değerlerini açıklama dizesine geçmenizi özelliği. Birden çok değerleri noktalı virgülle (;) ayırın.
 
@@ -146,7 +147,7 @@ Denetimin özel özellikler erişim sağlamak için bir özellik sağlayıcısı
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Denetim erişmek için özel bir sınıf eklemek için
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. Türetilmiş bir sınıf uygulama <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> ve denetimin türü oluşturucuda arama özellikleri koleksiyonuna ekleyin.
 
@@ -162,7 +163,7 @@ Denetimin özel özellikler erişim sağlamak için bir özellik sağlayıcısı
 
 ### <a name="to-support-intent-aware-actions"></a>Hedefi algılayan eylemleri desteklemek için
 
-![CUIT&#95;Eylemler](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;Eylemler](../test/media/cuit_actions.png)
 
 1. Türetilmiş bir eylem filtresi sınıf uygulama <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, özelliklerini geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> ve <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.
 

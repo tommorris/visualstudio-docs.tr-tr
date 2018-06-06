@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750733"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Kodlanmış UI Test Günlüklerini Kullanarak Kodlanmış UI Testlerini Çözümleme
 
@@ -72,17 +73,17 @@ Değişiklikler ile kodlanmış bir UI testi çalıştırdığınızda **QTAgent
 
 4.  Seçin **çıkış** Test Gezgini sonuçlarında bağlantı.
 
-     ![Test Gezgini çıkış bağlantıyı](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Çıktı bağlantıyı Test Gezgini](../test/media/cuit_htmlactionlog1.png)
 
      Bu eylem günlüğü için bir bağlantı içerir test için çıktı görüntüler.
 
-     ![Sonuçları ve kodlanmış UI testi çıkış bağlantılarından](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Sonuçları ve çıktı bağlantılarından kodlanmış UI testi](../test/media/cuit_htmlactionlog2.png)
 
 5.  Seçin *UITestActionLog.html* bağlantı.
 
      Günlük, web tarayıcınızda görüntülenir.
 
-     ![Kodlanmış UI testi günlük dosyası](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Kodlanmış UI testi günlük dosyası](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

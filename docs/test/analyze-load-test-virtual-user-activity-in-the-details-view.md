@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750844"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Yük Testi Çözümleyicisinin Ayrıntılar Görünümünde Yük Testi Sanal Kullanıcı Etkinliğini Çözümleme
 
 **Sanal Kullanıcı Etkinlik Grafiği**
 
- ![Sanal Kullanıcı Etkinlik Grafiği](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![Sanal Kullanıcı Etkinlik Grafiği](../test/media/virtual_actchart.png)
 
  Sanal Kullanıcı Etkinlik ne tek tek sanal kullanıcıların yük testi boyunca görsel olarak çözümlemek için kullanılan grafik, Ayrıntılar görünümünü görüntüler. Sanal Kullanıcı Etkinlik Grafiği kullanıcı etkinliği desenleri görmek, yük desenleri, yavaş veya başarısız testleri ilişkilendirmenizi ve diğer sanal kullanıcı etkinliği ile ilgili istekleri görmenizi sağlar. Sanal Kullanıcı Etkinlik Grafiği ayrıca CPU kullanımında ani belirlemenize yardımcı olabilir, ikinci, hangi testler veya sayfa başına isteklerdeki bırakmaları bırakmaları ve ani sırasında çalışıyordu.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
  **Ayrıntılar gösterge paneli**
 
- ![Ayrıntılar gösterge paneli](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![Ayrıntılar gösterge paneli](../test/media/ltest_detailslegend.png)
 
  Ayrıntılar gösterge paneli Sanal Kullanıcı Etkinlik Grafiği'görünür olur. Ayrıntılar gösterge bölmesi testleri, sayfalar ve işlemleri birkaç farklı ölçütlere göre filtrelemenize olanak sağlar. Örneğin, bazı testleri görünümden kaldırabilir veya tüm başarılı testleri kaldırabilir veya belirli hataları ile başarısız olan testleri kaldırın. Günlükleri olmayan tüm testleri de kaldırabilirsiniz.
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
  **Sonuçlar Panelini filtreleme**
 
- ![Filtre sonuçlar paneli](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![Filtre sonuçlar paneli](../test/media/ltest_filterresults.png)
 
  Filtre sonuçlar paneli Sanal Kullanıcı Etkinlik Grafiği'görünür olur. Filtre sonuçlar paneli aşağıdakilere göre filtreleyebilirsiniz:
 

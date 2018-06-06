@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747475"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 *Hiyerarşik güncelleştirme* bilgi tutarlılığı kuralları korurken (kümesindeki iki veya daha fazla ilişkili tabloları ile) güncelleştirilmiş verileri bir veritabanına geri kaydetme işlemi başvuruyor. *Başvuru bütünlüğü* bir veritabanında ve ekleme, güncelleştirme ve ilgili kayıtları silme davranışını denetleyen kısıtlamalar tarafından sağlanan tutarlık kuralları başvuruyor. Örneğin, o müşteri için siparişleri oluşturulmasına izin vermeden önce bir müşteri kaydı oluşturulmasını zorlar başvuru bütünlüğü olur.  Veri kümelerindeki ilişkiler hakkında daha fazla bilgi için bkz: [kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Bir veri kümesinde hiyerarşik güncelleştirmeyi etkinleştirme
  Varsayılan olarak, eklenen veya bir proje ile oluşturulan tüm yeni veri kümeleri için hiyerarşik güncelleştirme etkindir. Ayarlayarak hiyerarşik güncelleştirme açma veya kapatma **hiyerarşik güncelleştirme** özelliği için kümesindeki türü belirtilmiş veri kümesinin **True** veya **False**:
 
- ![Hiyerarşik güncelleştirme ayarını](../data-tools/media/hierarchical-update-setting.png "hiyerarşik güncelleştirme ayarı")
+ ![Hiyerarşik güncelleştirme ayarı](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Yeni tablolar arasında ilişki oluşturma
  İki tablo arasında yeni bir ilişki oluşturmak için veri kümesi Tasarımcısı'nda her tablonun başlık çubuğu seçin, sonra sağ tıklatın ve seçin **ilişki ekleyin**.
 
- ![Hiyerarşik güncelleştirme ekleme ilişkisi menüsü](../data-tools/media/hierarchical-update-add-relation-menu.png "hiyerarşik güncelleştirme ilişkisi menüsü ekleme")
+ ![Hiyerarşik güncelleştirme ilişkisi menüsü ekleme](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Yabancı anahtar kısıtlamaları, geçişli güncelleştirme ve silme anlama
  Nasıl yabancı anahtar kısıtlamaları anlamak önemlidir ve davranışı veritabanındaki basamaklı üretilen veri kümesi kodda oluşturulur.

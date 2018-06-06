@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad41dc48303fa836e4c15f0e450b3fade60ff646
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765745"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: Desteklenmeyen CLR Sürümü
+# <a name="da0029-unsupported-clr-version"></a>DA0029: Desteklenmeyen CLR sürümü
 |||  
 |-|-|  
 |Kural Kimliği|DA0029|  
@@ -35,8 +36,8 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Sebep  
  Kullanan bir uygulama profili çalıştığınız [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] profil oluşturma araçları tarafından desteklenmiyor.  
   
-## <a name="rule-description"></a>Kural Tanımı  
+## <a name="rule-description"></a>Kural açıklaması  
  Bu uyarı, profil oluşturma araçları uygulamasında çalışan yönetilen kod için simgeleri çözümleyemez oluşur. Profil Araçları çalışmakta olan uygulamalar için yönetilen kod simgeleri çözümlenemiyor [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
   
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
+## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl  
  Yok.

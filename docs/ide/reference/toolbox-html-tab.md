@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752702"
 ---
 # <a name="toolbox-html-tab"></a>Araç kutusu, HTML sekmesi
 
@@ -33,13 +34,13 @@ Aşağıdaki araçlar varsayılan HTML sekmesinde bulunur.
 
 **İşaretçi**
 
-![ASP.NET Mobil Tasarımcı HTMLsayfası işaretçi](../../ide/reference/media/vxpointer.gif "vxPointer")
+![ASP.NET Mobil Tasarımcı HTMLsayfası işaretçi](../../ide/reference/media/vxpointer.gif)
 
 Herhangi bir araç kutusu sekmesini açar, bu aracın varsayılan olarak seçilir. Silinemiyor. İşaretçinin nesneleri Tasarım görünümü yüzeyine sürükleyin, onları yeniden boyutlandırabilir ve onları sayfa ya da form üzerinde yeniden konumlandırmak etkinleştirir. Daha fazla bilgi için bkz: [araç](../../ide/reference/toolbox.md).
 
 **Giriş (düğme)**
 
-![HTML web sayfasının düğmesini](../../ide/reference/media/vxbutton.gif "vxButton")
+![HTML web sayfası düğmesi](../../ide/reference/media/vxbutton.gif)
 
 Ekler bir `input` öğesinin `type="button"`. Görüntülenen metni değiştirmek için Düzenle `name` özelliği. Varsayılan olarak, `id="Button1"` ilk düğmesi için eklenen `id="Button2"` ikinci vb. için.
 
@@ -51,7 +52,7 @@ Sürüklediğinizde **giriş (düğme)** Tasarım görünümü yüzeyine belgeni
 
 **Giriş (Sıfırla)**
 
-![HTMLpageResetButton ekran görüntüsü](../../ide/reference/media/vxreset.gif "vxReset")
+![HTMLpageResetButton ekran görüntüsü](../../ide/reference/media/vxreset.gif)
 
 Ekler bir `input` öğesinin `type="reset"`. Görüntülenen metni değiştirmek için Düzenle `name` özelliği. Varsayılan olarak, `id="Reset1"` ilk Sıfırla düğmesi, için eklenen `id="Reset2"` ikinci vb. için.
 
@@ -63,7 +64,7 @@ Sürüklediğinizde **giriş (Sıfırla)** Tasarım görünümü yüzeyine belge
 
 **Giriş (Gönder)**
 
-![HTMLpageToolbarSubmitButton ekran görüntüsü](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![HTMLpageToolbarSubmitButton ekran görüntüsü](../../ide/reference/media/vxsubmit.gif)
 
 Ekler bir `input` öğesinin `type="submit"`. Görüntülenen metni değiştirmek için Düzenle `name` özelliği. Varsayılan olarak, `id="Submit1"` için ilk gönderme düğmesi, eklenen `id="Submit2"` ikinci vb. için.
 
@@ -75,7 +76,7 @@ Sürüklediğinizde **giriş (Gönder)** Tasarım görünümü yüzeyine belgeni
 
 **Girişi (metin)**
 
-![HTMLpageToolbarTextField ekran görüntüsü](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![HTMLpageToolbarTextField ekran görüntüsü](../../ide/reference/media/vxtextfield.gif)
 
 Ekler bir `input` öğesinin `type="text"` belgenize. Görüntülenen varsayılan metni değiştirmek için Düzenle `value` özniteliği. Varsayılan olarak, `id="Text1"` ilk metin alanı için eklenen `id="Text2"` ikinci vb. için.
 
@@ -90,7 +91,7 @@ Sürüklediğinizde **girişi (metin)** Tasarım görünümü yüzeyine belgeniz
 
 **Giriş (dosya)**
 
-![HTML sayfası dosya alanı](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![HTML sayfası dosya alanı](../../ide/reference/media/vxfilefield.gif)
 
 Ekler bir `input` öğesinin `type="file"` belgenize. Varsayılan olarak, `id="File1"` ilk dosya alanı için eklenen `id="File2"` ikinci vb. için.
 
@@ -105,7 +106,7 @@ Sürüklediğinizde **giriş (dosya)** Tasarım görünümü yüzeyine belgenize
 
 **Giriş (parola)**
 
-![Visual Studio parola alanı](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Visual Studio parola alanı](../../ide/reference/media/vxpassword.gif)
 
 Ekler bir `input` öğesinin `type="password"`. Varsayılan olarak, `id="Password1"` ilk parola alanı için eklenen `id="Password2"` ikinci vb. için.
 
@@ -120,7 +121,7 @@ Sürüklediğinizde **giriş (parola)** Tasarım görünümü yüzeyine belgeniz
 
 **Giriş (onay kutusu)**
 
-![HTML Web sayfası araç kutusu onay kutusu seçeneği](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![HTML Web sayfası araç kutusu onay kutusu seçeneği](../../ide/reference/media/vxcheckbox.gif)
 
 Ekler bir `input` öğesinin `type="checkbox"`. Görüntülenen metni değiştirmek için Düzenle `name` özelliği. Varsayılan olarak, `id="Checkbox1"` ilk onay kutusu için eklenen `id="Checkbox2"` ikinci vb. için.
 
@@ -132,7 +133,7 @@ Sürüklediğinizde **giriş (onay kutusu)** Tasarım görünümü yüzeyine bel
 
 **Giriş (radyo)**
 
-![VisualStudioHTMLpageRadioButton ekran görüntüsü](../../ide/reference/media/vxradio.gif "vxRadio")
+![VisualStudioHTMLpageRadioButton ekran görüntüsü](../../ide/reference/media/vxradio.gif)
 
 Ekler bir `input` öğesinin `type="radio"`. Görüntülenen metni değiştirmek için Düzenle `name` özelliği. Varsayılan olarak, `id="Radio1"` ilk radyo düğmesi için eklenen `id="Radio2"` ikinci vb. için.
 
@@ -144,7 +145,7 @@ Sürüklediğinizde **giriş (radyo)** Tasarım görünümü yüzeyine belgenize
 
 **Giriş (gizli)**
 
-![HTML sayfası gizli öğe](../../ide/reference/media/vxhidden.gif "vxhidden")
+![HTML sayfası gizli öğesi](../../ide/reference/media/vxhidden.gif)
 
 Ekler bir `input` öğesinin `type="hidden"`. Varsayılan olarak, `id="Hidden1"` ilk gizli alan için eklenen `id="Hidden2"` ikinci vb. için.
 
@@ -156,7 +157,7 @@ Sürüklediğinizde **giriş (gizli)** Tasarım görünümü yüzeyine belgenize
 
 **TextArea**
 
-![HTMLsayfası araç çubuğu metin alanı](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![HTMLsayfası araç çubuğu metin alanı](../../ide/reference/media/vxtextarea.gif)
 
 Ekler bir `textarea` öğesi. Metin alanını yeniden boyutlandırın veya genişletir metin, görüntü alanını görüntülemek için kendi kaydırma çubuklarını kullanın. Görüntülenen varsayılan metni değiştirmek için Düzenle `value` özniteliği. Varsayılan olarak, `id="textarea1"` olan ilk metin alanı eklenen `id=" textarea 2"` ikinci vb. için.
 
@@ -171,7 +172,7 @@ Sürüklediğinizde **Textarea** Tasarım görünümü yüzeyine belgenize HTML 
 
 **Tablo**
 
-![HTMLpageToolbarTable ekran görüntüsü](../../ide/reference/media/vxtable.gif "vxTable")
+![HTMLpageToolbarTable ekran görüntüsü](../../ide/reference/media/vxtable.gif)
 
 Ekler bir `table` öğesi.
 
@@ -183,7 +184,7 @@ Sürüklediğinizde **tablo** Tasarım görünümü yüzeyine belgenize HTML bi�
 
 **Görüntü**
 
-![HTML sayfası resim öğesi](../../ide/reference/media/vximage.gif "vxImage")
+![HTML sayfası resim öğesi](../../ide/reference/media/vximage.gif)
 
 Ekler bir `img` öğesi. Belirtmek için bu öğe Düzenle kendi `src` ve kendi `alt` metin.
 
@@ -195,7 +196,7 @@ Sürüklediğinizde **görüntü** Tasarım görünümü yüzeyine belgenize HTM
 
 **seçin**
 
-![HTML sayfası araç kutusu açılan kutu](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![HTML sayfası araç kutusu açılan kutu](../../ide/reference/media/vxdropdown.gif)
 
 Bir açılır ekler `select` öğesi (olmadan bir `size` özniteliği). Varsayılan olarak, `id="select1"` ilk liste kutusu için eklenen `id="select2"` ikinci vb. için.
 
@@ -209,7 +210,7 @@ Sürüklediğinizde **seçin** Tasarım görünümü yüzeyine belgenize HTML bi
 
 **Yatay çizgi**
 
-![HTML sayfası Yatay kural öğesi](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![HTML sayfası Yatay kural öğesi](../../ide/reference/media/vxhorizontal.gif)
 
 Ekler bir `hr` öğesi. Çizgi kalınlığını artırmak için düzenleme `size` özniteliği.
 
@@ -221,7 +222,7 @@ Sürüklediğinizde **yatay çizgi** Tasarım görünümü yüzeyine belgenize H
 
 **div**
 
-![HTML sayfası etiketi](../../ide/reference/media/vxlabel.gif "vxLabel")
+![HTML sayfası etiketi](../../ide/reference/media/vxlabel.gif)
 
 Ekler bir `div` içeren öğesi bir `ms_positioning="FlowLayout"` özniteliği. Genişlik ve yükseklik dışında bu öğe bir akış düzeni paneline aynıdır. İçinde bulunan metni biçimlendirmek için `div` öğesi ekleme bir `class="stylename"` özniteliği için açılış etiketi.
 

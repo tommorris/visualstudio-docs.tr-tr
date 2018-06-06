@@ -24,14 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d0475653fe3c5950e39e9f8293d5179e9380db6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b96a316e451528b886dd1eba0840a3212678e922
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692177"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766353"
 ---
-# <a name="creating-an-association-between-entities"></a>Varlıklar arasında ilişkilendirme oluşturma
+# <a name="create-an-association-between-entities"></a>Varlıklar arasında ilişkilendirme oluşturma
   İş verileri bağlantı (BDC) modelinizdeki ilişkilendirmeleri oluşturarak varlıklar arasındaki ilişkiler tanımlayabilirsiniz. Visual Studio tüketicileri modelin her bir ilişkilendirme hakkında bilgi sağlayan yöntemler oluşturur. Bu yöntemler, SharePoint web bölümleri, liste veya veri ilişkileri kullanıcı arabiriminde (UI) görüntülemek için özel uygulamaları tarafından kullanılabilecek.  
   
 ## <a name="create-an-association"></a>İlişkilendirme oluşturma

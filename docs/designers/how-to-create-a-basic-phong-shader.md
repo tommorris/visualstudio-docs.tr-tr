@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c18bb0c42138f861cf48a13777a6ee13c05148
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746591"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Nasıl Yapılır: Temel Phong Gölgelendiricisi Oluşturma
 
@@ -45,7 +46,7 @@ Başlamadan önce emin olun **özellikleri** penceresi ve **araç** görüntüle
 > [!NOTE]
 > Bu çizimde gölgelendirici etkisini daha iyi göstermek için turuncu bir renk kullanarak belirtilmiş **MaterialDiffuse** kullanarakgölgelendiricivemetalikgörünümlübirbitişparametresibelirtilmedi**MaterialSpecular** ve **MaterialSpecularPower** parametreleri. Önizleme gölgelendiriciler bölümünde malzeme parametreleri hakkında daha fazla bilgi için bkz [gölgelendirici Tasarımcısı](../designers/shader-designer.md).
 
- ![Gölgelendirici grafik ve etkisini önizlemesini](../designers/media/digit-lighting-graph.png "basamaklı aydınlatma grafiği")
+ ![Gölgelendirici grafik ve etkisini önizlemesi](../designers/media/digit-lighting-graph.png)
 
  Belirli şekillerin daha iyi önizlemeleri için bazı gölgelendiriciler sağlayabilir. Önizleme gölgelendiriciler bölümünde gölgelendirici Tasarımcısı'nda gölgelendiriciler önizleme hakkında daha fazla bilgi için bkz [gölgelendirici Tasarımcısı](../designers/shader-designer.md)
 
@@ -56,7 +57,7 @@ Başlamadan önce emin olun **özellikleri** penceresi ve **araç** görüntüle
 >
 > **MaterialSpecularPower** özelliği, aynasal vurgular nasıl yoğun olan belirler. Yüksek aynasal powers düzeyi benzetimini, daha fazla yerelleştirilmiş vurgular. Çok düşük aynasal powers oversaturate ve tüm yüzeyini rengini Gizle yoğun, sakınımlı vurgular benzetimi.
 
- ![Bir modeline uygulanan Phong aydınlatma](../designers/media/digit-lighting-model.png "basamaklı aydınlatma modeli")
+ ![Bir modeline uygulanan Phong aydınlatma](../designers/media/digit-lighting-model.png)
 
  Gölgelendirici uygulama 3B bir modeli hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

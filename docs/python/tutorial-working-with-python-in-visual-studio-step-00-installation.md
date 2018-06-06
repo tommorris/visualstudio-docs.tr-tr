@@ -11,16 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc3f85e776fa7ec45bd157a9cffe99f6ac0b1aac
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: fd9703e6d18f075cb1033a03552caa7708b719b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751394"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio'da Python desteğini yükleme
 
 > [!Note]
-> Python desteği yalnızca Windows için Visual Studio üzerinde şu anda kullanılabilir; Mac ve Linux üzerinde Python desteği Visual Studio Code ile kullanılabilir. Bkz: [sorular ve yanıtlar](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
+> Python desteği yalnızca Windows için Visual Studio üzerinde şu anda kullanılabilir; Mac ve Linux üzerinde Python desteği aracılığıyla kullanılabilir [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 1. İndirin ve Windows için en son Visual Studio 2017 yükleyiciyi çalıştırın (Python desteği 15.2 ve daha yeni sürümde mevcut). Visual Studio'nun zaten yüklü varsa, Visual Studio yükleyiciyi çalıştırın ve 2. adıma geçin.
 

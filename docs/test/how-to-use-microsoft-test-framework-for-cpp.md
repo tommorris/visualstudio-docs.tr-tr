@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751695"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft Visual Studio'da C++ Framework sınama birim kullanın
 
@@ -55,7 +56,7 @@ Statik yöntemleri kullanın [Assert](microsoft-visualstudio-testtools-cppunitte
 2.  Test Gezgini seçin **tümünü Çalıştır**, veya çalıştırmak istediğiniz belirli testleri seçin. Bir test ile kesme noktaları etkin hata ayıklama modunda çalışan dahil olmak üzere diğer seçenekler için sağ tıklayın.
 3. İçinde **çıktı penceresi** seçin **testleri** tarafından yazılan iletileri görüntüleme aşağı açılan `Logger` sınıfı:
 
-  ![C++ çıktı penceresi sınama iletilerini gösteren](media/cpp-test-output-window.png "çıktı penceresi")
+  ![Sınama iletilerini gösteren C++ çıktı penceresi](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Gruplandırma etkinleştirmek için özellikleri tanımlayın
 Kategorilere ayırmak ve testlerinde Grup sağlayan test yöntemlerinde nitelikler tanımlayabilirsiniz **Test Gezgini**. Bir ayırdedici nitelik tanımlamak için `TEST_METHOD_ATTRIBUTE` makrosu. Örneğin, bir ayırdedici nitelik tanımlamak için adlandırılmış `TEST_MY_TRAIT`:

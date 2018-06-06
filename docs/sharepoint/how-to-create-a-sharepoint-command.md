@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbfaeba966a2608f67ff63b0de39f13669a7169f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 026c15241ace87a3d7454afb2439e045d06ce67b
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767669"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>Nasıl yapılır: Bir SharePoint Komutu Oluşturma
+# <a name="how-to-create-a-sharepoint-command"></a>Nasıl yapılır: bir SharePoint komutu oluşturma
   Sunucu nesne modeli bir SharePoint araçları uzantısı'nda kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'yi çağırmak için. SharePoint komutu sunucusu nesne modeline doğrudan çağırabilir miyim bir derlemede tanımlayın.  
   
  SharePoint komutları amacı hakkında daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
   
  Örtük ilk yanı sıra <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parametresi, bu komut ayrıca SharePoint sitesine yükseltiliyor .wsp dosyasının tam yolunu içeren özel bir dize parametresine sahiptir. Bu kodu daha büyük bir örneğin bağlamında görmek için bkz: [izlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
-## <a name="compiling-the-code"></a>Kod Derleniyor  
+## <a name="compiling-the-code"></a>Kod derleme  
  Bu örnekte aşağıdaki derlemelere başvuruları gerektirir:  
   
 -   Microsoft.VisualStudio.SharePoint.Commands  
@@ -77,11 +78,10 @@ ms.lasthandoff: 04/16/2018
 -   Microsoft.SharePoint  
   
 ## <a name="deploying-the-command"></a>Komut dağıtma  
- Komut dağıtmak için komut derleme aynı dahil [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini uzantı derlemesi ile komut kullanır. Ayrıca, extension.vsixmanifest dosyasındaki komutu derleme için bir giriş eklemeniz gerekir. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Komut dağıtmak için komut derleme aynı dahil [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (*VSIX*) komutunu kullanan uzantı derlemesi paketiyle. Ayrıca, extension.vsixmanifest dosyasındaki komutu derleme için bir giriş eklemeniz gerekir. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Nasıl yapılır: SharePoint komutu yürütme](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [İzlenecek yol: Sunucu Gezginini Web Bölümlerini Görüntülemek Üzere Genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
   

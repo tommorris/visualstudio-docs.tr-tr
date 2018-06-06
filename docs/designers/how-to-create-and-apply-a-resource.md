@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a162c66f4a014d50da7ad7bd3cd5da9edd6e43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a1b76c5790c255a3c1ca2ed0fe38bc0d13a8d02
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746653"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Oluşturma ve kaynak Uygula
 Yeniden kullanılabilir varlıklar kaynakları adlı stilleri ve şablonları öğelerin XAML Tasarımcısı'nda depolanır. Stilleri öğesi özelliklerini ayarlamak ve çoklu öğeler arasında tutarlı bir görünüm için bu ayarları yeniden etkinleştirin. A [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) denetiminin görünümünü tanımlar ve ayrıca bir kaynak olarak uygulanabilir. Daha fazla bilgi için bkz: [hızlı başlangıç: stil denetimleri](http://go.microsoft.com/fwlink/?LinkID=248239) ve [hızlı başlangıç: denetim şablonları](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -32,7 +33,7 @@ Yeniden kullanılabilir varlıklar kaynakları adlı stilleri ve şablonları ö
 
      Bir kaynak oluşturmak için uygun bir iletişim kutusu görüntülenir. Bir kaynak bir fırça oluşturduğunuzda bu iletişim kutusu görüntülenir:
 
-     ![Kaynak Oluştur iletişim kutusu](../designers/media/xaml_create_resource.png "xaml_create_resource")
+     ![Kaynak Oluştur iletişim kutusu](../designers/media/xaml_create_resource.png)
 
 3.  İçinde **adı (anahtar)** kutusunda, bir anahtar adı girin. Bu kaynağa başvuran diğer öğeleri istediğinizde kullanabileceğiniz addır.
 

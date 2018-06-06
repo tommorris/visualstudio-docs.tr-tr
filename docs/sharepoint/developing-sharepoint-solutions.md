@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 622ac8b6fd9f003c8bfccbd953f4b5f51cd00332
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766291"
 ---
-# <a name="developing-sharepoint-solutions"></a>SharePoint Çözümleri Geliştirme
+# <a name="develop-sharepoint-solutions"></a>SharePoint çözümleri geliştirme
   Birkaç SharePoint proje türü şablonları kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint siteleri ve site öğeleri oluşturmak için. Kullanılabilir proje türleri listesi için bkz: [SharePoint Proje ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md). Bir SharePoint Proje özelliklerini ve bir açıklama öğelerin aşağıda verilmiştir.  
   
  SharePoint 2013 ve SharePoint eklentiler hakkında daha fazla bilgi için bkz: [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) ve [yapı SharePoint eklentiler](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
-## <a name="elements-of-a-sharepoint-project"></a>Bir SharePoint Proje öğeleri  
+## <a name="elements-of-a-sharepoint-project"></a>Bir SharePoint Proje öğeleri
  Bir SharePoint Proje düğümlerinde olarak da bilinir *SharePoint öğeleri*. SharePoint öğeleri olarak adlandırılan bir veya daha fazla alt dosyası, ayrıca içerebilir *SharePoint öğesi dosyalarını*, gibi [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] yapılandırma dosyalarını, .aspx formlar ve daha fazlası.  
   
  Proje öğesi dosyalarıyla zaten doldurulmuş proje şablonları kullanarak projeleri oluşturmak yerine, kullanabilirsiniz **boş proje** şablonu boş bir SharePoint projesi oluşturun ve ardından Proje öğeleri el ile ekleyin. SharePoint projeleri Ayrıca isteğe bağlı olarak bir veya daha fazla özellik dosyalarını (etkinleştirme SharePoint) ve projeyi dağıtmak üzere bir paket dosyası içerebilir.  
   
-### <a name="special-nodes"></a>Özel düğümler  
+### <a name="special-nodes"></a>Özel düğümler
  Her SharePoint projesi, yeniden adlandırılmış, silinmiş, kesme, kopyalanamaz veya projeden sürüklenen iki düğüm içerir. Bu düğümler aşağıdaki gibidir:  
   
--   Özellikler  
-  
+-   Özellikler    
 -   Paket  
   
  Hiçbir özellikleri veya paketler için proje tanımlanan olsa bile her iki düğüm tüm SharePoint projelerde her zaman görüntülenir.  
   
-#### <a name="features-node"></a>Özellikler düğümü  
+#### <a name="features-node"></a>Özellikler düğümü
  **Özellikleri** düğüm bir veya daha fazla SharePoint Proje özelliklerini içerir. Bir özellik uzantılarının SharePoint için bir kapsayıcıdır. Bir özelliğin SharePoint sunucusuna dağıtıldıktan sonra site tanımları dahil veya SharePoint sitelerinde SharePoint yöneticiler tarafından ayrı ayrı etkin. Daha fazla bilgi için bkz: [özellikleriyle çalışma](http://go.microsoft.com/fwlink/?LinkID=147704).  
   
  Bir SharePoint projesine bir içerik türü veya bir liste örneği gibi bir öğe eklediğinizde, bir özellik eklenir **özellikleri** düğümü. Öğe kapsamı için yeni veya var olan bir özellik eklenip eklenmediğini belirler. Yeni öğe aynı kapsamı var olan bir özellik varsa, bu özelliğe eklenir. Aksi takdirde, öğe için yeni bir özellik eklenir.  
@@ -52,17 +52,17 @@ ms.lasthandoff: 05/17/2018
   
  Bir özelliği bir SharePoint projesine eklendiğinde görünür **Çözüm Gezgini** varsayılan bir düğüm olarak özellik adını*x*.feature, burada *x* benzersiz bir sayıdır. Bir özelliğin SharePoint sunucusuna dağıtıldıktan sonra bir SharePoint Yöneticisi, SharePoint sitesini kullanıcılar için kullanılabilir duruma etkinleştirebilirsiniz.  
   
-#### <a name="package-node"></a>Paket düğümü  
+#### <a name="package-node"></a>Paket düğümü
  **Paket** düğümü SharePoint proje için dağıtım mekanizması olarak görev yapar tek bir dosya içerir. Olarak bilinen bu dosyayı bir *çözüm paketi*, değil. CAB tabanlı bir. WSP uzantısı. Bir çözüm paketi özellikleri, site tanımları ve SharePoint sitelerine Uygula ve etkinleştir veya tek tek devre dışı bırakan derlemeler kümesini içeren dağıtılabilir, yeniden kullanılabilir bir dosyadır. **Paket** düğüm ayrıca her zaman Package.wspdef, adlı bir dosyayı içeren bir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] paket tanımı dosyası. Bir paket SharePoint çalıştıran sunucuya dağıtıldıktan sonra SharePoint Yöneticisi yükleyin ve onun özelliklerini etkinleştirin.  
   
  Görüntülemek veya paket düğümünde çift tıklatarak veya kısayol menüsünü açarak ve ardından paket tasarımcısını paketin içeriğini değiştirme **açık**. Daha fazla bilgi için bkz: [SharePoint çözüm paketleri oluşturma](../sharepoint/creating-sharepoint-solution-packages.md).  
   
-## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint Proje ve proje öğesi özellikleri  
+## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint Proje ve proje öğesi özellikleri
  SharePoint projeleri, olduğu gibi diğer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeleri, Özellikler penceresini ve Özellikler sayfasını özelliklerini görüntüleme. Görüntülenen özellikler, seçili düğümde bağlıdır.  
   
  Bir SharePoint Proje, proje öğesi veya proje öğesi dosya düğümü seçildiğinde **Çözüm Gezgini**, aşağıdaki özellikler Özellikler penceresini veya özellikler sayfasında görünür:  
   
-### <a name="project-properties"></a>Proje Özellikleri  
+### <a name="project-properties"></a>Proje Özellikleri
   
 |Özellik adı|Açıklama|  
 |-------------------|-----------------|  
@@ -82,7 +82,7 @@ ms.lasthandoff: 05/17/2018
   
  Bir SharePoint öğesi dosyasını (örneğin, bir iş akışı veya özellikleri düğümünde bir özellik) seçtiğinizde, aşağıdaki özellikler Özellikleri penceresinde görünür:  
   
-### <a name="project-item-properties"></a>Proje öğesi özellikleri  
+### <a name="project-item-properties"></a>Proje öğesi özellikleri
   
 |Özellik adı|Açıklama|  
 |-------------------|-----------------|  
@@ -93,7 +93,7 @@ ms.lasthandoff: 05/17/2018
 |Proje çıktı başvuruları|Proje öğesi çalıştırmak için gereken bir derleme gibi bir bağımlılık belirtiyor. Daha fazla bilgi için bkz: [sağlama paketleme ve dağıtım bilgileri proje öğelerinde](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |Güvenli denetim girişleri|Güvenilmeyen kullanıcıların düzenlemek için güvenli denetimler belirtir. Daha fazla bilgi için bkz: [sağlama paketleme ve dağıtım bilgileri proje öğelerinde](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
   
-### <a name="project-item-file-properties"></a>Öğesi proje dosyası özellikleri  
+### <a name="project-item-file-properties"></a>Öğesi proje dosyası özellikleri
   
 |Özellik adı|Açıklama|  
 |-------------------|-----------------|  
@@ -104,11 +104,11 @@ ms.lasthandoff: 05/17/2018
 |Dağıtım Konumu|SharePoint sunucusunda dosyasının tam yolu. Bu yol dağıtım kök ve dağıtım yolu alt özelliklerini oluşur.|  
 |Dağıtım yolu|SharePoint Server dosyası Workflow1 gibi dosyasının göreli yol\\. Dosyanın tam yolunu birleştirerek oluşturulan *dağıtım yolu* değeri sonuna *dağıtım kök* değeri.<br /><br /> Değeri seçme *RootFile* için *dağıtım türü* özellik değişikliklerini *dağıtım kök* {SharePointRoot} özelliğine\\, sonuç olarak bir {SharePointRoot} \Workflow1 tam yolunu\\. Daha fazla bilgi için bkz: [paketleme ve dağıtma SharePoint çözümlerini](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Dağıtım kök|Dize. Dosya SharePoint sunucusu üzerinde dağıtıldığı kök klasörü. Örneğin, {SharePointRoot} \Template\Features\\{FeatureName}\\.<br /><br /> Değeri *dağıtım kök* özelliği tarafından belirlenir *dağıtım türü* ayarı.|  
-|Dağıtım türü|Belirler dosyanın dağıtım türü kendi *dağıtım kök* değeri. Aşağıdaki değerlerden biri olabilir:<br /><br /> NoDeployment: \<hiçbir değer ><br /><br /> ElementManifest: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: {SharePointRoot} \Resources\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Dağıtım türü|Belirler dosyanın dağıtım türü kendi *dağıtım kök* değeri. Aşağıdaki değerlerden biri olabilir:<br /><br /> NoDeployment:  *\<hiçbir değer >*<br /><br /> ElementManifest: *{SharePointRoot} \Template\Features\\{FeatureName}*\\<br /><br /> ElementFile: *{SharePointRoot} \Template\Features\\{FeatureName}\\*<br /><br /> TemplateFile: *{SharePointRoot} \Template\\*<br /><br /> RootFile: *{SharePointRoot}\\*<br /><br /> GlobalResource: *{SharePointRoot} \Resources\\*<br /><br /> ClassResource: *{ClassResourcePath}\\*<br /><br /> Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Dosya Adı|Dosya veya klasör adı öğesi dosyası için.|  
 |Tam yolu|Öğesi için dosyanın konumu. (Salt okunur.)|  
   
-## <a name="related-topics"></a>İlgili Konular  
+## <a name="related-topics"></a>İlgili konular
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
@@ -131,7 +131,7 @@ ms.lasthandoff: 05/17/2018
 |[SharePoint Çözümleri için Güvenlik](../sharepoint/security-for-sharepoint-solutions.md)|SharePoint çözümleri geliştirmek için güvenlik konuları açıklar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[URL Seçici iletişim kutusu &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Projenizdeki veya yerel SharePoint sunucusuna kaynaklara yolu başvurular eklemek için kullanabileceğiniz bir iletişim kutusu açıklar.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Başlarken &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Sunucu Gezgini kullanarak SharePoint bağlantılarına gözatma](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

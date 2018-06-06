@@ -9,24 +9,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b11752200b891808f96b53e57453c0df815da3f4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766687"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: Komut Satırını Kullanarak Bellek Verileri Toplamak için Profil Oluşturucuyu bir .NET Framework Bağımsız Uygulamasına Ekleme
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: Profil oluşturucu komut satırını kullanarak bellek verileri toplamak için bir .NET Framework bağımsız uygulamasına ekleme
 
-Bu konu, çalışan bir .NET Framework tek başına (istemci) uygulamaya profil oluşturucu ekleme ve bellek verileri toplamak için Visual Studio profil oluşturma araçları komut satırı araçlarını kullanmayı açıklar.
+Bu makalede, çalışan bir .NET Framework tek başına (istemci) uygulamaya profil oluşturucu ekleme ve bellek verileri toplamak için Visual Studio profil oluşturma araçları komut satırı araçlarını kullanmayı açıklar.
 
 > [!NOTE]
-> Profil oluşturma araçları komut satırı araçları \Team Tools\Performance araçları alt dizininde bulunan [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresini PATH ortam değişkenine ekleyin veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Profil oluşturma araçları komut satırı araçları içinde bulunur *\Team Tools\Performance Araçları* alt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yükleme dizini. 64-bit bilgisayarlarda, araçların 64-bit ve 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresini PATH ortam değişkenine ekleyin veya komutuna ekleyin. Daha fazla bilgi için bkz: [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-Bir .NET Framework uygulama ve toplama bellek verileri eklemek için kullanmanız gerekir [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) aracı hedef uygulama başlatılmadan önce uygun ortam değişkenlerini başlatılamadı. Profil Oluşturucu uygulamaya eklendiğinde kullanabileceğiniz **VSPerfCmd.exe** aracı veri toplamayı durdur.
+Bir .NET Framework uygulama ve toplama bellek verileri eklemek için kullanmanız gerekir [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) aracı hedef uygulama başlatılmadan önce uygun ortam değişkenlerini başlatılamadı. Profil Oluşturucu uygulamaya eklendiğinde kullanabileceğiniz *VSPerfCmd.exe* aracı veri toplamayı durdur.
 
 Profil oluşturma oturumu sona erdirmek için profil oluşturucu tüm profili işlemlerini ayrılmış olmalıdır ve profil oluşturucu açıkça kapatılmalıdır. Çoğu durumda, bir oturumun sonunda profil ortam değişkenleri temizleme öneririz.
 
-## <a name="attaching-the-profiler"></a>Profil Oluşturucu ekleme
+## <a name="attach-the-profiler"></a>Profil Oluşturucu ekleme
 
 ### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Profil Oluşturucu çalışan bir .NET Framework uygulama eklemek için
 
@@ -66,15 +67,15 @@ Profil oluşturma oturumu sona erdirmek için profil oluşturucu tüm profili i�
 
 5. Hedef uygulama için profil oluşturucu ekleme. Tür:
 
-     **VSPerfCmd**[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+     **VSPerfCmd**[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
 
     - `PID` Hedef uygulama işlem Kimliğini belirtir. `ProcessName` işlemin adını belirtir. Belirttiğiniz gerçekleştiriyorsanız `ProcessName` ve aynı ada sahip birden çok işlem çalıştırıyorsanız, sonuçlar tahmin edilemez. İşlem tüm çalışan işlemleri kimliklerini Windows Görev Yöneticisi'nde görüntüleyebilirsiniz.
 
     - **/targetclr:** `Version` bir uygulamada birden fazla çalışma zamanı sürümü yüklendiğinde profiline ortak dil çalışma zamanı (CLR) sürümünü belirtir. İsteğe bağlı.
 
-## <a name="controlling-data-collection"></a>Veri Toplama Denetimi
+## <a name="control-data-collection"></a>Veri toplamayı denetleme
 
-Hedef uygulama çalışırken, başlatma ve kullanarak verileri dosyaya yazma durdurma tarafından veri toplama denetleyebilirsiniz **VSPerfCmd.exe** seçenekleri. Veri toplama denetimi, program yürütme, başlatılıyor veya uygulama kapatılmadan gibi belirli bir bölümü için veri toplamanıza olanak sağlar.
+Hedef uygulama çalışırken, başlatma ve kullanarak verileri dosyaya yazma durdurma tarafından veri toplama denetleyebilirsiniz *VSPerfCmd.exe* seçenekleri. Veri toplama denetimi, program yürütme, başlatılıyor veya uygulama kapatılmadan gibi belirli bir bölümü için veri toplamanıza olanak sağlar.
 
 ### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak için
 
@@ -86,7 +87,7 @@ Hedef uygulama çalışırken, başlatma ve kullanarak verileri dosyaya yazma du
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlatır (**/processon**) veya durdurulduğunda (**/processoff**) tarafından belirtilen işlem için veri toplama `PID`.|
     |[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ attach** tarafından belirtilen işlem için veri toplamaya başlar `PID` veya işlem adı (ProcName). **/ detach** belirli bir işlemin belirtilmezse, tüm işlemler veya belirtilen işlem için veri toplamayı durdurur.|
 
-## <a name="ending-the-profiling-session"></a>Profil oluşturma oturumu sona erdirme
+## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme
 
 Profil oluşturma oturumu sona erdirmek için profil oluşturucu tüm profili işlemlerini ayrılmış olmalıdır ve profil oluşturucu açıkça kapatılmalıdır. Profil Oluşturucu uygulamadan uygulama kapatarak veya çağırarak örnekleme yöntemini kullanarak profili ayırabilirsiniz **VSPerfCmd / detach** seçeneği. Ardından çağıran **VSPerfCmd shutdown** profil oluşturucu devre dışı bırakma ve profil oluşturma veri dosyası kapatmak için seçeneği. **VSPerfClrEnv / kapalı** komutu profil ortam değişkenleri temizler.
 
@@ -96,7 +97,7 @@ Profil oluşturma oturumu sona erdirmek için profil oluşturucu tüm profili i�
 
     - Tür **VSPerfCmd / Ayır**
 
-         -veya-
+         veya
 
     - Hedef uygulamayı kapatın.
 
@@ -110,5 +111,5 @@ Profil oluşturma oturumu sona erdirmek için profil oluşturucu tüm profili i�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)  
 [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)

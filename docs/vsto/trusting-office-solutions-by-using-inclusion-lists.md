@@ -1,5 +1,5 @@
 ---
-title: Ekleme listelerini kullanarak Office çözümlerine güvenme | Microsoft Docs
+title: Ekleme listelerini kullanarak Office çözümlerine güven
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e8b26ef4c262f830cd2c6444b56e05f128316c6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6fb44e7927136ba02d04f4b57f38ae52cc76c9fd
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767890"
 ---
-# <a name="trusting-office-solutions-by-using-inclusion-lists"></a>Ekleme Listelerini Kullanarak Office Çözümlerine Güvenme
+# <a name="trust-office-solutions-by-using-inclusion-lists"></a>Ekleme listelerini kullanarak Office çözümlerine güven
   Ekleme listeleri yayımcıyı tanımlayan bir sertifikayla imzalanmış Office çözümlerine güven verme olanağı verir. Ekleme listeleri kullanıcıya özeldir ve belge düzeyi özelleştirmeleri ve VSTO eklentileri için kullanılabilir.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -44,8 +45,8 @@ ms.lasthandoff: 04/16/2018
 ## <a name="structure-of-the-inclusion-list"></a>Ekleme listesi yapısı  
  Geçerli ekleme listesi girdisi iki bölümden oluşur: dağıtım bildirimi ve çözümü imzalamak için kullanılan ortak anahtar için bir yol. Bir çözüm ekleme listesine eklendikten sonra kabul güvenilir. Office çözümü çalıştığında, Office uygulamasının şu anda çalışan çözüm özgün güvenilir sürümü ile aynı olduğunu doğrulamak için dağıtım bildiriminde imzalama anahtarı ekleme listesindeki ortak anahtarıyla karşılaştırır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)   
- [Office Çözümleri Güvenliğini Sağlama](../vsto/securing-office-solutions.md)  
+ [Office çözümleri güvenli](../vsto/securing-office-solutions.md)  
   
   

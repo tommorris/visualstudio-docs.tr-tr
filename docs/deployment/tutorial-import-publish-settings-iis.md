@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766688"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak IIS uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -40,7 +41,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 * Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 * Yayımlama ayarları dosyası, IIS'den oluşturmak için Windows Server 2012 veya Windows Server 2016 çalıştıran bir bilgisayar olması gerekir ve doğru yapılandırılmış bir IIS Web sunucusu rolü bulunmalıdır. ASP.NET 4.5 veya ASP.NET Core ayrıca yüklenmesi gerekir. ASP.NET Core için bkz: [IIS yayımlama](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -66,17 +67,17 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Windows Server'da IIS'de yayımlama ayarları dosyası oluşturma
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+[!INCLUDE [create-publish-settings-iis](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Visual Studio'da yayımlama ayarlarını içeri aktarın ve dağıtın
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import-publish-settings](../deployment/includes/import-publish-settings-vs.md)]
 
 Uygulama başarıyla dağıtıldıktan sonra otomatik olarak başlamanız gerekir. Visual Studio'dan başlamazsa, IIS'de uygulamayı başlatın. ASP.NET Core için uygulama havuzu için alan emin olmanız gerekir. **DefaultAppPool** ayarlanır **yönetilen kod yok**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticide bir yayımlama ayarları dosyası oluşturdunuz, Visual Studio'ya içeri aktarılan ve IIS bir ASP.NET uygulaması dağıttınız.
+Bu öğreticide bir yayımlama ayarları dosyası oluşturdunuz, Visual Studio'ya içeri aktarılan ve IIS bir ASP.NET uygulaması dağıttınız. Visual Studio'da yayımlama diğer seçeneklerine genel bakış isteyebilirsiniz.
 
 > [!div class="nextstepaction"]
 > [Dağıtıma ilk bakış](../deployment/deploying-applications-services-and-components.md)

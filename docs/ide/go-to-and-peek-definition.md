@@ -15,13 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745769"
 ---
-# <a name="view-type-and-member-definitions"></a>Tür ve üye tanımları görüntüle
+# <a name="view-type-and-member-definitions"></a>Görünüm türü ve üye tanımları
 
 Geliştiriciler genellikle kendi kodunda türleri veya kullandıkları sınıf üyeleri için kaynak kodu tanımları görüntülemeniz gerekir. Visual Studio'da **Tanıma Git** ve **Peek tanımı** özelliklerini kolayca bir tür veya üye tanımını görüntüleme olanak tanır. Meta veriler kaynak kodunu kullanılabilir durumda değilse, bunun yerine görüntülenir.
 
@@ -61,7 +62,7 @@ C# türleri veya kaynak kodu kullanılamıyor üyeleri tanımını görüntüled
 
 Örneğin çalıştırırsanız **Tanıma Git** komutunu <xref:System.Console>, meta verileri <xref:System.Console> Kod düzenleyicisinde C# kaynak kodu olarak görünür. Kod bildiriminden benzer, ancak uygulama göstermez.
 
-![Kaynak olarak meta veriler](../ide/media/metadatasource.png "MetadataSource")
+![Kaynak olarak Meta Veriler](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > Çalıştırmak çalıştığınızda **Tanıma Git** veya **Peek tanımı** komut türleri veya dahili olarak işaretlenmiş üyeleri için Visual Studio görüntülemez bunların meta verilerini bağımsız olarak mı yoksa kaynak kodu başvuruda bulunan bir arkadaş veya derlemesidir.

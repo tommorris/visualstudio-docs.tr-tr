@@ -26,13 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f8d5ac3b53650398f707f67f1d5806b72bce58
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750122"
 ---
-# <a name="cventerspan-function"></a>CvEnterSpan İşlevi
+# <a name="cventerspan-function"></a>CvEnterSpan işlevi
 Yeni bir aralık başlangıcını işaretler.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -125,11 +126,11 @@ HRESULT CvEnterSpanExVA(
  İletiyi başarıyla yazıldığında S_OK. Hata kodu vardı herhangi bir hata durumunda. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cvmarkers.h  
+ **Başlık:** *cvmarkers.h*  
   
  **Unicode:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
   
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)

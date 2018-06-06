@@ -12,11 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac6bd2e9b2c15f64e0232e46267a87c210b5b69
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751461"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes ile Test Edilen Kodu Yalıtma
 
@@ -28,7 +29,7 @@ Fakes iki türde olabilir:
 
 -   A [dolgusu](#shims) uygulamanızın çalışma zamanında derlenen kodunu belirtilen yöntem çağrısı yapmak yerine testinizi sağlar dolgusu kodu çalıştırır şekilde değiştirir. Dolgular gibi .NET derlemelerini değiştirilemiyor derlemeleri çağrıları değiştirmek için kullanılabilir.
 
-![Fakes diğer bileşenleri yerine](../test/media/fakes-2.png "Fakes 2")
+![Diğer bileşenler fakes Değiştir](../test/media/fakes-2.png)
 
 **Gereksinimler**
 

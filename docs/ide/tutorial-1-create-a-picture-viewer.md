@@ -11,59 +11,59 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b26b70b4887b792bd7a0a16bc3291d4e8fae369
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d7051997550709790d2c12f8f8f9332f67fe6abd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748133"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Eğitmen 1: Resim Görüntüleyici oluşturma
-Bu öğreticide, bir dosyadan bir resim yükler ve bir pencerede görüntüleyen bir program oluşturun. Düğmelerin ve resim kutularının formunuzda, bunların özelliklerini ayarlamak ve sorunsuz formu yeniden boyutlandırmak için kapsayıcılar kullanma gibi denetimleri sürükleyin öğrenin. Ayrıca, kod yazmaya başlayın. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:  
+Bu öğreticide, bir dosyadan bir resim yükler ve bir pencerede görüntüleyen bir program oluşturun. Düğmelerin ve resim kutularının formunuzda, bunların özelliklerini ayarlamak ve sorunsuz formu yeniden boyutlandırmak için kapsayıcılar kullanma gibi denetimleri sürükleyin öğrenin. Ayrıca, kod yazmaya başlayın. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:
 
--   Yeni bir proje oluşturun.  
+-   Yeni bir proje oluşturun.
 
--   Test (hata ayıklama) bir uygulama.  
+-   Test (hata ayıklama) bir uygulama.
 
--   Onay kutuları ve düğmeleri gibi temel denetimleri forma ekleyin.  
+-   Onay kutuları ve düğmeleri gibi temel denetimleri forma ekleyin.
 
--   Düzenleri kullanarak bir form üzerinde denetimleri getirin.  
+-   Düzenleri kullanarak bir form üzerinde denetimleri getirin.
 
--   Ekleme **açık dosya** ve **renk** bir forma iletişim kutuları.  
+-   Ekleme **açık dosya** ve **renk** bir forma iletişim kutuları.
 
--   IntelliSense ve kod parçacıkları kod yazın.  
+-   IntelliSense ve kod parçacıkları kod yazın.
 
--   Olay işleyici yöntemleri yazma.  
+-   Olay işleyici yöntemleri yazma.
 
- İşiniz bittiğinde, programınızı aşağıdaki resimde gibi görünecektir.  
+ İşiniz bittiğinde, programınızı aşağıdaki resimde gibi görünecektir.
 
- ![Bu öğreticide oluşturduğunuz resim](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
-Bu öğreticide oluşturduğunuz resmi  
+ ![Bu öğreticide oluşturduğunuz resim](../ide/media/express_pictureviewerdone.png) Bu öğreticide oluşturduğunuz resmi
 
 ## <a name="tutorial-links"></a>Eğitmen bağlantılar
 
- Tamamlanmış bir örnek sürümünü indirmek için bkz: [tam resim görüntüleyici öğretici örnek](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+ Tamamlanmış bir örnek sürümünü indirmek için bkz: [tam resim görüntüleyici öğretici örnek](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
- ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo")bu konuda video sürümü için bkz: [I: oluşturma Visual Basic'te bir resim görüntüleyici nasıl yapılacağı?](http://go.microsoft.com/fwlink/?LinkId=205207) veya [I: oluşturmak C# resim görüntüleyici nasıl yapılacağı?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+ ![video bağlantı](../data-tools/media/playvideo.gif)bu konuda video sürümü için bkz: [I: oluşturma Visual Basic'te bir resim görüntüleyici nasıl yapılacağı?](http://go.microsoft.com/fwlink/?LinkId=205207) veya [I: oluşturmak C# resim görüntüleyici nasıl yapılacağı?](http://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
->  Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır. Visual C# ve Visual Basic hem de Bu öğretici kapsamında olduğunu, kullanmakta olduğunuz programlama diline özgü bilgileri böylece odaklanır.  
->   
->  Visual Basic kodu görmek için seçin **VB** sekmesinde kod blokları üstünde ve kod Visual C# için görmek için seçin **C#** sekmesi. Visual C++ öğrenmeye ilginizi çekiyorsa bkz [başlama](../ide/getting-started-with-cpp-in-visual-studio.md) ve [C++ dili Öğreticisi](http://www.cplusplus.com/doc/tutorial/).  
->   
+>  Bazı menü komutları ve diğer kullanıcı arabirimi öğeleri küçük farklar olduklarından bu videolar Visual Studio'nun önceki bir sürümünü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde geçerli sürümünde Visual Studio çalışır. Visual C# ve Visual Basic hem de Bu öğretici kapsamında olduğunu, kullanmakta olduğunuz programlama diline özgü bilgileri böylece odaklanır.
+>
+>  Visual Basic kodu görmek için seçin **VB** sekmesinde kod blokları üstünde ve kod Visual C# için görmek için seçin **C#** sekmesi. Visual C++ öğrenmeye ilginizi çekiyorsa bkz [başlama](../ide/getting-started-with-cpp-in-visual-studio.md) ve [C++ dili Öğreticisi](http://www.cplusplus.com/doc/tutorial/).
+>
 >  Visual C# veya Visual Basic UWP uygulamaları yazmak için bkz: öğrenmek, [yapı UWP uygulamaları](https://developer.microsoft.com/windows/apps).
 
-## <a name="related-topics"></a>İlgili konular  
+## <a name="related-topics"></a>İlgili konular
 
-|Başlık|Açıklama|  
-|-----------|-----------------|  
-|[1. adım: bir Windows Forms uygulaması projesi oluşturma](../ide/step-1-create-a-windows-forms-application-project.md)|Bir Windows Forms uygulaması projesi oluşturarak başlayın.|  
-|[2. adım: programınızı çalıştırma](../ide/step-2-run-your-program.md)|Önceki adımda oluşturduğunuz Windows Forms uygulaması programını çalıştırın.|  
-|[3. adım: form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md)|Formunuz kullanarak görünüşünü değiştirme **özellikleri** penceresi.|  
-|[4. adım: bir TableLayoutPanel denetimi ile formunuzu düzenleme](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Ekleme bir `TableLayoutPanel` Formunuza denetim.|  
-|[5. adım: formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md)|Denetimleri gibi ekleme bir `PictureBox` denetim ve `CheckBox` Formunuza denetim. Düğmeleri formunuza ekleyin.|  
-|[6. adım: düğme denetimlerinizi adlandırma](../ide/step-6-name-your-button-controls.md)|Düğmeleri daha anlamlı yeniden adlandırın.|  
-|[7. adım: formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md)|Ekleme bir `OpenFileDialog` bileşeni ve bir `ColorDialog` formunuza bileşen.|  
-|[8. adım: Resim düğmesi olay işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|IntelliSense aracını kullanarak bir kod yazın.|  
-|[9. adım: Gözden geçirme, açıklama ve kodunuzu test](../ide/step-9-review-comment-and-test-your-code.md)|Gözden geçirin ve kodunuzu test etmek. Açıklamaları gerektiği gibi ekleyin.|  
-|[10. adım: ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Diğer düğmeleri ve IntelliSense kullanarak onay kutusu çalışma yapmak için kod yazma.|  
+|Başlık|Açıklama|
+|-----------|-----------------|
+|[1. adım: bir Windows Forms uygulaması projesi oluşturma](../ide/step-1-create-a-windows-forms-application-project.md)|Bir Windows Forms uygulaması projesi oluşturarak başlayın.|
+|[2. adım: programınızı çalıştırma](../ide/step-2-run-your-program.md)|Önceki adımda oluşturduğunuz Windows Forms uygulaması programını çalıştırın.|
+|[3. adım: form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md)|Formunuz kullanarak görünüşünü değiştirme **özellikleri** penceresi.|
+|[4. adım: bir TableLayoutPanel denetimi ile formunuzu düzenleme](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Ekleme bir `TableLayoutPanel` Formunuza denetim.|
+|[5. adım: formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md)|Denetimleri gibi ekleme bir `PictureBox` denetim ve `CheckBox` Formunuza denetim. Düğmeleri formunuza ekleyin.|
+|[6. adım: düğme denetimlerinizi adlandırma](../ide/step-6-name-your-button-controls.md)|Düğmeleri daha anlamlı yeniden adlandırın.|
+|[7. adım: formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md)|Ekleme bir `OpenFileDialog` bileşeni ve bir `ColorDialog` formunuza bileşen.|
+|[8. adım: Resim düğmesi olay işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|IntelliSense aracını kullanarak bir kod yazın.|
+|[9. adım: Gözden geçirme, açıklama ve kodunuzu test](../ide/step-9-review-comment-and-test-your-code.md)|Gözden geçirin ve kodunuzu test etmek. Açıklamaları gerektiği gibi ekleyin.|
+|[10. adım: ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Diğer düğmeleri ve IntelliSense kullanarak onay kutusu çalışma yapmak için kod yazma.|
 |[11. adım: programınızı çalıştırma ve diğer özellikleri deneme](../ide/step-11-run-your-program-and-try-other-features.md)|Programınızı çalıştırma ve arka plan rengini ayarlayın. Renkleri, yazı tipi ve kenarlıkları değiştirme gibi diğer özellikleri deneyin.|

@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747397"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere denetimler bağlama
 Denetimlere veri bağlama tarafından uygulamanızı kullanıcılara verileri görüntüleyebilir. Bu veri bağlama denetimleri konumundan öğeleri sürükleyerek oluşturabileceğiniz **veri kaynakları** tasarım yüzeyi veya Visual Studio'da yüzeyinde denetimleri penceresi.
@@ -45,7 +46,7 @@ Denetimlere veri bağlama tarafından uygulamanızı kullanıcılara verileri g�
 ## <a name="data-sources-window"></a>Veri Kaynakları penceresi
  Veri kaynakları projenize kullanılabilir öğeleri olarak **veri kaynakları** penceresi. Bu pencere görünür ya da erişilebilir **Görünüm** form Tasarım yüzeyi projenizdeki etkin pencereyi olduğunda menüsü. Temel alınan verilere bağlı denetimler oluşturmak için bu penceresinden öğeleri sürükleyin ve sağ tıklayarak veri kaynakları da yapılandırabilirsiniz.
 
- ![Veri kaynakları penceresi](../data-tools/media/raddata-data-sources-window.png "raddata veri kaynakları penceresi")
+ ![Veri Kaynakları penceresi](../data-tools/media/raddata-data-sources-window.png)
 
  Görünür her bir veri türü için **veri kaynakları** penceresinde varsayılan denetimi Designer'a öğesi sürüklediğinizde oluşturulur. Bir öğeden sürükleyerek önce **veri kaynakları** penceresinde oluşturulacak denetim değiştirebilirsiniz. Daha fazla bilgi için bkz: [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimini ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

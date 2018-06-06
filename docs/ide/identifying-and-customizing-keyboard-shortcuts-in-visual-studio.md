@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747235"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Tanımlamak ve Visual Studio'daki klavye kısayollarını özelleştirme
 
@@ -48,7 +49,7 @@ Bir komuta Genel bağlamda kısayol atanmış ve diğer bağlamlarda atanmamış
 
 2. Genişletme **ortam**ve ardından **klavye**.
 
-   ![Klavye kısayolları Seçenekleri iletişim kutusunda görüntüleme](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Klavye kısayolları Seçenekleri iletişim kutusunda görüntüleme](../ide/media/optionskeyboard.png)
 
 3. İçinde **Göster komutlarını içeren** kutusuna, boşluk içermeyen komutun adını bölümünü veya tümünü girin.
 
@@ -60,7 +61,7 @@ Bir komuta Genel bağlamda kısayol atanmış ve diğer bağlamlarda atanmamış
 
 5. Komutun bir klavye kısayolu varsa görünür **seçili komut için kısayol** listesi.
 
-   ![Belirtilen komut için kısayol görüntülemek](../ide/media/viewshortcut.png "ViewShortcut")
+   ![Belirtilen komut için kısayol görüntüleyin](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Klavye kısayolu özelleştirme
 
@@ -86,7 +87,7 @@ Bir komuta Genel bağlamda kısayol atanmış ve diğer bağlamlarda atanmamış
 
      Bir kısayol zaten başka bir komuta atanmışsa görünür **şu anda kullandığı kısayol** kutusu. Bu durumda, seçin **geri** başka bir denemeden önce bu kısayolu silmek için anahtar.
 
-    ![Bir komutu için başka bir kısayol belirtin](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![Bir komutu için başka bir kısayol belirtin](../ide/media/reassignshortcut.png)
 
 7. Seçin **atamak** düğmesi.
 
@@ -107,7 +108,7 @@ Bir komuta Genel bağlamda kısayol atanmış ve diğer bağlamlarda atanmamış
 
 4. Seçin **klavye** onay kutusunu işaretleyin ve ardından **sonraki** düğmesi.
 
-    ![Yalnızca özelleştirilmiş klavye kısayolları verme](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![Klavye kısayolları yalnızca özelleştirilmiş verme](../ide/media/exportshortcuts.png)
 
 5. İçinde **ne ayarları dosyanızın adı istiyor musunuz?** ve **my ayarları dosyası bu dizinde depola** kutularına ya da varsayılan değerleri bırakın veya farklı değerleri belirtin ve ardından  **Son** düğmesi.
 
@@ -129,7 +130,7 @@ Bir komuta Genel bağlamda kısayol atanmış ve diğer bağlamlarda atanmamış
 
 7. Seçin **klavye** onay kutusunu işaretleyin ve ardından **son** düğmesi.
 
-    ![İçeri aktarma yalnızca klavye kısayolları özelleştirilmiş](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![Yalnızca özelleştirilmiş klavye kısayolları alma](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

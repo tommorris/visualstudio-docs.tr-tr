@@ -11,13 +11,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e98be1dd16705be00f388419013686f861f3753
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 18f4153db019dd6ded97337d4599f02a6b02ef49
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748940"
 ---
-# <a name="navigate-and-update-a-model-in-program-code"></a>Gezinme ve bir modeli Program kodunda güncelleştirme
+# <a name="navigate-and-update-a-model-in-program-code"></a>Program Kodunda Modelde Gezinme ve Modeli Güncelleştirme
 
 Model öğelerini silin, bunların özelliklerini ayarlamak ve oluşturulur ve öğeler arasındaki bağlantıları silmek üzere kod yazabilirsiniz. Bir işlem içinde yapılan tüm değişiklikler gerekir. Öğeleri bir diyagramda görüntülerse diyagram "otomatik olarak işlem sonunda düzeltilecektir".
 
@@ -55,11 +56,11 @@ Model öğelerini silin, bunların özelliklerini ayarlamak ve oluşturulur ve �
 ##  <a name="example"></a> Bir örnek DSL tanımı
  Bu ana DslDefinition.dsl için bu konudaki örnekler parçasıdır:
 
- ![DSL tanımı diyagramı &#45; Aile Ağacı Modeli](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![DSL tanımı diyagramı &#45; Aile Ağacı Modeli](../modeling/media/familyt_person.png)
 
  Bu model, bu DSL örneğidir:
 
- ![Tudor Aile Ağacı Modeli](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+ ![Tudor Aile Ağacı Modeli](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>References ve ad alanları
  Bu konudaki kodu çalıştırmak için başvuru:
@@ -350,7 +351,7 @@ using (Transaction t = targetDiagram.Store.
  Bir DSL, kişi veya şarkı gibi bir kavram temsil eder, etki alanı model öğesi diyagramı gördükleri temsil eden şekli öğeden ayrıdır. Etki alanı model öğesi ilişkileri kavramları ve önemli özellikleri depolar. Şekil öğesi, konumu ve boyutu nesnenin görünümü diyagramda rengini ve düzenini bileşen parçalarından depolar.
 
 ### <a name="presentation-elements"></a>Sunu öğelerini
- ![Sınıf diyagramında temel şekli ve öğe türleri](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")
+ ![Sınıf diyagramında temel şekli ve öğesi türleri](../modeling/media/dslshapesandelements.png)
 
  DSL tanımınızı belirttiğiniz her öğesi aşağıdaki standart sınıflarının birinden türetilmiş bir sınıf oluşturur.
 
@@ -509,7 +510,7 @@ partial class MyDiagram
  Şekil, bağlayıcılar ve diyagramları olan alt türleri, <xref:Microsoft.VisualStudio.Modeling.ModelElement> ve dinamik depolama. Bu nedenle değişiklikler için yalnızca bir işlem içinde yapmanız gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: kullanım modeli güncelleştirmek için işlemleri](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Belge görünümü ve belge verileri
- ![Standart diyagram türleri sınıf diyagramı](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")
+ ![Standart diyagram türleri sınıf diyagramı](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>Bölüm
  Bir model yüklendiğinde eşlik eden diyagramı aynı anda yüklenir. Genellikle, model Store.DefaultPartition yüklenir ve diyagramı içeriği başka bir bölüme yüklenir. Genellikle, her bölümün içeriğini yüklenen ve ayrı bir dosyaya kaydedilir.

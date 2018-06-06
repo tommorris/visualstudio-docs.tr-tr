@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f807394497bff99e12546f7a1a913adffbff41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf59736e4cdeb8ddba256b24bc7c12984d288071
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767174"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Nasıl yapılır: Paket Tasarımcısını Kullanarak Bir Pakete Özellikler ve Öğeler Ekleme ve Kaldırma
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Nasıl yapılır: ekleme ve özellikler ve öğeler bir paket için paket Tasarımcısını kullanarak kaldırma
   Bir SharePoint çözüm oluşturduğunuzda, Visual Studio çözümü paketinde varsayılan SharePoint özelliklerini ekler. Son dağıtım öncesinde ekleyin ve SharePoint Proje öğeleri ve SharePoint paketi değiştirmek için özellikler kaldırın.  
   
  Alternatif olarak, SharePoint Proje öğeleri eklemek ve kaldırmak için paketleme Gezgini'ni kullanın. Ayrıca, görüntüleyin ve SharePoint Proje öğeleri ve (.wsp) paketine konulduğundan özellikleri hiyerarşisini değiştirin. Daha fazla bilgi için bkz: [nasıl yapılır: ekleyip özellikler ve öğeler bir pakete paketleme Gezgini'ni kullanarak](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="adding-features-to-a-sharepoint-package"></a>Bir SharePoint pakete özellik ekleme  
  Bir SharePoint pakete özellikleri eklemek için paket tasarımcısını kullanabilirsiniz.  
   
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Paket tasarımcısını SharePoint özelliklerle eklemek için  
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Paket Tasarımcısı ile SharePoint özellikleri eklemek için
   
 1.  Açık **paketini Tasarımcısı**.  
   
@@ -54,15 +55,14 @@ ms.lasthandoff: 04/16/2018
 ## <a name="removing-features-from-a-sharepoint-package"></a>Bir SharePoint paketinden özellikleri kaldırma  
  Bir SharePoint paket özellikleri kaldırmak için paket tasarımcısını kullanabilirsiniz.  
   
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Paket tasarımcısını SharePoint özelliklerle kaldırmak için  
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>SharePoint özellikleri ile paket tasarımcısını kaldırmak için
   
 1.  İçinde **paket öğeleri** listesinde, kaldırmak ve ardından istediğiniz öğeyi seçin **kaldırmak** (<) düğmesini veya seçin **Tümünü Kaldır** düğmesi (<<) kaldırmak için tüm öğeler.  
   
      SharePoint öğeleri görünür **çözümü öğelerde** listesi.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint çözüm paketleri oluşturma](../sharepoint/creating-sharepoint-solution-packages.md)   
  [Nasıl yapılır: Bir SharePoint Çözüm Paketini Özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Nasıl yapılır: bir paket oluşturun](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
-  
   

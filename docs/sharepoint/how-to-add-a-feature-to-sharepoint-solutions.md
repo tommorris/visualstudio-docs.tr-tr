@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07acb967e945f067bfe82d915684639464ded908
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 124735321af5a213d6000c74a43a2243183a7ef4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768124"
 ---
-# <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Nasıl yapılır: SharePoint Çözümlerine Özellik Ekleme
+# <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Nasıl yapılır: SharePoint çözümlerine özellik ekleme
   Bir SharePoint çözüm oluşturduğunuzda, bir özellik ve bir paket çözüme eklenir. SharePoint dosyaları farklı türlerde düzenlemek için daha fazla özellik öğeleri ekleyebilirsiniz.  
   
-### <a name="to-add-a-feature-through-solution-explorer"></a>Çözüm Gezgini üzerinden bir özellik eklemek için  
+### <a name="to-add-a-feature-through-solution-explorer"></a>Çözüm Gezgini üzerinden bir özellik eklemek için
   
 1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellikleri**ve ardından **Özellik Ekle**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

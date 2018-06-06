@@ -17,32 +17,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cc202b2e3e303f8f6e92b82bbfbc6f5525966bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45127afaeeadd6046c9726c8c56de9a4acf2338a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765609"
 ---
-# <a name="extending-sharepoint-project-items"></a>SharePoint Proje Öğelerini Genişletme
+# <a name="extend-sharepoint-project-items"></a>SharePoint proje öğelerini genişletme
   Visual Studio'da yüklü SharePoint proje öğesi türü işlevselliği eklemek istediğinizde bir proje öğesi uzantısı oluşturma. Örneğin, bir uzantı yerleşik oluşturabilirsiniz **olay alıcısı** veya **listesi tanımını** proje öğelerini Visual Studio'da ya da bir özel proje öğesi türü için bir uzantı oluşturabilirsiniz. Tüm SharePoint proje öğesi türleri için bir uzantı de oluşturabilirsiniz.  
   
-## <a name="tasks-for-extending-sharepoint-project-items"></a>SharePoint proje öğelerini genişletme için görevler  
+## <a name="tasks-for-extending-sharepoint-project-items"></a>SharePoint proje öğelerini genişletme için görevler
  Bir proje öğesi genişletmek için uygulayan bir Visual Studio uzantısı derleme <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> arabirimi. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
  Bir proje öğesi genişlettiğinizde, proje öğesi için aşağıdaki işlevler de ekleyebilirsiniz:  
   
--   Bir kısayol menü öğesi için proje öğesi ekleyin. Proje öğesi için kısayol menüsünü açtığınızda menü öğesi görünür **Çözüm Gezgini**. Proje öğesi sağ tıklayarak kısayol menüsünü açın veya bunu seçerek ve ardından SHIFT + F10 tuşlarına. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
+-   Bir kısayol menü öğesi için proje öğesi ekleyin. Proje öğesi için kısayol menüsünü açtığınızda menü öğesi görünür **Çözüm Gezgini**. Proje öğesi sağ tıklanarak veya seçip ardından kısayol menüsünü açın **Shift**+**F10** anahtarları. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
   
 -   Bir özel özellik için proje öğesi ekleyin. Özellik görünür **özellikleri** proje öğesi seçtiğinizde penceresi **Çözüm Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint Proje öğe uzantısına özellik ekleme](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
   
  Oluşturma, dağıtma ve bir proje öğesi uzantısı test izlenecek yol için bkz: [izlenecek yol: bir SharePoint proje öğesi türünü genişletme](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
   
-## <a name="understanding-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Project öğesi uzantıları ve proje öğesi örnekleri arasındaki ilişkiyi anlama  
+## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Project öğesi uzantıları ve proje öğesi örnekleri arasındaki ilişkiyi anlama
  Bir proje öğesi uzantısı oluşturma, bir proje öğesi ilişkili türünde bir SharePoint projesine eklendiğinde, Visual Studio uzantınızı yükler. Örneğin, bir uzantı için oluşturursanız **olay alıcısı** proje öğeleri, Visual Studio yükler uzantınızı kullanıcı eklediğinde bir **olay alıcısı** projeye proje öğesi. Visual Studio için tüm örneklerini ilişkili proje öğesi türü uzantınızı aynı örneğini kullanır. Önceki örnekte kullanıcı saniyenin eklerse **olay alıcısı** projeye proje madde, aynı örnek uzantınızın ikinci proje öğesi özelleştirmek için kullanılır.  
   
  Belirli bir örneği genişletme proje öğe türüne erişmek için aşağıdakilerden birini ele <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> olayları *projectItemType* parametresi uygulamanızda <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> yöntemi. Örneğin, bir proje öğesi genişletme türü bir projeye eklendiğinde belirlemek için tanıtıcı <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> olay. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
-## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint Proje öğeleri için tanımlayıcıları  
+## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint Proje öğeleri için tanımlayıcıları
  Her bir SharePoint Proje öğe karşılık gelen bir dize tanımlayıcısı vardır. Aşağıdaki görevleri gerçekleştirmek istiyorsanız, bir proje öğesi için tanımlayıcı bilmeniz gerekir:  
   
 -   Proje öğesi için bir uzantı oluşturun. Bu durumda, tanımlayıcı oluşturucusuna genişletmek istediğiniz proje öğesi için geçmesi gereken <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Tüm türleri öğesi proje uzantı oluşturmak için geçirmek **\*** dize değeri.  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
 |Web Kısmı|Microsoft.VisualStudio.SharePoint.WebPart|  
 |İş akışı ilişkilendirme formu|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
  [Nasıl yapılır: bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [Nasıl yapılır: bir SharePoint Proje öğe uzantısına özellik ekleme](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   

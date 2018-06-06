@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3178738b707069fdf885c9821b7b7f1e17b246c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746132"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Diğer diller için Visual Studio Düzenleyicisi desteği ekleme
 
@@ -32,7 +33,7 @@ Visual Studio düzenleyicisinde okuma ve farklı bir bilgisayara diller gezinme 
 
 Visual Studio düzenleyicisinde söz dizimi renklendirme, deyim tamamlama ve gitmek için gibi özellikleri, daha fazla kolayca okumasına, oluşturmasına ve kodunuzu düzenleyin yardımcı olabilir. Aşağıdaki ekran görüntüsünde Perl komut dosyasını Visual Studio'da düzenleme bir örneği gösterir. Söz dizimi, otomatik olarak renklendirilir. Örneğin, kodda açıklamalar yeşil renkte kodudur siyah yolları kırmızı ve deyimleri mavi. Visual Studio düzenleyicisinde söz dizimi renklendirme desteklediği herhangi bir dil için otomatik olarak uygular. Ayrıca, bilinen dil anahtar sözcüğü veya nesne girmek başladığınızda, deyim tamamlama olası deyimleri ve nesnelerin bir listesini görüntüler. Deyim tamamlama kodu daha hızlı ve kolay bir şekilde oluşturmanıza yardımcı olabilir.
 
-![Perl komut söz dizimi renklendirme](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+![Perl komut söz dizimi renklendirme](../ide/media/vside_perledit.png)
 
 Visual Studio şu anda sağlar söz dizimi renklendirme ve temel deyim tamamlama kullanarak aşağıdaki diller için desteği [TextMate aynı](https://manual.macromates.com/en/language_grammars). Sık kullanılan dilinizi tabloda değilse, ancak, endişelenmeyin - ekleyebilirsiniz.
 
@@ -87,5 +88,5 @@ TextMate aynı oluşturma hakkında daha fazla bilgi için bkz [TextMate - dil a
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: bir kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)
+- [İzlenecek Yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)
 - [İzlenecek yol: Görüntü deyim tamamlama](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752098"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Ne kadar kodun test edildiğini belirlemek için kod kapsamı kullanın
 
@@ -84,7 +85,7 @@ Bazı durumlarda, test verilerine bağlı olarak kodunuzda farklı bloklar kulla
 
  Örneğin, giriş "2" ile bir test çalıştırdığınızda, belirli bir işlevin %50'sinin kapsandığını bulun. Giriş "-2" ile ikinci kez test çalıştırdığınızda diğer %50'si işlev kapsamında görünüm renklendirme kapsamına bakın. Şimdi iki test çalışması sonuçlarını birleştirin ve işlevin %100 kapsamında rapor ve görünümü renklendirme kapsamını gösterin.
 
- Kullanım ![kod kapsamı penceresinde birleştirme düğmesi için simge](../test/media/codecoverage-mergeicon.png "CodeCoverage MergeIcon")**kod kapsamı sonuçları birleştirme** Bunu yapmak için. Son çalışmaların veya alınan sonuçların herhangi bir bileşimini seçebilirsiniz. Dışa aktarılan sonuçları birleştirmek istiyorsanız, bunları önce almanız gerekir.
+ Kullanım ![kod kapsamı penceresinde birleştirme düğmesi için simge](../test/media/codecoverage-mergeicon.png)**kod kapsamı sonuçları birleştirme** Bunu yapmak için. Son çalışmaların veya alınan sonuçların herhangi bir bileşimini seçebilirsiniz. Dışa aktarılan sonuçları birleştirmek istiyorsanız, bunları önce almanız gerekir.
 
  Kullanım **kod kapsamı sonuçlarını dışarı aktar** bir birleştirme işlemi sonuçlarını kaydetmek için.
 
@@ -258,7 +259,7 @@ Kodunuzda denetlediğinizde, testiniz diğer ekip üyelerinden gelen diğer tüm
 
    Birden fazla Test Kaynağı tanımı varsa, her biri için bu adımı yineleyin.
 
-   ![Derleme tanımı için kod kapsamı ayarlama](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")
+   ![Derleme tanımı için kod kapsamı ayarlama](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > Adında bir alan olup olmadığını **türü, çalıştırma ayarları dosyası**, değiştirme **Test Çalıştırıcısı** özelliği. Altında **otomatikleştirilmiş testler**seçin **Test derleme** ve üç nokta düğmesini seçin **[...]**  satırın sonundaki. İçinde **Ekle/Düzenle testi** iletişim kutusunda **Test Çalıştırıcısı**, seçin **Visual Studio Test Çalıştırıcısı**.

@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5a6f1aca4b0a97211cfcc1d5559868c95b856e5c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691218"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746184"
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 Bu kılavuz, verileri bir biçimden diğerine geçirmek için adım adım yönergeler sağlar. Northwind siparişleri tablolardan ve müşteriler kullanarak, bir form kullanıcıların bir müşteri seçmesine izin verir ve seçilen müşterinin siparişleri ikinci bir form görüntüler. Bu kılavuzda ilk formundan verileri alan ikinci form üzerinde bir yöntem oluşturulacağını gösterir.
@@ -71,7 +71,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
 
-2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Klasik Masaüstü**.
+2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 

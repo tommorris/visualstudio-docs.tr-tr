@@ -14,13 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745717"
 ---
-# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı'nda veri bağlama
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı’nda verilere bağlama
 
 XAML Tasarımcısı'nda çalışma yüzeyi ve Özellikler penceresini kullanarak veri bağlama özellikleri ayarlayabilirsiniz. Bu kılavuzda örnek verinin bir denetime nasıl bağlanacağını gösterir. Özellikle, izlenecek olan basit bir alışveriş sepeti sınıfı oluşturma gösterilmektedir bir [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) adlı `ItemCount`ve ardından bağlamak `ItemCount` özelliğine **metin** özelliği bir [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) denetim.
 
@@ -82,7 +83,7 @@ XAML Tasarımcısı'nda çalışma yüzeyi ve Özellikler penceresini kullanarak
 
      Aşağıdaki çizimde gösterildiği **nesnesi Seç** iletişim kutusuyla **ShoppingCart** seçili.
 
-     ![Select nesne iletişim kutusu](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![Nesne iletişim kutusu seç](../designers/media/blendselectobject.png)
 
 1. İçinde **araç**, seçin bir `TextBlock` denetim forma ekleyin.
 
@@ -92,7 +93,7 @@ XAML Tasarımcısı'nda çalışma yüzeyi ve Özellikler penceresini kullanarak
 
      Aşağıdaki çizimde gösterildiği **oluşturma verileri bağlama** iletişim kutusuyla **ItemCount** seçili özelliği.
 
-     ![Oluştur iletişim kutusu veri bağlama](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![Oluştur iletişim kutusu veri bağlama](../designers/media/xaml_create_data_binding.png)
 
 1. Tuşuna **F5** uygulamayı çalıştırmak için.
 

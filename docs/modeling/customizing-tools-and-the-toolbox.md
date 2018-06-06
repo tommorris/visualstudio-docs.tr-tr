@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748533"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 Kullanıcıların kendi model ekleme izin vermek istediğiniz öğeleri için araç kutusu öğelerini tanımlamanız gerekir. Araçlar iki tür vardır: öğesi araçları ve bağlantı araçları. Oluşturulan Tasarımcısı'nda kullanıcı şekiller diyagrama sürüklemek için bir öğe aracı seçebilirsiniz ve bağlantıları arasında şekiller çizmek için bir bağlantı aracı seçebilirsiniz. Genel olarak, kullanıcı etki alanı sınıfların örnekleri için modellerini Ekle öğesi araçları sağlar ve bunları etki alanı ilişkilerini örneklerini eklemek bağlantı araçları sağlayabilirsiniz.
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **İç içe geçmiş bileşen bir OutPort gelen bağlantı**
 
- ![Bağlantı oluşturucu](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![Bağlantı oluşturucu](../modeling/media/connectionbuilder_3.png)
 
  Bu nedenle, bir bağlantı için bir OutPort iç içe geçmiş bileşen gelebilir belirtmek isteyebilirsiniz. Böyle bir bağlantı belirtmek için ayarladığınız **kullanan özel kabul** üzerinde **InPort** kaynağı rol türü ve **OutPort** türü hedef rolünde olarak **DSL ayrıntıları**  aşağıdaki çizimde gösterildiği gibi penceresi:
 
  **Bağlantıyı bağlamak DSL Explorer'da yönergesi**
 
- ![Bağlantı oluşturucu resmi](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![Bağlantı oluşturucu resmi](../modeling/media/connectionbuilder_4a.png)
 
  **Bağlantıyı bağlamak DSL Ayrıntıları penceresinde yönergesi**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  Ardından ConnectionBuilder sınıftaki yöntemlerin sağlamanız gerekir:
 

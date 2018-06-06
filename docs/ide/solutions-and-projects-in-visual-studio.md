@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc94838423cea7eeab8cef6357267609394352b
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747632"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Çözümler ve projeler Visual Studio'da
 
@@ -48,7 +49,7 @@ Bir proje uzantılı bir XML dosyasında aşağıdaki gibi tanımlanır *.vbproj
 
 Visual Studio Proje dosyası tarafından kullanılan **Çözüm Gezgini** proje içeriği ve ayarları görüntülemek için. Projenizi derleme yaparken MSBuild altyapısı yürütülebilir dosyayı oluşturmak için proje dosyasını kullanır. Çıkış diğer tür üretmek için projeleri özelleştirebilirsiniz.
 
-## <a name="solutions"></a>Çözümleri
+## <a name="solutions"></a>Çözümler
 
 Bir proje kapsamında yer alan bir *çözüm*. Bir veya daha fazla ilgili projeleri, yapı bilgileri, Visual Studio penceresi ayarlarını ve belirli bir projeyle ilişkili olmayan tüm çeşitli dosyalar ile birlikte bir çözüm içerir. Bir çözümü bir metin dosyası tarafından tanımlanan (uzantısı *.sln*) kendi benzersiz biçimde; bu el ile düzenlenmesi kullanılmaya yönelik değildir.
 
@@ -64,7 +65,7 @@ Belirli bir tür uygulama veya Web sitesi için bir proje şablondan yeni bir pr
 
 Yeni bir proje oluşturduğunuzda, kullanabileceğiniz **Çözüm Gezgini** proje ve çözüm ve bunların ilişkili öğeleri görüntülemek ve yönetmek için. Aşağıdaki çizimde gösterildiği **Çözüm Gezgini** Çözümle iki proje içeren bir C#.
 
-![Çözüm Gezgini](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
+![Çözüm Gezgini](../ide/media/vs2015_solution_explorer.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

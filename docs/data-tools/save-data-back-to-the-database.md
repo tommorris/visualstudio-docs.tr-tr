@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691140"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748065"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 Veri kümesi, veri bir bellek içi kopyasıdır. Bu verileri değiştirirseniz, bu değişiklikleri veritabanına kaydetmek için iyi bir uygulamadır. Bu üç yöntemden birini yapın:
@@ -60,7 +60,7 @@ TableAdapters ile sahibiyseniz, doğrudan aşağıdaki konulardan birine atlayab
 
  Değişiklikler veritabanına geri göndermek istediğinizde, ikinci bir adım gereklidir. Verilere bağlı denetimler kullanmıyorsanız, el ile veri kümesini doldurmak için kullanılan güncelleştirme yöntemini aynı TableAdapter (veya veri bağdaştırıcısı) çağırın sahip. Ancak, aynı zamanda farklı bağdaştırıcıları bir veri kaynağından verileri taşımak için veya birden fazla veri kaynağını güncelleştirmek için kullanabilirsiniz. Veri bağlama kullanmadığınız ve ilişkili tablolar için değişiklikler kaydediliyor, el ile bir değişkeni otomatik olarak oluşturulan TableAdapterManager sınıfının örneği ve ardından UdpateAll yöntemini çağırın gerekir.
 
- ![Visual Basic veri kümesi güncelleştirmeleri](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates") iki aşamalı işlemi ve başarılı bir güncelleştirme DataRowVersion rol güncelleştirme
+ ![Visual Basic veri kümesi güncelleştirmeleri](../data-tools/media/vbdatasetupdates.gif) iki aşamalı işlemi ve başarılı bir güncelleştirme DataRowVersion rol güncelleştirme
 
  Bir veri kümesi satır koleksiyonları içeren tablolar koleksiyonları içerir. Veri kaynağındaki daha sonra güncelleştirme yapmak istiyorsanız, DataTable.DataRowCollection özelliği eklerken veya satır kaldırmayı yöntemlerini kullanmanız gerekir. Bu yöntem, veri kaynağını güncelleştirmek için gerekli olan değişiklik izleme gerçekleştirin. Satır özelliği RemoveAt koleksiyonu çağırırsanız, silme veritabanına geri bildirilmesi olmaz.
 

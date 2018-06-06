@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c29cb41c80d75c6f873171b7e9c758a2513612
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691943"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766513"
 ---
-# <a name="extensiondataitem-element"></a>ExtensionDataItem Öğesi
+# <a name="extensiondataitem-element"></a>ExtensionDataItem öğesi
   SharePoint proje öğesi anahtar/değer biçimi ile ilişkili bir özel veri öğesi. Anahtar ve değer dize olmalıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -32,7 +32,7 @@ ms.locfileid: "34691943"
     Value = "Value of the data item" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
   
 ### <a name="attributes"></a>Öznitelikler  
@@ -42,10 +42,10 @@ ms.locfileid: "34691943"
 |**Key**|Gerekli **xs: dize** özniteliği.<br /><br /> Depolamak ve veri öğesi almak için kullanılan anahtar.|  
 |**Değer**|Gerekli **xs: String** özniteliği.<br /><br /> Veri öğesinin değeri.|  
   
-### <a name="child-elements"></a>Alt Öğeler  
+### <a name="child-elements"></a>Alt öğeleri
  Yok.  
   
-### <a name="parent-elements"></a>Üst Öğeler  
+### <a name="parent-elements"></a>Üst öğeler
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691943"
 ## <a name="remarks"></a>Açıklamalar  
  İlişkilendirdiğinizde özel verileri ile bir SharePoint proje öğesi kullanarak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> özelliği bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> nesnesi, Visual Studio verileri yeni bir kaydeder **Extensiondataıtem** öğesinde `.spdata` dosya Proje öğesi. Daha fazla bilgi için bkz: [SharePoint Proje sisteminin uzantılarında veri kaydetme](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="element-information"></a>Öğe Bilgisi  
+## <a name="element-information"></a>Öğe bilgileri
   
 |||  
 |-|-|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691943"
 |**Dosya doğrulama**|ProjectItemModelSchema.xsd|  
 |**Boş olamaz**|Hayır|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint Proje Öğesi Şema Başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

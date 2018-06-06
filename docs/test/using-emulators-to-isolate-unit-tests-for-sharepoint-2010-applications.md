@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751786"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
 Microsoft.SharePoint.Emulators paketi, Microsoft SharePoint 2010 uygulamaları için yalıtılmış birim testleri oluşturmak için yardımcı olacak bir dizi sağlar. Öykünücüler kullanma [dolgular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) gelen [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) en sık kullanılan nesneleri ve yöntemleri SharePoint API taklit hafif bellek içi nesneler oluşturmak için yalıtım framework. Bir SharePoint yöntem değil benzetilmiş veya bir öykünücü varsayılan davranışını değiştirmek istediğiniz istediğiniz sonuçları sağlamak için Fakes dolgular oluşturabilirsiniz.
@@ -33,7 +34,7 @@ Microsoft.SharePoint.Emulators paketi, Microsoft SharePoint 2010 uygulamaları i
 ##  <a name="BKMK_The_AppointmentsWebPart_example"></a> AppointmentsWebPart örneği
  AppointmentsWebPart görüntülemek ve bir SharePoint listesi, randevu yönetmenize olanak sağlar.
 
- ![Randevular Web Bölümü](../test/media/ut_emulators_appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")
+ ![Randevular Web Bölümü](../test/media/ut_emulators_appointmentswebpart.png)
 
  Bu örnekte, biz web bölümünün iki yöntem test edeceksiniz:
 
@@ -118,7 +119,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
 3.  Arama **çevrimiçi** kategorisi için `Microsoft.SharePoint.Emulators`ve ardından **yükleme**.
 
- ![SharePoint Öykünücüler NuGet paketi](../test/media/ut_emulators_nuget.png "UT_EMULATORS_Nuget")
+ ![SharePoint Öykünücüler NuGet paketi](../test/media/ut_emulators_nuget.png)
 
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> Test yöntemi öykünme ile çalıştırma
  Paket yükleme gerekli kitaplıkları başvurularını projelerinize ekler. Varolan bir test sınıfı kullanımı kolay Öykünücüler yapmak için ad alanları Ekle `Microsoft.SharePoint.Emulators` ve `Microsoft.QualityTools.Testing.Emulators`.
@@ -155,7 +156,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  Test yöntemi yürütüldüğünde öykünücüsü çalışma zamanı dinamik olarak kod Microsoft.SharePoint.Fakes.dll içinde bildirilen Temsilciler bu yönteme çağrıları yönlendir SharePoint yöntemlerde eklemesine Microsoft Fakes çağırır. Microsoft.SharePoint.Emulators.dll yakın gerçek SharePoint davranışını mimicking temsilcileri benzetilmiş yöntemleri için uygular. Test yöntemi veya test altındaki bileşen SharePoint yöntemi çağırdığında sonucu, öykünme davranıştır.
 
- ![Öykünücü yürütme akış](../test/media/ut_emulators_flowchart.png "UT_EMULATORS_FlowChart")
+ ![Öykünücü yürütme akışı](../test/media/ut_emulators_flowchart.png)
 
 ##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a> Çift kullanımlı sınıflar ve yöntemler oluşturma
  Her iki tümleştirme testleri gerçek SharePoint API'sine karşı ve Öykünücüler kullanma yalıtılmış birim testleri için kullanılan yöntemleri oluşturmak için aşırı yüklü Oluşturucu kullanın `SharePointEmulationScope(EmulationMode)` test yöntemi kodunuzu sarmalamak için. İki değerlerini `EmulationMode` enum belirtin kapsamı Öykünücüler kullanıp kullanmadığını (`EmulationMode.Enabled`) veya kapsamı SharePoint API kullanıp kullanmadığını (`EmulationMode.Passthrough`).
@@ -266,11 +267,11 @@ namspace MySPAppTests
 
 1.  Değil benzetilmiş bir SharePoint sınıf dolguya istiyorsanız, Microsoft.SharePoint.fakes dosyasını düzenleyin ve sınıf shimmed sınıfları listesine ekleyin. Bkz: [saplamalar ve dolgular kod oluşturma yapılandırma](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) bölümünü [kod oluşturma, derleme ve adlandırma kuralları Microsoft Fakes içinde](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).
 
-     ![Çözüm Gezgininde klasör fakes](../test/media/ut_emulators_fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")
+     ![Çözüm Gezgini'nde fakes klasörü](../test/media/ut_emulators_fakesfilefolder.png)
 
 2.  Oluşturduğunuz test projesinin en az bir kez Microsoft SharePoint Öykünücüler paketini yükledikten sonra ve Microsoft.SharePoint.Fakes dosyayı düzenlerseniz yeniden oluşturun. Proje derleme oluşturur ve dolduran bir **FakesAssembly** , disk üzerindeki proje kök klasöründe.
 
-     ![FakesAssembly klasörü](../test/media/ut_emulators_fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")
+     ![FakesAssembly klasörü](../test/media/ut_emulators_fakesassemblyfolder.png)
 
 3.  Bir başvuru ekleyin **Microsoft.SharePoint.14.0.0.0.Fakes.dll** bulunan derleme **FakesAssembly** klasör.
 

@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: add91942b6a97bf9da496d1664b2a799a9c50d1c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a670eb3145f3fd2ab9478dc68e0490cdeda8ac56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749966"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Pahalı GetHashCode
 |||  
@@ -33,8 +34,8 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Sebep  
  Profil oluşturma verileri önemli bir kısmının türü GetHashCode yöntemi çağrıları aynıdır veya yöntemi bellek ayırır.  
   
-## <a name="rule-description"></a>Kural Tanımı  
- Karma, hızlı bir şekilde büyük bir koleksiyondaki belirli bir öğe bulmak için bir tekniktir. Karma tabloları çok büyük ve çok yüksek hızda erişim desteklemek zorunda olduğundan, karma tabloları son derece verimli olması gerekir. Bu gereksinim, bir uygulanır, .NET Framework'teki GetHashCode yöntemleri bellek ayırmanız değil ' dir. Bellek ayırma atık toplayıcı üzerindeki yükü artırır ve atık toplama ayırma isteğinin sonucu olarak çalıştırmak için gerekli hale gelirse olası gecikmelere yöntemi gösterir.  
+## <a name="rule-description"></a>Kural açıklaması  
+ Karma, hızlı bir şekilde büyük bir koleksiyondaki belirli bir öğe bulmak için bir tekniktir. Karma tabloları büyük ve çok yüksek hızda erişim desteklemek zorunda olduğundan, karma tabloları verimli olması gerekir. Bu gereksinim, bir uygulanır, .NET Framework'teki GetHashCode yöntemleri bellek ayırmanız değil ' dir. Bellek ayırma atık toplayıcı üzerindeki yükü artırır ve atık toplama ayırma isteğinin sonucu olarak çalıştırmak gerekli hale gelirse olası gecikmelere yöntemi gösterir.  
   
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
+## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl  
  Yöntem karmaşıklığını azaltın.

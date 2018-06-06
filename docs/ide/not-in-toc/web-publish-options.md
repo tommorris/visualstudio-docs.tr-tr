@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fd980aa7da59c98348c4dede5aee9835863d522
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: acc136462f8905be924357399b644a05569258b1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766187"
 ---
 # Benim için en uygun Yayımlama seçenekleri nelerdir?
 
@@ -83,7 +84,7 @@ Herhangi bir nedenle (örneğin, makine erişimi), Azure App Service ya da Azure
 
 .NET Core uygulamaları dağıtma hakkında daha fazla bilgi için bkz: [Visual Studio .NET Core dağıtma uygulamalarla](/dotnet/core/deploying/deploy-with-vs).
 
-## Özel hedefleri
+## Özel hedefleri (IIS, FTP)
 
 Özel bir hedef web uygulamanızı Azure App Service, Azure sanal makineleri veya yerel dosya sistemi dışında bir hedef dağıtmanıza olanak tanır. Bir dosya sistemi veya diğer bulut Hizmetleri dahil olmak üzere, erişimi olan herhangi bir sunucuyu (Internet veya Intranet) dağıtabilirsiniz. Web ile çalışabilirsiniz dağıtma (dosyaları veya. ZIP) ve FTP.
 
@@ -102,4 +103,4 @@ Visual Studio'da farklı ayarlarla profillerini yönetmek olası hale getirerek,
 - Visual Studio içinde kullanın ya da Azure hesaplarınızı doğrudan bağlı olanlar dışındaki kimlik bilgilerini kullanarak dağıtmak istediğiniz.
 - Dağıttığınız her zaman hedef dosyaları silmek istiyor.
 
-IIS yayımlama hakkında daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ve [Uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
+IIS yayımlama hakkında daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)

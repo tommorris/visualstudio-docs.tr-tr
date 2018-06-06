@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6f293633bb64b06f5374a21fbc9382d58b0bc0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5a5982fd194f86d2cfe2b63a564c0ce1ce90f8a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749833"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Önemli miktarda Yansıma
 |||  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Sebep  
  Profil oluşturma verileri önemli bir kısmının çağrıları InvokeMember ve GetMember gibi System.Reflection yöntemleri veya MemberInvoke gibi türü yöntemleri için aynıdır. Mümkün olduğunda, bu yöntemleri bağımlı derlemeleri yöntemleri için erken bağlama değiştirerek göz önünde bulundurun.  
   
-## <a name="rule-description"></a>Kural Tanımı  
+## <a name="rule-description"></a>Kural açıklaması  
  Yansıma, uygulamanızın bağımlı bir çalışma zamanı derleme geç bağlama gerçekleştirmek ya da oluşturmak ve yeni türleri çalışma zamanı sırasında dinamik olarak çalıştırmak için kullanılan .NET Framework'ün esnek bir özelliğidir. Ancak, sık kullanılan veya sıkı Döngülerde adlı bu teknikler performansı düşürebilir.  
   
  Daha fazla bilgi için bkz: [yansıma ve geç bağlama](http://go.microsoft.com/fwlink/?LinkId=177826) bölüm 5 bölümünü — geliştirme yönetilen kod performans Microsoft Patterns and Practices geliştirme .NET uygulama performansı ve ölçeklenebilirliği hacmi MSDN Kitaplığı.  

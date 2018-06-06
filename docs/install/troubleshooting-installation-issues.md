@@ -1,5 +1,5 @@
 ---
-title: Yükleme sorunlarını giderme
+title: Visual Studio 2017 yükleme sorunlarını giderme
 description: Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemesi veya yükseltmesi başarısız olursa, bu sayfayı yardımcı olabilir.
 ms.date: 11/21/2017
 ms.technology: vs-acquisition
@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766044"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme ve yükseltme sorunlarını giderme
 
@@ -112,4 +113,5 @@ Birkaç diğer seçenekler şunlardır:
 
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)
+* [Bir güvenlik duvarı veya proxy sunucunun arkasındaki Visual Studio yükleme](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 2017 Kaldır](remove-visual-studio.md)

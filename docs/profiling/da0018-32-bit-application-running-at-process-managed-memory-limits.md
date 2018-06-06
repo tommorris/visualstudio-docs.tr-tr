@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba328ae4b54728422e032741e20543b99f49d5ae
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 862e70c104db08f147c6a608adf1cf022b642025
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749785"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 bitlik Uygulama işlem tarafından yönetilen bellek sınırlarında çalışıyor
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 bit uygulama işlemi tarafından yönetilen bellek sınırları çalışıyor
 |||  
 |-|-|  
 |Kural Kimliği|DA0018|  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/19/2018
   
  Kuralın yalnızca 32-bit makine üzerinde çalışan 32-bit uygulamalar için ateşlenir.  
   
-## <a name="rule-description"></a>Kural Tanımı  
+## <a name="rule-description"></a>Kural açıklaması  
  Microsoft .NET ortak dil çalışma zamanı (CLR) uygulama artık kullanır nesneleri belleği geri almasını atık toplayıcı kullanan bir otomatik bellek yönetimi mekanizması sağlar. Çöp toplayıcı nesil odaklı birçok ayırmaları kısa süreli duymadığını ' dir. Yerel değişkenler, örneğin, kısa süreli olmalıdır. Yeni oluşturulan nesneleri oluşturma 0 (gen 0) başlatın ve bunlar uygulama hala bunları kullanıyorsa, ne zaman bunlar bir atık toplama çalıştırın ve son olarak 2. nesil geçiş varlığını sürdürmesini 1. nesil için ilerleme durumu.  
   
  85 KB'den büyük yönetilen nesneler üzerinde daha az sıklıkta çöp toplama ve daha küçük nesneleri sıkıştırma tabi oldukları büyük nesne yığın ayrılır. Daha fazla kalıcı ve kalıcı ve büyük karıştırma çünkü nesneleri sık ayrılmış küçük nesnelerle öbek en kötü atama parçalanma üretebilir varsayıldığından büyük nesneler ayrı olarak yönetilir.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/19/2018
   
 -   uygulamanın yönetilen bellek kaynaklarının kullanımını en iyi duruma getirme  
   
-     -veya-  
+     veya  
   
 -   sanal bellek 32 bitlik bir işlem için en büyük boyutunu mimari kısıtlamalar hafifletmek için adımları alma  
   
@@ -68,4 +69,4 @@ ms.lasthandoff: 04/19/2018
   
  Bir işlem adres alanı özel kısmının boyutu sanal bellek kısıtlamaları gelen mimari Tahliye kazanmak için bu 32-bit işlem bir 64-bit makine üzerinde çalışan deneyin.  Bir 64-bit makine üzerindeki 32-bit işlem en fazla 4 GB özel sanal bellek elde edebilirsiniz.  
   
- 64 bitlik bir işlem bir 64-bit makine üzerinde çalışan sanal bellek 8 TB'ye kadar elde edebilirsiniz. Yerel 64 bitlik bir uygulama çalıştırmak için uygulamayı yeniden derlemeyi düşünün. Bu kural, yalnızca bilgi amaçlıdır ve düzeltme eylemi gerektirmeyebilecek.
+ 64 bitlik bir işlem bir 64-bit makine üzerinde çalışan sanal bellek 8 TB'ye kadar elde edebilirsiniz. Yerel 64 bitlik bir uygulama çalıştırmak için uygulamayı yeniden derlenmesi göz önünde bulundurun. Bu kural, yalnızca bilgi amaçlıdır ve düzeltme eylemi gerektirmeyebilecek.

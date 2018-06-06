@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5631699f324451034d0d5c66161c004c793add37
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691423"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765862"
 ---
-# <a name="browsing-sharepoint-connections-that-use-server-explorer"></a>Sunucu Gezgini kullanan SharePoint bağlantılarına gözatma
-  Yerel SharePoint bağlantıları gözatabilirsiniz **Sunucu Gezgini**. Bu yöntemi kullanarak, bir SharePoint sitesi bileşenleriyle sisteminizde gidebilirsiniz. Liste tanımları ve içerik türleri gibi SharePoint site bileşenlerini adlı bir düğüm görünür **SharePoint bağlantıları** ağaç görünümünde **Sunucu Gezgini**. Görüntülenecek **Sunucu Gezgini**, menü çubuğunda seçin **Görünüm**, **Sunucu Gezgini**. SharePoint site bileşenlerini görüntüleme ek olarak, öğeleri kaldırmak, özelliklerini görüntülemek veya kısayol menüsünden komutları kullanarak ağaç görünümü yenileyin.  
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Sunucu Gezgini kullanarak SharePoint bağlantılarına göz
+  Yerel SharePoint bağlantıları gözatabilirsiniz **Sunucu Gezgini**. Bu yöntemi kullanarak, bir SharePoint sitesi bileşenleriyle sisteminizde gidebilirsiniz. Liste tanımları ve içerik türleri gibi SharePoint site bileşenlerini adlı bir düğüm görünür **SharePoint bağlantıları** ağaç görünümünde **Sunucu Gezgini**. Görüntülenecek **Sunucu Gezgini**, menü çubuğunda seçin **Görünüm** > **Sunucu Gezgini**. SharePoint site bileşenlerini görüntüleme ek olarak, öğeleri kaldırmak, özelliklerini görüntülemek veya kısayol menüsünden komutları kullanarak ağaç görünümü yenileyin.  
   
 > [!IMPORTANT]  
 >  Bir SharePoint sitesine göz atmak için SharePoint site koleksiyonunun bir yönetici olması ve Visual Studio'yı bir yerel bilgisayarda yönetici olarak çalıştırıyor olmanız gerekir. Site Aksi takdirde görünür **Sunucu Gezgini**, ancak, düğüm genişletilemiyor. Site koleksiyonu yöneticisi olup olmadığını doğrulamak için siteyi bir web tarayıcısında Aç Aç **Site eylemleri** menüsünde seçin **Site izinleri**ve ardından **izinleri: Takım Site** sayfasında, **Site koleksiyonu yöneticileri** komutunu **Yönet** Şerit üzerindeki Grup. Site koleksiyonu yöneticisi varsa adınızı metin kutusunda görüntülenir. Varsa **Site koleksiyonu yöneticileri** komutu Şerit üzerindeki Yönet grubundaki görünmüyor, site koleksiyonu için bir yönetici değil ve site yöneticisinden uygun izinleri almak gerekir.  

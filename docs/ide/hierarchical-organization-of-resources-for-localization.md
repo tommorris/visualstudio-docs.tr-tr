@@ -20,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a5b9e7367aba2fa987fb68ad99dad20f7cd0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c46fbfe13e7e4c795703a53debedca20ae39c145
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752326"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Yerelleştirme için kaynakların hiyerarşik organizasyonu
 
@@ -42,11 +43,11 @@ Visual Studio'da yerelleştirilmiş kaynaklar (dizeler ve görüntüleri her kü
 
  Kaynaklarınızın depolamak için en iyi mümkün olduğunca bunları genelleştirmek için yoludur. Yerelleştirilmiş dizeleri, görüntüleri vb. belirli kültürler mümkün olduğunda yerine nötr kültürler için kaynak dosyaları depolamak anlamına gelir. Örneğin, Fransızca Belçika için kaynaklarınız varsa ("fr-olabilir") kültür ve hemen üzerindeki kaynaklar İngilizce geri dönüş kaynakları, birisi Fransızca Kanada kültürü için yapılandırılmış bir sistemde, uygulamanızın kullanırken bir sorun sonuçlanabilir. Sistem "fr-CA" için bir uydu derleme arar ancak Bul değil, bu nedenle geri dönüş kaynağı içeren ana derleme yükler İngilizce, Fransızca kaynakları yüklemek yerine. Aşağıdaki resimde, bu istenmeyen senaryoyu gösterir.
 
- ![Yalnızca belirli kaynaklar](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
+ ![Yalnızca belirli kaynaklar](../ide/media/vbspecificresourcesonly.gif)
 
  Dilden bağımsız kaynak dosyasında "fr" kültür için mümkün olduğunca fazla kaynak yerleştirme önerilen uygulama izlerseniz, Fransızca Kanada kullanıcısı için işaretlenmiş kaynakları görmek "fr-olması" kültür ancak dizeleri Fransızca gösterilen. Tercih edilen bu senaryo aşağıdaki durum gösterir.
 
- ![NeutralSpecificResources grafiği](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
+ ![NeutralSpecificResources grafiği](../ide/media/vbneutralspecificresources.gif)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

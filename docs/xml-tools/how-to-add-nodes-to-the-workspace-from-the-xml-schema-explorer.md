@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 3e1f5821d3a4207d89eb62b9344cff967c73b536
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752059"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Nasıl yapılır: XML şema Gezgini'nden çalışma alanına düğümleri eklemek
 
@@ -49,13 +50,13 @@ Bu konuda düğüm ekleme açıklanmaktadır [XML şema Tasarımcısı çalışm
 
 1.  "PurchaseOrder" yazın arama metin kutusuna [XML Explorer](../xml-tools/xml-schema-explorer.md) araç çubuğu ve arama düğmesini tıklatın.
 
-     ![XML şema Explorer anahtar sözcük aramasını](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+     ![XML şema Explorer anahtar sözcük araması](../xml-tools/media/schemaexplorersearch.gif)
 
      İçinde arama sonuçlarında vurgulanır **XML Şeması Explorer** ve çizgilerine dikey kaydırma çubuğunda olarak işaretlenmiş.
 
 2.  Arama sonuçlarını çalışma alanı'na tıklayarak ekleyin **çalışma alanına vurgulanan düğümleri eklemek** Özet Sonuçlar bölmesindeki düğmesi.
 
-     ![XML şema Explorer arama sonucu](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+     ![XML şema Explorer arama sonucu](../xml-tools/media/schemaexplorersearchresult.gif)
 
      `purchaseOrder` Düğümü ve `PurchaseOrderType` düğümünün görünen diğer yanındaki tasarım yüzeyine [grafik görünümü](../xml-tools/graph-view.md). İki düğüm birbiriyle ilişkili olmadığından ( `purchaseOrder` öğesidir `PurchaseOrderType` türü), bir ok aralarında çizilir.
 

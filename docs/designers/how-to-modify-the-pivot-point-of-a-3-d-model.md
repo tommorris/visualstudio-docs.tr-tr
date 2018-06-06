@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f6cff8e8890b97e7aeddad69c4a1a3e0ff5db8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747111"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Nasıl yapılır: bir 3B modelin Pivot noktası değiştirme
 
 Bu makalede Model Düzenleyicisinde değiştirmek için nasıl kullanılacağı gösterilmektedir *pivot noktası* 3D model. Pivot noktası, nesne döndürme ve ölçeklendirme için matematiksel merkezini tanımlar alanda noktasıdır.
 
-## <a name="modify-the-pivot-point-of-a-3d-model"></a>Pivot noktası 3D model değiştirme
+## <a name="modify-the-pivot-point-of-a-3d-model"></a>3B modelin pivot noktasını değiştirme
 
 Pivot noktası değiştirerek 3D model kökeni tanımlayabilirsiniz.
 
@@ -41,7 +42,7 @@ Olduğundan emin olun **özellikleri** penceresi ve **araç** görüntülenir.
 
 Değiştirilen pivot noktası olan bir model şöyledir:
 
-![Değiştirilen pivot noktası olan bir ev modelinin](../designers/media/digit-modified-model.png "basamaklı değiştiren modeli")
+![Değiştirilen pivot noktası olan bir ev modeli](../designers/media/digit-modified-model.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

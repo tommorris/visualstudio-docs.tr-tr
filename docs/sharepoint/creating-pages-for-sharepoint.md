@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694052"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765534"
 ---
-# <a name="creating-pages-for-sharepoint"></a>SharePoint için sayfa oluşturma
+# <a name="create-pages-for-sharepoint"></a>SharePoint için sayfa oluşturma
   Uygulama sayfaları, site sayfaları, ana sayfalar ve sayfa düzenleri bir SharePoint sitesinin oluşturabilirsiniz.  
   
  Visual Studio'da bir şablon kullanarak uygulama sayfaları oluşturabilirsiniz. Site sayfaları, ana sayfalar ve sayfa düzenleri, SharePoint Designer kullanarak oluşturun. Ardından, bu sayfaları bir SharePoint Proje ile kullanmak için Visual Studio içe aktarabilirsiniz.  
@@ -67,7 +67,7 @@ ms.locfileid: "34694052"
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[SharePoint için Uygulama Sayfaları Oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)|Uygulama sayfaları eklemeyi açıklar: bir SharePoint ana sayfa ile birleştirilmiş .aspx içeriği.|  
+|[SharePoint için Uygulama Sayfaları Oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)|Uygulama sayfaları eklemeyi açıklar: *.aspx* SharePoint ana sayfa ile birleştirilmiş içeriği.|  
 |[Nasıl yapılır: Uygulama Sayfası Oluşturma](../sharepoint/how-to-create-an-application-page.md)|Bir SharePoint sitesinde çalıştırmak ASP.NET sayfalarının nasıl oluşturulacağını gösterir.|  
 |[İzlenecek Yol: SharePoint Uygulama Sayfası Oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Tasarımı ve hata ayıklama bir SharePoint sitesi için bir ASP.NET Web sayfası gösterilir.|  
   

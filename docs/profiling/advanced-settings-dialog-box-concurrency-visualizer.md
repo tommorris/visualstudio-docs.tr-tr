@@ -16,7 +16,7 @@ ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690799"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Gelişmiş Ayarlar iletişim kutusu (eşzamanlılık görselleştiricisi)

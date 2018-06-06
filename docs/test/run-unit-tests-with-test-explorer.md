@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752072"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -29,13 +30,13 @@ Visual Studio hem yönetilen hem de yerel kod için Microsoft birim test çerçe
 
 Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.
 
-![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png)
 
 Test Gezgini çalıştırmak, yazma ve testleri yeniden çalıştırmak gibi sonuçları varsayılan gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, **atlandı testleri** ve  **Testler değil**. Test Gezgini testlerinizi grupları şekilde değiştirebilirsiniz.
 
 Bulma, düzenleme ve testleri Test Gezgini araç çubuğundan çalışan işin çoğunu gerçekleştirebilirsiniz.
 
-![Test Gezgini araç çubuğundan testler](../test/media/ute_toolbar.png "UTE_ToolBar")
+![Test Gezgini araç çubuğundan testleri çalıştırma](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>Testleri çalıştırma
 
@@ -47,7 +48,7 @@ Bir grup veya seçtiğiniz testleri kümesi tüm testleri Çözümdeki tüm test
 
 - Seçilen test bağlam menüsünü açın ve ardından çalıştırmak istediğiniz tek tek testlerin seçin **seçili Testleri Çalıştır**.
 
-- Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+- Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
 Test Gezgini penceresinin üst geçişi/hata çubuğu Testleri Çalıştır animasyon eklenir. Tüm testleri geçirilen ya da herhangi bir test başarısız olursa kırmızı kapatır testi sonuç geçişi/hata çubuğu yeşil olur.
 
@@ -65,7 +66,7 @@ Test Gezgini çalıştırmak, yazma ve testleri yeniden çalıştırmak gibi son
 
 Bir test ayrıntılarını görüntülemek için test'i seçin.
 
-![Test yürütme ayrıntıları](../test/media/ute_testdetails.png "UTE_TestDetails")
+![Test yürütme ayrıntıları](../test/media/ute_testdetails.png)
 
 Test Ayrıntılar bölmesinde aşağıdaki bilgileri görüntüler:
 
@@ -91,9 +92,9 @@ Test Gezgini testlerinizi önceden tanımlanmış kategoriler halinde gruplandı
 
 ### <a name="group-tests-in-the-test-list"></a>Test listesi grup testlerinde
 
- Seçin yanındaki aşağı oka testleri düzenlenir yöntemini değiştirmek için **Group By** düğmesini ![Test Gezgini grubu düğmesini](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") ve yeni bir grup seçin ölçütleri.
+ Seçin yanındaki aşağı oka testleri düzenlenir yöntemini değiştirmek için **Group By** düğmesini ![Test Gezgini grubu düğmesini](../test/media/ute_groupby_btn.png) ve yeni bir select gruplandırma ölçütü.
 
- ![Test Gezgini'nda kategoriye göre testleri grup](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![Test Gezgini'nda kategoriye göre grup testleri](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Test Gezgini grupları
 
@@ -135,7 +136,7 @@ Farklı bir ölçüte göre filtre uygulamak için:
 
 3. Filtre değeri tırnak işaretleri arasında girin.
 
-![Test Gezgini testlerinde filtre](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![Test Gezgini filtre testlerinde](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > Aramalar büyük küçük harfe duyarlı ve herhangi bir kısmını ölçütleri değeri için belirtilen dize eşleşmesi.
@@ -162,7 +163,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  Oluşturun ve çalıştırın veya bir grup olarak görüntülemek istediğiniz testleri listesini kaydedin. Bir çalma listesi seçtiğinizde, listedeki testler görüntülenir Test Gezgini. Bir test birden fazla çalma listesine ekleyin ve varsayılan seçtiğinizde projenizdeki tüm testleri kullanılabilir **tüm testleri** çalma listesi.
 
- ![Bir çalma listesi seçin](../test/media/ute_playlist.png "UTE_Playlist")
+ ![Bir çalma listesi seçin](../test/media/ute_playlist.png)
 
  **Bir çalma listesi oluşturmak için**, bir veya daha fazla testleri Test Explorer'da seçin. Bağlam menüsünde seçin **eklemek için çalma**, **NewPlaylist**. Ad ve belirttiğiniz konuma sahip dosyayı kaydedin **yeni çalma listesi oluştur** iletişim kutusu.
 
@@ -170,7 +171,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  **Bir çalma listesi açmak için**, Test, Visual Studio menüsünde çalma listesi seçin ve son kullanılan çalma listesinden seçin veya çalma çalma konumunu ve adını belirtmek için Aç'ı seçin.
 
- Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+ Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Hata ayıklama ve birim testleri çözümleme
 

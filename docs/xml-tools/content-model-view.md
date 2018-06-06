@@ -10,19 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751799"
 ---
-# <a name="content-model-view"></a>İçerik modeli görünümü
+# <a name="content-model-view"></a>İçerik Modeli Görünümü
 
 İçerik modeli görünümü yerel ve genel şema düğümleri ve basit ve karmaşık türleri, öğeleri, model grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere bileşenleri, grafik bir gösterimini sağlar. XML açıklamaları ve işleme talimatları içerik modeli görünümünde görüntülenemiyor. İçerik modeli görünümü iki bölme içerir: bir **çalışma** düğümlerin listesini içeren paneli [XML şema Tasarımcısı çalışma alanı](../xml-tools/xml-schema-designer-workspace.md)ve burada görebilirsiniz şema içerik modeli tasarım yüzeyi Seçili düğümleri **çalışma** paneli. İçerik modeli görünümü, XML şema Tasarımcısı araç ve içerik haritası çubuğunu de içerir.
 
  Aşağıdaki görüntüde **çalışma** paneli altı şema düğümleri içerir. `purchaseOrder` Düğümü seçildiğinde, **çalışma** panel ve tasarım yüzeyine görüntülenir.
 
- ![XML şema Tasarımcısı içerik modeli görünümü](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![XML şema Tasarımcısı içerik modeli görünümü](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Çalışma alanı paneli
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 05/24/2018
 
  İçerik modeli görünümü etkin olduğunda aşağıdaki XSD Designer araç çubuğu düğmeleri etkinleştirilir.
 
- ![XML şema Tasarımcısı araç](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![XML şema Tasarımcısı araç çubuğu](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Seçenek|Açıklama|
 |------------|-----------------|

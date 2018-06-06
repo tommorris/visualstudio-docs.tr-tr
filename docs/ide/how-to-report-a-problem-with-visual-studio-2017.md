@@ -12,17 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746001"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017 ile ilgili bir sorun bildirme
 
 Visual Studio ile ilgili bir sorun yaşıyorsanız, bunları hakkında bilmek isteriz. Böylece biz tanılayın ve düzeltin sorunu bildirin bırakılır.
 
-## <a name="sign-in-to-visual-studio"></a>Visual Studio'da oturum açın
+## <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma
 
 Zaten yapmadıysanız, oturum açma Visual Studio için önce bir sorunu bildirin. Bu şekilde, bir sorun yaşıyorsanız ve ayrıca oy verin ya da açıklama üzerinde bildirebilirsiniz. Hatta oy kullanabilir veya gördüğünüz herhangi bir sorun yorum gönderilen, çok.
 
@@ -30,14 +31,14 @@ Zaten yapmadıysanız, oturum açma Visual Studio için önce bir sorunu bildiri
 2. Oturumunuz açık değil, seçin **oturum**; aşağıdaki ekran görüntüsünde gösterildiği gibi aracı sağ tarafta olur.
 3. Ekran oturum açmak için yönergeleri izleyin.
 
- ![Bir sorunu bildirmek oturum](../ide/media/sign-in-new-ux.png "bir sorunu bildirmek oturum açın")
+ ![Bir sorunu bildirmek oturum açın](../ide/media/sign-in-new-ux.png)
 
 ## Arama ve oy benzer sorunlar için <a name="search_and_vote"></a>
 
 1. Sorununuz için arama ve diğerleri, çok rapor olmadığını görebilirsiniz.
 2. Birisi bildirdi, "yukarı-bize bildirin için oy".
 
-  ![Arama ve benzer sorunlar için oy](../ide/media/search-and-vote.png "arama ve oy benzer sorunlar için")
+  ![Arama ve oy benzer sorunlar için](../ide/media/search-and-vote.png)
 
 ## Yeni bir sorun raporu <a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Zaten yapmadıysanız, oturum açma Visual Studio için önce bir sorunu bildiri
 2. Bize doğru Visual Studio team rota yardımcı olacak sorun için açıklayıcı bir başlık oluşturun.
 3. Bize ek ayrıntılar verin ve mümkünse sorunu yeniden oluşturma adımlarını sağlayın.
 
-  ![Yeni bir sorun bildirmek](../ide/media/report-new-problem.png "yeni bir sorun raporu")
+  ![Yeni bir sorun raporu](../ide/media/report-new-problem.png)
 
 ## Bir ekran ve ekleri (isteğe bağlı) sağlayın <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ Zaten yapmadıysanız, oturum açma Visual Studio için önce bir sorunu bildiri
 1. Seçin **kaydı** sekmesi.
 2. Seçin **kaydı başlatmak**. Aracı çalıştırmak için izni verin.
 
-  ![Bir izleme ve yığın döküm dosyası sağlamak için "kaydı Başlat" seçin ] (../ide/media/record-dialog-box.png "sağla izleme ve yığın döküm dosyaları")
+  ![Bir izleme ve yığın döküm dosyası sağlamak için "kaydı Başlat" ı seçin ](../ide/media/record-dialog-box.png)
 
 3. Zaman **adımları Kaydedicisi** aracı görüntülenir, sorunu yeniden oluşturma adımları gerçekleştirin.
 4. İşiniz bittiğinde seçin **durdurmak kayıt** düğmesi.

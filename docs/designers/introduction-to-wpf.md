@@ -13,11 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf6ba014d594dd6f5b26420ffa6ee7e61a79a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747287"
 ---
 # <a name="introduction-to-wpf"></a>WPF'ye Giriş
 
@@ -67,7 +68,7 @@ XAML bir uygulamanın görünümünü bildirimli olarak uygulamak için kullanı
 
  Aşağıdaki şekilde, önceki örnekte XAML tarafından tanımlanan kullanıcı arabirimini (UI) gösterir.
 
- ![Bir düğmeyi içeren bir pencere](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")
+ ![Bir düğmeyi içeren bir pencere](../designers/media/wpfintrofigure10.png)
 
  XAML XML tabanlı olduğundan, kendisiyle oluşturan kullanıcı Arabirimi olarak bilinen iç içe öğelerin bir hiyerarşideki derlenip bir [öğe ağacı](/dotnet/framework/wpf/advanced/trees-in-wpf). Öğe ağacı oluşturmak ve Uı'lar yönetmek için mantıksal ve sezgisel bir yol sağlar.
 
@@ -300,7 +301,7 @@ WPF tarafından sağlanan 2B şekiller temel şekillerin standart kümesini kaps
 
 <xref:System.Windows.Media.Geometry> nesneleri kırpma, isabet testi ve 2B grafik verilerini işleme için kullanılabilir.
 
-![Bir yol çeşitli kullanımları](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")
+![Bir yol çeşitli kullanımları](../designers/media/wpfintrofigure5.png)
 
 Daha fazla bilgi için bkz: [geometrisi](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
 
@@ -308,7 +309,7 @@ Daha fazla bilgi için bkz: [geometrisi](/dotnet/framework/wpf/graphics-multimed
 
 WPF 2B yeteneklerinin bir alt kümesini gradyan, bit eşlemler, çizimler, videoları, döndürme, ölçekleme ve eğriltme boyama gibi görsel efektler içerir. Bunların tümü fırçalar ile elde edilir; Aşağıdaki şekilde bazı örnekler gösterilmektedir.
 
-![Farklı fırçalar çizimi](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")
+![Farklı fırçalar çizimi](../designers/media/wpfintrofigure6.png)
 
 Daha fazla bilgi için bkz: [WPF Fırçaları Genel Bakış](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).
 
@@ -316,7 +317,7 @@ Daha fazla bilgi için bkz: [WPF Fırçaları Genel Bakış](/dotnet/framework/w
 
 WPF 2B grafik daha heyecan verici ve ilginç kullanıcı arabirimleri oluşturulmasına izin ile tümleştirmek 3B işleme yeteneklerini de içerir. Örneğin, aşağıdaki şekilde 3B şekilleri üzerinde işlenen 2B görüntüleri gösterilmektedir.
 
-![Visual3D örnek ekran görüntüsü](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")
+![Visual3D örnek ekran görüntüsü](../designers/media/wpfintrofigure13.png)
 
 Daha fazla bilgi için bkz: [3B grafik genel bakış](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
@@ -324,7 +325,7 @@ Daha fazla bilgi için bkz: [3B grafik genel bakış](/dotnet/framework/wpf/grap
 
 Arttıkça, sallama denetimlerini yapın, WPF animasyon desteği sağlar döndürme ve ilginç oluşturmak için yavaşça geçişleri ve daha fazla sayfa. Çoğu WPF sınıfları animasyon, özel sınıflar bile. Aşağıdaki şekilde basit bir animasyon eylemde gösterilmektedir.
 
-![Animasyonlu bir küpü görüntülerini](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")
+![Animasyonlu küpünün görüntüleri](../designers/media/wpfintrofigure7.png)
 
 Daha fazla bilgi için bkz: [animasyon genel bakış](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
 
@@ -336,7 +337,7 @@ Zengin içerik iletmek için bir görsel ve işitsel ortam kullanımı ile yolud
 
 Görüntüleri çoğu uygulamaları için ortak ve WPF bunları kullanmak için çeşitli yöntemler sağlar. Aşağıdaki şekil küçük resimlerini içeren bir liste kutusu ile bir kullanıcı arabirimi gösterir. Küçük resim seçili olduğunda, görüntü tam boyutlu gösterilir.
 
-![Küçük resimler ve tam&#45;resim boyutu](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")
+![Küçük resimler ve tam&#45;resim boyutu](../designers/media/wpfintrofigure8.png)
 
 Daha fazla bilgi için bkz: [Imaging genel bakış](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).
 
@@ -348,7 +349,7 @@ Daha fazla bilgi için bkz: [Imaging genel bakış](/dotnet/framework/wpf/graphi
 
 Aşağıdaki şekil gösterdiği penceresinde <xref:System.Windows.Controls.MediaElement> eylem denetiminde.
 
-![Ses ve video MediaElement denetimi](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")
+![Ses ve video MediaElement denetimi](../designers/media/wpfintrofigure1.png)
 
 Daha fazla bilgi için bkz: [grafik ve çoklu ortam](/dotnet/framework/wpf/graphics-multimedia).
 
@@ -397,7 +398,7 @@ WPF denetimleri çoğunu ana amacı, içeriği görüntülemektir. WPF içinde d
 
 Aşağıdaki şekil sonucu gösterir.
 
-![Metin içeren bir metin kutusu denetimi](../designers/media/wpfintrofigure21.png "WPFIntroFigure21")
+![Metin içeren bir metin kutusu denetimi](../designers/media/wpfintrofigure21.png)
 
 Diğer denetimler, ancak içerik farklı türlerde birden çok öğe içerebilir; içeriği bir <xref:System.Windows.Controls.Button>tarafından belirtilen <xref:System.Windows.Controls.ContentControl.Content%2A> özelliği, öğeleri düzen denetimleri, metin, görüntüler ve şekiller de dahil olmak üzere çeşitli içerebilir. Aşağıdaki örnekte gösterildiği bir <xref:System.Windows.Controls.Button> içeren içerik ile bir <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Border>ve bir <xref:System.Windows.Controls.MediaElement>.
 
@@ -423,7 +424,7 @@ Diğer denetimler, ancak içerik farklı türlerde birden çok öğe içerebilir
 
 Aşağıdaki şekilde bu düğme içeriğini gösterir.
 
-![Birden çok içerik türlerini içeren bir düğme](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")
+![Birden çok içerik türlerini içeren bir düğme](../designers/media/wpfintrofigure22.png)
 
 Çeşitli denetimler tarafından desteklenen içerik türleri hakkında daha fazla bilgi için bkz: [WPF içeriği modeli](/dotnet/framework/wpf/controls/wpf-content-model).
 
@@ -452,7 +453,7 @@ Bu örnekte, varsayılan düğme kullanıcı arabirimi ile değiştirilmiştir b
 
 Bir denetim şablonu denetiminin görünümünü belirtmenize olanak tanır ancak veri şablonu denetim içeriğinin görünümünü belirtmenize olanak sağlar. Veri şablonları nasıl bağlı veri geliştirmek için kullanılan sık görüntülenir. Varsayılan görünüm için aşağıdaki şekilde gösterilmiştir bir <xref:System.Windows.Controls.ListBox> bir koleksiyona bağlı `Task` nesneleri, her görevin sahip olduğu bir ad, açıklama ve öncelik.
 
-![Varsayılan görünüm içeren bir liste kutusu](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")
+![Varsayılan görünüm içeren bir liste kutusu](../designers/media/wpfintrofigure18.png)
 
 Varsayılan görünüm gelen beklediğiniz olan bir <xref:System.Windows.Controls.ListBox>. Bununla birlikte, her görevin varsayılan görünümünü yalnızca görev adını içerir. Görev adı, açıklama ve öncelik, varsayılan görünümünü göstermek için <xref:System.Windows.Controls.ListBox> denetimin ilişkili liste öğelerini kullanarak değiştirilmelidir bir <xref:System.Windows.DataTemplate>. Aşağıdaki XAML gibi tanımlayan bir <xref:System.Windows.DataTemplate>, uygulandığı her görev için kullanarak <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> özniteliği.
 
@@ -649,7 +650,7 @@ Aşağıdaki örnek özel bir sayısal gösterir yukarı/aşağı türetilen den
 
  Aşağıdaki şekil gösterir `NumericUpDown` denetiminde barındırılan bir <xref:System.Windows.Window>.
 
- ![Özel bir UserControl](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")
+ ![Özel bir UserControl](../designers/media/wpfintrofigure3.png)
 
 Özel denetimler hakkında daha fazla bilgi için bkz: [denetimine genel bakış yazma](/dotnet/framework/wpf/controls/control-authoring-overview).
 

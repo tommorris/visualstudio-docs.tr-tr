@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748198"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>İzlenecek yol: Kullanımdan Oluştur özelliği ile önce Test geliştirmesi
 
@@ -41,7 +42,7 @@ Bu konuda nasıl kullanılacağı gösterilir [kullanımından Oluştur](../ide/
 
 3.  Orta bölmede seçin **birim testi projesi** ve varsayılan adı kabul `UnitTestProject1`. Görünür zaman iletişim kutusu aşağıda gösterilmiştir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. İçinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], iletişim kutusu benzer.
 
-     ![Yeni Test projesi iletişim kutusu](../ide/media/newproject_test.png "NewProject_Test")
+     ![Yeni Test projesi iletişim kutusu](../ide/media/newproject_test.png)
 
 4.  Seçin **Tamam** kapatmak için **yeni proje** iletişim kutusu.
 
@@ -66,9 +67,9 @@ Bu konuda nasıl kullanılacağı gösterilir [kullanımından Oluştur](../ide/
 
 3.  Bulun `TestMethod1()` yöntemi ve ona yeniden adlandırın `DefaultAutomobileIsInitializedCorrectly()`. Bu yöntem içinde adlı bir sınıf yeni bir örneğini oluşturmak `Automobile`aşağıdaki ekran görüntülerinde gösterildiği gibi. Dalgalı alt çizgiyle görünür, derleme zamanı hatası gösterir ve [hızlı Eylemler](../ide/quick-actions.md) ampul, sol kenar boşluğunda (C# yalnızca) veya doğrudan dalgalı altında üzerine getirirseniz görüntülenir.
 
-     ![Visual Basic'de hızlı Eylemler](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Visual Basic'de hızlı Eylemler](../ide/media/genclass_underlinevb.png)
 
-     ![C'de hızlı Eylemler&#35;](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![C'de hızlı Eylemler&#35;](../ide/media/genclass_underline.png)
 
 4.  Seçin veya tıklatın **hızlı Eylemler** ampul. Bildiren bir hata iletisi görürsünüz türü `Automobile` tanımlı değil. Ayrıca, bazı çözümleriyle sunulur.
 
@@ -76,7 +77,7 @@ Bu konuda nasıl kullanılacağı gösterilir [kullanımından Oluştur](../ide/
 
 6. İçinde **proje** tıklatın **GFUDemo\_VB** veya **GFUDemo_CS** sınıf kitaplığı proje testi yerine dosya eklemek için Visual Studio istemek için Proje. Henüz seçili değilse seçin **oluştur yeni dosya** ve adlandırın *Automobile.cs* veya *Automobile.vb*.
 
-     ![Yeni türü iletişim kutusu üretmek](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Yeni tür iletişim kutusu oluşturma](../ide/media/genotherdialog.png)
 
 6.  Tıklatın **Tamam** iletişim kutusunu kapatmak ve yeni dosya oluşturun.
 
@@ -133,7 +134,7 @@ Belirtimi belirten varsayın yeni bir `Automobile` içine koyabilirsiniz bir `Is
 
      **Test sonuçlarını** penceresinde aşağıdaki çizimde gösterilmiştir.
 
-     ![Test sonuçları başarısız](../ide/media/testsfailed.png "TestsFailed")
+     ![Başarısız olan test sonuçları](../ide/media/testsfailed.png)
 
 2.  İçinde **Test sonuçları** penceresi, her test konuma gitmek için her test sonucu satırda çift tıklatın.
 
@@ -155,7 +156,7 @@ Belirtimi belirten varsayın yeni bir `Automobile` içine koyabilirsiniz bir `Is
 
      Bu süre testleri geçirin. **Test sonuçlarını** penceresinde aşağıdaki çizimde gösterilmiştir.
 
-     ![Test sonuçları geçirilen](../ide/media/testspassed.png "TestsPassed")
+     ![Geçirilen test sonuçları](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

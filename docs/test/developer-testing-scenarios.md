@@ -15,7 +15,7 @@ ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691865"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Geliştirici Araçları, senaryolarını ve özelliklerini test etme

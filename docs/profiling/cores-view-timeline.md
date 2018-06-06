@@ -18,7 +18,7 @@ ms.openlocfilehash: 14bf030ce1adb1dede9ad2a377d8fb435d75e0c6
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690539"
 ---
 # <a name="cores-view-timeline"></a>Çekirdekler görünümü zaman çizelgesi

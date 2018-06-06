@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8471728adda5bb141422833c96e0278fed8e5f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 13065ac4b55b8ae84d299aa15eeb184e7d864d2e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749820"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Toplanan örnek az
 |||  
@@ -33,8 +34,8 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Sebep  
  Yalnızca birkaç örnekleri çalıştırmak profil toplanan.  
   
-## <a name="rule-description"></a>Kural Tanımı  
+## <a name="rule-description"></a>Kural açıklaması  
  Örnekleme yöntemi kullanıldığında, veri gerçek program davranışını temsil emin olmak için örnekleri istatistiksel olarak önemli sayıda toplamanız gerekir. Örnekleme hatalar en aza indirmek için en az 1000 program yönerge yürütme davranışını örnekleri toplama denemelisiniz. Yeterli örnekleri toplamaz, profil oluşturma verilerini analiz ederken, misled.  
   
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bir uygulama bir artık çalışma profil veya istatistiksel olarak önemli sonuçları elde etmek için daha hızlı örnekleme hızını kullanmayı düşünün. Visual Studio IDE örnekleme hızını değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnekleme olayları seçin](../profiling/how-to-choose-sampling-events.md). Profil oluşturma araçları komut satırı kullandığınızda örnekleme hızını değiştirme hakkında daha fazla bilgi için bkz: [Zamanlayıcı](../profiling/timer.md) içinde [VSPerfCmd](../profiling/vsperfcmd.md) başvuru.
+## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl  
+ Bir uygulama bir artık çalışma profil veya istatistiksel olarak önemli sonuçları elde etmek için daha hızlı örnekleme hızını kullanmayı düşünün. Visual Studio IDE örnekleme hızını değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md). Profil oluşturma araçları komut satırı kullandığınızda örnekleme hızını değiştirme hakkında daha fazla bilgi için bkz: [Zamanlayıcı](../profiling/timer.md) içinde [VSPerfCmd](../profiling/vsperfcmd.md) başvuru.

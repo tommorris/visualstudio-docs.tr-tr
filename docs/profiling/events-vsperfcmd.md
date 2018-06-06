@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 352feacc59a129d24575408776e9ec075b1294ac
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cb99ec5bab1098f3551548698919cb1f2fc8f8b1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764338"
 ---
 # <a name="events-vsperfcmd"></a>Olaylar (VSPerfCmd)
-VSPerfCmd.exe **olayları** seçeneği olay Windows için izleme (ETW) günlüğe kaydedilmesini denetler. ETW verilerini Profil Oluşturucu veri dosyasından ayrı bir .etl dosyasına kaydedilir. Verileri kullanarak bir rapor görüntülenebilir [VSPerfReport](../profiling/vsperfreport.md) /summary:etw komutu.  
+*VSPerfCmd.exe* **olayları** seçeneği olay Windows için izleme (ETW) günlüğe kaydedilmesini denetler. ETW verilerini Profil Oluşturucu veri dosyasından ayrı bir .etl dosyasına kaydedilir. Verileri kullanarak bir rapor görüntülenebilir [VSPerfReport](../profiling/vsperfreport.md) /summary:etw komutu.  
   
  **Olayları** seçeneği VSPerfCmd önce herhangi bir zamanda çağrılabilir **kapatma** komutu profil oluşturmayı durdurmak için çağrılır.  
   
@@ -86,8 +87,8 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 > [!IMPORTANT]
 >  Başlangıç olayları bırakmazsanız bu olaylar Yönetilen Nesne Biçimi (MOF) dosyasında listelenmeyen çünkü sonra GUID raporda görünürler. Daha fazla bilgi için Microsoft Web sitesinde bu sayfaya bakın: [örnek Yönetilen Nesne Biçimi (MOF) dosyasını](http://go.microsoft.com/fwlink/?linkid=37118).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)

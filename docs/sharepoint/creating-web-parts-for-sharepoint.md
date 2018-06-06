@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691538"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765732"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>SharePoint için Web bölümleri oluşturma
+# <a name="create-web-parts-for-sharepoint"></a>SharePoint Web bölümleri oluşturma
   Web Bölümleri'ni kullanarak, içerik, Görünüm ve bir SharePoint sitesinin sayfalarının davranışını bir tarayıcı kullanarak değiştirebilirsiniz. Web Bölümleri olan bir web bölümü sayfası içinde çalışan sunucu tarafı denetimleri: bir SharePoint sitesinde sayfaları yapı taşlarını oldukları. Bkz: [yapı taşı: Web Bölümleri](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Oluşturun ve Visual Studio şablonlarını kullanarak bir SharePoint sitesinde web bölümleri hata ayıklama.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691538"
   
 |Dosya|Açıklama|  
 |----------|-----------------|  
-|Elements.XML|Projenizdeki Özellik tanım dosyası web bölümünü dağıtmak için kullandığı bilgileri içerir.|  
+|*Elements.XML*|Projenizdeki Özellik tanım dosyası web bölümünü dağıtmak için kullandığı bilgileri içerir.|  
 |.WebPart dosyası|SharePoint web bölümü Galerisi'nde, web bölümünü görüntülemek için gereken bilgileri sağlar.|  
 |Kod dosyası|Web bölümü için denetimler ekleme ve özel içerik web bölümü içinde oluşturma yöntemleri içerir.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691538"
 |Denetim adı|Açıklama|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Bir ASP menüsü ekler. Daha fazla bilgi için bkz: [Menü denetimine genel bakış](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Ekler bir **bağlantı** .aspx sayfası bir öğeye ve bir veya daha fazla dış stil sayfası tarafından tanımlandı geçerlidir **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|DateTime denetim .aspx sayfasına ekler.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Güvenlik doğrulaması .aspx sayfasına ekler|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Ekler bir **bağlantı** öğesine *.aspx* sayfasında ve bir veya daha fazla dış stil sayfası tarafından tanımlandı geçerlidir **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|DateTime denetime ekler *.aspx* sayfası.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Güvenlik doğrulaması içine ekler *.aspx* sayfası|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Bir özelliği, belirtilen bir liste döndürür.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Genel özellik geçerli Web sitesinin döndürür.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Bir RSS .aspx sayfasına bir bağlantı ekler.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|İçine bir RSS bağlantısını ekler *.aspx* sayfası.|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Özellikleri ve sayfa işlendiğinde bunlar istenebilir bir sayfadaki komut dosyaları gibi kaynakları kaydetme için yöntemleri sağlar.|  
-|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Bir temayı .aspx sayfasına uygular.|  
+|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Bir temayı uygular *.aspx* sayfası.|  
   
 ## <a name="debug-a-web-part"></a>Bir web bölümü hata ayıklama
  Diğer Visual Studio projeleri debug gibi bir web bölümünü içeren bir SharePoint Proje ayıklayabilirsiniz. Visual Studio hata ayıklayıcısını başlattığınızda, Visual Studio SharePoint sitesini açar.  

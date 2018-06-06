@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama | Microsoft Docs'
+title: 'İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71fc9f944ec8861503f5518eec9edf33170bf050
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768098"
 ---
-# <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>İzlenecek Yol: İçerik Denetimlerini Özel XML Bölümlerine Bağlama
+# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama
   Bu kılavuz, Word için belge düzeyi özelleştirmelerinde içerik denetimlerini belgede depolanan XML veri bağlamak gösterilmiştir.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 -   XML Şeması belgeye tasarım zamanında ekleniyor.  
   
--   XML dosyasının içeriğini belgedeki özel bir XML parçasına çalışma zamanında ekleme.  
+-   Çalışma zamanında belgedeki özel bir XML parçasına XML dosyasının içeriğini ekleme.  
   
 -   İçerik denetimlerini özel XML parçasına öğeleri bağlama.  
   
@@ -56,19 +57,19 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word.  
   
-## <a name="creating-a-new-word-document-project"></a>Yeni bir Word belgesi projesi oluşturma  
+## <a name="create-a-new-word-document-project"></a>Yeni bir Word belgesi projesi oluşturma  
  Kullanacağınız bir Word belgesi kılavuzda oluşturun.  
   
-#### <a name="to-create-a-new-word-document-project"></a>Yeni bir Word belgesi projesi oluşturmak için  
+### <a name="to-create-a-new-word-document-project"></a>Yeni bir Word belgesi projesi oluşturmak için  
   
-1.  Adlı bir Word belgesi projesi oluşturun **ÇalışanDenetimleri**. Çözüm için yeni bir belge oluşturun. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Adlı bir Word belgesi projesi oluşturun **ÇalışanDenetimleri**. Çözüm için yeni bir belge oluşturun. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tasarımcıda yeni Word belgesini açar ve ekler **ÇalışanDenetimleri** için proje **Çözüm Gezgini**.  
   
-## <a name="adding-content-controls-to-the-document"></a>Belgeye içerik denetimleri ekleme  
+## <a name="add-content-controls-to-the-document"></a>Belgeye içerik denetimleri ekleme  
  Burada kullanıcının görüntüleyebilir veya bir çalışan hakkındaki bilgileri düzenleyebilirsiniz içerik denetimleri üç farklı türde içeren bir tablo oluşturun.  
   
-#### <a name="to-add-content-controls-to-the-document"></a>İçerik denetimleri belgeye eklemek için  
+### <a name="to-add-content-controls-to-the-document"></a>İçerik denetimleri belgeye eklemek için  
   
 1.  İçinde barındırılan Word belgesinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Şerit üzerindeki Tasarımcısı'nı seçin **Ekle** sekmesi.  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
  Bu proje için tüm kullanıcı arabirimi olmasıdır. Şimdi, proje çalıştırırsanız ilk satırda bir metin yazın ve ikinci satırda bir tarih seçin. Sonraki adım, bir XML dosyası belgeye görüntülemek istediğiniz verileri eklemektir.  
   
-## <a name="creating-the-xml-data-file"></a>XML veri dosyası oluşturma  
+## <a name="create-the-xml-data-file"></a>XML veri dosyası oluşturma  
  Genellikle, bir dosya veya veritabanı gibi bir dış kaynaktan özel bir XML parçasına depolamak için XML verileri alacaktır. Bu kılavuzda, belgedeki içerik denetimlerine bağlama öğeleri tarafından işaretlenen çalışan verilerini içeren bir XML dosyası oluşturun. Çalışma zamanında verileri kullanılabilir duruma getirmek için XML dosyasını bir kaynak olarak özelleştirme derlemede katıştırmak.  
   
 #### <a name="to-create-the-data-file"></a>Veri dosyası oluşturmak için  
@@ -118,7 +119,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Değiştir **employees.xml** aşağıdaki metinle dosya.  
   
-    ```  
+    ```xml 
     <?xml version="1.0" encoding="utf-8" ?>  
     <employees xmlns="http://schemas.microsoft.com/vsto/samples">  
       <employee>  
@@ -133,9 +134,9 @@ ms.lasthandoff: 04/16/2018
   
 6.  İçinde **özellikleri** penceresinde, seçin **yapı eylemi** özelliği ve değerini değiştirin **katıştırılmış kaynak**.  
   
-     Projeyi derlerken bu adımı bütünleştirilmiş kodunda bir kaynak olarak XML dosyasını katıştırır. Bu, çalışma zamanında XML dosyasının içeriğini erişmenize olanak tanır.  
+     Projeyi derlerken bu adımı bütünleştirilmiş kodunda bir kaynak olarak XML dosyasını katıştırır. Bu, çalışma zamanında XML dosyasının içeriği erişmenize olanak tanır.  
   
-## <a name="creating-an-xml-schema"></a>Bir XML şeması oluşturma  
+## <a name="create-an-xml-schema"></a>Bir XML Şeması oluşturun  
  Özel bir XML parçasına tek bir öğede içerik denetimi bağlamak istiyorsanız, bir XML şeması kullanmak zorunda değil. Ancak, bağlamak için <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> değerleri kümesi için daha önce oluşturduğunuz XML veri dosyası doğrulayan bir XML Şeması oluşturmalısınız. XML şeması için olası değerler tanımlar `title` öğesi. Bağlı olacağı <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> bu kılavuzda daha sonra bu öğeye.  
   
 #### <a name="to-create-an-xml-schema"></a>Bir XML şeması oluşturmak için  
@@ -154,7 +155,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Değiştir **employees.xsd** aşağıdaki şema dosyası.  
   
-    ```  
+    ```xml
     <?xml version="1.0" encoding="utf-8" ?>  
     <xs:schema xmlns="http://schemas.microsoft.com/vsto/samples"   
         targetNamespace="http://schemas.microsoft.com/vsto/samples"  
@@ -185,10 +186,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Üzerinde **dosya** menüsünde tıklatın **Tümünü Kaydet** yaptığınız değişiklikleri kaydetmek için **employees.xml** ve **employees.xsd** dosyaları.  
   
-## <a name="attaching-the-xml-schema-to-the-document"></a>XML Şeması belgeye ekleme  
+## <a name="attach-the-xml-schema-to-the-document"></a>XML Şeması belgeye ekleme  
  XML Şeması bağlamak için belgeye eklemelisiniz <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> geçerli değerlerine `title` öğesi.  
   
-#### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>XML Şeması belgeye ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>XML Şeması belgeye ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Etkinleştirme **ÇalışanDenetimleri.docx'i** Tasarımcısı'nda.  
   
@@ -202,7 +203,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Seçin **Tamam** kapatmak için düğmesini **şablonları ve eklentiler** iletişim kutusu.  
   
-#### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>XML Şeması (Word 2010) belgeye eklemek için  
+### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>XML Şeması (Word 2010) belgeye eklemek için  
   
 1.  Etkinleştirme **ÇalışanDenetimleri.docx'i** Tasarımcısı'nda.  
   
@@ -222,10 +223,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  Kapat **XML yapısı** görev bölmesi.  
   
-## <a name="adding-a-custom-xml-part-to-the-document"></a>Özel XML parçası belgeye ekleme  
+## <a name="add-a-custom-xml-part-to-the-document"></a>Belgeye özel XML bölümleri ekleme  
  XML dosyasındaki öğelere içerik denetimleri bağlamadan önce yeni bir özel XML bölümüne XML dosyasının içeriğini eklemeniz gerekir.  
   
-#### <a name="to-add-a-custom-xml-part-to-the-document"></a>Özel bir XML parçasına belgeye eklemek için  
+### <a name="to-add-a-custom-xml-part-to-the-document"></a>Özel bir XML parçasına belgeye eklemek için  
   
 1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **ThisDocument.vb** veya **ThisDocument.vb**ve ardından **görünümü kodu**.  
   
@@ -246,32 +247,32 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#4)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#4)]  
   
-## <a name="binding-the-content-controls-to-elements-in-the-custom-xml-part"></a>İçerik denetimlerini özel XML parçasına öğeleri bağlama  
+## <a name="bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>İçerik denetimlerini özel XML parçasına öğeleri bağlama  
  Kullanarak her içerik denetimi özel XML bölümündeki bir öğeye bağlamak **XMLMapping** her içerik denetimi özelliği.  
   
-#### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>İçerik denetimlerini özel XML parçasına öğeleri bağlamak için  
+### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>İçerik denetimlerini özel XML parçasına öğeleri bağlamak için  
   
 1.  Aşağıdaki yöntemi ekleyin `ThisDocument` sınıfı. Bu yöntem, her içerik denetimi özel XML parçaları bir öğedeki bağlar ve tarih görüntüleme biçimi ayarlar <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.  
   
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]  
   
-## <a name="running-your-code-when-the-document-is-opened"></a>Bilgisayarınızı kodu belge çalıştıran açılmış  
+## <a name="run-your-code-when-the-document-is-opened"></a>Belge açıldığında kodunuzu çalıştırmak  
  Özel XML bölümü oluşturmak ve belge açıldığında özel denetimler verilere bağlayın.  
   
-#### <a name="to-run-your-code-when-the-document-is-opened"></a>Belge açıldığında kodunuzu çalıştırmak için  
+### <a name="to-run-your-code-when-the-document-is-opened"></a>Belge açıldığında kodunuzu çalıştırmak için  
   
 1.  Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı. Bu kod XML dizesini alır **employees.xml** dosya, XML dizesi yeni bir özel XML bölümüne ekler ve içerik denetimlerini özel XML parçasına öğeleri bağlar.  
   
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]  
   
-## <a name="testing-the-project"></a>Projeyi test etme  
+## <a name="test-the-project"></a>Projeyi test  
  Belgeyi açtığında, içerik denetimlerini özel XML bölümünde öğeleri gelen verileri görüntüler. Tıklayabilirsiniz <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> geçerli üç değerden birini seçmek için `title` tanımlanan öğe **employees.xsd** dosya. İçerik denetimleri hiçbirinde veri düzenlerseniz, yeni değerleri belgedeki özel XML bölümüne kaydedilir.  
   
-#### <a name="to-test-the-content-controls"></a>İçerik denetimleri sınamak için  
+### <a name="to-test-the-content-controls"></a>İçerik denetimleri sınamak için  
   
-1.  Projeyi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
 2.  Belge tabloda aşağıdaki tabloda benzediğini doğrulayın. Her ikinci sütundaki dize, belgedeki özel XML bölümündeki bir öğeden alınır.  
   
@@ -289,13 +290,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  Belgesini kaydedin ve kapatın.  
   
-7.  Dosya Gezgini'nde projenizin konumunu altındaki \bin\Debug klasörünü açın.  
+7.  Dosya Gezgini'nde Aç *\bin\Debug* projenizin konumunu altında bir klasör.  
   
 8.  Kısayol menüsünü açın **ÇalışanDenetimleri.docx'i** ve ardından **yeniden adlandırma**.  
   
 9. Dosya adı **ÇalışanDenetimleri.docx.zip**.  
   
-     **ÇalışanDenetimleri.docx'i** belge Open XML biçiminde kaydedilir. Bu belge .zip dosya adı uzantısına sahip adlandırarak belgesinin içeriğini inceleyebilirsiniz. Open XML hakkında daha fazla bilgi için teknik makalesine bakın [(2007) Office Açık XML dosya biçimleri Tanıtımı](http://msdn.microsoft.com/en-us/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     **ÇalışanDenetimleri.docx'i** belge Open XML biçiminde kaydedilir. Bu belgeyle yeniden adlandırarak *.zip* dosya adı uzantısı belgesinin içeriğini inceleyin. Open XML hakkında daha fazla bilgi için teknik makalesine bakın [dosya biçimleri (2007) Office Açık XML Tanıtımı](http://msdn.microsoft.com/en-us/96018532-f62c-4da7-bbff-16b96a483fbf).  
   
 10. Açık **ÇalışanDenetimleri.docx.zip** dosya.  
   
@@ -309,22 +310,22 @@ ms.lasthandoff: 04/16/2018
   
 14. Kapat **item2.xml** dosya.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Aşağıdaki konulardan içerik denetimlerini kullanma hakkında daha fazla bilgi edinebilirsiniz:  
   
--   Bir şablon oluşturmak için kullanılabilir tüm içerik denetimlerini kullanın. Daha fazla bilgi için bkz: [izlenecek yol: bir şablon tarafından kullanarak içerik denetimler oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+-   Bir şablon oluşturmak için kullanılabilir tüm içerik denetimlerini kullanın. Daha fazla bilgi için bkz: [izlenecek yol: içerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 -   Belge kapalıyken özel XML bölümleri verilerde değiştirin. Kullanıcı belge açıldığında XML öğelerine bağlanmış içerik denetimleri yeni verileri görüntüler.  
   
--   Bir belge parçalarını korumak için içerik denetimleri kullanın. Daha fazla bilgi için bkz: [nasıl yapılır: koruma bölümleri belgeler içerik denetimlerini kullanarak tarafından](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Bir belge parçalarını korumak için içerik denetimleri kullanın. Daha fazla bilgi için bkz: [nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genişletilmiş nesneleri kullanarak Word'ü Otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Genişletilmiş nesneleri kullanarak Word otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)   
  [İçerik denetimleri](../vsto/content-controls.md)   
  [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Office Belgelerine Çalışma Zamanında Denetim Ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

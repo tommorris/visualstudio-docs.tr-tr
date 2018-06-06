@@ -1,5 +1,5 @@
 ---
-title: .NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme | Microsoft Docs
+title: .NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,29 +15,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8da42ad20a42e24ee826a559c6d1d38efb172100
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767643"
 ---
-# <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5'e Geçirdiğiniz Office Projelerindeki Şerit Özelleştirmelerini Güncelleştirme
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4. 5'e geçiş Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme
   Projenizi kullanılarak oluşturulmuş bir Şerit özelleştirme içeriyorsa **Şerit (Görsel Tasarımcı)** proje madde, hedef Framework'ü değiştirilirse proje kodunuza aşağıdaki değişiklikleri yapmalısınız [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya Daha sonra.  
   
 -   Oluşturulmuş Şerit kodunu değiştirin.  
   
 -   Şerit denetimlerini çalışma zamanında başlatır, Şerit olaylarını işleme veya program aracılığıyla bir Şerit bileşeninin konumunu ayarlar herhangi bir kodu değiştirin.  
   
-## <a name="updating-the-generated-ribbon-code"></a>Oluşturulmuş Şerit kodunu güncelleme  
+## <a name="update-the-generated-ribbon-code"></a>Oluşturulmuş Şerit kodunu güncelleştirin  
  Projenizin hedef çerçevesini değiştirilirse [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra aşağıdaki adımları gerçekleştirerek Şerit öğesi için oluşturulan kodu değiştirmeniz gerekir. Güncelleştirmek için gereken kod dosyaları programlama dili ve projeyi nasıl oluşturulacağını bağlıdır:  
   
 -   Visual Basic projeleri veya ya da oluşturulan Visual C# projeleri [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] veya [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] Şerit arka plan kodu dosyasındaki tüm adımları gerçekleştirin (*ŞeritÖğeniz*. Designer.cs veya *ŞeritÖğeniz*. Designer.vb olarak adlandırılır). Visual Basic projeleri arka plan kod dosyasına görmek için tıklatın **tüm dosyaları göster** düğmesini **Çözüm Gezgini**.  
   
 -   Visual Studio 2008'de oluşturulan ve ardından yükseltildiğinde Visual C# projelerine [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], Şerit kod dosyasında ilk iki adımı gerçekleştirin (*ŞeritÖğeniz*.cs veya *ŞeritÖğeniz*.vb), ve Şerit arka plan kodu dosyasındaki kalan adımları gerçekleştirin.  
   
-#### <a name="to-change-the-generated-ribbon-code"></a>Oluşturulmuş Şerit kodunu değiştirmek için  
+### <a name="to-change-the-generated-ribbon-code"></a>Oluşturulmuş Şerit kodunu değiştirmek için  
   
-1.  Şerit sınıfının bildirimini türetildiği şekilde değiştirmenize <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> Microsoft.Office.Tools.Ribbon.OfficeRibbon yerine.  
+1.  Şerit sınıfının bildirimini türetildiği şekilde değiştirmenize <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> yerine `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.  
   
 2.  Şerit sınıf aşağıda gösterildiği gibi değiştirin. Oluşturucuya kendi kodunuzu hiçbirini eklediyseniz, kodunuzu değiştirmeyin. Visual Basic projeleri içinde yalnızca parametresiz oluşturucuya değiştirin. Diğer oluşturucuyu yoksayın.  
   
@@ -99,28 +100,28 @@ ms.lasthandoff: 04/16/2018
     this.button1 = this.Factory.CreateRibbonButton();  
     ```  
   
-     Şerit denetimleri için yardımcı yöntemler tam bir listesi için bkz: [başlatmasını Şerit denetimleri](#ribboncontrols).  
+     Şerit denetimleri için yardımcı yöntemler tam bir listesi için bkz: [örneği Şerit denetimleri](#ribboncontrols).  
   
 4.  Visual C# projelerinde, herhangi bir kod satırı değiştirme `InitializeComponent` kullanan yöntemi bir <xref:System.EventHandler%601> belirli bir Şerit temsilcisi kullanmanız için temsilci.  
   
      Örneğin, dosyanızı işleyen kodu aşağıdaki satırı içerdiğini varsayar <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> olay .NET Framework 3.5 hedefleyen bir projede.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+    <CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
      Hedefleyen bir projede [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra aşağıdaki kodu yerine kullanmanız gerekir.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
-     Şerit temsilcilerinin tam listesi için bkz: [Şerit olaylarını işleme](#ribbonevents).  
+    <CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+     Şerit temsilcilerinin tam listesi için bkz: [işlemek Şerit olayları](#ribbonevents).  
   
-5.  Visual Basic projelerinde bulun `ThisRibbonCollection` dosyanın sonunda sınıfı. Bu sınıf bildirimi Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection artık devralır şekilde değiştirin.  
+5.  Visual Basic projelerinde bulun `ThisRibbonCollection` dosyanın sonunda sınıfı. Bu sınıf bildirimi artık devralındığı şekilde değiştirmenize `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.  
   
-##  <a name="ribboncontrols"></a> Şerit denetimlerini örnekleme  
+##  <a name="ribboncontrols"></a> Şerit denetimleri örneği  
  Dinamik olarak Şerit denetimleri başlatır herhangi bir kodu değiştirmeniz gerekir. Proje .NET Framework 3.5 hedefleyen Şerit denetimleri doğrudan belirli senaryolarda örneği sınıflardır. ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da daha sonra bu denetimlerin arabirimleri doğrudan örneği oluşturulamıyor. Tarafından sağlanan yöntemleri kullanarak denetimler oluşturmalısınız <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi.  
   
  Erişim için iki yolla <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi:  
   
 -   Şerit sınıfı Fabrika özelliğini kullanarak. Şerit sınıfınızda kodda bu yaklaşımı kullanın.  
   
--   Globals.Factory.GetRibbonFactory yöntemini kullanarak. Şerit sınıfınızın dışındaki kodda bu yaklaşımı kullanın. Globals sınıfı hakkında daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
+-   Kullanarak `Globals.Factory.GetRibbonFactory` yöntemi. Şerit sınıfınızın dışındaki kodda bu yaklaşımı kullanın. Globals sınıfı hakkında daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
   
  Aşağıdaki kod örneğinde nasıl oluşturulduğunu gösteren bir <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> hedefleyen bir projede Şerit sınıfında [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki bir sürümü.  
   
@@ -159,16 +160,16 @@ ms.lasthandoff: 04/16/2018
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   
-## <a name="setting-the-position-of-a-ribbon-component-programmatically"></a>Şerit bileşeninin konumunu programlı olarak ayarlama  
- Şerit grupları, sekmeleri veya denetimleri konumunu ayarlar herhangi bir kodu değiştirmeniz gerekir. Projelerinde .NET Framework 3.5 hedefleyen bir grup, sekme ya da Denetim Position özelliğini atamak için statik Microsoft.Office.Tools.Ribbon.RibbonPosition sınıfının AfterOfficeId ve BeforeOfficeId yöntemlerini kullanabilirsiniz. ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu yöntemleri kullanarak erişmeniz gerekir <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A> özelliği tarafından sağlanan <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi.  
+## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>Şerit bileşeninin konumunu programlı olarak ayarlama  
+ Şerit grupları, sekmeleri veya denetimleri konumunu ayarlar herhangi bir kodu değiştirmeniz gerekir. .NET Framework 3.5 hedefleyen projelerde, kullandığınız `AfterOfficeId` ve `BeforeOfficeId` statik yöntemler `Microsoft.Office.Tools.Ribbon.RibbonPosition` atamak için sınıf `Position` bir grup, sekme ya da denetim özelliği. ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu yöntemleri kullanarak erişmeniz gerekir <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A> özelliği tarafından sağlanan <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi.  
   
  Erişim için iki yolla <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesnesi:  
   
--   Şerit sınıfı Fabrika özelliğini kullanarak. Şerit sınıfınızda kodda bu yaklaşımı kullanın.  
+-   Kullanarak `Factory` Şerit sınıfın özelliği. Şerit sınıfınızda kodda bu yaklaşımı kullanın.  
   
--   Globals.Factory.GetRibbonFactory yöntemini kullanarak. Şerit sınıfınızın dışındaki kodda bu yaklaşımı kullanın. Globals sınıfı hakkında daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
+-   Kullanarak `Globals.Factory.GetRibbonFactory` yöntemi. Şerit sınıfınızın dışındaki kodda bu yaklaşımı kullanın. Globals sınıfı hakkında daha fazla bilgi için bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).  
   
- Aşağıdaki kod örneği, .NET Framework 3.5 hedefleyen bir projede Şerit sınıfındaki sekmenin konumunu özelliğini ayarlamak gösterilmiştir.  
+ Aşağıdaki kod örneğinde nasıl ayarlanacağını gösterir `Position` .NET Framework 3.5 hedefleyen bir projede Şerit sınıfında bir sekmede özelliği.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  
@@ -188,8 +189,8 @@ Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümlerini geçirme .NET Framework 4 veya üstü](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Office çözümlerini .NET Framework 4 veya sonraki bir sürümüne geçirme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Şerit Tasarımcısı](../vsto/ribbon-designer.md)  
   
   

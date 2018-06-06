@@ -13,11 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4563756e42b5c0bdc1a56e938ca6326e04b104
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748665"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Öğe Oluşturma ve Hareketini Özelleştirme
 Bir öğenin başka araç veya bir Yapıştır sürüklenen veya taşıma işlemi için izin verebilirsiniz. Belirttiğiniz ilişkilerini kullanarak hedef öğelerine bağlı taşınan öğeler bulunabilir.
@@ -38,7 +39,7 @@ Bir öğenin başka araç veya bir Yapıştır sürüklenen veya taşıma işlem
 
  Bir EMD nasıl nesne veya grup nesne modelinde belirli bir konuma birleştirilmesini karar vermek için sorumluluğundadır. Özellikle, birleştirilmiş Grup modele bağlanmak için hangi ilişkileri örneği karar verir. Bu özellikleri ayarlamak ve ek nesneleri oluşturmak için de özelleştirebilirsiniz.
 
- ![DSL&#45;EMD&#95;birleştirme](../modeling/media/dsl-emd_merge.png "DSL EMD_Merge") birleştirme bir Element Directive rolü
+ ![DSL&#45;EMD&#95;birleştirme](../modeling/media/dsl-emd_merge.png) birleştirme bir Element Directive rolü
 
  Katıştırma bir ilişki tanımlamak bir EMD otomatik olarak oluşturulur. Kullanıcılar yeni alt örnekleri üst eklediğinizde, bu varsayılan EMD ilişki örneği oluşturur. Özel kod ekleyerek bu varsayılan EMDs örneğin değiştirebilirsiniz.
 
@@ -47,7 +48,7 @@ Bir öğenin başka araç veya bir Yapıştır sürüklenen veya taşıma işlem
 ## <a name="defining-an-element-merge-directive"></a>Bir öğenin birleştirme yönergesi tanımlama
  Etki alanı sınıfları, etki alanı ilişkilerini, şekiller, bağlayıcılar ve diyagramları öğesi birleştirme yönergeleri ekleyebilirsiniz. Ekleyebilir veya bunları DSL Gezgini'nde alıcı etki alanı sınıfının altında bulun. Alıcı sınıfı modelinde ve yeni ya da kopyalanan öğesi birleştirilecek üzerine zaten öğenin etki alanı sınıftır.
 
- ![DSL&#45;EMD&#95;ayrıntıları](../modeling/media/dsl-emd_details.png "DSL EMD_Details")
+ ![DSL&#45;EMD&#95;ayrıntıları](../modeling/media/dsl-emd_details.png)
 
  **Dizin sınıfı** alıcı sınıfı üyeleri birleştirilebilir öğelerinin etki alanı sınıftır. Alt sınıfların dizin oluşturma sınıfının örneklerini de birleştirilir bu EMD tarafından ayarladığınız sürece **alt sınıfların uygulandığı** false.
 

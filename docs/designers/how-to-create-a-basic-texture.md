@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745636"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Nasıl Yapılır: Temel Doku Oluşturma
 Bu belge, temel bir doku oluşturmak için görüntü düzenleyicisi kullanın gösterilmiştir.
@@ -36,7 +37,7 @@ Bu belge, temel bir doku oluşturmak için görüntü düzenleyicisi kullanın g
 
  Aşağıdaki adımlar "hedef Merkezi" hedef temsil eden bir doku oluşturulacağını gösterir. İşiniz bittiğinde, doku aşağıdaki resimde gibi görünmelidir. Daha iyi dokudaki saydamlık göstermek için görüntü Düzenleyicisi görüntülemek için yeşil, Damalı desen kullanmak için yapılandırıldı.
 
- ![Yeşil renkte gösterilir saydamlık "Hedef Merkezi" hedefle](../designers/media/digit-bullseye-texture-in-editor.png "basamaklı-hedef merkezi-doku--Düzenleyicisi'nde")
+ ![Yeşil renkte gösterilir saydamlık "Hedef Merkezi" hedefle](../designers/media/digit-bullseye-texture-in-editor.png)
 
  Başlamadan önce emin olun **özellikleri** penceresi görüntülenir. Kullandığınız **özellikleri** penceresi görüntü boyutunu ayarlamak, aracı özelliklerini değiştirmek ve çalışırken renkleri belirtin.
 
@@ -84,7 +85,7 @@ Bu belge, temel bir doku oluşturmak için görüntü düzenleyicisi kullanın g
 
  "Hedef Merkezi" hedef doku tamamlanır. Saydamlığı olan gösterilen görüntünün son İşte.
 
- ![Tam "hedef"merkezi hedef doku](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![Tam "hedef Merkezi" hedef doku](../designers/media/gfx_image_demo_bullseye.png)
 
  Bir sonraki adım, bu doku MIP düzeylerini oluşturabilirsiniz. Bilgi için bkz: [nasıl yapılır: oluşturma ve değiştirme MIP düzeyleri](../designers/how-to-create-and-modify-mip-levels.md).
 

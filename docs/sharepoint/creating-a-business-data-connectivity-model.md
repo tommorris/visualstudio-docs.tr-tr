@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c80d6f3e76d20e4b5a15af162ea4581b03999e61
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691502"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765196"
 ---
-# <a name="creating-a-business-data-connectivity-model"></a>İş verileri bağlantı modeli oluşturma
+# <a name="create-a-business-data-connectivity-model"></a>İş verileri bağlantı modeli oluşturma
   İş verileri bağlantı (BDC) modeli oluşturma veya Visual Studio kullanarak mevcut bir BDC modeli özelleştirebilirsiniz. Her SharePoint Proje yalnızca bir model içerebilir. Daha fazla bilgi için bkz: [iş verilerini SharePoint tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="create-a-new-model"></a>Yeni bir model oluşturma

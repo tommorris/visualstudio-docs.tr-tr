@@ -1,5 +1,5 @@
 ---
-title: Veri ile TableAdapter DBDirect yöntemleri kaydedin.
+title: TableAdapter DBDirect metotlarıyla veri kaydetme
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747553"
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Veri ile TableAdapter DBDirect yöntemleri kaydedin.
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect metotlarıyla veri kaydetme
 Bu kılavuz bir TableAdapter DBDirect yöntemleri kullanarak doğrudan bir veritabanında SQL deyimlerini çalıştırmak için ayrıntılı yönergeler sağlar. Veritabanı güncelleştirmelerinizi üzerinde denetim ayrıntılı bir düzeyde bir TableAdapter DBDirect yöntemleri sağlar. Bunları tek tek çağırarak belirli SQL deyimlerini ve depolanan yordamları çalıştırmak için kullanabileceğiniz `Insert`, `Update`, ve `Delete` , uygulamanız tarafından gerektiği şekilde yöntemleri (aşırı yüklenmiş aksine `Update` güncelleştirme gerçekleştirir yöntemi INSERT ve DELETE deyimlerinde tüm bir çağrı).
 
  Bu gözden geçirme sırasında öğreneceksiniz nasıl yapılır:
@@ -63,7 +64,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
 
-2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Klasik Masaüstü**.
+2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 
@@ -86,7 +87,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-         -veya-
+         veya
 
     -   Seçin **yeni bağlantı** başlatmak için **Ekle/Değiştir bağlantı** iletişim kutusu.
 

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6d699845d8cce3eb1a410720d4e5fbbfd69d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 92f053cbf6f85edbe79f0b108093410502f39a9f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764520"
 ---
 # <a name="execution-profile-report"></a>Yürütme Profil Raporu
 Yürütme Profil raporu geleneksel örnekleme profilidir. Örnekler, ne zaman bir iş parçacığı bir mantıksal çekirdeği üzerinde çalıştığından ve örnek yığınları birikmiş kümesini harmanlama tarafından tipik çağrı ağacı eşzamanlılık görselleştiricisi oluşturur dönemlerde yaklaşık her milisaniyelik alınır. Bu tablodaki verileri uygulanabilir bu filtreler ve geçerli zaman aralığı ve gizli iş parçacıkları tarafından etkilenebilir:  
@@ -40,5 +41,5 @@ Yürütme Profil raporu geleneksel örnekleme profilidir. Örnekler, ne zaman bi
   
  Bu raporu tablosu görülebilir [yürütme zamanı (iş parçacıkları görünümü)](../profiling/execution-time-threads-view.md) görünümü.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

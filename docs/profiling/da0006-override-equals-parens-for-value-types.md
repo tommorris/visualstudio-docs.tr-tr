@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b360c97e64842d46fe2b121e8505ac0f9cafebed
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b5e0d79b164c521bd3e0da53738d49451ff2a7af
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749989"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Değer türleri için Eşittir()'lerin üzerine yaz
 |||  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Sebep  
  Equals yöntemi veya ortak değer türünün eşitlik işleçleri çağrıları profil oluşturma verileri önemli bir kısmının aynıdır. Daha verimli bir yöntem uygulayın.  
   
-## <a name="rule-description"></a>Kural Tanımı  
+## <a name="rule-description"></a>Kural açıklaması  
  Değer türleri için eşittir devralınan uyarlamasını kullanan <xref:System.Reflection> kitaplığı ve türündeki tüm alanlar içeriğini karşılaştırır. Yansıma hesaplama açısından pahalıdır ve her alan için eşitlik karşılaştırma gereksiz olabilir. Değer türü, kullanıcıların karşılaştırmak ya da örnekleri sıralama veya bunları karma tablosu anahtarları olarak kullanmak üzere bekliyorsanız, eşittir uygulamanız gerekir. İşleç aşırı yüklemesi programlama diliniz destekliyorsa, eşitlik ve eşitsizlik işleçleri uygulaması sağlamanız gerekir.  
   
  Eşittir ve eşitlik işleçleri geçersiz kılma hakkında daha fazla bilgi için bkz: [uygulama eşittir ve eşitlik işleci (==) için yönergeleri](http://go.microsoft.com/fwlink/?LinkId=177818).  

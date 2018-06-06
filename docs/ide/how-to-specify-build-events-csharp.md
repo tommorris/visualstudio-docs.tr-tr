@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38f8240d0e0157edd1ebe189d0eafac54be60ebb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 500426eb7fda2c35f74b899154d9153a91d5020b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746266"
 ---
 # <a name="how-to-specify-build-events-c"></a>Nasıl yapılır: belirtin derleme olayları (C#)
 
@@ -148,7 +149,7 @@ Aşağıdaki yordamı kullanarak uygulama bildiriminde en düşük işletim sist
 
 1.  Yayımlanacak projeyi için bir Windows uygulaması oluşturun. Gelen **dosya** menüsündeki **yeni**ve ardından **proje**.
 
-2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C#**, tıklatın **Windows Klasik Masaüstü**ve ardından **Windows Forms uygulaması** Şablon. Proje adı `CSWinApp`.
+2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C#**, tıklatın **Windows Masaüstü**ve ardından **Windows Forms uygulaması** şablonu. Proje adı `CSWinApp`.
 
 3.  Seçili proje ile **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 28ba3f0abd948714e17ef0c69267eb7c1df9162e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7caabbe6875f6c51b0c84d0bb8f4b5e4e18a10d2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750876"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Intellitest ile kodunuz için birim testleri oluşturma
 Intellitest test verileri ve birim testleri dizisi oluşturmak için .NET kodunuzu araştırır. Koddaki her deyim için bir test giriş oluşturulan bu deyim yürütülecek. Servis talebi çözümleme kodda koşullu her dal için gerçekleştirilir. Örneğin, `if` deyimleri, onaylar ve özel durumlar oluşturan tüm işlemleri analiz edilir. Bu çözümleme yüksek kod kapsamı ile birim testleri oluşturmak, yöntemlerin her biri için parametreli birim testi için test verileri oluşturmak için kullanılır.
@@ -41,15 +42,15 @@ Intellitest test verileri ve birim testleri dizisi oluşturmak için .NET kodunu
 
 2.  Yöntemi, kodunuzda sağ tıklatın ve seçin **çalıştırmak Intellitest** , yönteminde kod için birim testleri oluşturmak için.
 
-     ![Sağ&#45;birim testleri oluşturmak için yöntemi tıklatın](../test/media/runpex.png "RunPEX")
+     ![Sağ&#45;birim testleri oluşturmak için yöntemi tıklatın](../test/media/runpex.png)
 
      Intellitest kodunuz farklı girişle birçok kez çalışır. Her çalışma giriş test verileri ve elde edilen çıkış gösteren tablo ya da özel durum gösterilir.
 
-     ![Keşif sonuçları penceresi testleriyle görüntülenen](../test/media/pexexplorationresults.png "PEXExplorationResults")
+     ![Testleriyle araştırması sonuçları penceresi görüntülenir.](../test/media/pexexplorationresults.png)
 
      Bir sınıfta tüm genel yöntemler için birim testleri oluşturmak için yalnızca belirli bir yöntemi yerine sınıfı sağ tıklatın. Ardından **çalıştırmak Intellitest**. Aşağı açılan liste araştırması Sonuçları penceresinde sınıfında birim testleri ve her bir yöntemi için giriş verileri görüntülemek için kullanın.
 
-     ![Listeden görüntülemek için test sonuçları seçin](../test/media/selectpextest.png "SelectPEXTest")
+     ![Listeden görüntülemek için test sonuçları seçin](../test/media/selectpextest.png)
 
      Geçişi, denetleyin testleri için sonuç sütunu bildirilen sonuçlarında beklentilerinizi kodunuz için aynı. Başarısız testleri için kodunuzu uygun şekilde düzeltin. Ardından düzeltmeler doğrulamak için Intellitest yeniden çalıştırın.
 
@@ -57,11 +58,11 @@ Intellitest test verileri ve birim testleri dizisi oluşturmak için .NET kodunu
 
 1.  Bir test projeye parametreli birim testini kaydetmek istediğiniz veri satırları seçin.
 
-     ![Testleri seçin; sağ&#45;tıklayın ve Kaydet'i seçin](../test/media/savepextests.png "SavePEXTests")
+     ![Testleri seçin; sağ&#45;tıklayın ve Kaydet'i seçin](../test/media/savepextests.png)
 
      Oluşturuldu - parametreli birim testi her satır için karşılık gelen tek tek birim testleri kaydedilir ve test projesinin görüntüleyebilir. test projesi ve parametreli birim testi g.cs dosyasında karşılık gelen .cs dosyasında kaydedilir. Birim testleri çalıştırma ve Test Gezgini sonuçlarından için el ile oluşturulan birim testleri gibi görüntüleyin.
 
-     ![Birim testi görüntülemek için test yöntemi açık sınıf dosyasında](../test/media/testmethodpex.png "TestMethodPEX")
+     ![Açık sınıf dosyasında birim testi görüntülemek için test yöntemi](../test/media/testmethodpex.png)
 
      Gerekli tüm başvuruları test projesi için de eklenir.
 
@@ -73,11 +74,11 @@ Intellitest test verileri ve birim testleri dizisi oluşturmak için .NET kodunu
 
      Ne yapmak istiyorsunuz karar vermek için uyarıları görüntüleyin.
 
-     ![Uyarıları görüntülemek](../test/media/pexviewwarning.png "PEXViewWarning")
+     ![Görünüm uyarıları](../test/media/pexviewwarning.png)
 
 2.  Kod araştırın ve test etmek istediğiniz anlamak sonra arabirimi sınamak üzere kullanmak için hangi sınıfların seçmek için uyarı düzeltebilirsiniz.
 
-     ![Sağ&#45;uyarıyı tıklatın ve düzeltme seçin](../test/media/pexfixwarning.png "PEXFixWarning")
+     ![Sağ&#45;uyarıyı tıklatın ve düzeltme seçin](../test/media/pexfixwarning.png)
 
      Bu seçenek PexAssemblyInfo.cs dosyasına eklenir.
 
@@ -85,7 +86,7 @@ Intellitest test verileri ve birim testleri dizisi oluşturmak için .NET kodunu
 
 3.  Şimdi parametreli birim testi oluşturmak ve test verileri yalnızca, sabit sınıfını kullanarak Intellitest yeniden çalıştırabilirsiniz.
 
-     ![Test verileri oluşturmak için Intellitest yeniden](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
+     ![Test verileri oluşturmak için Intellitest yeniden çalıştırın](../test/media/pexwarningsfixed.png)
 
 ## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Belirtin: kullanım Intellitest kodda belirtme doğruluk özellikleri doğrulanacak
 
@@ -131,11 +132,11 @@ Girişleri ve çıkışları doğrulamak için oluşturulan birim testleri isted
 
 **Y:** Evet, sınıf veya yöntemini sağ tıklayın ve ardından seçin **oluşturma Intellitest**.
 
- ![Sağ&#45;Düzenleyicisi'ni tıklatın, oluşturma Intellitest seçin](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
+ ![Sağ&#45;Düzenleyicisi'ni tıklatın, oluşturma Intellitest seçin](../test/media/pexcreateintellitest.png)
 
  Proje ve testleri nasıl adlandırıldığı değiştirmek veya testlerinizi oluşturmak için varsayılan biçimi kabul edin. Yeni test projesi oluşturma veya varolan bir projeye testlerinizi kaydedin.
 
- ![Mstest'i varsayılan Intellitest oluşturun](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
+ ![Mstest'i varsayılan Intellitest oluşturun](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>S: diğer birim test çerçevelerini ile Intellitest kullanabilir miyim?
@@ -149,7 +150,7 @@ Test framework uzantıları, aynı zamanda Visual Studio Market'te bulunabilir k
 
 Visual Studio'yu yeniden başlatın ve çözümünüzü yeniden sonra sınıf veya yöntemini sağ tıklayın ve ardından seçin **oluşturma Intellitest**. Yüklü framework buradan seçin:
 
-![Diğer birim testi çerçevesi için Intellitest seçin](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
+![Diğer birim testi çerçevesi için Intellitest seçin](../test/media/pexcreateintellitestextensions.png)
 
 Karşılık gelen tek tek birim testleri oluşturmak için Intellitest çalıştırın. g.cs dosyaları.
 

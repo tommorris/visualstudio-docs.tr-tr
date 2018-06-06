@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751539"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl yapılır: Microsoft Excel Kullanarak Yük Testi Başarım Raporları Oluşturma
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
  Aşağıdaki çizimde, Reddet işlem (güncelleştirme Sepeti) hız ve (% işlemci) sayacın degeneration arasında bir bağıntı gösteren bir rapor örneğidir. Bu, veritabanı veya ağ yerine uygulama kodundaki olası bir soruna işaret ve ASP.NET Profil Oluşturucu kullanarak tanılamak için iyi bir adaydır.
 
- ![Olası sorun uygulama kodundaki](../test/media/lt_excel.png "LT_Excel")
+ ![Olası sorun uygulama kodundaki](../test/media/lt_excel.png)
 
  Excel raporları ya da oluşturulabilir Yük Testi Çözümleyicisi kullanarak **Excel Raporu Oluştur** kullanarak düğmesi araç çubuğunda veya Excel'den **yük testi raporu** seçeneğini **yük testi**  Office Şerit sekmesi.
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
      Microsoft Excel açılır **bir yük testi raporu oluşturmak** Sihirbazı.
 
-     -veya-
+     veya
 
     1.  Microsoft Excel'ni açın, **yük testi** sekmesinde Office şeritte ve ardından **yük testi raporu**.
 
@@ -114,7 +115,7 @@ ms.lasthandoff: 04/26/2018
 
      Microsoft Excel açılır **bir yük testi raporu oluşturmak** Sihirbazı.
 
-     -veya-
+     veya
 
     1.  Microsoft Excel'ni açın, **yük testi** sekmesinde Office şeritte ve ardından **yük testi raporu**.
 

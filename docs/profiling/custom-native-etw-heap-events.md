@@ -12,11 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749466"
 ---
 # <a name="custom-native-etw-heap-events"></a>Özel yerel ETW yığın olayları
 
@@ -136,7 +137,7 @@ Bu kitaplık kolayca C ve C++ içinde kullanılabilir.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Bellek kullanımını izleme
+## <a name="track-memory-usage"></a>Bellek kullanımı İzle
 Bu aramaları yerinde özel yığın kullanımınızı şimdi standart kullanarak izlenebilir **bellek kullanımı** Visual Studio'da aracı.  Bu aracın nasıl kullanılacağı hakkında daha fazla bilgi için lütfen bkz [bellek kullanımı](../profiling/memory-usage.md) belgeleri. Görüntülenen özel yığın kullanımınızı görmezsiniz sahip anlık görüntüleri, aksi takdirde yığın profil etkin emin olun. 
 
 ![Yığın profil oluşturma etkinleştir](media/heap-enable-heap.png)
@@ -145,7 +146,7 @@ Bu aramaları yerinde özel yığın kullanımınızı şimdi standart kullanara
 
 ![Yığın seçimi](media/heap-example-custom-heap.png)
 
-Yukarıdaki kod örneğinde ile `MemoryPool` oluşturma bir `VSHeapTracker::CHeapTracker` nesnesi ve kendi `allocate` şimdi çağırma yöntemi `AllocateEvent` yöntemi, şimdi görebilirsiniz o özel ayırma sonucunu gösteren tüm türü 24 baytı toplamda 3 örnekleri `Foo`.
+Yukarıdaki kod örneğinde ile `MemoryPool` oluşturma bir `VSHeapTracker::CHeapTracker` nesnesi ve kendi `allocate` şimdi çağırma yöntemi `AllocateEvent` yöntemi, şimdi görebilirsiniz, özel ayırma sonucunu 24 baytı tümünü toplamda üç örnekleri gösteren türü `Foo`.
 
 Varsayılan *NT yığın* yığın arar aynı şekilde bir önceki eklenmesi ile bizim `CHeapTracker` nesnesi.
 
@@ -154,8 +155,8 @@ Varsayılan *NT yığın* yığın arar aynı şekilde bir önceki eklenmesi ile
 Standart Windows yığınla de bu aracı ana açıklanan, özel yığınındaki sızıntıları ve Bozulması arayın ve anlık görüntüleri karşılaştırması için kullanabileceğiniz gibi [bellek kullanımı](../profiling/memory-usage.md) belgeleri.
 
 > [!TIP]
-> Visual Studio de içeren bir **bellek kullanımı** içinde aracı **performans profili oluşturma** etkinleştirildiğinden araç takımı **hata ayıklama > Performans Profil Oluşturucu** menü seçeneğini veya **Alt + F2** klavye birleşimi.  Bu özellik, yığın izleme içermez ve burada açıklandığı gibi özel yığın görüntülenmez.  Yalnızca **tanılama araçları** ile etkin penceresini **hata ayıklama > Windows > tanılama araçları Göster** menüsünde veya **Ctrl + Alt + F2** birleşimi, klavye Bu işlevselliği içerir.
+> Visual Studio de içeren bir **bellek kullanımı** içinde aracı **performans profili oluşturma** etkinleştirildiğinden araç takımı **hata ayıklama** >  **Performans Profil Oluşturucu** menü seçeneğini veya **Alt**+**F2** klavye birleşimi.  Bu özellik, yığın izleme içermez ve burada açıklandığı gibi özel yığın görüntülenmez.  Yalnızca **tanılama araçları** ile etkin penceresini **hata ayıklama**>**Windows**>**tanılama araçları Göster**  menüsünde veya **Ctrl**+**Alt**+**F2** klavye birleşimi, bu işlevselliği içerir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 [Profil Araçları](../profiling/profiling-tools.md)  
 [Bellek kullanımı](../profiling/memory-usage.md)

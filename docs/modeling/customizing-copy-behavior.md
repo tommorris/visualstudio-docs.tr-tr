@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748380"
 ---
 # <a name="customizing-copy-behavior"></a>Kopyalama Davranışını Özelleştirme
 İle oluşturulmuş bir etki alanına özgü dil (DSL) içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK, kullanıcı kopyalar ve öğeleri gönderebilir ne olur değiştirebilirsiniz.
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
  Bu kural kopyalanan öğeleri ve bağlantıları yinelemeli olarak uygulanır.
 
- ![Kopyalanır ve öğeleri yapıştırılan](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Kopyalanan ve yapıştırılan öğeleri](../modeling/media/dslcopypastedefault.png)
 
  Bağlantılar ve kopyalanan öğelerin seri içinde depolanan ve bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) Pano'ya yerleştirilir.
 
@@ -217,7 +218,7 @@ Bkz: [nasıl yapılır: bir Sürükle ve bırak işleyici ekleme](../modeling/ho
 ##  <a name="customizeLinks"></a> Bağlantı kopyalama davranışını özelleştirme
  Kullanıcı bir öğeyi kopyaladığında, standart tüm katıştırılmış öğeleri de kopyalanır davranıştır. Davranış kopyalama standart değiştirebilirsiniz. DSL tanımı'nda bir ilişkinin ve özellikleri penceresinde ayarlanmış bir tarafta bir rol seçin **yayar kopyalama** değeri.
 
- ![Kopya etki alanı rolü özelliğinin yayar](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Kopya etki alanı rolü özelliğinin yayar](../modeling/media/dslpropagatescopy.png)
 
  Üç değer vardır:
 
@@ -227,7 +228,7 @@ Bkz: [nasıl yapılır: bir Sürükle ve bırak işleyici ekleme](../modeling/ho
 
 -   Bağlantı için Kopyala yayar ve rol player - kopyalanan Grup bağlantısının diğer ucundaki öğenin bir kopyasını içerir.
 
- ![İle PropagateCopyToLinkOnly kopyalama etkisini](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Etkisini PropagateCopyToLinkOnly ile kopyalama](../modeling/media/dslpropagatecopy.png)
 
  Yaptığınız değişiklikler öğeleri ve kopyalanan görüntü etkiler.
 
@@ -237,9 +238,9 @@ Bkz: [nasıl yapılır: bir Sürükle ve bırak işleyici ekleme](../modeling/ho
 > [!TIP]
 >  Program kodunu kullanarak model özelleştirme hakkında daha fazla bilgi için bkz: [gezinme ve Program kodundaki bir modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Kopyalama işleminin sıralı diyagram](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Kopyalama işlemi için sıralama diyagramı](../modeling/media/dslcopyseqdiagram.png)
 
- ![Yapıştırma işlemi dizisi diyagramı](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Yapıştırma işlemi dizisi diyagramı](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>Kendi ElementOperations tanımlamak için
 

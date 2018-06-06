@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 720a5d7ca5dfd0d8ab21100fa41c5b249a99858d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751682"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Nasıl yapılır: Web Başarım Testi Sonuçları Görüntüleyicisi için bir Visual Studio Eklentisi Oluşturma
 
@@ -135,7 +136,7 @@ Bir eklenti Visual Studio tümleşik geliştirme ortamı (IDE) çalıştıran bi
 
 6.  Araç Kutusu'ndan sürükleyin bir <xref:System.Windows.Forms.DataGridView> userControl1 yüzeyine.
 
-7.  Eylem etiketi karakter tıklayın (![akıllı etiket karakteri](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) sağ üst köşesindeki <xref:System.Windows.Forms.DataGridView> ve aşağıdaki adımları izleyin:
+7.  Eylem etiketi karakter tıklayın (![akıllı etiket karakteri](../test/media/vs_winformsmttagglyph.gif)) sağ üst köşesindeki <xref:System.Windows.Forms.DataGridView> ve aşağıdaki adımları izleyin:
 
     1.  Seçin **Ana kapsayıcıda yerleştir**.
 

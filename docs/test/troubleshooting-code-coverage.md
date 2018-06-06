@@ -9,13 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e7e939a5acaf89b3013cb5465b8fac6c272dd5d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751572"
 ---
-# <a name="troubleshoot-code-coverage"></a>Kod kapsamı sorunlarını giderme
+# <a name="troubleshoot-code-coverage"></a>Kod Kapsamı Sorunlarını Giderme
 
 Visual Studio'daki kod kapsamı analiz aracı yerel ve yönetilen (.ddl veya .exe dosyaları) derlemeler için verileri toplar. Ancak bazı durumlarda Kod Kapsamı Sonuçlar penceresi "Boş üretilen sonuçlar: ..." benzeri bir hata gösterir. Neden boş sonuçlar alabilirsiniz birkaç nedeni vardır. Bu makalede, bu sorunları çözmenize yardımcı olur.
 
@@ -23,7 +24,7 @@ Visual Studio'daki kod kapsamı analiz aracı yerel ve yönetilen (.ddl veya .ex
 
 İsterseniz bir **kod kapsamını çözümleme** Test menüsünde komutunu ve yapı ve test başarıyla çalışması sonra kod kapsamı penceresinde sonuçlarının bir listesini görürsünüz. Ayrıntıları görmek için öğeleri genişletmeniz gerekebilir.
 
-![Kod kapsamı sonuçları renklendirme ile](../test/media/codecoverage1.png "CodeCoverage1")
+![Kod kapsamı sonuçları renklendirme ile](../test/media/codecoverage1.png)
 
 Daha fazla bilgi için bkz: [kullanarak kod kapsamı belirleme ne kadar kodun için test](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 

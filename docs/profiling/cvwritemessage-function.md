@@ -28,13 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf87ea20c3b37ffd6998cf078a08e1ef11049be5
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 966be7ab50c2e14ae43da7cf68d7ef6168255207
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749632"
 ---
-# <a name="cvwritemessage-function"></a>CvWriteMessage İşlevi
+# <a name="cvwritemessage-function"></a>CvWriteMessage işlevi
 Eşzamanlılık görselleştiricisi izleme dosyası için bir ileti yazar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -109,15 +110,15 @@ HRESULT CvWriteMessageExVA(
  `pMessage`  
  İleti biçimi dizesi. NULL olamaz.  
   
-## <a name="return-value"></a>Dönüş Değeri  
+## <a name="return-value"></a>Dönüş değeri  
  İletiyi başarıyla yazıldığında S_OK. Hata kodu vardı herhangi bir hata durumunda. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cvmarkers.h  
+ **Başlık:** *cvmarkers.h*  
   
  **Unicode:** CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW  
   
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)

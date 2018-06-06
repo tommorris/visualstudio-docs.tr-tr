@@ -12,11 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746773"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Visual Studio 2017 Azure'da IIS'de ASP.NET çekirdeğinde uzaktan hata ayıklama
 
@@ -73,7 +74,7 @@ Hızlı bir şekilde Visual Studio'dan yayımlamak ve IIS tamamen sağlanan bir 
 
     Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-    ![Azure App Service'te yayımlama](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ![Azure App Service’e yayımlama](../debugger/media/remotedbg_azure_app_service_profile.png)
 
 1. Açık **Sunucu Gezgini** (**Görünüm** > **Sunucu Gezgini**), App Service örneğinde sağ tıklatın ve seçin **hata ayıklayıcıekleme**.
 
@@ -196,7 +197,7 @@ Uzaktan hata ayıklayıcı indirmeye sayfa açma konusunda sorun yaşıyorsanız
 
 ### <a name="BKMK_attach"></a> Visual Studio bilgisayardan ASP.NET uygulamasına ekleme
 
-1. Visual Studio bilgisayarda açın **MyASPApp** çözümü.
+1. Visual Studio bilgisayarda hata ayıklamaya çalıştığınız çözümü açın (**MyASPApp** bu makaledeki adımları izliyorsanız).
 2. Visual Studio'da sırasıyla **hata ayıklama > ekleme işlemi için** (Ctrl + Alt + P).
 
     > [!TIP]

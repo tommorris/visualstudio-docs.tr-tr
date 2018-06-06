@@ -18,31 +18,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e04f60ea5cfe72235bac6630b413c9c437255681
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4d0bc3185b0684f96bf31cc127cd852448afe772
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691293"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765076"
 ---
-# <a name="building-and-debugging-sharepoint-solutions"></a>Derleme ve SharePoint çözümlerini hata ayıklama
+# <a name="build-and-debug-sharepoint-solutions"></a>Derleme ve SharePoint çözümlerini hata ayıklama
   Genel olarak, derleme ve hata ayıklama SharePoint çözümleri oluşturma ve diğer türleri projelerinde hata ayıklama aynıdır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Bu bölümdeki konular, mevcut farkları açıklamaktadır.  
   
 ## <a name="project-output-for-sharepoint-solutions"></a>SharePoint çözümleri için proje çıktı
- SharePoint çözümleri oluşturma, derlemeler ve çözüm paketi (.wsp) dosyası oluşturur. Aşağıdaki tabloda, yapılandırma sırasında bu dosyaları konumlarını gösterilmektedir.  
+ SharePoint çözümleri oluşturma derlemeler ve bir çözüm paketi oluşturur (*.wsp*) dosyası. Aşağıdaki tabloda, yapılandırma sırasında bu dosyaları konumlarını gösterilmektedir.  
   
 |Yapı öğesi|Çıkış klasörü|  
 |----------------|-------------------|  
-|Derleme, program veritabanı (PDB) ve .wsp dosyalarını.|*ProjectName*\bin\debug veya *ProjectName*\bin\release|  
-|SharePoint proje öğesi dosyaları.|*ProjectName*\pkg\debug veya *ProjectName*\pkg\release|  
-|Ara dosya oluşturun.|*ProjectName*\obj\debug veya *ProjectName*\obj\release|  
-|Paket Ara dosyaları.|*ProjectName*\pkgobj\debug veya *ProjectName*\pkgobj\release|  
+|Derleme, program veritabanı (*.pdb*), ve *.wsp* dosyaları.|*{ProjectName} \bin\debug* veya *{ProjectName} \bin\release*|  
+|SharePoint proje öğesi dosyaları.|*{ProjectName} \pkg\debug* veya *{ProjectName} \pkg\release*|  
+|Ara dosya oluşturun.|*{ProjectName} \obj\debug* veya *{ProjectName} \obj\release*|  
+|Paket Ara dosyaları.|*{ProjectName} \pkgobj\debug* veya *{ProjectName} \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>SharePoint çözümleri derleme
  SharePoint çözümleri oluşturmak için geliştirme bilgisayarında yüklü SharePoint server'ın doğru sürümü olması gerekir. Aksi halde SharePoint çözümleri oluşturma projelerinde diğer türleri oluşturma aynıdır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint çözümleri derleme](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>Hata ayıklama ve SharePoint çözümlerini test etme
- Hata ayıklama önce [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .wsp paket SharePoint sunucusuna kopyalar, Site ve Web kapsamlı özellikler etkinleştirir ve bazı durumlarda, proje başlatır. Diğer durumlarda, projeyi el ile açmanız gerekebilir. Daha fazla bilgi için bkz: [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md) ve [hata ayıklama SharePoint çözümlerini](../sharepoint/debugging-sharepoint-solutions.md).  
+ Hata ayıklama önce [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kopya *.wsp* paketi SharePoint sunucusuna Site ve Web kapsamlı özelliklerini etkinleştirir ve bazı durumlarda, proje başlatır. Diğer durumlarda, projeyi el ile açmanız gerekebilir. Daha fazla bilgi için bkz: [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md) ve [hata ayıklama SharePoint çözümlerini](../sharepoint/debugging-sharepoint-solutions.md).  
   
 ## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>Hata ayıklama ve ALM özelliklerini kullanarak SharePoint çözümlerini doğrulayın
  Birim testi ve IntelliTrace gibi Visual Studio ALM özellikler SharePoint çözümlerinizi daha fazla doğru şekilde tam olarak belirlemenizde sorunları için etkinleştirin. Profil oluşturma bulun ve performans sorunlu alanları SharePoint çözümlerini belirlemenize olanak sağlar. Daha fazla bilgi için bkz: [doğrulama ve hata ayıklama SharePoint kodu](../sharepoint/verifying-and-debugging-sharepoint-code.md) ve [SharePoint uygulamalarını performans profili oluşturma](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  

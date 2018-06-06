@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766558"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Visual Studio yayımlama Aracı'nı kullanarak bir web sitesi için bir web uygulaması veya .NET Core uygulama yayımlama
 
@@ -26,9 +27,9 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
+* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü ve. **NET masaüstü geliştirme** iş yükü. .NET Core uygulama için gereksinim duyduğunuz. **NET çekirdek** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
@@ -85,4 +86,4 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 Bu hızlı başlangıç Visual Studio yayımlama profili oluşturmak için nasıl kullanılacağı hakkında bilgi edindiniz. Ayrıca bir yayımlamayı yapılandırabilirsiniz alarak profili yayımlama ayarları.
 
 > [!div class="nextstepaction"]
-> [İçeri aktarma ayarları yayımlama ve IIS dağıtma](tutorial-import-publish-settings-iis.md)
+> [Yayımlama ayarlarını içeri aktarma ve IIS’ye dağıtma](tutorial-import-publish-settings-iis.md)

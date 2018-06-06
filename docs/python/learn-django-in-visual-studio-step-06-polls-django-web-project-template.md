@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 78cb5f54994c24fcf79f81fd6eff31eedd884908
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691452"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750499"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Öğreticisi Adım 6: yoklamalar Django Web projesi şablonu kullanın
 
@@ -112,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-Gördüğünüz gibi bir yoklama açıklama tutar kendi `text` alan ve bir yayımın Tarih içinde `pub_date`. Bu alanlar yoklama veritabanındaki mevcut yalnızca onesields bağlıdır; `total_votes` çalışma zamanında hesaplanmış alan.
+Gördüğünüz gibi bir yoklama açıklama tutar kendi `text` alan ve bir yayımın Tarih içinde `pub_date`. Bu alanlar yoklama veritabanındaki mevcut yalnızca olanlardır; `total_votes` çalışma zamanında hesaplanmış alan.
 
 Seçim bir yoklama ile ilgili `poll` alan, bir tanım içeriyor `text`ve bu seçenek için bir sayımı tutar `votes`. `votes_percentage` Alanını çalışma zamanında hesaplanır ve veritabanında bulunamadı.
 

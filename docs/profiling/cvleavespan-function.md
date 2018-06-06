@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f72b7cac16fa53e0f46aea60e914baf8333209
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: fe234d60e8cd86279d3dcc01da95e6d2e6202213
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749164"
 ---
-# <a name="cvleavespan-function"></a>CvLeaveSpan İşlevi
+# <a name="cvleavespan-function"></a>CvLeaveSpan işlevi
 Aralığın sonunu işaretler.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -39,7 +40,7 @@ HRESULT CvLeaveSpan(
  İletiyi başarıyla yazıldığında S_OK. Hata kodu vardı herhangi bir hata durumunda. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cvmarkers.h  
+ **Başlık:** *cvmarkers.h*  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)

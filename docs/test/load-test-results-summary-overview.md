@@ -16,17 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 989ebc629e79194fb6cd4c900b032cb93a090977
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751864"
 ---
 # <a name="load-test-results-summary-overview"></a>Yük Testi Sonuçları Özetine Genel Bakış
 
 Bir yük testi çalıştırdıktan sonra sonuçları hızla anlamak için yük testi özetini görüntüleyebilirsiniz. Yük Testi Özeti anahtar sonuçları CD ve kolay okunur biçimde sağlar. Yük Testi Özeti ayrıca yazdırabilirsiniz. Bu proje katılımcılarına sonuçları iletişim kurarken kullanmak uygun sağlar. Daha önce çalıştırılan bir yük testine bir yük testi sonuç açtığınızda Yük Testi Özeti Ayrıca varsayılan görünümü şu şekildedir. Daha fazla bilgi için bkz: [nasıl yapılır: erişim yük testi sonuçlarını çözümleme için](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Özet görünümü](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![Özet görünümü](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>Yük Testi Özeti
 

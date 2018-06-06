@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752404"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++ için Visual Studio veri araçları
 
@@ -34,11 +35,11 @@ SQL Server 2005'te özel işlevsellikten yararlanmak ve daha sonra kullanmak iç
 
 3.  Yerel veritabanına sıkıştırması açılmış Northwind.mdf dosya eklemek için SQL Server Management Studio kullanın. SQL Server Management Studio başladığında (localdb) \MSSQLLocalDB bağlayın.
 
-     ![SSMS bağlanma iletişim](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS Bağlan iletişim kutusu")
+     ![İletişim SSMS bağlanma](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      Ardından sol bölmedeki localdb düğümünü sağ tıklatın ve seçin **Attach**.
 
-     ![SSMS ekleme veritabanı](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS Attach veritabanı")
+     ![Veritabanı SSMS ekleme](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  ODBC Windows SDK'sı örneği indirin ve yeni bir konuma sıkıştırmasını açın. Bu örnek bir veritabanı ve sorunu sorgulara ve komutlara için bağlanmak için kullanılan temel ODBC komutları gösterir. Bu işlevler hakkında daha fazla bilgiyi [Microsoft açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). (Bu C++ klasörüdür) çözümü ilk yüklediğinizde, Visual Studio çözümü Visual Studio'nun geçerli sürümüne yükseltmek sunar. **Evet**'i tıklayın.
 
@@ -67,7 +68,7 @@ Ve bu kitaplık dizini:
 
 8.  Derleme ve uygulamayı çalıştırmak için F5 tuşuna basın. Bir veritabanı girmenizi ister sürücü iletişim kutusundan görmeniz gerekir. Girin `(localdb)\MSSQLLocalDB`ve denetleme **güvenilir bağlantı kullan**. Press **OK**. Konsolu, başarılı bir bağlantı belirten iletileri ile görmeniz gerekir. Ayrıca, bir komut istemi SQL deyiminde yazabileceğiniz da görmeniz gerekir. Aşağıdaki ekran örnek bir sorgu ve sonuçları gösterilmektedir:
 
-     ![ODBC örnek sorgu çıktısı](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC örnek sorgu çıktısı")
+     ![ODBC örnek sorgu çıktısı](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

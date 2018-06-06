@@ -14,7 +14,7 @@ ms.openlocfilehash: 04cf166880ac8bcf83d4657b9c1c2eec1b46a14a
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690822"
 ---
 # <a name="console"></a>Konsol

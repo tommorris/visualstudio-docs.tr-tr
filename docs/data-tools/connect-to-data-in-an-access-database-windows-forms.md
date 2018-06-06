@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746822"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>(Windows Forms) erişim veritabanındaki verilere bağlanma
 Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .accdb dosyası) bağlanabilir. Veri bağlantısı tanımladıktan sonra görünür **veri kaynakları** penceresi. Burada, tabloları veya görünümleri formlarınıza sürükleyebilirsiniz.
@@ -37,7 +38,7 @@ Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .acc
 
 2.  Üzerinde **Görünüm** menüsünde, select **diğer pencereler** > **veri kaynakları**.
 
-     ![Diğer Windows veri kaynaklarını görüntülemek](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Diğer Windows veri kaynaklarını görüntülemek](../data-tools/media/viewdatasources.png)
 
 3.  İçinde **veri kaynakları** penceresinde tıklatın **yeni veri kaynağı Ekle**.
 
@@ -59,7 +60,7 @@ Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .acc
 
 9. Geri **Bağlantı Ekle** iletişim kutusunda **Microsoft Office 12.0 Access veritabanı altyapısı OLE DB sağlayıcısı** gelen **OLE DB sağlayıcısı** açılır.
 
-     ![OLE DB sağlayıcısı Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![OLE DB sağlayıcısı Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Görmüyorsanız, **Microsoft Office 12.0 Access veritabanı altyapısı OLE DB sağlayıcısı** açılır OLE DB Sağlayıcısında yüklemeniz gerekebilir [2007 Office sistemi sürücüsü: veri bağlantısı bileşenlerinin](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .acc
 
 2.  Üzerinde **Görünüm** menüsünde, select **diğer pencereler** > **veri kaynakları**.
 
-     ![Diğer Windows veri kaynaklarını görüntülemek](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Diğer Windows veri kaynaklarını görüntülemek](../data-tools/media/viewdatasources.png)
 
 3.  İçinde **veri kaynakları** penceresinde tıklatın **yeni veri kaynağı Ekle**.
 
@@ -103,7 +104,7 @@ Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .acc
 
 8.  İçinde **veritabanı dosya adı**, bağlanmak ve ardından istediğiniz .mdb dosyasının adını ve yolunu belirtin **Tamam**.
 
-     ![Bağlantı Access veritabanı dosyası ekleme](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Bağlantı Access veritabanı dosyası ekleme](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Seçin **sonraki** üzerinde **veri bağlantınızı seçin** sayfası.
 

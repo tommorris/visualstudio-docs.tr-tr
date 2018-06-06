@@ -11,13 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751523"
 ---
-# <a name="unit-test-basics"></a>Birim testi temelleri
+# <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
 Kod oluşturma ve birim testleri çalıştırma beklendiği gibi çalışıp çalışmadığını denetleyin. Birim, programınızı işlevselliğini test edebilirsiniz ayrık sınanabilir davranışları içine olarak tek tek ayırmanız çünkü testi adlı *birimleri*. Visual Studio Test Gezgini birim testleri çalıştırma ve sonuçları Visual Studio'da görüntülemek için esnek ve verimli bir yol sağlar. Visual Studio Microsoft Birim yönetilen ve yerel kodu çerçeveyi testi yükler. Kullanım bir *birim testi çerçevesi* birim testleri oluşturmak için bunları çalıştırmak ve bu test sonuçlarını rapor. Kodunuzun doğru şekilde çalışıp çalışmadığını sınamak için değişiklik yaptığınız zaman yeniden çalıştır birim testleri. Visual Studio Enterprise ile otomatik olarak yapabilirsiniz [Canlı birim testi](live-unit-testing-intro.md), hangi kodunuz tarafından etkilenen testleri algılar değiştirir ve yazarken arka planda çalışır.
 
@@ -41,7 +42,7 @@ Doğrudan kodlama içine alır birim testi giriş için aşağıdaki konulardan 
 
 Bu konuda, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` bir örnek olarak. Bu konudaki Açıklamalar izlemeniz gereken gerçek bir kod gerekmez. Test yöntemleri C# ile yazılmış ve yönetilen kod için Microsoft birim testi çerçevesi kullanarak sunulan, ancak kavramları kolayca diğer dilleri ve çerçeveleri aktarılır.
 
- ![MyBank çözüm](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![MyBank çözümü](../test/media/ute_mybanksolution.png)
 
  Bizim için tasarım ilk teşebbüs `MyBank` uygulama, tek bir hesap ve hareketlerini banka ile temsil eden bir hesapları bileşeni ve toplama ve yönetmek için işlevleri temsil eden bir veritabanı bileşeni içerir Bireysel hesaplar.
 
@@ -85,15 +86,15 @@ Genellikle birim testi projesi ve birim testi saplamalar kodunuzdan oluşturmak 
 
 1.  Kod Düzenleyicisi penceresinde, sağ tıklatın ve seçin **birim testleri oluşturma** ve bağlam menüsünden.
 
-     ![Bağlam menüsü Düzenleyici penceresinden görüntülemek](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![Düzenleyicisi penceresinde, bağlam menüsü görüntüleme](../test/media/createunittestsrightclick.png)
 
 2.  Birim testleri oluşturma veya oluşturmak için kullanılan değerleri değiştirmek için Varsayılanları kabul etmek için Tamam'a tıklayın ve ad birim testi projesi ve birim testleri. Varsayılan olarak birim testi yöntemlerine eklenen kodu seçebilirsiniz.
 
-     ![Sağ&#45;Düzenleyicisi'nde tıklatın ve birim testleri oluşturmak seçin](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Sağ&#45;Düzenleyicisi'nde tıklatın ve birim testleri oluşturmak seçin](../test/media/createunittestsdialog.png)
 
 3.  Birim testi saplamalar sınıfındaki tüm yöntemler için yeni bir birim testi projesi oluşturulur.
 
-     ![Birim testleri oluşturulan](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![Birim testleri oluşturulur](../test/media/createunittestsstubs.png)
 
 4.  Bilgi edinmek için şimdi İleri atlamayın nasıl [kod için birim test yöntemleri eklemek](#BKMK_Writing_your_tests) anlamlı, birim testi ve baştan sona kodunuzu test etmek için eklemek isteyebilirsiniz herhangi bir ek birim testi yapmak için.
 
@@ -204,7 +205,7 @@ public void My_Test ()
 
 Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini görünür durumda değilse, seçin **Test** Visual Studio menüsünde, **Windows**ve ardından **Test Gezgini**.
 
- ![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png)
 
  Çalıştırmak, yazma ve testleri yeniden gibi Test Gezgini varsayılan görünümü sonuçları gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, **atlandı testleri** ve  **Testler değil**. Tüm testler o grupta görüntüler görünümünü açmak için bir Grup başlığını seçebilirsiniz.
 
@@ -214,11 +215,11 @@ Test projesi derlerken, testleri Test Gezgini'nde görünür. Test Gezgini gör�
 
 Test Gezgini araç bulmak, düzenlemenize ve ilgilendiğiniz testler yardımcı olur.
 
- ![Test Gezgini araç çubuğundan testler](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![Test Gezgini araç çubuğundan testleri çalıştırma](../test/media/ute_toolbar.png)
 
  Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırma veya seçmek için **çalıştırmak** Çalıştırılacak testleri kümesini seçin. Sonra testleri kümesi çalıştırmak, test çalışması özetini Test Gezgini penceresinin alt kısmında görüntülenir. Bir test alt bölmesinde test ayrıntılarını görüntülemek için seçin. Seçin **açık Test** ve bağlam menüsünden (klavye: F12) seçili test için kaynak kodunu görüntüleyin.
 
- Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png "UTE_parallelicon küçük") iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+ Tek tek testlerin herhangi bir sırayla çalıştırmak engelleyen bağımlılık varsa, paralel test yürütmesi ile Aç ![UTE&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) iki durumlu düğme araç çubuğunda. Bu, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
 ### <a name="run-tests-after-every-build"></a>Her yapıdan sonra testleri çalıştırma
 
@@ -227,17 +228,17 @@ Test Gezgini araç bulmak, düzenlemenize ve ilgilendiğiniz testler yardımcı 
 
 |||
 |-|-|
-|![Derleme sonrası çalıştırmak](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Her yerel yapıdan sonra birim testleri çalıştırmak için tercih **Test** standart menüsünde, **çalıştırmak sonra yapı testleri** Test Gezgini araç çubuğunda.|
+|![Derleme sonrası çalıştırın](../test/media/ute_runafterbuild_btn.png)|Her yerel yapıdan sonra birim testleri çalıştırmak için tercih **Test** standart menüsünde, **çalıştırmak sonra yapı testleri** Test Gezgini araç çubuğunda.|
 
 ### <a name="filter-and-group-the-test-list"></a>Filtre ve grup test listesi
 
 Çok sayıda testleri sahip olduğunuzda, Test Gezgini tarafından belirtilen dize listesini filtrelemek için arama kutusuna yazabilirsiniz. Filtre olayınızın filtre listeden seçerek daha fazla kısıtlayabilirsiniz.
 
- ![Arama filtresi kategorileri](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![Arama filtresi kategorileri](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![Test Gezgini grubu düğmesini](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Kategoriye göre testlerinizi gruplamak için seçin **Group By** düğmesi.|
+|![Test Gezgini Grup düğmesi](../test/media/ute_groupby_btn.png)|Kategoriye göre testlerinizi gruplamak için seçin **Group By** düğmesi.|
 
  Daha fazla bilgi için bkz: [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)
 
@@ -260,7 +261,7 @@ Daha fazla ayrıntı öğrenin [birim testleri hata ayıklama](../debugger/debug
 
  **Y:** IntelliSense sınıflar ve yöntemler proje kodunuzda oluşturmak için kullanın. Sınıf çağıran bir test yöntemi veya oluşturmak istediğiniz yöntemi bir ifadesi yazın, ardından çağrının altında IntelliSense menüsünü açın. Çağrı yeni sınıfın bir oluşturucuya ise seçmeniz **yeni türü** sınıfı kod projenize eklemek için sihirbazı izleyin ve menüden. Arama için bir yöntem ise seçmeniz **üretme yeni yöntemi** IntelliSense menüsünde.
 
- ![Yöntem saplama IntelliSense menü oluşturmak](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![Yöntem saplama IntelliSense menü oluşturma](../test/media/ute_generatemethodstubintellisense.png)
 
  **S: birden çok veri kümesi testi çalıştırmak için giriş olarak ele birim testleri oluşturma?**
 
@@ -304,7 +305,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  Kapsamı sonuçları kod kapsamı Sonuçları penceresinde görünür.
 
- ![Kod kapsamı sonuçları](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![Kod kapsamı sonuçları](../test/media/ute_codecoverageresults.png)
 
  Daha fazla bilgi edinmek [kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
@@ -326,6 +327,6 @@ Daha fazla bilgi edinmek [birim test yöntemleri Microsoft Fakes ile yalıtma](.
 
  **Y:** Evet, şu adımları izleyin [bulma ve diğer çerçeveler yükleme](../test/install-third-party-unit-test-frameworks.md). Visual Studio yeniden başlattıktan sonra birim testleri oluşturmak için çözümü kapatıp yeniden açın ve yüklü çerçeveleri aşağıda seçin:
 
- ![Diğer yüklü birim test çerçevesi seçin](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![Diğer yüklü birim test çerçevesi seçin](../test/media/createunittestsdialogextensions.png)
 
  Birim testi saplamalar seçili framework kullanılarak oluşturulur.

@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747873"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2. adım: rasgele bir toplama problemi oluşturma
 Bu öğreticinin ikinci bölümünde, test zor rasgele rakamlar temelinde matematik sorunları ekleyerek yapın. Adlı bir yöntem de oluşturma `StartTheQuiz()` ve sorunlarını doldurur ve geri sayım süreölçer başlatır. Daha sonra Bu öğreticide çıkarma, çarpma ve bölme problemleri ekleyeceksiniz.
@@ -59,7 +60,7 @@ Bu öğreticinin ikinci bölümünde, test zor rasgele rakamlar temelinde matema
 
      Nokta (.) girin, sonra fark `randomizer` kodda bir IntelliSense penceresi açar ve tüm çağırabilirsiniz rastgele nesnesinin yöntemlerini gösterir. Örneğin, IntelliSense listeler `Next()` şekilde yöntemi.
 
-     ![Next yöntemi](../ide/media/express_randomwhite.png "Express_RandomWhite") Next yöntemi
+     ![Next yöntemi](../ide/media/express_randomwhite.png) Next yöntemi
 
      Bir nesne sonra bir nokta girdiğinizde, IntelliSense özellikleri, yöntemleri ve olayları gibi nesnenin üyelerin listesi gösterilir.
 
@@ -88,7 +89,7 @@ Bu öğreticinin ikinci bölümünde, test zor rasgele rakamlar temelinde matema
 
      Rasgele bir toplama problemi, aşağıda gösterildiği gibi görünür.
 
-     ![Rasgele bir toplama problemi](../ide/media/express_additionproblem.png "Express_AdditionProblem") rasgele bir toplama problemi
+     ![Rasgele bir toplama problemi](../ide/media/express_additionproblem.png) rasgele bir toplama problemi
 
      Öğreticinin sonraki adımda, toplam ekleyeceksiniz.
 

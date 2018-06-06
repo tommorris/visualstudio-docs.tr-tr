@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765105"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Nasıl yapılır: CPU Sayaç Verileri Toplama
+# <a name="how-to-collect-cpu-counter-data"></a>Nasıl yapılır: CPU sayaç verileri toplama
 
-Bir CPU olay sayacı, donanıma özgü performans verilerini toplamak için kullanılır. Bu konuda izleme profili oluşturma yöntemi kullandığınızda, olay sayaç verileri toplamak nasıl gösterilmektedir.
+Bir CPU olay sayacı, donanıma özgü performans verilerini toplamak için kullanılır. Bu makalede izleme profili oluşturma yöntemi kullandığınızda, olay sayaç verileri toplamak nasıl gösterir.
 
 İki tür CPU sayaç olay oluşur:
 
@@ -44,7 +45,7 @@ Bir CPU olay sayacı, donanıma özgü performans verilerini toplamak için kull
 
 - Araçları tarafından profil olduğunda veri bir veya daha fazla sayaçlarını toplar.
 
-- Örnekleme tarafından profil zaman sayacı olay örnekleme aralığı belirtin. Daha fazla bilgi için bkz: [nasıl yapılır: örnekleme olayları seçin](../profiling/how-to-choose-sampling-events.md).
+- Örnekleme tarafından profil zaman sayacı olay örnekleme aralığı belirtin. Daha fazla bilgi için bkz: [nasıl yapılır: örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Araçları tarafından profil, CPU performans sayacı verilerini toplamak için
 
@@ -62,6 +63,6 @@ Bir CPU olay sayacı, donanıma özgü performans verilerini toplamak için kull
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
-[Performans oturum özellikleri](../profiling/performance-session-properties.md)  
+[Performans oturumu özellikleri](../profiling/performance-session-properties.md)  
 [CPU ve Windows sayaçları](../profiling/cpu-and-windows-counters.md)  
-[Nasıl yapılır: örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md)
+[Nasıl yapılır: Örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md)

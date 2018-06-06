@@ -14,24 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 415e2ee4da01affd2d34b2bbb1aafb5de697767e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766330"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Anlık görüntü hata ayıklayıcı kullanarak canlı ASP.NET Azure uygulamalarının hatalarını ayıklama
 
 İlgilendiğiniz kod yürüttüğünde anlık görüntü hata ayıklayıcı üretim uygulamalarınızın bir anlık görüntüsünü alır. Bir anlık görüntüyü almaya hata ayıklayıcı istemek üzere kodunuzda snappoints ve logpoints ayarlayın. Hata ayıklayıcı tam olarak ne üretim uygulamanızın trafiğini etkilemeden sorun oluştu görmenizi sağlar. Anlık görüntü hata ayıklayıcı üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi önemli ölçüde azaltmaya yardımcı olabilir.
 
 Snappoints ve logpoints için kesme noktaları benzer, ancak kesme noktaları farklı olarak, uygulama snappoints durdurmak yok zaman ulaştı. Genellikle, bir snappoint adresindeki anlık yansımasını yakalamada 10-20 milisaniye alır. 
-
-Anlık görüntü koleksiyonu, Azure App Service içinde çalışan aşağıdaki web uygulamaları için kullanılabilir:
-
-- .NET Framework 4.6.1 çalışan ASP.NET uygulamalarını veya sonraki bir sürümü.
-- .NET Core 2.0 veya daha sonra Windows üzerinde çalışan ASP.NET Core uygulamaları.
-
-Ayrıca, anlık görüntü hata ayıklayıcı yalnızca Visual Studio 2017 Enterprise sürümü 15,5 veya üzerini ve temel ya da daha yüksek uygulama hizmeti planları için kullanılabilir. 
 
 Bu öğreticide şunları yapacaksınız:
 
@@ -40,16 +34,27 @@ Bu öğreticide şunları yapacaksınız:
 > * Bir snappoint ayarlama ve anlık görüntü görüntüleme
 > * Bir logpoint ayarlayın
 
-## <a name="start-the-snapshot-debugger"></a>Anlık görüntü hata ayıklayıcı Başlat
+## <a name="prerequisites"></a>Önkoşullar
 
-1. Yükleme [Visual Studio 2017 Enterprise sürümü 15,5](https://www.visualstudio.com/downloads/) veya sonraki bir sürümü. Bir önceki Visual Studio 2017 yüklemesinden güncelleştiriyorsanız, Visual Studio yükleyicisi çalıştırın ve ASP.NET ve web geliştirme iş yükü anlık görüntü hata ayıklayıcı bileşeni denetleyin.
+* Anlık görüntü hata ayıklayıcı kullanılabilir yalnızca Visual Studio 2017 Enterprise 15,5 veya ile daha yüksek bir sürümü için **ASP.NET ve web geliştirme iş yükü**. Ayrıca ASP.NET Core için gerekir. **NET çekirdek geliştirme** yüklü iş yükü.
 
-2. Anlık görüntü debug istediğiniz projeyi açın. 
+    Henüz yüklü değilse yükleyin [Visual Studio 2017 Enterprise sürümü 15,5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya sonraki bir sürümü. Bir önceki Visual Studio 2017 yüklemesinden güncelleştiriyorsanız, Visual Studio yükleyicisi çalıştırın ve anlık görüntü hata ayıklayıcı bileşen iade **ASP.NET ve web geliştirme iş yükü**.
+
+* Azure uygulama hizmeti planı temel ya da daha yüksek.
+
+* Anlık görüntü koleksiyonu, Azure App Service içinde çalışan aşağıdaki web uygulamaları için kullanılabilir:
+
+    * .NET Framework 4.6.1 çalışan ASP.NET uygulamalarını veya sonraki bir sürümü.
+    * .NET Core 2.0 veya daha sonra Windows üzerinde çalışan ASP.NET Core uygulamaları.
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Projenizi açın ve anlık görüntü hata ayıklayıcı Başlat
+
+1. Anlık görüntü debug istediğiniz projeyi açın. 
 
     > [!IMPORTANT] 
     > Anlık görüntü hata ayıklama için açmanız gerekir. **kaynak kodu aynı sürümünü** Azure uygulama hizmetiniz yayımlanır. 
 
-3. Cloud Explorer'da (**Görünüm > Cloud Explorer**), Azure uygulama hizmeti projenizi dağıtıldığı sağ tıklatın ve seçin **Attach anlık görüntü hata ayıklayıcı**.
+1. Cloud Explorer'da (**Görünüm > Cloud Explorer**), Azure uygulama hizmeti projenizi dağıtıldığı sağ tıklatın ve seçin **Attach anlık görüntü hata ayıklayıcı**.
 
    ![Anlık görüntü hata ayıklayıcıyı başlatma](../debugger/media/snapshot-launch.png)
 

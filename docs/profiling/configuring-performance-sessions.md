@@ -19,7 +19,7 @@ ms.openlocfilehash: df9ba88809303e5d093c4fb644e4b936dfbcf1f0
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692206"
 ---
 # <a name="configure-performance-sessions"></a>Performans oturumlarını yapılandırma

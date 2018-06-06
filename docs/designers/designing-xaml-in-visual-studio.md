@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c4ebc75ccd436b36e6f96bdc94372ee37b048989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6eb91664c78f3c11039f519a306e55a76f9c8e5a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745730"
 ---
-# <a name="design-xaml-in-visual-studio"></a>Visual Studio'da XAML tasarım
+# <a name="design-xaml-in-visual-studio"></a>Visual Studio’da XAML tasarlama
 
 Çeşitli uygulama türleri için XAML ile zengin medya deneyimlerini ve Visual Studio ve Visual Studio için Blend kullanıcı arabirimleri çekici oluşturma için görsel araçlar sağlar. Her iki araçları ortak bir görsel XAML Düzenleyicisi'ni dahil olmak üzere özelliklerini sahip, ancak animasyon ve davranışları gibi daha gelişmiş görevler için Visual Studio için Blend ek tasarım araçlar sağlar.
 
@@ -37,7 +38,7 @@ En temel görevler için Visual Studio IDE ve Visual Studio için Blend paylaş�
 
 - **Tutarlı bir kullanıcı arabirimi:** tanıdık bağlamında uygulamalarınızı daha eğlenceli ve üretken bir deneyim IDE arasında geçiş yapar Visual Studio kullanıcı arabiriminin tasarlayabilirsiniz. Visual Studio kullanımlar odaklanmanıza yardımcı olan Visual Studio koyu tema içeriğinizi ve kullanıcı arabirimi arasında karşıtlığı geliştirerek tasarlarken içerik üzerinde karışır. Bkz: [XAML Tasarımcısını kullanarak bir kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-     ![Visual Studio IDE için Blend](../designers/media/blendide.png "BlendIDE")
+     ![Visual Studio IDE için Blend](../designers/media/blendide.png)
 
 - **XAML IntelliSense:** hem IDE desteği tüm IntelliSense deyim tamamlama, yorum oluşturma ve biçimlendirme kodu ve kaynaklara, gezinti gibi ortak Düzenleyicisi işlemleri için destek dahil olmak üzere gelen beklediğiniz ortak özellikleri bağlama ve kod.
 
@@ -45,7 +46,7 @@ En temel görevler için Visual Studio IDE ve Visual Studio için Blend paylaş�
 
 - **Dosya yeniden yükleme deneyimi:** sahip düzenlenen dosyalarınızı yeniden otomatik olarak aralarında geçiş gibi ve XAML dosyalarınızda ya da Visual Studio için Blend veya Visual Studio düzenleyebilirsiniz. İş akışı kesintileri en aza indirmek için artık dosyanızı yeniden Tercihler dosyası yeniden Yükle iletişim kutusunda ayarlayabilirsiniz.
 
-     ![Dosya yeniden yükleme deneyimi](../designers/media/blendfilereload.png "BlendFileReload")
+     ![Dosyayı yeniden deneyimi](../designers/media/blendfilereload.png)
 
 - **Eşitlenen düzenleri ve ayarları:** özel düzenler kaydedebilir ve aracı pencere düzenini özelleştirmeleri uygulayabilirsiniz olanak tanır. Aynı Microsoft hesabı ile oturum açtığınızda visual Studio bu özelleştirmeler ve Visual Studio ve Visual Studio için Blend tercihlerini makinelerde eşitler. Bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 

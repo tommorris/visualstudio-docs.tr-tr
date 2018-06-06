@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764559"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Öğretici: Visual Studio yönetilen ve yerel kodda hata ayıklama
 
@@ -39,7 +40,7 @@ Bu öğreticide şunları yapacaksınız:
 
 * Visual Studio yüklü olmalıdır ve **C++ ile masaüstü geliştirme** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
     İş yükü yüklenir ancak tıklatın Visual Studio zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu. Visual Studio yükleyicisi başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
 
@@ -73,7 +74,7 @@ Bu öğreticide şunları yapacaksınız:
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
     #define MIXED_MODE_MULTIPLY_HPP
-    
+
     extern "C"
     {
         __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
@@ -106,7 +107,7 @@ Bu öğreticide şunları yapacaksınız:
 
 1. Uygulama kodunuz için bir şablon seçin.
 
-    .NET Framework içinde **yeni proje** iletişim kutusunda, seçin **Visual C#**, **Windows Klasik Masaüstü** yüklenmiş şablonlar bölümünden ve Orta bölmede seçin **konsol uygulaması (.NET Framework)**.
+    .NET Framework içinde **yeni proje** iletişim kutusunda, seçin **Visual C#**, **Windows Masaüstü** yüklenmiş şablonlar bölümünden, ardından Ortabölmesindeseçin **Konsol uygulaması (.NET Framework)**.
 
     .NET Core için de **yeni proje** iletişim kutusunda, seçin **Visual C#**, **.NET Core** yüklenmiş şablonlar bölümünden ve Orta bölmede seçin  **Konsol uygulaması (.NET Core)**.
 
@@ -119,7 +120,7 @@ Bu öğreticide şunları yapacaksınız:
     ```csharp
     using System;
     using System.Runtime.InteropServices;
-    
+
     namespace Mixed_Mode_Calling_App
     {
         public class Program
@@ -133,7 +134,7 @@ Bu öğreticide şunları yapacaksınız:
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
-            { 
+            {
                 int result = Multiply(7, 7);
                 Console.WriteLine("The answer is {0}", result);
                 Console.ReadKey();
@@ -165,9 +166,9 @@ Visual Studio 2017 çoğu sürümlerini .NET Core kullanarak uygulama yerel kod 
     ```
     "nativeDebugging": true
     ```
-    
+
     Bu nedenle, örneğin, dosyanız aşağıdakine benzeyebilir:
-    
+
     ```
     {
       "profiles": {

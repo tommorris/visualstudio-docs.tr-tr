@@ -15,7 +15,7 @@ ms.openlocfilehash: 0343058b2ae2910e81f345e81139d6f5114e330b
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692193"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Veri tabanlı kodlanmış UI testi oluşturma

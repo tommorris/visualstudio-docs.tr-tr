@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc7c946a89c8ba05ffed443816d6ce4e9056b88b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 808e37b6d172a63288751c28dfdcd1e43d466c08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767428"
 ---
-# <a name="how-to-add-an-updater-method"></a>Nasıl yapılır: Bir Güncelleyici Yöntemi Ekleme
+# <a name="how-to-add-an-updater-method"></a>Nasıl yapılır: bir güncelleyici yöntemi ekleme
   Oluşturarak dış SharePoint listesindeki iş verileri güncelleştirmek kullanıcılar etkinleştirebilir bir *güncelleştirici* yöntemi. Daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-an-updater-method"></a>Bir güncelleyici yöntemi oluşturmak için  
   
 1.  Bir varlık BDC designer'ı seçin.  
   
-2.  Menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **BDC yöntem ayrıntıları**.  
+2.  Menü çubuğunda seçin **Görünüm** > **diğer pencereler** > **BDC yöntem ayrıntıları**.  
   
      BDC yöntem Ayrıntıları penceresi açılır. Bu pencere hakkında daha fazla bilgi için bkz: [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  İçinde **Çözüm Gezgini**oluşturulan hizmet kod dosyasının varlığı için kısayol menüsünü açın ve ardından **görünümü kodu**.  
   
-     Varlık hizmeti kod dosyasını Kod Düzenleyicisi'nde açar. Bu dosya hakkında daha fazla bilgi için bkz: [iş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     Varlık hizmeti kod dosyasını açar **Kod düzenleyicisinde**. Bu dosya hakkında daha fazla bilgi için bkz: [iş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 5.  Kodu verileri güncelleştirmek için güncelleştirme yöntemine ekleyin. Aşağıdaki örnekte, AdventureWorks örnek veritabanındaki kişiyle ilgili bilgi için SQL Server güncelleştirir.  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
      [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Nasıl yapılır: bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-finder-method.md)   
  [Nasıl yapılır: belirli bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)   
@@ -79,4 +80,4 @@ ms.lasthandoff: 04/16/2018
  [Nasıl yapılır: bir yönteme parametre ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Nasıl yapılır: Metot Örneği Tanımlama](../sharepoint/how-to-define-a-method-instance.md)  
   
-  
+ 

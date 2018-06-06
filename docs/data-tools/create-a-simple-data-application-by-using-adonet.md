@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d0b60bb4e7048e2dc49774ec69d3eea4fc0ce6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745808"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 
@@ -83,7 +84,7 @@ Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygu
 
  **Gezinti formu**
 
- ![Gezinti iletişim kutusu](../data-tools/media/simpleappnav.png "SimpleAppNav")
+ ![Gezinti iletişim kutusu](../data-tools/media/simpleappnav.png)
 
 |Gezinti formu denetimleri|Özellikler|
 |--------------------------------------|----------------|
@@ -93,7 +94,7 @@ Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygu
 
  **NewCustomer formu**
 
- ![Yeni bir müşteri ekleyin ve bir sipariş verin](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
+ ![Yeni bir müşteri ekleyin ve bir sipariş verin](../data-tools/media/simpleappnewcust.png)
 
 |NewCustomer form için denetimleri|Özellikler|
 |---------------------------------------|----------------|
@@ -108,7 +109,7 @@ Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygu
 
  **FillOrCancel formu**
 
- ![doldurun veya Sipariş İptal](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")
+ ![doldurun veya sipariş iptal etme](../data-tools/media/simpleappcancelfill.png)
 
 |FillOrCancel form için denetimleri|Özellikler|
 |----------------------------------------|----------------|

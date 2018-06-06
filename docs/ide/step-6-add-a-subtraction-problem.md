@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6d338217d3112fc56307ddc2f9af696c99e96a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747899"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6. adım: çıkarma problemi ekleme
 Bu öğreticinin altıncı bölümünde çıkarma problemi ekleme ve aşağıdaki görevleri nasıl gerçekleştireceğinizi öğrenin:
@@ -51,12 +52,12 @@ Bu öğreticinin altıncı bölümünde çıkarma problemi ekleme ve aşağıdak
 
      Çağırabilirsiniz `Next()` "rasgele Sıralayıcı" daha önce bu öğreticide, birden çok yolla adlı rastgele sınıfının yöntemi. Birden çok yolla çağırabilirsiniz yöntemleri için aşırı yüklü olarak da adlandırılır ve bunları keşfetmek için IntelliSense kullanabilirsiniz. Bakabilir yeniden araç ipucu için IntelliSense penceresinin `Next()` yöntemi.
 
-     ![IntelliSense penceresi araç ipucu](../ide/media/express_overloads.png "Express_Overloads")
+     ![IntelliSense penceresi araç ipucu](../ide/media/express_overloads.png)
 **IntelliSense** penceresi araç ipucu
 
      Araç İpucu gösterir **(+ 2 overload(s))**, çağırabilirsiniz anlamına `Next()` iki yolla yöntemi. Böylece birbirinden biraz farklı çalıştığını aşırı farklı sayılar veya bağımsız değişken türleri içerir. Örneğin, bir yöntem tek tamsayı bağımsız değişkeni sürebilir ve onun aşırı birini bir tamsayı ve bir dize alabilir. Ne yapmak istiyorsunuz üzerinde göre doğru aşırı seçin. Koda eklediğinizde `StartTheQuiz()` yöntemi, daha fazla bilgi IntelliSense penceresinde görünür girdiğiniz hemen `randomizer.Next(`. Aşırı yükleme geçiş yapmak için seçin **yukarı ok** ve **aşağı ok** anahtarları aşağıdaki çizimde gösterildiği gibi:
 
-     ![Sonraki aşırı&#40; &#41; IntelliSense yönteminde](../ide/media/express_nextoverload.png "Express_NextOverload") için aşırı yükleme **Next()** yönteminde **IntelliSense**
+     ![Sonraki aşırı&#40; &#41; IntelliSense yönteminde](../ide/media/express_nextoverload.png) için aşırı yükleme **Next()** yönteminde **IntelliSense**
 
      Bu durumda, minimum ve maksimum değerleri belirttiğinden son aşırı seçin istiyorsunuz.
 
@@ -76,7 +77,7 @@ Bu öğreticinin altıncı bölümünde çıkarma problemi ekleme ve aşağıdak
 
      Programınızı çıkarma problemi, aşağıda gösterildiği gibi içerir:
 
-     ![Matematik testi çıkarma sorunla](../ide/media/express_addsubtract.png "Express_AddSubtract")
+     ![Matematik testi çıkarma sorunla](../ide/media/express_addsubtract.png)
 **matematik testi** çıkarma problemi ile
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için

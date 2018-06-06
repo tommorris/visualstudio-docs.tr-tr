@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 88dc37e555f6ceb30584d4a1c17b96506219631a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766746"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -37,9 +38,9 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
+* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve. **NET Framework** geliştirme iş yükü. Ayrıca bir .NET Core uygulaması için gerekir. **NET çekirdek** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 * Bir Azure uygulama hizmeti oluşturun. Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). 
 
@@ -92,11 +93,11 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Visual Studio'da yayımlama ayarlarını içeri aktarın ve dağıtın
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import publish settings](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticide bir yayımlama ayarları dosyası oluşturdunuz, Visual Studio'ya içeri aktarılan ve Azure App Service'e bir ASP.NET uygulaması dağıttınız.
+Bu öğreticide bir yayımlama ayarları dosyası oluşturdunuz, Visual Studio'ya içeri aktarılan ve Azure App Service'e bir ASP.NET uygulaması dağıttınız. Visual Studio'da yayımlama seçeneklerini genel bir bakış isteyebilirsiniz.
 
 > [!div class="nextstepaction"]
 > [Dağıtıma ilk bakış](../deployment/deploying-applications-services-and-components.md)

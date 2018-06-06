@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47b51070a3f3368dbff636858c9a2e1ebf2e9f80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 878a2c76bbc57983791b65b73c8e0580dbfa3cfd
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767497"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Nasıl Yapılır: Sunucu Gezginine Özel bir SharePoint Düğümü Ekleme
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Nasıl yapılır: Sunucu Gezginine özel bir SharePoint düğümü ekleme
   Özel düğümlerinde ekleyebilirsiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. Görüntülenmeyen ek SharePoint bileşenlerini görüntülemek istediğinizde bu kullanışlıdır **Sunucu Gezgini** varsayılan olarak. Daha fazla bilgi için bkz: [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
  Özel bir düğüm eklemek için önce yeni düğümü tanımlayan bir sınıf oluşturun. Ardından var olan bir düğümün bir alt öğesi olarak düğüm ekler uzantı oluşturun.  
@@ -79,13 +80,13 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]  
   
-## <a name="complete-example"></a>Tam Örnek  
+## <a name="complete-example"></a>Tam örnek
  Aşağıdaki kod örneğinde add içinde SharePoint sitesi düğümün alt öğesi olarak ve basit bir düğüm tanımlamak için tam bir kod sağlar **Sunucu Gezgini**.  
   
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]  
   
-## <a name="compiling-the-code"></a>Kod Derleniyor  
+## <a name="compiling-the-code"></a>Kod derleme  
  Bu örnek, projenizin CustomChildNodeIcon katıştırılmış bir kaynağı olarak adlandırılan bir simge içerdiğini varsayar. Bu örnek ayrıca aşağıdaki derlemelere başvuruları gerektirir:  
   
 -   Microsoft.VisualStudio.SharePoint  
@@ -97,7 +98,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="deploying-the-extension"></a>Uzantısını dağıtma  
  Dağıtmak için **Sunucu Gezgini** uzantısı oluşturma bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer dosyalar için. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [İzlenecek yol: Sunucu Gezginini Web Bölümlerini Görüntülemek Üzere Genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

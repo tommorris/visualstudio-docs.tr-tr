@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f745033ecb88fd70de4c7150dc5ae3165ab3c99b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef614cbfd611eb9994f378e655d50a8656aa0441
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746331"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Nasıl Yapılır: Gri Tonlamalı Doku Gölgelendiricisi Oluşturma
 
 Bu makalede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) gri tonlamalı doku gölgelendirici oluşturmak için nasıl kullanılacağı gösterilmektedir. Bu gölgelendirici doku örnek RGB renk değerini değiştirir ve sonra son rengini ayarlamak için birlikte değiştirilmemiş alfa değeri kullanır.
 
-## <a name="create-a-grayscale-texture-shader"></a>Gri tonlamalı doku gölgelendirici oluşturma
+## <a name="create-a-grayscale-texture-shader"></a>Gri tonlamalı doku gölgelendiricisi oluşturma
 
 Son çıktı renge yazmadan önce bir doku örnek renk değerini değiştirerek bir gri tonlamalı doku gölgelendirici uygulayabilirsiniz.
 
@@ -44,7 +45,7 @@ Aşağıdaki çizimde, grafik ve bir küp uygulanan gölgelendirici önizlemesin
 > [!NOTE]
 > Bu çizimde, bir düzlemi Önizleme şekil olarak kullanılır ve bir doku daha iyi gölgelendirici etkisini göstermek için belirtilen.
 
-![Gölgelendirici grafik ve etkisini önizlemesini](../designers/media/digit-grayscale-effect.png "basamaklı gri tonlamalı etkisi")
+![Gölgelendirici grafik ve etkisini önizlemesi](../designers/media/digit-grayscale-effect.png)
 
 Belirli şekillerin daha iyi önizlemeleri için bazı gölgelendiriciler sağlayabilir. Gölgelendirici Tasarımcısı'nda gölgelendiriciler önizleme hakkında daha fazla bilgi için bkz: [gölgelendirici Tasarımcısı](../designers/shader-designer.md)
 

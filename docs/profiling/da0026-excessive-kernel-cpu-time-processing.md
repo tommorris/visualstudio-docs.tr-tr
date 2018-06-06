@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7f38bbf0655099e3c90f3893c34be39ef4b28
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4a571b0eee0a0cdd4b6e232dc13bd8e8923da805
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750187"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Aşırı çekirdek CPU süresi işleme
 |||  
@@ -34,8 +35,8 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Sebep  
  Çekirdek modunda yürütüldü oranı CPU süresi, kullanıcı modunda harcanan süreyi aştı. Yeniden profil oluşturma ve yüksek çekirdek modu yürütme sürelerinin nedenini belirlemek için sistem çağrıları (syscalls) sayısı örnekleme göz önünde bulundurun.  
   
-## <a name="rule-description"></a>Kural Tanımı  
+## <a name="rule-description"></a>Kural açıklaması  
  Çekirdek modu yürütme uygulama harcanan süre görece yüksek oranını daha fazla araştırma isteyebilirsiniz. Bir kullanıcı modu uygulaması için iş parçacığı veya işlem eşitleme temelleri bekleyin ya da sistem çağrıları yapmak için g/ç işlemleri gerçekleştirmek için çekirdek moduna geçiş yapar. Uygulama yapar ve sistem çağrıları örnek çağrı yığınları toplamak için bu seçeneği seçtiğinizde, bunlar için sorumlu olan işlevler temel sistem çağrıları türlerini araştırabilirsiniz.  
   
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Profili yeniden çalıştırın ve sistem çağrıları dayalı örnekleri toplamak için seçeneğini belirleyin, uygulamanızın yapar sistem çağrıları türlerini araştırmak için. Bkz: [nasıl yapılır: örnekleme olayları seçin](../profiling/how-to-choose-sampling-events.md) daha fazla bilgi için IDE içinde profil oluşturma araçları çalıştırıyorsanız. Komut satırından profil oluşturma araçları çalıştırıyorsanız, bkz: **örnekleme aralığı seçenekleri** bölümünü [VSPerfCmd](../profiling/vsperfcmd.md) konuda profil oluşturma araçları komut satırı araçları başvurusu.
+## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl  
+ Profili yeniden çalıştırın ve sistem çağrıları dayalı örnekleri toplamak için seçeneğini belirleyin, uygulamanızın yapar sistem çağrıları türlerini araştırmak için. Bkz: [nasıl yapılır: örnekleme olayları seçin](../profiling/how-to-choose-sampling-events.md) daha fazla bilgi için IDE içinde profil oluşturma araçları çalıştırıyorsanız. Komut satırından profil oluşturma araçları çalıştırıyorsanız, bkz: **örnek aralık seçenekleri** bölümünü [VSPerfCmd](../profiling/vsperfcmd.md) profil oluşturma araçları komut satırı araçları başvurusu makalesinde.

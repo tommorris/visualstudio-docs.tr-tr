@@ -1,5 +1,5 @@
 ---
-title: Yönetilmeyen API Başvurusu (Visual Studio'da Office Geliştirme) | Microsoft Docs
+title: Yönetilmeyen API Başvurusu (Visual Studio'da Office Geliştirme)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e06ec998dc4b9c23b38526563ce8b501866769b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97388073d63b25bb17a7f49f4e2c5fb96bf2f572
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767903"
 ---
-# <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Yönetilmeyen API Başvuru (Visual Studio'da Office Geliştirme)
+# <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Yönetilmeyen API Başvurusu (Visual Studio'da Office Geliştirme)
   2007 Microsoft Office sistemi ile başlayarak, Office uygulamalarını kullanmaktadır [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md) arabirimi ile birlikte sağlanan bir VSTO Eklenti Yükleyicisi bileşeni çağırmak için [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Bu bileşen, yönetilen VSTO eklentileri yük yardımcı olmak için kullanılır. Bu arabirim uygulayarak kendi VSTO Eklenti Yükleyicisi bileşeni oluşturabilirsiniz.  
   
 > [!NOTE]  
 >  Office deneyimi boyunca genişletmek çözümleri geliştirirken ilgileniyor [birden çok platform](https://dev.office.com/add-in-availability)? Yeni [Office eklentileri modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). VSTO eklentilerini ve çözümlerle karşılaştırıldığında küçük bir yer Office eklentileri sahip ve teknoloji, HTML5, JavaScript, CSS3 ve XML gibi programlama neredeyse her web kullanarak oluşturabilirsiniz.  
   
-## <a name="in-this-section"></a>Bu Bölümde  
- [IManagedAddin Arabirimi](../vsto/imanagedaddin-interface.md)  
+## <a name="in-this-section"></a>Bu bölümde  
+ [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md)  
  Yükleme ve kaldırma için uygulayabileceğiniz bir COM arabirimi VSTO Eklentileri Office uygulamalarında yönetilen.  
   
   

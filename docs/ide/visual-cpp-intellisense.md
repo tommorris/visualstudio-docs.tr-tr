@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748091"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -35,29 +36,29 @@ Bir anahtar sözcük, türü, işlev, değişken adı veya derleyicisi tanır ba
 
 Simgeler ve anlamlarını listesi için bkz: [sınıf görünümü ve Nesne Tarayıcısı simgeleri](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C&#43; &#43; tam sözcüğü penceresi](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C&#43; &#43; tam sözcüğü penceresi](../ide/media/vs2015_cpp_complete_word.png)
 
 Üye listesi çağrılan ilk kez geçerli bağlam için erişilebilir üyeleri yalnızca gösterir. Basarsanız **Ctrl**+**J** bundan sonra erişilebilirlik bağımsız olarak tüm üyeleri gösterir. Üçüncü bir kez çağırma durumunda bile daha geniş bir program öğeleri listesi gösterilir. Üye listesinde kapatabilirsiniz **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++** > **genel**  >  **Otomatik listesi üyeleri**.
 
-![Visual C&#43; &#43; üye listesi](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C&#43; &#43; üye listesi](../ide/media/vs2015_cpp_list_members.png)
 
 ### <a name="parameter-help"></a>Parametre Yardım
 
 Bir sınıf şablonu değişken bildirimi bir işlev çağrısı veya açılı ayraç açılan parantez yazdığınızda, düzenleyici küçük bir pencere işlevi veya oluşturucusu her yüklemesini parametre türleri ile gösterir. "Geçerli" parametre&mdash;imleç konumu temel&mdash;kalın değil. Parametre bilgileri kapatabilirsiniz **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++** > **genel**  >  **Parametre bilgilerini**.
 
-![Visual C&#43; &#43; parametresi Yardım](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Visual C&#43; &#43; parametresi Yardım](../ide/media/vs_2015_cpp_param_help.png)
 
 ### <a name="quick-info"></a>Hızlı Bilgi
 
 Fare imlecini bir değişken geldiğinizde türü bilgilerini gösteren satır içi ve türünün tanımlandığı üstbilgi küçük bir pencere görüntülenir. İşlev imzası görmek için işlev çağrısı gelin. Hızlı bilgisini kapatabilirsiniz **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++** > **Gelişmiş**  >  **Otomatik hızlı bilgi**.
 
-![Visual C&#43; &#43; Quıckınfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C&#43; &#43; Quıckınfo](../ide/media/vs2015_cpp_quickinfo.png)
 
 ### <a name="error-squiggles"></a>Hata dalgalı çizgiler
 
 Bir program öğesi (değişkeni, anahtar sözcüğü, kuşak, tür adı ve benzeri) altında dalgalı çizgiler dikkatinizi bir hata veya olası hata kodu çağırın. Hala uygulama yazmak ihtiyacınız olduğunu anımsatmak için bir iletme bildirimi yazdığınızda yeşil dalgalı görüntülenir. Olduğunda mor dalgalı paylaşılan bir proje Android bağlamında bir hata olacaktır Windows bağlamında çalışan, ancak bir şey girin, örneğin şu anda etkin değil, kodda bir hata görüntülenir. Derleyici hatası veya uyarısı uğraşmanız gereken active kodda kırmızı dalgalı gösterir.
 
-![Visual C&#43; &#43; hata dalgalı çizgiler](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C&#43; &#43; hata dalgalı çizgiler](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>Kod renklendirme ve yazı tipleri
 
@@ -69,7 +70,7 @@ Paylaşılan kod projesinde bile bir Android bağlamında çalışırken dalgal�
 
 Burada, Android ve iOS için oluşturmak için yapılandırılmış bir OpenGLES uygulama verilmiştir. Çizimde düzenlenmekte olan paylaşılan kod gösterir. İlk görüntüde etkin projeyi Android şöyledir:
 
-![Etkin projeyi Android projesidir. ] (../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+![Etkin projeyi Android projesidir.](../ide/media/intellisensecppcrossplatform.png)
 
 Aşağıdakilere dikkat edin:
 
@@ -81,7 +82,7 @@ Aşağıdakilere dikkat edin:
 
 Şimdi, etkin projeye değiştirmek **iOS.StaticLibrary** ve dalgalı çizgiler nasıl değiştiğini dikkat edin.
 
-![iOS etkin projesi olarak seçilir. ] (../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
+![iOS etkin projesi olarak seçilir.](../ide/media/intellisensecppcrossplatform2.png)
 
 Aşağıdakilere dikkat edin:
 
@@ -95,11 +96,11 @@ Aşağıdakilere dikkat edin:
 
 Herhangi bir projenin dışında tek bir dosyayı açtığınızda, IntelliSense hala alın. Etkinleştirmek veya belirli IntelliSense özelliklerini devre dışı **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C/C++**  >  **Gelişmiş**. IntelliSense, projesinin bir parçası olmayan tek dosyaları için yapılandırmak için Ara **IntelliSense ve proje olmayan dosyaları için gözatma** bölümü.
 
-![Visual C&#43; &#43; tek dosya IntelliSense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C&#43; &#43; tek dosya IntelliSense](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
 Varsayılan olarak, tek dosyalı IntelliSense yalnızca kullanan standart üstbilgi dosyaları bulmak için içeren dizinler. Ek dizinler eklemek için kısayol menüsünü açmak **çözüm** düğümünü ve dizininize eklemek **hata ayıklama kaynak kodu** listesinde, aşağıdaki çizimde gösterildiği gibi:
 
-![Bir yol için bir üstbilgi dosyası ekleme. ] (../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+![Bir yol için bir üstbilgi dosyası ekleme.](../ide/media/intellisensedebugyourcode.jpg)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

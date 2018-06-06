@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751825"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Nasıl yapılır: Dağıtılmış Yük Testi için Test Ayarı Oluşturma
 
@@ -74,7 +75,7 @@ Oluşturma ve çözümünüzdeki Visual Studio'dan çalıştırmayı planladığ
 
      **Rolleri** sayfası görüntülenir.
 
-     ![Test ayarı rol](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![Test ayarı rolü](../test/media/load_testtestrole.png)
 
 10. Testlerinizi uzaktan çalıştırmak veya testlerinizi uzaktan çalıştırmak ve uzaktan veri toplamak için kullanın **Test yürütme yöntemi** açılır ve select **uzaktan yürütme**.
 
@@ -108,7 +109,7 @@ Oluşturma ve çözümünüzdeki Visual Studio'dan çalıştırmayı planladığ
 
      **Veri ve tanılama** sayfası görüntülenir.
 
-     ![Test ayarı veri ve tanılama](../test/media/load_testtest.png "Load_TestTest")
+     ![Test ayarı veri ve tanılama](../test/media/load_testtest.png)
 
 18. İçinde **veri ve tanılama** sayfasında, ne rolü seçerek tanımlarsınız *tanılama veri bağdaştırıcıları* rolü verileri toplamak için kullanır. Bu nedenle, bir veya daha fazla veri ve tanılama bağdaştırıcılarını rol için etkinleştirilirse, test denetleyicisi belirtilen veri ve tanılama bağdaştırıcıları rolü için tanımlı özniteliklerini temel alarak verileri toplamak için uygun bir test aracısı makine seçin. Veri ve her rol için toplamak istediğiniz tanılama veri bağdaştırıcıları seçmek için rolü seçin. Her rol için tanılama veri bağdaştırıcıları testlerin ihtiyaçlarına göre seçin. Her rol için seçtiğiniz her tanılama veri bağdaştırıcısı yapılandırmak için tercih **yapılandırma**.
 

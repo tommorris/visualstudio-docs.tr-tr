@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a56c8bd9ac0c3745e8096dc12fbfee730ba9558a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef0b06be65322dc6a15f92b1d808d585960f0331
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746072"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ çekirdek yönergeleri denetleyicileri kullanma
 C++ çekirdek yönergeleri taşınabilir yönergeleri, kuralları ve C++ uzmanlar ve tasarımcıları tarafından oluşturulan c++ kodlama hakkında en iyi uygulamalar kümesidir. Visual Studio şu anda C++ için kendi kod Çözümleme Araçları'nın bir parçası olarak bu kurallar kümesini destekler. Çekirdek kılavuz denetleyicileri Visual Studio 2017 varsayılan olarak yüklenir ve olan [Visual Studio 2015 için NuGet paketi olarak kullanılabilir](#vs2015_corecheck).
@@ -25,11 +26,11 @@ C++ çekirdek yönergeleri taşınabilir yönergeleri, kuralları ve C++ uzmanla
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Kod çözümleme C++ çekirdek denetleme yönergeleri etkinleştir
  Seçerek projenizde kod analizi etkinleştirebilirsiniz **etkinleştirmek Kod Analizi derlemede** onay kutusu **Kod Analizi** bölümünü **özellik sayfaları** iletişim kutusu için projenizi.
 
- ![Kod çözümleme genel ayarları için özellik sayfası](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![Kod çözümleme genel ayarları için özellik sayfası](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  C++ çekirdek denetleme kod çözümlemesi etkinleştirildiğinde çalıştırılan varsayılan kural kümeleri için Uzantılar kurallardır. C++ çekirdek denetleme kurallar geliştirilmekte olduğundan, bazı kurallar iyi kurulan ve bazıları tüm kodu kullanılmaya hazır olmayabilir ancak yine de bilgilendirici olabilir. Kuralları iki gruba ayrılır: yayımlanmış ve Deneysel. Projeniz için özellikleri yayınlanan veya Deneysel kuralları çalıştırılıp çalıştırılmayacağını seçebilirsiniz.
 
- ![Kod çözümleme uzantıları ayarları için özellik sayfası](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![Kod çözümleme uzantıları ayarları için özellik sayfası](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  Etkinleştirmek veya devre dışı C++ çekirdek denetleme kural kümeleri için açın **özellik sayfaları** projeniz için iletişim kutusu. Altında **yapılandırma özellikleri**, genişletin **Kod Analizi**, **uzantıları**. Açılır listede kontrol yanına **C++ çekirdek etkinleştir (Serbest)** veya **C++ çekirdek etkinleştir (Experimental)**, seçin **Evet** veya **Hayır**. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydetmek için.
 
@@ -228,7 +229,7 @@ Birkaç ortam değişkenlerini ayarlama ve derleyici için uygun komut satırı 
 
 2.  İçinde **NuGet Paket Yöneticisi** penceresinde, Microsoft.CppCoreCheck arayın.
 
-     ![Nuget Paket Yöneticisi penceresi gösterir CppCoreCheck paket](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Nuget Paket Yöneticisi penceresi CppCoreCheck paket gösterir](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  Microsoft.CppCoreCheck paketi seçin ve ardından **yükleme** düğmesi kuralları projenize ekleyin.
 

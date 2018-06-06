@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63d3153bfcc38b28ace3db5ad976a2c2a6a650fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f0d7962446d5cf21822a101354284c63a7df98c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749934"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 Bir etki alanına özgü dil (DSL) yazar olarak, kullanıcı tarafından oluşturulan model anlamlı olduğunu doğrulamak için doğrulama kısıtlamaları tanımlayabilirsiniz. Örneğin, kişiler ve kendi üst öğelerinden ailesi ağacının çizmek kullanıcılar, DSL izin veriyorsa, alt öğe üst sonraki Doğum tarihleri sahip olmasını sağlar bir kısıtlama yazabilirsiniz.
@@ -140,7 +141,7 @@ public partial class ParentsHaveChildren
 
  Örneğin, aşağıdaki etki alanı modeli için geçerlidir. ParentsHaveChildren ilişki alt ve üst adlı rol yok.
 
- ![DSL tanımı diyagramı &#45; Aile Ağacı Modeli](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![DSL tanımı diyagramı &#45; Aile Ağacı Modeli](../modeling/media/familyt_person.png)
 
 ## <a name="validation-categories"></a>Doğrulama kategorileri
  İçinde <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> özniteliği, belirttiğiniz doğrulama yöntemini yeniden çalıştırıldığında.

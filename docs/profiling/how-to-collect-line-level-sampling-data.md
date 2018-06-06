@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765706"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Nasıl yapılır: Satır Düzeyi Örnekleme Verileri Toplama
+# <a name="how-to-collect-line-level-sampling-data"></a>Nasıl yapılır: satır düzeyi örnekleme verileri toplama
 Satır düzeyi örnekleme yüksek özel örnekleri olan bir işlev gibi bir işlemci yoğunluğu işlevinin kodda işlemci, süreyi en çok harcama sahip olduğu belirlemek için profil oluşturucu özelliğidir.  
   
 ## <a name="overview"></a>Genel Bakış  
@@ -35,11 +36,11 @@ Satır düzeyi örnekleme yüksek özel örnekleri olan bir işlev gibi bir işl
   
 -   İşlev adresi.  
   
--   Satırın başında - örneklenen kodu satır sayısı.  
+-   Satırları başlayın - örneklenen kodu satır sayısı.  
   
 -   Satır sonu - kaynak satır numarasını bitiş. Bu genellikle tek bir program deyimde birden çok kaynak kodu satır yayıldığında dışında "Satırın başında" veri aynıdır.  
   
--   Karakter başlamalı - birleşik örnek başlangıç sütunu. Bu genellikle tek bir satıra birden fazla program deyimleri içerdiğinde dışında 0'dır.  
+-   Karakter başlayın - birleşik örnek başlangıç sütunu. Bu genellikle tek bir satıra birden fazla program deyimleri içerdiğinde dışında 0'dır.  
   
 -   Karakter son - birleşik örnek sütununun bitiş.  
   
@@ -48,7 +49,7 @@ Satır düzeyi örnekleme yüksek özel örnekleri olan bir işlev gibi bir işl
  İçinde **modülleri** görüntülemek için bir işlev satır düzeyi istatistikleri varsa, altında her işlevi istatistikleri yerleştirilir. Ayrıca, her satırın altında iç içe geçmiş IP düzeyi istatistikleri sunulur.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Yönetilen kod için satır düzeyi örnekleme devre dışı bırakma  
- Varsayılan olarak, satır düzeyi örnekleme açıktır. Aşağıdakilerden birini yaparak yönetilen kod için satır düzeyi verilerin toplanmasını kapatabilirsiniz:  
+ Varsayılan olarak, satır düzeyi örnekleme açıktır. Yönetilen kod için satır düzeyi veri koleksiyonu aşağıdaki komutlardan birini kullanarak devre dışı bırakabilirsiniz:  
   
 -   Profil oluşturma önce yazın **VSPerfCLREnv /samplelineoff**. Bu uygulamalar ve hizmetler etkiler.  
   
@@ -56,6 +57,6 @@ Satır düzeyi örnekleme yüksek özel örnekleri olan bir işlev gibi bir işl
   
 -   Bir uygulama başlatılırken yazın **VSPerfCmd /lineoff \<başka bir bağımsız değişken >**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
- [Araçları verilerini performansını analiz etme](../profiling/analyzing-performance-tools-data.md)
+ [Performans araçları verilerini analiz etme](../profiling/analyzing-performance-tools-data.md)

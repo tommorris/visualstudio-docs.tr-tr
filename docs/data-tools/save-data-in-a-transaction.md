@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir işlemde veri kaydetme'
+title: 'İzlenecek yol: Bir işlemde veri kaydetme'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745535"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>İzlenecek yol: bir işlemde veri kaydetme
+# <a name="walkthrough-save-data-in-a-transaction"></a>İzlenecek yol: Bir işlemde veri kaydetme
 Bu kılavuzu kullanarak bir işlemde veri kaydetme gösterilmiştir <xref:System.Transactions> ad alanı. Bu kılavuzda bir Windows Forms uygulaması oluşturacaksınız. Northwind örnek veritabanında iki tablo için bir veri kümesi oluşturmak için veri kaynağı Yapılandırma Sihirbazı'nı kullanacaksınız. Veri bağlama denetimleri için Windows formu ve bir TransactionScope içinde veritabanını güncelleştirmek BindingNavigator'ın Kaydet düğmesi için kod değiştireceksiniz ekleyeceksiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
@@ -52,7 +53,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
 
-2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Klasik Masaüstü**.
+2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 
@@ -75,7 +76,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-         -veya-
+         veya
 
     -   Seçin **yeni bağlantı** başlatmak için **Ekle/Değiştir bağlantı** iletişim kutusuna ve Northwind veritabanına bağlantı oluşturun.
 

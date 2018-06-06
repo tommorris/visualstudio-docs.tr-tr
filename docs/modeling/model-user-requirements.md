@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749063"
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 
@@ -63,7 +64,7 @@ Bir iş kuralı belirli kullanım örneği ile ilişkili değil ve sistem geneli
 
  Birçok iş kavramsal sınıflar arasındaki ilişkileri kısıtlamalar kurallardır. Bu yazma *statik ** iş kuralları* kavramsal sınıf diyagramında ilgili sınıflarla ilişkilendirilmiş açıklamalar olarak. Örneğin:
 
- ![Düzen sınıfına eklenmiş AÇIKLAMADAKİ kural. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")
+ ![Düzen sınıfına eklenmiş AÇIKLAMADAKİ kural.](../modeling/media/uml_reqmcd2.png)
 
  *Dinamik iş kurallarını* izin verilen olaylar dizisi sınırlayın. Örneğin, bir kullanıcı, sisteminizdeki diğer işlemleri gerçekleştirmeden önce oturum açması gerektiğini göstermek için bir dizi veya etkinlik diyagramını kullanın.
 

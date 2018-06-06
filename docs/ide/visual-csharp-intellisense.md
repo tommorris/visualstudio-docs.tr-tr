@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748237"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -93,7 +94,7 @@ Yazdığınızda [geçersiz kılma](/dotnet/csharp/language-reference/keywords/o
 
 Başlatmak için **kullanarak ekleyin** işlemi, bir tür imleç başvuru konumu çözümlenemiyor. Örneğin, ne zaman, bir konsol uygulaması oluşturun ve ardından ekleyin `XmlTextReader` gövdesi için `Main` yöntemi, kırmızı dalgalı görünür kod söz konusu satıra tür başvurusu çözümlenemiyor. Ardından çağırabileceği **kullanarak ekleyin** aracılığıyla **hızlı Eylemler**. **Hızlı Eylemler** imleç ilişkisiz türünde konumlandırıldığında görülebilir.
 
-![Kullanarak, hızlı eylem genişletilmiş görüntüsü eklemek](../ide/media/addusing-quickaction.png "AddUsing QuickAction")
+![Kullanarak, hızlı eylem genişletilmiş görüntüsü ekleme](../ide/media/addusing-quickaction.png)
 
 Ampul simgesine tıklayın ve ardından **System.Xml; kullanarak** kullanarak otomatik olarak eklenecek yönergesi.
 
@@ -101,7 +102,7 @@ Ampul simgesine tıklayın ve ardından **System.Xml; kullanarak** kullanarak ot
 
 **Kaldır ve kullanımları sıralama** seçeneği sıralar ve kaldırır `using` ve `extern` kaynak kodunu davranışını değiştirmeden bildirimleri. Zaman içinde kaynak dosyaları bloated ve gereksiz ve düzensiz nedeniyle okunması zor hale gelebilir `using` yönergeleri. **Kaldır ve kullanımları sıralama** seçeneği sıkıştırır kaynak kodu kullanılmayan kaldırarak `using` yönergeleri ve sıralayarak okunabilirliğini artırır. Üzerinde **Düzenle** menüsünde seçin **IntelliSense**ve ardından **düzenlemek kullanımları**.
 
-### <a name="implement-interface"></a>Arabirimi uygulama
+### <a name="implement-interface"></a>Arabirim uygulama
 
 IntelliSense uygulamanıza yardımcı olmak için bir seçenek sunar bir [arabirimi](/dotnet/csharp/language-reference/keywords/interface) Kod düzenleyicisinde çalışırken. Normalde, bir arabirim düzgün bir şekilde uygulamak için bir yöntem bildirimi arabirimi her üyesi için sınıfınızda oluşturmanız gerekir. Bir sınıf bildiriminde bir arabirim adını yazdıktan sonra IntelliSense, kullanarak bir **hızlı Eylemler** ampul görüntülenir. Ampul açık veya örtülü adlandırma kullanarak arabirimi otomatik olarak uygulamak için seçeneği sunar. Açık adlandırma altında yöntem bildirimleri arabirimin adını taşıyan; örtük adlandırma altında yöntem bildirimleri ait oldukları arabirimi göstermiyor. Açık olarak adlandırılmış arabirim yöntemi yalnızca bir sınıf örneği üzerinden değil ve bir arabirim örneğinin aracılığıyla erişilebilir. Daha fazla bilgi için bkz: [açık arabirim uygulaması](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
@@ -143,11 +144,11 @@ Kod Düzenleyicisi'nde IntelliSense olay alanlarına yöntemlerini (olay işleyi
 
 Yazdığınızda `+=` işleci bir olay alanında sonra bir *.cs* dosya, IntelliSense sizden basın seçeneğine **sekmesini** anahtarı. Olay işleme yöntemi işaret eden temsilci yeni bir örneğini ekler.
 
-![Düğme otomatik kanca yukarı](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Düğme otomatik kanca ayarlama](../ide/media/vxautohookup.gif)
 
 Basarsanız **sekmesini**, IntelliSense otomatik olarak sizin için deyim tamamlandıktan ve olay işleyici başvurusu Kod düzenleyicisinde seçili metin olarak görüntüler. Otomatik olay bağlantı tamamlamak için IntelliSense basın ister **sekmesini** olay işleyicisi için boş bir saplama yeniden oluşturmak için anahtar.
 
-![Olay işleyicisi oluşturmak](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Olay işleyicisi oluşturun](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > IntelliSense tarafından oluşturulan yeni bir temsilci varolan bir olay işleyicisinin başvuruyorsa, bu bilgileri ipucunda IntelliSense ile iletişim kurar. Bu başvuru daha sonra değiştirebilirsiniz; metin Kod düzenleyicisinde zaten seçilir. Aksi takdirde otomatik olay bağlantı bu noktada tamamlanır.

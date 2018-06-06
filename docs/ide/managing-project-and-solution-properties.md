@@ -9,21 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746318"
 ---
 # <a name="manage-project-and-solution-properties"></a>Proje ve çözüm özelliklerini yönetme
 
 Projeleri hata ayıklama, test etme ve dağıtma derleme pek çok görünüşünün yöneten özelliklere sahiptir. Bazı özellikler tüm proje türleri arasında ortak olan ve bazı belirli diller veya platformlar için benzersizdir. Proje Özellikleri'nde proje düğümüne sağ tıklayarak erişim **Çözüm Gezgini** ve seçme **özellikleri**, veya "Özellikler" içine yazarak **hızlı başlatma** Menü çubuğunda arama kutusu.
 
-![Proje bağlam menüsü](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
+![Proje bağlam menüsü](../ide/media/vs2015_proj_prop_menu.gif)
 
 .NET projeleri proje ağacı kendisini özellikleri düğümünü sahip olabilir.
 
-![Çözüm Gezgini ağacının özellikleri düğümünde](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
+![Çözüm Gezgini ağacındaki özellikler düğümü](../ide/media/vs2015_props_se.png)
 
 ## <a name="project-properties"></a>Proje Özellikleri
 
@@ -33,7 +34,7 @@ Proje Özellikleri gruplar halinde düzenlenir ve her grup kendi özellik sayfas
 
 C#, Visual Basic ve F # projelerinde özellikler de sağlanmaktadır **Proje Tasarımcısı**. Aşağıdaki çizimde gösterildiği **yapı** C# bir WPF projesi için özellik sayfası:
 
-![Visual Studio Proje Tasarımcısı](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
+![Visual Studio Proje Tasarımcısı](../ide/media/vs2015_proppage_build.png)
 
 Her bir özellik sayfaları hakkında bilgi için **Proje Tasarımcısı**, bkz: [proje özellikleri başvurusu](../ide/reference/project-properties-reference.md).
 
@@ -44,7 +45,7 @@ Her bir özellik sayfaları hakkında bilgi için **Proje Tasarımcısı**, bkz:
 
 C++ ve JavaScript projeleri proje özelliklerini yönetmek için farklı kullanıcı arabirimi sahiptir. Bu çizimde C++ projesi özellik sayfası gösterilir (JavaScript sayfaları benzer):
 
-![Visual C&#43; &#43; proje özellikleri](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Visual C&#43; &#43; proje özellikleri](../ide/media/vs2015_projprops_cpp.png)
 
 C++ proje özellikleri hakkında daha fazla bilgi için bkz: [(C++) proje özellikleriyle çalışma](/cpp/ide/working-with-project-properties). JavaScript özellikleri hakkında daha fazla bilgi için bkz: [özellik sayfaları, JavaScript](../ide/reference/property-pages-javascript.md).
 

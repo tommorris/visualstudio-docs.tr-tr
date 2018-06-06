@@ -1,5 +1,5 @@
 ---
-title: VBA ve karşılaştırıldığında Visual Studio'da Office çözümleri | Microsoft Docs
+title: Visual Studio'da karşılaştırılan VBA ve Office çözümleri
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5a92727f08729fc7f8a871d0528c9e652d92f8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e55c2861da33d656ad9a5584e6ff5916afb232
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768059"
 ---
-# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Visual Studio'da VBA ve Office Çözümleri Karşılaştırması
+# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Visual Studio'da karşılaştırılan VBA ve Office çözümleri
   Microsoft Visual Basic for Applications (VBA) Office uygulamaları ile tümleşiktir, yönetilmeyen kod kullanır. Visual Studio kullanılarak oluşturulan Microsoft Office projeleri .NET Framework ve Visual Studio Tasarım araçları yararlanmak etkinleştirin.  
   
  Visual Studio kullanarak oluşturabileceğiniz Office çözümlerinin türleri hakkında bilgi için bkz [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -44,16 +45,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Makro kaydetme.  
   
-## <a name="combining-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>VBA çözümleri ve Visual Studio kullanarak oluşturulan Office çözümlerini birleştirme  
- Visual Studio kullanılarak oluşturulan Office Çözümlerinden gelen VBA kodu çağırabilir ve VBA'dan Visual Studio kullanılarak oluşturulan Office çözümlerinde kod çağırabilir. Belirli teknik Office çözümünüzü VSTO eklenti veya belge düzeyi özelleştirme olmasına bağlı olarak farklılık gösterir. Daha fazla bilgi için bkz: [VSTO eklentileri diğer Office Çözümlerinden gelen çağırma kodda](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) ve [birleştirme VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).  
+## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>VBA çözümlerini ve Office çözümlerini Visual Studio kullanılarak oluşturulan birleştirin  
+ Visual Studio kullanılarak oluşturulan Office Çözümlerinden gelen VBA kodu çağırabilir ve VBA'dan Visual Studio kullanılarak oluşturulan Office çözümlerinde kod çağırabilir. Belirli teknik Office çözümünüzü VSTO eklenti veya belge düzeyi özelleştirme olmasına bağlı olarak farklılık gösterir. Daha fazla bilgi için bkz: [çağrısı kod VSTO eklentileri diğer Office Çözümlerinden](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) ve [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [VSTO eklentilerinde diğer Office Çözümlerinden kod çağırma](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
+ [VSTO eklentileri diğer Office Çözümlerinden kodu çağırma](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [Belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)   
- [Başlarken &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Office çözümleri güvenli](../vsto/securing-office-solutions.md)   
+ [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   
   

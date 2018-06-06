@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d56b90e9a3badfe2c49b10793a25fc552bbdd774
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0743fa0dd1f8b876c4396d4e52d9c8636c504d67
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749151"
 ---
 # <a name="about-domain-specific-languages"></a>Etki Alanına Özgü Diller Hakkında
 
@@ -39,7 +40,7 @@ Kullanıcılarınızın bir model diyagramı veya bir Windows formu olarak gör�
 
 Aşağıdaki şekilde grafiksel bir DSL küçük bir modeli gösterilmektedir:
 
-![Tudor Aile Ağacı Modeli](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+![Tudor Aile Ağacı Modeli](../modeling/media/tudor_familytreemodel.png)
 
 ## <a name="what-you-can-do-with-dsls"></a>DSL'ler ile yapabilecekleriniz
 

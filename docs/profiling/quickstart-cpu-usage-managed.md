@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c55c4bde3a1cc5cc6a6f150f9e73b4d56f510be5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34477229"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750291"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Hızlı Başlangıç: Visual Studio (yönetilen kod) CPU kullanım verilerini çözümleme
 
@@ -33,7 +33,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
 1. Visual Studio'da, **Dosya > Yeni proje**.
 
-2. Altında **Visual C#** veya **Visual Basic**, seçin **Windows Klasik Masaüstü**ve ardından Orta bölmede **konsol uygulaması (.NET Framework)**.
+2. Altında **Visual C#** veya **Visual Basic**, seçin **Windows Masaüstü**ve ardından Orta bölmede **konsol uygulaması (.NET Framework)**.
 
 3. Gibi bir ad yazın **MyProfilerApp** tıklatıp **Tamam**.
 
@@ -48,7 +48,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
         const int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
         long m_totalIterations = 0;
         readonly object m_totalItersLock = new object();
         // The method that will be called when the thread is started.
@@ -56,10 +56,10 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
         {
             Console.WriteLine(
                 "ServerClass.InstanceMethod is running on another thread.");
-    
+
             var x = GetNumber();
         }
-    
+
         private int GetNumber()
         {
             var rand = new Random();
@@ -69,8 +69,8 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -78,7 +78,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
             return result;
         }
     }
-    
+
     public class Simple
     {
         public static void Main()
@@ -91,14 +91,14 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
         public static void CreateThreads()
         {
             ServerClass serverObject = new ServerClass();
-    
+
             Thread InstanceCaller = new Thread(new ThreadStart(serverObject.DoWork));
             // Start the thread.
             InstanceCaller.Start();
-    
+
             Console.WriteLine("The Main() thread calls this after "
                 + "starting the new InstanceCaller thread.");
-    
+
         }
     }
     ```
@@ -106,21 +106,21 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     ```vb
     Imports System
     Imports System.Threading
-    
+
     Namespace MyProfilerApp
         Public Class ServerClass
             Const MIN_ITERATIONS As Integer = Integer.MaxValue / 1000
             Const MAX_ITERATIONS As Integer = MIN_ITERATIONS + 10000
-    
+
             Private m_totalIterations As Long = 0
             ReadOnly m_totalItersLock As New Object()
             ' The method that will be called when the thread is started.
             Public Sub DoWork()
                 Console.WriteLine("ServerClass.InstanceMethod is running on another thread.")
-    
+
                 Dim x = GetNumber()
             End Sub
-    
+
             Private Function GetNumber() As Integer
                 Dim rand = New Random()
                 Dim iters = rand.[Next](MIN_ITERATIONS, MAX_ITERATIONS)
@@ -128,15 +128,15 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
                 SyncLock m_totalItersLock
                     m_totalIterations += iters
                 End SyncLock
-                ' we're just spinning here  
-                ' and using Random to frustrate compiler optimizations  
+                ' we're just spinning here
+                ' and using Random to frustrate compiler optimizations
                 For i As Integer = 0 To iters - 1
                     result = rand.[Next]()
                 Next
                 Return result
             End Function
         End Class
-    
+
         Public Class Simple
             Public Shared Sub Main()
                 For i As Integer = 0 To 199
@@ -145,13 +145,13 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
             End Sub
             Public Shared Sub CreateThreads()
                 Dim serverObject As New ServerClass()
-    
+
                 Dim InstanceCaller As New Thread(New ThreadStart(AddressOf serverObject.DoWork))
                 ' Start the thread.
                 InstanceCaller.Start()
-    
+
                 Console.WriteLine("The Main() thread calls this after " + "starting the new InstanceCaller thread.")
-    
+
             End Sub
         End Class
     End Namespace
@@ -160,8 +160,8 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     > [!NOTE]
     > Visual Basic'te Başlangıç nesnesi ayarlandığından emin olun `Sub Main` (**Özellikler > Uygulama > Başlangıç nesnesi**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla 
-  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla
+
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası belirleyerek `Main` işlevi:
 
     `for (int i = 0; i < 200; i++)`
@@ -178,7 +178,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
     > [!TIP]
     > İki kesme noktası belirleyerek, çözümlemek istediğiniz kod parçalarını veri toplama sınırlayabilirsiniz.
-  
+
 3.  **Tanılama araçları** penceredir zaten görünür, onu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama / Windows / Tanılama Araçları Göster**.
 
 4.  Tıklatın **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
@@ -198,7 +198,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
      Şimdi, artık performans verilerini bölge için özellikle uygulamanıza iki kesme noktaları arasında çalışan kod sahipsiniz.
 
      Profil Oluşturucu iş parçacığı verileri hazırlama başlar. Bitmesini bekleyin.
-  
+
      Raporda CPU kullanımı araç görüntüler **CPU kullanımı** sekmesi.
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
@@ -216,7 +216,7 @@ CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı
 
 2. İşlev listesinde çift `ServerClass::GetNumber` işlevi.
 
-    İşlev çift tıkladığınızda **arayan/Aranan** sol bölmede görünümünü açar. 
+    İşlev çift tıkladığınızda **arayan/Aranan** sol bölmede görünümünü açar.
 
     ![Tanılama araçları çağıran Aranan görünümü](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
@@ -235,7 +235,7 @@ CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı
 - [CPU kullanımı analiz](../profiling/cpu-usage.md) CPU kullanımı aracı hakkında daha ayrıntılı bilgi için.
 - -Daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya bir hata ayıklayıcısı ekli olmadan CPU kullanımı analiz [hata ayıklama olmadan profil oluşturma verilerini toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırmak](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca Bkz.
 
- [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)
+- [Visual Studio'da profil oluşturma](../profiling/index.md)
+- [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)

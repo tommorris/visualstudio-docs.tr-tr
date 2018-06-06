@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6245647ca0af639bdd960e43f2c1adeed3982562
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750831"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web performans testine veri kaynağı ekleme
 
@@ -143,11 +144,11 @@ ms.lasthandoff: 04/26/2018
 
 1. Projeleri veritabanı yapıtları düzenlemek ve bir öğe eklemek için bir klasör oluşturun.
 
-     ![Yeni veri klasöre öğe ekleme](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Veri klasörüne yeni öğe Ekle](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Bir metin dosyası oluşturun.
 
-     ![Yeni metin dosyası ColorData.csv ad](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![Yeni metin dosyası ColorData.csv adı](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. Metin dosyasını düzenleyin ve aşağıdakileri ekleyin:
 
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/26/2018
 
 4. İçindeki adımları kullanın [SQL veri bağlama](#AddingDataBindingWebTest_BindSQLData), ancak veri kaynağınız CSV dosyası seçin.
 
-     ![Bir ad girin ve CSV dosyası seçin](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![Bir ad girin ve CSV dosyası seçin](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>S: Peki my mevcut bir CSV dosyasını sütun üst bilgileri içermiyor?
 
@@ -167,7 +168,7 @@ ms.lasthandoff: 04/26/2018
 
 1. Schema.ini adlı yeni bir metin dosyası ekleyin.
 
-     ![Bir schema.ini dosyası ekleme](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![Bir schema.ini dosyası ekleme](../test/media/web_test_databinding_schemafile.png)
 
 2. Verilerinizin yapısını açıklayan bilgileri eklemek için schema.ini dosyasını düzenleyin. Örneğin, CSV dosyasını tanımlayan bir şema dosyası şuna benzeyebilir:
 
@@ -178,39 +179,39 @@ ms.lasthandoff: 04/26/2018
 
 3. Bir veri kaynağı test ekleyin.
 
-     ![Web performans testine veri kaynağı ekleme](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![Web performans testine veri kaynağı ekleme](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. Bir schema.ini dosyası kullanıyorsanız, veri kaynağı ve adlandırın olarak veritabanı (CSV dosyası değil) seçin.
 
-     ![Veritabanı veri kaynağı ekleme](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![Veritabanı veri kaynağı ekleme](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. Yeni bir bağlantı oluşturun.
 
-     ![Yeni bir bağlantı seçin](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![Yeni bir bağlantı seçin](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. OLE DB için .NET Framework veri sağlayıcısı seçin.
 
-     ![.NET framework OLE DB veri sağlayıcısı seçin](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![.NET framework OLE DB veri sağlayıcısı seçin](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. Gelişmiş'i seçin.
 
-     ![Gelişmiş](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     ![Gelişmiş seçin](../test/media/web_test_databinding_advanced.png)
 
 8. Sağlayıcı özelliği için Microsoft.Jet.OLEDB.4.0 seçin ve ardından genişletilmiş özellikler metne ayarlayın; HDR = HAYIR.
 
-     ![Gelişmiş Özellikler uygulamak](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![Gelişmiş Özellikler Uygula](../test/media/web_test_databinding_advancedproperties.png)
 
 9. Şema dosyasını içeren klasörün adını yazın ve bağlantınızı sınayın.
 
-     ![Veri klasörün yolunu girin](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![Veri klasörün yolunu girin](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. Kullanmak istediğiniz CSV dosyasını seçin.
 
-     ![Metin dosyasını seçin](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![Metin dosyasını seçin](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      Bitirdikten sonra CSV dosyası bir tablo görünür.
 
-     ![Veri kaynağı test etmek için eklenen](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![Test etmek için eklenen veri kaynağı](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>S: bir veri kaynağı olarak nasıl bir XML dosyası kullanıyor?
 
@@ -218,11 +219,11 @@ ms.lasthandoff: 04/26/2018
 
 1. Projeleri veritabanı yapıtları düzenlemek ve bir öğe eklemek için bir klasör oluşturun.
 
-     ![Yeni veri klasöre öğe ekleme](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Veri klasörüne yeni öğe Ekle](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Bir XML dosyası oluşturun.
 
-     ![ColorData.xml dosyası ekleme](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![ColorData.xml dosyası ekleme](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. XML dosyasını düzenleyin ve verilerinizi ekleyin:
 
@@ -242,7 +243,7 @@ ms.lasthandoff: 04/26/2018
 
 4. İçindeki adımları kullanın [SQL veri bağlama](#AddingDataBindingWebTest_BindSQLData), ancak veri kaynağınız XML dosyası seçin.
 
-     ![Bir ad girin ve XML dosyasını seçmek](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![Bir ad girin ve XML dosyası seçin](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>S: SOAP kullanan web hizmeti isteğine veri bağlama ekleyebilir miyim?
 
@@ -250,7 +251,7 @@ ms.lasthandoff: 04/26/2018
 
 1. Web hizmeti isteğine istek ağacında Özellikleri penceresinde seçip, dize gövde özelliğinde üç nokta (...) seçin.
 
-     ![Web hizmeti dize gövde Düzenle](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![Web hizmeti dize gövde Düzenle](../test/media/web_test_databinding_webservicerequest.png)
 
 2. SOAP gövdesi değerleri, aşağıdaki sözdizimini kullanarak veri bağlama değerleriyle değiştirin:
 

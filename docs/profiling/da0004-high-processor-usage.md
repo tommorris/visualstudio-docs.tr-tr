@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab522c19971e734e5a42f607d99f38f8e44930d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d5800acfded9d500c68a0e071ffa6501d6b3c77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749616"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Yüksek işlemci kullanımı
 |||  
@@ -33,10 +34,10 @@ ms.lasthandoff: 04/19/2018
  Örnekleme, .NET bellek veya kaynak çakışması yöntemlerini kullanarak profil, bu kural tetiklemek için en az 10 örnekleri toplamanız gerekir.  
   
 ## <a name="cause"></a>Sebep  
- İşlemci (CPU) kullanımı izleme metodunu kullanarak toplanan verileri profil önemli ölçüde yüksek. Örnekleme profili oluşturma yöntemi bir CPU profil bağlı uygulama zaman kullanmayı düşünün.  
+ İşlemci (CPU) kullanımı izleme metodunu kullanarak toplanan verileri profil yüksek. Örnekleme profili oluşturma yöntemi bir CPU profil bağlı uygulama zaman kullanmayı düşünün.  
   
-## <a name="rule-description"></a>Kural Tanımı  
- İşlemci (veya işlemciler) Bu profil çalışması sırasında sürekli olarak çok meşgul. CPU kullanımının yüksek CPU bağımlı uygulama belirtebilirsiniz. İzleme eklenmiş profilleri genellikle CPU kullanım senaryoları araştırmak amacıyla en etkili şekilde değildir. Profil oluşturma yönergeleri işlemci yürütme kendi süresi çoğunu harcamanız uygulamaları örnekleme genellikle daha etkilidir.  
+## <a name="rule-description"></a>Kural açıklaması  
+ Bu profil çalışması sırasında sürekli olarak işlemci (veya işlemciler) meşguldü. CPU kullanımının yüksek CPU bağımlı uygulama belirtebilirsiniz. İzleme eklenmiş profilleri CPU kullanım senaryoları araştırmak amacıyla en etkili şekilde değildir. Profil oluşturma yönergeleri işlemci yürütme kendi süresi çoğunu harcamanız uygulamaları örnekleme daha etkilidir.  
   
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
+## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl  
  Yeniden örnekleme yöntemini işlevi zamanlamaları gerektiren veya işlemci performansı sorunlarını anlama giriş/çıkış daha ilgilendiğiniz sürece yerine izleme yöntemini kullanarak uygulamanızı profil göz önünde bulundurun.

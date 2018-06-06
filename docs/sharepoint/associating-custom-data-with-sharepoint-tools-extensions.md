@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691376"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764881"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>SharePoint araç uzantıları ile özel verileri ilişkilendirme
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>SharePoint araç uzantıları ile özel verileri ilişkilendirme
   SharePoint araç uzantıları belirli nesneleri özel veri ekleyebilirsiniz. Bu, verileri daha sonra diğer koddan uzantınızı erişmek istediğiniz uzantınızı bir parçası olduğunda yararlıdır. Depolamak ve verilere erişmek için özel bir şekilde uygulamak yerine, verileri olan bir nesne uzantı ilişkilendirin ve ardından aynı nesneden daha sonra verileri.  
   
  Visual Studio'da belirli bir öğesiyle ilgili olan verileri korumak istediğiniz özel veri nesne eklemeyi de yararlıdır. SharePoint araç uzantıları yalnızca Visual Studio'da, bu nedenle uzantınızı birkaç farklı öğeleriyle çalışma bir kez yüklenir (projeleri gibi öğeler, proje veya **Sunucu Gezgini** düğümleri) herhangi bir zamanda. Yalnızca belirli bir öğe için ilgili özel veri varsa, bu öğeyi temsil eden nesne verileri ekleyebilirsiniz.  
@@ -87,5 +87,6 @@ ms.locfileid: "34691376"
  [İzlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Nasıl yapılır: özel SharePoint Proje öğe türüne özellik ekleme] (.. /SharePoint/How-to-add-a-property-to-a-Custom-SharePoint-Project-item-Type.MD   
+ [Nasıl yapılır: Özel bir SharePoint Proje Öğe Türüne Özellik Ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+   
  

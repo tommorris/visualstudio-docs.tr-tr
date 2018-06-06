@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746214"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Nasıl yapılır: belirtin derleme olayları (Visual Basic)
 
@@ -128,7 +129,7 @@ Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ay
 
 1.  Yayımlanacak projeyi için bir Windows uygulaması oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümü, select **Windows Klasik Masaüstü** ve ardından **Windows Forms uygulaması** Şablon. Proje adı `VBWinApp`.
+2.  İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümü, select **Windows Masaüstü** ve ardından **Windows Forms uygulaması** şablonu. Proje adı `VBWinApp`.
 3.  Seçili proje ile **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
 4.  İçinde **Proje Tasarımcısı**gidin **Yayımla** sayfasında ve ayarlama **konum yayımlama** için *C:\TEMP*.

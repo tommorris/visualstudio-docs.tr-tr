@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 59f273c511a24b1139b03421c2ca59871350aec3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747150"
 ---
 # <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
 *N katmanlı* veri uygulamalardır birden çok ayrılmış veri uygulamalarını *katmanları*. "Dağıtılmış uygulamalar" ve "çok katmanlı uygulamalar" olarak da adlandırılan, istemci ve sunucu arasında dağıtılan ayrık katmanları işlemeye n katmanlı uygulamalar ayırın. Veri erişimi uygulamaları geliştirirken açıkça birbirinden uygulamayı oluşturan çeşitli katmanları arasında olması gerekir.
@@ -58,7 +59,7 @@ Genellikle sunu katmanı hizmet başvurusunu kullanarak orta katman erişen (ör
 
 Aşağıdaki çizimde, özellikleri ve Visual Studio'da kullanılabilir olduğunu ve bunlar n katmanlı uygulama orta katman için nerelerde teknolojileri gösterir.
 
-![Orta katman bileşenleri](../data-tools/media/ntiermid.png "NtierMid") orta katman
+![Orta katman bileşenleri](../data-tools/media/ntiermid.png) orta katman
 
 Orta katman veri katmanına bir veri bağlantısı kullanarak genellikle bağlanır. Bu veri bağlantısının veri erişimi bileşeni, tipik olarak depolanır.
 
@@ -67,7 +68,7 @@ Orta katman veri katmanına bir veri bağlantısı kullanarak genellikle bağlan
 
 Aşağıdaki çizimde, özellikleri ve Visual Studio'da kullanılabilir olduğunu ve bunlar n katmanlı uygulama veri katmanına nerelerde teknolojileri gösterir.
 
-![Veri katmanı bileşenleri](../data-tools/media/ntierdatatier.png "ntierdatatier") veri katmanı
+![Veri katmanı bileşenleri](../data-tools/media/ntierdatatier.png) veri katmanı
 
 Veri katmanı sunu katmanındaki istemciden doğrudan erişilemez. Bunun yerine, orta katman veri erişim bileşeni sunu ve veri katmanlarını arasındaki iletişim için kullanılır.
 

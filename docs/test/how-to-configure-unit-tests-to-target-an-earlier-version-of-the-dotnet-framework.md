@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750746"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Nasıl yapılır: Birim Testlerini .NET Framework'ün Önceki Sürümünü Hedefleyecek Şekilde Yapılandırma
 
@@ -63,11 +64,11 @@ Yukarıda listelenen özellikleri de, yazma birim testleri ve Visual Studio kull
 
 5.  Üzerinde **derleme** sekmesinde, seçin **Gelişmiş derleme seçenekleri** aşağıdaki çizimde gösterildiği gibi.
 
-     ![Gelişmiş derleme seçenekleri](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![Gelişmiş derleme seçenekleri](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  Kullanım **hedef Framework'ü (tüm yapılandırmaları)** hedef framework değiştirmek için aşağı açılan liste **.NET Framework 3.5** veya belirtme çizgisi B aşağıdaki çizimde gösterildiği gibi sonraki bir sürümü. Bir istemci sürümü belirtilmemelidir.
 
-     ![Hedef framework bırakma&#45;listesini aşağı](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![Hedef framework bırakma&#45;listesinde](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Belirli bir .NET Framework sürümü için Visual C# birim testi projelerini için yeniden hedefleme
 
@@ -85,7 +86,7 @@ Yukarıda listelenen özellikleri de, yazma birim testleri ve Visual Studio kull
 
 5.  Üzerinde **uygulama** sekmesinde, seçin **hedef framework**. Aşağı açılan listeden seçin **.NET Framework 3.5** veya aşağıdaki çizimde gösterildiği gibi sonraki bir sürümü. Bir istemci sürümü belirtilmemelidir.
 
-     ![Hedef framework bırakma&#45;listesini aşağı](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![Hedef framework bırakma&#45;listesinde](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Belirli bir .NET Framework sürümü için hedefleme C + yeniden +/ CLI birim testi projelerini
 

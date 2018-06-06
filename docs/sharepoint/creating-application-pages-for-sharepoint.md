@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691985"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765011"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>SharePoint için uygulama sayfaları oluşturma
+# <a name="create-application-pages-for-sharepoint"></a>SharePoint için uygulama sayfaları oluşturma
   Bir *uygulama sayfası* bir SharePoint Web sitesinde kullanılmak üzere tasarlanmış bir ASP.NET Web sayfası. Uygulama sayfaları, ASP.NET sayfası özel türüdür. Uygulama sayfası ve standart bir ASP.NET sayfası arasındaki birincil fark, bir uygulama sayfasını bir SharePoint ana sayfa ile birleştirilmiş içeriğin bulunduğu ' dir. Bir ana sayfa diğer sayfalarda bir site olarak aynı görünümü ve davranışı paylaşmak uygulama sayfaları sağlar.  
   
  Visual Studio Tasarımcı kullanarak uygulama sayfaları tasarlamanızı sağlar. Tasarımcı içerik alanı bir ana sayfada tanımlı her içerik bir yer tutucu görüntüler. Bu içerik alanlarına denetimlerini sürükleyerek uygulama sayfası tasarlayabilirsiniz.  
@@ -55,7 +55,7 @@ ms.locfileid: "34691985"
   
 |Dosya|Açıklama|  
 |----------|-----------------|  
-|ASP.NET sayfası dosyası (.aspx)|Sayfayı tanımlayan XML biçimlendirme içeriyor.|  
+|ASP.NET sayfası dosyası (*.aspx*)|Sayfayı tanımlayan XML biçimlendirme içeriyor.|  
 |Uygulama sayfası kod dosyası|Uygulama sayfası arka plan kod içerir. Bu dosyaya olayları işleyen kodu ekleyin.|  
 |Uygulama sayfası tasarımcı kod dosyası|Tasarımcı tarafından oluşturulan kodu içerir. Doğrudan bu dosyayı düzenlemeyin.|  
   

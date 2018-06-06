@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b2fc6b7a729be412b48c331eb5029df617d35c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c9fd9337682abbcd7325a849b95846be3af118d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747186"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>İzlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma
 Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] hizmet, test ve bir Windows Forms uygulamasında erişebilir.
@@ -37,12 +38,12 @@ Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[vsindigo](.
 
 2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual Basic** veya **Visual C#** düğümü ve tıklatın **WCF**, ardından **WCF Hizmet Kitaplığı**. Tıklatın **Tamam** projeyi açın.
 
-     ![WCF hizmet kitaplığı proje](../data-tools/media/wcf1.PNG "wcf1")
+     ![WCF hizmet kitaplığı projesi](../data-tools/media/wcf1.png)
 
     > [!NOTE]
     >  Bu, test ve erişilen bir çalışma hizmet oluşturur. Aşağıdaki iki adımı, farklı veri türünü kullanmak için varsayılan yöntemi nasıl değiştirileceği göstermektedir. Gerçek bir uygulamada kendi işlevleri hizmete eklersiniz.
 
-3.  ![IService1 dosya](../data-tools/media/wcf2.png "wcf2")
+3.  ![IService1 dosyası](../data-tools/media/wcf2.png)
 
      İçinde **Çözüm Gezgini**, IService1.vb veya IService1.cs çift tıklayın ve aşağıdaki satırı bulun:
 
@@ -56,7 +57,7 @@ Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[vsindigo](.
 
      Yukarıdaki kodda Not `<OperationContract()>` veya `[OperationContract]` öznitelikleri. Bu öznitelikler hizmeti tarafından sunulan herhangi bir yöntem gereklidir.
 
-4.  ![Service1 dosyayı](../data-tools/media/wcf3.png "wcf3")
+4.  ![Service1 dosyayı](../data-tools/media/wcf3.png)
 
      İçinde **Çözüm Gezgini**Service1.vb veya service1.cs dosyasını çift tıklatın ve aşağıdaki satırı bulun:
 
@@ -76,15 +77,15 @@ Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[vsindigo](.
 
 2.  İçinde **WCF Test istemcisi** formunda, çift **GetData()** yöntemi altında **IService1**. **GetData** sekmesi görüntülenir.
 
-     ![GetData&#40; &#41; yöntemi](../data-tools/media/wcf4.png "wcf4")
+     ![GetData&#40; &#41; yöntemi](../data-tools/media/wcf4.png)
 
 3.  İçinde **isteği** kutusunda **değeri** alanı ve türü `Hello`.
 
-     ![Değer alanı](../data-tools/media/wcf5.png "wcf5")
+     ![Değer alanı](../data-tools/media/wcf5.png)
 
 4.  Tıklatın **Invoke** düğmesi. Varsa bir **Güvenlik Uyarısı** iletişim kutusu görüntülenir, tıklatın **Tamam**. Sonuç görüntülenir **yanıt** kutusu.
 
-     ![Sonucun yanıt kutusunda](../data-tools/media/wcf6.png "wcf6")
+     ![Yanıt kutusunda sonucu](../data-tools/media/wcf6.png)
 
 5.  Üzerinde **dosya** menüsünde tıklatın **çıkış** test formunu kapatmak için.
 
@@ -96,13 +97,13 @@ Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[vsindigo](.
 
 2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual Basic** veya **Visual C#** düğümü ve seçin **Windows**ve ardından **Windows Forms uygulamasına**. Tıklatın **Tamam** projeyi açın.
 
-     ![Windows Forms uygulaması projesi](../data-tools/media/wcf7.png "wcf7")
+     ![Windows Forms uygulaması projesi](../data-tools/media/wcf7.png)
 
 3.  Sağ **WindowsApplication1** tıklatıp **hizmet Başvurusu Ekle**. **Hizmet Başvurusu Ekle** iletişim kutusu görüntülenir.
 
 4.  İçinde **hizmet Başvurusu Ekle** iletişim kutusu, tıklatın **bulma**.
 
-     ![Hizmet Başvurusu Ekle iletişim kutusu](../data-tools/media/wcf8.png "wcf8")
+     ![Hizmet Başvurusu Ekle iletişim kutusu](../data-tools/media/wcf8.png)
 
      **Service1** görüntülenmesi **Hizmetleri** bölmesi.
 
@@ -114,7 +115,7 @@ Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[vsindigo](.
 
 2.  Gelen **araç**, sürükleyin bir `TextBox` denetimi, bir `Label` denetimi ve `Button` forma denetim.
 
-     ![Forma denetim ekleme](../data-tools/media/wcf9.png "wcf9")
+     ![Forma denetim ekleme](../data-tools/media/wcf9.png)
 
 3.  Çift `Button`ve aşağıdaki kodu ekleyin `Click` olay işleyicisi:
 
@@ -125,7 +126,7 @@ Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[vsindigo](.
 
 5.  Tuşuna **F5** projeyi çalıştırın. Bazı metinleri girin ve düğmesini tıklatın. Etiketini görüntüler "girdiğiniz:" ve girdiğiniz metin.
 
-     ![Sonuç gösteren form](../data-tools/media/wcf10.png "wcf10")
+     ![Sonuç gösteren formu](../data-tools/media/wcf10.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

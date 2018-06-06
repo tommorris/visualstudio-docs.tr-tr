@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3fe4cf9591d64465fa7ec44d1653bbfc65ec8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747316"
 ---
 # <a name="image-editor"></a>Görüntü Düzenleyici
 
@@ -92,7 +93,7 @@ Görüntü Düzenleyicisi araç çubukları içeren görüntülerle çalışma y
 
  Burada **görüntü Düzenleyicisi modu** araç çubuğu:
 
- ![Görüntü Düzenleyicisi kalıcı araç. ] (../designers/media/digit-tre-modal-toolbar.png "TRE kalıcı araç basamak")
+ ![Görüntü Düzenleyicisi kalıcı araç.](../designers/media/digit-tre-modal-toolbar.png)
 
  Bu tablo üzerinde öğeleri açıklar **görüntü Düzenleyicisi modu** araç çubuğu göründükleri soldan sağa doğru sırayla listelenir.
 
@@ -116,7 +117,7 @@ Görüntü Düzenleyicisi araç çubukları içeren görüntülerle çalışma y
 
  Burada **görüntü Düzenleyicisi** araç.
 
- ![Görüntü Düzenleyicisi araç](../designers/media/digit-tre-toolbar.png "basamaklı TRE araç")
+ ![Görüntü Düzenleyicisi araç çubuğu](../designers/media/digit-tre-toolbar.png)
 
  Aşağıdaki tabloda öğeleri açıklar **görüntü Düzenleyicisi** araç çubuğu göründükleri üstten alta gözüktükleri sırada listelenir.
 

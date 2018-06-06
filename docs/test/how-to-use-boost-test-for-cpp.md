@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751630"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio'da c++ Boost.Test kullanma
 
 İçinde **Visual Studio 2017 sürüm 15,5** ve daha sonra Visual Studio IDE içinde bir bileşeni olarak Boost.Test test bağdaştırıcısı tümleşiktir **C++ ile masaüstü geliştirme** iş yükü.
 
-![Bağdaştırıcı için Boost.Test test](media/cpp-boost-component.png "Boost.Test bileşeni için Test bağdaştırıcısı")
+![Test bağdaştırıcısı Boost.Test için](media/cpp-boost-component.png)
 
 Sahip değilseniz **C++ ile masaüstü geliştirme** yüklü, iş yükü açık **Visual Studio yükleyicisi** seçip **Değiştir**. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir** düğmesi.
 
@@ -43,7 +44,7 @@ Boost.Test gerektirir [artırma](http://www.boost.org/)! Yüklü artırma yoksa 
 
 1. Testleriniz için .cpp dosyası oluşturmak için proje düğümüne sağ tıklayın **Çözüm Gezgini** ve **Yeni Öğe Ekle**.
 
-   ![Boost.Test öğe şablonu](media/boost_test_item_template.png "Boost.Test öğe şablonu")
+   ![Boost.Test öğe şablonu](media/boost_test_item_template.png)
 
 1. Yeni bir dosya bir örnek test yöntemi içerir. Etkinleştirmek için projenizi derleme **Test Gezgini** yöntemi bulmak için.
 
@@ -87,7 +88,7 @@ Visual Studio 2017 içinde sürüm 15,5, önceden yapılandırılmış test proj
 
 1. Test .cpp dosyanızda herhangi gerekli ekleyin `#include` programınızın türler ve İşlevler, test kodu görülebilmesi yönergeleri. Tipik olarak bir düzey klasör hiyerarşisindeki programdır. Yazarsanız, `#include "../"`, bir IntelliSense penceresi görüntülenir ve üstbilgi dosyası tam yolunu seçmenize olanak sağlar.
 
-   ![Ekle # yönergeleri include](media/cpp-gtest-includes.png "Ekle içerme test .cpp dosyasına yönergeleri")
+   ![Ekleme # yönergeleri include](media/cpp-gtest-includes.png)
 
    Tek başına kitaplıkla kullanabilirsiniz:
 

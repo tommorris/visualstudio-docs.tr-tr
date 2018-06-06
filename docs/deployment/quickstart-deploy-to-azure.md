@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765381"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Visual Studio kullanarak Azure App Service için ASP.NET veya ASP.NET Core uygulama yayımlama
 
@@ -26,9 +27,9 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. .NET Core uygulaması için etmeniz **.NET Core** iş yükü.
+* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü ve. **NET masaüstü geliştirme** iş yükü. .NET Core uygulama için gereksinim duyduğunuz. **NET çekirdek** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
@@ -44,7 +45,7 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
 1. Seçin **Yapı > Yapı çözümü** Projeyi derlemek için.
 
-## <a name="publish-to-azure-app-service"></a>Azure App Service'te yayımlama
+## <a name="publish-to-azure-app-service"></a>Azure App Service’e yayımlama
 
 1. Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**.
 
@@ -81,4 +82,4 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 Bu hızlı başlangıç Azure'a dağıtımı için bir yayımlama profili oluşturmak için Visual Studio kullanmayı öğrendiniz. Ayrıca bir yayımlamayı yapılandırabilirsiniz alarak profili Azure App Service ayarlarını yayımlayın.
 
 > [!div class="nextstepaction"]
-> [İçeri aktarma ayarları yayımlama ve Azure'a dağıtma](tutorial-import-publish-settings-azure.md)
+> [Yayımlama ayarlarını içeri aktarma ve Azure’a dağıtma](tutorial-import-publish-settings-azure.md)

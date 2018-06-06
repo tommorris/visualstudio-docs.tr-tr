@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 807cdbac4284d7725de2e155ecd5a9a89344a774
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749947"
 ---
 # <a name="validate-your-system-during-development"></a>Geliştirme sırasında sisteminizi doğrulama
 Visual Studio yazılımınızı sisteminizin mimarisiyle ve kullanıcıların gereksinimleri ile tutarlı korunmasına yardımcı olabilirsiniz.
@@ -34,7 +35,7 @@ Visual Studio yazılımınızı sisteminizin mimarisiyle ve kullanıcıların ge
 
 |**Kategori**|**Bağlantılar**|
 |------------------|---------------|
-|**Videolar**|![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug yedi: kod anlama ve Visual Studio 2010 ile sistem tasarımı](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: bağımlılık diyagramı kullanarak uygulama mimarisi oluşturma](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif "PlayVideo") [MSDN nasıl yapmak ı serisi: nasıl bağımlılık diyagramları kullanarak kod doğrulamak için](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Videolar**|![video bağlantı](../data-tools/media/playvideo.gif) [Channel 9: Doug yedi: kod anlama ve Visual Studio 2010 ile sistem tasarımı](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [Channel 9: bağımlılık diyagramı kullanarak uygulama mimarisi oluşturma](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [MSDN nasıl yapmak ı serisi: nasıl bağımlılık diyagramları kullanarak kod doğrulamak için](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Forumları**|-   [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Görselleştirme ve modelleme SDK (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Bloglar**|-   [Visual Studio ALM + Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Teknik makaleler ve günlükleri**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)|

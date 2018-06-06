@@ -1,5 +1,5 @@
 ---
-title: Oluşturma ve Visual Studio'da veri kümelerini yapılandırma
+title: Visual Studio’da veri kümeleri oluşturma ve yapılandırma
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,13 +13,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8cbe95887e9a29fa98932a18c240bc558201fc43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746578"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Oluşturma ve Visual Studio'da veri kümelerini yapılandırma
+# <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio’da veri kümeleri oluşturma ve yapılandırma
 
 A *dataset* bellekte bir veritabanındaki verileri depolamak ve etkinleştirmek için değişiklik izleme destekleyen nesneleri kümesi oluşturma, okuma, güncelleştirme ve bu verileri her zaman veritabanına bağlanması gerek kalmadan (CRUD) işlemleridir silme. Veri kümeleri basit için tasarlanmış *forms veriler üzerinde* iş uygulamaları. Yeni uygulamalar için depolamak ve bellekte veri modeli için Entity Framework kullanarak göz önünde bulundurun. Veri kümeleriyle çalışmak için veritabanı kavramlarını temel bilgiye sahip.
 
@@ -31,37 +32,37 @@ Yazılmış bir oluşturduğunuz <xref:System.Data.DataSet> Visual Studio'da sı
 
 2.  İçin bağlanırsınız veri kaynağı türünü seçin.
 
-     ![Veri Kaynağı Yapılandırma Sihirbazı'nı](../data-tools/media/data-source-configuration-wizard.png "veri kaynağı Yapılandırma Sihirbazı")
+     ![Veri Kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png)
 
 3.  Veritabanları için veritabanı veya Veri kümenizi veri kaynağının veritabanlarını seçin.
 
-     ![Veri kaynağı bağlantısı seçin](../data-tools/media/data-source-choose-a-connection.png "veri kaynağı bağlantısı seçin")
+     ![Veri kaynağı bağlantısı seçin](../data-tools/media/data-source-choose-a-connection.png)
 
 4.  Tabloları (veya tek tek sütun) saklı yordamları, işlevleri ve veritabanından veri kümesini temsil etmek istediğiniz görünümleri seçin.
 
-     ![Veritabanı nesneleri seçin](../data-tools/media/raddata-chose-objects.png "raddata seçtiğiniz nesneleri")
+     ![Veritabanı nesneleri seçin](../data-tools/media/raddata-chose-objects.png)
 
 5.  **Son**'a tıklayın.
 
 6.  Veri kümesi bir düğüm olarak görünür **Çözüm Gezgini**:
 
-     ![Çözüm Gezgini'nde DataSet](../data-tools/media/dataset-in-solution-explorer.png "Çözüm Gezgini'nde veri kümesi")
+     ![Çözüm Gezgini'nde veri kümesi](../data-tools/media/dataset-in-solution-explorer.png)
 
      Bu düğümünü tıklatın ve veri kümesi görünür **veri kümesi Tasarımcısı**. Veri kümesi her tabloda altındaki temsil edilen bir ilişkili TableAdapter nesnesi olduğuna dikkat edin. Tablo bağdaştırıcısı DataSet'i ve isteğe bağlı olarak veritabanına komutlarını göndermek için kullanılır.
 
-     ![Veri kümesi Tasarımcısı](../data-tools/media/dataset-designer.png "veri kümesi Tasarımcısı")
+     ![Veri kümesi Tasarımcısı](../data-tools/media/dataset-designer.png)
 
 7.  Tabloları bağlanma ilişkisi satırları tablo ilişkileri veritabanında tanımlanan temsil eder. Varsayılan olarak, bir veritabanındaki yabancı anahtar kısıtlamaları yalnızca bir ilişki güncelleştirme ile temsil edilir ve Yok'a kuralları silin. Genellikle, istediğiniz olmasıdır. Ancak, ortaya çıkarmak için satırları tıklayabilirsiniz **ilişkisi** hiyerarşik güncelleştirmeleri davranışını değiştirebileceğiniz iletişim. Daha fazla bilgi için bkz: [kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md) ve [hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md).
 
-     ![Veri kümesi ilişkisi iletişim](../data-tools/media/raddata-relation-dialog.png "raddata ilişkisi iletişim")
+     ![Veri kümesi ilişkisi iletişim](../data-tools/media/raddata-relation-dialog.png)
 
 8.  Tablo, tablo bağdaştırıcısı veya bir tablodaki sütun adı, özelliklerini görmek için tıklatın **özellikleri** penceresi. Bazı değerleri burada değiştirebilirsiniz. Yalnızca kaynak veritabanı veri kümesi değiştiriyorsunuz unutmayın.
 
-     ![Veri kümesi sütun özellikleri](../data-tools/media/dataset-column-properties.png "DataSet sütun özellikleri")
+     ![Veri kümesi sütun özellikleri](../data-tools/media/dataset-column-properties.png)
 
 9. Yeni Tablo veya tablo bağdaştırıcıları kümesine eklemek veya var olan tablo bağdaştırıcıları için yeni sorgular eklemek veya bu öğelerden sürükleyerek tablolar arasındaki yeni ilişkileri belirtin **araç** sekmesi. Bu sekme ne zaman görünür **veri kümesi Tasarımcısı** odaklanılan.
 
-     ![Veri kümesi araç](../data-tools/media/raddata-dataset-toolbox.png "raddata Dataset araç kutusu")
+     ![Veri kümesi araç kutusu](../data-tools/media/raddata-dataset-toolbox.png)
 
 10. Ardından, büyük olasılıkla veri kümesini verilerle doldurmak nasıl belirtmek isteyebilirsiniz. Bunun için kullandığınız **TableAdapter Yapılandırma Sihirbazı'nı**. Daha fazla bilgi için bkz: [TableAdapters kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -75,7 +76,7 @@ Bu yordamda, bir tablo ilk veri kümesi oluşturmak için kullanılan aynı veri
 
 3.  Veri kümesi düğümünü sağ tıklatın ve seçin **veri kaynağı Yapılandırma Sihirbazı ile**.
 
-     ![Veri kaynağı bağlam menüsü](../data-tools/media/data-source-context-menu.png "veri kaynağı bağlam menüsü")
+     ![Veri kaynağı bağlam menüsü](../data-tools/media/data-source-context-menu.png)
 
 4.  Sihirbaz, hangi ek tablolar veya saklı yordam veya kümesine eklemek için diğer veritabanı nesnesi belirtmek için kullanın.
 

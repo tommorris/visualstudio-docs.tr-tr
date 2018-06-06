@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7bd7368dbdd5d66f1921d555fbbf731cebd664
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747059"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Nasıl Yapılır: Temel Doku Gölgelendiricisi Oluşturma
 
 Bu makalede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) tek doku gölgelendirici oluşturmak için nasıl kullanılacağı gösterilmektedir. Bu gölgelendirici son renk doğrudan RGB ve doku örneklenen alfa değerleri ayarlar.
 
-## <a name="create-a-basic-texture-shader"></a>Temel doku gölgelendirici oluşturma
+## <a name="create-a-basic-texture-shader"></a>Temel doku gölgelendiricisi oluşturma
 
 Temel, tek doku gölgelendirici doğrudan son çıkış rengi renk ve alfa değerleri bir doku örnek yazarak uygulayabilirsiniz.
 
@@ -47,7 +48,7 @@ Aşağıdaki çizimde, grafik ve bir küp uygulanan gölgelendirici önizlemesin
 > [!NOTE]
 > Bu çizimde, bir düzlemi Önizleme şekil olarak kullanılır ve bir doku daha iyi gölgelendirici etkisini göstermek için belirtilen.
 
-![Gölgelendirici grafik ve etkisini önizlemesini](../designers/media/digit-texture-effect.png "basamaklı doku etkisi")
+![Gölgelendirici grafik ve etkisini önizlemesi](../designers/media/digit-texture-effect.png)
 
 Belirli şekillerin daha iyi önizlemeleri için bazı gölgelendiriciler sağlayabilir. Gölgelendirici Tasarımcısı'nda gölgelendiriciler önizleme hakkında daha fazla bilgi için bkz: [gölgelendirici Tasarımcısı](../designers/shader-designer.md)
 

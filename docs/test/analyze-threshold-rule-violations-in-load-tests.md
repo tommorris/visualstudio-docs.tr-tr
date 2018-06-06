@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750915"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Yük Testi Çözümleyicisini Kullanarak Yük Testlerindeki Eşik Kuralı İhlallerini Çözümleme
 
@@ -53,15 +54,15 @@ Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü Yük Testi Çö
 
  Simge aşağıdakilerden biri olacaktır:
 
- ![Eşik ihlali yok](../test/media/icon_ltest_1.gif "Icon_LTest_1") eşik ihlali yok.
+ ![Eşik ihlali yok](../test/media/icon_ltest_1.gif) Eşik ihlali yok.
 
- ![Kritik Eşik ihlalinin son aralıkta](../test/media/icon_ltest_2.gif "Icon_LTest_2") son aralıkta bir Kritik Eşik ihlali oluştu.
+ ![Kritik Eşik ihlalinin son aralığı](../test/media/icon_ltest_2.gif) Son aralıkta bir Kritik Eşik ihlali oluştu.
 
- ![Kritik Eşik ihlalinin önceki bir aralıkta](../test/media/icon_ltest_3.gif "Icon_LTest_3") önceki aralıkta bir Kritik Eşik ihlali oluştu.
+ ![Kritik Eşik ihlalinin önceki aralığı](../test/media/icon_ltest_3.gif) Önceki bir aralıkta bir Kritik Eşik ihlali oluştu.
 
- ![Uyarı eşiği ihlalinin son aralıkta](../test/media/icon_ltest_4.gif "Icon_LTest_4") son aralıkta uyarı eşiği ihlali oluştu.
+ ![Uyarı eşiği ihlalinin son aralığı](../test/media/icon_ltest_4.gif) Uyarı eşiği ihlalinin son aralıkta oluştu.
 
- ![Uyarı eşiği ihlalinin önceki bir aralıkta](../test/media/icon_ltest_5.gif "Icon_LTest_5") önceki bir aralıkta uyarı eşiği ihlali oluştu.
+ ![Uyarı eşiği ihlalinin önceki aralığı](../test/media/icon_ltest_5.gif) Uyarı eşiği ihlalinin önceki aralıkta oluştu.
 
  İsteğe bağlı olarak, Eşik İhlallerini Grafikte da gösterilebilir. Grafikte eşik ihlalinin oluştuğu veri noktasının yanındaki eşik simgesi görünür.
 

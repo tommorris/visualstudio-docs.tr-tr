@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b293c5a6fe64324cb306933d90049548e7a6098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765173"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Bellek Ayırma Görünümü
 Ayırmalar görünümü profil çalışması sırasında oluşturulan türlerini listeler. Her tür ayırma sonuçlandı işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümü türüdür.  
@@ -34,7 +35,7 @@ Ayırmalar görünümü profil çalışması sırasında oluşturulan türlerini
   
  Bir işlev için veri oluşturulan nesnelerin sayısı ve üst türündeki nesneler için ayrılan bayt sayısını görüntüler.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Yürütme etkin yolunuzda vurgulama  
+## <a name="highlight-the-execution-hot-path"></a>Yürütme etkin yolunu Vurgula  
  Üst tür çoğu nesnelerin oluşturulan çağrı ağacı yürütme yolunu bulabilirsiniz.  
   
 -   En etkin yol görüntülemek için tür veya işleve sağ tıklayın ve ardından **genişletin etkin yolunuzda**.  

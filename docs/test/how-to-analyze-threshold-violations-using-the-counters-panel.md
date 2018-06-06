@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 483a591e190efa557ffff42c958c18171269e7ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751812"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Düzenleyicisi'nde Sayaçlar Panelini Kullanılarak Eşik İhlallerini Çözümleme
 
@@ -22,21 +23,21 @@ Bir yük testi çalışırken ya da bir yük testi sonuç çözümlerken Sayaçl
 
  Eşik ihlallerini belirli performans sayaçları ile ilişkili ve performans sayacı aşıldı veya ayarlanan bir eşik değeri altına düştü gösterir. Sayaçlar panelini simgeleri Eşik ihlallerini iletişim kurar.
 
- ![Sayaç bölmenin bilgisayar düğümünün](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![Bölmenin bilgisayar düğümünün sayacı](../test/media/ltest_compnode.png)
 
  Eşik ihlali simgesi başarısız sayaç kök bulunduğu ağaç düğümünden yayılır. Simge bir ağaç genişletilmemiş çünkü ağacında görünür olmayabilir sayacı ihlali kullanıcıya uyarır. Simge bir örneği görülebilir **bilgisayar düğümü** önceki çizimde Sayaç panelinde.
 
  Simge aşağıdakilerden biri olacaktır:
 
- ![Eşik ihlali yok](../test/media/icon_ltest_1.gif "Icon_LTest_1") eşik ihlali yok.
+ ![Eşik ihlali yok](../test/media/icon_ltest_1.gif) Eşik ihlali yok.
 
- ![Kritik Eşik ihlalinin son aralıkta](../test/media/icon_ltest_2.gif "Icon_LTest_2") son aralıkta bir Kritik Eşik ihlali oluştu.
+ ![Kritik Eşik ihlalinin son aralığı](../test/media/icon_ltest_2.gif) Son aralıkta bir Kritik Eşik ihlali oluştu.
 
- ![Kritik Eşik ihlalinin önceki bir aralıkta](../test/media/icon_ltest_3.gif "Icon_LTest_3") önceki aralıkta bir Kritik Eşik ihlali oluştu.
+ ![Kritik Eşik ihlalinin önceki aralığı](../test/media/icon_ltest_3.gif) Önceki bir aralıkta bir Kritik Eşik ihlali oluştu.
 
- ![Uyarı eşiği ihlalinin son aralıkta](../test/media/icon_ltest_4.gif "Icon_LTest_4") son aralıkta uyarı eşiği ihlali oluştu.
+ ![Uyarı eşiği ihlalinin son aralığı](../test/media/icon_ltest_4.gif) Uyarı eşiği ihlalinin son aralıkta oluştu.
 
- ![Uyarı eşiği ihlalinin önceki bir aralıkta](../test/media/icon_ltest_5.gif "Icon_LTest_5") önceki bir aralıkta uyarı eşiği ihlali oluştu.
+ ![Uyarı eşiği ihlalinin önceki aralığı](../test/media/icon_ltest_5.gif) Uyarı eşiği ihlalinin önceki aralıkta oluştu.
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Sayaç panelinde Eşik ihlallerini analiz etmek için
 

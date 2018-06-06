@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d91b7d3927b9723c943676cf3ce15c4bc808b906
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64de38fe796ce3c1e0d333a22582ad2973e1c4d2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692125"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765365"
 ---
-# <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme
+# <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme
   Bazı durumlarda SharePoint Proje sistemi nesnenin olabilir ve Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, karşılık gelen bir nesne özelliklerini kullanmak istediğiniz veya tam tersi. Bu durumlarda, kullandığınız <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> farklı nesne modeline nesneyi dönüştürmek için SharePoint Proje hizmeti yöntemi.  
   
  Örneğin, sahip olabileceğiniz bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> nesnesi, ancak yalnızca kullanılabilir yöntemleri kullanmak istediğiniz bir <xref:EnvDTE.Project> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> nesnesi. Bu durumda, kullanabileceğiniz <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> dönüştürmek için yöntem <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> için bir <xref:EnvDTE.Project> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.  
@@ -45,7 +45,7 @@ ms.locfileid: "34692125"
   
  Bu örnek gerektirir:  
   
--   Uzantı SharePoint Proje sisteminin EnvDTE.dll derlemesine başvuru içeriyor. Daha fazla bilgi için bkz: [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md).  
+-   Uzantı başvuruyor SharePoint Proje sisteminin *EnvDTE.dll* derleme. Daha fazla bilgi için bkz: [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md).  
   
 -   Kaydeder kod `projectService_ProjectAdded` yöntemini <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> olayı bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> nesnesi. Bir örnek için bkz: [nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   

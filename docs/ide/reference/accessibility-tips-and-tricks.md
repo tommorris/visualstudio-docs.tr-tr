@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747462"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları Visual Studio için
 
@@ -34,13 +35,13 @@ Visual Studio, ekran okuyucuların ve diğer yardımcı teknolojiler ile uyumlu 
 
 Bazı çok kişi bazı renkler görmek daha zordur. Daha fazla Karşıtlık, kod olarak istiyor, ancak tipik "Yüksek Karşıtlık" temaları kullanmak istemediğiniz şimdi "Mavi (ek Karşıtlık)" tema sunuyoruz.
 
-  ![Mavi fazladan karşıtlık teması ve mavi tema karşılaştırmak](media/blue-extra-contrast-theme.png "mavi fazladan karşıtlık teması mavi tema arasındaki farkı bakın")
+  ![Mavi fazladan karşıtlık teması ve mavi tema Karşılaştır](media/blue-extra-contrast-theme.png)
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Kodunuzu hakkında yararlı bilgiler ortaya çıkarmak için ek açıklamalarını kullanma
 
 Visual Studio düzenleyicisinde "vb. yer işaretleri, özellikleri ve bir satıra lightbulbs, hata ve uyarı"dalgalı çizgiler", gibi kodunun belirli noktalarda özellikleri hakkında bilmeniz sağlayan birçok metin adornments" içerir. Bulabilir ve bu adornments arasında gezinmek yardımcı olması için ayarlama "Satırı ek açıklamaları Göster" komutunu kullanabilirsiniz.
 
-  ![Satır ek açıklamaları Göster komut kümesini kullanmak](media/show-line-annotations-command-set.png "satır ek açıklamaları Göster komut kümesi gösterilmektedir")
+  ![Satır ek açıklamaları Göster komut kümesini kullanın](media/show-line-annotations-command-set.png)
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Kısayol tuş birleşimleri kullanarak erişim araç çubukları
 
@@ -82,18 +83,18 @@ Visual Studio program olaylarına ses atamak için Windows Ses uygulamasını ku
 
 1. İçinde **arama** kutusunu türü olan Windows 10 çalıştıran bir bilgisayarda **değiştirmek sistem sesleri**.
 
-  ![Windows 10 arama kutusuna](media/type-here-to-search.png "türü ses arama kutusuna Windows 10 çalıştıran bir bilgisayarda")
+  ![Windows 10 arama kutusuna](media/type-here-to-search.png)
 
   (Alternatif olarak, etkin Cortana varsa, "Hey Cortana" deyin ve "Sistem seslerini Değiştir" komutunu verin.)
 
 2. Çift **değiştirmek sistem sesleri**.
 
-  ![Arama sonuçlarında Windows 10'da](media/change-system-sounds.png "çift arama sonuçlarında sistem seslerini Değiştir")
+  ![Windows 10 arama sonuçları](media/change-system-sounds.png)
 
 3. İçinde **ses** iletişim kutusu, tıklatın **ses** sekmesi. <br><br>
  Ardından **Program olayları**, kaydırın **Microsoft Visual Studio**, seçtiğiniz olaylara uygulamak istediğiniz ses seçin.
 
-  ![Windows 10 ses uygulaması ses sekmesinde](media/sound-applet.png "çift arama sonuçlarında sistem seslerini Değiştir")
+  ![Windows 10 ses uygulaması ses sekmesi](media/sound-applet.png)
 
 4. **Tamam**'ı tıklatın.
 

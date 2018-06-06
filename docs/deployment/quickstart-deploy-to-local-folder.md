@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a68e7d039fe0b60faf42ea319bb3a3bd4f888d3b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764225"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Bir web uygulaması veya .NET Core uygulama Visual Studio yayımlama aracını kullanarak yerel bir klasöre dağıtma
 
@@ -26,9 +27,9 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 yüklü olması gerekir ve **.NET Framework** ve **.NET Core** yüklü geliştirme iş yükü.
+* Visual Studio 2017 yüklü olması gerekir ve. **NET masaüstü geliştirme** iş yükü ve. **NET çekirdek** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
@@ -40,7 +41,7 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
     Visual Studio projesi oluşturur.
 
-## <a name="deploy-to-a-local-folder"></a>Yerel bir klasöre dağıtma
+## <a name="deploy-to-a-local-folder"></a>Yerel klasöre dağıtma
 
 1. Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**.
 

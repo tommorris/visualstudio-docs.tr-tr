@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748757"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>.NET geliştiricileri için Visual Studio 2017 üretkenlik Kılavuzu
 
@@ -88,7 +89,7 @@ Visual Studio 2017 nesil Eylemler ile çok sayıda yapan yeniden düzenlemeler, 
   - [Visual Studio için SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Visual Studio'da yapan yeniden düzenlemeler](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![Visual Studio'da yapan yeniden düzenlemeler](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Bul kullanımları, uygulama gidin, Decompiled derlemeler gidin almam gerekiyor
 Visual Studio 2017 temelinizde gezinti ve arama size yardımcı olmak için çok sayıda özelliğe sahiptir. Daha fazla bilgi edinin [kod Gezinti özellikleri](../ide/navigating-code.md)
@@ -119,7 +120,7 @@ Visual Studio 2017 bir ton yeni hata ayıklama özelliklerini ekledik.
 - [Adım arka](../debugger/how-to-use-intellitrace-step-back.md) hata ayıklama önceki kesme noktaları veya adımları geri dönün ve geçmişte haliyle uygulama durumunu görüntüleme olanak sağlar.
 - [Anlık görüntü hata ayıklama](/azure/application-insights/app-insights-snapshot-debugger) canlı web uygulamasının bir özel durum oluşturuldu anda durumu araştırmanıza olanak tanır (Azure üzerinde olmalıdır).
 
-![Yeni özel durum Yardımcısı VS2017 içinde](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![VS2017 içinde yeni özel durum Yardımcısı](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Sürüm denetimi my projeleri ile kullanmak istediğiniz.
 Git veya TFVC'yi depolamak ve Visual Studio kodunuzda güncelleştirmek için kullanabilirsiniz.

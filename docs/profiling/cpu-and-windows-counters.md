@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748744"
 ---
-# <a name="cpu-and-windows-counters"></a>CPU ve Windows Sayaçları
+# <a name="cpu-and-windows-counters"></a>CPU ve Windows sayaçları
 
 Visual Studio profil oluşturucu, işletim sistemi (Windows sayaçları) tarafından oluşturulan performans verilerini ve işlemci birimi (CPU sayaçları) tarafından oluşturulan performans verilerini toplamanıza olanak sağlar.
 
@@ -41,11 +42,11 @@ Performans sayaçları CPU özgüdür. Farklı modelleri ve bir CPU sürümleri 
 
 Visual Studio profil oluşturucu, belirli olaylar için belirli bir platform desteklemeye devam eder. Örneğin, bir geliştirici Pentium 4 platformunda birlikte NetBurst mimarisi özgü olaylar saymak isteyebilirsiniz. Bu olay belirli bir platformda belirli performans oturumu için taşınabilir ancak geliştirici hala kullanılabilir değil.
 
-## <a name="portable-and-platform-events"></a>Taşınabilir ve Platform olaylarını
+## <a name="portable-and-platform-events"></a>Taşınabilir ve platform olaylarını
 
 Bir grup için belirli bir işlemci özgü olmayan CPU sayaçları taşınabilir olaylardır. Diğer tüm CPU sayaçları platform olayları adı verilir ve çeşitli platformlarda desteklenmiyor olabilir.
 
- Taşınabilir ve platform olaylarını sayaçlarını tanımlanır. XML dosyaları, burada sayaçlarıyla ilgili belirli değerler sağlanır. Veri Intel ve AMD CPU'lar, örneğin, farklı olduğundan farklı CPU'lar için birden çok dosya vardır. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] Profil oluşturucu için performans ölçüm kullanıcıya uygun sayaçları, taşınabilir ve platform sunmak için bu bilgileri kullanır.
+ Taşınabilir ve platform olaylarını sayaçlarını tanımlanır. *xml* dosyaları, burada sayaçlarıyla ilgili belirli değerler sağlanır. Veri Intel ve AMD CPU'lar, örneğin, farklı olduğundan farklı CPU'lar için birden çok dosya vardır. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] Profil oluşturucu için performans ölçüm kullanıcıya uygun sayaçları, taşınabilir ve platform sunmak için bu bilgileri kullanır.
 
 ### <a name="portable-events"></a>Taşınabilir olayları
 
@@ -78,7 +79,7 @@ Taşınabilir olayları aşağıdaki olaylar içerir:
 |L2 İsabetsiz Önbellek Okuma okuma sayısı|İkinci düzey önbellek sayısı isabetsiz okuma gösterir.|
 |L2 Önbellek Okuma başvuruları|Okunan ikinci düzey önbellek sayısı başvuruları gösterir. Yük isabetsiz içerir ve sahipliği (RFO) isabetsiz ve İsabeti için okuyun.|
 
-## <a name="viewing-available-counters"></a>Kullanılabilir sayaçlar görüntüleme
+## <a name="view-available-counters"></a>Kullanılabilir sayaçları görüntüleyin
 
 Bir komut istemi penceresinde üzerinde Visual Studio IDE içinde kullanılabilir CPU sayaçları listeleyebilirsiniz.
 
@@ -96,7 +97,7 @@ Visual Studio IDE içinde bir bilgisayarda kullanılabilir sayaçlar listelemek 
 
          **Not** tıklatın **iptal** önceki örnekleme yapılandırmaya dönmek için.
 
-     -veya-
+     veya
 
     -   Seçin **CPU sayaçları**ve ardından **toplamak CPU sayaçları**. CPU sayaçları listelenen **kullanılabilir sayaçlar**.
 
@@ -126,13 +127,13 @@ Kullanarak [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracını komut
 
      **\<Visual Studio performans araçları dizin > \VSPerfCmd /querycounters**
 
-     Burada  **\<Visual Studio performans araçları dizin >** Visual Studio yüklemenizin performans araçları dizinine genellikle yoludur
+     Burada  *\<Visual Studio performans araçları dizin >* Visual Studio yüklemenizin performans araçları dizinine genellikle yoludur
 
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *C:\Program Files\Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Bakışlar](../profiling/overviews-performance-tools.md)  
-[Nasıl yapılır: örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md)  
+[Nasıl yapılır: Örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md)  
 [Nasıl yapılır: CPU sayaç verileri toplama](../profiling/how-to-collect-cpu-counter-data.md)  
 [Nasıl yapılır: Windows sayaç verileri toplama](../profiling/how-to-collect-windows-counter-data.md)

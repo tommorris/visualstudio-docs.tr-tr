@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748494"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile birlikte kendi DSL tanım dosyası tarafından tanımlanır. DSL çözüm program kodunda çoğu bu dosyadan oluşturulur.
@@ -25,13 +26,13 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
 ## <a name="the-dsl-definition"></a>DSL tanımı
  Açtığınızda `Dsl\DslDefinition.dsl`, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] penceresinde, aşağıdaki resimde benzer.
 
- ![DSL Tasarımcısı](../modeling/media/dsl_designer.png "dsl_designer")
+ ![DSL Tasarımcısı](../modeling/media/dsl_designer.png)
 
  En önemli bilgiler DSL tanımında DSL tanımı diyagramda görüntülenir. Ayrıca DslDefinition.dsl bir parçası olan ek bilgileri genellikle diyagram tarafında görünür DSL Gezgini'nde görüntülenir. En sık kullanılan görevler için diyagram ile daha gelişmiş özelleştirmeler DSL Gezgini ile çalışırsınız.
 
  DSL tanımı diyagramı model öğelerini ve model öğeleri arasında bağlantılar tanımlamak ilişkileri tanımlayın etki alanı sınıflarını gösterir. Ayrıca, kullanıcıya model öğelerini görüntülemek için kullanılan bağlayıcılar ve şekilleri gösterir.
 
- ![kulvarlı DSL Tasarımcısı](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![kulvarlı DSL Tasarımcısı](../modeling/media/dsl_desinger.png)
 
  DSL tanımında, diyagram veya DSL Gezgini'nde, bir öğe seçtiğinizde, ilgili bilgileri Özellikler penceresinde görüntülenir. Ek bilgi DSL Ayrıntıları penceresinde görüntülenebilir.
 
@@ -45,13 +46,13 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
 
  Bu örnekte, Müzik Kitaplığı DSL kullanıcı tarafından oluşturulmuş bir model gösterilmiştir. Müzik albümlerini şarkıya listesini içeren kutuları ile temsil edilir. Sanatçılar yuvarlatılmış kutuları ile temsil edilir ve katkısı albümleri bağlanır.
 
- ![Oluşturulan DSL örneği modelinin](../modeling/media/music_instance.png "Music_Instance")
+ ![Oluşturulan DSL örnek modeli](../modeling/media/music_instance.png)
 
  DSL tanımı iki yön ayırır. Model diyagramı modeli öğeleri görünümünü şekil sınıfları ve bağlayıcı sınıfları kullanılarak tanımlanır. Model içinde taşınan bilgiler, etki alanı sınıfları ve etki alanı ilişkilerini kullanılarak tanımlanır.
 
  Aşağıdaki çizimde, Müzik Kitaplığı DSL tanımı'nda etki alanı sınıfları ve ilişkileri gösterir.
 
- ![Katıştırma ve başvuru ilişkileri](../modeling/media/music_classes.png "Music_Classes")
+ ![Katıştırma ve başvuru ilişkileri](../modeling/media/music_classes.png)
 
  Çizimde dört etki alanı sınıflarını gösterir: müzik, albüm, sanatçı ve şarkı. Etki alanı sınıflarını adı, başlık ve benzerleri gibi etki alanı özellikleri tanımlayın. Örnek modelinde, bu özelliklerden bazıları değerlerini diyagramı görüntülenir.
 
@@ -104,7 +105,7 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
 ### <a name="the-explorer-displays-the-embedding-tree"></a>Explorer katıştırma ağacı görüntüler
  DSL tanımınızı kendi model diyagramı yanı sıra kullanıcıların gördüğü bir explorer da oluşturur.
 
- ![Oluşturulan explorer'ın DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Oluşturulan explorer'ın DSL](../modeling/media/music_explorer.png)
 
  Gezgini tüm öğeleri modeldeki olanlar şekilleri tanımlamadığınız gösterir. Öğeleri ve katıştırma ilişkileri gösterir ancak ilişkileri başvuru değil.
 
@@ -122,7 +123,7 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
 
  Aşağıdaki resimde, arasındaki hat **yayımcı** etki alanı sınıfı ve **PublisherCatalog** etki alanı ilişkisinin kaynak rolüdür. Etki alanı ilişkisinin arasında çizgi ve **albüm** etki alanı sınıftır hedefi rolü.
 
- ![Roller ve özellikler. ] (../modeling/media/propertycode.png "PropertyCode")
+ ![Roller ve özellikler.](../modeling/media/propertycode.png)
 
  Model geçeceğini program kodu yazarken bir ilişki ile ilişkilendirilen adlar özellikle önemlidir. Örneğin, DSL çözümü yapılandırdığınızda, oluşturulan sınıf yayımcı albümleri koleksiyonudur katalog bir özelliğe sahiptir. Albüm sınıfı yayımcı sınıfının tek bir örneği olan yayımcı bir özelliğe sahiptir.
 

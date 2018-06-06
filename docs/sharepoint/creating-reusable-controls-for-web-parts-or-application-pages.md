@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47a519db245e2ec15548ba1d46a583d0a73f466f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9bc2dc1af5f2f040a15c5bee25a8d5dfc91afe2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693490"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764776"
 ---
-# <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma
+# <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma
   Visual Studio'da Uygulama sayfaları ve SharePoint çalıştıran Web bölümleri tarafından kullanılabilecek özel, yeniden kullanılabilir denetimler oluşturabilirsiniz. Bu denetimler, kullanıcı denetimleri denir. Bir kullanıcı denetimi, bir ASP.NET Web sayfası benzer çalışır bileşik denetim türüdür — varolan Web sunucusu denetimleri ve biçimlendirme kullanıcı denetimine ekleyin ve denetim için özellikleri ve yöntemleri tanımlar. Sonra bunları burada bunlar bir birim olarak hareket ASP.NET Web sayfalarında eklenebilir.  
   
 ## <a name="create-a-user-control"></a>Bir kullanıcı denetimi oluşturma

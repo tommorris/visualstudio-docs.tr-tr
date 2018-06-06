@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751721"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>İzlenecek yol: Oluşturma ve UWP uygulamaları için birim testleri çalıştırma
 
@@ -45,11 +46,11 @@ Aşağıdaki yordamlar oluşturmak, çalıştırmak ve bir UWP uygulaması için
 
 6.  Bırakın **çözüm için dizin oluştur** seçeneği seçili ve seçin **Tamam** düğmesi.
 
-     ![Birim testi kitaplığı uyarlanmış](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Özel birim testi kitaplığı](../test/media/unit_test_win8_1.png)
 
      Çözüm Gezgini UWP birim testi projesi ile doldurulur ve UnitTest1 başlıklı varsayılan birim testi kod düzenleyicisinde görüntüler.
 
-     ![Yeni özel birim testi projesi](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Yeni özel birim testi projesi](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Birim test projesinin UWP uygulama bildirim dosyasının Düzenle
 
@@ -99,7 +100,7 @@ Kod Düzenleyicisi'nde, birim testi düzenleyebilir ve ekleme onaylar ve test i�
     >
     > Ayrıca, seçebileceğiniz **seçili Testlerde Hata Ayıkla**, **açık Test**ve **özellikleri** seçeneği.
     >
-    > ![Birim testi Explorer &#45; UNI test bağlam menüsü](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Birim testi Explorer &#45; UNI test bağlam menüsü](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     Test çalışmasını birim. Tamamlandıktan sonra Test Gezgini geçen süre test durumu görüntüler ve kaynak için bir bağlantı sağlar.
 

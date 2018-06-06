@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751890"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>Nasıl yapılır: Sayaçlar Panelini Kullanarak Hataları Çözümleme
 
@@ -22,7 +23,7 @@ Bir yük testi çalışırken ya da bir yük testi sonuç çözümlerken Sayaçl
 
  **Hataları** Sayaçlar panelini düğümünde yük testi sırasında algılanan tüm hataları içerir. Hata düğümü farklı tür hatalara özgü çeşitli alt kategori hata düğümlerini içerir. Örneğin, **özel durumları** ve **HTTP hataları**.
 
- ![Sayaç bölmenin hata düğümü](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![Bölmenin hata düğümü sayacı](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>Sayaçlar panelini hatalarını çözümlemek için
 

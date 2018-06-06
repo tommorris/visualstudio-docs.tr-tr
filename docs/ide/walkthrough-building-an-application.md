@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir uygulama oluşturma'
+title: 'İzlenecek yol: Uygulama oluşturma'
 ms.date: 09/25/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,13 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748224"
 ---
-# <a name="walkthrough-build-an-application"></a>İzlenecek yol: bir uygulama oluşturma
+# <a name="walkthrough-build-an-application"></a>İzlenecek yol: Uygulama oluşturma
 
 Bu kılavuzu izleyerek daha Visual Studio ile uygulamalar derlerken yapılandırabileceğiniz çeşitli seçenekler öğrenmeniz. Özel derleme yapılandırması oluşturma, belirli uyarı iletileri Gizle ve örnek uygulaması derleme çıktı bilgilerini artar.
 
@@ -33,31 +34,31 @@ Değiştirebilir veya yapılandırmaları ve platform ayarları kullanarak oluş
 
 1. Açık **Configuration Manager** iletişim kutusu.
 
-   ![Menüsü, Configuration Manager komutu yapı](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![Menüsü, Configuration Manager komutu derleme](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. İçinde **etkin çözüm yapılandırması** listesinde, seçin  **\<yeni... \>**.
 
 1. İçinde **yeni çözüm yapılandırması** iletişim kutusunda, yeni yapılandırma adı `Test`, kopya ayarlarını varolandan **hata ayıklama** yapılandırma ve ardından **Tamam**düğmesi.
 
-   ![Yeni çözüm yapılandırması iletişim kutusu](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![Yeni çözüm yapılandırması iletişim kutusu](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. İçinde **etkin çözüm platformu** listesinde, seçin  **\<yeni... \>**.
 
 1. İçinde **yeni çözüm platformu** iletişim kutusunda, seçin **x64**ve ayarları x86 kopyalama platform.
 
-   ![Yeni çözüm platformu iletişim kutusu](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![Yeni çözüm platformu iletişim kutusu](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. Seçin **Tamam** düğmesi.
 
    Etkin çözüm yapılandırması değiştirildi **Test** x64 için ayarlanmış etkin çözüm platformu ile.
 
-   ![Configuration Manager ile Test yapılandırması](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Configuration Manager ile Test yapılandırması](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. Seçin **Kapat**.
 
 Hızlı bir şekilde doğrulamak veya kullanarak etkin çözüm yapılandırmasını değiştirmek **çözüm yapılandırmaları** listesini **standart** araç.
 
-![Çözüm yapılandırma seçeneği standart araç](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![Çözüm yapılandırma seçeneği standart araç çubuğu](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>Uygulama oluşturma
 
@@ -83,9 +84,9 @@ Sonraki biz derleyici tarafından üretilen bir uyarı neden olan bazı kodlar e
 
 **Çıkış** penceresi yapı sonuçlarını görüntüler. Yapı başarılı oldu ancak uyarılar oluşturuldu:
 
-![Çıktı penceresi Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![Çıktı penceresi Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![Çıktı penceresi Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Çıktı penceresi Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 Geçici olarak derleme sırasında belirli uyarı iletileri Gizle yerine, bunları yapı çıktıda karmaşıklığa.
 
@@ -99,7 +100,7 @@ Geçici olarak derleme sırasında belirli uyarı iletileri Gizle yerine, bunlar
 
 1. Seçin **yapı** sayfasında, daha sonra **uyarıları bastırma** kutusunda, uyarı numarasını belirtin **0168**.
 
-     ![Derleme sayfası, Proje Tasarımcısı](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![Derleme sayfası, Proje Tasarımcısı](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Daha fazla bilgi için bkz: [derleme sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -107,7 +108,7 @@ Geçici olarak derleme sırasında belirli uyarı iletileri Gizle yerine, bunlar
 
      **Çıkış** penceresi yalnızca derleme için Özet bilgiler görüntüler.
 
-     ![Çıktı penceresi, Visual C&#35; uyarıları yapı](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Çıktı penceresi, Visual C&#35; uyarılar oluştur](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Tüm Visual Basic derleme uyarıları bastırma
 
@@ -119,7 +120,7 @@ Geçici olarak derleme sırasında belirli uyarı iletileri Gizle yerine, bunlar
 
 1. Üzerinde **derleme** sayfasında, **tüm uyarıları devre dışı bırakmak** onay kutusu.
 
-     ![Derle sayfası, Proje Tasarımcısı](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![Derle sayfası, Proje Tasarımcısı](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Daha fazla bilgi için bkz: [Visual Basic'te uyarıları yapılandırmak](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -127,7 +128,7 @@ Geçici olarak derleme sırasında belirli uyarı iletileri Gizle yerine, bunlar
 
  **Çıkış** penceresi yalnızca derleme için Özet bilgiler görüntüler.
 
- ![Çıktı penceresi, Visual Basic derleme uyarıları](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![Çıktı penceresi, Visual Basic uyarıları yapı](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  Daha fazla bilgi için bkz: [nasıl yapılır: Derleyici uyarılarını gizleme](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -143,7 +144,7 @@ Derleme işlemi hakkında ne kadar bilgi görünür değiştirebilirsiniz **çı
 
 1. Açık **seçenekleri** iletişim kutusu.
 
-     ![Araçlar menüsündeki Seçenekler](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")
+     ![Araçlar menüsünden Seçenekler komutu](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. Seçin **projeler ve çözümler** kategorisi ve ardından **derleme ve çalıştırma** sayfası.
 
@@ -174,7 +175,7 @@ Daha fazla bilgi için bkz: [nasıl yapılır: yapı çıktı dizinini değişti
 
 1. Açık **Proje Tasarımcısı**.
 
-     ![Görünüm menüsü, özellik sayfaları komutu](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Görünüm menüsü, özellik sayfaları komutu](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Seçin **derleme** sayfası.
 
@@ -191,13 +192,13 @@ Daha fazla bilgi için bkz: [nasıl yapılır: yapı çıktı dizinini değişti
 
 1. Uygulamayı oluşturun.
 
-     ![Build menüsünden yapı çözümü komutu](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")
+     ![Build menüsünden yapı çözümü komutu](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>Yayın derlemesi C# ' ta belirtin #
 
 1. Açık **Proje Tasarımcısı**.
 
-     ![Görünüm menüsü, özellik sayfaları komutu](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Görünüm menüsü, özellik sayfaları komutu](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Seçin **yapı** sayfası.
 
@@ -216,7 +217,7 @@ Daha fazla bilgi için bkz: [nasıl yapılır: yapı çıktı dizinini değişti
 
 1. Uygulamayı oluşturun.
 
-     ![Build menüsünden yapı çözümü komutu](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")
+     ![Build menüsünden yapı çözümü komutu](../ide/media/exploreide-buildsolution.png)
 
    Yürütülebilir dosya, belirttiğiniz ağ yolunu kopyalanır. Kendi yol `\\myserver\builds\\FileName.exe`.
 

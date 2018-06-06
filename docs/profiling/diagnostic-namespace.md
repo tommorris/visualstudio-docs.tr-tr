@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3e6909bcb7299f4fd6d725334c26d2b59e0edb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764676"
 ---
-# <a name="diagnostic-namespace"></a>Tanılama Ad Alanı
+# <a name="diagnostic-namespace"></a>Tanılama ad alanı
 `diagnostics` Ad alanı, eşzamanlılık görselleştiricisi işaretleyicileri yayma için işlevsellik sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -45,9 +46,9 @@ namespace diagnostic;
 |[marker_importance Sabit Listesi](../profiling/marker-importance-enumeration.md)|Eşzamanlılık görselleştiricisi işaret önem düzeyini temsil eder.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cvmarkersobj.h  
+ **Başlık:** *cvmarkersobj.h*  
   
  **Namespace:** eşzamanlılık  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı (Eşzamanlılık Görselleştiricisi)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Eşzamanlılık ad alanı (eşzamanlılık görselleştiricisi)](../profiling/concurrency-namespace-concurrency-visualizer.md)

@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44e82b15ff2d4bdfaac5e8e9eca672ecdc1780a9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767627"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Nasıl yapılır: SharePoint Projelerine Özellik Ekleme
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Nasıl yapılır: SharePoint projelerine özellik ekleme
   Herhangi bir SharePoint projesine bir özellik eklemek için bir proje uzantısı kullanabilirsiniz. Özellik görünür **özellikleri** proje seçildiğinde penceresi **Çözüm Gezgini**.  
   
  Aşağıdaki adımlar, bir proje uzantısı zaten oluşturduğunuzu varsayalım. Daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 3.  Olay işleyicisi içinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> olay özellikleri sınıfına bir örnek ekler <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> olay bağımsız değişken parametre koleksiyonu.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği, iki özellik SharePoint projelerine ekleme gösterilmiştir. Bir özellik devam ederse, proje kullanıcı seçeneği dosyasında verilerini (. csproj.user dosya veya. vbproj.user dosyası). Diğer özelliği (.csproj veya .vbproj dosyası) proje dosyasında verilerini devam ettirir.  
+ Aşağıdaki kod örneği, iki özellik SharePoint projelerine ekleme gösterilmiştir. Bir özellik devam ederse, proje kullanıcı seçeneği dosyasında verilerini ( *. csproj.user* dosya veya *. vbproj.user* dosyası). Diğer proje dosyasında verilerini kalıcı (*.csproj* dosya veya *.vbproj* dosyası).  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
@@ -66,23 +67,23 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:System.ComponentModel.EditorAttribute>: Özelliği değiştirmek için kullanılacak özel bir düzenleyici belirtir.  
   
-## <a name="compiling-the-code"></a>Kod Derleniyor  
+## <a name="compiling-the-code"></a>Kod derleme  
  Bu örnekte aşağıdaki derlemelere başvuruları gerektirir:  
   
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.Shell  
-  
--   Microsoft.VisualStudio.Shell.Interop  
-  
--   Microsoft.VisualStudio.Shell.Interop.8.0  
-  
+-   Microsoft.VisualStudio.SharePoint
+-    
+-   Microsoft.VisualStudio.Shell
+-     
+-   Microsoft.VisualStudio.Shell.Interop
+-     
+-   Microsoft.VisualStudio.Shell.Interop.8.0
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>Uzantısını dağıtma  
  Uzantıyı dağıtmak için oluşturma bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer dosyalar için. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint projelerini genişletme](../sharepoint/extending-sharepoint-projects.md)   
  [Nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Nasıl yapılır: bir kısayol menü öğesini SharePoint projelerine ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   

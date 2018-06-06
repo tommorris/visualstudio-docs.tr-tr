@@ -1,5 +1,5 @@
 ---
-title: Bir veri kümesini XML verilerini okuma
+title: Bir veri kümesinin içine XML verileri okuma
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745942"
 ---
-# <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesini XML verilerini okuma
+# <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
 ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda, bir veri kümesini XML verileri yükler bir Windows uygulaması oluşturun. Veri kümesi sonra görüntülenen bir <xref:System.Windows.Forms.DataGridView> denetim. Son olarak, XML dosyasının içeriğine göre bir XML şeması bir metin kutusunda görüntülenir.
 
  Bu kılavuzda beş ana adımdan oluşur:
@@ -53,7 +54,7 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
 
 1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
 
-2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Klasik Masaüstü**.
+2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 

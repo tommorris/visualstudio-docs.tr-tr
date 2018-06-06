@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27581387b9775d2e2cf4401c811dab09b15c3722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748679"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL örneklerini güncellemek için kullanabileceğiniz bir API üretir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu API DSL tanımından oluşturulan kodda tanımlanır. Bu konuda oluşturulan API açıklanmaktadır.
@@ -28,7 +29,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL örneklerini güncel
 
  Bu çözüm şablonla bilmiyorsanız F5, deneme, basın. Bir bileşenin üzerine bir bağlantı noktası aracını sürükleyerek bağlantı oluşturmak ve bağlantı noktaları bağlanabilir özellikle dikkat edin.
 
- ![Bileşenleri ve birbirine bağlı bağlantı noktaları](../modeling/media/componentsample.png "ComponentSample")
+ ![Bileşenleri ve birbirine bağlı bağlantı noktaları](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL Çözüm yapısı
  **Dsl** proje için DSL API tanımlar. **DslPackage** proje tanımlar nasıl ile tümleştirilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Modelden oluşturulan kod de içerebilir kendi projeleri de ekleyebilirsiniz.

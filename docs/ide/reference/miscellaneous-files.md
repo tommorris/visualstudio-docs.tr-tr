@@ -22,18 +22,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2106c89b9bbef2babbe7e4d203c32a1d96d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747739"
 ---
 # <a name="miscellaneous-files"></a>Çeşitli Dosyalar
 Kullanmak istediğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bağımsız olarak bir projeden veya bir çözüm dosyalarda çalışmak için düzenleyiciler. Açık bir çözüm sahip olsa da, açın ve bir çözüm ya da bir proje eklemeden dosyaları değiştirin. Çeşitli dosyalar bağımsız olarak kapsayıcılardan çalışmak istediğiniz dosya adı verilir. Çeşitli dosyalar çözümler ve projeler için dış, derlemelerde eklenmez ve kaynak denetimi altında bir çözümüyle eklenemez.
 
  Dosyaları bağımsız olarak bir kapsayıcı açma çeşitli nedenlerden dolayı kullanışlıdır. Proje tabanlı bir çözümdür ancak geliştirmek için çözümün geliştirme tam sayı olmamasına karşın görüntülemek istediğiniz bir dosyanız olabilir. Yaygın örnek geliştirme notları veya yönergeleri, veritabanı şeması ve kod klipleri verilebilir. Ayrıca, tek başına bir dosya oluşturmak isteyebilirsiniz.
 
- ![Çözüm projeleri](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")
+ ![Çözüm projeleri](../../ide/reference/media/projects_solutions_misc.gif)
 
  Klasör seçenekleri etkinleştirilirse Çözüm Gezgini dosyaları için çeşitli dosyalar klasörü görüntüleyebilirsiniz. Seçenekler arasında ayarlanabilir [belgeler, ortam, Seçenekler iletişim kutusu](../../ide/reference/documents-environment-options-dialog-box.md). Çeşitli dosya kapattıktan sonra bir seçenek için de etkinleştirilmediği sürece herhangi bir belirli çözüm veya proje ile ilişkili değil.
 

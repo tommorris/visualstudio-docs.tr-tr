@@ -18,13 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c7cfc4cd1aa5736b4027155bd52be3ab095e60
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766707"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>Visual Studio'da profili uygulama performansı
+# <a name="profile-application-performance-in-visual-studio"></a>Visual Studio’da uygulama performansının profili oluşturma
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **CPU kullanımı** sekmesi, uygulamanız için performans verilerini almak için tanılama araçları. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET, dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
   
 Hata ayıklayıcıyı zaman duraklatır, **CPU kullanımı** aracı uygulamanızda yürütülen işlevler hakkında bilgi toplar. Aracı iş gerçekleştirdiğiniz işlevleri listeler ve örnekleme oturum belirli kesimlerinde odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafik sağlar.
@@ -35,7 +36,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 |---------|---------|
 |  ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin")  |    [Bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) CPU kullanımı analiz etme ve bellek kullanımını analiz etme gösterir tanılama araçlarını kullanma. |
 
-Bu konuda, biz hata ayıklama normal iş akışınızda çözümlenirken CPU kullanımı ele alacağız. CPU kullanımı - daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya bir hata ayıklayıcısı ekli olmadan çözümleyebilirsiniz [hata ayıklama olmadan profil oluşturma verilerini toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [Profil Araçları ile veya olmadanhataayıklayıcıÇalıştır](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Bu makalede, biz hata ayıklama normal iş akışınızda çözümlenirken CPU kullanımı ele alacağız. CPU kullanımı - daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya bir hata ayıklayıcısı ekli olmadan çözümleyebilirsiniz [hata ayıklama olmadan profil oluşturma verilerini toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [Profil Araçları ile veya olmadanhataayıklayıcıÇalıştır](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 > [!NOTE]
 > .NET Core ve ASP.NET Core için CPU kullanımını aracı taşınabilir PBDs ile doğru sonuçlar şu anda sağlamaz. Bunun yerine tam pdb kullanın.
@@ -143,7 +144,7 @@ Sütun değerleri hakkında daha fazla bilgi aşağıdadır:
 
 - **Modülleri** işlevi veya işlevleri [dış kodu] düğümünde içeren modüllerin sayısını içeren modül adı.
 
-## <a name="BKMK_External_Code"></a>Dış görünümü kodu
+## <a name="view-external-code"></a>Dış görünümü kodu
 
 Yazdığınız kodu tarafından gerçekleştirilen sistem ve framework bileşenleri işlevlerde dış kodu var. Harici kod başlatın ve uygulamayı durdurun, UI çizin, iş parçacığı oluşturma denetleyen ve diğer alt düzey uygulama hizmetleri sağlamak işlevler içerir. Çoğu durumda, dış kodda ilgilenen olmayacaktır ve böylece CPU kullanımı Aracı'nı toplar kullanıcı yönteminin dış işlevler birine **[dış kodu]** düğümü.
   
@@ -156,7 +157,7 @@ Harici kod çağrısı yollarını görüntülemek istiyorsanız, tercih **Göst
 Aradığınız bir düğüm bulmak için arama kutusunu kullanın, sonra verileri görünüme getirmek için yatay kaydırma çubuğu kullanın.
 
 > [!TIP]
-> Windows işlevlerini çağıran harici kod profil, en güncel .pdb dosyaları sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümlerini şifreli ve anlaşılması zor Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak nasıl hakkında daha fazla bilgi için bkz: [belirtin simge (.pdb) ve kaynak dosyaları hata ayıklayıcı](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Windows işlevlerini çağıran harici kod profil, en güncel olduğundan emin olun. *pdb* dosyaları. Bu dosyalar olmadan rapor görünümlerini şifreli ve anlaşılması zor Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak nasıl hakkında daha fazla bilgi için bkz: [belirt simgesi (. *pdb*) ve kaynak dosyaları hata ayıklayıcı](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

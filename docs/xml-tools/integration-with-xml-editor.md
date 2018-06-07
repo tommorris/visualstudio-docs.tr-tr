@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2e2b7a9e6511faaa1941d65f6b328a07b10f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ae7595121fcefa36998a88b53aae466d3a726cb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573329"
 ---
 # <a name="integration-with-xml-editor"></a>XML Düzenleyicisi ile tümleştirme
 
@@ -22,9 +23,9 @@ XML şema Tasarımcısı XML Düzenleyicisi ile tümleşiktir. Bir XSD dosyası 
 
 -   XML Düzenleyicisi'nde, bir düğüme sağ tıklayın ve seçin **Göster XML Şeması Explorer'da**.
 
--   Grafik görünümü ve XML Şeması Explorer'da bir düğümü çift tıklatın veya bir düğüme sağ tıklayın ve seçin **görünümü kodu**. İçerik modeli görünümünde, bir düğüme sağ tıklayın ve seçin **görünümü kodu**.
+-   Grafik görünümünde ve **XML Şeması Explorer**, bir düğüme çift tıklayın veya bir düğüme sağ tıklayın ve seçin **görünümü kodu**. İçerik modeli görünümünde, bir düğüme sağ tıklayın ve seçin **görünümü kodu**.
 
-Aşağıdaki ekran görüntüsü, bir XML Şeması XML şema Gezgini'nde açılan gösterir. XML şema Explorer ağaç görünümünde kümesi şemasını görüntüler. XML Düzenleyicisi'ni XML Şeması Explorer'da şu an etkin olan düğümün metin görünümünü görüntüler.
+Aşağıdaki ekran görüntüsü açılır bir XML şeması gösterir **XML Şeması Explorer**. **XML Şeması Explorer** bir ağaç görünümünde kümesi şemasını görüntüler. XML Düzenleyicisi'ni şu anda etkin olan düğümün metin görünümünü görüntüler **XML Şeması Explorer**.
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
@@ -32,6 +33,6 @@ Bazen XML Düzenleyicisi'ni ve yan yana grafik Tasarımcı kodu görmek yararlı
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Şema Gezgini](../xml-tools/xml-schema-explorer.md)

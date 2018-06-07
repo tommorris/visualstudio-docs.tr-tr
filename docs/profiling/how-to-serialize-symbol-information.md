@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c59395eb74f2c79c6a7d7e1b9c56f420e9705a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a86c7171b781f85ae4679209519267adcadcc090
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573316"
 ---
-# <a name="how-to-serialize-symbol-information"></a>Nasıl yapılır: Sembol Bilgilerini Serileştirme
-Uygulamanızı analiz etmek zorunda simgeleri seri hale getirebilir. Sembol serileştirme simgeleri .vsp dosyasına ekler. Sembol bilgileri .vsp dosyasına ekleyerek, diğerleri erişmek özgün simgeleri zorunda kalmadan bir performans raporu analiz edebilirsiniz. Simgeler seri duruma, özgün Araçlı .exe ve .vsp dosyasını çözümlemek için .pdb dosyaları olması gerekir.  
+# <a name="how-to-serialize-symbol-information"></a>Nasıl yapılır: sembol bilgilerini serileştirme
+Uygulamanızı analiz etmek zorunda simgeleri seri hale getirebilir. Sembol serileştirme simgeleri ekler. *vsp* dosya. Sembol bilgilerini ekleyerek düzenleyin. *vsp* dosyasını, diğerleri çözümlemek bir performans raporu erişmek özgün simgeleri zorunda kalmadan. Simgeler seri duruma, özgün izleme eklenmiş olması gerekir. *exe* ve. *pdb* çözümlemek için dosyaları. *Vsp* dosya.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Otomatik olarak sembol bilgilerini serileştirme için  
   
@@ -34,7 +35,7 @@ Uygulamanızı analiz etmek zorunda simgeleri seri hale getirebilir. Sembol seri
   
 3.  Altında **genel ayar**seçin **otomatik olarak sembol bilgilerini serileştirme**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
- [Nasıl yapılır: başvuru pencereleri sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Nasıl yapılır: başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)   
  [Nasıl yapılır: Kaydet analiz raporu dosyaları](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)

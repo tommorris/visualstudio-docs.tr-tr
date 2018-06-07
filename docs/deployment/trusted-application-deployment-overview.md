@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572247"
 ---
 # <a name="trusted-application-deployment-overview"></a>Güvenilir Uygulama Dağıtımına Genel Bakış
 Bu konu nasıl dağıtılacağı bir bakış sunar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Güvenilir Uygulama Dağıtımı teknolojisi kullanarak yükseltilmiş izinleri olan uygulamalar.  
@@ -86,7 +87,7 @@ Bu konu nasıl dağıtılacağı bir bakış sunar [!INCLUDE[ndptecclick](../dep
  Güvenilir uygulama dağıtımı için belirli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ve yalnızca kullanılabilir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar.  
   
 ### <a name="sign-the-deployment"></a>Dağıtımı imzalayın  
- Sertifikanızı aldıktan sonra onu dağıtımınızı imzalamak için kullanmanız gerekir. Uygulamanızı kullanarak dağıtıyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama Sihirbazı, size bir sertifika kendiniz belirtmediyseniz Sihirbazı otomatik olarak bir test sertifikası sizin için oluşturur. Aynı zamanda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje Tasarımcısı penceresinde, ancak bir CA tarafından sağlanan bir sertifika sağlamak için.  Ayrıca bkz. [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama] (http://msdn.microsoft.com/library/31kztyey\(v=vs.110\).  
+ Sertifikanızı aldıktan sonra onu dağıtımınızı imzalamak için kullanmanız gerekir. Uygulamanızı kullanarak dağıtıyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama Sihirbazı, size bir sertifika kendiniz belirtmediyseniz Sihirbazı otomatik olarak bir test sertifikası sizin için oluşturur. Aynı zamanda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje Tasarımcısı penceresinde, ancak bir CA tarafından sağlanan bir sertifika sağlamak için.  Ayrıca bkz. [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  Uygulama bir test sertifikası ile dağıtılması önermiyoruz.  

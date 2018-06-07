@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ddc360e6146678730d1844e4762ac3f6112a97d3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572572"
 ---
 # <a name="how-to-update-existing-templates"></a>Nasıl yapılır: varolan şablonları güncelleme
 
@@ -72,4 +73,3 @@ Var olan bir şablonunu kullanmadan güncelleştirebilirsiniz **şablonu Dışar
 - [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)
 - [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
 - [Şablon parametreleri](../ide/template-parameters.md)
-- [Nasıl yapılır: başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md)

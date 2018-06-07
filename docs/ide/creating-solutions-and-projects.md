@@ -17,13 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571620"
 ---
-# <a name="create-solutions-and-projects"></a>Çözümler ve projeler oluşturma
+# <a name="create-solutions-and-projects"></a>Projeler ve çözümler oluşturma
 
 *Projeleri* kaynak kodu dosyaları, bit eşlemler, simgeler gibi ve uygulamanızı oluşturmak için gereken öğeleri tutun Visual Studio ve bileşen ve hizmet başvurular mantıksal kapsayıcılardır. Yeni bir proje oluşturduğunuzda, Visual Studio oluşturur bir *çözüm* proje içerecek şekilde. İsterseniz diğer yeni veya mevcut projeleri çözüme daha sonra ekleyebilirsiniz. Çözümleri de belirli bir projeye bağlı olmayan dosyalar içerebilir.
 
@@ -136,5 +137,4 @@ Geçici bir proje oluşturmak için ilk Git **Araçları** > **seçenekleri** > 
 
 - [Çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md)
 - [Microsoft'un açık kaynak depoları github'da](https://github.com/Microsoft)
-- [Visual Studio Örnekleri](../ide/visual-studio-samples.md)
 - [Geliştirici kod örnekleri](https://code.msdn.microsoft.com/)

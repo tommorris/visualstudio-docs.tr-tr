@@ -14,17 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 603fe9c8aaa328e0ae1b42f385a0f8f2b5867955
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746020"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulama
 
 Bu kısa giriş Visual Studio tümleşik geliştirme ortamı (IDE) için bir Windows tabanlı kullanıcı arabirimi (UI) olan basit bir Visual Basic uygulama oluşturacaksınız.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
@@ -34,7 +35,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://a
 
 2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
 
-3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde **Visual Basic**ve ardından **Windows Klasik Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması (.NET Framework)**. Dosya adı `HelloWorld`.
+3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde **Visual Basic**ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması (.NET Framework)**. Dosya adı `HelloWorld`.
 
      Görmüyorsanız, **Windows Forms uygulaması (.NET Framework)** proje şablonu, dışı iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları**  >  **Alma araçları ve özelliklerinin...** . Visual Studio yükleyicisi başlatır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 

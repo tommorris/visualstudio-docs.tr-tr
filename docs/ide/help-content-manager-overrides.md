@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8a02f4af740910fe666af295aa8535c8aef8245c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571744"
 ---
 # <a name="help-content-manager-overrides"></a>Yardım İçerik Yöneticisi geçersiz kılar
 
-Yardım Görüntüleyicisi'ni ve Visual Studio IDE Yardım ilgili özellikleri varsayılan davranışını değiştirebilirsiniz. Bazı seçenekler oluşturarak belirtilir bir [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) çeşitli kayıt defteri anahtarı değerlerini ayarlamak için dosya. Başkalarının doğrudan kayıt defterinde ayarlanır.
+Yardım Görüntüleyicisi'ni ve Yardım ilgili özelliklerin Visual Studio IDE içinde varsayılan davranışını değiştirebilirsiniz. Bazı seçenekler oluşturarak belirtilir bir [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) çeşitli kayıt defteri anahtarı değerlerini ayarlamak için dosya. Başkalarının doğrudan kayıt defterinde ayarlanır.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Yardım Görüntüleyici davranışı .pkgdef dosyasını kullanarak denetleme
 
@@ -67,4 +68,3 @@ Aşağıdaki iki davranışları, Kayıt Defteri Düzenleyicisi'nde kayıt defte
 - [Yardım Görüntüleyicisi Yönetici Kılavuzu](../ide/help-viewer-administrator-guide.md)
 - [Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi](../ide/command-line-arguments-for-the-help-content-manager.md)
 - [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)
-- [Yalıtılmış Kabuk .pkgdef dosyasını kullanarak değiştirme](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

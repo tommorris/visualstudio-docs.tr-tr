@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573134"
 ---
 # <a name="how-to-use-xml-snippets"></a>Nasıl yapılır: XML kullanım parçacıkları
 
@@ -79,7 +80,7 @@ Aşağıdaki yordamlarda nasıl erişileceği açıklanmıştır **Surround With
 > [!NOTE]
 > **Surround With** komutu kullanılabilir ayrıca klavye kısayolu (**Ctrl**+**K**, ardından **Ctrl** + **S**).
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>Bağlam menüsünden surround ile kullanmak için
+### <a name="to-use-surround-with-from-the-context-menu"></a>Surround With bağlam menüsünden kullanmak için
 
 1. XML Düzenleyicisi'nde surround için metni seçin.
 
@@ -89,7 +90,7 @@ Aşağıdaki yordamlarda nasıl erişileceği açıklanmıştır **Surround With
 
 3. Fareyle listesinden veya kod parçacığında ve tuşlarına basarak adını yazarak parçacık **sekmesini** veya **Enter**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>IntelliSense menüsünden surround ile kullanmak için
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Surround With IntelliSense menüsünden kullanmak için
 
 1. XML Düzenleyicisi'nde surround için metni seçin.
 
@@ -99,7 +100,7 @@ Aşağıdaki yordamlarda nasıl erişileceği açıklanmıştır **Surround With
 
 3. Fareyle listesinden veya kod parçacığında ve tuşlarına basarak adını yazarak parçacık **sekmesini** veya **Enter**.
 
-## <a name="using-xml-snippets"></a>XML parçacıkları
+## <a name="use-xml-snippets"></a>XML parçacıklarını kullanma
 
 Bir XML parçacığını seçildikten sonra kod parçacığında metnin İmleç konumuna otomatik olarak eklenir. Kod parçacığını düzenlenebilir tüm alanlarda vurgulanır ve ilk düzenlenebilir bir alanı otomatik olarak seçilir. Seçili alanı Kutulu.
 
@@ -109,10 +110,10 @@ Verilen alana yalnızca ilk örneği düzenlenemez. Bu alan vurgulanmış, diğe
 
 Tuşuna basarak **Enter** veya **Esc** alan düzenlemeyi iptal eder ve normal olarak Düzenleyicisi döndürür.
 
-Kod parçacığı alanı ayarı değiştirerek düzenlenebilir kod parçacığını alanları için varsayılan renkleri değiştirilebilir **yazı tiplerini ve renkleri** bölmesinde **seçenekleri** iletişim kutusu. Daha fazla bilgi için bkz: [nasıl yapılır: değişiklik yazı tiplerini ve renkleri Düzenleyicisi'nde](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+Düzenlenebilir kod parçacığını alanları için varsayılan renkleri değiştirerek değiştirilebilir **kod parçacığını alanı** ayarı **yazı tiplerini ve renkleri** bölmesinde **seçenekleri** iletişim kutusu. Daha fazla bilgi için bkz: [nasıl yapılır: yazı tiplerini ve renkleri Düzenleyicisi'nde değiştirme](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [XML Kod Parçacıkları](../xml-tools/xml-snippets.md)
-- [Nasıl Yapılır: XML Şemasından XML Kod Parçacığı Oluşturma](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Nasıl Yapılır: XML Kod Parçacıkları Oluşturma](../xml-tools/how-to-create-xml-snippets.md)
+- [XML parçacıkları](../xml-tools/xml-snippets.md)
+- [Nasıl yapılır: XML şemasından bir XML parçacığını oluştur](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Nasıl yapılır: XML parçacıkları oluşturma](../xml-tools/how-to-create-xml-snippets.md)

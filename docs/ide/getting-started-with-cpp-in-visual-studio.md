@@ -13,11 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747358"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -33,7 +34,7 @@ Bu hızlı başlangıç tamamlamak için C++ ile ilgili bilgi sahibi olmanız ge
 
 Henüz çalışmıyorsa, Visual Studio'yu başlatın.
 
-![Visual C ile IDE&#43; &#43; uygulanan ayarları](../ide/media/get-started-cpp-ide-layout.png "IDE Visual C ile&#43; &#43; uygulanan ayarları")
+![Visual C ile IDE&#43; &#43; uygulanan ayarları](../ide/media/get-started-cpp-ide-layout.png)
 
 Visual Studio açtıktan sonra IDE üç temel bölümlerini görebilirsiniz: aracı windows, menüleri ve araç çubukları ve ana penceresi alanı. Araç pencereleri ve uygulama penceresinin sol tarafında üzerinde sabitlenir. **Hızlı başlatma** kutusu, menü çubuğundaki ve standart araç en üstünde bulundu. Pencerenin merkezi içerir **başlangıç sayfası**. Bir çözüm ya da projeyi açtığınızda, düzenleyiciler ve tasarımcıları bu alanında görünür. Bir uygulama geliştirirken, çoğu zaman, bu merkezi alanında harcanır.
 
@@ -43,11 +44,11 @@ Visual Studio kullanan *projeleri* bir uygulama kodunu düzenlemenizi ve *çöz�
 
 1. Menü çubuğunda seçin **Dosya > Yeni > Proje** açmak için **yeni proje** iletişim kutusu.
 
-   ![Menü çubuğunda, Dosya > Yeni > Proje](../ide/media/get-started-cpp-file-new-project-menu.png "menü çubuğunda, Dosya > Yeni > Proje")
+   ![Menü çubuğunda, Dosya > Yeni > Proje](../ide/media/get-started-cpp-file-new-project-menu.png)
 
 1. İçinde **yeni proje** iletişim kutusunda **yüklü > Visual C++** zaten seçili değilse. Orta bölmede seçin **Windows konsol uygulaması** şablonu. İçinde **adı** düzenleme kutusu, girin *HelloApp*.
 
-   ![Yeni Proje iletişim kutusu, uygulama projesi oluşturmak için kullanın](../ide/media/get-started-cpp-new-project-dialog.png "yeni proje iletişim kutusu, uygulama projesi oluşturmak için kullanın")
+   ![Yeni Proje iletişim kutusu, uygulama projesi oluşturmak için kullanın](../ide/media/get-started-cpp-new-project-dialog.png)
 
    İletişim kutusu bileşenleri yükledikten ve Visual Studio iş yükleri bağlı olarak farklı seçenekleriniz olabilir. Visual C++ proje şablonları görmüyorsanız Visual Studio yükleyiciyi yeniden çalıştırın ve yüklemek gereken **C++ ile masaüstü geliştirme** iş yükü. Bunu doğrudan yapabilirsiniz **yeni proje** iletişim. Yükleyici başlatmak için tercih **açık Visual Studio yükleyicisi** iletişim kutusundaki bağlantı.
 
@@ -55,7 +56,7 @@ Visual Studio kullanan *projeleri* bir uygulama kodunu düzenlemenizi ve *çöz�
 
    HelloApp proje ve çözüm, bir Windows konsol uygulaması için temel dosyalarla oluşturulur ve otomatik olarak yüklenen **Çözüm Gezgini**. *HelloApp.cpp* dosya Kod Düzenleyicisi'nde açılır. Bu öğe görünür **Çözüm Gezgini**:
 
-   ![Çözüm Gezgini'ndeki çözüme dosyaları](../ide/media/get-started-cpp-solution-explorer.png "Çözüm Gezgini'ndeki çözüme dosyaları")
+   ![Çözüm Gezgini'ndeki çözüme dosyaları](../ide/media/get-started-cpp-solution-explorer.png)
 
 ## <a name="add-code-to-the-app"></a>Uygulama için kod ekleme
 
@@ -71,11 +72,11 @@ Ardından, word görüntülemek için kod konsol penceresinde "Hello ifadesini" 
 
    Kırmızı kırık çizgi altında görünür `cout`. İşaretçinin üzerine getirirseniz, hata iletisi görüntülenir.
 
-   ![Cout hata metni](../ide/media/get-started-cpp-intellisense-error.png "cout hata metni")
+   ![Cout hata metni](../ide/media/get-started-cpp-intellisense-error.png)
 
    Hata iletisi de görünür **hata listesi** penceresi. Bu pencere seçerek görüntüleyebilirsiniz **Görünüm > hata listesi** menü çubuğunda.
 
-   ![Hata Listesi penceresini hata](../ide/media/get-started-cpp-error-list.png "hata listesi penceresini hatası")
+   ![Hata Listesi penceresini hatası](../ide/media/get-started-cpp-error-list.png)
 
    Kodunuz için bir bildirim eksik [std::cout](/cpp/standard-library/iostream), içinde bulunan  *\<iostream >* üstbilgi dosyası.
 
@@ -88,7 +89,7 @@ Ardından, word görüntülemek için kod konsol penceresinde "Hello ifadesini" 
 
    Büyük olasılıkla kodu girdiğiniz gibi görünen bir kutusu fark. Bu kutu otomatik tamamlama önerileri girdiğiniz karakterler içerir. Sınıfta veya arabirimde üye ve parametre bilgileri de dahil olmak üzere kodlama istemleri sağlayan C++ IntelliSense parçası kullanıcının. Kodu önceden tanımlanmış taşlarıdır kod parçacıkları de kullanabilirsiniz. Daha fazla bilgi için bkz: [kullanarak IntelliSense](../ide/using-intellisense.md) ve [kod parçacıkları](../ide/code-snippets.md).
 
-   ![Sabit Kod düzenleyicisinde](../ide/media/get-started-cpp-cout-fix.png "sabit Kod Düzenleyicisi")
+   ![Sabit Kod Düzenleyicisi](../ide/media/get-started-cpp-cout-fix.png)
 
    Altında kırmızı kırık çizgi `cout` hata düzelttiğinizde kaybolur.
 
@@ -98,7 +99,7 @@ Ardından, word görüntülemek için kod konsol penceresinde "Hello ifadesini" 
 
 Kodunuzu oluşturmak kolaydır. Menü çubuğunda seçin **Yapı > Yapı çözümü**. Visual Studio HelloApp çözüm oluşturur ve raporları ilerleme **çıkış** penceresi.
 
-   ![HelloApp çözümü derleme](../ide/media/get-started-cpp-build-solution.gif "HelloApp çözümü oluşturun")
+   ![HelloApp çözümü oluşturun](../ide/media/get-started-cpp-build-solution.gif)
 
 ## <a name="debug-and-test-the-app"></a>Hata ayıklama ve uygulamayı test etme
 
@@ -108,7 +109,7 @@ Kodunuzu oluşturmak kolaydır. Menü çubuğunda seçin **Yapı > Yapı çözü
 
 Hata ayıklayıcı başlatmayı seçin **hata ayıklama > hata ayıklamayı Başlat** menü çubuğunda.
 
-![Hata ayıklama menüsündeki komutu hata ayıklamayı Başlat](../ide/media/get-started-cpp-start-debugging-menu.png "hata ayıklamayı Başlat menüsündeki hata ayıklama")
+![Hata ayıklama komutu Debug menüsünden Başlat](../ide/media/get-started-cpp-start-debugging-menu.png)
 
 Hata ayıklayıcı başlar ve kodu çalıştırır. Konsol penceresi (bir komut istemi gibi görünüyor ayrı bir pencerede) birkaç saniye görünür ancak hata ayıklayıcı çalışmayı durdurduğunda hızlı bir şekilde kapatır. Metin görmek için program yürütme durdurmak için kesme noktası ayarlamanız gerekir.
 
@@ -116,17 +117,17 @@ Hata ayıklayıcı başlar ve kodu çalıştırır. Konsol penceresi (bir komut 
 
 1. Düzenleyicisi'nde imleci satıra yerleştirin `return 0;`. Menü çubuğunda seçin **hata ayıklama > kesme**. Bir kesme noktası ayarlamak için sol kenar boşluğunda de tıklayabilirsiniz.
 
-     ![Hata Ayıklama menüsünde kesme komutu geçiş](../ide/media/get-started-cpp-toggle-breakpoint-menu.png "Debug menüsünden kesme komutu")
+     ![Hata Ayıklama menüsünde kesim noktasını Değiştir komutu](../ide/media/get-started-cpp-toggle-breakpoint-menu.png)
 
      Düzenleyici penceresinin en sol kenar boşluğunda, kod satırının yanında kırmızı bir daire görünür.
 
-     ![Kesme noktası belirtilen pencere kenar boşluğunda](../ide/media/get-started-cpp-breakpoint-set.png "kesme noktası belirtilen pencere kenar boşluğunda")
+     ![Pencere kenar boşluğunda belirtilen kesme noktası](../ide/media/get-started-cpp-breakpoint-set.png)
 
 1. Hata ayıklama başlatmak için basın **F5**.
 
    Hata ayıklayıcıyı başlatır, ve word gösteren bir konsol penceresi görünür **Hello**.
 
-   ![Metin konsol penceresinde Hello](../ide/media/get-started-cpp-helloapp-window.png "Hello konsol penceresinde metin")
+   ![Konsol penceresinde Hello metin](../ide/media/get-started-cpp-helloapp-window.png)
 
 1. Hata ayıklamayı durdurmak için basın **Shift + F5**.
 
@@ -140,11 +141,11 @@ Her şeyi çalıştığını doğruladıktan, uygulamanın yayın derlemesi haz�
 
 1. Menü çubuğunda seçin **Yapı > temiz çözüm** Ara dosyaları ve önceki yapıları sırasında oluşturulan çıkış dosyaları silmek için.
 
-   ![Yapı menüsünde çözümü Temizle komutunu](../ide/media/get-started-cpp-clean-solution-menu.png "ExploreIDE CleanSolution")
+   ![Build menüsünden temiz çözümü komutu](../ide/media/get-started-cpp-clean-solution-menu.png)
 
 1. HelloApp çözüm yapılandırmasını değiştirmek için **hata ayıklama** için **sürüm**, araç çubuğunda, çözüm yapılandırmaları denetimindeki açılır seçin ve ardından **sürüm**.
 
-   ![Uygulama sürümü yapı](../ide/media/get-started-cpp-set-release-configuration.png "C ++ IDE_ChangingBuildtoRelease")
+   ![Uygulamanın yayın sürümünü oluşturma](../ide/media/get-started-cpp-set-release-configuration.png)
 
 1. Çözümü oluşturun. Menü çubuğunda seçin **Yapı > Yapı çözümü**.
 
@@ -157,5 +158,3 @@ Bu hızlı başlangıç Tamamlanıyor Tebrikler! Daha fazla örnek keşfetmek, b
 - [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanma](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [İzlenecek yol: C# veya Visual Basic ile basit uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Visual Studio için üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)
-- [Visual Studio Örnekleri](../ide/visual-studio-samples.md)
-- [Visual Studio ile Geliştirmeye Başlarken](../ide/get-started-developing-with-visual-studio.md)

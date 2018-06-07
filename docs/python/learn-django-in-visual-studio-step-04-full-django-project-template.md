@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750369"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Öğreticisi 4. adım: tam Django Web projesi şablonunu kullanın
 
 **Önceki adımda: [hizmet statik dosyalar, sayfa ekleyin ve şablon devralma kullanın](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Visual Studio "Boş Django uygulama projesi" şablonunun üzerine bir uygulama oluşturarak Django temelleri incelediniz, "Django Web projesi" şablon tarafından üretilen eksiksiz uygulama kolayca anlayabilirsiniz.
+Visual Studio "Boş Django Web projesi" şablonunun üzerine bir uygulama oluşturarak Django temelleri incelediniz, "Django Web projesi" şablon tarafından üretilen eksiksiz uygulama kolayca anlayabilirsiniz.
 
 Bu konuda, şimdi adım:
 
@@ -40,7 +41,7 @@ Bu konuda, şimdi adım:
 
 1. Şablonu yeniden içerdiğinden bir `requirements.txt` dosyası, Visual Studio bu bağımlılıkların yükleneceği sorar. Seçeneği **sanal bir ortama yükleme**hem de **sanal ortam Ekle** iletişim kutusunda **oluşturma** Varsayılanları kabul etmek için.
 
-1. Python sanal ortamı kurma tamamlandıktan sonra görüntülenen'ndaki yönergeleri izleyin `readme.html` Django süper kullanıcı (diğer bir deyişle, bir yönetici) oluşturmak için. Yalnızca Visual Studio projesine sağ tıklatın ve **Python** > **Django süper kullanıcı oluşturma** komutunu ve ardından yönergeleri izleyin. Kullanıcı adı ve parola kimlik doğrulaması özelliklerini kullanan zaman kullandıkça kaydettiğinizden emin olun.
+1. Visual Studio sanal ortamı kurma tamamlandıktan sonra görüntülenen'ndaki yönergeleri izleyin `readme.html` Django süper kullanıcı (diğer bir deyişle, bir yönetici) oluşturmak için. Yalnızca Visual Studio projesine sağ tıklatın ve **Python** > **Django süper kullanıcı oluşturma** komutunu ve ardından yönergeleri izleyin. Kullanıcı adı ve parola kimlik doğrulaması özelliklerini kullanan zaman kullandıkça kaydettiğinizden emin olun.
 
 1. "DjangoWeb" projesini bu projeye sağ tıklayarak Visual Studio çözümü için varsayılan olacak şekilde ayarlayın **Çözüm Gezgini** ve seçerek **başlangıç projesi olarak ayarla**. Gösterilen başlangıç projesi içinde hata ayıklayıcı başlatıldığında ne çalıştırılan kalın.
 

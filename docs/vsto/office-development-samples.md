@@ -15,20 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571423"
 ---
-# <a name="office-development-samples"></a>Office Geliştirme Örnekleri
+# <a name="office-development-samples"></a>Office geliştirme örnekleri
   Visual Studio, Microsoft Office geliştirici araçları Office çözümleri oluşturmak için nasıl kullanılacağını gösteren örnek uygulamalar içerir. Bu örnek kodda sözdizimi, yapı ve Office çözümleri oluşturmak için kullanılan teknikleri gösterilmektedir.  
   
- En güncel örnekler için bkz: [MSDN geliştirici örnekleri: kod aracılığıyla bilgi](http://go.microsoft.com/fwlink/?LinkID=248199) Microsoft Web sitesinde.  
+ En güncel örnekler için bkz: [MSDN geliştirici örnekleri: kodla öğrenin](http://go.microsoft.com/fwlink/?LinkID=248199) Microsoft Web sitesinde.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
-## <a name="office-development-samples"></a>Office Geliştirme Örnekleri  
+## <a name="office-development-samples"></a>Office geliştirme örnekleri  
   
 |Örnek|Açıklama|  
 |------------|-----------------|  
@@ -42,8 +43,8 @@ ms.lasthandoff: 04/16/2018
 |UI Yönetici örneği|Şerit özelleştirme, özel görev bölmesini ve özel form bölgesini Outlook için VSTO eklenti içinde genişletilebilirlik arabirimleri uygulayarak nasıl oluşturulacağını gösterir. Şerit, görev bölmesi ve form bölgesini her örneği doğru birbirleri ile iletişim kurabilir.|  
 |VBA ve VSTO birlikte çalışabilirlik örneği|Bir yöntem bir belge düzeyi özelleştirmelerinde Excel için Visual Basic for Applications (VBA) kodunu çalışma kitabı nasıl çağrılacağını gösterir.<br /><br /> Bu örnek yalnızca çevrimiçi kullanılabilir.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MSDN geliştirici örnekleri: Kod örnekleri ile bilgi edinin](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Office Programlarındaki Ortak Görevler](../vsto/common-tasks-in-office-programming.md)  
+## <a name="see-also"></a>Ayrıca bkz.  
+ [MSDN geliştirici örnekleri: kod örnekleri ile bilgi edinin](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Windows sınırlamaları Forms Office belgelerindeki denetimler | Microsoft Docs
+title: Office belgelerindeki Windows Forms denetimleri sınırlamaları
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572965"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office Belgelerindeki Windows Forms Denetimleri Sınırlamaları
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office belgelerindeki Windows Forms denetimleri sınırlamaları
 
 Microsoft Office Word belgelerine veya Microsoft Office Excel çalışma sayfalarına eklenen Windows Forms denetimleri ve Windows Forms için eklenen Windows Forms denetimleri arasındaki bazı farklar vardır. Örneğin, eklediğinizde, bir <xref:Microsoft.Office.Tools.Word.Controls.Button> belgeye özellikler gibi kontrol <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, ve <xref:System.Windows.Forms.Control.TabIndex> beklediğiniz gibi davranır değil.
 
@@ -83,7 +84,7 @@ Windows Forms denetimleri genellikle aynı davranışı bir Office belgesi üzer
 |Denetim yeniden boyutlandırma|Sekiz boyutlandırma birini kullanarak belge üzerinde denetimi yeniden boyutlandırma, yeni denetim boyutları yansıtılmaz **özellikleri** denetimi yansıtımaz kadar penceresi.|
 |Denetim davranışı|Çalışma Sayfası penceresi ayrıldığında bir Excel çalışma sayfasındaki denetimleri beklenmedik şekilde davranabilir. Örneğin, erişim bir <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> çalışma sayfası üzerinde sadece windows birinde kullanılabilir olabilir.|
 |Denetim adlandırma|Ayrılmış sözcükler adı denetimleri için kullanamazsınız. Örneğin eklerseniz, bir <xref:Microsoft.Office.Tools.Excel.Controls.Button> bir çalışma sayfasına ve adla değiştirin **sistem**, projeyi derlerken hataları oluşur.|
-|Program aracılığıyla denetimleri ekleme|Denetimin Oluşturucusu bir denetim, belgeye çalışma zamanında eklemek için kullanmayın. Bunun yerine, tarafından sağlanan yardımcı yöntemler kullanın [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Örneğin, <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> çalışma sayfasına bir düğme ekleme yöntemi. Bu yardımcı yöntemler tarafından desteklenmeyen bir denetim eklemek istiyorsanız, AddControl yöntemi kullanabilirsiniz. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Program aracılığıyla denetimleri ekleme|Denetimin Oluşturucusu belgenizi çalışma zamanında denetim eklemek için kullanmayın. Bunun yerine, tarafından sağlanan yardımcı yöntemler kullanın [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Örneğin, <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> çalışma sayfasına bir düğme ekleme yöntemi. Bu yardımcı yöntemler tarafından desteklenmeyen bir denetim eklemek istiyorsanız, kullanabileceğiniz `AddControl` yöntemi. Daha fazla bilgi için bkz: [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).|
 |Denetimleri kopyalama|Bir Windows Forms denetimi kopyalayın ve çalışma zamanında bir belgeye yapıştırın, boş bir kapsayıcı ActiveX denetimi belgeye yapıştırılan. Windows Forms denetimi yeni konumda görünmez ve özgün denetim arka plan kod ActiveX denetimi kapsayıcısı için kopyalanmaz.|
 
 ## <a name="limitations-in-document-level-projects"></a>Belge düzeyi projelerine sınırlamaları
@@ -95,7 +96,7 @@ Belge düzeyi projelerine belgelerindeki Windows Forms denetimleri kullanarak ba
 Bazı Windows Forms denetimleri çıkarılır **araç** bir Excel çalışma sayfası veya Word belgesi olduğunda Visual Studio tasarımcısında açın. Bu teknik sınırlamaları nedeniyle olur veya işlevi zaten Word veya Excel içinde kullanılabilir. Excel ve Word projelerini tüm Windows Forms denetimleri ve görünen diğer bileşenleri desteklemek **araç** zaman belge odağa sahip ve üçüncü taraf denetimlerini bir çalışma sayfası veya belge ekleyebilirsiniz.
 
 > [!NOTE]
-> Tüm denetimler çıkarılır **araç** zaman bir belge korunur. Belge koruması hakkında daha fazla bilgi için bkz: [belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md).
+> Tüm denetimler çıkarılır **araç** zaman bir belge korunur. Belge koruması hakkında daha fazla bilgi için bkz: [koruma belge düzeyi çözümlerde belge](../vsto/document-protection-in-document-level-solutions.md).
 
 > [!NOTE]
 > Üçüncü taraf denetimleri olmalıdır <xref:System.Runtime.InteropServices.ComVisibleAttribute> özniteliğini **true** Office çözümünde kullanılması için.
@@ -184,7 +185,7 @@ Varolan bir Word belgesine veya ActiveX denetimlerini içeren Excel çalışma k
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Office Belgelerindeki Denetimler](../vsto/controls-on-office-documents.md)
-- [Office Belgelerindeki Windows Forms Denetimlerine Genel Bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Office Belgelerine Çalışma Zamanında Denetim Ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Nasıl Yapılır: Office Belgelerine Windows Forms Denetimleri Ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
+- [Windows Forms denetimlerindeki Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

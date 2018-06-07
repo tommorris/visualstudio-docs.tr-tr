@@ -18,11 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d4e45283bd65281ea1abc6bad8317379e8341e3c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572653"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
 
@@ -74,6 +75,7 @@ Aşağıdaki liste, izin verilen dil kuralı kuralları gösterir:
         - DotNet\_stili\_gerektiren\_accessibility_modifiers
         - CSharp\_tercih edilen\_modifier_order
         - Visual\_temel\_tercih edilen\_modifier_order
+        - DotNet\_stili\_readonly\_alan
     - [İfade düzeyi tercihleri](#expression_level)
         - DotNet\_stili\_object_initializer
         - DotNet\_stili\_collection_initializer
@@ -238,7 +240,7 @@ Aşağıdaki tabloda, kuralı adları, kuralları kimlikleri, geçerli programla
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 ve IDE0014 | C# ve Visual Basic | TRUE: yok |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 ve IDE0014 | C# ve Visual Basic | TRUE: yok |
 | dotnet_style_predefined_type_for_member_access | IDE0013 ve IDE0015 | C# ve Visual Basic | TRUE: yok |
 
 **DotNet\_stili\_önceden tanımlanmış\_türü\_için\_Yereller\_parameters_members**
@@ -298,7 +300,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers"></a>Değiştirici tercihleri
 
-Stil kurallarını erişilebilirlik değiştiricileri gerektiren ve istenen değiştiricisi belirterek dahil olmak üzere bu bölümü sorunu değiştiricisi tercihlerinde sıralama düzeni.
+Bu bölümdeki stil kurallarını değiştiricisi Tercihler erişilebilirlik değiştiricileri gerektiren, istenen değiştiricisi sıralama düzeni belirtme ve salt okunur değiştiricisi gerektiren dahil olmak üzere, ilgili.
 
 Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama dilleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
 
@@ -307,6 +309,7 @@ Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama di
 | dotnet_style_require_ accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, iç, statik extern, yeni, sanal, soyut ve korumalı, geçersiz kılma, salt okunur, güvenli olmayan, geçici, zaman uyumsuz: yok | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, Public, arkadaş, NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeleri, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölge, salt okunur, WriteOnly, boyutu, Const, WithEvents, genişletme, özel, daraltma Zaman uyumsuz: yok | 15.5 |
+| dotnet_style_readonly_field | IDE0044 | C# ve Visual Basic | TRUE: önerisi | 15.7 |
 
 **DotNet\_stili\_gerektiren\_accessibility_modifiers**
 
@@ -315,7 +318,7 @@ Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine a�
 | Değer | Açıklama |
 | ----- |:----------- |
 | Her zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih |
-| için\_olmayan\_interface_members | Genel arabirim üyeleri dışında bildirilmesi için erişilebilirlik değiştiricileri tercih eder. Bu şu anda farklı değil **her zaman** ve C# varsayılan arabirim yöntemleri eklerse, gelecekteki için sağlama olarak hareket eder. |
+| için\_olmayan\_interface_members | Genel arabirim üyeleri dışında bildirilmesi için erişilebilirlik değiştiricileri tercih eder. Bu aynı sonucu verir **her zaman** ve C# varsayılan arabirim yöntemleri eklerse, gelecekteki sağlama için eklenmiştir. |
 | Hiçbir zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih ediyorsunuz |
 
 Kod örnekleri:
@@ -364,12 +367,35 @@ Public Class MyClass
 End Class
 ```
 
+**dotnet_style_readonly_field**
+
+- Bu kural ayarlandığında **true**, alanları ile işaretlenmelidir tercih `readonly` (C#) veya `ReadOnly` yalnızca satır içi herhangi bir zamanda atandığı veya bir oluşturucu içinde ise (Visual Basic).
+- Bu kural ayarlandığında **false**, olup alanları ile işaretlenmelidir üzerinden tercih belirtin `readonly` (C#) veya `ReadOnly` (Visual Basic).
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_readonly_field = true
+class MyClass
+{
+    private readonly int _daysInYear = 365;
+}
+```
+
+```vb
+' dotnet_style_readonly_field = true
+Public Class MyClass
+    Private ReadOnly daysInYear As Int = 365
+End Class
+```
+
 Bu kurallar içinde görünebilir bir *.editorconfig* gibi dosya:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
+dotnet_style_readonly_field = true:warning
 
 # CSharp code style settings:
 [*.cs]

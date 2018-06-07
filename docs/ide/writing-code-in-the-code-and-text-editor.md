@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572397"
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
@@ -87,6 +88,6 @@ Düzenleyiciyi özelleştirme hakkında daha fazla bilgi için bkz: [özelleşti
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
-- [Visual Studio'da C++ kullanmaya başlama](../ide/quickstart-cpp.md)
+- [Visual Studio'da C++ kullanmaya başlama](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [C# ve Visual Studio'da ASP.NET kullanmaya başlama](../ide/tutorial-csharp-aspnet-core.md)
 - [Visual Studio'da Python kullanmaya başlama](../ide/quickstart-python.md)

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572991"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil Oluşturucu API'ler kullanma
 İzlenecek yol bir C# uygulamasını nasıl kullanılacağını göstermek için kullanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları API'leri. İzleme profili oluşturma sırasında toplanan veri miktarını sınırlamak için profil oluşturucu API kullanır.  
@@ -30,9 +31,9 @@ ms.lasthandoff: 05/22/2018
   
  Visual Studio Profil Oluşturucu veri koleksiyonunu sınırlamanıza olanak sağlar. Bu kılavuzda profil oluşturucu API kullanarak veri koleksiyonunu sınırlamak nasıl bir örnek sunar. Visual Studio profil oluşturucu, bir uygulama denetleme veri toplama için bir API sağlar.  
   
- Yerel kod için Visual Studio profil oluşturucu API VSPerf.dll içinde'lardır. Üst bilgi dosyasını, VSPerf.h ve içeri aktarma kitaplığı, VSPerf.lib, Microsoft Visual Studio 9\Team Araçlar\Performans Tools dizininde bulunur.  
+ Yerel kod için Visual Studio profil oluşturucu API bulunan *VSPerf.dll*. Üstbilgi dosyası *VSPerf.h*ve içeri aktarma kitaplığını *VSPerf.lib*, bulunan *Microsoft Visual Studio 9\Team Araçlar\Performans Araçları* dizin.  
   
- Yönetilen kod için profil oluşturucu API Microsoft.VisualStudio.Profiler.dll'lardır. Bu DLL, Microsoft Visual Studio 9\Team Araçlar\Performans Tools dizininde bulunur. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Profiler>.  
+ Yönetilen kod için profil oluşturucu API bulunan *Microsoft.VisualStudio.Profiler.dll*. Bu DLL bulunan *Microsoft Visual Studio 9\Team Araçlar\Performans Araçları* dizin. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzda, tercih ettiğiniz geliştirme ortamı hata ayıklama ve örnekleme desteklemek üzere yapılandırılmış varsayar. Aşağıdaki konular bu Önkoşullar genel bir bakış sağlar:  
@@ -58,7 +59,7 @@ DataCollection.CurrentId);
 1.  Visual Studio'da yeni bir C# projesi oluşturma veya tercihinize bağlı olarak bir komut satırı derleme kullanın.  
   
     > [!NOTE]
-    >  Microsoft Visual Studio 9\Team Araçlar\Performans Tools dizininde bulunan Microsoft.VisualStudio.Profiler.dll kitaplığı yapınızın başvurmalıdır.  
+    >  Yapınızın başvurmalıdır *Microsoft.VisualStudio.Profiler.dll* bulunan kitaplık*Microsoft Visual Studio 9\Team Araçlar\Performans Araçları* dizin.  
   
 2.  Kopyalayın ve projenize aşağıdaki kodu yapıştırın:  
   
@@ -117,7 +118,7 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Toplamak ve Visual Studio IDE içinde verileri görüntülemek için  
   
-1.  Açık [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Oturum **Çözümle** menüsündeki **profil oluşturucu**ve ardından **yeni performans oturumu.**  
+1.  Açık [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Oturum **Çözümle** menüsündeki **profil oluşturucu**ve ardından **yeni performans oturumu**.  
   
 2.  Derlenmiş ikili dosyanız için ekleme **hedefleri** listesinde **performans Gezgini** penceresi. Sağ **hedefleri**ve ardından **hedef ikili eklemek**. İkili bulun **hedef ikili eklemek** iletişim kutusunu ve ardından **açık**.  
   
@@ -157,10 +158,10 @@ DataCollection.CurrentId);
   
 8.  Aşağıdaki komutu yazın:**VSPerfReport /calltrace:\<filename > .vsp**  
   
-     Bir .csv dosyası geçerli dizinde sonuç performans verileri ile oluşturulur.  
+     A. *csv* dosyası geçerli dizinde sonuç performans verileri ile oluşturulur.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio profil oluşturucu API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Başlarken](../profiling/getting-started-with-performance-tools.md)   
- [Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)

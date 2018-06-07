@@ -13,17 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53c8caa101b51a9d26d555787e710408cf315a0e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572104"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio profil oluşturucu API Başvurusu (yerel)
-Visual Studio profil oluşturucu API toplanan veri miktarını program aracılığıyla denetlemenize izin veren ve profil oluşturma sırasında zaman damgası ve profil işareti koyun. Yerel API'ları kullanmak için VSPerf.h üst bilgi dosyasını dahil ve VSPerf.lib projenize ekleyin.  
+Visual Studio profil oluşturucu API olanak tanır program aracılığıyla toplanan veri miktarını denetlemek ve profil oluşturma sırasında zaman damgası ve profil işareti koyun. Yerel API'ları kullanmak için eklediğiniz *VSPerf.h* üstbilgi dosya ve ekleme *VSPerf.lib* projenizdeki.  
   
 > [!NOTE]
->  Varsayılan olarak, VSPerf.h ve VSPerf.lib PerfSDK adlı bir klasörde yer alır. \<Sürücü >: \Program Visual Studio 14.0\Team Araçlar\Performans Tools\PerfSDK dizin, örneğin.  
+>  Varsayılan olarak, *VSPerf.h* ve *VSPerf.lib* adlı bir klasörde bulunan *PerfSDK*. *\<Sürücü >: \Program Visual Studio 14.0\Team Araçlar\Performans Tools\PerfSDK* örneğin dizin.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

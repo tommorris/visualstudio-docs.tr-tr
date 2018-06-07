@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5febfd1055c10eaa39d27e411aba5cf442a97c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf3c41c16f904077f884bc6cffcdf0ba97233a1a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572793"
 ---
 # <a name="schema-cache"></a>Şema önbelleği
 
-XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde yer alan bir şema önbelleği sağlar. Şema önbelleği, bilgisayardaki tüm kullanıcılar için geneldir ve IntelliSense ve XML belge doğrulama için kullanılan standart XML şemaları içerir.
+Bulunan bir şema önbelleği XML Düzenleyicisi sağlar *%InstallRoot%\Xml\Schemas* dizini. Şema önbelleği, bilgisayardaki tüm kullanıcılar için geneldir ve IntelliSense ve XML belge doğrulama için kullanılan standart XML şemaları içerir.
 
 XML Düzenleyicisi'ni de çözümde bulunan şemaları bulabilir, şemalar belirtilen **şemaları** belgenin alan **özellikleri** penceresi ve şemalar tarafından tanımlanan `xsi:schemaLocation` ve `xsi:noNamespaceSchemaLocation`öznitelikleri.
 
@@ -26,32 +27,32 @@ Aşağıdaki tabloda XML Düzenleyicisi ile yüklenen şemaları açıklanmaktad
 
 |Dosya adı|Açıklama|
 |--------------|-----------------|
-|catalog.xsd|XML Düzenleyicisi şema katalog dosyaları için şema. Şema kataloglar hakkında daha fazla bilgi için aşağıya bakın.|
-|DotNetConfig.xsd|Web.Config dosyaları için şema "http://schemas.microsoft.com/.NETConfiguration/v2.0".|
-|MSBuild.xsd|MSBuild yapma dosyaları için şema "http://schemas.microsoft.com/developer/msbuild/2003".|
-|MSDATA.xsd|Tarafından eklenen XSD ek açıklamalar için şema <xref:System.Data.DataSet> sınıfı, "urn: şemaları-microsoft-com: xml-msdata".|
-|msxsl.xsd|Microsoft XSLT betik bloğu uzantıları, urn: şemaları için şema-microsoft-com:xslt.|
-|SnippetFormat.xsd|Kod parçacığı XML dosyaları için şema. % InstallDir%\VC#\Expansions örnekler için bkz.|
-|Soap1.1.xsd|Basit Nesne Erişim Protokolü (SOAP) 1.1 için şema http://schemas.xmlsoap.org/soap/envelope/.|
-|Soap1.2.xsd|Basit Nesne erişim protokolü 1.2 için şema.|
-|SiteMapSchema.xsd|Şema ASP.NET site haritası XML dosyası için "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|
-|WSDL.xsd|Web Service Description Language için şema http://schemas.xmlsoap.org/wsdl/.|
-|xenc.xsd|XML şifrelemesi için şema http://www.w3.org/2000/09/xmldsig#.|
-|XHTML.xsd|XHTML için şema http://www.w3.org/1999/xhtml.|
-|XLink.xsd|XLink1.0, şema http://www.w3.org/1999/xlink.|
-|XML.xsd|XML: Space ve XML: lang özniteliklerini tanımlayan şeması http://www.w3.org/XML/1998/namespace.|
-|xmlsig.xsd|XML dijital imzalar, şema http://www.w3.org/2000/09/xmldsig#.|
-|xsdschema.xsd|XSD kendisini tanımlayan şeması http://www.w3.org/2001/XMLSchema.|
-|XSLT.xsd|XML Şeması dönüşümleri, http://www.w3.org/1999/XSL/Transform.|
+|*catalog.xsd*|XML Düzenleyicisi şema katalog dosyaları için şema. Şema kataloglar hakkında daha fazla bilgi için aşağıya bakın.|
+|*DotNetConfig.xsd*|Web.Config dosyaları için şema "http://schemas.microsoft.com/.NETConfiguration/v2.0".|
+|*MSBuild.xsd*|MSBuild yapma dosyaları için şema "http://schemas.microsoft.com/developer/msbuild/2003".|
+|*MSDATA.xsd*|Tarafından eklenen XSD ek açıklamalar için şema <xref:System.Data.DataSet> sınıfı, "urn: şemaları-microsoft-com: xml-msdata".|
+|*msxsl.xsd*|Microsoft XSLT betik bloğu uzantıları, urn: şemaları için şema-microsoft-com:xslt.|
+|*SnippetFormat.xsd*|Kod parçacığı XML dosyaları için şema. Örnekler için bkz: *%InstallDir%\VC#\Expansions*.|
+|*Soap1.1.xsd*|Basit Nesne Erişim Protokolü (SOAP) 1.1 için şema http://schemas.xmlsoap.org/soap/envelope/.|
+|*Soap1.2.xsd*|Basit Nesne erişim protokolü 1.2 için şema.|
+|*SiteMapSchema.xsd*|Şema ASP.NET site haritası XML dosyası için "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|
+|*WSDL.xsd*|Web Service Description Language için şema http://schemas.xmlsoap.org/wsdl/.|
+|*xenc.xsd*|XML şifrelemesi için şema http://www.w3.org/2000/09/xmldsig#.|
+|*XHTML.xsd*|XHTML için şema http://www.w3.org/1999/xhtml.|
+|*XLink.xsd*|XLink1.0, şema http://www.w3.org/1999/xlink.|
+|*XML.xsd*|XML: Space ve XML: lang özniteliklerini tanımlayan şeması http://www.w3.org/XML/1998/namespace.|
+|*xmlsig.xsd*|XML dijital imzalar, şema http://www.w3.org/2000/09/xmldsig#.|
+|*xsdschema.xsd*|XSD kendisini tanımlayan şeması http://www.w3.org/2001/XMLSchema.|
+|*XSLT.xsd*|XML Şeması dönüşümleri, http://www.w3.org/1999/XSL/Transform.|
 
-## <a name="updating-schemas-in-the-cache"></a>Önbellek şemalarda güncelleştiriliyor
+## <a name="update-schemas-in-the-cache"></a>Önbelleğinde güncelleştirme
  XML Düzenleyicisi paket yüklenir ve çalışırken değişiklikleri izleyen Düzenleyicisi şema önbellek dizini yükler. Bir şema eklediyseniz bilinen şemalar bellek içi dizine otomatik olarak yüklenir. Bir şema kaldırdıysanız bellek içi dizinden otomatik olarak kaldırılır. Otomatik olarak bir şema güncelleştirildiyse, bu şemanın bellek içi önbellek geçersiz kılar.
 
 > [!NOTE]
 > Şema önbellek dizini bilgisayarınıza genel olduğundan, standart ve bilgisayarınızda oluşturulan tüm Visual Studio projeleri için yararlı olan şemaları burada yalnızca eklemeniz gerekir.
 
 
- XML Düzenleyicisi'ni şema katalog dosyaları herhangi bir sayıda şema önbellek dizininde de destekler. Şema kataloglar diğer konumları hakkında bilgi edinmek için Düzenleyicisi her zaman istediğiniz şemaları için işaret edebilir. Catalog.xsd dosya katalog dosyası biçimini tanımlar ve şema önbellek dizininde bulunur. Varsayılan katalog catalog.xml dosyasıdır ve diğer şemalar % InstallDir % bağlantılar içerir. Bir örnekleme catalog.xml dosyasının verilmiştir:
+ XML Düzenleyicisi'ni şema katalog dosyaları herhangi bir sayıda şema önbellek dizininde de destekler. Şema kataloglar diğer konumları hakkında bilgi edinmek için Düzenleyicisi her zaman istediğiniz şemaları için işaret edebilir. *Catalog.xsd* dosya katalog dosyası biçimini tanımlar ve şema önbellek dizininde bulunur. *Catalog.xml* varsayılan katalog bir dosyadır ve diğer şemalar bağlantılar içeren *InstallDir %*. Örnek aşağıda verilmiştir *catalog.xml* dosyası:
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -92,7 +93,7 @@ Katalog belge içerebilir bir `Catalog` diğer katalog işaret öğesi. Kullanab
 ```
 
 ## <a name="localized-schemas"></a>Yerelleştirilmiş şemaları
- Çoğu durumda, yerelleştirilmiş şemaları girişlerinde catalog.xml dosya içermiyor. Yerelleştirilmiş şema dizine işaret catalog.xml dosyası için ek girdiler ekleyebilirsiniz.
+ Çoğu durumda *catalog.xml* dosya, yerelleştirilmiş şemaları girişlerinde içermiyor. Ek giriş eklemek *catalog.xml* yerelleştirilmiş şema dizine işaret dosya.
 
  Aşağıdaki örnekte yeni bir `Schema` öğesi yerelleştirilmiş şemaya işaret edecek şekilde % LCID % değişkeni kullanan oluşturuldu.
 
@@ -120,7 +121,7 @@ Katalog belge içerebilir bir `Catalog` diğer katalog işaret öğesi. Kullanab
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>Ortak şema başka bir dizin eklemek için
 
-1.  XML Düzenleyicisi şema önbellek dizinindeki catalog.xml dosyasını düzenleyin.
+1.  Düzen *catalog.xml* XML Düzenleyicisi şema önbellek dizini dosyasında.
 
 2.  Yeni bir ekleme `<Catalog href="..."/>` ek şema dizine işaret öğesi.
 
@@ -128,6 +129,6 @@ Katalog belge içerebilir bir `Catalog` diğer katalog işaret öğesi. Kullanab
 
      Katalog otomatik olarak geri yüklenir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)

@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a3e7786b56f33bec4d742b1ebd6c450ea14e09
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573186"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU örnekleme için Başlangıç Kılavuzu
 Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözümlemek için kullanabilirsiniz. Bu yordam nasıl kullanılacağını gösterir **örnekleme** veri.
@@ -35,12 +36,12 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
  Varsa **örnekleme** ihtiyacınız veri vermez size yardımcı olabilecek bilgiler farklı türde diğer profil oluşturma araçları koleksiyon yöntemleri sağlar. Bu diğer yöntemler hakkında daha fazla bilgi için bkz: [nasıl yapılır: Koleksiyon yöntemleri seçme](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Windows işlevlerini çağıran kodu profil, en güncel .pdb dosyaları sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümlerini şifreli ve anlaşılması zor Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak nasıl hakkında daha fazla bilgi için bkz: [nasıl yapılır: başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Windows işlevlerini çağıran kodu profil, en güncel olduğundan emin olun. *pdb* dosyaları. Bu dosyalar olmadan rapor görünümlerini şifreli ve anlaşılması zor Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak nasıl hakkında daha fazla bilgi için bkz: [nasıl yapılır: başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="create-and-run-a-performance-session"></a>Oluşturma ve Performans oturumunu çalıştırma  
  Analiz etmek için gereken verileri almak için öncelikle bir performans oturumu oluşturmanız ve oturum çalıştırın. **Performans Sihirbazı** her ikisini de yapmanızı sağlar.  
   
- Bir Windows masaüstü uygulaması veya ASP.NET uygulama profil değil, bir profil oluşturma araçları birini kullanmanız gerekir. Bkz: [Profil Araçları](../profiling/profiling-tools.md).  
+ Bir Windows masaüstü uygulaması veya ASP.NET uygulama profil değil, bir profil oluşturma araçları birini kullanmanız gerekir. Bkz: [profil oluşturma araçları ilk bakış](../profiling/profiling-tools.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Oluşturmak ve Performans oturumunu çalıştırmak için  
   
@@ -92,13 +93,13 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
     -   Alt bölmesindeki **işlev ayrıntıları** windows, işlev kodunu görüntüler. Kodu inceleyin ve performansı iyileştirmek için bir fırsat bulmak, Visual Studio düzenleyicisinde dosyayı açmak için kaynak dosya adını tıklatın.  
   
-3.  Çözümleme devam etmek için dönmek **Özet** seçerek Görünüm **Özet** Görünüm açılan listesinden. İşlevlerde inceleyin **en tek tek iş yapan işlevlerin**. Bu liste, en yüksek özel örnekleri işlevleriyle görüntüler. Bu işlevlerin işlev gövdesi kodunda önemli iş gerçekleştirilen ve onu en iyi duruma getirme olabilir. Daha fazla belirli bir işlev çözümlemek için görüntülenecek işlevi adına tıklayın **işlev ayrıntıları** görünümü.  
+3.  Çözümleme devam etmek için dönmek **Özet** seçerek Görünüm **Özet** gelen **Görünüm** aşağı açılan liste. İşlevlerde inceleyin **en tek tek iş yapan işlevlerin**. Bu liste, en yüksek özel örnekleri işlevleriyle görüntüler. Bu işlevlerin işlev gövdesi kodunda önemli iş gerçekleştirilen ve onu en iyi duruma getirme olabilir. Daha fazla belirli bir işlev çözümlemek için görüntülenecek işlevi adına tıklayın **işlev ayrıntıları** görünümü.  
   
      ![En fazla çalışmayı yapan işlevlerin listesi](../profiling/media/functions_mostwork.png "Functions_MostWork")  
   
      Araştırmanızı çalıştırmak profil oluşturma devam etmek için profil oluşturma verileri bir parçasını zaman çizelgesinde kullanarak yeniden Çözümle **Özet** size göstermek için Görünüm **etkin yolunuzda** ve **işlevleri En fazla tek tek çalışmayı yapan** Seçili segmentin dışında. Örneğin, daha küçük bir en yüksek çizelgesinde odaklanan pahalı çağrısı ağaçları ve analiz çalıştırmak tüm profil, gösterilmeyen işlevleri ortaya çıkarabilir.  
   
-     Bir segment yeniden Çözümle için Özet zaman çizelgesi kutu içinde bir segmenti seçin ve ardından **seçime göre filtre**.  
+     İçinde bir segment kesimi yeniden Çözümle seçin **Özet zaman çizelgesi** kutusuna ve ardından **seçime göre filtre**.  
   
      ![Performans Özeti Görünümü zaman çizelgesi](../profiling/media/performancesummary.png "PerformanceSummary")  
   
@@ -119,7 +120,7 @@ Profil Araçları Visual Studio, uygulamanızda performans sorunlarını çözü
   
 3.  İçinde **performans Gezgini**, yeniden çalıştırın ve ardından istediğiniz oturumu sağ tıklatın **profil oluşturma ile başlatın.**  
   
-4.  Oturumu yeniden sonra başka bir veri dosyası eklenen **raporları** oturumu için klasör **performans Gezgini**. Her iki özgün seçin ve yeni profil oluşturma verilerini, seçime sağ tıklayın ve ardından **karşılaştırmak performans raporları**.  
+4.  Oturumu yeniden sonra başka bir veri dosyası eklenen *raporları* oturumu için klasör **performans Gezgini**. Her iki özgün seçin ve yeni profil oluşturma verilerini, seçime sağ tıklayın ve ardından **karşılaştırmak performans raporları**.  
   
      Karşılaştırma sonuçlarını görüntüleyen yeni bir rapor penceresi açılır. Karşılaştırma Görünümü kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: performans veri dosyalarını karşılaştırma](../profiling/how-to-compare-performance-data-files.md).
   

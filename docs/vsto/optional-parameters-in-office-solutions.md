@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b03f6112ebf44a89da3b4d5cbf6f7ff23f54b9c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571994"
 ---
-# <a name="optional-parameters-in-office-solutions"></a>Office Çözümlerinde İsteğe Bağlı Parametreler
+# <a name="optional-parameters-in-office-solutions"></a>Office çözümlerinde isteğe bağlı parametreler
   Microsoft Office uygulamalarının nesne modelleri yöntemlere birçoğu, isteğe bağlı parametreleri kabul eder. Visual Studio'da Office çözümü geliştirmek için Visual Basic kullanırsanız, her eksik parametre için varsayılan değerleri otomatik olarak kullanıldığından isteğe bağlı parametre için bir değer geçirmek zorunda değildir. Çoğu durumda, Visual C# projelerine isteğe bağlı parametreler atlayabilirsiniz. Ancak, atlayamazsınız **ref** parametrelerinin `ThisDocument` belge düzeyi Word projeleri sınıfta.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="using-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Visual C# belge düzeyi projelerine ThisDocument sınıfı yöntemlerinin isteğe bağlı parametreler için Word kullanılarak  
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Visual C# belge düzeyi projelerine ThisDocument sınıfı yöntemlerinin isteğe bağlı parametreler için Word kullanın  
  Word nesne modeli isteğe bağlı olan birçok yöntem içerir **ref** kabul parametreleri <xref:System.Object> değerleri. Ancak, atlayamazsınız **ref** oluşturulan yöntemlerinin parametrelerinin `ThisDocument` Word için belge düzeyi projelerine Visual C# sınıfı. Visual C# sağlar, isteğe bağlı atlamak **ref** yalnızca arabirimleri, yöntemlerinin parametrelerini sınıfların değil. Atlayamazsınız çünkü Örneğin, aşağıdaki kod örneğinde, derlenmiyor **ref** parametrelerinin <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> yöntemi `ThisDocument` sınıfı.  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
@@ -68,10 +69,10 @@ ms.lasthandoff: 04/16/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz: [geçirme bağımsız değişkenleri değere ve başvuruya göre &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [geçirme parametreleri &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz: [değere ve başvuruya göre bağımsız değişkenler geçirme &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [geçirmek parametreleri &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
- [Office Çözümlerinde Kod Yazma](../vsto/writing-code-in-office-solutions.md)  
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Office çözümleri geliştirmek](../vsto/developing-office-solutions.md)   
+ [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
   
   

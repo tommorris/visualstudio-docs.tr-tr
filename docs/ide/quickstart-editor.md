@@ -11,11 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 44eb805a50e7518aa346b35a8aaba5202244ec76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8231b36f2fe44a04e16b420eb13bfcc4eb30c696
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573290"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Hızlı Başlangıç: Kod Düzenleyicisi'ni kullanın
 
@@ -23,7 +24,7 @@ Bu 10 dakikalık girişte düzenleyiciye, Visual Studio yazma, gezinme ve kodu d
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
 
-Bu hızlı başlangıç bir programlama dili ile bilginiz varsayar. Yoksa, önerdiğimiz programlama quickstarts birini ilk bakış, gibi bir web uygulaması ile oluşturma [Python](../ide/quickstart-python.md) veya [C#](../ide/tutorial-csharp-aspnet-core.md), veya bir konsol uygulaması ile oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/quickstart-cpp.md).
+Bu hızlı başlangıç bir programlama dili ile bilginiz varsayar. Yoksa, önerdiğimiz programlama quickstarts birini ilk bakış, gibi bir web uygulaması ile oluşturma [Python](../ide/quickstart-python.md) veya [C#](../ide/tutorial-csharp-aspnet-core.md), veya bir konsol uygulaması ile oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Yeni bir kod dosyası oluşturma
 
@@ -35,7 +36,7 @@ Yeni bir dosya oluşturarak ve biraz kod eklemeyi başlatın. Biz Düzenleyici s
 
    Yeni bir dosya bir C# sınıfı çatıyı düzenleyicisiyle açar.
 
-## <a name="use-code-snippets"></a>Kod parçacıklarını kullanma
+## <a name="use-code-snippets"></a>Kod parçacıkları kullanma
 
 Visual Studio hızla ve kolayca yaygın olarak oluşturmak için kullanabileceğiniz yararlı kod parçacıkları kod blokları kullanılan sağlar. [Kod parçacıkları](../ide/code-snippets.md) C#, Visual Basic ve C++ gibi farklı programlama dilleri için kullanılabilir. C# ekleyelim `void Main` bizim dosyasına parçacığı.
 

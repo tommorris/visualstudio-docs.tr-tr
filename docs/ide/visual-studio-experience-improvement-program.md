@@ -10,15 +10,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57338d465710e608079bf289db4516de46a88277
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 8dbc83a2d3fe1b2f5bb32a6baaf336c0a6c46e7d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572640"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimini Geliştirme Programı
 
 Visual Studio Müşteri Deneyimi Geliştirme Programı (VSCEIP), zaman içinde Visual Studio geliştirmesine yardımcı olmak için tasarlanmıştır. Bu program [hatalar hakkında bilgi toplar](../ide/diagnostic-data-collection.md), bilgisayar donanımı ve kullanıcıların bilgisayardaki görevlerini kesintiye uğratmadan kişi Visual Studio nasıl kullanır. Toplanan bilgiler, Microsoft'un hangi özellikleri iyileştireceğini belirlemesine yardımcı olur. Bu belge içinde veya dışında VSCEIP opt alınmaktadır.
+
+[!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="opt-in-or-out"></a>Giriş veya çıkış iptal et
 
@@ -39,13 +42,13 @@ VSCEIP varsayılan olarak açıktır. Kapatın veya, bu yönergeleri izleyerek y
 
 Yüklerseniz [derleme araçları Visual Studio için](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017), VSCEIP yapılandırmak için kayıt defterini güncelleştirmeniz gerekir. Kurumsal müşteriler, kayıt defteri tabanlı bir ilke ayarlayarak içinde veya dışında VSCEIP kabul etmek için bir Grup İlkesi oluşturabilirsiniz.
 
-[!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
-
 İlgili kayıt defteri anahtarı ve ayarlar aşağıdaki gibidir:
 
-Anahtar = **HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+64-bit işletim sistemlerinde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**  
+32-bit işletim sistemlerinde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**  
+Grup İlkesi etkinleştirildiğinde, anahtar = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**  
 
-Giriş OptIn =
+Giriş = **OptIn**
 
 Değer = (DWORD)
 - **0** alma (VSCEIP Kapat) seçti

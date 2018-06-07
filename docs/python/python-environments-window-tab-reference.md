@@ -1,7 +1,7 @@
 ---
 title: Python ortamları penceresi başvurusu
 description: Visual Studio'da Python ortamları penceresinde görünür sekmelerin her birinde ayrıntıları.
-ms.date: 05/22/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaf64d0d7bde7b63359ba341a693a51051da6fc3
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572130"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python ortamları penceresinde Sekme Başvurusu
 
@@ -95,7 +96,9 @@ Her iki durumda da bağımsız değişkenler arama kutusuna paketin adı sonra e
 
 Bir paket yükleme ortamı içindeki alt klasörleri oluşturur `Lib` klasör dosya sisteminde. Varsa, örneğin, Python 3.6 yüklü `c:\Python36`, içinde yüklü paketlerini `c:\Python36\Lib`; yüklü Anaconda3 varsa `c:\Program Files\Anaconda3` paketleri yüklenmiş sonra `c:\Program Files\Anaconda3\Lib`.
 
-İkinci durumda, ortam dosya sisteminin korumalı alanında bulunduğundan `c:\Program Files`, Visual Studio çalıştırmanız gerekir `pip install` yükseltilmiş paket alt klasörleri oluşturmak izin vermek için. Yükseltme gerekli olduğunda, Visual Studio "Yönetici ayrıcalıkları yüklemek, güncelleştirme paketleri veya bu ortam için kaldırma için gerekli" istemini görüntüler:
+### <a name="granting-administrator-privileges-for-package-install"></a>Paket için izni veriliyor yönetici ayrıcalıkları yükleyin
+
+Paketleri korumalı bir dosya sistemi bölümünde gibi bulunan bir ortama yüklerken `c:\Program Files\Anaconda3\Lib`, Visual Studio çalıştırmalısınız `pip install` yükseltilmiş paket alt klasörleri oluşturmak izin vermek için. Yükseltme gerekli olduğunda, Visual Studio "Yönetici ayrıcalıkları yüklemek, güncelleştirme paketleri veya bu ortam için kaldırma için gerekli" istemini görüntüler:
 
 ![İsteminin paket yükleme için](media/environments-pip-elevate.png)
 
@@ -104,6 +107,18 @@ Bir paket yükleme ortamı içindeki alt klasörleri oluşturur `Lib` klasör do
 Seçme **her zaman yüklerken veya paketlerini kaldırma kullanımı ile yükseltme** iletişim ortam için söz konusu görüntülenmesini engeller. Yeniden görüntülenmesini iletişim sağlamak için şu adrese gidin **Araçlar > Seçenekler > Python araçları > Genel** ve düğmesini seçin **tüm kalıcı olarak gizli iletişim kutularını Sıfırla**.
 
 Aynı sekmesi seçenekleri olduğunu, ayrıca seçebilirsiniz **her zaman PIP yönetici olarak çalıştır** iletişim kutusu tüm ortamlar için gizlemek için. Bkz: [seçenekler - Genel sekmesi](python-support-options-and-settings-in-visual-studio.md#general-options).
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>Python eski sürümleriyle birlikte güvenlik kısıtlamaları
+
+3.1 ve 3.2, Python 2.6 kullanırken, Visual Studio "nedeniyle"güvenlik internet'ten yükleme kısıtlamaları, Python bu sürümünde çalışmayabilir uyarıyı gösterir:
+
+![PIP hakkında ileti kısıtlamaları Python eski sürümünü yükleyin](media/environments-old-version-restriction.png)
+
+Uyarı, Python, bu eski sürümleriyle nedeni `pip install` içermiyor. paket kaynağındaki paketleri yüklemek için gerekli olan desteği için Aktarım güvenlik katmanı (TLS) 1.2, pypi.org. Özel Python derlemeleri destekleyebilir TLS 1.2; Bu durumda `pip install` çalışabilir.
+
+Uygun indirmek mümkün olabilir `get-pip.py` bir paket için [bootstrap.pypa.io](https://bootstrap.pypa.io/), el ile bir paketten karşıdan [pypi.org](https://pypi.org/)ve ardından bu yerel kopyadan paketini yükleyin.
+
+, Ancak yalnızca Python 2.7 veya 3.3 durum uyarısı görünmez + yükseltmeniz önerilir.
 
 ## <a name="intellisense-tab"></a>IntelliSense sekmesi
 

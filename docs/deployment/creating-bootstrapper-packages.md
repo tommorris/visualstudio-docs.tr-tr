@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572731"
 ---
 # <a name="create-bootstrapper-packages"></a>Önyükleyici paketleri oluşturma
 Kurulum programı algılar ve Windows Installer (.msi) dosyaları ve yürütülebilir programları gibi yeniden dağıtılabilir bileşenleri yüklemek için yapılandırılmış bir genel yükleyicidir. Yükleyici bir önyükleyici de denir. Bir dizi bileşen yüklemesini yönetmek için meta veriler belirtin XML bildirimlerine ile programlanmış.  Her yeniden dağıtılabilir bileşeni veya önkoşul, görünür **Önkoşullar** iletişim kutusu için ClickOnce önyükleyici paketi olur. Önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyaları içeren dosyaları grubudur. 
@@ -86,7 +87,7 @@ Aşağıdaki tabloda önyükleyici tarafından otomatik olarak doldurulur özell
 |ApplicationName|Uygulamanın adı.|  
 |ProcessorArchitecture|İşlemci ve BITS başına word bir yürütülebilir dosya tarafından hedeflenen Platform. Değerler aşağıdakileri içerir:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95, Windows 98 veya Windows ME işletim sistemleri için sürüm numarası. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemleri için sürüm numarası. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
+|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemleri için sürüm numarası. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
 |[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Windows Installer derlemesinin (msi.dll) sürümü yükleme sırasında çalıştırın.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Kullanıcının yönetici ayrıcalıkları varsa bu özelliği ayarlayın. True veya false değerleri.|  
 |InstallMode|Yükleme modu burada yüklenmesine izin bileşen gerektiğini gösterir. Değerler aşağıdakileri içerir:<br /><br /> -HomeSite - Önkoşullar satıcının Web sitesinden yüklenir.<br />-SpecificSite - Önkoşullar seçtiğiniz konumdan yüklenir.<br />Uygulama aynı konumda - SameSite - Önkoşullar yüklendi.|  

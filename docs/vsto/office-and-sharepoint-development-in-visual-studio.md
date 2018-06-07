@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c7bd0f38d413fbd3d809773a124699e0e883287d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572172"
 ---
-# <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio'da Office ve SharePoint Geliştirme
+# <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio'da Office ve SharePoint geliştirme
   Microsoft Office ve SharePoint basit bir uygulama oluşturarak genişletebilir ve kullanıcılar indirir, eklenti [Office deposu](https://store.office.com/) ya da bir kuruluş katalog veya .NET Framework tabanlı bir çözümdür, kullanıcıların oluşturarak yüklemek bir bilgisayar.  
   
  Bu konuda:  
@@ -49,8 +50,6 @@ ms.lasthandoff: 05/22/2018
  Bu eklentilerin VSTO eklentilerini ve çözümlerle karşılaştırıldığında çok küçük in sahip ve teknoloji HTML5, JavaScript, CSS3 ve XML gibi programlama neredeyse her web kullanarak oluşturabilirsiniz.  Başlamak için Visual Studio'da Office geliştirici araçları veya düzeltme basit web tabanlı bir araç kullanın Napa Office 365 geliştirme projeleri oluşturma, kod yazmanız ve bir tarayıcıda eklentilerinizi çalıştırmanıza olanak sağlayan araçları, kod adıyla.  
   
  ![Office ve SharePoint kavramsal model için uygulamalar](../vsto/media/officeandsharepointapps2015.png "Office ve SharePoint kavramsal model için uygulamalar")  
-  
-
   
 ### <a name="build-an-office-add-in"></a>Bir Office Eklentisi oluşturma  
  Office işlevselliğini genişletmek için Office Eklentisi oluşturun. Temel olarak, Excel, Word, Outlook ve PowerPoint gibi bir Office uygulamasında barındırılan bir Web sayfasıdır. Uygulamanızı işlevselliği belgelere, çalışma sayfaları, e-posta iletilerini, randevuları, sunuları ve projeleri ekleyebilirsiniz.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 05/22/2018
 |--------|---------|  
 |SharePoint eklentiler hakkında daha fazla bilgi ve bir yapı.|[SharePoint eklentileri](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Eklentiler için SharePoint ile geleneksel SharePoint çözümlerini karşılaştırın.|[SharePoint çözümleri ile karşılaştırıldığında SharePoint eklentileri](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Bir SharePoint eklentisi veya bir SharePoint çözüm oluşturmak isteyip istemediğinizi seçin.|[SharePoint eklentiler ve SharePoint çözümleri arasında seçim yapma](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Bir SharePoint eklentisi veya bir SharePoint çözüm oluşturmak isteyip istemediğinizi seçin.|[SharePoint eklentiler ve SharePoint çözümleri arasında karar verin](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Bir VSTO eklentisi oluşturma  
  Bir VSTO eklentisinin Office 2007 veya Office 2010'u hedefleyecek şekilde ya da Office 2013 ve Office 2016 ile Office eklentileri olası nedir ötesine genişletmek için oluşturun. VSTO eklentilerini yalnızca masaüstünde çalıştırın. Kullanıcıların VSTO eklentileri, dağıtmak ve Destek genellikle daha zor bulunmaları yüklemeniz gerekir.  Ancak, VSTO eklentinizi daha yakından Office ile tümleştirilebilir. Örneğin, bunu sekmeler ve denetimler için Office Şerit ekleyin ve belgelerin birleştirilmesi veya grafikleri değiştirme gibi gelişmiş bir otomatikleştirme görevleri gerçekleştirin. Office nesnelerle etkileşim kurmak için C# ve Visual Basic kullanın ve .NET Framework yararlanın.  
@@ -109,6 +108,6 @@ ms.lasthandoff: 05/22/2018
 |Bitiş|Bkz. |  
 |--------|---------|  
 |SharePoint çözümlerini SharePoint eklentileri ile karşılaştırın.|[SharePoint çözümleri ile karşılaştırıldığında SharePoint eklentileri](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Bir SharePoint çözüm oluşturun.|[SharePoint Çözümleri Oluşturma](../sharepoint/create-sharepoint-solutions.md)|  
+|Bir SharePoint çözüm oluşturun.|[SharePoint çözümleri oluşturma](../sharepoint/create-sharepoint-solutions.md)|  
   
   

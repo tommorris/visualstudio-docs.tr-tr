@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5911dfcdf2cc7e235dc1ad5ab78aaf290d89d5e5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573212"
 ---
 # <a name="vsinstr"></a>VSInstr
 Vsınstr aracı ikili dosyalarını izlemek için kullanılır. Aşağıdaki sözdizimini kullanarak çağrılır:  
@@ -43,9 +44,9 @@ VSInstr [/U] filename [/options]
 |**Hariç tutma** `:funcspec`|Araçları tarafından araştırmalar dışlanacak işlevi belirtimi belirtir. Bir işlevdeki araştırma ekleme profil öngörülemeyen ya da istenmeyen sonuçları neden olduğunda yararlı olacaktır.<br /><br /> Kullanmayın **hariç** ve **INCLUDE** aynı ikili işlevlerde başvurmak seçenekleri.<br /><br /> Birden çok işlev belirtimi ayrı belirtebilirsiniz **hariç** seçenekleri.<br /><br /> `funcspec` tanımlanan gibidir:<br /><br /> [ad alanı\<separator1 >] [sınıfı\<separator2 >] işlevi<br /><br /> \<separator1 > olan `::` yerel kod için ve `.` yönetilen kod için.<br /><br /> \<separator2 > her zaman `::`<br /><br /> **Dışlama** kod kapsamı ile desteklenir.<br /><br /> Joker karakter \* desteklenir. Örneğin, bir ad alanı kullanım uygulamasında tüm işlevleri dışlamak için şunu yazın:<br /><br /> MyNamespace::\*<br /><br /> Kullanabileceğiniz **Vsınstr /DumpFuncs** belirtilen ikili işlevlerin tam adlarını listelemek için.|  
 |**İçerir** `:funcspec`|Bir işlev belirtimi gereç bir ikili araştırmalara sahip belirtir. Tüm ikili dosyaları işlevlerde işaretlendiğine değil.<br /><br /> Birden çok işlev belirtimleri ayrı belirtebilirsiniz **INCLUDE** seçenekleri.<br /><br /> Kullanmayın **INCLUDE** ve **hariç** aynı ikili işlevlerde başvurmak seçenekleri.<br /><br /> **Dahil** kod kapsamı ile desteklenmiyor.<br /><br /> `funcspec` tanımlanan gibidir:<br /><br /> [ad alanı\<separator1 >] [sınıfı\<separator2 >] işlevi<br /><br /> \<separator1 > olan `::` yerel kod için ve `.` yönetilen kod için.<br /><br /> \<separator2 > her zaman `::`<br /><br /> Joker karakter \* desteklenir. Örneğin, bir ad alanı kullanımda tüm işlevler eklemek için şunu yazın:<br /><br /> MyNamespace::\*<br /><br /> Kullanabileceğiniz **Vsınstr /DumpFuncs** belirtilen ikili işlevlerin tam adlarını listelemek için.|  
 |**DumpFuncs**|Belirtilen görüntü işlevlerinde listeler. Hiçbir araçları gerçekleştirilir.|  
-|**ExcludeSmallFuncs**|İzlemeden herhangi bir işlev çağrıları yapma kısa işlevleri küçük işlevleri dışlar. **ExcludeSmallFuncs** seçeneği, böylece geliştirilmiş araçları hızı araçları tarafından yükü daha azdır için sağlar.<br /><br /> Kısa işlevleri dışlama .vsp dosya boyutu ve çözümleme için gereken süre de azaltır.|  
+|**ExcludeSmallFuncs**|İzlemeden herhangi bir işlev çağrıları yapma kısa işlevleri küçük işlevleri dışlar. **ExcludeSmallFuncs** seçeneği, böylece geliştirilmiş araçları hızı araçları tarafından yükü daha azdır için sağlar.<br /><br /> Kısa işlevleri dışlama de azaltır. *vsp* dosya boyutu ve çözümleme için gereken süre.|  
 |**İşareti:**{**önce**`&#124;`**sonra**`&#124;`**üst**`&#124;`**alt**}`,funcname,markid`|Bir profil işareti (raporlardaki verileri sınırlandırmak için kullanılan tanımlayıcı) ekler başlangıç veya bitiş .vsp rapor dosyasındaki veri aralığı tanımlamak için kullanabilirsiniz.<br /><br /> **Önce** - hedef işlev girdisi hemen önce.<br /><br /> **Sonra** - hedef işlevi çıkış hemen sonra.<br /><br /> **Üst** - hedef işlev girdisi hemen sonra.<br /><br /> **Alt** - hedef işlevinde her return hemen önce.<br /><br /> `funcname` -Hedef işlevin adı<br /><br /> `Markid` -Profil işareti tanımlayıcı olarak kullanılacak pozitif bir tamsayı (uzun).|  
-|**Kapsamı**|Kapsama aracı gerçekleştirir. Yalnızca aşağıdaki seçenekler kullanılabilir olabilir: **ayrıntılı**, **OutputPath**, **hariç**, ve **günlük dosyası**...|  
+|**Kapsamı**|Kapsama aracı gerçekleştirir. Yalnızca aşağıdaki seçenekler kullanılabilir: **ayrıntılı**, **OutputPath**, **hariç**, ve **günlük dosyası**...|  
 |**Ayrıntılı**|**Ayrıntılı**seçeneği izleme işlemi hakkında ayrıntılı bilgi görüntülemek için kullanılır.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Tüm gizlemek veya belirli uyarılar.<br /><br /> `Message Number` -uyarı sayısı. Varsa `Message Number` olan atlanırsa, tüm uyarıları görüntülenmez.<br /><br /> Daha fazla bilgi için bkz: [Vsınstr uyarıları](../profiling/vsinstr-warnings.md).|  
 |**Denetim** `:{` **iş parçacığı** `&#124;` **işlem** `&#124;` **genel** `}`|Aşağıdaki Vsınstr veri toplama profil düzeyini belirtir seçeneklerini denetleme:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Askıya alma**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **İş parçacığı** -iş parçacığı düzeyinde veri toplama denetimi işlevleri belirtir. Profil oluşturma başlatılır ya da yalnızca geçerli iş parçacığı için durdurulur. Profil oluşturma durumu başka bir iş parçacığı etkilenmez. İş parçacığı varsayılandır.<br /><br /> **İşlem** -işlem düzeyinde profil oluşturma veri toplama denetimi işlevleri belirtir. Profil oluşturma başlatır veya geçerli işlemdeki tüm iş parçacıklarının durdurur. Diğer işlemlerin profil oluşturma durumu etkilenmez.<br /><br /> **Genel** -genel düzeyde (çapraz işlem) veri toplama denetimi işlevleri belirtir.<br /><br /> Profil oluşturma düzeyi belirtmezseniz, bir hata oluşur.|  
@@ -56,7 +57,7 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:**{**önce**`&#124;`**sonra**`&#124;`**üst**`&#124;`**alt**}`,funcname`|Profil oluşturma çalıştırılması sırasında veri toplama durur. Bu, belirtilen konumda SuspendProfile API ekler.<br /><br /> **Önce** - hedef işlev girdisi hemen önce.<br /><br /> **Sonra** - hedef işlevi çıkış hemen sonra.<br /><br /> **Üst** - hedef işlev girdisi hemen sonra.<br /><br /> **Alt** - hedef işlevinde her return hemen önce.<br /><br /> `funcname` -Hedef işlevinin adı.<br /><br /> Hedef işlevi StartProfile işlevi içeriyorsa, SuspendProfile işlevi önce eklenir.|  
 |**ResumeOnly:**{**önce**`&#124;`**sonra**`&#124;`**üst**`&#124;`**alt**}`,funcname`|Başlayan veya veri toplama sırasında bir profil oluşturma çalıştırma sürdürür.<br /><br /> Sonra profil oluşturmayı başlatmak için genellikle kullanılan bir **SuspendOnly** seçeneği profil durdurdu. Bu, belirtilen konumda bir ResumeProfile API ekler.<br /><br /> **Önce** - hedef işlev girdisi hemen önce.<br /><br /> **Sonra** - hedef işlevi çıkış hemen sonra.<br /><br /> **Üst** - hedef işlev girdisi hemen sonra.<br /><br /> **Alt** - hedef işlevinde her return hemen önce.<br /><br /> `funcname` -Hedef işlevinin adı.<br /><br /> Hedef işlevi StopProfile işlevi içeriyorsa, ResumeProfile işlevi sonra eklenir.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   

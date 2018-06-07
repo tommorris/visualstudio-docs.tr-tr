@@ -1,5 +1,5 @@
 ---
-title: XML verileriyle çalışırken güvenlik konuları
+title: XML Verileriyle Çalışırken Dikkat Edilecek Güvenlik Konuları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c79330091c5ef5cbe4f89dee1422d1de267f70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572611"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML verileriyle çalışırken güvenlik konuları
 
@@ -42,6 +43,6 @@ Bu konuda XML Düzenleyicisi'ni veya XSLT hata ayıklayıcısı ile çalışırk
 
 -   XSLT ifade değerlendiricisi yönetilen hata ayıklama altyapısı tarafından yüklenir. Yönetilen hata ayıklama altyapısı tüm kod kullanıcının yerel bilgisayardan çalıştırıldığını varsayar. Buna göre <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT dosyasını kullanıcının yerel bilgisayara yükler. Sınırlı izinlere sahip yeni bir uygulama etki alanındaki tüm XSLT dönüştürmeleri yürüterek yürütme ayrıcalık içinde bir ayrıcalık oluşabilir olasılığı azalır
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Uygulama Etki Alanları](/dotnet/framework/app-domains/application-domains)
+- [Uygulama etki alanları](/dotnet/framework/app-domains/application-domains)

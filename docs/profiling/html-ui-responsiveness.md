@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 93befa75522f0445c5061a590d4f537bed9357b9
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845593"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Evrensel Windows uygulamaları, HTML UI yanıtlama hızını çözümleme
 Bu konu, UI yanıtlama hızı Profil Oluşturucusu, Evrensel Windows uygulamaları için kullanılabilir bir performans aracını kullanarak uygulamalarınızı performans sorunlarını yalıtma açıklar.  
@@ -34,12 +35,12 @@ Bu konu, UI yanıtlama hızı Profil Oluşturucusu, Evrensel Windows uygulamalar
   
 -   Beklenenden daha az sıklıkta visual güncelleştirmeler. Kullanıcı Arabirimi iş parçacığı kesintisiz kare hızı korumak için çok meşgul olduğundan bu oluşur. Örneğin, kullanıcı Arabirimi iş parçacığı meşgul ise, çerçeve bırakılabilir. Bazı kullanıcı Arabirimi iş parçacığı resim çözme, ağ istekleri ve paints de visual güncelleştirmelerinin sıklığını sınırlayabilirsiniz gibi çalışır. (Tüm boyama kullanıcı Arabirimi iş parçacığı üzerinde gerçekleştirilir.)  
   
-##  <a name="RunningProfiler"></a> HTML UI yanıtlama hızı aracını çalıştırın  
+## <a name="run-the-html-ui-responsiveness-tool"></a>HTML UI yanıtlama hızı aracını çalıştırın  
  Visual Studio'da açın bir çalışma UWP uygulaması varsa, HTML UI yanıtlama hızı aracını kullanabilirsiniz.  
   
 1.  Uygulama Visual Studio'dan üzerinde çalıştırıyorsanız, **standart** araç, **hata ayıklamayı Başlat** listesinde, bir dağıtım hedef gibi seçin **yerel makine** veya **Aygıt**.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **Performans Profil Oluşturucu...** .  
+2.  Üzerinde **hata ayıklama** menüsünde seçin **Performans Profil Oluşturucu**.  
   
      Çözümleme hedefi için profil oluşturucu değiştirmek istiyorsanız seçin**değiştirmek hedef**.  
   
@@ -67,7 +68,7 @@ Bu konu, UI yanıtlama hızı Profil Oluşturucusu, Evrensel Windows uygulamalar
   
 6.  Profil Oluşturucu toplanan uygulama ve görünüm veri profil oluşturmayı durdurmak için tercih **durdurmak koleksiyonu**.  
   
-##  <a name="IsolateAnIssue"></a> Bir sorun yalıtma  
+## <a name="isolate-an-issue"></a>Bir sorun yalıtma  
  Aşağıdaki bölümde, performans sorunlarını ayırmanıza yardımcı olmak için öneriler sağlar. Tanımlamak ve bir örnek performans uygulama testi kullanarak performans sorunlarını gidermek nasıl hakkında adım adım açıklama için bkz: [izlenecek yol: iyileştirme UI yanıtlama hızı (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> UI yanıtlama hızı yalıtmak  
@@ -75,11 +76,11 @@ Bu konu, UI yanıtlama hızı Profil Oluşturucusu, Evrensel Windows uygulamalar
   
 1.  Uygulamanızı Visual Studio'da açın.  
   
-2.  UI yanıtlama hızı sorunlar için uygulamanızı test edin. (Hata ayıklama olmadan uygulamanızı başlatmak için Ctrl + F5 tuşuna basın.)  
+2.  UI yanıtlama hızı sorunlar için uygulamanızı test edin. (Tuşuna **Ctrl**+**F5** hata ayıklama olmadan uygulamanızı başlatmak için.)  
   
      Bir sorun bulursanız, sorunun oluştuğu zaman çerçevesi daraltmak deneyin veya davranışa neden Tetikleyicileri belirlemeye çalışın test devam edin.  
   
-3.  Visual Studio'ya (Alt + Sekme tuşuna basın) geçin ve uygulamanızı (Shift + F5) durdurun.  
+3.  Geçiş için Visual Studio (basın **Alt**+**sekmesini**) ve uygulamanızı durdurma (**Shift**+**F5**).  
   
 4.  İsteğe bağlı olarak, kullanıcı işaretleri kullanarak kod ekleme [işaretlemek kod çözümleme için](#ProfileMark).  
   
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![Zaman Çizelgesi'nde kullanıcı ölçü Olay Ayrıntıları görünümü](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> Verileri analiz etme  
+## <a name="analyze-data"></a>Verileri analiz etme  
  Aşağıdaki bölümlerde Profil Oluşturucusu'nda görüntülenen verileri yorumlamaya yardımcı olacak bilgiler sağlamaktadır.  
   
 ###  <a name="Ruler"></a> Görünüm Tanılama oturumu zaman çizelgesi  
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![Çerçeve göre gruplandırılmış zaman çizelgesi olayları](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> Tanılama oturumu Kaydet  
+## <a name="save-a-diagnostic-session"></a>Tanılama oturumu Kaydet  
  Visual Studio'da oturum ile ilişkili sekme kapattığınızda Tanılama oturumu kaydedebilirsiniz. Daha sonra kaydedilmiş oturumları açılabilir.  
   
-##  <a name="ProfilerEvents"></a> Profil Oluşturucu Olay Başvurusu  
+## <a name="profiler-event-reference"></a>Profil Oluşturucu Olay Başvurusu  
  Profil Oluşturucu olayları kategorilere ve UI yanıtlama hızı Profil Oluşturucusu'nda renkli kodlu. Bu olay kategorileri şunlardır:  
   
 -   **Yükleniyor.** Uygulamayı ilk kez yüklediğinde alınırken uygulama kaynakları ve ayrıştırma HTML ve CSS harcanan zamanı gösterir. Bu ağ isteklerini içerebilir.  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Çerçeve|Yok|Etkilenen tüm bölümleri çizilmesi için sayfanın gerekli DOM Visual değişiklikler yapıldı. Bu gruplandırma için kullanılan aracı tarafından oluşturulan bir olaydır.|  
 |Kullanıcı ölçü|Yok|Bir uygulamaya özgü senaryosunu kullanarak ölçülen `performance.measure` yöntemi. Bu kod çözümlemek için kullanılan aracı tarafından oluşturulan bir olaydır.|  
   
-##  <a name="Tips"></a> Ek bilgi  
+## <a name="additional-information"></a>Ek bilgiler  
   
 -   Gözcü [bu videoyu](http://channel9.msdn.com/Events/Build/2013/3-316) UI yanıtlama hızı Profil Oluşturucusu hakkında yapı 2013 konferans gelen.  
   
@@ -356,5 +357,5 @@ if (performance.mark && performance.measure) {
   
 -   Tek iş parçacıklı kod yürütme modeli ve performans ile ilgili daha fazla bilgi için bkz: [kod yürütmek](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Profil Araçları](../profiling/profiling-tools.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Profil oluşturma araçları ilk bakış](../profiling/profiling-tools.md)

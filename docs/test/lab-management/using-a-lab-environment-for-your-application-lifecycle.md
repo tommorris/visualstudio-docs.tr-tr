@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20c692e648e094d6d7c62cc5099b73ba2f27e3c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844309"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Bir laboratuvar ortamı, devops için kullanın
 
@@ -35,8 +36,8 @@ Ortak laboratuvar ortamı topolojileri örnekleri şunlardır:
 |![Bulut laboratuvar ortamı](../media/topology_cloud.png)| Bu laboratuar ortamını benzer özellikleri sağlar ve olarak özellikleri _sunucu topolojisi_, ancak fiziksel veya sanal yerel bir ortamda; çalışan kurulum süresini azaltabilir, basitleştirmek makineler için gerekliliğini ortadan kaldırır Bakım ve maliyeti en aza indirin. Birden çok Web siteleri ve sanal makineler, özel ağı ayarlamak hızlı ve kolay bir bulut ortamında Microsoft Azure gibi.|
 |![İstemci-sunucu laboratuvar ortamı](../media/topology_clientserver.png)| Bu laboratuar ortamını sahip bir *istemci-sunucu topolojisi*, sık kullanılan sunucu ve istemci bileşenleri olan bir uygulama test etmek için. Bir istemci/sunucu topolojisinde uygulamanızı test etmek için kullanılan istemci ve sunucu makinelerini Laboratuvar ortamınızda tümü. Bu topoloji kullandığınızda, testlerinizi etkiler her makineden test verilerini toplayabilir.|
 
-|         |         |
-|---------|---------|
+|   |   |
+|---|---|
 |  ![video film kamera simgesi](../../install/media/video-icon.png)  |    [Bir video izlemek](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) test laboratuvar ortamları yönetme. |
 
 ## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Bulut Team Services veya Team Foundation Server yapı ve sürüm ile kullanma

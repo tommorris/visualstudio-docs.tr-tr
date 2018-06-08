@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: önbellekteki veri kümesini kullanarak ana ayrıntı ilişkisi oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: önbellekteki veri kümesini kullanarak ana ayrıntı ilişkisi oluşturma'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: abe0b766214c1906afcf443c23948c492a6bde90
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845460"
 ---
-# <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>İzlenecek yol: önbellekteki veri kümesini kullanarak ana ayrıntı ilişkisi oluşturma
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>İzlenecek yol: önbellekteki veri kümesini kullanarak ana ayrıntı ilişkisi oluşturma
   Bu kılavuz, bir çalışma sayfasında bir ana öğe/ayrıntı ilişkisi oluşturma ve veriyi önbelleğe almayı çözümü çevrimdışı kullanılabilir gösterir.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -51,21 +52,21 @@ ms.lasthandoff: 04/16/2018
   
 -   SQL Server veritabanına yazma ve okuma izni.  
   
-## <a name="creating-a-new-project"></a>Yeni proje oluşturma  
+## <a name="create-a-new-project"></a>Yeni bir proje oluşturma  
  Bu adımda, bir Excel çalışma kitabı projesi oluşturur.  
   
-#### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
+### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
 1.  Adında bir Excel çalışma kitabı projesi oluşturun **My ana-ayrıntı**, Visual Basic veya C# kullanarak. Olduğundan emin olun **bir yeni belge oluşturun** seçilir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Visual Studio Tasarımcısı'nda yeni Excel çalışma kitabı açılır ve ekler **My ana-ayrıntı** için proje **Çözüm Gezgini**.  
   
-## <a name="creating-the-data-source"></a>Veri Kaynağı Oluşturma  
+## <a name="create-the-data-source"></a>Veri kaynağı oluşturun  
  Kullanım **veri kaynakları** penceresi türü belirtilmiş veri kümesi projenize ekleyin.  
   
-#### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
+### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
-1.  Varsa **veri kaynakları** pencere görünür değil, bunu, menü çubuğu seçme görüntülemek **Görünüm**, **diğer pencereler**, **veri kaynakları**.  
+1.  Varsa **veri kaynakları** pencere görünür değil, bunu, menü çubuğu seçme görüntülemek **Görünüm** > **diğer pencereler**  >   **Veri kaynakları**.  
   
 2.  Seçin **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
@@ -85,10 +86,10 @@ ms.lasthandoff: 04/16/2018
   
  Sihirbaz iki tablolara ekler **veri kaynakları** penceresi. Projenize görünür türü belirtilmiş veri kümesi de ekler **Çözüm Gezgini**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Çalışma sayfasına denetimler ekleme  
+## <a name="add-controls-to-the-worksheet"></a>Çalışma sayfasına denetimler ekleme  
  Bu adımda, adlandırılmış bir aralık, bir liste nesnesi ve iki düğme birinci çalışma sayfasına ekler. İlk olarak, adlandırılmış aralığın liste nesnesinden ekleyip **veri kaynakları** penceresi otomatik olarak bir veri kaynağına bağlı böylece. Ardından, düğmelerden eklemek **araç**.  
   
-#### <a name="to-add-a-named-range-and-a-list-object"></a>Adlandırılmış bir aralık ve bir liste nesnesi eklemek için  
+### <a name="to-add-a-named-range-and-a-list-object"></a>Adlandırılmış bir aralık ve bir liste nesnesi eklemek için  
   
 1.  Doğrulayın **My ana Detail.xlsx** çalışma kitabı, Visual Studio Tasarımcısı'nda açık ile **Sheet1** görüntülenir.  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  A <xref:Microsoft.Office.Tools.Excel.ListObject> adlı Denetim **Order DetailsListObject** hücresinde oluşturulur **A6**ve bağlı <xref:System.Windows.Forms.BindingSource>.  
   
-#### <a name="to-add-two-buttons"></a>İki düğmeleri eklemek için  
+### <a name="to-add-two-buttons"></a>İki düğmeleri eklemek için  
   
 1.  Gelen **ortak denetimler** sekmesinde **araç**, ekleme bir <xref:System.Windows.Forms.Button> hücre denetimine **A3** çalışma sayfasının.  
   
@@ -118,10 +119,10 @@ ms.lasthandoff: 04/16/2018
   
  Ardından, belgede önbelleğe alınacak veri kümesi işaretleyin.  
   
-## <a name="caching-the-dataset"></a>Veri kümesi önbelleğe alma  
+## <a name="cache-the-dataset"></a>Veri kümesi önbelleğe alma  
  Belgede veri kümesini ortak ve ayar yaparak önbelleğe alınacak veri kümesi işaretlemek **CacheInDocument** özelliği.  
   
-#### <a name="to-cache-the-dataset"></a>Veri kümesi önbelleğe almak için  
+### <a name="to-cache-the-dataset"></a>Veri kümesi önbelleğe almak için  
   
 1.  Seçin **NorthwindDataSet** bileşen alanındaki.  
   
@@ -133,10 +134,10 @@ ms.lasthandoff: 04/16/2018
   
  Düğmelere metin eklemek ve C# kod olay işleyicilerini kanca eklemek için sonraki adımdır bakın.  
   
-## <a name="initializing-the-controls"></a>Denetimleri başlatılıyor  
+## <a name="initialize-the-controls"></a>Denetimleri başlatmak  
  Düğme metni ayarlayın ve sırasında olay işleyicileri ekleyin <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> olay.  
   
-#### <a name="to-initialize-the-data-and-the-controls"></a>Verileri ve denetimleri başlatmak için  
+### <a name="to-initialize-the-data-and-the-controls"></a>Verileri ve denetimleri başlatmak için  
   
 1.  İçinde **Çözüm Gezgini**, sağ **Sheet1.vb** veya **Sheet1.cs**ve ardından **görünümü kodu** kısayol menüsünde.  
   
@@ -149,10 +150,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]  
   
-## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Kayıtları arasında kaydırma etkinleştirmek için kod ekleme  
+## <a name="add-code-to-enable-scrolling-through-the-records"></a>Kayıtlarda gezinmeye olanak sağlamak için kod ekleme  
  Kodu ekleyin <xref:System.Windows.Forms.Control.Click> kayıtlar arasında gezinmek için her düğmenin olay işleyicisi.  
   
-#### <a name="to-scroll-through-the-records"></a>Kayıtlar arasında gezinmek için  
+### <a name="to-scroll-through-the-records"></a>Kayıtlar arasında gezinmek için  
   
 1.  Bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button1`ve geriye doğru kayıtlarda taşımak için aşağıdaki kodu ekleyin:  
   
@@ -164,10 +165,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]  
   
-## <a name="testing-the-application"></a>Uygulamayı Test Etme  
+## <a name="test-the-application"></a>Uygulamayı test etme  
  Artık veriler beklendiği gibi görünür ve çözüm çevrimdışı kullanabilir emin olmak için çalışma kitabınızı test edebilirsiniz.  
   
-#### <a name="to-test-the-data-caching"></a>Veri önbelleğe alma işlemini sınamak için  
+### <a name="to-test-the-data-caching"></a>Veri önbelleğe alma işlemini sınamak için  
   
 1.  Tuşuna **F5**.  
   
@@ -179,21 +180,21 @@ ms.lasthandoff: 04/16/2018
   
 5.  Veritabanı bağlantısı devre dışı bırakın. Veritabanı bir sunucuda bulunuyorsa, bilgisayarınızdan ağ kablosunu çıkarın veya veritabanı geliştirme bilgisayarınızda yüklü ise SQL Server hizmetini durdurun.  
   
-6.  Excel'i açın ve ardından açın **My ana Detail.xlsx** \bin dizininden (Visual Basic'te \My Master-Detail\bin veya \My Master-Detail\bin\debug C#).  
+6.  Excel'i açın ve ardından açın **My ana Detail.xlsx** gelen *\bin* dizini (*\My Master-Detail\bin* Visual Basic'te veya *\My Master-Detail\bin\ hata ayıklama* C#).  
   
 7.  Bazı çalışma normalde kesildiğinde çalıştığını görmek için kayıtlar kaydırın.  
   
 8.  Veritabanına bağlanın. Veritabanı bir sunucuda bulunuyorsa, bilgisayar ağa yeniden bağlanmak veya veritabanı geliştirme bilgisayarınızda yüklü ise SQL Server hizmetini başlatın.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Bu kılavuz bir çalışma sayfasında bir ana öğe/ayrıntı ilişkisi oluşturma ve bir veri kümesi önbelleğe alma temellerini gösterir. Sonradan gelebilecek bazı görevler şunlardır:  
   
 -   Çözümü dağıtın. Daha fazla bilgi için bkz: [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
- [Verileri önbelleğe alma](../vsto/caching-data.md)   
- [Konak Öğelerine ve Denetimlerine Genel Bakış](../vsto/host-items-and-host-controls-overview.md)  
+ [Verileri önbelleğe](../vsto/caching-data.md)   
+ [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)  
   
   

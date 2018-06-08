@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c8aa176fe92cb4309990693063dcd27cf15a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843857"
 ---
 # <a name="lines-view---contention-data"></a>Satırlar görünümü - çakışma verileri
 Satırlar görünümü Çekişme veri örnekleri profil Çalıştır toplanan yükleyen yürütülmekte deyimleri için performans verilerini listeler. Bir kaynak dosyasında bir deyim bir kaynak dosyasında birden fazla satırı kapsayabilir ve tek bir satıra birden fazla deyim içerebilir.  
@@ -63,7 +64,7 @@ Satırlar görünümü Çekişme veri örnekleri profil Çalıştır toplanan y�
 |**Kaynak satırı başlangıç**|Deyim başlatan kaynak dosyasında satır numarası.|  
 |**Kaynak satır sonu**|Deyim erdiği kaynak dosyasında satır numarası.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [Satırlar görünümü](../profiling/lines-view.md)   
  [Satırlar görünümü - örnekleme](../profiling/lines-view-dotnet-memory-sampling-data.md)   

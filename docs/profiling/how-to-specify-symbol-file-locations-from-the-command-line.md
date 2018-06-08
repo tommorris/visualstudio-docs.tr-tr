@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf6c17430c4f56ae1821a149d4a7cc5f82f0028e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0d31479ec46c407ca875a1ad2a1d81e1438b7715
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571436"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845216"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Nasıl yapılır: komut satırından simge dosyası konumlarını belirtin
 İşlev adları ve satır numaralarını gibi sembol bilgilerini görüntülemek için VSPerfReport komut satırı aracı simgenin erişmesi (. *pdb*) profili bileşenleri ve Windows sistem dosyalarının dosya. Bir bileşenin derlendiğinde simge dosyaları oluşturulur. Daha fazla bilgi için bkz: [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport, otomatik olarak simge dosyaları aşağıdaki konumlarda arar:  
@@ -59,6 +59,6 @@ ms.locfileid: "34571436"
   
  **ayarlama _NT_SYMBOL_PATH srv =\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
   
- Aşağıdaki VSPerfReport komut satırını kullanarak C:\Projects\Symbols dizin arama yoluna ekler **/SymbolPath** seçeneği.  
+ Aşağıdaki VSPerfReport komut satırını ekler *C:\Projects\Symbols* arama yolu kullanarak dizin **/SymbolPath** seçeneği.  
   
  **VSPerfReport***Uygulamam* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

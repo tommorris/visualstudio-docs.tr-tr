@@ -1,5 +1,5 @@
 ---
-title: "İzlenecek yol: Visual C# Projesinde VBA'dan Kod Çağırma | Microsoft Docs"
+title: "İzlenecek yol: bir Visual C# projesinde VBA'dan kod çağırmak"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845484"
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>İzlenecek Yol: Visual C# Projesinde VBA'dan Kod Çağırma
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>İzlenecek yol: bir Visual C# projesinde VBA'dan kod çağırmak
   Bu kılavuz bir yöntem bir belge düzeyi özelleştirmelerinde Microsoft Office Excel için Visual Basic for Applications (VBA) kodunu çalışma kitabı nasıl çağrılacağını gösterir. Yordam üç temel adımdan oluşur: bir yöntem ekleme `Sheet1` konak öğesi sınıfına, çalışma kitabı VBA kodunda yöntemi oluşturma ve çalışma kitabı VBA kodundan yöntemini çağırın.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -59,12 +60,12 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel  
   
-## <a name="creating-a-workbook-that-contains-vba-code"></a>VBA kodu içeren bir çalışma kitabı oluşturma  
+## <a name="create-a-workbook-that-contains-vba-code"></a>VBA kodu içeren bir çalışma kitabı oluşturun  
  İlk adım, basit VBA makrosu içeren bir makro etkin bir çalışma kitabı oluşturmaktır. VBA özelleştirmelerinde kodu oluşturmadan önce çalışma kitabı zaten VBA kodu içermesi gerekir. Aksi takdirde, Visual Studio özelleştirme derlemesini çağırmak VBA kodu etkinleştirmek için VBA projesini değiştiremez.  
   
  Kullanmak istediğiniz VBA kodu içeren bir çalışma kitabı zaten varsa bu adımı atlayabilirsiniz.  
   
-#### <a name="to-create-a-workbook-that-contains-vba-code"></a>VBA kodu içeren bir çalışma kitabı oluşturmak için  
+### <a name="to-create-a-workbook-that-contains-vba-code"></a>VBA kodu içeren bir çalışma kitabı oluşturmak için  
   
 1.  Excel'i başlatın.  
   
@@ -85,17 +86,17 @@ ms.lasthandoff: 04/16/2018
   
 6.  Aşağıdaki VBA kodu kod dosyasına ekleyin. Bu kod, hiçbir şey yapmaz basit bir işlevi tanımlar. Tek amacı, bu işlevi VBA projesi çalışma kitabında var olduğundan emin olmaktır. Bu, bu kılavuzda sonraki adımlar için gereklidir.  
   
-    ```  
+    ```vb  
     Sub EmptySub()  
     End Sub  
     ```  
   
 7.  Belgeyi kaydedin ve Excel çıkın.  
   
-## <a name="creating-the-project"></a>Projeyi Oluşturma  
+## <a name="create-the-project"></a>Projeyi oluşturma  
  Şimdi, daha önce oluşturduğunuz makrosu etkin çalışma kitabını kullanan Excel için belge düzeyi projesi oluşturabilirsiniz.  
   
-#### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
+### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
 1.  Başlat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -119,10 +120,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **WorkbookWithVBA** çalışma kitabı Tasarımcısı'nda ve ekler **CallingCodeFromVBA** için proje **Çözüm Gezgini**.  
   
-## <a name="trusting-the-location-of-the-workbook"></a>Çalışma kitabının konumuna güvenme  
+## <a name="trust-the-location-of-the-workbook"></a>Çalışma kitabının konumuna güven  
  VBA kodu çalışma kitabı Çözümünüzdeki kodu oluşturmadan önce çalıştırmak için çalışma kitabını VBA güvenmesi gerekir. Bunu yapmanın birkaç yolu vardır. Bu kılavuzda, bu görevin çalışma kitabında konumunu güvenerek yapabiliriz **Güven Merkezi** Excel'de.  
   
-#### <a name="to-trust-the-location-of-the-workbook"></a>Çalışma kitabının konumuna güvenmek için  
+### <a name="to-trust-the-location-of-the-workbook"></a>Çalışma kitabının konumuna güvenmek için  
   
 1.  Excel'i başlatın.  
   
@@ -150,10 +151,10 @@ ms.lasthandoff: 04/16/2018
   
 13. Çıkış **Excel**.  
   
-## <a name="adding-a-method-to-the-sheet1-class"></a>Sheet1 sınıfına bir yöntem ekleme  
+## <a name="add-a-method-to-the-sheet1-class"></a>Sheet1 sınıfına bir yöntem ekleme  
  VBA projesi kurulduğunda, ortak bir yöntem eklemek `Sheet1` ana VBA kodundan çağırabilirsiniz öğesi sınıf.  
   
-#### <a name="to-add-a-method-to-the-sheet1-class"></a>Sheet1 sınıfı için bir yöntem eklemek için  
+### <a name="to-add-a-method-to-the-sheet1-class"></a>Sheet1 sınıfı için bir yöntem eklemek için  
   
 1.  İçinde **Çözüm Gezgini**, sağ **Sheet1.cs**ve ardından **görünümü kodu**.  
   
@@ -171,10 +172,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]  
   
-## <a name="extracting-an-interface-for-the-sheet1-class"></a>Sheet1 sınıfı için bir arabirim ayıklanıyor  
+## <a name="extract-an-interface-for-the-sheet1-class"></a>Sheet1 sınıfı için bir arabirimi Ayıkla  
  Oluşturmadan önce `CreateVstoNamedRange` yöntemi VBA kodu için bu yöntemi tanımlayan ortak bir arabirim oluşturmanız gerekir ve bu arabirime com kullanıma sunma  
   
-#### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Sheet1 sınıfı için bir arabirimi ayıklamak için  
+### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Sheet1 sınıfı için bir arabirimi ayıklamak için  
   
 1.  İçinde **Sheet1.cs** kod dosyası, herhangi bir yeri tıklatın `Sheet1` sınıfı.  
   
@@ -192,10 +193,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Projeyi oluşturun.  
   
-## <a name="exposing-the-method-to-vba-code"></a>VBA kodu yönteme gösterme  
+## <a name="expose-the-method-to-vba-code"></a>VBA kodunda yöntemi oluşturma  
  Kullanıma sunmak için `CreateVstoNamedRange` VBA kodu çalışma kitabını yönteme ayarlamak **ReferenceAssemblyFromVbaProject** özelliği için `Sheet1` konak öğesi **doğru**.  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>VBA kodu yönteme kullanıma sunmak için  
+### <a name="to-expose-the-method-to-vba-code"></a>VBA kodu yönteme kullanıma sunmak için  
   
 1.  İçinde **Çözüm Gezgini**, çift **Sheet1.cs**.  
   
@@ -207,15 +208,15 @@ ms.lasthandoff: 04/16/2018
   
 4.  Projeyi oluşturun.  
   
-## <a name="calling-the-method-from-vba-code"></a>VBA kodundan yöntemi çağırma  
+## <a name="call-the-method-from-vba-code"></a>VBA kodundan yöntemini çağırın  
  Şimdi Ara `CreateVstoNamedRange` çalışma kitabı VBA kodundan yöntemi.  
   
 > [!NOTE]  
->  Bu kılavuzda, projede hata ayıklarken VBA kodu çalışma kitabına ekleyeceksiniz. Visual Studio ile ana proje klasöründeki belgenin bir kopyasını yapı çıktı klasörüne belgede değiştirdiğinden bu belgeye eklediğiniz VBA kodu Projeyi derlemek bir sonraki başlatılışında üzerine yazılır. VBA kodu kaydetmek istiyorsanız, bu proje klasöründeki belgeye kopyalayabilirsiniz. Daha fazla bilgi için bkz: [birleştirme VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).  
+>  Bu kılavuzda, projede hata ayıklarken VBA kodu çalışma kitabına ekleyeceksiniz. Visual Studio ile ana proje klasöründeki belgenin bir kopyasını yapı çıktı klasörüne belgede değiştirdiğinden bu belgeye eklediğiniz VBA kodu Projeyi derlemek bir sonraki başlatılışında üzerine yazılır. VBA kodu kaydetmek istiyorsanız, bu proje klasöründeki belgeye kopyalayabilirsiniz. Daha fazla bilgi için bkz: [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).  
   
-#### <a name="to-call-the-method-from-vba-code"></a>VBA kodundan yöntemi çağırmak için  
+### <a name="to-call-the-method-from-vba-code"></a>VBA kodundan yöntemi çağırmak için  
   
-1.  Projenizi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
 2.  Üzerinde **Geliştirici** sekmesinde **kod** grubunda **Visual Basic**.  
   
@@ -227,7 +228,7 @@ ms.lasthandoff: 04/16/2018
   
      Bu kod çağırır `CreateTable` özelleştirme derlemesindeki yöntemi. Genel kullanarak bu yöntem makrosu erişir `GetManagedClass` erişmek için yöntemi `Sheet1` ana VBA kodu kullanıma sunulan öğesi sınıf. `GetManagedClass` Yöntemi ayarladığınızda otomatik olarak üretilen **ReferenceAssemblyFromVbaProject** özelliği bu kılavuzda daha önce.  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim VSTOSheet1 As CallingCodeFromVBA.Sheet1  
         Set VSTOSheet1 = GetManagedClass(Sheet1)  
@@ -235,23 +236,23 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-5.  F5 tuşuna basın.  
+5.  Tuşuna **F5**.  
   
 6.  Açık çalışma kitabında hücreyi tıklatın **A1** üzerinde **Sheet1**. İleti kutusu göründüğünden emin olun.  
   
 7.  Excel Değişikliklerinizi kaydetmeden kapatın.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Bu konu başlıklarında VBA'dan Office çözümlerinde kod çağırma hakkında daha fazla bilgi edinebilirsiniz:  
   
--   Konak öğesi VBA'dan Visual Basic özelleştirmelerinde kodu çağırma. Bu işlem Visual C# işleminden farklıdır. Daha fazla bilgi için bkz: [izlenecek yol: Visual Basic Projesinde VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
+-   Konak öğesi VBA'dan Visual Basic özelleştirmelerinde kodu çağırma. Bu işlem Visual C# işleminden farklıdır. Daha fazla bilgi için bkz: [izlenecek yol: çağrı kodu VBA içinden bir Visual Basic projesinde](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
   
--   VBA içinden bir VSTO eklenti kodu çağırma. Daha fazla bilgi için bkz: [izlenecek yol: eklentide bir VSTO VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   VBA içinden bir VSTO eklenti kodu çağırma. Daha fazla bilgi için bkz: [izlenecek yol: çağrı kod bir VSTO eklentide VBA'dan](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
- [Nasıl yapılır: Visual Basic projesinde VBA kodu kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Nasıl yapılır: Visual c VBA kodu kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [İzlenecek Yol: Visual Basic Projesinde VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [Nasıl yapılır: Visual Basic projesinde VBA'ya sunmaya kodu](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Nasıl yapılır: Visual c VBA'ya sunmaya kodu&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [İzlenecek yol: bir Visual Basic projesinde VBA'dan kod çağırmak](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

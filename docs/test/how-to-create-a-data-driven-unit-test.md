@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c15087e1e107dcbd01ba0662fecee336acd33b6
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844273"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
 
@@ -113,13 +114,13 @@ public void AddIntegers_FromDataSourceTest()
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> DataSourceAttribute belirtme
  `DataSource` Özniteliği test yönteminde veri kaynağı ve kullandığınız tablo adı için bağlantı dizesini belirtir. Tam bilgileri bağlantı dizesinde, kullandığınız veri kaynağı türüne bağlı olarak farklılık gösterir. Bu örnekte, bir SqlServerCe veritabanı kullandık.
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 Veri kaynağı özniteliği üç Oluşturucusu vardır.
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -127,7 +128,7 @@ Veri kaynağı özniteliği üç Oluşturucusu vardır.
 
  App.config dosyasını kullanarak birim testi kendisini değişiklik yapmadan veri kaynağının konumunu değiştirmenize izin verir. Bir app.config dosyası oluşturma ve kullanma hakkında daha fazla bilgi için bkz: [izlenecek yol: bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -135,7 +136,7 @@ Veri kaynağı özniteliği üç Oluşturucusu vardır.
 
  Bağlantı dizeleri veri kaynağı türü türüne bağlıdır, ancak veri sağlayıcı değişmez adını belirten bir sağlayıcısı öğesi içermelidir.
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,

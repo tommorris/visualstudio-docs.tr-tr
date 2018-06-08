@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 30bd83819dcbfd4423c399c42aeb518a1d11e6e9
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844189"
 ---
 # <a name="target-build-order"></a>Hedef Derleme Sırası
 Bir hedef girdisi başka bir hedef Çıkışta bağımlıysa hedefleri sıralanmalıdır. Bu öznitelikler hedefleri çalıştığı sırayı belirtmek için kullanabilirsiniz:  
@@ -115,7 +116,7 @@ Bir hedef girdisi başka bir hedef Çıkışta bağımlıysa hedefleri sıralanm
   
 4.  Bir hedef yürütülmeden önce kendi `DependsOnTargets` hedefleri çalıştırılır.  
   
-5.  Bir hedef yürütülmeden önce tüm hedef listelerin içinde bir `BeforeTargets` özniteliği çalıştırılır.  
+5.  Bir hedef yürütülen veya atlandı, içinde listeler hedef önce bir `BeforeTargets` özniteliği çalıştırılır.  
   
 6.  Bir hedef yürütülmeden önce kendi `Inputs` özniteliği ve `Outputs` özniteliği karşılaştırılır. MSBuild belirlerse çıkış dosyalarla ilgili girdi dosyası veya dosyaları göre eski sonra MSBuild hedef yürütür. Aksi takdirde, MSBuild hedef atlar.  
   

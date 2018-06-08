@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b35964aeef4323f4daff01d77aef5d3d5bf7f66
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f73db7e52c22291443ec262eb2f91ffbcd319c7
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845096"
 ---
 # <a name="lines-view---sampling-data"></a>Satırlar görünümü - örnekleme verileri
 Veri örnekleme görünümünü örnekleri profil toplanan yükleyen yürütülmekte deyimleri için performans verilerini listeler satırları çalıştırın.  
@@ -60,5 +61,5 @@ Veri örnekleme görünümünü örnekleri profil toplanan yükleyen yürütülm
 |**Özel örnekleri**|İşlev satır yürütürken, toplanan örnek toplam sayısı.|  
 |**Özel örnekleri %**|İşlev satır yürütürken, toplanan çalıştırmak profil tüm örneklerini yüzdesi.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Satırlar görünümü - örnekleme](../profiling/lines-view-dotnet-memory-sampling-data.md)

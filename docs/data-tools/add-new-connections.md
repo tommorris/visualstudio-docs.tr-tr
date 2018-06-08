@@ -9,12 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747098"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845021"
 ---
 # <a name="add-new-connections"></a>Yeni bağlantı ekleme
 
@@ -26,7 +26,7 @@ Bir veritabanı veya hizmet bağlantınızı test ve veritabanı içeriklerini v
 
 - Bulut Gezgini
 
-   Visual Studio uzantısı olarak el ile yüklemeniz seçerek bu pencereyi **Araçları**, **Uzantılar ve güncelleştirmeler**, **çevrimiçi**, **Visual Studio Markeplace**. Keşfetmek ve Azure hizmetlerine bağlanmak için özel işlevler sağlar.
+   Visual Studio uzantısı olarak el ile yüklemeniz seçerek bu pencereyi **Araçları** > **Uzantılar ve güncelleştirmeler** > **çevrimiçi**  >  **Visual Studio Markeplace**. Keşfetmek ve Azure hizmetlerine bağlanmak için özel işlevler sağlar.
 
 - SQL Server Object Explorer
 

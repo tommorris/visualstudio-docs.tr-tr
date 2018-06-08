@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747397"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845324"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere denetimler bağlama
 Denetimlere veri bağlama tarafından uygulamanızı kullanıcılara verileri görüntüleyebilir. Bu veri bağlama denetimleri konumundan öğeleri sürükleyerek oluşturabileceğiniz **veri kaynakları** tasarım yüzeyi veya Visual Studio'da yüzeyinde denetimleri penceresi.
@@ -48,7 +48,7 @@ Denetimlere veri bağlama tarafından uygulamanızı kullanıcılara verileri g�
 
  ![Veri Kaynakları penceresi](../data-tools/media/raddata-data-sources-window.png)
 
- Görünür her bir veri türü için **veri kaynakları** penceresinde varsayılan denetimi Designer'a öğesi sürüklediğinizde oluşturulur. Bir öğeden sürükleyerek önce **veri kaynakları** penceresinde oluşturulacak denetim değiştirebilirsiniz. Daha fazla bilgi için bkz: [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimini ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+ Görünür her bir veri türü için **veri kaynakları** penceresinde varsayılan denetimi Designer'a öğesi sürüklediğinizde oluşturulur. Bir öğeden sürükleyerek önce **veri kaynakları** penceresinde, oluşturulan denetim değiştirebilirsiniz. Daha fazla bilgi için bkz: [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimini ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Verilere denetimler bağlama içinde görevleri
  Aşağıdaki tabloda bazı listeler, en yaygın görevleri verilere denetimler bağlama için gerçekleştirin.
@@ -64,7 +64,7 @@ Denetimlere veri bağlama tarafından uygulamanızı kullanıcılara verileri g�
 |Kullanıcı Arabiriminde görünen verileri filtreleyin.|[Bir Windows Forms uygulamasındaki verileri filtreleme ve sıralama](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Denetimler için resim yazıları özelleştirin.|[Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [.NET için Visual Studio veri araçları](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Windows Forms Veri Bağlama](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Windows Forms veri bağlama](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fb44e7927136ba02d04f4b57f38ae52cc76c9fd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767890"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844231"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Ekleme listelerini kullanarak Office çözümlerine güven
   Ekleme listeleri yayımcıyı tanımlayan bir sertifikayla imzalanmış Office çözümlerine güven verme olanağı verir. Ekleme listeleri kullanıcıya özeldir ve belge düzeyi özelleştirmeleri ve VSTO eklentileri için kullanılabilir.  
@@ -33,7 +33,7 @@ ms.locfileid: "34767890"
  Bir kullanıcı bu kullanıcı için güven verilmemiş Office çözümünü başladığında, Microsoft Office çözümü ondan ile güvenlik kararı ister bir [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi. Kullanıcı çözümü güven karar verirse, özelleştirme çalışır ve kullanıcı olmayan sorulup sonraki.  
   
 ## <a name="inclusion-list-and-windows-installer"></a>Ekleme listesi ve Windows Installer  
- Windows Installer kullanarak Office çözümleri Program dosyaları dizinine yüklemek için yönetici hakları gerekir. Office çözümleri zaten FullTrust izni verilmiş çünkü Program Files dizininde Office çözümleri için Office çalışma zamanı için Visual Studio Araçları ekleme listesi artık denetler.  
+ Office çözümleriyle yükleme *Program Files* Windows Installer kullanarak dizin yönetici haklarını gerektirir. Office çözümleri için *Program Files* dizin, Office çalışma zamanı için Visual Studio Araçları Office çözümleri zaten FullTrust izni verilmiş olduğundan ekleme listesi artık denetler.  
   
 ## <a name="clickonce-trust-prompt"></a>ClickOnce güven istemi  
  Kullanarak [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Office çözümleri, Yöneticiler için uygulama isteyen izin isteyen devre dışı bırakmak için güven istemi düzeyini yapılandırın veya güvenilen bir sertifika gerektirir. Bu yapılandırma erişimi denetleyen kayıt defteri anahtarını kullanarak yapılır ekleme listesi.  

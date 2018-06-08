@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751695"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845499"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft Visual Studio'da C++ Framework sınama birim kullanın
 
@@ -32,7 +32,7 @@ Genellikle, test kodunuzu test etmek istediğiniz kod olarak aynı çözüme ken
 
     3.  Aşağıdaki satırları aşağı oka tıklayın ve seçin **<Edit>** :
 
-        |||
+        |Dizin|Özellik|
         |-|-|
         |**Yönergeleri dahil etme**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**Kitaplık dizinleri**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -67,7 +67,7 @@ Kategorilere ayırmak ve testlerinde Grup sağlayan test yöntemlerinde nitelikl
 
  Birim testlerinde tanımlı ayırdedici nitelik kullanmak için:
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

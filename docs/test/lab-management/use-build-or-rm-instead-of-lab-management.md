@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 607bc4646a6bacd0ae119d07e832ffca2f279152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845385"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Derleme ve sürüm Yönetimi yerine Laboratuvar Yönetimi otomatikleştirilmiş test için kullanın.
 
@@ -58,7 +59,7 @@ Ancak, daha zengin genel ve özel bulut evrimi yönetim sistemleri gibi verilen 
 
 | Adımlar | Laboratuvar Merkezi ile | Derleme veya yayın Yönetimi |
 |-------|----------------------|-----------------|
-| Bir ortam şablonları kitaplığı yönetin. | Bir laboratuvar ortamı oluşturun. Sanal makinelerde gerekli yazılımı yükleyin. Sysprep ve depolama ortamı Kitaplığı'nda bir şablon olarak. | SCVMM Yönetim konsolunu doğrudan oluşturmak ve sanal makine şablonları veya hizmet şablonları yönetmek için kullanın. Azure kullanırken aşağıdakilerden birini seçin [Azure hızlı başlangıç şablonlarını](/resources/templates/). |
+| Bir ortam şablonları kitaplığı yönetin. | Bir laboratuvar ortamı oluşturun. Sanal makinelerde gerekli yazılımı yükleyin. Sysprep ve depolama ortamı Kitaplığı'nda bir şablon olarak. | SCVMM Yönetim konsolunu doğrudan oluşturmak ve sanal makine şablonları veya hizmet şablonları yönetmek için kullanın. Azure kullanırken aşağıdakilerden birini seçin [Azure hızlı başlangıç şablonlarını](https://azure.microsoft.com/resources/templates/). |
 | Bir laboratuvar ortamı oluşturun. | Kitaplıkta bir ortam şablonunu seçin ve dağıtın. Sanal makine yapılandırmalarının özelleştirmek için gerekli parametreleri belirtin. | Doğrudan şablonlardan sanal makineler veya hizmet örnekleri oluşturmak için SCVMM Yönetim konsolunu kullanın. Doğrudan kaynak oluşturmak için Azure portalını kullanın. Veya bir yayın tanımı bir ortam oluşturabilirsiniz. Kullanım Azure görevler veya gelen görevleri [SCVMM Tümleştirme Uzantısı](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) yeni sanal makineler oluşturmak için. Bu tanım yeni bir sürüm oluşturma, Laboratuvar Merkezi'nde yeni bir ortam oluşturmaya eşdeğerdir. |
 | Makinelere bağlayın. | Laboratuvar ortamını Ortam Görüntüleyicisi'nde açın. | Doğrudan sanal makinelere bağlanmak için SCVMM Yönetim konsolunu kullanın. Alternatif olarak, uzak masaüstü oturumları açmak için IP adresi veya sanal makinelerin DNS adlarını kullanın. |
 | Bir ortamın bir denetim noktası almak veya bir ortam için temiz bir kontrol noktası geri yükleyin. | Laboratuvar ortamını Ortam Görüntüleyicisi'nde açın. Bir denetim noktası almak için veya bir önceki kontrol noktasına geri yüklemek için seçeneği seçin. | Doğrudan sanal makinelerde bu işlemleri gerçekleştirmek için SCVMM Yönetim konsolunu kullanın. Veya daha büyük bir Otomasyon bir parçası olarak bu adımları gerçekleştirmek için denetim noktası görevlerden dahil [SCVMM Tümleştirme Uzantısı](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) yayın tanımında ortamının bir parçası olarak. |

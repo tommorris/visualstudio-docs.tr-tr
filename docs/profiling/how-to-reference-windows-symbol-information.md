@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 198677eb431852d5249684d23ff0dcad025e63af
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ace6b0eaf71b4bfb992d0ff0ccdb09351eac2c19
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572410"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844176"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Nasıl yapılır: Başvuru Pencereleri Sembol Bilgileri
+# <a name="how-to-reference-windows-symbol-information"></a>Nasıl yapılır: başvuru Windows sembol bilgileri
 Profil oluşturma Visual Studio Araçları simgesini kullanın (. *pdb*) gibi simgesel adları çözümlemek için dosyaları işlev program ikili adları. Otomatik olarak karşıdan yükle ve doğru güncelleştirmek için aşağıdaki adımları izleyebilirsiniz. *pdb* dosyaları yerel bilgisayarda Windows sürümü için.  
   
 > [!NOTE]

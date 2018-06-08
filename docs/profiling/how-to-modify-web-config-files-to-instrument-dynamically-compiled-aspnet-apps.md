@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336038"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844771"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: izleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme
 Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ayrıntılı zamanlama verileri, .NET bellek ayırma verileri ve .NET nesne yaşam süresi verilerini dinamik olarak toplamak için profil oluşturma araçları izleme yöntemini derlenmiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.  
   
- Bu konu, araçları ve, profil oluşturma etkinleştirmek için web.config yapılandırma dosyasını değiştirmek açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.  
+ Bu konuda nasıl değiştirileceğini açıklar *web.config* araçları ve, profil oluşturma etkinleştirmek için yapılandırma dosyası [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.  
   
 > [!NOTE]
->  Örnekleme profili oluşturma yöntemi kullandığınızda veya önceden derlenmiş işaretlemesini istediğinizde web.config dosyasını değiştirmeniz gerekmez [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modülü.  
+>  Değişiklik gerekmez *web.config* dosya örnekleme profili oluşturma yöntemi kullandığınızda ya da önceden derlenmiş işaretlemesini istediğinizde [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modülü.  
   
- Kök web.config dosyasının **yapılandırma** öğesi. İzleme ve dinamik olarak derlenmiş profil için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması, ekleyin veya aşağıdaki öğeleri değiştirmeniz gerekir:  
+ Kök bir *web.config* dosyası **yapılandırma** öğesi. İzleme ve dinamik olarak derlenmiş profil için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, ekleyin veya aşağıdaki öğeleri değiştirmeniz gerekir:  
   
 -   A **yapılandırma/çalışma zamanı/assemblyBinding/dependentAssembly** profil denetimleri Microsoft.VisualStudio.Enterprise.ASPNetHelper derleme tanımlayan öğesi. **DependentAssembly** öğesi iki alt öğeleri içerir: **assemblyIdentity** ve **codeBase**.  
   
@@ -33,7 +33,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ay
   
 -   İki **ekleme** profil oluşturma Araçlar konumunu tanımlamak öğeleri eklenir **configuration/appSettings** bölümü.  
   
- Uygulamanın yapılandırmayı geri yüklemek için kullanabileceğiniz özgün web.config dosyasının bir kopyasını oluşturmanızı öneririz.  
+ Özgün bir kopyasını oluşturmanızı öneririz *web.config* uygulama yapılandırmayı geri yüklemek için kullanabileceğiniz dosyası.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Bir yapılandırma/çalışma zamanı/assemblyBinding/dependentAssembly öğesi olarak ASPNetHelper derleme eklemek için  
   
@@ -176,7 +176,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ay
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki izleme ve, profil olanak sağlayan bir tam web.config dosyasıdır dinamik olarak derlenmiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları. Bu örnek, herhangi bir değişiklik yapılmadan önce dosya ayarlarında olduğunu varsayar.  
+ Aşağıdaki bir tamamlandıktan *web.config* derlenmiş araçları ve, dinamik olarak profil sağlayan dosyası [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları. Bu örnek, herhangi bir değişiklik yapılmadan önce dosya ayarlarında olduğunu varsayar.  
   
 ```xml  
 <?xml version="1.0"?>  

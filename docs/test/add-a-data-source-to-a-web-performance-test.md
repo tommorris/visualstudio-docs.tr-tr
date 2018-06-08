@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1ec0171efa5f394551aff8caeb7d8a0622db9207
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750831"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844813"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web performans testine veri kaynağı ekleme
 
@@ -152,13 +152,13 @@ ms.locfileid: "34750831"
 
 3. Metin dosyasını düzenleyin ve aşağıdakileri ekleyin:
 
-    ```
+    ```text
     ColorId, ColorName
     0,Red
     1,Blue
     ```
 
-4. İçindeki adımları kullanın [SQL veri bağlama](#AddingDataBindingWebTest_BindSQLData), ancak veri kaynağınız CSV dosyası seçin.
+4. İçindeki adımları kullanın [veri kaynağı ekleme](#add-the-data-source), ancak veri kaynağınız CSV dosyası seçin.
 
      ![Bir ad girin ve CSV dosyası seçin](../test/media/web_test_databinding_adddatasourcedialog.png)
 
@@ -172,7 +172,7 @@ ms.locfileid: "34750831"
 
 2. Verilerinizin yapısını açıklayan bilgileri eklemek için schema.ini dosyasını düzenleyin. Örneğin, CSV dosyasını tanımlayan bir şema dosyası şuna benzeyebilir:
 
-    ```
+    ```text
     [testdata.csv]
     ColNameHeader=False
     ```
@@ -241,7 +241,7 @@ ms.locfileid: "34750831"
     </ColorData>
     ```
 
-4. İçindeki adımları kullanın [SQL veri bağlama](#AddingDataBindingWebTest_BindSQLData), ancak veri kaynağınız XML dosyası seçin.
+4. İçindeki adımları kullanın [veri kaynağı ekleme](#add-the-data-source), ancak veri kaynağınız XML dosyası seçin.
 
      ![Bir ad girin ve XML dosyası seçin](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
@@ -255,7 +255,7 @@ ms.locfileid: "34750831"
 
 2. SOAP gövdesi değerleri, aşağıdaki sözdizimini kullanarak veri bağlama değerleriyle değiştirin:
 
-    ```
+    ```xml
     {{DataSourceName.TableName.ColumnName}}
     ```
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751429"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845762"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme
 
@@ -66,11 +66,11 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 
 
 > [!NOTE]
-> Hiçbir test görünürse, kullanmakta olduğunuz test çerçevesi Test Gezgini bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için bkz: [Test Gezgini ile farklı Test çerçevelerini kullanarak](#frameworks).
+> Hiçbir test görünürse, kullanmakta olduğunuz test çerçevesi Test Gezgini bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için bkz: [üçüncü taraf birim test çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
 
 ##  <a name="walkthrough"></a> İzlenecek yol: Bir yöntem geliştirmek için birim testleri kullanma
- Bu kılavuz, C# Microsoft birim testi çerçevesini kullanarak test edilmiş bir yöntem geliştirmek gösterilmiştir. Bu diğer diller için ve diğer test çerçevelerini NUnit gibi kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için bkz: [farklı Test çerçevelerini kullanarak](#frameworks).
+ Bu kılavuz, C# Microsoft birim testi çerçevesini kullanarak test edilmiş bir yöntem geliştirmek gösterilmiştir. Bu diğer diller için ve diğer test çerçevelerini NUnit gibi kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için bkz: [üçüncü taraf birim test çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
 #### <a name="creating-the-test-and-method"></a>Test ve yöntemi oluşturma
 
@@ -190,7 +190,7 @@ Birçok artımlı geliştirme adımlarını düzgün çalışmasını kodunuzu t
 
 3.  Ne sorun olabilir görmek için test altındaki yöntemi inceleyin. İçinde `MyMath.Rooter` sınıfı, kodu yeniden yazma:
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;

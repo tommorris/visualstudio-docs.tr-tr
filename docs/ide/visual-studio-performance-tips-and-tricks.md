@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 08b2e1087b97cb16a52a8abdf8f204fd0f3a0bfb
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845203"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
@@ -23,25 +24,23 @@ Visual Studio performans önerileri nadir durumlarda oluşabilir düşük bellek
 > [!NOTE]
 > Bellek sorunları nedeniyle ürün kullanmakta zorluk yaşıyorsanız, aracılığıyla bize [geri bildirim aracı](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
-## <a name="optimize-your-environment"></a>Ortamınıza en iyi duruma getirme
+## <a name="use-a-64-bit-os"></a>Bir 64-bit işletim sistemi kullanın
 
-- **Bir 64-bit işletim sistemi kullanın**
+Sisteminiz Windows 32-bit sürümünden bir 64-bit sürümüne yükseltirseniz, sanal bellek miktarı için Visual Studio 2 GB ile 4 GB'den genişletin. 32 bit işlem olsa bile bu önemli ölçüde daha büyük iş yüklerini işlemek üzere Visual Studio sağlar.
 
-    Sisteminiz Windows 32-bit sürümünden bir 64-bit sürümüne yükseltirseniz, sanal bellek miktarı için Visual Studio 2 GB ile 4 GB'den genişletin. Bu, 32 bitlik işlem olsa bile önemli ölçüde daha büyük iş yüklerini işlemek üzere Visual Studio sağlar.
+Daha fazla bilgi için bkz: [bellek sınırları](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) ve [/LARGEADDRESSAWARE 64-bit Windows sürümlerinde kullanmak](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-    Daha fazla bilgi için bkz: [bellek sınırları](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) ve [/LARGEADDRESSAWARE 64-bit Windows sürümlerinde kullanmak](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+## <a name="disable-automatic-file-restore"></a>Otomatik dosya geri yükleme devre dışı bırak
 
-## <a name="configure-solution-and-projects"></a>Çözüm ve projeleri yapılandırma
+Visual Studio'nun önceki oturumda açık bırakılmış belgeleri otomatik olarak açılır. Bu, bir çözüm % 30 veya daha fazla proje türü ve açılmakta olan belgeleri bağlı olarak yüklemek için gereken kez uzatmak. Windows Forms ve XAML ve bazı JavaScript ve typescript dosyaları gibi tasarımcıları açılması yavaş olabilir.
 
-Çok sayıda proje çok büyük bir çözüm varsa, aşağıdaki iyileştirmeleri yaparak yararlı:
+Visual Studio otomatik belge geri yükleme önemli ölçüde daha yavaş yüklemek bir çözüm ne zaman açtığını çubuğu sarı bildirir. Aşağıdaki adımları izleyerek otomatik dosya açmayı devre dışı bırakabilirsiniz:
 
-- **Unload projeleri**
+1. Seçin **Araçları** > **seçenekleri** açmak için **seçenekleri** iletişim kutusu.
 
-    Nadiren kullanılan unload tek tek projelerden el ile yapabilecekleriniz **Çözüm Gezgini** sağ bağlam menüsünü kullanarak.
+1. Üzerinde **proje ve çözüm** > **genel** sayfasında, seçimini **yeniden çözüm yük belgelerde**.
 
-- **Çözümü yeniden Düzenle**
-
-    Yaygın olarak kullanılan projelerle birkaç küçük çözüm dosyalarına çözümünüzü bölebilirsiniz. Bu yeniden düzenleme iş akışınız için bellek kullanımını önemli ölçüde azaltan. Ayrıca daha küçük çözümleri daha hızlı yük.
+Otomatik dosya geri yükleme devre dışı bırakırsanız, açmak istediğiniz dosyaları bulmak için hızlı bir şekilde kullanmaktır [gitmek için](../ide/go-to.md). Seçin **Düzenle** > **gitmek için** > **tüm Git**, veya basın **Ctrl**+**T** .
 
 ## <a name="configure-debugging-options"></a>Hata ayıklama seçeneklerini yapılandırma
 
@@ -73,28 +72,29 @@ Genellikle bellek hata ayıklama oturumları sırasında düşük çalıştırı
 
 ## <a name="disable-tools-and-extensions"></a>Araçlar ve uzantılar devre dışı bırak
 
-Bazı araçlar ya da uzantıları performansı için devre dışı bırakılmış olabilir.
+Bazı araçlar ya da uzantıları performansını artırmak için kapatılabilir.
 
 > [!TIP]
 > Performans sorunlarını genellikle, bir kerede tek uzantıları kapatmak kapatarak ve performans yeniden denetleme da ayırabilirsiniz.
 
-### <a name="managed-language-services-roslyn"></a>Yönetilen dil Hizmetleri (Roslyn)
+### <a name="managed-language-service-roslyn"></a>Yönetilen dil hizmeti (Roslyn)
 
 .NET derleme Platformu ("Roslyn") performans konuları hakkında daha fazla bilgi için bkz: [büyük çözümler için başarım düşünceleri](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Tam çözüm analizini devre dışı bırak**
 
-    Visual Studio derleme çağırmadan önce hatalarla ilgili zengin bir deneyim sağlamak amacıyla, çözümün tamamında çözümlemesi gerçekleştirir. Bu özellik hataları mümkün olan en kısa sürede belirlemek kullanışlıdır. Ancak, çok büyük çözümler için bu özellik önemli bellek kaynaklarını tüketebilir. Bellek baskısı veya benzer sorunlar yaşıyorsanız, bu kaynakları boşaltmak için bu deneyimi devre dışı bırakabilirsiniz. Varsayılan olarak, bu seçenek etkin için Visual Basic ve C# için devre dışı.
+    Visual Studio derleme çağırmadan önce hatalarla ilgili zengin bir deneyim sağlamak amacıyla, çözümün tamamında çözümlemesi gerçekleştirir. Bu özellik hataları mümkün olan en kısa sürede belirlemek kullanışlıdır. Ancak, büyük çözümler için bu özellik önemli bellek kaynaklarını tüketebilir. Bellek baskısı veya benzer sorunlar yaşıyorsanız, bu kaynakları boşaltmak için bu deneyimi devre dışı bırakabilirsiniz. Varsayılan olarak, bu seçenek etkin için Visual Basic ve C# için devre dışı.
 
-    Devre dışı bırakmak için **tam çözüm analizini**, seçin **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **< Visual Basic veya C# >**. Ardından **Gelişmiş** ve seçimini **tam çözüm analizini etkinleştir**.
+    Devre dışı bırakmak için **tam çözüm analizini**, seçin **Araçları** > **seçenekleri** > **metin düzenleyici**sonra seçin Her iki **Visual Basic** veya **C#**. Seçin **Gelişmiş** ve seçimini **tam çözüm analizini etkinleştir**.
 
 - **CodeLens devre dışı bırak**
 
-    Visual Studio gerçekleştirir bir **tüm başvuruları Bul** görüntülendiği her yöntemini görev. CodeLens başvuru sayısı satır içi görüntüsünü gibi özellikler sağlar. İş ayrı bir işlemde gerçekleştirilir (örneğin, *ServiceHub.RoslynCodeAnalysisService32*). Düşük öncelikli olarak çalıştırılan olsa bile bu özellik çok büyük çözümlerde ya da kısıtlı kaynak sistemlerde performansı önemli etkiye sahiptir. Bu işlem yüksek CPU karşılaştığınız ya da (örneğin, 4 GB makine üzerinde büyük bir çözümde yüklenirken) bellek sorunları varsa, kaynakları boşaltmak için bu özelliği devre dışı bırakma deneyebilirsiniz.
+    Visual Studio gerçekleştirir bir **tüm başvuruları Bul** görüntülendiği her yöntemini görev. CodeLens başvuru sayısı satır içi görüntüsünü gibi özellikler sağlar. İş ayrı bir işlemde gibi gerçekleştirilir *ServiceHub.RoslynCodeAnalysisService32*. Büyük çözümlerde veya kaynak kısıtlı sistemlerde, bu özellik performans üzerinde önemli bir etkisi olabilir. Bellek sorunları yaşıyorsanız, örneğin, 4 GB makinede veya bu işlem için yüksek CPU kullanımından büyük bir çözümde yüklenirken, kaynakları boşaltmak için CodeLens devre dışı bırakabilirsiniz.
 
     Devre dışı bırakmak için **CodeLens**, seçin **Araçları** > **seçenekleri** > **metin düzenleyici**  >   **Tüm diller** > **CodeLens**ve özellik seçimini kaldırın.
 
-    Bu özellik, Visual Studio Professional ve Visual Studio Enterprise içinde kullanılabilir.
+    > [!NOTE]
+    > CodeLens Visual Studio Professional ve Enterprise sürümlerinde kullanılabilir.
 
 ### <a name="other-tools-and-extensions"></a>Diğer araçları ve uzantıları
 
@@ -127,4 +127,4 @@ CLR atık toplayıcı ayrıntılı bir açıklaması için bkz: [çöp toplaman�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio performansı en iyi duruma getirme](../ide/optimize-visual-studio-performance.md)
-- [Visual Studio günlüğü - Visual Studio 2017 sürüm 15,6 daha hızlı yük çözümleri](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Çözümleri daha hızlı (Visual Studio blog) yükleme](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

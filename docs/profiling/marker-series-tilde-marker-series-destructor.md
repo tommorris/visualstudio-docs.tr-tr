@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84bdb0b1eb5c875bb1fe30595c59e97c0338b37f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: fe0aff26a781b31e5fb0273428df32ac7b19e660
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845580"
 ---
-# <a name="markerseriesmarkerseries-destructor"></a>marker_series::~marker_series Yok Edicisi
+# <a name="markerseriesmarkerseries-destructor"></a>marker_series:: ~ marker_series yok Edicisi
 Marker_series nesnesini yok eder ve ayrılan tüm kaynakları serbest bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -30,9 +31,9 @@ Marker_series nesnesini yok eder ve ayrılan tüm kaynakları serbest bırakır.
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cvmarkersobj.h  
+ **Başlık:** *cvmarkersobj.h*  
   
  **Namespace:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [marker_series Sınıfı](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [marker_series sınıfı](../profiling/marker-series-class.md)

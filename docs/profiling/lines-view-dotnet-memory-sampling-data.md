@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb92e37a8bc1543cfdf2efa142768d9edbea4f69
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 518a05c72d25c5f1abc136e774d9867a9fc66c36
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845645"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Satırlar görünümü - .NET bellek örnekleme verileri
 Satırlar görünümü örnekleme yöntemini kullanan .NET bellek ayırma profil oluşturma verileri için profil oluşturma çalışması sırasında bellek tahsis deyimleri listeler. Sütunları ayırmaları sayısı ve boyutu da içerir.  
@@ -61,5 +62,5 @@ Satırlar görünümü örnekleme yöntemini kullanan .NET bellek ayırma profil
 |**Özel bayt sayısı**|Bu satırda ayrılan tüm profil çalıştırmak ayrılan belleği bayt yüzdesi.|  
 |**Özel bayt %**|Bu satırda ayrılan tüm profil çalıştırmak ayrılan belleği bayt yüzdesi.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Satırlar Görünümü](../profiling/lines-view-sampling-data.md)

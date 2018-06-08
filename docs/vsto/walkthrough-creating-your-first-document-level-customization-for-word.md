@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bb85c10b2a66741bf0405d4a1313fb2343a708b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845840"
 ---
-# <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>İzlenecek Yol: Word İçin İlk Belge Düzeyi Özelleştirmeyi Oluşturma
+# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma
   Bu tanıtıcı kılavuz Microsoft Office Word için belge düzeyi özelleştirme oluşturulacağını gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir belge açık olduğunda kullanılabilir. Belge düzeyi özelleştirme uygulama çapında değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir belge açık olduğunda yeni bir Şerit sekmesi görüntüleme gibi.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -49,9 +50,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Projeyi Oluşturma  
+## <a name="create-the-project"></a>Projeyi oluşturma  
   
-#### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Visual Studio'da yeni bir Word belgesi projesi oluşturmak için  
+### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Visual Studio'da yeni bir Word belgesi projesi oluşturmak için  
   
 1.  Başlat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -73,10 +74,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturur **FirstDocumentCustomization** proje ve ekler **FirstDocumentCustomization** belge ve ThisDocument kod dosyası projeye. **FirstDocumentCustomization** belge otomatik olarak Tasarımcısı'nda açılır.  
   
-## <a name="closing-and-reopening-the-document-in-the-designer"></a>Tasarımcısı'nda belgeyi yeniden açmayı  
+## <a name="close-and-reopen-the-document-in-the-designer"></a>Belgenin Tasarımcısı'nda kapatıp yeniden yükleme  
  Projenizi geliştirirken kasıtlı olarak veya yanlışlıkla tasarımcısındaki belgede kapatırsanız, yeniden açabilirsiniz.  
   
-#### <a name="to-close-and-reopen-the-document-in-the-designer"></a>Belgenin Tasarımcısı'nda kapatıp yeniden yükleme için  
+### <a name="to-close-and-reopen-the-document-in-the-designer"></a>Belgenin Tasarımcısı'nda kapatıp yeniden yükleme için  
   
 1.  Tıklayarak belgeyi kapatın **Kapat** Tasarımcısı penceresinin düğmesine (X).  
   
@@ -86,23 +87,23 @@ ms.lasthandoff: 04/16/2018
   
      İçinde **Çözüm Gezgini**, çift **ThisDocument** kod dosyası.  
   
-## <a name="adding-text-to-the-document-in-the-designer"></a>Tasarımcıda belgeye metin ekleme  
+## <a name="add-text-to-the-document-in-the-designer"></a>Tasarımcısı'nda belgeye metin ekleme  
  Tasarımcıda açık olan belgeyi değiştirerek özelleştirmenizin kullanıcı arabirimi (UI) tasarlayabilirsiniz. Örneğin, metin, tablolar veya Word denetimleri ekleyebilirsiniz. Tasarımcıyı kullanma hakkında daha fazla bilgi için bkz: [Visual Studio ortamında Office projeleri](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
-#### <a name="to-add-text-to-your-document-by-using-the-designer"></a>Tasarımcı kullanarak, belgeye metin ekleme  
+### <a name="to-add-text-to-your-document-by-using-the-designer"></a>Tasarımcı kullanarak, belgeye metin ekleme  
   
 1.  Tasarımcıda açık belgede aşağıdaki metni yazın.  
   
      **Bu metin, tasarımcıyı kullanarak eklendi.**  
   
-## <a name="adding-text-to-the-document-programmatically"></a>Program aracılığıyla belgeye metin ekleme  
+## <a name="add-text-to-the-document-programmatically"></a>Program aracılığıyla belgeye metin ekleme  
  Ardından, kodu ThisDocument kod dosyasına ekleyin. Yeni kod, ikinci bir paragraf metni belgeye eklemek için Word nesne modelini kullanır. Varsayılan olarak, ThisDocument kod dosyası aşağıdaki oluşturulmuş kodu içerir:  
   
 -   Kısmi tanımının `ThisDocument` belgenin programlama modelini gösteren ve Word nesne modeline erişim sağlayan sınıf. Daha fazla bilgi için bkz: [belge konak öğesi](../vsto/document-host-item.md) ve [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md). Geri kalan `ThisDocument` sınıfı değiştirmemeniz gereken gizli kod dosyasında tanımlanır.  
   
 -   `ThisDocument_Startup` Ve `ThisDocument_Shutdown` olay işleyicileri. Belge açılır ve bu olay işleyicileri çağırılır. Bu olay işleyicileri belge açıldığında Eklentinizi başlatmak ve belge kapatıldığında özelleştirmeniz tarafından kullanılan kaynakları temizlemek için kullanın. Daha fazla bilgi için bkz: [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Kod kullanarak belgeye metin ikinci bir paragraf eklemek için  
+### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Kod kullanarak belgeye metin ikinci bir paragraf eklemek için  
   
 1.  İçinde **Çözüm Gezgini**, sağ **ThisDocument**ve ardından **görünümü kodu**.  
   
@@ -116,13 +117,13 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Bu kod, ilk paragrafa erişmek için dizin değeri 1 kullanır <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> özelliği. Visual Basic ve Visual C# 0 tabanlı diziler kullansa da, Word nesne modelindeki birçok koleksiyonun düşük dizi sınırları 1'dir. Daha fazla bilgi için bkz: [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).  
   
-## <a name="testing-the-project"></a>Projeyi test etme  
+## <a name="test-the-project"></a>Projeyi test  
   
-#### <a name="to-test-your-document"></a>Belgenizi test etmek için  
+### <a name="to-test-your-document"></a>Belgenizi test etmek için  
   
 1.  Tuşuna **F5** oluşturun ve projenizin çalıştırın.  
   
-     Projeyi derlerken belge ile ilişkili bütünleştirilmiş kodu derlenir. Visual Studio projesi için derleme çıktısı klasöründeki belgeyi ve derleme bir kopyasını koyar ve çalıştırmak özelleştirmeyi etkinleştirmek için geliştirme bilgisayarınızda güvenlik ayarlarını yapılandırır. Daha fazla bilgi için bkz: [Office çözümleri oluşturma](../vsto/building-office-solutions.md).  
+     Projeyi derlerken belge ile ilişkili bütünleştirilmiş kodu derlenir. Visual Studio projesi için derleme çıktısı klasöründeki belgeyi ve derleme bir kopyasını koyar ve çalıştırmak özelleştirmeyi etkinleştirmek için geliştirme bilgisayarınızda güvenlik ayarlarını yapılandırır. Daha fazla bilgi için bkz: [yapı Office çözümleri](../vsto/building-office-solutions.md).  
   
 2.  Belgede, aşağıdaki metni gördüğünüzü doğrulayın.  
   
@@ -132,17 +133,17 @@ ms.lasthandoff: 04/16/2018
   
 3.  Belgeyi kapatın.  
   
-## <a name="cleaning-up-the-project"></a>Projeyi temizleme  
+## <a name="clean-up-the-project"></a>Projeyi temizleyin  
  Projeyi geliştirmeyi bitirdiğinizde yapı çıktı klasörüne ve yapı işlemi tarafından oluşturulan güvenlik ayarlarını dosyaları kaldırmanız gerekir.  
   
-#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Geliştirme bilgisayarınızda tamamlanmış projeyi temizlemek için  
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Geliştirme bilgisayarınızda tamamlanmış projeyi temizlemek için  
   
 1.  Visual Studio'da üzerinde **yapı** menüsünde tıklatın **temiz çözüm**.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Word için temel bir belge düzeyi özelleştirme oluşturduğunuza göre aşağıdaki konulardan özelleştirmeleri geliştirme hakkında daha fazla bilgi edinebilirsiniz:  
   
--   Belge düzeyi özelleştirmelerinde gerçekleştirebileceğiniz genel programlama görevleri: [belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md).  
+-   Belge düzeyi özelleştirmelerinde gerçekleştirebileceğiniz genel programlama görevleri: [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).  
   
 -   Word için belge düzeyi özelleştirmelerine özel programlama görevleri: [Word çözümleri](../vsto/word-solutions.md).  
   
@@ -150,21 +151,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Word UI'ını özelleştirme, örneğin, göre Şerite özel bir sekme ekleme veya kendi Eylemler bölmesi oluşturma: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
   
--   Word nesne modeli (örneğin, belgelerdeki yönetilen denetimleri ve Windows Forms veri kullanarak veriye Word denetimi bağlama kullanarak mümkün olmayan görevleri gerçekleştirmek için Visual Studio'da Office çözümleri tarafından sağlanan genişletilmiş Word nesnelerini kullanma bağlama modelini): [genişletilmiş nesneleri kullanarak Word otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md).  
+-   Word nesne modeli (örneğin, belgelerdeki yönetilen denetimleri ve Windows Forms veri kullanarak veriye Word denetimi bağlama kullanarak mümkün olmayan görevleri gerçekleştirmek için Visual Studio'da Office çözümleri tarafından sağlanan genişletilmiş Word nesnelerini kullanma bağlama modelini): [otomatikleştirmek genişletilmiş nesneleri kullanarak Word'ü](../vsto/automating-word-by-using-extended-objects.md).  
   
--   Derleme ve Word için belge düzeyi özelleştirmeleri hata ayıklama: [Office çözümleri oluşturma](../vsto/building-office-solutions.md).  
+-   Derleme ve Word için belge düzeyi özelleştirmeleri hata ayıklama: [yapı Office çözümleri](../vsto/building-office-solutions.md).  
   
 -   Word için belge düzeyi özelleştirmelerini dağıtma: [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word çözümleri](../vsto/word-solutions.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
- [Genişletilmiş nesneleri kullanarak Word'ü Otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)   
+ [Genişletilmiş nesneleri kullanarak Word otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)   
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [Office çözümleri oluşturma](../vsto/building-office-solutions.md)   
- [Office çözümü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Office Proje Şablonlarına Genel Bakış](../vsto/office-project-templates-overview.md)  
+ [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
+ [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
   
   

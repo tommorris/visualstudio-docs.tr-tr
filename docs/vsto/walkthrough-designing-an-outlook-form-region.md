@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Outlook Form Bölgesi Tasarlama | Microsoft Docs'
+title: 'İzlenecek yol: Outlook form bölgesi tasarlama'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3c1868768cd2d79392dbdde749f27b8716aa8c2f
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845190"
 ---
-# <a name="walkthrough-designing-an-outlook-form-region"></a>İzlenecek Yol: Outlook Form Bölgesi Tasarlama
-  Özel form bölgeleri standart veya özel Microsoft Office Outlook Form genişletir. Bu kılavuzda, bir kişi öğesinin Inspector penceresinde yeni bir sayfa olarak görünen özel form bölgesi tasarlama. Bu form bölgesi Windows Live yerel arama Web sitesine adres bilgilerini göndererek kişi için listelenen her adresin haritasını görüntüler. Form bölgeleri hakkında daha fazla bilgi için bkz: [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md).  
+# <a name="walkthrough-design-an-outlook-form-region"></a>İzlenecek yol: Outlook form bölgesi tasarlama
+  Özel form bölgeleri standart veya özel Microsoft Office Outlook Form genişletir. Bu kılavuzda, bir kişi öğesinin Inspector penceresinde yeni bir sayfa olarak görünen özel form bölgesi tasarlama. Bu form bölgesi Windows Live yerel arama Web sitesine adres bilgilerini göndererek kişi için listelenen her adresin haritasını görüntüler. Form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -48,12 +49,12 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") bu konuda video sürümü için bkz: [Video nasıl yapılır: Outlook Form Bölgesi Tasarlama](http://go.microsoft.com/fwlink/?LinkID=140824).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") bu konuda video sürümü için bkz: [Video nasıl yapılır: Outlook form bölgesi tasarlama](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
-## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Eklenti yeni bir Outlook VSTO projesi oluşturma  
+## <a name="create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturma  
  Önce temel bir VSTO eklenti projesi oluşturun.  
   
-#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturmak için  
+### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturmak için  
   
 1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Outlook VSTO eklenti projesindeki adlı oluşturun **MapItAddIn**.  
   
@@ -61,12 +62,12 @@ ms.lasthandoff: 04/16/2018
   
 3.  Projeyi herhangi bir dizine kaydedin.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## <a name="adding-a-form-region-to-the-outlook-vsto-add-in-project"></a>Outlook VSTO eklenti projesine Form bölgesi ekleme  
+## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Outlook VSTO eklenti projesine form bölgesi ekleme  
  Outlook VSTO eklenti çözümünü bir veya daha fazla Outlook form bölgesi öğesi içerebilir. Form bölgesi öğesi kullanarak projenize ekleme **yeni Outlook Form bölgesi** Sihirbazı.  
   
-#### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Form bölgesini Outlook VSTO eklenti projesine eklemek için  
+### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Form bölgesini Outlook VSTO eklenti projesine eklemek için  
   
 1.  İçinde **Çözüm Gezgini**seçin **MapItAddIn** projesi.  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Üzerinde **oluşturmak istediğiniz form bölgesini seçin** sayfasında, **ayrı**ve ardından **sonraki**.  
   
-     A *ayrı* form bölgesini Outlook form için yeni bir sayfa ekler. Form bölgesi türleri hakkında daha fazla bilgi için bkz: [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md).  
+     A *ayrı* form bölgesini Outlook form için yeni bir sayfa ekler. Form bölgesi türleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
   
 6.  Üzerinde **açıklayıcı metin sağlayın ve görüntüleme tercihlerini seçin** sayfasında, **Map It** içinde **adı** kutusu.  
   
@@ -90,14 +91,14 @@ ms.lasthandoff: 04/16/2018
   
 8.  Üzerinde **bu form bölgesini görüntüleyecek ileti sınıflarını tanımlayın** sayfasında, Temizle **posta iletisi**seçin **kişi**ve ardından **Son**.  
   
-     MapIt.cs veya MapIt.vb dosyası projenize eklenir.  
+     A *MapIt.cs* veya *MapIt.vb* dosyayı projenize eklenir.  
   
-## <a name="designing-the-layout-of-the-form-region"></a>Form bölgesini düzeni tasarlama  
+## <a name="design-the-layout-of-the-form-region"></a>Form bölgesini düzeni tasarlama  
  Form bölgeleri görsel olarak kullanarak geliştirmek *form bölgesi tasarımcısı*. Yönetilen denetimleri form bölgesi tasarımcı yüzeyine sürükleyin. Designer'ı kullanın ve **özellikleri** pencere denetim düzenini ve görünümünü ayarlayın.  
   
-#### <a name="to-design-the-layout-of-the-form-region"></a>Form bölgesini düzenini tasarlamak için  
+### <a name="to-design-the-layout-of-the-form-region"></a>Form bölgesini düzenini tasarlamak için  
   
-1.  İçinde **Çözüm Gezgini**, genişletin **MapItAddIn** proje ve MapIt.cs veya MapIt.vb Form bölgesi tasarımcısını açmak için çift tıklatın.  
+1.  İçinde **Çözüm Gezgini**, genişletin **MapItAddIn** proje, çift tıklayın ve ardından *MapIt.cs* veya *MapIt.vb* Form bölgesini açmak için Tasarımcısı.  
   
 2.  Tasarımcısı'nı sağ tıklatın ve ardından **özellikleri**.  
   
@@ -111,14 +112,14 @@ ms.lasthandoff: 04/16/2018
   
      **WebBrowser** kişi için listelenen her adresin haritasını görüntüler.  
   
-## <a name="customizing-the-behavior-of-the-form-region"></a>Form bölgesini davranışını özelleştirme  
+## <a name="customize-the-behavior-of-the-form-region"></a>Form bölgesini davranışını özelleştirme  
  Çalışma zamanında bir form bölgesi biçimini özelleştirmek üzere form bölgesi olay işleyicilerine kodu davranır ekleyin. Bu form bölgesi için kod Outlook öğesinin özelliklerini inceler ve Map It form bölgesini görüntülenip görüntülenmeyeceğini belirler. Form bölgesini görüntüler, kod Windows Live Local Search'e gider ve Outlook kişi öğesinde listelenen her adresin haritasını yükler.  
   
-#### <a name="to-customize-the-behavior-of-the-form-region"></a>Form bölgesini davranışını özelleştirmek için  
+### <a name="to-customize-the-behavior-of-the-form-region"></a>Form bölgesini davranışını özelleştirmek için  
   
-1.  İçinde **Çözüm Gezgini**MapIt.cs veya MapIt.vb sağ tıklayın ve ardından **görünümü kodu**.  
+1.  İçinde **Çözüm Gezgini**, sağ tıklatın *MapIt.cs* veya *MapIt.vb*ve ardından **görünümü kodu**.  
   
-     MapIt.cs veya MapIt.vb kod Düzenleyicisi'nde açar.  
+     *MapIt.cs* veya *MapIt.vb* Kod Düzenleyicisi'nde açar.  
   
 2.  Genişletme **Form bölgesi fabrikası** kod bölgesini.  
   
@@ -140,12 +141,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#2)]
      [!code-vb[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#2)]  
   
-## <a name="testing-the-outlook-form-region"></a>Outlook Form bölgesi test etme  
+## <a name="test-the-outlook-form-region"></a>Outlook form bölgesi test  
  Projeyi çalıştırdığınızda, Visual Studio Outlook açar. Map It form bölgesini görüntülemek için bir kişi öğesini açın. Map It form bölgesini bir adresi içeren herhangi bir kişi öğesinin biçiminde bir sayfa olarak görünür.  
   
-#### <a name="to-test-the-map-it-form-region"></a>Map It form bölgesini sınamak için  
+### <a name="to-test-the-map-it-form-region"></a>Map It form bölgesini sınamak için  
   
-1.  Projeyi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
      Outlook açar.  
   
@@ -167,19 +168,19 @@ ms.lasthandoff: 04/16/2018
   
      Map It form bölgesini görünür ve yerel arama Web sitesine görüntüler. **İş**, **giriş**, ve **diğer** adresleri karalama defterinde görünür. Karalama defterinde eşlemek istediğiniz bir adres seçin.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Aşağıdaki konulardan Outlook uygulamasının kullanıcı arabirimini özelleştirme hakkında daha fazla bilgi edinebilirsiniz:  
   
 -   Outlook öğesinin Şerit özelleştirme hakkında bilgi edinmek için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Form bölgesine çalışma zamanında erişme](../vsto/accessing-a-form-region-at-run-time.md)   
- [Outlook Form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
- [Outlook Form bölgeleri oluşturma yönergeleri](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [İzlenecek yol: Outlook'ta tasarlanan Form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Nasıl yapılır: Outlook eklenti projesine Form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
+ [Outlook form bölgeleri oluşturma yönergeleri](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [İzlenecek yol: Outlook'ta tasarlanan form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [Nasıl yapılır: bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
- [Outlook Form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Nasıl Yapılır: Outlook'un Form Bölgesini Görüntülemesini Engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+ [Outlook form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)   
+ [Nasıl yapılır: Outlook form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

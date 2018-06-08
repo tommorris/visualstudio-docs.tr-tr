@@ -1,5 +1,5 @@
 ---
-title: "İzlenecek yol: Visual Basic Projesinde VBA'dan Kod Çağırma | Microsoft Docs"
+title: "İzlenecek yol: bir Visual Basic projesinde VBA'dan kod çağırmak"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: efb8f6c2759760fe2eb5c5d5ccf23e0942eac93a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844826"
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-basic-project"></a>İzlenecek Yol: Visual Basic Projesinde VBA'dan Kod Çağırma
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>İzlenecek yol: bir Visual Basic projesinde VBA'dan kod çağırmak
   Bu kılavuz bir yöntem belge düzeyi özelleştirmelerinde için Microsoft Office Word Visual Basic for Applications (VBA) kodunu belgedeki nasıl çağrılacağını gösterir. Yordam üç temel adımdan oluşur: bir yöntem ekleme `ThisDocument` konak öğesi sınıfına, VBA kodunda yöntemi oluşturma ve belgedeki VBA kodundan yöntemini çağırın.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -57,12 +58,12 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-a-document-that-contains-vba-code"></a>VBA kodu içeren bir belge oluşturma  
+## <a name="create-a-document-that-contains-vba-code"></a>VBA kodu içeren bir belge oluşturun  
  İlk adım, basit VBA makrosu içeren makrosu etkin bir belge oluşturmaktır. Bu belgeyi temel alarak bir Visual Studio Proje oluşturmadan önce belgenin VBA projesi içermelidir. Aksi takdirde, Visual Studio özelleştirme derlemesini çağırmak VBA kodu etkinleştirmek için VBA projesini değiştiremez.  
   
  Kullanmak istediğiniz VBA kodu içeren bir belge zaten varsa bu adımı atlayabilirsiniz.  
   
-#### <a name="to-create-a-document-that-contains-vba-code"></a>VBA kodu içeren bir belge oluşturmak için  
+### <a name="to-create-a-document-that-contains-vba-code"></a>VBA kodu içeren bir belge oluşturmak için  
   
 1.  Word'ü başlatın.  
   
@@ -83,17 +84,17 @@ ms.lasthandoff: 04/16/2018
   
 6.  Aşağıdaki VBA kodu kod dosyasına ekleyin. Bu kod, hiçbir şey yapmaz basit bir işlevi tanımlar. Bu işlev yalnızca amacı VBA projesi belgede var olduğundan emin olmaktır. Bu, bu kılavuzda sonraki adımlar için gereklidir.  
   
-    ```  
+    ```vb  
     Sub EmptySub()  
     End Sub  
     ```  
   
 7.  Belgeyi kaydedin ve Word çıkın.  
   
-## <a name="creating-the-project"></a>Projeyi Oluşturma  
+## <a name="create-the-project"></a>Projeyi oluşturma  
  Artık daha önce oluşturduğunuz makrosu içerebilen belgeyi kullanan Word için belge düzeyi projesi oluşturabilirsiniz.  
   
-#### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
+### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
 1.  Başlat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -117,10 +118,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **DocumentWithVBA** belge Tasarımcısı'nda ve ekler **CallingCodeFromVBA** için proje **Çözüm Gezgini**.  
   
-## <a name="trusting-the-location-of-the-document"></a>Belgenin konumunu güvenme  
+## <a name="trust-the-location-of-the-document"></a>Belgenin konumunu güven  
  Çözümünüzdeki belgedeki VBA kodu için kod oluşturmadan önce çalıştırılacak belgede VBA güvenmesi gerekir. Bunu yapmanın birkaç yolu vardır. Bu kılavuzda belgede konumunu güven **Güven Merkezi** Word.  
   
-#### <a name="to-trust-the-location-of-the-document"></a>Belgenin konumunu güvenmek için  
+### <a name="to-trust-the-location-of-the-document"></a>Belgenin konumunu güvenmek için  
   
 1.  Word'ü başlatın.  
   
@@ -148,10 +149,10 @@ ms.lasthandoff: 04/16/2018
   
 13. Word çıkın.  
   
-## <a name="adding-a-method-to-the-thisdocument-class"></a>ThisDocument sınıfı için bir yöntem ekleme  
+## <a name="add-a-method-to-the-thisdocument-class"></a>ThisDocument sınıfı için bir yöntem ekleyin  
  VBA projesi kurulduğunda, bir yöntem ekleme `ThisDocument` ana VBA kodundan çağırabilirsiniz öğesi sınıf.  
   
-#### <a name="to-add-a-method-to-the-thisdocument-class"></a>ThisDocument sınıfı için bir yöntem eklemek için  
+### <a name="to-add-a-method-to-the-thisdocument-class"></a>ThisDocument sınıfı için bir yöntem eklemek için  
   
 1.  İçinde **Çözüm Gezgini**, sağ **ThisDocument.vb**ve ardından **görünümü kodu**.  
   
@@ -163,10 +164,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Projeyi oluşturun.  
   
-## <a name="exposing-the-method-to-vba-code"></a>VBA kodu yönteme gösterme  
+## <a name="expose-the-method-to-vba-code"></a>VBA kodunda yöntemi oluşturma  
  Kullanıma sunmak için `CreateTable` set belge VBA kodunda yöntemi **EnableVbaCallers** özelliği için `ThisDocument` konak öğesi **doğru**.  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>VBA kodu yönteme kullanıma sunmak için  
+### <a name="to-expose-the-method-to-vba-code"></a>VBA kodu yönteme kullanıma sunmak için  
   
 1.  İçinde **Çözüm Gezgini**, çift **ThisDocument.vb**.  
   
@@ -178,15 +179,15 @@ ms.lasthandoff: 04/16/2018
   
 4.  Projeyi oluşturun.  
   
-## <a name="calling-the-method-from-vba-code"></a>VBA kodundan yöntemi çağırma  
+## <a name="call-the-method-from-vba-code"></a>VBA kodundan yöntemini çağırın  
  Şimdi Ara `CreateTable` belgedeki VBA kodundan yöntemi.  
   
 > [!NOTE]  
->  Bu kılavuzda, projenin hata ayıklama sırasında belgeye VBA kod ekleyeceksiniz. Visual Studio ile ana proje klasöründeki belgenin bir kopyasını yapı çıktı klasörüne belgede değiştirdiğinden bu belgeye eklediğiniz VBA kodu Projeyi derlemek bir sonraki başlatılışında üzerine yazılır. VBA kodu kaydetmek istiyorsanız, bu proje klasöründeki belgeye kopyalayabilirsiniz. Daha fazla bilgi için bkz: [birleştirme VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).  
+>  Bu kılavuzda, projenin hata ayıklama sırasında belgeye VBA kod ekleyeceksiniz. Visual Studio ile ana proje klasöründeki belgenin bir kopyasını yapı çıktı klasörüne belgede değiştirdiğinden bu belgeye eklediğiniz VBA kodu Projeyi derlemek bir sonraki başlatılışında üzerine yazılır. VBA kodu kaydetmek istiyorsanız, bu proje klasöründeki belgeye kopyalayabilirsiniz. Daha fazla bilgi için bkz: [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).  
   
-#### <a name="to-call-the-method-from-vba-code"></a>VBA kodundan yöntemi çağırmak için  
+### <a name="to-call-the-method-from-vba-code"></a>VBA kodundan yöntemi çağırmak için  
   
-1.  Projenizi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
 2.  Üzerinde **Geliştirici** sekmesinde **kod** grubunda **Visual Basic**.  
   
@@ -198,29 +199,29 @@ ms.lasthandoff: 04/16/2018
   
      Bu kod çağırır `CreateTable` özelleştirme derlemesindeki yöntemi. Makro bu yöntemi kullanarak erişen `CallVSTOAssembly` özelliği `ThisDocument` nesnesi. Ayarladığınızda bu özelliği otomatik olarak oluşturulan **EnableVbaCallers** özelliği bu kılavuzda daha önce.  
   
-    ```  
+    ```vb  
     Sub CreateTable()  
         Call ThisDocument.CallVSTOAssembly.CreateTable("Employee Name", "Start Date")  
     End Sub  
     ```  
   
-5.  F5 tuşuna basın.  
+5.  Tuşuna **F5**.  
   
 6.  Belgeye yeni bir tablo eklendiğini doğrulayın.  
   
 7.  Word Değişikliklerinizi kaydetmeden kapatın.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Bu konu başlıklarında VBA'dan Office çözümlerinde kod çağırma hakkında daha fazla bilgi edinebilirsiniz:  
   
 -   Visual C# özelleştirmesinde VBA'dan kod çağırma. Bu işlem Visual Basic işleminden farklıdır. Daha fazla bilgi için bkz: [izlenecek yol: Visual C VBA'dan Kod Çağırma&#35; proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
--   VBA içinden bir VSTO eklenti kodu çağırma. Daha fazla bilgi için bkz: [izlenecek yol: eklentide bir VSTO VBA'dan Kod Çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   VBA içinden bir VSTO eklenti kodu çağırma. Daha fazla bilgi için bkz: [izlenecek yol: çağrı kod bir VSTO eklentide VBA'dan](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
- [Nasıl yapılır: Visual Basic projesinde VBA kodu kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [Nasıl yapılır: Visual c VBA kodu kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [İzlenecek yol: Visual C VBA'dan Kod Çağırma&#35; proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
   

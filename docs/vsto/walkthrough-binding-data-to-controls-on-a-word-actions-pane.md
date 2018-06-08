@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama | Microsoft Docs'
+title: 'İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d84c42e2b51d55cbbb73a7f26d6d6853ff7a3392
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845112"
 ---
-# <a name="walkthrough-binding-data-to-controls-on-a-word-actions-pane"></a>İzlenecek Yol: Word Eylemler Bölmesindeki Denetimlere Veri Bağlama
+# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama
   Bu anlatımda Word eylemler bölmesindeki denetimlere veri bağlama gösterilir. Denetimler, SQL Server veritabanındaki tablolar arasındaki ana/ayrıntı ilişkisi gösterir.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -53,21 +54,21 @@ ms.lasthandoff: 04/16/2018
   
 -   SQL Server veritabanına yazma ve okuma izni.  
   
-## <a name="creating-the-project"></a>Projeyi Oluşturma  
+## <a name="create-the-project"></a>Projeyi oluşturma  
  İlk adım bir Word belgesi proje oluşturmaktır.  
   
-#### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
+### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
 1.  Adlı bir Word belgesi proje oluşturun **My Word eylemler bölmesindeki**. Sihirbazı'nda seçin **bir yeni belge oluşturun**.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesini açar ve ekler **My Word eylemler bölmesindeki** için proje **Çözüm Gezgini**.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Eylemler bölmesine denetimleri ekleme  
+## <a name="add-controls-to-the-actions-pane"></a>Eylemler bölmesine denetimleri ekleme  
  Bu kılavuz için veri bağlantılı Windows Forms denetimleri içeren eylemler bölmesi denetimi gerekir. Bir veri kaynağı projeye ekleyin ve ardından denetimlerden sürükleyin **veri kaynakları** Eylemler bölmesi denetimi için pencere.  
   
-#### <a name="to-add-an-actions-pane-control"></a>Eylemler bölmesi denetimi eklemek için  
+### <a name="to-add-an-actions-pane-control"></a>Eylemler bölmesi denetimi eklemek için  
   
 1.  Seçin **My Word eylemler bölmesindeki** proje **Çözüm Gezgini**.  
   
@@ -75,9 +76,9 @@ ms.lasthandoff: 04/16/2018
   
 3.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **Eylemler bölmesi denetimi**, adlandırın **ActionsControl**ve ardından **Ekle**.  
   
-#### <a name="to-add-a-data-source-to-the-project"></a>Bir veri kaynağı projeye eklemek için  
+### <a name="to-add-a-data-source-to-the-project"></a>Bir veri kaynağı projeye eklemek için  
   
-1.  Varsa **veri kaynakları** pencere görünür değil, bunu, menü çubuğu seçme görüntülemek **Görünüm**, **diğer pencereler**, **veri kaynakları**.  
+1.  Varsa **veri kaynakları** pencere görünür değil, bunu, menü çubuğu seçme görüntülemek **Görünüm** > **diğer pencereler**  >   **Veri kaynakları**.  
   
     > [!NOTE]  
     >  Varsa **veri kaynaklarını Göster** kullanılamıyor Word belgesini tıklatın ve sonra yeniden denetleyin.  
@@ -100,7 +101,7 @@ ms.lasthandoff: 04/16/2018
   
  Sihirbaz ekler **Üreticiler** tablo ve **ürünleri** tablosu **veri kaynakları** penceresi. Projenize görünür türü belirtilmiş veri kümesi de ekler **Çözüm Gezgini**.  
   
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Eylemler bölmesi denetimine veri bağlantılı Windows Forms denetimleri ekleme  
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Eylemler bölmesi denetimine veri bağlantılı Windows Forms denetimleri ekleme  
   
 1.  İçinde **veri kaynakları** penceresinde genişletin **Üreticiler** tablo.  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 04/16/2018
   
      A <xref:System.Windows.Forms.ComboBox> denetimi Eylemler bölmesi denetiminin oluşturulur. Aynı zamanda bir <xref:System.Windows.Forms.BindingSource> adlı `SuppliersBindingSource`, bir tablo bağdaştırıcısı ve bir <xref:System.Data.DataSet> bileşen projesinde eklenir.  
   
-4.  Seçin `SuppliersBindingNavigator` içinde **bileşen** Tepsisi ve DELETE tuşuna basın. Değil kullanacağınız `SuppliersBindingNavigator` bu kılavuzda.  
+4.  Seçin `SuppliersBindingNavigator` içinde **bileşen** Tepsisi ve tuşuna **silmek**. Değil kullanacağınız `SuppliersBindingNavigator` bu kılavuzda.  
   
     > [!NOTE]  
     >  Silme `SuppliersBindingNavigator` için oluşturulan tüm kodları kaldırmaz. Bu kodu kaldırabilirsiniz.  
@@ -138,10 +139,10 @@ ms.lasthandoff: 04/16/2018
   
 12. Denetimleri sığması için kullanıcı denetimi yeniden boyutlandırın.  
   
-## <a name="setting-up-the-data-source"></a>Veri kaynağını ayarlama  
+## <a name="set-up-the-data-source"></a>Veri kaynağı kurma  
  Veri kaynağı kurmak için kodu ekleyin <xref:System.Windows.Forms.UserControl.Load> Olay denetimi verilerle doldurmak için Eylemler bölmesinde denetiminin <xref:System.Data.DataTable>ve <xref:System.Windows.Forms.Binding.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> her denetim için özellikler.  
   
-#### <a name="to-load-the-control-with-data"></a>Denetimin veri yüklemek için  
+### <a name="to-load-the-control-with-data"></a>Denetimin veri yüklemek için  
   
 1.  İçinde <xref:System.Windows.Forms.UserControl.Load> olay işleyicisi `ActionsControl` sınıfında, aşağıdaki kodu ekleyin.  
   
@@ -152,7 +153,7 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]  
   
-#### <a name="to-set-data-binding-properties-of-the-controls"></a>Veri bağlama denetimleri özelliklerini ayarlamak için  
+### <a name="to-set-data-binding-properties-of-the-controls"></a>Veri bağlama denetimleri özelliklerini ayarlamak için  
   
 1.  Seçin `CompanyNameComboBox` denetim.  
   
@@ -170,24 +171,24 @@ ms.lasthandoff: 04/16/2018
   
 8.  Genişletin **veri bağlamaları** özelliği, düğmesini sağındaki **SelectedValue** özelliği ve seçin **hiçbiri**.  
   
-## <a name="adding-a-method-to-insert-data-into-a-table"></a>Bir tabloya veri eklemek için bir yöntem ekleme  
+## <a name="add-a-method-to-insert-data-into-a-table"></a>Bir tabloya veri eklemek için bir yöntem ekleyin  
  Sonraki ilişkili denetimlerden veri okumak ve bir Word belgeniz tabloda doldurmak için bir görevdir. İlk olarak, tablodaki başlıkları biçimlendirmek için bir yordam oluşturmak ve ardından ekleyin `AddData` oluşturmak ve bir Word tablosu biçimlendirmek için yöntem.  
   
-#### <a name="to-format-the-table-headings"></a>Tablo başlıkları biçimlendirmek için  
+### <a name="to-format-the-table-headings"></a>Tablo başlıkları biçimlendirmek için  
   
 1.  İçinde `ActionsControl` sınıfı, tablonun başlıklarını biçimlendirmek için bir yöntem oluşturma.  
   
      [!code-vb[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#2)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#2)]  
   
-#### <a name="to-create-the-table"></a>Tablo oluşturmak için  
+### <a name="to-create-the-table"></a>Tablo oluşturmak için  
   
 1.  İçinde `ActionsControl` sınıfı, bir zaten var ve veri Eylemler bölmesinden tabloya eklerseniz, bir tablo oluşturacaksınız bir yöntem yazma.  
   
      [!code-vb[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#3)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#3)]  
   
-#### <a name="to-insert-text-into-a-word-table"></a>Word tablosuna metin eklemek için  
+### <a name="to-insert-text-into-a-word-table"></a>Word tablosuna metin eklemek için  
   
 1.  Aşağıdaki kodu ekleyin <xref:System.Windows.Forms.Control.Click> olay işleyicisi **Ekle** düğmesi.  
   
@@ -198,10 +199,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#5)]  
   
-## <a name="showing-the-actions-pane"></a>Eylemler bölmesini gösterme  
+## <a name="show-the-actions-pane"></a>Eylemler bölmesini göster  
  Denetimler için eklendikten sonra Eylemler bölmesinde görünür hale gelir.  
   
-#### <a name="to-show-the-actions-pane"></a>Eylemler bölmesini göstermek için  
+### <a name="to-show-the-actions-pane"></a>Eylemler bölmesini göstermek için  
   
 1.  İçinde **Çözüm Gezgini**, sağ **ThisDocument.vb** veya **ThisDocument.vb**ve ardından **görünümü kodu** kısayol menüsünde.  
   
@@ -215,12 +216,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
      [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]  
   
-## <a name="testing-the-application"></a>Uygulamayı Test Etme  
+## <a name="test-the-application"></a>Uygulamayı test etme  
  Artık belge açıldığında eylemler bölmesinde göründüğünü doğrulamak için belgenizi test edebilirsiniz. Ana/ayrıntı ilişkisi eylemler bölmesindeki denetimlere test ve verileri bir sözcük doldurulur emin olun tablosundan **Ekle** düğmesine tıklandığında.  
   
-#### <a name="to-test-your-document"></a>Belgenizi test etmek için  
+### <a name="to-test-your-document"></a>Belgenizi test etmek için  
   
-1.  Projenizi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
 2.  Eylemler bölmesinde görünür olduğunu doğrulayın.  
   
@@ -230,16 +231,16 @@ ms.lasthandoff: 04/16/2018
   
 5.  Ek ürünler çeşitli şirketlerden ekleyin.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Bu kılavuz, Word eylemler bölmesindeki denetimlere veri bağlama temellerini gösterir. Sonradan gelebilecek bazı görevler şunlardır:  
   
 -   Excel'de denetimlere veri bağlama. Daha fazla bilgi için bkz: [izlenecek yol: Excel eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
--   Projeyi dağıtma. Daha fazla bilgi için bkz: [tarafından ClickOnce kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+-   Projeyi dağıtma. Daha fazla bilgi için bkz: [ClickOnce kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)   
- [Nasıl yapılır: Word belgelerini ve Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Office Çözümlerinde Verileri Denetimlere Bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

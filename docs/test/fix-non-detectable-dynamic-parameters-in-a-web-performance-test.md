@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 439afb9142e3e5ae795b0457f6405ba47227105f
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751052"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845311"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web performans testindeki dinamik parametreleri algılayamama sorununu çözme
 
@@ -198,7 +198,7 @@ Bir algılanabilir ve algılanamayan bir dinamik parametreyi göstermek için bi
 
      Yanıt sekmesini ve uygulanan JavaScript gösterildiği gibi önceki aşağıda gösterilen CustomQueryString sorgu dizesi parametresi "jScriptQueryString___" değerini atanır ve aynı zamanda var SessionID döndürülen değerle ile birleştirilmiş.
 
-    ```
+    ```javascript
     function jScriptQueryString()          {             var Hidden = document.getElementById("HiddenFieldSessionID");             var sessionId = Hidden.value;             window.location = 'JScriptQuery.aspx?CustomQueryString=jScriptQueryString___' + sessionId;          }
 
     ```
@@ -265,4 +265,4 @@ Bir algılanabilir ve algılanamayan bir dinamik parametreyi göstermek için bi
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>S: dinamik parametreleri algılamak için Visual Studio'yu yapılandırma gerekiyor mu?
 
- **Y:** varsayılan Visual Studio dinamik parametreleri web performans testine kaydettiğinizde algılamak için yapılandırmadır. Ancak, varsa dinamik parametreleri algılamak değil için Visual Studio seçenekleri yapılandırılmış veya test edilen web uygulaması ek dinamik parametrelerle değiştiren; yine [dinamik parametre algılama Web Performans Testi Düzenleyicisi'nden çalıştırma](#FindingNonDetectableDynamicParamters_QA_ReRunDetection).
+ **Y:** varsayılan Visual Studio dinamik parametreleri web performans testine kaydettiğinizde algılamak için yapılandırmadır. Ancak, varsa dinamik parametreleri algılamak değil için Visual Studio seçenekleri yapılandırılmış veya test edilen web uygulaması ek dinamik parametrelerle değiştiren; dinamik parametre algılama, yine Web Performans Testi Düzenleyicisi'nden çalıştırabilirsiniz.

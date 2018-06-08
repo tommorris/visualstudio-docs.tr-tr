@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844784"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Nasıl yapılır: Belirli İşlevler için İzlemeyi Sınırlama
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Nasıl yapılır: belirli işlevler için araçları sınırlama
 Bir veya daha fazla işlevler için araçları ve veri toplama seçeneklerini ayarlayarak sınırlayabilirsiniz **Gelişmiş** sayfasında **Performans oturumunu** veya hedef ikili özellik sayfaları:  
   
 -   Performans oturumu özellik sayfasında işlevleri belirtirseniz, yalnızca bu işlevleri tüm izleme eklenmiş ikili dosyalar oturumunun içinde belgelenir.  
@@ -66,7 +67,7 @@ Bir veya daha fazla işlevler için araçları ve veri toplama seçeneklerini ay
     > [!NOTE]
     >  Bir ikili işlevlerde listelemek için profil oluşturma araçları yükleme dizininde bir komut istemi penceresi açın (genellikle \Team Tools\Performance araçları dizini altında [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] yükleme dizini) ve ardından **vsınstr / DumpFuncs**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri toplama denetimi](../profiling/controlling-data-collection.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Denetimin veri toplama](../profiling/controlling-data-collection.md)   
  [Nasıl yapılır: belirli DLL'ler için araçları sınırlama](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Nasıl yapılır: ek izleme seçeneklerini belirtme](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Nasıl yapılır: Ek izleme seçeneklerini belirtme](../profiling/how-to-specify-additional-instrumentation-options.md)

@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir Windows formu kullanarak veri toplama | Microsoft Docs'
+title: 'İzlenecek yol: bir Windows formu kullanarak veri toplama'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6a844bd94500f719e5456252d3b923c1ff85960
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba91d579f8ca9bb4909a601069f74c092b0f456c
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845567"
 ---
-# <a name="walkthrough-collecting-data-using-a-windows-form"></a>İzlenecek Yol: Windows Formu Kullanarak Veri Toplama
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>İzlenecek yol: bir Windows formu kullanarak veri toplama
   Bu kılavuz, Windows formu Microsoft Office Excel için belge düzeyi özelleştirme açmak, kullanıcıdan bilgi toplamak ve bu bilgileri çalışma sayfası hücresine yazma gösterilmiştir.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -41,18 +42,18 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="creating-a-new-project"></a>Yeni proje oluşturma  
+## <a name="create-a-new-project"></a>Yeni bir proje oluşturma  
  İlk adım, bir Excel çalışma kitabı projesi oluşturmaktır.  
   
-#### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
+### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
 1.  Adında bir Excel çalışma kitabı projesi oluşturun **girdiWinFormu**seçip **bir yeni belge oluşturun** Sihirbazı'nda. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio Tasarımcısı'nda yeni Excel çalışma kitabı açılır ve ekler **girdiWinFormu** için proje **Çözüm Gezgini**.  
   
-## <a name="adding-a-namedrange-control-to-the-worksheet"></a>Çalışma sayfasına NamedRange denetimi ekleme  
+## <a name="add-a-namedrange-control-to-the-worksheet"></a>NamedRange Denetimi çalışma sayfasına Ekle  
   
-#### <a name="to-add-a-named-range-to-sheet1"></a>Adlandırılmış bir aralık Sheet1 eklemek için  
+### <a name="to-add-a-named-range-to-sheet1"></a>Adlandırılmış bir aralık Sheet1 eklemek için  
   
 1.  Select hücre **A1** üzerinde `Sheet1`.  
   
@@ -60,14 +61,14 @@ ms.lasthandoff: 04/16/2018
   
      **Adı** kutusudur sütun hemen formül çubuğuna solunda bulunan **A** çalışma sayfasının.  
   
-3.  ENTER tuşuna basın.  
+3.  Tuşuna **girin**.  
   
      A <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi eklenir hücre **A1**. Çalışma sayfasında görünür bir gösterge yoktur ancak **girdiFormu** görünür **adı** kutusunu (yalnızca çalışma sayfasının üstünde sol tarafta) ve **özellikleri** penceresi olduğunda Hücre **A1** seçilir.  
   
-## <a name="adding-a-windows-form-to-the-project"></a>Bir Windows formunda projesine ekleniyor  
+## <a name="add-a-windows-form-to-the-project"></a>Bir Windows formunda projeye ekleyin  
  Kullanıcıdan bilgi istemek için bir Windows Form oluşturun.  
   
-#### <a name="to-add-a-windows-form"></a>Windows Form eklemek için  
+### <a name="to-add-a-windows-form"></a>Windows Form eklemek için  
   
 1.  Projeyi seçin **girdiWinFormu** içinde **Çözüm Gezgini**.  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/16/2018
   
  Ardından, kod ekleyin `ThisWorkbook.vb` veya `ThisWorkbook.cs` kullanıcının bilgileri toplamak için.  
   
-## <a name="displaying-the-windows-form-and-collecting-information"></a>Windows Form görüntülemek ve bilgi toplama  
+## <a name="display-the-windows-form-and-collecting-information"></a>Windows Form ve toplama bilgileri görüntüleme  
  Bir örneğini oluşturmak `GetInputString` Windows formu görüntülemek ve bir hücreye çalışma sayfasındaki kullanıcı bilgilerini yazar.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>Formun görüntülemek ve bilgi toplamak için  
@@ -105,9 +106,9 @@ ms.lasthandoff: 04/16/2018
   
  Ardından, forma düğmenin click işlemek üzere kod eklemek olay.  
   
-## <a name="sending-information-to-the-worksheet"></a>Çalışma sayfasına bilgileri gönderme  
+## <a name="send-information-to-the-worksheet"></a>Çalışma sayfasına bilgileri Gönder  
   
-#### <a name="to-send-information-to-the-worksheet"></a>Çalışma sayfasına bilgileri göndermek için  
+### <a name="to-send-information-to-the-worksheet"></a>Çalışma sayfasına bilgileri göndermek için  
   
 1.  Sağ **GetInputString** içinde **Çözüm Gezgini**ve ardından **Görünüm Tasarımcısı**.  
   
@@ -118,12 +119,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]  
   
-## <a name="testing"></a>Sınama  
+## <a name="test"></a>Test  
  Projeyi şimdi çalıştırabilirsiniz. Windows Form görünür ve girişinizi çalışma sayfasında görünür.  
   
-#### <a name="to-test-your-workbook"></a>Çalışma kitabınız sınamak için  
+### <a name="to-test-your-workbook"></a>Çalışma kitabınız sınamak için  
   
-1.  Projenizi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
 2.  Windows Form göründüğünü doğrulayın.  
   
@@ -131,19 +132,19 @@ ms.lasthandoff: 04/16/2018
   
 4.  Onaylayın **Hello World** hücrede görünür **A1** çalışma sayfasının.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Bu kılavuzda Windows formu ve bir çalışma sayfasına veri geçirme gösteren temellerini gösterir. Gerçekleştirmek isteyebileceğiniz diğer görevler şunlardır:  
   
--   Bir Excel çalışma kitabı veya Word belgesi üzerinde Windows Forms denetimleri kullanın. Daha fazla bilgi için bkz: [Office belgeleri genel bakış Windows Forms denetimleri](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+-   Bir Excel çalışma kitabı veya Word belgesi üzerinde Windows Forms denetimleri kullanın. Daha fazla bilgi için bkz: [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 -   Belge düzeyi özelleştirme veya bir VSTO eklenti Microsoft Office uygulamasından kullanıcı arabiriminin değiştirin. Daha fazla bilgi için bkz: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Office çözümleri geliştirmek](../vsto/developing-office-solutions.md)   
  [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
- [Word kullanımında izlenecek yollar](../vsto/walkthroughs-using-word.md)   
- [Excel Kullanarak İzlenecek Yollar](../vsto/walkthroughs-using-excel.md)  
+ [Word'ü kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)   
+ [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)  
   
   

@@ -18,17 +18,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1713221c56fe29357e708e3790aa292d456c4519
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8b86f7159e1e8c8e54c7045709d61b5f6fa7d60
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844712"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio'da nesne bağlama
 Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalışmak için tasarım zamanı araçlar sağlar. UI denetimlerine bağlamanıza bir nesne bir veritabanındaki verileri depolamak istediğiniz zaman, önerilen yaklaşım Entity Framework sınıfları ve sınıf oluşturmak için kullanmaktır. Entity Framework otomatik-DbSet nesnesinde AcceptChanges çağırdığınızda yerel nesneleri değişiklikleri otomatik olarak veritabanına kalıcı yapıldığını Bunun anlamı tüm ortak değişiklik izleme kodunu üretir. Daha fazla bilgi için bkz: [Entity Framework belgelerine](https://ef.readthedocs.org/en/latest/).
 
 > [!TIP]
->  Uygulamanızın veri kümelerinin zaten bağlıysa bu makalede nesne bağlama yaklaşımları yalnızca dikkate alınmalıdır. Bu yaklaşım, veri kümeleriyle bilginiz ve, işleme veri tablo ve çok karmaşık ya da çok büyük ise kullanılabilir. DataReader kullanarak ve el ile bağlama, olmadan UI güncelleştirme nesnelerini doğrudan veri yükleme ile ilgili bile daha basit bir örnek için bkz: [ADO.NET kullanarak basit veri uygulaması oluşturma](../data-tools/create-a-simple-data-application-by-using-adonet.md).
+>  Uygulamanızın veri kümelerinin zaten bağlıysa bu makalede nesne bağlama yaklaşımları yalnızca dikkate alınmalıdır. Bu yaklaşım, veri kümeleriyle bilginiz ve, işleme veri tablo ve çok karmaşık ya da çok büyük ise de kullanabilirsiniz. DataReader kullanarak ve el ile bağlama, olmadan UI güncelleştirme nesnelerini doğrudan veri yükleme ile ilgili bile daha basit bir örnek için bkz: [ADO.NET kullanarak basit veri uygulaması oluşturma](../data-tools/create-a-simple-data-application-by-using-adonet.md).
 
 ## <a name="object-requirements"></a>Nesne gereksinimleri
  Visual Studio Araçları tasarım verilerle çalışmak özel nesneler için tek gereksinim nesnenin en az bir ortak özellik gereğidir.
@@ -36,7 +37,7 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
  Genellikle, özel nesneleri herhangi bir belirli arabirimleri, Oluşturucular veya bir uygulama için bir veri kaynağı olarak görev yapması için öznitelikler gerektirmez. Ancak, nesneden sürükleyin istiyorsanız **veri kaynakları** veri bağlama denetimi oluşturmak için tasarım yüzeyi penceresine ve nesne uyguluyorsa <xref:System.ComponentModel.ITypedList> veya <xref:System.ComponentModel.IListSource> arabirimi, varsayılan bir nesne olmalıdır Oluşturucu. Aksi takdirde, Visual Studio veri kaynağı nesnesi başlatılamıyor ve öğeyi tasarım yüzeyine sürükleyin olduğunda bir hata görüntüler.
 
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Veri kaynakları olarak özel nesneleri kullanma örnekleri
- Nesneler ile bir veri kaynağı olarak çalışırken, uygulama mantığını uygulamak için sayısız yollar olsa da, SQL için var. TableAdapter Visual Studio tarafından oluşturulan nesneleri kullanılarak Basitleştirilmiş birkaç standart işlemleri veritabanlarıdır. Bu sayfa bu standart işlemleri uygulamak üzere açıklanmaktadır TableAdapters.It kullanarak tasarlanmamıştır bir kılavuz olarak, özel nesneler oluşturmak için. Örneğin, genellikle aşağıdaki standart belirli uygulamadan bağımsız olarak, nesne veya uygulamanın mantığı işlemleri yapar:
+ Nesneler ile bir veri kaynağı olarak çalışırken, uygulama mantığını uygulamak için sayısız yollar olsa da, SQL için var. TableAdapter Visual Studio tarafından oluşturulan nesneleri kullanılarak Basitleştirilmiş birkaç standart işlemleri veritabanlarıdır. Bu sayfayı TableAdapters kullanarak bu standart süreçler gerçekleştirmek açıklanmaktadır. Bir kılavuz olarak, özel nesneler oluşturmak için tasarlanmamıştır. Örneğin, genellikle aşağıdaki standart belirli uygulamadan bağımsız olarak, nesne veya uygulamanın mantığı işlemleri yapar:
 
 -   Veri nesneleri (genellikle bir veritabanından) içine yükleniyor.
 
@@ -60,7 +61,7 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
  En kolay yolu, özel nesneleri verilerle yük çağırmaktır `TableAdapter.GetData` yöntemi, döngü döndürülen veri tablosundaki satırları koleksiyonu aracılığıyla ve her nesnenin her satırda değerlerle doldurmak. Oluşturabileceğiniz bir `GetData` bir TableAdapter eklenen herhangi bir sorgu için girilmiş veriler tablo döndüren yöntemi.
 
 > [!NOTE]
->  Visual Studio adları TableAdapter sorguları `Fill` ve `GetData` varsayılan olarak, ancak bu adları için herhangi bir geçerli yöntemi ad değiştirilebilir.
+>  Visual Studio adları TableAdapter sorguları `Fill` ve `GetData` varsayılan olarak, ancak herhangi bir geçerli yöntemi ad bu adlarını değiştirebilirsiniz.
 
  Aşağıdaki örnek, bir veri tablosundaki satırları döngü ve nesneyi verilerle doldurmak gösterilmektedir:
 
@@ -70,9 +71,9 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
 ### <a name="create-a-typed-collection-of-objects"></a>Nesnelerin türü belirtilmiş bir koleksiyon oluşturma
  Koleksiyon sınıfları için nesneleri oluşturmak veya tarafından otomatik olarak sağlanan yazılan koleksiyonları kullanın [BindingSource bileşeni](/dotnet/framework/winforms/controls/bindingsource-component).
 
- Nesneler için özel toplama sınıfı oluştururken öğesinden devralmalı önerdiğimiz <xref:System.ComponentModel.BindingList%601>. Bu genel bir sınıf özelliği Windows Forms veri bağlama altyapısında bildirim göndermek olaylarını yanı sıra, koleksiyonunuzu yönetmek için işlevsellik sağlar.
+ Nesneler için özel toplama sınıfı oluştururken, öğesinden devralmalı önerdiğimiz <xref:System.ComponentModel.BindingList%601>. Bu genel bir sınıf özelliği Windows Forms veri bağlama altyapısında bildirim göndermek olaylarını yanı sıra, koleksiyonunuzu yönetmek için işlevsellik sağlar.
 
- Otomatik olarak oluşturulan koleksiyonunda <xref:System.Windows.Forms.BindingSource> kullanan bir <xref:System.ComponentModel.BindingList%601> yazılı koleksiyon için. Uygulamanızı ek işlevsellik gerektirmez sonra koleksiyonunuzu içine koruyabilirsiniz <xref:System.Windows.Forms.BindingSource>. Daha fazla bilgi için bkz: <xref:System.Windows.Forms.BindingSource.List%2A> özelliği <xref:System.Windows.Forms.BindingSource> sınıfı.
+ Otomatik olarak oluşturulan koleksiyonunda <xref:System.Windows.Forms.BindingSource> kullanan bir <xref:System.ComponentModel.BindingList%601> yazılı koleksiyon için. Uygulamanızı ek işlevsellik gerektirmiyorsa, koleksiyonunuzu içinde koruyabilirsiniz <xref:System.Windows.Forms.BindingSource>. Daha fazla bilgi için bkz: <xref:System.Windows.Forms.BindingSource.List%2A> özelliği <xref:System.Windows.Forms.BindingSource> sınıfı.
 
 > [!NOTE]
 >  Koleksiyonunuz temel uygulaması tarafından sağlanmayan işlevsellik gerektiriyorsa <xref:System.ComponentModel.BindingList%601>, gerektiğinde sınıfa ekleyebilmek için özel bir koleksiyona oluşturmanız gerekir.
@@ -97,7 +98,7 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
  Aşağıdaki kod devraldığı belirtilmiş bir koleksiyon nesneleri eklemek nasıl gösterir <xref:System.ComponentModel.BindingList%601>:
 
 > [!NOTE]
->  Bu örnekte `Orders` koleksiyonudur özelliği `Customer` nesnesi.
+>  Bu örnekte, `Orders` koleksiyonudur özelliği `Customer` nesnesi.
 
  [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
  [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]
@@ -139,6 +140,6 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
  [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
  [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: N katmanlı veri kümesine doğrulama ekleme
+title: N Katmanlı bir veri kümesine doğrulama ekleme
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fbbf6a28d63e755929cc9d8a6c62ff7649b2f1c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81d929aaffb6f08e5e1cda1cf3329de81fe13bc8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845411"
 ---
-# <a name="add-validation-to-an-n-tier-dataset"></a>N katmanlı veri kümesine doğrulama ekleme
+# <a name="add-validation-to-an-n-tier-dataset"></a>N Katmanlı bir veri kümesine doğrulama ekleme
 N katmanlı çözümünü ayrılmış bir veri kümesine doğrulama ekleme temelde tek dosya dataset (veri kümesinde tek bir proje) için doğrulama ekleme ile aynıdır. Verileri doğrulama gerçekleştirmek için önerilen sırasında konumdur <xref:System.Data.DataTable.ColumnChanging> ve/veya <xref:System.Data.DataTable.RowChanging> veri tablosu olayları.
 
  Veri kümesi için kullanıcı kodu sütun ve satır değiştirme olayları kümesindeki veri tabloları ekleyebileceğiniz kısmi sınıflar oluşturmak için işlevsellik sağlar. N katmanlı çözümünü kümesinde için kod ekleme hakkında daha fazla bilgi için bkz: [n katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md), ve [n katmanlı uygulamalarda TableAdapters için kodu ekleyin](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Kısmi sınıflar hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) veya [kısmi sınıflar ve yöntemler](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -37,7 +38,7 @@ N katmanlı çözümünü ayrılmış bir veri kümesine doğrulama ekleme temel
 ## <a name="validate-changes-to-individual-columns"></a>Tek tek sütuna değişiklikleri doğrulama
  Tek tek sütunlardaki değerleri işleyerek doğrulamak <xref:System.Data.DataTable.ColumnChanging> olay. <xref:System.Data.DataTable.ColumnChanging> Olayı, bir sütundaki değeri değiştirildiğinde oluşturulur. İçin bir olay işleyicisi oluşturun <xref:System.Data.DataTable.ColumnChanging> üzerinde istenen sütun çift tıklatarak olay **veri kümesi Tasarımcısı**.
 
- Bir sütundaki çift ilk kez Tasarımcısı için bir olay işleyicisi oluşturur <xref:System.Data.DataTable.ColumnChanging> olay. Bir `If...Then` deyimi de oluşturulur belirli bir sütun için test. Örneğin, Northwind Siparişler tablosundaki GereklilikTarihi sütun çift tıkladığınızda aşağıdaki kod oluşturulur:
+ Bir sütundaki çift ilk kez Tasarımcısı için bir olay işleyicisi oluşturur <xref:System.Data.DataTable.ColumnChanging> olay. Bir `If...Then` deyimi de oluşturulur belirli bir sütun için test. Çift Örneğin, aşağıdaki kod oluşturulur **GereklilikTarihi** Northwind Siparişler tablosundaki sütun:
 
 ```vb
 Private Sub OrdersDataTable_ColumnChanging(ByVal sender As System.Object, ByVal e As System.Data.DataColumnChangeEventArgs) Handles Me.ColumnChanging
@@ -54,7 +55,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Değişiklikleri sırasında doğrulama için tek tek sütun değerlerini eklemek için
 
-1.  Veri kümesi çift tıklatarak açın **.xsd** dosyasını **Çözüm Gezgini**. Daha fazla bilgi için bkz: [izlenecek yol: veri kümesi tasarımcısında bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Veri kümesi çift tıklatarak açın *.xsd* dosyasını **Çözüm Gezgini**. Daha fazla bilgi için bkz: [izlenecek yol: veri kümesi tasarımcısında bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Doğrulamak istediğiniz sütun çift tıklayın. Bu eylem oluşturur <xref:System.Data.DataTable.ColumnChanging> olay işleyicisi.
 
@@ -110,7 +111,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Tüm satır değişiklikleri sırasında doğrulama eklemek için
 
-1.  Veri kümesi çift tıklatarak açın **.xsd** dosyasını **Çözüm Gezgini**. Daha fazla bilgi için bkz: [izlenecek yol: veri kümesi tasarımcısında bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Veri kümesi çift tıklatarak açın *.xsd* dosyasını **Çözüm Gezgini**. Daha fazla bilgi için bkz: [izlenecek yol: veri kümesi tasarımcısında bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Başlık çubuğu Tasarımcı veri tabloya çift tıklayın.
 
@@ -165,8 +166,8 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md)
+- [n katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md)
 - [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)

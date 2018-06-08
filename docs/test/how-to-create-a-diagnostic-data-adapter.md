@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44d25ffee531c7b18240dcc65272d25bcb9e3402
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844748"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Nasıl yapılır: Tanılama Veri Bağdaştırıcısı Oluşturma
 
@@ -92,13 +93,13 @@ Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kulla
 
 5.  Ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> için tanılama veri bağdaştırıcısı tanımlamak tanılama veri bağdaştırıcınızın sınıfa değiştirme **şirket**, **ürün**, ve **sürüm** ile Tanılama veri bağdaştırıcınızı uygun bilgileri:
 
-    ```
+    ```csharp
     [DataCollectorTypeUri("datacollector://Company/Product/Version")]
     ```
 
 6.  Ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> özniteliği parametreleri tanılama veri bağdaştırıcınızı için uygun bilgilerle değiştirerek sınıfına:
 
-    ```
+    ```csharp
     [DataCollectorFriendlyName("Collect Log Files", false)]
     ```
 

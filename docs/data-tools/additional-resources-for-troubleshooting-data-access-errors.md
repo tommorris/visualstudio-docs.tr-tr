@@ -227,21 +227,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee3b5654bfb147c8ec04c28438784e576205de3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 811e044b4a7c629b27ae878fe93eec2ebc9e6236
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845801"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Veri erişimi hatalarında sorun giderme için ek kaynaklar
 
 Microsoft Developer Network (MSDN) ortak forumlarında sorun giderme hataları ve Uyarıları Yardım bulabilirsiniz. Aşağıdaki tabloda ilgili verileri forumları MSDN'de kullanılabilir listeler.
 
- [Windows Forms veri denetimleri ve Veri bağlamada](http://go.microsoft.com/fwlink/?LinkId=160179) Windows Forms veri erişimi hakkında ve genel tartışmalar sorular için bir forum sağlar.
+ [Windows forms veri denetimleri ve Veri bağlamada](http://go.microsoft.com/fwlink/?LinkId=160179) Windows Forms veri erişimi hakkında ve genel tartışmalar sorular için bir forum sağlar.
 
  [ADO.NET veri kümesi Forumu](http://go.microsoft.com/fwlink/?LinkId=160180) veri kümeleri hakkında ve genel tartışmalar sorular için bir forum sağlar.
 
- [ADO.NET Entity Framework ve LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) bir forum sorular için Entity Framework uygulamaları ve LINQ to Entities dili hakkında ve genel tartışmalar sağlar.
+ [ADO.NET entity framework ve LINQ to entities](http://go.microsoft.com/fwlink/?LinkId=191520) bir forum sorular için Entity Framework uygulamaları ve LINQ to Entities dili hakkında ve genel tartışmalar sağlar.
 
  [WCF Veri Hizmetleri Forumu](http://go.microsoft.com/fwlink/?LinkId=160181) veri hizmetleri hakkında ve genel tartışmalar sorular için bir forum sağlar.
 
@@ -251,8 +252,8 @@ Microsoft Developer Network (MSDN) ortak forumlarında sorun giderme hataları v
 
  [ADO.NET veri sağlayıcıları Forumu](http://go.microsoft.com/fwlink/?LinkId=160182) farklı .NET Framework Veri Sağlayıcısı hakkında ve genel tartışmalara sorular için bir forum sağlar.
 
- SQL Server bağlantı sorunlarını giderme hakkında daha fazla bilgi için bkz: [SQL Server veritabanı altyapısı bağlantı sorunlarını giderme nasıl](http://go.microsoft.com/fwlink/?LinkID=246151).
+ SQL Server bağlantı sorunlarını giderme hakkında daha fazla bilgi için bkz: [SQL Server veritabanı altyapısına bağlanma ile ilgili sorunları giderme](http://go.microsoft.com/fwlink/?LinkID=246151).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [.NET için Visual Studio veri araçları](../data-tools/visual-studio-data-tools-for-dotnet.md)

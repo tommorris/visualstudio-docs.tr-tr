@@ -18,63 +18,67 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc34b611a446edea86d3ea5e0c15b72c558d5764
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8e9af45262649473f9676bff80b4a238fdd642ac
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844218"
 ---
-# <a name="output-window"></a>Çıktı Penceresi
-**Çıkış** penceresi tümleşik geliştirme ortamı (IDE) çeşitli özellikleri için durum iletilerini görüntüleyebilir. Açmak için **çıkış** menü çubuğunda, pencere **görünüm/çıkış** (veya CTRL + ALT + O tıklatın).
+# <a name="output-window"></a>Çıktı penceresi
 
-> [!WARNING]
-> Çıktı penceresi, Visual Studio Express sürümlerinde Görünüm menüsünde görünmez. Bunu ortaya çıkarmak için kısayol tuşu kullanın CTRL + ALT + o
-
+**Çıkış** penceresi tümleşik geliştirme ortamı (IDE) çeşitli özellikleri için durum iletilerini görüntüler. Açmak için **çıkış** menü çubuğunda, pencere **Görünüm** > **çıkış**, veya basın **Ctrl** +  **Alt**+**O**.
 
 ## <a name="toolbar"></a>Araç Çubuğu
- **Gelen çıktıyı Göster**
 
- Görüntülemek için bir veya daha fazla çıkış bölmeleri görüntüler. Bilgilerin birkaç bölmeleri IDE hangi araçlarında kullandınız bağlı olarak, kullanılabilir **çıkış** kullanıcıya iletileri sunmak için penceresi.
+Aşağıdaki denetimleri araç çubuğunda gösterilir **çıkış** penceresi.
 
- **Kodda ileti bulma**
+### <a name="show-output-from"></a>Gelen çıktıyı Göster
 
- Ekleme noktasını Seçili yapı hata içeren bir satır kod düzenleyicisinde taşır.
+Görüntülemek için bir veya daha fazla çıkış bölmeleri görüntüler. Bilgilerin birkaç bölmeleri IDE hangi araçlarında kullandınız bağlı olarak, kullanılabilir **çıkış** kullanıcıya iletileri sunmak için penceresi.
 
- **Önceki iletiye gider.**
+### <a name="find-message-in-code"></a>Kodda ileti bulma
 
- Odak değişiklikleri **çıkış** önceki penceresine hata oluşturmak ve ekleme noktasını Kod Düzenleyicisi'nde hata yapı içeren satırına taşır.
+Ekleme noktasını Seçili yapı hata içeren bir satır kod düzenleyicisinde taşır.
 
- **Sonraki iletiye gider.**
+### <a name="go-to-previous-message"></a>Önceki iletiye gider.
 
- Odak değişiklikleri **çıkış** sonraki penceresine hata oluşturmak ve ekleme noktasını Kod Düzenleyicisi'nde hata yapı içeren satırına taşır.
+Odak değişiklikleri **çıkış** önceki penceresine hata oluşturmak ve ekleme noktasını Kod Düzenleyicisi'nde hata yapı içeren satırına taşır.
 
- **Tümünü temizle**
+### <a name="go-to-next-message"></a>Sonraki iletiye gider.
 
- Tüm metni temizler **çıkış** bölmesi.
+Odak değişiklikleri **çıkış** sonraki penceresine hata oluşturmak ve ekleme noktasını Kod Düzenleyicisi'nde hata yapı içeren satırına taşır.
 
- **Sözcük kaydırmayı değiştirme**
+### <a name="clear-all"></a>Tümünü temizle
 
- Sözcük kaydırma özelliğini açar ve kapatır **çıkış** bölmesi. Sözcük kaydırma açık olduğunda görüntüleme alanı genişleten metin uzun girdileri aşağıdaki satırda görüntülenir.
+Tüm metni temizler **çıkış** bölmesi.
+
+### <a name="toggle-word-wrap"></a>Sözcük kaydırmayı değiştirme
+
+Sözcük kaydırma özelliğini açar ve kapatır **çıkış** bölmesi. Sözcük kaydırma açık olduğunda görüntüleme alanı genişleten metin uzun girdileri aşağıdaki satırda görüntülenir.
 
 ## <a name="output-pane"></a>Çıkış bölmesi
- **Çıkış** bölmesinde seçili **Göster çıktı** belirtilen kaynak çıktısını görüntüler.
 
-## <a name="routing-messages-to-the-output-window"></a>Çıktı penceresi yönlendirme iletileri
- Görüntülenecek **çıkış** bir projeyi de derleme zaman penceresi **genel, projeler ve çözümler, Seçenekler** iletişim kutusunda **yapı başladığında Göster çıktı penceresi**. Düzenlemek için bir kod dosyası açıkken, ardından **sonraki iletiye gider** ve **önceki iletiyi** üzerinde düğmeleri **çıkış** penceresi araç girişleriniseçin **Çıktı** bölmesi. Bunu yaparken ekleme noktasını, seçilen sorunun oluştuğu kod satırı Kod Düzenleyicisi atlar.
+**Çıkış** bölmesinde seçili **Göster çıktı** belirtilen kaynak çıktısını görüntüler.
 
- Belirli IDE özellik ve çağrılması komutları [komut penceresi](../../ide/reference/command-window.md) çıktılarını için teslim **çıkış** penceresi. Genellikle bir komut istemi penceresinde görüntülenen, .bat ve .com dosyaları gibi harici araçlar çıktısı için yönlendirilir bir **çıkış** seçtiğinizde bölmesinde **çıktı penceresini kullan** seçeneğinde[Dış araçları yönetme](../../ide/managing-external-tools.md). İletileri pek çok değişik görüntülenebilen **çıkış** bölmeleri de. Saklı yordam Transact-SQL söz dizimi hedef veritabanına karşı işaretlendiğinde, örneğin, sonuçları görüntülenir **çıkış** penceresi.
+## <a name="route-messages-to-the-output-window"></a>İletileri yönlendirmek için çıktı penceresi
 
- Çalışma zamanında tanılama iletileri yazmak için kendi uygulamalarınızı programlama yapabilirsiniz bir **çıkış** bölmesi. Bunu yapmak için üyeleri kullanın <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> sınıfını <xref:System.Diagnostics> ad alanı .NET Framework sınıf kitaplığı. Üyeleri <xref:System.Diagnostics.Debug> çözüm ya da proje hata ayıklama yapılandırmaları derlerken sınıfı görüntüsü çıkışı; üyeleri <xref:System.Diagnostics.Trace> sınıfı görüntüleme çıkış hata ayıklama veya yayın yapılandırmaları oluşturduğunuzda. Daha fazla bilgi için bkz: [çıktı penceresindeki tanılama iletileri](../../debugger/diagnostic-messages-in-the-output-window.md).
+Görüntülenecek **çıkış** bir projeyi de derleme zaman penceresi **seçenekleri** iletişim kutusundaki **projeler ve çözümler** > **genel**  sayfasında, **yapı başladığında Göster çıktı penceresi**. Düzenlemek için bir kod dosyası açıkken, ardından **sonraki iletiye gider** ve **önceki iletiyi** üzerinde **çıkış** girişleri seçmek için penceresi araç  **Çıktı** bölmesi. Bunu yaparken ekleme noktasını, seçilen sorunun oluştuğu kod satırı Kod Düzenleyicisi atlar.
 
- İçinde [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], özel derleme adımları oluşturma ve derleme olayları, uyarıları ve hataları görüntülenir ve sayılı **çıkış** bölmesi. Çıktı satırında F1'e basarak uygun bir Yardım konusu görüntüleyebilirsiniz. Daha fazla bilgi için bkz: [özel derleme adımı veya derleme olayının çıktısını biçimlendirme](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).
+Belirli IDE özellik ve çağrılması komutları [komut penceresi](../../ide/reference/command-window.md) çıktılarını için teslim **çıkış** penceresi. Çıktı dış araçları gibi *.bat* ve *.com* genellikle komut penceresinde görüntülenir, dosyalar için yönlendirilir bir **çıkış** seçtiğinizdebölmesi **Çıktı penceresi kullanmak** seçeneğini [dış araçları yönetme](../../ide/managing-external-tools.md). İletileri pek çok değişik görüntülenebilen **çıkış** bölmeleri de. Saklı yordam Transact-SQL söz dizimi hedef veritabanına karşı işaretlendiğinde, örneğin, sonuçları görüntülenir **çıkış** penceresi.
 
-## <a name="scrolling-behavior"></a>Kaydırma davranışını
- Çıktı penceresinde autoscrolling kullanıyorsanız ve fareyi veya ok tuşlarını kullanarak gidin, autoscrolling durdurur. Autoscrolling devam etmek için CTRL + END tuşlarına basın.
+Çalışma zamanında tanılama iletileri yazmak için kendi uygulamalarınızı programlama yapabilirsiniz bir **çıkış** bölmesi. Bunu yapmak için üyeleri kullanın <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> sınıfını <xref:System.Diagnostics> ad alanı .NET Framework sınıf kitaplığı. Üyeleri <xref:System.Diagnostics.Debug> çözüm ya da proje hata ayıklama yapılandırmaları derlerken sınıfı görüntüsü çıkışı; üyeleri <xref:System.Diagnostics.Trace> sınıfı görüntüleme çıkış hata ayıklama veya yayın yapılandırmaları oluşturduğunuzda. Daha fazla bilgi için bkz: [çıktı penceresindeki tanılama iletileri](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+C++'da özel derleme adımları oluşturma ve derleme olayları, uyarıları ve hataları görüntülenir ve sayılı **çıkış** bölmesi. Basarak **F1** bir çıktı satıra uygun bir Yardım konusu görüntüleyebilirsiniz. Daha fazla bilgi için bkz: [özel derleme adımı çıktısını biçimlendirme](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).
+
+## <a name="scroll-behavior"></a>Kaydırma davranışı
+
+İçinde autoscrolling kullanırsanız **çıkış** penceresi ve autoscrolling durdurur, fareyi veya ok tuşlarını kullanarak gidin. Autoscrolling sürdürmek için basın **Ctrl**+**son**.
+
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Çıktı penceresindeki tanılama iletileri](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Nasıl yapılır: Çıktı penceresi denetleme](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
-- [Derleme ve Oluşturma](../../ide/compiling-and-building-in-visual-studio.md)
-- [Derleme Yapılandırmalarını Anlama](../../ide/understanding-build-configurations.md)
-- [Sınıf Kitaplığına Genel Bakış](/dotnet/standard/class-library-overview)
+- [Derleme ve oluşturma](../../ide/compiling-and-building-in-visual-studio.md)
+- [Derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md)
+- [Sınıf kitaplığına genel bakış](/dotnet/standard/class-library-overview)

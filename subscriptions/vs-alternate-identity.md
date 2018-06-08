@@ -9,11 +9,12 @@ description: VSTS ve Azure için kullanmak üzere Visual Studio aboneliğiniz i�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2899c6ba8c87d6f814dc1f0d59e6bd9defc214a2
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845606"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio aboneleri için kimlikleri
 
@@ -45,7 +46,7 @@ Bu hesabı bir oturum açma (VS IDE VSTS ve Azure) gerektiren Avantajlarınızı
 
 ### <a name="add-the-alternate-account"></a>Alternatif hesabı Ekle
 
-1. Visual Studio için Microsoft hesabınızla (https://{youraccount}.visualstudio.com) oturum açın.
+1. Visual Studio abone Portalı Microsoft hesabınızla oturum açın (https://my.visualstudio.com).
 
 2. Git **abonelikleri**.
 
@@ -59,7 +60,7 @@ Bu hesabı bir oturum açma (VS IDE VSTS ve Azure) gerektiren Avantajlarınızı
 
   ![İş veya Okul hesabı Ekle](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-5. Visual Studio (https://{youraccount}.visualstudio.com) oturum açmak için iş veya Okul hesabınızı kullanın.
+5. Visual Studio Team Services (https://{youraccount}.visualstudio.com) oturum açmak için iş veya Okul hesabınızı kullanın.
 
   ![İş veya Okul hesabınızı kullanın](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 

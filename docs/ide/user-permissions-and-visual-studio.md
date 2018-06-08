@@ -1,6 +1,6 @@
 ---
-title: Kullanıcı izinleri ve Visual Studio
-ms.date: 11/04/2016
+title: Yönetici olarak çalıştır
+ms.date: 06/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,53 +14,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844397"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
-Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıcı olarak çalıştırmanız gerekir.
+Güvenlik nedenleriyle, normal bir kullanıcı olarak mümkün olduğunda Visual Studio çalıştırmanız gerekir.
 
 > [!WARNING]
 > Ayrıca güvenilir bir kişi ya da güvenilir bir konumdan gelmeyen herhangi bir Visual Studio çözümüyle derleme, başlatma veya hata ayıklama yapmadığınızdan emin olmalısınız.
 
-Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabilirsiniz, ancak şu görevleri tamamlamak için yönetici izinlerine sahip olmanız gerekir:
+Visual Studio IDE içinde neredeyse her şeyi normal bir kullanıcı olarak yapabilirsiniz. Aşağıdaki görevleri tamamlamak için yönetici izinlerine sahip olmanız gerekir:
 
 |Alan|Görev|Daha fazla bilgi için|
 |----------|----------|--------------------------|
 |Yükleme|Visual Studio yükleyin.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|
-||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yükleme ve yerel içeriği yönetme](../ide/install-and-manage-local-content.md)|
-|Uygulama türleri|SharePoint çözümleri geliştirme.|[SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
-||Geliştirici lisansı alınırken [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Bir geliştirici lisansı alma](http://go.microsoft.com/fwlink/?LinkID=241313)|
-|Araç Kutusu|Klasik COM ekleme denetimleri için **araç**.|[Araç Kutusu](../ide/reference/toolbox.md)|
-|Eklentiler|IDE'de klasik COM kullanılarak yazılmış eklentileri yükleme ve kullanma.|[Eklentiler ve sihirbazları oluşturma](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-|Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|
-||ASP.NET web siteleri gibi farklı bir kullanıcı hesabı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarda hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|
-||XAML Tarayıcı Uygulamaları (XBAP) için bölgede hata ayıklama.|[WPF Konağı (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
-||Microsoft Azure için bulut hizmeti projelerinde hata ayıklama için öykünücü kullanma.|[Bir bulut hizmeti Visual Studio'da hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||Uzaktan hata ayıklama için bir güvenlik duvarı yapılandırma.|[Uzaktan hata ayıklama](../debugger/remote-debugging.md)|
+||Yükleme, güncelleştirme veya yerel Yardım içeriği kaldırma.|[Yükleme ve yerel Yardım içeriği yönetme](../ide/install-and-manage-local-content.md)|
+|Uygulama türleri|SharePoint çözümleri geliştirmek.|[SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
+|Araç Kutusu|Klasik COM denetimleri ekleme **araç**.|[Araç Kutusu](../ide/reference/toolbox.md)|
+|Oluşturma|Bir bileşenini kaydettirin sonrası derleme olaylarını kullanma.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+||C++ projeleri oluşturma sırasında bir kayıt adımı içerir.||
+|Hata Ayıklama|Yükseltilmiş izinler ile çalışan uygulamaları hata ayıklama.|[Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|
+||Farklı bir kullanıcı altında bir farklı çalıştır hesabı, ASP.NET Web siteleri gibi uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarda hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||XAML tarayıcısı uygulamaları (XBAP) bölgesinde ayıklama.|[WPF Konağı (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
+||Microsoft Azure için bulut hizmeti projelerinde hata ayıklama için öykünücü kullanın.|[Bir bulut hizmeti Visual Studio'da hata ayıklama](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
+||Uzaktan hata ayıklama için güvenlik duvarını yapılandırın.|[Uzaktan hata ayıklama](../debugger/remote-debugging.md)|
 |Performans araçları|Uygulama profili oluşturma.|[Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|
-|Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanılarak bir barındırma sağlayıcısına ASP.NET Web uygulaması dağıtma: bir test ortamı olarak IIS dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|
->>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
+|Dağıtım|Internet Information Services (IIS) için yerel bir bilgisayardaki bir web uygulaması dağıtın.|[Visual Studio kullanarak bir ASP.NET web uygulaması dağıtma](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Visual Studio bir yönetici olarak çalıştır
 
-IDE'yi her başlattığınızda Visual Studio'yu yönetim izinleri ile başlatabilir veya uygulama kısayolunu her zaman yönetim izinleriyle çalışacak şekilde değiştirebilirsiniz. Daha fazla bilgi için bkz. Windows Yardımı.
+Visual Studio'yu yönetici olarak çalıştırmanız gerekiyorsa, IDE açmak için şu adımları izleyin:
 
-### <a name="run-visual-studio-with-administrative-permissions"></a>Visual Studio Yönetici izinleriyle çalıştırın
-
-Bu yönergeler, Windows 10 için içindir. Bunlar diğer Windows sürümleri için benzerdir.
+> [!NOTE]
+> Bu yönergeler, Windows 10 için içindir. Bunlar diğer Windows sürümleri için benzerdir.
 
 1. Açık **Başlat** menü ve Visual Studio 2017 gidin.
 
 1. Sağ tıklatın veya bağlam menüsünde **Visual Studio 2017**seçin **daha fazla** > **yönetici olarak çalıştır**.
 
-     Visual Studio başladığında **(Yönetici)** sonra ürün adı başlık çubuğunda görünür.
+   Visual Studio başladığında **(Yönetici)** sonra ürün adı başlık çubuğunda görünür.
+
+Her zaman yönetici izinleriyle çalıştırmak için uygulama kısayolunu de değiştirebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

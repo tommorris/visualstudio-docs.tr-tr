@@ -1,6 +1,6 @@
 ---
-title: Visual Studio'da güvenli uygulamalar
-ms.date: 11/04/2016
+title: Güvenlik
+ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,46 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec93a207f30218492bbbb3161f073ecfdca975cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 87e9cb7e9400253713caab17da04c44eb11f5ed1
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843916"
 ---
-# <a name="secure-applications"></a>Güvenli uygulamalar
+# <a name="secure-applications"></a>Uygulamaları güvenli hale getirme
 
-Çoğu uygulama ortak güvenlik tehditlerine sahip olsa da, her bir uygulama etki alanı, kendi güvenlik zorluklar sahip olur.
+Uygulama geliştirme sürecinizde, tasarımdan geliştirmeye kadar her yönüyle güvenliği göz önünde bulundurmalısınız. Visual Studio mümkün olduğunca güvenli bir şekilde çalıştırarak başlayın. Bkz: [kullanıcı izinleri](../ide/user-permissions-and-visual-studio.md).
 
-## <a name="general-security-considerations"></a>Genel güvenlik konuları
- Her dilin kendi güvenlik konuları ve sorunları vardır.
+Etkin bir şekilde güvenli uygulamalar geliştirmenize yardımcı olması için, geliştirmekte olduğunuz platformların güvenlik kavramları ve güvenlik özellikleri hakkında temel bilgiye sahip olmanız gerekir. Güvenli kodlama tekniklerini de anlamanız gerekir.
 
- [En iyi güvenlik uygulamaları](/cpp/top/security-best-practices-for-cpp) Visual c++'ta çalışırken, bilgi güvenlik özellikleri ve yöntemleri kullanılabilir sağlar.
+## <a name="code-for-security"></a>Kod güvenliği
 
- [Güvenlik ve programlama (C# ve Visual Basic)](https://msdn.microsoft.com/library/ms233782(v=vs.100).aspx) Visual Basic ve C# geliştiricileri için ilk üç güvenlik sorunları hakkında bilgi sağlar: ayrıcalıklarını, Web uygulamaları ve Visual Studio Kurulumu.
+Güvenlik açıklarına neden çoğu kodlama hataları kullanıcı girişi ile çalışırken, geliştiricilerin yanlış varsayımlar olun çünkü ya da, bunlar geliştirirken platform tam olarak anlamadığınız nedeniyle oluşur.
 
-## <a name="secure-mobile-applications"></a>Güvenli mobil uygulamalar
- Mobil cihazların popülerliği arttıkça, güvenlik bilgileri ve verileri bu cihazlarda daha önemli hale gelir.
+- [Güvenli kodlama yönergeleri](/dotnet/standard/security/secure-coding-guidelines) .NET kodu güvenlik sistemi ile çalışmak için tasarlanmış farklı yolları açıklanmaktadır.
+- [C++ için en iyi yöntemler](/cpp/top/security-best-practices-for-cpp) C++ geliştiricileri için güvenlik araçları ve yöntemleri hakkında bilgi içerir.
 
- [Aygıtlar için güvenlik konuları](http://msdn.microsoft.com/45fab484-8718-452e-8210-04fda3c6cb87) aygıtlar için güvenlik ilkesini etkileyen çeşitli faktörler açıklanmaktadır.
+## <a name="build-for-security"></a>Güvenlik için derleme
 
- [.NET Compact Framework için güvenlik hedefleri](http://msdn.microsoft.com/64ac2770-e2bc-40a3-abbf-56c8a2c0e364) .NET Compact Framework güvenlik hedeflerini açıklar.
+Güvenlik de önemli bir yapı işlemine konudur. Bazı ek adımlar, dağıtılmış bir uygulamayı güvenliğini artırmak ve yetkisiz ters mühendislik, yanıltma veya diğer saldırılara önlemeye yardımcı olur:
 
- [Tasarım güvenli mobil Web Form sayfaları](http://msdn.microsoft.com/b69727c1-f81f-4221-a116-8f92f769365f) Discusses planlama, uygulama ve kablosuz ağlar ve mobil cihazlarda güvenlik desteği.
-
-## <a name="secure-web-applications"></a>Güvenli Web uygulamaları
- Kötü yazılmış bir web sayfası bütünlük ve bütün bir sunucunun ve büyük olasılıkla tüm ağ güvenliğini tehlikeye atabilir. Bu nedenle, web uygulamanızı planlamada güvenlik konuları incelemeniz gerekir.
-
- [ASP.NET güvenlik mimarisi](http://msdn.microsoft.com/Library/c34d6f4f-f64d-4697-bd32-02dd2ddf726f) ASP.NET altyapısına ve alt sistem ilişkilerine güvenlik genel bir bakış sağlar.
-
- [ASP.NET web uygulaması güvenliği](http://msdn.microsoft.com/Library/658d0430-1644-4744-b52d-08b0d6fcacb8) ASP.NET yetkilendirmesi ve kimlik doğrulaması sorunlarını gidermek nasıl ayrıntıları.
-
- [Nasıl yapılır: kullanım taşıma güvenliği](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297) bir WCF hizmetine bağlandığında, kimlik doğrulaması için taşıma güvenliği kullanmayı açıklar.
-
-## <a name="secure-desktop-applications"></a>Güvenli Masaüstü uygulamaları
- Masaüstü uygulamaları için güvenliği tasarlama, uygulama geliştirme önemli bir adımdır.
-
- [Windows Forms güvenlik](/dotnet/framework/winforms/windows-forms-security) Windows Forms güvenlik uygulaması genel bir bakış sağlar.
+- [Dotfuscator](dotfuscator/index.md) ücretsizdir ve .NET derlemelerini yetkisiz hata ayıklama gibi ters mühendislik ve yetkisiz kullanıma karşı korunmasına yardımcı olur.
+- [Tanımlayıcı ad imzası](managing-assembly-and-manifest-signing.md) benzersiz olarak yazılım bileşenlerini belirlemek ve adına kimlik sahtekarlığı önlemek için kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Güvenlik](../ide/security-in-visual-studio.md)
+- [.NET Framework güvenliği](/dotnet/standard/security/index)
+- [Azure güvenlik](/azure/security/)
+- [Windows 10 Mobile Güvenlik Kılavuzu](/windows/security/threat-protection/windows-10-mobile-security-guide)
+- [Apache Cordova platform güvenlik özellikleri](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
+- [ASP.NET Core güvenlik](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Windows Forms güvenliği](/dotnet/framework/winforms/windows-forms-security)

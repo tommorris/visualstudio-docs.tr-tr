@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4c87cfa1504c997cefdc68416dac9923fa10b4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844124"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance Numaralandırması
+# <a name="markerimportance-enumeration"></a>marker_importance numaralandırması
 Eşzamanlılık görselleştiricisi işaret önem düzeyini temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -41,9 +42,9 @@ enum marker_importance;
 |`normal_importance`|İşaretin normal önem olduğunu belirtir.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cvmarkersobj.h  
+ **Başlık:** *cvmarkersobj.h*  
   
  **Namespace:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tanılama Ad Alanı](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Tanılama ad alanı](../profiling/diagnostic-namespace.md)

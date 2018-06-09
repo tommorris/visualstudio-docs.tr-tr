@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6ebc81e1aed2cd007bf34a5e9145c0b995517fd
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238244"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 yükleyin
 
@@ -49,7 +50,7 @@ Visual Studio 2017 ile yan yana Visual Studio'nun önceki sürümleri çalışt�
 Ardından, Visual Studio önyükleyici dosyasını indirin. Bunu yapmak için aşağıdaki düğmeye tıklayın, Visual Studio 2017'a tıklayın, istediğiniz sürümü seçin **kaydetmek**ve ardından **Klasör Aç**.
 
  > [!div class="button"]
- > [Visual Studio 2017 İndir](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Visual Studio 2017 İndir](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |

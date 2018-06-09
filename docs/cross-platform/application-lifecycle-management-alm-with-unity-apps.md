@@ -10,13 +10,15 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa36dd0f213cffa1c5f44915de6794ecc6efa0c0
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237516"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity Uygulamaları ile Uygulama Yaşam Döngüsü Yönetimi (ALM)
+
 Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha fazla etkinlik içerir. Bu etkinlikler başvurulan için DevOps (geliştirme + işlemleri) uygulamanın tam yaşam döngüsü span ve planlama ve iş izleme, tasarlama ve kod, uygulama bir kaynak kod deposu yönetme derlemeleri, çalışan sürekli tümleştirmeler yönetme içerir dağıtımlar, test (dahil, birim testleri ve UI testleri) tanılama çeşitli biçimlerde hem geliştirme hem de üretim ortamlarında çalışan ve uygulama performansı ve kullanıcı davranışlarını telemetri ve analiz ile gerçek zamanlı izleme.
 
  Visual Studio Team Services ve Team Foundation Server ile birlikte Visual Studio uygulama yaşam döngüsü yönetimi veya ALM da bilinir DevOps özellikleri, çeşitli sağlar. Bunların çoğu oyunları ve Unity ile oluşturulan derinlikli grafik uygulamalar dahil olmak üzere, platformlar arası projeleri için geçerli olan — özellikle kullanarak C# bir komut dosyası dili. Ancak, Unity kendi geliştirme ortamı ve çalışma zamanı altyapısı olduğundan, diğer türde Visual Studio'da oluşturulmuş projeler için yaptıkları gibi çok sayıda ALM özelliği uygulanmaz.
@@ -24,9 +26,10 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
  Aşağıdaki tablolarda, Visual Studio ALM özellikleri nasıl uygulamak veya Unity ile çalışırken, uygulama tanımlar. Özellikleri hakkında ayrıntılı bilgi için bağlantılı belgelerine bakın.
 
 ## <a name="agile-tools"></a>Çevik Araçlar
- Başvuru bağlantısı: **[iş](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services veya TFS Takım Gezgini her yerde dahil olmak üzere, kullanarak)
 
- Genel Açıklama: tüm planlama ve izleme özellikleri proje türüne ve dilleri kodlama bağımsızdır.
+Başvuru bağlantısı: [hakkında Çevik Araçlar ve Çevik proje yönetimi](/vsts/work/backlogs/overview?view=vsts) (Visual Studio Team Services veya TFS Takım Gezgini her yerde dahil olmak üzere, kullanarak)
+
+Genel Açıklama: tüm planlama ve izleme özellikleri proje türüne ve dilleri kodlama bağımsızdır.
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
@@ -37,9 +40,10 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 |Rapor ve ilerlemeyi Görselleştirme|Evet||
 
 ## <a name="modeling"></a>Modelleme
- Başvuru bağlantısı:  **[çözümleme ve modelleme mimarisi](../modeling/analyze-and-model-your-architecture.md)**
 
- Genel Açıklama: Bu tasarım özellikleri dil kodlama ya da bağımsız olduğundan veya C# .NET dilleri ile çalışır, ancak bunlar geleneksel uygulama kip nesne hiyerarşileri ve sınıf ilişkileri çalışmayabilir. Unity içinde oyun tasarımında gerekir farklı bir standardı tamamen, yani ilişkilerini grafik nesneleri, ses, gölgelendiriciler, betikler ve benzeri. Bu nedenle, diyagram modelleme Visual Studio Araçları Unity projenin bütün özellikle ilgili değildir. C# betiklerini içindeki ilişkileri yönetmek için büyük olasılıkla kullanılabilir, ancak tüm yalnızca bir parçası olan.
+Başvuru bağlantısı:  **[çözümleme ve modelleme mimarisi](../modeling/analyze-and-model-your-architecture.md)**
+
+Genel Açıklama: Bu tasarım özellikleri dil kodlama ya da bağımsız olduğundan veya C# .NET dilleri ile çalışır, ancak bunlar geleneksel uygulama kip nesne hiyerarşileri ve sınıf ilişkileri çalışmayabilir. Unity içinde oyun tasarımında gerekir farklı bir standardı tamamen, yani ilişkilerini grafik nesneleri, ses, gölgelendiriciler, betikler ve benzeri. Bu nedenle, diyagram modelleme Visual Studio Araçları Unity projenin bütün özellikle ilgili değildir. C# betiklerini içindeki ilişkileri yönetmek için büyük olasılıkla kullanılabilir, ancak tüm yalnızca bir parçası olan.
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
@@ -56,9 +60,9 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
-|[Team Foundation sürüm denetimini kullanma](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) veya Visual Studio Team Services|Evet|Unity projeleri yalnızca sürüm denetim sistemleri gibi başka bir projeye içine yerleştirilebilir dosyaları koleksiyonu olan, ancak sonra bu tabloda açıklandığı gibi bazı özel durumlar vardır.|
-|[Git Team Services ile çalışmaya başlama](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Evet|Tablodan sonra notlarına bakın.|
-|[Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)|Evet||
+|[Team Foundation sürüm denetimini kullanma](/vsts/tfvc/overview?view=vsts) veya Visual Studio Team Services|Evet|Unity projeleri yalnızca sürüm denetim sistemleri gibi başka bir projeye içine yerleştirilebilir dosyaları koleksiyonu olan, ancak sonra bu tabloda açıklandığı gibi bazı özel durumlar vardır.|
+|[Git Team Services ile çalışmaya başlama](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Evet|Tablodan sonra notlarına bakın.|
+|[Kod Kalitesini Geliştirme](../test/improve-code-quality.md)|Evet||
 |[Kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)|Evet||
 |[Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)|Evet||
 
@@ -94,7 +98,7 @@ Modern platformlar için uygulama geliştirme yeni kod yazma daha pek çok daha 
 
 ## <a name="improve-code-quality"></a>Kod kalitesini geliştirme
 
-Başvuru bağlantısı:  **[kod kalitesini geliştirmek](/visualstudio/test/improve-code-quality)**
+Başvuru bağlantısı:  **[kod kalitesini geliştirmek](../test/improve-code-quality.md)**
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
@@ -105,7 +109,8 @@ Başvuru bağlantısı:  **[kod kalitesini geliştirmek](/visualstudio/test/impr
 |[.NET Framework bellek sorunlarını çözümleme](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Hayır|Visual Studio Araçları profil oluşturma için Mono framework (olarak Unity tarafından kullanılan) içine kancaları gerekmez. Kullanım [Unity profil oluşturucu](http://docs.unity3d.com/Manual/Profiler.html) (Unity belge).|
 
 ## <a name="release-management"></a>Yayın yönetimi
- Başvuru bağlantısı:  **[yayın yönetimi ile dağıtımları otomatikleştirme](https://msdn.microsoft.com/library/vs/alm/release/overview)**
+
+Başvuru bağlantısı: [derleme ve sürüm genel bakış](/vsts/pipelines/overview?view=vsts)
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
@@ -114,7 +119,8 @@ Başvuru bağlantısı:  **[kod kalitesini geliştirmek](/visualstudio/test/impr
 |Uygulama deposuna karşıya yükleme|Kısmi|Uzantıları mevcut bazı uygulama depoları için bu işlemi otomatikleştirmek.  Bkz: [Visual Studio Team Services uzantıları](https://marketplace.visualstudio.com/VSTS); Örneğin, [Google Play için uzantı](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp izleme
- Başvuru bağlantısı:  **[HockeyApp izlemesi](https://www.hockeyapp.net/features/)**
+
+Başvuru bağlantısı:  **[HockeyApp izlemesi](https://www.hockeyapp.net/features/)**
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|

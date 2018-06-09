@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ea1d186f280c41d5330b3860f5b0802fb001bf84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487c5b4c730a4b49188857c2681aae6ff87a61e5
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237337"
 ---
 # <a name="unit-test-your-code"></a>Birim testi kodunuz
 
@@ -60,4 +61,4 @@ Birim testlerini anlamaya ve oluşturmaya yardımcı olmaları için aşağıdak
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)
+- [Kod kalitesini geliştirme](../test/improve-code-quality.md)

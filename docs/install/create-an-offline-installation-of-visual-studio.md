@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d70005a7e876b299e93ac2891ce6774a6300792
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 5d369075c03810ba0d8258296314ebc59116e234
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237396"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017 çevrimdışı yüklemesini oluşturma
 
@@ -31,10 +32,10 @@ Biz de çok çeşitli ağ ve makine koşullar içinde çalışmak için Visual S
 - Yükleme işlemi sırasında şu üç farklı indirme teknolojileri (WebClient, BITS ve WinINet) yazılımıyla; virüsten koruma ve proxy girişim en aza indirmek için deneyin
 - Biz bunları sizin için bir yerel sunucudan alabilmek için Visual Studio'yu yüklemek için gereken dosyaları genel teslim ağ üzerinde dağıtılır.
 
-Denemenizi öneririz [Visual Studio web yükleyicisi](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)&mdash;bulabilirsiniz, iyi bir deneyim düşünüyoruz.
+Denemenizi öneririz [Visual Studio web yükleyicisi](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;bulabilirsiniz, iyi bir deneyim düşünüyoruz.
 
  > [!div class="button"]
- > [Visual Studio 2017 İndir](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Visual Studio 2017 İndir](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Internet bağlantınız kullanılabilir veya güvenilir olmayan, bkz: olduğundan çevrimdışı yüklemek istiyorsanız, [yükleme Visual Studio 2017 düşük bant genişliği veya güvenilmeyen ağ ortamları](../install/install-vs-inconsistent-quality-network.md). Çevrimdışı bir yüklemeyi tamamlamak için gereken dosyaları yerel önbelleği oluşturmak için komut satırını kullanabilirsiniz. Bu işlem önceki sürümler için ISO dosyaları değiştirir.
 

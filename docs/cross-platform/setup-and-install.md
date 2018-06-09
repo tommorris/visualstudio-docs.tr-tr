@@ -10,11 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 8ae03dfe4ed2e72015ca1f7d91153d862f44ce40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9e782c66f1201fdf8105cc7ef4fdc266c9d56db
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237805"
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 
@@ -84,7 +85,7 @@ Yükleme devam ederken Mac Kurulum yönergeleriyle devam etmek ve Git [mobil gel
 
 2.  Xcode gelen yükleyip [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), Apple Kimliğinizi açıklandığı gibi ekleyin [hesabınız ekleme Xcode için](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
-3.  Karşıdan yükleyip Visual Studio için Mac yönergeleri izleyerek [Kurulum ve Mac için Visual Studio](/visualstudio/mac/installation.md).
+3.  Karşıdan yükleyip Visual Studio için Mac yönergeleri izleyerek [Kurulum ve Mac için Visual Studio](/visualstudio/mac/installation).
 
 4.  Xamarin Windows ve Mac bilgisayarlara yüklenmesini tamamladıktan sonra yönergeleri izleyerek [Mac bilgisayara bağlayarak](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) böylece Windows bilgisayarda iOS ve Mac Visual Studio'dan ile çalışabilirsiniz.
 

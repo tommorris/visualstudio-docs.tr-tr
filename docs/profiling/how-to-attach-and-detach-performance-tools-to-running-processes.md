@@ -18,17 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237233"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Nasıl yapılır: ekleme ve ayırma işlemleri çalıştırmanın performans araçları
 Profil Oluşturucu ekleme veya örnekleme ve toplama performans verilerini daha kolay hale getirmek için bir çalışan işlemden ayırmak için kullanılabilir. Uygulama yükleme süresi hakkında veri toplamayı önlemek istiyorsanız veya sonraki bir işlem performansını izlemek için belirli bir durumu ulaştığında bir işlem profili için bu yöntemi kullanın.  
   
 > [!NOTE]
->  Ekleme ve ayırma işlemleri içinden aşağıdaki adımları uygulamak [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tümleşik geliştirme environmnent (IDE). Komut satırı araçlarını kullanma hakkında daha fazla bilgi için bkz: [komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md). Profil hizmetleri hakkında daha fazla bilgi için bkz: [profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md).  
+>  Ekleme ve ayırma işlemleri içinden aşağıdaki adımları uygulamak [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tümleşik geliştirme environmnent (IDE). Komut satırı araçlarını kullanma hakkında daha fazla bilgi için bkz: [komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md). Profil hizmetleri hakkında daha fazla bilgi için bkz: [profil Hizmetleri](../profiling/command-line-profiling-of-services.md).  
   
  Bilgisayarın yönetici tarafından ayarlanan kullanıcı erişimi izinleri profiline kullanılabilir işlemleri bağlıdır. Örneğin, bir kullanıcı hesabı aşağıdakilerden herhangi biri için izni olabilir:  
   
@@ -60,8 +61,8 @@ Profil Oluşturucu ekleme veya örnekleme ve toplama performans verilerini daha 
   
 3.  Tıklatın **Detach**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri toplama denetimi](../profiling/controlling-data-collection.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Denetimin veri toplama](../profiling/controlling-data-collection.md)   
  [Performans oturumuna genel bakış](../profiling/performance-session-overview.md)   
  [Nasıl yapılır: Başlangıç ve bitiş performans verileri toplama](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profil oluşturma ve Windows Vista güvenliği](../profiling/profiling-and-windows-vista-security.md)   

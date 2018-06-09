@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238166"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` Yöntemi .vsp dosyasında bir profil işareti ekler. İş parçacığı içeren için profil oluşturma `MarkProfile` işlevi eklenecek işareti açık olması gerekir.  
+`MarkProfile` Yöntemi bir profil işareti ekler. *Vsp* dosya. İş parçacığı içeren için profil oluşturma `MarkProfile` işlevi eklenecek işareti açık olması gerekir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
   
  Eklenecek işaretçisi. İşaretin 0 (sıfır) değerine eşit veya daha büyük olmalıdır.  
   
-## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri  
+## <a name="property-valuereturn-value"></a>Özellik değeri/dönüş değeri  
  Kullanarak işlevi başarısını veya başarısızlığını gösterir **PROFILE_COMMAND_STATUS** numaralandırması. Dönüş değeri aşağıdakilerden biri olabilir:  
   
 |Numaralandırıcı|Açıklama|  
@@ -46,22 +47,22 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|MARK_OK başarılı olduğunu belirtmek için döndürülür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İşareti değer MarkProfile işlevi içeren iş parçacığı profili, kodu her çalıştığında .vsp dosyasına eklenir. Birden çok kez MarkProfile çağırabilirsiniz.  
+ İşareti değeri eklenir. *vsp* dosya kodu MarkProfile işlevi içeren iş parçacığı profili, her çalıştığında. Birden çok kez MarkProfile çağırabilirsiniz.  
   
- Profil işaretleri kapsamda geneldir. Örneğin, bir iş parçacığında eklenen bir profili işareti başlangıç ya da herhangi bir iş parçacığı .vsp dosyasındaki veri segmentinin sonunu işaretlemek için kullanılabilir.  
+ Profil işaretleri kapsamda geneldir. Örneğin, bir iş parçacığında eklenen bir profili işareti başlangıç ya da herhangi bir iş parçacığı veri segmentinin sonunu işaretlemek için kullanılabilir. *vsp* dosya.  
   
  İşaretleri ve yorumları API işlevleri (CommentMarkAtProfile, CommentMarkProfile veya MarkProfile) veya işareti komutu ile yerleştirildiğinde işareti profili işlevi içeren iş parçacığı için profil oluşturma durumu olmalıdır.  
   
 > [!IMPORTANT]
 >  MarkProfile yöntemi araçları yalnızca profil oluşturma ile kullanılması gerekir.  
   
-## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri  
- Microsoft.VisualStudio.Profiler.dll  
+## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>İşlev bilgisi  
- Başlık: VSPerf.h içinde bildirilen  
+ Başlık: bildirilen *VSPerf.h*  
   
- İçeri aktarma kitaplığı: VSPerf.lib  
+ İçeri aktarma kitaplığı: *VSPerf.lib*  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod MarkProfile işlev gösterir.  
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio profil oluşturucu API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)

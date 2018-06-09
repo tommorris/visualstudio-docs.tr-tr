@@ -1,6 +1,6 @@
 ---
 title: İçeri aktararak için Azure yayımlama yayımlama ayarları
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
+ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dc37e555f6ceb30584d4a1c17b96506219631a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ccf8d30907e236ca1f3047b488a5522fd2631295
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766746"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237984"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulama yayımlama Visual Studio'da yayımlama ayarları
 
 Kullanabileceğiniz **Yayımla** aracı almak için uygulamanızı dağıtma ve yayımlama ayarları. Bu makalede, kullandığımız Azure uygulama hizmeti için yayınlama ayarlarını ancak kullanabilirsiniz içe aktarmak için benzer adımları yayımlama ayarlarını [IIS](../deployment/tutorial-import-publish-settings-iis.md). Bir yayımlama ayarları profili dağıtımı için Visual Studio her yüklemesi hizmetini el ile yapılandırma daha hızlı olabilir, bazı senaryolarda kullanın.
 
-Visual Studio'da ASP.NET, ASP.NET Core ve .NET Core uygulamaları için aşağıdaki adımları uygulayın. Ayrıca içeri aktarabilirsiniz için yayınlama ayarlarını [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) uygulamalar. Adımları Visual Studio 2017 sürüm 15,6 karşılık gelir.
+Visual Studio'da ASP.NET, ASP.NET Core ve .NET Core uygulamaları için aşağıdaki adımları uygulayın. Ayrıca içeri aktarabilirsiniz için yayınlama ayarlarını [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) uygulamalar. Adımları Visual Studio 2017 sürüm 15,6 karşılık gelir.
 
 Bu öğreticide şunları yapacaksınız:
 
@@ -42,7 +42,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
     Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-* Bir Azure uygulama hizmeti oluşturun. Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). 
+* Bir Azure uygulama hizmeti oluşturun. Ayrıntılı yönergeler için bkz: [ASP.NET Core web uygulama dağıtmak için Visual Studio kullanarak Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio'da yeni bir ASP.NET projesi oluşturma
 

@@ -15,42 +15,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64de38fe796ce3c1e0d333a22582ad2973e1c4d2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 1bcce4a414985ba291f33d3ad56abe880c08e7d2
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765365"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237443"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme
-  Bazı durumlarda SharePoint Proje sistemi nesnenin olabilir ve Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, karşılık gelen bir nesne özelliklerini kullanmak istediğiniz veya tam tersi. Bu durumlarda, kullandığınız <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> farklı nesne modeline nesneyi dönüştürmek için SharePoint Proje hizmeti yöntemi.  
-  
- Örneğin, sahip olabileceğiniz bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> nesnesi, ancak yalnızca kullanılabilir yöntemleri kullanmak istediğiniz bir <xref:EnvDTE.Project> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> nesnesi. Bu durumda, kullanabileceğiniz <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> dönüştürmek için yöntem <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> için bir <xref:EnvDTE.Project> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.  
-  
- Visual Studio Otomasyon nesne modeli ve Visual Studio tümleştirmesi nesne modeli hakkında daha fazla bilgi için bkz: [programlama modeli, SharePoint araç uzantıları genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
-  
+  Bazı durumlarda SharePoint Proje sistemi nesnenin olabilir ve Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, karşılık gelen bir nesne özelliklerini kullanmak istediğiniz veya tam tersi. Bu durumlarda, kullandığınız <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> farklı nesne modeline nesneyi dönüştürmek için SharePoint Proje hizmeti yöntemi.
+
+ Örneğin, sahip olabileceğiniz bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> nesnesi, ancak yalnızca kullanılabilir yöntemleri kullanmak istediğiniz bir <xref:EnvDTE.Project> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> nesnesi. Bu durumda, kullanabileceğiniz <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> dönüştürmek için yöntem <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> için bir <xref:EnvDTE.Project> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.
+
+ Visual Studio Otomasyon nesne modeli ve Visual Studio tümleştirmesi nesne modeli hakkında daha fazla bilgi için bkz: [programlama modeli, SharePoint araç uzantıları genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
+
 ## <a name="types-of-conversions"></a>Tür dönüştürmeleri
- Aşağıdaki tabloda, bu yöntem SharePoint Proje sisteminin ve diğer Visual Studio nesne modelleri arasında dönüştürme türleri listelenmektedir.  
-  
-|SharePoint Proje sistem türü|Karşılık gelen türlerinde Otomasyonu ve tümleştirme nesne modelleri|  
-|------------------------------------|-------------------------------------------------------------------------|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>|<xref:EnvDTE.Project><br /><br /> veya<br /><br /> Herhangi bir arabirimi projesi için temel alınan COM nesnesi tarafından uygulanan Visual Studio tümleştirmesi nesne modeli. Bu arabirimleri dahil <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> (veya türetilmiş bir arabirim) ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. Projeler tarafından uygulanan ana arabirimleri listesi için bkz: [proje modeli çekirdek bileşenleri](/visualstudio/extensibility/internals/project-model-core-components).|  
-|<xref:Microsoft.VisualStudio.SharePoint.IMappedFolder><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>|<xref:EnvDTE.ProjectItem><br /><br /> veya<br /><br /> A<xref:System.UInt32> proje üye tanımlar (bir VSITEMID olarak da bilinir) değeri <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , içerir. Bu değer için geçirilebilir *ItemId* bazı parametresinin <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> yöntemleri.|  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde nasıl kullanılacağı ortaya <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> dönüştürmek için yöntem bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> nesnesine bir <xref:EnvDTE.Project>.  
-  
+ Aşağıdaki tabloda, bu yöntem SharePoint Proje sisteminin ve diğer Visual Studio nesne modelleri arasında dönüştürme türleri listelenmektedir.
+
+|SharePoint Proje sistem türü|Karşılık gelen türlerinde Otomasyonu ve tümleştirme nesne modelleri|
+|------------------------------------|-------------------------------------------------------------------------|
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>|<xref:EnvDTE.Project><br /><br /> veya<br /><br /> Herhangi bir arabirimi projesi için temel alınan COM nesnesi tarafından uygulanan Visual Studio tümleştirmesi nesne modeli. Bu arabirimleri dahil <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> (veya türetilmiş bir arabirim) ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. Projeler tarafından uygulanan ana arabirimleri listesi için bkz: [proje modeli çekirdek bileşenleri](../extensibility/internals/project-model-core-components.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.IMappedFolder><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>|<xref:EnvDTE.ProjectItem><br /><br /> veya<br /><br /> A<xref:System.UInt32> proje üye tanımlar (bir VSITEMID olarak da bilinir) değeri <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , içerir. Bu değer için geçirilebilir *ItemId* bazı parametresinin <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> yöntemleri.|
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod örneğinde nasıl kullanılacağı ortaya <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> dönüştürmek için yöntem bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> nesnesine bir <xref:EnvDTE.Project>.
+
  [!code-csharp[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs#2)]
- [!code-vb[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb#2)]  
-  
- Bu örnek gerektirir:  
-  
--   Uzantı başvuruyor SharePoint Proje sisteminin *EnvDTE.dll* derleme. Daha fazla bilgi için bkz: [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md).  
-  
--   Kaydeder kod `projectService_ProjectAdded` yöntemini <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> olayı bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> nesnesi. Bir örnek için bkz: [nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
-  
+ [!code-vb[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb#2)]
+
+ Bu örnek gerektirir:
+
+-   Uzantı başvuruyor SharePoint Proje sisteminin *EnvDTE.dll* derleme. Daha fazla bilgi için bkz: [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md).
+
+-   Kaydeder kod `projectService_ProjectAdded` yöntemini <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> olayı bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> nesnesi. Bir örnek için bkz: [nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Proje hizmetini kullanma](../sharepoint/using-the-sharepoint-project-service.md)   
- [Nasıl yapılır: SharePoint Proje hizmetini alma](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
- [SharePoint Araç Uzantılarının Programlama Modeline Genel Bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  
+
+- [SharePoint Proje Hizmetini Kullanma](../sharepoint/using-the-sharepoint-project-service.md)
+- [Nasıl yapılır: SharePoint Proje Hizmetini Alma](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [SharePoint Araç Uzantılarının Programlama Modeline Genel Bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+

@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238010"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn ve GlobalOff
-VSPerfCmd.exe **GlobalOff** ve **GlobalOn** seçenekleri duraklatıp tüm işlemleri ve iş parçacıklarını için bir komut satırı profil oluşturma oturumu profil oluşturma.  
+*VSPerfCmd.exe* **GlobalOff** ve **GlobalOn** seçenekleri duraklatıp tüm işlemleri ve iş parçacıklarını için bir komut satırı profil oluşturma oturumu profil oluşturma.  
   
- Belirleyebileceğiniz **GlobalOn** ve **GlobalOff** VSPerfCmd.exe komut satırı veya tek seçenekler de içeren komut satırları içerebilir gibi **Başlat**, **Başlatma**, veya **Attach** seçenekleri.  
+ Belirleyebileceğiniz **GlobalOn** ve **GlobalOff** tek seçenek olarak bir *VSPerfCmd.exe* komut satırı veya içerebilir bunları deiçerenkomutsatırları **Başlat**, **başlatma**, veya **Attach** seçenekleri.  
   
  **GlobalOn** ve **GlobalOff** ile birleştirilebilir **ProcessOn**, **ProcessOff**, **ThreadOn**ve  **ThreadOff** seçenekleri.  
   
@@ -31,7 +32,7 @@ VSPerfCmd.exe **GlobalOff** ve **GlobalOn** seçenekleri duraklatıp tüm işlem
   
 -   **GlobalOn** hemen genel Başlat/Durdur sayısı 1'e ayarlar ve bu nedenle sürdürür profil oluşturma.  
   
- Daha fazla bilgi için bkz: [profil oluşturma araçları API'leri](../profiling/profiling-tools-apis.md).  
+ Daha fazla bilgi için bkz: [Profil Araçları API'leri](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -82,8 +83,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)

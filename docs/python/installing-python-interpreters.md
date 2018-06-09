@@ -1,7 +1,7 @@
 ---
 title: Seçme ve Python yorumlayıcılar yükleniyor
 description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılar tam bir listesi.
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851857"
 ---
 # <a name="installing-python-interpreters"></a>Python yorumlayıcılar yükleme
 
@@ -25,7 +26,7 @@ Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayı
 
 İçin **Visual Studio 2015 ve önceki**, yorumlayıcılar biri el ile yüklemelisiniz.
 
-Visual Studio (tüm sürümler) otomatik olarak algılar her yüklü Python yorumlayıcı ve ortamına kayıt denetleyerek (aşağıdaki [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/)).
+Visual Studio (tüm sürümler) otomatik olarak algılar her yüklü Python yorumlayıcı ve ortamına kayıt defteri ayarına göre denetleyerek [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/). Python yüklemeleri altında bulundu genellikle `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 bit) ve `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64-bit), ardından düğümler "PythonCore" (CPython) ve "ContinuumAnalytics" (Anaconda) gibi dağıtım içinde.
 
 Visual Studio yüklü bir ortam algılamazsa bkz [el ile varolan bir ortama tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 

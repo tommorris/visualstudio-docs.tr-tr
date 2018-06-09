@@ -15,18 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1008f09e7511a26613b6cb5984513c1d049f61ba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0e3da19339a73f1fcedc22a0121dc716e581ad39
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237633"
 ---
 # <a name="marks-view"></a>İşaretler Görünümü
 İşaretler görünümü örnekleme ve uygulamaya eklenen ETW olayları görüntüler.  
   
  Raporda önceden doldurulmaz varsayılan işaretleri program ve programın sonu başlangıcı etiketleyin.  
   
- Windows sayaçlarını verileri otomatik olarak oluşturulan işaretlerini de bu görünümde sunulur. Daha fazla bilgi için bkz: [nasıl yapılır: Windows sayaç verileri toplama](../profiling/how-to-collect-windows-counter-data.md).  
+ Windows sayaçlarını verileri otomatik olarak oluşturulan işaretlerini de bu görünümde sunulur. Daha fazla bilgi için bkz: [nasıl yapılır: toplamak Windows sayaç verileri](../profiling/how-to-collect-windows-counter-data.md).  
   
  İki işaretleri arasında bir filtre oluşturmak için işaretleri, sağ tıklatın ve ardından seçin **işaretleri Filtresi Ekle** veya **zaman damgası tarafından Filtre Ekle**.  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/19/2018
  Windows performans sayacı verileri  
  Windows performans sayacı verileri toplandığında değerler sayaç adına sahip bir sütunda görüntülenir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Performans Raporu genel bakış](../profiling/performance-report-overview.md)   
  [Nasıl yapılır: Windows sayaç verileri toplama](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; veri toplama denetimi penceresi](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)

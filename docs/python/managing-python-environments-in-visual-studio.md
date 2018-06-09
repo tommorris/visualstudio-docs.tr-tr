@@ -1,7 +1,7 @@
 ---
 title: Python ortamları ve yorumlayıcılar yönetme
 description: Genel, sanal yönetmek için Python ortamları penceresi ve Python yorumlayıcılar ve paketleri yükleme ve Visual Studio projelerine ortamları atama conda ortamları kullanın.
-ms.date: 05/22/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 571cbdac0a311ab1cd65b957b0081c26c7f96bd9
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477580"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851870"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio Python ortamlarında yönetme
 
@@ -87,7 +87,7 @@ Her iki durumda da **Python ortamları** Çözüm Gezgini eşdüzey sekmeye olar
 
 ![Python ortamları penceresi](media/environments-default-view.png)
 
-Listenin beklenen bir ortamda görmüyorsanız bkz [el ile varolan bir ortama tanımlamanız](#manually-identify-an-existing-environment).
+Visual Studio izleyen [CESARETLENDİRİCİ 514](https://www.python.org/dev/peps/pep-0514/) kayıt defterini kullanarak yüklü ortamlar tanımlamak için. Listenin beklenen bir ortamda görmüyorsanız bkz [el ile varolan bir ortama tanımlamanız](#manually-identify-an-existing-environment).
 
 Listedeki bir ortam seçilmesi görüntüler çeşitli özellikler ve bu ortam için komutları üzerinde **genel bakış** sekmesi. Örneğin, yukarıdaki resimde Yorumlayıcı'nın konumu olduğunu gördüğünüz `C:\Python36-32`. Farklı sekmelere gibi geçmek için ortamları listesinin altındaki aşağı açılan listeyi kullanın **paketleri**, ve **IntelliSense**. Bu sekmeleri açıklanan [Python ortamları penceresinde sekme başvurusu](python-environments-window-tab-reference.md).
 
@@ -118,7 +118,27 @@ Bilgisayarınızda bir Python yorumlayıcısı var ancak Visual Studio (tüm sü
 >
 > Ancak, el ile bir yorumlayıcı ve dosya sistemi kullanılarak ortamına taşırsanız, Visual Studio yeni konumu bilemezsiniz. Daha fazla bilgi için bkz: [bir yorumlayıcı taşıma](installing-python-interpreters.md#moving-an-interpreter).
 
-< a name = "el ile tanımlama-bir-varolan-ortam ></a>
+## <a name="fix-invalid-environments"></a>Geçersiz ortamları Düzelt
+
+Visual Studio ortamı için kayıt defteri girdileri bulur, ancak yorumlayıcı yolu geçersiz, Python ortamları penceresi çizili yazı tipi adıyla gösterir:
+
+![Geçersiz bir ortam gösteren Python ortamları penceresi](media/environments-invalid-entry.png)
+
+Korumak istediğiniz bir ortam düzeltmek için önce kendi Yükleyicisi'nin Onar seçeneğini kullanmayı deneyin. Standart Python yükleyicileri 3.x, örneğin bir **onarım** seçeneği.
+
+Bir ortam düzeltmek için bir onarım seçeneği yok veya geçersiz bir ortam kaldırmak için kayıt defterini doğrudan değiştirmek için aşağıdaki adımları kullanın. Kayıt defterinde değişiklik yaptığınızda visual Studio Python ortamları penceresi otomatik olarak güncelleştirir.
+
+1. Çalıştırma `regedit.exe`.
+1. Gidin `HKEY_LOCAL_MACHINE\SOFTWARE\Python` 32-bit yorumlayıcılar için veya `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` 64-bit yorumlayıcılar için.
+1. Dağıtım gibi eşleşen düğümünü `PythonCore` CPython için veya `ContinuumAnalytics` Anaconda için.
+1. Altındaki değerleri inceleyin `InstallPath` düğümü:
+
+    ![Tipik bir CPython yükleme için kayıt defteri girişleri](media/environments-registry-entries.png)
+
+    - Ortam bilgisayarınızda hala devam ediyorsa, değerini değiştirme `ExecutablePath` doğru konuma. Ayrıca düzeltmek `(Default)` ve `WindowedExecutablePath` değerleri ve gerekli güncelleştirme.
+    - Ortamı artık bilgisayarınızda bulunduğunu ve Python ortamları penceresinden kaldırmak istiyorsanız, üst düğümü silin `InstallPath`, gibi `3.6` yukarıdaki resimde.
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>El ile varolan bir ortama tanımlayın
 

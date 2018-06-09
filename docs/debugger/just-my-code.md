@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b59072f17ecfa810bec422770aeff24e0d8e2d99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851831"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Hata ayıklama yalnızca sadece kendi kodumu Visual Studio kullanarak kullanıcı kodu belirtin
 Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları adım ve bu çağrıları çağrı yığını penceresinde daraltmak için Visual Studio yapılandırabilirsiniz. Sağlar veya bu davranışı devre dışı bırakır özelliği adlı *sadece kendi kodumu*. Bu konu, sadece kendi kodumu C#, Visual Basic, C++ ve JavaScript projelerinde kullanmayı açıklar.
@@ -82,7 +83,7 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
  Varsayılan olarak, yalnızca işlevler belirtilen `*.natstepfilter` dosyalar `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasörü kullanıcı olmayan kod olarak kabul edilir.  
   
- Kendi oluşturabilirsiniz `.natstepfilter` ve `.natjmc` atlama özelleştirmek ve çağrı yığını penceresi davranışı için `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
+ Kendi oluşturabilirsiniz `.natstepfilter` ve `.natjmc` atlama özelleştirmek ve çağrı yığını penceresi davranışı için `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Davranış Adımlama  
  Olduğunda, **Step Into** (klavye kısayolu: F11) kullanıcı kodundan kullanıcı olmayan kodu, sonraki satırında, kullanıcı kodu için kod üzerinde hata ayıklayıcı adımları. Olduğunda, **Step Out** (klavye: Shift + F11), hata ayıklayıcı kodun sonraki satırında, kullanıcı için çalışır. Hiçbir kullanıcı kodu karşılaşıldı sonra yürütülmeye uygulama kadar yinelenir, bir kesme noktası isabet ya da bir özel durum oluşur.  
@@ -97,7 +98,7 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
 -   Visual Studio makinenin tüm kullanıcıları için kullanıcı olmayan kodu belirtmek için .natstepfilter dosyasına ekleyin `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
   
--   Tek bir kullanıcı için kullanıcı olmayan kodu belirtmek için .natstepfilter dosyasına ekleyin `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` klasör.  
+-   Tek bir kullanıcı için kullanıcı olmayan kodu belirtmek için .natstepfilter dosyasına ekleyin `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` klasör.  
   
  .natstepfilter dosyaları, bu sözdizimi ile xml dosyalarıdır:  
   
@@ -129,7 +130,7 @@ Otomatik olarak sistem, framework ve diğer kullanıcı olmayan çağrıları ad
   
 -   Visual Studio makinenin tüm kullanıcıları için kullanıcı olmayan kodu belirtmek için .natjmc dosyasına ekleyin `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` klasör.  
   
--   Tek bir kullanıcı için kullanıcı olmayan kodu belirtmek için .natjmc dosyasına ekleyin `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` klasör.  
+-   Tek bir kullanıcı için kullanıcı olmayan kodu belirtmek için .natjmc dosyasına ekleyin `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` klasör.  
   
  .natjmc dosyaları, bu sözdizimi ile xml dosyalarıdır:  
   

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 99e46e6e21eb08095aab0fe4f0baa9486ad3f721
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255934"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı olmadan bellek kullanımını çözümleme
 Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ayıklama olmadan aracı  
@@ -31,17 +32,17 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
   
  Bu konuda açıklanmaktadır nasıl UWP XAML uygulama çözümlemek için bellek kullanımını Aracı'nı kullanın. UWP uygulamasında bellek kullanımını analiz etmek istiyorsanız, JavaScript ve HTML kullanıyorsa, bkz: [bellek kullanımı (JavaScript) analiz](../profiling/javascript-memory.md).  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Bellek kullanımı Tanılama oturumu Başlat  
+## <a name="start-a-memory-usage-diagnostic-session"></a>Bellek kullanımı Tanılama oturumu Başlat  
   
 1.  Bir C# Evrensel Windows projesi Visual Studio'da açın.  
   
-2.  Menü çubuğunda seçin **hata ayıklama** > **Performans Profil Oluşturucu**.  
+2.  Menü çubuğunda seçin **hata ayıklama**>**Performans Profil Oluşturucu**.  
   
 3.  Seçin **bellek kullanımı** ve ardından **Başlat** altındaki sayfasının düğmesini.  
   
      ![Bellek kullanımı Tanılama oturumu başlatmak](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a> Bellek kullanımını izleme  
+## <a name="monitor-memory-use"></a>Bellek kullanımını izleme  
  Kullanabilirsiniz ancak **bellek kullanımı** bulmak ve sorunları gidermek için kullanabileceğiniz ayrıntılı raporlar üretmek için aracı, onu etkin olarak geliştirmekte bir senaryo gerçek zamanlı bellek etkilerini araştırmak için de kullanabilirsiniz.  
   
  Tanılama oturumu başlattığınızda, uygulamanızı başlar ve **tanılama araçları** penceresi, uygulamanızın bellek kullanımı zaman çizelgesi grafiği görüntüler.  
@@ -55,12 +56,12 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
   
  Rapor oluşturma olmadan bir izleme oturumu durdurmak için yalnızca tanılama penceresini kapatın. Bellek anlık görüntüleri durumdayken bir rapor oluşturmak için tercih **durdurmak**.  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Uygulamanızı bellek durumu anlık görüntülerini alın  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Uygulamanızı bellek durumu anlık görüntülerini alın  
  İncelemek istediğiniz bir bellek sorun bulursanız, bellekte nesneleri belirli anlarda yakalamak için tanılama oturumu sırasında anlık görüntüsünü alabilirsiniz. Bir uygulama çok sayıda birçok türdeki nesneler kullandığından, üzerinde bir senaryo çözümleme yoğunlaşabilirsiniz isteyebilirsiniz. Senaryo yineleyebilirsiniz, uygulamanın taban çizgisi anlık bellek sorununu görünmesi sorunun ilk örneğini sonra başka bir anlık görüntü almak için iyi bir fikir ve bir veya daha fazla ek anlık görüntüleri de olabilir.  
   
  Anlık görüntüleri toplamak için yeni bir tanılama oturumu başlatın. Seçin **anlık görüntüsünü Al** bellek verileri yakalamak istediğinizde. Bir raporu oluşturmak için Seç **durdurmak**.  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a> Bellek kullanımı genel bakış sayfası  
+##  <a name="memory-usage-overview-page"></a>Bellek kullanımı genel bakış sayfası  
  Veri toplamayı durdurduktan sonra bellek kullanımı aracı uygulama durdurur ve genel bakış raporu görüntüler.  
   
  ![Bellek kullanımı genel bakış sayfasında](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -83,7 +84,7 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
 |![3. adım](../profiling/media/procguid_3.png "ProcGuid_3")|Bağlantı metni, bu anlık görüntü anda bellekte nesneleri toplam boyutu ve önceki anlık görüntüsünü toplam boyutu arasındaki farkı gösterir.<br /><br /> Boyutu daha küçük olduğunda bu anlık görüntü bellek boyutunu öncekinin ve negatif bir sayı büyük olduğunda, bağlantı metnini pozitif bir sayıdır. Bağlantı metni **temel** bu anlık görüntü tanılama oturumunda; ilk olduğunu gösterir **Hayır fark** fark sıfır olduğunu gösterir.<br /><br /> Türlerin örnekleri toplam boyutu fark göre sıralanmış bir anlık görüntü fark raporunu görüntülemek için bu bağlantıyı seçin.|  
 |![Adım 4](../profiling/media/procguid_4.png "ProcGuid_4")|Bağlantı metni, önceki anlık görüntüsünü nesnelerin sayısı ve bu anlık görüntü bellek nesneleri toplam sayısı arasındaki farkı gösterir.<br /><br /> Türlerin örnekleri toplam hata sayısı fark göre sıralanmış bir anlık görüntü fark raporunu görüntülemek için bu bağlantıyı seçin.|  
   
-##  <a name="BKMK_Snapshot_reports"></a> Anlık görüntü raporları  
+## <a name="snapshot-reports"></a>Anlık görüntü raporları  
  ![Bellek kullanımı anlık görüntü rapor](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a> Anlık görüntü rapor ağaçları  
@@ -118,7 +119,7 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
 ####  <a name="BKMK_Just_My_Code"></a> Yalnızca kendi kodum  
  **Sadece kendi kodumu** filtre dış kod tarafından oluşturulan çoğu örnekleri gizler. Dış türleri Framework bileşenlerini veya işletim sistemi tarafından sahip olunan veya derleyici tarafından üretilir.  
   
-##  <a name="BKMK_Snapshot_details_reports"></a> Rapor anlık görüntüsü ayrıntıları  
+## <a name="snapshot-details-reports"></a>Rapor anlık görüntüsü ayrıntıları  
  Bir anlık görüntü tanılama oturumundan odaklanmak için anlık görüntü ayrıntıları raporunu kullanın. Ayrıntıları raporu açmak için bağlantılardan birine bir anlık görüntü görünümünde aşağıdaki resimde gösterildiği gibi seçin. Her iki bağlantı aynı raporu açın; Başlangıç sıralama düzenini yalnızca farktır **Yönetilen yığın** rapor ağacında. Her iki durumda da, rapor açılır sonra sıralama düzenini değiştirebilirsiniz.  
   
  ![Anlık görüntü rapor bir anlık görüntü görünümünde bağlantılar](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -157,7 +158,7 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
 |**Boyut (bayt)**|Bir türü türünde bulunan nesneler boyutunu hariç türünün tüm örneklerini boyutu.<br /><br /> Bir örneği nesnesinde yer alan nesneleri boyutunu hariç nesnenin boyutu.|  
 |**Kapsayıcı boyutu (bayt)**|Türünün örneklerini ya da kapsanan nesneleri boyutunu dahil olmak üzere, örnek boyutunu toplam boyutu.|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a> Anlık görüntü fark (fark) raporları  
+## <a name="snapshot-difference-diff-reports"></a>Anlık görüntü fark (fark) raporları  
  Bir anlık görüntü fark (fark) raporu birincil bir anlık görüntü ve hemen daha önce alınan anlık arasında değişiklik gösterir. Diff raporu açmak için bağlantılardan birine bir anlık görüntü görünümünde aşağıdaki resimde gösterildiği gibi seçin. Her iki bağlantı aynı raporu açın; Başlangıç sıralama düzenini yalnızca farktır **Yönetilen yığın** rapor ağacında. Rapor açıldıktan sonra sıralama düzenini değiştirebilirsiniz.  
   
  ![Fark bağlantılar rapor bir anlık görüntü görünümünde](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  

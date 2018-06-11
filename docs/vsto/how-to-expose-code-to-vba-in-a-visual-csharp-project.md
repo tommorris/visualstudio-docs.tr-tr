@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Visual C# projesinde VBA kodu kullanımına sunma | Microsoft Docs'
+title: 'Nasıl yapılır: Visual C# projesinde kodu VBA kullanımına sunma'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,29 +18,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7564d64763549f2fefe8e0a8b9813fdef9a16b6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36bdcd7360099818ac8510d9eab87d6d3dc0f0fc
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257257"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Nasıl Yapılır: Visual C# Projesinde Kodu VBA Kullanımına Sunma
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Nasıl yapılır: Visual C# projesinde kodu VBA kullanımına sunma
   İki tür kod birbirleri ile etkileşim kurmak istiyorsanız, bir Visual C# projesinde Visual Basic for Applications (VBA) kodunu kodda getirebilir.  
   
- Visual C# işlemi Visual Basic işleminden farklıdır. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Basic projesinde VBA'ya kodu kullanıma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
+ Visual C# işlemi Visual Basic işleminden farklıdır. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## <a name="exposing-code-in-a-visual-c-project"></a>Visual C# projesinde kodu gösterme  
+## <a name="expose-code-in-a-visual-c-project"></a>Visual C# projesinde kodu kullanıma sunma  
  Visual C# projesinde kod çağırmak için VBA kodu etkinleştirmek için kodu COM görünür olacak şekilde değiştirin ve ardından **ReferenceAssemblyFromVbaProject** özelliğine **True** Tasarımcısı'nda.  
   
  Bir yöntemin bir Visual C# projesinde VBA'dan nasıl çağrılacağını izlenecek yol için bkz: [izlenecek yol: Visual C VBA'dan Kod Çağırma&#35; proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
-#### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>VBA Visual C# projesinde kodu kullanıma sunmak için  
+### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>VBA Visual C# projesinde kodu kullanıma sunmak için  
   
 1.  Bir Word belgesi, Excel çalışma kitabı veya makroları destekleyen ve zaten VBA kodu içeren Excel şablonu temel alan bir belge düzeyi projesi oluşturun veya açın.  
   
-     Makroları destekleyen belge dosya biçimleri hakkında daha fazla bilgi için bkz: [birleştirme VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).  
+     Makroları destekleyen belge dosya biçimleri hakkında daha fazla bilgi için bkz: [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).  
   
     > [!NOTE]  
     >  Bu özellik Word şablon projelerinde kullanılamaz.  
@@ -77,9 +78,9 @@ ms.lasthandoff: 04/16/2018
         }  
         ```  
   
-     Konak öğeleri hakkında daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
+     Konak öğeleri hakkında daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  VBA için gösterme sınıfından bir arabirim ayıklayın. İçinde **arayüz** iletişim kutusunda, arabirim bildiriminde dahil etmek istediğiniz ortak üyeleri seçin. Daha fazla bilgi için bkz: [ayıklama arabirimi yeniden düzenleme](../ide/reference/extract-interface.md).
+6.  VBA için gösterme sınıfından bir arabirim ayıklayın. İçinde **arayüz** iletişim kutusunda, arabirim bildiriminde dahil etmek istediğiniz ortak üyeleri seçin. Daha fazla bilgi için bkz: [arabirimi yeniden düzenleme ayıklamak](../ide/reference/extract-interface.md).
   
 7.  Ekleme **ortak** arabirim bildiriminde anahtar sözcük.  
   
@@ -102,11 +103,11 @@ ms.lasthandoff: 04/16/2018
   
 12. Projeyi oluşturun.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [İzlenecek yol: Visual C VBA'dan Kod Çağırma&#35; proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [Nasıl Yapılır: Visual Basic Projesinde Kodu VBA Kullanımına Sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [Nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

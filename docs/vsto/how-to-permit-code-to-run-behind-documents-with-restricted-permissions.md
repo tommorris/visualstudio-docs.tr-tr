@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kodun kısıtlı izinle belgelerin arkasında çalışmasına izin verme | Microsoft Docs'
+title: 'Nasıl yapılır: kodun kısıtlı izinle belgelerin arkasında çalışmasına izin verme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,20 +20,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b9421bd6d0228a93ba7ba7516c9ebc7b7c761
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b02afb7008233c720feae179b4726f9958a44af
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255292"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Nasıl Yapılır: Kodun Kısıtlı İzinle Belgelerin Arkasında Çalışmasına İzin Verme
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Nasıl yapılır: kodun kısıtlı izinle belgelerin arkasında çalışmasına izin verme
   Microsoft Office Bilgi Hakları Yönetimi (IRM) özelliğini, bir belge veya çalışma kitabı izinlerini kısıtlamak için kullanabilirsiniz. Varsayılan olarak, kısıtlı Microsoft Office Word belgesine veya Microsoft Office Excel çalışma kitabı arkasındaki kodda çalıştırma izni yok. Böylece, yönetilen kod uzantıları nesne modeline erişebilir ve çözümünüz çalışır varsayılan değiştirebilirsiniz.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Belge veya çalışma kitabının yazarı veya izin ayarlarını değiştirmek için tam denetim erişimi olması gerekir.  
   
-### <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin için  
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin için  
   
 1.  Belge veya çalışma kitabı Word veya Excel'de açın.  
   
@@ -48,12 +49,12 @@ ms.lasthandoff: 04/16/2018
   
  Word veya Excel nesne modeline programlı erişim izin verir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)   
  [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)   
- [Office Çözümünü Dağıtma](../vsto/deploying-an-office-solution.md)  
+ [Office çözümleri güvenli](../vsto/securing-office-solutions.md)   
+ [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)  
   
   

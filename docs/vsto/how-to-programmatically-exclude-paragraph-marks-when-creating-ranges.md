@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: aralık oluştururken program aracılığıyla paragraf işaretlerini dışlama | Microsoft Docs'
+title: 'Nasıl yapılır: aralık oluştururken program aracılığıyla paragraf işaretlerini dışlama'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a12d041c82be2be2ebfc6facc97bb769675555e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6133249720711a057ed66516571563f8a5ee0db9
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256968"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Nasıl yapılır: Aralık Oluştururken Program Aracılığıyla Paragraf İşaretlerini Hariç Tutma
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Nasıl yapılır: aralık oluştururken program aracılığıyla paragraf işaretlerini dışlama
   Oluşturduğunuz her bir <xref:Microsoft.Office.Interop.Word.Range> bir paragraf paragraf işaretlerini gibi tüm yazdırılamayan karakterler temel nesne aralığında dahil edilir. Hedef paragrafa kaynak paragrafı metin eklemek isteyebilirsiniz. Daha sonra hedef paragraf farklı paragraflara ayırmak istemiyorsanız kaynak paragrafın paragraf işaretlerini önce kaldırmalısınız. Ayrıca, paragraf işaretleri içinde paragraf biçimlendirme bilgilerini kaydedildiği varolan paragrafa aralık eklediğinizde bunu dahil istemeyebilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  Aşağıdaki örnek yordamı iki dize değişkenleri bildirir, etkin belgedeki ilk ve ikinci paragraf içeriğini alır ve içerikler karşılıklı değiştirilir. Örnek, ardından kullanarak paragraf işaretçisini aralıktan kaldırma gösterir <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemi ve paragraf içine metin ekleme.  
   
-### <a name="to-control-paragraph-structure-when-inserting-text"></a>Metin eklerken paragraf yapısını denetlemek için  
+## <a name="to-control-paragraph-structure-when-inserting-text"></a>Metin eklerken paragraf yapısını denetlemek için  
   
 1.  İlk ve ikinci paragraf için iki aralık değişkeni oluşturun ve kullanarak içeriklerini alın <xref:Microsoft.Office.Interop.Word.Range.Text%2A> özelliği.  
   
@@ -101,28 +102,28 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirme örnek  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Belge düzeyi özelleştirmelerindeki metin eklerken paragraf yapısını denetlemek için  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Belge düzeyi özelleştirmelerindeki metin eklerken paragraf yapısını denetlemek için  
   
 1.  Aşağıdaki örnek bir belge düzeyi özelleştirme için tam yöntemini gösterir. Bu kodu kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.  
   
      [!code-vb[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#26)]  
   
-## <a name="vsto-add-in-example"></a>VSTO eklentileri örneği  
+## <a name="vsto-add-in-example"></a>VSTO eklenti örneği  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>Bir VSTO eklenti metin eklerken paragraf yapısını denetlemek için  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>Bir VSTO eklenti metin eklerken paragraf yapısını denetlemek için  
   
 1.  Aşağıdaki örnek, VSTO eklenti için tam yöntemi gösterir. Bu kodu kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla daraltma aralıkları veya seçimleri](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Nasıl yapılır: aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Nasıl yapılır: program aracılığıyla sıfırlama Word belgelerinde aralıkları](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Nasıl yapılır: Word belgelerinde aralıkları'program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

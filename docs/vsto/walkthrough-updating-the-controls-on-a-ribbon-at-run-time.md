@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Şerit denetimlerini çalışma zamanında güncelleme | Microsoft Docs'
+title: 'İzlenecek yol: çalışma zamanında Şerit denetimlerini güncelleştirme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,28 +20,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10577f1ca996913ed91f07a7609c59eb9805bced
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2d9f8a585b6a9353c9e64cf03b0876e5324a539
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258807"
 ---
-# <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>İzlenecek Yol: Şerit Denetimlerini Çalışma Zamanında Güncelleme
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>İzlenecek yol: çalışma zamanında Şerit denetimlerini güncelleştirme
   Bu anlatımda Şerit nesne modeline Şerit Office uygulamasına yüklendikten sonra bir Şerit denetimlerini güncellemek için nasıl kullanılacağı gösterilir.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- Örnek bir birleşik giriş kutusu ve Microsoft Office Outlook menüde doldurmak için Northwind örnek veritabanı veri çeker. Bu denetimlerin otomatik olarak seçtiğiniz öğeler doldurmak alanları gibi **için** ve **konu** e-posta iletisinde.  
+ Örnek bir birleşik giriş kutusu ve Microsoft Office Outlook menüde doldurmak için Northwind örnek veritabanı veri çeker. Bu denetimlerin otomatik olarak seçtiğiniz öğeler doldurmak alanları gibi **için** ve **konu** bir e-posta iletisi.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
--   Yeni bir Outlook VSTO eklenti projesi oluşturma.  
+-   Yeni bir Outlook VSTO eklenti projesi oluşturun.  
   
--   Özel Şerit grubu tasarlama.  
+-   Özel Şerit grubu tasarlayın.  
   
--   Özel grup yerleşik bir sekmeye ekleniyor.  
+-   Özel bir grup için yerleşik bir sekmeyi ekleyin.  
   
--   Şerit denetimlerini çalışma zamanında güncelleme.  
+-   Çalışma zamanında Şerit üzerindeki denetimleri güncelleştirin.  
   
 > [!NOTE]  
 >  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
@@ -53,10 +54,10 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Outlook  
   
-## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Eklenti yeni bir Outlook VSTO projesi oluşturma  
+## <a name="create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturma  
  İlk olarak, bir Outlook VSTO eklenti projesi oluşturun.  
   
-#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturmak için  
+### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturmak için  
   
 1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Outlook VSTO eklenti projesindeki adlı oluşturun **Çalışma_Zamanında_Şerit_Güncelleme**.  
   
@@ -64,12 +65,12 @@ ms.lasthandoff: 04/16/2018
   
 3.  Projeyi varsayılan proje dizinine kaydedin.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## <a name="designing-a-custom-ribbon-group"></a>Özel Şerit grubu tasarlama  
- Bir kullanıcı yeni bir posta iletisi yazdığında bu örnek için Şerit görünür. Şerit için özel bir grup oluşturmak için önce bir Şerit öğesi projenize ekleyin ve Şerit Tasarımcısı grubunda tasarım. Bu özel grup adlarını çekerek müşterilere takip e-posta iletileri oluşturabilir ve veritabanından geçmişlerini sipariş yardımcı olur.  
+## <a name="design-a-custom-ribbon-group"></a>Özel Şerit grubu tasarlama  
+ Bir kullanıcı yeni bir posta iletisi yazdığında bu örnek için Şerit görünür. Şerit için özel bir grup oluşturmak için önce bir Şerit öğesi projenize ekleyin ve Şerit Tasarımcısı grubunda tasarım. Bu özel grup adları çekerek müşterilere izleme e-posta iletileri oluşturabilir ve veritabanından geçmişlerini sipariş yardımcı olur.  
   
-#### <a name="to-design-a-custom-group"></a>Özel bir grup tasarlamak için  
+### <a name="to-design-a-custom-group"></a>Özel bir grup tasarlamak için  
   
 1.  Üzerinde **proje** menüsünde tıklatın **Yeni Öğe Ekle**.  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Yeni Şerit adını değiştirmek **CustomerRibbon**ve ardından **Ekle**.  
   
-     **CustomerRibbon.cs** veya **CustomerRibbon.vb** dosyası Şerit Tasarımcısı'nda açılır ve varsayılan bir sekme ve grup görüntüler.  
+     *CustomerRibbon.cs* veya *CustomerRibbon.vb* dosyası Şerit Tasarımcısı'nda açılır ve varsayılan bir sekme ve grup görüntüler.  
   
 4.  Şerit Tasarımcısı seçmek için tıklatın.  
   
@@ -101,12 +102,12 @@ ms.lasthandoff: 04/16/2018
   
 13. Ayarlama **dinamik** için **doğru**.  
   
-     Bu ekleyin ve Şerit Office uygulamasına yüklendikten sonra çalışma zamanında denetimler menüsünde kaldırmanızı sağlar.  
+     Bu ekleyin ve Şerit Office uygulamasına yüklendikten sonra denetimlerini çalışma zamanında menüsünde kaldırmanızı sağlar.  
   
-## <a name="adding-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel grup ekleme  
+## <a name="add-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel Grup Ekle  
  Yerleşik bir sekmeyi bir Outlook Explorer veya denetçisinin Şerit üzerinde zaten var olan sekme olarak kullanılır. Bu yordamda, yerleşik bir sekmeyi özel grubunu ekleyin ve ardından sekmesinde özel grup konumunu belirtin.  
   
-#### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel grup eklemek için  
+### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel grup eklemek için  
   
 1.  Tıklatın **TabAddins (yerleşik)** sekmesini seçin.  
   
@@ -122,10 +123,10 @@ ms.lasthandoff: 04/16/2018
   
      Bu konumlandırır **Müşteri Harcamaları** önce Grup **Pano** grubunu **iletileri** sekmesi.  
   
-## <a name="creating-the-data-source"></a>Veri Kaynağı Oluşturma  
+## <a name="create-the-data-source"></a>Veri kaynağı oluşturun  
  Kullanım **veri kaynakları** penceresi türü belirtilmiş veri kümesi projenize ekleyin.  
   
-#### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
+### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
 1.  Üzerinde **veri** menüsünde tıklatın **yeni veri kaynağı Ekle**.  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 04/16/2018
   
 9. **Son**'a tıklayın.  
   
-## <a name="updating-controls-in-the-custom-group-at-run-time"></a>Özel grup denetimlerini çalışma zamanında güncelleme  
+## <a name="update-controls-in-the-custom-group-at-runtime"></a>Çalışma zamanında özel grup denetimlerini güncelleştirme  
  Şerit nesne modeli, aşağıdaki görevleri gerçekleştirmek için kullanın:  
   
 -   Müşteri adları Ekle **müşteriler** birleşik giriş kutusu.  
@@ -164,7 +165,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Kime, konu ve gövde doldurmak verileri kullanarak yeni posta iletileri alanlarının **müşteriler** birleşik giriş kutusu ve **satın alınan ürünler** menüsü.  
   
-#### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Şerit nesne modelini kullanarak özel grup denetimlerini güncelleştirmek için  
+### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Şerit nesne modelini kullanarak özel grup denetimlerini güncelleştirmek için  
   
 1.  Üzerinde **proje** menüsünde tıklatın **Başvuru Ekle**.  
   
@@ -183,12 +184,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  CustomerRibbon sınıfına aşağıdaki kodu ekleyin. Bu kod, müşteri, siparişler, sipariş ayrıntılarını ve ürün tablolarında Northwind veritabanı bilgileri depolamak için kullanacağı tablo bağdaştırıcıları ve veri tablosu bildirir.  
+6.  Aşağıdaki kodu ekleyin `CustomerRibbon` sınıfı. Bu kod, müşteri, siparişler, sipariş ayrıntılarını ve ürün tablolarında Northwind veritabanı bilgileri depolamak için kullanacağı tablo bağdaştırıcıları ve veri tablosu bildirir.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  Aşağıdaki kod bloğunu ekleyin `CustomerRibbon` sınıfı. Bu kod için çalışma zamanında Şerit denetimleri oluşturma üç yardımcı yöntemler ekler.  
+7.  Aşağıdaki kod bloğunu ekleyin `CustomerRibbon` sınıfı. Bu kod Şerit denetimlerini çalışma zamanında oluşturma üç yardımcı yöntemler ekler.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
@@ -230,7 +231,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. Aşağıdaki eklemek için olay işleyicisini `CustomerRibbon` sınıfı. Bu kod seçili ürünlerin adını yeni posta iletisinin gövdesi alan ekler.  
+13. Aşağıdakileri ekleyin `Click` olay işleyicisine `CustomerRibbon` sınıfı. Bu kod seçili ürünlerin adını yeni posta iletisinin gövdesi alan ekler.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
@@ -244,14 +245,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
-## <a name="testing-the-controls-in-the-custom-group"></a>Denetimleri özel grubunda test etme  
+## <a name="test-the-controls-in-the-custom-group"></a>Özel grup denetimlerini test  
  Outlook içinde yeni bir posta formu açtığınızda, özel bir grup adlı **Müşteri Harcamaları** kasasındaki **iletileri** Şerit sekmesi.  
   
- Bir müşteri takip e-posta iletisi oluşturmak üzere bir müşteri seçin ve sonra müşteri tarafından alınan ürünleri seçin. Denetimleri **Müşteri Harcamaları** Grup Northwind veritabanı verilerle çalışma zamanında güncelleştirilir.  
+ Bir müşteri izleme e-posta iletisi oluşturmak üzere bir müşteri seçin ve sonra müşteri tarafından alınan ürünleri seçin. Denetimleri **Müşteri Harcamaları** Grup Northwind veritabanı verilerle çalışma zamanında güncelleştirilir.  
   
-#### <a name="to-test-the-controls-in-the-custom-group"></a>Özel grup denetimleri sınamak için  
+### <a name="to-test-the-controls-in-the-custom-group"></a>Özel grup denetimleri sınamak için  
   
-1.  Projenizi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
      Outlook'u başlatır.  
   
@@ -279,16 +280,16 @@ ms.lasthandoff: 04/16/2018
   
      Ürün adı posta iletisinin gövdesine eklenir.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Aşağıdaki konulardan Office kullanıcı arabirimini özelleştirme hakkında daha fazla bilgi edinebilirsiniz:  
   
 -   Bağlam tabanlı UI hiçbir belge düzeyi özelleştirme ekleyin. Daha fazla bilgi için bkz: [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).  
   
--   Standart veya özel bir Microsoft Office Outlook form genişletir. Daha fazla bilgi için bkz: [izlenecek yol: Outlook Form Bölgesi Tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Standart veya özel bir Microsoft Office Outlook form genişletir. Daha fazla bilgi için bkz: [izlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 -   Özel görev bölmesini Outlook'a ekleyin. Daha fazla bilgi için bkz: [özel görev bölmeleri](../vsto/custom-task-panes.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Dil ile tümleşik sorgu (LINQ)](/dotnet/csharp/linq/index)   
@@ -300,7 +301,7 @@ ms.lasthandoff: 04/16/2018
  [Nasıl yapılır: Şeritteki sekmenin konumunu değiştirme](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)   
  [Nasıl yapılır: Backstage görünümüne denetimler ekleme](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Nasıl yapılır: Şerit Şerit Tasarımcısından Şerit XML dışarı aktarma](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Nasıl Yapılır: Eklenti Kullanıcı Arayüzü Hatalarını Gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Nasıl yapılır: Şerit Şerit Tasarımcısından Şerit XML'ine verebilir.](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Nasıl yapılır: kullanıcı arayüzü hatalarını gösterme eklentisi](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

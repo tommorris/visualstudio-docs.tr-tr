@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255164"
 ---
-# <a name="performance-session-overview"></a>Performans Oturumuna Genel Bakış
+# <a name="performance-session-overview"></a>Performans oturumuna genel bakış
 Bu genel bakışta profil temellerini açıklar. Performans çalışmaya yeni geliştiriciler görürsünüz nasıl [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları bunları hızla üretken ve kendi kod performansını artırmaya yardımcı olabilir. Profil deneyimli geliştiriciler belirli profil oluşturma araçları özellikleri ve süreçleri hakkında genel bir bakış elde edebilirler.  
   
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil oluşturma araçları yardımcı kaynak kodunda performans sorunlarını tanımlamak ve olası çözümlerini performansını karşılaştırır. Profil oluşturma araçları sihirbazlar ve varsayılan ayarları çoğu performans sorunu daha iyi verebilirsiniz. Özellikleri ve seçenekleri profil oluşturma araçları profil işlem üzerinde tam denetim sağlar. Bu denetim kesin hedefleme kod bölümleri, blok düzeyinde zamanlama bilgilerin toplanması ve eklenmesi, verilerinizde ek işlemci ve sistem performans verilerini içerir.  
@@ -68,12 +69,12 @@ Bu genel bakışta profil temellerini açıklar. Performans çalışmaya yeni ge
 ## <a name="modify-the-application-code"></a>Uygulama kodu değiştirin  
  Bir veya daha fazla ilgili performans sorunlarını yalıtılmış sonra kullanarak kodu değiştirebilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE ve ardından veri değişiklikleri için profil oluşturma.  
   
-## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Yeniden profil oluşturma verilerini toplamak ve verileri profil çalıştırmaları arasında karşılaştırma  
+## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Profil oluşturma verileri yeniden toplamak ve profil oluşturma çalıştırmaları arasında veri Karşılaştır  
  Profil oluşturma araçları karşılaştırma rapor görünümü modülü, işlev veya satır performans iki seçili profil oluşturma veri dosyaları arasındaki farkı görüntüler. Karşılaştırmak istediğiniz ve tek tek dosyaların görünümlerini ve karşılaştırma görünümü arasında geçiş yapabilirsiniz profil oluşturma veri değerlerini belirtebilirsiniz.  
   
 ## <a name="generate-a-report-of-the-results"></a>Sonuçları bir rapor oluşturun  
  E-postalar ve elektronik olarak herhangi bir performans raporu görünüm satırlarını yapıştırabilir ve bir veya daha fazla görünümler için verileri içeren raporlar oluşturabilir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   
- [İzlenecek yol: Performans sorunları tanımlama](../profiling/walkthrough-identifying-performance-problems.md)
+ [İzlenecek yol: Performans sorunlarını tanımlama](../profiling/walkthrough-identifying-performance-problems.md)

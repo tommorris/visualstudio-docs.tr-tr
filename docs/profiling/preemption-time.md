@@ -14,22 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc117d84fb6d2b7076e4084c81f197ba3a464ab
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7ac7152ec663a0a7b7bbbeee5c30a38885623cb9
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254765"
 ---
-# <a name="preemption-time"></a>Önalım Zamanı
-Bu kesimler çizelgesinde Önalım kategorilere engelleme zamanı ile ilişkilendirilmiş. Bu kategori, bir iş parçacığı çıkış nedeni aşağıdakilerden biri nedeniyle anahtarlanır olduğunu anlamına gelir:  
+# <a name="preemption-time"></a>Önalım zamanı
+Bu kesimler çizelgesinde Pre-emption kategorilere engelleme zamanı ile ilişkilendirilmiş. Bu kategori, bir iş parçacığı çıkış nedeni aşağıdakilerden biri nedeniyle anahtarlanır olduğunu anlamına gelir:  
   
 -   Zamanlayıcı daha yüksek bir öncelik iş parçacığı kullanarak değiştirildi.  
   
 -   İş parçacığının yürütme Zamanlayıcının süresi ve diğer iş parçacıkları yürütmek hazır.  
   
- Bu süre boyunca, bir iş parçacığı eşzamanlılık görselleştiricisi Önalım sayım çekirdek bekleme nedeni tarafından engellendi. Önalım kesimleri mantıksal çekirdek dışında bir iş parçacığı gönderildiğinde başlamalı ve o iş parçacığı yürütme devam ettiğinde bitmelidir.  
+ Bu süre boyunca, bir iş parçacığı eşzamanlılık görselleştiricisi Pre-emption sayım çekirdek bekleme nedeni tarafından engellendi. Pre-emption kesimleri mantıksal çekirdek dışında bir iş parçacığı gönderildiğinde başlamalı ve o iş parçacığı yürütme çıktığında bitmelidir.  
   
- Preempted bir kesim için araç ipucu önalım neden iş parçacığı ve işlem adını görüntüler. Ancak, bu işlem veya sürdü üzerinden iş parçacığı gerçekten preempted dönem çalıştığını göstermez.  
+ Araç İpucu biterse bir kesim için pre-emption neden iş parçacığı ve işlem adını görüntüler. Ancak, bu işlem veya sürdü üzerinden iş parçacığı gerçekten preempted dönem çalıştığını göstermez.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

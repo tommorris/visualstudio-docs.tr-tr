@@ -1,5 +1,5 @@
 ---
-title: "İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme | Microsoft Docs"
+title: "İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1fd5acf3ea2c4c6d12931b04f6360ada697378f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6067964b388b1f9610173de4c82e46d9b068f4bf
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258911"
 ---
-# <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>İzlenecek Yol: Outlook'ta E-Posta İletileri ile Birlikte Özel Görev Bölmelerini Görüntüleme
-  Bu kılavuz, oluşturulan veya açılan her e-posta iletisi birlikte özel görev bölmesini benzersiz bir örneğini görüntülemek gösterilmiştir. Kullanıcılar, görüntüleme ya da her e-posta iletisi Şerit üzerinde bir düğmeyi kullanarak özel görev bölmesini gizleme.  
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme
+  Bu kılavuz, oluşturulduğunda veya açıldığında her e-posta iletisi birlikte özel görev bölmesini benzersiz bir örneğini görüntülemek gösterilmiştir. Kullanıcılar, görüntüleme ya da her e-posta iletisi Şerit üzerinde bir düğmeyi kullanarak özel görev bölmesini gizleme.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -59,21 +60,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya Microsoft Outlook 2010.  
   
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: kullanım görev bölmeleri Outlook'ta?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl I: kullanım görev bölmeleri Outlook'ta musunuz?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
-## <a name="creating-the-project"></a>Projeyi Oluşturma  
+## <a name="create-the-project"></a>Projeyi oluşturma  
  Özel görev bölmeleri VSTO eklentileri içinde uygulanır. Outlook için VSTO eklenti projesindeki oluşturarak başlayın.  
   
-#### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
+### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Oluşturma bir **Outlook eklentisi** adlı proje **OutlookMailItemTaskPane**. Kullanım **Outlook eklentisi** proje şablonu. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Oluşturma bir **Outlook eklentisi** adlı proje **OutlookMailItemTaskPane**. Kullanım **Outlook eklentisi** proje şablonu. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası ve ekler **OutlookMailItemTaskPane** için proje **Çözüm Gezgini**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır *ThisAddIn.cs* veya *ThisAddIn.vb* kod dosyası ve ekler **OutlookMailItemTaskPane** için proje **Çözüm Gezgini**.  
   
-## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Özel görev bölmesini kullanıcı arabiriminin tasarlama  
+## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Özel görev bölmesini kullanıcı arabiriminin tasarlama  
  Özel görev bölmeleri için görsel tasarımcı yoktur, ancak istediğiniz kullanıcı Arabirimi ile bir kullanıcı denetimi tasarlayabilirsiniz. Bu VSTO eklenti özel görev bölmesinde içeren basit bir kullanıcı Arabirimi olan bir <xref:System.Windows.Forms.TextBox> denetim. Bu kılavuzda daha sonra kullanıcı denetimi için özel görev bölmesini ekleyeceksiniz.  
   
-#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Özel görev bölmesini kullanıcı arabiriminin tasarlamak için  
+### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Özel görev bölmesini kullanıcı arabiriminin tasarlamak için  
   
 1.  İçinde **Çözüm Gezgini**, tıklatın **OutlookMailItemTaskPane** projesi.  
   
@@ -85,10 +86,10 @@ ms.lasthandoff: 04/16/2018
   
 4.  Gelen **ortak denetimler** sekmesinde **araç**, sürükleyin bir **TextBox** kullanıcı denetimi için denetim.  
   
-## <a name="designing-the-user-interface-of-the-ribbon"></a>Şerit kullanıcı arabiriminin tasarlama  
- Bu VSTO eklenti için hedeflerinden kullanıcıların her e-posta iletisinin Şerit özel görev bölmesinden görüntülemek veya gizlemek için bir yol vermektir. Kullanıcı arabirimi sağlamak için görüntüleme veya özel görev bölmesini gizleme için tıklatabileceği iki durumlu düğme görüntüler özel bir Şerit UI oluşturun.  
+## <a name="design-the-user-interface-of-the-ribbon"></a>Şerit kullanıcı arabiriminin tasarlama  
+ Bu VSTO eklenti için hedeflerinden kullanıcıların her e-posta iletisi Şerit özel görev bölmesinden görüntülemek veya gizlemek için bir yol vermektir. Kullanıcı arabirimi sağlamak için görüntüleme veya özel görev bölmesini gizleme için tıklatabileceği iki durumlu düğme görüntüler özel bir Şerit UI oluşturun.  
   
-#### <a name="to-create-a-custom-ribbon-ui"></a>Özel Şerit UI oluşturmak için  
+### <a name="to-create-a-custom-ribbon-ui"></a>Özel Şerit UI oluşturmak için  
   
 1.  Üzerinde **proje** menüsünde tıklatın **Yeni Öğe Ekle**.  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Yeni Şerit adını değiştirmek **ManageTaskPaneRibbon**, tıklatıp **Ekle**.  
   
-     **ManageTaskPaneRibbon.cs** veya **ManageTaskPaneRibbon.vb** dosyası Şerit Tasarımcısı'nda açılır ve varsayılan bir sekme ve grup görüntüler.  
+     *ManageTaskPaneRibbon.cs* veya *ManageTaskPaneRibbon.vb* dosyası Şerit Tasarımcısı'nda açılır ve varsayılan bir sekme ve grup görüntüler.  
   
 4.  Şerit Tasarımcısı'nda tıklatın **group1**.  
   
@@ -108,17 +109,17 @@ ms.lasthandoff: 04/16/2018
   
 8.  İçinde **özellikleri** penceresindeki ayarlayın **etiket** özelliğine **görev bölmesini göster**.  
   
-## <a name="display-the-custom-ribbon-user-interface-with-e-mail-messages"></a>Özel Şerit kullanıcı arabirimini e-posta iletileri ile görüntüleme  
+## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>Özel Şerit kullanıcı arabirimini e-posta iletileri ile görüntüleme  
  Bu kılavuzda oluşturduğunuz özel görev bölmesi, e-posta iletilerini içeren Inspector windows ile görünmesi tasarlanmıştır. Bu nedenle, yalnızca bu windows ile özel Şerit UI görüntülenecek özellikleri ayarlayın.  
   
-#### <a name="to-display-the-custom-ribbon-ui-with-e-mail-messages"></a>Özel Şerit UI'e-posta iletileri ile görüntülemek için  
+### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>Özel Şerit UI'e-posta iletileri ile görüntülemek için  
   
 1.  Şerit Tasarımcısı'nda tıklatın **ManageTaskPaneRibbon** Şerit.  
   
 2.  İçinde **özellikleri** penceresinde, aşağı açılan listeden sonraki tıklatın **RibbonType**seçip **Microsoft.Outlook.Mail.Compose** ve  **Microsoft.Outlook.Mail.Read**.  
   
-## <a name="creating-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Inspector pencerelerini ve özel görev bölmeleri yönetmek için bir sınıf oluşturma  
- İçinde için VSTO eklentisi hangi özel görev bölmesini belirli e-posta iletisi ile ilişkili olduğunu bulduğu bazı durumlar vardır. Bu durumlar şunlardır:  
+## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Inspector pencerelerini ve özel görev bölmeleri yönetmek için bir sınıf oluşturma  
+ İçinde için VSTO eklentisi hangi özel görev bölmesini belirli e-posta iletisiyle ilişkili olduğunu bulduğu bazı durumlar vardır. Bu durumlar şunlardır:  
   
 -   Kullanıcının e-posta iletisine kapattığı zaman. Bu durumda, VSTO eklenti VSTO eklenti tarafından kullanılan kaynakları doğru temizlendiğinden emin olmak için karşılık gelen özel görev bölmesini kaldırmanız gerekir.  
   
@@ -128,16 +129,16 @@ ms.lasthandoff: 04/16/2018
   
  VSTO hangi özel görev bölmesini her açık e-posta iletisiyle ilişkili izlemek eklentiyi etkinleştirmek için çiftlerini saran özel bir sınıf oluşturun <xref:Microsoft.Office.Interop.Outlook.Inspector> ve <xref:Microsoft.Office.Tools.CustomTaskPane> nesneleri. Bu sınıf her e-posta iletisi için yeni bir özel görev bölmesi nesnesi oluşturur ve karşılık gelen e-posta iletisi kapalı olduğunda özel görev bölmesini siler.  
   
-#### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Inspector pencerelerini ve özel görev bölmeleri yönetmek için bir sınıf oluşturmak için  
+### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Inspector pencerelerini ve özel görev bölmeleri yönetmek için bir sınıf oluşturmak için  
   
-1.  İçinde **Çözüm Gezgini**, sağ **ThisAddIn.cs** veya **ThisAddIn.vb** dosya ve ardından **görünümü kodu**.  
+1.  İçinde **Çözüm Gezgini**, sağ *ThisAddIn.cs* veya *ThisAddIn.vb* dosya ve ardından **görünümü kodu**.  
   
 2.  Aşağıdaki deyimleri dosyasının üstüne ekleyin.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]  
   
-3.  Aşağıdaki kodu ekleyin **ThisAddIn.cs** veya **ThisAddIn.vb** dışında dosya `ThisAddIn` sınıfı (Visual C# için bu kodu içine ekleyin `OutlookMailItemTaskPane` ad alanı). `InspectorWrapper` Sınıfı yönetir çifti <xref:Microsoft.Office.Interop.Outlook.Inspector> ve <xref:Microsoft.Office.Tools.CustomTaskPane> nesneleri. Aşağıdaki adımlarda bu sınıfının tanımını tamamlanır.  
+3.  Aşağıdaki kodu ekleyin *ThisAddIn.cs* veya *ThisAddIn.vb* dışında dosya `ThisAddIn` sınıfı (Visual C# için bu kodu içine ekleyin `OutlookMailItemTaskPane` ad alanı). `InspectorWrapper` Sınıfı yönetir çifti <xref:Microsoft.Office.Interop.Outlook.Inspector> ve <xref:Microsoft.Office.Tools.CustomTaskPane> nesneleri. Aşağıdaki adımlarda bu sınıfının tanımını tamamlanır.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]  
@@ -162,12 +163,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]  
   
-## <a name="initializing-and-cleaning-up-resources-used-by-the-add-in"></a>Başlatma ve eklenti tarafından kullanılan kaynakları temizleme  
+## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>Başlatma ve eklenti tarafından kullanılan kaynakları temizleme  
  Kodu ekleyin `ThisAddIn` sınıfı için VSTO eklentisi yüklendiğinde başlatmak ve kaldırıldığında VSTO eklenti tarafından kullanılan kaynakları temizlemek için. VSTO eklenti için bir olay işleyicisi ayarlayarak başlatır <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> olay ve tüm mevcut e-posta iletilerini bu olay işleyicisine geçirerek. VSTO Eklenti kaldırıldığında, olay işleyicisini ayırın ve VSTO eklentisi tarafından kullanılan nesneleri temizleyin.  
   
-#### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Başlatmak ve VSTO eklentisi tarafından kullanılan kaynakları temizlemek için  
+### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Başlatmak ve VSTO eklentisi tarafından kullanılan kaynakları temizlemek için  
   
-1.  İçinde **ThisAddIn.cs** veya **ThisAddIn.vb** dosya, tanımını bulun `ThisAddIn` sınıfı.  
+1.  İçinde *ThisAddIn.cs* veya *ThisAddIn.vb* dosya, tanımını bulun `ThisAddIn` sınıfı.  
   
 2.  Aşağıdaki bildirimi ekleme `ThisAddIn` sınıfı:  
   
@@ -201,20 +202,20 @@ ms.lasthandoff: 04/16/2018
 ## <a name="checkpoint"></a>Denetim noktası  
  Projenizi hatasız derlendiğinden emin olmak için yapılandırın.  
   
-#### <a name="to-build-your-project"></a>Projenizi yapılandırmak için  
+### <a name="to-build-your-project"></a>Projenizi yapılandırmak için  
   
 1.  İçinde **Çözüm Gezgini**, sağ **OutlookMailItemTaskPane** proje ve ardından **yapı**. Proje hatasız derlendiğinden emin olun.  
   
-## <a name="synchronizing-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Birlikte özel görev bölmesini Şerit iki durumlu düğme eşitleniyor  
+## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Birlikte özel görev bölmesini Şerit iki durumlu düğme Eşitle  
  İki durumlu düğme içinde görev bölmesinde görünür değil ve görev bölmesinde gizli olarak basılması değil görünür basıldığında görünecektir. Düğmenin durumunu birlikte özel görev bölmesini eşitlemek için değiştirme <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> aç/kapa düğmesi olay işleyicisi.  
   
-#### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>Özel görev bölmesini aç/kapa düğmesi ile eşitlemek için  
+### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>Özel görev bölmesini aç/kapa düğmesi ile eşitlemek için  
   
 1.  Şerit Tasarımcısı'nda çift **görev bölmesini göster** iki durumlu düğme.  
   
-     Visual Studio otomatik olarak adlı bir olay işleyicisi oluşturur `toggleButton1_Click`, yürüten <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> iki durumlu düğme olayı. Visual Studio ayrıca açar **ManageTaskPaneRibbon.cs** veya **ManageTaskPaneRibbon.vb** Kod Düzenleyicisi'nde dosya.  
+     Visual Studio otomatik olarak adlı bir olay işleyicisi oluşturur `toggleButton1_Click`, yürüten <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> iki durumlu düğme olayı. Visual Studio ayrıca açar *ManageTaskPaneRibbon.cs* veya *ManageTaskPaneRibbon.vb* Kod Düzenleyicisi'nde dosya.  
   
-2.  Aşağıdaki deyimleri en üst kısmına ekleyin **ManageTaskPaneRibbon.cs** veya **ManageTaskPaneRibbon.vb** dosya.  
+2.  Aşağıdaki deyimleri en üst kısmına ekleyin *ManageTaskPaneRibbon.cs* veya *ManageTaskPaneRibbon.vb* dosya.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]  
@@ -224,12 +225,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]  
   
-## <a name="testing-the-project"></a>Projeyi test etme  
- Projeyi hata ayıklama başlattığınızda, Outlook açar ve VSTO eklentisi yüklenir. VSTO eklenti açıldığında her e-posta iletisi birlikte özel görev bölmesini benzersiz bir örneğini gösterir. Kodu test etmek için birkaç yeni e-posta iletileri oluşturun.  
+## <a name="test-the-project"></a>Projeyi test  
+ Projeyi hata ayıklama başlattığınızda, Outlook açar ve VSTO eklentisi yüklenir. VSTO eklenti açıldığında her e-posta iletisi birlikte özel görev bölmesini benzersiz bir örneğini gösterir. Kodu test etmek için birkaç yeni e-posta iletilerini oluşturun.  
   
-#### <a name="to-test-the-vsto-add-in"></a>VSTO eklenti sınamak için  
+### <a name="to-test-the-vsto-add-in"></a>VSTO eklenti sınamak için  
   
-1.  F5 tuşuna basın.  
+1.  Tuşuna **F5**.  
   
 2.  Outlook içinde tıklatın **yeni** yeni bir e-posta iletisi oluşturmak için.  
   
@@ -259,9 +260,9 @@ ms.lasthandoff: 04/16/2018
   
      Bu e-posta iletisiyle ilişkili görev bölmesi hala görüntülediğini doğrulamak **birinci görev bölmesi** metin kutusuna.  
   
- Bu VSTO eklenti da daha fazla işleme Gelişmiş deneyebilirsiniz senaryoları. Örneğin, kullanarak e-postaları görüntülerken eklentinin davranışını sınayabilirsiniz **sonraki öğeye** ve **önceki öğeyi** düğmeler. VSTO eklentiyi, birden fazla e-posta iletilerini açtığınızda ve VSTO eklentisi yeniden davranışı test edebilirsiniz.  
+ Bu VSTO eklenti da daha fazla işleme Gelişmiş deneyebilirsiniz senaryoları. Örneğin, e-postaları kullanarak görüntülerken davranışını sınayabilirsiniz **sonraki öğeye** ve **önceki öğeyi** düğmeler. VSTO eklentiyi, birden fazla e-posta iletilerini açtığınızda ve VSTO eklentisi yeniden davranışı test edebilirsiniz.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Özel görev bölmeleri aşağıdaki konulardan oluşturma hakkında daha fazla bilgi edinebilirsiniz:  
   
 -   Özel görev bölmesini VSTO eklenti için farklı bir uygulama oluşturun. Özel görev bölmeleri destekleyen uygulamalar hakkında daha fazla bilgi için bkz: [özel görev bölmeleri](../vsto/custom-task-panes.md).  
@@ -270,13 +271,13 @@ ms.lasthandoff: 04/16/2018
   
 -   Şerit düğmesi özel görev bölmesini görüntülemek veya gizlemek için kullanılan Excel'de oluşturun. Daha fazla bilgi için bkz: [izlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Özel görev bölmeleri](../vsto/custom-task-panes.md)   
  [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [İzlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [İzlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)   
- [Çalışma Zamanında Şeride Erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
+ [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
   
   

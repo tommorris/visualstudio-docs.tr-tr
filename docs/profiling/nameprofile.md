@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7f3b6ddfd52863585e26a1972f00e55515996d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256142"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` İşlevi belirtilen işlem veya iş parçacığı bir dize atar.  
@@ -60,7 +61,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Profil oluşturma düzeyi tanımlayıcısı. Sistem tarafından oluşturulan tanımlayıcısı iş parçacığı veya işlemi kullanın.  
   
-## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri  
+## <a name="property-valuereturn-value"></a>Özellik değeri/dönüş değeri  
  Kullanarak işlevi başarısını veya başarısızlığını gösterir **PROFILE_COMMAND_STATUS** numaralandırması. Dönüş değeri aşağıdakilerden biri olabilir:  
   
 |Numaralandırıcı|Açıklama|  
@@ -84,15 +85,15 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 > [!IMPORTANT]
 >  İş parçacığı önce CreateProcess() ve CreateThread() API işlevleri döndürebilir veya işlemi başlatıldı.  
   
-## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri  
- Microsoft.VisualStudio.Profiler.dll  
+## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>İşlev bilgisi  
   
 |||  
 |-|-|  
-|**Üstbilgi**|VSPerf.h içerir|  
-|**Kitaplığı**|VSPerf.lib kullanın|  
+|**Üstbilgi**|Dahil *VSPerf.h*|  
+|**Kitaplığı**|Kullanım *VSPerf.lib*|  
 |**Unicode**|Olarak uygulanan `NameProfileW` (Unicode) ve `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Örnek  
@@ -133,5 +134,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio profil oluşturucu API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)

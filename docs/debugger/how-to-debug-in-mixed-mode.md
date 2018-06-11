@@ -19,18 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d18fec3e8d3830764846d1c25c9109b79b6fe4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 834288c063a4bc0d830f121dcb8589b509c61bcf
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256168"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Nasıl Yapılır: Karışık Modda Hata Ayıklama
 Aşağıdaki yordamlar, karışık mod hata ayıklaması olarak da bilinen, hem yönetilen hem de yerel kodda hata ayıklama açıklar. Olup DLL ya da uygulama yerel kodda yazılır bağlı olarak bunu yapmak için iki senaryo vardır:  
   
 -   DLL çağrıları çağrı yapan uygulamanın yerel kodda yazılır. Bu durumda, DLL yönetilir ve yönetilen ve yerel hata ayıklayıcıları hem de hata ayıklama için etkinleştirilmiş olması gerekir. Bunu denetleyebilirsiniz  **\<Proje > özellik sayfaları** iletişim kutusu. Bunu nasıl yapacağınız olup, DLL projesi veya arama uygulama projesi hata ayıklama başlamanıza bağlıdır.  
   
--   DLL çağrıları çağrı yapan uygulamanın yönetilen kodda yazılır ve DLL yerel kodda yazılır.  
+-   DLL çağrıları çağrı yapan uygulamanın yönetilen kodda yazılır ve DLL yerel kodda yazılır. Bu adımlarda size bir öğretici için bkz [yönetilen ve yerel kodda hata ayıklama](../debugger/how-to-debug-managed-and-native-code.md).
   
 > [!NOTE]
 >  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).

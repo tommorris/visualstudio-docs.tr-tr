@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Bir belgeyi bir düğme kullanarak metin kutusunda metin görüntüleme | Microsoft Docs'
+title: 'İzlenecek yol: metin kutusunda düğme kullanarak bir belgedeki metin görüntüleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 086137debfa35cb08dfa3b315208ce3686d74153
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44cbabd41e40c0e157a75fa260985752e3d5e016
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257917"
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>İzlenecek Yol: Belgedeki Metin Kutusunda Düğme Kullanarak Metin Görüntüleme
+# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>İzlenecek yol: metin kutusunda düğme kullanarak bir belgedeki metin görüntüleme
   Bu anlatımda düğmeleri ve belge düzeyi özelleştirmelerinde metin kutuları için Microsoft Office Word nasıl kullanılacağı gösterilir.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -41,21 +42,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Projeyi Oluşturma  
+## <a name="create-the-project"></a>Projeyi oluşturma  
  İlk adım bir Word belgesi proje oluşturmaktır.  
   
-#### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
+### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
 1.  Adlı bir Word belgesi proje oluşturun **My Word Button**. Sihirbazı'nda seçin **bir yeni belge oluşturun**.  
   
-     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesini açar ve ekler **My Word Button** için proje **Çözüm Gezgini**.  
   
-## <a name="adding-controls-to-the-word-document"></a>Word belgesine denetimler ekleme  
+## <a name="add-controls-to-the-word-document"></a>Word belgesine denetimleri ekleme  
  Kullanıcı arabirimi denetimlerini bir düğmeyi ve bir metin kutusu Word belgesinde oluşur.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>Bir düğme ve bir metin kutusu eklemek için  
+### <a name="to-add-a-button-and-a-text-box"></a>Bir düğme ve bir metin kutusu eklemek için  
   
 1.  Belge Visual Studio Tasarımcısı'nda açık olduğunu doğrulayın.  
   
@@ -77,10 +78,10 @@ ms.lasthandoff: 04/16/2018
   
  Şimdi düğmesine tıklandığında, çalıştırılacak olan kodu yazabilirsiniz.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Düğme tıklatıldığında metin kutusunu doldurma  
+## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Düğme tıklatıldığında metin kutusunu doldurma  
  Kullanıcı düğmesine tıklar her zaman **Merhaba Dünya!** metin kutusuna eklenir.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Düğmesine tıklandığında metin kutusuna yazmak için  
+### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Düğmesine tıklandığında metin kutusuna yazmak için  
   
 1.  İçinde **Çözüm Gezgini**, sağ **ThisDocument**ve ardından **görünümü kodu** kısayol menüsünde.  
   
@@ -93,29 +94,29 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
-## <a name="testing-the-application"></a>Uygulamayı Test Etme  
+## <a name="test-the-application"></a>Uygulamayı test etme  
  Belgenizi emin olmak için şimdi sınayabilirsiniz ileti **Merhaba Dünya!** Düğmeye tıkladığınızda metin kutusunda görüntülenir.  
   
-#### <a name="to-test-your-document"></a>Belgenizi test etmek için  
+### <a name="to-test-your-document"></a>Belgenizi test etmek için  
   
-1.  Projenizi çalıştırmak için F5 tuşuna basın.  
+1.  Tuşuna **F5** projeyi çalıştırın.  
   
 2.  Düğmesini tıklatın.  
   
 3.  Onaylayın **Merhaba Dünya!** metin kutusunda görüntülenir.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
  Bu anlatımda düğmeleri ve metin kutuları Word belgelerini kullanma temelleri gösterilir. Sonradan gelebilecek bazı görevler şunlardır:  
   
--   Birleşik giriş kutusu biçimlendirmeyi değiştirmek için kullanma. Daha fazla bilgi için bkz: [izlenecek yol: değiştirme belgenin biçimlendirme kullanarak onay kutusu denetimleri](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Birleşik giriş kutusu biçimlendirmeyi değiştirmek için kullanma. Daha fazla bilgi için bkz: [izlenecek yol: CheckBox denetimlerini kullanarak belge değişikliği biçimlendirme](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
--   Grafik türlerini seçmek için radyo düğmelerini kullanarak. Daha fazla bilgi için bkz: [izlenecek yol: belge kullanarak radyo düğmeleri grafik güncelleme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Grafik türlerini seçmek için radyo düğmelerini kullanarak. Daha fazla bilgi için bkz: [izlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleştirme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Word kullanımında izlenecek yollar](../vsto/walkthroughs-using-word.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Windows Forms denetimlerindeki Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Word'ü kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
- [Nasıl yapılır: Windows Forms denetimleri Office belgelerine ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Konak Öğelerine ve Denetimlerine Genel Bakış](../vsto/host-items-and-host-controls-overview.md)  
+ [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)  
   
   

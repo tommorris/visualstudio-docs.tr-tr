@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a9e782c66f1201fdf8105cc7ef4fdc266c9d56db
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 62871cefc6d5b4f54d56ea17f04774d9d91b9984
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237805"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254959"
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 
@@ -51,7 +51,7 @@ Hedef iOS Öykünücüler ve cihazlara Windows bilgisayarınız bir ağa bağlı
 
 Visual Studio 2017 henüz yüklemediyseniz, aşağıdaki adımları uygulayın:
 
-1.  [Karşıdan yükleme ve herhangi bir sürümünü Visual Studio 2017 için yükleyiciyi başlatma](https://www.visualstudio.com/downloads/) (Community, Professional veya Enterprise). Visual Studio 2017 ücretsiz sürüm bir topluluktur. Professional ve Enterprise sürümleri için bir lisans gerekli olduğu sonra 30 gün deneme amacıyla kullanılabilir.
+1.  [Karşıdan yükleme ve herhangi bir sürümünü Visual Studio 2017 için yükleyiciyi başlatma](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional veya Enterprise). Visual Studio 2017 ücretsiz sürüm bir topluluktur. Professional ve Enterprise sürümleri için bir lisans gerekli olduğu sonra 30 gün deneme amacıyla kullanılabilir.
 
 2.  Zaman **yükleme** iletişim kutusu görüntülenirse, aşağıdaki onay kutularını işaretleyin:    
 

@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9b9296bd57e7f3057dfbca86c16b1ac41418ba0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1ff950e5e4f67321b4bb5f90f9220aa701c02463
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258612"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>İzlenecek yol: sunucudaki çalışma kitabından önbelleğe alınmış verileri alma
   Bu kılavuz, Microsoft Office Excel çalışma kitabında kullanarak Excel'i başlatmadan önbelleğe alınmış bir veri kümesinden veri almak gösterilmiştir <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı.  
@@ -63,7 +64,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Bir veri kümesini tanımlayan bir sınıf kitaplığı projesi oluşturma  
  Excel çalışma kitabı ve bir konsol uygulaması aynı veri kümesini kullanmak için her ikisi de bu projeler tarafından başvurulan ayrı bir derleme dataset tanımlamanız gerekir. Bu kılavuz için bir sınıf kitaplığı projesinde veri kümesini tanımlayın.  
   
-#### <a name="create-the-class-library-project"></a>Sınıf kitaplığı proje oluşturma  
+### <a name="create-the-class-library-project"></a>Sınıf kitaplığı proje oluşturma  
   
 1.  Başlat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 05/17/2018
   
  Veri kümesi bir *yazılan veri kümesi* AdventureWorksLT veritabanının ürün tablosundaki verileri temsil eden. Yazılan veri kümeleri hakkında daha fazla bilgi için bkz: [Visual Studio'da veri kümesi Araçları](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
-#### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Sınıf kitaplığı projesinde türü belirtilmiş veri kümesi tanımlayın  
+### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Sınıf kitaplığı projesinde türü belirtilmiş veri kümesi tanımlayın  
   
 1.  İçinde **Çözüm Gezgini**, tıklatın **AdventureWorksDataSet** projesi.  
   
@@ -125,7 +126,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="create-an-excel-workbook-project"></a>Bir Excel çalışma kitabı projesi oluşturma  
  Arabirimi için verileri bir Excel çalışma kitabı oluşturun. Bu kılavuzda daha sonra oluşturacağınız bir <xref:Microsoft.Office.Tools.Excel.ListObject> verileri görüntüleyen ve çalışma kitabının veri önbelleğindeki veri kümesi örneğini ekleyeceksiniz.  
   
-#### <a name="create-the-excel-workbook-project"></a>Excel çalışma kitabı projesi oluşturma  
+### <a name="create-the-excel-workbook-project"></a>Excel çalışma kitabı projesi oluşturma  
   
 1.  İçinde **Çözüm Gezgini**, sağ **AdventureWorksDataSet** çözüm, noktasına **Ekle**ve ardından **yeni proje**.  
   
@@ -201,7 +202,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="checkpoint"></a>Denetim noktası  
  Derleme ve derler ve hatasız çalışır emin olmak için Excel çalışma kitabı projesi çalıştırma. Bu işlem ayrıca önbellekteki veri kümesini doldurur ve çalışma kitabını verileri kaydeder.  
   
-#### <a name="build-and-run-the-project"></a>Projesini derlemeyi ve çalıştırmayı  
+### <a name="build-and-run-the-project"></a>Projesini derlemeyi ve çalıştırmayı  
   
 1.  İçinde **Çözüm Gezgini**, sağ **AdventureWorksReport** projesi, seçin **hata ayıklama**ve ardından **başlangıç yeni örnek**.  
   
@@ -233,11 +234,11 @@ ms.lasthandoff: 05/17/2018
 ## <a name="retrieve-data-from-the-cached-dataset-by-using-the-console-application"></a>Konsol uygulaması kullanarak önbelleğe alınmış veri kümesinden veri alma  
  Kullanım <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> yerel verileri okumak için konsol uygulaması sınıfında `AdventureWorksLTDataSet` nesnesi. Yerel veri kümesi önbelleğe alınmış veri kümesini verilerle başlatıldı onaylamak için uygulama yerel veri kümesinde satır sayısını görüntüler.  
   
-#### <a name="retrieve-data-from-the-cached-dataset"></a>Önbelleğe alınmış veri kümesinden veri alma  
+### <a name="retrieve-data-from-the-cached-dataset"></a>Önbelleğe alınmış veri kümesinden veri alma  
   
 1.  İçinde **Çözüm Gezgini**, sağ **DataReader** proje ve tıklatın **Başvuru Ekle**.  
   
-2.  Üzerinde **.NET** sekmesinde, Microsoft.VisualStudio.Tools.Applications.ServerDocument'a seçin.  
+2.  Üzerinde **.NET** sekmesine **Microsoft.VisualStudio.Tools.Applications.ServerDocument'a**.  
   
 3.  **Tamam**'ı tıklatın.  
   
@@ -282,7 +283,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="test-the-project"></a>Projeyi test  
  Konsol uygulamasını çalıştırdığınızda, yerel veri kümesinde satır sayısını görüntüler.  
   
-#### <a name="test-the-workbook"></a>Çalışma kitabını test  
+### <a name="test-the-workbook"></a>Çalışma kitabını test  
   
 1.  İçinde **Çözüm Gezgini**, sağ **DataReader** proje, fareyle **hata ayıklama**ve ardından **başlangıç yeni örnek**.  
   

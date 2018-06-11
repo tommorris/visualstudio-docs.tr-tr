@@ -1,5 +1,5 @@
 ---
-title: "&lt;Uygulama&gt; öğesi (Visual Studio'da Office Geliştirme) | Microsoft Docs"
+title: "&lt;Uygulama&gt; öğesi (Visual Studio'da Office Geliştirme)"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90810bf6e9a3b47148598c3e9c3d217989f115ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0d513ce5d9439ffa55a32d5210669162c0a21e2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255830"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Uygulama&gt; öğesi (Visual Studio'da Office Geliştirme)
   `application` Öğesinin `vstav3` ad alanı Office çözümleri açıklaması sarmalar. Belge düzeyi özelleştirmeleri ve VSTO eklentileri için farklı alt öğeleridir.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Belge düzeyi özelleştirmeleri için sözdizimi  
   
-```  
+```xml  
 <application>  
   <customization  
     id  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/27/2018
   
 ## <a name="syntax-for-application-level-add-ins"></a>Uygulama düzeyi eklentileri için sözdizimi  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/27/2018
   
  `application` Öğesinin öğesi yok.  
   
-### <a name="customization"></a>özelleştirme  
+### <a name="customization"></a>Özelleştirme  
  Rolü `customization` öğesinde `vstov3` ad alanı tanımlanmış [ &#60;özelleştirme&#62; öğesi &#40;Visual Studio'da Office geliştirme&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirme örnek  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -83,14 +84,14 @@ ms.lasthandoff: 04/27/2018
 </vstav3:application>  
 ```  
   
-## <a name="vsto-add-in-example"></a>VSTO eklentileri örneği  
+## <a name="vsto-add-in-example"></a>VSTO eklenti örneği  
   
 ### <a name="description"></a>Açıklama  
  Aşağıdaki kod örneği gösterilmektedir bir `application` kullanarak dağıtılmış uygulama düzeyi Office çözümünü öğesinde [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Bu kod örneği sağlanan daha büyük bir örneğin parçasıdır [uygulama bildirimleri Office çözümleri için](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -120,9 +121,9 @@ ms.lasthandoff: 04/27/2018
 </vstav3:application>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)   
  [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)  
   
   

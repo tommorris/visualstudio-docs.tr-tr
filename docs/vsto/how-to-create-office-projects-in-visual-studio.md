@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: Visual Studio'da Office projeleri oluşturma | Microsoft Docs"
+title: "Nasıl yapılır: Visual Studio'da Office projeleri oluşturma"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 29e84c08241bba09ab7923fa5997333f2371270d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b1bf4270210334d38efc42dac62857505622c161
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255976"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Office Projeleri Oluşturma
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Office projeleri oluşturma
   Kullanabileceğiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklenti ve belge düzeyi oluşturmak için Microsoft Office uygulamaları için özelleştirmeleri. Bu proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="to-create-a-vsto-add-in-project"></a>Bir VSTO eklenti projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**. Tümleşik geliştirme ortamı (IDE) kullanmak üzere ayarlanmış olup olmadığını [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] geliştirme ayarları, **dosya** menüsünde seçin **yeni**, **proje**.  
+1.  Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. Tümleşik geliştirme ortamı (IDE) kullanmak üzere ayarlanmış olup olmadığını [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] geliştirme ayarları, **dosya** menüsünde seçin **yeni** > **proje**.  
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="to-create-a-document-level-customization-project"></a>Belge düzeyi özelleştirme projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**. IDE'yi üzerinde Visual Basic geliştirme ayarlarını kullanmak üzere ayarlanmış olup olmadığını **dosya** menüsünde seçin **yeni**, **proje**.  
+1.  Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. IDE'yi üzerinde Visual Basic geliştirme ayarlarını kullanmak üzere ayarlanmış olup olmadığını **dosya** menüsünde seçin **yeni** > **proje**.  
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
@@ -146,22 +147,22 @@ ms.lasthandoff: 05/17/2018
     -   Yüzde (%) işareti  
   
     > [!NOTE]  
-    >  Var olan bir belgeyi kullanırsanız, bir [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] proje, yalnızca içinde oluşturulur veya dönüştürülür belgeleri kullanın [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Benzer şekilde, var olan bir belgeyi bir Word kullanırsanız project 2010, yalnızca içinde oluşturulan veya Word 2010 dönüştürülen belgeleri kullanın. Word'ün önceki bir sürümde oluşturulmuş bir belge kullanırsanız, belirli özellikleri belgede devre dışı bırakılacak. Bu özellikleri kullanan kodu yazma çalışırsanız, projenizde hatalarla karşılaşabilirsiniz. Bir belge dönüştürmek için içinde açın [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya Word 2010 üzerinde **dosya** sekmesinde Şerit'te, seçin **bilgisi**, **dönüştürme**.  
+    >  Var olan bir belgeyi kullanırsanız, bir [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] proje, yalnızca içinde oluşturulur veya dönüştürülür belgeleri kullanın [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Benzer şekilde, var olan bir belgeyi bir Word kullanırsanız project 2010, yalnızca içinde oluşturulan veya Word 2010 dönüştürülen belgeleri kullanın. Word'ün önceki bir sürümde oluşturulmuş bir belge kullanırsanız, belirli özellikleri belgede devre dışı bırakılacak. Bu özellikleri kullanan kodu yazma çalışırsanız, projenizde hatalarla karşılaşabilirsiniz. Bir belge dönüştürmek için içinde açın [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya Word 2010 üzerinde **dosya** sekmesinde Şerit'te, seçin **bilgisi** > **dönüştürme**.  
   
 8.  Seçin **son**.  
   
 9. Proje klasöründeki ve onun alt klasörlerindeki aşağıdaki durumlarda Word'de Güven Merkezi'ndeki güvenilir konumlar listesine ekleyin:  
   
-    -   .Docm dosyasını temel alan bir Word belgesi oluşturmak ve belge VBA proje içeriyor ya da Windows Forms denetimleri barındıran. Proje klasörünü güvenilir konumlar listesine ekleme, belge tasarım zamanında beklendiği gibi çalıştığından emin olun yardımcı olur.  
+    -   Temel alan bir Word belgesi oluşturmakta olduğunuz bir *.docm* dosya ve belgenin VBA projesi içerir veya barındıran Windows Forms denetimleri. Proje klasörünü güvenilir konumlar listesine ekleme, belge tasarım zamanında beklendiği gibi çalıştığından emin olun yardımcı olur.  
   
-    -   .Dotx dosyasını temel alan bir Word Şablonu proje oluşturuyorsunuz. Böylece çalıştırın ve projenin hata ayıklamasını proje klasörünü güvenilir konumlar listesine eklemeniz gerekir.  
+    -   Temel alan bir Word Şablonu proje oluşturmakta olduğunuz bir *.dotx* dosya. Böylece çalıştırın ve projenin hata ayıklamasını proje klasörünü güvenilir konumlar listesine eklemeniz gerekir.  
   
      Microsoft Office Online web sitesini güvenilir konumlara bir belge ekleme hakkında daha fazla bilgi için bkz: [oluşturma, kaldırma veya değiştirme dosyalarınız için güvenilir bir konumdayken](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)   
  [Office çözümlerinin işbirlikçi geliştirme](../vsto/collaborative-development-of-office-solutions.md)   
  [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)   
- [VSTO Eklentilerini Programlamaya Başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [VSTO eklentileri programlama kullanmaya başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

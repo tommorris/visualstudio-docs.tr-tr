@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: çalışma sayfalarını veritabanı verileriyle doldurma | Microsoft Docs'
+title: 'Nasıl yapılır: çalışma sayfalarını veritabanı verileriyle doldurma'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,24 +17,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 31f0bd40b38ed85631874556908a41e21b860ecd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc01494f7407fb01b13e9b34c87b037f9ff3d66d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255882"
 ---
-# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Nasıl Yapılır: Çalışma Sayfalarını Veritabanı Verileriyle Doldurma
-  Windows Forms projelerindeki veri erişim aynı şekilde belge düzeyi Office projelerinde verilere erişebilirsiniz. Çözümünüze verileri getirmek için aynı araçları ve kod kullanmak ve verileri görüntülemek için bile Windows Forms denetimleri kullanabilirsiniz. Ayrıca, Microsoft Office Excel olayları ve veri bağlama özelliğiyle geliştirilmiş yerel nesneler olan konak kontrollerinden yararlanabilir. Daha fazla bilgi için bkz: [konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Nasıl yapılır: çalışma sayfalarını veritabanı verileriyle doldurma
+  Windows Forms projelerindeki veri erişim aynı şekilde belge düzeyi Office projelerinde verilere erişebilirsiniz. Çözümünüze verileri getirmek için aynı araçları ve kod kullanmak ve verileri görüntülemek için bile Windows Forms denetimleri kullanabilirsiniz. Ayrıca, Microsoft Office Excel olayları ve veri bağlama özelliğiyle geliştirilmiş yerel nesneler olan konak kontrollerinden yararlanabilir. Daha fazla bilgi için bkz: [konak öğelerini ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- Aşağıdaki örnek bir tasarımcı kullanarak belge düzeyi projelerine verilere bağlı denetimler ekleme gösterir. Verilere bağlı denetimler çalışma zamanında uygulama düzeyi projelerine ekleme konusunda bir örnek için bkz: [izlenecek yol: karmaşık veri bağlamada VSTO eklenti proje](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
+ Aşağıdaki örnek bir tasarımcı kullanarak belge düzeyi projelerine verilere bağlı denetimler ekleme gösterir. Verilere bağlı denetimler çalışma zamanında uygulama düzeyi projelerine ekleme konusunda bir örnek için bkz: [izlenecek yol: karmaşık veri bağlama VSTO eklenti projesindeki](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
   
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz: [nasıl yapmak I: aktarım veri içine bir Excel çalışma?](http://go.microsoft.com/fwlink/?LinkID=130277), ve [nasıl yapmak I: tüketen veritabanı Excel'de veri?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz [I: Aktarım verileri bir Excel çalışma sayfasına nasıl yapılacağı?](http://go.microsoft.com/fwlink/?LinkID=130277), ve [nasıl Excel'de veritabanı verisi I: tüketen musunuz?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
-## <a name="adding-a-data-bound-control-to-a-worksheet-at-design-time"></a>Veri bağlama denetimi çalışma sayfasına tasarım zamanında ekleme  
+## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Veri bağlama denetimi çalışma sayfasına tasarım zamanında ekleme  
   
-#### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Bir veritabanından verilerle çalışma doldurmak için  
+### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Bir veritabanından verilerle çalışma doldurmak için  
   
 1.  Excel belge düzeyi projesindeki Tasarımcısı'nda çalışma açıkken Visual Studio'da açın.  
   
@@ -63,13 +64,13 @@ ms.lasthandoff: 04/16/2018
   
  Projeyi çalıştırdığınızda, denetimi veri kaynağındaki ilk kaydı görüntüler. Kullanabileceğiniz <xref:System.Windows.Forms.BindingSource> kullanıcıların kayıtlar arasında gezinmek.  
   
-#### <a name="to-scroll-through-the-records"></a>Kayıtlar arasında gezinmek için  
+### <a name="to-scroll-through-the-records"></a>Kayıtlar arasında gezinmek için  
   
 -   Kullanım <xref:System.Windows.Forms.BindingSource> gibi yöntemler <xref:System.Windows.Forms.BindingSource.MoveNext%2A> ve <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.  
   
  Türü belirtilmiş veri kümesi ve veritabanı güncellemelerin hakkında daha fazla bilgi için bkz: [nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Yeni veri kaynakları ekleyin](/visualstudio/data-tools/add-new-data-sources)   
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
  [Nasıl yapılır: belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Nasıl yapılır: belgeleri hizmet verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)   
  [Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Nasıl I: Excel çalışma sayfasına veri aktarımı](http://go.microsoft.com/fwlink/?LinkID=130277)   
- [I: Excel'de veritabanı verisi nasıl kullanabilir?](http://go.microsoft.com/fwlink/?LinkID=130287)  
+ [Nasıl I: Aktarım verileri bir Excel çalışma sayfasına?](http://go.microsoft.com/fwlink/?LinkID=130277)   
+ [Nasıl Excel'de veritabanı verisi I: kullanabilir?](http://go.microsoft.com/fwlink/?LinkID=130287)  
   
   

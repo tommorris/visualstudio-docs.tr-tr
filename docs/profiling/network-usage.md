@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 5221b8683a871baec94bea144d22932832cad77e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256090"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP uygulamalarında ağ kullanımını çözümleme
 Visual Studio **ağ** Tanılama aracı kullanılarak yapılan ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](/uwp/api/windows.web.http). Verileri çözümleme, erişim ve kimlik doğrulama sorunları, yanlış önbellek kullanımı ve görüntü gibi sorunları gidermek ve performans indirme yardımcı olabilir.  
@@ -71,8 +72,8 @@ Visual Studio **ağ** Tanılama aracı kullanılarak yapılan ağ işlemleri hak
   
 3.  Yanıt oldukça yazdırma düğme (içinde gövde sekmesi) JSON, XML, HTML, CSS, JavaScript ve TypeScript yanıt yüklerini içeriğin okunabilirliğini artırarak ayrıştırma yardımcı olabilir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırın](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Hata ayıklayıcı ile veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio Günlüğü: Giriş Visual Studio'nun ağ denetleyici](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Kanal 9 Video: VS tanılama araçları - yeni ağ profil oluşturucu](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Visual Studio'da profil oluşturma](../profiling/index.md)  

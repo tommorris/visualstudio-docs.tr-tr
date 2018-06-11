@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c95554c9fe33c24b46cbcf6f501bc9d70ace4c34
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750291"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256155"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Hızlı Başlangıç: Visual Studio (yönetilen kod) CPU kullanım verilerini çözümleme
 
@@ -31,7 +31,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-1. Visual Studio'da, **Dosya > Yeni proje**.
+1. Visual Studio'da, **dosya**>**yeni proje**.
 
 2. Altında **Visual C#** veya **Visual Basic**, seçin **Windows Masaüstü**ve ardından Orta bölmede **konsol uygulaması (.NET Framework)**.
 
@@ -39,7 +39,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
     Visual Studio projesi oluşturur.
 
-2. Program.cs açın ve tüm kodu aşağıdaki kodla değiştirin:
+2. Açık *Program.cs* ve tüm kodu aşağıdaki kodla değiştirin:
 
     ```csharp
     using System;
@@ -158,9 +158,9 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     ```
 
     > [!NOTE]
-    > Visual Basic'te Başlangıç nesnesi ayarlandığından emin olun `Sub Main` (**Özellikler > Uygulama > Başlangıç nesnesi**).
+    > Visual Basic'te Başlangıç nesnesi ayarlandığından emin olun `Sub Main` (**özellikleri**>**uygulama**>**Başlangıç nesnesi**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla
+##  <a name="step-1-collect-profiling-data"></a>1. adım: profil oluşturma verilerini topla
 
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası belirleyerek `Main` işlevi:
 
@@ -179,9 +179,9 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     > [!TIP]
     > İki kesme noktası belirleyerek, çözümlemek istediğiniz kod parçalarını veri toplama sınırlayabilirsiniz.
 
-3.  **Tanılama araçları** penceredir zaten görünür, onu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama / Windows / Tanılama Araçları Göster**.
+3.  **Tanılama araçları** penceredir zaten görünür, onu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama**>**Windows**>**tanılama araçları Göster**.
 
-4.  Tıklatın **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
+4.  Tıklatın **hata ayıklama**>**hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
 
      Uygulama yüklemesi tamamlandığında **Özet** Tanılama Araçları'nın görünümü görüntülenir.
 
@@ -193,7 +193,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
      Seçtiğinizde **kayıt CPU profili**, Visual Studio işlevlerinizi kaydı başlayacak ve aldıkları yürütmek için ne kadar süre ve ayrıca belirli örnekleme oturum kesimlerinde odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafik sağlar. Uygulamanızı bir kesme noktasında durdurulamaz olduğunda, yalnızca bu toplanan verileri görüntüleyebilirsiniz.
 
-6.  İkinci isabetini uygulamayı çalıştırmak için F5'e basın.
+6.  Tuşuna **F5** ikinci isabetini uygulamayı çalıştırmak için.
 
      Şimdi, artık performans verilerini bölge için özellikle uygulamanıza iki kesme noktaları arasında çalışan kod sahipsiniz.
 
@@ -203,7 +203,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="Step2"></a> 2. adım: CPU kullanım verilerini çözümleme
+## <a name="step-2-analyze-cpu-usage-data"></a>2. adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve her biri daha ayrıntılı bir bakış alma verilerinizi incelemeye başlamak öneririz.
 
@@ -235,7 +235,7 @@ CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı
 - [CPU kullanımı analiz](../profiling/cpu-usage.md) CPU kullanımı aracı hakkında daha ayrıntılı bilgi için.
 - -Daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya bir hata ayıklayıcısı ekli olmadan CPU kullanımı analiz [hata ayıklama olmadan profil oluşturma verilerini toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırmak](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da profil oluşturma](../profiling/index.md)
 - [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)

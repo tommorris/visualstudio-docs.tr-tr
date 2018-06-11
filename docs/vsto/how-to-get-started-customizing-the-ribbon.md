@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Şerit özelleştirmeye başlama | Microsoft Docs'
+title: 'Nasıl yapılır: Şerit özelleştirmeye başlama'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 304cf3e9d445bcb655e27e8e35605549f489155c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254611"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>Nasıl Yapılır: Şerit Özelleştirmeye Başlama
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Nasıl yapılır: Şerit özelleştirmeye başlama
   Microsoft Office uygulamasının şeridini özelleştirmek için ekleyin bir **Şerit (Görsel Tasarımcı)** veya **Şerit (XML)** Office proje öğesi.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -71,11 +72,11 @@ ms.lasthandoff: 04/16/2018
   
  Şerit öğesi görünür **Çözüm Gezgini**. Sonraki adımlar hakkında daha fazla bilgi için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Şerit çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Şerit Tasarımcısı](../vsto/ribbon-designer.md)   
  [Şerit XML](../vsto/ribbon-xml.md)   
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [İzlenecek Yol: Şerit XML Kullanarak Özel Sekme Oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [İzlenecek yol: Şerit XML kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

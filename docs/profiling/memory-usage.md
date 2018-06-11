@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f12caeb35e2c5c100069c3a5df066775beb5af3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ecb92c2d17cf0ec80560a8037b15d57f5bf91c52
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255784"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio profil bellek kullanımı
+# <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio’da bellek kullanımının profilini oluşturma
 Bellek sızıntıları ve verimsiz bellek hata ayıklayıcısı ile tümleşik hatalarını ayıkladığınız sırada Bul **bellek kullanımı** tanı aracı. Uygulamanız bir veya daha fazla bellek kullanımı araç sağlar *anlık görüntüleri* nesne türlerini bellek kullanımı etkisini anlamanıza yardımcı olması için yönetilen ve yerel bellek heap öğesinin. .NET, yerel ya da karma mod (.NET ve yerel) uygulamaları anlık görüntüleri toplayabilirsiniz.  
   
  Aşağıdaki grafik gösterir **tanılama araçları** penceresi (Visual Studio 2015 güncelleştirme 1 ve sonraki sürümlerinde kullanılabilir):  
@@ -49,7 +50,7 @@ Bu öğreticide şunları yapacaksınız:
 
 2.  İşlev veya bölge analiz etmek istediğiniz kodu sonunda ikinci bir kesme noktası ayarlayın (veya bir şüpheli bellek sorununu gerçekleştikten sonra).
   
-3.  **Tanılama araçları** penceresi görünür otomatik olarak, bunu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama / Windows / Tanılama Araçları Göster**.
+3.  **Tanılama araçları** penceresi görünür otomatik olarak, bunu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama**>**Windows**>**tanılama araçları Göster**.
 
 4.  Seçin **bellek kullanımı** ile **seçtiğiniz Araçları** araç çubuğunda ayarlama.
 
@@ -62,11 +63,11 @@ Bu öğreticide şunları yapacaksınız:
      ![Tanılama araçları Özet sekmesi](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Bellek anlık görüntüleri, verileri, yerel ya da karma modda uygulamalarınızı hata ayıklama performansını etkileyebilir bellek toplama olduğundan, varsayılan olarak devre dışıdır. Yerel veya karışık mod uygulamaları anlık görüntüleri etkinleştirmek için bir hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görüntülenir, bellek kullanımı sekmesini seçin ve ardından **yığın profil**.  
+     >  Bellek anlık görüntüleri, verileri, yerel ya da karma modda uygulamalarınızı hata ayıklama performansını etkileyebilir bellek toplama olduğundan, varsayılan olarak devre dışıdır. Yerel veya karışık mod uygulamaları anlık görüntüleri etkinleştirmek için bir hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görünür seçin **bellek kullanımı** sekmesini ve ardından **yığın profil**.  
      >   
      >  ![Anlık görüntüler etkinleştiremezsiniz](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Durdur (kısayol tuşu: **Shift + F5**) ve hata ayıklamayı yeniden başlatın.  
+     >  Durdur (kısayol tuşu: **Shift**+**F5**) ve hata ayıklamayı yeniden başlatın.  
 
 6.  Hata ayıklama oturumunun başlangıcında bir anlık görüntüsünü tercih **anlık görüntü Al** üzerinde **bellek kullanımı** Özet araç. (Bu bir kesme noktası burada da ayarlamak için yardımcı olabilir.)
 
@@ -79,7 +80,7 @@ Bu öğreticide şunları yapacaksınız:
 
 7.  Hata ayıklayıcı ilk kesme noktasında duraklatıldığında seçin **anlık görüntü Al** üzerinde **bellek kullanımı** Özet araç.  
 
-8.  İkinci isabetini uygulamayı çalıştırmak için F5'e basın.
+8.  Tuşuna **F5** ikinci isabetini uygulamayı çalıştırmak için.
 
 9.  Şimdi, başka bir anlık görüntü alın.
 
@@ -126,7 +127,7 @@ Bellek kullanımı çözümlemek için ayrıntılı bir rapor bellek kullanımı
   
  ![Örnekler Görünüm](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
- **Örnekleri** görünüm anlık görüntüdeki üst bölmede seçili nesne örneklerini görüntüler. Kök ve başvuru türleri bölmesinde yollara seçilen örnek ve seçilen örnek başvuran türleri başvuru nesneleri görüntüler. Hata ayıklayıcı burada anlık görüntü alındıktan noktada durdurulduğunda, bir araç ipucunda nesnenin değerlerini görüntülemek için Değer hücresini üzerinden gelebilirsiniz.  
+ **Örnekleri** görünüm anlık görüntüdeki üst bölmede seçili nesne örneklerini görüntüler. **Kök yollara** ve **başvurulan nesneler** bölmesi, seçilen örnek ve seçilen örnek başvuran türleri başvuru nesneleri görüntüler. Hata ayıklayıcı burada anlık görüntünün alındığı noktada durdurulduğunda üzerinden gelebilirsiniz **değeri** bir araç ipucunda nesnenin değerlerini görüntülemek için hücre.  
   
 ### <a name="native-type-reports"></a>Yerel tür raporları  
  Geçerli bağlantıyı seçin bir **ayırmaları (fark)** veya **yığın boyutu (fark)** bellek kullanımı özet tablosuna hücre **tanılama araçları** penceresi.  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1ec0171efa5f394551aff8caeb7d8a0622db9207
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 5a8ca3780af4db9a9fe8b59d58f8c2b537c621d8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844813"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255099"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web performans testine veri kaynağı ekleme
 
@@ -34,7 +34,7 @@ ms.locfileid: "34844813"
 
 ## <a name="create-a-sql-database"></a>SQL veritabanı oluşturma
 
-1. Visual Studio Enterprise yoksa, cand karşıdan ondan [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) sayfası.
+1. Visual Studio Enterprise yoksa, cand karşıdan ondan [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) sayfası.
 
 2. Bir SQL veritabanı oluşturun.
 

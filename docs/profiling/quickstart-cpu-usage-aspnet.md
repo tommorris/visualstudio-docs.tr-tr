@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 997ccca0b7bb30638943a6cbd986bbc9a81b7869
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477294"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255807"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: CPU kullanım verileri, Visual Studio (ASP.NET) analiz etme
 
@@ -31,7 +31,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-1. Visual Studio'da, **Dosya > Yeni proje**.
+1. Visual Studio'da, **dosya**>**yeni proje**.
 
 1. Altında **Visual C#**, seçin **Web**ve ardından Orta bölmede **ASP.NET Web uygulaması (.NET Framework)**.
 
@@ -132,7 +132,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     }
     ```
 
-1. Çözüm Gezgini'nde, Controller/HomeControllers.cs açın ve aşağıdaki kodu değiştirin:
+1. Çözüm Gezgini'nde açık *Controller/HomeControllers.cs*ve aşağıdaki kodu değiştirin:
 
     ```csharp
     public ActionResult About()
@@ -156,7 +156,7 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1. adım: profil oluşturma verilerini topla 
+##  <a name="step-1-collect-profiling-data"></a>1. adım: profil oluşturma verilerini topla 
   
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası belirleyerek `Simple` Oluşturucusu:
 
@@ -171,9 +171,9 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
     > [!TIP]
     > İki kesme noktası belirleyerek, çözümlemek istediğiniz kod parçalarını veri toplama sınırlayabilirsiniz.
   
-1.  **Tanılama araçları** penceredir zaten görünür, onu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama / Windows / Tanılama Araçları Göster**.
+1.  **Tanılama araçları** penceredir zaten görünür, onu devre dışı bırakmış sürece. Pencereyi yeniden getirmek için tıklatın **hata ayıklama**>**Windows**>**tanılama araçları Göster**.
 
-1.  Tıklatın **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
+1.  Tıklatın **hata ayıklama**>**hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
 
 1.  Uygulama yükleme bittiğinde, bilgisayarınızı **hakkında** yeni kod başlamasını web sayfasının üst bağlantı.
 
@@ -197,13 +197,13 @@ Tanılama hub'ı çok çalıştırın ve tanılama oturumunuz yönetmek için di
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="Step2"></a> 2. adım: CPU kullanım verilerini çözümleme
+## <a name="step-2-analyze-cpu-usage-data"></a>2. adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve her biri daha ayrıntılı bir bakış alma verilerinizi incelemeye başlamak öneririz.
 
 1. İşlev listesinde en fazla çalışmayı yapan işlevleri inceleyin.
 
-     ![CPU kullanımı sekmesi tanılama araçları](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
+     ![Tanılama araçları CPU kullanımı sekmesi](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
 
     > [!TIP]
     > İşlevler en fazla çalışmayı yapan olanlar başlangıç sırayla listelenir (çağrı sırayla olmadıklarını). Bu en uzun çalışan işlevleri hızla tanımlamanıza yardımcı olur.
@@ -212,7 +212,7 @@ CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı
 
     İşlev çift tıkladığınızda **arayan/Aranan** sol bölmede görünümünü açar. 
 
-    ![Tanılama araçları çağıran Aranan görünümü](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
+    ![Arayan/Aranan görünümü tanılama araçları](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
     Başlık hem de bu görünümde seçili işlevi görüntülenir **geçerli işlevi** kutusunu (`ServerClass::GetNumber`, bu örnekte). Solda'nin altında gösterilen geçerli işlevini çağırdı işlevi **işlevi çağırma**, ve geçerli işlev tarafından çağrılan tüm işlevler gösterilir **çağrılan işlevler** sağdaki kutusu. (Geçerli işlevi değiştirmek için ya da kutusunu seçebilirsiniz.)
 
@@ -229,7 +229,7 @@ CPU kullanımı altında işlevlerin listesi inceleyerek, en fazla çalışmayı
 - [CPU kullanımı analiz](../profiling/cpu-usage.md) CPU kullanımı aracı hakkında daha ayrıntılı bilgi için.
 - -Daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya bir hata ayıklayıcısı ekli olmadan CPU kullanımı analiz [hata ayıklama olmadan profil oluşturma verilerini toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırmak](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
 
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
  [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)

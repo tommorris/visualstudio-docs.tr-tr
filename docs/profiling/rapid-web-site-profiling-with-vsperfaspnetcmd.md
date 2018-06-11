@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c30aebca3fc57912ac1a9bfc6fb16379dda24ed
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 32078c69453a1d569fdba23313917759ff500bd6
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815564"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256077"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profil oluşturma VSPerfASPNETCmd ile hızlı web sitesi
 
@@ -84,7 +84,7 @@ Katman etkileşim verileri ile .NET bellek verileri toplamak için:
 
 **vsperfaspnetcmd /memory**[**: ömrü**] *  */ipucu *** websiteUrl*
 
-## <a name="UsingNoWait"></a> / Nowait seçeneğini kullanma
+## <a name="use-the-nowait-option"></a>/ Nowait seçeneğini kullanın
 
 Varsayılan olarak, sonra Komut İstemi'ni döndürmüyor bir **vsperfaspnetcmd** komutu. Döndürülecek komut istemi zorlamak için aşağıdaki söz dizimini seçeneğini kullanabilirsiniz. Ardından, komut istemi penceresinde diğer işlemler gerçekleştirebilirsiniz. Profil oluşturma sonlandırmak için kullanmak **shutdown** ayrı bir seçeneğinde **vsperfaspnetcmd** komutu.
 

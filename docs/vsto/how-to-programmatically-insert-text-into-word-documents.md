@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257218"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Nasıl yapılır: Word Belgelerine Program Aracılığıyla Metin Ekleme
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme
   Microsoft Office Word belgelerine metin eklemek için başlıca üç yolu vardır:  
   
 -   Metin bir aralıkta ekleyin.  
@@ -39,10 +40,10 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="inserting-text-in-a-range"></a>Bir aralık içinde metin ekleme  
+## <a name="insert-text-in-a-range"></a>Bir aralık içinde metin ekleme  
  Kullanım <xref:Microsoft.Office.Interop.Word.Range.Text%2A> özelliği bir <xref:Microsoft.Office.Interop.Word.Range> bir belgeye metin eklemek için nesne.  
   
-#### <a name="to-insert-text-in-a-range"></a>Bir aralık içinde metin eklemek için  
+### <a name="to-insert-text-in-a-range"></a>Bir aralık içinde metin eklemek için  
   
 1.  Belgenin başlangıcına aralıkta belirtin ve metin eklemek **yeni metin**.  
   
@@ -61,10 +62,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
-## <a name="replacing-text-in-a-range"></a>Bir aralıktaki metin değiştirme  
+## <a name="replace-text-in-a-range"></a>Bir aralıktaki metni Değiştir  
  Belirtilen aralığı metin içeriyorsa, aralıktaki tüm metni eklenen metinle değiştirilir.  
   
-#### <a name="to-replace-text-in-a-range"></a>Bir aralıktaki metni değiştirmek için  
+### <a name="to-replace-text-in-a-range"></a>Bir aralıktaki metni değiştirmek için  
   
 1.  Oluşturma bir <xref:Microsoft.Office.Interop.Word.Range> belgedeki ilk 12 karakter içeren nesne.  
   
@@ -88,10 +89,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
-## <a name="inserting-text-using-typetext"></a>TypeText kullanarak metin ekleme  
+## <a name="insert-text-using-typetext"></a>TypeText kullanarak metin ekleme  
  <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> Yöntemi seçimi metin ekler. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> kullanıcının bilgisayarda ayarlama seçeneklere bağlı olarak farklı şekilde davranır. Aşağıdaki yordamdaki kod bildiren bir <xref:Microsoft.Office.Interop.Word.Selection> nesne değişkeni ve devre dışı bırakır **üzerine yazma** açık değilse seçeneği. Varsa **üzerine yazma** seçeneği etkinleştirilirse, ardından imleci yanındaki herhangi bir metin üzerine yazılır.  
   
-#### <a name="to-insert-text-using-the-typetext-method"></a>TypeText yöntemini kullanarak metin eklemek için  
+### <a name="to-insert-text-using-the-typetext-method"></a>TypeText yöntemini kullanarak metin eklemek için  
   
 1.  Bildirme bir <xref:Microsoft.Office.Interop.Word.Selection> nesne değişkeni.  
   
@@ -120,16 +121,16 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
      [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Aynı zamanda <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Selection> klavyenizde Geri tuşu işlevselliğini taklit eden nesne. Ancak, geldiğinde ekleme ve bir metin değiştirmeye <xref:Microsoft.Office.Interop.Word.Range> nesnesi daha fazla denetim sunar.  
+ Aynı zamanda <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Selection> işlevselliğini taklit eder nesne **geri** klavyenizde anahtar. Ancak, geldiğinde ekleme ve bir metin değiştirmeye <xref:Microsoft.Office.Interop.Word.Range> nesnesi daha fazla denetim sunar.  
   
  Aşağıdaki örnek eksiksiz kodu gösterir. Bu örneği kullanmak için kodu çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.  
   
  [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
  [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: belgelerde metni program aracılığıyla biçimlendirme](../vsto/how-to-programmatically-format-text-in-documents.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Nasıl yapılır: program aracılığıyla, belgelerdeki metni biçimlendirme](../vsto/how-to-programmatically-format-text-in-documents.md)   
  [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: Belgelerde Aralıkları Program Aracılığıyla Genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
+ [Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
   
   

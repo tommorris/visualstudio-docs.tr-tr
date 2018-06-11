@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4e8bacb4d8188667822cd060166f217ba05df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72107c7d4bd072019115ca22d70e57eae75ab261
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255963"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Hızlı Başlangıç: Profil oluşturma araçları ilk bakış
 
@@ -31,7 +32,7 @@ Hata ayıklarken, kullanabileceğiniz **tanılama araçları** penceresi CPU ve 
 
 ![Tanılama araçları özeti görünümü](../profiling/media/prof-tour-cpu-and-memory-graph.gif "tanılama araçları özeti")
 
-**Tanılama araçları** penceresi genellikle tercih edilen yol profili uygulamalara olmakla birlikte, sürüm derlemeleri için ayrıca bir Proje Sonrası Değerlendirme analizi, uygulamanızın yerine yapabilirsiniz. Farklı yaklaşımlar hakkında daha fazla bilgi istiyorsanız, bkz: [çalıştıran profil oluşturma araçları ile veya olmadan Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Farklı uygulama türleri için destek aracı görmek için bkz: [hangi aracı kullanmalıyım?](#tool_support_info).
+**Tanılama araçları** penceresi genellikle tercih edilen yol profili uygulamalara olmakla birlikte, sürüm derlemeleri için ayrıca bir Proje Sonrası Değerlendirme analizi, uygulamanızın yerine yapabilirsiniz. Farklı yaklaşımlar hakkında daha fazla bilgi istiyorsanız, bkz: [Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırmak](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Farklı uygulama türleri için destek aracı görmek için bkz: [hangi aracı kullanmalıyım?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>CPU kullanımı analiz
 
@@ -51,9 +52,9 @@ Aracı en verimli şekilde kullanmak için tek başına diğeri işlevi sonuna v
 
 ![Tanılama araçları çağıran seçili Aranan "bölümü" view](../profiling/media/prof-tour-cpu-usage-caller-callee.png "tanılama araçları çağıran Aranan görünümü")
 
-## <a name="analyze-memory-usage"></a>Bellek kullanımını çözümleme
+## <a name="analyze-memory-usage"></a>Bellek kullanımını analiz etme
 
-Tanılama araçları penceresini bellek kullanımı, uygulamanızda değerlendirmek sağlar. Örneğin, öbek üzerinde sayısını ve boyutunu nesnelerin bakabilirsiniz. Daha ayrıntılı bellek çözümlemek için yönergeler için bkz: [bellek kullanımını çözümleme](../profiling/memory-usage.md).
+**Tanılama araçları** penceresi de bellek kullanımı, uygulamanızda değerlendirmek olanak tanır. Örneğin, öbek üzerinde sayısını ve boyutunu nesnelerin bakabilirsiniz. Daha ayrıntılı bellek çözümlemek için yönergeler için bkz: [bellek kullanımını çözümleme](../profiling/memory-usage.md).
 
 Bellek kullanımını analiz etmek için hata ayıklarken en az bir bellek anlık görüntüsünü gerekir. Genellikle, bellek analiz etmek için en iyi iki anlık görüntülerini almak için yoludur; ilk hemen şüpheli bellek sorununu önce ve şüpheli bellek sorununu gerçekleştikten sonra ikinci bir anlık görüntü sağ. Ardından iki anlık görüntüyü bir fark görüntüleyin ve tam olarak nelerin değiştiğini bakın.
 
@@ -80,17 +81,17 @@ Aynı olayları da PerfTips görüntüleyebilirsiniz Kod düzenleyicisinde göst
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI performans ve erişilebilirlik olayları (UWP) inceleyin
 
-UWP uygulamalarınızda etkinleştirmeniz **UI analiz** tanılama araçları penceresindeki. Aracı için genel performans veya erişilebilirlik sorunları arar ve bunları görüntüler **olayları** hata ayıklarken görüntüleyin. Olay açıklamaları sorunları gidermek yardımcı olabilecek bilgiler sağlar.
+UWP uygulamalarınızda etkinleştirmeniz **UI analiz** içinde **tanılama araçları** penceresi. Aracı için genel performans veya erişilebilirlik sorunları arar ve bunları görüntüler **olayları** hata ayıklarken görüntüleyin. Olay açıklamaları sorunları gidermek yardımcı olabilecek bilgiler sağlar.
 
 ![Tanılama araçları UI çözümleme olayları görüntülemek](../profiling/media/prof-tour-ui-analysis.png "tanılama araçları UI analiz olaylarını görüntüle")
 
 ## <a name="profile-release-builds-without-the-debugger"></a>Hata Ayıklayıcı olmadan profili yayın derlemeleri
 
-Profil CPU kullanımı ve bellek kullanımını hata ayıklayıcısını kullanmaya kullanılabilir gibi araçları (önceki bölümlerde bakın) veya profil oluşturma araçları için analiz sağlamaya yönelik performans Profiler kullanarak çalıştırabilirsiniz **sürüm** oluşturur. Performans Profil Oluşturucusu'nda Uygulama çalışırken tanılama bilgisi toplamak ve uygulama durdurulduktan sonra toplanan bilgileri inceleyin. Bu farklı yaklaşımlar hakkında daha fazla bilgi için bkz: [çalıştıran profil oluşturma araçları ile veya olmadan Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Profil CPU kullanımı ve bellek kullanımını hata ayıklayıcısını kullanmaya kullanılabilir gibi araçları (önceki bölümlerde bakın) veya profil oluşturma araçları için analiz sağlamaya yönelik performans Profiler kullanarak çalıştırabilirsiniz **sürüm** oluşturur. Performans Profil Oluşturucusu'nda Uygulama çalışırken tanılama bilgisi toplamak ve uygulama durdurulduktan sonra toplanan bilgileri inceleyin. Bu farklı yaklaşımlar hakkında daha fazla bilgi için bkz: [Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırmak](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 ![Performans Profil Oluşturucu](../profiling/media/prof-tour-performance-profiler.png "Performans Profil Oluşturucu")
 
-Performans Profil Oluşturucu seçerek açın **hata ayıklama / Performans Profil Oluşturucu**.
+Performans Profil Oluşturucu seçerek açın **hata ayıklama**>**Performans Profil Oluşturucu**.
 
 Pencerenin bazı senaryolarda birden çok profil oluşturma araçları seçmenize olanak sağlayacaktır. CPU kullanımı gibi araçlar, çözümlemede yardımcı olmak için kullanabileceğiniz tamamlayıcı veri sağlayabilir.
 
@@ -146,7 +147,7 @@ CPU kullanımı veya bellek kullanımı araçları şu anda mevcut olmayan araç
 
 ![Performans Gezgini aracı](../profiling/media/prof-tour-performance-explorer.png "performans Gezgini")
 
-## <a name="tool_support_info"></a>Hangi aracı kullanmalıyım?  
+## <a name="which-tool-should-i-use"></a>Hangi aracı kullanmalıyım?  
 
 Visual Studio sunar farklı araçlar listeleyen bir tablo işte ve farklı proje türleri ile kullanabilmek için:
   
@@ -166,5 +167,5 @@ Visual Studio sunar farklı araçlar listeleyen bir tablo işte ve farklı proje
 > [!NOTE]
 > .NET Core ve ASP.NET Core için CPU kullanımını aracı taşınabilir PBDs ile doğru sonuçlar şu anda sağlamaz. Bunun yerine tam pdb kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)

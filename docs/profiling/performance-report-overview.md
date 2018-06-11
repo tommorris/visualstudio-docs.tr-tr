@@ -14,19 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255999"
 ---
 # <a name="performance-report-overview"></a>Performans Raporu genel bakış
 Profil oluşturma verileri performans oturumun görüntüleyebilirsiniz **performans raporu** Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamı (IDE) penceresi. Profil oluşturma verileri .vsp ve .vsps dosyalarında kaydedilir. Rapor görünümü windows görüntülemek ve uygulama performans sorunları çözümlemek etkinleştirin.  
   
 > [!CAUTION]
->  Profil oluşturma veri dosyası, bilgisayar adı gibi hassas bilgileri, işletim sistemi, dosya yolları, bellek bilgileri ve diğer bilgisayar kurulum bilgileri sürümünü içerir. Dağıtım hem yerel .vsp biçimiyle hem de bir .csv veya bir .xml dosyasına dışarı aktardığınızda verilerin katı denetime korumanız gerekir.  
+>  Profil oluşturma veri dosyası, bilgisayar adı gibi hassas bilgileri, işletim sistemi, dosya yolları, bellek bilgileri ve diğer bilgisayar kurulum bilgileri sürümünü içerir. Verileri hem de kendi yerel dağıtım katı denetime korumanız gerekir. *vsp* biçimi ve için dışarı aktarılmasından bir. *CSV* veya. *XML* dosya.  
 >   
->  Olay izleme verileri performans oturumun bir parçası olarak toplanır, olay izleme (.etl) günlük dosyası ek bilgi görünebilir. Bu bilgiler, etki alanı ve kullanıcı adınızı içerir; Bu nedenle, günlük dosyasının dağıtım katı denetime korumanız gerekir.  
+>  Olay izleme verileri performans oturumun bir parçası olarak toplanır, ek bilgiler olay izleme günlüğü görünebilir (. *etl*) dosyası. Bu bilgiler, etki alanı ve kullanıcı adınızı içerir; Bu nedenle, günlük dosyasının dağıtım katı denetime korumanız gerekir.  
   
 ## <a name="performance-report-window"></a>Performans Raporu penceresi  
  Performans rapor penceresini görüntülemek, yönetmek ve performans verilerini filtrelemek için kullanılan bir araç penceresi ve özelleştirilebilir sorgu denetimi içerir.  
@@ -70,7 +71,7 @@ Profil oluşturma verileri performans oturumun görüntüleyebilirsiniz **perfor
  Yönerge işaretçisi görünümünü örnekleme profili oluşturma sırasında yürütüldü özel yönergeler görüntülemenizi sağlar. Daha fazla bilgi için bkz: [yönerge işaretçileri (IP) görünümü](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Ayırma görünümü  
- Ayırma görünümü kullanılabilir değilse **toplamak .NET nesne ayırma** üzerinde seçilmedi **genel** sayfasında **Performans oturumunu** Özellikleri iletişim kutusu. Bkz: [performans oturumuna genel bakış](../profiling/performance-session-overview.md). Ayırma görünümü uygulama veya bileşen tarafından ayrılan .NET nesneleri listeler. Bir nesne satır genişletildiğinde çağrı ağacı görüntülenir. Çağrı ağacı nesne oluşturulmasında sonuçlandı yürütme yolları gösterilmektedir. Her işlev çağrısı ağacında (bunlar dahil) ve özel ayırmalarının sayısı hakkında bilgiler de görüntülenir. Ayırma görünümü de genişletin ve en büyük sayı nesnelerin ayrılmış bir işlevin yürütme yolu vurgulayın. En etkin yol görüntülenecek işlevi sağ tıklayın ve ardından **genişletin etkin yolunuzda**. Daha fazla bilgi için bkz: [toplama .NET bellek ayırma ve yaşam verisi](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) ve [ayırmalar görünümü](../profiling/dotnet-memory-allocations-view.md).  
+ Ayırma görünümü kullanılabilir değilse **toplamak .NET nesne ayırma** üzerinde seçilmedi **genel** sayfasında **Performans oturumunu** Özellikleri iletişim kutusu. Bkz: [performans oturumuna genel bakış](../profiling/performance-session-overview.md). Ayırma görünümü uygulama veya bileşen tarafından ayrılan .NET nesneleri listeler. Bir nesne satır genişletildiğinde çağrı ağacı görüntülenir. Çağrı ağacı nesne oluşturulmasında sonuçlandı yürütme yolları gösterilmektedir. Her işlev çağrısı ağacında (bunlar dahil) ve özel ayırmalarının sayısı hakkında bilgiler de görüntülenir. Ayırma görünümü de genişletin ve en büyük sayı nesnelerin ayrılmış bir işlevin yürütme yolu vurgulayın. En etkin yol görüntülenecek işlevi sağ tıklayın ve ardından **genişletin etkin yolunuzda**. Daha fazla bilgi için bkz: [toplamak .NET bellek ayırma ve yaşam süresi verileri](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) ve [ayırmalar görünümü](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Nesne ömrü görünümü  
  Nesne ömrü görünümü kullanılabilir değilse **toplamak .NET nesne ayırma bilgileri** ve **ayrıca .NET nesne ömrü bilgileri toplamak** üzerinde seçilmedi **genel**sayfasında **Performans oturumunu** Özellikleri iletişim kutusu.  
@@ -94,6 +95,6 @@ Profil oluşturma verileri performans oturumun görüntüleyebilirsiniz **perfor
   
 -   **Dışarı aktarma** -geçerli raporda kaydeder. CVS biçimlendirilmiş veya. XML biçimli dosya için farklı görünümleri kaydetmek için seçeneklere sahip.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Araçları verilerini performansını analiz etme](../profiling/analyzing-performance-tools-data.md)   
- [Performans Raporu Görünümleri](../profiling/performance-report-views.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Performans araçları verilerini çözümleme](../profiling/analyzing-performance-tools-data.md)   
+ [Performans rapor görünümleri](../profiling/performance-report-views.md)

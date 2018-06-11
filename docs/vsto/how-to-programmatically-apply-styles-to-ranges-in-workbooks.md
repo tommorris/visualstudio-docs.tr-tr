@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki aralıklara stilleri uygulamak | Microsoft Docs'
+title: 'Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki aralıklara stilleri uygulayın'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14fd6ddc049214439a69fa3fabf0140256755da3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1fd06384febf4e886c28bd4811d10413e0eeb54
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256646"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Nasıl yapılır: Program Aracılığıyla Çalışma Kitaplarındaki Aralıklara Biçimler Uygulama
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki aralıklara stilleri uygulayın
   Çalışma kitaplarında bulunan bölgelere adlandırılmış stiller uygulayabilirsiniz. Excel bir dizi önceden tanımlanmış stil sağlar.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
  **Hücreleri Biçimlendir** hücreleri biçimlendirmek için kullanabileceğiniz tüm seçenekler iletişim kutusu görüntüler ve bu seçeneklerin her biri kodunuzdan kullanılabilir. Excel'de bu iletişim kutusunu görüntülemek için tıklatın **hücreleri** üzerinde **biçimi** menüsü.  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>Belge düzeyi özelleştirmelerinde adlandırılmış bir aralık bir stil uygulamak için  
+## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>Belge düzeyi özelleştirmelerinde adlandırılmış bir aralık bir stil uygulamak için  
   
 1.  Yeni bir stil oluşturun ve özniteliklerini ayarlayın.  
   
@@ -42,14 +43,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#54)]
      [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>Belge düzeyi özelleştirmelerinde adlandırılmış bir aralık'nden bir stil temizlemek için  
+## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>Belge düzeyi özelleştirmelerinde adlandırılmış bir aralık'nden bir stil temizlemek için  
   
 1.  Normal stili aralığa uygular. Bu kod sayfa sınıfında değil yerleştirilmelidir `ThisWorkbook` sınıfı.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#55)]
      [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>Bir VSTO eklentisi adlandırılmış aralıkta bir stil uygulamak için  
+## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>Bir VSTO eklentisi adlandırılmış aralıkta bir stil uygulamak için  
   
 1.  Yeni bir stil oluşturun ve özniteliklerini ayarlayın.  
   
@@ -61,17 +62,17 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-an-vsto-add-in"></a>Bir VSTO eklenti adlandırılmış aralıkta'nden bir stil temizlemek için  
+## <a name="to-clear-a-style-from-a-named-range-in-an-vsto-add-in"></a>Bir VSTO eklenti adlandırılmış aralıkta'nden bir stil temizlemek için  
   
 1.  Normal stili aralığa uygular.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Aralıklarla çalışma](../vsto/working-with-ranges.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Aralıkları ile çalışma](../vsto/working-with-ranges.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
  [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)   
- [Office Çözümlerinde İsteğe Bağlı Parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
   
   

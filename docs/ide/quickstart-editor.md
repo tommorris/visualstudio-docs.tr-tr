@@ -11,18 +11,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8231b36f2fe44a04e16b420eb13bfcc4eb30c696
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 29768717144efef9c843abb5e0e3e6e81817895d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573290"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255729"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Hızlı Başlangıç: Kod Düzenleyicisi'ni kullanın
 
 Bu 10 dakikalık girişte düzenleyiciye, Visual Studio yazma, gezinme ve kodu daha kolay anlama yapar yollardan bazılarını aramak için bir dosya için kod ekleyeceğiz.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 Bu hızlı başlangıç bir programlama dili ile bilginiz varsayar. Yoksa, önerdiğimiz programlama quickstarts birini ilk bakış, gibi bir web uygulaması ile oluşturma [Python](../ide/quickstart-python.md) veya [C#](../ide/tutorial-csharp-aspnet-core.md), veya bir konsol uygulaması ile oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 

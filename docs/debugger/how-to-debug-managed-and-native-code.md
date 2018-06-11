@@ -1,6 +1,6 @@
 ---
-title: 'Öğretici: yönetilen ve yerel kodda hata ayıklama | Microsoft Docs'
-description: .NET Core veya .NET Framework uygulamasından yerel DLL'i hata ayıklama öğrenin
+title: 'Öğretici: hata ayıklama yönetilen ve yerel kodu (karma mod)'
+description: Yerel bir .NET Core veya .NET Framework uygulamasına karışık modda hata ayıklama kullanarak DLL'den hata ayıklama öğrenin
 ms.custom: ''
 ms.date: 04/27/2018
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 96634ddabdf955fd969d9c004c6d3b83d1e56a92
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764559"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255200"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Öğretici: Visual Studio yönetilen ve yerel kodda hata ayıklama
 

@@ -12,16 +12,16 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4d353e6a9f52a11821799e6d20ec26bcb0045a71
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748757"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257479"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>.NET geliştiricileri için Visual Studio 2017 üretkenlik Kılavuzu
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) geliştiriciler her zamankinden daha verimli hale getirir! Biz, performans ve güvenilirlik çözüm başlangıç ve yük, test bulma ve gecikme yazmak için geliştirilmiş. Ayrıca eklenen artık ve Gelişmiş özellikleri daha iyi bir kod daha hızlı yazmanıza yardımcı olacak. Bu özelliklerden bazıları şunlardır: Gezinti decompiled derlemelerine, değişken adı önerileri siz yazarken, hiyerarşi görünümünde **Test Gezgini**, tüm gidin (**Ctrl** +  **T**) dosyası/tür/üye/simgesi bildirimi, bir akıllı gitmek için **özel durum Yardımcısı**, kod stili yapılandırma ve zorlama ve birçok yapan yeniden düzenlemeler ve kod düzeltmeler.
+[Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) geliştiriciler her zamankinden daha verimli hale getirir! Biz, performans ve güvenilirlik çözüm başlangıç ve yük, test bulma ve gecikme yazmak için geliştirilmiş. Ayrıca eklenen artık ve Gelişmiş özellikleri daha iyi bir kod daha hızlı yazmanıza yardımcı olacak. Bu özelliklerden bazıları şunlardır: Gezinti decompiled derlemelerine, değişken adı önerileri siz yazarken, hiyerarşi görünümünde **Test Gezgini**, tüm gidin (**Ctrl** +  **T**) dosyası/tür/üye/simgesi bildirimi, bir akıllı gitmek için **özel durum Yardımcısı**, kod stili yapılandırma ve zorlama ve birçok yapan yeniden düzenlemeler ve kod düzeltmeler.
 
 Üretkenliğinizi en iyi duruma getirmek için bu kılavuzu uygulayın.
 

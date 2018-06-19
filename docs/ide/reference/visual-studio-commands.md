@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951797"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio Komutları
 Visual Studio komutları bir komuttan çağrılacak izin **komutu** penceresinde **hemen** penceresinde veya **Bul/komut** kutusu. Her durumda, büyüktür işareti (`>`) bir arama ya da hata ayıklama işlemi yerine bir komut izlemek için olduğunu belirtmek için kullanılır.

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448093"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Yapı özelleştirebilir ve görevler "Klasör Aç" geliştirme için hata ayıklama
 

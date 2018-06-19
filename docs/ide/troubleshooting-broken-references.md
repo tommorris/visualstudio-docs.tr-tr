@@ -20,6 +20,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064356"
 ---
 # <a name="troubleshoot-broken-references"></a>Bozuk başvurularda sorun giderme
 

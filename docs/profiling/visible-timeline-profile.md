@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447706"
 ---
 # <a name="visible-timeline-profile"></a>Görünür zaman çizelgesi profili
 Görünür zaman çizelgesi profili iş parçacığı engelleme görünümü için istatistiksel bilgileri ve raporlar için bağlantılar sağlar. Yakınlaştırma, uzaklaştırmak, yatay kaydırma, kanalları Gizle veya kanalları Göster gibi etkin göstergeyi numaralarında şu anda görünümünde nedir yansıtacak şekilde değiştirin. Göstergede bir öğesiyle ilgili bir raporu görüntülemek için öğeyi tıklatın.  

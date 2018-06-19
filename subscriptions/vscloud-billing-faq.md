@@ -14,6 +14,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957138"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>SSS faturalama visual Studio bulut abonelikleri
 Emin olun [bulut aboneliği avantajları karşılaştırın ve fiyatlandırma](https://www.visualstudio.com/vs/pricing/) abonelikle Bulut ve standart Visual Studio abonelikleri arasındaki karşılaştırmaları abone Avantajlarınızı ayrıntıları her Visual Studio yararları anlamak için ve daha fazlası.

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262388"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;eklentisi&gt; öğesi (Visual Studio'da Office Geliştirme)
   **Eklentisi** öğesinin `vstav3` ad alanı, Microsoft Office VSTO eklentileri ve Visual Studio ile geliştirilen belge düzeyi özelleştirmeleri özgü bilgileri içerir.  

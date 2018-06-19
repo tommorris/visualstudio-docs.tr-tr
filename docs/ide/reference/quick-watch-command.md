@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703963"
 ---
 # <a name="quick-watch-command"></a>Hızlı Bakış Komutu
 İfade alanında seçilen ya da belirtilen metni görüntüleyen [QuickWatch](../../debugger/watch-and-quickwatch-windows.md) penceresi. Bir değişken veya hata ayıklayıcı ya da bir kaydın içeriğini tarafından tanınan ifadesi geçerli değerini hesaplamak için bu iletişim kutusunu kullanın. Ayrıca, herhangi bir sabit olmayan değişken değeri veya tüm kayıt içeriğini değiştirebilirsiniz.

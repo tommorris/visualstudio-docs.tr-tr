@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953998"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 İçinde etki alanına özgü dil (DSL) penceresinin davranış ve görünümünü özelleştirebilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. DSL tanımınızı her etki alanı sınıf üzerinde etki alanı özellikleri tanımlayın. Sınıfının bir örneği, diyagram veya Model Gezgini'nde seçtiğinizde varsayılan olarak, her etki alanı özelliği Özellikler penceresinde listelenir. Bunları diyagramda şekli alanlara eşlenmedi olsa bile bu bakın ve etki alanı özelliklerinin değerlerini düzenlemenizi sağlar.

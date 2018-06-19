@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262629"
 ---
 # <a name="filter-report-views"></a>Rapor görünümlerini filtreleme
 Profil oluşturma veri dosyalarıyla performans raporu görünümlerde görüntülenmesi ve verilen rapor dosyaları için profil oluşturma verileri sınırlamak için için filtreler uygulayabilirsiniz. Belirli işlemleri ve iş parçacıklarını verileri sınırlayabilir ve zaman damgası değerlerini arasındaki verileri için bir rapor sınırlayabilirsiniz. Dosya filtreleri Kaydet ve kaydedilmiş filtre içeri aktararak Bu filtre farklı bir profil oluşturma veri dosyası oluşturun.  

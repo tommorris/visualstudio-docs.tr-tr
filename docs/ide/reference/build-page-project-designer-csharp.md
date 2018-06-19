@@ -20,6 +20,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103495"
 ---
 # <a name="build-page-project-designer-c"></a>Derleme Sayfası, Proje Tasarımcısı (C#)
 Kullanım **yapı** sayfasında **Proje Tasarımcısı** projenin yapı yapılandırma özelliklerini belirtmek için. Bu sayfayı uygulandığı [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] yalnızca projeleri.

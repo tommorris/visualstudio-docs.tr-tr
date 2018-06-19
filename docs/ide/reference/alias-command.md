@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703411"
 ---
 # <a name="alias-command"></a>Diğer Ad Komutu
 Tam komut, tam komut ve bağımsız değişkenler için yeni bir diğer ad veya başka bir diğer ad oluşturur.

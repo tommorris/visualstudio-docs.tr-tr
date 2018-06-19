@@ -24,6 +24,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425163"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>İzlenecek yol: bir kod parçacığı oluşturma
 Kod parçacığı ile yalnızca birkaç adımda oluşturabilirsiniz. Tüm yapmanız gereken olan XML dosyası oluşturma, uygun öğeleri doldurun ve kodunuzu ekleyin. Kodunuzu başvuruları ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacığını kullanarak Visual Studio yüklemenizin ekleyebilmeniz için **alma** düğmesini **kod parçacıkları Yöneticisi** (**Araçları**  >   **Kod parçacıkları Yöneticisi**).

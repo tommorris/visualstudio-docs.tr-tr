@@ -40,6 +40,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448720"
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
   Her Office proje şablonu otomatik olarak birçok olay işleyicisi oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri VSTO eklentileri için olay işleyicileri biraz farklıdır.  

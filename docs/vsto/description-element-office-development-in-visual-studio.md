@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265121"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Açıklama&gt; öğesi (Visual Studio'da Office Geliştirme)
   `description` Öğesinin `vstov4` ad alanı, Microsoft Office uygulamaları COM eklentileri iletişim kutusunda görünür Office çözümü açıklamasını depolar.  

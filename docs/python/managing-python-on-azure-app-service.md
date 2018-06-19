@@ -17,6 +17,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33877001"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Azure App Service'te bir Python ortamı kurma
 

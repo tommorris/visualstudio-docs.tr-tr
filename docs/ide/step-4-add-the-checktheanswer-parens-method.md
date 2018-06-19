@@ -16,6 +16,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064525"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4. adım: CheckTheAnswer() yöntemi ekleme
 Bu öğreticinin dördüncü bölümünde bir yöntem yazacaksınız `CheckTheAnswer()`, matematik sorunlara yanıtlar doğru olup olmadığını belirler. Bu konuda bir öğretici serisi kodlama temel kavramları hakkında bir parçasıdır. Öğretici genel bakış için bkz: [Eğitmen 2: zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571012"
 ---
 # <a name="msbuild-response-files"></a>MSBuild Yanıt Dosyaları
 Yanıt (.rsp) dosyaları MSBuild.exe komut satırı anahtarları içeren metin dosyalarıdır. Her anahtar ayrı bir satırda veya tüm anahtarları tek bir satırda olabilir. Yorum Satırları ile başlayan bir **#** simgesi. **@** Anahtar MSBuild.exe için başka bir yanıt dosyası geçirmek için kullanılır.  

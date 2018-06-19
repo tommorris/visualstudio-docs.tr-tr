@@ -14,6 +14,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575565"
 ---
 # <a name="gpu-usage"></a>GPU Kullanımı
 Visual Studio performans ve tanılama hub'ı GPU kullanım aracını daha iyi Direct3D uygulamanızı üst düzey donanım kullanımını anlayın. Uygulamanızın performansını CPU bağımlı veya platformun donanım daha etkili bir şekilde nasıl kullanabileceğinizi içine GPU bağlanmış ve kazanç Insight olup olmadığını belirlemek için kullanabilirsiniz. GPU kullanımı Direct3D 12, Direct3D 11 ve Direct3D 10 kullanan uygulamaları destekler; diğer grafik Direct2D veya OpenGL gibi API'leri desteklemez.  

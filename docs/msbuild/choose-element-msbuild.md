@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569527"
 ---
 # <a name="choose-element-msbuild"></a>Öğe Seç (MSBuild)
 Bir grubu seçmek için alt öğeler değerlendirir `ItemGroup` öğeleri ve/veya `PropertyGroup` değerlendirmek için öğeleri.  

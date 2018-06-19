@@ -20,6 +20,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548433"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Genel başvuru (Visual Studio'da Office Geliştirme)
   Bu bölümde, Visual Studio'daki Microsoft Office Project hakkında teknik ayrıntılar içerir.  

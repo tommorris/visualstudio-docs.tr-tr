@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566192"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Komut Satırından ClickOnce Uygulamalarını Derleme
 İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], tümleşik geliştirme ortamı (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. İle oluşturulmuş bir projeyi yeniden aslında, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yalnızca sahip başka bir bilgisayarda [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yüklü. Bu, otomatik bir işlem kullanarak bir yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar Gelişmiş ya da kullanarak teknikleri projeyi oluşturmayı kapsamı dışında.  

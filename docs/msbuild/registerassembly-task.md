@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569361"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly Görevi
 Belirtilen derlemedeki meta verileri okur ve gerekli girişleri oluşturmak COM istemcileri veren kayıt defterine ekler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] saydam sınıfları. Bu görev davranışını benzer, ancak aynı, [Regasm.exe (derleme kayıt aracı)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  

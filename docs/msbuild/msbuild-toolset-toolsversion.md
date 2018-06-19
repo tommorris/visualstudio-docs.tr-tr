@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578893"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 MSBuild araç takımı görevleri, hedefler ve araçları, bir uygulama oluşturmak için kullanır. Genellikle, MSBuild araç takımı microsoft.common.tasks dosya, microsoft.common.targets dosya ve csc.exe ve vbc.exe gibi derleyicileri içerir. Çoğu Toolsets, .NET Framework'ün birden fazla sürümünü ve birden fazla sistem platformu uygulamaları derlemek için kullanılabilir. Ancak, MSBuild 2.0 araç takımı, yalnızca .NET Framework 2.0 hedeflemek için kullanılabilir.  

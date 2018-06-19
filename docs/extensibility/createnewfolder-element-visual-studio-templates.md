@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108368"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder Öğesi (Visual Studio Şablonları)
 Proje oluşturulup olduğu hedef dizini yok denetlenip denetlenmeyeceğini belirler. Dizini mevcut değilse yeni bir dizin proje için oluşturulabilir. Bu ayar genellikle tarafından geçersiz kılınır `NewProjectRequiresNewFolder(VsTemplate)` kayıt bayrağı (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) tüm ortak proje türleri yeni bir dizinde yeni bir proje oluşturulup oluşturulmayacağını belirlemek için kullanın.  

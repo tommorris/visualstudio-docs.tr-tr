@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125524"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 Bu yapı (genellikle bir işlev veya yöntem) kapsam içinde yerel değişkenin adresini temsil eder.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578737"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Derleme Bağlayıcı) Görevi
 AL görevi AL.exe, ile dağıtılmış bir aracı sarmalar [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Bu derleme bağlayıcı aracı, bir derlemeyi ya da modüller bir veya daha fazla dosya veya kaynak dosyaları bildirimden oluşturmak için kullanılır. Bu görevi doğrudan kullanmak gerekli olan genelde şekilde derleyicileri ve geliştirme ortamlarını zaten bu yetenekleri sağlayabilir. Derleme Bağlayıcı tek bir derleme karışık dil geliştirme üretilen olanlar gibi birden çok bileşen dosyaları oluşturmak ihtiyaç duyan geliştiriciler için kullanışlıdır. Bu görev, bir tek derleme dosyasına modülleri birleştirmek değil; tek tek modülleri hala dağıtılmış ve doğru bir şekilde yüklemek sonuçta elde edilen derleme sırada kullanılabilir olması gerekir. AL.exe hakkında daha fazla bilgi için bkz: [Al.exe (derleme bağlayıcı)](/dotnet/framework/tools/al-exe-assembly-linker).  

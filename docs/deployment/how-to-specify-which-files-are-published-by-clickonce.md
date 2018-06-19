@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561421"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Nasıl yapılır: ClickOnce Tarafından Hangi Dosyaların Yayımlandığını Belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projedeki uygulama, tüm kod olmayan dosyalar uygulama ile birlikte dağıtılır. Bazı durumlarda, değil istediğiniz veya belirli dosyaları yayımlamanız gerekir veya koşullara göre belirli dosyaları yüklemek isteyebilirsiniz. Visual Studio dosyaları dışarıda bırak, dosyaları veri dosyası veya önkoşul işaretlemek ve koşullu yüklemek için dosya grupları oluşturmak için özellikleri sağlar.  

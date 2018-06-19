@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109811"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>İfade değerlendirme (Visual Studio SDK hata ayıklama)
 Kesme modunda IDE programınızın çeşitli değişkenler içeren basit ifadeler değerlendirebilir olması gerekir. Hata ayıklama altyapısı (DE), bunu başarmak için ayrıştırma ve IDE windows birine girilen bir ifade değerlendirme kurabilmesi gerekir.  

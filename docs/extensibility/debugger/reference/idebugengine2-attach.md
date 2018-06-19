@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107926"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Hata ayıklama altyapısı (DE), bir program veya programlar ekler. Gizle çalışan işlem içi olarak SDM olduğunda (SDM) oturum hata ayıklama Yöneticisi tarafından çağrılır.  

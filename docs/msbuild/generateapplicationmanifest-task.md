@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575325"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest Görevi
 Oluşturan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşen için benzersiz bir kimlik tanımlayarak ve tüm derlemeleri ve yedekleme bileşeni olun dosyaları tanımlayan bir bileşen açıklar. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi uygulamanın giriş noktası belirten ve uygulama güvenlik düzeyi belirterek yerel bir bildirim genişletir.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578419"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Nasıl Yapılır: Hedefleri ve Görevleri Yapılandırma
 Seçili MSBuild görevleri, bunlar geliştirme bilgisayar ortamı bağımsız olarak hedef ortamdaki çalıştırmak için ayarlanabilir. Örneğin, bu hedefleri 32-bit mimari bir uygulama oluşturmak için bir 64-bit bilgisayarda kullandığınızda, seçili görevleri bir 32 bit işlemde çalıştırılır.  

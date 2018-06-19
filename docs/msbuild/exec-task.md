@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569693"
 ---
 # <a name="exec-task"></a>Yürütme Görevi
 Belirtilen program veya komut belirtilen bağımsız değişkenler kullanılarak çalıştırılır.  

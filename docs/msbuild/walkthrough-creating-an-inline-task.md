@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575799"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>İzlenecek Yol: Satır İçi Göre Oluşturma
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. .NET Framework sürüm 4 ile başlayarak, proje dosyasında görevleri satır içi oluşturabilirsiniz. Görev barındırmak için ayrı bir derleme oluşturmak zorunda değildir. Daha fazla bilgi için bkz: [satır içi görevleri](../msbuild/msbuild-inline-tasks.md).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113051"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Bir benzersiz kimliği veya bu nesne için diğer ad oluşturur veya mevcut bir diğer adı döndürür.  

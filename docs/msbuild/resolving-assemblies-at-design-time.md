@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574476"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Tasarım Zamanında Derlemeleri Çözme
 Bir derleme başvurusu Ekle iletişim kutusunun .NET sekmesi aracılığıyla başvuru eklediğinizde, başvuru Ara başvuru bütünleştirilmiş türü ve imza tüm bilgileri içeren, ancak, mutlaka içermediğinden bir derlemeyi başka bir deyişle, gösterir. kod. .NET sekmesi, .NET Framework çalışma zamanı derlemeleri karşılık başvuru derlemeleri listeler. Ayrıca, çalışma zamanı derlemeleri üçüncü taraflar tarafından kullanılan kayıtlı AssemblyFoldersEx klasörlerde karşılık başvuru derlemeleri listeler.  

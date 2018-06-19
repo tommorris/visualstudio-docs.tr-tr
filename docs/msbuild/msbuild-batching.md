@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570635"
 ---
 # <a name="msbuild-batching"></a>MSBuild Toplu İşleme
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listelerini farklı kategorileri veya toplu işlemi bölme yeteneği, öğe meta verileri temel alarak ve bir hedef ya da görev her batch ile bir kez çalıştırın.  

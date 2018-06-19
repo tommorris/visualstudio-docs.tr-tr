@@ -1,8 +1,8 @@
 ---
 layout: LandingPage
-title: "Visual Studio'daki sürüm denetimi | VSTS & TFS"
-description: "Sürüm denetimi Viual Studio'da ile Başlarken için kılavuz"
-keywords: "VSTS, TFS, sürüm denetimi"
+title: Visual Studio'daki sürüm denetimi | VSTS & TFS
+description: Sürüm denetimi Viual Studio'da ile Başlarken için kılavuz
+keywords: VSTS, TFS, sürüm denetimi
 author: steved0x
 ms.manager: douge
 ms.author: sdanie
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795358"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio'daki sürüm denetimi
 

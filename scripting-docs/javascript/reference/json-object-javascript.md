@@ -1,13 +1,13 @@
 ---
 title: JSON nesnesi (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - JSON object
 ms.assetid: 0279a0e0-70bf-451a-a78e-0da4e2fdeb9a
-caps.latest.revision: 
+caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24790925"
 ---
 # <a name="json-object-javascript"></a>JSON Nesnesi (JavaScript)
 Dönüştürme işlevleri sağlayan bir iç nesne [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] değerleri JavaScript nesne gösterimi (JSON) biçimine gelen ve giden. `JSON.stringify` İşlevi serileştiren bir [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] JSON metin değeri. `JSON.parse` İşlevi çıkarır üretmek için JSON metni bir [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] değeri.  

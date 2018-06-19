@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141726"
 ---
 # <a name="supporting-multiple-document-views"></a>Birden çok belge görünümleri destekleme
 Ayrı belge verileri ve belge görünümü nesneleri için düzenleyici oluşturarak, bir belgenin birden fazla görünümü sağlayabilirsiniz. Bir ek belge görünümü yararlı olabilecek bazı durumlarda şunlardır:  

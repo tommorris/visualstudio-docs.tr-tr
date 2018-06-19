@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135797"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef yardımcı programı
 Bir parametre olarak Visual Studio uzantısı için bir .dll dosyası alır ve .pkgdef dosyayı .dll eşlik oluşturur. .Pkgdef dosya uzantısı yüklü olduğunda, aksi halde sistem kayıt defterine yazılan tüm bilgileri içerir.  

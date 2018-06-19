@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134740"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Test alanı 1: Kaynak denetiminden Aç / ekleyin
 Bu kaynak denetimi eklenti test çözümleri veya kaynak denetimindeki projeleri yerleştirme ve kaynak denetiminden alma alanı kapsar.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136812"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage Öğesi (Visual Studio Şablonları)
 Önizleme görünümü ya da görünür Önizleme görünümü için bir dosya adı olarak belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  

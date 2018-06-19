@@ -15,6 +15,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795324"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 Visual Studio abonelikler oluşturun, dağıtın ve tercih edilen platformlarında ve Windows, iOS, Android ve Linux dahil cihazları mükemmel uygulamaları yönetmek kaynakları kapsamlı kümesidir.  Abonelikleri avantajları ve geliştirme ve test ihtiyaçları için destek geliştirici araçları, bulut Hizmetleri ve eğitim, yazılım, erişim içerir.

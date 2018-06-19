@@ -26,6 +26,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30307275"
 ---
 # <a name="variables-javascript"></a>Değişkenler (JavaScript)
 İçinde [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], bir değişken "Hello ifadesini" veya 5 gibi bir değer içeriyor. Değişkeni kullandığınızda, verileri temsil eder, örneğin başvurmak `NumberOfDaysLeft = EndDate - TodaysDate`.  

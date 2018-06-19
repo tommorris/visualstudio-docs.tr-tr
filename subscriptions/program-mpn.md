@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863631"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>İş ortaklarına Microsoft Partner Network (MPN) sunulan visual Studio abonelikleri
 Kimin bir uzmanlığı kazanmak veya kimin MPN eylem paketinde satınalma iş ortakları, Visual Studio abonelikleri kullanmak uygundur. Bu abonelikleri kullanıcı başına lisanslanır ve yalnızca belirli bir iş ortağı şirket için çalışan kullanıcı adlandırılmış atanan olduğunda geçerlidir. 

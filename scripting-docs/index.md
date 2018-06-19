@@ -1,12 +1,13 @@
 ---
 layout: LandingPage
 ms.topic: landing-page
-title: "Komut dosyası | Microsoft Docs"
+title: Komut dosyası | Microsoft Docs
 ms.openlocfilehash: 468b734d6381b9c40b1c9a4b6153d6ebafe38eb9
 ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/19/2018
+ms.locfileid: "29989219"
 ---
 # <a name="scripting-technologies"></a>Komut dosyası teknolojileri
 

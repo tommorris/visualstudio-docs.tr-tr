@@ -1,19 +1,20 @@
 ---
-title: "Debug.msUpdateAsyncCallbackRelation işlevi | Microsoft Docs"
-ms.custom: 
+title: Debug.msUpdateAsyncCallbackRelation işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: ee6a1efc-375c-4ce8-a4e8-8896ee29f849
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24790376"
 ---
 # <a name="debugmsupdateasynccallbackrelation-function"></a>Debug.msUpdateAsyncCallbackRelation İşlevi
 Zaman uyumlu iş öğesi ve ilişkili zaman uyumsuz işlemi arasındaki ilişki durumunu güncelleştirir.  

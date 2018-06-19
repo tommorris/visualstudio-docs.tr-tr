@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140209"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Proje türü (C#) uygulamak için yönetilen paket çerçevesini kullanarak
 Yönetilen paket Framework (MPF) kullanabilir veya kendi proje türleri uygulamak için devralınmalıdır C# sınıflar sağlar. MPF Visual Studio sağlamak için bir proje türü bekliyor arabirimleri birçoğu, proje türü gerçekleştirilebilir uygulanmasına yoğunlaşmak boş bırakarak uygular.  

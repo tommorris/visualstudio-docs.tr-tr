@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135072"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Öğeler ekleme yeni öğe Ekle iletişim kutuları
 Öğeler ekleme işlemi **Yeni Öğe Ekle** iletişim kutusu ile kayıt defteri anahtarlarını başlatır. Aşağıdaki kayıt defteri girdileri gösterildiği gibi AddItemTemplates bölüm içinde kullanılabilir hale hangi öğelerin dizininde adını ve yolunu içerir **Yeni Öğe Ekle** iletişim kutusu konur.  

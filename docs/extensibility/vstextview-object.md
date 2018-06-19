@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138733"
 ---
 # <a name="vstextview-object"></a>VSTextView nesnesi
 Metin görünümü, kullanıcıların metin arabelleğinin Unicode metni görüntüleyin ve düzenleyin olanak veren bir penceredir. Esas olarak, hangi kullanıcıların çoğunun düzenleyicisi olarak başvurmak görünümüdür. Görünüm arabelleğinden çeşitli metin katmanları (sözcük kaydırma, anahat metin vb.) ayrı olması nedeniyle görünümü metin arabelleği tam bir temsili olması garanti edilmez. Metin görünümü hakkında daha fazla bilgi için bkz: [eski API kullanarak getirip metin görünümü erişme](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  

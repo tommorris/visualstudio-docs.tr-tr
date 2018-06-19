@@ -1,13 +1,13 @@
 ---
 title: Olamaz atanacak &#39; &#39; | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5000
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788780"
 ---
 # <a name="cannot-assign-to-39this39"></a>Olamaz atanacak &#39; &#39;
 Bir değer atadığınız çalışıldı **bu**. **Bu** olan bir [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ya da başvuruyor anahtar sözcüğü:  
@@ -39,7 +40,7 @@ Bir değer atadığınız çalışıldı **bu**. **Bu** olan bir [!INCLUDE[javas
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Atamak çalışmayın **bu**. Bir özellik veya yöntem başlatılan bir nesnenin erişmek için nokta işleci kullanın (örneğin, yuvarlak**.** RADIUS).  
+-   Atamak çalışmayın **bu**. Bir özellik veya yöntem başlatılan bir nesnenin erişmek için nokta işleci kullanın (örneğin, yuvarlak **.** RADIUS).  
   
     > [!NOTE]
     >  Bir kullanıcı tarafından oluşturulan değişken adlandıramazsınız **bu**; bu bir [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ayrılmış sözcük.  

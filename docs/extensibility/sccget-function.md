@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140658"
 ---
 # <a name="sccget-function"></a>SccGet işlevi
 Bu işlev, görüntüleme ve derleme ancak düzenlemek için bir veya daha fazla dosyalarının bir kopyasını alır. Çoğu sistemlerinde, dosyalar salt okunur olarak etiketlenir.  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "29899951"
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototipler ve Prototip Devralma
 JavaScript içinde bir `prototype` işlevleri ve yapıcı işlevleri tarafından oluşturulan nesneleri özelliğidir. Bir işlevin prototipi bir nesnedir. Temelde bir işlev kullanıldığında bir oluşturucu olarak kullanılır.  

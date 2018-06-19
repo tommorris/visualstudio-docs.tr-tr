@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863004"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Yönetici sorumlulukları genel bakış
 Yönetici olarak kuruluşunuz için abonelikleri yönetme olanağı vardır.  Yönetici rolü de uygun lisans koşulları'nı abonelikler yönetildiğinden emin olmak için sorumlulukları taşır. Bu makalede, sorumlulukları, avantajları ve sınırlamaları Yönetici rolü özetlenmektedir.

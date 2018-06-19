@@ -1,12 +1,13 @@
 ---
-title: "Katı mod (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Katı mod (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1038
@@ -25,7 +26,7 @@ helpviewer_keywords:
 - strict mode
 - use strict
 ms.assetid: 0f27022a-f41c-4504-965c-5a2701f342cd
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -34,6 +35,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789263"
 ---
 # <a name="strict-mode-javascript"></a>Katı Mod (JavaScript)
 Katı mod, daha iyi hata denetimi kodunuza tanıtmak için bir yoldur. Katı mod kullandığınızda, olamaz, örneğin, örtük olarak bildirilen değişkenleri kullanın veya salt okunur bir özellik için bir değer atamak veya Genişletilebilir değil bir nesne için özellik ekleme. Kısıtlamalar listelenen [katı mod kodda kısıtlamalar](../../javascript/advanced/strict-mode-javascript.md#rest) bu konunun ilerleyen bölümlerinde. Katı mod hakkında ek bilgi için bkz: [ECMAScript dil belirtimi, 5 edition](http://www.ecma-international.org/publications/standards/Ecma-262.htm).  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863277"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde ürün anahtarları kullanma
 

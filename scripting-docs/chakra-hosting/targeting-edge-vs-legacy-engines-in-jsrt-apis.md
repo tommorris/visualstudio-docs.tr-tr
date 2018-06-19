@@ -1,14 +1,14 @@
 ---
-title: "Edge ile Eski altyapıların karşılaştırması | Microsoft Docs"
-ms.custom: 
+title: Edge ile Eski altyapıların karşılaştırması | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789272"
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>Edge ile Eski Altyapıların Karşılaştırması
 İki farklı Chakra motorları desteklemek için yeni bir sınır işleme altyapısı destekleyen Windows 10'ın tarayıcı stratejisini ile hizalanır, Chakra için (JavaScript altyapısı) yaptık değişikliklerden biri Windows 10'daki başlangıç şöyledir:  

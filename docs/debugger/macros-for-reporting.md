@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476916"
 ---
 # <a name="macros-for-reporting"></a>Raporlama Makroları
 Kullanabileceğiniz **_RPTn**, ve **_RPTFn** CRTDBG içinde tanımlı makrolar. Kullanımını değiştirmek için H `printf` hata ayıklama için deyimleri. Bu makroları otomatik olarak, yayın kaybolur ne zaman yapı **_DEBUG** ; böylece bunları içine gerek yoktur, tanımlı değil **#ifdef**s.  

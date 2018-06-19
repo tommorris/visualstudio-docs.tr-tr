@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474017"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Hata: Transact-SQL yürütmesi hata ayıklaması yapılmadan sonlandı
 Bu hata, bir Transact-SQL veya SQLCLR yordamı hata ayıklama denediğiniz ve hata ayıklayıcısı hata ayıklama iletilerini SQL Server'dan almaz oluşur.  

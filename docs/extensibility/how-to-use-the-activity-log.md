@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127113"
 ---
 # <a name="how-to-use-the-activity-log"></a>Nasıl yapılır: etkinlik günlüğü kullanın
 VSPackages etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, perakende ortamlarda VSPackages hata ayıklama için özellikle yararlıdır.  
@@ -48,7 +49,7 @@ VSPackages etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, perakende
   
 1.  Visual Studio ile Çalıştır [/Log](../ide/reference/log-devenv-exe.md) ActivityLog.xml oturumunuz sırasında diske yazmak için komut satırı anahtarı.
 
-2.  Visual Studio kapattıktan sonra etkinlik günlüğü alt klasöründe için Visual Studio veri bulma: *% AppData %*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
+2.  Visual Studio kapattıktan sonra etkinlik günlüğü alt klasöründe için Visual Studio veri bulma: *% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
 3.  Etkinlik günlüğü ile herhangi bir metin düzenleyicisinde açın. Tipik bir girişi şöyledir:  
   

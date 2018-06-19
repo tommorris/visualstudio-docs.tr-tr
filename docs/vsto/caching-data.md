@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264375"
 ---
 # <a name="cache-data"></a>Verileri önbelleğe
   Böylece çevrimdışı veya Microsoft Office Word veya Microsoft Office Excel açmadan veriler erişilebilir bir belge düzeyi özelleştirmelerinde veri nesnelerini önbelleğe alabilir. Bir nesne önbelleğe almak için nesneyi belirli gereksinimleri karşılayan bir veri türü olmalıdır. .NET Framework'teki birçok ortak veri türleri dahil olmak üzere bu gereksinimleri karşılayan <xref:System.String>, <xref:System.Data.DataSet>, ve <xref:System.Data.DataTable>.  

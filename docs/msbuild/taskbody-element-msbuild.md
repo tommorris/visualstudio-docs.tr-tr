@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568025"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody Öğesi (MSBuild)
 Geçirilen verileri içeren bir `UsingTask``TaskFactory`. Daha fazla bilgi için bkz: [UsingTask öğesi (MSBuild)](../msbuild/usingtask-element-msbuild.md).  

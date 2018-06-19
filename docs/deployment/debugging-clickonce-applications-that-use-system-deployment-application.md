@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561668"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application Kullanan ClickOnce Uygulamalarında Hata Ayıklama
 İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım, bir uygulamanın nasıl güncelleştirileceğini yapılandırmanıza olanak sağlar. Ancak, kullanın ve özelleştirmek gerekiyorsa Gelişmiş [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım özellikleri tarafından sağlanan dağıtım nesne modeline erişmeniz gerekir <xref:System.Deployment.Application>. Kullanabileceğiniz <xref:System.Deployment.Application> API'leri için Gelişmiş görevler gibi:  

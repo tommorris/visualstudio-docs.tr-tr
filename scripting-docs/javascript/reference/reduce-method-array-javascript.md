@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264782"
 ---
 # <a name="reduce-method-array-javascript"></a>reduce Yöntemi (Dizi) (JavaScript)
 Bir dizinin tüm öğeleri için belirtilen geri çağırma işlevini çağırır. Geri çağrı işlevinin dönüş değeri biriken sonuçtur ve geri çağrı işlevine yapılan sonraki çağrıda bir bağımsız değişken olarak sağlanır.  

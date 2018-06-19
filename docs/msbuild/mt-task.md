@@ -31,6 +31,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578763"
 ---
 # <a name="mt-task"></a>MT Görevi
 Microsoft Bildirimi aracı sarmalar mt.exe. Daha fazla bilgi için "Mt.exe" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  

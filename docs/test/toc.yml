@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Sonuç görüntüleyicisi için bir eklenti oluşturma
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: UI otomasyonunu kullanarak kodunuzu test etme
+- name: UI test otomasyonu
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 'İzlenecek yol: Kodlanmış Bir UI Testi Oluşturmak Düzenlemek ve Sürdürmek'
+    - name: 'İzlenecek yol: Kodlanmış Bir UI Testini Oluşturma, Düzenleme ve Sürdürme'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: Kodlanmış UI Testleriyle Windows UWP Uygulamalarını Test Etme
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: Kodlanmış UI Testleriyle Windows UWP ve 8.1 Phone Uygulamalarını Test Etme
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: Test Etme Amacıyla UWP Denetimleri için Benzersiz Otomasyon Özelliği Ayarlama
+    - name: Kodlanmış UI Testleriyle UWP Uygulamalarını Test Etme
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: UWP Denetimleri için Benzersiz Otomasyon Özelliği Ayarlama
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Kodlanmış UI Testlerinde HTML5 Denetimleri Kullanma
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: Verilerle Çalışan Kodlanmış UI Testi Oluşturma
       href: creating-a-data-driven-coded-ui-test.md
-    - name: Kayıttan Yürütme Sırasında Belirli Olaylar için Kodlanmış UI Testlerini Bekletme
+    - name: Kayıttan Yürütme Sırasında Belirli Olayları Bekleme
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: Kodlanmış UI Testleriyle Farklı Web Tarayıcıları Kullanma
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: Denetimlerinizin Kodlanmış UI Testlerini Etkinleştirme
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar
+    - name: Desteklenen Yapılandırmalar ve Platformlar
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: Kodlanmış UI Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Destekleyecek Şekilde Genişletme
+    - name: Kodlanmış UI Testi Çerçevesini Uzatma
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: Kodlanmış UI Testi için Excel Eklenti Örneği
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: Excel Communicator Arabirimi Örnekleme
-          href: sample-excel-communicator-interface.md
-        - name: Excel için Kodlanmış UI Testi Uzantısı Örneği
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: 'Örnek Excel Uzantısı: ExtensionPackage Sınıfı'
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: 'Örnek Excel Uzantısı: TechnologyManager Sınıfı'
-              href: sample-excel-extension-technologymanager-class.md
-            - name: 'Örnek Excel Uzantısı: PropertyProvider Sınıfı'
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: 'Örnek Excel Eklentisi: Öğe Sınıfları'
-              href: sample-excel-extension-element-classes.md
-            - name: 'Örnek Excel Uzantısı: ActionFilter Sınıfı'
-              href: sample-excel-extension-actionfilter-class.md
 - name: Test laboratuvarı yönetimi
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:

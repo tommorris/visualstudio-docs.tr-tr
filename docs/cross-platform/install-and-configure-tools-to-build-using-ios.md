@@ -17,6 +17,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454576"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>İOS kullanılarak derleme ve Yapılandırma Araçları'nı yükleme
 

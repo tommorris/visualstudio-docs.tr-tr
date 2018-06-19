@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578607"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Nasıl Yapılır: Görevlerdeki Hataları Yoksayma
 Bazen bir yapı hatalarının bazı görevler dayanıklı olmasını istiyorsunuz. Bu kritik olmayan görevleri başarısız olursa, yapı hala gerekli çıkış üretebilir çünkü devam etmek istiyorsunuz. Örneğin, bir proje kullanıyorsa, bir `SendMail` her bileşenin oluşturulduktan sonra bir e-posta iletisi göndermek için görev posta sunucuları kullanılamıyor ve durum iletileri gönderilemez bile tamamlanıncaya kadar devam etmek derleme için kabul edilebilir düşünebilirsiniz. Veya Ara dosyaları genellikle derleme sırasında silinirse, örneğin, bu dosyaları bile silinemez zaman tamamlanıncaya kadar devam etmek derleme için kabul edilebilir düşünebilirsiniz.  

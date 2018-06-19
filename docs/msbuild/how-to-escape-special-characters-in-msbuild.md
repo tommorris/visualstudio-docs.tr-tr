@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569195"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Nasıl Yapılır: MSBuild'de Kaçış Özel Karakterleri
 Özel bir anlamı belirli karakterler olmayan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları. Noktalı virgül (;) ve yıldız işareti (*) karakterlerini örneklerindendir. Şu özel karakterleri tam bir listesi için bkz: [MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md).  

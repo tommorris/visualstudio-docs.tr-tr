@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561447"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Nasıl yapılır: Çevrimiçi bir ClickOnce Uygulamasında Sorgu Dize Bilgilerini Alma
 *Sorgu dizesi* ile başlayan bir URL biçiminde rasgele bilgi içeren soru işareti (?) sahip bölümüdür *ad = değer*. Sahip olduğunuz varsayalım bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] adlı uygulaması `WindowsApp1` üzerinde barındıran `servername`, ve değişken için bir değer geçirmek istediğiniz `username` zaman uygulamasını başlatır. URL'niz aşağıdakine benzeyebilir:  

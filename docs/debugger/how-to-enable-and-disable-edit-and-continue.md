@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480459"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Nasıl yapılır: etkinleştirmek ve devre dışı Düzenle ve devam et (C#, VB, C++)
 Düzenle ve devam et, etkinleştirmek veya devre dışı **seçenekleri** tasarım zamanında iletişim kutusu. Hata ayıklarken bu ayarı değiştiremezsiniz.  

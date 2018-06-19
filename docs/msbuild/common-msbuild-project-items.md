@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574265"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild Proje Öğeleri
 İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], bir öğenin bir veya daha fazla adlandırılmış başvurusudur. Meta veri dosya adları, yolları ve sürüm numaraları gibi öğeleri içerir. Tüm türlerinde proje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri genelde sahip. Bu öğeler Microsoft.Build.CommonTypes.xsd dosyasında tanımlanır.  

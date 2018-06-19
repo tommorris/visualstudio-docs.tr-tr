@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454651"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Otomatik değişkenler değişkenleri ve Visual Studio Yereller Windows inceleyin.
 **Otomobiller** penceresi (hata ayıklama, **CTRL + ALT + V, A**, veya **hata ayıklama > Windows > otomobiller**) ve **Yereller** (hata ayıklama penceresi **CTRL + ALT + V, L**, veya **hata ayıklama > Windows > Yereller**) hata ayıklarken değişken değerleri görmek istediğinizde oldukça faydalıdır. **Yereller** penceresi, işlev veya şu anda yürütülmekte olan yöntem genellikle olan yerel kapsamda tanımlanan değişkenler görüntüler. **Otomobiller** penceresi geçerli satırında (hata ayıklayıcı durduğu koyun) kullanılan değişkenler görüntüler. Tam olarak hangi değişkenleri Bu pencerede görüntüler farklı dillerde farklıdır. Bkz: [değişkenleri otomobiller penceresinde görüntülenecek?](#bkmk_whatvariables) aşağıda.  

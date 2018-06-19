@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480895"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu
 Erişim için **zaman içinde sadece** sayfasında, Git **Araçları** menüsüne ve ardından **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda, genişletin **hata ayıklama** düğümü ve select **zaman içinde sadece**. Bu sayfa, sadece zaman yönetilen kod, yerel kod ve komut dosyası hata ayıklamayı etkinleştirmek sağlar. Daha fazla bilgi için bkz: [Just-In-Time hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md).  

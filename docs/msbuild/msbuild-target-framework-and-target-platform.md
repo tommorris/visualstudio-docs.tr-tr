@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578282"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild Hedef Çerçevesi ve Hedef Platformu
 Bir proje üzerinde çalışmak için yerleşik bir *hedef framework*, belirli bir .NET Framework sürümü olduğu ve *hedef platformu*, belirli yazılım mimarisi olduğu.  Örneğin, bir uygulamayı .NET Framework 2.0 802 x 86 işlemci ailesi ("x86") ile uyumlu bir 32 bit platformda çalışacak şekilde hedefleyebilirsiniz. Hedef Çerçeve ve hedef platformu bileşimi olarak bilinen *hedef bağlamı*.  

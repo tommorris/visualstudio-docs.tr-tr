@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575384"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Birden Çok İşlemcili Ortamda Oturum Açma
 MSBuild birden çok işlemci kullanma yeteneğini zaman derleme projesi önemli ölçüde düşürebilir ancak de günlük tutmayı karmaşıklık ekler. Bir tek işlemcili ortamda Günlükçü gelen olayları, iletilerini, uyarıları ve hataları tahmin edilebilir ve sıralı bir şekilde işleyebilir. Ancak, birden çok işlemcili ortamda çeşitli kaynaklardan gelen olayların aynı anda veya sıra dışı ulaşır. MSBuild özel "iletme günlükçüleri." oluşturmayı etkinleştirir ve yeni bir çok işlemciye duyarlı Günlükçü sağlar  

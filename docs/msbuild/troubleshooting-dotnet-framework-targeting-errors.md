@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571363"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework Hedefleme Hatalarının Sorunlarını Giderme
 Bu konu, başvuru nedeniyle ortaya çıkabilir MSBuild hataları açıklar sorunlar ve bu hataların nasıl çözebilirsiniz.  

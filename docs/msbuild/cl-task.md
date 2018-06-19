@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578061"
 ---
 # <a name="cl-task"></a>CL Görevi
 Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici yürütülebilir dosyanın (.exe) dosyaları, dinamik bağlantı kitaplığı (.dll) dosyaları ya da kod Modülü (.netmodule) dosyaları oluşturur. Daha fazla bilgi için bkz: [derleyici seçenekleri](/cpp/build/reference/compiler-options).  

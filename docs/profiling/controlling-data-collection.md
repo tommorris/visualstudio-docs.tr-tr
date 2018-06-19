@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262286"
 ---
 # <a name="control-data-collection"></a>Denetimin veri toplama
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Oluşturma Araçları, bir performans oturumu sırasında profil oluşturma verilerinin ne zaman toplanacağını kontrol etmenizi ve profillenen işlevleri belirtmenizi sağlar. Bu bölümde, veri koleksiyonunu durdurmak ve başlatmak açıklar **performans Gezgini** ve **veri toplama denetimi** windows ve kendisi için profil oluşturma verilerini toplanır nesneleri sınırlandırmak nasıl.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561356"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Nasıl yapılır: Dağıtım Güncelleştirmeleri için Alternatif Bir Konum Belirtme
 Yükleyebilirsiniz, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamadan başlangıçta bir CD veya bir dosya paylaşımı, ancak uygulama Web'de düzenli güncelleştirmeleri denetle gerekir. Böylece, uygulamanızın kendisini Web'den kendi ilk yüklemeden sonra güncelleştirebilirsiniz Dağıtım bildiriminizi güncelleştirmeler için alternatif bir konum belirtebilirsiniz.  

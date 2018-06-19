@@ -15,6 +15,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268063"
 ---
 # <a name="args"></a>Bağımsız Değişkenler
 VSPerfCmd.exe **Args** seçeneği belirtir hedef uygulama için geçirilen bağımsız değişken listesini **başlatma** alt komutu.  

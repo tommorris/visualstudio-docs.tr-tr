@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574646"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild Satır İçi Görevleri
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. Daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md).  

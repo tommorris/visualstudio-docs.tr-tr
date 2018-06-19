@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569309"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 yenilikler nelerdir?
 MSBuild kullanılabilir olarak şimdi parçası [.NET Core SDK](https://www.microsoft.com/net/download/core) ve .NET Core projelerde Windows, macOS ve Linux oluşturabilirsiniz.  

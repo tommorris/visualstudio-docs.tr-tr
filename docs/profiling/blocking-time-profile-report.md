@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264437"
 ---
 # <a name="blocking-time-profile-report"></a>Engelleme zamanı Profil raporu
 Profil raporları engelleme zaman veri toplama için engelleme her kategori (örneğin "G/ç" veya "Eşitleme") belirli çağrı yığınları sağlar. Önalım rapor önalım örnek sayısı ile birlikte geçerli işlem etkisiz işlemleri listeler. Engelleme Profil raporu oluşturmak için aracı engelleme API çağrıları toplar ve çağrı yığınları ağacına birikir. Bu raporlarda gösterilen verileri geçerli zaman aralığı, gizli iş parçacıkları ve uygulanabilir aşağıdaki iki filtre olarak değişir:  

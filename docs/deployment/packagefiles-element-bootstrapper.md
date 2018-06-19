@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560914"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; öğe (Önyükleyici)
 `PackageFiles` Ögesinin `PackageFile` sonucu olarak yürütülen yükleme paketlerini tanımla öğeleri `Command` öğesi.  

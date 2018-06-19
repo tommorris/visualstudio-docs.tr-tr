@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264095"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook form bölgelerindeki özel eylemler
   Eylemler bir Microsoft Office Outlook öğesine yanıt vermesine olanak sağlayan düğmeler görüntüler. Örneğin, bir posta öğesine yanıtlamak için kullanıcılar'ı tıklatın **yanıt**, **Tümünü Yanıtla**, veya **İleri** eylem düğmesi. Bu eylemlerin her biri, yeni bir posta öğesi oluşturur ve özgün öğedeki bilgileri kullanarak öğenin alanlarını doldurur.  

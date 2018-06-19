@@ -15,6 +15,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268275"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Profil Araçları ile veya olmadan hata ayıklayıcı çalıştırın
 Visual Studio şimdi sunar performans seçimine araçları, bazıları (örneğin, **CPU kullanımı** ve **bellek kullanımı**) ile veya hata ayıklayıcı olmadan çalıştırılabilir. Hata ayıklayıcı olmayan performans araçları araçları hata ayıklayıcı tümleşik hata ayıklama yapılandırmaları üzerinde çalıştırmak için tasarlanmış olsa da yayın yapılandırmalarında çalıştırmak üzere tasarlanmıştır.  

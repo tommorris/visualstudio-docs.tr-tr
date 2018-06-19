@@ -25,6 +25,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454351"
 ---
 # <a name="how-to-attach-to-script"></a>Nasıl Yapılır: Betiğe Ekleme
 Bu konuda, el ile Visual Studio hata ayıklayıcısı hata ayıklama için bir komut dosyası için nasıl ekleneceği açıklanmaktadır.  

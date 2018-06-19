@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564512"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce Dağıtımları İçinde Belirli Hataları Giderme
 Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve her sorunu gidermek için adımları sağlar.  

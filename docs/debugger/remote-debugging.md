@@ -25,6 +25,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477697"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Başka bir bilgisayara dağıtılan bir Visual Studio uygulama ayıklayabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcı kullanın.

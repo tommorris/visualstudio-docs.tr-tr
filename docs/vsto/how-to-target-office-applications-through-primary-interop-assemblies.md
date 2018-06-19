@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262518"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları
   Yeni bir Office proje oluşturduğunuzda, Visual Studio projenizi derleme için gerekli olan Microsoft Office birincil birlikte çalışma derlemeleri (PIA) başvuruları otomatik olarak ekler. Aşağıdaki senaryolarda diğer PIA başvuruları eklemeniz gerekir:  

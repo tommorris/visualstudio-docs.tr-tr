@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262327"
 ---
 # <a name="accessibility-in-office-projects"></a>Office projelerinde erişilebilirlik
   Microsoft Visual Studio ve Microsoft Office standart erişilebilirlik gereksinimlerini karşılayan özel çözümler oluşturmanıza olanak sağlayan birçok erişilebilirlik özelliği içerir. Microsoft Erişilebilirlik Web sayfasındaki yönergeleri yayımlar. Ayrıntılar için bkz [Erişilebilirlik Web sitesi](http://go.microsoft.com/fwlink/?LinkID=37113).  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577541"
 ---
 # <a name="msbuild-items"></a>MSBuild Öğeleri
 MSBuild öğeleri girdileridir yapı sisteme ve bunlar genellikle dosyaları temsil eder. Öğeleri öğesi türlerine kendi öğesi adlarına göre gruplandırılır. Öğe türleri parametre olarak görevleri için kullanılabilir öğeleri listesi olarak adlandırılır. Görev öğesi değerleri yapı işleminin adımları gerçekleştirmek için kullanın.  

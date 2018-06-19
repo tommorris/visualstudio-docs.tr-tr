@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576020"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild Komut Satırı Başvurusu
 Bir proje veya çözüm dosyası oluşturmak için MSBuild.exe kullandığınızda, işlemi çeşitli yönlerini belirlemek için birkaç anahtar ekleyebilirsiniz.  

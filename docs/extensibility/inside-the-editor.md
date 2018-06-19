@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265781"
 ---
 # <a name="inside-the-editor"></a>İçinde Düzenleyicisi
 Metin görünümü ve kullanıcı arabirimi düzenleyici metin modeli ayrı tutmak için tasarlanmış farklı alt sistemleri sayısının Düzenleyicisi oluşur.  

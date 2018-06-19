@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263219"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Şerit çalışma zamanında erişme
   Gösterme, gizleme ve Şerit değiştirmek için kod yazma ve kullanıcıların özel görev bölmesi, Eylemler bölmesinde veya Outlook form bölgesi denetimlerinde kodu çalıştırmasına etkinleştirin.  

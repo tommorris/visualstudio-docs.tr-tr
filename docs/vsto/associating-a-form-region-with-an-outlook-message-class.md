@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268236"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Form bölgesini Outlook ileti sınıfıyla ilişkilendirme
   Form bölgesini her öğenin ileti sınıfıyla ilişkilendirme tarafından hangi Microsoft Office Outlook öğeleri form bölgesini görüntülemek belirtebilirsiniz. Örneğin, bir posta öğesinin altına bir form bölgesi eklemek istiyorsanız, form bölgesini ilişkilendirebilirsiniz `IPM.Note` ileti sınıfı.  

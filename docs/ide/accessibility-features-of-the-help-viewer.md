@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917100"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Yardım Görüntüleyici'nin Erişilebilirlik özellikleri
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Bu konu, özellikler, ürünler ve Microsoft Yardım Görüntüleyici çok çeşitli becerilerini kişiler için erişilebilir hale gelmesine yardımcı hizmetler hakkında bilgi içerir.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110614"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Hata ayıklayıcı altyapısı (DE) ölçüm ayarları okumak için kullanacağı geri çağırma arabirimi belirtmek ifade değerlendiricisi (EE) sağlar.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109694"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE tarafından uygulanan geri arama işlevleri
 Bir birleşik son kullanıcı deneyimi sağlamak için ve mümkün olduğunca sorunsuz olarak tümleşik geliştirme ortamı (IDE) ile tümleştirme yapmak için kaynak denetim eklentisi IDE tarafından uygulanan geri arama işlevleri kullanabilirsiniz. Eklenti bu işlevler IDE bilgi aktarmak için bir kaynak denetimi işlemi sırasında uygun zamanlarda çağırabilirsiniz; IDE yerel kullanıcı Arabiriminde katıştırılmış öğeleri olarak bu bilgiler daha sonra görüntüleyebilirsiniz. Kullanıcı Bu senaryoda eklenti kendi UI işe varsa daha az parçalanmış deneyimi sahip değil.  

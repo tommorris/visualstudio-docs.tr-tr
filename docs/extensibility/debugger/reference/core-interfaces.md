@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108017"
 ---
 # <a name="core-interfaces"></a>Çekirdek arabirimleri
 Hata ayıklayıcı kullanarak genişletmek için çekirdek arabirimleri aşağıdaki arabirimlerdir [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107757"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows Forms araç kutusu denetimi oluşturma
 Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç kutusu denetimi öğe şablonu, otomatik olarak eklenen bir denetim oluşturmanıza olanak tanır **araç** uzantısı yüklü olduğunda. Bu konu, şablon diğer kullanıcılara dağıtabilirsiniz basit bir sayaç denetimi oluşturmak için nasıl kullanılacağını gösterir.  

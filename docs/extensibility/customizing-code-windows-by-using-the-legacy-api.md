@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109970"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Eski API'sini kullanarak kod Windows özelleştirme
 Bir veya daha fazla metin görünümlerini destekleyen bir belge pencere nesnesi bir kod penceredir. İlişkili dil hizmette kod penceresini tam özelliklerine bağlıdır. Birden çok belge arabirimi (MDI) modunda kod penceresi MDI alt çerçevesidir.  

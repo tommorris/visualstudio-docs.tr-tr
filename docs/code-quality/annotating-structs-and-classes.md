@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31894354"
 ---
 # <a name="annotating-structs-and-classes"></a>Yapıları ve Sınıfları Yorumlama
 Yapı ve sınıf üyeleri invariants gibi davranan ek açıklamaları kullanılarak açıklayabilirsiniz — herhangi bir işlev çağrısı veya bir parametre veya bir sonuç değeri kapsayan yapısı içerir işlevi giriş/çıkış en doğru olması için varsayılan.

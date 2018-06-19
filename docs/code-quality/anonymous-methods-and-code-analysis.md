@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31892709"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonim Metotlar ve Kod Çözümleme
 Bir *anonim yöntemi* bir ada sahip bir yöntemdir. Anonim yöntemler, en sık kod bloğu temsilci parametre olarak geçirmek için kullanılır.

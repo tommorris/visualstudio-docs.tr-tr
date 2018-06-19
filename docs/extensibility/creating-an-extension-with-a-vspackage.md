@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109457"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Uzantı VSPackage ile oluşturma
 Bu kılavuzda VSIX proje oluşturma ve bir VSPackage proje öğesi ekleme gösterilmektedir. Bir ileti kutusu göstermek için kullanıcı Arabirimi Kabuk hizmeti almak için VSPackage kullanacağız.  

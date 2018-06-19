@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108449"
 ---
 # <a name="addressing-dpi-issues"></a>DPI sorunlarını çözdükten
 Cihazlar artan sayıda "yüksek çözünürlüklü" ekranlar yayımlayan. Bu ekranlar genellikle 200 inç başına piksel (ppi) vardır. Bir uygulama bu bilgisayarlarda çalışmaya aygıtın normal görüntüleme uzaklıkta içeriği görüntüleme gereksinimlerini karşılamak üzere ölçeği için içerik gerektirir. 2014 sürümünden itibaren birincil yüksek yoğunluklu görüntüler mobil cihazlar (tabletler, clamshell dizüstü bilgisayarları ve telefonları) bilgi işlem hedefidir.  

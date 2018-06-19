@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098179"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Yürütme denetimi ve durum değerlendirme
 Bir uygulamada hata ayıklama işlevleri Adımlama, kesme noktalarında durdurma ve yürütmeye devam etme gibi yürütme denetim özelliklerini uygulama gerektirir. Tabanları hata ayıklama visual Studio hata ayıklayıcısı bileşenler arasında kendi yürütme denetim olaylarına gönderdi.  

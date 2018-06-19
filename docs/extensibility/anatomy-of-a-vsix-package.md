@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099557"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX paketi anatomisi
 VSIX paketi bir veya daha fazla Visual Studio uzantıları, sınıflandırmak ve Uzantıları'nı yüklemek için Visual Studio kullanan meta verileri ile birlikte içeren bir .vsix dosyasıdır. Bu meta veri VSIX bildirimini ve [Content_Types] .xml dosyasında yer alır. VSIX paketi yerelleştirilmiş Kurulum metin sağlamak için bir veya daha fazla Extension.vsixlangpack dosyalar da içerebilir ve bağımlılıklarını yüklemek için ek VSIX paket içerebilir.  

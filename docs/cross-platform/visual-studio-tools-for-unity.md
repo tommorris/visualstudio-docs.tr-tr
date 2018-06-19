@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31063258"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları
 Bu bölümde, Visual Studio Unity oyunlar oluşturmak için güçlü bir araç yapar ücretsiz bir Visual Studio uzantısı Unity için Visual Studio Araçları hakkında bilgi edineceksiniz.

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949494"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Bir VS Uzantısında Metin Dönüştürmeyi Çağırma
 Visual Studio uzantısı menü komutu gibi yazma varsa veya [etki alanına özgü dil](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), metin şablonları dönüştürme için metin şablonu oluşturma hizmeti kullanabilirsiniz. Alma <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> hizmet ve hangisine <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

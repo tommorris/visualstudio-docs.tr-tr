@@ -19,6 +19,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425520"
 ---
 # <a name="c-code-snippets"></a>C# kod parçacıkları
 

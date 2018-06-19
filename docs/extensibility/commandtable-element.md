@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100422"
 ---
 # <a name="commandtable-element"></a>CommandTable öğesi
 CommandTable .vsct dosyasının kök öğesinin ' dir. Bu gerçek düzeni ve bir VSPackage IDE sağlar komutları türünü tanımlayan dosyasıdır. Komutları menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları içerebilir. Daha fazla bilgi için bkz: [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102206"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Oluşturma ve yönetme kalıcı iletişim kutuları
 Visual Studio içinde bir modal iletişim kutusu oluşturduğunuzda, iletişim kutusu görüntülendiği sırada iletişim kutusunun üst pencere devre dışı bırakıldığından emin olun sonra iletişim kutusunu kapattıktan sonra ana pencereyi yeniden etkinleştirmeniz gerekir. Bunu yaparsanız hata iletisini alabilirsiniz: "Microsoft Visual Studio kapatamaz kalıcı bir iletişim kutusu etkin olduğundan. Etkin iletişim kutusunu kapatın ve yeniden deneyin."  

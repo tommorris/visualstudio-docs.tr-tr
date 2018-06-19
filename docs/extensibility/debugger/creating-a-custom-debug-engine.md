@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101384"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Bir özel hata ayıklama altyapısı oluşturma
 Hata ayıklama altyapısı (DE) belirli çalışma zamanı mimarilerini hata ayıklama sağlayan bir bileşendir. Genellikle çalışma zamanı ortamı başına yalnızca bir DE uygulama yok.  

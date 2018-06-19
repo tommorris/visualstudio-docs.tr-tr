@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31070018"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü’nde Sorun Giderme
 Bu konu, Android için Visual Studio öykünücüsü kullanırken karşılaşabileceğiniz sorunları gidermenize yardımcı olabilecek bilgiler içerir.  

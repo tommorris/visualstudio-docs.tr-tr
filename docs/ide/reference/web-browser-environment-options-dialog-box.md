@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947124"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu
 İç Web tarayıcısı ve Internet Explorer seçeneklerini ayarlar. Bu iletişim kutusunu erişmek için tıklatın **seçenekleri** üzerinde **Araçları** menüsünde genişletin **ortam** klasörü ve select **Web tarayıcısı**.

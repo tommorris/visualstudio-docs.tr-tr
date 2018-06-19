@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098329"
 ---
 # <a name="mtaskid-field"></a>m_taskId alan
 Yedekleme alanı için <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> özelliği.  

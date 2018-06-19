@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954098"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluşturmanıza izin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi. Genellikle, böylece kullanıcılar verilerinden göre oluşturdukları kod farklılık şablonları yazma bir *modeli*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren bir veri modelidir.

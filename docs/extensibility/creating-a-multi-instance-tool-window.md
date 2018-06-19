@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097802"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Çok örnekli araç penceresi oluşturma
 Birden çok örneği aynı anda açık olması için bir araç penceresi programlama yapabilirsiniz. Varsayılan olarak, aracı windows açmak yalnızca bir örneği olabilir.  

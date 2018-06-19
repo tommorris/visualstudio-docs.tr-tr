@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103181"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Uygulama ve bir bağlantı noktası Tedarikçi kaydetme
 Bağlantı noktası tedarikçi izlemek ve sırayla işlemlerini yönetmek bağlantı noktalarını tedarik rolüdür. Bir bağlantı noktası oluşturulmalıdır aynı anda bağlantı noktası sağlayıcı bağlantı noktası tedarikçi GUID (oturum hata ayıklama Yöneticisi [SDM] bağlantı noktası sağlayıcınızla seçilen kullanıcı ya da proje sistem tarafından belirtilen bağlantı noktası tedarikçi kullanırsınız) CoCreate kullanarak örneği. SDM sonra çağıracak [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) herhangi bir bağlantı eklenen olmadığını görmek için. Bir bağlantı noktası eklenebilir, yeni bir bağlantı noktası çağırarak istenen [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) ve onu bir [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) bağlantı noktası açıklar. `AddPort` tarafından temsil edilen yeni bir bağlantı noktası döndürülecek bir [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) arabirimi.  

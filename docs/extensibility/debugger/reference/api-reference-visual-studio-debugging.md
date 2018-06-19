@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103246"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API Başvurusu (Visual Studio hata ayıklama)
 Başvuru bölümünde, API, sözdizimi ve kullanımı tüm API öğeleri için gösteren bir kılavuz kavramsal genel bakış ve bir sınıflama, kod örnekleri içerir. Tüm başvurular kategoriye göre alfabetik olarak listelenir.  

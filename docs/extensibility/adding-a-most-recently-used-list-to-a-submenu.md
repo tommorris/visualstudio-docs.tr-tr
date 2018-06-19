@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105271"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Alt menü listesine kullanılan bir en kısa süre önce ekleme
 Bu kılavuzda gösterim inşa edilmiştir [bir alt menüye ekleme](../extensibility/adding-a-submenu-to-a-menu.md)ve menüye dinamik bir listesi eklemeyi gösterir. Dinamik listenin en son kullanılan (MRU) listesini oluşturmak için temelini oluşturur.  

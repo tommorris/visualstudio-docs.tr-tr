@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098998"
 ---
 # <a name="implementing-a-port-supplier"></a>Bir bağlantı noktası sağlayıcı uygulama
 Bir bağlantı noktası tedarikçi oturum hata ayıklama Yöneticisi'ni (SDM) istek bağlantı noktaları sağlar. Bir bağlantı noktası tedarikçi DCOM olmayan makineye hata ayıklama sırasında veya yeni bir cihaz desteklenecek gerektiğinde uygulanması gerekir. Örneğin, bir cep telefonu hata ayıklama sağlamak için cep telefonunuza (belki de IR veya hücre bağlantı yoluyla) bağlanan ve işlemleri ve telefonda çalışan programlar numaralandırır bağlantı noktaları sağlayan bir bağlantı noktası tedarikçi uygulayabilir.  

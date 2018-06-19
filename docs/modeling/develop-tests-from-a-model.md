@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953501"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 Sisteminiz ve bileşenlerinin testlerini düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu yöntem kullanıcılar ve diğer Paydaşlar için önemli olan gereksinimleri test ve gereksinimleri değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı sağlamaya yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], modeller ve testler arasındaki bağlantıları da koruyabilirsiniz.

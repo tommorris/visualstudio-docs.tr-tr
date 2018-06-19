@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926247"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>İzlenecek yol: Visual Studio iş parçacıkları penceresini kullanarak birden çok iş parçacıklı uygulamada hata ayıklama
 Visual Studio sağlayan bir **iş parçacığı** penceresini açın ve başka bir kullanıcı arabirimi öğeleri birden çok iş parçacıklı uygulamalarda hata ayıklama yardımcı olacak. Bu öğretici nasıl kullanılacağını gösterir **iş parçacığı** penceresi ve **hata ayıklama konumu** araç. Diğer araçları hakkında daha fazla bilgi için bkz: [çok iş parçacıklı uygulamalarda hata ayıklama başlamak](../debugger/get-started-debugging-multithreaded-apps.md). Bu öğretici yalnızca birkaç dakika sürer ancak tamamlanması, çok iş parçacıklı uygulamalarda hata ayıklama için özelliklerle alışmanızı.   

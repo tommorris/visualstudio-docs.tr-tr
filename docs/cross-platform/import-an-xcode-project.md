@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066944"
 ---
 # <a name="import-an-xcode-project"></a>Bir XCode projesi alma
 Platformlar arası Mobil Geliştirme için Microsoft Visual C++ XCode projelerinizi Visual burada platformlar arası kitaplıkları oluşturmak ve diğer projelerle kod paylaşmak Studio taşınmasını için destek içerir. XCode Sihirbazından Al projeleri içeri aktarma işlemini basitleştirir ve statik kitaplık olarak kullanın veya kod projesi paylaşılan XCode hedefler için C++ kod çıkışı bölme. Visual Studio iOS özgü kodunuzda yönetebilir ve hala film şeritleri ve yapılar yapmak için XCode kullanın. Değişiklikleri XCode arasında taşımak ve Visual Studio kolayca kod geri ve İleri Visual Studio ve XCode arasında taşıma hakkında daha fazla bilgi için bkz.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31060275"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>VSTU Tarafından Oluşturulan Proje Dosyalarını Özelleştirme
 Unity için Visual Studio Araçları Unity stili geri çağırma proje dosyası oluşturma sırasında sağlar. Kaydetme `VisualStudioIntegration.ProjectFileGeneration` yeniden oluşturulur her proje dosyasını değiştirmek için olay.

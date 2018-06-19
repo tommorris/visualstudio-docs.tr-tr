@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099219"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio Şablonları)
 Projeyi oluşturmak ve belirtilen konumda parametre değişikliği veya geçici bir konuma parametre değişikliği ve sonra belirtilen konuma kaydedin belirtir.  

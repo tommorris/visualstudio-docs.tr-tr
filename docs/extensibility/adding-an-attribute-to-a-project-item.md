@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104543"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Öznitelik bir proje öğesi ekleme
 Yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> almak ve bir proje öğesi özniteliklerini değerini ayarlayın. Zaten yoksa, SetItemAttribute proje öğesi meta verilerde ekleme öznitelik oluşturur.  

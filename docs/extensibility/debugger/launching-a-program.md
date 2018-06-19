@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103870"
 ---
 # <a name="launching-a-program"></a>Bir Program başlatma
 Bir program hata ayıklamak istediğiniz kullanıcılar hata ayıklayıcıda IDE içinden çalıştırmak için F5 tuşuna basabilirsiniz. Bu, bir dizi sonuçta IDE'nin sırayla bağlı veya bağlı, programa şu şekilde bir hata ayıklama altyapısı (DE) bağlanırken neden olay başlar:  

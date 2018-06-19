@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098424"
 ---
 # <a name="adding-command-line-switches"></a>Komut satırı anahtarları ekleme
 Devenv.exe yürütüldüğünde, VSPackage uygulama komut satırı anahtarları ekleyebilirsiniz. Kullanım <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> adını anahtar ve özelliklerini bildirmek için. Bu örnekte, MySwitch anahtar adlı VSPackage öğesinin bir alt kümesi için eklenen **AddCommandSwitchPackage** bağımsız değişken içermeyen ve otomatik olarak yüklenen VSPackage ile.  

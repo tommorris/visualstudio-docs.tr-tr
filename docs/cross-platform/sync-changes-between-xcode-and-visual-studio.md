@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066524"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>XCode ve Visual Studio arasındaki eşitleme değişiklikleri
 Mobil Geliştirme bileşen için Microsoft Visual C++ çalışmanızı PC ve Mac arasında eşitlenmesi uzak yetenekleri içerir Visual Studio ve Mac makinelerinizi eşleştirilmiş, iOS, Xcode'da projenize açmak için kullanabileceğiniz Visual Studio'da Uygulama projeleri için yeni seçenekler kullanılabilir taşıma kodunuzu XCode ve Visual Studio arasında ve geçici XCode projesi dizin temizleme.  

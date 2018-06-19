@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097854"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties sınıfı - iç üyeleri
 İçin ek özellikler içeren bir <xref:System.Threading.Tasks.Task> nesnesi.  

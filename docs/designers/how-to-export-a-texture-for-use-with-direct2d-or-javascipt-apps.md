@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925018"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya Javascript Uygulamaları Kullanmak için Doku Dışa Aktarma
 Görüntü içerik ardışık düzen Direct2D'ın iç işleme kuralları ile uyumlu olan dokular oluşturabilirsiniz. Bu tür dokuları Direct2D kullanan uygulamalar ve JavaScript kullanılarak oluşturulan UWP uygulamalar için uygundur.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102999"
 ---
 # <a name="getting-a-port"></a>Bir bağlantı noktası alma
 Bir bağlantı noktası işlemleri çalışmakta olduğu bir makineye bağlantıyı temsil eder. Bu makine yerel veya uzak makineye olabilir (büyük olasılıkla çalışan Windows tabanlı bir işletim sistemi; bkz [bağlantı noktalarını](../../extensibility/debugger/ports.md) daha fazla bilgi için).  

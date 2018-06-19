@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102798"
 ---
 # <a name="evaluating-expressions"></a>İfadeleri değerlendirme
 İfadeleri otomatik değişkenler, izleme, QuickWatch veya hemen windows geçirilen dizelerden oluşturulur. Bir ifade değerlendirildiğinde adını ve türünü değişken veya değişken ve değeri içeren yazdırılabilir bir dize oluşturur. Bu dize karşılık gelen IDE penceresinde görüntülenir.  

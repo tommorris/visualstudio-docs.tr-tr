@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065601"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Platformlar arası mobil geliştirme örnekleri
 Platformlar arası Mobil Geliştirme için Visual C++'ın yüklü şablonlar çeşitli öğrenmek için kullanabileceğiniz tam örnekleri oluşturur. Ayrıca, Windows Geliştirme Merkezi, indirin ve Visual Studio'da denemenin birkaç örnek uygulama vardır.  

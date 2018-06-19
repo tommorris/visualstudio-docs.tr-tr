@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101667"
 ---
 # <a name="control-events"></a>Denetim olayları
 Olayları programınızı denetimli yürütülmesi sırasında göndermeniz gerekir. Tüm olaylar kullanılarak gönderilen [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) arabirim ve uygulamak ihtiyaç duyduğunuz özniteliklere sahip [IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) yöntemi.  

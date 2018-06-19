@@ -41,6 +41,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927459"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı'ndaki kesme noktalarını kullanma
 Hata ayıklayıcı yürütme, belki de kod değişkenlerinin durumunu görmek için veya çağrı yığını aramak için durdurmak istediğinizde kesme noktaları ayarlayabilirsiniz. Bunlar, bir geliştirici araç en önemli hata ayıklama teknikleri biridir.  

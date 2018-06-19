@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098075"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Hata ayıklama Engine uygulaması stratejisini seçme
 Hata ayıklama altyapısı (DE) uygulaması stratejinizi belirleme için çalışma zamanı mimarisi kullanın. Hata ayıklama altyapısı işlemdeki hata ayıklaması, olması için program işlemdeki Visual Studio oturumu hata ayıklama Yöneticisi (SDM) ya da zaman, işlem her ikisine de oluşturulabilir. Aşağıdaki yönergeler, bu üç stratejileri arasında seçim yapmanızı yardımcı olmalıdır.  

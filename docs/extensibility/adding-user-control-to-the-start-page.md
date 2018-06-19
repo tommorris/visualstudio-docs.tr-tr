@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104101"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Kullanıcı denetimi için başlangıç sayfası ekleme
 Bu kılavuz, özel bir başlangıç sayfası DLL başvuru eklemek gösterilmiştir. Örnek bir kullanıcı denetimi çözüme kullanıcı denetimi oluşturur ve ardından başlangıç sayfası .xaml dosyasından yerleşik bütünleştirilmiş koduna başvuruyor ekler. Yeni bir sekme temel bir Web tarayıcısı olarak işlev kullanıcı Denetim barındırır.  

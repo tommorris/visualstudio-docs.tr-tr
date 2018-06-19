@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099479"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Eski API kullanarak metin arabelleği erişme
 Metni metin akışları ve dosya Kalıcılık yönetilmesinden sorumludur. Arabellek okuma veya diğer biçimlere yazma rağmen arabellek ile tüm sıradan iletişim Unicode kullanılarak gerçekleştirilir. Eski API'leri metin arabelleği bir - ya da iki boyutlu bir koordinat sistemi arabelleği karakter konumları tanımlamak için kullanabilirsiniz.  

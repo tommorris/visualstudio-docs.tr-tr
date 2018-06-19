@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098673"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Eski API kullanarak metin katmanları erişme
 Bir metin katmanı genellikle metin düzenini bazı yönlerinin yalıtır. Örneğin, "işlevi--bir zamanda" katman önce ve sonra şapka (metin ekleme noktasını) içeren bir işlev metni gizler.  

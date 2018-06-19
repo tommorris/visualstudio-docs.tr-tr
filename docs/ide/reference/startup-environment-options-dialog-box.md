@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942496"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Başlangıç, Ortam, Seçenekler İletişim Kutusu
 Visual Studio başlangıç sayfasını özelleştirme veya Visual Studio başladığında farklı varsayılan eylem ayarlamak için bu sayfayı kullanın. Daha fazla bilgi için bkz: [başlangıç sayfasını özelleştirme](../../ide/customizing-the-start-page-for-visual-studio.md).

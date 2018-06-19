@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100536"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Ayıklanacak bir Program etkinleştirme
 Hata ayıklama altyapınız (DE) bir programı ayıklayabilirsiniz önce öncelikle DE başlatın veya varolan bir program eklemek gerekir.  

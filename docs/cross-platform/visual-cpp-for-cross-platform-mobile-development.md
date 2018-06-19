@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066641"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Platformlar arası Mobil Geliştirme için Visual C++
 Yerel C++ uygulamalar oluşturabilir. iOS, Android ve Windows cihazları ve iOS, Android ve Windows için yerleşik kitaplıklarında ortak kodun paylaşımı kullanarak Visual C++ için platformlar arası mobil geliştirme. SDK'ları ve paylaşılan kitaplıklar ve yerel uygulamalar platformlar arası geliştirme için ihtiyaç duyduğunuz araçlarını yükler Visual Studio 2015'te kullanılabilir bir seçenek budur. Yüklendiğinde, iOS ve Android cihazları ve Windows, Windows Phone ve Xbox yanı sıra platformunda çalışan bir kod oluşturmak için Visual C++ kullanabilirsiniz.  

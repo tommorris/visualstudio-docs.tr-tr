@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098398"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Menü komutlarına simgeler ekleme
 Komutları, menüleri ve araç çubuklarında yer alabilir. Araç çubuklarında, bir komut genellikle bir simge ve metin ile görünür (alanından tasarruf etmek için) yalnızca bir simgeyle sırasında menülerde görüntülenecek komutu için yaygın bir sorundur.  

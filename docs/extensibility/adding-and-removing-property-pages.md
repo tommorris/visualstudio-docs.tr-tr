@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101296"
 ---
 # <a name="adding-and-removing-property-pages"></a>Ekleme ve kaldırma özellik sayfaları
 Proje Tasarımcısı proje özellikleri, ayarları ve kaynakları yönetmek için merkezi bir konum sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Tek bir pencere olarak göründüğü [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) ve sol sekmelerinde üzerinden erişilen bölmeleri sağdaki sayısını içerir. Proje Tasarımcısı'nda (genellikle özellik sayfaları adlandırılır) bölmeleri proje türü ve dili göre değişir. Proje Tasarımcısı ile erişilebilir **özellikleri** komutunu **proje** menüsü.  

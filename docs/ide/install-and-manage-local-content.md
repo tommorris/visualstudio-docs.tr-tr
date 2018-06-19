@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947644"
 ---
 # <a name="install-and-manage-local-content"></a>Yükleme ve yerel içeriği yönetme
 

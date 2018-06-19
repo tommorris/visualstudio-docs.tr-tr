@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099844"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Olay kaynakları (Visual Studio SDK)
 İki olay kaynağını vardır: hata ayıklama altyapısı (DE) ve oturum Yöneticisi'ni (SDM) hata ayıklama. SDM gönderilen olaylar NULL altyapısı bulunurken SE gönderilen olaylar NULL olmayan altyapısı vardır.  

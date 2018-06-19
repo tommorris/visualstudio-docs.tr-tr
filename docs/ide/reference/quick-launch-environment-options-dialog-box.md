@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946786"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Hızlı Başlatma, Ortam, Seçenekler İletişim Kutusu
 Kullanabileceğiniz **hızlı başlatma** hızlı arama ve IDE varlıklar seçenekleri, şablonlar, menüler gibi eylemleri yürütün. Kullanamazsınız **hızlı başlatma** kod ve simgeleri aramak için. **Hızlı başlatma** arama kutusunu menü çubuğunu sağ üst köşesinde bulunan ve Ctrl + Q anahtarları seçerek erişilebilir olduğunu. Yalnızca arama dizenizle kutusuna girin. İçeren dizeleri aramak için @, Kullan ”@@”. 

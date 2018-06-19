@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099278"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger alan
 Bu oluşturucu benzersiz şekilde tanımlamak için hata ayıklayıcı tarafından kullanılan gevşek başlatılmış nesneyi temsil eder.  

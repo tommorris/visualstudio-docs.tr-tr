@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099544"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 Bu tarafından temsil edilen nesne sahibi işlemin Kimliğini alır [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) arabirimi.  

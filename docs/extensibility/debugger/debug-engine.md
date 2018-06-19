@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102934"
 ---
 # <a name="debug-engine"></a>Altyapısı hata ayıklama
 Hata ayıklama altyapısı (DE) yorumlayıcı veya işletim sistemi hata ayıklama Hizmetleri yürütme denetimi, kesme noktaları ve ifade değerlendirme gibi sunmak için birlikte çalışır. Ayıklanacak bir programın durumunu izlemek için DE sorumludur. Bunu gerçekleştirmek için CPU veya API çalışma zamanı tarafından sağlanan olup olmadığını ne olursa olsun yöntemleri desteklenen çalışma zamanında kullanabileceği DE kullanır.  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927474"
 ---
 # <a name="validate-data-in-datasets"></a>Veri kümelerindeki verileri doğrulama
 Verileri doğrulama kısıtlamaları bir veri kümesi'nin şema içinde veri nesnelerine girilmesini değerleri uygun onaylayan işlemidir. Doğrulama işlemini de bu değerleri, uygulamanız için kurulmuş kuralları takip onaylar. Temel alınan veritabanı güncelleştirme göndermeden önce verileri doğrulamak için iyi bir uygulamadır. Bu, hataları ve bunun yanı sıra olası bir uygulama ve veritabanı arasındaki gidiş dönüş sayısını azaltır.

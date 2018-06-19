@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099382"
 ---
 # <a name="launch-based-attachment"></a>Ek başlatma tabanlı
 Ek bir program başlatma tabanlı otomatik olarak yapılır. Program barındırma işlemi tarafından SDM başlatıldığında, başlatma tabanlı eki el ile ek yöntemi için benzer bir yol izler. Bilgi için bkz: [programını ekleme](../../extensibility/debugger/attaching-to-the-program.md).  

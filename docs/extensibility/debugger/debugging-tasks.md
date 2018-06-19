@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101150"
 ---
 # <a name="debugging-tasks"></a>Hata ayıklama görevleri
 Bir program hata ayıklamak için onu başlatılması gerekir ve hata ayıklama altyapısı (DE) bağlı gerekir, aksi takdirde DE daha önce başlatılan program için'e bağlı olması gerekir. Bağlandıktan sonra DE belirli başlangıç olayları oluşturmanız gerekir. IDE içinde ayarlama kesme noktaları bağlamak hata ayıklama paket yanıt olarak çalışır. Program ilişkili bir kesme noktası geldiğinde durur ve kullanıcı girişi için bekler.  

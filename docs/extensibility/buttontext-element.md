@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100185"
 ---
 # <a name="buttontext-element"></a>■ ButtonText öğesi
 Bu alan çeşitli menülerde görüntülenen metni belirtmenize olanak sağlar. Varsayılan olarak, `ButtonText` öğe menü denetleyicileri görüntülenir. `ButtonText` Öğesi bir metin alanları boş ise varsayılan de olur. `ButtonText` Diğer metin alanları belirtilmese bile öğesi boş olamaz.  

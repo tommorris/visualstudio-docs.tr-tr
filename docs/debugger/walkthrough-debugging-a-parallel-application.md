@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927301"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>İzlenecek yol: Visual Studio paralel uygulamada hata ayıklama
 Bu kılavuzda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve kullanan kodu çalışma zamanı davranışını doğrulayın Yardım [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime). Bu kılavuzda yerleşik kesme noktaları olan örnek kodu sağlıyor. Kod keser sonra izlenecek nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** windows bunu inceleyin.  

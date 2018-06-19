@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102388"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Düzenleyici denetimleri ve menüleri eski API kullanarak özelleştirme
 Bir dil hizmeti veya bir metin görünümünde Düzenleyicisi'nde denetimleri ve bağlam menülerini kontrol edebilirsiniz. Bu bölümdeki sayfaları bu özellikler ile çalışma konusunda ayrıntılı olarak açıklanmaktadır.  

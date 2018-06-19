@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926502"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl yapılır: güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atayın
 Saklı yordamlar için O/R Tasarımcısı eklenebilir ve tipik olarak yürütülen <xref:System.Data.Linq.DataContext> yöntemleri. Varsayılan değer geçersiz kılmak için de kullanılabilir [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ekler, güncelleştirmeleri gerçekleştiren ve değişiklikleri veritabanına varlık sınıflardan kaydedildiğinde siler çalışma zamanı davranışı (örneğin, çağrılırken <xref:System.Data.Linq.DataContext.SubmitChanges%2A> yöntemi).

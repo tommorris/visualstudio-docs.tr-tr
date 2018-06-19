@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099089"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Bir komut görünümünü değiştirme
 Komutunun görünümünü değiştirerek, kullanıcı geri bildirim sağlayabilirsiniz. Örneğin, kullanılamaz duruma geldiğinde farklı aramak için bir komut isteyebilirsiniz. Komutları kullanılabilir veya kullanılamaz yapma, gizleyebilir veya, göstermek veya denetleyin veya menüsünde seçeneğinin işaretini kaldırın.  

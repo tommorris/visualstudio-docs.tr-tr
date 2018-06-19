@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925982"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Nasıl Yapılır: WCF Veri Hizmeti Başvurusunu Güncelleme veya Kaldırma
 A *hizmet başvurusu* bir proje için bir veya daha fazla erişim sağlayan [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Kullanım **hizmet Başvurusu Ekle** aramak için iletişim kutusu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] geçerli çözümde, yerel ağ üzerinde yerel olarak ya da Internet üzerindeki.

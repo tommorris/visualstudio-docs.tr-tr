@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561707"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce ve Uygulama Ayarları
 Windows Forms için uygulama ayarları oluşturun, depolamak ve özel uygulama ve istemci üzerindeki kullanıcı tercihlerini korumak yapmayı kolaylaştırır. Aşağıdaki belge bir ClickOnce uygulamasında uygulama ayarları dosyalarının nasıl çalışır ve kullanıcı sonraki sürüme yükseltildiğinde nasıl ClickOnce ayarlarını da geçirir açıklar.  

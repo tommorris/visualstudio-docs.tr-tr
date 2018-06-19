@@ -31,6 +31,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065084"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Başkalarının Dağıtması için ClickOnce Uygulamaları Oluşturma
 Uygulamaları dağıtmak ClickOnce Dağıtımları oluşturmakta olduğunuz tüm geliştiriciler planlayın. Bunların çoğu, yalnızca ClickOnce kullanarak kendi uygulama paketini ve ardından dosyaları kapalı büyük bir kuruluşa gibi bir müşteriye el. Müşteri, bir alt ağı üzerinde uygulamayı barındırmak için sorumlu olur. Bu konuda bazı sürümlerinde .NET Framework sürüm 3.5 önce bu tür dağıtımlarda devralınmış sorunları ele alınmıştır. Ardından, .NET Framework 3. 5'yeni "bildirimi güven için kullan" özelliğini kullanarak tarafından sağlanan yeni bir çözüm açıklanır. Son olarak, .NET Framework'ün daha eski sürümleri hala kullanan müşteriler için ClickOnce dağıtımları oluşturmak için önerilen stratejileri ile sonlanır.  

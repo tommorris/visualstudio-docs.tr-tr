@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471758"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Hata: Hedef bilgisayardaki Visual Studio Uzaktan Hata Ayıklayıcı hizmeti geriye bu bilgisayara bağlanamıyor
 Bu hata, Visual Studio uzaktan hata ayıklayıcı hizmeti hata ayıklama yaptığınız bilgisayara bağlanmaya çalıştığında, kimlik doğrulaması yapamayan bir kullanıcı hesabı altında çalıştığı anlamına gelir.  

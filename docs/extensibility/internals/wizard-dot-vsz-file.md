@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142883"
 ---
 # <a name="wizard-vsz-file"></a>Sihirbazı'nı (. Vsz) dosyası
 Tümleşik geliştirme ortamı (IDE) .vsz dosyaları sihirbazları başlatmak için kullanır. Bu .vsz dosyaları IDE çağırmak için hangi Sihirbazı belirlemek için kullandığı bilgileri ve sihirbaza geçirmek için hangi bilgilerini içerir.  

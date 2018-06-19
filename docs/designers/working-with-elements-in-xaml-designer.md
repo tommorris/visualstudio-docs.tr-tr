@@ -15,6 +15,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269196"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğeleri ile çalışma
 Öğeleri ekleyebilirsiniz — denetimleri, düzenleri ve şekiller — uygulamanıza kod ya da XAML Tasarımcısı kullanarak XAML'de. Bu konu Visual Studio veya Visual Studio için Blend'de XAML Tasarımcısı'nda öğeleri ile nasıl çalışılacağını açıklar.

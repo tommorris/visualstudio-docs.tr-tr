@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565724"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Nasıl yapılır: ClickOnce Dağıtım Hataları için Özel Günlük Dosyası Konumu Ayarlama
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tüm dağıtımlar için etkinlik günlük dosyalarını korur. Bu günlükler yükleme ve başlatılmasına bağlı tüm hataları belgeler bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım. Varsayılan olarak, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] her dağıtım etkinleştirme için bir günlük dosyası oluşturur. Bu günlük dosyaları geçici Internet dosyaları klasöründe depolar. Bir dağıtım için günlük dosyası kullanıcıya bir etkinleştirme hatası oluşur ve kullanıcının tıkladığında görüntülenir **ayrıntıları** ortaya çıkan hata iletişim kutusunda.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448525"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Nasıl yapılır: kullanıcı adım testi karışım modeli için Gecikmesine Dağıtım uygulama
 

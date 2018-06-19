@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34476852"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense özellikleri
 

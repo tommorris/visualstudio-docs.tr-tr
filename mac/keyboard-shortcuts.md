@@ -10,6 +10,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453822"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac için Visual Studio'da ortak klavye kısayolları
 

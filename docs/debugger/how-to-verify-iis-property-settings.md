@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477985"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Nasıl Yapılır: IIS Özellik Ayarlarını Doğrulama
 IIS Yönetim Aracı'nı kullanarak bir Web uygulamasının özellikleri ayarlayabilirsiniz. Bu ayarlar doğrulanıyor genellikle sorun giderme, gerekli bir adım olması için bu özellikleri çalıştırmak, uygulama için doğru ayarlamanız gerekir.  

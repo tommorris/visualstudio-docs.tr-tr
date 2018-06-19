@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448434"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Excel için belge düzeyi özelleştirmelerini programlama kullanmaya başlama
   Yalnızca Visual Studio kullanarak Microsoft Office Excel için belge düzeyi özelleştirmeleri oluşturma başlıyorsanız, işte bilmeniz gerekir.  

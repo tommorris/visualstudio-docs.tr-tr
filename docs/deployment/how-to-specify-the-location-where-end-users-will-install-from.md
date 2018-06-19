@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559601"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Nasıl yapılır: Son Kullanıcıların Yükleme Yapacakları Konumu Belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması, kullanıcıların gittikleri uygulamayı indirmek ve yüklemek için konum değildir burada başlangıçta yayımladığınız uygulama konumu. Örneğin, bazı kuruluşlarda Geliştirici hazırlama sunucusuna uygulama yayımlama ve ardından Yönetici uygulamayı bir Web sunucusuna taşıyabilir.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267782"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office çözümlerinin işbirlikçi geliştirme
   Birden çok geliştiricilerin Office projesinde, diğer Visual Studio projelerinde birlikte aynı şekilde çalışabilir. Office farklı konumlarda yüklü olsa bile visual Studio Microsoft Office yüklemesini her bilgisayarda doğru bulur. Ancak, farkında olmanız gereken bazı önemli noktalar vardır.  

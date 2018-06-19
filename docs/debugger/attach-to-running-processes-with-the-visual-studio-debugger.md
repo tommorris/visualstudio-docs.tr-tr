@@ -34,6 +34,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454563"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 Yerel veya uzak bilgisayarda çalışan bir işlemi için Visual Studio hata ayıklayıcısı ekleyebilirsiniz. İşlemin çalıştığı sonra tıklayın **hata ayıklama > ekleme işlemi için** (veya basın **CTRL + ALT + P**) açmak için **ekleme işlemi için** iletişim kutusu.

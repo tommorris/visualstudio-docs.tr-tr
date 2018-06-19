@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31556598"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Nasıl yapılır: Teknik Destek için bir Bağlantı Belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama **destek URL'si** özelliği, kullanıcılar nereye uygulama hakkında bilgi almak için dosya paylaşımını veya Web sayfasını tanımlar. Bu özellik isteğe bağlıdır; URL sağlanırsa, uygulamanın girdisinde görüntülenir **Program Ekle veya Kaldır** iletişim kutusu.  

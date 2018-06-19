@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578269"
 ---
 # <a name="how-to-build-incrementally"></a>Nasıl Yapılır: Artımlı Olarak Derleme
 Büyük bir proje oluşturduğunuzda, daha önce hala güncel bileşenleri yerleşik değil yeniden önemlidir. Her zaman tüm hedefleri oluşturulduysa, her yapı tamamlanması uzun zaman sürer. Artımlı derlemeler etkinleştirmek için (hangi derlemelerde önce oluşturulmuş değil veya hedefleyen hedeflerin güncel değil, yalnızca yeniden), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) girdi dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırabilirsiniz ve Atla, yapı veya kısmen hedef yeniden belirleyin. Ancak, bire bir eşleme girişleri ve çıkışları arasında olmalıdır. Bu doğrudan eşleme tanımlamak hedefleri etkinleştirmek için dönüşümler kullanabilirsiniz. Dönüşümler hakkında daha fazla bilgi için bkz: [dönüştüren](../msbuild/msbuild-transforms.md).  

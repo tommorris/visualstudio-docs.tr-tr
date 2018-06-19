@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561561"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Nasıl yapılır: ClickOnce Güven İstemi Davranışını Yapılandırma
 Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları, konsol uygulamaları, WPF tarayıcı gibi ClickOnce uygulamalarını yükleme seçeneği izin verilip verilmeyeceğini denetlemek için ClickOnce güven istemi yapılandırabilirsiniz uygulamaları ve Office çözümleri. Güven istemi her son kullanıcının bilgisayarda kayıt defteri anahtarlarını ayarlayarak yapılandırın.  

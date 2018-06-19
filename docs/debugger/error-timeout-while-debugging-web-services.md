@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479896"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Hata: Web Hizmetlerinde Hata Ayıklarken Zaman Aşımı
 Arama koddan XML Web Hizmetleri Adımlama, hata ayıklama devam edemiyor olmasına, çağrı bazen sonucunda zaman aşımı olabilir. Bunun gibi bir hata iletisi görebilirsiniz.  

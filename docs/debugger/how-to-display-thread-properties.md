@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473224"
 ---
 # <a name="how-to-display-thread-properties"></a>Nasıl yapılır: İş Parçacığı Özelliklerini Görüntüleme
 Listelenen bir iş parçacığı hakkında daha fazla bilgi için [iş parçacıkları görünümü](../debugger/threads-view.md), kullanın [iş parçacığı Özellikleri iletişim kutusu](../debugger/thread-properties-dialog-box.md).  

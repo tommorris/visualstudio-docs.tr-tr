@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467897"
 ---
 # <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
 Kullanıcı tanımlı veri türü tanımlanan tüm atama işleçleri sahip olup olmadığını belirten bir bayrak alır.  

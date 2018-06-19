@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558873"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Başlat Menüsü Adı Belirtme
 Zaman bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamanın yüklü çevrimiçi ve çevrimdışı kullanım için bir giriş eklenen **Başlat** menü ve **Program Ekle veya Kaldır** listesi. Varsayılan olarak, görünen adı uygulama derlemesinin adını aynıdır, ancak ayarlayarak görünen adı değiştirebilirsiniz **ürün adı** içinde **Yayımla Seçenekleri** iletişim kutusu.  

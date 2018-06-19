@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564928"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce Önbelleğine Genel Bakış
 Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları, yerel olarak yüklenmiş veya çevrimiçi barındırılan depolanır istemci bilgisayarda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulama *önbellek*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] önbelleğidir geçerli kullanıcının belgeler ve ayarlar klasörünü yerel ayarları dizini altındaki gizli dizinler ailesidir. Bu önbellek derlemeleri, yapılandırma dosyalarını, uygulama ve kullanıcı ayarlarını ve veri dizini de dahil olmak üzere tüm uygulama dosyalarını barındırır. Önbellek, uygulamanın veri dizininin en son sürüme geçirmek için sorumludur. Veri geçişi hakkında daha fazla bilgi için bkz: [erişme yerel ve uzak veri ClickOnce uygulamalarında](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  

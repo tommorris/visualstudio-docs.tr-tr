@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269020"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Bir VSTO eklentisinin performansını artırma
   VSTO uygulamaları kapatın, bunlar hızlı bir şekilde başlatmak için Office için oluşturduğunuz eklentileri iyileştirerek, kullanıcılarınızın daha iyi bir deneyim sağlamak, öğeleri açın ve başka görevler gerçekleştirebilirsiniz. VSTO eklentinizi Outlook için ise, VSTO eklentinizi olacaktır fırsat da azaltabilir performansın nedeniyle devre dışı. Aşağıdaki stratejilerden uygulayarak VSTO eklentinizi performansını artırabilirsiniz:  

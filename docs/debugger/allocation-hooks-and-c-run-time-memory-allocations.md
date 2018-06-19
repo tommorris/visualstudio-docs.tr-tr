@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458079"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Atama Kancaları ve C Çalışma Zamanı Bellek Ayırmaları
 Bunlar açıkça yoksay gerekir, atama kanca işlevleri üzerinde çok önemli bir kısıtlamadır ise `_CRT_BLOCK` bloklar (C çalışma zamanı kitaplığı işlevleri tarafından dahili olarak yapılan bellek ayırmaları) tahsis C çalışma zamanı kitaplığı işlevleri yapılan her çağrı yaparsanız iç bellek. `_CRT_BLOCK` Blokları gibi işlevi aşağıdaki değerlerin başındaki kanca kod dahil göz ardı:  

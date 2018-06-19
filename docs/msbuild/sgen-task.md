@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570021"
 ---
 # <a name="sgen-task"></a>SGen Görevi
 XML serileştirme bütünleştirilmiş türleri için belirtilen derlemedeki oluşturur. Bu görev XML seri hale getirici Oluşturma Aracı (Sgen.exe) sarmalar. Daha fazla bilgi için bkz: [XML seri hale getirici Oluşturma Aracı (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575981"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator Görevi
 <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> Görev katıştırır bir veya daha fazla kaynak (.jpg, .ico, .bmp, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ikili biçimi ve diğer uzantı türleri) .resources dosyasına.  

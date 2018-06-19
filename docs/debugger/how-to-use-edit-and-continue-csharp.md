@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475190"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Nasıl Yapılır: Düzenle ve Devam Et'i Kullanma (C#)
 Düzenle ve devam et için C# ile kodunuza kesme modunda hata ayıklama sırasında değişiklik yapabilirsiniz. Değişiklikleri durdurmak ve hata ayıklama oturumu yeniden başlatmak zorunda kalmadan uygulanabilir.  

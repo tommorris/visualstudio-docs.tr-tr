@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481794"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Düzenle ve devam et iletişim kutusu (C++)
 Düzenle ve yerel koda yapılan değişiklikleri uygulanamadı devam edin. Bu geçici bir durum olabilir. Bazen Düzenle ve devam et, yerel kod değişikliklerini hemen uygulanamıyor ancak bunları daha sonra (örneğin, tamamlandıktan sonra şimdi yürütme yordamı geçerli çağrısı) hata ayıklama oturumu sırasında uygulayabilirsiniz. Daha fazla bilgi için bkz: [Düzenle ve devam et](../debugger/edit-and-continue.md).  

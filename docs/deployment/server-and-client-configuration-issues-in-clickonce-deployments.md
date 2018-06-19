@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562630"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce Dağıtımlarında Sunucu ve İstemci Yapılandırma Sorunları
 Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız Windows tanımadığı bir dosya türü içeriyorsa, bir Microsoft Word dosyası gibi dosya aktarmak IIS reddeder ve dağıtımınız başarısız olur.  

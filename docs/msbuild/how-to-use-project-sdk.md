@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569894"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Nasıl yapılır: MSBuild proje SDK'ları kullanın
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 "proje SDK", kavramı sunulan özellikler ve içeri aktarılacak hedefleri gerektiren yazılım geliştirme setlerini kullanan basitleştirir.

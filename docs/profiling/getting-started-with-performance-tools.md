@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576449"
 ---
 # <a name="getting-started-with-performance-tools"></a>Performans araçları ile çalışmaya başlama
 Bu bölümde, kavramlar ve toplamak, görüntülemek ve Visual Studio performans araçları kullanarak kod performansını analiz uygulayacağınız görevlerinin genel bakış sağlar.  

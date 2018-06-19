@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480052"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>İzlenecek Yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama
 Bu anlatımda kullanmak nasıl gösterilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] grafik Tanılama'nın hatalı bir gölgelendirici hata nedeniyle renkli bir nesne araştırın.  

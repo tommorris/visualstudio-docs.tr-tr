@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475697"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Devam Eden Hata Ayıklamayı Durdur İletişim Kutusu
 Bu iletişim kutusunu hata ayıklayıcısı hata ayıklama oturumu durdurulmaya çalışılırken zaman görünür, ancak belirli bir süre devam edecek oturumunu durdururken olur. Hata ayıklama oturumu durdurma normal olarak çok hızlı bir işlemdir ve bu iletişim kutusunda görüntülenmez. Bazı durumlarda, ancak bunu ayıklanacak tüm işlemleri ayırmak için ek zaman alır. Oturumunu durdururken birden fazla birkaç saniye sürer (veya bir ayırma hatası oluşursa), bu iletişim kutusu görüntülenir. Bu sıklıkla ortaya çıkarsa, dahili bir sorun nedeniyle olabilir ve Ürün Destek Hizmetleri'ne başvurun isteyebilirsiniz.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466064"
 ---
 # <a name="dia2dumpcpp-source-file"></a>Dia2dump.cpp Kaynak Dosyası
 Aşağıdaki Dia2dump.cpp kaynak kodunu .pdb dosyasının içeriğini görüntüler. Bu kaynak kodu tarafından kullanılan [Dia2dump örneği](../../debugger/debug-interface-access/dia2dump-sample.md).  

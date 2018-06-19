@@ -25,6 +25,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549044"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Nasıl yapılır: bir Outlook eklenti projesine form bölgesi ekleme
   Standart veya özel bir Microsoft Office Outlook form kullanarak genişletmek için bir form bölgesi oluşturmak **yeni Outlook Form bölgesi** Sihirbazı. Yeni bir form bölgesi oluşturmak ve Visual Studio kullanıcı arabiriminde tasarım veya Outlook'ta tasarlanan form bölgesini içeri aktarabilir ve Visual Basic veya C# kodu ekleyin.  

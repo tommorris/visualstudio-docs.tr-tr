@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480338"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>İzlenecek Yol: Web Formunda Hata Ayıklama
 Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması, Web formu olarak da bilinir. Bunu başlatmak ve yürütme durdurmak, kesme noktalarını ayarlayın ve değişkenleri incelemek nasıl gösterir **izleme** penceresi.  

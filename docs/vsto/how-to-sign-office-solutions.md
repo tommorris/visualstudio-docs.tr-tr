@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262197"
 ---
 # <a name="how-to-sign-office-solutions"></a>Nasıl yapılır: Office çözümlerini imzalama
   Bir çözümü imzalarsanız, kanıt olarak sertifika kullanarak çözümlerine güven verebilirsiniz. Birden çok çözümleri için aynı sertifikayı kullanabilirsiniz ve tüm çözümler hiçbir ek güvenlik ilkesi güncelleştirmeleriyle güvenilen olacaktır.  

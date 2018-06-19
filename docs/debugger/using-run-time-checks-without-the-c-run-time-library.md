@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481765"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>C Çalışma Zamanı Kitaplığını Kullanmadan Çalışma Zamanı Denetimlerini Kullanma
 C çalışma zamanı kitaplığı olmadan programınızı bağlantı varsa, kullanarak **/NODEFAULTLIB**ve çalışma zamanı denetimleri kullanmak istiyorsanız, RunTmChk.lib ile bağlamanız gerekir.  

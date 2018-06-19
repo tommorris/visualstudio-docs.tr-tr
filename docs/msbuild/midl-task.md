@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575731"
 ---
 # <a name="midl-task"></a>MIDL Görevi
 Microsoft arabirimi tanım dili (MIDL) derleyici aracı sarmalar midl.exe. Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  

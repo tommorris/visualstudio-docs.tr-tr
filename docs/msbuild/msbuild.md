@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576007"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmak için bir platformdur. Olarak da bilinen MSBuild olduğundan, bu altyapı yapı platformunu nasıl işler ve yazılım derlemeler denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio bağımlı değil. Proje ya da çözüm dosyanızı MSBuild.exe çağırarak düzenlemek ve ürünleri, Visual Studio yüklü olmayan ortamlarda oluşturun.  

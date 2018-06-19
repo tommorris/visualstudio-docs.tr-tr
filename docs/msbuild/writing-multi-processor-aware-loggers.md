@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572601"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Birden Çok İşlemciye Duyarlı Günlükçüler Yazılıyor
 Özelliğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birden çok işlemci yararlanmak için zaman derleme projesi düşmesine neden olur, ancak aynı zamanda olay günlüğü oluşturmak için karmaşıklık ekler. Bir tek işlemcili ortamda olayları, iletilerini, uyarıları ve hataları tahmin edilebilir ve sıralı bir şekilde Günlükçü ulaşır. Ancak, birden çok işlemcili ortamda farklı kaynaklardan gelen olayların aynı anda veya sıra dışı ulaşır. Bunun için sağlamak için [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] çok işlemciye duyarlı Günlükçü ve yeni bir günlük modeli sağlar ve özel "iletme günlükçüleri." oluşturmanıza olanak tanır  

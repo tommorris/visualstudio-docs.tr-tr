@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568356"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier Görevi
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> Kaynak kaynaklar bütünleştirilmiş kod içine katıştırılır o olarak bir dizi görev sınıflandırır. Bir kaynak yerelleştirilebilir değilse, ana uygulama derlemeye katıştırılır; Aksi takdirde, uydu derlemeye katıştırılır.  

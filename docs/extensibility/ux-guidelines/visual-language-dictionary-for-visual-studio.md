@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148853"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio için Visual dil sözlüğü
 Visual Studio ortak bir görsel dil kendi yansır ve diğer görüntülerin yapı taşlarıdır kavramları göstermek için kullanır. Yeni simgeler tasarlarken, bu sözlük kendi görüntünüzü iletmek istediğiniz kavramları tanımlamak için kullanın.  

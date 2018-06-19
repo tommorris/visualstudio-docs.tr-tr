@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472948"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Nasıl Yapılır: Yerel Çerçeveler Çağrı Yığını Penceresinde Olmadığında Yönetilen Kodların Dışına Adımlama
 Kodunuzu görünmez yerel çerçeveler olup olmadığını **çağrı yığını** penceresinde, yönetilen kodun dışına Adımlama beklenmeyen sonuçlar verebilir. Geçici bir çözüm olarak, bir kesme noktası yerine kullanabileceğiniz **Step Out**.  

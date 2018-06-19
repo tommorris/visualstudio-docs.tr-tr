@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477933"
 ---
 # <a name="command-line-capture-tool"></a>Komut satırı Yakalama aracı
 DXCap.exe bir grafik tanılama yakalama ve kayıttan yürütme için komut satırı aracıdır. Bu Direct3D 10 ile Direct3D 12 arasında tüm özellik düzeylerini destekler.  

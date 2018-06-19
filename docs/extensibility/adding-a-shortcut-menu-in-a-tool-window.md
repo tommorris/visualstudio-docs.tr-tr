@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568675"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Bir araç penceresinde bir kısayol menüsü ekleme
 Bu kılavuz bir kısayol menüsü araç penceresinde koyar. Bir kısayol menüsü kullanıcı düğme, metin kutusu veya pencere arka plan tıklattığında görünen menüsünde ' dir. Bir kısayol menü komutlarını diğer menüleri veya araç çubuklarını komutlarını olarak aynı şekilde davranır. Bir kısayol menüsü desteklemek için .vsct dosyasında belirtin ve yanıt fareyi sağ olarak görüntüleyin.  

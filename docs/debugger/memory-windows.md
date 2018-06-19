@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477553"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında bellek pencerelerini kullanma
 **Bellek** pencere, uygulamanız tarafından kullanılan bellek alanına bir görünüm sağlar. **İzleme** penceresinde **QuickWatch** iletişim kutusu, **otomobiller** penceresinde ve **Yereller** penceresini olan değişkenlerinin içeriğini göster belirli konumlara bellekte depolanır. Ancak **bellek** penceresi büyük ölçekli resim gösterir. Bu görünüm büyük (arabellekleri veya örneğin büyük dizeleri) de diğer windows gösterme veri parçaları incelemek için kullanışlı olabilir. Ancak, **bellek** penceresi verileri görüntülemek için sınırlı değildir. İçerik atanmamış bellekte verileri, kod veya Çöp rastgele bitleri olup her şeyi bellek alanını görüntüler.  

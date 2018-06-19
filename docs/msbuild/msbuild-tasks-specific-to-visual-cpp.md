@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573765"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++'ye Özgü MSBuild Görevleri
 Görevler oluşturma işlemi sırasında çalışan bir kod sağlar. Visual C++ yüklü olduğunda, aşağıdaki görevleri ile birlikte yüklenen listelenenlere kullanılabilir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Daha fazla bilgi için bkz: [MSBuild (Visual C++) genel bakış](/cpp/build/msbuild-visual-cpp-overview).  

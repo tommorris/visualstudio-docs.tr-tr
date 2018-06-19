@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477459"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend'de XAML hatalarını ayıklama
 Araçları kullanabilirsiniz [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] uygulamanızı XAML'de hata ayıklamak için. Proje oluşturma sırasında herhangi bir hata görüntülenir **sonuçları** paneli. Hata ile ilgili biçimlendirme bulmak için bir hata çift tıklayın. İş için daha fazla yer gerekiyorsa, gizleyebilirsiniz **sonuçları** F12 tuşuna basarak paneli.  

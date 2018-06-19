@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570482"
 ---
 # <a name="msbuild-reference"></a>MSBuild Başvurusu
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Yapı sistemidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki bağlantılar içeren konuları neden [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başvuru bilgileri.  

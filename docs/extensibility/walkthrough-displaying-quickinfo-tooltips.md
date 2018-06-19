@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146770"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>İzlenecek yol: Quıckınfo araç ipuçlarını görüntüleme
 Quıckınfo yöntem imzaları görüntüleyen bir IntelliSense özelliğidir ve açıklamaları bir kullanıcı bir yöntem adı işaretçinin taşır. Quıckınfo açıklamaları sağlamak istediğiniz tanımlayıcıları tanımlama ve ardından içeriği görüntülemek için bir araç ipucunda oluşturarak Quıckınfo gibi dil tabanlı özellikler uygulayabilirsiniz. Bir dil hizmeti bağlamında Quıckınfo tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve yalnızca bu tür için Quıckınfo görüntülemek veya varolan bir içerik türü (örneğin, "metin") için Quıckınfo görüntüleyebilirsiniz. Bu kılavuzda "metin" içerik türü için Quıckınfo görüntülemek nasıl gösterir.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561460"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce ve Authenticode
 *Authenticode* uygulamanın yayımcı özgünlüğünü doğrulayan dijital sertifikalar ile uygulama kodu imzalamak için endüstri standardı şifreleme kullanan bir Microsoft teknolojisidir. Uygulama dağıtımı için Authenticode kullanarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Truva atı riskini azaltır. Truva atı bir virüs veya kötü amaçlı bir üçüncü taraf kurulu olan güvenilir bir kaynaktan geliyor yasal bir program olarak görünen diğer zararlı program ' dir. İmzalama [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımları bir dijital sertifika ile olan dosya ve derlemeler değil doğrulamak için isteğe bağlı bir adım.  

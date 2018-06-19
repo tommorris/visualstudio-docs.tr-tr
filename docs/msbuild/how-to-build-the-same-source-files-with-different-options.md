@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575614"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl Yapılır: Farklı Seçeneklerle Aynı Kaynak Dosyaları Derleme
 Projeleri oluşturduğunuzda, farklı yapılandırma seçenekleriyle aynı bileşenleri sık derleyin. Örneğin, sembol bilgileri veya sembol bilgileri ile ancak iyileştirmeler yayın derlemesinde hata ayıklama derlemesi oluşturabilirsiniz. Veya x86 gibi belirli bir platformda çalıştırmak için bir proje oluşturabilirsiniz veya [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Bu durumlarda, yapı seçeneklerin çoğu aynı kalır; derleme yapılandırması denetlemek için yalnızca birkaç seçenekleri değişir. İle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], farklı bir yapı yapılandırmaları oluşturmak için özellikleri ve koşulları kullanın.  

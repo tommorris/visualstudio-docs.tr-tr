@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481833"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Visual Studio ile döküm dosyalarını kullanma
 Döküm dosyaları ile veya olmadan yığınlara; bir döküm dosyası oluşturun; döküm dosyası açın; ikili dosyaları, pdb'ın ve bir döküm dosyası için kaynak dosyası bulun.

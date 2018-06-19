@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127483"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: bir Atom oluşturmak için özel Galerisi akışı
 Bir Atom (uzantılarını içerir ve akışına ekleyen bir intranet konumu için RSS akışı) oluşturabileceğiniz **Uzantılar ve güncelleştirmeler** Özel Galeri olarak. Daha fazla bilgi için bkz: [özel galerileri](../extensibility/private-galleries.md).  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454589"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft İzleme Aracısı’nı kullanma
 Kullanarak IIS tarafından barındırılan ASP.NET web uygulamaları ve SharePoint 2010 veya 2013 uygulamaları hataları, performans sorunlarını ya da diğer sorunlar için yerel olarak izleyebilirsiniz **Microsoft İzleme Aracısı**. Tanılama olaylarını aracıdan bir IntelliTrace günlük (.iTrace) dosyasına kaydedebilirsiniz. Ardından tüm Visual Studio tanılama araçları ile sorunları hata ayıklamak için Visual Studio Enterprise'ı (ancak Professional veya topluluk sürümleri) oturum açabilirsiniz. Aracısı'nı çalıştırarak IntelliTrace Tanılama verilerini ve yöntem verilerini de toplayabilirsiniz **izleme** modu. Microsoft Monitoring Agent ile tümleştirilebilir [Application Insights](/azure/application-insights/) ve [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Yüklendiğinde Microsoft Monitoring Agent hedef sistemin ortam değiştirmez.  

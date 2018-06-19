@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571955"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Nasıl Yapılır: Önce Hangi Hedefin Derleneceğini Belirtme
 Bir veya daha fazla proje dosyası içerebilir `Target` proje nasıl yapılandırıldığını tanımlayan öğeleri. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Altyapısı derlemeler ilk proje dosyası içermedikçe bulur ve bağımlılıkları, bu proje bir `DefaultTargets` öznitelik, bir `InitialTargets` özniteliği ya da bir hedef belirtilen komut satırını kullanarak **/ Hedef** geçin.  

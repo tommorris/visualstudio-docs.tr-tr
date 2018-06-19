@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570892"
 ---
 # <a name="property-element-msbuild"></a>Özellik Öğesi (MSBuild)
 Kullanıcı tanımlı özellik adını ve değerini içerir. Kullanılan her özellik bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir alt öğesi olarak proje belirtilen bir `PropertyGroup` öğesi.  

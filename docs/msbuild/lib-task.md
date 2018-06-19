@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574226"
 ---
 # <a name="lib-task"></a>LIB Görevi
 Microsoft 32 Bit Kitaplık Yöneticisi Aracı sarmalar lib.exe. Kitaplığı Yöneticisi'ni oluşturur ve ortak nesne dosyası biçimi (COFF) nesne dosyaları içeren bir kitaplık yönetir. Kitaplık Yöneticisi ayrıca dışarı aktarma dosyaları oluşturabilir ve kitaplıkları için dışa aktarılan başvuru tanımını içeri aktarın. Daha fazla bilgi için bkz: [LIB başvurusu](/cpp/build/reference/lib-reference) ve [çalıştıran LIB](/cpp/build/reference/running-lib).  

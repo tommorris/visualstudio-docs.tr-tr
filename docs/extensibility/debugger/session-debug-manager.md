@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126239"
 ---
 # <a name="session-debug-manager"></a>Oturum hata ayıklama Yöneticisi
 Oturum hata ayıklama Yöneticisi'ni (SDM) herhangi bir sayıda makineler herhangi bir sayıda birden çok işlemi programlarında hata ayıklamayı debug motorları (DE) herhangi bir sayıda yönetir. Hata ayıklama altyapısı çoğaltıcı olmanın yanı sıra SDM IDE hata ayıklama oturumu birleşik bir görünümünü sağlar.  

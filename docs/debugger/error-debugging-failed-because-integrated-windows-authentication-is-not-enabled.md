@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477124"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Hata: Tümleşik Windows Kimlik Doğrulaması Etkinleştirilmediğinden Hata Ayıklama Başarısız
 Hata ayıklama isteyen kullanıcı kimlik doğrulaması, kimlik doğrulama hatası tarafından engellendi. Bir Web uygulaması veya XML Web Hizmetleri içinde adım çalıştığınızda oluşabilir. Bu hatanın bir nedeni, tümleşik Windows kimlik doğrulamasının etkinleştirilmemiş oluşturur. Etkinleştirmek için "Tümleşik Windows kimlik doğrulamasını etkinleştirmek için." adımları izleyin.  

@@ -37,6 +37,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575903"
 ---
 # <a name="link-task"></a>Bağlantı Görevi
 Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesne dosyası biçimi (COFF) nesne dosyaları ve kitaplıkları bir yürütülebilir dosyanın (.exe) dosyayı oluşturmak için veya bir dinamik bağlantı kitaplığı (DLL) bağlar. Daha fazla bilgi için bkz: [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  

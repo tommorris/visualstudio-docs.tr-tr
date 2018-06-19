@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262328"
 ---
 # <a name="average-cpu-utilization"></a>Ortalama CPU kullanımı
 Profili işlemin ortalama kullanımı sistemin mantıksal çekirdekler işlemi süresince gösterir. Grafiği, belirli bir zamanda hangi belirli çekirdek etkindir göstermez. Örneğin, iki çekirdek her belirli bir süre boyunca % 50 kapasiteyle çalıştırıyorsanız, bu görünüm kullanılan bir mantıksal çekirdek gösterir.  

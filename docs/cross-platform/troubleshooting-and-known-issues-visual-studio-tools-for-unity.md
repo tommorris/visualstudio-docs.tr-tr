@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562019"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun Giderme ve Bilinen Sorunlar (Unity için Visual Studio Araçları)
 Bu bölümde, bilinen sorunların açıklamaları Unity için Visual Studio Araçları ile sık karşılaşılan sorunlara çözümler bulmak ve hata bildirimi tarafından Unity için Visual Studio Araçları geliştirmek nasıl yardımcı olabileceğini öğrenin.

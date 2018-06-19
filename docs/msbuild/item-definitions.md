@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572510"
 ---
 # <a name="item-definitions"></a>Öğe Tanımları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 kullanarak proje dosyalarını öğelerde statik bildirimi etkinleştirir [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğesi. Ancak, meta veriler için tüm öğeleri aynı olsa bile, meta verileri yalnızca öğe düzeyinde eklenebilir. İtibariyle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, adlandırılmış bir proje öğesi [Itemdefinitiongroup](../msbuild/itemdefinitiongroup-element-msbuild.md) bu sınırlamaya üstesinden gelen. *Itemdefinitiongroup* adlandırılmış öğe türü içindeki tüm öğeler için varsayılan meta veri değerlerini ekleyin öğe tanımları kümesini tanımlamasına olanak tanır.  

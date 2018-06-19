@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575110"
 ---
 # <a name="generateresource-task"></a>GenerateResource Görevi
 .Txt, .resx (XML tabanlı kaynak biçimi) dosyaları ve bir çalışma zamanı ikili yürütülebilir dosya katıştırılmış veya uydu derlemelerini derlenmiş ortak dil çalışma zamanı ikili .resources dosyaları arasındaki dönüştürür. Bu görev, genellikle .txt veya .resx dosyaları .resource dosyalarına dönüştürmek için kullanılır. `GenerateResource` Görev benzer işlevsellik [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  

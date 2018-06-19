@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478245"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor.
 Bu ileti, uzaktan hata ayıklama İzleyicisi düzgün uzak makinede kurulu değil veya uzak makineye ağ sorunları veya bir güvenlik duvarı varlığını nedeniyle erişilemez durumda nedeniyle oluşabilir.

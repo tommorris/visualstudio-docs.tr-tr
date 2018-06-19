@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139646"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>İzlenecek yol: bir düzenleyici uzantı DTE nesnesine erişim
 VSPackages içinde çağırarak DTE nesne alabilirsiniz <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> yöntemi DTE nesne türüne sahip. Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantılarında aldığınız <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> ve ardından arama <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> yöntemi türüne sahip <xref:EnvDTE.DTE>.  

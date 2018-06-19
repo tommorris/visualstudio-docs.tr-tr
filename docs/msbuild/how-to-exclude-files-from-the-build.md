@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576813"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Nasıl Yapılır: Dosyaları Derlemeden Dışlama
 Proje dosyasında tüm dosyaları bir yapı için girdi olarak bir dizin veya dizinleri iç içe geçmiş bir dizi eklemek için joker karakterleri kullanabilirsiniz. Ancak, dizin veya iç içe geçmiş bir derleme için giriş olarak eklemek istiyor musunuz dizinleri birtakım bir dizinde bir dosyanız olabilir. Bu dosya veya dizin girişleri listeden açıkça dışlayabilirsiniz. Ayrıca olabilir. bir dosya yalnızca belirli koşullar altında dahil etmek istediğiniz bir proje. Bir derleme dosya dahil koşullar açıkça bildirebilir.  

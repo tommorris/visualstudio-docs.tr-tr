@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263156"
 ---
 # <a name="callercallee-view----contention-data"></a>Arayan/Aranan görünümü - çakışma verileri
 Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri Çekişme bilgilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  

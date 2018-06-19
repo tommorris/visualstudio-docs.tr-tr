@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481235"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Tetiklemek nasıl askıya alma, sürdürme ve Visual Studio UWP uygulamalarında hata ayıklama sırasında arka plan olayları
 Ne zaman değil ayıkladığınız, Windows **işlem yaşam süresi Management** (PLM) denetimleri, uygulamanızın yürütme durumu — başlatma, askıya alma, sürdürme ve uygulama yanıt kullanıcı eylemleri ve aygıtın durumu olarak sonlandırılıyor. Hata ayıklama yaptığınız Windows bu etkinleştirme olayları devre dışı bırakır. Bu konu, bu olayları hata ayıklayıcısında yangın açıklar.  

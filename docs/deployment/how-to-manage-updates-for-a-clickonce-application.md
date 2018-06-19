@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562552"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Güncelleştirmeleri Yönetme
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalarını otomatik olarak veya program aracılığıyla denetleyebilirsiniz. Geliştirici olarak çok sayıda güncelleştirme denetimleri ne zaman ve nasıl yapılır, güncelleştirmelerinin zorunlu olup ve uygulama güncelleştirmeleri nerede denetleyeceğini belirtme esneklik vardır.  

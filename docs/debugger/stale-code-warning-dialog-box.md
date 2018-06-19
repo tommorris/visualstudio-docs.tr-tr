@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481482"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Eski Kod Uyarısı İletişim Kutusu
 Yerel yapılan değişiklikler kod yaptıktan sonra bu iletişim kutusu görünür **Düzenle ve devam et** hemen geçerli. Geçerli yığın çerçevesini bazı yerel kodda bir sonuç artık güncel olduğu gibi diğer bir deyişle, eski. Daha fazla bilgi için bkz: [nasıl yapılır: çalışma ile eski kod](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548563"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Nasıl Yapılır: Word Belgelerine veya Excel Çalışma Kitaplarına Eylemler Bölmesi Ekleme
   Microsoft Office Word belgesine veya Microsoft Excel çalışma kitabına Eylemler bölmesi eklemek için önce bir Windows Forms kullanıcı denetimi oluşturun. Ardından, kullanıcı denetimi Ekle <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> özelliği `ThisDocument.ActionsPane` alan (Word) veya `ThisWorkbook.ActionsPane` projenizdeki alanı (Excel).  

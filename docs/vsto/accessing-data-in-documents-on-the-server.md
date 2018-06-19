@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267744"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Sunucudaki belgelerde verilere erişmek
   Microsoft Office Word veya Microsoft Office Excel nesne modelini kullanmak zorunda kalmadan bir belge düzeyi özelleştirmelerinde veri karşı programlama yapabilirsiniz. Bu belgede Word sahip olmayan bir sunucuda bulunan verilere erişebilir veya Excel yüklü anlamına gelir. Örneğin, bir sunucuda kod (örneğin, bir [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfa) bir belgedeki verileri özelleştirebilir ve özelleştirilmiş belgeyi son kullanıcıya gönderin. Son kullanıcı belgeyi açtığında, veri bağlama çözüm bütünleştirilmiş kodda özelleştirilmiş veri belgeye bağlar. Belgedeki verileri kullanıcı arabiriminden ayrılmış olduğundan, bu mümkündür. Daha fazla bilgi için bkz: [belge düzeyi özelleştirmelerinde verileri önbelleğe](../vsto/cached-data-in-document-level-customizations.md).  

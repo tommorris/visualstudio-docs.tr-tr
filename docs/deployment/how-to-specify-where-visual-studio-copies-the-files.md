@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557898"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Nasıl yapılır: Visual Studio'nun Dosyaları Nereye Kopyalayacağını Belirtme
 ClickOnce kullanarak bir uygulamayı yayımladığınızda `Publish Location` özelliği, burada bildirimi ve uygulama dosyalarını konur konumu belirtir. Bu, bir dosya yolu veya FTP sunucusu yolu olabilir.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565646"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Nasıl yapılır: ClickOnce Yayım Sürümünü Otomatik Olarak Artırma
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] değiştirmek uygulamanın `Publish Version` özellik, bir güncelleştirme olarak yayımlanan uygulamaya eklenmesine neden olur. Varsayılan olarak, Visual Studio otomatik olarak arttırır `Revision` sayısı `Publish Version` her uygulama yayımlayın.  

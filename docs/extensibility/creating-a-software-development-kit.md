@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109184"
 ---
 # <a name="creating-a-software-development-kit"></a>Bir yazılım geliştirme seti oluşturma
 Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak başvurabilir API'leri koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu projeye uygun olan tüm SDK'ları listeler. Bir projeye bir SDK eklediğinizde API'lerini Visual Studio'da kullanılabilir.  

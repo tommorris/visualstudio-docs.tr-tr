@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475473"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Nasıl Yapılır: WPF Ağacı Görselleştiricisini Kullanma
 WPF ağacı görselleştiricisini bir WPF nesnesinin görsel ağaç keşfetmek için ve o ağaç içinde bulunan nesneleri WPF bağımlılık özelliklerini görüntülemek için kullanabilirsiniz. Görsel ağaçlar hakkında daha fazla bilgi için bkz: [WPF ağaçlarında](/dotnet/framework/wpf/advanced/trees-in-wpf). Bağımlılık özellikleri hakkında daha fazla bilgi için bkz: [bağımlılık özelliklerine genel bakış](/dotnet/framework/wpf/advanced/dependency-properties-overview).  

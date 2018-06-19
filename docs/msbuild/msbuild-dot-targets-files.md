@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571314"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets Dosyaları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğeleri, özellikler, hedefleri ve görevleri ortak senaryolar için içeren birkaç .targets dosyaları içerir. Bu dosyalar çoğu otomatik olarak içeri aktarılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje Bakım ve okunabilirliği kolaylaştırmak için dosyaları.  

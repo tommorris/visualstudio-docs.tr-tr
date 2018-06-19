@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570684"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl Yapılır: Derlenecek Dosyaları Seçme
 Bir projeyi derlerken birkaç dosyaları içeren, proje dosyası içinde ayrı ayrı her dosya listesi veya bir dizin veya dizinleri iç içe geçmiş bir dizi tüm dosyaları eklemek için joker karakterleri kullanabilirsiniz.  

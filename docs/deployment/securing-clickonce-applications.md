@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562474"
 ---
 # <a name="securing-clickonce-applications"></a>ClickOnce Uygulamalarının Güvenliğini Sağlama
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kod erişim güvenliği sınırlamalarına kod korumalı kaynaklara ve işlemlere sahip erişimi sınırlamak yardımcı olmak için .NET Framework uygulamaları tabidir. Bu nedenle, yazmak için kod erişim güvenliği etkilerini anlamak önemlidir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaların uygun şekilde. Uygulamalarınız erişim için Internet ve Intranet gibi tam güven veya kısmi bölgeler kullanabilir.  

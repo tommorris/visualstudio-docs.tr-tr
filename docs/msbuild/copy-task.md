@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570170"
 ---
 # <a name="copy-task"></a>Kopyalama Görevi
 Dosyaları, dosya sisteminde yeni bir konuma kopyalar.  

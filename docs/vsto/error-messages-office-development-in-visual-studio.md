@@ -20,6 +20,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263283"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Hata iletileri (Visual Studio'da Office Geliştirme)
   Her hata iletisi konu sorunu çözmek için olası nedenler bir hata ve olası çözümleri veya geçici çözümler için bilgi sağlar.  

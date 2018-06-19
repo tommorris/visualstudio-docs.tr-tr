@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572995"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly Görevi
 Uygulama .NET Framework 3.5 SP1 gerekli olup olmadığını belirler.  

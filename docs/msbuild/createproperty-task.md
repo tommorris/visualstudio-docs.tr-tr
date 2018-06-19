@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566699"
 ---
 # <a name="createproperty-task"></a>CreateProperty Görevi
 Geçirilen değerleri özellikleri doldurur. Bu, bir özellik veya dize diğerine kopyalanması için değerler sağlar.  

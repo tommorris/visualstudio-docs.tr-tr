@@ -31,6 +31,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472584"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Visual C++'de Hata Ayıklama Özelliklerini Etkinleştirme (/D_DEBUG)
 İçinde [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], simgenin programınızla derlediğinizde onaylar etkinleştirilen gibi hata ayıklama özellikleri **_DEBUG** tanımlanmış. Tanımlayabileceğiniz **_DEBUG** iki yoldan biriyle:  

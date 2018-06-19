@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560446"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Özel İzinleri Ayarlama
 Dağıtabilmeniz için bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Internet veya yerel Intranet bölgeleri için varsayılan izinler kullanan uygulama. Alternatif olarak, uygulamanın ihtiyacı özel izinler için özel bir bölge oluşturabilirsiniz. Bunu üzerinde güvenlik izinlerini özelleştirerek yapmak **güvenlik** sayfasında **Proje Tasarımcısı**.  

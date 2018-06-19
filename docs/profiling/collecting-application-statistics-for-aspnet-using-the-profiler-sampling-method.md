@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263035"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>ASP.NET web uygulamaları için istatistikleri toplama
 

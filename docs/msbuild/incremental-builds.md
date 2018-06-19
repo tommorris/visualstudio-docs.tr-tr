@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572982"
 ---
 # <a name="incremental-builds"></a>Artımlı Derlemeler
 Artımlı derlemeler en iyi duruma getirilir ve böylece ilgili giriş dosyalarına göre güncel çıkış dosyalarınız hedefleri yürütülmez derlemeleri ' dir. Hedef öğe hem de sahip olabilir bir `Inputs` hangi hedef öğeler belirten özniteliği giriş olarak bekliyor ve bir `Outputs` hangi üretir çıkış olarak öğeler belirten özniteliği. MSBuild, bu öznitelik değerleri 1-1 eşlemesini bulmaya çalışır. 1-1 eşleme varsa, MSBuild giriş her zaman damgasını öğesine karşılık gelen kendi çıktı öğenin zaman damgasını karşılaştırır. 1-1 eşleme çıkış dosyaları için tüm giriş dosyaları karşılaştırılır. Kendi çıktı dosyasını aynı yaş ise güncel ya da kendi giriş dosya veya dosyalar daha yeni bir öğe olarak kabul edilir.  

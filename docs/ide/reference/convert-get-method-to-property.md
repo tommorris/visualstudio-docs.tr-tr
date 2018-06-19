@@ -19,6 +19,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34064397"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>GET yöntemi özelliğine Dönüştür / özellik Get yöntemi yapan yeniden düzenlemeler için Dönüştür
 

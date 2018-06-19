@@ -22,6 +22,7 @@ ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/15/2018
+ms.locfileid: "34178014"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Güvenlik Uyarısı: güvenilmeyen bir kullanıcıya ait bir işlem ekleme tehlikeli olabilir. Aşağıdaki bilgiler şüpheli görünüyorsa veya emin değilseniz, bu işlem için eklemeyin
 Kısmen güvenilen kod içeren veya hemen ekleme oluşmadan önce güvenilmeyen bir kullanıcıya ait olan bir işlem eklediğinizde bu uyarı iletişim kutusu görüntülenir. Kötü amaçlı kod içeren güvenilmeyen bir işlem hata ayıklama yapmadan bilgisayar zarar olasılığı vardır. İşlem güvenmeyecekleri nedeniniz sonra tıklamanız **iptal** hata ayıklama önlemek için.  

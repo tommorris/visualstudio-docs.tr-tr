@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146097"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>İzlenecek yol: Bir başlangıç sayfasında kullanıcı ayarlarını kaydetme
 Kullanıcı ayarları için başlangıç sayfanızı devam edebilir. Bu kılavuzu izleyerek, kullanıcı bir düğmesine tıkladığında ve başlangıç sayfası yükleyen her zaman bu ayarı alır, bir ayar kayıt defterine kaydettiği bir denetim oluşturabilirsiniz. Başlangıç sayfası proje şablonu özelleştirilebilir kullanıcı denetimini içerir ve varsayılan başlangıç sayfası XAML denetleyen çağırır çünkü başlangıç sayfası kendisini değiştirmek gerekmez.  

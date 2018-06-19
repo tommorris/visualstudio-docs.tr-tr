@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477894"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>DebuggerTypeProxy Özniteliğini Kullanma
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> bir proxy ya da bir türü ve türü yolu hata ayıklayıcı Windows'da görüntülenir değişiklikler için stand-in belirtir. Bir proxy sahip bir değişken görüntülediğinizde, proxy özgün türü için anlamına gelir **görüntülemek**. Hata ayıklayıcı değişken penceresinde yalnızca Genel üyeler proxy türü görüntüler. Özel üyelerin görüntülenmez.  

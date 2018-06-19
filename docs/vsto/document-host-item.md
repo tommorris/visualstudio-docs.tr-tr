@@ -26,6 +26,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448382"
 ---
 # <a name="document-host-item"></a>Belge konak öğesi
   <xref:Microsoft.Office.Tools.Word.Document> Konak öğesi türüdür genişleten bir <xref:Microsoft.Office.Interop.Word.Document> Word için birincil birlikte çalışma derlemesinden türü. <xref:Microsoft.Office.Tools.Word.Document> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Word.Document> nesnesi, ancak ayrıca ek olayları gösterir ve ana bilgisayar denetimleri ve Windows Forms denetimleri için kapsayıcı görevi görür.  

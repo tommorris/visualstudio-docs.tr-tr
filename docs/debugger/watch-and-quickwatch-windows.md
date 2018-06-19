@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478769"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Bir izleme izleme ve QuickWatch Windows Visual Studio kullanarak değişkenleri ayarlayın
 Hata ayıklarken, kullanabileceğiniz **izleme** ve **QuickWatch** değişkenleri ve ifadeler izlemek için windows.  Aralarındaki fark **izleme** penceresi birkaç değişkenleri görüntüleyebilir sırada **QuickWatch** penceresi, aynı anda tek bir değişken görüntüler. 

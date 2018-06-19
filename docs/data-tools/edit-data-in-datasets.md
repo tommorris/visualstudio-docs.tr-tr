@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926385"
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 Herhangi bir veritabanı bir tablodaki verileri düzenleme çok gibi veri tablolarındaki verileri düzenleyin. İşlem ekleme, güncelleştirme ve tablodaki kayıt silme içerebilir. Veri bağlama formunda, hangi alanlar kullanıcı düzenlenebilir belirtebilirsiniz. Bu durumlarda, böylece değişiklikleri veritabanına geri daha sonra gönderilebilir tüm değişiklik izleme veri bağlama altyapısı işler. Verileri programlı olarak düzenlemeleri yapın ve bu değişiklikleri veritabanına geri göndermek istiyorsanız, nesneleri ve değişiklik izleme bunu yöntemleri kullanmanız gerekir.

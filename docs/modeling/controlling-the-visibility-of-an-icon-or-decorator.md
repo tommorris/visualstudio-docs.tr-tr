@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951378"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Bir Simgenin veya Dekoratörün Görünürlüğünü Denetleme
 A *oluşturma öğesi* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde görünür metin satırının. Oluşturma öğesi görünmesi yapın ve model özelliklerinde durumunu bağlı olarak kaybolur. Örneğin, bir kişinin temsil eden bir şekli üzerinde alt, sayısını kişinin cinsiyeti bağlı olarak görünür ve benzeri farklı simgeleri olabilir.

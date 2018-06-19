@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927210"
 ---
 # <a name="create-relationships-between-datasets"></a>Veri kümeleri arasında ilişkiler oluşturun
 İlgili verileri içeren veri kümeleri tabloları kullanım <xref:System.Data.DataRelation> nesneleri tabloları arasında bir üst/alt ilişkisi temsil eder ve ilgili kayıtları birbirlerinden döndürmek için. İlgili tablolar kullanarak veri kümelerine ekleme **veri kaynağı Yapılandırma Sihirbazı**, veya **veri kümesi Tasarımcısı**, oluşturur ve yapılandırır <xref:System.Data.DataRelation> nesnesi.

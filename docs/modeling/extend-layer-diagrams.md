@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949286"
 ---
 # <a name="extend-dependency-diagrams"></a>Bağımlılık diyagramlarını genişletme
 Kod oluşturma ve bağımlılık diyagramları güncelleştirir ve Visual Studio'da bağımlılık diyagramları karşı program kodunuzu yapısını doğrulamak için yazabilirsiniz. Diyagramları (içerik) kısayol menüsünde görüntülenen, sürükle ve bırak hareketleri özelleştirmek ve katman modeli metin şablonlardan erişim komutları ekleyebilirsiniz. Bu uzantılar bir Visual Studio Tümleştirme Uzantısı (VSIX) paketini ve diğer Visual Studio kullanıcılara dağıtın.

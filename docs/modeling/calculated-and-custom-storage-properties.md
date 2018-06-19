@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951316"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Hesaplanan ve Özel Depolama Özellikleri
 Bir etki alanına özgü dil (DSL) tüm etki alanı özelliklerinde diyagramında ve dil Gezgini'nde kullanıcıya görüntülenen ve program kodu tarafından erişilebilir. Ancak, Özellikler değerlerine depolanan şekilde farklılık gösterir.

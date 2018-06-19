@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107504"
 ---
 # <a name="creating-a-settings-category"></a>Ayarları kategorisi oluşturma
 Bu kılavuzda bir Visual Studio ayarları kategori oluşturmak ve değerlerini kaydetmek ve değerleri ayarları dosyasından geri yüklemek için kullanın. Ayarları kategorisi "özel ayarları noktası"; görünür ilgili özellikleri grubudur. diğer bir deyişle, bir onay kutusu olarak **içeri ve dışarı aktarma ayarları** Sihirbazı. (Üzerinde Bul **Araçları** menü.) Ayarları kaydedilmez veya kategori olarak geri ve tek tek ayarların Sihirbazı'nda görüntülenmez. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  

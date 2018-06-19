@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953622"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 Metin Şablonları Yazma Yönergeleri
 Şu genel yönergeleri program kodunun veya diğer uygulama kaynakları oluşturma durumunda yararlı olabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Kuralları sabit değil.

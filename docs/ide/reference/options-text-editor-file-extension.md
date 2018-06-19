@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945746"
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 Bu seçenekler iletişim kutusu, belirli dosya uzantılarına sahip tüm dosyaların nasıl belirtmenize olanak sağlar Visual Studio tümleşik geliştirme ortamını (IDE) tarafından ele alınacaktır. Her **uzantısı** girdiğiniz, bir düzenleme deneyimi seçebilirsiniz. Bu IDE Düzenleyicisi'ni veya belirli bir türde belgeleri açılacağı Tasarımcısı seçmenize olanak sağlar. Bu seçenekleri görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **metin düzenleyici** düğümü ve select **dosya uzantısı**.

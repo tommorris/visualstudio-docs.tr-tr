@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945460"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Bir kod simgesi yeniden düzenleme yeniden adlandırma
 

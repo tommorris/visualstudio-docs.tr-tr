@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953092"
 ---
 # <a name="structure-your-modeling-solution"></a>Modelleme çözümünüzün yapısını oluşturma
 Bir geliştirme projesinde modelleri etkili bir şekilde kullanmak için ekip üyelerinin projenin farklı parçaları modeller üzerinde aynı anda çalışabilir olması gerekir. Bu konu genel bir Katmanlar karşılık farklı bölümleri uygulamasına bölmek için bir düzen önermektedir katman diyagramı.

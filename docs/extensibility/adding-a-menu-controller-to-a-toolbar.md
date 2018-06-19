@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104637"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Menü denetleyicisi araç çubuğuna ekleme
 Bu kılavuzda derlemeler [araç çubuğu araç penceresi için ekleme](../extensibility/adding-a-toolbar-to-a-tool-window.md) gözden geçirme ve araç penceresi araç için bir menü denetleyicisi eklemeyi gösterir. Burada gösterilen adımları da oluşturulan araç uygulanabilir [araç çubuğu ekleme](../extensibility/adding-a-toolbar.md) gözden geçirme.  

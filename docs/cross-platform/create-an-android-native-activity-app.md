@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066131"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android yerel etkinlik uygulama oluşturma
 Platformlar arası mobil geliştirme seçeneği için Visual C++ yüklediğinizde Visual Studio 2015 tam olarak işlevsel Android yerel etkinlik uygulamaları oluşturmak için kullanılabilir. Android yerel Geliştirme Seti (NDK) saf C/C++ kod kullanarak Android uygulamanızı çoğunluğu uygulamak olanak tanıyan bir araç setidir. Bazı Java JNI kodu, C/C++ kodu Android ile etkileşim kurmasına izin vermek için bağlantılı olarak görev yapar. Android NDK yerel etkinlik uygulamaları ile Android API Düzey 9 oluşturabilme sunmuştur. Yerel etkinlik kod Unreal Engine veya OpenGL kullanan oyun ve grafik yoğun uygulamalar oluşturmak için yaygın olarak kullanılır. Bu konuda OpenGL kullanan basit bir yerel etkinlik uygulama oluşturulmasını yol gösterecektir. Ek konular düzenleme, oluşturma, hata ayıklama ve yerel etkinlik kod dağıtma Geliştirici yaşam döngüsü yol.  

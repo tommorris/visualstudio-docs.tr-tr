@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944885"
 ---
 # <a name="assembly-information-dialog-box"></a>Derleme Bilgileri İletişim Kutusu
 **Derleme bilgilerini** iletişim kutusu değerleri belirtmek için kullanılan [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] projenizi ile otomatik olarak oluşturulan AssemblyInfo dosyasında depolanan genel derleme öznitelikleri. İçinde **Çözüm Gezgini**, dosya bulunan **My proje** düğümünde [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (tıklatın **tüm dosyaları göster** görüntülemek için); altında bulunan  **Özellikler** içinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Derleme özniteliklerinin hakkında daha fazla bilgi için bkz: [öznitelikleri](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).

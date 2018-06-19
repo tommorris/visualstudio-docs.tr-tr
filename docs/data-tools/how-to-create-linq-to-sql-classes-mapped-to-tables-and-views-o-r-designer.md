@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924641"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Nasıl yapılır: LINQ tabloları ve görünümleri (O/R Tasarımcısı) eşlenen SQL sınıfları için oluşturma
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Veritabanı tabloları ve görünümleri eşlenen sınıfları çağrılır *sınıflar*. Bir kaydı oluşturan sütunları tek tek tek tek bir varlık sınıfı özelliklerini Eşle ancak varlık sınıfı bir kayda eşler. Tabloları veya görünümleri sürükleyerek veritabanı tabloları veya görünümleri göre varlık sınıfları oluşturmak **Sunucu Gezgini**/**Database Explorer** üzerine [LINQ-SQL araçları Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Sınıfları oluşturur ve belirli geçerlidir [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] etkinleştirmek için öznitelikler [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] işlevi (veri iletişimi ve özelliklerini düzenleme <xref:System.Data.Linq.DataContext>). Hakkında ayrıntılı bilgi için [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sınıfları için bkz [LINQ to SQL nesne modeli](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).

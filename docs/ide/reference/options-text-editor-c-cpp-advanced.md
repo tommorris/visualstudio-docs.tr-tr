@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953469"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Seçenekler, Metin Düzenleyici, C/C++, Gelişmiş
 Bu seçeneklerinde değişiklik yaparak C veya C++ programlama zaman IntelliSense ve gözatma veritabanı ile ilgili davranışı değiştirebilirsiniz.

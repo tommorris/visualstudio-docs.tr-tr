@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945876"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Visual Basic Varsayılanları, Projeler, Seçenekler İletişim Kutusu
 Visual Basic proje seçenekleri için varsayılan ayarları belirtir. Yeni bir proje oluşturduğunuzda, belirtilen seçenek deyimleri proje başlığı Kod Düzenleyicisi'nde eklenir. Seçenekler tüm Visual Basic projeleri için geçerlidir.

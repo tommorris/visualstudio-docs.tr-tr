@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952002"
 ---
 # <a name="signing-page-project-designer"></a>İmzalama Sayfası, Proje Tasarımcısı
 Kullanım **imzalama** sayfasında **Proje Tasarımcısı** uygulama ve dağıtım bildirimlerini imzalama ve (tanımlayıcı ad imzası) derlemeyi imzalamak için.

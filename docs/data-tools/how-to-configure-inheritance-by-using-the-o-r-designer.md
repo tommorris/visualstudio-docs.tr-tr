@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925381"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Nasıl yapılır: devralma O/R Tasarımcısı kullanarak yapılandırma
 [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) Genellikle ilişkisel sistemlerinde gerçekleştirilir gibi tek Tablo Devralma kavramını destekler. Tek Tablo Devralma üst bilgi ve alt bilgi alanları içeren bir tek veritabanı tablo yok. İlişkisel veri ile ayrıştırıcı sütunun herhangi bir kaydın ait hangi sınıfı belirleyen bir değer içerir.

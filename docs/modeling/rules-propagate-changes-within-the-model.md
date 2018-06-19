@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952765"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Değişiklikleri Modelin İçinde Yayan Kurallar
 Bir değişiklik bir öğeden başka bir Görselleştirme ve modelleme SDK (VMSDK) yaymak için bir depolama kural oluşturabilirsiniz. Herhangi bir öğeye deposunda bir değişiklik meydana geldiğinde kuralları genellikle en dıştaki işlem tamamlandığında, yürütülecek zamanlanır. Farklı bir öğe ekleme veya silme gibi olaylar, farklı türleri için kuralı türü vardır. Öğeleri, şekiller veya diyagramları belirli türleri için kurallar ekleyebilirsiniz. Birçok yerleşik özellikleri kuralları tarafından tanımlanır: Örneğin, kuralları model değiştiğinde bir diyagram güncelleştirildiğinden emin olun. Kendi kurallarınızı ekleyerek, etki alanına özgü dil özelleştirebilirsiniz.

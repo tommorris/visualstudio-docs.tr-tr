@@ -42,6 +42,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925920"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araçları sağlar ve [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], oluşturmak için Microsoft teknolojilerini dağıtılmış uygulamalar. Bu konuda Hizmetleri'nden tanıtılmaktadır bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektif. Tam belgeler için bkz: [WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index).

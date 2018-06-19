@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942584"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 Tüm listeleyen bir ileti kutusu görüntüler `devenv` anahtarlarla her biri kısa bir açıklaması.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944693"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Seçenekler Sayfası, Yazı Tipleri ve Renkler Düğümü Özellikleri
 Yazı tipi ve renk özellikleri altında görünmesi kayıtlı bir araç penceresi için bu belgede açıklanan **yazı tiplerini ve renkleri** içinde **ortam** kategorisini **seçenekleri** iletişim kutusu. Bu öğelerin VSPackages yüklediyseniz veya değiştirebilirsiniz colorable, grupları dinamik yapısını destekler.

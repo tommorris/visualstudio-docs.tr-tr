@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953603"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 Girişi API'si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK böylece okuma ancak değişmez bir programa kilit bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli sağlar. Bu salt okunur seçeneği, örneğin, böylece kullanıcı açıklama ve DSL modeli gözden geçirmek için iş arkadaşlarınızı isteyebilir, ancak bunları özgün değiştirmesini engellemek kullanılabilir.

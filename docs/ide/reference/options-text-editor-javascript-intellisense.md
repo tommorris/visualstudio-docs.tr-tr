@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948814"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
 Kullanım **IntelliSense** sayfasında **seçenekleri** için JavaScript IntelliSense davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebileceğiniz **IntelliSense** seçerek sayfa **Araçları**, **seçenekleri** menü çubuğunda, ve ardından genişletme **Metin Düzenleyicisi**,  **JavaScript**, **IntelliSense.**

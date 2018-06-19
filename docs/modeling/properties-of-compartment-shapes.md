@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952174"
 ---
 # <a name="properties-of-compartment-shapes"></a>Bölme Şekillerinin Özellikleri
 Bölme şekiller bir etki alanı sınıfının bir etki alanına özgü dil görüntülemek için kullanabilirsiniz şekiller biridir. Genişletin ve bölmeler daraltın.

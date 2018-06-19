@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948580"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Seçenekler, Metin Düzenleyici, Tüm Diller, Sekmeler
 Bu iletişim kutusu, Kod Düzenleyicisi'nin varsayılan davranışı değiştirmenizi sağlar. Bu ayarlar üzerinde kod düzenleyicisinde, HTML Tasarımcısı kaynağı görünümü gibi temel diğer düzenleyiciler için de geçerlidir. Bu seçenekleri görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsü. İçinde **metin düzenleyici** klasörünü genişletin **tüm diller** alt ve ardından **sekmeleri**.

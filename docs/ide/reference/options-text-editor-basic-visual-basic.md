@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945863"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Seçenekler, Metin Düzenleyici, Temel (Visual Basic)
 **VB belirli** özellik sayfasında **temel** klasöründe **metin düzenleyici** klasöründe **seçenekleri** (**Araçları** menüsü) iletişim kutusu aşağıdaki özellikleri içerir:

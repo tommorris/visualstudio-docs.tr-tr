@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948967"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>My Extensions Sayfası, Proje Tasarımcısı (Visual Basic)
 Kullanım **My Extensions** sayfasında **Proje Tasarımcısı** yönetmek için `My` projenizdeki ad alanı uzantıları. `My` ad alanı uzantılarını etkinleştirme özelleştirmenizi `My` kendi özel üye eklemek için ad alanı. Özel oluşturma hakkında daha fazla bilgi için `My` ad alanı uzantılarını görmek [Visual Basic'te My Namespace genişletme](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

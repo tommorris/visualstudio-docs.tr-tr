@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926711"
 ---
 # <a name="query-datasets"></a>Sorgu veri kümeleri
 Bir veri kümesinde belirli kayıtları aramak için DataTable nesnesinde FindBy yöntemini kullanmak, tablonun satır koleksiyon üzerinde döngü veya kullanmak için kendi foreach deyimi yazma [LINQ-DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

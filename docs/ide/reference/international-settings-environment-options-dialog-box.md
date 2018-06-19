@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944794"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu
 Uluslararası ayarlar sayfasını makinenize yüklü tümleşik geliştirme ortamı (IDE) birden fazla dil sürümü varsa, varsayılan dil değiştirmenize izin verir. Seçerek bu iletişim kutusuna erişebilirsiniz **seçenekleri** gelen **Araçları** menüsüne ve ardından seçme **uluslararası ayarları** gelen **ortamı** klasör. Bu sayfayı listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.

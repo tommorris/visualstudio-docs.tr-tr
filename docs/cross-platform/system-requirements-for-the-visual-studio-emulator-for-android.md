@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31068667"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 Android için Visual Studio öykünücüsü Hyper-V, Windows 8 ve sonraki sürümler için sanallaştırma teknolojisi sanal makine olarak çalışır. Öykünücü çalıştırmak için bilgisayarınızı bu konu başlığı altında açıklandığı gibi Hyper-V çalıştırmak için gereksinimleri karşılaması gerekir.  

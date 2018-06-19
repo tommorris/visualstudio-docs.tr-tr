@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948200"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Görselleştirme ve SDK Modelleme için Desteklenen Visual Studio Sürümleri
 Aşağıdaki ile desteklenen Visual Studio sürümlerini listeleridir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] geliştirme ve dağıtım ortamlarda. Bu sürümleri hakkında daha fazla bilgi için bkz: Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Geliştirici Merkezi](http://go.microsoft.com/fwlink/?LinkId=75628).

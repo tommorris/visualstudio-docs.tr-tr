@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900636"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Yönetilen kod için Temel Doğruluk Kuralları kural kümesi
 Mantık hataları ve yaygın hataları framework API kullanımı temel doğruluk kuralları kural kümesi odaklanır. Temel doğruluk kuralları kural Minimum önerilen kurallar kural kümesi içerir. Daha fazla bilgi için bkz: [yönetilen kod için yönetilen önerilen kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) bu kural uyarı kuralları rapor önerilen en az listede genişletmek için kümesi içermelidir.

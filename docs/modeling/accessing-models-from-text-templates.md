@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952332"
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 Metin şablonları kullanarak raporu dosyalarını, kaynak kodu dosyaları ve etki alanına özgü dil modellerinde bağlı diğer metin dosyaları oluşturabilirsiniz. Metin şablonları hakkında temel bilgiler için bkz: [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonları, DSL ayıklarken Deneysel modunda çalışır ve DSL dağıtmış olan bir bilgisayarda da çalışır.

@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926816"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: bir WCF veri hizmetine WPF ve Entity Framework ile oluşturma
 Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] içinde barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması ve bir Windows Forms uygulamasında erişebilir.

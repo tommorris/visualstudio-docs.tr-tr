@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946656"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Seçenekler İletişim Kutusu (Visual Studio)
 **Seçenekleri** iletişim kutusu gereksinimlerinize tümleşik geliştirme ortamı (IDE) yapılandırmanıza olanak sağlar. Örneğin, bir varsayılan kaydetme konumu projeleriniz için kurmak, varsayılan görünümü ve davranışı, Windows'un alter ve sık kullanılan komutlar için kısayolları oluşturun. Ayrıca seçenekler vardır, geliştirme dilini ve platform özel. Erişebileceğiniz **seçenekleri** gelen **Araçları** menüsü.

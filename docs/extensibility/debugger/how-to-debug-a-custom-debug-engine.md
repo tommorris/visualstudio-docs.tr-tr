@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106987"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl yapılır: bir özel hata ayıklama altyapısı hata ayıklama
 Proje türü gelen hata ayıklama altyapısı (DE) başlatan <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> yöntemi. Bu örneği denetiminde DE başlatılır anlamına gelir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proje türü denetleme. Ancak, bu örneği [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DE hata ayıklaması yapılamıyor. Hangi aşağıdaki özel DE hata ayıklama olanak tanımak için adımlardır.  
@@ -59,7 +60,7 @@ Proje türü gelen hata ayıklama altyapısı (DE) başlatan <xref:Microsoft.Vis
   
 1.  Başlat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projenizi normal kayıt defteri kovanı ve yükleme (Bu durum, proje türü, bir örnek oluşturma değil, proje türü kaynağına) proje yazın.  
   
-2.  Proje özelliklerini açın ve gidin **hata ayıklama** sayfası. İçin **komutu**, yolunu yazın [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (varsayılan olarak, *[sürücü]*\Program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  Proje özelliklerini açın ve gidin **hata ayıklama** sayfası. İçin **komutu**, yolunu yazın [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (varsayılan olarak, *[sürücü]* \Program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  İçin **komut bağımsız değişkenleri**, türü `/rootsuffix exp` (VSIP yüklendiğinde oluşturulan) Deneysel kayıt defteri kovanı için.  
   

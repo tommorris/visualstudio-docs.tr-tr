@@ -37,6 +37,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950039"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Seçenekler, Metin Düzenleyici, XAML, Biçimlendirme
 Kullanım **biçimlendirme** özellik sayfası öğeleri ve özniteliklerinin XAML belgelerinizi nasıl biçimlendirileceğini belirtin. Açmak için **seçenekleri** iletişim kutusu, tıklatın **Araçları** menüsünü seçin ve ardından **seçenekleri**. Erişim için **biçimlendirme** özellik sayfasında **metin düzenleyici**, **XAML**, **biçimlendirme** düğümü.

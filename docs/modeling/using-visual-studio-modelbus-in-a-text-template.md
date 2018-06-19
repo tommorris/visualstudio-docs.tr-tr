@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952832"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Metin Şablonunda Visual Studio ModelBus'ı Kullanma
 İçeren modeli okuma metin şablonları yazma varsa [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus başvuruyor, hedef modelleri erişmek için başvuruları çözümlemek isteyebilirsiniz. Bu durumda, metin şablonları ve başvurulan etki alanına özgü dil (DSL'ler) uyum vardır:

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951654"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 Bazı sayfaları (veya özellikleri koleksiyonları) Bu belgede açıklanan ile ilişkili **metin düzenleyici** kategorisi, `DTE.Properties("TextEditor", <Property Page>)`, **seçenekleri** iletişim kutusu. Her alt bölüm başlığı kullanılan çağrıdır erişimi `Properties` toplama ve her alt tabloda bir koleksiyondaki özellikleri listeler.

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946370"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Mimari Araç Kullanımı Kılavuzu
 Bu mimari Tooling yönergeleri, Visual Studio 2010 modelleme araçlarının kullanımı hakkında pratik bir kılavuz indirilebilir bir pakettir. Tüm modelleme araçları tümleşik bir şekilde nasıl kullanacağınızı üst düzey bir görünümünü sunar ve araçları kullanılan en yaygın senaryolar anlatılmaktadır.

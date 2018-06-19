@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948983"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Belgeler, Ortam, Seçenekler İletişim Kutusu
 Bu sayfanın kullanmak **seçenekleri** tümleşik geliştirme ortamı (IDE) belgelerde görüntülenmesini denetlemek ve dış değişiklikleri belgeleri ve dosyaları yönetmek için iletişim kutusu. Tıklatarak bu iletişim kutusuna erişebilirsiniz **seçenekleri** üzerinde **Araçları** menüsüne ve ardından seçerek **belgeleri** içinde **ortam** düğümü. Varsa **belgeleri** listesinde select görünmez **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.

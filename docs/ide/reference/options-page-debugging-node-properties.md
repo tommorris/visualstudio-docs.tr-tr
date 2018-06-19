@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951784"
 ---
 # <a name="options-page-debugging-node-properties"></a>Seçenekler Sayfası, Hata Ayıklama Düğümü Özellikleri
 Aşağıdaki tablolar sayfaları (veya özellikleri koleksiyonları) açıklamaktadır ile ilişkili **hata ayıklama** kategorisi, `DTE.Properties("Debugging", <Property Page>)` , **seçenekleri** iletişim kutusu.

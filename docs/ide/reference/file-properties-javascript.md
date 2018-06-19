@@ -32,6 +32,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947930"
 ---
 # <a name="file-properties-javascript"></a>Dosya Özellikleri, JavaScript
 Proje sistem dosyalarını gerçekleştirmesi gereken eylemleri belirtmek için dosya özelliklerini kullanabilirsiniz. Örneğin, bir dosya için paket kaynak dosyası olarak eklenmesi gerekip gerekmediğini belirtmek için dosya özelliklerini ayarlayabilirsiniz.

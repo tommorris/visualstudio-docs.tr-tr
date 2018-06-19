@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927106"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genişletilmiş Tasarım Yönerge Kuralları kural kümesi
 Microsoft genişletilmiş tasarım yönerge kuralları kural kümesi bildirilen kullanılabilirliğini ve bakım sorunları en üst düzeye çıkarmak için temel tasarım yönerge kuralları genişletir. Adlandırma yönergeleri fazladan Vurgu yerleştirilir. Bu kural, projenizin kitaplık kodu içeriyorsa veya korumak kolaydır kod yazmak için en yüksek standartları zorunlu kılmak istiyorsanız kümesi de dahil olmak üzere göz önünde bulundurmalısınız.

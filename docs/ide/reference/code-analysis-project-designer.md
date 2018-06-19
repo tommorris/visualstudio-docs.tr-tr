@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944680"
 ---
 # <a name="code-analysis-project-designer"></a>Kod Çözümlemesi, Proje Tasarımcısı
 Kodunuz üzerinde çalıştırmak için seçebilirsiniz kod analizi aracı içerir. Tasarım Kuralları ve programlama ihlalleri İleri Microsoft .NET Framework tasarım yönergeleri ayarlama gibi aracı, derlemeler hakkında bilgi bildirir.

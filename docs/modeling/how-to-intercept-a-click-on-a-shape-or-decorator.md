@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952306"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
 Aşağıdaki yordamlar, tıklama bir şekli veya bir simge oluşturma öğesi müdahale göstermektedir. Tıklama ele geçirebilir, çift tıklamalar, sürüklediği, ve diğer hareketleri ve yanıt öğesi yapın.

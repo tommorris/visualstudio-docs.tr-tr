@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927275"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Karışık Minimum Kurallar kural kümesi
 Microsoft karışık Minimum kurallar en kritik sorunlar olası güvenlik açıklarını ve uygulama çökme (Crash) dahil olmak üzere ortak dil çalışma desteği, C++ projelerine odaklanır. Ortak dil çalışma zamanı desteği, C++ projeleri için oluşturduğunuz herhangi bir özel kural kümesi içinde bu kural kümesi içermelidir.

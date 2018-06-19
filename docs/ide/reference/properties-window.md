@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947306"
 ---
 # <a name="properties-window"></a>Özellikler Penceresi
 Tasarım zamanı özellikleri ve olayları düzenleyicileri ve tasarımcıları bulunan Seçili nesnelerin görüntülemek ve değiştirmek için bu pencereyi kullanın. Aynı zamanda **özellikleri** dosya, proje ve çözüm özelliklerini görüntülemek ve düzenlemek için penceresi. Bulabileceğiniz **özellikleri** penceresinde **Görünüm** menüsü. Ayrıca, F4 tuşuna basarak veya yazarak açabilirsiniz **özellikleri** içinde **hızlı başlatma** penceresi.

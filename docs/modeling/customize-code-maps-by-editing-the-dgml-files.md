@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952721"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML dosyalarını düzenleyerek kod haritalarını özelleştirme
 Kod Haritası özelleştirmek için bir haritanın yönlendirilmiş grafik biçimlendirme dili (.dgml) dosyasını düzenleyebilirsiniz. Örneğin, özel stiller belirtin, özellikleri ve kategorileri kod öğeleri ve bağlantıları veya bağlantı belgeleri veya URL'leri kod öğeleri veya bağlantılar atamak için öğelerini düzenleyebilirsiniz. DGML öğeleri hakkında daha fazla bilgi için bkz: [yönlendirilmiş grafik biçimlendirme dili (DGML) başvurusu](../modeling/directed-graph-markup-language-dgml-reference.md).

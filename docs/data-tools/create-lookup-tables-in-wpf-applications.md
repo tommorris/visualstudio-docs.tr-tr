@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926541"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF uygulamalarında arama tabloları oluşturma
 Terim *arama tablosu* (bazen adlı bir *arama bağlama*) bir veri tablosundaki başka bir tablodaki bir yabancı anahtar alanının değeri temel bilgileri görüntüleyen bir denetim açıklar. Üst tablo ana düğümünün sürükleyerek arama tablosu oluşturma ya da nesne **veri kaynakları** bir sütun veya ilgili alt tabloya bir özellik zaten bağlanmış bir denetim üzerine penceresi.

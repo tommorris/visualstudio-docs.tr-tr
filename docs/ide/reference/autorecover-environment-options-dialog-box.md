@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943208"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, Ortam, Seçenekler İletişim Kutusu
 Dosyaları otomatik olarak yedeklenir olup olmadığını belirlemek için Seçenekler iletişim kutusu, bu sayfayı kullanın. Bu sayfa Ayrıca tümleşik geliştirme ortamı (IDE) beklenmedik şekilde kapatıldığında dosyaları geri değişiklik olup olmadığına bakılmaksızın belirtmenizi sağlar. Seçerek bu iletişim kutusuna erişebilirsiniz **Araçları** menü ve seçme **seçenekleri**ve ardından seçerek **ortam** klasörü ve seçme  **AutoRecover** sayfası. Bu sayfayı listede görünmüyorsa, seçin **tüm ayarını gösteren** içinde **seçenekleri** iletişim kutusu.

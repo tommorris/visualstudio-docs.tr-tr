@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949649"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Etki Alanına Özgü Dil Çözümü Şablonu Seçme
 Bir etki alanına özgü dil çözüm oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nda kullanılabilir çözüm şablonlardan birini seçin. Oluşturmak istediğiniz dil en çok benzeyen bir şablon seçerek başlangıç çözüme yapmak zorunda değişiklikler en aza indirebilirsiniz.

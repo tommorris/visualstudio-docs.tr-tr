@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137553"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation Öğesi (Visual Studio Şablonları)
 Kullanıcı bir proje kaydetme konumu sorulup sorulmayacağını belirtir **yeni proje** bir projesi oluştururken, iletişim kutusu. Bu öğe ayarlanmışsa `true`, kullanıcı için kaydetmeniz istenir sonra konum if `false`, değil istenir. (Diğer bir deyişle, bir geçici projesi oluşturulur.)  

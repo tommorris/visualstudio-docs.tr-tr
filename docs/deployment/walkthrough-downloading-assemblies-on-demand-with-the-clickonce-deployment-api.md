@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565776"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce Dağıtım API'si ile İsteğe Bağlı Derlemeleri İndirme
 Varsayılan olarak, tüm derlemeler dahil bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamayı ilk kez çalıştırdığınızda uygulama yüklenir. Bununla birlikte, bir dizi kullanıcılarınız tarafından kullanılan uygulamanızın parçalarını olabilir. Bu durumda, yalnızca türlerinden birini oluşturduğunuzda bütünleştirilmiş kodu indirmek istediğiniz. Aşağıdaki örneklerde, belirli derlemeleri "isteğe bağlı" olarak işaretlemek gösterilmiştir ve bunları kullanarak indirmek nasıl sınıfları <xref:System.Deployment.Application> ortak dil çalışma zamanı (CLR) bunları talep ettiğinde ad alanı.  

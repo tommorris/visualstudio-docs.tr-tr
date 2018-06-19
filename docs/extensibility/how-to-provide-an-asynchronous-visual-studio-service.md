@@ -14,6 +14,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705079"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Nasıl yapılır: bir zaman uyumsuz Visual Studio hizmet sağlayın
 Bir hizmeti kullanıcı Arabirimi iş parçacığı engellenmeden edinmek istiyorsanız, zaman uyumsuz bir hizmet oluşturmak ve arka plan iş parçacığında paketi gerekir. Bu amaçla kullanabileceğiniz bir <xref:Microsoft.VisualStudio.Shell.AsyncPackage> yerine <xref:Microsoft.VisualStudio.Shell.Package>ve zaman uyumsuz paketin özel zaman uyumsuz yöntemleri ile hizmetini ekleyin.

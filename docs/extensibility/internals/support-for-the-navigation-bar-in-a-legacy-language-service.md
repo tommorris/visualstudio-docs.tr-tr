@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134668"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Eski dil hizmeti gezinti çubuğunda desteği
 Gezinti Çubuğu Düzenleyicisi görünüm üstündeki türleri ve üyeleri dosyasında görüntüler. Sol açılan türleri gösterilir ve üyeleri sağındaki açılan gösterilir. Kullanıcı türü seçtiğinde şapka türü ilk satırında yerleştirilir. Kullanıcı bir üye seçtiğinde şapka üye tanımını yerleştirilir. Aşağı açılan kutuları şapka geçerli konumunu yansıtacak şekilde güncelleştirilir.  

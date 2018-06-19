@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568012"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild Özel Karakterleri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bazı karakterler belirli bağlamlarda özel kullanımı için ayırır. Bunları tam anlamıyla Bunlar ayrılmış olan bağlamda kullanmak istiyorsanız, bu tür karakterlerinden Çık yeterlidir. Örneğin, yalnızca özel anlamı bir yıldız işareti olan `Include` ve `Exclude` öznitelikleri öğesi tanımının ve çağrılarında `CreateItem`. Bu içeriklerden birinde bir yıldız işareti olarak görünmesi için bir yıldız işareti istiyorsanız, kaçış gerekir. Her bağlamda, yalnızca görünmesini istediğiniz yere yıldız işareti girin.  

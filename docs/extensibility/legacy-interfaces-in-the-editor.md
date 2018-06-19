@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142906"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Eski arabirimleri Düzenleyicisi'nde
 Visual Studio düzenleyicisinde eski arabirimlerinden erişebilir. Visual Studio SDK'sı olarak bilinir bağdaştırıcıları içerir *dolgular*, yeni Düzenleyicisi ile etkileşim kurmak bu arabirimleri etkinleştirin. Bununla birlikte, yeni API Düzenleyicisi kullanmak için eski kodunuzu güncelleştirmenizi öneririz. Kodunuzu daha iyi performans ve Windows Presentation Foundation (WPF) ve Yönetilen Genişletilebilirlik Çerçevesi (MEF) gibi yeni teknolojileri kullanabilirsiniz.  

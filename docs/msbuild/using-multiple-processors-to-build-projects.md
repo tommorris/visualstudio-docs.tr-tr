@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577515"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Projeleri Derlemek için Birden Çok İşlemci Kullanma
 MSBuild, birden çok işlemci veya birden çok çekirdekli işlemcilere sahip sistemler yararlanabilir. Ayrı oluşturma işlemi için kullanılabilir her işlemci oluşturulur. Sistem dört işlemci varsa, örneğin, ardından dört oluşturma işlemlerini oluşturulur. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Bu derlemeleri aynı anda işleyebilir ve bu nedenle genel derleme zamanında azalır. Ancak, paralel yapı oluşturma işlemlerini nasıl ortaya bazı değişiklikler tanıtır. Bu konu, bu değişiklikleri açıklamaktadır.  

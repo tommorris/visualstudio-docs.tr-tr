@@ -30,6 +30,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560719"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce Uygulamaları İçin Kod Erişimi Güvenliği
 ClickOnce uygulamaları .NET Framework'e dayalı ve kod erişimi güvenlik kısıtlamalarına tabidir. Bu nedenle, kod etkilerini erişim güvenliği ve buna göre ClickOnce uygulamaları yazmanız anlamak önemlidir.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132580"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Düzenleyici ve dil Hizmetleri genişletme
 Kendi Düzenleyicisi (örneğin, IntelliSense) dil hizmet özellikleri ekleyin ve özelliklerin çoğunu Visual Studio Kod Düzenleyicisi'ni genişletin.  Genişletmek tam listesi için bkz [dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md).  

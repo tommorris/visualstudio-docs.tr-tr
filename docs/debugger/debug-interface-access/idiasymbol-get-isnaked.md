@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463295"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 İşlev sahip olup olmadığını belirten bir bayrak alır [naked](/cpp/cpp/naked-cpp) özniteliği (diğer bir deyişle, işlev derleyici tarafından eklenen hiçbir giriş veya çıkış kodu yoktur).  

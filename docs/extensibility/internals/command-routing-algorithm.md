@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131507"
 ---
 # <a name="command-routing-algorithm"></a>Komut yönlendirme algoritması
 Visual Studio komutları bir dizi farklı bileşen tarafından işlenir. Komutları geçerli seçime göre en içteki bağlamdan en dıştaki (genel olarak da bilinir) bağlamına yönlendirilir. Daha fazla bilgi için bkz: [kullanılabilirlik](../../extensibility/internals/command-availability.md).  

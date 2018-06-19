@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134353"
 ---
 # <a name="custom-parameters"></a>Özel Parametreler
 Sihirbaz başlatıldıktan sonra özel parametreler sihirbaz işlemi denetler. İlgili .vsz dosyası tümleşik geliştirme ortamı (IDE) paketlenir ve Sihirbazı başlattığınızda sihirbaz dize dizisi geçirilen kullanıcı tarafından tanımlanan parametre dizisi sağlar. Sihirbaz dize dizisi ayrıştırır ve Sihirbazı'nın gerçek işlemi denetlemek için bilgileri kullanır. Bu şekilde, bir sihirbaz işlevselliği .vsz dosyasının içeriğini bağlı olarak özelleştirebilirsiniz.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477738"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio grafik tanılama
 Visual Studio*grafik tanılama* kaydı ve Direct3D uygulamalar oluşturma ve performans sorunları çözümlemek için araç kümesidir. Grafik Tanılama'yı, Windows bilgisayarınızdaki bir Windows aygıt benzeticisi veya bir uzak bilgisayar veya cihaz üzerinde yerel olarak çalışan uygulamalar üzerinde kullanılabilir.  

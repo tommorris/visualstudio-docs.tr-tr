@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569247"
 ---
 # <a name="importgroup-element"></a>Importgroup öğesi
 Bir koleksiyonu içerir `Import` isteğe bağlı bir koşul altında gruplanmış öğeleri. Daha fazla bilgi için bkz: [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md).  

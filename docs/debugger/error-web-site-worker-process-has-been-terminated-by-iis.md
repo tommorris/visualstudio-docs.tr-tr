@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481609"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Hata: Web sitesi çalışan işlemi IIS tarafından sonlandırıldı
 Hata ayıklayıcı Web sitesinde kodu yürütme durduruldu. Bu, Internet Information Services'ın (IIS) çalışan işlem yanıt durmuş varsaymak neden oldu. Bu nedenle, IIS çalışan işlemi sona erdirildi.  

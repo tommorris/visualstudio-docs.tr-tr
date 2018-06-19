@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584168"
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Birim testi için Python kodu ayarlama
 

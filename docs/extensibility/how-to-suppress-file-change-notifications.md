@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128779"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Nasıl yapılır: dosya değişiklik bildirimlerini bastır
 Metin arabelleğini temsil eden fiziksel dosya değiştirildiğinde iletisiyle bir iletişim kutusu görüntüler **şu öğeler için değişiklikleri kaydetmek istiyor musunuz?** Bu dosya değişikliği bildirimi bilinir. Birçok değişiklikleri dosyaya kullanacaksanız, ancak, bu iletişim kutusunu tekrar tekrar görüntüleme hızlı bir şekilde rahatsız edici haline gelebilir.  

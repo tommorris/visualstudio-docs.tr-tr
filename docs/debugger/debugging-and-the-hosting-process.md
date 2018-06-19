@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481521"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Hata Ayıklama ve Barındırma İşlemi
 Barındırma işlemi Visual Studio hata ayıklayıcısı performansını artırır ve kısmi güven hata ayıklama ve tasarım zamanı ifade değerlendirmesi gibi yeni hata ayıklayıcı özellikleri etkinleştirir. Gerekirse, barındırma işlemini devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: barındırma sürecini devre dışı bırakma](../ide/how-to-disable-the-hosting-process.md). Aşağıdaki bölümlerde ile ve barındırma işlemi olmadan hata ayıklama arasındaki bazı farklar açıklanmaktadır.  

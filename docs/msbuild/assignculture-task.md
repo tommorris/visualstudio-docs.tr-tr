@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578724"
 ---
 # <a name="assignculture-task"></a>AssignCulture Görevi
 Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanımlayıcısı dizesi içerebilir öğelerin listesini kabul eder ve adlı bir meta veri içermeyen öğeleri üreten `Culture` karşılık gelen içeren kültür tanımlayıcısı. Bu görev meta verileri aynı adla sahip bir öğe üretecektir Örneğin, dosya adı Form1.fr fr.resx katıştırılmış bir kültür tanımlayıcısı "fr-fr", sahiptir, bu nedenle `Culture` eşit `fr-fr`. Görev dosya adları listesini dosya adı kaldırıldı kültür ile de üretir.  

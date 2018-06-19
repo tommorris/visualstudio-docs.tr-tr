@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953929"
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
 Bu belgede sayfaları (veya özellikleri koleksiyonları) açıklanır ile ilişkili **ortam** kategorisi, `DTE.Properties("Environment", <Property Page>)`, **seçenekleri** iletişim kutusu. Her alt bölüm başlığı özellikleri koleksiyonuna erişmek için kullanılan çağrıdır ve her alt tabloda bir koleksiyondaki özellikleri listeler.

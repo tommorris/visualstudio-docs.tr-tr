@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571626"
 ---
 # <a name="msbuild-transforms"></a>MSBuild Dönüşümleri
 Bir dönüştürme başka bir bire bir dönüştürme bir öğe listesi değildir. Bir proje öğesi listeleri dönüştürmek etkinleştirmeye ek olarak, bir dönüşüm kendi giriş ve çıkış arasında doğrudan bir eşleme tanımlamak bir hedef sağlar. Bu konu dönüşümler açıklar ve nasıl [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri daha verimli bir şekilde oluşturmak için bunları kullanır.  

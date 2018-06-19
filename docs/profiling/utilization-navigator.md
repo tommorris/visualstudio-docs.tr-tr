@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581883"
 ---
 # <a name="utilization-navigator"></a>Kullanım Gezgini
 Eşzamanlılık görselleştiricisi kullanım Gezgini, bir zaman aralığı içinde bir izleme seçmek için kullanabilirsiniz. Eşzamanlılık görselleştiricisi, zaman içinde hedef işlem tarafından CPU çekirdekleri kullanımını gösterir. Bu, CPU kullanımı desenleri incelemek kolaylaştırır ve ayrıca kullanım verileri ve diğer görünümlerde verileri arasında karşılaştırma sağlar. Eşzamanlılık görselleştiricisi her görünümünde üstündeki kullanım Gezgini görüntülenir. Kullanım Gezgini aşağıda gösterilmektedir.  

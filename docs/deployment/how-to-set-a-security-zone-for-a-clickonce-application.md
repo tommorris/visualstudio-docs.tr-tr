@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564554"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Bir Güvenlik Bölgesi Ayarlama
 Kod erişimi güvenliği izinleri ClickOnce uygulaması için ayarladığınızda, temel bir izin kümesi ile başlatmak gereken **güvenlik** sayfasında **Proje Tasarımcısı**.  

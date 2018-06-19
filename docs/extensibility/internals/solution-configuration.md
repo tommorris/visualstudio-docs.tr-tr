@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132727"
 ---
 # <a name="solution-configuration"></a>Çözüm Yapılandırması
 Çözüm yapılandırmaları çözüm düzeyi özellikleri depolar. Davranışını doğrudan **Başlat** (F5) anahtarı ve **yapı** komutları. Varsayılan olarak, bu komutları oluşturun ve hata ayıklama yapılandırmasını başlatın. Her iki komutları bir çözüm yapılandırması bağlamında çalıştırın. Bu, başlangıç ve herhangi bir etkin çözüm Ayarları'nda yapılandırılmış derleme için kullanıcı F5 bekleyebilirsiniz anlamına gelir. Ortamı oluşturmak ve çalıştırmak için geldiğinde projeleri yerine çözümleri için en iyi duruma getirmek için tasarlanmıştır.  

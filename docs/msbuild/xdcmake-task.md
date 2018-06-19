@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572328"
 ---
 # <a name="xdcmake-task"></a>XDCMake Görevi
 XML Belge açıklama (.xdc) dosyaları bir .xml dosyasına birleştirir XML belgeleri Aracı (xdcmake.exe) sarmalar.  

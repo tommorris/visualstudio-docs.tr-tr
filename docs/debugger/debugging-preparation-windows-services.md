@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479909"
 ---
 # <a name="debugging-preparation-windows-services"></a>Hata Ayıklama Hazırlığı: Windows Hizmetleri
 Microsoft Windows altında arka planda çalışan bir programı bir Windows hizmetidir. Telnet hizmeti ve bilgisayarınızın görünür saatini güncelleştirmeleri Windows Saat hizmeti örnekleri içerir. Bir Windows hizmeti gelen içinde çalıştırılamaz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; hizmetler Denetimi Yöneticisi'nin bağlamında çalıştırmanız gerekir. Daha fazla bilgi için bkz: [Windows Hizmetleri oluşturma](/dotnet/framework/windows-services/how-to-create-windows-services), [Windows hizmet uygulamalarında hata ayıklama](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), ve [Windows hizmet uygulamaları](/dotnet/framework/windows-services/index).  

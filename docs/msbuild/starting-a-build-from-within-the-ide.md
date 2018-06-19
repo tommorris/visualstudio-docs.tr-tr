@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577502"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>IDE İçinden Derleme Başlatma
 Özel proje sistemleri kullanmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> derlemeleri başlatmak için. Bu konu, bunun nedeni açıklar ve yordam açıklanmaktadır.  

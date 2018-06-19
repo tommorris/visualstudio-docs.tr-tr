@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128955"
 ---
 # <a name="creating-a-source-control-vspackage"></a>Kaynak denetimi VSPackage oluşturma
 Bu belge mimarisine genel bakış ile tümleştirilmiş bir kaynak denetimi paketin bağlantılarını içerir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], uygulanacak arabirimleri ve tüketilmesi hizmetler tarafından tanımlanan API ve basit bir kaynağı gösteren bir örnek paket uygulama denetler.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130239"
 ---
 # <a name="font-and-color-overview"></a>Yazı tipi ve renk genel bakış
 Bu konuda ele alınmıştır metin yazı tipi ve renk ayarlarında [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Ayrıca bir kategori ve öğeleri görüntüleme kavramlar tanıtılır ve VSPackages ve çekirdek düzenleyici metin özniteliklerini kullanımını açıklar.  

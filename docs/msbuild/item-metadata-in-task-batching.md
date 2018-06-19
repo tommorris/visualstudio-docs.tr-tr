@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573571"
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev İşlemede Öğe Meta Verileri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listelerini farklı kategorileri veya toplu işlemi bölme yeteneği, öğe meta verileri temel alarak ve bir görev her batch ile bir kez çalıştırın. Hangi öğeleri hangi batch ile tam olarak geçirilen anlamak kafa karıştırıcı olabilir. Bu konuda toplu işleme ile ilgili aşağıdaki ortak senaryolar için geçerlidir.  

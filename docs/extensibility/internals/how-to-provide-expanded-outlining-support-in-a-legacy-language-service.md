@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132159"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Nasıl yapılır: eski dil hizmetindeki genişletilmiş anahat desteği sağlar
 Destekleyen ötesinde dilinizi anahat desteğini genişletmek için iki seçenek vardır **daraltmak için tanımları** komutu. Anahat Düzenleyicisi denetimli bölgeler ekleyin ve istemci tarafından denetlenen anahat bölgeler ekleyin.  

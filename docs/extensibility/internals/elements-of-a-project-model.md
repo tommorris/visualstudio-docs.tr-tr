@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135565"
 ---
 # <a name="elements-of-a-project-model"></a>Proje modeli öğeleri
 Tüm projelerde uygulamaları ve arabirimleri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] temel yapısını paylaşır: Proje türünüz için proje modeli. Geliştirdiğiniz VSPackage olan proje modelinde tasarım kararlarınızı ile uyumlu ve IDE tarafından sağlanan genel işlevselliği ile birlikte çalışma nesneleri oluşturun. Örneğin, bir proje öğesi nasıl kalıcı denetim karşın, bir dosya kalıcı gerekir bildirim kontrol. Ne zaman bir kullanıcı bir açık projeye öğe odağı yerleştirir ve seçer **kaydetmek** üzerinde **dosya** menüsünde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menü çubuğunda, proje türü kodunuza gerekir IDE komuttan müdahale, dosya kalıcı hale getirmek ve bildirim dosyası artık değiştirilir IDE yeniden gönderin.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134626"
 ---
 # <a name="legacy-language-service-interfaces"></a>Eski dil Hizmeti Arabirimleri
 Belirli bir programlama dili için aynı anda dil hizmetinin yalnızca bir örneği olabilir. Ancak, tek bir dil hizmeti birden fazla Düzenleyicisi hizmet verebilir.  

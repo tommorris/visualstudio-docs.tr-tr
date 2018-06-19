@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141040"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer nesnesi
 Metin arabelleği nesnesini bir akış genellikle bir dosya ile ilişkilendirilmiş bir Unicode metin temsil eder. A <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> nesne gibi bir sihirbaz söz konusu olduğunda çekirdek Düzenleyici, bağlam dışında kullanılabilir.  

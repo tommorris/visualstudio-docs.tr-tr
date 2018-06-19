@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566023"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: Yerelleştirilmiş Önyükleyici Paketi Oluşturma
 Önyükleyici paketi oluşturduktan sonra her yerel ayar için iki dosya daha oluşturarak yerelleştirilmiş önyükleyici paketi sürümleri oluşturabilirsiniz: (örneğin, bir eula.rtf) dosyası ve bir paket bildirimi (package.xml) yazılım lisans koşulları.  

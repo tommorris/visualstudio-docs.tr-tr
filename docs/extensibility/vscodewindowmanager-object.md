@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137608"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager nesnesi
 Dil hizmeti kodu Pencere Yöneticisi uygular ve adornments (örneğin, aşağı açılan çubuğu) yönetilmesinden sorumludur. Daha fazla bilgi için bkz: [eski API'yi kullanarak kod Windows özelleştirme](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

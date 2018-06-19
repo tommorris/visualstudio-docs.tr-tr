@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568330"
 ---
 # <a name="item-metadata-in-target-batching"></a>Toplu Hedef İşlemede Öğe Meta Verileri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] girişleri ve çıkışları derleme hedefi üzerinde bağımlılık çözümlemesi özelliğine sahiptir. Giriş veya çıkış hedef güncel belirlenir, hedef atlanacak ve yapı procede olur. `Target` öğeleri kullanmak `Inputs` ve `Outputs` bağımlılık Çözümleme sırasında incelemek için öğelerini belirtmek için öznitelikler.  

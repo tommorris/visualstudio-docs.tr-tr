@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133215"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Denetim listesi: eski dil hizmet oluşturma
 Aşağıdaki denetim listesi için bir dil hizmeti oluşturmak için gerçekleştirmeniz gereken temel adımları özetlemektedir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyici. Dil hizmetinizi tümleştirmek için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], bir hata ayıklama ifade değerlendiricisi oluşturmanız gerekir. Daha fazla bilgi için bkz: [bir CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) içinde [Visual Studio hata ayıklayıcısı genişletilebilirlik](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

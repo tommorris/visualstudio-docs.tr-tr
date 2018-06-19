@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134590"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Eski dil hizmeti Ayrıştırıcı ve tarayıcı
 Ayrıştırıcının dili hizmet Kalp ' dir. Yönetilen paket Framework (MPF) dil sınıfları görüntülenen kodu hakkında bilgi seçmek için bir dil Çözümleyicisi gerektirir. Bir Ayrıştırıcı metin sözcük belirteçlere ayırır ve türü ve işlevleri tarafından konusu belirteçleri tanımlar.  

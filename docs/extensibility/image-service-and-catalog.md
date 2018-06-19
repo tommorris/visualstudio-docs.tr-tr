@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134682"
 ---
 # <a name="image-service-and-catalog"></a>Yansıma hizmeti ve Katalog
 Bu kılavuzu yönerge ve Visual Studio Görüntü hizmeti ve görüntü Visual Studio 2015'te tanıtılan Kataloğu'nu benimseme için en iyi yöntemler içerir.  
@@ -165,7 +166,7 @@ Bu kılavuzu yönerge ve Visual Studio Görüntü hizmeti ve görüntü Visual S
 |-|-|  
 |**Özniteliği**|**Tanım**|  
 |URI|[Gerekli] Gelen görüntünün nerede yüklenebilir tanımlayan bir URI. Aşağıdakilerden biri olabilir:<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) uygulamasını kullanarak: / / / yetkilisi<br />-Bir mutlak bileşen kaynak başvurusu<br />-Yerel kaynak içeren bir dosya yolu|  
-|Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> *Açık:* kaynağı açık bir arka plan üzerinde kullanılabilir.<br /><br /> *Koyu:*kaynağı koyu bir arka plan üzerinde kullanılabilir.<br /><br /> *Yüksek Karşıtlık:* kaynağı yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastLight:* kaynak açık bir arka plan yüksek karşıtlık modunda kullanılabilir.<br /><br /> *HighContrastDark:* kaynağı yüksek karşıtlık modunda koyu arka plan üzerinde kullanılabilir.<br /><br /> Arka plan özniteliği belirtilmezse, kaynağı herhangi bir arka plan üzerine kullanılabilir.<br /><br /> Arka plan ise *açık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman kaynağının renkleri ters. Arka plan atlanmış veya kümesine *Yüksek Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenen **AllowColorInversion** özniteliği.|  
+|Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> *Açık:* kaynağı açık bir arka plan üzerinde kullanılabilir.<br /><br /> *Koyu:* kaynağı koyu bir arka plan üzerinde kullanılabilir.<br /><br /> *Yüksek Karşıtlık:* kaynağı yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastLight:* kaynak açık bir arka plan yüksek karşıtlık modunda kullanılabilir.<br /><br /> *HighContrastDark:* kaynağı yüksek karşıtlık modunda koyu arka plan üzerinde kullanılabilir.<br /><br /> Arka plan özniteliği belirtilmezse, kaynağı herhangi bir arka plan üzerine kullanılabilir.<br /><br /> Arka plan ise *açık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman kaynağının renkleri ters. Arka plan atlanmış veya kümesine *Yüksek Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenen **AllowColorInversion** özniteliği.|  
 |||  
   
  A \<kaynak > öğesi aşağıdaki isteğe bağlı alt öğeleri tam olarak birine sahip olabilir:  

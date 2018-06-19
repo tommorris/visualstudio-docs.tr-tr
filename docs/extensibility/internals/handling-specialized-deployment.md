@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135790"
 ---
 # <a name="handling-specialized-deployment"></a>Dağıtım işleme özelleştirilmiş
 Bir dağıtım projeleri için isteğe bağlı bir işlemdir. Bir Web projesi, örneğin, bir Web sunucusu güncelleştirme proje izin vermek için bir dağıtımı destekler. Benzer şekilde, bir **akıllı aygıt** proje hedef cihaz için oluşturulmuş bir uygulamayı kopyalamak için bir dağıtımı destekler. Proje alt türleri tedarik özel dağıtım davranışı uygulayarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> arabirimi. Bu arabirim, dağıtım işlemlerini eksiksiz bir kümesini tanımlar:  

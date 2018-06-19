@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561616"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl yapılır: Özel Yerel Ayara Sahip Olan Bir Projeyi Yayımlama
 Bir uygulamanın farklı yerel ayarlara sahip bileşenleri içeren için seyrek değil. Bu senaryoda, birkaç projesi olan bir çözümü oluşturun ve sonra her yerel ayar için ayrı projeleri yayımlamak. Bu yordam bir makrosu 'tr' yerel ayarını kullanarak bir çözümde ilk projeyi yayımlamak için nasıl kullanılacağını gösterir. 'Tr' dışındaki yerel ayar ile bu yordamı denemek istiyorsanız, ayarladığınızdan emin olun `localeString` (örneğin, 'de' veya 'de-DE') kullanarak yerel eşleşecek şekilde makrosu içinde.  

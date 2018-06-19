@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479753"
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile kod gidin
 Komutlar ve kısayolları hata ayıklayıcı kodda gitmek için ile tanışın ve daha hızlı ve kolay bulmak ve uygulamanızdaki sorunları gidermek hale getirir. Hata ayıklayıcı kodda gidin, ancak uygulamanızın durumunu incelemek veya kendi yürütme akışı hakkında daha fazla bilgi edinin.  

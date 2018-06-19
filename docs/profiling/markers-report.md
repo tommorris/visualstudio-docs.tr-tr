@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31580414"
 ---
 # <a name="markers-report"></a>İşaretçiler Raporu
 İşaretçiler raporu görüntülenen zaman çerçevesi içinde işaretlerinin listeler.  Yatay kaydırma veya yakınlaştırma veya yolları, gizleme görünmesini veya kayboluyor işaretçileri neden olabilir. Rapor her işaret ilgili bu bilgiler içerir:  

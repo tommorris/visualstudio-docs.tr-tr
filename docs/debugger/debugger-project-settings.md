@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474030"
 ---
 # <a name="debugger-project-settings"></a>Hata Ayıklayıcı Proje Ayarları
 Belirli hata ayıklama proje ayarları da etkiler. Bu ayarlar, hata ayıklayıcı, program ve hata ayıklama bilgileri program için oluşturulan türünü başlatmak için kullanılan komut bağımsız değişkenleri ve komut bakan hangi dizinleri gibi şeyler belirler. Bu ayarları değiştirebilirsiniz **özellik sayfaları** iletişim kutusu.  

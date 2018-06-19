@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131626"
 ---
 # <a name="properties-window-overview"></a>Özellikler penceresi genel bakış
 **Özellikleri** penceresi windows bulunan iki ana tür seçili nesnelerin özelliklerini görüntülemek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Bu iki windows türleri şunlardır:  

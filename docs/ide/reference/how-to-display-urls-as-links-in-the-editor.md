@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448058"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide URL'leri Bağlantılar Olarak Görüntüleme
 Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod düzenleyicisinde kodunuzda etkin bağlantılar olarak tercih. Bu özellik, URL'ler kullandığınızda:

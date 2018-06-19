@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953527"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF kullanarak DSL'nizi genişletme
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak etki alanına özgü dil (DSL) genişletebilirsiniz. Siz veya diğer geliştiriciler DSL tanımı ve programın kodunu değiştirmeden uzantıları için DSL yazabilmesi olacaktır. Bu tür uzantılar menü komutları, sürükle ve bırak işleyicileri ve doğrulama içerir. Kullanıcılar, DSL yükleyin ve ardından isteğe bağlı olarak uzantıları için yüklemek mümkün olacaktır.

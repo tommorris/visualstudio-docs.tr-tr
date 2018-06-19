@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477608"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Nasıl Yapılır: İş Parçacıklarını Bayrakla İşaretleme ve İşareti Geri Alma
 Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı bayrak **iş parçacığı**, **Paralel Yığınlar** (iş parçacığı Görünüm), **paralel Gözcü**ve  **GPU iş parçacıkları** windows. Başkalarının bayraklı iş parçacıkları diğer iş parçacıklarından ayırt etmek ve bu simgeyi yardımcı olabilir.  

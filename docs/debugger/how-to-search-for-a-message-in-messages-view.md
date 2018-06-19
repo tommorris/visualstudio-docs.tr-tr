@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473523"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Nasıl Yapılır: İletiler Görünümünde İleti Arama
 Arama ölçütü olarak tanıtıcısı, tür veya ileti kimliği'ni kullanarak belirli bir ileti iletiler görünümünde arayabilirsiniz. Bunlardan herhangi birini — veya bir bileşimiyle — geçerli arama ölçütleriyle olacaktır. Arama ilk yönünü de belirtilebilir. İletişim kutusundaki alanları şu anda seçili ileti özniteliklerle önceden yüklenir.  

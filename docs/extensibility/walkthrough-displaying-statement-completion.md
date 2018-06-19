@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147121"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>İzlenecek yol: Deyim tamamlama görüntüleme
 Dil tabanlı deyim tamamlama, tamamlama sağlamak istediğiniz tanımlayıcıları tanımlama ve ardından bir tamamlanma oturumu tetikleme uygulayabilirsiniz. Deyim tamamlama dil hizmeti bağlamında tanımlayabilir, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve yalnızca bu tür için tamamlama görüntülemek ya da mevcut bir içerik türü için tamamlama tetikleyebilir — Örneğin, "düz metin". Bu kılavuz, içerik türü metin dosyaları olan "düz metin" içerik türü için ifade tamamlama tetiklemek gösterilmiştir. Kod ve XML dosyaları dahil olmak üzere tüm diğer içerik türleri, üst "metin" içerik türü değil.  

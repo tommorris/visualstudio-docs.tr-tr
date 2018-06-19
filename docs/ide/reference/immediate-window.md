@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704531"
 ---
 # <a name="immediate-window"></a>Komut Penceresi
 **Hemen** penceresi, hata ayıklama ve ifadeler değerlendirmek, deyimlerini yürütmek, değişken değerleri yazdırma ve benzeri için kullanılır. Hesaplanan veya hata ayıklama sırasında geliştirme dili tarafından yürütülen için ifadeler girin imkan tanır. Görüntülenecek **hemen** penceresinde, düzenlemek için bir proje açın ve ardından **Windows** gelen **hata ayıklama** menü ve seçin **hemen**, veya CTRL + ALT + g tuşlarına basın.

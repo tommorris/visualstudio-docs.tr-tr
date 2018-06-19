@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559065"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulamasına Önkoşullar Dahil Etme
 Önkoşul yazılım dağıtabilmeniz için önce bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, ilk indirmeniz gerekir bu Önkoşullar geliştirme bilgisayarınıza yükleyicisi paketleri. Ne zaman bir uygulamayı yayımlamak ve seçin **Uygulamamla aynı konumda önkoşulları karşıdan**, yükleyici paketlerini, yoksa bir hata meydana gelir **paketleri** klasör.  

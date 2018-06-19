@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572614"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild Tanınmış Öğe Meta Verisi
 Aşağıdaki tabloda her öğenin oluşturulduktan sonra atanan meta veriler açıklanmaktadır. Dosyayı eklemek için kullanılan her örnekte, aşağıdaki öğeyi bildirimi `C:\MyProject\Source\Program.cs` projesinde.  

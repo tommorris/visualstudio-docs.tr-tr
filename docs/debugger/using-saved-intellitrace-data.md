@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479604"
 ---
 # <a name="using-saved-intellitrace-data"></a>Kaydedilen IntelliTrace verilerini kullanma
 Uygulamanızın yürütme belirli noktalara bir IntelliTrace günlüğü (.iTrace) dosyasından hata ayıklamayı başlattığınızda gidin. Bu dosya, performans olaylarının, özel durumlar, iş parçacıkları, test adımları, modüller ve IntelliTrace kayıtları uygulama çalışmalarınız while diğer sistem bilgisi içerebilir.  

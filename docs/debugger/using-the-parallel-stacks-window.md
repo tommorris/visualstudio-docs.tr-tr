@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478297"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>İş parçacığı ve Paralel Yığınlar penceresini kullanarak görevleri görüntüleme
 **Paralel Yığınlar** penceresi, birden çok iş parçacıklı uygulamalar ayıklarken yararlıdır. Kendi **iş parçacıkları görünümü** gösterir, uygulamanızdaki tüm iş parçacıklarının yığın bilgileri çağırın. İş parçacıkları ve bu iş parçacığı üzerinde yığın çerçeveleri arasında gezinmek olanak sağlar. Yönetilen kodda **Görevler görünümü** gösterir çağrı yığını <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri. Yerel kodda **Görevler görünümü** gösterir çağrı yığını [görev grupları](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralel algoritmalar](/cpp/parallel/concrt/parallel-algorithms), [zaman uyumsuz aracılar](/cpp/parallel/concrt/asynchronous-agents)ve [Basit görevler](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  

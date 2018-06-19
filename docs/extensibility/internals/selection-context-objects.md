@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131271"
 ---
 # <a name="selection-context-objects"></a>Seçim bağlam nesneleri
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) genel Seçim bağlam nesnesi IDE içinde görüntüleneceğini belirlemek için kullanır. IDE içinde her penceresi genel seçimi bağlamına gönderilen kendi seçim bağlam nesnesi olabilir. Bu pencere odağa sahip olduğunda IDE genel seçimi bağlam penceresinden değerlerle güncelleştirir. Daha fazla bilgi için bkz: [kullanıcıya geri bildirim](../../extensibility/internals/feedback-to-the-user.md).  

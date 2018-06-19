@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576956"
 ---
 # <a name="item-element-msbuild"></a>Öğe Unsuru (MSBuild)
 Kullanıcı tanımlı bir öğesiyle, meta verilerini içerir. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.  

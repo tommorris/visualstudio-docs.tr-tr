@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474394"
 ---
 # <a name="reference-programmatic-capture"></a>Başvuru (Programlı Yakalama)
 Grafik tanılama yakalama özelliklerini programlı yakalama API aracılığıyla programlı denetime destekler. Bu API, geçiş ve iletiler grafik tanılama HUD (Head yukarı görüntüle) eklemek, başlatmak ve grafik günlük dosyalarını oluşturmak ve grafik bilgilerini yakalama için kullanabilirsiniz.  

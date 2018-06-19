@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133998"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID ve Visual Studio araç çubukları kimlikleri
 Bu konu Visual Studio tümleşik geliştirme ortamı (IDE) dahil araç çubukları GUID ve ID değerlerini numaralandırır ve grupları içerir. Bu değerler, Visual Studio SDK'sı bir parçası olarak yüklenen .vsct dosyalar içinde tanımlanır. Daha fazla bilgi için bkz: [IDE-Defined komutlar, menüler ve grupları](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

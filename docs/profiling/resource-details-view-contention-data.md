@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584405"
 ---
 # <a name="resource-details-view---contention-data"></a>Kaynak Ayrıntıları görünümü - çakışma verileri
 Kaynak Ayrıntıları görünümü zaman çizelgesi grafik çekişmeleri tarafından seçilen bir kaynak kaynaklanan engelleme olayların sayısını gösterir. Başka bir iş parçacığı kaynağa erişim kilitlediği için yürütme askıya almak için bir iş parçacığı zorlandığında bir engelleme olayı oluşur.  

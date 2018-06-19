@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952148"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Bağımlılık diyagramlarına komut ve hareket ekleme
 Visual Studio'da bağımlılık diyagramları işleyicileri hareket ve bağlam menüsü komutları tanımlayın. Bu uzantılar içine bir Visual Studio Tümleştirme Uzantısı (diğer Visual Studio kullanıcılara dağıtabileceğiniz VSIX) paketleyebilirsiniz.

@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704726"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 Metin, para birimi ve tümleşik geliştirme ortamı (IDE) içinde diğer değerler için kullanılan varsayılan dili ayarlar.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268145"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio'da Just-In-Time hata ayıklayıcısı ile hata ayıklama
 Bir özel durum ya da kilitlenme dış Visual Studio çalıştıran bir uygulamada oluştuğunda tam zamanı hata ayıklama Visual Studio otomatik olarak başlatır. Bu, Visual Studio çalışmadığı zaman uygulamanızı test etmek ve bir sorun ortaya çıktığında Visual Studio ile hata ayıklama başlamak sağlar.

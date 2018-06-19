@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562188"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce Uygulamalarını Yerelleştirme
 Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme işlemidir. Gerekirse, yansıtma denetimleri sağdan sola ve bu işlem, kullanıcı arabirimi (UI) metni doğru tarih ve para birimi biçimlendirme, bir form üzerinde denetimleri boyutunu ayarlama kullanarak bir bölgeye özgü dile çevirme içerir.  

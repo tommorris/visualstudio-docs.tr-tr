@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475930"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>UWP uygulamaları prefetched içerik Visual Studio kullanarak hata ayıklama
   

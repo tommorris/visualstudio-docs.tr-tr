@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134568"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
 Bu bölümde, Visual Studio mimarisi, bileşenleri, hizmetleri, şemalar, yardımcı programlar ve benzeri dahil olmak üzere Visual Studio uzantıları hakkında ayrıntılı bilgi sağlar.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562838"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce Güvenliği ve Dağıtımı
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklü ve minimum kullanıcı etkileşimi ile çalıştırın kendi kendini güncelleştirme ve Windows tabanlı uygulamalar oluşturmanıza olanak tanıyan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama ve projelerinizi Visual Basic ve Visual C# ile geliştirdiyseniz ClickOnce teknolojisiyle dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  

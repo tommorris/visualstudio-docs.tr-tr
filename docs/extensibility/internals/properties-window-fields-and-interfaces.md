@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135733"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Özellikler penceresi alanları ve arabirimleri
 Hangi bilgilerin görüntüleneceğini belirlemek seçim için model **özellikleri** penceresi IDE'de odaklanmış penceresi dayanır. Her pencere ve nesneyi seçili penceresinde genel seçimi bağlamına gönderilir, Seçim bağlam nesnesi olabilir. Bu pencere odağa sahip olduğunda ortamı genel seçimi bağlam pencere çerçevesi değerlerle güncelleştirir. Bu nedenle odak değiştiğinde, Seçim bağlam yapar.  

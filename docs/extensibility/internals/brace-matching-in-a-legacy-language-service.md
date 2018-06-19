@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131969"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Eski dil hizmet eşlemesi
 Ayraç eşleştirme birlikte parantez ve süslü ayraçlar gibi gerçekleşmesi gereken dil öğeleri izleyen Geliştirici yardımcı olur. Bir geliştirici bir kapanış ayracı girdiğinde, açılan parantez vurgulanır.  

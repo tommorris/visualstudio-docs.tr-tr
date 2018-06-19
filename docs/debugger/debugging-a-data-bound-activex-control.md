@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474297"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Veri Bağımlı ActiveX Denetiminde Hata Ayıklama
 Bir veri kaynağı denetimine bağlı bir ActiveX denetimi geliştiriyorsanız, kendi kapsayıcı uygulama oluşturabilir ve bu kapsayıcı ActiveX denetiminde hata ayıklama için kullanın.  

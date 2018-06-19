@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477335"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Kod düzenleyicisinde DataTips görünüm veri değerleri
 DataTips hata ayıklama sırasında programınıza değişkenleri hakkında bilgi görüntülemek için kolay bir yol sağlamak. Kesme modunda yalnızca ve yalnızca yürütme geçerli kapsamdaki değişkenler DataTips çalışın.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128953"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>Nasıl yapılır: Bul uygulamak ve mekanizmasını değiştirin
 Visual Studio bulun ve değiştirin kullanmanın iki yolu sağlar. Bir metin görüntü kabuğa geçip arama, vurgulama ve değiştirerek metin işleyen çalışmasına izin yoludur. Bu, kullanıcıların birden çok metin yayılma belirtmesine izin verir. Alternatif olarak, VSPackage bu işlevselliği kontrol edebilirsiniz. Her iki durumda da Kabuğu olan geçerli hedefi ve tüm açık belgeleri hedefleri hakkında bildirmeniz gerekir.  

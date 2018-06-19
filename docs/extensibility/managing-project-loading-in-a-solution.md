@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146225"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Bir çözümde yönetme proje yükleniyor
 Visual Studio çözümleri, çok sayıda projeleri içerebilir. Varsayılan Visual Studio çözümü açıldığında bir çözümdeki tüm projeleri yüklemek için ve bunların tümünün Yükleme tamamlanana kadar projelerin hiçbiri erişmek kullanıcı izin vermeyecek şekilde davranıştır. Proje yükleme işlemini iki dakikadan fazla en son ne zaman, yüklenen projelerinin sayısına ve projeleri toplam sayısını gösteren bir ilerleme çubuğu görüntülenir. Bir çözümde birden çok proje ile çalışırken, kullanıcı projeleri unload, ancak bu yordamı bazı dezavantajları vardır: bellekten projeleri, çözümü yeniden derle komutun bir parçası oluşturulan değil ve IntelliSense açıklamaları türleri ve üyeleri kapalı projeleri görüntülenmez.  

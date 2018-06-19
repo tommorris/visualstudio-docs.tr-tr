@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138294"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Dinamik aracı penceresini açma
 Araç pencereleri genellikle bir menü veya eşdeğer bir kısayol komutundan açılır. Bazen, Bununla birlikte, belirli bir kullanıcı Arabirimi bağlam uygular ve UI bağlamı Artık uygulanmadığında kapatır zaman açıldığını bir araç penceresi gerekebilir. Bu tür araç pencereleri adlı *dinamik* veya *otomatik görünür*.  

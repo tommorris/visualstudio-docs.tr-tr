@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474888"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Nasıl Yapılır: Çalışma Zamanı Hata Raporlama İşlevi Yazma
 Özel raporlama işlev çalışma zamanı hataları aynı bildirimi olarak bulunmalıdır `_CrtDbgReportW`. Bu hata ayıklayıcısı için 1 değerini döndürmelidir.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138112"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Fiiller için dosya adı uzantılarını kaydetme
 Bir uygulama bir dosya adı uzantısı ilişkilendirmesini genellikle bir kullanıcı bir dosyayı tıklattığında oluşan tercih edilen bir eylem vardır. Bu eylem için eylem karşılık gelen bir fiil, örneğin açık bağlantılı tercih edilir.  

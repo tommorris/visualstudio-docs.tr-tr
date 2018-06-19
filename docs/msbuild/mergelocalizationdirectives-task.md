@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571249"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives Görevi
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Görev birleştirir Yerelleştirme öznitelikleri ve bir veya daha fazla yorumlar [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] tüm derleme için tek bir dosya halinde ikili biçimi dosyaları.  

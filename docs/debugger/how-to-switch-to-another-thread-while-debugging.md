@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475695"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da hata ayıklarken başka bir iş parçacığı için geçiş
 Çok iş parçacıklı uygulamada hata ayıklarken, başka bir iş parçacığı çalıştığınız iş parçacığı geçmek için birkaç yöntemden birini kullanabilirsiniz.

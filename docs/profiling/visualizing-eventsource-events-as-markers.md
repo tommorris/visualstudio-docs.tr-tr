@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449032"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>EventSource olaylarını işaretleyici olarak Görselleştirme
 Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olarak görüntüleyebilir ve işaretlerinin görüntülenme biçimini kontrol edebilirsiniz. EventSource işaretçileri görüntülemek için GUID ETW sağlayıcısını kullanarak kayıt [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu. Eşzamanlılık görselleştiricisi EventSource olaylarını olarak göstermek için varsayılan kuralları sahip [bayrak işaretleyicileri](../profiling/flag-markers.md), [aralık işaretçileri](../profiling/span-markers.md), ve [ileti işaretçileri](../profiling/message-markers.md). EventSource olaylarını olaylara özel alanlar ekleyerek görüntülenme biçimini özelleştirebilirsiniz. İşaretçileri hakkında daha fazla bilgi için bkz: [eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md). EventSource olaylarını hakkında daha fazla bilgi için bkz: <xref:System.Diagnostics.Tracing>.  

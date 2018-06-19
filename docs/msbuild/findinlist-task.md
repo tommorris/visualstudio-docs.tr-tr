@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579010"
 ---
 # <a name="findinlist-task"></a>FindInList Görevi
 Belirtilen bir listede eşleşen itemspec sahip öğeyi bulur.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922448"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>XAML Tasarımcısı için klavye kısayolları
 Klavye kısayolları XAML Tasarımcısı'nda tek klavye kısayolu birden çok fare düğme tıklamalarına gerektiren bir eylem azaltarak çalışmanızı hızlandırabilir.

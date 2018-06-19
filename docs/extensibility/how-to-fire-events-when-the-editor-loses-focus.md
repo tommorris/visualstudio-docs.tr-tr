@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127050"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Nasıl yapılır: yangın Düzenleyicisi odağı kaybettiğinde olayları
 Bazen bir düzenleyici pencere çerçevesi odağı kaybettiğinde öğrenmek gereklidir. Örneğin, Kod Düzenleyicisi artık üzerinde odaklanmıştır sonra bir kod penceresinden ayıklamak gerekebilir. Aşağıdaki yordam odağı kaybeden Düzenleyicisi bildirim almak için izlemeniz gereken adımları sağlar.  

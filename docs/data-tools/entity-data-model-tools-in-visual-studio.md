@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922994"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio'da Entity Framework Araçları
 Entity Framework, .NET geliştiricilerinin etki alanına özgü nesneleri kullanılarak ilişkisel verilerle çalışmak bir nesne ilişkisel eşleme teknolojisidir. Genellikle geliştiricilerin yazmak zorunda olduğu çoğu veri erişim koduna yönelik gereksinimi ortadan kaldırır. Entity Framework teknolojisi yeni .NET uygulamaları için modelleme önerilen nesne ilişkisel eşleştirme (ORM) yapılır.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132040"
 ---
 # <a name="source-control-integration-essentials"></a>Kaynak denetimi tümleştirmesi hakkında temel bilgiler
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kaynak denetimi tümleştirmesinin iki türlerini destekler: temel işlevleri sağlayan ve kaynak denetimi Eklentisi (önceki adıyla MSSCCI API olarak bilinen) API ve VSPackage tabanlı kaynak denetimi tümleştirmesi çözümü kullanılarak oluşturulan bir kaynak denetimi eklentisi, daha sağlam işlevselliği sağlar.  

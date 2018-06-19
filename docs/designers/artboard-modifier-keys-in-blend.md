@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923103"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend'de çalışma yüzeyi değiştirici tuşları
 Bazı klavye kısayolları sahip ilişkilendirilmemiş menü öğeleri, kullanamayacağınız anlamına gelir [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] bunları bulmak için kullanıcı arabirimi. Aşağıdaki tabloda bir nesne yeniden boyutlandırma gibi bir eylem değiştirme kısayolları listeler.

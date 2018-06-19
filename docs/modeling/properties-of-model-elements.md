@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947722"
 ---
 # <a name="properties-of-model-elements"></a>Model Öğelerinin Özellikleri
 Bu bölümde DSL tanımı diyagramı veya DSL Gezgini'nde bir öğe seçtiğinizde, Özellikler penceresinde görürsünüz özellikleri listeler.

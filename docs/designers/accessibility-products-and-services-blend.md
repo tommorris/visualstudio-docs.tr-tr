@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923911"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Erişilebilirlik ürünleri ve Hizmetleri (karışım)
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Aşağıdaki bölümler, Microsoft Windows'u engelli kişiler için daha kolay erişilebilir duruma getiren özellikler, ürünler ve hizmetler konusunda bilgi sağlar.

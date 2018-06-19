@@ -1,13 +1,13 @@
 ---
-title: "substring yöntemi (dize) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: substring yöntemi (dize) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791792"
 ---
 # <a name="substring-method-string-javascript"></a>substring Yöntemi (Dize) (JavaScript)
 İçinde belirtilen konumda alt dizeyi döndürür bir `String` nesnesi.  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="remarks"></a>Açıklamalar  
  `substring` Yöntemi alt dizeyi içeren dizeyi döndürür `start` kadar ancak dahil değil, `end`.  
   
- **Substring** yöntemi alt değerini kullanır `start` ve `end` alt dizeyi, başlangıç noktası olarak. Örneğin, strvar.substring (0, 3**)** ve strvar.substring (3, 0), aynı alt dizeyi döndürür.  
+ **Substring** yöntemi alt değerini kullanır `start` ve `end` alt dizeyi, başlangıç noktası olarak. Örneğin, strvar.substring (0, 3 **)** ve strvar.substring (3, 0), aynı alt dizeyi döndürür.  
   
  Her iki `start` veya `end` olan `NaN` veya negatif, sıfır ile değiştirilir.  
   

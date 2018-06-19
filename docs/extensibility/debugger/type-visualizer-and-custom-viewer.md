@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126916"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Türü Görselleştirici ve özel Görüntüleyicisi
 Türü Görselleştirici çok belirli bir biçimde veri parçası görüntüleyen bir bileşenidir. Bu biçim tamamen Görselleştirici uygulayan kadar son kullanıcı veya bir üçüncü taraf sağlayıcısına görselleştiriciler olabilir.  

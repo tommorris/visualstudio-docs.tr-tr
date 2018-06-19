@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920660"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genelleştirme Kuralları kural kümesi
 Microsoft Genelleştirme kuralları kural kümesi farklı diller, yerel ayarlar ve kültürlere doğru görünmesini uygulamanızdaki verileri engelleyebilecek sorunları odaklanmak için kullanabilirsiniz. Bu kural, uygulama globalized, yerelleştirilmiş ise, kümesi veya her ikisini de içermelidir.

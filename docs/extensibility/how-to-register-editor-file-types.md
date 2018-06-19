@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129176"
 ---
 # <a name="how-to-register-editor-file-types"></a>Nasıl yapılır: Düzenleyici dosya türlerini kaydetme
 Düzenleyici dosya türlerini kaydetmek için kolay bir parçası olarak sağlanan kayıt öznitelikleri kullanarak yoludur [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] yönetilen paket framework (MPF) sınıfları. Yerel paketinizi uyguluyorsanız [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], ayrıca, düzenleyici ve ilişkili uzantıları kaydeden bir kayıt defteri komut dosyası yazabilirsiniz.

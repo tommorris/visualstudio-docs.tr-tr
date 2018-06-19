@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919683"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ İçin Kod Çözümleme Uyarıları
 Bu bölümde, C/C++ Kod Analizi uyarıları tarafından gerçekleştirilen dışındaki listelenmektedir [C++ çekirdek yönergeleri denetleyicileri](code-analysis-for-cpp-corecheck.md). Kod çözümleme hakkında daha fazla bilgi için bkz: [/ analyze (kod çözümleme)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için Kod Analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).

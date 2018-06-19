@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792200"
 ---
 # <a name="writing-javascript-code"></a>JavaScript Kodu Yazma
 Gibi birçok diğer programlama dilleri, [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] deyime deyimleri ve açıklamaların ilgili kümesi oluşan blokları düzenlenmiştir. Deyimi içinde değişkenleri, dizeler, sayılar ve ifadeler kullanabilirsiniz.  

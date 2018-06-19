@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129052"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Nasıl yapılır: açık projeye özgü düzenleyiciler
 Bir projeye göre açılmakta bir öğe dosya doğası gereği, bu proje için belirli düzenleyiciye bağlıysa, projenin bir projeye özgü Düzenleyicisi'ni kullanarak dosyayı açmanız gerekir. Dosya bir düzenleyicide seçme IDE'nin mekanizması aşağıya doğru devredilemez. Örneğin, bir standart bit eşlemi Düzenleyicisi'ni kullanmak yerine, projenize için benzersizdir dosyasındaki bilgileri tanır belirli bit eşlem Düzenleyicisi belirtmek için bu projeye özgü Düzenleyici seçeneği kullanabilirsiniz.  

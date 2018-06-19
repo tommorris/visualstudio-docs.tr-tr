@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127698"
 ---
 # <a name="extern-element"></a>Extern öğesi
 Extern öğesi dış üstbilgi (.h) dosyalarının derleme zamanında .vsct dosyasıyla Birleştir başvurur. Birleştirilecek dosyalar VSCT derleyici verilen ya da başvurduğu INCLUDE yolu olmalıdır bir [INCLUDE öğesi](../extensibility/include-element.md). Dosyaları, diğer .vsct veya C++ üstbilgi dosyaları olabilir.  

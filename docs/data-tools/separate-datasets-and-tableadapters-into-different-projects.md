@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921451"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Ayrı veri kümeleri ve TableAdapters öğelerini farklı projelere içine
 Yazılan veri kümeleri Gelişmiş böylece [TableAdapters](create-and-configure-tableadapters.md) ve veri kümesi sınıfları ayrı projelere oluşturulabilir. Bu, hızlı bir şekilde n katmanlı veri uygulamalarını oluşturmak ve uygulama katmanları ayrı sağlar.

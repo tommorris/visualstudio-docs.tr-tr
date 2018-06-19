@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127509"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Ayarları Mağazası'ndan hizmet bilgileri alınıyor
 Ayarları deposu tüm kullanılabilir hizmetler bulmak için veya belirli bir hizmet yüklü olup olmadığını belirlemek için kullanabilirsiniz. Hizmet sınıfı türünü bilmeniz gerekir.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916835"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özelliği listelenen iki kez
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126635"
 ---
 # <a name="editor-and-language-service-extensions"></a>Düzenleyici ve dil hizmeti uzantıları
 Visual Studio kod düzenleyicisini çoğu özelliklerini genişletebilirsiniz. Düzenleyici, Windows Presentation Foundation (WPF) dayanır ve yönetilen kodda yazılır. Tasarımlar, Visual Studio'nun önceki sürümleri, bu tasarım farklıdır rağmen aynı özelliklerin çoğunu sağlar. Düzenleyiciyi genişletmek için Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanın.  

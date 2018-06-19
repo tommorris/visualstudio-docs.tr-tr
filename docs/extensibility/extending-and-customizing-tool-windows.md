@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129241"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Genişletme ve aracı Windows özelleştirme
 Visual Studio, windows, örneğin aracı windows, belge pencereleri ve iletişim windows birkaç farklı türde sağlar. Özellikler penceresi, çıktı penceresi ve Görev Listesi penceresi gibi diğer windows aracı windows türleridir.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127643"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Nasıl yapılır: bağlantılı geri alma Yönetimi'ni kullanın
 Bağlantılı geri alma aynı anda birden çok dosya aynı düzenlemeleri geri olanak tanır. Örneğin, bir üst bilgi dosyası ve bir Visual C++ dosyası gibi birden çok program dosyaları arasında eşzamanlı metin değişiklikleri, bir bağlantılı geri alma işlemi olur. Bağlantılı geri alma özelliği, geri alma yöneticisi ortamı uygulamasına oluşturulur ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> , bu özellik işlemek olanak tanır. Bağlantılı geri alma birlikte tek geri birim olarak kabul edilmesi için ayrı geri yığınları bağlayabilirsiniz bir ana geri birim tarafından uygulanır. Kullanarak bağlantılı geri alma yordamı aşağıdaki bölümde ayrıntılı olarak gösterilmiştir.  

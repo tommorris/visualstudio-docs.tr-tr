@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31970991"
 ---
 # <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Bir etkinliğin özellik iletişim kutusu (eski) bağlayın
 

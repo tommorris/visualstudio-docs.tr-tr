@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130048"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Şablon ilke ve Özellikler penceresi
 Proje içinde Kurumsal Şablonu proje içerdiğinde bu kurumsal Şablonu proje ilkesini zorunlu kılabilir. Şablon ilke özelliklerinin varsayılan değerlerini ayarlamak, özelliklerini Gizle, özellikleri ekleyin ve benzeri için kullanılan kısıtlayan bir sistem olur.  

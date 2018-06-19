@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132567"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Üst kapsayıcı klasörleri çözümleri oluşturma
 Kaynak Denetim eklentisi API sürüm 1.2, bir kullanıcı çözüm içindeki tüm Web projeleri için tek bir kök kaynak denetimi hedef belirtebilirsiniz. Bu tek bir kök bir süper birleşik kök (SUR) adı verilir.  

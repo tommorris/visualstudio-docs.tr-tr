@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132488"
 ---
 # <a name="visualizing-and-viewing-data"></a>Görselleştirme ve verileri görüntüleme
 Görselleştiriciler ve özel görüntüleyiciler mevcut verileri hızlı bir şekilde bir geliştirici anlamlı bir şekilde yazın. İfade değerlendiricisi (EE) üçüncü taraf türü görselleştiriciler desteklemek yanı sıra kendi özel görüntüleyiciler sağlayın.  

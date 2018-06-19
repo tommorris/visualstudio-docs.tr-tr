@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133142"
 ---
 # <a name="project-model-core-components"></a>Proje modeli çekirdek bileşenleri
 Aşağıdaki tablolarda proje modeline genişletin. Tabloları kısa açıklamaları model ve arabirimleri ve belirli nesneler ile ilişkili hizmetler tanımlanan Hizmetleri ve arabirimleri sunar. Ayrıca, isteğe bağlı olarak proje oluşturma ve Bakım, belirli bir proje türü gereksinimlerine bağlı olarak diğer arabirimleri tabloları ayrıntılarını gösterir.  

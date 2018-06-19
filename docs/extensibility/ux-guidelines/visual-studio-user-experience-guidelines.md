@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139870"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio kullanıcı deneyimi yönergeleri
 Visual Studio kullanıcı deneyimi yönergeleri, yeni özellikler için Visual Studio tasarım olanlar için tasarlanmıştır. Yeni kullanıcı arabirimi (UI) tasarımcılarının sorunsuz ve tutarlı geliştirme ortamında kullanıcı deneyimleri oluşturabilmesi için bu yönergeler ortak kullanıcı modeller ve etkileşim desenler hakkında bilgi içerir.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132279"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Nasıl yapılır: özel metin işaretçileri oluşturma
 Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak istiyorsanız, aşağıdaki adımları izlemelisiniz:  
@@ -34,9 +35,9 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
   
 1.  Bir kayıt defteri girdisi gibi oluşturun:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<sürüm >*\Text Editor\External işaretçileri\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<sürüm >* \Text Editor\External işaretçileri\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*olan bir `GUID` eklenmekte olan işaret tanımlamak için kullanılan  
+     *\<MarkerGUID >* olan bir `GUID` eklenmekte olan işaret tanımlamak için kullanılan  
   
      *\<Sürüm >* sürümü [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], örneğin 8.0  
   
@@ -45,7 +46,7 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
     > [!NOTE]
     >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio kök yolunu\\*\<sürüm >* Visual Studio Kabuğu'nu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio altına dört değerleri oluşturmak\\*\<sürüm >*\Text Editor\External işaretçileri\\*\<MarkerGUID >*  
+2.  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio altına dört değerleri oluşturmak\\*\<sürüm >* \Text Editor\External işaretçileri\\*\<MarkerGUID >*  
   
     -   (Varsayılan)  
   

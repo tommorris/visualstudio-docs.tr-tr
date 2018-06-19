@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133290"
 ---
 # <a name="property-pages"></a>Özellik Sayfaları
 Kullanıcıları görüntülemek ve özellik sayfalarını kullanarak proje yapılandırmaya bağlı ve - bağımsız özelliklerini değiştirin. A **özellik sayfaları** düğmesi etkinleşir **özellikleri** penceresi veya bir özellik sayfası görünümü seçili nesnenin sağlamak nesneleri için Çözüm Gezgini araç. Özellik sayfaları ortamı tarafından oluşturulan ve çözümler ve projeler için kullanılabilir. Ancak, aynı zamanda olabilirler olun proje öğeleri yapılandırmaya bağlı özelliklerini kullanmak için kullanılabilir. Projedeki dosyaları düzgün bir şekilde oluşturmak farklı derleyici anahtar ayarları gerektirdiğinde bu özellik kullanılabilir.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131153"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Nasıl yapılır: yerleşik yazı tipleri ve renk düzenini erişim
 Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresini ile ilişkili bir düzeni yazı tiplerini ve renkleri vardır. Bu düzen üzerinden erişebilirsiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> arabirimi.
@@ -38,7 +39,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresini il
 
 1.  Rastgele bir GUID oluşturun.
 
-     Bir kategori benzersiz şekilde tanımlamak için kullanılan bu GUID**.** Bu kategori IDE'nin varsayılan yazı tipleri ve renkler belirtimi yeniden kullanır.
+     Bir kategori benzersiz şekilde tanımlamak için kullanılan bu GUID **.** Bu kategori IDE'nin varsayılan yazı tipleri ve renkler belirtimi yeniden kullanır.
 
     > [!NOTE]
     >  Yazı tipi ve renk verilerle alınırken <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> veya diğer arabirimleri VSPackages yerleşik bilgilere referans bu GUID kullanın.
@@ -51,7 +52,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresini il
 
 1.  Özel türde bir kategori aşağıdaki konumda kayıt defteri girişi oluşturun:
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >*\FontAndColors\\*\<Kategori >*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >* \FontAndColors\\*\<Kategori >*]
 
      *\<Kategori >* kategorisi yerelleştirilmemiş adıdır.
 

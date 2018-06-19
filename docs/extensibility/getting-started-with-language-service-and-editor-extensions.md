@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131600"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Dil hizmeti ve düzenleyici uzantıları ile çalışmaya başlama
 Anahat oluşturma, eşleşen ayraç, IntelliSense ve ampuller gibi dil hizmet özellikleri programlama diliniz veya herhangi bir içerik türüne eklemek için düzenleyici uzantıları kullanabilirsiniz. Ayrıca, Görünüm ve Visual Studio düzenleyicisinde, Örneğin Renklendirme, kenar boşlukları, adornments ve diğer görsel öğelere metin davranışını özelleştirebilirsiniz. Ayrıca, kendi içerik türünü tanımlayın ve görünümü ve davranışı içeriğinizi göründüğü metin görünümlerini belirtin.  
@@ -66,7 +67,7 @@ Anahat oluşturma, eşleşen ayraç, IntelliSense ve ampuller gibi dil hizmet ö
 ## <a name="running-extensions-in-the-experimental-instance"></a>Deneysel örneğinde çalışan uzantıları  
  Aşağıdaki Deneysel klasöründe (Windows Vista ve Windows 7) dağıtarak uzantı geliştirirken Visual Studio çalışma sürümünüz verenlerden:  
   
- *% LOCALAPPDATA %*\VisualStudio\10.0Exp\Extensions\\*şirket*\\*Extensionıd*  
+ *% LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*şirket*\\*Extensionıd*  
   
  Burada *LOCALAPPDATA %* oturum açan kullanıcı adı *şirket* uzantısına sahip şirket adı ve *Extensionıd* uzantısı kimliğidir.  
   

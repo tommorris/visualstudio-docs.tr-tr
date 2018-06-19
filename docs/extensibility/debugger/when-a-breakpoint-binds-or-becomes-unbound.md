@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134414"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Ne zaman bir kesme noktası bağlar veya ilişkisiz olur
 Bir kesme noktası için bir çağrı yapılır zaman bağlanamaz zaman [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) yöntemi, BIND oluşturma kesme zamanı ve zaman farklıdır.  

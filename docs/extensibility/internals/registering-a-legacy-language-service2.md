@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134145"
 ---
 # <a name="registering-a-legacy-language-service"></a>Eski dil hizmeti kaydetme
 Aşağıdaki bölümler kayıt defteri girdileri listesi çeşitli dil için kullanılabilir hizmet seçenekleri sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -68,7 +69,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Ad|Tür|Aralık|Açıklama|  
 |----------|----------|-----------|-----------------|  
-|(Varsayılan)|REG_SZ|metin|Varsayılan değer dilin adını belge için kullanılabilir. Bu anahtarın adını karşılık gelen bir girişe sahip bir ifade değerlendiricisi GUID'dir  *\<VS Reg kök >*\AD7Metrics\Expression değerlendirici.|  
+|(Varsayılan)|REG_SZ|metin|Varsayılan değer dilin adını belge için kullanılabilir. Bu anahtarın adını karşılık gelen bir girişe sahip bir ifade değerlendiricisi GUID'dir  *\<VS Reg kök >* \AD7Metrics\Expression değerlendirici.|  
   
 ### <a name="example"></a>Örnek  
   
@@ -159,7 +160,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>Mantıksal görünüm seçenekleri için kayıt defteri girişleri  
- *VS Reg kök*\Editors\\*Düzenleyicisi GUI >*\LogicalViews anahtarı, aşağıdaki değerleri içerebilir.  
+ *VS Reg kök*\Editors\\*Düzenleyicisi GUI >* \LogicalViews anahtarı, aşağıdaki değerleri içerebilir.  
   
 |Ad|Tür|Aralık|Açıklama|  
 |----------|----------|-----------|-----------------|  

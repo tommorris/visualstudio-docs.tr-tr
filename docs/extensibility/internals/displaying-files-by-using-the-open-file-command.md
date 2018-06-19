@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130899"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Dosya Aç komutu kullanarak dosyaları görüntüleme
 Aşağıdaki adımlar, IDE nasıl işlediğini açıklar **açık dosya** kullanılabilir komut **dosya** menüde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Adımları ayrıca nasıl projeleri Bu komuttan kaynaklanan çağrıları yanıt vermesi gerektiğini açıklar.  

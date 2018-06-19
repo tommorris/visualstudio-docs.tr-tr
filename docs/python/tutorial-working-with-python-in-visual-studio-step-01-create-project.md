@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031715"
 ---
 # <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
 

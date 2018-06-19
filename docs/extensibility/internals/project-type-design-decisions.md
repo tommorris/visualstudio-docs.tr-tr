@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131506"
 ---
 # <a name="project-type-design-decisions"></a>Proje türü tasarım kararları
 Yeni bir proje türü oluşturmadan önce proje türü ile ilgili bazı tasarım kararlarını olmanız gerekir. Hangi tür projelerinizi içerecek öğeleri, proje dosyalarını kalıcı nasıl ve ne taahhüt modeli kullanacağınıza karar vermeniz gerekir.  

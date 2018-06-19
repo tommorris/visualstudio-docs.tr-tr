@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102375"
 ---
 # <a name="adding-commands-to-toolbars"></a>Araç çubukları komut ekleme
 Bir araç çubuğu düğmeleri komutları bağlı içeren yatay veya dikey bir Şerit bulunur. Visual Studio'da birçok farklı windows çubuklarında kendi komutları ekleyebilirsiniz: ana Visual Studio penceresi, Çözüm Gezgini ve kendi özel araç pencereleri.  

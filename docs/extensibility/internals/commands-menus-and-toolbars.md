@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131982"
 ---
 # <a name="commands-menus-and-toolbars"></a>Komutları, menüleri ve araç çubukları
 Menüleri ve araç çubuklarını şekilde, kullanıcılar, VSPackage komutlarda erişimi var. Belge yazdırma, bir görünümü yenileme veya yeni bir dosya oluşturmak gibi görevleri gerçekleştirmek işlevleri komutlardır. Menüleri ve araç çubuklarını komutlarınızı sunmak için uygun grafik yollarıdır. Genellikle, ilgili komutları birlikte aynı menü veya araç çubuğunda kümelenir.  

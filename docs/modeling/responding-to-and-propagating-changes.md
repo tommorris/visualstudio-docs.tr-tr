@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954011"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Değişikliklere Yanıt Verme ve Değişiklikleri Yayma
 Bir öğenin oluşturulan, silinmiş veya güncelleştirildiğinde, model diğer bölümleri veya dosyaları, veritabanları veya diğer bileşenleri gibi dış kaynaklara değişikliği yayar kod yazabilirsiniz.

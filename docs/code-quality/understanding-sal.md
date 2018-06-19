@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927552"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 Microsoft kaynak kodu ek açıklama dili (SAL), bir işlev parametreleri, bunlarla ilgili kolaylaştırır varsayımları ve tamamlandığında kolaylaştıran garanti nasıl kullandığını tanımlamak için kullanabileceğiniz ek açıklamaları kümesi sağlar. Ek açıklamalar üstbilgi dosyasında tanımlanan `<sal.h>`. C++ için Visual Studio Kod Analizi SAL ek açıklamaları işlevleri çözümlemesini değiştirmek için kullanır. Windows Sürücü Geliştirme için SAL 2.0 hakkında daha fazla bilgi için bkz: [SAL 2.0 ek açıklamalar için Windows sürücülerini](http://go.microsoft.com/fwlink/?LinkId=250979).

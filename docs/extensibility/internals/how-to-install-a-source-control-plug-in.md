@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133566"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Nasıl yapılır: kaynak denetimi eklentisini yükleme
 Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:  
@@ -37,7 +38,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Kaynak Denetim eklentisi DLL'sini kaydetmek için  
   
-1.  Ürün adı alt tarafından ve ardından, şirket adı alt belirtir yazılım alt anahtarda HKEY_LOCAL_MACHINE anahtarı altında iki giriş ekleyin. Desen HKEY_LOCAL_MACHINE\Software olan\\*[Şirket adı]*\\*[Ürün adı]*\\*[entry]* = değer. İki giriş her zaman SCCServerName ve SCCServerPath olarak adlandırılır. Her normal bir dizedir.  
+1.  Ürün adı alt tarafından ve ardından, şirket adı alt belirtir yazılım alt anahtarda HKEY_LOCAL_MACHINE anahtarı altında iki giriş ekleyin. Desen HKEY_LOCAL_MACHINE\Software olan\\ *[Şirket adı]*\\ *[Ürün adı]*\\ *[entry]* = değer. İki giriş her zaman SCCServerName ve SCCServerPath olarak adlandırılır. Her normal bir dizedir.  
   
      Örneğin, şirket adınızı Microsoft ve kaynak denetimi ürününüzü ise SourceSafe, bu kayıt defteri yolu HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe olacaktır sonra adı verilir. Bu alt anahtar ilk girişi SCCServerName, ürününüzü adlandırma bir kullanıcı tarafından okunabilen bir dizedir. İkinci, SCCServerPath, kaynak tam yolunu kontrol IDE bağlanması gereken eklentisi DLL'sini girişidir. Aşağıdaki örnek kayıt defteri girdileri sağlar:  
   
@@ -66,7 +67,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
   
 3.  Alt anahtar, SourceCodeControlProvider, yazılım alt HKEY_LOCAL_MACHINE anahtar altında ekleyin.  
   
-     Bu alt anahtarı altında adım 1'kayıt defterinde yerleştirilen alt anahtarını temsil eden bir dize için ProviderRegKey kayıt defteri girdisini ayarlayın. Desen HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey olan yazılım =\\*[Şirket adı]*\\*[Ürün adı]*.  
+     Bu alt anahtarı altında adım 1'kayıt defterinde yerleştirilen alt anahtarını temsil eden bir dize için ProviderRegKey kayıt defteri girdisini ayarlayın. Desen HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey olan yazılım =\\ *[Şirket adı]*\\ *[Ürün adı]*.  
   
      Bu alt anahtar için örnek içeriği verilmiştir.  
   
@@ -79,7 +80,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
   
 4.  SourceCodeControlProvider alt anahtarı altında InstalledSCCProviders adlı bir alt anahtarını oluşturmak ve ardından o alt anahtarı altında bir giriş yerleştirebilirsiniz.  
   
-     Bu giriş adını sağlayıcısı (aynı SCCServerName girişi için belirtilen değer) kullanıcı tarafından okunabilen adıdır ve, bir kez daha, 1. adımda oluşturduğunuz alt değerdir. Desen HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders olan\\*[görünen ad]* yazılım =\\*[Şirket adı]* \\ *[Ürün adı]*.  
+     Bu giriş adını sağlayıcısı (aynı SCCServerName girişi için belirtilen değer) kullanıcı tarafından okunabilen adıdır ve, bir kez daha, 1. adımda oluşturduğunuz alt değerdir. Desen HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders olan\\ *[görünen ad]* yazılım =\\ *[Şirket adı]* \\ *[Ürün adı]*.  
   
      Örneğin:  
   
@@ -102,7 +103,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
 > [!NOTE]
 >  IDE DLL'leri göreli yolları (örneğin,.\NewProvider.DLL) yüklemez. DLL Dosyasının tam yolunu belirtilmelidir (örneğin, c:\Providers\NewProvider.DLL). Bu, IDE güvenlik yetkisiz veya Kimliğine bürünülen eklentisi DLL'sini yüklenmesini engelleyerek güçlendirir.  
   
- İkinci yol DLL bulmak için tüm girişleri için HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders alt anahtarı altında IDE arar*.* Her girişin bir ad ve bir değere sahip. IDE kullanıcıya bu adlarının bir listesini görüntüler*.* Kullanıcı adları seçtiğinde IDE alt anahtarına noktaları seçilen adı değeri bulur. Bu alt anahtarda HKEY_LOCAL_MACHINE altında SccServerPath adlı bir girdi IDE arar. Bu giriş değerinin doğru DLL IDE işaret eder.  
+ İkinci yol DLL bulmak için tüm girişleri için HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders alt anahtarı altında IDE arar *.* Her girişin bir ad ve bir değere sahip. IDE kullanıcıya bu adlarının bir listesini görüntüler *.* Kullanıcı adları seçtiğinde IDE alt anahtarına noktaları seçilen adı değeri bulur. Bu alt anahtarda HKEY_LOCAL_MACHINE altında SccServerPath adlı bir girdi IDE arar. Bu giriş değerinin doğru DLL IDE işaret eder.  
   
  DLL bulma her iki yönde desteklemek ve sonuç olarak, herhangi bir önceki ayar üzerine ProviderRegKey ayarlamak, kaynak denetim eklentisi gerekir. Böylece kullanıcı kullanmak için hangi kaynak denetim eklentisi seçimine daha da önemlisi, onu kendisini InstalledSccProviders listesine eklemeniz gerekir.  
   

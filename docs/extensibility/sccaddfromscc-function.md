@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139958"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc işlevi
 Bu işlev kaynak denetimi sistemde zaten olan dosyaları göz olanak tanır ve daha sonra bu dosyaları bölümü geçerli projenin yapın. Örneğin, bu işlev dosya kopyalama olmadan ortak bir üst bilgi dosyası geçerli projede alabilirsiniz. Dosyaları iade dizisi `lplpFileNames`, IDE projeye eklemek için kullanıcının istediği dosyaların listesini içerir.  

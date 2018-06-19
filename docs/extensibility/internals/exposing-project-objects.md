@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130459"
 ---
 # <a name="exposing-project-objects"></a>Proje nesneleri gösterme
 Özel proje türleri Otomasyon arabirimleri kullanarak proje erişmesine izin vermek için Otomasyon nesneleri sağlayabilir. Her proje türü standart sağlaması beklenir <xref:EnvDTE.Project> erişilen Otomasyon nesnesi <xref:EnvDTE.Solution>, IDE içinde açık olan tüm projeleri koleksiyonunu içerir. Proje içinde her öğe tarafından sunulan beklenen bir <xref:EnvDTE.ProjectItem> erişilen nesne `Project.ProjectItems`. Bu standart Otomasyon nesneleri ek olarak, projeye özgü Otomasyon nesneleri sunmak projeleri seçebilirsiniz.  

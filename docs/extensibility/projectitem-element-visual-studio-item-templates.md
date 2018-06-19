@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139578"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem Öğesi (Visual Studio Öğe Şablonları)
 Öğe şablona dahil bir dosyayı belirtir.  

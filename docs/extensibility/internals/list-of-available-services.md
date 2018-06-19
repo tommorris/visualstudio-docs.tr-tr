@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135917"
 ---
 # <a name="list-of-available-services"></a>Kullanılabilen hizmetlerin listesi
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve Visual Studio SDK'sı aşağıdaki hizmetleri destekler. Bazı paketler, burada listelenmeyen kendi hizmetler sunan — Örneğin, dil Hizmetleri tek bir hizmeti GUID yok. GUID dil hizmetinin kayıt defterinde bulmak için dil adını kullanmanız gerekir.  

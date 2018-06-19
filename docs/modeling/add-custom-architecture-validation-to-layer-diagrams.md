@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952550"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel mimari doğrulaması ekleme
 Kaynak kodu bağımlılık diyagramında bağımlılıklara doğrulayabilir Visual Studio'da katman modeli karşı bir proje kaynak kodunda kullanıcılar doğrulayabilirsiniz. Standart doğrulama algoritması yoktur, ancak kendi doğrulama uzantıları tanımlayabilirsiniz.

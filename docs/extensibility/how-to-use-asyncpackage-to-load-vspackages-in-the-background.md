@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135387"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Nasıl yapılır: arka planda VSPackages yüklemek için AsyncPackage kullanın
 Yükleme ve VS Paketi başlatma disk g/ç neden olabilir. Bu tür g/ç kullanıcı Arabirimi iş parçacığı üzerinde olursa, yanıt hızını sorunlarına yol açabilir. Bu sorunu çözmek için Visual Studio 2015 sunulan <xref:Microsoft.VisualStudio.Shell.AsyncPackage> paketi yükleme arka plan iş parçacığında sağlayan sınıf.  

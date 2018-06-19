@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148278"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkleri
 Ortak Visual Studio Kabuğu öğeler kullanan kullanıcı Arabirimi tasarladığınız ya da benzer özellikleri ile tutarlı olacak şekilde arabirimi Öğenizde istediğiniz varolan belirteci adları paket tanımlama dosyaları seçin ve renkleri atamak için kullanın. Bu, kullanıcı Arabirimi ile genel Visual Studio ortamında tutarlı kalmasını ve Temalar eklenen veya güncelleştirilen zaman onu otomatik olarak güncelleştirir sağlar.  

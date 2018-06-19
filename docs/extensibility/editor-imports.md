@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132740"
 ---
 # <a name="editor-imports"></a>Düzenleyici içeri aktarmalar
 Düzenleyici Hizmetleri, oluşturucuları ve farklı türde erişim çekirdek düzenleyiciye uzantınızı sağlayan aracıların sayısı içeri aktarabilirsiniz. Örneğin, alabileceğiniz <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> sizinle sağlamak için bir <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> verilen bir içerik türü için. (Bu Gezgin aramaları farklı türde bir metin arabelleği gerçekleştirmek izin verir.)  

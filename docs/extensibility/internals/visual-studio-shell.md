@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144362"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Kabuğu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kabuğu tümleştirmesine birincil aracı olan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Kabuk ortak Hizmetleri paylaşmak VSPackages etkinleştirmek için gerekli işlevselliği sağlar. Çünkü mimari amacı [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackages içinde birincil işlevleri vest için kabuk temel işlevleri sağlamak ve kendi bileşen VSPackages arasında arası iletişimi desteklemek için bir çerçevedir.  

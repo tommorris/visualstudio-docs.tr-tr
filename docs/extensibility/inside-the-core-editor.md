@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130443"
 ---
 # <a name="inside-the-core-editor"></a>İçinde çekirdek Düzenleyicisi
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Çekirdek Düzenleyicisi'ni değiştirin ve sorgu metin bilgileri sağlayan birkaç bileşenlerine kümesidir. Eski API kullanarak çekirdek Düzenleyici özelleştirdiyseniz, düzenleyici bağdaştırıcıları aracılığıyla yönlendirilir bu özelleştirmeler kullanmaya devam edebilir. Bu, ancak yeni Düzenleyicisi API özelleştirmelerinizi uyum önerilir.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129058"
 ---
 # <a name="document-windows"></a>Belge pencereleri
 Visual Studio'da bir *belge penceresine* birden çok belge arabirimi (MDI) penceresi ile ilişkili bir Çerçeveli alt penceredir. Belge pencereleri tipik olarak görüntü ve kaynak kodu ya da metin değişikliği için kullanılır, ancak diğer işlev türleri de barındırabilir. Belge pencereleri:  

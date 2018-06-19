@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948099"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Etki Alanına Özgü Dilden Kod Oluşturma
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] modellerinde gösterilen veriler kod, belgeler, yapılandırma dosyalarını ve diğer yapıları oluşturmak için güçlü bir yol sağlar. Kullanarak [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], verilerinizi temsil eden sınıfları kümesi oluşturabilirsiniz ve metin şablonları sınıflarda adları yazabilirsiniz ve özellikleri verileri yansıtır.

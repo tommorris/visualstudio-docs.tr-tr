@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130780"
 ---
 # <a name="error-codes"></a>Hata Kodları
 Kaynak Denetim eklentisi API işlev hata döndürür, aşağıdaki hata kodlarından birini olması beklenir. Uyarı veya bilgilendirme hata kodları pozitif, tüm hataları negatif ve başarılı 0'dır.  

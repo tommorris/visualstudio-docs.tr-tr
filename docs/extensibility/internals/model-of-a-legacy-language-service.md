@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131598"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Eski dil hizmet modeli
 Bir dil hizmeti belirli bir dil için özellikler ve öğeler tanımlar ve düzenleyici bu dile özgü bilgileri sağlamak için kullanılır. Örneğin, düzenleyici sözdizimi renklendirmesi desteklemek için öğeleri ve dil anahtar sözcükleri bilmesi gerekir.  

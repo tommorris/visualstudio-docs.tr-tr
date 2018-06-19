@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954358"
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı metin şablonu hata ayıklamak için metin şablonu dosyasını kaydedin ve ardından **hata ayıklama T4 şablon** Çözüm Gezgini'nde dosyasının kısayol menüsünde. Çalışma zamanı metin şablonu hata ayıklamak için basitçe ait olduğu uygulama hata ayıklama.

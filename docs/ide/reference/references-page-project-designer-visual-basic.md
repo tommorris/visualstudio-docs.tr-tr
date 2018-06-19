@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950299"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
 Kullanım **başvuruları** sayfasında **Proje Tasarımcısı** başvuruları, Web başvuruları ve projenizdeki içeri aktarılan ad alanlarını yönetmek için. Proje başvuruları COM bileşenlerini, XML Web Hizmetleri, .NET Framework sınıf kitaplıkları veya derlemeleri veya diğer sınıf kitaplıkları için içerebilir. Başvuruları kullanma hakkında daha fazla bilgi için bkz: [bir projedeki başvuruları yönetme](../../ide/managing-references-in-a-project.md).

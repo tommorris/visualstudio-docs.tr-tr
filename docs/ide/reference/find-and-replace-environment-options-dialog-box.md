@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946578"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Bul ve Değiştir, Ortam, Seçenekler İletişim Kutusu
 Bu sayfanın kullanmak **seçenekleri** ileti kutuları ve bir bulma diğer yönlerini denetlemek ve işlem Değiştir iletişim kutusu. Bu iletişim kutusundan erişebilirsiniz **Araçları** menüsünde tıklayarak **seçenekleri**, genişleyen **ortam**ve ardından **bulma ve değiştirme**. Bu sayfayı listede görünmüyorsa, seçin **tüm ayarını gösteren** içinde **seçenekleri** iletişim kutusu.

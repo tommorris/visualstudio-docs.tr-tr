@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579049"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>.NET Framework Uzantılarını Kaydetme
 Belirli bir .NET Framework sürümünü genişleten bir derlemeyi geliştirebilirsiniz. Visual Studio'da görünmesi derleme etkinleştirmek için **Başvuru Ekle** iletişim kutusu, sistem kayıt defterine içeren klasörü eklemeniz gerekir.  

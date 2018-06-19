@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948723"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Diğer Visual Studio sürümlerindeki modelleri ve diyagramları okuma
 Bir model oluşturmayı desteklemiyor Visual Studio sürümünde bir model açtığınızda model salt okunur modunda açılır. Bu modda diyagramları düzenini değiştirebilirsiniz ancak modeli değiştiremezsiniz.

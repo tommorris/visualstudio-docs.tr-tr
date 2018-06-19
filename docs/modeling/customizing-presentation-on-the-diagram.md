@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946838"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Diyagramda Sunuyu Özelleştirme
 Aşağıdaki diyagramda bir etki alanına özgü dil Tasarımcısı'nın ana sunu alanıdır. Genellikle, kullanıcılar, diyagram modellerini oluşturmak için kullanır. Aşağıdaki konularda açıklandığı gibi diyagram özelleştirebilirsiniz.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927171"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı'ndaki yerel nesnelerin özel görünümlerini oluşturma
 Visual Studio Natvis framework Visual Studio hata ayıklayıcı değişken pencerelerini yerel türler görüntüler özelleştirmenize olanak tanır (örneğin, **izleme** penceresinde **Yereller** penceresinde ve  **DataTips**.

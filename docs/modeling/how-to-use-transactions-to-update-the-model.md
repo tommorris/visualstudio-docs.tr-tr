@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950013"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Nasıl yapılır: Modeli Güncelleştirmek için İşlemleri Kullanma
 İşlemler deposuna yapılan değişiklikler bir grup olarak davranılır emin olun. Gruplandırılır değişiklikleri kaydedilmiş veya tek bir birim olarak geri alındı.

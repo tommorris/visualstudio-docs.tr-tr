@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132501"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Eski dil hizmetinde özel belge özellikleri
 Belge özellikleri görüntülenebilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **özellikleri** penceresi. Programlama dilleri, tek tek kaynak dosyalarıyla ilişkili özellikleri genellikle gerekmez. Ancak, XML kodlama, şema ve stil etkileyen belge özelliklerini destekler.  

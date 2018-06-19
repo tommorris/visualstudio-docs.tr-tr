@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129395"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE tanımlı komutlar, menüler ve grupları
 Birçok menüleri, komutları ve komut grubu zaten tarafından kullanılmak üzere tanımlanan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Bu komutlar da, genişlettiğinizde kullanımınız için kullanılabilir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -35,7 +36,7 @@ Birçok menüleri, komutları ve komut grubu zaten tarafından kullanılmak üze
   
 -   ShellCmdPlace.vsct  
   
- Bu dosyalar bulunur  *\<Visual Studio SDK yükleme yolu >*\VisualStudioIntegration\Common\Inc\\. Bu dosyalar tanımları ve menüleri ve, VSPackage komutu tablosu (.vsct) yapılandırma dosyasında kapsayıcılar olarak kendi menüleri, gruplar ve komutlar için kullanabileceğiniz grupları GUID'lerini sağlar.  
+ Bu dosyalar bulunur  *\<Visual Studio SDK yükleme yolu >* \VisualStudioIntegration\Common\Inc\\. Bu dosyalar tanımları ve menüleri ve, VSPackage komutu tablosu (.vsct) yapılandırma dosyasında kapsayıcılar olarak kendi menüleri, gruplar ve komutlar için kullanabileceğiniz grupları GUID'lerini sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Visual Studio Menülerinin GUID’leri ve Kimlikleri](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

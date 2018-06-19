@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134005"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Şablon dizin açıklaması (. Vsdir) dosyaları
 Bir şablon dizin tanımı dosyası (.vsdir) tümleşik geliştirme ortamı (IDE) klasörler, sihirbaz .vsz dosyaları ve iletişim kutuları projenizde ile ilişkili şablon dosyalarını görüntülemek için sağlayan bir metin dosyasıdır. İçeriği, dosya veya klasör her bir kayıt içerir. Yalnızca bir .vsdir dosyası genellikle birden çok klasörler, sihirbaz veya şablon dosyalarını açıklamak için sağlanan olsa da, tüm .vsdir dosyalarını başvurulan bir konumda birleştirilir.  

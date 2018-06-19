@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137111"
 ---
 # <a name="parent-element"></a>Üst Öğe
 Bir düğme veya birleşik giriş kutusu üst yalnızca bir grup olabilir. Menü veya grubun üst herhangi bir menü veya grup olabilir. İçinde bir [CommandPlacement öğesi](../extensibility/commandplacement-element.md), bu öğe gereklidir; diğer tüm durumlarda isteğe bağlıdır. Bu öğe girilmezse, üst öğesinin `Group_Undefined:0` kapsanan.  

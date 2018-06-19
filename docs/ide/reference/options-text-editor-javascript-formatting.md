@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950887"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme
 Kullanım **biçimlendirme** sayfasında **seçenekleri** kod Kod Düzenleyicisi'nde biçimlendirme seçeneklerini ayarlamak için iletişim kutusu. Menü çubuğunda, bu sayfaya erişmek için seçin **Araçları**, **seçenekleri**, genişletin ve ardından **metin düzenleyici**, **JavaScript**ve **Biçimlendirme**.

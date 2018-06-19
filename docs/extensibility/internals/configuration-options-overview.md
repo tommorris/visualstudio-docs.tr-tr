@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132475"
 ---
 # <a name="configuration-options-overview"></a>Yapılandırma seçeneklerine genel bakış
 Projelerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oluşturulabilir, hata ayıklaması, çalıştırma ve/veya dağıtılan birden çok yapılandırmayı destekler. Bir yapılandırma özellikleri, genellikle derleyici anahtarları ve dosya konumları adlandırılmış kümesi ile tanımlanan bir yapı türüdür. Varsayılan olarak, iki yapılandırmaları, hata ayıklama ve yayın yeni çözümler içerir. Bu yapılandırmalar, kendi varsayılan ayarları kullanarak ya da belirli çözüm ve/veya proje gereksinimlerinizi karşılayacak şekilde değiştirilmiş uygulanabilir. Bazı paketler iki şekilde oluşturulabilir: bir ActiveX Düzenleyicisi'ni veya bir yerinde bileşeni olarak. Projeleri ancak birden çok yapılandırmayı destekler gerekmez. Kullanılabilir yalnızca bir yapılandırma varsa, bu yapılandırma tüm çözüm yapılandırmaları eşlenir.  

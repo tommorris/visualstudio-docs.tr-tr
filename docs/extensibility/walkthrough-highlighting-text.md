@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147225"
 ---
 # <a name="walkthrough-highlighting-text"></a>İzlenecek yol: Metni vurgulama
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni bölümleri oluşturarak düzenleyiciye farklı görsel efektler ekleyebilirsiniz. Bu kılavuz, bir metin dosyasındaki geçerli sözcüğü her geçtiği vurgulamak gösterilmiştir. Bir sözcük, bir metin dosyasına birden fazla kez oluşur ve bir yineleme şapka getirin, her oluşumu vurgulanır.  

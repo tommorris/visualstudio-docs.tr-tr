@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064080"
 ---
 # <a name="talk-to-us"></a>Bizimle iletişime geçin
 Ürünlerimizi ve belgeleri geliştirmek için fikirlerinizi ilginizi çalışıyoruz. Biz her zaman kişisel yanıt veremez, ancak biz görüşlerinizi doğru kişi ya da takım aldığından emin olmak.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143325"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>İzlenecek yol: Eşleşen küme parantezleri görüntüleme
 Eşleştirmek istediğiniz küme ayraçları tanımlama ve düzeltme işareti küme ayraçları biri olduğunda bir metin işaretçisi etiketi için eşleşen küme parantezleri ekleyerek eşleşen ayraç gibi dil tabanlı özellikler uygulayabilirsiniz. Bir dil bağlamında küme ayraçları tanımlayabilirsiniz, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve etiketler yalnızca o türü için geçerli veya varolan bir içerik türüyle (örneğin, "metin") etiketleri uygulayabilirsiniz. Aşağıdaki örneklerde, "metin" içerik türü etiketleri eşleşen ayraç uygulamak gösterilmiştir.  

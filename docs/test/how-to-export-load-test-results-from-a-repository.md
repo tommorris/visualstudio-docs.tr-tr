@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969635"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Nasıl yapılır: Yük Testi Sonuçlarını bir Depodan Dışarı Aktarma
 

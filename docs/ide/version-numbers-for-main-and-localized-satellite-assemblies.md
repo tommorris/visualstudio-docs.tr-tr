@@ -21,6 +21,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424945"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Ana ve yerelleştirilmiş yardımcı derlemeler için sürüm numaraları
 <xref:System.Resources.SatelliteContractVersionAttribute> Sınıfı yerelleştirilmiş kaynakları yoluyla Kaynak Yöneticisi'ni kullanan bir ana derleme sürümü oluşturma desteği sağlar. Uygulama <xref:System.Resources.SatelliteContractVersionAttribute> bir uygulamanın ana derleme güncelleştirin ve kendisine ait uydu derlemelerini güncelleştirmeden derleme dağıtmanız olanak tanır. Örneğin, kullanabileceğiniz <xref:System.Resources.SatelliteContractVersionAttribute> yeni kaynaklar yeniden oluşturma ve uydu derlemenizi tanıtmak olmayan bir hizmet paketi sınıfı. Kullanılabilir olması, yerelleştirilmiş kaynaklar için ana derlemenizi uydu sözleşme sürümü eşleşmelidir <xref:System.Reflection.AssemblyVersionAttribute> uydu derlemelerini sınıfı. Bir tam sürüm numarası belirtin <xref:System.Resources.SatelliteContractVersionAttribute>; joker karakterlere gibi "*" izin verilmez. Daha fazla bilgi için bkz: [almak kaynakları](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148668"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Düzenleyici bağdaştırıcıları ile yeni veya değiştirilmiş davranışı
 Visual Studio çekirdek Düzenleyicisi'ni önceki sürümlerinde karşı yazılmış kodun güncelleştirdiğiniz ve yeni API kullanmak yerine Düzenleyici bağdaştırıcıları (veya dolgular) kullanmayı düşünüyorsanız, düzenleyici bağdaştırıcıları davranışını aşağıdaki farklar dikkat etmeniz gerekir önceki çekirdek Düzenleyici göre.  

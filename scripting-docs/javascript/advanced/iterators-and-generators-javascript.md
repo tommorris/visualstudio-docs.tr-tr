@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977276"
 ---
 # <a name="iterators-and-generators-javascript"></a>Yineleyiciler ve oluşturucuları (JavaScript)
 Yineleyici bir listesi gibi bir kapsayıcı nesne geçiş yapmak için kullanılan bir nesnedir. JavaScript, yineleyici nesneyi ayrı bir yerleşik nesnesi değil, ancak uygulayan bir nesne bir `next` yöntem container nesnesi'na erişmek için.  

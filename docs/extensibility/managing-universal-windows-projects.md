@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147600"
 ---
 # <a name="managing-universal-windows-projects"></a>Evrensel Windows projeleri yönetme
 Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, kod ve diğer varlıkları hem platformlarda geliştiriciler izin vererek hedef uygulamalardır. Ayrı projeler, bir Windows ve Windows Phone için diğer kaynaklar ve platforma özgü kodu tutulan sırada kaynakların ve paylaşılan kodu paylaşılan bir proje tutulur. Evrensel Windows uygulamaları hakkında daha fazla bilgi için bkz: [Evrensel Windows uygulamaları](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Projeleri Yönetme visual Studio uzantıları Evrensel Windows uygulaması projeleri tek platform uygulamalardan farklı bir yapıya sahip bilmeniz gerekir. Bu kılavuzda paylaşılan bir proje gidin ve paylaşılan öğelerini yönetmek nasıl gösterir.  

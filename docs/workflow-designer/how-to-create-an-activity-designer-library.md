@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974597"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Nasıl yapılır: bir etkinlik Tasarımcısı kitaplığı oluşturma
 Özel Etkinlik tasarımcıları, standart veya özel bir aktivite için kullanıcı arabirimi oluşturmak üzere izin verir. Kullanıcı arabirimi karmaşıklığını denetlemek ve bir etkinliğin birden fazla etkinlik Tasarımcısı oluşturma olanağı vardır. Bu senaryo için birden çok İzleyici uyarlanmış tasarımcıları oluşturmanıza olanak sağlar.

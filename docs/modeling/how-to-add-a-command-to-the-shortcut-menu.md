@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954753"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Nasıl yapılır: Kısayol Menüsüne Komut Ekleme
 Kullanıcılarınızın, DSL belirli görevleri gerçekleştirebilmeleri için menü komutlarını, etki alanına özgü dil (DSL) ekleyebilirsiniz. Kullanıcıların Diyagramı sağ tıklattığınızda komutları (kısayol) bağlam menüsünde görüntülenir. Yalnızca belirli durumlarda menüsünde görünen komut tanımlayabilirsiniz. Yalnızca kullanıcı öğesi veya öğeleri belirli durumlarda belirli türlerdeki tıklattığında Örneğin, komut görünür duruma getirebilirsiniz.

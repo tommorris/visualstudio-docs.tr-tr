@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143904"
 ---
 # <a name="walkthrough-outlining"></a>İzlenecek yol: anahat oluşturma
 Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin bölgeler türlerini tanımlayarak anahat oluşturma gibi uygulayabilirsiniz. Bir dil hizmeti bağlamında bölgeler tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bölge tanımı yalnızca o türü için geçerli veya varolan bir içerik türüyle (örneğin, "metin") bölge tanımları uygulayabilirsiniz. Bu kılavuzda, tanımlayın ve anahat bölgelerini görüntülemek gösterilmektedir.  

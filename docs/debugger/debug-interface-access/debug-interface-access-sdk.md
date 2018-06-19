@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457452"
 ---
 # <a name="debug-interface-access-sdk"></a>Arabirim Erişimi SDK'sında Hata Ayıklama
 Microsoft hata ayıklama arabirimi erişim yazılım geliştirme Seti'ni (DIA SDK) Microsoft postcompiler araçları tarafından oluşturulan program veritabanı (.pdb) dosyalarında depolanan bilgileri hata ayıklamak için erişim sağlar. Sabit düzeltme postcompiler araçları tarafından oluşturulan .pdb dosyasının biçimi uğradığında çünkü biçimi gösterme zordur. DIA API'yi kullanarak aramak ve hata ayıklama bilgileri .pdb dosyasında depolanan Gözat uygulamaları geliştirebilirsiniz. Bu tür uygulamalar Örneğin, yığın izleme arka plan bilgileri rapor ve performans verilerini analiz edin.  

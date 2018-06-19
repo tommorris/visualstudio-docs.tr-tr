@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954398"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Bağımlılık diyagramları: yönergeler
 Uygulama Mimarinizi yüksek bir düzeyde oluşturarak açıklamak *bağımlılık diyagramları* Visual Studio. Bir bağımlılık diyagramı kodunuzla doğrulayarak kodunuzu bu tasarım ile tutarlı kaldığından emin olun. Katman doğrulaması yapı işleminizin de ekleyebilirsiniz. Bkz: [kanal 9 Video: tasarım ve bağımlılık diyagramları kullanarak Mimarinizi geçerli](http://go.microsoft.com/fwlink/?LinkID=252073).

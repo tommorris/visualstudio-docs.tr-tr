@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148655"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX uzantısı 2.0 şema başvurusu
 VSIX dağıtım bildirim dosyası VSIX paket içeriğini açıklar. Dosya biçimi, bir şema tarafından yönetilir. Özel türler ve öznitelikler ekleyerek bu şemayı 2.0 sürümünü destekler.  Bildirim şeması genişletilebilir. Bildirim yükleyicisi XML öğeleri ve onu anlamıyor öznitelikleri yoksayar.  

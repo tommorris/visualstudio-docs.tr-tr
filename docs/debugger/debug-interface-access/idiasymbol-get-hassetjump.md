@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464293"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 İşlevi bir kullanımını içeren olup olmadığını belirten bir bayrak alır [setjmp](/cpp/c-runtime-library/reference/setjmp) komutu (ile eşleştirilmiş [longjmp](/cpp/c-runtime-library/reference/longjmp) komutu, bu form C tarzı yöntemi özel durum işleme).  

@@ -1,19 +1,20 @@
 ---
 title: Koleksiyonlar (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27783058"
 ---
 # <a name="collections-javascript"></a>Koleksiyonlar (JavaScript)
 Toplama nesneleri kullanabilirsiniz [harita](../../javascript/reference/map-object-javascript.md), [ayarlamak](../../javascript/reference/set-object-javascript.md), ve [WeakMap](../../javascript/reference/weakmap-object-javascript.md) değerleri ve nesneleri depolamak için. Bu nesneler, bir indis yerine bir anahtar ya da değer kullanarak üye eklemek veya almak için kolay yöntemler sağlar. Bir dizini kullanarak bir koleksiyon erişim üyelerine kullanmak bir `Array` nesnesi. Daha fazla bilgi için bkz: [kullanarak dizileri](../../javascript/advanced/using-arrays-javascript.md).  

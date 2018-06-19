@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147587"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>İzlenecek yol: C++ kullanarak bir SDK oluşturma
 Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı (VSIX) olarak SDK paketini oluşturma ve bir uygulama oluşturmak için kullanma gösterilmektedir. İzlenecek yol aşağıdaki adımları ayrılır:  
@@ -43,9 +44,9 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]  
   
-5.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'**ve ardından **Ekle**, **yeni proje**.  
+5.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'** ve ardından **Ekle**, **yeni proje**.  
   
-6.  Şablonları listesinde genişletin **Visual C++**ve ardından **Windows çalışma zamanı bileşeni** şablonu. İçinde **adı** kutusunda, belirtin `NativeMathWRT`ve ardından **Tamam** düğmesi.  
+6.  Şablonları listesinde genişletin **Visual C++** ve ardından **Windows çalışma zamanı bileşeni** şablonu. İçinde **adı** kutusunda, belirtin `NativeMathWRT`ve ardından **Tamam** düğmesi.  
   
 7.  Bu kod eşleşecek şekilde Class1.h güncelleştirin:  
   
@@ -59,7 +60,7 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
   
 ##  <a name="createVSIX"></a> NativeMathVSIX uzantı projesi oluşturmak için  
   
-1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'**ve ardından **Ekle**, **yeni proje**.  
+1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'** ve ardından **Ekle**, **yeni proje**.  
   
 2.  Şablonları listesinde genişletin **Visual C#**, **genişletilebilirlik**ve ardından **VSIX proje**. İçinde **adı** kutusunda, belirtin **NativeMathVSIX**ve ardından **Tamam** düğmesi.
   
@@ -95,7 +96,7 @@ Bu kılavuz, bir yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı 
                 \Neutral  
     ```  
   
-9. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'**ve ardından **klasörünü dosya Gezgini'nde Aç**.  
+9. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'** ve ardından **klasörünü dosya Gezgini'nde Aç**.  
   
 10. İçinde **dosya Gezgini**, $SolutionRoot$\NativeMath\NativeMath.h, kopyalamak ve ardından **Çözüm Gezgini**, **NativeMathVSIX** projesi, $SolutionRoot yapıştırın $\ NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include\ klasör.  
   

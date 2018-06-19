@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976747"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Yük testi sonuçları havuzu yük testi sonuçlarını yönetme
 

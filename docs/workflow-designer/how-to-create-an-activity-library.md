@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974050"
 ---
 # <a name="how-to-create-an-activity-library"></a>Nasıl yapılır: bir etkinlik kitaplığı oluşturma
 Özel etkinlikler belirli İş süreçlerinizi bir iş akışında model oluşturmak için kullanılır. Visual Studio 2010 etkinlik kitaplığı şablonunda görsel olarak Windows iş akışı Tasarımcısı'nı kullanarak bu tür özel etkinlikler oluşturmanıza olanak sağlaması için sağlanmıştır.

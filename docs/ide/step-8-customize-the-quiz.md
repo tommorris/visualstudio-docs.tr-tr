@@ -16,6 +16,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32065253"
 ---
 # <a name="step-8-customize-the-quiz"></a>8. adım: testi özelleştirme
 Öğreticinin son bölümünde testi özelleştirme ve zaten öğrendiklerinizi üzerinde genişletmek için bazı yollar ele alacağız. Örneğin, program yanıt hiçbir zaman bir kesir olduğu rastgele bölme problemleri nasıl oluşturduğunu hakkında düşünün. Daha fazla bilgi için Aç `timeLabel` farklı bir renk denetlemek ve test alanın bir ipucu sağlar.  

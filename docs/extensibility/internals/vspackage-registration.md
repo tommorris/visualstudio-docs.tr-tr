@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148892"
 ---
 # <a name="vspackage-registration"></a>VSPackage kayıt
 Gereken VSPackages bildirmek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yüklenir ve gereken yüklü. Bu işlem, kayıt defterinde bilgi yazarak gerçekleştirilir. Tipik bir işi yükleyicinin olmasıdır.  

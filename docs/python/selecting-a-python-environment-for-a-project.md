@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976695"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Proje için hangi Python ortamı atamak nasıl kullanılır
 

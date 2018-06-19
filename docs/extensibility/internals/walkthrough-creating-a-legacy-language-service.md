@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144940"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek yol: bir eski dil hizmeti oluşturma
 Bir dil hizmetinde uygulamak için yönetilen paket framework (MPF) dil sınıfları kullanmaya [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] basittir. Dil hizmeti, dil hizmeti ve dilinizi için ayrıştırıcı barındırmak için bir VSPackage gerekir.  

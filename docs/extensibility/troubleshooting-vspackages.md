@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146202"
 ---
 # <a name="troubleshooting-vspackages"></a>Sorun giderme VSPackages
 İle VSPackage olabilir ve sorunları çözmek için ipuçları yaygın sorunlar aşağıda verilmiştir.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  VSPackage CLSID kayıt paketleri bölümünü bulun:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >*\Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >* \Packages  
   
     2.  SatelliteDll alt anahtarı tarafından verilen yolun doğru olduğundan emin olun.  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Yönetilmeyen kod için VSPackage CLSID Bul [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID kayıt defteri düğümü:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >*\CLSID  
+     HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >* \CLSID  
   
  Inprocserver32 giriş VSPackage dll için doğru yolu olduğundan emin olun.  
   

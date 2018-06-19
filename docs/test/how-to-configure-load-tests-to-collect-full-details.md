@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967102"
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>Nasıl yapılır: Test Sonuçlarında Sanal Kullanıcı Etkinliğini Etkinleştirmek için Tüm Ayrıntıları Toplamak Üzere Yük Testlerini Yapılandırma
 

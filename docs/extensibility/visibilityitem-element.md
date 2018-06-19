@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143471"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem öğesi
 `VisibilityItem` Öğesi komutlar ve araç çubuklarını statik görünürlüğünü belirler. Her giriş, bir komut veya menü ve ayrıca bir ilişkili komut UI bağlamı tanımlar. Visual Studio komutları, menüleri ve araç çubukları ve bunların görünürlük tanımlamadan VSPackages yüklemeden algılar. IDE kullanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> komutu UI bağlam etkin olup olmadığını belirlemek amacıyla yöntemi.  

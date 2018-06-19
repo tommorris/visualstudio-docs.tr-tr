@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031188"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Arama ve Visual Studio Aboneliklerde aboneleri filtreleme
 Visual Studio abonelikleri Yönetim Portalı, belirli bir alt kümesini çeşitli ölçütleri temel alarak aboneleri bulmanızı sağlar. Ad, e-posta adresi, abonelik düzeyinde ve çeşitli diğer bilgileri abone listeyi filtreleyebilirsiniz. 

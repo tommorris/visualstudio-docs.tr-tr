@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965183"
 ---
 # <a name="writing-user-commands-and-actions"></a>Kullanıcı Komutları ve Eylemleri Yazma
 Bir etki alanına özgü dil komutlar diyagrama ve sürükle ve bırak gibi hareketleri yanıtlama'ı tıklatın ve olaylara çift tıklayın ekleyerek özelleştirebilirsiniz.

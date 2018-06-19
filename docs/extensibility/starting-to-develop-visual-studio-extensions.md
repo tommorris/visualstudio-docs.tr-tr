@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144469"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio uzantılar geliştirmek üzere başlatılıyor
 Visual Studio uzantısı önce hiçbir zaman yazdıysanız bazı sorular'de vardır. Biz en yaygın olanları burada listelenen bazı. Aradığınız bilgileri görmüyorsanız, geri bildirim düğmelerini kullanın (**bu sayfayı yardımcı oldu?** ekranın altındaki), istediğiniz için isteyebilir.  

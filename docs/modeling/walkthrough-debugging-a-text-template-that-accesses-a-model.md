@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968126"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama
 Değiştirme veya bir etki alanına özgü dil çözümde metin şablonları ekleme, şablonu kaynak koduna veya oluşturulan kod derlediğinde altyapısı dönüştüren olduğunda hataları alabilirsiniz. Aşağıdaki yönergeler metin şablonu hata ayıklamak için yapabileceği şeylerden bazıları gösterir.

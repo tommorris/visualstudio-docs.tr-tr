@@ -33,6 +33,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954235"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 **Yazı tiplerini ve renkleri** sayfasında **seçenekleri** iletişim kutusu çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamı (IDE) oluşturmanızı sağlar. Bu iletişim kutusunu tıklatarak erişebilirsiniz **Araçlar / Seçenekler**, seçilerek **ortam / yazı tipleri ve renkler**. Bu sayfayı listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.

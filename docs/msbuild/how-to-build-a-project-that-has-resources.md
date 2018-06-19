@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569508"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Nasıl Yapılır: Kaynaklara Sahip Olan Bir Projeyi Derleme
 Bir proje yerelleştirilmiş sürümleri oluşturuluyorsa, tüm kullanıcı arabirimi öğeleri kaynak dosyalara farklı diller için ayrılmış olması gerekir. Proje yalnızca dizeleri kullanıyorsa, kaynak dosyaları metin dosyalarını kullanabilirsiniz. Alternatif olarak, .resx dosyaları kaynak dosya olarak kullanabilirsiniz.  

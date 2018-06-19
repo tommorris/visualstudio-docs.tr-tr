@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474852"
 ---
 # <a name="processes-view"></a>İşlemler Görünümü
 İşlemler görünümü, tüm etkin işlemlerin bir ağaç sisteminizde görüntüler. İşlem kimliği ve modül adı gösterilir. Genellikle bir yürütme programına karşılık gelen bir belirli bir sistemi işlem incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır ya da "sistem işlemleri" atanan  

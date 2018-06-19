@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565698"
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama Dağıtımının Önkoşulları
 Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağlamak için önce uygulamanızın bağımlı olduğu tüm bileşenleri, hedef bilgisayarda zaten yüklü emin olmalısınız. Örneğin, çoğu uygulamayı kullanılarak oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] üzerinde bir bağımlılığa sahip [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; uygulama yüklenmeden önce ortak dil çalışma zamanı doğru sürümü hedef bilgisayarda mevcut olması gerekir.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479222"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Hata Ayıklama Hazırlığı: C#, F# ve Visual Basic Proje Türleri
 Bu bölümdeki konular, C#, F #'ta, hata ayıklama açıklar ve [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proje türleri tarafından oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje şablonları.  

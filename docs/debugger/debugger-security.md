@@ -24,6 +24,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065012"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
 Başka bir işlemde hata ayıklamak için Aksi takdirde, özellikle uzaktan hata ayıklama sırasında olurdu olmayan çok geniş powers sağlar. Kötü amaçlı bir hata ayıklayıcısı ayıklanacak makinede yaygın zarar verebilecek.  

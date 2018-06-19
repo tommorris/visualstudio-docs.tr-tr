@@ -1,16 +1,16 @@
 ---
-title: "Akıllı konak yardımcı arabirimleri uygulama | Microsoft Docs"
-ms.custom: 
+title: Akıllı konak yardımcı arabirimleri uygulama | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792251"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Akıllı Konak Yardımcı Arabirimleri Uygulama
 [Idebugdocumenthelper arabirimi](../winscript/reference/idebugdocumenthelper-interface.md) arabirimi akıllı barındırmak için gereken birçok arabirimler için uygulamaları sağladığından etkin hata ayıklama için bir akıllı ana bilgisayar oluşturma görevini büyük ölçüde basitleştirir.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558015"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için bir Yayımlama Sayfası Belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, varsayılan bir Web sayfası (publish.htm) oluşturulur ve uygulama ile birlikte yayımlanır. Bu sayfa uygulama, uygulama ve/veya herhangi bir önkoşulu yüklemek için bir bağlantı ve bir Yardım konusu açıklayan bir bağlantı adını içeren [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. **Yayımla Sayfası** projeniz için özellik sağlar, Web sayfası için bir ad belirtmek, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  

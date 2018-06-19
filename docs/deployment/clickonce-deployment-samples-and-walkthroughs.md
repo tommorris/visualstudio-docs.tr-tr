@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563381"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce Dağıtım Örnekleri ve Yönergeler
 Bu bölümde örnek uygulamalar, örnek kod ve sözdizimi, yapı ve Windows Forms, WPF ve konsol uygulamaları dağıtmak için kullanılan teknikleri gösteren adım adım talimatları içerir.  

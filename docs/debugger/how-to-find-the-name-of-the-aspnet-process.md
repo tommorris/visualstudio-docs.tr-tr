@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473825"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Nasıl Yapılır: ASP.NET İşleminin Adını Bulma
 Çalışan bir eklemek için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama, elinizde adını bilmek [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] işlemi:  

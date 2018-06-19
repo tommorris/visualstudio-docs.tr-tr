@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478232"
 ---
 # <a name="debug-multiple-processes"></a>Birden çok işlem hata ayıklama
 İşlemler hata ayıklamayı başlatma, işlemler arasında geçiş, bölün ve yürütme devam, kaynağı aracılığıyla adım, hata ayıklamayı durdurun ve sonlandırmak veya işlemlerini ayırmak bırakılır.  

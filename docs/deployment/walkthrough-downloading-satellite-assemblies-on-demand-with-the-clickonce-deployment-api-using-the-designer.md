@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560901"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>İzlenecek yol: Tasarımcıyı Kullanarak ClickOnce Dağıtım API'si ile Uydu Derlemelerini İndirme
 Windows Forms uygulamaları uydu derlemelerini kullanarak birden çok kültür için yapılandırılabilir. A *uydu derleme* uygulamanın varsayılan kültürü dışında bir kültür için uygulama kaynaklarını içeren bir derlemedir.  

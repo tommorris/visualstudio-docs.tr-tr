@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472484"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl Yapılır: İşlemler Görünümünde İşlem Arama
 Arama ölçütü olarak, işlem kimliği veya modülü dizesi kullanarak işlemler görünümünde belirli bir işlem için arama yapabilirsiniz. Ayrıca, arama ilk yönünü belirtebilirsiniz. İletişim kutusunda alanları işlem ağacında seçili işlem özniteliklerini gösterir.  

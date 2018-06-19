@@ -1,19 +1,20 @@
 ---
-title: "valueOf yöntemi (tarih) | Microsoft Docs"
-ms.custom: 
+title: valueOf yöntemi (tarih) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 39a1f96e-14b0-4db2-b53d-cdfd67cbb208
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791648"
 ---
 # <a name="valueof-method-date"></a>valueOf Yöntemi (Tarih)
 Saklı zaman değerini milisaniye cinsinden gece'den itibaren 1 Ocak 1970 UTC döndürür.  

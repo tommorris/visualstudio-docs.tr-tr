@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142714"
 ---
 # <a name="localizing-menu-commands"></a>Yerelleştirme menü komutları
 Yerelleştirilmiş metin menüsüne sağlayabilir ve araç yerelleştirilmiş .vsct dosyaları oluşturarak komutları ve .resx dosyaları, VSPackage ve ardından Proje dosyalarını güncelleştirmek için değişikliklerin uygulanması yerelleştirilmiş.  

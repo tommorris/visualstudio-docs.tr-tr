@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145964"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Kaynak denetimi eklentiler için test Kılavuzu
 Bu bölümde, kaynak denetim eklentisi ile test etmek için yönergeler sağlanmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. En yaygın test alanları yanı sıra bazı sorunlu olabilecek daha karmaşık alanlar kapsamlı bir bakış sağlanır. Bu genel bakışta test çalışmalarının kapsamlı bir liste olması düşünülmemiştir.  

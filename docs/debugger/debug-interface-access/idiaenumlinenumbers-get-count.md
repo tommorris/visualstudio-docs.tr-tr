@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456851"
 ---
 # <a name="idiaenumlinenumbersgetcount"></a>IDiaEnumLineNumbers::get_Count
 Satır numaraları sayısını alır.  

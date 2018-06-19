@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147196"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Menü komutları herhangi birinden türetme oluşturabileceğiniz <xref:System.ComponentModel.Design.MenuCommand> veya <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> nesne ve impementling uygun olay işleyicileri. Çoğu durumda kullandığınız <xref:System.ComponentModel.Design.MenuCommand>VSPackage proje şablonu yapar ancak bazen kullanmanız gerekebilir gibi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  

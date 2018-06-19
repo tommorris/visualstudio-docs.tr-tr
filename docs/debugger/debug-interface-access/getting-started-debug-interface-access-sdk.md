@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457907"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Başlarken (Arabirim Erişimi SDK'sında Hata Ayıklama)
 Hata ayıklama arabirimi erişim (DIA) SDK yönerge belgeleri ve nasıl DIA API kullanılacağını anlatan bir örnek sağlar. Arabirimleri ve yöntemleri DIA SDK'ın .pdb ve .dbg dosyaları açmak ve içeriklerini sembolleri, değerleri, öznitelikler, adresleri ve diğer hata ayıklama bilgileri için arama özel uygulamalar geliştirmek için kullanın. Bu SDK başvuru tabloları için C++ uygulamalarında bulunan simgeleri ile ilişkili özellikleri de sağlar.  

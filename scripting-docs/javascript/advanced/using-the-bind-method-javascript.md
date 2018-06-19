@@ -1,13 +1,13 @@
 ---
-title: "Bind yöntemi (JavaScript) kullanarak | Microsoft Docs"
-ms.custom: 
+title: Bind yöntemi (JavaScript) kullanarak | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this object [JavaScript]
 ms.assetid: f608f95b-3b9d-437a-a67a-5a4ef8f6c07f
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +26,7 @@ ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 02/05/2018
+ms.locfileid: "28987873"
 ---
 # <a name="using-the-bind-method-javascript"></a>Bağlama yöntemini kullanma (JavaScript)
 JavaScript `bind` yöntemi birkaç kullanımı vardır. Genellikle, başka bir bağlamda çalışan bir işlev için çalıştırma içeriğini korumak için kullanılır. `bind`özgün işlevi olarak aynı gövdesine sahip yeni bir işlev oluşturur. Geçirilen ilk bağımsız değişken `bind` değerini belirtir. `this` bağlı işlev anahtar sözcük. Ayrıca ek, isteğe bağlı bağımsız değişkenler geçirebilirsiniz `bind`. Ek kullanım örnekleri için bkz: [bind yöntemi (işlev)](../../javascript/reference/bind-method-function-javascript.md). Kullanarak bir örnek için `bind` kısmen işlevleri uygulamak için bkz: [zaman uyumsuz programlama desenleri ve Hilo JavaScript (Windows mağazası) ipuçları](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx).  

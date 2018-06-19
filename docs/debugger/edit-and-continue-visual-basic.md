@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471050"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Düzenle ve Devam Et (Visual Basic)
 Düzenle ve devam et için bir özelliktir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , hata ayıklama kesme modunda yürütülürken kodunuzu değiştirmek olanak sağlar. Kod düzenlemeleri uygulandıktan sonra yerinde yeni düzenlemelerle kodu yürütme devam ve etkisi görebilirsiniz.  

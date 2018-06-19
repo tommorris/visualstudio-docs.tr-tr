@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466051"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Context işleci Visual Studio hata ayıklayıcısında (C++)
 C++'ta context işleci bir kesme noktası konumu, değişken adı veya ifade nitelemek için kullanabilirsiniz. Context işleci, aksi takdirde yerel adıyla gizli bir dış kapsamdan bir ad belirtmek için kullanışlıdır.  

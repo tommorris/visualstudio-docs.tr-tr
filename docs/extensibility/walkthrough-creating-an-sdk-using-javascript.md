@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144222"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>İzlenecek yol: JavaScript kullanarak bir SDK oluşturma
 Bu kılavuz, JavaScript SDK'sı bir Visual Studio Uzantısı (VSIX) olarak basit bir matematik oluşturmak için kullanılacak öğretir.  İzlenecek yol aşağıdaki bölümlere ayrılır:  
@@ -33,7 +34,7 @@ Bu kılavuz, JavaScript SDK'sı bir Visual Studio Uzantısı (VSIX) olarak basit
   
 1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
   
-2.  Şablon kategorileri listesinde altında **Visual C#**seçin **genişletilebilirlik**ve ardından **VSIX proje** şablonu.  
+2.  Şablon kategorileri listesinde altında **Visual C#** seçin **genişletilebilirlik**ve ardından **VSIX proje** şablonu.  
   
 3.  İçinde **adı** metin kutusunda, belirtin `SimpleMathVSIX` ve **Tamam** düğmesi.  
   

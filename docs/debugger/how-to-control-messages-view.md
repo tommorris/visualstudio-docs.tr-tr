@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473205"
 ---
 # <a name="how-to-control-messages-view"></a>Nasıl yapılır: İletiler Görünümünü Denetleme
 Spy ++ ile içeriğini önemli denetime sahip bir [iletiler görünümünü](../debugger/messages-view.md) penceresi. Yapabilecekleriniz [başlatma ve durdurma](../debugger/how-to-start-and-stop-the-message-log-display.md) dilediğiniz zaman ve, iletilerin görüntüleme belirtebilirsiniz:  

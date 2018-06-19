@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148200"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek yol: bir görünüm Adornment, komutları ve ayarları (sütun kılavuzları) oluşturma
 Visual Studio metin/Kod düzenleyicisinde komutlar ve görünüm efektleri ile genişletebilirsiniz.  Bu konu popüler uzantısına sahip bir özellik, sütun kılavuzları başlayacağınızı gösterir.  Sütun kılavuzları kodunuzu belirli sütun genişliklerini yönetmenize yardımcı olmak için metin düzenleyici görünümünde çizilmiş görsel olarak açık satırlar gelir.  Özel olarak biçimlendirilmiş kod belgeleri, blog gönderileri, dahil etmek veya raporları hata örnekleri için önemli olabilir.  

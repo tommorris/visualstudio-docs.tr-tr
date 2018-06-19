@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148604"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil hizmeti ve düzenleyici uzantı noktaları
 Düzenleyici çoğu dil hizmet özellikleri dahil olmak üzere Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşeni parçaları olarak genişletebilirsiniz uzantı noktaları sağlar. Bu ana uzantısı noktası kategorileri şunlardır:  

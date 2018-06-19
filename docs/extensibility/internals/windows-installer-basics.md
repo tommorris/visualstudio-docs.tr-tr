@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144756"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer temelleri
 Windows Installer yükler ve uygulamalar veya yazılım ürünleri bir kullanıcının bilgisayarındaki, Windows Installer bileşenleri (WICs veya yalnızca bileşenleri de denir) olarak adlandırılan birimler halinde bu görevleri gerçekleştiren kaldırır. Bir GUID temel birimidir, yükleme ve başvuru Windows Yükleyicisi'ni kullanarak kurulumlarını sayım her WIC tanımlar.  

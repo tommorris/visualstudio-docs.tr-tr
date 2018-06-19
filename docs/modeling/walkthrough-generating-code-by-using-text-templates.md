@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979392"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>İzlenecek Yol: Metin Şablonları Kullanarak Kod Oluşturma
 Kod oluşturma, kesin türü belirtilmiş ve kaynak modeli değiştiğinde henüz kolayca değiştirilebilmesi için program kodunu üretmek sağlar. Bunu daha esnektir, bir yapılandırma dosyası kabul tamamen genel bir program yazma alternatif teknik ile karşılaştırın ancak ne kod sonuçlarında kadar kolay okumak ve değiştirmek ya da bu tür iyi bir performans sahiptir. Bu kılavuzda Bu avantajı gösterir.

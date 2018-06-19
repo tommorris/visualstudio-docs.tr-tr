@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474966"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Karışık Modda Hata Ayıklama Yalnızca Microsoft .NET Framework 2.0 veya 3.0 Sürümü Kullanılırken Desteklenir
 Daha önce Microsoft .NET Framework sürümleri 2.0, destek 64 bit işlemleri karışık modda hata ayıklama için sağlamaz. Bu hata ayıklarken, yerel koda yönetilen koddan ya da yerel koddan yönetilen koda adım edilemez olduğunu anlamına gelir.  

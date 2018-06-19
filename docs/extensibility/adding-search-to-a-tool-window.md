@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032076"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Bir araç penceresi arama ekleme
 Oluşturduğunuzda ya da bir araç penceresi uzantı güncelleştirme başka bir yerde görünür aynı arama işlevini Visual Studio'da ekleyebilirsiniz. Bu işlevsellik, aşağıdaki özellikleri içerir:  

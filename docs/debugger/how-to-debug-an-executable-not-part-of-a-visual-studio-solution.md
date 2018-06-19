@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476253"
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Nasıl yapılır: Visual Studio çözümünün parçası olmayan bir yürütülebilir dosyada hata ayıklama
 Bazı durumlarda, olmayan bir yürütülebilir dosya (.exe dosyası) hata ayıklama isteyebilirsiniz parçası bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi. Dışında oluşturulan bir yürütülebilir dosya olabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya başka bir kişiden aldığınız yürütülebilir.  

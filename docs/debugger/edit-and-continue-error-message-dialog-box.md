@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471843"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Düzenle ve Devam Et Hata İletisi İletişim Kutusu
 Düzenle ve devam et, destekleyen bir dilde ayıklarken bu iletişim kutusu görünür ancak **Düzenle ve devam et** yapmış olduğunuz kod değişiklikleri türü için kullanılamaz. Hata iletisi kutu içinde daha ayrıntılı bir açıklama sağlar. Bu iletişim kutusunu dahil görmek için olası nedenler:  

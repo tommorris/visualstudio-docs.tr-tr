@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458924"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Sabitler (Arabirim Erişimi SDK'sında Hata Ayıklama)
 Bu dize sabitleri, bir program hata ayıklama veritabanı (PDB) dosyası DIA SDK aracılığıyla çeşitli bölümlerini belirlemek için kullanılabilir.  

@@ -4,14 +4,16 @@ author: jasongroce
 ms.author: apexprodleads
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: "Visual Studio genişletilebilirlik belgeleri | Microsoft Docs"
-description: "Visual Studio genişletilebilirlik hakkında bilgi edinin."
-ms.workload: apexprodleads
+title: Visual Studio genişletilebilirlik belgeleri | Microsoft Docs
+description: Visual Studio genişletilebilirlik hakkında bilgi edinin.
+ms.workload:
+- apexprodleads
 ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/22/2017
+ms.locfileid: "27246553"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Visual Studio genişletilebilirlik belgeleri
 

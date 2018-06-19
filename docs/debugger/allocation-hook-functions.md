@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460114"
 ---
 # <a name="allocation-hook-functions"></a>Atama Kanca İşlevleri
 Kullanılarak yüklenen bir ayırma kanca işlevini [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), bellek tahsis, yeniden tahsis veya serbest her zaman çağrılır. Kanca bu tür birçok farklı amaçlar için kullanılabilir. Uygulama yetersiz bellek durumlarda, örneğin, işleme biçimini test etmek veya ayırma desenleri incelemek için ya da daha sonraki analizler için ayırma bilgileri günlüğe kaydetmek için kullanın.  

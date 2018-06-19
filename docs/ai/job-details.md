@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709837"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Son iş performans ve Ayrıntılar görüntüleyin
 İşler gönderilmeden sonra durumlarını, süre ve daha fazla bilgi görmek için iş listesini görüntüleyebilirsiniz.

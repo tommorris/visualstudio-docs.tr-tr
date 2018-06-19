@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144901"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>İzlenecek yol: bir içerik türü için bir dosya adı uzantısı bağlama
 Düzenleyici Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantıları kullanarak bir dosya adı uzantısı bağlantısına ve kendi içerik türünü tanımlayın. Bazı durumlarda, dosya adı uzantısı zaten bir dil hizmeti tarafından tanımlanmış; Bununla birlikte, MEF ile kullanmak için hala bir içerik türüyle Bağla gerekir.  

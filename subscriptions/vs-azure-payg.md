@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31195328"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Bir Azure geliştirme ve Test Kullandıkça Öde aboneliğine ayarlama
 Bulutta ekibinizle işbirliği.  Diğer aboneleri işbirliğiyle ekipleri ve ortamlar arasında yalıtım da sağlarken etkinleştirme, birden çok geliştirme ve Test Kullandıkça Öde abonelikleri oluşturun.  Geliştirme ve test için saatlik özel indirimli fiyatlar alma ve abonelik yazılımınızın Azure ile ilgili kullanım hakları bulut.

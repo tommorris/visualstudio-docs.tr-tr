@@ -1,6 +1,6 @@
 ---
-title: "Yerel olarak tensorflow modeli eğitmek"
-description: "Tensorflow modeli AI araçları Visual Studio için yerel olarak çalıştırın."
+title: Yerel olarak tensorflow modeli eğitmek
+description: Tensorflow modeli AI araçları Visual Studio için yerel olarak çalıştırın.
 keywords: AI, visual studio, tensorflow, yerel
 author: lisawong19
 ms.author: liwong
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708939"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Yerel olarak TensorFlow modeli eğitmek
 

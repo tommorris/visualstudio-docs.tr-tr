@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143699"
 ---
 # <a name="tool-window-display-configuration"></a>Araç penceresi ekran yapılandırması
 Ne zaman bir VSPackage araç penceresi, varsayılan konumu, boyutu, yerleştirme stilini ve diğer görünürlük bilgileri kaydeder, isteğe bağlı değerleri belirtilir. Araç penceresi kayıt hakkında daha fazla bilgi için bkz: [kayıt defterinde araç pencereleri](../extensibility/tool-windows-in-the-registry.md)  

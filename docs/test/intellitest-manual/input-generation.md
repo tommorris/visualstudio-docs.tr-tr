@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977783"
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>Giriş generatation kullanılarak dinamik simgesel yürütme
 

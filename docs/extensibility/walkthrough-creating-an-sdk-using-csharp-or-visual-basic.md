@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146617"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: C# veya Visual Basic kullanan bir SDK oluşturma
 Bu kılavuzda, Visual C# kullanarak basit bir matematik kitaplığı SDK oluşturma ve bir Visual Studio Uzantısı (VSIX) olarak SDK paketini öğreneceksiniz. Aşağıdaki yordamları tamamlamanız:  

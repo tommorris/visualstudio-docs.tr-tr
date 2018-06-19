@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474056"
 ---
 # <a name="graphics-event-call-stack"></a>Grafik Olay Çağırma Yığını
 Grafik olay çağrı yığınında Visual Studio grafik Çözümleyicisi sorunlu grafik olayları ve uygulamanızın kaynak kodunu arasındaki ilişkiyi eşleme yardımcı olur.  

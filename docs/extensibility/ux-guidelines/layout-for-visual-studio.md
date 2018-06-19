@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31149022"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio için düzeni
 Visual Studio iletişim kutuları çoğunluğu olan [yardımcı programı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), bu izleme standart iletişim kutuları unthemed olduğu [Windows Masaüstü iletişim düzeni ilkeleri](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Kullanıcı Arabiriminde yenilemek Visual Studio taşır gibi bazı daha belirgin iletişim kutuları gibi ürün tanımlama deneyimleri kurar yeni bir tasarım sahiptir. Bunlar [konulu iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) konulu bir görünümü vardır.  

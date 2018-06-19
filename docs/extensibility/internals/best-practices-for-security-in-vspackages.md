@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127311"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>VSPackages güvenlik için en iyi yöntemler
 Yüklemek için [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , bilgisayarınızda, yönetici kimlik bilgilerine sahip bir bağlamda çalıştırması gerekir. Güvenlik ve dağıtımını temel birimi bir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uygulama [VSPackages](../../extensibility/internals/vspackages.md). Kullanarak bir VSPackage kaydedilmelidir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], yönetici kimlik bilgilerini de gerektirir.  

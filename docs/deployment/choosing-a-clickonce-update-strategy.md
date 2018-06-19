@@ -23,6 +23,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065695"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>ClickOnce Güncelleştirme Stratejisini Seçme
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] otomatik uygulama güncelleştirmeleri sağlayabilir. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması düzenli aralıklarla uygulama güncelleştirmeleri kullanılabilir olup olmadığını görmek için dağıtım bildirim dosyasını okur. Kullanılabilir olması durumunda uygulamanın yeni sürümü indirilir ve çalıştırılır. Verimlilik için, sadece değişen dosyalar indirilir.  

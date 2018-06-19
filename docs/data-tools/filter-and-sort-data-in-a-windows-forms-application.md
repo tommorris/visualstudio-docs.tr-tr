@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924975"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtreleme ve bir Windows Forms uygulamasındaki verileri sıralama
 Ayarlayarak verilere filtre <xref:System.Windows.Forms.BindingSource.Filter%2A> özelliği istenen kayıtları döndüren bir dize ifadesi.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133367"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>XML komutu tablosu tasarlama (. Vsct) dosyaları
 Bir XML komutu tablosu (.vsct) dosyası bir VSPackage komutu öğelerinin görünümünü ve düzeni açıklar. Komut öğeleri düğmeler, birleşik giriş kutuları, menüler, araç çubukları ve komut öğe gruplarını içerir. Bu konuda, XML komut tablo dosyaları, komut öğeleri ve menüleri nasıl etkilediklerini ve bunların nasıl oluşturulacağı açıklanmaktadır.

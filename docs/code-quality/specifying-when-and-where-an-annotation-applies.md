@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920621"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme
 Ek açıklamanın koşullu olduğunda Çözümleyicisi belirtmek için diğer ek açıklamaları gerektirebilir.  Bir işlev zaman uyumlu veya zaman uyumsuz bir değişken varsa, örneğin, işlevi aşağıdaki gibi davranır: zaman uyumlu durumda her zaman sonunda başarılı ancak hemen gerçekleştirilemiyor zaman uyumsuz durumda, bir hata bildirir. İşlev zaman uyumlu olarak çağrıldığında değil döndüğünden çünkü sonuç değeri denetleme kodu Çözümleyicisi için herhangi bir değer sağlar.  Ancak, işlevi zaman uyumsuz olarak adlandırılır ve işlev sonucunu işaretli olduğunda, önemli bir hata meydana gelebilir. Bu örnek kullanmak bir durum gösterilir `_When_` ek açıklama — bu makalenin sonraki bölümlerinde açıklanan — denetimini etkinleştirmek için.

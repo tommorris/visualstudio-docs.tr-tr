@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132267"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Dağıtım yönetmek için proje yapılandırması
 Dağıtım fiziksel olarak hata ayıklama ve yükleme için beklenen konuma derleme işleminden çıkış öğeleri taşıma işlemidir. Örneğin, bir Web uygulaması yerel makine üzerinde oluşturulmuş ve sunucuda yerleştirilir.  

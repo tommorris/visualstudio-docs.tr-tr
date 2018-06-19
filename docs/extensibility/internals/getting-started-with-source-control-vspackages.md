@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133423"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Kaynak denetimi VSPackages ile çalışmaya başlama
 Kaynak denetimi VSPackage eklenti kaynak denetimi için daha gelişmiş bir alternatiftir. (Bkz [kaynak denetim eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md) kaynağı hakkında daha fazla bilgi için eklentileri kontrol.) Kaynak denetimi VSPackage kaynak denetimi modeli, özellikler ve kullanıcı arabirimi (UI) üzerinde tam denetim sağlar ve bunu tümleştirir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ortamı bir VSPackage olarak.  

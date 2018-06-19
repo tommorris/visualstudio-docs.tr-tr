@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126802"
 ---
 # <a name="extending-projects"></a>Projeleri genişletme
 Projeler ve çözümler Visual Studio kod ve kaynak dosyaları derleme ve dağıtım birimlerine düzenler yöntemleri sunulmaktadır. Projeler hakkında daha fazla bilgi bulabilirsiniz [projeleri (Visual Studio SDK)](../extensibility/extending-projects.md).  

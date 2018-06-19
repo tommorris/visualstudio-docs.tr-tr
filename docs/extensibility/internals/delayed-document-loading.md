@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134453"
 ---
 # <a name="delayed-document-loading"></a>Belge yüklemesi ertelendi
 Bir kullanıcı bir Visual Studio çözümü açana, ilişkili belgelere çoğunu hemen yüklü değil. Belge pencere çerçevesi başlatma bekleyen durumunda oluşturulur ve (bir saplama çerçeve olarak adlandırılır) bir yer tutucu belge çalıştıran belge Table'nın (RDT) yerleştirilir.  
@@ -64,4 +65,4 @@ Bir kullanıcı bir Visual Studio çözümü açana, ilişkili belgelere çoğun
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Başlatma zorla görmek için uzantılarını test etme  
  Bir belge başlatılmış olup olmadığını, uzantınızı başlatma başlatılmasına gerek olmadığını öğrenmek zor olabilir belirtmek için hiçbir görünür işaret yoktur. Metin için tam olarak başlatılmadı her belgenin başlığını neden olduğundan doğrulama kolaylaştırır bir kayıt defteri anahtarı ayarlayabilirsiniz `[Stub]` başlık.  
   
- İçinde **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**ayarlayın **StubTabTitleFormatString** için **{0} [saplama]**.
+ İçinde **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ayarlayın **StubTabTitleFormatString** için **{0} [saplama]**.

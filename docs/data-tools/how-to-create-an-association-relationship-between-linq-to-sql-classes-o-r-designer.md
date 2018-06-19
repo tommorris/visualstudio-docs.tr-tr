@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923396"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Nasıl yapılır: LINQ-SQL sınıfları (O/R Tasarımcısı) arasında bir ilişkilendirme oluşturun
 Varlık sınıflar arasındaki ilişkileri [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] veritabanındaki tablolar arasında ilişkiler benzer. Kullanarak sınıflar arasındaki ilişkileri oluşturabilirsiniz **ilişkilendirme Düzenleyicisi** iletişim kutusu.

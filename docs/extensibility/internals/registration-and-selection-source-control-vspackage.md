@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133043"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Kayıt ve seçim (kaynak denetimi VSPackage)
 VSPackage kayıtlı, kendisine kullanıma sunmak için bir kaynak denetimi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Birden fazla kaynak denetimi VSPackage kaydettiyseniz, kullanıcı uygun zamanlarda yüklemek için hangi VSPackage seçebilirsiniz. Bkz: [VSPackages](../../extensibility/internals/vspackages.md) VSPackages ve bunları kaydetmek nasıl daha ayrıntılı bilgi için.  

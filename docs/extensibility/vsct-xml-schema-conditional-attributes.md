@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138362"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML Şeması koşullu öznitelikler
 Koşullu öznitelikler tüm listeler ve öğeleri uygulanabilir. Mantıksal işleçler ve sembol genişletme ifadeler doğru veya yanlış olarak değerlendirin. TRUE ise, sonuçta elde edilen çıktı ilişkili liste veya öğesi içerir.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134613"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Eski dil hizmetindeki parametre bilgisi
 IntelliSense parametre bilgisi, kullanıcı parametre listesi yazdığında bir yöntem imzası görüntüleyen bir araç ipucu başlangıç yöntemi parametre listesi için (genellikle açık parantez) karakteri ' dir. Her bir parametreyi girilir ve parametre ayırıcı (genellikle bir virgül) yazıldığından, araç ipucu sonraki parametrenin kalın olarak göstermek için güncelleştirilir.  

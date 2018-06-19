@@ -1,19 +1,20 @@
 ---
-title: "subarray yöntemi (Float64Array) | Microsoft Docs"
-ms.custom: 
+title: subarray yöntemi (Float64Array) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: f3c24e1b-5fb2-49a1-8183-0fda33dbeaba
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791456"
 ---
 # <a name="subarray-method-float64array"></a>subarray Yöntemi (Float64Array)
 Yeni Float64Array görünümünü alır [ArrayBuffer nesnesi](../../javascript/reference/arraybuffer-object.md) subarray ilk ve son üyeleri belirtme bu dizi için depolama.  

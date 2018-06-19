@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141519"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Eski dil hizmetindeki Sözcük tamamlama
 Kısmen yazılan Word eksik karakterleri, sözcük tamamlama doldurur. Yalnızca bir olası tamamlanma ise, tamamlama karakter girdiğinizde word tamamlandı. Kısmi sözcük birden fazla olasılığı eşleşirse, tamamlanabilir listesi görüntülenir. Tamamlama karakter tanımlayıcıları için kullanılmayan herhangi bir karakter olabilir.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925001"
 ---
 # <a name="how-to-export-a-shader"></a>Nasıl Yapılır: Gölgelendiriciyi Dışarı Aktarma
 Bu belgede gölgelendirici tasarımcının uygulamanızı kullanabilmeleri yönlendirilmiş grafik gölgelendirici dili (DGSL) gölgelendirici dışarı aktarmak için nasıl kullanılacağı gösterilmektedir.

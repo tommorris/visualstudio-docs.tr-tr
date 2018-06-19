@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919460"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Nasıl yapılır: Üretilen Kod İçin Kod Çözümleme Uyarılarını Bastırma
 Yönetilen kod derleyicileri genellikle bir projeye hızlı kod geliştirme kolaylaştırmak için eklenen kod oluşturur. Ayrıca, geliştiriciler genellikle üçüncü taraf araçları uygulamaları çabucak geliştirmelerine yardımcı olması için kullanın. Bu araçları ayrıca projeye eklenen kodu oluşturur.

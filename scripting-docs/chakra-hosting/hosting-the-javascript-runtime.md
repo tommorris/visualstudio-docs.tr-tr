@@ -1,14 +1,14 @@
 ---
-title: "JavaScript çalışma zamanını barındırma | Microsoft Docs"
-ms.custom: 
+title: JavaScript çalışma zamanını barındırma | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789269"
 ---
 # <a name="hosting-the-javascript-runtime"></a>JavaScript Çalışma Zamanını Barındırma
 JavaScript çalışma zamanı (JsRT) API'ları, masaüstü, Windows mağazası ve Windows işletim sistemi üzerinde çalışan sunucu tarafı uygulamaları'komut dosyası özellikleri de standartlara dayalı Chakra JavaScript altyapısını kullanarak uygulama eklemek için bir yol sağlar. Microsoft Edge ve Internet Explorer tarafından kullanılan. Bu API, Windows 10 ve Windows işletim sisteminin Internet Explorer sürüm 11.0 makinede yüklü olan herhangi bir sürümü kullanılabilir. Daha fazla bilgi için bkz: [başvuru (JavaScript çalışma zamanı)](../chakra-hosting/reference-javascript-runtime.md). Windows mağazası uygulamalarında JsRT kullanma hakkında daha fazla bilgi için bkz: [JsRT ve evrensel Windows platformu](#Windows).  

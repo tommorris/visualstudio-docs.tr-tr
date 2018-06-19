@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129556"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Nasıl yapılır: kaynak denetimi eklentiler için uyumluluk uyarılarını devre dışı bırakma
 Bir kullanıcı kaynak denetiminde kullanan zaman birkaç uyumluluk uyarısı görebilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sunulan uyarılar eklenti kaynak denetimi özelliklerine bağlıdır ve ayrıntılı burada devre dışı bırakılabilir.  

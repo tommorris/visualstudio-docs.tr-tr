@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902278"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Yönetilen kod için Temel Tasarım Yönerge Kuralları kural kümesi
 Microsoft temel tasarım yönerge kuralları kural kümesi kodunuzu anlamak ve kullanmak daha kolay hale üzerinde odaklanmak için kullanabilirsiniz. Bu kural, projenizin kitaplık kodu içeriyorsa veya korumak kolaydır kod için en iyi uygulamaları zorunlu kılmak istiyorsanız kümesi içermelidir.

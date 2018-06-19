@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137774"
 ---
 # <a name="what39s-new-in-source-control"></a>Ne&#39;yeni kaynak denetiminde s
 İçinde [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] kaynak denetimi VSPackage uygulayarak derine tümleşik kaynak denetimi çözümü sağlayabilirsiniz. Bu bölümde, kaynak denetimi VSPackages özelliklerini açıklar ve uygulama adımlarını genel bir bakış sağlar.  

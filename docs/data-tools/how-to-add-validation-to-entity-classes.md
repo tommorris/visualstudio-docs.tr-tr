@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923131"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Nasıl yapılır: sınıflar için doğrulama ekleme
 *Doğrulama* varlık sınıfı olan bir nesnenin şeması ve ayrıca uygulama için oluşturulan kuralları kısıtlamaları veri nesneleri girdiğiniz değerleri uyması onaylama işlemi. Temel alınan veritabanı güncelleştirme göndermeden önce verileri doğrulama hataları azaltan iyi bir uygulamadır. Ayrıca, olası bir uygulama ve veritabanı arasındaki gidiş dönüş sayısını azaltır.

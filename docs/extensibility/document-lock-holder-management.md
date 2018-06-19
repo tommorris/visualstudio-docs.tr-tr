@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130550"
 ---
 # <a name="document-lock-holder-management"></a>Belge kilit sahibi Yönetimi
 Çalıştıran Belge tablosu (RDT) açık belgeler ve sahip oldukları düzenleme kilitleri sayısı tutar. Bu program aracılığıyla arka planda bir belge penceresi açık bir belgede görmesini kullanıcı olmadan düzenlendiğinde RDT belgede bir düzen kilit yerleştirebilirsiniz. Bu işlevsellik, genellikle bir grafik kullanıcı arabirimi aracılığıyla birden çok dosyalarda değişiklik tasarımcıları tarafından kullanılır.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133766"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Yeni proje oluşturma: başlık altında bir parçası
 Şimdiye kadar kendi proje türü oluşturma hakkında zorlayıcı? Yeni bir proje oluşturduğunuzda, gerçekten neler merak ediyor? Şimdi başlık altında göz atalım ve gerçekten neler olduğunu görebilirsiniz.  

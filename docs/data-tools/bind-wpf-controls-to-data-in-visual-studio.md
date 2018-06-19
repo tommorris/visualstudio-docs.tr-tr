@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926751"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere WPF denetimleri bağlama
 Veri bağlama tarafından uygulamanızı kullanıcılara verileri görüntüleyebilir [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] kontrol eder. Bu veri bağlama denetimleri oluşturmak için öğelerinden sürükleyebilirsiniz **veri kaynakları** penceresi üzerine [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu konuda en yaygın görevleri, Araçlar ve veri bağlama oluşturmak için kullanabileceğiniz sınıfları bazıları açıklanmaktadır [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] uygulamalar.

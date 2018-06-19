@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923556"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Yönetilen kod için özel kod çözümleme iade ilkelerini uygulama
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134051"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>SSS: Eklentileri VSPackage Uzantılarına Dönüştürme
 Eklentiler artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio uzantısı yapmak için bir VSIX uzantısı oluşturmanız gerekir. Burada, VSIX uzantısı için bir Visual Studio eklentisi dönüştürmek hakkında sık sorulan bazı sorular için yanıtlar bulunmaktadır.  
@@ -67,7 +68,7 @@ Eklentiler artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio u
   
 1.  Menü komutu sahip bir VSPackage oluşturun. (Daha fazla bilgi için bkz: [uzantı menü komutu ile oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  VSPackage tanımını içeren dosyayı açın. (C# projesinde, bunun  *\<projenizin adına >*Package.cs.)  
+2.  VSPackage tanımını içeren dosyayı açın. (C# projesinde, bunun  *\<projenizin adına >* Package.cs.)  
   
 3.  Aşağıdakileri ekleyin `using` deyimlerini dosyaya:  
   
@@ -129,7 +130,7 @@ Eklentiler artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio u
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Bir VSPackage DTE nesnesini almak için  
   
-1.  Visual Studio Paketi öğesi şablona sahip bir VSIX proje ile Ara  *\<proje adı >*Package.cs dosya. Bu türeyen sınıftır <xref:Microsoft.VisualStudio.Shell.Package>; Visual Studio ile etkileşim yardımcı olabilir. Bu durumda, kullandığınız kendi <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> almak için <xref:EnvDTE80.DTE2> nesnesi.  
+1.  Visual Studio Paketi öğesi şablona sahip bir VSIX proje ile Ara  *\<proje adı >* Package.cs dosya. Bu türeyen sınıftır <xref:Microsoft.VisualStudio.Shell.Package>; Visual Studio ile etkileşim yardımcı olabilir. Bu durumda, kullandığınız kendi <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> almak için <xref:EnvDTE80.DTE2> nesnesi.  
   
 2.  Bunlar eklemek `using` deyimleri:  
   
@@ -161,7 +162,7 @@ Eklentiler artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio u
   
 1.  Menü komutu, olarak sahip bir VSPackage oluşturma [nasıl geliştirme VSIX uzantıları başlamalıyım?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) bölümü.  
   
-2.  VSPackage tanımını içeren dosyayı açın. (C# projesinde, bunun  *\<projenizin adına >*Package.cs.)  
+2.  VSPackage tanımını içeren dosyayı açın. (C# projesinde, bunun  *\<projenizin adına >* Package.cs.)  
   
 3.  Bunlar eklemek `using` deyimleri:  
   
@@ -209,7 +210,7 @@ Eklentiler artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio u
   
 1.  Menü komutu, olarak sahip bir VSPackage oluşturma [nasıl geliştirme VSIX uzantıları başlamalıyım?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) bölümü.  
   
-2.  VSPackage tanımını içeren dosyayı açın. (C# projesinde, bunun  *\<projenizin adına >*Package.cs.)  
+2.  VSPackage tanımını içeren dosyayı açın. (C# projesinde, bunun  *\<projenizin adına >* Package.cs.)  
   
 3.  Bunlar eklemek `using` deyimleri:  
   

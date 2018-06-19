@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134779"
 ---
 # <a name="authoring-vsct-files"></a>Yazma. Vsct dosyaları
 Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI) öğeleri Visual Studio tümleşik geliştirme ortamı (IDE) eklemek için bir .vsct dosyasını yazar gösterilmektedir. Visual Studio .vsct dosya zaten sahip olmayan paket (VSPackage) kullanıcı Arabirimi öğeleri eklediğinizde, aşağıdaki adımları kullanın.  

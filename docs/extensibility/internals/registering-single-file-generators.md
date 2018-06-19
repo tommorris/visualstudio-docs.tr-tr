@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132189"
 ---
 # <a name="registering-single-file-generators"></a>Tek dosya oluşturucuları kaydetme
 Özel bir araç olarak kullanılabilir hale getirmek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], bu nedenle kaydettirmelisiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] örneğini oluşturabilir ve belirli proje türü ile ilişkilendirir.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133001"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Nasıl yapılır: bir kitaplık nesnesi Yöneticisi ile kaydetme
 Simgeler gözatma araçları, gibi **sınıf görünümü**, **Nesne Tarayıcısı**, **çağrısı tarayıcı** ve **Bul simgesi sonuçlarınızı**, görüntülemenizi sağlar projenizi veya dış bileşenlere simgeler. Ad alanları, sınıflar, arabirimler, yöntemleri ve diğer dil öğeleri simgeleri içerir. Kitaplıkları bu simgeleri izlemek ve bunlara kullanıma [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] araçları verileri ile doldurur Nesne Yöneticisi.  

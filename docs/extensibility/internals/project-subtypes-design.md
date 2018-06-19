@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133805"
 ---
 # <a name="project-subtypes-design"></a>Proje Subtypes tasarım
 Proje subtypes Microsoft Build Engine üzerinde (MSBuild) tabanlı projeleri genişletme VSPackages olanak tanır. Uygulanan yönetilen çekirdek proje sisteminin toplu yeniden toplama kullanımı sağlayan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] henüz hala belirli bir senaryo davranışını özelleştirebilirsiniz.  

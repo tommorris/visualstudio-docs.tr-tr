@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922560"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Nasıl yapılır: Ön Çarpımlı Alfa kullanan Doku Dışa Aktarma
 Görüntü içerik ardışık düzen önceden çoğaltılmış alfa dokuları kaynak görüntüden oluşturabilir. Bunlar kullanmak daha basit ve daha sağlamdır önceden çoğaltılmış alfa içermeyen dokuları olabilir.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130391"
 ---
 # <a name="stepping-in-break-mode"></a>Kesme modunda Adımlama
 Hata ayıklayıcı kesme modunda olduğunda ve kod üzerinden adım gerekir gerçekleşen işlem açıklanmaktadır:  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128928"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Kaynak Denetim eklentileri ile çalışmaya başlama
 Kaynak denetimi eklenti oluşturmak için kaynak denetimi eklentisi API tanımlanan işlevler uygulayan DLL oluşturun ve ardından DLL ile kaydetmek için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kaynak kodu sürüm denetimi içinde kullanmak için kullanılabilir hale getirmek için.  

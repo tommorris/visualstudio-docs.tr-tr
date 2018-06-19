@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127869"
 ---
 # <a name="creating-a-source-control-plug-in"></a>Kaynak Denetimi Eklentisi oluşturma
 Visual Studio SDK'sı için kaynak denetimi özelliği eklemenize olanak tanıyan kaynakları sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Kaynak Denetim eklentisi bu belgede özetlenen API ile uyumlu herhangi bir eklenti DLL kullanmanıza olanak sağlar.  

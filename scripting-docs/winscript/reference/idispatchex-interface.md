@@ -1,17 +1,17 @@
 ---
 title: Idispatchex arabirimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDispatchEx interface, about IDispatchEx
 - IDispatchEx interface
 ms.assetid: 37a3303f-f78e-4b5b-aac8-b836c92819de
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24795245"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx Arabirimi
 `IDispatchEx`, bir uzantısı olarak `IDispatch` özellikleri arabirimi, uygun komut dosyası dili gibi dinamik diller için. Bu bölümde açıklanmıştır `IDispatchEx` kendisini arasındaki farklar arabirim `IDispatch` ve `IDispatchEx`ve uzantıları için stratejinin. Okuyucular aşina olduğunuzu beklenir `IDispatch` ve erişimi `IDispatch` belgeleri.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924202"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Parametreleştirilmiş TableAdapter sorguları oluşturma
 Parametreli bir sorgu WHERE yan tümcesi sorgusundan koşullarını karşılayan verileri döndürür. Yalnızca Müşteriler ekleyerek belirli bir şehirde görüntülemek için bir müşteri listesi gibi Parametreleştirme `WHERE City = @City` bitiş SQL deyiminin müşterilerin listesini döndürür.

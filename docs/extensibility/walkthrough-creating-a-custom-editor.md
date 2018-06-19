@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138778"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>İzlenecek yol: bir özel düzenleyici oluşturma
 VSPackage proje şablonu basit bir özel düzenleyici C++'da oluşturabilirsiniz.  VSPackage proje şablonu artık C# veya Visual Basic projeleri destekler. Daha fazla bilgi için bkz: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  

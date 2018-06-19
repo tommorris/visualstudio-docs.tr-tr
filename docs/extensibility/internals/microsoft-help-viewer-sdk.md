@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135431"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK
 Bu makalede, Visual Studio Yardım Görüntüleyicisi tümleştiricileri için aşağıdaki görevleri içerir:  

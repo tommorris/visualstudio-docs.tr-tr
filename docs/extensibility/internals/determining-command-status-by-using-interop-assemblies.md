@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128184"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>Birlikte çalışma derlemeleri kullanarak komut durumunu belirleme
 Bir VSPackage ele alabilir komutları durumunu izlemek gerekir. Ortamı, VSPackage içinde işlenen komut ne zaman etkin veya devre dışı duruma belirleyemiyor. Bu ortam komutu durumları hakkında bilgilendirmek için VSPackage sorumluluğunda olan, örneğin, genel durumu gibi komutlar **Kes**, **kopya**, ve **Yapıştır**.  

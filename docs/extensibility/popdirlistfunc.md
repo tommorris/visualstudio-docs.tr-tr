@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142192"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Verilen bir geri çağırma işlevini budur [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) dizinleri ve (isteğe bağlı olarak), kaynak denetimi altında olduğunu bulmak için dosya adları topluluğu güncelleştirmek için işlevi.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128038"
 ---
 # <a name="extending-menus-and-commands"></a>Genişletme menüleri ve komutları
 Komutlar için Visual Studio Eylemler ve işlemleri eklemeniz yoludur. Çoğu durumda, menüleri veya araç çubuklarını komutlar görüntülenir. VSPackage proje şablonu nasıl çok basit bir komut uygulandığını gösterir. Bir biraz daha uzun ancak hala temel için bkz: [uzantı menü komutu ile oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).  

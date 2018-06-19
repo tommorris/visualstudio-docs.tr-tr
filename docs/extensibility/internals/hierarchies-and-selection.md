@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128565"
 ---
 # <a name="hierarchies-and-selection"></a>Hiyerarşileri ve seçimi
 Özelleştirdiğinizde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], anlamanız gereken nasıl [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hiyerarşileri projeleri ve nasıl kullanıcıya görüntüleneceğini belirlemek için seçim bağlamını kullanır gibi işler. Bu bölümde kavramlarını ele alınmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hiyerarşileri ve seçim.  

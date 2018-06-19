@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918536"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Projeler ve çözümler Visual Studio'da oluşturma ve temizleme
 Bu konudaki yordamları kullanarak, derleme, yeniden oluşturmanız veya tüm veya bazı projeleri veya bir çözümde proje öğeleri temizleyin. Adım adım bir öğretici için bkz: [izlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md).

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126968"
 ---
 # <a name="define-element"></a>Öğe tanımlayın
 Sembol ad ve değer çifti tanımlar. Bu simgenin koşullu özniteliklere göre değerlendirilebilir. Daha fazla bilgi için bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md). Ayrıca bkz. [simgeleri öğesi](../extensibility/symbols-element.md).  

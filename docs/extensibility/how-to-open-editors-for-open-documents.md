@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129818"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Nasıl yapılır: açık belgeler için düzenleyicileri açın
 Bir belge penceresi proje açılmadan önce projeyi önce dosyanın zaten başka bir düzenleyici için belge penceresindeki açık olup olmadığını belirlemeniz gerekir. Dosya ya da açık bir projeye özgü düzenleyicisinde olabilir ya da standart düzenleyicileri birini kayıtlı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

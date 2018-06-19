@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130015"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Proje dosyasında Düzenleyicisi açan belirleme
 Bir kullanıcı bir proje ile bir dosya açıldığında, ortam sonunda uygun Düzenleyicisi'ni ya da bu dosya için tasarımcı açma, bir yoklama süreci başlatılır. Standart ve özel düzenleyiciler ortamı tarafından işe ilk yordamı aynıdır. Hangi Düzenleyicisi'ni kullanarak bir dosyayı açmak için yoklama zaman ortamı çeşitli ölçütleri kullanır ve VSPackage ortamıyla bu işlem sırasında koordine gerekir.  

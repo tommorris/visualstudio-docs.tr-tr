@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133792"
 ---
 # <a name="image-library-viewer"></a>Görüntü kitaplığı Görüntüleyicisi
 Visual Studio görüntü kitaplığı Görüntüleyicisi aracı yükleme ve görüntü bildirimleri, kullanıcının Visual Studio olduğu gibi yönlendirme izin arayın. Kullanıcı, arka plan, boyutları, DPI, yüksek karşıtlık ve diğer ayarları değiştirebilir. Araç ayrıca her görüntü bildirimi yükleme bilgilerini görüntüler ve görüntü bildiriminde her görüntü kaynağı bilgilerini görüntüler. Bu aracı için yararlıdır:  

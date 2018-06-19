@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268366"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Nasıl yapılır: ListObject denetimine yeni bir satır eklendiğinde veri doğrulama
   Kullanıcılar için yeni satır ekleyebilir bir <xref:Microsoft.Office.Tools.Excel.ListObject> veriye bağlı denetim. Veri kaynağına değişiklikleri kaydetmeden önce kullanıcının verileri doğrulayabilirsiniz.  

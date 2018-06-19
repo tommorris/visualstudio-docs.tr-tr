@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132201"
 ---
 # <a name="project-configuration-for-output"></a>Çıktı için proje yapılandırması
 Her yapılandırma çıktı öğeleri yürütülebilir dosya veya kaynak dosyaları gibi üretmek yapı işlemler kümesini destekler. Bu çıktı öğeler kullanıcıya özeldir ve yürütülebilir dosyalar (.exe, .dll, .lib) ve kaynak dosyaları (.idl, .h dosyaları) gibi bir çıkış ilgili türleri bağlantı grupları yerleştirilebilir.  

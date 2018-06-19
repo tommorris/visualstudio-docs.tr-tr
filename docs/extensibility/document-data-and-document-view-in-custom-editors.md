@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130266"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Belge verileri ve belge görünümünde özel düzenleyiciler
 Özel bir düzenleyici iki bölümden oluşur: bir belgeyi veri nesnesi ve bir belge görünüm nesnesi. Adları önermek gibi belge veri nesnesi görüntülenecek metin verileri temsil eder ve belge görünüm nesnesi (veya "Görünüm") belgenin veri nesnesi görüntülemek üzere bir veya daha fazla windows temsil eder.  

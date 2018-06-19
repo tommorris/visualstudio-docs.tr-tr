@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132648"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Nasıl yapılır: eski dil hizmetindeki gizli metin desteği sağlar
 Anahat bölgeler yanı sıra gizli metni bölgeler oluşturabilirsiniz. Gizli metni bölgeler, istemci tarafından denetlenen veya Düzenleyicisi denetimli olabilir ve bir bölge metnin tamamen gizlemek için kullanılır. Düzenleyici gizli bir bölge yatay çizgiler olarak görüntüler. Bu komut yalnızca görünümünde HTML düzenleyicisi örneğidir.  

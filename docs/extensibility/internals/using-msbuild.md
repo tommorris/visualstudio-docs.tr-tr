@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141457"
 ---
 # <a name="using-msbuild"></a>MSBuild kullanma
 MSBuild proje öğeleri oluşturulması, derleme görevleri ve yapılandırmaları oluşturmak için tam olarak tanımlayan proje dosyalarını oluşturmak için bir iyi tanımlanmış, Genişletilebilir XML biçiminde sağlar.  

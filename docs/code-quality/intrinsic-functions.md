@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920954"
 ---
 # <a name="intrinsic-functions"></a>İç İşlevler
 Bu yan etkileri sahip olmayan bir ifade değil sağlanan SAL deyimde C/C++ bir ifade olabilir — örneğin, ++,--ve bu bağlamda tümüne sahip yan etkileri işlevi çağırır.  SAL ancak, bazı işlev benzeri nesneleri ve SAL ifadelerde kullanılabilir bazı ayrılmış simgeleri sağlar. Bunlar denir *iç işlevler*.

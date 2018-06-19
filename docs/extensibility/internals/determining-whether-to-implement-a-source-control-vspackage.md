@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128883"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Kaynak denetimi VSPackage uygulamak kullanılıp belirleme
 Bu bölümde, kaynak denetimi uygun tümleştirme yolu seçme hakkında çözümleri ve verir geniş yönergeleri genişletmek için kaynak denetimi eklentilerini ve kaynak denetimi VSPackages seçimleri elaborates.  

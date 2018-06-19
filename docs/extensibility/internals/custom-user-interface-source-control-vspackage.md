@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131893"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Özel kullanıcı arabirimi (kaynak denetimi VSPackage)
 Bir VSPackage Visual Studio komut tablosu (.vsct) dosyası aracılığıyla kendi menü öğelerini ve varsayılan durumlarını bildirir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) VSPackage yüklenene kadar bu menü öğelerini varsayılan durumlarını görüntüler. Sonuç olarak, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi etkinleştirmek veya menü öğelerini devre dışı bırakmak için çağrılır.  

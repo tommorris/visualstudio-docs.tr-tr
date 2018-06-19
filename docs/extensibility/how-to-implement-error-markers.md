@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127863"
 ---
 # <a name="how-to-implement-error-markers"></a>Nasıl yapılır: uygulama hata işaretçileri
 Hata işaretçileri (veya kırmızı dalgalı alt çizgiler) uygulamak için metin düzenleyici özelleştirmeleri en zor olduğu. Ancak, VSPackage kullanıcılara verdikleri avantajları kadar sağlayacağını maliyetinden üstün. Hata işaretçileri dilden çok az dil Ayrıştırıcıyı dalgalı veya dalgalı bir kırmızı çizgiyle yanlış uymak açısından gerekli olduğunu metin işaretleyin. Bu göstergenin görsel olarak yanlış kod görüntüleyerek programcıları yardımcı olur.  

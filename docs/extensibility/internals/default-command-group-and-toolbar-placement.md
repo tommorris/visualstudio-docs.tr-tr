@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130537"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Varsayılan komutu, Grup ve araç çubuğu yerleştirme
 UI ürün bütünlüğünü ve tutarlılık için belirli komut grupları varsayılan olarak, görüntüler. ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komutları ve komut grupları için tanımları sağlar. VSPackages de standart komutları ve komut gruplarını kullanabilirsiniz.  

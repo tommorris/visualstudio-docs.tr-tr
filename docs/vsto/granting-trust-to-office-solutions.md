@@ -23,6 +23,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447251"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Office çözümlerine güven verme
   GRANT güven çözümü derleme, uygulama bildirimi, dağıtım bildirimi ve belge güvenmeyi her hedef bilgisayarın güvenlik ilkesini değiştirme Office çözümleri anlamına gelir. Güven Office çözümü için ya da son kullanıcı tarafından verilebilir.  

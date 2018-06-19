@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131655"
 ---
 # <a name="solutions-overview"></a>Çözümlerine genel bakış
 Bir çözüm, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla projeleri gruplandırmasıdır. Çözüme ilgili proje ve durum bilgilerini iki farklı çözüm dosyasında depolanır. Metin tabanlı çözüm (.sln) dosyasıdır ve kullanılabilir kaynak kodu denetimi altında yerleştirilir ve kullanıcı arasında paylaşılan. Çözüm kullanıcı seçeneği (.suo) ikili dosyadır. Sonuç olarak, .suo dosya kaynak kodu denetimi altında yer alamaz ve kullanıcıya özgü bilgileri içerir.  

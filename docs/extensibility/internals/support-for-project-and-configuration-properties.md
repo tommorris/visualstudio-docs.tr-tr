@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133584"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve yapılandırma özellikleri için destek
 **Özellikleri** penceresinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), proje ve yapılandırma özelliklerini görüntüleyebilirsiniz. Kullanıcının, uygulamanın özelliklerini ayarlayıp böylece kendi proje türü için özellik sayfası sağlayabilir.  

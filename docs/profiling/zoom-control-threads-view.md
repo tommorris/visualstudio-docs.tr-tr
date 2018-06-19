@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447888"
 ---
 # <a name="zoom-control-threads-view"></a>Yakınlaştırma Denetimi (iş parçacıkları görünümü)
 Yakınlaştırma Denetimi ilgi alanlarına göre belirli üzerinde odaklanabilmeniz zaman çizelgesinde yakınlaştırma yardımcı olacak bir kaydırıcı ' dir. Zaman Çizelgesi görünümüne Merkezi'nde bu denetim yakınlaştırır olduğundan, yakınlaştırmak önce ilgi alanı ortalayın.  

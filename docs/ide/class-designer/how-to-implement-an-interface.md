@@ -18,6 +18,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33958623"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda bir arabirimini uygulama
 

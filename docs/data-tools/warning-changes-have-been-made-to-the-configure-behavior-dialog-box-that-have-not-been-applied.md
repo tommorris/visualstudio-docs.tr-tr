@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923989"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Uyarı: Uygulanmayan yapılandırma davranışı iletişim kutusunda yapılan değişiklikler
 

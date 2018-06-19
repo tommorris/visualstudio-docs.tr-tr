@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920553"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Nasıl yapılır: bir işlemi kullanarak veri kaydetme
 Kullanarak bir işlemde veri kaydetme <xref:System.Transactions> ad alanı. Kullanım <xref:System.Transactions.TransactionScope> sizin için otomatik olarak yönetilen bir işlemde katılmak için nesne.

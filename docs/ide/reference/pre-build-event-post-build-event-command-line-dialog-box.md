@@ -40,6 +40,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947979"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Derleme Öncesi Olay/Derleme Sonrası Olay Komut Satırı İletişim Kutusu
 Oluşturma öncesi veya sonrası olayları yazabilirsiniz [derleme olayları sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) doğrudan Düzenle kutusu veya öncesi ve sonrası derleme makroları kullanılabilir makroları listesinden seçebilirsiniz.

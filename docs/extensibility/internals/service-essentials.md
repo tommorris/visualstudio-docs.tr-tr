@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132661"
 ---
 # <a name="service-essentials"></a>Hizmet temelleri
 İki VSPackages arasında bir sözleşme hizmetidir. Bir VSPackage arabirimleri kullanmak üzere başka bir VSPackage için belirli bir dizi sağlar. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kendisi için diğer VSPackages hizmetleri sağlayan VSPackages koleksiyonudur.  

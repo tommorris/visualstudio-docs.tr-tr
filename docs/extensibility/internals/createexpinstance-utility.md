@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128097"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance yardımcı programı
 Sıfırlamak oluşturmak için CreateExpInstance yardımcı programını kullanın veya Visual Studio deneysel örneği silin. Hata ayıklama ve temel alınan ürün değiştirmeden Visual Studio uzantılarını test etmek için deneysel örneği kullanabilirsiniz.  

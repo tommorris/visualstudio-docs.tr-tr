@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128726"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Eski dil hizmeti yorum oluşturma kodu
 Programlama dilleri, genellikle açıklama eklemek veya kod açıklama olanağı sağlar. Kod hakkında ek bilgi sağlar, ancak derleme veya yorumlama sırasında yok sayılır metnin bir bölümünü bir açıklamadır.  

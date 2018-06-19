@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24793355"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Kaynak kodu metnin komut dosyasına eklenecek yordamlar için Windows komut dosyası altyapısı izin veriyorsa, uygulayan `IActiveScriptParseProcedure32` arabirimi. VBScript gibi hiçbir bağımsız geliştirme ortamına sahip yorumlanan komut dosyası dilleri için bu alternatif bir mekanizma sağlar (dışında `IActiveScriptParse32` veya `IPersist`*) komut dosyası yordamlarını ad alanına eklemek için.  

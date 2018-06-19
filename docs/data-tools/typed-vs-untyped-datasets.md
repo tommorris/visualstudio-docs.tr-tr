@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922329"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Yazılmayan veri kümeleri yazılan
 Taban ilk türetilmiş bir veri kümesi türü belirtilmiş veri kümesi olan <xref:System.Data.DataSet> sınıfı ve dosyasındaki bilgileri kullanır **veri kümesi Tasarımcısı**, kesin türü belirtilmiş veri kümesi sınıfı, yeni, oluşturmak için bir .xsd dosyasında depolanır. (Tablolar, sütunlar ve benzeri) şema bilgileri oluşturulur ve bu yeni veri kümesi sınıfına birinci sınıf nesneler ve özelliklerinin bir küme olarak derlenmiş. Türü belirtilmiş veri kümesi temelden devralan çünkü <xref:System.Data.DataSet> sınıfı, belirlenmiş sınıf varsayar tüm işlevselliğini <xref:System.Data.DataSet> sınıfı ve bir örneği ele yöntemleriyle kullanılabilir bir <xref:System.Data.DataSet> sınıfı bir parametre olarak.

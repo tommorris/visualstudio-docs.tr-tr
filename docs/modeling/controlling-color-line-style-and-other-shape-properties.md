@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947173"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Renk, Çizgi Stili ve Diğer Şekil Özelliklerini Denetleme
 Renk 'olarak verilebilen gibi' - bazı şekil özellikleri başka bir deyişle, etki alanına bağlı bir özellik şeklin için. Başkalarının doğrudan denetlenmesi gerekir.

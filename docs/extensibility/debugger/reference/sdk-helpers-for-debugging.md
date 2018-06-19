@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135928"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Hata ayıklama için SDK Yardımcıları
 Bu işlevler ve bildirimleri hata ayıklama motorları, ifade değerlendiricileri ve sembol sağlayıcıları C++ üzerinde uygulama için genel yardımcı işlevlerdir.  
@@ -420,7 +421,7 @@ HRESULT EnumMetricSections(
 |*[özel durum]*|Bir özel durum için bir ad: Örneğin, **_com_error** veya **Control-Break**. Bu adları, ayrıca kullanıcının belirli bir özel durum tanımlamak için kullanılır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Bu dosyalar bulunur [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] SDK yükleme dizini (varsayılan olarak, *[sürücü]*\Program Visual Studio 2010 SDK\\).  
+ Bu dosyalar bulunur [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] SDK yükleme dizini (varsayılan olarak, *[sürücü]* \Program Visual Studio 2010 SDK\\).  
   
  Başlık: includes\dbgmetric.h  
   

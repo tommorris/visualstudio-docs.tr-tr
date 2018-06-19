@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129124"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Kesintiye uğratan eski dil hizmeti komutları
 İle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], metin görünümü başka türlü işleyebilirsiniz dil hizmeti ıntercept komutları olabilir. Metin görünümü değil yönetiyor dile özgü davranışı için kullanışlıdır. Bir veya daha fazla komut filtre metni görünümüne dil hizmetinizden ekleyerek bu komutları ele geçirebilir.  

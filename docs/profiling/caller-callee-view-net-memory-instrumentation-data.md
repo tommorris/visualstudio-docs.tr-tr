@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265507"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Arayan/Aranan görünümü - .NET bellek izleme verileri
 Arayan/Aranan görünümü .NET bellek izleme metodunu kullanarak toplanan verileri profil ayırma ve seçili işlev ve seçilen bu işlev üst ve alt işlevlerini için zamanlama verilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  

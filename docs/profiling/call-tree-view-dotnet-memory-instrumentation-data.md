@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263604"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Çağrı ağacı görünümü - .NET bellek izleme verileri
 Çağrı ağacı görünümü izleme metodunu kullanarak toplanan .NET bellek ayırma profil oluşturma veri profili uygulamada geçiş işlevi yürütme yollarını görüntüler. Ağaç kökü uygulamanın veya bileşenin içine giriş noktasıdır. Her işlevi düğümü adlı, tüm işlevlere ve .NET bellek ve zamanlama verileri işlevi için listeler.  

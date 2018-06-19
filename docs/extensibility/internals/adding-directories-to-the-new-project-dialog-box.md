@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128088"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Yeni Proje iletişim kutusu için dizinler ekleme
 Yeni proje türleri oluşturduğunuzda, yeni bir dizinde da kaydedebilirsiniz **yeni proje** bunları şablon olarak kullanmak için görüntülenecek iletişim kutusu. Aşağıdaki kod örneği, yeni bir dizin olarak da bilinen bir düğüm kaydetmek açıklanmaktadır. Örnekte, VSPackage CLSID_Package tarafından kullanıma sunulan şablonları kaydedilir. Sonuç olarak, sol tarafındaki **yeni proje** iletişim kutusu Folder_Label_ResID kaynak tarafından belirlenen bir adla eklenen düğümle sunar. Bu kaynak VSPackage uydu DLL yüklenir.  

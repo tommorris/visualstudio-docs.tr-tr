@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134038"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Eski dil hizmetindeki üye tamamlama
 IntelliSense üye tamamlama sınıf, yapı, numaralandırma veya ad alanı gibi belirli bir kapsam olası üyelerinin listesini görüntüleyen bir araç ipucu olur. Kullanıcı "Bu" ardından bir noktayla türleri, örneğin, C# ' ta sınıf veya yapı geçerli kapsamdaki tüm üyelerin listesi Kullanıcı seçebileceği bir liste sunulur.  

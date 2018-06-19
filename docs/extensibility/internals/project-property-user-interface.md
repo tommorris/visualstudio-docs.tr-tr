@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132433"
 ---
 # <a name="project-property-user-interface"></a>Proje özelliği kullanıcı arabirimi
 Proje alt öğeleri projesinde kullanabilirsiniz **özellik sayfaları** iletişim kutusunda Temel Proje tarafından verdiği Gizle veya sağlanan salt okunur denetimler ve tüm sayfaları yapın veya Projealtözgüsayfalarıekleme**Özellik sayfaları** iletişim kutusu.

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924816"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Yönetilen kod için Yönetilen Önerilen Kurallar kural kümesi
 Microsoft yönetilen önerilen kurallar kural kümesi en kritik sorunlar olası güvenlik açıklarını, uygulama çökme (Crash) ve diğer önemli mantığı ve tasarım hataları gibi yönetilen kodda odaklanmak için kullanabilirsiniz. Bu kural, projeniz için oluşturduğunuz herhangi bir özel kural kümesi kümesini içermelidir.

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265334"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>VSTO eklentileri diğer Office Çözümlerinden kodu çağırma
   VSTO eklentinizi diğer Microsoft Office çözümleri dahil olmak üzere diğer çözümleri için de bir nesne getirebilir. VSTO eklentinizi diğer çözümlerin kullanması için etkinleştirmek istediğiniz bir hizmet sağlarsa, bu yararlıdır. Bir Web hizmetinden finansal verileri hesaplamalar gerçekleştirir. Microsoft Office Excel için VSTO eklentisi varsa, örneğin, diğer çözümleri bu hesaplamalar çağırarak Excel VSTO eklenti çalışma zamanında gerçekleştirebilirsiniz.  

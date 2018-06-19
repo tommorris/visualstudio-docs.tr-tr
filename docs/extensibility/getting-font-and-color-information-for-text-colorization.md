@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129702"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Yazı tipi ve metin renklendirme için renk bilgilerini alma
 İşler veya kullanıcı arabirimini (UI) öğeleri renklendirilen metni görüntüleyen işlem proje, teknoloji ve geliştirici Tercihler türüne bağlıdır. **Yazı tiplerini ve renkleri** özellik sayfası ayarları depolar.

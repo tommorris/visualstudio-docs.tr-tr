@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267981"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement öğesi
 CommandPlacement öğesi düğmeleri, grupları ve menüleri birden fazla grup veya menü eklenmesini sağlar. CommandPlacement öğesini kullanarak, bir kullanıcı arabirimi görünümünü değiştirmek için bu öğeler tamamen yeniden tanımlamanız gerekmez.  

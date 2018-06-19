@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128254"
 ---
 # <a name="editor-factories"></a>Düzenleyici oluşturucuları
 Bir düzenleyici üreteci Düzenleyicisi nesneleri oluşturur ve bunları fiziksel bir görünüm olarak bilinen bir pencere çerçevesi koyar. Belge verileri ve düzenleyicileri ve tasarımcıları oluşturmak için gerekli olan belge görünümü nesneleri oluşturur. Bir düzenleyici üreteci, Visual Studio çekirdek Düzenleyicisi'ni ve herhangi bir standart Düzenleyicisi oluşturmak için gereklidir. Özel bir düzenleyici Ayrıca isteğe bağlı olarak bir düzenleyici üreteci ile oluşturulabilir.  

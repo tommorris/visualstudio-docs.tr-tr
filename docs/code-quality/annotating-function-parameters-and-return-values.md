@@ -132,6 +132,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900452"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
 Bu makalede tipik ek açıklamaları kullanımları basit işlev parametreleri — skalerler ve yapılar ve sınıflar işaretçileri — ve çoğu arabellek.  Bu makalede ayrıca ek açıklamalar için ortak kullanım desenlerini gösterilmektedir. İşlevler ilişkili ek açıklama için bkz: [işlev davranışını yorumlama](../code-quality/annotating-function-behavior.md)

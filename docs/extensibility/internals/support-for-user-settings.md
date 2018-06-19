@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134099"
 ---
 # <a name="support-for-user-settings"></a>Kullanıcı ayarları desteği
 Bir VSPackage grupları bir kullanıcı seçtiğinde kalıcı durum değişkenleri, bir veya daha fazla ayarları kategorileri tanımlayabilir **içeri/dışarı aktarma ayarları** komutunu **Araçları** menüsü. Bu Kalıcılık etkinleştirmek için ayarları API'leri kullanın, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -33,14 +34,14 @@ Bir VSPackage grupları bir kullanıcı seçtiğinde kalıcı durum değişkenle
      Her özel ayarları noktası ayrı bir sınıf tarafından uygulanır ve her benzersiz bir örneği tarafından kaydedilen çeşitli özel ayarları noktalar tek VSPackage destekliyorsa <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> sınıfı. Sonuç olarak, sınıf uygulama ayarlarını birden fazla ayarları kategorisi destekleyebilir.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Özel ayarlar noktası kayıt defteri girişi ayrıntıları  
- Özel ayarlar noktaları bir kayıt defteri girişi aşağıdaki konumda oluşturulur: HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >*\UserSettings\\`<CSPName>`, burada `<CSPName>` VSPackage destekler özel ayarları noktası adıdır ve  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 8.0.  
+ Özel ayarlar noktaları bir kayıt defteri girişi aşağıdaki konumda oluşturulur: HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\\`<CSPName>`, burada `<CSPName>` VSPackage destekler özel ayarları noktası adıdır ve  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 8.0.  
   
 > [!NOTE]
 >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio kök yolunu\\*\<sürüm >* alternatif ile geçersiz kılınabilir ne zaman kök [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) başlatıldı. Daha fazla bilgi için bkz: [komut satırı anahtarları](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Kayıt defteri girdisinin yapısı aşağıda gösterilmiştir:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >*\UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\  
   
  `<CSPName`> = '#12345' s  
   

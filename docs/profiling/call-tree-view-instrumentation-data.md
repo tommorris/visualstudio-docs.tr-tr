@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262237"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Çağrı ağacı görünümü - izleme verileri
 Bir işlev çağrısı ağacında değerlerini çağrısı ağacında üst işlevi tarafından çağrılan işlev örnekleri için zaman belirtin. Yüzde değerleri, toplam geçen dahil süre işlevi örneklerine profil çalıştırmada tüm işlevlerin değerini karşılaştırılmasıyla hesaplanır.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952621"
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 Bir öğe genellikle silinmesi, ilgili öğeler de silinecek neden olur. Tüm ilişkiler ona bağlı ve herhangi bir alt öğe silindi. Bu davranış adlı *yayma silme*. Örneğin ek ilgili öğeler silinir düzenlemek silme yayma özelleştirebilirsiniz. Program kodunda yazarak delete yayma model durumuna bağlıdır yapabilirsiniz. Bir silme işlemi için yanıt gerçekleşmesi diğer değişiklikler de neden olabilir.

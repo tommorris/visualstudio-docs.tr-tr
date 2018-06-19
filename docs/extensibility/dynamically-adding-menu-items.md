@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133288"
 ---
 # <a name="dynamically-adding-menu-items"></a>Dinamik menü öğeleri ekleme
 Menü öğeleri çalışma zamanında belirterek ekleyebileceğiniz `DynamicItemStart` menü sayısı (kodda) tanımlama görüntüleme ve komutlar işleme öğelerini sonra Visual Studio komut-tablo (.vsct) dosyası bir yer tutucu düğmesi tanımında bayrağı komutu. VSPackage yüklendiğinde, yer tutucu Dinamik menü öğeleri ile değiştirilir.  

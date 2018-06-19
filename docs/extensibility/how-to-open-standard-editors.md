@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129264"
 ---
 # <a name="how-to-open-standard-editors"></a>Nasıl yapılır: standart düzenleyicileri açın
 Standart Düzenleyici açtığınızda, dosya için bir proje özgü Düzenleyici belirtme yerine bir dosya türü için standart bir düzenleyici belirlemek IDE sağlar.  

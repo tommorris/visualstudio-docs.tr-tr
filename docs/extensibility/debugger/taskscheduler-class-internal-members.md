@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126770"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler sınıfı - iç üyeleri
 Bu konuda iç üyeleri açıklanmaktadır <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> yardımcı sınıf özel bir hata ayıklayıcı uygulama. Bu sınıf hakkında genel bilgi için bkz: <xref:System.Threading.Tasks.TaskScheduler> başvuru konusu.  

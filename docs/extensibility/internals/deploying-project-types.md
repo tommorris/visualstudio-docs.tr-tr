@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127983"
 ---
 # <a name="deploying-project-types"></a>Proje türleri dağıtma
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Yeni bir proje türü toplayıcısı (ProjectAggregator2.dll) ve aynı zamanda yeniden dağıtımı (ProjectAggregator2.msi) için bir Windows Installer paketi yükler. Yönetilen kod projesi türleri için yeni toplayıcısı kullanmanız gerekir. ProjectAggregator2 çalışır geçici çözüm sınırlamaları [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yönetilen kod proje türleri doğru çalışmasını engelleyebilir toplayıcısı proje. Aşağıdaki adımlarda, yeni Toplayıcı'yı kullanmak için VSPackage değiştirmek anlatılmaktadır.  

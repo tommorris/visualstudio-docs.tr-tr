@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136074"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>Nasıl yapılır: başka bir düzenleyici bir düzenleyicide ana bilgisayar
 Visual Studio'da bir üst pencere olarak barındırma penceresi belirterek içinde başka bir düzenleyici barındırabilir. Bunu yapmak için parametreleri ayarlayın <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> ve <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> alt pencere çerçevesi.  

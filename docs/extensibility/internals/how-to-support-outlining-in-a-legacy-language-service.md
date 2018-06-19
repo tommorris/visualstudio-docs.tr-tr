@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130251"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Nasıl yapılır: Destek eski dil hizmetinde anahat oluşturma
 Anahat oluşturma genişletmek veya metnin farklı bölgelerde daraltmak için kullanılır. Anahat oluşturma yolu kullanılır farklı diller tarafından farklı şekilde tanımlanabilir. Daha fazla bilgi için bkz: [anahat](../../ide/outlining.md).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131995"
 ---
 # <a name="checklist-creating-new-project-types"></a>Denetim listesi: Yeni proje türleri oluşturma
 Yeni bir proje türü oluşturmak için çeşitli görevleri tamamlamanız gerekir. Aşağıdaki denetim listesinde, bu görevleri için bir kılavuz sağlar.  

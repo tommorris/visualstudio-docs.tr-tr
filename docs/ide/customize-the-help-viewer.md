@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923845"
 ---
 # <a name="customize-the-help-viewer"></a>Yardım Görüntüleyicisi'ni özelleştirme
 Yazı tipi boyutu, en fazla sonuç sayısını ve İngilizce içerik dahil edilip edilmeyeceğini gibi diğer seçenekleri yanı sıra, Yardım Görüntüleyici windows düzenini özelleştirebilirsiniz.

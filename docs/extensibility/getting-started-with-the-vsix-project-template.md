@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129199"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>VSIX proje şablonu ile çalışmaya başlama
 Uzantı oluşturmak veya var olan uzantı dağıtımı için paketi için VSIX proje şablonu kullanabilirsiniz. VSIX proje şablonu sürümler hem Visual Basic ve Visual C# ve Visual Studio SDK'sı bir parçası olarak yüklenir.  
@@ -35,7 +36,7 @@ Uzantı oluşturmak veya var olan uzantı dağıtımı için paketi için VSIX p
   
     2.  Üzerinde **proje** menüsünde tıklatın **şablonu dışarı aktar**. Sihirbazın adımlarını tamamlayın.  
   
-         Bir .zip dosyası %USERPROFILE%\My Documents\Visual Studio oluşturulur  *\<sürüm >*\My dışa aktarılan şablonları\\.  
+         Bir .zip dosyası %USERPROFILE%\My Documents\Visual Studio oluşturulur  *\<sürüm >* \My dışa aktarılan şablonları\\.  
   
 2.  Boş bir VSIX projesi oluşturun.  
   

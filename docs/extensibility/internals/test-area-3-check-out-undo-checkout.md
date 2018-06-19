@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134971"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Test alanı 3: Kullanıma / kullanıma almayı geri al
 Bu kaynak denetimi eklenti test alanını sürüm deposu düzenleme ve dönüştürülüyor öğelerinden kapsayan **kullanıma** ve **geri ödeme** komutları.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126883"
 ---
 # <a name="icon-element"></a>Icon öğesi
 Simge etiketinin GUID özniteliği tanımlı bir bit eşlem GUID'dir.  ID özniteliği yuva bit eşlem şeridinde seçer. Bu öğe isteğe bağlıdır.  Bu öğe atlanırsa değerini **guidOfficeIcon:msotcidNoIcon** kapsanan.  

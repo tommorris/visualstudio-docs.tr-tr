@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923435"
 ---
 # <a name="saving-data"></a>Verileri Kaydetme
 Verileri kaydetme kalıcı yapma işlemi verileri bir uygulamanın veri modelindeki geri özgün veri deposu genellikle bir ilişkisel veritabanı SQL Server gibi değiştirildi olur.

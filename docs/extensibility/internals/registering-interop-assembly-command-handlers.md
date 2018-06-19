@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131916"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Birlikte çalışma derlemesi komut işleyicileri kaydetme
 Bir VSPackage ile kaydetmeniz gerekir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] böylece tümleşik geliştirme ortamı (IDE) kendi komutları düzgün şekilde yönlendirir.  
@@ -30,7 +31,7 @@ Bir VSPackage ile kaydetmeniz gerekir [!INCLUDE[vsprvs](../../code-quality/inclu
  [Komut tablo biçimi başvurusu](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) kaynakları yönetilmeyen uydu UI DLL'ler bulunur.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Bir VSPackage komut işleyici kaydı  
- Kullanıcı Arabirimi (UI) için bir işleyici olarak davranan bir VSPackage-tabanlı komutlar gerektirir sonra VSPackage adlı bir kayıt defteri girdisi `GUID`. Bu kayıt defteri girdisi VSPackage'nın UI kaynak dosyası ve bu dosyanın içindeki menüsü kaynak konumunu belirtir. Kayıt defteri girdisini HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio altında bulunan\\*\<sürüm >*\Menus, burada  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 9.0.  
+ Kullanıcı Arabirimi (UI) için bir işleyici olarak davranan bir VSPackage-tabanlı komutlar gerektirir sonra VSPackage adlı bir kayıt defteri girdisi `GUID`. Bu kayıt defteri girdisi VSPackage'nın UI kaynak dosyası ve bu dosyanın içindeki menüsü kaynak konumunu belirtir. Kayıt defteri girdisini HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio altında bulunan\\*\<sürüm >* \Menus, burada  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 9.0.  
   
 > [!NOTE]
 >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio kök yolunu\\*\<sürüm >* alternatif ile geçersiz kılınabilir ne zaman kök [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kabuk başlatılır. Kök yolu hakkında daha fazla bilgi için bkz: [yükleme VSPackages ile Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  

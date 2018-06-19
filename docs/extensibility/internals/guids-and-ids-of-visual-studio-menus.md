@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134220"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID ve Visual Studio menü kimlikleri
 Bu konuda menüleri ve Visual Studio menü çubuğunda grupları GUID ve ID değerlerini numaralandırır. Bu değerler, Visual Studio SDK'sı bir parçası olarak yüklenen .vsct dosyalar içinde tanımlanır. Daha fazla bilgi için bkz: [IDE-Defined komutlar, menüler ve grupları](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

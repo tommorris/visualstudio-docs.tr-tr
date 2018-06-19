@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126903"
 ---
 # <a name="security-issues"></a>Güvenlik sorunları
 Visual Studio kullanarak bir program hata ayıklamak için gereken tek izinleri olanları programı çalıştırmak için geliştiricinin ihtiyacı aynıdır. Bu, çoğu durumlarda (Internet bilgi hizmeti gibi başka hizmetleri içeren bazı durumlarda izinler daha yüksek düzeyde gerektirebilir) uzaktan hata ayıklama içerir.  

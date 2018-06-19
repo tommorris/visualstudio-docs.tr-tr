@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135546"
 ---
 # <a name="extending-user-settings-and-options"></a>Genişletme kullanıcı ayarları ve seçenekleri
 Visual Studio'da kullanıcı tercihlerini korumak için başlıca iki yolu vardır. **Araçlar / Seçenekler** sayfaları ayarları, hem genel hem de dile özgü birçok farklı türde için kendi değerlerini ayarlamak kullanıcıların olanak tanır. Kullanıcı ayarları genel Visual Studio yapılandırma özelliklerini belirtmek kullanıcılardan izin verir. Seçenekler sayfaları hakkında daha fazla bilgi için bkz: [seçenekleri ve seçenekleri sayfaları](../extensibility/internals/options-and-options-pages.md). Kullanıcı ayarları hakkında daha fazla bilgi için bkz: [kullanıcı ayarları desteği](../extensibility/internals/support-for-user-settings.md).  

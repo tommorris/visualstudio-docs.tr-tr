@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129212"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Birden çok proje bağlantılar üzerinden ayarları uygulama
 Kaynak Denetim Eklentisi Kaynak Denetim eklentisi API 1.2 kullanılarak oluşturulan bir toplu işlem birden çok projeleri veya birden çok bağlantı bağlamları arasında aynı kaynak denetimi işlemi yürütmek için kullanabilirsiniz. Toplu kullanılabilir yedek ortadan kaldırmak için her proje için kullanıcı deneyimini iletişim kutularından.  

@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133716"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlam kullanın
 Visual Studio VSPackages belirli zaman yüklenmesini sağlar iyi bilinen <xref:Microsoft.VisualStudio.Shell.UIContext>s etkinleşir. Ancak, bu UI bağlamları düzey, hiçbir tercih uzantısı yazarlar bırakarak çok iyi değildir ancak noktasından önce etkinleştirir kullanılabilir bir UI bağlamı seçmek için gerçekten yüklemek için VSPackage istedikleri. İyi bilinen UI bağlamları listesi için bkz: <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  

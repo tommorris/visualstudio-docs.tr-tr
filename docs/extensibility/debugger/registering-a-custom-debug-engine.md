@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126294"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Bir özel hata ayıklama altyapısı kaydetme
 Hata ayıklama altyapısı gerekir kendisini COM kurallarına uygun bir sınıf fabrikası kaydetmek yanı sıra Visual Studio kayıt defteri alt anahtarı Visual Studio ile kaydedin.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126706"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Otomatik bir eski dil hizmetinde biçimlendirme
 Bir kullanıcı bir bilinen kod yapı türüne başladığında otomatik biçimlendirme dil hizmeti otomatik olarak bir kod parçacığını ekler.  

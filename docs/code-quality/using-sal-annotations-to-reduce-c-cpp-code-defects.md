@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921717"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
 SAL Microsoft kaynak kodu ek açıklama dilidir. Kaynak kodu ek açıklamaları kullanılarak, hedefi kodunuzu açık yapabilirsiniz. Bu ek açıklamaları da kodunuzu daha doğru bir şekilde önemli ölçüde daha az sayıda hatalı pozitif sonuç ve false negatif ile analiz etmek otomatik statik çözümleme araçları sağlar.

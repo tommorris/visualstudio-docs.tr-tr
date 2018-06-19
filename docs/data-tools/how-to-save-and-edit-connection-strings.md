@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916911"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Nasıl Yapılır: Bağlantı Dizelerini Kaydetme ve Düzenleme
 Visual Studio uygulama bağlantı dizeleri (uygulama ayarları da bilinir) uygulama yapılandırma dosyasında kaydedilen veya doğrudan uygulamanızda sabit kodlanmış. Uygulama yapılandırma dosyasında bağlantı dizelerini kaydetme uygulamanızı sürdürme görevini basitleştirir. Ardından bağlantı dizesi değiştirilmesi gerekiyorsa, (kaynak kodunda değiştirin ve uygulamayı yeniden derlemenize gerek kalmadan) aksine uygulama ayarları dosyasında güncelleştirebilirsiniz.

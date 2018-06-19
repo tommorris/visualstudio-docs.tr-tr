@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127249"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Nasıl yapılır: metin arabelleği olayları eski API ile kaydetme
 Eski API kullanarak metin arabelleği erişiyorsanız, aşağıdaki yordamda gösterildiği gibi metin arabelleği olayları için kaydetmelisiniz.  

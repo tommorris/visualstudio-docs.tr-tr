@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126077"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Özellikler ve özellik penceresi genişletme
 **Özellikleri** penceresini görüntülemek ve tasarım zamanı özellikleri ve olayları seçili nesnelerin düzenlemek için kullanılır.  

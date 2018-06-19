@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129006"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>İç içe geçmiş projeleri için işleme komutu uygulama
 IDE geçirilecek komutları geçirebilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> iç içe geçmiş projeleri veya üst projeleri arabirimlerine filtreleyebilir veya komutlarını geçersiz kıl.  

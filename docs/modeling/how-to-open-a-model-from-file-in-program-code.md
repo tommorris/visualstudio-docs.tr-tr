@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949834"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
 Herhangi bir uygulamada DSL modelleri açabilirsiniz.

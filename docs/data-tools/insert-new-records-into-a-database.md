@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922659"
 ---
 # <a name="insert-new-records-into-a-database"></a>Bir veritabanına yeni kayıtlar ekleme
 Bir veritabanına yeni kayıtlar eklemek için kullanabileceğiniz `TableAdapter.Update` yöntemi ya da bir TableAdapter'ın DBDirect yöntemleri (özellikle `TableAdapter.Insert` yöntemi). Daha fazla bilgi için bkz: [TableAdapter](../data-tools/create-and-configure-tableadapters.md).

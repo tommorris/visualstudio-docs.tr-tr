@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127754"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Dizinleri ekleme yeni öğe Ekle iletişim kutusu
 Aşağıdaki kod örneğinde nasıl dizinler için yeni bir dizi kaydedileceği gösterilmektedir **Yeni Öğe Ekle** iletişim kutusu. Dizinler için **Yeni Öğe Ekle** iletişim kutusunda her proje için farklıdır. Bu nedenle, bulunan projeleri alt anahtarının altındaki dizinleri kayıtlı \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  

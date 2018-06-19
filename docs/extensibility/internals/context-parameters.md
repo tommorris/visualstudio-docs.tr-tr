@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132110"
 ---
 # <a name="context-parameters"></a>Bağlam parametreleri
 İçinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), sihirbazlara ekleyebilirsiniz **yeni proje**, **Yeni Öğe Ekle**, veya **alt proje Ekle** iletişim kutuları. Eklenen sihirbazları kullanılabilir **dosya** menüsü veya bir projeye sağ tıklanarak **Çözüm Gezgini**. IDE bağlam parametreleri Sihirbazı'nın kullanımla geçirir. IDE sihirbaz çağırdığında bağlam parametreleri proje durumunu tanımlayın.  

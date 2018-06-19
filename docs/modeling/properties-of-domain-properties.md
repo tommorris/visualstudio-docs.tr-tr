@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951446"
 ---
 # <a name="properties-of-domain-properties"></a>Etki Alanı Özelliklerinin Özellikleri
 A *etki alanı özelliği* değer tutan bir model öğesi, bir özelliğidir. Örneğin, `Person` etki alanı sınıf özellikleri vardır `Name` ve `BirthDate`. DSL tanımı'nda, etki alanı özellikleri etki alanı sınıfı kutusunda diyagramında ve etki alanı sınıfı DSL Explorer'da altında listelenir. Daha fazla bilgi için bkz: [bir etki alanına özgü dil tanımlamak nasıl](../modeling/how-to-define-a-domain-specific-language.md).

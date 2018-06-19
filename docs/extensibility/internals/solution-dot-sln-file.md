@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133412"
 ---
 # <a name="solution-sln-file"></a>Çözüm (. Sln) dosyası
 Bir çözüm, Visual Studio projelerinde düzenlemek için bir yapıdır. Çözüm .sln (metin tabanlı, paylaşılan) ve (ikili, kullanıcıya özgü çözüm seçenekleri) .suo dosyaları projeler için durum bilgisini tutar. .Suo dosyaları hakkında daha fazla bilgi için bkz: [çözüm kullanıcı seçenekleri (. Suo) dosya](../../extensibility/internals/solution-user-options-dot-suo-file.md).  

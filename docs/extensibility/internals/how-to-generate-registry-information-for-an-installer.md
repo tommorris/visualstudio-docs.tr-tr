@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131880"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Nasıl yapılır: bir yükleyici için kayıt defteri bilgilerini oluştur
 RegPkg.exe yardımcı programı, yönetilen VSPackage için bir kayıt bildirimi oluşturmak için kullanılabilir. Windows Installer kurulum pakete bildirim birleştirilebilir. RegPkg de üretebilir temel kurulum kaynak dosyasında bulunan bir dosya [Windows Installer XML araç takımı](http://go.microsoft.com/fwlink/?LinkId=62238).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922342"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimini ayarlama
 Verilere bağlı denetimler konumundan öğeleri sürükleyerek oluşturabileceğiniz **veri kaynakları** WPF Tasarımcısı veya Windows Form Tasarımcısı penceresinde. Her öğe **veri kaynakları** penceresinde Designer'a sürüklediğinizde oluşturulan bir varsayılan denetim vardır. Ancak, farklı bir denetim oluşturmak seçebilirsiniz.

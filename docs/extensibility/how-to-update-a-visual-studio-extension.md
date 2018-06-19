@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134688"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Nasıl yapılır: Visual Studio uzantısı güncelleştir
 Kullanarak bir Visual Studio uzantısı sisteminizde güncelleştirebilirsiniz **Uzantılar ve güncelleştirmeler** güncelleştirilmiş sürümünü yüklemek için. Uzantı güncelleştirilmiş bir sürümünü oluşturursanız, belirtmek VSIX bildiriminde sürüm numarası artırılarak güncelleştirilmiş gibi.  

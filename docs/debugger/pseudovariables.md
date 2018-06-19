@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926842"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında sözde değişkenler
 Sözde değişkenler olan bir değişken penceresinde belirli bilgileri görüntülemek için kullanılan terimler veya **QuickWatch** iletişim kutusu. Normal bir değişken girersiniz aynı şekilde bir pseudovariable girebilirsiniz. Sözde değişkenler değil değişkenleri, ancak ve değişken adlarıyla programınızdaki karşılık.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34476888"
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı kullanarak yönetilen kod ile hata ayıklama
 

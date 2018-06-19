@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917074"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms uygulamalarında arama tabloları oluşturma
 Terim *arama tablosu* iki ilgili veri tablolarına bağlı denetimler açıklanmıştır. Bu arama denetimleri ikinci tabloda seçilen bir değere göre ilk tablodan veri görüntüler.

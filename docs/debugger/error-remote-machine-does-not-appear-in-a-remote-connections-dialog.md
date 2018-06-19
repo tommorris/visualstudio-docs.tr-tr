@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471339"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Hata: Uzak makine uzak bağlantıları iletişim kutusunda görünmüyor
 Uzak makine uzak bağlantıları iletişim kutusunda görünmüyorsa, aşağıdaki ortak nedenleri kontrol edin.  

@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473744"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Nasıl Yapılır: RPC Hata Ayıklamasını Kullanarak COM İstemcilerinde ve Sunucularda Hata Ayıklama
 COM istemci/sunucu uygulamalarının hata ayıklamak için uzak yordam çağrısı (RPC) hata ayıklama'ı kullanabilirsiniz. RPC kullanmak için hata ayıklama etkinleştirmeniz gerekir. RPC etkin ayıklama, ne zaman, istemci, hata ayıklayıcı sunucu çağrısından adımla sunucuya ekler ve kendi kodda hata ayıklama olanak tanır. Hata ayıklayıcı eklendiğinde, tüm hata ayıklama özellikleri ile istemci ve sunucu işlemlerini kullanabilirsiniz.  

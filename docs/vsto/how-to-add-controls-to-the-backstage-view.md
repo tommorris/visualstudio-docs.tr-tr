@@ -28,6 +28,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549083"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Nasıl yapılır: Backstage görünümüne denetimler ekleme
   ' I tıklattığınızda, açılan menüye denetim eklemek için Şerit Tasarımcısını kullanabilirsiniz **dosya** sekmesi. Uygulama için ekleme denetimlerini çalıştırdığınızda **dosya** sekmesi görünür adlı bir grup **eklentileri**.  

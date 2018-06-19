@@ -18,6 +18,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33956925"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Nasıl yapılır: bir Microsoft Office belgesine sınıf diyagramı öğeleri kopyalama
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135980"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Görsel tasarımcılar türlerine gösterme
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sınıf ve tür tanımları tasarım zamanında bir görsel tasarımcı görüntülemek için erişiminiz olmalıdır. Sınıflar (başvuruları ve bağımlılıklarını) geçerli projenin tamamını bağımlılık kümesini içeren derlemeler önceden tanımlanmış kümesinden yüklenir. Ayrıca visual tasarımcıları için gerekli erişim sınıfları ve özel araçları tarafından oluşturulan dosyalarda tanımlı türleri olabilir.  

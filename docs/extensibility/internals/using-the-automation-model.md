@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136544"
 ---
 # <a name="using-the-automation-model"></a>Otomasyon modelini kullanma
 Otomasyon için VSPackage bağlandıktan sonra özellikleri ve yöntemleri çağırarak elde edebileceğiniz <xref:EnvDTE.DTEClass.GetObject%2A> yöntemi <xref:EnvDTE._DTE> nesnesi, almak istediğiniz nesnesini temsil eden bir dizeye geçiliyor.  

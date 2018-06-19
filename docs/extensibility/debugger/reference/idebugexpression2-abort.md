@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31111244"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 Bu yöntem için yapılan bir çağrı tarafından başlatılmış olarak zaman uyumsuz ifade değerlendirme iptal [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) yöntemi.  

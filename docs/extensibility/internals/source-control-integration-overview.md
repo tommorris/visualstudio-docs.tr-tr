@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135185"
 ---
 # <a name="source-control-integration-overview"></a>Kaynak denetimi tümleştirmesine genel bakış
 Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki yol karşılaştırır; Kaynak denetimi eklenti ve yeni kaynak denetimi özellikleri vurgular ve kaynak denetimi çözümü sağlayan bir VSPackage. Visual Studio kaynak denetimi VSPackages ve kaynak denetimi eklentiler arasında elle değiştirme yanı sıra çözüm tabanlı otomatik geçiş yapmanın sağlar.  

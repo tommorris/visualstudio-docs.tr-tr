@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135374"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Nasıl yapılır: kullanıma nesnesi Yöneticisi kitaplığı tarafından sağlanan simgelerin listeler
 Simgenin tarama araçları **sınıf görünümü**, **Nesne Tarayıcısı**, **çağrısı tarayıcı** ve **Bul simgesi sonuçlarınızı**, yeni veri isteklerini iletmek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi. Nesne Yöneticisi'ni uygun kitaplıkları bulur ve simgelerin yeni listeler ister. İstenen veri sağlayarak kitaplıkları yanıt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi üzerinden <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi'ni çağrıları yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> verileri elde etmek için arabirim ve doldurmak veya simgenin tarama araçları görünümlerini güncelleştirmek için kullanır.  

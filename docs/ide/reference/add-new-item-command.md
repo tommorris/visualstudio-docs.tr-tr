@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705053"
 ---
 # <a name="add-new-item-command"></a>Yeni Öğe Ekle Komutu
 Geçerli çözüme bir .htm, .css, .txt veya çerçeve gibi yeni bir çözüm öğesi ekler ve açar.

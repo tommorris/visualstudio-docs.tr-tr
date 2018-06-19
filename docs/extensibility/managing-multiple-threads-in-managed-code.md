@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139672"
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>Nasıl yapılır: yönetilen kod birden çok iş parçacığı yönetme
 Visual Studio kullanıcı Arabirimi iş parçacığı dışında iş parçacığı yürütmek işlemlerini zaman uyumsuz yöntemleri çağırır veya yönetilen bir VSPackage uzantısı varsa, aşağıda verilen yönergeleri izlemelidir. Tamamlamak için başka bir iş parçacığında iş için beklenecek gerekmez çünkü kullanıcı Arabirimi iş parçacığı yanıt verebilir durumda kalmasını sağlayabilir. Yığın yer kaplar ek iş parçacığı olmadığından, kodunuzu daha verimli hale getirebilir ve daha güvenilir ve kilitlenmeler ve askıda önlemek için hata ayıklama kolay yapabilirsiniz.  

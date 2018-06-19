@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141102"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Windows Installer ile VSPackage kaldırma
 Çoğunlukla, Windows Installer, VSPackage yalnızca göre kaldırabilirsiniz ", VSPackage yüklemek için yaptığınız geri alma". Özel Eylemler ele [komutları olduğunu gerekir olması çalıştırmak sonra yükleme](../../extensibility/internals/commands-that-must-be-run-after-installation.md) bir kaldırma işleminden sonra çalıştırılmalıdır. Yükleme ve kaldırma olmadığı Installfinalize standart eylem hemen önce devenv.exe çağrıları gerçekleştirildiği için özel ve InstallExecuteSequence tablosu girdileri her iki durumda hizmet.  

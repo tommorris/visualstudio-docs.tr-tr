@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464842"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Özel Görselleştiriciler veri oluşturma
  Görselleştiriciler olan bileşenleri [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] hata ayıklayıcı kullanıcı arabirimi. A *görselleştiricisi* bir iletişim kutusu veya bir değişken veya nesne veri türü için uygun bir şekilde görüntülemek için başka bir arabirim oluşturur. Örneğin, bir HTML Görselleştirici bir HTML dizesi olarak yorumlar ve sonucu bir tarayıcı penceresinde görüneceği şekilde görüntüler; bit eşlem Görselleştirici bir bit eşlem yapısı yorumlar ve onu gösteren grafiği görüntüler. Bazı görselleştiriciler yanı sıra değiştirme verileri görüntülemek etkinleştirin.

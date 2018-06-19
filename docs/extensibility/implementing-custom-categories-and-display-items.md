@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134889"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Uygulama özel kategoriler ve öğeleri görüntüleme
 Bir VSPackage denetim yazı tiplerini ve renkleri, metin sağlayabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] özel kategoriler ve öğeleri görüntüleme aracılığıyla tümleşik geliştirme ortamı (IDE).
@@ -47,7 +48,7 @@ Bir VSPackage denetim yazı tiplerini ve renkleri, metin sağlayabilir [!INCLUDE
 
 ## <a name="to-create-or-identify-categories"></a>Oluşturma veya kategorileri tanımlamak için
 
--   Özel türde bir kategori kayıt defteri girişi altında oluşturmak [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >*\FontAndColors\\`<Category>`]
+-   Özel türde bir kategori kayıt defteri girişi altında oluşturmak [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >* \FontAndColors\\`<Category>`]
 
      *\<Kategori >* kategorisi yerelleştirilmemiş adıdır.
 
@@ -62,7 +63,7 @@ Bir VSPackage denetim yazı tiplerini ve renkleri, metin sağlayabilir [!INCLUDE
 
 ## <a name="to-create-or-identify-groups"></a>Gruplar oluşturma veya tanımlamak için
 
--   Özel türde bir kategori kayıt defteri girişi altında oluşturmak [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >*\FontAndColors\\  *\<grup >*]
+-   Özel türde bir kategori kayıt defteri girişi altında oluşturmak [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >* \FontAndColors\\  *\<grup >*]
 
      *\<Grup >* yerelleştirilmemiş grubunun adıdır.
 

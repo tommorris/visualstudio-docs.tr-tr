@@ -1,19 +1,20 @@
 ---
-title: "byteLength özelliği (DataView) | Microsoft Docs"
-ms.custom: 
+title: byteLength özelliği (DataView) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 6274285f-b673-48f6-a1e7-89ff7ee348b5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788921"
 ---
 # <a name="bytelength-property-dataview"></a>byteLength Özelliği (DataView)
 Salt okunur. Bu görünümün oluşturma zamanında sabitlendiği gibi ArrayBuffer'ın başından itibaren bayt cinsinden uzunluğu.  

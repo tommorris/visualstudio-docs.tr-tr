@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140426"
 ---
 # <a name="when-to-create-project-types"></a>Proje türleri oluşturma zamanı
 Yeni proje türü oluşturma sağlayan bir temel özelleştirmek için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcılarınız için. Ancak, yeni bir proje türü oluşturulması için tüm gerekli değildir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] özelleştirmeleri. Aşağıdaki yönergeler yeni bir proje türü senaryonuz için gerekip gerekmediğini belirlemenize yardımcı olmalıdır.  

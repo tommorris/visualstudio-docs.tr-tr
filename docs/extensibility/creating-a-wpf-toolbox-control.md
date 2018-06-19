@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107809"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>WPF araç kutusu denetimi oluşturma
 WPF (Windows Presentation Framework) araç kutusu denetim şablonu, otomatik olarak eklenir WPF denetimleri oluşturmanıza olanak tanır **araç** uzantısı yüklü olduğunda. Bu konuda şablonu oluşturmak için nasıl kullanılacağı gösterilmektedir bir **araç** denetim diğer kullanıcılara dağıtabilirsiniz.  

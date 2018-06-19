@@ -265,6 +265,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865328"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Checkıd tarafından yönetilen kod için Kod Analizi uyarıları
 

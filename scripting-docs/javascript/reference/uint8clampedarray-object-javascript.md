@@ -1,19 +1,20 @@
 ---
 title: Uint8ClampedArray nesnesi (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 0c5537f7-00b4-487a-8fba-ef032e67e7bd
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792167"
 ---
 # <a name="uint8clampedarray-object-javascript"></a>Uint8ClampedArray nesnesi (JavaScript)
 8 bit işaretsiz tamsayı aralığı 0-255 clamped değerlerle belirlenmiş bir dizi. İçerikler 0 olarak başlatılır. İstenen bayt sayısı ayrılamıyor, özel durum oluşur.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134997"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Eski dil hizmeti uygulama
 Yönetilen paket framework (MPF) kullanarak bir dil hizmet uygulamak için öğesinden bir sınıf türetin <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı ve aşağıdaki soyut yöntemler ve özellikler uygular:  

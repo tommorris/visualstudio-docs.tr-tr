@@ -1,12 +1,13 @@
 ---
-title: "Değişken kapsamı (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Değişken kapsamı (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789116"
 ---
 # <a name="variable-scope-javascript"></a>Değişken Kapsamı (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]iki kapsamına sahiptir: Genel ve yerel. Bir işlev tanımı dışında bildirilmiş bir değişken genel bir değişkendir ve değerini erişilebilir ve programınızı boyunca değiştirilebilir. Bir işlev tanımı içinde bildirilen bir yerel değişkendir. Oluşturulan ve işlev yürütülür ve işlev dışındaki herhangi bir kod tarafından erişilemez her zaman yok. JavaScript blok kapsamı desteklemez (kaydedileceği küme ayraçları kümesi `{. . .}` yeni bir kapsam tanımlar), hariç blok kapsamlı değişkenler özel durumda.  

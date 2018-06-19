@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134753"
 ---
 # <a name="automation-model-overview"></a>Otomasyon modeline genel bakış
 Otomasyon modeli karşı bir Visual Studio eklentisi veya uzantı yazabilirsiniz nesneler kümesinden oluşur. Bir eklenti, Visual Studio ortamı yönetmek ve ortak görevleri otomatik hale getirmek bir uygulamadır. Visual Studio uzantısı özel Visual Studio bileşenlerini oluşturmak veya metin düzenleyici gibi standart bileşenlerin işlevselliğini ekleyin.  

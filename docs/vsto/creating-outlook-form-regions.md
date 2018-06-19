@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265556"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook form bölgeleri oluşturma
   Form bölgeleri, Microsoft Office Outlook formları özelleştirmek için kullanabilirsiniz. Visual Studio tasarlama, geliştirme ve form bölgeleri hata ayıklama kolaylaştıran gelişmiş araçlar sağlar.  

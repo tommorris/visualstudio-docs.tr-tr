@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474901"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic'de Durdur Deyimleri
 Visual Basic Stop deyimi bir kesme noktası ayarlama için programlı bir alternatif sunar. Hata ayıklayıcı Stop deyimi karşılaştığında (kesme moduna girer) programın yürütülmesini keser. C# programcıları System.Diagnostics.Debugger.Break yapılan bir çağrı kullanılarak aynı sonucu elde edebilirsiniz.  

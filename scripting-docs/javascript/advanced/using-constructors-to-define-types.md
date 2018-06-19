@@ -1,12 +1,13 @@
 ---
-title: "Türler tanımlamak için oluşturucular kullanma | Microsoft Docs"
-ms.custom: 
+title: Türler tanımlamak için oluşturucular kullanma | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -19,7 +20,7 @@ helpviewer_keywords:
 - objects, creating [JavaScript]
 - constructors, creating
 ms.assetid: e869702e-4caf-4513-8dd5-fe690535f8aa
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788822"
 ---
 # <a name="using-constructors-to-define-types"></a>Türler Tanımlamak için Oluşturucular Kullanma
 Bir oluşturucu belirli bir tür oluşturan bir işlevdir [nesne](../../javascript/objects-and-arrays-javascript.md). Bir oluşturucu çağırma **yeni** anahtar sözcüğü. Yerleşik JavaScript nesnelerine ve özel nesnelere sahip oluşturucu örneklerinden bazıları verilmiştir.  

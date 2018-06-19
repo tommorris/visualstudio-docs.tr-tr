@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107952"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Temel Proje sistem oluşturma, bölüm 2
 Bu serideki ilk izlenecek [temel bir proje sistem bölümü 1 oluşturma](../extensibility/creating-a-basic-project-system-part-1.md), temel proje sistem oluşturulacağını gösterir. Bu kılavuz, Visual Studio şablonu, bir özellik sayfası ve diğer özellikleri ekleyerek temel proje sistemde oluşturur. Bu yüklemeye başlamadan önce ilk izlenecek tamamlamanız gerekir.  

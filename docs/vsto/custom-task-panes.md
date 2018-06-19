@@ -33,6 +33,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548589"
 ---
 # <a name="custom-task-panes"></a>Özel görev bölmeleri
   Görev bölmeleri genellikle bir tarafa bir Microsoft Office uygulamasında penceresinin yerleştirilmiş kullanıcı arabirimi bölmeleri sunulmuştur. Özel görev bölmeleri kendi görev bölmesi oluşturmak ve kullanıcıların çözümünüzün özelliklerine erişmek için tanıdık bir arabirim sağlamak için bir yol sağlar. Örneğin, arabirim belgelerini değiştirme veya bir veri kaynağından görüntülemek için kodu çalıştırma denetimlerini içerebilir.  

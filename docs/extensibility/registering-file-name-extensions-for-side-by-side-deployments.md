@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136316"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Yan yana dağıtımlar için dosya adı uzantılarını kaydetme
 Yan yana bir ortamda dağıtılan VSPackages için dosyaların doğru sürümü ile ilişkilendirmek için dosya adı uzantılarını kaydetmelisiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sürüme özgü dosya adı uzantısı kullanmıyorsanız, kullanıcıların projenizi açın ve uygun sürümünü öğesi dosyalarında proje kaydını etkinleştirir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

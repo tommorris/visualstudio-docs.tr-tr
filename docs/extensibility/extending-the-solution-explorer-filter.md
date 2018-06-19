@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135525"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Çözüm Gezgini filtre genişletme
 Genişletebilirsiniz **Çözüm Gezgini** filtre farklı dosyaları gösterme veya gizleme için işlevselliği. Örneğin, yalnızca C# sınıfı Fabrika dosyalarını gösteren bir filtre oluşturabilirsiniz **Çözüm Gezgini**gibi Bu anlatımda gösterilir.  

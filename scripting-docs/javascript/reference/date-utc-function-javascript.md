@@ -1,13 +1,13 @@
 ---
-title: "Date.UTC işlevi (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Date.UTC işlevi (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - UTC
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - UTC dates, returning
 - Date.UTC function [JavaScript]
 ms.assetid: c0d67ce1-a47e-4dfd-bbf4-21619c406a0f
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24790415"
 ---
 # <a name="dateutc-function-javascript"></a>Date.UTC İşlevi (JavaScript)
 Gece yarısından, 1 Ocak 1970'ten arasındaki milisaniye sayısını döndürür (veya GMT) Evrensel Eşgüdümlü saate (UTC) ve belirtilen tarih.  

@@ -1,13 +1,13 @@
 ---
 title: NaN sabiti (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - NaN Property
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - NaN property
 - NaN property (global)
 ms.assetid: d57d52ab-81e2-42a5-9360-99a489eb9406
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791117"
 ---
 # <a name="nan-constant-javascript"></a>NaN Sabiti (JavaScript)
 ThatNot bir ifade belirtir özel bir sabit bir sayı değil.  

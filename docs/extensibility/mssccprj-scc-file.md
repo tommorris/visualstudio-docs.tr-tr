@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139357"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC dosyası
 Visual Studio çözüm ya da proje IDE kullanarak kaynak denetimi altında yerleştirildiğinde, IDE iki temel bilgiler dizeleri formunda eklenti kaynak denetiminden alır. "AuxPath" ve "ProjName" Bu dizeler IDE opak, ancak bunlar eklenti tarafından sürüm denetimindeki proje ve çözüm bulmak için kullanılır. IDE genellikle bu dizeler ilk kez çağırarak edinir [SccGetProjPath](../extensibility/sccgetprojpath-function.md), ve ardından bunları sonraki çağrılar için çözüm ya da proje dosyasında kaydeder [SccOpenProject](../extensibility/sccopenproject-function.md). Bir kullanıcı, çatallarını, dallandırır ya da sürüm denetimindeki çözüm ve proje dosyalarını kopyalar çözüm ve proje dosyalarında yerleşik "AuxPath" ve "ProjName" dizelerini otomatik olarak güncelleştirilmez. Çözüm ve proje dosyalarını doğru konumlarına sürüm denetimindeki işaret ettiğinden emin olmak için kullanıcılar dizeleri el ile güncelleştirmelisiniz. Dizeleri donuk olma amacını taşır olduğundan, bu her zaman nasıl güncelleştirileceği Temizle olmayabilir.  

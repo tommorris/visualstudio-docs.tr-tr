@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135358"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>İlgili hizmet ve arabirimi (kaynak denetimi VSPackage)
 Bu bölümde tüm Kaynak Denetim VSPackage ilgili arabirimlerde listeler [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kaynak denetimi VSPackage bazı bu arabirimlerini uygular ve diğerleri kaynak denetimi görevlerini gerçekleştirmek için kullanır.  

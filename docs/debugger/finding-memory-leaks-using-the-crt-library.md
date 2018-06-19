@@ -36,6 +36,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477868"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT Kitaplığını Kullanarak Bellek Sızıntılarını Bulma
 Bellek sızıntıları, doğru önceden ayrılmış olan bellek ayırması hata olarak tanımlanan en ince ve sabit algılamak hataların C/C++ uygulamalarında arasındadır. Küçük bellek sızıntısı konumundaki ilk ancak zamanla fark edilmesi değil, aşamalı bellek sızıntısı belirtiler bu aralık performansın bellek yetersiz uygulamayı çalıştırdığında, kilitlenen için neden olabilir. Da kötüsü, tüm kullanılabilir bellek kullanan leaking bir uygulamayı Karışıklığı önlemek için hangi uygulama sorumludur oluşturma kilitlenme başka bir uygulamanın neden olabilir. Hatta görünen zararsız bellek sızıntıları düzeltilmesi diğer sorunlarını belirtisi olabilir.  

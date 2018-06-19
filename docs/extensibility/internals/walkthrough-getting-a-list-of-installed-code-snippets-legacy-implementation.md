@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141359"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>İzlenecek yol: yüklenen kod parçacıkları (eski uygulama) listesini alma
 Kod parçacığı kaynak arabelleğe (veren yüklü kod parçacıkları listesini seçme) menü komutu ile ya da eklenebilir kod parçasıdır parçacığı kısayol bir IntelliSense tamamlanma listeden seçerek.  

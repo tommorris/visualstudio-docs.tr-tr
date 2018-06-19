@@ -26,6 +26,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454550"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio Hata ayıklayıcıdaki ifadeler
 Visual Studio hata ayıklayıcısı bir ifadede girdiğinizde, çalışan ifade değerlendiricisi içerir **QuickWatch** iletişim kutusu, **izleme** penceresinde veya **hemen** penceresi. İfade değerlendiricileri iş ayrıca altındadır **kesme noktaları** penceresi ve hata ayıklayıcısı diğer birçok yerde.

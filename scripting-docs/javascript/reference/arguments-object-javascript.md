@@ -1,13 +1,13 @@
 ---
 title: arguments nesnesi (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - arguments
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - arguments, arguments object
 - arguments object
 ms.assetid: 5eb79ca9-bbb8-4a42-aaf5-16a93ecb425f
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789170"
 ---
 # <a name="arguments-object-javascript"></a>arguments Nesnesi (JavaScript)
 Bağımsız değişken şu anda yürütülen işlevi ve adlı işlevleri temsil eden bir nesne.  

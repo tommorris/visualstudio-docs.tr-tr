@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468025"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 Sembol dosyasından özel sembolleri atılmış olup olmadığını belirten alır bayrak.  

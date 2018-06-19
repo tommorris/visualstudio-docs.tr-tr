@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139074"
 ---
 # <a name="usedcommand-element"></a>UsedCommand öğesi
 Başka bir .vsct dosyasında tanımlanan bir komutuna erişmek bir VSPackage sağlar. Örneğin, standart, VSPackage kullanıyorsa, **kopya** tarafından tanımlanan komut [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell ekleyebileceğiniz komut menü veya araç çubuğuna yeniden uygulamadan.  

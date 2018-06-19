@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949717"
 ---
 # <a name="toolbox-data-tab"></a>Araç Kutusu, Veri Sekmesi
 Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** sekmesinde **araç** ilişkili Tasarımcısı sahip bir proje oluşturduğunuzda görünür. **Araç** görüntülemeniz gerekirse, Visual Studio tümleşik geliştirme ortamında; varsayılan olarak görünür **araç**seçin **araç** gelen**Görünüm** menüsü.

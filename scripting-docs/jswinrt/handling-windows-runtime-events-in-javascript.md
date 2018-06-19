@@ -1,18 +1,19 @@
 ---
-title: "JavaScript'te Windows çalışma zamanı olayları işleme | Microsoft Docs"
-ms.custom: 
+title: JavaScript'te Windows çalışma zamanı olayları işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime events
 - Windows Runtime events [JavaScript]
 ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +22,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791912"
 ---
 # <a name="handling-windows-runtime-events-in-javascript"></a>JavaScript'te Windows çalışma zamanı olayları işleme
 C++ veya .NET Framework oldukları gibi Windows çalışma zamanı olayları JavaScript aynı yolla temsil edilmez. Sınıf özelliklerini değildir ancak bunun yerine sınıfına ait geçirilen dize tanımlayıcıları olarak temsil edilir `addEventListener` ve `removeEventListener` yöntemleri. Örneğin, bir olay işleyicisi ekleyebilirsiniz [Geolocator.PositionChanged](http://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) için "positionchanged" dizesi geçirerek olay `Geolocator.addEventListener` yöntemi:  

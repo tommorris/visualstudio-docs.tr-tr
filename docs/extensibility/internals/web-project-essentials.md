@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141001"
 ---
 # <a name="web-project-essentials"></a>Web projesi temelleri
 Web projeleri, Web uygulamaları oluşturun. Bir Web projesi akıllı Web sayfaları bir Web uygulaması oluşturmak için kullanabilirsiniz. Akıllı bir Web sayfasında isteğe bağlı Web sayfasını işler sunucu tarafı kodu vardır.  
@@ -34,7 +35,7 @@ Web projeleri, Web uygulamaları oluşturun. Bir Web projesi akıllı Web sayfal
   
     -   Bir Web uygulaması projesi (WAP) /App_Code klasöründeki tüm kaynak dosyalarının yanı sıra tüm akıllı Web sayfaları için kod birleştirir tek bir yürütülebilir dosya oluşturur.  
   
--   Bir Web projesi için çözüm dosyası ayrı olarak Web sitesinin kendisinde bulunur. Varsayılan olarak, çözüm dosyalarını \Documents and Settings bulunan\\*YourAccount*\My belgeleri\\*\<Visual Studio ### >*\Projects\\ *YourWebSite*.  
+-   Bir Web projesi için çözüm dosyası ayrı olarak Web sitesinin kendisinde bulunur. Varsayılan olarak, çözüm dosyalarını \Documents and Settings bulunan\\*YourAccount*\My belgeleri\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Web sitesi ile çözüm dosyasını tutmak istiyorsanız, yalnızca taşıyabilir vardır ve yeniden açın.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704505"
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
 Yükleme için VSPackages sorun VSPackages yüklenmesini önlemek amacıyla isteyen kullanıcılar tarafından eklenen atlamak için tüm seçenekleri temizler ve ardından başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

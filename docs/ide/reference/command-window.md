@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704765"
 ---
 # <a name="command-window"></a>Komut Penceresi
 **Komutu** penceresi komutları veya diğer adlar doğrudan yürütmek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Hiçbir menüde menü komutları ve görünmez komutlar yürütebilir. Görüntülenecek **komutu** penceresinde, seçin **diğer pencereler** gelen **Görünüm** menü ve seçin **komut penceresi**.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465190"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 Bu işlev, hiçbir yığın sıralama arabellek yığını denetleme bir parçası olarak yapılabilir olup olmadığını gösteren bir bayrak alır ([/GS (arabellek güvenlik denetimi)](/cpp/build/reference/gs-buffer-security-check) derleyici seçeneği).  

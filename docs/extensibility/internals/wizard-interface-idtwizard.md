@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140709"
 ---
 # <a name="wizard-interface-idtwizard"></a>Sihirbaz arabirimi (IDTWizard)
 Tümleşik geliştirme ortamını (IDE) kullanan <xref:EnvDTE.IDTWizard> sihirbazları ile iletişim kurmak için arabirim. Sihirbazlar, IDE içinde yüklü olması için bu arabirimi uygulamalıdır.  

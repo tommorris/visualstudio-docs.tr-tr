@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140693"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Dosya adı uzantıları için dosya işleyicisi belirtme
 Bir belirli bir uzantıya sahip bir dosya işler uygulamayı belirlemek için çeşitli yöntemler vardır. OpenWithList ve OpenWithProgids fiilleri dosya uzantısı için kayıt defteri girdisinin altındaki dosya işleyicisi belirtmek için iki yollarıdır.  

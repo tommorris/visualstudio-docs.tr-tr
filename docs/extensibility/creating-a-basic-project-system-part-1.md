@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108342"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Temel Proje sistem oluşturma, bölüm 1
 Visual Studio'da projeler geliştiricilerin kaynak kodu dosyaları ve diğer varlıklar düzenlemek için kullandığınız kapsayıcılardır. Projeleri görünür çözümlerinde alt öğeleri olarak **Çözüm Gezgini**. Projeleri düzenlemek, yapı, hata ayıklama ve kaynak kodu dağıtmak ve Web Hizmetleri, veritabanları ve diğer kaynaklara başvurular oluşturmanıza olanak tanır.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863657"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Startup'lar için sunulan visual Studio abonelikleri
 Tam başlatmalar program 5 kazandırabilir için kimin Microsoft katılma başlatmalar [Visual Studio Enterprise aylık abonelikler](https://www.visualstudio.com/vs/pricing/). Ticari olarak, hiçbir özel sınırlamalar veya kısıtlamaları sunulan aynı abonelikleri bunlar. Her abonelik (lisanslı kullanıcının kim olduğunu) son kullanıcıya atanmalıdır önce kullanıcının Visual Studio çalıştırabilir ve Visual Studio Enterprise abone VSTS olarak tanınmıyor.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100932"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 Bir nesne ve kendi kapsamı veya kapsayıcı içinde konumuna açıklayan bir yapı döndürür.  

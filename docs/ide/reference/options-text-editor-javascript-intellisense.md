@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962d185232fc8a98343ed97fa4dd0230d55f5bb7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1c8fa80029618a9686c6eeddebb537757356d8f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948814"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233509"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
 Kullanım **IntelliSense** sayfasında **seçenekleri** için JavaScript IntelliSense davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebileceğiniz **IntelliSense** seçerek sayfa **Araçları**, **seçenekleri** menü çubuğunda, ve ardından genişletme **Metin Düzenleyicisi**,  **JavaScript**, **IntelliSense.**
@@ -67,7 +67,7 @@ Kullanım **IntelliSense** sayfasında **seçenekleri** için JavaScript Intelli
 
  Belirli IntelliSense .js dosyalarının farklı JavaScript projeleri için kapsamda olduğunu belirtmek için önceden tanımlı başvuru gruplarını kullanabilirsiniz. Dört başvuru grubu mevcuttur:
 
--   Örtük (Windows *sürüm*), için [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanarak uygulamaları. Bu gruba dahil dosyalarıdır Kod düzenleyicisinde için için açılan her .js dosya kapsamına [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanarak uygulamaları.
+-   Örtük (Windows *sürüm*), için [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanarak uygulamaları. Bu gruba dahil dosyalarıdır Kod düzenleyicisinde için açılan her .js dosya kapsamına [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanarak uygulamaları.
 
 -   Örtük (Web); HTML5 projeleri için. Bu grupta yer alan dosyalar, bu proje türleri için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.
 

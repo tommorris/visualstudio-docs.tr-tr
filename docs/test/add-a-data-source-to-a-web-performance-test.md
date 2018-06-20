@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a8ca3780af4db9a9fe8b59d58f8c2b537c621d8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 0f50e8a2f9381b4fd248b044772f5c2bdbf95a41
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255099"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234770"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web performans testine veri kaynağı ekleme
 
@@ -24,7 +24,7 @@ ms.locfileid: "35255099"
 
  ![Web performans testine veri bağlama](../test/media/web_test_databinding_conceptual.png)
 
- Örnek bir ASP.NET uygulaması kullanılacak yapacağız. Üç .aspx sayfaları – varsayılan sayfası, kırmızı bir sayfa ve mavi sayfası vardır. Varsayılan sayfa kırmızı veya mavi ve bir gönderme düğmesi seçmek için bir radyo denetleyebilir. Diğer iki .aspx sayfaları çok basittir. Bir kırmızı adlı bir etiket yoktur ve diğer mavi adlı bir etiket sahiptir. Gönderme varsayılan sayfasında biz görüntülemek diğer sayfalardan birini seçtiğinizde. İndirebilirsiniz [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) örnek ya da kendi web uygulaması ile birlikte izlemeniz yeterlidir.
+ Örnek bir ASP.NET uygulaması kullanılacak yapacağız. Üç *.aspx* sayfaları – varsayılan sayfası, kırmızı bir sayfa ve mavi sayfası. Varsayılan sayfa kırmızı veya mavi ve bir gönderme düğmesi seçmek için bir radyo denetleyebilir. Diğer iki *.aspx* sayfalarıdır çok basit. Bir kırmızı adlı bir etiket yoktur ve diğer mavi adlı bir etiket sahiptir. Gönderme varsayılan sayfasında biz görüntülemek diğer sayfalardan birini seçtiğinizde. İndirebilirsiniz [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) örnek ya da kendi web uygulaması ile birlikte izlemeniz yeterlidir.
 
  ![Sınanacak web uygulaması çalıştıran](../test/media/web_test_databinding_runwebapp.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "35255099"
 
 ## <a name="create-a-sql-database"></a>SQL veritabanı oluşturma
 
-1. Visual Studio Enterprise yoksa, cand karşıdan ondan [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) sayfası.
+1. Visual Studio Enterprise yoksa, buradan indirebilirsiniz [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) sayfası.
 
 2. Bir SQL veritabanı oluşturun.
 
@@ -90,11 +90,11 @@ ms.locfileid: "35255099"
 
 ## <a name="bind-the-data"></a>Veri bağlama
 
-1. ColorName alana bağlayın.
+1. Bağlama **ColorName** alan.
 
      ![RadioButtonList1 değerine ColorName alana bağlayın](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. Çözüm Gezgini'nde Local.testsettings dosyasını açın ve veri kaynağı satır seçeneği başına bir Çalıştır'ı seçin.
+2. Açık *Local.testsettings* dosyasını **Çözüm Gezgini** seçip **her veri kaynağı satırı için tek çalıştırma** seçeneği.
 
      ![Test ayarları dosyasını düzenleme](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -106,13 +106,13 @@ ms.locfileid: "35255099"
 
      ![Bağlama doğrulamak için web performans testini çalıştırma](../test/media/web_test_databinding_sql_runtest.png)
 
-     İki çalışması için her veri satırı görüntülenir. Çalışma 1 Red.aspx sayfa için bir istek gönderir ve çalışma 2 Blue.aspx sayfa için bir istek gönderir.
+     İki çalışması için her veri satırı görüntülenir. Çalışma 1 sayfa için bir istek gönderir *Red.aspx*, ve çalışma 2 sayfa için bir istek gönderir *Blue.aspx*.
 
      ![Test çalıştırma sonuçları](../test/media/web_test_databinding_sql_runresults.png)
 
-     Bir veri kaynağına bağladığınızda varsayılan yanıt URL kuralı ihlal edebilir. Bu durumda, çalışma 2 hata özgün testi kaydı Red.aspx sayfasından bekleyen kural neden olur, ancak isteğe bağlı olarak veri şimdi bağlama Blue.aspx sayfasına yönlendirir.
+     Bir veri kaynağına bağladığınızda varsayılan yanıt URL kuralı ihlal edebilir. Bu durumda, çalışma 2 hata bekleyen kural tarafından kaynaklanır *Red.aspx* özgün testi kaydı, ancak veri şimdi bağlama sayfasından kendisine yönlendirir *Blue.aspx* sayfa.
 
-2. Doğrulama hatasını yanıt URL doğrulama kuralı siliniyor ve test yeniden çalıştırarak düzeltin.
+2. Doğrulama hatasını silerek düzeltmek **yanıt URL'si** doğrulama kuralı ve test yeniden çalıştırma.
 
      ![Yanıt URL'si doğrulama kuralı Sil](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -166,11 +166,11 @@ ms.locfileid: "35255099"
 
 **Y:** sütun başlığı eklenemiyor, CSV dosyasında bir veritabanı olarak işlemek için bir şema tanımı dosyası kullanabilirsiniz.
 
-1. Schema.ini adlı yeni bir metin dosyası ekleyin.
+1. Adlı yeni bir metin dosyasına eklemek *schema.ini*.
 
      ![Bir schema.ini dosyası ekleme](../test/media/web_test_databinding_schemafile.png)
 
-2. Verilerinizin yapısını açıklayan bilgileri eklemek için schema.ini dosyasını düzenleyin. Örneğin, CSV dosyasını tanımlayan bir şema dosyası şuna benzeyebilir:
+2. Düzen *schema.ini* verilerinizin yapısını açıklayan bilgileri eklemek için dosya. Örneğin, CSV dosyasını tanımlayan bir şema dosyası şuna benzeyebilir:
 
     ```text
     [testdata.csv]
@@ -181,7 +181,7 @@ ms.locfileid: "35255099"
 
      ![Web performans testine veri kaynağı ekleme](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. Bir schema.ini dosyası kullanıyorsanız, veri kaynağı ve adlandırın olarak veritabanı (CSV dosyası değil) seçin.
+4. Kullanıyorsanız, bir *schema.ini* dosya, seçin **veritabanı** (CSV dosyası değil) veri kaynağı ve adlandırın.
 
      ![Veritabanı veri kaynağı ekleme](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -193,11 +193,11 @@ ms.locfileid: "35255099"
 
      ![.NET framework OLE DB veri sağlayıcısı seçin](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. Gelişmiş'i seçin.
+7. Seçin **Gelişmiş**.
 
      ![Gelişmiş seçin](../test/media/web_test_databinding_advanced.png)
 
-8. Sağlayıcı özelliği için Microsoft.Jet.OLEDB.4.0 seçin ve ardından genişletilmiş özellikler metne ayarlayın; HDR = HAYIR.
+8. Sağlayıcı özelliği için Microsoft.Jet.OLEDB.4.0 seçin ve ardından **genişletilmiş özellikler** metne; HDR = HAYIR.
 
      ![Gelişmiş Özellikler Uygula](../test/media/web_test_databinding_advancedproperties.png)
 

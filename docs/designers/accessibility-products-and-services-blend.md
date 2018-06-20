@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd65344520d003c138b7250bec7cd6f1cc9da79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97919ae62a0d9fdde187c10aedb87243e69af61d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923911"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234247"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Erişilebilirlik ürünleri ve Hizmetleri (karışım)
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Aşağıdaki bölümler, Microsoft Windows'u engelli kişiler için daha kolay erişilebilir duruma getiren özellikler, ürünler ve hizmetler konusunda bilgi sağlar.
@@ -65,7 +65,7 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 
  Web adresleri değişebilir, bu nedenle burada bahsedilen siteye bağlanamayabilirsiniz.
 
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>İşitme engelli kişiler için müşteri hizmetleri
+## <a name="customer-service-for-people-with-hearing-impairments"></a>İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri
  İşitme engelliyseniz veya işitme zorluğu çekiyorsanız, bir metin telefonu (TTY/TDD) hizmeti aracılığıyla Microsoft ürün ve müşteri hizmetlerine tam erişim mümkündür:
 
  Müşteri Hizmetleri için 6:30 ve 17:30:00 saatleri Pasifik saati, Pazartesi-Cuma arasında (800) 892-5234 adresindeki Microsoft Sales Information tatiller hariç olmak üzere Center başvurun.

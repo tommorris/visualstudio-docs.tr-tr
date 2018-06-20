@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf8d30907e236ca1f3047b488a5522fd2631295
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: aa38fa6cc15c3017195093e6386ce5aacd28ea83
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237984"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234146"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -46,7 +46,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio'da yeni bir ASP.NET projesi oluşturma
 
-1. Visual Studio çalıştıran bilgisayarda seçin **Dosya > Yeni proje**.
+1. Visual Studio çalıştıran bilgisayarda seçin **dosya** > **yeni proje**.
 
 1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET çekirdek Web uygulaması**ve ardından **Tamam**.
 
@@ -58,7 +58,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
     Visual Studio projesi oluşturur.
 
-1. Seçin **Yapı > Yapı çözümü** Projeyi derlemek için.
+1. Seçin **yapı** > **yapı çözümü** Projeyi derlemek için.
 
 ## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Azure App Service'te yayımlama ayarları dosyası oluşturma
 

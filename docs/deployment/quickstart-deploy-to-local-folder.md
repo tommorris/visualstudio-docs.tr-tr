@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8f17e3214c1222eaadf43f3ea2d0e56742cd1ecf
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764225"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234666"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Bir web uygulaması veya .NET Core uygulama Visual Studio yayımlama aracını kullanarak yerel bir klasöre dağıtma
 
@@ -33,7 +33,7 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
-1. Visual Studio'da, **Dosya > Yeni proje**.
+1. Visual Studio'da, **dosya** > **yeni proje**.
 
 1. Altında **Visual C#** veya **Visual Basic**, seçin **.NET Core**ve ardından, Orta bölmede **konsol uygulaması (.NET Core)**.
 

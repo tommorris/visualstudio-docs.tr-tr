@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: a63d9947f544ddff1de81aaf34ed62c9646fba3d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 87dc6c4152cd2f162880256b9b8372e04142913c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34794230"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233522"
 ---
 # <a name="deploy-aspnet-to-a-remote-iis-computer-using-web-deploy-in-visual-studio"></a>ASP.NET Web dağıtımı Visual Studio kullanarak uzak bir IIS bilgisayarına dağıtın
 
@@ -26,7 +26,7 @@ Bu yordamlar bu sunucu yapılandırmaları test edilmiştir:
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>ASP.NET 4.5.2 oluşturmak Visual Studio bilgisayardaki uygulama
   
-1. Visual Studio çalıştıran bilgisayarda seçin **Dosya > Yeni proje**.
+1. Visual Studio çalıştıran bilgisayarda seçin **dosya** > **yeni proje**.
 
 1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)** ve ardından **Tamam**.
 
@@ -38,15 +38,15 @@ Bu yordamlar bu sunucu yapılandırmaları test edilmiştir:
 
     Visual Studio projesi oluşturur.
 
-1. Seçin **Yapı > Yapı çözümü** Projeyi derlemek için.
+1. Seçin **yapı** > **yapı çözümü** Projeyi derlemek için.
 
-## <a name="bkmk_configureIIS"></a> IIS yükle ve Windows Server'da Yapılandır
+## <a name="install-and-configure-iis-on-windows-server"></a>IIS yükle ve Windows Server'da Yapılandır
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Windows Server'da tarayıcı güvenlik ayarlarını güncelleştirme
 
-Ardından (varsayılan olarak etkindir) Internet Explorer Artırılmış Güvenlik Yapılandırması etkinse, bazı etki alanlarına, bazı web sunucusu bileşenlerini yükleme sağlamak için güvenilir siteler olarak eklemeniz gerekebilir. Güvenilen siteler giderek eklemek **Internet Seçenekleri > Güvenlik > Güvenilen siteler > siteleri**. Şu etki alanlarına ekleyin.
+Ardından (varsayılan olarak etkindir) Internet Explorer Artırılmış Güvenlik Yapılandırması etkinse, bazı etki alanlarına, bazı web sunucusu bileşenlerini yükleme sağlamak için güvenilir siteler olarak eklemeniz gerekebilir. Güvenilen siteler giderek eklemek **Internet Seçenekleri** > **güvenlik** > **Güvenilen siteler** > **siteler** . Şu etki alanlarına ekleyin.
 
 - Microsoft.com
 - go.microsoft.com
@@ -55,7 +55,7 @@ Ardından (varsayılan olarak etkindir) Internet Explorer Artırılmış Güvenl
 
 Yazılım yüklediğinizde, çeşitli web sitesi komut dosyaları ve kaynakları yükleme izni vermek için istekleri alabilirsiniz. Bu kaynakların bazıları gerekli değildir ancak işlemini basitleştirmek için tıklatın **Ekle** istendiğinde.
 
-## <a name="BKMK_deploy_asp_net"></a> Windows Server'da ASP.NET 4.5 yükleyin
+## <a name="install-aspnet-45-on-windows-server"></a>Windows Server'da ASP.NET 4.5 yükleyin
 
 IIS üzerinde ASP.NET yüklemek için daha ayrıntılı bilgi isterseniz bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -72,11 +72,11 @@ IIS üzerinde ASP.NET yüklemek için daha ayrıntılı bilgi isterseniz bkz [II
 
 2. Sistemi yeniden başlatın (veya yürütme **net stop edildi /y** arkasından **net start w3svc** sistem yolu değişiklik seçmek için bir komut isteminden).
 
-## <a name="BKMK_install_webdeploy"></a> Windows Server'da 3.6 yükleme Web dağıtımı
+## <a name="install-web-deploy-36-on-windows-server"></a>Windows Server'da 3.6 yükleme Web dağıtımı
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a> Windows Server bilgisayarında ASP.NET Web sitesi yapılandırması
+## <a name="configure-aspnet-web-site-on-the-windows-server-computer"></a>Windows Server bilgisayarında ASP.NET Web sitesi yapılandırması
 
 1. Windows Gezgini'ni açın ve yeni bir klasör oluşturun **C:\Publish**, ASP.NET projesi daha sonra dağıtacağı.
 
@@ -94,13 +94,13 @@ IIS üzerinde ASP.NET yüklemek için daha ayrıntılı bilgi isterseniz bkz [II
 
 8. IIS Yöneticisi'nde site seçiliyken, seçin **izinleri Düzenle**ve bu IUSR, IIS_IUSRS ya da okuma ve yürütme hakları olan yetkili bir kullanıcının uygulama havuzu için yapılandırılan kullanıcı emin olun. Bu kullanıcılar hiçbiri mevcut değilse, okuma ve yürütme hakları olan bir kullanıcı olarak IUSR ekleyin.
 
-## <a name="bkmk_webdeploy"></a> Yayımlama ve Web dağıtımı Visual Studio'dan kullanarak uygulamayı dağıtma
+## <a name="publish-and-deploy-the-app-using-web-deploy-from-visual-studio"></a>Yayımlama ve Web dağıtımı Visual Studio'dan kullanarak uygulamayı dağıtma
 
 [!INCLUDE [deploy-app-web-deploy](../deployment/includes/deploy-app-web-deploy.md)]
 
-Ayrıca, bölüm okuyun gerekebilir [bağlantı sorunlarını giderme](#bkmk_openports).
+Ayrıca, bağlantı sorunlarını giderme konusunda aşağıdaki bölümü okuyun gerekebilir.
 
-## <a name="bkmk_openports"></a> Sorun giderme: Windows Server üzerinde gerekli bağlantı noktalarını açın
+## <a name="troubleshoot-open-required-ports-on-windows-server"></a>Sorunlarını giderme: Windows Server gerekli bağlantı noktalarını açmanız
 
 Çoğu kurulumları ASP.NET ve Web dağıtımı yüklemesi tarafından gerekli bağlantı noktaları açıldı. Ancak, bağlantı noktalarının açık olduğunu doğrulamak gerekebilir.
 
@@ -114,7 +114,7 @@ Gerekli bağlantı noktaları:
 
 1. Windows Server'da bir bağlantı noktası açmak için Aç **Başlat** menüsü, arama **Gelişmiş Güvenlik Özellikli Windows Güvenlik Duvarı**.
 
-2. Ardından **gelen kuralları > Yeni Kural > bağlantı noktası**. Seçin **sonraki** ve altında **belirli yerel bağlantı noktaları**, bağlantı noktası numarasını girin, tıklatın **sonraki**, ardından **bağlantıya izin**, İleri'ye tıklayın ve ad ekleyin (**IIS**, **Web dağıtımı**, veya **msvsmon**) gelen kuralı için.
+2. Ardından **gelen kuralları** > **yeni kural** > **bağlantı noktası**. Seçin **sonraki** ve altında **belirli yerel bağlantı noktaları**, bağlantı noktası numarasını girin, tıklatın **sonraki**, ardından **bağlantıya izin**, İleri'ye tıklayın ve ad ekleyin (**IIS**, **Web dağıtımı**, veya **msvsmon**) gelen kuralı için.
 
     Windows Güvenlik duvarını yapılandırma hakkında daha ayrıntılı bilgi isterseniz bkz [uzaktan hata ayıklama için Windows Güvenlik Duvarı Yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

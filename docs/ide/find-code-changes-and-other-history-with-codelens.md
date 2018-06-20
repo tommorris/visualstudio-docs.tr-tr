@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238401"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
@@ -83,7 +84,7 @@ Team Foundation Server ya da Visual Studio Team Services Team Foundation sürüm
 
 ![CodeLens: TFVC'yi kodunuzda Get değişiklik geçmişi](../ide/media/codelens-code-changes.png)
 
-Varsayılan süre son 12 ay değeridir. Team Foundation Server'da kodunuzu depolanıyorsa çalıştırarak zaman aralığını değiştirebilirsiniz [TFSConfig komut](/vsts/tfs-server/command-line/tfsconfig-cmd) ile [Codeındex komutu](../ide/codeindex-command.md) ve **/indexHistoryPeriod**bayrağı.
+Varsayılan süre son 12 ay değeridir. Team Foundation Server'da kodunuzu depolanıyorsa çalıştırarak zaman aralığını değiştirebilirsiniz [TFSConfig komut](/tfs/server/ref/command-line/tfsconfig-cmd) ile [Codeındex komutu](../ide/codeindex-command.md) ve **/indexHistoryPeriod**bayrağı.
 
 Önce birden fazla bir yıldan dahil olmak üzere tüm değişiklikleri ayrıntılı bir geçmişini görmek için seçin **tüm dosya değişiklikleri göstermek**:
 
@@ -205,23 +206,25 @@ C# veya Visual Basic kodu açmadan mevcut birim testleri bulabilir **Test Gezgin
 
 1. İlişkili uygulama kodu gidin [birim test kodu](../test/unit-test-your-code.md).
 
-2. Kod için testleri tuşlarına basarak gözden **Alt**+**3**.
+2. Henüz yapmadıysanız, CodeLens test Göstergeleri yüklemek için uygulamanızı oluşturun. Emin olun [keşfi tarafından oluşturulan derlemeleri](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) açıktır.
+
+3. Kod için testleri tuşlarına basarak gözden **Alt**+**3**.
 
      ![CodeLens - seçin Kod düzenleyicisinde test durumu](../ide/media/codelens-choose-test-indicator.png)
 
-3. Bir uyarı simgesi görürseniz ![Uyarı simgesi](../ide/media/codelenstestwarningicon.png), testleri henüz çalıştırmak henüz, böylece bunları çalıştırın.
+4. Bir uyarı simgesi görürseniz ![Uyarı simgesi](../ide/media/codelenstestwarningicon.png), testleri henüz çalıştırmak henüz, böylece bunları çalıştırın.
 
      ![CodeLens - görünüm birim testleri henüz çalışmayabilir](../ide/media/codelens-tests-not-yet-run.png)
 
-4. Bir testin tanımı gözden geçirmek için kod dosyası düzenleyicisinde açmak için CodeLens göstergesi penceresinde test öğesini çift tıklatın.
+5. Bir testin tanımı gözden geçirmek için kod dosyası düzenleyicisinde açmak için CodeLens göstergesi penceresinde test öğesini çift tıklatın.
 
      ![CodeLens - birim testi tanımına gidin](../ide/media/codelens-unit-test-definition.png)
 
-5. Testin sonuçlarını gözden geçirmek için test durum göstergesi seçin (![test başarısız simgesi](../ide/media/codelenstestfailedicon.png) veya ![geçirilen test simgesi](../ide/media/codelenstestpassedicon.png)), veya basın **Alt**+**1**.
+6. Testin sonuçlarını gözden geçirmek için test durum göstergesi seçin (![test başarısız simgesi](../ide/media/codelenstestfailedicon.png) veya ![geçirilen test simgesi](../ide/media/codelenstestpassedicon.png)), veya basın **Alt**+**1**.
 
      ![CodeLens - bkz: birim sınama sonucu](../ide/media/codelens-unit-test-result.png)
 
-6. Bu test kaç kişinin değiştirilmesi, kimin bu test değiştirilmiş veya bu test için kaç tane değişikliklerin yapıldığı görmek için [, kodun geçmişi Bul](#find-code-history) ve bağlantılı öğeler.
+7. Bu test kaç kişinin değiştirilmesi, kimin bu test değiştirilmiş veya bu test için kaç tane değişikliklerin yapıldığı görmek için [, kodun geçmişi Bul](#find-code-history) ve bağlantılı öğeler.
 
 ## <a name="keyboard-shortcuts"></a>Klavye kısayolları
 
@@ -252,7 +255,7 @@ CodeLens dosya düzeyinde göstergeleri açıp Düzenleyicisi penceresinin alt k
 
 - CodeLens açık olduğundan emin olun. Git **Araçları** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >  **CodeLens**.
 
-- Kodunuzu TFS'de depolanıyorsa, kod dizinini kullanarak açık olduğundan emin olun [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Config komutunu](/vsts/tfs-server/command-line/tfsconfig-cmd).
+- Kodunuzu TFS'de depolanıyorsa, kod dizinini kullanarak açık olduğundan emin olun [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Config komutunu](/tfs/server/ref/command-line/tfsconfig-cmd).
 
 - TFS ilişkili göstergeler yalnızca iş öğeleri koda bağlandığında ve bağlantılı iş öğelerini açmak için izniniz olduğunda görünür. Sahip olduğunuzu onaylamak [ekip üye izinleri](/vsts/work/scale/multiple-teams).
 
@@ -320,7 +323,11 @@ Klavyeyi kullanmak için:
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>S: CodeLens geçmişi ve bağlantılı öğeler göstermek için kod nasıl işlediği yönetebilirim?
 
-**Y:** Evet. Kodunuzu TFS'de ise [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Config komutunu](/vsts/tfs-server/command-line/tfsconfig-cmd).
+**Y:** Evet. Kodunuzu TFS'de ise [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Config komutunu](/tfs/server/ref/command-line/tfsconfig-cmd).
+
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>S: çözümüme'ı ilk kez açtığınızda my CodeLens test göstergeleri my dosyasında artık görünür. Bunları nasıl yüklenmesi miyim?
+
+**Y:** dosyanızda yüklemek için CodeLens test göstergeleri almak için projenizi yeniden derleyin. Emin olun [keşfi tarafından oluşturulan derlemeleri](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) açıktır. Kod dosyaları yüklendiğinde performansı artırmak için Visual Studio artık test göstergeleri için kaynak bilgileri getirir. Sonra bir derleme veya içinde çift tıklayarak bir teste gittiğinizde test göstergeleri yüklenir **Test Gezgini**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

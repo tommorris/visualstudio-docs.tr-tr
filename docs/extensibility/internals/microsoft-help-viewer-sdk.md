@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ddc23ab56df017ef0a37c56cd5b0a81ee33a07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135431"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234679"
 ---
-# <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK
+# <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 Bu makalede, Visual Studio Yardım Görüntüleyicisi tümleştiricileri için aşağıdaki görevleri içerir:  
   
 -   Bir konu (F1 desteği) oluşturma  
@@ -354,7 +354,7 @@ Aşağıdaki tabloda, köşeli ayraç görünen herhangi bir dize tarafından ta
 |Özellik (HTML gösterim)|Açıklama|  
 |--------------------------------------|-----------------|  
 |\< Meta name="Microsoft.Help.Locale" içerik = "[kodu dili]" / >|Bu konu için bir yerel ayarlar. Bu etiket bir konuda kullandıysanız, yalnızca bir kez kullanılmalıdır ve diğer Microsoft Help etiketleri eklenmesi gerekir. Bu etiket kullanılmazsa konunun gövde metni belirtilmişse, ürün yerel ayar ile ilişkili bir sözcük ayırıcı kullanarak dizinlenir; Aksi takdirde, en-us sözcük ayırıcı kullanılır. Bu etiket ISOC RFC 4646 için uygundur. Microsoft Help düzgün çalıştığından emin olmak için genel Language özniteliği yerine bu özelliği kullanın.|  
-|\< Meta name="Microsoft.Help.TopicLocale" içerik = "[kodu dili]" / >|Başka yerel ayarlara de kullanıldığında bu konu için bir yerel ayarlar. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Katalog içeriği birden fazla dilde içerdiğinde bu etiketi kullanın. Birden çok konu katalogdaki aynı Kimliğe sahip olabilir, ancak her bir benzersiz TopicLocale belirtmeniz gerekir. Yerel katalog eşleşen bir TopicLocale belirtir konu içeriği tablosunda görüntülenen konu. Bununla birlikte, konu tüm dil sürümlerini arama sonuçlarında görüntülenir.|  
+|\< Meta name="Microsoft.Help.TopicLocale" içerik = "[kodu dili]" / >|Başka yerel ayarlara de kullanıldığında bu konu için bir yerel ayarlar. Bu etiket bir konuda kullanılırsa, yalnızca bir kez kullanılmalıdır. Katalog içeriği birden fazla dilde içerdiğinde bu etiketi kullanın. Birden çok konu katalogdaki aynı Kimliğe sahip olabilir, ancak her bir benzersiz TopicLocale belirtmeniz gerekir. Yerel katalog eşleşen bir TopicLocale belirten içeriği tablosunda görüntülenen konu konudur. Bununla birlikte, konu tüm dil sürümlerini arama sonuçlarında görüntülenir.|  
 |\< başlık > [başlık] \< /title >|Bu konu başlığı belirtir. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Konu gövdesi bir başlık içermiyorsa \<div > bölümü, bu başlık, konu ve içindekiler görüntülenir.|  
 |\< Meta name = "Microsoft.Help.Keywords" içerik = "[aKeywordPhrase]" / >|Yardım Görüntüleyicisi'ni dizin bölmesinde görüntülenen bir bağlantı metnini belirtir. Bağlantı tıklatıldığında konu görüntülenir. Bir konu için birden çok dizin anahtar sözcükleri belirtebilir veya bağlantıları bu konuya dizinde görünmesini istemiyorsanız bu etiketi atlayabilirsiniz. Bu özellik için Yardım'ın önceki sürümlerinden "K" anahtar sözcükleri dönüştürülebilir.|  
 |\< Meta name="Microsoft.Help.Id" içerik = "[TopicID]" / >|Bu konuda tanımlayıcısını ayarlar. Bu etiketi gereklidir ve yalnızca bir kez bir konuda kullanılması gerekir. Kimliği kataloğunda aynı yerel ayara sahip konuları arasında benzersiz olması gerekir. Başka bir konuda, bu kimliği kullanarak bu konuda bir bağlantı oluşturabilirsiniz|  
@@ -454,7 +454,7 @@ Not: "{n}" tarafından belirtildiği kodu bağımlılıklarını değişkenlerin
 |Kullanım:|E-posta yoluyla geçerli konu hakkında geri bildirim sağlamak müşteri için bir geri bildirim denetimi sağlar.  Telif Hakkı metin içeriği.  Logo tanımı.|  
 |**Öğesi**|**Değer (Bu dizeler içerik katılım gereksinimini karşılamak üzere değiştirilebilir.)**|  
 |Telif Hakkı|© 2013 Microsoft Corporation. Tüm hakları saklıdır.|  
-|SendFeedback|\<bir href = "{0}" {1} > geri bildirim gönder\</a > Bu konuda Microsoft.|  
+|SendFeedback|\<bir href = "{0}" {1}> geri bildirim gönder\</a > Bu konuda Microsoft.|  
 |FeedbackLink||  
 |LogoTitle|[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]|  
 |LogoFileName|vs_logo_bk.gif|  
@@ -473,28 +473,28 @@ Not: "{n}" tarafından belirtildiği kodu bağımlılıklarını değişkenlerin
 |**Öğesi**|**Değer**|  
 |LinkTableTitle|Bağlantı tablosu|  
 |TopicEnuLinkText|İngilizce sürümü görüntülemek\</a > konunun bilgisayarınızda kullanılabilir.|  
-|TopicOnlineLinkText|Bu konuyu görüntülemek \<bir href = "{0}" {1} > Çevrimiçi\</a >|  
+|TopicOnlineLinkText|Bu konuyu görüntülemek \<bir href = "{0}" {1}> Çevrimiçi\</a >|  
 |OnlineText|Çevrimiçi|  
 |Özellik:|**Video ses denetimi**|  
 |Kullanım:|Öğeleri ve video içeriği için metin görüntüleme|  
 |**Öğesi**|**Değer**|  
-|MultiMediaNotSupported|Internet Explorer 9 veya üstü {0} içeriği destekleyecek şekilde yüklenmesi gerekir.|  
+|MultiMediaNotSupported|Internet Explorer 9 veya üstü yüklü olmalıdır desteklemek için {0} içeriği.|  
 |VideoText|video görüntüleme|  
 |AudioText|ses akışı|  
-|OnlineVideoLinkText|\<p > Bu konu ile ilgili video görüntülemek için {0} tıklatın\<bir href = "\ {1\}" > {2}here\</a >.\< /p >|  
-|OnlineAudioLinkText|\<p > Bu konu ile ilgili ses dinlemek için {0} tıklatın\<bir href = "\ {1\}" > {2}here\</a >.\< /p >|  
+|OnlineVideoLinkText|\<p > Bu konu ile ilgili video görüntülemek için tıklatın {0} \<bir href = "{1}" >{2}burada\</a >.\< /p >|  
+|OnlineAudioLinkText|\<p > Bu konu ile ilgili ses dinlemek için tıklatın {0} \<bir href = "{1}" >{2}burada\</a >.\< /p >|  
 |Özellik:|**İçerik denetimi yüklü değil**|  
 |Kullanım:|Contentnotinstalled.htm işleme için kullanılan metin öğeleri (dize)|  
 |**Öğesi**|**Değer**|  
 |ContentNotInstalledTitle|İçerik bilgisayarınızda bulundu.|  
-|ContentNotInstalledDownloadContentText|\<p > Bilgisayarınızı için içerik indirmek için \<bir href = "{0}" {1} > Yönet sekmesini\</a >.\< /p >|  
+|ContentNotInstalledDownloadContentText|\<p > Bilgisayarınızı için içerik indirmek için \<bir href = "{0}" {1}> Yönet sekmesini\</a >.\< /p >|  
 |ContentNotInstalledText|\<p > İçerik bilgisayarınızda yüklü. Lütfen yerel Yardım içerik yükleme için yöneticinize başvurun. \</p >|  
 |Özellik:|**Konu denetim bulunamıyor**|  
 |Kullanım:|Topicnotfound.htm işleme için kullanılan metin öğeleri (dize)|  
 |**Öğesi**|**Değer**|  
 |TopicNotFoundTitle|İstenen konu bilgisayarınızda bulunamıyor.|  
-|TopicNotFoundViewOnlineText|\<p > istediğiniz konu bilgisayarınızda bulunamadı, ancak yapabilecekleriniz \<bir href = "{0}" {1} > konuyu çevrimiçi görüntüleyin\</a >.\< /p >|  
-|TopicNotFoundDownloadContentText|\<p > Gezinti Bölmesi benzer konulara bağlantılar için bkz: veya \<bir href = "{0}" {1} > Yönet sekmesini\</a > bilgisayarınıza içerik indirmek için.\< /p >|  
+|TopicNotFoundViewOnlineText|\<p > istediğiniz konu bilgisayarınızda bulunamadı, ancak yapabilecekleriniz \<bir href = "{0}" {1}> konuyu çevrimiçi görüntüleyin\</a >.\< /p >|  
+|TopicNotFoundDownloadContentText|\<p > benzer konulara bağlantılar için Gezinti bölmesine bakın veya \<bir href = "{0}" {1}> Yönet sekmesini\</a > bilgisayarınıza içerik indirmek için.\< /p >|  
 |TopicNotFoundText|\<p > istediğiniz konu bilgisayarınızda bulunamadı. \</p >|  
 |Özellik:|**Konu bozuk denetimi**|  
 |Kullanım:|Topiccorrupted.htm işleme için kullanılan metin öğeleri (dize)|  
@@ -506,7 +506,7 @@ Not: "{n}" tarafından belirtildiği kodu bağımlılıklarını değişkenlerin
 |**Öğesi**|**Değer**|  
 |HomePageTitle|Yardım Görüntüleyicisi giriş|  
 |HomePageIntroduction|\<p > Microsoft Yardım Görüntüleyici bir önemli bilgi kaynağı olarak Microsoft araçları, ürünleri, teknolojileri ve hizmetleri kullanan herkes için hoşgeldiniz. Yardım Görüntüleyicisi'ni nasıl yapılır ve başvuru bilgileri, örnek kod, teknik makaleler ve daha fazla bilgi için erişmenizi sağlar. İçindekiler göz gereken içeriği bulmak için tam metin araması kullanın ya da anahtar sözcük dizini kullanarak içerikte gezinin. \</p >|  
-|HomePageContentInstallText|\<p >\<br / > kullanım \<bir href = "{0}" {1} > içeriği yönetmek\</a > sekmesinde aşağıdakileri yapın:\<ul >\<li > içeriği bilgisayarınıza eklemek.\< /li >\<li > yerel içeriğinize Güncelleştirmeleri denetle.\< /li >\<li > içeriği bilgisayarınızdan kaldırın.\< /li >\</ul >\</p >|  
+|HomePageContentInstallText|\<p >\<br / > kullanım \<bir href = "{0}" {1}> yönetmek içerik\</a > sekmesinde aşağıdakileri yapın:\<ul >\<li > içeriği bilgisayarınıza eklemek.\< /li >\<li > yerel içeriğinize Güncelleştirmeleri denetle.\< /li >\<li > içeriği bilgisayarınızdan kaldırın.\< /li >\</ul >\</p >|  
 |HomePageInstalledBooks|Yüklü defterleri|  
 |HomePageNoBooksInstalled|İçerik bilgisayarınızda bulundu.|  
 |HomePageHelpSettings|Yardım içerik ayarları|  

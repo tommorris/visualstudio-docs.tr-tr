@@ -17,14 +17,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84166ed96fb49567f4ede3e8e0c4b7e8ba3cc814
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1179f1fa6b642f7f2523699332ec64ccc13e4b8f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142298"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233561"
 ---
-# <a name="signing-vsix-packages"></a>VSIX paket imzalama
+# <a name="signing-vsix-packages"></a>VSIX Paketlerini İmzalama
 Uzantı derlemeleri Visual Studio'da çalıştırabilirsiniz ancak bunu yapmak için iyi bir uygulama olmasından önce oturum açmanız gerekmez.  
   
  Uzantınızı güvenli ve ile değiştirilmediğinden emin olmak istiyorsanız, bir dijital imza VSIX paket ekleyebilirsiniz. Bir VSIX imzalandığında VSIX yükleyici, imza hakkında daha fazla bilgi artı imzalanmasını belirten bir ileti görüntüler. VSIX içeriğini değiştirilmiş ve VSIX yeniden imzalı değil, VSIX yükleyici imzası geçerli değil gösterir. Yükleme durdurulmadı, ancak kullanıcı uyarılır.  
@@ -39,7 +39,7 @@ Uzantı derlemeleri Visual Studio'da çalıştırabilirsiniz ancak bunu yapmak i
   
 1.  VSIX bir projeye ekleyin.  
   
-2.  Çözüm Gezgini'nde, proje düğümüne sağ tıklayın seçme **Ekle &#124; NuGet paketlerini Yönet**.  NuGet ve NuGet paketleri bakın ekleme hakkında daha fazla bilgi için bkz: [NuGet belgelerine](/NuGet) ve [Paket Yöneticisi kullanıcı Arabirimi](/NuGet/Tools/Package-Manager-UI) Konular.  
+2.  Çözüm Gezgini'nde, proje düğümüne sağ tıklayın seçme **Ekle &#124; NuGet paketlerini Yönet**.  NuGet ve NuGet ekleme hakkında daha fazla bilgi için bkz: paketleri [NuGet belgelerine](/NuGet) ve [Paket Yöneticisi kullanıcı Arabirimi](/NuGet/Tools/Package-Manager-UI) Konular.  
   
 3.  VisualStudioExtensibility gelen VSIXSignTool arayın ve NuGet paketini yükleyin.  
   

@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21e94a842ce4c2b45dd746c96f8e4a84f479a84d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238392"
 ---
-# <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>İzlenecek yol: Bir SharePoint Proje Öğesi Türünü Genişletme
+# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: bir SharePoint proje öğesi türünü genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te iş verileri bağlantı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Bu proje öğesi kullanarak bir model oluşturduğunuzda varsayılan olarak, veri modelinde kullanıcılara görüntülenmez. Ayrıca kullanıcıların verileri görmesine izin ver SharePoint'te dış liste oluşturmanız gerekir.  
   
  Bu kılavuzda, bir uzantı için oluşturacağınız **iş verileri bağlantı modeli** proje öğesi. Geliştiriciler uzantısını verileri BDC modeli görüntüler kendi projesinde dış liste oluşturmak için kullanabilirsiniz. Bu kılavuz aşağıdaki görevler gösterilmiştir:  
   
 -   Visual Studio uzantısı oluşturma iki ana görevleri gerçekleştirir:  
   
-    -   Bir BDC modeli verileri görüntüleyen dış liste oluşturur. Uzantı listesi tanımlayan bir Elements.xml dosyası oluşturmak için SharePoint Proje sisteminin için nesne modeli kullanır. Böylece BDC modeli ile birlikte dağıtılan projeye de dosyası ekler.  
+    -   Bir BDC modeli verileri görüntüleyen dış liste oluşturur. Uzantısı oluşturmak için SharePoint Proje sisteminin nesne modelini kullanan bir *Elements.xml* listesi tanımlayan dosyası. Böylece BDC modeli ile birlikte dağıtılan projeye de dosyası ekler.  
   
     -   Bir kısayol menü öğesine ekler **iş verileri bağlantı modeli** proje öğelerinde **Çözüm Gezgini**. Geliştiriciler BDC modeli için dış liste oluşturmak için bu menü öğesi tıklatabilirsiniz.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
 -   BDC modeli için XML şeması. Daha fazla bilgi için bkz: [BDC modeli altyapı](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
-## <a name="creating-the-projects"></a>Proje oluşturma  
+## <a name="create-the-projects"></a>Projeleri oluşturma
  Bu izlenecek yolu tamamlamak için iki proje oluşturmanız gerekir:  
   
 -   Proje öğesi uzantısı dağıtmak için VSIX paketi oluşturmak için bir VSIX proje.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Başlat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
+2.  Menü çubuğunda seçin **dosya** > **yeni** > **proje**.  
   
 3.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C#** veya **Visual Basic** düğümleri ve ardından **genişletilebilirlik** düğümü.  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Class1 kod dosyasının projeden silin.  
   
-## <a name="configuring-the-extension-project"></a>Uzantı projesi yapılandırma  
+## <a name="configure-the-extension-project"></a>Uzantı projesi yapılandırın
  Proje öğesi uzantısı oluşturma için kod yazmadan önce ve uzantı projesi derleme başvurularını kod dosyaları ekleyin.  
   
 #### <a name="to-configure-the-project"></a>Projeyi yapılandırmak için  
@@ -112,7 +113,7 @@ ms.lasthandoff: 04/16/2018
   
     -   GenerateExternalDataLists  
   
-2.  BdcProjectItemExtension projesini seçin ve ardından, menü çubuğunda, **proje**, **Başvuru Ekle**.  
+2.  BdcProjectItemExtension projesini seçin ve ardından, menü çubuğunda, **proje** > **Başvuru Ekle**.  
   
 3.  Altında **derlemeleri** düğümü seçin **Framework** düğümü ve her biri aşağıdaki derlemeler için onay kutusunu seçin:  
   
@@ -126,12 +127,12 @@ ms.lasthandoff: 04/16/2018
   
 5.  Seçin **Tamam** düğmesi.  
   
-## <a name="defining-the-project-item-extension"></a>Proje öğesi uzantısı tanımlama  
+## <a name="define-the-project-item-extension"></a>Proje öğesi uzantısı tanımlayın
  Uzantısı tanımlayan bir sınıf oluşturma **iş verileri bağlantı modeli** proje öğesi. Sınıf Implements uzantısı tanımlamak için <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> arabirimi. Varolan bir proje öğesi türünü genişletme istediğinizde bu arabirimi uygular.  
   
 #### <a name="to-define-the-project-item-extension"></a>Proje öğesi uzantısı tanımlamak için  
   
-1.  Aşağıdaki kodu yapıştırın ProjectItemExtension kod dosyası.  
+1.  Aşağıdaki kod ProjectItemExtension kod dosyasına yapıştırın.  
   
     > [!NOTE]  
     >  Bu kod ekledikten sonra projeyi bazı derleme hataları sahip olur. Sonraki adımlarda kodu eklediğinizde, bu hataları kaybolur.  
@@ -139,7 +140,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]  
   
-## <a name="creating-the-external-data-lists"></a>Dış veri listeleri oluşturma  
+## <a name="create-the-external-data-lists"></a>Dış veri listeleri oluşturma
  Kısmi tanımlaması Ekle `GenerateExternalDataListsExtension` her varlık için bir dış veri listesi BDC modeli oluşturur sınıfı. Dış veri listesi oluşturmak için bu kodu ilk BDC modeli varlık verilerde BDC modeli dosyası XML verilerinde ayrıştırarak okur. Ardından, BDC modeli üzerine kurulmuştur ve bu liste örneği projeye ekler bir liste örneği oluşturur.  
   
 #### <a name="to-create-the-external-data-lists"></a>Dış veri listeleri oluşturmak için  
@@ -154,9 +155,9 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-build-the-solution"></a>Çözümü derlemek için  
   
-1.  Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
+1.  Menü çubuğunda seçin **yapı** > **yapı çözümü**.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-project-item-extension"></a>Proje öğesi uzantısı dağıtmak için VSIX paket oluşturma  
+## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>Proje öğesi uzantısı dağıtmak için VSIX paket oluşturma
  Uzantıyı dağıtmak için VSIX paketi oluşturmak için çözümünüz VSIX proje kullanın. İlk olarak VSIX paketi VSIX projeye dahil source.extension.vsixmanifest dosyasını değiştirerek yapılandırın. Çözümü derledikten sonra VSIX paketi oluşturun.  
   
 #### <a name="to-configure-and-create-the-vsix-package"></a>Yapılandırmak ve VSIX paketi oluşturmak için  
@@ -184,7 +185,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  İçinde **proje** listesinde, seçin **BdcProjectItemExtension**ve ardından **Tamam** düğmesi.  
   
-9. Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
+9. Menü çubuğunda seçin **yapı** > **yapı çözümü**.  
   
 10. Proje derlenir ve hatasız oluşturulduğunu doğrulayın.  
   
@@ -192,7 +193,7 @@ ms.lasthandoff: 04/16/2018
   
      Varsayılan olarak, yapı çıktı klasördür... Proje dosyasını içeren klasörü altındaki \bin\Debug klasörünü.  
   
-## <a name="testing-the-project-item-extension"></a>Proje öğesi uzantısı test etme  
+## <a name="test-the-project-item-extension"></a>Proje öğesi uzantısı test
  Şimdi proje öğesi uzantısı test etmek hazırsınız. İlk olarak, Visual Studio'nun deneysel örneği uzantısı projesinde hata ayıklamayı Başlat. Ardından, bir BDC modeli için dış liste oluşturmak için Visual Studio'nun deneysel örneği uzantı kullanın. Son olarak, beklendiği gibi çalıştığını doğrulamak için SharePoint sitesinde dış listesini açın.  
   
 #### <a name="to-start-debugging-the-extension"></a>Hata ayıklama uzantısı başlatmak için  
@@ -203,13 +204,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  GenerateExternalDataLists kod dosyasını açın ve daha sonra bir kesme noktası kod ilk satırı ekleyin `GenerateExternalDataLists_Execute` yöntemi.  
   
-4.  F5 tuşuna seçerek veya menü çubuğundaki hata ayıklama, seçme Başlat **hata ayıklama**, **hata ayıklamayı Başlat**.  
+4.  Seçerek hata ayıklamayı Başlat **F5** anahtar veya menü çubuğu seçme **hata ayıklama** > **hata ayıklamayı Başlat**.  
   
      Visual Studio %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External veri listesi Generator\1.0 uzantıyı yükleyen ve Visual Studio Deneysel bir örneğini başlatır. Proje öğesi Visual Studio'nun bu örnekte test edeceğiz.  
   
 #### <a name="to-test-the-extension"></a>Uzantı sınamak için  
   
-1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **dosya**, **yeni**, **proje**.  
+1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **dosya** > **yeni** > **proje**.  
   
 2.  İçinde **yeni proje** iletişim kutusunda, genişletin **şablonları** düğümünü genişletin **Visual C#** düğümü, genişletin **SharePoint** düğümü ve ardından seçin **2010**.  
   
@@ -231,9 +232,9 @@ ms.lasthandoff: 04/16/2018
   
 11. Visual Studio'nun diğer örnek kodda, kümesinde kesme noktası durdurduğunu doğrulayın `Initialize` ProjectItemExtension kod dosyasının yöntemi.  
   
-12. Visual Studio durdurulmuş örneğini seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama**, **devam** projede hataları ayıklamak devam etmek için.  
+12. Visual Studio durdurulmuş örneğini seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama** > **devam** projede hataları ayıklamak devam etmek için.  
   
-13. Visual Studio Deneysel örneğini seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama**, **hata ayıklamayı Başlat** oluşturmak, dağıtmak ve çalıştırmak  **TestBDCModel** projesi.  
+13. Visual Studio Deneysel örneğini seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama** > **hata ayıklamayı Başlat** oluşturmak, dağıtmak ve çalıştırmak **TestBDCModel** projesi.  
   
      Varsayılan sayfanın hata ayıklama için belirtilen SharePoint sitesi için web tarayıcısı açılır.  
   
@@ -243,11 +244,11 @@ ms.lasthandoff: 04/16/2018
   
 16. TestBDCModel proje açtığı Visual Studio örneğinde için kısayol menüsünü açın **TestBDCModel** düğümünde **Çözüm Gezgini**ve ardından **dış veri oluştur Liste**.  
   
-17. Visual Studio'nun diğer örnek kodda, kümesinde kesme noktası durdurduğunu doğrulayın `GenerateExternalDataLists_Execute` yöntemi. Seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama**, **devam** projede hataları ayıklamak devam etmek için.  
+17. Visual Studio'nun diğer örnek kodda, kümesinde kesme noktası durdurduğunu doğrulayın `GenerateExternalDataLists_Execute` yöntemi. Seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama** > **devam** projede hataları ayıklamak devam etmek için.  
   
 18. Visual Studio'nun deneysel örneği adlı bir liste örneği ekler **Entity1DataList** TestBDCModel proje ve örnek de oluşturur adlı bir özellik **Feature2** listesi örneği.  
   
-19. Seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama**, **hata ayıklamayı Başlat** oluşturmak için dağıtmak ve TestBDCModel projesini çalıştırın.  
+19. Seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama** > **hata ayıklamayı Başlat** oluşturmak için dağıtmak ve TestBDCModel projesini çalıştırın.  
   
      Hata ayıklama için kullanılan SharePoint sitesinin varsayılan sayfasına web tarayıcısı açılır.  
   
@@ -259,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 22. Web tarayıcısını kapatın.  
   
-## <a name="cleaning-up-the-development-computer"></a>Geliştirme bilgisayarı temizleme  
+## <a name="clean-up-the-development-computer"></a>Geliştirme bilgisayarı temizleme
  Proje öğesi uzantısı test ettikten sonra BDC modeli ve dış liste SharePoint sitesinden ve proje öğesi uzantısı Visual Studio'dan kaldırın.  
   
 #### <a name="to-remove-the-external-data-list-from-the-sharepoint-site"></a>Dış veri listesi SharePoint sitesinden kaldırmak için  
@@ -276,13 +277,13 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>BDC modeli SharePoint sitesinden kaldırmak için  
   
-1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **yapı**, **Geri Al**.  
+1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **yapı** > **Geri Al**.  
   
      Visual Studio BDC modeli SharePoint sitesinden ortadan kaldırır.  
   
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>Proje öğesi uzantısı Visual Studio'dan kaldırmak için  
   
-1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **Araçları**, **Uzantılar ve güncelleştirmeler**.  
+1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.  
   
      **Uzantılar ve güncelleştirmeler** iletişim kutusu açılır.  
   
@@ -294,7 +295,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Visual Studio (deneysel örneği ve GenerateExternalDataLists çözüm açıksa örneği) hem örneklerini kapatın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
  [İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [İş Verileri Bağlantı Modeli Tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  

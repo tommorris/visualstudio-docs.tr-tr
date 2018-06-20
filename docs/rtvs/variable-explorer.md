@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 467099581a746005ecbe686b5806943b3f16ac7e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5af85e8112a4017465329b0284772dd6514ba415
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238455"
 ---
 # <a name="variable-explorer"></a>Değişken Gezgini
 
-**Değişken Explorer** kullanılarak açılır pencere, **R Araçlar > Windows > değişken Explorer** (veya Ctrl +, kullandıysanız 8 **R Araçlar > veri bilimi ayarları**), tüm gösterir belirli bir kapsamda geçerli R oturumdaki değişkenleri. Örneğin, değişken Explorer açılan ve aşağıdaki satırları girerseniz [etkileşimli pencere](interactive-repl-for-r-in-visual-studio.md):
+**Değişken Explorer** kullanılarak açılır pencere **R Araçları** > **Windows** > **değişken Explorer** (veya **Ctrl**+**8** , kullandıysanız **R Araçları** > **veri bilimi ayarları**), tüm gösterir belirli bir kapsamda geçerli R oturumdaki değişkenleri. Örneğin, değişken Explorer açılan ve aşağıdaki satırları girerseniz [etkileşimli pencere](interactive-repl-for-r-in-visual-studio.md):
 
 ```R
 x <- 42
@@ -34,7 +35,7 @@ Oturumda tanımlanan daha karmaşık bir R veri çerçevesi varsa, verileri gide
 
 ![Genişletilmiş Görünüm değişken Gezgini](media/variable-explorer-expanded-results.png)
 
-Değişkenleri silmek için sağ tıklatın ve seçin **silmek**, değişkeni seçin veya Delete tuşuna basın.
+Değişkenleri silmek için sağ tıklatın ve seçin **silmek**, veya değişken seçip tuşuna **silmek** anahtarı.
 
 Ayrıca bir gözlem artımlı arama özelliğini kullanarak bir veri çerçevesinde arayabilirsiniz. İlk olarak, arama yapmak istediğiniz veri çerçevesinde düğümleri genişletin, sonra arama kutusuna arama terimlerini girin.
 
@@ -44,9 +45,9 @@ Veri genellikle tablo olduğundan, herhangi bir karmaşık veri türü ayrı bir
 
 ![Değişken Explorer Tablo görünümü](media/variable-explorer-table-view.png)
 
-Bir sütun başlığını tıklatarak veriler (artan veya azalan arasında değişen) sütuna göre sıralanır. Shift tuşunu basılı tutarak ve ek sütunlarda tıklatarak da sıralama için bu sütunları ekler. Bir sütun Shift olmadan tek sütun sıralama için döndürür.
+Bir sütun başlığını tıklatarak veriler (artan veya azalan arasında değişen) sütuna göre sıralanır. Basılı **Shift** ve ek sütunlarda tıklatarak ekler bu sütunları da sıralama için. Bir sütun olmadan **Shift** tek sütun sıralama için döndürür.
 
-Sütun başlıklarını tıklatın dizisi sıralama gerçekleştirildiği sırasını belirler. Örneğin, SHIFT tuşunu **cyl** sütun sonra Shift tuşunu **mpg** sütunu iki kez silindir artan veya azalan galon başına mil liste sıralar:
+Sütun başlıklarını tıklatın dizisi sıralama gerçekleştirildiği sırasını belirler. Örneğin, **SHIFT tuşunu** **cyl** sütununda, ardından **SHIFT tuşunu** **mpg** sütunu iki kez artan liste sıralar Silindir ve azalan Mil-başına-galon:
 
 ![İki sütuna göre sıralama verilerinin Tablo görünümü.](media/variable-explorer-table-view-sorting.png)
 
@@ -54,7 +55,7 @@ Değişken Gezgini ve tablo görünümlerini ayrı Visual Studio windows olduğu
 
 ## <a name="open-in-excel-or-other-csv-capable-application"></a>Excel'de Aç (veya başka CSV özellikli bir uygulama)
 
-Daha fazla işleme ve analizi için sık sık oturum değişkenleri CSV'ye dışarı aktarmak yararlıdır. Dışarı aktarma küçük Excel simge ile yapılır (![Excel dışarı aktarma simgesine](media/variable-explorer-excel-icon.png)) her düğüme değişken Gezgini'nde veya öğeyi sağ tıklatıp seçerek yanındaki **CSV uygulamasında açık**. Simgesini seçerek Yazar verileri yeni bir CSV dosyasına `%userprofile%\Documents\RTVS_CSV_Exports` klasörünü ve ardından başlatır ne olursa olsun uygulamada açılır bu dosyayı ilişkili olduğu `.csv` uzantısı.
+Daha fazla işleme ve analizi için sık sık oturum değişkenleri CSV'ye dışarı aktarmak yararlıdır. Dışarı aktarma küçük Excel simge ile yapılır (![Excel dışarı aktarma simgesine](media/variable-explorer-excel-icon.png)) her düğüme değişken Gezgini'nde veya tarafından yanındaki **sağ** öğeyi seçerek **CSV uygulamasında açık**. Simgesini seçerek Yazar verileri yeni bir CSV dosyasına *%userprofile%\Documents\RTVS_CSV_Exports* klasörünü ve ardından başlatır ne olursa olsun uygulamada açılır bu dosyayı ilişkili olduğu *.csv*uzantısı.
 
 ## <a name="scopes"></a>Kapsamları
 
@@ -68,9 +69,9 @@ Hata ayıklayıcı (değişken Explorer otomatik olarak ayıklanacak kod işlevi
 
 Yerel değişkenler bir işlevde gösteren ayıklayıcısında kod adım adım olarak değişken Explorer işlev kapsamı otomatik olarak değişir.
 
-## <a name="importing-data-into-variable-explorer"></a>Değişken Explorer'a veri alma
+## <a name="import-data-into-variable-explorer"></a>Değişken Explorer'a veri alma
 
-İki komutları değişken Explorer araç çubuğunda, ayrıca aracılığıyla kullanılabilen **R Araçlar > veri** menüsünde alma dış CSV kümelerine R oturumunuz: **Web URL'si R oturumundan içeri aktarma kümesine** ve **alma Dataset R oturumuna metin dosyasından**. 
+İki komutları değişken Explorer araç çubuğunda, ayrıca aracılığıyla kullanılabilen **R Araçları** > **veri** menüsünde alma dış CSV kümelerine R oturumunuz: **alma Web URL R oturumundan kümesine** ve **alma Dataset R oturumuna metin dosyasından**.
 
 İçeri aktarmak için CSV dosyası tanımladıktan sonra Visual Studio görüntüler bir **alma Dataset** o veri dosyasını nasıl ayrıştırılır denetlemek için seçenekleri sahip iletişim (diğer bir deyişle, alan ayırıcı nedir ve tırnak işaretleri nasıl ele alınacağını). Aynı zamanda içeri aktarılan veri çerçevesi ve özgün veri dosyası önizlemesini görebilirsiniz:
 

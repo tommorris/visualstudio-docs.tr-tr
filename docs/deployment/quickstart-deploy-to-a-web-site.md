@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7550c2e3b7d635d20df342558537e7a3dbd7d619
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766558"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234705"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Visual Studio yayımlama Aracı'nı kullanarak bir web sitesi için bir web uygulaması veya .NET Core uygulama yayımlama
 
@@ -33,7 +33,7 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
-1. Visual Studio'da, **Dosya > Yeni proje**.
+1. Visual Studio'da, **dosya** > **yeni proje**.
 
 1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET çekirdek Web uygulaması**ve ardından **Tamam**.
 
@@ -43,7 +43,7 @@ ASP.NET, ASP.NET Core, .NET Core ve Visual Studio'da Python uygulamalar için ş
 
     Visual Studio projesi oluşturur.
 
-1. Seçin **Yapı > Yapı çözümü** Projeyi derlemek için.
+1. Seçin **yapı** > **yapı çözümü** Projeyi derlemek için.
 
 ## <a name="publish-to-a-web-site"></a>Bir web sitesi için yayımlama
 

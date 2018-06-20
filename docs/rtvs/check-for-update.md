@@ -10,17 +10,18 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 20811c10ddad6df18512f23aa1312f154c2e294b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8bd48533cd50b198ce8e70819fa4bb5d991b098e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238396"
 ---
 # <a name="rtvs-current-version"></a>RTVS geçerli sürüm
 
-Son güncelleştirmeden bu sayfaya, Visual Studio (RTVS) ISS R Araçları'nın en son sürümü itibariyle **1.0.31108.1213**. Sürümünüz, Visual Studio ve kullandığınız Önizleme kanal sürümüne bağlı olarak değişebilir.
+Bu sayfaya son güncelleştirme itibariyle R araçları için Visual Studio (RTVS), en son sürümüdür **1.0.31108.1213**. Sürümünüz, Visual Studio ve kullandığınız Önizleme kanal sürümüne bağlı olarak değişebilir.
 
-Giderek sürümünüzü kontrol edebilirsiniz **Yardım > hakkında** Visual Studio ve aşağı kaydırma **R araçları Visual Studio için** girişi:
+Giderek sürümünüzü kontrol edebilirsiniz **yardımcı** > **hakkında** Visual Studio ve aşağı kaydırma **R araçları Visual Studio için** girişi:
 
 ![Visual Studio (VS2017) RTVS sürümünde inceleniyor](media/current-version.png)
 
@@ -30,4 +31,4 @@ Visual Studio 2015 için en son yükleyici kullanılabilir [rtvs/aka.ms-geçerli
 
 Bkz: [yükleme](installing-r-tools-for-visual-studio.md) Visual Studio ve Windows gereksinimleri için.
 
-Microsoft R açın ve Microsoft R Server güncelleştirmeler için bkz: [Microsoft R ürünler.](http://aka.ms/rtvs-msft-r)
+Microsoft R açın ve Microsoft Machine Learning sunucuda (önceki adıyla Microsoft R Server) güncelleştirmeler için bkz: [Microsoft R ürünler.](http://aka.ms/rtvs-msft-r)

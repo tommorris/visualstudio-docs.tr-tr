@@ -19,19 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c546d7e4287fc47a3770baa306a43a1631be2f06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 81bd18d10b91f06636ad6bba8230ec29b0d81312
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558938"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235160"
 ---
-# <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista'da ClickOnce Dağıtımı
-Visual Studio'da uygulamaları oluşturma kodlanmış ikili olarak XML verileri uygulamanın yürütülebilir dosyası içinde Windows Vista kullanıcı hesabı denetimi (UAC) normalde gömülü bir bildirim üretir. ClickOnce ve Kayıtsız COM uygulamaları harici bildirim gerektirdiğinden, Visual Studio projeleri gömülü bir bildirim yerine UAC verileri içeren bu tür için bir dosya oluşturur. Varsayılan olarak, Visual Studio, bilgileri dış UAC bildirim bilgileri (ClickOnce ve Kayıtsız COM dağıtımı) oluşturmak veya uygulamanın yürütülebilir dosyasına (tüm diğer durumlarda) katıştırmak için app.manifest adlı dosyadan kullanır. Visual Studio bildirim oluşturmak üzere aşağıdaki seçenekleri sağlar:  
+# <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista'da ClickOnce dağıtımı
+
+Visual Studio'da uygulamaları oluşturma kodlanmış ikili olarak XML verileri uygulamanın yürütülebilir dosyası içinde Windows Vista kullanıcı hesabı denetimi (UAC) normalde gömülü bir bildirim üretir.  ClickOnce ve Kayıtsız COM uygulamaları harici bir bildirim gerektirdiğinden, Visual Studio gömülü bir bildirim yerine UAC verisi içeren bu proje için bir dosya oluşturur. ClickOnce ve Kayıtsız COM dağıtımları için Visual Studio harici UAC bildirim bilgileri oluşturmak için app.manifest adlı dosyadan bilgileri kullanır. Tüm diğer durumlarda, Visual Studio uygulama yürütülebilir dosyada UAC veri katıştırır. 
+
+Visual Studio bildirim oluşturmak üzere aşağıdaki seçenekleri sağlar:  
   
--   Gömülü bir bildirim kullanın. UAC veri uygulamanın yürütülebilir dosyasına katıştırma ve normal kullanıcı olarak çalıştırın.  
+-   Gömülü bir bildirim kullanın. UAC veri uygulamanın yürütülebilir dosyasına katıştırma ve normal bir kullanıcı olarak çalıştırın.  
   
-     Bu, (ClickOnce kullanmadığınız sürece) varsayılan ayardır. Bu ayar, Visual Studio faaliyet normal şekilde Windows Vista'da destekleyecek; diğer bir deyişle, her iki kullanarak bir iç ve dış bildirimi nesil `AsInvoker`.  
+     Bu, (ClickOnce kullanmadığınız sürece) varsayılan ayardır. Bu ayar, Visual Studio faaliyet normal şekilde Windows Vista'da destekler, hem iç hem de dış nesil kullanarak bildirim `AsInvoker`.  
   
 -   Harici bildirim kullanın. Harici bildirim app.manifest kullanarak oluşturun.  
   
@@ -43,11 +46,11 @@ Visual Studio'da uygulamaları oluşturma kodlanmış ikili olarak XML verileri 
   
  Yeni özellikler mevcuttur **uygulama** sayfası Proje Tasarımcısı (Visual C# projeleri yalnızca için) ve MSBuild proje dosyası biçiminde.  
   
- Visual Studio IDE'de UAC bildirim üretme yapılandırma yöntemi (Visual C# ve Visual Basic) proje türüne göre değişebileceğini unutmayın.  
+ Visual Studio IDE'de UAC bildirim üretme yapılandırma yöntemi proje türü (Visual C# veya Visual Basic) bağlı olarak farklılık gösterir.  
   
- Visual C# projeleri için bildirim üretme yapılandırma hakkında daha fazla bilgi için bkz: [uygulama sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+   * Visual C# projeleri için bildirim üretme yapılandırma hakkında daha fazla bilgi için bkz: [uygulama sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
- Visual Basic projeleri için bildirim üretme yapılandırma hakkında daha fazla bilgi için bkz: [uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+   * Visual Basic projeleri için bildirim üretme yapılandırma hakkında daha fazla bilgi için bkz: [uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   

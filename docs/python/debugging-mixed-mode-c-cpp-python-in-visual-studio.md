@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c6556ab99f7c72407da9915d73e7a19e6dd45da
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583157"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234602"
 ---
 # <a name="debugging-python-and-c-together"></a>Python ve C++ birlikte hata ayıklama
 
@@ -64,7 +64,7 @@ Karışık mod hata ayıklama özelliği, bu makalede anlatıldığı şunlardı
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Karışık mod C/C++ projesinde hata ayıklamayı etkinleştir
 
-Visual Studio 2017 (sürüm 15,5 ve üzeri) destekleyen bir C/C++ projesinde karışık modda hata ayıklama (örneğin, zaman zaman [python.org üzerinde açıklandığı gibi başka bir uygulamada Python katıştırma](https://docs.python.org/3/extending/embedding.html)). Karışık mod hata ayıklamayı etkinleştirmek için "Python/yerel hata ayıklayıcı" başlatmak için C/C++ projesi yapılandırın:
+Visual Studio 2017 (sürüm 15,5 ve üzeri) destekleyen bir C/C++ projesinde karışık modda hata ayıklama (örneğin, [python.org üzerinde açıklandığı gibi başka bir uygulamada Python katıştırma](https://docs.python.org/3/extending/embedding.html)). Karışık mod hata ayıklamayı etkinleştirmek için "Python/yerel hata ayıklayıcı" başlatmak için C/C++ projesi yapılandırın:
 
 1. Çözüm Gezgini'nde C/C++ projesine sağ tıklatın ve **özellikleri**
 1. Seçin **hata ayıklama** sekmesinde, "Python/yerel hata ayıklayıcı" seçin **başlatmak için hata ayıklayıcı**seçip **Tamam**.

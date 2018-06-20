@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238384"
 ---
 # <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
@@ -33,7 +34,7 @@ BİR. Hayır.
 BİR. Kesinlikle. Aslında, popüler kişiler r ile çalışmak için birkaç İşte
 
 - [VsVim VIM anahtar bağlamaları için](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
-- [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
 - [Markdown Düzenleyicisi ile Canlı Önizleme](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 Bkz: [Visual Studio Market'te](https://marketplace.visualstudio.com/) daha fazla bulunamıyor.
@@ -50,7 +51,7 @@ BİR. RTVS 1.0 sürümünde yalnızca İngilizce. 1.1 sürüm Visual Studio kend
 
 **Q. I gerçekten geçerli Visual Studio ayarlarımı gibi çalışır, ancak yeni veri bilimi ayarları istiyor. Ne yapmalıyım?**
 
-BİR. Geçerli Visual Studio ayarlarınızı kullanarak kaydetmek **Araçlar > içeri ve dışarı aktarma ayarları...** , veri bilimi ayarlarına geçiş yapın. Kaydedilmiş ayarları geri yüklemek için kullanmak **içeri ve dışarı aktarma ayarları...**  yeniden komutu.
+BİR. Geçerli Visual Studio ayarlarınızı kullanarak kaydetmek **Araçları** > **içeri ve dışarı aktarma ayarları**, veri bilimi ayarlarına geçiş yapın. Kaydedilmiş ayarları geri yüklemek için kullanmak **içeri ve dışarı aktarma ayarları** yeniden komutu.
 
 **Q. Visual Studio Proje bir ağ paylaşımında depolayabilir miyim?**
 
@@ -78,19 +79,19 @@ BİR. Hayır, RTVS yalnızca R Windows 64-bit sürümlerini çalıştıran 64 bi
 
 BİR. Evet, Visual Studio'ya tümleşik tüm kaynak denetim sistemi kullanabilirsiniz.
 
-**Q. Önerilen nelerdir `.gitignore` RTVS proje ayarlarını?**
+**Q. Önerilen nelerdir *.gitignore* RTVS proje ayarlarını?**
 
-BİR. Github tutar, ana depo önerilen `.gitignore` dosyaları. Burada görebilirsiniz: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+BİR. Github tutar, ana depo önerilen *.gitignore* dosyaları. Burada görebilirsiniz: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Uzak Hizmetleri
 
 Q. **Visual Studio'da uzaktan Hizmetleri nedir?**
 
-BİR. Visual Studio için Uzak R Hizmetleri, Windows veya Linux makine kurun ve ardından RTVS bağlanmak olanak sağlar. Bkz: [uzak çalışma alanları ayarlama](setting-up-remote-r-workspaces.md).
+BİR. Visual Studio için Uzak R Hizmetleri, Windows veya Linux makine kurun ve ardından RTVS bağlanmak olanak sağlar. Bkz: [uzak çalışma alanlarınızı ayarlamalarına](setting-up-remote-r-workspaces.md).
 
-Q. **RTVS Microsoft R sunucusuna bağlanabiliyor musunuz?**
+Q. **RTVS Microsoft Machine Learning sunucusuna bağlanabiliyor musunuz?**
 
-BİR. Hayır, Microsoft R Server farklı bir teknolojidir ve aynı bağlantı mekanizması olarak sağlamaz çünkü RTVS tarafından gerekli.
+BİR. Hayır, Microsoft ML Server farklı bir teknolojidir ve aynı bağlantı mekanizması olarak sağlamaz çünkü RTVS tarafından gerekli.
 
 Q. **Azure üzerinde veri bilimi VM görüntüsü kullanılarak oluşturulan VM RTVS bağlanabiliyor musunuz?**
 
@@ -98,7 +99,7 @@ BİR. Evet; [veri bilimi VM - Windows 2016](https://azure.microsoft.com/services
 
 Q, **yapabilirsiniz RTVS yüklü R ile uzak makineye bağlanmak?**
 
-Var olan bazı hizmet isteklerini dinlemek için uzak makinede R kod yürütmek için kodu alma ve sonuçları gönderme için istemci makine yedekleyin. Visual Studio için Uzak R Hizmetleri ne budur. Bkz: [uzak çalışma alanları ayarlama](setting-up-remote-r-workspaces.md).
+Var olan bazı hizmet isteklerini dinlemek için uzak makinede R kod yürütmek için kodu alma ve sonuçları gönderme için istemci makine yedekleyin. Visual Studio için Uzak R Hizmetleri ne budur. Bkz: [uzak çalışma alanlarınızı ayarlamalarına](setting-up-remote-r-workspaces.md).
 
 Q. **Uzak oturum nedir?**
 

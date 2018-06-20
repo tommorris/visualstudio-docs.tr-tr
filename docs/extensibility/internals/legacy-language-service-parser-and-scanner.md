@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a838b193689d480c7e02053dd67adb6bfbd2314f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52fb199af53d0fbbf30c0ae0dc6a2ad7083e4971
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134590"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234653"
 ---
-# <a name="legacy-language-service-parser-and-scanner"></a>Eski dil hizmeti Ayrıştırıcı ve tarayıcı
+# <a name="legacy-language-service-parser-and-scanner"></a>Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı
 Ayrıştırıcının dili hizmet Kalp ' dir. Yönetilen paket Framework (MPF) dil sınıfları görüntülenen kodu hakkında bilgi seçmek için bir dil Çözümleyicisi gerektirir. Bir Ayrıştırıcı metin sözcük belirteçlere ayırır ve türü ve işlevleri tarafından konusu belirteçleri tanımlar.  
   
 ## <a name="discussion"></a>Tartışma  
@@ -79,7 +79,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Ayraç eşleştirme için ayrıştırma  
  Bu örnek, kullanıcının girdiği bir kapanış ayracı eşleştirmek için denetim akışı gösterilmektedir. Bu işlem, renklendirme için kullanılan tarayıcı türünü belirteç ve belirtecin eşleşen ayraç işlemi olup olmadığını tetikleyebilir belirlemek için de kullanılır. Tetikleyici bulunursa, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi, eşleşen küme parantezi bulmak için çağrılır. Son olarak, iki küme ayraçları vurgulanır.  
   
- Küme ayraçları Tetikleyicileri adlarında kullanılır ve nedenleri ayrıştırma olsa bile, bu işlem için gerçek kaşlı sınırlı değildir. Eşleşen bir olması için belirttiğiniz eşleştirin karakterden oluşan herhangi bir çifti desteklenir. Örnekler (ve) \< ve >, ve [ve].  
+ Küme ayraçları Tetikleyicileri adlarında kullanılır ve nedenleri ayrıştırma olsa bile, bu işlem için gerçek kaşlı sınırlı değildir. Eşleşen bir çift olarak belirtilen herhangi bir çifti karakterleri desteklenir. Örnekler (ve) \< ve >, ve [ve].  
   
  Dil hizmeti eşleşen küme ayraçları destekler varsayalım.  
   

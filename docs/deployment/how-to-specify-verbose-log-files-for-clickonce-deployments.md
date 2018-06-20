@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8153625ec875cb54b0fc7b626d0cef61df2e9b71
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 857df921e928adae24abdce41ecdf9e697648643
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557989"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235043"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Nasıl yapılır: ClickOnce Dağıtımları İçin Ayrıntılı Günlük Dosyası Belirtme
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tüm dağıtımlar için etkinlik günlük dosyalarını korur. Bu günlükler yükleme, başlatma, güncelleştirme ve kaldırma için ilgili belge ayrıntılarını bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım. Ayrıntı düzeyini, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bu günlük dosyaları yazma işlemlerini Kayıt Defteri Düzenleyicisi'ni (**regedit.exe**) ayrıntı düzeyini belirtir.  
@@ -36,7 +36,7 @@ ms.locfileid: "31557989"
   
 1.  Açık **Regedit.exe**.  
   
-2.  Düğümüne gidin `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2.  Düğümüne gidin **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\dağıtım**.  
   
 3.  Gerekirse, adlı yeni bir dize değeri oluşturun `LogVerbosityLevel`.  
   

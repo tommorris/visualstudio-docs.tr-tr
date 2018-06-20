@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0e2fbdc3d48b39bc481a392adc654f38551d333d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751877"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233537"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL test etme
 
@@ -46,7 +46,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
     -   Test yöntemleri kullanarak sınıf halinde gruplandırılır `TEST_CLASS(YourClassName){...}`.
 
-         Testler, her test sınıfının bir örneği oluşturulur. Test yöntemleri belirtilmeyen bir sırayı denir. Önce ve sonra her modül, sınıf veya yöntemin çağrılması özel yöntemler tanımlayabilirsiniz. Daha fazla bilgi için bkz: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework kullanma](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) MSDN Kitaplığı'nda.
+         Testler, her test sınıfının bir örneği oluşturulur. Test yöntemleri belirtilmeyen bir sırayı denir. Önce ve sonra her modül, sınıf veya yöntemin çağrılması özel yöntemler tanımlayabilirsiniz. Daha fazla bilgi için bkz: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework kullanma](how-to-use-microsoft-test-framework-for-cpp.md) MSDN Kitaplığı'nda.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Testleri Test Explorer'da çalıştığını doğrulayın
 
@@ -113,7 +113,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 5.  Bildirilen işlevlerin en az uygulamaları ekleyin. Açık **RooterLib.cpp** ve aşağıdaki kodu ekleyin:
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -151,7 +151,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 3.  İçeri aktarılan işlevini kullanan bir test ekleyin. Aşağıdaki kodu ekleyin **unittest1.cpp**:
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 1.  Başka bir testine ekleme **unittest1.cpp**:
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
     3.  Kodu ekleyin **RooterLib.cpp** özel durumu yakalamak için:
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

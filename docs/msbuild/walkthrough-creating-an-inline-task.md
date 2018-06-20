@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f9813ce610979cd50a1ced7f510240299a612
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f906e6be7d45f3e386b2007c779c4b4906d7980e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575799"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234104"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>İzlenecek Yol: Satır İçi Göre Oluşturma
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. .NET Framework sürüm 4 ile başlayarak, proje dosyasında görevleri satır içi oluşturabilirsiniz. Görev barındırmak için ayrı bir derleme oluşturmak zorunda değildir. Daha fazla bilgi için bkz: [satır içi görevleri](../msbuild/msbuild-inline-tasks.md).  
@@ -235,7 +235,7 @@ MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluştu
   
 -   `Files` eşleşme için aranacak dosyaların listesini bir değere sahip gerekli öğe listesi giriş parametresi değil. Bu örnekte, `Files` ayarlanır `Compile` proje kaynak dosyalarını listeler öğesi.  
   
--   `Result` bir değere sahip bir çıktı parametresini normal ifadeyle eşleşen içeriğe sahip dosyaların listesi verilmiştir.  
+-   `Result` normal ifadeyle eşleşen içeriğe sahip dosyaların listesini bir değere sahip bir çıkış parametresidir.  
   
  Giriş parametresi değeri TestBuild hedef RegX görev çalıştırdığında ayarlanır. RegX görev her dosyasını okur ve normal ifade ile eşleşen dosyaları listesini döndürür. Bu liste olarak döndürülür `Result` MSBuild öğesi olarak gösterilen çıktı parametresi `MatchedFiles`.  
   

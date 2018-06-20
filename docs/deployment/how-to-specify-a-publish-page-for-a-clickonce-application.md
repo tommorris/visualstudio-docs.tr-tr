@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864d0ef0f4934e040722a9a9fc00ba7a54f3331c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20f7f09688fbeeb3ccd9d79b35dd334bdba888f5
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558015"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235017"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için bir Yayımlama Sayfası Belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, varsayılan bir Web sayfası (publish.htm) oluşturulur ve uygulama ile birlikte yayımlanır. Bu sayfa uygulama, uygulama ve/veya herhangi bir önkoşulu yüklemek için bir bağlantı ve bir Yardım konusu açıklayan bir bağlantı adını içeren [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. **Yayımla Sayfası** projeniz için özellik sağlar, Web sayfası için bir ad belirtmek, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
@@ -45,7 +45,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
   
 5.  İçinde **Yayımla Seçenekleri** iletişim kutusunda, olduğundan emin olun **açık dağıtım web sayfası sonra Yayımlama** onay kutusu seçilidir (varsayılan olarak seçili).  
   
-6.  İçinde **dağıtım web sayfası:** kutusunda, Web sayfası için bir ad girin ve ardından **Tamam**.  
+6.  İçinde **dağıtım web sayfası** kutusunda, Web sayfası için bir ad girin ve ardından **Tamam**.  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Yayımla Sayfası her yayımladığınızda başlamasını engellemek için  
   

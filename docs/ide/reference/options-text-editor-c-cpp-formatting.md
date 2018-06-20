@@ -1,6 +1,6 @@
 ---
 title: Seçenekler, Metin Düzenleyici, C/C++, Biçimlendirme
-ms.date: 11/04/2016
+ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,82 +11,47 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913413b4178a087c524ef26173fcbcc8c1d8b09b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946071"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235147"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Seçenekler, Metin Düzenleyici, C/C++, Biçimlendirme
-C veya C++ ortamında programlama yaparken Kod Düzenleyicisi'nin varsayılan davranışını değiştirmenizi sağlar.
+
+C veya C++ programlama yaparken Kod düzenleyicisinde varsayılan davranışını değiştirmek için bu özellik sayfalarını kullanın.
+
+[Biçimlendirme C++ özellik sayfaları](media/cpp-formatting.png)
 
  İçinde bu sayfaya erişmek için **seçenekleri** iletişim kutusunda, sol bölmede, genişletin **metin düzenleyici**, genişletin **C/C++** ve ardından **biçimlendirme** .
 
 > [!NOTE]
 > Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="general-page"></a>Genel sayfası
 
-## <a name="cc-options"></a>C/C++ Seçenekleri
- **Otomatik hızlı bilgi araç ipuçlarını etkinleştirme**
+Bu sayfa, siz yazarken biçimlendirme deyimleri ve blokları için seçenekleri vardır.
 
- Hızlı Bilgi IntelliSense özelliğini etkinleştirir ya da devre dışı bırakır.
+**Visual Studio 2017 15.7 ve sonraki sürümleri**: sayfasında de desteği için yapılandırma seçenekleri vardır [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) sürüm 5.0. ClangFormat stili ve bir .clang biçimi veya _clang biçimi dosyasında yapılandırılabilir kurallar kümesi göre kodunuzu biçimlendirmek kolaylaştıran bir yardımcı programdır.
 
-## <a name="inactive-code"></a>Pasif Kod
- **Etkin olmayan kod blokları Göster**
+### <a name="configuring-clangformat-options"></a>ClangFormat seçeneklerini yapılandırma
 
- Etkin değil olarak son kod `#ifdef` bildirimleri renklendirilen farklı tanımlamanıza yardımcı olması için.
+Visual Studio 2017 içinde 15.7 ve sonraki sürümleri, ClangFormat desteği varsayılan olarak etkindir. Tüm projeleriniz uygulamak için bu ortak biçimlendirme kuralları hangisinin seçebilirsiniz: LLVM, Google, Chromium, Mozilla veya WebKit. Özel biçim tanım .clang biçimi veya _clang biçimi dosyası da oluşturabilirsiniz. Proje klasöründe böyle bir dosya varsa, Visual Studio, tüm kaynak kodu dosyaları bu klasörde ve alt klasörlerine biçimlendirmek için kullanır. 
 
- **Etkin olmayan kod opaklık devre dışı bırak**
+Varsayılan olarak, Visual Studio arka planda çalışır clangformat.exe yazarken biçimlendirme uygular. Çağrılan biçimlendirme komutlarını çalıştırmak için yalnızca el ile belirtebilirsiniz **belgeyi Biçimlendir (Ctrl + K, Ctrl + D)** veya **Biçim Seçimi (Ctrl + K, Ctrl + F)**.
 
- Pasif kod saydamlık yerine renk kullanılarak tanımlanabilir.
 
- **Etkin olmayan kod opaklık yüzde**
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Girinti, yeni satırların aralık kaydırma sayfaları
 
- Pasif kod blokları için donukluk derecesi özelleştirilebilir.
-
-## <a name="indentation"></a>Girinti
- **Küme ayraçları Girintile**
-
- Kod bloğu, örneğin, bir işlev başladıktan sonra veya ENTER tuşuna bastığınızda küme ayraçları nasıl hizalandığını yapılandırabilirsiniz `for` döngü. Ayraçlar, kod bloğunun ilk karakteriyle hizalanabilir ya da girintili yapılabilir.
-
- **Sekmesinde Otomatik Girinti**
-
- SEKME tuşuna bastığınızda geçerli kod satırında ne olacağını yapılandırabilirsiniz. Satır girintili yapılır ya da sekme eklenir.
-
-## <a name="miscellaneous"></a>Çeşitli
- **Görev Listesi penceresi açıklamalarda listeleme**
-
- Düzenleyici, açık kaynak dosyalarını açıklamalardaki önceden ayarlı sözcükler için tarayabilir. Bir giriş oluşturur **görev listesi** bulduğu herhangi bir anahtar sözcük penceresi.
-
- **Belirteçleri eşleşen vurgulayın**
-
- İmleç bir ayracın yanında olduğunda, düzenleyici eşleşen ayracı vurgulayarak içindeki kodu daha kolay görmenizi sağlayabilir.
-
-## <a name="outlining"></a>Anahat Oluşturma
- **Anahat modu dosyalarını açtığınızda girin**
-
- Bir dosyayı metin düzenleyicisine getirdiğinizde, anahat oluşturma özelliğini etkinleştirebilirsiniz. Daha fazla bilgi için bkz: [anahat](../../ide/outlining.md). Bu seçenek belirtildiğinde, bir dosyayı açtığınızda anahat oluşturma özelliği etkinleştirilir.
-
- **#Pragma bölge bloklarını otomatik anahat oluşturma**
-
- Seçildiğinde, otomatik anahat oluşturma için bu seçeneği olduğunda [pragma yönergeleri](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword) etkinleştirilir. Bu, anahat modunda pragma bölge bloklarını genişletmenize veya daraltmanıza imkan tanır.
-
- **Otomatik deyimi bloklarını anahat oluşturma**
-
- Bu seçenek belirtildiğinde, aşağıdaki deyim yapıları için otomatik anahat oluşturma etkin olur.
-
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)
-
--   [switch Deyimi (C++)](/cpp/cpp/switch-statement-cpp)
-
--   [while Deyimi (C++)](/cpp/cpp/while-statement-cpp)
+Bu sayfaları çeşitli biçimlendirme özelleştirmeleri etkinleştirir, ancak ClangFormat etkinse, göz ardı edilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

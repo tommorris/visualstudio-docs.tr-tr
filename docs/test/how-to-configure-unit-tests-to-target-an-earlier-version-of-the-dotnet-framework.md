@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750746"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233496"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Nasıl yapılır: Birim Testlerini .NET Framework'ün Önceki Sürümünü Hedefleyecek Şekilde Yapılandırma
 
@@ -32,7 +32,7 @@ Microsoft Visual Studio test projesi oluşturduğunuzda, .NET Framework'ün en s
 
 **SharePoint uygulamalarını test etme**
 
-Yukarıda listelenen özellikleri de, yazma birim testleri ve Visual Studio kullanarak SharePoint uygulamaları için tümleştirme testleri sağlar. Visual Studio kullanarak SharePoint uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [SharePoint çözümleri oluşturma](/office-dev/office-dev/create-sharepoint-solutions), [oluşturma ve hata ayıklama SharePoint çözümlerini](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) ve [doğrulanıyor SharePoint kodunu ve hata ayıklama](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).
+Yukarıda listelenen özellikleri de, yazma birim testleri ve Visual Studio kullanarak SharePoint uygulamaları için tümleştirme testleri sağlar. Visual Studio kullanarak SharePoint uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [SharePoint çözümleri oluşturma](../sharepoint/create-sharepoint-solutions.md), [oluşturma ve hata ayıklama SharePoint çözümlerini](../sharepoint/building-and-debugging-sharepoint-solutions.md) ve [doğrulanıyor SharePoint kodunu ve hata ayıklama](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Sınırlamalar**
 
@@ -126,6 +126,6 @@ Yukarıda listelenen özellikleri de, yazma birim testleri ve Visual Studio kull
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [SharePoint Çözümleri Oluşturma](/office-dev/office-dev/create-sharepoint-solutions)
-- [SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [SharePoint Çözümleri Oluşturma](../sharepoint/create-sharepoint-solutions.md)
+- [SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

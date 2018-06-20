@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c479435ccd37c260c199b66a3a6fee20ce3e602
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969112"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235131"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: Bir Yük Testi Çalışma Ayarına Bağlam Parametreleri Ekleme
 
@@ -36,9 +36,9 @@ Websunucusu1 bağlam parametresi değerini atamaktır `http://CorporateStagingWe
 
 Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bir bağlam parametresi için farklı değerler atama tarafından yük testi farklı ortamlar kullanarak çalıştırabilirsiniz:
 
--   Kurumsal hazırlama Web Server çalıştırma ayarı: WebServer1 adlı bağlam parametresi =http://CorporateStagingWebServer
+-   Kurumsal hazırlama Web Server çalıştırma ayarı: adlı bağlam parametresi `WebServer1=http://CorporateStagingWebServer`
 
--   Kurumsal üretim Web Server çalıştırma ayarı: WebServer1 adlı bağlam parametresi =http://CorporateProductionWebServer
+-   Kurumsal üretim Web Server çalıştırma ayarı: adlı bağlam parametresi `WebServer1=http://CorporateProductionWebServer`
 
  **Komut satırından çalıştırma ayarını değiştirme**
 
@@ -60,13 +60,13 @@ Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bi
 
      Yeni bir bağlam parametresi eklenen **bağlam parametreleri** klasöründe **çalıştırma ayarları** yük testi ağacı klasöründe.
 
-     -veya-
+     veya
 
      Zaten çalışma ayarı içeriyorsa, bir **bağlam parametreleri** klasörünü sağ tıklatın ve ardından **bağlam parametresi Ekle**.
 
-4.  Özellikler penceresinde değerini değiştirin **adı** (örneğin, websunucusu1) uygun şekilde. Özellikler penceresinde değiştirin **değeri** kullanmak istediğiniz parametre (örneğin, http://CorporateStagingWebServer).
+4.  Özellikler penceresinde değerini değiştirin **adı** (örneğin, websunucusu1) uygun şekilde. Özellikler penceresinde değiştirin **değeri** kullanmak istediğiniz parametre (örneğin, `http://CorporateStagingWebServer`).
 
-5.  (İsteğe bağlı) 3 ile 5 arasındaki adımları yineleyin ve kullanmak için farklı bir dize **değeri** özelliği (örneğin, http://CorporateProductionWebServer).
+5.  (İsteğe bağlı) 3 ile 5 arasındaki adımları yineleyin ve kullanmak için farklı bir dize **değeri** özelliği (örneğin, `http://CorporateProductionWebServer`).
 
 6.  Hangi çalışma etkin olmasını istediğiniz ayarları seçin. Çalışma ayarları kısayol menüsünü açın ve seçin **etkin olarak ayarla**.
 

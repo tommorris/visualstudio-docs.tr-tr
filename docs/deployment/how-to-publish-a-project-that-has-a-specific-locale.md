@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8975c362039e347700e4256036998e8386c2e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e67a44efface97c1cbcf0bd96756467268416ee2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561616"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234133"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl yapılır: Özel Yerel Ayara Sahip Olan Bir Projeyi Yayımlama
 Bir uygulamanın farklı yerel ayarlara sahip bileşenleri içeren için seyrek değil. Bu senaryoda, birkaç projesi olan bir çözümü oluşturun ve sonra her yerel ayar için ayrı projeleri yayımlamak. Bu yordam bir makrosu 'tr' yerel ayarını kullanarak bir çözümde ilk projeyi yayımlamak için nasıl kullanılacağını gösterir. 'Tr' dışındaki yerel ayar ile bu yordamı denemek istiyorsanız, ayarladığınızdan emin olun `localeString` (örneğin, 'de' veya 'de-DE') kullanarak yerel eşleşecek şekilde makrosu içinde.  
@@ -155,7 +155,7 @@ Bir uygulamanın farklı yerel ayarlara sahip bileşenleri içeren için seyrek 
   
      Yayımla Web sayfası göründüğünde, kapatın. (Bu adım için projeyi yayımlamak yeterlidir; yüklemeniz gerekmez.)  
   
-5.  Visual Studio komut istemi penceresinde makrosu çağırarak PublishLocales'i yeniden yayımlayın. Komut İstemi penceresini görüntülemek için **Görünüm** menüsündeki **diğer pencereler** ve ardından **komut penceresi**, veya CTRL + ALT + A basın. Komut İstemi penceresinde yazın `macros`; otomatik tamamlama kullanılabilir makrolar listesini sağlar. Aşağıdaki makro seçin ve ENTER tuşuna basın:  
+5.  Visual Studio komut istemi penceresinde makrosu çağırarak PublishLocales'i yeniden yayımlayın. Komut İstemi penceresini görüntülemek için **Görünüm** menüsündeki **diğer pencereler** ve ardından **komut penceresi**, veya basın **Ctrl** + **Alt**+**A**. Komut İstemi penceresinde yazın `macros`; otomatik tamamlama kullanılabilir makrolar listesini sağlar. Aşağıdaki makro seçin ve ENTER tuşuna basın:  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   

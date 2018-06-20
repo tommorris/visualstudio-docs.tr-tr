@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c09d29340584f3f6187175342fd1171dd59ba37
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2845057fe970299d249d580d97b557a5ed311fc0
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477322"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233574"
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Visual Studio'da uzaktaki bir makinede UWP uygulamaları çalıştırma
   

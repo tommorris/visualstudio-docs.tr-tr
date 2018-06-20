@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: af2074770a97dbef1f9c8598ec8b6560bdd7f344
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88387485b952bf201a222741a6b3d02861df186c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238452"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio için R araçları ile çalışmaya başlama
 
@@ -23,8 +24,8 @@ R araçları Visual Studio (yüklü RTVS için) sahip olduğunda (bkz [yükleme]
 ## <a name="create-an-r-project"></a>Bir R projesi oluşturma
 
 1. Visual Studio'yu başlatın.
-1. Seçin **Dosya > Yeni > Proje...** (Ctrl + Shift + N)
-1. "R" gelen altında projenizi **şablonları > R**, bir ad ve konum proje verin ve seçin **Tamam**:
+1. Seçin **dosya** > **yeni** > **proje** (**Ctrl**+**Shift** + **N**)
+1. "R" gelen altında projenizi **şablonları** > **R**, bir ad ve konum proje verin ve seçin **Tamam**:
 
    ![R (RTVS VS2017 içinde) Visual Studio'da yeni proje iletişim kutusu](media/getting-started-01-new-project.png)
 
@@ -35,11 +36,11 @@ R araçları Visual Studio (yüklü RTVS için) sahip olduğunda (bkz [yükleme]
     - Sol alt üzerinde **R etkileşimli** , etkileşimli olarak geliştirme ve test kullanabilirsiniz kod penceresi.
 
 > [!Note]
-> Kullanabileceğiniz **R etkileşimli** farklı proje türü yüklendiğinde herhangi bir projeyle açık ve hatta kalmadan penceresi. Yalnızca select **R Araçlar > Windows > R etkileşimli** dilediğiniz zaman.
+> Kullanabileceğiniz **R etkileşimli** farklı proje türü yüklendiğinde herhangi bir projeyle açık ve hatta kalmadan penceresi. Yalnızca select **R Araçları** > **Windows** > **R etkileşimli** dilediğiniz zaman.
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>IntelliSense ve etkileşimli penceresini keşfedin
 
-1. Etkileşimli pencere yazarak çalışma test `3 + 4` ve ardından sonuçları görmek için girin:
+1. Etkileşimli pencere yazarak çalışma test `3 + 4` ve ardından **Enter** sonuçları görmek için:
 
     ![Visual Studio 2017 (VS2017) R etkileşimli penceresinde](media/getting-started-02-interactive1.png)
 
@@ -47,7 +48,7 @@ R araçları Visual Studio (yüklü RTVS için) sahip olduğunda (bkz [yükleme]
 
     ![Visual Studio'da R için ek etkileşimli örnek](media/getting-started-03-interactive2.png)
 
-1. Yazın `mean(ds)` ancak yazdığınız hemen dikkat `m` veya `me`, Visual Studio IntelliSense otomatik tamamlama seçenekleri sağlar. İstediğiniz tamamlama listede seçildiğinde eklemek için SEKME tuşuna basın; Ok tuşları veya fare seçimle değiştirebilirsiniz.
+1. Yazın `mean(ds)` ancak yazdığınız hemen dikkat `m` veya `me`, Visual Studio IntelliSense otomatik tamamlama seçenekleri sağlar. İstediğiniz tamamlama listede seçildiğinde basın **sekmesini** ; eklemek için ok tuşlarını veya fare seçimle değiştirebilirsiniz.
 
     ![IntelliSense kod girerken görünmesini](media/getting-started-04-intellisense1.png)
 
@@ -71,7 +72,7 @@ Etkileşimli penceresi de geçmişinizi gözden geçirin, yükleme ve çalışma
 
 Etkileşimli pencere kısaca çalışmak IntelliSense gibi ayrıca Kod düzenleyicisinde iş temel düzenleme özellikleri gösterir. Önce aynı kodunu girerseniz, aynı otomatik tamamlama ve IntelliSense istemleri, ancak çıktı bakın.
 
-Kod yazma bir `.R` dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük değişiklikler yapmak ve etkileşimli penceresinde kod çalıştırarak sonucu hızlıca görmek kolaylaştırır. Bir proje ile istediğiniz sayıda dosyaları da sahip olabilirsiniz. Kodu bir dosyada olduğunda da (Bu makalenin sonraki bölümlerinde açıklanmıştır) hata ayıklayıcısında adım adım çalıştırabilirsiniz. Bu özellikler, hesaplama algoritmalarına geliştirme ve özellikle tüm ara sonuçların incelemek istediğinizde bir veya daha fazla veri kümeleri, işlemek için kod yazma faydalıdır.
+Kod yazma bir *. R* dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük değişiklikler yapmak ve etkileşimli penceresinde kod çalıştırarak sonucu hızlıca görmek kolaylaştırır. Bir proje ile istediğiniz sayıda dosyaları da sahip olabilirsiniz. Kodu bir dosyada olduğunda da (Bu makalenin sonraki bölümlerinde açıklanmıştır) hata ayıklayıcısında adım adım çalıştırabilirsiniz. Bu özellikler, hesaplama algoritmalarına geliştirme ve özellikle tüm ara sonuçların incelemek istediğinizde bir veya daha fazla veri kümeleri, işlemek için kod yazma faydalıdır.
 
 Örnek olarak, aşağıdaki adımları keşfetmek için biraz kod oluşturma [merkezi sınırı Teoremi](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipedia). (Bu örnekte gelen uyarlanmış, *R Kılavuzu* Paul Teetor tarafından.)
 
@@ -85,14 +86,14 @@ Kod yazma bir `.R` dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük 
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. Hızla sonuçları görmek için tüm kod (Ctrl + A) seçin ve Ctrl + Enter tuşuna basın veya sağ tıklatın ve seçin **içinde etkileşimli yürütme**. Doğrudan sonucu gösteren bir çizim penceresinde yazdığınız gibi tüm seçili kod etkileşimli penceresinde çalıştırılır:
+1. Hızla sonuçları görmek için tüm kodu seçin (**Ctrl**+**A**), tuşuna basarak **Ctrl**+**Enter** veya sağ tıklatıp **içinde etkileşimli yürütme**. Doğrudan sonucu gösteren bir çizim penceresinde yazdığınız gibi tüm seçili kod etkileşimli penceresinde çalıştırılır:
 
     ![Visual Studio'da bir çizim görüntüleme](media/getting-started-08-plot1.png)
 
-1. Tek bir satır için Ctrl + Enter etkileşimli penceresinde bu satırını çalıştırmak için herhangi bir zamanda yalnızca basın.
+1. Tek bir satır için yalnızca basın **Ctrl**+**Enter** etkileşimli penceresinde bu satırını çalıştırmak için herhangi bir zamanda.
 
 > [!Tip]
-> Düzenlemeleri ve Ctrl + Enter tuşuna basarak (veya Ctrl + A olan her şeyi seçip Ctrl + Enter tuşuna basarak) desenini öğrenin hızlı bir şekilde kod çalıştırabilir. Bunun yapılması, aynı işlemleri için fareyi kullanmaktan çok daha etkilidir.
+> Düzenlemeleri ve tuşuna basarak desenini öğrenin **Ctrl**+**Enter** (veya olan her şeyi seçerek **Ctrl**+**bir** ve tuşuna basarak **Ctrl**+**Enter**) hızlı bir şekilde kod çalıştırabilir. Bunun yapılması, aynı işlemleri için fareyi kullanmaktan çok daha etkilidir.
 > 
 > Ayrıca, sürükleyin ve çizim penceresi Visual Studio çerçeve dışında bırakma ve ekranınızda başka istediğiniz zaman yerleştirin. Ardından istediğiniz ve ardından bir görüntü veya PDF dosyasını kaydedin boyutlarına çizim penceresini yeniden boyutlandırabilirsiniz.
 
@@ -104,7 +105,7 @@ Kod yazma bir `.R` dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük 
     lines(density(samp.means))
     ```
 
-1. CTRL + A ve Ctrl + Enter yeniden aşağıdaki sonucu oluşturan kodu çalıştırmak için tuşuna basın:
+1. Tuşuna **Ctrl**+**A** ve **Ctrl**+**Enter** yeniden aşağıdaki sonucu oluşturan kodu çalıştırmak için:
 
     ![Visual Studio'da güncelleştirilmiş çift çizim](media/getting-started-09-plot2.png)
 
@@ -126,23 +127,23 @@ Kod yazma bir `.R` dosya tüm kodunuz aynı anda görmenizi sağlar ve küçük 
     lines(density(samp.means))
     ```
 
-1. CTRL + A ve Ctrl + Enter yeniden sonuçları görmek için:
+1. **CTRL**+**A** ve **Ctrl**+**Enter** yeniden sonuçları görmek için:
 
     ![Visual Studio'da düzgün ölçeği, güncelleştirilmiş çift çizim](media/getting-started-10-plot3.png)
 
-Daha fazla Düzenleyici'de yapabilirsiniz yoktur. Ayrıntılar için bkz [kod düzenleme](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), ve [kod parçacıkları](code-snippets-for-r.md).
+Daha fazla Düzenleyici'de yapabilirsiniz yoktur. Ayrıntılar için bkz [Düzenle R kodu](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), ve [kod parçacıkları](code-snippets-for-r.md).
 
-## <a name="debugging-your-code"></a>Kodunuzun hatalarını ayıklama
+## <a name="debug-your-code"></a>Kodunuzdaki hataları ayıklamanıza
 
-Visual Studio anahtar gücü hata ayıklama kullanıcı Arabiriminde biridir. RTVS bu güçlü bir temel üstünde oluşturur ve yenilikçi UI gibi ekler [değişken Gezgini ve veri tablosu Görüntüleyicisi](variable-explorer.md). Burada, yalnızca hata ayıklama bir ilk bakalım.
+Visual Studio anahtar gücü hata ayıklama kullanıcı Arabiriminde biridir. RTVS bu güçlü bir temel üstünde oluşturur ve yenilikçi UI gibi ekler [değişken Explorer](variable-explorer.md). Burada, yalnızca hata ayıklama bir ilk bakalım.
 
-1. Başlamak için her şeyi bitti kadarki kullanarak temizlemek için geçerli çalışma alanı sıfırlama **R Araçlar > oturum > sıfırlama** menü komutu. Varsayılan olarak, sonra da hata ayıklayıcı tarafından kullanılan geçerli oturum için etkileşimli pencerede yaptığınız her şey tahakkuk. Oturum sıfırlayarak, hata ayıklama oturumu önceden var olan veri içermeyen başladığından emin olmak. **Sıfırlama** komutu, ancak etkilemez, `script.R` kaynak dosyası, yönetilen ve çalışma dışında kaydedilen olduğundan.
+1. Başlamak için her şeyi bitti kadarki kullanarak temizlemek için geçerli çalışma alanı sıfırlama **R Araçları** > **oturum** > **sıfırlama** menü komutu. Varsayılan olarak, sonra da hata ayıklayıcı tarafından kullanılan geçerli oturum için etkileşimli pencerede yaptığınız her şey tahakkuk. Oturum sıfırlayarak, hata ayıklama oturumu önceden var olan veri içermeyen başladığından emin olmak. **Sıfırlama** komutu, ancak etkilemez, *komut dosyası. R* kaynak dosyası, yönetilen ve çalışma dışında kaydedilen olduğundan.
 
-1. İle `script.R` dosyası önceki bölümde oluşturduğunuz, ile başlayan satırında bir kesme noktası belirleyerek `pop <-` bu satırda düzeltme işareti yerleştirme ve F9 tuşuna basarak veya seçerek **hata ayıklama > kesme** menüsü komutu. Alternatif olarak, sol kenar boşluğu (veya cilt payı) kırmızı kesme noktası nokta göründüğü için bu satırı tıklamanız yeterlidir:
+1. İle *komut dosyası. R* dosyası önceki bölümde oluşturduğunuz, ile başlayan satırında bir kesme noktası belirleyerek `pop <-` bu satırda düzeltme işareti yerleştirme ve ardından basarak **F9**, veya seçerek **hata ayıklama**  >  **Kesme** menü komutu. Alternatif olarak, sol kenar boşluğu (veya cilt payı) kırmızı kesme noktası nokta göründüğü için bu satırı tıklamanız yeterlidir:
 
     ![Düzenleyicide kesme noktası ayarlama](media/getting-started-11-debug1.png)
 
-1. Hata ayıklayıcı kod ile başlatma `script.R` ya da seçerek **kaynak başlangıç dosya** araç çubuğunda seçme **hata ayıklama > kaynak başlangıç dosya** menü öğelerini veya F5 tuşuna basarak. Visual Studio hata ayıklama moduna girer ve kod çalışmaya başlar. Bu, ancak kesme ayarladığınız satırda durdurur:
+1. Hata ayıklayıcı kod ile başlatma *komut dosyası. R* ya da seçerek **kaynak başlangıç dosya** araç çubuğunda seçme **hata ayıklama** > **kaynak başlangıç dosya** menü öğeleri veya tuşuna basarak **F5**. Visual Studio hata ayıklama moduna girer ve kod çalışmaya başlar. Bu, ancak kesme ayarladığınız satırda durdurur:
 
     ![Visual Studio hata ayıklayıcısında bir kesme noktası durduruluyor](media/getting-started-12-debug2.png)
 
@@ -150,7 +151,7 @@ Visual Studio anahtar gücü hata ayıklama kullanıcı Arabiriminde biridir. RT
 
     ![Araç çubuğu Visual Studio'da hata ayıklama](media/getting-started-13-debug3.png)
 
-1. Kesme noktasında durduğunda değişkenlerin değerleri inceleyebilirsiniz. Bulun **otomobiller** Visual Studio ve adlı alt boyunca sekmesini seçin penceresinde **Yereller**. **Yereller** penceresi, geçerli bir noktada programı yerel değişkenleri gösterir. Daha önce kesme üzerinde durdurduysanız, gördüğünüz `pop` değişkeni henüz tanımlanmadı. Şimdi kullanmak **hata ayıklama > Step Over** komutu (F10) ve görmek için değer `pop` görünür:
+1. Kesme noktasında durduğunda değişkenlerin değerleri inceleyebilirsiniz. Bulun **otomobiller** Visual Studio ve adlı alt boyunca sekmesini seçin penceresinde **Yereller**. **Yereller** penceresi, geçerli bir noktada programı yerel değişkenleri gösterir. Daha önce kesme üzerinde durdurduysanız, gördüğünüz `pop` değişkeni henüz tanımlanmadı. Şimdi kullanmak **hata ayıklama** > **Step Over** komutu (**F10**), ve değeri gördüğünüz `pop` görünür:
 
     ![Visual Studio'da yerel öğeler penceresi](media/getting-started-14-debug4.png)
 
@@ -158,7 +159,7 @@ Visual Studio anahtar gücü hata ayıklama kullanıcı Arabiriminde biridir. RT
 
     ![Genişletilmiş Görünüm değişken Gezgini](media/variable-explorer-expanded-results.png)
 
-1. Satır veya select programımı adımlarken devam **devam** için tamamlama (veya sonraki kesme) (F5).
+1. Satır veya select programımı adımlarken devam **devam** (**F5**) için tamamlama (veya sonraki kesme).
 
 Derinlemesine için bkz: [hata ayıklama](debugging-r-in-visual-studio.md) ve [değişken Explorer](variable-explorer.md).
 

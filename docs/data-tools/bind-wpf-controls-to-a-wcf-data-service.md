@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8152a02df8f335a92024134dde89b45d2f3e115a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5f45d8649667b6baaf13e9556bc8ef4abff7581
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927366"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234507"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 
@@ -45,7 +45,7 @@ Bu izlenecek yol aşağıdaki görevleri gösterir:
 ## <a name="prerequisites"></a>Önkoşullar
 Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
+-   Visual Studio
 
 -   SQL Server ya da ekli AdventureWorksLT örnek veritabanı olan SQL Server Express'in çalışan örneğine erişim. AdventureWorksLT veritabanından indirebilirsiniz [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?linkid=87843).
 

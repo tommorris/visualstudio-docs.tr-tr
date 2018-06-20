@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f28de642d6a1f4f9071099593f990c6197ed34ec
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765381"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234757"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Visual Studio kullanarak Azure App Service için ASP.NET veya ASP.NET Core uygulama yayımlama
 
@@ -33,7 +33,7 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
 
-1. Visual Studio'da, **Dosya > Yeni proje**.
+1. Visual Studio'da, **dosya** > **yeni proje**.
 
 1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET çekirdek Web uygulaması**ve ardından **Tamam**.
 
@@ -43,7 +43,7 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
     Visual Studio projesi oluşturur.
 
-1. Seçin **Yapı > Yapı çözümü** Projeyi derlemek için.
+1. Seçin **yapı** > **yapı çözümü** Projeyi derlemek için.
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service’e yayımlama
 

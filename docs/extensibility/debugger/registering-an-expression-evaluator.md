@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a34278ecca071c31e62ff4e405e9d7ada112d425
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3e764220fe5fe01e20b66af403dfd8b423e34e7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129569"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234032"
 ---
-# <a name="registering-an-expression-evaluator"></a>Bir ifade değerlendiricisi kaydetme
+# <a name="registering-an-expression-evaluator"></a>İfade Değerlendiricisi Kaydetme
 > [!IMPORTANT]
 >  Visual Studio 2015'te ifade değerlendiricisi uygulama bu şekilde kullanım dışıdır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricileri](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
@@ -30,7 +30,7 @@ ms.locfileid: "31129569"
 ## <a name="managed-code-expression-evaluator"></a>Yönetilen kod ifade değerlendiricisi  
  EE kendisini genellikle VSIP program için bir çağrı tarafından başlatılan COM ortamıyla kaydeden DLL olan bir sınıf kitaplığı, olarak gerçekleştirilen yönetilen bir kod **regpkg.exe**. COM ortamı için kayıt defteri anahtarları yazılıyor gerçek işlemi otomatik olarak gerçekleştirilir.  
   
- Ana sınıf yöntemi ile işaretlenmiş <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, bu yöntem DLL com ile kaydedildiğinde çağrılacak olduğunu belirten Genellikle olarak adlandırılan bu kayıt yöntemi `RegisterClass`, Visual Studio ile DLL kaydı görevi gerçekleştirir. Karşılık gelen `UnregisterClass` (ile işaretli <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), etkilerini alır `RegisterClass` DLL zaman kaldırılır.  
+ Ana sınıf yöntemi ile işaretlenmiş <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, DLL com ile kaydedildiğinde çağrılacak yöntemi olan belirten Genellikle olarak adlandırılan bu kayıt yöntemi `RegisterClass`, Visual Studio ile DLL kaydı görevi gerçekleştirir. Karşılık gelen `UnregisterClass` (ile işaretli <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), etkilerini alır `RegisterClass` DLL zaman kaldırılır.  
   
  Yönetilmeyen kod içinde yazılmış bir EE için olduğu gibi aynı kayıt defteri girdileri yapılan; tek fark yardımcı bir işlev gibi olmasıdır `SetEEMetric` sizin yerinize yapmaları için. Bu kayıt/silme işleminin örneği şöyle görünür:  
   

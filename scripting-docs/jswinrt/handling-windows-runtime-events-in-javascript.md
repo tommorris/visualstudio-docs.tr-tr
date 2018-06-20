@@ -17,18 +17,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e963472ee51f2439b50807a49425dcd7f6d8443a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1118fa4e6408698187e7f50ca6f9b61bf596a6e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791912"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234952"
 ---
 # <a name="handling-windows-runtime-events-in-javascript"></a>JavaScript'te Windows çalışma zamanı olayları işleme
-C++ veya .NET Framework oldukları gibi Windows çalışma zamanı olayları JavaScript aynı yolla temsil edilmez. Sınıf özelliklerini değildir ancak bunun yerine sınıfına ait geçirilen dize tanımlayıcıları olarak temsil edilir `addEventListener` ve `removeEventListener` yöntemleri. Örneğin, bir olay işleyicisi ekleyebilirsiniz [Geolocator.PositionChanged](http://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) için "positionchanged" dizesi geçirerek olay `Geolocator.addEventListener` yöntemi:  
+C++ veya .NET Framework oldukları gibi Windows çalışma zamanı olayları JavaScript aynı yolla temsil edilmez. Sınıf özelliklerini değildir ancak bunun yerine sınıfına ait geçirilen (dönüştürüldükten) dize tanımlayıcıları olarak temsil edilir `addEventListener` ve `removeEventListener` yöntemleri. Örneğin, bir olay işleyicisi ekleyebilirsiniz [Geolocator.PositionChanged](https://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) için "positionchanged" dizesi geçirerek olay `Geolocator.addEventListener` yöntemi:  
   
 ```JavaScript  
-var locator =  new Windows.Devices.Geolocation.Geolocator();  
+var locator = new Windows.Devices.Geolocation.Geolocator();  
 locator.addEventListener(  
     "positionchanged",   
      function (ev) {  
@@ -36,9 +36,9 @@ locator.addEventListener(
     });  
 ```  
   
- Ayrıca ayarlayabilirsiniz `locator.onpositionchanged` özelliği.  
+ Ayrıca ayarlayabilirsiniz `locator.onpositionchanged` özelliği:  
   
-```  
+```JavaScript  
 locator.onpositionchanged =    
     function (ev) {  
         console.log("Got event");  
@@ -61,4 +61,4 @@ function (ev) {
 >  Windows çalışma zamanı özellikleri, Internet Explorer'da çalışan uygulamalar kullanılabilir değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows çalışma zamanı JavaScript kullanma](../jswinrt/using-the-windows-runtime-in-javascript.md)
+ [JavaScript’te Windows Çalışma Zamanını Kullanma](../jswinrt/using-the-windows-runtime-in-javascript.md)

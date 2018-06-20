@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: efc2cd7ccf0eddee72ac8dcb2828e6945554d0d7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751786"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233957"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
 Microsoft.SharePoint.Emulators paketi, Microsoft SharePoint 2010 uygulamaları için yalıtılmış birim testleri oluşturmak için yardımcı olacak bir dizi sağlar. Öykünücüler kullanma [dolgular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) gelen [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) en sık kullanılan nesneleri ve yöntemleri SharePoint API taklit hafif bellek içi nesneler oluşturmak için yalıtım framework. Bir SharePoint yöntem değil benzetilmiş veya bir öykünücü varsayılan davranışını değiştirmek istediğiniz istediğiniz sonuçları sağlamak için Fakes dolgular oluşturabilirsiniz.
@@ -47,7 +47,7 @@ Microsoft.SharePoint.Emulators paketi, Microsoft SharePoint 2010 uygulamaları i
 
  `ScheduleAppointment` Yöntemi bizim kodu test altındaki büyük olasılıkla bileşeni için yazılmış ilk yöntemlerden birini:
 
-```
+```csharp
 // method under test
 public bool ScheduleAppointment(SPWeb web, string listName, string name,
     string phone, string email, string age, DateTime date, out string errorMsg)
@@ -550,4 +550,4 @@ namspace MySPAppTests
 
 - [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)
 - [Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)
-- [SharePoint Çözümleri Geliştirme](/office-dev/office-dev/developing-sharepoint-solutions)
+- [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 210fd6049f3df068d02f58e0271318591a051396
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065084"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234279"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Başkalarının Dağıtması için ClickOnce Uygulamaları Oluşturma
 Uygulamaları dağıtmak ClickOnce Dağıtımları oluşturmakta olduğunuz tüm geliştiriciler planlayın. Bunların çoğu, yalnızca ClickOnce kullanarak kendi uygulama paketini ve ardından dosyaları kapalı büyük bir kuruluşa gibi bir müşteriye el. Müşteri, bir alt ağı üzerinde uygulamayı barındırmak için sorumlu olur. Bu konuda bazı sürümlerinde .NET Framework sürüm 3.5 önce bu tür dağıtımlarda devralınmış sorunları ele alınmıştır. Ardından, .NET Framework 3. 5'yeni "bildirimi güven için kullan" özelliğini kullanarak tarafından sağlanan yeni bir çözüm açıklanır. Son olarak, .NET Framework'ün daha eski sürümleri hala kullanan müşteriler için ClickOnce dağıtımları oluşturmak için önerilen stratejileri ile sonlanır.  
@@ -43,7 +43,7 @@ Uygulamaları dağıtmak ClickOnce Dağıtımları oluşturmakta olduğunuz tüm
   
  Örneğin, Adventure Works Finans departmanı ve İnsan Kaynakları departmanı olduğunu varsayalım. Her iki departman ClickOnce uygulaması bir SQL veritabanında depolanan verilerden raporlar oluşturan Microsoft Corporation lisans. Microsoft, her bölüm için verileri özelleştirilmiş uygulama sürümü sağlar. Uygulamalar aynı Authenticode sertifikası ile imzalanmış ClickOnce ilk aynı olacak şekilde ikinci uygulama Algıla gibi her iki uygulamayı kullanmayı dener ve bir kullanıcı bu bir hata karşılaşacağınız. Bu durumda, müşteri öngörülemeyen ve istenmeyen tarafı uygulaması tarafından yerel olarak depolanan herhangi bir veri kaybı içeren etkilerle karşılaşabilir.  
   
- Kod imzalama için ek sorunlarla ilgili `deploymentProvider` ClickOnce uygulama güncelleştirmelerini bulacağınız dağıtım bildiriminde öğesi. Bu öğe imzalamadan önce dağıtım bildirimine eklenmesi gerekiyor. Bu öğe daha sonra eklediyseniz, dağıtım bildirimi yeniden imzalanması gerekir.  
+ Kod imzalama için ek sorunlarla ilgili `deploymentProvider` ClickOnce uygulama güncelleştirmelerini bulacağınız dağıtım bildiriminde öğesi. Bu öğe imzalamadan önce dağıtım bildirimi eklenmelidir. Bu öğe daha sonra eklediyseniz, dağıtım bildirimi yeniden imzalanması gerekir.  
   
 ### <a name="requiring-the-customer-to-sign-the-deployment-manifest"></a>Uygulama bildirimini imzalamak müşteri gerektirme  
  Benzersiz olmayan dağıtımların bu sorun için bir çözüm uygulama bildirimi Geliştirici oturum olmalıdır ve müşteri dağıtım bildirimini imzalayın. Bu yaklaşım çalışırken, diğer sorunlar ortaya çıkar. Authenticode sertifikası korumalı bir varlık kalması gereken olduğundan, müşteri dağıtımı imzalamak için geliştirici yalnızca sertifika veremez. Müşteri dağıtım bildirimi kendilerini .NET Framework SDK ile birlikte ücretsiz olarak sağlanan araçları kullanarak oturum açabilirsiniz, ancak bu müşteri istekli veya sağlamak mümkün olandan daha fazla teknik bilgi gerektirebilir. Böyle durumlarda, geliştirici genellikle bir uygulama, Web sitesi ya da müşteri imzalama için uygulamanın kendi sürümünü gönderebilmek için başka bir mekanizma oluşturur.  
@@ -95,7 +95,7 @@ Uygulamaları dağıtmak ClickOnce Dağıtımları oluşturmakta olduğunuz tüm
  Kurulum dağıtım projesi yönteminin dezavantajı, özel bir dağıtım uygulaması oluşturmak için gerekli gider ve saat ' dir.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Sahip müşteri oluşturmak dağıtım bildirimi  
- Üçüncü olası Dağıtım stratejisi el yalnızca uygulama dosyalarını ve uygulama bildirimini müşteriye kapalıdır. Bu senaryoda, .NET Framework SDK'sını kullanarak oluşturmak ve dağıtım bildirimi imzalamak için müşteri sorumludur.  
+ Üçüncü olası Dağıtım stratejisi el değil yalnızca uygulama müşteriye dosyaları ve uygulama bildirimi. Bu senaryoda, .NET Framework SDK'sını kullanarak oluşturmak ve dağıtım bildirimi imzalamak için müşteri sorumludur.  
   
  Bu yöntemin dezavantajı .NET Framework SDK Araçları yüklemek ve bir geliştirici veya bunları kullanmayı becerikli olan sistem yöneticisi müşteri gerektirmesidir. Bazı müşteriler kendi bölümü çok az kayıpla veya hiç teknik çaba gerektiren bir çözüm talep edebilir.  
   

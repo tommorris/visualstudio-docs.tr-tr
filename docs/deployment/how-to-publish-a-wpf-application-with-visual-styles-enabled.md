@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0111226fdd3de300265f69930b7e9e56f90876c8
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a091f8fc770b2e9bc6ef2e61e8287f0e8ded5323
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816022"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233619"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: Görsel Stiller Etkinken WPF Uygulaması Yayımlama
 Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü sağlar. Bu nedenle el ile etkinleştirmeniz gerekir varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stiller etkin değildir. Ancak, WPF uygulaması için görsel stiller etkinleştirme ve çözüm yayımlamaya bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi çözümlemeye açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Hata iletisi hakkında daha fazla bilgi için bkz: [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Hatayı çözün ve Çözümü yayımlamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  
   
--   [Görsel stiller etkinken Çözümü yayımlamak](#BKMK_publishsolwovs).  
+-   [Görsel stiller etkinken Çözümü yayımlamak](#publish-the-solution-without-visual-styles-enabled).  
   
--   [Bir bildirim dosyası oluşturmak](#BKMK_CreateManifest).  
+-   [Bir bildirim dosyası oluşturmak](#create-a-manifest-file).  
   
--   [Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma](#BKMK_embedmanifest).  
+-   [Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
   
--   [Uygulama ve dağıtım bildirimlerini imzalama](#BKMK_signappdeplyman).  
+-   [Uygulama ve dağıtım bildirimlerini imzalama](#sign-the-application-and-deployment-manifests).  
   
  Sonra son kullanıcıların uygulamayı yüklemek istediğiniz konuma yayımlanan dosyalarını taşıyabilirsiniz.  
   
-##  <a name="BKMK_publishsolwovs"></a> Görsel stiller etkinken çözümü yayımlama  
+##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Görsel stiller etkinken çözümü yayımlama  
   
 1.  Projenizi görsel stiller etkinken olmadığından emin olun. İlk olarak, projenizin bildirim dosyası için aşağıdaki XML denetleyin. XML varsa, daha sonra XML açıklama etiketi ile alın.  
   
@@ -71,7 +71,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
   
 2.  Derleme ve çözümünüzü yayımlayın. Çözüm yayımlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a> Bildirim dosyası oluştur  
+## <a name="create-a-manifest-file"></a>Bildirim dosyası oluştur  
   
 1.  Aşağıdaki XML Notepad dosyaya yapıştırın.  
   
@@ -92,7 +92,7 @@ Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için 
     > [!NOTE]
     >  Kalan yordamlar bu dosyasının adı olduğunu varsayar **themes.manifest** ve dosyayı bilgisayarınızda C:\temp dizinine kaydedilir.  
   
-##  <a name="BKMK_embedmanifest"></a> Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma  
+## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Bildirim dosyası yayımlanmış çözüm yürütülebilir dosyasına katıştırma  
   
 1.  Açık **Visual Studio komut istemi**.  
   
@@ -121,7 +121,7 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a> Uygulama ve dağıtım bildirimlerini imzalama  
+## <a name="sign-the-application-and-deployment-manifests"></a>Uygulama ve dağıtım bildirimlerini imzalama  
   
 1.  Komut isteminde kaldırmak için aşağıdaki komutu çalıştırın `.deploy` yürütülebilir dosya geçerli dizinde uzantı.  
   

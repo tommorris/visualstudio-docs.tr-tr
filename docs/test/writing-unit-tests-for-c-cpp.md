@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752085"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238387"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -38,7 +38,7 @@ Yüklü çerçeveleri yanı sıra, Visual Studio içinde kullanmak istediğiniz 
 
 - **Boost.Test** varsayılan bileşeni olarak bulunur **C++ ile masaüstü geliştirme** iş yükü. İle tümleşik **Test Gezgini** ancak şu anda proje şablonu sahip değilse, bu nedenle onu el ile yapılandırılması gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da Boost.Test kullanın](how-to-use-boost-test-for-cpp.md).
 
-- **CTest** desteği ile birlikte [CMake araçları Visual Studio için](/cpp/ide/cmake-tools-for-cpp) parçası olan bileşen, **C++ ile masaüstü geliştirme** iş yükü. Ancak, CTest henüz tam olarak tümleşiktir değil **Test Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da CTest kullanın](how-to-use-ctest-for-cpp.md).
+- **CTest** desteği ile birlikte [CMake araçları Visual Studio için](/cpp/ide/cmake-tools-for-visual-cpp) parçası olan bileşen, **C++ ile masaüstü geliştirme** iş yükü. Ancak, CTest henüz tam olarak tümleşiktir değil **Test Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio'da CTest kullanın](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 ve önceki**
 
@@ -69,7 +69,7 @@ Ardından, birim testi .cpp dosyanızda ekleyin bir `#include` test etmek istedi
 ### <a name="write-test-methods"></a>Test yöntemleri yazma
 
 > [!NOTE]
-> Bu bölümde, C/C++ için Microsoft birim testi çerçevesi için sözdizimi gösterilmektedir. Burada belgelenen: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test belgeler için bkz: [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md). Boost.Test için bkz: [artırma Test kitaplığı: birim testi çerçevesi](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> Bu bölümde, C/C++ için Microsoft birim testi çerçevesi için sözdizimi gösterilmektedir. Burada belgelenen: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test belgeler için bkz: [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Boost.Test için bkz: [artırma Test kitaplığı: birim testi çerçevesi](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 Test projenizin .cpp dosyasında saplama sınıf ve size nasıl yazılacağını örneği olarak tanımlanan yöntemi kodu test içeriyor. İmzaları yöntemleri Test Gezgini penceresinden bulunabilir duruma TEST_CLASS ve TEST_METHOD makroları kullandığını unutmayın.
 
@@ -77,7 +77,7 @@ Test projenizin .cpp dosyasında saplama sınıf ve size nasıl yazılacağını
 
 TEST_CLASS ve TEST_METHOD parçası olan [Microsoft Yerel Test Framework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Test Gezgini** desteklenen diğer çerçeveler test yöntemleri benzer şekilde bulur.
 
-Bir TEST_METHOD void döndürür. Test sonucu oluşturmak için statik yöntemleri kullanın `Assert` test gerekenin karşı gerçek sonuçları sınıfı. Aşağıdaki örnekte, varsayalım `MyClass` alan bir oluşturucuya sahip bir `std::string`. Biz Oluşturucu beklendiği gibi sınıfı başlatır test sözlüğüdür:
+Bir TEST_METHOD void döndürür. Test sonucu oluşturmak için statik yöntemleri kullanın `Assert` test gerekenin karşı gerçek sonuçları sınıfı. Aşağıdaki örnekte, varsayalım `MyClass` geçen bir oluşturucuya sahip bir `std::string`. Biz Oluşturucu beklendiği gibi sınıfı başlatır test sözlüğüdür:
 
 ```cpp
         TEST_METHOD(TestClassInit)

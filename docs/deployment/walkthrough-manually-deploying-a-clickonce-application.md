@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ab59e09f450d1656d77c551b3f44d0a60f1a57
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2255bab39a90e52423915d4b9ede3efdebd1ea26
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238398"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma
 Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama veya gelişmiş dağıtım özelliklerini kullanmanız gereken güvenilir uygulama dağıtımı gibi oluşturmak için Mage.exe komut satırı aracını kullanmanız gerekir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri. Bu kılavuzda nasıl oluşturulacağını açıklar bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] komut satırı sürümünü (Mage.exe) veya grafik sürümünü (MageUI.exe) bildirim oluşturma ve düzenleme aracı kullanarak dağıtım.  
@@ -82,7 +83,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 5.  Mage.exe çağrısıyla uygulama bildirimi oluşturun. Aşağıdaki deyim Intel x86 işlemci üzerinde çalışmak üzere derlenmiş kod için bir uygulama bildirimi oluşturur.  
   
-    ```  
+    ```console  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
@@ -91,34 +92,24 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 6.  Uygulama bildirimini Authenticode sertifikanızla imzalayın. Değiştir *mycert.pfx'i* ile sertifika dosyanızın yolu. Değiştir *parola* sertifika dosyanızın parolayla.  
   
-    ```  
+    ```console  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-     CNG sertifikayla uygulama bildiriminizi imzalamak için aşağıdakileri kullanın. Değiştir *cngCert.pfx* ile sertifika dosyanızın yolu.  
-  
-    ```  
-    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
-    ```  
-  
+    Visual Studio ve Windows SDK'sı ile dağıtılır, .NET Framework 4.6.2 SDK ile başlayan mage.exe işaretlerini CNG ile ve aynı zamanda Authenticode sertifikalarla bildirimleri. Authenticode sertifikalarla gibi aynı komut satırı parametrelerini kullanın.
+    
 7.  Dağıtım dizini kök dizinine değiştirin.  
   
 8.  Mage.exe çağrısıyla dağıtım bildirimi oluşturur. Varsayılan olarak, Mage.exe işaretler, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımı yüklenmiş bir uygulama, BT'nin hem çevrimiçi çalıştırabilmeniz için ve çevrimdışı olarak. Kullanıcının çevrimiçi olduğunda uygulama kullanılabilir yapmak için `-Install` değerini seçeneğiyle `false`. Varsayılan kullanıyorsanız ve kullanıcılar, uygulamanızın yükler, bir Web sitesi veya dosya paylaşımından emin olun değerini `-ProviderUrl` Web sunucusunun veya paylaşım uygulamasının konumunu seçeneği noktalarına bildirimi.  
   
-    ```  
+    ```console  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
 9. Dağıtım bildirimini Authenticode veya CNG sertifikanızla imzalayın.  
   
-    ```  
+    ```console  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
-    ```  
-  
-     veya  
-  
-    ```  
-    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
 10. Dağıtım hedefi veya medya tüm dosyaları dağıtım dizininde kopyalayın. Bu bir Web sitesi veya FTP sitesi, bir dosya paylaşımı veya bir CD-ROM ya da bir klasör olabilir.  
@@ -138,7 +129,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 4.  MageUI.exe grafik aracını başlatın.  
   
-    ```  
+    ```console  
     MageUI.exe  
     ```  
   
@@ -160,7 +151,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 13. Dosya sisteminizi dosya olarak depolanan bir sertifika varsa, **sertifika dosyası işaretiyle** seçeneği ve üç nokta kullanarak dosya sisteminden sertifikayı seçin (**...** ) düğmesi. Sertifika parolanızı yazın.  
   
-     -veya-  
+     veya  
   
      Sertifikanızı sertifika deposunda bilgisayarınızdan erişilebilir kaldığı seçin **depolanan bir sertifika ile oturum** seçeneği ve verilen listeden sertifikayı seçin.  
   
@@ -172,7 +163,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 17. Üzerinde **adı** sekmesinde, bu dağıtım için bir ad ve sürüm numarası belirtin (**1.0.0.0** Bu örnekte). Ayrıca belirtin **İşlemci** , uygulamanız için x86 gibi yerleşik olarak bulunur.  
   
-18. Seçin **açıklama** sekmesini tıklatın ve değerlerini belirtin **yayımcı** ve **ürün *** t**. (**Ürün** uygulamanızı çevrimdışı kullanım için bir istemci bilgisayara yüklendiğinde, Windows Başlat menüsündeki uygulamanıza verilen addır.)  
+18. Seçin **açıklama** sekmesini tıklatın ve değerlerini belirtin **yayımcı** ve **ürün**. (**Ürün** uygulamanızı çevrimdışı kullanım için bir istemci bilgisayara yüklendiğinde, Windows Başlat menüsündeki uygulamanıza verilen addır.)  
   
 19. Seçin **dağıtım seçenekleri** sekmesi hem de **Başlat konumu** metin kutusunda, Web sunucusu veya paylaşım üzerindeki uygulama bildiriminin konumunu belirtin. Örneğin, \\\myServer\myShare\AppToDeploy.application.  
   
@@ -188,7 +179,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 25. Dosya sisteminizi dosya olarak depolanan bir sertifika varsa, **sertifika dosyası işaretiyle** seçeneği ve üç nokta kullanarak dosya sisteminden sertifikayı seçin (**...** ) düğmesi. Sertifika parolanızı yazın.  
   
-     -veya-  
+     veya  
   
      Sertifikanızı sertifika deposunda bilgisayarınızdan erişilebilir kaldığı seçin **depolanan bir sertifika ile oturum** seçeneği ve verilen listeden sertifikayı seçin.  
   

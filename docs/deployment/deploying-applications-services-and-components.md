@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2c84b8e5d37876d890d40144b281e236fdcd0c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e301131afc62b0564ca302adb9a079b42b52c5f8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766317"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234692"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: İlk Visual Studio'daki dağıtımı bakın
 
@@ -47,7 +47,7 @@ Yerel bir klasöre dağıtımına genellikle sınama veya başka bir aracı son 
 
 - **Visual C++ çalışma zamanı**: yerel dağıtım veya statik bağlama kullanarak Visual C++ çalışma zamanı dağıtabilirsiniz. Daha fazla bilgi için bkz: [dağıtma yerel Masaüstü uygulamaları (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
-## <a name="azure"></a> Azure'a yayımlama
+## <a name="publish-to-azure"></a>Azure'a yayımlama
 
 - **ASP.NET**, **ASP.NET Core**, **Python**, ve **Node.js**: Yayımla aracı hızlı bir şekilde Azure uygulama hizmeti veya bir Azure sanal uygulamaları dağıtmak için kullanabileceğiniz Makine. Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Yayımla**. (Daha önce tüm yayımlama profillerini yapılandırdıysanız, ardından'ı tıklatmalısınız **yeni profil oluşturmak**.) Yayımla iletişim kutusunda seçin **uygulama hizmeti** veya **Azure sanal makineleri**ve yapılandırma adımlarını izleyin.
 
@@ -62,7 +62,7 @@ Yerel bir klasöre dağıtımına genellikle sınama veya başka bir aracı son 
     > [!NOTE]
     > Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-## <a name="web"></a> Web'de Yayımla veya ağ paylaşımına dağıtma
+## <a name="publish-to-web-or-deploy-to-network-share"></a>Web'de Yayımla veya ağ paylaşımına dağıtma
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, ve **Python**: bir Web sitesine FTP veya Web dağıtımı kullanarak dağıtmak için yayımlama Aracı'nı kullanabilirsiniz. Daha fazla bilgi için bkz: [bir web sitesine dağıtma](quickstart-deploy-to-a-web-site.md).
 
@@ -78,7 +78,7 @@ Yerel bir klasöre dağıtımına genellikle sınama veya başka bir aracı son 
 
 - **Windows Masaüstü** bir web sunucusuna veya ClickOnce dağıtımı kullanarak bir ağ dosya paylaşımı için bir Windows masaüstü uygulaması yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için bkz: [ClickOnce kullanarak bir masaüstü uygulamasını dağıtmak](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ve [ClickOnce kullanarak yerel bir uygulama dağıtmak](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
-## <a name="microsoft_store"></a> Microsoft Mağazası'na yayımlamak
+## <a name="publish-to-microsoft-store"></a>Microsoft Mağazası'na yayımlamak
 
 Visual Studio'dan dağıtım Microsoft Store için uygulama paketleri oluşturabilirsiniz.
 
@@ -94,7 +94,7 @@ Visual Studio'dan dağıtım Microsoft Store için uygulama paketleri oluşturab
 
 Bir cihazda test etmek için bir UWP uygulaması dağıtıyorsanız, bkz: [Visual Studio'da uzaktaki bir makinede çalıştırın UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="installer"></a> Bir yükleyici paketi (Windows istemcisi) oluşturun.
+## <a name="create-an-installer-package-windows-client"></a>Bir yükleyici paketi (Windows istemcisi) oluşturun.
 
 Bir masaüstü uygulamasının karmaşık bir kurulum daha gerektirip gerektirmediğini [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) sağlayabilir bir yükleyici paketi, bir kurulum projesi ya da özel bir önyükleyici oluşturabilirsiniz.
 

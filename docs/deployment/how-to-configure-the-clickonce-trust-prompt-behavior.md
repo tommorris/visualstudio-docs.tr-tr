@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d37e5fa465a5e19b1bfb7577f6ab06c61782f775
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 85657ed886b7eb2b164f9b5e05b2c59391e1147b
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561561"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233587"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Nasıl yapılır: ClickOnce Güven İstemi Davranışını Yapılandırma
 Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları, konsol uygulamaları, WPF tarayıcı gibi ClickOnce uygulamalarını yükleme seçeneği izin verilip verilmeyeceğini denetlemek için ClickOnce güven istemi yapılandırabilirsiniz uygulamaları ve Office çözümleri. Güven istemi her son kullanıcının bilgisayarda kayıt defteri anahtarlarını ayarlayarak yapılandırın.  
@@ -63,7 +63,7 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
 2.  Aşağıdaki kayıt defteri anahtarını bulun:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Anahtar mevcut değilse oluşturun.  
   
@@ -122,7 +122,7 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
 2.  Aşağıdaki kayıt defteri anahtarını bulun:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Anahtar mevcut değilse oluşturun.  
   
@@ -179,7 +179,7 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
 2.  Aşağıdaki kayıt defteri anahtarını bulun:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Anahtar mevcut değilse oluşturun.  
   

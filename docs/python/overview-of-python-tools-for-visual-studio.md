@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4a2a3b35f8757e0554a062a43954a776025f4ec7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449175"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234718"
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
 
@@ -138,7 +138,7 @@ Daha fazla bilgi için:
 
 Visual Studio, web uygulamaları ve bulut Hizmetleri için Azure yayımlama için tümleşik destek sağlar. Visual Studio içerir temel `web.config` öğe şablonlarını dinamik ve statik içerik. Python iş yükü ayrıca Windows, Mac OS X ve Linux uygulamaları Süren Azure hizmetlerinden basitleştirir Python için Azure SDK'sı içerir.
 
-![Visual Studio'da Python uygulamayı azure'a yayımlama](media/azure-publish-dialog.png)
+![Visual Studio'da Python uygulamayı Azure'a yayımlama](media/azure-publish-dialog.png)
 
 Daha fazla bilgi için:
 

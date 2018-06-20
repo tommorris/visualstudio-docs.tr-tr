@@ -21,31 +21,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9829a80916f6e18e9adaf3d0e41fe825541438
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564512"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234016"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce Dağıtımları İçinde Belirli Hataları Giderme
-Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve her sorunu gidermek için adımları sağlar.  
+Bu makalede, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve her sorunu gidermek için adımları sağlar.  
   
 ## <a name="general-errors"></a>Genel hata  
   
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Ne zaman hiçbir şey olmaz, .application dosya bulmaya veya Internet Explorer'da XML işler ya da bir çalıştırma veya Farklı Kaydet iletişim kutusu görüntüleniyor  
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Ne zaman hiçbir şey olmaz, bir uygulama dosyası bulmaya veya Internet Explorer'da XML işler ya da bir çalıştırma veya Farklı Kaydet iletişim kutusu görüntüleniyor  
  Bu hata olasılıkla sunucu veya istemci üzerinde düzgün şekilde kaydedilmemiş içerik türleri (MIME türleri olarak da bilinir) kaynaklanır.  
   
- İlk olarak, sunucunun .application uzantısı içerik türü "application/x-ms-application" ile ilişkilendirmek üzere yapılandırılmış olduğundan emin olun.  
+ İlk olarak, sunucunun ilişkilendirmek için yapılandırıldığından emin olun `.application` içeriğe sahip uzantı türü "application/x-ms-application."  
   
- Sunucunun doğru şekilde yapılandırılmışsa, emin [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] bilgisayarınızda yüklü. Varsa [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] yüklü olduğu ve bu sorun, kaldırıp yeniden yüklemeyi deneyin hala görüyorsunuz [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] istemci üzerinde içerik türünü yeniden kaydetmek için.  
+ Sunucunun doğru yapılandırılmışsa denetleyin [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] bilgisayarınızda yüklü. Varsa [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] yüklü olduğu ve bu sorun, kaldırıp yeniden yüklemeyi deneyin hala görüyorsunuz [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] istemci üzerinde içerik türünü yeniden kaydetmek için.  
   
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Hata iletisi diyor, "Uygulama alınamıyor. Dağıtımda eksik dosyalar"veya"uygulamanın indirilmesi kesintiye, ağ hataları kontrol edin ve daha sonra yeniden deneyin"  
  Bu iletiyi bildiren tarafından başvurulan bir veya daha fazla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri karşıdan yüklenemiyor. Bu hata ayıklama için kolay URL yüklemeye yoldur, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] onu yükleyemiyor söyler. Bazı olası nedenleri şunlardır:  
   
 -   Günlük dosyası "(403) Yasak" diyorsa, veya "(404) bulunamadı" doğrulamak Web sunucusu bu dosyayı indirmeyi engellemez şekilde yapılandırılır. Daha fazla bilgi için bkz: [sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Sunucu tarafından engellenen .config dosyası, bölümüne bakın. "yüklemeye çalıştığınızda indirme hatası bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .config dosyasına sahip uygulama" Bu konuda daha sonra.  
+-   Sunucu tarafından engellenen .config dosyası, bölümüne bakın. "yüklemeye çalıştığınızda indirme hatası bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .config dosyasına sahip uygulama" Bu makalenin ilerisinde yer.  
   
 -   Sebebiyle oluşup oluşmadığını belirlemek `deploymentProvider` etkinleştirmesi için kullanılan URL farklı bir konuma işaret dağıtım bildiriminde URL.  
   
@@ -129,9 +129,9 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
 |Uygulama başlatılamıyor. Uygulama yayımcısına başvurun.<br /><br /> Uygulama başlatılamıyor. Yardım için uygulama satıcısına başvurun.|Uygulama başlatılamıyor ve belirli herhangi bir neden bulunabilir oluşur genel hata iletileri şunlardır. Sık sık uygulama bir şekilde bozulmuş anlamına gelir veya [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deposu bozuk.|  
 |Devam edemiyor. Uygulama yanlış biçimlendirilmiş. Yardım için uygulama yayımcısına başvurun.<br /><br /> Uygulama doğrulama başarılı olmadı. Devam edilemiyor.<br /><br /> Uygulama dosyaları alınamıyor. Dosyalar dağıtımda bozulur.|Dağıtımdaki bildirim dosyalarından birini sözdizimsel olarak geçerli değil veya karşılık gelen dosya ile uzlaştırılamıyor bir karma içerir. Bu hata, ayrıca derleme içine gömülü bildirimi bozuk olduğunu gösteriyor olabilir. Dağıtımınızı yeniden oluşturun ve uygulamanızı yeniden derleyin veya bulun ve hataları bildirimlerinizde bulunan el ile giderin.|  
 |Uygulama alınamıyor. Kimlik doğrulama hatası.<br /><br /> Uygulama yükleme başarılı olmadı. Sunucudaki uygulama dosyalarını bulamıyor. Yardım için uygulama yayımcısına veya yöneticinize başvurun.|Bunları erişim izni olmadığından dağıtımdaki bir veya daha fazla dosyalar indirilemiyor. Bunun nedeni dağıtımınızda bulunan dosyalardan biri korumalı bir dosyayı kabul Web sunucusu yapar uzantılı bir sona ererse, oluşabilecek bir Web sunucusu tarafından döndürülen 403 Yasak hatası olabilir. Ayrıca, bir veya daha fazla uygulamanın dosyaları içeren bir dizine erişmek için bir kullanıcı adı ve parola gerektirebilir.|  
-|Uygulama karşıdan yüklenemiyor. Uygulamayı gerekli dosyalar eksik. Yardım için uygulama satıcısına veya sistem yöneticinize başvurun.|Bir veya daha fazla uygulama bildiriminde listelenen dosya sunucusunda bulunamıyor. Dağıtımın tüm bağımlı dosyaları karşıya yüklediğiniz olduğunu doğrulayıp yeniden deneyin.|  
+|Uygulama karşıdan yüklenemiyor. Uygulamayı gerekli dosyalar eksik. Yardım için uygulama satıcısına veya sistem yöneticinize başvurun.|Bir veya daha fazla uygulama bildiriminde listelenen dosya sunucusunda bulunamıyor. Denetleyin dağıtımın tüm bağımlı dosyaları karşıya yüklediğiniz ve yeniden deneyin.|  
 |Uygulama yükleme başarılı olmadı. Ağ bağlantınızı denetleyin veya sistem yöneticinize veya ağ hizmeti sağlayıcısına başvurun.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Sunucunun ağ bağlantısı kurulamıyor. Sunucu kullanılabilirliğini ve ağ durumunu inceleyin.|  
-|URLDownloadToCacheFile başarısız oldu; HRESULT '\<numarası >'. Yüklemeye çalışırken bir hata oluştu '\<Dosya >'.|Kullanıcı Internet Explorer Gelişmiş Güvenlik seçeneğini "Arasında güvenli değiştiriliyorsa uyar ve modu güvenli değil" dağıtım hedef bilgisayarda ayarlamışsa ve yüklenen ClickOnce uygulamasının kurulum URL'si güvenli olmayan güvenli bir siteye yönlendirilir (veya Internet Explorer uyarı keser tersi), yükleme başarısız olur.<br /><br /> Bu sorunu çözmek için şunlardan birini yapabilirsiniz:<br /><br /> -Güvenlik seçeneğini kaldırın.<br />-Olun emin Kurulum URL'SİNİN güvenlik modları değiştirecek bir şekilde yönlendiren değil.<br />-Gerçek kurulum URL'sine noktası ve yeniden yönlendirme tamamen kaldırın.|  
+|URLDownloadToCacheFile başarısız oldu; HRESULT '\<numarası >'. Yüklemeye çalışırken bir hata oluştu '\<Dosya >'.|Kullanıcı Internet Explorer Gelişmiş Güvenlik seçeneğini "Arasında güvenli değiştiriliyorsa uyar ve modu güvenli değil" dağıtım hedef bilgisayarda ayarlamışsa ve yüklenen ClickOnce uygulamasının kurulum URL'si güvenli olmayan güvenli bir siteye yönlendirilir (veya Internet Explorer uyarı keser tersi), yükleme başarısız olur.<br /><br /> Bu hatayı gidermek için aşağıdaki görevlerden birini yapabilirsiniz:<br /><br /> -Güvenlik seçeneğini kaldırın.<br />-Olun Kurulum URL'SİNİN güvenlik modları değiştirecek bir şekilde emin yönlendirildiği değil.<br />-Gerçek kurulum URL'sine noktası ve yeniden yönlendirme tamamen kaldırın.|  
 |Bir sabit diske yazılırken bir hata oluştu. Olabilir yeterli alan kullanılabilir disk üzerinde. Yardım için uygulama satıcısına veya sistem yöneticinize başvurun.|Bu uygulamayı depolamak için yeterli disk alanı gösterebilir, ancak uygulama dosyaları diske kaydetmeye çalışırken de daha genel bir g/ç hatası gösteriyor olabilir.|  
 |Uygulama başlatılamıyor. Disk üzerinde yeterli alan yok.|Sabit disk dolu. Boş alan açın ve uygulamayı yeniden çalıştırmayı deneyin.|  
 |Çok fazla dağıtılan etkinleştirmeleri aynı anda yüklemeye çalışıyorsunuz.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aynı anda çalışabilecek farklı uygulama sayısını sınırlar. Bu büyük ölçüde yerel karşı hizmet reddi saldırılarını kötü amaçlı saldırılara karşı korunmaya yardımcı olur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hizmeti; kullanıcılar aynı uygulama hızlı art arda tekrar tekrar başlatmaya çalışırsanız, yalnızca tek bir örneği ile son bulur uygulama.|  

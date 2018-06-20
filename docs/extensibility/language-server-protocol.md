@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de7de0ce4d37ed74a7d2291ecf2f0db98c07478b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147098"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233419"
 ---
-# <a name="language-server-protocol"></a>Dil sunucusu Protokolü
+# <a name="language-server-protocol"></a>Dil Sunucusu Protokolü
 
 ## <a name="what-is-the-language-server-protocol"></a>Dil sunucusu protokolü nedir?
 
@@ -54,7 +54,7 @@ Aşağıda bir örnek nasıl yordamı sırasında bir aracı ve bir dil sunucusu
 
 * **Kullanıcı aracı (bir belge olarak adlandırılır) bir dosyayı açar**: aracı dil sunucunun bir belgenin açık olduğunu bildirir (' textDocument/didOpen'). Şu andan itibaren gerçekte belgesinin içeriğini hakkında artık dosya sisteminde değildir ancak bellekte aracı tarafından tutulur.
 
-* **Kullanıcı düzenlemeleri yapar**: Belge değişikliği (' textDocument/didChange') sunucusu aracı konusunda sizi bilgilendirir ve programının anlamsal bilgilerin dil sunucu tarafından güncelleştirilir. Bu olduğu sürece, dil server bu bilgileri analizleri yaparken ve algılanan hataları ve Uyarıları (' textDocument/publishDiagnostics') aracıyla bildirir.
+* **Kullanıcı düzenlemeleri yapar**: Belge değişikliği (' textDocument/didChange') sunucusu aracı konusunda sizi bilgilendirir ve programının anlamsal bilgilerin dil sunucu tarafından güncelleştirilir. Bu olduğu sürece, dil server bu bilgileri analiz eder ve algılanan hataları ve Uyarıları (' textDocument/publishDiagnostics') aracıyla bildirir.
 
 * **Kullanıcı bir simge Düzenleyicisi'nde hakkında "Tanıma Git" yürütür**: aracı iki parametreye sahip bir ' textDocument/tanımı' isteğini gönderir: (1) URI belge ve tanımı isteği Git sunucuya başlatıldığı gelen (2 metin konumu. Sunucu URI belge ve simgenin tanımının belgesinin içindeki konumu ile yanıt verir.
 

@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 84a9c2bddb74402711217427b3471713562cce0a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c806971a68811f6e067c5edd49fdefa87cd67194
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238389"
 ---
-# <a name="setting-up-remote-workspaces"></a>Uzak çalışma alanları ayarlama
+# <a name="set-up-remote-workspaces"></a>Uzak çalışma alanları ayarlayın
 
 Bu makalede, bir uzak sunucu SSL ve uygun bir R hizmeti ile nasıl yapılandırılacağı açıklanmaktadır. Bu, R araçları için Visual Studio (sunucu üzerindeki uzak bir çalışma alanına bağlanmak için RTVS) sağlar.
 
@@ -36,9 +37,9 @@ Bu makalede, bir uzak sunucu SSL ve uygun bir R hizmeti ile nasıl yapılandır�
 
 ## <a name="install-an-ssl-certificate"></a>Bir SSL sertifikası yükleme
 
-Sunucu üzerindeki bir SSL sertifikası gerektirir HTTP üzerinden uzak bir sunucu ile tüm iletişimler olur RTVS gerektirir. (Önerilen) güvenilir bir sertifika yetkilisi tarafından imzalanmış bir sertifika ya da kendinden imzalı bir sertifika kullanabilirsiniz. (Otomatik olarak imzalanan bir sertifika bağlıyken sorunu uyarıları RTVS neden olur). Herhangi biriyle, ardından bilgisayara yükleyin ve özel anahtarını erişmesine izin vermek ihtiyacınız var.
+Sunucu üzerindeki bir SSL sertifikası gerektirir HTTP üzerinden uzak bir sunucu ile tüm iletişimler olur RTVS gerektirir. (Önerilen) güvenilir bir sertifika yetkilisi tarafından imzalanmış bir sertifika ya da kendinden imzalı bir sertifika kullanabilirsiniz. (Otomatik olarak imzalanan bir sertifika bağlıyken sorunu uyarıları RTVS neden olur.) Herhangi biriyle, ardından bilgisayara yükleyin ve özel anahtarını erişmesine izin vermek ihtiyacınız var.
 
-### <a name="obtaining-a-trusted-certificate"></a>Güvenilen bir sertifika edinme
+### <a name="obtain-a-trusted-certificate"></a>Güvenilen bir sertifika
 
 Güvenilen bir sertifika bir sertifika yetkilisi tarafından verilen (bkz [sertifika yetkilileri wikipedia'da](https://en.wikipedia.org/wiki/Certificate_authority) arka planı için). Kamu kimlik kartı alma gibi güvenilir bir sertifika, daha fazla işlem ve olası ücretleri içerir ancak istek ve istek sahibinin özgünlüğünü doğrular.
 
@@ -50,7 +51,7 @@ Daha fazla arka plan için bkz: [ortak anahtar sertifikaları](https://en.wikipe
 
 SSL sertifikası windows elle yüklenmesi gerekir. Bir SSL sertifikası yüklemek için aşağıdaki yönergeleri izleyin.
 
-### <a name="obtaining-a-self-signed-certificate-windows"></a>(Windows) otomatik olarak imzalanan sertifika edinme
+### <a name="obtain-a-self-signed-certificate-windows"></a>Otomatik olarak imzalanan bir sertifika (Windows)
 
 Güvenilen bir sertifika varsa bu bölüm atlayın. Güvenilir bir yetkili bir sertifika ile karşılaştırıldığında, kendinden imzalı bir sertifika bir kimlik kartı kendiniz oluşturmak kadar kolaydır. Bu işlem, kuşkusuz güvenilir bir yetkili ile çalışmayı daha çok daha basit olduğu ancak güçlü kimlik doğrulaması, bir saldırgan, kendi sertifika imzasız sertifika için yedek ve istemci arasındaki tüm trafiği yakalama anlamına da eksik ve Sunucu. Bu nedenle, *yalnızca senaryoları, güvenilen bir ağa ve hiçbir zaman üretimde test etmek için otomatik olarak imzalanan sertifika kullanılmalıdır.*
 
@@ -75,19 +76,19 @@ Otomatik olarak imzalanan bir sertifika vermek için:
 
 Arka plan için bkz: [otomatik olarak imzalanan sertifikalar](https://en.wikipedia.org/wiki/Self-signed_certificate) wikipedia'da.
 
-### <a name="installing-the-certificate"></a>Sertifikayı yükleme
+### <a name="install-the-certificate"></a>Sertifika Yükleme
 
-Uzak bilgisayarda sertifika yüklemek için `certlm.msc` (Sertifika Yöneticisi) bir komut isteminden. Sağ tıklayın **kişisel** klasörü ve select **tüm görevler > içeri aktarma** komutu:
+Uzak bilgisayarda sertifika yüklemek için *certlm.msc* (Sertifika Yöneticisi) bir komut isteminden. **Sağ** üzerinde **kişisel** klasörü ve Seç **tüm görevler** > **alma** komutu:
 
 ![İçeri aktarma sertifika komutu](media/workspaces-remote-certificate-import.png)
 
-### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>SSL sertifikasının özel anahtarının okuma izni verme
+### <a name="grant-permissions-to-read-the-ssl-certificates-private-key"></a>SSL sertifikasının özel anahtarının okuma izni verin
 
 Sertifika içeri aktarıldığında vermek `NETWORK SERVICE` hesap özel anahtarı aşağıdaki yönergelerde açıklandığı gibi okuma izni. `NETWORK_SERVICE` Hesap, sunucu bilgisayara gelen SSL bağlantılarını sonlandırır hizmet R Hizmetleri Aracısı çalıştırmak için kullanılır.
 
-1. Çalıştırma `certlm.msc` (Sertifika Yöneticisi) bir yönetici komut isteminden.
-1. Genişletme **kişisel > sertifikaları**sertifikanızı sağ tıklatın ve seçin **tüm görevler > özel anahtarları Yönet**.
-1. Sertifikayı sağ tıklatın ve özel anahtarları Yönet komutu tüm görevler'in altında seçin
+1. Çalıştırma *certlm.msc* (Sertifika Yöneticisi) bir yönetici komut isteminden.
+1. Genişletme **kişisel** > **sertifikaları**sertifikanızı sağ tıklatın ve seçin **tüm görevler** > **yönetmek özel Anahtarları**.
+1. **Sağ** seçin ve sertifika **özel anahtarları Yönet** altında komutu **tüm görevler**.
 1. Görüntülenen iletişim kutusunda, seçin **Ekle** ve girin `NETWORK SERVICE` hesap adı olarak:
 
     ![Özel anahtarlar iletişim network_servıce ekleme, yönetme](media/workspaces-remote-manage-private-key-dialog.png)
@@ -98,11 +99,11 @@ Sertifika içeri aktarıldığında vermek `NETWORK SERVICE` hesap özel anahtar
 
 `rtvs-daemon` Paket yükleme otomatik olarak imzalanan bir sertifika varsayılan yüklemesinin bir parçası olarak.
 
-### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>Kendinden imzalı bir sertifika (Ubuntu) alma
+### <a name="obtain-a-self-signed-certificate-ubuntu"></a>(Ubuntu) otomatik olarak imzalanan bir sertifika edinin
 
 Faydaları ve otomatik olarak imzalanan sertifika kullanarak riskleri için windows açıklamasına bakın. `rtvs-daemon` Paket oluşturur ve yükleme sırasında otomatik olarak imzalanan sertifika yapılandırır. Yalnızca otomatik olarak oluşturulan otomatik olarak imzalanan sertifikayı değiştirmek istiyorsanız bunu yapmak gerekir.
 
-Kendi vermek için sertifika kendiniz imzalanmış:
+Kendiniz otomatik olarak imzalanan bir sertifika vermek için:
 
 1. SSH veya linux makinenizi oturum açın.
 1. Yükleme `ssl-cert` paketi:
@@ -118,7 +119,7 @@ Kendi vermek için sertifika kendiniz imzalanmış:
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
 
-### <a name="configuring-rtvs-daemon"></a>RTVS arka plan programı yapılandırma
+### <a name="configure-rtvs-daemon"></a>RTVS arka plan programı yapılandırın
 
 SSL sertifika dosyası yolu (PFX yoluna) ayarlanmalıdır `/etc/rtvs/rtvsd.config.json`. Güncelleştirme `X509CertificateFile` ve `X509CertificatePassword` dosya yolu ve parola ile sırasıyla.
 
@@ -150,17 +151,17 @@ R kodu çalıştırmak için uzak bilgisayarda bir R yorumlayıcı gibi yüklü 
 
 1. Çalıştırma [R Services yükleyici](https://aka.ms/rtvs-services) ve istendiğinde yeniden başlatın. Yükleyici aşağıdakileri yapar:
 
-    - Bir klasör oluşturun `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` ve tüm gerekli ikili dosyaları kopyalayın.
+    - Bir klasör için görsel Studio\1.0 *%PROGRAMFILES%\R araçlarında oluşturun\* ve tüm gerekli ikili dosyaları kopyalayın.
     - Yükleme `RHostBrokerService` ve `RUserProfileService` ve otomatik olarak başlayacak şekilde yapılandırın.
     - Yapılandırma `seclogon` hizmetini otomatik olarak başlatılacak şekilde.
-    - Ekleme `Microsoft.R.Host.exe` ve `Microsoft.R.Host.Broker.exe` Güvenlik Duvarı'na gelen kuralları varsayılan bağlantı noktası 5444.
+    - Ekleme *Microsoft.R.Host.exe* ve *Microsoft.R.Host.Broker.exe* Güvenlik Duvarı'na gelen kuralları varsayılan bağlantı noktası 5444.
 
 Bilgisayar yeniden başlatıldığında R hizmetleri otomatik olarak Başlat:
 
 - **R konak Aracısı hizmeti** R kodu bilgisayar üzerinde çalıştığı işlem ile Visual Studio arasındaki tüm HTTPS trafiğini işler.
 - **R kullanıcı profili hizmeti** , Windows kullanıcı profili oluşturma işleme ayrıcalıklı bir bileşenidir. Yeni bir kullanıcı ilk R server bilgisayara oturum açtığında hizmet adı verilir.
 
-Bu hizmetler services yönetim konsolunda görebilirsiniz (`compmgmt.msc`).
+Bu hizmetler services yönetim konsolunda görebilirsiniz (*compmgmt.msc*).
 
 ## <a name="install-r-services-on-linux"></a>Linux'ta R hizmetlerini yükleme
 
@@ -189,7 +190,7 @@ Uzak bilgisayarda çalışan R Hizmetleri ile Ayrıca kullanıcı hesapları olu
 
     Ancak, sertifikanızı (örneğin, bir Azure VM) bir Internet'e yönelik sunucuda yüklüyorsanız, Internet'e yönelik sunucusunun FQDN'sini hiçbir zaman NetBIOS adıyla aynı olduğundan sunucunuzun tam etki alanı adını (FQDN) kullanın.
 
-    FQDN kullandığınız, R Hizmetleri yüklendiği gidin (`%PROGRAM FILES%\R Remote Service for Visual Studio\1.0` varsayılan olarak), açık `Microsoft.R.Host.Broker.Config.json` dosyasını bir metin düzenleyicisinde açın ve içeriği ne olursa olsun, sunucunuzun FQDN, olduğu gibi kullanıcının için aşağıdaki, atama CN değiştirin `foo.westus.cloudapp.azure.com`:
+    FQDN kullandığınız, R Hizmetleri yüklendiği gidin (*% PROGRAM FILES%\R uzak Hizmeti'ni Visual Studio\1.0* varsayılan olarak), açık *Microsoft.R.Host.Broker.Config.json* dosyasını bir metin düzenleyicisinde ve içeriği ne olursa olsun, sunucunuzun FQDN, olduğu gibi kullanıcının için aşağıdaki, atama CN değiştirin `foo.westus.cloudapp.azure.com`:
 
     ```json
     {
@@ -216,18 +217,18 @@ Komut satırından uzak bilgisayara ping işlemi yapmayı deneyin: `ping remote-
 - Güvenlik duvarı kurallarını `Microsoft.R.Host.Broker` ve `Microsoft.R.Host` 5444 bağlantı noktasından gelen ve giden bağlantıları için etkin değil.
 - Bir SSL sertifikası ile `CN=<remote-machine-name>` yüklü değil.
 
-Yukarıdaki değişiklikleri yaptıktan sonra bilgisayarı yeniden başlatın. Ardından olduğundan emin olun `RHostBrokerService` ve `RUserProfileService` ya da Görev Yöneticisi (Hizmetleri sekmesi) üzerinden çalışan veya `services.msc`.
+Yukarıdaki değişiklikleri yaptıktan sonra bilgisayarı yeniden başlatın. Ardından olduğundan emin olun `RHostBrokerService` ve `RUserProfileService` ya da Görev Yöneticisi (Hizmetleri sekmesi) üzerinden çalışan veya *services.msc*.
 
 **Q. Neden R etkileşimli pencere, R sunucusuna bağlanırken "401 Erişim engellendi" dediği?**
 
 İki olası nedeni vardır:
 
 - Yüksek oranda olasıdır, `NETWORK SERVICE` hesap SSL sertifikası özel anahtarına erişime sahip değil. Vermek için önceki yönergeleri `NETWORK SERVICE` özel anahtara erişim.
-- Olduğundan emin olun `seclogon` hizmetinin çalıştığından. Kullanım `services.msc` yapılandırmak için `seclogon` otomatik olarak başlatılacak.
+- Olduğundan emin olun `seclogon` hizmetinin çalıştığından. Kullanım *services.msc* yapılandırmak için `seclogon` otomatik olarak başlatılacak.
 
 **Q. Neden R etkileşimli pencere, R sunucusuna bağlanırken "404 bulunamadı" dediği?**
 
-Bu hata muhtemelen Visual C++ yeniden dağıtılabilir kitaplıkları nedeniyle eksik. Eksik library(DLL) ilgili bir ileti olup olmadığını görmek için R etkileşimli penceresini denetleyin. Ardından VS 2015 redistributable yüklenir ve de yüklü R olduğunu denetleyin.
+Bu hata muhtemelen Visual C++ yeniden dağıtılabilir kitaplıkları nedeniyle eksik. Eksik kitaplığı (DLL) ilgili bir ileti olup olmadığını görmek için R etkileşimli penceresini denetleyin. Ardından VS 2015 redistributable yüklenir ve de yüklü R olduğunu denetleyin.
 
 **Q. I erişemiyor Internet/kaynak R etkileşimli penceresinden, ne yapmalıyım?**
 
@@ -235,4 +236,4 @@ Güvenlik Duvarı için kuralları olun `Microsoft.R.Host.Broker` ve `Microsoft.
 
 **Q. Bu çözümlerin çalışmış olabilirsiniz ve hala çalışmamaktadır. Şimdi ne yapmalıyım?**
 
-Günlük dosyalarına bakın `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp`. Bu klasör çalıştırıldığı R Aracısı hizmetini her örneği için farklı günlük dosyaları içerir. Hizmet yeniden başlatıldığında yeni bir günlük dosyası oluşturulur. Yanlış neler hakkında ipuçları için en son günlük dosyasını denetleyin.
+Günlük dosyalarına bakın *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Bu klasör çalıştırıldığı R Aracısı hizmetini her örneği için farklı günlük dosyaları içerir. Hizmet yeniden başlatıldığında yeni bir günlük dosyası oluşturulur. Yanlış neler hakkında ipuçları için en son günlük dosyasını denetleyin.

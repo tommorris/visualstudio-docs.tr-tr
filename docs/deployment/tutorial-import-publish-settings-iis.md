@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0be2bc034c209ad43abc7cb0866480ede61a7777
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766688"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235030"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak IIS uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -47,7 +47,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio'da yeni bir ASP.NET projesi oluşturma
 
-1. Visual Studio çalıştıran bilgisayarda seçin **Dosya > Yeni proje**.
+1. Visual Studio çalıştıran bilgisayarda seçin **dosya** > **yeni proje**.
 
 1. Altında **Visual C#** veya **Visual Basic**, seçin **Web**ve ardından Orta bölmede ya da **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET çekirdek Web uygulaması**ve ardından **Tamam**.
 
@@ -59,7 +59,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) bir yayımlama profili fark
 
     Visual Studio projesi oluşturur.
 
-1. Seçin **Yapı > Yapı çözümü** Projeyi derlemek için.
+1. Seçin **yapı** > **yapı çözümü** Projeyi derlemek için.
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>Yükleme ve Windows Server'da Web dağıtımı yapılandırma
 

@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ad41ea30f66e877155355aec60de0f4a40e8c6e7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477868"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233645"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT Kitaplığını Kullanarak Bellek Sızıntılarını Bulma
 Bellek sızıntıları, doğru önceden ayrılmış olan bellek ayırması hata olarak tanımlanan en ince ve sabit algılamak hataların C/C++ uygulamalarında arasındadır. Küçük bellek sızıntısı konumundaki ilk ancak zamanla fark edilmesi değil, aşamalı bellek sızıntısı belirtiler bu aralık performansın bellek yetersiz uygulamayı çalıştırdığında, kilitlenen için neden olabilir. Da kötüsü, tüm kullanılabilir bellek kullanan leaking bir uygulamayı Karışıklığı önlemek için hangi uygulama sorumludur oluşturma kilitlenme başka bir uygulamanın neden olabilir. Hatta görünen zararsız bellek sızıntıları düzeltilmesi diğer sorunlarını belirtisi olabilir.  
@@ -186,7 +186,7 @@ Bu sızan ayırma debug_new.cpp satır 20 olduğunu bildirir.
   
 2.  Uygulamayı kesme noktasında böldüğünde **izleme** penceresi.  
   
-3.  İçinde **izleme** penceresinde, türü `_crtBreakAlloc` içinde içinde **adı** sütun.  
+3.  İçinde **izleme** penceresinde, türü `_crtBreakAlloc` içinde **adı** sütun.  
   
      CRT kitaplık (/MD seçeneği) birden çok iş parçacıklı DLL sürümü kullanıyorsanız, context işleci şunları içerir: `{,,ucrtbased.dll}_crtBreakAlloc`  
   

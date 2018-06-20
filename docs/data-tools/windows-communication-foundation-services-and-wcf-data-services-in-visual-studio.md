@@ -37,15 +37,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9ffe8acdf64394052e89af76ef5ade833c1bee9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a1fc9a9975f2caeea0c1361900dca4d211f4c2ee
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925920"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233632"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
-Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araçları sağlar ve [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], oluşturmak için Microsoft teknolojilerini dağıtılmış uygulamalar. Bu konuda Hizmetleri'nden tanıtılmaktadır bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektif. Tam belgeler için bkz: [WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index).
+Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araçları sağlar ve [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], oluşturmak için Microsoft teknolojilerini dağıtılmış uygulamalar. Bu konuda Hizmetleri için Visual Studio açısından tanıtılmaktadır. Tam belgeler için bkz: [WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>WCF nedir?
  [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] güvenli, güvenilir, işlenen ve birlikte çalışabilir dağıtılmış uygulamaları oluşturmak için birleştirilmiş bir çerçevedir. ASMX Web Hizmetleri, .NET uzaktan iletişim, Kurumsal Hizmetleri (DCOM) ve MSMQ gibi eski işlemler arası iletişimi teknolojileri değiştirir. WCF bu teknolojiler birleşik bir programlama modeli altında işlevselliğini bir araya getirir. Bu, dağıtılmış uygulamaları geliştirme deneyimi kolaylaştırır.
@@ -84,20 +84,20 @@ Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araç
  [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio'da WCF araçları
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] WCF hizmetleri ve WCF istemcileri oluşturmanıza yardımcı olacak araçlar sağlar. Araçlar izlenecek yol için bkz: [izlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+ Visual Studio, WCF hizmetleri ve WCF istemcileri oluşturmanıza yardımcı olacak araçlar sağlar. Araçlar izlenecek yol için bkz: [izlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
 
 ### <a name="creating-and-testing-wcf-services"></a>Oluşturma ve sınama WCF hizmetleri
- WCF kullanabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablonlar hızlı bir şekilde kendi hizmet oluşturmak için bir temel olarak. Hata ayıklama ve hizmet sınamak için WCF hizmeti otomatik ana bilgisayarı ve WCF Test İstemcisi ardından kullanabilirsiniz. Bu araçları birlikte hızlı ve kolay hata ayıklama ve test döngüsü sağlar ve barındırma modeli için erken bir aşamada yürütme gerekliliğini ortadan kaldırmak.
+ WCF Visual Studio şablonları, hızlı bir şekilde kendi hizmet oluşturmak için temel olarak kullanabilirsiniz. Hata ayıklama ve hizmet sınamak için WCF hizmeti otomatik ana bilgisayarı ve WCF Test İstemcisi ardından kullanabilirsiniz. Bu araçları birlikte hızlı ve kolay hata ayıklama ve test döngüsü sağlar ve barındırma modeli için erken bir aşamada yürütme gerekliliğini ortadan kaldırmak.
 
 #### <a name="wcf-templates"></a>WCF şablonları
- WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablonları, hizmet geliştirme için bir temel sınıf yapısı sağlar. Çeşitli WCF şablonlar kullanılabilir **Yeni Proje Ekle** iletişim kutusu. Bunlar, WCF Hizmeti kitaplık projeleri, WCF Hizmeti Web siteleri ve WCF Hizmeti öğe şablonları içerir.
+ WCF Visual Studio şablonları, hizmet geliştirme için bir temel sınıf yapısı sağlar. Çeşitli WCF şablonlar kullanılabilir **Yeni Proje Ekle** iletişim kutusu. Bunlar, WCF Hizmeti kitaplık projeleri, WCF Hizmeti Web siteleri ve WCF Hizmeti öğe şablonları içerir.
 
  Bir şablon seçtiğinizde, dosyaları bir hizmet sözleşmesini, bir hizmet uygulaması ve hizmeti bir yapılandırma için eklenir. Hizmet, basit bir "Hello World" türü oluşturma, tüm gerekli öznitelikler zaten eklenir ve herhangi bir kod yazmak zorunda kalmadığımıza. Elbette, İşlevler ve gerçek dünya hizmetiniz için yöntemler sağlamak üzere kod eklemek istediğiniz ancak temel foundation şablonları sağlar.
 
  WCF şablonları hakkında daha fazla bilgi için bkz: [WCF Visual Studio şablonları](/dotnet/framework/wcf/wcf-vs-templates).
 
 #### <a name="wcf-service-host"></a>WCF hizmet konağı
- Başlattığınızda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklayıcı (F5 tuşuna basarak) bir WCF Hizmeti projesi için WCF hizmet ana bilgisayarı Aracı hizmeti yerel olarak barındırmak için otomatik olarak başlatılır. WCF hizmet konağı bir WCF Hizmeti projesini Hizmetleri'nde numaralandırır, projenin yapılandırmayı yükler ve bulduğu her hizmet için bir konak başlatır.
+ Visual Studio hata ayıklayıcısı (F5 tuşuna basarak) için bir WCF Hizmeti projesini başlattığınızda, WCF hizmet konağı Aracı hizmeti yerel olarak barındırmak için otomatik olarak başlatılır. WCF hizmet konağı bir WCF Hizmeti projesini Hizmetleri'nde numaralandırır, projenin yapılandırmayı yükler ve bulduğu her hizmet için bir konak başlatır.
 
  WCF hizmet ana bilgisayarı kullanarak ek kod yazma veya belirli bir ana bilgisayara geliştirme sırasında gerçekleştirmeden olmadan bir WCF Hizmeti sınayabilirsiniz.
 
@@ -111,7 +111,7 @@ Windows Communication Foundation (WCF) ile çalışmak için Visual Studio araç
  WCF Test İstemcisi hakkında daha fazla bilgi için bkz: [WCF Test İstemcisi (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Visual Studio'da WCF hizmetlerine erişme
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] WCF istemcileri, otomatik olarak bir proxy ve Hizmetleri kullanarak eklemek için bir uç nokta oluşturma oluşturma görevini basitleştirir **hizmet Başvurusu Ekle** iletişim kutusu. Tüm gerekli yapılandırma bilgilerini app.config dosyasına eklenir. Çoğu süresini tüm yapmanız gereken olan örneği hizmet bunu kullanmak için.
+ Visual Studio WCF istemcileri, otomatik olarak bir proxy ve Hizmetleri kullanarak eklemek için bir uç nokta oluşturma oluşturma görevini basitleştirir **hizmet Başvurusu Ekle** iletişim kutusu. Tüm gerekli yapılandırma bilgilerini app.config dosyasına eklenir. Çoğu süresini tüm yapmanız gereken olan örneği hizmet bunu kullanmak için.
 
  **Hizmet Başvurusu Ekle** iletişim kutusu için bir hizmet adresini girin ya da çözümünüz içinde tanımlı bir hizmet için aranacak sağlar. İletişim kutusu, hizmetleri ve bu hizmetleri tarafından sağlanan işlemleri listesini döndürür. Ayrıca kod Hizmetleri'nde başvurur ad alanı tanımlamanızı sağlar.
 
@@ -236,10 +236,10 @@ Bu sorunu önlemek için başvurulan derlemelerin türlerinde varsayılan olarak
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[İzlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Oluşturma ve WCF hizmetlerini kullanarak adım adım bir gösterim sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-|[İzlenecek yol: bir WCF veri hizmetine WPF ve Entity Framework ile oluşturma](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Adım adım bir gösterim oluşturmak ve kullanmak nasıl sağlar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-|[WCF Geliştirme Araçlarını Kullanma](/dotnet/framework/wcf/using-the-wcf-development-tools)|Oluşturma ve WCF hizmetlerinde test anlatılmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-||[Nasıl yapılır: ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu kaldırma](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Başvuru ve nasıl kullanılacağını anlatır [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
+|[İzlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Oluşturma ve Visual Studio'da WCF hizmetleri kullanarak adım adım bir gösterim sağlar.|
+|[İzlenecek yol: bir WCF veri hizmetine WPF ve Entity Framework ile oluşturma](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Adım adım bir gösterim oluşturmak ve kullanmak nasıl sağlar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Visual Studio.|
+|[WCF Geliştirme Araçlarını Kullanma](/dotnet/framework/wcf/using-the-wcf-development-tools)|Oluşturma ve WCF hizmetleri Visual Studio'da test açıklanır.|
+||[Nasıl yapılır: ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu kaldırma](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Başvuru ve nasıl kullanılacağını anlatır [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Visual Studio.|
 |[Hizmet başvurularında sorun giderme](../data-tools/troubleshooting-service-references.md)|Hizmet başvuruları ve bunları engelleme ile ortaya çıkabilecek bazı yaygın hatalar gösterir.|
 |[WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)|Genel hata ayıklama sorunları ve WCF hizmetleri hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar.|
 |[İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Türü belirtilmiş veri kümesi oluşturma ve birden çok projeye TableAdapter ve veri kümesi kodu ayırmak için adım adım yönergeler sağlar.|

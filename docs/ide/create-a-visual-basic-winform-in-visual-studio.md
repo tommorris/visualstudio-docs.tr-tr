@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a37cc4c17a403b398fd523f3582aaba910338f4d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746020"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233606"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulama
 
@@ -86,7 +86,7 @@ Bir eylem oluşturmak için bir düğme denetimi ekledik, metne göndermek için
 
 2. İçinde **Form1.vb** penceresi, arasında **özel alt** satır ve **End Sub** satır yazın veya yapıştırın `lblHelloWorld.Text = "Hello World!"`.
 
-     ![Form formun kodu ekleyin](../ide/media/vb-add-code-to-the-form.png)
+     ![Form için kod ekleme](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4937bcdef14cadccfa940b2176cf002a976fa16d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 45990b9885d81192f6c1a7d12fb3027b6041fc6b
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766421"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234354"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint çözümlerinde hata ayıklama
   SharePoint çözümlerini kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Hata ayıklama, başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje dosyalarını SharePoint sunucusuna dağıtır ve sonra SharePoint sitesine örneği Web tarayıcısında açar. Aşağıdaki bölümlerde, SharePoint uygulamalarında hata ayıklama açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -129,7 +129,7 @@ ms.locfileid: "34766421"
  İş akışı projelerinde hata ayıklama işlemi yaparken [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (türüne bağlı olarak kendi) iş akışı şablonu bir kitaplık veya bir listesine ekler. İş akışı şablonu sonra el ile veya eklemek veya bir öğe tarafından da başlatabilirsiniz. Daha sonra kullanabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı hata ayıklamak için.  
   
 > [!NOTE]  
->  Diğer derlemelerine başvurular eklerseniz, emin olun, bu derlemeleri genel derleme önbelleğinde yüklü ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Aksi takdirde, iş akışı çözümü başarısız olur. Derlemeleri yükleme hakkında daha fazla bilgi için bkz: [el ile bir iş akışı bir belge veya öğe başlatmak](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+>  Diğer derlemelerine başvurular eklerseniz, bu derlemeleri genel derleme önbelleğinde yüklü olduğundan emin olun ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Aksi takdirde, iş akışı çözümü başarısız olur. Derlemeleri yükleme hakkında daha fazla bilgi için bkz: [el ile bir iş akışı bir belge veya öğe başlatmak](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Ancak, dağıtım işlemi, iş akışı başlatılmaz. İş akışı SharePoint Web sitesinden başlatmanız gerekir. İş akışı Ayrıca, Microsoft Office Word 2010 gibi bir istemci uygulaması kullanarak ya da ayrı sunucu tarafı kodu kullanarak da başlatabilirsiniz. Belirtilen yaklaşımlardan birini kullanın **SharePoint Özelleştirme Sihirbazı'nı**.  
   

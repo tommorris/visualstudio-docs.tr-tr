@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 425a4e6fd85f635d6e95122a55fe0d09fde7825c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752072"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238391"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -54,7 +54,7 @@ Test Gezgini penceresinin üst geçişi/hata çubuğu Testleri Çalıştır anim
 
 ### <a name="run-tests-after-every-build"></a>Her yapıdan sonra testleri çalıştırma
 
-|||
+|Düğme|Açıklama|
 |-|-|
 |![Derleme sonrası çalıştırın](../test/media/ute_runafterbuild_btn.png)|Her yerel yapıdan sonra birim testleri çalıştırmak için tercih **Test** standart menüsünde ve ardından **çalıştırmak sonra yapı testleri** Test Gezgini araç çubuğunda.|
 
@@ -126,7 +126,7 @@ Test Gezgini testlerinizi önceden tanımlanmış kategoriler halinde gruplandı
 
 Test Gezgini filtreleri test yöntemleri, görüntüleme ve çalıştırma projelerinizde sınırlamak için kullanabilirsiniz.
 
-Bir dizede Test Gezgini arama kutusuna yazın ve ENTER seçin, yalnızca tam adları dizeyi içeren testleri görüntülemek için test listesi filtrelenir.
+Bir dizeyi Test Gezgini arama kutusuna yazın ve ENTER seçin, yalnızca tam adları dizeyi içeren testleri görüntülemek için test listesi filtrelenir.
 
 Farklı bir ölçüte göre filtre uygulamak için:
 
@@ -153,7 +153,7 @@ Farklı bir ölçüte göre filtre uygulamak için:
 
 Bir filtre sonuçlarını kümesini dışarıda bırakmak için aşağıdaki sözdizimini kullanın:
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

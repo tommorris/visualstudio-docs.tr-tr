@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0f8efe8f64c166a549080d10432fd0dd7e241f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978381"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235069"
 ---
-# <a name="use-different-web-browsers-with-coded-ui-tests"></a>Kodlanmış UI testleriyle farklı Web tarayıcıları kullanma
+# <a name="use-different-web-browsers-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Farklı Web Tarayıcıları Kullanma
 
 Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak testlerinizi kaydederek sınamayı otomatikleştirebilirsiniz. Bu web uygulamaları için Internet Explorer veya başka tarayıcı türleri kullanarak testinizi özelleştirebilir ve geri oynatabilirsiniz.
 
@@ -94,7 +94,7 @@ Bilmeniz gereken bazı şeyler şunlardır:
 
 Çıktı kodlanmış UI günlüklerinde ekran görüntüleri dahil etmek için yapılandırabilirsiniz. Bunu yapmak için bazı yapılandırma ayarları kümesinde gereksinim *QTAgent32.exe.config* dosya. Varsayılan olarak, bu dosya aşağıdaki konuma yüklenir:
 
-     *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
+*% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
 Aşağıdaki değerleri ayarlayın:
 

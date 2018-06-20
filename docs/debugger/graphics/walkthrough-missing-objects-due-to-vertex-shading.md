@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482015"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234263"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>İzlenecek Yol: Köşe Gölgeleme Nedeniyle Nesnelerin Eksikliği
 Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] köşe gölgelendirici aşamasında oluşan bir hata nedeniyle eksik bir nesne araştırmak için grafik tanılama araçları.  
@@ -108,7 +108,7 @@ Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vsprvs](../../code-qualit
     > [!TIP]
     >  Uygulamanız aynı anda ayıkladığınız, sonraki çerçeve işlendiğinde temas eder ve bu konumda bir kesme noktası ayarlayabilirsiniz. Ardından üyelerini inceleyebilirsiniz `m_marbleConstantBufferData` doğrulamak için değeri `projection` üye sabit arabellek dolduğunda tümü sıfır olarak ayarlayın.  
   
- Burada sabit arabellek doldurulur konumunu bulmak ve değerlerini değişkeninden gelen olduğunu fark sonra `m_marbleConstantBufferData`, sonraki adıma nereye bulmaktır `m_marbleConstantBufferData.projection` üye tümü sıfır olarak ayarlanır. Kullanabileceğiniz **tüm başvuruları Bul** değerini değiştirir kodunu hızlı tarama için `m_marbleConstantBufferData.projection`.  
+ Burada sabit arabellek doldurulur konumunu bulmak ve değerlerini değişkeninden geldiğini Bul sonra `m_marbleConstantBufferData`, nerede bulmak için sonraki adımdır `m_marbleConstantBufferData.projection` üye tümü sıfır olarak ayarlanır. Kullanabileceğiniz **tüm başvuruları Bul** değerini değiştirir kodunu hızlı tarama için `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Projeksiyon üye uygulamanızın kaynak kodunda ayarlandığı bulmak için  
   

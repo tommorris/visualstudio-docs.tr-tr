@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a56cc87978ebc5b8c64c0a2a6774186048efa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6438bbb905244902a8f5407a2ad8dea74430c430
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560901"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233470"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>İzlenecek yol: Tasarımcıyı Kullanarak ClickOnce Dağıtım API'si ile Uydu Derlemelerini İndirme
 Windows Forms uygulamaları uydu derlemelerini kullanarak birden çok kültür için yapılandırılabilir. A *uydu derleme* uygulamanın varsayılan kültürü dışında bir kültür için uygulama kaynaklarını içeren bir derlemedir.  
@@ -51,7 +51,7 @@ Windows Forms uygulamaları uydu derlemelerini kullanarak birden çok kültür i
   
      Uydu derlemesi biçiminde bir ada sahip olacaktır *isoCode*\ApplicationName.resources.dll, burada *isoCode* RFC 1766 biçiminde dil tanımlayıcısıdır.  
   
-5.  Tıklatın **yeni...**  içinde **indirme grubu** her dil tanımlayıcısı için listesi. İndirme grubu adı için istendiğinde dil tanımlayıcısını girin. Örneğin, Japonca uydu derlemesi için indirme grup adını belirtirsiniz `ja-JP`.  
+5.  Tıklatın **yeni** içinde **indirme grubu** her dil tanımlayıcısı için listesi. İndirme grubu adı için istendiğinde dil tanımlayıcısını girin. Örneğin, Japonca uydu derlemesi için indirme grup adını belirtirsiniz `ja-JP`.  
   
 6.  Kapat **uygulama dosyalarını** iletişim kutusu.  
   

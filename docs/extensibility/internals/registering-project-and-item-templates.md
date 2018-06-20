@@ -17,14 +17,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85c22d0191d015979dff5a4845c4dda0af96ee60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f3bc016a9c4b462c771db2cc98d1fd9493129278
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133753"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234046"
 ---
-# <a name="registering-project-and-item-templates"></a>Proje ve öğe şablonları kaydediliyor
+# <a name="registering-project-and-item-templates"></a>Proje ve Öğe Şablonlarını Kaydetme
 Proje türleri kendi proje ve proje öğesi şablonları bulunduğu dizinleri kaydetmeniz gerekir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proje türleri ile ilişkili tüm kayıt bilgileri göstermek üzere belirlemek için kullanır **Yeni Proje Ekle** ve **Yeni Öğe Ekle** iletişim kutuları.  
   
  Şablonlar hakkında daha fazla bilgi için bkz: [ekleme proje ve proje öğesi şablonları](../../extensibility/internals/adding-project-and-project-item-templates.md).  

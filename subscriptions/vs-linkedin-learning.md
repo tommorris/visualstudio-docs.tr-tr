@@ -9,12 +9,12 @@ description: Seçilen Visual Studio Aboneliklerde bulunan bir LinkedIn Premium a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 71b6fca12acf1ee1ebd552622a41412f1d1ba269
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbc3f5bc39a21f76f8b45ba5da20ed8504ea1349
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199228"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233457"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde LinkedIn öğrenme avantajı
 
@@ -89,7 +89,7 @@ LinkedIn Premium aboneliği ve LinkedIn öğrenme avantajı etkinleştirmek içi
 
 17. Premium aboneliği teklifiniz başarıyla etkinleştirdiğinizden ve LinkedIn öğrenme ve diğer avantajların yanı sıra Premium kullanmaya şimdi başlayabilirsiniz!
 
-    ![LinkedIn öğrenme Learning giriş](_img\vs-linkedin\vs-linkedin-learning-home.png)
+    ![LinkedIn Learning giriş](_img\vs-linkedin\vs-linkedin-learning-home.png)
 
 ## <a name="eligibility"></a>Uygunluk
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
@@ -101,7 +101,7 @@ LinkedIn Premium aboneliği ve LinkedIn öğrenme avantajı etkinleştirmek içi
 | Visual Studio Dev Essentials | Yok  | 3 ay |Hayır.  Yalnızca yeni aboneler |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satışı (NFR), Visual Studio Endüstri ortağı (VSIP) için değil.    Dışlar: Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, düşünün, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: satışı (NFR), Visual Studio Endüstri ortağı (VSIP) için değil.  Dışlar: Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, düşünün, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
 
 

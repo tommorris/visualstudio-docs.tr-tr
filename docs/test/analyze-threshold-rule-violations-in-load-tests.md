@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750915"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234991"
 ---
-# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Yük Testi Çözümleyicisini Kullanarak Yük Testlerindeki Eşik Kuralı İhlallerini Çözümleme
+# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Yük testi çözümleyicisini kullanarak Yük testlerindeki eşik kuralı ihlallerini çözümleme
 
 Eşik kuralları belirli bir performans sayaçları ile ilişkili olan ve bir performans sayacı aşıldı veya ayarlanan bir değeri altına düştü ihlalleri gösterir. Bir yük testi çalıştırdığınızda, önceden ayarlanmış eşik kuralları için oluşan ihlalleri çözümleyebilirsiniz.
 
-Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü Yük Testi Çözümleyicisinin durum çubuğunda görünür ve oluşan ihlallerinin sayısını belirtir. Eşik ihlalleri tablosunu görüntülemek için köprü seçin. Eşik ihlalleri de görüntüleyebilirsiniz **sayaçları** penceresinde ve grafik.
+Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü bulunur **Yük Testi Çözümleyicisi** durum çubuğu ve oluşan ihlallerinin sayısını belirtir. Eşik ihlalleri tablosunu görüntülemek için köprü seçin. Eşik ihlalleri de görüntüleyebilirsiniz **sayaçları** penceresinde ve grafik.
 
 ## <a name="view-threshold-violations-in-the-table"></a>Tablodaki görünümü Eşik ihlalleri
 
@@ -46,7 +46,7 @@ Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü Yük Testi Çö
 > [!NOTE]
 > Tablo, sütun başlıklarının seçerek sıralayabilirsiniz.
 
- Daha fazla bilgi için bkz: [yük testi sonuçlarını çözümleme ve hataları Tablo görünümünde](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+ Daha fazla bilgi için bkz: [analiz yük testi sonuçlarını ve hatalarını Tablo görünümünde](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Sayaç panelinde görünüm Eşik ihlalleri
 
@@ -74,10 +74,10 @@ Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü Yük Testi Çö
 
  Grafikte Eşik ihlallerini görüntüleyebilirsiniz. Benzer şekilde **sayaçları** paneli, simgeler Eşik İhlallerini Grafikte iletişim kurar. Grafikte eşik ihlalinin oluştuğu veri noktasının yanındaki simgeleri görüntülenir. Grafikte olmayan bir sayaçta eşik ihlali meydana gelirse, bunu grafiğe ondan sürükleyerek ekleyebilirsiniz **sayaçları** grafik paneline.
 
- Daha fazla bilgi için bkz: [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Daha fazla bilgi için bkz: [Çözümle yük testi sonuçları grafikler görünümünde](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yük testindeki bilgisayarlar için sayaç kümelerini ve eşik kurallarını belirtme](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testinde belirtme](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Yük testi sonuçlarını ve hatalarını Tablo görünümünde analiz eder.](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

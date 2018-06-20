@@ -68,7 +68,7 @@ Bu makalede nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quali
     |[/ sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Örnekleme olay sistem çağrıları (syscalls) işletim sistemi çekirdeğe işleminden değiştirir. Varsa `Interval` belirtilmemişse, örnekler arasındaki çağrılarının sayısını ayarlar. Varsayılan 10'dur.|  
     |[/ sayacı](../profiling/counter.md) **:** `Config`|İşlemci performans sayacı ve belirtilen aralığa örnekleme olay ve aralığı değişikliklerini `Config`.|  
   
-## <a name="control-data-collection"></a>Veri toplamayı denetleme  
+## <a name="control-data-collection"></a>Denetimin veri toplama  
  Hedef uygulama çalışırken, kullanabileceğiniz *VSPerfCmd.exe* Profil Oluşturucu veri dosyası için veri yazma durdurmak ve başlatmak için Seçenekler. Veri toplama denetimi, program yürütme, başlatma veya kapatma uygulamanın gibi belirli bir bölümü için veri toplamanıza olanak sağlar.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak için  

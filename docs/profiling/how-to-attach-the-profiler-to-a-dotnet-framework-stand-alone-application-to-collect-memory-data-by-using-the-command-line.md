@@ -81,7 +81,7 @@ Hedef uygulama çalışırken, başlatma ve kullanarak verileri dosyaya yazma du
 
 - Seçenekler aşağıdaki çiftleri başlatın ve veri toplama işlemini durdurun. Her ayrı bir komut satırı seçeneğini belirtin. Veri toplama, birden çok kez açıp kapatabilirsiniz.
 
-    |Seçenek|Açıklama|
+    |Seçeneği|Açıklama|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlatır (**/globalon**) veya durdurulduğunda (**/globaloff**) tüm işlemler için veri toplama.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlatır (**/processon**) veya durdurulduğunda (**/processoff**) tarafından belirtilen işlem için veri toplama `PID`.|
@@ -101,7 +101,7 @@ Profil oluşturma oturumu sona erdirmek için profil oluşturucu tüm profili i�
 
     - Hedef uygulamayı kapatın.
 
-2. Profil Oluşturucu kapatın. Tür:
+2. Profil Oluşturucu kapatın. Türü:
 
      **VSPerfCmd**[Shutdown](../profiling/shutdown.md)
 

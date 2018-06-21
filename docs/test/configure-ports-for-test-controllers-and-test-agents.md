@@ -15,13 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4067dae0d75f5fbd4e4dfb3ff7bacfc1ff269512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296297"
 ---
-# <a name="configure-ports-for-test-controllers-and-test-agents"></a>Test denetleyicileri ve Test aracıları için bağlantı noktalarını yapılandırma
+# <a name="configure-ports-for-test-controllers-and-test-agents"></a>Test denetleyicileri için bağlantı noktalarını yapılandırın ve test aracıları
 
 Test denetleyicisi, test aracısı ve istemci tarafından kullanılan varsayılan gelen bağlantı noktalarını değiştirebilirsiniz. Test denetleyicisi, test aracısı veya başka bir yazılım ile birlikte istemci çakışan bağlantı noktası ayarlarıyla kullanmak çalışıyorsanız gerekli olabilir. Bağlantı noktalarını değiştirmek için başka bir test denetleyicisi ve istemci arasındaki güvenlik duvarı kısıtlama nedeniyle nedenidir. Bu durumda el ile test denetleyicisi sonuçları istemciye gönderebilmesi için bir güvenlik duvarını etkinleştirme uyum sağlamak için bağlantı noktası yapılandırmak isteyebilirsiniz.
 
@@ -33,22 +34,22 @@ Test denetleyicisi, test aracısı ve istemci tarafından kullanılan varsayıla
 
 Test denetleyicisi tarafından kullanılan varsayılan bağlantı noktası 6901 ve test aracısının varsayılan bağlantı noktası 6910. İstemci, test denetleyicisinden test sonuçları almak için kullanılan varsayılan olarak bir rastgele bağlantı noktası kullanır. Tüm gelen bağlantıları için test denetleyicisi çağıran tarafın ve belirli güvenlik grubuna ait olduğunu doğrular.
 
-- **Test denetleyicisi** gelen bağlantılar, TCP bağlantı noktası 6901 gerçekleştirilir. Gerekiyorsa, gelen bağlantı noktası yapılandırabilirsiniz. Daha fazla bilgi için bkz: [gelen bağlantı noktalarını yapılandırma](#ConfigurePorts).
+- **Test denetleyicisi** gelen bağlantılar, TCP bağlantı noktası 6901 gerçekleştirilir. Gerekiyorsa, gelen bağlantı noktası yapılandırabilirsiniz. Daha fazla bilgi için bkz: [gelen bağlantı noktalarını yapılandırma](#configure-the-incoming-ports).
 
     Test aracıları için giden bağlantı kurmak test denetleyicisi gerekir ve istemciye.
 
     > [!NOTE]
     > Test denetleyicisi gelen gereken **dosya ve Yazıcı Paylaşımı** bağlantı açık.
 
-- **Test aracısı** gelen bağlantılar, TCP bağlantı noktası 6910 gerçekleştirilir. Gerekiyorsa, gelen bağlantı noktası yapılandırabilirsiniz. Daha fazla bilgi için bkz: [gelen bağlantı noktalarını yapılandırma](#ConfigurePorts).
+- **Test aracısı** gelen bağlantılar, TCP bağlantı noktası 6910 gerçekleştirilir. Gerekiyorsa, gelen bağlantı noktası yapılandırabilirsiniz. Daha fazla bilgi için bkz: [gelen bağlantı noktalarını yapılandırma](#configure-the-incoming-ports).
 
    Test aracısı test denetleyicisine giden bağlantı olması gerekir.
 
-- **İstemci** varsayılan olarak, gelen bağlantılar için rastgele bir TCP bağlantı noktası kullanılır. Gerekiyorsa, gelen bağlantı noktası yapılandırabilirsiniz. Daha fazla bilgi için bkz: [gelen bağlantı noktalarını yapılandırma](#ConfigurePorts).
+- **İstemci** varsayılan olarak, gelen bağlantılar için rastgele bir TCP bağlantı noktası kullanılır. Gerekiyorsa, gelen bağlantı noktası yapılandırabilirsiniz. Daha fazla bilgi için bkz: [gelen bağlantı noktalarını yapılandırma](#configure-the-incoming-ports).
 
    Test denetleyicisi istemci ilk kez bağlanmaya çalıştığında güvenlik duvarı bildirimleri alabilirsiniz.
 
-   Windows Server 2008 üzerinde güvenlik duvarı bildirimleri varsayılan olarak devre dışıdır ve gelen bağlantıları kabul edebilmesi için istemci programları (devenv.exe, mstest.exe, mlm.exe) güvenlik duvarı özel durumlarını el ile eklemeniz gerekir.
+   Windows Server 2008'de güvenlik duvarı bildirimleri varsayılan olarak devre dışıdır ve istemci programları için güvenlik duvarı özel durumlarını el ile eklemeniz gerekir (*devenv.exe*, *mstest.exe*, *mlm.exe*) gelen bağlantıları kabul edebilmesi için.
 
 ## <a name="outgoing-connections"></a>Giden bağlantılar
 
@@ -60,11 +61,11 @@ Rastgele TCP bağlantı noktaları tüm giden bağlantılar için kullanılır.
 
 - **İstemci** denetleyicisine giden bağlantı kurmayı istemci gerekir.
 
-## <a name="configure-the-incoming-ports"></a>Gelen bağlantı noktalarını yapılandırma
+## <a name="configure-the-incoming-ports"></a>Gelen bağlantı noktalarını yapılandırın
 
 Bir test denetleyicisi için bağlantı noktalarını yapılandırmak ve test aracıları için bu yönergeleri izleyin.
 
-- **Denetleyici Hizmeti** % ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config dosyasını düzenleyerek bağlantı noktasının değerini değiştirin:
+- **Denetleyici Hizmeti** düzenleyerek bağlantı noktasının değerini değiştirip *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* dosyası:
 
     ```xml
     <appSettings>
@@ -72,7 +73,7 @@ Bir test denetleyicisi için bağlantı noktalarını yapılandırmak ve test ar
     </appSettings>
     ```
 
-- **Aracı hizmeti** % ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config dosyasını düzenleyerek bağlantı noktasını değiştirin:
+- **Aracı hizmeti** düzenleyerek bağlantı noktasını Değiştir *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* dosyası:
 
     ```xml
     <appSettings>
@@ -80,11 +81,11 @@ Bir test denetleyicisi için bağlantı noktalarını yapılandırmak ve test ar
     </appSettings>
     ```
 
-- **İstemci** aşağıdaki kayıt defteri (DWORD) değerlerini eklemek için Kayıt Defteri Düzenleyicisi'ni kullanın. Test denetleyicisinden veri almak için istemci belirtilen aralık bağlantı noktalarından birini kullanır:
+- **İstemci** aşağıdaki kayıt defteri eklemek için Kayıt Defteri Düzenleyicisi'ni kullanın (**DWORD**) değerleri. Test denetleyicisinden veri almak için istemci belirtilen aralık bağlantı noktalarından birini kullanır:
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

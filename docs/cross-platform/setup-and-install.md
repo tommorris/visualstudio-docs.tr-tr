@@ -10,56 +10,56 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 62871cefc6d5b4f54d56ea17f04774d9d91b9984
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b5c990b89e3bd149481d7d908c4eec8f7ed56d40
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254959"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296354"
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 
 Yerel iOS, Android ve Windows oluşturmak için uygulamalardan ortak C# / .NET kod tabanını kullanarak Xamarin, aşağıdaki donanım ve yazılımlar gereklidir:
 
--   Windows ve Android uygulamaları ile çalışmak için: yüklü bir Windows geliştirme bilgisayarla (sanal makine değil) Visual Studio 2017 (Xamarin geliştirme özellikleri dahil).  
+-   Windows ve Android uygulamaları ile çalışmak için: yüklü bir Windows geliştirme bilgisayarla (sanal makine değil) Visual Studio 2017 (Xamarin geliştirme özellikleri dahil).
 
 -   İOS uygulamaları ile çalışmak için: bir Mac macOS Sierra 10,12 veya üstünde, Xcode yüklü ve yüklü Mac için Visual Studio ile.
 
 Ayrı lisansları Xamarin platform kullanması gerekir.
- 
+
 Windows ve Mac bilgisayarları aynı anda ayarlayabilir ve bu yükleyiciler çalışırken, geçebilir [xamarin'le mobil geliştirme hakkında bilgi edinin](../cross-platform/learn-about-mobile-development-with-xamarin.md) okuyup gerekli arka plan malzeme izleyin.
 
 Bu kurulum ve yükleme yaptıktan sonra Xamarin platformu kullanarak sorunları varsa, sorunuzu ileti [forums.xamarin.com](http://forums.xamarin.com/).
 
-<a name="prereq" /> 
+<a name="prereq" />
 
 ## <a name="pre-requisites"></a>Ön koşullar
 
 ###  <a name="for-targeting-windows-and-android"></a>Windows ve Android hedefleme
 
-Bkz: [Visual Studio 2017 ürün ailesi sistem gereksinimleri](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs) Visual Studio 2017 yüklemek için ayrıntılı ön koşullar için.
+Bkz: [Visual Studio 2017 ürün ailesi sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs) Visual Studio 2017 yüklemek için ayrıntılı ön koşullar için.
 
-Visual 2017 tüm güncellemelerin yüklü Windows 10 çalıştıran fiziksel bir bilgisayardaki Windows (sanal makine değil) yükleyin. 
+Visual 2017 tüm güncellemelerin yüklü Windows 10 çalıştıran fiziksel bir bilgisayardaki Windows (sanal makine değil) yükleyin.
 
 ### <a name="for-targeting-ios"></a>İOS hedefleme
 
-Hedef iOS Öykünücüler ve cihazlara Windows bilgisayarınız bir ağa bağlı Mac veya Mac ihtiyacınız vardır mini macOS 10.12 veya sonraki sürümünü çalıştıran ve Xcode 8.3. Bkz: [Kurulum ve Mac için Visual Studio](/visualstudio/mac/installation.md) daha ayrıntılı gereksinimler için.
+Hedef iOS Öykünücüler ve cihazlara Windows bilgisayarınız bir ağa bağlı Mac veya Mac ihtiyacınız vardır mini macOS 10.12 veya sonraki sürümünü çalıştıran ve Xcode 8.3. Bkz: [Kurulum ve Mac için Visual Studio](/visualstudio/mac/installation) daha ayrıntılı gereksinimler için.
 
-<a name="windows" /> 
+<a name="windows" />
 
 ##  <a name="windows-setup-visual-studio-and-xamarin"></a>Windows Kurulumu (Visual Studio ve Xamarin)
 
 Visual Studio 2017 henüz yüklemediyseniz, aşağıdaki adımları uygulayın:
 
-1.  [Karşıdan yükleme ve herhangi bir sürümünü Visual Studio 2017 için yükleyiciyi başlatma](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional veya Enterprise). Visual Studio 2017 ücretsiz sürüm bir topluluktur. Professional ve Enterprise sürümleri için bir lisans gerekli olduğu sonra 30 gün deneme amacıyla kullanılabilir.
+1.  [Karşıdan yükleme ve herhangi bir sürümünü Visual Studio 2017 için yükleyiciyi başlatma](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional veya Enterprise). Visual Studio 2017 ücretsiz sürüm bir topluluktur. Professional ve Enterprise sürümleri için bir lisans gerekli olduğu sonra 30 gün deneme amacıyla kullanılabilir.
 
-2.  Zaman **yükleme** iletişim kutusu görüntülenirse, aşağıdaki onay kutularını işaretleyin:    
+2.  Zaman **yükleme** iletişim kutusu görüntülenirse, aşağıdaki onay kutularını işaretleyin:
 
-    - **Mobil ve oyun > .NET ile Mobil Geliştirme**. Bu seçenek, çeşitli Android araçları ve yazılım geliştirme setleri da otomatik olarak seçer. 
+    - **Mobil ve oyun > .NET ile Mobil Geliştirme**. Bu seçenek, çeşitli Android araçları ve yazılım geliştirme setleri da otomatik olarak seçer.
 
         ![Oyun ve mobil geliştirme altında mobil geliştirme seçeneğini](../cross-platform/media/cross-plat-xamarin-setup-2a.png "arası Plat Xamarin Kurulum 2")
 
-    - (İsteğe bağlı) **Windows > Evrensel Windows platformu geliştirme**. 
+    - (İsteğe bağlı) **Windows > Evrensel Windows platformu geliştirme**.
 
 Zaten yüklü Visual Studio 2017'ı olan ancak henüz Xamarin platform yüklemediniz, aşağıdaki adımları uygulayın:
 
@@ -75,7 +75,7 @@ Yükleme devam ederken Mac Kurulum yönergeleriyle devam etmek ve Git [mobil gel
 
 5.  Yükleme tamamlandıktan sonra Visual Studio ve istenirse Microsoft hesabınızla oturum açın başlatın. Bu hesap, Windows ile kullandığınız aynı hesabıdır.
 
-6.  Android uygulamaları test etmek için [Android SDK öykünücüsü](/xamarin/android/get-started/installation/android-emulator/) fiziksel bir Android cihazı yoksa. 
+6.  Android uygulamaları test etmek için [Android SDK öykünücüsü](/xamarin/android/get-started/installation/android-emulator/) fiziksel bir Android cihazı yoksa.
 
 <a name="mac" />
 

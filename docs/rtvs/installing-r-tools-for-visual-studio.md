@@ -10,19 +10,20 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 26f0618397ef1ccfdd23983afdde28eccb59ef29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296303"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>R araçları Visual Studio için nasıl yüklenir
 
 Bu makalede:
 
 - [Visual Studio'nun desteklenen sürümleri](#supported-versions-of-visual-studio)
-- [Visual Studio 2017 içinde RTVS yükleme](#installing-rtvs-in-visual-studio-2017)
-- [Visual Studio 2015'te RTVS yükleme](#installing-rtvs-in-visual-studio-2015)
+- [Visual Studio 2017 içinde RTVS yükleyin](#installing-rtvs-in-visual-studio-2017)
+- [Visual Studio 2015'te RTVS yükleyin](#installing-rtvs-in-visual-studio-2015)
 - [Çevrimdışı yükleme](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -30,13 +31,13 @@ Bu makalede:
 
 ## <a name="supported-versions-of-visual-studio"></a>Visual Studio'nun desteklenen sürümleri
 
-R araçları için Visual Studio (RTVS) Community (ücretsiz) ile Windows desteklenir Professional ve Enterprise sürümleri hem [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ve [Visual Studio 2015 güncelleştirme 3 (veya üstü)](http://go.microsoft.com/fwlink/?LinkId=691129) (doğrudan indirme).
+R araçları için Visual Studio (RTVS) Community (ücretsiz) ile Windows desteklenir Professional ve Enterprise sürümleri hem [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ve [Visual Studio 2015 güncelleştirme 3 (veya üstü)](http://go.microsoft.com/fwlink/?LinkId=691129) (doğrudan indirme).
 
 RTVS Visual Studio şu anda Mac için desteklenmiyor
 
 Yalnızca Visual Studio, Visual Studio Test uzmanı ve SQL Server Management Studio gibi ürünlerle eklenen Kabuğu varsa RTVS yüklemez. Visual Studio Kabuğu RTVS için gerekli bileşenleri eksik.
 
-## <a name="installing-rtvs-in-visual-studio-2017"></a>Visual Studio 2017 içinde RTVS yükleme
+## <a name="install-rtvs-in-visual-studio-2017"></a>Visual Studio 2017 içinde RTVS yükleyin
 
 1. Visual Studio yükleyicisi çalıştırmak ve seçmek **Değiştir** seçeneği (Ayrıntılar için bkz [değiştirmek Visual Studio](../install/modify-visual-studio.md)). Visual Studio yüklüyse henüz yoksa bkz [Visual Studio yükleme](../install/install-visual-studio.md). Windows 7'de Visual Studio 2017 sürüm göstermek için yükleyici güncelleştirildiğinden emin olması *15.2 yapı 26430.12* veya sonraki bir sürümü.
 
@@ -46,9 +47,9 @@ Yalnızca Visual Studio, Visual Studio Test uzmanı ve SQL Server Management Stu
 
 1. Aynı iş yükünü adla sağ tarafındaki ek seçenekleri ayarlayın. Varsayılan olarak, bu iş yükü F # içerir ve Python desteği. R için en düşük gereksinimler verilmiştir **R dil desteği**, **R geliştirmesi için çalışma zamanı desteği**, ve **Microsoft R istemci**.
 
-RTVS yüklenir: `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio` nerede `<version>` genellikle `2017` ve `<edition>` olan `Community`, `Professional`, veya `Enterprise`.
+RTVS yüklenir: *% ProgramFiles (x86) %\Microsoft Visual Studio\<sürüm >\<edition > Common7\IDE\Extensions\Microsoft\R araçları Visual Studio için* nerede  *\<sürüm >* genellikle `2017` ve  *\<edition >* olan `Community`, `Professional`, veya `Enterprise`.
 
-## <a name="installing-rtvs-in-visual-studio-2015"></a>Visual Studio 2015'te RTVS yükleme
+## <a name="install-rtvs-in-visual-studio-2015"></a>Visual Studio 2015'te RTVS yükleyin
 
 Visual Studio 2015 ile birlikte bir R yorumlayıcı ve R araçları ayrı olarak yüklemeniz gerekir.
 
@@ -86,8 +87,8 @@ Visual Studio 2015 için RTVS yüklenir: `%ProgramFiles(x86)%\Microsoft Visual S
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [R kullanmaya başlama](getting-started-with-r.md)
+- [R ile çalışmaya başlama](getting-started-with-r.md)
 - [R araçları örnek projeler](getting-started-samples.md)
-- [Yardım alma](getting-started-help.md)
-- [Seçenek ayarları](options-for-r-tools-in-visual-studio.md)
+- [R araçlarında Yardım](getting-started-help.md)
+- [R Araçlar Seçenekler](options-for-r-tools-in-visual-studio.md)
 - [Microsoft Machine Learning Server (önceki adıyla R Server)](/machine-learning-server/)

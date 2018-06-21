@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296300"
 ---
 # <a name="codeindex-command"></a>Codeındex komutu
 
 Kullanım **Codeındex** Team Foundation Server'ı dizin kodu yönetmek için komutu. Örneğin, CodeLens bilgi düzeltin veya sunucu performans sorunları araştırmak için dizin oluşturma devre dışı açmak için dizin sıfırlamak isteyebilirsiniz.
 
-**Gerekli izinler**
+## <a name="required-permissions"></a>Gerekli izinler
 
-Kullanılacak **Codeındex** komutu, bir üyesi olmanız gerekir **Team Foundation Yöneticileri** güvenlik grubu. Bkz: [izinleri ve gruplar Team Services ve TFS için tanımlı](https://www.visualstudio.com/docs/setup-admin/permissions).
+Kullanılacak **Codeındex** komutu, bir üyesi olmanız gerekir **Team Foundation Yöneticileri** güvenlik grubu. Bkz: [izinleri ve gruplar Team Services ve TFS için tanımlı](/vsts/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
 > Yönetici kimlik bilgileriyle oturum olsa bile, bu komutu çalıştırmak için yükseltilmiş bir komut istemi penceresi açmanız gerekir. Ayrıca Team Foundation için uygulama katmanı'ndan bu komutu da çalıştırmanız gerekir.
@@ -126,4 +127,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [CodeLens ile kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Sunucu yapılandırmasını TFSConfig ile yönetme](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [Sunucu yapılandırmasını TFSConfig ile yönetme](/tfs/server/ref/command-line/tfsconfig-cmd)

@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a12cac4e3a0c7144fd2e2cca2044ad416ac966d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a514459e834e5652e544991eb061f0c96767dd32
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31964957"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302646"
 ---
-# <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Özel veri toplayan veya Test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma
+# <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Özel veri toplayan veya test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma
 
 Test çalıştırma veya test bir parçası olarak test makinesini etkileyen isteyebilirsiniz, veri toplamak için kendi tanılama veri bağdaştırıcısı oluşturmak isteyebilirsiniz. Örneğin, test altındaki uygulamanız tarafından oluşturulan ve test sonuçlarınızı ekleme günlük dosyaları toplamak isteyebilirsiniz veya bilgisayarınızda sol sınırlı disk alanı olduğunda testleri çalıştırmak isteyebilirsiniz. Visual Studio kuruluş içinde sağlanan API'leri kullanarak test çalışması belirli noktalarda görevler gerçekleştirmek üzere kod yazabilirsiniz. Örneğin, bir testi başlamadan önce ve sonra her test çalıştırıldığında ve test çalışması sona erdiğinde görevleri gerçekleştirebilirsiniz.
 
 Özel tanılama veri bağdaştırıcınızı yapılandırma ayarları dosyası kullanarak varsayılan giriş sağlayabilirsiniz. Örneğin, dosyasının konumu hakkında bilgi toplamak ve test sonuçlarınızı eklemek istediğiniz sağlayabilir veya ne kadar disk alanı sistemde kalan istiyor. Bu veriler, oluşturduğunuz her test ayarları için yapılandırılabilir. Görüntülenebilir ve düzenlenen Microsoft Test Yöneticisi'ni veya, ile sağlanan varsayılan Düzenleyicisi'ni kullanarak bir düzenleyici olarak kullanmak için kendi kullanıcı denetimi oluşturabilirsiniz. Düzenleyicinizde bağdaştırıcısı yapılandırması için yapılan tüm değişiklikler, test ayarlarınızla depolanır.
 
-Visual Studio'dan testler çalıştırıyorsanız, bu ayarlamalısınız etkin olması için test ayarları. Test ayarları hakkında daha fazla bilgi için bkz: [toplamak tanılama bilgileri kullanarak Test ayarlarını](../test/collect-diagnostic-information-using-test-settings.md).
+Visual Studio'dan testler çalıştırıyorsanız, bu ayarlamalısınız etkin olması için test ayarları. Test ayarları hakkında daha fazla bilgi için bkz: [tanılama bilgileri toplama kullanarak test ayarlarını](../test/collect-diagnostic-information-using-test-settings.md).
 
 ## <a name="tasks"></a>Görevler
 

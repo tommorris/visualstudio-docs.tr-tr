@@ -64,7 +64,7 @@
 #### [Süresi Dolan Abonelikler](handle-expired-license.md)
 #### [Kişisel E-posta ile Oturum Açan Aboneler](personal-email-sign-ins.md)
 ## Visual Studio Abonelikleri Alma
-### [Abonelik Seçeneklerini Karşılaştırma](https://www.visualstudio.com/vs/pricing)
+### [Abonelik Seçeneklerini Karşılaştırma](https://visualstudio.microsoft.com/vs/pricing)
 ### Bulut Abonelikleri Satın Alma
 #### [Genel bakış](vscloud-overview.md)
 #### [Faturalandırma hakkında SSS](vscloud-billing-faq.md)
@@ -75,8 +75,8 @@
 #### [Startup’lar için Microsoft](program-startups.md)
 ## Kaynaklar
 ### [Visual Studio Lisanslama Teknik İncelemesi](http://aka.ms/vslicensing)
-### [Abonelik seçeneklerini ve fiyatlandırmalarını karşılaştırma](https://www.visualstudio.com/vs/pricing)
-### [Visual Studio IDE özelliklerini karşılaştırma](https://www.visualstudio.com/vs/compare)
-### [Visual Studio Yönetim ve Abonelik Desteği](https://www.visualstudio.com/support/support-overview-vs)
+### [Abonelik seçeneklerini ve fiyatlandırmalarını karşılaştırma](https://visualstudio.microsoft.com/vs/pricing)
+### [Visual Studio IDE özelliklerini karşılaştırma](https://visualstudio.microsoft.com/vs/compare)
+### [Visual Studio Yönetim ve Abonelik Desteği](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [Toplu Lisanslama Hükümleri](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Microsoft Ürün ve Hizmet Sözleşmesi (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

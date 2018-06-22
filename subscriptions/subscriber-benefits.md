@@ -9,16 +9,16 @@ description: Visual Studio aboneliğinize dahil avantajları hakkında bilgi edi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335599"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283269"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio aboneliğinize dahil avantajları
 
-Visual Studio abonelikleri kaynakları oluşturmak, dağıtmak ve tercih edilen platformlarında ve Windows, iOS, Android ve Linux dahil cihazları mükemmel uygulamaları yönetmek size en kapsamlı kümesi sunar.  Belirli faydası sahip olduğunuz abonelik türüne göre değişir.  En büyük değeri sağlamak için yeni ve en yararlı teknolojileri, eğitim malzemelerini ve iş ortağı avantajları kullanılabilir odaklanmak için ayarlamalar vermiyoruz gibi aboneleri, sağladığı avantajlar düzenli olarak değiştirin. 
+Visual Studio abonelikleri kaynakları oluşturmak, dağıtmak ve tercih edilen platformlarında ve Windows, iOS, Android ve Linux dahil cihazları mükemmel uygulamaları yönetmek size en kapsamlı kümesi sunar.  Belirli faydası sahip olduğunuz abonelik türüne göre değişir.  En büyük değeri sağlamak için yeni ve en yararlı teknolojileri, eğitim malzemelerini ve iş ortağı avantajları kullanılabilir odaklanmak için ayarlamalar vermiyoruz gibi aboneleri, sağladığı avantajlar düzenli olarak değiştirin.
 
 Avantajları üç kategorilerde gruplanır:
 
@@ -32,17 +32,17 @@ Skillset geliştirmek ve en son teknolojileriyle takip edin, continously yardım
 - .Net geliştiricilerinin ve diğer Pluralsight harika içeriği için Microsoft Azure
 - Veri bilimi DataCamp geliştiricilerden için
 - Microsoft sanal Akademi SQL Server'dan veritabanı çözümleri tasarlama
-- LinkedIn öğrenme kişilere, Öngörüler ve excel gerek becerileri erişim duruma getirin. 
+- LinkedIn öğrenme kişilere, Öngörüler ve excel gerek becerileri erişim duruma getirin.
 
-## <a name="support"></a>Destek 
-Sorularınız veya teknik yardım gerekiyor durumunda bir Visual Studio abone olarak ayrıca çeşitli destek erişebilirsiniz. 
-- Ücretli aboneliklere Araçlar ve geliştirme ve test ortamlarında çalışan uygulamalar ile ilgili sorunları gidermek için profesyonel teknik destek olaylar içerebilir.  
-- Teknik belgeler veya ürün bilgilerini gerekiyor?  Anında yardım Conceirge sohbet hizmetinden Al. 
-- Topluluk üyelerinden öncelik desteği forumlarda Yardım.  Topluluk üyeleri sorunuzu yanıtlayamazsa, Microsoft'un uzmanlar bir yanıt sağlar. 
-- Azure hakkında sorularınız mı var?  Azure Community ve Azure danışma sohbet hizmetlerini denetleyin.  
+## <a name="support"></a>Destek
+Sorularınız veya teknik yardım gerekiyor durumunda bir Visual Studio abone olarak ayrıca çeşitli destek erişebilirsiniz.
+- Ücretli aboneliklere Araçlar ve geliştirme ve test ortamlarında çalışan uygulamalar ile ilgili sorunları gidermek için profesyonel teknik destek olaylar içerebilir.
+- Teknik belgeler veya ürün bilgilerini gerekiyor?  Anında yardım Conceirge sohbet hizmetinden Al.
+- Topluluk üyelerinden öncelik desteği forumlarda Yardım.  Topluluk üyeleri sorunuzu yanıtlayamazsa, Microsoft'un uzmanlar bir yanıt sağlar.
+- Azure hakkında sorularınız mı var?  Azure Community ve Azure danışma sohbet hizmetlerini denetleyin.
 
-> [!NOTE] 
+> [!NOTE]
 > Aboneliğiniz için yazılım yüklemeleri erişimle ortaya çıkabilir.  Hangi yüklemeleri, aboneliğinizle dahil olmak üzere indirme hakkında daha fazla bilgi için ziyaret [ https://my.visualstudio.com/downloads ](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
 
-Aboneliğinize dahil avantajları hakkında daha fazla bilgi için kullanıma [fiyatlandırma sayfası Visual Studio](https://www.visualstudio.com/vs/pricing/).  Hangi abonelikleri bunları özelliği de dahil olmak üzere belirli yararları hakkında bilgi sağlanmıştır **kullanarak abone Avantajlarınızı** aşağıdaki konuya. 
+Aboneliğinize dahil avantajları hakkında daha fazla bilgi için kullanıma [fiyatlandırma sayfası Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).  Hangi abonelikleri bunları özelliği de dahil olmak üzere belirli yararları hakkında bilgi sağlanmıştır **kullanarak abone Avantajlarınızı** aşağıdaki konuya.
 

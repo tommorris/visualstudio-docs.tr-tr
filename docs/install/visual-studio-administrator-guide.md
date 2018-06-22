@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 59424cdb93d8c664740ddf1d9865ba41044eb72e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691124"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283083"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 Yönetici Kılavuzu
 
@@ -29,7 +29,7 @@ Kurumsal ortamlarda, sistem yönetim yazılımının kullanarak veya bir ağ pay
 
 ## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Visual Studio 2017 bir kuruluş ortamında dağıtma
 
-Her hedef bilgisayar karşılıyorsa, Visual Studio 2017 istemci iş istasyonlarına dağıtabilirsiniz [minimum yükleme gereksinimlerini](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). System Center gibi yazılım ya da bir toplu iş dosyası dağıtıyorsunuz olsun, genellikle aşağıdaki adımlarda size Git isteyeceksiniz:
+Her hedef bilgisayar karşılıyorsa, Visual Studio 2017 istemci iş istasyonlarına dağıtabilirsiniz [minimum yükleme gereksinimlerini](/visualstudio/productinfo/vs2017-system-requirements-vs). System Center gibi yazılım ya da bir toplu iş dosyası dağıtıyorsunuz olsun, genellikle aşağıdaki adımlarda size Git isteyeceksiniz:
 
 1. [Visual Studio ürün dosyalarını içeren bir ağ paylaşımı oluşturmanız](create-a-network-installation-of-visual-studio.md) bir ağ konumuna.
 
@@ -73,7 +73,7 @@ Müşteri geri bildirim ayarları hakkında daha fazla bilgi için bkz: [Visual 
 
 ## <a name="get-support"></a>Destek alma
 
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
+Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
 

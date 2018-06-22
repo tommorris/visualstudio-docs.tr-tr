@@ -1,5 +1,5 @@
 ---
-title: DataContext yöntemin dönüş türünü değiştirme alınamaz
+title: Bir DataContext yöntemin dönüş türünü değiştirme işlemi geri alınamaz
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
@@ -10,16 +10,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40c68aba0599f2f86285cbea841d06f0a652828a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abec4dd6d5cded79e1f25a6dbb5ec2e55c2d444f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921492"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282761"
 ---
-# <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>DataContext yöntemin dönüş türünü değiştirme alınamaz
+# <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Bir DataContext yöntemin dönüş türünü değiştirme işlemi geri alınamaz
 
-DataContext yöntemin dönüş türünü değiştirme işlemi geri alınamaz. Otomatik olarak oluşturulan türüne dönmek için öğe Gezgini'nden Sunucu Gezgini/veritabanı O/R Tasarımcısı üzerine yeniden sürükleyin gerekir. Dönüş türü değiştirmek istediğinizden emin misiniz?
+DataContext yöntemin dönüş türünü değiştirme işlemi geri alınamaz. Otomatik olarak oluşturulan türüne dönmek için öğesinden sürükleyin **Sunucu Gezgini** veya **Database Explorer** O/R Tasarımcısı yeniden üzerine. Dönüş türü değiştirmek istediğinizden emin misiniz?
 
 Dönüş türü bir <xref:System.Data.Linq.DataContext> yöntemi farklı öğe burada, bırak bağlı olarak [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Bir öğenin varolan bir varlık sınıfı doğrudan üzerine bırakın, bir <xref:System.Data.Linq.DataContext> varlık sınıfı dönüş türüne sahip yöntemi oluşturulur. Boş bir alanı bir öğe bırakma durumunda [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], <xref:System.Data.Linq.DataContext> otomatik olarak oluşturulan bir tür döndüren yöntem oluşturulur. Dönüş türünü değiştirebilirsiniz bir <xref:System.Data.Linq.DataContext> yöntemleri bölmesine ekledikten sonra yöntemi. İnceleme veya dönüş türünü değiştirmek için bir <xref:System.Data.Linq.DataContext> yöntemi seçin ve **dönüş türü** özelliğinde **özellikleri** penceresi.
 

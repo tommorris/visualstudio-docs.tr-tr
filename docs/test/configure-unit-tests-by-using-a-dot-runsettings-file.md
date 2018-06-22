@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0cb4989877445a0679a5682aaa17e4b7f759a33
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: d66d1027358e173f0ee86c4c799347b555196392
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815983"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303074"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
@@ -159,15 +159,15 @@ Aşağıdaki XML tipik bir içeriğini gösterir *.runsettings* dosya. Varsayıl
 </RunConfiguration>
 ```
 
-**RunConfiguration** öğesi, aşağıdaki öğeleri içerebilir:
+**RunConfiguration** öğesi aşağıdaki öğeleri içerir:
 
 |Düğüm|Varsayılan|Değerler|
 |----------|-------------|------------|
 |**ResultsDirectory**||Test sonuçları yerleştirildiği dizin.|
-|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Bu ayar, bulmak ve testler yürütmek için kullanılan birim test çerçevesi hangi sürümü belirtir. Birim test projesinin yapı özelliklerinde belirttiğiniz .NET platformu sürümünden farklı olabilir.|
+|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Bu ayar bulmak ve testler yürütmek için kullanılan birim test çerçevesi sürümünü belirtir. Birim test projesinin yapı özelliklerinde belirttiğiniz .NET platformu sürümünden farklı olabilir.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|yanlış, doğru|
-|**TestAdaptersPaths**||Bir veya birden çok yol TestAdapters bulunduğu dizine|
+|**TestAdaptersPaths**||Bir veya daha fazla yol TestAdapters bulunduğu dizine|
 |**MaxCpuCount**|1.|Bu çalışan birim testleri zaman denetimleri paralel test yürütmesi derecesini ayarlama, makinede kullanılabilir çekirdekleri kullanılarak. Test yürütme altyapısı, her kullanılabilir çekirdek ayrı bir işlem olarak başlatır ve her çekirdek ile testleri çalıştırmak için bir kapsayıcı sağlar. Bir kapsayıcı, bir derleme, DLL veya ilgili yapı olabilir. Test kapsayıcısı zamanlama birimidir. Her kapsayıcısında testleri test çerçevesi göre çalıştırılır. Birçok kapsayıcıları varsa, daha sonra bir kapsayıcıda testleri çalıştırma bitiş işlerken bunlar sonraki kullanılabilir kapsayıcı verilir.<br /><br />MaxCpuCount olabilir:<br /><br />n, 1 burada < n = < çekirdek sayısı =: n işlemlerinin tasarrufundadır başlattı<br /><br />n, burada n herhangi bir değer =: başlatılan işlem sayısı kullanılabilir çekirdek sayısı kadar olabilir|
 |**TestSessionTimeout**||Kullanıcıların belirli bir zaman aşımı aştığında bir test oturumu sonlandır olanak tanır. Ayar kaynakları da tüketilen zaman aşımı sağlar ve test oturumları bir süre için kısıtlanmıştır. Bulunan bir ayardır **Visual Studio 2017 sürüm 15,5** ve daha sonra.|
 
@@ -253,4 +253,4 @@ Bu ayarları sahip test yöntemleri çalıştıran test bağdaştırıcısı bel
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Kod kapsamı çözümlemeyi özelleştirme](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio Test görevinin (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio test görevinin (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)

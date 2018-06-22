@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 75036450694525f00f31159cdbeea1f4b98040f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765521"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281839"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>C# ve Visual Studio'da ASP.NET kullanmaya başlama
 
 Visual Studio kullanarak ASP.NET Core ile C# geliştirme için Bu öğreticide, bir C# ASP.NET Core web uygulaması oluşturma, kodu ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -41,7 +41,7 @@ ASP.NET Core web uygulamaları ve Hizmetleri gibi internet'e bağlı uygulamalar
 
 ### <a name="what-is-visual-studio"></a>Visual Studio nedir?
 
-Visual Studio, geliştiriciler için üretkenlik araçları'nın bir tümleşik geliştirme paketidir. Bunu, programları ve uygulamaları oluşturmak için kullanabileceğiniz bir program olarak düşünün.  
+Visual Studio, geliştiriciler için üretkenlik araçları'nın bir tümleşik geliştirme paketidir. Bunu, programları ve uygulamaları oluşturmak için kullanabileceğiniz bir program olarak düşünün.
 
 ## <a name="start-developing"></a>Geliştirmeye başlayın
 
@@ -81,7 +81,7 @@ Görmüyorsanız, **ASP.NET çekirdek Web uygulaması** proje şablonu, alabilir
 
 #### <a name="add-a-project-template"></a>Bir proje şablonu Ekle
 
-1. İçinde **çekirdek yeni bir ASP.NET Web uygulaması** iletişim kutusunda, seçin **Web uygulaması (Model-View-Controller)** proje şablonu.  
+1. İçinde **çekirdek yeni bir ASP.NET Web uygulaması** iletişim kutusunda, seçin **Web uygulaması (Model-View-Controller)** proje şablonu.
 
 2. Seçin **ASP.NET Core 2.0** üstteki açılan menüden. (Görmüyorsanız **ASP.NET Core 2.0** listesinde izleyerek yükleyin **karşıdan** iletişim kutusunun üstündeki yanında sarı çubuğu görüntülenmelidir bağlantıyı.) Seçin **Tamam**.
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio ağ tabanlı yüklemesini güncelleştirme
+title: Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme
 description: Kullanarak ağ tabanlı bir Visual Studio yükleme güncelleştirme öğrenin düzeni komutu
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620459"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282567"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio ağ tabanlı yüklemesini güncelleştirme
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme
 
 Bu mümkün olması için en son ürün güncelleştirmelerini ile Visual Studio'nun bir ağ yüklemesi düzenini güncelleştirmek için bir yükleme noktası olarak her ikisi de Visual Studio ve aynı zamanda istemciye zaten dağıtılmış olan yüklemeleri korumak için en son güncelleştirmesini kullandı iş istasyonları.
 
@@ -41,10 +41,10 @@ Bir dosya paylaşımında bir düzen barındırıyorsanız, Düzen (örneğin, c
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* Bu aynı düzeni daha yeni bir sürüme güncelleştirmek bırakılır. Ek komut satırı parametreleri belirtmek zorunda değilsiniz. Önceki ayarları kaydedildi ve bu düzen klasörde herhangi bir sonraki düzeni komut tarafından kullanılır.  
+* Bu aynı düzeni daha yeni bir sürüme güncelleştirmek bırakılır. Ek komut satırı parametreleri belirtmek zorunda değilsiniz. Önceki ayarları kaydedildi ve bu düzen klasörde herhangi bir sonraki düzeni komut tarafından kullanılır.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * Katılımsız bir şekilde daha yeni bir sürüme düzeninizi güncelleştirmek bırakılır. Düzen işlemi yeni bir konsol penceresi Kurulum işlemi çalıştırır. Böylece kullanıcılar nihai sonucu ve oluşmuş hataları özetini görebilirsiniz penceresi açık kalır. Katılımsız bir şekilde çalıştığını yerleşimi işleminin (örneğin, en son sürüme düzeninizi güncelleştirmek için düzenli olarak çalıştırılan bir komut dosyası varsa), ardından `--passive` parametre ve işlem otomatik olarak kapatılacak penceresi.
@@ -96,7 +96,7 @@ Vs_enterprise.exe içinde layoutDir çağrılabilir.
 > [!NOTE]
 > Tarafından gereken bazı önemli meta veri dosyaları `--verify` seçeneği düzeni çevrimdışı önbellekte olması gerekir. Bu meta veri dosyaları eksikse, "--doğrulayın" çalıştıramaz ve Kurulum, bir hata verir. Bu hata ile karşılaşırsanız, yeni bir çevrimdışı düzenini farklı bir klasör (veya aynı Çevrimdışı Önbellek klasörü. yeniden oluşturma Bu nedenle yapmak için ilk çevrimdışı düzeni oluşturmak için kullanılan aynı düzeni komutunu çalıştırın. Örneğin, `Vs_enterprise.exe --layout <layoutDir>`.
 
-Oluşturduğunuz yeni düzene ilk düzeni aynı sürüme olmayabilir için Microsoft Visual Studio güncelleştirmeleri düzenli olarak gelir.  
+Oluşturduğunuz yeni düzene ilk düzeni aynı sürüme olmayabilir için Microsoft Visual Studio güncelleştirmeleri düzenli olarak gelir.
 
 ## <a name="how-to-fix-a-layout"></a>Bir düzen gidermeye yönelik
 
@@ -114,9 +114,9 @@ Vs_enterprise.exe içinde layoutDir çağrılabilir.
 
 Bunu yapmak için eski paketleri içeren katalog manifest(s) için dosya yollarını gerekir. Çevrimdışı düzeni önbellek "Arşivi" klasöründe katalog bildirimleri bulabilirsiniz. Bir düzen'ı güncelleştirdiğinizde var. kaydedilir. "Arşivi" klasöründe, "her biri bir kullanılmayan katalog bildirimi içeren klasörleri adlı bir veya daha fazla GUID" yoktur. "GUID" klasörlerin sayısını çevrimdışı önbelleğiniz yapılan güncelleştirme sayısı ile aynı olmalıdır.
 
-Bazı dosyalar her "GUID" klasöre kaydedilir. İki çoğu ilgi "catalog.json" dosyası ve bir "version.txt" dosyası dosyalardır. "Catalog.json" dosya geçirilecek gerekir kullanılmayan katalog bildirimidir `--clean` seçeneği. Diğer version.txt dosyası bu eski katalog bildirimi sürümünü içerir. Sürüm numarasına göre artık kullanılmayan paketler bu katalog bildirimden kaldırmak isteyip istemediğinize karar verebilirsiniz. Bir "GUID" klasörler üzerinden geçerken aynı yapabilirsiniz. Üzerinde katalogları kararı sonra istediğiniz temiz çalıştırmak `--clean` bu katalog dosyaları yollara sağlayarak komutu.  
+Bazı dosyalar her "GUID" klasöre kaydedilir. İki çoğu ilgi "catalog.json" dosyası ve bir "version.txt" dosyası dosyalardır. "Catalog.json" dosya geçirilecek gerekir kullanılmayan katalog bildirimidir `--clean` seçeneği. Diğer version.txt dosyası bu eski katalog bildirimi sürümünü içerir. Sürüm numarasına göre artık kullanılmayan paketler bu katalog bildirimden kaldırmak isteyip istemediğinize karar verebilirsiniz. Bir "GUID" klasörler üzerinden geçerken aynı yapabilirsiniz. Üzerinde katalogları kararı sonra istediğiniz temiz çalıştırmak `--clean` bu katalog dosyaları yollara sağlayarak komutu.
 
-İşte bazı örnekler nasıl kullanılacağı temiz seçeneği:   
+İşte bazı örnekler nasıl kullanılacağı temiz seçeneği:
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 Vs_enterprise.exe içinde de çalıştırabilirsiniz &lt;layoutDir&gt;. Örnek buradadır:
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -136,7 +136,7 @@ Bu komutu çalıştırdığınızda, Kurulum bu kaldıracak dosyaların listesin
 
 ## <a name="get-support"></a>Destek alma
 
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
+Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
 

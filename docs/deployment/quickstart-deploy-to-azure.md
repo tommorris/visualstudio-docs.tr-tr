@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f28de642d6a1f4f9071099593f990c6197ed34ec
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 05eab2ea5445c552f435151bbe696f913fa8cb5a
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234757"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282580"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Visual Studio kullanarak Azure App Service için ASP.NET veya ASP.NET Core uygulama yayımlama
 
@@ -29,9 +29,9 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
 
 * Visual Studio 2017 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü ve. **NET masaüstü geliştirme** iş yükü. .NET Core uygulama için gereksinim duyduğunuz. **NET çekirdek** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
+## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
 1. Visual Studio'da, **dosya** > **yeni proje**.
 
@@ -62,7 +62,7 @@ Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [burada oturum](http
     **App Service Oluştur** iletişim kutusu görüntülenir.
 
     ![Uygulama hizmeti oluşturma](../deployment/media/quickstart-publish-settings-app-service.png "Azure uygulama hizmeti oluşturma")
-    
+
 1. Visual Studio'ya imzalanmamışsa oturum açın ve ardından varsayılan uygulama hizmet ayarlarını alanları doldurun.
 
     Profil yayımlama Ayarları iletişim kutusu açılır.

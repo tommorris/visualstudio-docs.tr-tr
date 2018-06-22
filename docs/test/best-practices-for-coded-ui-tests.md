@@ -11,26 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5da37b8b86f7529ffb4a870bc74787487ec5c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967034"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283282"
 ---
-# <a name="best-practices-for-coded-ui-tests"></a>Kodlanmış UI Testleri için En İyi Yöntemler
+# <a name="best-practices-for-coded-ui-tests"></a>Kodlanmış UI testleri için en iyi yöntemler
 
 Bu konuda geliştirme kodlanmış UI testleri için bazı öneriler açıklanmaktadır.
 
-## <a name="best-practices"></a>En İyi Yöntemler
+## <a name="best-practices"></a>Önerilen uygulamalar
 
 Esnek bir kodlanmış UI testi oluşturmak için aşağıdaki kılavuzları kullanın.
 
 -   Kullanım **kodlanmış UI Test derleyicisini** mümkün olduğunda.
 
--   Değişiklik yapmayın `UIMap.designer.cs` dosyasını doğrudan. Dosyayı değiştirirseniz, değişiklikleri dosyaya yazılır.
+-   Değişiklik yapmayın *UIMap.Designer.cs* dosyasını doğrudan. Dosyayı değiştirirseniz, değişiklikleri dosyaya yazılır.
 
--   Testinizi kaydedilen yöntemler dizisi olarak oluşturun. Bir yöntem kayıt hakkında daha fazla bilgi için bkz: [kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md).
+-   Testinizi kaydedilen yöntemler dizisi olarak oluşturun. Bir yöntem kayıt hakkında daha fazla bilgi için bkz: [oluşturma kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md).
 
 -   Kaydedilen her yöntem, tek sayfa, form veya iletişim kutusu üzerinde işlem yapmalıdır. Her yeni sayfa, form veya iletişim kutusu için yeni bir test yöntemi oluşturun.
 
@@ -38,7 +38,7 @@ Esnek bir kodlanmış UI testi oluşturmak için aşağıdaki kılavuzları kull
 
 -   Mümkün olduğunda, kaydedilen her yöntem 10'dan az eylemlerine sınırlayın. Modüler bu yaklaşım UI değişirse bir yöntemini değiştirmek kolaylaştırır.
 
--   Her onaylama kullanarak oluşturduğunuz **kodlanmış UI Test derleyicisini**, bu da otomatik olarak ekler bir onay yöntemi `UIMap.Designer.cs` dosya.
+-   Her onaylama kullanarak oluşturduğunuz **kodlanmış UI Test derleyicisini**, bu da otomatik olarak ekler bir onay yöntemi *UIMap.Designer.cs* dosya.
 
 -   Kullanıcı Arabirimi (UI) değişirse, test yöntemleri veya onay yöntemlerini yeniden kaydedin veya varolan bir test yönteminin etkilenen bölümlerini yeniden kaydedin.
 
@@ -46,13 +46,13 @@ Esnek bir kodlanmış UI testi oluşturmak için aşağıdaki kılavuzları kull
 
 -   Kullanıcı Arabirimi denetimlerini oluşturduğunuzda test uygulamada anlamlı adlar kullanın. Anlamlı adları kullanarak otomatik olarak oluşturulan denetim adları büyük netlik ve kullanılabilirlik sağlar.
 
--   API ile kodlayarak onaylar oluşturuyorsanız, parçasında her onay için bir yöntem oluşturma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfının `UIMap.cs` dosya. Onaylama işlemi yürütmek için test yönteminden bu yöntemi çağırın.
+-   API ile kodlayarak onaylar oluşturuyorsanız, parçasında her onay için bir yöntem oluşturma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfının *UIMap.cs* dosya. Onaylama işlemi yürütmek için test yönteminden bu yöntemi çağırın.
 
--   Doğrudan API ile kodlama yapıyorsanız, özellikleri ve yöntemleri oluşturulan sınıfların kullanmak `UIMap.Designer.cs` , olabildiğince kodunuzda dosya. Bu sınıfların çalışmanızı yapacak daha kolay ve daha güvenilir ve daha üretken olmanıza yardımcı olur.
+-   Doğrudan API ile kodlama yapıyorsanız, özellikleri ve yöntemleri oluşturulan sınıfların kullanmak *UIMap.Designer.cs* , olabildiğince kodunuzda dosya. Bu sınıfların çalışmanızı yapacak daha kolay ve daha güvenilir ve daha üretken olmanıza yardımcı olur.
 
 Kodlanmış UI testleri, kullanıcı arabiriminde birçok değişiklikler otomatik olarak uyarlayın. Örneğin, bir kullanıcı Arabirimi öğesi konum veya renk değiştiyse, çoğu zaman kodlanmış UI testi yine doğru öğeyi bulur.
 
-Testi sırasında bir arama özellikleri kümesi kullanarak UI denetimleri test çerçevesi tarafından bulunur. Arama özellikleri tarafından oluşturulan tanımları her denetim sınıfına uygulanan **kodlanmış UI Test derleyicisini** içinde `UIMap.Designer.cs` dosya. Arama özellikleri özellik adları ve denetim gibi tanımlamak için kullanılan özellik değerlerini ad-değer çiftleri içeren <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>, ve <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> denetiminin özellikleri. Arama özellikleri değişmeden varsa, kodlanmış UI testi denetimi kullanıcı Arabiriminde başarıyla bulun. Arama özellikleri değiştirilirse, kodlanmış UI testleri denetimleri ve windows kullanıcı Arabiriminde bulmak için buluşsal yöntemler uyguladığı bir akıllı eşleşme algoritması bulunur. UI değiştiğinde, bunlar bulunduğundan emin olmak için önceden tanımlanmış öğelerin arama özelliklerini değiştirmek mümkün olabilir.
+Testi sırasında bir arama özellikleri kümesi kullanarak UI denetimleri test çerçevesi tarafından bulunur. Arama özellikleri tarafından oluşturulan tanımları her denetim sınıfına uygulanan **kodlanmış UI Test derleyicisini** içinde *UIMap.Designer.cs* dosya. Arama özellikleri özellik adları ve denetim gibi tanımlamak için kullanılan özellik değerlerini ad-değer çiftleri içeren <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>, ve <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> denetiminin özellikleri. Arama özellikleri değişmeden varsa, kodlanmış UI testi denetimi kullanıcı Arabiriminde başarıyla bulun. Arama özellikleri değiştirilirse, kodlanmış UI testleri denetimleri ve windows kullanıcı Arabiriminde bulmak için buluşsal yöntemler uyguladığı bir akıllı eşleşme algoritması bulunur. UI değiştiğinde, bunlar bulunduğundan emin olmak için önceden tanımlanmış öğelerin arama özelliklerini değiştirmek mümkün olabilir.
 
 ## <a name="if-your-user-interface-changes"></a>Kullanıcı arabiriminiz değişirse
 
@@ -68,7 +68,7 @@ Kullanıcı arabirimleri sık geliştirme sırasında değiştirin. Bu değişik
 
     -   Yeni bir onaylama çapraz hedef düğmesini UI denetiminin üzerine sürükleyerek ekleyin, UI haritasını açın ve yeni onayı ekleyin.
 
-Kodlanmış UI testlerini nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [kullanım UI Otomasyon için Test kodunuzu](../test/use-ui-automation-to-test-your-code.md).
+Kodlanmış UI testlerini nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [kodunuzu test etmek için kullanım UI Otomasyonu](../test/use-ui-automation-to-test-your-code.md).
 
 ## <a name="if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Önce test tamamlamak için bir arka plan işlemi sahipseniz geçebilirsiniz
 
@@ -89,7 +89,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
-- [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)
+- [UI otomasyonunu kullanarak kodunuzu test etme](../test/use-ui-automation-to-test-your-code.md)
 - [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)
-- [Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Birden çok UI eşlemesi bulunan büyük uygulamaları sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

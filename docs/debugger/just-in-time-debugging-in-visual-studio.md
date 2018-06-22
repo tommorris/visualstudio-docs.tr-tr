@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 21301bd7fce15152c8beb825f749b3d05fd0837a
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454668"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281504"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Nasıl yapılır: tam zamanında hata ayıklayıcı için yanıt
 
@@ -26,7 +26,7 @@ Zaman içinde sadece gördüğünüzde almalıdır Eylemler hata ayıklayıcı i
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Düzeltin veya (Visual Studio kullanıcılar) hata ayıklama istiyorsanız
 
-- Sahip olmanız gerekir [Visual Studio yüklüyse](http://www.visualstudio.com) hata hakkında ayrıntılı bilgi görüntülemek ve hata ayıklamak deneyin. Daha fazla bilgi için bkz: [Just-In-Time hata ayıklayıcısı ile hata ayıklama](../debugger/debug-using-the-just-in-time-debugger.md). Hatayı çözün ve uygulama düzeltme, hatayı gidermek için uygulama sahibine başvurun.
+- Sahip olmanız gerekir [Visual Studio yüklüyse](http://visualstudio.microsoft.com) hata hakkında ayrıntılı bilgi görüntülemek ve hata ayıklamak deneyin. Daha fazla bilgi için bkz: [Just-In-Time hata ayıklayıcısı ile hata ayıklama](../debugger/debug-using-the-just-in-time-debugger.md). Hatayı çözün ve uygulama düzeltme, hatayı gidermek için uygulama sahibine başvurun.
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Just-In-Time hata ayıklayıcı iletişim kutusunun görüntülenmesini engellemek istiyorsanız
 
@@ -48,6 +48,6 @@ Zaman içinde sadece önlemek üzere adım atabilirsiniz görünmesini hata ayı
 2. (ASP.NET ve IIS) IIS'de bir ASP.NET Web uygulaması barındırıyorsanız, sunucu tarafı hata ayıklamasını devre dışı bırakın.
 
     IIS Yöneticisi'nde, sunucu düğümüne sağ tıklayın ve seçin **özellikler görünümüne geç**. ASP.NET bölümü altında seçin **.NET derleme** ve seçtiğiniz emin **False** (adımları IIS eski sürümleri farklı) hata ayıklama davranışı olarak.
-  
-## <a name="see-also"></a>Ayrıca Bkz.    
- [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)   
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)

@@ -19,18 +19,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ebc81e1aed2cd007bf34a5e9145c0b995517fd
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 51543921049082b4fca5a04f20b8adfc753d8112
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238244"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283451"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 yükleyin
 
 Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bizim en son sürümünde, onu seçin ve yalnızca gereken özellikleri yüklemek için daha kolay yaptık. Böylece daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler biz de Visual Studio minimum ayak azaltılmış.
 
-Else bu sürümdeki yenilikler hakkında daha fazla öğrenmek ister misiniz? Bkz: bizim [sürüm notları](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+Else bu sürümdeki yenilikler hakkında daha fazla öğrenmek ister misiniz? Bkz: bizim [sürüm notları](/visualstudio/releasenotes/vs2017-relnotes).
 
 Yüklemeye hazır mısınız? Biz, kendisi aracılığıyla, adım adım adım geçireceğiz.
 
@@ -38,19 +38,19 @@ Yüklemeye hazır mısınız? Biz, kendisi aracılığıyla, adım adım adım g
 
 Visual Studio yükleme başlamadan önce:
 
-1. Denetleme [sistem gereksinimleri](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). Bu gereksinimleri bilgisayarınızı Visual Studio 2017 destekleyip desteklemediğini size yardımcı olur.
+1. Denetleme [sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs). Bu gereksinimleri bilgisayarınızı Visual Studio 2017 destekleyip desteklemediğini size yardımcı olur.
 2. En son Windows güncelleştirmeleri uygulayın. Bu güncelleştirmeler, bilgisayarınızın en son güvenlik güncelleştirmelerini ve gerekli sistem bileşenleri için Visual Studio olduğundan emin olun.
 3. Yeniden başlatma. Yeniden başlatma beklemede yükler veya güncelleştirmeleri Visual Studio yükleme azaltabilir yok sağlar.
 4. Alanını boşaltın. Gereksiz dosyaları ve uygulamalar, % SYSTEMDRIVE %, örneğin, Disk Temizleme uygulamayı çalıştıran kaldırın.
 
-Visual Studio 2017 ile yan yana Visual Studio'nun önceki sürümleri çalıştıran hakkında sorular için bkz: [Visual Studio uyumluluk ayrıntıları](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
+Visual Studio 2017 ile yan yana Visual Studio'nun önceki sürümleri çalıştıran hakkında sorular için bkz: [Visual Studio uyumluluk ayrıntıları](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ## <a name="step-2---download-visual-studio"></a>Adım 2 - karşıdan yükleme Visual Studio
 
 Ardından, Visual Studio önyükleyici dosyasını indirin. Bunu yapmak için aşağıdaki düğmeye tıklayın, Visual Studio 2017'a tıklayın, istediğiniz sürümü seçin **kaydetmek**ve ardından **Klasör Aç**.
 
  > [!div class="button"]
- > [Visual Studio 2017 İndir](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Visual Studio 2017 İndir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |
@@ -69,8 +69,8 @@ Ardından, Visual Studio yükleyicisi yükleme önyükleyicisi dosyasını çal�
 
   Bir kullanıcı hesabı denetimi bildirimi alırsanız, tıklatın **Evet**.
 
-2. Microsoft onaylamak için isteyeceğiz [Lisans Koşulları'nı](https://www.visualstudio.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://go.microsoft.com/fwlink/?LinkID=824704). 
-              **Devam**'a tıklayın.  
+2. Microsoft onaylamak için isteyeceğiz [Lisans Koşulları'nı](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://go.microsoft.com/fwlink/?LinkID=824704). 
+              **Devam**'a tıklayın.
 
    ![Lisans koşullarını ve gizlilik bildirimini](media/vs2017-privacy-and-license-terms.PNG "Microsoft lisans koşullarını ve gizlilik bildirimi")
 
@@ -82,16 +82,16 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 
  ![Visual Studio 2017 Kurulum iletişim kutusundan bir iş yükünü seçme](../install/media/install-visual-studio-community.png)
 
-     Örneğin, ".NET masaüstü geliştirme" iş yükünü seçin. Temel kod düzenleme açın ve bir projeye gerek kalmadan herhangi bir klasörden kodu düzenleme yeteneğini 20'den dil için destek içerir ve kaynak kodu denetimi tümleşik varsayılan çekirdek düzenleyicisiyle gelir.  
+     Örneğin, ".NET masaüstü geliştirme" iş yükünü seçin. Temel kod düzenleme açın ve bir projeye gerek kalmadan herhangi bir klasörden kodu düzenleme yeteneğini 20'den dil için destek içerir ve kaynak kodu denetimi tümleşik varsayılan çekirdek düzenleyicisiyle gelir.
 
 2. İstediğiniz workload(s) seçtikten sonra tıklayın **yükleme**.
 
     Ardından, durum ekranlar, Visual Studio yüklemenin ilerleme durumunu gösteren görünür.
 
-3. Yeni iş yükleri ve bileşenleri yüklendikten sonra tıklatın **başlatma**.  
+3. Yeni iş yükleri ve bileşenleri yüklendikten sonra tıklatın **başlatma**.
 
 > [!TIP]
-> Yükleme sonrasında herhangi bir zamanda iş yükleri veya başlangıçta nı yüklemediyseniz bileşenleri yükleyebilirsiniz. Visual Studio açmak varsa, Git **Araçları** > **alma araçları ve özelliklerinin...**  Visual Studio yükleyicisi açılır. Ya da açmak **Visual Studio yükleyicisi** Başlat menüsünden. Burada, iş yükleri veya yükleyin ve ardından istediğiniz bileşenleri seçebilirsiniz **Değiştir**.  
+> Yükleme sonrasında herhangi bir zamanda iş yükleri veya başlangıçta nı yüklemediyseniz bileşenleri yükleyebilirsiniz. Visual Studio açmak varsa, Git **Araçları** > **alma araçları ve özelliklerinin...**  Visual Studio yükleyicisi açılır. Ya da açmak **Visual Studio yükleyicisi** Başlat menüsünden. Burada, iş yükleri veya yükleyin ve ardından istediğiniz bileşenleri seçebilirsiniz **Değiştir**.
 
 |         |         |
 |---------|---------|
@@ -141,7 +141,7 @@ Daha fazla bilgi için bkz: [Visual Studio yükleme konumlarını değiştirme](
 
 ## <a name="get-support"></a>Destek alma
 
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
+Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
 

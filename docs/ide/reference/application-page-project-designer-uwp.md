@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a6d78c20f245f2088af8a51e2e30da3c025ae517
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944417"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279992"
 ---
 # <a name="application-property-page-uwp-projects"></a>Uygulama özellik sayfası (UWP projeleri)
 
@@ -46,7 +46,7 @@ Bu özellik programlı olarak erişmek için bkz: <xref:VSLangProj.ProjectProper
 
 Bu bölümdeki açılan listeleri kullanarak, uygulamanız için en düşük sürümü Windows 10 ve hedef sürüm ayarlayabilirsiniz. Windows 10, en son sürümünü hedef önerilir ve en düşük sürümün çok destekleyen bir kuruluş uygulama geliştiriyorsanız. Seçmek için hangi Windows 10 sürümü hakkında daha fazla bilgi için bkz: [UWP sürümünü seçin](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Visual Studio 2017 içinde hedefleme platform hakkında bilgi için bkz [Platform Desteği](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
+Visual Studio 2017 içinde hedefleme platform hakkında bilgi için bkz [Platform Desteği](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453835"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280500"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Kurulum ve Mac için Visual Studio yükleme
 
@@ -27,7 +27,7 @@ Visual Studio iOS ile çalışmak için şu gerekir:
 
 ## <a name="install"></a>Yükleme
 
-1. Mac için Visual Studio indirme [https://www.visualstudio.com/](https://www.visualstudio.com/)
+1. Mac için Visual Studio indirme [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
 2. Yükleyici paketi İndirildikten sonra tıklatın **VisualStudioInstaller.dmg** yükleyici bağlamanız ve ardından çalıştırın logoyu tıklatarak tarafından aşağıdaki resimde gösterildiği gibi dosya:
 
@@ -84,7 +84,7 @@ Visual Studio iOS ile çalışmak için şu gerekir:
   ![Açık Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Öğesini yüklemeyin bir platform veya aracı özgün yükleme sırasında (bunu #6. adımda unselecting tarafından) seçerseniz, çalıştırmalısınız [yükleyici](https://www.visualstudio.com/vs/) yeniden bileşenleri daha sonra eklemek istiyorsanız.
+Öğesini yüklemeyin bir platform veya aracı özgün yükleme sırasında (bunu #6. adımda unselecting tarafından) seçerseniz, çalıştırmalısınız [yükleyici](https://visualstudio.microsoft.com/vs/) yeniden bileşenleri daha sonra eklemek istiyorsanız.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Visual Studio Mac için bir güvenlik duvarı veya proxy sunucunun arkasındaki yükleyin.

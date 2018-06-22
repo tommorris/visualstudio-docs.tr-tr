@@ -9,206 +9,206 @@ description: Visual Studio Aboneliklerde dahil öncelik desteği avantajı ile i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 776438935a2fdbc2e7f360d605cc2135ac02b9a0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995848"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280409"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri öncelik desteği
 
-Öncelik desteği avantajı yeni sorular sorar veya varolan postalar arayabileceğiniz destek topluluk forumları çeşitli erişim sağlar.  Topluluk sorunuzun iki gün içinde yanıt vermezse, Microsoft destek ekibi bir yanıt sağlar.  
+Öncelik desteği avantajı yeni sorular sorar veya varolan postalar arayabileceğiniz destek topluluk forumları çeşitli erişim sağlar.  Topluluk sorunuzun iki gün içinde yanıt vermezse, Microsoft destek ekibi bir yanıt sağlar.
 
 Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda kapsayan çok sayıda aracılığıyla öncelik destek almak uygundur.
 
 ## <a name="included-forums"></a>Dahil edilen forumları
 
 ### <a name="net-framework"></a>.NET Framework
-   - .NET framework Kurulum ve Bakım 
+   - .NET framework Kurulum ve Bakım
 
-   - Ortak dil çalışma zamanı iç Ayrıntılar ve mimarisi 
+   - Ortak dil çalışma zamanı iç Ayrıntılar ve mimarisi
 
-   - .NET framework sınıf kitaplıkları 
+   - .NET framework sınıf kitaplıkları
 
-   - Windows Presentation Foundation (WPF) 
+   - Windows Presentation Foundation (WPF)
 
-   - Windows Communication Foundation, seri hale getirme ve ağ oluşturma 
+   - Windows Communication Foundation, seri hale getirme ve ağ oluşturma
 
 ### <a name="windows-forms-development"></a>Windows Forms geliştirme
-   - Windows Forms veri denetimleri ve veri bağlama 
+   - Windows Forms veri denetimleri ve veri bağlama
 
-   - Genel Windows Formları 
+   - Genel Windows Formları
 
-   - ClickOnce ve Kurulum & dağıtım projeleri 
+   - ClickOnce ve Kurulum & dağıtım projeleri
 
-   - Windows Form Tasarımcısı 
+   - Windows Form Tasarımcısı
 
-   - Windows Forms örnek uygulamaları 
+   - Windows Forms örnek uygulamaları
 
 
 ### <a name="windows-universal-apps"></a>Windows Evrensel uygulamaları
-   - Windows Evrensel uygulamaları geliştirme 
+   - Windows Evrensel uygulamaları geliştirme
 
 ### <a name="internet-of-things-iot"></a>Nesnelerin interneti (IOT)
-   - Windows 10 IOT 
+   - Windows 10 IOT
 
 ### <a name="office-development"></a>Office geliştirme
-   - Geliştiriciler için Microsoft Office 
+   - Geliştiriciler için Microsoft Office
 
-   - Excel geliştiricileri için 
+   - Excel geliştiricileri için
 
-   - Geliştiriciler için Word 
+   - Geliştiriciler için Word
 
-   - Geliştiriciler için Outlook 
+   - Geliştiriciler için Outlook
 
-   - Geliştiriciler için erişim 
+   - Geliştiriciler için erişim
 
-   - Office için Visual Studio Araçları 
+   - Office için Visual Studio Araçları
 
-   - Open XML biçimi SDK 
+   - Open XML biçimi SDK
 
-   - Visual Basic for Applications 
+   - Visual Basic for Applications
 
-   - Genel Office geliştirme 
+   - Genel Office geliştirme
 
-   - Office 2013 için uygulama geliştirme 
+   - Office 2013 için uygulama geliştirme
 
 ### <a name="sql-server"></a>SQL Server
-   - SQL Server ile çalışmaya başlama 
+   - SQL Server ile çalışmaya başlama
 
-   - SQL Server veri erişimi 
+   - SQL Server veri erişimi
 
-   - SQL Server Veritabanı Altyapısı 
+   - SQL Server Veritabanı Altyapısı
 
-   - SQL Server veri ambarı 
+   - SQL Server veri ambarı
 
-   - SQL Server Integration Services 
+   - SQL Server Integration Services
 
-   - SQL Server Analysis Services 
+   - SQL Server Analysis Services
 
-   - SQL Server Bildirim Hizmetleri 
+   - SQL Server Bildirim Hizmetleri
 
-   - SQL Server Reporting Services 
+   - SQL Server Reporting Services
 
-   - Transact-SQL 
+   - Transact-SQL
 
-   - SQL Server çoğaltması 
+   - SQL Server çoğaltması
 
-   - SQL Server güvenlik 
+   - SQL Server güvenlik
 
-   - SQL Server Kurulum ve yükseltme 
+   - SQL Server Kurulum ve yükseltme
 
-   - SQL Server Araçları Genel 
+   - SQL Server Araçları Genel
 
-   - SQL hizmet Aracısı 
+   - SQL hizmet Aracısı
 
-   - SQL Server Compact 
+   - SQL Server Compact
 
-   - SQL Server Express 
+   - SQL Server Express
 
-   - Veri araştırma 
+   - Veri araştırma
 
-   - .NET framework içinde SQL Server 
+   - .NET framework içinde SQL Server
 
 ### <a name="sharepoint"></a>SharePoint
-   - SharePoint 2013 – genel tartışmalara ve soruları 
+   - SharePoint 2013 – genel tartışmalara ve soruları
 
-   - SharePoint 2013 için uygulama geliştirme 
+   - SharePoint 2013 için uygulama geliştirme
 
-   - SharePoint 2013 – geliştirme ve programlama 
+   - SharePoint 2013 – geliştirme ve programlama
 
-   - SharePoint 2013 – Kurulum, yükseltme, yönetim ve işlemler 
+   - SharePoint 2013 – Kurulum, yükseltme, yönetim ve işlemler
 
-   - SharePoint 2013 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma 
+   - SharePoint 2013 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma
 
-   - SharePoint 2013 - arama 
+   - SharePoint 2013 - arama
 
-   - SharePoint 2010 – Geliştirme ve programlama 
+   - SharePoint 2010 – Geliştirme ve programlama
 
-   - SharePoint 2010 – genel tartışmalara ve soruları 
+   - SharePoint 2010 – genel tartışmalara ve soruları
 
-   - SharePoint 2010 – kurulum, yükseltme, yönetim ve işlemler 
+   - SharePoint 2010 – kurulum, yükseltme, yönetim ve işlemler
 
-   - SharePoint 2010 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma 
+   - SharePoint 2010 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma
 
-   - SharePoint 2010 - arama 
+   - SharePoint 2010 - arama
 
 ### <a name="visual-studio"></a>Visual Studio
-   - Visual Studio genel sorular 
+   - Visual Studio genel sorular
 
-   - Visual Studio Kurulum ve yükleme 
+   - Visual Studio Kurulum ve yükleme
 
-   - Visual Studio 2010'u ve 2012'de test araçları 
+   - Visual Studio 2010'u ve 2012'de test araçları
 
-   - Visual Studio Test Yöneticisi (MTM) ile test etme 
+   - Visual Studio Test Yöneticisi (MTM) ile test etme
 
-   - Visual Studio birim testi 
+   - Visual Studio birim testi
 
 ### <a name="visual-studio-team-foundation-server"></a>Visual Studio Team Foundation Server
-   - TFS – Kurulum ve yönetim 
+   - TFS – Kurulum ve yönetim
 
-   - TFS – genel 
+   - TFS – genel
 
-   - TFS – kaynak ve sürüm denetimi 
+   - TFS – kaynak ve sürüm denetimi
 
-   - TFS – derleme ve sürüm Yönetimi 
+   - TFS – derleme ve sürüm Yönetimi
 
-   - TFS – raporlama ve ambar 
+   - TFS – raporlama ve ambar
 
-   - TFS-Project yönetimi ve iş öğesi 
+   - TFS-Project yönetimi ve iş öğesi
 
-   - TFS – işlem şablonları 
+   - TFS – işlem şablonları
 
-   - TFS – geçiş ve tümleştirme 
+   - TFS – geçiş ve tümleştirme
 
-   - Visual Studio Team Services 
+   - Visual Studio Team Services
 
 ### <a name="visual-studio-languages"></a>Visual Studio dilleri
-   - Visual Basic 
+   - Visual Basic
 
-   - Visual C# 
+   - Visual C#
 
-   - Visual C++ 
+   - Visual C++
 
-   - Visual C++ standartları, uzantıları ve birlikte çalışma 
+   - Visual C++ standartları, uzantıları ve birlikte çalışma
 
 
 ### <a name="biztalk"></a>BizTalk
-   - BizTalk Server genel 
+   - BizTalk Server genel
 
-   - BizTalk Server EDI ve AS2 
+   - BizTalk Server EDI ve AS2
 
 ### <a name="adospannet"></a>ADO<span>.NET
-   - ADO<span>.NET veri sağlayıcısı 
+   - ADO<span>.NET veri sağlayıcısı
 
-   - ADO<span>.NET veri kümesi 
+   - ADO<span>.NET veri kümesi
 
-   - LINQ - SQL 
+   - LINQ - SQL
 
-   - ADO<span>.NET Entity Framework ve LINQ to Entities 
+   - ADO<span>.NET Entity Framework ve LINQ to Entities
 
-   - WCF (ADO<span>.NET) Veri Hizmetleri 
+   - WCF (ADO<span>.NET) Veri Hizmetleri
 
 ### <a name="xml"></a>XML
-   - XML ve .NET Framework 
+   - XML ve .NET Framework
 
-   - SQL Server XML 
+   - SQL Server XML
 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-Önceki desteklemek için erişim sağlama çok basit bir işlemdir. 
+Önceki desteklemek için erişim sağlama çok basit bir işlemdir.
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Öncelik desteği döşeme destek bölümüne bulun.  Tıklayın **yardım alın**.
 
     ![Öncelik desteği döşeme](_img/vs-priority-support/vs-priority-support-tile.png)
 
-3. Forum listesine göz ve istenen Forumu seçin. 
+3. Forum listesine göz ve istenen Forumu seçin.
 
     ![Öncelik destek forumları](_img/vs-priority-support/vs-priority-support-forums.png)
 
-4. Son yanıtları okumak, önceki gönderileri arama veya yeni bir soru gönderin.  
+4. Son yanıtları okumak, önceki gönderileri arama veya yeni bir soru gönderin.
 
     ![Öncelik desteği örneği](_img/vs-priority-support/vs-priority-support-example.png)
 
@@ -224,9 +224,9 @@ Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda 
 
 <sup>1</sup>*içerir: değil satışı için (NFR), FTE, Visual Studio Endüstri ortağı (VSIP) düşünün.  Dışlar: Microsoft iş ortağı ağı (MPN), MCT yazılım ve Hizmetleri, MCT yazılım ve Hizmetleri geliştirici, BizSpark, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD).*
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
 
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 
+-  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

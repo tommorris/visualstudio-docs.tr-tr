@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a9035b9232d1b2e459be86c24758dcc6db6b1cdf
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972111"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281670"
 ---
-# <a name="install-test-agents-and-test-controllers"></a>Test denetleyicileri ve test aracılarını yükleme
+# <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
 Visual Studio ve Visual Studio Team Services (VSTS) veya Team Foundation Server (TFS) kullanan test senaryoları için bir test denetleyicisi gerekmez. Visual Studio için aracıları VSTS veya TFS ile iletişim kurarak düzenleme işleyin. Senaryo yapı için sürekli testleri çalıştırın ve VSTS veya TFS iş akışlarında yayın olabilir.
 
@@ -34,9 +34,9 @@ Kullanmak daha iyi olup olmadığını de düşünebilirsiniz [oluşturabilir ve
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Test denetleyicisi ve test aracılarını yükleme
 
-Aracılar için Visual Studio 2017 ' indirebilirsiniz [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Sayfanın alt kısmına kaydırın ve Ara *aracılar için Visual Studio 2017*. Şunlardan birini seçin *Aracısı* veya *denetleyicisi*ve ardından *karşıdan*. Test aracısı veya denetleyicisi yüklemek için karşıdan yüklenen yürütülebilir dosyayı çalıştırmak.
+Aracılar için Visual Studio 2017 ' indirebilirsiniz [visualstudio.com](https://visualstudio.microsoft.com/downloads/?q=agents). Sayfanın alt kısmına kaydırın ve Ara *aracılar için Visual Studio 2017*. Şunlardan birini seçin *Aracısı* veya *denetleyicisi*ve ardından *karşıdan*. Test aracısı veya denetleyicisi yüklemek için karşıdan yüklenen yürütülebilir dosyayı çalıştırmak.
 
-Visual Studio 2015 ve Visual Studio 2013 için aracıları yükleyebilirsiniz [eski yüklemeleri](https://www.visualstudio.com/vs/older-downloads/) sayfası.
+Visual Studio 2015 ve Visual Studio 2013 için aracıları yükleyebilirsiniz [eski yüklemeleri](https://visualstudio.microsoft.com/vs/older-downloads/) sayfası.
 
 Bu yükleyiciler, sanal makinelerde kolay yükleme için ISO dosyaları olarak kullanılabilir.
 

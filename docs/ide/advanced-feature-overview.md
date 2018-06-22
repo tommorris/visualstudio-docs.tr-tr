@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694119"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282531"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 özellikleri
 
@@ -24,7 +24,7 @@ ms.locfileid: "34694119"
 
 Visual Studio'nun modüler yükleyici seçin ve yüklemenize olanak sağlar *iş yükleri*, hangi gruplarıdır programlama dili veya tercih ettiğiniz platform için gerekli özellikleri. Bu strateji, yükler ve çok daha hızlı güncelleştirmeleri yüklemesi ayak izinin Visual Studio daha küçük kalmasına yardımcı olur.
 
-Visual Studio 2017 henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio 2017 henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 Sisteminizde Visual Studio'yu ayarlama hakkında daha fazla bilgi edinmek için [yükleme Visual Studio 2017](../install/install-visual-studio.md).
 
@@ -52,17 +52,17 @@ Kullanılabilir **bağlantılı Hizmetler** proje türüne bağlıdır. Nde proj
 
 ![Visual Studio bağlı Hizmetleri](media/connected-services.png)
 
-Daha fazla bilgi için bkz: [ile Visual Studio ve Azure buluta taşımak](https://www.visualstudio.com/vs/azure-tools/).
+Daha fazla bilgi için bkz: [ile Visual Studio ve Azure buluta taşımak](https://visualstudio.microsoft.com/vs/azure-tools/).
 
 ## <a name="create-apps-for-the-web"></a>Web uygulamaları oluşturma
 
 Bizim modern world web sürücüler ve Visual Studio, uygulamalar için yazmanıza yardımcı olabilir. ASP.NET, Node.js, Python, JavaScript ve TypeScript kullanarak web uygulamaları oluşturabilirsiniz. Visual Studio web çerçeveleri Angular, jQuery, hızlı ve daha fazlası gibi bilir. ASP.NET Core ve .NET Core Windows, Mac ve Linux işletim sistemleri üzerinde çalıştırın. [ASP.NET Core](http://www.asp.net/core/overview) MVC, Webapı ve SignalR için önemli bir güncelleştirme ve Windows, Mac ve Linux üzerinde çalıştırır.  ASP.NET Core sıfırdan yukarı .NET yalın ve birleştirilebilir sizinle modern bulut tabanlı web uygulamaları ve hizmetleri oluşturmak için yığın sağlamak için tasarlanmıştır.
 
-Daha fazla bilgi için bkz: [Modern web araçları](https://www.visualstudio.com/vs/modern-web-tooling/).
+Daha fazla bilgi için bkz: [Modern web araçları](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
 ## <a name="build-cross-platform-apps-and-games"></a>Platformlar arası uygulamaları ve oyunları derleme
 
-Visual Studio uygulamaları ve oyunları macOS, Linux ve Windows için yanı sıra Android, iOS ve diğer oluşturmak için kullanabileceğiniz [mobil aygıtları](https://www.visualstudio.com/vs/mobile-app-development/).
+Visual Studio uygulamaları ve oyunları macOS, Linux ve Windows için yanı sıra Android, iOS ve diğer oluşturmak için kullanabileceğiniz [mobil aygıtları](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
 - Yapı [.NET Core](/dotnet/core/) Windows, macOS ve Linux üzerinde çalışan uygulamalar.
 
@@ -122,7 +122,7 @@ Kendi kod Çözümleyicileri ve kod oluşturucuları yazmak için .NET derleyici
 
 Bul [varolan uzantıları](https://marketplace.visualstudio.com/vs) Visual Studio geliştirme topluluğumuz yanı sıra Microsoft geliştiriciler tarafından oluşturulmuş.
 
-Visual Studio genişletme hakkında daha fazla bilgi için bkz: [genişletmek Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
+Visual Studio genişletme hakkında daha fazla bilgi için bkz: [genişletmek Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

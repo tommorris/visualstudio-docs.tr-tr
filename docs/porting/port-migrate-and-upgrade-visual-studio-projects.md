@@ -19,24 +19,24 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 8a09dc06ac76ff94ea8bbf933a1873221bfe0952
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032209"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281731"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 proje geçiş ve yükseltme başvurusu
 
-Her yeni sürümü Visual Studio, genellikle çoğu önceki tür projeleri, dosyaları ve diğer varlıklar destekler. Bunlarla çalışmak [her zaman sahip](../ide/solutions-and-projects-in-visual-studio.md), ve daha yeni özelliklere bağımlı yok olması koşuluyla, Visual Studio genellikle geriye doğru Visual Studio 2015, Visual Studio 2013 gibi önceki sürümleriyle uyumluluğunu korumak çalışır ve Visual Studio 2012. (Bkz [sürüm notları](https://www.visualstudio.com/vs/release-notes/) için hangi özelliklerin hangi sürümlerine özeldir.)
+Her yeni sürümü Visual Studio, genellikle çoğu önceki tür projeleri, dosyaları ve diğer varlıklar destekler. Bunlarla çalışmak [her zaman sahip](../ide/solutions-and-projects-in-visual-studio.md), ve daha yeni özelliklere bağımlı yok olması koşuluyla, Visual Studio genellikle geriye doğru Visual Studio 2015, Visual Studio 2013 gibi önceki sürümleriyle uyumluluğunu korumak çalışır ve Visual Studio 2012. (Bkz [sürüm notları](https://visualstudio.microsoft.com/vs/release-notes/) için hangi özelliklerin hangi sürümlerine özeldir.)
 
 Bazı proje türleri için destek de zaman içinde değişir. Visual Studio'nun daha yeni bir sürümü artık belirli projeler desteklemiyor olabilir ya da artık geriye dönük olarak uyumlu olacak şekilde, bir proje güncelleştirilmesini gerektirir. Geçiş sorunları için geçerli durumunu almak için bkz [Visual Studio Geliştirici topluluğu site](https://developercommunity.visualstudio.com).
 
 > [!Important]
-> Mevcut makalede geçiş ile ilgili yalnızca proje türleri için Visual Studio 2017 içinde ayrıntıları sağlar. Geçiş sorunlarını desteklenen proje türleri içermez; Bu liste bulunan [Platform desteği ve Uyumluluk](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs). Ayrıca, bazı proje türleri Visual Studio 2017 hiç artık desteklenmemektedir ve bu nedenle geçirilemez unutmayın.
+> Mevcut makalede geçiş ile ilgili yalnızca proje türleri için Visual Studio 2017 içinde ayrıntıları sağlar. Geçiş sorunlarını desteklenen proje türleri içermez; Bu liste bulunan [Platform desteği ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs). Ayrıca, bazı proje türleri Visual Studio 2017 hiç artık desteklenmemektedir ve bu nedenle geçirilemez unutmayın.
 
 > [!Important]
-> Belirli proje türleri aracılığıyla Visual Studio yükleyicisi uygun iş yüklerini yükleme gerektirir. Yüklü iş yükü yoksa, Visual Studio bir bilinmeyen ya da uyumsuz proje türü bildirir. Bu durumda, yükleme seçeneklerinizi denetleyin ve yeniden deneyin. Yeniden bkz [Platform desteği ve Uyumluluk](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) makalede Visual Studio 2017 proje desteği hakkında ayrıntılı bilgi için.
+> Belirli proje türleri aracılığıyla Visual Studio yükleyicisi uygun iş yüklerini yükleme gerektirir. Yüklü iş yükü yoksa, Visual Studio bir bilinmeyen ya da uyumsuz proje türü bildirir. Bu durumda, yükleme seçeneklerinizi denetleyin ve yeniden deneyin. Yeniden bkz [Platform desteği ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs) makalede Visual Studio 2017 proje desteği hakkında ayrıntılı bilgi için.
 
 ## <a name="project-types"></a>Proje türleri
 
@@ -76,7 +76,7 @@ Bir proje görmüyorum veya dosya türü listelenen Burada, olması, başvurun [
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio Proje geçirmek ne zaman nasıl karar verir
 
-Her yeni sürümü Visual Studio'nun sağlayacak şekilde aynı proje açılır, değiştirilebilir ve farklı sürümleri arasında yerleşik önceki sürümleriyle uyumluluğunu korumak genellikle arar. Ancak, kaçınılmaz değişiklik yoktur zamanla sağlayacak şekilde bazı proje türleri artık desteklenmiyor olabilir. (Bkz [Platform desteği ve Uyumluluk](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) hangi projesi için Visual Studio 2017 içinde türleri desteklenir.) Bu durumlarda, Visual Studio'nun daha yeni bir sürümü proje yüklenmiyor ve bir geçiş yolu sağlamaz; önceki bir sürümünü destekleyen Visual Studio bu projede korumak için gerekir.
+Her yeni sürümü Visual Studio'nun sağlayacak şekilde aynı proje açılır, değiştirilebilir ve farklı sürümleri arasında yerleşik önceki sürümleriyle uyumluluğunu korumak genellikle arar. Ancak, kaçınılmaz değişiklik yoktur zamanla sağlayacak şekilde bazı proje türleri artık desteklenmiyor olabilir. (Bkz [Platform desteği ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs) hangi projesi için Visual Studio 2017 içinde türleri desteklenir.) Bu durumlarda, Visual Studio'nun daha yeni bir sürümü proje yüklenmiyor ve bir geçiş yolu sağlamaz; önceki bir sürümünü destekleyen Visual Studio bu projede korumak için gerekir.
 
 Diğer durumlarda, Visual Studio'nun daha yeni sürümünü bir proje açabileceğiniz ancak gerekir güncelleştirmek veya önceki sürümleriyle uyumlu hale getirebilir bir şekilde projesinde geçirme. Visual Studio gibi geçiş gerekli olup olmadığını belirlemek için bir dizi ölçüte kullanır:
 
@@ -92,7 +92,7 @@ Bu tür uyumluluk mümkün değilse, ancak olarak bazı bu makalede açıklanan 
 
 Tek yönlü değişikliğe değiştirilmektedir `ToolsVersion` MSBuild tam olarak hangi sürümü gösterir proje dosyasında özellik sonuçta istediğiniz runnable ve dağıtılabilir yapıları projenin kaynak kodu kapatma. Diğer bir deyişle, hangi proje Visual Studio'nun önceki sürümleri ile uyumsuz işler değil *Visual Studio* sürümü, ancak *MSBuild* tarafından belirlenen Sürüm `ToolsVersion`. Visual Studio sürümünüzle eşleşen MSBuild araç zinciri içerir sürece `ToolsVersion` bir proje ile Visual Studio projesi oluşturmak için bu araç zinciri çağırabilirsiniz.
 
-Eski sürümlerinde oluşturulan projeleri maksimum uyumluluğu korumak için Visual Studio 2017 desteklemek için gerekli MSBuild toolchains içeren `ToolsVersion` 15, 14, 12 ve 4. Aşağıdakilerden herhangi birini kullanan projelerin `ToolsVersion` değerleri başarılı bir yapı içinde neden. (Yeniden, Visual Studio 2017 proje türü hiç açıklandığı gibi destekleyip desteklemediğini için konu [Platform desteği ve Uyumluluk](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).)
+Eski sürümlerinde oluşturulan projeleri maksimum uyumluluğu korumak için Visual Studio 2017 desteklemek için gerekli MSBuild toolchains içeren `ToolsVersion` 15, 14, 12 ve 4. Aşağıdakilerden herhangi birini kullanan projelerin `ToolsVersion` değerleri başarılı bir yapı içinde neden. (Yeniden, Visual Studio 2017 proje türü hiç açıklandığı gibi destekleyip desteklemediğini için konu [Platform desteği ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs).)
 
 El ile güncelleştirmek veya yeni bir proje geçirmek denemelisiniz olup olmadığını bu bağlamda soru doğal olarak ortaya `ToolsVersion` değeri. Bu tür bir değişiklik yapmadan gerekli değildir ve büyük olasılıkla çok sayıda hata ve yeniden oluşturmak için proje almak düzeltme gerek uyarılar oluşturur. Ayrıca, Visual Studio için belirli bir destek düşerse `ToolsVersion` gelecekte proje açma proje geçiş işlemi olduğundan, özellikle tetikleyecek `ToolsVersion` değer değiştirilmelidir. Böyle bir durumda, belirli bir proje türü için alt sistem tam olarak ne değiştirilmesi, gereken bilir ve bu değişiklikleri otomatik olarak bu makalenin önceki bölümlerinde açıklandığı gibi yapabilirsiniz.
 

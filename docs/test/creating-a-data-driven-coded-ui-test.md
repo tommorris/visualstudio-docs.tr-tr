@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0343058b2ae2910e81f345e81139d6f5114e330b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692193"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303046"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Veri tabanlı kodlanmış UI testi oluşturma
 
@@ -40,7 +40,7 @@ Bu örnek Windows hesap makinesi uygulamanın çalıştığı kodlanmış bir UI
    > [!NOTE]
    > Görmüyorsanız, **kodlanmış UI Test projesine** şablonu, gereken [kodlanmış UI test bileşeni](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2.  Eylemleri kaydetmek seçin.
+2.  Tercih **eylemleri kaydetmek**.
 
      ![Eylemleri kaydetmek seçin](../test/media/cuit_datadriven_generatecodedialog.png)
 
@@ -65,7 +65,7 @@ Bu örnek Windows hesap makinesi uygulamanın çalıştığı kodlanmış bir UI
 
 5.  Kullanım `AddNumbers()` test çalıştığını doğrulamak için yöntem. Yukarıda gösterilen test yöntemi imleci yerleştirin, bağlam menüsünü açın ve seçin **Testleri Çalıştır**. (Klavye kısayolu: **Ctrl**+**R**,**T**).
 
-     Test geçirilen ya da başarısız olmuşsa gösterir test sonucu Test Gezgini penceresinde görüntülenir. Gelen Test Gezgini penceresi açmak için **Test** menüsünde seçin **Windows** ve ardından **Test Gezgini**.
+     Test geçirilen ya da başarısız olmuşsa gösterir test sonucu görüntülenir **Test Gezgini** penceresi. Gelen Test Gezgini penceresi açmak için **Test** menüsünde seçin **Windows** ve ardından **Test Gezgini**.
 
 6.  Bir veri kaynağı onaylama parametre değerleri için de kullanılabilir olmadığından — kullanılan test tarafından beklenen değerler doğrulamak için — iki sayının toplamını doğru olduğunu doğrulamak için onayı ifade ekleyelim. Yukarıda gösterilen test yöntemi imleci yerleştirin, bağlam menüsünü açın ve seçin **kodlanmış UI testi için kod üret**ve ardından **kullanım kodlanmış UI Test oluşturucusunu**.
 
@@ -98,7 +98,7 @@ Bu örnek Windows hesap makinesi uygulamanın çalıştığı kodlanmış bir UI
 
 ### <a name="step-2---create-a-data-set"></a>2. adım - bir veri kümesi oluşturma
 
-1.  Bir metin dosyası adlı dataDrivenSample projeye ekleyin `data.csv`.
+1.  Bir metin dosyası adlı dataDrivenSample projeye ekleyin *data.csv*.
 
      ![Bir virgülle ayrılmış değer dosyası projeye ekleyin](../test/media/cuit_datadriven_addcsvfile.png)
 
@@ -180,7 +180,7 @@ Bu örnek Windows hesap makinesi uygulamanın çalıştığı kodlanmış bir UI
 
      Verileri kodlamak için hangi arama özelliklerinin tahmin için kodlanmış UI Test Düzenleyicisi'ni kullanın.
 
-    -   UIMap.uitest dosyasını açın.
+    -   Açık *UIMap.uitest* dosya.
 
          ![Kodlanmış UI Test Düzenleyicisi'ni açın](../test/media/cuit_datadriven_opentesteditor.png)
 
@@ -188,7 +188,7 @@ Bu örnek Windows hesap makinesi uygulamanın çalıştığı kodlanmış bir UI
 
          ![Koduyla yardımcı olmak için kodlanmış UI Test Düzenleyicisi'ni kullanın](../test/media/cuit_datadriven_testeditor.png)
 
-    -   Özellikler penceresini açmak **arama özellikleri**. Arama özellikleri **adı** değerdir'ın veri kaynağını kullanarak kod içinde ne yönetilebilir. Örneğin, `SearchProperties` her veri satırının ilk sütununu değerler atanır: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Üç yineleme için bu sınama değiştirir **adı** 3, ardından 5 ve son olarak 6 arama özelliği için değer.
+    -   İçinde **özellikleri** penceresinde, açık **arama özellikleri**. Arama özellikleri **adı** değerdir'ın veri kaynağını kullanarak kod içinde ne yönetilebilir. Örneğin, `SearchProperties` her veri satırının ilk sütununu değerler atanır: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Üç yineleme için bu sınama değiştirir **adı** 3, ardından 5 ve son olarak 6 arama özelliği için değer.
 
          ![Kodlama yardımcı olmak için arama özelliklerini kullanın](../test/media/cuit_datadriven_searchproperties.png)
 
@@ -230,15 +230,15 @@ Kodunuza kopyalayarak ve gereken özelleştirmeleri yaparak, aşağıdaki tablod
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>S: neden UIMap.Designer dosyasındaki kodu değiştirilemez?
 
-**Y:** UIMap - Kodlanmış UI Test derleyicisini kullanarak kod oluşturma her zaman UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliğinin üzerine yazılır. Bu örnekte ve çoğu durumda, bir veri kaynağı kullanmak bir test etkinleştirmek için gereken kod değişikliği testin kaynak kodu dosyasına (diğer bir deyişle, Codeduıtest1.cs) yapılabilir.
+**Y:** herhangi bir kod, yaptığınız değişiklikleri *UIMapDesigner.cs* UIMap - Kodlanmış UI Test derleyicisini kullanarak kod oluşturma her zaman dosya yazılır. Bu örnekte ve çoğu durumda, bir veri kaynağı kullanmak bir test etkinleştirmek için gereken kod değişikliği testin kaynak kodu dosyasına yapılabilir (diğer bir deyişle, *Codeduıtest1.cs*).
 
-Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.
+Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, kendisine kopyalamalısınız *UIMap.cs* dosya ve yeniden adlandırın. *UIMap.cs* dosya, yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir *UIMapDesigner.cs* dosya. Kodlanmış özgün yöntemi referansı kaldırmalısınız *UITest.cs* dosya ve adlandırılan yöntem adıyla değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)
+- [UI otomasyonunu kullanarak kodunuzu test etme](../test/use-ui-automation-to-test-your-code.md)
 - [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)
-- [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)
-- [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Kodlanmış UI testleri için en iyi yöntemler](../test/best-practices-for-coded-ui-tests.md)
+- [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

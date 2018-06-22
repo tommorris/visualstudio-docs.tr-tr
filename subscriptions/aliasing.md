@@ -9,16 +9,16 @@ description: Diğer adlar veya kolay adlar kullanılıyorsa, oturum açma başar
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8226a72f2d53973e31e37a0cb0dac5d4b4a8e3be
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477658"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283350"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikler için oturum açma diğer adlar kullanırken başarısız olabilir
 
-Oturum açmak için kullandığınız hesap türüne bağlı olarak, kullanılabilir abonelikler doğru için oturum açarken görüntülenmeyebilir [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Bir olası neden "aliases" veya "kolay adlar" kullanımını abonelik atandığı oturum açma kimliği yerine değildir. Bu, "yumuşatma" adı verilir. 
+Oturum açmak için kullandığınız hesap türüne bağlı olarak, kullanılabilir abonelikler doğru için oturum açarken görüntülenmeyebilir [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Bir olası neden "aliases" veya "kolay adlar" kullanımını abonelik atandığı oturum açma kimliği yerine değildir. Bu, "yumuşatma" adı verilir.
 
 ## <a name="what-is-aliasing"></a>Yumuşatma nedir?
 
@@ -28,7 +28,7 @@ Yumuşatma karşılaştı şirket Microsoft çevrimiçi hizmeti için kendi dire
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Yönetici olarak, hangi seçenekleri ı var mı?
 
-Bir yönetici olarak abonelerinizin sahip başarılı bir oturum açma deneyimi sağlamak için iki seçenek vardır [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). 
+Bir yönetici olarak abonelerinizin sahip başarılı bir oturum açma deneyimi sağlamak için iki seçenek vardır [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - (Önerilen), ilk seçenektir directory hesabına atanan adresi içinde Toplu Lisanslama hizmeti Merkezi (VLSC) olarak yararlanmak için. Başvurmak [bir dizin hesabı atama abonelere](#assigning-subscribers-to-a-directory-account) daha fazla ayrıntı için bu makaledeki bölümü.
 - (Daha az güvenli), ikinci seçenek olan kendi "Kişisel" hesap "İş veya Okul" e-posta adresine (paketini ilişkilendirilecek abonelerinizin izin vermek için Microsoft hesabı veya MSA). Başvurmak [bir iş veya Okul hesabı kişisel hesabıyla tanımlama ](#defining-a-work-or-school-account-as-a-personal-account ) daha fazla ayrıntı için bu makaledeki bölümü.
 
@@ -37,9 +37,9 @@ Bir yönetici olarak abonelerinizin sahip başarılı bir oturum açma deneyimi 
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Bir abone olarak hangi seçenekleri ı var mı?
 
-Abone açısından bakıldığında, yöneticiniz, şirketinizin kimlik yapılandırması anlamak için ilk çalışmak için önemlidir.  Gerekirse, yöneticiniz hesap ayarlarınızı kendi Yönetim Portalı'ndan güncelleştirmeniz gerekiyor olabilir veya bir Microsoft hesabı (MSA) kullanarak şirket e-posta adresinizi oluşturmanız gerekebilir.  Bir MSA oluşturmak için aşağıdaki adımları gerçekleştirmeden önce herhangi bir ilke veya bu eylemi gerçekleştirmeden sorunlar ilgili yöneticinizle konuşun.  Başvurmak [bir iş veya Okul hesabı kişisel hesabıyla tanımlama ](#defining-a-work-or-school-account-as-a-personal-account ) daha fazla ayrıntı için bu makaledeki bölümü.  
+Abone açısından bakıldığında, yöneticiniz, şirketinizin kimlik yapılandırması anlamak için ilk çalışmak için önemlidir.  Gerekirse, yöneticiniz hesap ayarlarınızı kendi Yönetim Portalı'ndan güncelleştirmeniz gerekiyor olabilir veya bir Microsoft hesabı (MSA) kullanarak şirket e-posta adresinizi oluşturmanız gerekebilir.  Bir MSA oluşturmak için aşağıdaki adımları gerçekleştirmeden önce herhangi bir ilke veya bu eylemi gerçekleştirmeden sorunlar ilgili yöneticinizle konuşun.  Başvurmak [bir iş veya Okul hesabı kişisel hesabıyla tanımlama ](#defining-a-work-or-school-account-as-a-personal-account ) daha fazla ayrıntı için bu makaledeki bölümü.
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>Bir dizin hesabı aboneleri atama 
+## <a name="assigning-subscribers-to-a-directory-account"></a>Bir dizin hesabı aboneleri atama
 
 Her durumda, yeni aboneler için dizin adresi kullanın veya "var" aboneleri için e-posta adresi güncelleştirmek Abonelik Yöneticisi'ni Toplu Lisanslama hizmeti Merkezi (VLSC) içinde gerekir.  Dizin adresini kullanarak tüm yeni aboneler Hoş Geldiniz e-posta almaz ve yönetici bir abonelik kendilerine atanmış olan abone bildir gerekecek anlamına gelir olduğunu dikkate almak önemlidir.  Aşağıdaki sonra aşağıdaki adımları, lütfen ayrıca e-posta kullanılacak çekinmeyin [şablonu](#notifying-your-subscribers-with-directory-addresses) abonelerinizin bilgilendirin ve oturum açma işleminde size yardımcı olmak için.
 
@@ -62,13 +62,13 @@ Lütfen bir dizin hesabı ile yeni bir abonelik eklemek için aşağıdaki adım
 
 5. İstenen seçin **abonelik düzeyinde**.
 
-    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" />
 
 6. Doğrulama atayın ve kullanılabilir abonelikler sahip **sonraki**.
 7.  E-posta adresi alanı abone ayrıntıları ve dizin adresi girip'ı tıklatın **sonraki**.
 
-    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
-        
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" />
+
 8. Abone bilgisi doğrulamak ve tıklatın **son**.
 
 9. Aboneliğini kullanarak sağlanmış abone bildir aşağıda [şablon](#notifying-your-subscribers-with-directory-addresses).
@@ -102,9 +102,9 @@ Hoş Geldiniz e-posta, abone başarılı bir şekilde ulaşmaz olduğundan, Lüt
 
 Merhaba % abone adı %
 
-Visual Studio abonelik atanmıştır.  Lütfen şu adresi ziyaret https://my.visualstudio.comve etkinleştirmek ve aboneliğinizi erişmek için % dizin adresi % adresinizi oturum. 
+Visual Studio abonelik atanmıştır.  Lütfen şu adresi ziyaret https://my.visualstudio.comve etkinleştirmek ve aboneliğinizi erişmek için % dizin adresi % adresinizi oturum.
 
-Sorun yaşıyorsanız Lütfen Destek ekibine başvurun (https://www.visualstudio.com/subscriptions/support/).
+Sorun yaşıyorsanız Lütfen Destek ekibine başvurun (https://visualstudio.microsoft.com/subscriptions/support/).
 
 Sayfanın alt kısmındaki aşağıdakileri seçin:
    - Hesapları, abonelikleri ve faturalama desteği
@@ -116,7 +116,7 @@ Sayfanın alt kısmındaki aşağıdakileri seçin:
 
 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Bir iş veya Okul hesabı kişisel hesabıyla tanımlama 
+## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Bir iş veya Okul hesabı kişisel hesabıyla tanımlama
 Lütfen bölümünde açıklanan yönergeleri yararlanan [bir dizin hesabı atama abonelere](#assigning-subscribers-to-a-directory-account) yeni bir kullanıcı eklemek veya bir kullanıcının e-posta adresi içinde Toplu Lisanslama hizmeti Merkezi (VLSC) güncelleştirmek için bölüm.  Burada e-posta adresi directory tarafından tanınmıyor durumlarda, kullanıcının e-posta adresi kişisel hesap tanımlamak için yeni bir hesap oluşturma işlemi adım adım gerekecektir.  Kısa vadeli için Visual Studio abonelikleri takım aşağıda tanımlanan Kimlik İlkesi bir muafiyet güvenli var. ancak Biz bu ilkeyi kaldırmak gerekli özellikleri yatırım.
 
 > [!WARNING]
@@ -152,7 +152,7 @@ Visual Studio abonelik atandığından ve oturum açın yönlendirilmiş https:/
 
 2. Sağ taraftaki oluştur yeni Microsoft Account tıklayın
 
-3. Formu doldurun: 
+3. Formu doldurun:
     - Şirket e-posta adresinizi someone@example.com kutusu
     - Bir parola girin
     - Promosyon tercihinizi seçin
@@ -166,7 +166,7 @@ Visual Studio abonelik atandığından ve oturum açın yönlendirilmiş https:/
 
 Not: ziyaret eden https://my.visualstudio.com gelecekte (örneğin, kullanmak istediğiniz hangi hesap seçmek için istenebilir "İş veya Okul hesabı" veya "Kişisel hesap").  Yukarıdaki adımları tamamladıktan sonra "Kişisel hesap" seçeneğini yararlanan gerekecektir.
 
-Sorun yaşıyorsanız Lütfen Destek ekibine başvurun (https://www.visualstudio.com/subscriptions/support/).
+Sorun yaşıyorsanız Lütfen Destek ekibine başvurun (https://visualstudio.microsoft.com/subscriptions/support/).
 
 Sayfanın alt kısmındaki aşağıdakileri seçin:
    - Hesapları, abonelikleri ve faturalama desteği

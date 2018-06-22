@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7667cac2a26a3e98d2e92dfeb13cee36d870e9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d9e1149803516e0b411bfef1da06fd6e1af9a12f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691166"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282732"
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE genel bakış
 
@@ -30,7 +30,7 @@ Bu makalede Windows için Visual Studio 2017 odaklanır. IDE temel özellikleri 
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE yükleyin
 
-Başlamak için [Visual Studio 2017 karşıdan](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ve sisteminizde yükleyin.
+Başlamak için [Visual Studio 2017 karşıdan](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ve sisteminizde yükleyin.
 
 Modüler yükleyici seçin ve yüklemenize olanak sağlayan *iş yükleri*, hangi gruplarıdır programlama dili veya tercih ettiğiniz platform için gerekli özellikleri. İçin adımları izlemeniz [bir program oluşturmak](#create-a-program), seçtiğinizden emin olun **.NET Core platformlar arası geliştirme** yükleme sırasında iş yükü. Hızlı Başlangıç konuları gibi [Visual Studio'da C++ kullanmaya başlama](getting-started-with-cpp-in-visual-studio.md), diğer iş yüklerini yüklemek için yönergeleri içerir.
 
@@ -255,6 +255,6 @@ Kullanılabilir ücretsiz Visual Studio kurslara çıkışı kontrol edebilirsin
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Daha fazla Visual Studio özellikleri](../ide/advanced-feature-overview.md)
-* [www.VisualStudio.com](https://www.visualstudio.com/vs/)
+* [VisualStudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio Web günlüğü](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+* [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

@@ -9,16 +9,16 @@ description: Seçilen Visual Studio Aboneliklerde dahil Azure topluluk avantajı
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199189"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280383"
 ---
-# <a name="azure-community"></a>Azure topluluk  
+# <a name="azure-community"></a>Azure topluluk
 
-Get Yardım doğrudan Azure ekibi seçin içinde aracılığıyla Azure topluluk forumları destekler.  Azure topluluk avantajı Azure ile ilgili konularda odaklanmış forumları koleksiyonu erişim sağlar.  
+Get Yardım doğrudan Azure ekibi seçin içinde aracılığıyla Azure topluluk forumları destekler.  Azure topluluk avantajı Azure ile ilgili konularda odaklanmış forumları koleksiyonu erişim sağlar.
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -33,18 +33,18 @@ Get Yardım doğrudan Azure ekibi seçin içinde aracılığıyla Azure topluluk
 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-Azure toplulukla başlamak kolaydır.  
+Azure toplulukla başlamak kolaydır.
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Destek bölümüne Azure topluluk döşeme bulun ve tıklatın **yardımcı** bağlantı. 
+2. Destek bölümüne Azure topluluk döşeme bulun ve tıklatın **yardımcı** bağlantı.
 
    ![Azure topluluk döşeme](_img/vs-azure-community/vs-azure-community-tile.png)
 
-3. Kullanılabilir forumları listesini görürsünüz.  Tercih ettiğiniz Forumu tıklamanız yeterlidir.  
+3. Kullanılabilir forumları listesini görürsünüz.  Tercih ettiğiniz Forumu tıklamanız yeterlidir.
 
    ![Azure topluluk forumları](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  Forum içinde görüntüleyin konuları ve yanıtları, sorunuzun yanıtlarını arayın veya yeni bir soru gönderin. 
+4.  Forum içinde görüntüleyin konuları ve yanıtları, sorunuzun yanıtlarını arayın veya yeni bir soru gönderin.
 
    ![Azure topluluk örneği](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -60,12 +60,12 @@ Azure topluluk avantajı kullanılabilirliği, aşağıda gösterildiği gibi ab
 | Visual Studio Enterprise (aylık bulut), Visual Studio Professional (aylık bulut), NFR<sup>1</sup>                                          | Tümü                                              |Yok                                              |  Hayır          |
 | Visual Studio Dev Essentials                                        | Yok                                              |Yok                                              |  Hayır          |
 |
-<sup>1</sup>*içerir: değil satışı (NFR), Microsoft FTE, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), BizSpark, düşünün için Eğitmen (MCT) Microsoft Sertifikalı* 
+<sup>1</sup>*içerir: değil satışı (NFR), Microsoft FTE, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), BizSpark, düşünün için Eğitmen (MCT) Microsoft Sertifikalı*
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Diğer Azure topluluk kaynakları için lütfen Azure topluluk ziyaret [destek sayfası](https://azure.microsoft.com/support/forums/).
 -  [Azure belgelerine](/azure/).
--  Visual Studio abonelikler için satış, abonelikler, hesapları ve faturalama Yardım gerekiyor?  Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 
+-  Visual Studio abonelikler için satış, abonelikler, hesapları ve faturalama Yardım gerekiyor?  Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

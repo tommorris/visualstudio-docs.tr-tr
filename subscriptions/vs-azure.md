@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme k
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: af36faf2345364386c85814b685dcd3211884fe2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336090"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280663"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Microsoft Azure kullanmak
 
@@ -94,7 +94,7 @@ Lütfen doğrudan bir abonelik satın alırsanız, aşağıdakilerden birini yap
 1.  Yıllık bir Visual Studio satın [Kurumsal](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) veya [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) bulut Visual Studio Market'te abonelikle.
 2.  Bir % 50 veya daha yüksek indirimi geçerli aboneliğiniz ile yenileyerek yararlanmak [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
 
-Tüm karşılaştırmak [abonelikleri ve bunların avantajları](https://www.visualstudio.com/vs/pricing/).
+Tüm karşılaştırmak [abonelikleri ve bunların avantajları](https://visualstudio.microsoft.com/vs/pricing/).
 
 Konumundaki etkin bir Visual Studio aboneliğiniz varsa **aynı** abonelik düzeyi bir Microsoft hesabı altında onu bu Azure bağlayabilirsiniz fayda ekleyerek bir [alternatif hesap](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions) Visual Studio'da Abonelik portalı. Bu işe yaramazsa, ayrıca deneyebilirsiniz [Azure avantajı aktarma](/azure/billing/billing-subscription-transfer/) etkin bir Visual Studio aboneliğiniz için.
 
@@ -111,5 +111,5 @@ Hata bu e-posta alınan düşünüyorsanız, lütfen başvurun [Azure müşteri 
 -  Azure ile ilgili Yardım gerekiyor?  Bu kaynaklara gözatın:
     - Teknik Destek: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure belgelerine](/azure/)
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/).
+-  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

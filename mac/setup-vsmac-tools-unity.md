@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 18839ce37feb4f2a113c4a8875ce1c25ddba31e1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 586647ecf78009ccb4df4850a10f8dcedec15ac3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573277"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280088"
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Mac araçları Unity için Visual Studio Kurulumu
 
@@ -42,7 +42,7 @@ Unity yüklemeye dahil Mac için Visual Studio sürümü en son olmayabilir. En 
 
 Unity 5.6.1 zaten varsa veya üstü, ancak Visual Studio için Mac yoksa, Mac için Visual Studio el ile yükleyebilirsiniz. Mac için Visual Studio'nin tüm sürümleri, Mac araçları ücretsiz Community sürümü de dahil olmak üzere Unity için Visual Studio ile paketlendi:
 
-* Mac için Visual Studio indirme [visualstudio.com](https://www.visualstudio.com/).
+* Mac için Visual Studio indirme [visualstudio.com](https://visualstudio.microsoft.com/).
 * Mac araçları Unity için Visual Studio yükleme işlemi sırasında otomatik olarak yüklenir.
 * Adımları [Yükleme Kılavuzu](installation.md) ek yükleme Yardım.
 

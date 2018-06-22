@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39242fc5b95b583ee153e5be5fc562fb49eb4d46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924228"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283132"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Derleme ve Visual Studio'da derleme
 
@@ -36,7 +36,7 @@ Visual Studio ürün ailesi içinde bir uygulama oluşturmak için kullanabilece
 | MSBuild komut satırı| -Visual Studio yüklemeden projeleri oluşturun.<br />-Çalışma birden çok işlemcili için tüm proje türleri oluşturur.<br />-Yapı sistem çoğu alanlarının özelleştirin.|
 | Team Foundation Derlemesi | -Yapı işleminizin sürekli tümleştirme/sürekli teslim ardışık bir parçası olarak otomatikleştirin.<br />-Her bir yapı ile otomatikleştirilmiş testleri uygulayın.<br />-Neredeyse sınırsız verebilir tabanlı kaynaklara yapı işlemleri için kullanın.<br />-Yapı iş akışı değiştirin ve son derece özelleştirilmiş görevleri gerçekleştirmek için yapı etkinlikleri oluşturun.|
 
-Bu bölümdeki belgelere Ayrıntılar IDE tabanlı derleme işleminin gider. Diğer yöntemler hakkında daha fazla bilgi için bkz: [MSBuild](../msbuild/msbuild.md) ve [sürekli tümleştirme ve dağıtım](https://www.visualstudio.com/docs/build/overview)sırasıyla.
+Bu bölümdeki belgelere Ayrıntılar IDE tabanlı derleme işleminin gider. Diğer yöntemler hakkında daha fazla bilgi için bkz: [MSBuild](../msbuild/msbuild.md) ve [sürekli tümleştirme ve dağıtım](/vsts/pipelines/index?view=vsts)sırasıyla.
 
 ## <a name="overview-of-building-from-the-ide"></a>IDE binanın genel bakış
 

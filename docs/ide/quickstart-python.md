@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 56078a8a5e5af1b44adf55cabb08f7d72a042470
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296333"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Hızlı Başlangıç: Visual Studio kullanarak ilk Python web uygulamanızı oluşturma
 
 Bu 5-10 dakikalık bir giriş bir Python IDE olarak Visual Studio, Flask Framework'e dayalı basit bir Python web uygulaması oluşturun. Ayrık üzerinden proje oluşturma yardımcı adımları Visual Studio'nun temel özellikleri hakkında bilgi edinin.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ücretsiz yüklemek için. Yükleyicisi'nde seçtiğinizden emin olun **Python geliştirme** iş yükü.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için. Yükleyicisi'nde seçtiğinizden emin olun **Python geliştirme** iş yükü.
 
 ## <a name="create-the-project"></a>Projeyi oluşturma
 

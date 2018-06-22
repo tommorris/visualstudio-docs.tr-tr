@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f906e6be7d45f3e386b2007c779c4b4906d7980e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3bb1c2f43504a89ede3e9ad9e6f13c05130c9c34
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234104"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303059"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>İzlenecek Yol: Satır İçi Göre Oluşturma
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. .NET Framework sürüm 4 ile başlayarak, proje dosyasında görevleri satır içi oluşturabilirsiniz. Görev barındırmak için ayrı bir derleme oluşturmak zorunda değildir. Daha fazla bilgi için bkz: [satır içi görevleri](../msbuild/msbuild-inline-tasks.md).  
@@ -65,7 +65,9 @@ MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluştu
   
 1.  Kök `Project` düğümü, değişiklik `DefaultTargets` özniteliğini `TestBuild`. Elde edilen `Project` düğüm, bu örnek benzer:  
   
-     `<Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">`  
+    ```xml
+    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ```
   
 2.  Aşağıdaki satır içi görev ekleyin ve proje dosyasına hemen önce hedef `</Project>` etiketi.  
   
@@ -225,9 +227,13 @@ MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluştu
   
 3.  Çıktıyı inceleyin **komut istemi penceresi**. Şu satırları görmeniz gerekir:  
   
-     `Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
-     `Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
  Bu kod RegX olarak adlandırılır ve şu üç parametreyi olan bir satır içi görev tanımlar:  
   
@@ -242,16 +248,16 @@ MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluştu
 ### <a name="handling-reserved-characters"></a>İşleme ayrılmış karakterlerine  
  MSBuild ayrıştırıcı satır içi görevleri XML olarak işler. Anlamı XML, örneğin, ayrılmış karakterler "\<" ve ">", algılanan ve XML ve .NET kaynak kodu gibi işlenir. Ayrılmış karakter kodu ifadelerinde gibi eklemek için `Files.Length > 0`, yazma `Code` öğesi içeriği aşağıdaki gibi bir CDATA ifadesinde bulunan böylece:  
   
- `<Code Type="Fragment" Language="cs">`  
+ ```xml
+<Code Type="Fragment" Language="cs">  
+  <![CDATA[  
   
- `<![CDATA[`  
+  // Your code goes here.  
   
- `// Your code goes here.`  
-  
- `]]>`  
-  
- `</Code>`  
-  
+  ]]>  
+</Code>  
+```  
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Satır içi görevleri](../msbuild/msbuild-inline-tasks.md)   
  [Görevler](../msbuild/msbuild-tasks.md)   

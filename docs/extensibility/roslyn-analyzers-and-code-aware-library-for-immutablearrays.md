@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ebafdd09e6fca0e1266c4eb03c4f6cb66554d06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e3006f14e98723068ea28f222c00fdff48af46d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148525"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281384"
 ---
-# <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn Çözümleyicileri ve ImmutableArrays için kod algılayan kitaplığı
+# <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArray’ler için Roslyn Çözümleyicileri ve Kod Algılayan Kitaplık
 
 [.NET derleyici platformu](https://github.com/dotnet/roslyn) ("Roslyn"), kod algılayan kitaplıkları oluşturmanıza yardımcı olur.  Kod algılayan bir kitaplık, en iyi şekilde veya hatalarını önlemek için kullanabileceğiniz işlevsellik ve kitaplık kullanmanıza yardımcı olması için (Roslyn çözümleyiciler) araçları sağlar.  Bu konu kullanırken sık karşılaşılan yakalamak için gerçek dünya Roslyn Çözümleyicisi nasıl oluşturulacağını gösterir [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable) NuGet paketi.  Bu örnek ayrıca Çözümleyicisi tarafından bulunan bir kod sorunu için bir kod düzeltme sağlamak nasıl gösterir.  Kullanıcıları kod düzeltmeler Visual Studio ampul UI görür ve düzeltmesi kodunun otomatik olarak uygulayabilirsiniz.
 
@@ -26,7 +26,7 @@ ms.locfileid: "31148525"
 
 Bu örnek oluşturmak için aşağıdakilere sahip olmanız gerekir:
 
-* Visual Studio 2015 (olmayan bir Express Edition) veya sonraki bir sürümü.  Ücretsiz kullanabileceğiniz [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
+* Visual Studio 2015 (olmayan bir Express Edition) veya sonraki bir sürümü.  Ücretsiz kullanabileceğiniz [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Ayrıca, Visual Studio yüklenirken, Visual Studio genişletilebilirlik araçları aynı anda SDK yüklemek için ortak Araçlar altındaki kontrol edebilirsiniz.  Visual Studio'nun zaten yüklediyseniz, aynı zamanda bu SDK ana menüsüne giderek yükleyebilirsiniz **dosya &#124; yeni &#124;proje...** , C# sol gezinti bölmesinde seçerek ve genişletilebilirlik seçme.  Seçtiğinizde "**Visual Studio genişletilebilirlik Araçları'nı yükleme**" içerik haritası proje şablonu, onu ister indirmenizi ve SDK'sını yükleyin.
 * [.NET derleme Platformu ("Roslyn") SDK](http://aka.ms/roslynsdktemplates).  Ana menüsüne giderek bu SDK yükleyebilirsiniz **dosya &#124; yeni &#124; proje...** , seçme **C#** sol gezinti bölmesinde, ve ardından seçme **genişletilebilirlik**.  Seçtiğinizde "**.NET derleyici Platform SDK'sını indirin**" içerik haritası proje şablonu, onu ister indirmenizi ve SDK'sını yükleyin.  Bu SDK'sı içerir [Roslyn sözdizimi Görselleştirici](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Hangi kod modeli türleri şekil bu son derece yararlı aracı yardımcı olur, Çözümleyicisi'nde göz önünde bulundurmanız gerekenler.  Çözümleyici altyapı çağrılarını kodunuz için özel kod modeli türleri, böylece kodunuzu yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kod çözümleme üzerinde odaklanabilirsiniz.
 
@@ -108,7 +108,7 @@ internal const string Category = "Naming";
 
 Değişiklik `"Naming"` için `"API Guidance"`.
 
-Sonraki bulup açın `Resources.resx` kullanarak proje dosyasını **Çözüm Gezgini**.  Açıklama Analyzer, başlık, vb. için koyabilirsiniz.  Tüm bu değeri değiştirebilirsiniz `"Don't use ImmutableArray<T> constructor"` şimdilik.  Dize, dize ({0}, {1}, vb.), değişkenlerinde biçimlendirme koyabilirsiniz ve çağırdığınızda sonraki `Diagnostic.Create()`, size sağlayabilir bir `params` geçirilecek bağımsız değişkenler dizisi.
+Sonraki bulup açın `Resources.resx` kullanarak proje dosyasını **Çözüm Gezgini**.  Açıklama Analyzer, başlık, vb. için koyabilirsiniz.  Tüm bu değeri değiştirebilirsiniz `"Don't use ImmutableArray<T> constructor"` şimdilik.  Dize, dize bağımsız değişkenleri biçimlendirme koyabilirsiniz ({0}, {1}, vb.) ve çağırdığınızda sonraki `Diagnostic.Create()`, size sağlayabilir bir `params` geçirilecek bağımsız değişkenler dizisi.
 
 ## <a name="analyzing-an-object-creation-expression"></a>Bir nesne oluşturma ifadesi analiz etme
 

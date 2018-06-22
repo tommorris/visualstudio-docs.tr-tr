@@ -1,5 +1,5 @@
 ---
-title: Visual Studio ağ tabanlı yüklemesini oluşturma
+title: Visual Studio’nun ağ tabanlı yüklemesini oluşturma
 description: Visual Studio içinde bir kuruluş dağıtmak için bir ağ yükleme noktası oluşturmayı öğrenin.
 ms.date: 10/17/2017
 ms.technology: vs-acquisition
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f25e277a4743d27115485e791fd44f12078a4b2f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622893"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282593"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017 bir ağ yüklemesi oluşturma
 
@@ -121,7 +121,7 @@ Yöneticiler, Visual Studio istemci iş istasyonlarında bir yükleme komut dosy
 > [!TIP]
 > Bir toplu iş dosyası bir parçası olarak çalıştırıldığında `--wait` seçeneği sağlar `vs_enterprise.exe` işlem çıkış kodu döndürmeden önce yükleme işlemi tamamlanana kadar bekler. Başka bir yüklemesi tamamlandı eylemleri gerçekleştirmek bir kuruluş yöneticisi istiyorsa, kullanışlıdır (örneğin, [yüklemenin başarılı olabilmesi için bir ürün anahtarı geçerli](automatically-apply-product-keys-when-deploying-visual-studio.md)), ancak yükleme işlemek için tamamlanıncaya kadar beklemeniz gerekir Bu yükleme dönüş kodu.  Kullanmıyorsanız, `--wait`, `vs_enterprise.exe` yükleme tamamlandıktan ve yükleme işleminin durumunu temsil etmez bir yanlış çıkış kodu döndürür önce çıkılıyor.
 
-Bir düzeninden yüklediğinizde, yüklü içerik düzeninden alınır. Düzende değil bir bileşen seçerseniz, ancak onu Internet'ten kazanılması.  Visual Studio Kurulumu, düzeni, kullanım eksik herhangi bir içerik indirmesini önlemek istiyorsanız `--noWeb` seçeneği.  Varsa `--noWeb` kullanılır ve düzeni seçili yüklenmesi, başarısız kurulumu için herhangi bir içerik eksik.  
+Bir düzeninden yüklediğinizde, yüklü içerik düzeninden alınır. Düzende değil bir bileşen seçerseniz, ancak onu Internet'ten kazanılması.  Visual Studio Kurulumu, düzeni, kullanım eksik herhangi bir içerik indirmesini önlemek istiyorsanız `--noWeb` seçeneği.  Varsa `--noWeb` kullanılır ve düzeni seçili yüklenmesi, başarısız kurulumu için herhangi bir içerik eksik.
 
 ### <a name="error-codes"></a>Hata kodları
 
@@ -140,7 +140,7 @@ Kullandıysanız `--wait` parametresi, sonra işlemi sonucuna bağlı olarak `%E
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Bir önceki Visual Studio 2017 yayın için bir düzen oluşturma
 
 > [!NOTE]
-> Kullanılabilir Visual Studio 2017 Önyükleyiciler ile [VisualStudio.com](http://www.visualstudio.com) indirin ve çalıştıkları her koşulda kullanılabilir en son Visual Studio 2017 sürümü yükleyin. Visual Studio önyükleyici hemen indirin ve şu andan itibaren altı ay çalıştırırsanız, bu daha sonra kullanılabilir Visual Studio 2017 yayın yükler. Bir düzen oluşturursanız, o düzeninden Visual Studio'yu yükleme düzeninde mevcut Visual Studio belirli sürümünü yükler. Yeni bir sürümünü çevrimiçi mevcut olabilecek olsa bile, Düzen Visual Studio sürümünü alır.
+> Kullanılabilir Visual Studio 2017 Önyükleyiciler ile [VisualStudio.com](http://visualstudio.microsoft.com) indirin ve çalıştıkları her koşulda kullanılabilir en son Visual Studio 2017 sürümü yükleyin. Visual Studio önyükleyici hemen indirin ve şu andan itibaren altı ay çalıştırırsanız, bu daha sonra kullanılabilir Visual Studio 2017 yayın yükler. Bir düzen oluşturursanız, o düzeninden Visual Studio'yu yükleme düzeninde mevcut Visual Studio belirli sürümünü yükler. Yeni bir sürümünü çevrimiçi mevcut olabilecek olsa bile, Düzen Visual Studio sürümünü alır.
 
 Visual Studio 2017 daha eski bir sürümü için bir düzen oluşturmanız gerekiyorsa, gidebilirsiniz https://my.visualstudio.com "sabit" Visual Studio 2017 Önyükleyiciler ile sürümleri karşıdan yüklemek için.
 
@@ -152,7 +152,7 @@ Diğer destek seçenekleri, çok sahibiz. Bir listesi için bkz: bizim [konuşun
 
 ## <a name="get-support"></a>Destek alma
 
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
+Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
 

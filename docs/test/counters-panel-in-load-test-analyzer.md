@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd276a70a99344b837dad5cb12a0d87365535f39
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36304780"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Grafikler görünümünde ve Tablolar görünümünde Sayaçlar panelini kullanma
 
-Bir yük testi çalışırken ya da bir yük testi sonuç çözümlerken Sayaçlar panelini grafikler görünümünde ve Tablolar görünümünde Yük Testi Çözümleyicisi görülebilir. Daha fazla bilgi için bkz: [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md), [yük testi sonuçlarını çözümleme ve hataları Tablo görünümünde](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) ve [nasıl yapılır: erişim yük testi sonuçlarını çözümlemeiçin](../test/how-to-access-load-test-results-for-analysis.md).
+**Sayaçları** bir yük testi çalışırken ya da bir yük testi sonuç çözümlerken paneli grafikler görünümünde ve Tablolar görünümünde Yük Testi Çözümleyicisi görünür. Daha fazla bilgi için bkz: [Çözümle yük testi sonuçları grafikler görünümünde](../test/analyze-load-test-results-in-the-graphs-view.md), [analiz yük testi sonuçlarını ve hatalarını Tablo görünümünde](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) ve [nasıl yapılır: erişim yük testi sonuçlarını çözümlemeiçin](../test/how-to-access-load-test-results-for-analysis.md).
 
-Sayaçlar panelini yapılandırılmış bir yük testi sırasında toplanan tüm performans sayaçlarının görünümünü görüntüler. Göster veya seçerek Sayaçlar panelini Gizle **Sayaçlar panelini Göster** Yük Testi Çözümleyicisi araç çubuğu üzerinde.
+**Sayaçları** paneli Yük testi sırasında toplanan tüm performans sayaçlarının yapılandırılmış bir görünümünü görüntüler. Göster veya gizle **sayaçları** seçerek paneli **Sayaçlar panelini Göster** üzerinde **Yük Testi Çözümleyicisi** araç.
 
 Sayaçları ve yaprak düğümlerin çizilebilir performans sayacı örnekleri olduğu bir ağaç yapısında düzenlenir.
 
@@ -46,7 +47,7 @@ Sayaçlar panelini aşağıdaki özellikleri sağlar:
 
 ### <a name="scenario-name-node-in-counters-panel"></a>Sayaç panelinde Senaryo adı düğümü
 
-|||
+|Sayaç paneli|Açıklama|
 |-|-|
 |![Bölmenin Senaryo adı düğümü sayacı](../test/media/ltest__namenode.png)|1. Yük testi Scenario1 ile ilişkili tüm performans sayaçları, bu düğüm altında görünür.<br />2. Bir senaryoya ait tüm testler senaryo düğümünün altında bulunur. Etiket test adını gösterir.<br />3. Bir test düğümü altındaki yaprak düğümler yük testi test çalışması sayaçları, sayaç için örnek adı test adı olduğu ' dir.<br />4. Tüm Web performans testi dalında ile ilişkili test sayfası örnekleri yükleyin. Bu düğümde yük testi Senaryo1 IBuyBrowse Web performans testinde Login GET (Raporlama adı) sayfayla ilişkili örnekleri ayak tüm yük testi burada bulunur.<br />5. Bir sayfa düğümü altındaki yaprak düğümler yük test sayfası sayaçları.<br />6. Tüm örnekleri bir Web performans testi ile ilişkili bir Web performans testi dalında bulunan testi istekleri sayacı yük. Bu düğümde tüm örnekleri oturum açma (Raporlama adı) yük testi burada yer alan Scenario1 o IBuyBrowse Web performans testinde GET isteği ile ilişkili istek.<br />7. Bir istek düğümü altındaki yaprak düğümler yük testi isteği sayaçları.<br />8. Web performans testi ile ilişkili tüm yük testi işlem sayacı örnekleri, bir Web performans testi dalında yer alır. Bu düğümde tüm işlem sayacı örnekleri yük testi Scenraio1 IBuyBrowse Web performans testinde, adlandırılmış Transaction1 burada bulunur işlem ile ilişkilendirin.<br />9. Bir işlem düğümünde yaprak düğümlerin yük testi işlem sayaçları.<br />10. Birim testi düğümü.|
 
@@ -54,9 +55,9 @@ Sayaçlar panelini aşağıdaki özellikleri sağlar:
 
 |Görevler|İlgili Konular|
 |-----------|-----------------------|
-|**Daha fazla performans sayacı grafik görünümünde bir grafik ekleyin:** içinde Sayaçlar panelini ekleyebileceğiniz farklı veri türleri bir yük testi grafiğine grafik üzerinde daha fazla performans sayaçlarını ekleyerek.|-   [Nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**İhlal edildiğini yük testinde belirtilen eşikleri çözümleyin:** Sayaçlar panelini sonra tablolar ve grafikler daha fazla çözümleme için ekleyebileceğiniz Eşik ihlallerini temsil eden simgeleri görüntüler.|-   [Nasıl yapılır: Sayaçlar panelini kullanarak Eşik ihlallerini çözümleme](../test/analyze-threshold-rule-violations-in-load-tests.md)|
-|**Yük testi sırasında algılanan hataları çözümleyin:** Sayaçlar panelini hata kategorileri ve alt kategorileri grafikleri daha fazla çözümleme için hataları eklemek için kullanabileceğiniz HTTP hataları gibi içeren bir hata düğümü içerir.|-   [Nasıl yapılır: Sayaçlar panelini kullanarak hataları çözümleme](../test/how-to-analyze-errors-using-the-counters-panel.md)|
+|**Daha fazla performans sayacı grafik görünümünde bir grafik ekleyin:** içinde **sayaçları** Masası ekleyebileceğiniz farklı veri türleri bir yük testi grafiğine grafik üzerinde daha fazla performans sayaçlarını ekleyerek.|-   [Nasıl yapılır: ekleme ve grafiklerde sayaç silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**İhlal edildiğini yük testinde belirtilen eşikleri çözümleyin:** **sayaçları** paneli sonra tablolar ve grafikler daha fazla çözümleme için ekleyebileceğiniz Eşik ihlallerini temsil eden simgeleri görüntüler.|-   [Nasıl yapılır: Sayaçlar panelini kullanarak Eşik ihlallerini çözümleme](../test/analyze-threshold-rule-violations-in-load-tests.md)|
+|**Yük testi sırasında algılanan hataları çözümleyin:** **sayaçları** paneli hata kategorileri ve alt kategorileri için grafikleri hataları eklemek için kullanabileceğiniz HTTP hataları gibi içeren bir hata düğümü içerir Daha fazla çözümleme.|-   [Nasıl yapılır: Sayaçlar panelini kullanarak hataları çözümleme](../test/how-to-analyze-errors-using-the-counters-panel.md)|
 
 ## <a name="performance-counter-sampling-interval-considerations"></a>Performans sayacı örnekleme aralığı hakkında önemli noktalar
 
@@ -71,11 +72,11 @@ Sayaçlar panelini aşağıdaki özellikleri sağlar:
 |8 - 24 saat|30 saniye|
 |> 24 saat|60 saniye|
 
-## <a name="considerations-for-including-timing-details-to-collect-percentile-data"></a>Yüzdelik veri toplamak için zamanlama ayrıntılarını dahil olmak üzere dikkat edilmesi gereken noktalar
+## <a name="considerations-for-including-timing-details-to-collect-percentile-data"></a>Yüzdelik veri toplamak için zamanlama ayrıntılarını dahil dikkat edilmesi gereken noktalar
 
 Yük testi adlı Düzenleyicisi'nde çalışma ayarlarında bir özellik yok **zamanlama ayrıntıları depolama**. Varsa **zamanlama ayrıntıları depolama** özelliğinin etkin olduğundan ve her bir bireysel test, işlem ve sayfa yük testi sırasında yürütme süresi yük testi sonuçları deposunda saklanır. Bu testler, işlemleri ve sayfalar tablolarda Yük Testi Çözümleyicisi gösterilecek 90 ve 95 yüzdelik veri sağlar.
 
-Etkinleştirme için iki seçenek vardır **zamanlama ayrıntıları depolama** çalışma ayarları özelliklerini özelliğinde:**StatisticsOnly** ve **AllIndividualDetails**. Her iki seçenek için tüm tek tek sınamalar, sayfalar ve işlemleri zaman aşımına ve bireysel zamanlama verisinden yüzdelik veri hesaplanır. İle farktır **StatisticsOnly** seçeneğini yüzdelik veri hesaplanır hemen veri deposundan silinen bireysel zamanlama. Bu zamanlama ayrıntıları kullandığınızda, deposunda gereken alan miktarını azaltır. Ancak, İleri düzey kullanıcılar SQL araçlarını kullanarak zamanlama ayrıntı verilerini diğer yollarla işlemek isteyebilirsiniz. Bu durumda, ise **AllIndividualDetails** zamanlama ayrıntı verileri bu işlem için kullanılabilir olmasını sağlamak seçeneği kullanılmalıdır. Ayrıca, özellik kümesine varsa **AllIndividualDetails**, yük testi tamamlandıktan sonra Yük Testi Çözümleyicisi sanal kullanıcı etkinlik grafiğini kullanarak sanal kullanıcı etkinliğini çözümleyebilirsiniz sonra çalışan. Daha fazla bilgi için bkz: [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Etkinleştirme için iki seçenek vardır **zamanlama ayrıntıları depolama** çalışma ayarları özelliklerini özelliğinde: **StatisticsOnly** ve **AllIndividualDetails**. Her iki seçenek için tüm tek tek sınamalar, sayfalar ve işlemleri zaman aşımına ve bireysel zamanlama verisinden yüzdelik veri hesaplanır. İle farktır **StatisticsOnly** seçeneğini yüzdelik veri hesaplanır hemen veri deposundan silinen bireysel zamanlama. Bu zamanlama ayrıntıları kullandığınızda, deposunda gereken alan miktarını azaltır. Ancak, İleri düzey kullanıcılar SQL araçlarını kullanarak zamanlama ayrıntı verilerini diğer yollarla işlemek isteyebilirsiniz. Bu durumda, ise **AllIndividualDetails** zamanlama ayrıntı verileri bu işlem için kullanılabilir olmasını sağlamak seçeneği kullanılmalıdır. Ayrıca, özelliği ayarlamak, **AllIndividualDetails**, kullanarak sanal kullanıcı etkinliğini çözümleme sonra **sanal kullanıcı etkinlik** grafik yük testi sonra Yük Testi Çözümleyicisi çalıştırma tamamlandı. Daha fazla bilgi için bkz: [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 Yük testi sonuçları havuzu zamanlama ayrıntıları verileri depolamak için gereken alanı özellikle daha uzun yük testleri için büyük olabilir. Yük testi çalıştırma tamamlanana kadar bu veri yükleme testi aracısında depolandığı için aynı zamanda, yük testi sonuçları havuzu yük testi sonunda bu verileri depolamak için daha uzun zamandır. Yük testi sona erdiğinde, veri depoya depolanır. Varsayılan olarak, **zamanlama ayrıntıları depolama** özelliği etkin hale getirilir. Sınama ortamınız için bir sorun varsa ayarlamak isteyebilirsiniz **zamanlama ayrıntıları depolama** için **hiçbiri**.
 

@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968774"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280617"
 ---
-# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Bir Test denetleyicisi ve Test aracısı Rolleri Ata
+# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Bir test denetleyicisi ve test aracısına roller atama
 
 Bu kılavuz, oluşturmak ve Visual Studio kullanarak birden fazla makine arasında sınamayı dağıtmak için bir test denetleyicisi ve test aracısı kullanan bir test ayarı yapılandırmak gösterilmiştir. Ayrıca, bu kılavuzda tanılama ve veri bağdaştırıcıları için test ayarı eklemek gösterilmiştir.
 
@@ -41,7 +41,7 @@ Bu kılavuzda, aşağıdaki görevleri tamamlar:
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Oluşturma ve test ayarı yapılandırmak için
 
-1.  Çözüm Gezgini'nde sağ **çözüm öğeleri** işaret **Ekle**ve ardından **yeni öğe**.
+1.  İçinde **Çözüm Gezgini**, sağ **çözüm öğeleri** işaret **Ekle**ve ardından **yeni öğe**.
 
      **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
 
@@ -51,7 +51,7 @@ Bu kılavuzda, aşağıdaki görevleri tamamlar:
 
 4.  Seçin **eklemek**.
 
-     Yeni test TestSettingDistributedTestWalkthrough.testsettings dosyası Çözüm Gezgini'nde altında görünür **çözüm öğeleri** klasör.
+     Yeni test *TestSettingDistributedTestWalkthrough.testsettings* dosya görünür **Çözüm Gezgini**altında **çözüm öğeleri** klasör.
 
      **Test ayarlarını** iletişim kutusu görüntülenir. **Genel** sayfa seçilidir.
 

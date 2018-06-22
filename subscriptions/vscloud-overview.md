@@ -9,23 +9,22 @@ description: Visual Studio Professional ya da Visual Studio Enterprise ay aylık
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73e8b5927d9d02fb8ebb1414a735c67604f750d9
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196433"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302837"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri
 
-Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise abonelikleri](https://www.visualstudio.com/subscriptions/) gelen [Visual Studio Market'te](https://marketplace.visualstudio.com). Bulut abonelikleri veririz bunlar.
+Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise abonelikleri](https://visualstudio.microsoft.com/subscriptions/) gelen [Visual Studio Market'te](https://marketplace.visualstudio.com). Bunlar abonelikler adlandırılır.
 
-[Bulut abonelik avantajları ve fiyatlandırma Karşılaştır](https://www.visualstudio.com/vs/pricing/)
+[Bulut abonelik avantajları ve fiyatlandırma Karşılaştır](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
-*   Fatura, satın alma işlemleri için sahip olmanız gerekir bir [Azure aboneliği](https://azure.microsoft.com/pricing/purchase-options/).
-Yapabilecekleriniz [kaydolun](https://portal.azure.com) ilk alımdan önce ya da Visual Studio Market'te ilk satın alma işleminiz sırasında.
+*   Satın alma işlemleri faturalandırmak üzere ihtiyacınız bir [Azure aboneliği](https://azure.microsoft.com/pricing/purchase-options/). Yapabilecekleriniz [kaydolun](https://portal.azure.com) ilk alımdan önce ya da Visual Studio Market'te ilk satın alma işleminiz sırasında.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Bulut abonelik satın alma
 
@@ -57,16 +56,13 @@ Yapabilecekleriniz [kaydolun](https://portal.azure.com) ilk alımdan önce ya da
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>Bulut abonelik satın aldığınız yenilemeleri iptal et
-
+## <a name="manage-subscriptions"></a>Bulut abonelik satın aldığınız yenilemeleri iptal et
 
 *   Satın alınan abonelik sayısını değiştirmek için:
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   Bu Abonelikleri iptal etmek için sıfır (0) abonelik sayısını azaltın.
-Bunlar, sonraki fatura döneminde (aylık abonelikler için sonraki ayın ilk günü; yıllık abonelikler için sonraki 12 ay) başlangıcında yenileme olmaz.
+*   Bu Abonelikleri iptal etmek için sıfır (0) abonelik sayısını azaltın. Bunlar, sonraki fatura döneminde (aylık abonelikler için sonraki ayın ilk günü; yıllık abonelikler için sonraki 12 ay) başlangıcında yenileme olmaz.
 
 ## <a name="buy-cloud-subscriptions-now"></a>Bulut abonelikleri hemen satın alın
 
@@ -78,6 +74,6 @@ Bunlar, sonraki fatura döneminde (aylık abonelikler için sonraki ayın ilk g�
 ## <a name="related-resources"></a>İlgili kaynaklar
 
 * [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com/)
-* [Visual Studio abonelik desteği](https://www.visualstudio.com/vs/support/)
+* [Visual Studio abonelik desteği](https://visualstudio.microsoft.com/vs/support/)
 * [Visual Studio bulut abonelik faturalama hakkında SSS](vscloud-billing-faq.md)
 * [Visual Studio bulut aboneliği CSP'ler için satın alma](vscloud-csp.md)

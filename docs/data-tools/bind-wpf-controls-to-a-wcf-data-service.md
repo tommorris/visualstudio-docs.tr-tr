@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5f45d8649667b6baaf13e9556bc8ef4abff7581
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a7095b1cd8e386ec93d95f2a7cd13ed753b13a95
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234507"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282914"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 
@@ -47,7 +47,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 -   Visual Studio
 
--   SQL Server ya da ekli AdventureWorksLT örnek veritabanı olan SQL Server Express'in çalışan örneğine erişim. AdventureWorksLT veritabanından indirebilirsiniz [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?linkid=87843).
+-   SQL Server ya da ekli AdventureWorksLT örnek veritabanı olan SQL Server Express'in çalışan örneğine erişim. AdventureWorksLT veritabanından indirebilirsiniz [CodePlex web sitesi](http://go.microsoft.com/fwlink/?linkid=87843).
 
 Aşağıdaki kavramlar önceki bilgi de yararlı, ancak izlenecek yolu tamamlamak için gerekli değildir:
 
@@ -112,7 +112,7 @@ Oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service
 
 1.  Üzerinde **proje** menüsünde, select **Yeni Öğe Ekle**.
 
-2.  Yüklü Şablonlar listesinde tıklayın **Web**ve ardından **WCF veri hizmeti** proje öğesi.
+2.  İçinde **yüklü şablonlar** tıklatın **Web**ve ardından **WCF veri hizmeti** proje öğesi.
 
 3.  İçinde **adı** kutusuna `AdventureWorksService.svc`, tıklatıp **Ekle**.
 
@@ -289,7 +289,7 @@ Oluşturup görüntüleyebilir ve Müşteri kayıtlarını güncelleştirmek do�
 
 1.  Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**. Çözümünüzün hatasız oluşturulduğunu doğrulayın.
 
-2.  Tuşuna **Ctrl + F5**.
+2.  Tuşuna **Ctrl**+**F5**.
 
      Visual Studio başlatır **AdventureWorksService** , hata ayıklama olmadan projesi.
 
@@ -311,7 +311,7 @@ Oluşturup görüntüleyebilir ve Müşteri kayıtlarını güncelleştirmek do�
 
 8.  Uygulamayı kapatın.
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 Bu kılavuzu tamamladıktan sonra aşağıdaki görevleri gerçekleştirebilirsiniz:
 

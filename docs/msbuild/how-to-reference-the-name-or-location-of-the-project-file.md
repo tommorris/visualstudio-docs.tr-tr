@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1406e687a4d84fd2d6ebe0ac7b327afa2c9fffd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 21077b9533a0f7e4490c5b12a3571b3f2d001219
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477515"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302824"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Nasıl Yapılır: Proje Dosyasının Adına veya Konumuna Başvurma
 Proje konumunu veya adını kendi özellik oluşturmak zorunda kalmadan proje dosyasının kendisini kullanabilirsiniz. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosyası adı başvuru ayrılmış özellikleri ve proje ile ilgili diğer özellikleri sağlar. Ayrılmış özellikler hakkında daha fazla bilgi için bkz: [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
-## <a name="using-the-msbuildprojectname-property"></a>MSBuildProjectName özelliği kullanma  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosyalarınıza her zaman tanımlamadan kullanabileceğiniz bazı ayrılmış özellikleri sağlar. Örneğin, ayrılmış bir özellik `MSBuildProjectName` proje dosyası adı için bir başvuru sağlar.  
+## <a name="using-the-project-properties"></a>Proje özelliklerini kullanma
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosyalarınıza her zaman tanımlamadan kullanabileceğiniz bazı ayrılmış özellikleri sağlar. Örneğin, ayrılmış bir özellik `MSBuildProjectName` proje dosyası adı için bir başvuru sağlar. Ayrılmış bir özellik `MSBuildProjectDirectory` proje dosyası konumu için bir başvuru sağlar.
   
-#### <a name="to-use-the-msbuildprojectname-property"></a>MSBuildProjectName özelliği kullanmak için  
+#### <a name="to-use-the-project-properties"></a>Proje özellikleri kullanmak için
   
 -   Herhangi bir özellikte gibi $ () gösterimi ile proje dosyasında özellik başvuru. Örneğin:  
   
@@ -39,7 +39,7 @@ Proje konumunu veya adını kendi özellik oluşturmak zorunda kalmadan proje do
     <CSC Sources = "@(CSFile)"   
         OutputAssembly = "$(MSBuildProjectName).exe"/>  
     </CSC>  
-    ```  
+    ```          
   
  Ayrılmış bir özellik kullanmanın avantajı, proje dosyası adı yapılan değişikliklerin otomatik olarak eklenen olmasıdır. Proje derleme bir sonraki başlatılışında çıktı dosyası, yapmanız gereken başka bir eylem ile yeni ada sahip olacaktır.  
   
@@ -56,7 +56,7 @@ Proje konumunu veya adını kendi özellik oluşturmak zorunda kalmadan proje do
     <!-- Specify the inputs -->  
     <ItemGroup>  
         <CSFile Include = "consolehwcs1.cs"/>  
-    </ItemGroup>  
+     </ItemGroup>  
     <Target Name = "Compile">  
         <!-- Run the Visual C# compilation using  
         input files of type CSFile -->  
@@ -71,6 +71,19 @@ Proje konumunu veya adını kendi özellik oluşturmak zorunda kalmadan proje do
         <!-- Log the file name of the output file -->  
         <Message Text="The output file is @(EXEFile)"/>  
     </Target>  
+</Project>  
+```  
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek proje dosyası kullanan `MSBuildProjectDirectory` ayrılmış bir dosyasının tam yolunu proje dosyası konumunda oluşturmak için özellik.  
+  
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">     
+    
+    <!-- Build the path to a file in the root of the project -->  
+    <PropertyGroup>  
+        <NewFilePath>$([System.IO.Path]::Combine($(MSBuildProjectDirectory), `BuildInfo.txt`))</NewFilePath>
+    </PropertyGroup>  
 </Project>  
 ```  
   

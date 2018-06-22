@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4a2a3b35f8757e0554a062a43954a776025f4ec7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7384bbdb136038cf73914e9743f56790c2150ca6
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234718"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281215"
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
 
@@ -169,7 +169,7 @@ BİR. Python ile kod Visual Studio ile web sunucuları gibi uygun bir Python öz
 
 Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümlerinde yüklenebilir [Yükleme Kılavuzu](installing-python-support-in-visual-studio.md):
 
-- [Visual Studio 2017 (tüm sürümler)](https://www.visualstudio.com/vs/)
+- [Visual Studio 2017 (tüm sürümler)](https://visualstudio.microsoft.com/vs/)
 - Visual Studio 2015 (tüm sürümler)
 - Visual Studio 2013 Community Edition
 - Web, güncelleştirme 2 veya üzeri için Visual Studio 2013 Express
@@ -178,7 +178,7 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 - Visual Studio 2012 (Pro sürümü veya üzeri)
 - Visual Studio 2010 SP1 (Pro sürümü veya üzeri; .NET 4.5 gerekiyor)
 
-Visual Studio 2015 ve önceki kullanılabilir [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
+Visual Studio 2015 ve önceki kullanılabilir [visualstudio.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 > [!Important]
 > Özelliklerin tam olarak desteklenir ve yalnızca en son sürümü Visual Studio için sağlanmıştır. Özellikleri, eski sürümlerinde kullanılabilir, ancak etkin bir şekilde korunmuyor.

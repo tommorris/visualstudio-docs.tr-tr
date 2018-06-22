@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6aaba3be74e38e27f04db59cbb26b455245251be
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971403"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282284"
 ---
-# <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Web performans testi için özel bir doğrulama kuralı kodlama
+# <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Web performans testi için özel doğrulama kuralı kod
 
 Kendi doğrulama kuralları oluşturabilirsiniz. Bunu yapmak için bir doğrulama kuralı sınıfından kendi kural sınıf türetin. Doğrulama kuralları türetilen <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> temel sınıfı.
 

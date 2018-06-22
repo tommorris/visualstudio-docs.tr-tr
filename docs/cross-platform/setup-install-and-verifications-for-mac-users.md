@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 90b9cfa94189e52a49e6ba22cc700568a21f9c91
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a06a0212b6464d404e3ec94b32ad7ffc05df0542
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255242"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282154"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac kullanıcıları için kurulum, yükleme ve doğrulamalar
 Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir Windows sanal makine içinde isteğe bağlı olarak kullanacak geliştiriciler için tasarlanmıştır Öncelikle bir Windows bilgisayarda çalışan bir geliştirici olan ve ikincil Mac iOS hedeflemek için ayarlamanız gerekir, ana bkz [Kurulum ve yükleme](../cross-platform/setup-and-install.md) konu.
@@ -44,19 +44,19 @@ Bu konu öncelikle Mac üzerinde çalışan ve Visual Studio Mac üzerinde bir W
 
 ##  <a name="windows"></a> Parallels (Visual Studio ve Xamarin) içinde Windows Kurulumu
 
-1.  Parallels/VMWare içinde yapılandırdığınız Windows Masaüstü'nü kullanarak [indirin ve herhangi bir sürümünü Visual Studio 2017 için yükleyiciyi başlatma](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional veya Enterprise). Visual Studio 2017 ücretsiz sürüm topluluktur; Professional ve Enterprise sürümleri deneme esaslı 30 gün boyunca kullanılabilir.
+1.  Parallels/VMWare içinde yapılandırdığınız Windows Masaüstü'nü kullanarak [indirin ve herhangi bir sürümünü Visual Studio 2017 için yükleyiciyi başlatma](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional veya Enterprise). Visual Studio 2017 ücretsiz sürüm topluluktur; Professional ve Enterprise sürümleri deneme esaslı 30 gün boyunca kullanılabilir.
 
-2.  Yükleyici içinde tıklatın **ek seçenekler** (üç çubukları simgesi) düğmesini _yanına_ **başlatma** seçin **Değiştir**.:  
-  
-     ![Visual Studio yüklemesinde Değiştir seçeneğini belirleyerek](../cross-platform/media/cross-plat-xamarin-setup-1a.png "arası Plat Xamarin Kurulum 1")  
-  
+2.  Yükleyici içinde tıklatın **ek seçenekler** (üç çubukları simgesi) düğmesini _yanına_ **başlatma** seçin **Değiştir**.:
+
+     ![Visual Studio yüklemesinde Değiştir seçeneğini belirleyerek](../cross-platform/media/cross-plat-xamarin-setup-1a.png "arası Plat Xamarin Kurulum 1")
+
 3.  Aşağıdaki onay kutularını işaretleyin:
 
-    1.  **Mobil ve oyun > .NET ile Mobil Geliştirme**. Bu genel araçlarını ve yazılım geliştirme setleri altında çeşitli Android araçları da otomatik olarak seçer. Bu seçenek ayrıca herhangi bir varolan Xamarin yüklemesi güncelleştirmeniz gerekir.  
-  
-         ![Oyun ve mobil geliştirme altında mobil geliştirme seçeneğini](../cross-platform/media/cross-plat-xamarin-setup-2a.png "arası Plat Xamarin Kurulum 2")  
-  
-    2. (İsteğe bağlı) **Windows > Evrensel Windows platformu geliştirme**. Bu yüklemeye daha uzun sürer Öykünücüler görüntülerinin yüklenmesi için seçenekleri içerir; her zaman daha sonra eklemek için Visual Studio yükleyicisi geri dönebilirsiniz.  
+    1.  **Mobil ve oyun > .NET ile Mobil Geliştirme**. Bu genel araçlarını ve yazılım geliştirme setleri altında çeşitli Android araçları da otomatik olarak seçer. Bu seçenek ayrıca herhangi bir varolan Xamarin yüklemesi güncelleştirmeniz gerekir.
+
+         ![Oyun ve mobil geliştirme altında mobil geliştirme seçeneğini](../cross-platform/media/cross-plat-xamarin-setup-2a.png "arası Plat Xamarin Kurulum 2")
+
+    2. (İsteğe bağlı) **Windows > Evrensel Windows platformu geliştirme**. Bu yüklemeye daha uzun sürer Öykünücüler görüntülerinin yüklenmesi için seçenekleri içerir; her zaman daha sonra eklemek için Visual Studio yükleyicisi geri dönebilirsiniz.
 
 4.  Tıklatın **Değiştir** düğmesine tıklayın ve çalıştırma işlemi sağlar. Yeniden, bu süre içerisinde Mac Kurulum yönergeleriyle devam etmek ve Git tamamlanması biraz zaman alır [mobil geliştirme hakkında bilgi edinin Xamarin ile](../cross-platform/learn-about-mobile-development-with-xamarin.md).
 

@@ -13,15 +13,15 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c364c977ebd7f1160bd9265f2a0228bd2e514442
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f3d8bb6eb64433ef8e2cd369ed0c1e0ba59a03dd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765836"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282515"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve hızlı uygulama oluşturma
-Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://www.visualstudio.com).
+Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://visualstudio.microsoft.com).
 
 Bu öğreticide, bilgi nasıl yapılır:
 > [!div class="checklist"]
@@ -51,7 +51,7 @@ Express web uygulamaları oluşturmak için Node.js için sunucu çerçevesi ola
 
 * Visual Studio yüklü 2017 ve Node.js geliştirme iş yükü olması gerekir.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
     İş yükü yüklenir ancak tıklatın Visual Studio zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio yükleyicisi başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
 
@@ -147,7 +147,7 @@ Uygulama için ön uç JavaScript çerçevesini Pug kullanır. Pug HTML olarak d
         res.render('index', { title: 'Express', "data" });
     });
     ```
-    
+
     Önceki kod Express yönlendirici nesnesini kullanarak geçerli sayfa ayarlar ve sayfaya başlık ve veri nesnesi geçirme sayfasını işler. *İndex.pug* dosyasında belirtilir ne zaman yükleme sayfası olarak burada *index.js* çalıştırır. *index.js* varsayılan rotada olarak yapılandırılan *app.js* kod (gösterilmez).
 
     Visual Studio birkaç özelliklerini göstermek için size bir hata kodu içeren satırında yer `res.render`. Uygulamayı çalıştırmadan önce hatayı düzeltmek gerekir. Biz, sonraki bölümde hatayı düzeltin.

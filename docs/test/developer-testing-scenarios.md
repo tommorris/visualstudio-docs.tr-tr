@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691865"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302943"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Geliştirici Araçları, senaryolarını ve özelliklerini test etme
 
@@ -42,15 +42,15 @@ Kullanıcı Arabirimi (UI) türünün en iyi ile test veya topluluk UI testi ona
 Kodlanmış UI testleri işlevsellik ve uygulamanızın kullanıcı arabirimi davranışını doğrulamak için tam olarak otomatikleştirilmiş test oluşturmak için bir yol sağlar.
 Bunlar, çeşitli teknolojiler XAML tabanlı UWP uygulamaları, tarayıcı uygulamalar ve SharePoint uygulamalar dahil olmak üzere, arasında UI testi otomatik hale getirebilirsiniz.
 
-Kodlanmış UI testleri türünün en iyi seçin veya Selenium ile UI testi genel tarayıcı tabanlı olup, Visual Studio ihtiyacınız olan araçları sağlar.
+Seçtiğiniz kodlanmış UI testleri en iyi breed veya Selenium, Visual Studio test genel tarayıcı tabanlı kullanıcı Arabirimi ihtiyacınız olan araçları sağlar.
 
 ![Kullanıcı Arabirimi ile kodlanmış UI testi](media/devtest-codeduitest.png)
 
-* [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](use-ui-automation-to-test-your-code.md)
+* [UI otomasyonunu kullanarak kodunuzu test etme](use-ui-automation-to-test-your-code.md)
 * [Oluşturma, düzenleme ve kodlanmış UI testini sürdürme kullanmaya başlama](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Kodlanmış UI testleriyle UWP uygulamaları sınama](test-uwp-app-with-coded-ui-test.md)
+* [Kodlanmış UI testleri ile test UWP uygulamaları](test-uwp-app-with-coded-ui-test.md)
 * [Kodlanmış UI testleriyle SharePoint uygulamaları sınama](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
-* [Visual Studio Enterprise (Lab) kodlanmış UI testleriyle giriş](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
+* [Giriş kodlanmış UI testleri ile Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Etkin birim testi ile Visual Studio kod kapsamı
 
@@ -62,9 +62,9 @@ Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kaps
 
 ![Team Foundation Server ve Visual Studio Team Services ile test](media/devtest-codecoverage.png)
 
-* [Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Birim testi, kod kapsamı ve Visual Studio (Lab) ile kod kopya çözümleme](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
-* [Kod Kapsamı Çözümlemeyi Özelleştirme](customizing-code-coverage-analysis.md)
+* [Ne kadar kodun test edildiğini belirlemek için kod kapsamını kullanma](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Birim testi, kod kapsamı ve Visual Studio (Lab) ile kopya çözümleme kod](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Kod kapsamı çözümlemeyi özelleştirme](customizing-code-coverage-analysis.md)
 
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Birim testi herhangi framework yüksek performansı Test Gezgini kullanma
 
@@ -84,6 +84,6 @@ Visual Studio ayrıca genişletilebilirdir ve üçüncü taraf birim testi NUnit
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Birim testi ile çalışmaya başlama](getting-started-with-unit-testing.md)
-* [Team Foundation Server'da Birim Test yürütmesi hızlandırma](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
-* [Paralel ve bağlama duyarlı Birim Test yürütmesi](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
-* [Birim testi, kod kapsamı ve Visual Studio (Lab) ile kod kopya çözümleme](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Team Foundation Server'da birim test yürütmesi hızlandırma](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
+* [Paralel ve içerik hassas birim test yürütmesi](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Birim testi, kod kapsamı ve Visual Studio (Lab) ile kopya çözümleme kod](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da oturum açın
+title: Visual Studio’da oturum açma
 ms.custom: ''
 ms.date: 11/16/2017
 ms.prod: visual-studio-dev15
@@ -11,14 +11,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948346"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282241"
 ---
-# <a name="sign-in-to-visual-studio"></a>Visual Studio'da oturum açın
+# <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma
 
 Kişiselleştirme ve oturum açarak IDE kişiselleştirme hesabınızı ayarlarsanız, Visual Studio geliştirme deneyiminizi en iyi duruma getirme.
 
@@ -26,7 +26,7 @@ Kişiselleştirme ve oturum açarak IDE kişiselleştirme hesabınızı ayarlars
 
 Oturum açtığınızda Visual Studio deneyimini zenginleştirmek. Örneğin, oturum açtıktan sonra ayarlarınızı cihazlar arasında eşitleme, bir deneme genişletmek ve otomatik olarak birkaçıdır bir Azure hizmetine bağlanmak.
 
-Beklentilerinizin ne ve sonra oturum açma yapabilirsiniz tam bir listesi aşağıda verilmiştir:  
+Beklentilerinizin ne ve sonra oturum açma yapabilirsiniz tam bir listesi aşağıda verilmiştir:
 
 - **Visual Studio geliştirme Essentials programa erişimi** -Bu program ücretsiz yazılımlar teklifleri, eğitim, destek ve daha fazlasını içerir. Bkz: [Visual Studio geliştirme Essentials](http://aka.ms/vsdevhelp) daha fazla bilgi için.
 
@@ -62,9 +62,9 @@ Oturumu sürece, otomatik olarak Visual Studio'ya başlatmanız ve değişiklikl
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
-Oturum açma sırasında herhangi bir sorunla karşılaşırsanız, lütfen bakın [hesapları Destek](https://www.visualstudio.com/subscriptions/support/) Yardım almak için sayfa.
+Oturum açma sırasında herhangi bir sorunla karşılaşırsanız, lütfen bakın [hesapları Destek](https://visualstudio.microsoft.com/subscriptions/support/) Yardım almak için sayfa.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)  
+* [Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)

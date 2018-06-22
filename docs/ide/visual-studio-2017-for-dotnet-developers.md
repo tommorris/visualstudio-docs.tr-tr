@@ -1,36 +1,34 @@
 ---
-title: .NET geliştiricileri için Visual Studio 2017
-description: Daha iyi .NET kodu daha hızlı yazmanıza yardım etmek için Visual Studio 2017 özelliklerine genel bakış.
+title: Üretkenliğinizi .NET geliştirme
+description: Gezinti, Kod Analizine genel bakış, daha hızlı .NET kod yazmanıza yardımcı olmak için birim sınama ve diğer özellikleri daha iyi.
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.date: 01/16/2018
+ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d353e6a9f52a11821799e6d20ec26bcb0045a71
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 3f6640d8e4c3adbd92dc6fd41469712988b9112d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257479"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281228"
 ---
-# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>.NET geliştiricileri için Visual Studio 2017 üretkenlik Kılavuzu
+# <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# üretkenlik Kılavuzu
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) geliştiriciler her zamankinden daha verimli hale getirir! Biz, performans ve güvenilirlik çözüm başlangıç ve yük, test bulma ve gecikme yazmak için geliştirilmiş. Ayrıca eklenen artık ve Gelişmiş özellikleri daha iyi bir kod daha hızlı yazmanıza yardımcı olacak. Bu özelliklerden bazıları şunlardır: Gezinti decompiled derlemelerine, değişken adı önerileri siz yazarken, hiyerarşi görünümünde **Test Gezgini**, tüm gidin (**Ctrl** +  **T**) dosyası/tür/üye/simgesi bildirimi, bir akıllı gitmek için **özel durum Yardımcısı**, kod stili yapılandırma ve zorlama ve birçok yapan yeniden düzenlemeler ve kod düzeltmeler.
-
-Üretkenliğinizi en iyi duruma getirmek için bu kılavuzu uygulayın.
+Bilgi nasıl [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) geliştiriciler her zamankinden daha verimli hale getirir. Siz yazarken, hiyerarşi görünümünde bizim performans ve üretkenlik iyileştirmeleri Gezinti gibi decompiled derlemeler, değişken adı önerileri yararlanmak **Test Gezgini**, tüm gidin (**Ctrl** + **T**) dosyası/tür/üye/simgesi bildirimi, bir akıllı gitmek için **özel durum Yardımcısı**, kod stili yapılandırma ve zorlama ve birçok yapan yeniden düzenlemeler ve kod giderir.
 
 ##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Bir farklı uzantısı/Düzenleyicisi/IDE içinden my klavye kısayolları kullanılan istiyorum.
 
 Başka bir IDE içinden gelen veya ortam kodlama bu uzantıları faydalı birini yükleme bulabilirsiniz:
 
-- [Emacs öykünmesi](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [Visual Studio (ReSharper/Intellij) için kısayol tuşları](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [Emacs öykünmesi](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 Popüler Visual Studio kısayolları şunlardır:
@@ -85,6 +83,7 @@ Visual Studio 2017 nesil Eylemler ile çok sayıda yapan yeniden düzenlemeler, 
   - Daha fazla bilgi için bkz: bizim [belgeleri](https://aka.ms/refactorings)
 - Kendi yeniden düzenleme veya kod düzeltme yazma [Roslyn çözümleyiciler](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Birkaç topluluk üyeleri ek kod incelemeleri eklenmesi ücretsiz uzantıları yazmıştır:
+  - [FXCop çözümleyiciler](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [Visual Studio için SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -120,7 +119,7 @@ Visual Studio 2017 bir ton yeni hata ayıklama özelliklerini ekledik.
 - [Adım arka](../debugger/how-to-use-intellitrace-step-back.md) hata ayıklama önceki kesme noktaları veya adımları geri dönün ve geçmişte haliyle uygulama durumunu görüntüleme olanak sağlar.
 - [Anlık görüntü hata ayıklama](/azure/application-insights/app-insights-snapshot-debugger) canlı web uygulamasının bir özel durum oluşturuldu anda durumu araştırmanıza olanak tanır (Azure üzerinde olmalıdır).
 
-![VS2017 içinde yeni özel durum Yardımcısı](../ide/media/VSGuide_Debugging.png)
+![Visual Studio 2017'de yeni özel durum Yardımcısı](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Sürüm denetimi my projeleri ile kullanmak istediğiniz.
 Git veya TFVC'yi depolamak ve Visual Studio kodunuzda güncelleştirmek için kullanabilirsiniz.
@@ -141,8 +140,6 @@ Kod yazma daha verimli hale getirmek için Düzenleyicisi ve üretkenlik özelli
 | Tamamlama/öneri modu | IntelliSense--Intellij arka planlar geliştiricilere tamamlama davranış eğilimindedir ayarını değiştirmek için değişiklikleri varsayılan burada | **Menü** > **Düzenle** > **IntelliSense** > **tamamlanma modu Değiştir** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Başvuru bilgileri kod ve değişiklik geçmişi düzenleyicisinde görüntüler | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >   **CodeLens** |
 | [Kod parçacıkları](../ide/visual-csharp-code-snippets.md) | Genel Demirbaş saplama Yardım |  Bir parçacığını adını yazıp tuşuna basın **sekmesini** iki kez. |
-
-![Visual Studio'da kod parçacıkları](../ide/media/VSGuide_SmartEditor.png)
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Üretken veya yaşayan düşük performans sağlayan bir özellik eksik mi?
 Bize geri bildirim bırakmak için birkaç yolu vardır:

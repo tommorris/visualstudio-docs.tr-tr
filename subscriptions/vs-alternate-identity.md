@@ -9,12 +9,12 @@ description: VSTS ve Azure için kullanmak üzere Visual Studio aboneliğiniz i�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 2899c6ba8c87d6f814dc1f0d59e6bd9defc214a2
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 1b8d260a101840b04bd2c54e64665abbec78dbe7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845606"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283399"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio aboneleri için kimlikleri
 
@@ -50,27 +50,26 @@ Bu hesabı bir oturum açma (VS IDE VSTS ve Azure) gerektiren Avantajlarınızı
 
 2. Git **abonelikleri**.
 
-  ![Alternatif hesap add - VS Aboneliklerde gidin](_img/vs-alternate-identity/my-vs-subscriptions.png)
+   ![Alternatif hesap add - VS Aboneliklerde gidin](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Seçin **alternatif Hesap Ekle**.
 
-  ![Seçin alternatif hesabı Ekle ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![Seçin alternatif hesabı Ekle ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. İş veya Okul hesabı ekleyin.
 
-  ![İş veya Okul hesabı Ekle](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![İş veya Okul hesabı Ekle](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. Visual Studio Team Services (https://{youraccount}.visualstudio.com) oturum açmak için iş veya Okul hesabınızı kullanın.
 
-  ![İş veya Okul hesabınızı kullanın](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![İş veya Okul hesabınızı kullanın](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  Alternatif hesabınız alternatif Hesapla (IDE, VSTS ve Azure) oturum açmak ihtiyaç duyduğunuz abonelik avantajlarından faydalanmak her iki kimlikleri izin vererek Visual Studio abonelik eklenir.
-
-Başka bir hesaba ekleme hakkında daha fazla bilgi için bkz: [My Visual Studio SSS](https://www.visualstudio.com/my/myvsfaq#alternate) sayfası.
+   Alternatif hesabınız alternatif Hesapla (IDE, VSTS ve Azure) oturum açmak ihtiyaç duyduğunuz abonelik avantajlarından faydalanmak her iki kimlikleri izin vererek Visual Studio abonelik eklenir.
 
 ## <a name="faq"></a>SSS
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>S: neden VSTS bana bir Visual Studio abone olarak tanımıyor?
+
 A: birincil veya alternatif kimlik bilgilerinizi kullanarak oturum açtığınızda VSTS aboneliğinizi otomatik olarak tanıması gerekir. Değilse, birkaç deneyebilirsiniz:
 
 * Etkin bir Visual Studio aboneliğiniz olup olmadığını denetleyin, [bir avantajı olarak VSTS içeren](vs-vsts.md).
@@ -79,4 +78,4 @@ A: birincil veya alternatif kimlik bilgilerinizi kullanarak oturum açtığını
 
 * Ziyaret [Visual Studio abone portalı](https://my.visualstudio.com?wt.mc_id=o~msft~docs) en az bir kez oturum açtığınızda VSTS önce.
 
-VSTS aboneliğiniz hala tanımazsa [desteğe başvurun](https://www.visualstudio.com/team-services/support/)
+VSTS aboneliğiniz hala tanımazsa [desteğe başvurun](https://visualstudio.microsoft.com/team-services/support/)

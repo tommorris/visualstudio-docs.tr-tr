@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750486"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282979"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Ne&#39;Visual Studio 2017 yenilikler
 
@@ -50,7 +50,7 @@ Burada'nın bazı en önemli geliştirmeler ve Visual Studio 2017'teki yeni öze
 
 ### <a name="a-new-setup-experience"></a>Yeni bir kurulum deneyimi
 
-[Visual Studio 2017 karşıdan](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya [denetleyin Visual Studio sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Visual Studio 2017 karşıdan](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya [denetleyin Visual Studio sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
 
  Visual Studio ve sadece gereksinim duyduğunuzda, gereken özellikleri yüklemek için daha hızlı kolaylaştırır. Ve düzgün bir şekilde, çok kaldırır.
 
@@ -338,8 +338,8 @@ Daha fazla bilgi için bkz: [AI için Visual Studio Araçları](../ai/about-ai-t
 
 Visual Studio 2017 genellikle bile daha iyi Deneyimi Geliştirme yapabilirsiniz yeni özelliklerle güncelleştiriyoruz. Bazı Deneysel önizlemede bizim en önemli güncelleştirmeleri bir özeti aşağıda verilmiştir:
 
-* **[Paylaşım canlı](https://www.visualstudio.com/services/live-share/)**, bir codebase ve onun bağlamı teammate ile paylaşabilir ve Visual Studio içinde anlık çift yönlü işbirliği doğrudan almak izin veren yeni bir aracı. Canlı Paylaş bir teammate okuyun, gidin, düzenlemek ve onlarla paylaştıktan bir projenin hata ayıklamasını ve sorunsuz ve güvenli bir şekilde bunu.<br><br>Daha fazla bilgi için bkz: [Canlı Paylaşım SSS](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)**, daha iyi bağlam kullanan kodu tamamlamalar sunmak için AI kullanarak yazılım geliştirme geliştiren yeni bir özellik ekibe stillerini ve desenler için kod, yakalama zor kod sorunları bulmak için geliştiricilere Kılavuzu , ve odak kodu gerçekten önemli alanlara gözden geçirir. <br><br>Daha fazla bilgi için bkz: [IntelliCode SSS](../ide/not-in-toc/intellicode-faq.md).
+* **[Paylaşım canlı](https://visualstudio.microsoft.com/services/live-share/)**, bir codebase ve onun bağlamı teammate ile paylaşabilir ve Visual Studio içinde anlık çift yönlü işbirliği doğrudan almak izin veren yeni bir aracı. Canlı Paylaş bir teammate okuyun, gidin, düzenlemek ve onlarla paylaştıktan bir projenin hata ayıklamasını ve sorunsuz ve güvenli bir şekilde bunu.<br><br>Daha fazla bilgi için bkz: [Canlı Paylaşım SSS](/visualstudio/liveshare/faq).<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, daha iyi bağlam kullanan kodu tamamlamalar sunmak için AI kullanarak yazılım geliştirme geliştiren yeni bir özellik ekibe stillerini ve desenler için kod, yakalama zor kod sorunları bulmak için geliştiricilere Kılavuzu , ve odak kodu gerçekten önemli alanlara gözden geçirir. <br><br>Daha fazla bilgi için bkz: [IntelliCode SSS](../ide/not-in-toc/intellicode-faq.md).
 
 Daha fazla hakkında başka Visual Studio 2017 işe nedir öğrenmek ister misiniz? Bkz: [Visual Studio yol haritası](/visualstudio/productinfo/vs2018-roadmap) sayfası.
 
@@ -358,5 +358,5 @@ Biz Visual Studio geliştirmek, veya nasıl ürün destek seçenekleri hakkında
 * [Visual Studio 2017 sürüm notları](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Visual c++'ta yenilikler nelerdir?](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# Yenilikleri](/dotnet/csharp/whats-new)
-* [Team Foundation Server için Yenilikler](https://www.visualstudio.com/docs/whats-new)
-* [Mac için Visual Studio yenilikleri](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Team Foundation Server için Yenilikler](/tfs/server/whats-new?view=vsts)
+* [Mac için Visual Studio yenilikleri](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

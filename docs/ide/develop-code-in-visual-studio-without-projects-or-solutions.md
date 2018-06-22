@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 683d848aaab7b17fbb6756c9a31d10e02aa97985
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746033"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281634"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Visual Studio projeleri veya çözümler olmadan kod geliştirme
 
@@ -89,7 +89,7 @@ Codebase kullanılan özel derleme araçları sonra Visual Studio kullanarak kod
 
 Kod temeliniz Python veya JavaScript kodu içeriyorsa, tüm yapılandırmak zorunda kalmamaları *.json* dosyaları, ancak karşılık gelen iş yükü yüklemek sahip. Başlangıç betiği de yapılandırmanız gerekir:
 
-1. Yükleme [Node.js geliştirme](https://www.visualstudio.com/vs/node-js/) veya [Python geliştirme](https://www.visualstudio.com/vs/python/) seçerek iş yükü **Araçları** > **alma araçları ve özelliklerinin...** , veya Visual Studio kapatma ve Visual Studio yükleyicisi çalışır.
+1. Yükleme [Node.js geliştirme](https://visualstudio.microsoft.com/vs/node-js/) veya [Python geliştirme](https://visualstudio.microsoft.com/vs/python/) seçerek iş yükü **Araçları** > **alma araçları ve özelliklerinin...** , veya Visual Studio kapatma ve Visual Studio yükleyicisi çalışır.
 
    ![Node.js ve Python geliştirme iş yükleri](media/python_nodejs_workloads.png)
 

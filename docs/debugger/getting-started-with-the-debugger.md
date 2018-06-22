@@ -1,8 +1,8 @@
 ---
-title: Hata ayıklayıcısını kullanmaya başlama
+title: Visual Studio hata ayıklayıcısı ile hata ayıklama öğrenin
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: mvc
-ms.date: 03/16/2018
+ms.date: 06/15/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 1144e7e33709510cb03ed02cb62020f81e8e8b62
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766265"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303152"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Öğretici: Visual Studio kullanarak hata ayıklama öğrenin
 
-Bu konu, Visual Studio Hata Ayıklayıcısı'ndaki bir adım adım kılavuz özelliklerini tanıtır. Hata ayıklayıcı özellikleri üst düzey bir görünümünü istiyorsanız, bkz: [hata ayıklayıcı özelliği Turu](../debugger/debugger-feature-tour.md).
+Bu konu, Visual Studio Hata Ayıklayıcısı'ndaki bir adım adım kılavuz özelliklerini tanıtır. Hata ayıklayıcı özellikleri üst düzey bir görünümünü istiyorsanız, bkz: [hata ayıklayıcı özelliği Turu](../debugger/debugger-feature-tour.md). Olduğunda, *uygulamanızın hatalarını ayıklama*, hata ayıklayıcısı ekli uygulamanızı çalıştıran genellikle anlamına gelir. Bunu yaptığınızda, hata ayıklayıcı kodunuzu yaptıklarını görmek için birçok yol sağlar çalışırken. Kodunuz adım ve değişkenleri depolanan değerleri bakmak, Gözcü değerlerini değiştirdiğinizde, bkz: değişkenleri ayarlayabilirsiniz, yürütme yolu, kodunuzu inceleyebilirsiniz et al. Bu kodun hatalarını ayıklamak için çalıştınız ilk kez kullanıyorsanız, okumak isteyebilirsiniz [başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) Bu konuyu geçmeden önce.
 
 Ya da boyunca hata ayıklayıcı özelliklerini görmek için okuyabilirsiniz veya özellik tur kullanılan tam örnek karşıdan yükleyip kendiniz adımları izleyin. Örneği indirmek ve izlemek için Git [Fotoğraf Görüntüleyicisi Demo](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
 
@@ -45,7 +45,7 @@ Bu öğreticide şunları yapacaksınız:
 
 * Visual Studio 2017 yüklü olması gerekir ve. **NET masaüstü geliştirme** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
     İş yükü yüklenir ancak tıklatın Visual Studio zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio yükleyicisi başlatır. ' I seçin. **NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
@@ -62,13 +62,13 @@ Bu öğreticide şunları yapacaksınız:
 
      ![Örnek Proje Aç](../debugger/media/dbg-tour-open-project.png "Proje Aç")
 
-3. WPF Fotoğraf Görüntüleyicisi Demo açmak > C# klasörü, photoapp.sln dosyayı seçin ve Seç **açık**.
+3. WPF Fotoğraf Görüntüleyicisi Demo açmak > C# klasörünü seçin *photoapp.sln* dosyasını bulun ve seçin **açık**.
 
      Visual Studio'da projeyi açar. Çözüm Gezgini sağ bölmedeki tüm proje dosyalarını gösterir.
 
     ![Çözüm Gezgini dosyaları](../debugger/media/dbg-tour-solution-explorer.png "Çözüm Gezgini")
 
-4. F5 tuşuna basın (**hata ayıklama > hata ayıklamayı Başlat** veya **hata ayıklamayı Başlat** düğmesini ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat") hata ayıklama araç çubuğunda).
+4. Tuşuna **F5** (**hata ayıklama > hata ayıklamayı Başlat**) veya **hata ayıklamayı Başlat** düğmesini ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat ") hata ayıklama araç.
 
      ![Fotoğraf Görüntüleyicisi uygulaması](../debugger/media/dbg-tour-wpf-app.png "Fotoğraf Görüntüleyicisi uygulama")
 
@@ -86,7 +86,9 @@ Hata ayıklamak için uygulamanızı hata ayıklayıcısı ekli uygulama işlemi
 
      ![Bir kesme noktası belirleyerek](../debugger/media/dbg-tour-set-a-breakpoint.gif "SetABreakPoint")
 
-6. F5 tuşuna basın veya **hata ayıklamayı Başlat** button, uygulama başlatır ve kesme ayarladığınız kod satırına hata ayıklayıcı çalıştırır.
+    Kesme noktaları güvenilir hata ayıklama en temel ve temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız veya kod dalı çalıştırmak destekleyip desteklemediğini belirtir. 
+
+6. Tuşuna **F5** veya **hata ayıklamayı Başlat** button, uygulama başlatır ve kesme ayarladığınız kod satırına hata ayıklayıcı çalıştırır.
 
     Sarı ok üzerinde hata ayıklayıcı duraklatıldı, deyim Ayrıca uygulama (Bu deyim henüz çalıştırılmadı) noktada durduran temsil eder.
 
@@ -94,9 +96,9 @@ Hata ayıklamak için uygulamanızı hata ayıklayıcısı ekli uygulama işlemi
 
     Kod satırını veya bir bölümünü ayrıntılı olarak incelemek istediğiniz kod bildiğinizde kesme noktaları yararlı bir özelliktir.
 
-## <a name="restart-your-app-quickly"></a>Uygulamanızı hızlı bir şekilde yeniden başlatın
+## <a name="optional-restart-your-app-quickly"></a>(İsteğe bağlı) Uygulamanızı hızlı bir şekilde yeniden başlatın
 
-Tıklatın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama araç çubuğunda düğmesini (Ctrl + Shift + F5).
+Tıklatın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama araç çubuğu düğmesini (**Ctrl** + **kaydırma**   +  **F5**).
 
 Bastığınızda **yeniden**, uygulama durdurup hata ayıklayıcı karşı zamandan tasarruf sağlar. Hata ayıklayıcı kodu yürüterek isabet ilk kesme noktasındaki duraklatır.
 
@@ -106,7 +108,7 @@ Hata ayıklayıcı yeniden de, ayarlayabileceğiniz kesme noktasında durur `Mai
 
 Almak için en iyi yolu olduğundan çoğunlukla, klavye kısayollarını burada kullanıyoruz (komutları parantez içinde gösterilen eşdeğer komutları menüsü gibi) hata ayıklayıcısında uygulamanızı yürütülürken en hızlı.
 
-1. F11 tuşuna basın (**hata ayıklama > Step Into**) iki kez yürütülmesi için uygulama, ilerlemek için `InitializeComponent()` işlevi.
+1. Tuşuna **F11** (**hata ayıklama > Step Into**) iki kez yürütülmesi için uygulama, ilerlemek için `InitializeComponent()` işlevi.
 
      ![Step Into kodu F11 kullanmak](../debugger/media/dbg-tour-f11.png "F11 adımla")
 
@@ -115,7 +117,7 @@ Almak için en iyi yolu olduğundan çoğunlukla, klavye kısayollarını burada
      >[!NOTE]
      > Yönetilen kodda özellikleri ve işleçler (varsayılan davranış) otomatik olarak adım için bildirim isteyip istemediğinizi soran bir iletişim kutusu görürsünüz. Ayarı değiştirmek istiyorsanız, devre dışı daha sonra **özellikleri ve işleçleri Adımlama** ayarı **Araçlar > Seçenekler** menüsünün altında **hata ayıklama**.
 
-2. F10 tuşlarına basın (**hata ayıklama > Step Over**) kod ilk satırdaki hata ayıklayıcı birkaç kez durdurur kadar `OnApplicationStartup` olay işleyicisi.
+2. Tuşuna **F10** (**hata ayıklama > Step Over**) kod ilk satırdaki hata ayıklayıcı birkaç kez durdurur kadar `OnApplicationStartup` olay işleyicisi.
 
      ![Step Over kodu F10 kullanmak](../debugger/media/dbg-tour-f10-step-over.png "F10 Step Over")
 
@@ -125,7 +127,7 @@ Almak için en iyi yolu olduğundan çoğunlukla, klavye kısayollarını burada
 
 1. Hata ayıklayıcısını kullanmaya Bu kod satırı duraklatıldı:
 
-    ````
+    ````c#
     mainWindow.Photos.Path = Environment.CurrentDirectory + "\\images";
     ````
 
@@ -143,7 +145,7 @@ Almak için en iyi yolu olduğundan çoğunlukla, klavye kısayollarını burada
 
      ![Tıklatın Çalıştır kullanma özelliği](../debugger/media/dbg-tour-run-to-click-2.png "çalıştırmak için tıklatın")
 
-    >  [!NOTE] 
+    >  [!NOTE]
     > **Tıklatın çalıştırmak** düğmesi yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Yeşil ok düğmesini görmüyorsanız, F11 Bu örnekte, hata ayıklayıcı ilerletmek için bunun yerine kullanın.
 
 6. Tıklatın **çalıştırmak için tıklatın** düğmesini ![tıklatın çalıştırmak](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
@@ -152,11 +154,11 @@ Almak için en iyi yolu olduğundan çoğunlukla, klavye kısayollarını burada
 
     Hata ayıklayıcı için ilerleyen `Update` yöntem uygulaması.
 
-7. Basın adımla F11 `Update` yöntemi.
+7. Tuşuna **F11** adımla için `Update` yöntemi.
 
      ![Güncelleştirme yöntemi Adımlama sonucunu](../debugger/media/dbg-tour-update-method.png "Step Into güncelleştirme yöntemi")
 
-    Burada, ilginç görünüyor biraz daha fazla kod Bul; uygulamanın belirli bir dizinde bulunan ve her dosya için bir fotoğraf nesnesi oluşturma tüm *.jpg dosyaları alınıyor. Bu kod bize uygulama durumu (değişkenler) hata ayıklayıcısı ile inceleniyor başlatmak için iyi bir fırsat sunar. Bu öğreticinin sonraki bölümlerde bunu.
+    Burada, ilginç görünüyor biraz daha fazla kod Bul; Uygulama tüm almaktır. *jpg* dosyaları belirli bir dizinde bulunan ve her dosya için bir fotoğraf nesnesi oluşturma. Bu kod bize uygulama durumu (değişkenler) hata ayıklayıcısı ile inceleniyor başlatmak için iyi bir fırsat sunar. Bu öğreticinin sonraki bölümlerde bunu.
 
     Değişkenleri incelemek sağlayan özellikler hata ayıklayıcısının en kullanışlı özelliklerinden biridir ve yapmak için farklı yolu vardır. Genellikle, bir sorun hata ayıklamak çalıştığınızda değişkenleri olup onlara belirli bir zamanda beklediğiniz değerlerini depolayan çıkışı bulmak çalışıyorsunuz.
 
@@ -181,25 +183,25 @@ Sağ menülerden de kullanabilirsiniz **çağrı yığını** başka şeyler iç
 
 Yapılır olduğunu düşünelim inceleniyor `Update` yöntemi Data.cs ve istediğiniz dışında işlevi alır ancak hata ayıklayıcısı'ndaki kalır. Kullanarak bunu yapabilirsiniz **Step Out** komutu.
 
-1. Shift + F11 tuşlarına basın (veya **hata ayıklama > dışarı adım**).
+1. Tuşuna **Shift** + **F11** (veya **hata ayıklama > dışarı adım**).
 
      Bu komut, uygulama yürütme sürdürür (ve hata ayıklayıcısı ilerler) kadar geçerli işlevi döndürür.
 
      Geri olmalıdır `Update` Data.cs yöntem çağrısında.
 
-2. Shift + F11 yeniden ve hata ayıklayıcısı basın çağrı yığını yukarı gider başa `OnApplicationStartup` olay işleyicisi.
+2. Tuşuna **Shift** + **F11** yeniden ve hata ayıklayıcısı çağrı yığınına girer geri `OnApplicationStartup` olay işleyicisi.
 
 ## <a name="run-to-cursor"></a>İmleci çalıştırın
 
-1. Seçin **durdurma hata ayıklama** kırmızı düğme ![durdurma hata ayıklama](../debugger/media/dbg-tour-stop-debugging.png "durdurma hata ayıklama") ya da Shift + F5'e.
+1. Seçin **durdurma hata ayıklama** kırmızı düğme ![durdurma hata ayıklama](../debugger/media/dbg-tour-stop-debugging.png "durdurma hata ayıklama") veya **Shift** + **F5** .
 
-2. İçinde `Update` Data.cs, yönteminde sağ `Add` yöntemini çağırın ve seçin **çalıştırmak için imleç**. Bu komut, hata ayıklama başlatır ve geçici bir kesme noktası geçerli kod satırında ayarlar.
+2. İçinde `Update` yönteminde *Data.cs*, sağ `Add` yöntemini çağırın ve seçin **çalıştırmak için imleç**. Bu komut, hata ayıklama başlatır ve geçici bir kesme noktası geçerli kod satırında ayarlar.
 
      ![İmleç özelliği için Çalıştır'ı kullanın](../debugger/media/dbg-tour-run-to-cursor.png "için imleç çalıştırın")
 
     Kesme üzerinde duraklatıldı `MainWindow` (ilk kesme olduğu için ayarladığınız).
 
-3. İlerletmek için F5 tuşuna basın `Add` seçtiğiniz yöntemi **çalıştırmak için imleç**.
+3. Tuşuna **F5** ilerletmek için `Add` seçtiğiniz yöntemi **çalıştırmak için imleç**.
 
     Bu komut, kod düzenleme ve hızlı bir şekilde geçici bir kesme noktası ayarlayın ve hata ayıklayıcısı başlatmak istediğinizde yararlıdır.
 
@@ -211,22 +213,22 @@ Yapılır olduğunu düşünelim inceleniyor `Update` yöntemi Data.cs ve istedi
 
     Yürütme akış değiştirerek farklı kod yürütme yollarını test veya hata ayıklayıcı başlatmadan kodu yeniden gibi işlemler yapabilirsiniz.
 
-2. Şimdi, F5 tuşuna basın.
+2. Şimdi, basın **F5**.
 
     Uygulama penceresine eklenen görüntüleri görebilirsiniz. Kodu yeniden çünkü `foreach` döngü, bazı resimler iki kez eklendi!
-    
+
     > [!WARNING]
     > Genellikle bu özellikle dikkatli olmanız gerekir ve araç ipucunda bir uyarı görürsünüz. Diğer uyarılar çok görebilirsiniz. İşaretçinin taşınması bir önceki uygulama durumu uygulamanıza geri alınamaz.
 
 ## <a name="inspect-variables-with-data-tips"></a>Veri ipuçları değişkenlerle inceleyin.
 
-1. Data.cs Fotoğraf Görüntüleyicisi tanıtım uygulamasını açın, sağ `private void Update` işlevi bildiriminde ve seçin **çalıştırmak için imleç** (zaten çalışıyorsa, uygulamayı ilk durdurun).
+1. Açık *Data.cs* Fotoğraf Görüntüleyicisi Demo uygulamayı sağ `private void Update` işlevi bildiriminde ve seçin **çalıştırmak için imleç** (zaten çalışıyorsa, uygulamayı ilk durdurun).
 
     Bu uygulama hata ayıklayıcısı ekli duraklatılır. Bu bize durumunu incelemek sağlar.
 
 2. Üzerine gelerek `Add` yöntemini çağırın ve tıklatın **çalıştırmak için tıklatın** düğmesi ![tıklatın çalıştırmak](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
-3. Şimdi, dosya nesnenin üzerine getirin (`f`) ve varsayılan özellik değeri, dosya adı gördüğünüz `market 031.jpg`.
+3. Şimdi, dosya nesnenin üzerine getirin (`f`) ve varsayılan özellik değeri, dosya adı gördüğünüz *031. jpg pazara*.
 
      ![Veri ipucunu görüntüleme](../debugger/media/dbg-tour-data-tips.gif "veri ipucunu görüntüleme")
 
@@ -279,7 +281,7 @@ Yapılır olduğunu düşünelim inceleniyor `Update` yöntemi Data.cs ve istedi
      ![Bir özel durum oluşturulmasına neden](../debugger/media/dbg-tour-cause-an-exception.png "bir özel durum neden")
 
      Uygulama bir özel durum oluşturur ve hata ayıklayıcısını özel durum oluşturdu kod satırına alır.
-     
+
      ![Özel durum Yardımcısı](../debugger/media/dbg-tour-exception-helper.png "özel durum Yardımcısı")
 
      Burada, **özel durum Yardımcısı** , gösterir bir `System.ArgumentException` ve yolun geçerli bir biçimde olmadığını bildiren bir hata iletisi. Bu nedenle, bir yöntemi veya işlev bağımsız değişken bir hata oluştu biliyoruz.
@@ -288,12 +290,12 @@ Yapılır olduğunu düşünelim inceleniyor `Update` yöntemi Data.cs ve istedi
 
      Özel durum Yardımcısı hataları hata ayıklama yardımcı olabilecek harika bir özelliktir. Ayrıca, hata ayrıntıları görünümü gibi şeyler ve özel durum Yardımcısı bir izleme ekleyin. Ya da gerekirse, belirli özel durum atma koşulları değiştirebilirsiniz.
 
-    >  [!NOTE] 
+    >  [!NOTE]
     > Özel durum Yardımcısı özel durum Yardımcısı'nda değiştirir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 2. Genişletme **Exception ayarlarını** düğümü bu özel durum türü, ancak işleme konusunda daha fazla seçenek görmek için bu tur değişikliği gerekmez!
 
-3. Uygulama devam etmek için F5 tuşuna basın.
+3. Tuşuna **F5** uygulamaya devam etmek için.
 
 Hata ayıklayıcı özellikleri hakkında daha fazla bilgi için bkz: [hata ayıklayıcı ipuçları ve püf noktaları](../debugger/debugger-tips-and-tricks.md).
 

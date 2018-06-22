@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b185beaeefeeedaeb63ac6d102d2207926e52748
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257741"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280357"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio performansı en iyi duruma getirme
 
@@ -26,9 +26,9 @@ Bu makalede, Visual Studio yavaş çalışıyorsa bulursanız denemek için baz�
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>15,6 Visual Studio 2017 sürümüne yükseltme veya üzeri
 
-Visual Studio 2015 kullanıyorsanız, indirme [Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz geliştirilmiş performansını denetlemek için. Çözümleri iki ila üç kat daha hızlı Visual Studio 2017 ' diğer alanlarda performans geliştirmeleri ile çok yükleyin. Herhangi bir şey çalışırken tarafından kaybetmemek için visual Studio 2017 yan yana Visual Studio 2015 ile uyumludur.
+Visual Studio 2015 kullanıyorsanız, indirme [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz geliştirilmiş performansını denetlemek için. Çözümleri iki ila üç kat daha hızlı Visual Studio 2017 ' diğer alanlarda performans geliştirmeleri ile çok yükleyin. Herhangi bir şey çalışırken tarafından kaybetmemek için visual Studio 2017 yan yana Visual Studio 2015 ile uyumludur.
 
-Visual Studio 2017 kullanıyorsanız, 15.6 veya sonraki sürümü çalıştırdığınızdan emin olun. Veri çözümleri iki veya üç kez sürüm 15,6 daha hızlı yük olduğunu gösterir. Karşıdan [burada](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+Visual Studio 2017 kullanıyorsanız, 15.6 veya sonraki sürümü çalıştırdığınızdan emin olun. Veri çözümleri iki veya üç kez sürüm 15,6 daha hızlı yük olduğunu gösterir. Karşıdan [burada](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="extensions-and-tool-windows"></a>Uzantılar ve araç pencereleri
 

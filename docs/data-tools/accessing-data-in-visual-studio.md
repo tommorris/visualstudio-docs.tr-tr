@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb9937804ccce197bbfead71f8706aa7456e8538
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 0a880604f14f840c3f4712e1a8d0e4d8e9cf1822
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255908"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283477"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio'da verilere erişime
 
@@ -29,7 +29,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürünü veya hizmetinde he
 
 JavaScript, Python, PHP, Ruby ya da C++ uygulamaları için başka bir şey kitaplıkları edinme ve kod yazma yaptığınız gibi verilere bağlanın. .NET uygulamaları için Visual Studio veri kaynaklarını keşfetmek, depolamak ve bellek verileri işlemek ve verileri kullanıcı arabirimine bağlamak için nesne modeli oluşturmak için kullanabileceğiniz araçlar sağlar. Microsoft Azure SDK'ları .NET, Java, Node.js, PHP, Python, Ruby ve mobil uygulamaları ve Visual Studio Araçları Azure depolama birimine bağlamak için sağlar.
 
-Aşağıdaki listeler, Visual Studio'dan kullanılabilir birçok veritabanı ve depolama sistemlerini birkaçı gösterir. [Microsoft Azure](https://azure.microsoft.com/) teklifleri olan tüm sağlama ve yönetim temel alınan veri deposu içeren veri hizmetleri. **Azure geliştirme** iş yükü [Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) doğrudan Visual Studio'dan Azure veri depoları ile çalışmanıza olanak tanır.
+Aşağıdaki listeler, Visual Studio'dan kullanılabilir birçok veritabanı ve depolama sistemlerini birkaçı gösterir. [Microsoft Azure](https://azure.microsoft.com/) teklifleri olan tüm sağlama ve yönetim temel alınan veri deposu içeren veri hizmetleri. **Azure geliştirme** iş yükü [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) doğrudan Visual Studio'dan Azure veri depoları ile çalışmanıza olanak tanır.
 
 ![Azure geliştirme iş yükü](media/azure-development-workload.png)
 

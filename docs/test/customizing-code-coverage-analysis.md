@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9cdf1b9051f409571989073692cf38906d26b85b
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815957"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303009"
 ---
 # <a name="customize-code-coverage-analysis"></a>Kod kapsamı çözümlemeyi özelleştirme
 
@@ -34,7 +34,7 @@ Kod kapsamı özelleştirmek için aşağıdaki adımları izleyin:
 
 1. Bu makalenin sonunda örnek dosyasından içerik ekleyebilir ve sonra gereksinimlerinizi izleyen bölümlerde açıklandığı gibi özelleştirebilirsiniz.
 
-1. Üzerinde çalıştırma ayarları dosyasını seçmek için **Test** menüsünde seçin **Test ayarları** > **Test ayarları dosyasını seçin**. Komut satırından veya bir iş akışındaki yapı testleri çalıştırmak için bir çalışma ayarları dosyası belirtmek için bkz: [.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+1. Üzerinde çalıştırma ayarları dosyasını seçmek için **Test** menüsünde seçin **Test ayarları** > **Test ayarları dosyasını seçin**. Komut satırından veya bir iş akışındaki yapı testleri çalıştırmak için bir çalışma ayarları dosyası belirtmek için bkz: [kullanarak birim testlerini yapılandırma bir *.runsettings* dosya](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
 
    Seçtiğinizde, **kod kapsamını çözümleme**, yapılandırma bilgilerini çalıştırma ayarlarını dosyasından okunur.
 
@@ -89,7 +89,7 @@ Varsa **INCLUDE** kod kapsamı işleme yüklenen ve kendisi için tüm derlemele
 
 ### <a name="regular-expressions"></a>Normal ifadeler
 
-Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için bkz: [Visual Studio'da normal ifadeleri kullanma](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakterler ile aynı değildir. Özellikle:
+Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için bkz: [Visual Studio'da normal ifadeleri kullanma](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakter ile aynı değil. Özellikle:
 
 - **. \***  herhangi bir karakter dizesi ile eşleşir
 
@@ -135,7 +135,7 @@ Tüm eşlemeler büyük/küçük harf duyarsızdır.
 
 - **Kaynak** -bunlar tanımlı kaynak dosya yolu adıyla eşleşen öğeleri.
 
-- **Öznitelik** -belirli bir öznitelik bağlı öğeleri eşleşir. Özniteliği ve inclue adının sonunda "özniteliği" tam adını belirtin.
+- **Öznitelik** -belirli bir öznitelik bağlı öğeleri eşleşir. Özniteliğin tam adını belirtin ve adının sonunda "özniteliği" içerir.
 
 - **İşlev** -tam adıyla yordamları, İşlevler veya yöntemler eşleşir. İşlev adı ile eşleşmesi için normal ifade işlevinin ad alanı, sınıf adı, yöntem adı ve parametre listesine dahil olmak üzere tam adı eşleşmelidir. Örneğin:
 

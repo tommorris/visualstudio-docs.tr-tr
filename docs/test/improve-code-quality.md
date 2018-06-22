@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Test Araçları
+title: Visual Studio test araçları
 ms.date: 03/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68bed424da371fa2c959b906e029942314fef3c4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967227"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281621"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
@@ -38,7 +38,7 @@ Visual Studio Test Araçları yardımcı olabilir ve ekibinizin geliştirmek ve 
 - [Yük testleri](../test/quickstart-create-a-load-test-project.md) birim testleri ve Web performans testleri çalıştırarak bir sunucu uygulaması üzerindeki yükü benzetimini yapar.
 
 > [!NOTE]
-> Birim testi Visual Studio'nin tüm sürümlerinde kullanılabilir değil. Diğer test araçları gibi birim testi, Intellitest, canlı ve kodlanmış UI testleri yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz: [karşılaştırmak Visual Studio 2017 IDE](https://www.visualstudio.com/vs/compare/).
+> Birim testi Visual Studio'nin tüm sürümlerinde kullanılabilir değil. Diğer test araçları gibi birim testi, Intellitest, canlı ve kodlanmış UI testleri yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz: [karşılaştırmak Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>İlgili senaryolar
 

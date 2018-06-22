@@ -10,34 +10,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1757dc778c45d3b9c6afd7f289b6598728dc7687
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd8c5100158b5761047d38e10f953fc832e0ce2b
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569309"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302890"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 yenilikler nelerdir?
-MSBuild kullanılabilir olarak şimdi parçası [.NET Core SDK](https://www.microsoft.com/net/download/core) ve .NET Core projelerde Windows, macOS ve Linux oluşturabilirsiniz.  
+
+MSBuild kullanılabilir olarak şimdi parçası [.NET Core SDK](https://www.microsoft.com/net/download/core) ve .NET Core projelerde Windows, macOS ve Linux oluşturabilirsiniz.
 
 ## <a name="changed-path"></a>Değiştirilen yolu
+
  MSBuild, şimdi her sürümü Visual Studio'nun altında bir klasöre yüklenir. Örneğin, `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild`. MSBuild bulmak için aşağıdaki PowerShell modülünü de kullanabilirsiniz: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
  MSBuild artık Genel Derleme Önbelleği'nde yüklenir. MSBuild programlı olarak başvurmak için NuGet paketlerini kullanın.
 
-## <a name="changed-properties"></a>Değiştirilen Özellikler  
- Aşağıdaki MSBuild özellikleri nedeniyle yeni sürüm numarasını güncelleştirildi.  
+## <a name="changed-properties"></a>Değiştirilen Özellikler
 
--   `MSBuildToolsVersion` Bu araçlar için 15.0 sürümüdür. Derleme 15.1.0.0 sürümüdür.
+ Aşağıdaki MSBuild özellikleri nedeniyle yeni sürüm numarasını güncelleştirildi.
 
--   `MSBuildToolsPath` artık bir sabit konumu yok. Varsayılan olarak, Visual Studio yükleme konumuna göre MSBuild\15.0\Bin klasöründe bulunan, ancak yükleme konumu adresindeki değiştirilebilir Visual Studio yükleme süresi.
+- `MSBuildToolsVersion` Bu araçlar için 15.0 sürümüdür. Derleme 15.1.0.0 sürümüdür.
 
--   `ToolsVersion` değerleri, kayıt defterinde artık ayarlanır.  
+- `MSBuildToolsPath` artık bir sabit konumu yok. Varsayılan olarak, Visual Studio yükleme konumuna göre MSBuild\15.0\Bin klasöründe bulunan, ancak yükleme konumu adresindeki değiştirilebilir Visual Studio yükleme süresi.
 
--   `SDK35ToolsPath` Ve `SDK40ToolsPath` noktası özelliklerini (örneğin, 10.0A 4.X araçları için) Visual Studio'nun bu sürümü ile paketlenmiştir .NET Framework SDK'sının.  
+- `ToolsVersion` değerleri, kayıt defterinde artık ayarlanır.
+
+- `SDK35ToolsPath` Ve `SDK40ToolsPath` noktası özelliklerini (örneğin, 10.0A 4.X araçları için) Visual Studio'nun bu sürümü ile paketlenmiştir .NET Framework SDK'sının.
 
 ## <a name="updates"></a>Güncelleştirmeler
-- [Proje öğesi](../msbuild/project-element-msbuild.md) yeni bir sahip `SDK` özniteliği. Ayrıca `Xmlns` özniteliktir artık isteğe bağlı. Daha fazla bilgi için bkz: [paketleri, meta verileri ve çerçeveleri](/dotnet/core/packages) ve [csproj eklemeler biçimlendirmek için .NET Core](/dotnet/core/tools/csproj).
+
+- [Proje öğesi](../msbuild/project-element-msbuild.md) yeni bir sahip `SDK` özniteliği. Ayrıca `Xmlns` özniteliktir artık isteğe bağlı. Daha fazla bilgi için bkz: [nasıl yapılır: kullanım MSBuild proje SDK'ları](../msbuild/how-to-use-project-sdk.md)hem de [paketleri, meta verileri ve çerçeveleri](/dotnet/core/packages) ve [csproj eklemeler biçimlendirmek için .NET Core](/dotnet/core/tools/csproj).
 - [Madde öğesi](../msbuild/item-element-msbuild.md) dış hedefleri olan yeni bir `Update` özniteliği. Ayrıca, bir sınırlama `Remove` özniteliği ortadan kaldırılmıştır.
 - `Directory.Build.props` bir dizini altındaki projelerine özelleştirmeleri sağlayan bir kullanıcı tarafından tanımlanan dosyasıdır. Bu dosya sürece Microsoft.Common.props otomatik olarak içeri aktarılır özelliği `ImportDirectoryBuildTargets` ayarlanır **false**. `Directory.Build.targets` Microsoft.Common.targets tarafından alınır.
 - Herhangi bir meta veri öznitelikleri geçerli listesiyle çakışan olmayan bir ad ile isteğe bağlı olarak bir özniteliği olarak ifade edilebilir. Daha fazla bilgi için bkz: [öğe unsuru](../msbuild/item-element-msbuild.md).

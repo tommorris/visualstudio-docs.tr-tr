@@ -1,8 +1,8 @@
 ---
-title: Hata ayıklayıcıya ilk bakış
-description: Visual Studio hata ayıklayıcısı farklı özelliklerine hızlı göz atın.
+title: Visual Studio'da hata ayıklamayı kullanmaya başlama
+description: Visual Studio hata ayıklayıcısı kullanarak uygulamalarında hata ayıklama kullanmaya başlama
 ms.custom: mvc
-ms.date: 03/27/2018
+ms.date: 06/15/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,36 +13,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a2a01a392ee87d220079ba8f3d8704d739b83ae3
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691098"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303132"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ilk bakma
 
-Bu konu, Visual Studio hata ayıklayıcısı özelliklerini tanıtır. Visual Studio'da kendi uygulamanızı açarak izlemek isterseniz, bunu yapabilirsiniz veya bir örnek uygulamasını kullanarak yanı sıra izleyebilirsiniz [Başlangıç Kılavuzu](../debugger/getting-started-with-the-debugger.md).
+Bu konu, Visual Studio tarafından sağlanan hata ayıklayıcı araçları tanıtır. Visual Studio bağlamında olduğunda, *uygulamanızın hatalarını ayıklama*, hata ayıklayıcısı ekli uygulaması çalıştıran genellikle anlamına gelir (diğer bir deyişle, hata ayıklayıcı modunda). Bunu yaptığınızda, hata ayıklayıcı kodunuzu yaptıklarını görmek için birçok yol sağlar çalışırken. Kodunuz adım ve değişkenleri depolanan değerleri bakmak, Gözcü değerlerini değiştirdiğinizde, bkz: değişkenleri ayarlayabilirsiniz, yürütme yolu, kodunuzu inceleyebilirsiniz et al. Bu kodun hatalarını ayıklamak için çalıştınız ilk kez kullanıyorsanız, okumak isteyebilirsiniz [başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) Bu konuyu geçmeden önce.
 
 Burada açıklanan özellikler, C#, C++, Visual Basic, JavaScript ve (belirtilenler dışında) Visual Studio tarafından desteklenen diğer diller için geçerlidir.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Bir kesme noktası ayarlayın ve hata ayıklayıcısı başlatın
 
-Hata ayıklamak için uygulamanızı hata ayıklayıcısı ekli uygulama işlemi ile başlamanız gerekir. F5 (**hata ayıklama > hata ayıklamayı Başlat**) Bunun en yaygın yoludur. Ancak, uygulamanızı incelemek için tüm kesme noktalarını ayarlamış olabileceğiniz değil artık sağ kod, böylece biz öncelikle bunu ve hata ayıklama başlatılamıyor.
+Hata ayıklamak için uygulamanızı hata ayıklayıcısı ekli uygulama işlemi ile başlamanız gerekir. **F5** (**hata ayıklama > hata ayıklamayı Başlat**) Bunun en yaygın yoludur. Ancak, uygulamanızı incelemek için tüm kesme noktalarını ayarlamış olabileceğiniz değil artık sağ kod, böylece biz öncelikle bunu ve hata ayıklama başlatılamıyor. Kesme noktaları güvenilir hata ayıklama en temel ve temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız veya kod dalı çalıştırmak destekleyip desteklemediğini belirtir. 
 
 Kod Düzenleyicisi'nde açık bir dosyanız varsa, kod satırının sol kenar boşluğunda tıklayarak bir kesme noktası ayarlayabilirsiniz.
 
 ![Bir kesme noktası belirleyerek](../debugger/media/dbg-tour-set-a-breakpoint.gif "bir kesme noktası ayarlama")
 
-F5 tuşuna basın (**hata ayıklama > hata ayıklamayı Başlat**) ve bulduğu ilk kesme hata ayıklayıcı çalıştırır. Uygulama henüz çalışmıyorsa, F5 hata ayıklayıcı başlar ve ilk kesme noktasında durur.
+Tuşuna **F5** (**hata ayıklama > hata ayıklamayı Başlat**) veya **hata ayıklamayı Başlat** düğmesini ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat ") hata ayıklama araç ve bulduğu ilk kesme hata ayıklayıcı çalışır. Uygulama henüz çalışmıyorsa, F5 hata ayıklayıcı başlar ve ilk kesme noktasında durur.
 
 Kod satırını veya bir bölümünü ayrıntılı olarak incelemek istediğiniz kod bildiğinizde kesme noktaları yararlı bir özelliktir.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Kod adım komutlarını kullanarak hata ayıklayıcısında gidin
+## <a name="navigate"></a> Kod adım komutlarını kullanarak hata ayıklayıcısında gidin
 
 Gezinti, uygulama kodunuzun daha hızlı hale çoğu komutları için klavye kısayolları sunuyoruz. (Menü komutlarını parantez içinde gösterildiği gibi eşdeğer komutları.)
 
-Hata ayıklayıcısı ekli uygulamanızı başlatmak için F11 tuşuna basın (**hata ayıklama > Step Into**). F11 olan **Step Into** komut ve aynı anda uygulama yürütme bir deyim ilerletir. Uygulama ile F11 başlattığınızda, hata ayıklayıcı yürütülen ilk ifade keser.
+Hata ayıklayıcısı ekli uygulamanızı başlatmak için basın **F11** (**hata ayıklama > Step Into**). F11 olan **Step Into** komut ve aynı anda uygulama yürütme bir deyim ilerletir. Uygulama ile F11 başlattığınızda, hata ayıklayıcı yürütülen ilk ifade keser.
 
 ![F11 Adımla](../debugger/media/dbg-tour-f11.png "F11 adım içine")
 
@@ -55,7 +55,7 @@ F11 yürütme akış çoğu ayrıntılı incelemek için iyi bir yoludur. (Daha 
 
 ## <a name="step-over-code-to-skip-functions"></a>İşlevler atlamak için kod adım
 
-Bir işlev veya yöntem çağrısı kod satırında olduğunda F10 tuşlarına basabilirsiniz (**hata ayıklama > Step Over**) F11 yerine.
+Bir işlev veya yöntem çağrısı kod satırında olduğunda basabilirsiniz **F10** (**hata ayıklama > Step Over**) F11 yerine.
 
 F10 işlevler veya yöntemler (kod hala çalıştırır), uygulama kodunuzda içine atlamadan hata ayıklayıcı ilerler. F10 tuşlarına basarak ilgilendiğiniz değil kodu üzerinden atlayabilirsiniz. Bu şekilde, hızlı bir şekilde daha ilgilendiğiniz kodu alabilirsiniz.
 
@@ -88,13 +88,13 @@ Bu düğme kullanarak geçici bir kesme noktası ayarlama benzer. Bu komut ayrı
 
 Bazı durumlarda, hata ayıklama oturumu devam ancak bu süreç boyunca tüm geçerli işlevi aracılığıyla hata ayıklayıcı ilerletmek isteyebilirsiniz.
 
-Shift + F11 tuşlarına basın (veya **hata ayıklama > dışarı adım**).
+Tuşuna **SHIFT + F11** (veya **hata ayıklama > dışarı adım**).
 
 Bu komut, uygulama yürütme sürdürür (ve hata ayıklayıcısı ilerler) kadar geçerli işlevi döndürür.
 
 ## <a name="run-to-cursor"></a>İmleci çalıştırın
 
-Tuşuna basarak hata ayıklayıcıyı **durdurma hata ayıklama** kırmızı düğme ![durdurma hata ayıklama](../debugger/media/dbg-tour-stop-debugging.png "durdurma hata ayıklama") ya da Shift + F5'e.
+Tuşuna basarak hata ayıklayıcıyı **durdurma hata ayıklama** kırmızı düğme ![durdurma hata ayıklama](../debugger/media/dbg-tour-stop-debugging.png "durdurma hata ayıklama") veya **Shift**  +  **F5**.
 
 Uygulamanızı kod satırı sağ tıklatın ve seçin **çalıştırmak için imleç**. Bu komut, hata ayıklama başlatır ve geçici bir kesme noktası geçerli kod satırında ayarlar.
 
@@ -102,9 +102,9 @@ Uygulamanızı kod satırı sağ tıklatın ve seçin **çalıştırmak için im
 
 Hata ayıklayıcı kesme noktası ayarlarsanız, bu trafik ilk kesme duraklatır.
 
-Seçtiğiniz kod satırı ulaşana kadar F5 tuşuna basın **çalıştırmak için imleç**.
+Tuşuna **F5** seçtiğiniz kod satırı ulaşana kadar **çalıştırmak için imleç**.
 
-Bu komut, kod düzenleme ve hızlı bir şekilde geçici bir kesme noktası ayarlayın ve hata ayıklayıcısı başlatmak istediğinizde yararlıdır.
+Bu komut, kod düzenleme ve hızlı bir şekilde geçici bir kesme noktası ayarlayın ve hata ayıklayıcı aynı zamanda başlatmak istediğinizde yararlıdır.
 
 > [!NOTE]
 > Kullanabileceğiniz **çalıştırmak için imleç** içinde **çağrı yığını** hata ayıklarken penceresi.
@@ -176,7 +176,7 @@ Bu kaynak koduna bakmanız gitmek için kod satırı çift tıklatın ve hata ay
 
 Sağ menülerden de kullanabilirsiniz **çağrı yığını** başka şeyler için penceresi. Örneğin, belirli işlevleri kesme noktaları ekleme, uygulamasını kullanarak yeniden **çalıştırmak için imleç**ve kaynak kodunu incelemek gidin. Bkz: [nasıl yapılır: çağrı yığınını incelemek](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="examine-an-exception"></a>Bir özel durum inceleyin
+## <a name="exception"></a> Bir özel durum inceleyin
 
 Hata ayıklayıcı uygulamanızı bir özel durum oluşturduğunda, bir özel durum belirtti kod satırına alır.
 

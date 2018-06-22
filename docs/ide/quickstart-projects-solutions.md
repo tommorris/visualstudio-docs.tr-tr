@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ceb6aef12851472d8c276b7077a9975e957930e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5b85f9ea5e9e570203d6d1f4148f714b0da1f861
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255505"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283438"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: Projeler ve çözümler
 
 Bu 10 dakikalık quickstart Visual Studio'da Çözüm ve proje oluşturmak ne anlama geldiğini incelenecektir. Bir proje özelliklerini ve bazı oluşabilir dosyaları bakın. İkinci projesine bir başvuru da oluşturacağız.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 > [!TIP]
 > Biz bir çözüm ve proje bu hızlı başlangıç, sıfırdan bir proje kavramı anlamak için eğitim bir alıştırma olarak oluşturma. Visual Studio içinde genel kullanımı, büyük olasılıkla yeni bir proje oluştururken, Visual Studio sunan birçok proje şablonu kullanır.

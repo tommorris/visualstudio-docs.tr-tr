@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0a8eab90f0817051c57530cead9bd30dffa35584
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765674"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281173"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve Visual Studio ve Azure Hizmetleri Güvenlik Duvarı veya proxy sunucunun arkasında kullanma
 
@@ -49,7 +49,7 @@ Visual Studio yükleyicisi dosyaları çeşitli etki alanlarına ve indirme sunu
 | download.VisualStudio.com | Paketleri indirme konumu Kurulumu |
 | DL.xamarin.com | Paketleri indirme konumu Kurulumu |
 | visualstudiogallery.msdn.microsoft.com | Visual Studio uzantıları konumu indirin |
-| www.visualstudio.com | Belge konumu |
+| VisualStudio.microsoft.com | Belge konumu |
 | docs.microsoft.com | Belge konumu |
 | MSDN.microsoft.com | Belge konumu |
 | www.microsoft.com | Belge konumu |

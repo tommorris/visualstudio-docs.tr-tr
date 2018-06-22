@@ -9,21 +9,21 @@ description: Visual Studio Aboneliklerde bulunan Danışman sohbet avantajı ile
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 65307a586ea9e9270a8af4a0e70c20d855238fad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196014"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281881"
 ---
 # <a name="concierge-chat"></a>Danışman sohbet
 
-Danışman sohbet hizmetleri sağlayan ürün bilgileri ve teknik belgeler bulma Yardım de olarak yardımcı Visual Studio abonelik Avantajlarınızı kullanarak.  
+Danışman sohbet hizmetleri sağlayan ürün bilgileri ve teknik belgeler bulma Yardım de olarak yardımcı Visual Studio abonelik Avantajlarınızı kullanarak.
 
-Hizmet kullanılabilir 24/7'dir ve şu anda yalnızca (sorular için hesapları, faturalama ve abonelik dışında) İngilizce olarak sunulur. 
+Hizmet kullanılabilir 24/7'dir ve şu anda yalnızca (sorular için hesapları, faturalama ve abonelik dışında) İngilizce olarak sunulur.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-Danışman sohbet hizmeti üzerinden Yardım alma çok kolaydır.  
+Danışman sohbet hizmeti üzerinden Yardım alma çok kolaydır.
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Danışman sohbet döşeme avantajları sayfasının destek bölümünü bulun ve tıklayın **Şimdi Sohbet**.
@@ -33,9 +33,9 @@ Danışman sohbet hizmeti üzerinden Yardım alma çok kolaydır.
 3. 
               **Devam**'a tıklayın.
 
-4. Sohbet penceresi açılır ve konumunuzu sırasındaki gösteren bir sayaç görürsünüz.  
+4. Sohbet penceresi açılır ve konumunuzu sırasındaki gösteren bir sayaç görürsünüz.
 
-5. Bir aracı kullanılabilir olduğunda, sohbet başlar. 
+5. Bir aracı kullanılabilir olduğunda, sohbet başlar.
 
     ![Danışman sohbet oturumu](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
@@ -49,18 +49,18 @@ Danışman sohbet hizmeti üzerinden Yardım alma çok kolaydır.
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir: değil satışı için (NFR), Visual Studio Endüstri ortağı (VSIP) eğitmen, BizSpark Microsoft Sertifikalı.    Dışlar: FTE, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN) düşünün.*
+<sup>1</sup>*içerir: değil satışı için (NFR), Visual Studio Endüstri ortağı (VSIP) eğitmen, BizSpark Microsoft Sertifikalı.  Dışlar: FTE, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN) düşünün.*
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>S: Sohbet hizmeti birden çok dilde kullanılabilir mi?
-   A: hesapları, faturalama ve abonelik sorunlara birden çok dilde kullanılabilir.  Ürün bilgileri ve teknik belgeler bulma ile ilgili Yardım İngilizce'dir. 
-   
+   A: hesapları, faturalama ve abonelik sorunlara birden çok dilde kullanılabilir.  Ürün bilgileri ve teknik belgeler bulma ile ilgili Yardım İngilizce'dir.
+
 ## <a name="support-resources"></a>Destek kaynakları
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 
+-  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 
 
 

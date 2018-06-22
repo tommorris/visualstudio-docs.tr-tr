@@ -2,7 +2,7 @@
 title: Visual Studio 2017 değiştirme | Microsoft Docs
 description: Visual Studio, adım adım değiştirme hakkında bilgi edinin.
 ms.custom: H1Hack27Feb2017
-ms.date: 04/06/2018
+ms.date: 06/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab0aa786dcaf5e99290dce79bc72deb9f0d5805
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1e63a21a6090f4d3c7b1a371fc667325eed9ba65
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296360"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Visual Studio 2017 ekleyerek veya kaldırarak iş yükleri ve bileşenleri değiştirme
 
@@ -36,20 +37,20 @@ Biz yalnızca yaptığınız daha kolay gerçekleştirmek istediğiniz görevler
 >[!IMPORTANT]
 >Yüklemek, güncelleştirme veya Visual Studio değiştirmek için yönetim izinlerine sahip bir hesapla oturum açmalısınız. Daha fazla bilgi için bkz: [kullanıcı izinleri ve Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
-1. Visual Studio yükleyicisi bilgisayarınızda bulun.  
+1. Visual Studio yükleyicisi bilgisayarınızda bulun.
 
-     Örneğin, Windows 10 çalıştıran bir bilgisayarda seçin **Başlat**ve ardından harfi kaydırma **V**, olarak listelenen burada **Visual Studio yükleyicisi**.  
+     Örneğin, Windows 10 çalıştıran bir bilgisayarda seçin **Başlat**ve ardından harfi kaydırma **V**, olarak listelenen burada **Visual Studio yükleyicisi**.
 
      ![Visual Studio yükleyicisi](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio yükleyicisi bulun")
 
      >[!NOTE]
-     Bazı bilgisayarlarda, Visual Studio yükleyicisi harf altında listelenebilir **"M"** olarak **Microsoft Visual Studio yükleyicisi**.<br/><br/> Alternatif olarak, Visual Studio yükleyicisi şu konumda bulabilirsiniz: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     >Bazı bilgisayarlarda, Visual Studio yükleyicisi harf altında listelenebilir **"M"** olarak **Microsoft Visual Studio yükleyicisi**.<br/><br/> Alternatif olarak, Visual Studio yükleyicisi şu konumda bulabilirsiniz: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. ' I tıklatın veya yükleyiciyi başlatmak için'a dokunun ve ardından **Değiştir**.  
+2. ' I tıklatın veya yükleyiciyi başlatmak için'a dokunun ve ardından **Değiştir**.
 
      ![Başlatma veya Visual Studio değiştirmek](media/modify-visual-studio.png "Visual Studio 2017 değiştirme")
 
-     Bekleyen bir güncelleştirme varsa, Değiştir düğmesini farklı yerde değil. Tıklatın **daha fazla**ve ardından **Değiştir**.   
+     Bekleyen bir güncelleştirme varsa Değiştir düğmesini içinde farklı bir yerdir. Bu şekilde, Visual Studio, güncelleştirmeden Bunu yapmak için seçmesi gereken değiştirebilirsiniz. Tıklatın **daha fazla**ve ardından **Değiştir**.
 
      ![Güncelleştirmek veya Visual Studio değiştirmek](media/modify-or-update-visual-studio.png "güncelleştirme veya Visual Studio 2017 değiştirme")
 
@@ -57,7 +58,7 @@ Biz yalnızca yaptığınız daha kolay gerçekleştirmek istediğiniz görevler
 
     ![Visual Studio 2017 Kurulum iletişim](media/vs2017-modify-workloads.PNG "bir iş yükü Visual Studio 2017 seçin")
 
-4. Seçin **Değiştir** yeniden.  
+4. Seçin **Değiştir** yeniden.
 
 5. Bileşenleri ve yeni iş yüklerine yüklendikten sonra Seç **başlatma**.
 
@@ -67,7 +68,7 @@ Kullanışlı iş yükleri özelliği kullanmak Visual Studio yüklemenizi özel
 
 ## <a name="get-support"></a>Destek alma
 
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) Yardım sayfası. De bize yükleme yardımcı olmak için başvurabilirsiniz [canlı sohbet](https://www.visualstudio.com/vs/support/#talktous) (yalnızca İngilizce); daha fazla bilgi için bkz: ["Bize başvurun" sayfasında Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) Yardım sayfası. De bize yükleme yardımcı olmak için başvurabilirsiniz [canlı sohbet](https://visualstudio.microsoft.com/vs/support/#talktous) (yalnızca İngilizce); daha fazla bilgi için bkz: ["Bize başvurun" sayfasında Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
 

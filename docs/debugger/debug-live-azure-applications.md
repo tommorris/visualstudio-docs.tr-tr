@@ -14,18 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5207af86d850dca3e4dfde515237452c293788ea
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766330"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281556"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Anlık görüntü hata ayıklayıcı kullanarak canlı ASP.NET Azure uygulamalarının hatalarını ayıklama
 
 İlgilendiğiniz kod yürüttüğünde anlık görüntü hata ayıklayıcı üretim uygulamalarınızın bir anlık görüntüsünü alır. Bir anlık görüntüyü almaya hata ayıklayıcı istemek üzere kodunuzda snappoints ve logpoints ayarlayın. Hata ayıklayıcı tam olarak ne üretim uygulamanızın trafiğini etkilemeden sorun oluştu görmenizi sağlar. Anlık görüntü hata ayıklayıcı üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi önemli ölçüde azaltmaya yardımcı olabilir.
 
-Snappoints ve logpoints için kesme noktaları benzer, ancak kesme noktaları farklı olarak, uygulama snappoints durdurmak yok zaman ulaştı. Genellikle, bir snappoint adresindeki anlık yansımasını yakalamada 10-20 milisaniye alır. 
+Snappoints ve logpoints için kesme noktaları benzer, ancak kesme noktaları farklı olarak, uygulama snappoints durdurmak yok zaman ulaştı. Genellikle, bir snappoint adresindeki anlık yansımasını yakalamada 10-20 milisaniye alır.
 
 Bu öğreticide şunları yapacaksınız:
 
@@ -38,7 +38,7 @@ Bu öğreticide şunları yapacaksınız:
 
 * Anlık görüntü hata ayıklayıcı kullanılabilir yalnızca Visual Studio 2017 Enterprise 15,5 veya ile daha yüksek bir sürümü için **ASP.NET ve web geliştirme iş yükü**. Ayrıca ASP.NET Core için gerekir. **NET çekirdek geliştirme** yüklü iş yükü.
 
-    Henüz yüklü değilse yükleyin [Visual Studio 2017 Enterprise sürümü 15,5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya sonraki bir sürümü. Bir önceki Visual Studio 2017 yüklemesinden güncelleştiriyorsanız, Visual Studio yükleyicisi çalıştırın ve anlık görüntü hata ayıklayıcı bileşen iade **ASP.NET ve web geliştirme iş yükü**.
+    Henüz yüklü değilse yükleyin [Visual Studio 2017 Enterprise sürümü 15,5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya sonraki bir sürümü. Bir önceki Visual Studio 2017 yüklemesinden güncelleştiriyorsanız, Visual Studio yükleyicisi çalıştırın ve anlık görüntü hata ayıklayıcı bileşen iade **ASP.NET ve web geliştirme iş yükü**.
 
 * Azure uygulama hizmeti planı temel ya da daha yüksek.
 
@@ -49,16 +49,16 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Projenizi açın ve anlık görüntü hata ayıklayıcı Başlat
 
-1. Anlık görüntü debug istediğiniz projeyi açın. 
+1. Anlık görüntü debug istediğiniz projeyi açın.
 
-    > [!IMPORTANT] 
-    > Anlık görüntü hata ayıklama için açmanız gerekir. **kaynak kodu aynı sürümünü** Azure uygulama hizmetiniz yayımlanır. 
+    > [!IMPORTANT]
+    > Anlık görüntü hata ayıklama için açmanız gerekir. **kaynak kodu aynı sürümünü** Azure uygulama hizmetiniz yayımlanır.
 
 1. Cloud Explorer'da (**Görünüm > Cloud Explorer**), Azure uygulama hizmeti projenizi dağıtıldığı sağ tıklatın ve seçin **Attach anlık görüntü hata ayıklayıcı**.
 
    ![Anlık görüntü hata ayıklayıcıyı başlatma](../debugger/media/snapshot-launch.png)
 
-    Seçtiğiniz ilk kez **Attach anlık görüntü hata ayıklayıcı**, Azure App Service üzerinde anlık görüntü hata ayıklayıcı site uzantısı yüklemeniz istenir. Bu yükleme, Azure App Service yeniden başlatılmasını gerektirir. 
+    Seçtiğiniz ilk kez **Attach anlık görüntü hata ayıklayıcı**, Azure App Service üzerinde anlık görüntü hata ayıklayıcı site uzantısı yüklemeniz istenir. Bu yükleme, Azure App Service yeniden başlatılmasını gerektirir.
 
    Visual Studio hata ayıklama modu anlık sunulmuştur.
 
@@ -77,7 +77,7 @@ Bu öğreticide şunları yapacaksınız:
 
    ![Bir snappoint ayarlayın](../debugger/media/snapshot-set-snappoint.png)
 
-2. Tıklatın **toplamaya** üzerinde snappoint açmak için.  
+2. Tıklatın **toplamaya** üzerinde snappoint açmak için.
 
    ![Üzerinde snappoint Aç](../debugger/media/snapshot-start-collection.png)
 

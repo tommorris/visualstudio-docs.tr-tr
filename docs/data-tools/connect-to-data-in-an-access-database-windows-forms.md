@@ -16,18 +16,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f1d0b5d2d0391d401394929e16d5bfc97aa6d555
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746822"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282645"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>(Windows Forms) erişim veritabanındaki verilere bağlanma
-Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .accdb dosyası) bağlanabilir. Veri bağlantısı tanımladıktan sonra görünür **veri kaynakları** penceresi. Burada, tabloları veya görünümleri formlarınıza sürükleyebilirsiniz.
+Bir veritabanına bağlanabilir (ya da bir *.mdf* dosya veya bir *.accdb* dosyası) Visual Studio kullanarak. Veri bağlantısı tanımladıktan sonra görünür **veri kaynakları** penceresi. Burada, tabloları veya görünümleri formlarınıza sürükleyebilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
- Bu yordamları kullanmak için bir Windows Forms uygulaması projesi ve bir Access veritabanı (.accdb dosyası) veya bir Access 2000-2003 veritabanı (.mdb dosyası) gerekir. Dosya türünüze karşılık gelen yordamı izleyin.
+ Bu yordamları kullanmak için bir Windows Forms uygulaması projesi ve bir Access veritabanı gerekir (*.accdb* dosya) veya bir Access 2000-2003 veritabanı (*.mdb* dosyası). Dosya türünüze karşılık gelen yordamı izleyin.
 
 ## <a name="creating-the-dataset-for-an-accdb-file"></a>Veri kümesi için bir .accdb dosyası oluşturma
  Aşağıdaki yordamı kullanarak erişim 2013, Office 365, Access 2010 veya Access 2007 oluşturulan veritabanlarını bağlanabilir.
@@ -65,7 +65,7 @@ Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .acc
      > [!NOTE]
      >  Görmüyorsanız, **Microsoft Office 12.0 Access veritabanı altyapısı OLE DB sağlayıcısı** açılır OLE DB Sağlayıcısında yüklemeniz gerekebilir [2007 Office sistemi sürücüsü: veri bağlantısı bileşenlerinin](https://www.microsoft.com/download/confirmation.aspx?id=23734).
 
-9. İçinde **sunucu veya dosya adı** metin kutusuna yolunu belirtin ve bağlanmak istediğiniz .accdb dosyasının adını ve ardından dosya **Tamam**. (Veritabanı dosyası bir kullanıcı adı ve parola varsa, seçmeden önce bunları belirtin **Tamam**.)
+9. İçinde **sunucu veya dosya adı** metin kutusuna yolunu belirtin ve dosya adını *.accdb* bağlanın ve ardından istediğiniz dosyasını **Tamam**. (Veritabanı dosyası bir kullanıcı adı ve parola varsa, seçmeden önce bunları belirtin **Tamam**.)
 
 10. Seçin **sonraki** üzerinde **veri bağlantınızı seçin** sayfası.
 
@@ -79,7 +79,7 @@ Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .acc
 
      Veri kümesi projenize eklenir ve tabloları ve görünümleri görüntülenmesini **veri kaynakları** penceresi.
 
-## <a name="creating-the-dataset-for-an-mdb-file"></a>Veri kümesi için bir .mdb dosyasını oluşturma
+## <a name="create-the-dataset-for-an-mdb-file"></a>Veri kümesi için bir .mdb dosyasını oluşturma
  Çalıştırarak veri kümesi oluşturma **veri kaynağı Yapılandırma Sihirbazı**.
 
 #### <a name="to-create-the-dataset"></a>Veri kümesi oluşturma
@@ -102,7 +102,7 @@ Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .acc
 
 7.  Veri kaynağı değilse **Microsoft Access veritabanı dosyası (OLE DB)** seçin **değişiklik** açmak için **Change Data Source** iletişim kutusu ve select **Microsoft Veritabanı dosyası erişim**ve ardından **Tamam**.
 
-8.  İçinde **veritabanı dosya adı**, bağlanmak ve ardından istediğiniz .mdb dosyasının adını ve yolunu belirtin **Tamam**.
+8.  İçinde **veritabanı dosya adı**, adını ve yolunu belirtin *.mdb* bağlanın ve ardından istediğiniz dosyasını **Tamam**.
 
      ![Bağlantı Access veritabanı dosyası ekleme](../data-tools/media/dataaddconnectionaccessmdb.png)
 
@@ -117,9 +117,9 @@ Visual Studio kullanarak bir Access veritabanı (.mdf dosyasının veya bir .acc
      Veri kümesi projenize eklenir ve tabloları ve görünümleri görüntülenmesini **veri kaynakları** penceresi.
 
 ## <a name="security"></a>Güvenlik
- Önemli bilgileri depolamak (örneğin bir parolayı), uygulamanızın güvenliğini etkileyebilir. Windows Kimlik Doğrulaması (tümleşik güvenlik olarak da bilinir) kullanılarak bir veritabanına erişimi denetlemek için daha güvenli bir yoldur. Daha fazla bilgi için bkz: [koruma bağlantı bilgilerini](/dotnet/framework/data/adonet/protecting-connection-information).
+ Önemli bilgileri depolamak (örneğin bir parolayı), uygulamanızın güvenliğini etkileyebilir. Windows Kimlik Doğrulaması (tümleşik güvenlik olarak da bilinir) kullanılarak bir veritabanına erişimi denetlemek için daha güvenli bir yoldur. Daha fazla bilgi için bkz: [bağlantı bilgileri koruma](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
  Yeni oluşturduğunuz veri kümesi artık kullanılabilir **veri kaynakları** penceresi. Artık aşağıdaki görevleri gerçekleştirebilirsiniz:
 
 -   Öğe seçin **veri kaynakları** penceresi ve formunuza sürükleyin (bkz [bağlamak Windows Forms denetimleri Visual Studio'da verilere](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).

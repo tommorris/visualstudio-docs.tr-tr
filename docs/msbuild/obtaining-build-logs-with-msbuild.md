@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574691"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303315"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild ile Derleme Günlükleri Alma
 MSBuild ile anahtarlarını kullanarak gözden geçirme ve yapı verileri için bir veya daha fazla kaydetmek isteyip istemediğinizi istediğiniz yapı veri miktarını belirtebilirsiniz. Yapılandırma verilerini toplamak için özel bir Günlükçü de belirtebilirsiniz. Bu konuda kapsamıyordur MSBuild komut satırı anahtarları hakkında daha fazla bilgi için bkz: [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
@@ -39,20 +39,20 @@ MSBuild ile anahtarlarını kullanarak gözden geçirme ve yapı verileri için 
   
  Ayarladığınız zaman oluşturma işlemi daha yavaş olabilir **/verbosity** için `detailed` ve hatta daha yavaş ayarladığınızda **/verbosity** için `diagnostic`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>Derleme günlüğünü bir dosyaya kaydetme  
  Kullanabileceğiniz **/fileLogger** (**fl**) anahtar yapılandırma verilerini bir dosyaya kaydedin. Aşağıdaki örnek yapılandırma verilerini adlı bir dosyaya kaydeder. `msbuild.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  Aşağıdaki örnekte, günlük dosyasının adı `MyProjectOutput.log`, ve günlük çıktısı ayrıntı düzeyini ayarlamak `diagnostic`. Bu iki ayar kullanarak belirtin **/filelogparameters** (`flp`) geçin.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  **/Filelogparameters** (`flp`) için 2 ve 3 dosyaları ne her dosya adı ve her dosyasına eklenecek gerekenler belirtin geçer. Ad böylece 1 ' dosyası için belirtilen varsayılan adını `msbuild1.log` kullanılır.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ Sıkıştırılmış, ikili biçim kullanılarak günlüğe kaydedebilirsiniz **
 
 Aşağıdaki örnekte, bir ikili günlük dosyası adı ile oluşturulan `binarylogfilename`.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1118fa4e6408698187e7f50ca6f9b61bf596a6e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: f7e5780a2462e8980c22c474ae6236c87aee599b
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234952"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302821"
 ---
 # <a name="handling-windows-runtime-events-in-javascript"></a>JavaScript'te Windows çalışma zamanı olayları işleme
 C++ veya .NET Framework oldukları gibi Windows çalışma zamanı olayları JavaScript aynı yolla temsil edilmez. Sınıf özelliklerini değildir ancak bunun yerine sınıfına ait geçirilen (dönüştürüldükten) dize tanımlayıcıları olarak temsil edilir `addEventListener` ve `removeEventListener` yöntemleri. Örneğin, bir olay işleyicisi ekleyebilirsiniz [Geolocator.PositionChanged](https://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) için "positionchanged" dizesi geçirerek olay `Geolocator.addEventListener` yöntemi:  
@@ -45,16 +45,15 @@ locator.onpositionchanged =
     };  
 ```  
   
- JavaScript'te, Windows çalışma zamanı olay bağımsız değişkenler tek bir olay nesnesi olarak temsil edilir. Aşağıdaki örnekte bir olay işleyicisi yönteminin `ev` parametredir (hedef özelliği) gönderen ve, başka bir olay bağımsız değişken içeren bir nesne. Olay bağımsız değişkenlerinin her olay için belgelenen olanlardır.  
+Başka bir .NET/C++ ve JavaScript arasında bir olay işleyici tarafından gerçekleştirilen parametre sayısı farktır. .NET/C++'da, bir işleyici iki alır: olay gönderen ve olay verileri. JavaScript'te, iki tek bir paketlendi `Event` nesnesi. Aşağıdaki örnekte, `ev` parametresi gönderen olay içerir ( `target` özelliği) ve olay veri özellikleri (burada, yalnızca `position`). Olay veri özellikleri, her olay için belgelenen olanlardır.
   
 ```JavaScript  
 function (ev) {  
-    console.log("Target: " + ev.target);  
+    console.log("Sender: " + ev.target);  
     console.log("Position: " +  
         ev.position.latitude + "," +  
         ev.position.longitude);  
 };  
-  
 ```  
   
 > [!IMPORTANT]

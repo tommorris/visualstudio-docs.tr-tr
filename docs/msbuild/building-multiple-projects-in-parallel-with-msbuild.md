@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164767c628a6b48a3d9479fdd4f7918f12093ea7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b904da68952cdb83c8c11094dec712861d535b73
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572247"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302686"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>MSBuild ile Paralel Olarak Birden Çok Proje Derleme
 Paralel olarak çalıştırarak daha hızlı birden çok proje oluşturmak için MSBuild kullanabilirsiniz. Derlemeleri paralel olarak çalıştırmak için çok çekirdekli veya birden çok işlemci bilgisayarda aşağıdaki ayarları kullanın:  
@@ -40,7 +40,7 @@ Paralel olarak çalıştırarak daha hızlı birden çok proje oluşturmak için
   
  Aşağıdaki örnekte, üç alt işlemleri kullanmak için MSBuild bildirir. Bu yapılandırma kullanırsanız, MSBuild aynı anda üç projeleri oluşturabilirsiniz.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj /maxcpucount:3   
 ```  
   
@@ -49,7 +49,7 @@ msbuild.exe myproj.proj /maxcpucount:3
   
  Nasıl ayarlanacağı hakkında microsoft.common.targets alınan bir örnek verilmiştir `BuildInParallel` parametresi.  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildInParallel Condition="'$(BuildInParallel)' ==   
         ''">true</BuildInParallel>  

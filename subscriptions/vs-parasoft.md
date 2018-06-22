@@ -9,16 +9,16 @@ description: Visual Studio aboneliğinize dahil Parasoft Sanallaştırılacak/SO
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 75ce02de0f7d534154ac075462484b2fc40f9328
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b03c5a5f47be44f6ae15c0a6d28d7155a37ea34d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199368"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280565"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Parasoft Sanallaştırılacak/SOAtest Professional masaüstü
 
-Daha önce ve daha sık sınayın.  Benzetimini ve sınamasını kullanılamaz gelişen uygulamalar ve sistemler davranışını.  Altı aylık aboneliğini ücretsiz, avantajı içerir.  Altı aylık aboneliğinizi sonunda % 25 indirimli fiyat bir yıllık abonelik için uygun.  
+Daha önce ve daha sık sınayın.  Benzetimini ve sınamasını kullanılamaz gelişen uygulamalar ve sistemler davranışını.  Altı aylık aboneliğini ücretsiz, avantajı içerir.  Altı aylık aboneliğinizi sonunda % 25 indirimli fiyat bir yıllık abonelik için uygun.
 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
@@ -29,20 +29,20 @@ Daha önce ve daha sık sınayın.  Benzetimini ve sınamasını kullanılamaz g
 
     ![Parasoft avantajı döşeme](_img\vs-parasoft\vs-parasoft-tile.png)
 
-2.  Bir hesap oluşturacağınız Parasoft Web sitesine yönlendirildi.  Yalnızca irtibat bilgilerinizi temin ve tıklatın **gönderme**. 
+2.  Bir hesap oluşturacağınız Parasoft Web sitesine yönlendirildi.  Yalnızca irtibat bilgilerinizi temin ve tıklatın **gönderme**.
 
     ![Parasoft avantajı hesabı oluşturma](_img\vs-parasoft\vs-parasoft-account-cropped.png)
 
 
 3.  Hesabınızı oluşturduktan sonra yükleme yönergelerini içeren bir e-posta gönderilen bir bildirim görürsünüz.  (E-posta kutunuzda görmüyorsanız, gereksiz veya gereksiz posta klasörlerinizi denetlemek unutmayın.)
 
-4.  E-posta açıp kopyalama **etkinleştirme kodu** panonuza. 
+4.  E-posta açıp kopyalama **etkinleştirme kodu** panonuza.
 
-5.  İşletim sisteminizi karşılık gelen bağlantıyı tıklatın.  
+5.  İşletim sisteminizi karşılık gelen bağlantıyı tıklatın.
 
     ![Parasoft avantajı Hoş Geldiniz e-posta](_img\vs-parasoft\vs-parasoft-email.png)
 
-6.  Kullandığınız tarayıcı bağlı olarak, farklı iletişim kutuları yükleyiciyi çalıştırmak olanağı sağlayarak görebilirsiniz.  Internet Explorer'da, örneğin, üst kısmında listelenen parasoft_soavirt_9.10.2_win32_x86_64.exe ile yeni yüklemeler listesini görürsünüz. Tıklatın **çalıştırmak** yükleyiciyi başlatmak için. 
+6.  Kullandığınız tarayıcı bağlı olarak, farklı iletişim kutuları yükleyiciyi çalıştırmak olanağı sağlayarak görebilirsiniz.  Internet Explorer'da, örneğin, üst kısmında listelenen parasoft_soavirt_9.10.2_win32_x86_64.exe ile yeni yüklemeler listesini görürsünüz. Tıklatın **çalıştırmak** yükleyiciyi başlatmak için.
 
 7.  Kullanıcı Hesabı Denetimi iletişim kutusu açıldığında, **Evet**.
 
@@ -52,21 +52,21 @@ Daha önce ve daha sık sınayın.  Benzetimini ve sınamasını kullanılamaz g
 
     ![Parasoft avantajı Yüklemeyi Başlat](_img\vs-parasoft\vs-parasoft-start-install.png)
 
-10. Tıklatın **anlaşmayı kabul**, ardından **sonraki**. 
+10. Tıklatın **anlaşmayı kabul**, ardından **sonraki**.
 
-11. Burada, dosyaları yüklemek ve tıklayın istediğinizi seçin **sonraki**. 
+11. Burada, dosyaları yüklemek ve tıklayın istediğinizi seçin **sonraki**.
 
-12. Ardından, yüklenecek bileşenleri seçin veya tüm (varsayılan) yükleyin.  Seçimlerinizi yapın ve tıklayın **sonraki**.  
+12. Ardından, yüklenecek bileşenleri seçin veya tüm (varsayılan) yükleyin.  Seçimlerinizi yapın ve tıklayın **sonraki**.
 
-13. Burada, gibi yüklü bir uygulamanın kısayolunu ve tıklatın belirtin **sonraki**. 
+13. Burada, gibi yüklü bir uygulamanın kısayolunu ve tıklatın belirtin **sonraki**.
 
-14. HTTPS sitelerde belirli işlevsel testleri için SOAtest Web kök sertifika yetkilisi sertifikası gereklidir.  Kök CA sertifikası yükleyin ve tıklatın konusundaki kararı **sonraki**.  
+14. HTTPS sitelerde belirli işlevsel testleri için SOAtest Web kök sertifika yetkilisi sertifikası gereklidir.  Kök CA sertifikası yükleyin ve tıklatın konusundaki kararı **sonraki**.
 
     ![Parasoft avantajı kök CA sertifikası](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
 
-15. Yükleme işlemi sırasında oluşturulan Masaüstü ve hızlı başlatma simgeler isteyip istemediğinizi seçin ve tıklatın **sonraki**. 
+15. Yükleme işlemi sırasında oluşturulan Masaüstü ve hızlı başlatma simgeler isteyip istemediğinizi seçin ve tıklatın **sonraki**.
 
-16. Seçtiğiniz ve tıklatın seçeneklerini Onayla **yükleme** yazılım yüklemeye başlamak için. 
+16. Seçtiğiniz ve tıklatın seçeneklerini Onayla **yükleme** yazılım yüklemeye başlamak için.
 
     ![Yüklemeye hazır Parasoft avantajı](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
 
@@ -82,13 +82,13 @@ Daha önce ve daha sık sınayın.  Benzetimini ve sınamasını kullanılamaz g
 | Visual Studio Dev Essentials | Yok  | Yok|Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).    Dışlar: Değil satışı için (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, düşünün, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).  Dışlar: Değil satışı için (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, düşünün, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
 
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Parasoft ürünlerle Yardım gerekiyor mu?  Bu kaynaklara gözatın:
-    - Teknik Destek:  https://www.parasoft.com/support/ 
-    - Parasoft Kaynak Merkezi:  https://www.parasoft.com/resources/ 
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 
+    - Teknik Destek:  https://www.parasoft.com/support/
+    - Parasoft Kaynak Merkezi:  https://www.parasoft.com/resources/
+-  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

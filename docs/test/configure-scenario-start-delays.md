@@ -10,23 +10,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296381"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Yük testlerinde Senaryo Başlatma Gecikmelerini Yapılandırma
 
-Yük Testi Düzenleyicisi'ni ve Özellikler penceresini kullanarak bir yük testinde senaryo başlamadan önce bir gecikme belirtin.
+Yük Testi Düzenleyicisini kullanarak bir yük testinde senaryo başlamadan önce bir gecikme belirtin ve **özellikleri** penceresi.
 
 Örneğin, kullanmak isteyebilirsiniz **gecikme başlangıç zamanı** başka bir senaryonun tükettiği öğeleri oluşturmaya başlamak için bir senaryo gerekiyorsa özelliği. Bazı verileri doldurmak üretmeye senaryosunu sağlamak üzere tüketim senaryosunu geciktirebilir.
 
 Yalnızca günün belirli bir saatte çalışacak bir senaryo sahip olabileceğiniz başka bir örnektir. Bu nedenle, bu benzetmek için senaryonun başlangıcı geciktirmek istersiniz.
 
-## <a name="specifying-the-delay-start-time-of-a-scenario"></a>Bir senaryonun gecikme başlangıç zamanını belirtme
+## <a name="specify-the-delay-start-time-of-a-scenario"></a>Bir senaryo gecikme başlangıç saatini belirtin
 
-Değiştirmek için Yük Testi Düzenleyicisi'ni kullanarak bir yük testinde senaryo başlamadan önce bir gecikme belirtebilirsiniz **gecikme başlangıç zamanı** Özellikleri penceresinde özelliği.
+Değiştirmek için Yük Testi Düzenleyicisi'ni kullanarak bir yük testinde senaryo başlamadan önce bir gecikme belirtebilirsiniz **gecikme başlangıç zamanı** özelliğinde **özellikleri** penceresi.
 
 > [!NOTE]
 > Yük testi senaryosu özellikleri ve açıklamalarının tam listesi için bkz: [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
@@ -48,7 +49,7 @@ Değiştirmek için Yük Testi Düzenleyicisi'ni kullanarak bir yük testinde se
 
 3. Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
 
-     Kategoriler ve Özellikler senaryonun Özellikler penceresinde görüntülenir.
+     Kategoriler ve Özellikler senaryonun görüntülenen **özellikleri** penceresi.
 
 4. Metin kutusunda **gecikme başlangıç zamanı** özelliği, yük testi sonra beklenecek süreyi belirten bir zaman değeri başlatır yük testi çalıştırdığınızda senaryoyu başlatmadan önce türü.
 
@@ -57,11 +58,11 @@ Değiştirmek için Yük Testi Düzenleyicisi'ni kullanarak bir yük testinde se
 
 5. Özelliği değiştirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından, yeni kullanarak yük testlerini çalıştırabilirsiniz **gecikme başlangıç zamanı** değeri.
 
-## <a name="enabling-and-disabling-whether-a-scenario-runs-during-the-warm-up-period"></a>Etkinleştirme ve bir senaryo Isınma süresi boyunca çalıştırıldığını devre dışı bırakma
+## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>Etkinleştirme ve devre dışı bir senaryo Isınma süresi boyunca çalıştırıldığını
 
-**Isınma sırasında devre dışı bırak** özelliği, Özellikler penceresini kullanarak ayarlanır. Yük testi senaryosu özellikleri düzenleme Yük Testi Düzenleyicisi tarafından ayarlanır.
+**Isınma sırasında devre dışı bırak** özelliği kullanılarak ayarlanmış **özellikleri** penceresi. Yük testi senaryosu özellikleri düzenleme Yük Testi Düzenleyicisi tarafından ayarlanır.
 
- **Isınma sırasında devre dışı bırak** özelliği senaryo çalıştırmak veya belirtilen Isınma süresi sırasında çalışmayabilir belirtmek için kullanılır **gecikme başlangıç zamanı** özelliği. Daha fazla bilgi için önceki yordamda gözden [gecikme başlangıç zamanı bir senaryonun belirtme](../test/configure-scenario-start-delays.md#ConfiguringScenarioStartDelayHowTo).
+ **Isınma sırasında devre dışı bırak** özelliği senaryo çalıştırmak veya belirtilen Isınma süresi sırasında çalışmayabilir belirtmek için kullanılır **gecikme başlangıç zamanı** özelliği. Daha fazla bilgi için önceki yordamda gözden [gecikme başlangıç saati bir senaryonun belirtin](#specify-the-delay-start-time-of-a-scenario).
 
 > [!NOTE]
 > Çalışma ayarları özelliklerini ve açıklamalarının tam listesi için bkz: [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).

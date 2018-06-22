@@ -9,21 +9,21 @@ description: Satın alın ve müşterileriniz için Visual Studio bulut abonelik
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199085"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283383"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Satın alma ve müşterileriniz için Visual Studio bulut Abonelikleri Yönetme
 
-İçinde iş ortaklarına [bulut çözümü sağlayıcısı (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) program müşterileri için Visual Studio Enterprise ve Visual Studio Professional bulut aboneliği satın alabilirsiniz. 
+İçinde iş ortaklarına [bulut çözümü sağlayıcısı (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) program müşterileri için Visual Studio Enterprise ve Visual Studio Professional bulut aboneliği satın alabilirsiniz.
 
-[Bulut aboneliği seçenekleri Karşılaştır](https://www.visualstudio.com/vs/pricing)
+[Bulut aboneliği seçenekleri Karşılaştır](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Önkoşullar
-İlk müşteri Kiracı İş ortağı Merkezi'nde ayarlamak ve bu Kiracı için bir Azure aboneliği oluşturmanız gerekir. 
+İlk müşteri Kiracı İş ortağı Merkezi'nde ayarlamak ve bu Kiracı için bir Azure aboneliği oluşturmanız gerekir.
 [Daha fazla bilgi edinin](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>Satın alma
@@ -58,9 +58,10 @@ Satın alma onaylandıktan sonra seçebileceğiniz **Yönet** abonelikleri müş
 
 Bu müşteri için birden fazla Azure aboneliğiniz varsa, satın alma işlemleri yapılan Azure aboneliği seçmek için açılır menüyü kullanın.  **Lisans özeti** atanmış olan abonelik sayısını ve ne kadar her Visual Studio bulut aboneliğini seçeneği için kullanılabilir olduğunu gösterir.  Özet ek abonelik satın alma veya abonelik sayısını azaltmak sağlar.
 
-Seçin **ekleme** bir abonelik yeni bir kullanıcıya atamak için.  Görüntülenen sayısı güncelleştirmeleri ve son kullanıcı bir e-posta bildirimi alır. Son kullanıcı ardından Visual Studio aboneliğini etkinleştirmek için sağlanan e-posta adresi kullanarak oturum açabilirsiniz [Visual Studio abone portalı](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+Seçin **ekleme** bir abonelik yeni bir kullanıcıya atamak için.  Görüntülenen sayısı güncelleştirmeleri ve son kullanıcı bir e-posta bildirimi alır.
+Son kullanıcı ardından Visual Studio aboneliğini etkinleştirmek için sağlanan e-posta adresi kullanarak oturum açabilirsiniz [Visual Studio abone portalı](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 
-Farklı bir kullanıcı için bir Visual Studio abonelik yeniden atamak için geçerli abone silin ve yeni aboneleri ekleyin. 
+Farklı bir kullanıcı için bir Visual Studio abonelik yeniden atamak için geçerli abone silin ve yeni aboneleri ekleyin.
 
 Abone Visual Studio aboneliğini etkinleştirdiyseniz, bu kurmadı davet e-posta eksik olabilir.  Biz kullanıcıya Visual Studio Yönetici portalı içinde etkinleştirme davet çok yeniden isteyebilir.
 
@@ -81,15 +82,17 @@ Bu elektronik tabloda gördükleri yorumlama şöyledir:
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>S: nasıl olan **aylık** bulut işlenen Abonelik ücretleri?
-A: ilk satın alma sırasında kalan gün geçerli ay içinde kapsayacak şekilde eşit olarak bölünmüş bir miktar faturalandıracaktır. Örneğin, olduğundan 5 birimleri ücret sonra 10 Visual Studio Professional aylık bulut abonelikleri satın 15 Nisan yapılmışsa 30 günlük ay içinde 15 gün sol veya %50 ve % 50 ücret birimleri prorate. İptal kadar ilk Mayıs ve bundan sonra her ay tam 10 birim Fatura edilecek.
+A: ilk satın alma sırasında kalan gün geçerli ay içinde kapsayacak şekilde eşit olarak bölünmüş bir miktar faturalandıracaktır. Örneğin, olduğundan 5 birimleri ücret sonra 10 Visual Studio Professional aylık bulut abonelikleri satın 15 Nisan yapılmışsa 30 günlük ay içinde 15 gün sol veya %50 ve % 50 ücret birimleri prorate.
+İptal kadar ilk Mayıs ve bundan sonra her ay tam 10 birim Fatura edilecek.
 
-Biz de ödenen miktar daha sonra artırdığınızda, geçerli ayın kalan gün kapsayacak şekilde artan birimleri prorate. Bu nedenle 1 daha fazla Visual Studio Professional aylık bulut aboneliği May 10 satın aldıysanız, biz kabaca 0.677 birimler (21 Mayıs 31 gün ay içinde kalan gün) faturalandıracaktır. 
+Biz de ödenen miktar daha sonra artırdığınızda, geçerli ayın kalan gün kapsayacak şekilde artan birimleri prorate. Bu nedenle 1 daha fazla Visual Studio Professional aylık bulut aboneliği May 10 satın aldıysanız, biz kabaca 0.677 birimler (21 Mayıs 31 gün ay içinde kalan gün) faturalandıracaktır.
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>S: nasıl olan **yıllık** bulut işlenen Abonelik ücretleri?
 A: her bir satınalma adresindeki hemen satın alınan tam miktar faturalandıracaktır. Ücretler yılda yayılır değil ve yok yok. Yıl farklı zamanlarda yıllık abonelikler satın alırsanız, farklı aylarda yenileme abonelikleri gerekir. Biz Müşteri'nin yıllık abonelikler tüm Microsoft toplu lisans sözleşmesi satın alma ile ortak olarak coterminous yapmayın.
 
 ### <a name="q-how-do-cancelations-work"></a>S: iptalleri nasıl çalışır?
-A: Visual Studio bulut aboneliğini iptal, Otomatik yenilemeyi iptal ettiğiniz. Abonelik, normal yenileme tarihe kadar devam eder ve yalnızca süresi dolar. Süre sonu Visual Studio abone artık Visual Studio veya başka bir avantaj abonelikten kullanabilirsiniz.
+A: Visual Studio bulut aboneliğini iptal, Otomatik yenilemeyi iptal ettiğiniz. Abonelik, normal yenileme tarihe kadar devam eder ve yalnızca süresi dolar.
+Süre sonu Visual Studio abone artık Visual Studio veya başka bir avantaj abonelikten kullanabilirsiniz.
 
 Aylık bulut abonelikleriyle iptalleri sonraki ayın ilk günü etkili olur. Yalnızca bazı müşterinizin aylık bulut Abonelikleri iptal ederseniz, doğru kişilerin atanan etkin aboneliklere sahip devam etmesini sağlamak için sonraki ayın ilk kullanıcılar kaldırdığınızdan emin olun.
 
@@ -108,7 +111,7 @@ Bu nedenle, örneğin, 6 Visual Studio Professional aylık abonelikleri ve 5 Vis
 
 Ayrıca, indirim yalnızca belirli bir aylık fatura döneminde görülecektir ücretleri için geçerlidir. Bu nedenle bir ay içinde 5 Visual Studio Professional yıllık abonelik satın alın ve sonra daha fazla sonraki ay 5 satın, normal fiyat tüm 10 Aboneliklerde ücret ödersiniz.
 
-Bu indirimleri içinde fiyatlandırma veri yansıtılır [ortağı Merkezi'nde](https://partnercenter.microsoft.com). 
+Bu indirimleri içinde fiyatlandırma veri yansıtılır [ortağı Merkezi'nde](https://partnercenter.microsoft.com).
 
 ### <a name="q-are-there-renewal-discounts"></a>S: yenileme indirimleri var mı?
 

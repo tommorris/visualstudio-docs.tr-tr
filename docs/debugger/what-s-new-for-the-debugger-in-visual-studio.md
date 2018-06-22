@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07f25edb63e3418bab44d71bc8314d3aa83e7a84
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dfdddaab181455ede946a47eac96fdfee022d200
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477160"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282489"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Hata Ayıklayıcısı'ndaki yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -58,7 +58,7 @@ Hata ayıklayıcı bu yeni özellikler içerir:
 
 - Şimdi bir hata ayıklayıcısı'ndaki seçerek duraklatıldı sırada kod satırı için çalıştırabilirsiniz **yürütülmesi için burada** yeşil ok simgesi (gördüğünüz simgeyi bir kod satırı getirildiğinde sırasında). Bu, geçici kesme noktalarını ayarlama gereğini ortadan kaldırır.
 
-    ![Hata ayıklayıcı tıklatın çalıştıran](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+    ![Hata ayıklayıcı tıklatın çalıştıran](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
 
 - Koşullar durumlar ayarlayabilirsiniz **Exception ayarlarını** iletişim kutusu (kullanarak bunu yapabilirsiniz **koşulu Düzenle** özel ayarları iletişim kutusunda ya da sağ tıklatma menüsünü kullanarak simgesi özel durum.) Şu anda desteklenen koşullar dahil etmek veya hariç özel durumuna modül adlarını içerir.
 
@@ -66,10 +66,11 @@ Hata ayıklayıcı bu yeni özellikler içerir:
 
 - İletişim kutusu, daha hızlı bir şekilde eklemek için gereken işlem tanımanıza yardımcı olacak yeni bir arama özelliği içerir işlem iliştirin.
 
-    ![Aramada ekleme işlemi için](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch") 
+    ![Aramada ekleme işlemi için](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Bu yeni özellikler hakkında daha fazla bilgi için bkz: [için sürüm notları [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag).
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio’da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)
+Bu yeni özellikler hakkında daha fazla bilgi için bkz: [için sürüm notları [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)

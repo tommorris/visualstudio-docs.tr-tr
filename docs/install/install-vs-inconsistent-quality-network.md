@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296306"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Visual Studio 2017 düşük bant genişliği veya güvenilmeyen ağ ortamları yükleyin
 
 Visual Studio web yükleyicisi denemenizi öneririz&mdash;bulabilirsiniz, iyi bir deneyim çoğu durumlarda düşünüyoruz.
 
  > [!div class="button"]
- > [Visual Studio 2017 İndir](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Visual Studio 2017 İndir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 Ancak, Internet bağlantınız kullanılabilir veya güvenilir olmayan ise, çevrimdışı bir yüklemeyi tamamlamak için gereken dosyaları yerel önbelleği oluşturmak için komut satırını kullanabilirsiniz. İşte nasıl.
@@ -46,7 +47,7 @@ Kurulum&mdash;veya daha özel bir önyükleyici dosya&mdash;eşleşmiyor veya a�
 
 ## <a name="step-2---create-a-local-install-cache"></a>2. adım - yerel yükleme önbelleği oluşturma
 
-Bu adımı tamamlamak için bir Internet bağlantısına sahip olmalıdır. Yerel bir düzen oluşturmak için bir komut istemi açın ve aşağıdaki örnekleri komutlarından birini kullanın: Burada örneklerde, Visual Studio; Community sürümü kullandığınız varsayılmaktadır komut sürümünüz için uygun şekilde ayarlayın.
+Bu adımı tamamlamak için bir Internet bağlantısına sahip olmalıdır. Yerel bir düzen oluşturmak için bir komut istemi açın ve aşağıdaki örnekleri komutlarından birini kullanın. Burada örneklerde, Visual Studio Community sürümü kullandığınız varsayılmaktadır; komut sürümünüz için uygun şekilde ayarlayın.
 
 - .NET web ve .NET masaüstü geliştirme için çalıştırın:
 
@@ -106,7 +107,7 @@ Yükleme çalıştırmak için bu komutu kullanın:
 
 ## <a name="get-support"></a>Destek alma
 
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
+Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Birkaç diğer destek seçenekleri şunlardır:
 
@@ -120,3 +121,4 @@ Birkaç diğer destek seçenekleri şunlardır:
 * [Visual Studio'yu yükleyin](install-visual-studio.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md)

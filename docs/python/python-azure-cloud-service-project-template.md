@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 49314b5a9e2c95549207b938187bbe94ba393de1
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031819"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280777"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 
@@ -29,7 +29,7 @@ Bu makale proje şablonu ve diğer Visual Studio (önceki sürümlerinde benzer,
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-1. Yükleme [Visual Studio için Azure .NET SDK'sı](https://www.visualstudio.com/vs/azure-tools/), bulut hizmet şablonu kullanmak için gereklidir.
+1. Yükleme [Visual Studio için Azure .NET SDK'sı](https://visualstudio.microsoft.com/vs/azure-tools/), bulut hizmet şablonu kullanmak için gereklidir.
 1. Visual Studio'da seçin **Dosya > Yeni > Proje...** , "Azure Python" için arama yapın ve seçin **Azure bulut hizmeti** listeden:
 
     ![Python için Azure bulut proje şablonu](media/template-azure-cloud-project.png)

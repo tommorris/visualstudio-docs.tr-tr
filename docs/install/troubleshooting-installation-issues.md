@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766044"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282960"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme ve yükseltme sorunlarını giderme
 
@@ -33,7 +33,7 @@ Bu sorunu çözmek için şu adımları izleyin.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>1. adım - bu sorunun bilinen bir sorun olup olmadığını denetleyin
 
-Düzeltmeye çalışan Microsoft Visual Studio yükleyicisi bilinen bazı sorunlar vardır. Geçici bir çözüm için sorunu olup olmadığını görmek için kontrol [bizim sürüm notları bilinen sorunlar bölümüne](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues).
+Düzeltmeye çalışan Microsoft Visual Studio yükleyicisi bilinen bazı sorunlar vardır. Geçici bir çözüm için sorunu olup olmadığını görmek için kontrol [bizim sürüm notları bilinen sorunlar bölümüne](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
 
 ### <a name="step-2---check-with-the-developer-community"></a>2. adım - denetimi ile Geliştirici topluluğu
 
@@ -48,7 +48,7 @@ Aşağıdaki eylemleri gerçekleştirerek, Visual Studio Installer dosyalarını
 
 1. Visual Studio Yükleyicisi’ni kapatın.
 2. Visual Studio yükleyicisi dizini silin. Genellikle, dizindir `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Visual Studio yükleyicisi önyükleyici çalıştırın. İzleyen bir dosya adına sahip yüklemeleri klasörünüzdeki önyükleyici bulabilirsiniz bir `vs_[Visual Studio edition]__*.exe` düzeni. Bu uygulama bulamazsanız, giderek önyükleyici indirebilirsiniz [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/) sayfa ve tıklayarak **karşıdan** Visual Studio sürümünüz için. Yükleme meta verileriniz sıfırlamak için yürütülebilir dosyayı çalıştırmak.
+3. Visual Studio yükleyicisi önyükleyici çalıştırın. İzleyen bir dosya adına sahip yüklemeleri klasörünüzdeki önyükleyici bulabilirsiniz bir `vs_[Visual Studio edition]__*.exe` düzeni. Bu uygulama bulamazsanız, giderek önyükleyici indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) sayfa ve tıklayarak **karşıdan** Visual Studio sürümünüz için. Yükleme meta verileriniz sıfırlamak için yürütülebilir dosyayı çalıştırmak.
 4. Yükleme veya Visual Studio güncelleştirmeyi yeniden deneyin. Yükleyici başarısız olmaya devam ederse sonraki adıma geçin.
 
 ### <a name="step-4---report-a-problem"></a>4. adım - bir sorunu bildirin
@@ -71,7 +71,7 @@ Son çare olarak, şunları yapabilirsiniz [Visual Studio kaldırmak](remove-vis
 
 ### <a name="step-6---contact-us-optional"></a>6. adım - (isteğe bağlı) bizimle iletişime geçin
 
-Diğer adımların hiçbiri başarılı bir şekilde yüklemeye izin verirseniz, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
+Diğer adımların hiçbiri başarılı bir şekilde yüklemeye izin verirseniz, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Çevrimdışı bir yükleyici ile ilgili sorunları giderme
 
@@ -100,7 +100,7 @@ Günlükleri toplamak için:
 
 ## <a name="more-support-options"></a>Daha fazla destek seçenekleri
 
-Diğer adımların hiçbiri başarılı bir şekilde yüklemeye izin verirseniz, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://www.visualstudio.com/vs/support/#talktous).
+Diğer adımların hiçbiri başarılı bir şekilde yüklemeye izin verirseniz, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Birkaç diğer seçenekler şunlardır:
 

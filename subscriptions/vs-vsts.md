@@ -9,22 +9,23 @@ description: Visual Studio abone olarak Visual Studio Team Services (VSTS) nası
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f5dc617f9baa801e17d2fd9862103d9079b3368
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196082"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281826"
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio aboneleri için Visual Studio Team Services (VSTS) avantajları
 
-Etkin bir Visual Studio abone olarak, aboneliğinizi bir avantajı olarak dahil edilen VSTS çeşitli özellikler kullanabilirsiniz. Hesap oluşturduğunuz ya da başka bir kullanıcı tarafından eklenen--üyesi olan her VSTS hesabında aynı bu özellikleri kullanan olması.
+Etkin bir Visual Studio abone olarak, aboneliğinizi bir avantajı olarak dahil edilen VSTS çeşitli özellikler kullanabilirsiniz. Hesap oluşturduğunuz ya da başka bir kullanıcı tarafından eklenen bir üyesi olan her VSTS hesabında aynı bu özellikleri kullanan olması.
 
 Oturum açtığınızda VSTS kullanarak Visual Studio aboneliğinizi etkinleştirmek için kullanılan kimlik veya [alternatif kimlik](vs-alternate-identity.md), biz bu otomatik olarak algılar.
 
-[Ücretsiz VSTS hesap için kaydolun](https://www.visualstudio.com/team-services/)
+[Ücretsiz VSTS hesap için kaydolun](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>Uygunluk
+
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart, yıllık bulut, aylık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup>, FTE  | Temel, Test Yöneticisi, paket Yönetimi CI/CD kendi kendini barındırır       |  Evet          |
@@ -32,12 +33,11 @@ Oturum açtığınızda VSTS kullanarak Visual Studio aboneliğinizi etkinleşti
 | Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Temel, Test Yöneticisi                                              |  Evet          |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Temel, Test Yöneticisi                                              |  Evet          |
 
-<sup>1</sup>*içerir: değil satışı (NFR) için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), BizSpark, MCT yazılım ve Hizmetleri Geliştirici.   Dışlar: MCT yazılım ve hizmetlerini düşünün.*
-
-
+<sup>1</sup>*içerir: değil satışı (NFR) için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), BizSpark, MCT yazılım ve Hizmetleri Geliştirici. Dışlar: MCT yazılım ve hizmetlerini düşünün.*
 
 VSTS özellikler hakkında daha fazla bilgi edinin:
-- [Temel](https://www.visualstudio.com/team-services/compare-features/)
+
+- [Temel](https://visualstudio.microsoft.com/team-services/compare-features/)
 - [Test Yöneticisi](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Paket Yönetimi](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
@@ -46,6 +46,6 @@ Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi
 
 ## <a name="support-resources"></a>Destek kaynakları
 
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/).
+-  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 -  Tam [Visual Studio Team Services belgelerine](/vsts/).

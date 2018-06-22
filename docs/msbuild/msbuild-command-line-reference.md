@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 536a19e26fa935f26201692d539c6ecd51270d32
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c99a72c4679c334d202e0a30c7c1b846b1aa30af
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576020"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303354"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild Komut Satırı Başvurusu
 Bir proje veya çözüm dosyası oluşturmak için MSBuild.exe kullandığınızda, işlemi çeşitli yönlerini belirlemek için birkaç anahtar ekleyebilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cmd  
 MSBuild.exe [Switches] [ProjectFile]  
 ```  
   
@@ -77,14 +77,14 @@ MSBuild.exe [Switches] [ProjectFile]
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek derlemeler `rebuild` hedefinin `MyProject.proj` projesi.  
   
-```  
+```cmd  
 MSBuild.exe MyProject.proj /t:rebuild  
 ```  
   
 ## <a name="example"></a>Örnek  
  MSBuild.exe, daha karmaşık derlemeleri gerçekleştirmek için kullanabilirsiniz. Örneğin, belirli projelerin bir çözümde belirli hedefler derleme için kullanabilirsiniz. Aşağıdaki örnek projeyi yeniden oluşturur `NotInSolutionFolder` ve projeyi temizler `InSolutionFolder`, içinde olduğu `NewFolder` Çözüm klasörü.  
   
-```  
+```cmd  
 msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
 ```  
   

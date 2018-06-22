@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e49ea6de96f89e2761699972ffaf6bf9fd16356
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238179"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281812"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -33,11 +33,11 @@ Xamarin için Visual Studio Araçları ile kod ve hatta UI paylaşımı aynı ç
 
 |**Daha fazla bilgi edinin**|
 |--------------------|
-|[Visual Studio yükleme](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Visual Studio'da Xamarin hakkında bilgi edinin](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Visual Studio yükleme](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Visual Studio'da Xamarin hakkında bilgi edinin](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Xamarin mobil uygulama geliştirme belgeleri](/xamarin/) |
 |[Xamarin uygulamalarıyla Uygulama Yaşam Döngüsü Yönetimi (ALM)](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
-|[Visual Studio'da Evrensel Windows uygulamaları hakkında bilgi edinin](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[Visual Studio'da Evrensel Windows uygulamaları hakkında bilgi edinin](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[SWIFT ve C# arasındaki benzerlikler hakkında bilgi edinin](http://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Android, iOS ve Windows bir tek kodundan temel hedef
@@ -106,9 +106,9 @@ Xamarin için Visual Studio Araçları ile kod ve hatta UI paylaşımı aynı ç
 
 |**Daha fazla bilgi edinin**|
 |--------------------|
-|[Visual Studio yükleme](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Visual Studio yükleme](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Apache Cordova için Visual Studio Araçları ile çalışmaya başlama](/visualstudio/cross-platform/tools-for-cordova/)|
-|[Android için Visual Studio öykünücüsü hakkında bilgi edinin](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Android için Visual Studio öykünücüsü hakkında bilgi edinin](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 <a name="CPP"></a>
 
@@ -135,11 +135,11 @@ Xamarin için Visual Studio Araçları ile kod ve hatta UI paylaşımı aynı ç
 
 |**Daha fazla bilgi edinin**|
 |--------------------|
-|[Visual Studio indirin.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Visual Studio indirin.](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Visual C++ için platformlar arası mobil geliştirme araçlarını yükleyin.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Kitaplığı)|
-|[Hedef birden çok platform için C++ kullanma hakkında daha fazla bilgi edinin.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Hedef birden çok platform için C++ kullanma hakkında daha fazla bilgi edinin.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Neleri gerekir ve ardından Android için bir yerel etkinlik uygulaması oluşturun yüklemek](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Kitaplığı)|
-|[C++ kodu ile Android ve Windows uygulamaları paylaşma hakkında daha fazla bilgi](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[C++ kodu ile Android ve Windows uygulamaları paylaşma hakkında daha fazla bilgi](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[C++ için platformlar arası mobil geliştirme örnekleri](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Kitaplığı)|
 |[C++ için ek platformlar arası mobil geliştirme örnekleri](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -155,7 +155,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta UI paylaşımı aynı ç
 
 |**Daha fazla bilgi edinin**|
 |--------------------|
-|[Visual Studio ile oyunlar Unity oluşturma hakkında daha fazla bilgi edinin](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Visual Studio ile oyunlar Unity oluşturma hakkında daha fazla bilgi edinin](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Unity için Visual Studio Araçları hakkında daha fazla bilgi](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Unity için Visual Studio araçlarını kullanmaya başlama](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[En son geliştirmeleri hakkında Unity 2.0 Önizleme için Visual Studio Araçları okuma](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (Visual Studio blogu)|

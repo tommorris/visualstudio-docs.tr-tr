@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1a406834a4916a8a91644d34d682d86497827c6f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa1c2e97b52027c81749d0e4cd75ea767f2d1c13
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255518"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280396"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile Başlarken
 Bu bölümde, Unity için Visual Studio araçlarını yükleme ve Unity projeniz Visual Studio ile çalışmak için yapılandırma hakkında bilgi edineceksiniz.
@@ -28,7 +28,7 @@ Bu bölümde, Unity için Visual Studio araçlarını yükleme ve Unity projeniz
 
 -   Bir sürümünü **Visual Studio** uzantıları, Visual Studio Community, Professional, Premium veya Enterprise gibi destekler. Visual Studio Community'yi ücretsiz indirebilirsiniz.
 
-     [Visual Studio Community'yi indirin](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+     [Visual Studio Community'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 -   **Unity** sürüm 4.0.0 veya üzeri; **Unity** sürüm 5.2.0 veya Visual Studio Araçları Unity sürüm 2.1 veya üzeri için yerleşik destek yararlanmak için daha yüksek.
 

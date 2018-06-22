@@ -9,23 +9,23 @@ description: Visual Studio aboneliğinize dahil MSDN dergisi abonelik almak kayd
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196820"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280326"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde MSDN dergisi avantajı
 
-Microsoft teknolojileri gerçek dünyadaki sorunları pratik çözümleri için kapsamlı.  Aboneliğinize bağlı olarak yazdırılan dergi veya dijital sürüm erken erişim hakkınız bulunmaktadır.  
+Microsoft teknolojileri gerçek dünyadaki sorunları pratik çözümleri için kapsamlı.  Aboneliğinize bağlı olarak yazdırılan dergi veya dijital sürüm erken erişim hakkınız bulunmaktadır.
 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-Adımlar, avantajı etkinleştirmek için seçtiğiniz sürüm bağlıdır.  
+Adımlar, avantajı etkinleştirmek için seçtiğiniz sürüm bağlıdır.
 
 ### <a name="digital-edition"></a>Dijital edition
-Visual Studio geliştirme Essentials üyelerine dijital Edition'da kullanılabilir.  
+Visual Studio geliştirme Essentials üyelerine dijital Edition'da kullanılabilir.
 
 1.  Dijital MSDN Edition dergisi erişmek için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  MSDN dergisi döşeme Professional geliştirme bölümünde bulun ve tıklatın **erişim**.
@@ -37,7 +37,7 @@ Visual Studio geliştirme Essentials üyelerine dijital Edition'da kullanılabil
     ![MSDN dergisi avantajı döşeme](_img\vs-msdn\vs-msdn-tile.png)
 
 
-3.  MSDN dergisi sayfasında tercih edilen abonelik türünüzü seçin.  Nerede olursa olsun hiçbir ücret dijital edition seçebilirsiniz.  Yazdırılan sürüm ABD Satışlar için ücretsiz olarak kullanılabilir.  ABD dışındaki adreslere gönderilen yazdırılan sürümleri için sevkiyat ücretleri uygulanır.  
+3.  MSDN dergisi sayfasında tercih edilen abonelik türünüzü seçin.  Nerede olursa olsun hiçbir ücret dijital edition seçebilirsiniz.  Yazdırılan sürüm ABD Satışlar için ücretsiz olarak kullanılabilir.  ABD dışındaki adreslere gönderilen yazdırılan sürümleri için sevkiyat ücretleri uygulanır.
 
     ![MSDN dergisi avantajı abonelikleri](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
@@ -57,15 +57,15 @@ Visual Studio geliştirme Essentials üyelerine dijital Edition'da kullanılabil
 |Visual Studio Enterprise, Visual Studio Professional (aylık bulut)   | Azure |Yok      |  Yok         |
 |Visual Studio Dev Essentials| Yok |Dijital edition       |  Evet|
 
-<sup>1</sup>*yazdırılan edition: satışı (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, Microsoft iş ortağı ağı (Kurumsal) için Imagine (Premium).*   
+<sup>1</sup>*yazdırılan edition: satışı (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, Microsoft iş ortağı ağı (Kurumsal) için Imagine (Premium).*
 
 *Dijital Edition: MCT yazılım ve Hizmetleri, Microsoft değerli iş ortağı (Professional), bölge Yöneticisi (RD).*
 
 *Dışlar: Düşünün (standart), BizSpark, MCT yazılım ve Hizmetleri Geliştirici*
 
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir. 
+Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://www.visualstudio.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://www.visualstudio.com/support/). 
+-  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

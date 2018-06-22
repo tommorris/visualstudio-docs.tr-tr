@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e16680b9122565430907b14e16b32d277bfb455
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: f9dcf9079a444b581cacbe4e013149259b3ecb87
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234494"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283213"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 
@@ -106,11 +106,11 @@ Verilere bağlı denetimler oluşturmadan önce uygulamanız için bir veri mode
 
 Veri kümesini verilerle doldurmak için kullanmak `Fill` yöntemi `ProductTableAdapter`. Varsayılan olarak, `Fill` yöntemi dolgular `ProductDataTable` içinde `AdventureWorksLTDataSet` veri ürün tablodan tüm satırları ile. Yalnızca satırların alt kümesini döndürmek için bu yöntemi değiştirebilirsiniz. Bu kılavuz için değiştirme `Fill` döndürülecek yöntemi yalnızca Fotoğraf olan ürünler için satırlar.
 
-1.  İçinde **Çözüm Gezgini**, çift `AdventureWorksLTDataSet.xsd` dosya.
+1.  İçinde **Çözüm Gezgini**, çift *AdventureWorksLTDataSet.xsd* dosya.
 
      Veri kümesi Tasarımcısı'nı açar.
 
-2.  Tasarımcıda sağ **doldurun, GetData()** sorgulamak ve seçin **yapılandırma**.
+2.  Tasarımcıda sağ **doldurun**, **GetData()** sorgulamak ve seçin **yapılandırma**.
 
      **TableAdapter yapılandırma** Sihirbazı açılır.
 
@@ -177,7 +177,7 @@ Müşteri kayıtlarını sürükleyerek görüntüleyen denetimler oluşturma `P
 
 7.  İçinde **özellikleri** yanındaki onay kutusunu penceresinde, seçin **IsReadOnly** özelliği.
 
-## <a name="navigating-product-records"></a>Ürün kayıt gezinme
+## <a name="navigate-product-records"></a>Ürün kaydı gidin
 
 Kullanarak ürün kayıtları arasında kaydırma yapma olanağı sağlayan kodu eklemek **\<** ve **>** düğmeler.
 

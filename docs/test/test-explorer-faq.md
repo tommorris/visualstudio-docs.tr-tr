@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975634"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303289"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini ile ilgili SSS
 
@@ -72,7 +72,7 @@ ms.locfileid: "31975634"
   Proje, Namespace ve sınıf gruplandırmaları yanındaki simge, gruplandırma testlerde durumunu yansıtır. Aşağıdaki tabloya bakın.
 
   ![Test Gezgini hiyerarşi simgeler](media/testex-hierarchyicons.png)
-  
+
 ### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Test Gezgini arama kutusuna artık "Dosya yolu" filtre var.
 
 Dosya yolu filtrede **Test Gezgini** arama kutusuna, Visual Studio 2017 sürüm 15.7 preview 3 kaldırıldı. Bu özellik düşük kullanımı var ve bu özellik hariç tutarak, test yöntemleri daha hızlı Test Gezgini alabilirsiniz. Bu değişiklik, geliştirme akışınızı keser, lütfen bize geri bildirim gönderme tarafından bildirin [Geliştirici topluluğu](https://developercommunity.visualstudio.com/).

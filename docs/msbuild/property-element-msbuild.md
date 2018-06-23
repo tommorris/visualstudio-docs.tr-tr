@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f98e1cc8b3ce016580e477dfa648a493df1c1e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 38a30dde405c172a1bf29f69edf4e3b9d1b79eee
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570892"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327365"
 ---
 # <a name="property-element-msbuild"></a>Özellik Öğesi (MSBuild)
 Kullanıcı tanımlı özellik adını ve değerini içerir. Kullanılan her özellik bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir alt öğesi olarak proje belirtilen bir `PropertyGroup` öğesi.  
@@ -33,7 +33,7 @@ Kullanıcı tanımlı özellik adını ve değerini içerir. Kullanılan her öz
 
 ## <a name="syntax"></a>Sözdizimi  
 
-```  
+```xml  
 <Property Condition="'String A' == 'String B'">  
     Property Value  
 </Property>  

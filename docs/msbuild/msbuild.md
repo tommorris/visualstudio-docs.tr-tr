@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26646ecef952a6f4ff761f4e7239fc6e7e920ea1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e56cc8671da9639344b6531a530029a97c02e707
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576007"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327160"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmak için bir platformdur. Olarak da bilinen MSBuild olduğundan, bu altyapı yapı platformunu nasıl işler ve yazılım derlemeler denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio bağımlı değil. Proje ya da çözüm dosyanızı MSBuild.exe çağırarak düzenlemek ve ürünleri, Visual Studio yüklü olmayan ortamlarda oluşturun.  
@@ -75,7 +75,7 @@ ms.locfileid: "31576007"
 ##  <a name="BKMK_CommandPrompt"></a> Bir komut isteminde MSBuild kullanma  
  Çalıştırmak için [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir komut isteminde, bir proje dosyası MSBuild.exe için uygun komut satırı seçenekleri ile birlikte geçirin. Komut satırı seçenekleri özelliklerini ayarlamak için belirli hedefler yürütün ve yapı işlemini denetleyen diğer seçenekleri sağlar. Örneğin, dosyayı oluşturmak için aşağıdaki komut satırı sözdizimi kullanırsınız `MyProj.proj` ile `Configuration` özelliğini `Debug`.  
   
-```  
+```cmd  
 MSBuild.exe MyProj.proj /property:Configuration=Debug  
 ```  
   
@@ -89,7 +89,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Aşağıdaki bölümlerde bazı temel öğelerinin açıklanmaktadır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası biçimi. Temel Proje dosyasının nasıl oluşturulacağı hakkında bir öğretici için bkz: [izlenecek yol: sıfırdan MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
-###  <a name="BKMK_Properties"></a> özellikleri  
+###  <a name="BKMK_Properties"></a> Özellikleri  
  Özellikler derlemeleri yapılandırmak için kullanılan anahtar/değer çiftlerini temsil eder. Özellikler, bir alt öğesi olarak özelliğinin adı olan bir öğeyi oluşturarak bildirildiğinde bir [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) öğesi. Örneğin, aşağıdaki kod adlı bir özellik oluşturur `BuildDir` değerine sahip `Build`.  
   
 ```xml  

@@ -9,12 +9,12 @@ description: Visual Studio geliştirme Essentials programı bırakmak öğrenin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 383216b898e9eef62fbe825454cda4ed6c11ea2c
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 1e826c4daebbd3ea63645b48b392a19304e2b571
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335872"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326780"
 ---
 # <a name="how-do-i-leave-the-visual-studio-dev-essentials-program"></a>Visual Studio geliştirme Essentials programın nasıl bırakılsın mı? 
 
@@ -26,7 +26,7 @@ Visual Studio geliştirme Essentials program bırakmak isterseniz, lütfen şu a
 4. Visual Studio geliştirme Essentials ile ilişkili satırındaki tıklatın **bırakın program** en sağdaki bağlantılar sütun.
 5. Bir pencere görüntülenir. Seçin **onaylayın**. 
 
-> [!NOTE]  
-> Visual Studio geliştirme Essentials programın gelmeye kolaydır.  Yalnızca 1-5 adımlarını izleyin ve tıklayın **katılma Visual Studio geliştirme Essentials** Bağlantılar sütunun üstündeki düğmesi. Ardından **Onayla**.  
+    > [!NOTE]  
+    > Visual Studio geliştirme Essentials programın gelmeye kolaydır.  Yalnızca 1-5 adımlarını izleyin ve tıklayın **katılma Visual Studio geliştirme Essentials** Bağlantılar sütunun üstündeki düğmesi. Ardından **Onayla**.  
 
 

@@ -18,15 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0971dc9d445c7a492d934c0c2bdc9b47de92028
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 27b83cefdaa24e5a439352318aa149ec4e24d09d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766070"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327248"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>İş verileri bağlantı modeli tasarlama
-  İş verileri bağlantı (BDC) hizmeti için bir model için bir model dosyası varlıkları ve yöntemleri ekleyerek geliştirebilirsiniz. Bir varlık veri alanları koleksiyonunu açıklar. Örneğin, bir varlığın bir veritabanındaki bir tablo temsil edebilir. Bir yöntem ekleme, silme veya varlıklar tarafından temsil edilen veri güncelleştirme gibi bir görevi gerçekleştirir. Daha fazla bilgi için bkz: [iş verilerini SharePoint tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md).  
+  İş verileri bağlantı (BDC) hizmeti için bir model için bir model dosyası varlıkları ve yöntemleri ekleyerek geliştirebilirsiniz. Bir varlık veri alanları koleksiyonunu açıklar. Örneğin, bir varlığın bir veritabanındaki bir tablo temsil edebilir. Bir yöntem ekleme, silme veya varlıklar tarafından temsil edilen veri güncelleştirme gibi bir görevi gerçekleştirir. Daha fazla bilgi için bkz: [iş verilerini SharePoint ile tümleştirmek](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="add-entities"></a>Varlıklar ekleme
  Bir varlık sürükleyerek ya da kopyalayarak ekleyebilirsiniz bir **varlık** Visual Studio'dan **araç** BDC tasarımcıya. Daha fazla bilgi için bkz: [nasıl yapılır: bir modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md).  
@@ -81,9 +81,9 @@ ms.locfileid: "34766070"
  Herhangi bir yolla model kurallarını ihlal edildiğinde doğrulama hataları ortaya çıkabilir. Örneğin, varsa **IsCollection** bir tür tanımlayıcı özelliği ayarlanmış **doğru**, ancak hiçbir alt tür tanımlayıcısı var, bir doğrulama hatası görünür. Visual Studio'da görünür bazı hatalar anlamak için bir BDC modeli kuralları başvurmak zorunda kalabilirsiniz **hata listesi**. BDC modeli kuralları hakkında daha fazla bilgi için bkz: [BDCMetadata şema](http://go.microsoft.com/fwlink/?LinkID=169275).  
   
 ## <a name="debug-the-solution-that-contains-the-model"></a>Model içeren çözümü hata ayıklama
- Visual Studio'da kod hatalarını gibi kodunuzu ayıklayabilirsiniz. Kodunuzun hatalarını ayıklamak için kesme noktaları kodunuzda herhangi bir yerde ayarlamak ve hata ayıklayıcısı başlatın. Visual Studio SharePoint sitesini açar. SharePoint içinde bir liste veya iş verilerinizi kullanan Web bölümü oluşturun. Sonra kodunuzu geçebilirsiniz. SharePoint projeleri hata ayıklama hakkında daha fazla bilgi için bkz: [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+ Visual Studio'da kod hatalarını gibi kodunuzu ayıklayabilirsiniz. Kodunuzun hatalarını ayıklamak için kesme noktaları kodunuzda herhangi bir yerde ayarlamak ve hata ayıklayıcısı başlatın. Visual Studio SharePoint sitesini açar. SharePoint içinde bir liste veya iş verilerinizi kullanan Web bölümü oluşturun. Sonra kodunuzu geçebilirsiniz. SharePoint projeleri hata ayıklama hakkında daha fazla bilgi için bkz: [sorun giderme SharePoint çözümlerini](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
- Ayrıca, projeye ekleyin özel derlemeler kodda ayıklayabilirsiniz. Ancak, özel bir derlemeyi kodda hata ayıklamak için derleme için çözüm paketi eklemeniz gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: ekleme ve kaldırma ek derlemeler](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Ayrıca, projeye ekleyin özel derlemeler kodda ayıklayabilirsiniz. Ancak, özel bir derlemeyi kodda hata ayıklamak için derleme için çözüm paketi eklemeniz gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: ek derlemeler ekleyip](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Özel bir derlemeyi projenize ekleme hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir BDC özelliğine özel bir derlemeyi dahil etme](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md).  
   
@@ -109,7 +109,7 @@ ms.locfileid: "34766070"
  SharePoint modelden tamamen geri çekmek için Visual Studio istediğiniz durumlar olabilir. Örneğin, bir model bozuk olabilir.  SharePoint modelinize yeniden dağıtmak için ayarlanmış **Artımlı güncelleştirme** modele özelliğinin **False**, ve hata ayıklayıcısı başlatın. **Artımlı güncelleştirme** özelliği görünür **özellikleri** modelde gösteren düğümü seçtiğinizde penceresi **BDC Gezgini**. Varsayılan olarak, model adıdır **BdcModel1**.  
   
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>Varlık modeli tanımlayıcı adlarını değiştirin
- Model dağıttıktan sonra bir tanımlayıcı adını değiştirirseniz, bir dağıtım hatası alabilirsiniz. Bu hata ayarlayarak çözümlenemiyor **Artımlı güncelleştirme** modele özelliğinin **False**. Model el ile geri çekmek ve çözümü yeniden dağıtın. Daha fazla bilgi için bkz: [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md). Ayarlayarak bu hatayı önleyebilirsiniz **Artımlı güncelleştirme** özelliğine **False** model başlangıçta dağıtmadan önce.  
+ Model dağıttıktan sonra bir tanımlayıcı adını değiştirirseniz, bir dağıtım hatası alabilirsiniz. Bu hata ayarlayarak çözümlenemiyor **Artımlı güncelleştirme** modele özelliğinin **False**. Model el ile geri çekmek ve çözümü yeniden dağıtın. Daha fazla bilgi için bkz: [sorun giderme SharePoint çözümlerini](../sharepoint/troubleshooting-sharepoint-solutions.md). Ayarlayarak bu hatayı önleyebilirsiniz **Artımlı güncelleştirme** özelliğine **False** model başlangıçta dağıtmadan önce.  
   
 ## <a name="locate-documentation-for-bdc-model-elements"></a>BDC modeli öğeleri belgelerine bulun
  Visual Studio modeline her bir varlık için bir XML öğesi ekler yöntemi veya oluşturduğunuz başka bir öğe. Öğesi özniteliklerini görünür özellikleri olarak **özellikleri** penceresi. Öğeleri ve model tasarlarken, Visual Studio'nun oluşturduğu öznitelikleri hakkında daha fazla bilgi için bkz: [BDCMetadata şema](http://go.microsoft.com/fwlink/?LinkID=169275).  
@@ -118,19 +118,19 @@ ms.locfileid: "34766070"
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[BDC Modeli Tasarım Araçlarına Genel Bakış](../sharepoint/bdc-model-design-tools-overview.md)|Bir model için BDC görsel olarak tasarlamak için kullanabileceğiniz araçlar açıklanmaktadır.|  
-|[Nasıl yapılır: Modele bir Varlık Ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)|Dış içerik türlerini ya da varlıkları modele eklemek gösterilmiştir.|  
-|[Nasıl yapılır: Bir Bulucu Metodu Ekleme](../sharepoint/how-to-add-a-finder-method.md)|Bir liste veya Web Bölümü varlıkların listesini görüntülemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
-|[Nasıl yapılır: Belirli bir Bulucu Metodu Ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)|Belirli bir varlık ayrıntılarını görüntülemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
-|[Nasıl yapılır: Bir Yaratıcı Metodu Ekleme](../sharepoint/how-to-add-a-creator-method.md)|Kayıt bir veri kaynağına doğrudan bir liste veya Web Bölümü eklemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
-|[Nasıl yapılır: Bir Silici Metodu Ekleme](../sharepoint/how-to-add-a-deleter-method.md)|Kullanıcıların listesinin bir kullanıcı arabirimi (UI) veya Web Bölümü seçenekleri kullanarak bir veri kaynağından verileri kaldırma olanak sağlayan bir yöntem eklemek gösterilmiştir.|  
-|[Nasıl yapılır: Bir Güncelleyici Metodu Ekleme](../sharepoint/how-to-add-an-updater-method.md)|Kullanıcıların bir veri kaynağındaki veri kayıtlarını doğrudan bir liste veya Web Bölümü değiştirmesine olanak tanır yönteminin nasıl ekleneceğini gösterir.|  
-|[Nasıl yapılır: Bir Metoda Parametre Ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Visual Studio yöntemi Ayrıntıları penceresinde bir yönteme giriş ve dönüş parametreleri eklemek için nasıl kullanılacağını gösterir.|  
-|[Nasıl yapılır: Bir Parametrenin Tür Tanımlayıcısını Tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Parametre veri türleri modelde tanımlamak gösterilmiştir.|  
-|[Nasıl yapılır: Metot Örneği Tanımlama](../sharepoint/how-to-define-a-method-instance.md)|BDC yürüten bir yöntemin bir örneğinin nasıl oluşturulacağını gösterir.|  
-|[Nasıl yapılır: Bir Bulucu Metoduna Filtre Tanımlayıcısı Ekleme](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Kullanıcıların bir Bulucu yöntemi tarafından döndürülen örnek sayısını sınırlamak gösterilmiştir.|  
+|[BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)|Bir model için BDC görsel olarak tasarlamak için kullanabileceğiniz araçlar açıklanmaktadır.|  
+|[Nasıl yapılır: bir modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)|Dış içerik türlerini ya da varlıkları modele eklemek gösterilmiştir.|  
+|[Nasıl yapılır: bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-finder-method.md)|Bir liste veya Web Bölümü varlıkların listesini görüntülemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
+|[Nasıl yapılır: belirli bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)|Belirli bir varlık ayrıntılarını görüntülemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
+|[Nasıl yapılır: bir yaratıcı yöntemi ekleme](../sharepoint/how-to-add-a-creator-method.md)|Kayıt bir veri kaynağına doğrudan bir liste veya Web Bölümü eklemek kullanıcıların sağlayan bir yöntem eklemek gösterilmiştir.|  
+|[Nasıl yapılır: bir Silici yöntemi ekleme](../sharepoint/how-to-add-a-deleter-method.md)|Kullanıcıların listesinin bir kullanıcı arabirimi (UI) veya Web Bölümü seçenekleri kullanarak bir veri kaynağından verileri kaldırma olanak sağlayan bir yöntem eklemek gösterilmiştir.|  
+|[Nasıl yapılır: bir güncelleyici yöntemi ekleme](../sharepoint/how-to-add-an-updater-method.md)|Kullanıcıların bir veri kaynağındaki veri kayıtlarını doğrudan bir liste veya Web Bölümü değiştirmesine olanak tanır yönteminin nasıl ekleneceğini gösterir.|  
+|[Nasıl yapılır: bir yönteme parametre ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Visual Studio yöntemi Ayrıntıları penceresinde bir yönteme giriş ve dönüş parametreleri eklemek için nasıl kullanılacağını gösterir.|  
+|[Nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Parametre veri türleri modelde tanımlamak gösterilmiştir.|  
+|[Nasıl yapılır: yöntem örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)|BDC yürüten bir yöntemin bir örneğinin nasıl oluşturulacağını gösterir.|  
+|[Nasıl yapılır: bir Bulucu yöntemine filtre tanımlayıcısı ekleme](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Kullanıcıların bir Bulucu yöntemi tarafından döndürülen örnek sayısını sınırlamak gösterilmiştir.|  
 |[Varlıklar Arasında İlişkilendirme Oluşturma](../sharepoint/creating-an-association-between-entities.md)|Modeldeki varlıklar arasındaki ilişkiler nasıl tanımlayabilirsiniz açıklar. İş Verileri Web bölümlerini, dış listeler ve özel uygulamalar kullanıcı arabiriminde (UI) bu veri ilişkileri görüntüleyebilirsiniz.|  
 |[Nasıl yapılır: varlıklar arasında ilişkilendirme oluşturma](../sharepoint/how-to-create-an-association-between-entities.md)|Modeldeki varlıklar arasındaki ilişkileri tanımlamak gösterilmiştir.|  
-|[İzlenecek yol: İş Verileri Kullanarak SharePoint'te Dış Liste Oluşturma](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Oluşturma ve test kişiler SharePoint Dış listede görüntüler modeli gösteren adım adım yönergeler sağlar.|  
-|[İş Verilerini SharePoint ile Tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)|Oluşturma ve modelleri BDC hizmeti için tasarlama genel bir bakış sağlar.|  
+|[İzlenecek yol: iş verileri kullanarak bir dış liste SharePoint](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Oluşturma ve test kişiler SharePoint Dış listede görüntüler modeli gösteren adım adım yönergeler sağlar.|  
+|[İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)|Oluşturma ve modelleri BDC hizmeti için tasarlama genel bir bakış sağlar.|  
   

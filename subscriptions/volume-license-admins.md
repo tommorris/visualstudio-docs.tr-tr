@@ -9,12 +9,12 @@ description: Nasıl abonelik yöneticileri yönetim portalına erişmek ve Toplu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: a5399545108ad3731e9e415cf8b830df8b2b7bcb
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 33bcd59bde2cf56349e8100baea6f596362bc1f1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281543"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326951"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Portal erişme ve yöneticileri - Toplu Lisanslama (toplu lisans aracılığıyla) alınan abonelikler için yönetme
 
@@ -47,6 +47,6 @@ Kuruluşunuz Visual Studio abonelikleri yönetim portalına edildi olması hazı
 
 3.  Yeni Abonelik Yönetim portalına erişim. Kuruluşunuz geçirildikten sonra e-postalar yeni eklenen Süper yöneticileri ve yeni portalına erişmek ve abonelik yönetimi başlamak için Yöneticiler bunları davet gönderilir.
 
-Yeni Visual Studio abonelikleri yönetim portalına eklenmesi gerekir ve, birincil/bildirimler kişiniz olan emin değilseniz, oturum açtıktan sonra bu bilgileri bulabilirsiniz [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Bir göz atalım [Bul bilgisayarınızı birincil ilgili kişinin](find-primary-contact.md) birincil/bildirimler kişiniz VLSC bulmak için adımları için konu.
+Yeni Visual Studio abonelikleri yönetim portalına eklenmesi gerekir ve, birincil/bildirimler kişiniz olan emin değilseniz, oturum açtıktan sonra bu bilgileri bulabilirsiniz [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Göz atın [Bul bilgisayarınızı birincil ilgili kişinin](find-primary-contact.md) birincil/bildirimler kişiniz VLSC bulmak için adımları için konu.
 
 Zaten bir yönetici olarak ayarlanmış olan sonra Visual Studio abonelikleri doğrudan yönetim portalında gidebilirsiniz: [ https://manage.visualstudio.com ](https://manage.visualstudio.com).

@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinizde yer alan teknik destek avantajı etki
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1f80e5d95d5480dd2a1d63a04bdd601145a7961b
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 5769acd07d41acc5f43773e88fdda6aec301f09b
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302969"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326963"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde teknik destek avantajı etkinleştir
 
@@ -25,13 +25,19 @@ ms.locfileid: "36302969"
 
    ![Teknik Destek avantajı döşeme](_img\vs-tech-support\vs-tech-support-tile.png)
 
-1.  Teknik Destek Avantajı'ı kullanmaya başlamak için tıklayın **etkinleştirme** teknik destek kutucuğa.
-2.  Bu sözleşme kimliği ve erişim kimliği oluşturabilen ve bunları size sağlayan bir temsilci ile sohbet oturumu başlatır.
+
+1.  Teknik Destek Avantajı'ı kullanmaya başlamak için tıklayın **etkinleştirmek için Sohbet** teknik destek kutucuğa. 
+2.  Bu sözleşme kimliği ve erişim kimliği oluşturabilen ve bunları size sağlayan bir temsilci ile sohbet oturumu başlatır. 
 3.  İşlemi tamamlamak için temsilcisiyle sağlamanız gerekir:
     - Aboneliğinize oturum açmak için kullandığınız e-posta adresi
     - Üzerinde bulunan abonelik kimliği [abonelikleri](https://my.visualstudio.com/subscriptions) sekmesi.
 
     ![Teknik Destek avantajı, abonelik kimliği bulunamadı](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+
+
+    > [!NOTE]
+    > İngilizce dışındaki bir dilde destek hesabınızı etkinleştirmek için listeden ülkenizi seçin [bu listeyi](https://support.microsoft.com/help/14084/activate-support-contract).   
+
 
 ## <a name="how-to-submit-an-incident"></a>Bir olay gönderme
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dedf90c51ec2cd4f1864d5573925ed17a0d69b2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7cba96b4ca87333acbd778282c86a73e531ec3cf
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575384"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327108"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Birden Çok İşlemcili Ortamda Oturum Açma
 MSBuild birden çok işlemci kullanma yeteneğini zaman derleme projesi önemli ölçüde düşürebilir ancak de günlük tutmayı karmaşıklık ekler. Bir tek işlemcili ortamda Günlükçü gelen olayları, iletilerini, uyarıları ve hataları tahmin edilebilir ve sıralı bir şekilde işleyebilir. Ancak, birden çok işlemcili ortamda çeşitli kaynaklardan gelen olayların aynı anda veya sıra dışı ulaşır. MSBuild özel "iletme günlükçüleri." oluşturmayı etkinleştirir ve yeni bir çok işlemciye duyarlı Günlükçü sağlar  
@@ -64,7 +64,7 @@ public interface IForwardingLogger: INodeLogger
 ### <a name="attaching-a-distributed-logger"></a>Dağıtılmış bir Günlükçü ekleme  
  Bir komut satırı derleme üzerinde dağıtılmış Günlükçü ekleme için kullanmak `/distributedlogger` (veya `/dl` kısaca) geçin. Günlükçü türleri ve sınıf adları belirtmek için biçim aynıdır olanlar için `/logger` dağıtılmış Günlükçü iki günlük kaydı sınıfları oluşmaktadır dışında geçiş: iletme Günlükçü ve merkezi bir Günlükçü. Dağıtılmış bir Günlükçü ekleme örneği aşağıda verilmiştir:  
   
-```  
+```cmd  
 msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  

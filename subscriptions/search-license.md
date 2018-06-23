@@ -9,20 +9,18 @@ description: Nasıl Yöneticiler tek tek aboneleri veya grupları Yönetici port
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e6d91ae6b7a2c77ab7a19dc9d689000fa866f17
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: fb845f2f63b60bc4081f09e558ee4c2fa3a84466
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031188"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327134"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Arama ve Visual Studio Aboneliklerde aboneleri filtreleme
 Visual Studio abonelikleri Yönetim Portalı, belirli bir alt kümesini çeşitli ölçütleri temel alarak aboneleri bulmanızı sağlar. Ad, e-posta adresi, abonelik düzeyinde ve çeşitli diğer bilgileri abone listeyi filtreleyebilirsiniz. 
 
 1.  Aboneleri, tablonun üstündeki belirli bir grubunu aramak için tıklatın **filtre**.
 
-    ![Filtre aboneleri](_img\edit-license\filter-list.png)
-
-2.  Arama ölçütü olarak kullanabileceğiniz görüntülenir fazla alan görürsünüz. İstediğiniz aramanızı temel olarak kullanın ve ardından istediğiniz ölçütü seçin **filtre**. Ardından, belirlediğiniz ölçütlere uyan aboneleri listesini görürsünüz.
+2.  Çeşitli alanları arama ölçütü olarak kullanılabilir. Aramanızı temel olarak kullanın ve ardından istediğiniz ölçütleri girin **filtre**. Ardından, belirlediğiniz ölçütlere uyan aboneleri listesini görürsünüz.
 ![Aboneler Bul](_img\search-filter\search-filter-find.png)
 

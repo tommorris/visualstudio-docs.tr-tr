@@ -9,12 +9,12 @@ description: Diğer adlar veya kolay adlar kullanılıyorsa, oturum açma başar
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8226a72f2d53973e31e37a0cb0dac5d4b4a8e3be
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283350"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327069"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikler için oturum açma diğer adlar kullanırken başarısız olabilir
 
@@ -44,58 +44,42 @@ Abone açısından bakıldığında, yöneticiniz, şirketinizin kimlik yapılan
 Her durumda, yeni aboneler için dizin adresi kullanın veya "var" aboneleri için e-posta adresi güncelleştirmek Abonelik Yöneticisi'ni Toplu Lisanslama hizmeti Merkezi (VLSC) içinde gerekir.  Dizin adresini kullanarak tüm yeni aboneler Hoş Geldiniz e-posta almaz ve yönetici bir abonelik kendilerine atanmış olan abone bildir gerekecek anlamına gelir olduğunu dikkate almak önemlidir.  Aşağıdaki sonra aşağıdaki adımları, lütfen ayrıca e-posta kullanılacak çekinmeyin [şablonu](#notifying-your-subscribers-with-directory-addresses) abonelerinizin bilgilendirin ve oturum açma işleminde size yardımcı olmak için.
 
 ### <a name="adding-new-subscribers"></a>Yeni aboneler ekleme
+
 Lütfen bir dizin hesabı ile yeni bir abonelik eklemek için aşağıdaki adımları izleyin.
 
 1. Ziyaret [Toplu Lisans Hizmet Merkezi](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) ve oturum açın.
 2. VLSC yönetim sayfasından tıklatın **abonelikleri** ve ardından **Visual Studio abonelikleri**.
 
-    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
+    ![Abonelikleri menüsü](_img//vlsc/vlsc-subscriptions.png)
 
 3. Tıklatın **anlaşma numarası** Visual Studio abonelikle ilişkili.
 
-    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
+    ![Anlaşma Seç](_img/vlsc/vlsc-agreement.png)
 
 4. Tıklatın **atamak abonelik**.
-
-    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
-
-
 5. İstenen seçin **abonelik düzeyinde**.
-
-    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" />
-
 6. Doğrulama atayın ve kullanılabilir abonelikler sahip **sonraki**.
-7.  E-posta adresi alanı abone ayrıntıları ve dizin adresi girip'ı tıklatın **sonraki**.
-
-    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" />
-
+7. E-posta adresi alanı abone ayrıntıları ve dizin adresi girip'ı tıklatın **sonraki**.
 8. Abone bilgisi doğrulamak ve tıklatın **son**.
-
 9. Aboneliğini kullanarak sağlanmış abone bildir aşağıda [şablon](#notifying-your-subscribers-with-directory-addresses).
 
 ### <a name="updating-an-existing-subscriber"></a>Mevcut bir aboneyi güncelleştiriliyor
+
 Lütfen izleyin sahip bir dizin hesabı var olan aboneyi güncelleştirmek için aşağıdaki adımları.
 
 1. Ziyaret [Toplu Lisans Hizmet Merkezi](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) ve oturum açın.
-
 2. VLSC yönetim sayfalarından tıklatın **abonelikleri** ve ardından **Visual Studio abonelikleri**.
-
 3. Tıklatın **anlaşma numarası** Visual Studio abonelikle ilişkili.
-
 4. Tıklatın **aşağı ok** arama çubuğunda.
-
 5. "E-posta adresi" alanını kullanarak abone arayın.
-
 6. Sonuçları listesinden tıklatın **Soyadı** abonenin.
-
 7. 
               **Düzenle**‘ye tıklayın.
-
 8. İstenen dizin adresine e-posta adresi alanı değiştirin ve **kaydetmek**.
-
 9. Aboneliğini kullanarak sağlanmış abone bildirim e-posta şablonu aşağıda.
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>Dizin adresleriyle abonelerinizin bildirme
+
 Hoş Geldiniz e-posta, abone başarılı bir şekilde ulaşmaz olduğundan, Lütfen kopyalama ve yapıştırma bir e-posta ve gönderme, aboneye iletisine aşağıda. Her abonelik için uygun bilgilerle WORD % değiştirin.
 
 ---Kopyalama aşağıdaki (Ctrl + C)---
@@ -117,13 +101,15 @@ Sayfanın alt kısmındaki aşağıdakileri seçin:
 
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Bir iş veya Okul hesabı kişisel hesabıyla tanımlama
+
 Lütfen bölümünde açıklanan yönergeleri yararlanan [bir dizin hesabı atama abonelere](#assigning-subscribers-to-a-directory-account) yeni bir kullanıcı eklemek veya bir kullanıcının e-posta adresi içinde Toplu Lisanslama hizmeti Merkezi (VLSC) güncelleştirmek için bölüm.  Burada e-posta adresi directory tarafından tanınmıyor durumlarda, kullanıcının e-posta adresi kişisel hesap tanımlamak için yeni bir hesap oluşturma işlemi adım adım gerekecektir.  Kısa vadeli için Visual Studio abonelikleri takım aşağıda tanımlanan Kimlik İlkesi bir muafiyet güvenli var. ancak Biz bu ilkeyi kaldırmak gerekli özellikleri yatırım.
 
 > [!WARNING]
 > Microsoft, "Kişisel" kimlik "İş veya Okul" kimliklerle birleştirme önermez.  Bu eylem kuruluş sahipliği ve denetimi hesabının kaybetmenize neden olur ve çalışan bile şirket bırakarak sonra belirli ürünleri veya hizmetleri, erişmeye devam edebilirsiniz.  Lütfen bu başvuru [blog gönderisi](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/), ek bilgi için Microsoft Identity ekibinden.
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>Bir e-posta adresi kişisel hesap tanımlama
-Bir abonelik için abonelik atandıktan sonra bunları ziyaret etmek isteyen bir e-posta alırsınız https://my.visualstudio.com abonelik faydaları yararlanmak için.  Çalışılırken oturum açma, Visual Studio abonelik oturum açma bir hesap tanınmıyor belirten hata ile başarısız olur.  Önce oturum içine https://my.visualstudio.com deneyimi, aşağıdaki yönergeleri izleyin, abone isteyin.  Gerekirse, bu kullanabilirsiniz, [şablonu](#notifying-your-subscribers-using-personal-accounts) bir abonelik atandıktan sonra abone bildirmek için.
+
+Bir abonelik için abonelik atandıktan sonra bunları ziyaret etmek isteyen bir e-posta alırsınız [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) abonelik faydaları yararlanmak için.  Çalışılırken oturum açma, Visual Studio abonelik oturum açma bir hesap tanınmıyor belirten hata ile başarısız olur.  Önce oturum içine [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) deneyimi, aşağıdaki yönergeleri izleyin, abone isteyin.  Gerekirse, bu kullanabilirsiniz, [şablonu](#notifying-your-subscribers-using-personal-accounts) bir abonelik atandıktan sonra abone bildirmek için.
 
 1. Gidin https://my.visualstudio.com, tıklatıp **yeni bir Microsoft hesabı oluşturmak**.
 

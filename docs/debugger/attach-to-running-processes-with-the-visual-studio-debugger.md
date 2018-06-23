@@ -1,7 +1,7 @@
 ---
 title: Visual Studio hata ayıklayıcısı ile çalıştırma işlemine iliştirme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 05/18/2017
+ms.date: 06/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aecf458254d45b3c52c9f3971a72cb24ad13ef43
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 260047497ddb9515505c13f0b861c8eee05d71b0
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454563"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327339"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 Yerel veya uzak bilgisayarda çalışan bir işlemi için Visual Studio hata ayıklayıcısı ekleyebilirsiniz. İşlemin çalıştığı sonra tıklayın **hata ayıklama > ekleme işlemi için** (veya basın **CTRL + ALT + P**) açmak için **ekleme işlemi için** iletişim kutusu.
@@ -53,7 +53,7 @@ Bir yerel veya uzak bilgisayarda çalışan uygulamaları hata ayıklama, birden
   
 2.  İçinde **ekleme işlemi için** iletişim kutusunda, gelen eklemek istediğiniz program Bul **kullanılabilir işlemler** listesi.  
 
-     Hızlı bir şekilde istediğiniz işlemi seçin için işlem adının ilk harfi yazın. İşlem adını bilmiyorsanız, bkz: [ortak senaryolar hata ayıklama](#BKMK_Scenarios).
+     Hızlı bir şekilde istediğiniz işlemi seçin için işlem adının ilk harfi yazın veya bir işlem adı için arama ve filtre kutusuna bir değer yazın. İşlem adını bilmiyorsanız, bkz: [ortak senaryolar hata ayıklama](#BKMK_Scenarios).
      
      ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
@@ -63,18 +63,23 @@ Bir yerel veya uzak bilgisayarda çalışan uygulamaları hata ayıklama, birden
   
     1.  İçinde **ekleme** kutusunda, **seçin**.  
   
-    2.  İçinde **kod türünü seç** iletişim kutusu, tıklatın **bu kodu türleri hata ayıklama** ve hata ayıklamak için türlerini seçin.  
+    2.  İçinde **kod türünü seç** iletişim kutusu, tıklatın **bu kodu türleri hata ayıklama** ve hata ayıklamak için türlerini seçin.
+
+        Varsayılan **otomatik** works çoğu uygulama türleri için ayarlama. Chrome üzerinde istemci tarafı komut dosyası hata ayıklama için seçin **Webkit** kod türü. Chrome için tarayıcı hata ayıklama modu, uygulama türüne bağlı olarak başlattığınız (tür `chrome.exe --remote-debugging-port=9222` bir komut satırından).
+
+        > [!NOTE]
+        > Hata ayıklama istemci tarafı komut dosyası için komut dosyası hata ayıklaması tarayıcıda etkinleştirilmesi gerekir. 
   
     3.  **Tamam**'ı tıklatın.  
   
 4.  Tıklatın **Attach**.
 
 ##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Uzak bir bilgisayarda bir işlem ekleme  
- Bir işlemin iliştirmek için işlemin adını bilmeniz gerekir (bkz [ortak senaryolar hata ayıklama](#BKMK_Scenarios) birkaç ortak işlem adları için). IIS'ye dağıtılan ASP.NET uygulamaları için daha ayrıntılı yönergeler için bkz [Uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Diğer uygulamalar için Görev Yöneticisi'nde işlemin adını bulmak mümkün olabilir.
+Bir işlemin iliştirmek için işlemin adını bilmeniz gerekir (bkz [ortak senaryolar hata ayıklama](#BKMK_Scenarios) birkaç ortak işlem adları için). IIS'ye dağıtılan ASP.NET uygulamaları için daha ayrıntılı yönergeler için bkz [Uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Senaryonuz için işlemin adını bilmiyorsanız, bkz: [ortak senaryolar hata ayıklama](#BKMK_Scenarios)
   
- Kullandığınızda **ekleme işlemi için** iletişim kutusunda, uzaktan hata ayıklama için ayarlanmış olan başka bir bilgisayar seçebilirsiniz. Daha fazla bilgi için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md). Uzak bir bilgisayar seçildiğinde, bu bilgisayar üzerinde çalışan kullanılabilir işlemlerin listesini görüntülemek ve bir veya daha çok hata ayıklama işlemi ekleyin.
+Kullandığınızda **ekleme işlemi için** iletişim kutusunda, uzaktan hata ayıklama için ayarlanmış olan başka bir bilgisayara seçebilirsiniz (diğer bir deyişle, uzaktan hata ayıklayıcı uzak bilgisayarda çalışmalıdır). Daha fazla bilgi için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md). Uzak bir bilgisayar seçildiğinde, bu bilgisayar üzerinde çalışan kullanılabilir işlemlerin listesini görüntülemek ve bir veya daha çok hata ayıklama işlemi ekleyin.
   
- **Uzak bir bilgisayar seçmek için:**  
+**Uzak bir bilgisayar seçmek için:**  
 
 1. Visual Studio'da seçin **hata ayıklama > ekleme işlemi için** (veya basın **CTRL + ALT + P**).
 
@@ -88,7 +93,8 @@ Bir yerel veya uzak bilgisayarda çalışan uygulamaları hata ayıklama, birden
   
     1.  Adı yazın **niteleyicisi** liste kutusu.
     
-        >**Not** daha sonraki adımlarda uzak bilgisayar adını kullanarak bağlanamazsa, IP adresini kullanın. (Bağlantı noktası numarasını otomatik olarak işlem seçtikten sonra görünebilir. Ayrıca, el ile girebilirsiniz. Aşağıdaki çizimde 4020 varsayılan bağlantı noktası uzaktan hata ayıklayıcı'tür.)  
+        > [!Note]
+        > Sonraki adımlarda uzak bilgisayar adını kullanarak bağlanamazsa, IP adresi kullanın. (Bağlantı noktası numarasını otomatik olarak işlem seçtikten sonra görünebilir. Ayrıca, el ile girebilirsiniz. Aşağıdaki çizimde 4020 varsayılan bağlantı noktası uzaktan hata ayıklayıcı'tür.)  
 
         Kullanmak istiyorsanız, **Bul** düğmesini gerekebilir [açmak UDP bağlantı noktası 3702](../debugger/remote-debugger-port-assignments.md) sunucusunda.
   
@@ -104,7 +110,7 @@ Bir yerel veya uzak bilgisayarda çalışan uygulamaları hata ayıklama, birden
      
 4.  İçinde **ekleme işlemi için** iletişim kutusunda, gelen eklemek istediğiniz program Bul **kullanılabilir işlemler** listesi.
 
-     Hızlı bir şekilde istediğiniz işlemi seçin için işlem adının ilk harfi yazın. İşlem adını bilmiyorsanız, bkz: [ortak senaryolar hata ayıklama](#BKMK_Scenarios).
+     Hızlı bir şekilde istediğiniz işlemi seçin için işlem adının ilk harfi yazın veya bir işlem adı için arama ve filtre kutusuna bir değer yazın. İşlem adını bilmiyorsanız, bkz: [ortak senaryolar hata ayıklama](#BKMK_Scenarios).
   
      İşlemi farklı bir kullanıcı hesabı altında çalışıyorsa, seçin **işlemleri tüm kullanıcıları göster** onay kutusu.
      
@@ -129,7 +135,7 @@ Bazı durumlarda, bir Uzak Masaüstü'nü (Terminal Hizmetleri) oturumunda ayık
 
 ## <a name="BKMK_Scenarios"></a> Hata ayıklama senaryoları
 
-Kullanılacak gerekip gerekmediğini belirlemenize yardımcı olması için **ekleme işlemi için** ve eklemek, hangi işlemin birkaç genel hata ayıklama senaryoları burada gösterilir (Bu liste geniş kapsamlı değildir). Daha fazla yönerge kullanılabiliyorsa, bağlantılar sunuyoruz.
+Kullanılacak gerekip gerekmediğini belirlemenize yardımcı olması için **ekleme işlemi için** ve eklemek, hangi işlemin birkaç genel hata ayıklama senaryoları burada gösterilir (Bu liste geniş kapsamlı değildir). Daha fazla yönerge kullanılabiliyorsa, bağlantılar sunuyoruz. İletişim kutusu hızlı bir şekilde erişmek için **CTRL + ALT + P** ve işlem adının ilk harfi yazın.
 
 Bazı uygulama türleri (örneğin, UWP uygulamaları) için doğrudan bir işlem adı ekleme yoktur ancak kullanmak **yüklü uygulama paketi Debug** menü seçeneğinin yerine (tabloya bakın).
 
@@ -138,12 +144,13 @@ Bazı uygulama türleri (örneğin, UWP uygulamaları) için doğrudan bir işle
 
 |Senaryo|Yönteminde hata ayıklama|İşlem adı|Notlar ve bağlantıları|
 |-|-|-|-|
-|Yerel makine üzerinde yönetilen veya yerel bir uygulama hata ayıklama|Kullanım ekleme işlemi için veya [standart hata ayıklama](../debugger/getting-started-with-the-debugger.md)|*Appname*.exe|İletişim kutusu hızlı bir şekilde erişmek için **CTRL + ALT + P** ve işlem adının ilk harfi yazın.|
-|Hata Ayıklayıcı olmadan uygulama başlattıktan sonra yerel makinedeki ASP.NET uygulamalarında hata ayıklama|Kullanım için işlem ekleme|iiexpress.exe|Bu yük uygulamanızı hale getirmek yararlı olabilir daha hızlı gibi (örneğin) profil olduğunda. |
 |Uzaktan hata ayıklama ASP.NET 4 veya bir IIS sunucusundaki 4.5|Uzak araçları kullanmak ve işleme ekleme|W3wp.exe|Bkz: [Uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Uzaktan hata ayıklamayı ASP.NET Core IIS sunucusu|Uzak araçları kullanmak ve işleme ekleme|DotNet.exe|Uygulama dağıtımı için bkz: [IIS Yayımla](https://docs.asp.net/en/latest/publishing/iis.html). Hata ayıklama için bkz: [Uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET Çekirdeği](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Başka bir sunucu işlemi desteklenen uygulama türlerinde hata ayıklama|Uzak Araçlar (sunucu uzak ise) kullanın ve işleme ekleme|iexplore.exe veya diğer işlemler|Gerekirse, işlem belirlemenize yardımcı olması için Görev Yöneticisi'ni kullanın. Bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md) ve bu konunun sonraki bölümlerinde|
-|Uzaktan hata ayıklama Windows masaüstü uygulaması|Uzak Araçlar ve F5|Yok| Bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md)|
+|Bir yerel IIS sunucusundaki (yalnızca desteklenen uygulama türleri için) istemci tarafı komut dosyası hata ayıklama|Kullanım için işlem ekleme|Chrome.exe, MicrosoftEdgeCP.exe veya iexplore.exe|Komut dosyası hata ayıklama işlevi etkinleştirilmelidir. Chrome için ayrıca Chrome hata ayıklama modu ve select çalıştırmalısınız **Webkit kod** içinde **ekleme** alan.|
+|Bir C#, Visual Basic veya C++ uygulamasını yerel makine üzerinde hata ayıklama|Kullanın ya da [standart hata ayıklama](../debugger/getting-started-with-the-debugger.md) veya işleme iliştirilemiyor|*Appname*.exe|Çoğu senaryoda, standart hata ayıklama kullanın ve işleme iliştirilemiyor değil.|
+|Uzaktan hata ayıklama Windows masaüstü uygulaması|Uzak Araçlar|Yok| Bkz: [uzaktan hata ayıklama C# veya Visual Basic uygulama](../debugger/remote-debugging-csharp.md) veya [uzaktan hata ayıklama bir C++ uygulaması](../debugger/remote-debugging-cpp.md)|
+|Hata Ayıklayıcı olmadan uygulama başlattıktan sonra yerel makinedeki ASP.NET uygulamalarında hata ayıklama|Kullanım için işlem ekleme|iiexpress.exe|Bu yük uygulamanızı hale getirmek yararlı olabilir daha hızlı gibi (örneğin) profil olduğunda. |
+|Başka bir sunucu işlemi desteklenen uygulama türlerinde hata ayıklama|Uzak Araçlar (sunucu uzak ise) kullanın ve işleme ekleme|Chrome.exe, iexplore.exe veya diğer işlemler|Gerekirse, işlem belirlemenize yardımcı olması için Kaynak İzleyicisi'ni kullanın. Bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md) ve bu konunun sonraki bölümlerinde|
 |Uzaktan hata ayıklama Evrensel (UWP), OneCore, HoloLens ve IOT uygulama|Hata ayıklama yüklü uygulama paketi|Yok|Bkz: [yüklü uygulama paketi Debug](debug-installed-app-package.md) kullanmak yerine **ekleme işlemi**|
 |Visual Studio'dan başlatmadı bir evrensel Windows uygulaması (UWP), OneCore, HoloLens ve IOT uygulama hata ayıklama|Hata ayıklama yüklü uygulama paketi|Yok|Bkz: [yüklü uygulama paketi Debug](debug-installed-app-package.md) kullanmak yerine **ekleme işlemi**|  
   

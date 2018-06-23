@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45990b9885d81192f6c1a7d12fb3027b6041fc6b
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234354"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327174"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint çözümlerinde hata ayıklama
   SharePoint çözümlerini kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Hata ayıklama, başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje dosyalarını SharePoint sunucusuna dağıtır ve sonra SharePoint sitesine örneği Web tarayıcısında açar. Aşağıdaki bölümlerde, SharePoint uygulamalarında hata ayıklama açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -123,7 +123,7 @@ ms.locfileid: "36234354"
   
  Bir projeyi hata ayıklama modunda çalıştırdığınızda, dağıtım işlemi bir klasörde oluşturur *özelliği* adresindeki dizin *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Özellik adlarının biçime sahip *proje adı*_Feature*x*, TestProject_Feature1 gibi.  
   
- Özellik dizinine çözümün klasöründe içeren bir *özelliği tanımı* dosyası ve bir *iş akışı tanımı* dosya. Özellik tanım dosyası (Feature.xml dosyasına) projenin özelliğinin proje tanımı dosyasındaki dosyaları açıklar (*Elements.xml*) proje şablonu açıklar. *Elements.xml* bulunabilir **Çözüm Gezgini**, ancak Feature.xml dosyasına çözüm paketi oluşturduğunuzda oluşturulur. Bu dosyalar hakkında daha fazla bilgi için bkz: [SharePoint Proje ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+ Özellik dizinine çözümün klasöründe içeren bir *özelliği tanımı* dosyası ve bir *iş akışı tanımı* dosya. Özellik tanım dosyası (Feature.xml dosyasına) projenin özelliğinin proje tanımı dosyasındaki dosyaları açıklar (*Elements.xml*) proje şablonu açıklar. *Elements.xml* bulunabilir **Çözüm Gezgini**, ancak Feature.xml dosyasına çözüm paketi oluşturduğunuzda oluşturulur. Bu dosyalar hakkında daha fazla bilgi için bkz: [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
 ## <a name="debug-workflows"></a>İş akışları hata ayıklama
  İş akışı projelerinde hata ayıklama işlemi yaparken [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (türüne bağlı olarak kendi) iş akışı şablonu bir kitaplık veya bir listesine ekler. İş akışı şablonu sonra el ile veya eklemek veya bir öğe tarafından da başlatabilirsiniz. Daha sonra kullanabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı hata ayıklamak için.  
@@ -149,8 +149,8 @@ ms.locfileid: "36234354"
   
  Bu anahtarı değeri 1 nedenler yığınına ayarı izleme görünmesi bilgi **çıkış** çalışırken proje sistem hataları gerçekleştiğinde penceresi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Gelişmiş hata ayıklama bilgilerini devre dışı bırakmak için EnableDiagnostics geri 0 olarak ayarlayın veya değeri silin.  
   
- Diğer SharePoint kayıt defteri anahtarları hakkında daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için hata ayıklama uzantıları](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Diğer SharePoint kayıt defteri anahtarları hakkında daha fazla bilgi için bkz: [uzantıları Visual Studio'da SharePoint araçları için hata ayıklama](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Çözümlerinde Sorun Giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+ [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a20a1a945b115e8ee4660a65cf43ec932b9d4a14
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 282fe23a9a586d79b745efec99bc014e88777fd6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765690"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326338"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Korumalı arasındaki farklar ve Grup çözümleri
   Bir SharePoint çözüm derlediğinizde, SharePoint sunucusuna dağıtır ve hata ayıklamak için bir hata ayıklayıcı ekler. Çözüm hata ayıklamak için kullanılan işlem Korumalı çözüm özelliğinin ayarına bağlıdır: Korumalı çözüm ya da Grup çözümü.  
@@ -46,5 +46,5 @@ ms.locfileid: "34765690"
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint çözümlerinde hata ayıklama](../sharepoint/debugging-sharepoint-solutions.md)   
  [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Korumalı Çözümle İlgili Konular](../sharepoint/sandboxed-solution-considerations.md)  
+ [Korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md)  
   

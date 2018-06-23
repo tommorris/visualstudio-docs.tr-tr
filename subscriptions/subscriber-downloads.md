@@ -9,12 +9,12 @@ description: Bulun ve Visual Studio aboneliğinizde yer alan Microsoft ürünler
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c6e894093ababe13e3fecedcbd9afe00f22128bd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280539"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326351"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Abone kullanarak Visual Studio Aboneliklerde indirir
 Abone Avantajlarınızı bir parçası olarak, çeşitli yazılım yüklemelerini erişebilirsiniz.
@@ -51,6 +51,7 @@ Ziyaret ettiğinizde [indirmeleri](https://my.visualstudio.com/downloads/feature
 Kolayca kullanılabilir aşağı açılır menüler kullanarak, mimarisi, dil ve dosya türünü seçin. Tercih edilen seçeneklerinizi belirtin ve tıklatın **karşıdan** ürün karşıdan yüklemeye başlamak için.
 
 ### <a name="displaying-download-details"></a>Yükleme ayrıntılarını görüntüleme
+
 Ürün adı veya üzerinde tıklatarak **bilgisi** indirin ve ürün için sürüm notları erişim sağlamak için bağlantı ayrıntılarını görüntüler.
 
 ![Visual Studio 2017 Pro Yükleme ayrıntıları](_img\subscriber-downloads\vs2017-pro-details.png)

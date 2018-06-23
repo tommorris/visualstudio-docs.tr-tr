@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b72e058a2ef025b0118dac8fd419e75d1ad53349
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764881"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327235"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>SharePoint araç uzantıları ile özel verileri ilişkilendirme
   SharePoint araç uzantıları belirli nesneleri özel veri ekleyebilirsiniz. Bu, verileri daha sonra diğer koddan uzantınızı erişmek istediğiniz uzantınızı bir parçası olduğunda yararlıdır. Depolamak ve verilere erişmek için özel bir şekilde uygulamak yerine, verileri olan bir nesne uzantı ilişkilendirin ve ardından aynı nesneden daha sonra verileri.  
@@ -77,7 +77,7 @@ ms.locfileid: "34764881"
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Bu yöntem verileri döndürür, bulunup bulunmadığını nesne veya **null** henüz yoksa. Yalnızca başvuru türleri örneklerini almak için bu yöntemi kullanabilirsiniz.  
   
- Aşağıdaki kod örneğinde, belirli bir veri nesnesi zaten bir proje öğesi ile ilişkili olup olmadığını belirler. Veri nesnesi zaten proje öğesi ile ilişkili değil sonra kod nesnesine ekler <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proje öğesi özelliği. Daha büyük bir örneğin bağlamında bu örnek için bkz [nasıl yapılır: bir özel SharePoint Proje öğe türüne özellik ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+ Aşağıdaki kod örneğinde, belirli bir veri nesnesi zaten bir proje öğesi ile ilişkili olup olmadığını belirler. Veri nesnesi zaten proje öğesi ile ilişkili değil sonra kod nesnesine ekler <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proje öğesi özelliği. Daha büyük bir örneğin bağlamında bu örnek için bkz [nasıl yapılır: özel bir SharePoint Proje öğe türüne özellik ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
@@ -87,6 +87,6 @@ ms.locfileid: "34764881"
  [İzlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Nasıl yapılır: Özel bir SharePoint Proje Öğe Türüne Özellik Ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+ [Nasıl yapılır: özel bir SharePoint Proje öğe türüne özellik ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
    
  

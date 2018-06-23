@@ -10,19 +10,19 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795324"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327196"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 Visual Studio abonelikler oluşturun, dağıtın ve tercih edilen platformlarında ve Windows, iOS, Android ve Linux dahil cihazları mükemmel uygulamaları yönetmek kaynakları kapsamlı kümesidir.  Abonelikleri avantajları ve geliştirme ve test ihtiyaçları için destek geliştirici araçları, bulut Hizmetleri ve eğitim, yazılım, erişim içerir.
 
 ##  <a name="get-started"></a>Başlarken
-Yöneticiler oturum açmak [https://manage.visualstudio.com](https://manage.visualstudio.com) abonelikleri ekibinizin atamak için.<br>
-Aboneler oturum açmak [https://my.visualstudio.com](https://my.visualstudio.com) abonelik Avantajlarınızı erişmek için.
+Yöneticiler oturum açmak [ https://manage.visualstudio.com ](https://manage.visualstudio.com) abonelikleri ekibinizin atamak için.<br>
+Aboneler oturum açmak [ https://my.visualstudio.com ](https://my.visualstudio.com) abonelik Avantajlarınızı erişmek için.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -126,7 +126,7 @@ Aboneler oturum açmak [https://my.visualstudio.com](https://my.visualstudio.com
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio App Center</h3>
+                        <h3>Visual Studio Uygulama Merkezi</h3>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,6 @@ Aboneler oturum açmak [https://my.visualstudio.com](https://my.visualstudio.com
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Mac için Visual Studio</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server ve TFS CAL</li>
                         </ul>                        
                     </div>
@@ -162,12 +161,12 @@ Aboneler oturum açmak [https://my.visualstudio.com](https://my.visualstudio.com
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Cloud Services</h3>
+                        <h3>Bulut Hizmetleri</h3>
                         <p>Visual Studio aboneliğinizle aylık Azure kredisini ve Azure Hizmetleri, indirimli geliştirme ve test hızlarını ve yalnızca abone g görüntüsüne özel erişim için ücretsiz erişim alabilirsiniz önceden yapılandırılmış sanal makineler ile allery. Bulut Hizmetleri aboneliğinize bağlı olarak aşağıdakileri içerebilir:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 Geliştirici aboneliği</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows Geliştirici Hesabı</a></li>
                             <li>PowerBI Pro</li>

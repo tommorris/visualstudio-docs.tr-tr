@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76dce0877a5b8726249b0cdaa617e8e503de8d32
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 17578fbfb58d354f06e91c78f067d228b92860fe
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765992"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327209"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Dağıtma, yayımlama ve SharePoint çözüm paketlerini yükseltme
   Visual Studio'da SharePoint çözüm geliştirmek sonra kendi paketi (.wsp) dosyasını yerel bir SharePoint sunucusuna dağıtma veya bir uzak veya yerel SharePoint sunucuya yayımlayın. Dosyaları dağıtırsanız, paket dosyalarını (.wsp) nasıl dağıtıldığını özelleştirebilirsiniz.  
@@ -35,7 +35,7 @@ ms.locfileid: "34765992"
 >  Şu anda, yalnızca korumalı çözümler uzak SharePoint sunucularına yayımlanabilir. Daha fazla bilgi için bkz: [Korumalı çözüm değerlendirmeleri](../sharepoint/sandboxed-solution-considerations.md).  
   
 ## <a name="deploy-publish-and-upgrade"></a>Dağıtma, yayımlama ve yükseltme
- *Dağıtma* Visual Studio'da SharePoint projeden yerel ana bilgisayara yerleşik bir SharePoint çözüm dosyasını kopyalamak için başvuruyor. Dağıtılan bir çözümde dağıtımdan sonra çözüm etkinleştirilirken Internet Information Services (IIS) havuzu geri dönüştürme gibi dağıtım adımları yapılandırmak ve benzeri. Dağıtmak için kullandığınız **dağıtma** komutunu **yapı** menüsü. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) ve [nasıl yapılır: dağıtma ve bir SharePoint çözümünü yerel bir SharePoint sitesine yayımlama](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+ *Dağıtma* Visual Studio'da SharePoint projeden yerel ana bilgisayara yerleşik bir SharePoint çözüm dosyasını kopyalamak için başvuruyor. Dağıtılan bir çözümde dağıtımdan sonra çözüm etkinleştirilirken Internet Information Services (IIS) havuzu geri dönüştürme gibi dağıtım adımları yapılandırmak ve benzeri. Dağıtmak için kullandığınız **dağıtma** komutunu **yapı** menüsü. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) ve [nasıl yapılır: dağıtma ve bir SharePoint çözümünü yerel SharePoint sitesine yayımlama](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
  *Yayımlama* uzak bir SharePoint korumalı bir SharePoint çözüm dosyasını karşıya yükleme için başvuruyor site; diğer bir deyişle, başka bir sistem üzerinde bulunan bir site. Bir SharePoint Korumalı çözüm dosya yerel bir SharePoint sitesine yayımlayabilirsiniz ancak yayımlanan site yerel veya uzak olup olmadığına bakılmaksızın, kendi dağıtım adımları yapılandıramazsınız.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "34765992"
   
  Tek bir adım tamamlamak ya da dağıtım işlemindeki adımları sırasını değiştirmek için kendi dağıtım yapılandırmaları oluşturabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
 
- Önce ve dağıtımdan sonra çalıştırılacak komut de ekleyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint dağıtım komutlarını ayarlama](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
+ Önce ve dağıtımdan sonra çalıştırılacak komut de ekleyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: ayarlama SharePoint dağıtım komutlarını](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
   
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Paketleri bir uzak veya yerel sunucuya yayımlayın
  Menü çubuğunda, uzak bir sunucuya korumalı bir SharePoint çözüm yayımlamaya seçin **yapı**, **Yayımla**ve ardından **Yayımla** iletişim kutusunda, seçin**SharePoint sitesi için Yayımlama** seçenek düğmesi, uzak sunucunun URL'sini gibi sağlama **https://someremoteserver.sharepoint.microsoftonline.com**.  
@@ -69,5 +69,5 @@ ms.locfileid: "34765992"
  Visual Studio'da SharePoint projesi için herhangi bir değişiklik yaparsanız yayımlandıktan sonra yayımlanan paket değişiklikleri içerecek şekilde yükseltilmesi gerekir. Başarıyla yükseltmek için bir paket benzersiz bir ad olmalıdır. Aynı ada sahip bir paketi bir hata uyarısı - var olan bir uygulama güncelleştirilirken hangi oluşabilir - SharePoint sitesinde bulunursa, dosya adına çakışıyor ve paketi yeniden adlandırın olanak tanır. Yayınlanmasını sonra yeni paketi SharePoint sitesinde görünür ve yükseltilebilir. Yükseltilen paket eski paketi verileri kullanarak çözüm güncelleştirir ve SharePoint çözümde etkinleştirir. Daha fazla bilgi için bkz: [nasıl yapılır: dağıtma, yayımlama ve uzak bir sunucudaki SharePoint çözümlerini yükseltme](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

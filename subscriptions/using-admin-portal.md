@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327409"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalı'nı kullanarak
 
@@ -50,7 +51,7 @@ Kuruluşunuz Visual Studio abonelikleri yönetim portalına edildi olması hazı
 > [!NOTE]
 > Birincil ya da bildirimler kişiler birden fazla e-posta almaya devam ederseniz, bu, birden fazla PCN sahip oldukları anlamına gelir. Her email.* başvurulan PCN için benzersiz bağlantıyı kullanarak işlemini tamamlamak gerekir
 
-Yeni Visual Studio abonelikleri yönetim portalına eklenmesi gerekir ve, birincil/bildirimler kişiniz olan emin değilseniz, oturum açtıktan sonra bu bilgileri bulabilirsiniz [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Göz atın [Bul bilgisayarınızı birincil ilgili kişinin](/find-primary-contact/) birincil/bildirimler kişiniz VLSC bulmak için adımları için konu.
+Yeni Visual Studio abonelikleri yönetim portalına eklenmesi gerekir ve, birincil/bildirimler kişiniz olan emin değilseniz, oturum açtıktan sonra bu bilgileri bulabilirsiniz [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Göz atın [Bul bilgisayarınızı birincil ilgili kişinin](find-primary-contact.md) birincil/bildirimler kişiniz VLSC bulmak için adımları için konu.
 Zaten bir yönetici olarak ayarlanmış olan sonra doğrudan gidebilirsiniz [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com).
 
 ### <a name="understanding-the-subscribers-page"></a>Aboneler sayfa anlama
@@ -67,11 +68,9 @@ Abonelikleri atadığınız sonra aboneler sekmesi dahil olmak üzere abonelerin
 - Oturum açma daha iletişimleri için kullanılan farklı bir e-posta adresi için isteğe bağlı bir alan. 
 
 Bu sayfanın sol tarafında, abonelik lisanslarını satın alınan, atanan ve kuruluşunuzdaki her anlaşması için hala kullanılabilir sayısı hakkında ek bilgi görebilirsiniz.
-
-   ![Visual Studio abonelikler Yönetici portalı Subscibers sayfası](_img/using-admin-portal/subscribers-page.png)
+    ![Visual Studio abonelikler Yönetici portalı Subscibers sayfası](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Ayrıntılar sayfası anlama
 Görüntülemekte olduğunuz Sözleşmesi hakkında daha fazla bilgi için Ayrıntılar sekmesini seçin. Sözleşmesi durumu gösterir, hesap, kuruluş ayrıntıları, birincil kişiler (VLSC), süper yöneticileri (varsa) ve diğer ilgili bilgileri satın alın.
-
-   ![Visual Studio abonelikleri Yönetici portalı Ayrıntıları sayfası](_img/using-admin-portal/details-page.png)
+    ![Visual Studio abonelikleri Yönetici portalı Ayrıntıları sayfası](_img/using-admin-portal/details-page.png)
 

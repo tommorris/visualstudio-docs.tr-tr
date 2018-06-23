@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ce48f8fc21c1c035586edf48446ce1d3f103d3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2bd31b13b55defb4a8517ce9b0711395f09f99e6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570466"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326884"
 ---
 # <a name="build-loggers"></a>Günlükçüleri Derleme
 Günlükçüleri yapınızın çıktısını özelleştirmek ve belirli yapı olaylarına yanıt olarak iletileri, hatalar veya uyarılar görüntülemek bir yol sağlar. Her Günlükçü uygulayan bir .NET sınıfı olarak uygulanan <xref:Microsoft.Build.Framework.ILogger> Microsoft.Build.Framework.dll derlemede tanımlanan arabirimi.  
@@ -52,13 +52,13 @@ Günlükçüleri yapınızın çıktısını özelleştirmek ve belirli yapı ol
   
  Aşağıdaki komut satırını proje derlemeler `MyProject.csproj` Günlükçü sınıfı uygulanan kullanır `SimpleLogger.dll`. **/Nologo** anahtar gizler başlık ve telif hakkı iletisi ve **/noconsolelogger** anahtarı, varsayılan devre dışı bırakır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] konsol Günlükçü.  
   
-```  
+```cmd  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
 ```  
   
  Aşağıdaki komut satırı ile aynı Günlükçü, ancak proje derleme işlemleri bir `Verbosity` düzeyini `Detailed`.  
   
-```  
+```cmd  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
 ```  
   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca01699b8dfef3b427579b839359953742a15758
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 497479ea7b49581e478534e2f8d83d0dd917a2da
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304771"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326971"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Başlayanlar için hata ayıklama
 
@@ -25,9 +25,9 @@ Bir hata ayıklayıcısı ile hata ayıklama konusunda çok temellerini öğreni
 
 İlk olarak, bu gibi bazı temel soruları yanıtlamak faydalı olabilir "Ne hata ayıklama?" ve "Ne hata ayıklama modu?"
 
-* *Hata ayıklama* hatalar kodunuzdan kaldırma işlemidir. Visual Studio gibi bir hata ayıklama aracı bağlamında.
+* *Hata ayıklama* hatalar kodunuzdan kaldırma işlemidir.
 
-* *Hata ayıklama modunu* anlamına gelir (kod Yürütülüyor), uygulamanızı Visual Studio hata ayıklayıcısı sırasında çalışan uygulamanıza eklenmiş olmasıdır. Hata ayıklayıcısı ekli, kodunuzu yaptıklarını görebilirsiniz çalışırken. Örneğin, uygulamanızın inceleyebilirsiniz durumu (değişkenleri bakın), bkz. ne işlevleri denir ve hataları bulmaya çalışın. Belgeleri girmenizi istiyoruz, genellikle yalnızca dediğimiz hata ayıklama modu, "hata ayıklayıcı Başlat" veya "Hata Ayıklayıcısı'ndaki uygulamanızı çalıştırma".
+* *Hata ayıklama modunu* anlamına gelir (kod Yürütülüyor) uygulamanızı çalışırken bir hata ayıklayıcıyı çalışan uygulamanıza eklenmiş olmasıdır. Bir hata ayıklayıcısı ekli, kodunuzu yaptıklarını görebilirsiniz çalışırken. Örneğin, uygulamanızın inceleyebilirsiniz durumu (değişkenleri bakın), bkz. ne işlevleri denir ve hataları bulmaya çalışın. Visual Studio belgelerinde girmenizi istiyoruz genellikle yalnızca dediğimiz hata ayıklama modu, "hata ayıklayıcı Başlat" veya "Hata Ayıklayıcısı'ndaki uygulamanızı çalıştırma".
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Sorunu kendi başınıza sağ sorular sorarak açıklamak
 

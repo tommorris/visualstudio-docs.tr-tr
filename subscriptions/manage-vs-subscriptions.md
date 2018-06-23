@@ -9,12 +9,12 @@ description: En Visual Studio aboneliklerinizi dışında alma hakkında bilgi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548729"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327004"
 ---
 # <a name="managing-subscriptions"></a>Aboneliklerini Yönetme
 
@@ -102,8 +102,8 @@ Kişi bilgileri ve Tercihler profilinizde kolayca değiştirebilirsiniz.
 3.  Üzerinde **hakkında** sekmesini değiştirebilirsiniz adı, e-posta, ülke/bölge, profil resmi ve iletişim tercihleri.  Üzerinde **Tercihler** sekmesi, tercih edilen dili, tarih ve saat düzenleri, saat dilimi ve kullanıcı arayüzü temasını seçebilirsiniz.  
 4.  Değişikliklerinizi bitirdikten sonra tıklatın **kaydetmek**. 
 5.  Tarayıcınızın tıklatın **geri** avantajları sayfasına geri dönmek için düğmesi. 
+    ![Profil bilgilerini düzenleme](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![Profil bilgilerini düzenleme](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Benim varolan VSTS aboneliği veya Azure abonelikleri bağlama
 Aboneliğinize kişisel bir Microsoft hesabı (MSA) kullanarak oturum açın ve Visual Studio Team Services veya Microsoft iş kullanarak Azure içeren bir aboneliğiniz veya Okul hesabı Azure tarafından yönetilen iki aboneliğin bağlayabilirsiniz. Bu bir "alternatif hesap" olarak adlandırılır ve, MSA okulunuz ile ilişkili veya iş hesaplarını mevcut Azure, VSTS veya IDE kaynaklarına erişmesini sırasında aboneliğinizde oturum açmak için kullanmaya devam etmek sağlar. 
@@ -111,12 +111,11 @@ Aboneliğinize kişisel bir Microsoft hesabı (MSA) kullanarak oturum açın ve 
 Her iki hesap aynı e-posta adresi kullansanız bile, her iki hesap arasında Avantajlarınızı kullanmak için bir alternatif olarak iş/Okul hesabınızı eklemeniz gerekir. 
 
 Başka bir hesaba eklemek için:
-1. Oturum [abone portalı](https://my.visualstudio.com) Microsoft hesabınızla (MSA).
+1. Oturum [abone portalı](https://my.visualstudio.com?wt.mc_id=o~msft~docs) Microsoft hesabınızla (MSA).
 2. Tıklayın **abonelikleri** sekmesi.
 3. Altında **ilgili bağlantılar**, seçin **alternatif Hesap Ekle**.
 4. İş/Okul hesabı emaiil adresinizi girin ve tıklayın **Ekle**. 
-
-![Alternatif hesabı](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![Alternatif hesabı](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Başka bir hesaba ekledikten sonra güncelleştirmek veya tıklayarak herhangi bir zamanda kaldırmak **abonelikleri** sekmesi ve uygun seçeneği seçerek **ilgili bağlantılar** bölümü.  
 

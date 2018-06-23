@@ -18,19 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 24d8c7824e9bf90538a7d4dd1ae230d37cfbdb2f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765563"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326751"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>SharePoint nesne modellerini çağırma
   Visual Studio'da SharePoint araçları için Uzantılar oluşturduğunuzda, bazı görevleri gerçekleştirmek üzere SharePoint API'leri çağırmak gerekebilir. Örneğin, SharePoint projeleri için bir özel dağıtım adımı oluşturursanız, SharePoint çözümlerini dağıtmak için görevlerden bazılarını gerçekleştirmek için API çağrısı olabilir.  
   
  [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] SharePoint araç uzantıları kullanabileceğiniz iki farklı nesne modelleri sağlar: bir sunucu nesne modeli ve bir istemci nesne modeli. Her nesne modeli SharePoint araç uzantıları bağlamında avantajları ve sakıncaları vardır.  
   
- SharePoint nesne modellerini genel bakış için bkz: [programlama modeli, SharePoint araç uzantıları genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
+ SharePoint nesne modellerini genel bakış için bkz: [SharePoint programlama modeline genel bakış uzantıları Araçları](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   
 ## <a name="use-the-client-object-model-in-extension-projects"></a>Uzantı projelerinde istemci nesne modelini kullanma
  SharePoint araçları için uzantı geliştirirken, herhangi bir yönetilen API'ler kümesi gibi projenizdeki istemci nesne modelini kullanabilirsiniz. Projeniz için istemci nesne modelini derlemelerine başvurular ekleyebilirsiniz ve doğrudan kodunuzdan istemci nesne modelini API'leri çağırabilirsiniz.  
@@ -50,15 +50,15 @@ ms.locfileid: "34765563"
   
  Sunucu nesne modeli bir SharePoint araçları uzantısı'nda kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'yi çağırmak için. SharePoint komutu sunucusu nesne modeline doğrudan çağırabilir miyim ikincil bir derlemede tanımlayın. Uzantı projeniz, SharePoint dolaylı olarak ExecuteCommand yöntemini kullanarak çağrı komutu bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesnesi.  
   
- Oluşturma ve SharePoint komutları kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint komutu oluşturma](../sharepoint/how-to-create-a-sharepoint-command.md) ve [nasıl yapılır: SharePoint komutu yürütme](../sharepoint/how-to-execute-a-sharepoint-command.md). SharePoint komutları dağıtma hakkında daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Oluşturma ve SharePoint komutları kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint komutu oluşturma](../sharepoint/how-to-create-a-sharepoint-command.md) ve [nasıl yapılır: SharePoint komutu yürütme](../sharepoint/how-to-execute-a-sharepoint-command.md). SharePoint komutları dağıtma hakkında daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için Uzantılar dağıtmak](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
- Oluşturma ve SharePoint komutlarını kullanmak gösteren talimatlara için bkz [izlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) ve [izlenecek yol: Görüntü Web Sunucu Gezgini genişletme Bölümleri](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ Oluşturma ve SharePoint komutlarını kullanmak gösteren talimatlara için bkz: [izlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) ve [izlenecek yol: web bölümlerini görüntülemek için Sunucu Gezgini genişletme ](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>SharePoint komutları nasıl yürütülen anlama
- SharePoint komutları tanımlayan derlemeleri adlı bir 64-bit barındırma işlemi içinde yüklenen *vssphost4.exe*. Bir SharePoint araçları uzantısı'nda bir SharePoint komutu çağırdıktan sonra komut tarafından yürütülür *vssphost4.exe* 32-bit Visual Studio işlemini yerine (*devenv.exe*). SharePoint komutları kayıt defterinde değerlerini ayarlayarak nasıl yürütülen bazı yönlerini kontrol edebilirsiniz. Daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için hata ayıklama uzantıları](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ SharePoint komutları tanımlayan derlemeleri adlı bir 64-bit barındırma işlemi içinde yüklenen *vssphost4.exe*. Bir SharePoint araçları uzantısı'nda bir SharePoint komutu çağırdıktan sonra komut tarafından yürütülür *vssphost4.exe* 32-bit Visual Studio işlemini yerine (*devenv.exe*). SharePoint komutları kayıt defterinde değerlerini ayarlayarak nasıl yürütülen bazı yönlerini kontrol edebilirsiniz. Daha fazla bilgi için bkz: [uzantıları Visual Studio'da SharePoint araçları için hata ayıklama](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: bir SharePoint komutu oluşturma](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [Nasıl yapılır: SharePoint komutu yürütme](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [SharePoint Araç Uzantılarının Programlama Modeline Genel Bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
+ [Araç uzantılarının programlama modeline SharePoint genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
   

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a01fb5d47f390c311f119e669e7fdb75619b058
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9d73e1748be34dda6913937ce71858b1c3648ea
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572601"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326738"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Birden Çok İşlemciye Duyarlı Günlükçüler Yazılıyor
 Özelliğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birden çok işlemci yararlanmak için zaman derleme projesi düşmesine neden olur, ancak aynı zamanda olay günlüğü oluşturmak için karmaşıklık ekler. Bir tek işlemcili ortamda olayları, iletilerini, uyarıları ve hataları tahmin edilebilir ve sıralı bir şekilde Günlükçü ulaşır. Ancak, birden çok işlemcili ortamda farklı kaynaklardan gelen olayların aynı anda veya sıra dışı ulaşır. Bunun için sağlamak için [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] çok işlemciye duyarlı Günlükçü ve yeni bir günlük modeli sağlar ve özel "iletme günlükçüleri." oluşturmanıza olanak tanır  
@@ -75,7 +75,7 @@ public interface INodeLogger: ILogger
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Günlüğe kaydetme için basit ConfigurableForwardingLogger kullanarak dağıtılmış  
  Bir ConfigurableForwardingLogger veya özel iletme Günlükçü eklemek için kullanın `/distributedlogger` geçiş (`/dl` kısaca) MSBuild.exe komut satırı derleme içinde. Günlükçü türleri ve sınıf adları belirtmek için biçimi için aynıdır `/logger` dağıtılmış Günlükçü her zaman bir iletme Günlükçü ve merkezi Günlükçü yerine iki günlük sınıf olan geçin. XMLForwardingLogger adlı bir özel iletme Kaydedici ekleme konusunda bir örnek verilmiştir.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
 ```  
   
@@ -86,7 +86,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
   
  Örneğin, yalnızca bir yapı başlar ve biter ve bir hata oluştuğunda bildirim almak istiyorsanız, geçip geçmeyeceğini `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, ve `ERROREVENT` parametre olarak. Noktalı virgülle ayrılarak birden çok parametre geçirilebilir. Aşağıdaki ConfigurableForwardingLogger yalnızca iletmek için nasıl kullanılacağını örneğidir `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, ve `ERROREVENT` olaylar.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
 ```  
   

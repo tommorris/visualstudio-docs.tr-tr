@@ -9,12 +9,12 @@ description: Elde ve ürün anahtarlarınızı Visual Studio aboneliklerini yön
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 28db2b93a7d3d9593f0a8d66c8c7b0795530c8a1
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 810c560fcbae03678379a446f359e0a22d8ff085
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281280"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326821"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde ürün anahtarları kullanma
 
@@ -47,9 +47,8 @@ Bizim araştırma çoğu aboneleri kendi aboneliğine dahil ürün anahtarları 
 
 ## <a name="locating-and-claiming-product-keys"></a>Bulma ve ürün anahtarları istenmesini
 Ürün anahtarlarınızı görüntülemek için Visual Studio aboneliğiniz oturum açmanız gerekir. Bireysel ürün anahtarları, mavi seçerek bulunduğunda **alma anahtar** bağlamak için belirli bir ürünü [indirir](https://my.visualstudio.com/downloads) sayfasında aşağıda gösterildiği gibi.  Tüm anahtarları üzerinde toplama içinde de kullanılabilir [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sayfası. Tek bir ürün için birden çok anahtar mevcut olduğunda notları hangi anahtarının kullanılması gerektiğini belirlemenize yardımcı olması yükleme için Notlar sütunda görüntülenir.
-
-   ![İndirme sayfasından anahtarı alma](_img/product-keys/download-get-key.png)
-
+    ![İndirme sayfasından anahtarı alma](_img/product-keys/download-get-key.png)
+    
 Bazı ürünler birden çok ürün sürümleri tek bir yüklemeye içine paket. Bu durumda, ürün hangi sürümünün yüklü girilen ürün anahtarı belirler.
 Bazı anahtarlar, birden çok kez olarak etkinleştirme gerekli olmadığı için gerektiği şekilde kullanmanız "statik" anahtarlar gibi otomatik olarak sağlanır. Diğer anahtarlar seçerek talep gerekir **alma anahtar** ürün için bağlantı.
 

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45127afaeeadd6046c9726c8c56de9a4acf2338a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 2be6c99f8601ae8dfaa819a3b70119a7b5921214
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765609"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326993"
 ---
 # <a name="extend-sharepoint-project-items"></a>SharePoint proje öğelerini genişletme
   Visual Studio'da yüklü SharePoint proje öğesi türü işlevselliği eklemek istediğinizde bir proje öğesi uzantısı oluşturma. Örneğin, bir uzantı yerleşik oluşturabilirsiniz **olay alıcısı** veya **listesi tanımını** proje öğelerini Visual Studio'da ya da bir özel proje öğesi türü için bir uzantı oluşturabilirsiniz. Tüm SharePoint proje öğesi türleri için bir uzantı de oluşturabilirsiniz.  
@@ -72,5 +72,5 @@ ms.locfileid: "34765609"
  [Nasıl yapılır: bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [Nasıl yapılır: bir SharePoint Proje öğe uzantısına özellik ekleme](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [İzlenecek yol: bir SharePoint proje öğesi türünü genişletme](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
- [SharePoint Proje Sistemini Genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
+ [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
   

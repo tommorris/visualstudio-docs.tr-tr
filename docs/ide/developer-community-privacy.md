@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d1b1a8173e4bbab817cb1a07107da15f10526be
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304768"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327082"
 ---
 # <a name="developer-community-data-privacy"></a>Geliştirici topluluğu veri gizliliği
 
@@ -45,6 +45,45 @@ Veri gizlilik konusuyla ilgilenen, başlık veya her zaman ortak ilk rapor içer
    > Ekli dosyalar üzerinde 2 GB sınırını ve en fazla 10 dosya yok. Daha büyük bir dosyayı karşıya yüklemeyi gerekiyorsa, yeni bir sorun raporu göndermek veya özel bir açıklama Microsoft çalışana ait bir karşıya yükleme URL'si isteyin.
 
 Gizliliğinizi korumak ve hassas bilgileri genel görünümü dışında tutmak için Microsoft ile tüm etkileşimleri yanıtları görünürlük kısıtlanmış bir yorum altında tutmak için dikkatli olun. Diğer açıklamaları yanıtlar hassas bilgilerin yanlışlıkla açığa neden olabilir.
+
+## <a name="data-we-collect"></a>Topladığımız veri
+
+Varsa **bir sorun bildirmek** başlatılan Visual Studio Yükleyicisi'nden en son Kurulum günlüğüne toplarız.
+
+Varsa **bir sorun bildirmek** başlatılan Visual Studio'dan bir veya daha fazla aşağıdaki veri türlerini topladığımız:
+
+- Olay günlüğünden Watson ve .NET girişleri
+
+- Visual Studio bellek içi etkinliği günlük dosyası
+
+- PerfWatson dosyaları, Watson koleksiyonu etkinleştirilirse, gelen *VSFeedbackPerfWatsonData* klasörü
+
+- Varsa, LiveShare günlük dosyaları, gelen *VSFeedbackVSRTCLogs* klasörü
+
+- Varsa, Xamarin günlük dosyaları, gelen *%LOCALAPPDATA%\Xamarin\Logs*
+
+- Varsa, Nuget günlük dosyaları, gelen *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+
+- Varsa web hata ayıklayıcı günlük dosyaları:
+
+   - *%Temp%\vscode-Chrome-Debug.txt*
+
+   - *%Temp%\vscode-node-debug2.txt*
+
+   - *%Temp%\vscode-Edge-Debug.txt*
+
+- Bir ekran dahil seçerseniz,
+
+- İçeren bir kayıt eklemek isterseniz verileri, kaydı:
+
+   - Sorunu yeniden oluşturma adımları
+
+   - ETL izleme dosyası
+
+   - Döküm dosyası
+
+   > [!NOTE]
+   > Raporu göndermeden önce göndermek istemiyorsanız veri kaydını silebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

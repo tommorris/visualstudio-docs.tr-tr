@@ -9,12 +9,12 @@ description: Aboneler ve abonelik atamalarını ayrıntılarını listesini dı�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2bdd9d9d77388a1e00bd7ef57071f461a39674e9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f78ba7f8c5d782692b7600083eeffe0ab3ff8378
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031328"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326273"
 ---
 # <a name="exporting-subscription-information"></a>Abonelik bilgileri verme
 
@@ -23,4 +23,4 @@ Visual Studio Aboneliklerde [Yönetici portalı](https://manage.visualstudio.com
 Bu özellik, izleme atamaları ve sona erme tarihleri gibi bazı senaryolar için kullanışlıdır. Örneği için abonelik atamaları izlemek için engeller GUID'leri için kullanmaları zorunda varsa, bu rapor Microsoft Excel'de DÜŞEYARA formülü olan aboneleri uygun şekilde eşleşecek şekilde kullanabilirsiniz.  
 
 Dışarı aktarma gerçekleştirmek için seçmeniz yeterlidir **verme** sekmesi ve dosyayı yerel makinenize indirir. Dosya dışa aktarma tarihi yanı sıra kullanıcı aboneliklerini içeren anlaşmanın adını içerir.  
-        ![Aboneler dışarı aktarma](_img\exporting-subscriptions\exporting-subscriptions.png)
+![Aboneler dışarı aktarma](_img\exporting-subscriptions\exporting-subscriptions.png)

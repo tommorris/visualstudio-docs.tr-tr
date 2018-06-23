@@ -1,9 +1,10 @@
 ---
-title: Visual Studio kurtarılamaz işlem hatası
-ms.date: 02/23/2017
+title: Bir işlem kurtarılamaz bir hatayla karşılaştı
+ms.date: 06/22/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
-- editor
+- unrecoverable error
+- error, process
 author: gewarren
 ms.author: gewarren
 manager: douge
@@ -11,26 +12,26 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db7f2729ded01eedda6fff6d18ca1b2ee3607b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942227"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325708"
 ---
 # Visual Studio kurtarılamaz işlem hatası
 
-Visual Studio 2017 birkaç işlem dışı işlemler dinamik birim testi gibi gerekli arka plan görevleri çalıştırmak için çözümleyiciler kodunu kullanır. Bu işlemler çıkış yoğun bir kaynak, uzun süre çalışan bir iş çalışmadığı zaman daha hızlı yanıt Visual Studio etkinleştirme gibi Visual Studio performans avantajı vermek için işlem dışı çalıştırılır. Visual Studio 32 bitlik bir işlem olduğundan, ayrıca, işlemler,-işlem dışı çalışan bellek yoğun iş çalışılacak daha büyük bir bellek alanı sağlar.
+Visual Studio 2017 birkaç işlem dışı işlemler dinamik birim testi gibi gerekli arka plan görevleri çalıştırmak için çözümleyiciler kodunu kullanır. Bu işlemler çıkış uzun, kaynak yoğunluklu işler çalışırken daha hızlı yanıt Visual Studio etkinleştirme gibi Visual Studio performans avantajı vermek için işlem dışı çalıştırılır. Visual Studio 32 bitlik bir işlem olduğundan, ayrıca, işlemler,-işlem dışı çalışan bellek yoğun iş çalışılacak daha büyük bir bellek alanı sağlar.
 
-İşlemler sona erer bunlardan herhangi bir nedenden dolayı gerekli açılır bilgi çubuğu ile aşağıdaki ileti görüntülenir:
+Varsa *ServiceHub.RoslynCodeAnalysisService.exe* veya *ServiceHub.RoslynCodeAnalysisService32.exe* işlem sona erer herhangi bir nedenle açılır bilgi çubuğu aşağıdaki ileti görüntülenir:
 
-"Ne yazık ki, Visual Studio tarafından kullanılan bir işlem kurtarılamaz bir hatayla karşılaştı. Çalışmanızı ve ardından kapatarak ve Visual Studio'yu yeniden başlatmayı kaydetme öneririz."
+**"Ne yazık ki, Visual Studio tarafından kullanılan bir işlem kurtarılamaz bir hatayla karşılaştı. Çalışmanızı ve ardından kapatarak ve Visual Studio'yu yeniden başlatmayı kaydetme öneririz."**
 
-Bu iletiyi görürseniz, hemen çalışmanızı kaydedin ve kapatın ve Visual Studio'yu yeniden başlatın. Bunu yapmazsanız, herhangi bir anda Visual Studio çökebilir.
+Bu iletiyi görürseniz, çalışmanızı kaydedin ve kapatın ve Visual Studio'yu yeniden başlatın.
 
 ## İşlemlerin listesi
 
-Düzgün çalışması Visual Studio için çalıştırmalıdır Visual Studio tarafından kullanılan işlem dışı işlemlerin bir listesi verilmiştir.
+Visual Studio tarafından kullanılan işlem dışı işlemlerin bir listesi verilmiştir. Bu listesi belirli iş akışları veya senaryolar başlatma işlemleri planlayacak ve böylece çoğu durumda bunlar tüm aynı anda çalıştırmıyor.
 
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
@@ -45,3 +46,5 @@ Düzgün çalışması Visual Studio için çalıştırmalıdır Visual Studio t
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe
+
+Bu işlemlerden biri sona ererse beklenmedik bir şekilde, Visual Studio içinde bazı işlevler çalışmayı durdurur. Bazı işlemler için işlev kaybı Önemsiz olabilir. Başkalarının, Visual Studio kararlılığını etkilenir ve bir hata iletisi görüntülenir.

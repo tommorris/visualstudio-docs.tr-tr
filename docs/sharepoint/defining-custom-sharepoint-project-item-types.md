@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9b752aa8162f52746b4487b863557af6dd37fd9
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 180d7e4878ca0c9493c949eac055713212c964de
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765586"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326172"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Özel SharePoint proje öğesi türlerini tanımlama
   Yeni tür bir SharePoint proje öğesi oluşturmak istediğiniz zaman yeni bir SharePoint proje öğesi türünü tanımlayın. Örneğin, Visual Studio alanlar ekleyerek veya bir SharePoint sitesine özel eylemler için SharePoint Proje öğeleri içermez. Kendi türlerde alanları, özel eylemler veya diğer tür SharePoint bileşenlerin oluşturmak için SharePoint Proje öğeleri tanımlayabilirsiniz.  
@@ -32,11 +32,11 @@ ms.locfileid: "34765586"
   
  Özel proje öğesi türü tanımladığınızda, proje öğesi için aşağıdaki işlevler de ekleyebilirsiniz:  
   
--   Bir kısayol menü öğesi için proje öğesi ekleyin. Proje öğesi için kısayol menüsünü açtığınızda menü öğesi görünür **Çözüm Gezgini** proje öğesi sağ tıklanarak veya seçip ardından seçme **Shift** +  **F10** anahtarları. Daha fazla bilgi için bkz: [nasıl yapılır: bir özel SharePoint Proje öğe türüne bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
+-   Bir kısayol menü öğesi için proje öğesi ekleyin. Proje öğesi için kısayol menüsünü açtığınızda menü öğesi görünür **Çözüm Gezgini** proje öğesi sağ tıklanarak veya seçip ardından seçme **Shift** +  **F10** anahtarları. Daha fazla bilgi için bkz: [nasıl yapılır: özel bir SharePoint Proje öğe türüne bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
   
--   Bir özel özellik için proje öğesi ekleyin. Özellik görünür **özellikleri** proje öğesi seçtiğinizde penceresi **Çözüm Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: bir özel SharePoint Proje öğe türüne özellik ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+-   Bir özel özellik için proje öğesi ekleyin. Özellik görünür **özellikleri** proje öğesi seçtiğinizde penceresi **Çözüm Gezgini**. Daha fazla bilgi için bkz: [nasıl yapılır: özel bir SharePoint Proje öğe türüne özellik ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- Diğer geliştiriciler Visual Studio Proje öğesi kullanmak üzere etkinleştirmek için bir .spdata dosyası oluşturun ve bir öğe şablonu veya proje öğesi ile ilişkilendirilen proje şablonu oluşturun. Daha fazla bilgi için bkz: [öğe şablonları oluşturma ve SharePoint Proje öğeleri için proje şablonları](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+ Diğer geliştiriciler Visual Studio Proje öğesi kullanmak üzere etkinleştirmek için bir .spdata dosyası oluşturun ve bir öğe şablonu veya proje öğesi ile ilişkilendirilen proje şablonu oluşturun. Daha fazla bilgi için bkz: [öğe şablonları ve SharePoint Proje öğeleri için proje şablonları oluşturma](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
 ## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>Proje öğesi türleri ve proje öğesi örnekleri arasındaki ilişkiyi anlama
  Bir SharePoint Proje öğe türüne tanımladığınızda, ilişkili türünde bir proje öğesi bir SharePoint projesine eklenen uzantınızın Visual Studio yükler. Örneğin, yeni bir tanımlarsanız **özel eylem** öğesi proje türü, Visual Studio kullanıcı eklediğinde uzantınızı yükler bir **özel eylem** projeye proje öğesi. Visual Studio için tüm örneklerini ilişkili proje öğesi türü uzantınızı aynı örneğini kullanır. Önceki örnekte kullanıcı saniyenin eklerse **özel eylem** projeye proje madde, aynı örnek uzantınızın ikinci proje öğesi özelleştirmek için kullanılır.  
@@ -45,12 +45,12 @@ ms.locfileid: "34765586"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: bir SharePoint proje öğesi türü tanımlama](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [Nasıl yapılır: özel SharePoint Proje öğe türüne özellik ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
- [Nasıl yapılır: özel SharePoint Proje öğe türüne bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
- [SharePoint Proje öğeleri için öğe şablonları ve proje şablonları oluşturma](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
- [İzlenecek yol: bir öğe şablonu, bölüm 1 ile bir özel eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [İzlenecek yol: bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+ [Nasıl yapılır: özel bir SharePoint Proje öğe türüne özellik ekleme](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
+ [Nasıl yapılır: özel bir SharePoint Proje öğe türüne bir kısayol menü öğesi ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
+ [Öğe şablonları ve SharePoint Proje öğeleri için proje şablonları oluşturma](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [İzlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [İzlenecek yol: bir proje şablonu, bölüm 1 ile site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [İzlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
- [İzlenecek yol: bir proje şablonu, bölüm 2 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
- [Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+ [İzlenecek yol: bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
+ [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

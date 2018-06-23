@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e065c64445710e6ff0a99d3bcf8a27c71425879e
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9cb80965385d7d258523dc0caf5291791c5ea09a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765719"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326237"
 ---
 # <a name="extensiondata-element"></a>ExtensionData öğesi
   SharePoint proje öğesi ile ilişkili olan özel veri öğeleri koleksiyonunu temsil eder.  
@@ -64,6 +64,6 @@ ms.locfileid: "34765719"
 |**Boş olamaz**|Hayır|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Proje Öğesi Şema Başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

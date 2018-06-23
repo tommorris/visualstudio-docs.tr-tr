@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1fae92a9ca958f3d6702ec0f2d1678b33d471bab
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0e43cfa7c9fa78722639053c572280cbaad912bf
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765498"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325348"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint için site tanımları oluşturma
   SharePoint Site tanımı projesinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturmanıza olanak tanır bir *site tanım*, hangi yeni bir SharePoint sitesi için bir temel olarak hizmet verir. Bu tanımları yalnızca görünümünü ve davranışını SharePoint sitesi, ancak aynı zamanda varsayılan içeriğini ve işlevleri belirler. Tanımı'nda, önceden yapılandırılmış listeleri, içerik türleri, Olay alıcıları, resimleri ve diğer öğeleri koyabilirsiniz. Örneğin, SharePoint BLOG gibi bazı site tanımları içerir. BLOG sitesi tanımına dayalı olarak bir site oluşturduğunuzda, site listeler, Web Bölümleri ve bir blog sitesi gerektiren diğer öğeleri içerir.  
@@ -41,11 +41,11 @@ ms.locfileid: "34765498"
   
 |Dosya Adı|Açıklama|  
 |---------------|-----------------|  
-|*Default.aspx*|Yeni SharePoint sitesi için varsayılan ASPX giriş sayfası.|  
+|*default.aspx*|Yeni SharePoint sitesi için varsayılan ASPX giriş sayfası.|  
 |*onet.XML*|Yeni sitenin yapılandırmasını, bileşenlerini site tanımı şablonu ve varsayılan davranışını belirtir. Bu ayarlar, öznitelikler etkinleştirilen, içerik türleri gibi varsayılan liste görünümleri belge şablonu dosyaları içerir ve Web sitesiyle dahil bölümleri. Varsayılan olarak, `Modules` bölümü SharePoint sitesine ve nasıl yapılandırıldıklarına eklenecek dosyalar listeler.|  
-|*webtemp_ {SiteDefinitionName} .xml*|Görünür site tanımı yapılandırmaları belirtir **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
+|*webtemp_\<SiteDefinitionName > .xml*|Görünür site tanımı yapılandırmaları belirtir **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
   
- Varsayılan olarak, tüm site tanımları depolanmış *{sürücü:} \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* klasör. Her bir site tanımı kendi alt vardır.  
+ Varsayılan olarak, tüm site tanımları depolanmış  *\<sürücü: > \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* klasör. Her bir site tanımı kendi alt vardır.  
   
 ## <a name="related-topics"></a>İlgili konular
   
@@ -55,8 +55,8 @@ ms.locfileid: "34765498"
 |[Nasıl yapılır: özel Site Tanım ve yapılandırma oluşturma](http://go.microsoft.com/fwlink/?LinkId=183309)|Varolan bir site tanımı kopyalama ve bu kopyayı değiştirerek bir özel site tanımı SharePoint'te oluşturmayı açıklar.|  
 |[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|Kullanılabilir site tanımları belirtir özgün dosya anlatılmakta **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
 |[SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)|SharePoint çözümlerini genel kullanım için hazırlamayı açıklar.|  
-|[SharePoint için Web Bölümleri Oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|Kullanıcılar değiştirebilir bir SharePoint sayfasına bölümlerini nasıl oluşturabileceğiniz açıklanmaktadır.|  
-|[Web Bölümleri veya Uygulama Sayfaları için Yeniden Kullanılabilir Denetimler Oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Uygulama sayfaları ve Web Bölümleri çalıştıran yeniden kullanılabilir denetimler nasıl oluşturabileceğiniz açıklanmaktadır.|  
+|[SharePoint Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|Kullanıcılar değiştirebilir bir SharePoint sayfasına bölümlerini nasıl oluşturabileceğiniz açıklanmaktadır.|  
+|[Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Uygulama sayfaları ve Web Bölümleri çalıştıran yeniden kullanılabilir denetimler nasıl oluşturabileceğiniz açıklanmaktadır.|  
 |[Visual Web Developer](http://go.microsoft.com/fwlink/?LinkId=178725)|Projenizde bir Web sayfasını açtığınızda görüntülenen tasarımcının nasıl kullanılacağı açıklanmaktadır.|  
 |[ASP.NET Web sayfaları genel bakış](http://go.microsoft.com/fwlink/?LinkId=178726)|Yapısı hakkında genel bilgi sağlar [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Web sayfaları, sayfa tarafından nasıl işleneceğini [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]ve nasıl [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfalarını görüntüleme XHTML standartlarıyla uyumlu biçimlendirme.|  
 |[ASP.NET Web sayfası sözdizimi](http://go.microsoft.com/fwlink/?LinkId=178727)|Bir ASP.NET sayfasını oluştururlar biçimlendirme öğelerini açıklar.|  
@@ -64,6 +64,6 @@ ms.locfileid: "34765498"
 |[Windows SharePoint Services programlama](http://go.microsoft.com/fwlink/?LinkId=178729)|Sağlanan yönetilen nesne modeli kullanmayı açıklar [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
+ [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   
  

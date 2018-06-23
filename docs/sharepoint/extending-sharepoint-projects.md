@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab99253efbef61a3a041f261e44e8944bc7d6024
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 76648e128db23415d6a986a7d0087968c549bd13
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764159"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326014"
 ---
 # <a name="extend-sharepoint-projects"></a>SharePoint projeleri genişletme
   SharePoint projeleri proje düzeyi özelliklerini özelleştirmek istediğiniz zaman bir proje uzantısı oluşturma. Örneğin, özel Proje özelliklerini eklemek ya da kullanıcı bir SharePoint çözüm Visual Studio'da geliştirir başlatılan proje düzeyi olaylara yanıt.  
@@ -50,7 +50,7 @@ ms.locfileid: "34764159"
  [İzlenecek yol: bir SharePoint proje uzantısı oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)   
  [Özel SharePoint proje öğesi türlerini tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [SharePoint proje öğelerini genişletme](../sharepoint/extending-sharepoint-project-items.md)   
- [Genişletme SharePoint paketleme ve dağıtma](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [SharePoint Proje Sistemini Genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
+ [SharePoint paketleme ve dağıtımını genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
+ [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
   
   

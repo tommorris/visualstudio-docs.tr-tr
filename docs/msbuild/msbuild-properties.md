@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a45f4388fe02e7192da91a246b3dd05657f0ca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 972deba96540d835ced02baa3abf33cb1972519f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573966"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326260"
 ---
 # <a name="msbuild-properties"></a>MSBuild Özellikleri
 Özellikler, yapıları yapılandırmak için kullanılabilen ad-değer çiftleridir. Özellikler, değerlerin görevlere geçirilmesinde, koşulların değerlendirilmesinde ve proje dosyası boyunca başvurulacak olan değerlerin depolanmasında yararlıdır.  
@@ -63,13 +63,13 @@ ms.locfileid: "31573966"
 ## <a name="registry-properties"></a>Kayıt Defteri Özellikleri  
  `Hive` öğesinin kayıt defteri kovanı olduğu (örneğin, HKEY_LOCAL_MACHINE), `Key` öğesinin anahtar adı olduğu, `SubKey` öğesinin alt anahtar adı olduğu ve `Value` öğesinin alt anahtarın değeri olduğu aşağıdaki söz dizimini kullanarak sistem kayıt defteri değerlerini okuyabilirsiniz.  
   
-```  
+```xml  
 $(registry:Hive\MyKey\MySubKey@Value)  
 ```  
   
  Varsayılan alt anahtar değerini almak için `Value` öğesini atın.  
   
-```  
+```xml  
 $(registry:Hive\MyKey\MySubKey)  
 ```  
   
@@ -88,7 +88,7 @@ $(registry:Hive\MyKey\MySubKey)
   
  Aşağıdaki örnek genel `Configuration` özelliğini `DEBUG` olarak ayarlar.  
   
-```  
+```cmd  
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   

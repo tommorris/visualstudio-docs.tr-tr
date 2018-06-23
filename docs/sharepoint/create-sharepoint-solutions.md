@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bea91ca50cca71f91499ff306036a7e4812a5807
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691610"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326069"
 ---
 # <a name="create-sharepoint-solutions"></a>SharePoint çözümleri oluşturma
   SharePoint Tasarımcısı'nda oluşturma alternatif olarak, Visual Studio'da SharePoint uygulamaları oluşturabilirsiniz. Visual Studio, Gelişmiş hata ayıklama araçları, IntelliSense, deyim tamamlama ve proje şablonları gibi özellikler sağlayarak hızlı SharePoint geliştirme yükseltir. Visual Studio de Gelişmiş .NET Framework tabanlı araçlar ve dilleri yararlanır. Visual Basic veya Visual C# kullanarak SharePoint projeleri geliştirebilir ve JavaScript kullanarak SharePoint projeleri için uygulama geliştirme yapabilirsiniz.  
@@ -34,8 +34,8 @@ ms.locfileid: "34691610"
   
 |||  
 |-|-|  
-|![Belge](../sharepoint/media/vs-icon-documentation.gif "belgeleri")|**Belgeler**<br /><br /> -   [Başlarken &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)<br />-   [SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
-|![Belge](../sharepoint/media/vs-icon-documentation.gif "belgeleri")|**Öne çıkan görevleri**<br /><br /> -   [İzlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Nasıl yapılır: bir BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Nasıl yapılır: bir SharePoint Web Bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Nasıl yapılır: bir kullanıcı denetimi oluşturmak için SharePoint uygulama sayfası veya Web Bölümü](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
+|![Belge](../sharepoint/media/vs-icon-documentation.gif "belgeleri")|**Belgeler**<br /><br /> -   [Başlama &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)<br />-   [SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Derleme ve SharePoint çözümlerini hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Paketleme ve dağıtma SharePoint çözümleri](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
+|![Belge](../sharepoint/media/vs-icon-documentation.gif "belgeleri")|**Öne çıkan görevleri**<br /><br /> -   [İzlenecek yol: SharePoint için site sütunu, içerik türü ve tist oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Nasıl yapılır: bir BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Nasıl yapılır: bir SharePoint Web Bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Nasıl yapılır: bir SharePoint uygulama sayfası veya web bölümü için bir kullanıcı denetimi oluşturma](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![İzlenecek yollar](../sharepoint/media/vs-icon-walkthroughs.gif "izlenecek yollar")|**İzlenecek Yollar**<br /><br /> -   [SharePoint geliştirme yönergeleri](../sharepoint/sharepoint-development-walkthroughs.md)|  
 |![Kod örnekleri](../sharepoint/media/vs-icon-codesamples.gif "kod örnekleri")|**Kod örnekleri**<br /><br /> -   [SharePoint geliştirme örnekleri](../sharepoint/sharepoint-development-samples.md)<br />-   [SharePoint Geliştirici indirir](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  
 |![Eğitim](../sharepoint/media/vs-icon-training.gif "eğitim")|**Eğitim**<br /><br /> -   [SharePoint geliştirme öğrenin](http://msdn.microsoft.com/sharepoint/aa905692.aspx)|  

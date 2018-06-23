@@ -9,12 +9,12 @@ description: Genel Müşteri numarası (PCN) veya Yetkilendirme numarası bulun 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 224cb02d2ffdeceb4c2288175968324badd0911c
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863303"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325446"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Nasıl ı my "Genel Müşteri numarası" (PCN) veya Yetkilendirme numarası bulun?
 
@@ -24,16 +24,13 @@ Kuruluşunuzun aboneliği yönetim portalına ekleme tamamlamak için genel mü�
 
 1.  Toplu Lisanslama hizmeti merkezi adresindeki için oturum açın: [ https://www.Microsoft.com/licensing/servicecenter ](https://www.Microsoft.com/licensing/servicecenter).
 
-    ![VLSC'ye oturum açın](_img/vlsc/vlsc-login.png)
-
 2. Abonelikleri sekmesinden seçin **Visual Studio abonelikleri**.
-
     ![İçinde VLSC Subscriptions'ı seçin](_img/vlsc/vlsc-subscriptions.png)
 
 3. Yarı yarıya PCN veya genel müşteri numarası page down bulunur.
-    
     ![İçinde VLSC PCN bulun](_img/vlsc/vlsc-pcn.png)
 
+    
 Yukarıdaki sayfa görmediğinizden ve Visual Studio oturum açma sayfasına yönlendirilir, lütfen kopyalayın ve aşağıdaki bağlantıyı tarayıcınıza yapıştırın: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Birden fazla PCN varsa, hangisini kullanmalıyım?

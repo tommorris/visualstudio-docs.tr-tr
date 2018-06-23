@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571626"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325303"
 ---
 # <a name="msbuild-transforms"></a>MSBuild Dönüşümleri
 Bir dönüştürme başka bir bire bir dönüştürme bir öğe listesi değildir. Bir proje öğesi listeleri dönüştürmek etkinleştirmeye ek olarak, bir dönüşüm kendi giriş ve çıkış arasında doğrudan bir eşleme tanımlamak bir hedef sağlar. Bu konu dönüşümler açıklar ve nasıl [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri daha verimli bir şekilde oluşturmak için bunları kullanır.  
@@ -28,7 +28,7 @@ Dönüşümler rasgele değildir, ancak özel sözdizimi, tüm dönüştürme de
   
 Aşağıdaki örnekte, bir listesini *.resx* dosyaları bir listeye dönüştürülen *.resources* dosyaları. %(Filename) dönüştürme değiştiricisi, her belirtir *.resources* dosya ilgili olarak aynı dosya adına sahip *.resx* dosya.  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ Aşağıdaki örnekte, bir listesini *.resx* dosyaları bir listeye dönüştür
 ## <a name="using-multiple-modifiers"></a>Birden çok değiştiricileri kullanma  
  Bir dönüştürme ifadesi herhangi bir sırada birleştirilebilir ve tekrarlanabilir birden çok değiştiricileri içerebilir. Aşağıdaki örnekte, dosyaları içeren dizinin adını değiştirilir, ancak özgün adı ve dosya adı uzantısı dosyaları korur.  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   

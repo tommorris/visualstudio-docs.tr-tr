@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766513"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325727"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem öğesi
   SharePoint proje öğesi anahtar/değer biçimi ile ilişkili bir özel veri öğesi. Anahtar ve değer dize olmalıdır.  
@@ -64,6 +64,6 @@ ms.locfileid: "34766513"
 |**Boş olamaz**|Hayır|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Proje Öğesi Şema Başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

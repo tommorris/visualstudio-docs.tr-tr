@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e897469eee33a1e4ee48b9096714b4213c099a8f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765862"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326001"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Sunucu Gezgini kullanarak SharePoint bağlantılarına göz
   Yerel SharePoint bağlantıları gözatabilirsiniz **Sunucu Gezgini**. Bu yöntemi kullanarak, bir SharePoint sitesi bileşenleriyle sisteminizde gidebilirsiniz. Liste tanımları ve içerik türleri gibi SharePoint site bileşenlerini adlı bir düğüm görünür **SharePoint bağlantıları** ağaç görünümünde **Sunucu Gezgini**. Görüntülenecek **Sunucu Gezgini**, menü çubuğunda seçin **Görünüm** > **Sunucu Gezgini**. SharePoint site bileşenlerini görüntüleme ek olarak, öğeleri kaldırmak, özelliklerini görüntülemek veya kısayol menüsünden komutları kullanarak ağaç görünümü yenileyin.  
@@ -52,9 +52,9 @@ ms.locfileid: "34765862"
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: SharePoint Bağlantıları Ekleme veya Kaldırma](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Yeni bir SharePoint sitesi eklemek için gereken adımları açıklar **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**.|  
+|[Nasıl yapılır: SharePoint bağlantıları Ekle Kaldır](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Yeni bir SharePoint sitesi eklemek için gereken adımları açıklar **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
+ [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   
  

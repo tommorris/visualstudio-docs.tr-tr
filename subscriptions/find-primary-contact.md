@@ -9,12 +9,12 @@ description: Visual Studio abonelikleri - birincil ilgili kişinin bulma
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a50fef244d7b656271adf36544166c9f8256c1ae
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 69ef519d18dbfd52646f8cadb27e842a14c6135c
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862802"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325216"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Visual Studio abonelik ile ilişkili birincil ilgili bulma
 
@@ -22,17 +22,13 @@ Onboarding abonelikleri Yönetim Portalı, kuruluşunuzun tamamlamak için birin
 
 1. Birincil kişiniz bulmak için Toplu Lisans Hizmet Merkezi ziyaret edin: https://www.Microsoft.com/licensing/servicecenter tıklatıp **oturum**.
 
-    ![VLSC'ye oturum açın](_img/locate-primary-contact/vlsc-sign-in.png)
-
 2. Lisansları sekmesinden seçin **ilişki Özet** açılır.
-
     ![İlişki seçin](_img/locate-primary-contact/vlsc-relationship.png)
-
+   
 3. Geçerli anlaşma numarası seçin. 
-
     ![Anlaşma seçin](_img/locate-primary-contact/vlsc-agreement.png)
 
 4. Seçin **kişiler** sekmesi.  Birincil ilgili kişinin Sözleşmesi ile ilişkili kişiler listesinde listelenir. 
-
     ![Kişileri seçin](_img/locate-primary-contact/vlsc-contacts.png)
- 
+
+

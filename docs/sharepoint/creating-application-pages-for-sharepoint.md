@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765011"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326133"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>SharePoint için uygulama sayfaları oluşturma
   Bir *uygulama sayfası* bir SharePoint Web sitesinde kullanılmak üzere tasarlanmış bir ASP.NET Web sayfası. Uygulama sayfaları, ASP.NET sayfası özel türüdür. Uygulama sayfası ve standart bir ASP.NET sayfası arasındaki birincil fark, bir uygulama sayfasını bir SharePoint ana sayfa ile birleştirilmiş içeriğin bulunduğu ' dir. Bir ana sayfa diğer sayfalarda bir site olarak aynı görünümü ve davranışı paylaşmak uygulama sayfaları sağlar.  
@@ -69,7 +69,7 @@ ms.locfileid: "34765011"
   
  Uygulama sayfasını görüntülemek için el ile uygulama sayfası konuma gitmeniz gerekir (örneğin: http://*sunucu_adı*/_layouts/*Project_Name*/ApplicationPage1.aspx).  
   
- SharePoint projeleri hata ayıklama hakkında daha fazla bilgi için bkz: [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+ SharePoint projeleri hata ayıklama hakkında daha fazla bilgi için bkz: [sorun giderme SharePoint çözümlerini](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
 ## <a name="choose-a-master-page"></a>Bir ana sayfa seçin
  Varsayılan olarak, bir **uygulama sayfası** öğesine başvuruyor, projenizin hatalarını ayıklamak için kullanmakta olduğunuz sitenin ana sayfa. Sayfa v4.master adlı ve onu listelenen bulabilirsiniz **Ana Sayfa Galerisi** SharePoint sitesi.  

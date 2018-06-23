@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f08a159d9490c5c8f92c5b093bc1b52d01c3b3d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575614"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326211"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl Yapılır: Farklı Seçeneklerle Aynı Kaynak Dosyaları Derleme
 Projeleri oluşturduğunuzda, farklı yapılandırma seçenekleriyle aynı bileşenleri sık derleyin. Örneğin, sembol bilgileri veya sembol bilgileri ile ancak iyileştirmeler yayın derlemesinde hata ayıklama derlemesi oluşturabilirsiniz. Veya x86 gibi belirli bir platformda çalıştırmak için bir proje oluşturabilirsiniz veya [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Bu durumlarda, yapı seçeneklerin çoğu aynı kalır; derleme yapılandırması denetlemek için yalnızca birkaç seçenekleri değişir. İle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], farklı bir yapı yapılandırmaları oluşturmak için özellikleri ve koşulları kullanın.  
@@ -56,13 +56,13 @@ Projeleri oluşturduğunuzda, farklı yapılandırma seçenekleriyle aynı bile�
   
 -   Kullanım **/property** anahtar özellik ve özellik değeri. Örneğin:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
      - veya -  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -70,13 +70,13 @@ Projeleri oluşturduğunuzda, farklı yapılandırma seçenekleriyle aynı bile�
   
 -   Kullanmak **/property** veya **/p** özelliği ve özellik değerleri ile birden çok kez geçiş veya kullanın **/property** veya **/p** geçin ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
      - veya -  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
@@ -91,13 +91,13 @@ Projeleri oluşturduğunuzda, farklı yapılandırma seçenekleriyle aynı bile�
   
  Bu projenin hata ayıklama sürümü oluşturmak için şunu yazın:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  Bu proje perakende sürümünü oluşturmak için şunu yazın:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -158,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  Projeyi oluşturmak için aşağıdaki komutu girin:  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   

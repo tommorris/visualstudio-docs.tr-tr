@@ -15,19 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1bcce4a414985ba291f33d3ad56abe880c08e7d2
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: c5010a4cfba970f63cfa887f4c3be943cbdde731
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237443"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326185"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme
   Bazı durumlarda SharePoint Proje sistemi nesnenin olabilir ve Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, karşılık gelen bir nesne özelliklerini kullanmak istediğiniz veya tam tersi. Bu durumlarda, kullandığınız <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> farklı nesne modeline nesneyi dönüştürmek için SharePoint Proje hizmeti yöntemi.
 
  Örneğin, sahip olabileceğiniz bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> nesnesi, ancak yalnızca kullanılabilir yöntemleri kullanmak istediğiniz bir <xref:EnvDTE.Project> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> nesnesi. Bu durumda, kullanabileceğiniz <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> dönüştürmek için yöntem <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> için bir <xref:EnvDTE.Project> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.
 
- Visual Studio Otomasyon nesne modeli ve Visual Studio tümleştirmesi nesne modeli hakkında daha fazla bilgi için bkz: [programlama modeli, SharePoint araç uzantıları genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
+ Visual Studio Otomasyon nesne modeli ve Visual Studio tümleştirmesi nesne modeli hakkında daha fazla bilgi için bkz: [SharePoint programlama modeline genel bakış uzantıları Araçları](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
 
 ## <a name="types-of-conversions"></a>Tür dönüştürmeleri
  Aşağıdaki tabloda, bu yöntem SharePoint Proje sisteminin ve diğer Visual Studio nesne modelleri arasında dönüştürme türleri listelenmektedir.
@@ -51,7 +51,7 @@ ms.locfileid: "35237443"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [SharePoint Proje Hizmetini Kullanma](../sharepoint/using-the-sharepoint-project-service.md)
-- [Nasıl yapılır: SharePoint Proje Hizmetini Alma](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
-- [SharePoint Araç Uzantılarının Programlama Modeline Genel Bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [SharePoint Proje hizmetini kullanma](../sharepoint/using-the-sharepoint-project-service.md)
+- [Nasıl yapılır: SharePoint Proje hizmetini alma](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Araç uzantılarının programlama modeline SharePoint genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 

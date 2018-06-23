@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692076"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325800"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API Başvurusu (SharePoint araçları genişletilebilirliği)
   Bu bölüm genişletme Visual Studio'da SharePoint araçları için API başvuru belgeleri içerir.  
@@ -61,9 +61,9 @@ ms.locfileid: "34692076"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [Başvuru &#40;SharePoint araçları genişletilebilirliği&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
- [Uzantıları araç SharePoint programlama modeline genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
+ [Araç uzantılarının programlama modeline SharePoint genel bakış](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Genişletme SharePoint paketleme ve dağıtma](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [SharePoint Nesne Modellerini Çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)  
+ [SharePoint paketleme ve dağıtımını genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
+ [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)  
   

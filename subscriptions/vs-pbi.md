@@ -9,12 +9,12 @@ description: Seçili Visual Studio aboneliklerle dahil Power BI Pro abonelik hak
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe98aef3da7ef74a802d9dfd67f8f8917b1a20b2
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d1afbe07a27ac41c8f36399b4e8cbd7463bce0b9
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282430"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326299"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Power BI Pro
 
@@ -79,10 +79,21 @@ Power BI Pro'yu kullanmak için bir hesap ayarlamanızı veya varolan bir hesab�
 | Visual Studio Dev Essentials | Yok  | Yok |Yok|
 | Visual Studio Enterprise (aylık bulut) | Azure                                       | Yok                                  |Yok|
 
-<sup>1</sup>*içerir: değil satışı (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici, MCT yazılım ve hizmet için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  Dışlar: Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
+<sup>1</sup>*içerir: değil satışı (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici, MCT yazılım ve hizmet için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).    Dışlar: Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
 
 
 Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
+
+ 
+## <a name="frequently-asked-questions"></a>Sık sorulan sorular
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>S: avantajı serbest ise neden kredi kartı numarası sağlamak gerekiyor?
+A: avantajı ücretsizdir, ancak etkinleştirme Ücretli siparişleri işlemek için kullanılan aynı sistemi kullanır.  İki ödeme türleri kullanılabilir. 
+- Kredi kartı.  Kredi kartı numarası sağlarsanız, kartınızdan ücret ALINMAZ. 
+- Fatura.  Ödeme türü "Fatura" seçeneğini belirlerseniz, kredi kartı numarası sağlamanız gerekmez.  Aralık için "yıllık" de ayarlayabilirsiniz.  Bu şekilde, size bir fatura için hazır olduğunu bildiren tek bir e-posta alırsınız.  Fatura tutarı $0,00 olacaktır.  
+
+### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>S: My aboneliğine dahil Power BI Pro avantajı, bir üretim ortamında kullanılabilir mi?
+Y: Evet.  
+
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Power BI Pro ile ilgili Yardım gerekiyor?

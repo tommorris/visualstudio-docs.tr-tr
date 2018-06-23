@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 735f0d5160466c81560ba5afb6bfc0e696d88230
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 6f59d12fc6e587287c6aa1b72de3404f6d56f23a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302941"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326147"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017 ile ilgili bir sorun bildirme
 
@@ -63,6 +63,8 @@ Visual Studio için bir sorunu bildirmek için Visual Studio veya Visual Studio 
 
 1. Seçin **gönderme** tüm görüntü ve izleme veya döküm dosyaları yanı sıra, raporu göndermek için. (Varsa **gönderme** düğmesi gri çıkışı, başlık ve rapor için bir açıklama sağladığınızdan emin olun.)
 
+   Hangi verilerin toplandığını hakkında daha fazla bilgi için bkz: [topladığımız veri](developer-community-privacy.md#data-we-collect).
+
 ## <a name="record-a-repro"></a>Kayıt bir yeniden oluşturma
 
 İzleme ve yığın dökümü dosyaları, bize sorunlarını tanılamanıza yardımcı faydalıdır. Kullandığınızda, değer veriyoruz **bir sorun bildirmek** yeniden oluşturma adımları kaydetmek ve Microsoft'a veri göndermek için aracı. Bunun nasıl yapılacağı aşağıda verilmiştir:
@@ -82,6 +84,8 @@ Visual Studio için bir sorunu bildirmek için Visual Studio veya Visual Studio 
 1. İşiniz bittiğinde seçin **durdurmak kayıt** düğmesi.
 
 1. Toplamak ve kaydettiğiniz bilgileri paketlemek Visual Studio için birkaç dakika bekleyin.
+
+   Hangi verilerin toplandığını hakkında daha fazla bilgi için bkz: [topladığımız veri](developer-community-privacy.md#data-we-collect).
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Çözümleri için arama veya geri bildirim sağlayın
 

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a9a5340b7fc5b36da7fe2a46175571a569fdf38e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764926"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325752"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint için site sütunları, içerik türleri ve listeler oluşturma
   Visual Studio Proje öğesi şablonları dahil olmak üzere birçok farklı temel SharePoint öğeleri için sağlar *listeler* ve *içerik türlerine*, her ikisi de site sütunları dahil edebilirsiniz (veya  *alanları*). İçerik türleri ve listeler için yeni tasarımcıları bu öğelerin her zamankinden daha kolay oluşturma olun.  
@@ -49,7 +49,7 @@ ms.locfileid: "34764926"
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[İzlenecek yol: SharePoint için Site Sütunu, İçerik Türü ve Liste Oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Özel bir içerik türünde kullanılan site sütunları oluşturulacağını gösterir. İçerik türü sonra özel bir liste kullanılır.|  
+|[İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Özel bir içerik türünde kullanılan site sütunları oluşturulacağını gösterir. İçerik türü sonra özel bir liste kullanılır.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint 2010'Geliştirmeye Başlarken](http://go.microsoft.com/fwlink/?LinkId=225000)  

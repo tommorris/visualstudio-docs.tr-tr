@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 366103b7912491bca5c614e3681ab53e1c9f7257
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238075"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326101"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Uzantıları Visual Studio'da SharePoint araçları için hata ayıklama
   SharePoint araç uzantıları deneysel örneği ya da Visual Studio normal örneğini ayıklayabilirsiniz. Uzantı davranışını gidermek gerekiyorsa, ek hata bilgileri görüntülemek için ve Visual Studio SharePoint komutları nasıl yürütür yapılandırmak için kayıt defteri değerlerini de değiştirebilirsiniz.
@@ -28,19 +28,19 @@ ms.locfileid: "35238075"
 ## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Visual Studio'nun deneysel örneği uzantılarında hata ayıklama
  Visual Studio geliştirme ortamınızı yanlışlıkla bozulmaya sınanmamış uzantıları tarafından korunması için Visual Studio SDK'sı olarak adlandırılan bir alternatif Visual Studio örneği sağlar *deneysel örneği*, kullanabileceğiniz Yükleme ve uzantılarını test etmek için. Visual Studio normal örneğini kullanarak yeni uzantılar geliştirmek, ancak hata ayıklama ve deneysel örneğinde çalıştırın. Daha fazla bilgi için bkz: [deneysel örneği](../extensibility/the-experimental-instance.md).
 
- Uzantınızı dağıtmak için VSIX proje kullanın ve başlangıç projesi çözümünüzdeki VSIX proje ise, Visual Studio, otomatik olarak yükler ve çözümünüzü hata ayıklarken uzantısı deneysel örneğinde çalışır. Başlangıç projesi olarak birden çok proje içeren bir çözüm ayıklarken başlayan projesidir. Uzantınızı dağıtmak üzere bir VSIX proje kullanma hakkında daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Uzantınızı dağıtmak için VSIX proje kullanın ve başlangıç projesi çözümünüzdeki VSIX proje ise, Visual Studio, otomatik olarak yükler ve çözümünüzü hata ayıklarken uzantısı deneysel örneğinde çalışır. Başlangıç projesi olarak birden çok proje içeren bir çözüm ayıklarken başlayan projesidir. Uzantınızı dağıtmak üzere bir VSIX proje kullanma hakkında daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için Uzantılar dağıtmak](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
  Visual Studio'nun deneysel örneği uzantılarında çeşitli türlerde hata ayıklamak nasıl gösteren örnekler için aşağıdaki izlenecek bakın:
 
--   [İzlenecek yol: Bir SharePoint Proje Öğesi Türünü Genişletme](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+-   [İzlenecek yol: bir SharePoint proje öğesi türünü genişletme](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [İzlenecek yol: Öğe Şablonu, Bölüm 1 ile Özel bir Eylem Proje Öğesi Oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+-   [İzlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [İzlenecek Yol: SharePoint Projeleri için Özel bir Dağıtım Adımı Oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+-   [İzlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [İzlenecek yol: Sunucu Gezginini Web Bölümlerini Görüntülemek Üzere Genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+-   [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [İzlenecek yol: Bir Sunucu Gezgini Uzantısında SharePoint İstemcisi Nesne Modelini Çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+-   [İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Visual Studio normal örneğini uzantılarında hata ayıklama
  Uzantı projeniz Visual Studio normal örneğindeki hata ayıklamak istediğiniz ilk uzantısı normal örneğinde yükleyin. Ardından, hata ayıklayıcı ikinci bir Visual Studio işlemini ekleyin. İşlemi tamamladığınızda, böylece artık geliştirme bilgisayarınızda yükler uzantısı kaldırabilirsiniz.
@@ -132,5 +132,5 @@ ms.locfileid: "35238075"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [SharePoint Araçlarını Visual Studio'da Genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Visual Studio'da SharePoint Araçları için Hata Ayıklama Uzantıları](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

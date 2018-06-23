@@ -9,12 +9,12 @@ description: Yöneticiler aşırı talep edilen abonelikleri nasıl çözebilirs
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9f80c335cbbdc56f4d26a73a9565ecb2a102aa6c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: ae5ed6a4d459f3131250aed89ba0aef88da1ef7c
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031204"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325300"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>İşleme 'aşırı talep edilen' abonelikleri
 
@@ -22,13 +22,11 @@ Aboneler, daha fazla olması neden eklendikten sonra siparişleri bazen değişt
 
 > [!NOTE] 
 > Açık Lisans programlarında overclaimed senaryoları izin verilmiyor.  Ayrıca, diğer programları bu bilgileri Portalı'nda farklı görüntülenebilir. 
+![Aşırı talep edilen abonelikleri duyuru](_img\over-claimed\over-claimed-alert.png)
 
- ![Aşırı talep edilen abonelikleri duyuru](_img\over-claimed\over-claimed-alert.png)
 
 1.  Aşırı talep edilen lisansları çözmek için uyarı metni tıklatın. Bu abonelik düzeyinde atanır aboneleri ve aşırı talep edilen sona erme tarihi filtre uygulanmış bir listesini görüntüler. 
 
 2.  Aboneler aşırı talep edilen lisansları düzeltmek için gerektiği şekilde kaldırın. 
 
 3.  Genel Bakış sayfanın sol tarafında bir kez daha uyumlu olan ve tüm aşırı talep edilen bildirimleri kaybolur gösterecek şekilde güncelleştirir. 
-
-    ![Aşırı talep edilen aboneliklerini silme](_img\over-claimed\delete-over-claimed.png)

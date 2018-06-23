@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765758"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326224"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC modeli tasarım araçlarına genel bakış
   BDC Tasarımcısı kullanarak iş verileri bağlantı (BDC) modeli tasarlayabilirsiniz **BDC yöntem ayrıntıları** penceresinde ve **BDC Gezgini**.  
@@ -90,6 +90,6 @@ ms.locfileid: "34765758"
  [İzlenecek yol:, iş verileri kullanarak SharePoint'te dış liste oluşturma](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [İş Verileri Bağlantı Modeli Tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
+ [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
  

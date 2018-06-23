@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec6f0ef523733a0737b6d762d2835073ed1f3c06
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 56bc4dbd50bedc15fcf6c69cbc334fe09c6094cc
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766395"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325605"
 ---
 # <a name="create-sharepoint-features"></a>SharePoint özellikleri oluşturma
   Daha kolay dağıtım için ilgili SharePoint Proje öğeleri gruplandırmak için bir SharePoint özelliğini kullanabilirsiniz. Özellikleri oluşturma kapsamlarını ayarlayın ve diğer özellikleri SharePoint özelliği Designer kullanarak bağımlılıklar olarak işaretleyin. Tasarımcı aynı zamanda her bir özelliğin tanımlayan bir XML dosyasıdır bir bildirim oluşturur.  
@@ -29,7 +29,7 @@ ms.locfileid: "34766395"
 ## <a name="add-features-to-the-sharepoint-solution"></a>SharePoint çözüm özellik ekleme
  Çözüm Gezgini veya paketleme Gezgini'ni kullanarak, bir özellik için SharePoint çözüm ekleyebilirsiniz. Bir özellik eklemek için aşağıdaki yöntemlerden birini kullanabilirsiniz.  
   
--   İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellikleri**ve ardından **Özellik Ekle**.  
+-   İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellikleri**ve ardından **ekleme özelliği**.  
   
 -   İçinde **paketleme Gezgini'ni**, paket için kısayol menüsünü açın ve ardından **ekleme özelliği**.  
   
@@ -50,14 +50,14 @@ ms.locfileid: "34766395"
 |Öğe özelliği|Özelliği için eklenene SharePoint Proje öğeleri.|  
   
 ## <a name="add-and-remove-sharepoint-project-items"></a>Ekleme ve SharePoint Proje öğeleri kaldırma
- Dağıtım için bir SharePoint özelliğini eklemek istediğiniz hangi SharePoint Proje öğeleri seçebilirsiniz. Kullanım **özelliği Designer** eklemek ve özelliklerine öğe kaldırmak ve özellik bildirimini görüntülemek için. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint özelliklerine öğe ekleme ve kaldırma](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).  
+ Dağıtım için bir SharePoint özelliğini eklemek istediğiniz hangi SharePoint Proje öğeleri seçebilirsiniz. Kullanım **özelliği Designer** eklemek ve özelliklerine öğe kaldırmak ve özellik bildirimini görüntülemek için. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint özelliklerine öğe ekleyip](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).  
   
 ## <a name="add-feature-dependencies"></a>Özellik bağımlılıkları ekleme
  Böylece, özellik etkinleştirilmeden önce SharePoint sunucusu bazı özellikleri etkinleştirir özellik bildirimi yapılandırabilirsiniz. İşlev veya veri için diğer özellikleri, SharePoint özelliği bağlıdır, örneğin, SharePoint sunucusu ilk olarak, özellik bağlıdır özelliklerinden herhangi birini etkinleştirmek deneyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: özellik bağımlılıkları ekleyip](../sharepoint/how-to-add-and-remove-feature-dependencies.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Nasıl yapılır: SharePoint özelliklerine öğe ekleme ve kaldırma](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
- [Nasıl yapılır: Özellik Bağımlılıkları Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  
+ [Nasıl yapılır: SharePoint özelliklerine öğe ekleyip](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
+ [Nasıl yapılır: özellik bağımlılıkları ekleyip](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  
   
   

@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f59d12fc6e587287c6aa1b72de3404f6d56f23a
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326147"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755930"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017 ile ilgili bir sorun bildirme
 
@@ -38,9 +38,15 @@ Visual Studio için bir sorunu bildirmek için Visual Studio veya Visual Studio 
 
    ![Bir sorunu bildirmek oturum açın](../ide/media/sign-in-new-ux.png)
 
-   Oturum açtığınızda, bir sorun yaşıyorsanız, veya oy verin veya açıklama üzerinde bildirebilirsiniz. Ayrıca oy kullanabilir veya gördüğünüz herhangi bir sorun yorum gönderilen.
+   Oturum açtığınızda karşılaştığınız sorunu bildirebilirsiniz. Ayrıca oy kullanabilir veya gördüğünüz herhangi bir sorun yorum gönderilen.
 
-1. Visual Studio sorununuz için arama ve diğerleri, çok rapor olmadığını görmek için bir arabirim sağlar. Birisi bildirdi, "yukarı-bize bildirin için oy".
+1. Oturum açtıktan sonra görmeye olacaktır, **sorunları** ve **etkinlik** içinde **izlediğim öğeleri** ekranı
+
+    ![İzlediğim öğeleri](../ide/media/items-i-follow.png)
+
+1. Visual Studio sorununuz için arama ve diğerlerinin bu rapor olmadığını görmek için bir arabirim sağlar. Birisi bildirdi, "yukarı-bize bildirin için oy".
+   > [!NOTE]
+   > Aramak için arama kutusunu ve'i Enter istediğiniz metni giriş veya arama simgesine basın.
 
    ![Arama ve oy benzer sorunlar için](../ide/media/search-and-vote.png)
 
@@ -86,6 +92,34 @@ Visual Studio için bir sorunu bildirmek için Visual Studio veya Visual Studio 
 1. Toplamak ve kaydettiğiniz bilgileri paketlemek Visual Studio için birkaç dakika bekleyin.
 
    Hangi verilerin toplandığını hakkında daha fazla bilgi için bkz: [topladığımız veri](developer-community-privacy.md#data-we-collect).
+
+## <a name="when-further-information-is-needed-need-more-info"></a>Ne zaman daha fazla bilgi (daha fazla bilgi gerekiyor) gereklidir
+
+Visual Studio 2017 sürüm 15,5 içinde başlayarak, kullanıcıların sorun raporları hakkında ek bilgiler sağlayan yardımcı olmak için yeni bir iş akışı yok.
+
+1. Ne zaman bir Microsoft mühendisi ayarlar [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) için sorun **daha bilgisini** durumunda, gönderilen, oy, ardından veya sorunu açıklamalı herhangi bir kullanıcı bir bildirim alır **Rapor bir sorun** Visual Studio'da aracı.
+
+   ![Visual Studio'da daha fazla bilgi bildirim gerekir](../ide/media/nmi-notification.png)
+
+1. Tıklayın **görünüm sorunları** filtrelemek ve dikkat etmeniz gereken sorunları görünümü sıralamak için bağlantı. Bu sorunları bunları yanında bir göstergesi de, ayırt etmek için bunları genel arayın.
+
+1. Bir sorunu görüntülemek sorun ayrıntıları görmek için tıklatın.
+
+   ![Daha fazla bilgi bildirim gerekir](../ide/media/nmi-details-view.png)
+
+1. Görüntülemek için **daha bilgisini** isteği,'ı tıklatın **kendi isteği görüntüleyin ve yanıt** sorun Ayrıntıları görünümünde bağlantı. İstek bir iletişim kutusu gösterilir.
+
+   ![Daha fazla bilgi bildirim gerekir](../ide/media/nmi-request.png)
+
+1. Açıklamalar, ekler veya kayıt adımları ekleyerek daha fazla bilgi sağlayabilir. Bu deneyim, yeni bir sorun bildirme veya bir sorunu oylama zaman ek bilgi sağlayan benzerdir.
+
+1. İstekte bulunan Microsoft mühendisi sağlanan ek bilgiler hakkında bir bildirim alır. Araştırmak için yeterli bilgiye sahip değilse, sorunu durumu değişir. Aksi takdirde, mühendislik bile daha fazla bilgi için sorar.
+
+   > [!NOTE]
+   > * Yanıtladığınızda, bildirim kaybolduktan. Onun yerine, teşekkür eder ve daha fazla bilgi sağlamak için bir yol kolaylaştıran bir başlık bakın.
+   > * Bildirim sorunu değişiklikleri durumu sorunu aşağıdaki herkes için kaybolduğunda.
+   > * Birden çok kişi aynı yanıtlayabilir **daha bilgisini** isteği.
+   > * Hiç bir **daha bilgisini** iş akışında [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) ne zaman doğrudan bir web tarayıcısı üzerinden erişirseniz, ancak açıklamaları ve ekleri var. de sağlayabilirsiniz.
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Çözümleri için arama veya geri bildirim sağlayın
 

@@ -19,19 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767783"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756294"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Nasıl yapılır: ekleme ve ek derlemeleri kaldırma
   İşlev veya veri için diğer derlemeleri SharePoint paketi bağımlı olması durumunda, çözüm paketinizi (.wsp) derlemelerini ekleyebilirsiniz. Bu şekilde, SharePoint server özel derlemeler bir paket zaten yüklü olduğundan emin hale getirir.  
   
  Ayrıca, ekleyin ve güvenli denetimler ve derlemeler ile ilişkilendirilmiş sınıf kaynak dosyaları değiştirin.  
   
-## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Ek derlemeler, güvenli denetimler ve sınıfı kaynakları ekleme  
+## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Ek derlemeleri, güvenli denetimler ve sınıfı kaynakları ekleyin  
  SharePoint çözüm paketi ek derlemelerine ekleyebilirsiniz. Korumalı bir çözümde ek derlemeleri genel derleme önbelleğine dağıtma, ancak SharePoint Proje öğeleri korumalı bir çözümde içerik veritabanına eklenir. Güvenli denetimler ve sınıfı kaynakları'nı, ayrıca bu ek derlemeler ekleyebilirsiniz. Güvenli denetimler hakkında daha fazla bilgi için bkz: [sağlama paketleme ve dağıtım bilgileri proje öğelerinde](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ya da "Oluşturma bir SafeControl girişinde" [Web Bölümleri SharePoint Foundation dağıtma](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
 #### <a name="to-add-an-existing-assembly"></a>Varolan bir derleme eklemek için  
@@ -84,7 +84,7 @@ ms.locfileid: "34767783"
   
 3.  İçinde **dosya adı** sütun, üç nokta seçin (![ASP.NET Mobil Tasarımcı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcı elips")) ve eklemek istediğiniz sınıfı kaynağı seçin.  
   
-## <a name="deleting-custom-assemblies"></a>Derlemeleri silme  
+## <a name="delete-custom-assemblies"></a>Özel derlemeler Sil  
  Bir SharePoint paketinden derlemeleri silin veya güvenli denetimler ve sınıfı kaynakları mevcut derlemelerden silin.  
   
 #### <a name="to-delete-an-existing-assembly"></a>Varolan bir derlemeyi silmek için  
@@ -116,5 +116,5 @@ ms.locfileid: "34767783"
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
  [Nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Nasıl yapılır: SharePoint Özelliklerine Öğe Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
+ [Nasıl yapılır: SharePoint özelliklerine öğe ekleyip](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
   

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2315c27bc0a35ac1dc839b5fd98003105d92bd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977249"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756682"
 ---
-# <a name="parallel-activity-designer"></a>Paralel etkinlik Tasarımcısı
+# <a name="parallel-activity-designer"></a>Parallel Etkinlik Tasarımcısı
 
 <xref:System.Activities.Statements.Parallel> Etkinlik alt etkinlikler koleksiyonu eşzamanlı olarak yürütür.
 
@@ -31,7 +31,7 @@ ms.locfileid: "31977249"
 
 ### <a name="using-the-parallel-activity-designer"></a>Paralel etkinlik Tasarımcısı'nı kullanarak
 
-**Paralel** etkinlik Tasarımcısı bulunabilir **akış denetimi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**sekmesi iş akışı Tasarımcısı'nın sol tarafındaki (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+Erişim **paralel** etkinlik Tasarımcısı'nda **akış denetimi** kategorisini **araç**.
 
 **Paralel** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlik tasarımcıları normalde, örneğin, bir içindeyerleştirilirheryerdeişakışıTasarımcısıyüzeyiniaçınbırakılan**Dizisi** etkinlik Tasarımcısı. İş Akışı Tasarımcısı bırakarak sonra oluşturduğu bir <xref:System.Activities.Statements.Parallel> içeren varsayılan etkinlik bir <xref:System.Activities.Activity.DisplayName%2A> , **paralel**
 

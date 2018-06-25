@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81af4a51da2bb15bafd17fc7ba98d676f7b0decc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4dd44a91ac2a3d823c5a5690edbdd57422857ea9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974280"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755634"
 ---
-# <a name="flowchart-activity-designer"></a>Akış Çizelgesi etkinlik Tasarımcısı
+# <a name="flowchart-activity-designer"></a>Flowchart Etkinlik Tasarımcısı
 
-<xref:System.Activities.Statements.Flowchart> Etkinlik tanımlayan ve karmaşık akış denetimleri yönetmek iş akışları oluşturmak için kullanılır. A <xref:System.Activities.Statements.Flowchart> kodda veya iş akışı Tasarımcısı kullanarak yazılabilir. Bu konuda, iş akışı Tasarımcısı deneyimi belgeler. Windows iş akışı Tasarımcısı iş akışı etkinlik Tasarımcısı Geliştiriciler iş akışları yazabilirsiniz doğal bir biçimde sağlar.
+<xref:System.Activities.Statements.Flowchart> Etkinlik tanımlayan ve karmaşık akış denetimleri yönetmek iş akışları oluşturmak için kullanılır. A <xref:System.Activities.Statements.Flowchart> kodda veya iş akışı Tasarımcısı kullanarak yazılabilir. Bu konuda, iş akışı Tasarımcısı deneyimi belgeler. İş Akışı Tasarımcısı iş akışı etkinlik Tasarımcısı Geliştiriciler iş akışları yazabilirsiniz doğal bir biçimde sağlar.
 
 ## <a name="the-flowchart-activity"></a>Akış etkinliği
 
@@ -31,7 +31,7 @@ ms.locfileid: "31974280"
 
 ### <a name="using-the-flowchart-activity-designer"></a>Akış Çizelgesi etkinlik Tasarımcısı'nı kullanarak
 
-**Akış çizelgesi** etkinlik Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**iş akışı Tasarımcısı sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+**Akış çizelgesi** etkinlik Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç**iş akışı Tasarımcısı sekmesinde. Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya tuşuna **Ctrl**+**Alt** + **X**.
 
 **Akış çizelgesi** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlik tasarımcıları normalde, bir kök etkinlik veya olarak yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın başka bir denetim akışı etkinliği alt. Varsa **akış çizelgesi** etkinlik Tasarımcısı, boş bir iş akışı Tasarımcısı yüzeyine bırakıldı, oluşturduğu bir <xref:System.Activities.Statements.Flowchart> sunan varsayılan kendisini yürütme başlatır başlangıç düğümü olduğu bir genişletilmiş görünümünde etkinlik Yeşil Top temsil. Varsa **akış çizelgesi** etkinlik Tasarımcısı başka bir denetim akışı etkinliği bırakılan, çift tıklatarak genişletilebilir bir simge durumuna küçültülmüş görünümünde kendisi sunar **akış çizelgesi** etkinlik Tasarımcısı. Herhangi bir etkinlik **araç** doğrudan üzerine sürüklediğiniz **akış çizelgesi** diğer denetim akışı etkinlikleri de dahil olmak üzere etkinlik Tasarımcısı.
 

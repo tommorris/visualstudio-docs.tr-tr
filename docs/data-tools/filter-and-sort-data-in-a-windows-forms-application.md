@@ -1,5 +1,5 @@
 ---
-title: Filtreleme ve bir Windows Forms uygulamasındaki verileri sıralama
+title: Bir Windows Forms uygulamasındaki verileri filtreleme ve sıralama
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,17 +21,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f693e0a370a05508753dc6881b99157c21ea47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924975"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757601"
 ---
-# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtreleme ve bir Windows Forms uygulamasındaki verileri sıralama
+# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Bir Windows Forms uygulamasındaki verileri filtreleme ve sıralama
 Ayarlayarak verilere filtre <xref:System.Windows.Forms.BindingSource.Filter%2A> özelliği istenen kayıtları döndüren bir dize ifadesi.
 
- Ayarlayarak verileri sıralamak <xref:System.Windows.Forms.BindingSource.Sort%2A> özelliği için sütun adı, sıralamak istediğiniz; append `DESC` azalan sırada sıralar veya eklemek için `ASC` artan sırada sıralamak için.
+ Ayarlayarak verileri sıralamak <xref:System.Windows.Forms.BindingSource.Sort%2A> sıralamak istediğiniz; append sütun adı özelliğine `DESC` azalan sırada sıralar veya eklemek için `ASC` azalan sırada sıralayın.
 
 > [!NOTE]
 >  Uygulamanızı kullanmıyorsa <xref:System.Windows.Forms.BindingSource> bileşenleri filtreleyebilir ve verileri kullanarak sıralama <xref:System.Data.DataView> nesneleri. Daha fazla bilgi için bkz: [DataView](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).

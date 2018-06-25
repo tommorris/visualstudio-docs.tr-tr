@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264fb0617f22f5112b28576416ab6b5c772f9a1e
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766925"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757726"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Nasıl yapılır: bir modele bir varlık ekleme
   Bir varlık oluşturmak için Visual Studio'dan bir varlık denetim ekleme **araç** iş verileri bağlantı (BDC) tasarımcıya.  
@@ -57,6 +57,6 @@ ms.locfileid: "34766925"
  [Nasıl yapılır: bir Silici yöntemi ekleme](../sharepoint/how-to-add-a-deleter-method.md)   
  [Nasıl yapılır: bir güncelleyici yöntemi ekleme](../sharepoint/how-to-add-an-updater-method.md)   
  [Nasıl yapılır: bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-finder-method.md)   
- [Nasıl yapılır: Belirli bir Bulucu Metodu Ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)  
+ [Nasıl yapılır: belirli bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)  
   
  

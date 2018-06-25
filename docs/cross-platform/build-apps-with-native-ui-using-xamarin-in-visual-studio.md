@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747436"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757259"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma
 
@@ -50,7 +50,7 @@ Bu derleme için bunlardan gerçekleştirirsiniz:
 >  -   Xamarin uygulamaları yerel kullanıcı Arabirimi ile:
 >     -   [Merhaba, Android](/xamarin/android/get-started/hello-android/) (bir ekrana sahip basit uygulama)
 >     -   [Merhaba, Android multiscreen](/xamarin/android/get-started/hello-android-multiscreen/) (ekranları arasında gezinmeyi uygulamayla)
->     -   [Android parçaları izlenecek](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (ana/ayrıntı ekranda, başka şeylerin için kullanılır)
+>     -   [Android parçaları izlenecek](/xamarin/android/platform/fragments/implementing-with-fragments/) (ana/ayrıntı ekranda, başka şeylerin için kullanılır)
 >     -   [Hello, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Çok Ekranlı Hello, iOS ](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 
@@ -249,7 +249,7 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
 
     |Özellik|Değer|
     |--------------|-----------|
-    |**Metin**|**Posta kodu göre ara**|
+    |**metin**|**Posta kodu göre ara**|
     |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginStart**|`10dp`|
     |**textColor**|`@android:color/white`|
@@ -280,7 +280,7 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
 
     |Özellik|Değer|
     |--------------|-----------|
-    |**Metin**|**Posta Kodu**|
+    |**metin**|**Posta Kodu**|
     |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginStart**|`10dp`|
     |**layout_marginTop**|`6dp`|
@@ -330,7 +330,7 @@ Visual Studio .NET standart bir kitaplık paylaşımı yerel UI uygulamaları ol
     |Özellik|Değer|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
-    |**Metin**|**Hava durumu Al**|
+    |**metin**|**Hava durumu Al**|
     |**layout_marginStart**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**Genişlik**|`165dp`|

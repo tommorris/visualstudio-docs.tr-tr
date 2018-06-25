@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme
+title: Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,14 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33871194"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758426"
 ---
-# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için resim yazıları nasıl oluşturduğunu özelleştirme
+# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
 
 Öğelerden sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md) bir tasarımcı bir ayrıcalık oyuna gelir: resim yazısı etiketleri içindeki sütun adlarının yeniden biçimlendirilen daha okunabilir bir dizeye iki veya daha fazla sözcükler olarak bulunan birlikte art arda eklenmiş. İçinde bu etiketler oluşturulur, ayarlayarak şekilde özelleştirebilirsiniz **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data tasarımcıları** kayıt defteri anahtarı.
 
@@ -35,7 +35,7 @@ Başlık denetleyen kayıt defteri değerleri aşağıdaki tabloda açıklanmakt
 
 |Kayıt defteri öğesi|Açıklama|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|Normal ifade alışkanlıklarınıza eşleştirmek için kullanılır.|
+|**SmartCaptionExpression**|Normal ifade alışkanlıklarınıza eşleştirmek için kullanın.|
 |**SmartCaptionReplacement**|İçinde eşleşen gruplarını görüntülemek için kullanılacak biçimi **SmartCaptionExpression**.|
 |**SmartCaptionSuffix**|Resim yazısını sonuna eklenecek isteğe bağlı bir dize.|
 
@@ -43,9 +43,9 @@ Aşağıdaki tabloda, bu kayıt defteri değerlerini iç varsayılan ayarların�
 
 |Kayıt defteri öğesi|Varsayılan değer|Açıklama|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Bir büyük harf karakter veya alt çizgiyle tarafından izlenen bir küçük harf karakterle eşleşir.|
-|**SmartCaptionReplacement**|$1 $2|$1 ifade ilk parantez içinde eşleşen herhangi bir karakter ve $2 ikinci parantez içinde eşleşen herhangi bir karakteri temsil eder. İlk eşleşmeye, boşluk ve ardından ikinci eşleşme yerini alır.|
-|**SmartCaptionSuffix**|:|Döndürülen dize eklenmiş bir karakteri temsil eder. Örneğin, resim yazısını ise `Company Name`, sonek kolaylaştırır `Company Name:`|
+|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Bir büyük harf karakter veya alt çizgiyle tarafından izlenen bir küçük harf karakterle eşleşir.|
+|**SmartCaptionReplacement**|**$1 $2**|**$1** ifade ilk parantez içinde eşleşen herhangi bir karakteri temsil eder ve **$2** ikinci parantez içinde eşleşen herhangi bir karakteri temsil eder. İlk eşleşmeye, boşluk ve ardından ikinci eşleşme yerini alır.|
+|**SmartCaptionSuffix**|**:**|Döndürülen dize eklenmiş bir karakteri temsil eder. Örneğin, resim yazısını ise `Company Name`, sonek kolaylaştırır `Company Name:`|
 
 > [!CAUTION]
 > Kayıt Defteri Düzenleyicisi'nde hiçbir şey yaparken çok dikkatli olmanız gerekir. Düzenlemeye başlamadan önce kayıt defterini yedekleyin. Kayıt Defteri Düzenleyicisi'ni yanlış kullanırsanız, işletim sisteminizi yeniden yüklemenizi gerektirebilecek önemli sorunlara neden olabilir. Microsoft Kayıt Defteri Düzenleyicisi'ni kullanarak neden sorunları çözmek için garanti etmez. Kayıt Defteri Düzenleyicisi'ni kullanım riski size aittir.
@@ -58,7 +58,7 @@ Aşağıdaki tabloda, bu kayıt defteri değerlerini iç varsayılan ayarların�
 
 2.  Tür `regedit` içinde **çalıştırmak** iletişim kutusu ve tıklatın **Tamam**.
 
-3.  Genişletme **HKEY_CURRENT_USER**, **yazılım**, **Microsoft**, **Visual Studio** düğümü.
+3.  Genişletme **HKEY_CURRENT_USER** > **yazılım** > **Microsoft** > **Visual Studio**düğüm.
 
 7.  Sağ **15.0** düğümü ve yeni bir **anahtar** adlı `Data Designers`.
 
@@ -88,7 +88,7 @@ Aşağıdaki tabloda, bu kayıt defteri değerlerini iç varsayılan ayarların�
 
 2.  Tür `regedit` içinde **çalıştırmak** iletişim kutusu ve tıklatın **Tamam**.
 
-3.  Genişletme **HKEY_CURRENT_USER**, **yazılım**, **Microsoft**, **Visual Studio** düğümü.
+3.  Genişletme **HKEY_CURRENT_USER** > **yazılım** > **Microsoft** > **Visual Studio**düğüm.
 
 7.  Sağ **15.0** düğümü ve yeni bir **anahtar** adlı `Data Designers`.
 

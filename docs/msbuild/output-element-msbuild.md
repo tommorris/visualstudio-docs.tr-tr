@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50786f1f42c27a793c48cb06c871b7f11c2dda25
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 754968b95ce1332991ddc921138741a1d9235015
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325439"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756931"
 ---
 # <a name="output-element-msbuild"></a>Çıktı Öğesi (MSBuild)
 Depoları Görev çıkış değerleri öğeleri ve özellikler.  
@@ -52,7 +52,7 @@ Depoları Görev çıkış değerleri öğeleri ve özellikler.
 |---------------|-----------------|  
 |`TaskParameter`|Gerekli öznitelik.<br /><br /> Görev adı parametresi çıktı.|  
 |`PropertyName`|Ya da `PropertyName` veya `ItemName` özniteliği gereklidir.<br /><br /> Görev alır özelliği parametre değeri çıktı. Projenizi sonra özelliğiyle başvuruda bulunabilir `$(` *PropertyName* `)` sözdizimi. Bu özellik adı ya da yeni bir özellik adı veya projede zaten tanımlı bir ad olabilir.<br /><br /> Bu öznitelik, kullanılamaz `ItemName` de kullanılıyor.|  
-|`ItemName`|Ya da `PropertyName` veya `ItemName` özniteliği gereklidir.<br /><br /> Görev alan öğesi parametre değeri çıktı. Projenizi sonra sahip öğe başvurusu yapabilir `@(` *ItemName* `)` sözdizimi. Öğe adı ya da yeni bir öğe adı veya projede zaten tanımlı bir ad olabilir.<br /><br /> Bu öznitelik, kullanılamaz `PropertyName` de kullanılıyor.|  
+|`ItemName`|Ya da `PropertyName` veya `ItemName` özniteliği gereklidir.<br /><br /> Görev alan öğesi parametre değeri çıktı. Projenizi sonra sahip öğe başvurusu yapabilir `@(` *ItemName* `)` sözdizimi. Öğe adı ya da yeni bir öğe adı veya projede zaten tanımlı bir ad olabilir. Öğe adı varolan öğeyi olduğunda, çıktı parametre değerlerini varolan öğesine eklenir. <br /><br /> Bu öznitelik, kullanılamaz `PropertyName` de kullanılıyor.|  
 |`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşulu. Daha fazla bilgi için bkz: [koşullar](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Alt Öğeler  

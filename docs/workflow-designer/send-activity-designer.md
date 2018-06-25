@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 099a512bcbca7136541c9896e32f43b9e518ed8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751519fe2cba331f0de08b492505e2fba568fe8b
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978355"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758503"
 ---
-# <a name="send-activity-designer"></a>Etkinlik Tasarımcısı Gönder
+# <a name="send-activity-designer"></a>Send Etkinlik Tasarımcısı
 
 **Gönder** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.ServiceModel.Activities.Send> etkinlik.
 
@@ -28,16 +28,16 @@ ms.locfileid: "31978355"
  A <xref:System.ServiceModel.Activities.Send> etkinlik, bir hizmet için bir ileti göndermek için kullanılır. A <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik bağlanabilir bir <xref:System.ServiceModel.Activities.Send> etkinlik bir istek/yanıt ileti değişim deseni istemcide bir parçası olarak bir ileti alır.
 
 ### <a name="using-the-send-activity-designer"></a>Gönderme etkinlik Tasarımcısı'nı kullanarak
- **Gönder** etkinlik Tasarımcısı bulunabilir **ileti** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç** İş Akışı Tasarımcısı'nda sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **Gönder** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın. Bu oluşturur bir <xref:System.ServiceModel.Activities.Send> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> gönderme. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **Gönder** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
+Erişim **Gönder** etkinlik Tasarımcısı'nda **ileti** kategorisini **araç**. **Gönder** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın. Bu oluşturur bir <xref:System.ServiceModel.Activities.Send> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> gönderme. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **Gönder** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
 
- Oluşturmak için bir <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik ve seçili bağlayın <xref:System.ServiceModel.Activities.Send> etkinliği sağ tıklatın **göndermek** etkinlik Tasarımcısı, tıklatın **oluşturma ReceiveReply** bağlam menüsü öğesini ve **ReceiveReplyForSend** Tasarımcısı görünür aşağıda **Gönder** Tasarımcısı. <xref:System.ServiceModel.Activities.ReceiveReply> Bir istek/yanıt ileti değişim deseni istemcide bir parçası olarak bir ileti alır bir etkinlik bir etkinliktir. İle yapılandırılabilir **ReceiveReplyForSend** Tasarımcısı.
+Oluşturmak için bir <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik ve seçili bağlayın <xref:System.ServiceModel.Activities.Send> etkinliği sağ tıklatın **göndermek** etkinlik Tasarımcısı, tıklatın **oluşturma ReceiveReply** bağlam menüsü öğesini ve **ReceiveReplyForSend** Tasarımcısı görünür aşağıda **Gönder** Tasarımcısı. <xref:System.ServiceModel.Activities.ReceiveReply> Bir istek/yanıt ileti değişim deseni istemcide bir parçası olarak bir ileti alır bir etkinlik bir etkinliktir. İle yapılandırılabilir **ReceiveReplyForSend** Tasarımcısı.
 
- Alternatif olarak, **SendAndReceiveReply** şablonu Tasarımcısı'nda **ileti** kategorisini **araç** önceden yapılandırılmış çiftioluşturmakiçinkullanılan<xref:System.ServiceModel.Activities.Send>ve <xref:System.ServiceModel.Activities.ReceiveReply> etkinlikler. Kullanımı hakkında daha fazla bilgi için **SendAndReceiveReply** ve **ReceiveReplyForSend** şablonları için bkz: [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) konu.
+Alternatif olarak, **SendAndReceiveReply** şablonu Tasarımcısı'nda **ileti** kategorisini **araç** önceden yapılandırılmış çiftioluşturmakiçinkullanılan<xref:System.ServiceModel.Activities.Send>ve <xref:System.ServiceModel.Activities.ReceiveReply> etkinlikler. Kullanımı hakkında daha fazla bilgi için **SendAndReceiveReply** ve **ReceiveReplyForSend** şablonları için bkz: [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) konu.
 
 ### <a name="the-send-activity-properties"></a>Gönder etkinliği özellikleri
- Aşağıdaki tabloda <xref:System.ServiceModel.Activities.Send> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellikleri ızgara veya iş akışı Tasarımcısı yüzeyinde düzenlenebilir.
+
+Aşağıdaki tabloda <xref:System.ServiceModel.Activities.Send> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri özellikleri ızgara veya iş akışı Tasarımcısı yüzeyinde düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

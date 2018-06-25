@@ -19,17 +19,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e6155aa13c8b05036dbb5fb2d9f895ed38719741
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767380"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756252"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Nasıl yapılır: SharePoint özelliklerine öğe ekleyip
   Bir SharePoint çözüm oluşturduğunuzda, Visual Studio, özellik için varsayılan SharePoint Proje öğeleri ekler. Dağıtım öncesinde ekleyin ve SharePoint özelliğini değiştirmek için SharePoint Proje öğeleri kaldırın.  
   
-## <a name="adding-sharepoint-project-items-to-a-feature"></a>Bir özellik için SharePoint Proje öğeleri ekleme  
+## <a name="add-sharepoint-project-items-to-a-feature"></a>SharePoint Proje öğeleri için özellik ekleme  
   
 #### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>SharePoint Proje öğeleri özelliği Designer ile eklemek için  
   
@@ -47,7 +47,7 @@ ms.locfileid: "34767380"
   
      SharePoint Proje öğeleri görünür **öğeleri özelliğindeki** listesi.  
   
-## <a name="removing-sharepoint-project-items-from-a-feature"></a>Bir özelliği SharePoint Proje öğeleri kaldırma  
+## <a name="remove-sharepoint-project-items-from-a-feature"></a>SharePoint Proje öğeleri bir özelliğini Kaldır  
   
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Özellik Tasarımcısı ile SharePoint öğeleri kaldırmak için
   
@@ -59,5 +59,5 @@ ms.locfileid: "34767380"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
- [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

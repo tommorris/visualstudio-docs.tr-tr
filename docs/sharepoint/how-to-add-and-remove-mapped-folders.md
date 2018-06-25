@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8cf70cf7f69091590c950d6b5eccd6393708e7c9
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767215"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757654"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Nasıl yapılır: ekleme ve kaldırma eşlenen klasörler
   Görüntüleri ve düzenleri, son derece katıştırılmış dosya hiyerarşisinde gibi bazı yaygın olarak SharePoint, klasörlerde kullanılır. Bu klasörler daha kolay erişmek için bir SharePoint projesine eşleyebilirsiniz. Eşlenen klasörler SharePoint Server yüklemesinde dosyalarının fiziksel konuma karşılık gelen SharePoint Proje klasörlerdir.  
@@ -59,7 +59,7 @@ ms.locfileid: "34767215"
      Adlı bir klasör **kaynakları** projenizde görüntülenir. Bu klasör, dize kaynak dosyaları gibi öğeleri depolayabilirsiniz. Alt klasörleri eşlenen bir klasörün içeriğini düzenlemek için yararlı olabilir, ancak kullanarak eşlenmiş bir klasör eklediğinizde, bunlar otomatik olarak oluşturulmuştur **SharePoint eşlenen klasörü Ekle** komutu. Bir alt klasör eklemek için **kaynakları** klasörünü ve ardından, menü çubuğunda, **proje** > **yeni klasör**.  
   
 ## <a name="change-the-deployment-location-of-a-mapped-folder"></a>Eşlenmiş bir klasörde dağıtım konumunu değiştirme  
- Varsayılan olarak, belirli konumlara {SharePointRoot} belirteci gösterir SharePoint kök yükleme yolu göreli eşlenen klasörler eklenir. Ancak, bu konum değiştirerek değiştirebileceğiniz **dağıtım konumu** eşlenen klasörünün özelliği. Her eşlenmiş klasörü kendi sahip **dağıtım konumu** özelliği.  
+ Varsayılan olarak, SharePoint kök yükleme yolu göreli belirli konumlara eşlenen klasörler eklenir, belirteç \<SharePointRoot > gösterir. Ancak, bu konum değiştirerek değiştirebileceğiniz **dağıtım konumu** eşlenen klasörünün özelliği. Her eşlenmiş klasörü kendi sahip **dağıtım konumu** özelliği.  
   
 #### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Eşlenmiş bir klasörde dağıtım konumunu değiştirmek için  
   
@@ -84,5 +84,5 @@ ms.locfileid: "34767215"
 3.  Eşlenmiş bir klasörde projeden kaldırmak için kısayol menüsünü açın, seçin **silmek**ve ardından **Tamam** kaldırma işlemini onaylamak için iletişim kutusunda düğme.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
+ [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   

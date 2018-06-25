@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b1d98422d9527220b54232d1180ae4b91a28e6b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3209a79b0358471977a0e58e8ab5d8d7e5c08e07
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922994"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755374"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio'da Entity Framework Araçları
 Entity Framework, .NET geliştiricilerinin etki alanına özgü nesneleri kullanılarak ilişkisel verilerle çalışmak bir nesne ilişkisel eşleme teknolojisidir. Genellikle geliştiricilerin yazmak zorunda olduğu çoğu veri erişim koduna yönelik gereksinimi ortadan kaldırır. Entity Framework teknolojisi yeni .NET uygulamaları için modelleme önerilen nesne ilişkisel eşleştirme (ORM) yapılır.
@@ -39,7 +39,7 @@ Visual Studio'da Entity Framework Araçları oluşturan belirli araçları şunl
     > [!NOTE]
     >  Visual Studio 2010 ile başlayarak, Entity Framework Araçları desteklemediği [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
-Araçlar oluşturmak veya bir .edmx dosyasının değiştirin. Bu .edmx dosyasının kavramsal model, depolama modelindeki ve bunları arasındaki eşlemeleri açıklayan bilgiler içerir. Daha fazla bilgi için bkz: [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
+Araçlar oluşturma veya değiştirme bir *.edmx* dosya. Bu *.edmx* dosyası kavramsal model, depolama modelindeki ve bunları arasındaki eşlemeleri açıklayan bilgiler içerir. Daha fazla bilgi için bkz: [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
 
 [Entity Framework güç araçları](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) varlık veri modeli kullanan uygulamalar oluşturmanıza yardımcı olur. Güç Araçları kavramsal bir model oluşturmak, var olan bir model doğrulama, kavramsal modele dayalı nesne sınıfları içeren kaynak kodu dosyaları üretmek ve modeli oluşturur görünümleri içeren kaynak kodu dosyaları üretmek. Ayrıntılı bilgi için bkz: [Pre-Generated eşleme görünümleri](https://msdn.microsoft.com/data/dn469601.aspx).
 

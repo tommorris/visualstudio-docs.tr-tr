@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 117c2c95eb9b7ea92f41e72fa2ecca9a4e713c93
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 17f1b1ccdee75a379dfc7bce42df2b5a117bdd2e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768189"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755421"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Nasıl yapılır: SharePoint bağlantıları Ekle Kaldır
   Sunucu Gezgini veri bağlantıları yanı sıra, SharePoint sitelerine göz atmanıza izin verir. Bir SharePoint sitesi içeriğini göz atabilirsiniz önce ancak ona eklemelisiniz **SharePoint bağlantıları** düğümü.  
@@ -49,5 +49,5 @@ ms.locfileid: "34768189"
     >  Bu adım, temel alınan site silinmez; yalnızca bağlantısından siler **Sunucu Gezgini**.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Sunucu Gezgini Kullanarak SharePoint Bağlantılarına Gözatma](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
+ [Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
   

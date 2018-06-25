@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37155d7a322b2421fc0c9828d22df8d625f8573a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afa5932ebfaea1e0a7f61997c26e95226ed51b1d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978290"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758022"
 ---
 # <a name="switcht-activity-designer"></a>Anahtar\<T > etkinlik Tasarımcısı
 
 <xref:System.Activities.Statements.Switch%601> Etkinlik belirtilen ifadeyi hesaplar ve ilişkili anahtar değerlendirme sürümünden alınan değer eşleşen etkinlikler koleksiyonundan etkinlik yürütür.
 
-**Anahtar < T\>**  etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Switch%601> etkinlik Windows iş akışı Tasarımcısı'nda.
+**Anahtar < T\>**  etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Switch%601> etkinliği iş akışı Tasarımcısı'nda.
 
 ## <a name="the-switchtactivity"></a>Anahtar\<T > etkinliği
 
@@ -32,7 +32,7 @@ A <xref:System.Activities.Statements.Switch%601> etkinlik içeren bir <xref:Syst
 
 ## <a name="how-to-use-the-switcht-activity-designer"></a>Anahtar kullanma\<T > etkinlik Tasarımcısı
 
-**Anahtar\<T >** etkinlik Tasarımcısı bulunabilir **akış denetimi** kategorisini **araç**, hangi tıklayarakerişildiğinde**Araç** iş akışı Tasarımcısı sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.) İş Akışı Tasarımcısı bırakarak sonra görüntüler **türlerini Seç** kullanıcının genel tür belirtmesine izin verecek şekilde iletişim *T* kullanılan <xref:System.Activities.Statements.Switch%601> etkinlik. Varsayılan değer **Int32**. Bir kez genel tür *T* seçilmedi, bir **anahtar < T\>**  Tasarımcısı, iş akışı Tasarımcısı'na eklenir.
+Erişim **anahtar\<T >** etkinlik Tasarımcısı'nda **akış denetimi** kategorisini **araç**. İş Akışı Tasarımcısı bırakarak sonra görüntüler **türlerini Seç** kullanıcının genel tür belirtmesine izin verecek şekilde iletişim *T* kullanılan <xref:System.Activities.Statements.Switch%601> etkinlik. Varsayılan değer **Int32**. Bir kez genel tür *T* seçilmedi, bir **anahtar < T\>**  Tasarımcısı, iş akışı Tasarımcısı'na eklenir.
 
 Şunlardır özelliklerini **anahtar < T\>**  Tasarımcısı. Bu özelliklerin tümünü özellik kılavuzunda düzenlenebilir. Bunlardan bazıları da tasarımcı yüzeyine düzenlenebilir.
 
@@ -51,9 +51,9 @@ Servis talebi anahtarları değil yinelenir sürece birden çok çalışmaları 
 
 Servis talebi silmek için 2 yolu vardır:
 
-1.  Select case ve silin.
+- Select case ve silin.
 
-2.  Bağlam menüsünü görüntülemek ve seçmek için durumda sağ seçin **silmek**.
+- Bağlam menüsünü görüntülemek ve seçmek için durumda sağ seçin **silmek**.
 
 Servis talebi silmeden kendisine seçmeniz gerektiğini unutmayın. Seçme ve etkinliği bir durum içinde silme yalnızca durum etkinlik siler.
 

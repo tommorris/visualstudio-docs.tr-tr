@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7319842d0c90b18b170fcd5e199dc255f45a3374
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767656"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758442"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Nasıl yapılır: belirli bir Bulucu yöntemi ekleme
   Tek varlık örneğini oluşturarak döndürebilir bir *belirli bir Bulucu* yöntemi. Bir kullanıcı, bir iş veri web bölümü veya dış listedeki bir varlık seçtiğinde iş verileri bağlantı (BDC) hizmeti belirli bir Bulucu yöntemi yürütür. Daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -40,7 +40,7 @@ ms.locfileid: "34767656"
   
 2.  Menü çubuğunda seçin **Görünüm** > **diğer pencereler**, **BDC yöntem ayrıntıları**.  
   
-     **BDC yöntem ayrıntıları** penceresi açılır. Bu pencere hakkında daha fazla bilgi için bkz: [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md).  
+     **BDC yöntem ayrıntıları** penceresi açılır. Bu pencere hakkında daha fazla bilgi için bkz: [BDC modeli Tasarım araçları genel bakış](../sharepoint/bdc-model-design-tools-overview.md).  
   
 3.  İçinde **bir yöntem ekleyin** listesinde, seçin **oluşturma belirli bir Bulucu yöntemi**.  
   
@@ -98,5 +98,5 @@ ms.locfileid: "34767656"
  [Nasıl yapılır: bir güncelleyici yöntemi ekleme](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)   
  [Nasıl yapılır: bir yönteme parametre ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Nasıl yapılır: Metot Örneği Tanımlama](../sharepoint/how-to-define-a-method-instance.md)  
+ [Nasıl yapılır: yöntem örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)  
   

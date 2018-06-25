@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6294b2e2392c81e20c984972ec875c589a7167
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef7fc3e956c6b31b1df8346e9b347ca3e094d878
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967845"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755726"
 ---
-# <a name="flowchart-activity-designers"></a>Akış Çizelgesi etkinlik tasarımcıları
+# <a name="flowchart-activity-designers"></a>Flowchart Etkinlik Tasarımcıları
 
-Windows iş akışı Tasarımcısı, iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinliklerin sayısını içerir. Bu bölüm, bir iş akışındaki akış çizelgeleri yönetmek için kullanılan sistem tarafından sağlanan etkinlikleri içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağını hakkında rehberlik sağlar.
+İş Akışı Tasarımcısı, iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinliklerin sayısını içerir. Bu bölüm, bir iş akışındaki akış çizelgeleri yönetmek için kullanılan sistem tarafından sağlanan etkinlikleri içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağını hakkında rehberlik sağlar.
 
 ## <a name="reference"></a>Başvuru
  <xref:System.Activities.Activity>

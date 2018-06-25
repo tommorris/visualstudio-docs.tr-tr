@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033eeff34c095b4598a02a386794379d06086450
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08c8aadb3c452a59f1b44cd030331164384d23bb
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978141"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758343"
 ---
-# <a name="flowdecision-activity-designer"></a>FlowDecision etkinlik Tasarımcısı
+# <a name="flowdecision-activity-designer"></a>FlowDecision Etkinlik Tasarımcısı
 
 <xref:System.Activities.Statements.FlowDecision> Sağlayan bir dal için denetim akışı iki alternatifleri olup belirtilen bir koşul yerine getirildiği dayalı birine koşullu bir düğüm düğümdür. Akış ikiden fazla dalları gerektiriyorsa, kullanın <xref:System.Activities.Statements.FlowSwitch%601> yerine.
 
@@ -28,16 +28,18 @@ ms.locfileid: "31978141"
 Kullanım <xref:System.Activities.Statements.FlowDecision> zaman akış dallandırılmış iki yolu. A <xref:System.Activities.Statements.FlowDecision> düğüm bir <xref:System.Activities.Statements.FlowDecision.Condition%2A> ve <xref:System.Activities.Statements.FlowNode> her iki olası sonucunu ile ilişkilendirilmiş: <xref:System.Activities.Statements.FlowDecision.True%2A> veya <xref:System.Activities.Statements.FlowDecision.False%2A>. <xref:System.Activities.Statements.FlowDecision.Condition%2A> Değerlendirilir ve değerin Bu değerlendirme sonraki belirler <xref:System.Activities.Statements.FlowNode> içinde işlenmek üzere <xref:System.Activities.Statements.Flowchart>.
 
 ### <a name="using-the-flowdecision-designer"></a>FlowDecision Tasarımcısı'nı kullanarak
- **FlowDecision** Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç** İş Akışı Tasarımcısı sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **FlowDecision** Tasarımcısı'ndan sürüklenebilir **araç** ve iş akışı Tasarımcısı yüzeyini içinde açın bırakılan bir **akış çizelgesi** etkinlik Tasarımcısı. Bu oluşturur bir <xref:System.Activities.Statements.FlowDecision> etiketli **karar** içinde <xref:System.Activities.Statements.Flowchart> etkinlik. Fare Tasarımcı üzerine ve **True** ve **False** iki dalı için kare işleyicilerin görünür.
+**FlowDecision** Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç** İş Akışı Tasarımcısı sekmesinde. Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya tuşuna **Ctrl**+**Alt** + **X**.
 
- Sürükleme sonra **FlowDecision** Tasarımcısı ve diğer tasarımcılar üzerine **akış çizelgesi**, düğümleri bağlı birlikte yürütme sırasını belirtmek için. Bir kaynak düğüm arasında bir bağlantı oluşturmak için (de dahil olmak üzere **True** ve **False** , dallandırır **FlowDecision**) ve hedef düğüm, kaynak düğüm designer üzerinden fare ve bunu her bir tarafta kare tanıtıcıları görünür. Kare tanıtıcıları birini tıklatın ve üzerine fare yükleyen hedef düğüm geçici benzer şekilde görünen tanıtıcıları birine fare düğmesini basılı tutarak sürükleyin. Fare düğmesini bırakın ve bir bağlantı arasındaki bir ok olarak kaynağı Tasarımcısı'ndan hedef Designer'a temsil edilen bu iki düğüm oluşturulur.
+**FlowDecision** Tasarımcısı'ndan sürüklenebilir **araç** ve iş akışı Tasarımcısı yüzeyini içinde açın bırakılan bir **akış çizelgesi** etkinlik Tasarımcısı. Bu oluşturur bir <xref:System.Activities.Statements.FlowDecision> etiketli **karar** içinde <xref:System.Activities.Statements.Flowchart> etkinlik. Fare Tasarımcı üzerine ve **True** ve **False** iki dalı için kare işleyicilerin görünür.
 
- Durumları ifade <xref:System.Activities.Statements.FlowDecision.Condition%2A> yazılabilir **koşulu** kutusunun **özellikleri** burada ipucu metnini bildiren "Girin VB ifade" tıklayarak penceresi.
+Sürükleme sonra **FlowDecision** Tasarımcısı ve diğer tasarımcılar üzerine **akış çizelgesi**, düğümleri bağlı birlikte yürütme sırasını belirtmek için. Bir kaynak düğüm arasında bir bağlantı oluşturmak için (de dahil olmak üzere **True** ve **False** , dallandırır **FlowDecision**) ve hedef düğüm, kaynak düğüm designer üzerinden fare ve bunu her bir tarafta kare tanıtıcıları görünür. Kare tanıtıcıları birini tıklatın ve üzerine fare yükleyen hedef düğüm geçici benzer şekilde görünen tanıtıcıları birine fare düğmesini basılı tutarak sürükleyin. Fare düğmesini bırakın ve bir bağlantı arasındaki bir ok olarak kaynağı Tasarımcısı'ndan hedef Designer'a temsil edilen bu iki düğüm oluşturulur.
+
+Durumları ifade <xref:System.Activities.Statements.FlowDecision.Condition%2A> yazılabilir **koşulu** kutusunun **özellikleri** burada ipucu metnini bildiren "Girin VB ifade" tıklayarak penceresi.
 
 ### <a name="the-flowdecision-properties"></a>FlowDecision özellikleri
- Aşağıdaki tabloda <xref:System.Activities.Statements.FlowDecision> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.
+
+Aşağıdaki tabloda <xref:System.Activities.Statements.FlowDecision> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

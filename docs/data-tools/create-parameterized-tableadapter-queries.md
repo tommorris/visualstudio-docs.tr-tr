@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d3985cc8faf76c5c5767090abd5b87101ddbb45
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fe77d3622e9c41d98ff89972e522bb25aae58b9d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924202"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756016"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Parametreleştirilmiş TableAdapter sorguları oluşturma
 Parametreli bir sorgu WHERE yan tümcesi sorgusundan koşullarını karşılayan verileri döndürür. Yalnızca Müşteriler ekleyerek belirli bir şehirde görüntülemek için bir müşteri listesi gibi Parametreleştirme `WHERE City = @City` bitiş SQL deyiminin müşterilerin listesini döndürür.
@@ -44,7 +44,7 @@ Parametreli bir sorgu WHERE yan tümcesi sorgusundan koşullarını karşılayan
 
 -   SQL deyimindeki WHERE yan tümcesi istenen parametrelerle ekleme yeni bir TableAdapter oluşturun. Daha fazla bilgi için bkz: [oluşturma ve TableAdapters öğelerini yapılandırma](../data-tools/create-and-configure-tableadapters.md).
 
-     -veya-
+     veya
 
 -   Sorguda WHERE yan tümcesi istenen parametrelerle SQL deyiminde ekleme varolan bir TableAdapter ekleyin.
 
@@ -65,11 +65,11 @@ Parametreli bir sorgu WHERE yan tümcesi sorgusundan koşullarını karşılayan
     > [!NOTE]
     >  Varsa **Sorgu Ekle** bulunmaz **veri** menüsü, görüntüler veri kaynağı, formdaki bir denetime parametrelemeyi eklemek için seçin. Örneğin, form verileri görüntüleyen bir <xref:System.Windows.Forms.DataGridView> denetlemek, onu seçin. Form verilerini tek tek denetimlerinde görüntüler, herhangi bir veri bağlama denetimi seçin.
 
-3.  İçinde **Select veri kaynağı tablosu** alanı, seçin, istediğiniz tablo için parametrelemeyi ekleyin.
+3.  İçinde **Select veri kaynağı tablosu** alanı parametrelemeyi eklemek istediğiniz tabloyu seçin.
 
 4.  Bir ad yazın **yeni sorgu adı** yeni bir sorgu oluşturuyorsanız kutusu.
 
-     -veya-
+     veya
 
      Sorguda seçin **varolan sorgu adı** kutusu.
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fe1106556e94155a0d01d3d7c9983d5ed122ad
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cdc82db1f701abb26b983fe0a1f2e4c7752c6c55
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746734"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756405"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Veri aramak için Windows Form oluşturma
 Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görüntülemektir. Örneğin, belirli bir müşterinin siparişlerini veya belirli bir siparişin ayrıntılarını görüntülemek isteyebilirsiniz. Bu senaryoda, kullanıcı bilgileri forma girer ve sonra kullanıcının girişi parametre olarak kullanılarak bir sorgu yürütülür; diğer bir deyişle veriler parametreli bir sorgu temel alınarak seçilir. Sorgu sadece kullanıcı tarafından girilen ölçütleri karşılayan verileri getirir. Bu kılavuzda, belirli bir şehirdeki müşterileri getiren bir sorgu oluşturma ve kullanıcı arabirimini kullanıcıların şehir adı girip bir düğmeye basarak sorguyu çalıştırabilecekleri şekilde değiştirme işlemleri gösterilmiştir.
@@ -32,11 +32,11 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
 
  Bu örneklerde gösterilen görevler aşağıdakileri içerir:
 
--   Yeni bir Windows Forms uygulaması projesi oluşturma.
+-   Yeni bir oluşturma **Windows Forms uygulaması** projesi.
 
 -   Oluşturma ve veri kaynağı ile uygulamanızda yapılandırma **veri kaynağı yapılandırması** Sihirbazı.
 
--   Ayar öğelerinin bırakma türü **veri kaynakları**penceresi.
+-   Ayar öğelerinin bırakma türü **veri kaynakları** penceresi.
 
 -   Konumundan öğeleri sürükleyerek verileri görüntüleyen denetimler oluşturma **veri kaynakları** forma penceresi.
 
@@ -50,11 +50,11 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
 
 Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanılır.
 
-1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
+1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. İçinde **Visual Studio yükleyicisi**, lütfen SQL Server Express LocalDB parçası olarak yapabilecekleriniz **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
 
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .
+    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** iş yükü **Visual Studio yükleyicisi**.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu**.
 
        Sorgu Düzenleyicisi penceresini açar.
 
@@ -62,14 +62,14 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
     3. T-SQL betiği sorgu düzenleyicisine yapıştırın ve ardından **yürütme** düğmesi.
 
-       Kısa bir süre sonra sorgu yürütme tamamlandıktan ve Northwind veritabanı oluşturulur.
+       Kısa bir süre sonra sorgu tamamlanır ve Northwind veritabanı oluşturulur.
 
 ## <a name="create-the-windows-forms-application"></a>Windows Forms uygulaması oluşturma
  İlk adım oluşturmaktır bir **Windows Forms uygulaması**. Proje için bir ad atama sırasında bu adım isteğe bağlıdır, ancak daha sonra projeyi kaydedin çünkü bir ad verin.
 
 #### <a name="to-create-the-new-windows-forms-application-project"></a>Yeni Windows Forms uygulaması projesi oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
@@ -145,23 +145,23 @@ Bu adım bir veri kaynağı kullanarak bir veritabanı oluşturur **veri kaynağ
      A **FillByCityToolStrip** forma eklenir.
 
 ## <a name="testing-the-application"></a>Uygulamayı test etme
- Uygulamanın çalıştırılması formunuzu giriş olarak parametreyi almaya hazır olarak açar.
+ Uygulamayı çalıştıran formunuz açar ve parametre giriş olarak almak hazır hale getirir.
 
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için
 
-1.  Uygulamayı çalıştırmak için F5 tuşuna basın.
+1.  Tuşuna **F5** uygulamayı çalıştırın.
 
 2.  Tür **Londra** içine **Şehir** metin kutusuna ve ardından **FillByCity**.
 
      Veri Kılavuzu ölçütlere uyan müşterilerle doldurulur. Bu örnekte, veri kılavuzu yalnızca değerine sahip müşteriler görüntüler **Londra** içinde kendi **Şehir** sütun.
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
  Uygulama gereksinimlerinize bağlı olarak, parametreli form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:
 
 -   İlgili verileri görüntüleyen denetimler ekleme. Daha fazla bilgi için bkz: [kümelerindeki ilişkiler](relationships-in-datasets.md).
 
 -   Veritabanı nesneleri eklemek veya çıkarmak için veri kümesini düzenleme. Daha fazla bilgi için bkz: [oluşturma ve veri kümelerini yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

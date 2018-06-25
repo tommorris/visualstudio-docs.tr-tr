@@ -1,5 +1,5 @@
 ---
-title: İş Akışı Tasarımcısı Kabuk özellikleri
+title: İş Akışı Tasarımcısı Kabuk Özellikleri
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973714"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757216"
 ---
-# <a name="workflow-designer-shell-features"></a>İş Akışı Tasarımcısı Kabuk özellikleri
+# <a name="workflow-designer-shell-features"></a>İş Akışı Tasarımcısı Kabuk Özellikleri
 
-Windows iş akışı Tasarımcısı üç ana UI alandan oluşur: Tasarımcı yüzeyine, içerik haritası çubuğunun üstündeki ve altındaki Kabuk. Ekranın en üstünde konumlandırılmış içerik haritası çubuğunun üst geçerli kök etkinlik öğelerinin listesini görüntülemek için kullanılır. Daha fazla bilgi için bkz: [nasıl yapılır: kullanım içerik haritası Gezinti](../workflow-designer/how-to-use-breadcrumb-navigation.md). Tasarımcı yüzeyine konumlandırılmış ekran Merkezi'nde iş akışları oluşturmak için kullanılır. Ekranın alt kısmında konumlandırılmış Kabuk geçerli görünümü yönetme için düğmeler sayısını içerir.
+İş Akışı Tasarımcısı üç ana UI alandan oluşur: Tasarımcı yüzeyine, içerik haritası çubuğunun üstündeki ve altındaki Kabuk. Ekranın en üstünde konumlandırılmış içerik haritası çubuğunun üst geçerli kök etkinlik öğelerinin listesini görüntülemek için kullanılır. Daha fazla bilgi için bkz: [nasıl yapılır: kullanım içerik haritası Gezinti](../workflow-designer/how-to-use-breadcrumb-navigation.md). Tasarımcı yüzeyine konumlandırılmış ekran Merkezi'nde iş akışları oluşturmak için kullanılır. Ekranın alt kısmında konumlandırılmış Kabuk geçerli görünümü yönetme için düğmeler sayısını içerir.
 
 ## <a name="shell-features"></a>Kabuk özellikleri
  Kabuk düğmeleri yakınlaştırmak veya iş akışınızı dışında ekranınızın boyutu iş akışınıza içeriklerin sığması ve Göster veya gizle Genel İnceleme haritası için kullanabileceğiniz çubuğu sağ tarafta vardır. Ayrıca CTRL ++ ve CTRL + klavye kısayollarını kullanarak bir iş akışı dışında ya da yakınlaştırabilirsiniz-.
@@ -39,4 +39,4 @@ Windows iş akışı Tasarımcısı üç ana UI alandan oluşur: Tasarımcı yü
 
 ## <a name="fonts-and-colors"></a>Yazı tipleri ve renkler
 
-Visual Studio 2010 içinde iş akışı Tasarımcısı'nda kullanılan yazı tiplerini ortamı yazı tipi tarafından denetlenir. İşletim sistemi tema için yüksek karşıtlık renk düzenini kullanıyorsanız, iş akışı Tasarımcısı'nda görüntülenen renklerini değiştirin. İş Akışı Tasarımcısı'nda değişikliklerin etkili olması bir yazı tipi veya renk ayarlarını değiştirdikten sonra Visual Studio 2010'u yeniden başlatmalısınız.
+Visual Studio içinde iş akışı Tasarımcısı'nda kullanılan yazı tiplerini ortamı yazı tipi tarafından denetlenir. İşletim sistemi tema için yüksek karşıtlık renk düzenini kullanıyorsanız, iş akışı Tasarımcısı'nda görüntülenen renklerini değiştirin. Visual Studio iş akışı Tasarımcısı'nda değişikliklerin etkili olması bir yazı tipi veya renk ayarlarını değiştirdikten sonra yeniden başlatmanız gerekir.

@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977650"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756600"
 ---
-# <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısı'nda klavye kısayolları
+# <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 
-Windows iş akışı Tasarımcısı çekirdek işlevselliğini klavye kullanılarak erişilebilir.
+Tüm iş akışı Tasarımcısı'nın çekirdek işlevselliğini klavye kullanılarak erişilebilir.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Klavyeyi kullanarak iş akışı Tasarımcısı gezinme
 
-Visual Studio 2010 içinde genel kısayolları ve hata ayıklama kısayolları iş akışı Tasarımcısı için geçerlidir. Ayrıca, iş akışı Tasarımcısı belirli klavye kısayollarını sayısı oluşturuldu. Visual Studio 2010'da, tüm klavye kısayollarını açmayla. Ancak, bir rehosted uygulamasında bu klavye kısayolları sabit kodlanmış değildir.
+Visual Studio içinde genel kısayolları ve hata ayıklama kısayolları iş akışı Tasarımcısı için geçerlidir. Ayrıca, iş akışı Tasarımcısı belirli klavye kısayollarını sayısı oluşturuldu. Visual Studio'da tüm klavye kısayollarını açmayla. Ancak, bir rehosted uygulamasında bu klavye kısayolları sabit kodlanmış değildir.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>İş Akışı Tasarımcısı klavye kısayolları
 
@@ -49,7 +49,7 @@ Visual Studio 2010 içinde genel kısayolları ve hata ayıklama kısayolları i
 
 ### <a name="flowchart"></a>Akış Çizelgesi
 
-Aşağıdaki liste bir akış çizelgesi oluşturmak için klavye tarafından kullanılan hareketlerini gösterir. İş Akışı Tasarımcısı rest olduğu gibi etkinlikler Visual Studio 2010 ile sağlanan genel araç kısayolları kullanılarak Tasarımcı yüzeyine eklenir.
+Aşağıdaki liste bir akış çizelgesi oluşturmak için klavye tarafından kullanılan hareketlerini gösterir. İş Akışı Tasarımcısı rest olduğu gibi etkinlikler Visual Studio ile sağlanan genel araç kısayolları kullanılarak Tasarımcı yüzeyine eklenir.
 
 - Bir etkinlik taşımak için etkinliği seçin ve onu yeniden konumlandırmak için ok tuşlarını kullanın.
 
@@ -88,4 +88,4 @@ Varsayılan olarak, Visual Basic metin düzenleme için varsayılan klavye kısa
    - Geri alma
    - Yinele
 
-- İş Akışı Tasarımcısı'nda Visual Studio 2010 içindeki ifade düzenleme komutları için klavye kısayolları yeniden eşlemek için iş akışı Tasarımcısı kapsamında kısayolları düzenleyin. Metin Düzenleyici kapsamda yapılan değişiklikleri otomatik olarak iş akışı Tasarımcısı için geçerli değildir. Her iki yerde kısayolları yeniden eşlemek istiyorsanız, değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).
+- İş Akışı Tasarımcısı'nda Visual Studio içindeki ifade düzenleme komutları için klavye kısayolları yeniden eşlemek için iş akışı Tasarımcısı kapsamında kısayolları düzenleyin. Metin Düzenleyici kapsamda yapılan değişiklikleri otomatik olarak iş akışı Tasarımcısı için geçerli değildir. Her iki yerde kısayolları yeniden eşlemek istiyorsanız, değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).

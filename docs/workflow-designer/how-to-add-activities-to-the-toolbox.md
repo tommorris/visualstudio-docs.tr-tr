@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4edb752ca64afd899ac9b3e463b9d29e4b3b68a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5cedf05457b397598d7417bce331be27aa8ac4e0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973776"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756509"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Nasıl yapılır: etkinlikler araç kutusuna ekleme
 
@@ -30,7 +30,7 @@ Etkinlikler eklenebilir **araç** birkaç farklı şekilde, çözümünüzdeki. 
 3.  Projeyi oluşturun. Yapı başarılı olursa yeni bir kategori **araç** adlı "\<*proje adı*>" Bu kategoride yer alan özel etkinlik birlikte görüntülenir.
 
     > [!NOTE]
-    > Araç kutusu sıfırlarsanız, çözümü yeniden oluşturulmuş olsa bile özel etkinlikler kaldırılır. Özel etkinlikler araç kutusu sıfırlandı sonra yeniden için Visual Studio 2010'u yeniden başlatın.
+    > Araç kutusu sıfırlarsanız, çözümü yeniden oluşturulmuş olsa bile özel etkinlikler kaldırılır. Özel etkinlikler araç kutusu sıfırlandı sonra yeniden için Visual Studio'yu yeniden başlatın.
 
     > [!NOTE]
     > Araç kutusu yalnızca belirli bir ada bir etkinliğin gösterebilir. İki etkinlik farklı derlemelerden aynı sınıf adı varsa, yalnızca biri görüntülenir.

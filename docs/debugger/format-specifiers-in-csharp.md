@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 447d1c1d9a60e1ff2a360790abe2c3c89f174fa6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e8605671d1c245826ce6d699e91795fcd7ee32e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474333"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756866"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında C# içindeki Biçim belirticileri
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **izleme** penceresi biçim belirticilerini kullanma. İçindeki Biçim belirticileri de kullanabilirsiniz **hemen** penceresinde **komutu** penceresi, [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ve hatta kaynak windows. Bu windows deyimde üzerinde duraklatmak, sonuç DataTip içinde görünür. DataTips DataTip görüntüsündeki biçim belirticisi yansıtır.  
@@ -64,6 +64,7 @@ ms.locfileid: "31474333"
 |dinamik|Dinamik bir görünümü kullanarak belirtilen nesneyi görüntüler|Dinamik görünüm dahil olmak üzere bu nesnenin tüm üyelerini görüntüler|Yalnızca dinamik görünümü görüntüler|  
 |h|onaltılık tamsayı|61541|0x0000F065|  
 |Nq|tırnak işaretleri olmadan dize|"Dize my"|My dize|  
+|nse|Davranış, biçimi değil belirtir. "Hiçbir yan etkisi" ifadesiyle değerlendirir. İfade yorumlanamayan ve yalnızca Değerlendirme sürümü (örneğin, bir işlev çağrısı) çözülebilir, bunun yerine bir hata görürsünüz.|Yok|Yok|
 |gizli|Tüm genel ve genel olmayan üyeler görüntüler|Görüntüler Genel üyeler|Tüm üyeler görüntüler|  
 |Ham|Ham öğesi düğümünde göründüğü gibi öğesi görüntüler. Proxy nesneleri yalnızca geçerli.|Sözlük\<T >|Sözlük ham görünümünü\<T >|  
 |sonuçlar|Değişkeninin IEnumerable veya IEnumerable arabirimini uygulayan bir tür ile kullanılan\<T >, genellikle bir sorgu ifadesi sonucu. Sorgu sonucu içeren üyelerini görüntüler.|Tüm üyelerini görüntüler.|Üyeleri karşılamak görüntüler sorgunun koşullarını.|  

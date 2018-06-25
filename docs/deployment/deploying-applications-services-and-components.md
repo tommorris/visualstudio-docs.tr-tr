@@ -2,7 +2,7 @@
 title: Dağıtım özelliği turu
 description: Visual Studio'dan uygulamaları dağıtmak için seçenekleriniz hakkında bilgi edinin.
 ms.custom: mvc
-ms.date: 11/26/2017
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
@@ -24,22 +24,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e301131afc62b0564ca302adb9a079b42b52c5f8
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a37207fb541a57bbf67b63bff5168185135bc27f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234692"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756963"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: İlk Visual Studio'daki dağıtımı bakın
 
-Bir uygulamayı, hizmeti ya da bileşeni dağıtarak bunu diğer bilgisayarlardaki, cihazlardaki, sunuculardaki ya da buluttaki yükleme için dağıtmış olursunuz. İhtiyacınız olan dağıtım türü için uygun yöntemi Visual Studio'da seçebilirsiniz. (Burada açıklanmamaktadır diğer dağıtım araçları komut satırı dağıtım veya NuGet gibi pek çok uygulama türlerini destekler.)
+Bir uygulama, hizmet veya bileşenin dağıtarak yükleme diğer bilgisayarlar, cihazlar veya sunucular veya bulutta dağıtın. İhtiyacınız olan dağıtım türü için uygun yöntemi Visual Studio'da seçebilirsiniz. (Burada açıklanmamaktadır diğer dağıtım araçları komut satırı dağıtım veya NuGet gibi pek çok uygulama türlerini destekler.)
 
-Adım adım dağıtım yönergeleri için bkz. Bir web uygulaması dağıtma ve en iyi dağıtım seçeneği Visual Studio'dan karar vermek için daha ayrıntılı bilgi ihtiyacınız varsa bkz [hangi yayımlama seçeneklerini benim için en uygun?](../ide/not-in-toc/web-publish-options.md).
+Hızlı Başlangıç ipuçları ve öğreticileri adım adım dağıtım yönergeleri için bkz. Dağıtım seçenekleri genel bakış için bkz: [hangi yayımlama seçeneklerini benim için en uygun?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
 ## <a name="deploy-to-local-folder"></a>Yerel bir klasöre dağıtma
 
-Yerel bir klasöre dağıtımına genellikle sınama veya başka bir aracı son dağıtım için kullanılacak bir aşamalı dağıtımına başlamak için kullanılır.
+Yerel bir klasöre dağıtımına genellikle test ya da başka bir aracı son dağıtımı için kullanılan aşamalı dağıtımına başlamak için kullanılır.
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, ve. **NET çekirdek**: yerel bir klasöre dağıtmak için yayımlama Aracı'nı kullanın. Kullanılabilir seçenekler, uygulama türüne bağlıdır. Çözüm Gezgini'nde, projenize sağ tıklayın ve seçin **Yayımla**. (Daha önce tüm yayımlama profillerini yapılandırdıysanız, ardından'ı tıklatmalısınız **yeni profil oluşturmak**.) Ardından, seçin **klasörü**. Daha fazla bilgi için bkz: [bir yerel klasöre dağıtma](quickstart-deploy-to-local-folder.md).
 
@@ -53,7 +53,9 @@ Yerel bir klasöre dağıtımına genellikle sınama veya başka bir aracı son 
 
     ![Azure uygulama hizmeti seçin](../deployment/media/quickstart-publish-azure.png "Azure uygulama hizmeti seçin")
 
-    Visual Studio 2017 içinde sürüm 15.7, ASP.NET Core uygulamaları dağıtabilirsiniz **Linux için uygulama hizmeti**.
+    Visual Studio 2017 içinde 15.7 ve sonraki sürümleri, ASP.NET Core uygulamaları dağıtabilirsiniz **Linux için uygulama hizmeti**.
+
+    Python uygulamaları için Ayrıca bkz. [Azure App Service'te yayımlama Python -](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Bir yayımlama profili Visual Studio için Azure App hizmetinden içe aktarma hakkında daha fazla bilgi için bkz: [yayımlama ayarlarını içeri aktarma ve Azure'a dağıtmak](../deployment/tutorial-import-publish-settings-azure.md).
 
@@ -124,8 +126,7 @@ Bir ekip ortamında uygulamanızı sürekli dağıtımını etkinleştirmek içi
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticide, farklı uygulamalar için dağıtım seçeneklerini hızlı bir bakış sürdü. ASP.NET gibi bir web uygulaması dağıtıyorsanız, bazı Visual Studio'da kullanılabilir dağıtım seçenekleri hakkında daha ayrıntılı okuyun.
+Bu öğreticide, farklı uygulamalar için dağıtım seçeneklerini hızlı bir bakış sürdü.
 
 > [!div class="nextstepaction"]
-> [Benim için en uygun Yayımlama seçenekleri nelerdir?](../ide/not-in-toc/web-publish-options.md)
-
+> [Benim için en uygun Yayımlama seçenekleri nelerdir?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)

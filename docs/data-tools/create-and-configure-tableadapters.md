@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3a5cebc3cb04872ff9266a2fa404b261a32c2d6
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748963"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757103"
 ---
 # <a name="create-and-configure-tableadapters"></a>TableAdapter’lar oluşturma ve yapılandırma
 TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritabanı, çalışma sorgular veya saklı yordamlar bağlanmak ve ya da yeni bir veri dönüş tablo veya varolan bir dolgu <xref:System.Data.DataTable> döndürülen verilerle. TableAdapters veritabanına uygulamanızdan güncelleştirilen verileri de gönderebilirsiniz.
@@ -32,7 +32,7 @@ Aşağıdaki eylemlerden birini gerçekleştirdiğinizde TableAdapters sizin iç
 
 -   Sürükleme veritabanı nesnelerini **Sunucu Gezgini** içine **veri kümesi Tasarımcısı**.
 
-Ayrıca yeni bir TableAdapter oluşturma ve boş bir bölgede için araç kutusu'ndan bir TableAdapter sürükleyerek ile bir veri kaynağı yapılandırma **veri kümesi Tasarımcısı** yüzeyini.
+Ayrıca yeni bir TableAdapter oluşturma ve gelen bir TableAdapter sürükleyerek ile bir veri kaynağı yapılandırma **araç** için boş bir bölgede **veri kümesi Tasarımcısı** yüzeyini.
 
 TableAdapters giriş için bkz: [TableAdapters kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -98,11 +98,11 @@ Aşağıdaki örnek adlı ek bir sorguyu çağırmak nasıl gösterir `FillByCit
 -   Varolan bir TableAdapter sorgu düzenliyorsanız, sorguyu sağ tıklayın ve ardından **yapılandırma** kısayol menüsünden.
 
     > [!NOTE]
-    >  Bir TableAdapter ana sorgu sağ TableAdapter yeniden yapılandırır ve <xref:System.Data.DataTable> şema. Ek bir sorgu bir TableAdapter üzerinde sağ tıklayarak, ancak yalnızca seçili sorgu yapılandırır. **TableAdapter Yapılandırma Sihirbazı'nı** TableAdapter sorgu Yapılandırma Sihirbazı'nı yalnızca seçili sorguyu yeniden yapılandırır ancak TableAdapter tanımı yeniden yapılandırır.
+    >  Bir TableAdapter ana sorgu sağ TableAdapter yeniden yapılandırır ve <xref:System.Data.DataTable> şema. Ek bir sorgu bir TableAdapter üzerinde sağ tıklayarak, ancak yalnızca seçili sorgu yapılandırır. **TableAdapter Yapılandırma Sihirbazı'nı** TableAdapter tanımı yeniden yapılandırır ancak **TableAdapter sorgu Yapılandırma Sihirbazı'nı** yalnızca seçili sorguyu yeniden yapılandırır.
 
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Bir TableAdapter genel sorgu eklemek için
 
--   *Genel sorgular* tek bir (sayı) değerini veya herhangi bir değer döndüren bir SQL sorgular. Genellikle, ekler, güncelleştirmeleri siler gibi genel işlevler veritabanı işlemleri gerçekleştirir. Bunlar ayrıca bir tablo ya da belirli bir sırada tüm öğeler için toplam ücretleri müşteri sayısı gibi bilgiler toplama.
+-   Genel sorgular tek bir (sayı) değerini veya herhangi bir değer döndüren bir SQL sorguları gerçekleşiyor. Genellikle, genel işlevler ekler, güncelleştirmeleri ve silme gibi veritabanı işlemlerini gerçekleştirir. Bunlar ayrıca bir tablo ya da belirli bir sırada tüm öğeler için toplam ücretleri müşteri sayısı gibi bilgiler toplama.
 
      Sürükleyerek genel sorgular ekleme bir **sorgu** nesnesinin **DataSet** sekmesinde **araç** boş bir alanı üzerine **veri kümesi Tasarımcısı**.
 

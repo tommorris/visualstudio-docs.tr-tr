@@ -1,5 +1,5 @@
 ---
-title: İş Akışı Tasarımcısı'nda hata iletileri
+title: İş Akışı Tasarımcısında Hata İletileri
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cbde06b10d1201c7e69c1823714007dfa57397
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971907"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755589"
 ---
-# <a name="error-messages-in-workflow-designer"></a>İş Akışı Tasarımcısı'nda hata iletileri
+# <a name="error-messages-in-workflow-designer"></a>İş Akışı Tasarımcısında Hata İletileri
 
-Bu konu Windows iş akışı Tasarımcısı ile çalışırken karşılaşılan hata iletileri türleri açıklanmaktadır.
+Bu konuda, iş akışı Tasarımcısı ile çalışırken karşılaşılan hata iletileri türleri açıklanmaktadır.
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Hangi iş akışı Tasarımcısı'nda hatalar ortaya durumları
 

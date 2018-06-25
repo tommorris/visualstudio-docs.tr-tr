@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd566eacba7f94cfe7617e9396440c90dc32f51e
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 353d834ccd32376b53c875be356865711a4f89fd
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767148"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757246"
 ---
 # <a name="how-to-add-a-creator-method"></a>Nasıl yapılır: bir yaratıcı yöntemi ekleme
   Bir yaratıcı yöntemi bir varlık veri kaynağı için yeni veri ekler. Kullanıcıların seçtiğinizde iş verileri bağlantı (BDC) hizmeti bu yöntemi çağırır **yeni öğe** düğmesini **Şerit** modelini temel alan bir listesi. Daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -38,7 +38,7 @@ ms.locfileid: "34767148"
   
 2.  Menü çubuğunda seçin **Görünüm** > **diğer pencereler** >**BDC yöntem ayrıntıları**.  
   
-     **BDC yöntem ayrıntıları** penceresi açılır. Bu pencere hakkında daha fazla bilgi için bkz: [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md).  
+     **BDC yöntem ayrıntıları** penceresi açılır. Bu pencere hakkında daha fazla bilgi için bkz: [BDC modeli Tasarım araçları genel bakış](../sharepoint/bdc-model-design-tools-overview.md).  
   
 3.  İçinde **bir yöntem ekleyin** listesinde, seçin **oluşturan yöntem oluşturma**.  
   
@@ -76,6 +76,6 @@ ms.locfileid: "34767148"
  [Nasıl yapılır: bir güncelleyici yöntemi ekleme](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)   
  [Nasıl yapılır: bir yönteme parametre ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Nasıl yapılır: Metot Örneği Tanımlama](../sharepoint/how-to-define-a-method-instance.md)  
+ [Nasıl yapılır: yöntem örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)  
   
   

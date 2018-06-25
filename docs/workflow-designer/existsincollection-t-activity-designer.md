@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83ae11cad7e132bd13bb930607abd40011e0392a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974406"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756473"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > etkinlik Tasarımcısı
 
@@ -27,7 +27,7 @@ ms.locfileid: "31974406"
  <xref:System.Activities.Statements.ExistsInCollection%601> Etkinlik belirli bir öğeyi belirli bir koleksiyondaki var olup olmadığını belirler.
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>ExistsInCollection kullanarak\<T > etkinlik Tasarımcısı
- **ExistsInCollection\<T >** etkinlik Tasarımcısı bulunabilir **koleksiyonu** kategorisini **araç**, hangi tıklayarakerişildiğinde **Araç kutusu** sekmesi iş akışı Tasarımcısı'nın (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+ **ExistsInCollection\<T >** etkinlik Tasarımcısı bulunabilir **koleksiyonu** kategorisini **araç**, hangi tıklayarakerişildiğinde **Araç kutusu** iş akışı Tasarımcısı'nın sekmesi. Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya tuşuna **Ctrl**+**Alt** + **X**.
 
  **ExistsInCollection\<T >** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir olduğunda, örneğin olarak içinde iş akışı Tasarımcısı yüzeyini açın bir <xref:System.Activities.Statements.Sequence>. Bu oluşturur bir <xref:System.Activities.Statements.ExistsInCollection%601> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection, < Int32\>. (Varsayılan olarak, *TypeArgument* olan **Int32**. Bu özellik kılavuzunda değiştirilebilir.)  <xref:System.Activities.Activity.DisplayName%2A> Değeri üstbilgisinde düzenlenebilir **ExistsInCollection < T\>**  etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu. Diğer özellikler ve özellik ızgarasının düzenlenmesi gerekir.
 

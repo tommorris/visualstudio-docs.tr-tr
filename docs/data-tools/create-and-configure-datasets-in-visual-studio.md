@@ -13,28 +13,28 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746578"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756038"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio’da veri kümeleri oluşturma ve yapılandırma
 
-A *dataset* bellekte bir veritabanındaki verileri depolamak ve etkinleştirmek için değişiklik izleme destekleyen nesneleri kümesi oluşturma, okuma, güncelleştirme ve bu verileri her zaman veritabanına bağlanması gerek kalmadan (CRUD) işlemleridir silme. Veri kümeleri basit için tasarlanmış *forms veriler üzerinde* iş uygulamaları. Yeni uygulamalar için depolamak ve bellekte veri modeli için Entity Framework kullanarak göz önünde bulundurun. Veri kümeleriyle çalışmak için veritabanı kavramlarını temel bilgiye sahip.
+Bir veri kümesi, bellekte bir veritabanındaki verileri depolamak ve etkinleştirmek için değişiklik izlemeyi destekleyen bir nesne oluşturmaktır, okuma, güncelleştirme ve bu verileri her zaman veritabanına bağlanması gerek kalmadan (CRUD) işlemleridir silme. Veri kümeleri basit için tasarlanmış *forms veriler üzerinde* iş uygulamaları. Yeni uygulamalar için depolamak ve bellekte veri modeli için Entity Framework kullanarak göz önünde bulundurun. Veri kümeleriyle çalışmak için veritabanı kavramlarını temel bilgiye sahip.
 
-Yazılmış bir oluşturduğunuz <xref:System.Data.DataSet> Visual Studio'da sınıfı kullanarak tasarım zamanında **veri kaynağı Yapılandırma Sihirbazı**. Veri kümeleri program aracılığıyla oluşturma hakkında daha fazla bilgi için bkz: [bir veri kümesi (ADO.NET) oluşturma](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
+Yazılmış bir oluşturduğunuz <xref:System.Data.DataSet> Visual Studio'da sınıfı kullanarak tasarım zamanında **veri kaynağı Yapılandırma Sihirbazı**. Veri kümeleri program aracılığıyla oluşturma hakkında daha fazla bilgi için bkz: [veri kümesi (ADO.NET) oluşturma](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Veri Kaynağı Yapılandırma Sihirbazı'nı kullanarak yeni bir veri kümesi oluşturma
 
 1.  Üzerinde **proje** menüsünde tıklatın **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.
 
-2.  İçin bağlanırsınız veri kaynağı türünü seçin.
+2.  Veri kaynağı için size bağlanırsınız türünü seçin.
 
      ![Veri Kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png)
 
-3.  Veritabanları için veritabanı veya Veri kümenizi veri kaynağının veritabanlarını seçin.
+3.  Veritabanı veya Veri kümenizi veri kaynağının veritabanlarını seçin.
 
      ![Veri kaynağı bağlantısı seçin](../data-tools/media/data-source-choose-a-connection.png)
 
@@ -44,11 +44,11 @@ Yazılmış bir oluşturduğunuz <xref:System.Data.DataSet> Visual Studio'da sı
 
 5.  **Son**'a tıklayın.
 
-6.  Veri kümesi bir düğüm olarak görünür **Çözüm Gezgini**:
+6.  Veri kümesi bir düğüm olarak görünür **Çözüm Gezgini**.
 
      ![Çözüm Gezgini'nde veri kümesi](../data-tools/media/dataset-in-solution-explorer.png)
 
-     Bu düğümünü tıklatın ve veri kümesi görünür **veri kümesi Tasarımcısı**. Veri kümesi her tabloda altındaki temsil edilen bir ilişkili TableAdapter nesnesi olduğuna dikkat edin. Tablo bağdaştırıcısı DataSet'i ve isteğe bağlı olarak veritabanına komutlarını göndermek için kullanılır.
+     Bu düğümünü tıklatın ve veri kümesi görünür **veri kümesi Tasarımcısı**. Veri kümesi her tabloda ilişkili bir sahip olduğuna dikkat edin `TableAdapter` altındaki temsil edilen nesne. Tablo bağdaştırıcısı DataSet'i ve isteğe bağlı olarak veritabanına komutlarını göndermek için kullanılır.
 
      ![Veri kümesi Tasarımcısı](../data-tools/media/dataset-designer.png)
 
@@ -86,7 +86,7 @@ Bu yordamda, bir tablo ilk veri kümesi oluşturmak için kullanılan aynı veri
 
 2.  Sürükleme bir <xref:System.Data.DataTable> sınıfıyla **DataSet** sekmesinde **araç** üzerine **veri kümesi Tasarımcısı**.
 
-3.  Veri tablosu tanımlamak için sütunları ekleyin. Tabloyu sağ tıklatın ve seçin **Ekle > sütun**. Kullanım **özellikleri** gerekirse sütun ve bir anahtar veri türünü ayarlamak için penceresi.
+3.  Veri tablosu tanımlamak için sütunları ekleyin. Tabloyu sağ tıklatın ve seçin **Ekle** > **sütun**. Kullanım **özellikleri** gerekirse sütun ve bir anahtar veri türünü ayarlamak için penceresi.
 
 4.  Tek başına tabloları uygulama için gereksinim `Fill` mantığı tek başına tabloları, böylece verilerle doldurmak için. Tek başına veri tabloları doldurma hakkında daha fazla bilgi için bkz: [DataAdapter kümesinden doldurma](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 

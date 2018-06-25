@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1e68542de70c868f6113348e519f866bf60bc381
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691030"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758974"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Kaynak tüketimini ve kullanıcı Arabirimi iş parçacığı etkinliği (XAML) çözümler.
 Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek için Profil Oluşturucu ile ilgili performans sorunları XAML uygulamaları. Bu araç, uygulamaları kaynak tüketimini ayrıntılı bir görünümünü sağlayarak XAML uygulamalarının performansını artırmaya yardımcı olur. UI çerçeveler (düzeni ve işleme) hazırlama, ağ ve disk isteklere hizmet uygulamanızı ve uygulama başlatma, sayfa yükleme gibi senaryolarda zamanın çözümleyebilir ve Windows yeniden boyutlandırın.  
@@ -97,7 +97,7 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
 |||  
 |-|-|  
 |**Ayrıştırma**|Ayrıştırma XAML dosyaları ve oluşturma nesneleri için harcanan süre.<br /><br /> Genişleyen bir **ayrıştırma** düğümünde **zaman çizelgesi ayrıntıları** sonucunda kök olay Ayrıştırılan tüm XAML dosyaları bağımlılık zinciri görüntüler. Bu, gereksiz dosya ayrıştırma ve nesne oluşturma performans hassas senaryolarda tanımlamak ve bunları en iyi duruma getirmek olanak tanır.|  
-|**Düzen**|Büyük uygulamalarda, aynı anda ekranda öğeleri binlerce gösterilebilir. Bu bir düşük UI kare hızı ve buna bağlı olarak zayıf uygulama yanıt hızını neden olabilir. Düzen olay doğru şekilde her öğe yerleştirmede maliyetini belirler (diğer bir deyişle, harcanan zamanı Yerleştir, ölçü, ApplyTemplate, ArrangeOverride ve ArrangeOverride) ve bölüm düzeni geçişinde sürdü görsel ağaçlar oluşturur. Bu görselleştirme, mantıksal ağaçları ayıklanacağını ya da diğer erteleme mekanizmaları düzeni geçişi en iyi duruma getirme değerlendirmek için hangisinin belirlemek için kullanabilirsiniz.|  
+|**Düzen**|Büyük uygulamalarda, aynı anda ekranda öğeleri binlerce gösterilebilir. Bu bir düşük UI kare hızı ve buna bağlı olarak zayıf uygulama yanıt hızını neden olabilir. Düzen olay doğru şekilde her öğe yerleştirmede maliyetini belirler (diğer bir deyişle, harcanan zamanı Yerleştir, ölçü, ApplyTemplate ve ArrangeOverride) ve bölüm düzeni geçişinde sürdü görsel ağaçlar oluşturur. Bu görselleştirme, mantıksal ağaçları ayıklanacağını ya da diğer erteleme mekanizmaları düzeni geçişi en iyi duruma getirme değerlendirmek için hangisinin belirlemek için kullanabilirsiniz.|  
 |**İşleme**|Çizim XAML öğeleri ekranda geçirilen süre.|  
 |**T / 0**|Harcanan zamanı yerel diskten veya üzerinden erişilen ağ kaynaklarına veri alma [Microsoft Windows Internet (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Uygulama kodu**|Ayrıştırma veya düzenine ilgili olmayan uygulama (kullanıcı) kod çalıştırırken için harcanan süre.|  
@@ -121,4 +121,4 @@ Kullanım **uygulama zaman çizelgesi** bulmak ve uygulama etkileşim düzeltmek
  [C++, C# ve Visual Basic kullanarak UWP uygulamaları için performansı en iyi yöntemler](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [WPF Uygulama performansı en iyi duruma getirme](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)
+ [Profil oluşturma araçları ilk bakış](../profiling/profiling-feature-tour.md)

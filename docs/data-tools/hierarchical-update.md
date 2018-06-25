@@ -23,19 +23,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 513ac512c1f4bd368e069ceaf8448d5712a23b4e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 2b1d1567feba85023d6d7bf5fc1bc1e43ca15482
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234572"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757272"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 *Hiyerarşik güncelleştirme* bilgi tutarlılığı kuralları korurken (kümesindeki iki veya daha fazla ilişkili tabloları ile) güncelleştirilmiş verileri bir veritabanına geri kaydetme işlemi başvuruyor. *Başvuru bütünlüğü* bir veritabanında ve ekleme, güncelleştirme ve ilgili kayıtları silme davranışını denetleyen kısıtlamalar tarafından sağlanan tutarlık kuralları başvuruyor. Örneğin, o müşteri için siparişleri oluşturulmasına izin vermeden önce bir müşteri kaydı oluşturulmasını zorlar başvuru bütünlüğü olur.  Veri kümelerindeki ilişkiler hakkında daha fazla bilgi için bkz: [kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md)
 
  Hiyerarşik güncelleştirme özelliğini kullanan bir `TableAdapterManager` yönetmek için `TableAdapter`türü belirtilmiş veri kümesi s. `TableAdapterManager` Bileşen olmayan bir Visual Studio tarafından oluşturulan sınıf olduğundan parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bir tablo veri kaynakları penceresinden bir Windows Form veya WPF sayfasına sürüklediğinizde, Visual Studio TableAdapterManager türünde bir değişken form veya sayfasına ekler ve Bileşen tasarımcısında bölümüne bakın. Hakkında ayrıntılı bilgi için `TableAdapterManager` sınıfı, TableAdapterManager başvuru bölümüne bakın [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
- Varsayılan olarak, bir veri kümesi ilişkili tabloları "ilişkileri yalnızca" yabancı anahtar kısıtlamaları zorunlu olmayan başka bir deyişle, değerlendirir. Veri kümesi Tasarımcısı kullanarak tasarım zamanında bu ayarı değiştirebilirsiniz. Ortaya çıkarmak için iki tablo arasında ilişki satırı seçin **ilişkisi** iletişim kutusu. Burada yaptığınız değişiklikler TableAdapterManager ne zaman nasıl davranacağını belirleyen göndermeden değişiklikleri ilgili tablolarda veritabanına geri.
+ Varsayılan olarak, bir veri kümesi ilişkili tabloları "ilişkileri yalnızca" yabancı anahtar kısıtlamaları zorunlu olmayan başka bir deyişle, değerlendirir. Tasarım zamanında bu ayarı kullanarak değiştirebileceğiniz **veri kümesi Tasarımcısı**. Ortaya çıkarmak için iki tablo arasında ilişki satırı seçin **ilişkisi** iletişim kutusu. Burada yaptığınız değişiklikler belirleyecek nasıl `TableAdapterManager` ne zaman davranır göndermeden değişiklikleri ilgili tablolarda veritabanına geri.
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Bir veri kümesinde hiyerarşik güncelleştirmeyi etkinleştirme
  Varsayılan olarak, eklenen veya bir proje ile oluşturulan tüm yeni veri kümeleri için hiyerarşik güncelleştirme etkindir. Ayarlayarak hiyerarşik güncelleştirme açma veya kapatma **hiyerarşik güncelleştirme** özelliği için kümesindeki türü belirtilmiş veri kümesinin **True** veya **False**:
@@ -58,7 +58,7 @@ ms.locfileid: "36234572"
  Güncelleştirmeleri gerçekleştirmek için sırasını ayarlama tek tek sırasını ekler, güncelleştirmeleri ve, siler kümeleri değiştirilmiş tüm verileri bir veri kümesinin tüm tablolarda kaydetmek için gereklidir. Hiyerarşik güncelleştirme etkinleştirildiğinde, eklemeleri ilk olarak, gerçekleştirilen sonra güncelleştirir ve sonra siler. `TableAdapterManager` Sağlayan bir `UpdateOrder` özelliği ilk olarak, güncelleştirmeleri gerçekleştirmek için kümesi sonra ekler ve siler olabilir.
 
 > [!NOTE]
->  Güncelleştirme sırasını tüm dahil olduğunu anlamak önemlidir. Güncelleştirmeleri gerçekleştirildiğinde, diğer bir deyişle, ekleme ve silme kümesindeki tüm tablolar için gerçekleştirilir.
+>  Güncelleştirme sırasını tüm dahil olduğunu anlamak önemlidir. Güncelleştirmeleri gerçekleştirildiğinde, diğer bir deyişle, ekler ve ardından siler kümesindeki tüm tablolar için gerçekleştirilir.
 
  Ayarlamak için `UpdateOrder` öğelerinden Sürüklemeyi sonra özellik [veri kaynakları penceresi](add-new-data-sources.md) bir forma seçin `TableAdapterManager` bileşen olarak ayarlayın ve ardından içinde `UpdateOrder` özelliğinde **özellikleri** penceresi.
 
@@ -78,7 +78,7 @@ ms.locfileid: "36234572"
  Oluşturulan kod kaydetmek de çağırır kod satırını içeren `CustomersBindingSource.EndEdit` yöntemi. Daha belirgin olarak çağırır <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi ilk <xref:System.Windows.Forms.BindingSource>forma eklenir. Diğer bir deyişle, bu kod yalnızca gelen sürüklenen ilk tablo için oluşturulan **veri kaynakları** forma penceresi. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Çağrısı şu anda düzenlenmekte olan tüm verilere bağlı denetimler işleminde değişiklikleri kaydeder. Odak ve bu nedenle, bir veri bağlama denetimi hala varsa tıklatın **kaydetmek** denetim kaydedilir, gerçek kaydetme önce bekleyen tüm düzenlemeleri düğmesine ( `TableAdapterManager.UpdateAll` yöntemi).
 
 > [!NOTE]
->  Veri kümesi Tasarımcısı yalnızca ekler `BindingSource.EndEdit` forma bırakılan ilk tablo için kod. Bu nedenle, bir çağırmak için kod satırı eklemeniz gerekir `BindingSource.EndEdit` yöntemi form üzerinde ilgili her tablo için. Bu kılavuz için bu bir çağrı ekleyin zorunda anlamına gelir `OrdersBindingSource.EndEdit` yöntemi.
+>  **Veri kümesi Tasarımcısı** yalnızca ekler `BindingSource.EndEdit` forma bırakılan ilk tablo için kod. Bu nedenle, bir çağırmak için kod satırı eklemeniz gerekir `BindingSource.EndEdit` yöntemi form üzerinde ilgili her tablo için. Bu kılavuz için bu bir çağrı ekleyin zorunda anlamına gelir `OrdersBindingSource.EndEdit` yöntemi.
 
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Değişiklikleri kaydetmeden önce ilişkili tabloları yürütmek için kodu güncelleştirmek için
 
@@ -89,7 +89,7 @@ ms.locfileid: "36234572"
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
 
-Verileri bir veritabanına kaydetme önce ilgili alt tabloda değişiklikleri işleme ek olarak, bir veri kümesine yeni alt kayıtlar eklemeden önce yeni oluşturulan yürütme üst kayıtlar için de sahip olabilir. Yeni alt kayıt kümesine eklenecek (siparişleri) yabancı anahtar kısıtlamaları etkinleştirmeden önce başka bir deyişle, yeni üst kaydı (müşteri) eklemek kümesine olabilir. Bunu başarmak için alt kullanabilirsiniz `BindingSource.AddingNew` olay.
+Verileri bir veritabanına kaydetme önce ilgili alt tabloda değişiklikleri işleme ek olarak, bir veri kümesine yeni alt kayıtlar eklemeden önce yeni oluşturulan yürütme üst kayıtlar için de sahip olabilir. Diğer bir deyişle, yeni üst kayıt eklemeniz gerekebilir (`Customer`) yeni alt kayıtlar yabancı anahtar kısıtlamaları etkinleştirmeden önce veri kümesine (`Orders`) kümesine eklenecek. Bunu başarmak için alt kullanabilirsiniz `BindingSource.AddingNew` olay.
 
 > [!NOTE]
 > Yeni üst kayıtları tamamlamaya yüklü olup olmadığını veri kaynağınıza bağlamak için kullanılan denetimin türüne bağlıdır. Bu kılavuzda, üst tablo bağlamak için tek denetimleri kullanın. Bu, yürütme yeni üst kaydı için ek kod gerektirir. Üst kayıtlar bunun yerine bir karmaşık bağlama denetiminde görüntülenen her hoşlanıyorsanız <xref:System.Windows.Forms.DataGridView>, bu ek <xref:System.Windows.Forms.BindingSource.EndEdit%2A> üst kaydı gerekli olmaz için çağırın. Yeni kayıtları teslim etme denetimi temel alınan veri bağlama işlevselliğini işleme olmasıdır.
@@ -106,11 +106,12 @@ Verileri bir veritabanına kaydetme önce ilgili alt tabloda değişiklikleri i�
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
 
 ## <a name="tableadaptermanager-reference"></a>TableAdapterManager başvurusu
- Varsayılan olarak, bir `TableAdapterManager` sınıfı ilişkili tabloları içeren bir veri kümesi oluşturduğunuzda oluşturulur. Sınıf oluşturulmasını önler önlemek için değerini değiştirme `Hierarchical Update` özelliği false veri kümesi. Windows Form veya WPF sayfasının tasarım yüzeyine bir ilişkisi olan bir tabloda sürüklediğinizde, Visual Studio sınıfının üye değişkeni bildirir. Veri bağlama kullanmıyorsanız, el ile değişkeni bildirmeniz gerekir.
 
- `TableAdapterManager` Sınıfı değil parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bu nedenle, onu belgelerindeki bakarak olamaz. Veri kümesi oluşturma işleminin bir parçası olarak tasarım zamanında oluşturulur.
+Varsayılan olarak, bir `TableAdapterManager` sınıfı ilişkili tabloları içeren bir veri kümesi oluşturduğunuzda oluşturulur. Sınıf oluşturulmasını önler önlemek için değerini değiştirme `Hierarchical Update` özelliği false veri kümesi. Windows Form veya WPF sayfasının tasarım yüzeyine bir ilişkisi olan bir tabloda sürüklediğinizde, Visual Studio sınıfının üye değişkeni bildirir. Veri bağlama kullanmıyorsanız, el ile değişkeni bildirmeniz gerekir.
 
- Sık kullanılan yöntemleri ve özellikleri şunlardır `TableAdapterManager` sınıfı:
+`TableAdapterManager` Sınıfı değil parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bu nedenle, onu belgelerindeki bakarak olamaz. Veri kümesi oluşturma işleminin bir parçası olarak tasarım zamanında oluşturulur.
+
+Sık kullanılan yöntemleri ve özellikleri şunlardır `TableAdapterManager` sınıfı:
 
 |Üye|Açıklama|
 |------------|-----------------|

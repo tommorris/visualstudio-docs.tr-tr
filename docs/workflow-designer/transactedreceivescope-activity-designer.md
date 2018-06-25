@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f5c4cd48cc98d58da278ac53c1a829d15c43cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97a4871f3f9f7726f8e0f62008c22aef5e22234e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976858"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755150"
 ---
-# <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope etkinlik Tasarımcısı
+# <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope Etkinlik Tasarımcısı
 
 **TransactedReceiveScope** Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.ServiceModel.Activities.TransactedReceiveScope> etkinlik.
 
@@ -28,14 +28,14 @@ ms.locfileid: "31976858"
 <xref:System.ServiceModel.Activities.TransactedReceiveScope> Etkinliğini bir iş akışı veya gönderen tarafından oluşturulan sunucu hareketleri harekete akış olanak sağlar.
 
 ### <a name="using-the-transactedreceivescope-activity-designer"></a>TransactedReceiveScope etkinlik Tasarımcısı'nı kullanarak
- **TransactedReceiveScope** etkinlik Tasarımcısı bulunabilir **ileti** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç kutusu**  iş akışı Tasarımcısı sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
 
- **TransactedReceiveScope** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın. Bu oluşturur bir <xref:System.ServiceModel.Activities.TransactedReceiveScope> varsayılan etkinlik **DisplayName** TransactedReceiveScope biri. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **TransactedReceiveScope** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
+Erişim **TransactedReceiveScope** etkinlik Tasarımcısı'nda **ileti** kategorisini **araç**. **TransactedReceiveScope** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlikleri genellikle yerleştirilir her yerde iş akışı Tasarımcısı yüzeyini açın. Bu oluşturur bir <xref:System.ServiceModel.Activities.TransactedReceiveScope> varsayılan etkinlik **DisplayName** TransactedReceiveScope biri. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **TransactedReceiveScope** etkinlik Tasarımcısı veya **DisplayName** ve özellik ızgarasının kutusu.
 
- **TransactedReceiveScope** Tasarımcısı içeren **isteği** ve **gövde** kutuları. Bunlar yapılandırmak için kullanılan <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> belirtir özelliği bir <xref:System.ServiceModel.Activities.Receive> etkinliği ve bir <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> başka belirtir özelliği <xref:System.Activities.Activity>. <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> Bir işlem oluşturur. İşlemin ardından kapsamını ortam yapılan <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> böylece bu kapsam içinde herhangi bir etkinlik bu işlem içinde yürütür.
+**TransactedReceiveScope** Tasarımcısı içeren **isteği** ve **gövde** kutuları. Bunlar yapılandırmak için kullanılan <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> belirtir özelliği bir <xref:System.ServiceModel.Activities.Receive> etkinliği ve bir <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> başka belirtir özelliği <xref:System.Activities.Activity>. <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> Bir işlem oluşturur. İşlemin ardından kapsamını ortam yapılan <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> böylece bu kapsam içinde herhangi bir etkinlik bu işlem içinde yürütür.
 
 ### <a name="the-transactedreceivescope-properties"></a>TransactedReceiveScope özellikleri
- Aşağıdaki tabloda <xref:System.ServiceModel.Activities.TransactedReceiveScope> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bunlar <xref:System.Activities.Activity.DisplayName%2A> özelliği, özellik kılavuzu veya iş akışı Tasarımcısı yüzeyinde düzenlenebilir, ancak diğer tasarım yüzeyine düzenlenmesi gerekir.
+
+Aşağıdaki tabloda <xref:System.ServiceModel.Activities.TransactedReceiveScope> özellikleri ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bunlar <xref:System.Activities.Activity.DisplayName%2A> özelliği, özellik kılavuzu veya iş akışı Tasarımcısı yüzeyinde düzenlenebilir, ancak diğer tasarım yüzeyine düzenlenmesi gerekir.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

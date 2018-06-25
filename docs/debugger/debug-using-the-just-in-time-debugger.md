@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c09d3b6bbc9f1b3c895f0b8844fc91875c1484
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 39721b55d134335e3b618821e50ed3678895a861
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280474"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757285"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio'da Just-In-Time hata ayıklayıcısı ile hata ayıklama
 Bir özel durum ya da kilitlenme dış Visual Studio çalıştıran bir uygulamada oluştuğunda tam zamanı hata ayıklama Visual Studio otomatik olarak başlatır. Bu, Visual Studio çalışmadığı zaman uygulamanızı test etmek ve bir sorun ortaya çıktığında Visual Studio ile hata ayıklama başlamak sağlar.
@@ -104,7 +104,7 @@ Visual Studio artık bilgisayarınızda yüklü olsa bile tam zamanı hata ayık
 
  Bu sadece zaman emin olun hata ayıklama işlevinin [etkin](#BKMK_Enabling).
 
- Bu bölümde amaçları doğrultusunda, biz bir C# konsol uygulaması Visual Studio'da oluşturur yapacağız bir [NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a).
+ Bu bölümde amaçları doğrultusunda, biz bir C# konsol uygulaması Visual Studio'da oluşturur yapacağız bir [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
  Visual Studio'da bir C# konsol uygulaması oluşturma (**Dosya > Yeni > Proje > Visual C# > konsol uygulaması**) adlı **ThrowsNullException**. Visual Studio'da projeler oluşturma hakkında daha fazla bilgi için bkz: [izlenecek yol: basit bir uygulama oluşturmak](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 

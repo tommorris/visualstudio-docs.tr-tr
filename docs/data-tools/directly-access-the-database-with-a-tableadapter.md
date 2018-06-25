@@ -1,5 +1,5 @@
 ---
-title: Bir TableAdapter ile veritabanına doğrudan erişim
+title: Bir TableAdapter ile veritabanına doğrudan erişme
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -25,20 +25,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9985d9e072163bab722edde403ee1ec8aa801a69
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53d4b2e75be288422300122d5ef9f523068dd9fc
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921068"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756460"
 ---
-# <a name="directly-access-the-database-with-a-tableadapter"></a>Bir TableAdapter ile veritabanına doğrudan erişim
-Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapters doğrudan veritabanına karşı çalışan yöntemleriyle oluşturulur. Bu yöntemler (`TableAdapter.Insert`, `TableAdapter.Update`, ve `TableAdapter.Delete`) doğrudan veritabanındaki verileri işlemek için çağrılabilir.
+# <a name="directly-access-the-database-with-a-tableadapter"></a>Bir TableAdapter ile veritabanına doğrudan erişme
+Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapters doğrudan veritabanına karşı çalışan yöntemleriyle oluşturulur. Bu yöntemleri çağırabilir (`TableAdapter.Insert`, `TableAdapter.Update`, ve `TableAdapter.Delete`) doğrudan veritabanındaki verileri işlemek için.
 
- Doğrudan bu yöntemleri oluşturmak istemiyorsanız, TableAdapter's ayarlamak `GenerateDbDirectMethods` özelliğine `false` içinde **özellikleri** penceresi. TableAdapter'ın ana sorgu yanı sıra bir TableAdapter sorguları eklenir, bunlar bu DbDirect yöntemleri üretme tek başına sorguları demektir.
+ Doğrudan bu yöntemleri oluşturmak istemiyorsanız, TableAdapter's ayarlamak `GenerateDbDirectMethods` özelliğine `false` içinde **özellikleri** penceresi. TableAdapter'ın ana sorgu yanı sıra bir TableAdapter için herhangi bir sorgu eklediyseniz bunlar üretme tek başına sorguları oldukları `DbDirect` yöntemleri.
 
 ## <a name="send-commands-directly-to-a-database"></a>Bir veritabanına doğrudan komut gönderme
- Elde etmeye çalıştığınız görevi gerçekleştiren TableAdapter DbDirect yöntemini çağırın.
+ TableAdapter çağrı `DbDirect` görevi gerçekleştiren yöntemi çalıştığınız gerçekleştirmek.
 
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Doğrudan bir veritabanına yeni kayıtlar eklemek için
 

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdab42766fd20989831e446a45115d17b3ee28fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d723b50fe0267939119239861c5ae951e01cd445
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978667"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758300"
 ---
-# <a name="compensableactivity-activity-designer"></a>CompensableActivity etkinlik Tasarımcısı
+# <a name="compensableactivity-activity-designer"></a>CompensableActivity Etkinlik Tasarımcısı
 
 **CompensableActivity** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.CompensableActivity> etkinlik.
 
@@ -27,7 +27,7 @@ ms.locfileid: "31978667"
  <xref:System.Activities.Statements.CompensableActivity> Onaylanabilir veya başarıyla tamamlandıktan sonra dengelendi iş birimi tanımlar.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>CompensableActivity etkinlik Tasarımcısı'nı kullanarak
- **CompensableActivity** etkinlik Tasarımcısı bulunabilir **işlem** kategorisini **araç**. Açmak için **araç**seçin **araç** iş akışı Tasarımcısı sol tarafındaki sekmesinde. Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X tuşlarına basın.
+ **CompensableActivity** etkinlik Tasarımcısı bulunabilir **işlem** kategorisini **araç**. Açmak için **araç**seçin **araç** iş akışı Tasarımcısı sol tarafındaki sekmesinde. Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya tuşuna **Ctrl**+**Alt** + **X**.
 
  **CompensableActivity** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve iş akışı Tasarımcısı yüzeyini açın. Etkinlik Tasarımcısı içinde bırakma bir <xref:System.Activities.Statements.Sequence>. Etkinlik Tasarımcısı bırakarak oluşturur bir <xref:System.Activities.Statements.CompensableActivity> varsayılan etkinlik <xref:System.Activities.Activity.DisplayName%2A> CompensableActivity biri. Düzen <xref:System.Activities.Activity.DisplayName%2A> üstbilgisi değeri **CompensableActivity** etkinlik Tasarımcısı. İçinde de düzenlenebilir **DisplayName** ve özellik ızgarasının kutusu.
 

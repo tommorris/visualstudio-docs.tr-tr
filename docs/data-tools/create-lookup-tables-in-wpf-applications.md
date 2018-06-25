@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81edef642fd2d83f6bb65c01f9a1726812ba0fca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa14d9e2327288729bd97dd8a656f894e9fcef5d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926541"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757142"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF uygulamalarında arama tabloları oluşturma
 Terim *arama tablosu* (bazen adlı bir *arama bağlama*) bir veri tablosundaki başka bir tablodaki bir yabancı anahtar alanının değeri temel bilgileri görüntüleyen bir denetim açıklar. Üst tablo ana düğümünün sürükleyerek arama tablosu oluşturma ya da nesne **veri kaynakları** bir sütun veya ilgili alt tabloya bir özellik zaten bağlanmış bir denetim üzerine penceresi.
@@ -93,4 +93,4 @@ Terim *arama tablosu* (bazen adlı bir *arama bağlama*) bir veri tablosundaki b
 
 - [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [WPF uygulamalarındaki ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)
-- [İzlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)
+- [İzlenecek yol: bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)

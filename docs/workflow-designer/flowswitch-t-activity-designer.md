@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c655987f3cafd77b284d9d11eafefd56a188fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d3e811e9d5463771b2a25b06b47e0a411f5dcd7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978011"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757239"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > etkinlik Tasarımcısı
 
@@ -32,7 +32,7 @@ ms.locfileid: "31978011"
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>FlowSwitch kullanarak\<T > etkinlik Tasarımcısı
 
-**FlowSwitch\<T >** etkinlik Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarakerişildiğinde**Araç** sekmesi iş akışı Tasarımcısı'nın sol tarafındaki (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+**FlowSwitch\<T >** etkinlik Tasarımcısı bulunabilir **akış çizelgesi** kategorisini **araç**, hangi tıklayarakerişildiğinde**Araç** iş akışı Tasarımcısı sol tarafındaki sekmesinde. Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya tuşuna **Ctrl**+**Alt** + **X**.
 
 **FlowSwitch\<T >** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve iş akışı Tasarımcısı yüzeyini içinde açın bırakılan bir **akış** Etkinlik Tasarımcısı. Kullanım **türlerini Seç** türünü belirtmek için görüntüler penceresi (koduyla ilişkili <xref:System.Activities.Statements.FlowSwitch%601> genel parametresi tarafından) hesaplanması sonucunda elde edilen <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Bu yordam oluşturur bir <xref:System.Activities.Statements.FlowSwitch%601> etiketli etkinlik **anahtar** içinde <xref:System.Activities.Statements.Flowchart> etkinlik. <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> Yazılabilir **ifade** kutusunun **özellikleri** burada ipucu metnini bildiren "Girin VB ifade" tıklayarak penceresi.
 

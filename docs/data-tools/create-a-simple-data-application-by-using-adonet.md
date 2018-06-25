@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745808"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758489"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 
 Veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bağlantı dizeleri tanımlama, veri ekleme ve saklı yordamları çalıştırmak gibi temel görevleri gerçekleştirin. Bu konuda izleyerek Visual C# veya Visual Basic ve ADO.NET kullanarak basit bir Windows Forms "veriler üzerinde forms" uygulaması aynı veritabanıyla etkileşim kurmayı bulabilir.  Tüm .NET veri teknolojileri — veri kümeleri, LINQ to SQL ve Entity Framework dahil olmak üzere — sonuçta çok bu makalede gösterilen benzerdir adımları gerçekleştirin.
 
- Bu makalede çok hızlı bir şekilde bir veritabanından veri almak için basit bir yol gösterilmektedir. Uygulamanızın veri Önemsiz olmayan yollarla değiştirin ve veritabanını güncelleştirmek gerekirse, Entity Framework kullanarak ve kullanıcı arabirimi denetimlerini temel alınan verilerde yapılan değişiklikler için otomatik olarak senkronize için veri bağlamayı kullanarak düşünmelisiniz.
+ Bu makalede hızlı bir şekilde bir veritabanından veri almak için basit bir yol gösterilmektedir. Uygulamanızın veri Önemsiz olmayan yollarla değiştirin ve veritabanını güncelleştirmek gerekirse, Entity Framework kullanarak ve kullanıcı arabirimi denetimlerini temel alınan verilerde yapılan değişiklikler için otomatik olarak senkronize için veri bağlamayı kullanarak düşünmelisiniz.
 
 > [!IMPORTANT]
 > Kod basit tutmak için üretime hazır özel durum işleme içermez.
@@ -37,7 +37,7 @@ Uygulama oluşturmak için ihtiyacınız vardır:
 
 -   SQL Server Express LocalDB. SQL Server Express LocalDB yoksa, buradan yükleyebilirsiniz [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygulaması oluşturma, forms düğmelerin ve diğer denetimlerin formlarında put projeye özelliklerini denetimler ve kod basit olayları kümesi ekleme olduğunu varsayar. Bu görevleri memnun değilseniz, tamamlamanızı öneririz [Visual C# ve Visual Basic ile çalışmaya başlama](../ide/getting-started-with-visual-csharp-and-visual-basic.md) bu kılavuza başlamadan önce konu.
+Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygulaması oluşturma, forms düğmelerin ve diğer denetimlerin formlarında put projeye özelliklerini denetimler ve kod basit olayları kümesi ekleme olduğunu varsayar. Bu görevleri memnun değilseniz, tamamlamanızı öneririz [Visual C# ve Visual Basic'e Başlarken](../ide/getting-started-with-visual-csharp-and-visual-basic.md) bu kılavuza başlamadan önce konu.
 
 ## <a name="set-up-the-sample-database"></a>Örnek veritabanı ayarlama
 
@@ -45,7 +45,7 @@ Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygu
 
 1. Visual Studio'da açın **Sunucu Gezgini** penceresi.
 
-2. Sağ tıklayın **veri bağlantıları** ve ** oluşturmak yeni SQL Server veritabanı... ".
+2. Sağ tıklayın **veri bağlantıları** ve **oluşturma yeni SQL Server veritabanı**.
 
 3. İçinde **sunucu adı** metin kutusuna **(localdb) \mssqllocaldb**.
 
@@ -61,21 +61,21 @@ Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygu
 
 7. T-SQL betiği sorgu düzenleyicisine yapıştırın ve ardından **yürütme** düğmesi.
 
-     Kısa bir süre sonra sorgu yürütme tamamlandıktan ve veritabanı nesnelerini oluşturulur. Veritabanı iki tablolarını içerir: Müşteri ve siparişler. Bu tablo hiçbir veri başlangıçta içerir, ancak oluşturacağınız uygulamayı çalıştırdığınızda verileri ekleyebilirsiniz. Veritabanı, dört basit saklı yordamları da içerir.
+     Kısa bir süre sonra sorgu işlemi tamamlandıktan ve veritabanı nesnelerini oluşturulur. Veritabanı iki tablolarını içerir: Müşteri ve siparişler. Bu tablo hiçbir veri başlangıçta içerir, ancak oluşturacağınız uygulamayı çalıştırdığınızda verileri ekleyebilirsiniz. Veritabanı, dört basit saklı yordamları da içerir.
 
 ## <a name="create-the-forms-and-add-controls"></a>Formları oluşturma ve denetimleri ekleme
 
-1.  Windows Forms uygulaması için bir proje oluşturun ve SimpleDataApp olarak adlandırın.
+1.  Windows Forms uygulaması için bir proje oluşturun ve ardından ad **SimpleDataApp**.
 
-     Visual Studio Proje ve Form1 adlı boş bir Windows formu dahil olmak üzere çeşitli dosyaları oluşturur.
+     Visual Studio Proje ve adlı boş bir Windows formu dahil olmak üzere çeşitli dosyaları oluşturur **Form1**.
 
 2.  Üç forms sahip olması iki Windows forms projenize ekleyin ve bunları aşağıdaki adlar verin:
 
-    -   Gezinme
+    -   **Gezinti**
 
-    -   NewCustomer
+    -   **NewCustomer**
 
-    -   FillOrCancel
+    -   **FillOrCancel**
 
 3.  Her form için aşağıdaki örneklerde kullanılan metin kutuları, düğmeler ve görüntülenen diğer denetimleri ekleyin. Her denetim için aşağıdaki tablolarda açıklanmıştır özellikleri ayarlayın.
 
@@ -122,9 +122,9 @@ Bu konu, Visual Studio IDE temel işlevlerle tanıdık ve bir Windows Forms uygu
 |Düğme|Adı btnFinishUpdates =|
 
 ## <a name="store-the-connection-string"></a>Depolama bağlantı dizesi
- Veritabanına bir bağlantı açmak, uygulama çalıştığında, uygulamanızı bağlantı dizesi erişiminiz olmalıdır. Dize her form üzerinde el ile girmeyi önlemek için dize projenizin App.config dosyasında depolamak ve uygulamanızda herhangi bir formdan yöntemi çağrıldığında dizesi döndüren bir yöntem oluşturun.
+ Veritabanına bir bağlantı açmak, uygulama çalıştığında, uygulamanızı bağlantı dizesi erişiminiz olmalıdır. Dize her form üzerinde el ile girmeyi önlemek için dizesinde depolamak *App.config* dosya projenizde ve uygulamanızda herhangi bir formdan yöntemi çağrıldığında dizesi döndüren bir yöntem oluşturun.
 
- Üzerinde sağ tıklayarak bağlantı dizesini bulabilirsiniz **satış** veri bağlantısında **Sunucu Gezgini** ve seçme **özellikleri**. Bulun **ConnectionString** özelliği, sonra kullanım Ctrl + A, seçmek ve dizesini panoya kopyalamak için Ctrl + C.
+ Üzerinde sağ tıklayarak bağlantı dizesini bulabilirsiniz **satış** veri bağlantısında **Sunucu Gezgini** ve seçme **özellikleri**. Bulun **ConnectionString** özelliği, ardından **Ctrl**+**A**, **Ctrl**+**C**  seçin ve dizesini Pano'ya kopyalayın.
 
 1.  C# içinde kullanıyorsanız, **Çözüm Gezgini**, genişletin **özellikleri** düğümü altında proje ve ardından açık **Settings.settings** dosya.
     Visual Basic içinde kullanıyorsanız, **Çözüm Gezgini**, tıklatın **tüm dosyaları göster**, genişletin **My proje** düğümünü ve ardından açın **Settings.settings** dosya.
@@ -150,7 +150,7 @@ Uygulamayı çalıştırdığınızda Gezinti formu açılır. **Hesap Ekle** d�
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Başlangıç formu form Gezinti yapın
 
-C# içinde kullanıyorsanız, **Çözüm Gezgini**, Program.cs açın ve sonra değiştirmek `Application.Run` bu satırı: `Application.Run(new Navigation());`
+C# içinde kullanıyorsanız, **Çözüm Gezgini**, açık **Program.cs**ve ardından değiştirmek `Application.Run` bu satırı: `Application.Run(new Navigation());`
 
 Visual Basic içinde kullanıyorsanız, **Çözüm Gezgini**, açık **özellikleri** penceresinde, seçin **uygulama** sekmesini tıklatın ve ardından  **SimpleDataApp.Navigation** içinde **başlangıç formu** listesi.
 

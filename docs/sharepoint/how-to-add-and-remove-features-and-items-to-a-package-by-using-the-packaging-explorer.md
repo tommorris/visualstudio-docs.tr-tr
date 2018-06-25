@@ -19,19 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8c838880dd7d7e7adfe080541f1419bd4651ff3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767448"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755618"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Nasıl yapılır: ekleme ve özellikler ve öğeler bir pakete paketleme Gezgini'ni kullanarak kaldırma
   SharePoint öğeleri ve özellikleri dağıtacağınız bir paket yapılandırmak için paketleme Gezgini'ni kullanabilirsiniz. .Wsp dosyanızı içinde SharePoint Proje öğeleri ve özellikleri ayarlayabilirsiniz.  
   
  Alternatif olarak, görüntülemek ve etkinleştirme sırasını değiştirmek için özellikleri yeniden sıralamak için paketleme Tasarımcısı'nı kullanabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: ekleyip özellikler ve öğeler bir paket için paket Tasarımcısını kullanarak](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
-## <a name="opening-the-packaging-explorer"></a>Paketleme Gezgini'ni açma  
+## <a name="open-the-packaging-explorer"></a>Paketleme Gezgini'ni açın  
  Visual Studio çözümünüzü en az bir SharePoint Proje varsa paketleme Gezgini'ni açmak için aşağıdaki yordamı kullanabilirsiniz. Alternatif olarak, paketleme Gezgini'ni otomatik olarak bir özellik veya paket tasarımcısını görüntülediğinizde açılır. Tüm özellik ve paket tasarımcıları kapattıktan sonra da paketleme Gezgini'ni kapatır.  
   
 #### <a name="to-open-the-packaging-explorer"></a>Paketleme Gezgini'ni açmak için  
@@ -58,7 +58,7 @@ ms.locfileid: "34767448"
     > [!NOTE]  
     >  Birden çok SharePoint Proje, çözümünüz varsa, bu yordamı kullanın.  
   
-## <a name="validating-a-feature-or-package"></a>Bir özellik veya paketi doğrulama  
+## <a name="validate-a-feature-or-package"></a>Bir özellik veya paket doğrula  
  SharePoint özellikleri ve paketleri olası sorunları dosyaları doğrulayarak tanımlayabilirsiniz. Uyarıları ve hataları çıktı penceresi ve Hata Listesi penceresi görüntülenir.  
   
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>Bir SharePoint özelliğini veya paket doğrulamak için
@@ -68,5 +68,5 @@ ms.locfileid: "34767448"
 2.  Bir özellik veya paket için bir kısayol menüsünü açın ve ardından **doğrulama**.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

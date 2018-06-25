@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7d3220bc67b764b96033ad516eb857bec6014
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978277"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756912"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach etkinlik Tasarımcısı
 
@@ -35,7 +35,7 @@ Ancak etkinlikler varsa <xref:System.Activities.Statements.ParallelForEach%601.B
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>ParallelForEach kullanarak\<T > etkinlik Tasarımcısı
 
-**ParallelForEach\<T >** etkinlik Tasarımcısı bulunabilir **akış denetimi** kategorisini **araç**, hangi tıklayarakerişildiğinde **Araç kutusu** sekmesi iş akışı Tasarımcısı'nın sol tarafındaki (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X.)
+Erişim **ParallelForEach\<T >** etkinlik Tasarımcısı'nda **akış denetimi** kategorisini **araç**.
 
 **ParallelForEach\<T >** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve etkinlik tasarımcıları normalde yerleştirilir olduğunda, iş akışı Tasarımcısı yüzeyini açın bırakılan için Örneğin, içini bir **dizisi** etkinlik Tasarımcısı. İş Akışı Tasarımcısı bırakarak sonra oluşturduğu bir <xref:System.Activities.Statements.ParallelForEach%601> içeren varsayılan etkinlik bir <xref:System.Activities.Activity.DisplayName%2A> , **ParallelForEach < Int32\>.**
 

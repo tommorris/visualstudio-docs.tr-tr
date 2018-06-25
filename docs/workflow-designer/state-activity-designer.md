@@ -12,20 +12,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 41abc73cce121ae4ebc247e20c0fcd2c60b8ec56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9d4c919347b42229bd0c73164281f3cbf2254a66
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975865"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757723"
 ---
-# <a name="state-activity-designer"></a>Durum etkinlik Tasarımcısı
+# <a name="state-activity-designer"></a>State Etkinlik Tasarımcısı
 
 A <xref:System.Activities.Statements.State> içinde Durum makinesi olabilen içinde bir durumu temsil eder.
 
 ## <a name="using-the-state-activity-designer"></a>Durum etkinlik Tasarımcısı'nı kullanarak
 
-Eklemek için bir <xref:System.Activities.Statements.State> bir iş akışına sürükleyin **durumu** etkinlik Tasarımcısı'ndan **Durum makinesi** bölümünü **araç** ve oturum bırakın bir <xref:System.Activities.Statements.StateMachine> Windows iş akışı Tasarımcısı yüzeyinde etkinliği. A <xref:System.Activities.Statements.State> etkinlik bırakılan üzerine bir <xref:System.Activities.Statements.StateMachine> ve geçişleri eklenen daha sonra; veya bir geçiş olarak oluşturulabilir <xref:System.Activities.Statements.State> etkinlik bırakıldı. Eklemek için bir <xref:System.Activities.Statements.State> etkinliği ve bir geçiş tek bir adımda Sürükle oluşturmak bir **durumu** etkinliğinden **Durum makinesi** bölümünü **araç** ve başka getirin İş Akışı Tasarımcısı'nda durumu. Zaman sürüklenen <xref:System.Activities.Statements.State> başka bir <xref:System.Activities.Statements.State>, dört üçgenler diğer görünür <xref:System.Activities.Statements.State>. Varsa <xref:System.Activities.Statements.State> bırakılır dört üçgenler birini için durum makinesinin eklenir ve bir geçiş kaynak sunucudan oluşturulan <xref:System.Activities.Statements.State> bırakılan hedefe <xref:System.Activities.Statements.State>. Daha fazla bilgi için bkz: [geçiş](../workflow-designer/transition-activity-designer.md).
+Eklemek için bir <xref:System.Activities.Statements.State> bir iş akışına sürükleyin **durumu** etkinlik Tasarımcısı'ndan **Durum makinesi** bölümünü **araç** ve oturum bırakın bir <xref:System.Activities.Statements.StateMachine> etkinliği iş akışı Tasarımcısı yüzeyinde. A <xref:System.Activities.Statements.State> etkinlik bırakılan üzerine bir <xref:System.Activities.Statements.StateMachine> ve geçişleri eklenen daha sonra; veya bir geçiş olarak oluşturulabilir <xref:System.Activities.Statements.State> etkinlik bırakıldı. Eklemek için bir <xref:System.Activities.Statements.State> etkinliği ve bir geçiş tek bir adımda Sürükle oluşturmak bir **durumu** etkinliğinden **Durum makinesi** bölümünü **araç** ve başka getirin İş Akışı Tasarımcısı'nda durumu. Zaman sürüklenen <xref:System.Activities.Statements.State> başka bir <xref:System.Activities.Statements.State>, dört üçgenler diğer görünür <xref:System.Activities.Statements.State>. Varsa <xref:System.Activities.Statements.State> bırakılır dört üçgenler birini için durum makinesinin eklenir ve bir geçiş kaynak sunucudan oluşturulan <xref:System.Activities.Statements.State> bırakılan hedefe <xref:System.Activities.Statements.State>. Daha fazla bilgi için bkz: [geçiş](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>İş Akışı Tasarımcısı'nda durum etkinlik özellikleri
 
@@ -42,4 +42,4 @@ Aşağıdaki tabloda <xref:System.Activities.Statements.State> Tasarımcısı'nd
 
 - [Durum makinesi](../workflow-designer/statemachine-activity-designer.md)
 - [Son durum](../workflow-designer/finalstate-activity-designer.md)
-- [geçiş](../workflow-designer/transition-activity-designer.md)
+- [Geçiş](../workflow-designer/transition-activity-designer.md)

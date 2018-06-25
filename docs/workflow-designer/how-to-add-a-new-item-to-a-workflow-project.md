@@ -1,6 +1,6 @@
 ---
 title: 'İş Akışı Tasarımcısı - nasıl yapılır: bir iş akışı projesine yeni öğe ekleme'
-ms.date: 11/04/2016
+ms.date: 06/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
 ms.technology: vs-workflow-designer
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aa2be7fd8ecccbd8de0aa54c2693dd6b02c7e10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f1202c87986eab6af899a3d4c3b7a5f62e5af6
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971653"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757685"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Nasıl yapılır: bir iş akışı projesine yeni öğe ekleme
 
-Projenize bir iş akışı projesi oluşturduktan sonra iş akışı etkinlikleri, tasarımcıları ve tanıdık diğer Visual Studio öğeleri ekleyebilirsiniz.
+Bir iş akışı projesi oluşturduktan sonra iş akışı etkinlikleri, tasarımcıları ve tanıdık diğer Visual Studio öğeleri projenize ekleyebilirsiniz.
 
-Aşağıdaki tabloda, bir iş akışı projesine eklemek Windows Workflow Foundation (WF) öğeleri listeler.
+Aşağıdaki tabloda, bir iş akışı projesine eklemek Windows Workflow Foundation (WF) öğeleri listeler:
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -32,18 +32,19 @@ Aşağıdaki tabloda, bir iş akışı projesine eklemek Windows Workflow Founda
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Bir iş akışı projesine yeni öğe eklemek için
 
-1.  Üzerinde **proje** menüsünde tıklatın **Yeni Öğe Ekle...** .
+1. Üzerinde **proje** menüsünde, select **Yeni Öğe Ekle**.
 
-     **Yeni Öğe Ekle** iletişim kutusu açılır.
+   **Yeni Öğe Ekle** iletişim kutusu açılır.
 
-2.  İçinde **yüklü şablonlar** bölmesinde, **iş akışı** grubu.
+1. Sol bölmede seçin **iş akışı** kategori ve iş akışı öğesi şablonu seçin.
 
-3.  Dört öğelerden birini seçin. Önceki tabloda kullanılabilir seçenekler listeler.
+   > [!NOTE]
+   > Görmüyorsanız, **iş akışı** kategori, ilk yükleme **Windows Workflow Foundation** Visual Studio 2017'in bileşeni. Ayrıntılı yönergeler için bkz: [Windows Workflow Foundation yüklemek](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-4.  Öğe için uygun bir ad yazın **adı** iletişim kutusunun altındaki kutusunu.
+1. Öğesi için bir ad girin **adı** iletişim kutusunun altındaki kutusunu.
 
-5.  Tıklatın **Ekle** geçerli iş akışı projeye öğe eklemek için.
+1. Seçin **Ekle** projeye öğe eklemek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İş Akışı Projesi Oluşturma](../workflow-designer/creating-a-workflow-project.md)
+- [Bir iş akışı projesi oluşturma](../workflow-designer/creating-a-workflow-project.md)

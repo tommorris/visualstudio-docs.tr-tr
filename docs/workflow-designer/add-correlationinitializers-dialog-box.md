@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc122840607b62a966e5224662ec2d557e5c8ed5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975152"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756950"
 ---
-# <a name="add-correlationinitializers-dialog-box"></a>Ekle CorrelationInitializers iletişim kutusu
+# <a name="add-correlationinitializers-dialog-box"></a>CorrelationInitializer Ekle İletişim Kutusu
 
-**Eklemek bağıntı başlatıcıları** iletişim kutusu Windows iş akışı Tasarımcısı'nda yapılandırmak için kullanılan **CorrelationInitializers** özelliklerini <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, ve <xref:System.ServiceModel.Activities.ReceiveReply> etkinlikler. Bu kutuyu etkinlik tasarımcıları hakkında daha fazla bilgi için bkz: [Gönder](../workflow-designer/send-activity-designer.md), [alma](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), ve [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) Konular.
+**Eklemek bağıntı başlatıcıları** iletişim kutusunda iş akışı Tasarımcısı'nda yapılandırmak için kullanılan **CorrelationInitializers** özelliklerini <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, ve <xref:System.ServiceModel.Activities.ReceiveReply> etkinlikler. Bu kutuyu etkinlik tasarımcıları hakkında daha fazla bilgi için bkz: [Gönder](../workflow-designer/send-activity-designer.md), [alma](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), ve [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) Konular.
 
 Bu iletişim kutusundaki belirlenmiş koleksiyonunda bağıntı başlatıcıları Mesajlaşma etkinlikleri arasındaki aşağıdaki bağıntıları başlatabilirsiniz:
 

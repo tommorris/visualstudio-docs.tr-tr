@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de974ebba6fbe746a4d7acb4c1a20fefa5488a8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970654"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755868"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Nasıl yapılır: içeri aktarmalar Tasarımcısı'nı kullanın
 
@@ -35,7 +35,7 @@ ms.locfileid: "31970654"
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>İçeri aktarılan ad alanları listesine bir ad eklemek için
 
-1.  Bir WCF iş akışı hizmeti uygulaması, iş akışı konsol uygulaması veya etkinlik Kitaplığı projesini Visual Studio 2010 veya rehosted iş akışı uygulaması açın.
+1.  Bir WCF iş akışı hizmeti uygulaması, iş akışı konsol uygulaması veya etkinlik Kitaplığı projesini Visual Studio veya rehosted iş akışı uygulaması açın.
 
 2.  Tıklatın **içeri aktarmalar** ana tuvalin altındaki. İçeri aktarmalar Tasarımcısı görünür.
 

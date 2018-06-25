@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c68a093effe39597fc2802bc54f471dbce8b1bf5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 179718223f181619a3121df8c88132a07e392678
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752339"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757181"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 Eşzamanlılık (<xref:System.Data.DBConcurrencyException>) iki kullanıcı aynı anda aynı verileri bir veritabanındaki değiştirmeye kalkıştığında ortaya çıkar. Bu kılavuzda, catch verilmektedir bir Windows uygulaması oluşturma bir <xref:System.Data.DBConcurrencyException>hataya satırı bulun ve onu nasıl ele alınacağını için bir strateji öğrenin.
@@ -44,16 +44,16 @@ Eşzamanlılık (<xref:System.Data.DBConcurrencyException>) iki kullanıcı ayn�
 
 6.  Farklı bir değerle aynı kaydı değiştirmek, veri kümesi güncelleştirin ve değişiklikleri gerçekleştirilen bir eşzamanlılık hatası sonuçları veritabanına yazma girişimi.
 
-7.  Hata yakalama sonra devam etmek ve veritabanını güncelleştirmek için ya da güncelleştirme iptal etmeye karar vermek kullanıcının kaydı, farklı sürümlerini görüntüler.
+7.  Hata yakalama, devam etmek ve veritabanını güncelleştirmek belirleme arkasından kaydı, farklı sürümlerini görüntülemek veya güncelleştirmeyi iptal eder.
 
 ## <a name="prerequisites"></a>Önkoşullar
 Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullanılır.
 
-1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio Yükleyicisi'nde, SQL Server Express LocalDB parçası olarak yüklenebilir **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
+1.  SQL Server Express LocalDB yoksa, araçtan yüklemek [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. İçinde **Visual Studio yükleyicisi**, bir parçası olarak SQL Server Express LocalDB yükleyebilirsiniz **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
 
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .
+    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu**.
 
        Sorgu Düzenleyicisi penceresini açar.
 
@@ -61,7 +61,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
     3. T-SQL betiği sorgu düzenleyicisine yapıştırın ve ardından **yürütme** düğmesi.
 
-       Kısa bir süre sonra sorgu yürütme tamamlandıktan ve Northwind veritabanı oluşturulur.
+       Kısa bir süre sonra sorgu tamamlanır ve Northwind veritabanı oluşturulur.
 
 > [!NOTE]
 >  İletişim kutuları ve menü komutlarını gördüğünüz açıklanana Yardımı'nda etkin ayarlarınızı veya kullanmakta olduğunuz edition bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
@@ -71,7 +71,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 #### <a name="to-create-a-new-windows-forms-application-project"></a>Yeni bir Windows Forms uygulaması projesi oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
@@ -92,7 +92,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 2.  Üzerinde **bir veri kaynağı türü seç** ekran, select **veritabanı**.
 
-3.  Northwind örnek veritabanı için bir bağlantı kullanılabilir bağlantılar listesinden seçin. Bağlantı bağlantıları listesinde kullanılabilir durumda değilse, seçin **yeni bağlantı**
+3.  Northwind örnek veritabanı için bir bağlantı kullanılabilir bağlantılar listesinden seçin. Bağlantı bağlantıları listesinde kullanılabilir durumda değilse, seçin **yeni bağlantı**.
 
     > [!NOTE]
     >  Bir yerel veritabanı dosyasına bağlanıyorsanız seçin **Hayır** sorulduğunda isterseniz ister dosyayı projenize ekleyin.
@@ -116,14 +116,14 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 4.  Tablonun boş bir form alanının üzerine sürükleyin.
 
-     A <xref:System.Windows.Forms.DataGridView> adlı Denetim `CustomersDataGridView` ve <xref:System.Windows.Forms.BindingNavigator> adlı `CustomersBindingNavigator` bağlı forma eklenen <xref:System.Windows.Forms.BindingSource>. Bu, içinde Aç bağlı `Customers` tablosundaki `NorthwindDataSet`.
+     A <xref:System.Windows.Forms.DataGridView> adlı Denetim `CustomersDataGridView` ve <xref:System.Windows.Forms.BindingNavigator> adlı `CustomersBindingNavigator` bağlı forma eklenen <xref:System.Windows.Forms.BindingSource>. Bu sırayla, bağlı `Customers` tablosundaki `NorthwindDataSet`.
 
 ## <a name="test-the-form"></a>Formun test
  Bu noktaya kadar beklendiği gibi davranır emin olmak için form artık test edebilirsiniz.
 
 #### <a name="to-test-the-form"></a>Formu sınamak için
 
-1.  Seçin **F5** uygulamayı çalıştırmak için
+1.  Seçin **F5** uygulamayı çalıştırın.
 
      Formun görünür bir <xref:System.Windows.Forms.DataGridView> verilerle doldurulur denetim üzerindeki `Customers` tablo.
 
@@ -153,12 +153,12 @@ Kullanıcı daha sonra önerilen sürümüyle veritabanının üzerine yaz veya 
 4.  Güncelleştirmeyi yeniden gönderin veya veri kümesindeki sıfırlayın.
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Eşzamanlılık özel durumu işlemek için kod ekleme
- Bir güncelleştirme gerçekleştirmeyi denedi ve bir özel durumu, genellikle özel durumu tarafından sağlanan bilgileri içeren bir şeyler istersiniz.
+ Bir güncelleştirme gerçekleştirmeyi denedi ve bir özel durum oluşturuldu, genellikle özel durumu tarafından sağlanan bilgileri içeren bir şeyler istersiniz.
 
  Bu bölümde, veritabanını güncelleştirmek için çalışır kodu ekleyin. Herhangi bir de işlemek <xref:System.Data.DBConcurrencyException> oluşturuldu, yanı sıra diğer tüm özel durumlar.
 
 > [!NOTE]
->  `CreateMessage` Ve `ProcessDialogResults` yöntemleri bu kılavuzda daha sonra eklenir.
+>  `CreateMessage` Ve `ProcessDialogResults` yöntemleri, bu kılavuzda daha sonra eklenir.
 
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Hata işleme için eşzamanlılık hatası eklemek için
 
@@ -183,7 +183,7 @@ Kullanıcı daha sonra önerilen sürümüyle veritabanının üzerine yaz veya 
      [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Kullanıcının yanıtı işlemi
- İleti kutusu kullanıcının yanıta işlemek için kod da gerekir. Veritabanı geçerli kayıt önerilen değişiklikle üzerine yaz'yı veya yerel değişiklikler abandon'yı ve veri tablosu veritabanında olan bir kayıtla Yenile seçeneklerdir. Evet, kullanıcı seçerse <xref:System.Data.DataTable.Merge%2A> yöntemi ile çağrılır *preserveChanges* değişkenini `true`. Bu kayıt özgün sürümü artık kaydını veritabanında eşleştiğinden başarılı olması güncelleştirme girişimi neden olur.
+ İleti kutusu kullanıcının yanıta işlemek için kod da gerekir. Veritabanı geçerli kayıt önerilen değişiklikle üzerine yaz'yı veya yerel değişiklikler abandon'yı ve veri tablosu veritabanında olan bir kayıtla Yenile seçeneklerdir. Kullanıcı seçerse **Evet**, <xref:System.Data.DataTable.Merge%2A> yöntemi ile çağrılır *preserveChanges* değişkenini `true`. Bu kayıt özgün sürümü artık kaydını veritabanında eşleştiğinden başarılı olması güncelleştirme girişimi neden olur.
 
 ##### <a name="to-process-the-user-input-from-the-message-box"></a>Kullanıcı işlemek için ileti kutusundan Giriş
 
@@ -193,7 +193,7 @@ Kullanıcı daha sonra önerilen sürümüyle veritabanının üzerine yaz veya 
      [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>Formun test
- Artık formun beklendiği gibi davranır emin olmak için test edebilirsiniz. Bir eşzamanlılık ihlali benzetimini yapmak için NorthwindDataSet doldurduktan sonra veritabanındaki verileri değiştirmeniz gerekir.
+ Artık formun beklendiği gibi davranır emin olmak için test edebilirsiniz. Bir eşzamanlılık ihlali benzetimini yapmak için NorthwindDataSet doldurduktan sonra veritabanındaki verileri değiştirin.
 
 #### <a name="to-test-the-form"></a>Formu sınamak için
 

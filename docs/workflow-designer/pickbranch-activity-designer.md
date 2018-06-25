@@ -12,47 +12,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea106a96a5d6b81ee0b0b898c881eb752582f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0c2a36392f3f83f533c2d072398800e105727b0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976579"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755566"
 ---
-# <a name="pickbranch-activity-designer"></a>PickBranch etkinlik Tasarımcısı
+# <a name="pickbranch-activity-designer"></a>PickBranch Etkinlik Tasarımcısı
 
 <xref:System.Activities.Statements.PickBranch> İçinde yürütme olay tabanlı bir yol sağlayan bir <xref:System.Activities.Statements.Pick> gelen olayı tarafından tetiklenen etkinlik.
 
 ## <a name="pickbranch"></a>PickBranch
 
-<xref:System.Activities.Statements.PickBranch> içinde kapsanan nesneleri <xref:System.Activities.Statements.Pick.Branches%2A> koleksiyonu bir <xref:System.Activities.Statements.Pick> etkinlik. Her <xref:System.Activities.Statements.PickBranch> bir dalındaki bulunan <xref:System.Activities.Statements.Pick> etkinliği ve tetikleyici olarak hizmet veren bazı gelen olayı nedeniyle çalıştırılabilir. Bu şekilde, olay tabanlı denetim akışı modelleme Windows iş akışı Tasarımcısı sağlar. Her <xref:System.Activities.Statements.PickBranch> içeren bir <xref:System.Activities.Statements.PickBranch.Trigger%2A> ve bir <xref:System.Activities.Statements.PickBranch.Action%2A>.
+<xref:System.Activities.Statements.PickBranch> içinde kapsanan nesneleri <xref:System.Activities.Statements.Pick.Branches%2A> koleksiyonu bir <xref:System.Activities.Statements.Pick> etkinlik. Her <xref:System.Activities.Statements.PickBranch> bir dalındaki bulunan <xref:System.Activities.Statements.Pick> etkinliği ve tetikleyici olarak hizmet veren bazı gelen olayı nedeniyle çalıştırılabilir. Bu şekilde, olay tabanlı denetim akışı modelleme iş akışı Tasarımcısı sağlar. Her <xref:System.Activities.Statements.PickBranch> içeren bir <xref:System.Activities.Statements.PickBranch.Trigger%2A> ve bir <xref:System.Activities.Statements.PickBranch.Action%2A>.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Çekme Etkinlik Tasarımcısı kullanma
 
-**PickBranch** Tasarımcısı bulunabilir **akış denetimi** kategorisini **araç**, hangi tıklayarak erişildiğinde **araç** İş Akışı Tasarımcısı sekmesinde (Alternatif olarak, seçin **araç** gelen **Görünüm** menüsü veya CTRL + ALT + X).
+Erişim **PickBranch** içinde Tasarımcı **akış denetimi** kategorisini **araç**.
 
 İki boş <xref:System.Activities.Statements.PickBranch> nesneleriyle adlarını görüntülemek **Branch1** ve **Branch2** öğeleri olarak varsayılan olarak oluşturulan bir <xref:System.Activities.Statements.Pick> etkinlik zaman **çekme** Etkinlik Tasarımcısı başlangıçta açın iş akışı Tasarımcısı bırakılır. Bu ilgili <xref:System.Activities.Statements.PickBranch.DisplayName%2A> özellik değerlerini düzenlenebilir **PickBranch** Tasarımcı üstbilgisi veya içinde **özellikleri** her dal için penceresi.
 
-Eklemek için iki yolla <xref:System.Activities.Statements.PickBranch> koleksiyonunu nesnelere bir <xref:System.Activities.Statements.Pick> nesne: sürükleme ve bırakma **PickBranch** gelen Tasarımcı **araç kutusu** veya bağlam menüsünden kullanarak içinde **çekme** tasarım yüzeyi:
+Eklemek için iki yolla <xref:System.Activities.Statements.PickBranch> koleksiyonunu nesnelere bir <xref:System.Activities.Statements.Pick> nesne: sürükleme ve bırakma **PickBranch** gelen Tasarımcı **araç kutusu**, veya bağlam menüsünden kullanarak içinde **çekme** tasarım yüzeyi:
 
-1.  **PickBranch** Tasarımcısı oluşturur bir <xref:System.Activities.Statements.PickBranch> zaman onu sürüklenen gelen **araç** ve dalları birine bırakılan bir **çekme** etkinlik Tasarımcısı İş Akışı Tasarımcısı yüzeyini. Yeni <xref:System.Activities.Statements.PickBranch> nesneleri içine yerleştirilebilir <xref:System.Activities.Statements.Pick> sola veya sağa var olan Tasarımcı <xref:System.Activities.Statements.PickBranch> koleksiyonda zaten bulunan öğeleri. Sürüklendiğinde bir **PickBranch** üzerine Tasarımcı **çekme** fareyle, tasarımcı **çekme** Tasarımcısı yeri belirtmek için dikey bir gri mavi bant kullanır <xref:System.Activities.Statements.PickBranch> verilen fare yerleştirme için eklenir.
+- **PickBranch** Tasarımcısı oluşturur bir <xref:System.Activities.Statements.PickBranch> zaman onu sürüklenen gelen **araç** ve dalları birine bırakılan bir **çekme** etkinlik Tasarımcısı İş Akışı Tasarımcısı yüzeyini. Yeni <xref:System.Activities.Statements.PickBranch> nesneleri içine yerleştirilebilir <xref:System.Activities.Statements.Pick> sola veya sağa var olan Tasarımcı <xref:System.Activities.Statements.PickBranch> koleksiyonda zaten bulunan öğeleri. Sürüklendiğinde bir **PickBranch** üzerine Tasarımcı **çekme** fareyle, tasarımcı **çekme** Tasarımcısı yeri belirtmek için dikey bir gri mavi bant kullanır <xref:System.Activities.Statements.PickBranch> verilen fare yerleştirme için eklenir.
 
-2.  Sağ tıklayın **çekme** etkinlik Tasarımcısı (ancak değil iç **PickBranch** designer) bir bağlam menüsü almak ve seçmek için **oluşturma şube** yeni eklemek için <xref:System.Activities.Statements.PickBranch>. Dikkat yeni <xref:System.Activities.Statements.PickBranch> var olan sağa eklenen <xref:System.Activities.Statements.PickBranch> nesnelerini **çekme** Tasarımcısı.
+- Sağ **çekme** etkinlik Tasarımcısı (ancak değil iç **PickBranch** Tasarımcısı) bir bağlam menüsü almak ve seçmek için **dal oluşturma** yeni eklemek için <xref:System.Activities.Statements.PickBranch>. Dikkat yeni <xref:System.Activities.Statements.PickBranch> var olan sağa eklenen <xref:System.Activities.Statements.PickBranch> nesnelerini **çekme** Tasarımcısı.
 
- **PickBranch** Tasarımcısı ortaya çıkarmak için Genişletilebilir **tetikleyici** ve **eylem** kutular veya kendi üstbilgileri sağ tarafındaki çift belirliyorsanız düzeltme işaretleri tıklayarak daraltılmış. Düzen <xref:System.Activities.Statements.PickBranch.Trigger%2A> ve <xref:System.Activities.Statements.PickBranch.Action%2A> her <xref:System.Activities.Statements.PickBranch> etkinliklerine bırakarak tarafından **tetikleyici** ve **eylem** kendi tasarımcıları kutuları.
+**PickBranch** Tasarımcısı ortaya çıkarmak için Genişletilebilir **tetikleyici** ve **eylem** kutular veya kendi üstbilgileri sağ tarafındaki çift belirliyorsanız düzeltme işaretleri tıklayarak daraltılmış. Düzen <xref:System.Activities.Statements.PickBranch.Trigger%2A> ve <xref:System.Activities.Statements.PickBranch.Action%2A> her <xref:System.Activities.Statements.PickBranch> etkinliklerine bırakarak tarafından **tetikleyici** ve **eylem** kendi tasarımcıları kutuları.
 
- <xref:System.Activities.Statements.PickBranch> Nesnelerini <xref:System.Activities.Statements.Pick.Branches%2A> koleksiyonu bir <xref:System.Activities.Statements.Pick> nesne, bunları içinde yeni bir konuma bırakarak kaldırılmasında **çekme** Tasarımcısı. **Çekme** Tasarımcısı yeri belirtmek için dikey bir gri mavi bant kullanır <xref:System.Activities.Statements.PickBranch> verilen fare yerleştirme için eklenir.
+<xref:System.Activities.Statements.PickBranch> Nesnelerini <xref:System.Activities.Statements.Pick.Branches%2A> koleksiyonu bir <xref:System.Activities.Statements.Pick> nesne, bunları içinde yeni bir konuma bırakarak kaldırılmasında **çekme** Tasarımcısı. **Çekme** Tasarımcısı yeri belirtmek için dikey bir gri mavi bant kullanır <xref:System.Activities.Statements.PickBranch> verilen fare yerleştirme için eklenir.
 
- Silmek için iki yolla bir <xref:System.Activities.Statements.PickBranch>:
+Silmek için iki yolla bir <xref:System.Activities.Statements.PickBranch>:
 
-1.  Seçin **PickBranch** Tasarımcısı ve silin.
+- Seçin **PickBranch** Tasarımcısı ve silin.
+- Seçin **PickBranch** bağlam menüsü almak ve seçmek için tasarımcı, sağ **silmek**.
 
-2.  Seçin **PickBranch** bağlam menüsü almak ve seçmek için tasarımcı, sağ **silmek**.
-
- Seçtiğinizden emin olun **PickBranch** Tasarımcı içinde etkinliklerden birini seçerek olarak kendi **tetikleyici** veya **eylem** kutuları yanlışlıkla siler bu etkinlikler ve değil <xref:System.Activities.Statements.PickBranch> nesnesi.
+Seçtiğinizden emin olun **PickBranch** Tasarımcı içinde etkinliklerden birini seçerek olarak kendi **tetikleyici** veya **eylem** kutuları yanlışlıkla siler bu etkinlikler ve değil <xref:System.Activities.Statements.PickBranch> nesnesi.
 
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>İş Akışı Tasarımcısı'nda PickBranch özellikleri
- Aşağıdaki tabloda en kullanışlı gösterilmektedir <xref:System.Activities.Statements.PickBranch> özellikleri ve iş akışı Tasarımcısı'nda kullanmayı açıklar.
+
+Aşağıdaki tabloda en kullanışlı gösterilmektedir <xref:System.Activities.Statements.PickBranch> özellikleri ve iş akışı Tasarımcısı'nda kullanmayı açıklar.
 
 |Özellik adı|Gerekli|Kullanım|
 |-------------------|--------------|-----------|

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b94656c7242c4bc6bc1dd1430230dac62a5322f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971878"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755528"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Nasıl yapılır: bağımsız değişken Tasarımcısı'nı kullanın
 
@@ -26,7 +26,7 @@ ms.locfileid: "31971878"
 
 ## <a name="to-create-a-new-argument"></a>Yeni bir değişken oluşturmak için
 
-1.  Bir iş akışı veya etkinlik çözüm Visual Studio 2010'da açın.
+1.  Bir iş akışı veya etkinlik çözümü Visual Studio'da açın.
 
 2.  Bağımsız değişkenler Tasarımcısı'nı tıklatarak **bağımsız değişkenleri** tasarım tuvale sol alt köşesindeki düğmesi. Bağımsız değişkenler Tasarımcısı görünür.
 

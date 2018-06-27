@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3e9fd68630b9477be69bfad7c9d4e3bad08dd22a
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750499"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947069"
 ---
-# <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Öğreticisi Adım 6: yoklamalar Django Web projesi şablonu kullanın
+# <a name="step-6-use-the-polls-django-web-project-template"></a>6. adım: yoklamalar Django Web projesi şablonu kullanın
 
 **Önceki adımda: [Django kullanıcıların kimlik doğrulaması](learn-django-in-visual-studio-step-05-django-authentication.md)**
 

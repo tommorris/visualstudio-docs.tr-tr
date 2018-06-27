@@ -1,7 +1,7 @@
 ---
 title: SQL Server R ile tümleştirme
 description: Visual Studio oluşturma ve çalıştırma R gelen SQL sorguları ve saklı yordamlar ile çalışmak R özelliği destekler.
-ms.date: 01/24/2018
+ms.date: 06/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 63196bcf7188ffea838390cbb2c4133aece95313
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3b9fa1f675754257a2278c7282c45d9816c034cd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238383"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946919"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server ve R ile çalışma
 
@@ -75,13 +75,13 @@ RTVS, aşağıdaki bölümlerde açıklandığı gibi tek bir SQL deyimi içinde
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Yazma ve SQL saklı yordamı test etme
 
-Yeni bir SQL saklı yordamı eklemek için projenize sağ tıklayın, seçin **Ekle** > **yeni öğe**seçin **SQL saklı yordamı r** şablonları listesinden bir ad verin (*StoredProcedure.R* Bu örnekte) ve seçin **Tamam**.
+Yeni bir SQL saklı yordamı eklemek için projenize sağ tıklayın, seçin **Ekle** > **yeni öğe**seçin **SQL saklı yordamı r** şablonları listesinden bir ad verin ve seçin **Tamam**. Varsayılan dosya adı *SqlSProc.R*; okuma, filename kolaylığı için *StoredProcedure.R* bu bölümün geri kalanında kullanılır. Birden çok saklı yordamlar varsa, her dosyanın benzersiz bir dosya adı olmalıdır.
 
 RTVS saklı yordamı için üç dosyaları oluşturur: bir *. R* R kodunuz için dosyayı bir *. Query.SQL* SQL kod dosyası ve bir *. Template.SQL* iki birleştirir dosya. Bunlar alt olarak iki görünür Çözüm Gezgini'nde ikinci *. R* dosyası:
 
 ![Çözüm Gezgini SQL saklı yordamı r görünümünü genişletilmiş](media/sql-solution-explorer-expanded.png)
 
-*StoredProcedure.R* burada R kodu yazma (Bu örnekte) değil. Varsayılan içeriği şunlardır:
+*. R* dosyası (*StoredProcedure.R* Bu örnekte) burada R kodu yazdığınız şeydir. Varsayılan içeriği şunlardır:
 
 ```R
 # @InputDataSet: input data frame, result of SQL query execution
@@ -103,9 +103,9 @@ Kısaca, kod olarak adlandırılan bir R dataframe alır `InputDataSet` ve onun 
 
 Diğer oluşturulan kod (açıklamaları) kullanan bir küçük test komut dosyası sağlar [RODBC paket](https://cran.r-project.org/web/packages/RODBC/index.html) SQL Server için bir SQL deyimi iletmek için çalıştırın ve bir R dataframe ayarlamak sonucu almak. SQL Server'dan alma etkileşimli olarak R kodunuzu sonucu karşı yazmak için bu test kod kümesi açıklamadan çıkarın.
 
-*StoredProcedure.Query.sql* burada yazmak ve sınamak için veri üreten SQL sorgu `InputDataSet`. Bu *.sql* Dosyası Düzenleyicisi tüm olağan Transact-SQL özellikleri sağlar.
+*. Query.SQL* dosyası (*StoredProcedure.Query.sql* Bu örnekte), yazma ve verileri üreten SQL sorgu test yerdir `InputDataSet`. Bu *.sql* Dosyası Düzenleyicisi tüm olağan Transact-SQL özellikleri sağlar.
 
-İle SQL kodunuzu memnun kaldıysanız sonra R kodunuzda ile tümleştirmenize *StoredProcedure.R* sürükleyerek *.sql* açık Düzenleyicisi üzerine dosya *. R* dosya. Aşağıdaki görüntüde *StoredProcedure.Query.sql* noktasına virgülle sonra sürüklenen `sqlQuery(channel, )`:
+İle SQL kodunuzu memnun kaldıysanız sonra sürükleyerek R kodu ile tümleştirmek *.sql* açık Düzenleyicisi üzerine dosya *. R* dosya. Aşağıdaki görüntüde *StoredProcedure.Query.sql* noktaya sürüklenip *StoredProcedure.R* virgülle sonra `sqlQuery(channel, )`:
 
 ![R dize değişkeni SQL dosyaya okuma](media/sql-reference-sql-file-from-r.png)
 
@@ -113,7 +113,7 @@ Gördüğünüz gibi bu basit adımı açmak için R kodu otomatik olarak oluşt
 
 Etkileşimli olarak işleyen yazma R kodu artık `InputDataSet` dataframe istediğiniz gibi. R Kod düzenleyicisinde seçin yalnızca ve göndermeden unutmayın [etkileşimli pencere](interactive-repl-for-r-in-visual-studio.md) basarak **Ctrl**+**Enter**.
 
-*StoredProcedure.Template.sql*, son olarak, SQL saklı yordamı oluşturmak için şablon içerir:
+*. Template.SQL* dosyası (*StoredProcedure.Template.sql* Bu örnekte), son olarak, SQL saklı yordamı oluşturmak için şablon içerir:
 
 ```sql
 CREATE PROCEDURE [StoredProcedure]
@@ -127,8 +127,8 @@ EXEC sp_execute_external_script @language = N'R'
 END;
 ```
 
-- `_RCODE_` Yer tutucu içeriğine göre değiştirilir *StoredProcedure.R*.
-- `_INPUT_QUERY_` Yer tutucu içeriğine göre değiştirilir *StoredProcedure.Query.sql*.
+- `_RCODE_` Yer tutucu içeriğine göre değiştirilir *. R* dosyası (örneğin, *StoredProcedure.R*).
+- `_INPUT_QUERY_` Yer tutucu içeriğine göre değiştirilir *. Query.SQL* dosyası (örneğin, *StoredProcedure.Query.sql*).
 - Düzen `WITH RESULT SETS` bir saklı yordamdan döndürülen sonuç şeması açıklamak için yan tümcesi. Özellikle sütunlarından tanımlamak `OutputDataSet` saklı yordamı çağırana döndürmek istediğiniz dataframe.
 
 Örneğin, aşağıdaki sorgu için:

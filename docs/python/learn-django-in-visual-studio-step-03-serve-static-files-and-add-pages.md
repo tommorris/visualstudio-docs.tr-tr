@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a6eb2d2c690642a12be6ced7da29b0e85bdbb046
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750340"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947082"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Öğreticisi 3. adım: hizmet statik dosyalar, sayfa ekleyin ve şablon devralma kullanın
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfa ekleyin ve şablon devralma kullanın
 
 **Önceki adımda: [görünümlerle bir Django uygulaması oluşturma ve sayfa şablonları](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -277,7 +277,7 @@ Aşağıdaki adımlarda, devralma gösterilmektedir:
 > [!div class="nextstepaction"]
 > [Tam Django Web projesi şablonunu kullanın](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - [İlk Django uygulamanız yazma, 3 (görünümler) Kısım](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Daha fazla yeteneklerini denetim akışı gibi Django şablonları için bkz: [Django şablonu dili](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

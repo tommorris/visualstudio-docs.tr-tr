@@ -1,7 +1,7 @@
 ---
 title: IPython REPL (etkileşimli pencere)
 description: Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özelliklere sahip bir kullanıcı dostu etkileşimli geliştirme ortamı kullanarak.
-ms.date: 07/13/2017
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1581c9cd7cb317a50932e85bb46159c508d8522
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e35e8be8434adcf26f29f01c41720455f33232dd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582533"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946878"
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Etkileşimli pencerede IPython kullanma
 
@@ -27,9 +27,9 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
 > [!Note]
 > IronPython IPython, siz bunu etkileşimli seçenekleri formdaki seçebilirsiniz olgusuna karşın desteklemez. Daha fazla bilgi için bkz: [özellik isteği](https://github.com/Microsoft/PTVS/issues/84).
 
-1. Açık Visual Studio, Python ortamları penceresine anahtarı (**Görünüm > Diğer Pencereler > Python ortamları**) ve IPython başlatıldığında görünen Python ortamı seçin.
+1. Açık Visual Studio, Python ortamları penceresine anahtarı (**Görünüm > Diğer Pencereler > Python ortamları**) ve bir Anaconda ortamını seçin.
 
-1. Bakmak **paketleri** (veya **PIP**) sekmesini ve emin `IPython` ve `matplotlib` listelenir. Yoksa, bunları burada yükleyin.
+1. İncelemek **paketleri (Conda)** sekmesinde (olarak görünür **PIP** veya **paketleri**) emin olmak bu ortam için `IPython` ve `matplotlib` listelenir. Yoksa, bunları burada yükleyin. (Bkz [Python ortamları Windows - paketleri sekmesi](python-environments-window-tab-reference.md).)
 
 1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam** ).
 
@@ -49,7 +49,7 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
 
     ![Satır içi grafik etkileşimli penceresinde](media/ipython-repl-04.png)
 
-1. Kod Düzenleyicisi'nde yazabilirsiniz REPL içinde yazmak yerine seçin, sağ tıklatın ve seçin **çok etkileşimli Gönder** komutu (veya Ctrl-Enter tuşuna basın). Aşağıdaki kod düzenleyicisinde Ctrl-A, ardından etkileşimli penceresine gönderen ile seçerek yeni bir dosyaya yapıştırmayı deneyin. (Visual Studio Ara ya da kısmi grafikleri vermiş önlemek için bir birim olarak kod gönderir unutmayın. Ayrıca, seçili için farklı bir ortam açık bir Python projeniz yoksa, Visual Studio ne olursa olsun ortamı varsayılan olarak seçilen için etkileşimli bir pencere açılır unutmayın **Python ortamları** penceresi.)
+1. Kod Düzenleyicisi'nde yazabilirsiniz REPL içinde yazmak yerine seçin, sağ tıklatın ve seçin **çok etkileşimli Gönder** komutu (veya Ctrl + Enter tuşuna basın). Aşağıdaki kod düzenleyicisinde Ctrl-A, ardından etkileşimli penceresine gönderen ile seçerek yeni bir dosyaya yapıştırmayı deneyin. (Visual Studio kodu Ara ya da kısmi grafikleri vermiş önlemek için bir birim olarak gönderir. Ve seçili için farklı bir ortam açık bir Python projeniz yoksa, Visual Studio ne olursa olsun ortamı varsayılan olarak seçilen için etkileşimli bir pencere açılır **Python ortamları** penceresi.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D

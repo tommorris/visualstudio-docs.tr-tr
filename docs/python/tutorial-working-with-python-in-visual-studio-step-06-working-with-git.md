@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c428082a061224f5bb8f3703d6ab4bed2b33aa76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7fb05e6032e985d2e282b089ba5afc93421f4d82
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965026"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946781"
 ---
-# <a name="step-6-working-with-git"></a>6. adım: Git ile çalışma
+# <a name="step-6-work-with-git"></a>6. adım: Git ile çalışma
 
 **Önceki adımda: [paketlerinin yüklenmesi ve Python ortamınızı yönetme](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
@@ -52,7 +52,7 @@ Bu makale, var olan bir proje için yerel bir Git deposu oluşturma ve kendiniz 
 
 1. Yerel deposu kullanırken, yapılan değişiklikleri doğrudan depoya gidin. Uzak bir depo bağlıysanız, aşağı açılan üstbilgisinde seçin **Takım Gezgini**, seçin **eşitleme** geçmek için **eşitleme** bölümünde ve birlikte çalışma çekme ve fetch komutları sunulan vardır.
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 Uzak bir Git deposundan projesi oluşturma kısa için bkz [hızlı başlangıç: Visual Studio'da Python kodu bir depoyu kopyalayın](quickstart-03-python-in-visual-studio-project-from-repository.md).
 

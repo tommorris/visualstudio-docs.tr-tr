@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 7e2f9f4635a1effc7ad46d1d842f22b3943a2b16
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031988"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947020"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>4. adım: hata ayıklayıcıda kodu çalıştırma
+# <a name="step-4-run-code-in-the-debugger"></a>Adım 4: hata ayıklayıcıda kodu çalıştırma
 
 **Önceki adımda: [etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ Bir zengin düzenleme deneyimi ve etkileşimli pencere sağlama projeleri yönet
 > [!div class="nextstepaction"]
 > [Python ortamınızda paketleri yükleniyor](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>Daha derin gitme
+### <a name="go-deeper"></a>Derinlemesine
 
 - [Hata Ayıklama](debugging-python-in-visual-studio.md)
 - [Visual Studio'da hata ayıklamayı](../debugger/debugger-feature-tour.md) Visual Studio tam belgelerine hata ayıklama özellikleri sağlar.

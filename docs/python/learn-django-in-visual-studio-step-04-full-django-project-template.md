@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8b9d14a9ba3c6428b4ec997d91addfaea30c0baf
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750369"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947511"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Öğreticisi 4. adım: tam Django Web projesi şablonunu kullanın
+# <a name="step-4-use-the-full-django-web-project-template"></a>4. adım: tam Django Web projesi şablonunu kullanma
 
 **Önceki adımda: [hizmet statik dosyalar, sayfa ekleyin ve şablon devralma kullanın](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ Geniş düzeyde "Django Web projesi" şablonu aşağıdaki yapısını oluşturu
   - `requirements.txt` Django bir bağımlılığı içeren 1.x.
   - `readme.html`, Visual Studio projesi oluşturduktan sonra görüntülenen bir dosya. Önceki bölümde belirtildiği gibi uygulama için süper kullanıcı (Yönetici) hesabı oluşturmak için buradaki yönergeleri izleyin.
 - `app` Klasör görünümleri, modelleri, testleri, formlar, şablonları ve statik dosyaları (bkz. adım 4-2) de dahil olmak üzere tüm uygulama dosyaları içerir. Genellikle daha farklı bir uygulama adı kullanmak üzere bu klasörünü yeniden adlandırın.
-- `DjangoWeb` (Django Proje) klasör tipik Django proje dosyalarını içerir: `__init.py__`, `settings.py`, `urls.py`, ve `wsgi.py`. Proje şablonunu kullanarak `settings.py` uygulama ve veritabanı dosyası için zaten yapılandırıldı ve `urls.py` oturum açma formu dahil olmak üzere tüm uygulama sayfaları yolları ile zaten yapılandırılmış.
+- `DjangoWeb` (Django Proje) klasör tipik Django proje dosyalarını içerir: `__init__.py`, `settings.py`, `urls.py`, ve `wsgi.py`. Proje şablonunu kullanarak `settings.py` uygulama ve veritabanı dosyası için zaten yapılandırıldı ve `urls.py` oturum açma formu dahil olmak üzere tüm uygulama sayfaları yolları ile zaten yapılandırılmış.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Soru: bir sanal ortam Visual Studio projeleri arasında paylaşmak mümkün mü?
 
@@ -215,7 +215,7 @@ Yanıt: Normal ifadede sonunda '$' eksikliği birçok sürümlerinde proje şabl
 > [!div class="nextstepaction"]
 > [Django kullanıcıların kimlik doğrulaması](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - [İlk Django uygulamanız yazma, Bölüm 4 - formlar ve genel görünümler](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Öğretici kaynak kodu github'da: [Microsoft/python-örnek-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8ff4d56673f4de12189111b47e6a38f4b6a60dab
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750304"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947134"
 ---
-# <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğreticisi 1. adım: Visual Studio Django web framework kullanmaya başlama
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğretici: Visual Studio'da Django web çerçevesi ile çalışmaya başlama
 
 [Django](https://www.djangoproject.com/) hızlı, güvenli ve ölçeklenebilir bir web geliştirme için tasarlanmış bir çerçevedir üst düzey Python. Bu öğreticide Visual Studio, Django tabanlı web uygulamaları oluşturulmasını kolaylaştırmak için sağlar proje şablonları bağlamında Django framework araştırır.
 
@@ -207,7 +207,7 @@ Bu noktada, temel Django proje uygulamalardan içermiyor. Sonraki adımda bir uy
 > [!div class="nextstepaction"]
 > [Görünümleri ve sayfa şablonları ile Django uygulaması oluşturma](learn-django-in-visual-studio-step-02-create-an-app.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - Django proje kodunu: [ilk Django uygulamanız yazma, bölüm 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Yönetim yardımcı programı: [django yönetim ve manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)

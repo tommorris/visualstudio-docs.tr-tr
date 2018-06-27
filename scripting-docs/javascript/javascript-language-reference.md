@@ -22,17 +22,20 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f1b67e86120ae4604d12b53acdafd3e7f5f3b56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 981e04d94ac803c76705cd7014f5d29721188512
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24789086"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962664"
 ---
 # <a name="javascript-language-reference"></a>JavaScript Dil Başvurusu
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]web sayfaları ve diğer uygulamalarda katıştırılmış bir komut dosyası dilidir.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] web sayfaları ve diğer uygulamalarda katıştırılmış bir komut dosyası dilidir.  
   
  Bu belge, ECMAScript Language Specification 5th Edition ile uyumlu olan JavaScript'in Microsoft uygulamasını açıklar. ECMA Standartlarına dahil olmayan ek özellikler de sağlar.  
+
+> [!NOTE]
+> Biz yapmak için topluluk genelinde çaba katılmış [MDN web belgeleri](https://developer.mozilla.org/en-US/) tüm (500 + sayfaları) Microsoft'un JavaScript API başvuru docs.microsoft.com kendi MDN olarak yönlendirerek Web'in her şeye, ilk geliştirme kaynağı ortaklarınıza. Ayrıntılar için bu bkz [duyuru](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
   
  Kullanabileceğiniz [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] tarayıcı uygulamalarında HTML, CSS ve HTML ve tarayıcı nesnelerini temsil eder belge nesne modeli'nı (DOM) birlikte kod.  
   
@@ -53,21 +56,6 @@ ms.locfileid: "24789086"
 -   Windows çalışma zamanı API JavaScript ile kullanma hakkında daha fazla bilgi için bkz: [JavaScript'te Windows çalışma zamanı kullanarak](../jswinrt/using-the-windows-runtime-in-javascript.md).  
   
  Visual Studio'daki JavaScript düzenleyicisi IntelliSense desteği sunar. Daha fazla bilgi için bkz: [JavaScript IntelliSense](http://go.microsoft.com/fwlink/p/?LinkId=256499).  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- Aşağıdaki bölümler JavaScript hakkında daha çok bilgi sağlar.  
-  
- [JavaScript'te yenilikler nelerdir?](../javascript/what-s-new-in-javascript.md)  
- JavaScript'teki yeni özellikleri açıklar.  
-  
- [JavaScript temelleri](../javascript/javascript-fundamentals.md)  
- JavaScript'teki temel yapılara bir giriş sağlar.  
-  
- [Gelişmiş JavaScript](../javascript/advanced/advanced-javascript.md)  
- Özyineleme, diziler, sorun giderme gibi gelişmiş JavaScript işlevselliğini açıklar.  
-  
- [JavaScript başvurusu](../javascript/reference/javascript-reference.md)  
- JavaScript dilinin öğelerini açıklar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Belge nesne modeli](http://go.microsoft.com/fwlink/?LinkId=148095)

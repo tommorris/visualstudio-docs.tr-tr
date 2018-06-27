@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2ed8b99f51cbcce5445ef0c6f27f26ddfe5400f4
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032196"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947095"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -109,7 +109,7 @@ Bağlantılı dosyaları aşağıdaki koşullardan herhangi biri altında göz a
 - Bağlı dosya bağlantı meta verileri içeren ve bağlantı yolu göreli bir yol proje hiyerarşisi dışında olan
 - Bağlantı yolu kökü belirtilmiş
 
-### <a name="working-with-linked-files"></a>Bağlantılı dosyalarıyla çalışma
+### <a name="work-with-linked-files"></a>Bağlantılı dosyalarıyla çalışma
 
 Varolan bir bağlantı olarak eklemek için proje dosyası ekleyin, ardından seçin istediğiniz yere klasörü sağ tıklatın **Ekle > öğesi çıkılıyor...** . Görüntülenen iletişim kutusunda, bir dosya seçin ve Seç **bağlantı olarak Ekle** açılan gelen **Ekle** düğmesi. Koşuluyla çakışan dosya yok, bu komut seçilen klasörde bir bağlantı oluşturur. Ancak, bağlantı zaten aynı ada sahip bir dosya veya bu dosyaya bir bağlantı projede zaten eklenmez.
 

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 6624e6730d141421dc4373f8ee9cef91edc9efd6
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031556"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947056"
 ---
-# <a name="step-2-writing-and-running-code"></a>2. adım: Yazma ve kodu çalıştırma
+# <a name="step-2-write-and-run-code"></a>2. adım: Yazma ve kodu çalıştırma
 
 **Önceki adımda: [yeni bir Python projesi oluşturma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
@@ -91,7 +91,7 @@ ms.locfileid: "32031556"
 > [!div class="nextstepaction"]
 > [Etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - [Kodu düzenleme](editing-python-code-in-visual-studio.md)
 - [Kodu biçimlendirme](formatting-python-code.md)

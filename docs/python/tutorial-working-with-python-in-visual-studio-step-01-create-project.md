@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2eadee7562f8dd08de55f333ade005ceaf766a66
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031715"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946863"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Visual Studio'da Python ile çalışma
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Öğretici: Visual Studio'da Python ile çalışma
 
 Python güvenilir, esnek, kolay öğrenmek için tüm işletim sistemlerinde kullanımına yönelik ücretsiz ve sağlam Geliştirici topluluğu ve pek çok ücretsiz kitaplıkları tarafından desteklenen popüler bir programlama dilidir. Dil geliştirme, web uygulamaları, web Hizmetleri, Masaüstü uygulamaları, komut dosyası ve bilimsel hesaplama dahil olmak üzere tüm yolla destekler ve birçok üniversiteler, bilimcilerine, rasgele geliştiriciler ve profesyonel geliştiricilere benzer tarafından kullanılır.
 
@@ -73,7 +73,7 @@ Bu öğreticide tek ve boş kod dosyasını içeren basit bir proje ile başlar.
 > [!div class="nextstepaction"]
 > [Yazma ve kodu çalıştırma](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - [Visual Studio'da Python projeleri](managing-python-projects-in-visual-studio.md).
 - [Python.org Python dil hakkında bilgi edinin](https://www.python.org)

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103144"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946981"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>Öğreticisi 5. adım: Django kullanıcıların kimlik doğrulaması
+# <a name="step-5-authenticate-users-in-django"></a>5. adım: Django kullanıcıların kimlik doğrulaması
 
 **Önceki adımda: [tam Django Web projesi şablonunu kullanın](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -33,7 +33,7 @@ Bu adımda, öğrenin:
 
 Aşağıdaki adımları kimlik doğrulaması akışı uygulamanız ve söz konusu proje bölümlerini açıklamaktadır:
 
-1. ' Ndaki yönergeleri zaten ardından varsa `readme.html` süper kullanıcı (Yönetici) hesabı oluşturmak için bunu şimdi yapın proje kök dosyasında.
+1. ' Ndaki yönergeleri henüz uyguladıysanız, `readme.html` süper kullanıcı (Yönetici) hesabı oluşturmak için bunu şimdi yapın proje kök dosyasında.
 
 1. Visual Studio kullanarak uygulamayı çalıştırın **hata ayıklama** > **hata ayıklamayı Başlat** (F5). Uygulama tarayıcıda görüntülendiğinde, gözlemlemek **oturum** sağ üst tarafındaki gezinme çubuğu üzerinde görüntülenir.
 
@@ -62,7 +62,7 @@ Aşağıdaki adımları kimlik doğrulaması akışı uygulamanız ve söz konus
     {% endif %}
     ```
 
-1. Hiçbir kullanıcı uygulamayı ilk kez başlattığınızda doğrulandığı yalnızca "Oturum" bağlantı "login" göreli yolu için bu şablonu kodu oluşturur. Belirtilmiş `urls.py` önceki bölümde gösterildiği gibi bu rota eşlenmiş `django.contrib.auth.views.login` belirtilen aşağıdaki veri görünümü:
+1. Hiçbir kullanıcı uygulamayı ilk kez başlattığınızda doğrulandığı yalnızca "Oturum" bağlantı "login" göreli yolu için bu şablonu kodu oluşturur. Belirtilmiş `urls.py` (gösterildiği önceki bölümde), bu rota eşlenmiş `django.contrib.auth.views.login` görünümü. Bu görünüm aşağıdaki veri alır:
 
     ```python
     {
@@ -95,7 +95,7 @@ Aşağıdaki adımları kimlik doğrulaması akışı uygulamanız ve söz konus
                                        'placeholder':'Password'}))
     ```
 
-    Gördüğünüz gibi bu formu sınıfın türetildiği `AuthenticationForm` ve özellikle yer tutucu metin eklemek için kullanıcı adı ve parola alanları geçersiz kılar. Visual Studio şablon, büyük olasılıkla parola gücünü doğrulama ekleme gibi form özelleştirme istersiniz, varsayım açık bu kodu içerir.
+    Gördüğünüz gibi bu formu sınıfın türetildiği `AuthenticationForm` ve özellikle yer tutucu metin eklemek için kullanıcı adı ve parola alanları geçersiz kılar. Visual Studio şablon bu büyük olasılıkla parola gücünü doğrulama ekleme gibi formun özelleştirmek istediğiniz varsayımına açık kodunu içerir.
 
 1. Ne zaman gezinmenizi oturum açma sayfasına daha sonra uygulama işler `login.html` şablonu. Değişkenleri `{{ form.username }}` ve `{{ form.password }}` işleme `CharField` gelen forms `BootstrapAuthenticationForm`. Bu hizmetleri eklemek isterseniz, doğrulama hataları ve sosyal oturum açmalar için hazır bir öğesi göstermek için yerleşik bir bölümü yoktur.
 
@@ -144,13 +144,13 @@ Aşağıdaki adımları kimlik doğrulaması akışı uygulamanız ve söz konus
     {% endblock %}
     ```
 
-1. Formu gönderdiğinde, Django (Süper kullanıcı kimlik bilgileri gibi) sağladığınız kimlik bilgilerini doğrulamak çalışır. Kimlik doğrulama başarısız olursa, aynı sayfa üzerinde kalır ancak `form.errors` true olarak ayarlanmış. Kimlik doğrulaması başarılı olursa, Django "İleri" alanında göreli URL gider `<input type="hidden" name="next" value="/" />`, bu durumda olduğu giriş sayfası (`/`).
+1. Formu gönderdiğinde, Django (örneğin, süper kullanıcı kimlik bilgilerini) kimlik bilgilerinizi doğrulamak çalışır. Kimlik doğrulama başarısız olursa, geçerli sayfada kalmak ancak `form.errors` true olarak ayarlanmış. Kimlik doğrulaması başarılı olursa, Django "İleri" alanında göreli URL gider `<input type="hidden" name="next" value="/" />`, bu durumda olduğu giriş sayfası (`/`).
 
 1. Şimdi, ne zaman giriş sayfası işlenen yeniden `user.is_authenticated` özelliği true ise ne zaman `loginpartial.html` şablonu işlenir. Sonuç olarak, bir "Hello (kullanıcı adı)" iletisi ve "Oturumunu" bakın. Kullanabileceğiniz `user.is_authenticated` kimlik doğrulaması denetlemek için uygulamanın diğer bölümlerinde.
 
     ![Django Web projesi uygulama sayfasında Hello ileti ve oturum kapatma denetimi](media/django/step05-logoff-control.png)
 
-1. Kimliği doğrulanmış kullanıcının belirli kaynaklara erişmek için yetkili olup olmadığını denetlemek için veritabanınızın, kullanıcı için kullanıcıya özgü izinleri almak gerekir. Daha fazla ayrıntı için bkz: [Django kimlik doğrulama sistemini kullanarak](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django belgeleri).
+1. Kimliği doğrulanmış kullanıcının belirli kaynaklara erişmek için yetkili olup olmadığını denetlemek için veritabanından kullanıcı özel izinleri gerekir. Daha fazla bilgi için bkz: [Django kimlik doğrulama sistemini kullanarak](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django belgeleri).
 
 1. Süper kullanıcı veya yönetici, özellikle, "/admin/" göreli URL'ler kullanarak yerleşik Django yönetici arabirimleri erişim yetkisi ve "/ admin/doc /". Bu arabirimleri etkinleştirmek için Django projenin açın `urls.py` ve açıklamaları aşağıdaki girişleri kaldırın:
 
@@ -200,14 +200,14 @@ Aşağıdaki adımları kimlik doğrulaması akışı uygulamanız ve söz konus
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Soru: amacı nedir {% crsf_token %} etiketi, görünür \<form\> öğeleri?
 
-Yanıt: `{% crsf_token %}` etiketi içeren Django'nın yerleşik [siteler arası istek sahtekarlığı (crsf) koruma](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django belgeleri). POST, PUT ya da DELETE istek yöntemleri, form ve şablon işleme işlevi gibi içerir herhangi bir öğeye bu etiketi ekleyin (`render`) gerekli koruma ekler.
+Yanıt: `{% crsf_token %}` etiketi içeren Django'nın yerleşik [siteler arası istek sahtekarlığı (crsf) koruma](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django belgeleri). Genellikle, POST, PUT veya silme isteği gibi yöntemleri bir form içeren herhangi bir öğeye bu etiketi ekleyin. Şablon işleme işlevi (`render`) gerekli koruma ekler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
 > [Yoklamalar Django Web projesi şablonu kullanın](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - [Django kullanıcı kimlik doğrulaması](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
 - Öğretici kaynak kodu github'da: [Microsoft/python-örnek-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

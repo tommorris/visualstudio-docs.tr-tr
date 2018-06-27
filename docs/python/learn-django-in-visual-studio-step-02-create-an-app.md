@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750512"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947514"
 ---
-# <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Öğreticisi 2. adım: görünümlerle bir Django uygulaması oluşturma ve sayfa şablonları
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2. adım: bir Django uygulaması görünümleri ve sayfa şablonları oluşturma
 
 **Önceki adımda: [Visual Studio Proje ve çözüm oluşturma](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
@@ -50,8 +50,8 @@ Her iki yöntemi kullanarak, "HelloDjangoApp" adlı bir uygulama oluşturun. Son
 
 | Öğe | Açıklama |
 | --- | --- |
-| `__init.py__` | Uygulamayı bir paket olarak tanımlayan dosya. |
-| `migrations` | Django modelleri yapılan değişikliklerle hizalamak için veritabanı güncelleştirme komut dosyalarını depolayan klasör. Böylece geçerli modelleri eşleşir Django'nın Geçiş Araçları veritabanının önceki bir sürüme daha sonra gerekli değişiklikleri uygulayın. Odağınız modeller üzerinde tutmak geçişler kullanarak ve temel veritabanı şeması işlemek Django sağlayabilirsiniz. Geçişler, 6. adımda ele alınmıştır; şu an için yalnızca klasörde bir `__init.py__` (klasörü kendi Python paket tanımlar gösteren) dosyası. |
+| `__init__.py` | Uygulamayı bir paket olarak tanımlayan dosya. |
+| `migrations` | Django modelleri yapılan değişikliklerle hizalamak için veritabanı güncelleştirme komut dosyalarını depolayan klasör. Böylece geçerli modelleri eşleşir Django'nın Geçiş Araçları veritabanının önceki bir sürüme daha sonra gerekli değişiklikleri uygulayın. Odağınız modeller üzerinde tutmak geçişler kullanarak ve temel veritabanı şeması işlemek Django sağlayabilirsiniz. Geçişler, 6. adımda ele alınmıştır; şu an için yalnızca klasörde bir `__init__.py` (klasörü kendi Python paket tanımlar gösteren) dosyası. |
 | `templates` | Tek bir dosyayı içeren Django sayfa şablonlar için bir klasör `index.html`. İçine bir sayfayı dinamik olarak oluşturmak için bilgileri görünümleri ekleyebilirsiniz HTML bloklarını şablonlarıdır. Şablon "değişkenleri," gibi sayfa `{{ content }}` içinde `index.html`, bu makalenin sonraki bölümlerinde (2. adım) açıklandığı gibi dinamik değerler için yer tutucuları olan. Genellikle Django uygulamaları, uygulama adı ile eşleşen bir alt klasöre yerleştirerek kendi şablonlar için bir ad alanı oluşturun. |
 | `admin.py` | Uygulama genişletmek Python dosyası yönetim görmek için kullanılan ve düzenleme verileri bir veritabanında (adım 6'ya bakın) arabirim. Başlangıçta, bu dosyayı deyimi yalnızca içeriyor `from django.contrib import admin`. Varsayılan olarak, Django standart bir yönetim arabirimi girişleri aracılığıyla Django projenin içerir `settings.py` uncommenting mevcut girişlere göre açabilirsiniz dosya `urls.py`. |
 | `apps.py` | (Bu tablodan sonraki, aşağıya bakın) uygulaması için yapılandırma sınıfı tanımlayan bir Python dosyası. |
@@ -272,7 +272,7 @@ Yanıt: Django başvurulan bir şablon göründüğünde `render` işlevi, göre
 > [!div class="nextstepaction"]
 > [Statik dosyaları işleme, sayfa ekleyin ve şablon devralma kullanın](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - [İlk Django uygulamanız yazma, bölüm 1 - görünümleri](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Daha fazla Django şablonları, içerir gibi ve yeteneklerini devralma için bkz: [Django şablonu dili](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

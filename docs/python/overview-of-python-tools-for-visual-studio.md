@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7384bbdb136038cf73914e9743f56790c2150ca6
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 542aedca4aa1cfb472a6cbf1c96c8f46cc8983ec
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281215"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947173"
 ---
-# <a name="working-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
+# <a name="work-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
 
 Python güvenilir, esnek, kolay öğrenmek için tüm işletim sistemlerinde kullanımına yönelik ücretsiz ve sağlam Geliştirici topluluğu ve pek çok ücretsiz kitaplıkları tarafından desteklenen popüler bir programlama dilidir. Python geliştirme, web uygulamaları, web Hizmetleri, Masaüstü uygulamaları, komut dosyası ve bilimsel hesaplama, dahil olmak üzere tüm yolla destekler ve birçok üniversiteler, bilimcilerine, rasgele geliştiriciler ve profesyonel geliştiricilere benzer tarafından kullanılır. Üzerinde dili hakkında daha fazla bilgiyi [python.org](https://www.python.org) ve [yeni başlayanlar için Python](https://www.python.org/about/gettingstarted/).
 
@@ -202,7 +202,7 @@ Visual Studio 2015 ve önceki kullanılabilir [visualstudio.com/vs/older-downloa
 
 | Düzenleme | 2017 | 2015 | 2013 Comm | 2013 Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| söz dizimi vurgulama | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+| Söz dizimi vurgulama | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Otomatik Tamamlama | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | İmza Yardım | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Hızlı bilgi | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |

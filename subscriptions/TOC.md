@@ -1,4 +1,5 @@
 # [Visual Studio abonelikleri](index.md)
+## [Yenilikler](whats-new-in-subscriptions.md)
 ## Abone Deneyimleri
 ### [Abone Portalı’nı Kullanma](using-the-subscriber-portal.md)
 #### [Perakende Abonelikleri Etkinleştirme](activate-store-subscriptions.md)

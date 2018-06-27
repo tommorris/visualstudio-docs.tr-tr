@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a4de49b7ebb7299a005ab822bc880707196b1da3
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582351"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947033"
 ---
-# <a name="working-with-the-python-interactive-window"></a>Python etkileşimli pencere ile çalışma
+# <a name="work-with-the-python-interactive-window"></a>Python etkileşimli penceresiyle çalışma
 
 Visual Studio her alma ile REPL bağlı artırır, Python ortamları için bir etkileşimli okuma değerlendirmek yazdırma döngü (REPL) penceresi sağlar `python.exe` komut satırında. Etkileşimli pencere (açılmış **Görünüm > Diğer Pencereler > &lt;ortam&gt; etkileşimli** menü komutları) rasgele Python kodu girin ve sonuçları derhal bakın sağlar. Öğrenin ve API'leri ve kitaplıkları ve etkileşimli olarak projenize eklemek için çalışma kodu geliştirmek için deneme bu şekilde kodlama yardımcı olur.
 

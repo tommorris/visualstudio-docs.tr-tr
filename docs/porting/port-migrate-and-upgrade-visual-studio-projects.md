@@ -1,7 +1,7 @@
 ---
 title: Bağlantı noktası, geçirme ve projelerini yükseltme
 description: Visual Studio ve ne zaman bir proje geçirmek gereken Visual Studio karar önceki sürümlerinde oluşturulan projeleri için Visual Studio 2017 desteği için bir başvuru.
-ms.date: 03/14/2018
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,21 +19,20 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 8a09dc06ac76ff94ea8bbf933a1873221bfe0952
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ea7f001179a206e3dfcf8e7026b54d6da6ebffbd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281731"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947186"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 proje geçiş ve yükseltme başvurusu
 
 Her yeni sürümü Visual Studio, genellikle çoğu önceki tür projeleri, dosyaları ve diğer varlıklar destekler. Bunlarla çalışmak [her zaman sahip](../ide/solutions-and-projects-in-visual-studio.md), ve daha yeni özelliklere bağımlı yok olması koşuluyla, Visual Studio genellikle geriye doğru Visual Studio 2015, Visual Studio 2013 gibi önceki sürümleriyle uyumluluğunu korumak çalışır ve Visual Studio 2012. (Bkz [sürüm notları](https://visualstudio.microsoft.com/vs/release-notes/) için hangi özelliklerin hangi sürümlerine özeldir.)
 
-Bazı proje türleri için destek de zaman içinde değişir. Visual Studio'nun daha yeni bir sürümü artık belirli projeler desteklemiyor olabilir ya da artık geriye dönük olarak uyumlu olacak şekilde, bir proje güncelleştirilmesini gerektirir. Geçiş sorunları için geçerli durumunu almak için bkz [Visual Studio Geliştirici topluluğu site](https://developercommunity.visualstudio.com).
+Bazı proje türleri için destek de zaman içinde değişir. Visual Studio'nun daha yeni bir sürümü artık belirli projeler hiç destekleyebilir ya da artık geriye dönük olarak uyumlu olacak şekilde, bir proje güncelleştirilmesini gerektirir. Geçiş sorunları için geçerli durumunu almak için bkz [Visual Studio Geliştirici topluluğu site](https://developercommunity.visualstudio.com).
 
-> [!Important]
-> Mevcut makalede geçiş ile ilgili yalnızca proje türleri için Visual Studio 2017 içinde ayrıntıları sağlar. Geçiş sorunlarını desteklenen proje türleri içermez; Bu liste bulunan [Platform desteği ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs). Ayrıca, bazı proje türleri Visual Studio 2017 hiç artık desteklenmemektedir ve bu nedenle geçirilemez unutmayın.
+Mevcut bu makalede, Visual Studio 2017 geçirebileceğiniz proje türleri için Ayrıntılar sağlar. Makale, Visual Studio 2017 içinde artık desteklenmemektedir ve bu nedenle geçirilemez proje türleri dışlar. Makale ayrıca hiçbir geçiş sorunları olan desteklenen proje türleri dışlar; Bu liste bulunan [Platform desteği ve Uyumluluk](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).
 
 > [!Important]
 > Belirli proje türleri aracılığıyla Visual Studio yükleyicisi uygun iş yüklerini yükleme gerektirir. Yüklü iş yükü yoksa, Visual Studio bir bilinmeyen ya da uyumsuz proje türü bildirir. Bu durumda, yükleme seçeneklerinizi denetleyin ve yeniden deneyin. Yeniden bkz [Platform desteği ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs) makalede Visual Studio 2017 proje desteği hakkında ayrıntılı bilgi için.

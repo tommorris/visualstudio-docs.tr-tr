@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9aeba681e1a4ab7bae77197d8af10a90f49a40d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 907b20d3665a84f764619dc40a906b1d4096fd04
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752512"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946849"
 ---
-# <a name="tutorial-step-2-create-a-flask-app-with-views-and-page-templates"></a>Öğreticisi 2. adım: görünümlerle Flask uygulaması oluşturma ve sayfa şablonları
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Adım 2: Flask uygulama görünümleri ve sayfa şablonları oluşturma
 
 **Önceki adımda: [Visual Studio Proje ve çözüm oluşturma](learn-flask-visual-studio-step-01-project-solution.md)**
 
@@ -217,7 +217,7 @@ Yanıt: Evet, alt klasörler ve kullanabileceğiniz göreli yolu altında ardın
 > [!div class="nextstepaction"]
 > [Statik dosyaları işleme, sayfa ekleyin ve şablon devralma kullanın](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - [Flask hızlı başlangıç şablonlarını oluşturma -](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
 - Öğretici kaynak kodu github'da: [Microsoft/python-örnek-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

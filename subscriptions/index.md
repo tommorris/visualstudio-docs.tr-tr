@@ -1,26 +1,28 @@
 ---
 title: Visual Studio Abonelikleri
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327196"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946932"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
+
 Visual Studio abonelikler oluşturun, dağıtın ve tercih edilen platformlarında ve Windows, iOS, Android ve Linux dahil cihazları mükemmel uygulamaları yönetmek kaynakları kapsamlı kümesidir.  Abonelikleri avantajları ve geliştirme ve test ihtiyaçları için destek geliştirici araçları, bulut Hizmetleri ve eğitim, yazılım, erişim içerir.
 
-##  <a name="get-started"></a>Başlarken
+## <a name="get-started"></a>Başlarken
+
 Yöneticiler oturum açmak [ https://manage.visualstudio.com ](https://manage.visualstudio.com) abonelikleri ekibinizin atamak için.<br>
 Aboneler oturum açmak [ https://my.visualstudio.com ](https://my.visualstudio.com) abonelik Avantajlarınızı erişmek için.
 
@@ -134,6 +136,12 @@ Aboneler oturum açmak [ https://my.visualstudio.com ](https://my.visualstudio.c
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>Yenilikler
+
+Aboneliğinizi daha kullanışlı hale getirmek için ekleyin ve abonelik avantajları sık sık güncelleştirin. Daha fazla bilgi için bkz: [Aboneliklerde yenilikler](whats-new-in-subscriptions.md) sayfası.
 
 ---
 

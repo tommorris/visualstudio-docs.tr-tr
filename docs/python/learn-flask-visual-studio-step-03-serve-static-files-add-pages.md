@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b6c0e01106664429b3d355e488b453fa05cca4c6
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752511"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946968"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Öğreticisi 3. adım: hizmet statik dosyalar, sayfa ekleyin ve şablon devralma kullanın
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfa ekleyin ve şablon devralma kullanın
 
 **Önceki adımda: [görünümlerle Flask uygulaması oluşturma ve sayfa şablonları](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,7 +283,7 @@ Aşağıdaki adımlarda, devralma gösterilmektedir:
 > [!div class="nextstepaction"]
 > [Tam Flask Web projesi şablonu kullanın](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>Daha derin gitme
+## <a name="go-deeper"></a>Derinlemesine
 
 - Daha fazla yeteneklerini denetim akışı gibi Jinja şablonları için bkz: [Jinja şablonu Tasarımcısı belgelerine](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Kullanımıyla ilgili ayrıntılar için `url_for`, bkz: [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) Flask uygulama nesnesi belgeleri (flask.pocoo.org) içinde

@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad41ea30f66e877155355aec60de0f4a40e8c6e7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233645"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057219"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT Kitaplığını Kullanarak Bellek Sızıntılarını Bulma
 Bellek sızıntıları, doğru önceden ayrılmış olan bellek ayırması hata olarak tanımlanan en ince ve sabit algılamak hataların C/C++ uygulamalarında arasındadır. Küçük bellek sızıntısı konumundaki ilk ancak zamanla fark edilmesi değil, aşamalı bellek sızıntısı belirtiler bu aralık performansın bellek yetersiz uygulamayı çalıştırdığında, kilitlenen için neden olabilir. Da kötüsü, tüm kullanılabilir bellek kullanan leaking bir uygulamayı Karışıklığı önlemek için hangi uygulama sorumludur oluşturma kilitlenme başka bir uygulamanın neden olabilir. Hatta görünen zararsız bellek sızıntıları düzeltilmesi diğer sorunlarını belirtisi olabilir.  
@@ -48,7 +48,7 @@ Bellek sızıntıları, doğru önceden ayrılmış olan bellek ayırması hata 
   
  Hata ayıklama yığını işlevleri etkinleştirmek için program aşağıdaki deyimleri ekleyin:  
   
-```  
+```cpp
 #define _CRTDBG_MAP_ALLOC  
 #include <stdlib.h>  
 #include <crtdbg.h>  
@@ -62,13 +62,13 @@ Bellek sızıntıları, doğru önceden ayrılmış olan bellek ayırması hata 
   
  Bu ifadeler kullanarak hata ayıklama yığını işlevleri etkinleştirdikten sonra yapılan bir çağrı yerleştirebilirsiniz `_CrtDumpMemoryLeaks` uygulamanızı çıkılırken bir bellek sızıntısı raporu görüntülemek için bir uygulama çıkış noktası önce:  
   
-```  
+```cpp
 _CrtDumpMemoryLeaks();  
 ```  
   
  Uygulamanız birden çok çıkar varsa, el ile yapılan bir çağrı yerleştirmeniz gerekmez [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) her bir çıkış noktada. Çağrı `_CrtSetDbgFlag` uygulamanızı başında bir otomatik arama neden olur `_CrtDumpMemoryLeaks` her noktası çıkın. Burada gösterilen iki bit alanları ayarlamanız gerekir:  
   
-```  
+```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
@@ -76,14 +76,14 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
   
  Bir kitaplık kullanıyorsanız, kitaplık başka bir konuma çıkış sıfırlayabilir. Bu durumda, çıkış konumu ayarlayabilirsiniz geri **çıkış** penceresinde, aşağıda gösterildiği gibi:  
   
-```  
+```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );  
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Bellek sızıntısı raporu yorumlama  
  Uygulamanızı tanımlamaz, `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) aşağıdakine benzer bir bellek sızıntısı raporu görüntüler:  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 {18} normal block at 0x00780E80, 64 bytes long.  
@@ -93,7 +93,7 @@ Object dump complete.
   
  Uygulamanızı tanımlıyorsa `_CRTDBG_MAP_ALLOC`, bellek sızıntısı rapor şöyle görünür:  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 c:\users\username\documents\projects\leaktest\leaktest.cpp(20) : {18}   
@@ -202,20 +202,20 @@ Bu sızan ayırma debug_new.cpp satır 20 olduğunu bildirir.
   
  Bellek ayırma kesme noktaları kodda de ayarlayabilirsiniz. Bunu yapmak için iki yol vardır:  
   
-```  
+```cpp
 _crtBreakAlloc = 18;  
 ```  
   
  veya:  
   
-```  
+```cpp
 _CrtSetBreakAlloc(18);  
 ```  
   
 ## <a name="comparing-memory-states"></a>Bellek durumları karşılaştırma  
  Bellek sızıntılarını bulma için başka bir teknik uygulamanın bellek durumu anahtar noktalarda anlık görüntüleri alma içerir. Belirli bir noktada bellek durumunun anlık uygulamanızda almak için oluşturma bir **_CrtMemState** yapısı ve ona geçirmek `_CrtMemCheckpoint` işlevi. Bu işlev bir anlık görüntü geçerli bellek durumunun yapısıyla doldurur:  
   
-```  
+```cpp
 _CrtMemState s1;  
 _CrtMemCheckpoint( &s1 );  
   
@@ -225,14 +225,14 @@ _CrtMemCheckpoint( &s1 );
   
  İçeriğini çıktısını almak için bir **_CrtMemState** yapısı, yapısına geçirin `_ CrtMemDumpStatistics` işlevi:  
   
-```  
+```cpp
 _CrtMemDumpStatistics( &s1 );  
   
 ```  
   
  `_ CrtMemDumpStatistics` şuna benzer bellek durumu dökümünü çıkarır:  
   
-```  
+```cmd
 0 bytes in 0 Free Blocks.  
 0 bytes in 0 Normal Blocks.  
 3071 bytes in 16 CRT Blocks.  
@@ -245,7 +245,7 @@ Total allocations: 3764 bytes.
   
  Bellek sızıntısı kodunu bölümünde oluşup oluşmadığını belirlemek için önce ve sonra bölüm bellek durumu anlık görüntülerini almak ve sonra gerçekleştirebilirsiniz `_ CrtMemDifference` iki durumlu karşılaştırmak için:  
   
-```  
+```cpp
 _CrtMemCheckpoint( &s1 );  
 // memory allocations take place here  
 _CrtMemCheckpoint( &s2 );  

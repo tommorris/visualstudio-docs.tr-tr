@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39721b55d134335e3b618821e50ed3678895a861
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 99a57f217cc92051f2b85b1b210ce3adf5a189be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757285"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058769"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio'da Just-In-Time hata ayıklayıcısı ile hata ayıklama
 Bir özel durum ya da kilitlenme dış Visual Studio çalıştıran bir uygulamada oluştuğunda tam zamanı hata ayıklama Visual Studio otomatik olarak başlatır. Bu, Visual Studio çalışmadığı zaman uygulamanızı test etmek ve bir sorun ortaya çıktığında Visual Studio ile hata ayıklama başlamak sağlar.
@@ -83,7 +83,7 @@ Visual Studio artık bilgisayarınızda yüklü olsa bile tam zamanı hata ayık
 
 2.  Ayarlama `jitDebugging` değeri `true` içinde `system.windows.form` machine.config bölümünü veya  *\<uygulama adı >*. exe.config dosyası:
 
-    ```
+    ```xml
     <configuration>
         <system.windows.forms jitDebugging="true" />
     </configuration>
@@ -91,7 +91,7 @@ Visual Studio artık bilgisayarınızda yüklü olsa bile tam zamanı hata ayık
 
 3.  C++ Windows Form Uygulaması'nda da ayarlamanız gerekir `DebuggableAttribute` .config dosyasına veya kodunuzu. İle derleme yaparsanız [/zı](/cpp/build/reference/z7-zi-zi-debug-information-format) ve olmadan [/Og](/cpp/build/reference/og-global-optimizations), derleyici, bu öznitelik ayarlar. Ancak, iyileştirilmemiş yayın derlemesinde hata ayıklama istiyorsanız, bunu kendiniz ayarlamanız gerekir. Bu, aşağıdaki satırı olduğunuz uygulamanızın AssemblyInfo.cpp dosyasını ekleyerek yapabilirsiniz:
 
-    ```
+    ```cpp
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
     ```
 

@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed17cc303bfb7194c7f438e32afb1be7f484eb5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1437728a75e0c6e8babff690bb18c7bd30d3add4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478050"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057476"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme
 
@@ -93,7 +93,7 @@ Bir özel durum seçerseniz **Exception ayarlarını** penceresi, hata ayıklay�
   
      Varsa **AccessViolationException** iade **Exception ayarlarını**, bu kod hata ayıklayıcı yürütmede çalıştırdığınızda üzerinde bozar `throw` satır. Ardından, yürütme devam edebilirsiniz. Konsol iki satır görüntülenmelidir:  
   
-    ```  
+    ```cmd
     caught exception  
     goodbye  
     ```  

@@ -21,11 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ffddb3f49f4603c6f09bb12ef81d4c45bf0210c7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059359"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Yüklü uygulama paketi, Visual Studio (UWP) hata ayıklama
 
@@ -90,7 +91,7 @@ Bu özellikler hakkında daha fazla bilgi için blog için güncelleştirmelerin
      > [!NOTE]
 > Sunmak, XBox veya HoloLens aygıt uygulama hata ayıklayıcısı ekli zaten çalışıyorsa, yeniden başlatılır.
 
-UWP uygulamaları'nın uzaktan dağıtımı için Gelişmiş seçenekleri hakkında daha fazla bilgi için bkz: [dağıtma ve hata ayıklama UWP uygulamaları](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
+[Dağıtma ve hata ayıklama UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options). uzak dağıtımını UWP uygulamaları için Gelişmiş seçenekleri hakkında daha fazla bilgi için bkz. 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio’da hata ayıklama](../debugger/index.md)  

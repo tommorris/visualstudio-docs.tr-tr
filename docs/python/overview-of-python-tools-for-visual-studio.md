@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 542aedca4aa1cfb472a6cbf1c96c8f46cc8983ec
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: e2e240438161d8058753b72f8711362a47926790
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947173"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058054"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows Visual Studio'da Python ile çalışma
 
@@ -178,7 +178,7 @@ Python özellikleri açıklandığı gibi aşağıdaki Visual Studio sürümleri
 - Visual Studio 2012 (Pro sürümü veya üzeri)
 - Visual Studio 2010 SP1 (Pro sürümü veya üzeri; .NET 4.5 gerekiyor)
 
-Visual Studio 2015 ve önceki kullanılabilir [visualstudio.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/).
+Visual Studio 2015 ve önceki kullanılabilir [visualstudio.microsoft.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 > [!Important]
 > Özelliklerin tam olarak desteklenir ve yalnızca en son sürümü Visual Studio için sağlanmıştır. Özellikleri, eski sürümlerinde kullanılabilir, ancak etkin bir şekilde korunmuyor.

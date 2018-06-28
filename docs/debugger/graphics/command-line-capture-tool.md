@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddbce0e003f2825d76458146e1d2fe009a43709e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2424fdcb36e9157c358ab510849a4dbb709d7e62
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477933"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057706"
 ---
-# <a name="command-line-capture-tool"></a>Komut satırı Yakalama aracı
+# <a name="command-line-capture-tool"></a>Komut Satırı Yakalama Aracı
 DXCap.exe bir grafik tanılama yakalama ve kayıttan yürütme için komut satırı aracıdır. Bu Direct3D 10 ile Direct3D 12 arasında tüm özellik düzeylerini destekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```ms-dos  
+```cmd  
 DXCap.exe [-file filename] [-frame frames | -period periods | -manual] -c app [args...]  
 DXCap.exe -p [filename] [-debug | -warp | -hw] [-config] [-rawmode]  
 DXCap.exe -p [filename] -screenshot [-frame frames]  

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ea7f001179a206e3dfcf8e7026b54d6da6ebffbd
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947186"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058756"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 proje geçiş ve yükseltme başvurusu
 
@@ -32,7 +32,7 @@ Her yeni sürümü Visual Studio, genellikle çoğu önceki tür projeleri, dosy
 
 Bazı proje türleri için destek de zaman içinde değişir. Visual Studio'nun daha yeni bir sürümü artık belirli projeler hiç destekleyebilir ya da artık geriye dönük olarak uyumlu olacak şekilde, bir proje güncelleştirilmesini gerektirir. Geçiş sorunları için geçerli durumunu almak için bkz [Visual Studio Geliştirici topluluğu site](https://developercommunity.visualstudio.com).
 
-Mevcut bu makalede, Visual Studio 2017 geçirebileceğiniz proje türleri için Ayrıntılar sağlar. Makale, Visual Studio 2017 içinde artık desteklenmemektedir ve bu nedenle geçirilemez proje türleri dışlar. Makale ayrıca hiçbir geçiş sorunları olan desteklenen proje türleri dışlar; Bu liste bulunan [Platform desteği ve Uyumluluk](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).
+Mevcut bu makalede, Visual Studio 2017 geçirebileceğiniz proje türleri için Ayrıntılar sağlar. Makale, Visual Studio 2017 içinde artık desteklenmemektedir ve bu nedenle geçirilemez proje türleri dışlar. Makale ayrıca hiçbir geçiş sorunları olan desteklenen proje türleri dışlar; Bu liste bulunan [Platform desteği ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs).
 
 > [!Important]
 > Belirli proje türleri aracılığıyla Visual Studio yükleyicisi uygun iş yüklerini yükleme gerektirir. Yüklü iş yükü yoksa, Visual Studio bir bilinmeyen ya da uyumsuz proje türü bildirir. Bu durumda, yükleme seçeneklerinizi denetleyin ve yeniden deneyin. Yeniden bkz [Platform desteği ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs) makalede Visual Studio 2017 proje desteği hakkında ayrıntılı bilgi için.

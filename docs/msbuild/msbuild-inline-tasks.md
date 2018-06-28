@@ -12,18 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bc1acd059c9a915f330c74140c89d5f4fa40ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 77bda15937c9761d21f982a7a5006d457ac91d40
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574646"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056785"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild Satır İçi Görevleri
 MSBuild görevleri, uygulayan bir sınıf derleme tarafından genellikle oluşturulan <xref:Microsoft.Build.Framework.ITask> arabirimi. Daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md).  
   
  .NET Framework sürüm 4'dan başlayarak, proje dosyasında görevleri satır içi oluşturabilirsiniz. Görev barındırmak için ayrı bir derleme oluşturmak zorunda değildir. Bu, kaynak kodu izlemek ve görev dağıtmak daha kolay kolaylaştırır. Kaynak kodu betiğe tümleşiktir.  
   
+
+ MSBuild 15,8 içinde [RoslnCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) .NET standart platformlar arası satır içi görevleri oluşturabilirsiniz eklendi.  Satır içi görevleri .NET Core üzerinde kullanmanız gerekiyorsa, RoslynCodeTaskFactory kullanmanız gerekir.
 ## <a name="the-structure-of-an-inline-task"></a>Satır içi göre yapısı  
  Satır içi göre tarafından bulunan bir [UsingTask](../msbuild/usingtask-element-msbuild.md) öğesi. Satır içi görev ve `UsingTask` içerdiği öğesi genellikle bir .targets dosyasında bulunur ve gerektiği gibi diğer proje dosyalarını içeri aktarılan. Temel satır içi görev aşağıdadır. Hiçbir şey yapmaz dikkat edin.  
   
@@ -142,7 +144,7 @@ Log.LogError("Hello, world!");
   
 -   `Output` İsteğe bağlı bir özniteliği olan `false` varsayılan olarak. Varsa `true`, parametre değeri yürütme yönteminden döndürmeden önce verilmelidir.  
   
- Örneğin,  
+Örneğin,  
   
 ```xml  
 <ParameterGroup>  
@@ -152,7 +154,7 @@ Log.LogError("Hello, world!");
 </ParameterGroup>  
 ```  
   
- şu üç parametreyi tanımlar:  
+şu üç parametreyi tanımlar:  
   
 -   `Expression` System.String türünde gerekli giriş parametresi değil.  
   

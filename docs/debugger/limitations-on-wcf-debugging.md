@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a865a9852b8a6700e250225244546567967257de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477004"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058529"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCE Hata Ayıklamasında Sınırlamalar
 Bir WCF Hizmeti hata ayıklama başlayabilirsiniz üç yolu vardır:  
@@ -47,7 +47,7 @@ Bir WCF Hizmeti hata ayıklama başlayabilirsiniz üç yolu vardır:
   
 -   Hata ayıklama app.config veya Web.config dosyasında aşağıdaki kodla etkinleştirilmiş olmalıdır:  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     </system.web>  
@@ -69,7 +69,7 @@ Bir WCF Hizmeti hata ayıklama başlayabilirsiniz üç yolu vardır:
   
 -   Hata ayıklama app.config veya Web.config dosyasında aşağıdaki kodla etkinleştirilmiş olmalıdır:  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     <system.web>  

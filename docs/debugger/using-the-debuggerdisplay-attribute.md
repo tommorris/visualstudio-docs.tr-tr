@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573251"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057592"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay özniteliğini kullanma
 [DebuggerDisplayAttribute sınıfı](/dotnet/api/system.diagnostics.debuggerdisplayattribute) bir nesne, özelliği veya alanı hata ayıklayıcı değişken pencerelerini de nasıl görüntüleneceğini denetler. Bu öznitelik türlerini, temsilciler, özellikleri, alanları ve derlemeler için uygulanabilir.  
@@ -51,7 +51,7 @@ ms.locfileid: "34573251"
   
  Autoexp.cs oluşturmak için VS2015 için geliştirici komut istemi yukarı açın ve aşağıdaki komutları çalıştırın  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  

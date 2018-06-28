@@ -1,7 +1,7 @@
 ---
 title: XSD görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -22,15 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7505f3d18e0b32ebdbc8b82d447e49b26fe4182e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571201"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057378"
 ---
 # <a name="xsd-task"></a>XSD Görevi
 Şema veya sınıf dosyaları oluşturan bir kaynaktan XML şema tanımı Aracı (XSD.exe'nin) sarmalar.  
+
+> [!NOTE]
+> Visual Studio 2017 içinde C++ projesi XSD.exe'nin desteği kullanım dışıdır. Kullanmaya devam edebilirsiniz **Microsoft.VisualC.CppCodeProvider** el ile ekleyerek API'leri **CppCodeProvider.dll** GAC için. 
   
 ## <a name="parameters"></a>Parametreler  
  Aşağıdaki tabloda parametrelerinin açıklanmaktadır **XSD** görev.  

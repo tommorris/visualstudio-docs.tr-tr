@@ -1,7 +1,7 @@
 ---
 title: Python için hata ayıklama Azure Uzak sorunlarını giderme
 description: Visual Studio kullanarak Azure App Service içinde çalışan bir Python uygulama hatalarını ayıklama çalışılırken sorunlarını gidermek nasıl.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 845ec37c14bcc6927f8db6c492756c4e83d1cc75
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 111a166e561bccb0eb5a14143479b7ad251d9b61
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296384"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058558"
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Uzaktan hata ayıklama sorun gidericisini Python ve Azure
 
@@ -25,7 +25,7 @@ Visual Studio başarısız eklemek bir [uzaktan hata ayıklama için Azure App S
 
 | Neden | Çözüm |
 | --- | --- |
-| Bilgisayarınızda Visual Studio 2013 güncelleştirme 4 veya sonraki bir sürümü yüklü. | Uygun bir sürümden yüklemek [visualstudio.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). |
+| Bilgisayarınızda Visual Studio 2013 güncelleştirme 4 veya sonraki bir sürümü yüklü. | Uygun bir sürümden yüklemek [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). |
 | Uygulama hizmeti dağıtılan projeyi Visual Studio'da bir açık eşleşmiyor. | Doğru projeyi Visual Studio'ya yükleyin. |
 | Proje ile hata ayıklama yapılandırmasını dağıtılan değildi. | Çözüm Gezgini'nde projeye sağ tıklayıp seçerek uygulamayı yeniden Dağıt **Yayımla**. İçinde **ayarları** sekmesinde, emin olun **hata ayıklama** seçili yapılandırmadır. |
 | Uygulama hizmeti çalışmıyor. | Başlatın Visual Studio'da Sunucu Gezgini'nden veya Azure portalından. |

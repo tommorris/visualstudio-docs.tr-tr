@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: af106709ca578abeab19c4f474548476efbeea57
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926842"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057693"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında sözde değişkenler
 Sözde değişkenler olan bir değişken penceresinde belirli bilgileri görüntülemek için kullanılan terimler veya **QuickWatch** iletişim kutusu. Normal bir değişken girersiniz aynı şekilde bir pseudovariable girebilirsiniz. Sözde değişkenler değil değişkenleri, ancak ve değişken adlarıyla programınızdaki karşılık.  
@@ -32,9 +32,7 @@ Sözde değişkenler olan bir değişken penceresinde belirli bilgileri görünt
 ## <a name="example"></a>Örnek  
  Yerel kod uygulamasına yazma ve uygulamanızda ayrılan tanıtıcı sayısı görmek istediğinizi varsayalım. İçinde **izleme** penceresinde, aşağıdaki pseudovariable girebilirsiniz **adı** sütun sonra değerlendirmek için Return tuşuna basın:  
   
-```  
-$handles  
-```  
+`$handles`
   
  Yerel kodda bu tabloda gösterilen sözde değişkenler kullanabilirsiniz:  
   
@@ -64,10 +62,10 @@ $handles
   
 |Pseudovariable|İşlev|  
 |--------------------|--------------|  
-|`$delete` Veya `$$delete`|Oluşturulan bir örtük değişkeni siler **hemen** penceresi. Sözdizimi `$delete,` *değişkeni* veya`$delete,` *değişken*`.`|  
-|`$objectids` Veya `$listobjectids`|Tüm etkin nesne kimlikleri, belirtilen ifade alt olarak görüntüler. Sözdizimi `$objectid,` *ifade* veya`$listobjectids,` *ifadesi*`.`|  
+|`$delete` veya `$$delete`|Oluşturulan bir örtük değişkeni siler **hemen** penceresi. Sözdizimi `$delete,` *değişkeni* veya`$delete,` *değişken*`.`|  
+|`$objectids` veya `$listobjectids`|Tüm etkin nesne kimlikleri, belirtilen ifade alt olarak görüntüler. Sözdizimi `$objectid,` *ifade* veya`$listobjectids,` *ifadesi*`.`|  
 |`$` *N* `#`|Nesne Kimliği eşit görüntüler nesnesiyle *N*.|  
-|`$dynamic`|Özel görüntüler **dinamik Görünüm** uygulayan bir nesne için düğüm `IDynamicMetaObjectProvider`. Arabirim. Sözdizimi `$dynamic,` *nesne*. Bu özellik .NET Framework sürüm 4 kullanan kodu geçerlidir.|  
+|`$dynamic`|Özel görüntüler **dinamik Görünüm** uygulayan bir nesne için düğüm `IDynamicMetaObjectProvider`. arabirim. Sözdizimi `$dynamic,` *nesne*. Bu özellik .NET Framework sürüm 4 kullanan kodu geçerlidir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   

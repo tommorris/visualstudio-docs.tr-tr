@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 686a6393a219d089d185789a776a76d5726dfde2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477459"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058545"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend'de XAML hatalarını ayıklama
 Araçları kullanabilirsiniz [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] uygulamanızı XAML'de hata ayıklamak için. Proje oluşturma sırasında herhangi bir hata görüntülenir **sonuçları** paneli. Hata ile ilgili biçimlendirme bulmak için bir hata çift tıklayın. İş için daha fazla yer gerekiyorsa, gizleyebilirsiniz **sonuçları** F12 tuşuna basarak paneli.  
@@ -68,7 +68,7 @@ Araçları kullanabilirsiniz [!INCLUDE[blend_first](../debugger/includes/blend_f
   
 8.  Tıklayarak aşağıdaki kodu kopyalayın **kopyalama** kodu sağ üst köşesindeki bağlantı.  
   
-    ```  
+    ```xml
     <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
          <Button content="Button" x:Mame="Home" HorizontalAlignment="Left" VerticalAlignment="Top"/>  
          <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,38,0,0">  
@@ -81,7 +81,7 @@ Araçları kullanabilirsiniz [!INCLUDE[blend_first](../debugger/includes/blend_f
   
 9. Varsayılan bulun **kılavuz**, açma ve kapatma arasında yer alan kodunu Yapıştır **kılavuz** etiketler. İşlemi tamamladığınızda, kodunuzu aşağıdaki gibi görünmelidir:  
   
-    ```  
+    ```xml
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
          <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
               <Button content="Button" x:Mame="Home" HorizontalAlignment="Left" VerticalAlignment="Top"/>  

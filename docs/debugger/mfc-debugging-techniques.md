@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059376"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC Hata Ayıklama Teknikleri
 Bir MFC programı hata ayıklama, bu hata ayıklama teknikleri yararlı olabilir.  
@@ -64,14 +65,14 @@ Bir MFC programı hata ayıklama, bu hata ayıklama teknikleri yararlı olabilir
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC sağlayan özel bir [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) işlevi kaynak kodunda kesme noktaları kodlamak için:  
   
-```  
+```cpp
 AfxDebugBreak( );  
   
 ```  
   
  Intel platformlarda `AfxDebugBreak` hangi sonları kaynak kod çekirdek kodu yerine aşağıdaki kodu üretir:  
   
-```  
+```cpp
 _asm int 3  
 ```  
   
@@ -86,7 +87,7 @@ _asm int 3
   
  Aşağıdaki örnekler kullanabileceğiniz yollardan bazılarını göstermek **izleme** makrosu. Gibi `printf`, **izleme** makrosu bağımsız değişken sayısı işleyebilir.  
   
-```  
+```cpp
 int x = 1;  
 int y = 16;  
 float z = 32.0;  
@@ -101,7 +102,7 @@ TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
   
  TRACE makrosu uygun şekilde char * hem wchar_t işleme\* parametreleri. Aşağıdaki örnekler, farklı türlerde dizesi parametreleri birlikte TRACE makrosu kullanımını göstermektedir.  
   
-```  
+```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
   
 TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);  
@@ -122,7 +123,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  Tüm programınızı kullanmak üzere yeniden yazmak istemiyorsanız `DEBUG_NEW` yerine **yeni**, Kaynak dosyalarınız bu makrosu tanımlayabilirsiniz:  
   
-```  
+```cpp
 #define new DEBUG_NEW  
 ```  
   
@@ -159,15 +160,15 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Bellek anlık görüntüleri alma  
   
-1.  Oluşturma bir [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) nesne ve çağrı [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) üye işlevi. Bu ilk bellek anlık görüntü oluşturur.  
+1.  Oluşturma bir [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) nesne ve çağrı [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) üye işlevi. Bu ilk bellek anlık görüntü oluşturur.  
   
 2.  Bellek ayırma ve kaldırma işlemlerini programınızı gerçekleştirdikten sonra başka birini oluşturmak `CMemoryState` nesne ve çağrı `Checkpoint` bu nesne için. Bellek kullanımı ikinci bir anlık görüntü alır.  
   
-3.  Üçüncü oluşturma `CMemoryState` nesne ve çağrı kendi [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) üye işlevi, önceki iki bağımsız değişken olarak sağladığını `CMemoryState` nesneleri. İki bellek durumları arasında bir fark ise `Difference` işlevi sıfır olmayan bir değer döndürür. Bu, bazı bellek blokları değil ayırması gösterir.  
+3.  Üçüncü oluşturma `CMemoryState` nesne ve çağrı kendi [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) üye işlevi, önceki iki bağımsız değişken olarak sağladığını `CMemoryState` nesneleri. İki bellek durumları arasında bir fark ise `Difference` işlevi sıfır olmayan bir değer döndürür. Bu, bazı bellek blokları değil ayırması gösterir.  
   
      Bu örnek, kodu nasıl göründüğünü gösterir:  
   
-    ```  
+    ```cpp
     // Declare the variables needed  
     #ifdef _DEBUG  
         CMemoryState oldMemState, newMemState, diffMemState;  
@@ -190,16 +191,16 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
      Bellek denetimi deyimleri tarafından köşeli parantez içindeki dikkat edin **#ifdef _DEBUG / #endif** yalnızca hata ayıklama sürümlerinde programınızı derlenen engeller.  
   
-     Bellek sızıntısı var bildiğinize göre başka bir üye işlevini kullanabilirsiniz [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) yardımcı olacak bulun.  
+     Bellek sızıntısı var bildiğinize göre başka bir üye işlevini kullanabilirsiniz [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) yardımcı olacak bulun.  
   
  [Bu konudaki](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> Bellek istatistiklerini görüntüleme  
- [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) işlevi iki bellek durumu nesnede arar ve yığın başlangıcını ve bitişini durumları arasında gelen serbest olmayan herhangi bir nesne algılar. Bellek anlık görüntüleri alınır ve bunları karşılaştırıldığında sonra kullanarak `CMemoryState::Difference`, çağırabilirsiniz [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) değil serbest nesneler hakkında bilgi almak için.  
+ [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) işlevi iki bellek durumu nesnede arar ve yığın başlangıcını ve bitişini durumları arasında gelen serbest olmayan herhangi bir nesne algılar. Bellek anlık görüntüleri alınır ve bunları karşılaştırıldığında sonra kullanarak `CMemoryState::Difference`, çağırabilirsiniz [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) değil serbest nesneler hakkında bilgi almak için.  
   
  Aşağıdaki örnek göz önünde bulundurun:  
   
-```  
+```cpp  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -209,7 +210,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  Örneğindeki bir örnek dökümü şöyle görünür:  
   
-```  
+```cpp
 0 bytes in 0 Free Blocks  
 22 bytes in 1 Object Blocks  
 45 bytes in 4 Non-Object Blocks  
@@ -230,7 +231,7 @@ Total allocations: 67 bytes
  [Bu konudaki](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> Alma nesne dökümünü yapar  
- Bir MFC programında kullandığınız [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) değil serbest tüm nesneleri yığında açıklamasını dökümü. `DumpAllObjectsSince` tüm nesneler en son ayrılan dökümleri [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint). Öyle değilse `Checkpoint` çağrısı yerde harcanan `DumpAllObjectsSince` tüm nesneleri ve şu anda bellekte nonobjects dökümünü yapar.  
+ Bir MFC programında kullandığınız [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) değil serbest tüm nesneleri yığında açıklamasını dökümü. `DumpAllObjectsSince` tüm nesneler en son ayrılan dökümleri [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Öyle değilse `Checkpoint` çağrısı yerde harcanan `DumpAllObjectsSince` tüm nesneleri ve şu anda bellekte nonobjects dökümünü yapar.  
   
 > [!NOTE]
 >  MFC nesne dökme kullanabilmeniz için önce şunları yapmalısınız [Tanılama izleme etkinleştirmek](#BKMK_Enabling_Memory_Diagnostics).  
@@ -240,7 +241,7 @@ Total allocations: 67 bytes
   
  Aşağıdaki kod, bellek sızıntısı için iki bellek durumları karşılaştırarak test eder ve bir sızıntısı algılanırsa, tüm nesneleri dökümünü yapar.  
   
-```  
+```cpp
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -250,7 +251,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  Döküm içeriğini şöyle görünür:  
   
-```  
+```cmd
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -278,7 +279,7 @@ Phone #: 581-0215
 ####  <a name="BKMK_Interpreting_memory_dumps"></a> Bellek yorumlama dökümünü yapar  
  Bu nesne döküm daha ayrıntılı bakın:  
   
-```  
+```cmd
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
 {4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
 {3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
@@ -293,7 +294,7 @@ Phone #: 581-0215
   
  Bu döküm oluşturulan programın yalnızca iki açık ayırmaları vardı — bir yığını ve bir öbek üzerinde:  
   
-```  
+```cpp
 // Do your memory allocations and deallocations.  
 CString s("This is a frame variable");  
 // The next object is a heap object.  
@@ -302,7 +303,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` Oluşturucusu işaretçileridir üç bağımsız değişken alan `char`, başlatmak için kullanılan `CString` üye değişkenleri. Bellek dökümü gördüğünüz `CPerson` üç nonobject blokları (3, 4 ve 5) yanı sıra nesnesi. Bu karakterleri tutun `CString` üye değişkenleri ve ne zaman silinmez `CPerson` nesne yıkıcı çağrılır.  
   
- Blok sayıdır 2 `CPerson` nesnesinin kendisi. `$51A4` Blok adresini temsil eder ve tarafından çıkış nesnesinin içeriğini arkasından `CPerson`::`Dump` çağrıldığında [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince).  
+ Blok sayıdır 2 `CPerson` nesnesinin kendisi. `$51A4` Blok adresini temsil eder ve tarafından çıkış nesnesinin içeriğini arkasından `CPerson`::`Dump` çağrıldığında [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince).  
   
  Blok numarası 1 ile ilişkili olduğunu tahmin `CString` çerçeve değişkeni, sıra numarası ve çerçeve karakter sayısı ile eşleşen boyutu nedeniyle `CString` değişkeni. Çerçeve kapsam dışına çıktığında çerçevesi ayrılan değişkenleri otomatik olarak serbest.  
   
@@ -310,7 +311,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  Genel olarak, size çerçeve değişkenleri kapsamının dışında olduğunuzda, bunlar otomatik olarak serbest çünkü çerçeve değişkenleri ile ilişkili yığın nesneler hususlara değil. Bellek Tanılama dökümleri dağınıklığı önlemek için aramalarınız getirin `Checkpoint` çerçeve değişkenleri kapsamı dışında olmasını sağlamak. Örneğin, aşağıda gösterildiği gibi önceki ayırma kod kapsam ayraç koyun:  
   
-```  
+```cpp
 oldMemState.Checkpoint();  
 {  
     // Do your memory allocations and deallocations ...  
@@ -323,7 +324,7 @@ newMemState.Checkpoint();
   
  Kapsam köşeli parantez ile yerinde, bellek dökümü Bu örnek için aşağıdaki gibidir:  
   
-```  
+```cmd 
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -346,7 +347,7 @@ Phone #: 581-0215
   
  Yığında ayrılmış nesneleri için ancak siz açıkça Bellek sızıntısını önlemek için nesnesini silmeniz gerekir. Önceki örnekte son bellek sızıntısı temizlemek için silme `CPerson` yığında gibi ayrılmış nesnesi:  
   
-```  
+```cpp  
 {  
     // Do your memory allocations and deallocations.  
     CString s("This is a frame variable");  
@@ -359,7 +360,7 @@ Phone #: 581-0215
  [Bu konudaki](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> Özelleştirme nesne dökümünü yapar  
- Öğesinden bir sınıf türetin zaman [CObject](/cpp/mfc/reference/cobject-class), geçersiz kılabilirsiniz `Dump` kullandığınızda ek bilgi sağlamak için üye işlevi [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) içindökümnesnelere[Çıktı penceresi](../ide/reference/output-window.md).  
+ Öğesinden bir sınıf türetin zaman [CObject](/cpp/mfc/reference/cobject-class), geçersiz kılabilirsiniz `Dump` kullandığınızda ek bilgi sağlamak için üye işlevi [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) içindökümnesnelere[Çıktı penceresi](../ide/reference/output-window.md).  
   
  `Dump` İşlevi bir döküm bağlamına değişkenleri nesnenin üye metinsel gösterimini yazar ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Döküm bağlamı bir g/ç akışına benzer. Append işlecini kullanabilirsiniz (**<<**) veri göndermesini bir `CDumpContext`.  
   
@@ -367,7 +368,7 @@ Phone #: 581-0215
   
  Bildirimi `Dump` işlevi şu şekilde görünür:  
   
-```  
+```cpp  
 class CPerson : public CObject  
 {  
 public:  
@@ -385,7 +386,7 @@ public:
   
  Aşağıdaki örnekte, `Dump` işlev ilk çağrıları `Dump` işlevi için temel sınıfı. Ardından her üye değişkeni üyenin değeri yanı sıra kısa bir açıklamasını tanılama akışa yazar.  
   
-```  
+```cpp  
 #ifdef _DEBUG  
 void CPerson::Dump( CDumpContext& dc ) const  
 {  
@@ -401,7 +402,7 @@ void CPerson::Dump( CDumpContext& dc ) const
   
  Sağlamanız gerekir bir `CDumpContext` dump çıktısı nereye belirtmek için bağımsız değişken. MFC hata ayıklama sürümü önceden tanımlanmış bir sağlayan `CDumpContext` adlı nesne `afxDump` , hata ayıklayıcı için çıkış gönderir.  
   
-```  
+```cpp 
 CPerson* pMyPerson = new CPerson;  
 // Set some fields of the CPerson object.  
 //...  

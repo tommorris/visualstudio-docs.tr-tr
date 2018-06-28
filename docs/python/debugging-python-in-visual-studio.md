@@ -1,7 +1,7 @@
 ---
 title: Python kodda hata ayıklama
 description: Visual Studio'da hata ayıklama özelliği özellikle kesme noktalarını ayarlama, Adımlama, değerleri inceleyerek, özel durumları görmek ve etkileşimli penceresinde hata ayıklama dahil olmak üzere Python kodu için bir kılavuz.
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dbce50a578bc056510b9982dce63d355da383e93
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032261"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058188"
 ---
 # <a name="debugging-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -177,13 +177,13 @@ Hata ayıklama etkileşimli pencere ek olarak özel meta komutları destekleyen 
 | `$frame` | Çerçeve kimliği | Geçerli çerçeve belirtilen çerçeve kimliğine geçer.
 | `$load` | Komutları dosyasından yükler ve tamamlanıncaya kadar yürütür |
 | `$proc` |  | Geçerli işlem kimliğini görüntüler. |
-| `$proc` | İşlem kimliği | Geçerli işlem için belirtilen işlem kimliği geçer. |
+| `$proc` | işlem kimliği | Geçerli işlem için belirtilen işlem kimliği geçer. |
 | `$procs` | | Şu anda ayıklanacak işlemleri listeler. |
 | `$stepin`, `$step`, `$s` | Sonraki işlev çağrısı, mümkünse adımları. |
 | `$stepout`, `$return`, `$r` | Adımlar geçerli işlevi dışında. |
 | `$stepover`, `$until`, `$unt` | Sonraki işlev çağrısı üzerinden adımlar. |
 | `$thread` | | Geçerli iş parçacığı kimliği görüntüler. |
-| `$thread` | İş parçacığı kimliği | Geçerli iş parçacığının belirtilen iş parçacığı kimliğine geçer. |
+| `$thread` | iş parçacığı kimliği | Geçerli iş parçacığının belirtilen iş parçacığı kimliğine geçer. |
 | `$threads` | | Şu anda ayıklanacak iş parçacığı listeler. |
 | `$up`, `$u` | | Yığın izlemesinde geçerli çerçeve bir düzey yukarı. |
 | `$where`, `$w`, `$bt` | Geçerli iş parçacığının çerçevelerini listeler. |

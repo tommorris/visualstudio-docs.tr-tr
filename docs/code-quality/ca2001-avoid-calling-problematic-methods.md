@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc40f51fc0c5c3e2db428252d466760d9f297e23
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3cf0b0cc79baf49b4792cd009d3e634b8d10574
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918483"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056078"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Sorunlu yöntemleri çağırmaktan kaçının
+
 |||
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|
@@ -32,26 +33,29 @@ ms.locfileid: "31918483"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Bir üye olası tehlikeli ya da sorunlu yöntemi çağırır.
 
-## <a name="rule-description"></a>Kural Tanımı
- Gereksiz ve potansiyel olarak tehlikeli olabilecek bir yöntem çağrıları yapma kaçının.
+Bir üye olası tehlikeli ya da sorunlu yöntemi çağırır.
 
- Bu kural ihlal üyesi aşağıdaki yöntemlerden birini çağırır oluşur.
+## <a name="rule-description"></a>Kural açıklaması
+
+Gereksiz ve potansiyel olarak tehlikeli olabilecek bir yöntem çağrıları yapma kaçının. Bu kural ihlal üyesi aşağıdaki yöntemlerden birini aradığında oluşur:
 
 |Yöntem|Açıklama|
 |------------|-----------------|
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|GC çağrılıyor. Toplama, uygulama performansını önemli ölçüde etkileyebilir ve nadiren gereklidir. Daha fazla bilgi için bkz: [Riko Mariani'nın performans ipuçları](http://go.microsoft.com/fwlink/?LinkId=169256) MSDN'de blog girişi.|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend ve Thread.Resume beklenmeyen davranışları nedeniyle kullanım dışı bırakıldı.  Diğer sınıflarda kullanmak <xref:System.Threading> ad alanı, gibi <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, <xref:System.Threading.Mutex>, ve <xref:System.Threading.Semaphore> iş parçacığı eşitleme veya kaynakları korumak için.|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend ve Thread.Resume beklenmeyen davranışları nedeniyle kullanım dışı bırakıldı.  Diğer sınıflarda kullanmak <xref:System.Threading> ad alanı, gibi <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, ve <xref:System.Threading.Semaphore>, iş parçacığı eşitleme veya kaynakları korumak için.|
 |<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Geçersiz bir tanıtıcı döndürebildiğinden DangerousGetHandle yöntemi bir güvenlik riski oluşturur. Bkz: <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> ve <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> DangerousGetHandle yöntemi güvenli bir şekilde kullanma hakkında daha fazla bilgi için yöntemleri.|
 |<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Bu yöntemler derlemelerini beklenmeyen konumlardan yükleyebilir. Örneğin, Suzanne Etikan'ın .NET CLR notları blog gönderilerine bakın [önce LoadFile işlevini vs. LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450) ve [bir bağlama bağlamı seçme](http://go.microsoft.com/fwlink/?LinkId=164451) derlemeler yükleme yöntemleri hakkında bilgi için MSDN Web sitesinde.|
 |[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|Zaman yönetilen bir işlemde çalışan kullanıcı kodu başlatır, bu çok geç güvenilir bir şekilde CoSetProxyBlanket çağırmaktır. Ortak dil çalışma zamanı (CLR) P/Invoke kullanıcıların başarılı engelleyebilir başlatma eylemleri gerçekleştirir.<br /><br /> Yönetilen bir uygulama için CoSetProxyBlanket çağırmak varsa, bir yerel kod (C++) yürütülebilir dosyası kullanarak işlemini başlatmak CoSetProxyBlanket yerel kodda çağırın ve sonra yönetilen kod uygulamanızı işleminde başlatmak öneririz. (Bir çalışma zamanı sürüm numarası belirttiğinizden emin olun.)|
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için kaldırmak veya tehlikeli veya sorunlu yöntemi çağrısı değiştirin.
+## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Yalnızca hiçbir alternatifleri sorunlu yöntemi kullanılabilir olduğunda bu kuraldan iletilerini.
+Bu kural ihlal düzeltmek için kaldırmak veya tehlikeli veya sorunlu yöntemi çağrısı değiştirin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenilirlik Uyarıları](../code-quality/reliability-warnings.md)
+## <a name="when-to-suppress-warnings"></a>Ne zaman uyarıları bastırma
+
+Yalnızca hiçbir alternatifleri sorunlu yöntemi kullanılabilir olduğunda bu kuraldan iletilerini.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Güvenilirlik Uyarıları](../code-quality/reliability-warnings.md)

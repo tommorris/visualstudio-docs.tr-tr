@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e256aeef1a068ddc46d13e98b344bcce56d08b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477959"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056808"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek Yol: Windows Formunda Hata Ayıklama
 Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows formu, standart bir Windows uygulaması oluşturur. Bu adım adım işlemleri Visual Basic, C# ya da C++ kullanarak tamamlayabilirsiniz.  
@@ -77,14 +77,15 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
   
 10. `button1_Click` işlevinde, aşağıdaki kodu ekleyin:  
   
+    ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
   
-    // C#  
-    textBox1.Text = "Button was clicked!";  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-    // C++  
+    ```cpp  
     textBox1->Text = "Button was clicked!";  
     ```  
   
@@ -99,16 +100,17 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
   
 1.  Kaynak penceresinde, eklediğiniz metin ile aynı satırda sol kenar boşluğunu tıklatın:  
   
+     ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
   
-    // C#  
-    textBox1.Text = "Button was clicked!";  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-    // C++  
+    ```cpp  
     textBox1->Text = "Button was clicked!";  
-    ```  
+    ``` 
   
      Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Daha fazla bilgi için bkz: [kesme noktaları](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz.  
   
@@ -129,17 +131,13 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
   
      **Watch1** penceresi tırnak işaretleri içindeki bu değişkenin değerini gösterir:  
   
-    ```  
-    ""  
-    ```  
-  
+    `""`  
+ 
 6.  Üzerinde **hata ayıklama** menüsünde seçin **Step Into**.  
   
      TextBox1.Text değişiklikleri değerini **Watch1** penceresine:  
   
-    ```  
-    Button was clicked!  
-    ```  
+    `Button was clicked!`  
   
 7.  Üzerinde **hata ayıklama** menüsünde seçin **devam** programınızı hata ayıklama sürdürmek için.  
   
@@ -160,33 +158,33 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
   
 1.  Yukarıda oluşturduğunuz projede, sol kenar boşluğunu tıklatarak, eklediğiniz satırda bir kez daha bir kesme noktası ayarlayın:  
   
-    ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
-  
-    // C#  
-    textBox1.Text = "Button was clicked!"  
-  
-    // C++  
-    textBox1->Text = "Button was clicked!";  
+     ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
   
-2.  Üzerinde **hata ayıklama** menüsünde, select **hata ayıklama olmadan Başlat**.  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-     Çalıştırılabilir haline çift tıklatmışsınız gibi, Windows Formu, Windows altında çalışmaya başlar. Hata ayıklayıcısı iliştirilmemiş.  
+    ```cpp  
+    textBox1->Text = "Button was clicked!";   
   
-3.  Üzerinde **hata ayıklama** menüsünde, select **ekleme işlemi için**. (Bu komut ayrıca kullanılabilir **Araçları** menü.)  
+2.  On the **Debug** menu, select **Start Without Debugging**.  
   
-     **Ekleme işlemi için** iletişim kutusu görüntülenir.  
+     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.  
   
-4.  İçinde **kullanılabilir işlemler** bölmesi, işlem adı (Walkthrough_SimpleDebug.exe) Bul **işlem** sütun ve tıklatın.  
+3.  On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)  
   
-5.  Tıklatın **Attach** düğmesi.  
+     The **Attach to Process** dialog box appears.  
   
-6.  Windows Formunuzda, tek başına bir tane olan düğmeyi tıklatın.  
+4.  In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.  
   
-     Hata ayıklayıcısı, kesme noktasında Windows Formunun yürütülmesini keser.  
+5.  Click the **Attach** button.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
- [Hata ayıklama güvenliği](../debugger/debugger-security.md)
+6.  In your Windows Form, click the one and only button.  
+  
+     The debugger breaks execution of the Windows Form at the breakpoint.  
+  
+## See Also  
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)   
+ [Debugger Security](../debugger/debugger-security.md)

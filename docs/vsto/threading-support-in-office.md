@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f5c2a0a8623228091e2acee184fa0272c2bbf311
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693090"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059360"
 ---
 # <a name="threading-support-in-office"></a>Office'te iş parçacığı desteği
   Bu makalede, iş parçacığı oluşturma Microsoft Office nesne modelinde nasıl desteklenir hakkında bilgi sağlar. Office nesne modeli iş parçacığı güvenli değildir, ancak Office çözümü birden çok iş parçacığı çalışmak mümkündür. Office uygulamaları Bileşen Nesne Modeli (COM) sunucularıdır. COM çağırmasına rasgele iş parçacıklarında COM sunucuları izin verir. İş parçacığı güvenli olmayan COM sunucuları için COM yalnızca bir mantıksal iş parçacığı sunucu üzerinde herhangi bir zamanda yürütür. böylece eş zamanlı çağrıları seri hale getirmek için bir mekanizma sağlar. Bu mekanizma tek iş parçacıklı (STA) model olarak bilinir. Çağrıları seri hale getirilmiş olduğundan sunucu meşgul veya diğer çağrılar arka plan iş parçacığında işleme sırasında arayanlar süreyle engellenmiş olabilir.  
@@ -59,9 +59,9 @@ ms.locfileid: "34693090"
   
 3.  Gelen bir arama hemen veremeyecek Excel bir durumda olabilir. Örneğin, Office uygulamasının kalıcı bir iletişim kutusu görüntüleniyor.  
   
- 2 ve 3 olasılıkları için COM sağlar [ı](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248) arabirimi. Sunucu uygularsa, tüm çağrılar aracılığıyla girer [HandleIncomingCall](http://msdn.microsoft.com/en-us/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be) yöntemi. 2 olasılığı için çağrıları otomatik olarak reddedilir. 3 olasılığı için sunucu koşullara bağlı olarak çağrı reddedebilirsiniz. Çağrı reddedilirse, çağıran yapmanız gerekenler karar vermeniz gerekir. Normalde, çağıran uygulayan [ı](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248), bu durumda, reddetme tarafından size bildirilecektir [IMessageFilter](http://msdn.microsoft.com/en-us/3f800819-2a21-4e46-ad15-f9594fac1a3d) yöntemi.  
+ 2 ve 3 olasılıkları için COM sağlar [ı](/windows/desktop/api/objidl/nn-objidl-imessagefilter) arabirimi. Sunucu uygularsa, tüm çağrılar aracılığıyla girer [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) yöntemi. 2 olasılığı için çağrıları otomatik olarak reddedilir. 3 olasılığı için sunucu koşullara bağlı olarak çağrı reddedebilirsiniz. Çağrı reddedilirse, çağıran yapmanız gerekenler karar vermeniz gerekir. Normalde, çağıran uygulayan [ı](/windows/desktop/api/objidl/nn-objidl-imessagefilter), bu durumda, reddetme tarafından size bildirilecektir [IMessageFilter](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) yöntemi.  
   
- Ancak, Visual Studio'da Office geliştirme araçlarını kullanarak oluşturulan çözümlerde, COM birlikte çalışma için tüm reddedilen çağrıları dönüştürür bir <xref:System.Runtime.InteropServices.COMException> ("İleti Filtresi uygulama meşgul gösterilen"). Nesne modeli çağrısı yaptığınızda arka plan iş parçacığında, bu özel durumu işlemek hazırlıklı olmalıdır. Genellikle, belirli bir miktar yeniden deneniyor ve bir iletişim kutusu görüntüleniyor içerir. Ancak, STA olarak arka plan iş parçacığı oluşturabilir ve ardından bu durumu işlemek o iş parçacığı için bir ileti filtresi kaydedin.  
+ Ancak, Visual Studio'da Office geliştirme araçlarını kullanarak oluşturulan çözümlerde, COM birlikte çalışma için tüm reddedilen çağrıları dönüştürür bir <xref:System.Runtime.InteropServices.COMException> ("İleti Filtresi uygulama meşgul gösterilen"). Nesne modeli çağrısı yaptığınızda arka plan iş parçacığında, bu özel durumu işlemek için hazırlıklı olmalıdır. Genellikle, belirli bir miktar yeniden deneniyor ve bir iletişim kutusu görüntüleniyor içerir. Ancak, STA olarak arka plan iş parçacığı oluşturabilir ve ardından bu durumu işlemek o iş parçacığı için bir ileti filtresi kaydedin.  
   
 ## <a name="start-the-thread-correctly"></a>İş parçacığı doğru Başlat  
  Yeni bir STA iş parçacığı oluşturduğunuzda, iş parçacığı başlamadan önce Grup durumu için STA ayarlayın. Aşağıdaki kod örneğinde bunun nasıl yapılacağı gösterilmektedir.  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab48d9b6a67563171e28dab1f08e496750585288
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 59379e2b6a10ac98a739487eac064f3b261f35c5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476055"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057810"
 ---
 # <a name="remote-debugger-port-assignments"></a>Uzaktan hata ayıklayıcı bağlantı noktası atamaları
 Visual Studio uzaktan hata ayıklayıcı bir uygulama veya bir arka plan hizmeti olarak çalıştırabilirsiniz. Bir uygulama olarak çalıştığında, varsayılan olarak aşağıdaki gibi atanan bir bağlantı noktası kullanır:  
@@ -52,9 +52,8 @@ Visual Studio uzaktan hata ayıklayıcı bir uygulama veya bir arka plan hizmeti
 ## <a name="remote-debugger-ports-on-azure"></a>Azure üzerinde uzaktan hata ayıklayıcı bağlantı noktaları  
  Aşağıdaki bağlantı noktaları, Azure üzerinde uzaktan hata ayıklayıcı tarafından kullanılır. Bulut hizmeti bağlantı noktalarını tek tek VM üzerindeki bağlantı noktalarına eşlenir. TCP tüm bağlantı noktalarıdır.  
   
-||||  
+|Bağlantı|Bulut hizmeti bağlantı noktası|VM üzerinde bağlantı noktası|
 |-|-|-|  
-|**Bağlantı**|**Bulut hizmeti bağlantı noktası**|**VM üzerinde bağlantı noktası**|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  

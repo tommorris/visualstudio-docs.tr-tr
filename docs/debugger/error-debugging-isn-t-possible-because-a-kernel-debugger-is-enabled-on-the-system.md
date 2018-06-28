@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482119"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058730"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Hata: Olmayan hata ayıklama&#39;t olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan
 Yönetilen kodda hata ayıklarken, aşağıdaki hata iletisini alabilirsiniz:  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   Komut isteminde, şunları yazın:  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  Komut isteminde, şunları yazın:  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -78,13 +78,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  Boot.ini sistem sürücünüzde bulun (genellikle C:\\). Boot.ini dosyası, gizli ve salt okunur olabilir. Bu nedenle, görmek için aşağıdaki komutu kullanmanız gerekir:  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Not Defteri'ni kullanarak boot.ini açın ve aşağıdaki seçenekleri kaldırın:  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

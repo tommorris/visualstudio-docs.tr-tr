@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d19e39ef16bddce9910a65c6833e79d9263fba97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478297"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058743"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>İş parçacığı ve Paralel Yığınlar penceresini kullanarak görevleri görüntüleme
 **Paralel Yığınlar** penceresi, birden çok iş parçacıklı uygulamalar ayıklarken yararlıdır. Kendi **iş parçacıkları görünümü** gösterir, uygulamanızdaki tüm iş parçacıklarının yığın bilgileri çağırın. İş parçacıkları ve bu iş parçacığı üzerinde yığın çerçeveleri arasında gezinmek olanak sağlar. Yönetilen kodda **Görevler görünümü** gösterir çağrı yığını <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri. Yerel kodda **Görevler görünümü** gösterir çağrı yığını [görev grupları](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralel algoritmalar](/cpp/parallel/concrt/parallel-algorithms), [zaman uyumsuz aracılar](/cpp/parallel/concrt/asynchronous-agents)ve [Basit görevler](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -37,7 +37,7 @@ ms.locfileid: "31478297"
  Çizimde, geçerli iş parçacığının arama yolu mavi renkte vurgulanır ve iş parçacığı geçerli konumunu (etkin yığın çerçevesi) sarı okla belirtilir. Farklı bir yöntem seçerek geçerli yığın çerçevesini değiştirebilirsiniz **Paralel Yığınlar** penceresi. Bu, aynı zamanda seçtiğiniz yöntemi geçerli iş parçacığı zaten veya başka bir iş parçacığı bir parçası olup olmamasına bağlı olarak geçerli iş parçacığı, geçiş de neden olabilir. Aşağıdaki tabloda ana özelliklerini açıklar **Paralel Yığınlar** çizimde gösterildiği gibi penceresi.  
   
 |Belirtme çizgisi harf|Öğe adı|Açıklama|  
-|--------------------|------------------|-----------------|  
+|-|-|-|  
 |BİR|Çağrı yığını Segment veya düğümü|Bir dizi yöntem için bir veya daha fazla iş parçacığı içerir. Ardından ona bağlı ok satır düğüm yok, iş parçacıkları için tüm arama yolu temsil eder.|  
 |B|Mavi Vurgusu|Geçerli iş parçacığının çağrısı yolunu gösterir.|  
 |C|Ok çizgileri|İş parçacıkları için tüm arama yolu oluşturan düğümleri bağlanır.|  
@@ -50,9 +50,8 @@ ms.locfileid: "31478297"
 ## <a name="stack-frame-icons"></a>Yığın çerçevesi simgeler  
  Aşağıdaki tabloda, etkin ve geçerli yığın çerçeveleri hakkında bilgi sağlayan simgeleri açıklanmaktadır:  
   
-|||  
-|-|-|  
 |Simge|Açıklama|  
+|-|-|  
 |![Paralel Yığınlar sarı oku](../debugger/media/icon_parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Yöntemi geçerli iş parçacığının geçerli konumunu (etkin yığın çerçevesi) içerdiğini gösterir.|  
 |![Paralel Yığınlar İş parçacığı simgesi](../debugger/media/icon_parallelthreads.gif "Icon_ParallelThreads")|Yöntemi, geçerli olmayan bir iş parçacığı geçerli konumunu (etkin yığın çerçevesi) içerdiğini gösterir.|  
 |![Paralel Yığınlar yeşil ok](../debugger/media/icon_parallelgreenarrow.gif "Icon_ParallelGreenArrow")|Yöntemi geçerli yığın çerçevesini (geçerli hata ayıklayıcı bağlamını) içerdiğini gösterir. Bu yöntem adı göründüğü tüm düğümlerde kalın.|  
@@ -63,7 +62,7 @@ ms.locfileid: "31478297"
  ![Paralel Yığınlar penceresini araç](../debugger/media/parallel_stackstoolbar.png "Parallel_StacksToolbar")  
   
 |Belirtme çizgisi harf|Denetim|Açıklama|  
-|--------------------|-------------|-----------------|  
+|-|-|-|  
 |BİR|İş parçacıkları/görevler birleşik giriş kutusu|Görünüm arasında çağrı iş parçacığı yığınları ve çağrı yığınları görevlerin geçiş yapar. Daha fazla bilgi için bkz: Görevler görünümü ve iş parçacıkları görünümü.|  
 |B|Yalnızca bayrak Göster|Diğer hata ayıklama pencerelerinde gibi işaretlenmiş yalnızca iş parçacığı için gösterir çağrı yığınları **GPU iş parçacıkları** penceresi ve **paralel Gözcü** penceresi.|  
 |C|Yöntem Görünümü Değiştir|Yığın görünümü ve yöntem görünümü arasında geçiş yapar. Daha fazla bilgi için yöntem görünümüne bakın.|  
@@ -76,7 +75,7 @@ ms.locfileid: "31478297"
  ![Paralel Yığınlar penceresini kısayol menüsünde](../debugger/media/parallel_contmenu.png "Parallel_ContMenu")  
   
 |Menü Öğesi|Açıklama|  
-|---------------|-----------------|  
+|-|-|  
 |Bayrağı|Seçili öğeyi işaretler.|  
 |Bayrakla|Seçili öğeyi unflags.|  
 |Dondurma|Seçili öğeyi donuyor.|  

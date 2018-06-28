@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18cd64e24481111e22b3b9b842433bb1b1c19e0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477712"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058623"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Uzaktan Visual Studio C# veya Visual Basic projesinde hata ayıklama
 Başka bir bilgisayara dağıtılan bir Visual Studio uygulama hatalarını ayıklamak için yüklemek ve uygulamanızı dağıtıldığı bilgisayarda Uzak araçları çalıştırmak, projeniz Visual Studio'dan uzak bilgisayara bağlanmak için yapılandırın ve uygulamanızı çalıştırın.
@@ -101,7 +101,7 @@ Hata ayıklayıcıyı uzak makineye Visual C# veya Visual Basic Masaüstü uygul
   
 15. Visual Studio makinede yürütme kesme noktasında durdurdu görmeniz gerekir.
   
- Uygulama tarafından kullanılması gereken kod olmayan dosyalar varsa, Visual Studio projesinde eklemeniz gerekir. Ek dosyalar için bir proje klasör oluşturun (içinde **Çözüm Gezgini**, tıklatın **Ekle > Yeni bir klasör**). Klasöre dosya ekleme (içinde **Çözüm Gezgini**, tıklatın **Ekle > varolan öğeyi**, dosyaları seçin). Üzerinde **özellikleri** sayfasında her dosya için **çıktı dizinine Kopyala** için **her zaman Kopyala**.
+ Uygulama tarafından kullanılmak üzere gereken tüm kod olmayan dosyalar varsa, Visual Studio projesinde eklemeniz gerekir. Ek dosyalar için bir proje klasör oluşturun (içinde **Çözüm Gezgini**, tıklatın **Ekle > Yeni bir klasör**). Klasöre dosya ekleme (içinde **Çözüm Gezgini**, tıklatın **Ekle > varolan öğeyi**, dosyaları seçin). Üzerinde **özellikleri** sayfasında her dosya için **çıktı dizinine Kopyala** için **her zaman Kopyala**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Uzak simgeleri ile hata ayıklama Kurulumu 
 

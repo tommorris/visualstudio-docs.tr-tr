@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2804b07db0b7cf8d01c8578877d4b722d6ceb96
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 069dd7638296987c195fbae6cc9d858fdd3421ee
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477527"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058678"
 ---
-# <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio grafik Tanılama ile çalışmaya başlama
+# <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama’ya Başlarken
 Grafik Tanılama'yı ilk kez kullanmak hazırlarsınız Bu bölümde, ardından Direct3D uygulamasından çerçeveleri yakalamak ve grafik Çözümleyicisi'nde incelemeniz.  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -89,4 +89,4 @@ Grafik Tanılama'yı ilk kez kullanmak hazırlarsınız Bu bölümde, ardından 
  Grafik Çözümleyicisi araçları birlikte kullanma hakkında daha fazla bilgi için bkz: [örnekleri](graphics-diagnostics-examples.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Direct3D 12 grafik](http://msdn.microsoft.com/en-us/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)
+ [Direct3D 12 grafik](/windows/desktop/direct3d12/direct3d-12-graphics)

@@ -1,7 +1,7 @@
 ---
 title: Python paketlerini Yükleme Kılavuzu, 5. adım, çalışma
 description: 5. adım çekirdek kılavuzun Visual Studio'da Python ortamı paketlerinde yönetmek için Visual Studio'nun özellikleri gösteren, Python yeteneklerini.
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4591d0c7f7061a79551991cedb42e3b66d735190
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946807"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37055987"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>5. adım: Python ortamınıza paketleri yüklemek
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a29e25c19d3dae18efd967a4fb26e1cd4f576a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479617"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058015"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Dağıtımdan sonra sorunları tanılama
 IntelliTrace'i kullanarak dağıtımdan sonra ASP.NET web uygulamanızda sorunları tanılamak için Visual Studio IntelliTrace günlük hata ayıklamak için gereken simge dosyaları ve doğru kaynak dosyalarını otomatik olarak bulmak izin vermek için sürüm ile yapı bilgileri içerir.  
@@ -102,7 +102,7 @@ IntelliTrace'i kullanarak dağıtımdan sonra ASP.NET web uygulamanızda sorunla
   
      Ve web proje dosyanıza (.csproj, .vbproj) bu satırları ekleyin:  
   
-    ```  
+    ```xml
     <!-- Import the targets file. Change the folder location as necessary. -->  
        <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
   
@@ -282,7 +282,7 @@ IntelliTrace'i kullanarak dağıtımdan sonra ASP.NET web uygulamanızda sorunla
 
      Visual Studio, projenizin adı. Örneğin:  
 
-    ```  
+    ```xml
     <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
     ```  
 
@@ -300,7 +300,7 @@ IntelliTrace'i kullanarak dağıtımdan sonra ASP.NET web uygulamanızda sorunla
 
          Örneğin:  
 
-        ```  
+        ```xml
         <SourceControl type="TFS">  
            <TfsSourceControl>  
               <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
@@ -322,7 +322,7 @@ IntelliTrace'i kullanarak dağıtımdan sonra ASP.NET web uygulamanızda sorunla
 
          Örneğin:  
 
-        ```  
+        ```xml
         <SourceControl type="Git">   
            <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
               <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
@@ -350,7 +350,7 @@ IntelliTrace'i kullanarak dağıtımdan sonra ASP.NET web uygulamanızda sorunla
 
     -   **TFS**  
 
-        ```  
+        ```xml
         <Build type="TeamBuild">  
            <MsBuild>  
               <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
@@ -364,7 +364,7 @@ IntelliTrace'i kullanarak dağıtımdan sonra ASP.NET web uygulamanızda sorunla
 
     -   **Git**  
 
-        ```  
+        ```xml
         <Build type="MSBuild">   
            <MSBuild>  
               <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  

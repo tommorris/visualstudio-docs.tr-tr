@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6cbaeaeca87c4e32a0c9db9a463e1f5f417527ae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576046"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058652"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild Görev Başvurusu
 Görevler oluşturma işlemi sırasında çalışan bir kod sağlar. Aşağıdaki listede yer alan görevler ile birlikte [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Zaman [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] yüklü, ek görevler oluşturmak için kullanılan olan [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeleri. Daha fazla bilgi için bkz: [Visual C++ görevleri](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -88,6 +88,9 @@ Görevler oluşturma işlemi sırasında çalışan bir kod sağlar. Aşağıdak
   
  [Delete Görevi](../msbuild/delete-task.md)  
  Belirtilen dosyaları siler.  
+
+ [DownloadFile görevi](../msbuild/downloadfile-task.md)  
+ Bir dosya belirtilen konuma indirir.  
   
  [Error Görevi](../msbuild/error-task.md)  
  Bir yapı durdurur ve değerlendirilen bir koşullu ifadesine dayalı olarak bir hatayı günlüğe kaydeder.  
@@ -200,6 +203,9 @@ Görevler oluşturma işlemi sırasında çalışan bir kod sağlar. Aşağıdak
  [UnregisterAssembly Görevi](../msbuild/unregisterassembly-task.md)  
  Belirtilen derlemelere COM birlikte çalışma amacıyla kaydını siler.  
   
+ [Görev sıkıştırmasını açın](../msbuild/unzip-task.md)  
+ Unzips bir `.zip` arşiv belirtilen konum için.
+  
  [UpdateManifest Görevi](../msbuild/updatemanifest-task.md)  
  Seçilen özelliklerin bildiriminde güncelleştirir ve Çekildi.  
   
@@ -223,6 +229,9 @@ Görevler oluşturma işlemi sırasında çalışan bir kod sağlar. Aşağıdak
   
  [XslTransformation Görevi](../msbuild/xsltransformation-task.md)  
  Kullanarak bir XML girişi dönüştüren bir *Genişletilebilir Stil Sayfası Dili Dönüşümü* (XSLT) veya XSLT ve bir çıkış aygıtı veya bir dosyaya çıkışları derlenmiş.  
+  
+  [ZipDirectory görevi](../msbuild/zipdirectory-task.md)  
+ Oluşturur bir `.zip` bir dizinin içeriğini arşivinden.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   

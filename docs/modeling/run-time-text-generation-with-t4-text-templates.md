@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5b39437dc5f81b17c0bcfe27dbb7b8d99bebbc87
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0647cde0b81c74250306ad45ad015f8f8710d8a4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953121"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057937"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 
@@ -182,7 +182,7 @@ Bir metin şablonu bir kesme noktası ayarlayabilirsiniz. Visual Studio'da hata 
 
 ### <a name="passing-parameters-in-the-constructor"></a>Oluşturucuda parametreleri geçirme
 
-Genellikle bir şablonu bazı veriler uygulamanın diğer bölümleri içe aktarmanız gerekir. Bu kolaylaştırmak için şablon tarafından oluşturulmuş bir parçalı sınıf kodudur. Aynı sınıfın başka bir bölümünü başka bir dosyaya projenizde oluşturabilirsiniz. Bu dosya bir Oluşturucu parametreleri, özellikleri ve şablonda katıştırılmış bir kod tarafından hem uygulama geri kalanı tarafından erişilen olabilir işlevleri içerebilir.
+Genellikle bir şablonu bazı veriler uygulamanın diğer bölümleri içe aktarmanız gerekir. Bu kolaylaştırmak için şablon tarafından oluşturulmuş bir parçalı sınıf kodudur. Aynı sınıfın başka bir bölümünü başka bir dosyaya projenizde oluşturabilirsiniz. Bu dosya bir Oluşturucu parametreleri, özellikleri ve şablonda katıştırılmış bir kod tarafından hem uygulama geri kalanı tarafından erişilen işlevleri içerebilir.
 
 Örneğin, ayrı bir dosya oluşturabilirsiniz **MyWebPageCode.cs**:
 

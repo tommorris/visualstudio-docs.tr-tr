@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d9aa387861de41b7d3f782fec85d8d26c7d3ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 042f243c0469b8b37e301cf5c9f2410cf201f7be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480882"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058619"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API İşlevlerinde Nasıl Hata Ayıklayabilirim?
 NT sembolleri yüklü olan bir Windows API işlev hata ayıklama istiyorsanız, aşağıdakileri yapmanız gerekir.  
@@ -37,7 +37,7 @@ NT sembolleri yüklü olan bir Windows API işlev hata ayıklama istiyorsanız, 
   
 -   İşlevin yer DLL adını birlikte işlev adını girin. 32 bit kod içinde işlev adı düzenlenmiş biçimini kullanın. Bir kesme noktası ayarlamak için **MessageBeep**, örneğin, aşağıdaki girmeniz gerekir.  
   
-    ```  
+    ```cpp
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   

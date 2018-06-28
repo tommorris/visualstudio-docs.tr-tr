@@ -1,7 +1,7 @@
 ---
 title: Python etkileşimli pencere (REPL)
 description: Hızlı kod geliştirme için Visual Studio'da Python kodu için etkileşimli pencere (REPL) kullanma
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4de49b7ebb7299a005ab822bc880707196b1da3
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: a728c164121216b259e48b502f9ca29fa7ffd1d4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947033"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057924"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python etkileşimli penceresiyle çalışma
 

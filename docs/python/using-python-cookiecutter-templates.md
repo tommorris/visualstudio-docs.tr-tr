@@ -1,7 +1,7 @@
 ---
 title: Python için CookieCutter uzantısı
 description: Visual Studio için Python kodu şablonları bulmak ve bu şablonlardan proje oluşturmak için grafik Cookiecutter uzantısı destekler.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b2f3851d479a976d4e43317f94aa7a5328deb4fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a4cee1acbeeafb1360912f1f7342310a51ad54ff
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584665"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058470"
 ---
 # <a name="using-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanma
 
@@ -38,7 +38,7 @@ Cookiecutter giriş sayfası aşağıdaki gruplara ayrılmış aralarından seç
 
 | Grup | Açıklama |
 | --- | --- |
-| yüklü | Yerel bilgisayarınızda yüklü şablonlar. Çevrimiçi bir şablon kullanıldığında, kendi deposu için bir alt klasörü otomatik olarak kopyalanmış `~/.cookiecutters`. Seçili yüklü şablon basarak silebilirsiniz **Del**. |
+| Yüklü | Yerel bilgisayarınızda yüklü şablonlar. Çevrimiçi bir şablon kullanıldığında, kendi deposu için bir alt klasörü otomatik olarak kopyalanmış `~/.cookiecutters`. Seçili yüklü şablon basarak silebilirsiniz **Del**. |
 | Önerilen | Şablonları önerilen akıştan yüklendi. Varsayılan akış Microsoft tarafından seçkin. Bkz: [Cookiecutter seçenekleri](#cookiecutter-options) aşağıda akış özelleştirme hakkında bilgi. |
 | GitHub | Cookiecutter anahtar sözcüğü için GitHub arama sonuçları. Sonuçları github'dan gelen geri anlatır, daha fazla sonuç mevcutsa, **yük daha fazla** listesinin sonunda görüntülenir. |
 | Özel | Özel bir konuma arama kutusuna girdiğinizde, bu grupta belirir. Yerel diskinize GitHub deposuna tam yolunu yazın veya bir klasörün tam yolunu kullanabilirsiniz. |

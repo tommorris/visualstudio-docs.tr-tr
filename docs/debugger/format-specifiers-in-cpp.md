@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478128"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057762"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında C++ içindeki Biçim belirticileri
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **izleme** penceresi biçim belirticilerini kullanma.  
@@ -76,7 +76,7 @@ int main() {
 |**sb**|const char * dizesini (tırnak işareti)|\<Konum > "hello world"|Merhaba Dünya|  
 |s8|UTF-8 dize|\<Konum > "UTF-8 Kahve fincanı â˜• olduğu"|"UTF-8 Kahve fincanı ☕ olduğu"|
 |**s8b**|UTF-8 dize (tırnak işareti)|\<Konum > "hello world"|Merhaba Dünya|  
-|Su|Unicode (UTF-16 kodlamasını) dizesi|\<Konum > L "hello world"|L "hello world"<br /><br /> U "hello world"|  
+|Su|Unicode (UTF-16 kodlamasını) dizesi|\<Konum > L "hello world"|L "hello world"<br /><br /> "hello world" u|  
 |Sub|Unicode (UTF-16 kodlamasını) dizesi (tırnak işareti)|\<Konum > L "hello world"|Merhaba Dünya|  
 |bstr|BSTR dizesi|\<Konum > L "hello world"|L "hello world"|  
 |env|Ortam öbeği (çift null sonlandırılmış dize)|\<Konum > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
@@ -115,13 +115,13 @@ int main() {
 |**l, h**|uzun veya kısa önekini: d, i, u, x, o|00406042|0x0c22|  
 |**f**|kayan nokta imzalandı|(3./2.), f|1.500000|  
 |**e**|İmzalı bilimsel gösterim|(3.0/2.0)|1.500000e+000|  
-|**g**|kayan nokta veya bilimsel gösterim imzalı, hangisi daha kısa imzalanır|(3.0/2.0)|1,5|  
+|**g**|kayan nokta veya bilimsel gösterim imzalı imzalı<br/> hangisi daha kısa|(3.0/2.0)|1,5|  
 |c|tek bir karakter|\<Konum >|101 'e'|  
 |s|const char *|\<Konum >|"hello world"|  
 |Su|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|L "hello world"|  
 |Sub|const wchar_t*<br /><br /> const char16_t\*|\<Konum >|Merhaba Dünya|  
 |s8|const char *|\<Konum >|"hello world"|  
-|İK|HRESULT veya Win32 hata kodu. (Bu belirleyici bu gibi durumlarda gerekli değil için hata ayıklayıcı şimdi HRESULTs otomatik olarak kodunu çözer.|S_OK|S_OK|  
+|İK|HRESULT veya Win32 hata kodu.<br/>(Hata ayıklayıcı HRESULTs otomatik olarak kodunu çözer,<br/> Bunu belirticisi bu gibi durumlarda gerekli değildir.|S_OK|S_OK|  
 |WC|Pencere sınıfı bayrağı.|0x00000040,|WC_DEFAULTCHAR|  
 |WM|Windows ileti numarası|0x0010|WM_CLOSE|  
 |!|RW biçimi, veri türü görünümleri özelleştirmeler yoksayılıyor|\<gösterimi özelleştirilmiş >|4|  

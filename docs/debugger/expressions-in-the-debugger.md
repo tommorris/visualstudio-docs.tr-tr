@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 063fe4f61e6e3d8e8ed9e54b990029f2cf408e24
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: caaa13d67c30e07cd95c7a959e17117199188c0c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454550"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056654"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio Hata ayıklayıcıdaki ifadeler
 Visual Studio hata ayıklayıcısı bir ifadede girdiğinizde, çalışan ifade değerlendiricisi içerir **QuickWatch** iletişim kutusu, **izleme** penceresinde veya **hemen** penceresi. İfade değerlendiricileri iş ayrıca altındadır **kesme noktaları** penceresi ve hata ayıklayıcısı diğer birçok yerde.
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - desteklenmeyen ifadeler  
   
 ### <a name="dynamic-objects"></a>Dinamik nesneler  
- Statik olarak dinamik olarak yazılan hata ayıklayıcı ifadelerinde değişkenleri kullanabilirsiniz. Ne zaman, uygulayan nesneler [IDynamicMetaObjectProvider arabirimi](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647) Gözcü penceresi, dinamik bir düğüm eklenir görünüm değerlendirilir. Dinamik görünüm düğümü nesne üyeleri gösterir, ancak üyelerinin değerlerini düzenlenmesine izin vermiyor.  
+ Statik olarak dinamik olarak yazılan hata ayıklayıcı ifadelerinde değişkenleri kullanabilirsiniz. Ne zaman, uygulayan nesneler [IDynamicMetaObjectProvider arabirimi](/dotnet/api/system.dynamic.idynamicmetaobjectprovider) Gözcü penceresi, dinamik bir düğüm eklenir görünüm değerlendirilir. Dinamik görünüm düğümü nesne üyeleri gösterir, ancak üyelerinin değerlerini düzenlenmesine izin vermiyor.  
   
  Dinamik nesneler aşağıdaki özellikleri desteklenmez:  
   

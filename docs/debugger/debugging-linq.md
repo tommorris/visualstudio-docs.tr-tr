@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b4c9eb74207e966c17a212b9a9181293581297
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ca92fe5142957faf85ead5f9c9068b062d25a8d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474940"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056701"
 ---
 # <a name="debugging-linq"></a>LINQ'de Hata Ayıklama
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklama dilinin tümleşik destekler (LINQ) kodu, bazı kısıtlamalarla sorgu. Atlama, kesme noktalarını ayarlama ve hata ayıklayıcı pencerelerde sonuçları görüntüleme gibi LINQ ifadelerle en hata ayıklama özellikleri çalışmaz. Bu konuda LINQ hata ayıklama önemli sınırlamalar açıklanır.  
@@ -53,7 +53,7 @@ ms.locfileid: "31474940"
   
  Aşağıdaki kod örneği adım, hata ayıklayıcı sorgu bildirimi ya da tek bir deyimde olarak sorgu oluşturma vurgular.  
   
-```  
+```vb
 Function MyFunction(ByVal x As Char)  
     Return True  
 End Function  
@@ -76,7 +76,7 @@ End Sub
 ### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>Bir koşul sürüm (Visual Basic) etkinleştirmek için bir işlev ile değiştirme  
  Varsa hata ayıklama amacıyla koşul kodlarda adım için koşulu özgün doğrulama kodunu içeren bir işlevi çağrısı ile değiştirebilirsiniz. Örneğin, bu kod olduğunu varsayalım:  
   
-```  
+```vb
 Dim items() as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  
@@ -89,7 +89,7 @@ Next
   
  Adlı yeni bir işlev için koşul kod taşıyabilirsiniz `IsEven`:  
   
-```  
+```vb
 Dim items () as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  

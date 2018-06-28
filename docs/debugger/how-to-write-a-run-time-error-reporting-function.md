@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 331a29b8ec34a33ea43ede68ea477138cca58e16
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474888"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057879"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Nasıl Yapılır: Çalışma Zamanı Hata Raporlama İşlevi Yazma
 Özel raporlama işlev çalışma zamanı hataları aynı bildirimi olarak bulunmalıdır `_CrtDbgReportW`. Bu hata ayıklayıcısı için 1 değerini döndürmelidir.  
@@ -33,7 +33,7 @@ ms.locfileid: "31474888"
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp
 #include <stdio.h>  
 int errorhandler = 0;  
 void configureMyErrorFunc(int i)  
@@ -65,7 +65,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, daha karmaşık özel raporlama işlev gösterir. Switch deyimi çeşitli hata türleri tarafından tanımlandığı şekilde bu örnekte, işleme `reportType` parametresinin `_CrtDbgReportW`. Değiştirdiğiniz çünkü `_CrtDbgReportW`, kullanamazsınız `_CrtSetReportMode`. İşlevinizi çıkış işlemelidir. Bu işlevde ilk değişken bağımsız değişken bir çalışma zamanı hata numarası alır. Daha fazla bilgi için bkz: [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
-```  
+```cpp
 #include <windows.h>  
 #include <stdarg.h>  
 #include <rtcapi.h>  
@@ -110,7 +110,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ## <a name="example"></a>Örnek  
  Kullanım `_RTC_SetErrorFuncW` özel işlevinizi yerine yüklemek için `_CrtDbgReportW`. Daha fazla bilgi için bkz: [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW` Dönüş değeri kaydedin ve gerektiğinde geri önceki raporlama işlevi.  
   
-```  
+```cpp
 #include <rtcapi.h>  
 int main()  
 {  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 187c9e682877a0f0633e7d3210454d40cae9de0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478769"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057167"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Bir izleme izleme ve QuickWatch Windows Visual Studio kullanarak değişkenleri ayarlayın
 Hata ayıklarken, kullanabileceğiniz **izleme** ve **QuickWatch** değişkenleri ve ifadeler izlemek için windows.  Aralarındaki fark **izleme** penceresi birkaç değişkenleri görüntüleyebilir sırada **QuickWatch** penceresi, aynı anda tek bir değişken görüntüler. 
@@ -153,7 +153,7 @@ static void Main(string[] args)
 ##  <a name="bkmk_sideEffects"></a> Yan etkiler ve ifadeler  
  Bazı ifadeleri değerlendirme bir değişkenin değerini değiştirebilir veya aksi halde, programın durumunu etkiler. Örneğin, aşağıdaki ifade değerlendirme değerini değiştirir `var1`:  
   
-```  
+```csharp
 var1 = var2  
 ```  
   

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480338"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057180"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>İzlenecek Yol: Web Formunda Hata Ayıklama
 Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması, Web formu olarak da bilinir. Bunu başlatmak ve yürütme durdurmak, kesme noktalarını ayarlayın ve değişkenleri incelemek nasıl gösterir **izleme** penceresi.  
@@ -73,11 +73,11 @@ Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](.
   
 12. İçinde `Button1_Click` işlev, aşağıdaki kodu ekleyin:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
   
-    // C#  
+    ```csharp
     TextBox1.Text = "Button was clicked!";  
     ```  
   
@@ -91,11 +91,11 @@ Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](.
   
 1.  Default.aspx.cs veya Default.aspx.vb penceresinde sol kenar boşluğu eklediğiniz metin olarak aynı satıra tıklayın:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
-  
-    // C#  
+
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
@@ -117,17 +117,13 @@ Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](.
   
      **İzleme** penceresi gösterir değişkenin değeri olarak `TextBox1.Text`:  
   
-    ```  
-    ""  
-    ```  
+    '""' 
   
 7.  Üzerinde **hata ayıklama** menüsünde tıklatın **Step Over**.  
   
      Değeri `TextBox1.Text` değişiklikleri **izleme** penceresi okumak için:  
   
-    ```  
-    "Button was clicked!"  
-    ```  
+    `"Button was clicked!"`  
   
 8.  Üzerinde **hata ayıklama** menüsünde tıklatın **devam**.  
   
@@ -147,11 +143,11 @@ Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](.
   
 2.  Default.aspx.cs veya Default.aspx.vb penceresinde tekrar eklediğiniz satırında bir kesme noktası ayarlamak için sol kenar boşluğu'ı tıklatın:  
   
-    ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
+    ```
   
-    // C#  
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   

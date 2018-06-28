@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b462c3ed02ebd622a39cd08039037b3ba63e7f57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd660ea2cdeaaae5d37811406221a7d150ab9bef
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479428"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056667"
 ---
 # <a name="error-aspnet-not-installed"></a>Hata: ASP.NET Yüklü Değil
 Bu hata oluştuğunda, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] doğru hata ayıklamaya çalıştığınız bilgisayarda yüklü değil. Bu, anlamına gelebilir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hiç yüklenmemiştir veya [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ilk olarak yüklendiği ve IIS daha sonra yüklendi.  
@@ -35,7 +35,7 @@ Bu hata oluştuğunda, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.
   
 1.  Bir komut istemi penceresinden aşağıdaki komutu çalıştırın:  
   
-    ```  
+    ```cmd
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   

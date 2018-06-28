@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f25e277a4743d27115485e791fd44f12078a4b2f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282593"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058002"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017 bir ağ yüklemesi oluşturma
 
@@ -140,7 +140,7 @@ Kullandıysanız `--wait` parametresi, sonra işlemi sonucuna bağlı olarak `%E
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Bir önceki Visual Studio 2017 yayın için bir düzen oluşturma
 
 > [!NOTE]
-> Kullanılabilir Visual Studio 2017 Önyükleyiciler ile [VisualStudio.com](http://visualstudio.microsoft.com) indirin ve çalıştıkları her koşulda kullanılabilir en son Visual Studio 2017 sürümü yükleyin. Visual Studio önyükleyici hemen indirin ve şu andan itibaren altı ay çalıştırırsanız, bu daha sonra kullanılabilir Visual Studio 2017 yayın yükler. Bir düzen oluşturursanız, o düzeninden Visual Studio'yu yükleme düzeninde mevcut Visual Studio belirli sürümünü yükler. Yeni bir sürümünü çevrimiçi mevcut olabilecek olsa bile, Düzen Visual Studio sürümünü alır.
+> Kullanılabilir Visual Studio 2017 Önyükleyiciler ile [visualstudio.microsoft.com](http://visualstudio.microsoft.com) indirin ve çalıştıkları her koşulda kullanılabilir en son Visual Studio 2017 sürümü yükleyin. Visual Studio önyükleyici hemen indirin ve şu andan itibaren altı ay çalıştırırsanız, bu daha sonra kullanılabilir Visual Studio 2017 yayın yükler. Bir düzen oluşturursanız, o düzeninden Visual Studio'yu yükleme düzeninde mevcut Visual Studio belirli sürümünü yükler. Yeni bir sürümünü çevrimiçi mevcut olabilecek olsa bile, Düzen Visual Studio sürümünü alır.
 
 Visual Studio 2017 daha eski bir sürümü için bir düzen oluşturmanız gerekiyorsa, gidebilirsiniz https://my.visualstudio.com "sabit" Visual Studio 2017 Önyükleyiciler ile sürümleri karşıdan yüklemek için.
 

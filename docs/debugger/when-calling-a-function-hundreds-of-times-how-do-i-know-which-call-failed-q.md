@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6edf60616a3cbf67d05282ebd15798749b263f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bdae654dacf7c5965d51cc39f7970bd0347b9dcf
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481742"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056241"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>İşlevi Yüzlerce Kere Çağırırken Hangi Çağrının Başarısız Olduğunu Nasıl Bilebilirim?
 ## <a name="problem-description"></a>Sorun açıklaması  
@@ -43,7 +43,7 @@ ms.locfileid: "31481742"
 ## <a name="solution"></a>Çözüm  
  İşlev üzerinde bir kesme noktası ayarlayabilirsiniz **isabet sayısı** , hiçbir zaman ulaşılacak kadar yüksek bir değere alan. Bu durumda, işlevi düşünüyorsanız çünkü `CnvtV` birkaç adlı yüzlerce kez, ayarlayabilirsiniz **isabet sayısı** 1000 veya daha fazla. Ardından programını çalıştırın ve çağrısı başarısız bekleyin. Bu başarısız olduğunda, kesme noktaları penceresini açın ve kesme noktaları listesine bakın. Açık ayarlayın kesme noktası `CnvtV` görünür, ardından isabet sayısı ve kalan yineleme sayısı:  
   
-```  
+```cpp
 CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)  
 ```  
   

@@ -1,7 +1,7 @@
 ---
 title: MSBuild görevleri belirli Visual C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 446326fb8219183774d3f90d70a0263e0fc057e0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0aaec01c24e68c42d2dc87e71875f664b7b61def
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573765"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056517"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++'ye Özgü MSBuild Görevleri
 Görevler oluşturma işlemi sırasında çalışan bir kod sağlar. Visual C++ yüklü olduğunda, aşağıdaki görevleri ile birlikte yüklenen listelenenlere kullanılabilir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Daha fazla bilgi için bkz: [MSBuild (Visual C++) genel bakış](/cpp/build/msbuild-visual-cpp-overview).  
@@ -47,9 +47,12 @@ Görevler oluşturma işlemi sırasında çalışan bir kod sağlar. Visual C++ 
 |[MT Görevi](../msbuild/mt-task.md)|Microsoft Bildirimi aracı (mt.exe) sarmalar.|  
 |[RC Görevi](../msbuild/rc-task.md)|Microsoft Windows Kaynak Derleyicisi Aracı (rc.exe) sarmalar.|  
 |[SetEnv Görevi](../msbuild/setenv-task.md)|Ayarlar veya belirtilen ortam değişkeninin değeri siler.|  
-|[VCMessage Görevi](../msbuild/vcmessage-task.md)|Derleme sırasında iletileri ve hata iletilerini uyarı günlükleri.|  
+|[VCMessage Görevi](../msbuild/vcmessage-task.md)|Derleme sırasında iletileri ve hata iletilerini uyarı günlükleri. (Değil genişletilebilir. Yalnızca iç kullanım.)|  
 |[XDCMake Görevi](../msbuild/xdcmake-task.md)|XML Belge açıklama (.xdc) dosyaları bir .xml dosyasına birleştirir XML belgeleri Aracı (xdcmake.exe) sarmalar.|  
-|[XSD Görevi](../msbuild/xsd-task.md)|Şema veya sınıf dosyaları oluşturan bir kaynaktan XML şema tanımı Aracı (XSD.exe'nin) sarmalar.|  
+|[XSD Görevi](../msbuild/xsd-task.md)|Şema veya sınıf dosyaları oluşturan bir kaynaktan XML şema tanımı Aracı (XSD.exe'nin) sarmalar. *Aşağıdaki nota bakın.*|  
 |[MSBuild Başvurusu](../msbuild/msbuild-reference.md)|MSBuild sistem öğelerini açıklar.|  
 |[Görevler](../msbuild/msbuild-tasks.md)|Bir derleme üretme için birleştirilmiş kod birimleridir görevler açıklanmaktadır.|  
 |[Görev Yazma](../msbuild/task-writing.md)|Bir görevin nasıl oluşturulacağını açıklar.|
+
+> [!NOTE]
+> Visual Studio 2017 içinde C++ projesi XSD.exe'nin desteği kullanım dışıdır. Kullanmaya devam edebilirsiniz **Microsoft.VisualC.CppCodeProvider** el ile ekleyerek API'leri **CppCodeProvider.dll** GAC için.

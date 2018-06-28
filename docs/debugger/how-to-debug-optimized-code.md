@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9610f71a197c47521e2139d40aff1afde6a8a894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478086"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058516"
 ---
 # <a name="how-to-debug-optimized-code"></a>Nasıl Yapılır: İyileştirilmiş Kodda Hata Ayıklama
 > [!NOTE]
@@ -84,7 +84,7 @@ ms.locfileid: "31478086"
   
  İyileştirilmiş kodda hata ayıklarken kullanmak **ayrıştırılmış** hangi yönergeleri gerçekten oluşturulduğunu ve yürütülen görmek için penceresi. Kesme noktaları ayarladığınızda, kesme noktası ile birlikte bir yönerge taşıma bilmeniz gerekir. Örneğin, aşağıdaki kodu göz önünde bulundurun:  
   
-```  
+```cpp
 for (x=0; x<10; x++)  
 ```  
   

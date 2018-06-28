@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e35e8be8434adcf26f29f01c41720455f33232dd
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: adfd037cc7362a4aa088d57c3776379caf6de5e3
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946878"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057667"
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Etkileşimli pencerede IPython kullanma
 
@@ -29,20 +29,23 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
 
 1. Açık Visual Studio, Python ortamları penceresine anahtarı (**Görünüm > Diğer Pencereler > Python ortamları**) ve bir Anaconda ortamını seçin.
 
-1. İncelemek **paketleri (Conda)** sekmesinde (olarak görünür **PIP** veya **paketleri**) emin olmak bu ortam için `IPython` ve `matplotlib` listelenir. Yoksa, bunları burada yükleyin. (Bkz [Python ortamları Windows - paketleri sekmesi](python-environments-window-tab-reference.md).)
+1. İncelemek **paketleri (Conda)** sekmesinde (olarak görünür **PIP** veya **paketleri**) emin olmak bu ortam için `ipython` ve `matplotlib` listelenir. Yoksa, bunları burada yükleyin. (Bkz [Python ortamları Windows - paketleri sekmesi](python-environments-window-tab-reference.md).)
 
 1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam** ).
 
-1. Seçin **açık etkileşimli pencere** IPython modunda etkileşimli penceresi getirmek için. Etkileşimli mod yalnızca değiştirdiyseniz penceresi sıfırlamanız gerekebilir; yalnızca Enter tuşuna basın gerekebilir bir >>> istemi belirir.
+1. Seçin **açık etkileşimli pencere** IPython modunda etkileşimli penceresi getirmek için. Etkileşimli mod yalnızca değiştirdiyseniz penceresi sıfırlamanız gerekebilir; yalnızca Enter tuşuna basın gerekebilir bir >>> istemi görüntülenirse, böylece "[2]" gibi bir istem alın.
 
     ![IPython modunda etkileşimli penceresi](media/ipython-repl-03.png)
 
 1. Aşağıdaki kodu girin:
 
   ```python
-  x = linspace(0, 5, 10)
+  import matplotlib.pyplot as plt
+  import numpy as np
+  
+  x = np.linspace(0, 5, 10)
   y = x ** 2
-  plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
+  plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
   ```
 
 1. Son satırı girdikten sonra (hangi sağ alt köşesinde üzerinde sürükleyerek boyutlandırabilirsiniz) bir satır içi grafik görmelisiniz isterseniz.

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 438e5a96ef07faf399d06ae517afe313a44673b4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479396"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057856"
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Visual Studio ASP.NET uygulamalarında hata ayıklama
 
@@ -36,7 +36,7 @@ Bu konudaki yönergeleri izleyin, gerekir:
 
 - IIS, Visual Studio 2012 ve sonraki sürümlerinde varsayılan olarak bulunan Express
 
-    -veya-
+    veya
 
 - Yerel bir IIS web doğru bir şekilde yapılandırıldığından ve ASP.NET uygulaması hatasız çalıştırabilirsiniz sunucusu (sürüm 8.0 veya daha yüksek).
 
@@ -88,7 +88,7 @@ Web.config dosyasında aşağıdaki gibi görünmelidir:
   
 #### <a name="example"></a>Örnek  
   
-```  
+```xml
 <configuration>  
     ...  
     <system.web>  

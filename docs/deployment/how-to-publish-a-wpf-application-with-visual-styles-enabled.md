@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a091f8fc770b2e9bc6ef2e61e8287f0e8ded5323
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 921cb50efa3806c550d7fe8c949e00c3eb08f478
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233619"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057417"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: Görsel Stiller Etkinken WPF Uygulaması Yayımlama
-Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü sağlar. Bu nedenle el ile etkinleştirmeniz gerekir varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stiller etkin değildir. Ancak, WPF uygulaması için görsel stiller etkinleştirme ve çözüm yayımlamaya bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi çözümlemeye açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Hata iletisi hakkında daha fazla bilgi için bkz: [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
+Görsel stiller kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü sağlar. Bu nedenle el ile etkinleştirmeniz gerekir varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stiller etkin değildir. Ancak, WPF uygulaması için görsel stiller etkinleştirme ve çözüm yayımlamaya bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi çözümlemeye açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](/windows/desktop/Controls/visual-styles-overview). Hata iletisi hakkında daha fazla bilgi için bkz: [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Hatayı çözün ve Çözümü yayımlamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  
   
@@ -163,6 +163,6 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Görsel stiller genel bakış](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
+ [Görsel stiller genel bakış](/windows/desktop/Controls/visual-styles-overview)   
  [Görsel stiller etkinleştirme](https://msdn.microsoft.com/library/bb773175.aspx)   
  [Komut İstemleri](/dotnet/framework/tools/developer-command-prompt-for-vs)

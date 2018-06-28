@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b2c34971750d8e6db0173f6034342b9efbfd97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474420"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056303"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Visual Studio'da yazmaçlar penceresi hakkında
 **Kaydeder** penceredir yalnızca adres düzeyi hata ayıklama içinde etkinse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümü.  
@@ -41,13 +41,9 @@ ms.locfileid: "31474420"
   
  Görüntüleme hakkında daha fazla bilgi için **kaydeder** penceresinde bkz [kayıtları penceresini kullanarak](../debugger/how-to-use-the-registers-window.md).  
   
- Baktığınızda **kaydeder** penceresinde, bu örnek gibi girişleri görürsünüz:  
+ Baktığınızda **kaydeder** penceresinde girişleri gibi görürsünüz `EAX = 003110D8`.  
   
-```  
-EAX = 003110D8  
-```  
-  
- Simgenin = oturum solundaki kayıt EAX, bu durumda adıdır. = Oturum sağındaki sayıya yazmaç içerikleri temsil eder.  
+ Simgenin solundaki `=` işaretidir Yazmaç adı `EAX`, bu durumda. Sağ tarafındaki sayıya `=` oturum kayıt içeriğini temsil eder.  
   
  **Kaydeder** penceresi daha fazlasını görünümü bir kaydın içeriğini yapmanıza olanak sağlar. Yerel kodda kesme modunda olduğunda, bir kayıt içeriğine tıklatın ve değeri düzenleyin. Bu şeyin rastgele yapmalısınız değildir. Düzenlemekte olduğunuz kayıt ve raporda bulunan verilere anlamadan dikkatsiz düzenleme sonucunu programın kilitlendiğini veya başka bir istenmeyen sonuç olması olasıdır. Ne yazık ki, çeşitli Intel ve Intel dönük olarak uyumlu işlemci kayıt kümeleri hakkında ayrıntılı bir açıklama kadar bu kısa giriş kapsamı dışındadır gider.  
   

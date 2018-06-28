@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97e692d4d376473f3eaf283a53117d0bf343ea71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5a4a82f8974576b2a917b7bbaee7e757513501c7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477670"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058041"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Nasıl Yapılır: Yüksek Performanslı Kümede Hata Ayıklama
 Bir çoklu işlem programı yüksek performanslı kümede hata ayıklama uzak bir bilgisayarda sıradan bir program hata ayıklama gibi değildir. Ancak, bazı ek noktalar vardır. Genel Uzaktan Kurulum gereksinimleri için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md).  
@@ -95,9 +95,8 @@ Bir çoklu işlem programı yüksek performanslı kümede hata ayıklama uzak bi
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek adlı bir bilgisayarda bir kesme noktası için bir filtre oluşturulacağını gösterir `marvin` ve adlı bir iş parçacığı `fourier1`.  
   
-```  
-(MachineName = marvin) & (ThreadName = fourier1)  
-```  
+`(MachineName = marvin) & (ThreadName = fourier1)`  
+
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birden çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

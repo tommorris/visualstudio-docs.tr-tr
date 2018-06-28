@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5da503dd3eb1aec83c5f1fdef58261960d66d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477423"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057404"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Visual Studio'dan DLL projelerinde hata ayıklama
 Aşağıdaki Visual Studio şablonları DLL'leri oluşturun:  
@@ -82,7 +82,7 @@ DLL hata ayıklamak için çağıran uygulama, genellikle ya da bir EXE ya da bi
   
 2.  Adlı bir yöntem test etmek için `Test` sınıfında `Class1`, türünde bir nesne örneği `Class1` hemen penceresinde aşağıdaki C# kodu yazarak. Bu yönetilen kod Visual Basic ve C++ için uygun sözdizimini değişikliklerle çalışır:  
   
-    ```  
+    ```cpp
     Class1 obj = new Class1();  
     ```  
   
@@ -90,7 +90,7 @@ DLL hata ayıklamak için çağıran uygulama, genellikle ya da bir EXE ya da bi
   
 3.  Varsayılarak `Test` alır `int` parametresi değerlendirmek `Test` kullanarak **hemen** penceresi:  
   
-    ```  
+    ```cpp
     ?obj.Test(10)  
     ```  
   
@@ -98,7 +98,7 @@ DLL hata ayıklamak için çağıran uygulama, genellikle ya da bir EXE ya da bi
   
 4.  Hata ayıklama devam edebilirsiniz `Test` içindeki bir kesme noktası yerleştirme ve işlevi yeniden hesaplama:  
   
-    ```  
+    ```cpp
     ?obj.Test(10);  
     ```  
   

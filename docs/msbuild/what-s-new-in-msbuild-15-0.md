@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8c5100158b5761047d38e10f953fc832e0ce2b
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 485350efd38fda9c141fe0ee1ae9ee5cfbffcafd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302890"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056377"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 yenilikler nelerdir?
 
@@ -40,8 +40,7 @@ MSBuild kullanılabilir olarak şimdi parçası [.NET Core SDK](https://www.micr
 - `SDK35ToolsPath` Ve `SDK40ToolsPath` noktası özelliklerini (örneğin, 10.0A 4.X araçları için) Visual Studio'nun bu sürümü ile paketlenmiştir .NET Framework SDK'sının.
 
 ## <a name="updates"></a>Güncelleştirmeler
-
-- [Proje öğesi](../msbuild/project-element-msbuild.md) yeni bir sahip `SDK` özniteliği. Ayrıca `Xmlns` özniteliktir artık isteğe bağlı. Daha fazla bilgi için bkz: [nasıl yapılır: kullanım MSBuild proje SDK'ları](../msbuild/how-to-use-project-sdk.md)hem de [paketleri, meta verileri ve çerçeveleri](/dotnet/core/packages) ve [csproj eklemeler biçimlendirmek için .NET Core](/dotnet/core/tools/csproj).
+- [Proje öğesi](../msbuild/project-element-msbuild.md) yeni bir sahip `SDK` özniteliği. Ayrıca `Xmlns` özniteliktir artık isteğe bağlı. Hakkında daha fazla bilgi için `SDK` özniteliği için bkz: [nasıl yapılır: kullanım MSBuild proje SDK'ları](../msbuild/how-to-use-project-sdk.md), [paketleri, meta verileri ve çerçeveleri](/dotnet/core/packages) ve [csproj eklemeler biçimlendirmek için .NET Core ](/dotnet/core/tools/csproj).
 - [Madde öğesi](../msbuild/item-element-msbuild.md) dış hedefleri olan yeni bir `Update` özniteliği. Ayrıca, bir sınırlama `Remove` özniteliği ortadan kaldırılmıştır.
 - `Directory.Build.props` bir dizini altındaki projelerine özelleştirmeleri sağlayan bir kullanıcı tarafından tanımlanan dosyasıdır. Bu dosya sürece Microsoft.Common.props otomatik olarak içeri aktarılır özelliği `ImportDirectoryBuildTargets` ayarlanır **false**. `Directory.Build.targets` Microsoft.Common.targets tarafından alınır.
 - Herhangi bir meta veri öznitelikleri geçerli listesiyle çakışan olmayan bir ad ile isteğe bağlı olarak bir özniteliği olarak ifade edilebilir. Daha fazla bilgi için bkz: [öğe unsuru](../msbuild/item-element-msbuild.md).

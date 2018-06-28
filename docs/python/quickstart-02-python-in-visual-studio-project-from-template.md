@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dca1e37a0cde89a2a531d3fceea4337bb9e348dd
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957343"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057030"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 
@@ -37,11 +37,31 @@ Seçtiğiniz sonra [Python desteği Visual Studio 2017 yüklü](installing-pytho
     > [!Tip]
     > Bir proje başladığınızda, çoğu Visual Studio şablonları yapmak için davet gibi yüksek oranda hemen, sanal bir ortam oluşturmak için önerilir. Kitaplıkları ekleyip gibi sanal ortamlar, projenizin tam gereksinimlerini zamanla güncelleştirin. Daha sonra kolayca oluşturabileceğiniz bir `requirements.txt` bu bağımlılıkların (zaman kullanarak denetim kaynağı gibi) diğer geliştirme bilgisayarlar üzerinde yeniden yüklemek için kullandığınız dosya ve Proje üretim sunucusuna dağıtırken. Sanal ortamları ve bunların avantajları hakkında daha fazla bilgi için bkz: [sanal ortamlar kullanarak](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) ve [requirements.txt ile gerekli paketleri yönetme](../python/managing-required-packages-with-requirements-txt.md).
 
-1. Visual Studio bu ortam oluşturduktan sonra konum **Çözüm Gezgini** olduğunu görmek için bir `app.py` ile birlikte dosya `requirements.txt`. Açık `app.py` şablon kodu gibi içinde sağlamıştır görmek için [hızlı başlangıç - Flask ile bir web uygulaması oluşturma](../ide/quickstart-python.md), iki bölümleri eklendi.
+1. Visual Studio bu ortam oluşturduktan sonra konum **Çözüm Gezgini** olduğunu görmek için bir `app.py` ile birlikte dosya `requirements.txt`. Açık `app.py` şablon kodu gibi içinde sağlamıştır görmek için [hızlı başlangıç - Flask ile bir web uygulaması oluşturma](../ide/quickstart-python.md), birkaç eklenen bölümleri ile. Aşağıda gösterilen tüm kodları oluşturulur şablon tarafından hiçbir yapıştırın gerek kalmaması `app.py` kendiniz.
 
-    İlk satırı olan `wsgi_app = app.wsgi_app` , yararlı olabilir bir uygulama bir web ana bilgisayara dağıtırken.
+    Kod gerekli içeri aktarmaları ile başlar:
 
-    İkinci ana bilgisayarı ve bağlantı noktası üzerinden bunları kodlamak yerine ortam değişkenleri ayarlamanıza olanak veren başlangıç kodudur. Bu kod, kodunu değiştirmeden geliştirme ve üretim makinelerde yapılandırma kolayca denetlemenizi sağlar:
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+    ```
+
+    Sonraki bir uygulama bir web ana bilgisayara dağıtırken yararlı olabilecek aşağıdaki satır şöyledir:
+
+    ```python
+    wsgi_app = app.wsgi_app
+    ```
+
+    Ardından rota oluşturma öğesi bir görünümü tanımlayan bir basit işlevi sunar:
+
+    ```python
+    @app.route('/')
+    def hello():
+        """Renders a sample page."""
+        return "Hello World!"
+    ```
+
+    Son olarak, aşağıdaki başlatma kodunu ana bilgisayarı ve bağlantı noktası üzerinden bunları kodlamak yerine ortam değişkenleri ayarlamanıza olanak sağlar. Bu kod, kodunu değiştirmeden geliştirme ve üretim makinelerde yapılandırma kolayca denetlemenizi sağlar:
 
     ```python
     if __name__ == '__main__':

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9035b9232d1b2e459be86c24758dcc6db6b1cdf
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 09d48461d46153731d66844080cb35aa1135d17c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281670"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056984"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
@@ -34,7 +34,7 @@ Kullanmak daha iyi olup olmadığını de düşünebilirsiniz [oluşturabilir ve
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Test denetleyicisi ve test aracılarını yükleme
 
-Aracılar için Visual Studio 2017 ' indirebilirsiniz [visualstudio.com](https://visualstudio.microsoft.com/downloads/?q=agents). Sayfanın alt kısmına kaydırın ve Ara *aracılar için Visual Studio 2017*. Şunlardan birini seçin *Aracısı* veya *denetleyicisi*ve ardından *karşıdan*. Test aracısı veya denetleyicisi yüklemek için karşıdan yüklenen yürütülebilir dosyayı çalıştırmak.
+Aracılar için Visual Studio 2017 ' indirebilirsiniz [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Sayfanın alt kısmına kaydırın ve Ara *aracılar için Visual Studio 2017*. Şunlardan birini seçin *Aracısı* veya *denetleyicisi*ve ardından *karşıdan*. Test aracısı veya denetleyicisi yüklemek için karşıdan yüklenen yürütülebilir dosyayı çalıştırmak.
 
 Visual Studio 2015 ve Visual Studio 2013 için aracıları yükleyebilirsiniz [eski yüklemeleri](https://visualstudio.microsoft.com/vs/older-downloads/) sayfası.
 

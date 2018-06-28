@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478141"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058704"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>İzlenecek Yol: Visual Basic'de Görselleştirici Yazma
 Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Bu kılavuzda oluşturacak Görselleştirici bir Windows Forms ileti kutusu kullanarak bir dize içeriğini görüntüler. Bu basit bir dize Görselleştirici nasıl görselleştiriciler diğer veri türleri için daha uygun projelerinize oluşturabilirsiniz göstermek için basit bir örnektir.  
@@ -66,7 +66,7 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
   
 6.  Şu deyimi DebuggerSide.vb içinde eklemek `Imports` deyimleri:  
   
-    ```  
+    ```vb
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
     ```  
   
@@ -77,13 +77,13 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
   
 1.  DebuggerSide.vb içinde aşağıdaki kod satırına gidin:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     ```  
   
 2.  Kod şuna benzer şekilde düzenleyin:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     Inherits DialogDebuggerVisualizer  
     ```  
@@ -94,7 +94,7 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
   
 -   İçinde `public class DebuggerSide`, aşağıdaki yöntemi ekleyin:  
   
-    ```  
+    ```vb
     Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
         End Sub  
@@ -112,7 +112,7 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
   
 4.  Şu deyimi DebuggerSide.cs içinde eklemek `Imports` deyimleri:  
   
-    ```  
+    ```vb
     Imports System.Windows.Forms  
     ```  
   
@@ -123,7 +123,7 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
   
 1.  İçinde `Show` yöntemi, aşağıdaki kod satırını ekleyin:  
   
-    ```  
+    ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())  
     ```  
   
@@ -138,7 +138,7 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
   
 1.  DebuggerSide.vb için aşağıdaki öznitelik kodu ekleyin `Imports` deyimleri önce `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
@@ -151,7 +151,7 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
   
 1.  Sınıfına aşağıdaki yöntemi ekleyin `public DebuggerSide`:  
   
-    ```  
+    ```vb
     Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
         Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
     visualizerHost.ShowVisualizer()  
@@ -201,13 +201,13 @@ Bu kılavuzu kullanarak basit Görselleştirici yazma gösterilmektedir [!INCLUD
   
 3.  TestConsole içinde. vb, aşağıdakileri ekleyin `Imports` deyimi:  
   
-    ```  
+    ```vb
     Imports MyFirstVisualizer  
     ```  
   
 4.  Yönteminde `Main`, aşağıdaki kodu ekleyin:  
   
-    ```  
+    ```vb
     Dim myString As String = "Hello, World"  
     DebuggerSide.TestShowVisualizer(myString)  
     ```  

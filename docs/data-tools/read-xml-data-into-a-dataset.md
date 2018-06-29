@@ -22,37 +22,25 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e743eebf7873a7eabdd41907acbe3f5d8bce9c8b
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745942"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089522"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
+
 ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda, bir veri kümesini XML verileri yükler bir Windows uygulaması oluşturun. Veri kümesi sonra görüntülenen bir <xref:System.Windows.Forms.DataGridView> denetim. Son olarak, XML dosyasının içeriğine göre bir XML şeması bir metin kutusunda görüntülenir.
 
- Bu kılavuzda beş ana adımdan oluşur:
-
-1.  Yeni proje oluşturma
-
-2.  Dataset nesnesine okumak için bir XML dosyası oluşturma
-
-3.  Kullanıcı arabirimi oluşturma
-
-4.  Veri kümesi oluşturma, XML dosyası okumak ve içinde görüntüleme bir <xref:System.Windows.Forms.DataGridView> denetimi
-
-5.  XML şeması görüntülemek için kod ekleme temel XML dosyasında bir <xref:System.Windows.Forms.TextBox> denetimi
-
 > [!NOTE]
->  İletişim kutuları ve menü komutlarını açıklanana Yardımı'nda etkin ayarlarınızı veya edition bağlı olarak değişebilir gördüğünüz kullandığınız. Ayarlarınızı değiştirmek için **Araçları** menüsünde, select **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> İletişim kutuları ve menü komutlarını açıklanana Yardımı'nda etkin ayarlarınızı veya edition bağlı olarak değişebilir gördüğünüz kullandığınız. Ayarlarınızı değiştirmek için **Araçları** menüsünde, select **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
- Bu adımda, bu kılavuzda içeren bir Visual Basic veya Visual C# projesi oluşturun.
 
-#### <a name="to-create-the-new-windows-project"></a>Yeni Windows projesi oluşturmak için
+Bu adımda, bir Visual Basic veya Visual C# projesi oluşturun.
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
@@ -60,20 +48,19 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
 
 4. Proje adı **ReadingXML**ve ardından **Tamam**.
 
-     **ReadingXML** projesi oluşturulur ve eklenen **Çözüm Gezgini**.
+   **ReadingXML** projesi oluşturulur ve eklenen **Çözüm Gezgini**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Dataset nesnesine okumak için XML dosyası oluşturma
- Bu kılavuz bir veri kümesini XML verilerini okuma üzerinde odaklanır olduğundan, bir XML dosyasının içeriğini sağlanır.
 
-#### <a name="to-create-the-xml-file-that-will-be-read-into-the-dataset"></a>Veri kümesini okuma XML dosyasını oluşturmak için
+Bu kılavuz bir veri kümesini XML verilerini okuma üzerinde odaklanır olduğundan, bir XML dosyasının içeriğini sağlanır.
 
 1.  Üzerinde **proje** menüsünde, select **Yeni Öğe Ekle**.
 
-2.  Seçin **XML dosyası**, dosya adı `authors.xml`ve ardından **Ekle**.
+2.  Seçin **XML dosyası**, dosya adı **authors.xml**ve ardından **Ekle**.
 
-     XML dosyasını tasarımcıya yükler ve düzenleme için hazır.
+   XML dosyasını tasarımcıya yükler ve düzenleme için hazır.
 
-3.  XML bildirimi aşağıda düzenleyicisine aşağıdaki kodu yapıştırın:
+3.  Aşağıdaki XML verileri, XML bildirimi aşağıda düzenleyicisine yapıştırın:
 
     ```xml
     <Authors_Table>
@@ -138,7 +125,8 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
 4.  Üzerinde **dosya** menüsünde, select **authors.xml kaydetmek**.
 
 ## <a name="create-the-user-interface"></a>Kullanıcı arabirimi oluşturma
- Bu uygulama için kullanıcı arabirimi aşağıdakilerden oluşur:
+
+Bu uygulama için kullanıcı arabirimi aşağıdakilerden oluşur:
 
 -   A <xref:System.Windows.Forms.DataGridView> verileri olarak XML dosyasının içeriğini görüntüleyen denetim.
 
@@ -150,7 +138,7 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
 
     -   İkinci düğme kümesinden ve aracılığıyla şema ayıklar bir <xref:System.IO.StringWriter> görüntüler <xref:System.Windows.Forms.TextBox> denetim.
 
-#### <a name="to-add-controls-to-the-form"></a>Forma denetim eklemek için
+### <a name="to-add-controls-to-the-form"></a>Forma denetim eklemek için
 
 1.  Açık `Form1` Tasarım görünümünde.
 
@@ -174,9 +162,8 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
     ||**Metin**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>XML verileri alan veri kümesi oluşturma
- Bu adımda oluşturduğunuz adlı yeni bir veri kümesi `authors`. Veri kümeleri hakkında daha fazla bilgi için bkz: [Visual Studio'da veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
 
-#### <a name="to-create-a-new-dataset-that-receives-the-xml-data"></a>XML verileri alan yeni bir veri kümesi oluşturmak için
+Bu adımda oluşturduğunuz adlı yeni bir veri kümesi `authors`. Veri kümeleri hakkında daha fazla bilgi için bkz: [Visual Studio'da veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
 
 1.  İçinde **Çözüm Gezgini**, kaynak dosyasını seçmek **Form1**ve ardından **Görünüm Tasarımcısı** düğmesini **Çözüm Gezgini** araç çubuğu.
 
@@ -189,9 +176,8 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
 4.  İçinde **özellikleri** penceresindeki ayarlayın **adı** ve <xref:System.Data.DataSet.DataSetName%2A> özelliklerini`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Veri kümesini XML dosyasını okumak için olay işleyicisi oluşturun
- **Okuma XML** düğmesi kümesine XML dosyasını okur. Üzerinde özellikleri daha sonra Ayarlar <xref:System.Windows.Forms.DataGridView> kümesine bağlamak denetim.
 
-#### <a name="to-add-code-to-the-readxmlbuttonclick-event-handler"></a>ReadXmlButton_Click olay işleyicisi için kod eklemek için
+**Okuma XML** düğmesi kümesine XML dosyasını okur. Üzerinde özellikleri daha sonra Ayarlar <xref:System.Windows.Forms.DataGridView> kümesine bağlamak denetim.
 
 1.  İçinde **Çözüm Gezgini**seçin **Form1**ve ardından **Görünüm Tasarımcısı** düğmesini **Çözüm Gezgini** araç.
 
@@ -207,9 +193,8 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
 4.  İçinde `ReadXMLButton_Click` olay işleyici kodu, değişiklik `filepath =` doğru yola girişi.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Metin kutusuna şemasını görüntülemek için olay işleyicisi oluşturun
- **Göster şema** düğmesi oluşturur bir <xref:System.IO.StringWriter> şeması ile doldurulur ve görüntülenen nesne <xref:System.Windows.Forms.TextBox>denetim.
 
-#### <a name="to-add-code-to-the-showschemabuttonclick-event-handler"></a>ShowSchemaButton_Click olay işleyicisi için kod eklemek için
+**Göster şema** düğmesi oluşturur bir <xref:System.IO.StringWriter> şeması ile doldurulur ve görüntülenen nesne <xref:System.Windows.Forms.TextBox>denetim.
 
 1.  İçinde **Çözüm Gezgini**seçin **Form1**ve ardından **Görünüm Tasarımcısı** düğmesi.
 
@@ -217,15 +202,14 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
 
      **Kod düzenleyicisinde** adresindeki açılır `ShowSchemaButton_Click` olay işleyicisi.
 
-3.  Aşağıdaki kodu yazın `ShowSchemaButton_Click` olay işleyicisi.
+3.  Aşağıdaki kodu yapıştırın `ShowSchemaButton_Click` olay işleyicisi.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
 
 ## <a name="test-the-form"></a>Formun test
- Artık formun beklendiği gibi davranır emin olmak için test edebilirsiniz.
 
-#### <a name="to-test-the-form"></a>Formu sınamak için
+Artık formun beklendiği gibi davranır emin olmak için test edebilirsiniz.
 
 1.  Seçin **F5** uygulamayı çalıştırın.
 
@@ -237,14 +221,15 @@ ADO.NET XML verilerle çalışmak için basit yöntemleri sağlar. Bu kılavuzda
 
      Metin kutusu XML dosyasını XML Şeması görüntüler.
 
-## <a name="next-steps"></a>Sonraki Adımlar
- Bu kılavuzda XML dosyasının içeriğini temel alarak bir şema oluşturma yanı sıra bir XML dosyası bir veri kümesini okuma temelleri öğretir. Sonraki yapabilecek bazı görevler şunlardır:
+## <a name="next-steps"></a>Sonraki adımlar
+
+Bu kılavuzda XML dosyasının içeriğini temel alarak bir şema oluşturma yanı sıra bir XML dosyası bir veri kümesini okuma temelleri öğretir. Sonraki yapabilecek bazı görevler şunlardır:
 
 -   Veri kümesi ve geri XML olarak yazma veriler düzenleyin. Daha fazla bilgi için bkz. <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Veri kümesindeki düzenleyin ve bir veritabanına yazamadı. Daha fazla bilgi için bkz: [verileri kaydetme](../data-tools/saving-data.md).
+-   Veri kümesindeki düzenleyin ve bir veritabanına yazamadı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)
-- [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)
+- [Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)

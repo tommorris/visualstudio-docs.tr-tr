@@ -13,15 +13,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17e91ac47b4e8a6a2d94caa523309bc0cfe9dd7e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8ea6494cbf71cced24ead52cd091500578b25f8c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281371"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089821"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve tepki uygulaması oluşturma
-Visual Studio kolayca bir Node.js projesi oluşturun ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikleri yararlanan sağlar. Bu öğreticide Visual Studio için Visual Studio şablonundan bir Node.js web uygulaması projesi oluşturun. Ardından, tepki kullanarak basit bir uygulama oluşturun.
+
+Visual Studio kolayca bir Node.js projesi oluşturun ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikleri deneyimi sağlar. Bu öğreticide Visual Studio için Visual Studio şablonundan bir Node.js web uygulaması projesi oluşturun. Ardından, tepki kullanarak basit bir uygulama oluşturun.
 
 Bu öğreticide, bilgi nasıl yapılır:
 > [!div class="checklist"]
@@ -37,7 +38,7 @@ Bu öğreticide, bilgi nasıl yapılır:
 
     Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-    İş yükü yüklenir ancak tıklatın Visual Studio zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu. Visual Studio yükleyicisi başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
+    Gerekiyorsa iş yükü yükleyin ancak zaten Visual Studio varsa, seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu. Visual Studio yükleyicisi başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
 
 * Node.js çalışma zamanı yüklü olması gerekir.
 
@@ -46,6 +47,7 @@ Bu öğreticide, bilgi nasıl yapılır:
     LTS sürümünden yüklü yoksa, yükleme [Node.js](https://nodejs.org/en/download/) Web sitesi. Genel olarak, Visual Studio yüklenmiş Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılamazsa yüklü çalışma zamanı özellikleri sayfasında başvurmak için projenizi yapılandırabilirsiniz (bir proje oluşturduktan sonra proje düğümüne sağ tıklayın ve seçin **özellikleri**).
 
 ## <a name="create-a-project"></a>Proje oluşturma
+
 İlk olarak, bir Node.js web uygulaması projesi oluşturun.
 
 1. Visual Studio 2017'ni açın.
@@ -60,13 +62,13 @@ Bu öğreticide, bilgi nasıl yapılır:
 
     ![Çözüm Gezgini'nde node.js projesi](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
-    - Kalın olarak vurgulanmış olan, vermiş adını kullanarak projenize **yeni proje** iletişim kutusu. Dosya sisteminde, bu proje tarafından temsil edilen bir *.njsproj* proje klasörünüzdeki dosya. Özellikler ve projeye sağ tıklayıp seçerek projeyle ilişkili ortam değişkenleri ayarlayabilirsiniz **özellikleri**. Proje dosyası Node.js projesi kaynağına özel değişiklikler yapmaz beri gidiş diğer geliştirme araçları ile yapabilirsiniz.
+    * Kalın olarak vurgulanmış olan, vermiş adını kullanarak projenize **yeni proje** iletişim kutusu. Dosya sisteminde, bu proje tarafından temsil edilen bir *.njsproj* proje klasörünüzdeki dosya. Özellikler ve projeye sağ tıklayıp seçerek projeyle ilişkili ortam değişkenleri ayarlayabilirsiniz **özellikleri**. Proje dosyası Node.js projesi kaynağına özel değişiklikler yapmaz beri gidiş diğer geliştirme araçları ile yapabilirsiniz.
 
-    - En üst düzeyinde varsayılan olarak, projenizin aynı ada sahip bir, çözümüdür. Tarafından temsil edilen bir çözüm bir *.sln* dosya diskte, bir veya daha fazla ilgili projeleri için bir kapsayıcıdır.
+    * En üst düzeyinde varsayılan olarak, projenizin aynı ada sahip bir, çözümüdür. Tarafından temsil edilen bir çözüm bir *.sln* dosya diskte, bir veya daha fazla ilgili projeleri için bir kapsayıcıdır.
 
-    - Npm düğüm herhangi bir yüklü npm paket gösterir. Arayın ve iletişim kutusunu kullanarak npm paket yüklemek için npm düğümünü sağ tıklayabilirsiniz.
+    * Npm düğüm herhangi bir yüklü npm paket gösterir. Arayın ve iletişim kutusunu kullanarak npm paket yüklemek için npm düğümünü sağ tıklayabilirsiniz.
 
-    - Proje dosyaları gibi *server.js* proje düğümünün altında görünür. *Server.js* proje başlangıç dosyasıdır.
+    * Proje dosyaları gibi *server.js* proje düğümünün altında görünür. *Server.js* proje başlangıç dosyasıdır.
 
 ## <a name="add-npm-packages"></a>Npm paket ekleme
 
@@ -85,11 +87,11 @@ Bu uygulama npm modülleri düzgün çalışması için bir dizi gerektirir.
 
     İçinde **yükleme yeni npm paketler** iletişim kutusu, seçebilirsiniz en güncel paket sürümünü yükleyin veya bir sürüm belirtin. Bu paketleri geçerli sürümünü yüklemek, ancak daha sonra beklenmeyen hatalarla karşılaşırsanız çalıştırmak isterseniz, daha sonra Bu adımlarda açıklanan tam paketi sürümleri yüklemeniz gerekebilir.
 
-1. İçinde **yükleme yeni npm paket** iletişim kutusunda, aramak için tepki paketi ve tıklayın **paket yükleme** yüklemek için.
+1. İçinde **yükleme yeni npm paket** iletişim kutusu, tepki paketi için arama yapın ve seçin **paket yükleme** yükleyin.
 
     ![Npm paket yüklemek için](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    Tıklatın **çıkış** paket yükleme ilerleme durumunu görmek için penceresini (seçin **Npm** içinde **Göster çıktı** alan). Yüklendiğinde, paketin altında görünür **npm** düğümü.
+    Seçin **çıkış** paket yükleme ilerleme durumunu görmek için penceresini (seçin **Npm** içinde **Göster çıktı** alan). Yüklendiğinde, paketin altında görünür **npm** düğümü.
 
     Projenin *package.json* dosya, Paket sürümü de dahil olmak üzere yeni paket bilgilerle güncelleştirilir.
 
@@ -110,7 +112,7 @@ Bu uygulama npm modülleri düzgün çalışması için bir dizi gerektirir.
 
 1. Sağ **npm** projenizi düğümünde ve **güncelleştirmesi npm paketleri**.
 
-    Tıklatın **çıkış** paketleri yükleme ilerleme durumunu görmek için penceresi. Bu işlem birkaç dakika sürebilir ve sonuçları hemen göremeyebilirsiniz.
+    Seçin **çıkış** paketleri yükleme ilerleme durumunu görmek için penceresi. Yükleme birkaç dakika sürebilir ve sonuçları hemen göremeyebilirsiniz.
 
     Burada, onlar yüklendikten sonra Çözüm Gezgini'nde göründükleri gibi npm modülleri bulunmaktadır.
 
@@ -132,7 +134,7 @@ Bu basit uygulama için proje kök dizininde yeni proje dosyalarını ekleyin. (
 
 1. Çözüm Gezgini'nde projeye sağ **NodejsWebAppBlank** ve **Ekle** > **yeni öğe**.
 
-1. İçinde **Yeni Öğe Ekle** iletişim kutusunda, seçin **TypeScript JSX dosya**, bir ad yazın *app.tsx*, tıklatıp **Tamam**.
+1. İçinde **Yeni Öğe Ekle** iletişim kutusunda, seçin **TypeScript JSX dosya**, bir ad yazın *app.tsx*seçip **Tamam**.
 
 1. Eklemek için bu adımları yineleyin *webpack config.js*. TypeScript JSX dosya yerine **JavaScript dosyası**.
 
@@ -268,13 +270,13 @@ Bu basit uygulama için proje kök dizininde yeni proje dosyalarını ekleyin. (
 
     Önceki çıkış yerine herhangi bir hata görürseniz, uygulamanızı çalışmadan önce çözmeniz gerekir. Npm Paket sürümü Bu öğreticide gösterilen sürümlerinden farklı ise, hataların bir kaynak olabilir. Hataları düzeltin yollarından biri önceki adımlarda gösterilen tam sürümünü kullanmaktır. Ayrıca, bir veya daha fazla bu paketi sürümleri kullanım dışı bırakıldı ve bir hatayla sonuçlanır, hataları düzeltmek için daha yeni bir sürümünü yüklemeniz gerekebilir.
 
-1. Çözüm Gezgini'nde, proje düğümüne sağ tıklayın ve seçin **Ekle** > **varolan bir klasörü**, ardından *dağ* klasörü ve tıklatın  **Klasörü seçin**.
+1. Çözüm Gezgini'nde, proje düğümüne sağ tıklayın ve seçin **Ekle** > **varolan bir klasörü**, ardından *dağ* klasörü seçin  **Klasörü seçin**.
 
     Visual Studio ekler *dağ* klasörünü içeren projeye *uygulama bundle.js* ve *uygulama bundle.js.map*.
 
 1. Açık *uygulama bundle.js* transpiled JavaScript kodu görmek için.
 
-1. Dışarıdan değiştirilmiş dosyaları yeniden yüklemek isteyip istemediğiniz sorulduğunda tıklatın **Tümüne Evet**.
+1. Dışarıdan değiştirilmiş dosyaları yeniden yüklemek isteyip istemediğiniz sorulduğunda seçin **Tümüne Evet**.
 
     ![Değiştirilen dosyalar yükleme](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
@@ -340,7 +342,7 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
 
 1. İçinde **ekleme işlemi için** iletişim kutusunda, seçin **Webkit kod** içinde **ekleme** alanında, yazın **chrome** ve filtre kutusuna filtrelemek için Arama sonuçları.
 
-1. Seçin doğru konak Chrome işlemine (Bu örnekte 1337) bağlantı noktası ve ' **Attach**.
+1. Doğru konak Chrome işlemine (Bu örnekte 1337) bağlantı noktası seçin seçip **Attach**.
 
     ![İşleme iliştirilemiyor](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -366,7 +368,7 @@ Her zaman yaptığınız değişiklikler *app.tsx*, webpack komutunu çalıştı
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticide, Node.js ve tepki uygulama, transpile JSX ve hata ayıklama nasıl oluşturulacağı hakkında bilgi edindiniz. Visual Studio için Node.js araçları hakkında daha fazla bilgi edinmek için Wiki sayfasına bakın.
-
 > [!div class="nextstepaction"]
-> [Visual Studio için node.js araçları](https://github.com/Microsoft/nodejstools)
+> [Uygulama Azure App Service'e dağıtma](../deployment/quickstart-deploy-to-azure.md)
+
+Bu öğreticide, Node.js ve tepki uygulama, transpile JSX ve hata ayıklama nasıl oluşturulacağı hakkında bilgi edindiniz. Daha fazla bilgi için bkz: [github'da Visual Studio için Node.js Araçları](https://github.com/Microsoft/nodejstools).

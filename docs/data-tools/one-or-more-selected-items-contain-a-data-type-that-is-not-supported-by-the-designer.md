@@ -1,5 +1,5 @@
 ---
-title: Bir veya daha fazla seçili öğeleri içeren tasarımcı tarafından desteklenmeyen bir veri türü
+title: Seçilen bir veya birden çok öğe, tasarımcı tarafından desteklenmeyen bir veri türü içeriyor
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
@@ -10,22 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 710bd42ea87f4d994a3176a736a55f534d1d9fd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68d8675df54e37b9a6122b853e742addc0d8060c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920792"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089496"
 ---
-# <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Bir veya daha fazla seçili öğeleri içeren tasarımcı tarafından desteklenmeyen bir veri türü
+# <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Seçilen bir veya birden çok öğe, tasarımcı tarafından desteklenmeyen bir veri türü içeriyor
 
-Bir veya daha fazla öğe sürüklenip **Sunucu Gezgini**/**Database Explorer** üzerine [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] tarafından desteklenmeyen bir veri türü içeren [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Örneğin, [CLR kullanıcı tanımlı türler](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Bir veya daha fazla öğe sürüklenip **Sunucu Gezgini** veya **Database Explorer** üzerine **O/R Tasarımcısı** tarafından desteklenmeyen bir veri türü içeren **O / R Tasarımcısı**, örneğin, [CLR kullanıcı tanımlı türler](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
 1. İstenen tabloyu temel alan bir görünüm oluşturun ve desteklenmeyen veri türünü içermiyor.
 
-2. Görünümden sürükleyin **Sunucu Gezgini**/**Database Explorer** tasarımcıya.
+2. Görünümden sürükleyin **Sunucu Gezgini** veya **Database Explorer** tasarımcıya.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

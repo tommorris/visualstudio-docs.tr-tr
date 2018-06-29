@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7459b4292220e6bb1e5a00b912efe7eb99cce825
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148655"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089376"
 ---
-# <a name="vsix-extension-schema-20-reference"></a>VSIX uzantısı 2.0 şema başvurusu
+# <a name="vsix-extension-schema-20-reference"></a>VSIX Uzantı Şeması 2.0 Başvurusu
 VSIX dağıtım bildirim dosyası VSIX paket içeriğini açıklar. Dosya biçimi, bir şema tarafından yönetilir. Özel türler ve öznitelikler ekleyerek bu şemayı 2.0 sürümünü destekler.  Bildirim şeması genişletilebilir. Bildirim yükleyicisi XML öğeleri ve onu anlamıyor öznitelikleri yoksayar.  
   
 > [!IMPORTANT]
@@ -182,7 +182,9 @@ VSIX dağıtım bildirim dosyası VSIX paket içeriğini açıklar. Dosya biçim
   
          Kendi türlerinizi oluşturabilir ve bunları benzersiz adlar verin. Visual Studio içindeki çalışma zamanında kodunuzu numaralandırır ve bu özel türler Uzantı Yöneticisi API aracılığıyla erişim.  
   
-    -   Yol - dosya veya klasör varlığı içeren paketin içinde göreli yolu.  
+    -   `Path` -Dosya veya klasör varlığı içeren paketin içinde göreli yolu.  
+    
+    -   `TargetVersion` -içinde belirtilen varlık uygulandığı sürüm aralığı. Visual Studio farklı sürümlerini varlıklarına birden fazla sürümünü sevkiyat için kullanılır. Olabilmesi Visual Studio 2017.3 veya üstünü gerektirir.
   
     -   `AnyAttribute*` -Bir ad-değer çifti sözlüğü olarak çalışma zamanında gösterilmesine öznitelikleri uçlu bir dizi.  
   

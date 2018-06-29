@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a6f1aca4b0a97211cfcc1d5559868c95b856e5c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746184"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089444"
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 Bu kılavuz, verileri bir biçimden diğerine geçirmek için adım adım yönergeler sağlar. Northwind siparişleri tablolardan ve müşteriler kullanarak, bir form kullanıcıların bir müşteri seçmesine izin verir ve seçilen müşterinin siparişleri ikinci bir form görüntüler. Bu kılavuzda ilk formundan verileri alan ikinci form üzerinde bir yöntem oluşturulacağını gösterir.
@@ -55,7 +55,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .
+    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu**.
 
        Sorgu Düzenleyicisi penceresini açar.
 
@@ -63,13 +63,13 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
     3. T-SQL betiği sorgu düzenleyicisine yapıştırın ve ardından **yürütme** düğmesi.
 
-       Kısa bir süre sonra sorgu yürütme tamamlandıktan ve Northwind veritabanı oluşturulur.
+       Kısa bir süre sonra sorgu tamamlanır ve Northwind veritabanı oluşturulur.
 
 ## <a name="create-the-windows-forms-application"></a>Windows Forms uygulaması oluşturma
 
-#### <a name="to-create-the-new-windows-project"></a>Yeni Windows projesi oluşturmak için
+### <a name="to-create-the-new-windows-project"></a>Yeni Windows projesi oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
@@ -81,7 +81,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 ## <a name="create-the-data-source"></a>Veri kaynağı oluşturun
 
-#### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için
+### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için
 
 1.  Üzerinde **veri** menüsünde tıklatın **veri kaynaklarını Göster**.
 
@@ -110,7 +110,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 ## <a name="create-the-first-form-form1"></a>İlk form (Form1) oluşturun
  Veri bağlama kılavuz oluşturabilirsiniz (bir <xref:System.Windows.Forms.DataGridView> denetimi), sürükleyerek **müşteriler** düğümden **veri kaynakları** forma penceresi.
 
-#### <a name="to-create-a-data-bound-grid-on-the-form"></a>Veri bağlama kılavuz formda oluşturmak için
+### <a name="to-create-a-data-bound-grid-on-the-form"></a>Veri bağlama kılavuz formda oluşturmak için
 
 -   Ana sürükleyin **müşteriler** düğümden **veri kaynakları** penceresi üzerine **Form1**.
 
@@ -118,7 +118,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 ## <a name="create-the-second-form-form2"></a>İkinci form (Form2) oluşturun
 
-#### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Verileri geçirmek için ikinci bir form oluşturmak için
+### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Verileri geçirmek için ikinci bir form oluşturmak için
 
 1.  Gelen **proje** menüsünde seçin **Add Windows Form**.
 
@@ -134,7 +134,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 ## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>TableAdapter sorgu siparişleri Form1 seçili müşteri için yüklenecek Form2 ekleyin
 
-#### <a name="to-create-a-tableadapter-query"></a>TableAdapter sorgu oluşturmak için
+### <a name="to-create-a-tableadapter-query"></a>TableAdapter sorgu oluşturmak için
 
 1.  Çift **NorthwindDataSet.xsd** dosyasını **Çözüm Gezgini**.
 
@@ -165,7 +165,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Verileri geçirmek için Form2 üzerinde bir yöntem oluşturma
 
-#### <a name="to-create-a-method-to-pass-data-to"></a>Verileri geçirmek için bir yöntem oluşturmak için
+### <a name="to-create-a-method-to-pass-data-to"></a>Verileri geçirmek için bir yöntem oluşturmak için
 
 1.  Sağ **Form2**seçip **görünümü kodu** açmak için **Form2** içinde **Kod düzenleyicisinde**.
 
@@ -176,7 +176,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Veri iletmek ve Form2 görüntülemek için Form1 üzerinde bir yöntem oluşturma
 
-#### <a name="to-create-a-method-to-pass-data-to-form2"></a>Form2 için veri iletmek için bir yöntem oluşturmak için
+### <a name="to-create-a-method-to-pass-data-to-form2"></a>Form2 için veri iletmek için bir yöntem oluşturmak için
 
 1.  İçinde **Form1**, müşteri verileri kılavuzunu sağ tıklatın ve ardından **özellikleri**.
 
@@ -193,17 +193,17 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 
-#### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için
+### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için
 
--   Uygulamayı çalıştırmak için F5 tuşuna basın.
+-   Tuşuna **F5** uygulamayı çalıştırın.
 
 -   Bir müşteri kaydı çift tıklatarak **Form1** açmak için **Form2** müşterinin emirleriyle.
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 Uygulama gereksinimlerinize bağlı olarak, verileri formlar arasında geçirme sonra gerçekleştirmek istediğinizi düşünelim birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:
 
--   Eklemek veya veritabanı nesnelerini kaldırmak için veri kümesi, düzenleme. Daha fazla bilgi için bkz: [oluşturma ve veri kümelerini yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+-   Veritabanı nesneleri eklemek veya çıkarmak için veri kümesini düzenleme. Daha fazla bilgi için bkz: [oluşturma ve veri kümelerini yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 -   Verileri veritabanına kaydetmek için işlevsellik ekleme. Daha fazla bilgi için bkz: [verileri veritabanına kaydetmek](../data-tools/save-data-back-to-the-database.md).
 

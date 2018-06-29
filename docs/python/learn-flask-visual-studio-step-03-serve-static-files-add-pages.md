@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b6c0e01106664429b3d355e488b453fa05cca4c6
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946968"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089808"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfa ekleyin ve şablon devralma kullanın
 
@@ -285,6 +285,7 @@ Aşağıdaki adımlarda, devralma gösterilmektedir:
 
 ## <a name="go-deeper"></a>Derinlemesine
 
+- [Web uygulamasını Azure App Service'e dağıtma](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Daha fazla yeteneklerini denetim akışı gibi Jinja şablonları için bkz: [Jinja şablonu Tasarımcısı belgelerine](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Kullanımıyla ilgili ayrıntılar için `url_for`, bkz: [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) Flask uygulama nesnesi belgeleri (flask.pocoo.org) içinde
 - Öğretici kaynak kodu github'da: [Microsoft/python-örnek-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

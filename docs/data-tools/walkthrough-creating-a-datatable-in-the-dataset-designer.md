@@ -14,34 +14,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: baf4fca6c45bb81473b5b4fa0169c7958105803f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2e02f01924d5bae2770c579c4bfadd314e03cbe3
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747449"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089111"
 ---
-# <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>İzlenecek Yol: Veri Kümesi Tasarımcısında DataTable Oluşturma
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>İzlenecek yol: veri kümesi tasarımcısında DataTable oluşturma
 
 Bu kılavuzda nasıl oluşturulacağını açıklar bir <xref:System.Data.DataTable> (olmadan bir TableAdapter) kullanarak **veri kümesi Tasarımcısı**. TableAdapters dahil veri tabloları oluşturma hakkında daha fazla bilgi için bkz: [oluşturma ve TableAdapters öğelerini yapılandırma](../data-tools/create-and-configure-tableadapters.md).
 
-Bu örneklerde gösterilen görevler aşağıdakileri içerir:
+## <a name="create-a-new-windows-forms-application"></a>Yeni bir Windows Forms uygulaması oluşturma
 
--   Yeni bir Windows Forms uygulaması projesi oluşturma
-
--   Yeni bir veri kümesi için uygulama ekleme
-
--   Yeni bir veri tablosu veri kümesine ekleme
-
--   Veri tablosuna sütun ekleme
-
--   Tablonun birincil anahtarı ayarlama
-
-## <a name="creating-a-new-windows-forms-application"></a>Yeni bir Windows Forms uygulaması oluşturma
-
-### <a name="to-create-a-new-windows-forms-application-project"></a>Yeni bir Windows Forms uygulaması projesi oluşturmak için
-
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
@@ -51,11 +37,9 @@ Bu örneklerde gösterilen görevler aşağıdakileri içerir:
 
      **DataTableWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.
 
-## <a name="adding-a-new-dataset-to-the-application"></a>Yeni bir veri kümesi için uygulama ekleme
+## <a name="add-a-new-dataset-to-the-application"></a>Yeni bir veri kümesi için uygulama ekleme
 
-### <a name="to-add-a-new-dataset-item-to-the-project"></a>Yeni bir veri kümesi öğe projeye eklemek için
-
-1.  Üzerinde **proje** menüsünde, select **Yeni Öğe Ekle...** .
+1.  Üzerinde **proje** menüsünde, select **Yeni Öğe Ekle**.
 
      Yeni Öğe Ekle iletişim kutusu görüntülenir.
 
@@ -65,9 +49,7 @@ Bu örneklerde gösterilen görevler aşağıdakileri içerir:
 
      Visual Studio ekler adlı bir dosya **dataSet1.xsd dosyasını** projeye ve bunun içinde açılacak **veri kümesi Tasarımcısı**.
 
-## <a name="adding-a-new-datatable-to-the-dataset"></a>Yeni bir DataTable veri kümesine ekleme
-
-### <a name="to-add-a-new-data-table-to-the-dataset"></a>Yeni bir veri tablosu veri kümesine eklemek için
+## <a name="add-a-new-datatable-to-the-dataset"></a>Yeni DataTable kümesine ekleme
 
 1.  Sürükleme bir **DataTable** gelen **DataSet** sekmesinde **araç** üzerine **veri kümesi Tasarımcısı**.
 
@@ -75,9 +57,7 @@ Bu örneklerde gösterilen görevler aşağıdakileri içerir:
 
 2.  Başlık çubuğunu tıklatın **DataTable1** ve yeniden adlandırmak `Music`.
 
-## <a name="adding-columns-to-the-datatable"></a>DataTable tablosuna sütun ekleme
-
-### <a name="to-add-columns-to-the-datatable"></a>DataTable tablosuna sütun eklemek için
+## <a name="add-columns-to-the-datatable"></a>DataTable tablosuna sütun ekleme
 
 1.  Sağ **müzik** tablo. İşaret **Ekle**ve ardından **sütun**.
 
@@ -93,25 +73,18 @@ Bu örneklerde gösterilen görevler aşağıdakileri içerir:
 
      `Genre`: <xref:System.String?displayProperty=fullName>
 
-## <a name="setting-the-primary-key-for-the-table"></a>Tablonun birincil anahtarı ayarlama
+## <a name="set-the-primary-key-for-the-table"></a>Tablonun birincil anahtarı ayarlayın
 
 Tüm veri tabloları birincil anahtarı olmalıdır. Bir birincil anahtar, belirli bir kayıt bir veri tablosunda benzersiz olarak tanımlar.
 
-### <a name="to-set-the-primary-key-of-the-data-table"></a>Veri tablonun birincil anahtarı ayarlamak için
+Birincil anahtarını ayarlamak için sağ **SongID** sütun ve ardından **birincil anahtarı ayarlama**. Bir anahtar simgesi görünür **SongID** sütun.
 
--   Sağ **SongID** sütun ve ardından **birincil anahtarı ayarlama**.
+## <a name="save-your-project"></a>Projeyi kaydedin
 
-     Bir anahtar simgesi görünür **SongID** sütun.
-
-## <a name="saving-your-project"></a>Projenizi kaydetme
-
-### <a name="to-save-the-datatablewalkthrough-project"></a>DataTableWalkthrough projeyi kaydetmek için
-
--   Üzerinde **dosya** menüsünde tıklatın **Tümünü Kaydet**.
+DataTableWalkthrough proje üzerinde kaydetmek için **dosya** menüsünde, select **Tümünü Kaydet**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio’da veri kümeleri oluşturma ve yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Verileri doğrulama](../data-tools/validate-data-in-datasets.md)
-- [Verileri Kaydetme](../data-tools/saving-data.md)

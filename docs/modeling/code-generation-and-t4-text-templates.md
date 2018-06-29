@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f4fed2cbf00717e4eaf9c1353370dbd96037491
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fa6195a531c74aebbcb7884cc8e3158df6b9ca96
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425507"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089405"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Kod Oluşturma ve T4 Metin Şablonları
 
@@ -58,7 +58,7 @@ Daha fazla bilgi için bkz: [T4 metin şablonları ile çalışma zamanı metin 
 
 ## <a name="design-time-t4-text-templates"></a>Tasarım zamanı T4 metin şablonları
 
-Tasarım zamanı tempaltes kaynak kodun bir parçası ve diğer kaynakları, uygulamanızın tanımlayın. Genellikle, bir tek girdi dosyası veya veritabanı verileri okuma çeşitli şablonlar kullanın ve bazı oluşturur, *.cs*, *.vb*, veya diğer kaynak dosyaları. Her şablon bir dosya oluşturur. Bunlar, Visual Studio veya MSBuild içinde yürütülür.
+Tasarım zamanı şablonları kaynak kodun bir parçası ve diğer kaynakları, uygulamanızın tanımlayın. Genellikle, bir tek girdi dosyası veya veritabanı verileri okuma çeşitli şablonlar kullanın ve bazı oluşturur, *.cs*, *.vb*, veya diğer kaynak dosyaları. Her şablon bir dosya oluşturur. Bunlar, Visual Studio veya MSBuild içinde yürütülür.
 
 Örneğin, giriş verilerinizi yapılandırma verilerini bir XML dosyası olabilir. XML dosyasını geliştirme sırasında düzenlediğinizde, metin şablonları uygulama kod parçası, yeniden oluşturun. Aşağıdaki örnek şablonlarından birini benzer:
 

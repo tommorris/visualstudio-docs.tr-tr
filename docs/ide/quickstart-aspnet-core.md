@@ -2,7 +2,7 @@
 title: Bir ASP.NET Core web uygulaması C# ' ta oluşturmak için Visual Studio
 description: C# ile adım adım Visual Studio'da ASP.NET Core web uygulaması oluşturmayı öğrenin.
 ms.custom: mvc
-ms.date: 10/10/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1240056d8a4ad90b763e28d0576d87282bdc7518
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9d8aa6a6147ff57ba72f1cc69240ef5a7137cd73
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296366"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089305"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: Kullanım ilk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio
 
@@ -53,7 +53,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
    ![Tanıma Git bağlam menüsü](../ide/media/quickstart-aspnet-gotodefinition.png)
 
-1. Sonraki temizleme `using` yönergeleri kullanarak basit bir kısayol dosyasını üstündeki. Gri çıkış birini yönergeleri kullanarak ve [hızlı Eylemler](../ide/quick-actions.md) ampul şapka hemen altındaki veya sol kenar boşluğunda görünür. Ampul seçin ve ardından **gereksiz kullanımları kaldırma**.
+1. Daha sonra Temizleme `using` yönergeleri kullanarak basit bir kısayol dosyasını üstündeki. Grileştirilmiş birini yönergeleri kullanarak ve [hızlı Eylemler](../ide/quick-actions.md) ampul şapka hemen altındaki veya sol kenar boşluğunda görünecektir. Ampul seçin ve ardından **gereksiz kullanımları kaldırma**.
 
      Gereksiz kullanımları dosyasından silinir.
 
@@ -87,7 +87,10 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Lütfen yeteneklerini daha derin inceleyin istiyorsanız bir öğreticide devam **öğreticileri** içindekiler bölümü.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Bu hızlı başlangıç Tamamlanıyor Tebrikler! C# ASP.NET Core ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Daha fazla bilgi için aşağıdaki eğitici devam edin.
+
+Bu hızlı başlangıç Tamamlanıyor Tebrikler! C# ASP.NET Core ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Ortak sunucu üzerinde çalışan uygulama görmek için aşağıdaki düğmesini seçin.
 
 > [!div class="nextstepaction"]
-> [C# ve Visual Studio'da ASP.NET kullanmaya başlama](tutorial-csharp-aspnet-core.md)
+> [Uygulama Azure App Service'e dağıtma](..//deployment/quickstart-deploy-to-azure.md)
+
+Daha fazla bilgi için öğreticiler ile devam [C# ve Visual Studio'da ASP.NET kullanmaya başlama](tutorial-csharp-aspnet-core.md) ve [ASP.NET Core MVC ve Visual Studio ile çalışmaya başlama](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

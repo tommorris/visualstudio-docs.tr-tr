@@ -1,7 +1,7 @@
 ---
 title: C# ve Visual Studio'da ASP.NET Core kullanmaya başlama
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 75036450694525f00f31159cdbeea1f4b98040f5
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 40aba1d8847b405c3e80f0d6890471f0e2065a86
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281839"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089457"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>C# ve Visual Studio'da ASP.NET kullanmaya başlama
 
@@ -65,9 +65,9 @@ Görmüyorsanız, **ASP.NET çekirdek Web uygulaması** proje şablonu, alabilir
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Seçenek 1: Yeni Proje iletişim kutusunu kullanın
 
-1. Tıklatın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu.
+1. Seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu.
 
-   ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantısına tıklayın](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantıyı seçin](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Visual Studio yükleyicisi başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü ve ardından **Değiştir**.
 
@@ -134,7 +134,7 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
 1. Seçin **IIS Express** oluşturmak ve uygulama hata ayıklama modunda çalıştırmak için IDE'de düğmesi. (Alternatif olarak, basın **F5**, veya seçin **hata ayıklama > hata ayıklamayı Başlat** menü çubuğundan.)
 
-   ![Visual Studio'da IIS Express düğmesini tıklatın](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![Visual Studio'da IIS Express düğmesini seçin](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > Bildiren bir hata iletisi alırsanız **web sunucusuna 'IIS Express' bağlanılamıyor**, Visual Studio'yu kapatın ve kullanarak açmak **yönetici olarak çalıştır** sağ tıklatın veya bağlam menüsünden seçeneği. Daha sonra uygulamayı yeniden çalıştırın.
@@ -179,11 +179,13 @@ MVC örüntüsü, test ve güncelleştirmek geleneksel tek yapılı uygulamalar 
 
 11. Seçin **durdurma hata ayıklama** hata ayıklamasını durdurmak için araç çubuğu düğmesinden. (Alternatif olarak, basın **Shift**+**F5**, veya seçin **hata ayıklama** > **durdurma hata ayıklama** menü çubuğundan.)
 
-   ![Araç çubuğundaki hata ayıklamayı Durdur düğmesini tıklatın](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![Araç çubuğundaki Durdur hata ayıklama düğmesini seçin](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticiyi tamamlamak Tebrikler! C# ASP.NET Core ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Hatta daha fazla bilgi için aşağıdaki eğitici devam edin.
+Bu öğreticiyi tamamlamak Tebrikler! C# ASP.NET Core ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Ortak sunucu üzerinde çalışan uygulama görmek için aşağıdaki düğmesini seçin.
 
- > [!div class="nextstepaction"]
- > [ASP.NET Core MVC ve Visual Studio ile çalışmaya başlama](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [Uygulama Azure App Service'e dağıtma](..//deployment/quickstart-deploy-to-azure.md)
+
+Model-View-Controller (MVC) çerçevesi ASP.NET Core kullanarak öğreticiyi izleyerek hakkında da bilgi alabilirsiniz [ASP.NET Core MVC ve Visual Studio ile çalışmaya başlama](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

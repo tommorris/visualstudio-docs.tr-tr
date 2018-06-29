@@ -15,14 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747150"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089036"
 ---
-# <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
+# <a name="n-tier-data-applications-overview"></a>N katmanlı veri uygulamalarına genel bakış
 *N katmanlı* veri uygulamalardır birden çok ayrılmış veri uygulamalarını *katmanları*. "Dağıtılmış uygulamalar" ve "çok katmanlı uygulamalar" olarak da adlandırılan, istemci ve sunucu arasında dağıtılan ayrık katmanları işlemeye n katmanlı uygulamalar ayırın. Veri erişimi uygulamaları geliştirirken açıkça birbirinden uygulamayı oluşturan çeşitli katmanları arasında olması gerekir.
 
 Tipik bir n katmanlı uygulama sunu katmanı, orta katman ve veri katmanı içerir. N katmanlı uygulama çeşitli katmanında ayırmak için en kolay yolu, uygulamanızda dahil etmek istediğiniz her katman için ayrı projeleri oluşturmaktır. Örneğin, sunu katmanı Orta katmanda bulunan bir sınıf kitaplığı veri erişim mantığı olabilir ancak bir Windows Forms uygulaması olabilir. Ayrıca, sunu katmanı orta katman bir hizmeti gibi bir hizmeti aracılığıyla veri erişim mantık iletişim. Uygulama bileşenleri ayrı katmanlara ayırma Bakım ve uygulama ölçeklenebilirliği artırır. Tüm çözüm yeniden tasarlamanız gereksinimi olmadan tek katmanda uygulanabilir yeni teknolojileri daha kolay benimsenmesi etkinleştirerek bunu yapar. Ayrıca, n katmanlı uygulamalar genellikle hassas bilgileri Orta, sunu katmanı yalıtma tutar katman, depolayın.
@@ -77,13 +77,13 @@ Aşağıdaki konular n katmanlı uygulamalar ile çalışma hakkında bilgi sağ
 
 [Veri kümeleri ile TableAdapter’ları farklı projelere ayırma](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[İzlenecek yol: n katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
-[LINQ to SQL ile N Katmanı ve Uzak Uygulamalar](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+[N katmanlı ve uzak uygulamalarla LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [İzlenecek yol: n katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)
 - [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
 - [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)

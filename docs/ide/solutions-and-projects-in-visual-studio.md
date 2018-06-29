@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747632"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089665"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Çözümler ve projeler Visual Studio'da
 
@@ -53,7 +53,12 @@ Visual Studio Proje dosyası tarafından kullanılan **Çözüm Gezgini** proje 
 
 Bir proje kapsamında yer alan bir *çözüm*. Bir veya daha fazla ilgili projeleri, yapı bilgileri, Visual Studio penceresi ayarlarını ve belirli bir projeyle ilişkili olmayan tüm çeşitli dosyalar ile birlikte bir çözüm içerir. Bir çözümü bir metin dosyası tarafından tanımlanan (uzantısı *.sln*) kendi benzersiz biçimde; bu el ile düzenlenmesi kullanılmaya yönelik değildir.
 
-Bir çözüm ilişkili bir sahip *.suo* ayarları, tercihleri ve projede çalıştığı her bir kullanıcı için yapılandırma bilgilerini depolayan dosya.
+Visual Studio kullanan iki dosya türleri (*.sln* ve *.suo*) çözümler için ayarları saklamak için:
+
+|Uzantısı|Ad|Açıklama|
+|---------------|----------|-----------------|
+|.sln|Visual Studio çözümü|Projeleri, proje öğeleri ve çözüm öğeleri çözümdeki düzenler.|
+|.suo|Çözüm kullanıcı seçenekleri|Kullanıcı düzeyinde ayarları ve kesme noktaları gibi özelleştirmelerini depolar.|
 
 ## <a name="create-new-projects"></a>Yeni projeler oluştur
 
@@ -63,7 +68,7 @@ Belirli bir tür uygulama veya Web sitesi için bir proje şablondan yeni bir pr
 
 ## <a name="manage-projects-in-solution-explorer"></a>Çözüm Gezgini'nde projeleri yönetme
 
-Yeni bir proje oluşturduğunuzda, kullanabileceğiniz **Çözüm Gezgini** proje ve çözüm ve bunların ilişkili öğeleri görüntülemek ve yönetmek için. Aşağıdaki çizimde gösterildiği **Çözüm Gezgini** Çözümle iki proje içeren bir C#.
+Yeni bir proje oluşturduğunuzda, kullanabileceğiniz **Çözüm Gezgini** proje ve çözüm ve bunların ilişkili öğeleri görüntülemek ve yönetmek için. Aşağıdaki çizimde gösterildiği **Çözüm Gezgini** Çözümle iki proje içeren bir C#:
 
 ![Çözüm Gezgini](../ide/media/vs2015_solution_explorer.png)
 

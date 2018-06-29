@@ -1,7 +1,7 @@
 ---
 title: "Hızlı Başlangıç: Bir Python web uygulaması oluşturmak için Visual Studio'yu kullanın."
 description: Bu Hızlı Başlangıç, Visual Studio ve Flask framework Python bir basit bir web uygulamasını oluşturmak için kullanın.
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 56078a8a5e5af1b44adf55cabb08f7d72a042470
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b8668bbdb686b3c8c60380dd5592a2897a43b45b
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296333"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089431"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Hızlı Başlangıç: Visual Studio kullanarak ilk Python web uygulamanızı oluşturma
 
@@ -146,15 +146,12 @@ Artık bir en az bir web uygulaması uygulamak için Python kodu biraz eklemek h
 
 Hangi bir Python IDE Visual Studio kullanma hakkında biraz öğrendiğinize ilk Python uygulamanızı Visual Studio'dan içinde çalışan Tebrikler!
 
-Bu hızlı başlangıcı ve ardından adımları oldukça genel olduğundan, bunlar olabilir ve otomatikleştirilmesi gereken büyük olasılıkla tahmin. Bu tür Otomasyon Visual Studio Proje şablonları roldür. Bir web uygulaması, bu makalede, ancak daha az adım ile oluşturduğunuz bir benzer oluşturur bir örnek aşağıda düğmesini seçin.
-
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç - bir şablonu kullanarak bir Python projesi oluşturma](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [Uygulama Azure App Service'e dağıtma](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-Visual Studio'da etkileşimli penceresini kullanarak da dahil olmak üzere, veri görselleştirme, hata ayıklama ve Git ile çalışma, Python daha eksiksiz bir öğretici devam etmek için aşağıdaki düğmesini seçin.
+Bu hızlı başlangıcı ve ardından adımları oldukça genel olduğundan, bunlar olabilir ve otomatikleştirilmesi gereken büyük olasılıkla tahmin. Bu tür Otomasyon Visual Studio Proje şablonları roldür. Git üzerinden [hızlı başlangıç - bir şablonu kullanarak bir Python projesi oluşturma](../python/quickstart-02-python-in-visual-studio-project-from-template.md) benzeyen bir web uygulaması oluşturan bir örnek için bu makalede, ancak daha az adım ile oluşturulan için.
 
-> [!div class="nextstepaction"]
-> [Öğretici: Visual Studio'da Python ile çalışmaya başlama](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+Visual Studio'da etkileşimli penceresini kullanarak da dahil olmak üzere hata ayıklama, veri görselleştirme Python daha eksiksiz bir öğretici ile devam etmek ve Git ile çalışma geçtikleri [öğretici: Visual Studio'da Python kullanmaya başlama](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Visual Studio sunmak olan daha keşfetmek için aşağıdaki bağlantıları seçin.
 

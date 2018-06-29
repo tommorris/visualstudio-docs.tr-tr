@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3e9fd68630b9477be69bfad7c9d4e3bad08dd22a
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947069"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089509"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6. adım: yoklamalar Django Web projesi şablonu kullanın
 
@@ -368,11 +368,11 @@ Visual Studio'da "Boş Django Web projesi", "Django Web projesi" ve "Yoklamalar 
 
 Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulama müşterileriniz için kullanılabilir hale getirme yalnızca bir adımdır. Sonraki adımlar aşağıdaki görevler de dahil:
 
+- Web uygulamasını Azure App Service gibi bir üretim sunucusu dağıtın. Bkz: [Azure App Service Yayımla](publishing-python-web-applications-to-azure-from-visual-studio.md), Django uygulamaları için gereken belirli değişiklikler içerir.
+
 - Adlı bir şablon oluşturarak 404 sayfasını özelleştirme `templates/404.html`. Varsa, Django varsayılan bir yerine bu şablonu kullanır. Daha fazla bilgi için bkz: [hata görünümleri](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) Django belgelerinde.
 
 - Birim testleri yazma `tests.py`; başlangıç noktaları bunlar için Visual Studio Proje şablonları sağlar ve daha fazla bilgi bulunabilir [ilk Django uygulamanız bölümü 5 - sınama yazma](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) ve [Djangotestetme](https://docs.djangoproject.com/en/2.0/topics/testing/) Django belgelerinde.
-
-- Web uygulamasını Azure App Service gibi bir üretim sunucusu dağıtın. Bkz: [Azure App Service Yayımla](publishing-python-web-applications-to-azure-from-visual-studio.md), Django uygulamaları için gereken belirli değişiklikler içerir.
 
 - Uygulama SQLite bir üretim düzeyinde veri deposuna PostgreSQL, MySQL ve SQL Server'ın (bunların tümü Azure'da barındırılabilir) gibi değiştirin. Açıklandığı gibi [SQLite kullanmak ne zaman](https://www.sqlite.org/whentouse.html) (sqlite.org) SQLite düşük veya Orta trafiğe sahip sitelere en fazla 100 K isabet/gün ile düzgün çalışır, ancak daha yüksek birimler için önerilmez. Ayrıca tek bir bilgisayara sınırlı, bu nedenle kullanılamaz Yük Dengeleme ve coğrafi çoğaltma gibi herhangi bir çok sunuculu senaryoda. Diğer veritabanlarını Django'nın desteği hakkında daha fazla bilgi için bkz: [Veritabanı Kurulumu](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Aynı zamanda [Python için Azure SDK](azure-sdk-for-python.md) tabloları ve blobları gibi Azure storage Hizmetleri ile çalışmak için.
 

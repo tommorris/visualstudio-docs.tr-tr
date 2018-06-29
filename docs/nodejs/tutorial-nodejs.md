@@ -2,7 +2,7 @@
 title: Node.js ve hızlı uygulama oluşturma
 description: Bu öğreticide, Visual Studio için Node.js araçları kullanarak bir uygulama oluşturun
 ms.custom: ''
-ms.date: 03/13/2018
+ms.date: 06/27/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f3d8bb6eb64433ef8e2cd369ed0c1e0ba59a03dd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e22b530fdebf227597e3c70b3bf58dd538754b3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282515"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089606"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da bir Node.js ve hızlı uygulama oluşturma
 Node.js ve Express kullanarak Visual Studio geliştirme için bu öğreticideki basit bir Node.js web uygulaması oluşturma, bazı kodlar ekleyin, IDE özelliklerinden bazıları keşfedin ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://visualstudio.microsoft.com).
@@ -138,7 +138,7 @@ Uygulama için ön uç JavaScript çerçevesini Pug kullanır. Pug HTML olarak d
     }
     ````
 
-    Bu kod size dinamik olarak üretilen HTML sayfasına geçer bir veri nesnesi oluşturur.
+    Bu kod dinamik olarak üretilen HTML sayfasına geçirdiğiniz bir veri nesnesi oluşturur.
 
 1. Değiştir `router.get` işlev çağrısı ile aşağıdaki kodu:
 
@@ -150,7 +150,7 @@ Uygulama için ön uç JavaScript çerçevesini Pug kullanır. Pug HTML olarak d
 
     Önceki kod Express yönlendirici nesnesini kullanarak geçerli sayfa ayarlar ve sayfaya başlık ve veri nesnesi geçirme sayfasını işler. *İndex.pug* dosyasında belirtilir ne zaman yükleme sayfası olarak burada *index.js* çalıştırır. *index.js* varsayılan rotada olarak yapılandırılan *app.js* kod (gösterilmez).
 
-    Visual Studio birkaç özelliklerini göstermek için size bir hata kodu içeren satırında yer `res.render`. Uygulamayı çalıştırmadan önce hatayı düzeltmek gerekir. Biz, sonraki bölümde hatayı düzeltin.
+    Visual Studio birkaç özelliklerini göstermek için bir kasıtlı hatası var. kodu içeren satırda `res.render`. Uygulama, sonraki bölümde bunu çalıştırmadan önce hatayı düzeltmek gerekir.
 
 ## <a name="use-intellisense"></a>IntelliSense kullanma
 
@@ -180,7 +180,7 @@ IntelliSense kod yazarken, size yardımcı olur Visual Studio bir araçtır.
 
 ## <a name="set-a-breakpoint"></a>Bir kesme noktası ayarlama
 
-Visual Studio hata ayıklayıcısı ekli uygulama çalıştırma olacak. Biz bunu yapmadan önce bir kesme noktası belirleyerek gerekir.
+Sonraki Visual Studio hata ayıklayıcısı ekli uygulamayı çalıştırmak için paylaşacağız. Bunu önce bir kesme noktası ayarlamanız gerekir.
 
 1. İçinde *index.js*, aşağıdaki kod satırı ile bir kesme noktası ayarlamak için önce sol cilt payı'ı tıklatın:
 
@@ -238,7 +238,7 @@ Bu öğreticiyi tamamlamak Tebrikler!
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticide, oluşturmak ve Express kullanarak bir Node.js uygulaması çalıştırmak ve hata ayıklayıcıyı kullanma bir kesme noktası isabet öğrendiniz.
-
 > [!div class="nextstepaction"]
-> [Visual Studio için node.js araçları](https://github.com/Microsoft/nodejstools)
+> [Uygulama Azure App Service'e dağıtma](../deployment/quickstart-deploy-to-azure.md)
+
+Bu öğreticide, oluşturmak ve Express kullanarak bir Node.js uygulaması çalıştırmak ve hata ayıklayıcıyı kullanma bir kesme noktası isabet öğrendiniz. Daha fazla bilgi için bkz: [github'da Visual Studio için Node.js Araçları](https://github.com/Microsoft/nodejstools).

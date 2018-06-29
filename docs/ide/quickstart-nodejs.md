@@ -1,7 +1,7 @@
 ---
 title: 'Hızlı Başlangıç: Kullanım ilk Node.js uygulamanızı oluşturmak için Visual Studio'
 description: Bu hızlı başlangıç Visual Studio'da bir Node.js uygulaması oluşturma
-ms.date: 11/15/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,18 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6eebbcd696b55a6034864cc3cf0c4f44eaca8259
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 664eb75fb8fe105058ef78470245500e5e835515
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296294"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089283"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Hızlı Başlangıç: Kullanım ilk Node.js uygulamanızı oluşturmak için Visual Studio
 
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), basit bir Node.js web uygulaması oluşturacaksınız. Visual Studio 2017 henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="create-a-project"></a>Proje oluşturma
+
 İlk olarak, bir Node.js web uygulaması projesi oluşturacaksınız.
 
 1. Zaten yüklü Node.js çalışma zamanı yoksa, LTS sürümünden yükleme [Node.js](https://nodejs.org/en/download/) Web sitesi.
@@ -50,11 +51,11 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
    ![Çözüm Gezgini](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-  - Kalın olarak vurgulanmış olan, vermiş adını kullanarak projenize **yeni proje** iletişim kutusu. Diskte, bu proje tarafından temsil edilen bir *.njsproj* proje klasörünüzdeki dosya.
+   - Kalın olarak vurgulanmış olan, vermiş adını kullanarak projenize **yeni proje** iletişim kutusu. Diskte, bu proje tarafından temsil edilen bir *.njsproj* proje klasörünüzdeki dosya.
 
-  - En üst düzeyinde varsayılan olarak, projenizin aynı ada sahip bir, çözümüdür. Tarafından temsil edilen bir çözüm bir *.sln* dosya diskte, bir veya daha fazla ilgili projeleri için bir kapsayıcıdır.
+   - En üst düzeyinde varsayılan olarak, projenizin aynı ada sahip bir, çözümüdür. Tarafından temsil edilen bir çözüm bir *.sln* dosya diskte, bir veya daha fazla ilgili projeleri için bir kapsayıcıdır.
 
-  - Npm düğüm herhangi bir yüklü npm paket gösterir. Arayın ve iletişim kutusunu kullanarak npm paket yüklemek için npm düğümünü sağ tıklayabilirsiniz.
+   - Npm düğüm herhangi bir yüklü npm paket gösterir. Arayın ve iletişim kutusunu kullanarak npm paket yüklemek için npm düğümünü sağ tıklayabilirsiniz.
 
 1. Npm paket veya node.js komutlar bir komut isteminden yüklemek istiyorsanız, proje düğümüne sağ tıklayın ve seçin **burada açık bir komut istemi**.
 
@@ -84,9 +85,12 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
 1. Web tarayıcısını kapatın.
 
-Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Lütfen yeteneklerini daha derin inceleyin istiyorsanız bir öğreticide devam **öğreticileri** içindekiler bölümü.
+Bu hızlı başlangıç Visual Studio IDE ve Node.js ile çalışmaya neden Tamamlanıyor tebrikler. Bir öğreticide yeteneklerini daha derin inceleyin istiyorsanız devam **öğreticileri** içindekiler bölümü.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Git üzerinden [Node.js ve Express için Öğreticisi](../nodejs/tutorial-nodejs.md)
-- Git üzerinden [Node.js ve tepki göstermek için Öğreticisi](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [Uygulama Azure App Service'e dağıtma](..//deployment/quickstart-deploy-to-azure.md)
+
+- [Node.js ve Express için Öğreticisi](../nodejs/tutorial-nodejs.md)
+- [Öğretici Node.js ve tepki göstermek için](../nodejs/tutorial-nodejs-with-react-and-jsx.md)

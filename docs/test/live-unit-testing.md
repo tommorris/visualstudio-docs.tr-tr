@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f60b9ebe3847db0f139c9369f5a3e0fc6c4fd8a9
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4cc9ec25ab6bc69359649764074a3e908c06c4ae
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296309"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089561"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Dinamik birim ile Visual Studio 2017 testi
 
@@ -155,7 +155,7 @@ Canlı otomatik olarak çalıştırarak ve test sonuçlarını güncelleştirme 
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Birim testi ve büyük çözümlerde Canlı
 
-Çözümünüzü kalıcı veri yok ve canlı birim testi başlattığınızda 10 veya daha fazla proje varsa veya seçtiğinizde **Test**, **Canlı birim testi**, **sıfırlama temiz** Visual Studio üst düzey Visual Studio menüsünden seçeneği büyük projeler testlerinde çok sayıda dinamik yürütme performansı önemli ölçüde etkileyebilir uyarmak için aşağıdaki iletişim kutusunu görüntüler. Seçerseniz **Tamam**, Canlı birim testi, Çözümdeki tüm metinleri yürütür. Seçerseniz **iptal**, yürütülecek testleri seçebilirsiniz. Bunun nasıl yapılacağı hakkında daha fazla bilgi için aşağıdaki bölümde bkz [dahil ve hariç projeleri ve test yöntemleri](#including-and-excluding-test-projects-and-test-methods).
+Çözümünüzü kalıcı veri yok ve canlı birim testi başlattığınızda 10 veya daha fazla proje varsa veya seçtiğinizde **Test**, **Canlı birim testi**, **sıfırlama temiz** Visual Studio üst düzey Visual Studio menüsünden seçeneği büyük projeler testlerinde çok sayıda dinamik yürütme performansı önemli ölçüde etkileyebilir uyarmak için aşağıdaki iletişim kutusunu görüntüler. Seçerseniz **Tamam**, Canlı birim testi, Çözümdeki tüm testleri yürütür. Seçerseniz **iptal**, yürütülecek testleri seçebilirsiniz. Bunun nasıl yapılacağı hakkında daha fazla bilgi için aşağıdaki bölümde bkz [dahil ve hariç projeleri ve test yöntemleri](#including-and-excluding-test-projects-and-test-methods).
 
  ![Büyük projeler için dinamik birim testi iletişim](media/lut-large-project.png)
 

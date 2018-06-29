@@ -1,7 +1,7 @@
 ---
 title: Öğretici - Visual Studio, adım 3 Django öğrenin
 description: Visual Studio projeleri, özellikle statik dosyaları işleme, sayfaları için uygulama ekleme ve şablon devralma kullanma gösteren bağlamında Django temel bir kılavuz
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a6eb2d2c690642a12be6ced7da29b0e85bdbb046
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947082"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089593"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfa ekleyin ve şablon devralma kullanın
 
@@ -279,6 +279,7 @@ Aşağıdaki adımlarda, devralma gösterilmektedir:
 
 ## <a name="go-deeper"></a>Derinlemesine
 
+- [Web uygulamasını Azure App Service'e dağıtma](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [İlk Django uygulamanız yazma, 3 (görünümler) Kısım](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Daha fazla yeteneklerini denetim akışı gibi Django şablonları için bkz: [Django şablonu dili](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Kullanımıyla ilgili tam Ayrıntılar için `{% url %}` etiketlemek için bkz: [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) içinde [yerleşik şablon etiketleri ve Django şablonları başvurusu için filtreleri](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)

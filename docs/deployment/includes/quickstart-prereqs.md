@@ -1,6 +1,6 @@
 ## <a name="prerequisites"></a>Önkoşullar
 
-* [Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) dilinizi tercih için uygun iş yükleri ile yüklenen:
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) dilinizi tercih için uygun iş yükleri ile yüklenen:
   * ASP.NET: **ASP.NET ve web geliştirme**
   * Python: **Python geliştirme**
   * Node.js: **Node.js geliştirme**

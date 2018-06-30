@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0647cde0b81c74250306ad45ad015f8f8710d8a4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057937"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117660"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 
@@ -55,7 +55,7 @@ Bir şablon kullanarak, uygulama yapar, örneğin, bir uzun dizi yazma deyimi, o
 
 ### <a name="to-create-a-run-time-text-template"></a>Çalışma zamanı metin şablonu oluşturmak için
 
-1. Çözüm Gezgini'nde, proje kısayol menüsünden seçin **Ekle**, **yeni öğe**.
+1. Çözüm Gezgini'nde, proje kısayol menüsünden seçin **Ekle** > **yeni öğe**.
 
 2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **çalışma zamanı metin şablonu**. (Visual Basic'te konum altında **ortak öğeler** > **genel**.)
 

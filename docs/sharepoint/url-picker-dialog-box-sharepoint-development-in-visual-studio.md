@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c890d1cd1acfa0acc5a28c6418dbd961f795107e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7820723c88fd76639fa47e5c97ad179a208fc18
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120417"
 ---
-# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL Seçici İletişim Kutusu (Visual Studio'da SharePoint geliştirme)
+# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL Seçici iletişim kutusu (Visual Studio'da SharePoint Geliştirme)
   URL Seçici iletişim kutusu, SharePoint çalıştıran yerel sunucu ana sayfa dosyası veya projenizdeki veya bulunan görüntü dosyaları gibi dosyalar seçebilirsiniz.  
   
  Bir özelliği ayarlamak için bir dosya seçmek üzere seçeneği varsa, bu iletişim kutusu görüntülenir. Üç nokta düğmesini seçerek bu iletişim kutusunu açabilir (![ASP.NET Mobil Tasarımcı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcı elips")) çeşitli özelliklerinde yanındaki **özellikleri** penceresi. Belirli öznitelikler için değerleri atadığınızda üç nokta düğmesini ayrıca bir IntelliSense komut istemi görünür **kaynak** Designer görünüm.  
   
-## <a name="uielement-list"></a>UIElement Listesi  
+## <a name="uielement-list"></a>UIElement listesi
  **Proje klasörleri**  
  Projedeki veya SharePoint çalıştıran yerel sunucu üzerinde tanımlanan klasörlerin listesini görüntüler. Alt klasörleri görüntülemek için genişletme düğmesini seçin.  
   
@@ -57,9 +58,8 @@ ms.lasthandoff: 04/16/2018
  **Dosya türü**  
  Gerçekleştirmekte olduğunuz görev için uygun olan dosyalar listesinden seçmenize olanak sağlar.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Web Bölümleri veya Uygulama Sayfaları için Yeniden Kullanılabilir Denetimler Oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
-  
+ [SharePoint Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
   

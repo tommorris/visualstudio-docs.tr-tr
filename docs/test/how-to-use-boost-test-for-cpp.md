@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 739368b8611d4755138466b8de37c16e5552fe11
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751630"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120427"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio'da c++ Boost.Test kullanma
 
@@ -48,20 +48,20 @@ Boost.Test gerektirir [artırma](http://www.boost.org/)! Yüklü artırma yoksa 
 
 1. Yeni bir dosya bir örnek test yöntemi içerir. Etkinleştirmek için projenizi derleme **Test Gezgini** yöntemi bulmak için.
 
-Öğe şablonu Boost.Test tek üstbilgi türevi kullanır, ancak değiştirebileceğiniz # tek başına kitaplığı değişken kullanılacak yol include. Daha fazla bilgi için bkz: [Ekle içerme yönergeleri](#add_include_directives).
+Öğe şablonu Boost.Test tek üstbilgi türevi kullanır, ancak değiştirebileceğiniz # tek başına kitaplığı değişken kullanılacak yol include. Daha fazla bilgi için bkz: [Ekle içerme yönergeleri](#add-include-directives).
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Bir test projesi (Visual Studio 2017 sürüm 15,5) oluşturma
 
 Visual Studio 2017 içinde sürüm 15,5, önceden yapılandırılmış test proje veya öğe şablonları Boost.Test için kullanılabilir. Bu nedenle, oluşturabilir ve testleri tutmak için bir konsol uygulama projesi yapılandırmanız gerekir.
 
-1. İçinde **Çözüm Gezgini**çözüm düğümüne sağ tıklayın ve seçin **Ekle** > **yeni proje...** .
+1. İçinde **Çözüm Gezgini**çözüm düğümüne sağ tıklayın ve seçin **Ekle** > **yeni proje**.
 
 1. Sol bölmede seçin **Visual C++** > **Windows Masaüstü**ve ardından **Windows konsol uygulaması** şablonu.
 
 1. Proje bir ad verin ve seçin **Tamam**.
 1. Silme `main` .cpp dosyasına işlevi.
 
-1. Boost.Test tek üstbilgi veya dinamik kitaplık sürümünü kullanıyorsanız, Git [Ekle içerme yönergeleri](#add_include_directives). Statik kitaplık sürümünü kullanıyorsanız, bazı ek yapılandırma gerçekleştirmeniz gerekir:
+1. Boost.Test tek üstbilgi veya dinamik kitaplık sürümünü kullanıyorsanız, Git [Ekle içerme yönergeleri](#add-include-directives). Statik kitaplık sürümünü kullanıyorsanız, bazı ek yapılandırma gerçekleştirmeniz gerekir:
 
    a. Proje dosyası düzenlemek için önce onu kaldırın. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayın ve seçin **projeyi**. Sonra proje düğümüne sağ tıklayın ve seçin **Düzenle < adı\>.vcxproj**.
 
@@ -82,7 +82,7 @@ Visual Studio 2017 içinde sürüm 15,5, önceden yapılandırılmış test proj
 
    f. Genişletme **bağlayıcı > Sistem**. Doğrulayın **alt sistemi** ayarlanır **konsol**.
 
-   G. Seçin **Tamam** özellik sayfalarını kapatmak için.
+   g. Seçin **Tamam** özellik sayfalarını kapatmak için.
 
 ## <a name="add-include-directives"></a>Ekleme yönergeleri içerir
 

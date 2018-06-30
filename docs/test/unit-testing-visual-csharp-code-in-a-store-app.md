@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979418"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117407"
 ---
 # <a name="unit-testing-visual-c-code"></a>Birim testi Visual C# kodu
 
@@ -26,7 +26,7 @@ Bu konu ayrıca tek bir Visual Studio çözümü ve birim testleri ve test etmek
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Çözüm ve birim testi projesi oluşturma
 
-1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje...** .
+1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**.
 
 2. İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü** > **Visual C#** ve **Windows Evrensel**. Ardından **boş uygulama** proje şablonları listesinden.
 
@@ -116,7 +116,7 @@ Bu konu ayrıca tek bir Visual Studio çözümü ve birim testleri ve test etmek
 
 1. Matematik uygulama referansı RooterTests projeye ekleyin.
 
-    1. Çözüm Gezgini'nde seçin **RooterTests** proje ve ardından **Başvuru Ekle...**  kısayol menüsünde.
+    1. Çözüm Gezgini'nde seçin **RooterTests** proje ve ardından **Başvuru Ekle** kısayol menüsünde.
 
     2. İçinde **Başvuru Ekle - RooterTests** iletişim kutusunda, genişletin **çözüm** ve **projeleri**. Ardından **matematik** öğesi.
 

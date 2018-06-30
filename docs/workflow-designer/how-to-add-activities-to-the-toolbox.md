@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cedf05457b397598d7417bce331be27aa8ac4e0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756509"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118219"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Nasıl yapılır: etkinlikler araç kutusuna ekleme
 
@@ -48,9 +48,9 @@ Etkinlikler eklenebilir **araç** birkaç farklı şekilde, çözümünüzdeki. 
 
 1.  Bir iş akışı çözümü açın.
 
-2.  Gelen **Araçları** menüsünde, select **araç kutusu öğelerini Seç...** .
+2.  Gelen **Araçları** menüsünde, select **araç kutusu öğelerini Seç**.
 
-3.  İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **System.Activities bileşenleri** sekmesinde ardından tıklatın **Gözat...**  eklemek istediğiniz özel etkinlik içeren derlemeye gidin.
+3.  İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **System.Activities bileşenleri** sekmesinde ardından tıklatın **Gözat** özel içeren derlemeye gitmek için eklemek istediğiniz etkinliği.
 
 4.  Derleme seçin ve tıklatın **Tamam**. Özel Etkinlik bileşeni bileşenleri listesine eklenir ve otomatik olarak seçilir.
 

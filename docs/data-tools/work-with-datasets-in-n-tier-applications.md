@@ -21,12 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f97e0d4c0cd16fd2bc7cc8bf140a59a800a254ac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 23dc346ac1d8495c3aef191ee3228087e1b222c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926121"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116971"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>N katmanlı uygulamalarda veri kümeleriyle çalışma
 
@@ -44,7 +44,7 @@ Yazılan veri kümeleri N katmanlı desteği n katmanlı tasarım uygulama mimar
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md)
-- [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [İzlenecek yol: n katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [N katmanlı uygulamalarda TableAdapter’lara kod ekleme](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [N katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [N Katmanlı bir veri kümesine doğrulama ekleme](../data-tools/add-validation-to-an-n-tier-dataset.md)
@@ -52,5 +52,5 @@ Yazılan veri kümeleri N katmanlı desteği n katmanlı tasarım uygulama mimar
 - [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)
 - [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
 - [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)
-- [Oluşturma ve TableAdapters öğelerini yapılandırma](../data-tools/create-and-configure-tableadapters.md)
-- [LINQ to SQL ile N Katmanı ve Uzak Uygulamalar](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+- [TableAdapter’lar oluşturma ve yapılandırma](../data-tools/create-and-configure-tableadapters.md)
+- [N katmanlı ve uzak uygulamalarla LINQ-SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

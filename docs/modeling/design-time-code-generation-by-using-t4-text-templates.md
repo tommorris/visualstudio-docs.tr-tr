@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954098"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117699"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluşturmanıza izin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projesi. Genellikle, böylece kullanıcılar verilerinden göre oluşturdukları kod farklılık şablonları yazma bir *modeli*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren bir veri modelidir.
@@ -42,11 +42,11 @@ Tasarım zamanı T4 metin şablonları program kodunu ve diğer dosyalar oluştu
 
 1.  Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje veya mevcut bir açın.
 
-     Örneğin, **dosya** menüsünde seçin **yeni**, **proje**.
+     Örneğin, **dosya** menüsünde seçin **yeni** > **proje**.
 
 2.  Metin şablonu dosyasını projenize ekleyin ve uzantıya sahip bir ad verin **.tt**.
 
-     Bunu yapmak için **Çözüm Gezgini**, projenizin kısayol menüsünden seçin **Ekle**, **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** Orta bölmesinden.
+     Bunu yapmak için **Çözüm Gezgini**, projenizin kısayol menüsünden seçin **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** Orta bölmesinden.
 
      Dikkat **özel araç** özelliği dosyasının **TextTemplatingFileGenerator**.
 

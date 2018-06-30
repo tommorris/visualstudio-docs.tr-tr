@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446507"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117569"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Taşınabilir, özel düzenleyici ayarları EditorConfig ile oluşturma
 
@@ -58,7 +58,7 @@ Projenizden bir EditorConfig dosyayı kaldırın veya codebase kapatın ve yeni 
 
 1. Proje ya da çözüm Visual Studio'da açın. Mı bağlı olarak proje ya da çözüm düğümünü seçin, *.editorconfig* ayarları, Çözümdeki tüm projeleri veya tek uygulamalısınız. Bir klasör proje ya da eklemek için çözüm seçebilirsiniz *.editorconfig* dosya.
 
-1. Menü çubuğundan seçin **proje** > **Yeni Öğe Ekle...** , veya basın **Ctrl**+**Shift**+**A**.
+1. Menü çubuğundan seçin **proje** > **Yeni Öğe Ekle**, veya basın **Ctrl**+**Shift** + **A**.
 
    **Yeni Öğe Ekle** iletişim kutusu açılır.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0ce34d5d8cdc3de6225aafa90b5b20016e5062
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: eae1f0d61492eba29b442d0fbfb22b77377228fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757733"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117068"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope Etkinlik Tasarımcısı
 
@@ -33,7 +33,7 @@ ms.locfileid: "36757733"
 
 **CorrelationScope** gelen etkinlik Tasarımcısı sürüklenebilir **araç** ve iş akışı Tasarımcısı yüzeyini açın. Bu oluşturur bir <xref:System.ServiceModel.Activities.CorrelationScope> varsayılan etkinlik **DisplayName** CorrelationScope biri. <xref:System.Activities.Activity.DisplayName%2A> Üstbilgisinde düzenlenebilir **CorrelationScope** etkinlik Tasarımcısı veya **DisplayName** kutusunun **özellikleri** penceresi.
 
-Belirtmek için <xref:System.ServiceModel.Activities.CorrelationHandle> Mesajlaşma etkinlikleri alt tarafından kullanılan, yanındaki üç nokta düğmesini tıklatın **CorrelatesWith** alanındaki **özellikleri** görüntülemek için penceresi **ifade Düzenleyicisi**  iletişim kutusu. Bu özellik ayrıca etkinlik Tasarımcı yüzeyine ayarlayabilirsiniz.
+Belirtmek için <xref:System.ServiceModel.Activities.CorrelationHandle> Mesajlaşma etkinlikleri alt tarafından kullanılan, yanındaki üç nokta düğmesini seçin **CorrelatesWith** alanındaki **özellikleri** görüntülemek için penceresi **ifade Düzenleyici** iletişim kutusu. Bu özellik ayrıca etkinlik Tasarımcı yüzeyine ayarlayabilirsiniz.
 
 İçinde kendi tasarımcıları bırakarak içinde bağıntı kapsamlı etkinlikleri belirtilen **gövde** içinde kutusunda **CorrelationScope** Tasarımcısı.
 

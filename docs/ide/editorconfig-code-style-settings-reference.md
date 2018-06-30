@@ -1,6 +1,6 @@
 ---
 title: .NET kuralı ayarları için Visual Studio EditorConfig kodlama
-ms.date: 02/28/2018
+ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -18,16 +18,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5789f246f004bbe4bc5400a740e9b901173c26c4
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572653"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117871"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
 
-Visual Studio 2017 içinde tanımlamak ve tutarlı kod stilde korumak, kullanımı ile codebase bir [EditorConfig](../ide/create-portable-custom-editor-options.md) dosya. EditorConfig içeren birkaç çekirdek biçimlendirme özellikleri, gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kuralları ayarları kodlama EditorConfig dosyasını kullanarak da yapılandırılabilir. EditorConfig dosyaları etkinleştirmek veya devre dışı kodlama kuralları tek tek .NET ve bir önem düzeyi zorlanan kuralı istediğiniz derece yapılandırmak için izin verin. EditorConfig temelinizde tutarlılığı zorlamak için nasıl kullanılacağı hakkında daha fazla bilgi için okuma [oluşturma taşınabilir özel düzenleyici seçenekleri](../ide/create-portable-custom-editor-options.md). Ayrıca bakabilir [.NET derleyici platformun .editorconfig dosya](https://github.com/dotnet/roslyn/blob/master/.editorconfig) bir örnek olarak.
+Visual Studio 2017 içinde tanımlamak ve tutarlı kod stilde korumak, kullanımı ile codebase bir [EditorConfig](../ide/create-portable-custom-editor-options.md) dosya. EditorConfig içeren birkaç çekirdek biçimlendirme özellikleri, gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kuralları ayarları kodlama EditorConfig dosyasını kullanarak da yapılandırılabilir. EditorConfig dosyaları etkinleştirmek veya devre dışı kodlama kuralları tek tek .NET ve bir önem düzeyi zorlanan kuralı istediğiniz derece yapılandırmak için izin verin. EditorConfig temelinizde tutarlılığı zorlamak için nasıl kullanılacağı hakkında daha fazla bilgi için okuma [oluşturma taşınabilir özel düzenleyici seçenekleri](../ide/create-portable-custom-editor-options.md). 
+
+Bir örnek .editorconfig için bu belgenin sonuna bakın.
 
 Üç desteklenen .NET kodlama kuralı kategoriye ayrılır:
 
@@ -47,7 +49,7 @@ Visual Studio 2017 içinde tanımlamak ve tutarlı kod stilde korumak, kullanım
 
 Dil kuralları için kurallar aşağıdaki biçime sahiptir:
 
-`options_name = false|true : none|suggestion|warning|error`
+`options_name = false|true : none|silent|suggestion|warning|error`
 
 Her dil kuralı kural için ya da belirtmeniz gerekir **true** (Bu stili tercih et) veya **false** (Bu stili tercih değil) ve bir **önem**. Önem derecesi bu stili için zorlama düzeyini belirtir.
 
@@ -55,10 +57,10 @@ Aşağıdaki tabloda olası önem derecesi değerlerini ve etkilerini listeler:
 
 Önem Derecesi | Efekt
 :------- | ------
-None veya Sessiz | Bu kural ihlal edildiğinde herhangi bir şey kullanıcıya gösterme. Kod oluşturma özellikleri kod, ancak bu stilde'ı oluşturun.
-Öneri | Bu stil kuralı ihlal edildiğinde kullanıcıya öneri olarak göster. İlk iki karakter altında üç gri nokta olarak öneriler görünür.
-uyarı | Bu stil kuralı ihlal edildiğinde derleyici uyarısı gösterir.
-Hata | Bu stil kuralı ihlal edildiğinde derleyici hatası gösterir.
+`none` veya `silent` | Bu kural ihlal edildiğinde herhangi bir şey kullanıcıya gösterme. Kod oluşturma özellikleri kod, ancak bu stilde'ı oluşturun. İle kurallar `none` önem hiçbir zaman görünür *hızlı Eylemler ve yapan yeniden düzenlemeler* menüsü. Çoğu durumda, bu "disabled" veya "göz ardı" olarak kabul edilir.
+`suggestion` | Bu stil kuralı ihlal edildiğinde kullanıcıya öneri olarak göster. İlk iki karakter altında üç gri nokta olarak öneriler görünür.
+`warning` | Bu stil kuralı ihlal edildiğinde derleyici uyarısı gösterir.
+`error` | Bu stil kuralı ihlal edildiğinde derleyici hatası gösterir.
 
 Aşağıdaki liste, izin verilen dil kuralı kuralları gösterir:
 
@@ -80,8 +82,10 @@ Aşağıdaki liste, izin verilen dil kuralı kuralları gösterir:
         - DotNet\_stili\_object_initializer
         - DotNet\_stili\_collection_initializer
         - DotNet\_stili\_açık\_tuple_names
-        - DotNet\_tercih\_çıkarımı yapılan\_tuple_names
-        - DotNet\_tercih\_çıkarımı yapılan\_anonim\_türü\_member_names
+        - DotNet\_stili\_tercih\_çıkarımı yapılan\_tuple_names
+        - DotNet\_stili\_tercih\_çıkarımı yapılan\_anonim\_türü\_member_names
+        - DotNet\_stili\_tercih\_otomatik\_özellikleri
+        - DotNet\_stili\_tercih\_olan\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi
     - ["Null" Tercihler denetleniyor](#null_checking)
         - DotNet\_stili\_coalesce_expression
         - DotNet\_stili\_null_propagation
@@ -319,7 +323,7 @@ Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine a�
 | ----- |:----------- |
 | Her zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih |
 | için\_olmayan\_interface_members | Genel arabirim üyeleri dışında bildirilmesi için erişilebilirlik değiştiricileri tercih eder. Bu aynı sonucu verir **her zaman** ve C# varsayılan arabirim yöntemleri eklerse, gelecekteki sağlama için eklenmiştir. |
-| Hiçbir zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih ediyorsunuz |
+| hiçbir zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih ediyorsunuz |
 
 Kod örnekleri:
 
@@ -419,6 +423,8 @@ Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama di
 | dotnet_style_explicit_tuple_names | IDE0033 | C# ' ta 7.0 + ve Visual Basic 15 + | TRUE: önerisi | İlk sürüm |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# ' ta 7.1 + ve Visual Basic 15 + | TRUE: önerisi | 15,6 |
 | dotnet_style_prefer_inferred_anonymous_ type_member_names | IDE0037 | C# ve Visual Basic | TRUE: önerisi | 15,6 |
+| dotnet_style_prefer_auto_properties | IDE0032 | C# ve Visual Basic | TRUE: yok | 15.7 |
+| dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# ve Visual Basic | TRUE: önerisi | 15.7 |
 
 **DotNet\_stili\_object_initializer**
 
@@ -516,6 +522,14 @@ var tuple = (age, name);
 var tuple = (age: age, name: name);
 ```
 
+```vb
+' dotnet_style_prefer_inferred_tuple_names = true
+Dim tuple = (name, age)
+
+' dotnet_style_prefer_inferred_tuple_names = false
+Dim tuple = (name:=name, age:=age)
+```
+
 **DotNet\_stili\_tercih\_çıkarımı yapılan\_anonim\_türü\_member_names**
 
 - Bu kural ayarlandığında **doğru**, oluşturulursa anonim tür üye adlarının tercih eder.
@@ -532,6 +546,81 @@ var anon = new { age = age, name = name };
 
 ```
 
+```vb
+' dotnet_style_prefer_inferred_anonymous_type_member_names = true
+Dim anon = New With {name, age}
+
+' dotnet_style_prefer_inferred_anonymous_type_member_names = false
+Dim anon = New With {.name = name, .age = age}
+
+```
+
+**DotNet\_stili\_tercih\_otomatik\_özellikleri**
+
+- Bu kural ayarlandığında **doğru**, özel yedekleme alanları özelliklerle üzerinden otomatik özellikleri tercih.
+- Bu kural ayarlandığında **yanlış**, özel yedekleme alanları özelliklerle otomatik özellikleri tercih.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_prefer_auto_properties = true
+private int Age { get; }
+
+// dotnet_style_prefer_auto_properties = false
+private int age;
+
+public int Age
+{
+    get
+    {
+        return age;
+    }
+}
+```
+
+```vb
+' dotnet_style_prefer_auto_properties = true
+Public ReadOnly Property Age As Integer
+
+' dotnet_style_prefer_auto_properties = false
+Private _age As Integer
+
+Public ReadOnly Property Age As Integer
+    Get
+        return _age
+    End Get
+End Property 
+```
+
+**DotNet\_stili\_tercih\_olan\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi**
+
+- Bu kural ayarlandığında **doğru**, null denetimi desen eşleştirme nesnenin üzerine kullanmayı tercih. ReferenceEquals.
+- Bu kural ayarlandığında **yanlış**, nesne tercih eder. Desen eşleştirme null denetimiyle üzerinden ReferenceEquals.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_auto_properties = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_auto_properties = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
+
 Bu kurallar içinde görünebilir bir *.editorconfig* gibi dosya:
 
 ```EditorConfig
@@ -542,6 +631,7 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:none
 ```
 
 #### <a name="null_checking"></a>Null denetimi tercihleri
@@ -1120,6 +1210,12 @@ Aşağıdaki listede, Visual Studio'da kullanılabilir biçimlendirme kuralı ku
         - csharp_space_between_method_declaration_parameter_list_parentheses
         - csharp_space_between_method_call_parameter_list_parentheses
         - csharp_space_between_parentheses
+        - csharp_space_before_colon_in_inheritance_clause
+        - csharp_space_after_colon_in_inheritance_clause
+        - csharp_space_around_binary_operators
+        - csharp_space_between_method_declaration_empty_parameter_list_parentheses
+        - csharp_space_between_method_call_name_and_opening_parenthesis
+        - csharp_space_between_method_call_empty_parameter_list_parentheses
     - [Kaydırma seçenekleri](#wrapping)
         - csharp_preserve_single_line_statements
         - csharp_preserve_single_line_blocks
@@ -1526,6 +1622,12 @@ Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve ilk
 | csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_parentheses |  C# | false | 15.3  |
+| csharp_space_before_colon_in_inheritance_clause |  C# | true | 15.7  |
+| csharp_space_after_colon_in_inheritance_clause |  C# | true | 15.7  |
+| csharp_space_around_binary_operators |  C# | before_and_after | 15.7  |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | false | 15.7  |
+| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | false | 15.7  |
+| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | false | 15.7  |
 
 **CSharp\_alanı\_after_cast**
 
@@ -1612,6 +1714,186 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
+**CSharp\_alanı\_önce\_iki nokta üst üste\_içinde\_inheritance_clause**
+
+- Bu kural ayarlandığında **doğru**, iki nokta üst üste için taban veya arabirimleri tür bildiriminde önce bir alan gerektirir.
+- Bu kural ayarlandığında **false**, gerektiren _hiçbir_ iki nokta üst üste için taban veya arabirimleri tür bildiriminde önce boşluk.
+
+Kod örnekleri:
+
+```csharp
+// csharp_space_before_colon_in_inheritance_clause = true
+interface I
+{
+
+}
+
+class C : I 
+{
+
+}
+
+// csharp_space_before_colon_in_inheritance_clause = false
+interface I
+{
+
+}
+
+class C: I 
+{
+
+}
+```
+
+**CSharp\_alanı\_sonra\_iki nokta üst üste\_içinde\_inheritance_clause**
+
+- Bu kural ayarlandığında **doğru**, sonra iki nokta üst üste için taban veya arabirimleri türü bildiriminde bir alan gerektirir.
+- Bu kural ayarlandığında **false**, gerektiren _hiçbir_ iki nokta üst üste için taban veya arabirimleri tür bildiriminde sonra boşluk.
+
+Kod örnekleri:
+
+```csharp
+// csharp_space_after_colon_in_inheritance_clause = true
+interface I
+{
+
+}
+
+class C : I 
+{
+
+}
+
+// csharp_space_after_colon_in_inheritance_clause = false
+interface I
+{
+
+}
+
+class C :I 
+{
+
+}
+```
+
+**CSharp\_alanı\_geçici\_binary_operators**
+
+Bu kural aşağıdaki tablodan bir değeri kabul eder:
+
+| Değer | Açıklama |
+| ----- |:------------|
+| before_and_after | Önce ve sonra ikili işleç boşluk Ekle |
+| yok | Önce ve sonra ikili işleç boşlukları kaldırın |
+| yoksayma | İkili işleçler boşluk yoksay |
+
+Bu kuralı atla veya başka bir değer kullanmak `before_and_after`, `none`, veya `ignore`, ayar uygulanmaz.
+
+Kod örnekleri:
+
+```csharp
+// csharp_space_around_binary_operators = before_and_after
+return x * (x - y);
+
+// csharp_space_around_binary_operators = none
+return x*(x-y);
+
+// csharp_space_around_binary_operators = ignore
+return x  *  (x-y);
+```
+
+**csharp_space_between_method_declaration_empty_parameter_list_parentheses**
+
+- Bu kural ayarlandığında **doğru**, bir yöntem bildirimi için boş parametre listesi ayraçlar içinde boşluk.
+- Bu kural ayarlandığında **yanlış**, alan için bir yöntem bildirimi boş parametre listesi ayraçlar içinde kaldırın.
+
+Kod örnekleri:
+
+```csharp
+// csharp_space_between_method_declaration_empty_parameter_list_parentheses = true
+void Goo( )
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+
+// csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+**csharp_space_between_method_call_name_and_opening_parenthesis**
+
+- Bu kural ayarlandığında **doğru**, yöntem çağrısı adı ve parantez arasında boşluk.
+- Bu kural ayarlandığında **yanlış**, yöntem çağrısı adı ve parantez arasındaki boşluğu kaldırın.
+
+Kod örnekleri:
+
+```csharp
+// csharp_space_between_method_call_name_and_opening_parenthesis = true
+void Goo()
+{
+    Goo (1);
+}
+
+void Goo(int x)
+{
+    Goo ();
+}
+
+// csharp_space_between_method_call_name_and_opening_parenthesis = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+**csharp_space_between_method_call_empty_parameter_list_parentheses**
+
+- Bu kural ayarlandığında **doğru**, boş bağımsız değişken listesi parantez içinde boşluk.
+- Bu kural ayarlandığında **yanlış**, alanı boş bağımsız değişken listesi parantez içinde kaldırın.
+
+Kod örnekleri:
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
 Örnek *.editorconfig* dosyası:
 
 ```EditorConfig
@@ -1622,6 +1904,12 @@ csharp_space_after_keywords_in_control_flow_statements = true
 csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
 ```
 
 #### <a name="wrapping"></a>Kaydırma seçenekleri
@@ -1677,6 +1965,151 @@ public int MyProperty
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 ```
+
+## <a name="example-editorconfig-file"></a>Örnek EditorConfig dosyası
+Başlamanıza yardımcı olmak için İşte bir örnek *.editorconfig* varsayılan seçenekleri dosyasıyla:
+
+```EditorConfig
+###############################
+# Core EditorConfig Options   #
+###############################
+root = true
+
+# All files
+[*]
+indent_style = space
+
+# Code files
+[*.{cs,csx,vb,vbx}]
+indent_size = 4
+insert_final_newline = true
+charset = utf-8-bom
+
+###############################
+# .NET Coding Conventions     #
+###############################
+[*.{cs,vb}]
+# Organize usings
+dotnet_sort_system_directives_first = true
+
+# this. preferences
+dotnet_style_qualification_for_field = false:none
+dotnet_style_qualification_for_property = false:none
+dotnet_style_qualification_for_method = false:none
+dotnet_style_qualification_for_event = false:none
+
+# Language keywords vs BCL types preferences
+dotnet_style_predefined_type_for_locals_parameters_members = true:none
+dotnet_style_predefined_type_for_member_access = true:none
+
+# Modifier preferences
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
+dotnet_style_readonly_field = true:suggestion
+
+# Expression-level preferences
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:none
+dotnet_prefer_inferred_tuple_names = true:suggestion
+dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:none
+
+###############################
+# Naming Conventions          #
+###############################
+
+# Style Definitions
+dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
+
+# Use PascalCase for constant fields  
+dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
+dotnet_naming_symbols.constant_fields.applicable_kinds            = field
+dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
+dotnet_naming_symbols.constant_fields.required_modifiers          = const
+
+###############################
+# C# Coding Conventions       #
+###############################
+[*.cs]
+# var preferences
+csharp_style_var_for_built_in_types = true:none
+csharp_style_var_when_type_is_apparent = true:none
+csharp_style_var_elsewhere = true:none
+
+# Expression-bodied members
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:none
+csharp_style_expression_bodied_indexers = true:none
+csharp_style_expression_bodied_accessors = true:none
+
+# Pattern matching preferences
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+
+# Null-checking preferences
+csharp_style_throw_expression = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
+
+# Modifier preferences
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
+
+# Expression-level preferences
+csharp_prefer_braces = true:none
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+
+###############################
+# C# Formatting Rules         #
+###############################
+# New line preferences
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
+
+# Indentation preferences
+csharp_indent_case_contents = true 
+csharp_indent_switch_labels = true 
+csharp_indent_labels = flush_left
+
+# Space preferences
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_between_method_call_parameter_list_parentheses = false 
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+
+# Wrapping preferences
+csharp_preserve_single_line_statements = true
+csharp_preserve_single_line_blocks = true
+
+###############################
+# VB Coding Conventions       #
+###############################
+[*.vb]
+# Modifier preferences
+visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
+
+```
+
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

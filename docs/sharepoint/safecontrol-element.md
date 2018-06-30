@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e507d83a1f1f75e346ccbab1858d797dc7b7518
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: aded7f246d961bd3f956611ff092dfdcf8b68564
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691849"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120426"
 ---
-# <a name="safecontrol-element"></a>SafeControl Öğesi
+# <a name="safecontrol-element"></a>SafeControl öğesi
   Bir ASPX denetimi veya SharePoint sitesinde herhangi bir ASPX sayfasında erişmek herhangi bir kullanıcı için güvenli olarak tasarlanmış Web bölümünü temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -36,7 +36,7 @@ ms.locfileid: "34691849"
     TypeName = "Type of the safe control" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
   
 ### <a name="attributes"></a>Öznitelikler  
@@ -48,21 +48,21 @@ ms.locfileid: "34691849"
 |**IsSafeAgainstScript**|İsteğe bağlı **xs:boolean** özniteliği.<br /><br /> Güvenilmeyen kullanıcıların görüntüleyebilir veya ASPX denetim veya Web Bölümü özelliklerini Düzenle olup olmadığını belirtir.|  
 |**Ad**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> Bu güvenli denetim girdisi koleksiyonundaki adı.|  
 |**Namespace**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> Ad alanı ASPX denetim ya da Web Bölümü.|  
-|**TypeName**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> ASPX denetim veya Web Bölümü türü adı.|  
+|**typeName**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> ASPX denetim veya Web Bölümü türü adı.|  
   
-### <a name="child-elements"></a>Alt Öğeler  
+### <a name="child-elements"></a>Alt öğeleri
  Yok.  
   
-### <a name="parent-elements"></a>Üst Öğeler  
+### <a name="parent-elements"></a>Üst öğeler
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
 |[SafeControls](../sharepoint/safecontrols-element.md)|ASPX denetimleri ve SharePoint sitesindeki herhangi bir ASPX sayfasında erişmek herhangi bir kullanıcı için güvenli olarak tasarlanmış Web Bölümleri koleksiyonunu temsil eder.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Güvenli denetimler hakkında daha fazla bilgi için bkz: [sağlama paketleme ve dağıtım bilgileri proje öğelerinde](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Güvenli denetimler hakkında daha fazla bilgi için bkz: [proje öğelerinde paketleme ve dağıtım bilgileri sağlayan](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Öğe Bilgisi  
+## <a name="element-information"></a>Öğe bilgileri
   
 |||  
 |-|-|  
@@ -71,8 +71,7 @@ ms.locfileid: "34691849"
 |**Dosya doğrulama**|ProjectItemModelSchema.xsd|  
 |**Boş olamaz**|Hayır|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Proje Öğelerinde Paketleme ve Dağıtım Bilgileri Sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
+ [Proje öğelerinde paketleme ve dağıtım bilgileri sağlayın](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

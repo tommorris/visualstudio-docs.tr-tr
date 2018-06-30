@@ -18,14 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c244489f21dec3783aed9d970b46805d204a1104
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925061"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118089"
 ---
-# <a name="troubleshoot-service-references"></a>Hizmet başvuruları sorun giderme
+# <a name="troubleshoot-service-references"></a>Hizmet başvurularında sorun giderme
 
 Bu konuda, Windows Communication Foundation (WCF) veya Visual Studio'da WCF Veri Hizmetleri başvuruları ile çalışırken oluşabilecek yaygın sorunlar listelenmiştir.
 
@@ -35,11 +35,11 @@ Döndüğünüzde bir `DataSet` veya `DataTable` bir hizmetinden bir "gelen ilet
 
 Bu hatayı düzeltmek için:
 
-1.  İçinde **Çözüm Gezgini**, açmak için app.config dosyasına çift tıklayın.
+1.  İçinde **Çözüm Gezgini**, çift *app.config* dosyasını açın.
 
 2.  Bulun `MaxReceivedMessageSize` özellik ve daha büyük bir değerle değiştirin.
 
-## <a name="cannot-find-a-service-in-my-solution"></a>Bir hizmet Çözümümde bulunamıyor
+## <a name="cannot-find-a-service-in-my-solution"></a>Bir hizmet çözümümde bulunamıyor
 
 Tıkladığınızda **bulma** düğmesini **hizmeti başvuruları ekleme** iletişim kutusu, çözüm bir veya daha fazla WCF Hizmeti Kitaplığı projelerinde Hizmetler listesinde görünmez. Bir hizmet kitaplığı çözüme eklendi ancak henüz derlenmiş bu durum ortaya çıkabilir.
 
@@ -58,9 +58,9 @@ Bu hatayı düzeltmek için:
 2.  Üzerinde **başlangıç seçenekleri** sekmesi, Temizle **NTLM kimlik doğrulaması** onay kutusu.
 
     > [!NOTE]
-    > NTLM kimlik doğrulaması yalnızca özel olarak WCF hizmetlerini içeren Web siteleri için kapatmanız. WCF hizmetleri için güvenlik web.config dosyasındaki yapılandırma yoluyla yönetilir. Bu, NTLM kimlik doğrulaması gereksiz kılar.
+    > NTLM kimlik doğrulaması yalnızca özel olarak WCF hizmetlerini içeren Web siteleri için kapatmanız. WCF hizmetleri için güvenlik yapılandırma yoluyla yönetilir *web.config* dosya. Bu, NTLM kimlik doğrulaması gereksiz kılar.
 
-## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Oluşturulan sınıflar için erişim düzeyi ayarının hiçbir etkisi
+## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Erişim düzeyi ayarı oluşturulan sınıflar için herhangi bir etkisi olmaz.
 
 Ayarı **erişim düzeyi oluşturulan sınıflar için** seçeneğini **Yapılandırma hizmeti başvuruları** iletişim kutusuna **dahili** veya **arkadaş** her zaman çalışmayabilir. Seçeneği iletişim kutusunda ayarlanacak görünse bile, sonuçta elde edilen destek sınıfları erişim düzeyi ile oluşturulan `Public`.
 
@@ -84,7 +84,7 @@ Bu hatayı düzeltmek için el ile hizmet projeyi yeniden vardır:
 
 4.  WCF hizmet projesi yükleyin.
 
-5.  İçinde **Configuration Manager** iletişim kutusu, kümesi **etkin çözüm yapılandırması** için **hata ayıklama**. Daha fazla bilgi için bkz: [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
+5.  İçinde **Configuration Manager** iletişim kutusu, kümesi **etkin çözüm yapılandırması** için **hata ayıklama**. Daha fazla bilgi için bkz: [nasıl yapılır: oluşturma ve düzenleme yapılandırmaları](../ide/how-to-create-and-edit-configurations.md).
 
 6.  İçinde **Çözüm Gezgini**, WCF Hizmeti projesini seçin.
 
@@ -104,6 +104,6 @@ Bu hatayı düzeltmek için RSS akışları devre dışı bırakın:
 
 4.  Tıklatın **Tamam** kapatmak için **Internet Seçenekleri** iletişim kutusu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -17,16 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90358624f5de8fc7c90e3424f04617acab4388a4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a8842396d90eff6f3beb9c05e8916e48411e82bd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120553"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Nasıl yapılır: MSBuild Hedeflerini Kullanarak SharePoint Çözüm Paketini Özelleştirme
-  Bir komut isteminde MSBuild hedeflerini kullanarak SharePoint paket dosyalarını (.wsp) Visual Studio nasıl oluşturduğunu özelleştirebilirsiniz. Örneğin, paketleme Ara dizin ve numaralandırılmış dosyaları belirtin MSBuild öğesi gruplarını değiştirmek için MSBuild özelliklerini özelleştirebilirsiniz.  
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Nasıl yapılır: MSBuild hedeflerini kullanarak SharePoint çözüm paketini özelleştirme
+  Bir komut isteminde MSBuild hedeflerini kullanarak SharePoint paket dosyalarını Visual Studio nasıl oluşturduğunu özelleştirebilirsiniz (*.wsp*). Örneğin, paketleme Ara dizin ve numaralandırılmış dosyaları belirtin MSBuild öğesi gruplarını değiştirmek için MSBuild özelliklerini özelleştirebilirsiniz.  
   
-## <a name="customizing-and-running-msbuild-targets"></a>Özelleştirme ve MSBuild hedefleri çalıştırma  
+## <a name="customize-and-run-msbuild-targets"></a>Özelleştirme ve MSBuild hedefleri çalıştırın  
  BeforeLayout ve AfterLayout hedefleri özelleştirirseniz önce paket düzeni, ekleme, kaldırma veya paketlenirler dosyalarını değiştirme gibi görevleri gerçekleştirebilirsiniz.  
   
 #### <a name="to-customize-the-beforelayout-target"></a>BeforeLayout hedef özelleştirmek için  
@@ -47,7 +48,7 @@ ms.lasthandoff: 05/22/2018
   
 3.  Projeyi açın, kendi kısayol menüsünü açın ve ardından **projeyi**.  
   
-4.  İçinde **Çözüm Gezgini**projesi için kısayol menüsünü açın ve ardından **Düzenle***ProjectName***.vbproj** veya **Düzenle***ProjectName*** .csproj**.  
+4.  İçinde **Çözüm Gezgini**projesi için kısayol menüsünü açın ve ardından **Düzenle**  *\<ProjectName > .vbproj* veya **Düzenle**  *\<ProjectName > .csproj*.  
   
 5.  Sonra `Import` satır proje dosyasının sonuna yakın, aşağıdaki satırı ekleyin.  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 05/22/2018
   
 #### <a name="to-customize-the-afterlayout-target"></a>AfterLayout hedef özelleştirmek için  
   
-1.  Menü çubuğunda seçin **dosya**, **açık**, **dosya**.  
+1.  Menü çubuğunda seçin **dosya** > **açık** > **dosya**.  
   
 2.  İçinde **açık dosya** iletişim kutusu, proje klasöre gidin, CustomLayout.target dosyayı seçin ve ardından **açık** düğmesi.  
   
@@ -83,7 +84,6 @@ ms.lasthandoff: 05/22/2018
   
  Proje yayımladığınızda, paketleme başlamadan önce BeforeLayout iletisi görüntülenir ve paketleme bittikten sonra AfterLayout ileti görüntülenir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>Ayrıca bkz.
+ [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

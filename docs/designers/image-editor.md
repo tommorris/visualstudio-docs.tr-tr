@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2981a94ec34d9631b8a125407e709b8400eaa0dd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747316"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117855"
 ---
 # <a name="image-editor"></a>Görüntü Düzenleyici
 
@@ -36,7 +36,7 @@ Görüntü Düzenleyicisi bu görüntü biçimlerini destekler:
 |JPEG|.jpg, .jpeg, .jpe, .jfif|
 |Doğrudan çizim yüzeyini|.DDS|
 |Grafik Değişim Biçimi|.gif|
-|Bit eşlem|.bmp, .dib|
+|bit eşlem|.bmp, .dib|
 |Etiketli Görüntü dosyası biçimi|.tif, .tiff|
 |TGA (Targa)|.TGA|
 
@@ -46,7 +46,7 @@ Bu bölümde, Visual Studio projenize bir görüntü ekleyin ve gereksinimlerini
 
 ### <a name="to-add-an-image-to-your-project"></a>Bir görüntü projenize eklemek için
 
-1.  İçinde **Çözüm Gezgini**, görüntüsüne ekleyin ve ardından istediğiniz proje için kısayol menüsünü açın **Ekle**, **yeni öğe**.
+1.  İçinde **Çözüm Gezgini**, görüntüsüne ekleyin ve ardından istediğiniz proje için kısayol menüsünü açın **Ekle** > **yeni öğe**.
 
 2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **yüklü**seçin **grafik**ve ardından bir görüntü için uygun dosya biçimi seçin. Gereksinimlerinize göre bir dosya biçimi seçme hakkında daha fazla bilgi için aşağıdaki bölümüne bakın.
 
@@ -99,7 +99,7 @@ Görüntü Düzenleyicisi araç çubukları içeren görüntülerle çalışma y
 
 |Araç Çubuğu Öğesi|Açıklama|
 |------------------|-----------------|
-|**seçin**|Dikdörtgen bir bölgesi görüntü seçimi sağlar. Bir bölge seçtikten sonra kesme, kopyalayabilir, taşımak, ölçeklendirme, döndürme, Çevir veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|
+|**Seçin**|Dikdörtgen bir bölgesi görüntü seçimi sağlar. Bir bölge seçtikten sonra kesme, kopyalayabilir, taşımak, ölçeklendirme, döndürme, Çevir veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|
 |**Düzensiz seçimi**|Düzensiz bir bölgenin görüntü seçimi sağlar. Bir bölge seçtikten sonra kesme, kopyalayabilir, taşımak, ölçeklendirme, döndürme, Çevir veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|
 |**Değnek seçimi**|Benzer şekilde renkli bölgesinin görüntü seçimi sağlar. *Dayanıklılık*— diğer bir deyişle, maksimum fark içinde bunlar değerlendirilir benzer bitişik renkler arasındaki — benzer renkleri daha küçük veya daha geniş bir dizi içerecek şekilde yapılandırılabilir. Bir bölge seçtikten sonra kesme, kopyalayabilir, taşımak, ölçeklendirme, döndürme, Çevir veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|
 |**Pan**|Görüntünün pencere çerçevesi göre hareketini sağlar. İçinde **Pan** modu, görüntünün bir nokta seçin ve ardından taşıyabilirsiniz.<br /><br /> Geçici olarak etkinleştirebilirsiniz **Pan** tuşuna basarak ve Ctrl tuşunu basılı tutarak modu.|
@@ -127,11 +127,11 @@ Görüntü Düzenleyicisi araç çubukları içeren görüntülerle çalışma y
 |**Fırça**|Kenar yumuşatma vuruş çizmek için etkin renk seçimi kullanır. Renk ve vuruş kalınlığı ayarlayabilirsiniz **özellikleri** penceresi.|
 |**Havalı fırça**|Görüntünün birlikte karıştırır ve süresinin bir işlevi olarak daha doymuş duruma bir kenar yumuşatma vuruşu çizmek için etkin renk seçimi kullanır. Renk ve vuruş kalınlığı ayarlayabilirsiniz **özellikleri** penceresi.|
 |**Damlalık**|Etkin renk seçimi seçili piksel rengini belirler.|
-|**doldurma**|Görüntü bölgesi doldurmak için etkin renk seçimi kullanır. Etkilenen bölge burada dolgu, her piksel, aynı renkteki piksel bağlı olduğu ve aynı renk birlikte uygulanır piksel olarak tanımlanır. Dolgu etkin bir seçim uyguladıysanız, etkilenen bölge seçerek sınırlı değildir.<br /><br /> Varsayılan olarak, görüntünün alfa bileşen göre etkilenen bölge ile birlikte etkin renk seçimi karıştırılan. Etkilenen bölge üzerine yazmak için etkin renk seçimi kullanmak üzere dolgu Aracı'nı kullandığınızda Shift tuşunu basılı tutun.|
+|**Doldurma**|Görüntü bölgesi doldurmak için etkin renk seçimi kullanır. Etkilenen bölge burada dolgu, her piksel, aynı renkteki piksel bağlı olduğu ve aynı renk birlikte uygulanır piksel olarak tanımlanır. Dolgu etkin bir seçim uyguladıysanız, etkilenen bölge seçerek sınırlı değildir.<br /><br /> Varsayılan olarak, görüntünün alfa bileşen göre etkilenen bölge ile birlikte etkin renk seçimi karıştırılan. Etkilenen bölge üzerine yazmak için etkin renk seçimi kullanmak üzere dolgu Aracı'nı kullandığınızda Shift tuşunu basılı tutun.|
 |**Silme**|Görüntünün bir alfa kanal destekliyorsa piksel için tamamen saydam rengini belirler. Aksi takdirde, piksel için etkin arka plan rengini belirler.|
 |**Satır**, **dikdörtgen**, **yuvarlak dikdörtgen**, **elips**|Bir şekli görüntü üzerinde çizer. Renk ve hattaki kalınlığı ayarlayabilirsiniz **özellikleri** penceresi.<br /><br /> Eşit genişlik ve yükseklik sahip ilkel çizmek için tuşuna basın ve çizerken Shift basılı tutun.|
 |**Metin**|Ön plan rengini seçimin metin çizme için kullanır. Arka plan rengi, arka plan rengi seçime göre belirlenir. Saydam arka plan, arka plan rengi seçim alfa değeri 0 olmalıdır. Metin bölge etkinken metin kenar yumuşatma vuruşu ile çizilir ve metin ayarlayabilirsiniz olup olmadığını ayarlayabilir **değeri**, **yazı tipi**, **boyutu**ve stil —**Kalın**, **italik**, veya **altı çizili**— içinde **özellikleri** penceresi. İçerik ve metin görünümünü kesin metin bölge artık etkin olduğunda.|
-|**döndürme**|Görüntüyü 90 derece saat yönünde döndürür.|
+|**Döndürme**|Görüntüyü 90 derece saat yönünde döndürür.|
 |**Kırpma**|Etkin seçimi görüntüye kırpar.|
 
 ### <a name="work-with-mip-levels"></a>MIP düzeyleri ile çalışma
@@ -145,7 +145,7 @@ Bazı görüntü biçimleri — Örneğin, DirectDraw yüzeyini (.dds) — sayda
 |Aracı|Açıklama|
 |----------|-----------------|
 |**Kalem**, **fırça**, **havalı fırça**, **satır**, **dikdörtgen**, **yuvarlak dikdörtgen** , **Elips**, **metin**|Görüntü ile birlikte etkin renk seçimi de karıştırmak için **özellikleri** penceresinde genişletin **kanalları** özellik grubu ve kümesi **çizmek** onaykutusu **Alpha** kanal ve normal şekilde çizin.<br /><br /> Etkin renk seçim ile çizme ve görüntünün alfa değeri bırakın için temizleyin **çizin** , onay kutusu **alfa** kanal ve normal şekilde çizin.|
-|**doldurma**|Görüntü ile birlikte etkin renk seçimi karıştırmak için yalnızca doldurmak için alanı seçin.<br /><br /> Etkin renk seçimi kullanmak üzere — alfa kanal değeri de dahil olmak üzere — görüntünün üzerine yazmak için tuşuna basın ve Shift basılı tutun ve doldurmak için alanı seçin.|
+|**Doldurma**|Görüntü ile birlikte etkin renk seçimi karıştırmak için yalnızca doldurmak için alanı seçin.<br /><br /> Etkin renk seçimi kullanmak üzere — alfa kanal değeri de dahil olmak üzere — görüntünün üzerine yazmak için tuşuna basın ve Shift basılı tutun ve doldurmak için alanı seçin.|
 
 ### <a name="image-properties"></a>Görüntü Özellikleri
 

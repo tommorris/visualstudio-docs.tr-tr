@@ -19,16 +19,16 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924478"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117218"
 ---
 # <a name="code-snippets"></a>Kod parçacıkları
 
-Kod parçacıkları, bağlam menü komutu veya kısayollarıyla birleşimini kullanarak bir kod dosyasında eklenebilir yeniden kullanılabilir kod küçük taşlarıdır. Bunlar genellikle yaygın olarak kullanılan kod blokları gibi içeren `try-finally` veya `if-else` tüm sınıfları veya yöntemleri eklemek için engeller, ancak kullanılabilir.
+Kod parçacıkları, bağlam menü komutu veya kısayollarıyla birleşimini kullanarak bir kod dosyasında eklenebilir yeniden kullanılabilir kod küçük taşlarıdır. Genellikle gibi yaygın olarak kullanılan kod blokları içerdikleri `try-finally` veya `if-else` tüm sınıfları veya yöntemleri eklemek için engeller, ancak kullanılabilir.
 
 Kod parçacıkları diller, C#, C++, Visual Basic, XML ve T-SQL, birkaçıdır dahil olmak üzere çok sayıda için kullanılabilir. Tüm kullanılabilir yüklü parçacıkları bir dil için görüntülemek için açın **kod parçacıkları Yöneticisi** gelen **Araçları** Visual Studio menüsünde ve üstünde açılan menüsünden dili seçin.
 
@@ -36,9 +36,9 @@ Kod parçacıkları diller, C#, C++, Visual Basic, XML ve T-SQL, birkaçıdır d
 
 Kod parçacıkları aşağıdaki genel yollarla erişilebilir:
 
-- Menü çubuğunda seçin **Düzenle** > **IntelliSense** > **parçacığı Ekle...**
+- Menü çubuğunda seçin **Düzenle** > **IntelliSense** > **parçacığı Ekle**
 
-- Kod düzenleyicisinde sağ tıklatın veya bağlam menüsünden seçin **parçacığı** > **parçacığı Ekle...**
+- Kod düzenleyicisinde sağ tıklatın veya bağlam menüsünden seçin **parçacığı** > **parçacığı Ekle**
 
 - Klavyeden basın **Ctrl**+**K**+**X**
 
@@ -74,7 +74,7 @@ if (true)
 
 Kod parçacıkları yazmakta olduğunuz kesin kod uyacak şekilde değiştirmeniz gerekir yer tutucuları olan değiştirme parametreleri içerebilir. Önceki örnekte `true` uygun koşulu ile değiştirirsiniz değiştirme parametresi. Yaptığınız değişikliği parçacığında bulunan aynı değiştirme parametresi, her örneği için tekrarlanır.
 
-Örneğin, Visual Basic'te bir özellik ekler bir kod parçacığı yoktur. Kod parçacığını eklemek için seçin **parçacığı...**   >  **Ekle parçacığı** bir Visual Basic kod dosyasını sağ tıklatın veya bağlam menüsünden. Ardından, **kod düzenleri** > **özellikleri, yordamlar, olayları** > **bir özellik tanımlamak**.
+Örneğin, Visual Basic'te bir özellik ekler bir kod parçacığı yoktur. Kod parçacığını eklemek için seçin **parçacığı** > **Ekle parçacığı** bir Visual Basic kod dosyasını sağ tıklatın veya bağlam menüsünden. Ardından, **kod düzenleri** > **özellikleri, yordamlar, olayları** > **bir özellik tanımlamak**.
 
 ![Kod parçacığı menü tanımla bir özellik için](media/code-snippets-vb-property.png)
 

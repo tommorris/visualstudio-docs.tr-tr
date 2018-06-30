@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1e8cdcc863cfd363b1a73f11ed05ffb5a5ff12e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120609"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Nasıl yapılır: SharePoint Proje Hizmetini Alma
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Nasıl yapılır: SharePoint Proje hizmetini alma
   SharePoint Proje hizmeti çözümleri aşağıdaki türden erişebilirsiniz:  
   
 -   SharePoint Proje sisteminin proje uzantısı, proje öğe uzantısına veya proje öğesi türü tanımı gibi uzantısı. Bu tür uzantıları hakkında daha fazla bilgi için bkz: [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md).  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Visual Studio uzantısı, bir VSPackage gibi başka bir tür.  
   
-## <a name="retrieving-the-service-in-project-system-extensions"></a>Proje sisteminin uzantılarında hizmet alınıyor  
+## <a name="retrieve-the-service-in-project-system-extensions"></a>Proje sisteminin uzantılarında hizmeti alamadı  
  SharePoint Proje sisteminin herhangi uzantısında kullanarak proje hizmeti erişebilirsiniz <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A> özelliği bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> nesnesi.  
   
  Aşağıdaki yordamları kullanarak proje hizmetini de alabilirsiniz.  
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/16/2018
   
      Proje öğesi türlerini tanımlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir SharePoint proje öğesi türü tanımlama](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
-## <a name="retrieving-the-service-in-server-explorer-extensions"></a>Sunucu Gezgini uzantıları hizmetinde alınıyor  
+## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Sunucu Gezgini uzantıları hizmetinde alma  
  Bir uzantısına **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**, proje hizmetini kullanarak erişebilirsiniz <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> özelliği bir <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> nesnesi.  
   
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Bir sunucu Gezgini uzantısında hizmeti alınamadı  
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/16/2018
   
      Genişletme hakkında daha fazla bilgi için **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**, bkz: [nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="retrieving-the-service-in-other-visual-studio-extensions"></a>Diğer Visual Studio uzantıları hizmetinde alınıyor  
+## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>Diğer Visual Studio uzantıları hizmetinde alma  
  Bir VSPackage ya da erişimi olan herhangi bir Visual Studio uzantı proje hizmetini alma bir <xref:EnvDTE80.DTE2> Otomasyon nesne modelinde uygulayan bir proje şablonu Sihirbazı gibi <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
   
  Bir VSPackage talep edebilir bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> aşağıdaki yöntemlerden birini kullanarak nesnesi:  
@@ -101,9 +102,8 @@ ms.lasthandoff: 04/16/2018
   
  Erişimi olan bir Visual Studio Uzantısı'nda bir <xref:EnvDTE80.DTE2> nesnesi isteyebileceği bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> kullanarak nesne <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> yöntemi bir <xref:Microsoft.VisualStudio.Shell.ServiceProvider> nesnesi. Daha fazla bilgi için bkz: [DTE nesneden bir hizmet alma](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint Proje hizmetini kullanma](../sharepoint/using-the-sharepoint-project-service.md)   
  [Nasıl yapılır: bir hizmeti Al](../extensibility/how-to-get-a-service.md)   
- [Nasıl Yapılır: Sihirbazları Proje Şablonlarıyla Kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Nasıl yapılır: sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: Bir veri kümesini doldururken kısıtlamaları kapatma Aç
+title: Bir veri kümesini doldururken kısıtlamaları kapatma
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,21 +22,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c27cb590b5a8a4b38a143de5e6faba80414f97ba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d128216f84228c9cd4946f9a38c6c1b7845f92f1
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926147"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117244"
 ---
-# <a name="turn-off-constraints-while-filling-a-dataset"></a>Bir veri kümesini doldururken kısıtlamaları kapatma Aç
+# <a name="turn-off-constraints-while-filling-a-dataset"></a>Bir veri kümesini doldururken kısıtlamaları kapatma
 
 Bir veri kümesi (örneğin, yabancı anahtar kısıtlamaları) kısıtlamalarını içeriyorsa, bunlar dataset karşı gerçekleştirilen işlemleri {ilgili hatalar yükseltebilirsiniz. Örneğin, alt kayıtları yüklemeden önce yükleme üst kayıtlar bir kısıtlamayı ihlal ediyor ve hataya neden ilgili. Bir alt kayıt yük hemen kısıtlaması ilgili üst kayıt için denetler ve hata başlatır.
 
 Geçici kısıtlaması askıya izin vermek için bir mekanizma olsaydı, alt tablosuna bir kayıt yüklemeye çalıştığınız her zaman bir hata oluşturdu. Bir veri kümesindeki tüm kısıtlamalar askıya almak için başka bir yolu <xref:System.Data.DataRow.BeginEdit%2A>, ve <xref:System.Data.DataRow.EndEdit%2A> özellikleri.
 
 > [!NOTE]
-> Doğrulama olayları (örneğin, <xref:System.Data.DataTable.ColumnChanging> ve<xref:System.Data.DataTable.RowChanging>) kısıtlamaları devre dışı bırakıldığında oluşturulmaz.
+> Doğrulama olayları (örneğin, <xref:System.Data.DataTable.ColumnChanging> ve <xref:System.Data.DataTable.RowChanging>) kısıtlamaları devre dışı bırakıldığında oluşturulmaz.
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>Güncelleştirme kısıtlamaları programlı olarak askıya almak için
 
@@ -51,7 +51,7 @@ Geçici kısıtlaması askıya izin vermek için bir mekanizma olsaydı, alt tab
 
 2.  İçinde **özellikleri** penceresindeki ayarlayın <xref:System.Data.DataSet.EnforceConstraints%2A> özelliğine `false`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [TableAdapters kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [Veri kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md)

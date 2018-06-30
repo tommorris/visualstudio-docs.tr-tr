@@ -16,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aec11e54547f05e3ac7babae29e0c95737bc725e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924424"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117790"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Kod çözümleme uyarılarını bastırma
 
@@ -35,7 +35,7 @@ C + +/ CLI, CA makroları kullanmak\_BASTIR\_ileti veya CA\_genel\_öznitelik ek
 > Kaynak suppressions yayın derlemeleri üzerinde kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Ayrıca, kaynak gizleme işleme maliyetini nedeniyle, uygulamanızın performansı düşebilir.
 
 > [!NOTE]
-> Bir proje için Visual Studio 2017 geçirirseniz, aniden zorlamayı bir kod çözümleme uyarıları sayısıyla karşılaştığı. Uyarıları gidermek ve Kod Analizi geçici olarak devre dışı istediğiniz hazır değilseniz, proje özellik sayfalarını açın (**proje** > ***proje* özellikler...** ) ve Git **Kod Analizi** sekmesi. Seçimini **etkinleştirmek Kod Analizi derlemede**ve projenizi yeniden derleyin. Alternatif olarak, farklı, daha küçük kural kodu çalıştırmak için kümesini seçebilirsiniz. Kod çözümleme uyarıları gidermek hazır olduğunuzda geri üzerinde açmayı unutmayın.
+> Bir proje için Visual Studio 2017 geçirirseniz, aniden zorlamayı bir kod çözümleme uyarıları sayısıyla karşılaştığı. Uyarıları gidermek ve Kod Analizi geçici olarak devre dışı istediğiniz hazır değilseniz, proje özellik sayfalarını açın (**proje** > **\<Proje > Özellikler**) ve Git **Kod Analizi** sekmesi. Seçimini **etkinleştirmek Kod Analizi derlemede**ve projenizi yeniden derleyin. Alternatif olarak, farklı, daha küçük kural kodu çalıştırmak için kümesini seçebilirsiniz. Kod çözümleme uyarıları gidermek hazır olduğunuzda geri üzerinde açmayı unutmayın.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage özniteliği
 

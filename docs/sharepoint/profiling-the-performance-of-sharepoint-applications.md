@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3375d0cadf7a484a4965123b3ee9e82675f11ef9
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296345"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118060"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>SharePoint uygulamalarının performansını profil
 
@@ -64,12 +64,12 @@ Kodlanmış UI testleri SharePoint uygulamanız kendi kullanıcı arabirimi (UI)
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[İzlenecek Yol: SharePoint Uygulaması için Profil Oluşturma](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Örnekleme profili bir SharePoint uygulama çözümlemesi gösterir.|
+|[İzlenecek yol: bir SharePoint uygulama profili](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Örnekleme profili bir SharePoint uygulama çözümlemesi gösterir.|
 |[Performans testi uygulamanızı serbest bırakmadan önce](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|Stres testi SharePoint uygulamaları Yardım yük testleri oluşturmayı açıklar.|
 |[Kodunuza Birim Testi Uygulama](/visualstudio/test/unit-test-your-code)|Birim testleri kullanarak kodunuzda mantık hataları bulmak açıklar.|
 |[Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|SharePoint uygulamaları kullanıcı arabirimini test edileceğini açıklar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [SharePoint Çözümleri Oluşturma ve Hatalarını Ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Kod Kalitesini Geliştirme](/visualstudio/test/improve-code-quality)
+[Derleme ve hata ayıklama SharePoint çözümlerini](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+[kod kalitesini geliştirmek](/visualstudio/test/improve-code-quality)

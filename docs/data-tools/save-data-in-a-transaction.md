@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5cd225fe1eae267116610e2f08c7092d33c592af
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745535"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117686"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>İzlenecek yol: Bir işlemde veri kaydetme
 Bu kılavuzu kullanarak bir işlemde veri kaydetme gösterilmiştir <xref:System.Transactions> ad alanı. Bu kılavuzda bir Windows Forms uygulaması oluşturacaksınız. Northwind örnek veritabanında iki tablo için bir veri kümesi oluşturmak için veri kaynağı Yapılandırma Sihirbazı'nı kullanacaksınız. Veri bağlama denetimleri için Windows formu ve bir TransactionScope içinde veritabanını güncelleştirmek BindingNavigator'ın Kaydet düğmesi için kod değiştireceksiniz ekleyeceksiniz.
@@ -36,7 +36,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .
+    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu**.
 
        Sorgu Düzenleyicisi penceresini açar.
 
@@ -51,7 +51,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 #### <a name="to-create-the-new-windows-project"></a>Yeni Windows projesi oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 

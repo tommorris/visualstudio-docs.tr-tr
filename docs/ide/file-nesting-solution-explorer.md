@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bc4ba4c019801c4461313149c0f3befacefa93d2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582621"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118151"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Çözüm Gezgini'nde dosya iç içe geçme özelleştirme
+# <a name="customize-file-nesting-in-solution-explorer"></a>Çözüm Gezgini’nde dosya iç içe yerleştirmeyi özelleştirme
 
 İlgili dosyaların iç içe **Çözüm Gezgini** iç içe geçmiş kurallar üzerinde hiçbir denetimi vardı artık yeni, ancak kadar değil. Hazır arasında seçim yapabilirsiniz **kapalı**, **varsayılan** ve **Web**, ancak iç içe geçme, istediğiniz tam olarak özelleştirebilirsiniz. Çözüme özel bile oluşturabilirsiniz ve projeye özel ayarlar, ancak daha sonra tüm. İlk üzerinden edelim Giden kutusu görüntüleniyor.
 
@@ -116,7 +116,7 @@ Bu sağlayıcı, tüm dosya adları üzerinde tabanlı dosya iç içe geçmiş k
 
 ![fileToFile örnek kuralları](media/filenesting_filetofile.png) ![fileToFile örnek etkisi](media/filenesting_filetofile_effect.png)
 
-* *bower.JSON* altında iç içe *.bowerrc* nedeniyle **fileToFile** kuralı
+* *.bowerrc* altında iç içe *bower.json* nedeniyle **fileToFile** kuralı
 
 ### <a name="rule-order"></a>Kural sırası
 

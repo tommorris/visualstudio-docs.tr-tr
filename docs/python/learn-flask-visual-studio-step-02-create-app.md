@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 907b20d3665a84f764619dc40a906b1d4096fd04
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946849"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118206"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Adım 2: Flask uygulama görünümleri ve sayfa şablonları oluşturma
 
@@ -36,7 +36,7 @@ Bu adımda, daha fazla bilgi nasıl yapılır:
 
 1. Proje klasörünüzdeki adlı bir uygulama klasörü oluşturun `HelloFlask` ('nde projeye sağ **Çözüm Gezgini** seçip **Ekle** > **yeni klasör** .)
 
-1. İçinde `HelloFlask` klasör adında bir dosya oluşturun `__init.py__` oluşturan aşağıdaki içeriğe sahip `Flask` örneği ve uygulamanın görünümler (sonraki adımda oluşturulan) yükler:
+1. İçinde `HelloFlask` klasör adında bir dosya oluşturun `__init__.py` oluşturan aşağıdaki içeriğe sahip `Flask` örneği ve uygulamanın görünümler (sonraki adımda oluşturulan) yükler:
 
     ```python
     from flask import Flask

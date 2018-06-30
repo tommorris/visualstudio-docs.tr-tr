@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14eaa5f23af978ae603c4f8b94d3c3d18953943f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 614a2e04cd1a7cba054ca209784619021b128e5e
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120445"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>İzlenecek yol: Özel Site İş Akışı Faaliyeti Oluşturma
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>İzlenecek yol: özel site iş akışı etkinliği oluşturma
   Bu kılavuzu kullanarak bir site düzeyinde iş akışı için özel bir etkinlik oluşturmak gösterilmiştir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Yalnızca listesini sitesindeki tüm site için site düzeyinde iş akışları geçerlidir.) Özel Etkinlik bir yedek Duyurular listesi oluşturur ve ardından Duyurular listesi içeriğini kopyalar.  
   
  Bu kılavuz aşağıdaki görevler gösterilmiştir:  
@@ -47,16 +48,16 @@ ms.lasthandoff: 04/16/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## <a name="creating-a-site-workflow-custom-activity-project"></a>Site iş akışı özel etkinlik proje oluşturma  
+## <a name="create-a-site-workflow-custom-activity-project"></a>Bir site iş akışı özel etkinlik projesi oluşturma
  İlk olarak tutun ve test özel iş akışı etkinliği için bir proje oluşturun.  
   
 #### <a name="to-create-a-site-workflow-custom-activity-project"></a>Bir site iş akışı özel etkinlik projesi oluşturmak için  
   
-1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje** görüntülemek için **yeni proje** iletişim kutusu.  
+1.  Menü çubuğunda seçin **dosya** > **yeni** > **proje** görüntülemek için **yeni proje** iletişim kutusu.  
   
 2.  Genişletme **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/16/2018
   
      Bu adım çözümü için güven düzeyini Grup çözümü, iş akışı projeleri için kullanılabilir tek seçenek olarak ayarlar.  
   
-6.  İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje**, **Yeni Öğe Ekle**.  
+6.  İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.  
   
 7.  Ya da altında **Visual C#** veya **Visual Basic**, genişletin **SharePoint** düğümünü ve ardından **2010** düğümü.  
   
@@ -82,12 +83,12 @@ ms.lasthandoff: 04/16/2018
   
 10. Seçin **son** geri kalan varsayılan ayarları kabul etmek için düğmesi.  
   
-## <a name="adding-a-custom-workflow-activity-class"></a>Özel iş akışı etkinliği sınıf ekleme  
+## <a name="add-a-custom-workflow-activity-class"></a>Özel iş akışı etkinlik sınıfı ekleme
  Ardından, özel iş akışı etkinliği kodunu içerecek projesi için bir sınıf ekleyin.  
   
 #### <a name="to-add-a-custom-workflow-activity-class"></a>Özel iş akışı etkinliği sınıf eklemek için  
   
-1.  Menü çubuğunda seçin **proje**, **Yeni Öğe Ekle** görüntülemek için **Yeni Öğe Ekle** iletişim kutusu.  
+1.  Menü çubuğunda seçin **proje** > **Yeni Öğe Ekle** görüntülemek için **Yeni Öğe Ekle** iletişim kutusu.  
   
 2.  İçinde **yüklü şablonlar** ağaç görünümü, seçin **kod** düğümünü ve ardından **sınıfı** Şablonu proje öğesi şablonları listesinde. Class1 varsayılan adı kullanın. Seçin **Ekle** düğmesi.  
   
@@ -96,14 +97,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]  
   
-4.  Projeyi kaydedin ve ardından, menü çubuğunda, **yapı**, **yapı çözümü**.  
+4.  Projeyi kaydedin ve ardından, menü çubuğunda, **yapı** > **yapı çözümü**.  
   
      Özel bir eylem olarak Class1 görünür **araç** üzerinde **AnnouncementBackup bileşenleri** sekmesi.  
   
-## <a name="adding-the-custom-activity-to-the-site-workflow"></a>Site iş akışı için özel etkinlik ekleme  
+## <a name="add-the-custom-activity-to-the-site-workflow"></a>Site iş akışı için özel etkinlik ekleme
  Ardından, özel kod içerecek şekilde iş akışına bir etkinlik ekleyin.  
   
-#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>Özel Etkinlik iş akışı siteye eklemek için  
+#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>Site iş akışı için özel bir aktivite eklemek için
   
 1.  Tasarım görünümünde iş akışı Tasarımcısı'nda Workflow1 açın.  
   
@@ -111,12 +112,12 @@ ms.lasthandoff: 04/16/2018
   
 3.  Projeyi kaydedin.  
   
-## <a name="testing-the-site-workflow-custom-activity"></a>Site iş akışı özel etkinlik test etme  
+## <a name="test-the-site-workflow-custom-activity"></a>Site iş akışı özel etkinlik test
  Ardından, projeyi çalıştırın ve site iş akışı başlatın. Özel Etkinlik yedekleme duyuruları listesini oluşturur ve içeriği geçerli duyuruları listesinden kopyalar. Kod ayrıca yedekleme listesini zaten bir oluşturmadan önce mevcut olup olmadığını denetler. Yedek liste zaten varsa, bu silinir. Kod Ayrıca SharePoint sitesinin Hızlı Başlat çubuğunda Yeni liste bir bağlantı ekler.  
   
 #### <a name="to-test-the-site-workflow-custom-activity"></a>Site iş akışı özel etkinlik sınamak için  
   
-1.  Projeyi çalıştırın ve SharePoint'e dağıtmak için F5 tuşuna seçin.  
+1.  Seçin **F5** projeyi çalıştırın ve SharePoint'e dağıtmak için anahtar.  
   
 2.  Hızlı Başlatma çubuğunda seçin **listeler** tüm SharePoint sitesinde kullanılabilir olan listesini görüntülemek için bağlantı. Adlı duyuruları için yalnızca bir liste fark **duyuruları**.  
   
@@ -126,8 +127,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Hızlı Başlatma çubuğunda seçin **duyuruları yedekleme** bağlantı. Dikkat tüm bulunan duyuruları **duyuruları** listesi için bu yeni liste kopyalanmış.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
- [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  
+ [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   

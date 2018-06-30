@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 63b802603b586efa8b801423fce20cd4add5348a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747553"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117621"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect metotlarıyla veri kaydetme
 Bu kılavuz bir TableAdapter DBDirect yöntemleri kullanarak doğrudan bir veritabanında SQL deyimlerini çalıştırmak için ayrıntılı yönergeler sağlar. Veritabanı güncelleştirmelerinizi üzerinde denetim ayrıntılı bir düzeyde bir TableAdapter DBDirect yöntemleri sağlar. Bunları tek tek çağırarak belirli SQL deyimlerini ve depolanan yordamları çalıştırmak için kullanabileceğiniz `Insert`, `Update`, ve `Delete` , uygulamanız tarafından gerektiği şekilde yöntemleri (aşırı yüklenmiş aksine `Update` güncelleştirme gerçekleştirir yöntemi INSERT ve DELETE deyimlerinde tüm bir çağrı).
@@ -47,7 +47,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .
+    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu**.
 
        Sorgu Düzenleyicisi penceresini açar.
 
@@ -62,7 +62,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 #### <a name="to-create-the-new-windows-project"></a>Yeni Windows projesi oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 

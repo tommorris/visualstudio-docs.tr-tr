@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746565"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117725"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod çözümleme yönetilen kod kusurlarını
 
@@ -29,7 +29,7 @@ Bu kılavuzda Microsoft .NET Framework tasarım yönergeleri ile uyumluluk için
 
 ### <a name="to-create-a-class-library"></a>Sınıf kitaplığı oluşturmak için
 
-1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje...** .
+1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**.
 
 1. İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü** > **Visual C#** ve ardından **Windows Masaüstü**.
 

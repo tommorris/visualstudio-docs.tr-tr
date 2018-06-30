@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5101040d52527a80c7531d4984ead5cb4061f70f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425221"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117257"
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
@@ -113,7 +113,7 @@ Visual Studio'da artırma, Google ve nUnit gibi üçüncü taraf test çerçevel
 
 Üçüncü bölümü test çerçevelerini etkinleştirmeye yönelik adımlar şunlardır:
 
-1. Seçin **Araçları** > **Uzantılar ve güncelleştirmeler...**  menü çubuğundan.
+1. Seçin **Araçları** > **Uzantılar ve güncelleştirmeler** menü çubuğundan.
 
 1. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda, genişletin **çevrimiçi** kategori ve ardından **Visual Studio Market'te**. Ardından, **Araçları** > **test**.
 
@@ -125,7 +125,7 @@ Visual Studio'da artırma, Google ve nUnit gibi üçüncü taraf test çerçevel
 
    ![Sınıf kitaplığı proje adı ve bunu ekleyin](media/create3rdpartyunittest3.png)
 
-1. Eklentisini yükleyin. İçinde **Çözüm Gezgini**, sınıf kitaplığı proje seçin ve ardından **NuGet paketlerini Yönet...**  sağ tıklatın veya bağlam menüsünde.
+1. Eklentisini yükleyin. İçinde **Çözüm Gezgini**, sınıf kitaplığı proje seçin ve ardından **NuGet paketlerini Yönet** sağ tıklatın veya bağlam menüsünde.
 
    ![Eklentisini yüklemek için NuGet paketlerini Yönet](media/create3rdpartyunittest3a.png)
 
@@ -139,7 +139,7 @@ Visual Studio'da artırma, Google ve nUnit gibi üçüncü taraf test çerçevel
 
    ![3. taraf birim test çerçevesi için başvuru çözümünüze eklenir](media/create3rdpartyunittest6.png)
 
-1. Sınıf kitaplığı proje gelen **başvuruları** düğümü, select **Başvuru Ekle...** .
+1. Sınıf kitaplığı proje gelen **başvuruları** düğümü, select **Başvuru Ekle**.
 
    ![Projesine bir başvuru ekleyin](media/createunittest6.png)
 

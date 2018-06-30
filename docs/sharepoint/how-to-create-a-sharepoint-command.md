@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 026c15241ace87a3d7454afb2439e045d06ce67b
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 89384a1bf095b27f97be46ae303148ab5f8c7d1f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767669"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117143"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Nasıl yapılır: bir SharePoint komutu oluşturma
   Sunucu nesne modeli bir SharePoint araçları uzantısı'nda kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'yi çağırmak için. SharePoint komutu sunucusu nesne modeline doğrudan çağırabilir miyim bir derlemede tanımlayın.  
@@ -36,7 +36,7 @@ ms.locfileid: "34767669"
     -   AnyCPU veya x64 hedefler platform. Varsayılan olarak, hedef için Sınıf Kitaplığı projelerinde AnyCPU platformudur. Hedef platform seçme hakkında daha fazla bilgi için bkz: [nasıl yapılır: projeleri hedef platformlar yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md).  
   
     > [!NOTE]  
-    >  .NET Framework 3.5 ve SharePoint araçları uzantıları hedef SharePoint komutları hedeflemek için SharePoint araçları uzantısı tanımlar projede bir SharePoint komutu uygulayamaz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Ayrı bir proje uzantı tarafından kullanılan herhangi bir SharePoint komut tanımlamanız gerekir. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+    >  .NET Framework 3.5 ve SharePoint araçları uzantıları hedef SharePoint komutları hedeflemek için SharePoint araçları uzantısı tanımlar projede bir SharePoint komutu uygulayamaz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Ayrı bir proje uzantı tarafından kullanılan herhangi bir SharePoint komut tanımlamanız gerekir. Daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için Uzantılar dağıtmak](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 2.  Aşağıdaki derlemelere başvurular ekleyin:  
   
@@ -78,10 +78,10 @@ ms.locfileid: "34767669"
 -   Microsoft.SharePoint  
   
 ## <a name="deploying-the-command"></a>Komut dağıtma  
- Komut dağıtmak için komut derleme aynı dahil [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (*VSIX*) komutunu kullanan uzantı derlemesi paketiyle. Ayrıca, extension.vsixmanifest dosyasındaki komutu derleme için bir giriş eklemeniz gerekir. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Komut dağıtmak için komut derleme aynı dahil [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (*VSIX*) komutunu kullanan uzantı derlemesi paketiyle. Ayrıca, extension.vsixmanifest dosyasındaki komutu derleme için bir giriş eklemeniz gerekir. Daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için Uzantılar dağıtmak](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Nasıl yapılır: SharePoint komutu yürütme](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [İzlenecek yol: Sunucu Gezginini Web Bölümlerini Görüntülemek Üzere Genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
+ [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   

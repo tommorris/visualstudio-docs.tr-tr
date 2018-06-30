@@ -13,19 +13,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fe44a0a83b82afb317346b719d804e12b13293b
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d817938a7611d7390e400cfbf69c6836b9256f3b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233483"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117231"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Yazılan ve yazılmayan veri kümelerinin karşılaştırması
 Taban ilk türetilmiş bir veri kümesi türü belirtilmiş veri kümesi olan <xref:System.Data.DataSet> sınıfı ve dosyasındaki bilgileri kullanır **veri kümesi Tasarımcısı**, kesin türü belirtilmiş veri kümesi sınıfı, yeni, oluşturmak için bir .xsd dosyasında depolanır. (Tablolar, sütunlar ve benzeri) şema bilgileri oluşturulur ve bu yeni veri kümesi sınıfına birinci sınıf nesneler ve özelliklerinin bir küme olarak derlenmiş. Türü belirtilmiş veri kümesi temelden devralan çünkü <xref:System.Data.DataSet> sınıfı, belirlenmiş sınıf varsayar tüm işlevselliğini <xref:System.Data.DataSet> sınıfı ve bir örneği ele yöntemleriyle kullanılabilir bir <xref:System.Data.DataSet> sınıfı bir parametre olarak.
 
  Türü belirsiz bir veri kümesini buna karşılık, karşılık gelen hiçbir yerleşik şeması vardır. Türü belirtilmiş veri kümesi olduğu gibi tablolar, sütunlar ve benzeri türü belirsiz bir veri kümesini içerir; ancak bu yalnızca koleksiyonu sunulur. (El ile tabloları ve diğer veri öğeleri türü belirsiz bir veri kümesini oluşturduktan sonra ancak, veri kümesi'nin yapısı bir şema veri kümesi'nin kullanarak dışa aktarabilirsiniz <xref:System.Data.DataSet.WriteXmlSchema%2A> yöntemi.)
 
-## <a name="contrasting-data-access-in-typed-and-untyped-datasets"></a>Yazılan ve yazılmayan veri kümeleri karşıt veri erişimi
+## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Yazılan ve yazılmayan veri kümeleri Karşıtlık veri erişimi
  Türü belirtilmiş veri kümesi için sınıf özelliklerini gerçek adlarını tablolar ve sütunlar üzerinde almakta nesne modeli vardır. Örneğin, bir türü belirtilmiş veri kümesi ile çalışıyorsanız, aşağıdaki gibi kod kullanarak bir sütun başvurusu yapabilir:
 
  [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]

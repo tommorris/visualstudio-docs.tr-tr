@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 425a4e6fd85f635d6e95122a55fe0d09fde7825c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: ecdb9e80273075be02daa274177577d70d9e2e62
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238391"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118232"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -44,7 +44,7 @@ Bir grup veya seçtiğiniz testleri kümesi tüm testleri Çözümdeki tüm test
 
 - Bir çözümde tüm testleri çalıştırmak için tercih **tümünü Çalıştır**.
 
-- Bir varsayılan grubundaki tüm testleri çalıştırmak için tercih **Çalıştır...**  ve grubun menüsünde'i seçin.
+- Bir varsayılan grubundaki tüm testleri çalıştırmak için tercih **çalıştırmak** ve grubun menüsünde'i seçin.
 
 - Seçilen test bağlam menüsünü açın ve ardından çalıştırmak istediğiniz tek tek testlerin seçin **seçili Testleri Çalıştır**.
 

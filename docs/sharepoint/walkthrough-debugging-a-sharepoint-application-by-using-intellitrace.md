@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120592"
 ---
-# <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>İzlenecek yol: IntelliTrace'i Kullanarak SharePoint Uygulamasında Hata Ayıklama
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulama hata ayıklama
 
 IntelliTrace'i kullanarak SharePoint çözümleri daha kolay ayıklayabilirsiniz. Geleneksel hata ayıklayıcıları geçerli şu anda yalnızca bir anlık görüntüsü bir çözümün verin. Ancak, IntelliTrace çözümünüzde oluştu geçmiş olaylar ve içerik, bunlar oluştu ve koda gidin gözden geçirmek için kullanabilirsiniz.
 
@@ -55,7 +56,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver"></a> Özellik alıcısı oluşturma
+## <a name="create-a-feature-receiver"></a>Özellik alıcısı oluşturma
 
 İlk olarak bir özellik alıcısı sahip boş bir SharePoint projesi oluşturun.
 
@@ -69,11 +70,11 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 3. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellikleri** düğümünü ve ardından **Özellik Ekle**.
 
-     Feature1.Feature görünür.
+     *Feature1.Feature* görüntülenir.
 
 4. Feature1.feature için kısayol menüsünü açın ve ardından **olay alıcısı Ekle** bir kod modülüne özelliği eklemek için.
 
-## <a name="BKMK_AddCode"></a> Özellik alıcısı için kod ekleme
+## <a name="add-code-to-the-feature-receiver"></a>Özellik alıcısı için kod ekleme
 
 Ardından, özellik alıcısı öğesinde iki yöntem için kodu ekleyin: `FeatureActivated` ve `FeatureDeactivating`. Bu yöntemlerin her bir özelliği etkinleştirilmiş veya SharePoint'te sırasıyla devre dışı tetikler.
 
@@ -247,7 +248,7 @@ Ardından, özellik alıcısı öğesinde iki yöntem için kodu ekleyin: `Featu
     }
     ```
 
-## <a name="BKMK_Test1"></a> Projeyi test
+## <a name="test-the-project"></a>Projeyi test
 
 Özellik alıcısı kodu eklenir ve veri toplayıcısı çalışıyor göre dağıtın ve düzgün çalıştığını olup olmadığını sınamak için SharePoint çözüm çalıştırın.
 
@@ -274,7 +275,7 @@ Ardından, özellik alıcısı öğesinde iki yöntem için kodu ekleyin: `Featu
 
      FeatureDeactivating() olay işleyicisi bir hata oluşturur.
 
-## <a name="BKMK_CollectDiagnosticData"></a> Microsoft Monitoring Agent'ı kullanarak IntelliTrace verilerini toplama
+## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent'ı kullanarak IntelliTrace verilerini toplama
 
 SharePoint çalıştıran sistemde Microsoft İzleme Aracısı yüklerseniz, IntelliTrace genel bilgileri daha fazla özel veriler kullanarak SharePoint çözümlerini ayıklayabilirsiniz. Aracı, SharePoint çözüm çalışmalarınız sırasında hata ayıklama bilgileri yakalamak için PowerShell cmdlet'lerini kullanarak Visual Studio dışında çalışır.
 
@@ -297,9 +298,9 @@ SharePoint çalıştıran sistemde Microsoft İzleme Aracısı yüklerseniz, Int
 
 3. PowerShell penceresinde çalıştırın [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) SharePoint çözümünüzü yeniden .iTrace dosyası oluşturun ve izlemeyi durdurmak için komutu.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
 
-## <a name="BKMK_DebugSolution"></a> Hata ayıklama ve SharePoint çözüm Düzelt
+## <a name="debug-and-fix-the-sharepoint-solution"></a>Hata ayıklama ve SharePoint çözüm Düzelt
 
 Artık bulmak ve SharePoint çözümde hatayı düzeltmek için Visual Studio IntelliTrace günlük dosyasını görüntüleyebilirsiniz.
 
@@ -333,6 +334,6 @@ Artık bulmak ve SharePoint çözümde hatayı düzeltmek için Visual Studio In
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SharePoint Kodunu Doğrulama ve Hata Ayıklama](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
+[Doğrulayın ve SharePoint kodda hata ayıklama](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
 [IntelliTrace](/visualstudio/debugger/intellitrace)  
 [İzlenecek yol: Birim testleri kullanarak SharePoint kodunu doğrulayın.](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)

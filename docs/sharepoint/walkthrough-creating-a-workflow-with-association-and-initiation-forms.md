@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c232d541e985944fe64d9eb40da7e344b32c0cc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a83dbde9bbb9907ee58909c254953554ad7de285
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120601"
 ---
-# <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>İzlenecek yol: İlişkilendirme ve Başlatma Formları ile İş Akışı Oluşturma
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>İzlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma
   Bu kılavuzda ilişkilendirme ve başlatma formları kullanımını içeren bir temel sıralı iş akışının nasıl oluşturulacağını gösterir. Bunlar ilk olarak SharePoint Yöneticisi (ilişkilendirme form) tarafından ilişkilendirilmiş zaman ve iş akışı (başlatma formu) kullanıcı tarafından başlatıldığında bir iş akışına eklenecek parametrelerini etkinleştirme ASPX formları bulunabilir.  
   
  Bu kılavuzda, burada aşağıdaki gereksinimlere sahip bir onay iş akışı gider raporları oluşturmak için bir kullanıcının istediği bir senaryo özetlenmektedir:  
@@ -61,16 +62,16 @@ ms.lasthandoff: 05/22/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## <a name="creating-a-sharepoint-sequential-workflow-project"></a>Bir SharePoint sıralı iş akışı projesi oluşturma  
+## <a name="create-a-sharepoint-sequential-workflow-project"></a>Bir SharePoint sıralı iş akışı projesi oluşturma
  İlk olarak, bir sıralı iş akışı projesinde oluşturun [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Sıralı iş akışı son etkinlik tamamlanana kadar sırayla yürütülen bir dizi adımı kullanılıyor. Bu yordamda, SharePoint'te paylaşılan belgeler listesine uygulayan bir sıralı iş akışı oluşturur. İş akışının Sihirbazı iş akışı site veya liste tanımı ile ilişkilendirmenizi sağlar ve iş akışı başlayacağını belirlemenize olanak tanır.  
   
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>Bir SharePoint sıralı iş akışı projesi oluşturmak için  
   
-1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje** görüntülemek için **yeni proje** iletişim kutusu.  
+1.  Menü çubuğunda seçin **dosya** > **yeni** > **proje** görüntülemek için **yeni proje** iletişim kutusu.  
   
 2.  Genişletme **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 05/22/2018
   
 6.  İçinde **Çözüm Gezgini**, proje düğümünü seçin.  
   
-7.  Menü çubuğunda seçin **proje**, **Yeni Öğe Ekle**.  
+7.  Menü çubuğunda seçin **proje** > **Yeni Öğe Ekle**.  
   
 8.  Ya da altında **Visual C#** veya **Visual Basic**, genişletin **SharePoint** düğümünü ve ardından **2010** düğümü.  
   
@@ -102,14 +103,14 @@ ms.lasthandoff: 05/22/2018
   
 12. Seçin **son** düğmesi.  
   
-## <a name="adding-an-association-form-to-the-workflow"></a>Bir ilişkilendirme formu iş akışına ekleme  
+## <a name="add-an-association-form-to-the-workflow"></a>Bir ilişkilendirme formu iş akışını Ekle
  Ardından, oluşturun bir. SharePoint Yöneticisi bir harcama raporu belgeyle iş akışı ilk ilişkilendirildiğinde görüntülenen ASPX ilişkilendirme formu.  
   
 #### <a name="to-add-an-association-form-to-the-workflow"></a>Bir ilişkilendirme formu iş akışına eklemek için  
   
 1.  Seçin **Workflow1** düğümünde **Çözüm Gezgini**.  
   
-2.  Menü çubuğunda seçin **proje**, **Yeni Öğe Ekle** görüntülemek için **Yeni Öğe Ekle** iletişim kutusu.  
+2.  Menü çubuğunda seçin **proje** > **Yeni Öğe Ekle** görüntülemek için **Yeni Öğe Ekle** iletişim kutusu.  
   
 3.  İletişim kutusu ağaç görünümünde genişletin **Visual C#** veya **Visual Basic** (Proje dilinizi bağlı olarak), genişletin **SharePoint** düğümü ve ardından seçin**2010** düğümü.  
   
@@ -119,7 +120,7 @@ ms.lasthandoff: 05/22/2018
   
 6.  Seçin **Ekle** projeye form ekleme düğmesi.  
   
-## <a name="designing-and-coding-the-association-form"></a>Tasarlama ve ilişkilendirme formu kodlama  
+## <a name="designing-and-coding-the-association-form"></a>Tasarlama ve ilişkilendirme formu kodlama
  Bu yordamda, denetimleri ile kod ekleyerek ilişkilendirme formu işlevsellik tanıtmaktadır.  
   
 #### <a name="to-design-and-code-the-association-form"></a>Tasarım ve kod ilişkilendirme formu  
@@ -163,14 +164,14 @@ ms.lasthandoff: 05/22/2018
     }  
     ```  
   
-## <a name="adding-an-initiation-form-to-the-workflow"></a>İş akışına bir başlatma formu ekleme  
+## <a name="add-an-initiation-form-to-the-workflow"></a>İş akışına bir başlatma formu Ekle
  Ardından, kullanıcıların gider raporlarının karşı iş akışını çalıştırdığınızda görüntülenen başlatma formu oluşturun.  
   
 #### <a name="to-create-an-initiation-form"></a>Başlatma formu oluşturmak için  
   
 1.  Seçin **Workflow1** düğümünde **Çözüm Gezgini**.  
   
-2.  Menü çubuğunda seçin **proje**, **Yeni Öğe Ekle** görüntülemek **Yeni Öğe Ekle** iletişim kutusu.  
+2.  Menü çubuğunda seçin **proje** > **Yeni Öğe Ekle** görüntülemek **Yeni Öğe Ekle** iletişim kutusu.  
   
 3.  İletişim kutusu ağaç görünümünde genişletin **Visual C#** veya **Visual Basic** (Proje dilinizi bağlı olarak), genişletin **SharePoint** düğümü ve ardından seçin**2010** düğümü.  
   
@@ -180,7 +181,7 @@ ms.lasthandoff: 05/22/2018
   
 6.  Seçin **Ekle** projeye form ekleme düğmesi.  
   
-## <a name="designing-and-coding-the-initiation-form"></a>Tasarlama ve başlatma formu kodlama  
+## <a name="designing-and-coding-the-initiation-form"></a>Tasarlama ve başlatma formu kodlama
  Ardından, başlatma formu işlevsellik denetimleri ile kod ekleyerek tanıtır.  
   
 #### <a name="to-code-the-initiation-form"></a>Kod başlatma formu  
@@ -250,7 +251,7 @@ ms.lasthandoff: 05/22/2018
     }  
     ```  
   
-## <a name="customizing-the-workflow"></a>İş akışını özelleştirme  
+## <a name="cutomize-the-workflow"></a>Özeleştirme iş akışı
  Ardından, iş akışını özelleştirme. Daha sonra iş akışı için iki forms ilişkilendireceğiniz.  
   
 #### <a name="to-customize-the-workflow"></a>İş akışını özelleştirmek için  
@@ -295,7 +296,7 @@ ms.lasthandoff: 05/22/2018
   
     -   Sürükleme **LogToHistoryListActivity** etkinliğinden **araç**ve diğer bırakma **etkinlikleri Buraya Bırak** ucunuzu **IfElseActivity1** .  
   
-## <a name="adding-code-to-the-workflow"></a>İş akışı için kod ekleme  
+## <a name="add-code-to-the-workflow"></a>İş akışı için kod ekleme
  Ardından, iş akışına işlevselliği sağlamak için kodu ekleyin.  
   
 #### <a name="to-add-code-to-the-workflow"></a>İş akışına kodu eklemek için  
@@ -386,11 +387,11 @@ ms.lasthandoff: 05/22/2018
     }   
     ```  
   
-9. Program hata ayıklamak için F5 tuşuna seçin.  
+9. Seçin **F5** program hata ayıklamak için anahtar.  
   
      Bu uygulama derler, bu paketleri, dağıttığı, özelliklerini etkinleştirir, geri dönüştürüldüğünde [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] uygulama havuzu ve belirtilen konumda tarayıcı içinde sonra başlar **Site URL'si** özelliği.  
   
-## <a name="associating-the-workflow-to-the-documents-list"></a>Belgeler listesine iş akışı ilişkilendirme  
+## <a name="associating-the-workflow-to-the-documents-list"></a>Belgeler listesine iş akışı ilişkilendirme
  Ardından, iş akışı ile ilişkilendirerek iş akışı ilişkilendirme formu görüntüleyin **SharedDocuments** SharePoint sitesinde listesi.  
   
 #### <a name="to-associate-the-workflow"></a>İş akışı ilişkilendirmek için  
@@ -409,7 +410,7 @@ ms.lasthandoff: 05/22/2018
   
 6.  İçinde **otomatik onay limiti** metin kutusuna **1200** ve ardından **ilişkilendirme iş akışı** düğmesi.  
   
-## <a name="starting-the-workflow"></a>İş akışı başlatma  
+## <a name="start-the-workflow"></a>İş Akışı Başlat
  Ardından, iş akışı belgelerde birine ilişkilendirmek **paylaşılan belgeler** iş akışı başlatma formu görüntülemek için liste.  
   
 #### <a name="to-start-the-workflow"></a>İş akışını başlatmak için  
@@ -444,13 +445,12 @@ ms.lasthandoff: 05/22/2018
   
      Bu durumda, geçmiş listesinde bir girişi yerine bir görev oluşturulur. Giriş görüntüler **iş akışı geçmişi** iş akışı durumu sayfasının bölümünde. İletide Not **sonucu** geçmişi olay sütunu. Girilen metin içeren `logToHistoryListActivity1.MethodInvoking` otomatik onaylı tutarın içeren olay.  
   
-## <a name="next-steps"></a>Sonraki Adımlar  
+## <a name="next-steps"></a>Sonraki adımlar
  Aşağıdaki konulardan iş akışı şablonları oluşturma hakkında daha fazla bilgi edinebilirsiniz:  
   
 -   SharePoint iş akışları hakkında daha fazla bilgi için bkz: [Windows SharePoint Services iş akışlarında](http://go.microsoft.com/fwlink/?LinkID=166275).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [İzlenecek yol: Bir Uygulama Sayfasını Bir İş Akışına Ekleme](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  
+ [İzlenecek yol: bir uygulama sayfasını bir iş akışına ekleme](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
   

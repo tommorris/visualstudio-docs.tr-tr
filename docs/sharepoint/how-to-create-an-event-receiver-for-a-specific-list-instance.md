@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120449"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Nasıl yapılır: Belirli bir Liste Örneği için Olay Alıcı Oluşturma
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Nasıl yapılır: belirli bir liste örneği için olay alıcı oluşturma
   Bir liste örneği olay alıcısı herhangi bir örneğine listesi tanımını gerçekleşen olaylara yanıt verir. Olay alıcı şablonunu belirli listesi örneği hedefleme etkinleştirmez olsa da, belirli bir liste örneği olaylara yanıt için bir liste tanımı için kapsamlı bir olay alıcısı değiştirebilirsiniz.  
   
- Belirli bir liste örneği, olay alıcısı için Elements.xml de hedeflemek için yerini `ListTemplateId` ile `ListUrl` ve liste örneği URL'sini ekleyin.  
+ Belirli bir liste örneği, de hedeflemek için *Elements.xml* için olay alıcı Değiştir `ListTemplateId` ile `ListUrl` ve liste örneği URL'sini ekleyin.  
   
-## <a name="creating-a-list-instance-event-receiver"></a>Bir liste örneği olay alıcı oluşturma  
+## <a name="create-a-list-instance-event-receiver"></a>Bir liste örneği olay alıcı oluşturma  
  Aşağıdaki adımlar bir özel Duyurular listesi örneğinde gerçekleşen olaylara yanıt için bir liste öğesi olay alıcı değiştirme gösterir.  
   
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Belirli bir liste örneği için yanıtlamak için olay alıcı değiştirmek için  
@@ -51,7 +52,7 @@ ms.lasthandoff: 05/22/2018
   
 8.  İçinde **aşağıdaki olayları işlemek** listesinde **öğeyi eklenen** onay kutusunu işaretleyin ve ardından **son** düğmesi.  
   
-9. İçinde **Çözüm Gezgini**, EventReceiver1 altında Elements.xml açın.  
+9. İçinde **Çözüm Gezgini**, EventReceiver1 altında açmak *Elements.xml*.  
   
      Olay alıcısı şu anda aşağıdaki satırı kullanarak Duyurular listesi tanımını başvuruyor:  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 05/22/2018
   
 10. İçin olay alıcı kod dosyasını açın ve ItemAdding yönteminde kesme noktası yerleştirin.  
   
-11. Derleme ve çözümü çalıştırmak için F5 tuşuna seçin.  
+11. Seçin **F5** anahtarı oluşturun ve çözümü çalıştırın.  
   
 12. SharePoint'te seçin **TestAnnouncements** Gezinti bölmesinde bağlantı.  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 05/22/2018
   
      Yeni öğe özel Duyurular listesine eklendiğinde, kesme noktası isabet dikkat edin.  
   
-15. Devam etmek için F5 tuşuna seçin.  
+15. Seçin **F5** sürdürmek için anahtar.  
   
 16. Gezinti Bölmesi'nde seçin **listeler** bağlamak ve ardından **duyuruları** bağlantı.  
   
@@ -87,8 +88,7 @@ ms.lasthandoff: 05/22/2018
   
      Alıcı yalnızca özel duyuru listesi örneği olayları yanıt verecek şekilde yapılandırıldığından, olay alıcı üzerinde yeni bir duyuru tetiklemez bildirimi **TestAnnouncements**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
- [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  
+ [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   

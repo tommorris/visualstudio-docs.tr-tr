@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 74d1181936a5efa3b286999ea832e78dffdcccf3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120448"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için Site Sütunu, İçerik Türü ve Liste Oluşturma
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma
   Aşağıdaki yordamlar özel SharePoint site sütunları oluşturulacağını göstermektedir — veya *alanları*— yanı sıra site sütunlarını kullanan bir içerik türü. Ayrıca, yeni içerik türünü kullanan bir listesinin nasıl oluşturulacağı gösterilir.  
   
  Bu izlenecek yol aşağıdaki görevleri içerir:  
@@ -50,16 +51,16 @@ ms.lasthandoff: 05/22/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a> Özel Site sütunları oluşturma  
+## <a name="create-custom-site-columns"></a>Özel site sütunları oluşturun
  Bu örnek, hastaneler hastalar yönetmek için bir liste oluşturur. İlk olarak, bir SharePoint Proje oluşturmalısınız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve site sütunları, aşağıdaki gibi ekleyin.  
   
 #### <a name="to-create-the-project"></a>Proje oluşturmak için  
   
-1.  Üzerinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **dosya** menüsünde seçin **yeni**, **proje**.  
+1.  Üzerinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **dosya** menüsünde seçin **yeni** > **proje**.  
   
 2.  İçinde **yeni proje** iletişim kutusunda, ya da altında **Visual C#** veya **Visual Basic**, genişletin **SharePoint** düğümünü ve ardından seçin**2010**.  
   
@@ -77,11 +78,11 @@ ms.lasthandoff: 05/22/2018
   
 #### <a name="to-add-site-columns"></a>Site sütunları eklemek için  
   
-1.  Yeni bir site sütunu ekleyin. Bunu yapmak için **Çözüm Gezgini**, kısayol menüsünü açın **Clinic**ve ardından **Ekle**, **yeni öğe**.  
+1.  Yeni bir site sütunu ekleyin. Bunu yapmak için **Çözüm Gezgini**, kısayol menüsünü açın **Clinic**ve ardından **Ekle** > **yeni öğe**.  
   
 2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda, seçin **Site sütunu**, adına değiştirme **hasta adı**ve ardından **Ekle** düğmesi.  
   
-3.  Site sütunun Elements.xml dosyasında bırakın **türü** olarak ayarlama **metin**, değiştirip **grup** ayarını **Clinic Site sütunları**. Tamamlandığında, site sütunun Elements.xml dosyasını aşağıdaki gibi görünmelidir.  
+3.  Site sütunun içinde *Elements.xml* dosya, bırakın **türü** olarak ayarlama **metin**, değiştirip **grup** ayarını  **Clinic Site sütunları**. Tamamlandığında, site sütunun *Elements.xml* dosya, aşağıdaki gibi görünmelidir.  
   
     ```xml  
     <Field  
@@ -96,14 +97,14 @@ ms.lasthandoff: 05/22/2018
   
 4.  Aynı yordamı kullanarak, iki daha fazla site sütunları projeye ekleyin: **hasta kimliği** (tür = "Tamsayı") ve **Doctor adı** (tür = "Text"). Grup değerlerine ayarlayın **Clinic Site sütunları**.  
   
-##  <a name="BKMK_CreateCustContType"></a> Özel bir içerik türü oluşturma  
+## <a name="create-a-custom-content-type"></a>Özel bir içerik türü oluştur
  Ardından, bir içerik türü oluşturma — kişiler içerik türüne göre — önceki yordamda oluşturduğunuz site sütunları içerir. Varolan bir içerik türü bir içerik türü alma tarafından temel içerik türü için yeni içerik türü kullanımda birkaç site sütunları sağladığından zamandan tasarruf edebilirsiniz.  
   
 #### <a name="to-create-a-custom-content-type"></a>Özel bir içerik türü oluşturmak için  
   
 1.  Bir içerik türü projeye ekleyin. Bunu yapmak için **Çözüm Gezgini**, proje düğümüne seçin  
   
-2.  Menü çubuğunda seçin **proje**, **Yeni Öğe Ekle**.  
+2.  Menü çubuğunda seçin **proje** > **Yeni Öğe Ekle**.  
   
 3.  Ya da altında **Visual C#** veya **Visual Basic**, genişletin **SharePoint** düğümünü ve ardından **2010** düğümü.  
   
@@ -128,16 +129,16 @@ ms.lasthandoff: 05/22/2018
   
 10. Değişiklik **grup adı** için **Clinic içerik türleri**ve diğer ayarları varsayılan değerlerinde bırakın.  
   
-11. Menü çubuğunda seçin **dosya**, **Tümünü Kaydet**, içerik türü Tasarımcısı'nı kapatın.  
+11. Menü çubuğunda seçin **dosya** > **Tümünü Kaydet**, içerik türü Tasarımcısı'nı kapatın.  
   
-##  <a name="BKMK_CreateList"></a> Liste oluşturma  
+## <a name="create-a-list"></a>Bir liste oluşturur
  Artık, yeni içerik türü ve site sütunlarını kullanan bir liste oluşturur.  
   
 #### <a name="to-create-a-list"></a>Bir liste oluşturmak için  
   
 1.  Bir liste projeye ekleyin. Bunu yapmak için **Çözüm Gezgini**, proje düğümünü seçin.  
   
-2.  Menü çubuğunda seçin **proje**, **Yeni Öğe Ekle**.  
+2.  Menü çubuğunda seçin **proje** > **Yeni Öğe Ekle**.  
   
 3.  Ya da altında **Visual C#** veya **Visual Basic**, genişletin **SharePoint** düğümünü ve ardından **2010** düğümü.  
   
@@ -204,14 +205,14 @@ ms.lasthandoff: 05/22/2018
   
 15. İçinde **sütun adı** listesinde, seçin **hasta adı**, olduğundan emin olun **sıralama** sütunu olarak ayarlanmış **artan**ve ardından seçin **Tamam** düğmesi.  
   
-##  <a name="BKMK_TestApp"></a> Uygulamayı test etme  
+## <a name="test-the-application"></a>Uygulamayı test etme
  Özel site sütunları, içerik türü ve liste hazır, SharePoint'e dağıtmak ve test için uygulamayı çalıştırın.  
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
   
-1.  Menü çubuğunda seçin **dosya**, **Tümünü Kaydet**.  
+1.  Menü çubuğunda seçin **dosya** > **Tümünü Kaydet**.  
   
-2.  Uygulamayı çalıştırmak için F5 tuşuna seçin.  
+2.  Seçin **F5** uygulamayı çalıştırmak için anahtar.  
   
      Uygulama derlenir ve ardından özelliklerini SharePoint'e dağıtılan ve etkinleştirildi.  
   
@@ -225,11 +226,10 @@ ms.lasthandoff: 05/22/2018
   
      Yeni kayıttaki listede görüntülenir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint için site sütunları, içerik türleri ve listeler oluşturma](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
  [Nasıl yapılır: özel alan türü oluşturma](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [İçerik türleri](http://go.microsoft.com/fwlink/?LinkId=192080)   
- [sütunları](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  
+ [Sütunları](http://go.microsoft.com/fwlink/?LinkId=192081)  
   

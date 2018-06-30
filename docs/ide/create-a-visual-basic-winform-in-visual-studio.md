@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 48ce29f06289f99444fc9fa231ea853a667ccc82
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281579"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117777"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulama
 
@@ -33,11 +33,11 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 1. Visual Studio 2017'ni açın.
 
-2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje...** .
+2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
 3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde **Visual Basic**ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması (.NET Framework)**. Dosya adı `HelloWorld`.
 
-     Görmüyorsanız, **Windows Forms uygulaması (.NET Framework)** proje şablonu, dışı iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları**  >  **Alma araçları ve özelliklerinin...** . Visual Studio yükleyicisi başlatır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+     Görmüyorsanız, **Windows Forms uygulaması (.NET Framework)** proje şablonu, dışı iptal **yeni proje** iletişim kutusuna ve üst menü çubuğundan seçin **Araçları**  >  **Alma araçları ve özelliklerinin**. Visual Studio yükleyicisi başlatır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
      ![Visual Studio yükleyicisi .NET core iş yükü](../ide/media/install-dot-net-desktop-env.png)
 

@@ -16,16 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9052136a58b0c6cd3246b7c7b61c89bf637a8cf
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: aee7c1bf7a7a8d71d02da7bab270c4df1a4a52ab
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120459"
 ---
-# <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>İzlenecek Yol: SharePoint Projeleri için Özel bir Dağıtım Adımı Oluşturma
+# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>İzlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma
   Bir SharePoint projesi dağıttığınızda, Visual Studio belirli bir sıraya göre bir dizi dağıtım adımı yürütür. Visual Studio birçok yerleşik dağıtım adımlarını içerir, ancak Ayrıca kendi oluşturabilirsiniz.  
   
- Bu kılavuzda, SharePoint çalıştıran bir sunucuda çözümlerini yükseltme için özel bir dağıtım adımı oluşturur. Visual Studio birçok görev, bu tür geri çekilen veya çözümleri eklemek için yerleşik dağıtım adımlarını içerir, ancak çözümlerini yükseltme için bir dağıtım adımı içermez. Bir SharePoint çözümünü dağıttığınızda (zaten dağıtılırsa) varsayılan olarak, Visual Studio çözümü ilk çeker. ve tüm çözümü yeniden dağıtır. Yerleşik dağıtım adımları hakkında daha fazla bilgi için bkz: [dağıtma, yayımlama ve yükseltme SharePoint çözüm paketlerini](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
+ Bu kılavuzda, SharePoint çalıştıran bir sunucuda çözümlerini yükseltme için özel bir dağıtım adımı oluşturur. Visual Studio birçok görev, bu tür geri çekilen veya çözümleri eklemek için yerleşik dağıtım adımlarını içerir, ancak çözümlerini yükseltme için bir dağıtım adımı içermez. Bir SharePoint çözümünü dağıttığınızda (zaten dağıtılırsa) varsayılan olarak, Visual Studio çözümü ilk çeker. ve tüm çözümü yeniden dağıtır. Yerleşik dağıtım adımları hakkında daha fazla bilgi için bkz: [dağıtma, yayımlama ve SharePoint çözüm paketlerini yükseltme](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
  Bu kılavuz aşağıdaki görevler gösterilmiştir:  
   
@@ -35,7 +36,7 @@ ms.lasthandoff: 05/22/2018
   
     -   Uzantısı için belirli bir projenin yürütülen dağıtım adımları bir dizi yeni bir dağıtım yapılandırmasını tanımlayan bir proje uzantısı oluşturur. Yeni dağıtım yapılandırma özel dağıtım adımı ve birkaç yerleşik dağıtım adımları içerir.  
   
--   Uzantı derlemesi çağırır iki özel SharePoint komutu oluşturma. SharePoint komutları API'leri için SharePoint sunucusu nesne modelinde kullanmak için uzantı derlemeleri tarafından çağrılan yöntemler şunlardır. Daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   Uzantı derlemesi çağırır iki özel SharePoint komutu oluşturun. SharePoint komutları API'leri için SharePoint sunucusu nesne modelinde kullanmak için uzantı derlemeleri tarafından çağrılan yöntemler şunlardır. Daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 -   Derlemeler her ikisi de dağıtmak için Visual Studio Uzantısı (VSIX) paketi oluşturma.  
   
@@ -44,9 +45,9 @@ ms.lasthandoff: 05/22/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarındaki aşağıdaki bileşenler gerekir:  
   
--   Windows, SharePoint ve Visual Studio sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Windows, SharePoint ve Visual Studio sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   Visual Studio SDK'sı. Bu kılavuzda kullanılır **VSIX proje** SDK'sındaki uzantısını dağıtmak için VSIX paket oluşturmak için şablon. Daha fazla bilgi için bkz: [genişletme Visual Studio'da SharePoint Araçları](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   Visual Studio SDK'sı. Bu kılavuzda kullanılır **VSIX proje** SDK'sındaki uzantısını dağıtmak için VSIX paket oluşturmak için şablon. Daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
  Aşağıdaki kavramlar bilgisi yararlı, ancak gerekli değildir, izlenecek yolu tamamlamak için:  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/22/2018
   
 -   SharePoint çözümlerini yükseltme. Daha fazla bilgi için bkz: [bir çözümü yükseltme](http://go.microsoft.com/fwlink/?LinkId=177802).  
   
-## <a name="creating-the-projects"></a>Proje oluşturma  
+## <a name="create-the-projects"></a>Projeleri oluşturma
  Bu izlenecek yolu tamamlamak için üç projeleri oluşturmanız gerekir:  
   
 -   Uzantı dağıtmak için VSIX paketi oluşturmak için bir VSIX proje.  
@@ -71,7 +72,7 @@ ms.lasthandoff: 05/22/2018
   
 1.  Başlat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
+2.  Menü çubuğunda seçin **dosya** > **yeni** > **proje**.  
   
 3.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C#** veya **Visual Basic** düğümleri ve ardından **genişletilebilirlik** düğümü.  
   
@@ -112,10 +113,10 @@ ms.lasthandoff: 05/22/2018
   
 5.  Class1 kod dosyasının projeden silin.  
   
-## <a name="configuring-the-projects"></a>Projeleri yapılandırma  
+## <a name="configure-the-projects"></a>Projeleri yapılandırma
  Özel dağıtım adımı oluşturmak için kod yazmadan önce ve derleme başvurularını kod dosyaları ekleyin ve projeleri yapılandırmanız gerekir.  
   
-#### <a name="to-configure-the-deploymentstepextension-project"></a>DeploymentStepExtension projeyi yapılandırmak için  
+#### <a name="to-configure-the-deploymentstepextension-project"></a>DeploymentStepExtension projeyi yapılandırmak için
   
 1.  İçinde **DeploymentStepExtension** projesi, aşağıdaki adlara sahip iki kod dosyaları ekleyin:  
   
@@ -129,7 +130,7 @@ ms.lasthandoff: 05/22/2018
   
 4.  Üzerinde **uzantıları** sekmesinde Microsoft.VisualStudio.SharePoint derlemesi için onay kutusunu seçin ve ardından **Tamam** düğmesi.  
   
-#### <a name="to-configure-the-sharepointcommands-project"></a>SharePointCommands projeyi yapılandırmak için  
+#### <a name="to-configure-the-sharepointcommands-project"></a>SharePointCommands projeyi yapılandırmak için
   
 1.  İçinde **SharePointCommands** projesi, komutları adlı bir kod dosyasına ekleyin.  
   
@@ -141,7 +142,7 @@ ms.lasthandoff: 05/22/2018
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-## <a name="defining-the-custom-deployment-step"></a>Özel dağıtım adımı tanımlama  
+## <a name="define-the-custom-deployment-step"></a>Özel dağıtım adım tanımlama
  Yükseltme dağıtım adımı tanımlayan bir sınıf oluşturun. Sınıf Implements dağıtım adımı tanımlamak için <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> arabirimi. Özel bir dağıtım adımı tanımlamak istediğiniz zaman bu arabirimi uygular.  
   
 #### <a name="to-define-the-custom-deployment-step"></a>Özel dağıtım adımı tanımlamak için  
@@ -154,7 +155,7 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]  
   
-## <a name="creating-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Özel dağıtım adımı içeren bir dağıtım yapılandırması oluşturma  
+## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Özel dağıtım adımı içeren bir dağıtım yapılandırması oluştur
  Birkaç yerleşik dağıtım adımlarını ve yeni yükseltme dağıtımı adım içerir yeni dağıtım yapılandırması için bir proje uzantısı oluşturma. Bu uzantı oluşturarak SharePoint projeleri yükseltme dağıtımı adımını kullanmak için SharePoint geliştiriciler yardımcı olur.  
   
  Sınıf uygulayan bir dağıtım yapılandırma oluşturmak üzere <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> arabirimi. Bir SharePoint proje uzantısı oluşturmak istediğinizde bu arabirimi uygular.  
@@ -166,7 +167,7 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
   
-## <a name="creating-the-custom-sharepoint-commands"></a>Özel SharePoint komutları oluşturma  
+## <a name="create-the-custom-sharepoint-commands"></a>Özel SharePoint komutları oluşturma
  SharePoint sunucusu nesne modeline çağrılan iki özel komutlar oluşturun. Bir komut bir çözümü zaten dağıtılmış olup olmadığını belirler; diğer komut bir çözüm yükseltir.  
   
 #### <a name="to-define-the-sharepoint-commands"></a>SharePoint komutları tanımlamak için  
@@ -185,7 +186,7 @@ ms.lasthandoff: 05/22/2018
   
 2.  Kısayol menüsünü açın **SharePointCommands** proje ve ardından **yapı**.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Uzantıyı dağıtmak için VSIX paket oluşturma  
+## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Uzantıyı dağıtmak için VSIX paket oluşturma
  Uzantıyı dağıtmak için VSIX paketi oluşturmak için çözümünüz VSIX proje kullanın. İlk olarak VSIX paketi VSIX proje source.extension.vsixmanifest dosyasını değiştirerek yapılandırın. Çözümü derledikten sonra VSIX paketi oluşturun.  
   
 #### <a name="to-configure-and-create-the-vsix-package"></a>Yapılandırmak ve VSIX paketi oluşturmak için  
@@ -226,13 +227,13 @@ ms.lasthandoff: 05/22/2018
   
 12. İçinde **proje** listesinde, seçin **SharePointCommands**ve ardından **Tamam** düğmesi.  
   
-13. Menü çubuğunda seçin **yapı**, **yapı çözümü**ve ardından çözüm hatasız derlendiğinden emin olun.  
+13. Menü çubuğunda seçin **yapı** > **yapı çözümü**ve ardından çözüm hatasız derlendiğinden emin olun.  
   
 14. Yapı çıktı klasörüne UpgradeDeploymentStep projesi için şimdi UpgradeDeploymentStep.vsix dosya içerdiğinden emin olun.  
   
      Varsayılan olarak, yapı çıktı klasördür... Proje dosyasını içeren klasörü altındaki \bin\Debug klasörünü.  
   
-## <a name="preparing-to-test-the-upgrade-deployment-step"></a>Yükseltme dağıtımı adım Test etmek hazırlanıyor  
+## <a name="prepare-to-test-the-upgrade-deployment-step"></a>Yükseltme dağıtımı adım test etmek hazırlama
  Yükseltme dağıtımı adım test etmek için örnek bir çözüm SharePoint sitesine dağıtmanız gerekir. Visual Studio'nun deneysel örneği uzantı hata ayıklamayı Başlat Bir liste tanımı ve dağıtım adımı test etmek için kullanılacak listesi örneği oluşturun ve bunları SharePoint sitesine dağıtabilirsiniz. Ardından, liste tanımını ve liste örneği değiştirin ve bunları nasıl varsayılan dağıtım işlemi SharePoint sitesinde çözümleri yazacak göstermek için yeniden dağıtın.  
   
  Daha sonra bu kılavuzda, liste tanımını ve liste örneği değiştireceksiniz ve ardından bunları SharePoint sitesinde yükseltmeniz.  
@@ -243,13 +244,13 @@ ms.lasthandoff: 05/22/2018
   
 2.  DeploymentStepExtension projesinde UpgradeStep kod dosyasını açın ve daha sonra bir kesme noktası kod ilk satırı ekleyin `CanExecute` ve `Execute` yöntemleri.  
   
-3.  F5 tuşuna seçerek veya menü çubuğundaki hata ayıklama, seçme Başlat **hata ayıklama**, **hata ayıklamayı Başlat**.  
+3.  Seçerek hata ayıklamayı Başlat **F5** anahtar veya menü çubuğu seçme **hata ayıklama** > **hata ayıklamayı Başlat**.  
   
 4.  Visual Studio için SharePoint Projects\1.0 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade dağıtım adımı uzantıyı yükleyen ve Visual Studio Deneysel bir örneğini başlatır. Visual Studio bu örneğinde yükseltme dağıtımı adım test edeceksiniz.  
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Bir SharePoint proje listesi tanımını ve bir liste örneği oluşturmak için  
   
-1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **dosya**, **yeni**, **proje**.  
+1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **dosya** > **yeni** > **proje**.  
   
 2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C#** düğümü veya **Visual Basic** düğümü genişletin **SharePoint** düğümü ve ardından seçin **2010** düğümü.  
   
@@ -302,7 +303,7 @@ ms.lasthandoff: 05/22/2018
   
 14. İçinde **Çözüm Gezgini**, genişletin **çalışanlar listesi** düğümünü genişletin ve ardından **çalışanlar listesi örneği** alt düğümü.  
   
-15. Elements.xml dosyasında bu dosyada XML varsayılan aşağıdaki XML ile değiştirin. Bu XML listesine adını değiştirir **çalışanlar** ve Jim Hance adlandırılmış bir çalışanın bilgilerini ekler.  
+15. İçinde *Elements.xml* dosya, bu dosyada XML varsayılan aşağıdaki XML ile değiştirin. Bu XML listesine adını değiştirir **çalışanlar** ve Jim Hance adlandırılmış bir çalışanın bilgilerini ekler.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -327,7 +328,7 @@ ms.lasthandoff: 05/22/2018
     </Elements>  
     ```  
   
-16. Elements.xml dosyasını kaydedip kapatın.  
+16. Kaydet ve Kapat *Elements.xml* dosya.  
   
 17. EmployeesListDefinition proje için kısayol menüsünü açın ve ardından **açık** veya **özellikleri**.  
   
@@ -341,7 +342,7 @@ ms.lasthandoff: 05/22/2018
   
 2.  İçinde **özellikleri** penceresinde olduğundan emin olun **etkin Dağıtım Yapılandırması** özelliği ayarlanmış **varsayılan**.  
   
-3.  F5 tuşuna seçin veya menü çubuğunda seçin **hata ayıklama**, **hata ayıklamayı Başlat**.  
+3.  Seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama** > **hata ayıklamayı Başlat**.  
   
 4.  Proje başarıyla oluşturulur, web tarayıcısı SharePoint sitesine açıldığını doğrulayın, **listeler** Hızlı Başlatma çubuğu öğesinde yeni içeriyor **çalışanlar** listesi ve  **Çalışanlar** listesi Jim Hance için giriş içerir.  
   
@@ -349,7 +350,7 @@ ms.lasthandoff: 05/22/2018
   
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>Liste tanımını ve liste örneği değiştirmek ve bunları yeniden dağıtmak için  
   
-1.  Bir alt öğesi olan Elements.xml dosya EmployeesListDefinition projeyi açın **çalışan listesi örneği** proje öğesi.  
+1.  EmployeesListDefinition projeyi açın *Elements.xml* bir alt dosya **çalışan listesi örneği** proje öğesi.  
   
 2.  Kaldırma `Data` öğesi ve alt giriş Jim Hance için listeden kaldırın.  
   
@@ -367,7 +368,7 @@ ms.lasthandoff: 05/22/2018
     </Elements>  
     ```  
   
-3.  Elements.xml dosyasını kaydedip kapatın.  
+3.  Kaydet ve Kapat *Elements.xml* dosya.  
   
 4.  Kısayol menüsünü açın **çalışanlar listesi** öğesi proje ve ardından **açık** veya **özellikleri**.  
   
@@ -379,7 +380,7 @@ ms.lasthandoff: 05/22/2018
   
      Bu eylem bu alanlar varsayılan görünümden kaldırır **çalışanlar** SharePoint sitesinde listesi.  
   
-8.  F5 tuşuna seçerek veya menü çubuğundaki hata ayıklama, seçme Başlat **hata ayıklama**, **hata ayıklamayı Başlat**.  
+8.  Seçerek hata ayıklamayı Başlat **F5** anahtar veya menü çubuğu seçme **hata ayıklama** > **hata ayıklamayı Başlat**.  
   
 9. Doğrulayın **dağıtım çakışmaları** iletişim kutusu görüntülenir.  
   
@@ -395,7 +396,7 @@ ms.lasthandoff: 05/22/2018
   
     -   Liste boş olduğu. Kullanıldığında, **varsayılan** çözümü yeniden dağıtmak için Dağıtım Yapılandırması **çalışanlar** listesi projenizdeki yeni boş listeyle değişti.  
   
-## <a name="testing-the-deployment-step"></a>Dağıtım adımı test etme  
+## <a name="test-the-deployment-step"></a>Dağıtım adım test etme
  Artık yükseltme dağıtımı adım test etmek hazırsınız. İlk olarak, SharePoint listesi örneği için bir öğe ekleyin. Liste tanımını ve liste örneği değiştirmek, SharePoint sitesinde yükseltme ve yükseltme dağıtımı adım yeni öğenin üzerine değildir onaylayın.  
   
 #### <a name="to-manually-add-an-item-to-the-list"></a>El ile bir öğeyi listeye eklemek için  
@@ -434,15 +435,15 @@ ms.lasthandoff: 05/22/2018
   
      Bu eylem bu alanlar varsayılan görünümden kaldırır **çalışanlar** SharePoint sitesinde listesi.  
   
-5.  F5 tuşuna seçerek veya menü çubuğundaki hata ayıklama, seçme Başlat **hata ayıklama**, **hata ayıklamayı Başlat**.  
+5.  Seçerek hata ayıklamayı Başlat **F5** anahtar veya menü çubuğu seçme **hata ayıklama** > **hata ayıklamayı Başlat**.  
   
 6.  Visual Studio'nun diğer örnek kodda, daha önce belirlediğiniz kesme noktası durdurur doğrulayın `CanExecute` yöntemi.  
   
-7.  F5 tuşuna yeniden seçin veya menü çubuğunda seçin **hata ayıklama**, **devam**.  
+7.  Seçin **F5** yeniden anahtar veya menü çubuğunda seçin **hata ayıklama** > **devam**.  
   
 8.  Kod, daha önce belirlediğiniz kesme noktası durdurur doğrulayın `Execute` yöntemi.  
   
-9. F5 tuşuna seçin veya menü çubuğunda seçin **hata ayıklama**, **devam** son kez.  
+9. Seçin **F5** anahtar veya menü çubuğunda seçin **hata ayıklama** > **devam** son kez.  
   
      Web tarayıcısı, SharePoint sitesini açar.  
   
@@ -454,7 +455,7 @@ ms.lasthandoff: 05/22/2018
   
      **Yükseltme** dağıtım yapılandırmasını değiştirir varolan **çalışanlar** SharePoint sitesinde listesi örneği. Kullandıysanız **varsayılan** yerine dağıtım yapılandırması **yükseltme** yapılandırması, bir dağıtım çakışma karşılaştığınız. Visual Studio çözmek çakışma değiştirerek **çalışanlar** listesi ve öğe herkesi, tesis Yöneticisi için silinecektir.  
   
-## <a name="cleaning-up-the-development-computer"></a>Geliştirme bilgisayarı temizleme  
+## <a name="clean-up-the-development-computer"></a>Geliştirme bilgisayarı temizleme
  Yükseltme dağıtımı adım testi tamamladıktan sonra liste tanımını ve liste örneği SharePoint sitesinden kaldırın ve Visual Studio'dan dağıtım adımı uzantısı kaldırın.  
   
 #### <a name="to-remove-the-list-instance-from-the-sharepoint-site"></a>Liste örneği SharePoint sitesinden kaldırmak için  
@@ -469,13 +470,13 @@ ms.lasthandoff: 05/22/2018
   
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>Liste tanımını SharePoint sitesinden kaldırmak için  
   
-1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **yapı**, **Geri Al**.  
+1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **yapı** > **Geri Al**.  
   
      Visual Studio listesi tanımını SharePoint sitesinden geri çeker.  
   
 #### <a name="to-uninstall-the-extension"></a>Uzantıyı kaldırmak için  
   
-1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **Araçları**, **Uzantılar ve güncelleştirmeler**.  
+1.  Menü çubuğunda, Visual Studio'nun deneysel örneği seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.  
   
      **Uzantılar ve güncelleştirmeler** iletişim kutusu açılır.  
   
@@ -485,7 +486,6 @@ ms.lasthandoff: 05/22/2018
   
 4.  Visual Studio (deneysel örneği ve Visual Studio UpgradeDeploymentStep çözüm açıksa örneğini) hem örneklerini kapatın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint Paketleme ve Dağıtımını Genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  
+## <a name="see-also"></a>Ayrıca bkz.
+ [SharePoint paketleme ve dağıtımını genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   

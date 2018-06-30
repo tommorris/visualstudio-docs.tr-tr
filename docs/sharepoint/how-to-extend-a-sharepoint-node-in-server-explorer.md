@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9522e793171500b7b7f0a356eff63947fdba84cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120565"
 ---
-# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Nasıl Yapılır: Sunucu Gezgininde SharePoint Düğümünü Genişletme
+# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme
   Düğümleri altında genişletebilirsiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. Yeni alt düğümleri, kısayol menüsü öğelerini ya da özellikler için varolan bir düğümü eklemek istediğinizde kullanışlıdır. Daha fazla bilgi için bkz: [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>Sunucu Gezgininde SharePoint düğümünü genişletmek için  
@@ -67,9 +68,9 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- Bu uzantıyı düğümlerine düzenlenebilir dize özelliği ekler. SharePoint sunucusu salt okunur verileri görüntülemek özel özellikler de oluşturabilirsiniz. Bunun nasıl yapılacağını gösteren bir örnek için bkz: [izlenecek yol: Görüntü Web bölümleri için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ Bu uzantıyı düğümlerine düzenlenebilir dize özelliği ekler. SharePoint sunucusu salt okunur verileri görüntülemek özel özellikler de oluşturabilirsiniz. Bunun nasıl yapılacağını gösteren bir örnek için bkz: [izlenecek yol: web bölümlerini görüntülemek için Sunucu Gezgini genişletmek](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="compiling-the-code"></a>Kod Derleniyor  
+## <a name="compile-the-code"></a>Kod derleme  
  Bu örnekte aşağıdaki derlemelere başvuruları gerektirir:  
   
 -   Microsoft.VisualStudio.SharePoint  
@@ -80,13 +81,12 @@ ms.lasthandoff: 04/16/2018
   
 -   System.Windows.Forms  
   
-## <a name="deploying-the-extension"></a>Uzantısını dağıtma  
- Dağıtmak için **Sunucu Gezgini** uzantısı oluşturma bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer dosyalar için. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Uzantısı dağıtma  
+ Dağıtmak için **Sunucu Gezgini** uzantısı oluşturma bir [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer dosyalar için. Daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için Uzantılar dağıtmak](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: Sunucu Gezginine özel bir SharePoint düğümü ekleme](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [SharePoint Araç Uzantıları ile Özel Verileri İlişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  
+ [SharePoint araç uzantıları ile özel verileri ilişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
   

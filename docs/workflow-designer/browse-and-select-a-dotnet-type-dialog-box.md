@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50b9b61f34ba9e78efd8bc40c7d97583ee0c25f7
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973921"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117023"
 ---
-# <a name="browse-and-select-a-net-type-dialog-box"></a>Gözat ve bir .NET türünü seç iletişim kutusu
+# <a name="browse-and-select-a-net-type-dialog-box"></a>.NET Türüne Gözat ve Seç İletişim Kutusu
 
-İçinde **özellikleri** pencere, iletişim kutularını veya tasarımcıları seçtiğinizde değişken Tasarımcısı gibi **türleri için Gözat...**  veri türleri listesinden olan **göz atın ve .NET türü seçin** iletişim kutusu (kısaltılmış biçimde "türü tarayıcı" olarak adlandırılır). Bu iletişim kutusunda derlemeleri ve projeleri bir ağaç görünümünden bir türü seçebilirsiniz.
+İçinde **özellikleri** pencere, iletişim kutularını veya tasarımcıları seçtiğinizde değişken Tasarımcısı gibi **türleri için Gözat** veri türleri listesinden olduğu **göz atın ve .NET türüseçin** iletişim kutusu (kısaltılmış biçimde "türü tarayıcı" olarak adlandırılır). Bu iletişim kutusunda derlemeleri ve projeleri bir ağaç görünümünden bir türü seçebilirsiniz.
 
  Bu iletişim kutusu, kullanıcı senaryoları, aşağıdakiler de dahil olmak üzere çeşitli kullanılmaz:
 

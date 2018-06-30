@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fb7f8445cf43209ffed47140b1d8d204c68eaa4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2af59e2d5d26a6db1ecde24ca93c3f0d737eb31d
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120430"
 ---
-# <a name="walkthrough-deploying-a-project-task-list-definition"></a>İzlenecek yol: Proje Görev Listesi Tanımını Dağıtma
+# <a name="walkthrough-deploy-a-project-task-list-definition"></a>İzlenecek yol: Proje Görev listesi tanımını dağıtma
 
 Bu kılavuz size nasıl kullanılacağını gösterir [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] oluşturmak için özelleştirme, hata ayıklama ve proje görevleri izlemek için bir SharePoint listesi dağıtın.
 
@@ -31,11 +32,11 @@ Bu kılavuz size nasıl kullanılacağını gösterir [!INCLUDE[vs_dev11_long](.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Microsoft Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Microsoft Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
 - Visual Studio 2017 veya bir sürümü, Visual Studio uygulama yaşam döngüsü yönetimi (ALM).
 
-## <a name="CreatingListDef"></a> Bir SharePoint listesi oluşturma
+## <a name="create-a-sharepoint-list"></a>Bir SharePoint listesi oluşturma
 
 Bir SharePoint listesi projesi oluşturun ve liste tanımını görevleri ile ilişkilendirin.
 
@@ -47,7 +48,7 @@ Bir SharePoint listesi projesi oluşturun ve liste tanımını görevleri ile il
 
 3. Hata ayıklama için kullandığınız Yerel SharePoint sitesini belirtmek seçin **Grup çözümü olarak dağıtma** seçenek düğmesine ve ardından **son** düğmesi.
 
-4. Proje kısayol menüsünü açın ve ardından **Ekle**, **yeni öğe**.
+4. Proje kısayol menüsünü açın ve ardından **Ekle** > **yeni öğe**.
 
 5. İçinde **şablonları** bölmesinde seçin **listesi** şablonu ve ardından **Ekle** düğmesi.
 
@@ -59,7 +60,7 @@ Bir SharePoint listesi projesi oluşturun ve liste tanımını görevleri ile il
 
      Liste, özellik ve paket görünür **Çözüm Gezgini**.
 
-## <a name="AddEventRcvr"></a> Olay alıcısı ekleme
+## <a name="add-an-event-receiver"></a>Olay alıcı ekleyin
 
 Görev listesindeki son otomatik olarak ayarlayan olay alıcı ekleyebilirsiniz tarih ve görev açıklaması. Aşağıdaki yordamda basit olay işleyicisi listesi örneğine bir olay alıcısı olarak ekler.
 
@@ -82,7 +83,7 @@ Görev listesindeki son otomatik olarak ayarlayan olay alıcı ekleyebilirsiniz 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
 
-## <a name="CustomizeFeature"></a> Proje Görev listesi özelliğini özelleştirme
+## <a name="customize-the-project-task-list-feature"></a>Proje Görev listesi özelliğini özelleştirme
 
 Bir SharePoint çözüm oluşturduğunuzda, Visual Studio Proje öğeleri varsayılan özellikleri otomatik olarak oluşturur. Özellik Tasarımcı kullanarak SharePoint sitesi için proje görev listesi ayarları özelleştirebilirsiniz.
 
@@ -96,7 +97,7 @@ Bir SharePoint çözüm oluşturduğunuzda, Visual Studio Proje öğeleri varsay
 
 5. İçinde **özellikleri** penceresinde girin **1.0.0.0** değeri olarak **sürüm** özelliği.
 
-## <a name="CustomizePackage"></a> Proje Görev listesi paketi özelleştirme
+## <a name="customize-the-project-task-list-package"></a>Proje Görev listesi paketini özelleştirme
 
 Bir SharePoint proje oluşturduğunuzda, Visual Studio Paketi için varsayılan proje öğeleri içeren özellikleri otomatik olarak ekler. Paket Tasarımcısını kullanarak SharePoint sitesi için proje görev listesi ayarları özelleştirebilirsiniz.
 
@@ -106,11 +107,11 @@ Bir SharePoint proje oluşturduğunuzda, Visual Studio Paketi için varsayılan 
 
 3. Seçin **sıfırlama Web sunucusu** onay kutusu.
 
-## <a name="BuildTest"></a> Derleme ve test proje görev listesi
+## <a name="build-and-test-the-project-task-list"></a>Derleme ve test proje görev listesi
 
 Projeyi çalıştırdığınızda, SharePoint sitesini açar. Ancak, el ile görev listesi konuma gitmeniz gerekir.
 
-1. Derleme ve proje görev listesi dağıtma için F5 tuşuna seçin.
+1. Seçin **F5** oluşturmak ve proje görev listesi dağıtmak için anahtar.
 
      SharePoint sitesi açılır.
 
@@ -134,19 +135,19 @@ Projeyi çalıştırdığınızda, SharePoint sitesini açar. Ancak, el ile gör
 
      Görev ayrıntılı görünümünü görünür ve Açıklama "Kritik görev oluşur." gösterir
 
-## <a name="Deploy"></a> Proje Görev listesi dağıtma
+## <a name="deploy-the-project-task-list"></a>Proje Görev listesi dağıtma
 
 Derleme ve proje görev listesi test sonra kendisine dağıtabilirsiniz *yerel sistem* veya *uzak sistem*. Uzak bir sisteme farklı bir bilgisayara iken yerel çözüm geliştirilen aynı bilgisayar sistemidir.
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Proje Görev listesi için yerel sistemi dağıtmak için
 
-Visual Studio menü çubuğunda seçin **yapı**, **çözümü Dağıt**.
+Visual Studio menü çubuğunda seçin **yapı** > **çözümü Dağıt**.
 
-Visual Studio IIS uygulama havuzu geri dönüştürüldüğünde varolan çözüm sürümlerini geri çeker için SharePoint çözüm paketi (.wsp) dosyası kopyalar ve özelliklerini etkinleştirir. SharePoint çözüm artık kullanabilirsiniz. Dağıtım yapılandırma adımları hakkında daha fazla bilgi için bkz: [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio IIS uygulama havuzu geri dönüştürüldüğünde, varolan çözümü sürümlerini geri çeker, çözüm paketi kopyalar (*.wsp*) dosya SharePoint'e ve özelliklerini etkinleştirir. SharePoint çözüm artık kullanabilirsiniz. Dağıtım yapılandırma adımları hakkında daha fazla bilgi için bkz: [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Uzak bir sisteme proje görev listesi dağıtmak için
 
-1. Visual Studio menü çubuğunda seçin **yapı**, **Yayımla**.
+1. Visual Studio menü çubuğunda seçin **yapı** > **Yayımla**.
 
 2. İçinde **Yayımla** iletişim kutusunda, seçin **dosya sistemi Yayımla** seçenek düğmesi.
 
@@ -154,9 +155,9 @@ Visual Studio IIS uygulama havuzu geri dönüştürüldüğünde varolan çözü
 
 3. Seçin **Yayımla** düğmesi.
 
-     .Wsp dosyası çözüm için oluşturulur.
+     A *.wsp* dosya, çözüm için oluşturulur.
 
-4. .Wsp dosyası uzak SharePoint sisteme kopyalayın.
+4. Kopya *.wsp* uzak SharePoint Sistem dosyasına.
 
 5. PowerShell kullanmak `Add-SPUserSolution` uzak SharePoint yükleme paketini yüklemek için komutu. (Küme çözümleri için kullanmak `Add-SPSolution` komutu.)
 
@@ -168,16 +169,15 @@ Visual Studio IIS uygulama havuzu geri dönüştürüldüğünde varolan çözü
 
      Uzaktan dağıtım hakkında daha fazla bilgi için bkz: [kullanan çözümler](http://go.microsoft.com/fwlink/?LinkId=217680) ve [ekleme ve SharePoint 2010 PowerShell'de dağıtma çözümleriyle](http://go.microsoft.com/fwlink/?LinkId=217682).
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 Özelleştirme ve aşağıdaki konulardan SharePoint çözümlerini dağıtma hakkında daha fazla bilgi edinebilirsiniz:
 
-- [İzlenecek yol: SharePoint için Site Sütunu, İçerik Türü ve Liste Oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Nasıl yapılır: Olay Alıcısı Oluşturma](../sharepoint/how-to-create-an-event-receiver.md)
+- [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [SharePoint Server 2010 için Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=217684)
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
-[SharePoint Çözümlerini Paketleme ve Dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>Ayrıca bkz.
+[Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6ebdd8e968d631cf1d53515449c7e705c2978087
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1709ea21fa785a573dae03ad8c89814c9952b50
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120435"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Nasıl yapılır: Bir Parametrenin Tür Tanımlayıcısını Tanımlama
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama
   Bir tür tanımlayıcı bir parametre veri türünü tanımlayan özellikleri içerir. Bir tür tanımlayıcı alan, bir varlık veya bir varlıklar koleksiyonu tanımlayabilirsiniz. Daha fazla bilgi için bkz: [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Bir parametrenin tür tanımlayıcısını tanımlamak için  
@@ -121,11 +122,10 @@ ms.lasthandoff: 04/16/2018
   
      Yeni bir tür tanımlayıcı koleksiyonu tür tanımlayıcı için bir alt öğesi olarak eklenir. Bu tür tanımlayıcı bir varlık olarak yapılandırın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)   
  [Nasıl yapılır: bir modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Nasıl yapılır: bir yönteme parametre ekleme](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Nasıl yapılır: yöntem örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)   
- [İş Verileri Bağlantı Modeli Tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
+ [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
   

@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948213"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117166"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Yardım Görüntüleyicisi
 
-Yükleyin ve Visual Studio, .NET Framework, dil başvurusu, SQL Server ve Windows geliştirme de dahil olmak üzere Microsoft Yardım Görüntüleyici ile kullanarak çeşitli ürün ve teknolojileri için içerik, yerel bilgisayarınızda görüntüleyin. Yardım Görüntüleyicisi sağlar:
+Yükleme ve içeriği çeşitli ürün ve teknolojileri için Microsoft Yardım Görüntüleyicisi'ni kullanarak, yerel bilgisayarınızda görüntüleyin. Bu ürünler, Visual Studio, .NET Framework, dil başvurusu, SQL Server ve Windows geliştirme içerir. Yardım Görüntüleyicisi sağlar:
 
--   Bul ve içerik, defterleri olarak da adlandırılır kümeleri indirin.
+- İçerik, defterleri olarak da adlandırılır kümeleri indirin. Bu, "Çevrimdışı" çalışma ve hala belgelerine erişimi gerekiyorsa yararlı olabilir.
 
--   Konuları göz atma ve içindekiler arama başlığa göre bulur.
+- Konuları göz atma ve içindekiler arama başlığa göre bulur.
 
--   Dizin konuları arayın.
+- Dizin konuları arayın.
 
--   Tam metin araması kullanarak bilgi.
+- Tam metin araması kullanarak bilgi.
 
--   Görünüm, yer işareti ve yazdırma Konular.
+- Görünüm, yer işareti ve yazdırma Konular.
 
 Yardım Görüntüleyicisi'ni yüklemek için bkz: [Microsoft Yardım Görüntüleyicisi'ni yükleme](../ide/microsoft-help-viewer-installation.md). Yerine Yardım Görüntüleyici'de Yardım konuları okumaya başlamak için çevrimiçi gidin **yardımcı** Visual Studio menüsünde ve ardından **Yardım tercih kümesini** > **Yardım Görüntüleyici'de başlatın** .
+
+> [!TIP]
+> İnternet bağlantısı olmadığında yerel olarak görüntüleyebilirsiniz şekilde içerik indirmek için başka bir PDF sürümünü indirmek için yoludur. Docs.microsoft.com üzerinde birçok belgelerine kümeleri İçindekiler tüm makaleler için o TOC içeren bir PDF dosyasını karşıdan yüklemek için (İT) altındaki bir bağlantı içerir.
+>
+> ![Visual Studio belgeleri için PDF yükleyin](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Yardım Görüntüleyicisi turu
 
@@ -74,19 +79,19 @@ Yükleme, güncelleştirme, taşıma ve kullanarak içeriği Sil **yönetmek iç
 
 Araç çubuğunda **Yardım Görüntüleyici** penceresi aşağıdaki düğmeler içerir:
 
--   **İçeriğini göster konudaki** düğmesini gösteren konusundaki konumunu **içeriği** sekmesi.
+- **İçeriğini göster konudaki** düğmesini gösteren konusundaki konumunu **içeriği** sekmesi.
 
--   **Sık Kullanılanlara Ekle** düğmesi etkin konuya ekler **Sık Kullanılanlar** sekmesi.
+- **Sık Kullanılanlara Ekle** düğmesi etkin konuya ekler **Sık Kullanılanlar** sekmesi.
 
--   **Konuda Bul.** düğmesi etkin konu başlığı altındaki arama metni vurgular.
+- **Konuda Bul.** düğmesi etkin konu başlığı altındaki arama metni vurgular.
 
--   **Yazdırma** düğmesi yazdırır veya etkin konusunu önizlemesini gösterir.
+- **Yazdırma** düğmesi yazdırır veya etkin konusunu önizlemesini gösterir.
 
--   **Görüntüleyici seçenekleri** düğmesi ne kadar büyük metin görünür, kaç tane arama sonuçları döndürmek için geçmiş ve güncelleştirmeleri çevrimiçi denetlenip denetlenmeyeceğini göstermek için kaç tane konuları gibi ayarlarını görüntüler.
+- **Görüntüleyici seçenekleri** düğmesi ne kadar büyük metin görünür, kaç tane arama sonuçları döndürmek için geçmiş ve güncelleştirmeleri çevrimiçi denetlenip denetlenmeyeceğini göstermek için kaç tane konuları gibi ayarlarını görüntüler.
 
--   **İçeriği Yönet** düğmesini yapar **içeriği Yönet** sekmesini etkin.
+- **İçeriği Yönet** düğmesini yapar **içeriği Yönet** sekmesini etkin.
 
--   Küçük bir üçgen sağ taraftaki konu sekmeler dahil sekmeler listesini açar ve **içeriği Yönet** sekmesi. Etkin sekme yapmak için bir sekme adı seçebilirsiniz.
+- Küçük bir üçgen sağ taraftaki konu sekmeler dahil sekmeler listesini açar ve **içeriği Yönet** sekmesi. Etkin sekme yapmak için bir sekme adı seçebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

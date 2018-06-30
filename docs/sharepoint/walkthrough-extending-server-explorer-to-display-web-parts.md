@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c1554bad679a856725a984504d914859733ee73
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b0bbea76c3c63cf562203f9a622acb2a54804bde
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238405"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117842"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>İzlenecek yol: Web bölümlerini görüntülemek için Sunucu Gezgini genişletme
   Visual Studio'da kullandığınız **SharePoint bağlantıları** düğümünün **Sunucu Gezgini** SharePoint sitelerinde bileşenleri görüntülemek için. Ancak, **Sunucu Gezgini** bazı bileşenler varsayılan olarak görüntülemez. Bu kılavuzda, genişletme **Sunucu Gezgini** Web Bölümü Galerisi görüntüler böylece her SharePoint sitesine bağlı.  
@@ -36,7 +36,7 @@ ms.locfileid: "36238405"
   
     -   Uzantı yeni bir Web Bölümü örneğinin temsil eden düğüm türünü tanımlar. Bu yeni düğüm türü yeni alt düğümlerinde temelini **Web Bölümü Galerisi** düğümü. Yeni Web Bölümü düğüm türü bilgilerini görüntüler **özellikleri** penceresi temsil ettiği Web Bölümü hakkında. Düğüm türü için Web Bölümü ile ilgili diğer görevleri gerçekleştirmek için bir başlangıç noktası olarak kullanabileceğiniz özel kısayol menü öğesi de içerir.  
   
--   Uzantı derlemesi çağırır iki özel SharePoint komutu oluşturma. SharePoint komutları API'leri için SharePoint sunucusu nesne modelinde kullanmak için uzantı derlemeleri tarafından çağrılan yöntemler şunlardır. Bu kılavuzda, geliştirme bilgisayarındaki yerel SharePoint sitesinden Web bölümü bilgilerini almak komutları oluşturur. Daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   Uzantı derlemesi çağırır iki özel SharePoint komutu oluşturun. SharePoint komutları API'leri için SharePoint sunucusu nesne modelinde kullanmak için uzantı derlemeleri tarafından çağrılan yöntemler şunlardır. Bu kılavuzda, geliştirme bilgisayarındaki yerel SharePoint sitesinden Web bölümü bilgilerini almak komutları oluşturur. Daha fazla bilgi için bkz: [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 -   Uzantı dağıtmak için Visual Studio Uzantısı (VSIX) paketi oluşturma.  
   
@@ -48,9 +48,9 @@ ms.locfileid: "36238405"
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarındaki aşağıdaki bileşenler gerekir:  
   
--   Windows, SharePoint ve Visual Studio sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Windows, SharePoint ve Visual Studio sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   Visual Studio SDK'sı. Bu kılavuzda kullanılır **VSIX proje** Şablonu proje öğesi dağıtmak için VSIX paket oluşturmak için SDK. Daha fazla bilgi için bkz: [genişletme Visual Studio'da SharePoint Araçları](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   Visual Studio SDK'sı. Bu kılavuzda kullanılır **VSIX proje** Şablonu proje öğesi dağıtmak için VSIX paket oluşturmak için SDK. Daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
  Aşağıdaki kavramlar bilgisi yararlı, ancak gerekli değildir, izlenecek yolu tamamlamak için:  
   

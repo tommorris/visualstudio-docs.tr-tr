@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f73248ee79be384ae3733924e9235363717fb82
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089619"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117933"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>İzlenecek yol: bir veri kümesi Tasarımcısı ile oluşturma
 
@@ -34,7 +34,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .
+    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu**.
 
        Sorgu Düzenleyicisi penceresini açar.
 

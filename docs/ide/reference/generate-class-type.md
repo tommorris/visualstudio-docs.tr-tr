@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25e56d77ef9094338455b3a3f576fe8bc58387b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947368"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116994"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio'da bir sınıf veya türü oluşturma
 
@@ -68,7 +68,7 @@ Bu kod oluşturma için geçerlidir:
    > [!TIP]
    > Kullanım **Önizleme değişiklikleri** önizleme penceresinin altındaki bağlantıyı [tüm değişiklikleri görmek için](../../ide/preview-changes.md) , oluşturulacak seçiminizi yaptıktan önce.
 
-1. Seçtiyseniz **yeni türünü oluştur...**  öğesi, **oluşturmak türü** iletişim kutusu açılır. Erişilebilirlik, türü ve konumu yeni türünün yapılandırın.
+1. Seçtiyseniz **yeni türü** öğesi, **oluşturmak türü** iletişim kutusu açılır. Erişilebilirlik, türü ve konumu yeni türünün yapılandırın.
 
    ![Türü](media/class-newtype-cs.png)
 

@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c15087e1e107dcbd01ba0662fecee336acd33b6
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844273"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117607"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
 
@@ -153,7 +153,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
 ##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Testi Çalıştırma ve sonuçları görüntüleme
- Test yöntemi yazmayı bitirdiğinizde test projesi oluşturun. Test yöntemi Test Gezgini penceresinde görünür **testleri değil Çalıştır** grubu. Test Gezgini çalıştırmak, yazma ve testleri yeniden çalıştırmak gibi sonuçları gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, ve **testleri değil Çalıştır**. Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırma veya seçmek için **Çalıştır...**  Çalıştırılacak testleri kümesini seçin.
+ Test yöntemi yazmayı bitirdiğinizde test projesi oluşturun. Test yöntemi Test Gezgini penceresinde görünür **testleri değil Çalıştır** grubu. Test Gezgini çalıştırmak, yazma ve testleri yeniden çalıştırmak gibi sonuçları gruplar halinde görüntülenir. **başarısız testler**, **testleri geçti**, ve **testleri değil Çalıştır**. Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırma veya seçmek için **çalıştırmak** Çalıştırılacak testleri kümesini seçin.
 
  Test çalışırken test sonuçları çubuğu Explorer üstündeki animasyon eklenir. Herhangi bir test başarısız olursa test çalıştırması sonunda çubuğu tüm testleri geçmişse yeşil veya kırmızı olur. Test Gezgini penceresinin altındaki ayrıntılar bölmesinde test çalışması özeti görüntülenir. Bir test alt bölmesinde test ayrıntılarını görüntülemek için seçin.
 

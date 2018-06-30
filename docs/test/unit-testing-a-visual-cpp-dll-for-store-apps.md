@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 0e2fbdc3d48b39bc481a392adc654f38551d333d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233537"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117634"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL test etme
 
@@ -26,7 +26,7 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma
 
-1.  Üzerinde **dosya** menüsünde seçin **yeni** > **yeni proje...** .
+1.  Üzerinde **dosya** menüsünde seçin **yeni** > **yeni proje**.
 
 2.  Yeni Proje iletişim kutusuna genişletin **yüklü** > **Visual C++** ve **Windows Evrensel**. Ardından **birim testi uygulama (Evrensel Windows)** proje şablonları listesinden.
 
@@ -131,11 +131,11 @@ Bu konuda C++ için Microsoft Test Çerçevesi ile Evrensel Windows Platformu (U
 
 1.  RooterLib RooterLibTests projeye ekleyin.
 
-    1.  Çözüm Gezgini'nde seçin **RooterLibTests** proje ve ardından **başvuruları...**  kısayol menüsünde.
+    1.  Çözüm Gezgini'nde seçin **RooterLibTests** proje ve ardından **başvuruları** kısayol menüsünde.
 
     2.  RooterLib Proje Özellikleri iletişim kutusunda genişletin **ortak özellikleri** ve **Framework ve başvurular**.
 
-    3.  Seçin **Yeni Başvuru Ekle...**
+    3.  Seçin **Yeni Başvuru Ekle**
 
     4.  İçinde **Başvuru Ekle** iletişim kutusunda, genişletin **çözüm** ve ardından **projeleri**. Ardından **RouterLib** öğesi.
 

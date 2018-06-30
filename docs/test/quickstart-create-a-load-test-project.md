@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 89a72c115edf8eae11fc1159686dee2b7b3f44d6
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976721"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118287"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Hızlı Başlangıç: yük testi projesi oluşturma
+# <a name="quickstart-create-a-load-test-project"></a>Hızlı Başlangıç: Yük testi projesi oluşturma
 
 Bu 10 dakikalık quickstart oluşturmak ve Visual Studio'da bir Web performansı ve yük testi projesi çalıştırmak öğreneceksiniz. Yük testleri Web performans veya çok sayıda kullanıcı aynı anda bir sunucuya erişirken benzetimini yapmak için birim testleri yürütün.
 
@@ -27,7 +27,7 @@ Bu 10 dakikalık quickstart oluşturmak ve Visual Studio'da bir Web performansı
 
 Yoksa zaten Web performansı ve yük test etme araçları bileşeninin yüklü değilse, Visual Studio yükleyicisi yüklemeniz gerekir.
 
-1. Visual Studio yükleyicisi Windows Başlat menüsünden açmak. Ayrıca Visual Studio'dan içinde erişebildiğinizi **yeni proje** iletişim kutusu veya seçerek **Araçları** > **alma araçları ve özelliklerinin...**  menü çubuğundan.
+1. Visual Studio yükleyicisi Windows Başlat menüsünden açmak. Ayrıca Visual Studio'dan içinde erişebildiğinizi **yeni proje** iletişim kutusu veya seçerek **Araçları** > **alma araçları ve özelliklerinin** menü çubuğundan.
 
 1. Visual Studio yükleyicisinde seçin **bileşenleri tek tek** sekmesini tıklatın ve doğru aşağı kaydırın **hata ayıklama ve test** bölümü. Seçin **Web performansı ve Yük Test Etme Araçları**.
 
@@ -41,7 +41,7 @@ Yoksa zaten Web performansı ve yük test etme araçları bileşeninin yüklü d
 
 Bu bölümde, bir C# yük testi projesi oluşturacağız. İsterseniz, ayrıca bir Visual Basic yük testi projesi oluşturabilirsiniz.
 
-1. Visual Studio'yu açın ve seçin **dosya** > **yeni** > **proje...**  menü çubuğundan.
+1. Visual Studio'yu açın ve seçin **dosya** > **yeni** > **proje** menü çubuğundan.
 
    **Yeni proje** iletişim kutusu açılır.
 
@@ -55,7 +55,7 @@ Bu bölümde, bir C# yük testi projesi oluşturacağız. İsterseniz, ayrıca b
 
 ## <a name="add-a-load-test-to-the-project"></a>Bir yük testi projeye ekleyin
 
-1. Sağ tıklatma menüsünden veya bağlam menüsü, proje düğümünün **Çözüm Gezgini**, seçin **Ekle** > **yük testi...** .
+1. Sağ tıklatma menüsünden veya bağlam menüsü, proje düğümünün **Çözüm Gezgini**, seçin **Ekle** > **yük testi**.
 
    **Yeni Yük Testi Sihirbazı** açar.
 

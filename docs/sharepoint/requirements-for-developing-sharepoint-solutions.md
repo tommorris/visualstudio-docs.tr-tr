@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2cb92476d64abebb0dae24109e57940a19505cc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c9d6a726b290bfed1c086f9fb03290a37c91490
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120421"
 ---
-# <a name="requirements-for-developing-sharepoint-solutions"></a>SharePoint Çözümleri Geliştirmek için Gereksinimler
- 
+# <a name="requirements-for-developing-sharepoint-solutions"></a>SharePoint çözümleri geliştirmek için gereksinimler
 Visual Studio'da bulunan SharePoint çözüm geliştirme araçları kullanmadan önce aşağıdaki önkoşulları sistemde yüklemeniz gerekir:
 
 - C# ve/veya Visual Basic veya bir sürümü, Visual Studio uygulama yaşam döngüsü yönetimi (ALM) ile Visual Studio.
@@ -49,15 +49,13 @@ Visual Studio'da SharePoint çözümleri geliştirmek için Visual Studio ile ay
 Yükleme hakkında daha fazla bilgi için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], bkz: [Visual Studio yükleme](../install/install-visual-studio.md).
 
 ## <a name="vista-and-windows-7-user-account-control-uac"></a>Vista ve Windows 7 Kullanıcı Hesabı Denetimi (UAC)
-
 [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] ve [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] kullanıcı hesabı denetimi (UAC) olarak bilinen bir güvenlik özelliği ekleyebilirsiniz. SharePoint çözümleri geliştirmek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] üzerinde [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] ve [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] sistemleri UAC gerektirir, çalıştırmanız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir sistem yöneticisi olarak. Masaüstünde kısayol menüsünü açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve ardından **yönetici olarak çalıştır**.
 
 Her zaman yönetici olarak çalıştırmak için masaüstü kısayolu yapılandırmak için kısayol menüsünü açın, seçin **özellikleri**, seçin **Gelişmiş** düğmesine tıklayın ve ardından **yönetici olarak çalıştır**  onay kutusu.
 
 Daha fazla bilgi için bkz: [anlama ve Windows Vista kullanıcı hesabı denetimi yapılandırma](http://go.microsoft.com/fwlink/?LinkID=156476). ve [Windows 7 kullanıcı hesabı denetimi](http://go.microsoft.com/fwlink/?LinkId=177523).
 
-## <a name="sharepoint-permissions-considerations"></a>SharePoint İzinleri Hakkında Önemli Noktalar
-
+## <a name="sharepoint-permissions-considerations"></a>SharePoint izinlerini konuları
 SharePoint çözümleri geliştirmek için çalıştırmak ve SharePoint çözümlerini hata ayıklamak için yeterli izinlere sahip olmalıdır. Bir SharePoint çözüm test etmeden önce gerekli izinlere sahip olduğunuzdan emin olmak için aşağıdaki adımları uygulayın:
 
 1. Sistemde bir yönetici olarak, kullanıcı hesabını ekleyin.
@@ -70,6 +68,5 @@ SharePoint çözümleri geliştirmek için çalıştırmak ve SharePoint çözü
 
 3. Kullanıcı hesabınızı eklemek için WSS_ADMIN_WPG grubu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
-[Başlarken &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
+## <a name="see-also"></a>Ayrıca bkz.
+[Başlama &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)

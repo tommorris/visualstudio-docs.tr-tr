@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a21a84a9b8e96d771478415eae1a874d015572f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a83d9287fa4e89db439853737ed8d3140197ce69
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746292"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117647"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ-SQL sınıfları oluşturma
 [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerinde genellikle gerçekleştirilir gibi tek Tablo Devralma destekler. Bu kılavuzda sağlanan genel adımlar üzerine genişletir [nasıl yapılır: devralma O/R Tasarımcısı kullanarak yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı veriler sağlar [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -53,10 +53,10 @@ ms.locfileid: "34746292"
 
     |Sütun adı|Veri Türü|Null değerlere izin ver|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
+    |**ID**|**int**|**false**|
     |**Türü**|**int**|**TRUE**|
-    |**FirstName**|**Nvarchar(200)**|**False**|
-    |**Soyadı**|**Nvarchar(200)**|**False**|
+    |**firstName**|**nvarchar(200)**|**false**|
+    |**Soyadı**|**nvarchar(200)**|**false**|
     |**Yöneticisi**|**int**|**TRUE**|
 
 3.  ID sütunu birincil anahtar olarak ayarlayın.
@@ -74,7 +74,7 @@ ms.locfileid: "34746292"
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Türü**|**FirstName**|**Soyadı**|**Yöneticisi**|
+    |**ID**|**Türü**|**firstName**|**Soyadı**|**Yöneticisi**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -93,7 +93,7 @@ ms.locfileid: "34746292"
 
 #### <a name="to-create-the-new-windows-forms-application"></a>Yeni Windows Forms uygulaması oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 

@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4ee4d9a1c64d39e6ef05f9c01b26686f13c6dea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a1ef45b6bfa51944cb7fb3ac38057d9fc02a1dc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926816"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118193"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: bir WCF veri hizmetine WPF ve Entity Framework ile oluşturma
 Bu kılavuzda nasıl basit bir oluşturulduğunu gösteren [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] içinde barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması ve bir Windows Forms uygulamasında erişebilir.
@@ -49,7 +49,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .
+    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu**.
 
        Sorgu Düzenleyicisi penceresini açar.
 
@@ -94,7 +94,7 @@ Sonraki adımda oluşturacağınız bir [!INCLUDE[adonet_edm](../data-tools/incl
 
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-         -veya-
+         veya
 
     -   Seçin **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için düğmesini. Daha fazla bilgi için bkz: [yeni bağlantılar eklemek](../data-tools/add-new-connections.md).
 
@@ -154,7 +154,7 @@ Sonraki adımlarda, hizmeti kullanmak üzere bir Windows Forms istemci uygulamas
 
 #### <a name="to-create-the-client-application"></a>İstemci uygulamasını oluşturmak için
 
-1.  Menü çubuğunda, dosya **Ekle**, **yeni proje**.
+1.  Menü çubuğunda, dosya **Ekle** > **yeni proje**.
 
 2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual Basic** veya **Visual C#** düğümü ve seçin **Windows** düğümü ve ardından seçin **Windows Forms uygulamasına**.
 

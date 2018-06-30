@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446699"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117101"
 ---
 # <a name="encodings-and-line-endings"></a>Kodlamalar ve satır sonları
 
@@ -51,9 +51,9 @@ Kullanabileceğiniz **dosya** > **Gelişmiş kaydetme seçenekleri** iletişim k
 ![Gelişmiş Kaydetme Seçenekleri iletişim kutusu](media/line_endings.png)
 
 > [!NOTE]
-> Görmüyorsanız, **Gelişmiş kaydetme seçenekleri** üzerinde **dosya** menüsünde, ekleyebilir. Seçin **Araçları**, **Özelleştir...** ve ardından **komutları** sekmesi. İçinde **menü çubuğu** aşağı açılan listesinde, seçin **dosya**, ardından **komut Ekle...**  düğmesi. İçinde **Add komutunu** iletişim kutusunda **kategorileri**, seçin **dosya**ve ardından **komutları** listesinde, seçin **Gelişmiş Seçenekleri...**. Seçin **Tamam** ve ardından **Aşağı Taşı** menüsünden herhangi bir yere komutu taşımak için düğmesi. Seçin **kapatmak** kapatmak için **Özelleştir** iletişim kutusu. Daha fazla bilgi için bkz: [menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Görmüyorsanız, **Gelişmiş kaydetme seçenekleri** üzerinde **dosya** menüsünde, ekleyebilir. Seçin **Araçları**, **Özelleştir**ve ardından **komutları** sekmesi. İçinde **menü çubuğu** aşağı açılan listesinde, seçin **dosya**, ardından **Ekle komutu** düğmesi. İçinde **Add komutunu** iletişim kutusunda **kategorileri**, seçin **dosya**ve ardından **komutları** listesinde, seçin  **Gelişmiş Seçenekleri**. Seçin **Tamam** ve ardından **Aşağı Taşı** menüsünden herhangi bir yere komutu taşımak için düğmesi. Seçin **kapatmak** kapatmak için **Özelleştir** iletişim kutusu. Daha fazla bilgi için bkz: [menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Alternatif olarak, erişim **Gelişmiş kaydetme seçenekleri** seçerek iletişim kutusu **dosya** > **kaydetmek \<dosya\> olarak...** . İçinde **dosyasını Farklı Kaydet** iletişim kutusunda, açılır üçgen seçin **kaydetmek** düğmesini tıklatın ve seçin **kodlama ile Kaydet...** .
+> Alternatif olarak, erişim **Gelişmiş kaydetme seçenekleri** seçerek iletişim kutusu **dosya** > **kaydetmek \<dosya\> olarak**. İçinde **dosyasını Farklı Kaydet** iletişim kutusunda, açılır üçgen seçin **kaydetmek** düğmesini tıklatın ve seçin **kodlamayla kaydetme**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

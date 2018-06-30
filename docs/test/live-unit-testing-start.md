@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978924"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117803"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio'da birim testi Canlı kullanmaya başlama
 
@@ -41,7 +41,7 @@ Begin adlı bir Visual Studio çözümü oluşturarak `UtilityLibraries` tek bir
 
 Yalnızca bir veya daha fazla projeleri için bir kapsayıcı çözümüdür. Çözüm oluşturmak için Visual Studio 2017 açın ve aşağıdakileri yapın:
 
-1. Seçin **dosya**, **yeni**, **proje** en üst düzey Visual Studio menüsünde.
+1. Seçin **dosya** > **yeni** > **proje** en üst düzey Visual Studio menüsünde.
 
 1. İçinde **yeni proje** iletişim kutusunda, genişletin **diğer proje türleri** düğümü ve select **Visual Studio çözümleri**. Seçin **boş çözüm** sağ bölmede şablon ve girin `UtilityLibraries` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
 
@@ -52,7 +52,7 @@ Yalnızca bir veya daha fazla projeleri için bir kapsayıcı çözümüdür. Ç
 Çözüm oluşturduğunuza göre adlı bir sınıf kitaplığı oluşturacaksınız `StringLibrary` Dizelerle çalışmaya yönelik genişletme yöntemleri sayısını içerir.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. İçinde **Çözüm Gezgini**, sağ tıklayın `UtilityLibraries` çözümü ve select **Ekle**, **yeni proje**.
+1. İçinde **Çözüm Gezgini**, sağ tıklayın `UtilityLibraries` çözümü ve select **Ekle** > **yeni proje**.
 
 1. İçinde **Yeni Proje Ekle** iletişim kutusunda, seçin C# düğümünü, ardından **.NET standart**.
 
@@ -80,7 +80,7 @@ Yalnızca bir veya daha fazla projeleri için bir kapsayıcı çözümüdür. Ç
 1.  Seçin **yapı**, **yapı çözümü** en üst düzey Visual Studio menüsünde. Visual Studio başarıyla kitaplığınızın oluşturması gerekir.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. İçinde **Çözüm Gezgini**, sağ tıklayın `UtilityLibraries` çözümü ve select **Ekle**, **yeni proje**.
+1. İçinde **Çözüm Gezgini**, sağ tıklayın `UtilityLibraries` çözümü ve select **Ekle** > **yeni proje**.
 
 1. İçinde **Yeni Proje Ekle** iletişim kutusunda, Visual Basic düğümünü seçin ve ardından **.NET standart**.
 
@@ -118,7 +118,7 @@ Yalnızca bir veya daha fazla projeleri için bir kapsayıcı çözümüdür. Ç
 Test etmek için birim testi projesi oluşturmak için sonraki adımdır `StringLibrary` kitaplığı. Birim testleri, aşağıdaki adımları gerçekleştirerek oluşturun:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. İçinde **Çözüm Gezgini**, sağ tıklayın `UtilityLibraries` çözümü ve select **Ekle**, **yeni proje**.
+1. İçinde **Çözüm Gezgini**, sağ tıklayın `UtilityLibraries` çözümü ve select **Ekle** > **yeni proje**.
 
 1. İçinde **Yeni Proje Ekle** iletişim kutusunda, seçin C# düğümünü, ardından **.NET Core**.
 
@@ -156,7 +156,7 @@ Test etmek için birim testi projesi oluşturmak için sonraki adımdır `String
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. İçinde **Çözüm Gezgini**, sağ tıklayın `UtilityLibraries` çözümü ve select **Ekle**, **yeni proje**.
+1. İçinde **Çözüm Gezgini**, sağ tıklayın `UtilityLibraries` çözümü ve select **Ekle** > **yeni proje**.
 
 1. İçinde **Yeni Proje Ekle** iletişim kutusunda, Visual Basic düğümünü seçin ve ardından **.NET Core**.
 

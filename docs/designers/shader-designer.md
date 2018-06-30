@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d42699e08bd407f5481b7ad99981aef4ea3638bc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746786"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117582"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 
@@ -43,7 +43,7 @@ Bu bölümde, bir DGSL gölgelendirici eklemeyi açıklar, [!INCLUDE[vsprvs](../
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>DGSL gölgelendirici projenize eklemek için
 
-1.  İçinde **Çözüm Gezgini**, gölgelendirici ekleyin ve ardından istediğiniz proje için kısayol menüsünü açın **Ekle**, **yeni öğe**.
+1.  İçinde **Çözüm Gezgini**, gölgelendirici ekleyin ve ardından istediğiniz proje için kısayol menüsünü açın **Ekle** > **yeni öğe**.
 
 2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **yüklü**seçin **grafik**ve ardından **Visual gölgelendirici grafik (.dgsl)**.
 
@@ -73,7 +73,7 @@ Bu tablo üzerinde öğeleri açıklar **gölgelendirici Tasarımcısı mod** g�
 
 |Araç Çubuğu Öğesi|Açıklama|
 |------------------|-----------------|
-|**seçin**|Düğümler ve grafik kenarları ile etkileşim sağlar. Bu modda, düğümleri seçin ve taşıyabilir veya silin ve kenarları oluşturmak veya bunları bölün.|
+|**Seçin**|Düğümler ve grafik kenarları ile etkileşim sağlar. Bu modda, düğümleri seçin ve taşıyabilir veya silin ve kenarları oluşturmak veya bunları bölün.|
 |**Pan**|Bir gölgelendirici grafiği pencere çerçevesi göre hareketini sağlar. Kaydırmak için tasarım yüzeyine noktasında seçin ve taşıyabilirsiniz.<br /><br /> İçinde **seçin** modu tuşuna basın ve etkinleştirmek için Ctrl basılı **Pan** geçici olarak modu.|
 |**Yakınlaştır**|Pencere çerçevesi göre daha az veya gölgelendirici grafik ayrıntı görünümünü sağlar. İçinde **yakınlaştırma** modu, tasarım yüzeyine bir nokta seçin ve ardından sağa taşıyın veya yakınlaştırmak için aşağı veya sol veya en fazla yakınlaştırma yetersiz.<br /><br /> İçinde **seçin** modu tuşuna basın ve yakınlaştırmak veya uzaklaştırmak fare tekerleği kullanarak Ctrl basılı tutun.|
 |**Sığdırmak için Yakınlaştır**|Tam gölgelendirici grafiği pencere çerçevede görüntüler.|

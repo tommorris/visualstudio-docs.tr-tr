@@ -15,24 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c76d62751670e4fdd38c1ebb3042e5c403ee1ca6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4fa7d2652e65e26686a5058fcb2c8f5130fbbdde
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120568"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Nasıl yapılır: Bir SharePoint Projesi Dağıtıldığında veya Geri Çekildiğinde Kodu Çalıştırma
-  Bir SharePoint projesi dağıtıldığında veya geri çekilebilir ek görevleri gerçekleştirmek istiyorsanız, Visual Studio tarafından oluşturulan olayları işleyebilirsiniz. Daha fazla bilgi için bkz: [genişletme SharePoint paketleme ve dağıtım](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Nasıl yapılır: bir SharePoint projesi dağıtıldığında veya geri çekilebilir kodu çalıştırma
+  Bir SharePoint projesi dağıtıldığında veya geri çekilebilir ek görevleri gerçekleştirmek istiyorsanız, Visual Studio tarafından oluşturulan olayları işleyebilirsiniz. Daha fazla bilgi için bkz: [genişletmek SharePoint paketleme ve dağıtım](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Bir SharePoint proje kodunu çalıştırmak için dağıtıldığında geri çekilebilir veya  
   
 1.  Bir proje öğesi uzantısı, bir proje uzantısı veya yeni bir proje öğesi türü tanımı oluşturun. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
-    -   [Nasıl yapılır: Bir SharePoint Proje Öğesi Uzantısı Oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+    -   [Nasıl yapılır: bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [Nasıl yapılır: Bir SharePoint Proje Uzantısı Oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+    -   [Nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [Nasıl yapılır: Bir SharePoint Proje Öğesi Türü Tanımlama](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+    -   [Nasıl yapılır: bir SharePoint proje öğesi türü tanımlama](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
 2.  Uzantı, erişim <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> nesnesi. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint Proje hizmetini alma](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
@@ -45,18 +46,17 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs#12)]
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb#12)]  
   
-## <a name="compiling-the-code"></a>Kod Derleniyor  
+## <a name="compile-the-code"></a>Kod derleme  
  Bu örnekte aşağıdaki derlemelere başvuruları gerektirir:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## <a name="deploying-the-extension"></a>Uzantısını dağıtma  
- Uzantıyı dağıtmak için oluşturma bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer dosyalar için. Daha fazla bilgi için bkz: [dağıtma uzantıları Visual Studio'da SharePoint araçları için](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Uzantısı dağıtma  
+ Uzantıyı dağıtmak için oluşturma bir [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer dosyalar için. Daha fazla bilgi için bkz: [Visual Studio'da SharePoint araçları için Uzantılar dağıtmak](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genişletme SharePoint paketleme ve dağıtma](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [Nasıl yapılır: Dağıtım Adımları Yürütüldüğünde Kodu Çalıştırma](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
-  
+## <a name="see-also"></a>Ayrıca bkz.
+ [SharePoint paketleme ve dağıtımını genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
+ [Nasıl yapılır: dağıtım adımları yürütüldüğünde kodu çalıştırma](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
   

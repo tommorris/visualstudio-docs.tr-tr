@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5dae8a0cbc58bb202a609f465461e073006768e9
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747007"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117712"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>İzlenecek Yol: N Katmanlı Bir Veri Uygulaması Oluşturma
 *N katmanlı* veri uygulamalardır verilere erişebilir ve birden çok mantıksal katmanlara ayrılır uygulamalar veya *katmanları*. Uygulama bileşenlerini farklı katmanlara ayırmak uygulamanızın yönetilebilirliğini ve ölçeklenebilirliğini artırır. Bunu, tüm çözümü yeniden tasarlamanıza gerek kalmadan tek bir katmana uygulanabilen yeni teknolojilerin daha kolay benimsenmesini sağlayarak yapar. N katmanlı mimaride bir sunu katmanı, bir orta katman ve bir veri katmanı bulunur. Orta katmanda genellikle bir veri erişim katmanı, iş mantığı katmanı ve kimlik doğrulaması ve doğrulama gibi paylaşılan bileşenler bulunur. Veri katmanında ilişkisel bir veritabanı vardır. N katmanlı uygulamalar hassas bilgileri orta katmanın veri erişimi katmanında depolayarak sunu katmanına erişimi olan son kullanıcılardan uzakta tutulmasını sağlar. Daha fazla bilgi için bkz: [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md).
@@ -59,7 +59,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu...** .
+    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (SQL Server Nesne Gezgini parçası olarak yüklü **veri depolama ve işleme** Visual Studio yükleyicisi iş yükündeki.) Genişletme **SQL Server** düğümü. Yerel veritabanı örneğinde sağ tıklatıp **yeni sorgu**.
 
        Sorgu Düzenleyicisi penceresini açar.
 
@@ -77,7 +77,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>N katmanlı çözüm ve DataEntityTier sınıf kitaplığı oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje...** .
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 
@@ -94,7 +94,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 #### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>TableAdapters için ayrı sınıf kitaplığı oluşturmak için
 
-1.  Çözüm Gezgini'ndeki çözüme sağ tıklayın ve seçin **Ekle**, **yeni proje...** .
+1.  Çözüm Gezgini'ndeki çözüme sağ tıklayın ve seçin **Ekle** > **yeni proje**.
 
 2.  İçinde **yeni proje** Orta bölmede, Seç iletişim kutusu **sınıf kitaplığı**.
 
@@ -164,7 +164,7 @@ Bu kılavuz, bir WCF hizmeti kullanarak veri erişim katmanı erişmek için yen
 
 #### <a name="to-create-a-new-wcf-service-application"></a>Yeni bir WCF Hizmeti uygulaması oluşturmak için
 
-1.  Çözüm Gezgini'ndeki çözüme sağ tıklayın ve seçin **Ekle**, **yeni proje...** .
+1.  Çözüm Gezgini'ndeki çözüme sağ tıklayın ve seçin **Ekle** > **yeni proje**.
 
 2.  İçinde **yeni proje** iletişim kutusunda, sol bölmesinde, **WCF**.  Orta bölmede seçin **WCF Hizmeti Kitaplığı**.
 
@@ -288,7 +288,7 @@ Bu kılavuz, bir WCF hizmeti kullanarak veri erişim katmanı erişmek için yen
 
 #### <a name="to-create-the-presentation-tier-project"></a>Sunu katmanı projesi oluşturmak için
 
-1.  Çözüm Gezgini'ndeki çözüme sağ tıklayın ve seçin **Ekle**, **yeni proje...** .
+1.  Çözüm Gezgini'ndeki çözüme sağ tıklayın ve seçin **Ekle** > **yeni proje**.
 
 2.  İçinde **yeni proje** iletişim kutusunda, sol bölmesinde, **Windows Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması**.
 

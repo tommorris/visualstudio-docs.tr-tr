@@ -22,16 +22,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab104ee31246a524e2c34c513a66a5f5143d5f55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120424"
 ---
-# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Nasıl yapılır: Bir BDC Özelliğine Özel bir Derlemeyi Dahil Etme
+# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Nasıl yapılır: bir BDC özelliğine özel bir derlemeyi dahil etme
   Projenizi derlemeleri aynı çözümde diğer projelerden başvuruda bulunabilir. Ancak, bu derlemeler projenin özellik dosyası kullanarak eklemeniz gerekir **Ata başvurulan derlemeler LobSystems için** iletişim kutusu.  
   
-### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Bir iş verileri bağlantı (BDC) özelliğine özel bir derlemeyi dahil etmek için  
+### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>İş verileri bağlantı (BDC) özelliğinde özel bir derlemeyi dahil etmek için
   
 1.  İçinde **Çözüm Gezgini**, BDC modeli içeren klasörü seçin.  
   
@@ -49,13 +50,12 @@ ms.lasthandoff: 04/16/2018
 5.  İçinde **başvuru özellikleri** grubunda, görünür listesini açın **LobSystem kapsam** özelliği, özel bir derlemeyi kullanın ve ardından yöntemleri LOB sistemine seçin **Tamam**  düğmesi.  
   
     > [!NOTE]  
-    >  Özel derleme kodunda hata ayıklama için çözüm paketi derleme eklemeniz gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: ekleme ve kaldırma ek derlemeler](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+    >  Özel derleme kodunda hata ayıklama için çözüm paketi derleme eklemeniz gerekir. Daha fazla bilgi için bkz: [nasıl yapılır: ek derlemeler ekleyip](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için kaynak dosyası kullanın](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Nasıl yapılır: bir SharePoint projesine mevcut bir BDC modeli dosyası ekleme](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Nasıl yapılır: bir BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)   
- [İş Verilerini SharePoint ile Tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
+ [Integragte iş verilerini SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   

@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 179718223f181619a3121df8c88132a07e392678
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b7895a15dcc7536ee29317a2c02546bf125a6b4a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757181"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117205"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 Eşzamanlılık (<xref:System.Data.DBConcurrencyException>) iki kullanıcı aynı anda aynı verileri bir veritabanındaki değiştirmeye kalkıştığında ortaya çıkar. Bu kılavuzda, catch verilmektedir bir Windows uygulaması oluşturma bir <xref:System.Data.DBConcurrencyException>hataya satırı bulun ve onu nasıl ele alınacağını için bir strateji öğrenin.
@@ -71,7 +71,7 @@ Bu kılavuzda, SQL Server Express LocalDB ve Northwind örnek veritabanı kullan
 
 #### <a name="to-create-a-new-windows-forms-application-project"></a>Yeni bir Windows Forms uygulaması projesi oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni**, **proje**.
+1. Visual Studio'da üzerinde **dosya** menüsünde, select **yeni** > **proje**.
 
 2. Genişletin **Visual C#** veya **Visual Basic** sol bölmesinde, ardından **Windows Masaüstü**.
 

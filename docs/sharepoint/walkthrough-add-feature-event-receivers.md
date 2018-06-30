@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cda3967d0fc95fdd8f28503f209a5f2208d07031
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4881aba0f8ac1ea0f634491d6549c72de74bf67a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120429"
 ---
-# <a name="walkthrough-add-feature-event-receivers"></a>İzlenecek yol: Özellik Olay Alıcıları Ekleme
+# <a name="walkthrough-add-feature-event-receivers"></a>İzlenecek yol: özellik Olay alıcıları ekleme
   Özellik Olay alıcıları özelliği ile ilgili aşağıdaki olaylardan biri SharePoint'te oluştuğunda, yürütme yöntemler şunlardır:  
   
 -   Bir özelliğin yüklenme biçimini.  
@@ -49,16 +50,16 @@ ms.lasthandoff: 04/16/2018
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   Microsoft Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Microsoft Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## <a name="creating-a-feature-event-receiver-project"></a>Özellik olay alıcı proje oluşturma  
+## <a name="create-a-feature-event-receiver-project"></a>Bir özellik olay alıcı projesi oluşturma
  İlk olarak, özellik olay alıcısı içerecek şekilde bir proje oluşturun.  
   
 #### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Özellik olay alıcısı ile bir proje oluşturmak için  
   
-1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje** görüntülemek için **yeni proje** iletişim kutusu.  
+1.  Menü çubuğunda seçin **dosya** > **yeni** > **proje** görüntülemek için **yeni proje** iletişim kutusu.  
   
 2.  Genişletme **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  Seçin **son** düğmesine tıklayın ve ardından Feature1 adlı bir özellik altında göründüğünü fark **özellikleri** düğümü.  
   
-## <a name="adding-an-event-receiver-to-the-feature"></a>Olay alıcısı için özellik ekleme  
+## <a name="add-an-event-receiver-to-the-feature"></a>Özelliği için olay alıcı ekleyin
  Ardından, olay alıcı özelliğini ekleyin ve özellik devre dışı bırakıldığında yürütülen kodu ekleyin.  
   
 #### <a name="to-add-an-event-receiver-to-the-feature"></a>Özelliği için olay alıcı eklemek için  
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Altında **özellikleri** düğümü için kısayol menüsünü açın **Feature1**ve ardından **olay alıcısı Ekle** özelliği için olay alıcı eklemek için.  
   
-     Bu kod dosyası Feature1 altında ekler. Bu durumda, onu Feature1.EventReceiver.cs veya Feature1.EventReceiver.vb, projenizin geliştirme dilini bağlı olarak adlandırılır.  
+     Bu kod dosyası Feature1 altında ekler. Bu durumda, bu da adlı *Feature1.EventReceiver.cs* veya *Feature1.EventReceiver.vb*projenizin geliştirme dilini bağlı olarak.  
   
 3.  Projenizi yazılmışsa [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], zaten yoksa olay alıcısı en üstte aşağıdaki kodu ekleyin:  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
      [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]  
   
-## <a name="testing-the-feature-event-receiver"></a>Özellik olay alıcısı test etme  
+## <a name="test-the-feature-event-receiver"></a>Özellik olay alıcısı test
  Ardından, test etmek için özellik devre dışı olup olmadığını **FeatureDeactivating** yöntemi duyuru SharePoint Duyurular listesine çıkarır.  
   
 #### <a name="to-test-the-feature-event-receiver"></a>Özellik olay alıcısı sınamak için  
@@ -119,8 +120,7 @@ ms.lasthandoff: 04/16/2018
   
      Duyuru görünür bildirimi **duyuruları** özelliği devre dışı bırakıldıktan sonra listeleyin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
- [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  
+ [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   

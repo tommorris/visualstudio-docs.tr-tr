@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 019c1d4b20f1d7a53fc68ef561d45989e93eee28
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ec4c37c8014fe20b136f01d7170240fc4813d04
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120588"
 ---
-# <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>İzlenecek yol: SharePoint için OData Görüntüleyen bir Silverlight Web Parçası Oluşturma
+# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>İzlenecek yol: SharePoint için OData görüntüleyen bir Silverlight web bölümü oluşturma
   SharePoint 2010 listesi verilerini OData yoluyla kullanıma sunar. SharePoint'te OData hizmeti ListData.svc RESTful hizmeti tarafından uygulanır. Bu kılavuzda Silverlight uygulamasını barındıran bir SharePoint web bölümü oluşturulacağını gösterir. Silverlight uygulaması ListData.svc kullanarak SharePoint duyuru listesi bilgilerini görüntüler. Daha fazla bilgi için bkz: [SharePoint Foundation REST arabirimini](http://go.microsoft.com/fwlink/?LinkId=225999) ve [açık veri Protokolü](http://go.microsoft.com/fwlink/?LinkId=226000).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -33,15 +34,15 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
-##  <a name="creating-a-silverlight-application-and-silverlight-web-part"></a>Silverlight uygulaması ve Silverlight Web parçası oluşturma  
+## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Silverlight uygulaması ve Silverlight web bölümü oluşturma
  İlk olarak, Visual Studio'da bir Silverlight uygulaması oluşturun. Silverlight uygulaması ListData.svc hizmetini kullanarak SharePoint duyuruları listeden verileri alır.  
   
 > [!NOTE]  
 >  Silverlight 4.0 önce hiçbir sürümü, SharePoint listesi verileri başvurmak için gerekli arabirimleri destekler.  
   
-#### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Silverlight uygulaması ile Silverlight web bölümü oluşturmak için  
+#### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Silverlight uygulaması ile Silverlight web bölümü oluşturmak için
   
-1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje** görüntülemek için **yeni proje** iletişim kutusu.  
+1.  Menü çubuğunda seçin **dosya** > **yeni** > **proje** görüntülemek için **yeni proje** iletişim kutusu.  
   
 2.  Genişletme **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
   
@@ -65,10 +66,10 @@ ms.lasthandoff: 04/16/2018
   
      Çözüm iki proje içerir: Silverlight uygulaması ile bir Silverlight web bölümü. Silverlight uygulaması alır ve SharePoint listesi verileri görüntüler ve Silverlight web bölümü, SharePoint'te görüntülemek etkinleştirme Silverlight uygulaması barındırır.  
   
-##  <a name="customizing-the-silverlight-application"></a>Silverlight uygulaması özelleştirme  
+## <a name="customize-the-silverlight-application"></a>Silverlight uygulaması özelleştirme
  Kod ve tasarım öğeleri için Silverlight uygulaması ekleyebilirsiniz.  
   
-#### <a name="to-customize-the-silverlight-application"></a>Silverlight uygulaması özelleştirmek için  
+#### <a name="to-customize-the-silverlight-application"></a>Silverlight uygulaması özelleştirmek için
   
 1.  Bir derleme başvurusu System.Windows.Data için Silverlight uygulaması ekleyin. Daha fazla bilgi için bkz: [nasıl yapılır: başvuru ekleme veya kaldırma Başvurusu Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
@@ -83,9 +84,9 @@ ms.lasthandoff: 04/16/2018
   
 4.  Seçin **Tamam** projesine hizmet Başvurusu Ekle düğmesi ve varsayılan hizmet adı, ServiceReference1 kullanın.  
   
-5.  Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
+5.  Menü çubuğunda seçin **yapı** > **yapı çözümü**.  
   
-6.  Projenin SharePoint hizmetini temel alan yeni bir veri kaynağı ekleyin. Bu, menü çubuğunda, tercih **Görünüm**, **diğer pencereler**, **veri kaynakları**.  
+6.  Projenin SharePoint hizmetini temel alan yeni bir veri kaynağı ekleyin. Bu, menü çubuğunda, tercih **Görünüm** > **diğer pencereler** > **veri kaynakları**.  
   
      **Veri kaynakları** penceresi tüm görevler, bildirimler ve takvim gibi kullanılabilir SharePoint listesi verileri gösterir.  
   
@@ -95,7 +96,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  Kılavuz denetim Silverlight sayfaya sığacak şekilde yeniden boyutlandırın.  
   
-9. MainPage.xaml kod dosyasında (MainPage.xaml.cs Visual C# için) veya Visual Basic MainPage.xaml.vb, şu ad alanı başvurularını ekleyin.  
+9. MainPage.xaml kod dosyasında (*MainPage.xaml.cs* Visual C# için veya *MainPage.xaml.vb* Visual Basic), şu ad alanı başvurularını ekleyin.  
   
     ```vb  
     ' Add the following three Imports statements.  
@@ -192,7 +193,7 @@ ms.lasthandoff: 04/16/2018
     }  
     ```  
        
-## <a name="modifying-the-silverlight-web-part"></a>Silverlight Web bölümünü değiştirme  
+## <a name="modify-the-silverlight-web-part"></a>Silverlight web bölümünü değiştirme
  Silverlight hata ayıklamayı etkinleştirmek için Silverlight web parçası projesinde özelliğini değiştirin.  
   
 #### <a name="to-modify-the-silverlight-web-part"></a>Silverlight web bölümünü değiştirmek için  
@@ -205,12 +206,12 @@ ms.lasthandoff: 04/16/2018
   
 4.  Projeyi kaydedin.  
   
-##  <a name="testing-the-silverlight-web-part"></a>Silverlight Web parçası test etme  
+## <a name="test-the-silverlight-web-part"></a>Silverlight web bölümü test
  Yeni bir Silverlight web bölümü SharePoint, SharePoint listesi verileri düzgün görüntülediğinden emin olmak için test edin.  
   
 #### <a name="to-test-the-silverlight-web-part"></a>Silverlight web bölümü test etmek için  
   
-1.  Derleme ve SharePoint çözüm çalıştırmak için F5 tuşuna seçin.  
+1.  Seçin **F5** anahtarı oluşturun ve SharePoint çözüm çalıştırın.  
   
 2.  SharePoint, üzerinde **Site eylemleri** menüsünde seçin **yeni sayfa**.  
   
@@ -231,8 +232,8 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Etki alanları arasında Silverlight'ta verilere erişirken, Silverlight web uygulamaları yararlanmak için kullanılan güvenlik güvenlik açıklarına karşı korur. Silverlight'ın uzak verilere erişirken sorun yaşarsanız bkz [bir hizmet kullanılabilir etki alanı sınırlar boyunca yapma](http://go.microsoft.com/fwlink/?LinkId=223276).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [SharePoint Çözüm Paketlerini Dağıtma, Yayımlama ve Yükseltme](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
+## <a name="see-also"></a>Ayrıca bkz.
+ [SharePoint Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [Dağıtma, yayımlama ve SharePoint çözüm paketlerini yükseltme](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
   
   

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8d53cad00e3a1faedf07af42966a5cceddc2f33
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: eed72e71cbebc3bec167e23179220dc1c1a1f061
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238397"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118258"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>İzlenecek yol: bir özel ana sayfa ve site sayfasını bir görüntü ile içeri aktarma
   Bu anlatımda bir SharePoint özel ana sayfa ve görüntüye sahip bir site sayfası nasıl içeri aktarılacağı gösterilir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.  
@@ -177,10 +177,10 @@ ms.locfileid: "36238397"
   
 7.  Dağıtılan öğeleri görüntülemek için SharePoint sitesini açın.  
   
- Dosyaları içine aktarmak için alternatif bir yol [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve onlara dağıtmanız SharePoint olan modüllere dosyaları eklemek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Nasıl yapılır: bir ana sayfa veya temayı içeri aktarma](../sharepoint/how-to-import-a-master-page-or-theme.md) ve [çözümde dosyaları eklemeyi modüllerini kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Dosyaları içine aktarmak için alternatif bir yol [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve onlara dağıtmanız SharePoint olan modüllere dosyaları eklemek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Nasıl yapılır: bir ana sayfa veya temayı içeri aktarma](../sharepoint/how-to-import-a-master-page-or-theme.md) ve [çözümde dosyaları eklemeyi modüllerini kullanmanız](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [Mevcut bir SharePoint sitesinden öğeleri içeri aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
- [Web Bölümleri veya Uygulama Sayfaları için Yeniden Kullanılabilir Denetimler Oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
+ [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
   

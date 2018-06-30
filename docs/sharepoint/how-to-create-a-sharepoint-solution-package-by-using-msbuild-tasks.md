@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120414"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Nasıl yapılır: MSBuild Görevlerini Kullanarak bir SharePoint Çözüm Paketi Oluşturma
-  Yapı, temizleme ve geliştirme bilgisayarındaki komut satırı MSBuild görevlerini kullanarak bir SharePoint paketi (.wsp) doğrulama. Bu komutlar, yapı işlemi bir yapı bilgisayarında Team Foundation Server kullanarak otomatik hale getirmek için de kullanabilirsiniz.  
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Nasıl yapılır: MSBuild görevlerini kullanarak bir SharePoint çözüm paketi oluşturma
+  Yapı, temizleme ve SharePoint paketi doğrulama (*.wsp*) geliştirme bilgisayarındaki komut satırı MSBuild görevlerini kullanarak. Bu komutlar, yapı işlemi bir yapı bilgisayarında Team Foundation Server kullanarak otomatik hale getirmek için de kullanabilirsiniz.  
   
-## <a name="building-a-sharepoint-package"></a>Bir SharePoint paketi oluşturma  
+## <a name="build-a-sharepoint-package"></a>Bir SharePoint paketi oluşturma  
   
 #### <a name="to-build-a-sharepoint-package"></a>Bir SharePoint paketi oluşturmak için  
   
-1.  Windows **Başlat** menüsünde seçin **tüm programlar**, **Donatılar**, **komut istemi**.  
+1.  Windows **Başlat** menüsünde seçin **tüm programlar** > **Donatılar** > **komut istemi**.  
   
 2.  SharePoint Proje bulunduğu dizine geçin.  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:Package ListDefinition1.csproj  
     ```  
   
-## <a name="cleaning-a-sharepoint-package"></a>Bir SharePoint Paketi temizleme  
+## <a name="clean-a-sharepoint-package"></a>Bir SharePoint paketi Temizle  
   
 #### <a name="to-clean-a-sharepoint-package"></a>Bir SharePoint paketi temizlemek için  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
   
-## <a name="validating-a-sharepoint-package"></a>Bir SharePoint paketi doğrulama  
+## <a name="validate-a-sharepoint-package"></a>Bir SharePoint paketi doğrulama  
   
 #### <a name="to-validate-a-sharepoint-package"></a>Bir SharePoint paketi doğrulamak için  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
   
-## <a name="setting-properties-in-a-sharepoint-package"></a>Bir SharePoint paket özelliklerini ayarlama  
+## <a name="set-properties-in-a-sharepoint-package"></a>Bir SharePoint paket özelliklerini ayarlama  
   
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Bir SharePoint pakette bir özelliği ayarlamak için  
   
@@ -109,9 +110,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /property:WarningLevel = 2  
     ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
  [Nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Nasıl yapılır: SharePoint Özelliklerine Öğe Ekleme ve Kaldırma](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
-  
+ [Nasıl yapılır: SharePoint özelliklerine öğe ekleyip](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edc9665882caae64e0548a00507022f32f3b2bd5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120434"
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>İzlenecek Yol: Tasarımcı Kullanarak SharePoint için bir Web Bölümü Oluşturma
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>İzlenecek yol: Tasarımcı kullanarak bir web bölümü SharePoint için oluşturma
 
 Bir SharePoint sitesi için web bölümleri oluşturursanız, kullanıcılarınızın doğrudan içerik, görünümü ve davranışı sitedeki sayfaların bir tarayıcı kullanarak değiştirebilirsiniz. Bu kılavuzda SharePoint kullanarak bir web bölümü görsel olarak oluşturmak gösterilmiştir **Visual Web Bölümü** Visual Studio Proje şablonu.
 
@@ -47,13 +48,13 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 - Windows ve SharePoint sürümleri desteklenir. Bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
-## <a name="creating-a-web-part-project"></a>Bir web bölümü projesi oluşturma
+## <a name="create-a-web-part-project"></a>Bir web bölümü projesi oluşturma
 
 İlk olarak kullanarak bir web bölümü projesi oluşturma **Visual Web Bölümü** proje şablonu.
 
 1. Başlat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kullanarak **yönetici olarak çalıştır** seçeneği.
 
-2. Menü çubuğunda seçin **dosya**, **yeni**, **proje**.
+2. Menü çubuğunda seçin **dosya** > **yeni** > **proje**.
 
      **Yeni proje** iletişim kutusu görüntülenir.
 
@@ -73,7 +74,7 @@ Web bölümü denetimlerden ekleyerek tasarım **araç** Visual Web Developer Ta
 
 1. Visual Web Developer designer'ı seçin **tasarım** Tasarım görünümüne geçmek için sekme.
 
-2. Menü çubuğunda seçin **Görünüm**, **araç**.
+2. Menü çubuğunda seçin **Görünüm** > **araç**.
 
 3. İçinde **standart** düğümünün **araç**, seçin **CheckBoxList** denetlemek ve aşağıdaki adımlardan birini gerçekleştirin:
 
@@ -85,7 +86,7 @@ Web bölümü denetimlerden ekleyerek tasarım **araç** Visual Web Developer Ta
 
 5. Tasarımcıda seçin **Button1** düğmesi.
 
-6. Menü çubuğunda seçin **Görünüm**, **Özellikler penceresini**.
+6. Menü çubuğunda seçin **Görünüm** > **Özellikler penceresini**.
 
      **Özellikleri** penceresi açılır.
 
@@ -129,7 +130,7 @@ Takvimler Ana Takvim görünümüne eklemek kullanıcının sağlayan kodu ekley
      [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
      [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]
 
-## <a name="testing-the-web-part"></a>Web bölümü test etme
+## <a name="test-the-web-part"></a>Web bölümü test
 
 Projeyi çalıştırdığınızda, SharePoint sitesini açar. Web bölümü SharePoint Web Bölümü Galerisi'nde otomatik olarak eklenir. Bu projeyi test etmek için aşağıdaki görevleri gerçekleştirmeniz:
 
@@ -139,7 +140,7 @@ Projeyi çalıştırdığınızda, SharePoint sitesini açar. Web bölümü Shar
 
 ### <a name="to-add-events-to-calendar-lists-on-the-site"></a>Olaylar sitedeki Takvim listeleri eklemek için
 
-1. Visual Studio'da F5 tuşuna seçin.
+1. Visual Studio'da, **F5** anahtarı.
 
      SharePoint sitesi açılır ve [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Hızlı Başlatma çubuğu sayfada görünür.
 
@@ -191,7 +192,6 @@ Belirttiğiniz tüm takvimlerdeki olaylar aylık takvim görünümünde görün�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SharePoint için Web Bölümleri Oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Nasıl yapılır: Bir SharePoint Web Bölümü Oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Nasıl Yapılır: Tasarımcı Kullanarak SharePoint Web Bölümü Oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[İzlenecek yol: SharePoint için bir Web Bölümü Oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[SharePoint Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)  
+[Nasıl yapılır: bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[İzlenecek yol: SharePoint için bir web bölümü oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

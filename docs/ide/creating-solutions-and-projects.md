@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571620"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118108"
 ---
 # <a name="create-solutions-and-projects"></a>Projeler ve çözümler oluşturma
 
@@ -43,7 +43,7 @@ Başka bir deyişle, çözümler ve projeler Visual Studio'daki uygulamaları ge
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Bir proje şablonu bir proje oluşturmak için
 
-1. Visual Studio'da yeni bir proje oluşturmak için birden çok yolu vardır. Üzerinde **başlangıç sayfası**, bir proje şablonu adını girin **arama proje şablonları** kutusunda ya da seçin **yeni proje oluştur** açmak için bağlantı **yeni Proje** iletişim kutusu. Ayrıca seçebilirsiniz **dosya** > **yeni** > **proje...**  menüsünde çubuğunu ya da seçin **yeni proje** araç çubuğunda.
+1. Visual Studio'da yeni bir proje oluşturmak için birden çok yolu vardır. Üzerinde **başlangıç sayfası**, bir proje şablonu adını girin **arama proje şablonları** kutusunda ya da seçin **yeni proje oluştur** açmak için bağlantı **yeni Proje** iletişim kutusu. Ayrıca seçebilirsiniz **dosya** > **yeni** > **proje** menüsünde çubuğunu ya da seçin **yeni proje** düğmesi araç çubuğunda.
 
   ![Başlangıç sayfası](./media/vside-newproject1.png)
 
@@ -100,7 +100,7 @@ Projeleri olmayan boş çözümleri de oluşturabilirsiniz. Bu çözüm ve başt
 
 ### <a name="to-create-an-empty-solution"></a>Boş bir çözüm oluşturmak için
 
-1. Menüsünde, **dosya** > **yeni** > **proje...** .
+1. Menüsünde, **dosya** > **yeni** > **proje**.
 
 1. Sol (**şablonları**) bölmesinde seçin **diğer proje türleri** > **Visual Studio çözümleri** genişletilmiş listesinde.
 

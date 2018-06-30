@@ -20,27 +20,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ead81e01022c8f389ad6010c89d0e433b82c542e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 687e82561d49043405691cf4406a2a084c2619a1
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120597"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Nasıl yapılır: Olay Alıcısı Oluşturma
+# <a name="how-to-create-an-event-receiver"></a>Nasıl yapılır: olay alıcısı oluşturma
   Oluşturarak *Olay alıcıları*, bir kullanıcı SharePoint öğeleri listeler gibi veya liste öğesi ile etkileşim sırasında yanıt verebilir. Örneğin, bir kullanıcı takvimi değiştirir veya kişi listesinden bir ad sildiğinde olay alıcı kodda tetiklenebilir. Bu konuda izleyerek bir liste örneği için olay alıcı eklemek nasıl öğrenebilirsiniz.  
   
- Bu adımları tamamlamak için yüklemiş olmalısınız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Bu örnek bir SharePoint Proje gerektirdiğinden, ayrıca konudaki yordamı tamamlamış olmalıdır [izlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
+ Bu adımları tamamlamak için yüklemiş olmalısınız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [geliştirme SharePoint çözümleri için gereksinimleri](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Bu örnek bir SharePoint Proje gerektirdiğinden, ayrıca konudaki yordamı tamamlamış olmalıdır [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
   
 ## <a name="adding-an-event-receiver"></a>Olay alıcısı ekleme  
- Oluşturduğunuz proje [izlenecek yol: SharePoint için Site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) özel site sütunları, özel bir listesi ve bir içerik türü içerir. Aşağıdaki yordamda, bu proje bir basit olay işleyicisi (olay alıcı) listeleri gibi SharePoint öğelerinde meydana gelen olayları nasıl ele alınacağını göstermek için bir liste örneği için eklenerek.  
+ Oluşturduğunuz proje [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) özel site sütunları, özel bir listesi ve bir içerik türü içerir. Aşağıdaki yordamda, bu proje bir basit olay işleyicisi (olay alıcı) listeleri gibi SharePoint öğelerinde meydana gelen olayları nasıl ele alınacağını göstermek için bir liste örneği için eklenerek.  
   
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Liste örneği için olay alıcı eklemek için  
   
-1.  Oluşturduğunuz Proje Aç [izlenecek yol: bir Site sütunu, içerik türü ve SharePoint listesi oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
+1.  Oluşturduğunuz Proje Aç [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
   
 2.  İçinde **Çözüm Gezgini**, adlı SharePoint projesi düğümünü seçin **Clinic**.  
   
-3.  Menü çubuğunda seçin **proje**, **Yeni Öğe Ekle**.  
+3.  Menü çubuğunda seçin **proje** > **Yeni Öğe Ekle**.  
   
 4.  Ya da altında **Visual C#** veya **Visual Basic**, genişletin **SharePoint** düğümünü ve ardından **2010** öğesi.  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
      Yeni olay alıcısı için kod dosyası adlı tek bir yöntem içerir `ItemAdded`. Sonraki adımda, her kişi Scott kahverengi varsayılan olarak adlandırılır böylece bu yöntem için kod ekleyeceksiniz.  
   
-9. Varolan `ItemAdded` yöntemi aşağıdaki kod ve F5 tuşuna seçin:  
+9. Varolan `ItemAdded` yöntemi aşağıdaki kod ve ardından **F5** anahtarı:  
   
      [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
      [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]  
@@ -71,7 +72,6 @@ ms.lasthandoff: 04/16/2018
   
      Seçtiğiniz sonra **kaydetmek** düğmesini **hasta adı** sütun Scott kahverengi adına otomatik olarak güncelleştirir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>Ayrıca bkz.
+ [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
   

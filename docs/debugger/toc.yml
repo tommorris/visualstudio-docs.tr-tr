@@ -826,3 +826,5 @@
   items:
     - name: Visual Studio’da hata ayıklayıcısı yenilikleri
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: Başlayanlar için hata ayıklama
+      href: debugging-absolute-beginners.md

@@ -84,6 +84,8 @@
               items:
                 - name: 'İzlenecek Yol: Satır İçi Göre Oluşturma'
                   href: walkthrough-creating-an-inline-task.md
+            - name: RoslynCodeTaskFactory ile MSBuild Satır İçi Görevleri
+              href: msbuild-roslyncodetaskfactory.md
         - name: Özellikleri ve Öğeleri Karşılaştırma
           href: comparing-properties-and-items.md
         - name: MSBuild Özel Karakterleri
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Silme Görevi
               href: delete-task.md
+            - name: DownloadFile Görevi
+              href: downloadfile-task.md
             - name: Hata Görevi
               href: error-task.md
             - name: Yürütme Görevi
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: UnregisterAssembly Görevi
               href: unregisterassembly-task.md
+            - name: Unzip Görevi
+              href: unzip-task.md
             - name: UpdateManifest Görevi
               href: updatemanifest-task.md
             - name: Vbc Görevi
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: XslTransformation Görevi
               href: xsltransformation-task.md
+            - name: ZipDirectory Görevi
+              href: zipdirectory-task.md
         - name: MSBuild Koşulları
           href: msbuild-conditions.md
         - name: MSBuild Koşullu Yapıları

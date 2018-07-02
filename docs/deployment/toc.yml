@@ -34,10 +34,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Yayımlama ayarlarını içeri aktarma ve IIS’ye dağıtma
           href: tutorial-import-publish-settings-iis.md
+        - name: Web Dağıtımı kullanarak IIS’ye dağıtma
+          href: deploy-iis-with-web-deploy.md
         - name: Git ile Azure’a sürekli ASP.NET Core dağıtımı
           href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
-        - name: IIS’ye ASP.NET dağıtma
-          href: /iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+        - name: Visual Studio Kubernetes araçları ile Kubernetes’te yayımlama
+          href: tutorial-kubernetes-tools.md
     - name: Yerel
       items:
         - name: Visual C++ üzerinde Dağıtım...

@@ -85,5 +85,5 @@
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
 - name: Kaynaklar
   items:
-    - name: Git kullanmayı öğrenin
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: Git nedir
+      href: /azure/devops/git/what-is-git

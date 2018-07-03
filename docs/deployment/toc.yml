@@ -8,12 +8,12 @@
   items:
     - name: Dağıtıma ilk bakış
       href: deploying-applications-services-and-components.md
-    - name: Yerel klasöre dağıtma
-      href: quickstart-deploy-to-local-folder.md
+    - name: Azure App Service'e dağıtma
+      href: quickstart-deploy-to-azure.md
     - name: Web sitesine dağıtma
       href: quickstart-deploy-to-a-web-site.md
-    - name: Azure’a dağıtma
-      href: quickstart-deploy-to-azure.md
+    - name: Yerel klasöre dağıtma
+      href: quickstart-deploy-to-local-folder.md
 - name: Öğreticiler
   items:
     - name: .NET

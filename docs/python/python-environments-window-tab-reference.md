@@ -1,6 +1,6 @@
 ---
 title: Python ortamları penceresi başvurusu
-description: Visual Studio'da Python ortamları penceresinde görünür sekmelerin her birinde ayrıntıları.
+description: Her Visual Studio'da Python ortamları penceresinde görünen sekmeler ayrıntıları.
 ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -12,113 +12,113 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "34572130"
 ---
-# <a name="python-environments-window-tabs-reference"></a>Python ortamları penceresinde Sekme Başvurusu
+# <a name="python-environments-window-tabs-reference"></a>Python ortamları penceresi Sekme Başvurusu
 
 Açmak için **Python ortamları** penceresi:
 
-- Seçin **Görünüm > Diğer Pencereler > Python ortamları** menü komutu.
-- Sağ **Python ortamları** düğümü seçip Çözüm Gezgini proje için **görünümü tüm Python ortamları**
+- Seçin **Görünüm > diğer Windows > Python ortamları** menü komutu.
+- Sağ **Python ortamları** seçip Çözüm Gezgini'nde bir proje düğümü **tüm Python ortamları görüntüleme**
 
-Genişletirseniz **Python ortamları** yetecek kadar geniş penceresinde, bu seçenekleri ile çalışmak daha kolay bulabilirsiniz sekmeleri olarak gösterilir. Daha anlaşılır olması için bu makaledeki sekmeleri genişletilmiş görünümünde gösterilir.
+Genişletirseniz **Python ortamları** yetecek kadar geniş penceresinde bu seçenekler ile çalışmak daha kullanışlı bulabilirsiniz sekmeler olarak gösterilir. Daha anlaşılır olması için bu makaledeki sekmeleri Genişletilmiş görünümde gösterilir.
 
-![Python ortamları genişletilmiş penceresi görünümü](media/environments-expanded-view.png)
+![Python ortamları penceresi Genişletilmiş Görünümü](media/environments-expanded-view.png)
 
 ## <a name="overview-tab"></a>Genel Bakış sekmesi
 
-Temel bilgileri ve komutlar için ortamı sağlar:
+Ortam için temel bilgileri ve komutları sağlar:
 
 ![Python ortamları genel bakış sekmesi](media/environments-overview-tab.png)
 
 | Komut | Açıklama |
 | --- | --- |
-| Bu ortam yeni projelere yönelik varsayılan yap | Visual Studio neden olabilecek etkin ortam ayarlar (2017 sürüm 15,5 ve önceki sürümlerde) IntelliSense veritabanı yüklenirken kısaca vermemesine için. Birçok paketleriyle ortamlar için artık vermeyen olabilir. |
-| Dağıtıcı Web sitesini ziyaret edin | Python dağıtımı tarafından sağlanan URL'yi bir tarayıcı açar. Python 3.x, örneğin, python.org için gider. |
-| Açık etkileşimli penceresi | Açılır [etkileşimli (REPL) pencere](python-interactive-repl-in-visual-studio.md) Visual Studio içinde bu ortam için herhangi bir uygulama [başlatma komut dosyaları (aşağıya bakın)](#startup-scripts). |
-| Etkileşimli betikleri keşfedin | Bkz: [başlatma komut dosyaları](#startup-scripts). |
-| IPython etkileşimli mod kullanın | Ayarlandığında, varsayılan olarak IPython ile etkileşimli penceresi açılır. Bu etkin satır içi hem de Genişletilmiş IPython sözdizimi gibi çizer `name?` yardımını görüntülemek için ve `!command` Kabuk komutları için. Bu seçenek, bir Anaconda dağıtım olarak kullanarak ek paketleri gerektirdiğinde önerilir. Daha fazla bilgi için bkz: [kullanarak IPython etkileşimli penceresinde](interactive-repl-ipython.md). |
-| PowerShell Aç | Yorumlayıcı bir PowerShell komut penceresinde başlatır. |
-| (Klasör ve program bağlantıları) | Ortam yükleme klasörü, Python.exe'yi yorumlayıcı ve pythonw.exe yorumlayıcı hızlı erişim sağlar. Windows Gezgini'nde ilk açılır, sonraki iki konsol penceresi açın. |
+| Bu ortama yeni projeler için varsayılan yapın. | Visual Studio neden olabilecek etkin ortam ayarlar (2017 sürüm 15.5 ve öncesi) IntelliSense veritabanı yüklenirken kısa bir süreliğine duyuracağı olacak. Birçok paketleriyle ortamları daha uzun süre duyuracağı olabilir. |
+| Dağıtıcı Web sitesini ziyaret edin | Python dağıtım tarafından sağlanan URL bir tarayıcı açar. Python 3.x, örneğin, için python.org gider. |
+| Açık etkileşimli penceresi | Açılır [etkileşimli (REPL) penceresi](python-interactive-repl-in-visual-studio.md) Visual Studio'daki bu ortam için tüm uygulama [başlatma komut dosyaları (aşağıya bakın)](#startup-scripts). |
+| Etkileşimli betiklerini keşfedin | Bkz: [başlatma komut dosyaları](#startup-scripts). |
+| Ipython etkileşimli modu kullanın | Ayarlandığında, varsayılan olarak Ipython ile etkileşimli penceresi açılır. Bu etkin satır içi yanı sıra genişletilmiş Ipython sözdizimi gibi çizim `name?` yardımını görüntülemek için ve `!command` Kabuk komutları için. Bir Anaconda dağıtım olarak kullanarak ek paketler gerektirdiğinde bu seçeneği önerilir. Daha fazla bilgi için [kullanarak Ipython etkileşimli pencerede](interactive-repl-ipython.md). |
+| PowerShell ile Aç | Bir PowerShell komut penceresinde yorumlayıcı başlatır. |
+| (Klasör ve program bağlantılar) | Ortamın yükleme klasörü, python.exe yorumlayıcı ve pythonw.exe yorumlayıcı hızlı erişim sağlar. Windows Gezgini'nde ilk açılır, sonraki iki konsol penceresi açın. |
 
 ### <a name="startup-scripts"></a>Başlatma komut dosyaları
 
-Günlük iş akışınızda etkileşimli pencerelerini kullanma gibi büyük olasılıkla düzenli olarak kullandığınız yardımcı işlevleri geliştirin. Örneğin, bir DataFrame Excel'de açılır bir işlev oluşturun ve böylece her zaman etkileşimli pencerede kullanılabilir bu kodu bir başlangıç komut dosyası olarak kaydedin.
+Etkileşimli pencere, gündelik iş akışınızı kullandıkça, büyük olasılıkla düzenli olarak kullandığınız yardımcı işlevleri geliştirin. Örneğin, bir veri çerçevesi Excel'de açılır bir işlev oluşturma ve her zaman etkileşimli pencerede kullanılabilir, böylece bu kod bir başlangıç dosyası olarak kaydedin.
 
-Başlatma komut dosyaları içeri aktarmalar, işlev tanımları ve tam anlamıyla başka bir şey de dahil olmak üzere etkileşimli pencere yükler ve otomatik olarak çalıştırılan kodlar içerir. Bu tür komut dosyaları iki yolla başvurulur:
+Başlatma komut dosyaları içeri aktarmalar, işlev tanımları ve tam anlamıyla diğer her şey dahil olmak üzere etkileşimli pencere yükler ve otomatik olarak çalışan kodu içerir. Bu komut iki yolla başvurulur:
 
-1. Bir ortam yüklediğinizde Visual Studio bir klasör oluşturur `Documents\Visual Studio 2017\Python Scripts\<environment>` nerede &lt;ortam&gt; ortamı adıyla eşleşen. Ortama özgü klasörüyle kolayca gidebilirsiniz **etkileşimli betikleri keşfedin** komutu. Bu ortam için etkileşimli pencere başlattığınızda yükler ve ne olursa olsun çalıştırır `.py` dosyaları burada alfabetik sırada bulunamadı.
+1. Bir ortam yüklediğinizde Visual Studio, bir klasör oluşturur. `Documents\Visual Studio 2017\Python Scripts\<environment>` burada &lt;ortam&gt; ortam adıyla aynıdır. Ortama özgü klasöre kolayca gezinebilirsiniz **etkileşimli betiklerini keşfedin** komutu. Bu ortam için etkileşimli pencereye başlattığınızda, yükler ve her şeyi çalıştırır `.py` dosyaları alfabetik sırayla burada bulunur.
 
-1. **Komut dosyaları** denetim **Araçlar > Seçenekler > Python araçları > Etkileşimli Windows** sekmesini (bkz [etkileşimli windows seçenekleri](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) ek bir belirtmek için tasarlanmıştır yüklenen ve tüm ortamlarda çalıştırmak başlatma komut dosyaları için bir klasör. Ancak, bu özellik şu anda çalışmıyor.
+1. **Betikleri** denetim **araçları > Seçenekler > Python araçları > Etkileşimli bir Windows** sekmesini (bkz [etkileşimli windows seçenekleri](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) bir ek belirtmek için tasarlanmıştır yüklenen ve tüm ortamlarda çalıştırabilirsiniz başlatma komut dosyaları klasörü. Ancak, bu özellik şu anda çalışmıyor.
 
 ## <a name="configure-tab"></a>Yapılandır sekmesi
 
-Mevcut ise, aşağıdaki tabloda açıklandığı gibi ayrıntıları içerir. Bu sekme yoksa, Visual Studio tüm ayrıntıları otomatik olarak yönetme anlamına gelir.
+Varsa, aşağıdaki tabloda açıklandığı gibi ayrıntıları içerir. Bu sekme yoksa, Visual Studio otomatik olarak tüm ayrıntıları yönetiyor anlamına gelir.
 
 ![Python ortamları Yapılandır sekmesi](media/environments-configure-tab.png)
 
 | Alan | Açıklama |
 | --- | --- |
-| **Açıklama** | Ortam sağlamak için adı. |
-| **Önek yolu** | Yorumlayıcı temel klasör konumu. Bu değer doldurma ve tıklatarak **otomatik algıla**, Visual Studio sizin için diğer alanları doldurun dener. |
-| **Yorumlayıcı yolu** | Yolun yürütülebilir yorumlayıcı genellikle önekini yolu ve ardından `python.exe` |
-| **Pencereli yorumlayıcı** | Önek yolu ve ardından konsol içi yürütülebilir dosya yolu, genellikle `pythonw.exe`. |
-| **Kitaplık yolu**<br/>(varsa) | Standart Kitaplığı kökündeki belirtir ancak Visual Studio yorumlayıcı istek daha doğru bir yolu mümkün ise, bu değer yoksayılabilir. |
-| **Dil sürümü** | Aşağı açılır menüden seçilen. |
-| **Mimari** | Normal olarak algılandı ve otomatik olarak doldurulur, aksi halde 32 bit veya 64-bit belirtir. |
-| **PATH ortam değişkeni** | Yorumlayıcı arama yolları bulmak için kullandığı ortam değişkeni. Visual Studio Proje arama yolları içeren Python başlatırken değişkenin değerini değiştirir. Bu özellik genellikle ayarlanmalı `PYTHONPATH`, ancak bazı yorumlayıcılar farklı bir değer kullanın. |
+| **Açıklama** | Ortamı sağlamak için adı. |
+| **Ön ek yolu** | Yorumlayıcı temel klasörün konumu. Bu değer doldurma ve tıklatarak **otomatik algıla**, Visual Studio sizin için diğer alanları doldurun dener. |
+| **Cesta k interpretu** | Yolun yürütülebilir Yorumlayıcı, genellikle ön ek yolu ardından `python.exe` |
+| **Pencereli yorumlayıcı** | Ön ek yolu ve ardından konsol içi yürütülebilir dosya yolu, genellikle `pythonw.exe`. |
+| **Kitaplık yolu**<br/>(varsa) | Standart Kitaplığı'nın kökünü belirtir ancak bu değer, Visual Studio yorumlayıcı istek daha doğru bir yolu erişebiliyorsa yoksayılabilir. |
+| **Dil sürümü** | Aşağı açılan menüden seçim. |
+| **Mimari** | Normal olarak algılandı ve otomatik olarak doldurulur, aksi halde, 32 bit veya 64-bit belirtir. |
+| **PATH ortam değişkeni** | Ortam değişkenini yorumlayıcı arama yollarını bulmak için kullanır. Visual Studio, projenin arama yollarını içeren Python başlatırken değişkenin değerini değiştirir. Bu özellik genellikle ayarlanmalıdır `PYTHONPATH`, ancak bazı yorumlayıcılarını farklı bir değer kullanın. |
 
 ## <a name="packages-tab"></a>Paketleri sekmesi
 
-*Ayrıca "PIP" önceki sürümlerde etiketli.*
+*Ayrıca önceki sürümlerinde "pip" etiketli.*
 
-Ayrıca aramak ve yenilerini (bağımlılıkları dahil) yüklemek sağlayarak PIP kullanarak ortamda yüklü paketleri yönetir. Visual Studio 2017 15.7 ve sonraki sürümleri, içinde bir **paketleri (Conda)** sekmesi görüntülenir, bunun yerine conda Paket Yöneticisi'ni kullanır. (Bu seçeneği görmüyorsanız, seçeneğini belirleyerek **Araçları** > **seçenekleri** > **Python** > **Experimental**   >  **Conda Paket Yöneticisi'ni kullanın (PIP) yerine kullanılabilir olduğunda** ve Visual Studio'yu yeniden başlatın.)
+Pip, ayrıca arayın ve yenilerini (tüm bağımlılıklar dahil olmak üzere) yükleme kullanan bir ortamda yüklü paketleri yönetir. Visual Studio 2017 sürüm 15.7 ve üzeri, bir **paketleri (Conda)** sekmesi görüntülenir, bunun yerine conda Paket Yöneticisi'ni kullanır. (Bu seçenek görmüyorsanız, seçenek kümesi **Araçları** > **seçenekleri** > **Python** > **Deneysel**   >  **Conda Paket Yöneticisi'ni (PIP) yerine kullanılabilir olduğunda** ve Visual Studio'yu yeniden başlatın.)
 
-Yüklü olan paketleri (yukarı ok) güncelleştirin ve (bir daire içinde X) kaldırmak için denetimleri ile paket görüntülenir:
+Paket zaten yüklü olan paketleri denetimleri (yukarı ok) güncelleştirme ve kaldırma (daire içinde X) ile görünür:
 
 ![Python ortamları Paketleri sekmesi](media/environments-pip-tab-controls.png)
 
-Bir arama terimi Pypı yüklü paketleri yanı sıra yüklü olan paketlerin listesini girme.
+Bir arama terimi filtreleri Pypı yüklü paketleri yanı sıra yüklü paketleri listesi giriliyor.
 
-![Bir arama "num" Python ortamları Paketleri sekmesi](media/environments-pip-tab.png)
+![Python ortamları paketleri sekmesinde "num" bir arama özelliğiyle](media/environments-pip-tab.png)
 
-Yukarıdaki resimde gördüğünüz gibi arama sonuçlarının arama terimiyle eşleşen paketleri sayısını gösterir; ilk listesinde, ancak çalıştırılacak komutu giriştir `pip install <name>` doğrudan. Üzerinde iseniz **paketleri (Conda)** sekmesinde, bunun yerine bkz `conda install <name>`:
+Yukarıdaki görüntüde görebileceğiniz gibi arama sonuçlarının arama terimiyle eşleşen paket sayısı Göster; İlk listede, ancak bir komutu çalıştırmak için giriştir `pip install <name>` doğrudan. Üzerinde kullanıyorsanız **paketleri (Conda)** sekmesinde, bunun yerine bkz `conda install <name>`:
 
-![Bir conda gösteren Conda paketleri sekmesinde komutu yükleyin](media/environments-conda-tab-install.png)
+![Yükleme komutunu bir conda gösteren Conda Paketleri sekmesi](media/environments-conda-tab-install.png)
 
-Her iki durumda da bağımsız değişkenler arama kutusuna paketin adı sonra ekleyerek yüklemeyi özelleştirebilirsiniz. Bağımsız değişkenler eklediğinizde gösterir arama sonuçlarının `pip install` veya `conda install` arama kutusuna içeriğine göre ardından:
+Her iki durumda da, yükleme paket adından sonra arama kutusuna bağımsız değişken ekleyerek özelleştirebilirsiniz. Bağımsız değişkenler eklediğinizde gösterir arama sonuçlarının `pip install` veya `conda install` arama kutusuna içeriğine göre ve ardından:
 
-![PIP ve conda yükleme komutları bağımsız değişkenleri kullanma](media/environments-pip-tab-arguments.png)
+![Pip ve conda yükleme komutları bağımsız değişkenleri kullanma](media/environments-pip-tab-arguments.png)
 
-Bir paket yükleme ortamı içindeki alt klasörleri oluşturur `Lib` klasör dosya sisteminde. Varsa, örneğin, Python 3.6 yüklü `c:\Python36`, içinde yüklü paketlerini `c:\Python36\Lib`; yüklü Anaconda3 varsa `c:\Program Files\Anaconda3` paketleri yüklenmiş sonra `c:\Program Files\Anaconda3\Lib`.
+Bir paket yükleme oluşturur ortamın içindeki `Lib` dosya sisteminde klasör. Varsa, örneğin, Python 3.6 yüklü `c:\Python36`, içinde yüklü paketleri `c:\Python36\Lib`; yüklü Anaconda3 varsa `c:\Program Files\Anaconda3` paketleri yüklenmiş sonra `c:\Program Files\Anaconda3\Lib`.
 
-### <a name="granting-administrator-privileges-for-package-install"></a>Paket için izni veriliyor yönetici ayrıcalıkları yükleyin
+### <a name="granting-administrator-privileges-for-package-install"></a>Paket için ekibi tarafından verilmesinin yönetici ayrıcalıkları yükleyin
 
-Paketleri korumalı bir dosya sistemi bölümünde gibi bulunan bir ortama yüklerken `c:\Program Files\Anaconda3\Lib`, Visual Studio çalıştırmalısınız `pip install` yükseltilmiş paket alt klasörleri oluşturmak izin vermek için. Yükseltme gerekli olduğunda, Visual Studio "Yönetici ayrıcalıkları yüklemek, güncelleştirme paketleri veya bu ortam için kaldırma için gerekli" istemini görüntüler:
+Paketleri gibi dosya sistemi, korumalı bir alanda bulunan bir ortama yüklerken `c:\Program Files\Anaconda3\Lib`, Visual Studio çalıştırmanız gerekir `pip install` paket alt klasörler oluşturmak üzere izin vermek için yükseltilmiş. Yükseltme gerekli olduğunda, Visual Studio'yu "Yönetici ayrıcalıkları yüklemek, güncelleştirmek ya da bu ortam için paketleri kaldırmak için gerekli olabilecek" istemi görüntüler:
 
-![İsteminin paket yükleme için](media/environments-pip-elevate.png)
+![Paket yüklemesi için yükseltme istemi](media/environments-pip-elevate.png)
 
-**Şimdi Yükselt** konu herhangi bir işletim sistemi izinlerini de ister. tek bir işlem için PIP için yönetimsel ayrıcalıklar verir. Seçme **yönetici ayrıcalıkları olmadan devam** yükleme paketi, ancak klasörleri ile çıkış gibi oluşturmaya çalışırken PIP başarısız denemeleri "hata: oluşturulamadı ' C:\Program Files\Anaconda3\Lib\site-packages\ PNG.PY': izni reddedildi. "
+**Şimdi Yükselt** konu herhangi bir işletim sistemi için izinleri de ister. tek bir işlem için pip için yönetici ayrıcalıkları verir. Seçme **yönetici ayrıcalıkları olmadan devam** girişimleri paketini yükleme ancak klasörleri gibi çıkış oluşturmaya çalışırken pip başarısız "hatası: değil oluşturabilirsiniz ' C:\Program Files\Anaconda3\Lib\site-packages\ PNG.PY': izin reddedildi. "
 
-Seçme **her zaman yüklerken veya paketlerini kaldırma kullanımı ile yükseltme** iletişim ortam için söz konusu görüntülenmesini engeller. Yeniden görüntülenmesini iletişim sağlamak için şu adrese gidin **Araçlar > Seçenekler > Python araçları > Genel** ve düğmesini seçin **tüm kalıcı olarak gizli iletişim kutularını Sıfırla**.
+Seçme **her zaman yüklerken veya paketlerini kaldırma yükseltmesine** iletişim ortamı için söz konusu görüntülenmesini engeller. İletişim kutusunu yeniden görünür hale getirmek için Git **Araçlar > Seçenekler > Python araçları > Genel** ve düğmeyi seçin **tüm kalıcı olarak gizli iletişim kutuları sıfırlama**.
 
-Aynı sekmesi seçenekleri olduğunu, ayrıca seçebilirsiniz **her zaman PIP yönetici olarak çalıştır** iletişim kutusu tüm ortamlar için gizlemek için. Bkz: [seçenekler - Genel sekmesi](python-support-options-and-settings-in-visual-studio.md#general-options).
+Aynı sekmesi seçenekleri içeren de seçebilirsiniz **her zaman pip yönetici olarak çalıştır** tüm ortamlar için iletişim başlatmasını bastırmak için. Bkz: [seçenekleri - Genel sekmesi](python-support-options-and-settings-in-visual-studio.md#general-options).
 
-### <a name="security-restrictions-with-older-versions-of-python"></a>Python eski sürümleriyle birlikte güvenlik kısıtlamaları
+### <a name="security-restrictions-with-older-versions-of-python"></a>Python'ın eski sürümleriyle birlikte güvenlik kısıtlamaları
 
-3.1 ve 3.2, Python 2.6 kullanırken, Visual Studio "nedeniyle"güvenlik internet'ten yükleme kısıtlamaları, Python bu sürümünde çalışmayabilir uyarıyı gösterir:
+3.1 ve 3.2, Python 2.6 kullanırken Visual Studio "nedeniyle güvenlik kısıtlamaları, internet'ten yükleme Python'ın bu sürümünde çalışmayabilir" uyarısı gösterilir:
 
-![PIP hakkında ileti kısıtlamaları Python eski sürümünü yükleyin](media/environments-old-version-restriction.png)
+![Python eski sürümü yükleme kısıtlamaları iletisi pip hakkında](media/environments-old-version-restriction.png)
 
-Uyarı, Python, bu eski sürümleriyle nedeni `pip install` içermiyor. paket kaynağındaki paketleri yüklemek için gerekli olan desteği için Aktarım güvenlik katmanı (TLS) 1.2, pypi.org. Özel Python derlemeleri destekleyebilir TLS 1.2; Bu durumda `pip install` çalışabilir.
+Uyarıya neden olan Python, bu eski sürümleriyle `pip install` desteği için Aktarım güvenliği Katmanı (TLS) 1.2, paket kaynağından paketleri yüklemek için gerekli olan içermiyor pypi.org. Özel bir Python yapılar destekleyebilir TLS 1.2 durumda `pip install` işe yarayabilir.
 
-Uygun indirmek mümkün olabilir `get-pip.py` bir paket için [bootstrap.pypa.io](https://bootstrap.pypa.io/), el ile bir paketten karşıdan [pypi.org](https://pypi.org/)ve ardından bu yerel kopyadan paketini yükleyin.
+Uygun olabilir `get-pip.py` bir paket için [bootstrap.pypa.io](https://bootstrap.pypa.io/), el ile paket indirme [pypi.org](https://pypi.org/)ve ardından bu yerel bir kopyasından paketini yükleyin.
 
-, Ancak yalnızca Python 2.7 veya 3.3 durum uyarısı görünmez + yükseltmeniz önerilir.
+Ancak yalnızca Python 2.7 veya 3.3 durumu uyarısı görünmez + yükseltmek için önerilir.
 
 ## <a name="intellisense-tab"></a>IntelliSense sekmesi
 
@@ -126,16 +126,16 @@ IntelliSense tamamlanma veritabanı geçerli durumunu gösterir:
 
 ![Python ortamları IntelliSense sekmesi](media/environments-intellisense-tab.png)
 
-- İçinde **Visual Studio 2017 sürüm 15,5** ve önceki sürümleri, bu kitaplık için derlendiği veritabanı IntelliSense tamamlamalar bağlıdır. Bir kitaplık yüklendiğinde, ancak biraz zaman alabilir ve kod yazmaya başladığınızda tam olmayabilir veritabanınızı oluşturmaya arka planda gerçekleştirilir.
-- **Visual Studio 2017 sürüm 15,6** ve daha sonra veritabanı üzerinde varsayılan olarak dayanmayan tamamlamalar sağlamak için daha hızlı bir yöntem kullanır. Bu nedenle sekmesini etiketlenir **IntelliSense [veritabanı devre dışı]**. Veritabanı seçeneğini temizleyerek etkinleştirebilirsiniz **Araçları** > **seçenekleri** > **Python**  >   **Deneysel** > **yeni stil IntelliSense kullanan ortamlar için**.
+- İçinde **Visual Studio 2017 sürüm 15.5** ve bu kitaplık için derlenmiş olan bir veritabanını daha önce IntelliSense tamamlamaları bağlıdır. Veritabanı oluşturma arka planda gerçekleştirilir, bu kitaplığa yüklendiğinde, ancak biraz zaman alabilir ve kod yazmaya başladığınızda tam olmayabilir.
+- **Visual Studio 2017 sürüm 15.6** ve daha sonra veritabanı üzerinde varsayılan olarak bağlı olmayan tamamlamaları sağlamak için daha hızlı bir yöntem kullanır. Bu nedenle sekme olarak etiketlenmiş **IntelliSense [veritabanı devre dışı]**. Veritabanı seçeneğini temizleyerek etkinleştirebilirsiniz **Araçları** > **seçenekleri** > **Python**  >   **Deneysel** > **ortamları için yeni stil IntelliSense kullanma**.
 
-Visual Studio yeni bir ortam algılar (veya bir ekledikten sonra), kitaplık kaynak dosyaları çözümleyerek Veritabanını derlemek otomatik olarak başlar. Bu işlem herhangi bir yere bir saat veya yüklenenler bağlı olarak daha fazla bilgi için bir dakika sürebilir. (Anaconda, örneğin, birçok kitaplıkları ile gelir ve veritabanını derlemek için biraz zaman alır.) Tamamlandıktan sonra size IntelliSense ayrıntılı ve veritabanını yeniden yenileme gerekmez (ile **yenileme DB** düğmesi) daha fazla kitaplık yükleyene kadar.
+Visual Studio yeni bir ortam algılar (veya bir ekledikten sonra), veritabanı, kitaplık kaynak dosyalarını analiz ederek derlemek otomatik olarak başlar. Bu işlem, herhangi bir yere bir saat veya yüklenenler bağlı olarak daha fazla bilgi için bir dakika sürebilir. (Anaconda, örneğin, birçok kitaplıkları ile gelir ve veritabanını derlemek için biraz zaman alır.) Tamamlandıktan sonra size ayrıntılı IntelliSense ve veritabanını yeniden yenileme gerekmez (ile **Yenile DB** düğmesi) daha fazla kitaplıklarını yüklemek kadar.
 
-Kendisi için veri henüz derlenmiş kitaplıkları ile işaretlenmiş bir **!**; bir ortam veritabanı tam, yoksa bir **!** Ayrıca, yanındaki ana ortamı listesinde görüntülenir.
+Kendisi için veriler henüz derlenmiş kitaplıkları ile işaretlenmiş bir **!**; tam bir ortamın veritabanı yoksa bir **!** Ayrıca yanında ana ortam listesinde görünür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da Python ortamları yönetme](managing-python-environments-in-visual-studio.md)
+- [Visual Studio'da Python ortamlarını yönetme](managing-python-environments-in-visual-studio.md)
 - [Proje için yorumlayıcıyı seçme](selecting-a-python-environment-for-a-project.md)
 - [Bağımlılıklar için requirements.txt dosyasını kullanma](managing-required-packages-with-requirements-txt.md)
 - [Arama yolları](search-paths.md)

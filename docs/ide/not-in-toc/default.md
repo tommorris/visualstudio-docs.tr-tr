@@ -1,5 +1,5 @@
 ---
-title: F1 Yardımı için varsayılan sayfa
+title: F1 Yardım için varsayılan sayfası
 ms.date: 02/28/2018
 ms.topic: troubleshooting
 robots: noindex,nofollow
@@ -12,10 +12,10 @@ ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "34335713"
 ---
 # F1 Yardımı
@@ -24,11 +24,11 @@ Aradığınız ne bulamadık gibi görünüyor ve özür dileriz. Lütfen [geli�
 
 ## İmleç konumu
 
-Bir anahtar sözcüğü veya API adı F1 Yardımı arıyorsanız, imleç içinde veya yalnızca sağındaki tuşlarına basarak önce word'ün konumlandırılır emin olun **F1**. Bu halen işe yaramazsa, seçim [yararlı bağlantılar](#useful-links) listesinde ya da bir arama yapmak https://docs.microsoft.com.
+Bir anahtar sözcük veya API adı F1 Yardım arıyorsanız, imleç içinde veya yalnızca tuşlarına basarak önce word'ün sağa konumlandırılmış mutlaka **F1**. Bu halen işe yaramazsa, listeden [faydalı bağlantılar](#useful-links) listesini veya arama yapmak https://docs.microsoft.com.
 
-## Yararlı bağlantılar
+## Faydalı bağlantılar
 
-- Visual Studio hakkında genel bilgi için bkz: [Visual Studio genel bakış](../../ide/visual-studio-ide.md).
+- Visual Studio hakkında genel bilgi için bkz. [Visual Studio genel bakış](../../ide/visual-studio-ide.md).
 - Visual Studio Metin Düzenleyicisi hakkında daha fazla yardım için bkz: [Kod Düzenleyicisi'ni](../../ide/writing-code-in-the-code-and-text-editor.md).
 - C# Yardım için bkz: [C# Kılavuzu](/dotnet/csharp/index).
 - Visual Basic Yardım için bkz: [Visual Basic Kılavuzu](/dotnet/visual-basic/).
@@ -36,6 +36,6 @@ Bir anahtar sözcüğü veya API adı F1 Yardımı arıyorsanız, imleç içinde
 - Python Yardım için bkz: [Visual Studio'da Python](../../python/overview-of-python-tools-for-visual-studio.md).
 - C++ Yardım için bkz: [Visual Studio'da C++](/cpp/visual-cpp-in-visual-studio).
 
-## F1 iyileştirmemize yardımcı olun
+## F1 geliştirmemize yardımcı olun
 
-Lütfen F1 Yardımı deneyimi geliştirmemize yardımcı olun. Bir ürün Yardımı sorununu tıklayarak oturum **ürün geri bildirim verin** düğmeye. Ne zaman bastığınız konusunda yardım için aramaya benzer dahil **F1**, örneğin, hangi simgesi veya imleci tarihi penceresi. Teşekkür ederiz!
+Lütfen F1 Yardım Deneyimini geliştirmemize yardımcı olun. Ürün Yardımı sorunu tıklayarak oturum **ürün geribildirim verin** düğmeye. Ne zaman bastığınız konusunda yardım için aradığınızı dahil **F1**, örneğin, hangi sembol veya penceresi, imlecin bulunduğu üzerinde. Teşekkür ederiz!

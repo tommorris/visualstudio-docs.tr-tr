@@ -12,52 +12,52 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: efc9c9af36e5484728b05db1171bb2e9bc30ba0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91d314d1903598392737d9f72fdfc9fa02239a47
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35676732"
 ---
 # <a name="edit-load-test-scenarios"></a>Yük testi senaryolarını düzenleme
 
-Bir yük testi *senaryo* yük düzeni, test karışımı, tarayıcı karışımı ve ağ karışımı belirtir. Senaryolar, karmaşık, gerçekçi iş yükleri benzetimini yapmak için testleri yapılandırmanıza olanak sağlamak için önemlidir.
+Bir yük testi *senaryo* yük düzeni, test karışımını, tarayıcı karışımı ve ağ karışımını belirtir. Senaryoları, karmaşık, gerçekçi iş yükleri benzetimi yapmak için testleri yapılandırmanıza olanak tanırlar için önemlidir.
 
-Örneğin, kullanılan bir Internet ön uç çok sayıda bağlantı hızları gelen ve farklı tarayıcılar kullanarak eşzamanlı müşteriler yüzlerce tarafından bir e-ticaret sitesi sınama. Aynı sitede ayrıca ürünleri güncelleştirmek ve istatistiklerini görüntülemek için şirket içi çalışanlar tarafından kullanılan bir yönetim işleve sahip olabilir. Bu dahili kullanıcılar, aynı tarayıcı ve yüksek hızlı bir LAN bağlantısı kullanarak site genellikle erişir. Bu iki farklı kullanıcı grupları farklı senaryolarında özelliklerini saklamak isteyeceksiniz. Her senaryo, bir sanal kullanıcı türü içerebilir. Bu durumda, sanal müşterileri temsil edecek bir yük testi senaryosuna yapılabilir ve başka bir senaryo, bir Web sitesinin sanal iç kullanıcıları temsil etmek için yapılabilir.
+Örneğin, kullanılan bir Internet ön uç tarafından eş zamanlı müşterilerin gelen birçok bağlantı hızıyla ve farklı tarayıcılar kullanarak yüzlerce bir e-ticaret sitesini test. Aynı site, ürünleri güncelleştirmek ve istatistikleri görüntülemek için şirket içi çalışanlar tarafından kullanılan bir yönetim işlevi de olabilir. Bu dahili kullanıcılar genellikle aynı tarayıcı ve yüksek hızlı LAN bağlantısı kullanarak siteye erişir. Farklı senaryolarda kullanıcıların bu iki farklı grubunun özelliklerini saklamak isteyeceksiniz. Her senaryo, bir sanal kullanıcı türü içerebilir. Bu durumda, sanal müşterileri temsil edecek bir yük testi senaryosuna yapılabilir ve başka bir senaryo, bir Web sitesinin iç sanal kullanıcılarını temsil etmek için yapılabilir.
 
 ## <a name="scenario-components"></a>Senaryo Bileşenleri
 
-İlk yapılandırma seçenekleri ve bir yük testi oluşturduğunuzda, belirttiğiniz ayarları değiştirilebilir daha sonra Yük Testi Düzenleyicisi'nde. Bir yük testine yeni senaryolar, çalıştırma ayarlarını ve sayaç kümeleri de ekleyebilirsiniz.
+Herhangi bir ilk yapılandırma seçenekleri ve bir yük testi oluşturduğunuzda, belirttiğiniz ayarlar değiştirilebilir daha sonra Yük Testi Düzenleyicisi'nde. Bir yük testine yeni senaryolar ve çalıştırma ayarları sayaç kümeleri de ekleyebilirsiniz.
 
-![Yük testi senaryolarını](../test/media/loadtesteditinscenarios.png)
+![Yük testi senaryoları](../test/media/loadtesteditinscenarios.png)
 
 Senaryoları aşağıdaki bileşenleri içerir:
 
-|||
-|-|-|
 |Terim|Tanım|
-|Tarayıcı karışımı|Sanal kullanıcı Web tarayıcıları çeşitli bir Web sitesine erişim benzetimini yapar.|
-|Yük düzeni|Bir yük testi ve yeni kullanıcılar başladığı oranı sırasında etkin olan sanal kullanıcıların sayısını belirtir. Örneğin: adım, sabit ve hedef tabanlı.|
-|Test karışımı modeli|Bir yük testi senaryosunda belirli bir test çalıştıran sanal kullanıcı olasılığını belirtir. Örneğin: % 20 olasılık TestA çalıştırmak için ve % 80 olasılık. Test karışımı modeli her belirli bir senaryo için hedefini yansıtmalıdır.|
-|Test karışımı|Test karışımı senaryoyu oluşturan Web performansı ve birim testleri seçimi ve bu testlerin dağıtımını ' dir.|
-|Ağ karışımı|Sanal kullanıcıların çeşitli ağ bağlantıları bir Web sitesine erişim benzetimini yapar. Ağ karışımı LAN, kablolu modem ve diğer seçenekleri dahil seçenekleri sunar.|
+|-|-|
+|Tarayıcı karışımı|Sanal kullanıcıların çeşitli Web tarayıcıları bir Web sitesine erişim benzetimini yapar.|
+|Yük düzeni|Bir yük testi ve yeni kullanıcıların başlatılma oranını sırasında etkin olan sanal kullanıcı sayısını belirtir. Örneğin: adım, sabit ve hedef temelli.|
+|Test karışımı modeli|Bir yük testi senaryosunda belirli bir testi çalıştıran sanal kullanıcının olasılığını belirtir. Örneğin: TestA çalıştırmak için % 20 olasılık ve TestB'yi çalıştırmak için % 80 olasılık. Test karışımı modeli her bir senaryo için testinizin hedefini yansıtmalıdır.|
+|Test karışımı|Test karışımı seçimini senaryoyu oluşturan Web başarım ve birim testleri ve bu testlerin dağıtımını ' dir.|
+|Ağ karışımı|Sanal kullanıcıların çeşitli ağ bağlantıları bir Web sitesine erişim benzetimini yapar. Ağ karışımı LAN, kablolu modem ve diğer seçenekleri içeren seçenekler sunar.|
 
-Bir senaryonun yük testi düzenleyicisini kullanarak düzenleyebilirsiniz diğer bazı özellikleri vardır. Daha fazla bilgi için bkz: [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
+Bir senaryo, Yük Testi Düzenleyicisini kullanarak düzenleyebileceğiniz başka birçok özelliğe sahiptir. Daha fazla bilgi için [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
 
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili Konular|
 |-----------|-----------------------|
-|**Yapay insan etkileşimi duraklatır, senaryoda ekleyin:** düşünme sürelerini insanların bir Web sitesi ile etkileşim arasında beklemesine neden olan insan davranışı benzetimi için kullanılır. Web performans testinde istekleri arasında ve bir yük testi senaryosunda test yinelemeleri arasındaki düşünme sürelerini oluşur. Bir yük testinde düşünme sürelerini kullanarak daha kesin yükleme benzetimleri oluşturmada faydalı olabilir.|-   [Web sitesi insan etkileşimi gecikmelerini benzetmek için Düşünme zamanlarını düzenleme](../test/edit-think-times-in-load-test-scenarios.md)|
-|**Senaryonuz için sanal kullanıcı sayısını belirtin:** benzetimli kullanıcı yükünün bir yük testi sırasında nasıl ayarlanacağını belirtmek için yük düzeni özelliklerini yapılandırabilirsiniz. Üç yerleşik yük düzenlerini alma: Sabit, adım ve hedef temelli. Yük düzeni seçin ve yük testi hedeflerinize uygun düzeylerine özelliklerini ayarlayın.|-   [Sanal kullanıcı etkinlikleri modellemek için yük desenlerini düzenleme](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
-|**Senaryoda bir test çalıştıran sanal kullanıcı olasılığını yapılandırın:** bir yük testi senaryosunda belirli bir test çalıştıran sanal kullanıcı olasılığını belirtir test karışımını kullanabilirsiniz. Bu, yük daha gerçekçi benzetimini sağlar. Tek bir iş akışı uygulamalarınız aracılığıyla sahip olmak yerine birkaç iş akışları, son kullanıcıların uygulamalarınızla nasıl etkileşim akışınız olduğu olabilir.|-   [Karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
-|**Web performans veya birim testi bir Yük Testi Senaryosundan ekleyip:** ekleyebilir veya bir yük testi senaryosunda Web performans veya birim testi kaldırın. Bir yük testi her biri bir veya daha fazla Web performans testleri içeren bir veya daha fazla senaryo içerir.|-   [Test Karışımını düzenleme](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
-|**Senaryonuz için istenen ağ karışımı yapılandırın:** ağ karışımını kullanarak, Ağ Yükü yük testi senaryosunda daha gerçekçi benzetimini yapabilirsiniz. Yükleme yerine tek tek ağ türü ağ türlerini heterojen bir karışımını kullanarak oluşturulur. Son kullanıcıların uygulamalarınızla nasıl etkileşim akışınız oluşturun. Bu senaryonun ağ karışımı modeli yansıtmalıdır.|-   [Sanal ağ türlerini belirtme](../test/specify-virtual-network-types-in-a-load-test-scenario.md)|
-|**Senaryonuz için uygun Web tarayıcısı karışımını seçin:** tarayıcı karışımını kullanarak, bir yük testi senaryosunda daha gerçekçi Web yük benzetimini yapabilirsiniz. Yükleme yerine tek tek tarayıcı tarayıcılar heterojen bir karışımını kullanarak oluşturulur. Akışınız uygulamalarınızla kullanılacak tarayıcıların oluşturun.|-   [Web tarayıcısı türlerini belirtme](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
-|**Senaryonuz için test yineleme ayarları yapılandırın:** Yük Testi Düzenleyicisi'ni ve Özellikler penceresini kullanarak test yineleme ayarlarını yapılandırmak için bir yük testi senaryosu düzenleyebilirsiniz. Varsayılan olarak, bir senaryo yok en yüksek test yinelemeleri ile ayarlanır. Yineleme sayısı isteğe bağlı olarak, senaryoda ve bunlar arasında duraklatmak için ne kadar süreyle da yapılandırabilirsiniz.|-   [Senaryolar için test yinelemelerini yapılandırma](../test/configure-test-iterations-in-a-load-test-scenario.md)|
-|**Senaryonuz için gecikme ayarlarını yapılandırın:** Yük Testi Düzenleyicisi'ni ve Özellikler penceresini kullanarak, bir gecikme senaryo bir yük testi başlatmadan önce belirtebilirsiniz. Ne zaman kullanmak isteyebilirsiniz örneği **gecikme başlangıç zamanı** özelliği olan başka bir senaryonun tükettiği öğeleri oluşturmaya başlamak için bir senaryo ihtiyacınız varsa. Bazı verileri doldurmak üretmeye senaryosunu sağlamak üzere tüketim senaryosunu geciktirebilir.|-   [Senaryo Başlatma Gecikmelerini Yapılandırma](../test/configure-scenario-start-delays.md)|
-|**Bir yük testi senaryosunda kullanılacak uzak makineleri belirtin:** bir yük testi oluşturduğunuzda, dahil etmek istediğiniz hangi test aracılarını belirtmek için yük testi senaryonuzun özelliklerini düzenleyebilirsiniz. Daha fazla bilgi için bkz: [Test denetleyicileri ve test aracıları](configure-test-agents-and-controllers-for-load-tests.md).|-   [Nasıl yapılır: kullanılacak Test aracıları belirtme](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
+|**Senaryonuza yapay insan etkileşimi duraklamaları ekleyin:** Düşünme süreleri, insanların Web sitesiyle etkileşimleri ile arasında beklemesine neden olan insan davranışını benzetmekte kullanılır. Düşünme süreleri, bir Web performans testindeki istekleri ve bir yük testi senaryosunda test tekrarları arasında oluşur. Bir yük testinde Düşünme süreleri kullanarak daha kesin yükleme benzetimleri oluşturmak yararlı olabilir.|-   [Web sitesi insan etkileşimi gecikmelerini benzetmek için Düşünme zamanlarını düzenleme](../test/edit-think-times-in-load-test-scenarios.md)|
+|**Senaryonuz için sanal kullanıcı sayısını belirtin:** yük deseni özellikleri benzetimli kullanıcı yükünün yük testi boyunca nasıl ayarlandığını belirlemek için yapılandırabilirsiniz. Üç yerleşik yükleme düzeni Al: Sabit, adım ve hedef temelli. Yük desenini seçin ve yük testi hedefleriniz için uygun düzeylere özellikleri ayarlayın.|-   [Sanal kullanıcı etkinlikleri modellemek için yük desenlerini düzenleme](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
+|**Bu senaryoda bir testi çalıştıran sanal kullanıcı olasılığını yapılandırın:** bir yük testi senaryosunda belirli bir testi çalıştıran sanal kullanıcı olasılığını belirleyen test karışımını kullanabilirsiniz. Bu, yükü daha gerçekçi bir benzetimini sağlar. Uygulamalarınız boyunca yalnızca bir iş akışı sahip olmak yerine, son kullanıcıların uygulamalarınızla nasıl etkileşmeleri hakkında daha yakın bir benzetim olan birkaç iş olabilir.|-   [Karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
+|**Bir Web performans veya birim testi bir yük testi senaryosu ekleyip:** ekleyebilir veya bir yük testi senaryosunda Web performans veya birim testi kaldırın. Bir yük testi, her biri bir veya daha fazla Web performans testleri içeren bir veya daha fazla senaryo içerir.|-   [Test Karışımını düzenleme](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
+|**Senaryonuz için istenilen ağ karışımını yapılandırın:** ağ karışımını kullanarak, bir yük testi senaryosunda daha gerçekçi bir biçimde Ağ Yükü benzetimi. Yükleme, tek tek ağ türü yerine farklı yapıda ağ türlerinin karışımı kullanılarak oluşturulur. Son kullanıcıların uygulamalarınızla nasıl etkileşmeleri hakkında daha yakın bir benzetim oluşturursunuz. Ağ karışımı modeli senaryonun hedeflerini yansıtmalıdır.|-   [Sanal ağ türlerini belirtme](../test/specify-virtual-network-types-in-a-load-test-scenario.md)|
+|**Senaryonuz için uygun Web tarayıcı karışımını seçin:** tarayıcı karışımını kullanarak, bir yük testi senaryosunda daha gerçekçi bir Web yükü benzetimi yapabilir. Yükleme tek tarayıcı yerine türdeş olmayan bir karışımını kullanarak oluşturulur. Uygulamalarınızla kullanılacak tarayıcıların daha yakın bir yaklaşığını oluşturursunuz.|-   [Web tarayıcısı türlerini belirtme](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
+|**Senaryonuz için test yineleme ayarlarını yapılandır:** yükleme testi düzenleyiciyi ve Özellikler penceresini kullanarak test yineleme ayarlarını yapılandırmak için bir yük testi senaryosu düzenleyebilirsiniz. Varsayılan olarak, bir senaryo yok en yüksek test yinelemeleri ile ayarlanır. İsteğe bağlı olarak senaryo ve bunlar arasında beklenecek süreyi en yüksek yineleme sayısı da yapılandırabilirsiniz.|-   [Senaryolar için test yinelemelerini yapılandırma](../test/configure-test-iterations-in-a-load-test-scenario.md)|
+|**Senaryonuz için gecikme ayarlarını yapılandırma:** yükleme testi düzenleyiciyi ve Özellikler penceresini kullanarak, bir gecikme yük testinde bir senaryoyu başlatmadan önce belirtebilirsiniz. Bir örneği olduğunda kullanmak isteyebilirsiniz **başlama zamanını ertele** özelliği olan başka bir senaryonun tükettiği öğeleri oluşturmaya başlamak için bir senaryoya ihtiyaç duyduğunuzda. Üretim senaryosunun bazı verileri doldurmasına etkinleştirmek için tüketim senaryosunu geciktirebilirsiniz.|-   [Senaryo Başlatma Gecikmelerini Yapılandırma](../test/configure-scenario-start-delays.md)|
+|**Bir yük testi senaryosunda kullanılacak uzak makineleri belirtin:** bir yük testi oluşturduktan sonra hangi test aracılarını dahil etmek istediğiniz belirtmek için yük testi senaryonuzun özelliklerini düzenleyebilirsiniz. Daha fazla bilgi için [Test denetleyicileri ve test aracılarını](configure-test-agents-and-controllers-for-load-tests.md).|-   [Nasıl yapılır: kullanılacak Test aracıları belirtme](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Düzenleme yük testleri](../test/edit-load-tests.md)
+- [Yük testlerini düzenleme](../test/edit-load-tests.md)
 - [Yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md)

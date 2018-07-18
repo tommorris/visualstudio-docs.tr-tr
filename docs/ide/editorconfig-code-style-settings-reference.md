@@ -1,5 +1,5 @@
 ---
-title: .NET kuralı ayarları için Visual Studio EditorConfig kodlama
+title: .NET kodlama kuralı ayarlarına için EditorConfig Visual Studio'da
 ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
@@ -18,81 +18,81 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5789f246f004bbe4bc5400a740e9b901173c26c4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 046706cf5e36b9e32d6b102e167a55070fcc4a31
+ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117871"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993947"
 ---
-# <a name="net-coding-convention-settings-for-editorconfig"></a>.NET EditorConfig kuralı ayarlarını kodlama
+# <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
-Visual Studio 2017 içinde tanımlamak ve tutarlı kod stilde korumak, kullanımı ile codebase bir [EditorConfig](../ide/create-portable-custom-editor-options.md) dosya. EditorConfig içeren birkaç çekirdek biçimlendirme özellikleri, gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kuralları ayarları kodlama EditorConfig dosyasını kullanarak da yapılandırılabilir. EditorConfig dosyaları etkinleştirmek veya devre dışı kodlama kuralları tek tek .NET ve bir önem düzeyi zorlanan kuralı istediğiniz derece yapılandırmak için izin verin. EditorConfig temelinizde tutarlılığı zorlamak için nasıl kullanılacağı hakkında daha fazla bilgi için okuma [oluşturma taşınabilir özel düzenleyici seçenekleri](../ide/create-portable-custom-editor-options.md). 
+Visual Studio 2017'de tanımlayabilir ve tutarlı bir kod stili korumak, birlikte kod temeli bir [EditorConfig](../ide/create-portable-custom-editor-options.md) dosya. EditorConfig içeren birkaç temel özellikleri biçimlendirme gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kodlama kuralları ayarları bir EditorConfig dosyasını kullanarak da yapılandırılabilir. EditorConfig dosyaları etkinleştirme veya devre dışı bağımsız .NET kodlama kuralları ve önem derecesi zorunlu kuralı istediğiniz ölçüde yapılandırmak için izin verin. EditorConfig temelinizde tutarlılığı zorlamak için nasıl kullanılacağı hakkında daha fazla bilgi edinmek için [oluşturma taşınabilir özel düzenleyici seçenekleri](../ide/create-portable-custom-editor-options.md).
 
 Bir örnek .editorconfig için bu belgenin sonuna bakın.
 
-Üç desteklenen .NET kodlama kuralı kategoriye ayrılır:
+Üç desteklenen .NET kodlama kuralı kategorisi vardır:
 
 - [Dil kuralları](#language-conventions)
 
-   C# veya Visual Basic Dil ilgili kuralları. Örneğin, kullanarak geçici kuralları belirtebilirsiniz `var` veya açık olduğunda türleri değişkenleri tanımlama veya üye ifadesi bodied tercih ederek.
+   C# veya Visual Basic Dil ilişkin kurallardır. Örneğin, etrafında kullanarak kuralları belirtebilirsiniz `var` veya açık olduğunda türleri değişkenleri tanımlayan veya ifade gövdeli üyeler belgelemeyi.
 
 - [Biçimlendirme kuralları](#formatting-conventions)
 
-   Düzen ve okunmasını kolaylaştırmak için kodunuzu yapısını ilgili kuralları. Örneğin, denetim blokları Allman küme ayraçları veya tercih ederek alanları çevresinde kuralları belirtebilirsiniz.
+   Okunmalarını kolaylaştırmak için kodunuzun yapısı ve düzeni kurallardır. Örneğin, denetim blokları Allman küme ayraçları veya alanları belgelemeyi çevresinde kuralları belirtebilirsiniz.
 
 - [Adlandırma kuralları](../ide/editorconfig-naming-conventions.md)
 
-   Kod öğelerini adlandırma ile ilgili kurallar. Örneğin, belirtebilirsiniz `async` yöntemleri "Zaman uyumsuz" bitmelidir.
+   İlgili kod öğelerini adlandırma kuralları. Örneğin, belirtebilirsiniz `async` yöntemleri "Async" bitmelidir.
 
 ## <a name="language-conventions"></a>Dil kuralları
 
-Dil kuralları için kurallar aşağıdaki biçime sahiptir:
+Dil kuralları için kuralları aşağıdaki biçime sahiptir:
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-Her dil kuralı kural için ya da belirtmeniz gerekir **true** (Bu stili tercih et) veya **false** (Bu stili tercih değil) ve bir **önem**. Önem derecesi bu stili için zorlama düzeyini belirtir.
+Her dil kuralı kuralı için belirtmeli **true** (Bu stil tercih et) veya **false** (Bu stil tercih değil) ve bir **önem derecesi**. Önem derecesi için o stilin zorlama düzeyini belirtir.
 
-Aşağıdaki tabloda olası önem derecesi değerlerini ve etkilerini listeler:
+Olası önem derecesi değerlerini ve bunların etkileri aşağıdaki tabloda listelenmektedir:
 
 Önem Derecesi | Efekt
 :------- | ------
-`none` veya `silent` | Bu kural ihlal edildiğinde herhangi bir şey kullanıcıya gösterme. Kod oluşturma özellikleri kod, ancak bu stilde'ı oluşturun. İle kurallar `none` önem hiçbir zaman görünür *hızlı Eylemler ve yapan yeniden düzenlemeler* menüsü. Çoğu durumda, bu "disabled" veya "göz ardı" olarak kabul edilir.
-`suggestion` | Bu stil kuralı ihlal edildiğinde kullanıcıya öneri olarak göster. İlk iki karakter altında üç gri nokta olarak öneriler görünür.
-`warning` | Bu stil kuralı ihlal edildiğinde derleyici uyarısı gösterir.
-`error` | Bu stil kuralı ihlal edildiğinde derleyici hatası gösterir.
+`none` veya `silent` | Bu kural ihlal edildiğinde herhangi bir şey kullanıcıya göstermez. Kod oluşturma özellikleri ancak bu stilde, kod oluşturur. İle kurallar `none` önem derecesi hiçbir zaman görünür *hızlı Eylemler ve yeniden düzenlemeler* menüsü. Çoğu durumda, bu "yoksayıldı" veya "devre dışı" olarak kabul edilir.
+`suggestion` | Bu stil kuralı ihlal edildiğinde kullanıcıya öneri olarak gösterir. Öneriler, ilk iki karakter altındaki gri üç nokta olarak görünür.
+`warning` | Bu stil kuralı ihlal edildiğinde bir derleyici uyarısı gösterir.
+`error` | Bu stil kuralı ihlal edildiğinde bir derleyici hatası gösterir.
 
-Aşağıdaki liste, izin verilen dil kuralı kuralları gösterir:
+Aşağıdaki listede verilen dil kuralı kuralları gösterir:
 
-- .NET kodu stilini ayarlar
-    - ["This." ve "Me" niteleyicileri](#this_and_me)
-        - DotNet\_stili\_niteliğe\_for_field
-        - DotNet\_stili\_niteliğe\_for_property
-        - DotNet\_stili\_niteliğe\_for_method
-        - DotNet\_stili\_niteliğe\_for_event
-    - [Dil anahtar sözcükleri framework yerine tür başvuruları adlarını yazın](#language_keywords)
+- .NET kod stili ayarları
+    - ["This." ve "Me." niteleyicileri](#this_and_me)
+        - DotNet\_stili\_nitelik\_for_field
+        - DotNet\_stili\_nitelik\_for_property
+        - DotNet\_stili\_nitelik\_for_method
+        - DotNet\_stili\_nitelik\_for_event
+    - [Dil anahtar sözcükleri framework yerine tür başvurularını adlarını yazın](#language_keywords)
         - DotNet\_stili\_önceden tanımlanmış\_türü\_için\_Yereller\_parameters_members
         - DotNet\_stili\_önceden tanımlanmış\_türü\_için\_member_access
-    - [Değiştirici tercihleri](#normalize_modifiers)
+    - [Değiştiricisi tercihleri](#normalize_modifiers)
         - DotNet\_stili\_gerektiren\_accessibility_modifiers
         - CSharp\_tercih edilen\_modifier_order
-        - Visual\_temel\_tercih edilen\_modifier_order
-        - DotNet\_stili\_readonly\_alan
+        - görsel\_temel\_tercih edilen\_modifier_order
+        - DotNet\_stili\_salt okunur\_alan
     - [İfade düzeyi tercihleri](#expression_level)
         - DotNet\_stili\_object_initializer
         - DotNet\_stili\_collection_initializer
         - DotNet\_stili\_açık\_tuple_names
-        - DotNet\_stili\_tercih\_çıkarımı yapılan\_tuple_names
-        - DotNet\_stili\_tercih\_çıkarımı yapılan\_anonim\_türü\_member_names
+        - DotNet\_stili\_tercih\_çıkarılan\_tuple_names
+        - DotNet\_stili\_tercih\_çıkarılan\_anonim\_türü\_member_names
         - DotNet\_stili\_tercih\_otomatik\_özellikleri
-        - DotNet\_stili\_tercih\_olan\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi
+        - DotNet\_stili\_tercih\_olduğu\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi
     - ["Null" Tercihler denetleniyor](#null_checking)
         - DotNet\_stili\_coalesce_expression
         - DotNet\_stili\_null_propagation
 - C# kod stili ayarları
     - [Örtük ve açık türleri](#implicit-and-explicit-types)
         - CSharp\_stili\_var\_için\_yerleşik\_in_types
-        - CSharp\_stili\_var\_zaman\_türü\_is_apparent
+        - CSharp\_stili\_var\_olduğunda\_türü\_is_apparent
         - CSharp\_stili\_var_elsewhere
     - [İfade gövdeli üyeler](#expression_bodied_members)
         - csharp\_style\_expression\_bodied_methods
@@ -102,29 +102,29 @@ Aşağıdaki liste, izin verilen dil kuralı kuralları gösterir:
         - CSharp\_stili\_ifade\_bodied_indexers
         - CSharp\_stili\_ifade\_bodied_accessors
     - [Desen eşleştirme](#pattern_matching)
-        - CSharp\_stili\_düzeni\_eşleşen\_üzerinden\_olan\_ile\_cast_check
-        - CSharp\_stili\_düzeni\_eşleşen\_üzerinden\_olarak\_ile\_null_check
-    - [Satır içi değişken bildirimleri](#inlined_variable_declarations)
-        - CSharp\_stili\_içermesinden\_variable_declaration
+        - CSharp\_stili\_deseni\_eşleşen\_üzerinden\_olduğu\_ile\_cast_check
+        - CSharp\_stili\_deseni\_eşleşen\_üzerinden\_olarak\_ile\_null_check
+    - [Satır içi değişken bildirimi](#inlined_variable_declarations)
+        - CSharp\_stili\_satır içine alınmış\_variable_declaration
     - [İfade düzeyi tercihleri](#expression_level_csharp)
         - csharp\_prefer\_simple\_default_expression
         - CSharp\_stili\_deconstructed\_variable_declaration
-        - CSharp\_stili\_düzeni\_yerel\_üzerinden\_anonymous_function
+        - CSharp\_stili\_deseni\_yerel\_üzerinden\_anonymous_function
     - ["Null" Tercihler denetleniyor](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - CSharp\_stili\_koşullu\_delegate_call
     - [Kod bloğu tercihleri](#code_block)
         - CSharp\_prefer_braces
 
-### <a name="net-code-style-settings"></a>.NET kodu stilini ayarlar
+### <a name="net-code-style-settings"></a>.NET kod stili ayarları
 
-Bu bölümdeki stil kurallarını hem C# ve Visual Basic için geçerlidir. Tercih ettiğiniz programlama dili kod örneklerinde görmek için açılan seçin **dil** tarayıcı pencerenizin sağ üst köşesindeki menüsü.
+Stil kurallarını Bu bölümde, hem C# ve Visual Basic için geçerlidir. Tercih ettiğiniz programlama dilini kod örnekleri görmek için açılan menü seçin **dil** tarayıcı pencerenizin sağ üst köşesindeki menü.
 
-#### <a name="this_and_me"></a>"This." ve "Me." niteleyiciler
+#### <a name="this_and_me"></a>"This." ve "Me." niteleyicileri
 
-Bu stil kuralı (kuralı kimlikleri IDE0003 ve IDE0009) alanları, özellikleri, yöntemleri veya olayları için uygulanabilir. Değerini **true** anlamına gelir tercih kod simge ile başlayan `this.` C# veya `Me.` Visual Basic'te. Değerini **false** anlamına gelir tercih code öğesi _değil_ ile başlayan için `this.` veya `Me.`.
+Bu stil kuralı (kimlikleri IDE0003 ve IDE0009 kural) alanlar, özellikler, yöntemler veya olayları uygulanabilir. Değerini **true** anlamına gelir, kod simge ile başlayan tercih `this.` C# veya `Me.` Visual Basic'te. Değerini **false** anlamına gelir, kod öğesi tercih _değil_ başında için `this.` veya `Me.`.
 
-Aşağıdaki tabloda, kural adları, uygun programlama dilleri ve varsayılan değerleri gösterir:
+Kural adı, geçerli programlama dilleri ve varsayılan değerleri aşağıdaki tabloda gösterilmektedir:
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan değer |
 | ----------- | -------------------- | ----------------------|
@@ -133,10 +133,10 @@ Aşağıdaki tabloda, kural adları, uygun programlama dilleri ve varsayılan de
 | dotnet_style_qualification_for_method | C# ve Visual Basic | false: yok |
 | dotnet_style_qualification_for_event | C# ve Visual Basic | false: yok |
 
-**DotNet\_stili\_niteliğe\_for_field**
+**DotNet\_stili\_nitelik\_for_field**
 
-- Bu kural ayarlandığında **true**, alanları ile başlayan tercih `this.` C# veya `Me.` Visual Basic'te.
-- Bu kural ayarlandığında **false**, alanları tercih _değil_ ile başlayan için `this.` veya `Me.`.
+- Bu kural ayarlandığında **true**, ile başlayan alanlar tercih `this.` C# veya `Me.` Visual Basic'te.
+- Bu kural ayarlandığında **false**, alanlar tercih _değil_ başında için `this.` veya `Me.`.
 
 Kod örnekleri:
 
@@ -156,10 +156,10 @@ Me.capacity = 0
 capacity = 0
 ```
 
-**DotNet\_stili\_niteliğe\_for_property**
+**DotNet\_stili\_nitelik\_for_property**
 
-- Bu kural ayarlandığında **true**, ile başlayan özellikler tercih `this.` C# veya `Me.` Visual Basic'te.
-- Bu kural ayarlandığında **false**, Özellikler tercih _değil_ ile başlayan için `this.` veya `Me.`.
+- Bu kural ayarlandığında **true**, başında için özellikleri tercih et `this.` C# veya `Me.` Visual Basic'te.
+- Bu kural ayarlandığında **false**, özellikleri tercih et _değil_ başında için `this.` veya `Me.`.
 
 Kod örnekleri:
 
@@ -179,10 +179,10 @@ Me.ID = 0
 ID = 0
 ```
 
-**DotNet\_stili\_niteliğe\_for_method**
+**DotNet\_stili\_nitelik\_for_method**
 
-- Bu kural ayarlandığında **true**, yöntemleri ile başlayan tercih `this.` C# veya `Me.` Visual Basic'te.
-- Bu kural ayarlandığında **false**, yöntemleri tercih _değil_ ile başlayan için `this.` veya `Me.`.
+- Bu kural ayarlandığında **true**, tercih ettiğiniz yöntemleri ile başlayan `this.` C# veya `Me.` Visual Basic'te.
+- Bu kural ayarlandığında **false**, tercih ettiğiniz yöntemleri _değil_ başında için `this.` veya `Me.`.
 
 Kod örnekleri:
 
@@ -202,10 +202,10 @@ Me.Display()
 Display()
 ```
 
-**DotNet\_stili\_niteliğe\_for_event**
+**DotNet\_stili\_nitelik\_for_event**
 
 - Bu kural ayarlandığında **true**, olayları ile başlayan tercih `this.` C# veya `Me.` Visual Basic'te.
-- Bu kural ayarlandığında **false**, olayları tercih _değil_ ile başlayan için `this.` veya `Me.`.
+- Bu kural ayarlandığında **false**, olayları tercih _değil_ başında için `this.` veya `Me.`.
 
 Kod örnekleri:
 
@@ -225,7 +225,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-Bu kurallar içinde görünebilir bir *.editorconfig* gibi dosya:
+Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -236,11 +236,11 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="language_keywords"></a>Dil anahtar sözcükleri framework yerine tür başvuruları adlarını yazın
+#### <a name="language_keywords"></a>Dil anahtar sözcükleri framework yerine tür başvurularını adlarını yazın
 
-Bu stil kuralı, yerel değişkenleri, yöntem parametreleri ve sınıf üyeleri için veya üye erişimi ifadeleri yazmak için ayrı bir kural olarak uygulanabilir. Değerini **true** anlamına gelir tercih ettiğiniz dili anahtar sözcüğü (örneğin `int` veya `Integer`) türü adı yerine (örneğin `Int32`) bunları temsil etmek için bir anahtar sözcüğüne sahip türleri için. Değerini **false** tercih türü adı dil anahtar sözcüğü yerine anlamına gelir.
+Bu stil kuralı, yerel değişkenler, yöntem parametreleri ve sınıf üyeleri veya üye erişimi ifadeleri yazmak için ayrı bir kural olarak uygulanabilir. Değerini **true** anlamına gelir, tercih ettiğiniz dil anahtar sözcüğü (örneğin `int` veya `Integer`) tür adı yerine (örneğin `Int32`) bunları temsil etmek için bir anahtar sözcük sahip türleri. Değerini **false** anlamına gelir, tercih ettiğiniz dil anahtar sözcüğü yerine tür adı.
 
-Aşağıdaki tabloda, kuralı adları, kuralları kimlikleri, geçerli programlama dilleri ve varsayılan değerleri gösterir:
+Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama dilleri ve varsayılan değerleri gösterir:
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan |
 | --------- | ------- | -------------------- | ----------------------|
@@ -249,8 +249,8 @@ Aşağıdaki tabloda, kuralı adları, kuralları kimlikleri, geçerli programla
 
 **DotNet\_stili\_önceden tanımlanmış\_türü\_için\_Yereller\_parameters_members**
 
-- Bu kural ayarlandığında **doğru**, yerel değişkenleri, yöntem parametreleri dil anahtar sözcüğü tercih ve sınıf adını yazın, bunları temsil etmek için bir anahtar sözcüğüne sahip türleri yerine üyeleri.
-- Bu kural ayarlandığında **yanlış**, yerel değişkenleri, yöntem parametreleri için tür adını tercih ve sınıf üyeleri dil anahtar sözcüğü yerine.
+- Bu kural ayarlandığında **true**, tercih ettiğiniz dil anahtar sözcüğü yerel değişkenler, yöntem parametreleri ve sınıf üyeleri, bunları temsil etmek için bir anahtar sözcüğüne sahip türler için tür adı yerine.
+- Bu kural ayarlandığında **false**türü adını yerel değişkenler, yöntem parametreleri ve sınıf üyeleri, dil anahtar sözcüğü yerine.
 
 Kod örnekleri:
 
@@ -272,8 +272,8 @@ Private _member As Int32
 
 **DotNet\_stili\_önceden tanımlanmış\_türü\_için\_member_access**
 
-- Bu kural ayarlandığında **doğru**, bunları temsil etmek için bir anahtar sözcüğüne sahip türleri için tür adı yerine üye erişimi ifadeleri dil anahtar sözcüğü tercih eder.
-- Bu kural ayarlandığında **yanlış**, dil anahtar sözcüğü yerine üye erişimi ifadeleri türü adı tercih eder.
+- Bu kural ayarlandığında **true**, bunları temsil etmek için bir anahtar sözcüğüne sahip türler için tür adı yerine üye erişimi ifadeleri için dil anahtar kelimesi'tercih et.
+- Bu kural ayarlandığında **false**, dil anahtar sözcüğü yerine üye erişimi ifadeleri için tür adını tercih et.
 
 Kod örnekleri:
 
@@ -293,7 +293,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-Bu kurallar içinde görünebilir bir *.editorconfig* gibi dosya:
+Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -302,27 +302,27 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="normalize_modifiers"></a>Değiştirici tercihleri
+#### <a name="normalize_modifiers"></a>Değiştiricisi tercihleri
 
-Bu bölümdeki stil kurallarını değiştiricisi Tercihler erişilebilirlik değiştiricileri gerektiren, istenen değiştiricisi sıralama düzeni belirtme ve salt okunur değiştiricisi gerektiren dahil olmak üzere, ilgili.
+Bu bölümdeki Stil kurallarının değiştiricisi tercihleri, erişilebilirlik değiştiricileri gerektiren, istenen değiştiricisi sıralama düzenini belirten ve salt okunur değiştiricisi gerektirme dahil olmak üzere uğraşmak.
 
-Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama dilleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama dilleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | dotnet_style_require_ accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:none | 15.5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, iç, statik extern, yeni, sanal, soyut ve korumalı, geçersiz kılma, salt okunur, güvenli olmayan, geçici, zaman uyumsuz: yok | 15.5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, Public, arkadaş, NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeleri, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölge, salt okunur, WriteOnly, boyutu, Const, WithEvents, genişletme, özel, daraltma Zaman uyumsuz: yok | 15.5 |
-| dotnet_style_readonly_field | IDE0044 | C# ve Visual Basic | TRUE: önerisi | 15.7 |
+| csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, dahili, statik ve extern, yeni, virtual, abstract, korumalı, geçersiz kılma, salt okunur, güvenli, geçici, zaman uyumsuz: yok | 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, genel, arkadaş NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeler, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölgeler, salt okunur, WriteOnly, boyutu, Const, WithEvents, daraltma, özel, genişletme Zaman uyumsuz: yok | 15.5 |
+| dotnet_style_readonly_field | IDE0044 | C# ve Visual Basic | TRUE: öneri | 15.7 |
 
 **DotNet\_stili\_gerektiren\_accessibility_modifiers**
 
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
+Bu kural kabul etmediği bir **true** veya **false** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| Her zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih |
-| için\_olmayan\_interface_members | Genel arabirim üyeleri dışında bildirilmesi için erişilebilirlik değiştiricileri tercih eder. Bu aynı sonucu verir **her zaman** ve C# varsayılan arabirim yöntemleri eklerse, gelecekteki sağlama için eklenmiştir. |
+| Her zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih et |
+| için\_olmayan\_interface_members | Genel arabirim üyeleri hariç bildirilmesi için erişilebilirlik değiştiricileri tercih eder. Bu, aynı **her zaman** ve C# varsayılan arabirim yöntemleri eklerse, gelecekteki sağlama için eklendi. |
 | hiçbir zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih ediyorsunuz |
 
 Kod örnekleri:
@@ -344,8 +344,8 @@ class MyClass
 
 **csharp_preferred_modifier_order**
 
-- Bu kural değiştiricileri listesine ayarladığınızda, belirtilen sıralama tercih eder.
-- Bu kural dosyasından atlandığında, değiştiricisi sipariş tercih ediyorsunuz.
+- Bu kural değiştiriciler listesine ayarlandığında, belirtilen sıralama tercih eder.
+- Bu kural dosyasından atlandığında, değiştirici sırasını tercih ediyorsunuz.
 
 Kod örnekleri:
 
@@ -359,8 +359,8 @@ class MyClass
 
 **visual_basic_preferred_modifier_order**
 
-- Bu kural değiştiricileri listesine ayarladığınızda, belirtilen sıralama tercih eder.
-- Bu kural dosyasından atlandığında, değiştiricisi sipariş tercih ediyorsunuz.
+- Bu kural değiştiriciler listesine ayarlandığında, belirtilen sıralama tercih eder.
+- Bu kural dosyasından atlandığında, değiştirici sırasını tercih ediyorsunuz.
 
 Kod örnekleri:
 
@@ -373,8 +373,8 @@ End Class
 
 **dotnet_style_readonly_field**
 
-- Bu kural ayarlandığında **true**, alanları ile işaretlenmelidir tercih `readonly` (C#) veya `ReadOnly` yalnızca satır içi herhangi bir zamanda atandığı veya bir oluşturucu içinde ise (Visual Basic).
-- Bu kural ayarlandığında **false**, olup alanları ile işaretlenmelidir üzerinden tercih belirtin `readonly` (C#) veya `ReadOnly` (Visual Basic).
+- Bu kural ayarlandığında **true**, alanları ile işaretlenmelidir tercih `readonly` (C#) veya `ReadOnly` yalnızca satır içi hiç olmadığı kadar atandığı veya bir oluşturucu içinde olması durumunda (Visual Basic).
+- Bu kural ayarlandığında **false**, tercih yok olup alanları ile işaretlenmelidir üzerinden belirtin `readonly` (C#) veya `ReadOnly` (Visual Basic).
 
 Kod örnekleri:
 
@@ -393,7 +393,7 @@ Public Class MyClass
 End Class
 ```
 
-Bu kurallar içinde görünebilir bir *.editorconfig* gibi dosya:
+Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -412,24 +412,24 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="expression_level"></a>İfade düzeyi tercihleri
 
-Stil nesne başlatıcılar, koleksiyon başlatıcıları, açık veya oluşturulursa tanımlama grubu adları, kullanımı dahil olmak üzere bu bölümü sorunu ifade düzeyi tercihlerinde, kurallar ve anonim türler sonuçlandı.
+Stil nesne başlatıcıları, koleksiyon başlatıcıları, açık veya çıkarsanan demet adları, kullanımı dahil olmak üzere bu bölümü endişe ifade düzeyi tercihlerinde kuralları ve anonim türler sonuçlandı.
 
-Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama dilleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama dilleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ---- |
-| dotnet_style_object_initializer | IDE0017 | C# ve Visual Basic | TRUE: önerisi | İlk sürüm |
-| dotnet_style_collection_initializer | IDE0028 | C# ve Visual Basic | TRUE: önerisi | İlk sürüm |
-| dotnet_style_explicit_tuple_names | IDE0033 | C# ' ta 7.0 + ve Visual Basic 15 + | TRUE: önerisi | İlk sürüm |
-| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# ' ta 7.1 + ve Visual Basic 15 + | TRUE: önerisi | 15,6 |
-| dotnet_style_prefer_inferred_anonymous_ type_member_names | IDE0037 | C# ve Visual Basic | TRUE: önerisi | 15,6 |
+| dotnet_style_object_initializer | IDE0017 | C# ve Visual Basic | TRUE: öneri | İlk yayın |
+| dotnet_style_collection_initializer | IDE0028 | C# ve Visual Basic | TRUE: öneri | İlk yayın |
+| dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + ve Visual Basic 15 + | TRUE: öneri | İlk yayın |
+| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + ve Visual Basic 15 + | TRUE: öneri | 15.6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# ve Visual Basic | TRUE: öneri | 15.6 |
 | dotnet_style_prefer_auto_properties | IDE0032 | C# ve Visual Basic | TRUE: yok | 15.7 |
-| dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# ve Visual Basic | TRUE: önerisi | 15.7 |
+| dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# ve Visual Basic | TRUE: öneri | 15.7 |
 
 **DotNet\_stili\_object_initializer**
 
-- Bu kural ayarlandığında **doğru**, mümkün olduğunda nesne başlatıcıları kullanarak başlatılması için nesneleri tercih.
-- Bu kural ayarlandığında **false**, nesnelere tercih *değil* olması nesne başlatıcıları başlatıldı.
+- Bu kural ayarlandığında **true**, mümkün olduğunda, nesne başlatıcıları kullanarak başlatılacak nesneleri tercih edin.
+- Bu kural ayarlandığında **false**, nesnelere tercih *değil* olması nesne başlatıcıları kullanılarak başlatılır.
 
 Kod örnekleri:
 
@@ -453,8 +453,8 @@ c.Age = 21
 
 **DotNet\_stili\_collection_initializer**
 
-- Bu kural ayarlandığında **doğru**, mümkün olduğunda koleksiyon başlatıcıları kullanarak başlatılması için koleksiyonları tercih.
-- Bu kural ayarlandığında **false**, koleksiyonlara tercih *değil* olması koleksiyon başlatıcıları başlatıldı.
+- Bu kural ayarlandığında **true**, mümkün olduğunda koleksiyon başlatıcıları kullanarak başlatılması için koleksiyonları tercih et.
+- Bu kural ayarlandığında **false**, koleksiyonlara tercih *değil* olması koleksiyon başlatıcıları kullanılarak başlatılır.
 
 Kod örnekleri:
 
@@ -482,8 +482,8 @@ list.Add(3)
 
 **DotNet\_stili\_açık\_tuple_names**
 
-- Bu kural ayarlandığında **doğru**, tanımlama grubu adları ItemX özelliklerine tercih eder.
-- Bu kural ayarlandığında **yanlış**, ItemX özellikleri tanımlama grubu adları tercih.
+- Bu kural ayarlandığında **true**, demet adları ItemX özellikleri tercih et.
+- Bu kural ayarlandığında **false**, demet adları ItemX özellikleri tercih et.
 
 Kod örnekleri:
 
@@ -507,10 +507,10 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-**DotNet\_stili\_tercih\_çıkarımı yapılan\_tuple_names**
+**DotNet\_stili\_tercih\_çıkarılan\_tuple_names**
 
-- Bu kural ayarlandığında **doğru**, oluşturulursa tanımlama grubu öğe adları tercih eder.
-- Bu kural ayarlandığında **yanlış**, açık tanımlama grubu öğe adları tercih eder.
+- Bu kural ayarlandığında **true**, gösterilen demet öğesi adlarını tercih et.
+- Bu kural ayarlandığında **false**, açık demet öğesi adlarını tercih et.
 
 Kod örnekleri:
 
@@ -530,10 +530,10 @@ Dim tuple = (name, age)
 Dim tuple = (name:=name, age:=age)
 ```
 
-**DotNet\_stili\_tercih\_çıkarımı yapılan\_anonim\_türü\_member_names**
+**DotNet\_stili\_tercih\_çıkarılan\_anonim\_türü\_member_names**
 
-- Bu kural ayarlandığında **doğru**, oluşturulursa anonim tür üye adlarının tercih eder.
-- Bu kural ayarlandığında **yanlış**, açık anonim tür üye adlarının tercih eder.
+- Bu kural ayarlandığında **true**, gösterilen anonim tip üye adlarını tercih et.
+- Bu kural ayarlandığında **false**, açık anonim tip üye adlarını tercih et.
 
 Kod örnekleri:
 
@@ -557,8 +557,8 @@ Dim anon = New With {.name = name, .age = age}
 
 **DotNet\_stili\_tercih\_otomatik\_özellikleri**
 
-- Bu kural ayarlandığında **doğru**, özel yedekleme alanları özelliklerle üzerinden otomatik özellikleri tercih.
-- Bu kural ayarlandığında **yanlış**, özel yedekleme alanları özelliklerle otomatik özellikleri tercih.
+- Bu kural ayarlandığında **true**, özellikleri ile özel yedekleme alanlar üzerinden otomatik özellikleri tercih et.
+- Bu kural ayarlandığında **false**, otomatik özelliklerde özel yedekleme alanlarla Özellikleri'tercih et.
 
 Kod örnekleri:
 
@@ -589,13 +589,13 @@ Public ReadOnly Property Age As Integer
     Get
         return _age
     End Get
-End Property 
+End Property
 ```
 
-**DotNet\_stili\_tercih\_olan\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi**
+**DotNet\_stili\_tercih\_olduğu\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi**
 
-- Bu kural ayarlandığında **doğru**, null denetimi desen eşleştirme nesnenin üzerine kullanmayı tercih. ReferenceEquals.
-- Bu kural ayarlandığında **yanlış**, nesne tercih eder. Desen eşleştirme null denetimiyle üzerinden ReferenceEquals.
+- Bu kural ayarlandığında **true**, null denetimi ile desen eşleştirme nesnenin üzerine kullanmayı tercih. ReferenceEquals.
+- Bu kural ayarlandığında **false**, nesne tercih edin. Null denetimi ile desen eşleştirme üzerinden ReferenceEquals.
 
 Kod örnekleri:
 
@@ -621,7 +621,7 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
-Bu kurallar içinde görünebilir bir *.editorconfig* gibi dosya:
+Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -636,19 +636,19 @@ dotnet_style_prefer_auto_properties = true:none
 
 #### <a name="null_checking"></a>Null denetimi tercihleri
 
-Bu bölümdeki stil kurallarını null denetimi Tercihler ilgilendiren.
+Bu bölümdeki Stil kurallarının null denetimi tercihleri ilgilendiriyor.
 
-Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli programlama dilleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama dilleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ---- |
-| dotnet_style_coalesce_expression | IDE0029 | C# ve Visual Basic | TRUE: önerisi | İlk sürüm |
-| dotnet_style_null_propagation | IDE0031 | C# ' ta 6.0 + ve Visual Basic 14 + | TRUE: önerisi | İlk sürüm |
+| dotnet_style_coalesce_expression | IDE0029 | C# ve Visual Basic | TRUE: öneri | İlk yayın |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0 + ve Visual Basic 14 + | TRUE: öneri | İlk yayın |
 
 **DotNet\_stili\_coalesce_expression**
 
-- Bu kural ayarlandığında **doğru**, null birleştirmesi ifadeleri denetimi Üçlü işleci için tercih ettiğiniz.
-- Bu kural ayarlandığında **yanlış**, null birleştirmesi ifadelere denetimi Üçlü işleci tercih eder.
+- Bu kural ayarlandığında **true**, denetimi Üçlü işleç null birleşim ifadelerini tercih edin.
+- Bu kural ayarlandığında **false**, Üçlü işleç için null birleşim ifadelerini denetimi tercih edin.
 
 Kod örnekleri:
 
@@ -672,8 +672,8 @@ Dim v = If(x IsNot Nothing, x, y)
 
 **DotNet\_stili\_null_propagation**
 
-- Bu kural ayarlandığında **doğru**, mümkün olduğunda null koşul işlecini kullanmayı tercih eder.
-- Bu kural ayarlandığında **yanlış**, Üçlü null denetimi mümkün olduğunda kullanmayı tercih eder.
+- Bu kural ayarlandığında **true**, mümkün olduğunda null koşullu işleci kullanmayı tercih eder.
+- Bu kural ayarlandığında **false**, Üçlü null denetimi mümkün olduğunda kullanmayı tercih eder.
 
 Kod örnekleri:
 
@@ -695,7 +695,7 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-Bu kurallar içinde görünebilir bir *.editorconfig* gibi dosya:
+Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -706,13 +706,13 @@ dotnet_style_null_propagation = true:suggestion
 
 ### <a name="c-code-style-settings"></a>C# kod stili ayarları
 
-Bu bölümdeki stil kurallarını yalnızca C# için geçerlidir.
+Bu bölümdeki stil kuralları yalnızca C# için geçerlidir.
 
 #### <a name="implicit-and-explicit-types"></a>Örtük ve açık türleri
 
-Bu bölümdeki stil kurallarını (kimlikleri IDE0007 ve IDE0008 kural) kullanımını ilgilendiren [var](/dotnet/csharp/language-reference/keywords/var) anahtar sözcüğü bir açık tür Değişken bildiriminde karşılaştırması. Bu kural türü görünen olduğunda yerleşik türleri ve diğer yerlerde için ayrı olarak uygulanabilir.
+Bu bölümdeki Stil kurallarının (kimlikleri IDE0007 ve IDE0008 kural) kullanımını ilgilendiriyor [var](/dotnet/csharp/language-reference/keywords/var) anahtar sözcüğü Değişken bildiriminde bir açık tür yerine. Bu kural türü belirgin olduğunda yerleşik türler ve diğer yerlerde için ayrı olarak uygulanabilir.
 
-Aşağıdaki tabloda, kural adları, uygun programlama dilleri ve varsayılan değerleri gösterir:
+Kural adı, geçerli programlama dilleri ve varsayılan değerleri aşağıdaki tabloda gösterilmektedir:
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan |
 | ----------- | -------------------- | ----------------------|
@@ -723,7 +723,7 @@ Aşağıdaki tabloda, kural adları, uygun programlama dilleri ve varsayılan de
 **CSharp\_stili\_var\_için\_yerleşik\_in_types**
 
 - Bu kural ayarlandığında **true**, tercih ettiğiniz `var` değişkenler gibi yerleşik sistem türleriyle bildirmek için kullanılan `int`.
-- Bu kural ayarlandığında **false**, açık tür üzerinden tercih `var` gibi yerleşik sistem türleriyle değişkenleri bildirmeyi `int`.
+- Bu kural ayarlandığında **false**, üzerinden açık türü tercih et `var` gibi yerleşik sistem türleriyle değişkenleri bildirmeyi `int`.
 
 Kod örnekleri:
 
@@ -735,10 +735,10 @@ var x = 5;
 int x = 5;
 ```
 
-**CSharp\_stili\_var\_zaman\_türü\_is_apparent**
+**CSharp\_stili\_var\_olduğunda\_türü\_is_apparent**
 
-- Bu kural ayarlandığında **true**, tercih ettiğiniz `var` zaman türü önceden belirtilen bildirimi ifadesinin sağ tarafta.
-- Bu kural ayarlandığında **false**, açık tür üzerinden tercih `var` zaman türü önceden belirtilen bildirimi ifadesinin sağ tarafta.
+- Bu kural ayarlandığında **true**, tercih ettiğiniz `var` zaman türü zaten belirtilen bir bildirimi ifadesinin sağ tarafta.
+- Bu kural ayarlandığında **false**, üzerinden açık türü tercih et `var` zaman türü zaten belirtilen bir bildirimi ifadesinin sağ tarafta.
 
 Kod örnekleri:
 
@@ -752,8 +752,8 @@ Customer obj = new Customer();
 
 **CSharp\_stili\_var_elsewhere**
 
-- Bu kural ayarlandığında **true**, tercih ettiğiniz `var` tüm durumlarda açık tür üzerinden başka bir kod stil kuralı tarafından kılınmadığı sürece.
-- Bu kural ayarlandığında **false**, açık tür üzerinden tercih `var` tüm durumlarda, başka bir kod stil kuralı tarafından kılınmadığı sürece.
+- Bu kural ayarlandığında **true**, tercih ettiğiniz `var` tüm durumlarda açık tür üzerinden başka bir kod stili kural tarafından geçersiz kılınmadığı sürece.
+- Bu kural ayarlandığında **false**, üzerinden açık türü tercih et `var` tüm durumlarda, başka bir kod stili kural tarafından geçersiz kılınmadığı sürece.
 
 Kod örnekleri:
 
@@ -775,30 +775,30 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="expression_bodied_members"></a>İfade bodied üyeleri
+#### <a name="expression_bodied_members"></a>İfade gövdeli üyeler
 
-Bu bölümdeki stil kurallarını kullanımını ilgilendiren [ifade bodied üyeleri](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) zaman mantığı oluşan tek bir ifade. Bu kural, yöntemleri, Oluşturucular, işleçleri, özellikleri, dizin oluşturucular ve erişimciler uygulanabilir.
+Bu bölümdeki Stil kurallarının kullanımını ilgilendiriyor [ifade gövdeli üyeler](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) zaman tek bir ifadeye oluşur mantığı. Bu kural, yöntemleri, Oluşturucular, işleçler, özellikler, dizin oluşturucular ve erişimcileri için uygulanabilir.
 
-Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli dil sürümleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli dil sürümleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# ' TA 6.0 + | false: yok | 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# ' TA 7.0 + | false: yok | 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 ve IDE0024 | C# ' TA 7.0 + | false: yok | 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# ' TA 7.0 + | TRUE: yok | 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# ' TA 7.0 + | TRUE: yok | 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# ' TA 7.0 + | TRUE: yok | 15.3 |
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 VE ÜZERİ | false: yok | 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | false: yok | 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 ve IDE0024 | C# 7.0 + | false: yok | 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 + | TRUE: yok | 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | TRUE: yok | 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | TRUE: yok | 15.3 |
 
 **CSharp\_stili\_ifade\_bodied_methods**
 
-Bu kural aşağıdaki tabloda değerleri kabul eder:
+Bu kural, aşağıdaki tablodaki değerlerden kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| true | İfade bodied üyeleri yöntemleri için tercih ettiğiniz |
-| when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri yöntemleri için tercih ettiğiniz |
-| false | Blok gövdeleri yöntemleri için tercih ettiğiniz |
+| true | İfade gövdeli üyeler yöntemlerine tercih et |
+| when_on_single_line | Bunlar tek bir satırda ne zaman metotlar için ifade gövdeli üyeler tercih et |
+| false | Metotlar için blok gövdeleri tercih et |
 
 Kod örnekleri:
 
@@ -812,13 +812,13 @@ public int GetAge() { return this.Age; }
 
 **CSharp\_stili\_ifade\_bodied_constructors**
 
-Bu kural aşağıdaki tabloda değerleri kabul eder:
+Bu kural, aşağıdaki tablodaki değerlerden kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| true | İfade bodied üyeleri oluşturucuları için tercih ettiğiniz |
-| when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri oluşturucuları için tercih ettiğiniz |
-| false | Oluşturucuları bloğunun gövdeleri tercih |
+| true | Oluşturucular için ifade gövdeli üyeler tercih et |
+| when_on_single_line | Bunlar tek bir satırda ne zaman oluşturucular için ifade gövdeli üyeler tercih et |
+| false | Oluşturucular için blok gövdeleri tercih et |
 
 Kod örnekleri:
 
@@ -832,13 +832,13 @@ public Customer(int age) { Age = age; }
 
 **CSharp\_stili\_ifade\_bodied_operators**
 
-Bu kural aşağıdaki tabloda değerleri kabul eder:
+Bu kural, aşağıdaki tablodaki değerlerden kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| true | İfade bodied üyeleri işleçleri için tercih ettiğiniz |
-| when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri işleçleri için tercih ettiğiniz |
-| false | Blok gövdeleri işleçlerini tercih |
+| true | İfade gövdeli üyeler işleçleri tercih et |
+| when_on_single_line | Bunlar tek bir satırda ne zaman işleçler için ifade gövdeli üyeler tercih et |
+| false | İşleçler için blok gövdeleri tercih et |
 
 Kod örnekleri:
 
@@ -854,13 +854,13 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 **CSharp\_stili\_ifade\_bodied_properties**
 
-Bu kural aşağıdaki tabloda değerleri kabul eder:
+Bu kural, aşağıdaki tablodaki değerlerden kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| true | İfade bodied üyeleri özellikleri için tercih ettiğiniz |
-| when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri özellikleri için tercih ettiğiniz |
-| false | Blok gövdeleri özellikleri için tercih ettiğiniz |
+| true | İfade gövdeli üyeler özellikleri tercih et |
+| when_on_single_line | Bunlar tek bir satırda ne zaman ifade gövdeli üyeler özellikleri tercih et |
+| false | Blok gövdeleri özellikleri tercih et |
 
 Kod örnekleri:
 
@@ -874,13 +874,13 @@ public int Age { get { return _age; }}
 
 **CSharp\_stili\_ifade\_bodied_indexers**
 
-Bu kural aşağıdaki tabloda değerleri kabul eder:
+Bu kural, aşağıdaki tablodaki değerlerden kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| true | Dizin oluşturucular için ifade bodied üyeleri tercih |
-| when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri dizin oluşturucular için tercih ettiğiniz |
-| false | Dizin oluşturucular için blok gövdeleri tercih |
+| true | Dizin oluşturucular için ifade gövdeli üyeler tercih et |
+| when_on_single_line | Uygulanırsa, tek bir satırda olur, dizin oluşturucular için ifade gövdeli üyeler tercih et |
+| false | Dizin oluşturucular için blok gövdeleri tercih et |
 
 Kod örnekleri:
 
@@ -894,13 +894,13 @@ public T this[int i] { get { return _values[i]; } }
 
 **CSharp\_stili\_ifade\_bodied_accessors**
 
-Bu kural aşağıdaki tabloda değerleri kabul eder:
+Bu kural, aşağıdaki tablodaki değerlerden kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| true | İfade bodied üyeleri erişimciler için tercih ettiğiniz |
-| when_on_single_line | Tek bir satır olacak zaman ifade bodied üyeleri erişimciler için tercih ettiğiniz |
-| false | Erişimcileri bloğu gövdeleri tercih |
+| true | Erişimciler için ifade gövdeli üyeler tercih et |
+| when_on_single_line | Bunlar tek bir satırda ne zaman erişimciler için ifade gövdeli üyeler tercih et |
+| false | Erişimciler için blok gövdeleri tercih et |
 
 Kod örnekleri:
 
@@ -927,18 +927,18 @@ csharp_style_expression_bodied_accessors = true:suggestion
 
 #### <a name="pattern_matching"></a>Desen eşleştirme
 
-Bu bölümdeki stil kurallarını kullanımını ilgilendiren [desen eşleştirme](/dotnet/csharp/pattern-matching) C#.
+Bu bölümdeki Stil kurallarının kullanımını ilgilendiriyor [desen eşleştirme](/dotnet/csharp/pattern-matching) C#.
 
-Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli dil sürümlerini ve varsayılan değerleri gösterir:
+Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli dil sürümleri ve varsayılan değerleri gösterir:
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan |
 | --------- | ------- | -------------------- | ----------------------|
-| csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# ' TA 7.0 + | TRUE: önerisi |
-| csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# ' TA 7.0 + | TRUE: önerisi |
+| csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0 + | TRUE: öneri |
+| csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0 + | TRUE: öneri |
 
-**CSharp\_stili\_düzeni\_eşleşen\_üzerinden\_olan\_ile\_cast_check**
+**CSharp\_stili\_deseni\_eşleşen\_üzerinden\_olduğu\_ile\_cast_check**
 
-- Bu kural ayarlandığında **true**, yerine desen eşleştirme tercih `is` tür atamaları olan ifade.
+- Bu kural ayarlandığında **true**, yerine desen eşleştirme tercih `is` tür atamaları ifadelerle.
 - Bu kural ayarlandığında **false**, tercih ettiğiniz `is` ifadelerle desen eşleştirme yerine tür atamaları.
 
 Kod örnekleri:
@@ -951,10 +951,10 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-**CSharp\_stili\_düzeni\_eşleşen\_üzerinden\_olarak\_ile\_null_check**
+**CSharp\_stili\_deseni\_eşleşen\_üzerinden\_olarak\_ile\_null_check**
 
-- Bu kural ayarlandığında **true**, yerine desen eşleştirme tercih `as` bir şey belirli bir tür olup olmadığını belirlemek için null denetimlerinin ifadelerle.
-- Bu kural ayarlandığında **false**, tercih ettiğiniz `as` bir şey belirli bir tür olup olmadığını belirlemek için desen eşleştirme yerine null denetimlerinin ifadelerle.
+- Bu kural ayarlandığında **true**, yerine desen eşleştirme tercih `as` sorun belirli bir tür olup olmadığını belirlemek için null denetimlerinin ifadelerle.
+- Bu kural ayarlandığında **false**, tercih ettiğiniz `as` sorun belirli bir tür olup olmadığını belirlemek için desen eşleştirme yerine null denetimleri içeren ifadeler.
 
 Kod örnekleri:
 
@@ -976,20 +976,20 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="inlined_variable_declarations"></a>Satır içi değişken bildirimleri
+#### <a name="inlined_variable_declarations"></a>Satır içi değişken bildirimi
 
-Bu stil kuralı sorunları olup olmadığını `out` değişkenleri, satır içi bildirildiğinde, ya da değil. C# 7'de başlayarak, şunları yapabilirsiniz [yöntem çağrısı bağımsız değişken listesi out bir değişken bildirme](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), yerine ayrı bir değişken bildirimi.
+Bu stil kuralı endişeleriniz mi `out` veya satır içi değişkenler bildirilir. C# 7'de başlayarak, şunları yapabilirsiniz [bağımsız değişken listesinde bir yöntem çağrısının dışına çıkan bir değişkeni bildirmek](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), yerine ayrı bir değişken bildirimi.
 
-Kural adı, kural kimliği, geçerli dil sürümlerini ve varsayılan değerleri aşağıdaki tabloda gösterilmektedir:
+Kural adı, kural kimliği, geçerli dil sürümleri ve varsayılan değerleri aşağıdaki tabloda gösterilmektedir:
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan |
 | --------- | -------- | -------------------- | ----------------------|
-| csharp_style_inlined_variable_declaration | IDE0018 | C# ' TA 7.0 + | TRUE: önerisi |
+| csharp_style_inlined_variable_declaration | IDE0018 | C# 7.0 + | TRUE: öneri |
 
-**CSharp\_stili\_içermesinden\_variable_declaration**
+**CSharp\_stili\_satır içine alınmış\_variable_declaration**
 
-- Bu kural ayarlandığında **true**, tercih ettiğiniz `out` satır içi bir yöntem çağrısının mümkün olduğunda bağımsız değişken listesinde bildirilmesi için değişkenleri.
-- Bu kural ayarlandığında **false**, tercih ettiğiniz `out` önce yöntem çağrısı bildirilmesi için değişkenleri.
+- Bu kural ayarlandığında **true**, tercih ettiğiniz `out` değişkenler mümkün olduğunda, bir yöntem çağrısının bağımsız değişken listesindeki, satır içi olarak.
+- Bu kural ayarlandığında **false**, tercih ettiğiniz `out` yöntem çağrısından önce bildirilmesi için değişkenleri.
 
 Kod örnekleri:
 
@@ -1012,19 +1012,19 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 #### <a name="expression_level_csharp"></a>İfade düzeyi tercihleri
 
-Bu bölümdeki stil kurallarını ilgilendiren kullanımı dahil olmak üzere ifade düzeyi Tercihler [varsayılan ifadeleri](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), deconstructed değişkenleri ve anonim işlevler üzerinden yerel işlevler.
+Stil kurallarının bu bölümdeki ifade düzeyi tercihleri, kullanımı dahil olmak üzere uğraşmak [varsayılan ifadeleri](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), ayrıştırılmış değişkenleri ve anonim işlevler üzerinde yerel işlevler.
 
-Aşağıdaki tabloda, kural adı, kural kimliği, geçerli dil sürümleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kural adı, kural kimliği, geçerli dil sürümleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_prefer_simple_default_expression | IDE0034 | C# ' TA 7.1 + | TRUE: önerisi | 15.3 |
-| csharp_style_deconstructed_variable_declaration | IDE0042 | C# ' TA 7.0 + | TRUE: önerisi | 15.5 |
-| csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# ' TA 7.0 + | TRUE: önerisi | 15.5 |
+| csharp_prefer_simple_default_expression | IDE0034 | C# 7.1 + | TRUE: öneri | 15.3 |
+| csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0 + | TRUE: öneri | 15.5 |
+| csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0 + | TRUE: öneri | 15.5 |
 
 **csharp\_prefer\_simple\_default_expression**
 
-Bu stil kuralı kullanarak işlemiyle ilgili [ `default` varsayılan değeri ifadeleri için değişmez değerin](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) zaman derleyici Infer ifade türü.
+Bu stil kuralı kullanarak ilgiliyse [ `default` değişmez değer için varsayılan değer ifadeleri](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) zaman derleyici tanım Çıkarsama ifadenin türü.
 
 - Bu kural ayarlandığında **true**, tercih ettiğiniz `default` üzerinden `default(T)`.
 - Bu kural ayarlandığında **false**, tercih ettiğiniz `default(T)` üzerinden `default`.
@@ -1041,8 +1041,8 @@ void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { 
 
 **CSharp\_stili\_deconstructed\_variable_declaration**
 
-- Bu kural ayarlandığında **doğru**, deconstructed değişken bildirimi tercih eder.
-- Bu kural ayarlandığında **yanlış**, değişken bildirimleri deconstruction tercih ediyorsunuz.
+- Bu kural ayarlandığında **true**, ayrıştırılmış değişken bildirimini tercih et.
+- Bu kural ayarlandığında **false**, değişken bildirimlerinde ayrıştırma tercih ediyorsunuz.
 
 Kod örnekleri:
 
@@ -1062,10 +1062,10 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-**CSharp\_stili\_düzeni\_yerel\_üzerinden\_anonymous_function**
+**CSharp\_stili\_deseni\_yerel\_üzerinden\_anonymous_function**
 
-- Bu kural ayarlandığında **doğru**, yerel işlevler anonim işlevler tercih eder.
-- Bu kural ayarlandığında **yanlış**, anonim işlevler yerel işlevler tercih eder.
+- Bu kural ayarlandığında **true**, yerel işlevler üzerinde anonim işlevler tercih edin.
+- Bu kural ayarlandığında **false**, anonim işlevler yerel işlevler üzerinde tercih edin.
 
 Kod örnekleri:
 
@@ -1096,19 +1096,19 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 
 #### <a name="null_checking_csharp"></a>"Null" Tercihler denetleniyor
 
-Bu kurallar sorunu çevresinde sözdizimi stil `null` denetimi, kullanımı dahil olmak üzere `throw` ifadeler veya `throw` deyimleri ve null denetimi gerçekleştirmek veya koşullu birleştirmesi işlecini kullanın (`?.`) bir çağrılırken,[lambda ifadesi](/dotnet/csharp/lambda-expressions).
+Bu kuralları önemli etrafında sözdizimi stil `null` kullanma dahil olmak üzere, denetimi `throw` ifadeleri veya `throw` ifadeleri ve null denetimi gerçekleştirmek veya koşullu birleşim işleci kullanmayı (`?.`) bir çağrılırken[lambda ifadesi](/dotnet/csharp/lambda-expressions).
 
-Aşağıdaki tabloda, kuralı adları, kural kimlikleri, geçerli dil sürümlerini ve varsayılan değerleri gösterir:
+Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli dil sürümleri ve varsayılan değerleri gösterir:
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan |
 | --------- | ------- | -------------------- | ----------------------|
-| csharp_style_throw_expression | IDE0016 | C# ' TA 7.0 + | TRUE: önerisi |
-| csharp_style_conditional_delegate_call | IDE0041 | C# ' TA 6.0 + | TRUE: önerisi |
+| csharp_style_throw_expression | IDE0016 | C# 7.0 + | TRUE: öneri |
+| csharp_style_conditional_delegate_call | IDE0041 | C# 6.0 VE ÜZERİ | TRUE: öneri |
 
 **csharp\_style\_throw_expression**
 
-- Bu kural ayarlandığında **true**, kullanmayı tercih `throw` yerine ifadeleri `throw` deyimleri.
-- Bu kural ayarlandığında **false**, kullanmayı tercih `throw` deyimleri yerine `throw` ifadeler.
+- Bu kural ayarlandığında **true**, kullanmayı tercih `throw` ifadeler yerine `throw` deyimleri.
+- Bu kural ayarlandığında **false**, kullanmayı tercih `throw` yerine deyimleri `throw` ifadeler.
 
 Kod örnekleri:
 
@@ -1123,8 +1123,8 @@ this.s = s;
 
 **CSharp\_stili\_koşullu\_delegate_call**
 
-- Bu kural ayarlandığında **true**, koşullu birleştirmesi işleci kullanmayı tercih ederseniz (`?.`) bir lambda ifadesi çağrılırken null gerçekleştirmek yerine denetleyin.
-- Bu kural ayarlandığında **false**, koşullu birleştirmesi işleci kullanmak yerine bir lambda ifadesi çağırmadan önce null denetimi gerçekleştirmek tercih ettiğiniz (`?.`).
+- Bu kural ayarlandığında **true**, koşullu birleşim işleci kullanmayı tercih eder (`?.`) bir lambda ifadesi çağrılırken null gerçekleştirmek yerine kontrol edin.
+- Bu kural ayarlandığında **false**, koşullu birleşim işleci kullanmak yerine, bir lambda ifadesi çağırmadan önce bir null denetimi gerçekleştirmek tercih ettiğiniz (`?.`).
 
 Kod örnekleri:
 
@@ -1147,18 +1147,18 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 #### <a name="code_block"></a>Kod bloğu tercihleri
 
-Bu stil kuralı süslü ayraçlar kullanılmasını işlemiyle ilgili `{ }` kod blokları surround için.
+Bu stil kuralı kaşlı ayraçlar kullanımı ile ilgilidir `{ }` kod blokları kapsamak için.
 
-Aşağıdaki tabloda, kural adı, kural kimliği, geçerli dil sürümleri, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kural adı, kural kimliği, geçerli dil sürümleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_braces | IDE0011 | C# | TRUE: yok | 15.3 |
 
 **CSharp\_tercih\_küme ayraçları**
 
-- Bu kural ayarlandığında **doğru**, bir kod satırı için bile süslü ayraçlar tercih eder.
-- Bu kural ayarlandığında **yanlış**, hiçbir süslü ayraçlar izin veriyorsa tercih.
+- Bu kural ayarlandığında **true**, küme ayraçları için bir kod satırı bile tercih et.
+- Bu kural ayarlandığında **false**, izin verilen herhangi bir küme ayracı tercih.
 
 Kod örnekleri:
 
@@ -1180,13 +1180,13 @@ csharp_prefer_braces = true:none
 
 ## <a name="formatting-conventions"></a>Biçimlendirme kuralları
 
-Çoğu kuralları biçimlendirme kuralları, aşağıdaki biçime sahiptir:
+Biçimlendirme kurallarını kurallarının çoğu, aşağıdaki biçime sahiptir:
 
 `rule_name = false|true`
 
-Ya da belirttiğiniz **true** (Bu stili tercih et) veya **false** (Bu stili tercih ediyorsunuz). Bir önem derecesi belirtmeyin. True veya false, yerine birkaç kuralları için kuralı uygulamak nerede ve ne zaman açıklamak için diğer değerleri belirtin.
+Seçeneklerinden birini belirtin **true** (Bu stil tercih et) veya **false** (Bu stil tercih ediyorsunuz). Bir önem derecesi belirtmeyin. Bazı kurallar, true veya false yerine ne zaman ve nereye kuralı uygulamak açıklamak için diğer değerleri belirtin.
 
-Aşağıdaki listede, Visual Studio'da kullanılabilir biçimlendirme kuralı kurallar gösterilmektedir:
+Aşağıdaki liste, Visual Studio'da kullanılabilen biçimlendirme kuralı kuralları gösterir:
 
 - .NET biçimlendirme ayarları
     - [Using'leri düzenleme](#usings)
@@ -1200,7 +1200,7 @@ Aşağıdaki listede, Visual Studio'da kullanılabilir biçimlendirme kuralı ku
         - csharp_new_line_before_members_in_object_initializers
         - csharp_new_line_before_members_in_anonymous_types
         - csharp_new_line_between_query_expression_clauses
-    - [Girinti seçenekleri](#indent)
+    - [Girintileme seçenekleri](#indent)
         - csharp_indent_case_contents
         - csharp_indent_switch_labels
         - csharp_indent_labels
@@ -1226,18 +1226,18 @@ Bu bölümdeki biçimlendirme kuralları, C# ve Visual Basic için geçerlidir.
 
 #### <a name="usings"></a>Using'leri düzenleme
 
-Biçimlendirme kuralın diğer göre yönergeleri kullanarak System.* yerleşimini işlemiyle ilgili yönergeleri kullanarak.
+Biçimlendirme bu kural ile ilgili diğer yönergeleri kullanarak System.* yerleşimini işlemiyle ilgili yönergeleri kullanarak.
 
-Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değer ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değer ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | dotnet_sort_system_directives_first |  C# ve Visual Basic | true | 15.3  |
 
 **DotNet\_sıralama\_sistem\_directives_first**
 
-- Bu kural ayarlandığında **true**System.* using yönergelerini alfabetik olarak sıralamak ve diğer kullanımları önce yerleştirin.
-- Bu kural ayarlandığında **yanlış**, önce diğer yönergeleri kullanarak System.* yerleştirmeyin yönergeleri kullanarak.
+- Bu kural ayarlandığında **true**, System.* using yönergelerini alfabetik olarak sıralamak ve bunları diğer kullanımları önce yerleştirin.
+- Bu kural ayarlandığında **false**, önce diğer yönergeleri kullanarak System.* yerleştirmeyin yönergeleri kullanarak.
 
 Kod örnekleri:
 
@@ -1263,15 +1263,15 @@ dotnet_sort_system_directives_first = true
 
 ### <a name="c-formatting-settings"></a>C# biçimlendirme ayarları
 
-Bu bölümdeki biçimlendirme kuralları yalnızca C# kod için geçerlidir.
+Yalnızca C# kodu için bu bölümdeki biçimlendirme kurallarını uygulayın.
 
 #### <a name="newline"></a>Yeni satır seçenekleri
 
-Bu biçimlendirme kuralları kodunu biçimlendirmek için yeni satır kullanımını ilgilendiren.
+Bu biçimlendirme kurallarını kod biçimlendirmek için yeni satırlar kullanımını ilgilendiriyor.
 
-Aşağıdaki tabloda "yeni satır" kuralı adları gösterir. geçerli diller, varsayılan değerler ve Visual Studio sürümü ilk desteklenen:
+Aşağıdaki tabloda "Yeni satıra" kuralı adları gösterir. geçerli diller, varsayılan değerler ve öncelikle Visual Studio sürümü desteklenir:
 
-| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_new_line_before_open_brace |  C# | tüm | 15.3  |
 | csharp_new_line_before_else |  C# | true | 15.3  |
@@ -1281,15 +1281,15 @@ Aşağıdaki tabloda "yeni satır" kuralı adları gösterir. geçerli diller, v
 | csharp_new_line_before_members_in_anonymous_types |  C# | true | 15.3  |
 | csharp_new_line_between_query_expression_clauses |  C# | true | 15.3  |
 
-**CSharp\_yeni\_satır\_önce\_open_brace**
+**CSharp\_yeni\_satırı\_önce\_open_brace**
 
-Bu kural bir açma ayracı olup olmadığını ilgiliyse `{` önceki kod aynı satır veya yeni bir satır yerleştirilmelidir. Bu kural için belirtmezseniz **true** veya **false**. Bunun yerine, belirttiğiniz **tüm**, **hiçbiri**, veya bir veya daha fazla öğe gibi code **yöntemleri** veya **özellikleri**, bu kuralın ne zaman çalıştırılması tanımlamak için uygulanır. İzin verilen değerlerin tam listesi aşağıdaki tabloda gösterilmiştir:
+Bu kural, bir açık küme ayracı olup olmadığını işlemiyle ilgili `{` projeler yukarıdaki kodla aynı satırda veya yeni bir satıra yerleştirilmelidir. Bu kural için belirtmezseniz **true** veya **false**. Bunun yerine, belirttiğiniz **tüm**, **hiçbiri**, veya bir veya daha fazla öğe gibi kod **yöntemleri** veya **özellikleri**, bu kuralı ne zaman çalıştırılması tanımlamak için uygulanır. İzin verilen değerler tam listesini aşağıdaki tabloda gösterilmiştir:
 
 | Değer | Açıklama
 | ------------- |:-------------|
-| erişimciler, anonymous_methods, anonymous_types, control_blocks, olaylar, dizin oluşturucular, Lambda'lar, local_functions, yöntemleri, object_collection, özellikler, türleri.<br>(İle birden çok tür için ayrı ','). | Küme parantezleri ("Allman" stil olarak da bilinir) belirtilen kod öğeleri için yeni bir satır üzerinde olmasını gerektirir |
-| tüm | Küme ayraçları tüm ifadeler ("Allman" stil) için yeni bir satır üzerinde olmasını gerektirir |
-| yok | Küme parantezleri ("K & R") tüm ifadeleri için aynı satır üzerinde olmasını gerektirir |
+| erişimciler anonymous_methods, anonymous_types, control_blocks, olaylar, dizin oluşturucular, lambda ifadeleri, local_functions, yöntemleri, object_collection, özellikleri, türleri.<br>(Birden çok tür için Ayır ','). | Belirtilen kod öğelerini ("Allman" stil olarak da bilinir) için yeni bir satırdsa olacak şekilde küme ayraçları gerektirin |
+| tüm | Tüm ifadeler ("Allman" stil) için yeni bir satırdsa olacak şekilde küme ayraçları gerektirin |
+| yok | Küme ayraçları ("K & R") tüm ifadeler için aynı satırda olmasını gerektirin |
 
 Kod örnekleri:
 
@@ -1311,10 +1311,10 @@ void MyMethod() {
 }
 ```
 
-**CSharp\_yeni\_satır\_before_else**
+**CSharp\_yeni\_satırı\_before_else**
 
 - Bu kural ayarlandığında **true**, yerleştirin `else` yeni bir satıra deyimleri.
-- Bu kural ayarlandığında **false**, yerleştirin `else` aynı satırda deyimleri.
+- Bu kural ayarlandığında **false**, yerleştirin `else` deyimleri aynı satırda.
 
 Kod örnekleri:
 
@@ -1335,10 +1335,10 @@ if (...) {
 }
 ```
 
-**CSharp\_yeni\_satır\_before_catch**
+**CSharp\_yeni\_satırı\_before_catch**
 
 - Bu kural ayarlandığında **true**, yerleştirin `catch` yeni bir satıra deyimleri.
-- Bu kural ayarlandığında **false**, yerleştirin `catch` aynı satırda deyimleri.
+- Bu kural ayarlandığında **false**, yerleştirin `catch` deyimleri aynı satırda.
 
 Kod örnekleri:
 
@@ -1359,10 +1359,10 @@ try {
 }
 ```
 
-**CSharp\_yeni\_satır\_before_finally**
+**CSharp\_yeni\_satırı\_before_finally**
 
-- Bu kural ayarlandığında **true**, gerektiren `finally` deyimleri kapanış ayracı sonra yeni bir satırda olmalıdır.
-- Bu kural ayarlandığında **false**, gerektiren `finally` deyimleri kapatılan parantez ile aynı satırda olmalıdır.
+- Bu kural ayarlandığında **true**, gerekli `finally` kapatma küme ayracından sonra yeni bir satıra olmasını deyimleri.
+- Bu kural ayarlandığında **false**, gerekli `finally` kapanış küme ayracı ile aynı satırda olmasını deyimleri.
 
 Kod örnekleri:
 
@@ -1388,10 +1388,10 @@ try {
 }
 ```
 
-**CSharp\_yeni\_satır\_önce\_üyeleri\_içinde\_object_initializers**
+**CSharp\_yeni\_satırı\_önce\_üyeleri\_içinde\_object_initializers**
 
-- Bu kural ayarlandığında **doğru**, ayrı satırlara olmasını nesne intiializers üyeleri gerektirir.
-- Bu kural ayarlandığında **yanlış**, aynı çizgi üzerinde olmasını nesne başlatıcıları üyeleri gerektirir.
+- Bu kural ayarlandığında **true**, üyelerinin nesne intiializers ayrı satırlarda olmasını gerektirir.
+- Bu kural ayarlandığında **false**, aynı satırda bulunması için nesne başlatıcıları üyeleri gerektirir.
 
 Kod örnekleri:
 
@@ -1410,10 +1410,10 @@ var z = new B()
 }
 ```
 
-**CSharp\_yeni\_satır\_önce\_üyeleri\_içinde\_anonymous_types**
+**CSharp\_yeni\_satırı\_önce\_üyeleri\_içinde\_anonymous_types**
 
-- Bu kural ayarlandığında **doğru**, ayrı satırlara olmasını anonim türdeki üye gerektirir.
-- Bu kural ayarlandığında **yanlış**, aynı çizgi üzerinde olmasını anonim türdeki üye gerektirir.
+- Bu kural ayarlandığında **true**, ayrı satırlarda olmasını anonim türlerin üyelerini gerektirir.
+- Bu kural ayarlandığında **false**, aynı satırda olmasını anonim türlerin üyelerini gerektirir.
 
 Kod örnekleri:
 
@@ -1434,8 +1434,8 @@ var z = new
 
 **csharp_new_line_between_query_expression_clauses**
 
-- Bu kural ayarlandığında **doğru**, ayrı satırlara olması için sorgu ifadesi yan tümceleri öğeleri gerektirir.
-- Bu kural ayarlandığında **yanlış**, aynı çizgi üzerinde olacak şekilde sorgu ifadesi yan tümceleri öğeleri gerektirir.
+- Bu kural ayarlandığında **true**, öğeleri sorgu ifadesi tümceleri ayrı satırlarda olmasını gerektirir.
+- Bu kural ayarlandığında **false**, öğeleri sorgu ifadesi tümceleri aynı satırda olmasını gerektirir.
 
 Kod örnekleri:
 
@@ -1464,13 +1464,13 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### <a name="indent"></a>Girinti seçenekleri
+#### <a name="indent"></a>Girintileme seçenekleri
 
-Bu biçimlendirme kuralları biçim kodu girinti kullanımını ilgilendiren.
+Bu biçimlendirme kuralları biçimi koda girinti kullanımını ilgilendiriyor.
 
-Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_indent_case_contents |  C# | true | 15.3  |
 | csharp_indent_switch_labels |  C# | true | 15.3  |
@@ -1478,8 +1478,8 @@ Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve ilk
 
 **CSharp\_girinti\_case_contents**
 
-- Bu kural ayarlandığında **true**, girinti `switch` durumda içeriği.
-- Bu kural ayarlandığında **false**, değil girinti `switch` durumda içeriği.
+- Bu kural ayarlandığında **true**, girinti `switch` case içerikleri.
+- Bu kural ayarlandığında **false**, değil Girintile `switch` case içerikleri.
 
 Kod örnekleri:
 
@@ -1514,7 +1514,7 @@ switch(c) {
 **CSharp\_girinti\_switch_labels**
 
 - Bu kural ayarlandığında **true**, girinti `switch` etiketler.
-- Bu kural ayarlandığında **false**, değil girinti `switch` etiketler.
+- Bu kural ayarlandığında **false**, değil Girintile `switch` etiketler.
 
 Kod örnekleri:
 
@@ -1548,13 +1548,13 @@ default:
 
 **CSharp\_indent_labels**
 
-Bu kural kabul etmediği bir **true** veya **yanlış** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
+Bu kural kabul etmediği bir **true** veya **false** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
-| flush_left | Soldaki sütun etiketleri yerleştirilir |
+| flush_left | Etiketleri en soldaki sütuna yerleştirilir. |
 | one_less_than_current | Etiketler tek tek geçerli bağlam için daha az girinti yerleştirilir |
-| no_change | Etiketleri aynı girinti geçerli bağlamı olarak yerleştirilmiş |
+| no_change | Etiketleri geçerli içerik olarak aynı girinti yer alır |
 
 Kod örnekleri:
 
@@ -1611,11 +1611,11 @@ csharp_indent_labels = flush_left
 
 #### <a name="spacing"></a>Aralık Seçenekleri
 
-Bu biçimlendirme kuralları kodunu biçimlendirmek için boşluk karakterleri kullanımını ilgilendiren.
+Bu biçimlendirme kuralları koduna boşluk karakterleri kullanımını ilgilendiriyor.
 
-Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_space_after_cast |  C# | false | 15.3  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
@@ -1631,8 +1631,8 @@ Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve ilk
 
 **CSharp\_alanı\_after_cast**
 
-- Bu kural ayarlandığında **doğru**, bir cast ve değer arasında bir alan gerektirir.
-- Bu kural ayarlandığında **false**, gerektiren _hiçbir_ dönüştürme ve değer arasında boşluk.
+- Bu kural ayarlandığında **true**, atama ve değer arasında bir alan gerektirir.
+- Bu kural ayarlandığında **false**, gerekli _hiçbir_ cast değeri arasındaki boşluk.
 
 Kod örnekleri:
 
@@ -1646,8 +1646,8 @@ int y = (int)x;
 
 **csharp_space_after_keywords_in_control_flow_statements**
 
-- Bu kural ayarlandığında **true**, gibi bir alan anahtar sözcüğü bir denetim akışı deyiminde sonra gereken bir `for` döngü.
-- Bu kural ayarlandığında **false**, gerektiren _hiçbir_ anahtar sözcüğü bir denetim akışı deyiminde sonra gibi boşluk bir `for` döngü.
+- Bu kural ayarlandığında **true**, gibi bir alan sonra bir denetim akışı ifadesi bir anahtar sözcük gerektiren bir `for` döngü.
+- Bu kural ayarlandığında **false**, gerekli _hiçbir_ gibi bir anahtar sözcüğü bir denetim akışı ifadesi içinde'sonra boşluk bir `for` döngü.
 
 Kod örnekleri:
 
@@ -1661,8 +1661,8 @@ for(int i;i<x;i++) { ... }
 
 **csharp_space_between_method_declaration_parameter_list_parentheses**
 
-- Bu kural ayarlandığında **doğru**, açma parantezi sonra ve kapanış parantezi yöntemi bildirimi parametre listesini önce bir boşluk karakteri yerleştirin.
-- Bu kural ayarlandığında **yanlış**, boşluk karakterleri parantez sonra ve kapanış parantezi yöntemi bildirimi parametre listesini önce yerleştirmeyin.
+- Bu kural ayarlandığında **true**, açma parantezinden sonra ve bir yöntem bildiriminin parametre listesinin kapatma parantezinden önce bir boşluk karakteri yerleştirin.
+- Bu kural ayarlandığında **false**, boşluk karakterleri açma parantezinden sonra ve kapatma parantezinden yöntemi bildirimi parametre listesini önce yerleştirmeyin.
 
 Kod örnekleri:
 
@@ -1676,8 +1676,8 @@ void Bark(int x) { ... }
 
 **csharp_space_between_method_call_parameter_list_parentheses**
 
-- Bu kural ayarlandığında **doğru**, açma parantezi sonra ve bir yöntem çağrısının kapanış parantezi önce bir boşluk karakteri yerleştirin.
-- Bu kural ayarlandığında **yanlış**, boşluk karakterleri parantez sonra ve bir yöntem çağrısının kapanış parantezi önce yerleştirmeyin.
+- Bu kural ayarlandığında **true**, açma parantezinden sonra ve bir yöntem çağrısının kapatma parantezinden önce bir boşluk karakteri yerleştirin.
+- Bu kural ayarlandığında **false**, boşluk karakterleri açma parantezinden sonra ve bir yöntem çağrısının kapatma parantezinden önce yerleştirmeyin.
 
 Kod örnekleri:
 
@@ -1691,15 +1691,15 @@ MyMethod(argument);
 
 **csharp_space_between_parentheses**
 
-Bu kural aşağıdaki tablodan bir veya daha fazla değerleri kabul eder:
+Bu kural, aşağıdaki tablodaki değerlerden bir veya daha fazla kabul eder:
 
 | Değer | Açıklama |
 | ----- |:------------|
-| control_flow_statements | Denetim akışı deyimlerinin ayraçlar arasında yer alan |
-| ifadeler | İfadelerin ayraçlar arasında yer alan |
-| type_casts | Tür atamaları parantezlerde arasında yer alan |
+| control_flow_statements | Denetim akış deyimlerindeki parantez arasında boşluk koyun |
+| ifadeler | İfadelerin parantezler arasında boşluk koyun |
+| type_casts | Tür atamaları parantezler arasında boşluk koyun |
 
-Bu kuralı atla veya başka bir değer kullanmak `control_flow_statements`, `expressions`, veya `type_casts`, ayar uygulanmaz.
+Bu kural atlayın veya dışında bir değer kullanın, `control_flow_statements`, `expressions`, veya `type_casts`, ayar uygulanmaz.
 
 Kod örnekleri:
 
@@ -1716,8 +1716,8 @@ int y = ( int )x;
 
 **CSharp\_alanı\_önce\_iki nokta üst üste\_içinde\_inheritance_clause**
 
-- Bu kural ayarlandığında **doğru**, iki nokta üst üste için taban veya arabirimleri tür bildiriminde önce bir alan gerektirir.
-- Bu kural ayarlandığında **false**, gerektiren _hiçbir_ iki nokta üst üste için taban veya arabirimleri tür bildiriminde önce boşluk.
+- Bu kural ayarlandığında **true**, iki nokta üst üste için tabanları veya bir tür bildiriminde arabirimleri önce bir alan gerektirir.
+- Bu kural ayarlandığında **false**, gerekli _hiçbir_ için iki nokta üst üste tabanları veya bir tür bildiriminde arabirimleri önce boşluk.
 
 Kod örnekleri:
 
@@ -1728,7 +1728,7 @@ interface I
 
 }
 
-class C : I 
+class C : I
 {
 
 }
@@ -1739,7 +1739,7 @@ interface I
 
 }
 
-class C: I 
+class C: I
 {
 
 }
@@ -1747,8 +1747,8 @@ class C: I
 
 **CSharp\_alanı\_sonra\_iki nokta üst üste\_içinde\_inheritance_clause**
 
-- Bu kural ayarlandığında **doğru**, sonra iki nokta üst üste için taban veya arabirimleri türü bildiriminde bir alan gerektirir.
-- Bu kural ayarlandığında **false**, gerektiren _hiçbir_ iki nokta üst üste için taban veya arabirimleri tür bildiriminde sonra boşluk.
+- Bu kural ayarlandığında **true**, iki nokta üst üste için tabanları veya bir tür bildiriminde arabirimleri sonra bir boşluk gerektirir.
+- Bu kural ayarlandığında **false**, gerekli _hiçbir_ için iki nokta üst üste tabanları ya da bir tür bildiriminde arabirimleri sonra boşluk.
 
 Kod örnekleri:
 
@@ -1759,7 +1759,7 @@ interface I
 
 }
 
-class C : I 
+class C : I
 {
 
 }
@@ -1770,23 +1770,23 @@ interface I
 
 }
 
-class C :I 
+class C :I
 {
 
 }
 ```
 
-**CSharp\_alanı\_geçici\_binary_operators**
+**CSharp\_alanı\_etrafında\_binary_operators**
 
-Bu kural aşağıdaki tablodan bir değeri kabul eder:
+Bu kural aşağıdaki tablodan bir değer kabul eder:
 
 | Değer | Açıklama |
 | ----- |:------------|
-| before_and_after | Önce ve sonra ikili işleç boşluk Ekle |
-| yok | Önce ve sonra ikili işleç boşlukları kaldırın |
-| yoksayma | İkili işleçler boşluk yoksay |
+| before_and_after | Önce ve ikili işleç sonra boşluk Ekle |
+| yok | Önce ve sonra ikili işleç boşlukları Kaldır |
+| yoksayma | İkili işleçler etrafındaki boşlukları yoksay |
 
-Bu kuralı atla veya başka bir değer kullanmak `before_and_after`, `none`, veya `ignore`, ayar uygulanmaz.
+Bu kural atlayın veya dışında bir değer kullanın, `before_and_after`, `none`, veya `ignore`, ayar uygulanmaz.
 
 Kod örnekleri:
 
@@ -1803,8 +1803,8 @@ return x  *  (x-y);
 
 **csharp_space_between_method_declaration_empty_parameter_list_parentheses**
 
-- Bu kural ayarlandığında **doğru**, bir yöntem bildirimi için boş parametre listesi ayraçlar içinde boşluk.
-- Bu kural ayarlandığında **yanlış**, alan için bir yöntem bildirimi boş parametre listesi ayraçlar içinde kaldırın.
+- Bu kural ayarlandığında **true**, yöntem bildiriminde için boş parametre listesi parantezlerinin içine boşluk ekleyin.
+- Bu kural ayarlandığında **false**, yöntem bildiriminde için boş parametre listesi parantezlerinin içine boşluk kaldırın.
 
 Kod örnekleri:
 
@@ -1834,8 +1834,8 @@ void Goo(int x)
 
 **csharp_space_between_method_call_name_and_opening_parenthesis**
 
-- Bu kural ayarlandığında **doğru**, yöntem çağrısı adı ve parantez arasında boşluk.
-- Bu kural ayarlandığında **yanlış**, yöntem çağrısı adı ve parantez arasındaki boşluğu kaldırın.
+- Bu kural ayarlandığında **true**, yöntem çağrısı adı ve açma parantezi arasına boşluk ekleyin.
+- Bu kural ayarlandığında **false**, yöntem çağrısı adı ve açma parantezi arasına boşluk kaldırın.
 
 Kod örnekleri:
 
@@ -1865,8 +1865,8 @@ void Goo(int x)
 
 **csharp_space_between_method_call_empty_parameter_list_parentheses**
 
-- Bu kural ayarlandığında **doğru**, boş bağımsız değişken listesi parantez içinde boşluk.
-- Bu kural ayarlandığında **yanlış**, alanı boş bağımsız değişken listesi parantez içinde kaldırın.
+- Bu kural ayarlandığında **true**, boş bağımsız değişken listesi parantezlerinin içine boşluk ekleyin.
+- Bu kural ayarlandığında **false**, boş bağımsız değişken listesi parantezlerinin içine boşluk kaldırın.
 
 Kod örnekleri:
 
@@ -1914,19 +1914,19 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 
 #### <a name="wrapping"></a>Kaydırma seçenekleri
 
-Bu biçimlendirme kuralları deyimleri ve kod blokları için ayrı satırlara karşı tek satırları kullanımını ilgilendiren.
+Bu biçimlendirme kuralları ifadeleri ve kod blokları için ayrı satırlara karşı tek satır kullanımını ilgilendiriyor.
 
-Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve ilk desteklenen Visual Studio sürümünü gösterir:
+Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
 
-| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürümü |
+| Kural adı | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_preserve_single_line_statements |  C# | true | 15.3  |
 | csharp_preserve_single_line_blocks |  C# | true | 15.3  |
 
 **csharp_preserve_single_line_statements**
 
-- Bu kural ayarlandığında **doğru**, ifadeler ve üye bildirimleri aynı çizgi üzerinde bırakın.
-- Bu kural ayarlandığında **yanlış**, ifadeler ve üye bildirimleri farklı satırlarına bırakın.
+- Bu kural ayarlandığında **true**, ifadeler ve üye bildirimlerini aynı satırda bırakın.
+- Bu kural ayarlandığında **false**, ifadeler ve üye bildirimlerini farklı satırlarda bırakın.
 
 Kod örnekleri:
 
@@ -1941,8 +1941,8 @@ string name = "John";
 
 **csharp_preserve_single_line_blocks**
 
-- Bu kural ayarlandığında **doğru**, tek bir satırda kod bloğu bırakın.
-- Bu kural ayarlandığında **yanlış**, kod bloğunun ayrı satırlara bırakın.
+- Bu kural ayarlandığında **true**, kod bloğu tek satırda bırak.
+- Bu kural ayarlandığında **false**, kod bloğu ayrı satırlarda bırakın.
 
 Kod örnekleri:
 
@@ -1966,8 +1966,8 @@ csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 ```
 
-## <a name="example-editorconfig-file"></a>Örnek EditorConfig dosyası
-Başlamanıza yardımcı olmak için İşte bir örnek *.editorconfig* varsayılan seçenekleri dosyasıyla:
+## <a name="example-editorconfig-file"></a>EditorConfig dosyası örneği
+Başlamanıza yardımcı olmak için bir örnek aşağıdadır *.editorconfig* dosyasıyla varsayılan seçenekleri:
 
 ```EditorConfig
 ###############################
@@ -2013,8 +2013,8 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:none
-dotnet_prefer_inferred_tuple_names = true:suggestion
-dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:none
 
 ###############################
@@ -2024,7 +2024,7 @@ dotnet_style_prefer_auto_properties = true:none
 # Style Definitions
 dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
 
-# Use PascalCase for constant fields  
+# Use PascalCase for constant fields
 dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
 dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
 dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
@@ -2080,14 +2080,14 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 
 # Indentation preferences
-csharp_indent_case_contents = true 
-csharp_indent_switch_labels = true 
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 
 # Space preferences
 csharp_space_after_cast = false
 csharp_space_after_keywords_in_control_flow_statements = true
-csharp_space_between_method_call_parameter_list_parentheses = false 
+csharp_space_between_method_call_parameter_list_parentheses = false
 csharp_space_between_method_declaration_parameter_list_parentheses = false
 csharp_space_between_parentheses = false
 csharp_space_before_colon_in_inheritance_clause = true
@@ -2114,6 +2114,6 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Hızlı Eylemler](../ide/quick-actions.md)
-- [.NET EditorConfig için adlandırma kuralları](../ide/editorconfig-naming-conventions.md)
+- [EditorConfig için .NET adlandırma kuralları](../ide/editorconfig-naming-conventions.md)
 - [Taşınabilir özel düzenleyici seçenekleri oluşturma](../ide/create-portable-custom-editor-options.md)
-- [.NET derleme platformun .editorconfig dosyası](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [.NET derleyici platformu'nın .editorconfig dosyasındaki](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

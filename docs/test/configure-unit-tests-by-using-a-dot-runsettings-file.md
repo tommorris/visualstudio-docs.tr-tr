@@ -1,5 +1,5 @@
 ---
-title: .Runsettings dosyasını ile birim testlerini yapılandırma
+title: Birim testleri bir .runsettings dosyası ile yapılandırma
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,36 +9,36 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d66d1027358e173f0ee86c4c799347b555196392
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303074"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978417"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
-Birim testleri Visual Studio kullanarak yapılandırılabilir bir *.runsettings* dosya. Örneğin, üzerinde yapılan testler, dizin test sonuçlarını ya da bir test çalışması sırasında toplanan veriler için .NET Framework sürümünü değiştirebilirsiniz.
+Kullanarak birim testlerini Visual Studio'da yapılandırılabilir bir *.runsettings* dosya. Örneğin, üzerinde yapılan testler, test sonuçlarını ya da bir test çalıştırması sırasında toplanan verileri için dizin .NET Framework sürümünü değiştirebilirsiniz.
 
-Çalıştırma ayarlarını dosyaları isteğe bağlıdır. Özel bir yapılandırma gerektirmeyen, gerekmeyen bir *.runsettings* dosya. En yaygın kullanımı bir *.runsettings* dosyasıdır özelleştirmek için [kod kapsamı çözümlemeyi](../test/customizing-code-coverage-analysis.md).
+Çalışma ayarları dosyası isteğe bağlıdır. Özel bir yapılandırma gerektirmeyen, ihtiyacınız olmayan bir *.runsettings* dosya. En yaygın kullanımı bir *.runsettings* dosyasıdır özelleştirmek için [kod kapsamı analizi](../test/customizing-code-coverage-analysis.md).
 
-## <a name="specify-a-run-settings-file"></a>Bir çalıştırma ayarlarını belirtin
+## <a name="specify-a-run-settings-file"></a>Çalıştırma ayarları dosyasını belirtin
 
-Çalışma ayarları dosyaları, komut satırından, IDE içinde ya da içinde çalışan testler yapılandırmak için kullanılabilir bir [iş akışı derleme](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) Visual Studio Team Services (VSTS) veya Team Foundation Server (TFS) kullanarak.
+Çalıştırma ayarları dosyaları, gelen çalıştırmak testlerini yapılandırma için kullanılabilir [komut satırı](vstest-console-options.md), IDE veya içinde bir [iş akışınızı oluşturma](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) Visual Studio Team Services (VSTS) veya Team Foundation Server (TFS) kullanarak.
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>IDE içinde bir çalıştırma ayarlarını belirtin
+### <a name="specify-a-run-settings-file-in-the-ide"></a>IDE içinde çalıştırma ayarları dosyasını belirtin
 
-Seçin **Test** > **Test ayarları** > **Test ayarları dosyasını seçin** ve ardından *.runsettings*dosya. Dosya kasasındaki **Test ayarlarını** menü ve seçin veya bu seçimini kaldırın. Seçtiğiniz her seçili olsa da, çalışma ayarları dosyasının geçerli **kod kapsamını çözümleme**.
+Seçin **Test** > **Test ayarları** > **Test ayarları dosyasını Seç** seçip *.runsettings*dosya. Dosya çubuğunda görünür **Test ayarları** menü ve seçebilir veya seçimi. Seçili durumdayken, seçtiğiniz her çalışma ayarları dosyası geçerli **kod kapsamı analizi**.
 
-![Visual Studio'da Test ayarlarını Dosya menüsünü seçin](media/select-test-settings-file.png)
+![Visual Studio'da Test ayarları dosyası menüsü seçin](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>Bir komut satırından çalıştırma ayarlarını belirtin
+### <a name="specify-a-run-settings-file-at-the-command-line"></a>Komut satırına bir çalıştırma ayarları dosyasını belirtin
 
-Komut satırından testleri çalıştırmak için kullandığınız *vstest.console.exe* ve ayarlar dosyasını kullanarak belirttiğiniz **/Settings** parametresi.
+Komut satırından testleri çalıştırmak için kullanın *vstest.console.exe* kullanarak ayarları dosyasını belirtin **/Settings** parametresi.
 
 1. Visual Studio Geliştirici Komut Satırını başlatın:
 
-   Windows **Başlat** menüsünde seçin **Visual Studio 2017** > **VS 2017 için geliştirici komut istemi**.
+   Windows üzerinde **Başlat** menüsünde seçin **Visual Studio 2017** > **VS 2017 için geliştirici komut istemi**.
 
 2. Benzer şekilde bir komut girin:
 
@@ -46,25 +46,27 @@ Komut satırından testleri çalıştırmak için kullandığınız *vstest.cons
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-## <a name="customize-tests"></a>Testlerini özelleştirme
+Daha fazla bilgi için [VSTest.Console.exe komut satırı seçenekleri](vstest-console-options.md).
+
+## <a name="customize-tests"></a>Testleri özelleştirme
 
 Kullanarak testlerinizi özelleştirmek için bir *.runsettings* dosya, aşağıdaki adımları izleyin:
 
-1. Visual Studio çözümünüz için bir XML dosyası ekleyin ve kaydedileceği *test.runsettings*.
+1. Visual Studio çözümünüze bir XML dosyası ekleyin ve kaydedileceği *test.runsettings*.
 
    > [!TIP]
-   > Bu uzantıyı kullanan sürece dosya adı önemli değildir *.runsettings*.
+   > Uzantı kullandığınız sürece dosya adı önemli değildir *.runsettings*.
 
 1. Aşağıdaki örnek XML'den dosya içeriğini değiştirin ve gerektiği gibi özelleştirin.
 
-1. Üzerinde **Test** menüsünde seçin **Test ayarları** > **Test ayarları dosyasını seçin**. Gözat *.runsettings* oluşturduğunuz dosya ve ardından **Tamam**.
+1. Üzerinde **Test** menüsünde seçin **Test ayarları** > **Test ayarları dosyasını Seç**. Gözat *.runsettings* dosyası oluşturulur ve ardından **Tamam**.
 
    > [!TIP]
-   > Birden fazla oluşturabileceğiniz *.runsettings* dosya, çözümünüz ve gerektiği gibi etkin test ayarları dosyası olarak seçin.
+   > Birden fazla oluşturabilirsiniz *.runsettings* dosya çözümünüzde ve gerektiğinde etkin test ayarları dosyası seçin.
 
 ## <a name="example-runsettings-file"></a>Örnek *.runsettings* dosyası
 
-Aşağıdaki XML tipik bir içeriğini gösterir *.runsettings* dosya. Varsayılan değeri olduğundan dosyasının her öğesinin isteğe bağlıdır.
+Aşağıdaki XML içeriği tipik bir gösterilir *.runsettings* dosya. Varsayılan değeri olduğundan, dosyanın her öğe isteğe bağlıdır.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -144,9 +146,9 @@ Aşağıdaki XML tipik bir içeriğini gösterir *.runsettings* dosya. Varsayıl
 
 ## <a name="elements-of-a-runsettings-file"></a>Öğeleri bir *.runsettings* dosyası
 
-Öğelerini bölümlerde ayrıntılı bir *.runsettings* dosya.
+Aşağıdaki bölümlerde ayrıntılı öğelerini bir *.runsettings* dosya.
 
-### <a name="run-configuration"></a>Çalışma yapılandırması
+### <a name="run-configuration"></a>Çalıştırma yapılandırma
 
 ```xml
 <RunConfiguration>
@@ -159,21 +161,21 @@ Aşağıdaki XML tipik bir içeriğini gösterir *.runsettings* dosya. Varsayıl
 </RunConfiguration>
 ```
 
-**RunConfiguration** öğesi aşağıdaki öğeleri içerir:
+**RunConfiguration** öğesi, aşağıdaki öğeleri içerebilir:
 
 |Düğüm|Varsayılan|Değerler|
 |----------|-------------|------------|
-|**ResultsDirectory**||Test sonuçları yerleştirildiği dizin.|
-|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Bu ayar bulmak ve testler yürütmek için kullanılan birim test çerçevesi sürümünü belirtir. Birim test projesinin yapı özelliklerinde belirttiğiniz .NET platformu sürümünden farklı olabilir.|
+|**ResultsDirectory**||Test sonuçlarını yerleştirildiği dizin.|
+|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Bu ayar, bulmak ve testleri yürütmek için kullanılan birim test çerçevesi sürümünü belirtir. Birim test projesinin yapı özelliklerinde belirttiğiniz .NET platformu sürümünden farklı olabilir.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|yanlış, doğru|
 |**TestAdaptersPaths**||Bir veya daha fazla yol TestAdapters bulunduğu dizine|
-|**MaxCpuCount**|1.|Bu çalışan birim testleri zaman denetimleri paralel test yürütmesi derecesini ayarlama, makinede kullanılabilir çekirdekleri kullanılarak. Test yürütme altyapısı, her kullanılabilir çekirdek ayrı bir işlem olarak başlatır ve her çekirdek ile testleri çalıştırmak için bir kapsayıcı sağlar. Bir kapsayıcı, bir derleme, DLL veya ilgili yapı olabilir. Test kapsayıcısı zamanlama birimidir. Her kapsayıcısında testleri test çerçevesi göre çalıştırılır. Birçok kapsayıcıları varsa, daha sonra bir kapsayıcıda testleri çalıştırma bitiş işlerken bunlar sonraki kullanılabilir kapsayıcı verilir.<br /><br />MaxCpuCount olabilir:<br /><br />n, 1 burada < n = < çekirdek sayısı =: n işlemlerinin tasarrufundadır başlattı<br /><br />n, burada n herhangi bir değer =: başlatılan işlem sayısı kullanılabilir çekirdek sayısı kadar olabilir|
-|**TestSessionTimeout**||Kullanıcıların belirli bir zaman aşımı aştığında bir test oturumu sonlandır olanak tanır. Ayar kaynakları da tüketilen zaman aşımı sağlar ve test oturumları bir süre için kısıtlanmıştır. Bulunan bir ayardır **Visual Studio 2017 sürüm 15,5** ve daha sonra.|
+|**MaxCpuCount**|1.|Bu, birim testleri çalıştırma ayarı paralel test yürütme düzeyini denetler, makinede kullanılabilir çekirdek kullanarak. Test yürütme altyapısının kullanılabilir her Çekirdekte ayrı bir işlem olarak başlar ve her çekirdek ile testleri çalıştırmak için bir kapsayıcı sağlar. Bir kapsayıcı, bir derleme, DLL veya ilgili yapıt olabilir. Zamanlama birimi test kapsayıcısıdır. Her bir kapsayıcıda test çerçevesi göre testler çalıştırılır. Çok sayıda kapsayıcı varsa, ardından bir kapsayıcı içinde testleri çalıştırma bitiş işlediği gibi bunlar sonraki kullanılabilir kapsayıcı verilir.<br /><br />MaxCpuCount olabilir:<br /><br />1 burada n < = n < = çekirdek sayısı: n işlemlerinin tasarrufundadır başlattı<br /><br />n, burada n herhangi bir değer =: işlem sayısı, kullanılabilir çekirdek sayısı kadar olabilir|
+|**TestSessionTimeout**||Kullanıcıların belirli bir zaman aşımı aştığında bir sınama oturumu sonlandırmak olanak tanır. Bir süre için ayar kaynakları da tüketilir bir zaman aşımı sağlar ve test oturumları kısıtlanmıştır. Ayar kullanılabilir **Visual Studio 2017 sürüm 15.5** ve daha sonra.|
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Tanılama veri bağdaştırıcıları (veri toplayıcıları)
 
-**DataCollectors** öğesi tanılama veri bağdaştırıcıları ayarlarını belirtir. Tanılama veri bağdaştırıcıları ortamı ve test altındaki uygulama hakkında ek bilgi toplayın. Her bağdaştırıcı varsayılan ayarlara sahiptir ve varsayılan değerleri kullanmak istemiyorsanız, ayarları sağlamak yeterlidir.
+**DataCollectors** öğesi tanılama veri bağdaştırıcılarının ayarlarını belirtir. Tanılama veri bağdaştırıcılarını ve ortam test altındaki uygulama hakkında ek bilgi toplayın. Her bağdaştırıcı varsayılan ayarlara sahiptir ve yalnızca varsayılan değerleri kullanmak istemiyorsanız ayarları sağlamanız gerekir.
 
 #### <a name="code-coverage-adapter"></a>Kod kapsamı bağdaştırıcısı
 
@@ -192,11 +194,11 @@ Aşağıdaki XML tipik bir içeriğini gösterir *.runsettings* dosya. Varsayıl
 </CodeCoverage>
 ```
 
-Kod kapsamı veri toplayıcısı uygulama kodu bölümlerinin testte uygulandığı bir günlük oluşturur. Kod kapsamı ayarlarını özelleştirme hakkında daha fazla bilgi için bkz: [kod kapsamı çözümlemeyi özelleştirme](../test/customizing-code-coverage-analysis.md).
+Kod kapsamı veri toplayıcısı uygulama kodu bölümlerinin testte uygulandığı bir günlük oluşturur. Kod kapsamının ayarlarını özelleştirme hakkında daha fazla bilgi için bkz. [kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md).
 
-#### <a name="video-data-collector"></a>Video veri toplayıcısı
+#### <a name="video-data-collector"></a>Video veri toplayıcı
 
-Video veri toplayıcı testlerini çalıştırdığınızda, kaydı ekran yakalar. Bu kayıt, UI testleri sorun giderme için yararlıdır. Video veri toplayıcı kullanılabilir **Visual Studio 2017 sürüm 15,5** ve daha sonra.
+Testler varken ekran kaydı video veri toplayıcı yakalar. Bu kayıt, UI testlerine ilişkin sorun giderme için kullanışlıdır. Video veri toplayıcı kullanılabilir **Visual Studio 2017 sürüm 15.5** ve daha sonra.
 
 Başka türde bir tanılama veri bağdaştırıcıları özelleştirmek için bir [test ayarları dosyası](../test/collect-diagnostic-information-using-test-settings.md).
 
@@ -210,7 +212,7 @@ Başka türde bir tanılama veri bağdaştırıcıları özelleştirmek için bi
 </TestRunParameters>
 ```
 
-Test çalışması parametreleri değişkenleri ve çalışma zamanında testleri için kullanılabilir olan değerler tanımlamak için bir yol sağlar. Kullanarak parametreler erişim <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> özelliği:
+Test çalıştırması parametreleri, değişkenler ve testlere çalışma zamanında kullanılabilir olan değerler tanımlamak için bir yol sağlar. Kullanarak parametreleri erişim <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> özelliği:
 
 ```csharp
 [TestMethod]
@@ -219,9 +221,9 @@ public void HomePageTest()
     string appURL = TestContext.Properties["webAppUrl"];
 ```
 
-Test çalışması parametrelerini kullanmak için bir özel eklemek <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> alan ve ortak bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> test sınıfınıza özelliği.
+Test çalıştırması parametrelerini kullanmak için özel bir ekleme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> alan ve ortak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> test sınıfınıza özelliği.
 
-### <a name="mstest-run-settings"></a>Mstest'i çalışma ayarları
+### <a name="mstest-run-settings"></a>MSTest çalıştırma ayarları
 
 ```xml
 <MSTest>
@@ -235,22 +237,22 @@ Test çalışması parametrelerini kullanmak için bir özel eklemek <xref:Micro
 </MSTest
 ```
 
-Bu ayarları sahip test yöntemleri çalıştıran test bağdaştırıcısı belirli <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> özniteliği.
+Bu ayarlar sahip test yöntemlerini çalıştıran test bağdaştırıcısına özgüdür <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> özniteliği.
 
 |Yapılandırma|Varsayılan|Değerler|
 |-------------------|-------------|------------|
-|**ForcedLegacyMode**|false|Visual Studio 2012'de mstest'i bağdaştırıcı daha hızlı ve daha ölçeklenebilir yapmak için en iyi duruma getirilmiş. Testlerin çalışma sırası gibi bazı davranışlar Visual Studio'nun önceki sürümlerindekiyle aynı olmayabilir. Bu değer ayarlanırsa **true** eski test bağdaştırıcısını kullanmak için.<br /><br />Örneğin, varsa bu ayarı kullanabilirsiniz bir *app.config* birim testi için belirtilen dosya.<br /><br />Daha yeni bağdaştırıcı kullanmanıza olanak vermek için testlerinizi yeniden düzenlemenizi öneririz.|
-|**IgnoreTestImpact**|false|MSTest veya Microsoft Test Yöneticisi'nde çalıştırıldığında test etkisi özelliği son değişikliklerden etkilenen testleri önceliklendirir. Bu ayar özelliği devre dışı bırakır. Daha fazla bilgi için bkz: [önceki yapıdan sonra hangi testlerin çalıştırılmalıdır](https://msdn.microsoft.com/library/dd286589).|
-|**AyarlarDosyası**||Burada mstest'i bağdaştırıcısı ile kullanmak için test ayarları dosyasını belirtebilirsiniz. Seçerek test ayarları dosyasını belirtebilirsiniz **Test** > **Test ayarlarını** > **Test ayarları dosyasını seçin**.<br /><br />Bu değer belirtirseniz, de ayarlamalısınız **ForcedlegacyMode** için **doğru**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|false|Test çalıştırması tamamlandıktan sonra MSTest kapatılır. Testin bir parçası da sonlandırıldı olarak başlatılan bir işlem. Test Yürütücü Canlı tutmak istiyorsanız, değer kümesine **doğru**. Örneğin, arasında kodlanmış UI testleri çalıştırma tarayıcı tutmak için bu ayarı kullanabilirsiniz.|
-|**DeploymentEnabled**|true|Değeri ayarlarsanız verilen **yanlış**, test yönteminize belirttiğiniz dağıtım öğeleri olmayan dağıtım dizinine kopyalanır.|
-|**CaptureTraceOutput**|true|Kullanarak, test yöntemi için hata ayıklama izleme yazabilirsiniz <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
-|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Bir test çalışması sonra dağıtım dizini korumak için bu değeri ayarlamak **false**.|
-|**MapInconclusiveToFailed**|false|Bir test yetersiz durumuyla tamamlarsa, atlanan durum eşlendi **Test Gezgini**. Başarısız olarak gösterilecek yetersiz testleri istiyorsanız değerine **doğru**.|
-|**InProcMode**|false|Mstest'i bağdaştırıcısı ile aynı işlemde Çalıştırılacak testleri istiyorsanız, bu değer ayarlanırsa **doğru**. Bu ayar, küçük bir performans kazancı sağlar. Ancak, bir özel durum ile bir test bulunup bulunmadığını kalan testleri çalıştırma.|
-|**AssemblyResolution**|false|Bulma ve birim testleri çalıştırırken ek derlemeler için yol belirtebilirsiniz. Örneğin, bu yollar test derleme ile aynı dizinde değil bağımlılık derlemeler için kullanın. Bir yol belirtmek için kullanın bir **dizin yolu** öğesi. Yol, ortam değişkenleri içerebilir.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**ForcedLegacyMode**|false|Visual Studio 2012'de, MSTest bağdaştırıcısı daha hızlı ve daha ölçeklenebilir hale getirilmiş. Testlerin çalışma sırası gibi bazı davranışlar Visual Studio'nun önceki sürümlerindekiyle aynı olmayabilir. Bu değer kümesine **true** eski test bağdaştırıcısı kullanmak için.<br /><br />Örneğin, varsa bu ayarı kullanabilirsiniz bir *app.config* birim testi için belirtilen dosya.<br /><br />Daha yeni bağdaştırıcı kullanmanıza olanak vermek için testlerinizi yeniden düzenlemenizi öneririz.|
+|**IgnoreTestImpact**|false|MSTest veya Microsoft Test Yöneticisi'nde çalıştırıldığında test etkisi özelliği son değişikliklerden etkilenen testleri önceliklendirir. Bu ayar özelliği devre dışı bırakır. Daha fazla bilgi için [önceki derlemeden sonra hangi testlerin çalıştırılmalıdır](https://msdn.microsoft.com/library/dd286589).|
+|**SettingsFile**||Burada MSTest bağdaştırıcısı ile kullanmak için test ayarları dosyası belirtebilirsiniz. Test ayarları dosyasını seçerek belirtebilirsiniz **Test** > **Test ayarlarını** > **Test ayarları dosyasını Seç**.<br /><br />Bu değeri belirtirseniz, aynı zamanda ayarlamalısınız **ForcedlegacyMode** için **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**KeepExecutorAliveAfterLegacyRun**|false|Test çalıştırması tamamlandıktan sonra MSTest kapatılır. Testin bir parçası da sonlandırılan olarak başlatılan bir işlem. Test yürütücüsünü Canlı tutmak istiyorsanız, değer kümesine **true**. Örneğin, tarayıcının kodlanmış UI testleri arasında çalışmasını tutmak için bu ayarı kullanabilirsiniz.|
+|**DeploymentEnabled**|true|Değeri ayarlamanız **false**, test yönteminizde belirttiğiniz dağıtım öğeleri dağıtım dizinine kopyalanır değil.|
+|**CaptureTraceOutput**|true|Hata ayıklama, test yöntemi kullanmanızı yazabileceğiniz <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
+|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Bu değer bir test çalıştırması tamamlandıktan sonra dağıtım Dizini'ni için kümesine **false**.|
+|**MapInconclusiveToFailed**|false|Bir test yetersiz durum tamamlanırsa atlandı durumuna eşlenir **Test Gezgini**. Yetersiz testlerin başarısız olarak gösterilmesini istiyorsanız değerine **true**.|
+|**InProcMode**|false|Testlerinizin aynı işlemde MSTest bağdaştırıcısı olarak çalıştırmak istiyorsanız, bu değeri ayarlamak **true**. Bu ayar, küçük bir performans kazancı sağlar. Ancak bir özel durum ile bir test varsa, kalan testleri çalıştırma.|
+|**AssemblyResolution**|false|Bulma ve birim testlerini çalıştırırken ek derlemeler için yol belirtebilirsiniz. Örneğin, test derlemesi ile aynı dizinde değil bağımlılık derlemeler için bu yolları kullanın. Bir yol belirtmek için kullanın. bir **dizin yolu** öğesi. Yolları, ortam değişkenleri içerebilir.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod kapsamı çözümlemeyi özelleştirme](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio test görevinin (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md)
+- [Visual Studio test görevi (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)

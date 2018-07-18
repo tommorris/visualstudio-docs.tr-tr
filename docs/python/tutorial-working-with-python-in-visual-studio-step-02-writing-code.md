@@ -1,6 +1,6 @@
 ---
-title: Yazma ve kod çalıştırma 2. adım, Python Eğitmen ile çalışma
-description: Adım 2 / Çekirdek kılavuz Visual Studio'da kod düzenleme ve bir projesi çalıştırmaya dahil olmak üzere, Python yeteneklerini.
+title: Kod yazma ve çalıştırma 2. adım, Python Öğreticisi ile çalışma
+description: 2. adımı çekirdek kılavuzun Visual Studio'da kod düzenleme ve bir proje çalıştırma dahil olmak üzere, Python özellikleri.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,63 +11,63 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6db523754baa24465406d0472589d92454cc1afe
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056530"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174847"
 ---
-# <a name="step-2-write-and-run-code"></a>2. adım: Yazma ve kodu çalıştırma
+# <a name="step-2-write-and-run-code"></a>2. adım: Yazma ve kod çalıştırma
 
-**Önceki adımda: [yeni bir Python projesi oluşturma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Önceki adımda: [yeni Python projesi oluşturma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Çözüm Gezgini proje dosyalarını yöneteceğiniz olsa *Düzenleyicisi* penceredir genellikle birlikte çalıştığınız *içeriği* gibi kaynak kodu dosyaları. Düzenleyici bağlam düzenlediğiniz, programlama dili (dosya uzantısına göre) dahil olmak üzere dosyanın türü farkındadır ve teklifleri özellikleri uygun söz dizimi renklendirme ve otomatik tamamlama gibi o dil için IntelliSense kullanma.
+Çözüm Gezgini'nde, proje dosyaları, yönettiğiniz olmasına rağmen *Düzenleyicisi* penceredir genellikle birlikte çalıştığınız *içeriği* dosyalarının kaynak kod gibi. Düzenleyici bağlam düzenlediğiniz, programlama dili (dosya uzantısına göre) gibi dosya türünü farkındadır ve teklifler özellikleri uygun söz dizimi renklendirme ve otomatik tamamlama gibi bu dil için IntelliSense kullanma.
 
-1. Yeni bir "Python uygulama" projesi oluşturduktan sonra varsayılan boş adlı dosya `PythonApplication1.py` Visual Studio düzenleyicisinde açıktır.
+1. Yeni bir "Python uygulaması" proje oluşturduktan sonra varsayılan boş adlı dosya `PythonApplication1.py` Visual Studio Düzenleyicisi'nde açık.
 
-1. Düzenleyicide yazmaya başlayın `print("Hello, Visual Studio")` ve Visual Studio IntelliSense otomatik tamamlama seçenekleri yol boyunca nasıl görüntülendiğine dikkat edin. Anahatları belirlenmiş aşağı açılan listesinde SEKME tuşuna bastığınızda, kullanılan varsayılan tamamlama seçenektir. Tamamlamalar en uzun deyimleri veya tanımlayıcıları söz konusu olduğunda faydalıdır.
+1. Düzenleyici'de yazmaya başlayın `print("Hello, Visual Studio")` ve Visual Studio IntelliSense otomatik tamamlama seçenekleri yol boyunca nasıl görüntülendiğine dikkat edin. Anahatları belirlenmiş açılır listede Tab tuşuna bastığınızda, kullanılan varsayılan tamamlama seçeneğidir. Tamamlamalar, en uzun ifadeleri veya tanımlayıcıları söz konusu olduğunda yararlıdır.
 
-    ![IntelliSense otomatik tamamlama açılır](media/vs-getting-started-python-04-IntelliSense1b.png)
+    ![IntelliSense otomatik tamamlama açılan menüsü](media/vs-getting-started-python-04-IntelliSense1b.png)
 
-1. IntelliSense, kullanmakta olduğunuz deyimi, aradığınız işlevi ve benzeri bağlı olarak farklı bilgiler gösterir. İle `print` işlev, yazarak `(` sonra `print` çağrısı bir işlev belirtmek için bu işlevi tam kullanım bilgilerini görüntüler. Açılır IntelliSense, geçerli bağımsız değişkeni de kalın olarak gösterilir. (**değeri** aşağıda gösterildiği gibi):
+1. IntelliSense, kullanmakta olduğunuz deyimi, çağırdığınız işlev ve benzeri bağlı olarak farklı bilgi gösterir. İle `print` yazarak, işlev `(` sonra `print` çağrısı bir işlev belirtmek için bu işlevi tam kullanım bilgilerini görüntüler. IntelliSense açılanı kalın yazı tipinde geçerli bağımsız değişkeni de gösterir. (**değer** burada gösterildiği gibi):
 
     ![Bir işlev için IntelliSense otomatik tamamlama açılır](media/vs-getting-started-python-05-IntelliSense2b.png)
 
-1. Aşağıdaki eşleşecek şekilde deyimi tamamlayın:
+1. Deyim, aşağıdaki eşleşecek şekilde tamamlayın:
 
     ```python
     print("Hello, Visual Studio")
     ```
 
-1. Deyim ayıran sözdizimi coloration fark `print` bağımsız gelen `"Hello Visual Studio"`. Ayrıca, geçici olarak son silme `"` dize ve bildirim sözdizimi hataları içeren nasıl Visual Studio kırmızı bir alt çizgi kod için gösterir. Yerine `"` kodu düzeltmek için.
+1. Deyim ayırır söz dizimi coloration fark `print` bağımsız `"Hello Visual Studio"`. Ayrıca, son geçici olarak silme `"` dize ve bildirim sözdizimi hataları içeren Visual Studio kod için kırmızı alt çizgi, gösterilmektedir. Ardından değiştirin `"` kodu düzeltmek için.
 
     ![IntelliSense söz dizimi renklendirme ve hata vurgulama](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Birinin geliştirme ortamı çok kişisel sağlasa da olduğundan, Visual Studio, Visual Studio'nun görünümü ve davranışı üzerinde tam denetim sağlar. Seçin **Araçlar > Seçenekleri** menü komut ve ayarları altında keşfetme **ortam** ve **metin düzenleyici** sekmeleri. Varsayılan olarak, yalnızca sınırlı sayıda seçenek görürsünüz; her programlama dili için her seçeneği görmek için seçin **tüm ayarları göster** iletişim kutusunun altındaki. 
+    > Birinin geliştirme ortamı çok kişisel bir konudur çünkü Visual Studio, Visual Studio'nun görünümünü ve davranışını üzerinde tam denetim sağlar. Seçin **Araçlar > Seçenekler** menü ayarları keşfedin ve komut **ortam** ve **metin düzenleyici** sekmeler. Varsayılan olarak yalnızca sınırlı sayıda seçenekleri görebilirsiniz; her programlama dili için tüm seçenekleri görmek için seçin **tüm ayarları göster** iletişim kutusunun alt kısmındaki. 
 
-1. Yazılan bu noktada Ctrl + F5 tuşuna basarak veya seçerek kodu çalıştırma **hata ayıklama > hata ayıklama olmadan Başlat** menü öğesi. Visual Studio, kodunuzda hataları hala olup olmadığını sizi uyarır.
+1. Yazılan bu noktada Ctrl + F5'e basarak veya seçerek kodu çalıştırmak **hata ayıklama > hata ayıklama olmadan Başlat** menü öğesi. Visual Studio, kodunuzdaki hataları hala olup olmadığını sizi uyarır.
 
-1. Çalıştırdığınızda program sonuçlarını görüntüleyen bir konsol penceresi görünür bir Python yorumlayıcısı ile Çalıştır sanki `PythonApplication1.py` komut satırından. Pencereyi kapatmak ve Visual Studio Düzenleyicisi'ne dönmek için bir tuşa basın.
+1. Çalıştırıldığında programın sonuçlarını görüntüleyen bir konsol penceresi görünür alacağı bir Python yorumlayıcısı ile çalıştırın `PythonApplication1.py` komut satırından. Pencereyi kapatın ve Visual Studio Düzenleyicisi'ne dönmek için bir tuşa basın.
 
-    ![Program ilk çalışması için çıktı](media/vs-getting-started-python-07-output.png)
+    ![İlk çalıştırma programının çıktısı](media/vs-getting-started-python-07-output.png)
 
-1. İfadeler ve işlevleri için tamamlamalar yanı sıra, IntelliSense sağlamak tamamlamalar Python için `import` ve `from` deyimleri. Bu tamamlamalar hangi modüllerin ortamınıza ve bu modüller üyeleri kullanılabilen kolay bulmasına yardımcı olur. Düzenleyicisi'nde silin `print` satır ve yazmaya başlayın `import `. Alanı yazdığınızda modüller listesi görüntülenir:
+1. İfadeler ve İşlevler için tamamlamalar ek olarak, IntelliSense sağlamak için Python tamamlamaları `import` ve `from` deyimleri. Bu tamamlamaları ortamınıza ve modüller üyelerinin hangi modüllerin kullanılabilen kolayca keşfetmenize yardımcı olur. Düzenleyici'de Sil `print` yazmaya başlayın ve satır `import `. Boşluk modüllerin listesini görünür:
 
-    ![İçeri aktarma deyimi için kullanılabilir modülleri gösteren IntellSense](media/vs-getting-started-python-08-import1.png)
+    ![İçeri aktarma deyimi için kullanılabilir modüllerin gösteren IntellSense](media/vs-getting-started-python-08-import1.png)
 
 1. Yazarak veya seçerek satır tamamlamak `sys`.
 
 1. Sonraki satıra yazın `from` yeniden modüllerin listesini görmek için:
 
-    ![Kullanılabilir modülleri için gösteren IntellSense bir deyim gelen](media/vs-getting-started-python-09-import2.png)
+    ![IntellSense için kullanılabilir modüllerin gösteren bir deyiminden](media/vs-getting-started-python-09-import2.png)
 
-1. Seçin veya yazın `math`, boşlukla yazmaya devam ve `import`, modül üyeleri görüntüler:
+1. Seçin veya yazın `math`, sonra bir boşluk ile yazmaya devam edin ve `import`, modül üyelerini görüntüler:
 
     ![IntellSense gösteren modülü üyeleri](media/vs-getting-started-python-10-import3.png)
 
-1. Son içeri aktararak `sin`, `cos`, ve `radians` otomatik-tamamlamalar kullanılabilir her biri için haberiniz bile üyeleri. İşiniz bittiğinde, kodunuzu aşağıdaki gibi görünmelidir:
+1. Son içeri aktararak `sin`, `cos`, ve `radians` üyeleri, her biri için otomatik tamamlama kullanılabilir fark. İşiniz bittiğinde, kodunuz aşağıdaki gibi görünmelidir:
 
     ```python
     import sys
@@ -75,25 +75,25 @@ ms.locfileid: "37056530"
     ```
 
     > [!Tip]
-    > Sözcükler, harf sözcükleri başındaki bölümlerini eşleşen yazın ve hatta karakter atlandı tamamlamalar alt dizeler ile çalışır. Bkz: [kod - tamamlamalar düzenleme](editing-python-code-in-visual-studio.md#completions) Ayrıntılar için.
+    > Sözcükler, sözcük başlangıcında harf bölümlerini eşleşen yazın ve hatta karakter atlandı tamamlamaları alt dizeler ile çalışır. Bkz: [kod - tamamlamaları düzenleme](editing-python-code-in-visual-studio.md#completions) Ayrıntılar için.
 
-1. 360 derece kosinüsünü değerlerini yazdırmak için biraz daha fazla kodu ekleyin:
+1. 360 derece Kosinüs değerlerini yazdırmak için biraz daha fazla kod ekleyin:
 
     ```python
     for i in range(360):
         print(cos(radians(i)))
     ```
 
-1. Ctrl + F5'e programı yeniden çalıştırın veya **hata ayıklama > hata ayıklama olmadan Başlat**. İşiniz bittiğinde çıktı penceresini kapatın.
+1. Programı Ctrl + F5'e yeniden çalıştırın veya **hata ayıklama > hata ayıklama olmadan Başlat**. İşiniz bittiğinde çıktı penceresini kapatın.
 
 ## <a name="next-step"></a>Sonraki adım
 
 > [!div class="nextstepaction"]
 > [Etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="go-deeper"></a>Derinlemesine
+## <a name="go-deeper"></a>Daha ayrıntılı şekilde inceleyin
 
 - [Kodu düzenleme](editing-python-code-in-visual-studio.md)
-- [Kodu biçimlendirme](formatting-python-code.md)
+- [Biçim Kodu](formatting-python-code.md)
 - [Kodu yeniden düzenleme](refactoring-python-code.md)
-- [PyLint Kullanma](linting-python-code.md)
+- [PyLint kullanma](linting-python-code.md)

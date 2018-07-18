@@ -15,55 +15,54 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767692"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978170"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturmak ve yönetilen kod için birim testleri çalıştırma
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma
 
-Bu makalede oluşturmada size çalıştıran, adımları ve birim bir dizi özelleştirme testleri yönetilen kod ve Visual Studio için Microsoft birim test çerçevesi kullanarak **Test Gezgini**. Geliştirme aşamasındadır bir C# projesi ile başlayın, kendi kodu deneyen, testleri çalıştırmak ve sonuçları inceleyin testleri oluşturma. Sonra proje kodunu değiştirmek ve testleri yeniden çalıştırın.
-
-> [!NOTE]
-> Bu kılavuz, yönetilen kod için Microsoft birim test çerçevesi kullanır. **Test Gezgini** testleri üçüncü taraf biriminden bağdaştırıcılarınızın sahip test çerçevelerini çalıştırabilirsiniz **Test Gezgini**. Daha fazla bilgi için bkz: [üçüncü taraf birim test çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)
+Bu makalede, oluşturma işleminde, çalışan, adımları ve bir dizi birim özelleştirme yönetilen kod ve Visual Studio için Microsoft birim test çerçevesini kullanarak testleri **Test Gezgini**. Geliştirilmekte olan bir C# projesi ile başlayın, kodunu, testleri çalıştırmak ve sonuçları inceleyin testleri oluşturun. Daha sonra proje kodunu değiştirin ve testleri yeniden çalıştırın.
 
 > [!NOTE]
-> Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için bkz: [izlenecek yol: komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+> Bu izlenecek yol, yönetilen kod için Microsoft birim testi çerçevesini kullanır. **Test Gezgini** testleri üçüncü parti birim için bağdaştırıcıları olan test çerçevelerini çalıştırabilirsiniz **Test Gezgini**. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)
+
+Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için bkz: [VSTest.Console.exe komut satırı seçenekleri](vstest-console-options.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Banka projesi. Bkz: [örnek proje birim testleri oluşturmak için](../test/sample-project-for-creating-unit-tests.md).
+- Banka projesi. Bkz: [birim testleri oluşturmak için proje örnek](../test/sample-project-for-creating-unit-tests.md).
 
 ## <a name="create-a-project-to-test"></a>Test etmek için bir proje oluşturun
 
 1. Visual Studio'yu açın.
 
-2. Üzerinde **dosya** menüsünde, select **yeni** > **proje**.
+2. Üzerinde **dosya** menüsünde **yeni** > **proje**.
 
    **Yeni proje** iletişim kutusu görüntülenir.
 
-3. Altında **yüklü şablonlar**, tıklatın **Visual C#**.
+3. Altında **yüklü şablonlar**, tıklayın **Visual C#**.
 
-4. Uygulama türleri listesinde tıklatın **sınıf kitaplığı**.
+4. Uygulama türleri listesinde tıklayın **sınıf kitaplığı**.
 
 5. İçinde **adı** kutusuna **banka** ve ardından **Tamam**.
 
-   Yeni Banka projesi oluşturulur ve görüntülenen **Çözüm Gezgini** ile *Class1.cs* dosya Kod düzenleyicisinde açın.
+   Yeni Banka projesi oluşturulur ve görüntülenen **Çözüm Gezgini** ile *Class1.cs* dosyası Kod Düzenleyicisi'nde açın.
 
    > [!NOTE]
-   > Varsa *Class1.cs* Kod Düzenleyici'ye dosyasını çift tıklatın *Class1.cs* içinde **Çözüm Gezgini** açın.
+   > Varsa *Class1.cs* olduğu değil, Kod Düzenleyicisi'nde açın, dosyayı çift tıklatın *Class1.cs* içinde **Çözüm Gezgini** açın.
 
-6. Kaynak kodunu kopyalayın [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md)ve özgün Değiştir *Class1.cs* kopyalanan koduna sahip.
+6. Kaynak kodundan kopyalama [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md)ve özgün içeriklerini *Class1.cs* kopyalanmış kod ile.
 
 7. Dosyayı Farklı Kaydet *BankAccount.cs*.
 
-8. Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.
+8. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
-Artık banka adlı projesi var. Test etmek için kaynak kodu ve ile test etmek için Araçlar içerir. Ad alanı için banka, BankAccountNS, ortak sınıf BankAccount, aşağıdaki yordamlarda test edeceksiniz, yöntemleri içerir.
+Artık banka olarak adlandırılan bir projeniz var. Bu, test etmek için kaynak kodu ve bunu test etmek için Araçlar içerir. BankAccountNS, Banka için ad alanı, ortak sınıf BankAccount, aşağıdaki yordamlarda test edeceğiniz yöntemleri içerir.
 
-Bu makalede, testleri borç yöntemine odaklanır. Para bir hesaptan geri alınmış zaman borç yöntemi çağrılır. Yöntem tanımı aşağıda verilmiştir:
+Bu makalede, testler banka yöntemine odaklanır. Bir hesaptan para çekildiğinde yöntemi çağrılır. Yöntemin tanımı aşağıda verilmiştir:
 
 ```csharp
 // Method to be tested.
@@ -83,31 +82,31 @@ public void Debit(double amount)
 
 ## <a name="create-a-unit-test-project"></a>Birim testi projesi oluşturma
 
-1. Üzerinde **dosya** menüsünde, select **Ekle** > **yeni proje**.
+1. Üzerinde **dosya** menüsünde **Ekle** > **yeni proje**.
 
-2. Yeni Proje iletişim kutusuna genişletin **yüklü**, genişletin **Visual C#** ve ardından **Test**.
+2. Yeni Proje iletişim kutusunda Genişlet **yüklü**, genişletme **Visual C#** ve ardından **Test**.
 
-3. Şablonları listesinden seçin **birim testi projesi**.
+3. Şablonlar listesinden **birim testi projesi**.
 
 4. İçinde **adı** kutusuna `BankTests`ve ardından **Tamam**.
 
-   **BankTests** projesi eklenir **banka** çözümü.
+   **BankTests** projesi eklenir **banka** çözüm.
 
-5. İçinde **BankTests** proje, bir başvuru ekleyin **banka** projesi.
+5. İçinde **BankTests** projesi, bir başvuru ekleyin **banka** proje.
 
-   Çözüm Gezgini'nde seçin **başvuruları** içinde **BankTests** proje ve ardından **Başvuru Ekle** ve bağlam menüsünden.
+   Çözüm Gezgini'nde seçin **başvuruları** içinde **BankTests** proje ve ardından **Başvuru Ekle** bağlam menüsünden.
 
-6. Başvuru Yöneticisi iletişim kutusunda genişletin **çözüm** ve denetleyin **banka** öğesi.
+6. Başvuru Yöneticisi iletişim kutusunda Genişlet **çözüm** iade edin **banka** öğesi.
 
-## <a name="create-the-test-class"></a>Test sınıfı oluşturma
+## <a name="create-the-test-class"></a>Test sınıfı oluşturun
 
-Doğrulamak için bir test sınıfı oluşturma `BankAccount` sınıfı. Kullanabileceğiniz *UnitTest1.cs* proje şablonu tarafından oluşturulan dosya ancak dosyaya verin ve sınıf adları daha açıklayıcı. Dosyayı yeniden adlandırmadan, tek bir adımda yapabilirsiniz **Çözüm Gezgini**.
+Doğrulamak için bir test sınıfı oluşturun `BankAccount` sınıfı. Kullanabileceğiniz *UnitTest1.cs* proje şablonu tarafından oluşturulan dosya, ancak dosyaya verin ve daha açıklayıcı adlar sınıfı. Dosyayı yeniden adlandırarak, tek bir adımda yapabilirsiniz **Çözüm Gezgini**.
 
-### <a name="rename-a-class-file"></a>Bir sınıf dosyayı yeniden adlandırın
+### <a name="rename-a-class-file"></a>Bir sınıf dosyasını yeniden adlandırma
 
-İçinde **Çözüm Gezgini**seçin *UnitTest1.cs* BankTests proje dosyasında. Bağlam menüsünden **yeniden adlandırma**ve dosyayı yeniden adlandırın *BankAccountTests.cs*. Seçin **Evet** tüm başvurularını kod öğesini yeniden adlandırma isteyip istemediğinizi soran iletişim kutusunda `UnitTest1` projesinde.
+İçinde **Çözüm Gezgini**seçin *UnitTest1.cs* BankTests projesindeki dosya. Bağlam menüsünden **Yeniden Adlandır**ve ardından dosyayı yeniden adlandır *BankAccountTests.cs*. Seçin **Evet** kod öğesi için tüm başvuruları yeniden adlandırmak isteyip istemediğinizi soran bir iletişim kutusundaki `UnitTest1` projedeki.
 
-Bu adım için sınıf adını değiştirir `BankAccountTests`. *BankAccountTests.cs* dosyası artık aşağıdaki kod içerir:
+Bu adım için sınıfın adını değiştirir `BankAccountTests`. *BankAccountTests.cs* dosyası artık şu kodu içerir:
 
 ```csharp
 using System;
@@ -126,9 +125,9 @@ namespace BankTests
 }
 ```
 
-### <a name="add-a-using-statement-to-the-project-under-test"></a>Using Ekle test altındaki projeye deyimi
+### <a name="add-a-using-statement-to-the-project-under-test"></a>Kullanarak bir ekleme test altındaki projeye deyimi
 
-Ayrıca ekleyebileceğiniz bir `using` test altındaki projesine tam olarak kullanarak adları yetkili olmadan arayabilmesi için için sınıfa ifade. Sınıf dosyasının üstüne ekleyin:
+Ayrıca bir `using` tam adı kullanmadan test altındaki projeye çağırmak için sınıfa deyimi. Sınıf dosyasının en üstüne ekleyin:
 
 ```csharp
 using BankAccountNS;
@@ -136,32 +135,32 @@ using BankAccountNS;
 
 ### <a name="test-class-requirements"></a>Test sınıfı gereksinimleri
 
-Test sınıfı için minimum gereksinimleri şunlardır:
+Bir test sınıfı için minimum gereksinimleri şunlardır:
 
-- `[TestClass]` Özniteliği gerekli framework yönetilen için test Microsoft biriminde kodunu herhangi bir sınıf için Test Explorer'da çalıştırmak istediğiniz birim test yöntemleri içerir.
+- `[TestClass]` Özniteliği, kod herhangi sınıflar, Test Gezgini'nde de çalıştırmak istediğiniz birim test yöntemlerini içeren Microsoft birim testi çerçevesi ile yönetilen için gereklidir.
 
-- Explorer çalıştırmak için test etmek istediğiniz her test yöntemi olmalıdır `[TestMethod]` özniteliği.
+- Test Gezgini'nin çalıştırmasını istediğiniz her test yönteminin olmalıdır `[TestMethod]` özniteliği.
 
-Olmadığı diğer birim testi projesi sınıflarda olabilir `[TestClass]` özniteliği ve olabilir diğer yöntemleri olmadığı test sınıflarda `[TestMethod]` özniteliği. Test yöntemlerinizi bu diğer sınıflar ve yöntemler kullanabilirsiniz.
+Sahip olmadığınız diğer birim testi projesi sınıflarda olabilir `[TestClass]` özniteliği ve diğer yöntemler bulunabilir sahip olmayan test sınıflarında `[TestMethod]` özniteliği. Diğer sınıfları ve yöntemleri test yöntemlerinizde kullanabilirsiniz.
 
-## <a name="create-the-first-test-method"></a>Create ilk test yöntemi
+## <a name="create-the-first-test-method"></a>İlk test yöntemini oluştur
 
-Bu yordamda, birim testi davranışını doğrulamak için yöntem yazacaksınız `Debit` yöntemi `BankAccount` sınıfı. `Debit` Yöntemi bu makalede daha önce gösterilir.
+Bu yordamda, birim testi davranışını doğrulamak için yöntem yazacaksınız `Debit` yöntemi `BankAccount` sınıfı. `Debit` Yöntemi bu makalede daha önce gösterilmiştir.
 
 Denetlenmesi gereken en az üç davranış vardır:
 
-- Yöntem oluşturulur bir <xref:System.ArgumentOutOfRangeException> borç tutarını Bakiye büyükse.
+- Çağırılıyorsa yöntem bir <xref:System.ArgumentOutOfRangeException> borç tutarı bakiyeden büyükse.
 
-- Yöntem oluşturulur <xref:System.ArgumentOutOfRangeException> borç tutarını küçükse sıfır.
+- Çağırılıyorsa yöntem <xref:System.ArgumentOutOfRangeException> borç tutarını küçükse sıfır.
 
-- Borç tutarını geçerli ise, yöntem hesap bakiyesini borç tutarından çıkarır.
+- Yöntemi, Borç tutarını geçerliyse, hesap bakiyeniz borç tutarını çıkarır.
 
 > [!TIP]
-> Varsayılan silebilirsiniz `TestMethod1` yöntemi, bu kılavuzda kullandığından olmaz.
+> Varsayılan silebilirsiniz `TestMethod1` yöntemi bu izlenecek yolda kullandığından olmaz.
 
-### <a name="to-create-a-test-method"></a>Test yöntemi oluşturmak için
+### <a name="to-create-a-test-method"></a>Bir test yöntemi oluşturmak için
 
-İlk testi geçerli tutar (diğer bir deyişle, bir hesap bakiyesini ve sıfır büyüktür daha az) hesabından doğru miktarı çeker doğrular. İçin aşağıdaki yöntemi ekleyin `BankAccountTests` sınıfı:
+İlk testi, geçerli bir tutarın (diğer bir deyişle, bir hesap bakiyesinden ve sıfırdan küçük) doğru bir tutar hesaptan testimizde doğrular. Aşağıdaki yöntemi ekleyin `BankAccountTests` sınıfı:
 
 ```csharp
 [TestMethod]
@@ -182,38 +181,38 @@ public void Debit_WithValidAmount_UpdatesBalance()
 }
 ```
 
-Basit bir yöntemdir: yeni ayarlar `BankAccount` nesne başına bakiyesi olan ve geçerli bir miktar çeker. Kullandığı <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> yöntemi Bitiş bakiye beklendiği gibi olduğunu doğrulayın.
+Yöntem oldukça basittir: yeni bir ayarlar `BankAccount` nesnesi bir Başlangıç bakiyesi ve geçerli bir süre sonra çeker. Kullandığı <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> bitiş bakiyesini beklendiği gibi olduğunu doğrulamak için yöntem.
 
 ### <a name="test-method-requirements"></a>Test yöntemi gereksinimleri
 
-Test yöntemi aşağıdaki gereksinimleri karşılamalıdır:
+Bir test yönteminin aşağıdaki gereksinimleri karşılaması gerekir:
 
 - İle donatılmış `[TestMethod]` özniteliği.
 
-- Döndürdüğü `void`.
+- Döndürür `void`.
 
 - Parametrelere sahip olamaz.
 
 ## <a name="build-and-run-the-test"></a>Derleme ve test çalıştırma
 
-1. Üzerinde **yapı** menüsünde seçin **yapı çözümü**.
+1. Üzerinde **derleme** menüsünde seçin **Çözümü Derle**.
 
-   Hiçbir hatalar varsa **Test Gezgini** görünür **Debit_WithValidAmount_UpdatesBalance** listelenen **testleri değil Çalıştır** grubu.
+   Herhangi bir hata varsa **Test Gezgini** görünür **Not** listelenen **çalıştırılmamış testler** grubu.
 
    > [!TIP]
-   > Varsa **Test Gezgini** başarılı derleme sonrası görüntülenmiyorsa, seçin **Test** menüsünde ardından **Windows**ve ardından **Test Gezgini**.
+   > Varsa **Test Gezgini** başarılı bir oluşturmadan sonra görünmüyorsa, şunu seçin **Test** menüde ardından **Windows**ve ardından **TestGezgini**.
 
-2. Seçin **tümünü Çalıştır** testi çalıştırmak için. Test çalışırken, pencerenin üstündeki durum çubuğu animasyon eklenir. Herhangi bir test başarısız olursa test çalıştırması sonunda, tüm test yöntemlerini geçirirseniz yeşil veya kırmızı çubuğu etkinleştirir.
+2. Seçin **tümünü Çalıştır** testi çalıştırmak için. Test çalışırken pencerenin en üstündeki durum çubuğunda bir animasyon görünür. Testler başarısız olursa test çalışmasının sonunda, tüm test yöntemleri geçerse yeşil veya Kırmızı çubuk kapatır.
 
-3. Bu durumda, sınama başarısız olur. Test yöntemi taşınır **başarısız testler** grubu. Yöntemini seçin **Test Gezgini** pencerenin altındaki ayrıntılarını görüntülemek için.
+3. Bu durumda, test başarısız olur. Test yöntemi taşınır **başarısız testler** grubu. Yöntemini seçin **Test Gezgini** pencerenin alt kısmındaki ayrıntılarını görüntülemek için.
 
-## <a name="fix-your-code-and-rerun-your-tests"></a>Kodunuzu düzeltin ve testleri yeniden çalıştırın
+## <a name="fix-your-code-and-rerun-your-tests"></a>Kodunuzu düzeltin ve testlerinizi yeniden çalıştırın
 
-### <a name="analyze-the-test-results"></a>Test sonuçlarını analiz etme
+### <a name="analyze-the-test-results"></a>Test sonuçlarını çözümleme
 
-Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi, ileti görüntüler beklenen ( **beklenen\<*değeri* >**  parametresi) ve ne gerçekte alındı ( **Gerçek\<*değeri* >** parametresi). Azaltmak için Bakiye bekleniyordu ancak bunun yerine mevzuatı miktarı gerçekte artar.
+Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi, bir ileti görüntüler beklenenle ( **beklenen\<*değer* >**  parametresi) ve hangi gerçekten alındı ( **Gerçek\<*değer* >** parametresi). Azaltmak için Bakiye bekleniyordu ancak bunun yerine çekilen miktarın azaltılması tarafından gerçekten artırdık.
 
-Birim testi hata sınamayla: mevzuatı miktarı *eklenen* olmalıdır, hesap bakiyesini için *çıkarılır*.
+Birim testi bir hata ortaya çıkardı: mevzuatı miktarı *eklenen* olmalıydı hesap bakiyesine *çıkartılır*.
 
 ### <a name="correct-the-bug"></a>Hatayı düzeltin
 
@@ -229,24 +228,24 @@ m_balance += amount;
 m_balance -= amount;
 ```
 
-### <a name="rerun-the-test"></a>Test yeniden çalıştırın
+### <a name="rerun-the-test"></a>Testi yeniden çalıştırın
 
-Test Gezgini seçin **tümünü Çalıştır** test yeniden çalıştırmak için. Kırmızı/yeşil çubuğu test geçirilen ve test taşınır göstermek için yeşil kapatır **testleri geçti** grubu.
+Test Gezgini'nde seçin **tümünü Çalıştır** ve testi yeniden çalıştırın. Test başarılı oldu ve test taşınır belirtmek için kırmızı/yeşil çubuk yeşile **başarılı testler** grubu.
 
-## <a name="use-unit-tests-to-improve-your-code"></a>Kodunuzu geliştirmek için kullanım birim testleri
+## <a name="use-unit-tests-to-improve-your-code"></a>Kodunuzu geliştirmek için birim testleri kullanın
 
-Bu bölümde, analiz, birim testi geliştirme ve yeniden düzenleme yinelemeli süreç üretim kodunuzu daha sağlam ve etkin hale getirmek nasıl yardımcı olabileceğini açıklanmaktadır.
+Bu bölümde, analiz, birim testi geliştirmenin ve yeniden düzenleme düzenlemenin yinelemeli işleminin üretim kodunuzu daha sağlam ve verimli hale getirmek nasıl yardımcı olabileceğini açıklar.
 
-### <a name="analyze-the-issues"></a>Sorunlarını çözümleme
+### <a name="analyze-the-issues"></a>Sorunları Çözümle
 
-Geçerli bir süre içinde doğru çıkarılır onaylamak için bir test yöntemi oluşturduğunuz `Debit` yöntemi. Şimdi, yöntem oluşturulur doğrula bir <xref:System.ArgumentOutOfRangeException> borç tutarını ya da ise:
+Geçerli bir süre içinde doğru çıkarılır onaylamak için bir test yöntemi oluşturduğunuz `Debit` yöntemi. Şimdi, çağırılıyorsa yöntem doğrulayın bir <xref:System.ArgumentOutOfRangeException> borç tutarını geçerli olduğunda:
 
 - Bakiye büyüktür veya
-- sıfırdan.
+- sıfırdan küçük.
 
-### <a name="create-the-test-methods"></a>Test yöntemleri oluşturma
+### <a name="create-the-test-methods"></a>Test yöntemleri oluşturun
 
-Borç tutarını doğru davranış sıfırdan doğrulamak için bir test yöntemi oluşturun:
+Borç tutarını olduğunda doğru davranış sıfırdan doğrulamak için bir test yöntemi oluşturun:
 
 ```csharp
 [TestMethod]
@@ -265,35 +264,35 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-Kullanım <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> doğru özel durum oluşturdu onaylanacak özniteliği. Öznitelik testin sürece başarısız olmasına neden olan bir <xref:System.ArgumentOutOfRangeException> oluşturulur. Daha fazla genel throw test altındaki yöntemi geçici olarak değiştirirseniz, <xref:System.ApplicationException> borç tutarını küçük olduğunda sıfır, test düzgün şekilde davranan&mdash;diğer bir deyişle, başarısız olur.
+Kullanım <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> doğru özel durumun oluşturulmasını onaylamak için özniteliği. Öznitelik, testin başarısız olmasına neden olan bir <xref:System.ArgumentOutOfRangeException> oluşturulur. Daha fazla genel oluşturmasına, test altındaki yöntemi geçici olarak değiştirirseniz <xref:System.ApplicationException> borç tutarını küçüktür, sıfır test düzgün şekilde davranan&mdash;diğer bir deyişle, işlem başarısız olur.
 
-Durum geri miktar Bakiye'den büyük olduğunda sınamak için aşağıdaki adımları uygulayın:
+Çekilen miktarın bakiyeden büyük olduğunu test etmek için aşağıdaki adımları uygulayın:
 
-1. Adlı yeni bir test yöntemi oluşturma `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.
+1. Adlı yeni bir test yöntemi oluşturun `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.
 
-2. Yöntem gövdesinden kopyalama `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` yeni yöntemi.
+2. Kopyalama yöntemi gövdesinden `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` yeni yönteme.
 
-3. Ayarlama `debitAmount` Bakiye büyük bir sayı.
+3. Ayarlama `debitAmount` bakiyeden büyük bir sayı.
 
-### <a name="run-the-tests"></a>Testleri çalıştırma
+### <a name="run-the-tests"></a>Testleri çalıştırın
 
-İki test yöntemleri çalışan testleri doğru bir şekilde çalıştığını gösterir.
+İki test yöntemlerini çalıştıran, testler doğru bir şekilde çalıştığını gösterir.
 
-### <a name="continue-the-analysis"></a>Analiz devam
+### <a name="continue-the-analysis"></a>Çözümlemeye devam edin
 
-Ancak, son iki test yöntemleri de kaygı değildir. Her iki testi çalıştırdığınızda, hangi koşul altında test yöntemi özel durum oluşturur olamazsınız. Negatif borç tutarı veya bakiye büyük bir miktarını, iki koşul ayrım yapma, bazı şekilde testlerinde, güvenirlik artırır.
+Bununla birlikte, son iki test yöntemi ayrıca vericidir. Ya da test çalıştırdığınızda, test altındaki yöntemin içindeki hangi koşulun Exception'a olamazsınız. Bir negatif borç tutarını veya bakiyeden büyük bir miktarını, iki koşul ayrım yapma, bazı şekilde testlerinde güveninizi artırın.
 
-Bakabilir test altındaki yöntemi yeniden ve her iki koşullu deyimler kullandığına dikkat edin bir `ArgumentOutOfRangeException` yalnızca oluşturucu bağımsız değişkeni bir parametre olarak adını alır:
+Test altındaki yöntemi yeniden bakın ve her iki koşullu deyimin kullandığına dikkat edin bir `ArgumentOutOfRangeException` yalnızca oluşturucu bağımsız değişken olarak bir parametre adını alır:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");
 ```
 
-Çok daha zengin bilgi raporları kullanabileceğiniz bir oluşturucu yok: <xref:System.ArgumentOutOfRangeException.%23ctor(System.String,System.Object,System.String)> adı bağımsız değişkeni, bağımsız değişken değeri ve kullanıcı tanımlı bir ileti içerir. Bu oluşturucu kullanmak için test altındaki yöntemi yeniden düzenleyin. Hatta daha iyi ve genel kullanıma açık tür üyeleri hataları belirtmek için kullanabilirsiniz.
+Çok daha zengin bilgi raporlarının bir oluşturucu kullanabilirsiniz: <xref:System.ArgumentOutOfRangeException.%23ctor(System.String,System.Object,System.String)> adını bağımsız değişken, bağımsız değişken değeri ve kullanıcı tanımlı bir ileti içerir. Bu oluşturucuyu kullanarak test altındaki yöntemi yeniden düzenleyebilirsiniz. Daha da iyi genel olarak kullanılabilen tür üyelerini hataları belirlemek için kullanabilirsiniz.
 
-### <a name="refactor-the-code-under-test"></a>Test altındaki kodun yeniden Düzenle
+### <a name="refactor-the-code-under-test"></a>Test altındaki kodu yeniden düzenleyin
 
-İlk olarak, iki sabitler sınıfı kapsamda hata iletileri için tanımlayın. Bu test, BankAccount sınıfında koyun:
+İlk olarak, sınıf kapsamındaki hata iletileri için iki sabiti tanımlayın. Bu sınıf testten BankAccount yerleştirin:
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -314,9 +313,9 @@ Ardından, iki koşullu ifadeler değiştirin `Debit` yöntemi:
     }
 ```
 
-### <a name="refactor-the-test-methods"></a>Test yöntemleri yeniden Düzenle
+### <a name="refactor-the-test-methods"></a>Test yöntemlerini yeniden düzenleme
 
-Kaldırma `ExpectedException` test yöntemi özniteliği ve bunun yerine, oluşturulan özel durum yakalamak ve onun ilişkili ileti doğrulayın. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Yöntemi iki dizeleri karşılaştırmak olanağı sağlar.
+Kaldırma `ExpectedException` test metodu özniteliği ve bunun yerine, oluşan özel durumları yakalamalı ve onun ilişkili ileti doğrulayın. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Yöntemi, iki dizeyi karşılaştırın olanağı sağlar.
 
 Şimdi, `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` şuna benzeyebilir:
 
@@ -342,13 +341,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-### <a name="retest-rewrite-and-reanalyze"></a>Sürücüyle, yeniden yazma ve yeniden Çözümle
+### <a name="retest-rewrite-and-reanalyze"></a>Değişiyorsa, yeniden yaz ve yeniden Çözümle
 
-Test yönteminde bir hata varsa varsayar ve `Debit` yöntemi olmayan bile throw bir <xref:System.ArgumentOutOfRangeException>, nevermind doğru iletinin özel durumu ile çıktı. Şu anda, test yöntemi bu durumda işleyemez. Varsa `debitAmount` değeri geçerli (diğer bir deyişle, değerinden sıfırdan büyük ancak Bakiye), assert hiçbir zaman harekete için hiçbir özel durum yakalandı. Henüz, test yöntemi geçirir. Hiçbir özel durum, başarısız olması için test yöntemi istediğiniz olduğundan bu iyi değil.
+Test altındaki yöntemin içindeki bir hata varsa varsayar ve `Debit` yöntemi bile throw değil bir <xref:System.ArgumentOutOfRangeException>, nevermind doğru iletiyi özel durumu ile çıktı. Şu anda test yöntemi, bu durumda işlemiyor. Varsa `debitAmount` değeri geçerlidir (diğer bir deyişle, değerinden Bakiye ama sıfırdan büyükse), böylece onay asla harekete hiçbir özel durum yakalandı. Henüz test yöntemi geçirilir. Test yöntemi özel durum oluşturmazsa başarısız istediğinden bu iyi değildir.
 
-Bu test yönteminde hatasıdır. Sorunu çözmek için ekleme bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> nerede hiçbir özel durum durumu işlemek için test yöntemi sonunda assert.
+Bu, test yönteminde bir hatadır. Sorunu çözmek için ekleme bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> nerede hiçbir özel durum durumu işlemek için test yönteminin sonunda onay.
 
-Ancak sınamasını yeniden çalıştırma gösterir, test şimdi *başarısız* doğru özel durumu yakalandı durumunda. `catch` Blok yakalar özel durum ancak yöntemi yürütmeye devam eder ve yeni başarısız <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> assert. Bu sorunu gidermek için ekleme bir `return` sonra deyimi `StringAssert` içinde `catch` bloğu. Test yeniden, bu sorunu düzelttik onaylar. Son sürümü `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` şöyle görünür:
+Ancak sınama gösterir, test artık *başarısız* doğru özel durum yakalandığında. `catch` Bloğu özel durumu yakalar, ancak yöntemi yürütmeye devam eder ve yeni başarısız <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> onay. Bu sorunu çözmek için ekleme bir `return` deyiminden sonra `StringAssert` içinde `catch` blok. Testi yeniden çalıştırmak bu sorunu düzelttik onaylar. Son sürümü `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` şöyle görünür:
 
 ```csharp
 [TestMethod]
@@ -375,4 +374,4 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-Test kodu geliştirmeleri için daha sağlam ve bilgilendirici test yöntemleri gerektiriyordu. Ancak daha da önemlisi, test altındaki kodun'bunlar da geliştirildi.
+Test kodu yapılan iyileştirmeler, daha sağlam ve bilgilendirici test yöntemlerimiz olmasını sağladı. Ancak daha da önemlisi, test edilen kod'bunlar da gelişmiştir.

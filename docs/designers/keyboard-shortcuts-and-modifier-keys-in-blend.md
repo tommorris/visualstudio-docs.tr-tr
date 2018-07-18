@@ -10,32 +10,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a9ceb3f6aa2483621b3d917533457a05008df0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1293e349c221178885f6342ea287fae7a66f7de9
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747423"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978332"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend’de klavye kısayolları ve değiştirici tuşlar
-Klavye kısayolları çalışmanızı tek klavye kısayolu birden çok fare düğme tıklamalarına gerektiren bir eylem azaltarak hızlandırabilir. Klavye kısayolları [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] aşağıdaki iki kategoride gelir:
+Klavye kısayolları, bir tek klavye kısayolu birden çok fare düğmesi tıklama gerektiren bir eylem azaltarak çalışmanızı hızlandırabilirsiniz. Klavye kısayolları [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] aşağıdaki iki kategoriye ayrılır:
 
--   **Erişim tuşları** klavyede belirli bir tuşuna basarak menü komutu veya bir iletişim kutusu bir alanda erişmek için erişim tuşlarını kullanabilirsiniz. Erişim tuşları, şu anda seçili komutu ya da iletişim kutusunda görüntülenen alt çizgi tarafından tanımlanır.
+-   **Erişim anahtarları** klavyede belirli bir tuşa basarak menü komutunu ya da bir alanda bir iletişim kutusu erişmek için erişim anahtarlarını kullanın. Erişim tuşları, şu anda seçili komut ya da iletişim kutusunda görünen alt çizgi tarafından tanımlanır.
 
-     Erişim tuşları kullanmak için önce ALT ya da F10 görünür ve ardından belirli menü veya iletişim kutusu öğenin karşılık gelen harfe basın alt çizgi yapmak için tuşuna basın. Alternatif olarak, SEKME tuşuna veya ok tuşlarını kullanarak bir menü veya iletişim kutusu gidebilirsiniz. Örneğin, ALT tuşuna basarsanız [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)], altı çizili harfi altında görünür **F** içinde **dosya** erişim tuşu olarak tanımlamak için menü. Projeyi açmak için tuşuna basın ve ALT basılı tutun, F tuşlarına basın ve o tuşuna basın.
+     Erişimi kullanmak için anahtarları ilk tuşuna **Alt** veya **F10** görünür ve tuşuna basarak belirli menü veya iletişim kutusu öğenin karşılık gelen harf alt çizgileri yapma. Alternatif olarak, bir menü veya iletişim kutusu kullanarak gezinebileceğiniz **sekmesini** anahtar veya ok tuşlarını. Örneğin basarsanız **Alt** içinde [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)], altı çizili harfi altında görünür **F** içinde **dosya** bir erişim anahtarı tanımlamak için menü. Bir projeyi açmak için tuşuna basılı tutun ve **Alt**, basın **F**ve tuşuna **O**.
 
-     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png) ALT tuşuna bastıktan sonra alt çizgi ile görünen erişim tuşları
+     ![Erişim anahtarları](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png) erişim tuşuna bastıktan sonra bir alt çizgiyle görünen anahtarları **Alt**.
 
--   **Kısayol tuşları** bir klavye kısayolu tuşlarına basarak (örneğin, menü komutu seçme veya bir aracı davranışını değiştirme) bir eylemi gerçekleştirmek için kısayol tuşlarını kullanabilirsiniz.
+-   **Kısayol tuşları** klavye kısayol tuşuna basarak (örneğin, bir menü komutu seçme veya bir aracı davranışını değiştirme) bir eylemi gerçekleştirmek için kısayol tuşlarını kullanabilirsiniz.
 
-     Çoğu klavye kısayolları kullanıcı arabiriminde tanımlamak kolay [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]; menü komutlarını sağında görüntülenir. Örneğin, **dosya** menüsünde **Proje Aç** menü komutu klavye kısayolu CTRL + SHIFT + O içerir. Bir aracı için kısayol tuşlarını görmek için **Araçları** panelinde, işaretçiyi aracın üstüne getirin.
+     Çoğu klavye kısayollarını kullanıcı arabiriminde kolayca [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]; bunlar menü komutları sağında görüntülenir. Örneğin, **dosya** menüsünde **Proje Aç** menü komutu içeren klavye kısayolunu **Ctrl**+**Shift** + **O**. Bir aracı için kısayol tuşlarını görmek için **Araçları** panelinde, aracı işaretçisini.
 
-     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png) Kısayollar menü öğeleri yanında görüntülenen kısayol tuşları
+     ![Örnek kısayol tuşları](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png) menü öğelerini yanında görüntülenen kısayol tuşları kısayolları vardır.
 
- Erişilebilirlik ve özellikleri hakkında daha fazla bilgi için bkz: [Microsoft'taki erişilebilirlik](http://go.microsoft.com/fwlink/?LinkId=75069).
+ Erişilebilirlik ve özellikler hakkında daha fazla bilgi için bkz. [erişilebilirlik Microsoft'ta](http://go.microsoft.com/fwlink/?LinkId=75069).
 
 ## <a name="modifier-keys"></a>Değiştirici tuşları
- Bazı klavye kısayolları sahip ilişkilendirilmemiş menü öğeleri, kullanamayacağınız anlamına gelir [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] bunları bulmak için kullanıcı arabirimi. Aşağıdaki konular, Araçlar davranışını değiştirmek veya nesneyi yeniden boyutlandırma gibi bir eylem değiştirmek kısayolları listesi:
+ Bazı klavye kısayolları sahip ilişkilendirilmemiş menü öğeleri, kullanamayacağınız anlamına gelir [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] bunları bulmak için kullanıcı arabirimi. Aşağıdaki konular, araçları davranışını değiştirmek veya nesneyi yeniden boyutlandırma gibi bir eylem değiştiren kısayolları listeleyin:
 
 -   [Çalışma yüzeyi değiştirici tuşları](../designers/artboard-modifier-keys-in-blend.md)
 

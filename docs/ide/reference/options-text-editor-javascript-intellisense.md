@@ -14,14 +14,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b1c8fa80029618a9686c6eeddebb537757356d8f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233509"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797515"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
-Kullanım **IntelliSense** sayfasında **seçenekleri** için JavaScript IntelliSense davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebileceğiniz **IntelliSense** seçerek sayfa **Araçları**, **seçenekleri** menü çubuğunda, ve ardından genişletme **Metin Düzenleyicisi**,  **JavaScript**, **IntelliSense.**
+Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için IntelliSense'in davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebildiğiniz **IntelliSense** seçerek sayfası **Araçları**, **seçenekleri** menü çubuğu ve ardından genişletme **metin düzenleyici**,  **JavaScript**, **IntelliSense.**
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -31,17 +31,17 @@ Kullanım **IntelliSense** sayfasında **seçenekleri** için JavaScript Intelli
  JavaScript düzenleyicisinin belgenizdeki sözdizimini doğrulama şekline ilişkin tercihleri ayarlamak için bu seçenekleri kullanabilirsiniz.
 
 ## <a name="uielement-list"></a>UIElement Listesi
- **Sözdizimi hataları göster**
+ **Zobrazovat chyby syntaxe**
 
  Bu onay kutusu seçili olmadığında, JavaScript kod düzenleyicisi sözdizimi hatalarını göstermez. Kendi yazmadığınız kodla çalışıyorsanız ve sözdizimi hatalarını düzeltmeyi amaçlamıyorsanız, bu özellik kullanışlıdır.
 
- Bu onay kutusu seçildiğinde seçin seçeneğine sahip **hatalarla uyarı olarak göster** onay kutusu.
+ Bu onay kutusu işaretli olduğunda tercih yapma seçeneğine sahip **hataları uyarı olarak göster** onay kutusu.
 
- **Hata uyarıları göster**
+ **Hataları uyarı olarak göster**
 
  Bu onay kutusu seçildiğinde, JavaScript hataları uyarı olarak gösterilir (hata listesindeki hatalar olarak değil).
 
- **Çeşitli dosyalar projedeki dosyaları için Uzak başvuruları (örneğin http://) yükle**
+ **Çeşitli dosyalar projeleri içindeki dosyaların uzak kaynaklarını (örneğin http://) indir**
 
  Bu onay kutusu seçiliyken ve bir projenin bağlamı dışında açılmış bir JavaScript dosyanız varsa, Visual Studio IntelliSense bilgilerini sağlamak amacıyla dosyada başvurulan uzak JavaScript dosyalarını indirir. Bu seçenek işaretliyse, JavaScript dosyanıza bir başvuru olarak eklediğiniz dosyalar indirilir.
 
@@ -53,7 +53,7 @@ Kullanım **IntelliSense** sayfasında **seçenekleri** için JavaScript Intelli
  IntelliSense deyim tamamlama davranışını değiştirmek için bu seçenekleri kullanabilirsiniz.
 
 ## <a name="uielement-list"></a>UIElement Listesi
- **Yalnızca sekmesini kullanın veya tamamlamaya girin**
+ **Yalnızca sekmesini kullanın veya işleme için girin**
 
  Bu onay kutusu seçildiğinde, JavaScript kod düzenleyicisi deyimlere tamamlama listesinde seçilen öğeleri ancak siz Sekme veya Enter tuşuna bastıktan sonra ekler. Bu onay kutusu seçili olmadığında nokta, virgül, iki nokta üst üste, açılış parantezi ve açılış ayracı ({) da deyimlere seçili öğeleri ekleyebilir.
 
@@ -67,7 +67,7 @@ Kullanım **IntelliSense** sayfasında **seçenekleri** için JavaScript Intelli
 
  Belirli IntelliSense .js dosyalarının farklı JavaScript projeleri için kapsamda olduğunu belirtmek için önceden tanımlı başvuru gruplarını kullanabilirsiniz. Dört başvuru grubu mevcuttur:
 
--   Örtük (Windows *sürüm*), için [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanarak uygulamaları. Bu gruba dahil dosyalarıdır Kod düzenleyicisinde için açılan her .js dosya kapsamına [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanarak uygulamaları.
+-   Örtük (Windows *sürüm*), için [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanan uygulamalar. Bu grupta yer alan dosyalar, Kod Düzenleyicisi'nde için açılan her .js dosyası için kapsama [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] JavaScript kullanan uygulamalar.
 
 -   Örtük (Web); HTML5 projeleri için. Bu grupta yer alan dosyalar, bu proje türleri için Kod Düzenleyicisi'nde açılan her .js dosyası için kapsama girer.
 
@@ -77,13 +77,13 @@ Kullanım **IntelliSense** sayfasında **seçenekleri** için JavaScript Intelli
 
 **Eklenen dosyalar**
 
-Bu seçenek, dil hizmetinin bağlamına dosyaların yüklendiği sırayı belirtir. Kullanarak sırayı yapılandırabilirsiniz **kaldırmak**, **Yukarı Taşı**, ve **Aşağı Taşı** düğmeler. IntelliSense'in düzgün çalışması için, bir diğer dosyaya bağımlı olan dosya söz konusu bu diğer dosyadan sonra yüklenmelidir.
+Bu seçenek, dil hizmetinin bağlamına dosyaların yüklendiği sırayı belirtir. Sırayı kullanarak yapılandırabilirsiniz **Kaldır**, **Yukarı Taşı**, ve **Aşağı Taşı** düğmeleri. IntelliSense'in düzgün çalışması için, bir diğer dosyaya bağımlı olan dosya söz konusu bu diğer dosyadan sonra yüklenmelidir.
 
 > [!CAUTION]
 > Bir nesne iki veya daha fazla örtük başvuruda koşulsuz olarak tanımlanırsa, nesneyi tanımlamak için bu listedeki son başvuru kullanılır.
 
 
-**Grup için bir başvuru ekleyin**
+**Grup bir başvuru ekleyin**
 
 Bu seçenek, uygun dosyaların bulunduğu yere giderek ek IntelliSense .js dosyalarını eklemek için bir yol sağlar.
 

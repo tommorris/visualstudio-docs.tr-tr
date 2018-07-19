@@ -1,6 +1,6 @@
 ---
 title: Visual Studio belgeleri
-description: Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmeleri nasıl yardımcı olduğunu öğrenin.
+description: Visual Studio, çeşitli programlama dillerini kullanarak uygulamaları geliştirmenize nasıl yardımcı olduğunu öğrenin.
 ms.date: 01/01/2018
 layout: LandingPage
 author: gewarren
@@ -10,17 +10,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fafcbd925d144cb619696da105f51e2f00db1421
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ce4e642f06777fd66a12ebffe5a7f9c9aedacc4e
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103209"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131950"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio belgeleri
 
-Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmeleri nasıl yardımcı olduğunu öğrenin.
-Öğreticiler, videolar ve diğer belgelerin Visual Studio kullanarak kod ve uygulamaları oluşturmak için yol gösterir.
+Visual Studio, çeşitli programlama dillerini kullanarak uygulamaları geliştirmenize nasıl yardımcı olduğunu öğrenin.
+Öğreticiler, videolar ve diğer belgeler, Visual Studio kullanarak kod ve uygulamaları oluşturmak için yol gösterir.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -52,7 +52,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Visual Studio göz atın</h3>
+                            <h3>Visual Studio genel bakış</h3>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Microsoft sanal Akademi üzerinde Visual Studio 2017</h3>
+                        <h3>Visual Studio 2017'de Microsoft sanal Akademi</h3>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
     </li>
 </ul>
 
-<h2>5 dakikalık "Quickstarts" ile Visual Studio deneyimi</h2>
+<h2>5 dakikalık "hızlı başlangıçlar" Visual Studio deneyimi</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -93,7 +93,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tümleşik geliştirme ortamı (IDE) ile yönlendirilmiş Al</h3>
+                        <h3>Tümleşik geliştirme ortamı (IDE) yönlendirilmiş Al</h3>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tema ve metin rengini kişiselleştirme</h3>
+                        <h3>Tema ve metin renklerini kişiselleştirme</h3>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Bir web uygulaması C# ile oluşturma</h3>
+                        <h3>C# ile bir web uygulaması oluşturma</h3>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Basic ile bir konsol uygulaması oluşturma</h3>
+                        <h3>Visual Basic ile konsol uygulaması oluşturma</h3>
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Node.js ile bir web uygulaması oluşturma</h3>
+                        <h3>Node.js ile web uygulaması oluşturma</h3>
                     </div>
                 </div>
             </div>
@@ -246,7 +246,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulama geliştirmele
     </li>
 </ul>
 
-<h2>Öğreticiler ile derinlemesine</h2>
+<h2>Öğreticileri ile daha ayrıntılı bilgiler edinin</h2>
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
@@ -260,7 +260,7 @@ src="https://docs.microsoft.com/media/logos/logo_TS.svg"><span>TypeScript</span>
 
 <div class="ico48Link"><a href="/cpp/build/vscpp-step-0-installation"><img width="48" height="48" alt="C++ tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
+<div class="ico48Link"><a href="/visualstudio/javascript/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
 src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project"><img width="48" height="48" alt="Python tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Python.svg"><span>Python</span></a></div>

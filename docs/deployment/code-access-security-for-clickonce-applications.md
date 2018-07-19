@@ -25,53 +25,53 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dad9b3c8391c54c4d668a4c695f4f459664ef373
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d186ce9ab14cc43b40d9f3fa788cc03a0e4e461c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560719"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079115"
 ---
-# <a name="code-access-security-for-clickonce-applications"></a>ClickOnce Uygulamaları İçin Kod Erişimi Güvenliği
-ClickOnce uygulamaları .NET Framework'e dayalı ve kod erişimi güvenlik kısıtlamalarına tabidir. Bu nedenle, kod etkilerini erişim güvenliği ve buna göre ClickOnce uygulamaları yazmanız anlamak önemlidir.  
+# <a name="code-access-security-for-clickonce-applications"></a>ClickOnce uygulamaları için kod erişimi güvenliği
+ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sınırlamalarına tabi olan. Bu nedenle, uygulamaları kod erişim güvenliği ve ClickOnce uygulamalarınızı buna göre yazma anlamak önemlidir.  
   
- Kod erişim güvenliği, .NET Framework'teki kod korumalı kaynaklara ve işlemlere sahip erişimi sınırlamak yardımcı olan bir mekanizmadır. Uygulama Yükleyicisi konum için uygun bölge kullanmak ClickOnce uygulamanızı kod erişim güvenliği izinleri yapılandırmanız gerekir. Çoğu durumda, seçtiğiniz **Internet** izinler sınırlı sayıda bölgenin veya **yerel Intranet** daha geniş bir izin kümesi bölgenin.  
+ Kod erişimi güvenliği, kod korumalı kaynaklara ve işlemlere sahip olan erişimini sınırlamaya yardımcı olan .NET Framework için kullanılan bir mekanizmadır. Uygulama yükleyici konumu için uygun bölgeyi kullanmak, ClickOnce uygulaması için kod erişimi güvenliği izinleri yapılandırmanız gerekir. Çoğu durumda, seçtiğiniz **Internet** sınırlı bir izin kümesi bölgenin veya **yerel Intranet** bölge için büyük bir izin kümesi.  
   
 ## <a name="default-clickonce-code-access-security"></a>Varsayılan ClickOnce kod erişimi güvenliği  
- Varsayılan olarak, yüklü olduğunda veya istemci bilgisayarda çalışması ClickOnce uygulaması tam güven izinleri alır.  
+ Yüklendiğinde veya bir istemci bilgisayarda varsayılan olarak, ClickOnce uygulaması tam güven izinleri alır.  
   
--   Tam güven izinleri olan bir uygulama gibi dosya sistemi ve kayıt defteri kaynaklara sınırsız erişimi. Bu büyük olasılıkla uygulamanız (ve son kullanıcının sistem) kötü amaçlı kod tarafından kullanılmasına izin verir.  
+-   Tam güven izinleri olan bir uygulama, dosya sistemini ve kayıt defteri gibi kaynaklara erişim varmazlar. Bu büyük olasılıkla uygulamanızı (ve son kullanıcının sistem) kötü amaçlı kod tarafından kullanılmasına izin verir.  
   
--   Bir uygulama tam güven izinleri gerektirdiğinde, son kullanıcı uygulama izinleri istenebilir. Bu uygulamayı gerçek anlamda bir ClickOnce deneyimi sağlamaz ve istemi potansiyel olarak daha az deneyimli kullanıcılar için kafa karıştırıcı olabilir anlamına gelir.  
+-   Bir uygulama tam güven izinleri gerektirdiğinde, son kullanıcının uygulama izinlerini vermek için istenebilir. Bu uygulamayı gerçek anlamda bir ClickOnce deneyimi sağlamaz ve istemi potansiyel olarak daha az deneyimli kullanıcılar için kafa karıştırıcı olabilir anlamına gelir.  
   
     > [!NOTE]
-    >  Bir uygulama CD-ROM gibi çıkarılabilir medyadan yükleme sırasında kullanıcıya sorulmaz. Ayrıca, kullanıcıların güvenilir bir kaynaktan bir uygulamayı yüklediğinizde istenmez böylece bir ağ yöneticisi ağ ilkesi yapılandırabilirsiniz. Daha fazla bilgi için bkz: [güvenilir uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md).  
+    >  Bir uygulamayı bir CD-ROM gibi çıkarılabilir medyadan yüklemek, kullanıcıya sorulmaz. Ayrıca, böylece kullanıcılar uygulamanın güvenilir bir kaynaktan yüklediklerinde istenmez bir ağ yöneticisi ağ ilkesi yapılandırabilirsiniz. Daha fazla bilgi için [güvenilir uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md).  
   
- ClickOnce uygulaması için izinleri kısıtlamak için uygulamanızın gerektirdiği izinler için en uygun bölgeyi istemek, uygulamanız için kod erişimi güvenlik izinleri değiştirebilirsiniz. Çoğu durumda, uygulamanın dağıtıldığı dilimini seçebilirsiniz. Örneğin, uygulamanızın Kurumsal uygulama ise, kullanabileceğiniz **yerel Intranet** bölgesi. Uygulamanız bir internet uygulamasıysa kullanabileceğiniz **Internet** bölgesi.  
+ ClickOnce uygulaması için izinleri kısıtlamak için uygulamanızın gerektirdiği izinler için en uygun bölgeyi istemek için uygulamanıza kod erişim güvenlik izinlerini değiştirebilirsiniz. Çoğu durumda, uygulamanın dağıtıldığı bölge seçebilirsiniz. Örneğin, uygulamanız bir kuruluş uygulaması ise, kullanabileceğiniz **yerel Intranet** bölge. Uygulamanız bir Internet uygulaması ise, kullanabileceğiniz **Internet** bölge.  
   
-## <a name="configuring-security-permissions"></a>Güvenlik izinlerini yapılandırma  
- Kod erişim güvenliği izinleri sınırlamak için uygun bölgeyi istemek için ClickOnce uygulamanızı her zaman yapılandırmanız gerekir. Güvenlik izinlerini yapılandırabilirsiniz **güvenlik** sayfasında **Proje Tasarımcısı**.  
+## <a name="configure-security-permissions"></a>Güvenlik izinlerini yapılandırma  
+ Her zaman, kod erişimi güvenliği izinleri sınırlamak için uygun bölgeyi istemek için ClickOnce uygulamanızı yapılandırmanız gerekir. Güvenlik izinlerini yapılandırabilirsiniz **güvenlik** sayfasının **Proje Tasarımcısı**.  
   
- **Güvenlik** sayfasındaki **Proje Tasarımcısı** içeren bir **ClickOnce güvenlik ayarlarını etkinleştir** onay kutusu. Bu onay kutusu seçili olduğunda, uygulamanız için dağıtım bildirimi güvenlik izni isteklerini eklenir. Yükleme sırasında kullanıcının istenen izinleri uygulamanın dağıtıldığı bölge için varsayılan izinler aşarsa izinleri vermek için istenir. Daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce güvenlik ayarlarını etkinleştir](../deployment/how-to-enable-clickonce-security-settings.md).  
+ **Güvenlik** sayfasını **Proje Tasarımcısı** içeren bir **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu. Bu onay kutusu seçildiğinde, güvenlik izin isteklerini uygulamanız için dağıtım bildirimi eklenir. Yükleme sırasında istenen izinlere uygulamanın dağıtıldığı bölge için varsayılan izinler aşarsa izinleri vermek için kullanıcı istenir. Daha fazla bilgi için bkz. [nasıl yapılır: ClickOnce etkinleştir güvenlik ayarlarını](../deployment/how-to-enable-clickonce-security-settings.md).  
   
- Farklı konumlardan dağıtılan uygulamalar sormadan farklı düzeylerde izinler verilir. Örneğin, Internet'ten uygulama dağıtıldığında, bir yüksek oranda kısıtlayıcı izinler kümesini alır. Yerel Intranet bağlantısı yüklendiğinde, daha fazla izin alır ve bir CD-ROM'dan yüklendiğinde tam güven izinleri alır.  
+ Farklı konumlardan dağıtılan uygulamaları sormadan farklı düzeylerde izinler verilir. Örneğin, Internet'ten uygulama dağıtıldığında, son derece kısıtlayıcı bir izin kümesini alır. Yerel Intranet üzerinden yüklendiğinde, daha fazla izin alır ve bir CD-ROM'dan yüklendiğinde tam güven izinleri alır.  
   
- İzinleri yapılandırmak için başlangıç noktası bir güvenlik bölgesi'nden seçebilirsiniz **bölge** listesini **güvenlik** sayfası. Uygulamanızı büyük olasılıkla birden fazla bölgeden dağıtılacaksa, en az izinlerle bölgeyi seçin. Daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
+ Bir güvenlik bölgesi'nden seçebileceğiniz izinlerini yapılandırmak için başlangıç noktası olarak **bölge** listesini **güvenlik** sayfası. Uygulamanızı potansiyel olarak birden fazla bölgeden dağıtılacaksa, en az izinlere sahip bir bölge seçin. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Ayarlanabilir özellikler izin kümesine göre değişiklik gösterir; tüm izin kümeleri yapılandırılabilir özelliklere sahip. Uygulamanızın isteyebileceği izinleri tam listesi hakkında daha fazla bilgi için bkz: <xref:System.Security.Permissions>. Özel bir bölge için izinlerin nasıl ayarlanacağı hakkında daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ İzin kümesi tarafından ayarlanabilir özellikleri değişir; tüm izin kümeleri yapılandırılabilir özelliklere sahiptir. Uygulamanızın isteyebileceği izinleri tam listesi hakkında daha fazla bilgi için bkz. <xref:System.Security.Permissions>. Özel bir bölge için izinlerin nasıl ayarlanacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
-## <a name="debugging-an-application-that-has-restricted-permissions"></a>Sınırlı izinlere sahip bir uygulama hata ayıklama  
- Bir geliştirici olarak, büyük olasılıkla tam güven izinleri olan geliştirme bilgisayarınıza çalıştırın. Bu nedenle, kısıtlı izinlerle çalıştıklarında kullanıcıların görebilirsiniz uygulama hata ayıklarken aynı güvenlik özel durumları görmezsiniz.  
+## <a name="debug-an-application-that-has-restricted-permissions"></a>Sınırlı izinlere sahip bir uygulamanın hatalarını ayıklama  
+ Bir geliştirici olarak, büyük olasılıkla tam güven izinleri olan geliştirme bilgisayarınıza çalıştırın. Bu nedenle, kısıtlanmış izinler ile çalıştırdıklarında kullanıcıların görebileceği uygulama hata ayıklaması yaparken aynı güvenlik özel durumları görmez.  
   
- Bu özel durumları yakalamak için son kullanıcı ile aynı izinlerle uygulamada hata ayıklama gerekiyor. Kısıtlı izinlerle hata ayıklama etkinleştirilebilir **güvenlik** sayfasında **Proje Tasarımcısı**.  
+ Bu özel durumları yakalamak için uygulama son kullanıcı olarak aynı izinlere sahip olması. Sınırlı izinler ile hata ayıklama etkinleştirilebilir **güvenlik** sayfasının **Proje Tasarımcısı**.  
   
- Üzerinde etkinleştirilmeyen her kod güvenlik talebi için kısıtlı izinleri olan bir uygulamada hata ayıklama işlemi yaparken, özel durumlar gerçekleştirilecektir **güvenlik** sayfası. Özel durum önlemek için kodunuzu değiştirme hakkında öneriler sağlayan bir özel durum Yardımcısı görüntülenir.  
+ Kısıtlı izinleri olan bir uygulamada hata ayıklaması yaparken, özel durumlar için üzerinde etkinleştirilmemiş herhangi bir kod güvenlik talebi ortaya çıkacaktır **güvenlik** sayfası. Özel durum önlemek için kodunuzu değiştirmek konusunda öneriler sağlayan bir özel durum Yardımcısı görüntülenir.  
   
- Ayrıca, kod yazdığınızda, IntelliSense özelliği Kod Düzenleyicisi'nde yapılandırmış olduğunuz güvenlik izinlerini dahil edilmeyen herhangi bir üye devre dışı bırakır.  
+ Ayrıca, kod yazdığınızda, IntelliSense özelliği Kod Düzenleyicisi'nde, yapılandırmış olduğunuz güvenlik izinlerini bulunmayan herhangi bir üye devre dışı bırakır.  
   
- Daha fazla bilgi için bkz: [nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Daha fazla bilgi için [nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
-## <a name="security-permissions-for-browser-hosted-applications"></a>Tarayıcıda barındırılan uygulamalar için güvenlik izinleri  
+## <a name="security-permissions-for-browser-hosted-applications"></a>Tarayıcıda tutulan uygulamalar için güvenlik izinleri  
  Visual Studio, Windows Presentation Foundation (WPF) uygulamaları için aşağıdaki proje türlerini sağlar:  
   
 -   WPF Windows uygulaması  
@@ -82,19 +82,19 @@ ClickOnce uygulamaları .NET Framework'e dayalı ve kod erişimi güvenlik kıs�
   
 -   WPF Hizmet Kitaplığı  
   
- Bu proje türleri yalnızca WPF Web tarayıcısı uygulamaları bir Web tarayıcısında barındırılan ve bu nedenle özel dağıtım ve güvenlik ayarları gerektirir. Bu uygulamalar için varsayılan güvenlik ayarlarını aşağıdaki gibidir:  
+ Bu proje türleri yalnızca WPF Web tarayıcı uygulamaları bir Web tarayıcısında barındırılan ve bu nedenle özel dağıtımı ve güvenlik ayarları gerektirir. Bu uygulamalar için varsayılan güvenlik ayarlarını aşağıdaki gibidir:  
   
--   **ClickOnce güvenlik ayarlarını etkinleştir**  
+-   **ClickOnce güvenlik ayarlarını etkinleştirme**  
   
 -   **Kısmi güven uygulamasıdır**  
   
--   **Internet bölgesi** (izinle WPF Web tarayıcısı seçili uygulamaları için varsayılan)  
+-   **Internet bölgesi** (WPF Web tarayıcı seçili uygulamalar için varsayılan izin ile)  
   
- İçinde **Gelişmiş güvenlik ayarları** iletişim kutusu, **seçili izin kümesi ile bu uygulamanın hatalarını ayıklama** onay kutusu seçili ve devre dışı. Tarayıcıda barındırılan uygulamalar için bölge içinde hata ayıklama kapatılamaz olmasıdır.  
+ İçinde **Gelişmiş güvenlik ayarları** iletişim kutusu, **bu uygulama için seçili izin kümesi ile hata ayıklama** onay kutusu işaretli ve devre dışı. Bölge içinde hata ayıklama için tarayıcıda tutulan uygulamalar devre dışı bırakılamaz. olmasıdır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   
- [Nasıl yapılır: ClickOnce güvenlik ayarlarını etkinleştir](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Nasıl yapılır: ClickOnce güvenlik ayarlarını etkinleştirme](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Nasıl yapılır: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   

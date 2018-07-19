@@ -1,5 +1,5 @@
 ---
-title: Öznitelik (XElement dinamik özellik)
+title: Öznitelik (XElement dinamik özelliği)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac173785804ce2ed2874b9628c68d3ab78be6e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: caacdd787f1765721d281db885364aafc36c5183
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923271"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890015"
 ---
-# <a name="attribute-xelement-dynamic-property"></a>Öznitelik (XElement dinamik özellik)
+# <a name="attribute-xelement-dynamic-property"></a>Öznitelik (XElement dinamik özelliği)
 
-Belirtilen genişletilmiş adına karşılık gelen öznitelik örneği almak için kullanılan bir dizin oluşturucu alır.
+Belirtilen genişletilmiş adı için karşılık gelen öznitelik örneği almak için kullanılan bir dizin oluşturucuyu alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```xaml
 elem.Attribute[{namespaceName}attribName]
 ```
 
 ## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-Bir dizin oluşturucu türü `XAttribute Item(String expandedName)`. Bu dizin oluşturucu genişletilmiş belirtilen özniteliğin adını alır ve karşılık gelen döndürür <xref:System.Xml.Linq.XAttribute>, veya `null` hiçbir öznitelik belirtilen ada sahip.
+Bir dizin oluşturucu türü `XAttribute Item(String expandedName)`. Bu dizin oluşturucu, belirtilen öznitelik genişletilmiş adını alır ve buna karşılık gelen döndürür <xref:System.Xml.Linq.XAttribute>, veya `null` varsa belirtilen ada sahip bir öznitelik yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu özellik eşdeğerdir <xref:System.Xml.Linq.XElement.Attribute%2A> yöntemi <xref:System.Xml.Linq.XElement?displayProperty=fullName> sınıfı.
+Bu özellik değerine eşdeğer olan <xref:System.Xml.Linq.XElement.Attribute%2A> yöntemi <xref:System.Xml.Linq.XElement?displayProperty=fullName> sınıfı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

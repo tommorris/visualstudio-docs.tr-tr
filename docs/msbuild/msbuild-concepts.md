@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd43d79950a39702108383f7408e1a37960e7c06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b2219cc163332114632552fa7c3cb26fb75734af
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573183"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079033"
 ---
-# <a name="msbuild-concepts"></a>MSBuild Kavramları
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Yapı platformunu yazılım nasıl derler denetlemek için kullanabileceğiniz temel bir XML Şeması sağlar. Derleme ve nasıl oluşturulacak oldukları bileşenleri belirtmek için bu dört bölümden MSBuild kullanın: özellikleri, öğelerini, görevleri ve hedefler.  
+# <a name="msbuild-concepts"></a>MSBuild kavramları
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Yapı platformunu yazılım nasıl oluşturduğunu denetler için kullanabileceğiniz temel bir XML Şeması sağlar. Bileşenleri derleme ve nasıl oluşturulacak oldukları belirtmek için bu MSBuild dört bölümden kullanın: özellikler, öğeler, görevleri ve hedefleri.  
   
-## <a name="related-topics"></a>İlgili Konular  
+## <a name="related-topics"></a>İlgili konular  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[MSBuild Özellikleri](../msbuild/msbuild-properties.md)|Özellikler ve özellik koleksiyonları tanıtır. Derlemeleri yapılandırmak için kullanabileceğiniz anahtar/değer çiftlerinin özelliklerdir.|  
-|[MSBuild Öğeleri](../msbuild/msbuild-items.md)|Öğeleri ve öğe koleksiyonlarını tanıtır. Öğeleri yapı sistemine girdiler ve genellikle dosyaları temsil eder.|  
-|[MSBuild Hedefleri](../msbuild/msbuild-targets.md)|Belirli bir sırada görevleri gruplandırın ve bölümler komut satırında çağrılacak derleme işleminin etkinleştirmek açıklanmaktadır.|  
-|[MSBuild Görevleri](../msbuild/msbuild-tasks.md)|Bir birim tarafından kullanılan yürütülebilir kod oluşturmayı gösteren [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] atomik yapı işlemleri gerçekleştirmek için.|  
-|[Özellikleri ve Öğeleri Karşılaştırma](../msbuild/comparing-properties-and-items.md)|MSBuild özellikleri ve öğeleri karşılaştırır. İkisi de bilgi görevlere geçirmek, koşulları değerlendirin ve proje dosyası başvurulabilir değerlerini depolamak için kullanılır.|  
-|[MSBuild Özel Karakterleri](../msbuild/msbuild-special-characters.md)|Açıklar nasıl bazı kaçış karakterleri [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] belirli bağlamlarda özel kullanımı için ayırır.|  
-|[İzlenecek Yol: Sıfırdan MSBuild Proje Dosyası Oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Temel Proje dosyasını artımlı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
-|[İzlenecek Yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild yapı taşlarını tanıtır ve yazma, yönetmek ve Visual Studio tümleşik geliştirme ortamı (IDE) kapatmadan MSBuild projelerine hata ayıklama gösterilmektedir.|  
-|[MSBuild Başvurusu](../msbuild/msbuild-reference.md)|Başvuru bilgileri içeren belgelerin bağlantıları.|  
-|[MSBuild](../msbuild/msbuild.md)|XML şeması bir proje dosyası için genel bir bakış sunar ve yazılım derlemeler işlemlerin nasıl denetlediği gösterir.|
+|[MSBuild özellikleri](../msbuild/msbuild-properties.md)|Özellikler ve özellik koleksiyonları tanıtır. Özellikler, yapıları yapılandırmak için kullanabileceğiniz anahtar/değer çiftleridir.|  
+|[MSBuild öğeleri](../msbuild/msbuild-items.md)|Öğeleri ve öğe koleksiyonları tanıtır. Öğeler Yapı sistemine girdi ve genelde dosyaları temsil ederler.|  
+|[MSBuild hedefleri](../msbuild/msbuild-targets.md)|Belirli bir sırada görevleri gruplandırın ve komut satırında çağrılacak yapı işlemi bölümlerinin etkinleştirme açıklanmaktadır.|  
+|[MSBuild görevleri](../msbuild/msbuild-tasks.md)|Tarafından kullanılan yürütülebilir kod biriminin nasıl oluşturulacağını gösterir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] CAN atomik yapı işlemleri gerçekleştirmek için.|  
+|[Özellikleri ve öğeleri karşılaştırma](../msbuild/comparing-properties-and-items.md)|MSBuild özellikleri ve öğeleri karşılaştırır. İkisi de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır.|  
+|[MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md)|Açıklayan nasıl çıkılacağını bazı karakter [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] belirli bağlamlarda özel kullanım için ayırır.|  
+|[İzlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
+|[İzlenecek Yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio tümleşik geliştirme ortamı (IDE) kapatmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir.|  
+|[MSBuild başvurusu](../msbuild/msbuild-reference.md)|Başvuru bilgilerini içeren belgelere bağlantılar.|  
+|[MSBuild](../msbuild/msbuild.md)|Bir proje dosyası için XML Şeması genel bir bakış sunar ve yazılım derleme işlemlerini nasıl denetlediğini gösterir.|

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfccb444eab802f7caa5cf83faff0ddc7a51c389
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3e477afc77b1f6118fb021e930cd19b740763d3b
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458781"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433086"
 ---
 # <a name="basictype"></a>BasicType
-Simgenin temel türü belirtir.  
+Simgenin temel türünü belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,12 +46,14 @@ enum BasicType {
    btBit      = 29,  
    btBSTR     = 30,  
    btHresult  = 31  
+   btChar16   = 32,  // char16_t
+   btChar32   = 33,  // char32_t
 };  
 ```  
   
 ## <a name="elements"></a>Öğeleri  
  btNoType  
- Temel tür belirtilmedi.  
+ Belirtilen hiçbir temel türü.  
   
  btVoid  
  Temel türü bir `void`.  
@@ -60,19 +62,19 @@ enum BasicType {
  Temel türü bir `char` (C/C++ türü).  
   
  btWChar  
- Temel türdür geniş (Unicode) karakter (`WCHAR`).  
+ Temel türü olan geniş karakter (Unicode) (`WCHAR`).  
   
  btInt  
- Temel tür `signed int` (C/C++ türü).  
+ Temel türü `signed int` (C/C++ türü).  
   
  btUInt  
- Temel tür `unsigned int` (C/C++ türü).  
+ Temel türü `unsigned int` (C/C++ türü).  
   
  btFloat  
  Temel türü olan bir kayan noktalı sayı (`FLOAT`).  
   
  btBCD  
- Temel türü olan bir ikili kodlanmış ondalık (`BCD`).  
+ Temel türü, ikili dosya kodlanmış bir ondalık (`BCD`).  
   
  btBool  
  Temel türü olan bir Boole değeri (`BOOL`).  
@@ -87,7 +89,7 @@ enum BasicType {
  Para birimi temel türüdür.  
   
  btDate  
- Temel türdür tarih/saat (`DATE`).  
+ Temel türü, tarih/saat (`DATE`).  
   
  btVariant  
  Temel türü olan bir değişken türü yapısı (`VARIANT`).  
@@ -99,18 +101,18 @@ enum BasicType {
  Temel bir bit türüdür.  
   
  btBSTR  
- Temel türü olan bir temel veya ikili dize (`BSTR`).  
+ Temel türü olan temel ya da ikili bir dize (`BSTR`).  
   
  btHresult  
  Temel türü bir `HRESULT`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu numaralandırma değerleri tarafından döndürülen [Idiasymbol::get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) yöntemi.  
+ Bu sabit listesi değerleri tarafından döndürülen [Idiasymbol::get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) yöntemi.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: cvconst.h  
+ Üstbilgi: cvconst.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Numaralandırmalar ve yapılar](../../debugger/debug-interface-access/enumerations-and-structures.md)   
+ [Sabit listeleri ve yapıları](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Idiasymbol::get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

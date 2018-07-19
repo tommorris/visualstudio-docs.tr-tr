@@ -16,15 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703827"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924006"
 ---
-# <a name="open-file-command"></a>Dosya Aç Komutu
-Varolan bir dosyayı açar ve bir düzenleyicide belirtmenize olanak tanır.
+# <a name="open-file-command"></a>Dosya Aç komutu
+
+Varolan bir dosyayı açar ve bir düzenleyici belirtmenize olanak tanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,37 +34,41 @@ File.OpenFile filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename`
 
- Gerekli. Tam veya kısmi yol ve dosya adı dosyayı açın. Boşluk içeren yollar tırnak işaretleri içine alınmalıdır.
+`filename`
+
+Gerekli. Tam veya kısmi yolu ve dosya adını dosyayı açın. Boşluk içeren yolları tırnak içine alınmalıdır.
 
 ## <a name="switches"></a>Anahtarlar
- / e:`editorname`
 
- İsteğe bağlı. Dosya açılacak düzenleyicinin adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı sağlanan **birlikte Aç** iletişim kutusu görüntülenir.
+/ e:`editorname`
 
- / E:`editorname` bağımsız değişkeni açık ile iletişim kutusunda tırnak işaretleri içine göründükleri gibi Düzenleyici adları söz dizimini kullanır.
+İsteğe bağlı. Dosyanın açılmasını düzenleyicinin adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı verilmesi, **birlikte Aç** iletişim kutusu görüntülenir.
 
- Örneğin, bir dosyayı kaynak kod düzenleyicisinde açmak için aşağıdaki / e: için girersiniz`editorname` bağımsız değişkeni.
+/ E:`editorname` bağımsız değişkeni sözdizimini açık ile iletişim kutusunda tırnak işaretleri arasına göründükleri gibi Düzenleyicisi adları kullanır.
+
+Örneğin, bir dosya kaynak kod Düzenleyicisi'nde açmak için / e: şunları girersiniz`editorname` bağımsız değişken.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Açıklamalar
- Bir yol girin gibi otomatik tamamlama doğru yolun ve dosya adı bulmaya çalışır.
+
+Bir yol girin gibi doğru yol ve dosya adı bulmak otomatik tamamlama çalışır.
 
 ## <a name="example"></a>Örnek
- Bu örnek stil dosyasını "Test1.css" Kaynak Kod Düzenleyicisi'nde açar.
+
+Bu örnek, Kaynak Kod Düzenleyicisi'nde "Test1.css" stil dosyasını açar.
 
 ```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
-- [Komut Penceresi](../../ide/reference/command-window.md)
-- [Komut Penceresi](../../ide/reference/immediate-window.md)
+- [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)
+- [Komut penceresi](../../ide/reference/command-window.md)
+- [Komut penceresi](../../ide/reference/immediate-window.md)
 - [Bul/komut kutusu](../../ide/find-command-box.md)
-- [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)

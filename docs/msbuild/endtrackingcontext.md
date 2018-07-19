@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4fb010a5d4eb2ce78b8decb3fd3fe98170950b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3bf8720efab88556092e6552a8ffa47cb1151fef
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325062"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946387"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 Son geçerli izleme bağlamı.  
@@ -33,11 +33,11 @@ Son geçerli izleme bağlamı.
 HRESULT WINAPI EndTrackingContext();  
 ```  
   
-## <a name="return-value"></a>Dönüş Değeri  
- Bir **HRESULT** ile **başarılı** izleme bağlamı sonlandırıldı varsa biti ayarlanmamış.  
+## <a name="return-value"></a>Dönüş değeri  
+ Bir **HRESULT** ile **başarılı** izleme bağlamına sona erdi, biti ayarlanmamış.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** FileTracker.h  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

@@ -1,24 +1,25 @@
 ---
 layout: LandingPage
-title: Visual Studio'da, uygulamalarınızı dağıtma | Microsoft Docs
-description: Bilgi nasıl uygulamaları, hizmetleri ve bileşenleri dağıtma için Visual Studio 2017 kullanın.
+title: Visual Studio'da uygulamalarınızı dağıtma | Microsoft Docs
+description: Bilgi nasıl uygulamaları, hizmetleri ve bileşenleri dağıtmak için Visual Studio 2017'yi kullanın.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815330"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030409"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio'daki dağıtımı
 
-Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli araçlar sağlar.
+Visual Studio, uygulamaları dağıtmak için çeşitli araçlar sağlar.
 
-<h2>5 dakikalık Quickstarts ile Visual Studio dağıtım deneyimi</h2>
+<h2>5 dakikalık hızlı başlangıçlar Visual Studio dağıtım deneyimi</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -32,7 +33,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dağıtım seçenekleri ilk bakma</h3>
+                        <h3>İlk kez göz atın, dağıtım seçenekleri</h3>
                     </div>
                 </div>
             </div>
@@ -50,7 +51,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Yerel bir klasöre dağıtma</h3>
+                        <h3>Yerel klasöre dağıtma</h3>
                     </div>
                 </div>
             </div>
@@ -95,7 +96,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
     </li>
 </ul>
 
-<h2>Öğreticiler ile derinlemesine</h2>
+<h2>Öğreticileri ile daha ayrıntılı bilgiler edinin</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -109,7 +110,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Bir .NET dağıtmak çekirdek uygulama</h3>
+                        <h3>Dağıtma bir .NET Core uygulaması</h3>
                     </div>
                 </div>
             </div>
@@ -127,7 +128,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Bir UWP uygulaması için Microsoft mağazası paketi</h3>
+                        <h3>Microsoft Store için bir UWP uygulaması paketleme</h3>
                     </div>
                 </div>
             </div>
@@ -145,7 +146,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>ASP.NET Azure'a dağıtma</h3>
+                        <h3>ASP.NET, Azure'da dağıtma</h3>
                     </div>
                 </div>
             </div>
@@ -163,7 +164,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Microsoft Store (C#, C++) için bir masaüstü uygulaması paketi</h3>
+                        <h3>Bir masaüstü uygulaması paketi için Microsoft Store (C#, C++)</h3>
                     </div>
                 </div>
             </div>
@@ -181,7 +182,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Python Azure'a dağıtma</h3>
+                        <h3>Python'ı Azure'a dağıtma</h3>
                     </div>
                 </div>
             </div>
@@ -199,7 +200,7 @@ Visual Studio, uygulamaları dağıtmanıza yardımcı olması için çeşitli a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>İçeri aktarma ayarları yayımlama ve Azure App Service'e dağıtma</h3>
+                        <h3>İçeri aktarma, yayınlama ayarları ve Azure App Service'e dağıtma</h3>
                     </div>
                 </div>
             </div>

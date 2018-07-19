@@ -15,24 +15,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f08a159d9490c5c8f92c5b093bc1b52d01c3b3d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326211"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081663"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl Yapılır: Farklı Seçeneklerle Aynı Kaynak Dosyaları Derleme
-Projeleri oluşturduğunuzda, farklı yapılandırma seçenekleriyle aynı bileşenleri sık derleyin. Örneğin, sembol bilgileri veya sembol bilgileri ile ancak iyileştirmeler yayın derlemesinde hata ayıklama derlemesi oluşturabilirsiniz. Veya x86 gibi belirli bir platformda çalıştırmak için bir proje oluşturabilirsiniz veya [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Bu durumlarda, yapı seçeneklerin çoğu aynı kalır; derleme yapılandırması denetlemek için yalnızca birkaç seçenekleri değişir. İle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], farklı bir yapı yapılandırmaları oluşturmak için özellikleri ve koşulları kullanın.  
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme
+Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşenleri sık derleyin. Örneğin, sembol bilgisi veya bir yayın yapısı sembol bilgisi ancak iyileştirmeler ile hata ayıklama derlemesi oluşturabilirsiniz. Veya, x86 gibi belirli bir platformda çalıştırmak için bir proje oluşturabilirsiniz veya [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Bu durumlarda, aynı derleme seçeneklerin çoğu kalır; yalnızca birkaç seçeneği, derleme yapılandırmasını kontrol etmek için değiştirilir. İle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], özellikleri ve koşulları farklı derleme yapılandırmalarında oluşturmak için kullanın.  
   
-## <a name="using-properties-to-modify-projects"></a>Projeleri değiştirmek için özelliklerini kullanma  
- `Property` Öğe, birkaç kez geçici bir dizine konumu gibi bir proje dosyası içinde başvurulan bir değişken tanımlar veya kullanılan özelliklerinin değerlerini ayarlamak için hata ayıklama derlemesi ve sürüm gibi çeşitli yapılandırmaları oluşturabilirsiniz. Özellikleri hakkında daha fazla bilgi için bkz: [MSBuild özellikleri](../msbuild/msbuild-properties.md).  
+## <a name="use-properties-to-modify-projects"></a>Projeleri değiştirilecek özellikleri kullanın  
+ `Property` Öğesi birkaç kez geçici bir dizine konumu gibi bir proje dosyası olarak başvurulan bir değişkeni tanımlar veya kullanılan özellik değerlerini ayarlamak için hata ayıklama derleme ve yayın gibi çeşitli yapılandırmalar oluşturun. Özellikleri hakkında daha fazla bilgi için bkz. [MSBuild özellikleri](../msbuild/msbuild-properties.md).  
   
- Proje dosyası değiştirmek zorunda kalmadan, derleme yapılandırmasını değiştirmek için özellikler kullanabilirsiniz. `Condition` Özniteliği `Property` öğesi ve `PropertyGroup` öğesi özelliklerinin değerini değiştirmenize olanak sağlar. Hakkında daha fazla bilgi için [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] koşullar bkz [koşullar](../msbuild/msbuild-conditions.md).  
+ Proje dosyasını değiştirmek zorunda kalmadan yapı yapılandırmasını değiştirmek için Özellikler'i kullanabilirsiniz. `Condition` Özniteliği `Property` öğesi ve `PropertyGroup` öğesi özelliklerin değerini değiştirmenize olanak sağlar. Hakkında daha fazla bilgi için [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] koşullar bkz [koşullar](../msbuild/msbuild-conditions.md).  
   
-#### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Bir grubu başka bir özelliğe dayalı özelliklerini ayarlamak için  
+#### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Bir grubu başka bir özelliğe dayalı özellikleri ayarlamak için  
   
--   Kullanım bir `Condition` özniteliğini bir `PropertyGroup` öğesi aşağıdakine benzer:  
+-   Kullanım bir `Condition` özniteliğini bir `PropertyGroup` öğesi şuna benzer:  
   
     ```xml  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -41,55 +41,55 @@ Projeleri oluşturduğunuzda, farklı yapılandırma seçenekleriyle aynı bile�
     </PropertyGroup>  
     ```  
   
-#### <a name="to-define-a-property-based-on-another-property"></a>Başka bir özelliğe dayalı bir özellik tanımlamak için  
+#### <a name="to-define-a-property-based-on-another-property"></a>Başka bir özelliğe dayalı bir özelliği tanımlamak için  
   
--   Kullanım bir `Condition` özniteliğini bir `Property` öğesi aşağıdakine benzer:  
+-   Kullanım bir `Condition` özniteliğini bir `Property` öğesi şuna benzer:  
   
     ```xml  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
     ```  
   
-## <a name="specifying-properties-on-the-command-line"></a>Komut satırında özelliklerini belirtme  
- Birden çok yapılandırmaları kabul etmek için proje dosyanızı yazıldıktan sonra projenizi derleme olduğunda bu yapılandırmaları değiştirme olanağına sahip gerekir. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] komut satırını kullanarak belirtilmesini özellikleri sağlayarak bu yeteneği sağlar **/property** veya **/p** geçin.  
+## <a name="specify-properties-on-the-command-line"></a>Özellikleri komut satırında belirtin.  
+ Birden çok yapılandırmaları kabul etmek için proje dosyanızı yazıldıktan sonra projenizi oluşturduğunuzda, bu yapılandırmaları değiştirme olanağına sahip gerekir. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] özellikleri kullanarak komut satırı belirtilmesine olanak tanıyarak bu özelliği sağlar **/Property** veya **/p** geçin.  
   
-#### <a name="to-set-a-project-property-at-the-command-line"></a>Komut satırında bir proje özelliği ayarlamak için  
+#### <a name="to-set-a-project-property-at-the-command-line"></a>Komut satırında bir proje özelliğini ayarlamak için  
   
--   Kullanım **/property** anahtar özellik ve özellik değeri. Örneğin:  
+-   Kullanım **/Property** özellik ve özellik değeri ile geçiş yapın. Örneğin:  
   
     ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - veya -  
+    veya  
   
     ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
-#### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Komut satırında birden çok proje özelliği belirtmek için  
+#### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Komut satırında birden fazla proje özelliği belirtmek için  
   
--   Kullanmak **/property** veya **/p** özelliği ve özellik değerleri ile birden çok kez geçiş veya kullanın **/property** veya **/p** geçin ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
+-   Kullanma **/Property** veya **/p** özellik ve özellik değerleri ile birden çok kez geçin veya kullanın **/Property** veya **/p** geçin ve birden çok özellik noktalı virgülle (;) ayırın. Örneğin:  
   
     ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
-     - veya -  
+    veya
   
     ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
- Ortam değişkenleri de özellikleri olarak kabul edilir ve tarafından otomatik olarak dahil [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir derleme kullanma ortam değişkenleri](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Ortam değişkenlerini de özellik olarak kabul edilir ve tarafından otomatik olarak eklenen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Komut satırında belirtilen özellik değeri, proje dosyasında aynı özelliği için ayarlanır ve değer proje dosyasında bir ortam değişkeni değeri önceliklidir herhangi bir değer daha önceliklidir.  
+ Komut satırında belirtilen özellik değeri, aynı özelliği proje dosyasında ayarlanır ve değer proje dosyasında bir ortam değişkeni değeri önceliklidir herhangi bir değer daha önceliklidir.  
   
- Kullanarak bu davranışı değiştirebilirsiniz `TreatAsLocalProperty` proje etiketinde öznitelik. Bu öznitelik ile listelenen özellik adları için komut satırında belirtilen özellik değeri proje dosyasındaki değer önceliklidir değil. Bu konuda daha sonra bir örnek bulabilirsiniz.  
+ Kullanarak bu davranışı değiştirebilirsiniz `TreatAsLocalProperty` öznitelik bir proje etiketinde. Bu öznitelik ile listelenen özellik adları için komut satırında belirtilen özellik değeri değer proje dosyasında öncelikli değil. Bu konuda daha sonra bir örnek bulabilirsiniz.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde, "Hello World" projenin hata ayıklama derlemesi ve yayın derlemesi oluşturmak için kullanılan iki yeni özellik gruplarını içerir.  
+ Aşağıdaki kod örneği, "Hello World" projenin hata ayıklama derleme ve yayın derlemesi oluşturmak için kullanılan iki yeni özellik gruplarını içerir.  
   
- Bu projenin hata ayıklama sürümü oluşturmak için şunu yazın:  
+ Bu projede hata ayıklama sürümünü oluşturmak için şunu yazın:  
   
 ```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
@@ -154,7 +154,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl kullanılacağını anlatan `TreatAsLocalProperty` özniteliği. `Color` Özellik değerine sahip `Blue` proje dosyasında ve `Green` komut satırında. İle `TreatAsLocalProperty="Color"` proje etiketinde komut satırı özelliği (`Green`) proje dosyasında tanımlanan özelliği geçersiz kılmaz (`Blue`).  
+ Aşağıdaki örnekte nasıl kullanılacağı gösterilmektedir `TreatAsLocalProperty` özniteliği. `Color` Özellik değerine sahip `Blue` proje dosyasında ve `Green` komut satırında. İle `TreatAsLocalProperty="Color"` proje etiketinde, komut satırı özelliği (`Green`) proje dosyasında tanımlanan özellik geçersiz kılmaz (`Blue`).  
   
  Projeyi oluşturmak için aşağıdaki komutu girin:  
   
@@ -184,8 +184,8 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
 [MSBuild](../msbuild/msbuild.md)  
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
- [Proje Öğesi (MSBuild)](../msbuild/project-element-msbuild.md)
+ [Proje öğesi (MSBuild)](../msbuild/project-element-msbuild.md)

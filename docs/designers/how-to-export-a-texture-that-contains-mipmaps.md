@@ -10,37 +10,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2126f38053cc8f83be92aeb5d3939df07e58c2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923333"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923900"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl yapılır: Mipmap'leri İçeren Dokuyu Dışa Aktarma
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl yapılır: mipmap'leri içeren dokuyu dışa aktarma
 
-Görüntü içerik ardışık düzen mipmaps kaynak görüntü projenizin yapı aşamasının bir parçası olarak oluşturabilirsiniz. Bazı efektler elde etmek için bazı durumlarda, her MIP düzeyi görüntü içeriğini el ile belirtmeniz gerekir. Her MIP düzeyi görüntü içeriğini el ile belirtmeniz gerekmediğinde, derleme zamanında mipmaps oluşturma mipmap içeriği hiçbir zaman eşitleme hale sağlar. Çalışma zamanında mipmaps oluşturma performans maliyetini ortadan kaldırır.
+Görüntü içeriği ardışık düzeni, projenizin yapı evresinin parçası olarak bir kaynak görüntüden mipmap'leri oluşturabilirsiniz. Bazı efektler elde etmek için bazı durumlarda, her MIP düzeyinin görüntü içeriğini el ile belirtmeniz gerekir. Her MIP düzeyinin görüntü içeriğini el ile belirtmek ihtiyacınız kalmadığında, derleme zamanında mipmap oluşturma mipmap içeriğinin asla eşitleme dışı duruma sağlar. Çalışma zamanında mipmap'leri oluşturmanın performans maliyetini ortadan kaldırır.
 
-Bu makalede yer almaktadır:
+Bu makalede ele alınmıştır:
 
-- Görüntü içerik ardışık düzen tarafından işlenmek üzere kaynak görüntü yapılandırma.
+- Görüntü içeriği ardışık düzeni tarafından işlenecek kaynak görüntüyü yapılandırma.
 
-- Görüntü içerik mipmaps oluşturmak için ardışık düzen yapılandırma.
+- Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırma.
 
-## <a name="export-mipmaps"></a>Mipmaps dışarı aktarma
+## <a name="export-mipmaps"></a>Mipmap dışarı aktarma
 
-Mipmap oluşturma doku yüzeyleri 3B oyun veya uygulama için otomatik ekran alanı düzey-in-ayrıntıları sağlar. Oyun veya uygulama işleme performansını doku aşağı örneklenen sürümleri önceden bilgi işlem tarafından geliştirir. Tüm doku olmak zorunda değildir anlamına gelir aşağı-her zaman, örneklenen aşağı örneklenen sürümleri önceden bilgi işlem örneklenen.
+Mipeşlem, 3D oyun veya uygulamada dokulu yüzeyler için otomatik ekran alanı düzeyi ayrıntı düzeyi sağlar. Bu, bir dokunun alt örneklenen sürümlerini önceden hesaplayarak bir oyunun veya uygulamanın işleme performansını geliştirir. Dokunun tamamı olmak zorunda değil anlamına gelir her zaman bu alt örneklenen alt örneklenen sürümlerini önceden bilgi işlem örneklenir.
 
-### <a name="to-export-a-texture-that-has-mipmaps"></a>Mipmaps sahip bir doku dışarı aktarmak için
+### <a name="to-export-a-texture-that-has-mipmaps"></a>Mipmap içeren bir dokuyu dışarı aktarmak için
 
-1.  Temel bir doku ile başlar. Varolan bir görüntü dosyası yüklemek ya da açıklandığı gibi oluşturmak [nasıl yapılır: temel bir doku oluşturma](../designers/how-to-create-a-basic-texture.md). Mipmaps desteklemek için genişlik ve yükseklik iki boyutu, örneğin, 64 x 64, 256 x 256 veya 512 x 512 aynı güç olan sahip bir doku belirtin.
+1.  Temel doku ile başlayın. Varolan bir resim dosyasını yükleyin ya da açıklandığı gibi oluşturmak [nasıl yapılır: temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). Mipmap'leri desteklemek için genişliği ve yüksekliği ikinin kuvveti, örneğin, 64 x 64, 256 x 256 veya 512 x 512 aynı güç olan olan bir doku belirtin.
 
-2.  Böylece görüntü içerik ardışık düzen tarafından işlenen, yeni oluşturduğunuz doku dosyasını yapılandırın. İçinde **Çözüm Gezgini**, oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri** > **genel** sayfasında **öğesi türü** özelliğine **görüntü içerik ardışık düzen**. Olduğundan emin olun **içerik** özelliği ayarlanmış **Evet** ve **gelen hariç yapı** ayarlanır **Hayır**. Seçin **uygulamak**.
+2.  Görüntü içeriği ardışık düzeni tarafından işlenir böylece yeni oluşturduğunuz doku dosyasını yapılandırarak. İçinde **Çözüm Gezgini**, oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri** > **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**. Seçin **uygulamak**.
 
-   **Görüntü içerik ardışık düzen** yapılandırması özellik sayfası görüntülenir.
+   **Görüntü içeriği ardışık düzeni** yapılandırma özellik sayfası görüntülenir.
 
-3.  Görüntü içerik mipmaps oluşturmak için ardışık düzenini yapılandırın. Üzerinde **yapılandırma özellikleri** > **görüntü içerik ardışık düzen** > **genel** sayfasında **MIPSOluştur** özelliğine **Evet (/ generatemips)**.
+3.  Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **Mipsüret** özelliğini **Evet (/ generatemips)**.
 
 4.  Seçin **Tamam**.
 
-Projeyi derlerken görüntü içerik ardışık düzen kaynak görüntü çalışma biçiminden MIP düzeyleri dahil belirtilen çıkış biçimine dönüştürür. Sonuç projenin çıktı dizinine kopyalanır.
+Proje oluşturduğunuzda, görüntü içeriği ardışık düzeni kaynak görüntüyü çalışma biçiminden MIP düzeyleri de dahil olmak üzere, belirttiğiniz çıkış biçimine dönüştürür. Sonuç projenin çıkış dizinine kopyalanır.

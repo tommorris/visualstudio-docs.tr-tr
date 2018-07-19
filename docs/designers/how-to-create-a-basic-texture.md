@@ -10,84 +10,84 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745636"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924466"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Nasıl Yapılır: Temel Doku Oluşturma
-Bu belge, temel bir doku oluşturmak için görüntü düzenleyicisi kullanın gösterilmiştir.
+# <a name="how-to-create-a-basic-texture"></a>Nasıl yapılır: temel doku oluşturma
+Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapılacağı açıklanır.
 
- Bu belgede, bu etkinlikler gösterir:
+ Bu belgede şu faaliyetler gösterilmiştir:
 
 -   Doku boyutunu ayarlama
 
--   Ön plan ve arka plan renklerini ayarlama
+-   Ön ve arka plan renkleri ayarlama
 
--   Alfa kanal (Saydamlık) kullanma
+-   Alfa kanalını (saydam) kullanma
 
--   Kullanarak **doldurun** ve **elips** araçları
+-   Kullanarak **dolgu** ve **elipsin** araçları
 
 -   Aracı özelliklerini ayarlama
 
-## <a name="creating-a-basic-texture"></a>Temel bir doku oluşturma
- Görüntüleri ve oyun veya uygulama için doku oluşturmak ve değiştirmek için görüntü Düzenleyicisi'ni kullanabilirsiniz.
+## <a name="creating-a-basic-texture"></a>Temel doku oluşturma
+ Görüntüleri ve oyunlarda veya uygulamalarda ilişkin dokular oluşturmak ve değiştirmek için görüntü Düzenleyicisi'ni kullanabilirsiniz.
 
- Aşağıdaki adımlar "hedef Merkezi" hedef temsil eden bir doku oluşturulacağını gösterir. İşiniz bittiğinde, doku aşağıdaki resimde gibi görünmelidir. Daha iyi dokudaki saydamlık göstermek için görüntü Düzenleyicisi görüntülemek için yeşil, Damalı desen kullanmak için yapılandırıldı.
+ Aşağıdaki adımlar, bir "hedef merkezi" hedefi temsil eden bir doku oluşturmayı gösterir. İşlemi tamamladığınızda, doku aşağıdaki resimdeki gibi görünmelidir. Daha iyi dokudaki saydamlık göstermek için görüntü Düzenleyicisi göstermek için yeşil, Damalı düzeni kullanmak için yapılandırıldı.
 
- ![Yeşil renkte gösterilir saydamlık "Hedef Merkezi" hedefle](../designers/media/digit-bullseye-texture-in-editor.png)
+ !["Hedef merkezi" hedef saydamlığına yeşil renkte gösterilir](../designers/media/digit-bullseye-texture-in-editor.png)
 
- Başlamadan önce emin olun **özellikleri** penceresi görüntülenir. Kullandığınız **özellikleri** penceresi görüntü boyutunu ayarlamak, aracı özelliklerini değiştirmek ve çalışırken renkleri belirtin.
+ Başlamadan önce emin **özellikleri** penceresi görüntülenir. Kullandığınız **özellikleri** penceresi görüntüyü boyutunu ayarlayın, aracı özelliklerini değiştirmek ve çalışırken renkleri belirtin.
 
-#### <a name="to-create-a-bullseye-target-texture"></a>"Hedef Merkezi" hedef dokusu oluşturmak için
+#### <a name="to-create-a-bullseye-target-texture"></a>Bir "hedef merkezi" hedef dokusu oluşturmak için
 
-1.  Çalışmak üzere bir doku oluşturun. Başlarken bölümünde bir doku projenize ekleme hakkında daha fazla bilgi için bkz: [görüntü Düzenleyicisi](../designers/image-editor.md).
+1.  Birlikte çalışmak bir doku oluşturun. Projenize doku ekleme hakkında daha fazla bilgi için bkz. Başlarken bölümünde [Resim Düzenleyicisi](../designers/image-editor.md).
 
-2.  Görüntü boyutu 512 x 512 piksel olarak ayarlayın. İçinde **özellikleri** penceresindeki değerlerini ayarlayın **genişliği** ve **yükseklik** özelliklerine `512`.
+2.  Görüntü boyutu 512 x 512 piksel olarak ayarlayın. İçinde **özellikleri** penceresinde değerlerini ayarlayın **genişliği** ve **yükseklik** özelliklerine `512`.
 
-3.  Görüntü Düzenleyicisi araç çubuğunda seçin **doldurun** aracı. **Özellikleri** penceresi özelliklerini görüntüler **doldurun** görüntü özelliklerini birlikte aracı.
+3.  Görüntü Düzenleyicisi araç çubuğunda **dolgu** aracı. **Özellikleri** penceresi özelliklerini görüntüler **dolgu** aracından görüntü özelliklerini birlikte.
 
-4.  Ön plan rengini tamamen saydam siyah olarak ayarlayın. İçinde **özellikleri** penceresi, **renkleri** özellik grubu, select **ön plan**. Değerlerini ayarlamak **R**, **G**, **B**, ve **A** Renk Seçici yanındaki özellikleri `0`.
+4.  Ön plan rengini tamamen saydam siyah olarak ayarlar. İçinde **özellikleri** penceresi içinde **renkleri** özellik grubu, select **ön plan**. Değerlerini ayarlayın **R**, **G**, **B**, ve **A** yanındaki Renk Seçici için Özellikler `0`.
 
-5.  Görüntü Düzenleyicisi araç çubuğunda seçin **doldurun** aracı tuşuna basın ve Shift tuşunu basılı tutun ve görüntüde herhangi bir noktasını seçin. SHIFT tuşunu kullanarak görüntüdeki rengi değiştirmek için dolgu rengi alfa değeri neden olur; Aksi takdirde, alfa değeri karışım dolgu rengi renk görüntüdeki birlikte için kullanılır.
+5.  Görüntü Düzenleyicisi araç çubuğunda **dolgu** aracı tuşuna basın ve basılı tutun **Shift** anahtar ve herhangi bir noktaya görüntüyü seçin. Kullanarak **Shift** anahtar görüntüde rengini değiştirmek için dolgu rengi alfa değeri neden olur; Aksi takdirde, alfa değeri dolgu rengi renk görüntünün birlikte karıştırmak için kullanılır.
 
     > [!IMPORTANT]
-    >  Önceki adımda renk seçim ile birlikte bu adım, temel görüntü için çizim "hedef Merkezi" hedef dokuyu hazırlanır sağlar. Resmin saydam siyah doldurulur zaman — ve hedef kenarlık siyah olduğundan — hiçbir yumuşatma yapıları hedef geçici olacaktır.
+    >  Bu adımda, önceki adımda, renk seçimi ile birlikte, temel görüntü için çizim "hedef merkezi" hedef dokuyu hazırlanır sağlar. Resmin saydam siyah doldurulur olduğunda — ve hedef kenarlığını siyah olduğundan — yumuşatma yapıt hedefi geçici bir çözüm olacaktır.
 
-6.  Görüntü Düzenleyicisi araç çubuğunda seçin **elips** aracı.
+6.  Görüntü Düzenleyicisi araç çubuğunda **elipsin** aracı.
 
-7.  Ön plan rengini tamamıyla opak siyah olarak ayarlayın. Değerlerini ayarlamak **R**, **G**, ve **B** özelliklerine `0` değerini **A** özelliğine `255`.
+7.  Ön plan rengini tamamen opak siyah olarak ayarlar. Değerlerini ayarlayın **R**, **G**, ve **B** özelliklerine `0` değeri **A** özelliğini `255`.
 
-8.  Arka plan rengini tamamıyla opak beyaza ayarlayın. İçinde **özellikleri** penceresi, **renkleri** özellik grubu, select **arka plan**. Değerlerini ayarlamak **R**, **G**, **B**, ve **A** özelliklerine `255`.
+8.  Arka plan rengi tamamen opak beyaz olarak ayarlar. İçinde **özellikleri** penceresi içinde **renkleri** özellik grubu, select **arka plan**. Değerlerini ayarlayın **R**, **G**, **B**, ve **A** özelliklerine `255`.
 
-9. Elips kenarlık genişliğini ayarla. İçinde **özellikleri** penceresi, **Görünüm** özellik grubu değerini ayarlamak **genişliği** özelliğine `8`.
+9. Elipsin ana hattın genişliği ayarlayın. İçinde **özellikleri** penceresi içinde **Görünüm** özellik grubu ayarlayın **genişliği** özelliğini `8`.
 
-10. Yumuşatma etkin olduğundan emin olun. İçinde **özellikleri** penceresi, **Görünüm** özelliği grubunda, olduğundan emin olun **yumuşatma** özelliği ayarlanmış.
+10. Bu düzgünleştirme etkin olduğundan emin olun. İçinde **özellikleri** penceresi, **Görünüm** özelliği emin olun, grup **yumuşatma** özelliği ayarlanmış.
 
-11. Kullanarak **elips** aracı, bir daire piksel koordinat çizmek `(3, 3)` piksel koordinat için `(508, 508)`. Daha fazla daire çizmek için kolayca, çizerken Shift tuşunu basılı tutun.
+11. Kullanarak **elipsin** aracı, piksel Koordinattan bir daire çizin `(3, 3)` piksel koordinat için `(508, 508)`. Daire daha kolay çizmek için basın tutun ve **Shift** çizerken anahtar.
 
     > [!NOTE]
-    >  Geçerli işaretçi konumunun piksel koordinatlarını görüntülenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] durum çubuğu.
+    >  Geçerli işaretçisi konumunu piksel koordinatlarını görüntülenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] durum çubuğu.
 
 12. Arka plan rengini değiştirin. Ayarlama **R** için `44`, **G** için `165`, **B** için `211`, ve **A** için `255`.
 
-13. Piksel koordinat başka bir daire çizmek `(64, 64)` piksel koordinat için `(448, 448)`.
+13. Piksel koordinat başka bir daire çizin `(64, 64)` piksel koordinat için `(448, 448)`.
 
 14. Tamamen opak beyaz arka plan rengini değiştirin. Ayarlama **R**, **G**, **B**, ve **A** için `255`.
 
-15. Piksel koordinat başka bir daire çizmek `(128, 128)` piksel koordinat için `(384, 384)`.
+15. Piksel koordinat başka bir daire çizin `(128, 128)` piksel koordinat için `(384, 384)`.
 
 16. Arka plan rengini değiştirin. Ayarlama **R** için `255`, **G** ve **B** için `64`, ve **A** için `255`.
 
-17. Piksel koordinat başka bir daire çizmek `(192, 192)` piksel koordinat için `(320, 320)`.
+17. Piksel koordinat başka bir daire çizin `(192, 192)` piksel koordinat için `(320, 320)`.
 
- "Hedef Merkezi" hedef doku tamamlanır. Saydamlığı olan gösterilen görüntünün son İşte.
+ "Hedef merkezi" hedef dokuyu tamamlanmıştır. Saydamlık ile gösterilen son görüntü aşağıda verilmiştir.
 
- ![Tam "hedef Merkezi" hedef doku](../designers/media/gfx_image_demo_bullseye.png)
+ ![Hedef dokuyu tam hedef "Merkezi"](../designers/media/gfx_image_demo_bullseye.png)
 
- Bir sonraki adım, bu doku MIP düzeylerini oluşturabilirsiniz. Bilgi için bkz: [nasıl yapılır: oluşturma ve değiştirme MIP düzeyleri](../designers/how-to-create-and-modify-mip-levels.md).
+ Bir sonraki adım, bu dokunun MIP düzeyleri oluşturabilirsiniz. Bilgi için [nasıl yapılır: MIP düzeyleri oluşturma ve değiştirme](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

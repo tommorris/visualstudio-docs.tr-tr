@@ -1,5 +1,5 @@
 ---
-title: Dinamik özellikler XAttribute sınıfı
+title: XAttribute sınıfı dinamik özellikleri
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,25 +10,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1e03cbf8a0df91bc0cb02ce69ec615dd66d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b25d6cc6a88e1e5b7bd0b839cfdca5be713c6b7e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926920"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077193"
 ---
-# <a name="xattribute-class-dynamic-properties"></a>Dinamik özellikler XAttribute sınıfı
+# <a name="xattribute-class-dynamic-properties"></a>XAttribute sınıfı dinamik özellikleri
 
 Bu bölümde dinamik özelliklerini açıklayan <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>.
 
-## <a name="in-this-section"></a>Bu Bölümde
+## <a name="in-this-section"></a>Bu bölümde
 
 |Konu|Açıklama|
 |-----------|-----------------|
-|[Değer](../designers/value-xattribute-dynamic-property.md)|Alır veya XML özniteliğinin değerini ayarlar.|
+|[Değer](../designers/value-xattribute-dynamic-property.md)|Alır veya XML öznitelik değerini ayarlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>
-- [LINQ to XML Dinamik Özellikleri](../designers/linq-to-xml-dynamic-properties.md)
-- [XElement Sınıfı Dinamik Özellikleri](../designers/xelement-class-dynamic-properties.md)
+- [LINQ to XML dinamik özellikleri](../designers/linq-to-xml-dynamic-properties.md)
+- [XElement sınıfı dinamik özellikleri](../designers/xelement-class-dynamic-properties.md)

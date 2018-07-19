@@ -11,54 +11,56 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d12d17f1cacd6c77fb1f27420a4540fe33e6bffe
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281059"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079154"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Hızlı Başlangıç: Kod Düzenleyicisi'ni kullanın
 
-Bu 10 dakikalık girişte düzenleyiciye, Visual Studio yazma, gezinme ve kodu daha kolay anlama yapar yollardan bazılarını aramak için bir dosya için kod ekleyeceğiz.
+Visual Studio Kod düzenleyicisinde 10 dakikalık giriş, Visual Studio yazma, gezinme ve kodu daha kolay anlama yapar yollarından bazıları aramak için bir dosya için kod ekleyeceğiz.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-Bu hızlı başlangıç bir programlama dili ile bilginiz varsayar. Yoksa, önerdiğimiz programlama quickstarts birini ilk bakış, gibi bir web uygulaması ile oluşturma [Python](../ide/quickstart-python.md) veya [C#](../ide/tutorial-csharp-aspnet-core.md), veya bir konsol uygulaması ile oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Bu hızlı başlangıçta, zaten bir programlama dili ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Değilseniz, öneririz programlama hızlı başlangıçları birini ilk bakış, gibi bir web uygulaması oluşturma [Python](../ide/quickstart-python.md) veya [C#](../ide/tutorial-csharp-aspnet-core.md), veya bir konsol uygulaması oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Yeni bir kod dosyası oluşturma
 
-Yeni bir dosya oluşturarak ve biraz kod eklemeyi başlatın. Biz Düzenleyici sunar avantajlarından bazıları kazanmak için bir proje oluşturmak zorunda değilsiniz dikkat edin.
+Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
-1. Visual Studio'yu açın ve **dosya** menü çubuğundaki menüsü seçin **yeni** > **dosya**.
+1. Visual Studio'yu açın ve **dosya** menü çubuğunda menüsünde **yeni** > **dosya**.
 
-1. İçinde **yeni dosya** iletişim kutusunda **genel** kategorisi seçin **Visual C# sınıfı**ve ardından **açık**.
+1. İçinde **yeni dosya** iletişim kutusunun **genel** kategorisi seçin **Visual C# sınıfı**ve ardından **açık**.
 
-   Yeni bir dosya bir C# sınıfı çatıyı düzenleyicisiyle açar.
+   C# sınıfı çatısında önizlememiz ile düzenleyicideki yeni bir dosya açar. (Bulunur. bir kod dosyası Kod Düzenleyicisi'nın sunduğu bazı avantajları elde etmek için tam Visual Studio projesi; tüm yapmanız gereken oluşturmanız da gerekmez dikkat edin!)
+
+   ![C# kod dosyasını Visual Studio'da](media/quickstart-editor.png)
 
 ## <a name="use-code-snippets"></a>Kod parçacıkları kullanma
 
-Visual Studio hızla ve kolayca yaygın olarak oluşturmak için kullanabileceğiniz yararlı kod parçacıkları kod blokları kullanılan sağlar. [Kod parçacıkları](../ide/code-snippets.md) C#, Visual Basic ve C++ gibi farklı programlama dilleri için kullanılabilir. C# ekleyelim `void Main` bizim dosyasına parçacığı.
+Visual Studio sağlar yararlı *kod parçacıkları* kod bloklarında kullanılan yaygın olarak hızla ve kolayca oluşturmak için kullanabilirsiniz. [Kod parçacıkları](../ide/code-snippets.md) C#, Visual Basic ve C++ gibi farklı programlama dili için kullanılabilir. C# ekleyelim `void Main` bizim dosyasına kod parçacığı.
 
-1. İmlecinizi kapanış ayracı altına yerleştirin `Class1` oluşturucusu ve karakterleri girin `svm`.
+1. İmlecinizi son kapanış ayracı kısalarak **}** dosyasında ve karakterleri yazdıktan `svm` (olduğu anlamına gelir `static void Main` &mdash;çok fazla ise ne bilmiyorsanız endişelenmeyin anlamına gelir).
 
-   Gördüğünüz bir **IntelliSense** hakkında iletişim kutusu görünür bilgilerle `svm` parçacığı.
+   Hakkında bilgi ile bir açılır iletişim kutusu görünür `svm` kod parçacığı.
 
-   ![IntelliSense kod parçacığında](media/quickstart-intellisense-snippet.png)
+   ![Visual Studio'da kod parçacığı için IntelliSense](media/quickstart-intellisense-snippet.png)
 
 1. Tuşuna **sekmesini** iki kez kod parçacığını eklemek için.
 
-   Gördüğünüz `static void Main()` yöntem imzası dosyasına eklenen. `Main()` C# uygulamaları için giriş noktası bir yöntemdir.
+   Gördüğünüz `static void Main()` yöntem imzası dosyasına eklenir. [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) C# uygulamaları için giriş noktası bir yöntemdir.
 
-Kullanılabilir kod parçacıkları farklı diller için farklılık gösterir. Seçerek programlama diliniz için kullanılabilir kod parçacıkları bakabilirsiniz **Düzenle** > **IntelliSense** > **Ekle parçacığı**, ve ardından, dil klasörünü seçme. C# ' ta listesi şu şekildedir:
+Kullanılabilir kod parçacıkları farklı programlama dili için farklılık gösterir. Kullanılabilir kod parçacıkları seçerek dilinizi göz atabilirsiniz **Düzenle** > **IntelliSense** > **parçacık Ekle**ve ardından Dilinizin klasör seçme. C# ' ta listesi aşağıdaki gibi görünür:
 
 ![C# kod parçacığı listesi](media/quickstart-code-snippet-list.png)
 
-Bir sınıf, bir oluşturucu oluşturmak için parçacıkları listesi içerir `Console.WriteLine()`, `for` döngüler, `if` ve `switch` deyimleri ve daha fazlası.
+Liste oluşturmak için kod parçacıkları içeren bir [sınıfı](/dotnet/csharp/programming-guide/classes-and-structs/classes), [Oluşturucusu](/dotnet/csharp/programming-guide/classes-and-structs/constructors), [için](/dotnet/csharp/language-reference/keywords/for) döngü, bir [varsa](/dotnet/csharp/language-reference/keywords/if-else) veya [geçiş](/dotnet/csharp/language-reference/keywords/switch)deyimi ve daha fazlası.
 
 ## <a name="comment-out-code"></a>Kodu açıklama
 
-Araç çubuğu düğmeleri, kodu daha üretken olmak için çeşitli sağlar. Örneğin, IntelliSense tamamlanma modu Değiştir, artırın veya bir Girintiyi Azalt, yer işareti ayarlayın veya kodu açıklama. Bu bölümde, biz açıklama derlemek için istemediğiniz biraz kod çıkışı.
+Visual Studio menü çubuğunda altında düğmelerden araç çubuğunda, kodu daha üretken olmanıza yardımcı olabilir. Örneğin, IntelliSense tamamlama modunu açıp kapatabilirsiniz ([IntelliSense](using-intellisense.md) yöntemleri, diğerlerinin arasında eşleşen bir listesini görüntüleyen bir kodlama yardımcısıdır) artırın veya bir satır girintisini Azalt veya istemediğiniz kod açıklama derlemek. Bu bölümde, biz bazı kodu açıklama.
 
 ![Düzenleyici araç çubuğu](media/quickstart-editor-toolbar.png)
 
@@ -86,37 +88,37 @@ Araç çubuğu düğmeleri, kodu daha üretken olmak için çeşitli sağlar. Ö
                                 select word;
     ```
 
-1. Biz kullanmadığınız `morewords` değişkeni ancak biz kullanabilir, daha sonra silmek istemediğiniz şekilde. Bunun yerine, bu satırı şimdi açıklama. Tüm tanımını seçin `morewords` için kapanış noktalı virgül ve ardından **seçili satırları açıklama** düğmesi araç veya tuşlarına basın **Ctrl** + **K**, **Ctrl**+**C**.
+1. Değil kullandığımız `morewords` değişkeni, ancak kullanabilir, daha sonra tamamen silmek istemediğiniz şekilde. Bunun yerine, şimdi bu satırları açıklama satırı yapar. Tüm tanımını seçin `morewords` için kapanış noktalı virgül ve ardından **Seçilen satırdan yorum** araç çubuğunda. Klavyeyi kullanmak isterseniz, basın **Ctrl**+**K**, **Ctrl**+**C**.
 
    ![Açıklama düğmesi](media/quickstart-comment-out.png)
 
-   C# açıklama karakterleri `//` kodu açıklama eklemek için seçilen her satırın başlangıcına eklenir.
+   C# açıklama karakterleri `//` kodu açıklama eklemek için seçili her satırın başına eklenir.
 
-## <a name="collapse-code-blocks"></a>Kod blokları Daralt
+## <a name="collapse-code-blocks"></a>Kod bloğu Daralt
 
-Biz boş Oluşturucusu görmek istemediğiniz `Class1` üretilen, böylece kodu bizim görünümünü sekmenize Düzen vermenize, şimdi onu daraltmak için. Küçük bir gri kutu içindeki eksi işaretiyle Oluşturucusu ilk satırının kenar boşluğunda seçin. Ya da klavye kullanıcısıysanız imleci herhangi bir yere Oluşturucusu kod ve tuşuna koyun **Ctrl**+**M**, **Ctrl**+**M** .
+Boş görmesini istemediğiniz [Oluşturucusu](/dotnet/csharp/programming-guide/classes-and-structs/constructors) için `Class1` oluşturulan, bu nedenle bizim kod görünümünü sekmenize Düzen vermenize için şimdi daraltılabilir. Küçük bir gri kutu içine eksi işareti ile Oluşturucu, ilk satırının kenar boşluğunda seçin. Veya, klavye kullanıcısıysanız, herhangi bir oluşturucu kodunu ve ENTER tuşuna imleci **Ctrl**+**M**, **Ctrl**+**M** .
 
-![Daralt düğmesi anahat oluşturma](media/quickstart-collapse.png)
+![Anahat oluşturma Daralt düğmesi](media/quickstart-collapse.png)
 
-Üç nokta ve ardından yalnızca ilk satırı, kod bloğunu daraltır (`...`). Kod bloğunu yeniden genişletmek için şimdi bir artı işareti veya tuşlarına basın aynı gri kutusunda tıklatın **Ctrl**+**M**, **Ctrl**+**M**  yeniden. Bu özellik adında [anahat](../ide/outlining.md) ve uzun yöntemleri ya da tüm sınıflar daraltma özellikle yararlıdır.
+Üç nokta ve ardından yalnızca ilk satırı, kod bloğu daraltır (`...`). Kod bloğunu tekrar artırmak için artık bir artı işareti veya tuşuna basın aynı gri kutusunda tıklayın **Ctrl**+**M**, **Ctrl**+**M**  yeniden. Bu özelliğin adı [anahat](../ide/outlining.md) ve uzun yöntemleri veya tüm sınıflar daraltma özellikle yararlı olur.
 
-## <a name="view-symbol-definitions"></a>Görünüm sembol tanımları
+## <a name="view-symbol-definitions"></a>Sembol tanımlarını görüntüleme
 
-Visual Studio düzenleyicisinde bir tür, yöntem, vb. tanımını incelemek kolaylaştırır. Tanımı, örneğin seçerek içeren dosyayı gitmek için tek yönlü olduğu **Tanıma Git** simgenin herhangi bir yere başvuruluyor. İçinde çalışırken odağınız uzağa doğru dosya taşınmaz bir bile daha hızlı yolu kullanmaktır [Peek tanımı](../ide/go-to-and-peek-definition.md#peek-definition). Şimdi tanımını peek `string`.
+Visual Studio Düzenleyicisi, bir tür, yöntem vb. tanımını incelemek kolaylaştırır. Örneğin seçerek tanımını içeren dosyayı gitmek için bir yolu olan **Tanıma Git** herhangi bir sembol başvurulur. İçinde çalışmakta olduğunuz odağınızı uzağa dosya hareket etmediği bir bile daha hızlı yolu [Özet tanım](../ide/go-to-and-peek-definition.md#peek-definition). Şimdi tanımda Özet `string` türü.
 
-1. Herhangi bir örneğinde sağ `string` ve seçin **Peek tanımı** içerik menüsünden&mdash;veya basın **Alt**+**F12**.
+1. Tüm oluşması sağ `string` ve **Özet tanım** içerik menüsünde. Veya basın **Alt**+**F12**.
 
-   Tanımını bir açılır pencere görünür `String` sınıfı. Açılır pencere veya başka bir tür peeked kodundan tanımını bile bilgi içinde gezinebilirsiniz.
+   Tanımını bir açılır pencere görünür `String` sınıfı. Açılır pencere veya hatta göz at peeked kodun başka bir tür tanımı içinde gezinebilirsiniz.
 
-   ![Peek tanımı penceresi](media/quickstart-peek-definition.png)
+   ![Özet tanım penceresi](media/quickstart-peek-definition.png)
 
-1. Sağ üst köşedeki "x" açılır pencere yer aldığı küçük kutuyu seçerek Aranan tanımı penceresini kapatın.
+1. Açılır pencerenin sağ üst köşedeki "x" işareti olan küçük kutusunu seçerek baktı tanım penceresini kapatın.
 
-## <a name="use-intellisense-to-complete-words"></a>Sözcükler tamamlamak için IntelliSense kullanma
+## <a name="use-intellisense-to-complete-words"></a>Sözcükleri tamamlamak için IntelliSense kullanma
 
-[IntelliSense](../ide/using-intellisense.md) kodlama bir çok kaynağıdır. Bir tür ya da farklı bir yöntem aşırı parametre ayrıntılarını kullanılabilir üyeler hakkında bilgi gösterebilirsiniz. IntelliSense, onu belirsizliğini ortadan kaldırmak için yeterli sayıda karakter yazdıktan sonra bir sözcük tamamlamak için de kullanabilirsiniz. Bir konsol penceresi sıralı dizelere yazdırmak için kod satırı ekleyelim.
+[IntelliSense](../ide/using-intellisense.md) , kodlamaya, her bir kaynaktır. Bu, kullanılabilir üyeler bir türü veya farklı bir yöntem aşırı yüklemeleri için parametre ayrıntıları hakkında bilgi gösterebilirsiniz. IntelliSense, bunu ayırt etmek için yeterli sayıda karakter girdikten sonra bir sözcük tamamlamak için de kullanabilirsiniz. Bir Git programının çıktısı için standart yerdir konsol penceresine sıralı dizeler yazdırmak için kod satırı ekleyelim.
 
-1. Aşağıda `query` değişken, başlangıç aşağıdaki kodu yazın:
+1. Aşağıda `query` aşağıdaki kod yazarak değişken Başlat:
 
    ```csharp
    foreach (string str in qu
@@ -124,11 +126,11 @@ Visual Studio düzenleyicisinde bir tür, yöntem, vb. tanımını incelemek kol
 
    IntelliSense, Göster gördüğünüz **hızlı bilgi** hakkında `query` simgesi.
 
-   ![IntelliSense word tamamlandı](media/quickstart-intellisense-completion-list.png)
+   ![Visual Studio IntelliSense Sözcük tamamlama](media/quickstart-intellisense-completion-list.png)
 
-1. Kalan sözcüğün eklemek için `query` IntelliSense'nın "Tam sözcüğü" işlevini kullanarak basın **sekmesini**.
+1. Word geri kalanını eklemek için `query` IntelliSense'nın sözcük tamamlama işlevlerini kullanarak basın **sekmesini**.
 
-1. Aşağıdaki kod gibi aramak için kod bloğu kapalı tamamlayın. Kod parçacıkları girerek kullanarak yeniden bile alıştırma yapabilirsiniz `cw` ve tuşuna basarak **sekmesini** iki kez oluşturmak için `Console.WriteLine` kodu.
+1. Şu kod gibi aramak için kod bloğunu kapatmak tamamlayın. Kod parçacıkları, yeniden girerek kullanarak bile kendinizi geliştirebilirsiniz `cw` ve tuşuna basarak **sekmesini** iki kez oluşturulacak `Console.WriteLine` kod.
 
    ```csharp
    foreach (string str in query)
@@ -137,30 +139,30 @@ Visual Studio düzenleyicisinde bir tür, yöntem, vb. tanımını incelemek kol
    }
    ```
 
-## <a name="refactor-a-name"></a>Bir ad yeniden Düzenle
+## <a name="refactor-a-name"></a>Bir adı yeniden düzenleyin
 
-Kimse ilk kez kod sağ alır ve birini değiştirmek isteyebilirsiniz değişken veya yöntem adıdır. Visual Studio'nun deneyelim [düzenleme](../ide/refactoring-in-visual-studio.md) yeniden adlandırmak için işlevselliği `_words` değişkenini `words`.
+Hiç kimse ilk kez kod sağ alır ve bir değişkeni veya yöntemin adını değiştirmeniz gerekebilir şeyleri biridir. Visual Studio'nun deneyelim [yeniden düzenleme](../ide/refactoring-in-visual-studio.md) yeniden adlandırmak için işlevselliği `_words` değişkenini `words`.
 
-1. İmlecinizi tanımı yerleştirin `words` değişkeni ve seçin **yeniden adlandırma** sağ tıklatın veya bağlam menüsünden veya tuşuna **Ctrl**+**R**, **Ctrl**+**R**.
+1. Tanımı imleci yerleştirin `_words` değişken ve **Yeniden Adlandır** sağ tıklayın veya bağlam menüsünü veya basın **Ctrl**+**R**, **Ctrl**+**R**.
 
-   Açılır pencere **yeniden adlandırma** iletişim kutusu görünür en üstünde sağ düzenleyicinin.
+   Bir açılır pencere **Yeniden Adlandır** iletişim kutusunun en üstünde görünür sağında Düzenleyici.
 
-1. İstediğiniz adı girin `words`. Dikkat referansı `words` sorguda da otomatik olarak yeniden adlandırıldı. Tuşuna önce **Enter**seçin **dahil açıklamaları** onay kutusu **yeniden adlandırma** açılan kutusu.
+1. İstediğiniz adı girin **sözcükleri**. Dikkat başvuru `words` sorguda da otomatik olarak yeniden adlandırıldı. Basmadan önce **Enter**seçin **açıklamaları dahil** onay kutusu **Yeniden Adlandır** açılan kutusu.
 
    ![Yeniden Adlandır iletişim kutusu](media/quickstart-rename.png)
 
 1. Tuşuna **girin**.
 
-   Her iki oluşumları `words` , başvuru yanı sıra yeniden adlandırıldığı `words` kodu açıklama.
+   Her iki oluşumlarını `words` , başvuru yanı sıra yeniden adlandırıldığı `words` içinde kod açıklaması.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu Hızlı Başlangıç için Visual Studio düzenleyicisinde tamamladınız! Sonraki bazı diğer Quickstarts Visual Studio IDE için arama için daha fazla yolunu adresindeki deneyebilecekleriniz [kod gidin](../ide/navigating-code.md), veya biz arama sırasında özellikleri hakkında daha fazla bilgi için bağlantıları gözden geçirin. Aksi takdirde mutluluk kodlama!
+Bu Hızlı Başlangıç için Visual Studio Düzenleyicisi tamamladınız. Ardından, diğer hızlı Başlangıçlar Visual Studio geliştirme ortamı için bazılarını gibi deneyebilecekleriniz [hızlı başlangıç: projeler ve çözümler](../ide/quickstart-projects-solutions.md) veya [hızlı başlangıç: Visual Studio kişiselleştirme](../ide/quickstart-personalize-the-ide.md), hakkında daha fazla bilgi arayın yolları [koda gitmek](../ide/navigating-code.md), veya en incelemiştik özellikler hakkında daha fazla bilgi için bağlantıları gözden geçirin. Aksi takdirde, mutlu kodlama!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
-- [Hızlı Başlangıç: Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
+- [Hızlı Başlangıç: Visual Studio'yu kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
 - [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
 - [Kod parçacıkları](../ide/code-snippets.md)
 - [Anahat Oluşturma](../ide/outlining.md)

@@ -3,21 +3,22 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: C++ belgeleri ile Mobil Geliştirme | Microsoft Docs
-description: İOS, yerel C++ uygulamaları oluşturma Visual Studio ile Android ve Windows cihazları.
+description: Yerel C++ uygulamaları, iOS için oluşturma Visual Studio ile Android ve Windows cihazlar.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060957"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924180"
 ---
 # <a name="mobile-development-with-c-documentation"></a>C++ belgeleri ile Mobil Geliştirme
 
-İOS, yerel C++ uygulamaları oluşturma Visual Studio ile Android ve Windows cihazları.
+İOS, Android ve Windows için yerel C++ uygulamaları oluşturma Visual Studio ile cihazları.
 
 <ul class="panelContent cardsF">
     <li>
@@ -31,8 +32,8 @@ ms.locfileid: "31060957"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Platformlar arası Mobil Geliştirme için Visual C++ yüklemek</h3>
-                        <p>Platformlar arası mobil uygulamaları oluşturmak için gerekli araçları ayarlayın.</p>
+                        <h3>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++’ı yükleme</h3>
+                        <p>Platformlar arası mobil uygulamalar oluşturmak için gereken araçları ayarlayın.</p>
                     </div>
                 </div>
             </div>
@@ -51,7 +52,7 @@ ms.locfileid: "31060957"
                     </div>
                     <div class="cardText">
                         <h3>Platformlar arası Mobil Geliştirme için Visual C++ hakkında bilgi edinin</h3>
-                        <p>Visual C++ ile platformlar arası mobil geliştirme özetini alın.</p>
+                        <p>Visual C++ ile platformlar arası Mobil Geliştirme için genel bir bakış edinin.</p>
                     </div>
                 </div>
             </div>
@@ -69,8 +70,8 @@ ms.locfileid: "31060957"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Platformlar arası mobil geliştirme örnekleri</h3>
-                        <p>Size örnekleri ile platformlar arası mobil geliştirme başlatıldı.</p>
+                        <h3>Platformlar Arası Mobil Geliştirme Örnekleri</h3>
+                        <p>Platformlar arası mobil geliştirme ile çalışmaya başlamanıza yardımcı olmak için örneklere bakın.</p>
                     </div>
                 </div>
             </div>

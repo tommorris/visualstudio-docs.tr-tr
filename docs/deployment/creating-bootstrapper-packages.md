@@ -22,30 +22,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f645f030edc9b815e212b040fddc401ad8a4a8e9
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235082"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078448"
 ---
 # <a name="create-bootstrapper-packages"></a>Önyükleyici paketleri oluşturma
-Kurulum programı algılar ve Windows Installer (.msi) dosyaları ve yürütülebilir programları gibi yeniden dağıtılabilir bileşenleri yüklemek için yapılandırılmış bir genel yükleyicidir. Yükleyici bir önyükleyici de denir. Bir dizi bileşen yüklemesini yönetmek için meta veriler belirtin XML bildirimlerine ile programlanmış.  Her yeniden dağıtılabilir bileşeni veya önkoşul, görünür **Önkoşullar** iletişim kutusu için ClickOnce önyükleyici paketi olur. Önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyaları içeren dosyaları grubudur. 
+Kurulum programı gibi Windows Installer yeniden dağıtılabilir bileşenleri yüklemek ve algılamak için yapılandırılabilen genel bir yükleyicidir (*.msi*) dosyaları ve yürütülebilir programlar. Yükleyici bir önyükleyici de denir. Bu bileşenin yüklenmesini yönetmek için meta verileri belirleyen XML bildirimleri kümesi programlanır.  Her yeniden dağıtılabilir bileşeni, ya da önkoşul, görünür **önkoşulları** iletişim kutusu için ClickOnce önyükleyici paketi olur. Bir önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyalarını içeren dosyaları grubudur. 
   
-Önyükleyici ilk Önkoşullar zaten yüklü olup olmadığını algılar. İlk Önkoşullar yüklü değilse, önyükleyici lisans sözleşmelerini gösterir. İkinci olarak, son kullanıcı lisans sözleşmelerini kabul ettikten sonra yükleme önkoşulları başlar. Aksi takdirde, tüm Önkoşullar algılanmazsa, önyükleyici yalnızca uygulama yükleyici başlatır.  
+Önyükleyici önce Önkoşullar zaten yüklü olup olmadığını algılar. İlk Önkoşullar yüklü değilse, önyükleyici lisans sözleşmelerini gösterir. İkinci olarak, son kullanıcı lisans sözleşmelerini kabul ettikten sonra yükleme Önkoşullar için başlar. Aksi takdirde, tüm ön koşullar algılanırsa, önyükleyici yalnızca uygulama yükleyicisini başlatır.  
   
 ## <a name="create-custom-bootstrapper-packages"></a>Özel önyükleyici paketleri oluşturma  
-Visual Studio'daki XML Düzenleyicisi'ni kullanarak önyükleyici bildirimler oluşturabilir. Önyükleyici paketi oluşturma örneği görmek için bkz: [izlenecek yol: bir gizlilik İstemi ile özel bir önyükleyici oluşturma](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+Visual Studio XML Düzenleyicisi'ni kullanarak, önyükleyici bildirimler oluşturabilirsiniz. Bir önyükleyici paketi oluşturma örneği için bkz [izlenecek yol: bir gizlilik istemiyle özel bir önyükleyici oluşturma](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
-Önyükleyici paketi oluşturmak için ürün bildirimi oluşturmanız gerekir ve her biri için bir paket bildirimi de bir bileşen sürümü yerelleştirilmiş.
+Bir önyükleyici paketi oluşturmak için ürün bildirimi oluşturmanız gerekir ve her biri için yerelleştirilmiş bir paket bildirimi de bir bileşen sürümü.
   
-* Ürün bildirimi *product.xml*, paket için herhangi bir dilden meta veri içeriyor. Yeniden dağıtılabilir bileşeni tüm yerelleştirilmiş sürümleri için ortak meta veriler içerir.  Bu dosyayı oluşturmak için bkz: [nasıl yapılır: Ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md).
+* Ürün bildirimi *product.xml*, paket için dilden meta verileri içerir. Bu yeniden dağıtılabilir bileşenin tüm yerelleştirilmiş sürümleri için ortak meta veriler içerir.  Bu dosyayı oluşturmak için bkz: [nasıl yapılır: bir ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md).
   
-* Paket bildirimi *package.xml*, dile özgü meta veriler; içeren genellikle yerelleştirilmiş hata iletileri içerir. Bu bileşen yerelleştirilmiş her sürümü için en az bir paket bildirimi bir bileşen içermelidir. Bu dosyayı oluşturmak için bkz: [nasıl yapılır: bir paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).
+* Paket bildirimi *package.xml*, dile özgü meta veriler; içeren genellikle yerelleştirilmiş hata iletileri içerir. Bir bileşen, yerelleştirilmiş her bileşenin sürümü için en az bir paket bildiriminin olması gerekir. Bu dosyayı oluşturmak için bkz: [nasıl yapılır: bir paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).
   
-Bu dosyalar oluşturulduktan sonra ürün bildirim dosyası için özel önyükleyici adlı bir klasöre yerleştirin. Paket bildirim dosyası yerel adlı bir klasöre gider. Örneğin, İngilizce yeniden dağıtım için paket bildirim dosyası ise, dosya tr adlı bir klasöre yerleştirin. Ja Japonca ve Almanca için de gibi her yerel ayar için bu işlemi yineleyin. Son özel önyükleyici paketi aşağıdaki klasör yapısını olabilir.  
+Bu dosyalar oluşturulduktan sonra ürün bildirim dosyasını özel önyükleyici için adlandırılan bir klasöre yerleştirin. Paket bildirim dosyası yerel ayar adlı bir klasöre gider. Örneğin, paket bildirim dosyasının İngilizce olarak yeniden dağıtılması için ise, dosyayı en adlı klasöre koyun. Japonca için ja ve Almanca için de gibi her yerel ayar için bu işlemi yineleyin. Son özel önyükleyici paketi aşağıdaki klasör yapısına sahip olabilir.  
 
-    ```
+    ```xml
     CustomBootstrapperPackage
       product.xml
       CustomBootstrapper.msi
@@ -60,7 +60,7 @@ Bu dosyalar oluşturulduktan sonra ürün bildirim dosyası için özel önyükl
         package.xml
     ```
   
-Ardından, yeniden dağıtılabilir dosyaları önyükleyici klasör konumuna kopyalayın. Daha fazla bilgi için bkz: [nasıl yapılır: yerelleştirilmiş önyükleyici paketi oluşturma](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+Ardından, yeniden dağıtılabilen dosyaları önyükleyici klasör konumuna kopyalayın. Daha fazla bilgi için [nasıl yapılır: yerelleştirilmiş önyükleyici paketi oluşturma](../deployment/how-to-create-a-localized-bootstrapper-package.md).
  
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
     
@@ -68,46 +68,46 @@ veya
     
     *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
   
-Önyükleyici klasör konumu da belirleyebilirsiniz **yolu** aşağıdaki kayıt defteri anahtarı değerini:  
+Aynı zamanda önyükleyici klasör konumunu da belirleyebilirsiniz **yolu** aşağıdaki kayıt defteri değeri:  
   
     *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
   
-64 bitlik sistemlerde aşağıdaki kayıt defteri anahtarını kullanın:  
+64-bit sistemlerde, aşağıdaki kayıt defteri anahtarını kullanın:  
   
     *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
   
-Yeniden dağıtılabilir her bileşen, kendi alt paketler dizini altında görüntülenir. Gereken ürün bildirimi ve yeniden dağıtılabilir dosyaları, bu alt klasöre yerleştirin. Bileşen ve paket bildirimlerinin yerelleştirilmiş sürümleri göre kültür adı adlı klasörlerdeki konulmalıdır.  
+Yeniden dağıtılabilir her bileşen paketler dizini altında kendi alt klasöründe görünür. Gereken ürün bildirimi ve yeniden dağıtılabilir dosyaları, bu alt klasöre yerleştirin. Bileşen ve paket bildirim dosyalarının yerelleştirilmiş sürümleri, kültür adı göre adlandırılan alt klasörlere içinde yerleştirmeniz gerekir.  
   
-Bu dosyalar önyükleyici klasöre kopyalandıktan sonra Visual Studio'da önyükleyici paketi otomatik olarak görünür. **Önkoşullar** iletişim kutusu. Özel önyükleyici paketi görünmüyorsa kapatıp **Önkoşullar** iletişim kutusu. Daha fazla bilgi için bkz: [Önkoşullar iletişim kutusu](../ide/reference/prerequisites-dialog-box.md).  
+Bu dosyalar önyükleyici klasörüne kopyalandıktan sonra önyükleyici paketi otomatik olarak Visual Studio'da görünür **önkoşulları** iletişim kutusu. Özel önyükleyici paketiniz görünmüyorsa kapatıp **önkoşulları** iletişim kutusu. Daha fazla bilgi için [Önkoşullar iletişim kutusu](../ide/reference/prerequisites-dialog-box.md).  
   
-Aşağıdaki tabloda önyükleyici tarafından otomatik olarak doldurulur özellikleri gösterir.  
+Aşağıdaki tablo önyükleyici tarafından otomatik olarak doldurulan özellikleri gösterir.  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
 |ApplicationName|Uygulamanın adı.|  
-|ProcessorArchitecture|İşlemci ve BITS başına word bir yürütülebilir dosya tarafından hedeflenen Platform. Değerler aşağıdakileri içerir:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95, Windows 98 veya Windows ME işletim sistemleri için sürüm numarası. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemleri için sürüm numarası. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Windows Installer derlemesinin (yükleme sırasında çalıştırmak için msi.dll) sürümü.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Kullanıcının yönetici ayrıcalıkları varsa bu özelliği ayarlayın. True veya false değerleri.|  
-|InstallMode|Yükleme modu burada yüklenmesine izin bileşen gerektiğini gösterir. Değerler aşağıdakileri içerir:<br /><br /> -HomeSite - Önkoşullar satıcının Web sitesinden yüklenir.<br />-SpecificSite - Önkoşullar seçtiğiniz konumdan yüklenir.<br />Uygulama aynı konumda - SameSite - Önkoşullar yüklendi.|  
+|ProcessorArchitecture|İşlemci ve BITS başına word bir yürütülebilir dosya tarafından hedeflenen platformun. Değerler aşağıdakileri içerir:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95, Windows 98 veya Windows ME işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
+|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
+|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Windows Installer derlemesinin (msi.dll) yükleme sırasında çalıştırılacak sürümü.|  
+|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Bu özellik, kullanıcının yönetici ayrıcalıkları varsa ayarlanır. Değerler şunlardır: true veya false.|  
+|InstallMode|Yükleme modu bileşenin nereden yüklenmesi gereken yere gösterir. Değerler aşağıdakileri içerir:<br /><br /> -HomeSite - Önkoşullar satıcının Web sitesinden yüklenir.<br />-SpecificSite - Önkoşullar seçtiğiniz konumdan yüklenir.<br />-SameSite - Önkoşullar uygulama ile aynı konumdan yüklenir.|  
   
-## <a name="separating-redistributables-from-application-installations"></a>Yeniden dağıtılabilir öğeleri uygulama yüklemelerinden ayırma  
-Yeniden dağıtılabilir dosyaların Kurulum projelerinde dağıtılmasını engelleyebilirsiniz. Bunu yapmak için .NET Framework dizininiz RedistList klasöründe yeniden dağıtılabilir listesi oluşturun:  
+## <a name="separate-redistributables-from-application-installations"></a>Uygulama yüklemelerini alanından ayrı yeniden dağıtılabilir  
+Yeniden dağıtılabilir dosyaların Kurulum projelerinde dağıtılmasını engelleyebilirsiniz. Bunu yapmak için .NET Framework dizininiz içindeki RedistList klasöründe bir yeniden dağıtılabilir liste oluşturun:  
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-Yeniden dağıtılabilir listesi aşağıdaki biçimi kullanarak ad vermemelisiniz bir XML dosyasıdır: *şirket adı*. *Bileşen adı*. RedistList.xml. Bu nedenle, örneğin, bileşen Acme tarafından yapılan DataWidgets çağrılırsa, kullanın *Acme.DataWidgets.RedistList.xml*. Yeniden dağıtılabilir listenin içeriği örneği şuna benzeyebilir:  
+Yeniden dağıtılabilir liste, aşağıdaki biçimi kullanarak adlandırmalısınız. bir XML dosyasıdır:  *\<şirket adı >.\< Bileşen adı >. RedistList.xml*. Bu nedenle, örneğin bileşen Acme tarafından yapılan DataWidgets olarak adlandırılmışsa, kullanın *Acme.DataWidgets.RedistList.xml*. Yeniden dağıtılabilir liste içeriklerinin bir örneği şuna benzeyebilir:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="UTF-8"?>  
 <FileList Redist="Acme.DataWidgets" >  
 <File AssemblyName="Acme.DataGrid" Version="1.0.0.0" PublicKeyToken="b03f5f7f11d50a3a" Culture="neutral" ProcessorArchitecture="MSIL" InGAC="true" />  
 </FileList>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Önkoşullar iletişim kutusu](../ide/reference/prerequisites-dialog-box.md)   
  [Ürün ve paket şema başvurusu](../deployment/product-and-package-schema-reference.md)   
- [Visual Studio 2005 önyükleyicisi başlatmak için kullanın](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Yüklemenizi başlatmak için Visual Studio 2005 bootstrapper kullanın](http://go.microsoft.com/fwlink/?LinkId=107537)

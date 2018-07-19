@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffd796f39e5beff02c2df837985bb6404ca9860a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31563381"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077571"
 ---
-# <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce Dağıtım Örnekleri ve Yönergeler
-Bu bölümde örnek uygulamalar, örnek kod ve sözdizimi, yapı ve Windows Forms, WPF ve konsol uygulamaları dağıtmak için kullanılan teknikleri gösteren adım adım talimatları içerir.  
+# <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce Dağıtım örnekleri ve izlenecek yollar
+Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Windows Forms, WPF ve konsol uygulamaları dağıtmak için kullanılan teknikleri gösteren adım adım talimatları içerir.  
   
- Örnek kod açıklayıcı amacıyla tasarlanmıştır ve dağıtılan çözümlerinde değişiklik olmadan kullanılmamalıdır. Özellikle, güvenlik büyük dikkate almanız gerekir.  
+ Örnek kod yönerge amaçlıdır ve değişiklik olmadan dağıtılan çözümleri kullanılmamalıdır. Özellikle, güvenlik büyük dikkate almanız gerekir.  
   
 ## <a name="clickonce-deployment"></a>ClickOnce dağıtımı  
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework yardımcı programlarını ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
-|[ClickOnce dağıtım API'si ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Belirli derlemeleri "isteğe bağlı" olarak işaretlemek nasıl ve bunları indirmek nasıl gösterilir sınıflarda kullanarak <xref:System.Deployment.Application> ad alanı.|  
-|[ClickOnce dağıtımı Tasarımcısı'nı kullanarak API'si ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Yalnızca ilk uygulama tarafından kullanıldığında, bunların uygulama derlemeleri karşıdan açıklanmaktadır.|  
+|[Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|ClickOnce uygulamanızı dağıtmak için .NET Framework yardımcı programları kullanmayı açıklar.|  
+|[ClickOnce dağıtım API'si ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Belirli bütünleştirilmiş kodların uygulamanızda "isteğe bağlı" olarak işaretlemek nasıl ve bunları indirmek nasıl gösterir kullanarak sınıflarda <xref:System.Deployment.Application> ad alanı.|  
+|[API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Yalnızca ilk uygulama tarafından kullanıldıklarında uygulama derlemeleri indirileceğini açıklar.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio izlenecek yollar](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio Örnekleri](../ide/visual-studio-samples.md)

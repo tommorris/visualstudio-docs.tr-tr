@@ -1,5 +1,5 @@
 ---
-title: Genel ayarları izlemek için metin Yöneticisi'ni kullanarak | Microsoft Docs
+title: Genel ayarlar izlemek için metin Yöneticisi'ni kullanarak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,33 +14,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c61a6859a2e8d359b2185ce959aa941944380f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0378d4c8c021cb47362220b49c8d7cb5a4ebc82
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141678"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079793"
 ---
-# <a name="using-the-text-manager-to-monitor-global-settings"></a>Genel ayarları izlemek için metin Yöneticisi'ni kullanma
-Bir çekirdek Düzenleyici uygularsanız, bu değişiklikleri Düzenleyicisi örneğiniz etkileyebilecek çünkü genel ayarlarına yapılan değişiklikleri izlemeniz gerekir. Metin Yöneticisi tarafından başlatılan olayları dinleyerek değişiklikleri izleyebilirsiniz. Örneğin, çekirdek düzenleyicisinde, kendi belge veri nesnesi gibi bir bileşen davranışını veya görünümünü için genel bir tercih belirttiğinizde metin Yöneticisi bu bilgileri depolar ve tüm etkilenen istemcilere iletişim kurar.  
+# <a name="use-the-text-manager-to-monitor-global-settings"></a>Genel ayarlar izlemek için metin Yöneticisi'ni kullanın
+Çekirdek Düzenleyici uygularsanız, bu değişiklikleri örneğinizin düzenleyicisinin etkileyebileceğinden genel ayarlara yapılan değişiklikleri izlemeniz gerekir. Metin Yöneticisi tarafından oluşturulan olaylara dinleyerek değişikliklerini izleyebilirsiniz. Örneğin, çekirdek düzenleyicisinde, kendi belge veri nesnesi gibi bir genel görünümünü veya davranışını bir bileşenin tercih belirttiğinizde metin Yöneticisi bu bilgileri depolar ve tüm etkilenen istemcileri ile iletişim kurar.  
   
 ## <a name="text-manager-functions"></a>Metin Yöneticisi işlevleri  
- Metin Yöneticisi ayarları, aşağıdakiler de dahil olmak üzere çeşitli olayları başlatır:  
+ Ayar, aşağıdakiler dahil olmak üzere olayları metin Yöneticisi'ni başlatır:  
   
--   Arabellek kaynak kodu denetimi altında olup olmadığı  
+-   Arabellek kaynak kodu denetiminde olup  
   
 -   Dosya değişikliği bildirimleri için kaydetme  
   
--   Görünümleri belirli arabelleklerinin ilişkili izlemek nasıl  
+-   Görünümleri belirli arabellek ile ilişkili takip etme  
   
--   Metin renklendirme tercihleri  
+-   Metin renklendirmesi tercihleri  
   
--   Alanı Tercihler karşı sekmesi  
+-   Sekme boşluk tercihleri  
   
- Belirli bir dile benzersiz Tercihler metin Yöneticisi tarafından yönetilmeyen. Bu ayarların her dil hizmeti tarafından yönetiliyor olması gerekir.  
+ Verilen bir dile özgü tercihleri metin Yöneticisi tarafından yönetilmez. Bu ayarlar, her dil hizmeti tarafından yönetiliyor olması gerekir.  
   
- Metin Yöneticisi için olay bildirimi tarafından sağlanan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> arabirimi. Bu arabirimi uygulayan istemciniz üzerinde olayları işlemek için nesne metin Yöneticisi gerçekleşti. Kullanarak bu olayları kaydetme <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> metin Yöneticisi arabiriminde.  
+ Olay bildirimi için metin Yöneticisi tarafından sağlanır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> arabirimi. Bu arabirimi uygulayan istemciniz üzerindeki metin Yöneticisi olaylarını işlemek için nesne oluşturulur. Bu olayları kullanarak kaydetme <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> metin manager arabirimi.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İçinde çekirdek Düzenleyicisi](../extensibility/inside-the-core-editor.md)   
- [Düzenleyicisi özellikleri](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Çekirdek Düzenleyicisi içinde](../extensibility/inside-the-core-editor.md)   
+ [Düzenleyici Özellikleri](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

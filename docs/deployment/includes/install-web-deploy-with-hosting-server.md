@@ -1,21 +1,21 @@
-Barındırma sunucuları için Web dağıtımı 3.6 UI yayımlama ayarları dosyasından oluşturulmasını sağlamak ek yapılandırma özelliklerini sağlar.
+Barındırma sunucuları için Web dağıtımı 3.6 arabiriminden yayımlama ayarları dosyası oluşturma ek yapılandırma özellikleri sağlar.
 
-1. Web dağıtımı Windows sunucuda zaten yüklü 3.6 varsa, kullanarak kaldırma **Denetim Masası** > **programları** > **ProgramKaldır**.
+1. Windows Server üzerinde zaten yüklü olan Web dağıtma 3.6 varsa, bunu kullanarak kaldırın **Denetim Masası** > **programlar** > **ProgramKaldır**.
 
 1. Ardından, Windows Server üzerinde barındırma sunucuları için Web dağıtımı 3.6 yükleyin.
 
-    Barındırma sunucuları için Web Dağıtımı'nı yüklemek için kullanın [Web Platformu Yükleyicisi (Webpı)](https://www.microsoft.com/web/downloads/platform.aspx). (Web Platformu yükleyicisi bağlantı IIS'den bulmak için seçin **IIS** Sunucu Yöneticisi'nin sol bölmesinde. Sunucuya sağ tıklayın ve seçin **Internet Information Services (IIS) Yöneticisi'ni**.)
+    Barındırma sunucuları için Web Dağıtımı'nı yüklemek için kullanın [Web Platformu Yükleyicisi (Webpı)](https://www.microsoft.com/web/downloads/platform.aspx). (Web Platformu yükleyicisi bağlantı IIS'den bulmak için seçin **IIS** Sunucu Yöneticisi'nin sol bölmesinde. Sunucuya sağ tıklayıp **Internet Information Services (IIS) Yöneticisi'ni**.)
 
-    Web Platformu Yükleyicisi'nde bulduğunuz **Web dağıtımı barındıran sunucular için** uygulama sekmesinde.
+    Web Platformu Yükleyicisi'nde bulduğunuz **barındırma sunucuları için Web dağıtımı** uygulamalar sekmesindeki.
 
-1. Zaten yüklemezseniz **IIS Yönetim betikleri ve araçları**, şimdi yükle.
+1. Zaten yüklemezseniz **IIS Yönetim betikleri ve araçları**, şimdi yükleyin.
 
-    Git **sunucu rollerini seçin** > **Web sunucusu (IIS)** > **Yönetim Araçları**ve ardından **IIS yönetimi komut dosyaları ve araçları** rolü tıklatın **sonraki**ve ardından rolü yükleyin.
+    Git **Sunucu Rollerini Seç** > **Web sunucusu (IIS)** > **Yönetim Araçları**ve ardından **IIS Yönetim betikleri ve araçları** rolüne tıklayın **sonraki**ve ardından rolü yükleyin.
 
     ![IIS Yönetim betikleri ve araçları yükleyin](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 
-    Komut dosyaları ve araçları, yayımlama ayarları dosyası oluşturmayı etkinleştirmek için gereklidir.
+    Betikleri ve araçları, yayımlama ayarları dosyası oluşturmayı etkinleştirmek için gereklidir.
 
-1. (İsteğe bağlı) Web dağıtımı doğru açarak çalıştığından emin olun **Denetim Masası > Sistem ve Güvenlik > Yönetim Araçları > Hizmetler** emin olun **Web Dağıtım Aracı hizmeti** çalıştıran ( Hizmet adı eski sürümlerinde farklıdır).
+1. (İsteğe bağlı) Web dağıtımı doğru açarak çalıştığını doğrulayın **Denetim Masası > Sistem ve Güvenlik > Yönetim Araçları > Hizmetleri** emin olun **Web Dağıtım Aracı hizmeti** çalışıyor ( Hizmet eski sürümlerde farklı adıdır).
 
-    Aracı hizmeti çalışmıyorsa başlatın. Hiç yoksa, Git **Denetim Masası > Programlar > program Kaldır**, bulma **Microsoft Web dağıtımı <version>** . Tercih **değişiklik** yükleme ve, seçtiğinizden emin olun **yerel sabit sürücüye yüklenecek** Web dağıtımı bileşenleri için. Değişikliği yükleme adımlarını tamamlayın.
+    Aracı hizmeti çalışmıyorsa başlatın. Hiç yoksa, Git **Denetim Masası > Programlar > program Kaldır**, bulma **Microsoft Web dağıtımı <version>** . Tercih **değişiklik** yükleme ve seçtiğiniz emin **yerel sabit diskinize yüklenecek** Web dağıtımı bileşenleri için. Değişiklik yükleme adımlarını tamamlayın.

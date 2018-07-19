@@ -13,34 +13,35 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: cfb41cf6274238fef2de9b74496a33fba110e04f
-ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
+ms.openlocfilehash: b6e312f7e1913a8b4533c0127b966dc3ac0d981d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38809277"
 ---
-Uzak bilgisayarda yönetici izinlerine sahip olması.  
+Uzak bilgisayarda yönetimsel izinleriniz olmalıdır.  
   
-1.  Uzaktan hata ayıklayıcı uygulama bulun. (Msvsmon.exe onu yüklendiği konumda bulunamadı veya arayın ve Başlat menüsünden açmak **uzaktan hata ayıklayıcı**.)
+1.  Uzaktan hata ayıklayıcı uygulamasını bulun. (Burada, yüklü konumunda msvsmon.exe bulun veya Başlat menüsünü açıp arama **uzaktan hata ayıklayıcı**.)
   
-     Uzaktan hata ayıklayıcı uzak bir sunucuda çalışıyorsa, uzaktan hata ayıklayıcı uygulama sağ tıklatın ve seçin **yönetici olarak çalıştır**. Uzak bir sunucuda bu çalıştırmıyorsanız yalnızca başlatın normalde.
+     Uzaktan hata ayıklayıcı uzak bir sunucuda çalışıyorsa, uzaktan hata ayıklayıcı uygulama sağ tıklatın ve seçin **yönetici olarak çalıştır**. Uzak bir sunucuda, çalıştırmıyorsanız yalnızca başlatın normalde.
   
-3.  Başlattığınızda uzak araçları ilk kez (veya, yapılandırdığınız önce), **uzaktan hata ayıklama yapılandırmasını** iletişim kutusu görüntülenir.  
+3.  Başladığınızda uzak araçları ilk kez (veya yapılandırmış olduğunuz önce), **uzaktan hata ayıklama Yapılandırması** iletişim kutusu görüntülenir.  
   
      ![RemoteDebuggerConfWizardPage](../media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
   
 4.  Windows hizmeti API'si (yalnızca Windows Server 2008 R2 üzerinde gerçekleşen) yüklü değilse seçin **yükleme** düğmesi.  
   
-5.  Üzerindeki uzak araçları kullanmak istediğiniz ağ türlerini seçin. En az bir ağ türü seçilmelidir. Bilgisayarlar üzerinden bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubu veya ev grubu aracılığıyla bağlıysanız, uygun şekilde ikinci ya da üçüncü öğesini seçmeniz gerekir.  
+5.  Uzak araçları kullanmak istediğiniz ağ türlerini seçin. En az bir ağ türü seçilmelidir. Bilgisayarları bir etki alanına bağlıysanız, ilk öğe seçmeniz gerekir. Bilgisayar bir çalışma grubunda veya ev grubu bağlıysa, uygun şekilde ikinci veya üçüncü öğe seçmek gerekir.  
   
-6.  Seçin **uzaktan hata ayıklama yapılandırma** güvenlik duvarını yapılandırın ve Aracı'nı başlatın.  
+6.  Seçin **uzaktan hata ayıklamayı Yapılandır** güvenlik duvarını ve Aracı'nı başlatın.  
   
 7.  Yapılandırma tamamlandıktan sonra uzaktan hata ayıklayıcı penceresi görüntülenir.
   
      ![RemoteDebuggerWindow](../media/remotedebuggerwindow.png "RemoteDebuggerWindow")
   
-     Uzaktan hata ayıklayıcı şimdi bir bağlantı için bekliyor. Sunucu adını not edin ve bu Visual Studio'da daha sonra kullanmak yapılandırma ile eşleşmesi gerekir çünkü görüntülenir, numarası bağlantı noktası.  
+     Uzaktan hata ayıklayıcı şimdi bir bağlantı için bekliyor. Sunucu adını not edin ve bu daha sonra Visual Studio'da kullandığınız yapılandırma eşleşmelidir çünkü bağlantı noktası görüntülenir, numarası.  
   
- Hata ayıklama ve uzak hata ayıklayıcıyı gerek bittiğinde tıklatın **Dosya > çıkış** penceresinde. Buradan yeniden **Başlat** menü veya komut satırından:  
+ Hata ayıklama ve uzaktan hata ayıklayıcıyı gerek bittiğinde tıklatın **Dosya > çıkış** penceresinde. Buradan yeniden **Başlat** menüsünden veya komut satırından:  
   
- **\<Visual Studio yükleme dizini > \Common7\IDE\Remote hata ayıklayıcı\\< x86, x64 veya Appx > \msvsmon.exe**.  
+ **\<Uzaktan hata ayıklayıcı yükleme dizini >\\< x86, ARM, ARM64 veya Appx x64 > \msvsmon.exe**.  

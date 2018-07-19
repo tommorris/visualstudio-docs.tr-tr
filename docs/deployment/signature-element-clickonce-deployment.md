@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02a7fb2ab17d5a8f8a8e141814be432a119bf82
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814966"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081520"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;İmza&gt; öğesi (ClickOnce dağıtımı)
-Bu dağıtım bildirimini dijital olarak imzalamak için gerekli bilgileri içerir.  
+Bu dağıtım bildirimi dijital olarak imzalamak için gereken bilgileri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,12 +36,12 @@ Bu dağıtım bildirimini dijital olarak imzalamak için gerekli bilgileri içer
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir zarf imzası kullanarak dağıtım bildirimi imzalama isteğe bağlıdır ancak önerilir. World Wide Web Konsorsiyumu konusunda açıklandığı öneri, "XML imzası sözdizimi ve işleme," XML dosyalarını imzalama hakkında daha fazla bilgi için bkz: [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Zarf imza kullanarak bir dağıtım bildirimi imzalama isteğe bağlıdır ancak önerilir. World Wide Web Consortium anlatıldığı öneri, "Podpisu XML sözdizimi ve işleme," XML dosyalarını imzalama hakkında daha fazla bilgi için bkz. [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
- Bildiriminizi imzalamak istiyorsanız, tüm dosyalar için karmaları sağlanmalıdır. Kullanıcılar dosyaların içeriğini doğrulayamaz doğrulayamadığı için bir bildirim karma olmayan dosyalarla imzalanamaz.  
+ Bildiriminizdeki oturum açmak istiyorsanız, tüm dosyalar için karmaları sağlanmalıdır. Kullanıcılar bütün dosyalarının içeriğini doğrulayamadığı için karma olmayan dosyaları içeren bir bildirimi imzalanamıyor.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği gösterilmektedir bir `Signature` kullanılan bir dağıtım bildirimi öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.  
+ Aşağıdaki kod örneğinde gösterilmiştir bir `Signature` kullanılan bir dağıtım bildirimi öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.  
   
 ```xml  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
@@ -72,5 +72,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ClickOnce Dağıtım Bildirimi](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)

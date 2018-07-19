@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a754f5aef53eed581deb9ccafa0bf5c453d8086d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6533154b81afb96ab6874c686f0c85000ae3fef1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568356"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946725"
 ---
-# <a name="fileclassifier-task"></a>FileClassifier Görevi
-<xref:Microsoft.Build.Tasks.Windows.FileClassifier> Kaynak kaynaklar bütünleştirilmiş kod içine katıştırılır o olarak bir dizi görev sınıflandırır. Bir kaynak yerelleştirilebilir değilse, ana uygulama derlemeye katıştırılır; Aksi takdirde, uydu derlemeye katıştırılır.  
+# <a name="fileclassifier-task"></a>FileClassifier görevi
+<xref:Microsoft.Build.Tasks.Windows.FileClassifier> Görev bir bütünleştirilmiş kod içine katıştırılmış olarak kaynak kaynak kümesini sınıflandırır. Bir kaynak yerelleştirilebilir değil ise, ana uygulama derlemesine eklenir; Aksi takdirde, bir uydu derlemeye eklenir.  
   
 ## <a name="task-parameters"></a>Görev parametreleri  
   
@@ -36,17 +36,17 @@ ms.locfileid: "31568356"
 |`CLREmbeddedResource`|Kullanılmayan.|  
 |`CLRResourceFiles`|Kullanılmayan.|  
 |`CLRSatelliteEmbeddedResource`|Kullanılmayan.|  
-|`Culture`|İsteğe bağlı **dize** parametresi.<br /><br /> Derleme için kültürü belirtir. Bu değer **null** yapı yerelleştirilemeyen ise. Varsa **null**, varsayılan değer küçük değer: **CultureInfo.InvariantCulture** döndürür.|  
-|`MainEmbeddedFiles`|İsteğe bağlı **ITaskItem []** çıkış parametresi.<br /><br /> Ana derlemeye katıştırılmış yerelleştirilemeyen kaynaklar belirtir.|  
+|`Culture`|İsteğe bağlı **dize** parametresi.<br /><br /> Derleme için kullanılacak kültürü belirtir. Bu değer **null** derleme yerelleştirilemeyen ise. Varsa **null**, küçük değer varsayılan değerdir **CultureInfo.InvariantCulture** döndürür.|  
+|`MainEmbeddedFiles`|İsteğe bağlı **Itaskıtem []** çıkış parametresi.<br /><br /> Ana derleme gömülü yerelleştirilemeyen kaynaklar belirtir.|  
 |`OutputType`|Gerekli **dize** parametresi.<br /><br /> Belirtilen kaynak dosyalarıyla katıştırmak için dosya türünü belirtir. Geçerli değerler **exe**, **winexe**, veya **Kitaplığı**.|  
-|`SatelliteEmbeddedFiles`|İsteğe bağlı **ITaskItem []** çıkış parametresi.<br /><br /> Belirtilen kültür için uydu derlemesini katıştırılmış yerelleştirilebilir dosyaları belirtir **kültür** parametresi.|  
-|`SourceFiles`|Gerekli **ITaskItem []** parametresi.<br /><br /> Sınıflandırmak için dosyaların listesini belirtir.|  
+|`SatelliteEmbeddedFiles`|İsteğe bağlı **Itaskıtem []** çıkış parametresi.<br /><br /> Belirtilen kültür için uydu derlemesine gömülür yerelleştirilebilir dosyaları belirtir **kültür** parametresi.|  
+|`SourceFiles`|Gerekli **Itaskıtem []** parametresi.<br /><br /> Dosyaları sınıflandırmak için listesini belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsa **kültür** parametresi ayarlanmadığında kullanılarak belirtilen tüm kaynakların **SourceFiles** parametresi yerelleştirilemeyen; ileilişkiliolduklarısüreceAksihalde,bunlaryerelleştirilebilir **Yerelleştirilebilir** ayarlamak için öznitelik **false**.  
+ Varsa **kültür** parametresi ayarlanmadı, kullanılarak belirtilen tüm kaynakların **Kaynakdosyalar** parametresi yerelleştirilemeyen; bir ileilişkiliolduklarısüreceAksitakdirde,bunlaryerelleştirilebilir **Yerelleştirilebilir** ayarlanan öznitelik **false**.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, tek bir kaynak dosyası bir kaynak olarak sınıflandırır ve French-Canadian (fr-CA) kültür için bir uydu derleme katıştırır.  
+ Aşağıdaki örnek, tek bir kaynak dosyasını kaynak olarak sınıflandırır ve French-Canadian (fr-CA) kültür için bir uydu derlemeye katıştırır.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -65,7 +65,7 @@ ms.locfileid: "31568356"
 </Project>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)   
  [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   

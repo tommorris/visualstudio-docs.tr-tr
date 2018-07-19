@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c83d8f0bc0474c040bcfee4a825c3a800814fbe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 650b550b21f239f382bb464078ee766920262309
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327352"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079855"
 ---
-# <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup Öğesi (MSBuild)
-`ItemDefinitionGroup` Öğesi varsayılan olarak uygulanan tüm öğeleri projesinde, meta veri değerler öğe tanımları kümesini tanımlamak olanak sağlar. Itemdefinitiongroup yerini kullanmaya gerek [CreateItem görevi](../msbuild/createitem-task.md) ve [CreateProperty görevi](../msbuild/createproperty-task.md). Daha fazla bilgi için bkz: [öğe tanımları](../msbuild/item-definitions.md).  
+# <a name="itemdefinitiongroup-element-msbuild"></a>Itemdefinitiongroup öğesi (MSBuild)
+`ItemDefinitionGroup` Öğesi varsayılan olarak uygulanır, projedeki tüm öğeleri meta verileri değerler öğesi tanımları kümesini tanımlamak olanak tanır. Itemdefinitiongroup yerini gerek [CreateItem görevi](../msbuild/createitem-task.md) ve [CreateProperty görevi](../msbuild/createproperty-task.md). Daha fazla bilgi için [öğesi tanımları](../msbuild/item-definitions.md).  
 
  \<Proje >  
  \<Itemdefinitiongroup >  
@@ -42,29 +42,29 @@ ms.locfileid: "36327352"
 </ItemDefinitionGroup>  
 ```  
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
 
 ### <a name="attributes"></a>Öznitelikler  
 
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşulu. Daha fazla bilgi için bkz: [koşullar](../msbuild/msbuild-conditions.md).|  
+|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
 
-### <a name="child-elements"></a>Alt Öğeler  
-
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Öğesi](../msbuild/item-element-msbuild.md)|Derleme işlemi için giriş tanımlar. Sıfır veya daha fazla olabilir `Item` öğelerinde bir `ItemDefinitionGroup`.|  
-
-### <a name="parent-elements"></a>Üst Öğeler  
+### <a name="child-elements"></a>Alt öğeleri  
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
+|[Öğesi](../msbuild/item-element-msbuild.md)|Yapı işlemi için girişler tanımlar. Sıfır veya daha fazla olabilir `Item` öğelerinde bir `ItemDefinitionGroup`.|  
+
+### <a name="parent-elements"></a>Üst öğeler  
+
+|Öğe|Açıklama|  
+|-------------|-----------------|  
+|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
 
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde, m ve n, iki meta veri öğelerini bir Itemdefinitiongroup tanımlar. Bu örnekte, "m" meta veri öğesi "i" tarafından açıkça tanımlanmadığından varsayılan meta veri "m" "i" öğesine uygulanır. Ancak, meta verileri "n" "i" öğe tarafından zaten tanımlı olduğu için varsayılan meta veri "n" öğesi "i" uygulanmıyor.  
+ Aşağıdaki kod örneği, iki meta veri öğeleri, m ve n, içinde bir Itemdefinitiongroup tanımlar. "M" meta veri öğesi "i" tarafından açıkça tanımlanmadığından Bu örnekte, "m" varsayılan meta veri "i" öğesine uygulanır. Ancak, varsayılan meta veri "n", "n" meta veri öğesi "i" tarafından zaten tanımlı olduğundan, "i" öğesine uygulanmaz.  
 
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -84,6 +84,6 @@ ms.locfileid: "36327352"
 </Project>  
 ```  
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Öğeleri](../msbuild/msbuild-items.md)

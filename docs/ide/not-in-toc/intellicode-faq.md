@@ -1,93 +1,187 @@
 ---
-title: IntelliCode sorular ve yanıtlar
-ms.date: 05/22/2018
+title: Intellicode sorular ve yanıtlar
+ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: f0410b3ffd04c42f316d99c150253e72bb1b1944
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 79e18778eae231d16cf32c0fa68bcb6f5564b09d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34468810"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079317"
 ---
-# Visual Studio IntelliCode SSS
+# Visual Studio Intellicode SSS
 
-Visual Studio IntelliCode gösterdiğiniz ilgi için teşekkür ederiz! Neyse bazı olabilirsiniz soruları yanıtlamak için bu kısa SSS sağladık.
+Visual Studio Intellicode gösterdiğiniz ilgi için teşekkür ederiz! Bu kısa SSS Umarım etkinleştirmiş olabilirsiniz sorulara yanıt.
 
-## Q. Visual Studio IntelliCode nedir?
+## SORU. Visual Studio Intellicode nedir?
 
-Yapı 2018 Visual Studio IntelliCode, AI kullanarak yazılım geliştirme geliştiren yeni bir özellik duyurdu. IntelliCode geliştiricilere yardımcı olur ve kod güvenle ekipleri, sorunları daha hızlı bulun ve kodu incelemeler odaklanın.
+Build 2018'e Microsoft Visual Studio Intellicode, yapay ZEKA kullanarak yazılım geliştirme geliştiren yeni bir özellik duyurdu. Intellicode geliştiriciler yardımcı olur ve güvenle kod takımlar, sorunları daha hızlı bulmak ve kod incelemeleri odaklanın.
 
-Biz IntelliCode yazılım geliştirme işlemi aşağıdaki yollarla nasıl geliştiren bir erken görünümünü gösterilmiştir:
+Nasıl nasıl yazılım geliştirme işlemini aşağıdaki yollarla geliştirir Intellicode gösterilen erken bir görünümü:
 
-- Bağlam kullanan kodu tamamlamalar sunar
-- Geliştiriciler desenleri ve ekibe stillerini uyması için size yol gösterir
-- Catch zor kod sorunları bulur
-- Kod gözden geçirme önemli alanlara dikkat çekmek tarafından odaklanır
+- Bağlama duyarlı kod tamamlama sunar
+- Geliştiriciler desenleri ve ekip stillerini uyması için size yol gösterir
+- Catch zor kod sorunlarını bulur
+- Kod incelemeleri açısından gerçekten önemli olan alanlara dikkat çekmek tarafından odaklanır.
 
-Geliştiriciler bulabilir daha fazla bilgi ve oturum yukarı haber ve gelecekteki özel önizlemeler sırasında [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
+Geliştiriciler bulabilir daha fazla bilgi ve oturum yukarı haber ve gelecekteki özel önizlemelere adresindeki [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## Q. Ne yapmak müşterilerin Visual Studio IntelliCode sağlıyor mu?
+## SORU. Ne yapmak, müşterilerin Visual Studio Intellicode olanak sağlıyor mu?
 
-Visual Studio IntelliCode yapay Intelligence (AI) aracılığıyla yeni üretkenlik geliştirmeleri sunan bir yetenekleri aralığıdır.
+Visual Studio Intellicode, yapay zeka (AI) aracılığıyla yeni üretkenlik geliştirmeleri sunan bir özellikleri aralığıdır.
 
-Geliştiricilerin [Deneysel uzantısını indirin](https://go.microsoft.com/fwlink/?linkid=872707) Visual Studio 2017 15.7 ve sonraki sürümleri için. Uzantı, yalnızca üyeleri alfabetik bir listesini sunan yerine kullanılacak geliştirici için büyük olasılıkla doğru API tahmin Gelişmiş IntelliSense sağlar. Bu Geliştirici geçerli kod içerik ve desenler dinamik bu listeyi sağlamak için kullanır. Uzantısı ile daha fazla özelliklerini önümüzdeki aylarda güncelleştiriyoruz.
+Geliştiriciler şunları yapabilir [Deneysel bir uzantı indirmek](https://go.microsoft.com/fwlink/?linkid=872707) Visual Studio 2017 sürüm 15.7 ve üzeri. Uzantı şu anda sağlar:
 
-## Q. Diğer özellikler için Visual Studio IntelliCode uzantısı gelen var mı? Editorconfig nesil nasıldır?
+- Üyeleri alfabetik listesi yalnızca sunmak yerine kullanmak geliştirici için büyük olasılıkla doğru API tahmin eden yapay ZEKA destekli IntelliSense. Bu dinamik listesi sağlamak için geliştirici geçerli kod bağlamı ve desenleri kullanır.
 
-Biz çıktıklarında herkese açık şekilde paylaşmaktan mutluluk yetenekleri sayısına etkin bir şekilde çalışıyoruz. Size kodu stili ve C# Microsoft yapı 2018 adresindeki biçimlendirme editorconfig ayarlarını oluşturur bir aracı erken, dahili bir sürümünü gösterilmektedir. Bu Deneysel uzantı henüz değildir, ancak var. en kısa sürede hale planlıyoruz. Oturum Haberler ve güncelleştirmeleri için [ https://aka.ms/intellicode ](https://aka.ms/intellicode) şu yeni özellikler kullanılabilir olduğunda bilmeniz ilk olmalıdır.
+- Kod stili ve biçimlendirme çıkarımı yardımcı olan kuralları tutmak kodunuzu tutarlı dinamik olarak oluşturarak bir [.editorconfig dosyasındaki](../create-portable-custom-editor-options.md) gelen, kodlama stillerini ve biçimlerini tanımlamak amacıyla kod. Bu kuralları otomatik stil sunmak Visual Studio izin ve biçim bazısı, belgeyi temizleyin.
 
-## S: "AI destekli IntelliSense IntelliCode normal IntelliSense iyi tarafından sağlanmıştır" ne yapar?
+Önümüzdeki aylarda uzantısı ile daha fazla özellik güncelleştireceğiz.
 
-IntelliCode ile bir geliştirici üyeleri basit alfabetik listesi sunma yerine kullanmak için en olası API düzeltmek tamamlanma listesi önerir. Geliştiricinin geçerli kod bağlamını kullanır ve desenler 2000 yüksek kaliteli üzerinde bağlı olarak, açık kaynaklı projeleri Github'da her dinamik bu listeyi sağlamak için 100'den yıldız ile. Sonuçları olasılıkla ve en uygun API çağrıları tahmin bir model oluşturur.
+## SORU. Neden EditorConfig çıkarımı filename 1 önüne ekleyin?
 
-## S: IntelliCode tamamlama önerileri ne kadar iyi misiniz?
+Visual Studio genişletilebilirlik ilgili bilinen sorundan 1 neden olur. sağ tıklayıp seçerek oluşturduğunuzda .editorconfig dosya adına eklenecek **Ekle > Yeni öğe**. Bu şekilde adlı dosyaları Visual Studio'da editorconfig işlemcisi tarafından tanınmıyor. Bu sorun Visual Studio 2017 sürümünde 15,8 Preview 4 sabittir, ancak o zamana kadar 1'de kaldırarak getirebilirler **Yeni Öğe Ekle** iletişim.
 
-Biz IntelliCode'nın önerileri dahili Microsoft'taki süre için kullanmakta olduğunuz ve öneriler yararlı inanıyoruz. Sonuç olarak, yine de kanıtı nasıl kullanışlı bu önerileri için kodu olarak olduğunuz olacaktır. Biz Visual Studio vermenizi memnuniyet duyarız [IntelliCode uzantısı](https://go.microsoft.com/fwlink/?linkid=872707) deneyin. Bize nasıl sizin için çalıştığı bilmeniz ve bize Geri bildiriminizi gönderin. Biz de bizim önerileri çekme tabanlı modelimizi eğiteceğiz ve model geliştikçe uzantısı güncelleştirme yapacaksınız.
+## SORU. EditorConfig kuralları alma etkisi my - neden göremiyorum?
+Birkaç Bu sorun oluşabilir yaygın nedenler şunlardır:
+
+- 15,8 Preview 3 önce Visual Studio 2017 sürümlerinde, tüm kapatıp gerekecektir kuralları oluşturduğunuz EditorConfig dosyasındaki görmek için açık belgeler etkili olur. 3 sürüm 15,8 Önizleme'de bu sorun düzeltilmiştir.
+- Biçimlendirme kuralları hiçbir zaman görünür **hata listesi** ya da kodunuzda "squiggles" olarak. Ancak, olabilirler yeni belgeyi Biçimlendir (Ctrl + K, Ctrl + D) uzantıyı kullanarak Visual Studio 2017 sürüm 15,8 sabit Preview 3 veya üzeri
+
+## SORU. Belge stili kuralları my - neden çözdüğüne olmayan biçimlendirme?
+Birkaç Bu sorun oluşabilir yaygın nedenler şunlardır:
+
+- Visual Studio 2017 sürüm 15,8 kullanmıyor olabilirsiniz Preview 3 veya daha yüksek. Geçerli belge için ek kod temizleme işlemini gerçekleştirmek için genişletilmiş "Belgeyi Biçimlendir" komutunu kullanmak için bu sürümü gerekir.
+- Stil düzeltmeler kabul değil. Genişletilmiş özellik sorunları kural tabanlı belgeyi Biçimlendir düzeltme özelliği yalnızca sorunlar sabit bir dizi kapsar. Hangi sorunların giderilen değiştirebilirsiniz **Araçlar-Seçenekler** altında **metin düzenleyicisi > C# > kod Stili > biçimlendirme > Genel > biçimi belge ayarları (Deneme)**. Varsayılan ayarları bazı stili kuralları'nı düzeltmemeyi dikkat edin. Bu kabul **Araçlar > Seçenekler**. "Örtük/açık tür tercihleri Uygula" stil kuralları kullanımı hakkındaki örneğin çalışacak `var`.
+
+## SORU. Hangi EditorConfig kuralları, Visual Studio Intellicode çıkarımını?
+
+Bu özellik şu anda Deneysel, kurallar kümesini desteklemiyoruz şekilde belirtilmiştir [kod stili ayarları başvurusu](../editorconfig-code-style-settings-reference.md) henüz.
+
+Intellicode, şu anda aşağıdaki kurallar çıkarabilir:
+
+Biçimlendirme kuralları:
+
+-   csharp_space_between_method_declaration_parameter_list_parentheses
+-   csharp_space_between_method_declaration_empty_parameter_list_parentheses
+-   csharp_space_between_method_call_name_and_opening_parenthesis
+-   csharp_space_between_method_call_parameter_list_parentheses
+-   csharp_space_between_method_call_empty_parameter_list_parentheses
+-   csharp_space_after_keywords_in_control_flow_statements
+-   csharp_space_between_parentheses
+-   csharp_space_after_cast
+-   csharp_space_after_colon_in_inheritance_clause
+-   csharp_space_before_colon_in_inheritance_clause
+-   csharp_space_around_binary_operators
+-   csharp_indent_switch_labels
+-   csharp_indent_case_contents
+-   csharp_indent_case_contents_when_block
+-   csharp_indent_labels
+-   csharp_preserve_single_line_blocks
+-   csharp_preserve_single_line_statements
+-   csharp_new_line_before_open_brace
+-   csharp_new_line_before_else
+-   csharp_new_line_before_catch
+-   csharp_new_line_before_finally
+-   csharp_new_line_before_members_in_object_initializers
+-   csharp_new_line_before_members_in_anonymous_types
+-   csharp_new_line_between_query_expression_clauses
+
+Stil kuralları
+-   csharp__new_line_before_catch
+-   csharp_new_line_before_else
+-   csharp_new_line_before_members_in_anonymous_types
+-   csharp_new_line_before_members_in_object_initializers
+-   csharp_new_line_before_finally_style
+-   csharp_new_line_between_query_expression_clauses
+-   csharp_prefer_braces_style
+-   csharp_preferred_modifier_order_style
+-   csharp_prefer_simple_default_expression
+-   csharp_preserve_single_line_blocks
+-   csharp_space_after_cast
+-   csharp_space_after_keywords_in_control_flow_statements
+-   csharp_space_between_method_call_parameter_list_parentheses
+-   csharp_space_between_method_declaration_parameter_list_parentheses
+-   csharp_space_between_parentheses
+-   csharp_style_expression_bodied_accessors
+-   csharp_style_expression_bodied_constructors
+-   csharp_style_expression_bodied_indexers
+-   csharp_style_expression_bodied_methods
+-   csharp_style_expression_bodied_operators
+-   csharp_style_expression_bodied_properties
+-   csharp_style_inlined_variable_declaration
+-   csharp_style_pattern_local_over_anonymous_function
+-   csharp_style_pattern_matching_over_as_with_null_check
+-   csharp_style_var_for_built_in_types
+-   csharp_style_var_when_type_is_apparent
+-   dotnet_sort_system_directives_first
+-   dotnet_style_explicit_tuple_names
+-   dotnet_style_object_initializer
+-   dotnet_style_predefined_type_for_locals_parameters_members
+-   dotnet_style_predefined_type_for_member_access
+-   dotnet_style_prefer_inferred_anonymous_type_member_names
+-   dotnet_style_qualification_for_event
+-   dotnet_style_qualification_for_field
+-   dotnet_style_qualification_for_method
+-   dotnet_style_qualification_for_property
+-   dotnet_style_require_accessibility_modifiers
+
+## SORU. Visual Studio Intellicode uzantı yakında diğer özellikleri var mı?
+
+Kullanılabilir oldukça herkese açık şekilde paylaşma heyecan duyuyoruz özellikleri sayısına etkin olarak çalışıyoruz. Oturum Haberler ve güncelleştirmeler sırasında döngünüzün [ https://aka.ms/intellicode ](https://aka.ms/intellicode) şu yeni özellikler kullanılabilir olduğunda öğrenmek için ilk olarak.
+
+## S: ne "yapay ZEKA destekli IntelliSense Intellicode düzenli IntelliSense iyi tarafından desteklenen" yapar?
+
+Intellicode ile basit bir alfabetik liste üyelerinin sunmak yerine kullanmak için bir geliştirici için en olası API düzeltmesi tamamlanma listesi önerir. Geliştiricinin geçerli kod bağlamı kullanır ve modellere 2000 yüksek kalite bağlı olarak, açık kaynak projeleri Github'da her bu dinamik listesi sağlamak için 100'den fazla yıldız ile. Sonuçları en olası ve en ilgili API çağrıları tahmin eden bir model oluşturur.
+
+## S: ne kadar iyi Intellicode tamamlama önerileri misiniz?
+
+Biz Intellicode'un önerileri dahili olarak Microsoft'ta bir süre kullanıyor ve öneriler faydalı olduğunu düşündüğünüz. Sonuç olarak, kavram nasıl içinde bu önerileri için kodunuzu yazarken faydalıdır olacaktır. Visual Studio vermenizi isteriz [Intellicode uzantısı](https://go.microsoft.com/fwlink/?linkid=872707) deneyin. Bize sizin için şekli bildiğiniz ve görüşlerinizi bize bildirin. Biz de modelimiz bizim önerileri çekme tabanlı eğiteceğiz ve model geliştikçe uzantısı güncelleştireceğiz.
 
 > [!NOTE]
 > Kullanıcı tanımlı kodunuzu hiçbiri toplanır. Soru bakın [gizlilik](#privacy).
 
-## Q. IntelliCode geleceği nedir?
+## SORU. Intellicode geleceği nedir?
 
-Biz çok çeşitli yolları AI ve diğer gelişmiş teknikler kullanılarak Geliştirici üretkenliği artırmak için araştırırken. Microsoft derleme 2018 biz burada düşünüyoruz AI geliştiricilere yardımcı olmak ancak vardır çok fazla sayıda senaryolardan bazıları erken bir görünümünü gösterdi daha fazla! Biz gösterilen, bunu oturum Haberler ve güncelleştirmeleri için deneme geliştiricilerden öğrenme ilginizi ki [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
+Yapay ZEKA ve diğer gelişmiş teknikleri kullanarak Geliştirici üretkenliğini artırmak için yol çeşitli araştırırken ediyoruz. Microsoft Build 2018, biz burada düşünüyoruz AI geliştiricilere yardımcı olmak, ancak bunu kullanabileceğiniz birçok senaryolardan bazıları erken bir görünümünü gösterdi daha fazla! Biz gösterilene, bu nedenle oturum Haberler ve güncelleştirmeler sırasında için denemeler geliştiricilerden öğrenme ilgilendiğimiz [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## Q. Nasıl onu maliyeti nedir?
+## SORU. Bunu nin ücreti ne kadardır?
 
-Hiçbir duyuru sahibiz şu anda fiyatlandırma ilgili.
+Duyuru yok sahibiz şu anda fiyatlandırma ile ilgili.
 
-## Q. Ne zaman IntelliCode yayımlanacak?
+## SORU. Intellicode kullanıma ne zaman sunulacaktır?
 
-IntelliCode'nın AI destekli IntelliSense şu anda, ilk deneysel önizlemede değil. Deneysel uzantısı güncelleştirmeye devam ve ek özellikler gelecekte ekleyeceğiz. Son sürümü için herhangi bir zamanlaması sahip olduğumuz ancak biz en iyi olası deneyimleri sağlayan böylece biz geliştiriciler görüşleri Hoş Geldiniz. Oturum Haberler ve güncelleştirmeleri için [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
+Intellicode'un yapay ZEKA destekli IntelliSense, şu anda, ilk deneysel Önizleme aşamasındadır. Deneysel uzantıyı güncelleştirmek devam ve ek özellikler gelecekte ekleyeceğiz. Son sürüm için zamanlama sahibiz ancak biz olası en iyi deneyimi sunabilmek geri bildirim geliştiricilerden bizim için çok önemli. Oturum Haberler ve güncelleştirmeler sırasında döngünüzün [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## Q. Bu deneyim, yalnızca Visual Studio ve C# için kullanılabilir?
+## SORU. Bu deneyim, yalnızca Visual Studio ve C# için kullanılabilir mi?
 
-Bir C# kod temeli üzerinde Visual Studio 2017 içinde derleme 2018 adresindeki deneyimi gösterildi. Ancak, IntelliCode daha fazla diller ve araçları Visual Studio ailesindeki gelecekte genişletmeye umuyoruz.
+Bir C# kod temeli üzerinde Visual Studio 2017'deki Build 2018'e en deneyimi gösterildi. Ancak, Intellicode daha fazla dil ve araçları Visual Studio ailesindeki gelecekte genişletmeye umuyoruz.
 
-## Q. <a name="whynointellisense"/> IntelliCode önerileri my C düzenleme deneyimi - olanlar #'ta göremiyorum?
+## SORU. <a name="whynointellisense"/> Intellicode öneriler my düzenleme deneyimi, neler olduğunu - #c dilinde göremiyorum?
 
-C# için standart Visual Studio IntelliSense deneyiminde IntelliCode önerileri görünür. Bu deneyim geçersiz kılma uzantıları listesinin başında görünmesini "starred" IntelliCode önerileri engeller. Bunları kapatma ve IntelliSense yeniden deneme uzantıları bu davranış neden olup olmadığını doğrulayabilirsiniz.
+Intellicode önerileri standart Visual Studio IntelliSense Arabiriminde C# için görünür. Bu UI geçersiz kılma uzantıları listenin en üstünde görüntülenmesini Intellicode "yıldızlı" önerilerini engelleyin. Bunları kapatmak ve IntelliSense'ı yeniden deneyerek uzantıları bu davranış neden olup olmadığını doğrulayabilirsiniz.
 
-Bu sorun, çözmezse, Lütfen Visual Studio aracılığıyla sorunu bildirin [bir sorun bildirmek](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) özellik ve raporunuza IntelliCode Bahsediyor.
+Bu sorun, çözmezse, Lütfen Visual Studio aracılığıyla sorunu bildirin [sorun bildir](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) özellik ve raporunuzdaki Intellicode bahsedebilirsiniz.
 
-## Q. Bu uzantı çalıştırmak hangi sürümü Visual Studio'nun gerekiyor mu?
+## SORU. Bu uzantı çalıştırmak Visual Studio'nun hangi sürümü gerekiyor mu?
 
-Visual Studio 2017 sürüm 15.7 Önizleme 5 ve üzerinde Visual Studio IntelliCode uzantısıdır (tüm SKU). "Bu uzantı üzerinde şu anda yüklü ürünler yüklenebilir değil." ile uzantısı durur yüklemesi yüklü gerekli en düşük sürüm yoksa.
+Visual Studio 2017 sürüm 15.7 Önizleme 5 ve Visual Studio Intellicode uzantısıdır (tüm SKU'lar). "Bu uzantı yüklü ürünlerden herhangi birinde yüklenebilir değil." ile uzantısı durur yüklemesi yüklü gerekli en düşük sürüm yoksa.
 
-## Q. Bu deneyim yalnızca İngilizce olarak kullanılabilir mi?
+## SORU. Bu deneyim yalnızca İngilizce olarak kullanılabilir mi?
 
-IntelliCode bir önizleme bugün uzantısıdır ve ne kadar faydalı bu özelliklerin geniş kümesi müşteriler için olduğunu anlamak istekli duyuyoruz. IntelliCode Önizleme dışında alırken kesinlikle olarak size hangi yerel ya da ilk ve nasıl paketlenmiştir, desteklemek için dil bildirimlerinizi temel alarak ele alacağız.
+Intellicode bugün Önizleme uzantısı olduğundan ve biz bu özellikler çok sayıda müşteriler için ne kadar faydalı olduğunu anlamak için. Intellicode önizlemeden alırken kesinlikle olarak size hangi yerel ayarı veya ilk ve nasıl paketlenmiştir, desteklemek için dili BİLDİRİMİNİZE dayalı olarak ele alacağız.
 
-## <a name="privacy"/> S: ne hakkında gizlilik? Buluta kodumu gönderiyor? Hangi müşteri verilerini Microsoft'a gönderilir?
+## <a name="privacy"/> S: gizlilik? Buluta kodum gönderdiğiniz? Hangi müşteri verilerini Microsoft'a gönderilir?
 
-Geliştiriciler Visual Studio IntelliCode Deneysel Önizleme uzantı olarak bugün deneyimi için davet. Uzantı amacı, geliştiricilerin IntelliCode'nin özelliklerini sınamak ve ürün ekibine geribildirim sağlamak için etkinleştirmektir.
+Geliştiriciler Visual Studio Intellicode Deneysel Önizleme uzantı olarak bugün deneyimi davetlidir. Uzantının amacı, geliştiricilerin Intellicode'un özellikleri test ve ürün ekibine geri bildirim sağlamak için etkinleştirmektir.
 
-Biz, bazı anonim kullanım ve hata raporlama verileri ürünü geliştirmemize yardımcı olmak için uzantı yakalayın. Kullanıcı tanımlı kod Microsoft'a gönderilmez, ancak IntelliCode sonuçları kullanımınız hakkında bilgi toplanmaz. Veriler yalnızca açık kaynaklı ve .NET türleri ve IntelliCode'nın önerilen listeden seçilen üyeleri içerir. Geliştiriciler sürümüne katılmamayı [Visual Studio Deneyimini Geliştirme Programı](../../ide/visual-studio-experience-improvement-program.md), hangi kapanmadan IntelliCode uzantısı için veri toplama çok. Menü çubuğundan seçin **yardımcı** > **geri bildirim gönder** > **ayarları**. İçinde **Visual Studio Deneyimini Geliştirme Programı** iletişim kutusunda **Hayır, katılmak istiyorum değil** ve ardından **Tamam**.
+Biz, bazı anonim kullanım ve ürünün iyileştirilmesine yardımcı olmak için uzantı hata raporlama verilerini yakalayın. Hiçbir kullanıcı tarafından tanımlanan kod Microsoft'a gönderilmez, ancak Intellicode sonuçlarının kullanımınızla ilgili bilgileri toplarız. Veriler yalnızca açık kaynaklı ve .NET türleri ve Intellicode'un önerilen listesinden seçilen üyeleri içerir. Geliştiriciler iyileştirilmiş tanesi [Visual Studio Deneyimini Geliştirme Programı](../../ide/visual-studio-experience-improvement-program.md), hangi kapanmadan Intellicode uzantısı için veri toplamayı çok. Menü çubuğundan seçin **yardımcı** > **geri bildirim gönder** > **ayarları**. İçinde **Visual Studio Deneyimini Geliştirme Programı** iletişim kutusunda **Hayır, katılmak istemiyorum** seçip **Tamam**.
 
-IntelliCode uzantısı düzenli aralıklarla yeniden anonim bir anket tamamlamak için geliştirici isteyebilir. Kullanıcılar, Haberler ve gelecekteki özel önizlemesi için kaydolabilirsiniz, ancak şu anda Deneysel uzantıyı kullanmak için bunu yapmak için gerekli değildir.
+Intellicode uzantısı düzenli aralıklarla yeniden anonimleştirilmiştir bir anketi Geliştirici isteyebilir. Kullanıcılar, haber ve gelecekteki bir özel Önizleme için kaydolabilir, ancak şu anda Deneysel uzantıyı kullanmak için bunu yapmak için gerekli değildir.
 
-Gelecekteki özellikleri kaydolma gerektirecek bir hizmete erişim gerektirebilir. Bu özellikleri özel Önizleme için hazır olduğunuzda, biz daha fazla ayrıntı yayımlamanız.
+Gelecek özellikleri kayıt gerektiren bir hizmete erişim gerektirebilir. Bu özelliklerin özel önizlemesine hazır olduğunuzda biz daha fazla ayrıntı yayınlayacaksınız.

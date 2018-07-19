@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0bd5663383638de8411c44169b22adefadc758
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 184c7ee5fc5155b532243c51f85d8b5420892925
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325495"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079253"
 ---
-# <a name="importgroup-element"></a>ImportGroup Öğesi
-Bir koleksiyonu içerir `Import` isteğe bağlı bir koşul altında gruplanmış öğeleri. Daha fazla bilgi için bkz: [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md).  
+# <a name="importgroup-element"></a>Importgroup öğesi
+Bir koleksiyonunu içeren `Import` isteğe bağlı bir koşul altında gruplandırılmış öğeler. Daha fazla bilgi için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md).  
 
  \<Proje >  
  \<Importgroup >  
@@ -40,28 +40,26 @@ Bir koleksiyonu içerir `Import` isteğe bağlı bir koşul altında gruplanmı�
 </ImportGroup>  
 ```  
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
 
 ### <a name="attributes"></a>Öznitelikler  
 
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşulu. Daha fazla bilgi için bkz: [koşullar](../msbuild/msbuild-conditions.md).|  
+|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
 
-### <a name="child-elements"></a>Alt Öğeler  
-
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[İçeri aktarma](../msbuild/import-element-msbuild.md)|Bir proje dosyası içeriği başka bir proje dosyasına aktarır.|  
-
-### <a name="parent-elements"></a>Üst Öğeler  
+### <a name="child-elements"></a>Alt öğeleri  
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesinin bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
+|[İçeri aktarma](../msbuild/import-element-msbuild.md)|Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.|  
 
-## <a name="remarks"></a>Açıklamalar  
+### <a name="parent-elements"></a>Üst öğeler  
+
+|Öğe|Açıklama|  
+|-------------|-----------------|  
+|[Project](../msbuild/project-element-msbuild.md)|Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.|  
 
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte gösterildiği kod `ImportGroup` öğesi.  
@@ -76,6 +74,6 @@ Bir koleksiyonu içerir `Import` isteğe bağlı bir koşul altında gruplanmı�
 </Project>  
 ```  
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Öğeleri](../msbuild/msbuild-items.md)

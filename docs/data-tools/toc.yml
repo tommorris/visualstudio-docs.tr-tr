@@ -1,7 +1,5 @@
 - name: Genel Bakış
-  items:
-    - name: Visual Studio'da verilere erişime
-      href: accessing-data-in-visual-studio.md
+  href: accessing-data-in-visual-studio.md
 - name: Öğreticiler
   items:
     - name: ADO.NET kullanarak basit veri uygulaması oluşturma

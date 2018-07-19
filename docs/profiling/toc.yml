@@ -26,9 +26,6 @@
   items:
     - name: CPU kullanımını analiz etme
       href: cpu-usage.md
-      items:
-        - name: Bir Evrensel Windows Uygulamasında (UWP) CPU kullanımını analiz etme
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: Bellek kullanımını analiz etme
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: JavaScript belleğini analiz etme
       href: javascript-memory.md
-      items:
-        - name: 'İzlenecek yol: Bellek sızıntısını bulma (JavaScript)'
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: Ağ kullanımını analiz etme
       href: network-usage.md
     - name: HTML kullanıcı arabirimi yanıt hızını analiz etme
       href: html-ui-responsiveness.md
-      items:
-        - name: 'İzlenecek yol: Kullanıcı arabirimi yanıt hızını geliştirme (HTML)'
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: Performans Gezgini’ni kullanma
       href: performance-explorer.md
       items:

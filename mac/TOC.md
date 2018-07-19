@@ -1,5 +1,4 @@
 # [Mac için Visual Studio’ya Giriş](index.md)
-## [Xamarin Studio üzerinden Mac için Visual Studio’nun avantajları](benefits-vsmac-over-xs.md)
 # [IDE Turu](ide-tour.md)
 
 # [Yükleme](installation.md)

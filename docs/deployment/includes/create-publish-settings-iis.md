@@ -1,15 +1,15 @@
 
 1. Güncelleştirilmiş yapılandırma seçenekleri kullanıcı Arabiriminde göstermek için IIS Yönetim Konsolu kapatıp yeniden açın.
 
-1. IIS, sağ **varsayılan Web sitesi**, seçin **dağıtma** > **yapılandırma Web dağıtımı yayımlama**.
+1. IIS, sağ **varsayılan Web sitesi**, seçin **Dağıt** > **yapılandırma Web dağıtımı yayımlama**.
 
-    ![Web dağıtımı yapılandırma yapılandırma](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+    ![Web dağıtımı yapılandırması yapılandırın](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
 1. İçinde **yapılandırma Web dağıtımı yayımlama** iletişim kutusunda, ayarları inceleyin.
 
-1. Tıklatın **Kurulum**.
+1. Tıklayın **Kurulum**.
 
-    İçinde **sonuçları** paneli, erişim haklarını çıktısında belirtilen kullanıcı ve, verilen bir dosyayı bir *.publishsettings* dosya uzantısı, iletişim kutusunda gösterilen konumda oluşturuldu bir kutu.
+    İçinde **sonuçları** panelinde erişim haklarını çıkışın gösterdiği belirtilen kullanıcı ve, verilir bir dosyayla bir *.publishsettings* dosya uzantısına oluşturulan iletişim kutusunda gösterilen konuma bir kutu.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -26,14 +26,14 @@
     </publishData>
     ```
 
-    Windows Server ve IIS yapılandırmasına bağlı olarak farklı değerler XML dosyasına bakın. Birkaç ayrıntılarını gördüğünüz değerleri şunlardır:
+    Windows Server ve IIS yapılandırmasına bağlı olarak farklı değerler XML dosyasına bakın. Gördüğünüz değerleri ilgili birkaç ayrıntı aşağıdadır:
 
-    * *Msdeploy.axd* başvurulan dosya `publishUrl` Web dağıtımı için dinamik olarak üretilen bir HTTP işleyicisini dosya bir özniteliktir. (Test amacıyla, `http://myhostname:8172` genellikle de çalışır.)
-    * `publishUrl` Bağlantı noktası, Web dağıtımı için varsayılan olmayan bağlantı noktası 8172, ayarlanır.
-    * `destinationAppUrl` Bağlantı noktası, IIS için varsayılan bağlantı noktası 80 ' olarak ayarlanmış.
-    * Visual Studio'da (daha sonraki adımlarda) konak adını kullanarak uzak ana bilgisayara bağlanmak erişemiyorsanız ana bilgisayar adı yerine IP adresi sınayın.
+    * *Msdeploy.axd* başvurulan dosya `publishUrl` Web dağıtımı için dinamik olarak üretilen bir HTTP işleyicisi dosyası bir özniteliktir. (Sınama amacıyla, `http://myhostname:8172` genellikle de çalışır.)
+    * `publishUrl` Bağlantı noktası Web dağıtımı için varsayılan bağlantı noktası 8172, ayarlanır.
+    * `destinationAppUrl` IIS için varsayılan bağlantı noktası 80 numaralı bağlantı noktası ayarlanır.
+    * Visual Studio'da (sonraki adımlarda) konak adını kullanarak uzak ana bilgisayara bağlanmak bulamıyorsanız, ana bilgisayar adı yerine IP adresi test edin.
 
     > [!NOTE]
-    > Bir Azure VM'de çalışan IIS yayımlıyorsa, ağ güvenlik grubu listesinde Web dağıtımı ve IIS bağlantı noktalarının açmanız gerekir. Ayrıntılı bilgi için bkz: [yükleme ve çalıştırma IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+    > Bir Azure sanal makinesinde çalışan IIS'ye yayımlıyorsanız, ağ güvenlik grubunda Web dağıtımı ve IIS bağlantı noktalarının açmanız gerekir. Ayrıntılı bilgi için bkz. [yükleme ve çalıştırma IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
 
-1. Bu dosyayı Visual Studio çalıştırdığınız bilgisayara kopyalayın.
+1. Bu dosya, Visual Studio'yu çalıştırdığınız bilgisayara kopyalayın.

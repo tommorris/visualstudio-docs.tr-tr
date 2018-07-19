@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b12f1a5d50e2636d3c8478e6b6a9efe50384a5
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815671"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080639"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;derleme&gt; öğesi (ClickOnce dağıtımı)
-Dağıtım bildirimi için üst düzey öğesi.  
+Dağıtım bildirimi için üst düzey öğe.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,17 +37,17 @@ Dağıtım bildirimi için üst düzey öğesi.
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Öğeleri ve öznitelikleri  
- `assembly` Öğesi kök öğe ve gereklidir. İçinde ilk öğe olmalıdır bir `assemblyIdentity` öğesi. Bildirim öğeleri aşağıdaki ad alanlarında olmalıdır: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, ve `http://www.w3.org/2000/09/xmldsig#`. Bütünleştirilmiş kodun alt öğeleri de kalıtım veya etiketleme yoluyla bu ad alanları olması gerekir.  
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
+ `assembly` Öğesi kök öğe ve gereklidir. Alt ilk bağımsız öğe olmalıdır bir `assemblyIdentity` öğesi. Bildirim öğeler aşağıdaki alanlarında olmalıdır: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, ve `http://www.w3.org/2000/09/xmldsig#`. Derlemenin alt öğeleri, bu ad alanlarında, devralma veya etiketleme tarafından da olması gerekir.  
   
  `assembly` Öğesi aşağıdaki özniteliklere sahiptir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`manifestVersion`|Gerekli. Bu öznitelik ayarlamak `1.0`.|  
+|`manifestVersion`|Gerekli. Bu öznitelik ayarlanmalıdır `1.0`.|  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği gösterilmektedir bir `assembly` öğesi kullanılarak dağıtılan bir uygulama için dağıtım bildiriminde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md) konu.  
+ Aşağıdaki kod örneğinde gösterilmiştir bir `assembly` kullanılarak dağıtılan bir uygulama için bir dağıtım bildirimi öğesinde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md) konu.  
   
 ```xml  
 <asmv1:assembly   
@@ -64,6 +64,6 @@ Dağıtım bildirimi için üst düzey öğesi.
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)   
- [\<Assembly > öğesi](../deployment/assembly-element-clickonce-application.md)
+ [\<derleme > öğesi](../deployment/assembly-element-clickonce-application.md)

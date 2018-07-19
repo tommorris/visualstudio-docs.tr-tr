@@ -10,58 +10,58 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e1cbe4c03cb5ddfec51d583437a9b5294fbd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 405ca2a0d2f676cb56d2c5dffebc1bac1230015d
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926063"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977739"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs kaynak kodu
 
-Bu konu, içeriği ve C# kaynak kodu dosyasına L2DBForm.xaml.cs açıklamasını içerir. Bu dosyada bulunan L2XDBForm parçalı sınıf üç mantıksal bölümlere ayrılabilir: veri üyeleri ve `OnRemove` ve `OnAddBook` olay işleyicileri düğmesini tıklatın.
+Bu konu, içeriği ve C# kaynak kodu dosyasında açıklamasını içerir *L2DBForm.xaml.cs*. Bu dosyada bulunan L2XDBForm kısmi sınıf üç mantıksal bölümlere ayrılabilir: veri üyeleri ve `OnRemove` ve `OnAddBook` düğme tıklama olay işleyicileri.
 
 ## <a name="data-members"></a>Veri üyeleri
 
-İki özel veri üyeleri bu sınıf L2DBForm.xaml içinde kullanılan pencere kaynaklarına ilişkilendirmek için kullanılır.
+Bu sınıf kullanılan pencere kaynaklara ilişkilendirmek için kullanılan iki özel veri üyesi *L2DBForm.xaml*.
 
--   Ad alanı değişkeni `myBooks` için başlatılan `"http://www.mybooks.com"`.
+-   Ad alanı değişkeni `myBooks` değerine ayarlanır `"http://www.mybooks.com"`.
 
--   Üye `bookList` L2DBForm.xaml CDATA dizesinde aşağıdaki satırı ile oluşturucuya başlatılır:
+-   Üye `bookList` CDATA dizesinde oluşturucu içinde başlatılan *L2DBForm.xaml* aşağıdaki satırı ile:
 
-    ```
+    ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
     ```
 
 ## <a name="onaddbook-event-handler"></a>OnAddBook olay işleyicisi
 
-Bu yöntem aşağıdaki üç ifadeleri içerir:
+Bu yöntem, aşağıdaki üç deyimi içerir:
 
 -   İlk koşul deyimi, giriş doğrulaması için kullanılır.
 
--   İkinci ifade yeni bir oluşturur <xref:System.Xml.Linq.XElement> girilen kullanıcı dizeden değerleri **yeni rehberi Ekle** kullanıcı arabirimi (UI) bölümü.
+-   İkinci deyim yeni bir oluşturur <xref:System.Xml.Linq.XElement> girilen kullanıcı dizesi değerleri **ekleme yeni kitabı** kullanıcı arabirimi (UI) bölümü.
 
--   Son deyim L2DBForm.xaml veri sağlayıcısının bu yeni bir kitap öğesi ekler. Sonuç olarak, dinamik veri bağlama otomatik olarak UI bu yeni öğe ile güncelleştirmek; Ek kullanıcı tarafından sağlanan kod gereklidir.
+-   Son deyim veri sağlayıcısının bu yeni kitabı öğesi ekler *L2DBForm.xaml*. Sonuç olarak, dinamik veri bağlama kullanıcı arabirimini otomatik olarak bu yeni bir öğe ile güncelleştirilir; Ek kullanıcı tarafından sağlanan kod gereklidir.
 
 ## <a name="onremove-event-handler"></a>OnRemove olay işleyicisi
 
-`OnRemove` İşleyicisidir daha karmaşıktır `OnAddBook` için iki nedenden dolayı işleyici. Ham XML korunan boşluk içerdiği için ilk olarak, satır başı eşleşen ayrıca defteri girişiyle kaldırılması gerekir. İkinci olarak, kolaylık, silinmiş öğe üzerinde olduğu, seçim listesinde önceki bir sıfırlanır.
+`OnRemove` İşleyicisidir daha karmaşık `OnAddBook` için iki nedenden dolayı işleyici. Ham XML korunan boşluk içerdiğinden, ilk olarak, satır başı eşleşen ayrıca rehberi girişiyle kaldırılması gerekir. İkinci bir kolaylık olarak olan silinmiş öğenin üzerinde olduğu, seçim listesinde önceki bir sıfırlanır.
 
-Ancak seçilen defteri öğesi kaldırmanın çekirdek iş yalnızca iki deyimleri tarafından gerçekleştirilir:
+Ancak, seçilen bir kitap öğesi kaldırmanın çekirdek iş yalnızca iki deyim tarafından gerçekleştirilir:
 
--   İlk olarak, liste kutusunda seçili öğenin ilişkili kitap öğesini alınır:
+-   İlk olarak, şu anda seçili öğeyi liste kutusunda ilişkili kitap öğesi alınır:
 
-    ```
+    ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
--   Ardından, bu öğenin veri sağlayıcısı'ndan silinir:
+-   Ardından, bu öğe, veri sağlayıcısı'ndan silinir:
 
-    ```
+    ```csharp
     selBook.Remove();
     ```
 
-Yeniden, dinamik veri bağlama programın UI otomatik olarak güncelleştirilir sağlar.
+Dinamik veri bağlama yeniden programın UI otomatik olarak güncelleştirilir sağlar.
 
 ## <a name="example"></a>Örnek
 
@@ -137,9 +137,9 @@ namespace LinqToXmlDataBinding {
 
 ### <a name="comments"></a>Açıklamalar
 
-Bu işleyiciler için ilişkili XAML kaynağı için [L2DBForm.xaml kaynak kodu](../designers/l2dbform-xaml-source-code.md).
+Bu işleyiciler için ilişkili XAML kaynak için bkz. [L2DBForm.xaml kaynak kodu](../designers/l2dbform-xaml-source-code.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek Yol: LinqToXmlDataBinding Örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [L2DBForm.xaml Kaynak Kodu](../designers/l2dbform-xaml-source-code.md)
+- [İzlenecek yol: LinqToXmlDataBinding örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [L2DBForm.xaml kaynak kodu](../designers/l2dbform-xaml-source-code.md)

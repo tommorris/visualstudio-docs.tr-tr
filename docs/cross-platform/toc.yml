@@ -22,8 +22,6 @@
 - name: Unity için Visual Studio Araçları
   href: visual-studio-tools-for-unity.md
   items:
-    - name: Unity için Visual Studio Araçlarına Genel Bakış
-      href: overview-of-visual-studio-tools-for-unity.md
     - name: Unity için Visual Studio Araçları ile Başlarken
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Unity için Visual Studio Araçlarını Kullanma

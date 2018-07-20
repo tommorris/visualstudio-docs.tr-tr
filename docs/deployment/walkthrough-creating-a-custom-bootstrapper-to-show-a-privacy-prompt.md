@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808448"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152506"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>İzlenecek yol: Bir gizlilik istemiyle özel bir önyükleyici oluşturma
 Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda otomatik olarak güncelleştirmek için ClickOnce uygulamaları yapılandırabilirsiniz. Müşterileriniz için bu davranış kabul ettiğinden emin olmak için bunları bir gizlilik istemi görüntüleyebilirsiniz. Ardından, bunlar otomatik olarak güncelleştirmek için uygulamaya izin verilip verilmeyeceğini seçebilirsiniz. Uygulamayı otomatik olarak güncelleştirmesine izin verilmiyorsa yüklemez.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
 -   Visual Studio 2010.  
   
-## <a name="create-an-update-consent-dialog-box"></a>Bir güncelleştirme onay iletişim kutusu oluşturma  
+## <a name="create-an-update-consent-dialog-box"></a>Bir güncelleştirme Onayı iletişim kutusu oluşturma  
  Bir gizlilik istemi görüntülenecek uygulama için Otomatik Güncelleştirmeler onay okuyucunun soran bir uygulama oluşturun.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Onay iletişim kutusu oluşturmak için  
@@ -116,7 +116,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
     2.  Üzerinde **proje** menüsünü tıklatın **Modül Ekle**ve ardından **Ekle**.  
   
-    3.  Module1.vb kod dosyasında, aşağıdaki kodu ekleyin.  
+    3.  İçinde *Module1.vb* kod dosyası, aşağıdaki kodu ekleyin.  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
      Visual C# yalnızca geliştiriciler için:  
   
-     Program.cs kod dosyasını açın ve aşağıdaki kodu ekleyin.  
+     Açık *Program.cs* kod dosyası ve aşağıdaki kodu ekleyin.  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
  Bu yordam, aşağıdaki belgeler oluşturarak özel önyükleyici paketi oluşturma işlemini göstermektedir:  
   
--   Bir Product.XML önyükleyici içeriğini açıklamak için dosyası.  
+-   A *product.xml* önyükleyici içeriğini açıklamak için bildirim dosyası.  
   
--   Dizeler ve Yazılım Lisans Koşulları'nı gibi paketinizi yerelleştirme özgü yönlerini listelemek için package.xml bildirim dosyası.  
+-   A *package.xml* dizeleri ve Yazılım Lisans Koşulları'nı gibi paketinizi yerelleştirme özgü yönlerini listelemek için bildirim dosyası.  
   
 -   Yazılım Lisans Koşulları'nı bir belge.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>1. adım: önyükleyici dizini oluşturmak için  
   
-1.  Adlı bir dizin oluşturmak **UpdateConsentDialog** SDKs\Windows\v7.0A\Bootstrapper\Packages %PROGRAMFILES%\Microsoft içinde.  
+1.  Adlı bir dizin oluşturmak **UpdateConsentDialog** içinde *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
     > [!NOTE]
     >  Bu klasör oluşturmak için yönetici ayrıcalıkları gerekir.  
   
-2.  UpdateConsentDialog dizininde, tr adlı bir dizin oluşturun.  
+2.  İçinde *UpdateConsentDialog* dizin adlı bir alt dizin oluşturma *tr*.  
   
     > [!NOTE]
     >  Her yerel ayar için yeni bir dizin oluşturun. Örneğin, fr ve de yerel ayarlar için alt ekleyebilirsiniz. Bu dizinler, dil paketlerini ve Fransızca ve Almanca dizeleri gerekirse içerecektir.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>2. adım: product.xml bildirim dosyası oluşturmak için  
   
-1.  Adlı bir metin dosyası oluşturma `product.xml`.  
+1.  Adlı bir metin dosyası oluşturma *product.xml*.  
   
-2.  Product.xml dosyasında aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
+2.  İçinde *product.xml* dosyasında, aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>3. adım: package.xml bildirimi oluşturmak için dosya ve yazılım lisans koşulları  
   
-1.  Adlı bir metin dosyası oluşturma `package.xml`.  
+1.  Adlı bir metin dosyası oluşturma *package.xml*.  
   
-2.  Package.xml dosyasında, yerel ayar tanımlayın ve Yazılım Lisans Koşulları'nı eklemek için aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
+2.  İçinde *package.xml* dosyasında, yerel ayar tanımlayın ve Yazılım Lisans Koşulları'nı eklemek için aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 3.  UpdateConsentDialog önyükleyici dizinindeki en alt dosyayı kaydedin.  
   
-4.  Yazılım Lisans koşulları EULA.rtf adlı bir belge oluşturun.  
+4.  Adlı bir belge oluşturmak *eula.rtf* Yazılım Lisans Koşulları'nı için.  
   
     > [!NOTE]
     >  Yazılım Lisans Koşulları'nı lisanslama, garanti, yükümlülükler ve yerel yasalarınız hakkında bilgi içermelidir. Bu dosyalar yerel ayara özgü, bu nedenle dosyanın MBCS ya da UNICODE karakterleri destekler bir biçimde kaydedildiğinden emin olun. İçeriği hakkında hukuk departmanınıza Yazılım Lisans Koşulları'nın başvurun.  
   
-5.  Belge UpdateConsentDialog önyükleyici dizinindeki en alt kaydedin.  
+5.  En alt dizinde belgeyi kaydedin *UpdateConsentDialog* önyükleyici dizin.  
   
-6.  Gerekirse, her yerel ayar için yazılım lisans koşulları için yeni package.xml bildirim dosyası ve yeni bir eula.rtf belgesi oluşturun. Örneğin, fr ve de yerel ayarlar için alt oluşturduysanız, ayrı package.xml bildirim dosyaları ve Yazılım Lisans Koşulları'nı oluşturun ve bunları fr ve de alt dizinler için kaydedin.  
+6.  Gerekirse, yeni bir oluşturun *package.xml* dosya ve yeni bir bildirim *eula.rtf* her yerel ayar için yazılım lisans koşulları için belge. Örneğin, fr ve de yerel ayarlar için alt oluşturduysanız, ayrı package.xml bildirim dosyaları ve Yazılım Lisans Koşulları'nı oluşturun ve bunları fr ve de alt dizinler için kaydedin.  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Güncelleştirme Onayı uygulaması bir önkoşul olarak ayarlayın.  
  Visual Studio'da bir önkoşul olarak güncelleştirme onayı uygulamasını ayarlayabilirsiniz.  
@@ -260,7 +260,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 4.  Yayınlama çıktısı otomatik olarak açılmazsa, yayınlama çıktısı için gidin.  
   
-5.  Setup.exe programını çalıştırın.  
+5.  Çalıştırma *Setup.exe* program.  
   
      Kurulum programı Güncelleştirme Onayı iletişim yazılım lisans sözleşmesini gösterir.  
   
@@ -286,7 +286,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 4.  Yayınlama çıktısı otomatik olarak açılmazsa, yayınlama çıktısı için gidin.  
   
-5.  Setup.exe programını çalıştırın.  
+5.  Çalıştırma *Setup.exe* program.  
   
      Kurulum programı Güncelleştirme Onayı iletişim yazılım lisans sözleşmesini gösterir.  
   
@@ -300,9 +300,9 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 8.  Uygulama Yükle iletişim kutusu görünürse, tıklatın **yükleme**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md)   
  [Önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md)   
  [Nasıl yapılır: Ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md)   
  [Nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md)   
- [Ürün ve Paket Şema Başvurusu](../deployment/product-and-package-schema-reference.md)
+ [Ürün ve paket şema başvurusu](../deployment/product-and-package-schema-reference.md)

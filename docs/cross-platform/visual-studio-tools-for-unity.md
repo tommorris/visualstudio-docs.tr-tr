@@ -1,7 +1,7 @@
 ---
 title: Unity için Visual Studio Araçları | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
@@ -10,34 +10,48 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 98c2ac925f1bcdfb4297444f8a3e52379d08d6d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70c021afc74abe03116c5227443d91e851df3545
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31063258"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154063"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları
-Bu bölümde, Visual Studio Unity oyunlar oluşturmak için güçlü bir araç yapar ücretsiz bir Visual Studio uzantısı Unity için Visual Studio Araçları hakkında bilgi edineceksiniz.
 
-## <a name="visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları
- **Unity** platformlar arası oyun oluşturmak için bir oyun altyapısı ve geliştirme ortamıdır. Güçlü bilgisayarlarından kapsayıcı oyun konsolları, Dokunmatik özellikli tabletler ve mobil telefonlar üzerinde bir düzine platformlarda Unity altyapısı çalıştırır — bile Web'e. Unity Düzenleyicisi'ni zengin oyun dünyaları oluşturmak için kullanıcı dostu bir arabirim sağlar. Yetenek, kullanım kolaylığı ve Unity ulaşabileceği bugünün Oyun geliştiriciler arasında popüler bir seçim yapın.
+![Unity için Visual Studio Araçları](media/vstu_header.png)
 
- Unity Düzenleyicisi'ni, oyun world bir araya getirilmesi için harika olsa da, kodunuzu içinde yazamıyor. İle **Unity için Visual Studio Araçları**, düzenleme, düzenleyici ve C# kullanarak Unity projeniz için oyun komut dosyaları oluşturmak için Visual Studio hata ayıklama ve üretkenlik özellikleri hakkında bilgi sahibi kodu kullanabilirsiniz ve bunları ayıklayabilirsiniz Visual kullanma Studio'nun güçlü hata ayıklama özellikleri.
+Unity için Visual Studio Araçları Visual Studio ile çoklu platform oyunları ve Unity ile uygulamalar geliştirmeye yönelik güçlü bir araca dönüştüren ücretsiz bir Visual Studio uzantısıdır.
 
- Ancak, Unity için Visual Studio Araçları, büyük; Ayrıca geri ve İleri basit görevleri gerçekleştirmek için daha az zaman geçiş harcamanız böylece Unity Düzenleyicisi ile derin bir tümleştirmeye sahiptir, Unity özgü üretkenlik iyileştirmeleri sağlar ve Unity belgelerine parmaklarınızın ucunda koyar.
+Unity editor oyun dünya uygulamanızı bir araya getirilmesi için mükemmel olmakla birlikte, kodunuzun içinde yazılamıyor. Unity için Visual Studio Araçları ile düzenleme, hata ayıklama ve üretkenlik özelliklerini Düzenleyicisi ve C# kullanarak Unity projeniz için oyun betikleri oluşturmak için Visual Studio'nun alışık olduğunuz kodu kullanabilirsiniz ve bunları Visual Studio'nun güçlü kullanarak hata ayıklama hata ayıklama özellikleri.
 
- Devam [genel bakış](../cross-platform/overview-of-visual-studio-tools-for-unity.md) hangi Unity teklifleri ya da için Visual Studio Araçları hakkında daha fazla bilgi edinmek için [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) Unity için Visual Studio araçlarını yükleme ve Unity projenizi ile kullanmaya başlama hakkında bilgi edinmek için.
+Ancak, birden fazla Unity için Visual Studio Araçları, Ayrıca Unity editor ile kapsamlı tümleştirme sahiptir; böylece sürekli basit görevleri gerçekleştirmek için daha az zaman geçiş geçireceksiniz, Unity özgü üretkenlik iyileştirmeleri sağlar ve Unity belgeleri parmaklarınızın ucunda koyar.
 
-## <a name="more-in-this-section"></a>Bu bölümde daha fazla bilgi
- [Genel Bakış](../cross-platform/overview-of-visual-studio-tools-for-unity.md) Bu bölümde, ne Unity için Visual Studio Araçları daha ayrıntılı biçimde sunar hakkında bilgi edineceksiniz.
+## <a name="overview"></a>Genel Bakış
 
- [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) Bu bölümde, Visual Studio sürümünüze Unity için Visual Studio Araçları yükleme ve Visual Studio ile Unity projenizi kullanmaya başlamak nasıl öğreneceksiniz.
+Ziyaret [Visual Studio ile Unity oyunları oluşturun](https://visualstudio.microsoft.com/vs/unity-tools/) Unity'de geliştirme için Visual Studio kullanmanın avantajlarını genel bakış sayfasında veya aşağıda Unity için Visual Studio Araçları'nın temel özellikleri içinde daha ayrıntılı incelemek devam edin:
 
- [Unity için Visual Studio Araçları'nı kullanarak](../cross-platform/using-visual-studio-tools-for-unity.md) Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik özellikleri için nasıl kullanılacağını ve nasıl Unity geliştirme için Visual Studio hata ayıklayıcısı kullanılacağını öğreneceksiniz.
+### <a name="compatible-with-visual-studio-community-and-bundled-with-unity"></a>Visual Studio Community uyumlu ve Unity ile birlikte paket
 
- [Unity için Visual Studio Araçları programlama](../cross-platform/programming-visual-studio-tools-for-unity.md) Bu bölümde, Unity API için Visual Studio araçları kullanarak örnekleri bulabilirsiniz.
+[Visual Studio Community](https://visualstudio.microsoft.com/) ücretsiz olarak kullanılabilir ve Unity ile birlikte Unity 2018.1 ile başlayan yükler. Unity için Visual Studio Araçları görmek [başlangıç belgelerine](getting-started-with-visual-studio-tools-for-unity.md) daha fazla bilgi için.
 
- [Sorun giderme ve bilinen sorunlar](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md) Bu bölümde, bilinen sorunların açıklamaları Unity için Visual Studio Araçları ile sık karşılaşılan sorunlara çözümler bulacak ve hata bildirimi tarafından Unity için Visual Studio Araçları geliştirmek nasıl yardımcı olabileceğini öğrenin.
+### <a name="intellisense-for-unity-messages"></a>Unity iletileri için IntelliSense
 
- [Değişiklik günlüğü](../cross-platform/change-log-visual-studio-tools-for-unity.md) Bu bölümde, yeni özellikleri, hata düzeltmeleri ve Unity için Visual Studio Araçları'nın her sürümündeki diğer değişiklikler hakkında bilgi edineceksiniz.
+IntelliSense kod tamamlama, hızlı ve kolay hale getirir [API Unity iletilerini Uygula](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages) gibi `OnCollisionEnter`, kendi parametrelerini dahil.
+
+### <a name="superior-debugging"></a>Üst düzey hata ayıklama
+
+Unity için Visual Studio Araçları destekleyen sağlam [hata ayıklama](using-visual-studio-tools-for-unity.md#unity-debugging) Visual Studio'dan beklediğiniz özellikleri:
+
+* Kesme noktaları, koşullu kesme noktaları da dahil olmak üzere ayarlayın.
+* İzleme penceresinde karmaşık ifadeleri değerlendirin.
+* İnceleyin ve değişkenleri ve bağımsız değişken değerini değiştirin.
+* Karmaşık nesne ve verileri yapılarda detayına gidin.
+
+### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio için Unity için Mac araçları
+
+Mac için Visual Studio Unity projeleri de destekler. Daha fazla bilgi için [Visual Studio için Unity belgeleri Mac Araçları](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools).
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+* [Unity için Visual Studio Araçları ile çalışmaya başlama](getting-started-with-visual-studio-tools-for-unity.md)

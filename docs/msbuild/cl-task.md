@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b668e2a5f63011730cb731a4966df0bccd4721e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946007"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152623"
 ---
 # <a name="cl-task"></a>CL görevi
 Visual C++ Derleyici aracı sarmalar *cl.exe*. Derleyici çalıştırılabilir dosyası oluşturur (*.exe*) dosyaları, dinamik bağlantı kitaplığı (*.dll*) dosyaları ya da kod modülünü (*.netmodule*) dosyaları. Daha fazla bilgi için [derleyici seçenekleri](/cpp/build/reference/compiler-options).  
@@ -799,8 +799,6 @@ Visual C++ Derleyici aracı sarmalar *cl.exe*. Derleyici çalıştırılabilir d
      Varsa `true`, dosya erişim düzenlerini izler.  
   
      Daha fazla bilgi için **TLogReadFiles** ve **TLogWriteFiles** bu tabloda parametreler.  
-  
-## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)

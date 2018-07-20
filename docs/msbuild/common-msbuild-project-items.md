@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83cdf4071be735636c9f2ffb559c68d284685892
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945526"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152561"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild proje öğeleri
 İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], adlandırılmış bir veya daha fazla dosya başvurusu bir öğedir. Meta veri dosya adları, yollar ve sürüm numaraları gibi öğeleri içerir. Tüm proje türlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri ortaktır. Bu öğeleri dosyasında tanımlanan *Microsoft.Build.CommonTypes.xsd*.  
@@ -78,6 +78,7 @@ ms.locfileid: "37945526"
 |Ad|İsteğe bağlı dize. Başvurunun görünen adı.|  
 |Proje|İsteğe bağlı dize. Bir GUID biçiminde başvuru {12345678-1234-1234-1234-1234567891234}.|  
 |Paket|İsteğe bağlı dize. Başvurulan proje dosyasının yolu.|  
+|ReferenceOutputAssembly|İsteğe bağlı boolean. Varsa kümesine `false`, çıktısı başvurulan projenin içermez bir [başvuru](#Reference) diğer projeyi bu bilgisayardan bir önce oluşturur bu proje, ancak yine de sağlar. Varsayılan olarak `true`.|
   
 ### <a name="compile"></a>Derleme  
  Derleyici için kaynak dosyaları temsil eder.  

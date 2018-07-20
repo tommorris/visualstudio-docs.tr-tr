@@ -12,22 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0542912c15a92728cd7476b7482782fa7cf65fb2
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 03f86c1e93de5a2443a91d047c68528f3ec49b08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433151"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153510"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace Genişletilebilirliği için API Başvurusu
+
 Bu bölümdeki bilgileri kullanarak, okuma ve uygulamanızda .itrace dosyaları kodlayıp kod çözebilirsiniz IntelliTrace genişletilebilirlik API'leri kullanabilirsiniz.  
   
-## <a name="in-this-section"></a>Bu Bölümde  
+## <a name="in-this-section"></a>Bu Bölümde
+
  Bu IntelliTrace genişletilebilirlik API'leri, bir ad alanında bulunur  
   
--   <xref:Microsoft.VisualStudio.IntelliTrace>  
+- <xref:Microsoft.VisualStudio.IntelliTrace>  
   
-## <a name="related-sections"></a>İlgili Bölümler  
+## <a name="related-sections"></a>İlgili Bölümler
+
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace ile hata ayıklama hakkında bilgi sağlar.  
   

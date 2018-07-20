@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b16d3b5feeadc033083cbd051497cb973372c3bb
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 7829df456540bc303993217c577bd6be3952a198
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302798"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152636"
 ---
-# <a name="parametergroup-element"></a>ParameterGroup Öğesi
-Tarafından oluşturulan görev mevcut olacaktır parametreleri isteğe bağlı bir listesini içeren bir `UsingTask``TaskFactory`. Daha fazla bilgi için bkz: [UsingTask öğesi (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+# <a name="parametergroup-element"></a>ParameterGroup öğesi
+İsteğe bağlı bir liste tarafından oluşturulan bir görev üzerinde mevcut parametreler içeren bir `UsingTask` `TaskFactory`. Daha fazla bilgi için [UsingTask öğesi (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Proje >  
  \<UsingTask >  
@@ -38,26 +38,26 @@ Tarafından oluşturulan görev mevcut olacaktır parametreleri isteğe bağlı 
 <ParameterGroup />  
 ```  
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
 
 ### <a name="attributes"></a>Öznitelikler  
  Yok.  
 
-### <a name="child-elements"></a>Alt Öğeler  
+### <a name="child-elements"></a>Alt öğeleri  
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Parametre](../msbuild/parameter-element.md)|Tarafından oluşturulan bir görev için söz konusu parametre hakkında bilgi içeren bir `UsingTask``TaskFactory`. Öğesinin adı parametresi adıdır.|  
+|[Parametre](../msbuild/parameter-element.md)|Tarafından oluşturulan bir görev için belirli bir parametre hakkında bilgi içeren bir `UsingTask` `TaskFactory`. Öğe adı parametrenin adıdır.|  
 
-### <a name="parent-elements"></a>Üst Öğeler  
+### <a name="parent-elements"></a>Üst öğeler  
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[UsingTask](../msbuild/usingtask-element-msbuild.md)|Görevleri kaydetmek için bir yol sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Sıfır veya daha fazla olabilir `UsingTask` proje öğelerinde.|  
+|[UsingTask](../msbuild/usingtask-element-msbuild.md)|Görevleri kaydetmek için bir yol sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Sıfır veya daha fazla olabilir `UsingTask` proje öğeleri.|  
 
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl kullanılacağını gösterir `ParameterGroup` öğesi.  
+ Aşağıdaki örnek nasıl kullanılacağını gösterir `ParameterGroup` öğesi.  
 
 ```xml  
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">  
@@ -72,7 +72,7 @@ Tarafından oluşturulan görev mevcut olacaktır parametreleri isteğe bağlı 
 </UsingTask>  
 ```  
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Görevler](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Görevleri](../msbuild/msbuild-tasks.md)   
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)

@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 114e63d1d54f67f15215d17724962b191074588f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b6075eea96d217b029f7febb8bcf80aef2a47eb2
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946557"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151151"
 ---
 # <a name="configure-targets-and-tasks"></a>Hedefleri ve görevleri yapılandırma
 MSBuild hedefleri ve görevleri çalıştırmak için yapılandırabilirsiniz giden işlem MSBuild ile böylece üzerinde çalıştığını olandan farklı Bağlamlar hedefleyebilirsiniz. Örneğin, geliştirme bilgisayarında .NET Framework 4.5 64-bit işletim sisteminde çalışırken bir 32 bitlik .NET Framework 2.0 uygulama hedefleyebilirsiniz. .NET Framework 4 veya önceki sürümleri çalıştıran bilgisayarlar ayrıca hedefleyebilirsiniz. 32 veya 64 bit ve belirli bir .NET Framework sürüm birleşimi olarak da bilinen *hedef bağlam*.  
   
 ## <a name="installation"></a>Yükleme  
- .NET Framework 4.5 ve 4.5.1 yeniden adlandırma olmadan ortak dil çalışma zamanı (CLR), hedefler, görevleri ve araçlar .NET Framework 4'ün değiştirin. .NET Framework 4.5.1 parçası olarak yüklenir [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].  
+ .NET Framework 4.5 ve 4.5.1 yeniden adlandırma olmadan ortak dil çalışma zamanı (CLR), hedefler, görevleri ve araçlar .NET Framework 4'ün değiştirin. .NET Framework 4.5.1 parçası olarak yüklü [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].  
   
  MSBuild Visual Studio'dan ayrı olarak yüklemek istiyorsanız, yükleme paketinden indirebilirsiniz [MSBuild indirme](http://go.microsoft.com/fwlink/?LinkId=309745). Ayrıca, kullanmak istediğiniz .NET Framework sürümleri yüklemeniz gerekir.  
   

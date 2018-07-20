@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dc2ec042f5f7fe9d5ad1e87c943e6cbd6e3d82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577502"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154456"
 ---
-# <a name="starting-a-build-from-within-the-ide"></a>IDE İçinden Derleme Başlatma
-Özel proje sistemleri kullanmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> derlemeleri başlatmak için. Bu konu, bunun nedeni açıklar ve yordam açıklanmaktadır.  
+# <a name="start-a-build-from-within-the-ide"></a>IDE içinden derleme Başlat
+Özel proje sistemleri kullanmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> yapıları başlatmak için. Bu makalede, bu gereksinim nedenlerini açıklar ve yordamı açıklar.  
   
 ## <a name="parallel-builds-and-threads"></a>Paralel yapılar ve iş parçacıkları  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Aracı ortak kaynaklara erişim gerektiren paralel derlemeleri sağlar. Proje sistemleri çalıştırabilirsiniz derlemeleri zaman uyumsuz olarak, ancak bu sistemlere yapı işlevlerinde çağrısı çağırmamalıdır geri yapı yöneticisi sağlanır.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ortak kaynaklara erişim için dolayımlama gerektiren paralel yapılar sağlar. Proje sistemleri çalıştırabilirsiniz yapıları zaman uyumsuz olarak, ancak bu tür sistemleri çağrı içinden yapı işlevlerini çağırmamalıdır telefonla geri yapı yöneticisine sağlanan.  
   
- Proje sistem ortam değişkenlerini değiştirirse, yapı NodeAffinity OutOfProc için ayarlamanız gerekir. Bu işlem dışı düğüm gerektiren bu yana ana bilgisayar nesneleri kullanamayacağınız anlamına gelir.  
+ Proje sistemi ortam değişkenlerini değiştiriyorsa, yapı Outofproc olarak ayarlaması gerekir. Bu gereksinim, bunlar işlemde düğüm gerektirdiklerinden, ana bilgisayar nesnelerini kullanamayacağınız anlamına gelir.  
   
-## <a name="using-ivsbuildmanageraccessor"></a>IVSBuildManagerAccessor kullanma  
- Aşağıdaki kod, proje sistemi bir yapı başlatmak için kullanabileceğiniz bir yöntem özetlenmektedir:  
+## <a name="use-ivsbuildmanageraccessor"></a>Ivsbuildmanageraccessor kullanma  
+ Aşağıdaki kod, proje sistemi bir derlemeyi başlatmak için kullanabileceğiniz bir yöntemin anahatlarını vermektedir:  
   
 ```csharp
   

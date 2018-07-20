@@ -3,7 +3,7 @@ title: Özellik sayfaları Web projeleri için ayarları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2559ad8e1c2d233ffcb1873b0f7f5212bd6cf7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5584d5c5f971231712fb79f4ad40d330dd659b33
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480722"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151639"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web Projeleri Özellik Sayfası Ayarları
-Bir web sitesi hata ayıklama yapılandırmasını da özellik ayarları değiştirebileceğiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda hata ayıklayıcı gizlilikle ilgili ayarların nerede bulacağını Göster **özellik sayfaları** iletişim kutusu.  
+Bir web sitesi hata ayıklama yapılandırmasında özellik ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  
   
-### <a name="configuration-properties-folder-start-options-category"></a>Yapılandırma özellikleri klasörü (başlangıç seçenekleri kategori)  
+### <a name="configuration-properties-folder-start-options-category"></a>Yapılandırma özellikleri klasörü (Başlat seçenekleri kategori)  
   
 |**Ayarı**|**Açıklama**|  
 |-----------------|---------------------|  
-|**Eylemi Başlat**|Grupları seçenekleri için uygulama başlatma ilgili başlığı.|  
-|**Geçerli sayfayı kullanın**|Geçerli sayfanın hata ayıklama için başlangıç noktası olarak belirtir.|  
-|**Belirli bir sayfaya:**|Hata ayıklama başlamak istediğiniz Web sayfasını belirtir.|  
+|**Başlatma eylemi**|Grupları seçenekleri için uygulama başlatma ilgili başlığı.|  
+|**Geçerli sayfayı kullanın.**|Hata ayıklama için başlangıç noktası olarak geçerli sayfayı belirtir.|  
+|**Belirli sayfa:**|Hata ayıklamayı başlatmak için istediğiniz Web sayfası belirtir.|  
 |**Dış programı Başlat:**|Hata ayıklamak istediğiniz program başlatmak için komut belirtir.|  
-|**Komut satırı bağımsız değişkenleri:**|Yukarıda belirtilen komut bağımsız değişkenlerini belirtir.|  
-|**Çalışma dizini:**|Ayıklanacak programın çalışma dizinini belirtir. İçinde [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], çalışma dizini uygulamanın varsayılan olarak, \bin\debug başlatılan dizindir.|  
-|**Başlangıç URL'si**|Hata ayıklamak istediğiniz Web uygulamasının konumunu belirtir.|  
-|**Bir sayfa açmayın. Dış uygulamadan gelen bir istek bekleyin**|Dış uygulamadan gelen bir istek için beklenecek söyler. Bu seçenek, Internet Explorer veya başka bir uygulama başlatılmaz. Yalnızca bir uygulama tarafından çağrıldığında hata ayıklama için hazırlar.|  
-|**Sunucu**|Grupları seçenekleri kullanılacak sunucusuyla ilgili başlığı.|  
-|**Varsayılan Web sunucusunu kullan**|Varsayılan Web sunucusu kullanılacağını söyler.|  
+|**Komut satırı bağımsız değişkenleri:**|Yukarıda belirtilen komut için bağımsız değişkenleri belirtir.|  
+|**Çalışma dizini:**|Ayıklanan programın çalışma dizini belirtir. İçinde [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], çalışma dizini, uygulama varsayılan olarak, \bin\debug başlatılan dizinidir.|  
+|**Başlangıç URL'si**|Web uygulamasının hatalarını ayıklamak istediğiniz konumu belirtir.|  
+|**Bir sayfa açma. Harici uygulamadan istek için bekle**|Harici uygulamadan istek için beklenecek diyor. Bu seçenek, Internet Explorer veya başka bir uygulama başlatılmaz. Yalnızca, bir uygulama tarafından çağrıldığında hata ayıklamaya hazırlar.|  
+|**Sunucu**|Grupları seçenekleri kullanılacak sunucunun ilgili başlığı.|  
+|**Varsayılan Web sunucusunu kullan**|Varsayılan Web sunucusu kullanacak şekilde söyler.|  
 |**Özel sunucu kullan**|Sunucusu olarak kullanmak için temel URL'yi girmenizi sağlar.|  
-|**Hata ayıklayıcıları**|Grupları seçenekleri yapılması hata ayıklama yazmak için ilgili başlığı.|  
-|**ASP.NET hata ayıklama**|Sunucu sayfalar için yazılan hata ayıklamasını etkinleştirir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geliştirme platformu. Bir URL belirtmelisiniz **Start URL**.|  
-|**Yerel kodda hata ayıklama**|Yerel (yönetilmeyen) Win32 kod çağrıları yönetilen uygulamanızdan ayıklamanızı sağlar.|  
-|**SQL Server hata ayıklama**|SQL Server veritabanı nesneleri hata ayıklama sağlar.|  
-|**Silverlight'ta hata ayıklama**|Silverlight bileşenleri hata ayıklama sağlar.|  
+|**Hata ayıklayıcılar**|Grupları seçenekleri yapılması hata ayıklama bilgisinin türüne ilgili başlığı.|  
+|**ASP.NET hata ayıklaması**|Sunucu sayfalar için yazılan hata ayıklamasını etkinleştirir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geliştirme platformu. Bir URL belirtmelisiniz **URL'yi Başlat**.|  
+|**Yerel kodda hata ayıklama**|Yerel (yönetilmeyen) Win32 koddaki çağrıları yönetilen uygulamanızın hatalarını ayıklamanızı sağlar.|  
+|**SQL Server hata ayıklama**|SQL Server veritabanı nesnelerini hata ayıklamasını sağlar.|  
+|**Silverlight'ta hata ayıklama**|Silverlight bileşenleri hata ayıklamasını sağlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)

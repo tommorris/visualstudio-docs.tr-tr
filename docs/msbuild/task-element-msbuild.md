@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 123b3c0c66d162b62d8f925ab58679a95fc3838f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: aff486d906c340bf79939cbe5b43cbc2447d26f5
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326767"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153835"
 ---
-# <a name="task-element-msbuild"></a>Görev Öğesi (MSBuild)
-Oluşturur ve bir örneğini yürüten bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Öğe adı, oluşturulan görev adı tarafından belirlenir.  
+# <a name="task-element-msbuild"></a>Görev öğesi (MSBuild)
+Oluşturur ve yürütür örneği bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Öğe adı, oluşturulan görev adına göre belirlenir.  
 
  \<Proje >  
  \<Hedef >  
@@ -41,36 +41,36 @@ Oluşturur ve bir örneğini yürüten bir [!INCLUDE[vstecmsbuild](../extensibil
 </Task>  
 ```  
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
 
 ### <a name="attributes"></a>Öznitelikler  
 
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşulu. Daha fazla bilgi için bkz: [koşullar](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|İsteğe bağlı öznitelik. Aşağıdaki değerlerden birini içerebilir:<br /><br /> -   **WarnAndContinue** veya **doğru**. Bir görev başarısız olduğunda, sonraki görevlerinde [hedef](../msbuild/target-element-msbuild.md) öğesi ve yapı devam yürütmek ve görevin tüm hataları, uyarıları olarak kabul edilir.<br />-   **ErrorAndContinue**. Bir görev başarısız olduğunda, sonraki görevlerinde `Target` öğesi ve yapı devam yürütmek ve görevin tüm hataları hata olarak kabul edilir.<br />-   **ErrorAndStop** veya **false** (varsayılan). Bir görev başarısız olursa, kalan görevlere `Target` öğesi ve yapı olmayan yürütülen ve tüm `Target` öğesi ve yapı olarak kabul başarısız oldu.<br /><br /> Yalnızca desteklenen 4.5 önce .NET Framework sürümleri `true` ve `false` değerleri.<br /><br /> Daha fazla bilgi için bkz: [nasıl yapılır: görevlerdeki hataları Yoksay](../msbuild/how-to-ignore-errors-in-tasks.md).|  
-|`Parameter`|Gerekli görev sınıfı içeriyor veya daha fazla özellik birlikte etiketli `[Required]` özniteliği.<br /><br /> Parametre değeri olarak değerini içeren bir kullanıcı tanımlı görev parametresi. Herhangi bir sayıda parametrelerinde olabilir `Task` her özniteliği eşlemesi görev sınıfında .NET özelliğine sahip bir öğe.|  
+|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
+|`ContinueOnError`|İsteğe bağlı öznitelik. Aşağıdaki değerlerden birini içerebilir:<br /><br /> -   **WarnAndContinue** veya **true**. Bir görev başarısız olduğunda, sonraki görevlerinde [hedef](../msbuild/target-element-msbuild.md) öğesi ile derleme devam yürütülecek ve görevin tüm hataları uyarı olarak kabul edilir.<br />-   **ErrorAndContinue**. Bir görev başarısız olduğunda, sonraki görevlerinde `Target` öğesi ile derleme devam yürütmek ve tüm hataları görev hata olarak kabul edilir.<br />-   **ErrorAndStop** veya **false** (varsayılan). Bir görev başarısız olduğunda, listesindeki kalan görevlere `Target` olmayan öğe ve derleme yürütülür ve tüm `Target` öğesi ve yapı başarısız olduğu değerlendirilir.<br /><br /> .NET Framework 4.5 yalnızca desteklenen önce sürümleri `true` ve `false` değerleri.<br /><br /> Daha fazla bilgi için [nasıl yapılır: görevlerdeki hataları yoksayma](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`Parameter`|Gerekli görev sınıfının içerir veya daha fazla özellik ile etiketlenmiş `[Required]` özniteliği.<br /><br /> Parametre değeri olarak değerini içeren bir kullanıcı tanımlı görev parametresi. Herhangi bir sayıda parametrelerinde olabilir `Task` her öznitelik eşlemesi görev sınıfının bir .NET özelliğine sahip bir öğe.|  
 
-### <a name="child-elements"></a>Alt Öğeler  
-
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Output](../msbuild/output-element-msbuild.md)|Proje dosyasında görevden depoları çıkarır. Sıfır veya daha fazla olabilir `Output` görevdeki öğeleri.|  
-
-### <a name="parent-elements"></a>Üst Öğeler  
+### <a name="child-elements"></a>Alt öğeleri  
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Hedef](../msbuild/target-element-msbuild.md)|İçin kapsayıcı öğe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevler.|  
+|[Output](../msbuild/output-element-msbuild.md)|Depoları proje dosyasında bir görevden çıkarır. Sıfır veya daha fazla olabilir `Output` görev öğeleri.|  
+
+### <a name="parent-elements"></a>Üst öğeler  
+
+|Öğe|Açıklama|  
+|-------------|-----------------|  
+|[Hedef](../msbuild/target-element-msbuild.md)|İçin kapsayıcı öğe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri.|  
 
 ## <a name="remarks"></a>Açıklamalar  
- A `Task` öğesinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası bir görev örneği oluşturur, özellikleri ayarlayan ve yürütür. `Output` Öğesi özellikler veya başka bir yerde proje dosyasında kullanılacak öğeleri çıkış parametreleri depolar.  
+ A `Task` öğesinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası bir görev örneği oluşturur, özellikleri ayarlayan ve yürütür. `Output` Öğesi, özellikler veya başka bir proje dosyasında kullanılacak öğeleri çıkış parametreleri depolar.  
 
- Varsa [OnError](../msbuild/onerror-element-msbuild.md) üst öğeler `Target` öğesi görev başarısız olursa görev, bunlar yine değerlendirilir ve `ContinueOnError` değerine sahip `false`. Görevler hakkında daha fazla bilgi için bkz: [görevleri](../msbuild/msbuild-tasks.md).  
+ Varsa [OnError](../msbuild/onerror-element-msbuild.md) üst öğeleri `Target` öğesi görev başarısız olursa bir görev, bunlar yine de değerlendirilir ve `ContinueOnError` değeri `false`. Görevler hakkında daha fazla bilgi için bkz. [görevleri](../msbuild/msbuild-tasks.md).  
 
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde bir örneğini oluşturur [Csc görevi](../msbuild/csc-task.md) sınıfı, altı özelliklerini ayarlar ve görev yürütür. Yürütme, değerini sonra `OutputAssembly` nesnesinin özelliği adlı bir öğe listesi yerleştirilen `FinalAssemblyName`.  
+ Aşağıdaki kod örneği bir örneğini oluşturur [Csc görevi](../msbuild/csc-task.md) sınıfı altı özelliklerini ayarlar ve görev yürütür. Yürütmenin sonrasına, değerini `OutputAssembly` nesnesinin özelliğini adlı bir öğe listesine yerleştirilir `FinalAssemblyName`.  
 
 ```xml  
 <Target Name="Compile" DependsOnTarget="Resources" >  
@@ -86,7 +86,7 @@ Oluşturur ve bir örneğini yürüten bir [!INCLUDE[vstecmsbuild](../extensibil
 </Target>  
 ```  
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Görevler](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Görevleri](../msbuild/msbuild-tasks.md)   
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)

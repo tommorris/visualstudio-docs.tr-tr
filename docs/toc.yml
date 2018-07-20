@@ -1,4 +1,4 @@
-- name: Visual Studio Belgeleri
+- name: Visual Studio belgeleri
   href: ide/index.md
 - name: Genel Bakış
   href: ide/visual-studio-ide.md
@@ -39,7 +39,7 @@
       href: install/repair-visual-studio.md
     - name: Visual Studio'yu kaldırma
       href: install/uninstall-visual-studio.md
-    - name: Visual Studio Yönetici Kılavuzu
+    - name: Visual Studio yönetici kılavuzu
       href: install/visual-studio-administrator-guide.md
       items:
         - name: Komut satırını kullanma
@@ -132,7 +132,7 @@
     - name: Visual Studio’da R...
       href: rtvs/getting-started-with-r.md
     - name: Visual Studio’da Node.js
-      href: nodejs/tutorial-nodejs.md
+      href: javascript/tutorial-nodejs.md
     - name: 'Visual Studio’da C#'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: Visual Studio’da Visual Basic
@@ -153,8 +153,6 @@
               href: ide/creating-solutions-and-projects.md
             - name: 'Projeleri taşıma, geçirme ve yükseltme'
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: Proje öğelerini ekleme ve kaldırma
-              href: ide/adding-and-removing-project-items.md
             - name: Proje ve çözüm özelliklerini yönetme
               href: ide/managing-project-and-solution-properties.md
             - name: Bir projedeki başvuruları yönetme
@@ -344,9 +342,6 @@
               items:
                 - name: Visual Basic IntelliSense
                   href: ide/visual-basic-specific-intellisense.md
-                  items:
-                    - name: Visual Basic’de filtrelenmiş tamamlanma listeleri
-                      href: ide/filtered-completion-lists-in-visual-basic.md
                 - name: 'C# IntelliSense'
                   href: ide/visual-csharp-intellisense.md
                 - name: JavaScript IntelliSense
@@ -475,6 +470,11 @@
           href: ide/find-and-fix-code-errors.md
         - name: Platformlar arası mobil geliştirme
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: 'F# geliştirme'
+          href: ide/fsharp-visual-studio.md
+          items:
+            - name: Eski .NET sürümlerini hedefleme
+              href: ide/fsharp-target-older-dotnet-versions.md
         - name: Office ve SharePoint geliştirme
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: XML ve XSLT dosyaları ile çalışma
@@ -605,15 +605,15 @@
         - name: 'İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Hata ayıklama...
-      href: debugger/debugger-feature-tour.md
+      href: debugger/index.md
     - name: Test etme...
       href: test/improve-code-quality.md
     - name: Performansı ölçme...
-      href: profiling/profiling-feature-tour.md
+      href: profiling/index.md
     - name: Kod kalitesini analiz etme...
-      href: code-quality/analyzing-application-quality-by-using-code-analysis-tools.md
+      href: code-quality/index.md
     - name: Dağıtma...
-      href: deployment/deploying-applications-services-and-components.md
+      href: deployment/index.md
     - name: Visual Studio’yu Genişletme...
       href: extensibility/visual-studio-sdk.md
     - name: Mimariyi Analiz Etme ve Mimari Modelini Oluşturma...
@@ -686,8 +686,6 @@
       items:
         - name: Şablon Parametreleri
           href: ide/template-parameters.md
-        - name: Şablon Şeması Başvurusu (Genişletilebilirlik)
-          href: extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default
     - name: Genel Kullanıcı Arabirimi Öğeleri
       items:
         - name: Çağrı Hiyerarşisi
@@ -957,8 +955,6 @@
           href: ide/reference/open-file-command.md
         - name: Proje Aç Komutu
           href: ide/reference/open-project-command.md
-        - name: Çözümü Aç Komutu
-          href: ide/reference/open-solution-command.md
         - name: Yazdır Komutu
           href: ide/reference/print-command.md
         - name: Hızlı Bakış Komutu

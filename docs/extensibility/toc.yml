@@ -425,6 +425,8 @@
       href: getting-started-with-the-vsix-project-template.md
     - name: 'İzlenecek Yol: Visual Studio Uzantısı Yayımlama'
       href: walkthrough-publishing-a-visual-studio-extension.md
+    - name: 'İzlenecek yol: Komut satırı aracılığıyla Visual Studio Uzantısı yayımlama'
+      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
     - name: VSIX Paketine Bağımlılık Ekleme
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: Bir VSIX Paketinin Anatomisi

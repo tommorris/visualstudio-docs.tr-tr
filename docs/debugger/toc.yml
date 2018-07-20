@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüleme
       href: how-to-use-intellitrace-step-back.md
+    - name: Başlayanlar için hata ayıklama
+      href: debugging-absolute-beginners.md
 - name: Nasıl yapılır kılavuzları
   items:
     - name: Hata ayıklayıcısı ile kodda gezinme
@@ -103,10 +105,8 @@
         - name: Düzenle ve Devam Et (Visual Basic)
           href: edit-and-continue-visual-basic.md
           items:
-            - name: Düzenle ve Devam Et ile kesme modunda düzenlemeleri uygulama
+            - name: Düzenle ve Devam Et ile kesme modunda düzenleme uygulama
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Visual Basic Düzenle ve Devam Et özelliğinde desteklenmeyen düzenlemeler
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'F# için Düzenle ve Devam Et desteklenmez'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Hata ayıklayıcısı verilerini görüntüleme
@@ -826,5 +826,3 @@
   items:
     - name: Visual Studio’da hata ayıklayıcısı yenilikleri
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: Başlayanlar için hata ayıklama
-      href: debugging-absolute-beginners.md

@@ -1,11 +1,11 @@
 - name: Visual Studio test araçları
   href: improve-code-quality.md
-- name: Senaryoları test etme
+- name: Test Senaryoları
   href: developer-testing-scenarios.md
 - name: Birim testi
   href: unit-test-your-code.md
   items:
-    - name: Başlarken
+    - name: Kullanmaya başlayın
       href: getting-started-with-unit-testing.md
     - name: Birim testi temel bilgileri
       href: unit-test-basics.md
@@ -43,21 +43,23 @@
       items:
         - name: Test Gezgini Hakkında SSS
           href: test-explorer-faq.md
+    - name: Komut satırından test çalıştırma
+      href: vstest-console-options.md
     - name: 64 bitlik bir işlem olarak birim testi çalıştırma
       href: run-a-unit-test-as-a-64-bit-process.md
     - name: .runsettings dosyasını kullanarak birim testlerini yapılandırma
       href: configure-unit-tests-by-using-a-dot-runsettings-file.md
-    - name: Yönetilen Kod için Birim Testleri Yazma
+    - name: Yönetilen kod için birim testleri yazma
       items:
-        - name: 'İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma'
+        - name: 'İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme'
+        - name: 'Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Birim Testlerinde Microsoft.VisualStudio.TestTools.UnitTesting Üyelerini Kullanma
+        - name: Birim testlerinde Microsoft.VisualStudio.TestTools.UnitTesting üyelerini kullanma
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
-        - name: Onay Sınıflarını Kullanma
+        - name: Onay sınıflarını kullanma
           href: using-the-assert-classes.md
-        - name: Microsoft Fakes ile Test Edilen Kodu Yalıtma
+        - name: Microsoft Fakes ile test edilen kodu yalıtma
           href: isolating-code-under-test-with-microsoft-fakes.md
           items:
             - name: Birim testi için uygulamanızın parçalarını birbirinden yalıtmak üzere saplamalar kullanma
@@ -66,18 +68,18 @@
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
             - name: 'Microsoft Fakes''te kod oluşturma, derleme ve adlandırma kuralları'
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
-        - name: Veri Temelli Birim Testi Oluşturma
+        - name: Veri temelli birim testi oluşturma
           href: how-to-create-a-data-driven-unit-test.md
           items:
-            - name: 'İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma'
+            - name: 'İzlenecek yol: Bir veri kaynağı tanımlamak için yapılandırma dosyası kullanma'
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
-        - name: Genel Metotlar için birim testleri
+        - name: Genel metotlar için birim testleri
           href: unit-tests-for-generic-methods.md
-        - name: Birim Testlerini .NET Framework'ün Önceki Sürümünü Hedefleyecek Şekilde Yapılandırma
+        - name: Birim testlerini .NET Framework'ün önceki sürümünü hedefleyecek şekilde yapılandırma
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
-        - name: Birim Testleri Oluşturmak için Örnek Proje
+        - name: Birim testleri oluşturmak için örnek proje
           href: sample-project-for-creating-unit-tests.md
-    - name: C/C++ Kodu için birim testleri yazma
+    - name: C/C++ kodu için birim testleri yazma
       href: writing-unit-tests-for-c-cpp.md
       items:
         - name: C++ için Microsoft Birim Testi Çerçevesini Kullanma
@@ -96,18 +98,18 @@
           href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
     - name: UWP uygulamaları için birim testleri oluşturma ve çalıştırma
       items:
-        - name: C++ UWP DLL birim testi
+        - name: C++ UWP DLL’ye birim testi uygulama
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
         - name: 'UWP uygulamalarında Visual C# koduna birim testi uygulama'
           href: unit-testing-visual-csharp-code-in-a-store-app.md
-        - name: 'İzlenecek yol: UWP uygulamaları için Birim Testleri Oluşturma ve Çalıştırma'
+        - name: 'İzlenecek yol: UWP uygulamaları için birim testleri oluşturma ve çalıştırma'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
-    - name: Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma
+    - name: Kod kapsamını kullanarak ne kadar kodun test edildiğini belirleme
       href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
       items:
-        - name: Kod Kapsamı Analizini Özelleştirme
+        - name: Kod kapsamı analizini özelleştirme
           href: customizing-code-coverage-analysis.md
-        - name: Kod Kapsamı Sorunlarını Giderme
+        - name: Kod kapsamı sorunlarını giderme
           href: troubleshooting-code-coverage.md
     - name: Sharepoint 2010 uygulamaları için birim testlerini yalıtmak üzere öykünücüler kullanma
       href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
@@ -391,7 +393,7 @@
 - name: Test laboratuvarı yönetimi
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
-    - name: Otomatik test için Derleme veya Yayın Yönetimini kullanma
+    - name: Otomatik test için derleme veya yayın yönetimini kullanma
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: Test aracılarını ve test denetleyicilerini yükleme
       href: lab-management/install-configure-test-agents.md

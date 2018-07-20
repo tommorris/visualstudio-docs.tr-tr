@@ -1,29 +1,31 @@
+- name: Kod analizi belgeleri
+  href: index.md
 - name: Genel Bakış
   items:
-    - name: Yönetilen Kod için Kod Analizi
+    - name: Yönetilen kod için kod analizi
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn Çözümleyicileri
+    - name: Roslyn çözümleyicileri
       href: roslyn-analyzers-overview.md
-    - name: C/C++ için Kod Analizi
+    - name: C/C++ için kod analizi
       href: code-analysis-for-c-cpp-overview.md
-    - name: Kod Ölçümleri ile Kod Bakım Durumunu Ölçme
+    - name: Kod ölçümleri ile kod bakım durumunu ölçme
       href: code-metrics-values.md
 - name: Hızlı Başlangıçlar
   items:
-    - name: 'Hızlı Başlangıç: C/C++ için Kod Analizi'
+    - name: 'Hızlı başlangıç: C/C++ için kod analizi'
       href: quick-start-code-analysis-for-c-cpp.md
 - name: Öğreticiler
   items:
-    - name: Kod Hataları için Yönetilen Kodu Analiz Etme
+    - name: Kod hataları için yönetilen kodu analiz etme
       href: walkthrough-analyzing-managed-code-for-code-defects.md
-    - name: Hatalar için C/C++ Kodunu Analiz Etme
+    - name: C/C++ kodunda hata olup olmadığını analiz etme
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
       items:
-        - name: Gösterim Örneği
+        - name: Gösterim örneği
           href: demo-sample.md
 - name: Nasıl yapılır kılavuzları
   items:
-    - name: Yönetilen Kod için Kod Analizi
+    - name: Yönetilen kod için kod analizi
       items:
         - name: Roslyn Çözümleyicilerini Yükleme
           href: install-roslyn-analyzers.md
@@ -48,7 +50,7 @@
           href: anonymous-methods-and-code-analysis.md
         - name: Yönetilen Kod Hatası için İş Öğesi Oluşturma
           href: how-to-create-a-work-item-for-a-managed-code-defect.md
-    - name: C/C++ için Kod Analizi
+    - name: C/C++ için kod analizi
       items:
         - name: C++ Temel Yönergeleri denetleyicilerini kullanma
           href: using-the-cpp-core-guidelines-checkers.md
@@ -75,7 +77,7 @@
               href: best-practices-and-examples-sal.md
         - name: __Analysis_assume Kullanarak Ek Kod Bilgileri Belirtme
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
-    - name: Kural Kümeleri
+    - name: Kural kümeleri
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
         - name: Yönetilen Kod İçin Kural Kümeleri
@@ -89,7 +91,7 @@
           href: how-to-create-a-custom-rule-set.md
         - name: Kural Kümesi Düzenleyici’sini Kullanma
           href: working-in-the-code-analysis-rule-set-editor.md
-    - name: İade İlkeleri
+    - name: İade ilkeleri
       href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
       items:
         - name: Yönetilen Kod için Özel Kod Analizi İade İlkelerini Uygulama
@@ -100,7 +102,7 @@
           href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
         - name: Sürüm Uyumluluğu
           href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: Kod Ölçümleri
+    - name: Kod ölçümleri
       items:
         - name: Kod Ölçüm Verileri Üretme
           href: how-to-generate-code-metrics-data.md
@@ -137,7 +139,7 @@
           href: native-recommended-rules-rule-set.md
         - name: Yönetilen kod için Güvenlik Kuralları kural kümesi
           href: security-rules-rule-set-for-managed-code.md
-    - name: Yönetilen Kod için Kod Çözümleme Uyarıları
+    - name: Yönetilen kod için kod çözümleme uyarıları
       href: code-analysis-for-managed-code-warnings.md
       items:
         - name: CheckId Tarafından Yönetilen Kod için Kod Çözümleme Uyarıları
@@ -149,7 +151,7 @@
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: 'CA5351: Bozuk Şifreleme Algoritmaları Kullanmayın'
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
-        - name: Tasarım Uyarıları
+        - name: Tasarım uyarıları
           href: design-warnings.md
           items:
             - name: 'CA1000: Genel türlerde statik üyeleri belirtme'

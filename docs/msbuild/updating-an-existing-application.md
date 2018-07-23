@@ -13,7 +13,7 @@ ms.openlocfilehash: f0c18e4e895d8a0563699cf08e5a49fdecc973ab
 ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
+ms.lasthandoff: 07/20/2018
 ms.locfileid: "39152265"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 için var olan bir uygulamayı güncelleştirme

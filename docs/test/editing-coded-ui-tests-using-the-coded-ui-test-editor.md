@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 60ba453db218b108e9f1bb6c65a320a0e1d97594
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: HT
+ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154241"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177363"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Kodlanmış UI Test düzenleyicisini kullanarak kodlanmış UI testlerini düzenleme
 
@@ -74,7 +74,7 @@ Kodlanmış UI Test Düzenleyicisi'ni kullanarak hızla bulun ve tüm UI eylemle
 
 Bir UI eylem özelliklerini değiştirmek için **UI eylemi** bölmesinde UI eylem özelliklerini yı düzenlemek istediğiniz bir UI eyleminden içeren test yöntemi genişletin ve ardından Özellikler penceresini kullanarak özelliklerini değiştirin.
 
-Örneğin, bir sunucu kullanılamıyor ve Web tarayıcınızı ile ilişkili bir kullanıcı Arabirimi eylemine sahip belirten **Web sayfasına gidin 'http://Contoso1/default.aspx'**, URL'sine değişebilir `'http://Contoso2/default.aspx'`.
+Örneğin, bir sunucu kullanılamıyor ve web tarayıcınızı ile ilişkili bir kullanıcı Arabirimi eylemine sahip belirten **Web sayfasına gidin 'http://Contoso1/default.aspx'**, URL'sine değişebilir `'http://Contoso2/default.aspx'`.
 
 ![Denetim Özellikleri](../test/media/codeduitestcontrolprop.png)
 

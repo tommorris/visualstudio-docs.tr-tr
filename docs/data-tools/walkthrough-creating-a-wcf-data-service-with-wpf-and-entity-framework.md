@@ -18,19 +18,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174993"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178393"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
-Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamasını ve sonra bir Windows Forms uygulamasından erişebilirsiniz.
+Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını ve sonra bir Windows Forms uygulamasından erişebilirsiniz.
 
 Bu kılavuzda:
 
--   Konak için bir Web uygulaması oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+-   Konak için bir web uygulaması oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
 -   Oluşturma bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] temsil eden `Customers` Northwind veritabanındaki tablo.
 
@@ -60,13 +60,13 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
        Kısa bir süre sonra sorgu çalışmayı tamamladıktan ve Northwind veritabanı oluşturulur.
 
 ## <a name="creating-the-service"></a>Hizmeti Oluşturma
-Oluşturmak için bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], bir Web projesi ekleyecek, oluşturun bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]ve sonra da modelden hizmeti oluşturun.
+Oluşturmak için bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], bir web projesi ekleyecek, oluşturun bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]ve sonra da modelden hizmeti oluşturun.
 
-İlk adımda hizmeti barındırmak için bir Web projesi ekleyin.
+İlk adımda hizmeti barındırmak için bir web projesi ekleyin.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>Web projesini oluşturmak için
+#### <a name="to-create-the-web-project"></a>Web projesi oluşturmak için
 
 1.  Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
@@ -164,7 +164,7 @@ Sonraki adımlarda hizmeti kullanmak üzere bir Windows Forms istemci uygulamas�
 
 5.  Menü çubuğunda, **proje**, **başlangıç projesi olarak ayarla**.
 
-Sonraki adımda, bir hizmet Başvurusu Ekle [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] Web projesinde.
+Sonraki adımda, bir hizmet Başvurusu Ekle [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] web projesinde.
 
 #### <a name="to-add-a-service-reference"></a>Hizmet başvurusu eklemek için
 

@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: Windows Güvenlik Duvarı’nı uzaktan hata ayıklama için yapılandırma
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: Windows Server’da indirme engelini kaldırma
+          href: remote-debugging-unblock-file-download.md
         - name: Uzaktan hata ayıklama hataları ve sorun giderme
           href: remote-debugging-errors-and-troubleshooting.md
           items:

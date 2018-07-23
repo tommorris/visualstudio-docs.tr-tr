@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 470e08454d39bf63542a63359359b1577e70f5b3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: accf8ffb81b28451f7561b027e4a11fe5a59b202
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945363"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177610"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest görevi
 
@@ -41,8 +41,8 @@ Parametreler için aşağıdaki tabloda açıklanmıştır `GenerateDeploymentMa
 |`CreateDesktopShortcut`|İsteğe bağlı `Boolean` parametresi.<br /><br /> TRUE ise, simge ClickOnce uygulaması yüklendiği sırada masaüstünde oluşturulur.|
 |`DeploymentUrl`|İsteğe bağlı `String` parametresi.<br /><br /> Uygulamanın güncelleştirme konumunu belirtir. Bu parametre belirtilmemişse, hiçbir güncelleştirme konumu uygulama için tanımlanır. Ancak, varsa `UpdateEnabled` parametresi `true`, güncelleştirme konumu belirtilmelidir. Belirtilen değer, tam bir URL veya UNC yolu olmalıdır.|
 |`Description`|İsteğe bağlı `String` parametresi.<br /><br /> Uygulama için isteğe bağlı bir açıklama belirtir.|
-|`DisallowUrlActivation`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Bir URL üzerinden açıldığında uygulama otomatik olarak çalıştırılıp çalıştırılmayacağını belirtir. Bu parametre `true`, uygulama yalnızca Başlat menüsünden başlatılabilir. Bu parametrenin varsayılan değeri `false`. Bu giriş, yalnızca geçerli `Install` parametre değeri `true`.|
-|`EntryPoint`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Üretilen bildirim derlemesi için giriş noktasını belirtir. İçin bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi, bu giriş belirtir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi.<br /><br />Varsa `EntryPoint` görev parametresi belirtilmezse, `<customHostSpecified>` etiketi alt öğesi olarak eklenen `<entryPoint>` etiketi, örneğin:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Aşağıdaki adımları kullanarak, uygulama bildirimine DLL bağımlılıkları ekleyebilirsiniz:<br /><br /> 1.  Bir çağrı ile derleme başvurularını çözümlemek <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Önceki görev ve derleme çıkışını geçirmek için <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Kullanarak bağımlılıkları geçirin `Dependencies` parametresi <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|
+|`DisallowUrlActivation`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Bir URL üzerinden açıldığında uygulama otomatik olarak çalıştırılıp çalıştırılmayacağını belirtir. Bu parametre `true`, uygulamayı yalnızca başlatılabilir **Başlat** menüsü. Bu parametrenin varsayılan değeri `false`. Bu giriş, yalnızca geçerli `Install` parametre değeri `true`.|
+|`EntryPoint`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Üretilen bildirim derlemesi için giriş noktasını belirtir. İçin bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi, bu giriş belirtir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi.<br /><br />Varsa `EntryPoint` görev parametresi belirtilmezse, `<customHostSpecified>` etiketi alt öğesi olarak eklenen `<entryPoint>` etiketi, örneğin:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Aşağıdaki adımları kullanarak, uygulama bildirimine DLL bağımlılıkları ekleyebilirsiniz:<br /><br /> 1.  Bir çağrı ile derleme başvurularını çözümlemek <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Önceki görev ve derleme çıkışını geçirmek için <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Kullanarak bağımlılıkları geçirin `Dependencies` parametresi <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|
 |`ErrorReportUrl`|İsteğe bağlı <xref:System.String?displayProperty=fullName> parametresi.<br /><br /> ClickOnce yüklemeleri sırasında iletişim kutularında görüntülenen web sayfasının URL'sini belirtir.|
 |`InputManifest`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Bildirim oluşturucu için bir temel olarak hizmet verecek girdi XML belgesini belirtir. Bu, çıktı bildiriminde yansıtılmasını özel bildirim tanımları gibi yapılandırılmış verilerin sağlar. XML belgesi kök öğesi asmv1 ad alanı içerisinde bir derleme düğümü olmalıdır.|
 |`Install`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Uygulamanın yüklü bir uygulama ya da yalnızca çevrimiçi bir uygulama olup olmadığını belirtir. Bu parametre `true`, kullanıcının uygulamanın yükleneceği **Başlat** menüsünde ve kullanılarak kaldırılabilir **Program Ekle veya Kaldır** iletişim kutusu. Bu parametre `false`, uygulama bir web sayfasından çevrimiçi kullanılması amaçlanmıştır. Bu parametrenin varsayılan değeri `true`.|

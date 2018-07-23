@@ -37,18 +37,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e56e1129bfdd4b49dcf5b54614af715a20207750
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175323"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178884"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik araçlar sağlar ve [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], dağıtılmış uygulamalar oluşturmak için Microsoft teknolojileri. Bu konu Visual Studio açısından hizmetlere bir giriş sağlar. Tüm belgeler için bkz. [WCF Veri Hizmetleri 4.5](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>WCF nedir?
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] güvenli, güvenilir, işlenen ve birlikte çalışabilen bir dağıtılmış uygulamalar oluşturmak için birleştirilmiş bir çerçevedir. ASMX Web Hizmetleri, .NET uzaktan iletişim, Enterprise Hizmetleri (DCOM) ve MSMQ gibi eski işlemler arası iletişimi teknolojilerini değiştirir. WCF bu teknolojilerden birleşik bir programlama modeli altında işlevselliğini bir araya getirir. Bu, dağıtılmış uygulamalar geliştirme deneyimi basitleştirir.
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] güvenli, güvenilir, işlenen ve birlikte çalışabilen bir dağıtılmış uygulamalar oluşturmak için birleştirilmiş bir çerçevedir. ASMX web Hizmetleri, .NET uzaktan iletişim, Enterprise Hizmetleri (DCOM) ve MSMQ gibi eski işlemler arası iletişimi teknolojilerini değiştirir. WCF bu teknolojilerden birleşik bir programlama modeli altında işlevselliğini bir araya getirir. Bu, dağıtılmış uygulamalar geliştirme deneyimi basitleştirir.
 
 ### <a name="what-are-wcf-data-services"></a>WCF Veri Hizmetleri nelerdir
  [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Açık veri (OData) protokolü standart uygulamasıdır.  Tablolu verileri gibi standart HTTP fiillerini kullanarak veri alma, sonrası, YERLEŞTİRME veya silme gelmesini REST API'ler, bir dizi açığa WCF veri hizmetleri sağlar. Sunucu tarafında, WCF Veri Hizmetleri tarafından değiştirilen [ASP.NET Web API](http://www.asp.net/web-api) yeni OData hizmetlerini oluşturma. WCF Veri Hizmetleri İstemci Kitaplığı Visual Studio'dan bir .NET uygulamasında OData hizmetlerini kullanma için iyi bir seçim olmaya devam eder (**proje &#124; hizmet Başvurusu Ekle**). Daha fazla bilgi için [WCF Veri Hizmetleri 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
@@ -90,7 +90,7 @@ Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik 
  WCF Visual Studio şablonları, kendi hizmetinizi hızla oluşturmak için bir temel kullanabilirsiniz. Ardından, hata ayıklamak ve hizmeti test etmek için WCF hizmet otomatik konağı ve WCF Test İstemcisi kullanabilirsiniz. Bu araçlar birlikte hızlı ve kolay bir hata ayıklama ve test döngüsünü sağlamak ve erken bir aşamada bir barındırma modeli için işleme gereksinimini ortadan kaldırır.
 
 #### <a name="wcf-templates"></a>WCF şablonları
- WCF Visual Studio şablonları, hizmet geliştirme için bir temel sınıf yapısı sağlar. WCF çeşitli şablonlar kullanılabilir **Yeni Proje Ekle** iletişim kutusu. Bunlar, WCF hizmet kitaplığı projeleri, WCF Hizmeti Web siteleri ve WCF Hizmeti öğe şablonları içerir.
+ WCF Visual Studio şablonları, hizmet geliştirme için bir temel sınıf yapısı sağlar. WCF çeşitli şablonlar kullanılabilir **Yeni Proje Ekle** iletişim kutusu. Bunlar, WCF Hizmeti lLibrary projeleri, WCF Hizmeti ile Web siteleri ve WCF Hizmeti öğe şablonları içerir.
 
  Bir şablon seçin, bir hizmet sözleşmesi, hizmet uygulaması ve hizmet yapılandırması için dosyalar eklenir. Hizmet, basit bir "Merhaba Dünya" türünü oluşturma, tüm gerekli özniteliklere zaten eklenir ve kod yazmadan yoktu. Elbette, işlevleri ve gerçek dünya hizmetiniz için yöntemler sağlamak üzere kod eklemek istediğiniz ancak şablonların temel sağlamasıdır.
 

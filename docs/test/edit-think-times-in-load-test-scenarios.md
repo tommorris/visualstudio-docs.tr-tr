@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4eafd4e031188e62b502dc7fd6c04ebee0d145d3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153484"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175988"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Yük testleri senaryolarında Web sitesi insan etkileşimi gecikmelerini benzetmek için Düşünme zamanlarını düzenleme
 
-Düşünme süreleri, insanların Web sitesiyle etkileşimleri ile arasında beklemesine neden olan insan davranışını benzetmekte kullanılır. Düşünme süreleri, bir Web performans testindeki istekleri ve bir yük testi senaryosunda test tekrarları arasında oluşur. Bir yük testinde Düşünme süreleri kullanarak daha kesin yükleme benzetimleri oluşturmak yararlı olabilir. Düşünme süreleri kullanılan veya yükleme testlerinde kullanılıp değiştirebilirsiniz. Düşünme süreleri Yükleme kullanılan içinde testleri karar **Yük Testi Düzenleyicisi**.
+Düşünme süreleri, insanların bir Web sitesiyle etkileşimleri ile arasında beklemesine neden olan insan davranışını benzetmekte kullanılır. Düşünme süreleri, bir web performans testindeki istekleri ve bir yük testi senaryosunda test tekrarları arasında oluşur. Bir yük testinde Düşünme süreleri kullanarak daha kesin yükleme benzetimleri oluşturmak yararlı olabilir. Düşünme süreleri kullanılan veya yükleme testlerinde kullanılıp değiştirebilirsiniz. Düşünme süreleri Yükleme kullanılan içinde testleri karar **Yük Testi Düzenleyicisi**.
 
- *Düşünme profili* bir yük testi senaryosunda uygulandığı bir ayardır. Düşünme sürelerinin kaydedilip kaydedilmediğini tek tek Web performansı testleri yük testi sırasında kullanılan ayarı belirler. Kullanmak istediğiniz Düşünme süreleri bazı Web performans testlerinde ancak bazı durumlarda, bunları farklı senaryolarda yerleştirmelisiniz. Senaryoları hakkında daha fazla bilgi için bkz. [yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md).
+ *Düşünme profili* bir yük testi senaryosunda uygulandığı bir ayardır. Düşünme sürelerinin kaydedilip kaydedilmediğini tek tek web performansı testleri yük testi sırasında kullanılan ayarı belirler. Kullanmak istediğiniz Düşünme süreleri bazı web performans testlerinde ancak bazı durumlarda, bunları farklı senaryolarda yerleştirmelisiniz. Senaryoları hakkında daha fazla bilgi için bkz. [yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md).
 
  Başlangıçta kullanarak yük testi oluşturduğunuzda yük testlerinizi Düşünme süreleri kullanıp kullanmayacağınızı ayarlarsınız **Yeni Yük Testi Sihirbazı**. Daha fazla bilgi için [yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md).
 
@@ -31,11 +31,11 @@ Düşünme süreleri, insanların Web sitesiyle etkileşimleri ile arasında bek
 
 **Kapalı**
 
-Düşünme süreleri göz ardı edilir. Yoğun Web sunucunuza stres testi uygulamak için en fazla yüklemeyi oluşturmak istiyorsanız bu ayarı kullanın. Bir Web sunucusu ile daha gerçekçi Kullanıcı etkileşimlerine çalışılırken kullanmayın.
+Düşünme süreleri göz ardı edilir. Yoğun web sunucunuza stres testi uygulamak için en fazla yüklemeyi oluşturmak istiyorsanız bu ayarı kullanın. Bir web sunucusu ile daha gerçekçi Kullanıcı etkileşimlerine çalışılırken kullanmayın.
 
 **üzerinde**
 
-Web performans testinde tam olarak kaydedilmiş Düşünme süreleri kullanılır. Tam olarak kayıtlı Web performans testlerini çalıştırma birden çok kullanıcının benzetimini yapar. Bir yük testi benzetimini yapar çünkü aynı kullanarak birden çok kullanıcı zaman bir istemeyiz yük düzeni eşitlenmiş sanal kullanıcı oluşturabilir düşünün.
+Web performans testinde tam olarak kaydedilmiş Düşünme süreleri kullanılır. Tam olarak kayıtlı web performans testlerini çalıştırma birden çok kullanıcının benzetimini yapar. Bir yük testi benzetimini yapar çünkü aynı kullanarak birden çok kullanıcı zaman bir istemeyiz yük düzeni eşitlenmiş sanal kullanıcı oluşturabilir düşünün.
 
 **Normal dağıtım**
 

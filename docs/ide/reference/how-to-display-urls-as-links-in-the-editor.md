@@ -14,43 +14,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f071a99c7a5c854fdada3aef2a379056fa17b339
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448058"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177717"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide URL'leri Bağlantılar Olarak Görüntüleme
-Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod düzenleyicisinde kodunuzda etkin bağlantılar olarak tercih. Bu özellik, URL'ler kullandığınızda:
 
--   Altı çizili görünür.
+Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod Düzenleyicisi kodunuzda etkin bağlantı olarak seçebilirsiniz. Bu özellik, URL'leri kullandığınızda:
 
--   Görüntü bir **araç ipucu** getirdiğinizde üzerlerine.
+-   Altı çizili olarak görünür.
 
--   Ne zaman gösterilen Web sitesini açın girişimi, **CTRL** + sol bağlantıyı. Varsayılan olarak, Web sitesi iç Web tarayıcısında görüntülenir.
+-   Görünen bir **araç ipucu** geldiğinizde bunlar üzerinde.
+
+-   Ne zaman gösterilen Web sitesi açmayı deneyin, **Ctrl**+**tıklayın** bağlantısına. Varsayılan olarak, Web sitesinin iç web tarayıcısında görüntülenir.
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="procedure"></a>Yordam
 
-#### <a name="to-display-urls-as-links"></a>URL'leri bağlantılar olarak görüntülemek için
+### <a name="to-display-urls-as-links"></a>URL'leri bağlantı olarak görüntülenecek
 
-1.  Üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.
+1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
-2.  Tıklatın **metin düzenleyici**.
+2.  Tıklayın **metin düzenleyici**.
 
-3.  Yalnızca bir dil seçeneği değiştirmek için bu dil için klasörünü genişletin ve seçin **genel**.
+3.  Yalnızca bir dil seçeneğini değiştirmek için bu dil için klasörü genişletin ve seçin **genel**.
 
      —veya—
 
-     Tüm diller için seçeneği değiştirmek için Genişlet **tüm diller** klasör ve **genel**.
+     Tüm diller için seçeneği değiştirmek için genişletme **tüm diller** klasörü seçin **genel**.
 
-4.  Altında **görüntü**seçin **etkinleştirmek tek tıklamayla URL Gezinti**.
+4.  Altında **görünen**seçin **etkinleştirme tek tıkla URL gezinmesini**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)
 - [Metin Düzenleyici Seçenekleri iletişim Kutusu](../../ide/reference/text-editor-options-dialog-box.md)

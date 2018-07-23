@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testleri için sanal kullanıcı etkinlik grafiğini kullanarak
+title: Visual Studio'da yük testleri için sanal kullanıcı aktivite Grafiği'ni kullanma
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,30 +11,30 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976438"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179836"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>İzlenecek yol: Sorunları Yalıtmak İçin Sanal Kullanıcı Etkinliği Grafiğini Kullanma
 
-Bu kılavuzda, Sanal Kullanıcı Etkinlik Grafiği yük testinizi çalıştıran tek tek sanal kullanıcılar için oluşmuş hataları yalıtmak için nasıl kullanılacağını öğreneceksiniz.
+Bu izlenecek yolda, yük testinizi çalıştıran tek tek sanal kullanıcı için oluşan hataları yalıtmak için sanal kullanıcı aktivite grafiği kullanmayı öğreneceksiniz.
 
- Sanal Kullanıcı Etkinlik Grafiği yük testi ile ilişkili sanal kullanıcı etkinliğini görmenize olanak sağlar. Grafik her satırda tek bir sanal kullanıcı temsil eder. Sanal Kullanıcı Etkinlik Grafiği tam olarak ne her sanal kullanıcı test sırasında yürütülmekte olan gösterir. Bu, kullanıcı etkinlik düzenlerini görerek performans sorunlarını belirlemek, yük desenleri, yavaş veya başarısız testleri ilişkilendirmenizi ve diğer sanal kullanıcı etkinliği ile ilgili istekleri görmenizi sağlar. Sanal Kullanıcı Etkinlik Grafiği çalışması bittikten sonra yalnızca yükleme işleminden sonra kullanılabilir.
+ Sanal kullanıcı aktivite grafiği yük testi ile ilişkili olan sanal kullanıcı etkinliğini görselleştirmenize olanak tanır. Grafikteki her satırın tek bir sanal kullanıcı temsil eder. Sanal kullanıcı aktivite grafiği, tam olarak neyin test sırasında her sanal kullanıcı yürütülmüş gösterir. Bu, kullanıcı etkinlik düzenlerini görerek performans sorunlarını yalıtmak, yük düzenleri, yavaş veya başarısız testleri ilişkilendirin ve diğer sanal kullanıcı etkinliğini isteklerle sağlar. Sanal kullanıcı aktivite grafiği çalışması bittikten sonra yalnızca yüklemeden sonra kullanılabilir.
 
- Bu kılavuzda, aşağıdaki görevleri tamamlar:
+ Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
 -   Sanal Kullanıcı Aktivite Grafiği ile ilişkili aşağıdaki araçları nasıl kullanacağınız hakkında bilgi edinin:
 
-    -   Kullanım **zaman aralığına Yakınlaştır** aracı grafiğin analiz etmek istediğiniz belirli bir süre belirtin.
+    -   Kullanım **zaman dönemini Yakınlaştır** aracı analiz etmek istediğiniz grafik üzerinde belirli bir süre belirtin.
 
-    -   Kullanım **ayrıntıları gösterge** paneli ve **sonuçlarını filtreleme** sorunlarını gidermeye yardımcı olmak için grafiğe filtre uygulamak için Denetim Masası,.
+    -   Kullanım **ayrıntı göstergesi** paneli ve **sonuçlarını filtreleme** sorunlarını gidermeye yardımcı olmak için grafiğe filtre uygulamak için paneli.
 
 -   Belirli bir sanal kullanıcı için oluşan bir hatayı analiz etmek ve sorunlu hata türü ayrıntılarını görüntülemek için Sanal Kullanıcı Aktivite Grafiği'ni kullanın.
 
- Daha fazla bilgi için bkz: [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+ Daha fazla bilgi için [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -42,57 +42,57 @@ Bu kılavuzda, Sanal Kullanıcı Etkinlik Grafiği yük testinizi çalıştıran
 
 -   Bu yordamları tamamlayın:
 
-    -   [Kayıt ve bir web performans testi](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef).
+    -   [Bir web performans testini kaydetme ve çalıştırma](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef).
 
-    -   [Oluşturma ve bir yük testi çalıştırma](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
+    -   [Bir yük testi oluşturma ve çalıştırma](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
 
-## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Önceki izlenecek yollarda oluşturulmuş ColorWebApp çözümünü açın
+## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Önceki İzlenecek içinde oluşturulmuş ColorWebApp çözümünü açın
 
 ### <a name="open-the-solution"></a>Çözümü açın
 
 1.  Visual Studio'yu başlatın.
 
-2.  LoadTest1.loadtest öğesini içeren ColorWebApp çözümünü açın. Bu yük testi gerçekleştirme adımları bu konunun önkoşullar bölümünde başında listelenen üç izlenecek kaynaklanır.
+2.  LoadTest1.loadtest içeren ColorWebApp çözümünü açın. Bu yük testi sonuçları bu konunun önkoşullar bölümünde listelenen üç izlenecek adımlarda yürütülmesi.
 
-     Bu kılavuzda kalan adımlar ColorWebApp, ColorWebAppTest.webtest olarak adlandırılan bir Web performans testi ve LoadTest1.loadtest olarak adlandırılan bir yük testi adlı bir Web uygulaması varsayılır.
+     Bu kılavuzda kalan adımlarda ColorWebAppTest.webtest olarak adlandırılan bir web performans testi ve LoadTest1.loadtest adlı bir yük testi ColorWebApp olarak adlandırılan bir web uygulaması varsayılır.
 
 ## <a name="run-the-load-test"></a>Yük testi çalıştırma
- Sanal Kullanıcı Etkinlik verilerini toplamak üzere yük testlerini çalıştırın.
+ Sanal kullanıcı etkinliği verilerini toplamak için yük testi çalıştırın.
 
-### <a name="run-the-load-test-to-collect-virtual-user-activity-data"></a>Sanal Kullanıcı Etkinlik verilerini toplamak için yük testi çalıştırma
+### <a name="run-the-load-test-to-collect-virtual-user-activity-data"></a>Sanal kullanıcı etkinliği verilerini toplamak için yük testi çalıştırma
 
--   Yük Testi Düzenleyicisi'nde seçin **çalıştırmak** araç çubuğunda. LoadTest1 çalışmaya başlar.
+-   Yük Testi Düzenleyicisi'nde seçin **çalıştırma** araç çubuğunda. LoadTest1 çalışmaya başlar.
 
-## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Sanal Kullanıcı Etkinlik Grafiği sorunlarını yalıtma
+## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Sanal kullanıcı etkinlik grafiğini sorunları yalıtmak
 
-Yük testlerini çalıştırın ve sanal kullanıcı etkinlik verileri toplanan sonra verileri yük testi sonuçlarında yük kullanarak görüntüleyebileceğiniz Testi Çözümleyicisinin Ayrıntılar sanal kullanıcı etkinliği grafiğini görüntüleyin. Ayrıca, Sanal Kullanıcı Etkinlik Grafiği yük testlerini performans sorunları gidermeye yardımcı olmak için kullanabilirsiniz.
+Yük testinizi çalıştırın ve sanal kullanıcı etkinliği verilerini toplanan sonra veriler yük testi sonuçlarında yükü kullanarak görüntüleyebileceğiniz sanal kullanıcı etkinliği grafiğini Testi Çözümleyicisi'nin ayrıntılarını görüntüleyin. Ayrıca, yük testi performans sorunları gidermeye yardımcı olmak için sanal kullanıcı aktivite grafiği kullanabilirsiniz.
 
-### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Yük testi sonuçlarında Sanal Kullanıcı Etkinlik Grafiği kullanmak için
+### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Yük testi sonuçlarında sanal kullanıcı aktivite Grafiği'ni kullanmak için
 
-1.  Yükleme sonrası test tamamlandıktan çalıştıran, yük testi sonuçlarını Özet sayfası Yük Testi Çözümleyicisi'nde görüntülenir. Seçin **grafikleri** araç çubuğunda.
+1.  Sonra Yük testi bittikten çalıştıran, Yük Testi Çözümleyicisi'nde yük testi sonuçları Özet sayfası görüntülenir. Seçin **grafikleri** araç çubuğunda.
 
-     Grafikler görünümünde görüntülenir.
+     Graflar görünümü görüntülenir.
 
-2.  Üzerinde **sayfa yanıt süresi** grafik, eşik ihlali simgelerinden birini sağ tıklatın ve seçin **Kullanıcı detayına git**.
+2.  Üzerinde **sayfa yanıt süresi** grafiği, bir eşik ihlali simgelerinin sağ tıklayıp **kullanıcı ayrıntılarına Git**.
 
     > [!NOTE]
-    > Kullanabileceğiniz **ayrıntıları** kullanıcı etkinliği grafiğini çok açmak için Yük Testi Düzenleyicisi araç çubuğu düğmesi. Ancak, kullanırsanız **Kullanıcı detayına git** seçeneği, sanal kullanıcı etkinlik grafiği otomatik olarak yakınlaştırma grafiğe sağ tıklandığında test bölümüne.
+    > Kullanabileceğiniz **ayrıntıları** kullanıcı etkinlik grafiğini çok açmak için Yük Testi Düzenleyicisi'nin araç çubuğu düğmesi. Ancak, kullanırsanız **kullanıcı ayrıntılarına Git** seçeneği, sanal kullanıcı aktivite grafiği otomatik olarak büyütme grafiğe sağ tıklanan test yoluna.
 
-     Ayrıntılar görünümü görüntülenir **Sanal Kullanıcı Etkinlik Grafiği** Eşik ihlallerini gerçekleştiği zaman dilimi üzerine odaklanan.
+     Ayrıntılar görünümü görüntülenir **sanal kullanıcı aktivite grafiği** eşik ihlallerinin gerçekleştiği zaman dilimi üzerine odaklanan.
 
-     Y ekseninde yatay çizimler ayrı ayrı sanal kullanıcıları temsil eder. X ekseni yük testi için zaman çizelgesi görüntüler.
+     Y ekseninde, tek tek sanal kullanıcıların yatay çizimler temsil eder. X ekseni yük testi çalışması için zaman çizelgesi görüntüler.
 
-3.  İçinde **zaman aralığına Yakınlaştır** aracı aşağıdaki **Sanal Kullanıcı Etkinlik Grafiği**, sol ayarlayın ve her ikisi de kadar sağ kaydırıcılar eşik ihlali simgesine kapatın. Bu zaman ölçeği değiştirir **Sanal Kullanıcı Etkinlik Grafiği**
+3.  İçinde **zaman dönemini Yakınlaştır** aracı aşağıdaki **sanal kullanıcı aktivite grafiği**sol ayarlayın ve her ikisi de kadar doğru kaydırıcıları eşik ihlali simgesine kapatın. Bu içindeki zaman ölçeğini değiştirir **sanal kullanıcı aktivite grafiği**
 
-4.  İçinde **ayrıntıları gösterge**, onay kutusunu seçin **(hataları vurgula)**. Eşik ihlali neden olan sanal kullanıcının vurgulanmış olduğuna dikkat edin.
+4.  İçinde **ayrıntı göstergesi**, onay kutusunu seçin **(hataları vurgula)**. Eşik ihlali nedeniyle sanal kullanıcı vurgulandığından emin olun.
 
-5.  İçinde **sonuçlarını filtreleme** paneli, onay kutularını temizleyin **Göster başarılı sonuçları** ve **HTTP hatası** ancak bırakın **ValidationRuleError**onay kutusu seçili.
+5.  İçinde **sonuçlarını filtreleme** panelinde, onay kutularını temizleyin **başarılı sonuçları göster** ve **HTTP hatası** ancak **ValidationRuleError**onay kutusu seçili.
 
-     **Sanal Kullanıcı Etkinlik Grafiği** önceki yönergelerde yapılandırılmış eşik ihlali tarafından belirtilen Red.aspx sayfasında 3 saniyeden fazla harcanan sanal kullanıcıları görüntüler.
+     **Sanal kullanıcı aktivite grafiği** 3 saniyeden daha önceki yönergelerde yapılandırılmış eşik ihlali tarafından belirtilen Red.aspx sayfasında harcadığı sanal kullanıcıları görüntüler.
 
-6.  Fare işaretçisini eşik ihlali için doğrulama kuralı hatasıyla sanal kullanıcıyı temsil eden yatay çizgi üzerine bırakın.
+6.  Fare işaretçisini eşik ihlali için doğrulama kuralı hatası sanal kullanıcıyla temsil eden yatay çizgi üzerine bırakın.
 
-7.  Araç İpucu ile aşağıdaki bilgiler görüntülenir:
+7.  Aşağıdaki bilgileri içeren bir araç ipucu görüntülenir:
 
     -   **Kullanıcı Kimliği**
 
@@ -104,24 +104,24 @@ Yük testlerini çalıştırın ve sanal kullanıcı etkinlik verileri toplanan 
 
     -   **Ağ**
 
-    -   **Başlangıç zamanı**
+    -   **Başlangıç saati**
 
-    -   **Süre**
+    -   **Süresi**
 
     -   **Aracı**
 
     -   **Test günlüğü**
 
-8.  Dikkat **Test günlük** bir bağlantıdır. Seçin **Test günlük** bağlantı.
+8.  Dikkat **Test günlüğü** bir bağlantıdır. Seçin **Test günlüğü** bağlantı.
 
-9. Günlükle ilişkili ColorWebTest Web performans testine Web Performans Testi Sonuçları Görüntüleyicisi'nde açar. Eşik ihlalleri oluştuğu yalıtmak bu sağlar.
+9. Günlükle ilişkili ColorWebTest öğesini web performans testi, Web Performans Test Sonuçları Görüntüleyicisi'nde açılır. Eşik ihlallerinin gerçekleştiği yalıtmanıza olanak sağlar.
 
-     Çeşitli ayarları hem de kullanabilirsiniz **ayrıntıları gösterge** ve **sonuçlarını filtreleme** performans sorunlarını ve yükleme testlerindeki hataları yalıtmaya yardımcı olmak için paneller. Bu ayarlarla deneme ve **zaman aralığına Yakınlaştır** içinde sanal kullanıcı verilerini nasıl temsil edildiğini görmek için aracı **Sanal Kullanıcı Etkinlik Grafiği**.
+     Çeşitli ayarları hem de kullanabilirsiniz **ayrıntı göstergesi** ve **sonuçlarını filtreleme** panelleri, performans sorunlarını ve yük testlerinizi hataları yalıtmaya yardımcı olmak için. Bu ayarlar ile deneme ve **zaman dönemini Yakınlaştır** içinde sanal kullanıcı verilerinin nasıl temsil edildiğini görmek için aracı **sanal kullanıcı aktivite grafiği**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Test denetleyicileri ve test aracıları](configure-test-agents-and-controllers-for-load-tests.md)
-- [Nasıl yapılır: Dağıtılmış yük testi için Test ayarı oluşturma](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Nasıl yapılır: Dağıtılmış yük testi için bir Test ayarı oluşturun](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Test aracılarını yükleme ve yapılandırma](../test/lab-management/install-configure-test-agents.md)
 - [Test ayarlarını kullanarak tanılama bilgileri Topla](../test/collect-diagnostic-information-using-test-settings.md)

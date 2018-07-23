@@ -1,5 +1,5 @@
 ---
-title: Yük testi çalışma ayarı Visual Studio'da Test yineleme sayısını belirtin
+title: Bir yük testi çalışma ayarı Visual Studio'da Test yineleme sayısını belirtin
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,38 +11,38 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ec11561a3ebe084517d1a30266f9caa6491544a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c9122ec3f6eaed156c48f6fd31b4cbbed32292b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965568"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179654"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Nasıl yapılır: Yük Testi Çalışma Ayarlarında Test Yineleme Sayısını Belirtme
 
-Yük testi ile oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** senaryoları özelliklerini test gereksinimlerini ve hedeflerinizi karşılayacak şekilde değiştirmek için. Daha fazla bilgi için bkz: [izlenecek yol: oluşturma ve bir yük testi çalıştırma](../test/walkthrough-create-and-run-a-load-test.md).
+İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için. Daha fazla bilgi için [izlenecek yol: bir yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md).
 
-Kullanarak **Yük Testi Düzenleyicisi**, düzenleyebileceğiniz **Test Yinelemeleri** Özellikler penceresinde çalışma ayarları değerinin özelliği. **Test Yinelemeleri** özelliği, tüm Web performansı ve birim testleri tüm senaryolarda kullanarak yük testi çalıştırmak için yineleme sayısını belirtir **Yük Testi Düzenleyicisi**.
+Kullanarak **Yük Testi Düzenleyicisi**, düzenleyebileceğiniz **Test Yinelemeleri** Özellikler penceresindeki bir çalışma ayarları değerinin özelliği. **Test Yinelemeleri** özelliği, tüm web başarım ve birim testleri tüm senaryolarda kullanarak bir yük testi çalıştırmak için yineleme sayısını belirtir **Yük Testi Düzenleyicisi**.
 
 > [!NOTE]
-> Çalışma ayarları özelliklerini ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).
+> Çalıştırma ayarları özellikleri ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).
 
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Bir çalışma ayarında test yineleme sayısını belirtmek için
 
 1.  Bir yük testi açın.
 
-     **Yük Testi Düzenleyicisi** görünür ve yük testi ağacı görüntüler.
+     **Yük Testi Düzenleyicisi** görünür ve yük testi ağacında görüntüler.
 
-2.  Ağaç, test yük **çalıştırma ayarları** klasörü, bir çalışma ayarı seçin.
+2.  Ağaç, yük test **çalıştırma ayarları** klasör, bir çalışma ayarı seçin.
 
-3.  Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini** yük ayarın kategoriler ve Özellikler çalışma görüntülemek için.
+3.  Üzerinde **görünümü** menüsünde **Özellikler penceresi** yük ayarın kategoriler ve Özellikler çalışma görüntülemek için.
 
-4.  Ayarlama **Test Yinelemeleri Kullan** özelliğine **doğru**.
+4.  Ayarlama **Test Yinelemeleri Kullan** özelliğini **True**.
 
-5.  İçinde **Test Yinelemeleri** özelliği, yük testi sırasında çalıştırmak için test yineleme sayısını belirten bir sayı girin.
+5.  İçinde **Test Yinelemeleri** özelliği, yük testi sırasında çalıştırılacak test yineleme sayısını gösteren bir sayı girin.
 
-6.  Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından yeni kullanarak yük testlerini çalıştırabilirsiniz **Test Yinelemeleri** değeri.
+6.  Özelliği değiştirmeyi bitirdikten sonra seçin **Kaydet** üzerinde **dosya** menüsü. Daha sonra yeni kullanarak yük testlerini çalıştırabilirsiniz **Test Yinelemeleri** değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -9,12 +9,12 @@ description: Yöneticiler abonelere lisansları nasıl atayabilirsiniz öğrenin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e43e9050e2b021025ed4ae104f4345bce6e8eee3
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131937"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178406"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalında lisansları atama
 
@@ -24,7 +24,7 @@ Kullanıcı grupları için abonelikler için saat veya kullanım atayabilirsini
 
 ## <a name="individual-assignments"></a>Her bir atama
 
-Abonelik avantajları erişebilmesi için yeni bir kullanıcı için bir Visual Studio abonelikleri lisansı atamak açıklanmıştır.
+Abonelik avantajları erişebilmesi için yeni bir kullanıcı için bir Visual Studio Abonelik lisansı atama aşağıda verilmiştir.
 
 1. Oturum [Yönetici portalı](https://manage.visualstudio.com).
 

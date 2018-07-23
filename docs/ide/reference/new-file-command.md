@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a519de555f35df4fac91a9960993a0f163c4de5a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8b4d68f53343b2523347f89977fe2bd602d64742
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704752"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179963"
 ---
 # <a name="new-file-command"></a>Yeni Dosya Komutu
-Yeni bir dosya oluşturur ve açar. Dosya çeşitli dosyalar klasörü altında görünür.
+Yeni bir dosya oluşturur ve onu açar. Dosyanın çeşitli dosyalar klasörü altında görünür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,37 +34,37 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ## <a name="arguments"></a>Arguments
  `filename`
 
- İsteğe bağlı. Dosya adı. Hiçbir adı belirtilirse, varsayılan adı sağlanır. Hiçbir şablon adı listeleniyorsa, bir metin dosyası oluşturulur.
+ İsteğe bağlı. Dosyanın adı. Adı sağlanmazsa, varsayılan adı sağlanır. Hiçbir şablon adı listede yoksa, bir metin dosyası oluşturulur.
 
 ## <a name="switches"></a>Anahtarlar
  / t:`templatename`
 
  İsteğe bağlı. Oluşturulacak dosya türünü belirtir.
 
- / T:`templatename` bağımsız değişkeni sözdizimi yeni dosya iletişim kutusunda bulunan bilgileri yansıtır. Ardından bir eğik kategori adı girin (`\`) ve şablon adı ve tüm dizeyi tırnak işaretleri içine alın.
+ / T:`templatename` bağımsız değişkeni sözdizimini yeni dosya iletişim kutusunda bulunan bilgileri yansıtır. Ardından bir eğik kategori adı girin (`\`) ve şablon adı ve tüm dizeyi tırnak içine alın.
 
- Örneğin, yeni bir oluşturmak için [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kaynak dosyasını, / t: şunları girersiniz`templatename` bağımsız değişkeni.
+ Örneğin, yeni bir [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kaynak dosyası, / t: şunları girersiniz`templatename` bağımsız değişken.
 
 ```cmd
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
- Yukarıdaki örnekte Visual C++ kategorisinde C++ dosya şablonu altındadır gösterir **yeni dosya** iletişim kutusu.
+ Yukarıdaki örnekte C++ dosyası şablonu Visual C++ kategorisi altında bulunduğunu gösterir **yeni dosya** iletişim kutusu.
 
  / e:`editorname`
 
- İsteğe bağlı. Dosya açılacak düzenleyicinin adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı sağlanan **birlikte Aç** iletişim kutusu görüntülenir.
+ İsteğe bağlı. Dosyanın açılmasını düzenleyicinin adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı verilmesi, **birlikte Aç** iletişim kutusu görüntülenir.
 
- / E:`editorname` bağımsız değişkeni açık ile iletişim kutusunda tırnak işaretleri içine göründükleri gibi Düzenleyici adları söz dizimini kullanır.
+ / E:`editorname` bağımsız değişkeni sözdizimini açık ile iletişim kutusunda tırnak işaretleri arasına göründükleri gibi Düzenleyicisi adları kullanır.
 
- Örneğin, bir dosyayı kaynak kod düzenleyicisinde açmak için aşağıdaki / e: için girersiniz`editorname` bağımsız değişkeni.
+ Örneğin, bir dosya kaynak kod Düzenleyicisi'nde açmak için / e: şunları girersiniz`editorname` bağımsız değişken.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Örnek
- Bu örnekte yeni bir Web sayfası "test1.htm" oluşturur ve Kaynak Kod Düzenleyicisi'nde açar.
+ Bu örnek, yeni bir web sayfası "test1.htm" oluşturur ve Kaynak Kod Düzenleyicisi'nde açılır.
 
 ```cmd
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"

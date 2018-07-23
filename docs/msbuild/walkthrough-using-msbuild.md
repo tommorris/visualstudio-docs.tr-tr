@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b9914eae9a260af26d9e1a499180d0cf7f73d1
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152545"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178524"
 ---
-# <a name="walkthrough-using-msbuild"></a>İzlenecek Yol: MSBuild Kullanma
+# <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek yol MSBuild'ın yapı taşlarını tanıtır ve MSBuild projelerini nasıl yazacağınızı, değiştireceğinizi ve hatalarını ayıklayacağınızı gösterir. Şu konularda bilgi edineceksiniz:
 
 -   Bir proje dosyasını oluşturma ve işleme.

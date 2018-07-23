@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e02be3774d0da28b96af0fb14ef64fd4bec6456e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080730"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180278"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: Projeler ve çözümler
 
@@ -104,7 +104,7 @@ Boş bir proje sahibiz. Bir kod dosyası ekleyelim.
 
 ## <a name="add-a-second-project"></a>İkinci bir proje ekleyin
 
-Birden fazla proje ve genellikle bu projeler başvuru birbirini içeren çözümler için yaygın bir durumdur. Çözümdeki bazı projeler sınıf kitaplıkları, yürütülebilir bazı uygulamalar olabilir ve bazı Birim testi projelerini veya web sitesi olabilir.
+Birden fazla proje ve genellikle bu projeler başvuru birbirini içeren çözümler için yaygın bir durumdur. Çözümdeki bazı projeler sınıf kitaplıkları, yürütülebilir bazı uygulamalar olabilir ve bazı Birim testi projelerini veya Web sitesi olabilir.
 
 Birim testi projesi, çözüm ekleyelim. Biz bir ek kod dosyası projeye eklemek zorunda kalmamak için bu kez proje şablonundan başlayacağız.
 

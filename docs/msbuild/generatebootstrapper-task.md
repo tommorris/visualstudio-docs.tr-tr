@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a81b02d4179c58c63c1429aa2e522bb39bb9aaf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945942"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177743"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper görevi
 Algılama, indirmek ve bir uygulama ve önkoşulları yüklemek için otomatik bir yol sağlar. Uygulama yaparak tüm bileşenler için ayrı yükleyiciler tümleştiren tek bir yükleyici olarak görev yapar.  
@@ -86,7 +86,7 @@ Algılama, indirmek ve bir uygulama ve önkoşulları yüklemek için otomatik b
   
      İsteğe bağlı `String` çıkış parametresi.  
   
-     Setup.exe yerleşik konumunu belirtir  
+     Yerleşik konumunu belirtir *setup.exe*  
   
 -   `ComponentsLocation`  
   

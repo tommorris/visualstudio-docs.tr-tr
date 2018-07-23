@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0bf21ec99bd7b98ce90cd49c3edf5e3738c25b1
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978404"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178640"
 ---
 # <a name="template-parameters"></a>Şablon parametreleri
 
@@ -64,7 +64,7 @@ Aşağıdaki tabloda, herhangi bir şablon kullanılabilecek ayırtılmış şab
 |SpecificSolutionName|Çözüm adı. "Çözüm dizini oluşturma" işaretlendiğinde `SpecificSolutionName` çözüm adına sahip. "Çözüm dizini oluşturma" işaretli olduğunda `SpecificSolutionName` boştur.|
 |USERDOMAIN|Geçerli kullanıcı etki alanı.|
 |Kullanıcı adı|Geçerli kullanıcı adı.|
-|webnamespace|Geçerli web sitesinin adı. Bu parametre, web formu şablonda benzersiz sınıf isimleri güvence altına almak için kullanılır. Web sitesi web sunucusunun kök dizininde ise, bu şablon parametresi web sunucusunun kök dizinine çözümler.|
+|webnamespace|Geçerli Web sitesinin adı. Bu parametre, web formu şablonda benzersiz sınıf isimleri güvence altına almak için kullanılır. Web sitesi web sunucusunun kök dizininde ise, bu şablon parametresi web sunucusunun kök dizinine çözümler.|
 |Yıl|YYYY biçiminde geçerli yıl.|
 
 > [!NOTE]

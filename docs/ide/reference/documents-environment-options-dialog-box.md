@@ -34,46 +34,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb14ae44dd137d7bf600cec505fe17fa6e105a42
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ceccf3c051e3c85fa4b8e64ecbc33c388e9a884f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948983"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178188"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Belgeler, Ortam, Seçenekler İletişim Kutusu
-Bu sayfanın kullanmak **seçenekleri** tümleşik geliştirme ortamı (IDE) belgelerde görüntülenmesini denetlemek ve dış değişiklikleri belgeleri ve dosyaları yönetmek için iletişim kutusu. Tıklatarak bu iletişim kutusuna erişebilirsiniz **seçenekleri** üzerinde **Araçları** menüsüne ve ardından seçerek **belgeleri** içinde **ortam** düğümü. Varsa **belgeleri** listesinde select görünmez **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
+Bu sayfanın kullanın **seçenekleri** tümleşik geliştirme ortamında (IDE) belgeler görüntülenmesini denetlemek ve dış değişiklikler belgelerinizi ve dosyalarınızı yönetmek için iletişim kutusu. Bu iletişim kutusuna tıklayarak erişebilirsiniz **seçenekleri** üzerinde **Araçları** menüsüne ve ardından seçerek **belgeleri** içinde **ortam** düğümü. Varsa **belgeleri** listesinde seçin görünmüyor **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
 
 > [!NOTE]
-> İletişim kutuları, adları ve menü komutlarını, gördüğünüz konumlarını Seçenekleri Yardımı'nda etkin ayarlarınıza veya sürümünüze bağlı olarak açıklanan nedir alanından farklı olabilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 
- **Geçerli belge penceresine kaydettiyseniz yeniden** kaydedildi ve yeni bir belge aynı pencerede açar, seçili olduğunda, geçerli belgenizi kapatır. Geçerli belgenizi kaydedilmedi, açık kalır ve yeni belge ayrı bir pencerede açılır. Bu seçeneği temizlenirse, yeni belgeler her zaman ayrı pencerelerde açılır.
+ **Kaydedilmiş ise mevcut belge penceresini yeniden** kaydedildi ve yeni bir belge aynı pencerede açılır seçildiğinde, geçerli belge kapatır. Geçerli belgeyi kaydedilmemiş açık kalır ve yeni belge ayrı bir pencerede açılır. Bu seçenek işaretli değilse, yeni belgeler, her zaman ayrı bir pencerede açabilirsiniz.
 
- Çoklu Belge Kesme gerçekleştirmek ve yapıştırma işlemlerini seyrek ve açık belgeler ve windows çalışma alanınıza sayısını en aza indirmek istiyorsanız bu seçeneği deneyin.
+ Çok Belgeli Kes'i gerçekleştirme ve işlemleri nadiren yapıştırın ve açık belgeler veya çalışma alanınızı windows sayısını en aza indirmek istiyorsanız bu seçeneği deneyin.
 
- **Dosya ortamı dışında değiştirildi algılayabilir** bu seçenek belirlendiğinde, bir ileti hemen açık bir dosyayı IDE dışında bir düzenleyici tarafından yapılan değişiklikleri bildirir. İleti, depolama biriminden dosyayı yeniden olanak tanır.
+ **Dosya ortamı dışında değiştirildiğinde Algıla** bu seçenek belirlendiğinde, bir ileti hemen açık bir dosyayı IDE dışında bir düzenleyici tarafından yapılan değişiklikleri bildirir. İleti depolama biriminden dosyayı yeniden olanak sağlar.
 
- **Otomatik değişiklikleri kaydettiyseniz yük** olduğunda **algılamak dosya ortamı dışında değiştirildiğinde** seçili ve IDE değiştiğinde bir uyarı iletisi IDE dışında açık bir dosyanın varsayılan olarak oluşturulur. Bu seçenek etkinleştirilirse, herhangi bir uyarı görünür ve dış değişiklikleri almak için IDE'yi belgeyi yeniden yüklendi.
+ **Otomatik değişiklik kaydettiyseniz Yükle** olduğunda **dosya ortamı dışında değiştirildiğinde Algıla** seçili ve açık bir dosyayı bir uyarı iletisi IDE dışında IDE değişiklikleri varsayılan olarak oluşturulur. Bu seçenek etkinleştirilirse, herhangi bir uyarı görünür ve belge dış değişiklikleri almak için IDE'de yüklenir.
 
- **Salt okunur dosya düzenleme izni; ne zaman uyar kaydetmeyi denediğinizde** bu seçenek etkinleştirildiğinde açın ve salt okunur bir dosyayı düzenleyin. İşiniz bittiğinde, kullanmalısınız **Kaydet**kaydını yaptığınız değişiklikleri kaydetmek istiyorsanız, yeni bir ad tarafından dosyayı kaydetmek için komutu.
+ **Salt okunur dosyaları düzenlemeye izin ver; uyar kaydetme girişiminde** bu seçenek etkinleştirildiğinde açın ve bir salt okunur dosyasını düzenleyin. İşlemi tamamladığınızda, kullanmalısınız **Kaydet**kaydını yaptığınız değişiklikleri kaydetmek istiyorsanız, dosyayı yeni bir adla kaydetmek için komutu.
 
- **Etkin belge dizini kullanarak dosya Aç** seçildiğinde bu seçenek, belirtir **açık dosya** etkin belgeyi dizin iletişim kutusunu görüntüler. Bu seçenek temizlendiğinde **Dosya Aç** bir dosyayı açmak için en son kullanılan dizin iletişim kutusunu görüntüler.
+ **Etkin belge dizini kullanarak dosya Aç** seçildiğinde bu seçenek, belirtir **Dosya Aç** etkin belgeyi dizinden iletişim kutusu görüntüler. Bu seçenek temizlendiğinde **Dosya Aç** bir dosyayı açmak için en son kullanılan dizin iletişim kutusunu görüntüler.
 
- **Tutarlı satır sonları yükü denetle** dosyasındaki satır sonları tarama ve satır sonları nasıl biçimlendirileceğini içinde tutarsızlıklar algılanırsa, bir ileti kutusu görüntüleme Düzenleyicisi sağlamak için bu seçeneği belirleyin.
+ **Tutarlı satır sonlarını denetle** Düzenleyici bir dosyada satır sonları tarama ve satır sonlarını nasıl biçimlendirileceğini içinde tutarsızlıklar algılanırsa bir ileti kutusu görüntülemek için bu seçeneği belirleyin.
 
- **Genel Geri Al değişiklik yaptığınızda görünen uyarı düzenlenebilir dosyaları** bir ileti görüntülemek için bu seçeneği belirleyin kutusunu **genel Geri Al** komutu geri alacaktır sonra değiştirilen dosyalarda yapılan düzenleme değişiklikleri yeniden düzenleme işlemi. Bir dosya öncesi yeniden düzenleme durumuna döndürme sonradan dosyasında yapılan değişiklikleri atmak.
+ **Genel geri al işlemi görünen uyarı düzenlenmiş dosyaları** bir ileti görüntülemek için bu seçeneği kutusunu **genel Geri Al** komut geri sonra değiştirilen dosyalarda yapılan düzenleme değişiklikleri yeniden düzenleme işlemi. Bir dosya öncesi yeniden düzenleme durumuna geri döndürme dosyasında yapılan sonraki değişikliklerin at.
 
- **Çeşitli dosyalar Çözüm Gezgini'nde Göster** görüntülemek için bu seçeneği belirleyin **çeşitli dosyalar** düğümünde **Çözüm Gezgini**. Çeşitli dosyalar dosyalardır proje ya da çözüm ile ilişkili değildir ancak görüntülenebilir **Çözüm Gezgini** size kolaylık sağlamak için.
+ **Çözüm Gezgini'nde diğer dosyaları göster** görüntülemek için bu seçeneği belirleyin **çeşitli dosyalar** düğümünde **Çözüm Gezgini**. Çeşitli dosyalar bir proje veya çözüm ile ilişkili olmayan ancak görünebilen dosyalarıdır **Çözüm Gezgini** size kolaylık sağlamak için.
 
 > [!NOTE]
-> Etkinleştirmek için bu seçeneği belirleyin **tarayıcıda görüntüle** komutunu **dosya** etkin Web uygulamasında dahil edilmeyen Web belgelerini menüsü.
+> Etkinleştirmek için bu seçeneği belirleyin **tarayıcıda görüntüle** komutunu **dosya** etkin web uygulamasında yer almayan web belgeler için menü.
 
- **\<** *n* **> çeşitli dosyalar projede kaydedilen öğeleri** sızmak dosyası sayısını belirtir **MiscellaneousFiles** klasöründe **Çözüm Gezgini**. Artık bir düzenleyicide açık olsalar bile, bu dosyalar listelenir. Bir tam sayı 0'dan 256 belirtebilirsiniz. Varsayılan numarası 0'dır.
+ **\<** *n* **> diğer dosyalar projesinde kaydedilmiş öğeler** sızmak için dosya sayısını belirtir **MiscellaneousFiles** klasörü **Çözüm Gezgini**. Artık bir düzenleyicide açık olsalar bile bu dosyalar listelenir. Bir tam sayı 0'dan 256 belirtebilirsiniz. Varsayılan sayı 0'dır.
 
- Bu seçenek 5 olarak ayarlayın ve tüm 10 dosyaları kapattığınızda 10 çeşitli dosyalar açık, varsa, örneğin, ilk 5 hala gösterilecek **çeşitli dosyalar** klasör.
+ Bu seçenek 5 ayarlanmış ve 10 dosyanın tamamı kapattığınızda, 10 çeşitli dosyalar açık, varsa, örneğin, ilk 5 hala gösterilecek **çeşitli dosyalar** klasör.
 
- **Veri kod sayfasında kaydedildiğinde Unicode olarak belgeleri kaydetmek** Unicode olarak varsayılan olarak kaydedilmesi için seçilen kod sayfası ile uyumsuz bilgilerini içeren dosyalar neden için bu seçeneği belirleyin.
+ **Veri kod sayfasına kaydedildiğinde belgeleri Unicode olarak Kaydet** neden Unicode olarak varsayılan olarak kaydedilmesi için seçilen kod sayfasıyla uyumsuz bilgi içeren dosyaları için bu seçeneği belirleyin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

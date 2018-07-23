@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f66299f1e5f5a40e0ad8f022645f81873bc55b56
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151453"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179521"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Hangi web performansı, birim ve kodlanmış UI testleri yük testi senaryosunda içerecek şekilde belirlemek için test karışımını düzenle
 
-*Test karışımı* bir senaryo seçimini senaryoda bulunan Web başarım ve birim testleri ve dağıtım bu testlerin senaryoda bir birleşimidir. Dağıtım için belirli bir testin bir yük testi çalışması sırasında sanal bir kullanıcı tarafından seçilir olasılık belirtebileceğiniz bir ayardır.
+*Test karışımı* bir senaryo seçimini web senaryosu ve bu testlerin dağıtımını içeren senaryoda bulunan başarım ve birim testlerini birleşimidir. Dağıtım için belirli bir testin bir yük testi çalışması sırasında sanal bir kullanıcı tarafından seçilir olasılık belirtebileceğiniz bir ayardır.
 
  Bir yük testi için test kümesini ekledikten sonra *test karışımı* karıştırmak seçenekleri diğer gibi çalışır. Sanal kullanıcı test karışımında belirtilen olasılığını göre rastgele seçer. Örneğin, iki testler, her yüzde 50 karışımında varsa, ilk yaklaşık yarım saat test yeni bir sanal kullanıcı seçer. Bir 50/50 karışımında bir test uzun ve diğeri kısaysa, uzun test çalıştırmasından daha fazla yük gelir.
 
@@ -33,9 +33,9 @@ ms.locfileid: "39151453"
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Varolan bir senaryoyu test karışımında yeni testler ekleyin
 
-Kullanarak yeni bir senaryo oluşturduğunuzda **Yeni Yük Testi Sihirbazı**, yeni senaryo test karışımını eklemek için Web performansı ve birim testleri belirtebilirsiniz.
+Kullanarak yeni bir senaryo oluşturduğunuzda **Yeni Yük Testi Sihirbazı**, yeni senaryo test karışımını eklemek için web performansı ve birim testleri belirtebilirsiniz.
 
-Senaryo metin karışımını kullanarak daha fazla Web başarım ve birim testleri ekleyebilirsiniz **Yük Testi Düzenleyicisi**.
+Senaryo metin karışımını kullanarak daha fazla web başarım ve birim testleri ekleyebilirsiniz **Yük Testi Düzenleyicisi**.
 
 ![Varolan yük testi için test ekleme](../test/media/ltest_addingtests.png)
 
@@ -45,9 +45,9 @@ Senaryo metin karışımını kullanarak daha fazla Web başarım ve birim testl
 
 2.  İçinde **Yük Testi Düzenleyicisi**, varolan bir senaryoyu sağ tıklayın ve ardından **Test Ekle**.
 
-     **Test Ekle** iletişim kutusu görüntülenir. Tüm Web performansı, birim ve çözümünüzü senaryonuzda olmayan kodlanmış UI testlerini senaryoya eklemek kullanılabilir.
+     **Test Ekle** iletişim kutusu görüntülenir. Tüm web performansı, birim ve çözümünüzü senaryonuzda olmayan kodlanmış UI testlerini senaryoya eklemek kullanılabilir.
 
-3.  İçinde **kullanılabilir testler** bölmesinde, Web performansı, birim ve eklemek istediğiniz kodlanmış UI testleri seçin. Testler eklemek için sağ oku seçerek **Seçili testler** bölmesi.
+3.  İçinde **kullanılabilir testler** bölmesinde, web performansı, birim ve eklemek istediğiniz kodlanmış UI testleri seçin. Testler eklemek için sağ oku seçerek **Seçili testler** bölmesi.
 
 4.  Testleri eklemeyi bitirdiğinizde seçin **Tamam**.
 
@@ -64,7 +64,7 @@ Senaryo metin karışımını kullanarak daha fazla Web başarım ve birim testl
 
 2.  İçinde **Yük Testi Düzenleyicisi**, ağaç yük testi, test ve select kaldırmak istediğiniz senaryoyu **Test Karışımını Düzenle**. **Test Karışımını Düzenle** iletişim kutusu görüntülenir.
 
-3.  Kılavuzda Web performansı, birim veya kodlanmış UI testi seçin ve sonra **Kaldır**.
+3.  Kılavuzda web performansı, birim ve kodlanmış UI testi seçin ve sonra **Kaldır**.
 
     > [!NOTE]
     > Test kaldırdıktan sonra test karışımını, tercih edilen dağıtım için ayarlayın.

@@ -21,94 +21,94 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749235"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175741"
 ---
 # <a name="options-text-editor-all-languages"></a>Seçenekler, Metin Düzenleyici, Tüm Diller
-Bu iletişim kutusu, Kod Düzenleyicisi'nin varsayılan davranışı değiştirmenizi sağlar. Bu ayarlar üzerinde kod düzenleyicisinde, HTML Tasarımcısı kaynağı görünümü gibi temel diğer düzenleyiciler için de geçerlidir. Bu iletişim kutusunu açmak için seçin **seçenekleri** gelen **Araçları** menüsü. İçinde **metin düzenleyici** klasörünü genişletin **tüm diller** alt ve ardından **genel**.
+Bu iletişim kutusu Kod Düzenleyicisi'nin varsayılan davranışını değiştirmenizi sağlar. Bu ayarları temel üzerine Kod düzenleyicisinde, HTML Tasarımcısı'nın kaynak görünümü gibi diğer düzenleyiciler için de geçerlidir. Bu iletişim kutusunu açmak için seçmeniz **seçenekleri** gelen **Araçları** menüsü. İçinde **metin düzenleyici** klasörünü genişletin **tüm diller** alt seçip **genel**.
 
 > [!CAUTION]
-> Bu sayfayı tüm geliştirme diller için varsayılan seçeneklerini ayarlar. Bu iletişim kutusunda bir seçenek sıfırlama tüm dillerde genel seçenekler ne olursa olsun seçenekler burada seçilen için sıfırlar olduğunu unutmayın. Metin Düzenleyici seçenekleri yalnızca bir dil için değiştirmek için o dil için alt klasörü genişletin ve seçenek sayfaları seçin.
+> Bu sayfa, tüm geliştirme diller için varsayılan seçenekleri ayarlar. Bu iletişim kutusunda bir seçenek sıfırlama genel seçenekleri tüm dillerde hangi seçenekler burada seçilen için sıfırlar olduğunu unutmayın. Yalnızca bir dilin metin düzenleyici seçenekleri değiştirmek için bu dil için alt klasörü genişletin ve seçeneği sayfalarını seçin.
 
 
- Genel Seçenekler sayfalarında bazı programlama dilleri, ancak için diğer bir seçenek seçili gri bir onay işareti görüntülenir.
+ Bazı programlama dilleri, ancak diğerleri genel seçenekler sayfalarındaki seçeneği seçildiğinde, gri bir onay işareti görüntülenir.
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 ## <a name="statement-completion"></a>Deyim Tamamlama
- Otomatik liste üyeleri
+ Üyeleri otomatik Listele
 
- Düzenleyicide yazarken seçili olduğunda, kullanılabilir üyeler, özellikler, değerler veya yöntemleri açılır listeleri IntelliSense tarafından görüntülenir. Kodunuza öğesi eklemek için açılır listeden herhangi bir öğeyi seçin. Bu seçenek belirlendiğinde **üyeleri Gelişmiş Gizle** seçeneği.
+ Yazarken düzenleyicide açılan listesi kullanılabilir üyeler, özellikler, değerleri veya yöntemleri seçili olduğunda, IntelliSense tarafından görüntülenir. Öğeyi kodunuza eklemek için açılır listeden herhangi bir öğeyi seçin. Bu seçenek belirlendiğinde **Gelişmiş üyeleri Gizle** seçeneği.
 
- Gelişmiş üyeler Gizle
+ Gelişmiş üyeleri Gizle
 
- Seçili olduğunda, yalnızca en sık kullanılan öğelerini görüntüleyerek açılır deyimi tamamlanma listeleri kısaltır. Diğer öğeler listeden filtrelenir.
+ Seçili olduğunda, yalnızca en sık kullanılan öğe görüntüleyerek açılır deyim tamamlama listeleri kısaltır. Diğer öğeler listeden filtrelenir.
 
  Parametre bilgileri
 
- Seçili olduğunda, tam sözdizimi geçerli bildirimi veya yordamı için tüm kullanılabilir parametrelerle düzenleyicisinde ekleme noktasını altında görüntülenir. Atayabilirsiniz sonraki parametrenin kalın olarak görüntülenir.
+ Seçili olduğunda, geçerli bildirimi ya da yordamın eksiksiz sözdizimi düzenleyicisinde, tüm kullanılabilir parametrelerinin ile ekleme noktası altında görüntülenir. Atayabileceğiniz bir sonraki parametreyi kalın olarak gösterilir.
 
 ## <a name="settings"></a>Ayarlar
- Sanal alan etkinleştir
+ Sanal boşluğu etkinleştir
 
- Bu seçenek seçildiğinde ve **sözcük kaydırma** olan temizlenmiş, herhangi bir yere kod düzenleyicisini ve türü bir satır sonundan tıklayabilirsiniz. Bu özellik, tutarlı bir noktada kodunuzun yanındaki açıklamaları konumlandırmak için kullanılabilir.
+ Bu seçeneği seçildiğinde ve **sözcük kaydırmayı** olan temizlenmiş, herhangi bir kod düzenleyicisi ve türü bir satır bitiminin ötesinde tıklayabilirsiniz. Bu özellik, kodunuzun yanında tutarlı bir noktada açıklamaları konumlandırmak için kullanılabilir.
 
  Sözcük kaydırma
 
- Seçili olduğunda, herhangi bir kısmının görüntülenebilir Düzenleyicisi alanı yatay genişleten bir satır sonraki satırında otomatik olarak görüntülenir. Bu seçenek belirlendiğinde **Göster sözcük kaydırma için görsel karakterlerinin** seçeneği.
+ Seçili olduğunda, yatay olarak görüntülenebilir Düzenleyicisi alan genişletir bir satır herhangi bir kısmını sonraki satırda otomatik olarak görüntülenir. Bu seçenek belirlendiğinde **sözcük kaydırma için görsel karakterleri Göster** seçeneği.
 
 > [!NOTE]
-> **Sanal adres alanı** özelliğin açık kapalı while **Kaydır** açıktır.
+> **Sanal adres alanı** özelliğin açık kapalı durumdayken **sözcük kaydırma** açıktır.
 
 
- Sözcük kaydırma için görsel karakterlerinin Göster
+ Sözcük kaydırma için görsel karakterleri Göster
 
- Seçili olduğunda, bir return ok göstergesi burada uzun bir satır ikinci bir satır sarmalar görüntülenir.
+ Seçili olduğunda, burada bir uzun satır ikinci satıra sarmalar dönüş ok göstergesi görüntülenir.
 
  ![LineBreakSymbol ekran görüntüsü](../../ide/reference/media/linebreak.gif)
 
- Bu göstergeler görüntülememek tercih ediyorsanız bu seçeneği temizleyin.
+ Bu göstergeler görüntülemeyecek tercih ederseniz bu seçeneği temizleyin.
 
 > [!NOTE]
-> Bu anımsatıcı okları kodunuzu eklenmez ve yazdırma. Bunlar yalnızca başvuru amaçlıdır.
+> Bu anımsatıcı okları kodunuza eklenmez ve yazdırılmaz. Bunlar yalnızca başvuru amaçlıdır.
 
 
- Herhangi bir seçim olduğunda kesme veya kopyalama komutları boş satırlar uygulayın.
+ Seçim olduğunda Kes veya Kopyala komutlarını boş satırlara Uygula
 
- Ekleme noktasını boş bir satıra getirin, nothing, seçin ve ardından kopyaladığınızda veya kesin bu seçenek Düzenleyicisi davranışını ayarlar.
+ Bu seçenek, ekleme noktasını boş bir satıra yerleştirin, hiçbir şey seçin ve ardından kopyaladığınızda veya Kes Düzenleyicisi davranışını ayarlar.
 
--   Bu seçenek belirlendiğinde, boş satır kopyaladığınız veya kesin. Ardından yapıştırırsanız, yeni, boş bir satır eklenir.
+-   Bu seçenek belirlendiğinde, boş satır kopyaladığınız veya Kes. Ardından yapıştırırsanız, yeni, boş bir satır eklenir.
 
--   Bu seçenek temizlendiğinde kesme komutu boş satırları kaldırır. Ancak, Panodaki veriler korunur. Bu nedenle, ardından Yapıştır komutunu kullanırsanız, en son Pano'ya kopyalanan içerik yapıştırılan. Hiçbir şey daha önce kopyalandı, hiçbir şey yapıştırılan.
+-   Bu seçenek işaretli değilse, Cut komutu boş satırları kaldırır. Ancak, Panodaki veriler korunur. Ardından Paste komutu kullanırsanız, bu nedenle, en son Pano'ya kopyalanan içeriği yapıştırılır. Daha önce hiçbir şey kopyalandı, hiçbir şey yapıştırılır.
 
-Bir satır boş değilse bu ayarın kopyalama veya kesme üzerinde hiçbir etkisi yoktur. Hiçbir şey seçili ise, tüm satırı kopyaladığınız veya kesin. Ardından yapıştırırsanız tüm satır ve kendi endline karakter metnin yapıştırılan.
+Bir satır boş olmadığında bu ayar Kopyala veya Kes üzerinde etkisi yoktur. Hiçbir şey seçili ise, tüm satırı kopyaladığınız veya Kes. Ardından yapıştırırsanız, tüm satırı ve kendi endline karakter yapıştırılan metin.
 
 > [!TIP]
-> Boşluk, sekme ve uçları için göstergeleri görüntülemek ve bu nedenle tamamen boş satırlarından girintili satırları ayırt etmek için seçin **Gelişmiş** gelen **Düzenle** menü ve **görünüm beyaz Alanı**.
+> Boşluklar, sekmeler ve uçları göstergelerini görüntüleme ve bu nedenle, tamamen boş satırları girintili satırları ayırt etmek için **Gelişmiş** gelen **Düzenle** menüsünü seçip **görünümü beyaz Alanı**.
 
 
 ## <a name="display"></a>Ekran
  Satır numaraları
 
- Seçili olduğunda, bir satır sayısı her kod satırının yanında görüntülenir.
+ Bu onay kutusu seçildiğinde, her kod satırının yanındaki satır numarası görüntülenir.
 
 > [!NOTE]
-> Bu satır numaralarını kodunuzu eklenmez ve yazdırma. Bunlar yalnızca başvuru amaçlıdır.
+> Bu satır numaraları kodunuza eklenmez ve yazdırılmaz. Bunlar yalnızca başvuru amaçlıdır.
 
 
- Tek tıklamayla URL Gezinti etkinleştir
+ Tek tıkla URL gezinmesini etkinleştir
 
- Bir URL Düzenleyicisi'nde üzerinden geçerken seçili olduğunda, fare imlecini işaret eden bir ele değiştirir. Web tarayıcınızda belirtilen sayfasını görüntülemek için URL tıklatabilirsiniz.
+ Bir URL'yi Düzenleyici üzerinden geçerken seçili olduğunda, fare imlecini işaret eden bir ele değiştirir. Belirtilen sayfayı, web tarayıcınızda görüntülemek için URL tıklayabilirsiniz.
 
  Gezinti çubuğu
 
- Seçili olduğunda, görüntüler **gezinti çubuğu** Kod düzenleyicisinde üstünde. Kendi açılır **nesneleri** ve **üyeleri** listeleri kodunuzda, kendi üyelerini seçin belirli bir nesnenin seçmenizi sağlar ve Kod Düzenleyicisi'nde Seçili üyeyi bildirimi gider.
+ Bu onay kutusu seçildiğinde, görüntüler **gezinti çubuğu** üst kısmında, Kod Düzenleyicisi. Kendi açılan **nesneleri** ve **üyeleri** liste üyelerini, select, kodunuzun belirli bir nesne seçmenizi sağlar ve Kod Düzenleyicisi'nde seçilen üye bildirimi gider.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

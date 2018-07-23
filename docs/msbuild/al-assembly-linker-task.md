@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3678e418680d034b3699286fd6e6a182936c0f8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b745920a6afd4fb07d1904b7587e32350bb796a3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945903"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177844"
 ---
 # <a name="al-assembly-linker-task"></a>AL (derleme bağlayıcı) görevi
 AL görevi sarmalar *AL.exe*, ile dağıtılmış bir aracı [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Bu derleme bağlayıcı aracı, bir modül olan bir veya daha fazla veya kaynak dosyalar bildiriminden bir derleme oluşturmak için kullanılır. Bu görevi doğrudan kullanmak için gerekli değildir, dolayısıyla derleyicileri ve geliştirme ortamlarını zaten bu özellikleri sağlayabilir. Assembly Linker, karma dil geliştirme üretilen gibi birden çok bileşen dosyalarından tek bir derleme oluşturmak gereken geliştiriciler için yararlıdır. Bu görev, bir tek derleme dosyasına modülleri birleştirmek değil; tek tek modüllerinin hala dağıtılmış ve doğru bir şekilde yüklemek oluşturulan derleme için kullanılabilir olmalıdır. Daha fazla bilgi için *AL.exe*, bkz: [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -59,7 +59,7 @@ AL görevi sarmalar *AL.exe*, ile dağıtılmış bir aracı [!INCLUDE[winsdklon
 |`ProductVersion`|İsteğe bağlı `String` parametresi.<br /><br /> İçin bir dize belirtir `ProductVersion` derlemesi içindeki alan. Daha fazla bilgi için belgelerine bakın `/productv[ersion]` seçeneğini [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`ResponseFiles`|İsteğe bağlı `String[]` parametresi.<br /><br /> Assembly Linker için geçişine yönelik ek seçenekler içeren yanıt dosyaları belirtir.|  
 |`SdkToolsPath`|İsteğe bağlı `String` parametresi.<br /><br /> Resgen.exe gibi SDK Araçları yolunu belirtir.|  
-|`SourceModules`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Bir bütünleştirilmiş kod içine derlenmiş için bir veya daha fazla modül. Modüller, elde edilen derlemeyi bildiriminde listelenen ve dağıtılmış ve kullanılabilir durumda derlemeyi yüklenmeye gerekir. Bu parametrede aktarılan öğeleri olarak adlandırılan ek meta verilerine de sahip `Target`, görev kopyalar sonra derlendiğinden bu yeni dosyayı bir derlemeye dosyanın dosya adı ve yolunu belirtir. Daha fazla bilgi için belgelerine bakın [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). Bu parametre, belirli bir anahtar Al.exe geçirilen modüllerin listesini karşılık gelir.|  
+|`SourceModules`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Bir bütünleştirilmiş kod içine derlenmiş için bir veya daha fazla modül. Modüller, elde edilen derlemeyi bildiriminde listelenen ve dağıtılmış ve kullanılabilir durumda derlemeyi yüklenmeye gerekir. Bu parametrede aktarılan öğeleri olarak adlandırılan ek meta verilerine de sahip `Target`, görev kopyalar sonra derlendiğinden bu yeni dosyayı bir derlemeye dosyanın dosya adı ve yolunu belirtir. Daha fazla bilgi için belgelerine bakın [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). Bu parametre yöntemlere geçirilen modüller listesinde karşılık gelen *Al.exe* belirli bir anahtar olmadan.|  
 |`TargetType`|İsteğe bağlı `String` parametresi.<br /><br /> Çıkış dosyasının dosya biçimini belirtir: `library` (kod kitaplığı) `exe` (konsol uygulaması), veya `win` (Windows tabanlı uygulama). Varsayılan, `library` değeridir. Bu parametre için karşılık gelen `/t[arget]` seçeneğini [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`TemplateFile`|İsteğe bağlı `String` parametresi.<br /><br /> Kültür alanı dışında tüm derleme meta devralmak derleme belirtir. Belirtilen derleme tanımlayıcı bir ada sahip olmalıdır.<br /><br /> İle oluşturduğunuz derleme `TemplateFile` parametresi, bir uydu derleme olacaktır. Bu parametre için karşılık gelen `/template` seçeneğini [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Timeout`|İsteğe bağlı `Int32` parametresi.<br /><br /> Sonra yürütülebilir görev sonlandırıldığından, milisaniye cinsinden süre miktarını belirtir. Varsayılan değer `Int.MaxValue`, hiçbir zaman aşımı süresi olduğunu gösterir.|  

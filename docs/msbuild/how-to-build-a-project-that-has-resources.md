@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baf1fce1179dff0eb8965fbc65a2796546a4f80d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946670"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180353"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Nasıl yapılır: kaynaklara sahip olan bir projeyi derleme
 Yerelleştirilmiş sürümlerini bir proje oluşturuyorsanız tüm kullanıcı arabirimi öğeleri kaynak dosyalara farklı diller için ayrılmış olması gerekir. Projeyi yalnızca dizeler kullanıyorsa, kaynak dosyalar metin dosyaları kullanabilirsiniz. Alternatif olarak, *.resx* dosyaları olarak kaynak dosyaları.  
   
-## <a name="compiling-resources-with-msbuild"></a>Kaynakları MSBuild ile derleme  
+## <a name="compile-resources-with-msbuild"></a>Kaynakları MSBuild ile Derle  
  Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir `GenerateResource` ya da kaynakları derlemek için kullanabileceğiniz görev *.resx* veya metin dosyaları. Bu görevi içeren `Sources` derlemek için hangi kaynak dosyaları belirtmek üzere parametre ve `OutputResources` çıkış kaynak dosyalarının adlarını belirlemek için parametre. Daha fazla bilgi için `GenerateResource` görev bkz [GenerateResource görevi](../msbuild/generateresource-task.md).  
   
 #### <a name="to-compile-resources-with-msbuild"></a>Kaynakları MSBuild ile derlemek için  
@@ -82,4 +82,4 @@ Yerelleştirilmiş sürümlerini bir proje oluşturuyorsanız tüm kullanıcı a
 [MSBuild](../msbuild/msbuild.md)  
  [GenerateResource görevi](../msbuild/generateresource-task.md)   
  [CSC görevi](../msbuild/csc-task.md)   
- [Resgen.exe (kaynak dosya oluşturucu)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+ [Resgen.exe (Kaynak Dosya Oluşturucu)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

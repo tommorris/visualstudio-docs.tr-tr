@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7dc934807ba14b218708086e59765f05b6bee932
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154934"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176768"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Bir yük testi senaryosuna hangi web tarayıcısı türlerini belirtmek için test karışımını düzenleyin
 
-*Tarayıcı karışımı* yük testi senaryosunda daha gerçekçi yükleme benzetimi yapmak için bir yol sağlar. Yükleme yerine tek bir Web tarayıcısı heterojen bir Web tarayıcı karışımını kullanarak oluşturulur. Uygulamalarınızla kullanılacak Web tarayıcıları daha yakın bir yaklaşığını oluşturursunuz.
+*Tarayıcı karışımı* yük testi senaryosunda daha gerçekçi yükleme benzetimi yapmak için bir yol sağlar. Yükleme yerine tek tek web tarayıcısı heterojen bir web tarayıcı karışımını kullanarak oluşturulur. Uygulamalarınızla kullanılacak web tarayıcıları daha yakın bir yaklaşığını oluşturursunuz.
 
- Tarayıcı karışımı, bir yük testi senaryosunda belirli bir Web tarayıcı türü çalıştıran sanal kullanıcının olasılığını belirtir. Bir yük testi oluşturduğunuzda, yükü birden fazla Web tarayıcısı üzerinden oluşturulur benzetimini yapmak isteyebilirsiniz. Sağlanan Web tarayıcıları kümesinden Karışıma bir Web tarayıcısı türü eklediğinizde, bir Web performans testi tarafından gönderilen her HTTP isteği için seçilen Web tarayıcısı ilişkili üstbilgileri kümesi eklenir.
+ Tarayıcı karışımı, bir yük testi senaryosunda belirli bir web tarayıcı türü çalıştıran sanal kullanıcının olasılığını belirtir. Bir yük testi oluşturduğunuzda, yükü birden fazla web tarayıcısı üzerinden oluşturulur benzetimini yapmak isteyebilirsiniz. Sağlanan web tarayıcıları kümesinden Karışıma bir web tarayıcısı türü eklediğinizde, bir web performans testi tarafından gönderilen her HTTP isteği için seçilen web tarayıcısı ilişkili üstbilgileri kümesi eklenir.
 
- Tarayıcı karışımı diğer karışımı seçenekleri gibi çalışır. Bir Web tarayıcı türü, tarayıcı karışımını tabanlı bir sanal kullanıcı rastgele ilişkilidir. Bu kullanıcının testleri karışımında belirtilen olasılığa dayalı belirli bir Web tarayıcısı üzerinde çalışır.
+ Tarayıcı karışımı diğer karışımı seçenekleri gibi çalışır. Bir web tarayıcı türü, tarayıcı karışımını tabanlı bir sanal kullanıcı rastgele ilişkilidir. Bu kullanıcının karışımında belirtilen olasılığa dayalı belirli bir web tarayıcısında, testler.
 
- Tarayıcı karışımı belirttikten sonra daha sonra ekleyebilir ve Web tarayıcı türleri Karışıma kaldırın. Tarayıcı karışımı dağıtımını karıştırma denetimini kullanarak da değiştirebilirsiniz. Karıştırma denetimini bir senaryo tarayıcılarda dağıtımını kolayca ayarlamanıza olanak tanır.
+ Tarayıcı karışımı belirttikten sonra daha sonra ekleyebilir ve web tarayıcı türleri Karışıma kaldırın. Tarayıcı karışımı dağıtımını karıştırma denetimini kullanarak da değiştirebilirsiniz. Karıştırma denetimini bir senaryo tarayıcılarda dağıtımını kolayca ayarlamanıza olanak tanır.
 
 ## <a name="add-new-browsers-to-a-scenario"></a>Bir senaryo için yeni tarayıcı ekleme
 

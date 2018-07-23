@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b4fb0d11c1ed100b6ebd124da909e245baa1db
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 46638f92165f48fc3de20494df226590fd9450eb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078920"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176908"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild ayrılmış ve tanınmış özellikleri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosyası hakkında bilgi depolayan önceden tanımlanmış özellikler kümesi sağlar ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ikili dosyaları. Bu özellikler diğer aynı şekilde değerlendirilir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] özellikleri. Örneğin, kullanılacak `MSBuildProjectFile` özelliği, yazdığınız `$(MSBuildProjectFile)`.  
@@ -39,7 +39,7 @@ ms.locfileid: "39078920"
 |`MSBuildExtensionsPath32`|İyi bilinen|Yolu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] altında alt *\Program dosyaları* veya *\Program dosyaları (x86)* klasör. Bu yol her zaman 32-bit işaret *\Program dosyaları* 32-bit makinedeki klasörü ve *\Program dosyaları (x86)* 64-bit makinedeki. Ayrıca bkz: `MSBuildExtensionsPath` ve `MSBuildExtensionsPath64`.<br /><br /> Bu özellikte son test eğik çizgiyi eklemeyin.|  
 `MSBuildExtensionsPath64`|İyi bilinen|Yolu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] altında alt *\Program dosyaları* klasör. Bir 64 bit makine için bu yol her zaman işaret *\Program dosyaları* klasör. Bir 32-bit makine için bu yol boştur. Ayrıca bkz: `MSBuildExtensionsPath` ve `MSBuildExtensionsPath32`.<br /><br /> Bu özellikte son test eğik çizgiyi eklemeyin.|  
 |`MSBuildLastTaskResult`|Ayrılmış|`true` önceki görev hatasız (uyarı durumunda bile), tamamladıysanız veya `false` önceki görev hatasız tamamlanırsa. Genellikle bir görevde bir hata oluştuğunda hata o projede gerçekleşen son şeydir oluşur. Bu nedenle, bu özelliğin değeri hiçbir zaman olan `false`, aşağıdaki senaryolar dışında:<br /><br /> - `ContinueOnError` Özniteliği [görev öğesi (MSBuild)](../msbuild/task-element-msbuild.md) ayarlanır `WarnAndContinue` (veya `true`) veya `ErrorAndContinue`.<br /><br /> - `Target` Sahip bir [OnError öğesi (MSBuild)](../msbuild/onerror-element-msbuild.md) alt öğesi olarak.|  
-|`MSBuildNodeCount`|Ayrılmış|Oluştururken kullanılan eş zamanlı işlemlerin en fazla sayısı. Bu için belirttiğiniz değerdir **/maxcpucount** komut satırında. Belirttiyseniz **/maxcpucount** sonra bir değer belirtmeden `MSBuildNodeCount` bilgisayara işlemci sayısını belirtir. Daha fazla bilgi için [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md) ve [paralel birden çok proje derleme](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|  
+|`MSBuildNodeCount`|Ayrılmış|Oluştururken kullanılan eş zamanlı işlemlerin en fazla sayısı. Bu için belirttiğiniz değerdir **/maxcpucount** komut satırında. Belirttiyseniz **/maxcpucount** sonra bir değer belirtmeden `MSBuildNodeCount` bilgisayara işlemci sayısını belirtir. Daha fazla bilgi için [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md) ve [paralel olarak birden çok proje derleme](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|  
 |`MSBuildProgramFiles32`|Ayrılmış|32 bit program klasörünün konumunu; Örneğin, *C:\Program Files (x86)*.<br /><br /> Bu özellikte son test eğik çizgiyi eklemeyin.|  
 |`MSBuildProjectDefaultTargets`|Ayrılmış|Belirtilen hedeflerin tam listesi `DefaultTargets` özniteliği `Project` öğesi. Örneğin, aşağıdaki `Project` öğesinin bir `MSBuildDefaultTargets` özelliği değerinin `A;B;C`:<br /><br /> `<Project DefaultTargets="A;B;C" >`|  
 |`MSBuildProjectDirectory`|Ayrılmış|Proje dosyasının bulunduğu, örneğin dizinin mutlak yolu *C:\MyCompany\MyProduct*.<br /><br /> Bu özellikte son test eğik çizgiyi eklemeyin.|  

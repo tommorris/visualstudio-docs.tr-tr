@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe01c15e9798a29d4832b8c189718d95cf5a0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1804bde2c3da7f83658784ca1520791a930f901
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078998"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177201"
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev işlemede öğe meta verileri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listeleri farklı kategorileri veya toplu işlemi bölmek için özelliği, öğe meta verileri temel alarak ve bir görevi, her batch ile bir kez çalıştırın. Tam olarak hangi batch ile hangi öğeleri geçirilen anlamak kafa karıştırıcı olabilir. Bu konu, toplu işleme içeren aşağıdaki yaygın senaryoları kapsar.  
@@ -133,7 +133,7 @@ Aşağıdaki örnek, birden çok öğe listesi öğesi meta verileri temel alara
   
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
-## <a name="batching-one-item-at-a-time"></a>Bir öğe aynı anda toplu işleme  
+## <a name="batch-one-item-at-a-time"></a>Bir öğe aynı anda batch  
  Toplu işleme da oluşturulduktan sonra her öğeye atanan tanınmış öğe meta verileri üzerinde gerçekleştirilebilir. Bu, bir koleksiyondaki her öğe için toplu işlem kullanma için bazı meta verileri olacağını garanti eder. `Identity` Meta veri değeri, her öğe için benzersiz olan ve bir öğe listesini her öğe ayrı bir toplu iş ayırma için kullanışlıdır. İyi bilinen öğe meta verileri tam bir listesi için bkz. [tanınmış öğe meta verileri](../msbuild/msbuild-well-known-item-metadata.md).  
   
  Aşağıdaki örnek, her bir öğe listesini bir öğe aynı anda toplu olarak gösterilmiştir. Çünkü `Identity` her öğenin meta veri değerini benzersiz `ExampColl` her toplu iş öğesi listesi bir öğe içeren öğe listesi altı toplu işler bölünmüştür. Varlığını `%(Identity)`içinde `Text` öznitelik bildirir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] toplu işleme gerçekleştirilmesi.  
@@ -172,7 +172,7 @@ Identity: "Item5" -- Items in ExampColl: Item5
 Identity: "Item6" -- Items in ExampColl: Item6  
 ```  
   
-## <a name="filtering-item-lists"></a>Filtre öğesi listeleri  
+## <a name="filter-item-lists"></a>Öğe listeleri filtreleyebilirsiniz.  
  Toplu işleme için bir görev iletmeden önce belirli öğeleri bir öğe listesini filtrelemek için kullanılabilir. Örneğin, filtre `Extension` tanınmış öğe meta veri değeri bir görev yalnızca belirli bir uzantıya sahip dosya çubuğunda çalıştırmanıza olanak sağlar.  
   
  Aşağıdaki örnek, bir öğe listesi, toplu iş öğesi meta verileri temel alarak böler ve bir görevle geçirildiğinde bu toplu filtre uygulamak gösterilmektedir. `ExampColl` Öğe listesi üç toplu göre bölündüğü `Number` öğe meta verileri. `Condition` Görevin özniteliği belirtir, sadece toplu işlemleri ile bir `Number` öğesi meta veri değeri `2` görevle geçirilir  

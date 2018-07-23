@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da web performans testi için özel ayıklama kuralı kodlama
+title: Visual Studio'da web performans testi için özel bir ayıklama kuralı kodlama
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,48 +15,48 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e5d3e501138ede3679214650e29d602a6b7cf94
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282837"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179248"
 ---
-# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Web performans testi için özel ayıklama kuralı kod
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodu bir web performans testi için özel bir ayıklama kuralı
 
-Ayıklama kuralları oluşturabilirsiniz. Bunu yapmak için kendi kurallarınızı bir ayıklama kuralı sınıfından türetilir. Ayıklama kuralları türetilen <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> temel sınıfı.
+Kendi ayıklama kuralları oluşturabilirsiniz. Bunu yapmak için kendi kurallarınızı bir ayıklama kuralı sınıfından türetilir. Ayıklama kuralları türetilen <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> temel sınıfı.
 
 > [!NOTE]
-> Özel doğrulama kuralları da oluşturabilirsiniz. Daha fazla bilgi için bkz: [özel kod ve eklentiler yük testleri için oluşturma](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+> Ayrıca özel doğrulama kuralları oluşturabilirsiniz. Daha fazla bilgi için [özel kod ve yük testleri için eklentiler oluşturma](../test/create-custom-code-and-plug-ins-for-load-tests.md).
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Özel bir ayıklama kuralı oluşturmak için
 
-1.  Bir Test içeren bir Web performans testi projesi açın.
+1.  Bir Test içeren bir web performans testi projesi açın.
 
 2.  (İsteğe bağlı) Ayıklama kuralı depolanacağı ayrı bir sınıf kitaplığı projesi oluşturun.
 
     > [!IMPORTANT]
-    > Testlerinizi bulunan aynı projede sınıfı oluşturabilirsiniz. Bununla birlikte, kural yeniden kullanmak istiyorsanız, kuralınız depolanacağı ayrı bir sınıf kitaplığı projesi oluşturmak en iyisidir. Ayrı bir projesi oluşturursanız, bu yordamdaki isteğe bağlı adımları tamamlamanız gerekir.
+    > Sınıfı, testlerinizi bulunan aynı projede oluşturabilirsiniz. Ancak, kural yeniden kullanmak isterseniz, kural depolanacağı ayrı bir sınıf kitaplığı projesi oluşturun en iyisidir. Ayrı bir proje oluşturursanız, bu yordam isteğe bağlı adımları tamamlamanız gerekir.
 
-3.  (İsteğe bağlı) Sınıf kitaplığı projesinde Microsoft.VisualStudio.QualityTools.WebTestFramework dll için bir başvuru ekleyin.
+3.  (İsteğe bağlı) Sınıf kitaplığı projesinde Microsoft.VisualStudio.QualityTools.WebTestFramework DLL'ye bir başvuru ekleyin.
 
-4.  Türeyen bir sınıf oluşturun <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> sınıfı. Uygulama <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> üyeleri.
+4.  Türetilen bir sınıf oluşturmanız <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> sınıfı. Uygulama <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> üyeleri.
 
-5.  (İsteğe bağlı) Yeni bir sınıf kitaplığı projesi oluşturun.
+5.  (İsteğe bağlı) Yeni sınıf kitaplığı projesi oluşturun.
 
-6.  (İsteğe bağlı) Test projesinde özel ayıklama kuralı içeren sınıf kitaplığı projesine bir başvuru ekleyin.
+6.  (İsteğe bağlı) Test projesinde özel bir ayıklama kuralı içeren sınıf kitaplığı projesine bir başvuru ekleyin.
 
-7.  Bir Web performans testinde Test projesinde açın **Web Performans Testi Düzenleyicisi**.
+7.  Bir web performans testinde Test projesinde, açık **Web Performans Testi Düzenleyicisi**.
 
-8.  Özel ayıklama kuralı eklemek için bir Web performans testi isteği sağ tıklatın ve seçin **Ayıklama Kuralı Ekle**.
+8.  Özel ayıklama kuralı eklemek için bir web performans testi isteği seçin sağ tıklayın ve **Ayıklama Kuralı Ekle**.
 
-     **Ayıklama Kuralı Ekle** iletişim kutusu görüntülenir. Özel doğrulama kuralınızı görürsünüz **bir kural seçin** önceden tanımlanmış doğrulama kuralları ile birlikte listesi. Özel ayıklama kuralı seçin ve ardından **Tamam**.
+     **Ayıklama Kuralı Ekle** iletişim kutusu görüntülenir. Özel doğrulama kuralınızı göreceğiniz **bir kural seçin** birlikte önceden tanımlanmış doğrulama kuralları listesi. Özel ayıklama kuralınızı seçin ve sonra **Tamam**.
 
-9. Web performans testi çalıştırın.
+9. Web performans testinizi çalıştırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, özel bir ayıklama kuralı uygulaması gösterir. Bu ayıklama kuralı değeri belirtilen giriş alandan ayıklar. Bu örnek için kendi özel ayıklama kuralları bir başlangıç noktası olarak kullanın.
+Aşağıdaki kod, özel bir ayıklama kuralı uygulanışı gösterilmektedir. Bu ayıklama kuralı, belirtilen bir giriş alan değeri ayıklar. Bu örnekte, kendi özel ayıklama kuralları için bir başlangıç noktası olarak kullanın.
 
 ```csharp
 using System;
@@ -204,7 +204,7 @@ Namespace ClassLibrary2
 End Namespace
 ```
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> Yöntemi bir ayıklama kuralı çekirdek işlevselliğini içerir. <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> Yöntemi önceki örnekte geçen bir <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> bu ayıklama kuralı kapsayan istek tarafından üretilen yanıt sağlar. Yanıtı içeren bir <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> yanıt tüm etiketler içerir. Giriş etiketleri dışı filtrelenir <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. Her giriş etiketi adlı bir öznitelik için incelenir `name` sağlanan değeri, kullanıcı değeri eşittir `Name` özelliği. Bu eşleştirme özniteliğini içeren bir etiket bulunursa, bir tarafından yer alan bir değer ayıklamak için girişimde `value` öznitelik değeri öznitelik varsa. Varsa, ad ve değer etiketinin ayıklanır ve web performans testi içeriğine eklenir. Ayıklama kuralı geçirir.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> Yöntemi ayıklama kuralı temel işlevlerini içerir. <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> Önceki örnekte yöntemi alır bir <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> bu ayıklama kuralı kapsar istek tarafından oluşturulan yanıt sağlar. Yanıt içeren bir <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> yanıtındaki tüm etiketleri içerir. Giriş etiketleri filtrelenerek <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. Her bir girdi etiketi olarak adlandırılan bir öznitelik için incelenir `name` değerini sağlanan kullanıcı değeri eşittir `Name` özelliği. Bu eşleşen özniteliğine sahip bir etiket bulunursa, bir tarafından bulunan bir değeri ayıklamak için girişimde `value` öznitelik değeri öznitelik zaten varsa. Varsa, ad ve değer etiketinin ayıklanır ve web performans testi bağlamına eklendi. Ayıklama kuralı geçirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -14,65 +14,65 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac981d51dd11b03d7ce35f2583f2c91274129714
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922461"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175897"
 ---
 # <a name="code-analysis-policy-errors"></a>Kod Çözümleme İlkesi Hataları
-Kod çözümleme İlkesi giriş sırasında gerçekleşmedi aşağıdaki hatalar oluşur:
+Kod Analizi İlkesi iade aşamasında karşılanmıyor aşağıdaki hatalar oluşur:
 
- **Kod çözümleme ayarları bir veya daha fazla projeleri için Kod Analizi ilkesiyle uyumlu değildir.**
+ **Bir veya daha fazla proje için Kod Analizi ayarları Kod Analizi ilkesiyle uyumlu değildir.**
 
- Bir veya daha fazla kod projeler için takım projesi kaynak denetimine iade kod çözümlemesi gereksinimleri karşılanmadı. Bu hata, bir veya daha fazla aşağıdaki koşullardan biri tarafından kaynaklanabilir:
+ Bir veya daha fazla kod projeleri için takım projesi kaynak denetimine iade Kod Analizi gereksinimleri karşılanmadı. Bu hata, bir veya daha fazla aşağıdaki koşullardan biri tarafından kaynaklanabilir:
 
-1.  Kod çözümleme yapı tüm Çözümdeki projeler için etkin değil.
+1.  Tüm çözüm içindeki projeleri için derleme üzerinde kod analizi etkin değil.
 
-2.  Visual Studio projesi daha az kısıtlayıcı olan ayarlamanız yerel kural **eylem** takım projesi kural Örneğin, ayarlamak için bir kural kümesi daha ayarı **eylem**=**hata**  sunucu üzerinde kendi **eylem** kümesine **uyarı** veya **hiçbiri** kural Visual Studio'da çalıştırılmayı kümesi içinde).
+2.  Visual Studio'da proje daha az kısıtlayıcı için ayarlanmış yerel kural **eylem** takım proje kural gibi ayarlamak için bir kural kümesi daha ayarlama **eylem**=**hata**  sunucusunda sahip kendi **eylem** kümesine **uyarı** veya **hiçbiri** kuralında Visual Studio'da çalıştırılmasını ayarlayın).
 
-3.  Visual Studio'da belirtilen kural tüm kural takım projesi için Kod Analizi İade İlkesi'nde belirtilen kümesi içinde belirtilen kurallar içermiyor.
+3.  Kural kümesi Visual Studio'da belirtilen tüm kurallar kural kümesi içinde takım projesi için Kod Analizi iade ilkesi belirtilen belirtilen içermiyor.
 
- **Kod çözümleme İlkesi başarısız oldu. Projede hatalar var. {0} veya yapı güncel değil.**
+ **Kod Analizi ilkesini başarısız oldu. Projede hata olmadığından {0} veya derleme güncel değil.**
 
- Derleme hataları içeriyor veya hataları düzeltilen ancak kod analizi sonra düzeltme gerçekleştirilmedi.
+ Derleme hataları içeriyor veya hatalar ancak kod analizi, düzeltme gerçekleştirilmedi.
 
- **İade başarısız oldu. Kod çözümleme İlkesi aracılığıyla Visual Studio ile açık olan bir çözüm iade olmasını gerektirir.**
+ **İade etme başarısız oldu. Kod Analizi İlkesi Visual Studio aracılığıyla açık bir Çözümle iade olmasını gerektirir.**
 
- Kod çözümleme İlkesi iade edildi tüm dosyalar şu anda açık çözümde olmasını gerektirir. Bu hatayı düzeltmek için iade edilmesi dosyasını içeren çözümü açın.
+ Kod Analizi İlkesi, tüm dosyalar iade edilen içinde açık olan çözümü gerekir olmasını gerektirir. Bu hatayı düzeltmek için dosyanın iade edilmesini içeren çözümü açın.
 
- **Tüm bekleyen onay bileşeninde içinde şu anda açık olan çözüm dosyalarıdır.**
+ **Tüm dosyalar bekleyen iade içinde açık olan çözümü sahiptir.**
 
- Kod çözümleme İlkesi iade edildi tüm dosyalar şu anda açık çözümde olmasını gerektirir. Bu hata, açık olan bir çözüm yoktur, ancak "bekleyen onay işareti" görünümünde bazı dosyalar şu anda açık çözüm parçası olmayan tetiklenir. Bu hatayı düzeltmek için iade edilmesi dosyasını içeren çözümü açın.
+ Kod Analizi İlkesi, tüm dosyalar iade edilen içinde açık olan çözümü gerekir olmasını gerektirir. Açık bir çözüm yoktur, ancak bazı dosyalar "bekleyen iade etme" Görünümü'nde, şu anda açılan çözümü parçası değildir, bu hata ortaya çıkar. Bu hatayı düzeltmek için dosyanın iade edilmesini içeren çözümü açın.
 
- **Sürümü '{0}' doğru değil. Güçlü-ilkesinde belirtilen adı '{1}'.**
+ **Sürümü '{0}' doğru değil. Tanımlayıcı-ilkesinde belirtilen ad '{1}'.**
 
- Bu hata, .NET projeler için geçerlidir. Kod çözümleme İlkesi tarafından istenen bir kural .dll yerel bilgisayarda var ancak sürüm/ortak anahtar eşleşmiyor. Bu hatayı düzeltmek için ilke Oluşturucusu .dll güncelleştirmeniz gerekir *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static analiz Tools\FxCop\Rules\\*  bilgisayarlarında dizin.
+ Bu hata, .NET projelerine yöneliktir. Kod Analizi İlkesi tarafından gerekli bir kural .dll dosyasını yerel bilgisayarda var, ancak sürüm/genel anahtar eşleşmiyor. Bu hatayı düzeltmek için ilke Oluşturucusu .dll içinde güncelleştirme *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static analiz Tools\FxCop\Rules\\*  bilgisayarlarında dizin.
 
  **'{0}' ilkesinde belirtilen derleme yok.**
 
- Bu hata, .NET projeler için geçerlidir. Kod çözümleme İlkesi tarafından istenen bir kural, istemci bilgisayarda yüklü karşılık gelen dll yok. Bu hatayı düzeltmek için ilke Oluşturucusu DLL'de güncelleştirmelisiniz *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static analiz Tools\FxCop\Rules\\*  bilgisayarlarında dizin.
+ Bu hata, .NET projelerine yöneliktir. Kod Analizi İlkesi tarafından gerekli bir kural, istemci bilgisayarda yüklü karşılık gelen dll yok. Bu hatayı düzeltmek için ilke Oluşturucu DLL'de güncelleştirmeniz gerekir *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static analiz Tools\FxCop\Rules\\*  bilgisayarlarında dizin.
 
- **Proje {0} kural ayarları olmayan kod çözümleme İlkesi ile uyum içinde.**
+ **Proje {0} kural ayarları olmayan kod analizi İlkesi ile uyum içinde.**
 
- Bu hata, .NET projeler için geçerlidir. Yönetilen kod kural ayarları İlkesi gerektiriyor olarak kesin değildir. Bu hatayı düzeltmek için istemci ayarını aynı olması gerekir veya sunucu üzerindeki ilke daha katı.
+ Bu hata, .NET projelerine yöneliktir. Yönetilen kod kuralları ayarları İlkesi gerektirdiği katı değil. Bu hatayı düzeltmek için istemci ayarı aynı olmalıdır veya sunucu üzerindeki ilke gereksinimi öğesinden daha katıdır.
 
- **Kod çözümleme etkin yapılandırmasına etkin değil. Geçiş için yapılandırma {0} ve projeyi {1} iade etmeden önce.**
+ **Kod Analizi etkin yapılandırma üzerinde etkin değil. Geçiş için yapılandırma {0} ve proje {1} iade etmeden önce.**
 
- İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]etkin yapılandırma etkin Kod Analizi yok ancak etkinleştirilmiş en az bir kod analizi yok.
+ İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]etkin yapılandırmayı Kod Analizi etkin olmayan, ancak en az bir kod analizi Etkin yoktur.
 
- **Projede yönetilen ikili dosyaları için Kod Analizi etkinleştirmelisiniz {0} özellikleri ve iade etmeden önce oluşturma.**
+ **Proje içinde yönetilen ikililer için kod analizini etkinleştir {0} özellikleri ve iade etmeden önce derleme.**
 
- Bu hata uygulandığı [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] .NET uygulamaları. Gerçekleştirilecek yönetilen kod çözümleme İlkesi gerektiriyor, ancak geçerli projede istemci üzerinde etkin değil.
+ Bu hata uygulandığı [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] .NET uygulamaları. Gerçekleştirilecek yönetilen kod analizi İlkesi gerektiriyor, ancak istemcide geçerli projede etkin değil.
 
- **Kod çözümleme projesinde etkinleştirmelisiniz {0} özellikleri ve iade etmeden önce oluşturma.**
+ **Projede kod analizini etkinleştir {0} özellikleri ve iade etmeden önce derleme.**
 
- Bu hata uygulanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeleri ve Web projeleri. Gerçekleştirilecek yönetilen kod çözümleme İlkesi gerektiriyor, ancak geçerli projede istemci üzerinde etkin değil.
+ Bu hata için uygulanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeleri ve web projeleri. Gerçekleştirilecek yönetilen kod analizi İlkesi gerektiriyor, ancak istemcide geçerli projede etkin değil.
 
- **C/C++ Kod Analizi projesinde etkinleştirmelisiniz {0} özellikleri ve iade etmeden önce oluşturma.**
+ **C/C++ Kod Analizi projede etkinleştirmelisiniz {0} özellikleri ve iade etmeden önce derleme.**
 
- Bu hata, yönetilmeyen projeler için geçerlidir. Kod çözümleme İlkesi C/C++ için Kod Analizi gerektirir, ancak geçerli projede istemci üzerinde etkin değil.
+ Bu hata, yönetilmeyen projeler için geçerlidir. Kod Analizi İlkesi C/C++ için Kod Analizi gerektirir, ancak istemcide geçerli projede etkin değil.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Kod Çözümleme Uygulama Hataları](../code-quality/code-analysis-application-errors.md)

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf1bf06a39036845dc6a2f48c3f0d5f537da01
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37947483"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177120"
 ---
-# <a name="comparing-properties-and-items"></a>Özellikleri ve öğeleri karşılaştırma
+# <a name="compare-properties-and-items"></a>Özellikleri ve öğeleri karşılaştırma
 MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır.  
   
 -   Özellikler, ad-değer çiftleridir. Daha fazla bilgi için [MSBuild özellikleri](../msbuild/msbuild-properties.md).  

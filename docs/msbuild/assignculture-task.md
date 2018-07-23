@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 233088958605c5d03f5ad5ce932b63868729e6c0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf333c5339ce9a4d6046fb5156e37157004491b9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945513"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177886"
 ---
 # <a name="assignculture-task"></a>AssignCulture görevi
 Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanımlayıcı dizesi içerebilir öğelerinin bir listesini kabul eder ve adlı bir meta veri içermeyen öğeleri üretir `Culture` karşılık gelen içeren kültür tanımlayıcısı. Örneğin, dosya adı *Form1.fr-fr.resx* bu görev meta verilerle aynı dosya adını içeren bir öğe oluşturur tanımlayıcı "fr-fr", katıştırılmış bir kültür bulunduğundan `Culture` eşit `fr-fr`. Görev, dosya adları listesini de dosya kaldırıldı kültürüyle üretir.  
@@ -74,10 +74,10 @@ Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanım
   
 |Öğe koleksiyonu|İçindekiler|  
 |---------------------|--------------|  
-|`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx` (ek meta veri yok)|  
-|`OutAssignedFilesWithCulture`|`MyResource1.fr.resx (Culture="fr")`|  
-|`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (ek meta veri yok)|  
-|`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`ek meta veri yok)|  
+|`OutAssignedFiles`|*MyResource1.fr.resx* (kültür = "fr")<br /><br /> *MyResource2.XX.resx* (ek meta veri yok)|  
+|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (kültür = "fr")|  
+|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (ek meta veri yok)|  
+|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (kültür = "fr")<br /><br /> *MyResource2.XX.resx* (ek meta veri yok)|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   

@@ -18,91 +18,91 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118089"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180431"
 ---
 # <a name="troubleshoot-service-references"></a>Hizmet başvurularında sorun giderme
 
-Bu konuda, Windows Communication Foundation (WCF) veya Visual Studio'da WCF Veri Hizmetleri başvuruları ile çalışırken oluşabilecek yaygın sorunlar listelenmiştir.
+Bu konuda, Windows Communication Foundation (WCF) veya Visual Studio'da WCF Veri Hizmetleri başvuruları ile çalışırken oluşabilecek genel sorunları listelemektedir.
 
-## <a name="error-returning-data-from-a-service"></a>Bir hizmetinden veri döndürme hatası
+## <a name="error-returning-data-from-a-service"></a>Verileri hizmetten döndürülürken hata oluştu
 
-Döndüğünüzde bir `DataSet` veya `DataTable` bir hizmetinden bir "gelen iletiler için en büyük boyutu kotası aşıldı" özel alabilirsiniz. Varsayılan olarak, `MaxReceivedMessageSize` özelliği bazı bağlamaları için hizmet reddi saldırılarına maruz sınırlamak için görece küçük bir değere ayarlanır. Özel durum önlemek için bu değeri artırabilirsiniz. Daha fazla bilgi için bkz. <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Döndüğünüzde bir `DataSet` veya `DataTable` bir hizmetten bir "gelen iletiler için en büyük boyut kotası aşıldı" özel durumu alabilirsiniz. Varsayılan olarak, `MaxReceivedMessageSize` bazı bağlamalar özelliği, hizmet reddi saldırılarına maruz kalma riskinizi sınırlamak için görece küçük bir değere ayarlanır. Özel durum önlemek için bu değeri artırabilirsiniz. Daha fazla bilgi için bkz. <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 Bu hatayı düzeltmek için:
 
 1.  İçinde **Çözüm Gezgini**, çift *app.config* dosyasını açın.
 
-2.  Bulun `MaxReceivedMessageSize` özellik ve daha büyük bir değerle değiştirin.
+2.  Bulun `MaxReceivedMessageSize` özellik ve daha büyük bir değere değiştirin.
 
-## <a name="cannot-find-a-service-in-my-solution"></a>Bir hizmet çözümümde bulunamıyor
+## <a name="cannot-find-a-service-in-my-solution"></a>Bir hizmet çözümüm içinde bulunamıyor
 
-Tıkladığınızda **bulma** düğmesini **hizmeti başvuruları ekleme** iletişim kutusu, çözüm bir veya daha fazla WCF Hizmeti Kitaplığı projelerinde Hizmetler listesinde görünmez. Bir hizmet kitaplığı çözüme eklendi ancak henüz derlenmiş bu durum ortaya çıkabilir.
-
-Bu hatayı düzeltmek için:
-
--   İçinde **Çözüm Gezgini**, WCF Hizmeti kitaplığı projeyi sağ tıklatın ve **yapı**.
-
-## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Uzak Masaüstü üzerinden bir hizmet erişilirken hata oluştu
-
-Bir kullanıcı eriştiğinde, bir Web barındırılan bir WCF hizmeti üzerinden bir Uzak Masaüstü Bağlantısı ve kullanıcı yönetici izinlerine sahip değilse, NTLM kimlik doğrulaması kullanılır. Kullanıcı, kullanıcı yönetim izinlerine sahip değilse, aşağıdaki hata iletisini alabilirsiniz: "istemci kimlik doğrulama şeması 'Anonymous' HTTP isteği yetkilendirilmemiş. Sunucudan alınan kimlik doğrulama üstbilgisi 'NTLM' idi."
+Tıkladığınızda **bulma** düğmesine **hizmet başvuruları ekleme** iletişim kutusu, bir veya daha fazla WCF hizmet kitaplığı projeleri çözümdeki Hizmetler listesinde görünmez. Bu hizmet kitaplığı çözüme eklendi ancak henüz derlenmiş ortaya çıkabilir.
 
 Bu hatayı düzeltmek için:
 
-1.  Web sitesi projeyi açın **özellikleri** sayfaları.
+-   İçinde **Çözüm Gezgini**, WCF hizmet kitaplığı projesi sağ tıklatıp **yapı**.
 
-2.  Üzerinde **başlangıç seçenekleri** sekmesi, Temizle **NTLM kimlik doğrulaması** onay kutusu.
+## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Bir hizmet Uzak Masaüstü erişilirken hata oluştu
+
+Bir kullanıcı eriştiğinde bir Web barındırılan WCF hizmeti üzerinden bir Uzak Masaüstü Bağlantısı ve kullanıcı yönetici izinlerine sahip değil, NTLM kimlik doğrulaması kullanılır. Kullanıcı, kullanıcı yönetici izinlerine sahip değilse, aşağıdaki hata iletisini alabilirsiniz: "HTTP istek istemci kimlik doğrulama düzeni 'Anonymous' yetkilendirilmemiş. Sunucudan alınan kimlik doğrulama üst bilgisi 'NTLM' sağladı."
+
+Bu hatayı düzeltmek için:
+
+1.  Web sitesi projeyi **özellikleri** sayfaları.
+
+2.  Üzerinde **Başlat seçenekleri** sekmesi, NET **NTLM kimlik doğrulaması** onay kutusu.
 
     > [!NOTE]
-    > NTLM kimlik doğrulaması yalnızca özel olarak WCF hizmetlerini içeren Web siteleri için kapatmanız. WCF hizmetleri için güvenlik yapılandırma yoluyla yönetilir *web.config* dosya. Bu, NTLM kimlik doğrulaması gereksiz kılar.
+    > NTLM kimlik doğrulama özel olarak WCF hizmetlerini içeren Web siteleri için etkinleştirmeniz gerekir. WCF hizmetleri için güvenlik yapılandırmada aracılığıyla yönetilir *web.config* dosya. Bu, NTLM kimlik doğrulaması gereksiz kılar.
 
-## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Erişim düzeyi ayarı oluşturulan sınıflar için herhangi bir etkisi olmaz.
+## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Erişim düzeyi ayarı sınıflar için hiçbir etkisi olmaz.
 
-Ayarı **erişim düzeyi oluşturulan sınıflar için** seçeneğini **Yapılandırma hizmeti başvuruları** iletişim kutusuna **dahili** veya **arkadaş** her zaman çalışmayabilir. Seçeneği iletişim kutusunda ayarlanacak görünse bile, sonuçta elde edilen destek sınıfları erişim düzeyi ile oluşturulan `Public`.
+Ayarı **erişim sınıflar için erişim düzeyi** seçeneğini **yapılandırma hizmet başvuruları** iletişim kutusuna **dahili** veya **arkadaş** her zaman çalışmayabilir. İletişim kutusunda ayarlanacak seçenek görünür olsa da, sonuçta elde edilen destek sınıfları bir erişim düzeyi ile oluşturulan `Public`.
 
-Bu bilinen olanlar kullanılarak serileştirilmiş gibi belirli türde bir kısıtlamadır <xref:System.Xml.Serialization.XmlSerializer>.
+Bu bilinen gibi bu kullanılarak serileştirilmiş belirli bir türdeki sınırlamasıdır <xref:System.Xml.Serialization.XmlSerializer>.
 
-## <a name="error-debugging-service-code"></a>Hata hata ayıklama hizmet kodu
+## <a name="error-debugging-service-code"></a>Hata ayıklama hizmet kodu
 
-İstemci koddan bir WCF hizmeti için koda adım, eksik simgeleri ilgili bir hata alabilirsiniz. Çözümünüzü parçası olan bir hizmeti taşınmış veya çözümden kaldırıldığında bu durum oluşabilir.
+İstemci kodundan bir WCF hizmeti için kodun içine adımladığınızda eksik sembollere ilgili bir hata alabilirsiniz. Çözümünüzün bir parçası olan bir hizmeti taşındığında veya çözümden kaldırıldı. Bu durum oluşabilir.
 
-İlk kez geçerli çözümünün bir parçası olan bir WCF hizmetine başvuru eklediğinizde, açık derleme bağımlılığına hizmet projesi ve hizmeti istemci projesi arasında eklenir. Bu, istemci her zaman güncel hizmeti ikili dosyalarını, istemci kodu hizmet koda atlama gibi senaryolar hata ayıklama için özellikle önemli olduğu erişme garanti eder.
+İlk geçerli çözümün bir parçası olan bir WCF hizmeti bir başvuru eklediğinizde, hizmet istemci projesi ve hizmet projesi arasında açık derleme bağımlılık eklenir. Bu, istemci her zaman güncel hizmet ikili dosyaları, istemci kodundan hizmet kodun içine Adımlama gibi senaryoları hata ayıklama için özellikle önemli olduğu erişimi olduğunu garanti eder.
 
-Hizmet projesinin çözümden kaldırılırsa, bu açık derleme bağımlılığı geçersiz kılınır. Visual Studio artık hizmeti projesi yapılana gerektiğinde garanti edebilir.
+Hizmet projeyi çözümden kaldırılırsa, bu açık derleme bağımlılık geçersiz kılınır. Visual Studio artık hizmet projesi yapılana gerektiğinde garanti edebilir.
 
-Bu hatayı düzeltmek için el ile hizmet projeyi yeniden vardır:
+Bu hatayı düzeltmek için hizmet projesi el ile yeniden oluşturmanız gerekir:
 
-1.  Üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.
+1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
-2.  İçinde **seçenekleri** iletişim kutusunda, genişletin **projeler ve çözümler**ve ardından **genel**.
+2.  İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **genel**.
 
-3.  Olduğundan emin olun **Göster Gelişmiş derleme yapılandırmaları** onay kutusu seçilidir ve ardından **Tamam**.
+3.  Emin olun **Show Gelişmiş derleme yapılandırmaları** onay kutusunun seçili olduğundan ve ardından **Tamam**.
 
-4.  WCF hizmet projesi yükleyin.
+4.  WCF hizmet projesini yükleyin.
 
-5.  İçinde **Configuration Manager** iletişim kutusu, kümesi **etkin çözüm yapılandırması** için **hata ayıklama**. Daha fazla bilgi için bkz: [nasıl yapılır: oluşturma ve düzenleme yapılandırmaları](../ide/how-to-create-and-edit-configurations.md).
+5.  İçinde **Configuration Manager** iletişim kutusu, kümesi **etkin çözüm yapılandırması** için **hata ayıklama**. Daha fazla bilgi için [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
 
 6.  İçinde **Çözüm Gezgini**, WCF Hizmeti projesini seçin.
 
-7.  Üzerinde **yapı** menüsünde tıklatın **yeniden** WCF Hizmeti projeyi oluşturmak için.
+7.  Üzerinde **derleme** menüsünde tıklatın **yeniden** WCF Hizmeti projeyi yeniden derlemek için.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Veri Hizmetleri tarayıcıda görüntüleme
 
-Ne zaman çalışır bir XML temsili verileri görüntülemek bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], Internet Explorer verileri bir RSS akışı olarak hatalı yorumlayan. RSS akışları görüntüleme seçeneği devre dışı bırakıldığından emin olun.
+Ne zaman çalışır bir XML temsilini verileri görüntülemek bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], Internet Explorer verileri bir RSS akışı olarak hatalı yorumlayan. RSS akışlarını görüntüleme seçeneğinin devre dışı bırakıldığından emin olun.
 
-Bu hatayı düzeltmek için RSS akışları devre dışı bırakın:
+Bu hatayı düzeltmek için RSS akışı devre dışı bırakın:
 
-1.  Internet Explorer'da, üzerinde **Araçları** menüsünde tıklatın **Internet Seçenekleri**.
+1.  Internet Explorer'da üzerinde **Araçları** menüsünde tıklatın **Internet Seçenekleri**.
 
-2.  Üzerinde **içerik** sekmesinde **akışları** 'yi tıklatın **ayarları**.
+2.  Üzerinde **içerik** sekmesinde **akışları** bölümünde **ayarları**.
 
-3.  İçinde **akış ayarları** iletişim kutusu, Temizle **akış üzerinde Okuma Görünümü Aç** onay kutusunu işaretleyin ve ardından **Tamam**.
+3.  İçinde **akış ayarları** iletişim kutusu, NET **akış okuma görünümünde açmak** onay kutusunu işaretleyin ve ardından **Tamam**.
 
-4.  Tıklatın **Tamam** kapatmak için **Internet Seçenekleri** iletişim kutusu.
+4.  Tıklayın **Tamam** kapatmak için **Internet Seçenekleri** iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

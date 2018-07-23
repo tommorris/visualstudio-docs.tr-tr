@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704882"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176391"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser Komutu
-Bir Web tarayıcı penceresinde da tümleşik geliştirme ortamı (IDE) ya da dış IDE içinde belirttiğiniz URL'yi görüntüler.
+
+Tümleşik geliştirme ortamı (IDE) veya IDE dışında içindeki bir web tarayıcı penceresinde belirttiğiniz URL'yi görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,17 +40,17 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="switches"></a>Anahtarlar
  / Yeni
 
- İsteğe bağlı. Sayfaya yeni bir Web tarayıcısı örneğini görüntüleneceğini belirtir.
+ İsteğe bağlı. Sayfayı yeni bir web tarayıcısı örneğini görüntüleneceğini belirtir.
 
  /ext
 
- İsteğe bağlı. Sayfa IDE dışında varsayılan Web tarayıcısında görüntüleneceğini belirtir.
+ İsteğe bağlı. Sayfa IDE dışında varsayılan web tarayıcısında görüntüleneceğini belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
  Diğer **ShowWebBrowser** komutu **gidin** veya **nav**.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bir Web tarayıcısında IDE dışında MSDN çevrimiçi giriş sayfasını görüntüler. Web tarayıcısı örneği zaten açıksa kullanılır; Aksi halde yeni bir örneğini başlatılır.
+ Aşağıdaki örnek, IDE dışında bir web tarayıcısında MSDN Online Giriş sayfasında gösterilir. Web tarayıcısının bir örneği zaten açıksa kullanılır; Aksi halde yeni bir örneğini başlattınız.
 
 ```cmd
 >View.ShowWebBrowser http://msdn.microsoft.com /ext

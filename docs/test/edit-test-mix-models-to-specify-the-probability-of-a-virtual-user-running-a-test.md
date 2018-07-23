@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2459d50df3c54defc24c07bc1509b4e15c2c748
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153062"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180447"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bir testi çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme
 
@@ -26,19 +26,19 @@ ms.locfileid: "39153062"
 
 Yük testi senaryonuzun aşağıdaki test karışımı modeli seçeneklerinden birini belirtebilirsiniz:
 
--   **Toplam test sayısı tabanlı:** sanal kullanıcı bir test yinelemesi başlattığında hangi Web performans veya birim testi çalıştırma belirler. Yük testi sonunda, belirli bir testin çalışma sayısı, atanan test dağıtımını eşleşir. Bu test karışımı modeli, test karışımını bir IIS günlüğü ya da üretim verilerindeki işlem yüzdeleri dayandırırken kullanın.
+-   **Toplam test sayısı tabanlı:** sanal kullanıcı bir test yinelemesi başlattığında hangi web performans veya birim testi çalıştırma belirler. Yük testi sonunda, belirli bir testin çalışma sayısı, atanan test dağıtımını eşleşir. Bu test karışımı modeli, test karışımını bir IIS günlüğü ya da üretim verilerindeki işlem yüzdeleri dayandırırken kullanın.
 
--   **Sanal kullanıcı sayısına göre:** belirli bir Web performans veya birim testi çalıştıracak sanal kullanıcıların yüzdesini belirler. Yük testi içindeki herhangi bir noktada, belirli bir testi çalıştıran kullanıcıların sayısı, atanan dağıtım eşleşir. Belirli bir testi çalıştıran kullanıcıların yüzdesi üzerinde test karışımını dayandırırken bu test karışımı modelini kullanın.
+-   **Sanal kullanıcı sayısına göre:** belirli bir web performans veya birim testi çalıştıracak sanal kullanıcıların yüzdesini belirler. Yük testi içindeki herhangi bir noktada, belirli bir testi çalıştıran kullanıcıların sayısı, atanan dağıtım eşleşir. Belirli bir testi çalıştıran kullanıcıların yüzdesi üzerinde test karışımını dayandırırken bu test karışımı modelini kullanın.
 
--   **Kullanıcı adımı tabanlı:** yük testi boyunca, her bir Web performans testi veya birim testi belirtilen sayıda kullanıcı, saat başına bir kez çalıştırılır. Bu test karışımı modeli, yük testi boyunca belirli bir hızda testi çalıştırmak için sanal kullanıcıların istediğinizde kullanın.
+-   **Kullanıcı adımı tabanlı:** yük testi boyunca, her bir web performans testi veya birim testi belirtilen sayıda kullanıcı, saat başına bir kez çalıştırılır. Bu test karışımı modeli, yük testi boyunca belirli bir hızda testi çalıştırmak için sanal kullanıcıların istediğinizde kullanın.
 
--   **Ardışık düzenine dayanan:** her sanal kullanıcı, testlerin senaryoda tanımlandığı sırada Web performans veya birim testleri çalıştırır. Sanal kullanıcı yük testi tamamlanana kadar testler içinde bu sırada dolaşma devam eder.
+-   **Ardışık düzenine dayanan:** her sanal kullanıcı, testlerin senaryoda tanımlandığı sırada web performans veya birim testleri çalıştırır. Sanal kullanıcı yük testi tamamlanana kadar testler içinde bu sırada dolaşma devam eder.
 
 ## <a name="tasks"></a>Görevler
 
 |Görevler|İlişkili Konular|
 |-----------|-----------------------|
-|**Yük testi için test karışımını belirtme:** bir yük testi oluşturduğunuzda, yük testi için ayarları belirtin **Yeni Yük Testi Sihirbazı**. İçinde **Yeni Yük Testi Sihirbazı**, ilk senaryoya eklemek için var olan Web ve birim testi seçin. Testleri senaryoya ekledikten sonra test karışımını senaryosu için belirtin.<br /><br /> Bir Web sitesi veya yük test ettiğiniz uygulamanın beklenen gerçek dünya kullanımını daha doğru bir şekilde tahmin etmek için yük modelleme seçenekleri kullanın. Bir doğru yük modeli dayalı olmayan bir yük testi yanıltıcı sonuçlara neden olabilir çünkü bunu yapmak önemlidir.|-   [Bir web sitesi veya uygulamanın beklenen gerçek hayatta kullanımı öykünün](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Yük testi için test karışımını belirtme:** bir yük testi oluşturduğunuzda, yük testi için ayarları belirtin **Yeni Yük Testi Sihirbazı**. İçinde **Yeni Yük Testi Sihirbazı**, ilk senaryoya eklemek için var olan web ve birim testi seçin. Testleri senaryoya ekledikten sonra test karışımını senaryosu için belirtin.<br /><br /> Bir yük testi Web sitesinin veya uygulamanın beklenen gerçek hayatta kullanımı daha doğru bir şekilde tahmin etmek için yük modelleme seçenekleri kullanın. Bir doğru yük modeli dayalı olmayan bir yük testi yanıltıcı sonuçlara neden olabilir çünkü bunu yapmak önemlidir.|-   [Web sitenize veya uygulamanıza beklenen gerçek dünya kullanımının öykünmesini](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Test karışımı modeli Düzenle:** kullanarak test karışımı modellerini birini kullanmak için bir yük testi senaryosuna değiştirebilirsiniz **Yük Testi Düzenleyicisi**.||
 |**Bir kullanıcı belirlediğiniz hızda ilerleyebileceğiniz test karışımı modeli için ilerleme gecikmesini yapılandırmak:** yük testi senaryonuzun kullanmak üzere yapılandırılmışsa **kullanıcı adım testi karışım modeli tabanlı**, ilerleme gecikme yapılandırılan dağıtım nasıl istediğinizi belirtebilirsiniz.|-   [Nasıl yapılır: kullanıcı adım testi karışım modeli kullanılırken Adım Gecikmesine dağıtımı Uygula](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
@@ -71,7 +71,7 @@ Kullanarak **Yük Testi Düzenleyicisi**, bir yük testi senaryosunda test karı
 
 6.  (İsteğe bağlı) Test karışımını kullanarak değiştirme **Ekle**, **Kaldır** ve **Dağıt** düğmeler ve dağıtım kaydırıcıları. Daha fazla bilgi için [bir yük testi senaryosunda dahil etmek için hangi testlerin belirlemek için test karışımını Düzenle](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  (İsteğe bağlı) Başlatma veya onay kutularını kullanarak ve istenen testleri seçerek sonlandırmak için bir Web başarım ve birim testi belirtin. Daha fazla bilgi için [Emulate gerçek hayatta kullanımı bir web sitesi veya uygulamanın beklenen](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7.  (İsteğe bağlı) Başlatma veya onay kutularını kullanarak ve istenen testleri seçerek sonlandırmak için bir web başarım ve birim testi belirtin. Daha fazla bilgi için [Emulate beklenen gerçek dünya kullanımının Web sitenize veya uygulamanıza](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
 8.  Seçin **Tamam**.
 

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0841faf5e63b6c4108b9f65777416ded63227bb9
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152441"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178419"
 ---
 # <a name="edit-load-tests"></a>Yük testlerini düzenleme
 
-Yük testleri, Web performans testleri veya bir sunucu aynı anda erişen birçok kullanıcının benzetimini yapmak için birim testleri çalıştırın. Bir yük testi uygulama stres ve performans verilerine erişmenizi sağlar. Bir yük testi, kullanıcı yükleri gibi çeşitli yük koşulları taklit etmek ve ağ türleri için yapılandırılabilir.
+Çalıştırma web başarım testi veya birim testleri, bir sunucu aynı anda erişen birçok kullanıcının benzetimini yapmak için yük testleri. Bir yük testi uygulama stres ve performans verilerine erişmenizi sağlar. Bir yük testi, kullanıcı yükleri gibi çeşitli yük koşulları taklit etmek ve ağ türleri için yapılandırılabilir.
 
 > [!NOTE]
 > Yük testi yalnızca Visual Studio 2017 Enterprise sürümünde kullanılabilir.
@@ -31,7 +31,7 @@ Bir yük testi tarafından tanımlanan *senaryoları*, *sayaç kümeleri*, ve *�
 
 ## <a name="edit-load-test-scenario-settings"></a>Yük testi senaryosu ayarlarını Düzenle
 
-Bir senaryo, bir kullanıcı grubu, bir sunucu uygulaması ile nasıl etkileşimde bulunduğunu modellemek için kullanılır. Bir senaryo, bir yük düzeni, test karışımı modeli, test karışımı, tarayıcı karışımı ve ağ karışımını oluşur. Bir yük testi birden fazla senaryosu olabilir ve tek bir senaryo, Web performans testleri ve birim testleri içerebilir. Gruplandırma benzer ayarıyla birlikte, bir senaryo grup ve testler bir yapıdaki birlikte çalıştırmanıza olanak tanır.
+Bir senaryo, bir kullanıcı grubu, bir sunucu uygulaması ile nasıl etkileşimde bulunduğunu modellemek için kullanılır. Bir senaryo, bir yük düzeni, test karışımı modeli, test karışımı, tarayıcı karışımı ve ağ karışımını oluşur. Bir yük testi birden fazla senaryosu olabilir ve tek bir senaryo, web performans testleri ve birim testleri içerebilir. Gruplandırma benzer ayarıyla birlikte, bir senaryo grup ve testler bir yapıdaki birlikte çalıştırmanıza olanak tanır.
 
 Daha fazla bilgi için [yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md) ve [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
 

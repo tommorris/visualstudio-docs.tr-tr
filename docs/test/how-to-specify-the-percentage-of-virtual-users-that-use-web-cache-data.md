@@ -1,5 +1,5 @@
 ---
-title: Sanal kullanım Web önbellek verilerini Yük için Visual Studio'da Test kullanıcı yüzdesi belirtin
+title: Sanal yük için kullanım Web önbellek verilerini Visual Studio'da Test kullanıcı yüzdesi belirtin
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,41 +10,41 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447264"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180057"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Nasıl yapılır: Web Önbellek Verilerini Kullanan Sanal Kullanıcıların Yüzdesini Belirtme
 
-Yük testi ile oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, senaryoları özelliklerini kullanarak test gereksinimlerini ve hedeflerinizi karşılayacak şekilde değiştirebilirsiniz **Yük Testi Düzenleyicisi**. Yük testi senaryosu özellikleri ve açıklamalarının tam listesi için bkz: [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
+İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, senaryoları özelliklerini kullanarak test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirebilirsiniz **Yük Testi Düzenleyicisi**. Yük testi senaryosu özelliklerini ve açıklamalarının tam listesi için bkz [yük testi senaryo özellikleri](../test/load-test-scenario-properties.md).
 
-**Yeni kullanıcı yüzdesi** özelliği Özellikler penceresinde ayarlanır. Yük Testi Düzenleyicisi'nde yük testi senaryosu özellikleri düzenleyin.
+**Yeni kullanıcıların yüzdesini** özelliği, Özellikler penceresinde ayarlanır. Yük Testi Düzenleyicisi'nde yük testi senaryosu özelliklerini düzenleme.
 
-**Yeni kullanıcı yüzdesi** özelliği, bir Web tarayıcısı tarafından gerçekleştirilen yük testi benzetim önbelleğe alma biçimini etkiler. Varsayılan olarak, **yeni kullanıcı yüzdesi** özelliğini % 0'a ayarlayın. Varsa değeri **yeni kullanıcı yüzdesi** özelliğini % 100'e ayarlayın, bir yük testinde çalışan her Web performans testi içeriklerin Web sitesinden kendi previ tarayıcı önbelleğinden olmayan Web sitesi için ilk kullanıcı gibi kabul edilir OU'lar ziyaret eder. Bu nedenle, Web testinde görüntüleri gibi tüm bağımlı istekleri dahil olmak üzere tüm istekler indirilir.
+**Yeni kullanıcıların yüzdesini** özelliği bir web tarayıcısı tarafından gerçekleştirilen yük testi taklit eden önbelleğe almayı biçimini etkiler. Varsayılan olarak, **yeni kullanıcıların yüzdesini** özelliği % 0'a ayarlayın. Varsa değerini **yeni kullanıcıların yüzdesini** özelliği, % 100'e ayarlandığında, her web performans testi yük testi çalıştırma gibi ilk kullanıcı Web sitesine kabul edilir kullanan herhangi bir içerik Web sitesinden kendi tarayıcı önbelleğinden yok Önceki ziyaretler. Bu nedenle, tüm istekler görüntüleri gibi tüm bağımlı istekleri dahil olmak üzere web testinde indirilir.
 
 > [!NOTE]
-> Aynı alınabilir kaynak birden çok kez web testinde istendiğinde, istekler indirilmez.
+> İsteklerin önbelleğe aynı kaynağa birden çok kez web testinde istendiğinde yüklenmez.
 
-Çok sayıda görüntülerine sahip büyük bir olasılıkla dönüş kullanıcılar bir Web sitesi test yük varsa ve bu diğer alınabilir yerel olarak ardından bir ayar için % 100 oranında önbelleğe alınmış içeriği **yeni kullanıcı yüzdesi** özelliği daha üretir Gerçek kullanımını oluşacak fazla indirme istek. Bu durumda, kullanıcılar ilk kez web sitesinin ve ayarlama ziyaretleriniz Web sitenize yüzdesini tahmin **yeni kullanıcı yüzdesi** özelliği uygun şekilde.
+Yük testi çok sayıda görüntü sahip olma olasılıkları dönüş kullanıcılar sahip bir Web sitesi ise ve diğer önbelleğe içerik yerel olarak, ardından bir ayar için % 100 önbelleğe **yeni kullanıcıların yüzdesini** özelliği daha fazla oluşturacağını karşıdan yükleme isteği gerçek hayat oluşacak. Bu durumda, kullanıcılar ilk kez Web sitesinin ve ayarlama ziyaretler sitenize yüzdesini tahmin etmelidir **yeni kullanıcıların yüzdesini** özelliği uygun şekilde.
 
-## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Bir senaryo için yeni kullanıcı yüzdesini belirtmek için
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Bir senaryo için yeni kullanıcıların yüzdesini belirtmek için
 
 1. Bir yük testi açın.
 
-     **Yük Testi Düzenleyicisi** görüntülenir. Yük testi ağacı görüntülenir.
+     **Yük Testi Düzenleyicisi** görünür. Yük testi ağacında görüntülenir.
 
-2. Ağaçları yük testi **senaryoları** klasörü, yeni kullanıcı yüzdesi değerini değiştirmek istediğiniz senaryo düğümünü seçin.
+2. Yük testi **senaryoları** klasörü için yeni kullanıcı yüzde değeri değiştirmek istediğiniz senaryoyu düğümünü seçin.
 
-3. Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
+3. Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
 
-     Senaryonun kategoriler ve Özellikler Özellikler penceresinde görüntülenir.
+     Senaryonun kategoriler ve özellikler, Özellikler penceresinde görüntülenir.
 
-4. Değeri ayarlanamıyor **yeni kullanıcı yüzdesi** yeni kullanıcı yüzdesi için bir sayı girerek özelliği.
+4. Değerini **yeni kullanıcıların yüzdesini** birkaç yeni kullanıcıların yüzdesi için girerek özelliği.
 
-5. Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından yeni kullanarak yük testlerini çalıştırabilirsiniz **yeni kullanıcı yüzdesi** değeri.
+5. Özelliği değiştirmeyi bitirdikten sonra seçin **Kaydet** üzerinde **dosya** menüsü. Daha sonra yeni kullanarak yük testlerini çalıştırabilirsiniz **yeni kullanıcıların yüzdesini** değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

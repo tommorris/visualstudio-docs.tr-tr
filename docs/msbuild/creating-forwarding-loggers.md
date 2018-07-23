@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c57229ea260ef2429273fab0d3220319b61c1dc7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946813"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179209"
 ---
 # <a name="create-forwarding-loggers"></a>İletme günlükçüleri oluşturma
 İletme günlükçüleri çok işlemcili bir sistemde projeler derlerken izlemek istediğiniz olayları seçin vererek günlük verimliliği artırın. İletme günlükçüleri etkinleştirerek merkezi Günlükçü aşırı yüklenilmesini, derleme zamanı yavaşlatmasını ve günlüğünüzün yığılmak istenmeyen olayları engelleyebilirsiniz.  
@@ -41,6 +41,6 @@ ms.locfileid: "37946813"
  Çok işlemcili bir sistemde bir proje oluşturduğunuzda, her işlemci derleme iletilerden otomatik olarak birleştirilmiş bir dizisinde, araya eklemeli değil. Bunun yerine, bir ileti önceliği kullanarak gruplandırma kurmak <xref:Microsoft.Build.Framework.BuildEventContext> her iletiye sınıfı. Birden çok işlemcili oluşturma hakkında daha fazla bilgi için bkz. [çok işlemcili ortamda oturum açma](../msbuild/logging-in-a-multi-processor-environment.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Derleme günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Derleme günlükleri alın](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Günlükçüleri derleme](../msbuild/build-loggers.md)   
  [Birden çok işlemcili ortamda oturum açma](../msbuild/logging-in-a-multi-processor-environment.md)

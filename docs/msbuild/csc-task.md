@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ce653c1b7f8eb3b7118fac3ab61f40ba77082e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1cce49157ad4c9c811c51ba0c491b3e97fea1736
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945890"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177223"
 ---
 # <a name="csc-task"></a>Csc görevi
 Sarmalar *csc.exe*, yürütülebilir dosyalar oluşturur (*.exe* dosyaları), dinamik bağlantı kitaplıklarını (*.dll* dosyaları), veya kod modüllerini (*.netmodule* dosyaları). Hakkında daha fazla bilgi için *csc.exe*, bkz: [C# Derleyici Seçenekleri](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -60,12 +60,12 @@ Sarmalar *csc.exe*, yürütülebilir dosyalar oluşturur (*.exe* dosyaları), di
 |`ModuleAssemblyName`|İsteğe bağlı `String` parametresi.<br /><br /> Bu modül bir parçası olacağı derlemenin adını belirtir.|  
 |`NoConfig`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, derleyiciye derleme değil *csc.rsp* dosya. Daha fazla bilgi için [- noconfig (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option).|  
 |`NoLogo`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, derleyici başlık bilgilerinin görüntülenmesini bastırır. Daha fazla bilgi için [- nologo (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option).|  
-|`NoStandardLib`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, tüm sistem ad alanını tanımlayan mscorlib.dll alma engeller. Tanımlayın veya kendi sistem ad alanı ve nesneler oluşturmak istiyorsanız bu parametreyi kullanın. Daha fazla bilgi için [- nostdlib (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).|  
+|`NoStandardLib`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, içe engeller *mscorlib.dll*, tüm sistem ad alanı tanımlar. Tanımlayın veya kendi sistem ad alanı ve nesneler oluşturmak istiyorsanız bu parametreyi kullanın. Daha fazla bilgi için [- nostdlib (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).|  
 |`NoWin32Manifest`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, varsayılan Win32 bildirimini içermez.|  
 |`Optimize`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, iyileştirmeler sağlar. Varsa `false`, iyileştirmeleri devre dışı bırakır. Daha fazla bilgi için [-(C# Derleyici Seçenekleri) en iyi duruma getirme](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Çıkış dosyasının adını belirtir. Daha fazla bilgi için [-out (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
 |`OutputRefAssembly`|İsteğe bağlı `String` parametresi.<br /><br /> Çıkış başvurusu derleme dosyasının adını belirtir. Daha fazla bilgi için [- refonly (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
-|`PdbFile`|İsteğe bağlı `String` parametresi.<br /><br /> Hata ayıklama bilgi dosyası adını belirtir. .Pdb uzantısına sahip çıkış dosyası adı varsayılan addır.|  
+|`PdbFile`|İsteğe bağlı `String` parametresi.<br /><br /> Hata ayıklama bilgi dosyası adını belirtir. Çıkış dosya adından varsayılan addır bir *.pdb* uzantısı.|  
 |`Platform`|İsteğe bağlı `String` parametresi.<br /><br /> Çıktı dosyası tarafından hedeflenecek işlemci platformu belirtir. Bu parametre değerini alabilir `x86`, `x64`, veya `anycpu`. Varsayılan değer `anycpu`. Daha fazla bilgi için [-platform (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Geçerli projenin içine belirtilen öğelerden genel tür bilgileri aktarmak görev neden olur. Daha fazla bilgi için [-başvurusu (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Belirtebileceğiniz bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] başvuru diğer adı içinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] meta veriler ekleyerek dosya `Aliases` özgün "Başvuru" öğe. Örneğin, diğer ad aşağıdaki Csc komut satırında "LS1" ayarlamak için şunu yazın:<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> kullanın:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
 |`Resources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Katıştıran bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] çıkış dosyasına kaynak.<br /><br /> Bu parametrede aktarılan öğeleri adlı isteğe bağlı meta veri girdileri olabilir `LogicalName` ve `Access`. `LogicalName` karşılık gelen `identifier` parametresinin `/resource` geçiş, ve `Access` karşılık gelen `accessibility-modifier` parametresi. Daha fazla bilgi için [-kaynak (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
@@ -78,9 +78,9 @@ Sarmalar *csc.exe*, yürütülebilir dosyalar oluşturur (*.exe* dosyaları), di
 |`WarningLevel`|İsteğe bağlı `Int32` parametresi.<br /><br /> Görüntülenecek derleyici uyarı düzeyini belirtir. Daha fazla bilgi için [-warn (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).|  
 |`WarningsAsErrors`|İsteğe bağlı `String` parametresi.<br /><br /> Hata olarak değerlendirilecek uyarıların bir listesini belirtir. Daha fazla bilgi için [- warnaserror (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Bu parametre geçersiz kılar `TreatWarningsAsErrors` parametresi.|  
 |`WarningsNotAsErrors`|İsteğe bağlı `String` parametresi.<br /><br /> Hata olarak görülmeyen uyarıların bir listesini belirtir. Daha fazla bilgi için [- warnaserror (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Bu parametre yalnızca yararlıdır, `TreatWarningsAsErrors` parametrenin ayarlanmış `true`.|  
-|`Win32Icon`|İsteğe bağlı `String` parametresi.<br /><br /> Çıktı dosyasına dosya Gezgini'nde istenen görünümü verir derlemede bir .ico simge dosyası ekler. Daha fazla bilgi için [-win32icon (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).|  
+|`Win32Icon`|İsteğe bağlı `String` parametresi.<br /><br /> Ekler bir *.ico* çıkış dosyası istenen görünümü verir, bütünleştirilmiş kod dosyasında **dosya Gezgini**. Daha fazla bilgi için [-win32icon (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).|  
 |`Win32Manifest`|İsteğe bağlı `String` parametresi.<br /><br /> Dahil edilecek Win32 bildirimi belirtir.|  
-|`Win32Resource`|İsteğe bağlı `String` parametresi.<br /><br /> Bir Win32 kaynağı (.res) dosyası çıkış dosyasına ekler. Daha fazla bilgi için [-win32res (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
+|`Win32Resource`|İsteğe bağlı `String` parametresi.<br /><br /> Bir Win32 kaynağı ekler (*.res*) çıktı dosyasına dosya. Daha fazla bilgi için [-win32res (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan `Microsoft.Build.Tasks.ManagedCompiler` öğesinden devralan sınıf <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).  

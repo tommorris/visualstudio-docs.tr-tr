@@ -1,5 +1,5 @@
 ---
-title: Test aracıları yapılandırma ve test denetleyicileri yükleme testleri için Visual Studio'da
+title: Test aracıları yapılandırmak ve Visual Studio'da test denetleyicilerini yük testleri için
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,85 +9,85 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d32a6f2f8e03140ee5463f457201912c42026a
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302857"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176475"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Test aracıları yapılandırma ve test denetleyicileri yükleme testlerini çalıştırmak için
+# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Test aracıları yapılandırmak ve test denetleyicilerini yükleme testlerini çalıştırmak için
 
-Visual Studio kullanarak uygulamanız için fiziksel benzetilmiş yük ya da sanal makineleri oluşturabilirsiniz. Bu makinelerin tek bir test denetleyicisi ve bir veya daha fazla test aracılarını ayarlanması gerekir. Test denetleyicisi ve test aracıları, tek bir bilgisayar başına oluşturabilir daha çok yükleme oluşturmak için kullanabilirsiniz.
+Visual Studio benzetilmiş yük kullanarak uygulamanız için fiziksel veya sanal makineler oluşturabilirsiniz. Bu makineler, tek bir test denetleyicisi ve bir veya daha fazla test aracıları ayarlanmalıdır. Test denetleyicisi ve test aracıları tek bir bilgisayar başına oluşturabilirsiniz daha fazla yük oluşturmak için kullanabilirsiniz.
 
 > [!NOTE]
-> Aynı zamanda, web sitesine erişen çok sayıda kullanıcı yük oluşturmak sanal makineler sağlamak için bulut tabanlı yük testi de kullanabilirsiniz. Bulut tabanlı yük testi hakkında daha fazla bilgi [VSTS kullanarak çalışma yük testleri](/vsts/load-test/get-started-simple-cloud-load-test).
+> Sitenize aynı anda erişen birçok kullanıcının yükünü oluşturan sanal makineler sağlamak için bulut tabanlı yük testi de kullanabilirsiniz. Bulut tabanlı yük testi hakkında daha fazla bilgi [Çalıştır yük testlerini VSTS kullanarak](/vsts/load-test/get-started-simple-cloud-load-test).
 
-## <a name="load-simulation-architecture"></a>Yükleme Benzetimi Mimarisi
+## <a name="load-simulation-architecture"></a>Yük Benzetimi Mimarisi
 
-Visual Studio istemcisi, test denetleyicisi ve test aracılarını yükleme benzetimi mimarisi oluşur.
+Visual Studio istemci, test denetleyicisi ve test aracılarını yükleme benzetimi mimarisi oluşur.
 
--   İstemci, testleri geliştirmek, testleri çalıştırmak ve test sonuçlarını görüntülemek için kullanılır.
+-   İstemci, geliştirme testleri, testleri çalıştırmak ve test sonuçlarını görüntülemek için kullanılır.
 
--   Test denetleyicisi ve test sonuçlarını toplamak test aracıları yönetmek için kullanılır.
+-   Test denetleyicisi, test aracılarını yönetme ve test sonuçlarını toplamak için kullanılır.
 
 -   Test aracıları, sistem bilgileri ve profil oluşturma verilerini test ayarında tanımlanan ASP.NET dahil olmak üzere veri toplamak ve testleri çalıştırmak için kullanılır.
 
-Bu mimari, aşağıdaki avantajları sağlar:
+Bu mimari aşağıdaki avantajları sağlar:
 
--   Test denetleyicisine ek test aracıları ekleyerek yükleme oluşturma ölçeklenme olanağı.
+-   Ek test aracısı test denetleyicisine ekleyerek, yük oluşturmanın ölçeğini genişletebilir yeteneği.
 
--   İstemci yüklemek için esneklik test denetleyicisi ve aynı veya farklı bilgisayarlarda aracı yazılım sınayın. Örneğin:
+-   İstemcisini yüklemeye yönelik esneklik, test denetleyicisi ve test aracısı yazılımını aynı veya farklı bilgisayarlarda. Örneğin:
 
      **Yerel yapılandırma:**
 
-    -   Makine1: Visual Studio, denetleyici, aracı.
+    -   Machine1: Visual Studio, denetleyici, aracı.
 
-     ![Denetleyici ve aracı kullanarak yerel makine](./media/load-test-configa.png)
+     ![Denetleyici ve Aracı'nı kullanarak yerel makine](./media/load-test-configa.png)
 
      **Tipik Uzaktan yapılandırma:**
 
-    -   Makine1 ve 2: Visual Studio (birden çok test eden aynı denetleyicisi kullanabilir).
+    -   Machine1 ve 2: Visual Studio (birden çok test eden aynısı kullanabilirsiniz).
 
-    -   Makine3: Denetleyici (aracılar da olabilir).
+    -   Makine3: Denetleyici (çok, yüklü aracıları olabilir).
 
-    -   Machine4-n: aracı veya MAKİNE3 denetleyicisinde ile ilişkilendirilmiş tüm aracılar.
+    -   Machine4-n: aracısı veya MAKİNE3 denetleyiciyle ilişkili tüm aracıları.
 
-     ![Uzak makine denetleyicisi ve aracıları kullanma](./media/load-test-configb.png)
+     ![Uzak makinede denetleyicisi ve aracıları kullanma](./media/load-test-configb.png)
 
-Test denetleyicisi genellikle birkaç test aracılarını yönetir olsa da, bir aracı yalnızca tek bir denetleyici ile ilişkili olabilir. Her test aracısı geliştiriciler ekibi tarafından paylaşılabilir. Bu mimari, böylece daha büyük yükleri oluşturma, test aracılarını sayısını artırmak kolaylaştırır.
+Bir test denetleyicisi genellikle birkaç test aracısını yönetir olsa da, bir aracı yalnızca tek bir denetleyici ile ilişkili olabilir. Her test aracısı, geliştiricilerin ekibi tarafından paylaşılabilir. Bu mimari, böylece daha büyük yükleri oluşturmak, test aracıları sayısını artırmak kolaylaştırır.
 
 ## <a name="test-agent-and-test-controller-interaction"></a>Test aracısı ve test denetleyicisi etkileşimi
 
-Test denetleyicisi testleri çalıştırmak için test aracılarını bir dizi yönetir. Test aracıları başlangıç testleri, Dur testleri, test aracı durumunu izlemek ve test sonuçlarını toplamak için test denetleyicisi ile iletişim kurar.
+Test denetleyicisi testleri çalıştırmak için bir test ajanı kümesi yönetir. Test denetleyicisi başlangıç testleri, Dur testler, test aracı durumunu izlemek ve test sonuçlarını toplamak için test aracılarıyla iletişim kurar.
 
 ### <a name="test-controller"></a>Test denetleyicisi
 
-Test denetleyicisi testleri çalıştırmak için genel bir mimari sağlar ve yük testleri çalıştırmak için özel özellikler içerir. Tüm test aracılarını test başlatana kadar test denetleyicisi yük testi tüm test aracılarını ve bekler gönderir. Tüm test aracılarını hazır olduğunuzda, test denetleyicisi testi başlatmak için test aracılarını bir ileti gönderir.
+Test denetleyicisi testleri çalıştırmak için genel bir mimari sağlar ve yük testleri çalıştırmak için özel özellikleri içerir. Tüm test aracılarının testleri başlatana kadar tüm bekler ve test aracıları için test denetleyicisini yük testi gönderir. Tüm test aracılarının hazır olduğunuzda, test denetleyicisi testi başlatmak için test aracıları için bir ileti gönderir.
 
 ### <a name="test-agent"></a>Test aracısı
 
-Test aracısı, yeni bir test başlatmak için test denetleyicisinden isteklerini dinleyen bir hizmet olarak çalışır. Test aracısı bir istek aldığında, test aracısı hizmeti testleri çalıştırmak için bir işlem başlatır. Her test aracısı aynı yük testi çalıştırır.
+Test aracısı, yeni bir test başlatmak için test denetleyicisinden isteklerini dinleyen bir hizmet olarak çalışır. Test aracısını bir istek aldığında, test aracısı hizmeti, testleri çalıştırmak bir işlem başlatır. Her test aracısı, aynı yük testi çalıştırır.
 
- Yük testi aracısının ağırlıklı göre dağıtılır ve test aracılarını ağırlık yönetici tarafından atanır. Test Aracısı 2 700 sanal kullanıcıların benzetimini yapar ancak örneğin, test aracısı 1 30 ağırlığa sahip ve test aracısı 2 70 ağırlığa sahip ve yük 1000 kullanıcılara ayarlamak, ardından test aracısı 1 300 sanal kullanıcıların benzetimini yapar. Bkz: [test denetleyicileri ve test aracılarını Visual Studio ile yönetme](../test/manage-test-controllers-and-test-agents.md).
+ Test aracıları ağırlık yönetici tarafından atanır ve bir test aracısın ağırlığı göre yükleme dağıtılır. Test Aracısı 2 700 sanal kullanıcıların benzetimini yapar ancak örneğin, test aracısı 1, 30 ağırlığa sahip ve test aracısını 2 70 ağırlığa sahip ve yük 1000 kullanıcı ayarlanır, sonra test aracısı 1 300 sanal kullanıcı benzetimini yapar. Bkz: [test denetleyicileri ve test aracıları Visual Studio ile yönetme](../test/manage-test-controllers-and-test-agents.md).
 
- Test aracısı testleri kümesi ve benzetim parametreleri kümesini girdi olarak alır. Anahtar kavram testleri burada çalıştıran bir bilgisayardan bağımsız olmasıdır.
+ Test aracısını bir test kümesini ve simülasyon parametreleri kümesini girdi olarak alır. Bir anahtar kavram, testleri nerede çalıştıran bilgisayardan bağımsız olmasıdır.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Test denetleyicisi ve test aracısı bağlantı noktaları
 
-Aşağıdaki çizimde test denetleyicisi, test aracısı ile istemci arasındaki bağlantı noktalarını gösterir. Bu, bu bağlantı noktalarına kullanılan güvenlik kısıtlamaları yanı sıra gelen ve giden bağlantılar için hangi bağlantı noktalarının kullanılacağını açıklar.
+Aşağıdaki çizim, test denetleyicisi, test aracısı ve istemci arasındaki bağlantı noktalarını gösterir. Bunu, bu bağlantı noktalarındaki güvenlik kısıtlamalarını yanı sıra gelen ve giden bağlantılar için hangi bağlantı noktalarının kullanılan açıklar.
 
- ![Contoller ve test aracısı bağlantı noktaları ve güvenlik](./media/test-controller-agent-firewall.png)
+ ![Contoller test ve test aracısı bağlantı noktaları ve güvenlik](./media/test-controller-agent-firewall.png)
 
- Daha fazla bilgi için bkz: [Yapılandır bağlantı noktaları için test denetleyicileri ve test aracıları](../test/configure-ports-for-test-controllers-and-test-agents.md).
+ Daha fazla bilgi için [yapılandırma bağlantı noktaları için test denetleyicileri ve test aracılarını](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
-## <a name="test-controller-and-agent-installation-information"></a>Test denetleyicisi ve aracı yükleme bilgileri
+## <a name="test-controller-and-agent-installation-information"></a>Test denetleyicisi ve Aracısı yükleme bilgileri
 
-Yüklemeden ve ortamınız için en iyi performans, yapılandırma yordamları test denetleyicileri ve test aracıları için donanım ve yazılım gereksinimleri hakkında önemli bilgiler için bkz: [yüklemek ve test aracılarınıyapılandırın](../test/lab-management/install-configure-test-agents.md).
+Yüklemeden ve ortamınız için en iyi performans, yapılandırma yordamları test denetleyicileri ve test aracıları için donanım ve yazılım gereksinimleri hakkında önemli bilgiler için bkz: [yüklemek ve test aracılarıyapılandırma](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Test denetleyicisi ve test aracısı ile birim testleri kullanma
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Test denetleyicisi ve test aracısı ile birim testleri kullanın
 
-Bir test denetleyicisi ve bir ya da daha fazla aracı yükledikten sonra, yük testleriniz için test ayarında test denetleyicisi ile bir uzaktan yürütme kullanılıp kullanılmayacağını belirtebilirsiniz. Ayrıca, veri ve test ayarı aracıları ile ilişkili rol ile kullanılacak tanılama bağdaştırıcılarını belirtebilirsiniz.
+Bir test denetleyicisi ve bir ya da daha fazla aracı yükledikten sonra, yük testleriniz için test ayarında test denetleyicisi ile bir uzaktan yürütme kullanılıp kullanılmayacağını belirtebilirsiniz. Ayrıca, veri ve tanılama bağdaştırıcılarını test ayarında aracıları ile ilişkili rolüyle kullanacak şekilde belirtebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bed3140653e586ee4fb4899e6eba2b83f97035b0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079102"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178568"
 ---
 # <a name="item-definitions"></a>Öğe tanımları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 kullanarak proje dosyalarındaki öğeleri statik bildirimi sağlayan [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğesi. Ancak, meta veriler için tüm öğeleri aynı olsa bile, yalnızca öğe düzeyinde meta veri eklenebilir. İtibariyle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, adlı bir proje öğesi [Itemdefinitiongroup](../msbuild/itemdefinitiongroup-element-msbuild.md) bu sınırlamayı kaldırır. *Itemdefinitiongroup* adlandırılmış öğe türü içindeki tüm öğeler için varsayılan meta veri değerlerini ekleyen öğesi tanımları kümesini tanımlamanızı sağlar.  
@@ -144,7 +144,7 @@ Bu örnekte, "m" meta veriler için önceden tanımlanmış değer \(m1\) yeni d
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Koşul içinde bir Itemdefinitiongroup kullanma  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Bir Itemdefinitiongroup kullanım koşulları  
  Meta verilerin eklenmesi denetlemek için bir Itemdefinitiongroup koşulları kullanabilirsiniz. Örneğin:  
   
 ```xml  
@@ -190,7 +190,7 @@ Yukarıdaki örnekte, "i" "test" öğesi kendi koşulunda öğesi başvuruyor. H
 
 Koşul başvuruları "i" öğesi olarak yukarıdaki örnekte, "m" "m1" değerine ayarlanır 's "yes" öğesi için meta veri değeri 
   
-## <a name="overriding-and-deleting-metadata"></a>Geçersiz kılma ve meta verileri siliniyor  
+## <a name="override-and-delete-metadata"></a>Geçersiz kılma ve meta verilerini silme  
  Bir Itemdefinitiongroup öğesinde tanımlanan meta verileri, meta veri değeri için boş olarak ayarlayarak, bir sonraki Itemdefinitiongroup öğesi içinde kılınabilir. Bir meta veri öğesi boş bir değere ayarlayarak da verimli bir şekilde silebilirsiniz. Örneğin:  
   
 ```xml  

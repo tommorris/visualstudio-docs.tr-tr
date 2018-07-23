@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa56cf0d0ae6d715685ee331cd60c95eedc5c60
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945981"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175962"
 ---
 # <a name="customize-your-build"></a>Derlemenizi özelleştirme
 
 Standart MSBuild projelerinin yapı işlemi (içeri aktarma *Microsoft.Common.props* ve *Microsoft.Common.targets*) derleme özelleştirmek için kullanabileceğiniz çeşitli genişletilebilirlik kancaları sahip işlem.
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Projeniz için komut satırı MSBuild çağrılarına bağımsız değişken ekleme
+## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Projeniz için komut satırı MSBuild çağrılarına bağımsız değişkenlerini ekleyin
 
 A *Directory.Build.rsp* ya da üzeri kaynak dizin dosyası projenizin komut satırı derlemeleri için uygulanır. Ayrıntılar için bkz [MSBuild yanıt dosyaları](../msbuild/msbuild-response-files.md#directorybuildrsp).
 
@@ -138,7 +138,7 @@ Daha sonra. Bu derleme mantığının ortak proje türleri genişletmek yüklenm
 
 Aynı dizin yapısını içinde aranması `$(MSBuildUserExtensionsPath)`, kullanıcı başına klasör *%LOCALAPPDATA%\Microsoft\MSBuild*. Bu kullanıcının kimlik bilgileri altında çalışıyor ilgili proje türünün tüm derlemeler için bu klasöre yerleştirilen dosyaları içeri aktarılır. İçeri aktarma dosyası deseninde sonra adlı özelliklerini ayarlayarak kullanıcı uzantılarını devre dışı bırakabilirsiniz `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Örneğin, ayarlamak `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` için `false` alma önleyen `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 
-## <a name="customizing-the-solution-build"></a>Çözüm yapı özelleştirme
+## <a name="customize-the-solution-build"></a>Çözüm yapı özelleştirme
 
 > [!IMPORTANT]
 > Çözüm yapı bu şekilde özelleştirme yalnızca için komut satırı yapılarıyla birlikte geçerlidir *MSBuild.exe*. Bunu **yok** Visual Studio içindeki derlemeler için geçerlidir.

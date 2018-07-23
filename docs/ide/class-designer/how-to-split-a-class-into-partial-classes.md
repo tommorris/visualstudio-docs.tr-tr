@@ -16,31 +16,31 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957833"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179173"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda kısmi sınıflar bir sınıf bölün
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Nasıl yapılır: bir sınıf, Sınıf Tasarımcısı'nda parçalı sınıflar Böl
 
-Kullanabileceğiniz `partial` anahtar sözcüğü (`Partial` Visual Basic'te) bir sınıf veya yapı birkaç bildirimler arasında bildirimi bölmek için. İstediğiniz sayıda kısmi bildirimleri kullanabilirsiniz.
+Kullanabileceğiniz `partial` anahtar sözcüğü (`Partial` Visual Basic'te) bir sınıf veya yapı çeşitli bildirimler arasında bildirimi ayırmak için. İstediğiniz sayıda kısmi bildirimleri kullanabilirsiniz.
 
-Bildirimler, bir veya birden çok kaynak dosyalarında olabilir. Tüm bildirimler aynı bütünleştirilmiş kodda ve aynı ad olmalıdır.
+Bildirimler, bir veya birden çok kaynak dosyalarında olabilir. Tüm bildirimler aynı derleme ve aynı ad alanı içinde olmalıdır.
 
-Kısmi sınıflar birkaç durumlarda faydalıdır. Büyük bir proje üzerinde örneğin, bir sınıfın birden çok dosyaya ayırma projede aynı anda çalışması birden fazla Programcı sağlar. Visual Studio'nun oluşturduğu kodu ile çalışırken, kaynak dosyayı yeniden oluşturmak zorunda kalmadan sınıfı değiştirebilirsiniz. (Windows Forms ve Web hizmeti sarmalayıcı kodu Visual Studio'nun oluşturduğu kod örnekleri içerir.) Bu nedenle, Visual Studio oluşturur dosyasını değiştirmek zorunda kalmadan otomatik olarak oluşturulan sınıfları kullanan kodu oluşturabilirsiniz.
+Kısmi sınıflar çeşitli durumlarda yararlı olur. Büyük bir proje üzerinde örneğin, bir sınıfın birden çok dosyaya ayırmak proje üzerinde aynı anda çalışmak birden fazla Programcı sağlar. Visual Studio oluşturan kod ile çalışırken, sınıf kaynak dosyasını yeniden oluşturmak zorunda kalmadan değiştirebilirsiniz. (Windows Forms ve web hizmeti sarmalayıcı kodu Visual Studio'nun oluşturduğu kod örneklerini içerir.) Bu nedenle, otomatik olarak oluşturulan sınıfları oluşturan Visual Studio dosyayı değiştirmek zorunda kalmadan kullanan kodu oluşturabilirsiniz.
 
-Kısmi yöntemler iki tür vardır. C# ' ta bunlar bildirme ve uygulama olarak adlandırılır; Visual Basic'te, bunlar bildirimi ve uygulama adı verilir.
+Kısmi yöntemler iki tür vardır. C# ' ta bildirme ve uygulama çağrılır; Visual Basic'te, bunlara bildirimini ve uygulamasını verilir.
 
-**Sınıf Tasarımcısı** kısmi sınıflar ve yöntemler destekler. Sınıf diyagramında türü şekli parçalı sınıf için bir tek bildirimi konumu ifade eder. Parçalı sınıf içinde birden çok dosya tanımlanmışsa bildirimi konumu belirtebilirsiniz **Sınıf Tasarımcısı** ayarlayarak kullanacağı **yeni üye konumu** özelliğinde **özellikleri**  penceresi. Diğer bir deyişle, bir sınıf şekli çift tıkladığınızda **Sınıf Tasarımcısı** tarafından tanımlanan sınıf bildirimi içeren kaynak dosyasına gider **yeni üye konumu** özelliği. Bir sınıf şekli kısmi yönteminde çift tıkladığınızda **Sınıf Tasarımcısı** kısmi yöntemi bildirimine gider. Ayrıca, **özellikleri** penceresinde **dosya adı** özellik bildirimi konuma başvuruyor. Kısmi sınıflar için **dosya adı** tüm bu sınıf için bildirim ve uygulama kodu içeren dosyaları listeler. Ancak, kısmi yöntemler için **dosya adı** kısmi yöntem bildirimi içeren dosyanın listeler.
+**Sınıf Tasarımcısı** kısmi sınıflar ve yöntemler destekler. Tür şeklini sınıf diyagramı içinde kısmi sınıfın tek bildirimde konumunu ifade eder. Kısmi sınıf birden çok dosyalarında tanımlandıysa, bildirim konumu belirtebilirsiniz **Sınıf Tasarımcısı** ayarlayarak kullanacağı **yeni üye konumu** özelliğinde **özellikleri**  penceresi. Diğer bir deyişle, bir sınıf şeklinin çift tıkladığınızda **Sınıf Tasarımcısı** tarafından tanımlanmış sınıf bildirimi içeren kaynak dosyaya gider **yeni üye konumu** özelliği. Kısmi bir yöntem, sınıf şeklinin içinde çift tıkladığınızda **Sınıf Tasarımcısı** için kısmi yöntem bildiriminde gider. Ayrıca, **özellikleri** penceresinde **dosya adı** özelliği bildirimi konuma başvuruyor. Kısmi sınıflar için **dosya adı** bildirimini ve uygulamasını bu sınıfın kodu içeren dosyaları listeler. Ancak, kısmi yöntemler için **dosya adı** kısmi yöntem bildirimi içeren dosyanın listeler.
 
-Aşağıdaki örnekler sınıfının tanımını bölme `Employee` iki bildirimleri her biri farklı bir yordam tanımlar. İki kısmi tanımları örneklerde, bir kaynak dosyasında veya iki farklı kaynak dosyalar olabilir.
+Aşağıdaki örnekler sınıfının tanımını bölme `Employee` alanına iki bildirimler, her biri farklı bir yordam tanımlar. İki kısmi tanım örneklerde, bir kaynak dosyasında veya iki farklı kaynak dosyalar olabilir.
 
 > [!NOTE]
-> Visual Basic, Visual Studio ayırmak için kısmi sınıf tanımları kullanır — kullanıcı tarafından yazılan koddan oluşturulan kodda. Kod ayrık kaynak dosyalarıyla ayrılır. Örneğin, **Windows Form Tasarımcısı** denetimleri için kısmi sınıflar gibi tanımlar `Form`. Bu denetimler oluşturulan kodda değiştirmemeniz gerekir.
+> Visual Basic, Visual Studio ayırmak için kısmi sınıf tanımları kullanır: kullanıcı tarafından yazılan koddan oluşturulan kod. Kod ayrı kaynak dosyalarıyla ayrılır. Örneğin, **Windows Form Tasarımcısı** denetimleri için kısmi sınıflar gibi tanımlar `Form`. Bu denetimler oluşturulan kodda değiştirmeniz gerekir.
 
-Visual Basic'te kısmi türler hakkında daha fazla bilgi için bkz: [kısmi](/dotnet/visual-basic/language-reference/modifiers/partial).
+Visual Basic'te kısmi türleri hakkında daha fazla bilgi için bkz. [kısmi](/dotnet/visual-basic/language-reference/modifiers/partial).
 
 ## <a name="example"></a>Örnek
 

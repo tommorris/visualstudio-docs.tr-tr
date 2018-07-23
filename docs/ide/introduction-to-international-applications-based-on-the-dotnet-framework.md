@@ -27,26 +27,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 773e6a2f351c0256fee17b1e07ff37fe9567198b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ddb993e83cee79afca89d3cd06d55ca9e6fbc19
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943946"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179924"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>.NET Framework Tabanlı Uluslararası Uygulamalara Giriş
 
-İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dünya çapında kullanılmaya hazır uygulaması oluşturmak için iki bölümden oluşur: genelleştirme, farklı kültürlere uygulamalar tasarlama işlemi ve yerelleştirme, belirli bir kültür için kaynaklar çevirme işlemi. Uluslararası bir izleyici için uygulama tasarlama hakkında genel bilgi için bkz: [dünya çapında kullanılmaya hazır uygulamalar geliştirmek için en iyi uygulamaları](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).
+İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dünya çapında kullanılmaya hazır uygulama oluşturmak için iki bölümden oluşur: genelleştirme, farklı kültürleri için uyarlayabilirsiniz uygulamalar tasarlama işlemi ve yerelleştirme, kaynakların belirli bir kültür için çevirme işlemi. Uluslararası bir hedef kitle için uygulama tasarlama hakkında genel bilgi için bkz. [dünya çapında kullanılmaya hazır uygulama geliştirmek için en iyi](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Yerelleştirme modeli hem uygulama kodunda hem de geri dönüş kaynakları içeren bir ana derlemeden oluşur — dizeler, görüntüler ve diğer nesneler için hangi uygulama ilk olarak geliştirilen dili. Yerelleştirilmiş her uygulama, uydu derlemelerini veya yalnızca yerelleştirilmiş kaynakları içeren derlemeler sahip olur. Ana derleme her zaman bir kaynak yerelleştirilmiş uydu derlemesinde bulunmazsa geri dönüş kaynakları içerdiğinden <xref:System.Resources.ResourceManager> sonunda ana derlemedeki kaynağa geri dönmeden hiyerarşik bir biçimde yüklemeyi deneyecek. Kaynak geri dönüş sistemi daha ayrıntılı olarak anlatılmıştır [yerelleştirme, hiyerarşik kuruluş kaynakları](../ide/hierarchical-organization-of-resources-for-localization.md).
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Yerelleştirme modeli, hem uygulama kodunda hem de geri dönüş kaynakları içeren bir ana derlemenin oluşur; dizeler, görüntüler ve diğer nesneler için hangi uygulama ilk olarak geliştirilen dili. Yerelleştirilmiş her uygulama, uydu derlemeleri veya yalnızca yerelleştirilmiş kaynakları içeren derlemeler olacaktır. Her zaman ana derleme yerelleştirilmiş uydu derlemede bir kaynak bulunamıyorsa, geri dönüş kaynakları içerdiğinden <xref:System.Resources.ResourceManager> sonunda ana kaynağa dönülüyor, hiyerarşik bir şekilde yüklemeyi deneyecek. Kaynak geri dönüş sistemi daha ayrıntılı olarak açıklanan [kaynakların hiyerarşik organizasyonu yerelleştirme için](../ide/hierarchical-organization-of-resources-for-localization.md).
 
- Tüm Microsoft sözlüğü kullanmaktır dikkate almanız gereken bir yerelleştirme kaynağı ürünleri yerelleştirilmiş. Bu CSV dosyası üzerinde 12.000 İngilizce koşulları koşullarını 59 farklı dilde çevirileri içerir. Sözlük indirmek için kullanılabilir [Microsoft terminoloji çevirileri](http://go.microsoft.com/fwlink/?LinkId=128146) Web sayfası.
+ Tüm Microsoft sözlüğü kullanmaktır dikkate almanız gereken bir yerelleştirme kaynağı ürünleri yerelleştirilmiş. Bu CSV dosyası üzerinde 12.000 İngilizce koşulları 59 farklı dilde terimlerin çevirileri içerir. Sözlüğü, ücretsiz olarak kullanılabilir [Microsoft terminoloji çevirileri](http://go.microsoft.com/fwlink/?LinkId=128146) web sayfası.
 
- Her istenilen ek UI kültürü ve Windows Forms uygulamalarına ilişkin proje sistemi hem geri dönüş için kaynak dosyaları oluşturabilirsiniz. Geri dönüş kaynak dosyası ana derlemeye oluşturulur ve kültüre özgü kaynak dosyaları, her UI kültürü için bir uydu derlemelerini içinde yerleşik. Proje oluşturma sırasında kaynak dosyaları Visual Studio XML biçimi (.resx) Ara bir ikili biçime (.resources), ardından uydu derlemeleri katıştırılmış derlenir.
+ Windows Forms uygulamaları için proje sistemi her iki geri dönüş için kaynak dosyaları oluşturabilir ve her ek kullanıcı Arabirimi kültürünü istenen. Geri dönüş kaynak dosyası ana derlemeye oluşturulmuştur ve kültüre özgü kaynak dosyaları, her UI kültürü için bir uydu derlemeler içinde yerleşik olan. Bir proje oluşturduğunuzda, kaynak dosyalarını Visual Studio XML biçimi (.resx) Ara bir ikili biçimine (.resources), ardından uydu derlemeleri içinde gömülü derlenir.
 
- Windows Forms ve Web formları için proje sistemi, bir derleme kaynak dosyası şablonu kullanarak kaynak dosyaları derleme, kaynaklara erişmek ve projenizi derleme olanak sağlar. Uydu derlemeleri yanı sıra ana derleme oluşturulur.
+ Hem Windows Formları ve web formları için proje sistemi projenizi bir bütünleştirilmiş kod kaynak dosyası şablonu kullanarak kaynak dosyaları derleme ve kaynaklara erişim sağlar. Uydu derlemeleri ana derlemenin birlikte oluşturulur.
 
- Yerelleştirilmiş bir uygulama yürütüldüğünde, görünümünü iki kültür değerine göre belirlenir. (A *kültür* kullanıcının dil, ortam ve kültürel kuralları ilişkili kullanıcı tercihi bilgisini kümesidir.) UI kültürü ayarı hangi kaynakların yükleneceğini belirler. UI kültürü olarak ayarlanmış olan `UICulture` Web.config dosyaları ve sayfa yönergelerinde ve <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> Visual Basic veya C# kod. Kültür ayarı tarihler, sayılar, para birimi vb. gibi değerler biçimini belirler. Kültür olarak ayarlanmış olan `Culture` Web.config dosyaları ve sayfa yönergelerinde <xref:System.Globalization.CultureInfo.CurrentCulture%2A> Visual Basic veya C# kod.
+ Yerelleştirilmiş bir uygulama yürütüldüğünde, görünümünü iki kültüre değerlerine göre belirlenir. (A *kültür* kullanıcının dil, ortam ve kültürel ilgili kullanıcı tercihi bilgileri kümesidir.) UI kültür ayarı, hangi kaynakların yükleneceğini belirler. UI kültürü olarak ayarlandığından `UICulture` Web.config dosyaları ve sayfa yönergeleri ve <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> Visual Basic veya C# kod. Tarih, sayı, para birimi ve benzeri gibi değerler biçimlendirmesini kültür ayarı belirler. Kültür olarak ayarlanır `Culture` Web.config dosyaları ve sayfa yönergelerinde <xref:System.Globalization.CultureInfo.CurrentCulture%2A> Visual Basic veya C# kod.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

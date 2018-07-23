@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7abbd976e1ed97df257856f6b31b13966441fd9a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154404"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179446"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Model sanal kullanıcı etkinlikleri için yük desenlerini düzenleme
 
@@ -32,11 +32,11 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 
 ### <a name="constant"></a>Sabit
 
- Sabit yük düzeni, yük testi sırasında değişmez bir kullanıcı yükü belirtmek için kullanılır. Örneğin, bir Web uygulamasında duman testi çalıştırdığınızda, bir ışık, sabit yük 10 kullanıcı ayarlamak isteyebilirsiniz.
+ Sabit yük düzeni, yük testi sırasında değişmez bir kullanıcı yükü belirtmek için kullanılır. Örneğin, bir web uygulamasında duman testi çalıştırdığınızda, bir ışık, sabit yük 10 kullanıcı ayarlamak isteyebilirsiniz.
 
 #### <a name="constant-load-pattern-considerations"></a>Sabit yük düzeni konuları
 
- Bir sabit yük düzeni, bir yük testi çalıştırma sırasında aynı kullanıcı yükünü çalıştırmak için kullanılır. Yüksek kullanıcı sayısı olan bir sabit yük deseni kullanırken dikkatli olun; Bunun yapılması, sunucu veya sunucularda yük testinin başında mantıksız veya gerçekçi olmayan bir isteğe bağlı şekilde yerleştirebilirsiniz. Örneğin, Yük testiniz bir ana sayfa isteği ile başlayan bir Web testi içeriyorsa ve yükleme testini 1.000 kullanıcı bir sabit yük ile ayarlarsanız yük testi giriş sayfasında ilk 1.000 isteği mümkün olduğunca hızlı gönderir. Bu, Web sitenizi gerçek girişin gerçekçi bir benzetimi olmayabilir. Bunu azaltmak için kademeli olarak 1,000 kullanıcıya Yükselen bir adım yükü düzenini kullanmayı deneyin veya yük testi çalışması Ayarları'nda bir Isınma dönemi belirleyin. Isınma Süresi belirtilirse, yük testi otomatik olarak yükü yavaş yavaş Isınma dönemi sırasında artacaktır. Daha fazla bilgi için [Senaryo Başlatma Gecikmelerini Yapılandırma](../test/configure-scenario-start-delays.md).
+ Bir sabit yük düzeni, bir yük testi çalıştırma sırasında aynı kullanıcı yükünü çalıştırmak için kullanılır. Yüksek kullanıcı sayısı olan bir sabit yük deseni kullanırken dikkatli olun; Bunun yapılması, sunucu veya sunucularda yük testinin başında mantıksız veya gerçekçi olmayan bir isteğe bağlı şekilde yerleştirebilirsiniz. Örneğin, Yük testiniz bir ana sayfa isteği ile başlayan bir web testi içeriyorsa ve yükleme testini 1.000 kullanıcı bir sabit yük ile ayarlarsanız yük testi giriş sayfasında ilk 1.000 isteği mümkün olduğunca hızlı gönderir. Bu, Web sitenizi gerçek girişin gerçekçi bir benzetimi olmayabilir. Bunu azaltmak için kademeli olarak 1,000 kullanıcıya Yükselen bir adım yükü düzenini kullanmayı deneyin veya yük testi çalışması Ayarları'nda bir Isınma dönemi belirleyin. Isınma Süresi belirtilirse, yük testi otomatik olarak yükü yavaş yavaş Isınma dönemi sırasında artacaktır. Daha fazla bilgi için [Senaryo Başlatma Gecikmelerini Yapılandırma](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Adım
 
@@ -112,7 +112,7 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 |-----------|-----------------------|
 |**Yük testiniz için ilk yük düzeni belirtme:** kullanarak yük testi oluşturduğunuzda **Yeni Yük Testi Sihirbazı**, yük düzeni seçin.|-   [Yük düzeni değiştirme](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Yük testiniz için yük düzeni düzenleme:** yük testinizi oluşturduktan sonra yük düzeni içindeki düzenleyebilirsiniz **Yük Testi Düzenleyicisi**.|-   [Nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Sanal kullanıcı yük testi senaryosuna olup olmadığını belirten Web önbellek verilerini içermelidir:** değiştirebileceğiniz **yeni kullanıcıların yüzdesini** yük testi, önbelleğe alma Web benzetim şeklini etkileyen özelliği sanal kullanıcı için bir Web tarayıcısı tarafından gerçekleştirilmesi.|-   [Nasıl yapılır: web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Sanal kullanıcı yük testi senaryosuna olup olmadığını belirten web önbellek verilerini içermelidir:** değiştirebileceğiniz **yeni kullanıcıların yüzdesini** yük testi, önbelleğe alma web benzetim şeklini etkileyen özelliği sanal kullanıcı için bir web tarayıcısı tarafından gerçekleştirilmesi.|-   [Nasıl yapılır: web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Adım eğrisi süresi Adım yük düzeni için belirtme:** **adım eğrisi süresi** özelliği artırma bir adımdan bir sonrakine (örneğin 100 kullanıcıdan 200 kullanıcıya) artışın hemen yerine için sağlar.|-   [Nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Yük düzeni değiştirme

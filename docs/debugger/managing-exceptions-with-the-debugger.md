@@ -34,46 +34,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1437728a75e0c6e8babff690bb18c7bd30d3add4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c514458d6b7e8cfd4837ca907d14055af8a624ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057476"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180224"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme
 
-Bir özel durum bir program yürütüldüğü sırada oluşan bir hata durumu bir göstergesidir. Bu noktada istediğiniz ayırmak için hata ayıklayıcı ve hangi özel durumları (veya özel durumları kümesi) üzerinde ayırmak hata ayıklayıcı anlayabilirsiniz (hata ayıklayıcı böldüğünde size burada özel durum oluştu gösterir). Ayrıca, ekleyebilir veya özel durumlarını silin. Çözümü Visual Studio'da Aç kullanmak **hata ayıklama > Windows > özel ayarları** açmak için **Exception ayarlarını** penceresi. 
+Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata durumu göstergesidir. Hata ayıklayıcı kesmek hangi özel durumları (veya özel durumların kümeleri) söyleyebilir ve hangi noktada hata ayıklayıcının istediğiniz (hata ayıklayıcı keserse, size burada özel durumun oluştuğu gösterir). Ayrıca, ekleyin veya özel durumları silebilirsiniz. Çözümünü Visual Studio'da Aç **hata ayıklama > Windows > özel durum ayarları** açmak için **özel durum ayarları** penceresi. 
 
-Yanıt için en önemli özel durum işleyicileri sağlaması gerekir ve kullanabilirsiniz, ancak yürütme bazı özel durumlar için her zaman ayırmak için hata ayıklayıcı yapılandırma bilmeniz önemlidir.
+Olabilir ve yanıt için en önemli özel durum işleyicileri sağlamanız gerekir, ancak her zaman yürütme bazı özel durumlar için hata ayıklayıcının yapılandırma bilmeniz önemlidir.
   
-Ne zaman hata ayıklayıcı çıktı penceresinde bir özel durum iletisi Yazar bir özel durum oluşur. Aşağıdaki durumlarda, yürütme kesilebilir:  
+Ne zaman hata ayıklayıcının çıkış penceresinde bir özel durum iletisi yazar. bir özel durum oluşur. Aşağıdaki durumlarda yürütmeyi Kes:  
   
--   Ne zaman bir özel durum oluşur ve değil gerçekleştirilir.  
+-   Ne zaman bir özel durum oluşturulur ve işlenmezse.  
   
--   Ne zaman hata ayıklayıcı herhangi bir işleyicisini çağrılmadan önce yürütme ayırmak için yapılandırılır.  
+-   Ne zaman hata ayıklayıcı herhangi bir işleyici çağrılmadan önce yürütmeyi kesmek için yapılandırılır.  
   
--   Ayarlamış olmanız durumunda [sadece kendi kodumu](../debugger/just-my-code.md), ve hata ayıklayıcısı kullanıcı kodunda işlenmemiş bir özel durumla ayırmak için yapılandırılır.  
-  
-> [!NOTE]
->  ASP.NET hata sayfaları bir tarayıcıda gösteren üst düzey özel durum işleyicisi vardır. Bu yürütme sürece bozmadığından **sadece kendi kodumu** açıktır. Bir örnek için bkz: [kullanıcının işlemediği özel durumları devam etmek için hata ayıklayıcı ayarı](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) aşağıda.  
+-   Ayarladıysanız [yalnızca kendi kodum](../debugger/just-my-code.md), ve hata ayıklayıcının kullanıcı kodunda işlenmemiş bir özel durumla kesmek için yapılandırılır.  
   
 > [!NOTE]
->  Hata stili hata işleyicilerinde kullansanız bile, bir Visual Basic uygulamasında hata ayıklayıcı tüm hataları özel durumlar olarak yönetir.    
+>  ASP.NET hata sayfalarını bir tarayıcıda gösteren bir üst düzey özel durum işleyicisine sahiptir. Bu yürütme sürece kesmez **yalnızca kendi kodum** açıktır. Bir örnek için bkz. [kullanıcının işlemediği özel durumları devam etmek için hata ayıklayıcı ayarlama](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) aşağıda.  
   
-## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Bir özel durum yakalandığında ayırmak için hata ayıklayıcı söyleyin  
-Hata ayıklayıcı yürütme yeri bir özel durum, bir noktada bozabilir, özel durum işleyici çağrılmadan önce incelemek için bir fırsat vermiş.  
+> [!NOTE]
+>  Üzerinde hata stili hata işleyicilerini kullansanız bile, bir Visual Basic uygulamasında hata ayıklayıcı tüm hataları özel durumlar olarak yönetir.    
   
-İçinde **Exception ayarlarını** penceresi (**hata ayıklama > Windows > özel ayarları**), özel durumların bir kategori düğümünü genişletin (örneğin, **ortak dil çalışma zamanı özel durumları**, .NET özel durumlarını anlamına gelir) ve belirli bir özel durum Bu kategoride onay kutusunu seçin (örneğin **System.AccessViolationException**). Özel durumların tüm bir kategorisini de seçebilirsiniz.  
+## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Bir özel durum oluştuğunda hata ayıklayıcının söyleyin  
+Hata ayıklayıcı nerede bir özel durum, bir noktada yürütmeyi kesebilirsiniz bir işleyici çağrılmadan önce özel durumu incelemek için bir fırsat sunar.  
+  
+İçinde **özel durum ayarları** penceresi (**hata ayıklama > Windows > özel durum ayarları**), özel durumlar kategorisi için düğümü genişletin (örneğin, **ortak dil çalışma zamanı özel durumları**, .NET özel durumları anlamına gelir) ve o kategorideki belirli bir özel durum için onay kutusunu seçin (örneğin **System.AccessViolationException**). Bir tüm özel durumlar kategorisi belirleyebilirsiniz.  
   
 ![AccessViolationException işaretli](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
 
 > [!TIP]
-> Kullanarak belirli özel durumların bulabilirsiniz **arama** penceresinde **Exception ayarlarını** araç veya belirli ad alanları için filtrelemek için Ara kullanın (örneğin **System.IO**).
+> Belirli özel durumları kullanarak bulabilirsiniz **arama** penceresinde **özel durum ayarları** araç çubuğunu veya kullanım için belirli ad alanlarını filtrelemek için arayın (örneğin **System.IO**).
   
-Bir özel durum seçerseniz **Exception ayarlarını** penceresi, hata ayıklayıcı yürütme olup, işlenen işlenmemiş veya bağımsız olarak özel durum atılır her yerde bozar. Bu noktada özel bir ilk fırsat özel durum adı verilir. Örneğin, birkaç senaryo şunlardır:  
+Bir özel durum seçerseniz **özel durum ayarları** penceresi, hata ayıklayıcı yürütme olup, işlenmiş işlenmemiş veya bağımsız olarak özel durumu atılır her yerde bozar. Bu noktada bir özel durum bir ilk fırsat özel durum olarak adlandırılır. Örneğin, birkaç senaryo şunlardır:  
   
-*  Main yöntemi aşağıdaki C# konsol uygulamasındaki oluşturur bir **AccessViolationException** içinde bir `try/catch` engelle:  
+*  Aşağıdaki C# konsol uygulamasında, Main yöntemi oluşturur bir **AccessViolationException** içinde bir `try/catch` engelle:  
   
     ```csharp  
     static void Main(string[] args)  
@@ -91,16 +91,16 @@ Bir özel durum seçerseniz **Exception ayarlarını** penceresi, hata ayıklay�
     }  
     ```  
   
-     Varsa **AccessViolationException** iade **Exception ayarlarını**, bu kod hata ayıklayıcı yürütmede çalıştırdığınızda üzerinde bozar `throw` satır. Ardından, yürütme devam edebilirsiniz. Konsol iki satır görüntülenmelidir:  
+     Varsa **AccessViolationException** iade **özel durum ayarları**, hata ayıklayıcı yürütme bu kodu çalıştırdığınızda üzerinde bozar `throw` satır. Ardından, yürütme devam edebilirsiniz. Konsol, iki satır görüntülenmesi gerekir:  
   
     ```cmd
     caught exception  
     goodbye  
     ```  
   
-     Ancak, görüntülenmez `here` satır.  
+     ancak dotnetclıtools'u görüntülemiyor `here` satır.  
   
-*  Bir C# konsol uygulaması bir sınıf kitaplığı iki yöntem, bir özel durum oluşturur ve bunu işleyen bir yöntem ve aynı özel durum oluşturur ve bunu işlemiyor ikinci bir yöntemi olan bir sınıfı ile başvuruyor:  
+*  Bir C# konsol uygulaması iki yöntem, bir özel durum oluşturur ve bunu işleyen bir yöntem ve bir ikinci yöntem aynı özel durum oluşturur ve onu işlemiyor sahip bir sınıf ile bir sınıf kitaplığı başvuruyor:  
   
     ```csharp 
     public class Class1  
@@ -124,7 +124,7 @@ Bir özel durum seçerseniz **Exception ayarlarını** penceresi, hata ayıklay�
     }  
     ```  
   
-     Konsol uygulaması Main() yöntemi şöyledir:  
+     Konsol uygulaması Main() yöntemi aşağıda verilmiştir:  
   
     ```csharp  
     static void Main(string[] args)  
@@ -135,38 +135,38 @@ Bir özel durum seçerseniz **Exception ayarlarını** penceresi, hata ayıklay�
     }  
     ```  
   
-     Varsa **AccessViolationException** iade **Exception ayarlarını**, bu kod hata ayıklayıcı yürütmede çalıştırdığınızda üzerinde bozar `throw` hem de satır  **ThrowHandledException()** ve **ThrowUnhandledException()**.  
+     Varsa **AccessViolationException** iade **özel durum ayarları**, hata ayıklayıcı yürütme bu kodu çalıştırdığınızda üzerinde bozar `throw` hem de satır  **ThrowHandledException()** ve **ThrowUnhandledException()**.  
   
- Özel durum ayarlarına ayarlarına geri yüklemek istiyorsanız, tıklayabilirsiniz **geri** araç çubuğunda:  
+ Özel durum ayarlarını varsayılan ayarlara geri yüklemek istiyorsanız, tıklayabilirsiniz **geri** araç çubuğunda:  
   
- ![Özel durum ayarlarında Varsayılanları Geri Yükle](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+ ![Özel durum Ayarları'nda Varsayılanları Geri Yükle](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a> Kullanıcının işlemediği özel durumları devam etmek için hata ayıklayıcı söyleyin  
- Hata ayıklama ile .NET veya JavaScript kodu varsa [sadece kendi kodumu](../debugger/just-my-code.md), içinde kullanıcı kodu işlenmez ancak başka bir yere işlenir kesilecek değil için hata ayıklayıcı anlayabilirsiniz.  
+##  <a name="BKMK_UserUnhandled"></a> Kullanıcı tarafından işlenmeyen özel durumları devam etmek için hata ayıklayıcının işlemi durdurmasını  
+ .NET veya JavaScript kodu ile hata ayıklaması yapıyorsanız [yalnızca kendi kodum](../debugger/just-my-code.md), başka bir yere işlenir ancak kullanıcı kodunda işlenmemiş özel durumları değil hata ayıklayıcının işlemi durdurmasını sağlayabilirsiniz.  
   
-1.  İçinde **Exception ayarlarını** penceresinde penceresinde sağ tıklayıp ardından seçerek bağlam menüsünü açmak **sütunları göster**. (Kapalı durumunda **sadece kendi kodumu**, bu komut görmezsiniz.)  
+1.  İçinde **özel durum ayarları** penceresinde penceresinde sağ tıklatıp ardından seçerek, bağlam menüsünü açın **sütunları göster**. (Kapalı durumunda **yalnızca kendi kodum**, bu komut görmezsiniz.)  
   
-2.  Adlı ikinci bir sütun görmelisiniz **ek eylemleri**. Bu sütun görüntüler **devam kullanıcı kodu tarafından işlenmemiş zaman** üzerinde özel durum, bu özel durum kullanıcı kodunda işlenmemiş ancak dış kodda ele hata ayıklayıcı bozmadığından anlamına gelir.  
+2.  Adlı ikinci bir sütun görmelisiniz **ek eylemler**. Bu sütunda görüntülenir **kullanıcı kodu tarafından işlenmediğinde devam** belirli özel durumlarda, bu özel durum kullanıcı kodunda işlenmemiş ancak harici kod işlenir, hata ayıklayıcı kesmez anlamına gelir.  
   
-3.  Belirli bir özel durum için bu ayarı değiştirebilirsiniz (özel durum, sağ tıklatın ve seçin ve seçimini seçin **devam kullanıcı kodunda işlenemeyen zaman**) veya bir özel durum (örneğin, tüm ortak kategorisinin tamamını için Dil çalışma zamanı özel durumları).  
+3.  Ya da belirli bir özel durum için bu ayarı değiştirebilirsiniz (özel durum, sağ tıklatın ve seçin ve seçimini seçin **kullanıcı kodunda işlenmediğinde devam**) veya özel durumlar (örneğin, tüm ortak bir tüm kategorisi Dil çalışma zamanı özel durumları).  
   
- Örneğin, ASP.NET web uygulamaları için bir HTTP 500 durum kodu dönüştürerek özel durumları işleme ([özel durum işleme ASP.NET API'sindeki](http://www.asp.net/web-api/overview/error-handling/exception-handling)), hangi değil yardımcı olabilir, özel durumun kaynağı belirlemek için. Aşağıdaki örnekte, kullanıcı kodu çağrıda bulunur `String.Format()` oluşturur, bir <xref:System.FormatException>. Yürütme aşağıdaki gibi ayırır:  
+ Örneğin, ASP.NET web uygulamaları için bir HTTP 500 durum kodu dönüştürerek özel durumları işleme ([özel durum işleme ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), hangi değil yardımcı olabilir, özel durumun kaynağı belirlemek için. Aşağıdaki örnekte, kullanıcı kodu çağrıda `String.Format()` oluşturan bir <xref:System.FormatException>. Yürütme aşağıdaki gibi ayırır:  
   
- ![keser kullanıcı&#45;unhanlded özel durum](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![Kullanıcı keser&#45;unhanlded özel durum](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Ekleme ve özel durumları silme  
- Ekleme ve özel durumlarını silin. Herhangi bir özel durum türü özel seçerek ve tıklayarak herhangi bir kategoride silebilirsiniz **silmek** düğmesine (eksi işareti) **Exception ayarlarını** araç veya özel durum sağ tıklayarak ve seçme **silmek** ve bağlam menüsünden. Bir özel durum silinmesi bu oluştuğunda hata ayıklayıcı kesintiye uğrar değil, olan denetlenmeyen, özel durum olarak aynı etkiye sahiptir.  
+ Ekleme ve özel durumları silebilirsiniz. Herhangi bir türde özel durum özel'i seçip tıklayarak herhangi bir kategoride silebilirsiniz **Sil** düğmesine (eksi işareti) **özel durum ayarları** araç çubuğunu veya özel durum sağ tıklayın ve seçme **Sil** bağlam menüsünden. Bir özel durum siliniyor, bu durum oluştuğunda hata ayıklayıcının kesintiye uğratacağını değil denetlenmeyen, özel durum olarak aynı etkiye sahiptir.  
   
- Bir özel durum ekleyin: içinde **Exception ayarlarını** penceresinde, özel durum kategorileri birini seçin (örneğin, **ortak dil çalışma zamanı**) tıklatıp **Ekle** düğmesi. Özel durum adını (örneğin, yazın **System.UriTemplateMatchException**). Özel durum (alfabetik sırada) listesine eklenir ve otomatik olarak denetlenir.  
+ Bir özel durum eklemek için: içinde **özel durum ayarları** penceresinde özel durum kategorileri birini seçin (örneğin, **ortak dil çalışma zamanı**) tıklayıp **Ekle** düğmesi. Özel durumun bir ad yazın (örneğin. **System.UriTemplateMatchException**). Özel durum listesine (alfabetik sırada) eklenir ve otomatik olarak denetlenir.  
   
- Bir özel durum GPU bellek erişimi özel durumları, JavaScript çalışma zamanı özel durumları veya Win32 özel durum kategorileri eklemek istiyorsanız, açıklama yanı sıra, hata kodu eklemeniz gerekir.  
+ GPU bellek erişimi özel durumlarını, JavaScript çalışma zamanı özel durumları veya Win32 özel durumlar kategorisi için bir özel durum eklemek istiyorsanız, hata kodu ve bunun yanı sıra açıklama eklemeniz gerekir.  
   
 > [!TIP]
->  Yazım denetimi yapın! **Exception ayarlarını** penceresinden eklenen bir özel durum varlığını denetlemek değil. Yazarsanız, bunu **Sytem.UriTemplateMatchException**, bu özel durum için bir giriş elde edersiniz (değil **System.UriTemplateMatchException**).  
+>  İmlanızı kontrol edin! **Özel durum ayarları** penceresini değil eklenen bir özel durum varlığını denetleyin. Yazarsanız, bu nedenle **Sytem.UriTemplateMatchException**, bir giriş için başka bir özel durum alırsınız (için **System.UriTemplateMatchException**).  
   
- Belirli bir çözümü uygulamak için özel ayarları çözümün .suo dosyasında kalıcıdır. Bir özel durum ayarları çözümleri arasında yeniden kullanamazsınız. Bu noktada, yalnızca eklenen özel durumlar kalıcı; Silinen özel durumlar değildir. Diğer bir deyişle, bir özel durum, Kapat ekleyin ve çözümü kapatıp yeniden açın ve özel durum var olmaya devam edecektir. Ancak, bir özel durum silin ve çözüm Kapat/yeniden açın, özel durum görünecektir.  
+ Bunlar için belirli bir çözümü uygulamak için özel durum ayarları çözümün .suo dosyasında kalır. Belirli bir özel durum ayarları çözümlerinde yeniden kullanamazsınız. Bu noktada, eklenen özel durumlar kalıcıdır; Silinen bir özel durum değildir. Diğer bir deyişle, bir özel durum, yakın ekleyin ve çözümü yeniden açın ve özel durum kalmaya devam eder. Ancak, bir özel durum silin ve çözümü Kapat/yeniden, özel durum yeniden görünür.  
   
- **Exception ayarlarını** penceresi, C# ancak Visual Basic'de genel özel durum türlerini destekler. Özel durumlar gibi ayırmak için `MyNamespace.GenericException<T>`, özel durum olarak eklemelisiniz **MyNamespace.GenericException'1**. Diğer bir deyişle, böyle bir özel durum oluşturduysa:  
+ **Özel durum ayarları** penceresi, C# ancak Visual Basic'de genel özel durum türlerini destekler. Özel durumlar gibi kesmek `MyNamespace.GenericException<T>`, özel durum olarak eklemelisiniz **MyNamespace.GenericException'1**. Diğer bir deyişle, böyle bir özel durum oluşturduysa:  
   
 ```csharp  
 public class GenericException<T> : Exception  
@@ -177,24 +177,24 @@ public class GenericException<T> : Exception
 }  
 ```  
   
- Özel durum ekleyebilirsiniz **Exception ayarlarını** şöyle:  
+ Özel durum ekleyebilirsiniz **özel durum ayarları** şöyle:  
   
- ![Genel özel durum ekleme](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![Genel özel durumu ekleniyor](../debugger/media/addgenericexception.png "AddGenericException")  
 
 ## <a name="add-conditions-to-an-exception"></a>Bir özel durum koşulları ekleme
 
-Özel durumları üzerinde koşulları ayarlayabilirsiniz **Exception ayarlarını** iletişim kutusu. Şu anda desteklenen koşullar dahil etmek veya hariç özel durumuna modül adlarını içerir. Modül adlarını koşul olarak ayarlayarak, özel durum yalnızca belirli kod modülleri için bölüneceği seçebilir veya belirli modüller hakkında en son önleyebilirsiniz.
+Özel durumlarda koşulları ayarlayabilirsiniz **özel durum ayarları** iletişim kutusu. Şu anda desteklenen koşullar dahil etmek veya hariç tutmak için bir özel durum için modül adlarını içerir. Modül adlarını koşul olarak ayarlayarak, yalnızca belirli kod modülleri üzerinde özel durum için kesme seçebilir veya belirli modüller hakkında en son önleyebilirsiniz.
 
 > [!NOTE]
 > Yeni bir özel durum koşulları ekleme [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-Koşullu özel durumlar eklemek için **koşulu Düzenle** özel ayarlar iletişim kutusu simgesine kutusuna veya özel durum sağ tıklatın ve seçin **koşulları Düzenle**.
+Koşullu özel durumlar eklemek için **koşulu Düzenle** simgesi özel durum Ayarları iletişim kutusunda veya özel durum sağ tıklatın ve seçin **koşulları Düzenle**.
 
 ![Bir özel durum koşullara](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durumdan sonra yürütmeye devam](../debugger/continuing-execution-after-an-exception.md)   
+ [Özel durumdan sonra yürütmeye devam etme](../debugger/continuing-execution-after-an-exception.md)   
  [Nasıl yapılır: özel durumdan sonra sistem kodunu İnceleme](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Nasıl yapılır: yerel çalışma zamanı denetimlerini kullanma](../debugger/how-to-use-native-run-time-checks.md)   
  [C çalışma zamanı kitaplığını kullanmadan çalışma zamanı kullanarak denetler](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)
+ [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)

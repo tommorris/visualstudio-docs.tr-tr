@@ -1,5 +1,5 @@
 ---
-title: Yük testi Visual Studio'da bir Web sitesi gerçek dünya kullanımının öykünmesini yapma
+title: Yük testi için bir Web sitesi gerçek dünya kullanımının öykünmesini yapma
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 562e6d4070a7796a93a2b5adc4ddcd470ae1b1f6
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152017"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177272"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-model"></a>Bir web sitesi veya bir test karışımı modeli kullanarak bir yük testinde uygulamanın beklenen gerçek hayatta kullanımı öykünün
+# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Bir Web sitesi veya bir test karışımı modeli kullanarak bir yük testinde uygulamanın beklenen gerçek hayatta kullanımı öykünün
 
-Bir Web sitesi veya yük test ettiğiniz uygulamanın beklenen gerçek dünya kullanımını daha doğru bir şekilde tahmin etmek için yük modelleme seçenekleri kullanın. Bir doğru yük modeli dayalı olmayan bir yük testi yanıltıcı sonuçlara neden olabilir çünkü bunu yapmak önemlidir.
+Bir yük testi Web sitesinin veya uygulamanın beklenen gerçek hayatta kullanımı daha doğru bir şekilde tahmin etmek için yük modelleme seçenekleri kullanın. Bir doğru yük modeli dayalı olmayan bir yük testi yanıltıcı sonuçlara neden olabilir çünkü bunu yapmak önemlidir.
 
 ## <a name="test-mix-model-enhancements"></a>Test karışımı modeli geliştirmeleri
 
@@ -28,16 +28,16 @@ Yük Testi Düzenleyicisi'ni veya test karışımı modeli Sihirbazı'nı kullan
 
 Yük testi senaryonuzun aşağıdaki test karışımı modeli seçeneklerinden birini belirtebilirsiniz:
 
--   **Toplam test sayısı tabanlı:** sanal kullanıcı bir test yinelemesi başlattığında hangi Web performans veya birim testi çalıştırma belirler. Yük testi sonunda, belirli bir testin çalışma sayısı, atanan test dağıtımını eşleşti. Bu test karışımı modeli, test karışımını bir IIS günlüğü ya da üretim verilerindeki işlem yüzdeleri dayandırırken kullanın. Daha fazla bilgi için [yüzdesi başlatılan testleri temel alarak](#BasedOnTestsStarted).
+-   **Toplam test sayısı tabanlı:** sanal kullanıcı bir test yinelemesi başlattığında hangi web performans veya birim testi çalıştırma belirler. Yük testi sonunda, belirli bir testin çalışma sayısı, atanan test dağıtımını eşleşti. Bu test karışımı modeli, test karışımını bir IIS günlüğü ya da üretim verilerindeki işlem yüzdeleri dayandırırken kullanın. Daha fazla bilgi için [yüzdesi başlatılan testleri temel alarak](#BasedOnTestsStarted).
 
--   **Sanal kullanıcı sayısına göre:** belirli bir Web performans veya birim testi çalıştıracak sanal kullanıcıların yüzdesini belirler. Yük testi içindeki herhangi bir noktada, belirli bir testi çalıştıran kullanıcıların sayısı, atanan dağıtım eşleşir. Test karışımı yüzdesi belirli bir testi çalıştıran kullanıcıların dayandırırken bu test karışımı modelini kullanın. Daha fazla bilgi için [yüzde tabanlı sanal kullanıcılarda](#PercentageBasedonVirtualUsers).
+-   **Sanal kullanıcı sayısına göre:** belirli bir web performans veya birim testi çalıştıracak sanal kullanıcıların yüzdesini belirler. Yük testi içindeki herhangi bir noktada, belirli bir testi çalıştıran kullanıcıların sayısı, atanan dağıtım eşleşir. Test karışımı yüzdesi belirli bir testi çalıştıran kullanıcıların dayandırırken bu test karışımı modelini kullanın. Daha fazla bilgi için [yüzde tabanlı sanal kullanıcılarda](#PercentageBasedonVirtualUsers).
 
--   **Kullanıcı adımı tabanlı:** yük testi boyunca, her bir Web performans testi veya birim testi belirtilen sayıda kullanıcı, saat başına bir kez çalıştırılır. Bu test karışımı modeli, yük testi boyunca belirli bir hızda testi çalıştırmak için sanal kullanıcıların istediğinizde kullanın. Daha fazla bilgi için [ilerleme test karışımını](#PacingTestMix).
+-   **Kullanıcı adımı tabanlı:** yük testi boyunca, her bir web performans testi veya birim testi belirtilen sayıda kullanıcı, saat başına bir kez çalıştırılır. Bu test karışımı modeli, yük testi boyunca belirli bir hızda testi çalıştırmak için sanal kullanıcıların istediğinizde kullanın. Daha fazla bilgi için [ilerleme test karışımını](#PacingTestMix).
 
     > [!TIP]
     > Seçtiğinizde **test karışımı yüzdesi** ve seçtiğinizde **yüzde tabanlı sanal kullanıcılarda**? Bazı testler test karışımında diğer testlerden daha uzun bir süreye sahip olduğunuzda, bu iki seçenek arasındaki fark önemlidir. Bu durumda, muhtemelen seçmelisiniz **yüzde tabanlı sanal kullanıcılarda**. Bu seçenek, bir test çalıştırması önlemek yardımcı olur, hangi çok sayıda kullanıcı uzun süreli testler çalıştıran olasılığını artırır. Ancak, tüm testler benzer süreleri varsa, daha güvenli bir şekilde seçebileceğiniz **test karışımı yüzdesi**.
 
--   **Ardışık düzenine dayanan:** her sanal kullanıcı, testlerin senaryoda tanımlandığı sırada Web performans veya birim testleri çalıştırır. Sanal kullanıcı yük testi tamamlanana kadar testler içinde bu sırada dolaşma devam eder. Daha fazla bilgi için [sıralı](#SequentialOrder).
+-   **Ardışık düzenine dayanan:** her sanal kullanıcı, testlerin senaryoda tanımlandığı sırada web performans veya birim testleri çalıştırır. Sanal kullanıcı yük testi tamamlanana kadar testler içinde bu sırada dolaşma devam eder. Daha fazla bilgi için [sıralı](#SequentialOrder).
 
 ###  <a name="BasedOnTestsStarted"></a> Başlatılan testleri temel alan yüzdesi
  İçin her test karışımında test çalıştırmak için bir sonraki test olarak ne sıklıkta seçildiğini belirleyen bir yüzde belirtebilirsiniz. Örneğin, üç testlere aşağıdaki yüzde değerleri atayabilirsiniz:
@@ -96,7 +96,7 @@ Yük testi senaryonuzun aşağıdaki test karışımı modeli seçeneklerinden b
 
 -   Yineleme sayısı yerine zamanına göre yük testi süresi belirtebilirsiniz. Bu durumda, yük testi çalıştırma süresi tamamlandığında, sonlandırma testi çalıştırılmaz.
 
--   Başlatma testi, birim testi veya bir Web performans testi ise, durumu TestContext veya WebTestContext, nesnenin başlangıç testi tamamlandıktan sonra kaydedilir. Bunu daha sonra Başlangıç bağlamı olarak test karışımında test yinelemeleri için kullanılacaktır.
+-   Başlatma testi, birim testi veya bir web performans testi ise, durumu TestContext veya WebTestContext, nesnenin başlangıç testi tamamlandıktan sonra kaydedilir. Bunu daha sonra Başlangıç bağlamı olarak test karışımında test yinelemeleri için kullanılacaktır.
 
 -   Yeni kullanıcılar, yeni kullanıcı yüzdesi, senaryo özelliğinde tanımlanan her zaman yürütme başlatma testi, test karışımını testten sonlandırma testi ve bir yineleme.
 

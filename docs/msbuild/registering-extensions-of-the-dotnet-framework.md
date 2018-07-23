@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41723f00359c250b1a43ba6addad7b8af3475f8a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0017255b67042a7e42b54325b24512a295ebeaf5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152931"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180158"
 ---
-# <a name="registering-extensions-of-the-net-framework"></a>.NET Framework uzantılarını kaydetme
+# <a name="register-extensions-of-the-net-framework"></a>.NET Framework uzantılarını kaydetme
 Belirli bir .NET Framework sürümünü genişleten bir derleme geliştirebilirsiniz. Visual Studio'da görüntülenecek derleme etkinleştirmek için **Add References** iletişim kutusu, sistem kayıt defterine içeren klasöre eklemeniz gerekir.  
   
  Örneğin, Trey Research şirket .NET Framework 4 genişletir ve Kütüphane derlemelerini görünmesini istediği bir kitaplığı geliştirmiştir varsayın **Add References** iletişim kutusuna bir proje .NET Framework 4 hedefliyor. Derlemeleri veya bir 64 bit bilgisayarda çalışan 64 bit derlemelerin 32-bit bilgisayarda çalışan 32 bit derlemeleri olduğunu ve bunlar içinde yüklenecek hızında *C:\TreyResearch\Extensions4\\*  klasör.  
@@ -33,5 +33,5 @@ Belirli bir .NET Framework sürümünü genişleten bir derleme geliştirebilirs
   
  Bir 64 bit bilgisayarda 32 bit derleme kaydetmek için Wow6432 düğümü, örneğin kullanın: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.  
   
-## <a name="see-also"></a>Ayrıca bkz.  
+### <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio tümleştirmesi](../msbuild/visual-studio-integration-msbuild.md)

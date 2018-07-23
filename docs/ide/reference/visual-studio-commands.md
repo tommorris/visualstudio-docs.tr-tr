@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 75b2a889c00245b983305d56e9eb79d78d0d4966
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924280"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176872"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio Komutları
 Visual Studio komutları bir komut çağırmanıza olanak tanır **komut** penceresinde **hemen** penceresinde veya **Bul/komut** kutusu. Her durumda, büyüktür işareti (`>`) bir arama veya hata ayıklama işlemi yerine bir komut takip etmek olduğunu belirtmek için kullanılır.
@@ -69,7 +69,7 @@ Visual Studio komutları bir komut çağırmanıza olanak tanır **komut** pence
 |[Geçerli iş parçacığı](../../ide/reference/set-current-thread-command.md)|Belirli bir iş parçacığını görüntülemenize olanak sağlar.|
 |[Tabanı Ayarla](../../ide/reference/set-radix-command.md)|Görüntülenecek bayt sayısını belirler.|
 |[Kabuk](../../ide/reference/shell-command.md)|İçinden programları başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komutu komut istemi'nden yürüttüğünü artırmadığı.|
-|[ShowWebBrowser Komutu](../../ide/reference/showwebbrowser-command.md)|Tümleşik geliştirme ortamı (IDE) veya IDE dışında içindeki bir Web tarayıcı penceresinde belirttiğiniz URL'yi görüntüler.|
+|[ShowWebBrowser Komutu](../../ide/reference/showwebbrowser-command.md)|Tümleşik geliştirme ortamı (IDE) veya IDE dışında içindeki bir web tarayıcı penceresinde belirttiğiniz URL'yi görüntüler.|
 |[Start](../../ide/reference/start-command.md)|Hata ayıklama işlemini başlatır ve hataların nasıl işleneceğini belirtmenizi sağlar.|
 |[Yolu](../../ide/reference/symbol-path-command.md)|Hata ayıklayıcının simge araması dizinler listesini ayarlar.|
 |[İki durumlu kesme noktası](../../ide/reference/toggle-breakpoint-command.md)|Dosyadaki geçerli konumda geçerli durumuna bağlı olarak kesme noktasını açar veya devre dışı bırakır.|

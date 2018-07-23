@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81687eac5b109c9e3fd441fa5ba0c526f380c3d6
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f8fc3ce425f2eaf6052d1e301d23c00d3503daec
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155548"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179989"
 ---
 # <a name="build-loggers"></a>Günlükçüleri derleme
 Günlükçüleri derleme çıkışını özelleştirebilir ve belirli bir yapı olaylarına yanıt olarak iletileri, hata veya uyarı görüntülemek bir yol sağlar. Her bir Günlükçü uygulayan bir .NET sınıfı uygulanır <xref:Microsoft.Build.Framework.ILogger> tanımlanan arabirimi *Microsoft.Build.Framework.dll* derleme.  
@@ -79,5 +79,5 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
  [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Derleme günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Derleme günlükleri alın](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)

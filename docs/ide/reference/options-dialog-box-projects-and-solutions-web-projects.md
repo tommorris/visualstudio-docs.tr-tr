@@ -12,32 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79863ec5038b420bcfa00ed67fe105c28cf9fff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c403aba7f758c0acf7ba8d2520f617b2afeba214
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945161"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176404"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Seçenekler İletişim Kutusu, Projeler ve Çözümler, Web Projeleri
 
-Web projeleri içinde geliştirme için kullanacağınız Web sunucusu ayarlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Bu seçenekler erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**seçip **Web projeleri**.
+Web projeleri içinde geliştirmek için kullanacağınız web sunucusu ayarlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Bu seçeneklere erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**seçip **Web projeleri**.
 
-Varsayılan olarak, bir Web projesini Visual Studio'da çalışan Visual Studio geliştirme sunucusu kullanır. Daha fazla bilgi için bkz: [ASP.NET Web projeleri için Visual Studio'da Web sunucuları](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).
+Varsayılan olarak, Visual Studio'da bir web projesi çalıştırıldığında, Visual Studio geliştirme sunucusunu kullanır. Daha fazla bilgi için [ASP.NET Web projeleri için Visual Studio'daki Web sunucuları](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).
 
 > [!NOTE]
-> İletişim kutuları, adları ve menü komutlarını, gördüğünüz konumlarını Seçenekleri Yardımı'nda etkin ayarlarınıza veya sürümünüze bağlı olarak açıklanan nedir alanından farklı olabilir. Bu Yardım sayfası ile yazıldı **Web ayarları** unutmayın. Ayarlarını görüntülemek veya değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Bu Yardım sayfası ile yazılmıştır **Web ayarları** unutmayın. Ayarlarınızı değiştirmek veya görüntülemek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Ayarlar
 
-**Web siteleri ve projeler için IIS Express 64-bit sürümünü kullanın**
+**Web siteleri ve projeleri için IIS Express'in 64 bit sürümünü kullanın.**
 
-Visual Studio geliştirme sunucusu yerine IIS Express'i kullanmak için bu seçeneği belirleyin. Daha fazla bilgi için bkz: [Tanıtımı IIS Express](http://go.microsoft.com/?linkid=9747914) ve [IIS Express genel bakış](http://go.microsoft.com/?linkid=9747915).
+Visual Studio geliştirme sunucusu yerine IIS Express'i kullanacak şekilde bu seçeneği belirleyin. Daha fazla bilgi için [IIS Express ile tanışın](http://go.microsoft.com/?linkid=9747914) ve [IIS Express genel bakış](http://go.microsoft.com/?linkid=9747915).
 
-**Web uygulamalarında hata listesinde hata olduğunda çalıştırmadan önce uyar**
+**Hata listesinde hatalar varken web uygulamalarını çalıştırmadan önce uyar**
 
-Bu seçeneği ayarlarsanız, hatasız derlenmiyor olduğunda, web uygulamanızın çalıştırmayı deneyin alırsınız.
+Bu seçenek ayarlanırsa, hatasız derlenmiyor web uygulamanızı çalıştırmayı denerseniz uyarılır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

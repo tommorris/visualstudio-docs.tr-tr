@@ -15,45 +15,45 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: da6f56175cc1292762107566ab1ebba81c140581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff025118d0908fe35e8f3fd54a8e467c6340d419
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972025"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178871"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Nasıl yapılır: Bir Depodan Yük Testi Sonuçlarını Silme
 
-Bir yük testi çalıştırdığınızda, çalışma sırasında toplanan bilgiler yük testi sonuçları deposunda saklanır. Yük testi sonuçları havuzu performans sayacı verilerini ve hatalar hakkında bilgi içerir. Daha fazla bilgi için bkz: [yük testi sonuçları havuzu yük testi sonuçlarını yönetme](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Bir yük testi çalıştırdığınızda, çalışma sırasında toplanan bilgiler yük testi sonuçları deposunda depolanır. Yük testi sonuçları deposu, performans sayacı verileri ve hatalar hakkında bilgi içerir. Daha fazla bilgi için [yük testi sonuçları deposu'da yük testi sonuçlarını yönetme](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
- Yük testi sonuçlarını kullanarak Yük Testi Düzenleyicisi'nden yönetebilirsiniz **yük testi sonuçlarını yönetme ve Aç** iletişim kutusu. Açın, içeri aktarma, dışarı aktarma ve yük testi sonuçlarını kaldırın.
+ Kullanarak yük testi sonuçları Yük Testi Düzenleyicisi'nden yönetebilirsiniz **açık ve yük testi sonuçlarını yönetme** iletişim kutusu. Açın, içeri aktarma, dışarı aktarma ve yük testi sonuçları kaldırın.
 
-## <a name="to-delete-results-from-a-repository"></a>Sonuçları bir depodan silmek için
+## <a name="to-delete-results-from-a-repository"></a>Depodan sonuçları silmek için
 
-1.  Bir Web performansı ve yük testi projesinden, bir yük testi açın.
+1.  Bir web performansı ve yük testi projesinden, bir yük testi açın.
 
-2.  Katıştırılmış araç çubuğunda seçin **açın ve sonuçlarını yönetme**.
+2.  Gömülü araç çubuğunda **sonuçları Aç ve Yönet**.
 
-     **Açın ve yük testi sonuçlarını yönetme** iletişim kutusu görüntülenir.
+     **Yönetme yük testi sonuçlarını Aç ve** iletişim kutusu görüntülenir.
 
-3.  İçinde **yük testi sonuçlarını bulmak için bir denetleyici adı girin**, bir denetleyici seçin. Seçin  **\<yerel - denetleyicisi yok >** yerel olarak depolanan sonuçlara ulaşmak için.
+3.  İçinde **yük testi sonuçlarını bulmak için bir denetleyici adı girin**, bir denetleyici seçin. Seçin  **\<yerel - denetleyici yok >** yerel olarak depolanmış sonuçlara ulaşmak için.
 
-4.  İçinde **göstermek için aşağıdaki yük testi sonuçları**, sonuçları görüntülemek istediğiniz yükleme testini seçin. Seçin  **\<tüm testleri için sonuçları göstermek >** tüm testler için tüm sonuçları görmek için.
+4.  İçinde **göstermek için aşağıdaki yükleme testi sonuçları**, yük testi sonuçları görüntülemek istediğinizi seçin. Seçin  **\<tüm testler için sonuçları Göster >** tüm testler için tüm sonuçları görmek için.
 
-     Yük testi sonuçlarını varsa, görüntülendikleri **yük testi sonuçlarını** listesi. Sütunlar **zaman**, **süresi**, **kullanıcı**, **sonucu**, **Test**, ve  **Açıklama**. **Test** test adını içerir ve **açıklama** testini çalıştırmadan önce eklemiş isteğe bağlı bir açıklama içerir. **Açıklama** sütunu içindeki girilen kısa açıklamaları görüntüler **çözümleme açıklamaları** bu test sonucu.
+     Yük testi sonuçları kullanamıyorsanız, görünürler **yük testi sonuçları** listesi. Sütunların **zaman**, **süresi**, **kullanıcı**, **sonucu**, **Test**, ve  **Açıklama**. **Test** test adını içerir ve **açıklama** test çalıştırılmadan önce eklenir isteğe bağlı bir açıklama içerir. **Açıklama** sütunu içindeki girilen kısa açıklamaları görüntüler **analiz yorumları** bunun için test sonucu.
 
-5.  İçinde **yük testi sonuçlarını** listesinde, bir sonuç seçin. Birden fazla sonuç seçmek için SHIFT tuşunu, Ctrl tuşunu veya her ikisini kullanabilirsiniz.
+5.  İçinde **yük testi sonuçları** listesinde, bir sonuç seçin. Birden fazla sonuç seçmek için Shift tuşunu, Ctrl tuşu veya her ikisini de kullanabilirsiniz.
 
-6.  Seçin **kaldırmak**.
+6.  Seçin **Kaldır**.
 
-     Sonuçları depodan kaldırılır.
+     Depodan sonuçları kaldırılır.
 
     > [!NOTE]
-    > **Açın ve yük testi sonuçlarını yönetme** sonuçlar kaldırıldıktan sonra iletişim kutusunu açık kalır.
+    > **Yönetme yük testi sonuçlarını Aç ve** sonuçları kaldırıldıktan sonra iletişim kutusu açık kalır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Nasıl yapılır: yük testi sonuçlarını bir depodan dışarı aktarma](../test/how-to-export-load-test-results-from-a-repository.md)
-- [Yük testi sonuçları havuzu yük testi sonuçlarını yönetme](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Yük testi sonuçları deposu içindeki yük testi sonuçlarını yönetme](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Nasıl yapılır: yük testi sonuçlarını bir depoya içeri aktarma](../test/how-to-import-load-test-results-into-a-repository.md)

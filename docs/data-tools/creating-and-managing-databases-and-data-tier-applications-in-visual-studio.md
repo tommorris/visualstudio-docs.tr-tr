@@ -1,5 +1,5 @@
 ---
-title: Veritabanı projeleri, sunucu projeler ve Visual Studio'da DAC projeleri
+title: Veritabanı projeleri, sunucu projeleri ve Visual Studio projelerinde DAC
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,25 +15,26 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03dca206f38d98c44e711e945f5d4015142f0af9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 6ca08103614989ddbfd096a08a1531e756c9f67c
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758413"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176113"
 ---
-# <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Veritabanı projeleri ve Visual Studio'da veri katmanı uygulamaları
-Veritabanı projeleri yeni veritabanları oluşturmak için kullanabileceğiniz yeni veri katmanı uygulamaları (Dac'ler) ve varolan veritabanları ve veri katmanı uygulamaları güncelleştirmek için. Hem veritabanı projeleri hem de DAC projeleri, sürüm denetimi ve proje yönetimi tekniklerini yönetilen veya özgün kod bu teknikler uygulamak benzer şekilde, veritabanı geliştirme çabalarınız uygulamak etkinleştirin. Geliştirme ekibiniz DAC projesi, veritabanı projesi ya da bir sunucu projesi oluşturarak ve sürüm denetimi altında koyma veritabanları ve veritabanı sunucuları için değişiklikleri yönetmenize yardımcı olabilir. Ekibinizin üyeleri olun, derleme ve ekiple paylaşmadan önce değişiklikleri bir yalıtılmış geliştirme ortamı veya korumalı alan, test için dosyaları kontrol edebilirsiniz. Kod kalitesini sağlamaya yardımcı olmak için takımınızın tamamlayın ve üretime değişiklikleri dağıtmadan önce tüm değişiklikleri veritabanına belirli bir sürümü için bir hazırlama ortamında test.
+# <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Veritabanı projeleri ve Visual Studio'daki veri katmanı uygulamaları
 
-Veri katmanı uygulamaları tarafından desteklenen veritabanı özelliklerinin bir listesi için bkz: [desteklenen veri katmanı uygulamaları özellikleri](http://go.microsoft.com/fwlink/?LinkId=164239) Microsoft web sitesinde. Veri katmanı uygulamaları tarafından desteklenmeyen özellikleri veritabanınızdaki kullanırsanız, değişiklikleri veritabanınızı yönetmek için bunun yerine veritabanı projesi kullanmanız gerekir.
+Veritabanı projeleri yeni veritabanları oluşturmak için kullanabileceğiniz yeni veri katmanı uygulamaları (Dac'ler) ve var olan veritabanlarını ve veri katmanı uygulamaları güncelleştirmek için. Hem veritabanı projeleri hem de DAC projeleri çok yönetilen veya yerel kod için bu teknikler uyguladığınız aynı şekilde, veritabanı geliştirme çalışmalarınızda kullanmanız için sürüm denetimi ve proje yönetimi teknikleri uygulanmasını sağlar. DAC proje, veritabanı projesi veya bir sunucu projesi oluşturma ve sürüm denetimi altında koyarak veritabanları ve veritabanı sunucuları değişiklikleri yönetme geliştirme ekibinize yardımcı olabilir. Ekip üyelerinin olun, derleme ve değişiklikleri bir yalıtılmış bir geliştirme ortamı veya korumalı alan, takım paylaşmadan önce test dosyaları kontrol edebilirsiniz. Kod kalitesinin sağlanmasına yardımcı olmak için takımınızın tamamlayın ve değişiklikleri üretime dağıtmadan önce tüm değişiklikleri veritabanını belirli bir sürümü için bir hazırlama ortamında test.
 
-## <a name="common-high-level-tasks"></a>Ortak üst düzey görevler
+Veri katmanı uygulamaları tarafından desteklenen veritabanı özelliklerin bir listesi için bkz. [veri katmanı uygulamalarında desteklenen özellikleri](/previous-versions/visualstudio/visual-studio-2010/ee362013(v=vs.100)). Veri katmanı uygulamaları tarafından desteklenmeyen özellikleri veritabanınızdaki kullanırsanız, veritabanınıza değişiklikleri yönetmek için bunun yerine bir veritabanı projesi kullanmanız gerekir.
+
+## <a name="common-high-level-tasks"></a>Ortak bir üst düzey görevler
 
 |Üst düzey görev|Destekleyici İçerik|
 |----------------------|------------------------|
-|**Veri katmanı uygulaması geliştirme Başlat:** A DAC olduğu ile sunulan yeni bir kavram [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] tanımını içeren bir [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanını ve destekleyen bir istemci-sunucu veya 3 katmanlı tarafından kullanılan nesneleri örneği uygulama. Bir DAC tabloları ve görünümleri, oturum açma bilgileri gibi örnek varlıkları birlikte gibi veritabanı nesnelerini içerir. Visual Studio DAC proje oluşturma, DAC paket dosyası oluşturun ve o DAC paket dosyası örneği üzerine dağıtımı için veritabanı yöneticisine göndermek için kullanabileceğiniz [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanı altyapısı.|-   [Veri katmanı uygulamaları oluşturma ve yönetme](http://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft web sitesi)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Yinelemeli veritabanı geliştirme gerçekleştirme:** bir geliştirici veya bir tester ise, proje bölümlerini denetleyin ve bunları bir yalıtılmış geliştirme ortamında güncelleştirin. Bu ortam türünü kullanarak diğer takım üyeleri etkilemeden değişikliklerinizi test edebilirsiniz. Değişiklikler tamamlandıktan sonra burada diğer ekip üyelerinin değişikliklerinizi edinebilir ve yapı ve test sunucusuna dağıtmak geri sürüm denetimine, dosyalarını denetleyin.|-   [Sorgu ve metin düzenleyicileri (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web sitesi)<br />-   [Transact-SQL hata ayıklayıcı](http://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft web sitesi)|
-|**Prototipi oluşturulurken, doğrulama test sonuçları, değiştirme veritabanı komut dosyalarında ve nesneleri:** kullanabileceğiniz [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] Düzenleyicisi'ni bu ortak görevleri herhangi birini gerçekleştirebilirsiniz.|-   [Sorgu ve metin düzenleyicileri (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web sitesi)|
+|**Veri katmanı uygulaması geliştirmeye başla:** A DAC ile sunulan yeni bir kavram olan [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] tanımını içeren bir [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanını ve destekleyen bir istemci-sunucu veya 3 katmanlı tarafından kullanılan nesneleri örneği uygulama. Bir DAC, tablolar ve görünümler, oturum açma bilgileri gibi örnek varlıkları birlikte gibi nesneleri içerir. Visual Studio DAC proje oluşturma, DAC paket dosyası derleme ve dağıtım örneği için bir veritabanı yöneticisi, DAC paket dosyası göndermek için kullanabileceğiniz [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanı altyapısı.|-   [Oluşturma ve veri katmanı uygulamaları yönetme](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Yinelemeli veritabanı geliştirme gerçekleştirme:** bir geliştirici veya test edici ise, proje bölümlerini denetleyin ve ardından bunları bir yalıtılmış geliştirme ortamında güncelleştirin. Bu ortam türünü kullanarak, diğer takım üyeleri etkilemeden değişikliklerinizi test edebilirsiniz. Değişiklik tamamlandıktan sonra burada diğer takım üyelerinin yaptığınız değişiklikleri alabilir ve yapı ve bunları bir test sunucusuna dağıtmak geri sürüm denetimine, dosyaları denetleyin.|-   [Sorgu ve metin düzenleyiciler (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Transact-SQL hata ayıklayıcısı](http://go.microsoft.com/fwlink/?LinkId=227324)|
+|**Doğrulama prototip oluşturma, test sonuçları ve değiştirme veritabanı betikleri ve nesneleri:** kullanabileceğiniz [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] herhangi biri şu genel görevleri gerçekleştirmek için düzenleyici.|-   [Sorgu ve metin düzenleyiciler (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

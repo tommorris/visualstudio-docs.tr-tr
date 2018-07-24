@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Test yük sayaç kümesi eşlemeleri için bilgisayar etiketleri ekleme
+title: Yük testi Visual Studio için sayaç kümesi eşlemeleri için bilgisayar etiketleri ekleme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6b14ef4ae42ef978c449f7cb4bafaa08bf8a1a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96ce122c78c20b741613ed45820f585236a0383b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968141"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203673"
 ---
-# <a name="how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini Kullanılarak Sayaç Kümesi Eşlemelerine Bilgisayar Etiketleri Ekleme
+# <a name="how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor"></a>Nasıl yapılır: sayaç kümesi Yük Testi Düzenleyicisini kullanarak eşlemelerine bilgisayar etiketleri ekleme
 
-Bilgisayar etiketleri tanımak kolay ada sahip bir bilgisayar tanımlamanıza olanak sağlar. Etiketler görüntülenir **sayaç kümesi eşlemeleri** Yük Testi Düzenleyicisi'nde ağaç düğümü. Daha da önemlisi, etiketler hangi Yardım paydaşları yük testinde bilgisayarında hangi rolü belirleyin Excel raporlarında görüntülenir. Örneğin, "içinde Web Server1 lab2" veya "Phoenix ofisi içinde SQL Server2". Daha fazla bilgi için bkz: [Test karşılaştırmaları veya eğilim analizleri için yük testleri sonuçlarını raporlama](../test/compare-load-test-results.md).
+Bilgisayar etiketleri bir kolayca tanımak ada sahip bir bilgisayar tanımlamanıza olanak sağlar. Etiketler görüntülenir **sayaç kümesi eşlemeleri** Yük Testi Düzenleyicisi'nde ağaç düğümü. Daha da önemlisi, etiketler yardımcı olan bilgisayar ve yük testinde sahip rolü proje katılımcılarını belirleme, Excel raporlarında görüntülenir. Örneğin, "Web Sunucu1 lab2 içinde" veya "SQL Server2 Phoenix Office". Daha fazla bilgi için [raporlama yük testleri için test karşılaştırmaları veya eğilim analizi sonuçları](../test/compare-load-test-results.md).
 
-## <a name="to-add-a-tag-to-a-computer"></a>Bir bilgisayara bir etiket eklemek için
+## <a name="to-add-a-tag-to-a-computer"></a>Bir bilgisayar için bir etiket eklemek için
 
 1.  Bir yük testi açın.
 
@@ -29,16 +29,16 @@ Bilgisayar etiketleri tanımak kolay ada sahip bir bilgisayar tanımlamanıza ol
 
      – veya –
 
-     Sağ **sayaç kümelerini** yükleme klasöründe test ağacı ve seçin **sayaç kümelerini Yönet**.
+     Sağ **sayaç kümeleri** klasörü yük testi ağacında ve seçin **sayaç kümelerini Yönet**.
 
      **Sayaç kümelerini Yönet** iletişim kutusu görüntülenir.
 
-3.  (İsteğe bağlı) İçinde **seçili bilgisayarlar ve sayaç kümelerini eklenecek aşağıdaki çalışma ayarlarının altında** liste kutusunda, farklı bir çalışma ayarı seçin.
+3.  (İsteğe bağlı) İçinde **seçili bilgisayarlar ve sayaç kümeleri aşağıdaki çalışma ayarları altına eklenecek** liste kutusu, farklı bir çalışma ayarı seçin.
 
     > [!NOTE]
-    > Bu, yalnızca yük testinde birden fazla çalışma ayarı varsa geçerlidir.
+    > Bu, yalnızca yük testinize birden fazla çalışma ayarı varsa geçerlidir.
 
-4.  Altında **bilgisayar ve sayaç ayarlar izlemek için**, etiket için uygulamak istediğiniz bilgisayarı seçin.
+4.  Altında **bilgisayar ve sayaç kümeleri izlemek için**, etiketi uygulamak istediğiniz bilgisayarı seçin.
 
     > [!NOTE]
     > Bir bilgisayar ekleme hakkında daha fazla bilgi için bkz: [nasıl yapılır: sayaç kümelerini Yönet](../test/how-to-manage-counter-sets-using-the-load-test-editor.md).
@@ -51,5 +51,5 @@ Bilgisayar etiketleri tanımak kolay ada sahip bir bilgisayar tanımlamanıza ol
 
 - [Eşik kuralı ihlallerini çözümleme](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Yük testindeki bilgisayarlar için sayaç kümelerini ve eşik kurallarını belirtme](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Nasıl yapılır: sayaç kümelerini yönetme](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)
+- [Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testi içinde belirtin.](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Nasıl yapılır: sayaç kümelerini Yönet](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8914b6b876b27b94add446a627087fb34e5082ea
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890415"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204212"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
@@ -26,10 +26,12 @@ Kullanmak daha faydalı olup olmadığını düşünebilirsiniz [derleme veya s�
 
 ## <a name="system-requirements"></a>Sistem gereksinimleri
 
+Visual Studio 2017 için test aracısı veya test denetleyicisi yüklemek için sistem gereksinimleri aşağıdaki tabloda gösterilmiştir:
+
 | Öğe | Gereksinimler |
 | ---- | ------------ |
-| **Aracı** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard ve Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
-| **Denetleyici** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard ve Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
+| **Aracı** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard ve Datacenter<br />Windows Server 2012 R2 |
+| **Denetleyici** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard ve Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Test denetleyicisi ve test aracılarını yükleme

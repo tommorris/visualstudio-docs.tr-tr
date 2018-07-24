@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179566"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204238"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Çözümlemesini Yapılandırma
 
-Visual Studio'da Kod Analizi listesinden seçebilirsiniz *kural kümeleri* yönetilen kod projesi için uygulanacak. Varsayılan kural kümesi *Microsoft en az önerilen kurallar*. Başka bir kural bir proje veya Çözümdeki tüm projeleri kümesi uygulayabilirsiniz.
+Visual Studio'da, Kod Analizi listesinden seçim yapabilir [kural kümeleri](../code-quality/rule-set-reference.md)) yönetilen kod projesi için uygulanacak. Varsayılan olarak, **Microsoft en az önerilen kurallar** kural kümesi işaretli, ancak isterseniz kümesi farklı bir kural uygulayabilirsiniz. Bir çözümde bir veya birden çok proje için kural kümeleri uygulanabilir.
 
 > [!TIP]
 > ASP.NET web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: yapılandırma kod analizi için bir ASP.NET web uygulaması](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -76,4 +76,5 @@ Varsayılan olarak, bir çözümün tüm yönetilen projelere atanır *Microsoft
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Kod çözümleme kural kümesi başvurusu](../code-quality/rule-set-reference.md)
 - [Nasıl yapılır: bir ASP.NET web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

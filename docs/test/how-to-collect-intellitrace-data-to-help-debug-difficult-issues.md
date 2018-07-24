@@ -13,21 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e30bbcdfe2a309534a17a51ac3669c848b9a27de
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179768"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203858"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: Hata Ayıklama Zorluklarını Çözmeye Yardımcı Olması için IntelliTrace Verilerini Toplama
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama
 
 Tanılama veri bağdaştırıcısı için görsel Stdio, belirli tanı izleme bilgilerini toplamak için IntelliTrace'i yapılandırabilirsiniz. Testler bu bağdaştırıcıyı kullanabilir, test, uygulama için büyük miktarda tanılama olayları toplayabilir ve sonrasında bir geliştirici bu olayları, kodu izleyip bir hatanın nedenini bulmak üzere kullanabilir. IntelliTrace için tanılama veri bağdaştırıcısı el ile veya otomatik testler için kullanılabilir.
 
 > [!NOTE]
 > IntelliTrace yalnızca yönetilen kod kullanarak yazılmış bir uygulama üzerinde çalışır. Bir tarayıcı istemci olarak kullanan bir web uygulamasını test ediyorsanız, yönetilen kod yok izleme için kullanılabilir olmadığından, IntelliTrace istemci için test ayarlarınızda etkinleştirmemeniz gerekir. Bu durumda, bir ortam kurmak ve web sunucunuz üzerinde uzaktan IntelliTrace veri toplamak isteyebilirsiniz.
 
-IntelliTrace verilerini .iTrace uzantısına sahip bir dosyada depolanır. Test ve bir test adımı başarısız çalıştırdığınızda, bir hata oluşturabilirsiniz. Tanılama bilgilerini içeren bir IntelliTrace dosyası otomatik olarak bu hataya eklenir.
+IntelliTrace verisi uzantısına sahip bir dosyada depolanır *.iTrace*. Test ve bir test adımı başarısız çalıştırdığınızda, bir hata oluşturabilirsiniz. Tanılama bilgilerini içeren bir IntelliTrace dosyası otomatik olarak bu hataya eklenir.
 
 > [!NOTE]
 > Test geçiş başarılı olduğunda, IntelliTrace için tanılama veri bağdaştırıcısını IntelliTrace dosyası oluşturmaz. Yalnızca başarısız bir test çalışması veya bir hatayı bildirme, bir dosya kaydeder.
@@ -73,7 +73,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi ve
 
 5.  Seçin **genel** sekmesi. Seçin **yalnızca IntelliTrace olaylarını** test ettiğinizde performansı üzerinde çok az etkisi olan önemli tanılama olaylarını kaydetmek için.
 
-     **-** veya -
+     veya
 
      Seçin **IntelliTrace olayları ve çağrı bilgileri** tanılama olayları ve yöntemi kaydetmek için çağrı bilgileri, izleme düzeyini gösterir. Testlerinizi çalıştırdığınızda, bu izleme düzeyini performans etkisi olabilir.
 
@@ -101,7 +101,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi ve
 11. (İsteğe bağlı) Seçin **Gelişmiş** sekmesi. Ardından, yanındaki oku seçin **en fazla kayıt için disk alanı miktarını** ve IntelliTrace dosyası kullanmak etkinleştirmek istediğiniz en büyük boyutu seçin.
 
     > [!NOTE]
-    > Kayıt boyutunu artırmak için bu kayıt, test sonuçları ile birlikte kaydettiğinizde, bir zaman aşımı sorun ortaya çıkabilir. Tanılama veri bağdaştırıcıların zaman aşımı değerlerini artırmak nasıl hakkında daha fazla bilgi için bkz. [nasıl yapılır: tanılama veri bağdaştırıcıları zaman aşımlarını önlemek](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Kayıt boyutunu artırmak için bu kayıt, test sonuçları ile birlikte kaydettiğinizde, bir zaman aşımı sorun ortaya çıkabilir. Tanılama veri bağdaştırıcıların zaman aşımı değerlerini artırmak nasıl hakkında daha fazla bilgi için bkz. [nasıl yapılır: tanılama veri bağdaştırıcıları için zaman aşımlarını önlemek](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
 
 12. Microsoft Test Yöneticisi kullanıyorsanız seçin **Kaydet**. Visual Studio kullanıyorsanız, seçin **Tamam**. IntelliTrace ayarları artık yapılandırılır ve test ayarlarınız için kaydedildi.
 

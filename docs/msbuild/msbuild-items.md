@@ -1,5 +1,6 @@
 ---
 title: MSBuild öğeleri | Microsoft Docs
+description: ItemGroup Msbuild'i içerecek öznitelik bir derlemede dahil edilecek dosyaları belirtmek için kullanın
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a483d6dcaa4de7c2b9760704f4933a73d810061
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081842"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204134"
 ---
 # <a name="msbuild-items"></a>MSBuild öğeleri
-MSBuild öğeleri derleme sistemine girişleri ve genelde dosyaları temsil ederler. Öğeleri öğesi adlarına dayalı öğe türlerine gruplanır. Öğe türleri parametre olarak görevleri için kullanılabilir öğe listeleri içeren adlandırılır. Görevler, derleme işleminin adımları gerçekleştirmek için öğe değerlerini kullanın.  
+MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder (dosyaları belirtilen `Include` özniteliği). Öğeleri öğesi adlarına dayalı öğe türlerine gruplanır. Öğe türleri parametre olarak görevleri için kullanılabilir öğe listeleri içeren adlandırılır. Görevler, derleme işleminin adımları gerçekleştirmek için öğe değerlerini kullanın.  
   
  Koşulları "Item" ve "öğesi value" öğelerini ait oldukları öğe türü adlandırılır çünkü birbirlerinin yerine kullanılabilir.  
   

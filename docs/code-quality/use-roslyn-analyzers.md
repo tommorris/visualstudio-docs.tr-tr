@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81a26c4aa8ebbf436ba58ee40ceb02ff8f92b0aa
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993921"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204160"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Yapılandırma ve Roslyn çözümleyicisi kuralları kullanma
 
@@ -79,7 +79,7 @@ Aşağıdaki ekran görüntüsünde görünürler aynı üç ihlallerini göster
 
 Bir kuraldan önemi değiştirebilirsiniz **Çözüm Gezgini**, veya içinde  *\<projectname > .ruleset* kuraldaöneminideğiştirdiktensonraçözümedosyası **Çözüm Gezgini**.
 
-![Çözüm Gezgini'nde RuleSet dosyası](media/ruleset-in-solution-explorer.png)
+![Çözüm Gezgini'nde kural kümesi dosyası](media/ruleset-in-solution-explorer.png)
 
 ### <a name="to-set-rule-severity-from-solution-explorer"></a>Çözüm Gezgini'nden kural önem derecesi ayarlamak için
 

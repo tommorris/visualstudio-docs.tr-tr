@@ -2,7 +2,7 @@
 title: Yerel nesnelerin özel görünümlerini oluşturma
 description: Visual Studio hata ayıklayıcıda yerel türleri görüntüleme biçimini özelleştirmek için Natvis çerçevesini kullanın
 ms.custom: ''
-ms.date: 06/27/2017
+ms.date: 067/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49cb94e11f4ce5c472ef4fa445037cfcd2861fd4
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: b03e7809cb0958760e1a4fcc7b4bb5b4260a7429
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433580"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204251"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda yerel nesnelerin özel görünümlerini oluşturma
 Visual Studio Natvis çerçevesi Visual Studio hata ayıklayıcı değişken pencerelerinde yerel türleri görüntülenme şeklini özelleştirmenizi sağlar (örneğin, **Watch** penceresinde **Yereller** penceresinde ve  **DataTips**.
@@ -631,7 +631,7 @@ Aşağıdaki işlevlere desteklenir:
 </Type>  
 ```  
   
- Bellek içi bit eşlemler görüntülemek için kullanılan görüntü Watch uzantısı Uıvisualizer'a örneği görebilirsiniz: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Bellek içi bit eşlemler görüntülemek için kullanılan görüntü Watch uzantısı Uıvisualizer'a örneği görebilirsiniz: [ImageWatch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)  
   
 ### <a name="customvisualizer-element"></a>CustomVisualizer öğesi  
  `CustomVisualizer` Visual Studio'da çalışan kod görselleştirmede denetlemek için yazabileceğiniz bir VSIX uzantısı belirten bir genişletilebilirlik noktası niteliğindedir. VSIX uzantılarını yazma hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Özel Görselleştirici yazma natvis XML tanımını yazmaya daha çok daha fazla iş olmakla birlikte, hangi natvis desteklediği veya desteklemediği hakkında kısıtlamalardan ücretsizdir. Özel görselleştiriciler sorgulayabilir ve hata ayıklanan işlemin değiştirmek veya Visual Studio'nun diğer bölümleriyle iletişim kurmak için kullanılan API'ler, hata ayıklayıcı genişletilebilirliği tam kümesini erişebilir.  

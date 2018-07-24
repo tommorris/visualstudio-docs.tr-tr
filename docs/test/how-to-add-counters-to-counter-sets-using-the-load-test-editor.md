@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Test yük sayaçları sayaç kümelerine sayaç ekleme
+title: Sayaçları yük testi Visual Studio'da için sayaç kümelerine sayaç ekleme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,47 +12,47 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967891"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203644"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini Kullanarak Sayaç Kümelerine Sayaç Ekleme
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak sayaç kümelerine sayaç ekleme
 
-İle bir yük testi oluşturduğunuzda **Yük Testi Sihirbazı**, başlangıç sayaç kümesini ekleyin. Bu, yük testi için önceden tanımlanmış sayaç kümeleri kümesi sunar. Daha fazla bilgi için bkz: [sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testinde belirtme](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+İle bir yük testi oluşturduğunuzda, **Yük Testi Sihirbazı**, bir başlangıç sayaç kümesini ekleyin. Bu, Yük testiniz için ön tanımlı sayaç kümeleri kümesini sunar. Daha fazla bilgi için [sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testinde belirtin](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 > [!NOTE]
-> Yük testleri Uzak makinelerde dağıtılmışsa, denetleyici ve aracı sayaçları denetleyici ve aracı eşlenen sayaç. Yükleme testinizde uzak makineleri kullanma hakkında daha fazla bilgi için bkz: [Test denetleyicileri ve test aracıları](configure-test-agents-and-controllers-for-load-tests.md).
+> Yük testlerinizi Uzak makinelerde dağıtılmışsa, denetleyici ve aracı sayaçları denetleyicisi ve aracısı için eşlenen sayaç kümeleri. Uzak makinede yük testinizde kullanma hakkında daha fazla bilgi için bkz. [Test denetleyicileri ve test aracılarını](configure-test-agents-and-controllers-for-load-tests.md).
 
 
- Sayaçlarınızın içinde yönetmek **Yük Testi Düzenleyicisi**. Teste zaten ekli sayaç kümelerini görünür **sayaç kümelerini** yük testi düğümü. Bir yük testi oluşturduğunuzda, varolan sayaç kümelerine yeni sayaçlar ekleyebilirsiniz.
+ Sayaçlarınızı yönettiğiniz **Yük Testi Düzenleyicisi**. Test zaten eklenmiş olan sayaç kümeleri görülebilir **sayaç kümeleri** düğümü yük testi. Bir yük testi oluşturduktan sonra var olan sayaç kümelerine sayaç yeni sayaçları ekleyebilirsiniz.
 
-## <a name="to-add-counters-to-a-counter-set"></a>Bir sayaç kümesine sayaç eklemek için
+## <a name="to-add-counters-to-a-counter-set"></a>Sayaç için bir sayaç kümesi eklemek için
 
 1.  Bir yük testi açın.
 
-2.  Genişletme **sayaç kümelerini** düğümü. Yük testi eklenen tüm sayaç kümeleri görünür.
+2.  Genişletin **sayaç kümeleri** düğümü. Yük testi için eklenmiş olan tüm sayaç kümeleri tarafından görülebilir.
 
     > [!NOTE]
-    > Yük testi hiyerarşi ağacı de içeren **çalıştırma ayarları** düğümü. Bu düğümü içeren **sayaç kümesi eşlemeleri** tüm bilgisayarlar ve bu bilgisayarlara eşlenen sayaç kümelerini gösterir düğümü.
+    > Yük testi hiyerarşi ağacı de içeren **çalıştırma ayarları** düğümü. Bu düğümü içeren **sayaç kümesi eşlemeleri** düğümü, bu bilgisayarlara eşlenmiş sayaç kümeleri ve tüm bilgisayarları gösterir.
 
-3.  Var olan bir sayaç kümesini sağ tıklayın ve ardından **Sayaç Ekle**.
+3.  Var olan bir sayaç kümesini sağ tıklatın ve ardından **Sayaç Ekle**.
 
-     **Performans sayaçlarını Çek** iletişim kutusu görüntülenir.
+     **Performans sayaçlarını Seç** iletişim kutusu görüntülenir.
 
 4.  İçinde **bilgisayar** açılan eşlemek istediğiniz bilgisayarın adını yazın. Alternatif olarak, bilgisayarlardan biri aşağı açılan listeden seçin.
 
     > [!NOTE]
-    > Performans verileri toplanmadan önce sayaç kümelerini bir bilgisayara eşlenmesi gerekir çünkü performans verilerini toplamak bir bilgisayar belirtmeniz gerekir.
+    > Performans verileri toplanmadan önce bir bilgisayara sayaç kümeleri eşlenmelidir için performans verilerini toplamak bir bilgisayar belirtmeniz gerekir.
 
-5.  Seçin bir **performans kategorisi** performans veri sayacı kategorilerini filtrelemek için. Performans sayaçlarını seçmek verilerden iki sütunu görürsünüz.
+5.  Seçin bir **performans kategorisi** performans veriler sayaçlarının kategorileri filtrelemek için. İki sütun hangi performans sayaçlarını seçmek verileri görürsünüz.
 
     > [!NOTE]
-    > Bazı sayaç kategorileri bir örnek de seçmenizi gerektirir. Örneğin, bir SQL sayaç seçerseniz, birden fazla hedef bilgisayarda yüklü SQL örneği olabileceğinden bir SQL örneğini seçmeniz gerekir.
+    > Bazı sayaç kategorileri örneği de seçmeniz gerekir. Örneğin, bir SQL sayaç seçerseniz, olabilir çünkü birden fazla hedef bilgisayarda yüklü SQL örneğini bir SQL örneği seçmeniz gerekir.
 
-6.  Bir sayacı ve özel sayaç kümenize eklemek için bir örnek seçin.
+6.  Bir sayacı ve özel sayaç kümenize eklemek için örneği seçin.
 
      \- veya -
 
@@ -61,9 +61,9 @@ ms.locfileid: "31967891"
 7.  Seçin **Tamam**.
 
     > [!NOTE]
-    > Var olan bir sayacı veya sayaç kategorisini sağ tıklayarak seçip, kopyala'yı seçip ardından onu farklı sayaç kümesi düğümüne yapıştırarak sayaçlar eklemek de mümkündür. Kopyalanan ancak ihtiyaç olmayan fazladan sayaçlar silinebilir.
+    > Sayaç kümesi varolan sayacı veya sayaç kategorisini Kopyala'yı seçip seçerek sayaçlar eklemek mümkündür ve ardından onu farklı sayaç yapıştırma düğüm kümesi. Kopyalanır, ancak gerekli değildir, ek sayaçları silinebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yük testindeki bilgisayarlar için sayaç kümelerini ve eşik kurallarını belirtme](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testi içinde belirtin.](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Yük testi çalıştırma ayarlarını yapılandırma](../test/configure-load-test-run-settings.md)

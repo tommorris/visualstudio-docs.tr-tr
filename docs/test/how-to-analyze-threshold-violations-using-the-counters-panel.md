@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testleri için Eşik ihlalleri
+title: Visual Studio'da yük testleri için Eşik ihlalleri
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,70 +10,70 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cb64626034c8c9bf03875385a80ebc417bf05dcb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751812"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204069"
 ---
-# <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Düzenleyicisi'nde Sayaçlar Panelini Kullanılarak Eşik İhlallerini Çözümleme
+# <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Çözümleyicisi'nde Sayaçlar panelini kullanılarak Eşik ihlallerini çözümleme
 
-Bir yük testi çalışırken ya da bir yük testi sonuç çözümlerken Sayaçlar panelini grafikler görünümünde ve Tablolar görünümünde Yük Testi Çözümleyicisi görülebilir. Bkz: [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md), [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) ve [nasıl yapılır: yük testi sonuçlarını çözümleme için erişim](../test/how-to-access-load-test-results-for-analysis.md).
+**Sayaçları** masasıdır grafikler görünümünde ve Tablolar görünümünde görünür **Yük Testi Çözümleyicisi** bir yük testi çalışırken ya da bir yük testi sonucu çözümlerken. Bkz: [analiz yük testi sonuçlarını grafik görünümünde](../test/analyze-load-test-results-in-the-graphs-view.md), [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) ve [nasıl yapılır: erişim yük testi sonuçlarını analiz](../test/how-to-access-load-test-results-for-analysis.md).
 
- Eşik ihlallerini belirli performans sayaçları ile ilişkili ve performans sayacı aşıldı veya ayarlanan bir eşik değeri altına düştü gösterir. Sayaçlar panelini simgeleri Eşik ihlallerini iletişim kurar.
+ Eşik ihlalleri, belirli bir performans sayaçları ile ilişkili ve performans sayacı aşıldı veya bir kümesi eşik değerinin altına düştü gösterir. Simgeleri **sayaçları** paneli iletişim Eşik ihlalleri.
 
- ![Bölmenin bilgisayar düğümünün sayacı](../test/media/ltest_compnode.png)
+ ![Bölmenin bilgisayar düğümünün sayaç](../test/media/ltest_compnode.png)
 
- Eşik ihlali simgesi başarısız sayaç kök bulunduğu ağaç düğümünden yayılır. Simge bir ağaç genişletilmemiş çünkü ağacında görünür olmayabilir sayacı ihlali kullanıcıya uyarır. Simge bir örneği görülebilir **bilgisayar düğümü** önceki çizimde Sayaç panelinde.
+ Eşik ihlali simgesine başarısız sayaç kök bulunduğu ağaç düğümden yayılır. Simge bir ihlali nedeniyle ağaç genişletilmemiş ağaçta görünür olmayabilir sayaç için kullanıcıyı uyarır. Simge bir örneği şurada görülebilir **bilgisayar düğümü** içinde **sayaçları** önceki çizimdeki paneli.
 
- Simge aşağıdakilerden biri olacaktır:
+ Simgesi aşağıdakilerden biri olabilir:
 
  ![Eşik ihlali yok](../test/media/icon_ltest_1.gif) Eşik ihlali yok.
 
  ![Kritik Eşik ihlalinin son aralığı](../test/media/icon_ltest_2.gif) Son aralıkta bir Kritik Eşik ihlali oluştu.
 
- ![Kritik Eşik ihlalinin önceki aralığı](../test/media/icon_ltest_3.gif) Önceki bir aralıkta bir Kritik Eşik ihlali oluştu.
+ ![Önceki bir aralıkta bir Kritik Eşik ihlali](../test/media/icon_ltest_3.gif) Önceki bir aralıkta bir Kritik Eşik ihlali oluştu.
 
  ![Uyarı eşiği ihlalinin son aralığı](../test/media/icon_ltest_4.gif) Uyarı eşiği ihlalinin son aralıkta oluştu.
 
- ![Uyarı eşiği ihlalinin önceki aralığı](../test/media/icon_ltest_5.gif) Uyarı eşiği ihlalinin önceki aralıkta oluştu.
+ ![Uyarı eşiği ihlalinin önceki aralığı](../test/media/icon_ltest_5.gif) Önceki bir aralıkta bir uyarı eşik ihlali oluştu.
 
-## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Sayaç panelinde Eşik ihlallerini analiz etmek için
+## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Sayaçlar paneli Eşik ihlallerini analiz etmek için
 
-1.  Bir yük testi tamamlandıktan sonra ya da Yük Testi Çözümleyicisi'nin araç çubuğunda, bir test sonucu yükledikten sonra seçin **grafikleri** veya **tabloları**.
+1.  Bir yük testi tamamlandıktan sonra veya Yük Testi Çözümleyicisi'nin araç çubuğunda, bir test sonucunu seçin **grafikleri** veya **tabloları**.
 
-     Grafik görünümü ya da Tablolar görünümünde Sayaçlar panelini görüntüler.
+     **Sayaçları** grafikler görünümü veya Tablo görünümü panelini görüntüler.
 
-2.  Sayaçlar panelini görünür durumda değilse, seçin **Sayaçlar panelini Göster** araç çubuğunda.
+2.  Varsa **sayaçları** paneli görünür değilse, seçin **Sayaçlar panelini Göster** araç.
 
-     Eşik ihlalleri içeren herhangi bir düğüme yukarıda listelenen simgelerinden birini içerir.
+     Eşik ihlallerini içeren tüm düğümleri yukarıda listelenen simgelerden birini içerir.
 
-3.  Bir eşik simgesi gibi içeren düğümünü **bilgisayarlar** "Bilgisayarlar düğümü eşik ihlali ile Sayaçlar panelini." başlıklı önceki resimde gösterildiği gibi düğümü Eşik ihlali olan performans sayacı ulaşana kadar düğümü genişletmek devam edin. Örneğin, başarısız bir örneğine gösterimde **Microsoft sanal makine başarısız veri yolu ağ bağdaştırıcısı**.
+3.  Bir eşiği simgesi gibi içeren düğümünü **bilgisayarlar** "Bilgisayarlar düğümü eşik ihlali ile Sayaçlar panelini." başlıklı önceki resimde gösterildiği gibi düğüm Düğüm eşik ihlali olan performans sayacı ulaşana kadar genişletmeye devam edin. Örneğin, çizim başarısız örneğini gösterir **Microsoft sanal makine başarısız Bus ağ bağdaştırıcısı**.
 
 4.  (İsteğe bağlı) Eşik ihlali olan performans sayacı sağ tıklatın ve aşağıdaki seçeneklerden birini seçin:
 
-    -   **Grafikte sayaç Göster**: grafikler görünümünde performans sayacı eklenir ve seçili grafik üzerinde vurgulanır. Daha fazla bilgi için bkz: [nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+    -   **Grafik üzerinde sayaç Göster**: grafikler Görünümü'nde performans sayacı eklenir ve seçili grafik üzerinde vurgulanır. Daha fazla bilgi için [nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
         > [!NOTE]
-        > Eşik ihlali simgeleri Grafik görünümünde grafikte da gösterilebilir. Grafikte eşik ihlalinin oluştuğu veri noktasının yanındaki eşik simgesi görünür. Bunu yapmak için seçin **Gösterge Göster** seçin ve araç çubuğu açılır **Göster Eşik İhlallerini Grafikte**.
+        > Eşik ihlali simgelerinin de grafik görünümünde grafikteki gösterilebilir. Eşik ihlali gerçekleştiği veri noktasının yanındaki grafik üzerindeki eşik simgesi görünür. Bunu yapmak için **Göstergeyi Göster** seçin ve araç çubuğu üzerindeki açılan **Eşik İhlallerini Grafikte Göster**.
 
-    -   **Sayaç göstergede Göster**: göstergede performans sayacı eklenir ve seçilir. Daha fazla bilgi için bkz: [yük testlerini çözümlemek için grafik görünümü göstergesini kullanma](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
+    -   **Gösterge üzerinde sayaç Göster**: Açıklama bölümünde performans sayacı eklenir ve seçilir. Daha fazla bilgi için [yük testlerini çözümlemek için grafik görünümü göstergesini kullanma](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-    -   **Grafik ekleyin**:
+    -   **Graf ekleme**:
 
     1.  **Grafik adı girin** iletişim kutusu görüntülenir.
 
-    2.  İçinde **grafik adı** metin kutusunda, yeni bir grafik için bir ad yazın ve ardından **Tamam**.
+    2.  İçinde **grafik adı** metin kutusuna yeni grafik için bir ad yazın ve ardından **Tamam**.
 
-    3.  (İsteğe bağlı) Performans sayacı tekrar sağ tıklayın ve seçin **grafikte sayaç Göster**.
+    3.  (İsteğe bağlı) Performans sayacı tekrar sağ tıklayıp **grafik üzerinde sayaç Göster**.
 
-         Daha fazla bilgi için bkz: [nasıl yapılır: özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md).
+         Daha fazla bilgi için [nasıl yapılır: özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
-5.  (İsteğe bağlı) Tamamlanan yük testi sonuç eşik ihlali çözümleme, grafikler görünümünde yakınlaştırma özelliklerini kullanmayı göz önünde bulundurun. Daha fazla bilgi için bkz: [nasıl yapılır: üzerinde grafiğin bir bölgesine yakınlaştırma yapma](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+5.  (İsteğe bağlı) Tamamlanan yük testi sonucu eşik ihlali analiz Grafik görünümünde yakınlaştırma özelliklerini kullanmayı düşünün. Daha fazla bilgi için [nasıl yapılır: grafiğin bir bölgesine yakınlaştırmak](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
     > [!TIP]
-    > Yük testi sırasında herhangi bir eşik ihlali algılanırsa, "Eşik ihlallerini ihlal sayısı dahil olmak üzere," başlıklı bir bağlantı Yük Testi Çözümleyicisi durum çubuğunda mevcut olacaktır. Eşik ihlalleri görüntülemek için bağlantıyı seçebilirsiniz **eşikleri** tablolar görünümünün tablo.
+    > Yük testi çalıştırması sırasında herhangi bir eşik ihlali algılanırsa, "ihlal sayısı dahil olmak üzere Eşik ihlallerini" başlıklı bir bağlantı mevcut **Yük Testi Çözümleyicisi** durum çubuğu. Tüm Eşik ihlallerini görüntülemek için bağlantıyı seçebilirsiniz **eşikleri** tablolar görünümünün tablo.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

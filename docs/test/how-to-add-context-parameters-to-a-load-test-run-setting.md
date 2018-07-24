@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c8dfffbcbfee71721b97d81a775cb0093d18bb0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179823"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203760"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: Bir Yük Testi Çalışma Ayarına Bağlam Parametreleri Ekleme
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: yük testi çalışma ayarı için bağlam parametreleri ekleme
 
 Kullanarak yük testi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için.
 
@@ -64,7 +64,7 @@ Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bi
 
      Çalıştırma ayarı zaten varsa bir **bağlam parametreleri** klasörüne sağ tıklayın ve ardından **bağlam parametresi Ekle**.
 
-4.  Özellikler penceresinde değerini değiştirin **adı** uygun şekilde (örneğin, WebServer1). Özellikler penceresinde değişiklik **değer** kullanmak istediğiniz parametre (örneğin, `http://CorporateStagingWebServer`).
+4.  İçinde **özellikleri** penceresinde değerini **adı** uygun şekilde (örneğin, WebServer1). İçinde **özellikleri** penceresinde değişiklik **değer** kullanmak istediğiniz parametre (örneğin, `http://CorporateStagingWebServer`).
 
 5.  (İsteğe bağlı) 3 ile 5 arasındaki adımları yineleyin ve kullanmak için farklı bir dize **değer** özelliği (örneğin, `http://CorporateProductionWebServer`).
 

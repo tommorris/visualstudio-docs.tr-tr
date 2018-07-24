@@ -1,6 +1,7 @@
 - name: Kod analizi belgeleri
   href: index.md
 - name: Genel Bakış
+  expanded: true
   items:
     - name: Yönetilen kod için kod analizi
       href: code-analysis-for-managed-code-overview.md
@@ -80,16 +81,18 @@
     - name: Kural kümeleri
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
-        - name: Yönetilen Kod İçin Kural Kümeleri
+        - name: Çözümleyici paketleri için kural kümeleri
+          href: analyzer-rule-sets.md
+        - name: Yönetilen kod için kural kümeleri
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
-            - name: Bir ASP.NET Web Uygulaması İçin Kod Analizini Yapılandırma
+            - name: Bir ASP.NET web uygulaması için kod analizini yapılandırma
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-        - name: C++ Kodu İçin Kural Kümeleri
+        - name: C++ kodu için kural kümeleri
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-        - name: Özel Kural Kümesi Oluşturma
+        - name: Özel kural kümesi oluşturma
           href: how-to-create-a-custom-rule-set.md
-        - name: Kural Kümesi Düzenleyici’sini Kullanma
+        - name: Kural kümesi düzenleyicisini kullanma
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: İade ilkeleri
       href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
@@ -126,7 +129,7 @@
         - name: Yönetilen kod için Genelleştirme Kuralları kural kümesi
           href: globalization-rules-rule-set-for-managed-code.md
         - name: Yönetilen kod için Yönetilen Minimum Kurallar kural kümesi
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: Yönetilen kod için Yönetilen Önerilen Kurallar kural kümesi
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: Karışık Minimum Kurallar kural kümesi

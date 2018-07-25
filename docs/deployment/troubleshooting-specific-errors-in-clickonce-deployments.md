@@ -106,7 +106,7 @@ Bu makalede, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Hata iletisi: Web sitesi oluşturulamadı. '\<site >'. FrontPage Server Extensions'ı ile iletişim kurmak için bileşenler yüklü değil.  
  Microsoft Visual Studio Web geliştirme yayımlamakta olduğunuz makinede bileşeninin yüklü olduğundan emin olun. Hızlı kullanıcılar için varsayılan olarak bu bileşen yüklü değil. Daha fazla bilgi için bkz. [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Hata iletisi: dosya bulunamadı ' Microsoft.Windows.Common-denetimleri, sürüm 6.0.0.0, Culture = = *, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture = =\*, tür = win32'  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Hata iletisi: dosya bulunamadı ' Microsoft.Windows.Common-denetimleri, sürüm 6.0.0.0, Culture = *, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture =\*, tür = win32'  
  Görsel stiller etkinken WPF uygulaması yayımlama açmaya çalıştığında bu hata iletisi görünür. Bu sorunu çözmek için bkz: [nasıl yapılır: görsel stiller etkin bir WPF uygulaması yayımlama](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>Görüntü kullanma  

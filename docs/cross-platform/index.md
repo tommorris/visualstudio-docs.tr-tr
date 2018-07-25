@@ -9,12 +9,12 @@ title: C++ belgeleri ile Mobil Geliştirme | Microsoft Docs
 description: Yerel C++ uygulamaları, iOS için oluşturma Visual Studio ile Android ve Windows cihazlar.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: d10f0409b30198d7976f08a78b1d45d0099ac093
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924180"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232026"
 ---
 # <a name="mobile-development-with-c-documentation"></a>C++ belgeleri ile Mobil Geliştirme
 
@@ -28,11 +28,11 @@ ms.locfileid: "37924180"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="">
+                            <img src="/media/common/i_setup.svg" alt="Set up Visual C++ for cross-platform mobile apps">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++’ı yükleme</h3>
+                        <h3>Platformlar arası Mobil Geliştirme için Visual C++'ı yükleme</h3>
                         <p>Platformlar arası mobil uygulamalar oluşturmak için gereken araçları ayarlayın.</p>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ ms.locfileid: "37924180"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile develpment">
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,11 +66,11 @@ ms.locfileid: "37924180"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_xplat-code.svg" alt="">
+                            <img src="/media/common/i_xplat-code.svg" alt="Cross-platform mobile development examples">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Platformlar Arası Mobil Geliştirme Örnekleri</h3>
+                        <h3>Platformlar arası mobil geliştirme örnekleri</h3>
                         <p>Platformlar arası mobil geliştirme ile çalışmaya başlamanıza yardımcı olmak için örneklere bakın.</p>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ ms.locfileid: "37924180"
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Visual C++ Geliştirme Araçları ve IDE</a><p>
+                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Visual C++ geliştirme araçları ve IDE</a><p>
                     </div>
                 </div>
             </div>

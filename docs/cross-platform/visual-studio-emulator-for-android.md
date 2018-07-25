@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5fffd9ac865b281dc921997f48d7609a9429f64
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890233"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233158"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 
@@ -26,7 +26,7 @@ Android için Visual Studio öykünücüsü Android cihaz öykünen bir masaüst
 > - Android için Visual Studio öykünücü, Visual Studio 2015 tarihinden sonra desteklenmiyor.
 > - Öykünücü görüntüleri Android 6.0 sürümünden daha sonra Android için Visual Studio öykünücüsü kullanılabilir değil.
 > - Google Android öykünücüsü artık destekliyor [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
-> - Apache Cordova için Visual Studio Araçları, Google Android öykünücüsü ile çalışır. Daha fazla bilgi için [Apache Cordova uygulamanızı Android'de çalıştırma](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator) (Bu makalede açıklandığı gibi Hyper-V devre dışı bırakmak zorunda unutmayın).
+> - Apache Cordova için Visual Studio Araçları, Google Android öykünücüsü ile çalışır. Daha fazla bilgi için [Apache Cordova uygulamanızı Android'de çalıştırma](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (Bu makalede açıklandığı gibi Hyper-V devre dışı bırakmak zorunda unutmayın).
 >
 > Google Android öykünücüsü'nü ve yapılandırma hakkında daha fazla bilgi için bkz. [Android Emulator Kurulumu](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
   
@@ -51,7 +51,7 @@ Android için Visual Studio öykünücüsü Android cihaz öykünen bir masaüst
 ##  <a name="Requirements"></a> Sistem gereksinimleri ve geriye dönük uyumluluk  
  Donanım, yazılım ve Android için Visual Studio öykünücüsü'nü yapılandırma gereksinimleri hakkında önemli bilgiler için aşağıdaki konuya bakın.  
   
--   [Android için Visual Studio Öykünücüsü Sistem Gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  Android için Visual Studio öykünücü, Visual Studio 2015 gerektirir; Visual Studio'nun önceki sürümleriyle geriye dönük olarak uyumlu değil.  
   
@@ -104,6 +104,6 @@ Android için Visual Studio öykünücüsü Android cihaz öykünen bir masaüst
   
 -   Visual Studio'da veya öykünücü Yöneticisi'nde gönderme gülümseme aracını kullanarak bir sorun bildirin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924479"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233093"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin ortamınızı doğrulama
 
@@ -30,9 +30,9 @@ Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform
 
 ## <a name="all-platforms"></a>Tüm platformlar
 
-Visual Studio'da ilk seçin **Araçlar > Uzantılar ve güncelleştirmeler** ve Xamarin bileşenleri güncelleştirmeleri kullanmanızın gerekli olup olmadığını denetleyin.
+Visual Studio'da ilk seçin **Araçları** > **Uzantılar ve güncelleştirmeler** ve Xamarin bileşenleri güncelleştirmeleri kullanmanızın gerekli olup olmadığını denetleyin.
 
-Ardından, Visual Studio kullanarak yeni bir Xamarin.Forms çözümü oluşturma **Dosya > Yeni proje**. İletişim kutusunda Genişlet **Visual C# > platformlar arası**seçin **mobil uygulama (Xamarin.Forms)**, Tamam'ı tıklatın. Aşağıdaki iletişim kutusunda, seçmek **boş uygulama**. Altında **kod paylaşımı Stratejisi'ni**seçin **.NET Standard**. Tamam'a tıklayın.
+Ardından, Visual Studio kullanarak yeni bir Xamarin.Forms çözümü oluşturma **dosya** > **yeni proje**. İletişim kutusunda Genişlet **Visual C#** > **platformlar arası**seçin **mobil uygulama (Xamarin.Forms)**, tıklatıp **Tamam**. Aşağıdaki iletişim kutusunda, seçmek **boş uygulama**. Altında **kod paylaşımı Stratejisi'ni**seçin **.NET Standard**. **Tamam**'ı tıklatın.
 
 Bu Eylemler, dört projeyle bir çözümü oluşturun: paylaşılan bir .NET Standard 2.0 kitaplık projesi ve Android, iOS ve evrensel Windows Platformu (UWP) uygulaması projelerinde:
 
@@ -52,11 +52,11 @@ Bu Eylemler, dört projeyle bir çözümü oluşturun: paylaşılan bir .NET Sta
 
     Ayrıca öykünücüleri listelenmiştir. Cihazları veya Visual Studio öykünücü birini seçin:
 
-  ![Hata ayıklama hedefi olarak Android için Visual Studio öykünücüsü'nü seçerek](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin doğrulayın 3")
+  ![Hata ayıklama hedefi olarak Android için Visual Studio öykünücüsü'nü seçin](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin doğrulayın 3")
 
   Daha ayrıntılı bilgi için bkz. [Karşınızda Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blogu). Çalışmak için bkz öykünücü sorun karşılaşmanız halinde [Android için Visual Studio öykünücü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Seçerek ve öykünücüsü için yeni cihaz profilleri oluşturabilirsiniz **Araçlar > Android > Android öykünücü yöneticisi**.
 
-3. Derleme ve program Android cihazınıza veya öykünücünüze dağıtmak için F5 tuşuna basın.
+3. Tuşuna **F5** derlemek ve program Android cihazınıza veya öykünücünüze dağıtmak için.
 
 ## <a name="windows"></a>Windows
 
@@ -64,7 +64,7 @@ Bu Eylemler, dört projeyle bir çözümü oluşturun: paylaşılan bir .NET Sta
 
 2.  İçinde **çözüm platformları** açılan listesinde, select **x86** veya **x64**. Seçin **yerel makine**.
 
-3.  Masaüstüne program dağıtmak için F5 tuşuna basın.
+3.  Tuşuna **F5** masaüstüne program dağıtmak için.
 
 ## <a name="ios"></a>iOS
 
@@ -76,13 +76,13 @@ Bu Eylemler, dört projeyle bir çözümü oluşturun: paylaşılan bir .NET Sta
 
  ![Hedef derleme iPhoneSimulator seçerek](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 5 doğrulayın")
 
- Mac bilgisayarınızda, select Xcode hiçbir simülatörleri listede yoksa, başlatma **Xcode > Tercihler**, tıklatıp **indirin**. Altında **bileşenleri** , başlık indirilebilir simülatör sürümleri görmelisiniz. Hata ayıklama için ek yönergeler bulunabilir [iOS hata ayıklama](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator) sayfası.
+ Mac bilgisayarınızda, select Xcode hiçbir simülatörleri listede yoksa, başlatma **Xcode** > **tercihleri**, tıklatıp **indirme**. Altında **bileşenleri** , başlık indirilebilir simülatör sürümleri görmelisiniz. Hata ayıklama için ek yönergeler bulunabilir [iOS hata ayıklama](/xamarin/ios/deploy-test/debugging-in-xamarin-ios) sayfası.
 
 4.  Visual Studio açılan listeden bir öykünücü cihaz hedefi seçin:
 
  ![Bir iPhone hata ayıklama hedefi seçme](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 6 doğrulayın")
 
-5. F5 tuşuna basarak hata ayıklayıcıyı başlatın. Burada Visual Studio'da hata ayıklama işlem sırasında uygulamayla etkileşim kuracağınızı Mac üzerinde simülatör başlatılmadı. Bir fiziksel iPhone veya iPad Mac bilgisayara bağlı varsa, listede görünür ve bunun yerine seçebilirsiniz. Herhangi bir cihaz veya simülatör listelenen görmüyorsanız, Mac bağlantısını denetleyin. 1. adımda bağlı makalesini gözden geçirin veya Git **Araçlar > iOS > Mac ile eşleştir**
+5. Hata ayıklayıcı basarak başlatın **F5**. Burada Visual Studio'da hata ayıklama işlem sırasında uygulamayla etkileşim kuracağınızı Mac üzerinde simülatör başlatılmadı. Bir fiziksel iPhone veya iPad Mac bilgisayara bağlı varsa, listede görünür ve bunun yerine seçebilirsiniz. Herhangi bir cihaz veya simülatör listelenen görmüyorsanız, Mac bağlantısını denetleyin. 1. adımda bağlı makalesini gözden geçirin veya Git **Araçları** > **iOS** > **Mac ile eşleştir**
 
 6.  Mac bilgisayara bağlayarak sorunlarla karşılaşırsanız, okuma [bağlantı sorunlarını giderme](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
 

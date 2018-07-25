@@ -1,6 +1,6 @@
 ---
-title: Öğretici - Visual Studio, 4. adım Flask öğrenin
-description: Visual Studio projeleri, özellikle Flask Web projesi ve Flask/Jade Web projesi şablonları tarafından sağlanan özellikler bağlamında Flask temel bir kılavuz.
+title: "Öğretici: Visual Studio'da 4. adım Flask öğrenin"
+description: Visual Studio projeleri, özellikle Flask Web projesi ve Webový projekt ve Flask/Jade şablonları tarafından sağlanan özellikleri bağlamında Flask temel bilgileri bir kılavuz.
 ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,82 +11,82 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c463fdde3c22986211ed7345c3552b288516a4de
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947513"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232302"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>4. adım: tam Flask Web projesi şablonunu kullanma
 
-**Önceki adımda: [hizmet statik dosyalar, sayfa ekleyin ve şablon devralma kullanın](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Önceki adımda: [statik dosyaları sunmak, sayfalar eklemek ve şablonu devralma kullanın](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
-Visual Studio "Boş Flask uygulama projesi" şablonunun üzerine bir uygulama oluşturarak Flask temelleri incelediniz, "Flask Web projesi" şablon tarafından üretilen eksiksiz uygulama kolayca anlayabilirsiniz.
+"Boş Flask uygulaması projesi" şablonu Visual Studio'da bağlı bir uygulama oluşturarak Flask temelleri incelediniz, "Flask Web projesi" şablon tarafından üretilen irdelemesi uygulamayı kolayca anlayabilir.
 
-Bu konuda, şimdi adım:
+Bu, artık. adım:
 
 > [!div class="checklist"]
-> - "Flask Web projesi" şablonu kullanarak daha eksiksiz bir Flask web uygulaması oluşturma ve proje yapısını inceleyin (adım 4 - 1)
-> - Taban sayfası şablondan devralır üç sayfaların oluşan proje şablonu tarafından oluşturulan sayfa şablonları ve görünümler anlamak ve jQuery ve önyükleme (4-2. adım) gibi statik JavaScript kitaplıklarını kullanır
+> - "Flask Web projesi" şablonu kullanarak daha kapsamlı bir Flask web uygulaması oluşturma ve proje yapısını inceleyin (adım 4 - 1)
+> - Proje şablonu tarafından oluşturulan taban sayfası şablondan devralır üç sayfası oluşur sayfası şablonları ve görünümleri anlayın ve, jQuery ve önyükleme (4-2. adım) gibi statik JavaScript kitaplıklarını kullanır
 > - (4-3. adım) şablonu tarafından sağlanan URL yönlendirmeyi anlama
 
-Bu makalede, projenin"Flask Web Jinja yerine Jade şablon altyapısını kullanarak" aynı olan bir uygulamayı hazırlayan "Flask/Jade Web projesi" şablonu için de geçerlidir. Ek ayrıntılar bu makalenin sonundaki dahil edilir.
+Bu makalede, "Flask Web projesinin Jade şablon oluşturma altyapısı yerine Jinja kullanarak" aynı olan bir uygulamayı hazırlayan "Webový projekt Flask/Jade" şablonu için de geçerlidir. Ek ayrıntılar bu makalenin sonunda bulunur.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>4-1. adım: bir proje şablonu oluşturma
+## <a name="step-4-1-create-a-project-from-the-template"></a>4-1. adım: bir şablondan bir proje oluşturma
 
-1. Visual Studio'da Git **Çözüm Gezgini**, bu öğreticide daha önce oluşturulan "LearningFlask" çözüme sağ tıklayın ve seçin **Ekle** > **yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak isteyip istemediğinizi seçin **dosya** > **yeni** > **proje** yerine.)
+1. Visual Studio'da Git **Çözüm Gezgini**, bu öğreticide daha önce oluşturulan "LearningFlask" çözüme sağ tıklayın ve seçin **Ekle** > **yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak istiyorsanız, seçin **dosya** > **yeni** > **proje** yerine.)
 
-1. Yeni Proje iletişim kutusunda, aramak ve "Flask Web projesi" şablonunu seçin, proje "FlaskWeb" arayın ve seçin **Tamam**.
+1. Yeni Proje iletişim kutusunda, arayın ve "Flask Web projesi" şablonu seçin, "FlaskWeb" proje arayın ve seçin **Tamam**.
 
-1. Şablonu yeniden içerdiğinden bir `requirements.txt` dosyası, Visual Studio bu bağımlılıkların yükleneceği sorar. Seçeneği **sanal bir ortama yükleme**hem de **sanal ortam Ekle** iletişim kutusunda **oluşturma** Varsayılanları kabul etmek için.
+1. Şablonu yeniden içerdiğinden bir `requirements.txt` dosya, Visual Studio bu bağımlılıkların yükleneceği sorar. Seçeneğini **sanal bir ortama yükleme**hem de **sanal ortama ekleme** iletişim kutusunda **Oluştur** Varsayılanları kabul etmek için.
 
-1. Visual Studio sanal ortamı kurma tamamlandıktan sonra "FlaskWeb" projesini bu projeye sağ tıklayarak Visual Studio çözümü için varsayılan olacak şekilde ayarlayın **Çözüm Gezgini** ve seçerek **olarak ayarlayın Başlangıç projesi**. Gösterilen başlangıç projesi içinde hata ayıklayıcı başlatıldığında ne çalıştırılan kalın.
+1. Visual Studio sanal ortamını ayarlama işlemi tamamlandıktan sonra bu projeye sağ tıklayarak Visual Studio çözümü için varsayılan olarak "FlaskWeb" projesi Ayarla **Çözüm Gezgini** seçerek **olarak ayarla Başlangıç projesi**. Gösterilen başlangıç projesi içinde hata ayıklayıcısını başlattığınızda nelerin çalıştırılacağını kalın.
 
-    ![Başlangıç projesi olarak FlaskWeb proje gösteren Çözüm Gezgini](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
+    ![Başlangıç projesi olarak FlaskWeb projeyi gösteren Çözüm Gezgini](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Seçin **hata ayıklama** > **hata ayıklamayı Başlat** (F5) veya **Web sunucusu** sunucu çalıştırmak için araç çubuğunda:
+1. Seçin **hata ayıklama** > **hata ayıklamayı Başlat** (F5) veya **Web sunucusu** server çalıştırmak için araç çubuğunda:
 
-    ![Visual Studio'da Web sunucusu Çalıştır araç çubuğu düğmesi](media/flask/run-web-server-toolbar-button.png)
+    ![Web sunucusu araç çubuğu düğmesi Visual Studio'da çalıştırın.](media/flask/run-web-server-toolbar-button.png)
 
-1. Şablon tarafından oluşturulan uygulama hakkında ev ve hangi gezinme çubuğu kullanarak arasında gezinme ilgili kişi, üç sayfaları vardır. Bir veya iki farklı kısımlarını uygulama incelemek için dakika alın. Üzerinden uygulama kimlik doğrulaması yapmak için **oturum** komutu, daha önce oluşturduğunuz süper kullanıcı kimlik bilgilerini kullanın.
+1. Şablon tarafından oluşturulan uygulama hakkında ev ve kişi, hangi gezinti çubuğunda kullanma arasında gezinmek üç sayfa vardır. Bir veya iki uygulamanın farklı kısımlarını incelemek için dakika alın. Uygulamada kimlik doğrulaması yapmak için **oturum** komutu, daha önce oluşturduğunuz süper kullanıcı kimlik bilgilerini kullanın.
 
     ![Flask Web projesi uygulamasının tam tarayıcı görünümü](media/flask/step04-full-app-desktop-view.png)
 
-1. "Flask Web projesi" şablonu tarafından oluşturulan uygulama önyükleme için mobil form faktörleri düzenler esnek düzenini kullanır. Dar bir görünüme tarayıcıya içerik dikey işler ve gezinme çubuğu menü simgesinde kapatır şekilde yeniden boyutlandırın, bu yanıt verdiğini görmek için:
+1. "Flask Web projesi" şablonu ile oluşturulan uygulama için mobil form faktörleri kapsar esnek Düzen önyükleme kullanır. Bu yanıt verdiğini görmek için bir dar görünüm tarayıcıya dikey olarak içerik işler ve gezinti çubuğunda bir menü simgesine dönüşür şekilde boyutlandırın:
 
     ![Flask Web projesi uygulamasının mobil (dar) görünümü](media/flask/step04-full-app-mobile-view.png)
 
-1. Aşağıdaki bölümlerde için çalışan uygulama bırakabilirsiniz.
+1. İzleyen bölümlerde için uygulamayı bırakabilirsiniz.
 
-    Uygulama durdurmak istiyorsanız ve [değişiklikleri kaynak denetimine](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), ilk açmak **değişiklikleri** sayfasındaki **Takım Gezgini**, sanal ortama (klasörünü sağ tıklatın büyük olasılıkla `env`) ve seçin **bu yerel öğeleri Yoksay**.
+    Uygulamayı durdurmak istiyorsanız ve [değişiklikleri kaynak denetimine](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), ilk açın **değişiklikleri** sayfasını **Takım Gezgini**, sanal ortam (klasörünü sağ tıklatın büyük olasılıkla `env`) seçip **bu yerel öğeleri Yoksay**.
 
-### <a name="examine-what-the-template-creates"></a>Ne şablon oluşturur inceleyin
+### <a name="examine-what-the-template-creates"></a>Hangi şablon oluşturur inceleyin
 
-"Flask Web projesi" şablon yapısı oluşturur. İçeriği, önceki adımlarda oluşturduğunuz için çok benzer. "Flask Web projesi" şablonu daha fazla yapı içerdiği farktır `static` klasörü için esnek tasarım çünkü jQuery ve önyükleme içerir. Şablon, ayrıca bir kişi sayfası ekler. Bu öğreticinin önceki adımları uyguladıysanız, genel olarak, her şeyi şablon bilgi sahibi olmanız gerekir.
+"Flask Web projesi" şablon aşağıdaki yapısı oluşturur. İçeriği, önceki adımlarda oluşturduğunuz için oldukça benzerdir. "Flask Web projesi" şablonu daha fazla yapı içerdiği fark `static` klasörü, jQuery ve Bootstrap için esnek tasarım çünkü içerir. Şablon ayrıca bir ilgili kişi sayfası ekler. Bu öğreticide, önceki adımları izlediğinizden, genel olarak, şablondan her şeyi tanımanız gerekir.
 
-- Proje kök dosyaları:
-  - `runserver.py`, uygulama geliştirme Server'da çalıştırılacak bir komut dosyası.
-  - `requirements.txt` bir bağımlılığı Flask içeren 0.x.
+- Proje kökündeki dosyaları:
+  - `runserver.py`, uygulama geliştirme Sunucusu'nda çalıştırılacak bir komut dosyası.
+  - `requirements.txt` Flask bağımlılık içeren 0.x.
 - `FlaskWeb` Klasörü tüm uygulama dosyalarını içerir:
   - `__init.py__` uygulama kodu bir Python modülü olarak işaretler, Flask nesnesi oluşturur ve uygulamanın görünümleri alır.
   - `views.py` sayfaları işlemek için kod içerir.
-  - `static` Adlı alt klasörde `content` (CSS dosyaları), `fonts` (yazı tipi dosyaları) ve `scripts` (JavaScript dosyaları).
-  - `templates` Klasörünü içeren bir `layout.html` temel şablonu ile birlikte `about.html`, `contact.html`, ve `index.html` belirli sayfalar için her genişletmek `layout.html`.
+  - `static` Adlı alt klasörde `content` (CSS dosyaları) `fonts` (yazı tipi dosyaları) ve `scripts` (JavaScript dosyaları).
+  - `templates` Klasörünü içeren bir `layout.html` ile birlikte temel şablon `about.html`, `contact.html`, ve `index.html` için belirli bir sayfa her genişletme `layout.html`.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Soru: bir sanal ortam Visual Studio projeleri arasında paylaşmak mümkün mü?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Soru: Visual Studio projeleri arasındaki bir sanal ortam paylaşmayı mümkün mü?
 
-Yanıt: Evet, ancak farklı projelere olası zaman içinde farklı paketler kullanın ve paylaşılan bir sanal ortam kullanan tüm projeleri için tüm paketler bu nedenle içermelidir tanıma ile bunu.
+Cevap: Evet, ancak büyük olasılıkla farklı projelerde zaman içinde farklı paketleri kullanın ve bu nedenle, paylaşılan bir sanal ortam bunu kullanan tüm projeler için tüm paketleri içermelidir tanıma ile bunu.
 
-Bununla birlikte, varolan bir sanal ortam kullanmak için aşağıdakileri yapın:
+Bununla birlikte, mevcut bir sanal ortam kullanmak için aşağıdakileri yapın:
 
-1. Visual Studio'da bağımlılıkları yüklemek isteyip istemediğiniz sorulduğunda seçin **ı bunları kendim yükleyecek** seçeneği.
-1. İçinde **Çözüm Gezgini**, sağ **Python ortamları** düğümü ve select **var olan sanal ortama Ekle**.
-1. Gidin ve sanal ortam içeren klasörü seçin ve ardından seçin **Tamam**.
+1. Visual Studio'da bağımlılıkları yüklemek isteyip istemediğiniz sorulduğunda seçin **ben bunları kendim yükler** seçeneği.
+1. İçinde **Çözüm Gezgini**, sağ **Python ortamları** düğümünü seçip alt **var olan sanal ortama ekleme**.
+1. Gidin ve sanal ortam içeren klasörü seçin ve ardından **Tamam**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2. adım: görünümleri anlamak ve sayfa proje şablonu tarafından oluşturulan şablonlar
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2. adım: görünümleri anlayın ve sayfa proje şablonu tarafından oluşturulan şablonlar
 
-Projeyi çalıştırdığınızda gözlemlemek gibi uygulamayı üç görünüm içerir: hakkında ev ve başvurun. Bu görünümler için kod bulunan `FlaskWeb/views.py`. Her görünüm işlevi yalnızca çağırır `flask.render_template` yoluyla bir şablon ve şablona vermek değerleri için bağımsız değişken listesi. Örneğin, hakkında sayfası tarafından ele `about` işlevi (olan oluşturma öğesi sağlayan yönlendirme URL):
+Projeyi çalıştırdığınızda gözlemleyin gibi uygulamayı üç görünüm içerir: hakkında ev ve başvurun. Bu görünümler için kod bulunan `FlaskWeb/views.py`. Her görünüm işlevi yalnızca çağırır `flask.render_template` yoluyla bir şablon ve şablona vermek için değerleri için bağımsız değişken listesi. Örneğin, hakkında sayfası tarafından işlenir `about` işlevi (olan dekoratör URL yönlendirmeyi sağlar):
 
 ```python
 @app.route('/about')
@@ -100,9 +100,9 @@ def about():
     )
 ```
 
-`home` Ve `contact` işlevleri benzer dekoratörler ve biraz farklı bağımsız değişkenlerle neredeyse aynı.
+`home` Ve `contact` işlevlerdir benzer dekoratörler ve biraz farklı bağımsız değişkenler ile neredeyse aynı.
 
-Şablonları uygulamanın içinde bulunan `templates` klasör. Temel şablonu `layout.html`, en yoğun olduğu. Tüm gerekli statik dosyaları (JavaScript ve CSS) başvuruyor, "diğer geçersiz kılma sayfaları ve"betikleri"adlı başka bir blok sağlar içeriğe" adlı bir blok tanımlar. Aşağıdaki parçalarını açıklama `layout.html` bu belirli alanları göster:
+Şablonlar, uygulamanın bulunur `templates` klasör. Temel şablon `layout.html`, en kapsamlı olduğundan. Bu, tüm gerekli statik dosyaları (JavaScript ve CSS) gösterir, diğer geçersiz kılma sayfaları ve "betik" adlı başka bir bloğu sağlar "içerik" adlı bir bloğu tanımlar. Aşağıdaki parçalarını açıklamalı `layout.html` bu belirli alanları göster:
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ def about():
 </html>
 ```
 
-Tek tek sayfa şablonları `about.html`, `contact.html`, ve `index.html`, her genişletmek temel şablonu `layout.html`. `about.html` en kolayıdır ve gösterir `{% extends %}` ve `{% block content %}` etiketler:
+Tek tek sayfa şablonları `about.html`, `contact.html`, ve `index.html`, her bir temel şablon genişletme `layout.html`. `about.html` en basit olduğundan ve gösterir `{% extends %}` ve `{% block content %}` etiketler:
 
 ```html
 {% extends "app/layout.html" %}
@@ -156,83 +156,83 @@ Tek tek sayfa şablonları `about.html`, `contact.html`, ve `index.html`, her ge
 {% endblock %}
 ```
 
-`index.html` ve `contact.html` "içerik" bloğundaki lengthier içerik sağlamak ve aynı yapısını kullanın.
+`index.html` ve `contact.html` aynı yapısını kullanın ve "içerik" bloğundaki daha uzun bir içerik sağlayın.
 
-## <a name="the-flaskjade-web-project-template"></a>Flask/Jade Web Proje şablonu
+## <a name="the-flaskjade-web-project-template"></a>Webový projekt ve Flask/Jade şablonu
 
-Bu makalenin başlangıcında belirtildiği gibi Visual Studio "Flask Web projesi" tarafından üretilen için görsel olarak aynı olan bir uygulama oluşturur bir "Flask/Jade Web projesi" şablonu sağlar. Birincil fark daha kısa bir dil ile aynı kavramları uygulayan Jinja uzantısıdır Jade şablon motoru kullanmasıdır. Özellikle, Jade içine etiketleri yerine anahtar sözcükleri kullanır {Condition sınırlayıcıları, örneğin ve CSS stilleri ve anahtar sözcükleri kullanarak HTML öğeleri bakın sağlar.
+Bu makalenin başında belirtildiği gibi Visual Studio "Flask Web projesi" tarafından üretilen için görsel olarak aynı olan bir uygulama oluşturur bir "Webový projekt Flask/Jade" şablonu sağlar. Dekinden daha birleştiren bir dil ile aynı kavramlar uygulayan Jinja uzantısıdır Jade şablon oluşturma altyapısı kullanmasıdır. Özellikle, içine etiketleri yerine anahtar sözcükler Jade kullanan {ayıklaması sınırlayıcıları, örneğin ve CSS stilleri ve anahtar sözcükleri kullanarak HTML öğeleri için başvuru sağlar.
 
-Jade etkinleştirmek için proje şablonu ilk pyjade paketinde içeren `requirements.txt`. 
+Jade etkinleştirmek için proje şablonu ilk pyjade paketine ekler `requirements.txt`. 
 
 Uygulamanın `__init__.py` dosyası için bir satır içerir
 
-    ```python
-    app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
-    ```
-İçinde `templates` klasörü, gördüğünüz `.jade` yerine dosyaları `.html` şablonları ve görünümlerde `views.py` çağrılarını için bu dosyalarda başvurmak `flask.render_template`. Aksi takdirde görünümleri kod aynıdır.
+```python
+app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
+```
+İçinde `templates` klasöründe gördüğünüz `.jade` yerine dosyaları `.html` şablonları ve görünümlerde `views.py` çağrılarını için bu dosyalara başvurmanız `flask.render_template`. Aksi takdirde görünümleri kod aynıdır.
 
-Aşağıdakilerden birini açma `.jade` dosyaları bir şablon daha kısa bir ifade görebilirsiniz. Örneğin, içeriği işte `templates/layout.jade` "Flask/Jade Web projesi" şablonu tarafından oluşturulan olarak:
+Aşağıdakilerden birini açma `.jade` dosyaları daha Sözün ifadesi bir şablonun görebilirsiniz. Örneğin, içeriği işte `templates/layout.jade` "Webový projekt Flask/Jade" şablon tarafından oluşturulan:
 
-    ```jade
-    doctype html
-    html
-      head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title #{title} - My Flask/Jade Application
-        link(rel='stylesheet', type='text/css', href='/static/content/bootstrap.min.css')
-        link(rel='stylesheet', type='text/css', href='/static/content/site.css')
-        script(src='/static/scripts/modernizr-2.6.2.js')
-      body
-        .navbar.navbar-inverse.navbar-fixed-top
-          .container
-            .navbar-header
-              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.navbar-brand(href='/') Application name
-            .navbar-collapse.collapse
-              ul.nav.navbar-nav
-                li
-                  a(href='/') Home
-                li
-                  a(href='/about') About
-                li
-                  a(href='/contact') Contact
-        .container.body-content
-          block content
-          hr
-          footer
-            p &copy; #{year} - My Flask/Jade Application
+```jade
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title} - My Flask/Jade Application
+    link(rel='stylesheet', type='text/css', href='/static/content/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/static/content/site.css')
+    script(src='/static/scripts/modernizr-2.6.2.js')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Application name
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li
+              a(href='/contact') Contact
+    .container.body-content
+      block content
+      hr
+      footer
+        p &copy; #{year} - My Flask/Jade Application
 
-        script(src='/static/scripts/jquery-1.10.2.js')
-        script(src='/static/scripts/bootstrap.js')
-        script(src='/static/scripts/respond.js')
+    script(src='/static/scripts/jquery-1.10.2.js')
+    script(src='/static/scripts/bootstrap.js')
+    script(src='/static/scripts/respond.js')
 
-        block scripts
-    ```
+    block scripts
+```
 
-Burada da içeriğini `templates/about.jade`, kullanımını gösteren `#{ <name>}` yer tutucuları için:
+Ve işte içeriğini `templates/about.jade`, kullanımını gösteren `#{ <name>}` yer tutucu:
 
-    ```jade
-    extends layout
+```jade
+extends layout
 
-    block content
-      h2 #{title}.
-      h3 #{message}
-      p Use this area to provide additional information.
-    ```
+block content
+  h2 #{title}.
+  h3 #{message}
+  p Use this area to provide additional information.
+```
 
-Jinja ve Jade sözdizimleri hangisinin sizin için en iyi görmek için deneme çekinmeyin.
+Jinja ve Jade sözdizimleri hangisinin sizin için en uygun görmek için denemeler çekinmeyin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
-> [Anketler Flask Web projesi şablonu](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+> [Polls – Flask Web projesi şablonu](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
-## <a name="go-deeper"></a>Derinlemesine
+## <a name="go-deeper"></a>Daha ayrıntılı şekilde inceleyin
 
-- [İlk Flask uygulamanızı yazma, Bölüm 4 - formlar ve genel görünümler](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
-- [Jade GitHib (belge) üzerinde](https://github.com/liuliqiang/pyjade) (github.com'u)
+- [İlk Flask uygulamanızı yazmak, Bölüm 4 - formlar ve görünümler genel](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
+- [Jade GitHib (belgeler) üzerinde](https://github.com/liuliqiang/pyjade) (github.com)
 - Öğretici kaynak kodu github'da: [Microsoft/python-örnek-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

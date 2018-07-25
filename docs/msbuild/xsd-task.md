@@ -22,39 +22,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057378"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231603"
 ---
-# <a name="xsd-task"></a>XSD Görevi
-Şema veya sınıf dosyaları oluşturan bir kaynaktan XML şema tanımı Aracı (XSD.exe'nin) sarmalar.  
+# <a name="xsd-task"></a>XSD görevi
+XML şema tanımı aracı sarmalar (*XSD.exe'nin*), bir kaynaktan şema ya da sınıf dosyaları oluşturur.  
 
 > [!NOTE]
-> Visual Studio 2017 içinde C++ projesi XSD.exe'nin desteği kullanım dışıdır. Kullanmaya devam edebilirsiniz **Microsoft.VisualC.CppCodeProvider** el ile ekleyerek API'leri **CppCodeProvider.dll** GAC için. 
+> Visual Studio 2017'de C++ proje desteği *XSD.exe'nin* kullanım dışı bırakılmıştır. Kullanmaya devam edebilirsiniz **Microsoft.VisualC.CppCodeProvider** el ile ekleyerek API'leri *CppCodeProvider.dll* GAC'ye. 
   
 ## <a name="parameters"></a>Parametreler  
- Aşağıdaki tabloda parametrelerinin açıklanmaktadır **XSD** görev.  
+ Parametreleri aşağıdaki tabloda açıklanmıştır **XSD** görev.  
   
 -   **AdditionalOptions**  
   
      İsteğe bağlı **dize** parametresi.  
   
-     Komut satırında belirtilen seçeneklerinin listesi. Örneğin, "*/option1 /option2 /option#*". Diğer tarafından temsil edilmez seçeneklerini belirtmek için bu parametreyi kullanın **XSD** görev parametresi.  
+     Komut satırında belirtilen seçeneklerin bir listesi. Örneğin, /\<Seçenek1 > /\<Seçenek2 > /\<seçeneği #>. Diğer tarafından temsil edilmez seçeneklerini belirtmek için bu parametreyi kullanın **XSD** görev parametresi.  
   
 -   **GenerateFromSchema**  
   
      İsteğe bağlı **dize** parametresi.  
   
-     Belirtilen şemadan oluşturulan türlerini belirtir.  
+     Belirtilen şemadan oluşturulan türler belirtir.  
   
      Her biri bir XSD seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **sınıfları** -   **/sınıfları**  
+    -   **sınıflar** -   **/sınıfları**  
   
-    -   **veri kümesi** - **/dataset**  
+    -   **veri kümesi** -   **/DataSet**  
   
 -   **Dil**  
   
@@ -62,7 +62,7 @@ ms.locfileid: "37057378"
   
      Oluşturulan kod için kullanılacak programlama dilini belirtir.  
   
-     Aralarından seçim **CS** (C varsayılan değer #,), **VB** (Visual Basic) veya **JS** (JScript). Ayrıca uygulayan bir sınıf için tam bir ad belirtin `System.CodeDom.Compiler.CodeDomProvider Class`.  
+     Aralarından seçim **CS** (C varsayılan değer olan #), **VB** (Visual Basic) veya **JS** (JScript). Ayrıca uygulayan bir sınıf için tam bir ad belirtin `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
 -   **Namespace**  
   
@@ -74,19 +74,19 @@ ms.locfileid: "37057378"
   
      Gerekli `ITaskItem[]` parametresi.  
   
-     Tüketilen ve görevler tarafından gösterilen MSBuild kaynak dosya öğeleri dizisi tanımlar.  
+     Tüketilen ve görevler tarafından yayılan MSBuild kaynak dosya öğeleri bir dizisi tanımlanmaktadır.  
   
 -   **SuppressStartupBanner**  
   
-     İsteğe bağlı **Boolean** parametresi.  
+     İsteğe bağlı **Boole** parametresi.  
   
-     Varsa `true`, görev başladığında telif hakkı ve sürüm numarası iletisini görüntülenmesini engeller.  
+     Varsa `true`, görev başladığında telif hakkı ve sürüm numarası iletisinin görüntülenmesini engeller.  
   
 -   **TrackerLogDirectory**  
   
      İsteğe bağlı **dize** parametresi.  
   
-     İzleyici günlük dizinini belirtir.  
+     İzleyici günlüğü dizini belirtir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)

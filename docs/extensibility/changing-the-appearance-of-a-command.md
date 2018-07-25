@@ -1,5 +1,5 @@
 ---
-title: Bir komut görünümünü değiştirme | Microsoft Docs
+title: Bir komutun görünümünü değiştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,43 +15,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a19793f16991bc61636a929822757823728a926
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa212ec1c01a19668cafd951ea5defe5383b17ed
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099089"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232250"
 ---
-# <a name="changing-the-appearance-of-a-command"></a>Bir komut görünümünü değiştirme
-Komutunun görünümünü değiştirerek, kullanıcı geri bildirim sağlayabilirsiniz. Örneğin, kullanılamaz duruma geldiğinde farklı aramak için bir komut isteyebilirsiniz. Komutları kullanılabilir veya kullanılamaz yapma, gizleyebilir veya, göstermek veya denetleyin veya menüsünde seçeneğinin işaretini kaldırın.  
+# <a name="change-the-appearance-of-a-command"></a>Bir komutun görünümünü değiştirme
+Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağlayabilirsiniz. Örneğin, kullanılabilir olmadığında farklı aramak için bir komut isteyebilirsiniz. Komutları kullanılabilir veya kullanılamaz hale, gizleme veya bunları gösterebilir veya denetleyin veya menüde seçeneğinin işaretini kaldırın.  
   
- Bir komut görünümünü değiştirmek için şu eylemlerden birini gerçekleştirin:  
+ Bir komutun görünümünü değiştirmek için aşağıdaki eylemlerden birini gerçekleştirin:  
   
--   Uygun bayrakları komutu tablo dosyasındaki komut tanımı belirtin.  
+-   Uygun bayrakları komut tablosu dosyasındaki komut tanımı belirtin.  
   
 -   Kullanım <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> hizmeti.  
   
--   Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve raw komutu nesneleri değiştirebilirsiniz.  
+-   Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve ham komut nesneleri değiştirebilirsiniz.  
   
- Aşağıdaki adımlar, bulmak ve yönetilen paket Framework (MPF) kullanarak bir komut görünümünü güncelleştirmek gösterilmektedir.  
+ Aşağıdaki adımlarda, bulmak ve yönetilen paket Framework (MPF) kullanarak bir komutun görünümünü güncelleştirmek gösterilmektedir.  
   
-### <a name="to-change-the-appearance-of-a-menu-command"></a>Menü komutu görünümünü değiştirmek için  
+### <a name="to-change-the-appearance-of-a-menu-command"></a>Bir menü komutu görünümünü değiştirmek için  
   
-1.  ' Ndaki yönergeleri izleyin [menü komutu metin değiştirme](../extensibility/changing-the-text-of-a-menu-command.md) adlı menü öğesi oluşturmak için `New Text`.  
+1.  Bölümündeki yönergeleri [menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md) adlı menü öğesi oluşturmak için `New Text`.  
   
-2.  ChangeMenuText.cs dosyasında aşağıdaki ekleme deyimini kullanarak:  
+2.  İçinde *ChangeMenuText.cs* dosyasında, aşağıdaki using deyimi:  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  ChangeMenuTextPackageGuids.cs dosyasında aşağıdaki satırı ekleyin:  
+3.  İçinde *ChangeMenuTextPackageGuids.cs* dosyasında, aşağıdaki satırı ekleyin:  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  ChangeMenuText.cs dosyasında ShowMessageBox yöntemindeki kodu aşağıdakilerle değiştirin:  
+4.  İçinde *ChangeMenuText.cs* dosya, ShowMessageBox yöntemindeki kodu aşağıdakiyle değiştirin:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -62,7 +62,7 @@ Komutunun görünümünü değiştirerek, kullanıcı geri bildirim sağlayabili
     }  
     ```  
   
-5.  Gelen güncelleştirmek istediğiniz komut elde <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> nesne ve command nesnesinde uygun özellikleri ayarlayın. Örneğin, aşağıdaki yöntemi VSPackage komut belirtilen komuttan kullanılabilir veya kullanılamaz hale getirir. Aşağıdaki kod öğesi adlı menü yapar `New Text` onu tıklatıldıktan sonra kullanılamaz.  
+5.  Güncelleştir istediğiniz komut elde <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> nesnesi ve ardından uygun özellikleri komut nesnesi üzerinde ayarlayın. Örneğin, aşağıdaki yöntemi bir VSPackage komut belirtilen komuttan kullanılabilir veya kullanılamaz hale getirir. Aşağıdaki kod öğesi adlı menü yapar `New Text` bunu tıklatıldıktan sonra kullanılamaz.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -81,14 +81,14 @@ Komutunun görünümünü değiştirerek, kullanıcı geri bildirim sağlayabili
     }  
     ```  
   
-6.  Projeyi derleyin ve hata ayıklamayı Başlat. Visual Studio'nun deneysel örneği görüntülenmesi gerekir.  
+6.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio'nun deneysel örneğinde görüntülenmesi gerekir.  
   
-7.  Üzerinde **Araçları** menüsünde tıklatın **çağırma ChangeMenuText** komutu. Bu noktada komut adıdır **çağırma ChangeMenuText**, bu komut işleyici ChangeMyCommand() çağrısı değil.  
+7.  Üzerinde **Araçları** menüsünde tıklatın **çağırma ChangeMenuText** komutu. Bu noktada komut addır **çağırma ChangeMenuText**, komut işleyicisi çağırma değil **ChangeMyCommand()**.  
   
-8.  Üzerinde **Araçları** artık görmelisiniz menü **yeni metin**. Tıklatın **yeni metin**. Komut şimdi gri.  
+8.  Üzerinde **Araçları** artık görmeniz menü **yeni metin**. Tıklayın **yeni metin**. Komutu şimdi gri.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Komutları, menüleri ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Kullanıcı arabirimi öğeleri VSPackages nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Genişletme menüleri ve komutları](../extensibility/extending-menus-and-commands.md)   
- [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)   
+ [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Menüleri ve komutlari genişletme komutları](../extensibility/extending-menus-and-commands.md)   
+ [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

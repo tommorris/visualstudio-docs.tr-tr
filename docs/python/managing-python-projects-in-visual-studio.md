@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a4374a389176273f7ceaa63b680868fd546398e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778527"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232276"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -139,7 +139,18 @@ Eklemeniz gerekebilir bir [arama yolu](search-paths.md) modülü içeren klasör
 
 IronPython ile çalışırken, IntelliSense etkinleştirmek için .NET derlemelerine başvurular ekleyebilirsiniz. Çözümünüzdeki .NET projeleri için sağ **başvuruları** Python projenizin, seçme düğümünde **Başvuru Ekle**seçin **projeleri** sekmesini tıklatıp göz atın İstenen proje. Ayrı olarak yüklenen DLL'ler için seçin **Gözat** yerine sekmesini ve istenen DLL'ye göz atın.
 
-IronPython başvuruları çağrısı kadar kullanılabilir değil çünkü `clr.AddReference('AssemblyName')` olan yapılan, sizin de eklemeniz gerekir bir `clr.AddReference` derlemeye çağırın.
+IronPython başvuruları çağrısı kadar kullanılabilir değil çünkü `clr.AddReference('<AssemblyName>')` olan yapılan, ayrıca uygun bir ekleme gerekir `clr.AddReference` kodunuzun başında genellikle derleme arama. Örneğin, tarafından oluşturulan kodu **Windows Forms v Ironpythonu** Visual Studio'daki proje şablonu, üst dosyanın iki çağrısı içerir:
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>Webpı projeleri
 

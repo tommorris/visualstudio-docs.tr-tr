@@ -1,7 +1,7 @@
 ---
 title: Python ortamları ve yorumlayıcılarını yönetin
 description: Genel, sanal yönetmek için Python ortamları penceresi ve Python yorumlayıcılarını ve paketleri yükleme ve Visual Studio projelerine ortamları atama conda ortamları kullanın.
-ms.date: 06/29/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37250963"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232224"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio'da Python ortamlarını yönetme
 
@@ -118,7 +118,7 @@ Python yorumlayıcısı bilgisayarınızda yüklü, ancak Visual Studio (herhang
 >
 > Ancak, el ile yorumlayıcıyı ve dosya sistemi kullanılarak ortam taşırsanız, Visual Studio yeni konuma bilemezsiniz. Daha fazla bilgi için [yorumlayıcıyı taşıma](installing-python-interpreters.md#moving-an-interpreter).
 
-## <a name="fix-invalid-environments"></a>Geçersiz ortamları Düzelt
+## <a name="fix-or-delete-invalid-environments"></a>Düzeltme ya da geçersiz ortamları silme
 
 Visual Studio, bir ortam için kayıt defteri girdileri bulur, ancak yorumlayıcı yolu geçersiz, Python ortamları pencerenin üstü çizili yazı tipi adıyla gösterir:
 

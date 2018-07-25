@@ -1,7 +1,7 @@
 ---
 title: R Araçları'nın geçerli sürümü
-description: Nasıl R araçları sürümünü Visual Studio için denetleyin ve güncelleştirmeleri yükleyin.
-ms.date: 01/24/2018
+description: Nasıl Visual Studio için R araçları sürümünü denetleyin ve güncelleştirmeleri yükleyin.
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,25 +10,23 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 8bd48533cd50b198ce8e70819fa4bb5d991b098e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 088d3048f33b998ebdb45b7a35b8b395cb3f525e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238396"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230989"
 ---
-# <a name="rtvs-current-version"></a>RTVS geçerli sürüm
+# <a name="rtvs-current-version"></a>Geçerli sürümüne RTVS
 
-Bu sayfaya son güncelleştirme itibariyle R araçları için Visual Studio (RTVS), en son sürümüdür **1.0.31108.1213**. Sürümünüz, Visual Studio ve kullandığınız Önizleme kanal sürümüne bağlı olarak değişebilir.
+Sürümünüzü giderek denetleyebilirsiniz **yardımcı** > **hakkında** Visual Studio ve aşağı kaydırma **Visual Studio için R Araçları** girişi:
 
-Giderek sürümünüzü kontrol edebilirsiniz **yardımcı** > **hakkında** Visual Studio ve aşağı kaydırma **R araçları Visual Studio için** girişi:
+![Visual Studio (VS2017) RTVS sürümünde İnceleme](media/current-version.png)
 
-![Visual Studio (VS2017) RTVS sürümünde inceleniyor](media/current-version.png)
+Visual Studio 2017'de RTVS sürümünü güncelleştirmek için Visual Studio Yükleyicisi için gidin ve seçin **güncelleştirme** düğmesi.
 
-Visual Studio 2017 RTVS sürümüne güncelleştirmek için Visual Studio yükleyicisi gidin ve seçin **güncelleştirme** düğmesi.
+Visual Studio 2015 için en son yükleyici kullanılabilir [aka.ms/rtvs-geçerli](https://aka.ms/rtvs-current) (doğrudan indirme).
 
-Visual Studio 2015 için en son yükleyici kullanılabilir [rtvs/aka.ms-geçerli](https://aka.ms/rtvs-current) (doğrudan indirme).
+Bkz: [yükleme](installing-r-tools-for-visual-studio.md) Visual Studio ve Windows gereksinimleri.
 
-Bkz: [yükleme](installing-r-tools-for-visual-studio.md) Visual Studio ve Windows gereksinimleri için.
-
-Microsoft R açın ve Microsoft Machine Learning sunucuda (önceki adıyla Microsoft R Server) güncelleştirmeler için bkz: [Microsoft R ürünler.](http://aka.ms/rtvs-msft-r)
+Microsoft R Open ve Microsoft Machine Learning sunucusu (eski adıyla Microsoft R Server) güncelleştirmeler için bkz: [produkty R Microsoft.](http://aka.ms/rtvs-msft-r)

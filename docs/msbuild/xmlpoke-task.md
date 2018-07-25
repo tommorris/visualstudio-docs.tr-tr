@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdd33968958c2f8423f16ae1ac964915fc12489
-ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
+ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39030422"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231268"
 ---
-# <a name="xmlpoke-task"></a>XmlPoke Görevi
+# <a name="xmlpoke-task"></a>XmlPoke görevi
 
 Bir XML dosyasına bir XPath sorgusu tarafından belirtilen değerleri ayarlar.
 
@@ -42,7 +42,7 @@ Bir XML dosyasına bir XPath sorgusu tarafından belirtilen değerleri ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
- Tabloda listelenen parametreleri sahip olmaya ek olarak, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension temel sınıfı](../msbuild/taskextension-base-class.md).
+ Tabloda listelenen parametreleri sahip olmaya ek olarak, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Örnek
 
@@ -81,7 +81,7 @@ Bu örnekte, değişiklik yapmak istiyorsanız `/Package/mp:PhoneIdentity/PhoneP
 
 `dn` Burada bir yapay ad alanı öneki varsayılan ad alanı için kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
  [Görevleri](../msbuild/msbuild-tasks.md)   
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)

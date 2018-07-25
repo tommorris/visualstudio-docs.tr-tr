@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877338"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232295"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Öğretici: Azure işlevleri ile çalışmaya başlama
 
@@ -46,8 +46,10 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
 1. Ait düğümleri genişletebilirsiniz **çözüm bölmesi**. Varsayılan proje şablonu ve Newtonsoft.Json paketini yanı sıra Azure WebJobs paketleri çeşitli NuGet başvurular içerir. 
 
-     Ayrıca üç dosya vardır:- **host.json** genel tanımlamak için - konak yapılandırma seçenekleri **local.settings.json** hizmet ayarlarını yapılandırmak için. 
-        -Proje şablonu ayrıca bir varsayılan HttpTrigger oluşturur. Bu Laboratuvar için silmeniz gerekir **HttpTrigger.cs** proje dosyası.
+     Üç dosya vardır:  
+        - **Host.JSON** konak genel yapılandırma seçenekleri tanımlamak için  
+        - **Local.Settings.JSON** hizmet ayarlarını yapılandırmak için.  
+        -Proje şablonu ayrıca bir varsayılan HttpTrigger oluşturur. Bu Laboratuvar için silmeniz gerekir **HttpTrigger.cs** proje dosyası.  
 
     Açık **local.settings.json**. İki boş bir bağlantı dizesi ayarlarını sahip olmak için varsayılan olarak ayarlanır.
 

@@ -10,14 +10,14 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153910"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251581"
 ---
-# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun Giderme ve Bilinen Sorunlar (Unity için Visual Studio Araçları)
+# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun giderme ve bilinen sorunlar (Unity için Visual Studio Araçları)
 
 Bu bölümde, bilinen sorunların açıklamalarını Unity için Visual Studio Araçları ile sık karşılaşılan sorunlara çözümler bulmak ve Unity için Visual Studio Araçları hata bildirimi tarafından geliştirilmesine nasıl yardımcı olabileceğini öğrenin.
 
@@ -54,7 +54,7 @@ Bu sorunu çözer. Sorun yaşamaya durumunda, yönetici olarak Visual Studio iç
 
 Ayrıştırma, FMOD, ZNEYİ (Evrensel Media Player), ZFBrowser veya katıştırılmış tarayıcı gibi çok sayıda Unity eklenti yerel iş parçacığı kullanmaktadır. Bir eklenti sonra işletim sistemi engelleme çağrıları yapan çalışma zamanı, yerel bir iş parçacığı ekleme yukarı sona erdiğinde bir sorundur. Unity hata ayıklayıcı (veya etki alanı yeniden yükle) için iş parçacığı kesme ve bağlantıyı anlamına gelir.
 
-FMOD, geçici bir çözüm yoktur, FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE başlatma geçirebilirsiniz [bayrağı](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) zaman uyumsuz işleme devre dışı bırakabilir ve tüm işlemleri ana iş parçacığı üzerinde gerçekleştirin.
+FMOD, geçici bir çözüm yoktur, geçirebilirsiniz `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` başlatma [bayrağı](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) zaman uyumsuz işleme devre dışı bırakabilir ve tüm işlemleri ana iş parçacığı üzerinde gerçekleştirin.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio uyumlu proje
 
@@ -104,7 +104,7 @@ USB hata ayıklama için süper hızlı çalışır ve Unity için Visual Studio
 
 Güncelleştirme 3 için Visual Studio 2015 ', yükseltmeyi deneyin.
 
-## <a name="known-issues"></a>Bilinen Sorunlar
+## <a name="known-issues"></a>Bilinen sorunlar
 
  Bilinen sorunlar vardır, hata ayıklayıcı Unity'nın daha eski C# Derleyici sürümü ile nasıl etkileştiğini gelen neden Visual Studio Araçları Unity için. Bu sorunları çözmek için çalışıyoruz ancak bu sırada aşağıdaki sorunlarla karşılaşabilirsiniz:
 
@@ -114,7 +114,7 @@ Güncelleştirme 3 için Visual Studio 2015 ', yükseltmeyi deneyin.
 
 - İçine ve dışına yöntemleri bazen Adımlama özellikle yineleyiciler veya switch deyimleri içinde yanlış bir şekilde davranır.
 
-## <a name="reporting-errors"></a>Hata Raporlama
+## <a name="report-errors"></a>Rapor hataları
 
  Lütfen kilitlenen, donuyor veya diğer hatalarla karşılaşırsanız, hata raporları göndermek kalite Unity için Visual Studio Araçları'nın geliştirmemize yardımcı olun. Bu, bize araştırmak ve Unity için Visual Studio Araçları'ndaki sorunları gidermeye yardımcı olur. Teşekkür ederiz!
 

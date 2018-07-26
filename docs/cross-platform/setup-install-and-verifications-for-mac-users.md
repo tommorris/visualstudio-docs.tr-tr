@@ -11,12 +11,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7add505f7a90290daab1170c190987767ba05d15
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: f0c4193d68eabd5a5427629cb9a4c7a3be18db3c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924287"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251926"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac kullanıcıları için kurulum, yükleme ve doğrulamalar
 
@@ -30,7 +30,7 @@ Mac'te Xamarin ile çalışmak için şunlar gerekir:
 
     -   **Xamarin Studio doğrudan Mac üzerinde çalıştırmak için:** Xamarin Studio yapı destekleyen Xamarin'in geliştirme ortamı, C# kullanarak Android, iOS ve Windows uygulamaları.  Xamarin Studio hızlı bir genel bakış için bkz [Xamarin Studio genel bakış](https://xamarin.com/studio) (xamarin.com).
 
-    -   **Zaten sahip olduğunuz Parallels ya da VMWare Mac'inizde yapılandırılmış:** Windows Visual Studio 2017 ve Xamarin Parallels veya VMWare içinde çalıştırın.  Bu yapılandırma ile Xamarin, C# kullanarak Android, iOS ve Windows uygulamaları oluşturmak için Visual Studio geliştirme ortamı olarak kullanma olanağı sağlayan Visual Studio ile yüklenen bir uzantısıdır.  Visual Studio Geliştirici temel bileşenleri programı kapsamında ücretsiz 3 aylık Parallels abonelik edinebilirsiniz unutmayın. Bkz: [Microsoft Visual Studio Dev Essentials olacak dahil Parallels Desktop Pro ve Parallels erişim](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Parallels blog).
+    -   **Zaten sahip olduğunuz Parallels ya da VMWare Mac'inizde yapılandırılmış:** Windows Visual Studio 2017 ve Xamarin Parallels veya VMWare içinde çalıştırın.  Bu yapılandırma ile Xamarin, C# kullanarak Android, iOS ve Windows uygulamaları oluşturmak için Visual Studio geliştirme ortamı olarak kullanma olanağı sağlayan Visual Studio ile yüklenen bir uzantısıdır.  Visual Studio Geliştirici temel bileşenleri programı kapsamında ücretsiz 3 aylık Parallels abonelik edinebilirsiniz unutmayın. Bkz: [Microsoft Visual Studio Dev Essentials, Parallels Desktop Pro ve Parallels erişim içerecektir](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Parallels blog).
 
 Bu konuda, bu gereksinimleri için yönergeler sağlar.  Yükleme işlemi devam ederken, konuyu gözden geçirebilirsiniz [Xamarin ile mobil geliştirme hakkında bilgi edinin](../cross-platform/learn-about-mobile-development-with-xamarin.md) okuyup gerekli arka plan bilgilerini izleyin.
 
@@ -42,7 +42,7 @@ Bu konuda, bu gereksinimleri için yönergeler sağlar.  Yükleme işlemi devam 
 
 3.  İndirme ve yönergeleri izleyerek Xamarin yükleme [yükleme ve yapılandırma Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 
-4.  Xamarin hem Windows hem de Mac bilgisayarlara yükleme işlemini tamamladıktan sonra yönergeleri takip edin [XMA kullanarak Mac bilgisayara bağlayarak](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com), iOS ve Mac Visual Studio'dan Windows üzerinde çalışabilmeniz için bilgisayar.
+4.  Xamarin hem Windows hem de Mac bilgisayarlara yükleme işlemini tamamladıktan sonra yönergeleri takip edin [XMA kullanarak Mac Bağlan](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com) Windows bilgisayarda iOS ve Mac Visual Studio'dan ile çalışabilirsiniz.
 
 ##  <a name="windows"></a> Windows Kurulum içinde Parallels (Visual Studio ve Xamarin)
 
@@ -74,7 +74,7 @@ Yükleyicileri tamamladıktan sonra her şeyi Xamarin geliştirme deneyimi hazı
 
 Sağlanan bağlantılar gittiğinizde ilk olarak, sahip olduğunuzdan emin olun **Xamarin Studio** Xamarin belgeleri doğru sürümünü görmek için sağ üst köşede seçili:
 
-![Üzerinde Xamarin.com doğru belgeleri görmek için Xamarin Studio'yu seçerek](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
+![Üzerinde Xamarin.com doğru belgeleri görmek için Xamarin Studio seçin](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
 
 **Android**
 
@@ -106,7 +106,7 @@ Sağlanan bağlantılar gittiğinizde ilk olarak, sahip olduğunuzdan emin olun 
 
 **iOS**
 
-1.  Ağ üzerinde kullanılabilir ve açıklandığı gibi Visual Studio ile eşleştirilmiş Mac'inizde olduğundan emin olun [Mac bilgisayara bağlayarak](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac) (xamarin.com).
+1.  Ağ üzerinde kullanılabilir ve açıklandığı gibi Visual Studio ile eşleştirilmiş Mac'inizde olduğundan emin olun [mac'e Bağlan](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac) (xamarin.com).
 
 2.  Yönergeleri izleyerek bir iOS projesi oluşturma doğrulama [iOS oluşturma](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (xamarin.com).
 

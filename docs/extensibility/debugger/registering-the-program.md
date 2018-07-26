@@ -14,34 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0cb8a2237bf8689244f53fe4763be7f78c16892
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126309"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251159"
 ---
-# <a name="registering-the-program"></a>Program kaydetme
-Hata ayıklama altyapısı bir bağlantı noktası geçirmiş sonra tarafından temsil edilen bir [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) arabirimi, ayıklanacak program sağlama sonraki adımdır bağlantı noktası ile kaydetmek için. Kaydedildikten sonra program aşağıdaki anlamına gelir birini kullanarak hata ayıklama için kullanılabilir:  
+# <a name="register-the-program"></a>Kayıt programı
+Hata ayıklama altyapısı bir bağlantı noktası aldıktan sonra tarafından temsil edilen bir [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) arabirimi, ayıklanacak programın etkinleştirmenin sonraki adımı olan bağlantı noktası ile kaydetmek için. Kaydedildikten sonra program aşağıdaki yollardan birini kullanarak hata ayıklama için kullanılabilir:  
   
--   Hata ayıklayıcı çalışan bir uygulama hata ayıklama tam denetim sağlamasına olanak tanıyan ekleme, işlemi.  
+-   Çalışan bir uygulamanın hata ayıklama tam denetim kazanmak hata ayıklayıcı sağlayan ekleme, işlemi.  
   
--   Yalnızca hata ayıklama, sonrasında--olgu bir hata ayıklayıcısı bağımsız olarak çalışan bir programı, hata ayıklama için veren zamanında (JIT). Çalışma zamanı mimarisi bir arıza yakalar, hata ayıklayıcı önce işletim sistemi bildirilir veya çalışma zamanı ortamı bellek ve hataya neden olan program kaynakları serbest bırakır.  
+-   Yalnızca hata ayıklama sonrasında-aslında bir hata ayıklayıcı bağımsız olarak çalışan bir programın hata ayıklama için izin veren zamanında (JIT). Çalışma zamanı mimari bir hataya yakalar, hata ayıklayıcı önce işletim sistemine bildirilir veya çalışma zamanı ortamı bellek ve hataya neden olan program kaynaklarını serbest bırakır.  
   
-## <a name="registering-procedure"></a>Yordam kaydetme  
+## <a name="registering-procedure"></a>Yordam kaydedilemedi  
   
-#### <a name="to-register-your-program"></a>Programınızı kaydetmek için  
+### <a name="to-register-your-program"></a>Programınızı kaydetmek için  
   
 1.  Çağrı [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) bağlantı noktası tarafından uygulanan yöntem.  
   
      `IDebugPortNotify2::AddProgramNode` bir işaretçi gerektiren bir [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) arabirimi.  
   
-     Genellikle, bir program işletim sistemi veya çalışma zamanı ortamı yüklediğinde, program düğümü oluşturur. Hata ayıklama altyapısı (DE) programı yüklemek için sorulursa DE oluşturur ve program düğümü kaydeder.  
+     Genellikle, bir program, işletim sistemi ya da çalışma zamanı ortamı yüklediğinde, program düğümü oluşturur. Hata ayıklama altyapısı (DE), programı yüklemek için sorulursa DE oluşturur ve program düğüm kaydeder.  
   
-     Aşağıdaki örnek, program başlatma ve bir bağlantı noktası ile kayıt hata ayıklama altyapısı gösterir.  
+     Aşağıdaki örnek, program başlatma ve bağlantı noktası ile kayıt hata ayıklama altyapısı gösterir.  
   
     > [!NOTE]
-    >  Bu başlatın ve işlemi sürdürme tek yolu değildir; Bu, bir bağlantı noktası ile bir program kaydettirme çoğunlukla bir örnektir.  
+    >  Bu kod örneği başlatın ve işlemi sürdürme tek yolu değil; Bu kod, bir bağlantı noktası ile bir program kaydetme çoğunlukla bir örnektir.  
   
     ```cpp  
     // This is an IDebugEngineLaunch2 method.  
@@ -107,6 +107,6 @@ Hata ayıklama altyapısı bir bağlantı noktası geçirmiş sonra tarafından 
   
     ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir bağlantı noktası alma](../../extensibility/debugger/getting-a-port.md)   
- [Bir Programı Hataları Ayıklanacak Şekilde Etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Bağlantı noktası alma](../../extensibility/debugger/getting-a-port.md)   
+ [Bir program görüntüde hata ayıklamayı etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a0f9240cd729d26eecd3c098c28799369b48cea6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8bbb27ad3368b53fc3e333d3260f2f30551c4177
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924375"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251198"
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 
@@ -44,7 +44,7 @@ Yüklü tüm güncelleştirmeleri ile Windows 10 çalıştıran fiziksel bir bil
 
 ### <a name="for-targeting-ios"></a>İOS hedeflemek için
 
-Hedef iOS öykünücüleri ve cihazlara Windows bilgisayarınızdan bir ağ üzerinden Mac ya da Mac ayrıca gerekir mini macOS 10.12 veya üzerini çalıştıran ve Xcode 8.3. Bkz: [Kurulum ve Mac için Visual Studio](/visualstudio/mac/installation) daha ayrıntılı gereksinimler için.
+Hedef iOS öykünücüleri ve cihazlara Windows bilgisayarınızdan bir ağ üzerinden Mac ya da Mac ayrıca gerekir mini macOS 10.12 veya üzerini çalıştıran ve Xcode 8.3. Bkz: [Kurulum ve Mac için Visual Studio yükleme](/visualstudio/mac/installation) daha ayrıntılı gereksinimler için.
 
 <a name="windows" />
 
@@ -86,7 +86,7 @@ Yükleme devam ederken, Mac kurulum yönergeleri ile devam edin ve Git [Xamarin 
 
 2.  Xcode'dan yükleyip [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), ve Apple Kimliğinizi üzerinde açıklandığı gibi ekleyin [hesabınızı eklemek için Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
-3.  İndirme ve yönergeleri izleyerek Mac için Visual Studio yükleme [Kurulum ve Mac için Visual Studio](/visualstudio/mac/installation).
+3.  İndirme ve yönergeleri izleyerek Mac için Visual Studio yükleme [Kurulum ve Mac için Visual Studio yükleme](/visualstudio/mac/installation).
 
 4.  Xamarin hem Windows hem de Mac bilgisayarlara yükleme işlemini tamamladıktan sonra yönergeleri takip edin [Mac bilgisayara bağlayarak](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) Windows bilgisayarda iOS ve Mac Visual Studio'dan ile çalışabilirsiniz.
 

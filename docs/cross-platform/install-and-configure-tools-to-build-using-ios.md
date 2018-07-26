@@ -1,5 +1,5 @@
 ---
-title: İOS kullanılarak derleme ve Yapılandırma Araçları'nı yükleme | Microsoft Docs
+title: İOS kullanarak derlemeye yönelik ve Yapılandırma Araçları'nı yükleme | Microsoft Docs
 ms.custom: ''
 ms.date: 05/21/2018
 ms.technology: vs-ide-mobile
@@ -12,67 +12,67 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454576"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251819"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>İOS kullanılarak derleme ve Yapılandırma Araçları'nı yükleme
+# <a name="install-and-configure-tools-to-build-using-ios"></a>Yükleme ve yapılandırma araçları kullanarak iOS oluşturmak için
 
-Platformlar arası Mobil Geliştirme için Visual C++ düzenlemek, hata ayıklama ve iOS simülatörü'nü veya bir iOS aygıtı iOS kodu dağıtmak için kullanabilirsiniz, ancak lisans kısıtlamaları nedeniyle kodu gerekir oluşturulur ve Uzaktan Mac'te çalışan Derleme ve Visual Studio kullanarak iOS uygulamaları çalıştırmak için ayarlamak ve uzak aracısını yapılandırmak gereken [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), Mac üzerinde Uzak Aracı tanıtıcıları Visual Studio'dan istekleri oluşturmak ve Mac veya Mac Simulator'da iOS bağlı iOS cihazında uygulamayı çalıştırır
+Platformlar arası Mobil Geliştirme için Visual C++, düzenleme, hata ayıklama ve iOS Simulator'a veya bir iOS cihazının iOS kod dağıtmak için kullanabilirsiniz, ancak lisans kısıtlamaları nedeniyle, kodu oluşturulmuş ve gerekir uzaktan Mac'te çalışan Yapı ve Visual Studio kullanarak iOS uygulamaları çalıştırmak için kurma ve uzak aracı yapılandırma yapmanız [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), mac'inizde Uzak Aracı tutamaçları Visual Studio'dan derleme istekleri ve uygulama, Mac veya Mac üzerinde iOS Simülatörünün bağlı bir iOS cihazında çalışır
 
 > [!NOTE]
-> Mac yerine bulutta barındırılan Mac Hizmetleri kullanma hakkında daha fazla bilgi için bkz: [bulutunuza bağlanmak için Visual Studio'yu yapılandırma barındırılan Mac](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Apache Cordova için Visual Studio Araçları'nı kullanarak oluşturmak için yönergeleri verilmiştir. C++ kullanarak oluşturmak için yönergeleri kullanmak için vcremote; remotebuild için değiştirin.
+> Bulutta barındırılan Mac Hizmetleri yerine bir Mac kullanarak hakkında daha fazla bilgi için bkz: [bulutunuza bağlanmak için Visual Studio'yu yapılandırma barındırılan Mac](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Apache Cordova için Visual Studio Araçları'nı kullanarak oluşturmak için yönergeleri verilmiştir. C++ kullanarak oluşturmak için yönergeleri kullanmak için için remotebuild, vcremote değiştirin.
 
-İOS kullanarak oluşturmak için gerekli araçları yüklendikten sonra yolları hızlı bir şekilde yapılandırmak ve iOS geliştirme Visual Studio ve Mac için Uzak aracısını güncelleştirmek için bu konuya bakın
+İOS kullanarak geliştirmek için araçları yükledikten sonra yolları hızlı bir şekilde yapılandırın ve Visual Studio ve Mac üzerinde iOS geliştirme için Uzak aracısını güncelleştirmek bu konuya bakın
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Yükleyin ve iOS için kodu geliştirmek için Uzak aracı kullanmak için öncelikle bu Önkoşullar olması gerekir:
+Yüklediğinizde ve uzak aracı iOS için kod geliştirme için önce şu önkoşulların olmalıdır:
 
-- OS X Mavericks (sürüm 10.9) veya sonraki sürümü çalıştıran bir Mac bilgisayar
+- OS X Mavericks (sürüm 10.9) ya da üzerini çalıştıran bir Mac bilgisayar
 
 - Bir [Apple kimliği](https://appleid.apple.com/)
 
-- Etkin bir [iOS Developer Program](https://developer.apple.com/programs/ios/) Apple hesabıyla
+- Etkin bir [iOS Developer Program](https://developer.apple.com/programs/ios/) Apple Hesapla
 
-- [Xcode](https://developer.apple.com/xcode/downloads/) 6 veya sonraki sürümü.
+- [Xcode](https://developer.apple.com/xcode/downloads/) 6 veya sonraki bir sürümü.
 
-   Xcode uygulama Mağazası'ndan indirilebilir.
+   Xcode, App Store ' indirilebilir.
 
 - Xcode komut satırı araçları
 
-   Xcode komut satırı araçlarını yüklemek için Terminal Mac uygulamasını açın ve aşağıdaki komutu girin:
+   Xcode komut satırı araçlarını yüklemek için Mac Terminal uygulamasını açın ve aşağıdaki komutu girin:
 
    `xcode-select --install`
 
-- Xcode'da yapılandırılmış kimlik imzalama iOS
+- İmzalama kimliği Xcode içinde yapılandırılmış bir iOS
 
-   İmzalama kimlik iOS edinme hakkında ayrıntılı bilgi için bkz: [Bakımı bilgisayarınızı imzalama kimlikleri ve sertifikaları](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) iOS Geliştirici Kitaplığı'nda. Xcode'da imzalama kimliğinizi ayarlayın veya görmek için açık **Xcode** menü ve **Tercihler**. Seçin **hesapları** ve Apple Kimliğinizi seçin ve ardından **ayrıntıları görüntüle** düğmesi.
+   İOS imzalama kimliğini edinme hakkında ayrıntılı bilgi için bkz: [imzalama kimlikleri ve sertifikaları](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) iOS Geliştirici Kitaplığı'nda. Xcode'da imzalama kimliğinizi ayarlayın veya görmek için açık **Xcode** menü ve **tercihleri**. Seçin **hesapları** ve Apple Kimliğinizi seçin ve ardından **ayrıntıları** düğmesi.
 
 - Geliştirme için bir iOS cihazı kullanıyorsanız, bir sağlama profili Xcode'da cihazınız için yapılandırılmış.
 
-   Sağlama profilleri oluşturma hakkında ayrıntılı bilgi için bkz: [oluşturma sağlama profilleri kullanma üye Merkezi](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) iOS Geliştirici Kitaplığı'nda.
+   Sağlama profilleri oluşturma hakkında ayrıntılı bilgi için bkz: [sağlama profilleri üye Merkezi'ni kullanarak oluşturma](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) iOS Geliştirici Kitaplığı'nda.
 
 - [Node.js](https://nodejs.org/)
 
-   En son uzun süreli destek (LTS) sürümünü yüklemek Mac üzerinde Node.js 8.x Diğer en son sürüm sürümleri vcremote içinde kullanılan bazı modüller desteklemiyor olabilir ve vcremote yüklemesinin başarısız olmasına neden olabilir unutmayın.
+   En son uzun süreli destek (LTS) sürümünü yüklemek mac'inizde node.js 8.x Not diğer son yayın sürümleri vcremote içinde kullanılan bazı modüller desteklemeyebilir ve vcremote yüklemesinin başarısız olmasına neden olabilir.
 
 - Npm güncelleştirilmiş bir sürümü
 
-   Node.js ile birlikte gelen npm sürümü vcremote yüklemek için güncel olmayabilir. Npm güncelleştirmek için Terminal Mac uygulamasını açın ve aşağıdaki komutu girin:
+   Node.js ile birlikte gelen npm sürümünü vcremote yüklemek için güncel olmayabilir. Npm güncelleştirmek için Mac Terminal uygulamasını açın ve aşağıdaki komutu girin:
 
    `sudo npm install -g npm@latest`
 
 ##  <a name="Install"></a> İOS için Uzak aracı yükleme
 
-Platformlar arası Mobil Geliştirme için Visual C++ yüklediğinizde Visual Studio ile iletişim kurabilir [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), dosyaları aktarmak, yapı ve iOS uygulamanızı çalıştırmak için Mac'inizde çalıştıran uzak bir aracı ve komutları hata ayıklama gönderir.
+Platformlar arası Mobil Geliştirme için Visual C++'ı yüklediğinizde Visual Studio ile iletişim kurabilir [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), dosya aktarımı, oluşturun ve iOS uygulamanızı çalıştırma Mac'inizde çalıştıran uzak bir aracı ve hata ayıklama komutları gönderme.
 
-Uzak Aracı yüklemeden önce uyduğunuzdan emin olun [Önkoşullar](#Prerequisites) yüklenip [platformlar arası Mobil Geliştirme için Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Uzak Aracı yüklemeden önce memnun emin [önkoşulları](#Prerequisites) yüklenip [platformlar arası Mobil Geliştirme için Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
-###  <a name="DownloadInstall"></a> Uzak Aracı karşıdan yükleyip
+###  <a name="DownloadInstall"></a> Uzak aracısını indirme ve yükleme için
 
 - Mac Terminal uygulamadan girin:
 
@@ -80,16 +80,16 @@ Uzak Aracı yüklemeden önce uyduğunuzdan emin olun [Önkoşullar](#Prerequisi
 
    Genel yükleme (**-g**) anahtar önerilir ancak gerekli değildir.
 
-   Yükleme sırasında vcremote yüklü olduğundan ve Mac üzerinde Geliştirici modu etkinleştirildi [Homebrew](https://brew.sh/) ve iki npm paket, vcremote-lib ve vcremote-yardımcı programları da yüklenir. Yükleme tamamlandığında, atlanan isteğe bağlı bağımlılıkları ilgili tüm uyarılar yoksaymak güvenlidir.
+   Yükleme sırasında vcremote yüklü olduğundan ve Geliştirici modu Mac'inizde etkinleştirildi [Homebrew](https://brew.sh/) ve iki npm paketi, vcremote LIB ve vcremote-utils da yüklenir. Yükleme tamamlandığında, atlanan isteğe bağlı bağımlılıklar hakkında tüm uyarıları yoksaymak güvenlidir.
 
    > [!NOTE]
-   > Homebrew yüklemek için sudo (Yönetici) erişimi olmalıdır. Sudo olmadan vcremote yüklemeniz gerekiyorsa, Homebrew usr/yerel konumda el ile yükleyin ve kendi bin klasörü yolunu ekleyin. Daha fazla bilgi için bkz: [Homebrew belgelerine](https://github.com/Homebrew/homebrew/wiki/Installation). Geliştirici modu el ile etkinleştirmek için Terminal uygulamada şu komutu girin: `DevToolsSecurity -enable`
+   > Homebrew yüklemek için sudo (Yönetici) erişiminiz olmalıdır. Sudo olmadan vcremote yüklemeniz gerekiyorsa, Homebrew usr/local konumda el ile yükleyin ve kendi bin klasörü yolunuza ekleyin. Daha fazla bilgi için [Homebrew belgeleri](https://github.com/Homebrew/homebrew/wiki/Installation). El ile geliştirici modunu etkinleştirmek için Terminal uygulamada şu komutu girin: `DevToolsSecurity -enable`
 
-Visual Studio'nun yeni bir sürüme güncelleştirirseniz, uzak aracı da geçerli sürüme güncelleştirmeniz gerekir. Uzak Aracı güncelleştirmek için karşıdan yükleme ve uzak aracı yüklemek için adımları yineleyin.
+Visual Studio'nun yeni bir sürüme güncelleştirmek, uzak aracı de geçerli sürüme güncelleştirmeniz gerekir. Uzak Aracı güncelleştirmek için Uzak aracısını indirme ve yükleme adımları yineleyin.
 
 ##  <a name="Start"></a> Uzak Aracı Başlat
 
-Uzak Aracı oluşturmak ve iOS kodunuzu çalıştırmak Visual Studio için çalışıyor olmalıdır. İletişim kurabilir önce visual Studio ile uzak aracı eşleştirilmelidir. Varsayılan olarak, uzak aracı Visual Studio ile kullanmak üzere bir PIN gerektiren güvenli bir bağlantı modunda çalışır.
+Derleme ve iOS kodunuzu çalıştırmak Visual Studio için Uzak Aracı'nın çalışıyor olması gerekir. Bu iletişim kurabilmesi, visual Studio uzak aracı ile eşleştirilmelidir. Varsayılan olarak, uzak aracı Visual Studio ile eşleştirme için PIN gerektiren güvenli bir bağlantı modunda çalışır.
 
 ###  <a name="RemoteAgentStartServer"></a> Uzak Aracı başlatmak için
 
@@ -97,21 +97,21 @@ Uzak Aracı oluşturmak ve iOS kodunuzu çalıştırmak Visual Studio için çal
 
    `vcremote`
 
-   Bu bir varsayılan derleme dizini ile uzak aracı başlatır ~ / vcremote. Ek yapılandırma seçenekleri için bkz [Mac Uzak Aracı yapılandırma](#ConfigureMac).
+   Bu varsayılan derleme dizini ile uzak aracı başlatır ~ / vcremote. Ek yapılandırma seçenekleri için bkz [Mac üzerinde Uzak Aracı yapılandırma](#ConfigureMac).
 
-İlk kez aracısını başlatın ve yeni bir istemci sertifikası oluşturmak istediğiniz zaman aracıyı Visual Studio içinde ana bilgisayar adını, bağlantı noktası ve PIN dahil olmak üzere yapılandırmak için gerekli bilgileri sağlanır.
+İlk kez Aracısı'nı başlatın ve dilediğiniz zaman yeni bir istemci sertifikası oluşturma aracı Visual Studio kullanarak ana bilgisayar adı, bağlantı noktası ve PIN dahil olmak üzere yapılandırmak için gerekli bilgiler ile sağlanır.
 
 ![Güvenli bir PIN oluşturmak için vcremote kullanın](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")
 
-Uzak Aracı ana bilgisayar adını kullanarak Visual Studio'da yapılandırmak istiyorsanız, erişilebilir olduğunu doğrulamak için konak adını kullanarak Windows Mac ping işlemi uygulayın. Aksi takdirde, IP adresini kullanmanız gerekebilir.
+Uzak Aracı konak adını kullanarak Visual Studio'da yapılandırmak istiyorsanız, Mac bilgisayardan erişilebilir olduğunu doğrulamak için konak adını kullanarak Windows ping atın. Aksi takdirde, IP adresini kullanmanız gerekebilir.
 
-Oluşturulan PIN'in bir zaman kullanım içindir ve yalnızca sınırlı bir süre için geçerlidir. Süresi sona ermeden önce Visual Studio ile uzak aracı eşleştirin değil, yeni bir PIN oluşturmak gerekir. Daha fazla bilgi için bkz: [yeni bir güvenlik PIN oluşturmak](#GeneratePIN).
+Oluşturulmuş bir PIN, bir zaman kullanım içindir ve yalnızca sınırlı bir süre için geçerlidir. Süresi sona ermeden önce Visual Studio ile uzak aracı pair değil, yeni bir PIN oluşturmak ihtiyacınız olacak. Daha fazla bilgi için [yeni bir güvenlik PIN'i Oluştur](#GeneratePIN).
 
-Güvenli olmayan modda uzak aracı kullanabilirsiniz. Güvenli modda, PIN olmadan Visual Studio uzak aracı eşlenmiş.
+Güvenli olmayan modda, uzak aracı kullanabilirsiniz. Güvenli olmayan modda, PIN olmadan Visual Studio için Uzak Aracı eşleştirilmiş.
 
 #### <a name="to-disable-secured-connection-mode"></a>Güvenli bağlantı modu devre dışı bırakmak için
 
-- Güvenli bağlantı vcremote modunda devre dışı bırakmak için Mac'inizde Terminal uygulamada şu komutu girin:
+- Vcremote güvenli bağlantı modunda devre dışı bırakmak için Mac'inizde Terminal uygulamada şu komutu girin:
 
    `vcremote --secure false`
 
@@ -121,92 +121,92 @@ Güvenli olmayan modda uzak aracı kullanabilirsiniz. Güvenli modda, PIN olmada
 
    `vcremote --secure true`
 
-Uzak Aracı başladıktan sonra siz durduruncaya kadar Visual Studio'dan kullanabilirsiniz.
+Uzak Aracı başlattıktan sonra siz durduruncaya kadar bunu Visual Studio'dan kullanabilirsiniz.
 
 #### <a name="to-stop-the-remote-agent"></a>Uzak Aracı durdurmak için
 
-- Terminal penceresi vcremote çalışıyor, girin `Control+C`.
+- Terminal penceresinde vcremote çalışıyor, girin **denetimi**+**C**.
 
-##  <a name="ConfigureVS"></a> Visual Studio'da uzak Aracısı'nı yapılandırma
+##  <a name="ConfigureVS"></a> Visual Studio'da uzak aracı yapılandırma
 
 Visual Studio'dan uzak aracıya bağlanmak için Visual Studio seçenekleri Uzaktan yapılandırma belirtmeniz gerekir.
 
-#### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio'dan uzak aracısını yapılandırmak için
+#### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio'dan uzak aracı yapılandırma
 
-1. Aracı Mac'inizde çalışmıyorsa adımları [uzak aracı Başlat](#Start). Mac vcremote başarıyla eşleştirin, bağlanmak ve projenizi derleme Visual Studio için çalışıyor olmalıdır.
+1. Mac'inizde Aracısı zaten çalışmıyorsa adımları [uzak aracı Başlat](#Start). Mac bilgisayarınızda vcremote başarıyla eşleştirebilir, bağlanma ve projenizi Visual Studio için çalışıyor olması gerekir.
 
-1. Ana bilgisayar adı veya IP adresini Mac Mac'inizde Al
+1. Konak adı veya IP adresini Mac Mac'inizde Al
 
-   IP adresi kullanarak alabileceğiniz **ifconfig** bir Terminal penceresi komutu. Etkin ağ arabirimi altında listelenen INet adresi kullanın.
+   Kullanarak IP adresini alabilirsiniz **ifconfig** bir Terminal penceresinde komutu. Etkin ağ arabirimi altında listelenen INet adresini kullanın.
 
-1. Visual Studio menü çubuğunda seçin **Araçları**, **seçenekleri**.
+1. Visual Studio menü çubuğunda **Araçları**, **seçenekleri**.
 
-1. İçinde **seçenekleri** iletişim kutusunda, genişletin **Çapraz Platform**, **C++**, **iOS**.
+1. İçinde **seçenekleri** iletişim kutusunda **Çoklu Platform**, **C++**, **iOS**.
 
-1. İçinde **ana bilgisayar adı** ve **bağlantı noktası** alanları, onu başlatıldığında uzak aracı tarafından belirtilen değerleri girin. Ana bilgisayar adı DNS adı veya IP adresini Mac olabilir 3030 varsayılan bağlantı noktasıdır.
+1. İçinde **ana bilgisayar adı** ve **bağlantı noktası** alanları, başlatıldığında uzak aracı tarafından belirtilen değerleri girin. Ana bilgisayar adı, DNS adını veya IP adresini Mac olabilir. Varsayılan bağlantı noktası: 3030.
 
    > [!NOTE]
    > Ana bilgisayar adını kullanarak Mac ping yapılamıyor, IP adresini kullanmanız gerekebilir.
 
-1. Varsayılan güvenli bağlantı modunda uzak aracı kullanıyorsanız denetleyin **güvenli** onay kutusunu uzak aracı tarafından belirtilen PIN değeri enter **PIN** alan. Güvenli olmayan bağlantıya modda uzak aracı kullanırsanız temizleyin **güvenli** onay kutusunu bırakıp **PIN** alanı boş.
+1. Uzak Aracı varsayılan güvenli bağlantı modunda kullanırsanız, kontrol **güvenli** onay kutusunu uzak aracısı tarafından belirtilen PIN değer enter **PIN** alan. Güvenli olmayan bir bağlantı modunda, uzak aracı kullanmanız durumunda Temizle **güvenli** onay kutusu bırakıp **PIN** alanını boş bırakın.
 
 1. Seçin **çifti** eşleştirme etkinleştirmek için.
 
-   ![İOS derlemeler için vcremote bağlantı yapılandırma](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
+   ![İOS yapıları için vcremote bağlantısı yapılandırma](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
 
-   Ana bilgisayar adı veya bağlantı noktası değiştirene kadar eşleştirme devam ettirir. İçinde bağlantı noktası veya ana bilgisayar adını değiştirirseniz **seçenekleri** Seç iletişim kutusu, değişikliği geri almak için **Revert** önceki eşleştirme için geri düğmesine.
+   Konak adı veya bağlantı noktası değiştirene kadar eşleştirmeye devam ettirir. Ana bilgisayar adını değiştirin veya içinde bağlantı noktası **seçenekleri** Seç iletişim kutusu, bir değişikliği geri almak için **geri döndürme** önceki eşleştirmeye geri dönmek için düğme.
 
-   Eşleştirmenin başarılı olmazsa, uzak aracı içindeki adımları izleyerek çalıştığını doğrulayın [uzak aracı Başlat](#Start). Uzak Aracı PIN oluşturulan bu yana çok süre geçtiyse, adımları [yeni bir güvenlik PIN oluşturmak](#GeneratePIN) Mac ve yeniden deneyin. Ana bilgisayar adı, Mac kullanıyorsanız IP adresini kullanarak deneyin **ana bilgisayar adı** yerine alan.
+   Eşleştirmenin başarısız olursa, Uzak Aracı'ndaki adımları izleyerek çalıştığını doğrulayın [uzak aracı Başlat](#Start). Uzak Aracı PIN oluşturulmasının üzerinden çok uzun zaman geçtiyse, adımları [yeni bir güvenlik PIN'i Oluştur](#GeneratePIN) Mac ve yeniden deneyin. Ana bilgisayar adı Mac kullanıyorsanız, IP adresini kullanarak deneyin **ana bilgisayar adı** bunun yerine alan.
 
-1. Klasör adında güncelleştirme **uzak kök** Mac üzerinde giriş (~) dizininizde uzak aracı tarafından kullanılan klasörü belirtmek için alanını Varsayılan olarak, uzak aracı /Users/ kullanır`username`/vcremote uzak kök olarak.
+1. Klasör adı güncelleştirme **uzak kök** ev uzak aracısı tarafından kullanılan klasörü belirtmek için alanını (*~*) Mac'te dizin Varsayılan olarak /Users/ uzak aracı kullanır`username`/vcremote uzak kök olarak.
 
-1. Seçin **Tamam** uzak eşleştirme bağlantı ayarlarını kaydetmek için.
+1. Seçin **Tamam** eşleştirme uzak bağlantı ayarları kaydetmek için.
 
-Visual Studio Mac Uzak aracı her kullanışınızda bağlanmak için aynı bilgileri kullanır. Visual Studio çiftine ile uzak aracı yeniden Mac'inizde yeni bir güvenlik sertifikası oluşturmak ya da kendi ana bilgisayar adı veya IP adresi değişiklikleri sürece gerekmez.
+Visual Studio Mac bilgisayarınızda uzak aracı her kullanışınızda bağlanmak için bilgilerin aynısını kullanır. Visual Studio ile eşleştirme uzak aracı ile yeniden Mac'inizde yeni bir güvenlik sertifikası oluşturmak ya da kendi ana bilgisayar adı veya IP adresi değişiklikleri sürece ihtiyacınız yoktur.
 
-##  <a name="GeneratePIN"></a> Yeni bir güvenlik PIN oluştur
+##  <a name="GeneratePIN"></a> Yeni bir güvenlik PIN'i oluştur
 
-Uzak aracı ilk kez başlattığınızda, oluşturulan PIN'in sınırlı bir süre için geçerli olduğu — varsayılan olarak 10 dakika. Süresi sona ermeden önce Visual Studio uzak aracıya eşleştirin yok, yeni bir PIN oluşturmak gerekir.
+Oluşturulmuş bir PIN, uzak aracı ilk kez başlattığınızda, sınırlı bir süre için geçerlidir — varsayılan olarak, 10 dakika. Süresi sona ermeden önce Visual Studio için Uzak Aracı eşleştirilmemiş, yeni bir PIN oluşturmak ihtiyacınız olacak.
 
 #### <a name="to-generate-a-new-pin"></a>Yeni bir PIN oluşturmak için
 
-1. Aracısını durdurun ya da Mac üzerinde ikinci bir Terminal uygulama penceresi açın ve, komut girmek için kullanın.
+1. Aracısını durdurun veya Mac üzerinde ikinci bir Terminal uygulamasını penceresi açın ve bu komut girmek için kullanın.
 
-1. Bu komut, Terminal uygulamaya girin:
+1. Bu komut, Terminal uygulamada girin:
 
    `vcremote generateClientCert`
 
-   Uzak Aracı yeni bir geçici PIN oluşturur. Yeni PIN kullanarak Visual Studio kullanmak üzere adımlarını yineleyin [Visual Studio'da uzak aracı yapılandırma](#ConfigureVS).
+   Uzak Aracı yeni bir geçici PIN oluşturur. Yeni PIN kullanarak Visual Studio eşleşmesine izin adımlarını yineleyin [Visual Studio'da uzak aracı yapılandırma](#ConfigureVS).
 
 ##  <a name="GenerateCert"></a> Yeni bir sunucu sertifikası oluşturma
 
-Güvenlik nedeniyle, Visual Studio uzak aracı ile IP adresi veya ana bilgisayar adını, Mac için bağlı bu çifti sunucu sertifikaları Bu değerleri değiştirirseniz, yeni bir sunucu sertifikası oluşturun ve sonra Visual Studio yeni değerlerle yeniden yapılandırmanız gerekir.
+Güvenlik nedeniyle, sunucunun IP adresi veya ana bilgisayar adını, Mac için Visual Studio ile uzak aracı işletim sistemi bu çiftin sertifikaları Bu değerleri değiştirirseniz, yeni bir sunucu sertifikası oluşturma ve sonra Visual Studio yeni değerlerle yeniden yapılandırmanız gerekir.
 
 #### <a name="to-generate-a-new-server-certificate"></a>Yeni bir sunucu sertifikası oluşturmak için
 
 1. Vcremote aracısını durdurun.
 
-1. Bu komut, Terminal uygulamaya girin:
+1. Bu komut, Terminal uygulamada girin:
 
    `vcremote resetServerCert`
 
 1. Onayınız istendiğinde girin `Y`.
 
-1. Bu komut, Terminal uygulamaya girin:
+1. Bu komut, Terminal uygulamada girin:
 
    `vcremote generateClientCert`
 
-   Yeni bir geçici PIN oluşturur.
+   Bu, yeni bir geçici PIN oluşturur.
 
-1. Yeni PIN kullanarak Visual Studio kullanmak üzere adımlarını yineleyin [Visual Studio'da uzak aracı yapılandırma](#ConfigureVS).
+1. Yeni PIN kullanarak Visual Studio eşleşmesine izin adımlarını yineleyin [Visual Studio'da uzak aracı yapılandırma](#ConfigureVS).
 
-##  <a name="ConfigureMac"></a> Uzak Aracı Mac yapılandırın
+##  <a name="ConfigureMac"></a> Mac'te uzak aracı yapılandırma
 
-Çeşitli komut satırı seçeneklerini kullanarak uzak aracı yapılandırabilirsiniz. Örneğin, yapı isteklerini dinlemek ve en çok dosya sisteminde korumak için yapı sayısını belirtmek için bağlantı noktası belirtebilirsiniz. Varsayılan sınır 10 derlemeleri'dır. Uzak Aracı kapatma sırasında en büyük değeri aşıyor derlemeleri kaldırır.
+Çeşitli komut satırı seçeneklerini kullanarak uzak aracı yapılandırabilirsiniz. Örneğin, dosya sisteminde korumak için derleme sayısının üst sınırı belirtin ve yapı isteklerini dinlemek için bağlantı noktası belirtebilirsiniz. Varsayılan olarak, 10 derlemeleri bir sınırdır. Uzak Aracı kapatma sırasında en yüksek süreyi aşmasına derlemeleri kaldırır.
 
-#### <a name="to-configure-the-remote-agent"></a>Uzak Aracı yapılandırmak için
+#### <a name="to-configure-the-remote-agent"></a>Uzak Aracı yapılandırma
 
-- Uzak Aracı komutlarda Terminal uygulama tam listesini görmek için girin:
+- Terminal uygulamasında, uzak aracı komutların tam listesi görmek için aşağıdakileri girin:
 
    `vcremote --help`
 
@@ -214,26 +214,26 @@ Güvenlik nedeniyle, Visual Studio uzak aracı ile IP adresi veya ana bilgisayar
 
    `vcremote --secure false`
 
-   Bu seçeneği kullandığınızda, temizleyin **güvenli** onay kutusunu bırakıp **PIN** aracı Visual Studio'da yapılandırırken alanı boş.
+   Bu seçeneği kullandığınızda, Temizle **güvenli** onay kutusu bırakıp **PIN** aracı Visual Studio ile yapılandırırken alanını boş bırakın.
 
 - Uzak Aracı dosyaları için bir konum belirtmek için şunu girin:
 
    `vcremote --serverDir directory_path`
 
-   Burada *directory_path* günlük dosyaları, yapılar ve sunucu sertifikaları yerleştirmek için Mac konumunda bulunuyor. Varsayılan olarak, bu /Users/ konumdur*kullanıcıadı*/vcremote. Yapılar, bu konumda yapı numarasına göre düzenlenir.
+   Burada *directory_path* günlük dosyaları, yapılar ve sunucu sertifikaları yerleştirmek için mac'inizde konumdur. Varsayılan olarak, bu konumudur */Users/\<kullanıcı adı > / vcremote*. Yapılar, bu konumda derleme numarasına göre düzenlenir.
 
-- Yakalamak için bir arka plan işlemi kullanılacak `stdout` ve `stderr` server.log adlı bir dosyaya girin:
+- Bir arka plan işlemi kullanmak üzere `stdout` ve `stderr` server.log adlı bir dosyaya girin:
 
    `vcremote > server.log 2>&1 &`
 
-   Server.log dosya derleme sorunları gidermenize yardımcı olur.
+   Server.log dosyanın derleme sorunları gidermenize yardımcı olur.
 
-- Komut satırı parametreleri yerine bir yapılandırma dosyası kullanarak aracı çalıştırmak için şunu girin:
+- Aracı bir yapılandırma dosyası yerine komut satırı parametreleri kullanarak çalıştırmak için şunu girin:
 
    `vcremote --config config_file_path`
 
-   Burada *config_file_path* JSON biçiminde bir yapılandırma dosyası yolu. Başlangıç seçenekleri ve bunların değerleri çizgi içermemelidir.
+   Burada *config_file_path* JSON biçiminde bir yapılandırma dosyası yolu. Başlangıç seçeneklerini ve değerlerini, kısa çizgi içermemelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Platformlar Arası Mobil Geliştirme için Visual C++’ı yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Platformlar arası Mobil Geliştirme için Visual C++'ı yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

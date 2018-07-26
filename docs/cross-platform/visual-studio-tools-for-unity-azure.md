@@ -12,30 +12,30 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 5230ecda1c817ec5be51019f6db793210a3d7a5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd34352453752bd56106597fccf6ab7c495e55c2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31062530"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251185"
 ---
-# <a name="programming-with-unity-and-azure"></a>Unity ve Azure ile programlama
+# <a name="program-with-unity-and-azure"></a>Unity ve Azure ile programı
 
-Azure bulutta telemetri ve oyun başka verileri saklamak için ölçeklenebilir bir çözüm sağlar. Unity 2017 sürümle birlikte, Unity'nın Deneysel desteği .NET 4.6 Azure tümleştirme daha basit hiç Azure .NET SDK'ları kullanılmasına izin vererek hale getirir.
+Azure, telemetri ve diğer oyun verileri bulutta depolamak için ölçeklenebilir bir çözüm sağlar. Unity 2017 sürümünde .NET 4.6 için Deneysel desteği Unity'nın Azure tümleştirmesi daha hiç olmadığı kadar Azure .NET SDK'ları kullanılmasına izin vererek basitleştirir.
 
 ## <a name="experimental-azure-sdks"></a>Deneysel Azure SDK'ları
 
 > [!NOTE]
-> Bu SDK'ları desteklenmeyen ancak Unity'nın Deneysel .NET 4.6 desteği deneyin müşterilere yardımcı olmak için sağlanan.
+> Bu SDK'ları desteklenmeyen ancak Unity'nın Deneysel .NET 4.6 destek deneyin müşterilere yardımcı olmak için sağlanmıştır.
 
 Ziyaret [korumalı alan](/sandbox/) aşağıdaki Deneysel Azure SDK'ları ile Unity denemek için:
 
-* [Azure depolama Unity için SDK'sı](https://aka.ms/azstoragegamedev)
+* [Azure depolama SDK'sı için Unity](https://aka.ms/azstoragegamedev)
 * [Azure Event Hubs'a Unity için SDK'sı](https://aka.ms/azeventhubsgamedev)
 * [Unity için Azure Mobile Apps SDK](https://aka.ms/azmobileappsgamedev)
 
 ## <a name="azure-sdk-sample"></a>Azure SDK'sı örneği
 
-Ayrıca bir [basit örnek oyun](https://aka.ms/azmobileappsracer) Unity ve Azure kolay tabloları SDK'sını kullanma. Yüksek izlemek için oyun kullanan Azure kolay tabloları veri depolama Skorbordu puan ve oyun telemetri depolamak ve kullanılabilir [karşıdan Github'dan](https://aka.ms/azsamples-unity).
+Ayrıca bir [basit örnek oyunu](https://aka.ms/azmobileappsracer) Unity ve Azure kolay tablolar SDK'sını kullanarak. Yüksek izlemek için oyun kullanan Azure kolay tablolar veri depolama puan tablosu puan ve oyun içi telemetriyi depolayın ve kullanılabilir [Github'dan indirin](https://aka.ms/azsamples-unity).
 
 ![Örnek oyun ekran görüntüsü](media/vstu_azure-test-sample-game-image2.png)

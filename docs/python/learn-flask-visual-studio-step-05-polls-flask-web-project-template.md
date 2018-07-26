@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 936c5c1d6edd0a3f3ac7f645b1c94c5ffecd39f1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232325"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251848"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. adım: yoklamalar Flask Web projesi şablonunu kullanma
 
@@ -358,5 +358,5 @@ Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulamayı müşt
 
 - Visual Studio Team Services (VSTS) gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (VSTS, GitHub veya başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak ve işlem hattı için dağıtmadan önce ek testler için bir hazırlık sunucusu dağıtmak için de yapılandırmanız VSTS olabilir Üretim. VSTS, ayrıca, App Insights gibi çözümlerle izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için bkz.:
 
-  - [Azure DevOps projesi ile CI/CD işlem hattı oluşturma için Python](/vsts/build-release/apps/cd/azure/azure-devops-project-python?view=vsts)
+  - [Azure DevOps projesi ile CI/CD işlem hattı oluşturma için Python](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Visual Studio Team Services (video, 11m 21s) ile azure'da Python geliştirme](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

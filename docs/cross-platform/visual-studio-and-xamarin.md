@@ -10,33 +10,33 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 30bc5e4d14e09852904ca93087bdd99f6f2443ef
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ef599a67dcb81586bd31fd08836c0a95b812bde1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280695"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251233"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio ve Xamarin
 
-Xamarin olan yerel iOS, Android ve Windows için mobil uygulama geliştirme platformu uygulamalardan ortak C# / .NET code tabanı. Xamarin ile yazılmış uygulamalar yaklaşık % 100 kodun yeniden platformlar arasındaki %75 elde edebilirsiniz. Bu uygulamaları temel platform API'leri tam erişimi vardır ve yerel kullanıcı arabirimleri dahil edebilirsiniz. Bunlar, çalışma zamanı performans üzerinde çok az etkisi platforma özgü paketlerle derleyin. (Not: Xamarin de destekler F #, ancak bu belgeleri C# üzerinde yalnızca odaklanır. Visual Basic şu anda desteklenmiyor.)
+Xamarin yerel iOS, Android ve Windows uygulamaları için mobil uygulama geliştirme platformu olan uygulamalardan genel C# / .NET kod tabanı. Xamarin ile yazılmış uygulamalar neredeyse % 100 yeniden kod platformlar arasında %75 elde edebilirsiniz. Bu uygulamalar, temel alınan platform API'lerini tam erişimi vardır ve yerel kullanıcı arabirimleri birleştirebilirsiniz. Bunlar, platforma özgü paket çalışma zamanı performans üzerinde çok az etki ile derleyin. (Not: Xamarin de destekleyen F #, ancak bu belgeler üzerinde C# yalnızca odaklanır. Visual Basic şu anda desteklenmiyor.)
 
-Geliştiriciler C# .NET ve Visual Studio ile tanıdık aynı güç ve üretkenlik mobil uygulamaları için Xamarin ile çalışırken, keyfini çıkarın. Avantajlar uzaktan Android, iOS ve Windows cihazlarda Objective-C ya da Java gibi yerel kodlama dillerini öğrenmek zorunda kalmadan hata ayıklama içerir. Küçük beklenmedik biçimde, böylece güzel kullanıcı arabirimleri ile diğer birçok yüksek performanslı uygulamalar olan — NASCAR, Aviva ve MixRadio gibi — Xamarin kullanılarak oluşturulmuş.
+Geliştiriciler C#, .NET ve Visual Studio ile tanıdık aynı güç ve üretkenlik Xamarin ile mobil uygulamalar için çalışırken keyfini çıkarın. Bu avantajlar uzaktan Android, iOS ve Windows cihazlarında Objective-C ya da Java gibi yerel kodlama dilleri öğrenmek zorunda kalmadan hata ayıklamayı içerir. Küçük şaşkınlık ve ardından, güzel kullanıcı arabirimleri ile diğer birçok yüksek performanslı uygulamaları olan — NASCAR, Aviva ve MixRadio gibi — Xamarin kullanılarak oluşturulan.
 
-Bu belge gücünü değerlendirmenize yardımcı **Xamarin ile Visual Studio** bu deneyimleri oluşturmak için.
+Bu belge tam gücünden değerlendirmenize yardımcı olur. **Xamarin ile Visual Studio** bu deneyimler oluşturun.
 
--   İle başlayan [Kurulum ve yükleme](../cross-platform/setup-and-install.md), bir işlemin (genellikle Internet bağlantınızın, hangi zaten yüklediyseniz ve Seçenekler hızına bağlı olarak 2-4 saat) biraz zaman alabilir.
+-   İle başlayan [Kurulum ve yükleme](../cross-platform/setup-and-install.md), (genellikle Internet bağlantınızı, ne zaten yüklediyseniz ve Seçenekler hızına bağlı olarak 2-4 saat) biraz zaman alır bir işlem.
 
--   Yükleyicileri çalıştırırken yapabilecekleriniz [xamarin'le mobil geliştirme hakkında bilgi edinin](learn-about-mobile-development-with-xamarin.md) hangi söyleyin, Xamarin, karşılaştırma yerel UI Xamarin.Forms ve daha fazlasını doğası hakkında.
+-   Yükleyicileri çalışırken yapabilecekleriniz [Xamarin ile mobil geliştirme hakkında bilgi edinin](learn-about-mobile-development-with-xamarin.md) hangi bahsedin, Xamarin, karşılaştırma yerel UI için Xamarin.Forms ve diğer doğası hakkında.
 
--   Yükleme tamamlandıktan sonra [Xamarin ortamınızı doğrulayın](../cross-platform/verify-your-xamarin-environment.md).
+-   Yükleme tamamlandıktan sonra [Xamarin ortamınızı doğrulama](../cross-platform/verify-your-xamarin-environment.md).
 
--   Son öğreticide giderek [Xamarin.Forms Visual Studio ile uygulama oluşturma temellerini öğrenin](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).
+-   Son öğreticide giderek [Visual Studio'da Xamarin.Forms ile uygulama oluşturmaya yönelik temel bilgileri öğrenin](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).
 
-Kullanarak tüm Xamarin özellik ile çalışabilirsiniz [herhangi bir sürümünü Visual Studio 2017](https://visualstudio.microsoft.com/vs) (Community, Professional ve Enterprise). Ayrı bir lisans gereklidir.
-
-> [!NOTE]
->  Bu yönergeler, Windows ve Visual Studio arka plana sahip geliştiriciler için kolay ve en kolay bilgisayar yapılandırması açıklanmaktadır. Yalnızca Internet paylaşımlı aygıtları ve iOS simülatörü kullanmak için Mac ile etkileşim kurmak için gerekli olduğundan, bu yapılandırma ile genel geliştirme deneyimi basitleştirilmiştir. Visual Studio Parallels veya VMWare içinde çalışan veya Mac için Visual Studio kullanarak bir Mac arka planından yerine gelse öneririz Başvurmak [Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için](../cross-platform/setup-install-and-verifications-for-mac-users.md) yönergeler için.
+Tüm Xamarin özelliklerini kullanarak çalışabilir [herhangi bir Visual Studio 2017 sürümünü](https://visualstudio.microsoft.com/vs) (Community, Professional ve Enterprise). Ayrı bir lisans gereklidir.
 
 > [!NOTE]
->  HTML ve CSS dayalı bir platformlar arası geliştirme çözümü arıyorsanız, Visual Studio Araçları Apache Cordova için açıklandığı gibi denetleyin [Visual Studio'da platformlar arası geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
+>  Bu yönergeler, Windows ve Visual Studio arka plana sahip geliştiriciler için kolay ve en kolay bilgisayar yapılandırması açıklanmaktadır. Yalnızca internet paylaşımlı cihaz ve iOS simülatörü kullanmak için Mac ile etkileşim kurmak gerektiğinden bu yapılandırma ile genel geliştirme deneyimini basitleştirir. Bunun yerine bir Mac arka planından gelen, Visual Studio'yu Parallels veya VMWare içinde çalışan veya Mac için Visual Studio kullanarak önerilir Başvurmak [Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için](../cross-platform/setup-install-and-verifications-for-mac-users.md) yönergeler için.
+
+> [!NOTE]
+>  HTML ve CSS tabanlı bir platformlar arası geliştirme çözümü arıyorsanız, Visual Studio Araçları Apache Cordova için açıklandığı gibi kontrol [Visual Studio'da platformlar arası geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).

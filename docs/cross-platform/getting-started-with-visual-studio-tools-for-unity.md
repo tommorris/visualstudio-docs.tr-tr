@@ -10,14 +10,14 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154228"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252472"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile Başlarken
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile çalışmaya başlama
 
 ## <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
@@ -41,7 +41,7 @@ Yükleme sırasında Visual Studio ile Unity yüklenecek bileşenlerin listesini
 
 Unity yüklemenizle dahil Visual Studio sürümü, en son olmayabilir. En son araçları ve özelliklere erişiminiz olduğundan emin olmak güncelleştirmeleri denetlemek için önerilir.
 
-- [Visual Studio güncelleştiriliyor](../install/update-visual-studio.md)
+- [Visual Studio’yu güncelleştirme](../install/update-visual-studio.md)
 
 ### <a name="manual-installation"></a>El ile yükleme
 
@@ -77,7 +77,7 @@ Visual Studio ile Unity 2018.1 başlayarak, varsayılan harici kod Düzenleyicis
 
 1. Visual Studio içinde seçildikten sonra **dış betik Düzenleyicisi** listesinde, onaylayın **Düzenleyici ekleme** onay kutusunun seçili.
 
-1. Yapılandırma işlemini tamamlamak için Tercihler iletişim kutusunu kapatın.
+1. Kapat **tercihleri** yapılandırma işlemini tamamlamak için iletişim.
 
 ## <a name="support-for-older-versions"></a>Eski sürümleri için destek
 
@@ -93,4 +93,4 @@ Visual Studio ile Unity 2018.1 başlayarak, varsayılan harici kod Düzenleyicis
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
- Çalışmak ve Unity projenizde Visual Studio hata ayıklama hakkında bilgi edinmek için [Unity için Visual Studio araçları kullanarak](../cross-platform/using-visual-studio-tools-for-unity.md).
+ Çalışmak ve Unity projenizde Visual Studio hata ayıklama hakkında bilgi edinmek için [Unity için Visual Studio Araçları](../cross-platform/using-visual-studio-tools-for-unity.md).

@@ -9,18 +9,18 @@ description: Yöneticiler abonelere lisansları nasıl atayabilirsiniz öğrenin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178406"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251711"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalında lisansları atama
 
 Visual Studio abonelikleri Yöneticisi olarak, abonelikleri bireysel kullanıcılar ve kullanıcı gruplarını atamak için Yönetici portalını kullanabilirsiniz.
 
-Kullanıcı grupları için abonelikler için saat veya kullanım atayabilirsiniz **toplu ekleme** aboneleri abonelik bilgileriyle listesini hızla ve kolayca karşıya yüklemek için özellik. 
+Kullanıcı grupları için abonelikler için saat veya kullanım atayabilirsiniz **toplu ekleme** hızla ve kolayca listesini abone ve abonelik bilgilerini karşıya yüklemek için özellik.
 
 ## <a name="individual-assignments"></a>Her bir atama
 
@@ -32,7 +32,7 @@ Abonelik avantajları erişebilmesi için yeni bir kullanıcı için bir Visual 
 
    ![Tek abone ekleme](media\add-single-subscriber.png)
 
-3. Bilgileri yeni bir abone için form alanlara girin. Kuruluşunuz Azure Active Directory kullanıyorsa, bu alan doğru kullanıcı Arama sonuçlarından seçebilmeniz için kişi geçerli dizinde bulmak için bir arama işlevi görür. Söz konusu kişinin seçtikten sonra bunların adı, oturum açma e-posta ve bildirim e-posta otomatik olarak doldurulur. 
+3. Bilgileri yeni bir abone için form alanlara girin. Kuruluşunuz Azure Active Directory kullanıyorsa, bu alan doğru kullanıcı Arama sonuçlarından seçebilmeniz için kişi geçerli dizinde bulmak için bir arama işlevi görür. Söz konusu kişinin seçtikten sonra bunların adı, oturum açma e-posta ve bildirim e-posta otomatik olarak doldurulur.
 
    ![Yeni bir bildirim e-posta adresi ekleyin](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Abonelik avantajları erişebilmesi için yeni bir kullanıcı için bir Visual 
 
   ![Excel şablonunu birden çok aboneyi karşıya yükle](media\download-template-upload-subscribers.png)
 
-  >! [NOT] Her zaman bu şablonun en son sürümünü indirin. Eski bir sürümünü kullanıyorsanız, toplu karşıya yükleme işleminiz başarısız olabilir.
+   > ! [NOT] Her zaman bu şablonun en son sürümünü indirin. Eski bir sürümünü kullanıyorsanız, toplu karşıya yükleme işleminiz başarısız olabilir.
 
 1. Excel elektronik tablosunda abonelikleri atamak istediğiniz kişiler için bilgilerle alanları doldurun. (*Başvuru* isteğe bağlı bir alandır.) Yerel olarak bitirdikten sonra dosyayı kaydedin.
 

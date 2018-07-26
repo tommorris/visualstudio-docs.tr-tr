@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f9f233b5f43555f86f0a49c5e5853cad6d7456b1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 2a8851a48d1629b5324d0eb7615c2f2c9f2719e0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924430"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251861"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio'da Xamarin.Forms ile uygulama oluşturmaya yönelik temel bilgileri öğrenin
 
@@ -55,11 +55,11 @@ Bu adımlar paylaşılan kod için bir .NET Standard sınıf kitaplığı ve iki
 
     Bir şablon yoksa, Xamarin'i yükleyin veya Visual Studio 2017 özelliği etkinleştirmeniz gerekebilir. Bkz: [Kurulum ve yükleme](../cross-platform/setup-and-install.md).
 
-2.  Tamam'a tıkladıktan sonra bazı seçenekler seçme fırsatı sahip olacaksınız. Çekme **boş uygulama** ve **.NET Standard**:
+2.  ' I tıklattıktan sonra **Tamam**, bazı seçenekler seçme fırsatı sahip olacaksınız. Çekme **boş uygulama** ve **.NET Standard**:
 
     ![Yeni bir Çapraz Platform uygulaması projesi oluşturma](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
 
-3.  Çözümü oluşturmak için Tamam'a tıkladıktan sonra dört projeleri içeren bir çözüm gerekir:
+3.  ' I tıklattıktan sonra **Tamam** çözümü oluşturmak için dört proje içeren bir çözüm gerekir:
 
     -   **WeatherApp**: Burada, dahil olmak üzere genel iş mantığı ve UI kodunu kullanarak Xamarin.Forms platformlar arasında paylaşılan kod yazma .NET Standard kitaplığı.
 
@@ -118,7 +118,7 @@ Aşağıdaki adımlar bu durumda, hava durumu hizmetinden veri depolamak ve eri�
 
 1.  Sağ **WeatherApp** seçin ve proje **Ekle > sınıfı...** . İçinde **Yeni Öğe Ekle** iletişim kutusunda, dosya adı **Weather.cs**. Bu sınıf, hava durumu verileri hizmetten alınan verileri depolamak için kullanacaksınız.
 
-2.  Tüm içeriğini değiştirin **Weather.cs** aşağıdaki kod ile:
+2.  Tüm içeriğini değiştirin *Weather.cs* aşağıdaki kod ile:
 
     ```csharp
     namespace WeatherApp
@@ -274,7 +274,7 @@ Xamarin.Forms, .NET Standard Kitaplığı'nda paylaşılan kullanıcı Arabirimi
     }
     ```
 
-4.  Açmak için **WeatherPage** uygulaması başlatıldığında ilk ekran varsayılan oluşturucu değiştirin **App.xaml.cs** aşağıdaki kod ile:
+4.  Açmak için **WeatherPage** uygulaması başlatıldığında ilk ekran varsayılan oluşturucu değiştirin *App.xaml.cs* aşağıdaki kod ile:
 
     ```csharp
     public App()
@@ -406,7 +406,7 @@ Uygulamanızı otomatik olarak yerel bir görünümüne sahip olacak şekilde Xa
 
      Burada gösterilmez, ancak kullanabilirsiniz `OnPlatform` uygulamanın üzerinde çalıştığı geçerli platforma özgü bir özellik değeri seçmek için XAML dosyalarındaki etiket (bkz [temel XAML sözdizimi](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax/).) Arka plan kod dosyasında, uygulamanın çalıştığı karşılaştırarak platformdan belirleyebilirsiniz [ `Device.RuntimePlatform` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Device.RuntimePlatform/) tanımlı sabitler özelliğiyle [ `Device` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) adlısınıfı[ `Device.iOS` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.iOS/), [ `Device.Android` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.Android/), ve [ `Device.UWP` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.UWP/).
 
-2.  İçinde **WeatherPage.xaml.cs**, değiştirin `GetWeatherBtn_Clicked` aşağıdaki kod ile olay işleyicisi. Bu kod doğrular, posta kodu girişi alanında ve, posta kodu için verileri alır. Ortaya çıkan sonra tüm sayfanın bağlama bağlamı ayarlar `Weather` örneği. "Tekrar arama." düğme metnini ayarlayarak, kod burada sona eriyor Kullanıcı arabiriminde her etiket bir özelliğine bağlayan `Weather` sınıfı. Ekranın bağlama bağlamı ayarlandığında bir `Weather` etiketlerin örneği, güncelleştirme otomatik olarak.
+2.  İçinde *WeatherPage.xaml.cs*, değiştirin `GetWeatherBtn_Clicked` aşağıdaki kod ile olay işleyicisi. Bu kod doğrular, posta kodu girişi alanında ve, posta kodu için verileri alır. Ortaya çıkan sonra tüm sayfanın bağlama bağlamı ayarlar `Weather` örneği. "Tekrar arama." düğme metnini ayarlayarak, kod burada sona eriyor Kullanıcı arabiriminde her etiket bir özelliğine bağlayan `Weather` sınıfı. Ekranın bağlama bağlamı ayarlandığında bir `Weather` etiketlerin örneği, güncelleştirme otomatik olarak.
 
     ```csharp
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)

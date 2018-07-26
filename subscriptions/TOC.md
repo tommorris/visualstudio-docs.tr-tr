@@ -48,6 +48,7 @@
 #### [Toplu Lisanslama İçin](volume-license-admins.md)
 ##### [VLSC Yönetici Geçişi Hakkında SSS](vlsc-admin-faq.md)
 ##### Kuruluşunuzu Ekleme
+###### [Geçiş Sonrası Ekleme](post-migration-onboarding.md)
 ###### [E-posta İletişimlerini Ekleme](volume-license-onboarding-email.md)
 ###### [PCN’nizi Bulma](find-pcn.md)
 ###### [Birincil Kişinizi Bulma](find-primary-contact.md)

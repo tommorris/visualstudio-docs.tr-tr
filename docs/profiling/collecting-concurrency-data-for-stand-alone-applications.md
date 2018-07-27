@@ -1,5 +1,5 @@
 ---
-title: Profil oluşturucu komut satırını kullanarak tek başına uygulamalar için eşzamanlılık verileri toplamak | Microsoft Docs
+title: Profiler komut satırını kullanarak tek başına uygulamalar için eşzamanlılık verileri toplamak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,25 +13,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20ae775a6dc49dd2a6dd3cb391eeaf69ff7fa32c
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a7966bcffff03c23b99837ba69f591d76258146c
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335950"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276487"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak bağımsız uygulamalar için eşzamanlılık verileri toplama
-Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, kaynak çakışması veri ve gösterir, CPU kullanımı, iş parçacığı Çekişme, iş parçacığı geçiş, eşitleme gecikmeler, alanları çakışan GÇ ve diğer iş parçacığı etkinliği verilerini toplamak sağlar sistem olayları.  
+Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, kaynak Çekişme verisi ve gösterir, CPU kullanımı, iş parçacığı Çekişme, iş parçacığı geçişi, eşitleme gecikmeleri, çakışan g/ç ve diğer alanlar, iş parçacığı etkinlik verileri toplamanıza olanak sağlar sistem olayları.  
   
 
 ## <a name="common-tasks"></a>Ortak görevler  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Bir .NET Framework uygulama ve profil eşzamanlılık verileri Başlat**|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir .NET Framework uygulamasını başlatma](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
-|**C/C++ uygulama ve profil eşzamanlılık verileri Başlat**|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir yerel uygulamayı başlatma](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Bir .NET Framework uygulaması ve profili eşzamanlılık verileri Başlat**|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir .NET Framework uygulamasını başlatma](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
+|**C/C++ ve profil eşzamanlılık verilerini Başlat**|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir yerel uygulamayı başlatma](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
 |**Çalışan bir .NET Framework uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir .NET Framework uygulamasına profil oluşturucu ekleme](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|  
-|**Bir çalışan C/C++ uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: yerel bir uygulamaya profil oluşturucu ekleme ve eşzamanlılık verileri toplama](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Çalışan bir C/C++ uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: yerel bir uygulamaya profil oluşturucu ekleme ve eşzamanlılık verileri toplama](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler
   
@@ -39,19 +39,19 @@ Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Örnekleme yöntemini kullanarak profil**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**İzleme metodunu kullanarak profil**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
-|**.NET bellek ayırma ve atık toplama profil**|-   [.NET Framework bellek verileri toplama](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
+|**Örnekleme yöntemiyle profili**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**İzleme metodunu kullanarak profili**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
+|**.NET bellek ayırma ve atık koleksiyon profili**|-   [.NET Framework bellek verileri toplama](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
 |**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-### <a name="profile-concurrency-issues"></a>Profil eşzamanlılık sorunları  
+### <a name="profile-concurrency-issues"></a>Profili eşzamanlılık sorunları  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
 |**Profil ASP.NET uygulamaları**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
-|**Profil Hizmetleri**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
+|**Profil hizmetler**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### <a name="analyze-concurrency-data-views-and-reports"></a>Eşzamanlılık veri görünümleri ve raporları analiz eder.  
+### <a name="analyze-concurrency-data-views-and-reports"></a>Eşzamanlılık veri görünümleri ve raporları analiz edin  
  [Kaynak çakışması veri görünümleri](../profiling/resource-contention-data-views.md)  
   
  [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)  

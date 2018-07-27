@@ -1,7 +1,7 @@
 ---
-title: Azure App Service'e bir Python uygulama yayımlama
-description: Nasıl bir Python web uygulamasından doğrudan Azure uygulama hizmeti için web.config dosyası için gerekli içerik dahil olmak üzere Visual Studio yayımlanır.
-ms.date: 09/27/2017
+title: Azure App Service'te bir Python uygulaması yayımlama
+description: Web.config dosyası için gerekli içeriği de dahil olmak üzere Visual Studio'da Python web uygulaması Azure App Service'e doğrudan yayımlanacağını.
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,74 +12,77 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 249774da4ef088ae1f8a0b11c932d7ed92d1bcde
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032248"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310104"
 ---
 # <a name="publishing-to-azure-app-service"></a>Azure App Service’e yayımlama
 
-Visual Studio doğrudan Azure App Service'e bir Python web uygulaması yayımlama yeteneği sağlar. Azure uygulama hizmeti yayımlamayı anlamına gelir sunucuya gerekli dosyaları kopyalanıyor ve uygun bir ayar `web.config` nasıl uygulamanızı başlatmak web sunucusuna bildirir dosya.
+> [!Important]
+> Azure App Service'e Python uygulamaları dağıtımı Linux için Visual Studio şu anda desteklenmiyor. Microsoft, Windows üzerinde App Service'te Python kullanımdan kaldırmaya planlamaktadır. Güncelleştirmeler kullanılabilir olduğunda bu makalede yayımlanacak. Bu arada, kapsayıcıları kullanarak Linux üzerinde App Service'e dağıtabilirsiniz. Daha fazla bilgi için [kapsayıcılar için Web App'e bir Python web uygulaması dağıtma](/azure/app-service/containers/quickstart-python).
 
-Yayımlama işlemi, Visual Studio 2015 ve Visual Studio 2017 arasında farklılık gösterir. Özellikle, Visual Studio 2015 oluşturulmasını da dahil olmak üzere bu adımlardan bazıları otomatikleştirir `web.config`, ancak bu Otomasyon uzun vadeli esneklik ve denetim sınırlar. Visual Studio 2017 daha fazla el ile yapılacak adımlar gerektirir, ancak Python ortamınız üzerinde daha kesin denetim sağlar. Her iki seçenek aşağıda açıklanmıştır.
+Visual Studio, doğrudan Azure App Service'e Python web uygulaması yayımlama olanağı sağlar. Azure App Service'e yayımlama anlamına gelir sunucuya gerekli dosyaları kopyalanıyor ve uygun bir ayar `web.config` uygulamanızı başlatmak nasıl web sunucusuna yönlendiren dosya.
+
+Yayımlama işlemi, Visual Studio 2017 ve Visual Studio 2015 arasında farklılık gösterir. Özellikle, Visual Studio 2015 oluşturulmasını da dahil olmak üzere bu adımlardan bazıları otomatikleştirir `web.config`, ancak bu Otomasyon uzun vadeli esneklik ile denetim sınırlar. Visual Studio 2017, daha fazla el ile yapılacak adımlar gerekli ancak Python ortamınız üzerinde daha kesin denetim sağlar. Her iki seçenek aşağıda açıklanmıştır.
 
 > [!Note]
-> Visual Studio 2015 ve Visual Studio 2017 arasındaki değişiklikleri arka planda için bkz: blog yayını, [Visual Studio 2017 Azure'da Yayımla](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
+> Blog gönderisi, Visual Studio 2015 ve Visual Studio 2017 arasındaki değişiklikleri üzerinde arka plan bilgileri için bkz. [Visual Studio 2017'de Azure'da Yayımla](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu kılavuz için Bottle, Flask ve Django çerçevesinde tabanlı bir web uygulaması projesi gerekir. Henüz bir proje yok ve yayımlama işlemi denemek istiyorsanız bir basit test projesi gibi oluşturun:
+Bu kılavuz için Bottle, Flask ve Django çerçevelerini temel alan bir web uygulaması projesi gerekir. Henüz bir proje yok ve yayımlama işlemi deneyin istiyorsanız, bir basit bir test projesi şu şekilde oluşturun:
 
-1. Visual Studio'da seçin **Dosya > Yeni > Proje**, "Bottle" için arama yapın, seçin **Bottle Web projesi**belirtin ve ad proje için bir yol tıklatıp **Tamam**. (Bottle şablonu ile Python geliştirme iş yükü bulunur; bkz [yükleme](installing-python-support-in-visual-studio.md).)
+1. Visual Studio'da **Dosya > Yeni > Proje**, "Bottle için" arayın, seçin **Bottle Web projesi**belirtin ve adı ve yolu proje **Tamam**. (Bottle Python geliştirme iş yüküyle birlikte şablonudur; bkz [yükleme](installing-python-support-in-visual-studio.md).)
 
-1. Seçerek dış paketleri yüklemek için istemleri izleyin **sanal bir ortama yükleme** ve sanal ortam için tercih edilen temel yorumlayıcı. Uygulama hizmeti yüklü Python sürümü ile bu seçenek genellikle Bul.
+1. Seçerek dış paketleri yüklemek için istemleri izleyin **sanal bir ortama yükleme** ve sanal ortam için tercih edilen temel yorumlayıcı. Genellikle bu seçenek yüklü üzerinde App Service'e Python sürümü ile Bul.
 
 1. F5 tuşuna basarak veya seçerek projeyi yerel olarak test **hata ayıklama > hata ayıklamayı Başlat**.
 
-## <a name="create-an-azure-app-service"></a>Bir Azure uygulama hizmeti oluşturma
+## <a name="create-an-azure-app-service"></a>Bir Azure App Service oluştur
 
-Yayımlama için bir hedef uygulama hizmeti gerektirir. Bu amaç için bir Azure aboneliği kullanarak bir uygulama hizmeti oluşturabilir veya geçici bir siteyi kullanabilirsiniz.
+Azure'da yayımlamak için bir hedef App Service gerektirir. Bu amaç için bir Azure aboneliğini kullanarak bir App Service oluşturabilir veya geçici bir site kullanabilirsiniz.
 
-Zaten bir aboneliğiniz yoksa, başlayan bir [ücretsiz tam Azure hesap](https://azure.microsoft.com/free/), Azure Hizmetleri için geniştir iadeleri içerir. Ayrıca olmayı göz önünde bulundurun [Visual Studio geliştirme Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), hangi size $25 kredi tam yıl her ay.
+Bir abonelik daha önce yoksa başlayan bir [ücretsiz tam Azure hesap](https://azure.microsoft.com/free/), Azure Hizmetleri için Cömert krediler içerir. Ayrıca kaydolmak için gerekli göz önünde bulundurun [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), size sağlayan 25 ABD Doları değerinde kredi tam bir yıl boyunca her ay.
 
 > [!Tip]
-> Hesabınızı doğrulamak kredi kartı için Azure ister rağmen kart ücretlendirilir değil. Ayrıca bir [harcama sınırı](/azure/billing/billing-spending-limit) hiçbir ek ücret gerçekleşmesini garanti etmek için ücretsiz kredinizi eşittir. Ayrıca, Azure ücretsiz uygulama hizmeti sonraki bölümde açıklandığı gibi basit bir sınama uygulamaları için idealdir planı katmanı sağlar.
+> Azure hesabınızı doğrulamak bir kredi kartı için soran olsa da, kart ücretlendirilmez. Ayrıca bir [harcama limiti](/azure/billing/billing-spending-limit) herhangi bir ek ücret gerçekleşmesini sağlamak için ücretsiz kredilerinizi eşittir. Ayrıca, Azure ücretsiz bir App Service sonraki bölümde açıklandığı gibi basit bir test uygulamaları için idealdir planı katmanı sağlar.
 
 ### <a name="using-a-subscription"></a>Bir aboneliği kullanma
 
-Bir etkin Azure aboneliği ile bir uygulama hizmeti boş bir Web uygulaması ile aşağıdaki gibi oluşturun:
+Bir etkin Azure aboneliği ile bir App Service ile bir boş Web uygulaması gibi oluşturun:
 
-1. Adresinde oturum açın [portal.azure.com](https://portal.azure.com).
-1. Seçin **+ yeni**seçeneğini belirleyip **Web + mobil** arkasından **Web uygulaması**.
-1. Web uygulaması için bir ad belirtin, bırakın **kaynak grubu** "Yeni Oluştur" için ve **Windows** işletim sistemi olarak.
-1. Seçin **App service planı/konumu**seçin **Yeni Oluştur**ve bir ad ve konum belirtin. Ardından **fiyatlandırma katmanı**, doğru aşağı kaydırın ve seçin **F1 ücretsiz** planlama, basın **seçin**, ardından **Tamam** ve ardından **Oluşturma**.
-1. (İsteğe bağlı) Uygulama hizmeti oluşturulduktan sonra dosyayı bulun, seçin **Get yayımlama profili**ve dosyayı yerel olarak kaydedin.
+1. Oturum açmak [portal.azure.com](https://portal.azure.com).
+1. Seçin **+ yeni**, ardından **Web + mobil** ardından **Web uygulaması**.
+1. Web uygulaması için bir ad belirtin, bırakın **kaynak grubu** "Yeni Oluştur", için ve **Windows** işletim sistemi olarak.
+1. Seçin **App service planı/konumu**seçin **Yeni Oluştur**ve bir ad ve konum belirtin. Ardından **fiyatlandırma katmanı**, aşağı kaydırın ve **F1 ücretsiz** planlayın, basın **seçin**çizgidir **Tamam** ve ardından **Oluşturma**.
+1. (İsteğe bağlı) App Service oluşturulduktan sonra bu sayfaya gidin, seçin **yayımlama profili Al**ve yerel olarak kaydedin.
 
-### <a name="using-a-temporary-app-service"></a>Geçici bir uygulama hizmeti kullanma
+### <a name="using-a-temporary-app-service"></a>Geçici bir App Service'ı kullanma
 
-Geçici bir uygulama hizmeti bir Azure aboneliğine gerek duymadan aşağıdaki gibi oluşturun:
+Geçici bir App Service gibi bir Azure aboneliğine gerek duymadan oluşturun:
 
-1. Tarayıcınızı açın [try.azurewebsites.net](https://try.azurewebsites.net).
-1. Seçin **Web uygulaması** uygulama türü için ardından **sonraki**.
-1. Seçin **boş Site**, ardından **oluşturma**.
-1. Tercih ettiğiniz sosyal olarak oturum açma bilgileriyle oturum açın ve kısa bir süre sonra sitenizin görüntülenen URL'de hazırdır.
-1. Seçin **yayımlama profili indirme** kaydedip `.publishsettings` daha sonra kullanmak dosya.
+1. Tarayıcınızda [try.azurewebsites.net](https://try.azurewebsites.net).
+1. Seçin **Web uygulaması** için uygulama türü, ardından **sonraki**.
+1. Seçin **boş Site**çizgidir **Oluştur**.
+1. Tercih ettiğiniz sosyal olarak oturum açma bilgilerinizle oturum açın ve kısa bir süre sonra sitenizi görüntülenen URL'SİNDE hazırdır.
+1. Seçin **yayımlama profilini indirin** kaydedip `.publishsettings` daha sonra kullanacağınız dosya.
 
-## <a name="configure-python-on-azure-app-service"></a>Azure uygulama hizmeti Python yapılandırın
+## <a name="configure-python-on-azure-app-service"></a>Azure App Service'te Python'u yapılandırma
 
-Bir uygulama hizmeti boş bir sahip olduktan sonra Web çalışan uygulama (veya aboneliğinizdeki ücretsiz bir sitede), açıklandığı gibi Python seçilen sürümünü yükleyin [yönetme Python Azure App Service'te](managing-python-on-azure-app-service.md). Visual Studio 2017 yayımlama için bu makalede anlatıldığı gibi olan site uzantısı yüklü Python yorumlayıcı tam yolunu kaydedin.
+Sonra boş bir App Service Web çalışan uygulama (veya aboneliğinizdeki ücretsiz sitesinde), açıklandığı gibi seçilen bir Python sürümünü yükleyin [Azure App Service'te Python'u yönetme](managing-python-on-azure-app-service.md). Visual Studio 2017'den yayımlama için olan site uzantısı makalesinde açıklandığı gibi yüklü Python yorumlayıcısı tam yolunu kaydedin.
 
-İsterseniz, ayrıca yükleyebilirsiniz `bottle` işlemi bu yönergeleri kullanarak diğer parçası Bu izlenecek adımları şekilde, paketin yüklü olarak paketi.
+İsterseniz de yükleyebilirsiniz `bottle` işlemi bu yönergeleri kullanarak bu izlenecek yolda bölümü diğer adımlar gibi paketin yüklü olduğu paketi.
 
-## <a name="publish-to-app-service---visual-studio-2017"></a>Uygulama hizmeti - Visual Studio 2017 yayımlama
+## <a name="publish-to-app-service---visual-studio-2017"></a>App Service - Visual Studio 2017 yayımlama
 
-Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki yalnızca dosyaları yayımlama. Bu nedenle, sunucu ortamı yapılandırmak için gerekli dosyaları oluşturmak için gereklidir.
+Visual Studio 2017 kopyalar, Azure App Service'e sunucuya projenizdeki yalnızca dosyalar yayımlanıyor. Bu nedenle, sunucu ortamı yapılandırmak için gerekli dosyaları oluşturmak için gereklidir.
 
-1. Visual Studio'da **Çözüm Gezgini**, projeye sağ tıklayın ve seçin **Ekle > Yeni öğe...* . Görüntülenen iletişim kutusunda, "Azure web.config (Fast CGI)" şablonu ve select Tamam seçme. Bu oluşturur bir `web.config` proje kök dosyasında.
+1. Visual Studio'da **Çözüm Gezgini**, projeye sağ tıklayıp seçin **Ekle > Yeni öğe...* . Görüntülenen iletişim kutusunda Tamam'ı seçin ve "Web.config Pro Azure (Fast CGI)" şablonu seçme. Bu, oluşturur bir `web.config` proje kökünüze dosyasında.
 
-1. Değiştirme `PythonHandler` girişi `web.config` böylece sunucuda Python yükleme yolu eşleşen (bkz [IIS yapılandırma başvurusu](https://www.iis.net/configreference) (IIS.NET) tam Ayrıntılar için). Örneğin, Python 3.6.1 x64 giriş aşağıdaki gibi görünmelidir:
+1. Değiştirme `PythonHandler` girişi `web.config` sunucuya Python yükleme yolu eşleşmesi (bkz [IIS yapılandırma başvurusu](https://www.iis.net/configreference) (IIS.NET) hakkında tam Ayrıntılar için). Örneğin, Python 3.6.1 x64 giriş aşağıdaki gibi görünmelidir:
 
     ```xml
     <system.webServer>
@@ -93,130 +96,130 @@ Azure App Service için Visual Studio 2017 kopyalarından sunucuya projenizdeki 
 
 1. Ayarlama `WSGI_HANDLER` girişi `web.config` framework için uygun şekilde kullanmakta olduğunuz:
 
-    - **Bottle**: sonra parantez eklemek `app.wsgi_app` aşağıda gösterildiği gibi. Bu nesne bir işlev olduğundan bu gereklidir (bkz: `app.py`) yerine bir değişkeni:
+    - **Bottle**: sonra parantez ekleyin `app.wsgi_app` aşağıda gösterildiği gibi. Bir işlev, nesne olduğu için bu gereklidir (bkz `app.py`) bir değişken yerine:
 
         ```xml
         <!-- Bottle apps only -->
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: değişiklik `WSGI_HANDLER` değeri `<project_name>.app` burada `<project_name>` projenizin adını eşleşir. Bakarak tam tanımlayıcı bulabilirsiniz `from <project_name> import app` deyiminde `runserver.py`. Örneğin, "FlaskAzurePublishExample" adlı projesi, giriş şu şekilde görünür:
+    - **Flask**: değişiklik `WSGI_HANDLER` değerini `<project_name>.app` burada `<project_name>` projenizin adıyla aynıdır. Bakarak tam tanımlayıcısını bulabilirsiniz `from <project_name> import app` deyiminde `runserver.py`. Örneğin, proje "FlaskAzurePublishExample" ise, giriş şu şekilde görünür:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: iki değişiklik için gereken `web.config` Django projeleri için. İlk olarak, değişiklik `WSGI_HANDLER` değeri `django.core.wsgi.get_wsgi_application()` (nesne `wsgi.py` dosyası):
+    - **Django**: iki değişiklik için gereken `web.config` Django projeler için. İlk olarak değiştirmek `WSGI_HANDLER` değerini `django.core.wsgi.get_wsgi_application()` (nesne `wsgi.py` dosyası):
 
         ```xml
         <!-- Django apps only -->
         <add key="WSGI_HANDLER" value="django.core.wsgi.get_wsgi_application()"/>
         ```
 
-        İkinci olarak, için aşağıda aşağıdaki girişi ekleyin `WSGI_HANDLER`değiştirerek `DjangoAzurePublishExample` projenizin adına sahip:
+        İkinci olarak, için aşağıda şu girişi ekleyin `WSGI_HANDLER`, değiştirmeyi `DjangoAzurePublishExample` projenizin adı:
 
         ```xml
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Yalnızca Django uygulamaları**: içinde Django projenin `settings.py` dosya, site URL'si etki alanınıza ekleme `ALLOWED_HOSTS` aşağıda gösterildiği gibi 'vspython test 02.azurewebsites .net', URL'SİYLE Elbette değiştirin:
+1. **Yalnızca Django uygulamaları**: içinde Django projesinin `settings.py` site URL'si etki alanınızı ekleyin `ALLOWED_HOSTS` aşağıda gösterildiği gibi 'vspython test 02.azurewebsites .net' URL'niz ile doğal değiştirme:
 
     ```python
     # Change the URL to your specific site
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    Hata dizi sonuçlarında URL'nizi eklemek için hata "DisallowedHost / geçersiz HTTP_HOST başlığı: '\<site URL'si\>'. Eklemeniz gerekebilir '\<site URL'si\>' ALLOWED_HOSTS için. "
+    Hatalı dizi sonuçlarını URL'nizi ekleme hatası "DisallowedHost / geçersiz HTTP_HOST başlığı: '\<site URL'si\>'. Eklemeniz gerekebilir '\<site URL'si\>' için ALLOWED_HOSTS. "
 
-    Dizi boşsa, Django 'localhost' otomatik olarak sağlar, ancak üretim URL'nizi ekleyerek bu yetenekleri kaldırır unutmayın. Bu nedenle, ayrı geliştirme ve üretim bakımını yapmak isteyebileceğiniz kopyalar için `settings.py`, ya da çalışma süresi değerleri denetlemek için ortam değişkenlerini kullanın.
+    Boş bir dizidir, Django 'localhost' otomatik olarak tanır, ancak üretim URL'nizi ekleyerek bu yetenekleri kaldırır unutmayın. Bu nedenle ayrı geliştirme ve üretim korumak isteyebilirsiniz, kopyalar için `settings.py`, veya çalışma zamanı değerlerini denetlemek için ortam değişkenlerini kullanın.
 
-1. İçinde **Çözüm Gezgini**, projenizin aynı adlı klasörü genişletin, sağ `static` klasöründe seçin **Ekle > Yeni öğe...** , "Azure statik web.config dosyaları" şablonunu seçin ve Seç **Tamam**. Bu eylem başka oluşturur `web.config` içinde `static` bu klasör için işleme Python devre dışı bırakır klasör. Bu yapılandırma, varsayılan web sunucusu için Python uygulama kullanmak yerine statik dosyaları için istekleri gönderir.
+1. İçinde **Çözüm Gezgini**, projenizi aynı adlı klasörü genişletin, sağ `static` klasörüne **Ekle > Yeni öğe...** , "Azure statik web.config dosyaları" şablonu seçip **Tamam**. Bu eylem başka oluşturur `web.config` içinde `static` bu klasör için işleme Python devre dışı bırakan bir klasör. Bu yapılandırma, varsayılan web sunucusu yerine kullanarak Python uygulama statik dosyaları için istekleri gönderir.
 
-1. Visual Studio, projenizin sonra kaydedin **Çözüm Gezgini**, projeye sağ tıklayın ve seçin **Yayımla**.
+1. Visual Studio, projenizi kaydedin **Çözüm Gezgini**, projeye sağ tıklayıp seçin **Yayımla**.
 
-    ![Komut bir projenin bağlam menüsünde Yayımla](media/template-web-publish-command.png)
+    ![Bir projenin bağlam menüsünden komut yayımlama](media/template-web-publish-command.png)
 
-1. İçinde **Yayımla** görünen sekmesini yayımlama hedefi seçin:
+1. İçinde **Yayımla** görüntülenen sekmesini yayımlama hedefi seçin:
 
-    a. Azure aboneliğiniz: seçin **Microsoft Azure App Service**, ardından **var olanı Seç** arkasından **Yayımla**. Uygulama hizmeti ve uygun abonelik seçebilirsiniz bir iletişim kutusu görüntülenir. Uygulama hizmeti görünmüyorsa, indirilen yayımlama profili için geçici bir uygulama hizmeti aşağıda açıklandığı gibi kullanın.
+    a. Azure aboneliğinizi: seçin **Microsoft Azure App Service**, ardından **var olanı Seç** ardından **Yayımla**. App service ve uygun aboneliği seçebilirsiniz bir iletişim kutusu görüntülenir. App Service görünmüyorsa, geçici bir APp Service için aşağıda açıklandığı gibi indirilen yayımlama profilini kullanın.
 
-    ![Azure 1. adım için Visual Studio 2017 mevcut abonelikleri yayımlama](media/tutorials-common-publish-1a-2017.png)
+    ![Azure 1. adım için Visual Studio 2017, mevcut aboneliklerinizi yayımlama](media/tutorials-common-publish-1a-2017.png)
 
-    b. Geçici bir uygulama hizmeti üzerinde try.azurewebsites.net kullanıyorsanız veya aksi halde bir yayımlama profili kullanmak gerekirse, seçin **>** bulmak için Denetim **içe profil**, bu seçenek, ardından seçin seçin **Yayımla**. Bu konumunu ister `.publishsettings` dosyasını indirdiğiniz daha önce.
+    b. Geçici bir App Service üzerinde try.azurewebsites.net kullanıyorsanız veya aksi halde bir yayımlama profili kullanmanız gerekir, seçin **>** bulmak için Denetim **profili içeri aktar**, bu seçenek, ardından seçin seçin **Yayımla**. Bu konumu için ister `.publishsettings` dosyasını daha önce indirdiğiniz.
 
-    ![Azure 1. adım için Visual Studio 2017 geçici uygulama hizmeti yayımlama](media/tutorials-common-publish-1b-2017.png)
+    ![Azure 1. adım için Visual Studio 2017, geçici app Service'e yayımlama](media/tutorials-common-publish-1b-2017.png)
 
-1. Visual Studio yayımlama durumu "Web yayımlama etkinliğini" penceresinde ve yayımlama penceresinde görüntüler. Yayımlama tamamlandıktan sonra varsayılan tarayıcı site URL'sini açar. URL de Yayımla penceresinde görüntülenir.
+1. Visual Studio, bir "Web yayımlama etkinlik" penceresinde ve yayımlama penceresinde Yayımlama durumunu görüntüler. Yayımlama tamamlandıktan sonra varsayılan tarayıcı site URL'sini açar. URL'yi Yayımla penceresinde da gösterilir.
 
-1. Tarayıcı oturum açtığında, "İç sunucu hatası oluştuğundan sayfa görüntülenemiyor." iletisini görürseniz Bu ileti, Python ortamınıza sunucu tam olarak, bu durumda aşağıdaki adımları uygulayın yapılandırılmadığını gösterir:
+1. Tarayıcı açıldığında, "İç sunucu hatası oluştuğundan sayfası görüntülenemiyor." iletisini görebilirsiniz. Bu ileti, sunucu üzerinde Python ortamınızı tam olarak, bu durumda aşağıdaki adımları uygulayın yapılandırılmadığını gösterir:
 
-    a. Yeniden bakın [yönetme Python Azure App Service'te](managing-python-on-azure-app-service.md), Python uzantı yüklü site uygun olduğundan emin olun.
+    a. Yeniden başvuru [Azure App Service'te Python'u yönetme](managing-python-on-azure-app-service.md), uygun olmasını sağlamaktan Python uzantısı yüklü site.
 
-    b. Python yorumlayıcı yolunu denetleyin, `web.config` dosya. Yolu, seçilen site uzantısı yükleme konumunu tam olarak eşleşmelidir.
+    b. Python yorumlayıcısı içinde yolunu denetleyin, `web.config` dosya. Yolu, seçilen site uzantısı yükleme konumunu tam olarak eşleşmelidir.
 
-    c. Kudu, uygulamanızın içinde listelenen herhangi bir paket yükseltmek için konsolu `requirements.txt` dosyası: kullanılan aynı Python klasöre gidin `web.config`, gibi `/home/python361x64`, ve açıklandığı gibi aşağıdaki komutu çalıştırın [Kudu konsol](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)bölümü:
+    c. Uygulamanızın içinde listelenen herhangi bir paket yükseltmek için Kudu konsolu kullanmak `requirements.txt` dosya: kullanılan aynı Python klasöre gidin `web.config`, gibi `/home/python361x64`, ve açıklandığı gibi aşağıdaki komutu çalıştırın [Kudu konsolunda](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)bölümü:
 
     ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
-    Bu komutu çalıştırdığınızda izni hatalar görürseniz, site uzantısı klasörünüzde komutu çalıştırdığınız bir kez daha denetleyin ve *değil* bir uygulama hizmetin varsayılan Python yükleme klasöründeki. Bu varsayılan ortamları değiştirilemiyor çünkü paketleri yüklemek kesinlikle başarısız oluyor.
+    Site uzantısı klasörünüzde komutunu çalıştırıyorsanız, bu komutu çalıştırırken izin hataları görüyorsanız denetleyin ve *değil* klasöründe bir App Service'nın varsayılan Python yüklemeleri. Bu varsayılan ortamlarda değiştiremediğiniz için paketleri yüklemeye çalışmadan kesinlikle başarısız olur.
 
-    d. Ayrıntılı hata çıktı için aşağıdaki satırı ekleyin `web.config` içinde `<system.webServer>` daha ayrıntılı hata çıkışı sağlar düğümü:
+    d. Ayrıntılı hata çıktısı, aşağıdaki satırı ekleyin `web.config` içinde `<system.webServer>` düğümü, daha ayrıntılı hata çıktısı sağlar:
 
     ```xml
     <httpErrors errorMode="Detailed"></httpErrors>
     ```
 
-    e. Uygulama hizmeti yeni paketler yüklendikten sonra yeniden deneyin. Yeniden başlatma değiştirilirken gerekli değil `web.config`, uygulama hizmeti otomatik yaptığı gibi her yeniden `web.config` değişiklikler.
+    e. App Service, yeni paketler yüklendikten sonra yeniden başlatmayı deneyin. Yeniden başlatma değiştirilirken gerekli değil `web.config`, App Service otomatik olarak herhangi bir zamanda yeniden `web.config` değişiklikler.
 
     > [!Tip]
-    > Uygulamanızın herhangi bir değişiklik yaparsanız `requirements.txt` dosya, artık bu dosyada listelenen paketleri yüklemek için yeniden Kudu konsol kullandığınızdan emin olun.
+    > Uygulamanızın herhangi bir değişiklik yaparsanız `requirements.txt` dosya, yeniden artık bu dosyada listelenen herhangi bir paket yüklemek için Kudu Konsolu kullandığınızdan emin olun.
 
-1. Sunucu ortamı tam olarak yapılandırdıktan sonra tarayıcıda sayfayı yenileyin ve web uygulaması görünmelidir.
+1. Sunucu ortamı tam olarak yapılandırdıktan sonra tarayıcı içinde sayfayı yenileyin ve web uygulaması görünmelidir.
 
-    ![Uygulama hizmeti Bottle, Flask ve Django uygulamaları yayımlama sonuçları](media/azure-publish-results.png)
+    ![Bottle, Flask ve Django uygulamaları App Service'te yayımlama sonuçları](media/azure-publish-results.png)
 
-## <a name="publishing-to-app-service---visual-studio-2015"></a>Uygulama hizmeti - Visual Studio 2015 için yayımlama
+## <a name="publishing-to-app-service---visual-studio-2015"></a>App Service'e - Visual Studio 2015 yayımlama
 
 > [!Note]
-> Bu işlemin kısa bir video bulunabilir [Visual Studio Python eğitmen: bir Web sitesi oluşturmanın](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s).
+> Bu işlemin kısa bir video bulunabilir [Visual Studio Python Öğreticisi: bir Web sitesi oluşturmanın](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s).
 
-1. İçinde **Çözüm Gezgini**, proje seçme sağ **Yayımla**.
+1. İçinde **Çözüm Gezgini**, Proje Seç sağ **Yayımla**.
 
 1. İçinde **Yayımla** iletişim kutusunda **Microsoft Azure App Service**:
 
-  ![Azure adım 1 yayımlama](media/tutorials-common-publish-1.png)
+  ![Adım 1 Azure yayımlama](media/tutorials-common-publish-1.png)
 
 1. Bir hedef seçin:
 
-    - Bir Azure aboneliğiniz varsa, seçin **Microsoft Azure App Service** yayımlama hedefi olarak ardından aşağıdaki iletişim kutusunda var olan bir uygulama hizmetini seçin veya seçin **yeni** yeni bir tane oluşturmak için.
-    - Try.azurewebsites.net geçici bir siteden kullanıyorsanız, seçin **alma** göz sonra yayımlama hedefi olarak `.publishsettings` dosyası karşıdan site ve select **Tamam**.
+    - Azure aboneliğiniz varsa, seçin **Microsoft Azure App Service** yayımlama hedefi olarak sonra aşağıdaki iletişim kutusunda, var olan bir App Service seçin veya seçin **yeni** yeni bir tane de oluşturabilirsiniz.
+    - Try.azurewebsites.net geçici bir siteden kullanıyorsanız seçin **alma** tarayabileceği ardından yayımlama hedefi olarak `.publishsettings` dosyasını indirdiğiniz site ve select **Tamam**.
 
-1. Uygulama hizmeti ayrıntıları görünür **Yayımla** iletişim kutusu **bağlantı** sekmesini tıklatın.
+1. App Service ayrıntıları görünür **Yayımla** iletişim kutusunun **bağlantı** sekmesini tıklatın.
 
-  ![Azure adım 2 Yayımla](media/tutorials-common-publish-2.png)
+  ![Adım 2 Azure yayımlama](media/tutorials-common-publish-2.png)
 
-1. Seçin **sonraki >** ek ayarlarını gözden geçirmek için gerektiği gibi. Planlıyorsanız, [Python kodunuzu Azure üzerinde uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md), ayarlamalısınız **yapılandırma** için **hata ayıklama**
+1. Seçin **İleri >** ek ayarlarını gözden geçirmek için gerektiği şekilde. Eğer [Python kodunuzu azure'da uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md), ayarlamalısınız **yapılandırma** için **hata ayıklama**
 
-1. Seçin **yayımlama**. Uygulamanızın Azure'a dağıtıldığında, varsayılan tarayıcınız, bu sitede açılır.
+1. Seçin **yayımlama**. Uygulamanızın Azure'a dağıtıldığında, o sitede varsayılan tarayıcınızı açar.
 
-Bu işlemin bir parçası olarak, Visual Studio ayrıca aşağıdaki adımları gerçekleştirir:
+Bu işlemin bir parçası, Visual Studio ayrıca aşağıdakileri yapar:
 
-- Oluşturma bir `web.config` dosya sunucusunda uygulamanın uygun işaretçileri içeren `wsgi_app` işlev ve Python 3.4 uygulama hizmetine ait varsayılan yorumlayıcı.
-- Projenin dosyaların işlenmesini kapatmak `static` klasörü (Bu kurallardır içinde `web.config`).
+- Oluşturma bir `web.config` dosya sunucusunda uygun uygulamanın işaretçileri içeren `wsgi_app` işlev ve Python 3.4 App Service'in için varsayılan yorumlayıcı.
+- Projenin dosyaların işlenmesini Kapat `static` klasörü (Bu kurallarının mevcut olduğunu `web.config`).
 - Sanal ortam sunucuya yayımlayın.
-- Ekleme bir `web.debug.config` dosya ve hata ayıklama araçları uzaktan hata ayıklamayı etkinleştirmek için ptvsd.
+- Ekleme bir `web.debug.config` dosya ve uzaktan hata ayıklamayı etkinleştirmek için Araçlar hata ayıklama ptvsd.
 
-Daha önce belirtildiği gibi otomatik olarak bu adımları yayımlama işlemini basitleştirmek ancak Python ortamı denetlemek daha zor hale. Örneğin, `web.config` dosyası yalnızca sunucuda oluşturulan ancak projenize eklenmedi. Yayımlama işlemi de tüm sanal ortamı geliştirme bilgisayarınızdan kopyalama yerine çünkü sunucu yapılandırmasına bağlı olan daha uzun sürer.
+Daha önce belirtildiği gibi bu otomatik adımlar yayımlama işlemini basitleştirmek ancak Python ortamını denetlemek daha zor hale. Örneğin, `web.config` dosya yalnızca sunucuda oluşturulur, ancak projeye eklenmedi. Yayımlama işlemi ayrıca, tüm sanal ortam Geliştirme bilgisayarınızdan kopyalamak yerine çünkü sunucu yapılandırmasına bağlı olan daha uzun sürer.
 
-Sonunda, kendi korumak isteyebilirsiniz `web.config` dosya ve kullanma `requirements.txt` sunucuda paketleri doğrudan korumak için. Kullanarak `requirements.txt`, özellikle, geliştirme ve sunucu ortamınızı her zaman aynı garantiler.
+Kendi korumak sonunda isteyebileceğiniz `web.config` kullanın ve dosya `requirements.txt` sunucuda paketleri doğrudan korumak için. Kullanarak `requirements.txt`, özellikle, geliştirme ve sunucu ortamınızı her zaman aynı garanti eder.
 
-## <a name="remote-debugging-on-azure-app-service"></a>Azure uygulama hizmeti uzaktan hata ayıklama
+## <a name="remote-debugging-on-azure-app-service"></a>Azure App Service'te uzaktan hata ayıklama
 
-Visual Studio 2015 hata ayıklama yapılandırmasından yayımladığınızda, işlem otomatik olarak oluşturur bir `web.debug.config` dosya ve ekleyen bir `ptvsd` gerekli hata ayıklama içeren klasörü araçları.
+Visual Studio 2015 hata ayıklama yapılandırmasından yayımladığınızda, işlemi otomatik olarak oluşturur bir `web.debug.config` ekler ve dosya bir `ptvsd` gerekli hata ayıklama içeren klasör araçları.
 
-Visual Studio 2017 ile bunun yerine bu bileşenlerin doğrudan projeye ekleyin. ' Nde projeye sağ **Çözüm Gezgini**seçin **Ekle > Yeni öğe...** ve "Azure uzaktan hata ayıklama web.config" şablonunu seçin. Bir hata ayıklama `web.debug.config` dosya ve `ptvsd` aracı klasörüne projenizde görünür.
+Visual Studio 2017 ile bunun yerine bu bileşenler doğrudan projeye ekleyin. Projeye sağ **Çözüm Gezgini**seçin **Ekle > Yeni öğe...** ve "Azure uzaktan hata ayıklama web.config" şablonu seçin. Bir hata ayıklama `web.debug.config` dosya ve `ptvsd` aracının klasörüne projenizde görünür.
 
-Bu dosyalar sunucuya dağıtıldığında (otomatik olarak Visual Studio 2015; sonraki Visual Studio 2017 ile yayımladığınızda), yönergeleri izleyin [Azure uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md).
+Bu dosyalar sunucuya dağıtılan sonra (otomatik olarak Visual Studio 2015; sonraki Visual Studio 2017 ile yayımladığınızda), ilgili yönergeleri izleyebilirsiniz [Azure uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md).

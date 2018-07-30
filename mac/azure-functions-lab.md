@@ -49,7 +49,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
      Üç dosya vardır:  
         - **Host.JSON** konak genel yapılandırma seçenekleri tanımlamak için  
         - **Local.Settings.JSON** hizmet ayarlarını yapılandırmak için.  
-        -Proje şablonu ayrıca bir varsayılan HttpTrigger oluşturur. Bu Laboratuvar için silmeniz gerekir **HttpTrigger.cs** proje dosyası.  
+        - Proje şablonu ayrıca bir varsayılan HttpTrigger oluşturur. Bu Laboratuvar için silmeniz gerekir **HttpTrigger.cs** proje dosyası.  
 
     Açık **local.settings.json**. İki boş bir bağlantı dizesi ayarlarını sahip olmak için varsayılan olarak ayarlanır.
 

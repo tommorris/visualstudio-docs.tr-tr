@@ -1,6 +1,6 @@
 ---
-title: Seçme ve Python yorumlayıcılar yükleniyor
-description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılar tam bir listesi.
+title: Seçme ve Python yorumlayıcılarını yükleme
+description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılarını tam bir listesi.
 ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,56 +11,56 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: 92097e70b026a23062f7a67ff521d60312096d5c
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851857"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341852"
 ---
-# <a name="installing-python-interpreters"></a>Python yorumlayıcılar yükleme
+# <a name="install-python-interpreters"></a>Python yorumlayıcılarını yükleme
 
-Varsayılan olarak Visual Studio 2017 Python geliştirme iş yükü yükleme Python 3 (64 bit) yükler. İsteğe bağlı olarak 32-bit ve 64 bit sürümlerini Python 2, Python 3, Anaconda 2 ve Anaconda 3 ' ü yüklemek açıklandığı gibi seçebileceğiniz [yükleme](installing-python-support-in-visual-studio.md).
+Varsayılan olarak, Python geliştirme iş yükünü Visual Studio 2017'de yükleme Python 3 (64-bit) yükler. İsteğe bağlı olarak Python 2, Python 3, Anaconda 2 ve 3 Anaconda, 32-bit ve 64 bit sürümlerini yüklemek açıklandığı seçebileceğiniz [yükleme](installing-python-support-in-visual-studio.md).
 
-Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayıcılar birini el ile de yükleyebilirsiniz. Örneğin, Visual Studio yüklemeden önce Anaconda 3 yüklediyseniz, Visual Studio yükleyicisi yeniden yüklemeniz gerekmez.
+Ayrıca, herhangi bir Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayıcılarını el ile de yükleyebilirsiniz. Örneğin, Visual Studio'yu yüklemeden önce Anaconda 3 yüklü değilse, Visual Studio yükleyicisi yeniden yüklemeniz gerekmez.
 
-İçin **Visual Studio 2015 ve önceki**, yorumlayıcılar biri el ile yüklemelisiniz.
+İçin **Visual Studio 2015 veya önceki**, yorumlayıcılarını birini el ile yüklemelisiniz.
 
-Visual Studio (tüm sürümler) otomatik olarak algılar her yüklü Python yorumlayıcı ve ortamına kayıt defteri ayarına göre denetleyerek [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/). Python yüklemeleri altında bulundu genellikle `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 bit) ve `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64-bit), ardından düğümler "PythonCore" (CPython) ve "ContinuumAnalytics" (Anaconda) gibi dağıtım içinde.
+Visual Studio (tüm sürümler) otomatik olarak algılar her yüklü Python yorumlayıcısı ve ortam kayıt defteri ayarına göre kontrol ederek [CESARETLENDİRİCİ 514 - Python kayıt Windows kayıt defterinde](https://www.python.org/dev/peps/pep-0514/). Python yüklemeleri altında bulundu genellikle **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32-bit) ve **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64-bit) sonra düğümleri için içinde Dağıtım gibi **PythonCore** (CPython) ve **ContinuumAnalytics** (Anaconda).
 
-Visual Studio yüklü bir ortam algılamazsa bkz [el ile varolan bir ortama tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+Visual Studio yüklü bir ortam algılamazsa bkz [el ile bir ortamı tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio gösteren tüm bilinen ortamlarda [Python ortamları penceresi](managing-python-environments-in-visual-studio.md)ve varolan yorumlayıcılar güncelleştirmeleri otomatik olarak algılar.
+Visual Studio gösterir bilinen tüm ortamlarda [ **Python ortamları** ](managing-python-environments-in-visual-studio.md) penceresinde ve mevcut yorumlayıcılarını güncelleştirmeleri otomatik olarak algılar.
 
 | Yorumlayıcı | Açıklama |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Yerel" ve en sık kullanılan Yorumlayıcı, 32 bit ve 64 bit sürümleri (32-bit önerilir) içinde kullanılabilir. En son dil özellikleri, maksimum Python paket uyumluluk, hata ayıklama için tam destek ve birlikte çalışma içeren [IPython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](http://wiki.python.org/moin/Python2orPython3). Visual Studio 2015 ve önceki Python 3.6 desteklemez ve "Python sürümü 3.6 desteklenmiyor" hata verebilirsiniz unutmayın. Python 3.5 veya önceki kullanmak yerine. |
-| [IronPython](https://github.com/IronLanguages/ironpython2) | Bir .NET uygulaması sağlama C# /F #/ Visual Basic birlikte çalışabilirliği, Python, 32 bit ve 64 bit sürümlerinde kullanılabilir olan erişim .NET API'leri, hata ayıklama standart Python (ancak değil C++ karışık modda hata ayıklama için) ve IronPython karma / C# hata ayıklama. IronPython, ancak sanal ortamları desteklemez. |
-| [Anaconda](https://www.continuum.io) | Bir açık veri bilimi platform tarafından Python gücü ve CPython ve zor yükleme paketleri en son sürümünü içerir. Aksi takdirde karar veremez, öneririz. |
-| [PyPy](http://www.pypy.org/) | Uzun süre çalışan programlar ve performans tanımlamak burada durumlar için yararlı olan Python yüksek performans izleme JIT uyarlamasını verir ancak diğer çözümleri bulunamıyor. Visual Studio ile ancak sınırlı destek Works Gelişmiş hata ayıklama özellikleri için. |
-| [Jython](http://www.jython.org/) | Python Java sanal makine'üzerinde (JVM) uygulaması. IronPython, Jython içinde çalışan kodu benzer Java sınıfları ve kitaplıkları ile etkileşim kurabilir, ancak birçok kitaplıkları için CPython hedeflenen kullanmanız mümkün olmayabilir. Visual Studio ile ancak sınırlı destek Works Gelişmiş hata ayıklama özellikleri için. |
+| [CPython](https://www.python.org/) | "Yerel" ve en yaygın olarak kullanılan Yorumlayıcı, 32-bit ve 64-bit sürümleri (32-bit önerilir) kullanılabilir. En son dil özellikleri, en yüksek Python paket uyumluluğu, tam hata ayıklama desteği ve birlikte çalışma içerir [Ipython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](http://wiki.python.org/moin/Python2orPython3). Visual Studio 2015 veya önceki Python 3.6 desteklemez ve hata verebilir Not **desteklenmeyen python 3.6 sürümünü**. Python 3.5 veya daha önceki kullanmak yerine. |
+| [V Ironpythonu](https://github.com/IronLanguages/ironpython2) | Bir .NET uygulaması sağlama C# /F #/ Visual Basic birlikte çalışabilirliği, Python, 32-bit ve 64 bit sürümlerde kullanılabilir olan erişim .NET API'leri, standart Python hata ayıklama (ancak değil C++ karışık mod hata ayıklama için) ve karma IronPython / C# hata ayıklama. Ancak, IronPython, sanal ortamları desteklemez. |
+| [Anaconda](https://www.continuum.io) | Bir açık veri bilimi platformu Python tarafından desteklenen ve CPython ve zor yükleme paketlerinin en son sürümünü içerir. Aksi takdirde karar veremez, öneririz. |
+| [PyPy](http://www.pypy.org/) | Yüksek performans izleme JIT uzun süre çalışan programlar ve performans tanımlamak burada durumlar için iyi bir Python uygulamasıdır verir ancak diğer çözümleri bulunamıyor. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |
+| [Jython](http://www.jython.org/) | Java sanal makine'üzerinde (JVM) Python uygulaması. Benzer şekilde, IronPython, Jython içinde çalışan kod Java sınıfları ve kitaplıkları ile etkileşim kurabilir, ancak birçok kitaplıkları CPython için hedeflenen kullanmanız mümkün olmayabilir. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |
 
-Yeni formlar algılama Python ortamları için sağlamak istediğiniz geliştiriciler bkz [PTVS Ortam Algılama](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com'u).
+Algılama Python ortamları için yeni form sağlamak isteyen geliştiriciler [PTVS Ortam Algılama](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com).
 
-## <a name="moving-an-interpreter"></a>Bir yorumlayıcı taşıma
+## <a name="move-an-interpreter"></a>Yorumlayıcıyı Taşı
 
-Varolan bir yorumlayıcı dosya sistemi kullanılarak yeni bir konuma taşırsanız, Visual Studio değişikliği otomatik olarak algılamaz.
+Mevcut yorumlayıcıyı dosya sistemini kullanarak yeni bir konuma taşırsanız, Visual Studio değişiklik otomatik olarak algılamaz.
 
-- Yorumlayıcı konumunu ilk olarak belirttiyseniz, **Python ortamları** penceresinde, Düzen ortamı kullanarak **yapılandırma** yeni bir konum belirtmek için bu penceresindeki sekmesi. Bkz: [el ile varolan bir ortama tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+- Başlangıçta yorumlayıcı konumunu belirttiyseniz **Python ortamları** penceresinde sonra ortamı kullanarak düzenleyin **yapılandırma** Bu pencerede, yeni konumunu belirlemek için sekmesinde. Bkz: [el ile bir ortamı tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-- Sonra bir yükleyici programı kullanarak yorumlayıcı yüklediyseniz, yeni konumdaki yorumlayıcı yeniden yüklemek için aşağıdaki adımları kullanın:
+- Ardından bir yükleyici programı'nı kullanarak yorumlayıcı yüklü değilse, yorumlayıcı yeni konumda yeniden yüklemek için aşağıdaki adımları kullanın:
 
-  1. Python yorumlayıcı orijinal konumuna geri yükleyin.
-  2. Kayıt defteri girişlerini temizler kendi Yükleyicisi'ni kullanarak yorumlayıcı kaldırın.
-  3. İstenen konuma yorumlayıcı yeniden yükleyin.
-  4. Otomatik Algıla eski konum yerine yeni konumu Visual Studio'yu yeniden başlatın.
+  1. Python yorumlayıcısı orijinal konumuna geri yükleyin.
+  2. Kayıt defteri girişlerini temizler, Yükleyicisi'ni kullanarak yorumlayıcı kaldırın.
+  3. Yorumlayıcı istediğiniz konuma yeniden yükleyin.
+  4. Otomatik Algıla eski konumu yerine yeni konuma Visual Studio'yu yeniden başlatın.
 
-Bu işlem Visual Studio kullanır, Yorumlayıcı'nın konumu tanımlamak kayıt defteri girdileri düzgün şekilde güncelleştirilmesini sağlar. Bir yükleyici kullanarak, tüm diğer yan bulunabilecek etkileri işler.
+Bu işlem Visual Studio kullanan Yorumlayıcı'nın konumu tanımlayan kayıt defteri girdilerini düzgün şekilde güncelleştirilmesini sağlar. Bir yükleyici kullanarak, diğer yan bulunabilecek etkileri işler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Python ortamları yönetme](managing-python-environments-in-visual-studio.md)
 - [Proje için yorumlayıcıyı seçme](selecting-a-python-environment-for-a-project.md)
-- [Bağımlılıklar için requirements.txt dosyasını kullanma](managing-required-packages-with-requirements-txt.md)
+- [Bağımlılıklar için Requirements.txt dosyasını kullanma](managing-required-packages-with-requirements-txt.md)
 - [Arama yolları](search-paths.md)
 - [Python ortamları penceresi başvurusu](python-environments-window-tab-reference.md)

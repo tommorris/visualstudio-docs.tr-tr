@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 7761164182188366425a81518f3d0513361b6f19
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077850"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341696"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio kullanarak Azure App Service'e bir Web uygulaması yayımlama
 
@@ -44,6 +44,13 @@ Kullanabileceğiniz **Yayımla** Azure App Service veya Azure App Service (kapsa
 1. Seçin **oluşturma**. Visual Studio için Azure App Service uygulama dağıtır ve tarayıcınızda web uygulaması yükler. Proje özelliklerini **Yayımla** site URL'sini ve diğer ayrıntıları bölmesi gösterir.
 
     ![Yayımlama profili Özet gösteren özellik bölmesi](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>Kaynakları temizleme
+
+Önceki adımlarda, Azure kaynaklarını bir kaynak grubunda oluşturuldu. Gelecekte bu kaynaklara ihtiyaç duymayacağınızı düşünüyorsanız, kaynak grubunu silerek bunları silebilir.
+Azure portalında sol menüden seçim yapın **kaynak grupları** seçip **myResourceGroup**.
+Kaynak grubunuzun sayfasında, listelenen kaynakları silmek istediğiniz kaynaklar olduğundan emin olun.
+Seçin **Sil**, türü **myResourceGroup** metin kutusuna ve ardından **Sil**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

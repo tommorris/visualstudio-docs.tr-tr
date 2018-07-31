@@ -1,6 +1,6 @@
 ---
-title: Uzaktan hata ayıklama Python ile Azure
-description: Visual Studio bir Python uygulaması, uzaktan hata ayıklama için kullanılacak bir Azure uygulama hizmeti yapılandırmak nasıl.
+title: Azure uzaktan hata ayıklama ile Python
+description: Visual Studio'yu bir Python uygulaması, uzaktan hata ayıklama için kullanılacak bir Azure uygulama hizmetini yapılandırma
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,43 +11,45 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92fd9cf7c81b0b383a185a76eaaf5a3bfc8b93a5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057986"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341793"
 ---
-# <a name="remotely-debugging-python-code-on-azure"></a>Azure üzerinde uzaktan hata ayıklama Python kodu
+# <a name="remotely-debug-python-code-on-azure"></a>Azure'da Python kodu uzaktan hata ayıklama
 
-[Visual Studio'da Python desteği](installing-python-support-in-visual-studio.md) uzaktan hata ayıklama Azure uygulama hizmeti üzerinde çalışan Python kodu özelliğini içerir. Visual Studio hata ayıklayıcısı Protokolü HTTP üzerinden kullanıma sunan bir proxy sağlayan şekilde basit uzaktan hata ayıklama aksine, bu senaryonun hedef bilgisayarda TCP üzerinden doğrudan erişilebilir değil. Web şablonu kullanılarak otomatik olarak oluşturulan projeleri bu proxy oluşturulan yapılandırma `web.debug.config` dosya. Uzaktan hata ayıklama de etkinleştirilir [Azure uygulama hizmeti yayımlamayı] açıklandığı gibi bir hata ayıklama yapılandırması proje yayımladığınızda (publishing-python-web-applications-to-azure-from-visual-studio.md.
+[Visual Studio'da Python desteği](installing-python-support-in-visual-studio.md) üzerinde Azure App Service'te çalışan bir Python kodu uzaktan hata ayıklama özelliği içerir. Visual Studio hata ayıklayıcı Protokolü HTTP üzerinden kullanıma sunan bir proxy sağlanılır basit uzaktan hata ayıklama aksine, bu senaryo hedef bilgisayarda TCP üzerinden doğrudan erişilebilir değil. Otomatik olarak Web şablonu kullanılarak oluşturulan projeler bu proxy oluşturulan yapılandırma *web.debug.config* dosya. Uzaktan hata ayıklama da etkindir yayımladığınızda, bir **hata ayıklama** sitesinde açıklandığı projenizin yapılandırmasını [Azure App Service'e yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-Uygulama hizmetiniz için Azure uzaktan hata ayıklama web yuvalarını kullandığından, yuva etkinleştirilmelidir [Azure portal](https://portal.azure.com) giderek **ayarlar > Uygulama ayarları** ve kapatma  **Genel Ayarlar > Web yuvaları** için **üzerinde**, ardından seçerek **kaydetmek** değişikliği uygulamak için. (Unutmayın **hata ayıklama** ayarları Python hata ayıklama için uygulanmaz.)
+App service'inizin Azure uzaktan hata ayıklama web yuvalarını kullandığından, yuva etkinleştirilmelidir [Azure portalında](https://portal.azure.com) giderek **ayarları** > **uygulama ayarları**  ve kapatma **genel ayarlar** > **Web yuvaları** için **üzerinde**, ardından seçerek **Kaydet**değişikliği uygulamak için. (Unutmayın **hata ayıklama** ayarları Python hata ayıklama için uygulanmaz.)
 
 ![Azure portalında Web yuvalarını etkinleştirme](media/azure-remote-debugging-enable-web-sockets.png)
 
-Projenizi düzgün bir şekilde dağıtıldıktan sonra etkin web yuvalarını iliştirebilirsiniz uygulama hizmetinden için **Sunucu Gezgini** Visual Studio'da (**Görünüm > Sunucu Gezgini**). Sitenizi altında bulun **Azure > uygulama hizmeti** ve geçerli kaynak grubu, sağ tıklatın ve seçin **Attach hata ayıklayıcısı (Python)**. ( **Attach hata ayıklayıcı** komutu, IIS altında çalışan .NET uygulamaları için geçerlidir ve yalnızca Python uygulamanızı yanı sıra, barındırmayı .NET kod durumlarda kullanışlıdır.)
+## <a name="attach-with-server-explorer"></a>Sunucu Gezgini ile ekleme
 
-Visual Studio alabilir, doğrudan ekleme yönergeleri kümesine doğrudan aşağıda açıklandığı gibi [Sunucu Gezgini ekleme](#attaching-without-server-explorer). Görmüyorsanız, **Attach hata ayıklayıcısı (Python)** komut veya Visual Studio başarısız sitenize eklemek için bkz: [sorun giderme Azure uzaktan hata ayıklama](debugging-remote-python-code-on-azure-troubleshooting.md).
+Projenizi düzgün şekilde dağıtıldığından ve web yuvaları, etkin, iliştirebileceği App Service'ten sonra **Sunucu Gezgini** Visual Studio'daki (**görünümü** > **SunucuGezgini**). Sitenizi altında bulun **Azure** > **App Service** ve uygun kaynak grubu, sağ tıklatın ve seçin **hata ayıklayıcısı ekleme (Python)**. ( **Hata ayıklayıcı iliştirmek** komut IIS altında çalışan .NET uygulamaları için olan ve yalnızca Python uygulamanızı yanı sıra, ortak sunuculuk .NET kodu kullanışlıdır.)
 
-Ekleme başarılı olursa, Visual Studio hata ayıklayıcısı görünümüne geçirir. Araç gibi ayıklanacak işlemi gösteren bir `wss://` URI:
+Visual Studio alabilir, doğrudan bir dizi doğrudan ekleme hakkında yönergeler için aşağıda açıklanan şekilde [ek sunucu Gezgini olmadan](#attach-without-server-explorer). Görmüyorsanız, **hata ayıklayıcısı ekleme (Python)** komut veya Visual Studio başarısız sitenize eklemek için bkz: [Python ve Azure için uzaktan hata ayıklama sorun giderici](debugging-remote-python-code-on-azure-troubleshooting.md).
+
+İliştirme başarılı olursa, Visual Studio hata ayıklayıcı görünümüne geçer. Araç çubuğu gibi ayıklanan işlemin gösteren bir `wss://` URI'si:
 
 ![Bir Azure uygulama hizmeti Web sitesi hata ayıklama](media/azure-remote-debugging-attached.png)
 
-Bağlandıktan sonra hata ayıklama deneyimini genellikle birkaç kısıtlamalar hata ayıklama normal uzak aynıdır. Özellikle, gelen istekleri işleyen ve bunları Python kodu Fastcgı aracılığıyla temsilciler IIS web sunucusu 90 saniye olarak varsayılan olarak istek işleme için bir zaman aşımı vardır. İstek işleme (örneğin, bir kesme noktasında duraklatıldıktan işlemi) nedeniyle bu zaman aşımından uzun sürüyorsa, IIS hata ayıklama oturumu sona erdirme işlemi sonlandırır. 
+Bağlandıktan sonra hata ayıklama deneyimini çoğunlukla bazı kısıtlamalar hata ayıklama normal uzak aynıdır. Özellikle, gelen istekleri işleyen ve Python kodu aracılığıyla Fastcgı devreder IIS web sunucusunu 90 saniye olarak varsayılan olarak istek işleme için bir zaman aşımı vardır. İstek işleme (örneğin, bir kesme noktasında duraklatıldıktan işlemi) nedeniyle bu zaman aşımı süresinden daha uzun sürerse, IIS, hata ayıklama oturumunu sona erdirme işlemi sonlandırır. 
 
-## <a name="attaching-without-server-explorer"></a>Sunucu Gezgini ekleme
+## <a name="attach-without-server-explorer"></a>Sunucu Gezgini ekleme
 
-Hata ayıklayıcı doğrudan App Service'e eklemek için Visual Studio sitenizde dağıtır WebSocket proxy bilgileri sayfasında verilen yönergeleri izleyin `<site_url>/ptvsd` gibi `ptvsdemo.azurewebsites.net/ptvsd`. Bu sayfa ayrıca ziyaret proxy doğru şekilde yapılandırıldığını doğrular:
+App Service için doğrudan hata ayıklayıcıyı iliştirmek için Visual Studio sitenizde dağıtır WebSocket proxy bilgileri sayfasında yönergelerini izleyin  *\<site_url > / ptvsd* gibi  *ptvsdemo.azurewebsites.NET/ptvsd*. Bu sayfa ayrıca ziyaret proxy doğru şekilde yapılandırıldığını doğrular:
 
-![Azure uzaktan hata ayıklama proxy bilgileri sayfası](media/azure-remote-debugging-proxy-info-page.png)
+![Azure uzaktan hata ayıklama proxy'si bilgileri sayfası](media/azure-remote-debugging-proxy-info-page.png)
 
-Belirtildiği gibi gizli anahtarından kullanarak bir URL oluşturması `web.debug.config`, projenizin yayımlanan her zaman yeniden. Bu dosya, Çözüm Gezgini'nde varsayılan olarak gizlidir ve projenizde dahil değil, bu nedenle tüm dosyaları göster ya da ayrı bir düzenleyicide açın. Dosyayı açtıktan sonra adlı appSetting değerinde Ara `WSGI_PTVSD_SECRET`:
+Belirtildiği gibi gizli kod kullanarak bir URL oluşturun *web.debug.config*, projenizi yayımlanan her zaman yeniden. Bu dosya varsayılan olarak gizlidir **Çözüm Gezgini** ve bu nedenle tüm dosyaları göster projeye dahil değil, veya ayrı bir düzenleyicide açın. Dosyayı açtıktan sonra adlı appSetting değerinde Ara `WSGI_PTVSD_SECRET`:
 
-![Bir Azure uygulama hizmeti hata ayıklayıcı uç belirleme](media/azure-remote-debugging-secret.png)
+![Bir Azure App Service'te hata ayıklayıcı uç nokta belirleniyor](media/azure-remote-debugging-secret.png)
 
-Şu an ayarlamalısınız formunda URL `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` burada değiştirdiğiniz &lt;gizli&gt;ve &lt;site_name&gt; , belirli değerleri içeren dizesinde.
+Şu an ayarlamalısınız biçiminde URL `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` burada değiştirin &lt;gizli&gt;ve &lt;site_name&gt; , belirli değerleri içeren bir dize içinde.
 
-Hata ayıklayıcı eklemek için seçin **hata ayıklama > ekleme işlemi için**seçin **Python uzaktan hata ayıklama** içinde **aktarım** açılan listesinde, URL'de girin  **Niteleyici textbox**, ve Enter tuşuna basın. Visual Studio için uygulama hizmeti başarıyla bağlanabiliyorsa listeden tek bir Python işlemi gösterilmektedir. Seçin ve ardından **Attach** hata ayıklamayı başlatmak için:
+Hata ayıklayıcıyı iliştirmek için seçin **hata ayıklama** > **iliştirme**seçin **Python uzaktan hata ayıklama** içinde **aktarım**açılır listesinde, URL'sini girin **niteleyicisi textbox**basın **Enter**. Visual Studio App Service'e başarıyla bağlantı kurabiliyorsanız, tek bir Python işlem listesinde gösterilir. Seçin ve ardından **iliştirme** hata ayıklamayı başlatmak için:
 
-![Bir Azure web sitesi eklemek için işlem iletişim kutusuna Attach kullanma](media/azure-remote-debugging-manual-attach.png)
+![Ek İliştir iletişim kullanarak bir Azure web sitesine iliştirin](media/azure-remote-debugging-manual-attach.png)

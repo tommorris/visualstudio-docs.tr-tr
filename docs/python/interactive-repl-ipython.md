@@ -1,6 +1,6 @@
 ---
-title: IPython REPL (etkileşimli pencere)
-description: Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özelliklere sahip bir kullanıcı dostu etkileşimli geliştirme ortamı kullanarak.
+title: Ipython REPL (etkileşimli pencere)
+description: Etkileşimli paralel bilgi işlem özellikleri ile etkileşimli kullanıcı dostu geliştirme ortamı için Visual Studio etkileşimli pencereye Ipython modu kullanıyor.
 ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,31 +11,31 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: adfd037cc7362a4aa088d57c3776379caf6de5e3
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057667"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341513"
 ---
-# <a name="using-ipython-in-the-interactive-window"></a>Etkileşimli pencerede IPython kullanma
+# <a name="use-ipython-in-the-interactive-window"></a>Etkileşimli pencerede Ipython kullanın
 
-Visual Studio etkileşimli penceresini IPython modunda etkileşimli paralel bilgi işlem özellikleri olan bir Gelişmiş henüz kullanıcı dostu etkileşimli geliştirme ortamıdır. Bu makalede, normal tüm Visual Studio etkileşimli penceresinde IPython kullanarak kılavuzluk [etkileşimli pencere](python-interactive-repl-in-visual-studio.md) özellikleri de kullanılabilir duruma gelir.
+Visual Studio **etkileşimli** penceredir Ipython modunda etkileşimli paralel bilgi işlem özellikleri olan bir Gelişmiş henüz kullanımı kolay, etkileşimli geliştirme ortamı. Bu makalede Visual Studio'daki Ipython açıklanmaktadır **etkileşimli** penceresinde hangi tümü normal [etkileşimli pencere](python-interactive-repl-in-visual-studio.md) özellikleri de vardır.
 
-Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerekli kitaplıkları içeren yüklü ortamı.
+Bu kılavuz için olmalıdır [Anaconda](https://www.continuum.io) Ipython ve gerekli kitaplıkları içeren yüklü, ortam.
 
 > [!Note]
-> IronPython IPython, siz bunu etkileşimli seçenekleri formdaki seçebilirsiniz olgusuna karşın desteklemez. Daha fazla bilgi için bkz: [özellik isteği](https://github.com/Microsoft/PTVS/issues/84).
+> IronPython desteklemiyor, Ipython üzerinde seçin olgu rağmen **etkileşimli seçenekleri** formu. Daha fazla bilgi için [özellik isteği](https://github.com/Microsoft/PTVS/issues/84).
 
-1. Açık Visual Studio, Python ortamları penceresine anahtarı (**Görünüm > Diğer Pencereler > Python ortamları**) ve bir Anaconda ortamını seçin.
+1. Visual Studio'yu açın, geçiş **Python ortamları** penceresi (**görünümü** > **diğer Windows** > **Python ortamları** ) ve Anaconda ortamı seçin.
 
-1. İncelemek **paketleri (Conda)** sekmesinde (olarak görünür **PIP** veya **paketleri**) emin olmak bu ortam için `ipython` ve `matplotlib` listelenir. Yoksa, bunları burada yükleyin. (Bkz [Python ortamları Windows - paketleri sekmesi](python-environments-window-tab-reference.md).)
+1. İncelemek **paketleri (Conda)** sekme (olarak görünür **pip** veya **paketleri**) emin olmak bu ortam için `ipython` ve `matplotlib` listelenir. Aksi durumda, buraya yükleyin. (Bkz [Python ortamları windows - paketleri sekmesinde](python-environments-window-tab-reference.md).)
 
-1. Seçin **genel bakış** sekmesinde ve seçin **kullanım IPython etkileşimli mod.** (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** IPython ve seçin **Tamam** ).
+1. Seçin **genel bakış** sekmenize **kullanım Ipython etkileşimli mod**. (Visual Studio 2015'te seçin **etkileşimli seçenekleri yapılandırın** açmak için **seçenekleri** iletişim kutusunda, ardından **etkileşimli mod** için **Ipython**seçip **Tamam**).
 
-1. Seçin **açık etkileşimli pencere** IPython modunda etkileşimli penceresi getirmek için. Etkileşimli mod yalnızca değiştirdiyseniz penceresi sıfırlamanız gerekebilir; yalnızca Enter tuşuna basın gerekebilir bir >>> istemi görüntülenirse, böylece "[2]" gibi bir istem alın.
+1. Seçin **açık etkileşimli pencere** ortaya çıkarmak için **etkileşimli** Ipython modunda penceresi. Etkileşimli mod yalnızca değişmişse penceresi sıfırlamanız gerekebilir; basmanız gerekebilir **Enter** yalnızca bir >>> istemi görünür, böylece bir komut istemi beğeni almak **[2]**.
 
-    ![IPython modunda etkileşimli penceresi](media/ipython-repl-03.png)
+    ![Etkileşimli pencerede Ipython modu](media/ipython-repl-03.png)
 
 1. Aşağıdaki kodu girin:
 
@@ -48,11 +48,11 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
   plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
   ```
 
-1. Son satırı girdikten sonra (hangi sağ alt köşesinde üzerinde sürükleyerek boyutlandırabilirsiniz) bir satır içi grafik görmelisiniz isterseniz.
+1. Son satırı girdikten sonra bir satır içi graf (Bu, isterseniz sağ alt köşesindeki üzerinde sürükleyerek yeniden boyutlandırabilirsiniz) görmeniz gerekir.
 
-    ![Satır içi grafik etkileşimli penceresinde](media/ipython-repl-04.png)
+    ![Etkileşimli pencerede satır içi grafiği](media/ipython-repl-04.png)
 
-1. Kod Düzenleyicisi'nde yazabilirsiniz REPL içinde yazmak yerine seçin, sağ tıklatın ve seçin **çok etkileşimli Gönder** komutu (veya Ctrl + Enter tuşuna basın). Aşağıdaki kod düzenleyicisinde Ctrl-A, ardından etkileşimli penceresine gönderen ile seçerek yeni bir dosyaya yapıştırmayı deneyin. (Visual Studio kodu Ara ya da kısmi grafikleri vermiş önlemek için bir birim olarak gönderir. Ve seçili için farklı bir ortam açık bir Python projeniz yoksa, Visual Studio ne olursa olsun ortamı varsayılan olarak seçilen için etkileşimli bir pencere açılır **Python ortamları** penceresi.)
+1. Kod Düzenleyicisi'nde yazabilirsiniz REPL'de yazmak yerine seçin, sağ tıklatın ve seçin **etkileşime Gönder** komutu (veya basın **Ctrl**+**Enter**). Aşağıdaki kod düzenleyicisinde ile seçerek yeni bir dosyaya yapıştırmayı deneyin **Ctrl**+**A**, ardından gönderme **etkileşimli** penceresi. (Visual Studio kodu Ara ya da kısmi grafikleri vermeyi önlemek için bir birim olarak gönderir. Python projesi yoksa açıp seçili, farklı bir ortam ile Visual Studio açılır bir **etkileşimli** için hangi ortamı varsayılan olarak seçili penceresi **Python ortamları**penceresi.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -75,14 +75,14 @@ Bu kılavuzda, olmalıdır [Anaconda](https://www.continuum.io) IPython ve gerek
     plt.show()
     ```
 
-    ![Kod Düzenleyicisi'nden etkileşimli penceresine gönderme](media/ipython-repl-05.png)
+    ![Kod Düzenleyicisi'nden etkileşimli pencereye göndermek.](media/ipython-repl-05.png)
 
-1. Etkileşimli penceresinin dışında grafikleri görmek için bunun yerine kodu çalıştırmak **hata ayıklama > hata ayıklama olmadan Başlat** komutu.
+1. Dışında grafiklerini görmek için **etkileşimli** penceresi, bunun yerine kullanarak kod çalıştırın **hata ayıklama** > **hata ayıklama olmadan Başlat** komutu.
 
-IPython değişkeni değiştirme sistem Kabuk kaçış gibi birçok diğer yararlı özellikleri yakalama çıktı, vb. vardır. Başvurmak [IPython belgelerine](http://ipython.org/documentation.html) daha fazla bilgi için.
+Ipython kaçış sistem Kabuk değişkeni değiştirme gibi başka birçok yararlı özellik yakalama çıkış, vb. vardır. Başvurmak [Ipython belgeleri](http://ipython.org/documentation.html) daha fazla bilgi için.
 
-## <a name="related-articles"></a>İlgili makaleler
+## <a name="see-also"></a>Ayrıca bkz.
 
-- Jupyter kolayca ve yükleme olmadan kullanmak için ücretsiz olarak deneyin [Azure not defterlerini barındırılan hizmeti](https://notebooks.azure.com/) tutun ve defterlerinizi başkalarıyla paylaşmanızı sağlayan.
+- Jupyter kolayca ve yükleme olmadan kullanmak için ücretsiz deneyin [Azure not defterleri barındırılan hizmet](https://notebooks.azure.com/) olanak tanıyan tutun ve not defterlerinizi başkalarıyla paylaşın.
 
-- Jupyter (önceki adıyla IPython da bilinir), kendi Windows veya Linux sanal makineye Azure üzerinde de çalıştırabilirsiniz. Ayrıntılar için bkz [bir Azure VM Jupyter yükleme ve Jupyter not defteri Azure üzerinde çalışan oluşturuluyor](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- [Azure veri bilimi sanal makinesi](/azure/machine-learning/data-science-virtual-machine/overview) ayrıca çok çeşitli diğer veri bilimi araçları ile birlikte Jupyter not defterlerini çalıştırmak için önceden yapılandırılmıştır.

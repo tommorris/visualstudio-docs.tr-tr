@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 062270864c3fecb6556ef9b48d00177966a41859
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233028"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341816"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile görevi
 Belirtilen öğe yolları, belirtilen bir metin dosyasına yazar.  
@@ -65,6 +65,31 @@ Belirtilen öğe yolları, belirtilen bir metin dosyasına yazar.
     </Target>  
   
 </Project>  
+```
+
+Bu örnekte, bir özellik ile katıştırılmış yeni satırlardan birden fazla satır içeren bir metin dosyası yazmak için kullanırız. Bir girdi varsa `Lines` yeni satır karakterleri, katıştırılmış yeni satırlar çıktı dosyasına dahil edilir. Bu şekilde, çok satırlı özelliklerine başvurabilirsiniz.
+
+```xml  
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="WriteLaunchers" AfterTargets="CopyFilesToOutputDirectory">
+      <PropertyGroup>
+        <LauncherCmd>
+@ECHO OFF
+dotnet %~dp0$(AssemblyName).dll %*
+        </LauncherCmd>
+      </PropertyGroup>
+
+      <WriteLinesToFile
+        File="$(OutputPath)$(AssemblyName).cmd"
+        Overwrite="true"
+        Lines="$(LauncherCmd)" />
+  </Target>
+</Project>
 ```  
   
 ## <a name="see-also"></a>Ayrıca bkz.  

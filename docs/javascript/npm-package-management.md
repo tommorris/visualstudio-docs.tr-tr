@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4cea1296c58bdf1bad79ca2d1af697969b56cdbb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 571cc9048b9f932c0ff344637c144d0a6d649887
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924945"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388403"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio'da npm paketlerini yönetme
 
 npm yükleme ve Node.js uygulamalarınızda kullanım için paketleri yönetme sağlar. Npm ile daha fazla bilgi edinmek istiyorsanız bilmiyorsanız, Git [npm belgeleri](https://docs.npmjs.com/).
 
-Visual Studio yapar, bu, npm ve sorunu npm komutları kullanıcı arabirimi ile etkileşim kurmak kolay ya da kullanarak veya doğrudan. Aşağıdaki yöntemleri kullanabilirsiniz:
+Visual Studio, npm ve sorunu npm komutları ile kullanıcı Arabirimi aracılığıyla ya da doğrudan etkileşim kurmak kolaylaştırır. Aşağıdaki yöntemleri kullanabilirsiniz:
 * [Paketleri Çözüm Gezgini'nden yükleyin.](#npmInstallWindow)
 * [Yüklü paketleri Çözüm Gezgini'nden yönetme](#solutionExplorer)
 * [Kullanım `.npm` Node.js etkileşimli pencerede komutu](#interactive)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 936c5c1d6edd0a3f3ac7f645b1c94c5ffecd39f1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251848"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388299"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. adım: yoklamalar Flask Web projesi şablonunu kullanma
 
@@ -32,19 +32,19 @@ Bu adımda şunların nasıl yapılır:
 > - (5-3. adım) ve yedekleme veri depoları anlama
 > - Yoklama sonuçları ve ayrıntı görünümleri (5-4. adım) Anlama
 
-Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Jinja şablon oluşturma altyapısı için kullanır. "Windows Flask/Jade polls – Webový projekt" şablonu da projeleri. Ayrıntılar için bkz [adım 4 - Flask/Jade Web projesi şablonu](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
+Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Jinja şablon oluşturma altyapısı için kullanır. "Windows Flask/Jade polls – Webový projekt" şablonu da sağlar. Ayrıntılar için bkz [adım 4 - Flask/Jade Web projesi şablonu](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
 ## <a name="step-5-1-create-the-project"></a>5-1. adım: Proje oluşturma
 
-1. Visual Studio'da Git **Çözüm Gezgini**, bu öğreticide daha önce oluşturulan "LearningFlask" çözüme sağ tıklayın ve seçin **Ekle** > **yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak istiyorsanız, seçin **dosya** > **yeni** > **proje** yerine.)
+1. Visual Studio'da Git **Çözüm Gezgini**, sağ **LearningFlask** daha önce Bu öğretici ve seçme içinde oluşturulan çözüm **Ekle**  >   **Yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak istiyorsanız, seçin **dosya** > **yeni** > **proje** yerine.)
 
-1. Yeni Proje iletişim kutusunda, arayın ve "Yoklamalar Flask Web projesi" şablonu seçin, "FlaskPolls" proje arayın ve seçin **Tamam**.
+1. Yeni Proje iletişim kutusunda, aramak ve seçmek **yoklamalar Flask Web projesi** şablon "FlaskPolls" proje arayın ve seçin **Tamam**.
 
-1. Diğer proje şablonları gibi Visual Studio'da, "Yoklamalar Flask Web projesi" şablonu içeren bir `requirements.txt` , Visual Studio istemi ister nerede bu bağımlılıkların yükleneceği dosya. Seçeneğini **sanal bir ortama yükleme**hem de **sanal ortama ekleme** iletişim kutusunda **Oluştur** Varsayılanları kabul etmek için. ("Yoklamalar Flask/Jade Web Proje" de pyjade gerekli; Bu şablon, Flask ve bunun yanı sıra azure depolama ve pymongo paketleri gerektirir.)
+1. Diğer proje şablonları gibi Visual Studio'da, "Yoklamalar Flask Web projesi" şablonu içeren bir *requirements.txt* , Visual Studio istemi ister nerede bu bağımlılıkların yükleneceği dosya. Seçeneğini **sanal bir ortama yükleme**hem de **sanal ortama ekleme** iletişim kutusunda **Oluştur** Varsayılanları kabul etmek için. ("Yoklamalar Flask/Jade Web Proje" de pyjade gerekli; Bu şablon, Flask ve bunun yanı sıra azure depolama ve pymongo paketleri gerektirir.)
 
-1. Bu projeye sağ tıklayarak Visual Studio çözümü için varsayılan olarak "FlaskPolls" projesini **Çözüm Gezgini** seçerek **başlangıç projesi olarak ayarla**. Gösterilen başlangıç projesi içinde hata ayıklayıcısını başlattığınızda nelerin çalıştırılacağını kalın.
+1. Ayarlama **FlaskPolls** proje bu projeye sağ tıklayarak Visual Studio çözümü için varsayılan olarak **Çözüm Gezgini** seçerek **başlangıçprojesiolarakayarla**. Gösterilen başlangıç projesi içinde hata ayıklayıcısını başlattığınızda nelerin çalıştırılacağını kalın.
 
-1. Seçin **hata ayıklama > hata ayıklamayı Başlat** (F5) veya **Web sunucusu** server çalıştırmak için araç çubuğunda:
+1. Seçin **hata ayıklama** > **hata ayıklamayı Başlat** (**F5**) veya **Web sunucusu** server çalıştırmak için araç çubuğunda:
 
     ![Web sunucusu araç çubuğu düğmesi Visual Studio'da çalıştırın.](media/django/run-web-server-toolbar-button.png)
 
@@ -52,7 +52,7 @@ Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Ji
 
     ![Polls – Flask Web projesi uygulamasının tam görünümü](media/flask/step06-full-app-view.png)
 
-1. Giriş sayfasında **örnek yoklamalar Oluştur** düğmesi başlatır açıklanan üç farklı yoklamalar uygulamanın veri deposuyla `models/samples.json` sayfası. Varsayılan olarak, uygulama, uygulama her başlatıldığında sıfırlanır (gösterildiği gibi hakkında sayfasında), bir bellek içi veritabanı kullanır. Uygulama, ayrıca bu makalenin sonraki bölümlerinde açıklandığı gibi Azure depolama ve Mongo DB ile çalışmak için kodu içerir.
+1. Giriş sayfasında **örnek yoklamalar Oluştur** düğmesi başlatır açıklanan üç farklı yoklamalar uygulamanın veri deposuyla *models/samples.json* sayfası. Varsayılan olarak, uygulama, uygulama her başlatıldığında sıfırlanır (gösterildiği gibi hakkında sayfasında), bir bellek içi veritabanı kullanır. Uygulama, ayrıca bu makalenin sonraki bölümlerinde açıklandığı gibi Azure depolama ve Mongo DB ile çalışmak için kodu içerir.
 
 1. Veri deposu başlattık sonra (kısa tutmak için gezinti çubuğunda ve altbilgi atlanır) giriş sayfasında gösterildiği gibi farklı yoklamalarda oy verebilirsiniz:
 
@@ -68,7 +68,7 @@ Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Ji
 
 1. İzleyen bölümlerde için uygulamayı bırakabilirsiniz.
 
-    Uygulamayı durdurmak istiyorsanız ve [değişiklikleri kaynak denetimine](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), ilk açın **değişiklikleri** sayfasını **Takım Gezgini**, sanal ortam (klasörünü sağ tıklatın büyük olasılıkla `env`) seçip **bu yerel öğeleri Yoksay**.
+    Uygulamayı durdurmak istiyorsanız ve [değişiklikleri kaynak denetimine](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), ilk açın **değişiklikleri** sayfasını **Takım Gezgini**, sanal ortam (klasörünü sağ tıklatın büyük olasılıkla **env**) seçip **bu yerel öğeleri Yoksay**.
 
 ### <a name="examine-the-project-contents"></a>Proje içeriğini inceleyin
 
@@ -76,7 +76,7 @@ Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Ji
 
 ## <a name="step-5-2-understand-the-data-models"></a>5-2. adım: veri modelini anlama
 
-Uygulama için veri modellerini yoklama ve tanımlanan seçim adlı Python sınıflardır `models/__init__.py`. Bir yoklama seçim örneklerinin bir koleksiyonunu temsil kullanılabilir yanıtları soru temsil eder. Bir yoklama sayısı (herhangi bir seçim için) oy ve görünümleri oluşturmak için kullanılan istatistiklerini hesaplamak için bir yöntem de tutar:
+Uygulama için veri modellerini yoklama ve tanımlanan seçim adlı Python sınıflardır *modelleri /\_\_init\_\_.py*. Bir yoklama seçim örneklerinin bir koleksiyonunu temsil kullanılabilir yanıtları soru temsil eder. Bir yoklama sayısı (herhangi bir seçim için) oy ve görünümleri oluşturmak için kullanılan istatistiklerini hesaplamak için bir yöntem de tutar:
 
 ```python
 class Poll(object):
@@ -116,14 +116,14 @@ Bu veri modelleri sonraki adımda açıklanan veri depolarını yedekleme farkl�
 
 Veri depolama mekanizmasını gibi çalışır:
 
-1. Depo türü aracılığıyla belirtilen `REPOSITORY_NAME` "bellek", "azuretablestore" veya "mongodb" için ayarlanan ortam değişkeni. Bir bit kod `settings.py` varsayılan olarak "bellek" kullanarak adını alır. Yedekleme deposu değiştirmek istiyorsanız, ortam değişkenini ayarlamak ve uygulamayı yeniden başlatmanız gerekir.
+1. Depo türü aracılığıyla belirtilen `REPOSITORY_NAME` "bellek", "azuretablestore" veya "mongodb" için ayarlanan ortam değişkeni. Bir bit kod *settings.py* varsayılan olarak "bellek" kullanarak adını alır. Yedekleme deposu değiştirmek istiyorsanız, ortam değişkenini ayarlamak ve uygulamayı yeniden başlatmanız gerekir.
 
     ```python
     from os import environ
     REPOSITORY_NAME = environ.get('REPOSITORY_NAME', 'memory')
     ```
 
-1. `settings.py` Ardından başlatır kod bir `REPOSITORY_SETTINGS` nesne. Azure tablo depolama veya kara DB kullanmak istiyorsanız, önce bu veri depoları başka bir yerde başlatın, ardından gerekir uygulama Mağazası'na nasıl bağlanacaklarını gerekli ortam değişkenlerini ayarlayın:
+1. *Settings.py* ardından başlatır kod bir `REPOSITORY_SETTINGS` nesne. Azure tablo depolama veya kara DB kullanmak istiyorsanız, önce bu veri depoları başka bir yerde başlatın, ardından gerekir uygulama Mağazası'na nasıl bağlanacaklarını gerekli ortam değişkenlerini ayarlayın:
 
     ```python
     if REPOSITORY_NAME == 'azuretablestorage':
@@ -145,7 +145,7 @@ Veri depolama mekanizmasını gibi çalışır:
         raise ValueError('Unknown repository.')
     ```
 
-1. İçinde `views.py`, uygulamayı başlatmak için bir Üreteç yöntemi çağıran bir `Repository` veri deposunun adı ve ayarları kullanarak nesne:
+1. İçinde *views.py*, uygulamayı başlatmak için bir Üreteç yöntemi çağıran bir `Repository` veri deposunun adı ve ayarları kullanarak nesne:
 
     ```python
     from FlaskPolls.models import PollNotFound
@@ -155,7 +155,7 @@ Veri depolama mekanizmasını gibi çalışır:
     repository = create_repository(REPOSITORY_NAME, REPOSITORY_SETTINGS)
     ```
 
-1. `factory.create_repository` Yöntemi içinde bulunan `models\factory.py`, hangi yalnızca uygun depoyu modülü içe aktarır ve ardından oluşturur bir `Repository` örneği:
+1. `factory.create_repository` Yöntemi içinde bulunan *models\factory.py*, hangi yalnızca uygun depoyu modülü içe aktarır ve ardından oluşturur bir `Repository` örneği:
 
     ```python
     def create_repository(name, settings):
@@ -174,20 +174,20 @@ Veri depolama mekanizmasını gibi çalışır:
         return Repository(settings)
     ```
 
-1. Uygulamaları `Repository` her veri deposuna özel bir sınıf içinde bulunabilir `models\azuretablestorage.py`, `models\mongodb.py`, ve `models\memory.py`. Azure depolama uygulaması, azure depolama paketinden kullanır; Mongo DB uygulaması pymongo paketi kullanır. 5-1. adımda da belirtildiği gibi her iki paketi de proje şablonunun içerdiği `requirements.txt` dosya. Ayrıntıları keşfetmek için okuyucu bir alıştırma olarak kalır.
+1. Uygulamaları `Repository` her veri deposuna özel bir sınıf içinde bulunabilir *models\azuretablestorage.py*, *models\mongodb.py*, ve *models\memory.py* . Azure depolama uygulaması, azure depolama paketinden kullanır; Mongo DB uygulaması pymongo paketi kullanır. 5-1. adımda da belirtildiği gibi her iki paketi de proje şablonunun içerdiği *requirements.txt* dosya. Ayrıntıları keşfetmek için okuyucu bir alıştırma olarak kalır.
 
 Kısacası, `Repository` sınıfı veri deposu özelliklerini özetler ve uygulama ortam değişkenlerini seçin ve kullanmak için üç uygulamalarının hangi yapılandırmak için çalışma zamanında kullanır.
 
 Bu nedenle isterseniz, aşağıdaki adımları proje şablonu tarafından sağlanan üç değerinden farklı bir veri deposu desteği ekleyin:
 
-1. Kopyalama `memory.py` yeni bir dosya için temel arabirimi olması `Repository` sınıfı.
+1. Kopyalama *memory.py* yeni bir dosya için temel arabirimi olması `Repository` sınıfı.
 1. Kullanmakta olduğunuz veri deposunda uygun olarak bu sınıfın uygulaması değiştirin.
-1. Değiştirme `factory.py` diğerine eklemek için `elif` çalışmasını eklenen veri deponuz için bir ad tanır ve uygun modülü içe aktarır.
-1. Değiştirme `settings.py` başka bir ad tanımak için `REPOSITORY_NAME` ortam değişkeni ve başlatmak için `REPOSITORY_SETTINGS` uygun şekilde.
+1. Değiştirme *factory.py* diğerine eklemek için `elif` çalışmasını eklenen veri deponuz için bir ad tanır ve uygun modülü içe aktarır.
+1. Değiştirme *settings.py* başka bir ad tanımak için `REPOSITORY_NAME` ortam değişkeni ve başlatmak için `REPOSITORY_SETTINGS` uygun şekilde.
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Samples.json veri deposundan temel
 
-Uygulama giriş sayfası ileti "Hiçbir yoklamalar kullanılabilir" ile birlikte gösterilir. Başlangıçta tüm seçilen veri deposu yok anketler, içerir, dolayısıyla **örnek yoklamalar Oluştur** düğmesi. Ancak, düğmeyi seçin, sonra kullanılabilir olup olmadığını yoklar görüntülemek için görünümü değiştirir. Bu anahtar koşullu etiketleri üzerinden gerçekleşir `templates\index.html` (bazı boş satırları verilmemiştir):
+Uygulama giriş sayfası iletiyi gösterecek şekilde hiçbir anketler, başlangıçta tüm seçilen veri deposu içeren **kullanılabilir hiçbir yoklamalar** ile birlikte **örnek yoklamalar Oluştur** düğmesi. Ancak, düğmeyi seçin, sonra kullanılabilir olup olmadığını yoklar görüntülemek için görünümü değiştirir. Bu anahtar koşullu etiketleri üzerinden gerçekleşir *templates\index.html* (bazı boş satırları verilmemiştir):
 
 ```html
 {% extends "layout.html" %}
@@ -218,7 +218,7 @@ Uygulama giriş sayfası ileti "Hiçbir yoklamalar kullanılabilir" ile birlikte
 
 `polls` Şablon değişkeni gelen çağrısından `repository.get_polls`, döndüren bir şey veri deposu başlatılana kadar.
 
-Seçme **örnek yoklamalar Oluştur** düğmesi /seed URL'sine gider. Bu rota için işleyici tanımlanan `views.py`:
+Seçme **örnek yoklamalar Oluştur** düğmesi /seed URL'sine gider. Bu rota için işleyici tanımlanan *views.py*:
 
 ```python
 @app.route('/seed', methods=['POST'])
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-Çağrı `repository.add_sample_polls()` sona eriyor belirli birinde `Repository` seçilen veri deponuz için uygulamaları. Her uygulama çağrıları `_load_samples_json` yöntemi bulunan `models\__init__.py` yüklenecek `models\samples.json` dosya belleğe ve ardından gerekli oluşturmak için bu verileri yinelenir `Poll` ve `Choice` veri deposundaki nesne.
+Çağrı `repository.add_sample_polls()` sona eriyor belirli birinde `Repository` seçilen veri deponuz için uygulamaları. Her uygulama çağrıları `_load_samples_json` yöntemi bulunan *modelleri\__init__.py* yüklenecek *models\samples.json* belleğe sonra dosya gerekli oluşturmak için bu verileri yinelenir `Poll` ve `Choice` veri deposundaki nesne.
 
-Bu işlem tamamlandıktan sonra `redirect('/')` deyiminde `seed` yöntemi giriş sayfasına götürür. Çünkü `repository.get_polls` artık koşullu etiketleri bir veri nesnesi döndürür `templates\index.html` artık yoklamalar içeren bir tablo oluşturur.
+Bu işlem tamamlandıktan sonra `redirect('/')` deyiminde `seed` yöntemi giriş sayfasına götürür. Çünkü `repository.get_polls` artık koşullu etiketleri bir veri nesnesi döndürür *templates\index.html* artık yoklamalar içeren bir tablo oluşturur.
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Soru: Nasıl bir yeni yoklamalar uygulamaya ekliyor mu?
 
-Yanıt: Proje şablonu aracılığıyla sağlanan uygulama ekleme veya düzenleme yoklamalar için bir özellik içermiyor. Değiştirebileceğiniz `models\samples.json` yeni başlatma verilerini oluşturmak için ancak bunun yapılması veri deposunu sıfırlama anlamına. Düzenleme özellikleri uygulamak için genişletmek gereken `Repository` sınıf arabirimi gerekli oluşturmak için yöntemleri ile `Choice` ve `Poll` örnekleri, bu yöntemleri kullanan ek sayfalarında sonra bir kullanıcı Arabirimi uygulayın.
+Yanıt: Proje şablonu aracılığıyla sağlanan uygulama ekleme veya düzenleme yoklamalar için bir özellik içermiyor. Değiştirebileceğiniz *models\samples.json* yeni başlatma verilerini oluşturmak için ancak bunun yapılması veri deposunu sıfırlama anlamına. Düzenleme özellikleri uygulamak için genişletmek gereken `Repository` sınıf arabirimi gerekli oluşturmak için yöntemleri ile `Choice` ve `Poll` örnekleri, bu yöntemleri kullanan ek sayfalarında sonra bir kullanıcı Arabirimi uygulayın.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>5-4. adım: yoklama ayrıntıları ve sonuçları görünümleri anlayın
 
@@ -242,7 +242,7 @@ Yanıt: Proje şablonu aracılığıyla sağlanan uygulama ekleme veya düzenlem
 
 Burada kalan tek bir yoklama sonuçları görünümünü ve oylama (Ayrıntılar) incelemektir.
 
-Giriş sayfasından bir yoklama seçtiğinizde, uygulama için URL /poll/ gider\<anahtarı\> burada *anahtar* olduğundan anket için benzersiz tanımlayıcısı. İçinde `views.py` gördüğünüz gibi `details` işlevi bu URL hem GET hem de istekleri için yönlendirmeyi işler atanır. Kullanan atabilirsiniz `<key>` URL rota hem hiçbir yolu bu formun aynı işleve eşlenir ve işlevi bu aynı ada sahip bir değişken oluşturur:
+Giriş sayfasından bir yoklama seçtiğinizde, uygulama için URL /poll/ gider\<anahtarı\> burada *anahtar* olduğundan anket için benzersiz tanımlayıcısı. İçinde *views.py* gördüğünüz gibi `details` işlevi bu URL hem GET hem de istekleri için yönlendirmeyi işler atanır. Bu kullanarak görebilirsiniz `<key>` URL rota hem hiçbir yolu bu formun aynı işleve eşlenir ve işlevi bu aynı ada sahip bir değişken oluşturur:
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -266,7 +266,7 @@ def details(key):
     )
 ```
 
-Bir yoklama (GET istekleri) göstermek için bu işlevi yalnızca üzerine çağırır `templates\details.html`, yoklama 's yinelenir `choices` dizi, her biri için bir radyo düğmesi oluşturma.
+Bir yoklama (GET istekleri) göstermek için bu işlevi yalnızca üzerine çağırır *templates\details.html*, yoklama 's yinelenir `choices` dizi, her biri için bir radyo düğmesi oluşturma.
 
 ```html
 {% extends "layout.html" %}
@@ -298,7 +298,7 @@ Bir yoklama (GET istekleri) göstermek için bu işlevi yalnızca üzerine çağ
 
 Çünkü **oy** düğmeye sahip `type="submit"`, seçerek oluşturan bir POST isteği geri yönlendirilir aynı URL'ye `details` bir kez daha işlev. Bu kez, ancak bu seçimi form verileri ayıklar ve için /results/ yönlendiren\<seçim\>.
 
-/Results/\<anahtarı\> URL yönlendirileceğini ardından `results` işlevi `views.py`, daha sonra Anket'ın çağıran `calculate_stats` yöntemi ve gösteren `templates\results.html` işleme için:
+/Results/\<anahtarı\> URL yönlendirileceğini ardından `results` işlevi *views.py*, daha sonra Anket'ın çağıran `calculate_stats` yöntemi ve gösteren *templates\results.html* işleme için:
 
 ```python
 @app.route('/results/<key>')
@@ -314,7 +314,7 @@ def results(key):
     )
 ```
 
-`results.html` Şablonu, bölüm yalnızca yoklama 's seçenekleri yinelenir ve her biri için bir ilerleme çubuğu oluşturur:
+*Results.html* şablonu, bölüm yalnızca yoklama 's seçenekleri yinelenir ve her biri için bir ilerleme çubuğu oluşturur:
 
 ```html
 {% extends "layout.html" %}

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180080"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380674"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Nasıl yapılır: Web Hizmet Testi Oluşturma
+# <a name="how-to-create-a-web-service-test"></a>Nasıl yapılır: web hizmeti testi oluşturma
 
 Web performans testi, web hizmetleri test etmek için kullanabilirsiniz. Kullanarak **istek Ekle** ve **Web hizmeti isteği Ekle** seçenekleri, istekleri tek tek özelleştirebilirsiniz **Web Performans Testi Düzenleyicisi** web bulmak için hizmeti sayfaları. Genellikle, web uygulamasında bu sayfa görüntülenmez. Bu nedenle, bu sayfaları için erişim isteği özelleştirmeniz gerekir.
 
@@ -29,7 +29,7 @@ Ticaret başlangıç Seti içinde yer alan bir web hizmeti aşağıdaki yordamla
 
 -   Visual Studio Enterprise
 
-## <a name="to-test-a-web-service"></a>Bir Web hizmeti test etmek için
+## <a name="to-test-a-web-service"></a>Bir web hizmeti test etmek için
 
 1.  Yeni bir web performans testi oluşturun. Tarayıcı açıldığı anda, seçin **Durdur**.
 
@@ -37,7 +37,7 @@ Ticaret başlangıç Seti içinde yer alan bir web hizmeti aşağıdaki yordamla
 
 3.  İçinde **Url** türü adı web hizmetinin gibi yeni isteğin özelliğini **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Ayrı bir tarayıcı oturumu açın ve .asmx sayfanın URL'sini yazın **adresi** araç çubuğu. Test ve SOAP iletisi incelemek istediğiniz yöntemi seçin. İçerdiği bir `SOAPAction`.
+4.  Ayrı bir tarayıcı oturumu açın ve URL'sini yazın *.asmx* sayfasını **adresi** araç çubuğu. Test ve SOAP iletisi incelemek istediğiniz yöntemi seçin. İçerdiği bir `SOAPAction`.
 
 5.  İçinde **Web Performans Testi Düzenleyicisi**, istek sağ tıklayıp **üst bilgi Ekle** yeni üst bilgi eklemek için. İçinde **adı** özelliği, türü `SOAPAction`. İçinde **değer** özelliği, gördüğünüz değeri yazın `SOAPAction`, gibi `"http://tempuri.org/CheckStatus"`.
 
@@ -60,7 +60,7 @@ Ticaret başlangıç Seti içinde yer alan bir web hizmeti aşağıdaki yordamla
      </soap:Envelope>
      ```
 
-9. Geri dönüp **Web Performans Testi Düzenleyicisi** , nokta (...) seçin **dize gövdesi** özelliği. Pano içeriğini özelliğine yapıştırın.
+9. Geri dönüp **Web Performans Testi Düzenleyicisi** ve ardından üç noktayı seçin **(...)**  içinde **dize gövdesi** özelliği. Pano içeriğini özelliğine yapıştırın.
 
 10. XML içindeki herhangi bir yer tutucu değerlerini geçirmek test için geçerli değerlerle değiştirmeniz gerekir. Önceki örnekte iki örneğinden birini değiştirirler `string` diğeri `int`. Sipariş kayıtlı bir kullanıcı varsa bu web hizmeti işlemi yalnızca tamamlanır.
 

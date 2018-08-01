@@ -10,58 +10,58 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968542"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379295"
 ---
-# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Nasıl yapılır: Özel Tanılama Veri Bağdaştırıcısı Yükleme
+# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Nasıl yapılır: özel tanılama veri bağdaştırıcısı yükleme
 
-Özel tanılama veri bağdaştırıcısı oluşturduğunuz veya kullanmak için bir özel tanılama veri bağdaştırıcısı ile sağlanmış olan, derleme dosyası için doğru dizine yerel makinenizde kopyalayarak tanılama veri bağdaştırıcısı derlemenizi yükleyebilirsiniz.
+Özel tanılama veri bağdaştırıcısı oluşturduysanız veya size bir özel tanılama veri bağdaştırıcısı ile kullanmak için sağlanmış olan derleme dosyası için yerel makinenizde doğru dizine kopyalayarak tanılama veri bağdaştırıcısı derlemenizi yükleyebilirsiniz.
 
- Bir ortamda bir rol için özel tanılama veri bağdaştırıcınızı kullanmak istiyorsanız, bu rol için kullanılan test aracılarını çalıştırmak tüm makinelerde tanılama veri bağdaştırıcısı yüklemeniz gerekir.
+ Ortamdaki bir rol için özel tanılama veri bağdaştırıcınızı kullanmak istiyorsanız, bu rol için kullanılabilecek test aracılarını tüm makinelerde tanılama veri bağdaştırıcınızı yüklemeniz gerekir.
 
- Özel tanılama bağdaştırıcınızı uygun yerlere yüklemek için aşağıdaki yordamı kullanın. Tanılama veri bağdaştırıcısı yüklediğiniz herhangi bir makinede yönetici izinleri gerekir.
+ Özel tanılama bağdaştırıcınızı uygun yerlere yüklemek için aşağıdaki yordamı kullanın. Tanılama veri bağdaştırıcısını yüklediğiniz tüm makinelerde yönetimsel izinlere ihtiyacınız.
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>Özel tanılama veri bağdaştırıcısı yükleme
+## <a name="install-a-custom-diagnostic-data-adapter"></a>Özel tanılama veri bağdaştırıcısı yükleme
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>Özel tanılama veri bağdaştırıcısı yüklemek için
 
-1.  İstemci makinenizde veya aracı makine testlerini çalıştırdığınızda, tanılama veri bağdaştırıcısı kullanmak için aşağıdaki dizine yükleme yola göre hedef makinede yapı dizininizden tüm dosyaları kopyalayın:
+1.  İstemci makinenizde veya bir aracı makinede testler çalıştırırken tanılama veri bağdaştırıcısı kullanmak için yapı dizininizden tüm dosyaları yükleme yoluna göre hedef makinedeki aşağıdaki dizine kopyalayın:
 
      *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*
 
-     Kopyalanacak dosyaların şunlardır:
+     Kopyalanacak dosyaları şunlardır:
 
-    -   (Gerekli) tanılama veri bağdaştırıcısı derlemesi (.dll).
+    -   Tanılama veri bağdaştırıcısı derlemesi (*.dll*) (gerekli).
 
-    -   Hata ayıklama için veri dosyası (.pdb) bağdaştırıcınızı (isteğe bağlı).
+    -   Hata ayıklama veri dosyası (*.pdb*) (isteğe bağlı) bağdaştırıcı.
 
-    -   Bağdaştırıcınızı yapılandırma dosyası (`<diagnostic data adapter name>.dll.config`), varsayılan yapılandırma ayarları (isteğe bağlı) varsa.
+    -   Bağdaştırıcı yapılandırma dosyası (`<diagnostic data adapter name>.dll.config`), varsayılan yapılandırma ayarları (isteğe bağlı) varsa.
 
-    -   (İsteğe bağlı) bağdaştırıcısı için yapılandırma ayarlarını düzenlemek için oluşturduysanız yapılandırma düzenleyicisi derleme. Bu, yalnızca istemci makineler içindir. Aracı makineleri Düzenleyicisi kullanmayın.
+    -   (İsteğe bağlı) bağdaştırıcı yapılandırma ayarlarını düzenlemek için oluşturduysanız yapılandırma düzenleyicisi derleme. Bu, yalnızca istemci makineler içindir. Aracı makineleri düzenleyiciyi kullanmaz.
 
     > [!NOTE]
-    > Tanılama veri bağdaştırıcınızın ve yapılandırma Düzenleyicisi aynı projede oluşturulup aynı derlemeye yerleşik rağmen ayrı projeler kullanabilir ve isterseniz bunları için ayrı derlemeler oluşturun.
+    > Tanılama veri bağdaştırıcınız ve yapılandırma düzenleyiciniz aynı projede oluşturulup aynı derlemeye yerleştirilebilse de ayrı projeler kullanabilir ve isterseniz onlar için ayrı derlemeler oluşturabilirsiniz.
 
-     Testlerinizi çalıştırdığınızda, bir ortam kullanmak için test ayarlarını yapılandırma hakkında daha fazla bilgi için bkz: [el ile testlerde (VSTS) Tanılama verileri toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Test ayarlarınızı testlerinizi çalıştırdığınızda kullanacağınız ortam için yapılandırma hakkında daha fazla bilgi için bkz. [el ile testler (VSTS), tanılama verilerini toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
-2.  Bir test için tanılama veri bağdaştırıcınızı seçmek için önce varolan test ayarlarını seçin veya yeni bir Microsoft Test Yöneticisi'ni ya da Visual Studio oluşturup gerekir üzerinde tanılama veri bağdaştırıcınızı seçmek **veri ve tanılama** Seçili test ayarları sekmesi.
+2.  Bir test için tanılama veri bağdaştırıcınızı seçmek için önce varolan test ayarlarını seçin veya yeni bir Microsoft Test Yöneticisi ya da Visual Studio ve gerekir tanılama veri bağdaştırıcınızı seçin **veri ve tanılama** Seçili test ayarları sekmesi.
 
-3.  Oluşturulan ve test ayarlarınız için tanılama veri bağdaştırıcınızı yapılandırmak için bir tanılama veri bağdaştırıcısı yapılandırma Düzenleyicisi, yüklediyseniz seçin **yapılandırma** bağdaştırıcısı ve yapma yanındaki değişiklikler. Ardından **kaydetmek**. Tanılama veri toplayıcınız için Düzenleyicisi yapılandırmanın oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: tanılama veri bağdaştırıcısı bilgisayarınızı veri için bir özel düzenleyici oluşturma](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+3.  Belirleyin oluşturulur ve test ayarlarınız için tanılama veri bağdaştırıcınızı yapılandırmak için bir tanılama veri bağdaştırıcısı yapılandırma Düzenleyicisi, yüklü **yapılandırma** yapma ve bağdaştırıcısı yanındaki değişiklikler. Ardından **Kaydet**. Yapılandırma Düzenleyicisi, tanılama veri toplayıcınız için oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: tanılama veri bağdaştırıcınızın verileri için özel bir düzenleyici oluşturmak](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-4.  Microsoft Test Yöneticisi'nden testlerinizi çalıştırıyorsanız, bu atayabilirsiniz testleri çalıştırma veya kullanmadan önce test ayarları test planınıza **seçenekleriyle çalıştırın** test ayarlarınızı atamak ve geçersiz kılmak için komut test ayarları. Test ayarları hakkında daha fazla bilgi için bkz: [toplamak tanılama bilgileri kullanarak Test ayarlarını](../test/collect-diagnostic-information-using-test-settings.md).
+4.  Microsoft Test Yöneticisi'nden testleri çalıştırıyorsanız, bunları atayabilir kullanmadan veya testlerinizi çalıştırmadan önce test planınıza test **seçenekler ile Çalıştır** komut test ayarlarınızı atamak ve yok saymak için test ayarları. Test ayarları hakkında daha fazla bilgi için bkz. [test ayarlarını kullanarak tanılama bilgi toplayan](../test/collect-diagnostic-information-using-test-settings.md).
 
-     Visual Studio'dan testler çalıştırıyorsanız, bu ayarlamalısınız etkin olması için test ayarları. Test ayarları hakkında daha fazla bilgi için bkz: [toplamak tanılama bilgileri kullanarak Test ayarlarını](../test/collect-diagnostic-information-using-test-settings.md).
+     Testlerinizi Visual Studio'dan çalıştırıyorsanız, bunları ayarlamalısınız etkin olması için test ayarları. Test ayarları hakkında daha fazla bilgi için bkz. [test ayarlarını kullanarak tanılama bilgi toplayan](../test/collect-diagnostic-information-using-test-settings.md).
 
-5.  Seçilen tanılama veri bağdaştırıcısı ile test ayarlarını kullanarak testleri çalıştırın.
+5.  Seçilen tanılama veri bağdaştırıcısıyla test ayarlarını kullanarak testlerinizi çalıştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Nasıl yapılır: tanılama veri bağdaştırıcısı oluşturma](../test/how-to-create-a-diagnostic-data-adapter.md)
-- [Nasıl yapılır: tanılama veri bağdaştırıcınızın verileri için bir özel düzenleyici oluşturma](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Nasıl yapılır: tanılama veri bağdaştırıcınızın verileri için özel bir düzenleyici oluşturma](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Tanılama veri bağdaştırıcısı oluşturmak için örnek proje](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
-- [Özel veri toplayan veya Test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Özel veri toplayan veya test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
 - [Test ayarlarını kullanarak tanılama bilgileri Topla](../test/collect-diagnostic-information-using-test-settings.md)

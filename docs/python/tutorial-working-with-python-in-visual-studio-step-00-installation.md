@@ -1,6 +1,6 @@
 ---
 title: Python eğitmen, 0, adım yükleme ile çalışma
-description: Visual Studio'da Python ile çalışan bir çekirdek gözden geçirme adımı 0 (yükleme önkoşulları).
+description: Visual Studio'da Python ile çalışmanın bir çekirdek kılavuz adımı 0 (yükleme önkoşulları).
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,43 +11,41 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce7a388a9cc26ba84796710ff6f94395890a3df
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: f2fefe4a85d75573d96c7f7584913310bb5d267e
+ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057654"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39409751"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio'da Python desteğini yükleme
 
 > [!Note]
-> Python desteği yalnızca Windows için Visual Studio üzerinde şu anda kullanılabilir; Mac ve Linux üzerinde Python desteği aracılığıyla kullanılabilir [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> Python desteği yalnızca Visual Studio için Windows üzerinde şu anda kullanılabilir; Mac ve Linux, Python desteği aracılığıyla [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-1. İndirin ve Windows için en son Visual Studio 2017 yükleyiciyi çalıştırın (Python desteği 15.2 ve daha yeni sürümde mevcut). Visual Studio'nun zaten yüklü varsa, Visual Studio yükleyiciyi çalıştırın ve 2. adıma geçin.
+1. İndirin ve Windows için en son Visual Studio 2017 yükleyicisi çalıştırın (Python desteği varsa sürüm 15.2 ve üzeri). Visual Studio zaten yüklüyse, Visual Studio Yükleyicisi'ni çalıştırın ve 2. adıma gidin.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Community yükle</a>
+    > [Visual Studio 2017 Community'yi yükleyin](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Community edition her bir geliştirici, sınıf öğrenme, akademik araştırma ve açık kaynak geliştirme içindir. Diğer kullanımlar için yükleme <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Professional</a> veya <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Enterprise</a>.
+    > Topluluk sürümü bireysel geliştiriciler, sınıfta öğrenim ortamı, akademik araştırma ve açık kaynak geliştirme için ' dir. Diğer kullanımlar için yükleme [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) veya [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
-1. Yükleyici belirli geliştirme alanlar için ilgili seçenekleri gruplarıdır iş yükleri listesini gösterir. Python için seçin **Python geliştirme** iş yükü ve select **yükleme**:
+1. Yükleyici belirli geliştirme alanlar için ilgili seçenekleri gruplarıdır iş yüklerinin bir listesini sunar. Python için seçin **Python geliştirme** iş yükü ve select **yükleme**:
 
-    ![Visual Studio yükleyicisi Python geliştirme iş yükü](media/installation-python-workload.png)
+    ![Python geliştirme iş yüküyle Visual Studio](media/installation-python-workload.png)
 
-1. Python desteği, başlatma Visual Studio, basın hızlı bir şekilde test etmek için Alt + ı Python etkileşimli penceresi açın ve girin `2+2`. Çıktısını görmüyorsanız, `4`, adımlarınızı yeniden denetleyin.
+1. Python desteği, Visual Studio başlatma tuşuna hızlı bir şekilde test etmek için Alt + t Python etkileşimli penceresini açın ve girin `2+2`. Çıkışı görmüyorsanız `4`, adımlarınızı yeniden denetleyin.
 
-    ![Python etkileşimli penceresinden test etme](media/installation-interactive-test.png)
+    ![Python etkileşimli penceresinde test etme](media/installation-interactive-test.png)
 
 ## <a name="next-step"></a>Sonraki adım
 
 > [!div class="nextstepaction"]
-> [1. adım: Python projesi oluşturma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [1. adım: bir Python projesi oluşturma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [El ile varolan bir Python yorumlayıcısı tanımlayan](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Python desteği Visual Studio 2015 ve daha önce yükleme](installing-python-support-in-visual-studio.md).
-- [Konumları yüklemek](installing-python-support-in-visual-studio.md#install-locations).
-
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />
+- [El ile var olan bir Python yorumlayıcısı tanımlayan](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+- [Visual Studio 2015'te ve daha önce Python desteğini yükleme](installing-python-support-in-visual-studio.md).
+- [Yükleme konumlarını](installing-python-support-in-visual-studio.md#install-locations).

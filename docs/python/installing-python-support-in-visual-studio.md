@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5dcc8cf450fc769703174f600727bf91b939ac96
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: cffbdee3d1fc275e4bde54efda0cca5ac008155e
+ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341558"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39409728"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
@@ -41,10 +41,10 @@ Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test
 1. İndirin ve en son Visual Studio 2017 Yükleyicisi'ni çalıştırın. Visual Studio zaten yüklüyse, Visual Studio Yükleyicisi'ni çalıştırın, seçin **Değiştir** seçeneği (bkz [değiştirme Visual Studio](../install/modify-visual-studio.md)) ve 2. adıma geçin.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Community'yi yükleyin</a>
+    > [Visual Studio 2017 Community'yi yükleyin](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Topluluk sürümü bireysel geliştiriciler, sınıfta öğrenim ortamı, akademik araştırma ve açık kaynak geliştirme için ' dir. Diğer kullanımlar için yükleme <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> veya <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
+    > Topluluk sürümü bireysel geliştiriciler, sınıfta öğrenim ortamı, akademik araştırma ve açık kaynak geliştirme için ' dir. Diğer kullanımlar için yükleme [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) veya [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. Yükleyici belirli geliştirme alanlar için ilgili seçenekleri gruplarıdır iş yüklerinin bir listesini sunar. Python için seçin **Python geliştirme** iş yükü.
 

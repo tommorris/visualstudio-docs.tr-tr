@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176219"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382071"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Nasıl yapılır: Kaydedici Eklentisi Oluşturma
+# <a name="how-to-create-a-recorder-plug-in"></a>Nasıl yapılır: kaydedici eklentisi oluşturma
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Kayıtlı web performans testini değiştirmenize olanak tanır. Seçtiğiniz sonra değişiklik gerçekleşir **Durdur** kaydedicisi araç çubuğunda, ancak test edilen öncesinde test kaydedildi ve Web Performans Testi Düzenleyicisi'nde sunulan web performansı.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Kayıtlı web performans testini değiştirmenize olanak tanır. Değişiklik seçtiğiniz sonra gerçekleşir **Durdur** içinde **Web Performans Testi Kaydedicisi** araç ancak önceki test kaydedildi ve Web Performans Testi Düzenleyicisi'nde gösterilir.
 
-Bir kaydedici eklentisi, kendi özel korelasyon Dinamik parametrelere ilişkin gerçekleştirmenizi sağlar. Yerleşik bağıntı işlevi ile web performans testleri web tamamlandıktan sonra veya kullandığınızda kaydı dinamik parametreleri algılamak **dinamik parametreleri Web Test Parametrelerine Yükselt** Web performansı Test Düzenleyicisi araç çubuğu. Ancak dahili algılama işlevselliği tüm dinamik parametreleri her zaman bulmaz. Örneğin, genellikle 5 ila 30 dakika arasında bir değer alır oturum kimliği bulmaz. Bu nedenle, bağıntı işlemini el ile yapmanız gerekir.
+Bir kaydedici eklentisi, kendi özel korelasyon Dinamik parametrelere ilişkin gerçekleştirmenizi sağlar. Yerleşik bağıntı işlevi ile web performans testleri web tamamlandıktan sonra veya kullandığınızda kaydı dinamik parametreleri algılamak **dinamik parametreleri Web Test Parametrelerine Yükselt** üzerinde **Web Performans Testi Düzenleyicisi** araç çubuğu. Ancak dahili algılama işlevselliği tüm dinamik parametreleri her zaman bulmaz. Örneğin, genellikle 5 ila 30 dakika arasında bir değer alır oturum kimliği bulmaz. Bu nedenle, bağıntı işlemini el ile yapmanız gerekir.
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Kendi özel eklentiniz için kod yazmanıza olanak sağlar. Bu eklenti bağıntı yapabilir veya kaydedilip Web Performans Test Düzenleyicisi'nde sunulmadan önce birçok yönden web performans testini değiştirme. Bu nedenle, belirli bir dinamik değişkenin kayıtlarınızın için çok büyük olduğunu belirlerseniz, işlemi otomatikleştirebilirsiniz.
 
@@ -29,13 +29,13 @@ Bir kaydedici eklentisi kullanılan bazı diğer yollar ekleme ayıklama ve doğ
 
 Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak, eklenti dağıtma ve yürütüldüğünü açıklar. Yordamları izleyen örnek kod, Visual C# özel dinamik parametre bağıntı kaydedici eklentisi oluşturmak için nasıl kullanılacağını gösterir.
 
-## <a name="creating-a-recorder-plug-in"></a>Kaydedici eklentisi oluşturma
+## <a name="create-a-recorder-plug-in"></a>Kaydedici eklentisi oluşturma
 
 ### <a name="to-create-a-recorder-plug-in"></a>Bir kaydedici eklentisi oluşturmak için
 
 1.  Web performans testi kaydedici eklentisi oluşturmak istediğiniz web performansı ve yük testi projesi içeren bir çözüm açın.
 
-2.  Çözüm Gezgini'nde çözüme sağ tıklayın, **Ekle**ve ardından **yeni proje**.
+2.  İçinde **Çözüm Gezgini**, çözüme sağ tıklayın, **Ekle**ve ardından **yeni proje**.
 
      **Yeni Proje Ekle** iletişim kutusu görüntülenir.
 
@@ -45,9 +45,9 @@ Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak,
 
 5.  İçinde **adı** metin kutusuna kaydedici eklentisi için bir ad yazın.
 
-     Sınıf kitaplığı çözüm Gezgini'ne eklenir ve yeni sınıf Kod Düzenleyicisi'nde açılır.
+     Sınıf kitaplığı eklenir **Çözüm Gezgini** ve yeni bir sınıf içinde açılır **Kod Düzenleyicisi**.
 
-6.  Çözüm Gezgini'nde, yeni sınıf kitaplığı projesi klasörüne sağ tıklayın **başvuruları** klasörü ve select **Başvuru Ekle**.
+6.  İçinde **Çözüm Gezgini**, yeni sınıf kitaplığı proje klasöründe, sağ **başvuruları** klasörü ve select **Başvuru Ekle**.
 
     > [!TIP]
     > Yeni bir sınıf kitaplığı projesi klasörüne örnektir **RecorderPlugins**.
@@ -58,7 +58,7 @@ Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak,
 
 8.  Aşağı kaydırın ve select **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** eklenir **başvuruları** Çözüm Gezgininde klasör.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** eklenir **başvuruları** klasöründe **Çözüm Gezgini**.
 
 9. Kaydedici eklentiniz için kodu yazın. İlk olarak, türetilen yeni bir ortak sınıf oluşturun <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
@@ -81,7 +81,7 @@ Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak,
 
 11. Kaydedici eklentisi web kaydı gerçekleştikten sonra yürütmek için istediğinize göre daha fazla kod ekleyin. Örneğin, aşağıdaki örnekte gösterildiği gibi özel korelasyon işleyecek bir kod ekleyebilirsiniz. Yorumları işlemlere dönüştürme veya doğrulama kuralları ekleme web performansı test ayrıca bir kaydedici eklentisi gibi şeyler için oluşturabilirsiniz.
 
-12. Üzerinde **derleme** menüsünde, yapı seçin \<sınıf kitaplığı proje adı >.
+12. Üzerinde **derleme** menüsünde seçin **derleme \<sınıf kitaplığı proje adı >**.
 
 13. Sonra kaydedici eklentisi Visual Studio ile kaydetmek sırayla dağıtmanız gerekir.
 
@@ -89,9 +89,9 @@ Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak,
 
 Kaydedici eklentisini derledikten sonra ortaya çıkan DLL'yi iki konumdan birine yerleştirmeniz gerekecektir:
 
--   % ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \< *sürüm*> \WebTestPlugins
+-   *%USERPROFILE%\My Documents\Visual Studio \<* sürüm *> \WebTestPlugins*
 
 > [!WARNING]
 > Kaydedici eklentisini iki konumdan birine kopyaladıktan sonra kaydedici eklentisinin kaydedilmesi için için Visual Studio'yu yeniden başlatmanız gerekir.
@@ -102,7 +102,7 @@ Kaydedici eklentisini derledikten sonra ortaya çıkan DLL'yi iki konumdan birin
 
      **WebTestRecordPlugins'i Etkinleştir** iletişim kutusu görüntüler.
 
-2.  Kaydedici eklentisi onay kutusunu seçin ve Tamam'ı seçin.
+2.  Kaydedici eklentisi onay kutusunu seçip **Tamam**.
 
      Web performans testi, kaydı tamamladıktan sonra yeni Kaydedici eklenti yürütülecektir.
 

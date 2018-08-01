@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8359aa76dc2f62afb63f6a36984492210d9aeeff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178325"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380020"
 ---
-# <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Nasıl yapılır: Tanılama Veri Bağdaştırıcıları için Zaman Aşımını Önleme
+# <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Nasıl yapılır: tanılama veri bağdaştırıcıları için zaman aşımlarını engelle
 
 Test ayarlarınızda tanı veri bağdaştırıcıları kullanıyorsanız, aşağıdaki nedenlerden biri nedeniyle test çalıştırmanızın başlattığınızda bir zaman aşımı oluşabilir:
 
--   Test denetleyicisi hizmeti test denetleyicisi bilgisayarında çalışmıyor. Hizmeti yeniden başlatmanız gerekebilir. Test denetleyicinizin belirlenmesi ve test denetleyicilerini yönetme hakkında daha fazla bilgi için bkz. [Test denetleyicilerini yönetme ve Test aracıları Visual Studio ile](../test/manage-test-controllers-and-test-agents.md).
+-   Test denetleyicisi hizmeti test denetleyicisi bilgisayarında çalışmıyor. Hizmeti yeniden başlatmanız gerekebilir. Test denetleyicinizin belirlenmesi ve test denetleyicilerini yönetme hakkında daha fazla bilgi için bkz. [test denetleyicileri ve test aracıları Visual Studio ile yönetme](../test/manage-test-controllers-and-test-agents.md).
 
 -   Uzak bir bilgisayarda veri topluyorsanız, güvenlik duvarı Microsoft Test Yöneticisi'ni engelleyebilir. Microsoft Test Yöneticisi'ni çalıştıran bilgisayar test denetleyicisinden gelen bağlantıları kabul etmeniz gerekir. Güvenlik Duvarı tarafından engellendiği için Microsoft Test Yöneticisi'ni bir ileti denetleyicisinden almadığında zaman aşımı oluşur. Microsoft Test Yöneticisi'ni çalıştıran bilgisayarda güvenlik duvarı ayarlarınızı işaretlemeniz gerekir.
 
@@ -31,19 +31,19 @@ Bir çok sayıda veri toplaması gereken uzun bir test çalıştırdığınızda
 
 Yapılandırma dosyası için Microsoft Test Yöneticisi ya da yapılandırma dosyasını zaman aşımına uğrayan test aracısı için güncelleştirerek zaman aşımını artırabilirsiniz.
 
-Microsoft Test Yöneticisi için yapılandırma dosyası olarak adlandırılır **mtm.exe.config**. Şu dizinde bulunur: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Microsoft Test Yöneticisi için yapılandırma dosyası olarak adlandırılır *mtm.exe.config*. Şu dizinde bulunur: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 Bir test aracısını güncelleştirmek için aşağıdaki yapılandırma dosyalarını test aracısı bilgisayarında güncelleştirmeniz gerekir. Tüm bu dosyalar aynı dizindeki test aracısı bilgisayarında bulunur: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
--   QTAgent.exe.config
+-   *QTAgent.exe.config*
 
--   QTAgent32.exe.config
+-   *QTAgent32.exe.config*
 
--   QTDCAgent.exe.config
+-   *QTDCAgent.exe.config*
 
--   QTDCAgent32.exe.config
+-   *QTDCAgent32.exe.config*
 
-El ile testleri çalıştırın ve bir hata oluşturulduğunda veya test durumu tamamlandığında bir ortamdan verilerini toplamak, tanılama veri bağdaştırıcıları tarafından toplanan tüm veriler el ile testler çalıştıran bilgisayara aktarılır. Çok fazla veri topladıysanız veya yavaş bir ağ bağlantınız varsa varsayılan değer olan 60 saniyeden uzun sürebilir. Örneğin, IntelliTrace bağdaştırıcısını IntelliTrace olaylarını toplamak ve birçok işlem için bilgi çağırmak için yapılandırdıysanız, bu verinin aktarım süresi varsayılan zaman aşımı aşabilir. Bu değeri arttırmak için aşağıdaki yordamı güncelleştirmek için kullanabilirsiniz **mtm.exe.config**.
+El ile testleri çalıştırın ve bir hata oluşturulduğunda veya test durumu tamamlandığında bir ortamdan verilerini toplamak, tanılama veri bağdaştırıcıları tarafından toplanan tüm veriler el ile testler çalıştıran bilgisayara aktarılır. Çok fazla veri topladıysanız veya yavaş bir ağ bağlantınız varsa varsayılan değer olan 60 saniyeden uzun sürebilir. Örneğin, IntelliTrace bağdaştırıcısını IntelliTrace olaylarını toplamak ve birçok işlem için bilgi çağırmak için yapılandırdıysanız, bu verinin aktarım süresi varsayılan zaman aşımı aşabilir. Bu değeri arttırmak için aşağıdaki yordamı güncelleştirmek için kullanabilirsiniz *mtm.exe.config*.
 
 Test Çalıştırıcısı faaliyeti ya da bir test aracısı zaman aşımına uğrarsa bir hata iletisi görüntülenir. Test aracısı için hata iletisi hangi test aracısı bilgisayarın zaman aşımına bilgileri içerir. Aldığınız hata iletisi bağlı olarak yapılandırma dosyalarını güncelleştirmek için aşağıdaki yordamı kullanın.
 
@@ -76,11 +76,11 @@ Test Çalıştırıcısı faaliyeti ya da bir test aracısı zaman aşımına u�
         <!-- End: Test execution settings -->
     ```
 
-5.  Tanılama veri bağdaştırıcıları tamamlanması olayların tamamlanmasını bekleme süresini artırmak için anahtar değeri artırmak **DataCollectorEventTimeoutInSeconds**
+5.  Tanılama veri bağdaştırıcıları tamamlanması olayların tamamlanmasını bekleme süresini artırmak için anahtar değeri artırmak **DataCollectorEventTimeoutInSeconds**.
 
 6.  Zaman aşımı hatası iletisi Test Çalıştırıcısı etkinliği içinse anahtarının değerini arttırmalısınız **RunOperationTimeoutInSeconds**.
 
-7.  Bir hata için veya testleri çalıştıran bilgisayara bir test bittiğinde toplanan herhangi bir veri aktarımı için zaman aşımını artırmak için aşağıdaki zamanaşımını eklemeniz **mtm.exe.config** dosyasının appSettings bölümünde:
+7.  Bir hata için veya testleri çalıştıran bilgisayara bir test bittiğinde toplanan herhangi bir veri aktarımı için zaman aşımını artırmak için aşağıdaki zamanaşımını eklemeniz *mtm.exe.config* dosyasının appSettings bölümünde:
 
     ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->

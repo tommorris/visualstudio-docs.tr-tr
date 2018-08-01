@@ -10,45 +10,45 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 18fa71396caa0c164ef7f37183cda28c701cf4f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970056"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382509"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Nasıl yapılır: Yük Testi Çalışma Ayarı için Örnek Hızı Belirtme
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Nasıl yapılır: yük testi çalışma ayarı için örnek hızı belirtme
 
-Yük testi ile oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** özelliklerini test gereksinimlerini ve hedeflerinizi karşılayacak şekilde değiştirmek için.
+İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde özelliklerini değiştirmek için.
 
-Kullanarak **Yük Testi Düzenleyicisi**, bir çalışma ayarın düzenleyebilirsiniz **örnek hızı** özellik değerine **özellikleri** penceresi. Çalışma ayarları özelliklerini ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).
+Kullanarak **Yük Testi Düzenleyicisi**, bir çalışma ayarının düzenleyebileceğiniz **örnek hızı** özellik değerine **özellikleri** penceresi. Çalıştırma ayarları özellikleri ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).
 
-Uygun bir değer seçin **örnek hızı** özelliği yük testi çalışma ayarı için temel yük testi uzunluğu. Varsayılan değer olarak beş saniye gibi daha küçük bir örnek hızı yük testi sonuçları veritabanında daha fazla alan gerektirir. Uzun yük testleri için örnek hızı artırma topladığınız veri miktarını azaltır. Daha fazla bilgi için bkz: [nasıl yapılır: yük testi çalıştırma ayarı için örnek hızı belirtme](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Uygun bir değer seçin **örnek hızı** yük testi çalışma ayarı için özellik tabanlı yükleme testinizin uzunluğuna. Varsayılan değer olarak beş saniye gibi küçük bir örnekleme hızı yükleme testi sonuçları veritabanı daha fazla alan gerektirir. Daha uzun yük testleri için örnek hızı artırmak topladığınız veri miktarını azaltır. Daha fazla bilgi için [nasıl yapılır: yük testi çalışma ayarı için örnek hızı belirtme](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
-Örnek hızları ilgili bazı kurallar şunlardır:
+Örnek hızlara ait bazı Kılavuzlar şunlardır:
 
-|Yük Test süresi|Örnek hızı önerilir|
+|Yük testi süresi|Önerilen örnek hız|
 |------------------------|-----------------------------|
 |\< 1 saat|5 saniye|
-|1 - 8 saatte bir|15 saniye|
+|1 - 8 saat|15 saniye|
 |8 - 24 saat|30 saniye|
 |> 24 saat|60 saniye|
 
-## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Bir çalışma ayarında performans sayacı örnekleme hızını belirtmek için
+## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Bir çalışma ayarında performans sayacı örnekleme oranı belirtmek için
 
 1.  Bir yük testi açın.
 
-     **Yük Testi Düzenleyicisi** görüntülenir. Yük testi ağacı görüntülenir.
+     **Yük Testi Düzenleyicisi** görünür. Yük testi ağacında görüntülenir.
 
-2.  Ağaç, test yük **çalıştırma ayarları** klasörü, örnek hızı için belirtmek istediğiniz çalışma ayarı seçin.
+2.  Ağaç, yük test **çalıştırma ayarları** klasörü için örnek hızı belirtme istediğiniz çalışma ayarı seçin.
 
-3.  Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
+3.  Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
 
-     Yük ayarın kategoriler ve Özellikler çalışma Özellikleri penceresinde görüntülenir.
+     Özellikleri görüntülenir ve kategorileri yük çalışma ayarı kullanıcının **özellikleri** penceresi.
 
-4.  İçinde **örnek hızı** özelliği, hangi yük testi performans sayaç verileri toplama sıklığı belirten bir saat değeri girin.
+4.  İçinde **örnek hızı** özelliği, yük testi performans sayacı verilerini toplayacak sıklığını belirten bir zaman değeri girin.
 
-5.  Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü. Ardından yeni kullanarak yük testlerini çalıştırabilirsiniz **örnek hızı** değeri.
+5.  Özelliği değiştirmeyi bitirdikten sonra seçin **Kaydet** üzerinde **dosya** menüsü. Daha sonra yeni kullanarak yük testlerini çalıştırabilirsiniz **örnek hızı** değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

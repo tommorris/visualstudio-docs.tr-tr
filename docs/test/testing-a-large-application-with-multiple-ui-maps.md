@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f7ada2c6f3b147e103c132e3d5dfd1d8ac623065
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180379"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379825"
 ---
-# <a name="testing-a-large-application-with-multiple-ui-maps"></a>Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama
+# <a name="test-a-large-application-with-multiple-ui-maps"></a>Birden çok UI eşlemesi bulunan büyük uygulamaları test etme
 
 Bu konu, birden çok UI Haritası'nı kullanarak büyük bir uygulamayı test ettiğinizde, kodlanmış UI testleri kullanma işlemini açıklar.
 
@@ -27,7 +27,7 @@ Bu konu, birden çok UI Haritası'nı kullanarak büyük bir uygulamayı test et
 
 -   Visual Studio Enterprise
 
- Yeni kodlanmış UI testi oluşturduğunuzda, Visual Studio test çerçevesi varsayılan olarak testi için kod oluşturur bir <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfı. Kodlanmış UI testleri nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) ve [kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md).
+ Yeni kodlanmış UI testi oluşturduğunuzda, Visual Studio test çerçevesi varsayılan olarak testi için kod oluşturur bir <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfı. Kodlanmış UI testleri nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [Oluştur kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) ve [kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md).
 
  Oluşturulan kod için UI haritasında test ile etkileşime giren her nesne için bir sınıf içerir. Oluşturulan her bir yöntemi için Yöntem parametreleri için bir yardımcı sınıfı için özel olarak bu yöntem oluşturulur. UI haritasında, nesneleri, sayfalar ve formları ve denetimleri, uygulamanızda çok sayıda varsa, çok fazla büyüyebilir. Ayrıca, birkaç kişiye testleri üzerinde çalışıyorsanız ve o uygulama tek bir büyük UI haritası dosyasıyla hantal hale gelir.
 
@@ -46,11 +46,11 @@ Bu konu, birden çok UI Haritası'nı kullanarak büyük bir uygulamayı test et
 
 -   Bağımsız bir uygulama işlemlerinin birden çok sayfa içeren bir sihirbaz gibi çeşitli noktalarından erişim denetimleri ayarlayın. Bir sihirbazın her sayfasındaki özellikle karmaşık ise, her sayfa için ayrı UI haritası oluşturabilirsiniz.
 
-## <a name="adding-multiple-ui-maps"></a>Birden çok UI eşlemesi ekleme
+## <a name="add-multiple-ui-maps"></a>Birden çok UI Eşlemesi Ekle
 
-#### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>UI haritasında, kodlanmış UI test projesi eklemek için
+### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>UI haritasında, kodlanmış UI test projesi eklemek için
 
-1.  İçinde **Çözüm Gezgini**UI haritası depolamak, kodlanmış UI testi proje dosyasını sağ tıklayın, fareyle için kodlanmış UI test projesi içinde bir klasör oluşturmak için **Ekle** seçip **Yeniklasör**. Örneğin, adlandırabilirsiniz `UIMaps`.
+1.  İçinde **Çözüm Gezgini**UI haritası depolamak, kodlanmış UI testi proje dosyasını sağ tıklayın, fareyle için kodlanmış UI test projesi içinde bir klasör oluşturmak için **Ekle**ve ardından **Yeniklasör**. Örneğin, adlandırabilirsiniz `UIMaps`.
 
      Yeni klasör, kodlanmış UI test projesi altında görüntülenir.
 
@@ -75,15 +75,15 @@ Bu konu, birden çok UI Haritası'nı kullanarak büyük bir uygulamayı test et
 
 7.  UI haritası oluşturmaya devam edin. Eylemler ve Onaylamalar kaydedin, her bileşen için yöntemlerde gruplamak ve ardından kodu oluşturun.
 
- Çoğu durumda, uygulamanızın en üst düzey penceresi tüm sihirbazları, formlar ve sayfalar için sabittir. Üst düzey penceresi için bir sınıf her UI eşlemesine sahip olsa da, tüm eşlemeler büyük olasılıkla çalıştırın, uygulamanızın tüm bileşenlerin aynı üst düzey pencereye başvuruyordur. Üst düzey penceresinden başlayarak kodlanmış UI testleri arama denetimlerin hiyerarşik olarak yukarıdan aşağıya doğru böylece her UI haritasında gerçek üst düzey pencere karmaşık bir uygulamada yinelenen. Gerçek üst düzey pencere yineleniyorsa, o pencereyi değişirse, birden fazla değişiklik neden olur. UI haritası arasında geçiş yaptığınızda bu performans sorunlarına neden olabilir.
+ Çoğu durumda, uygulamanızın en üst düzey penceresi tüm sihirbazları, formlar ve sayfalar için sabittir. Üst düzey bir pencere için bir sınıf her UI eşlemesine sahip olsa da, tüm eşlemeler büyük olasılıkla çalıştırın, uygulamanızın tüm bileşenlerin aynı üst düzey pencereye başvuruyordur. Üst düzey penceresinden başlayarak kodlanmış UI testleri arama denetimlerin hiyerarşik olarak yukarıdan aşağıya doğru böylece her UI haritasında gerçek üst düzey bir pencere karmaşık bir uygulamada yinelenen. Gerçek üst düzey bir pencere yineleniyorsa, o pencereyi değişirse, birden fazla değişiklik neden olur. UI haritası arasında geçiş yaptığınızda bu performans sorunlarına neden olabilir.
 
- Bu etkiyi en aza indirmek için kullanabileceğiniz `CopyFrom()` UI eşleştiren yeni üst düzey pencerede ana üst düzey penceresi ile aynı olduğundan emin olmak için yöntemi.
+ Bu etkiyi en aza indirmek için kullanabileceğiniz `CopyFrom()` yöntemi üst düzey yeni pencerede, UI haritasını ana üst düzey pencere aynı olduğundan emin olun.
 
 ## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, her bileşen ve çeşitli kullanıcı Arabirimi haritaları'nda oluşturulan sınıflar tarafından temsil edilen alt denetimlerini erişim sağlayan bir yardımcı program sınıfı bir parçasıdır.
 
-Bu örnekte, bir web uygulaması adlı `Contoso` giriş sayfası, bir ürün sayfası ve bir alışveriş sepeti sayfası vardır. Her bir bu tarayıcı penceresini olan ortak bir üst düzey pencere paylaşın. UI haritasında her sayfa için yoktur ve aşağıdakine benzer bir kod yardımcı program sınıfı vardır:
+Bu örnekte, bir web uygulaması adlı `Contoso` giriş sayfası, bir ürün sayfası ve bir alışveriş sepeti sayfası vardır. Bu sayfaların her biri, tarayıcı penceresi ortak bir üst düzey pencere paylaşır. UI haritasında her sayfa için yoktur ve aşağıdakine benzer bir kod yardımcı program sınıfı vardır:
 
 ```csharp
 using ContosoProject.UIMaps;
@@ -143,6 +143,6 @@ namespace ContosoProject
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
-- [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)
+- [UI otomasyonunu kullanarak kodunuzu test etme](../test/use-ui-automation-to-test-your-code.md)
 - [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)
-- [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)
+- [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)

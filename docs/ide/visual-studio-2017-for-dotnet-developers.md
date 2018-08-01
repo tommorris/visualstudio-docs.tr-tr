@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175310"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381100"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# üretkenlik Kılavuzu
 
@@ -140,7 +140,7 @@ Kod yazma daha verimli hale getirmek için düzenleyici ve üretkenlik özellikl
 
 | Özellik | Ayrıntılar | Etkinleştirme |
 |-|-|-|
-| Çözüm Gezgini'nde dosyayı bulun | Çözüm Gezgini'nde etkin dosya vurgular | **Araçlar** > **seçenekleri** > **projeler ve çözümler** > **Çözüm Gezgini'nde etkin öğe izleme** |
+| Çözüm Gezgini'nde dosyayı bulun | Etkin dosyada vurgular **Çözüm Gezgini** | **Araçlar** > **seçenekleri** > **projeler ve çözümler** > **Çözüm Gezgini'nde etkin öğe izleme** |
 | Başvuru bütünleştirilmiş kodları ve NuGet paketleri içinde türler için using ekleme | Bir ampul başvurulmayan bir türü için bir NuGet paketini yüklemek için bir kod düzeltme gösterir | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **C#** > **Gelişmiş**   >  **Reference bütünleştirilmiş kodlarında türler için using Öner** ve **NuGet paketlerinde türler için using Öner** |
 | Tam çözüm analizini etkinleştirme | Çözümünüzdeki tüm hataları görmek **hata listesi** | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **C#** > **Gelişmiş**   >  **Tam çözüm analizini etkinleştirme** |
 | Kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir | Tür/üye dış kaynaklardan tanıma ver ve metot gövdeleri gösterilecek yetenek kaynak koda dönüştürücü kullanma | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **C#** > **Gelişmiş**   >  **Kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir** |

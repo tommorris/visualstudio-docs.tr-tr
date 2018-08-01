@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eebefa7b4033de5acec313e241d13cddab7120fa
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945490"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380456"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio'da C++ için Boost.Test kullanma
 
@@ -42,7 +42,7 @@ Boost.Test gerektirir [Boost](http://www.boost.org/)! Boost yüklü değilse, Vc
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>(Visual Studio 2017 sürüm 15.6 ve üzeri) öğe şablonu Ekle
 
-1. Testleriniz için bir .cpp dosyası oluşturmak için'nde proje düğümüne sağ **Çözüm Gezgini** ve **Yeni Öğe Ekle**.
+1. Oluşturmak için bir *.cpp* 'nde proje düğümüne sağ tıklayın, testleriniz için dosya **Çözüm Gezgini** ve **Yeni Öğe Ekle**.
 
    ![Boost.Test öğe şablonu](media/boost_test_item_template.png)
 
@@ -59,7 +59,8 @@ Visual Studio 2017 sürüm 15.5, önceden yapılandırılmış test proje veya �
 1. Sol bölmede seçin **Visual C++** > **Windows Masaüstü**ve ardından **Windows konsol uygulaması** şablonu.
 
 1. Projeye bir ad verin ve seçin **Tamam**.
-1. Silme `main` .cpp dosyası işlevi.
+
+1. Silme `main` işlevi *.cpp* dosya.
 
 1. Boost.Test tek üst bilgi veya dinamik kitaplık sürümünü kullanıyorsanız, Git [Ekle ekleme yönergelerini](#add-include-directives). Statik kitaplık sürümünü kullanıyorsanız, bazı ek yapılandırmalar yapmanız gerekir:
 
@@ -74,19 +75,19 @@ Visual Studio 2017 sürüm 15.5, önceden yapılandırılmış test proje veya �
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-   c. Kaydet ve Kapat \*.vcxproj dosyasını ve projeyi yeniden yükleyin.
+   c. Kaydet ve Kapat  *\*.vcxproj* dosyasını bulun ve ardından projeyi yeniden yükleyin.
 
    d. Açmak için **özellik sayfaları**, proje düğümüne sağ tıklayın ve seçin **özellikleri**.
 
    d. Genişletin **C/C++** > **kod oluşturma**ve ardından **çalışma zamanı kitaplığı**. Seçin **/mtd** için hata ayıklama statik çalışma zamanı kitaplığı veya **/MT** yayın statik çalışma zamanı kitaplığı.
 
-   f. Genişletin **bağlayıcı > Sistem**. Doğrulayın **alt** ayarlanır **konsol**.
+   f. Genişletin **bağlayıcı** > **sistem**. Doğrulayın **alt** ayarlanır **konsol**.
 
    g. Seçin **Tamam** özellik sayfalarını kapatmak için.
 
 ## <a name="add-include-directives"></a>Ekleme yönergelerinde
 
-1. Gerekli test .cpp dosyanıza ekleyin `#include` programınızın türleri ve işlevleri test kodu görünür yapmak için yönergeleri. Genellikle, bir düzey klasör hiyerarşisindeki bir programdır. Yazarsanız `#include "../"`, IntelliSense penceresi görünür ve üst bilgi dosyasının tam yolu seçmenize olanak sağlar.
+1. Testinizde *.cpp* dosya, gerekli ekleyin `#include` programınızın türleri ve işlevleri test kodu görünür yapmak için yönergeleri. Genellikle, bir düzey klasör hiyerarşisindeki bir programdır. Yazarsanız `#include "../"`, IntelliSense penceresi görünür ve üst bilgi dosyasının tam yolu seçmenize olanak sağlar.
 
    ![Ekle #include](media/cpp-gtest-includes.png)
 
@@ -124,7 +125,9 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>Yazma ve testleri çalıştırma
-Artık yazmak ve Boost testleri çalıştırmak hazır olursunuz. Bkz: [Boost Test kitaplığı belgeleri](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) test makrolar hakkında daha fazla bilgi için. Bkz: [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md) kullanarak testlerinizi gruplandırma bulma ve çalıştırma hakkında bilgi için **Test Gezgini**.
+
+Artık yazmak ve Boost testleri çalıştırmak hazırsınız. Bkz: [Boost test kitaplığı belgeleri](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) test makrolar hakkında daha fazla bilgi için. Bkz: [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md) kullanarak testlerinizi gruplandırma bulma ve çalıştırma hakkında bilgi için **Test Gezgini**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)
+
+- [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)

@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178497"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380811"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Yük Testi için Test Denetleyicisi ve Test Aracısı Gereksinimleri
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Test yük test denetleyicisi ve test aracısı gereksinimleri
 
 Bazı test türleri dahil olmak üzere birim, web performansı, yük ve el ile testler Visual Studio ile tümleştirilmiştir. Visual Studio test denetleyicisi kullanarak uzak bilgisayarlarda testleri çalıştırmak için Visual Studio uygulama yaşam döngüsü yönetimi kullanıcıları ve bir veya daha fazla aracı sağlar. Bkz: [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
 
@@ -26,7 +26,7 @@ Bazı test türleri dahil olmak üzere birim, web performansı, yük ve el ile t
 
 Test denetleyicisi ve test aracısı bilgisayarlarının belirli donanım ve yazılım gereksinimleri vardır. Ayrıca, test denetleyicisini dağıtma ve aracıya sahip bilgisayarlar birden çok dil arasında test etmek istiyorsanız, bu dillerin nasıl destekleneceğini planlamanız gerekir.
 
-### <a name="hardware-requirements"></a>Donanım Gereksinimleri
+### <a name="hardware-requirements"></a>Donanım gereksinimleri
 
 Aşağıdaki tablo, bir test denetleyicisi ve test aracıları dağıtmak için önerilen donanım gereksinimlerini gösterir.
 
@@ -39,7 +39,7 @@ Aşağıdaki tablo, bir test denetleyicisi ve test aracıları dağıtmak için 
 |N x 30 bilgisayar test ortamında. Bu, test edilen aracıları ve sunucuları içerir.|Test denetleyicisi|N 2.6 GHz işlemcileri|||
 
 > [!NOTE]
-> Sanal kullanıcı sayısı, yaygın olarak teste büyük ölçüde farklılık gösterir. Temsilcilerde varyans bu sapmanın önemli bir nedeni olduğundan *Düşünme süreleri*, veya kullanıcı gecikmeleridir. Daha fazla bilgi için [Düşünme süreleri benzetimi Web sitesi insan etkileşimi gecikmelerini düzenleme](../test/edit-think-times-in-load-test-scenarios.md). Bir yük testinde web testleri genellikle daha verimlidir ve birim testlerinden daha fazla yük oluşturur. Geçerli bir normal web uygulamasında 3-5 saniyelik düşünme süreleriyle web testlerini çalıştırmak için önceki tabloda sayılardır.
+> Sanal kullanıcı sayısı, yaygın olarak teste büyük ölçüde farklılık gösterir. Temsilcilerde varyans bu sapmanın önemli bir nedeni olduğundan *Düşünme süreleri*, veya kullanıcı gecikmeleridir. Daha fazla bilgi için [Web sitesi insan etkileşimi gecikmelerini benzetmek için düşünme düzenleme kez](../test/edit-think-times-in-load-test-scenarios.md). Bir yük testinde web testleri genellikle daha verimlidir ve birim testlerinden daha fazla yük oluşturur. Geçerli bir normal web uygulamasında 3-5 saniyelik düşünme süreleriyle web testlerini çalıştırmak için önceki tabloda sayılardır.
 
 Burada sunulan yönergeler donanım planlaması için genel kılavuz olarak sağlanır. Test performansını büyük ölçüde test verilerinin miktarına ve test aracılarının sayısına göre değişir. Test aracıları için CPU hızı ve kullanılabilir bellek test yükünü sınırlayacaktır. Test denetleyicilerini, test aracıları sayısına ve testlerde bulunan veri miktarına bağlı olarak daha büyük kaynaklara gerekir.
 
@@ -57,7 +57,7 @@ Karışıklığı önlemek ve işlemi kolaylaştırmak için bir test denetleyic
 
 ## <a name="monitor-agent-resources"></a>Aracı kaynakları izleme
 
-Gözlemleyerek kaynak ihtiyaçlarını belirlemek için aracı makineleri izleyebilirsiniz **QTAgent\*.exe** yürütün ve testleri sırasında ölçek işlemleri. En yaygın sorun QTAgent*.exe süreçlere CPU kullanımı ' dir. CPU kullanımını sürekli olarak yüksek nineties içinde ise daha sonra aracıyı yoğun olarak yüklendiği göstergesidir. Sonraki genel bellek kullanımı kaynaklanıyor. Testleri zorlu için bu kaynakları izleme, makineler kaynakları artırın veya Testlerinizi farklı dağıtmak belirlemeye yardımcı olabilir.
+Gözlemleyerek kaynak ihtiyaçlarını belirlemek için aracı makineleri izleyebilirsiniz *QTAgent\*.exe* yürütün ve testleri sırasında ölçek işlemleri. En yaygın sorun üzerinde *QTAgent\*.exe* işlemler olduğu CPU kullanımı. CPU kullanımını sürekli olarak yüksek nineties içinde ise daha sonra aracıyı yoğun olarak yüklendiği göstergesidir. Sonraki genel bellek kullanımı kaynaklanıyor. Testleri zorlu için bu kaynakları izleme, makineler kaynakları artırın veya Testlerinizi farklı dağıtmak belirlemeye yardımcı olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

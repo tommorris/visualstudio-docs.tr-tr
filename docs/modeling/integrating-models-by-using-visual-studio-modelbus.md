@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177285"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382054"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus modellerini diğer araçlar ve modelleri arasında bağlantılar oluşturmak için bir yöntem sağlar. Örneğin, etki alanına özgü dil (DSL) modelleri ve UML modellerini bağlayabilirsiniz. DSL tümleşik bir dizi oluşturabilirsiniz.
@@ -127,10 +127,10 @@ ms.locfileid: "39177285"
 
 4.  Bir modeldeki bir öğeye başvuru seçerseniz, kullanıcı seçebilirsiniz, örneğin Company.FamilyTree.Person türlerinin bir listesini ekleyebilirsiniz.
 
-5.  Tıklayın **Tamam**ve ardından **tüm Şablonları Dönüştür** Çözüm Gezgini araç.
+5.  Tıklayın **Tamam**ve ardından **tüm Şablonları Dönüştür** içinde **Çözüm Gezgini** araç çubuğu.
 
     > [!WARNING]
-    >  Geçerli model veya varlık seçmediyseniz, Tamam düğmesine etkin görünebilir olsa bile hiçbir etkisi gerekir.
+    > Geçerli model veya varlık seçmediyseniz, Tamam düğmesine etkin görünebilir olsa bile hiçbir etkisi gerekir.
 
 6.  Company.FamilyTree.Person gibi hedef türlerinin bir listesi belirtilmişse, ardından bir bütünleştirilmiş kod başvurusu DSL projenize DLL hedef DSL, örneğin Company.FamilyTree.Dsl.dll başvuru eklemeniz gerekir
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177285"
 3.  Deneysel örneğinde hata ayıklama projede [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], her DSL örneklerini dosyaları ekleyin.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus yalnızca aynı öğeleri modellere başvurular çözmek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözüm. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyasına bir başvuru oluşturulamıyor.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus yalnızca aynı öğeleri modellere başvurular çözmek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözüm. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyasına bir başvuru oluşturulamıyor.
 
 4.  Bazı öğeleri ve bağlantılarına sunulan DSL örneğini oluşturun ve kaydedin.
 

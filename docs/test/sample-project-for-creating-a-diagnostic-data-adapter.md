@@ -1,5 +1,5 @@
 ---
-title: Visual Studio tanılama veri bağdaştırıcısı oluşturmak için örnek proje
+title: Visual Studio'da tanılama veri bağdaştırıcısı oluşturmak için örnek proje
 ms.date: 10/19/2016
 ms.topic: sample
 helpviewer_keywords:
@@ -12,32 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977121"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380776"
 ---
-# <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Tanılama Veri Bağdaştırıcısı Oluşturmak için Örnek Proje
+# <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Tanılama veri bağdaştırıcısı oluşturmak için örnek proje
 
-"MyDiagnosticDataAdapter" testlerinizi çalıştırdığınızda, bir günlük dosyası için test sonuçları iliştirebilirsiniz basit tanılama veri bağdaştırıcısı var.
+"MyDiagnosticDataAdapter" testlerinizi çalıştırdığınızda test sonuçlarına bir günlük dosyası ekleyebilirsiniz bir tanılama verisi bağdaştırıcısıdır.
 
- Herhangi bir makinede yönetici izinleri gerekir burada Tanılama Veri Toplayıcı veya yapılandırma Düzenleyicisi yüklenir.
+ Herhangi bir makinedeki yönetimsel izinlere ihtiyacınız burada tanılama veri toplayıcısının veya yapılandırma düzenleyicisinin yüklü olduğu.
 
 ## <a name="example-data-adapter"></a>Örnek veri bağdaştırıcısı
 
-Bu örnek aşağıdaki görevlerin nasıl gerçekleştirileceğini gösterir:
+Bu örnek, aşağıdaki görevlerin nasıl gerçekleştirileceğini gösterir:
 
--   Bir sınıf için Microsoft Test Yöneticisi tanılama veri bağdaştırıcısı olarak bulunabilir olması için öznitelik uygulayın.
+-   Bir sınıf için Microsoft Test Yöneticisi bir tanılama veri bağdaştırıcısı olarak bulunabilir olması için öznitelik uygulayın.
 
--   Bir kullanıcı denetimi sınıfı bulunabilirlik Microsoft Test Yöneticisi için tanılama veri bağdaştırıcısı yapılandırmasını değiştirmek için kullanmak üzere düzenleyici olarak olması için öznitelik uygulayın.
+-   Bir kullanıcı denetimi sınıfını bulunabilirlik Microsoft Test Yöneticisi için bir tanılama veri bağdaştırıcısı için yapılandırmayı değiştirmek üzere kullanmak için bir düzenleyici olarak olması için öznitelik uygulayın.
 
 -   Varsayılan yapılandırma verilerine erişin.
 
--   Özel tanılama veri toplama olayları için kaydolun.
+-   Belirli tanılama veri koleksiyonu olayları için kaydolun.
 
--   Günlük dosyası için göndererek ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>.
+-   Günlük dosyası gönderilmesini sağlayarak ekleme <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>.
 
 ```csharp
 // My Data Collector Class
@@ -183,7 +183,7 @@ namespace MyCompany.MyDiagnosticDataAdapters
 
 ## <a name="example-configuration-editor"></a>Örnek yapılandırma Düzenleyicisi
 
-Bu tanılama veri bağdaştırıcısı için örnek bir yapılandırma düzenleyicisidir. Bir kullanıcı denetimi projenize ekleyin ve bir etiketi olan çok basit bir form oluşturun ("günlük dosyasının adı:") ve "etiketiyle Basit" adlı bir metin kutusu.
+Bu tanılama veri bağdaştırıcınız için örnek bir yapılandırma düzenleyicisidir. Projenize bir kullanıcı denetimi ekleyin ve bir etiketi olan çok basit bir form oluşturun ("günlük dosyasının adı:") ve "birlikte FileTextBox" adlı bir metin kutusu.
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.Common;
@@ -297,7 +297,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 ## <a name="example-configuration-file"></a>Örnek yapılandırma dosyası
 
-Tanılama Veri Toplayıcı yapılandırma Düzenleyicisi için örnek bir yapılandırma dosyası verilmiştir.
+Tanılama veri toplayıcısı yapılandırma düzenleyiciniz için örnek bir yapılandırma dosyası verilmiştir.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -324,74 +324,74 @@ Tanılama Veri Toplayıcı yapılandırma Düzenleyicisi için örnek bir yapıl
 
 ```
 
-## <a name="compiling-the-code"></a>Kod Derleniyor
+## <a name="compile-the-code"></a>Kod derleme
 
-### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Bu tanılama bağdaştırıcısı kodunu projeyi oluşturmak için
+### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Bu tanılama bağdaştırıcısı için proje kodu oluşturmak için
 
 1.  "MyDataCollector" adlı yeni bir sınıf kitaplığı projesi oluşturun.
 
-2.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**. Eklemek için bir klasör seçmek için Seç **başvuru yollarını** ve üç nokta seçin (**...** ).
+2.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**. Eklenecek klasör seçmek için Seç **başvuru yolları** ve ardından üç noktayı seçin (**...** ).
 
-     **Select Reference Path** iletişim kutusu görüntülenir.
+     **Başvuru yolu seç** iletişim kutusu görüntülenir.
 
 3.  Yükleme dizinine göre aşağıdaki yolu seçin: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*. Seçin **Tamam**.
 
 4.  Başvuru yolunuza klasörü eklemek için **klasörü Ekle**.
 
-     Klasör başvurusu yolları listesinde görüntülenir.
+     Klasör, başvuru yolu listesinde görüntülenir.
 
 5.  Seçin **Tümünü Kaydet** başvuru yollarını kaydetmek için simge.
 
-6.  Derleme ekleyin **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
+6.  Bütünleştirilmiş kod Ekle **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  İçinde **Çözüm Gezgini**, sağ **başvuruları** ve ardından **Başvuru Ekle**.
+    1.  İçinde **Çözüm Gezgini**, sağ **başvuruları** seçip **Başvuru Ekle**.
 
-    2.  Seçin **Gözat** ve bulun **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
-
-         Bu derleme içinde bulunan *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
-
-    3.  Seçin **Tamam**.
-
-7.  Derleme ekleyin **Microsoft.VisualStudio.QualityTools.Common**.
-
-    1.  Çözüm Gezgini'nde sağ **başvuruları** seçip **Başvuru Ekle**.
-
-    2.  Seçin **Gözat** ve bulun **Microsoft.VisualStudio.QualityTools.Common.dll**.
+    2.  Seçin **Gözat** bulun **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
          Bu derleme içinde bulunan *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
     3.  Seçin **Tamam**.
 
-8.  Listelenen tanılama veri bağdaştırıcısı sınıf sınıfı için sınıf kitaplığı için bu belgenin önceki bölümlerinde kopyalayın. Bu sınıf kaydedin.
+7.  Bütünleştirilmiş kod Ekle **Microsoft.VisualStudio.QualityTools.Common**.
 
-9. Proje, sağ MyDataCollector projesindeki Çözüm Gezgini'nde, bir kullanıcı denetimi eklemek için işaret **Ekle**ve ardından **kullanıcı denetimi**. Seçin **eklemek**.
+    1.  İçinde **Çözüm Gezgini**, sağ **başvuruları** seçip **Başvuru Ekle**.
 
-10. Araç kutusunu kullanarak kullanıcı denetimi için bir etiket eklemek ve metin özelliğini değiştirin **dosya adı:**.
+    2.  Seçin **Gözat** bulun **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-11. Araç kutusunu kullanarak kullanıcı denetimi için bir metin kutusu ekleyin ve adla değiştirin **textBoxFileName**.
+         Bu derleme içinde bulunan *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
-12. İçinde **Çözüm Gezgini**, kullanıcı denetimi sağ tıklatın ve ardından **görünümü kodu.** Bu belgede daha önce listelenen kullanıcı denetimi sınıfıyla bu kullanıcı denetimi sınıfını değiştirin. Bu sınıf kaydedin.
+    3.  Seçin **Tamam**.
+
+8.  Bu belgede daha önce listelenen tanılama veri bağdaştırıcısını sınıf sınıf kitaplığınızdaki sınıfa kopyalayın. Bu sınıfı kaydedin.
+
+9. Projeye kullanıcı denetimi eklemek için sağ **MyDataCollector** projesi **Çözüm Gezgini**, işaret **Ekle**ve ardından **kullanıcı denetimi** . Seçin **ekleme**.
+
+10. Araç kutusunu kullanarak, kullanıcı denetimine etiket ekleyin ve metin özelliğini değiştirmek **dosya adı:**.
+
+11. Araç kutusunu kullanarak, kullanıcı denetimine metin kutusu ekleyin ve adla değiştirin **textBoxFileName**.
+
+12. İçinde **Çözüm Gezgini**, kullanıcı denetimine sağ tıklayın ve ardından **kodu görüntüle.** Bu kullanıcı denetimi sınıfını, bu belgenin önceki bölümlerinde listelenmiş kullanıcı denetimi sınıfıyla değiştirin. Bu sınıfı kaydedin.
 
     > [!NOTE]
-    > Varsayılan olarak, kullanıcı denetimi UserControl1 adı verilir. Kullanıcı denetimi sınıf kodunun kullanıcı denetiminin adını kullandığından emin olun.
+    > Varsayılan olarak, kullanıcı denetimine UserControl1 çağrılır. Kullanıcı denetimi sınıf kodunun kullanıcı denetiminin adını kullandığından emin olun.
 
-13. Yapılandırma dosyası oluşturmak için **Çözüm Gezgini** çözüme sağ tıklayın, fareyle **Ekle**ve ardından **yeni öğe**. Seçmek istediğinizde **uygulama yapılandırma dosyası**ve ardından **Ekle**. Bu adlı bir dosyayı ekler **App.config** çözümünüze.
+13. Yapılandırma dosyası oluşturmak için **Çözüm Gezgini** çözüme sağ tıklayın, fareyle **Ekle**ve ardından **yeni öğe**. Seçilecek seçin **uygulama yapılandırma dosyası**ve ardından **Ekle**. Bu adında bir dosya ekleyecektir *App.config* çözümünüze.
 
-14. XML dosyasına daha önce sağlanan örnek XML kopyalayın. Dosyayı kaydedin.
+14. XML XML dosyasına daha önce sağlanan örneği kopyalayın. Dosyayı kaydedin.
 
-15. Çözümü derlemek ve yerleşik bütünleştirilmiş kopyalayın ve `App.config` içine dosya *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors* dizini.
+15. Çözümü derleyin ve derlenmiş bir bütünleştirilmiş kodu kopyalayın ve *App.config* doyasını *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*dizin.
 
-16. Bu özel veri tanılama bağdaştırıcısını kullanmak test ayarları oluşturma. Varolan bir dosyayı toplamak için test ayarlarını yapılandırın.
+16. Bu özel tanılama veri bağdaştırıcısını kullanan test ayarları oluşturun. Varolan dosyayı toplamak için test ayarlarını yapılandırın.
 
-     Microsoft Test Yöneticisi'nden testlerinizi çalıştırıyorsanız, bu atayabilirsiniz testleri çalıştırma veya test ayarlarınızı atamak ve geçersiz kılma seçenekleri komutuyla Çalıştır kullanmadan önce test planınız için test ayarlarını. Test ayarları hakkında daha fazla bilgi için bkz: [toplamak tanılama bilgileri kullanarak Test ayarlarını](../test/collect-diagnostic-information-using-test-settings.md).
+     Microsoft Test Yöneticisi'nden testleri çalıştırıyorsanız, bunları atayabilir test ayarlarını test planınıza test ayarlarınızı atamak ve yok saymak için seçenekler komutu ile Çalıştır kullanın veya testlerinizi çalıştırmadan önce test ayarları. Test ayarları hakkında daha fazla bilgi için bkz. [test ayarlarını kullanarak tanılama bilgi toplayan](../test/collect-diagnostic-information-using-test-settings.md).
 
-17. Seçilen tanılama veri bağdaştırıcısı ile test ayarlarını kullanarak testleri çalıştırın.
+17. Seçilen tanılama veri bağdaştırıcısıyla test ayarlarını kullanarak testlerinizi çalıştırın.
 
-     Test çalıştırıldığında, belirtilen veri dosyası test sonuçlarınızı eklenir.
+     Test yürütüldüğü zaman belirttiğiniz veri dosyası test sonuçlarınıza eklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Nasıl yapılır: tanılama veri bağdaştırıcısı oluşturma](../test/how-to-create-a-diagnostic-data-adapter.md)
-- [Nasıl yapılır: tanılama veri bağdaştırıcınızın verileri için bir özel düzenleyici oluşturma](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Nasıl yapılır: tanılama veri bağdaştırıcınızın verileri için özel bir düzenleyici oluşturma](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Nasıl yapılır: özel tanılama veri bağdaştırıcısı yükleme](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
-- [Özel veri toplayan veya Test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Özel veri toplayan veya test makinesini etkileyen tanılama veri bağdaştırıcısı oluşturma](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)

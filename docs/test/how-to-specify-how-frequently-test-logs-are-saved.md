@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da kaydetme yük testi günlükleri
+title: Kaydetme yük testi Visual Studio'da günlüğe kaydeder.
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,47 +11,46 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4114a938f643cee629311a72aec72f94cfcd2fc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3464ffc1db1a757ac20e3f77d0d901ec731a7cab
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966660"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381940"
 ---
-# <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini Kullanarak Test Günlüklerinin Hangi Sıklıkla Kaydedileceğini Belirtme
+# <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak test günlüklerinin hangi sıklıkla kaydedileceğini belirtme
 
-Yük testi ile oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** yük değiştirmek için test gereksinimleri ve hedeflerinizi karşılamak için özellikler sınar. Daha fazla bilgi için bkz: [izlenecek yol: oluşturma ve bir yük testi çalıştırma](../test/walkthrough-create-and-run-a-load-test.md).
+İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** yük değiştirmek için test ihtiyaçlarınızı ve hedeflerinizi karşılamak için özellikler sınar. Daha fazla bilgi için [izlenecek yol: bir yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md).
 
 > [!NOTE]
-> Çalışma ayarları özelliklerini ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).
+> Çalıştırma ayarları özellikleri ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).
 
-Test günlük değiştirmek için Yük Testi Düzenleyicisini kullanarak bir yük testinde kaydedilir ne sıklıkta belirtebilirsiniz **tamamlanmış testler için günlük sıklığını Kaydet** Özellikleri penceresinde özelliği.
+Test günlüğü kullanarak bir yük testi içinde kaydedildiğini ne sıklıkta belirtebilirsiniz **Yük Testi Düzenleyicisi** değiştirmek için **tamamlanmış testler için günlük sıklığını Kaydet** özelliğinde **özellikleri** penceresi.
 
-## <a name="to-specify-the-frequency-for-saving-the-test-log-in-a-load-test"></a>Bir yük testinde test günlüğüne kaydetme sıklığını belirtmek için
+## <a name="to-specify-the-frequency-for-saving-the-test-log-in-a-load-test"></a>Bir yük testinde test günlüğü kaydetmek için sıklığını belirtmek için
 
 1.  Bir yük testi açın.
 
-     Yük Testi Düzenleyicisi görüntülenir. Yük testi ağacı görüntüler.
+     **Yük Testi Düzenleyicisi** görünür. Yük testi ağacında gösterir.
 
-2.  Ağaçları yük testi **çalıştırma ayarları** klasörü, ne sıklıkta test günlüğüne kaydedildiğini belirtmek istediğiniz çalışma ayarı düğümünü seçin.
+2.  Ağacı'nın yük testi **çalıştırma ayarları** klasörünü ne sıklıkta test günlüğe kaydedildiğini belirtmek istediğiniz çalışma ayarı düğümünü seçin.
 
-3.  Üzerinde **Görünüm** menüsünde, select **Özellikler penceresini**.
+3.  Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
 
-     Senaryonun kategoriler ve Özellikler Özellikler penceresinde görüntülenir.
+     Senaryonun kategoriler ve özellikler görüntülenir **özellikleri** penceresi.
 
-4.  Metin kutusunda **tamamlanmış testler için günlük sıklığını Kaydet** özelliği, hangi test günlüğüne yazılır sıklığı belirtmek için bir sayıyı yazın. Bir sınama girilen her sayısı dışı test günlüğe kaydedilecek sayıyı belirtir. Örneğin, on değerini girmek onuncu, 20, otuzuncu ve benzeri test günlüğüne yazılacağını belirtir.
+4.  Metin kutusunda **tamamlanmış testler için günlük sıklığını Kaydet** özelliği, hangi test günlüğü yazılır sıklığı belirtmek için sayı yazın. Girilen her test sayısı yetersiz bir test günlüğüne kaydedilecek sayıyı belirtir. Örneğin, on değerinin girilmesi onda, 20, otuzuncu ve benzeri test günlüğüne yazılacağını belirtir.
 
     > [!NOTE]
-    > İçin 0 değerini kullanarak **tamamlanmış testler için günlük sıklığını Kaydet** özellik belirtir hiçbir test günlüklerine kaydedilir.
+    > Bir değer için 0'ı kullanarak **tamamlanmış testler için günlük sıklığını Kaydet** özelliği, hiçbir test günlüğü kaydedildiğini belirtir.
 
-5.  Özelliği değiştirmeyi bitirdikten sonra seçin **kaydetmek** üzerinde **dosya** menüsü.
+5.  Özelliği değiştirmeyi bitirdikten sonra seçin **Kaydet** üzerinde **dosya** menüsü.
 
-     Günlüğe kaydedilen veri Yük Testi Çözümleyicisinin Tablo görünümü kullanılarak görüntülenebilir. Daha fazla bilgi için bkz: [yük testi sonuçlarını çözümleme ve hataları Tablo görünümünde](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     Yük Testi Çözümleyicisinin Tablo görünümü kullanarak günlüğe kaydedilen verileri görüntülenebilir. Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md)
 - [İzlenecek yol: Yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md)
-- [Yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md)
-- [Nasıl yapılır: Test başarısızlıklarının Test günlüklerine kaydedilip kaydedilmediği belirleme](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
+- [Nasıl yapılır: test başarısızlıklarının test günlüklerini kaydedilip kaydedilmediği belirleme](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
 - [Nasıl yapılır: sanal kullanıcı etkinlik grafiğini etkinleştirmek için tüm ayrıntıların toplanmasını yapılandırma](../test/how-to-configure-load-tests-to-collect-full-details.md)

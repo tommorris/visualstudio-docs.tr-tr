@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8c149f9febccb8363d5420c447c66bbdb5a5da6e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42336bcbded19343651eeff3b18a7f4a52c96fbe
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177779"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382255"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Nasıl yapılır: Yük Testi Sonuçlarını bir Depoya Aktarma
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Nasıl yapılır: bir depoda alma yük testi sonuçları
 
-Çalıştırma sırasında toplanan bilgileri, bir yük testi çalıştırdığınızda, yük testi sonuçları deposunda depolanır. Yük testi sonuçları deposu, performans sayacı verileri ve hatalar hakkında bilgi içerir. Daha fazla bilgi için [yük testi sonuçları deposu'da yük testi sonuçlarını yönetme](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Çalıştırma sırasında toplanan bilgileri, bir yük testi çalıştırdığınızda, yük testi sonuçları deposunda depolanır. Yük testi sonuçları deposu, performans sayacı verileri ve hatalar hakkında bilgi içerir. Daha fazla bilgi için [Yönet yük testi sonuçları yük testi sonuçları deposunda](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
  Kullanarak yük testi sonuçları Yük Testi Düzenleyicisi'nden yönetebilirsiniz **açık ve yük testi sonuçlarını yönetme** iletişim kutusu. Açın, içeri aktarma, dışarı aktarma ve yük testi sonuçları kaldırın.
 
@@ -57,4 +57,4 @@ ms.locfileid: "39177779"
 
 - [Yük testi sonuçları deposu içindeki yük testi sonuçlarını yönetme](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Nasıl yapılır: yük testi sonuçlarını bir depodan dışarı aktarma](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Nasıl yapılır: bir depodan dışarı aktarma yük testi sonuçları](../test/how-to-export-load-test-results-from-a-repository.md)

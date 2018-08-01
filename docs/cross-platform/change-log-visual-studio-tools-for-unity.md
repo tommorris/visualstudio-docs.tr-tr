@@ -10,12 +10,12 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 395b76e7cebbf774f60c845462cd758ac8e737d1
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232448"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381061"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
@@ -487,7 +487,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
     -   MonoBehavior iletilerin görünürlüğünü yapılandırmak için bir seçenek eklenmiştir.
 
-    -   Visual Studio Unity projeleri için ilgili olmayan özellik sayfalarını kaldırıldı.
+    -   Visual Studio için Unity projeleri ilgili olmayan özellik sayfalarını kaldırıldı.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 

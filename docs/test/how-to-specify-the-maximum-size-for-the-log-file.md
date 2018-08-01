@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Yük testleri için günlük dosyası boyutu
+title: Visual Studio'da yük testleri için günlük dosyası boyutu
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7faf5402f495eefe64000c67048bcb85c9197388
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29329cb1403745b80d68670f5316ce570582d72c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965092"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379403"
 ---
-# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Nasıl yapılır: yük testleri için günlük dosyası en büyük boyutu belirtin
+# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Nasıl yapılır: yük testleri için günlük dosyası boyutu üst sınırı belirtin
 
-Varsayılan olarak, yük testleri için kullanılan günlük dosyası en büyük boyutunu 20 megabayt ayarlanır. Denetleyici hizmetiyle ilişkilendirilmiş yapılandırma dosyasını düzenleyerek bu değeri değiştirebilirsiniz.
+Varsayılan olarak, yük testleri için kullanılan günlük dosyasının en büyük boyutu, 20 megabayt olarak ayarlanır. Denetleyici hizmetiyle ilişkilendirilmiş yapılandırma dosyasını düzenleyerek bu değeri değiştirebilirsiniz.
 
-## <a name="specify-the-maximum-log-file-size-for-load-test"></a>Yük testi için maksimum günlük dosyası boyutu belirtin
+## <a name="specify-the-maximum-log-file-size-for-load-test"></a>Yük testi için en fazla günlük dosyası boyutunu belirtme
 
-1.  Açık *QTCcontroller.exe.config* % ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config bulunan XML yapılandırma dosyası.
+1.  Açık *QTCcontroller.exe.config* bulunan XML yapılandırma dosyasını *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config*.
 
 2.  Bulun `<add key="LogSizeLimitInMegs" value="20"/>` altında girdisi `<appSettings>` etiketi.
 
@@ -39,12 +39,12 @@ Varsayılan olarak, yük testleri için kullanılan günlük dosyası en büyük
       </appSettings>
     ```
 
-3.  Değiştirme `value ="20"` günlük dosyası için belirtmek istediğiniz maksimum izin verilen boyutu.
+3.  Değiştirme `value ="20"` günlük dosyası için belirtmek istediğiniz izin verilen maksimum boyutu.
 
     > [!NOTE]
-    > "0" değerinin girilmesi boyutu kullanılabilir disk alanı tarafından günlük dosyası yalnızca sınırlı olduğunu belirtir.
+    > "0" değeri girme günlük dosyasının boyut olarak kullanılabilir disk alanı yalnızca sınırlıdır belirtir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yük testi günlük oluşturma ayarlarını değiştirme](../test/modify-load-test-logging-settings.md)
-- [Test denetleyicileri ve Test aracıları için bağlantı noktalarını yapılandırma](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Yük testi günlüğü ayarlarını değiştirme](../test/modify-load-test-logging-settings.md)
+- [Test denetleyicileri için bağlantı noktalarını yapılandırın ve test aracıları](../test/configure-ports-for-test-controllers-and-test-agents.md)

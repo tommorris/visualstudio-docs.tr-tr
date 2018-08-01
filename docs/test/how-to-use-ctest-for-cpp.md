@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da c++ CTest kullanma
+title: Visual Studio'da C++ için CTest kullanma
 ms.date: 11/07/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,36 +9,36 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b9448fa36d6329296731c69a1cfe1f2d97240df1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751039"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380531"
 ---
-# <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Visual Studio'da c++ CTest kullanma
+# <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Visual Studio'da C++ için CTest kullanma
 
-(CTest içeren) CMake tümleşik Visual Studio IDE içinde varsayılan olarak bir bileşeni olarak **C++ ile masaüstü Develoment** iş yükü. Makinenizde yüklemeniz gerekiyorsa, Visual Studio yükleyicisi programını açın, **Değiştir** düğmesini tıklatıp denetleyin [CMake araçları Visual C++ için](/cpp/ide/cmake-tools-for-visual-cpp) iş yükü bileşenlerin listesi altında.
+(Kod CTest içerir) CMake tümleşik Visual Studio IDE'ye varsayılan olarak **C++ ile masaüstü Develoment** iş yükü. Makinenizde yüklemeniz gerekiyorsa, Visual Studio yükleyicisi programını açın, **Değiştir** düğmesine ve ardından denetleyin [Visual C++ için CMake araçlarını](/cpp/ide/cmake-tools-for-visual-cpp) altında iş yükü bileşenlerin listesi.
 
-## <a name="to-write-tests"></a>Testleri yazmak için
+## <a name="to-write-tests"></a>Testler yazmak için
 
-Visual Studio'da CMake desteği Visual Studio Proje sistemi kullanılmaz. Bu nedenle, yazma ve hiçbir CMake ortamında gibi CTest testleri yapılandırın. Visual Studio'da CMake kullanma hakkında daha fazla bilgi için bkz: [CMake araçları Visual C++ için](/cpp/ide/cmake-tools-for-visual-cpp).
+Visual Studio'da CMake desteği, Visual Studio Proje sistemi kullanılmaz. Bu nedenle, yazma ve herhangi bir CMake ortamında olduğu gibi CTest testler yapılandırın. Visual Studio'da CMake kullanma hakkında daha fazla bilgi için bkz. [Visual C++ için CMake araçlarını](/cpp/ide/cmake-tools-for-visual-cpp).
 
-## <a name="to-run-tests-visual-studio-2017-version-156"></a>(Visual Studio 2017 sürüm 15,6) testleri çalıştırmak için
+## <a name="to-run-tests-visual-studio-2017-version-156"></a>(Visual Studio 2017 sürüm 15.6) testleri çalıştırmak için
 
-Visual Studio 2017 içinde sürüm 15,6, CTest tam olarak tümleşiktir **Test Gezgini** ve Google ve artırma birim testi çerçevelerini de destekler. Bu çerçeveleri bileşen olarak varsayılan olarak dahil **C++ ile masaüstü Develoment** iş yükü. Ancak, daha eski bir sürümü Visual Studio Proje yükseltiyorsanız, Visual Studio yükleyicisi programını kullanarak bu çerçeveleri yüklemeniz gerekebilir.
+Visual Studio 2017 sürüm 15.6, CTest tam olarak tümleşiktir **Test Gezgini** ve aynı zamanda Google ve Boost birim testi çerçevelerini destekler. Bu çerçeveler bileşen olarak varsayılan olarak dahil **C++ ile masaüstü Develoment** iş yükü. Ancak, bir projeyi Visual Studio'nun eski bir sürümden yükseltiyorsanız, Visual Studio yükleyicisi programını kullanarak bu çerçeveleri yüklemeniz gerekebilir.
 
-Aşağıdaki çizimde Google Test Çerçevesi kullanarak çalışacak bir CTest sonuçlarını gösterir:
+Aşağıdaki çizim bir CTest, Google Test çerçevesini kullanarak çalıştırma sonuçları gösterilmektedir:
 
-![Google Test çerçevesinde VS2017 ile CTest 15,6](media/ctest-test-explorer.png)
+![CTest vs2017 Google Test Framework 15,6](media/ctest-test-explorer.png)
 
-CTest ancak değil Google veya artırma bağdaştırıcıları kullanıyorsanız, tek tek yerine CTest düzeyinde yöntemi düzeyi test sonuçları görürsünüz. Hata ayıklama ve Adımla yalnızca CTest yürütülebilir dosyaları, ancak Yığın izlemeleri tek tek testlerin üzerinde desteklenmez.
+CTest ancak değil Google veya Boost bağdaştırıcıları kullanıyorsanız, yöntem düzeyine test sonuçları yerine tek tek CTest düzeyinde bakın. Hata ayıklaması yapabilirsiniz ve adım adım yalnızca CTest yürütülebilir dosyaları, ancak yığın izlemelerini bireysel testler üzerinde desteklenmez.
 
-## <a name="to-run-tests-visual-studio-2017-version-155"></a>(Visual Studio 2017 sürüm 15,5) testleri çalıştırmak için
+## <a name="to-run-tests-visual-studio-2017-version-155"></a>(Visual Studio 2017 sürüm 15.5) testleri çalıştırmak için
 
-İçinde **Visual Studio 2017 sürüm 15,5**, CTest ile tümleşik değildir **Test Gezgini**. Testlerinizi CMake ana menüden veya bağlam menüsünden çalıştırabilirsiniz bir **CMakeLists.txt** dosyasını **Çözüm Gezgini**. Visual Studio test sonuçlarını yönergelerine uygun **çıktı penceresi**.
+İçinde **Visual Studio 2017 sürüm 15.5**, CTest ile tümleşik olmayan **Test Gezgini**. Testlerinizi CMake ana menüden veya bağlam menüsünden çalıştırabileceğiniz bir *CMakeLists.txt* dosyası **Çözüm Gezgini**. Test sonuçları için Visual Studio yönlendirilmiş **çıkış penceresine**.
 
-![VS2017 15,5 CTest testleri çalıştırma](media/cpp-cmake-run-tests.png)
+![VS2017 15.5 sürümünde CTest Testleri Çalıştır](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

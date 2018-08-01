@@ -15,14 +15,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978255"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381722"
 ---
-# <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Ne kadar kodun test edildiğini belirlemek için kod kapsamını kullanma
+# <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Kod kapsamını kullanarak ne kadar kodun test edildiğini belirleme
 
 Proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler tarafından test edilen belirlemek için Visual Studio kod kapsamı özelliğini kullanabilirsiniz. Etkin hatalara karşı koruma sağlamak için testleriniz çalışmalı veya kodunuzun büyük bir kısmını 'kapsamalıdır'.
 
@@ -51,7 +51,7 @@ Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kaps
 > - Yönetilmeyen (yerel) kod ile çalışıyorsanız, hata ayıklama derlemesini kullanma
 > - Her derleme için .pdb (simge) dosyaları oluşturduğunuzdan emin olun.
 
-Beklediğiniz sonuçları alamazsanız, bkz. [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md). biçimindeki telefon numarasıdır. Kod kapsamını kod güncelleştirdikten sonra çalıştırmayı unutmayın. Kodunuzu değiştirdikten sonra veya testleri çalıştırdığınızda kapsam sonuçları ve kod renklendirme otomatik olarak güncelleştirilmez.
+Beklediğiniz sonuçları alamazsanız, bkz. [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md). Kod kapsamını kod güncelleştirdikten sonra çalıştırmayı unutmayın. Kodunuzu değiştirdikten sonra veya testleri çalıştırdığınızda kapsam sonuçları ve kod renklendirme otomatik olarak güncelleştirilmez.
 
 ## <a name="report-in-blocks-or-lines"></a>Bloklarda veya satırlarda raporu
 
@@ -63,7 +63,7 @@ Yüzdeler kaynak kodunda gördüğünüz parçaların boyutuyla daha yakından i
 
 ## <a name="manage-code-coverage-results"></a>Kod kapsamı sonuçlarını yönetme
 
-Kod Kapsama Sonuçları penceresi genellikle en son çalıştırma sonucunu gösterir. Sonuçlar test verilerini değiştirirseniz veya testlerinizin her defasında yalnızca bir kısmını çalıştırırsanız değişir.
+**Kod kapsamı sonuçlarını** penceresi genellikle en son çalıştırma sonucunu gösterir. Sonuçlar test verilerini değiştirirseniz veya testlerinizin her defasında yalnızca bir kısmını çalıştırırsanız değişir.
 
 Kod kapsamı penceresini önceki sonuçları veya diğer bilgisayarlarda elde edilen sonuçları görüntülemek için de kullanılabilir.
 
@@ -71,13 +71,13 @@ Birçok çalıştırmanın sonucunu örneğin farklı test verileri kullanan ça
 
 -   **Bir önceki sonuç kümesini görüntülemek için**, aşağı açılan menüden seçim yapın. Menü, yeni bir çözüm açtığınızda temizlenen geçici bir liste gösterir.
 
--   **Bir önceki oturumdan sonuçları görüntülemek için**, seçin **kod kapsamı sonuçlarını Al**, çözümünüzdeki TestResults klasörüne gidin ve .coverage dosyasını alın.
+-   **Bir önceki oturumdan sonuçları görüntülemek için**, seçin **kod kapsamı sonuçlarını Al**, gitmek **TestResults** çözümünüzü ve alma klasöründe bir *.coverage* dosya.
 
-    Karşılama renklendirme .coverage dosyası oluşturulurken kaynak kodu değişirse yanlış olabilir.
+    Karşılama renklendirme beri kaynak kodu değişirse yanlış olabilir *.coverage* dosyası oluşturuldu.
 
--   **Sonuçları metin olarak okunabilir hale getirmek için**, seçin **kod kapsamı sonuçlarını ver**. Bu, diğer araçlarla işlemek veya kolayca posta ile göndermek okunabilir .coveragexml dosyasını oluşturur.
+-   **Sonuçları metin olarak okunabilir hale getirmek için**, seçin **kod kapsamı sonuçlarını ver**. Bu bir okunabilir oluşturur *.coveragexml* diğer araçlarla işlemek veya kolayca posta ile göndermek dosyası.
 
--   **Sonuçları başka bir kişiye göndermek için**, ya .coverage dosyası veya dışarı aktarılan .coveragexml dosyasını gönderin. Sonra dosyayı içe aktarabilirsiniz. Kaynak kodun aynı sürümü varsa, kapsam renklendirmeyi görebilirsiniz.
+-   **Sonuçları başka bir kişiye göndermek için**, göndermek ya da bir *.coverage* dosya ya da dışarı aktarılan bir *.coveragexml* dosya. Sonra dosyayı içe aktarabilirsiniz. Kaynak kodun aynı sürümü varsa, kapsam renklendirmeyi görebilirsiniz.
 
 ## <a name="merge-results-from-different-runs"></a>Farklı çalışmalardan sonuçları birleştirme
 
@@ -245,15 +245,15 @@ Aşağıdaki makroları kullanın:
 
 ### <a name="include-or-exclude-additional-elements"></a>Dahil edilecek veya hariç ek öğeler
 
-Kod kapsamı çözümlemesi yüklü olan ve bir .pdb dosyası .dll veya .exe dosyası ile aynı dizinde bulunan derlemeler üzerinde yapılır. Bu nedenle bazı durumlarda uygun .pdb dosyalarının kopyalarını alarak eklenen derleme kümesini genişletebilirsiniz.
+Kod kapsamı analizi yüklenen derlemeler ve kendisi için gerçekleştirilen bir *.pdb* aynı dizinde dosya kullanılabilir *.dll* veya *.exe* dosya. Bu nedenle bazı durumlarda, uygun kopyalarını alarak eklenen derleme kümesini genişletebilirsiniz *.pdb* dosyaları.
 
-.runsettings dosyasını yazarak seçilen kod kapsamı çözümleme derlemeleri ve öğeleri üzerinde daha fazla denetimle alıştırma yapabilirsiniz. Örneğin, kendi sınıfları için öznitelikler eklemek zorunda kalmadan belirli tür derlemeleri hariç tutabilirsiniz. Daha fazla bilgi için [kod kapsamı çözümlemeyi özelleştirme](../test/customizing-code-coverage-analysis.md).
+Üzerinde derlemeleri ve öğeleri seçili kod kapsamı çözümleme yazarak daha fazla denetimle alıştırma yapabilirsiniz bir *.runsettings* dosya. Örneğin, kendi sınıfları için öznitelikler eklemek zorunda kalmadan belirli tür derlemeleri hariç tutabilirsiniz. Daha fazla bilgi için [kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>Yapı hizmetindeki kod kapsamını analiz etme
 
 Kodunuzda denetlediğinizde, testiniz diğer ekip üyelerinden gelen diğer tüm testlerle birlikte yapı sunucusunda çalışır. (, Zaten bu ayarları yapmadıysanız bkz [yapı işleminizde testler](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Tüm projeye en güncel ve en kapsamlı resmi sağladığından, kod kapsamını yapı hizmetinde çözümlemek yararlıdır. Otomatik Sistem testleri ve geliştirme makinelerinde genellikle çalıştırma kodlanmış diğer testleri de içerecektir.
 
-1. Takım Gezgini'nde açın **yapılar**ve ardından eklemek veya bir yapı tanımını düzenleyin.
+1. İçinde **Takım Gezgini**açın **yapılar**ve ardından eklemek veya bir yapı tanımını düzenleyin.
 
 2. Üzerinde **işlem** sayfasında **otomatik testler**, **Test kaynağı**, **çalıştırma ayarları**. Ayarlama **çalışma ayarları dosya türü** için **kod kapsamı etkinleştirmesiyle**.
 
@@ -286,6 +286,6 @@ Kod kapsamı sonuçlarını görmüyorsanız [kod kapsamı sorunlarını giderme
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod Kapsamı Çözümlemeyi Özelleştirme](../test/customizing-code-coverage-analysis.md)
-- [Kod Kapsamı Sorunlarını Giderme](../test/troubleshooting-code-coverage.md)
-- [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)
+- [Kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md)
+- [Kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md)
+- [Birim testi kod](../test/unit-test-your-code.md)

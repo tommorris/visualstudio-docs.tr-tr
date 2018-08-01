@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175801"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382311"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Nasıl yapılır: Web Başarım Testi API'si Kullanma
+# <a name="how-to-use-the-web-performance-test-api"></a>Nasıl yapılır: web başarım testi API'si kullanma
 
 Web performans testleri için kod yazabilirsiniz. Web performans testi API'si, kodlanmış web performans testleri, web performans testi eklentileri, istek eklentileri, istekler, ayıklama kuralları ve doğrulama kurallarını oluşturmak için kullanılır. Bu türleri oluşturan sınıfları, bu API temel sınıflardır. Bu API diğer türleri oluşturulmasını desteklemek için kullanılan <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>, ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> nesneleri. Kullandığınız <xref:Microsoft.VisualStudio.TestTools.WebTesting> özelleştirilmiş oluşturmak için ad alanı web performans testleri.
 
@@ -63,11 +63,11 @@ Web performans testleri için kod yazabilirsiniz. Web performans testi API'si, k
 
 9. Web performans testinizi çalıştırın.
 
-     Örnek uygulaması için <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, bkz: [nasıl yapılır: Web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Örnek uygulaması için <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, bkz: [nasıl yapılır: web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Özel kod ve yük testleri için eklentiler oluşturma](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Nasıl yapılır: yük testi API'si kullanma](../test/how-to-use-the-load-test-api.md)
-- [Nasıl yapılır: Web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Nasıl yapılır: web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)

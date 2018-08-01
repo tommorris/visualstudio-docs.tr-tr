@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175558"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379812"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Test Ayarlarını Kullanarak Yük Testleri için ASP.NET Profil Oluşturucu'yu Yapılandırma
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da test ayarlarını kullanarak yük testleri için ASP.NET profil oluşturucuyu yapılandırma
 
 ASP.NET Profil Oluşturucu bilgi toplamak için ASP.NET profiler tanılama veri bağdaştırıcısı'nı kullanabilirsiniz. Bu tanılama veri bağdaştırıcısı, ASP.NET uygulamaları için performans verilerini toplar.
 
@@ -29,7 +29,7 @@ ASP.NET profiler tanılama veri bağdaştırıcısı, bir yük testi çalıştı
 > [!NOTE]
 > ASP.NET profiler tanılama veri bağdaştırıcısı Internet Information Services (IIS) işleminin profilini. Bu nedenle, bir geliştirme web sunucusuna karşı çalışmaz. Yük testinizde Web sitesinin profilini çıkarmak için IIS'in çalıştığı makineye bir test aracısı yüklemek zorunda. Test aracısı yük oluşturmayacak ancak yalnızca koleksiyon için bir aracı olacak. Daha fazla bilgi için [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
 
-Daha fazla bilgi için [nasıl yapılır: Dağıtılmış yük testi için bir Test ayarı oluşturun](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Daha fazla bilgi için [nasıl yapılır: Dağıtılmış yük testi için bir test ayarı oluşturmanız](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 Aşağıdaki yordam için ASP.NET profiler tanılama veri bağdaştırıcısı yapılandırma açıklar.
 
@@ -52,7 +52,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Visual Studio'dan test ayarla
 
 4.  Katman etkileşim profili oluşturma'yı etkinleştirmek için seçin **Katman etkileşimi profil oluşturmayı etkinleştir**.
 
-     Katman etkileşimi profil oluşturma katman her yapı için (örneğin, MyPage.aspx veya CompanyLogo.gif) web sunucusuna gönderilen istek sayısı ve her isteğe hizmet vermek için geçen süre. Ayrıca, katman etkileşim profili oluşturma ve hangi ADO.NET bağlantı sayfası isteğin bir parçası olarak kullanılan kaç sorguları ve saklı yordam çağrılarını bu isteği hizmet parçası olarak dahil edilen toplar.
+     Katman etkileşim profili oluşturma, her bir yapıt için web sunucusuna gönderilen istek sayısını sayar (örneğin, *MyPage.aspx* veya *CompanyLogo.gif*) ve her isteğe hizmet vermek için geçen süre. Ayrıca, katman etkileşim profili oluşturma ve hangi ADO.NET bağlantı sayfası isteğin bir parçası olarak kullanılan kaç sorguları ve saklı yordam çağrılarını bu isteği hizmet parçası olarak dahil edilen toplar.
 
      İki farklı ayarlar, zamanlama bilgilerinin toplanır:
 
@@ -65,5 +65,5 @@ Bir test ayarında yapılandırılan ASP.NET profiler tanılama veri bağdaştı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Test ayarlarını kullanarak tanılama bilgileri Topla](../test/collect-diagnostic-information-using-test-settings.md)
-- [Nasıl yapılır: Dağıtılmış yük testi için bir Test ayarı oluşturun](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Nasıl yapılır: Dağıtılmış yük testi için bir test ayarı oluşturun](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Test denetleyicileri ve test aracıları](configure-test-agents-and-controllers-for-load-tests.md)

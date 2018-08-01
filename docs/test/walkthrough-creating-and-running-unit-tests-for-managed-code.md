@@ -15,14 +15,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978170"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380869"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
 Bu makalede, oluşturma işleminde, çalışan, adımları ve bir dizi birim özelleştirme yönetilen kod ve Visual Studio için Microsoft birim test çerçevesini kullanarak testleri **Test Gezgini**. Geliştirilmekte olan bir C# projesi ile başlayın, kodunu, testleri çalıştırmak ve sonuçları inceleyin testleri oluşturun. Daha sonra proje kodunu değiştirin ve testleri yeniden çalıştırın.
 
@@ -33,7 +33,7 @@ Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Banka projesi. Bkz: [birim testleri oluşturmak için proje örnek](../test/sample-project-for-creating-unit-tests.md).
+- Banka projesi. Bkz: [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md).
 
 ## <a name="create-a-project-to-test"></a>Test etmek için bir proje oluşturun
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. Üzerinde **dosya** menüsünde **Ekle** > **yeni proje**.
 
-2. Yeni Proje iletişim kutusunda Genişlet **yüklü**, genişletme **Visual C#** ve ardından **Test**.
+2. İçinde **yeni proje** iletişim kutusunda **yüklü**, genişletme **Visual C#** ve ardından **Test**.
 
 3. Şablonlar listesinden **birim testi projesi**.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. İçinde **BankTests** projesi, bir başvuru ekleyin **banka** proje.
 
-   Çözüm Gezgini'nde seçin **başvuruları** içinde **BankTests** proje ve ardından **Başvuru Ekle** bağlam menüsünden.
+   İçinde **Çözüm Gezgini**seçin **başvuruları** içinde **BankTests** proje ve ardından **Başvuru Ekle** bağlam menüsünden.
 
-6. Başvuru Yöneticisi iletişim kutusunda Genişlet **çözüm** iade edin **banka** öğesi.
+6. İçinde **başvuru Yöneticisi** iletişim kutusunda **çözüm** iade edin **banka** öğesi.
 
 ## <a name="create-the-test-class"></a>Test sınıfı oluşturun
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Testi yeniden çalıştırın
 
-Test Gezgini'nde seçin **tümünü Çalıştır** ve testi yeniden çalıştırın. Test başarılı oldu ve test taşınır belirtmek için kırmızı/yeşil çubuk yeşile **başarılı testler** grubu.
+İçinde **Test Gezgini**, seçin **tümünü Çalıştır** ve testi yeniden çalıştırın. Test başarılı oldu ve test taşınır belirtmek için kırmızı/yeşil çubuk yeşile **başarılı testler** grubu.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Kodunuzu geliştirmek için birim testleri kullanın
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179040"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382428"
 ---
 # <a name="configure-load-test-run-settings"></a>Yük testi çalıştırma ayarlarını yapılandırma
 
@@ -33,7 +33,7 @@ Bir yük testinde çalışma ayarları, ancak tek çalışma etkin olabilir, bir
 |-----------|-----------------------|
 |**Yük testiniz için daha fazla çalıştırma ayarları ekleme:** çalıştırdığınızda oluşturduğunuz çalışma ayarı yanı sıra **Yeni Yük Testi Sihirbazı**, daha fazla çalıştırma ayarları yük testinize altındaki farklı test çalıştırabilmek ekleyebilirsiniz. koşullar.|-   [Nasıl yapılır: bir yük testine ek çalışma ayarları ekleme](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Etkin yük testi ile kullanmak için ayarı çalışma belirlemek:** Yük Testi Düzenleyicisini kullanarak yük testi ile kullanmak istediğiniz çalışma ayarını seçebilirsiniz. Etkin çalışma ayarı, "[etkin]" soneki ile tanımlanır.|-   [Nasıl yapılır: etkin çalışma yük testi için ayarı seçin](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**Çalıştırma ayarı Özellikleri Düzenle:** çalıştırmanız düzenleyebileceğiniz özelliklerini gibi şeyler günlüğe kaydetme seçeneklerini ayarlama (daha aşağıda, test, Isınma Süresi, en fazla hata sayısı uzunluğunu belirleyen bakın), örnekleme hızını, bağlantı bildirilen ayrıntıları Modeli (yalnızca web performans testleri), sonuç depolama türü, doğrulama düzeyi ve SQL izleme. Çalıştırma ayarları yük testinizin hedeflerini yansıtmalıdır.|-   [Yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md)<br />-   [Çalışma ayarı özelliklerini değiştirme](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**Çalıştırma ayarı Özellikleri Düzenle:** çalıştırmanız düzenleyebileceğiniz özelliklerini gibi şeyler günlüğe kaydetme seçeneklerini ayarlama (daha aşağıda, test, Isınma Süresi, en fazla hata sayısı uzunluğunu belirleyen bakın), örnekleme hızını, bağlantı bildirilen ayrıntıları Modeli (yalnızca web performans testleri), sonuç depolama türü, doğrulama düzeyi ve SQL izleme. Çalıştırma ayarları yük testinizin hedeflerini yansıtmalıdır.|-   [Yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md)<br />-   [Çalışma ayarı özelliklerini değiştirme](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**Yük testi çalışma ayarlarında test yineleme sayısını belirtin:** tüm web başarım ve birim testlerinin yük testlerinizin senaryoların tümünde yapılandırarak çalıştırılacak kaç kez belirtebilirsiniz **Test Yinelemeleri** özellik.|-   [Nasıl yapılır: bir çalışma ayarında test yineleme sayısını belirtme](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Yük testi çalışma ayarı için örnekleme oranını belirtin:** yapılandırarak Topla performans sayacı verilerini test yük ne sıklıkla belirtebilirsiniz **örnek hızı** özelliği.|-   [Nasıl yapılır: örnek hızı belirtme](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Zamanlama Ayrıntıları Depolama seçeneği belirtin:** ayrıntılarını yapılandırarak kaydedildi yük testinin nasıl istediğinizi belirtebilirsiniz **Zamanlama Ayrıntıları Deposu** özelliği.|-   [Nasıl yapılır: zamanlama ayrıntıları depolama özelliğini belirtme](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|

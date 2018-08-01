@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7838b9b04aa8d95fa9476cf9720815ccb5bed122
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176703"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380503"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Hızlı Başlangıç: Yük testi projesi oluşturma
 
@@ -27,9 +27,9 @@ ms.locfileid: "39176703"
 
 Yoksa zaten web performansı ve yük testi araçları bileşeninin yüklü ise, Visual Studio yükleyicisi yüklemeniz gerekir.
 
-1. Windows Başlat menüsünde Visual Studio yükleyicisini açın. Ayrıca, Visual Studio'dan erişebildiğinizi **yeni proje** iletişim kutusu, seçerek veya **Araçları** > **araçları ve özellikleri Al** menü çubuğundan.
+1. Açık **Visual Studio yükleyicisi** gelen **Başlat** Windows menüsü. Ayrıca, Visual Studio'dan erişebildiğinizi **yeni proje** iletişim kutusu, seçerek veya **Araçları** > **araçları ve özellikleri Al** menü çubuğundan.
 
-1. Visual Studio Yükleyicisi'ni seçin **tek tek bileşenler** sekmesini ve ekranı aşağı kaydırarak **hata ayıklama ve test** bölümü. Seçin **Web performansı ve yük testi Araçları**.
+1. İçinde **Visual Studio yükleyicisi**, seçin **tek tek bileşenler** sekmesini ve ekranı aşağı kaydırarak **hata ayıklama ve test** bölümü. Seçin **Web performansı ve yük testi Araçları**.
 
    ![Web performansı ve yük testi araçları bileşeni](media/web-perf-load-testing-tools-component.png)
 

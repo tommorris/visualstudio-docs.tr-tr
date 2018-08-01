@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179742"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381126"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Test denetleyicilerini ve test aracılarını yönetme
 
@@ -28,7 +28,7 @@ Yapılandırma ve test denetleyicisini ve herhangi kayıtlı aracıyı izlemek i
 
 Bir yük testi projesi için de seçebilirsiniz **Test Denetleyicilerini Yönet** gelen **yük testi** menüsü.
 
-## <a name="add-a-test-agent-to-a-test-controller"></a>Test aracısı Test denetleyicisine eklemek
+## <a name="add-a-test-agent-to-a-test-controller"></a>Test aracısı test denetleyicisine eklemek
 
 Farklı test denetleyicisine test aracısı eklemek isteyebilirsiniz veya yüklü olan bir test denetleyicisine test aracısı eklemek zorunda kalabilirsiniz.
 
@@ -45,7 +45,7 @@ Farklı test denetleyicisine test aracısı eklemek isteyebilirsiniz veya yükl�
 
      Çalıştırılacak test aracısını nasıl kolaylaştıracağını için iki seçenek sunulur:
 
-     **Hizmet** masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak zorunda değilsiniz gibi kodlanmış UI testleri veya test, altında çalıştığında bir video kaydı oluşturmak, **test aracısını farklı çalıştır**seçin **hizmeti**. Test aracısı hizmet olarak başlatılacak. Seçin **sonraki**.
+     **Hizmet**: Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak zorunda değilsiniz gibi kodlanmış UI testleri veya test, altında çalıştığında bir video kaydı oluşturmak, **test aracısını farklı çalıştır**seçin **hizmeti**. Test aracısı hizmet olarak başlatılacak. Seçin **sonraki**.
 
      Artık test aracısı hizmet olarak başladığında kullanıcı hakkındaki ayrıntıları girebilirsiniz.
 
@@ -60,7 +60,7 @@ Farklı test denetleyicisine test aracısı eklemek isteyebilirsiniz veya yükl�
         |-Aracı kullanıcı adı Aracı hizmeti içinde değilse, bunu eklemek test denetleyicisi üzerinde izinler gerektirir dener.|
         |-Test denetleyicisini kullanmaya çalışan kullanıcı test denetleyicisinin kullanıcı hesabında olmalıdır ya da denetleyiciye karşı testleri çalıştırmak mümkün olmayacaktır.|
 
-     **Etkileşimli işlem** masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak istiyorsanız, aşağıdaki gibi kodlanmış UI testleri veya testiniz çalıştığında bir video kaydı oluşturma, seçin **etkileşimli işlem**. Test aracısı hizmet yerine etkileşimli bir işlem olarak başlatılacak.
+     **Etkileşimli işlem**: Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak istiyorsanız, aşağıdaki gibi kodlanmış UI testleri veya testiniz çalıştığında bir video kaydı oluşturma, seçin **etkileşimli işlem**. Test aracısı hizmet yerine etkileşimli bir işlem olarak başlatılacak.
 
      Sonraki sayfada, test aracısını bir işlem ve diğer seçenekleri başladığında kullanıcı hakkındaki ayrıntıları girin.
 
@@ -90,12 +90,12 @@ Farklı test denetleyicisine test aracısı eklemek isteyebilirsiniz veya yükl�
     > [!NOTE]
     > Varsayılan bağlantı noktası numarası 6901'dir.
 
-4. Değişikliklerinizi kaydetmek için seçin **ayarlarını uygula**. Kapatma **Yapılandırma Özeti** iletişim kutusunu ve sonra close Test Aracısı Yapılandırma aracı.
+4. Değişikliklerinizi kaydetmek için seçin **ayarlarını uygula**. Kapatma **Yapılandırma Özeti** iletişim kutusunu ve sonra close **Test Aracısı Yapılandırma Aracı**.
 
 > [!WARNING]
 > Aracı şu anda başka bir test denetleyicisinde çalıştırmak için yapılandırıldıysa, test aracısını o denetleyiciden kaldırmanız gerekir.
 
-## <a name="remove-a-test-agent-from-a-test-controller"></a>Bir Test aracısı Test denetleyicisinden kaldırın.
+## <a name="remove-a-test-agent-from-a-test-controller"></a>Bir test aracısı test denetleyicisinden kaldırın.
 
 Bir test aracısı kaldırılmadan önce çevrimdışı duruma ayarlanması gerekir.
 
@@ -160,9 +160,9 @@ Değişiklikleri hemen yürürlüğe girer fakat çalışan testleri etkilemez A
 (İsteğe bağlı) Bir test aracısı durumunu değiştirmek için listedeki aracıyı seçin ve ardından aracının geçerli duruma dayanarak kullanılabilir seçeneklerden eylemini seçin.
 
 > [!NOTE]
-> Test aracısını bir işlem olarak çalışıyorsa, test aracısının yüklü olduğu bilgisayarda çalışan bildirim alanında simgesinden test aracısın durumu yönetin. Bu test aracısı durumunu gösterir. Başlat, Durdur veya bu aracı kullanarak bir işlem olarak çalışıyorsa aracıyı yeniden başlatın. Çalışır durumda değilse test aracısını bir işlem olarak başlatmak için seçin **Başlat**, **tüm programlar**, **Microsoft Visual Studio** , **Microsoft Visual Studio Test Aracı**. Bu bildirim alanı simgesini ekler.
+> Test aracısını bir işlem olarak çalışıyorsa, test aracısının yüklü olduğu bilgisayarda çalışan bildirim alanında simgesinden test aracısın durumu yönetin. Bu test aracısı durumunu gösterir. Başlat, Durdur veya bu aracı kullanarak bir işlem olarak çalışıyorsa aracıyı yeniden başlatın. Çalışır durumda değilse test aracısını bir işlem olarak başlatmak için seçin **Başlat** > **tüm programlar** > **Microsoft Visual Studio**  >  **Microsoft Visual Studio Test aracısı**. Bu bildirim alanı simgesini ekler.
 
-## <a name="configure-a-test-controller"></a>Bir Test denetleyicisi yapılandırın
+## <a name="configure-a-test-controller"></a>Bir test denetleyicisi yapılandırın
 
 Bir test denetleyicisini yapılandırmak için kullanmanız gerekir **Takım Test denetleyicisi yapılandırma aracı**. Test denetleyicinizi yapılandırırken farklı bir takım projesi koleksiyonuyla test denetleyicisini kaydetmek veya test denetleyicinizi bir takım projesi koleksiyonundan kaydını silin.
 
@@ -189,7 +189,7 @@ Test denetleyiciniz, Team Foundation Server Proje koleksiyonu ile kaydetmek isti
 > [!NOTE]
 > Daha fazla sorun giderme test denetleyicileri hakkında daha fazla bilgi için bkz. [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="manage-your-agents-when-you-run-your-tests-with-a-test-controller"></a>Bir Test denetleyicisiyle testlerinizi çalıştırdığınızda aracılarınızı yönetme
+## <a name="manage-your-agents-when-you-run-your-tests-with-a-test-controller"></a>Bir test denetleyicisiyle testlerinizi çalıştırdığınızda aracılarınızı yönetme
 
 Visual Studio için test ayarlarınıza uygulamanız için roller eklediğinizde, her rolünüz için aracı özellikleri ekleyebilirsiniz. Bu, hangi test aracılarının bu rol için kullanılabilen belirler. Kullanarak testlerinizi çalıştırdığınızda, bu test ayarları, test ayarları için seçili test denetleyicisi gerekli aracıların kullanılabilirliğini belirler. Aşağıdaki aracı kullanılabilirliği belirlendiğinde oluşabilecek durumlar şunlardır:
 
@@ -217,15 +217,15 @@ Visual Studio için test ayarlarınıza uygulamanız için roller eklediğinizde
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Gecikmeli İmzalanmış Derlemelerden Test Yükleme
 
-Test denetleyicisi ve test aracıları yalnızca sağlam imzalı veya imzasız derlemeler test derlemelerini yükleyebilir. Bazı test derlemeleri gecikme-uygulama için üretim derlemelerine erişimi gerektiğinden imzalanmıştır. Ancak, bu derlemeler kuvvetle imzalanmamıştır çünkü bunlar yalnızca test derlemeleridir ve dağılımı değil. Burada derleme test denetleyicisi makineyi de yüklenecek tüm makinelerde bu derlemeler için tanımlayıcı ad doğrulaması devre dışı bırakmalısınız gecikmeli imzalanmış oldukları için bu bütünleştirilmiş kodları yüklenemiyor. Gecikmeli imzalanmış doğrulamayı devre dışı bırakmak için sn.exe kullanın. Tanımlayıcı ad doğrulamasının atlanmasını istendiği gecikmeli imzalanmış derlemenin ortak anahtar belirteci de eklenmesi gerekebilir.
+Test denetleyicisi ve test aracıları yalnızca sağlam imzalı veya imzasız derlemeler test derlemelerini yükleyebilir. Bazı test derlemeleri gecikme-uygulama için üretim derlemelerine erişimi gerektiğinden imzalanmıştır. Ancak, bu derlemeler kuvvetle imzalanmamıştır çünkü bunlar yalnızca test derlemeleridir ve dağılımı değil. Burada derleme test denetleyicisi makineyi de yüklenecek tüm makinelerde bu derlemeler için tanımlayıcı ad doğrulaması devre dışı bırakmalısınız gecikmeli imzalanmış oldukları için bu bütünleştirilmiş kodları yüklenemiyor. Gecikmeli imzalanmış doğrulamayı devre dışı bırakmak için *sn.exe*. Tanımlayıcı ad doğrulamasının atlanmasını istendiği gecikmeli imzalanmış derlemenin ortak anahtar belirteci de eklenmesi gerekebilir.
 
-Gecikmeli imzalanmış doğrulamayı devre dışı bırakmak için sn.exe (tanımlayıcı ad aracı) kullanın.
+Kullanım *Sn.exe* (gecikmeli imzalanmış doğrulamayı devre dışı bırakmak için tanımlayıcı ad aracı).
 
 Bu, yalnızca belirtilen derleme için tanımlayıcı ad doğrulamasının komutu çalıştırdığınız bilgisayarda devre dışı bırakır. Bunu sadece yeterli izinleriniz varsa yapabilirsiniz.
 
-Test çalıştırması tamamlandıktan sonra SN.exe komutunu kullanarak Gecikmeli İmza doğrulamasını yeniden etkinleştirin.
+Test çalıştırması tamamlandıktan sonra Gecikmeli İmza doğrulamasını kullanarak yeniden etkinleştirebilir *SN.exe* komutu.
 
-İmza doğrulamasını yeniden etkinleştirin ve devre dışı bırakmak için önerilen yol, betiklerde SN.exe komutlarını kullanmaktır. Kurulum betik doğrulamayı devre dışı bırakabilir ve bir temizleme betik doğrulamayı yeniden etkinleştirin.
+İmza doğrulamasını yeniden etkinleştirin ve devre dışı bırakmak için önerilen yol kullanmaktır *SN.exe* betik komutları. Kurulum betik doğrulamayı devre dışı bırakabilir ve bir temizleme betik doğrulamayı yeniden etkinleştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

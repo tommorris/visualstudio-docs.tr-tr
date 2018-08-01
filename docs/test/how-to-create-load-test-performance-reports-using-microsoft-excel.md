@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ecd4e81389e50614b19095fcff1d0ada8b4d1c60
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179014"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380762"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl yapılır: Microsoft Excel Kullanarak Yük Testi Başarım Raporları Oluşturma
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl yapılır: oluşturma yük testi başarım raporları kullanarak Microsoft Excel
 
 İki veya daha fazla test sonucunu temel alan Microsoft Excel yük testi raporları oluşturabilirsiniz. Yük testi raporlarının iki türü kullanılabilir:
 
@@ -36,16 +36,16 @@ ms.locfileid: "39179014"
  Ayrıca, Excel çalışma kitabı, hissedarların raporu görmek için veritabanına bağlanmak zorunda değilsiniz için hissedarlarla paylaşılabilir.
 
 > [!NOTE]
-> Excel çalışma kitabını paylaşabilirsiniz; Ancak, yalnızca Visual Studio, makinede yüklü olan kullanıcılar elektronik tablolarda değişiklik mümkün olacaktır. Diğer kullanıcılar **yük testi raporu** seçeneği Office şeridinde, ancak çalışma kitabını görüntüleme olanağınız olacaktır.
+> Excel çalışma kitabını paylaşabilirsiniz; Ancak, yalnızca Visual Studio, makinede yüklü olan kullanıcılar elektronik tablolarda değişiklik mümkün olacaktır. Diğer kullanıcılar **yük testi raporu** seçeneğini **Office** Şerit, ancak bunlar oluşturabileceksiniz çalışma kitabını görüntüleme.
 
  Aşağıdaki çizim işlem (alışveriş sepetini güncelleştir) hız dejenerasyonu ve (% işlemci) sayacın degeneration arasında bir bağıntı gösteren bir rapor örneğidir. Bu, veritabanı veya ağ yerine uygulama kodundaki olası bir sorunu işaret eden ve ASP.NET Profiler'ı kullanarak tanılamak için iyi bir adaydır.
 
  ![Uygulama kodundaki olası bir sorunu](../test/media/lt_excel.png)
 
- Excel raporları oluşturulabilir Yük Testi Çözümleyicisi'nde kullanarak **Excel Raporu Oluştur** kullanarak düğme araç çubuğunda veya Excel'den **yük testi raporu** seçeneğini **yük testi**  Office Şerit sekmesi.
+ Excel raporları oluşturulabilir **Yük Testi Çözümleyicisi**, kullanarak **Excel Raporu Oluştur** kullanarak düğme araç çubuğunda veya Excel'den **yük testi raporu** seçeneğini **yük testi** sekmesinde **Office** Şerit.
 
 > [!NOTE]
-> Bir yük testine yorum eklerseniz, bunlar Excel raporunda görüntülenir. Daha fazla bilgi için [nasıl yapılır: yük testi tamamlandı Çözümleme sırasında açıklamaları ekleme](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Bir yük testine yorum eklerseniz, bunlar Excel raporunda görüntülenir. Daha fazla bilgi için [nasıl yapılır: tamamlanmış bir yük testi çözümlenirken açıklama ekleme](../test/how-to-add-comments-on-a-completed-load-test.md).
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Excel kullanarak yük testi karşılaştırma raporları oluşturmak için
 
@@ -58,13 +58,13 @@ ms.locfileid: "39179014"
         > [!NOTE]
         > Varsa **Excel Raporu Oluştur** düğmesini devre dışı **Web Performans Test Sonuçları Görüntüleyicisi** araç, Microsoft Excel'i çalıştırmak gerekebilir ise, etkinleştirmeden önce zaman. Visual Studio Enterprise yük testi eklentisi bilgisayarınıza Visual Studio Enterprise yüklü olduğunda, Microsoft Excel için kopyalanır; Ancak, Microsoft Excel için eklenti yükleme işleminin tamamlanması için çalıştırmanız gerekir.
 
-     Microsoft Excel açılır **yük testi raporu oluştur** Sihirbazı.
+     Microsoft Excel açılır **bir yük testi Rapor Sihirbazı Oluştur**.
 
      veya
 
-    1.  Microsoft Excel'i açın, **yük testi** Office şeridinden sekmesine ve ardından **yük testi raporu**.
+    1.  Microsoft Excel'i açın, **yük testi** sekmesinde **Office** Şerit ve ardından **yük testi raporu**.
 
-         **Yük testi raporu oluştur** Sihirbazı görünür.
+         **Bir yük testi Rapor Sihirbazı Oluştur** görünür.
 
     2.  İçinde **yük testlerini içeren veritabanını Seç** sayfasındaki **sunucu adı**, yük testi sonuçlarını içeren sunucunun adını yazın.
 
@@ -83,7 +83,7 @@ ms.locfileid: "39179014"
     > [!NOTE]
     > Yalnızca iki yük testi sonuçları üzerinde bir karşılaştırma raporu oluşturabilirsiniz. Ya da bir yük testi sonucunu seçin veya ikiden daha fazla yük testi sonuçları, bir uyarı iletisi görüntülenir.
 
-8.  İçinde **raporunuz için sayaçlar seçin** sayfasındaki **rapora eklemek için seçin veya daha fazla sayaç** sayaçların Genişletilebilir listesi, raporunuzu özelleştirmek kullanılabilirdir. Seçin ve raporun iki seçili test çalıştırmasından karşılaştırmak istediğiniz sayaçları seçin **son**.
+8.  İçinde **raporunuz için sayaçlar seçin** sayfasındaki **rapora eklenecek bir veya daha fazla sayaç seçin** sayaçların Genişletilebilir listesi, raporunuzu özelleştirmek kullanılabilirdir. Seçin ve raporun iki seçili test çalıştırmasından karşılaştırmak istediğiniz sayaçları seçin **son**.
 
 9. Excel çalışma kitabı raporu aşağıdaki elektronik tablo sekmeleriyle oluşturulur:
 
@@ -113,13 +113,13 @@ ms.locfileid: "39179014"
         > [!NOTE]
         > Varsa **Excel Raporu Oluştur** düğmesini devre dışı **Web Performans Test Sonuçları Görüntüleyicisi** araç, Microsoft Excel'i çalıştırmak gerekebilir ise, etkinleştirmeden önce zaman. Visual Studio Enterprise yük testi eklentisi bilgisayarınıza Visual Studio Enterprise yüklü olduğunda, Microsoft Excel için kopyalanır; Ancak, Microsoft Excel için eklenti yükleme işleminin tamamlanması için çalıştırmanız gerekir.
 
-     Microsoft Excel açılır **yük testi raporu oluştur** Sihirbazı.
+     Microsoft Excel açılır **bir yük testi Rapor Sihirbazı Oluştur**.
 
      veya
 
-    1.  Microsoft Excel'i açın, **yük testi** Office şeridinden sekmesine ve ardından **yük testi raporu**.
+    1.  Microsoft Excel'i açın, **yük testi** sekmesinde **Office** Şerit ve ardından **yük testi raporu**.
 
-         **Yük testi raporu oluştur** Sihirbazı görünür.
+         **Bir yük testi Rapor Sihirbazı Oluştur** görünür.
 
     2.  İçinde **yük testlerini içeren veritabanını Seç** sayfasındaki **sunucu adı**, yük testi sonuçlarını içeren sunucunun adını yazın.
 
@@ -135,17 +135,17 @@ ms.locfileid: "39179014"
 
 7.  İçinde **raporunuz için çalıştırmaları seçin** sayfasındaki **rapora eklemek için bir veya daha fazla çalıştırma seçin**, seçin ve raporda karşılaştırmak istediğiniz yükleme testi sonuçlarını seçin **sonraki**.
 
-8.  İçinde **raporunuz için sayaçlar seçin** sayfasındaki **rapora eklemek için seçin veya daha fazla sayaç**, sayaçların Genişletilebilir listesi, raporunuzu özelleştirmek kullanılabilirdir. Seçin ve trend çözümlemesi için karşılaştırmak istediğiniz sayaçları seçin **son**.
+8.  İçinde **raporunuz için sayaçlar seçin** sayfasındaki **rapora eklenecek bir veya daha fazla sayaç seçin**, sayaçların Genişletilebilir listesi, raporunuzu özelleştirmek kullanılabilirdir. Seçin ve trend çözümlemesi için karşılaştırmak istediğiniz sayaçları seçin **son**.
 
 10. Rapor raporda oluşturulan çeşitli Excel çalışma kitabı sekmeleri bağlantılara sahip olan bir içindekiler tablosu ile oluşturulur. Bağlantılar eğilim raporu için seçili sayaçları temel alır. 7. adımda seçtiğiniz varsayılan sayaçları bırakılırsa, örneğin, ardından raporun sunulan veri 7. adımda listelenen her sayaç için Excel'de ayrı sekmeler oluşturur. Her sayaç için oluşturulan veri, eğilim stili grafiklerde sunulur.
 
     > [!TIP]
     > Daha iyi raporlar için çeşitli özellikler, daha zengin raporlara olanak tanıyan bir web performans testleri ve yük testleri de kullanılabilir. Sayfa istekleri raporlarda sunulan iki özelliğe sahiptir: hedef ve raporlama adı. Sayfa yanıt zamanı hedefe yönelik bildirilir ve raporlama adı URL'nin raporlarında yerine kullanılacak. Sayaç Kümelerini Yönet altında çalıştırma ayarları yük testinde özelliği bilgisayar etiketleri rapor makina adlarında sunulur. Bu rapor belirli bir makinenin rolünü tanımlamak kullanışlıdır.
 
-## <a name="net-framework-security"></a>.NET Framework Güvenliği
+## <a name="net-framework-security"></a>.NET Framework güvenliği
 
 Yük testi sonuçları ve raporları, bilgisayarınıza veya ağınıza yönelik bir atak yapılandırmak için kullanılabilen duyarlı bilgi içerir. Yük testi sonuçları ve raporları, bilgisayar adları ve bağlantı dizeleri içerir. Ne zaman bunun farkında olmalıdır yük testi raporlarını diğer kişilerle paylaşın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yük testi sonuçlarını raporlama Test karşılaştırmaları veya eğilim analizi](../test/compare-load-test-results.md)
+- [Rapor yük testi sonuçlarını test karşılaştırmaları veya eğilim analizi](../test/compare-load-test-results.md)

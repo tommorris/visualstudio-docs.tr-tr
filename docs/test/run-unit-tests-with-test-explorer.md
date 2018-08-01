@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977797"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382340"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -35,7 +35,7 @@ Test projesi oluşturduğunuzda, testler Test Gezgini'nde görünür. Test Gezgi
 
 Çalıştırma, yazma ve testlerinizi yeniden çalıştırın, Test Gezgini sonuçları varsayılan gruplarında görüntüler **başarısız testler**, **başarılı testler**, **Atlanan testler** ve  **Testleri Çalıştır**. Test Gezgini'nin testlerinizi gruplandırma şeklini değiştirebilirsiniz.
 
-Bulma, düzenleme ve Test Gezgini araç çubuğundan testleri çalıştırmak, işin çoğunu gerçekleştirebilirsiniz.
+Bulma, düzenleme ve testleri çalıştıran işin çoğunu gerçekleştirebilirsiniz **Test Gezgini** araç çubuğu.
 
 ![Test Gezgini araç çubuğundan Testleri Çalıştır](../test/media/ute_toolbar.png)
 
@@ -51,13 +51,13 @@ Tüm testler, Çözümdeki tüm testleri bir grup veya seçtiğiniz test kümesi
 
 - Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
-Testler çalışırken Test Gezgini penceresinin en üstündeki geçer/başarısız çubuğunda animasyon görünür. Tüm testler başarılı ya da herhangi bir test başarısız olursa kırmızıya döner test çalışması kılavuzumuzun geçer/başarısız çubuğu yeşile döner.
+**Geçer/başarısız çubuğu** en üstündeki **Test Gezgini** penceresi Testler çalışırken animasyonlu. Test çalıştırması, sonunda **geçer/başarısız çubuğu** tüm testler geçildi, yeşile döner veya herhangi bir test başarısız olursa kırmızıya döner.
 
 ### <a name="run-tests-after-every-build"></a>Her derleme sonrasında Testleri Çalıştır
 
 |Düğme|Açıklama|
 |-|-|
-|![Yapıdan sonra çalıştırmak](../test/media/ute_runafterbuild_btn.png)|Her bir yerel oluşturmadan sonra birim testlerinizi çalıştırmak için tercih **Test** standart menüde seçip **oluşturmadan sonra Testleri Çalıştır** Test Gezgini araç çubuğundaki.|
+|![Yapıdan sonra çalıştırmak](../test/media/ute_runafterbuild_btn.png)|Her bir yerel oluşturmadan sonra birim testlerinizi çalıştırmak için tercih **Test** standart menüde seçip **oluşturmadan sonra Testleri Çalıştır** üzerinde **Test Gezgini** araç çubuğu.|
 
 ## <a name="view-test-results"></a>Test sonuçlarını görüntüle
 
@@ -127,7 +127,7 @@ Test Gezgini, testlerinizi önceden tanımlanmış kategoriler halinde gruplaman
 
 Projelerinizde görüntüleyip çalıştırabileceğiniz, test yöntemlerini sınırlamak için Test Gezgini filtreleri kullanabilirsiniz.
 
-Bir dizeyi Test Gezgini arama kutusuna yazın ve ENTER TUŞUNA basın, test listesi yalnızca tam olarak belirtilen adları dizeyi içeren testleri görüntüleyecek şekilde filtrelenmiştir.
+Bir dizede yazdığınızda **Test Gezgini** seçin ve arama kutusuna **Enter**, test listesi yalnızca tam adları dizeyi içeren testleri görüntüleyecek şekilde filtrelenmiştir.
 
 Farklı ölçütlere göre filtrelemek için:
 
@@ -162,15 +162,15 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ## <a name="create-custom-playlists"></a>Özel çalma listeleri oluşturma
 
- Oluşturun ve çalıştırın veya bir grup olarak görüntülemek istediğiniz testlerin listesini kaydedin. Çalma listesi seçtiğinizde listedeki testler görüntülenen Test Gezgini. Bir testi birden fazla çalma listesine ekleyebilirsiniz ve varsayılan seçtiğinizde projenizdeki tüm testler kullanılabilir **tüm testleri** çalma listesi.
+ Oluşturun ve çalıştırın veya bir grup olarak görüntülemek istediğiniz testlerin listesini kaydedin. Çalma listesi seçtiğinizde listedeki testler Test Gezgini'nde görüntülenir. Bir testi birden fazla çalma listesine ekleyebilirsiniz ve varsayılan seçtiğinizde projenizdeki tüm testler kullanılabilir **tüm testleri** çalma listesi.
 
  ![Bir çalma listesini seçin](../test/media/ute_playlist.png)
 
- **Bir çalma listesi oluşturmak için**, Test Gezgini'nde bir veya birden çok test seçin. Bağlam menüsünde **çalma listesine Ekle**, **NewPlaylist**. Dosya adı ve belirttiğiniz konuma kaydetmek **yeni çalma listesi oluştur** iletişim kutusu.
+ **Bir çalma listesi oluşturmak için**, Test Gezgini'nde bir veya birden çok test seçin. Bağlam menüsünde **çalma listesine Ekle** > **NewPlaylist**. Dosya adı ve belirttiğiniz konuma kaydetmek **yeni çalma listesi oluştur** iletişim kutusu.
 
  **Bir çalma listesine testler eklemek için**, Test Gezgini'nde bir veya birden çok test seçin. Bağlam menüsünde **çalma listesine Ekle**, testleri eklemek istediğiniz çalma listesini seçin.
 
- **Bir çalma listesini açmak için**, Test, Visual Studio menüsünden, çalma Listesi'ni seçin ve son kullanılan çalma listesinden seçin veya çalma listesi konumunu ve adını belirtmek için çalma listesi Aç'ı seçin.
+ **Bir çalma listesini açmak için**, seçin **Test** > **çalma listesi** Visual Studio menüsünde ve ya da son kullanılan çalma listesinden seçin veya seçin **açın Çalma listesi** çalma konumunu ve adını belirtmek için.
 
  Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
@@ -191,7 +191,7 @@ Test Gezgini, testleriniz için hata ayıklama oturumu başlatmak için kullanab
 
 ### <a name="diagnose-test-method-performance-issues"></a>Test yöntemi performans sorunlarını tanılama
 
- Neden bir test yöntemi, çok fazla zaman aldığını tanılamak için yöntemi Test Gezgini'nde seçin ve ardından bağlam menüsünde profilini seçin. Bkz: [performans Gezgini](../profiling/performance-explorer.md).
+ Neden bir test yöntemi, çok fazla zaman aldığını tanılamak için yöntemi Test Gezgini'nde seçin ve ardından **profili** bağlam menüsünde. Bkz: [performans Gezgini](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Birim testi kod kapsamını analiz etme
 
@@ -207,9 +207,9 @@ Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için:
 
     - **Tüm testler** Çözümdeki tüm test yöntemlerini çalıştırır.
 
-Kod Kapsamı Sonuçları penceresi satır, işlevi, sınıf, ad alanı ve modül tarafından uygulanan ürünün kodu bloklarının yüzdesini görüntüler.
+**Kod kapsamı sonuçlarını** penceresi satır, işlevi, sınıf, ad alanı ve modül tarafından uygulanan ürünün kodu bloklarının yüzdesini görüntüler.
 
-Daha fazla bilgi için [kullanarak kod kapsamı için belirlemek ne kadar kodun test](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Daha fazla bilgi için [ne kadar kodun test edildiğini belirlemek için kod kapsamı kullanın](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="test-shortcuts"></a>Test kısayolları
 
@@ -217,13 +217,13 @@ Test çalıştırılabilir **Test Gezgini**, Kod düzenleyicisinde bir test üze
 
 |Sık kullanılan komutları| Klavye Kısayolları|
 |--------------|------------------------|
-|TestExplorer.DebugAllTestsInContext|Ctrl+R, Ctrl+T|
-|TestExplorer.RunAllTestsInContext|Ctrl+R, T|
+|TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
 
 > [!NOTE]
 > Testleri yalnızca soyut sınıflar tanımlanır ve değil örneği için soyut bir sınıf, bir test çalıştırılamıyor. Soyut sınıflar testleri çalıştırmak için soyut sınıftan türeyen bir sınıf oluşturun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)
+- [Birim testi kod](../test/unit-test-your-code.md)
 - [64 bitlik bir işlem olarak birim testi çalıştırma](../test/run-a-unit-test-as-a-64-bit-process.md)

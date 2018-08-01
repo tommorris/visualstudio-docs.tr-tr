@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382807"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 
-Bu kılavuzda tanımlanan bir veri kaynağı kullanımını gösterir bir *app.config* birim testi için dosya. Tarafından kullanılan bir veri kaynağı tanımlayan bir app.config dosyasının nasıl oluşturulacağını öğreneceksiniz <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı. Bu kılavuzda sunulan görevler aşağıdakileri içerir:
+Bu izlenecek yol içinde tanımlanan bir veri kaynağı kullanımını gösterir. bir *app.config* birim testi dosyası. Nasıl oluşturulacağını öğreneceksiniz bir *app.config* tarafından kullanılan bir veri kaynağı tanımlayan dosyası <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı. Bu izlenecek yolda gösterilen görevler aşağıdakileri içerir:
 
-- Bir app.config dosyası oluşturuluyor.
+- Oluşturma bir *app.config* dosya.
 
 - Özel yapılandırma bölümü tanımlama.
 
@@ -39,13 +40,13 @@ Bu kılavuzu tamamlamak için gerekenler:
 
 - Visual Studio Enterprise
 
-- Microsoft Access ya da Microsoft Excel test yöntemleri en az biri için veri sağlamak için.
+- Microsoft Access veya Microsoft Excel verilerini test yöntemlerini en az biri için sağlamak için.
 
-- Test projesi içeren bir Visual Studio çözümü.
+- Bir test projesi içeren bir Visual Studio çözümü.
 
-## <a name="add-an-appconfig-file-to-the-project"></a>Bir app.config dosyası projeye ekleyin
+## <a name="add-an-appconfig-file-to-the-project"></a>Bir app.config dosyası projeye ekleyin.
 
-1. Test projenizin bir app.config dosyası zaten varsa, Git [özel yapılandırma bölümü tanımlamak](#DefineCustomConfigurationSection).
+1. Test projenizde zaten varsa bir *app.config* dosya, Git [özel yapılandırma bölümü tanımlaması](#define-a-custom-configuration-section).
 
 2. Test projenize sağ tıklayıp **Çözüm Gezgini**ve ardından **Ekle** > **yeni öğe**.
 
@@ -53,38 +54,38 @@ Bu kılavuzu tamamlamak için gerekenler:
 
 3. Seçin **uygulama yapılandırma dosyası** şablonu ve tıklatın **Ekle**.
 
-##  <a name="DefineCustomConfigurationSection"></a> Özel yapılandırma bölümü tanımlayın
+##  <a name="define-a-custom-configuration-section"></a>Özel yapılandırma bölümü tanımlayın
 
-İncelemek *app.config* dosya. En az XML bildirimi ve bir kök öğe içeriyor.
+İnceleme *app.config* dosya. En az bir kök öğe ve XML bildirimi de içerir.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Özel yapılandırma bölümü app.config dosyasına eklemek için
 
-1. App.config kök öğesinin olmalıdır **yapılandırma** öğesi. Oluşturma bir **configSections** öğesi içinde **yapılandırma** öğesi. **ConfigSections** ilk öğe olmalıdır *app.config* dosya.
+1. Kök öğesi *app.config* olmalıdır **yapılandırma** öğesi. Oluşturma bir **configSections** öğesiyle **yapılandırma** öğesi. **ConfigSections** ilk öğe olmalıdır *app.config* dosya.
 
-2. İçinde **configSections** öğesini oluşturmak bir **bölüm** öğesi.
+2. İçinde **configSections** öğesi oluşturmak bir **bölümü** öğesi.
 
-3. İçinde **bölüm** öğesi adlı bir öznitelik Ekle `name` ve değerini atayın `microsoft.visualstudio.testtools`. Adlı başka bir öznitelik Ekle `type` ve değerini atayın `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. İçinde **bölümü** öğesi adlı öznitelik ekleme `name` ve değerini atayın `microsoft.visualstudio.testtools`. Adlı başka bir öznitelik Ekle `type` ve değerini atayın `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
 
-**Bölüm** öğesi şuna benzer görünmelidir:
+**Bölümü** öğesi şuna benzer görünmelidir:
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
 > [!NOTE]
-> Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir. Visual Studio .NET Framework 3.5 kullanıyorsanız sürüm için 9.0.0.0 ayarlayın. Visual Studio .NET Framework 2.0 kullanıyorsanız, sürüm 8.0.0.0 için ayarlayın.
+> Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir. Visual Studio .NET Framework 3.5 kullanıyorsanız sürümü için 9.0.0.0 ayarlayın. Visual Studio .NET Framework 2.0 kullanıyorsanız, sürüm için 8.0.0.0 ayarlayın.
 
-## <a name="define-connection-strings"></a>Bağlantı dizeleri tanımlayın
+## <a name="define-connection-strings"></a>Bağlantı dizeleri tanımlama
 
-Bağlantı dizeleri veri kaynaklarına erişim sağlayıcıya özgü bilgileri tanımlar. Bağlantı dizelerini yapılandırma dosyalarında tanımlanan bir uygulama arasında yeniden kullanılabilir veri sağlayıcısı bilgileri sağlar. Bu bölümde, özel yapılandırma bölümünde tanımlanan veri kaynakları tarafından kullanılan iki bağlantı dizeleri oluşturun.
+Bağlantı dizelerini veri kaynaklarına erişim için sağlayıcıya özel bilgiler tanımlayın. Bağlantı dizelerini yapılandırma dosyalarında tanımlanan bir uygulama arasında yeniden kullanılabilir veri sağlayıcısı bilgileri sağlar. Bu bölümde, özel yapılandırma bölümünde tanımlanan veri kaynakları tarafından kullanılacak olan iki bağlantı dizesi oluşturun.
 
 ### <a name="to-define-connection-strings"></a>Bağlantı dizeleri tanımlamak için
 
-1. Sonra **configSections** öğesini oluşturmak bir **connectionStrings** öğesi.
+1. Sonra **configSections** öğesi oluşturmak bir **connectionStrings** öğesi.
 
-2. İçinde **connectionStrings** öğesi, iki oluşturmak **ekleme** öğeleri.
+2. İçinde **connectionStrings** öğesini iki **ekleme** öğeleri.
 
-3. İlk **ekleme** öğesi, aşağıdaki öznitelikleri ve değerleri için bir Microsoft Access veritabanına bağlantı oluşturun:
+3. İlk **Ekle** öğesinde şu öznitelikler ve değerler için bir Microsoft Access veritabanına bağlantı oluşturun:
 
 |Öznitelik|Değerler|
 |---------------|------------|
@@ -94,7 +95,7 @@ Bağlantı dizeleri veri kaynaklarına erişim sağlayıcıya özgü bilgileri t
 
 İkinci **ekleme** öğesi, aşağıdaki öznitelikleri ve değerleri için bir Microsoft Excel elektronik tablosuna bir bağlantı oluşturun:
 
-|||
+|Öznitelik|Değerler|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,34 +103,34 @@ Bağlantı dizeleri veri kaynaklarına erişim sağlayıcıya özgü bilgileri t
 
 **ConnectionStrings** öğesi şuna benzer görünmelidir:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
 </connectionStrings>
 ```
 
-## <a name="define-data-sources"></a>Veri kaynakları tanımlayın
+## <a name="define-data-sources"></a>Veri kaynaklarını tanımlama
 
-Veri kaynakları bölümü veri kaynağından veri almak için test altyapısı tarafından kullanılan dört öznitelikleri içerir.
+Veri kaynakları bölümü, bir veri kaynağından veri almak için test altyapısı tarafından kullanılan dört öznitelikleri içerir.
 
-- `name` tarafından kullanılan kimliği tanımlar <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> kullanmak için hangi veri kaynağı belirtmek için.
+- `name` tarafından kullanılan kimliği tanımlar <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> kullanmak için hangi veri kaynağını belirtmek için.
 
-- `connectionString` Önceki bağlantı dizeleri tanımlayın bölümünde oluşturduğunuz bağlantı dizesini tanımlar.
+- `connectionString` Bağlantı dizeleri tanımlama bir önceki bölümde oluşturulan bağlantı dizesini tanımlar.
 
-- `dataTableName` Tablo veya testinde kullanmak için veri tutan sayfasını tanımlar.
+- `dataTableName` Tablo veya testinde kullanmak üzere verileri tutan sayfasını tanımlar.
 
-- `dataAccessMethod` veri kaynağındaki veri değerleri erişmek için teknik tanımlar.
+- `dataAccessMethod` veri kaynağındaki veri değerlerine erişim için teknik tanımlar.
 
-Bu bölümde, bir birim testinde kullanmak için iki veri kaynakları tanımlamak.
+Bu bölümde, bir birim testinde kullanmak üzere iki veri kaynağı tanımlarsınız.
 
 ### <a name="to-define-data-sources"></a>Veri kaynakları tanımlamak için
 
-1. Sonra **connectionStrings** öğesini oluşturmak bir **microsoft.visualstudio.testtools** öğesi. Bu bölümde tanımla özel yapılandırma bölümü oluşturuldu.
+1. Sonra **connectionStrings** öğesi oluşturmak bir **microsoft.visualstudio.testtools** öğesi. Bu bölümde, bir özel yapılandırma bölümü içinde tanımlayın oluşturuldu.
 
-2. İçinde **microsoft.visualstudio.testtools** öğesini oluşturmak bir **veri kaynakları** öğesi.
+2. İçinde **microsoft.visualstudio.testtools** öğesi oluşturmak bir **veri kaynakları** öğesi.
 
-3. İçinde **veri kaynakları** öğesi, iki oluşturmak **ekleme** öğeleri.
+3. İçinde **veri kaynakları** öğesini iki **ekleme** öğeleri.
 
 4. İlk **ekleme** öğesi, aşağıdaki öznitelikleri ve değerleri için bir Microsoft Access veri kaynağı oluşturun:
 
@@ -142,7 +143,7 @@ Bu bölümde, bir birim testinde kullanmak için iki veri kaynakları tanımlama
 
 İkinci **ekleme** öğesi, aşağıdaki öznitelikleri ve değerleri için bir Microsoft Excel veri kaynağı oluşturun:
 
-|||
+|Öznitelik|Değerler|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -181,47 +182,47 @@ En son *app.config* dosyası şuna benzer görünmelidir:
 </configuration>
 ```
 
-## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>App.config dosyasında tanımlanan veri kaynaklarını kullanan bir birim testi oluşturma
+## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>App.config dosyasında tanımlanan veri kaynakları kullanan bir birim testi oluşturma
 
-Bir app.config dosyası tanımlanmış, app.config dosyasında tanımlanan veri kaynaklarında bulunan verilere kullanan birim testi oluşturur. Bu bölümde, şunları yapacağız:
+Artık bir *app.config* dosyasında tanımlanan, tanımlanan veri kaynaklarında bulunan verileri kullanan bir birim testi oluşturacağınız *app.config* dosya. Bu bölümde, yapacağız:
 
-- App.config dosyasında bulunan veri kaynakları oluşturun.
+- Kaynakları bulunan veri oluşturma *app.config* dosya.
 
-- Her veri kaynağı değerleri Karşılaştır iki test yöntemleri veri kaynaklarında kullanın.
+- Veri kaynakları, her veri kaynağı değerleri karşılaştırmak iki test yöntemlerini kullanın.
 
-### <a name="to-create-a-microsoft-access-data-source"></a>Bir Microsoft Access veri kaynağı oluşturmak için
+### <a name="to-create-a-microsoft-access-data-source"></a>Bir Microsoft Access veri kaynağını oluşturmak için
 
 1. Adlı bir Microsoft Access veritabanı oluşturma *testdatasource.accdb*.
 
 2. Bir tablo oluşturun ve adlandırın `MyDataTable` içinde *testdatasource.accdb*.
 
-3. İki alanlarında oluşturun `MyDataTable` adlı `Arg1` ve `Arg2` kullanarak `Number` veri türü.
+3. İki alanda oluşturma `MyDataTable` adlı `Arg1` ve `Arg2` kullanarak `Number` veri türü.
 
-4. Beş varlıklara eklemek `MyDataTable` için aşağıdaki değerlerle `Arg1` ve `Arg2`sırasıyla: (10,50), (3,2), (6,0) (0,8) ve (12312,1000).
+4. Beş varlıklara ekleyin `MyDataTable` için aşağıdaki değerlerle `Arg1` ve `Arg2`sırasıyla: (10,50), (3,2) (6,0) (0,8) ve (12312,1000).
 
-5. Kaydedin ve veritabanı kapatın.
+5. Kaydet ve veritabanı kapatın.
 
-6. Veritabanının konumuna işaret etmek için bağlantı dizesini değiştirin. Değerini değiştirme `Data Source` veritabanı konumunu gösterecek şekilde.
+6. Bağlantı dizesi, veritabanının konumunu gösterecek şekilde değiştirin. Değiştirin `Data Source` veritabanı konumunu gösterecek şekilde.
 
-### <a name="to-create-a-microsoft-excel-data-source"></a>Microsoft Excel veri kaynağı oluşturmak için
+### <a name="to-create-a-microsoft-excel-data-source"></a>Bir Microsoft Excel veri kaynağı oluşturmak için
 
 1. Adlı bir Microsoft Excel elektronik tablosu oluşturma *data.xlsx*.
 
-2. Adlı bir sayfa oluşturma `Sheet1` , zaten içinde mevcut değilse *data.xlsx*.
+2. Adlı bir e-tablosu oluşturmanız `Sheet1` , zaten mevcut değilse *data.xlsx*.
 
-3. İki sütun üst bilgileri oluşturmak ve bunları `Val1` ve `Val2` içinde `Sheet1`.
+3. İki sütun üst bilgilerini oluşturabilir ve bunları `Val1` ve `Val2` içinde `Sheet1`.
 
-4. Beş varlıklara eklemek `Sheet1` için aşağıdaki değerlerle `Val1` ve `Val2`sırasıyla: (1,1), (2,2), (3,3) (4,4) ve (5,0).
+4. Beş varlıklara ekleyin `Sheet1` için aşağıdaki değerlerle `Val1` ve `Val2`sırasıyla: (1,1), (2,2) (3,3) (4,4) ve (5,0).
 
-5. Kaydedip elektronik kapatın.
+5. Kaydet ve elektronik kapatın.
 
-6. Elektronik Tablo konumuna işaret etmek için bağlantı dizesini değiştirin. Değerini değiştirme `dbq` elektronik konumunu gösterecek şekilde.
+6. Bağlantı dizesi, elektronik konumunu işaret edecek şekilde değiştirin. Değiştirin `dbq` elektronik konumunu gösterecek şekilde.
 
-### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>App.config veri kaynaklarını kullanma birim testi oluşturmak için
+### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>App.config veri kaynakları kullanarak bir birim test oluşturmak için
 
 1. Birim testi için test projesi ekleyin.
 
-2. Birim testi otomatik olarak oluşturulan içeriğini aşağıdaki kodla değiştirin:
+2. Birim testi, otomatik olarak oluşturulan içeriğini aşağıdaki kodla değiştirin:
 
     ```csharp
     using System;
@@ -261,14 +262,14 @@ Bir app.config dosyası tanımlanmış, app.config dosyasında tanımlanan veri 
     }
     ```
 
-3. Veri kaynağı öznitelikleri inceleyin. App.config dosyasını ayarı adlarından dikkat edin.
+3. DataSource özniteliği inceleyin. Ayar adları fark *app.config* dosya.
 
-4. Çözümünüzü derlemek ve MyTestMethod ve MyTestMethod2 testleri çalıştırın.
+4. Çözümünüzü oluşturun ve MyTestMethod ve MyTestMethod2 testleri çalıştırın.
 
 > [!IMPORTANT]
-> Böylece dağıtım dizini testinde erişilebilir veri kaynakları gibi öğeleri dağıtın.
+> Böylece bunlar dağıtım dizinine öğesindeki teste erişilebilir veri kaynakları gibi öğeleri dağıtın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)
-- [Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma](../test/how-to-create-a-data-driven-unit-test.md)
+- [Birim testi kod](../test/unit-test-your-code.md)
+- [Nasıl yapılır: bir veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md)

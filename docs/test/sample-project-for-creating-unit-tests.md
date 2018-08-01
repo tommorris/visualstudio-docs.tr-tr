@@ -1,6 +1,6 @@
 ---
 title: Birim testleri oluşturmak için örnek kod
-description: Bu makalede, Visual Studio birim testleri ile test örnek kodu sağlıyor.
+description: Bu makalede, Visual Studio'da birim testleri test edilebilir örnek kodu sağlıyor.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,25 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704609"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379780"
 ---
-# <a name="sample-code-for-testing"></a>Test etmek için örnek kod
+# <a name="sample-code-for-testing"></a>Test için örnek kod
 
-Bu örnek kod bir sınıf içerir *BankAccount*, çeşitli yöntemlerle ile birim testleri test edilebilir.
+Bu örnek kod içeren bir sınıf *BankAccount*, çeşitli yöntemlerle ile birim testleri test edilebilir.
 
-Bu kod, aşağıdaki yönergelerde kullanılır:
+Kod, aşağıdaki yönergelerde kullanılır:
 
-- [Yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Bu kılavuzda oluşturmak ve birim testlerini özelleştirme, bunları çalıştırmak ve test sonuçlarını inceleyin adımlarında size yol gösterir.
-- [Komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Bu kılavuzda, testleri çalıştırmak ve sonuçları görüntülemek için MSTest.exe komut satırı yardımcı programını kullanın.
+- [Yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Bu izlenecek yol, oluşturma ve birim testlerini özelleştirme, bunları çalıştırmak ve test sonuçları inceleyin adımlarında size yol gösterir.
+- [Komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Bu kılavuzda, kullandığınız *MSTest.exe* testleri çalıştırmak ve sonuçları görüntülemek için komut satırı yardımcı programı.
 
 ## <a name="sample-code"></a>Örnek kod
 
-Bu örnekte yalnızca maksatlı bir hata içinde borç yöntemi "m_balance += tutar" bir artı oturum önce eşittir işareti eksi olmasıdır.
+Bu örnekte yalnızca kasıtlı hata içinde banka yöntemi "m_balance += amount" bir artı eşittir işareti önce oturum eksi gerektiğidir.
 
 ```csharp
 using System;
@@ -126,13 +126,13 @@ namespace BankAccountNS
 }
 ```
 
-/ * Örnek şirketler, kuruluşlar, ürünler, etki alanı adları, e-posta adresleri, logolar, kişiler, yerler ve sahiplerinin kurgusaldır. Gerçek şirket, kuruluş, ürün, etki alanı adı, e-posta adresi, logo, kişi, yerler veya olayları ile ilişki amaçlanmamıştır veya çıkarılmamalıdır. \*/
+/ * Örnek şirketler, kuruluşlar, ürünler, etki alanı adları, e-posta adresleri, logolar, kişiler, yerler ve sahiplerinin hayal ürünüdür. Gerçek şirket, kuruluş, ürün, etki alanı adı, e-posta adresi, logo, kişi, yer veya olayları ile hiçbir ilişki amaçlanmamıştır veya çıkarılmamalıdır. \*/
 
 ## <a name="create-the-project"></a>Projeyi oluşturma
 
-Bu kod ile çalışmak için önce bir proje için Visual Studio'da oluşturun. Projede oluşturmak için aşağıdaki adımları izleyin [izlenecek yol: yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
+Bu kod ile çalışmak için önce bir proje için Visual Studio içinde oluşturun. Projeyi oluşturmak için adımları [izlenecek yol: yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [İzlenecek yol: komut satırı test yardımcı programını kullanma](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [İzlenecek yol: komut satırı test yardımcı programını kullanın.](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

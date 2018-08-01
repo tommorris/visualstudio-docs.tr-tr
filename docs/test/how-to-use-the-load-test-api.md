@@ -12,21 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9533083410af061ed8b2958349009cb5234ff251
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7454b75054f06bb35237b344552a268eed3798e1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176251"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379282"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Nasıl yapılır: Yük Testi API'si Kullanma
+# <a name="how-to-use-the-load-test-api"></a>Nasıl yapılır: yük testi API'si kullanma
 
 Visual Studio Yük testi denetlemek veya geliştiren bir yük testi eklentileri destekler. Yük testi eklentileri olan kullanıcı tanımlı uygulayan sınıflar <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> arabirimi bulunan <xref:Microsoft.VisualStudio.TestTools.LoadTesting> ad alanı. Yük testi eklentileri, özel bir yük testi denetimi için gibi bir sayaç veya hata eşiğine ulaşıldığında bir yük testi iptal ediliyor izin verin. Özellikleri kullanın <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> almak veya yük testi parametrelerine kullanıcıdan ayarlamak için sınıf tanımlanan kod. Olayları kullanın <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> yük testi çalışırken, bildirimler için temsilciler eklemek için sınıfı.
 
 > [!TIP]
 > İncelemek için Nesne Tarayıcısı kullanmanız <xref:Microsoft.VisualStudio.TestTools.LoadTesting> ad alanı. Visual C# ve Visual Basic düzenleyicileri ad alanındaki sınıflarla kodlamak için IntelliSense desteği sunar.
 
-Web performans testleri için eklentileri de oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md) ve [nasıl yapılır: istek düzeyi eklentisi oluşturma](../test/how-to-create-a-request-level-plug-in.md).
+Web performans testleri için eklentileri de oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md) ve [nasıl yapılır: istek düzeyi eklentisi oluşturma](../test/how-to-create-a-request-level-plug-in.md).
 
 ## <a name="to-use-the-loadtesting-namespace"></a>LoadTesting ad alanını kullanmak için
 
@@ -50,10 +50,10 @@ Web performans testleri için eklentileri de oluşturabilirsiniz. Daha fazla bil
 
     2.  **Yük Testi Eklentisi Ekle** iletişim kutusu görüntülenir.
 
-    3.  Seçili eklenti bölmesi için Özellikler'de, eklenti çalışma zamanında kullanmak için başlangıç değerlerini ayarlayın.
+    3.  İçinde **özelliklerini çili eklenti** bölmesinde, çalışma zamanında kullanmak eklenti için başlangıç değerlerini ayarlayın.
 
         > [!NOTE]
-        > Eklentilerinizi istediğiniz sayıda özelliği üzerinden kullanıma sunabilirsiniz. Bunları yalnızca genel, ayarlanabilir ve tam sayı, Boole veya dize gibi bir temel türden yapın. Ayrıca, daha sonra Özellikler penceresini kullanarak yük testi eklentisi özelliklerini düzenleyebilirsiniz.
+        > Eklentilerinizi istediğiniz sayıda özelliği üzerinden kullanıma sunabilirsiniz. Bunları yalnızca genel, ayarlanabilir ve tam sayı, Boole veya dize gibi bir temel türden yapın. Yük Testi Eklentisi özelliklerini de düzenleyebilirsiniz daha sonra kullanarak **özellikleri** penceresi.
 
 9. Yük testinizi çalıştırın.
 
@@ -63,5 +63,5 @@ Web performans testleri için eklentileri de oluşturabilirsiniz. Daha fazla bil
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Özel kod ve yük testleri için eklentiler oluşturma](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Nasıl yapılır: Web başarım testi API'si kullanma](../test/how-to-use-the-web-performance-test-api.md)
+- [Nasıl yapılır: web başarım testi API'si kullanma](../test/how-to-use-the-web-performance-test-api.md)
 - [Nasıl yapılır: bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md)

@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178455"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381022"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>İzlenecek yol: Oluşturma ve birim testlerini içeren bir yük testi çalıştırma
 
 Bu izlenecek yolda, birim testleri içeren bir yük testi oluşturun.
 
-Bu izlenecek yol, oluşturma ve ardından Visual Studio Enterprise'ı kullanarak yük testi çalıştırma adımları. Bir yük testi, web performans testleri ve birim testlerini kapsayıcıdır. Yeni Yük Testi Sihirbazı ile yük testleri oluşturun.
+Bu izlenecek yol, oluşturma ve ardından Visual Studio Enterprise'ı kullanarak yük testi çalıştırma adımları. Bir yük testi, web performans testleri ve birim testlerini kapsayıcıdır. Yük testleri ile oluşturduğunuz **Yeni Yük Testi Sihirbazı**.
 
-Yük testi, istenen yük benzetimini oluşturacak şekilde değiştirilebilen birçok çalışma zamanı özellikleri de sunar. Bu kılavuzda, bir yük testi için birim testleri eklemek için Yeni Yük Testi Sihirbazı'nı kullanın.
+Yük testi, istenen yük benzetimini oluşturacak şekilde değiştirilebilen birçok çalışma zamanı özellikleri de sunar. Bu kılavuzda, kullandığınız **Yeni Yük Testi Sihirbazı** bir yük testi için birim testleri ekleme.
 
 Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
@@ -35,19 +35,19 @@ Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
 -   Bir yük testi çalıştırın.
 
--   İçindeki adımları uygulayın [izlenecek yol: yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) web içeren bir basit C# sınıf kitaplığı oluşturmak için performans ve yük proje bazı birim testlerinin sınayın.
+-   Bölümündeki adımları gerçekleştirdikten [izlenecek yol: oluşturma ve çalıştırma için birim testleri yönetilen kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) web içeren bir basit C# sınıf kitaplığı oluşturmak için performans ve yük bazı birim testlerinin ile testi.
 
-## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Yeni Yük Testi Sihirbazı'nı kullanarak birim testlerini içeren bir yük testi oluşturma
+## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Yeni Yük Testi Sihirbazı'nı kullanarak birim testleri içeren bir yük testi oluşturma
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Yeni Yük Testi Sihirbazı'nı başlatmak için
 
-1.  İçinde oluşturduğunuz Banka çözümünü açın [izlenecek yol: yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  İçinde oluşturduğunuz Banka çözümünü açın [izlenecek yol: yönetilen kod oluşturma ve çalıştırma için birim testleri](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  İçinde **Çözüm Gezgini**, banka çözümü düğümü için kısayol menüsünü açın, **Ekle**ve ardından **yeni proje**.
 
-     Yeni Proje Ekle iletişim kutusu görüntüler.
+     **Yeni Proje Ekle** iletişim kutusu görüntüler.
 
-3.  Yeni Proje Ekle iletişim kutusunda Genişlet **Visual C#** ve **Test**. Şablonlar listesinden seçin **Web performansı ve yük testi projesi** ve **adı** alanına `BankLoadTest`. Seçin **Tamam**.
+3.  İçinde **Yeni Proje Ekle** iletişim kutusunda **Visual C#** ve **Test**. Şablonlar listesinden seçin **Web performansı ve yük testi projesi** ve **adı** alanına `BankLoadTest`. Seçin **Tamam**.
 
      BankLoadTest web performans ve yük testi projesi çözüme eklenir.
 
@@ -88,7 +88,7 @@ Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Senaryoya ilişkin test karışım modeli seçmek için
 
-1.  Nasıl test karışımını modellenmesi seçin **toplam test sayısına göre**.
+1.  Altında **nasıl test karışımını modellenmesi**seçin **toplam test sayısına göre**.
 
 2.  Seçin **sonraki**.
 
@@ -98,17 +98,17 @@ Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
 2.  Seçin **Ekle** testleri seçmek için.
 
-3.  Listelenen CreditTest birim testlerini seçin **kullanılabilir testler** bölmesinde, tüm web performans testleri ve birim testleri web performansı ve yük testi projesi listeler.
+3.  Seçin **CreditTest** listelenen birim testleri **kullanılabilir testler** bölmesinde, tüm web performans testleri ve birim testleri web performansı ve yük testi projesi listeler.
 
-4.  İçin panosuna CreditTest test birimi eklemek için oku seçin **Seçili testler** bölmesi.
+4.  Eklemek için oku seçin **CreditTest** birim testine **Seçili testler** bölmesi.
 
-5.  DebitTest and FreezeAccountTest birim testleri için 3 ve 4 numaralı adımları tekrarlayın.
+5.  3 ve 4 için **DebitTest** ve **FreezeAccountTest** birim testleri.
 
 6.  Üç birim testini eklemeyi bitirdiğinizde, seçin **Tamam**.
 
      Test karışımı sunulur.
 
-7.  CreditTest dağıtımı altındaki kaydırıcıyı biraz sağa test dağıtımını ayarlamak üzere taşıyın. Diğer kaydırıcıların otomatik olarak sola taşı ve böylece dağılım % 100 oranında kalır dikkat edin.
+7.  Altındaki kaydırıcıyı **dağıtım** için **CreditTest** test dağıtımını ayarlamak için biraz sağa doğru. Diğer kaydırıcıların otomatik olarak sola taşı ve böylece dağılım % 100 oranında kalır dikkat edin.
 
 8.  Seçin **sonraki**.
 
@@ -124,7 +124,7 @@ Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
 1.  Seçin **sonraki**.
 
-     Sayaç kümeleri hakkında daha fazla bilgi için bkz: [sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testi içinde belirtme](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+     Sayaç kümeleri hakkında daha fazla bilgi için bkz: [sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testinde belirtin](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ### <a name="to-edit-run-setting-for-load-test"></a>Yük testi çalıştırma ayarını düzenlemek için
 
@@ -134,7 +134,7 @@ Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
 2.  Seçin **son**. Yük testi içinde açılır **Yük Testi Düzenleyicisi'ni**.
 
-## <a name="running-the-load-test"></a>Yük testi çalıştırma
+## <a name="run-the-load-test"></a>Yük testi çalıştırma
  Yük testini oluşturduktan sonra Banka uygulamanızın yük benzetimine nasıl nasıl yanıt vereceğini görüntülemek için çalıştırın. Bir yük testi çalışırken, gördüğünüz **Yük Testi Çözümleyicisi** penceresi.
 
 ### <a name="to-run-the-load-test"></a>Yük testini çalıştırmak için
@@ -145,8 +145,8 @@ Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hangi testlerin bir yük testi senaryosunda ekleneceğini belirlemek için Test Karışımını düzenleme](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [Bir yük testi senaryosunda dahil etmek için hangi testlerin belirlemek için test karışımını düzenle](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Sanal ağ türlerini belirtme](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
 - [Yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md)
-- [Sanal kullanıcı etkinlikleri modellemek için yük desenlerini düzenleme](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Model sanal kullanıcı etkinlikleri için yük desenlerini düzenleme](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [Bir testi çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

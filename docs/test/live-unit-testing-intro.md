@@ -1,6 +1,6 @@
 ---
-title: Dinamik birim testi Tanıtımı
-description: Birim testi canlı ve nasıl kullanılacağını avantajları hakkında bilgi edinin, birim projelerinizi testi.
+title: Live Unit Testing ile tanışın
+description: Live Unit Testing ve nasıl kullanılacağını avantajları hakkında bilgi edinin, birim testi projelerinizi.
 ms.date: 2017-09-11
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,36 +12,36 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 63f10359563e653dd896f47137126bb0991f7784
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5b19eee80b276642f9d9254120466a7972f6af27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280282"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379887"
 ---
-# <a name="introducing-live-unit-testing"></a>Dinamik birim testi Tanıtımı
+# <a name="introducing-live-unit-testing"></a>Live Unit Testing ile tanışın
 
-Dinamik birim testi bir Visual Studio 2017 kod değişiklikleri yaptığınız gibi gerçek zamanlı olarak otomatik olarak birim testleri yürütür sürüm 15.3 kullanılabilir teknolojisidir. Birim testi Canlı:
+Live Unit Testing, Visual Studio 2017 sürüm 15.3 kod değişiklik yaptığınız anda yürüten birim testleriniz otomatik olarak gerçek zamanlı olarak kullanılabilir bir teknoloji olması. Live Unit Testing:
 
-- Daha büyük bir güvenle düzenleme ve kodunu değiştir olanak sağlar. Değişikliklerinizi testleri bozmadığını emin olmak için kodunuzu düzenleyin dinamik birim testi otomatik olarak tüm etkilenen testleri yürütür.
+- Daha büyük bir güvenle yeniden düzenleme ve kod değişikliği olanak tanır. Değişikliklerinizi testleri kesintiye uğratmadığından emin olmak için kodunuzu düzenlediğiniz sırada Live Unit Testing tüm etkilenen testleri otomatik olarak yürütür.
 
-- Birim testleri yeterli kodunuzu kapsar ve birim testleri tarafından kapsanmayan kod gösterir olup olmadığını gösterir. Kaç testin her kod satırının kapak hem hangi satırların herhangi bir birim testi tarafından kapsanmayan bir bakışta görmenize olanak tanıyan dinamik birim testi kod kapsamı gerçek zamanlı grafik şeklinde gösterir.
+- Birim testleriniz yeterince kodunuzu kapsar ve birim testleri tarafından kapsanmayan kod gösterir olup olmadığını gösterir. Kaç tane testin her kod satırı ele hem hangi satırların herhangi bir birim testi tarafından kapsanmayan bir bakışta görebilmek Live Unit Testing gerçek zamanlı olarak kod kapsamı grafik olarak gösterir.
 
-Bir veya daha fazla birim testi projelerini içeren bir çözüm varsa, Canlı birim testi seçerek etkinleştirebilirsiniz **Test**, **Canlı birim testi**, **Başlat** üst düzey gelen Visual Studio menüsü.
+Bir veya daha fazla birim testi projeleri içeren bir çözümü varsa, Live Unit Testing seçerek etkinleştirebilirsiniz **Test** > **Live Unit Testing** > **Başlat**  en üst düzey Visual Studio menüsünde.
 
-Birim testi Canlı hakkında daha fazla bilgi için:
+Live Unit Testing hakkında daha fazla bilgi için:
 
-- Giriş öğretici deneyin [Canlı birim testi Visual Studio ile çalışmaya başlama](live-unit-testing-start.md).
+- Giriş niteliğindeki öğreticinin deneyin [Visual Studio Live Unit Testing kullanmaya başlama](live-unit-testing-start.md).
 
-- Ayrıntılı belgeleri okuyun [Visual Studio 2017 Enterprise Edition ile kullanım Canlı birim testi](live-unit-testing.md).
+- Ayrıntılı belgelere okuma [kullanım Live Unit Testing ile Visual Studio 2017 Enterprise Edition](live-unit-testing.md).
 
-- Okuma [Canlı birim testi SSS](live-unit-testing-faq.md) birim testine Canlı yenilikleri öğrenin olarak birim testi Canlı kullanmak için ipuçları ve teknikler hakkında okunamıyor.
+- Okuma [Live Unit Testing SSS](live-unit-testing-faq.md) Live Unit Testing yenilikleri öğrenmek için hem de Live Unit Testing kullanmaya ilişkin ipuçları ve teknikler hakkında bilgi edinin.
 
-- Birim testi canlı ve özelliklerini bir genel bakış için kanal 9 videoyu izleyin. </p>
+- Channel 9 Live Unit Testing ve özellikleri genel bir bakış için videoyu izleyin. </p>
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>İlgili kaynaklar
-[Test Araçları kod](https://visualstudio.microsoft.com/vs/testing-tools/)
-[birim testi kodunuz](unit-test-your-code.md)
+[Test araçlarının kod](https://visualstudio.microsoft.com/vs/testing-tools/)
+[kodunuzun birim testi](unit-test-your-code.md)
 

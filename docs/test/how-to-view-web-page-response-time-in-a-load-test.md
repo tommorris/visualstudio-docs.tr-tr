@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178300"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379488"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Çözümleyicisi Kullanarak Bir Yük Testinde Web Sayfası Yanıt Süresini Görüntüleme
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Çözümleyicisi kullanarak bir yük testinde web sayfası yanıt süresini görüntüleme
 
 Her web sayfasının yüklenmesi için geçen süreyi olarak da bilinen *yanıt süresi*. Web performans testi oluşturduğunuzda, web performans testinde web sayfası her istek için yanıt süresi hedefi ayarlayabilirsiniz.
 
@@ -29,17 +29,17 @@ Bir yük testi içinde web performans testinizi yoğunluk altında çalıştır�
 
 -   Sayfanın yanıt süresi hedefi karşılayan test yinelemeleri yüzdesi.
 
--   Tablo veya grafik görünümünde Yük Testi Çözümleyicisi'nde kullanarak web sayfası yanıt sürelerini analiz edebilirsiniz:
+-   Tablolar veya grafikler görünümünde kullanarak web sayfası yanıt sürelerini analiz edebilirsiniz **Yük Testi Çözümleyicisi**:
 
 -   Tablo görünümünde Web sayfası yanıt sürelerini analiz etme
 
 -   Grafik görünümünde Web sayfası yanıt sürelerini analiz etme
 
-## <a name="view-response-time-data-in-a-table"></a>Bir tablodaki görünümü yanıt süresi verilerini
+## <a name="view-response-time-data-in-a-table"></a>Bir tablodaki yanıt süresi verilerini görüntüleyin
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Bir tablodaki yanıt süresi verilerini görüntülemek için
 
-1.  Yük Testi Çözümleyicisi'nde seçin **tabloları** araç çubuğundaki tablo kılavuzunu görüntülendiğinden emin olun.
+1.  İçinde **Yük Testi Çözümleyicisi**, seçin **tabloları** araç çubuğundaki tablo kılavuzunu görüntülendiğinden emin olun.
 
 2.  İçinde **tablo** aşağı açılan liste kutusunda **sayfaları**.
 
@@ -64,15 +64,15 @@ Bir yük testi içinde web performans testinizi yoğunluk altında çalıştır�
     |**Hedef**|Sayfa saati hedefi. Bu sayfa için sabit bir değerdir. **Not:** sayfa saati hedefi, web performans testinde istek için hedef yalnızca tanımlanmış olduğunda görüntülenir.|
     |**% Toplantı hedefi**|Web sayfası için yanıt süresi hedefi karşılayan yapılan isteklerin yüzdesi.|
 
- Daha fazla bilgi için [yük testi sonuçlarını çözümleme ve hataları Tablo görünümünde](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+ Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-## <a name="view-response-time-data-in-a-graph"></a>Grafik görünümü yanıt süresi verilerini
+## <a name="view-response-time-data-in-a-graph"></a>Yanıt süresi verilerini bir grafikte görüntüleme
 
-Yanıt süresi verilerini nasıl Yük testiniz sırasında zamanla değişeceğini görmek için bir grafik de görüntüleyebilirsiniz. Test çalışırken (örneğin, adım yükü düzenini kullanıyorsanız), yük düzeni artarsa bu özellikle yararlıdır. Daha fazla bilgi için [modeli sanal kullanıcı etkinlikleri için yük desenlerini düzenleme](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Yanıt süresi verilerini nasıl Yük testiniz sırasında zamanla değişeceğini görmek için bir grafik de görüntüleyebilirsiniz. Test çalışırken (örneğin, adım yükü düzenini kullanıyorsanız), yük düzeni artarsa bu özellikle yararlıdır. Daha fazla bilgi için [düzenleme yük desen modeli sanal kullanıcı etkinliği](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Bir yanıt süresi verilerini görüntülemek için
 
-1.  Yük Testi Çözümleyicisi'nde seçin **grafikleri** araç çubuğundaki graf görüntülendiğinden emin olun.
+1.  İçinde **Yük Testi Çözümleyicisi**, seçin **grafikleri** araç çubuğundaki graf görüntülendiğinden emin olun.
 
 2.  İçinde **sayaçları** penceresi içinde ilginizi senaryo düğümünü genişletin (örneğin, `Scenario1`).
 
@@ -86,15 +86,15 @@ Yanıt süresi verilerini nasıl Yük testiniz sırasında zamanla değişeceği
 
      Verileri grafiğe eklenir.
 
-7.  (İsteğe bağlı) Ort için önceki adımı yineleyin Sayfa süresi, sayfa yanıt süresi hedefi ve toplam sayfa sayısı.
+7.  (İsteğe bağlı) İçin önceki adımı yineleyin **ortalama Sayfa saati**, **sayfa yanıt süresi hedefi**, ve **toplam sayfa**.
 
     > [!NOTE]
-    > Sayfa yanıt süresi hedefi sabittir.
+    > **Sayfa yanıt süresi hedefi** sabittir.
 
- Daha fazla bilgi için [Grafik görünümünde yük testi sonuçlarını analiz](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Daha fazla bilgi için [Çözümle yük testi sonuçlarını grafik görünümünde](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümleyin](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Nasıl yapılır: yük testi sonuçları analize erişme](../test/how-to-access-load-test-results-for-analysis.md)
+- [Nasıl yapılır: erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

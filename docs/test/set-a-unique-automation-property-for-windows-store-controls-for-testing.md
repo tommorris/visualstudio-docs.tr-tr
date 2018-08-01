@@ -9,22 +9,22 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692362"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382831"
 ---
-# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Test Etme Amacıyla UWP Denetimleri için Benzersiz Otomasyon Özelliği Ayarlama
+# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Test etmek için UWP denetimleri için benzersiz Otomasyon özelliği ayarlama
 
-XAML tabanlı UWP uygulamanız için kodlanmış UI testleri çalıştırmak istiyorsanız, her denetim benzersiz Otomasyon özelliği tarafından tanımlanması gerekir. Uygulamanızda XAML denetimin türüne göre benzersiz Otomasyon özelliği atayabilirsiniz.
+XAML tabanlı UWP uygulamanız için kodlanmış UI testlerini çalıştırmak istiyorsanız, her denetimin benzersiz Otomasyon özelliği tarafından tanımlanması gerekir. Benzersiz Otomasyon özelliği, uygulamanızdaki XAML denetimi türüne göre atayabilirsiniz.
 
 ## <a name="static-xaml-definition"></a>Statik XAML tanımı
 
-XAML dosyanızda tanımlanan bir denetim için benzersiz Otomasyon özelliği belirtmek için ayarlayabileceğiniz **AutomationProperties.AutomationId** veya **AutomationProperties.Name** örtük veya açık olarak, Aşağıdaki örneklerde gösterildiği gibi. Bu değerlerden birini ayarı denetimi kodlanmış UI testi veya eylem kaydetme oluşturduğunuzda denetimi tanımlamak için kullanılan benzersiz Otomasyon özelliği sağlar.
+XAML dosyanızda tanımlanan bir denetim için benzersiz Otomasyon özelliği belirtmek için ayarlayabileceğiniz **AutomationProperties.AutomationId** veya **AutomationProperties.Name** örtük veya açık olarak, Aşağıdaki örneklerde gösterildiği gibi. Bu değerlerden birini ayarlama denetimi, bir kodlanmış UI test veya eylem kaydını oluşturduğunuzda denetimi tanımlamak için kullanılan benzersiz Otomasyon özelliği sağlar.
 
-### <a name="set-the-property-implicitly"></a>Özellik örtük olarak ayarlayın
+### <a name="set-the-property-implicitly"></a>Örtük olarak ayarlamayın
 
 Ayarlama **AutomationProperties.AutomationId** için **ButtonX** kullanarak **adı** XAML denetimi için bir özellik.
 
@@ -38,33 +38,33 @@ Ayarlama **AutomationProperties.Name** için **ButtonY** kullanarak **içerik** 
 <Button Content="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
-### <a name="set-the-property-explicitly"></a>Özelliği açıkça ayarlayın
+### <a name="set-the-property-explicitly"></a>Özelliğini açıkça ayarlayın
 
-Ayarlama **AutomationProperties.AutomationId** için **ButtonX** denetiminin XAML'de açıkça.
+Ayarlama **AutomationProperties.AutomationId** için **ButtonX** açıkça denetimi için XAML içinde.
 
 ```xaml
 <Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
-Ayarlama **AutomationProperties.Name** için **ButtonY** denetiminin XAML'de açıkça.
+Ayarlama **AutomationProperties.Name** için **ButtonY** açıkça denetimi için XAML içinde.
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
-## <a name="assign-unique-names"></a>Benzersiz adlar atayın
+## <a name="assign-unique-names"></a>Benzersiz adları atama
 
-Visual Studio için Blend'de düğmeleri, liste kutuları, birleşik giriş kutuları ve metin kutuları gibi etkileşimli öğeler benzersiz adlar atamak için bir seçenek belirleyebilirsiniz. Bu denetimler için benzersiz değerler verir **AutomationProperties.Name**.
+Visual Studio için Blend'de düğmeler, liste kutuları, birleşik giriş kutuları ve denetimler için benzersiz değerler sağlayan, metin kutuları gibi etkileşimli öğeler için benzersiz bir ad atamak için bir seçenek seçebileceğiniz **AutomationProperties.Name**.
 
-Mevcut denetimleri benzersiz adlar atamak için seçin **Araçları** > **adı etkileşimli öğeler**.
+Varolan denetimler için benzersiz bir ad atamak için **Araçları** > **etkileşimli öğeleri Adlandır**.
 
-![Visual Studio için blend'de adı etkileşimli öğeler](../test/media/cuit_windowsstoreproperty_blend_1.png)
+![Visual Studio için blend'de etkileşimli öğeleri Adlandır](../test/media/cuit_windowsstoreproperty_blend_1.png)
 
-Otomatik olarak eklediğiniz yeni denetimleri için benzersiz bir ad vermek için seçin **Araçları** > **seçenekleri** açmak için **seçenekleri** iletişim. Seçin **XAML Tasarımcısı** ve ardından **oluşturma etkileşimli öğelerde'otomatik olarak ad**. Seçin **Tamam** iletişim kutusunu kapatın.
+Otomatik olarak eklediğiniz yeni denetimler için benzersiz adlar vermek istiyorsanız, **Araçları** > **seçenekleri** açmak için **seçenekleri** iletişim. Seçin **XAML Tasarımcısı** seçip **oluşumda etkileşimli öğeleri'otomatik olarak ad**. Seçin **Tamam** iletişim kutusunu kapatın.
 
 ## <a name="use-a-data-template"></a>Veri şablonu kullanın
 
-Basit bir şablon kullanarak tanımlayabilirsiniz **ItemTemplate** değişkenleri için değerleri bir liste kutusunda bağlamak için:
+Kullanarak basit bir şablon tanımlayabilirsiniz **ItemTemplate** değişkenleri için değerleri bir liste kutusunda bağlamak için:
 
 ```xaml
 <ListBox Name="listBox1" ItemsSource="{Binding Source={StaticResource employees}}">
@@ -79,7 +79,7 @@ Basit bir şablon kullanarak tanımlayabilirsiniz **ItemTemplate** değişkenler
 </ListBox>
 ```
 
-Bir şablonla de kullanabilirsiniz **ItemContainerStyle** değişkenlere değerler bağlamak için:
+Bir şablonla kullanabilirsiniz **ItemContainerStyle** değişkenler değerlerini bağlamak için:
 
 ```xaml
 <ListBox Name="listBox1" ItemsSource="{Binding Source={StaticResource employees}}">
@@ -99,10 +99,10 @@ Bir şablonla de kullanabilirsiniz **ItemContainerStyle** değişkenlere değerl
 </ListBox>
 ```
 
-Daha sonra hem de bu örnekler için geçersiz kılmalısınız **ToString()** yöntemi **Itemsource'u**, aşağıdaki kod örneğinde gösterildiği gibi. Bu kod, emin yapar **AutomationProperties.Name** değeri ayarlanır ve bağlama kullanarak her veriye bağlı bir liste öğesi için benzersiz Otomasyon özelliği ayarlanamıyor çünkü benzersizdir. İçin benzersiz bir değere ayarlama **Otomasyon Properties.Name** bu durumda yeterlidir.
+Bu örneklerin her ikisi için ardından tanımlamalısınız **ToString()** yöntemi **Itemsource'u**aşağıdaki kod örneğinde gösterildiği gibi. Bu kod, xenapp'i **AutomationProperties.Name** değeri ayarlanır ve bağlama kullanarak her bir veri bağlantılı liste öğesi için benzersiz Otomasyon özelliği ayarlanamıyor çünkü benzersizdir. Ayar için benzersiz bir değer **Otomasyon Properties.Name** bu durumda yeterlidir.
 
 > [!NOTE]
-> Bu yaklaşımı kullanarak, liste öğesinin iç içeriği de çalışan sınıfı içindeki bir dizeye bağlama aracılığıyla ayarlanabilir. Örnekte gösterildiği gibi her liste öğesi içindeki düğme denetim çalışan kimliği olan benzersiz Otomasyon bir kimlik atanır
+> Bu yaklaşımı kullanarak, liste öğesinin iç içeriği de çalışan sınıfı içindeki bir dizeye bağlama aracılığıyla ayarlanabilir. Örnekte gösterildiği gibi düğme denetimini her liste öğesi içinde çalışan kimliği olan bir benzersiz Otomasyon kimliği atanır
 
 ```csharp
 Employee[] employees = new Employee[]
@@ -123,7 +123,7 @@ public override string ToString()
 
 ## <a name="use-a-control-template"></a>Bir denetim şablonu kullanın
 
-Böylece kodu tanımlandığında belirli bir türdeki her örneğini benzersiz Otomasyon özelliği alır, bir denetim şablonu kullanabilirsiniz. Şablonu oluşturmak için **AutomationProperty** denetim örneğinde benzersiz bir kimliği bağlar. Bu bağlama ile bir denetim şablonu oluşturmak için bir yaklaşım aşağıdaki XAML gösterir:
+Kodda tanımlandığında belirli bir türün her örneğini benzersiz Otomasyon özelliği alır. böylece, bir denetim şablonu kullanabilirsiniz. Şablonu oluşturmak için **AutomationProperty** benzersiz bir kimlik denetimi örneğinde bağlar. Aşağıdaki XAML bir denetim şablonu ile bu bağlamayı oluşturmak için bir yaklaşım gösterilmektedir:
 
 ```xaml
 <Style x:Key="MyButton" TargetType="Button">
@@ -140,7 +140,7 @@ Böylece kodu tanımlandığında belirli bir türdeki her örneğini benzersiz 
 </Style>
 ```
 
-Bu denetim şablonu kullanarak bir düğme iki örneğini tanımladığınızda, Otomasyon kimliği denetimleri şablonu için benzersiz içerik dizesi aşağıdaki XAML'de gösterildiği şekilde ayarlanır:
+Bu denetim şablonu kullanarak bir düğme iki örneğini tanımladığınızda, Otomasyon kimliği şablonda, denetimler için benzersiz içerik dizesi aşağıdaki XAML içinde gösterilen şekilde ayarlanır:
 
 ```xaml
 <Button Content="Button1" Style="{StaticResource MyButton}" Width="140"/>
@@ -149,7 +149,7 @@ Bu denetim şablonu kullanarak bir düğme iki örneğini tanımladığınızda,
 
 ### <a name="dynamic-controls"></a>Dinamik denetimleri
 
-Kodunuz aracılığıyla dinamik olarak oluşturulan ve statik olarak ya da XAML dosyaları şablonlarında aracılığıyla oluşturulmamış denetimleri varsa, ayarlamalısınız **içerik** veya **adı** denetim özelliklerini. Bu dinamik her denetim benzersiz Otomasyon özelliği sahip olduğundan emin olur. Örneğin, bir liste öğesini seçtiğinizde, görüntülenmesi gerekir bir onay kutusu varsa, aşağıda gösterildiği gibi bu özellikleri ayarlayabilirsiniz:
+Kodunuz aracılığıyla dinamik olarak oluşturulan ve statik veya XAML dosyalarındaki Şablonlar aracılığıyla oluşturulmamış denetimleri varsa ayarlamalısınız **içerik** veya **adı** denetimin özelliklerini. Bu eylem, dinamik her denetimin benzersiz Otomasyon özelliği olduğundan emin olur. Örneğin, bir liste öğesi seçtiğinizde, görüntülenmesi gereken bir onay kutusu varsa, burada gösterildiği gibi bu özellikleri ayarlayabilirsiniz:
 
 ```csharp
 private void CreateCheckBox(string txt, StackPanel panel)
@@ -165,4 +165,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kodlanmış UI testleri ile test UWP uygulamaları](../test/test-uwp-app-with-coded-ui-test.md)
+- [Kodlanmış UI testleriyle UWP uygulamalarını test etme](../test/test-uwp-app-with-coded-ui-test.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 4f9f95b2e4aa6eda9b87c8f7b8d999d84b72c9a5
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978378"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468318"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -40,7 +40,7 @@ Doğrudan kodlama içine alan birim testine giriş için aşağıdaki konulardan
 
 ## <a name="the-mybank-solution-example"></a>MyBank çözümü örneği
 
-Bu konu başlığında, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` örnek olarak. Bu konudaki açıklamaları izlemek için gerçek kod gerekmez. Test yöntemlerini C# dilinde yazılmış ve yönetilen kod için Microsoft birim testi Çerçevesi'ni kullanarak, ancak kavramlardan kolayca diğer dillerde ve çerçevelerde aktarılır.
+Bu konu başlığında, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` örnek olarak. Bu konudaki açıklamaları izlemek için gerçek kod gerekmez. Test yöntemlerini C# dilinde yazılmış ve yönetilen kod için Microsoft birim testi çerçevesini kullanarak sunulur. Ancak, diğer dillerde ve çerçevelerde kavramları kolayca aktarılır.
 
  ![MyBank çözümü](../test/media/ute_mybanksolution.png)
 
@@ -52,13 +52,13 @@ Bu konu başlığında, kullandığımız adlı kurgusal bir uygulamanın geliş
 
 -   `BankDb`
 
- Bizim ilk denemesini tasarlama `Accounts` proje içeren bir hesap, ortak işlevsellik ürünü ve hesabı ve bir sınıf varlıklar geri alınmasının gibi hesabının herhangi bir türde belirten bir arabirim hakkındaki temel bilgileri tutmak için bir sınıf Çek hesabı temsil eden arabirimden türetilmiş. Aşağıdaki kaynak dosyaları oluşturarak hesapları projeleri başlamadan:
+ Bizim ilk denemesini tasarlama `Accounts` projesini içeren bir hesap, ortak işlevsellik ürünü ve hesabı ve bir sınıf varlıklar geri alınmasının gibi hesabının herhangi bir türde belirten bir arabirim hakkındaki temel bilgileri tutmak için bir sınıf Çek hesabı temsil eden arabirimden türetilmiş. Aşağıdaki kaynak dosyaları oluşturarak hesapları projeleri başlamadan:
 
 -   *AccountInfo.cs* hesabınız için temel bilgileri tanımlar.
 
 -   *IAccount.cs* bir standardı tanımlar `IAccount` havale ve varlıklar bir hesaptan geri alma ve hesap bakiyesi almak için yöntemleri dahil olmak üzere, hesap için arabirim.
 
--   *CheckingAccount.cs* içeren `CheckingAccount` uygulayan sınıf `IAccounts` Çek hesabı için arabirim.
+-   *CheckingAccount.cs* içeren `CheckingAccount` uygulayan sınıf `IAccount` Çek hesabı için arabirim.
 
 Çek Hesabı hesabından yapmanız gereken, bir şey çekilen miktarın bakiyeden hesap bakiyesinden daha az olduğundan emin olmaktır deneyiminden biliyoruz. Biz geçersiz kılmak için `IAccount.Withdraw` yönteminde `CheckingAccount` denetleyen ve bu koşul için bir yöntem. Yöntem şuna benzeyebilir:
 
@@ -311,7 +311,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  Daha fazla bilgi edinin [kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
- **S: ben yöntemleri dış bağımlılıkları olan kodumu test edebilirim?**
+ **Dış bağımlılıkları olan kodumu yöntemleri test miyim?**
 
  **Y:** Evet. Visual Studio Enterprise yüklüyse, Microsoft Fakes ile yönetilen kod için birim testi çerçevelerini kullanarak yazdığınız test yöntemleri kullanılabilir.
 

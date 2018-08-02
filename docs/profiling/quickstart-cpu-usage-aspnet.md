@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204558"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468578"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: CPU kullanım verileri, Visual Studio (ASP.NET) çözümleme
 
@@ -31,9 +31,6 @@ Tanılama hub'ı, çok sayıda çalıştırın ve tanılama oturumunuzu yönetme
 1. Visual Studio'da **dosya** > **yeni proje**.
 
 1. Altında **Visual C#**, seçin **Web**seçip Ortadaki bölmeden **ASP.NET Web uygulaması (.NET Framework)**.
-
-    > [!NOTE]
-    > CPU kullanımı aracı, ASP.NET Core şu anda desteklenmiyor.
 
 1. Gibi bir ad yazın **MyProfilingApp_MVC** tıklatıp **Tamam**.
 

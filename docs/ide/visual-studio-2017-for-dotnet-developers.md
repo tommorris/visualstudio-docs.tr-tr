@@ -12,24 +12,25 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381100"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468279"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# üretkenlik Kılavuzu
 
 Bilgi nasıl [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) geliştiricileri her zamankinden daha üretken hale getirir. Yazdığınız sırada bir hiyerarşi görünümüne bizim performans ve üretkenlik geliştirmeleri gezinme gibi kaynak koda dönüştürülmüş derlemeler için değişken adı önerileri yararlanmak **Test Gezgini**, tümüne Git (**Ctrl** + **T**) için dosya/türü/üyeye/sembole bildirimleri, akıllı gitmek için **özel durum Yardımcısı**, kod stili yapılandırması ve zorlaması ve satır ve kod düzeltmeleri.
 
-##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Benim için klavye kısayolları farklı bir uzantı/Düzenleyicisi/IDE kullanılan yaşıyorum.
+## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Benim için klavye kısayolları farklı bir uzantı/Düzenleyicisi/IDE kullandım yaşıyorum
 
 **Yeni Visual Studio 2017 sürüm 15,8** kodlama, klavye düzeninizi değiştirebilirsiniz ya da başka bir IDE'den kullanıma sunulacak *Visual Studio Code* veya *ReSharper (Visual Studio)*:
 
 ![Visual Studio'da klavye düzenleri](../ide/media/VS2017Guide-Keyboard.png)
 
 Bazı uzantılar da klavye düzenleri:
+
 - [Visual Studio (ReSharper/Intellij) için kısayol tuşları](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [Emacs benzetimi](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
@@ -58,23 +59,29 @@ Popüler Visual Studio kısayolları şunlardır:
 
 Klavye kısayolları ve Visual Studio'da komutlar daha fazla bilgi [Belgelerimizi](..\ide\tips-and-tricks-for-visual-studio.md).
 
-## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Dosya veya türler için hızlıca gezinmek için bir yol gerekiyor.
-Visual Studio 2017 adlı bir özellik olan **tümüne Git** (**Ctrl**+**T**). Tümüne Git, hızla herhangi dosya, tür, üye veya sembol bildirimi atlamak sağlar.
-- Bu arama çubuğunun konumu değiştirebilir veya 'Canlı Gezinti önizlemeyi' ile Kapat **dişli** simgesi
+## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Dosya veya türler için hızlıca gezinmek için bir yola ihtiyacım
+
+Visual Studio 2017 adlı bir özellik olan **tümüne Git** (**Ctrl**+**T**). **Tümüne Git** herhangi dosya, tür, üye veya sembol bildirimi hızla atlamak sağlar.
+
+- Bu arama çubuğunun konumu değiştirebilir veya 'Canlı Gezinti önizlemeyi' ile Kapat **dişli** simgesi.
 - Bizim sorgu söz dizimi (örneğin, "t mytype") kullanarak sonuçları filtreleyin. Ayrıca, yalnızca geçerli belgede arama kapsamını belirleyebilirsiniz.
 - camelCase eşleşen destekleniyor!
 
 ![Visual Studio tüm Git](../ide/media/VS2017Guide-go-to-all.png)
 
-## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Takımım bizim kod temeli üzerinde kod stili kurallarından zorlar.
+## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Kod stili kurallarından bizim kod temeli üzerinde takımım zorlar
+
 Kullanabileceğiniz bir *.editorconfig* kodlama kurallarını kod oluşturma ve bunları kaynağınızla seyahat dosya.
-- Yüklemenizi öneririz [EditorConfig dil Hizmetleri Uzantısı](https://aka.ms/editorconfig) ekleme ve düzenleme için bir *.editorconfig* dosyasını Visual Studio'da.
-- Kullanıma [belgeleri](https://aka.ms/editorconfigDocs) tüm .NET kodlama kuralı seçeneklerini için.
-- Bkz: [bu gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) örneği *.editorconfig*.
+
+- Yükleyebileceğiniz [EditorConfig dil Hizmetleri Uzantısı](https://aka.ms/editorconfig), kolaylaştıran ekleme ve düzenleme bir *.editorconfig* dosyasını Visual Studio'da.
+- Denemenin [için Visual Studio Intellicode uzantısı](/visualstudio/intellicode/intellicode-visual-studio). Bu Deneysel uzantı mevcut koddan, kod stilleri algılar ve ardından boş olmayan oluşturur *.editorconfig* dosya ile kod stili tercihlerinizden zaten tanımlanmış.
+- Kullanıma [.NET kodlama kuralı seçeneklerini](https://aka.ms/editorconfigDocs) belgeleri.
+- Bkz: [bu gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) örneği *.editorconfig* dosya.
 
 ![Visual Studio'da kod stil uygulama](../ide/media/VSGuide_CodeStyle.png)
 
-## <a name="i-need-more-refactorings-and-code-fixes"></a>Daha fazla sayıda yeniden düzenleme ve kod düzeltmeleri ihtiyacım var.
+## <a name="i-need-more-refactorings-and-code-fixes"></a>Daha fazla sayıda yeniden düzenleme ve kod düzeltmeleri gerekiyor
+
 Visual Studio 2017 ile çok sayıda yeniden düzenleme, kod oluşturma eylemleri ve kod düzeltmeleri gelir. Kırmızı dalgalı çizgiler hataları temsil eden yeşil dalgalı çizgiler uyarıları temsil eder ve gri üç noktaya kod önerileri temsil eder. Ampul/tornavida simgesine tıklayarak veya basarak erişim kod düzeltmeleri yapabilirsiniz **Ctrl**+**.** veya **Alt**+**girin**. Her düzeltme, düzeltme nasıl çalıştığına ilişkin bir Canlı kod fark gösteren bir önizleme penceresi ile birlikte gelir.
 
 - Popüler hızlı düzeltmeler ve yeniden düzenlemeler içerir:
@@ -98,6 +105,7 @@ Visual Studio 2017 ile çok sayıda yeniden düzenleme, kod oluşturma eylemleri
 ![Visual Studio'da yeniden düzenlemeler](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Bulma kullanımları, uygulamaya Git, kaynak koda dönüştürülmüş derlemeleri gidin almam gerekiyor
+
 Visual Studio 2017'yi arayın ve kod temelinizde gidin yardımcı olmak üzere birçok özelliğe sahiptir. Daha fazla bilgi edinin [kod gezintisi özelliklerinde](../ide/navigating-code.md)
 
 | Özellik | Kısayol | Ayrıntılar/geliştirmeleri |
@@ -111,16 +119,20 @@ Visual Studio 2017'yi arayın ve kod temelinizde gidin yardımcı olmak üzere b
 
 ![Tümüne Git ve tüm başvuruları Bul](../ide/media/VSIDE_Productivity_Navigation.png)
 
-## <a name="i-want-to-run-and-see-my-unit-tests"></a>My birim testleri çalıştırın ve istiyorum.
+## <a name="i-want-to-run-and-see-my-unit-tests"></a>Çalıştırın ve birim testlerimi görmek istiyorum
+
 Visual Studio 2017'de çok fazla test deneyimde yapılan geliştirmeler yaptık. Kullanın ya da test etme deneyimlerine MSTest v1, MSTest v2, NUnit veya XUnit ile bizim birim test çerçeveleri.
+
 - **Test Gezgini** test bulma işleminin hızlı sürüm 15.6 (için en iyi sonuçları, test bağdaştırıcınızın en son sürüme yükseltme) içinde.
 - Test Gezgini'nde yeni ile testleri düzenlemek *hiyerarşik sıralama* 15.6 sürümünde.
 - [Live unit Testing](../test/live-unit-testing.md) sürekli olarak kod değişikliklerinizden etkilenen testleri çalıştırır ve testlerinizi durumunu bildirmek için satır içi Düzenleyicisi simgeleri güncelleştirir. Dahil veya hariç belirli testleri test projelerinden, *Canlı Test kümesi*.
 
 ![Visual Studio'da metin Gezgini hiyerarşi görünümü](../ide/media/VSGuide_Testing.png)
 
-## <a name="i-want-to-debug-my-code"></a>Kodumda Hata Ayıkla istiyorsunuz.
-Visual Studio 2017'de bir sürü yeni hata ayıklama özellikleri ekledik.
+## <a name="i-want-to-debug-my-code"></a>Kodumda Hata Ayıkla istiyorum
+
+Visual Studio 2017'de bir sürü yeni hata ayıklama özellikleri ekledik:
+
 - *Çalıştır'ı tıklatın* bir kod satırının yanındaki gelin sağlar görüntülenen yeşil 'Yürüt' simge ulaşmak ve bu satırı ulaşana kadar programınızı çalıştırın.
 - Yeni **özel durum Yardımcısı** hangi değişkeni gibi en önemli bilgileri üst düzey iletişim kutusunda bir NullReferenceException ' null' geçirir.
 - [Geri adım](../debugger/how-to-use-intellitrace-step-back.md) hata ayıklama, önceki kesme noktaları veya adımlara geri dönün ve daha önce olduğu gibi uygulama durumunu görüntüleme olanak tanır.
@@ -128,14 +140,17 @@ Visual Studio 2017'de bir sürü yeni hata ayıklama özellikleri ekledik.
 
 ![Visual Studio 2017'de yeni bir özel durum Yardımcısı](../ide/media/VSGuide_Debugging.png)
 
-## <a name="i-want-to-use-version-control-with-my-projects"></a>Projelerim ile sürüm denetimi kullanmak istiyorsunuz.
+## <a name="i-want-to-use-version-control-with-my-projects"></a>Sürüm denetimi ile Projelerim kullanmak istiyorum
+
 Git veya TFVC, depolama ve Visual Studio'da kodunuzu güncelleştirmek için kullanabilirsiniz.
+
 - Değişikliklerinizi yerel düzenleme **Takım Gezgini** ve durum çubuğunda işlemeler ve değişiklikleri izlemek için kullanabilirsiniz.
 - Sürekli tümleştirme ve teslim ile Visual Studio içinde projeleriniz için ayarlama bizim [Visual Studio için sürekli teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) uzantısı ve Çevik Geliştirici iş akışını benimseyin.
 
 ![Visual Studio kaynak denetimi](../ide/media/VSIDE_Productivity_SourceControl.png)
 
 ## <a name="what-other-features-do-i-need-to-know-about"></a>Başka hangi özellikler hakkında bilgi edinmek ihtiyacım var?
+
 Kod yazma daha verimli hale getirmek için düzenleyici ve üretkenlik özelliklerin bir listesi aşağıda verilmiştir. Bazı özellikler, çünkü bunlar devre dışı (bunlar makinenizde şeyler dizin, tartışmalı veya şu anda Deneysel) varsayılan olarak etkinleştirilmesi gerekebilir.
 
 | Özellik | Ayrıntılar | Etkinleştirme |
@@ -149,6 +164,8 @@ Kod yazma daha verimli hale getirmek için düzenleyici ve üretkenlik özellikl
 | [Kod parçacıkları](../ide/visual-csharp-code-snippets.md) | Ortak Demirbaş saplama Yardım |  Bir kod parçacığı adı yazıp basın **sekmesini** iki kez. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Üretken veya yaşayan kötü performans sağlayan bir özellik eksik?
+
 Bize geri bildirim bırakmak için birkaç yolu vardır:
+
 - .NET özellik istekleri üzerinde dosyalandı bizim [GitHub deposunu](https://github.com/dotnet/roslyn/issues).
 - Visual Studio özellik isteklerini, hataları ve performans sorunları Dosyalanan kullanarak **geri bildirim gönder** Visual Studio pencerenizin sağ üst simge.

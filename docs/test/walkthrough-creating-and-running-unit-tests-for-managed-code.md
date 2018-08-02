@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380869"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469119"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
@@ -151,7 +151,7 @@ Denetlenmesi gereken en az üç davranış vardır:
 
 - Çağırılıyorsa yöntem bir <xref:System.ArgumentOutOfRangeException> borç tutarı bakiyeden büyükse.
 
-- Çağırılıyorsa yöntem <xref:System.ArgumentOutOfRangeException> borç tutarını küçükse sıfır.
+- Çağırılıyorsa yöntem bir <xref:System.ArgumentOutOfRangeException> borç tutarını küçükse sıfır.
 
 - Yöntemi, Borç tutarını geçerliyse, hesap bakiyeniz borç tutarını çıkarır.
 
@@ -210,7 +210,7 @@ Bir test yönteminin aşağıdaki gereksinimleri karşılaması gerekir:
 
 ### <a name="analyze-the-test-results"></a>Test sonuçlarını çözümleme
 
-Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi, bir ileti görüntüler beklenenle ( **beklenen\<*değer* >**  parametresi) ve hangi gerçekten alındı ( **Gerçek\<*değer* >** parametresi). Azaltmak için Bakiye bekleniyordu ancak bunun yerine çekilen miktarın azaltılması tarafından gerçekten artırdık.
+Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEqual` yöntemi, bir ileti görüntüler beklenenle ( **beklenen\<*değer* >**  parametresi) ve hangi gerçekten alındı ( **Gerçek\<*değer* >** parametresi). Azaltmak için Bakiye bekleniyordu ancak bunun yerine, mevzuatı miktarına göre artar.
 
 Birim testi bir hata ortaya çıkardı: mevzuatı miktarı *eklenen* olmalıydı hesap bakiyesine *çıkartılır*.
 

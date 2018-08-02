@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklayıcı ayarları ve hazırlığı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151580"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468305"
 ---
 # <a name="debugger-settings-and-preparation"></a>Hata ayıklayıcı ayarları ve hazırlığı
 Bu bölümde hata ayıklayıcı ile ilgili özellik ayarları ve programınızla birlikte hata ayıklamak için gereken hazırlık açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklayıcı. Programınızda oluşturursanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje şablonlarını kullanarak, bu ayarlar, hata ayıklama yapılandırmasında ayarlandığını.  
@@ -50,9 +50,6 @@ Bu bölümde hata ayıklayıcı ile ilgili özellik ayarları ve programınızla
   
  [64 Bit uygulamalarda hata ayıklama](../debugger/debug-64-bit-applications.md)  
  64 bit uygulamalarda hata ayıklama işlemini açıklamaktadır.  
-  
- [Hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md)  
- Barındırma işlemi farklı yönlerini açıklar.  
   
  [Nasıl yapılır: hata ayıklama için bir .NET Framework sürümü belirtme](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Hata ayıklayıcı için hangi sürümün kullanılacağını belirtmek için bir kayıt defteri anahtarı ayarlama işlemi açıklanmaktadır.  

@@ -2,7 +2,7 @@
 title: Çok iş parçacıklı uygulamalarda hata ayıklamayı öğrenin
 description: Paralel Yığınlar ve paralel izleme Visual Studio kullanarak hata ayıklama
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204225"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468689"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Visual Studio'da çok iş parçacıklı uygulamalarda hata ayıklamaya başlama
 Visual Studio, çeşitli araçları ve çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olmak için kullanıcı arabirimi öğeleri sağlar. Bu öğreticide, iş parçacığı işaretçileri kullanmak gösterilir **Paralel Yığınlar** penceresinde **paralel izleme** pencere, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğreticide yalnızca birkaç dakika sürer, ancak bunu tamamlamaya, çok iş parçacıklı uygulamalarda hata ayıklama özellikleriyle alışmanızı.
@@ -47,9 +47,9 @@ Bu öğreticiye başlamadan bir çok iş parçacıklı uygulaması projesi gerek
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
-2.  İçinde **proje türü**s kutusunda, tercih ettiğiniz dili: **Visual C#**, **Visual C++**, veya **Visual Basic**.  
+2.  Tercih ettiğiniz dili seçin: **Visual C#**, **Visual C++**, veya **Visual Basic**.  
   
-3.  İçinde **şablonları** kutusunda **konsol uygulaması**.  
+3.  Altında **Windows Masaüstü**, seçin **konsol uygulaması**.  
   
 4.  İçinde **adı** kutusuna MyThreadWalkthroughApp adı yazın.  
   

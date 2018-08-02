@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cbb43f61aab1df099efca01b56a927cf189a808e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380622"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468984"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: Kullanım ilk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio
 
@@ -107,13 +107,10 @@ Bu hızlı başlangıcı tamamladığınızda Tebrikler! C#, ASP.NET Core ve Vis
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Daha fazla bilgi için şu öğretici ile devam edin:
+Daha fazla bilgi için şu öğreticiyle devam edin:
 
 > [!div class="nextstepaction"]
 > [C# ve Visual Studio'da ASP.NET kullanmaya başlama](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [ASP.NET Core MVC ve Visual Studio ile çalışmaya başlama](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

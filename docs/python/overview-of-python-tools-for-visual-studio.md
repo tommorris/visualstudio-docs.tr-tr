@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175372"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468783"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
 Python güvenilir, esnek, öğrenin, tüm işletim sistemlerinde kullanmak için ücretsiz daha kolay ve güçlü Geliştirici topluluğu ve çoğu ücretsiz kitaplıkları tarafından desteklenen yaygın bir programlama dilidir. Python geliştirme, web uygulamaları, web Hizmetleri, Masaüstü uygulamaları, komut dosyası ve bilimsel bilgi işleme dahil olmak üzere tüm yolla destekler ve birçok üniversiteler, uzmanları, sıradan geliştiriciler ve aynı şekilde profesyonel geliştiriciler tarafından kullanılır. Dili hakkında daha fazla bilgi edinebilirsiniz [python.org](https://www.python.org) ve [yeni başlayanlar için Python](https://www.python.org/about/gettingstarted/).
 
-Visual Studio, Windows üzerinde güçlü bir Python ıde'dir. Visual Studio sağlar [açık kaynaklı](https://github.com/Microsoft/ptvs) Python geliştirme ve veri bilimi iş yükleri (Visual Studio 2017) aracılığıyla Python dilinde ve Visual Studio uzantısı için ücretsiz Python araçları desteği (Visual Studio 2015 ve daha önce).
+Visual Studio, Windows üzerinde güçlü bir Python ıde'dir. Visual Studio sağlar [açık kaynaklı](https://github.com/Microsoft/ptvs) Python dil desteğini **Python geliştirme** ve **veri bilimi** (Visual Studio 2017) iş yükleri ve ücretsiz Visual Studio uzantısına (Visual Studio 2015 veya önceki) için Python araçları.
 
 Python Mac için Visual Studio şu anda desteklenmiyor ancak Mac ve Linux'ta Visual Studio Code ile kullanılabilir (bkz [sorularını ve yanıtlarını](#questions-and-answers)).
 
@@ -31,7 +31,7 @@ Kullanmaya başlamak için:
 - İzleyin [yükleme yönergeleri](installing-python-support-in-visual-studio.md) Python iş yükü ayarlanamadı.
 - Bu makaledeki bölümler üzerinden Visual Studio Python yeteneklerini tanıyın. Ayrıca [(Microsoft Virtual Academy) bir video serisini izleyin](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) giriş (toplam 22 dakika) Visual Studio'da Python için.
 - Bir veya daha fazla bir proje oluşturmak için hızlı başlangıç şablonları gidin. Emin değilseniz, başlayan [Flask ile web uygulaması oluşturma](../ide/quickstart-python.md?context=visualstudio/python/default).
-- İzleyin [Visual Studio'da Python çalışma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) baştan sona tam deneyim için öğretici.
+- İzleyin [Visual Studio'da Python çalışın](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) baştan sona tam deneyim için öğretici.
 
 ## <a name="support-for-multiple-interpreters"></a>Birden çok yorumlayıcılarını desteği
 
@@ -41,19 +41,19 @@ Visual Studio'nun **Python ortamları** penceresi (aşağıda bir geniş, Geniş
 
 Daha fazla bilgi için:
 
-- Video (2 dk. 35s): [Python ortamlarını yönetme](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Docs: [yönetme Python ortamları](managing-python-environments-in-visual-studio.md)
+- Video (2 dk. 35s): [yönetme Python ortamları](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Docs: [Yönet Python ortamları](managing-python-environments-in-visual-studio.md)
 - Docs: [Python ortam penceresi başvurusu](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zengin düzenleme, IntelliSense ve kod kavrama
 
-Visual Studio söz dizimi renklendirme, otomatik tamamlama tüm kod ve kitaplıkları arasında kod biçimlendirme, imza Yardımı, yeniden düzenleme, linting ve tür ipuçlarına dahil birinci sınıf bir Python Düzenleyicisi sağlar. Tanım, tüm başvuruları Bul ve kod parçacıkları için Git, Visual Studio ayrıca sınıf görünümü gibi benzersiz özellikleri sağlar. Doğrudan tümleştirmesiyle [etkileşimli pencere](#interactive-window) , önceden bir dosyaya kaydedilir ve Python kodu hızla geliştirmenize yardımcı olur.
+Visual Studio söz dizimi renklendirme, otomatik tamamlama tüm kod ve kitaplıkları arasında kod biçimlendirme, imza Yardımı, yeniden düzenleme, linting ve tür ipuçlarına dahil birinci sınıf bir Python Düzenleyicisi sağlar. Visual Studio, sınıf görünümü gibi benzersiz özellikleri de sağlar **Tanıma Git**, **tüm başvuruları Bul**ve kod parçacıkları. Doğrudan tümleştirmesiyle [etkileşimli pencere](#interactive-window) , önceden bir dosyaya kaydedilir ve Python kodu hızla geliştirmenize yardımcı olur.
 
 ![Visual Studio'da Python kodu için kod tamamlama](media/code-editing-completions-simple.png)
 
 Daha fazla bilgi için:
 
-- Video (2 dk. 30 saniye): [düzenleme Python kodu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Video (2 dk. 30 saniye): [Düzenle Python kodu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Docs: [Python kodunu Düzenle](editing-python-code-in-visual-studio.md)
 - Docs: [kod biçimlendirme](formatting-python-code.md)
 - Docs: [kodu yeniden düzenleyin](refactoring-python-code.md)
@@ -66,9 +66,9 @@ Bilinen Visual Studio için Python, her ortam için ayrı bir komut isteminde ku
 
 ![Visual Studio'da Python etkileşimli penceresi](media/interactive-window.png)
 
-Visual Studio, Python Kod Düzenleyicisi ve etkileşimli pencereye arasında sıkı bir tümleştirme de sağlar. **Ctrl + Enter** klavye kısayolu rahatça Düzenleyicisi'nde kod (veya kod bloğu) geçerli satırı etkileşimli pencereye gönderir ve ardından sonraki satır (veya blok) taşır. **Ctrl + Enter** , hata ayıklayıcıyı çalıştırmak zorunda kalmadan kolayca kodu adımlayın sağlar. Ayrıca seçili kod aynı tuş vuruşu ile etkileşimli pencereye göndermek ve kolayca etkileşimli penceresinde kod düzenleyicisine yapıştırın. Birlikte, bu özellikler, çıkış kodu etkileşimli pencerede bir segmentini ayrıntılarını iş ve kolayca bir dosyasını düzenleyicisinde sonuçları kaydetmek olanak tanır.
+Visual Studio da Python Kod Düzenleyicisi'ni arasında sıkı bir tümleştirme sağlar ve **etkileşimli** penceresi. **Ctrl**+**Enter** klavye kısayolu rahatça gönderdiğini Düzenleyicisi'nde kod (veya kod bloğu) geçerli satırı **etkileşimli** penceresini, sonra da taşır sonraki satır (veya blok). **CTRL**+**Enter** , hata ayıklayıcıyı çalıştırmak zorunda kalmadan kolayca kodu adımlayın sağlar. Seçilen koda da gönderebilirsiniz **etkileşimli** penceresinde aynı tuş vuruşu kaydetme ve kolayca kodunu yapıştırın **etkileşimli** Düzenleyici penceresine. Birlikte, bu özellikler, Ayrıntılar için kod kesiminin kullanıma çalışmanıza olanak sağlar **etkileşimli** penceresi ve sonuçları bir dosyayı düzenleyicide kolayca kaydedin.
 
-Visual Studio, satır içi çizimleri, .NET ve Windows Presentation Foundation (WPF) gibi REPL Ipython/Jupytr da destekler.
+Visual Studio, satır içi çizimleri, .NET ve Windows Presentation Foundation (WPF) gibi REPL Ipython/Jupyter da destekler.
 
 Daha fazla bilgi için:
 
@@ -88,7 +88,7 @@ Proje ve öğe şablonlarını projeleri ve dosyaları farklı türleri ayarlama
 
 Daha fazla bilgi için:
 
-- Docs: [yönetme Python projeleri](managing-python-projects-in-visual-studio.md)
+- Docs: [Yönet Python projeleri](managing-python-projects-in-visual-studio.md)
 - Docs: [öğe şablonları başvurusu](python-item-templates.md)
 - Docs: [Python proje şablonları](managing-python-projects-in-visual-studio.md#project-templates)
 - Docs: [C++ ve Python ile çalışma](working-with-c-cpp-python-in-visual-studio.md)
@@ -97,7 +97,7 @@ Daha fazla bilgi için:
 
 ## <a name="full-featured-debugging"></a>Tam özellikli hata ayıklama
 
-Visual Studio'nun güçlü, güçlü bir hata ayıklayıcı biridir. Python için Python/C++ karışık mod hata ayıklama, Linux üzerinde uzaktan hata ayıklama, Azure'da uzaktan hata ayıklama, etkileşimli pencereye hata ayıklama ve birim testleri Python hata ayıklama özellikle, Visual Studio içerir.
+Visual Studio'nun güçlü, güçlü bir hata ayıklayıcı biridir. Visual Studio için Python özellikle içerir Python/C++ karışık mod hata ayıklaması, Linux üzerinde uzaktan hata ayıklama, Azure içinde hata ayıklama, uzaktan hata ayıklama **etkileşimli** penceresi ve Python birim testleri hata ayıklama.
 
 ![Bir özel durum açılan gösteren Python için Visual Studio hata ayıklayıcı](media/debugging-exception-popup.png)
 
@@ -108,7 +108,7 @@ Daha fazla bilgi için:
 - Docs: [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Docs: [Linux üzerinde uzaktan hata ayıklama](debugging-python-code-on-remote-linux-machines.md)
 - Docs: [Azure'da uzaktan hata ayıklama](debugging-remote-python-code-on-azure.md)
-- Genel Visual Studio özellik belgeleri: [Visual Studio hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+- Genel Visual Studio özellik belgeleri: [özelliği Visual Studio hata ayıklayıcı turu](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Kapsamlı Raporlama ile profil oluşturma araçları
 
@@ -124,7 +124,7 @@ Daha fazla bilgi için:
 
 ## <a name="unit-testing-tools"></a>Birim test araçları
 
-Keşfedin, çalıştırmak ve Visual Studio Test Gezgini testleri yönetmek ve birim testlerini kolayca hata ayıklayın.
+Bulma, çalıştırmak ve Visual Studio'da testleri yönetmek **Test Gezgini**ve birim testlerini kolayca hata ayıklayın.
 
 ![Bir test jednotky Pythonu Visual Studio'da hata ayıklama](media/unit-test-debugging.png)
 
@@ -134,9 +134,9 @@ Daha fazla bilgi için:
 - Docs: [birim testi için Python araçları](unit-testing-python-in-visual-studio.md)
 - Genel Visual Studio özellik belgeleri: [birim testi kod](../test/unit-test-your-code.md).
 
-## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>Azure ve Azure yayımlama için Python SDK'sı
+## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Azure ve Azure yayımlama için Python SDK'sı
 
-Visual Studio, web uygulamaları ve bulut Hizmetleri, Azure'da yayımlamak için tümleşik destek sağlar. Visual Studio temel içerir `web.config` öğe şablonları dinamik ve statik içerik. Python iş yükü, ayrıca Windows, Mac OS X ve Linux uygulamaları kullanan Azure hizmetlerinden basitleştiren, Python için Azure SDK'sı içerir.
+Visual Studio, web uygulamaları ve bulut Hizmetleri, Azure'da yayımlamak için tümleşik destek sağlar. Visual Studio temel içerir *web.config* öğe şablonları dinamik ve statik içerik. Python iş yükü, ayrıca Windows, Mac OS X ve Linux uygulamaları kullanan Azure hizmetlerinden basitleştiren, Python için Azure SDK'sı içerir.
 
 ![Visual Studio'da Python uygulamasını azure'a yayımlama](media/azure-publish-dialog.png)
 
@@ -149,7 +149,7 @@ Daha fazla bilgi için:
 
 |   |   |
 |---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | <ul><li>[Python ile programlamaya giriş](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Acemi: Dizeleri ve işlevleri](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python ile ilgili temel bilgiler: Liste ve döngüler](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[İlk Python sorular](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | <ul><li>[Python ile programlamaya giriş](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Acemi: dizeleri ve işlevleri](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python ile ilgili temel bilgiler: liste ve döngüler](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[İlk Python sorular](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Sorular ve yanıtlar
 
@@ -163,7 +163,7 @@ BİR. Bu alandaki ana tekliftir [Qt proje](https://www.qt.io/qt-for-application-
 
 **SORU. Tek başına yürütülebilir dosya bir Python projesi oluşturabilir?**
 
-BİR. Python ile isteğe bağlı olarak Visual Studio ve web sunucuları gibi uygun bir Python özellikli ortam kod çalıştırılır, yorumlanan bir dil genellikle var. Visual Studio'nun kendisi, aslında bir programla katıştırılmış bir Python yorumlayıcısı anlamına gelir bir tek başına yürütülebilir oluşturmak için Araçlar şu anda sağlamaz. Ancak, yürütülebilir dosyalar üzerinde açıklandığı gibi oluşturmak için çeşitli anlamına gelir Python topluluk içinde vardır [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [gömülebilir ZIP dosyasını kullanarak CPython'ın](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+BİR. Python ile isteğe bağlı olarak Visual Studio ve web sunucuları gibi uygun bir Python özellikli ortam kod çalıştırılır, yorumlanan bir dil genellikle var. Visual Studio'nun kendisi, aslında bir programla katıştırılmış bir Python yorumlayıcısı anlamına gelir bir tek başına yürütülebilir oluşturmak için Araçlar şu anda sağlamaz. Ancak, yürütülebilir dosyalar üzerinde açıklandığı gibi oluşturmak için çeşitli anlamına gelir Python topluluk içinde vardır [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir zip dosyası](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Özellik Matrisi
 
@@ -192,7 +192,7 @@ Visual Studio 2015 veya önceki kullanılabilir [visualstudio.microsoft.com/vs/o
 | PIP/kolay yükleme | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Proje Sistemi | 2017 | 2015 | 2013 iletişim | 2013'ün Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
+| Proje sistemi | 2017 | 2015 | 2013 iletişim | 2013'ün Masaüstü | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Mevcut koddan yeni proje | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | tüm dosyaları göster | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -291,9 +291,9 @@ Visual Studio 2015 veya önceki kullanılabilir [visualstudio.microsoft.com/vs/o
 
 1. Django şablonu Düzenleyicisi'nde Visual Studio 2013 güncelleştirme 2'yi yükleme ile çözümlendiği bazı bilinen sorunlar vardır.
 
-1. Windows 8 veya sonraki sürümünü gerektirir. Web için Visual Studio 2013 Express İşleme İliştir'iletişim kutusunda yoktur, ancak Azure Web sitesi uzaktan hata ayıklama sunucu Gezgini'nde hata ayıklayıcı ekleyin (Python) komutunu kullanarak yine de mümkündür. Uzaktan hata ayıklama gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
+1. Windows 8 veya sonraki sürümünü gerektirir. Web için Visual Studio 2013 Express yoksa **iliştirme** iletişim, ancak Azure Web sitesi uzaktan hata ayıklama olmasına rağmen olası kullanarak **hata ayıklayıcısı ekleme (Python)** komutunu **sunucusu Explorer**. Uzaktan hata ayıklama gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
 
-1. Windows 8 veya sonraki sürümünü gerektirir. Hata ayıklayıcının (Python) sunucu Gezgini'ndeki komutu gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
+1. Windows 8 veya sonraki sürümünü gerektirir. **Hata ayıklayıcının (Python)** komutunu **Sunucu Gezgini** gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
 
 1. Windows 8 veya sonraki sürümünü gerektirir.
 
@@ -301,4 +301,4 @@ Visual Studio 2015 veya önceki kullanılabilir [visualstudio.microsoft.com/vs/o
 
 - [IIS ve Python arasında köprü Wfastcgı](https://pypi.org/p/wfastcgi) (pypi.org)
 - [Microsoft Virtual Academy ücretsiz Python kursları](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Microsoft sanal Akademi üst Python sorular](https://aka.ms/mva-top-python-questions)
+- [Microsoft Virtual Academy üst Python sorular](https://aka.ms/mva-top-python-questions)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177873"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469073"
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
@@ -109,7 +109,7 @@ Proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler taraf
 
 ## <a name="use-a-different-unit-test-framework"></a>Farklı birim testi çerçevesini kullanın
 
-Visual Studio'da, Boost, Google ve nUnit gibi üçüncü taraf test çerçevelerini kullanarak birim testleri çalıştırabilirsiniz. Visual Studio test Çalıştırıcısı bu çerçeveyle çalışabilmesi için eklenti çerçevesini kullanın.
+Visual Studio'da, Boost, Google ve NUnit gibi üçüncü taraf test çerçevelerini kullanarak birim testleri çalıştırabilirsiniz. Visual Studio test Çalıştırıcısı bu çerçeveyle çalışabilmesi için eklenti çerçevesini kullanın.
 
 Üçüncü taraf test çerçevelerini etkinleştirme adımları şunlardır:
 

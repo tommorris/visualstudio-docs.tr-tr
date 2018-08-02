@@ -21,6 +21,7 @@
 ## [Bir projedeki başvuruları yönetme](managing-references-in-a-project.md)
 ### [İzlenecek yol - Projenize NuGet paketi ekleme](nuget-walkthrough.md)
 ## [Uygulama Kaynaklarını Yönetme](managing-app-resources.md)
+## [Nasıl yapılır: Birden çok çözüm veya örneği açma](open-multiple-solutions.md)
 
 # [Kaynak Düzenleyicisi](source-editor.md)
 ## [Yeniden Düzenle](refactoring.md)

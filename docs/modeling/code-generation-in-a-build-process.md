@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da derleme sürecinde kod oluşturma
+title: Derleme Sürecinde Kod Oluşturma
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9803ad4ddcd1b0e534beae3a0e9601fd8934e216
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
+ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382389"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39409810"
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme sürecinde kod oluşturma
 
-[Metin dönüştürme](../modeling/code-generation-and-t4-text-templates.md) parçası olarak çağrılabilir [derleme işlemi](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) , bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çözüm. Metin dönüştürme için özelleştirilmiş yapı görevleri vardır. T4 yapı görevleri tasarım zamanı metin şablonlarını çalıştırır ve aynı zamanda çalışma zamanı (önişlenmiş) metin şablonlarını derler.
+[Metin dönüştürme](../modeling/code-generation-and-t4-text-templates.md) parçası olarak çağrılabilir [derleme işlemi](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) Visual Studio çözümünün. Metin dönüştürme için özelleştirilmiş yapı görevleri vardır. T4 yapı görevleri tasarım zamanı metin şablonlarını çalıştırır ve aynı zamanda çalışma zamanı (önişlenmiş) metin şablonlarını derler.
 
 Kullandığınız oluşturma motoruna bağlı olarak, yapı görevleri farklı işlevleri yerine getirebilirler. Visual Studio'da bir çözüm derlediğinizde, bir metin şablonunda Visual Studio API'ya (EnvDTE) erişebilirsiniz [hostspecific = "true"](../modeling/t4-template-directive.md) özniteliği. Ancak, çözümü komut satırından oluşturduğunuzda veya Visual Studio üzerinden sunucu yapısını başlattığınızda bu geçerli değildir. Bu durumlarda, yapı MSBuild tarafından oluşturulur ve farklı bir T4 ana bilgisayar kullanılır.
 
@@ -33,27 +33,27 @@ Geliştirme bilgisayarınızda yapı görevlerini etkinleştirmek için Visual S
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Varsa [yapı sunucunuzu](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) olan bir bilgisayarda çalışan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] olan yüklü değil, aşağıdaki dosyaları yapı bilgisayarına geliştirme makinenize kopyalayın. En son sürüm numaraları yerine ' *'.
+Varsa [yapı sunucunuzu](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) üzerinde Visual Studio yüklü değil, bir bilgisayarda çalıştırır geliştirme makinenizden yapı bilgisayarına aşağıdaki dosyaları kopyalayın. En son sürüm numaraları yerine ' *'.
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles) \Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles) \Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles) \Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles) \Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Projeyi dosyasını düzenlemek için
 
@@ -92,7 +92,7 @@ Bu satırın ardından, Metin Şablon Oluşturma almayı ekleyin:
 
 Dönüştürme görevini kontrol etmek için proje dosyanızın içine ekleyebileceğiniz bazı özellikler vardır:
 
--   Dönüştürme görevini her yapı başlangıcında çalıştır:
+- Dönüştürme görevini her yapı başlangıcında çalıştır:
 
     ```xml
     <PropertyGroup>
@@ -100,7 +100,7 @@ Dönüştürme görevini kontrol etmek için proje dosyanızın içine ekleyebil
     </PropertyGroup>
     ```
 
--   Salt okunur dosyaların üzerine yaz (ör. kullanıma alınmamış oldukları için): 
+- Salt okunur dosyaların üzerine yaz (ör. kullanıma alınmamış oldukları için): 
 
     ```xml
     <PropertyGroup>
@@ -108,7 +108,7 @@ Dönüştürme görevini kontrol etmek için proje dosyanızın içine ekleyebil
     </PropertyGroup>
     ```
 
--   Her şablonu her zaman dönüştür:
+- Her şablonu her zaman dönüştür:
 
     ```xml
     <PropertyGroup>
@@ -118,27 +118,27 @@ Dönüştürme görevini kontrol etmek için proje dosyanızın içine ekleyebil
 
      Varsayılan olarak, T4 MSBuild görevi, kendi şablon dosyasından ya da içerdiği dosyaların herhangi birinden veya şablon ya da kullandığı yönerge işlemcisi tarafından önceden okunmuş herhangi bir dosyadan eski ise, bir çıktı dosyası oluşturur. Bunun, Visual Studio'da bulunan ve yalnızca şablon ve çıktı dosyası tarihlerini karşılaştıran Tüm Şablonları Dönüştür komutu tarafından kullanılandan daha güçlü bir bağımlılık testi olduğuna dikkat edin.
 
- Projenizde yalnızca metin dönüştürmeleri gerçekleştirmek için TransformAll görevini çağırın:
+Projenizde yalnızca metin dönüştürmeleri gerçekleştirmek için TransformAll görevini çağırın:
 
- `msbuild myProject.csproj /t:TransformAll`
+`msbuild myProject.csproj /t:TransformAll`
 
- Belirli metin şablonu dönüştürmek için:
+Belirli metin şablonu dönüştürmek için:
 
- `msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
+`msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
 
- TransformFile içinde joker karakterler kullanabilirsiniz:
+TransformFile içinde joker karakterler kullanabilirsiniz:
 
- `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
+`msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
 ## <a name="source-control"></a>Kaynak denetimi
 
 Kaynak denetim sistemi ile yerleşik herhangi bir tümleştirme yoktur. Ancak, örneğin oluşturulmuş bir dosyayı kullanıma almak ve iade etmek için, kendi uzantılarınızı ekleyebilirsiniz. Varsayılan olarak, metin dönüştürme görevi salt okunur işaretli bir dosyanın üzerine yazmaktan kaçınır ve bu tür bir dosyayla karşılaşıldığında Visual Studio hata listesinde bir hata günlüğe kaydedilir ve görev başarısız olur.
 
- Salt okunur dosyaların üzerine yazılması gerektiğini belirtmek için bu özelliği ekleyin:
+Salt okunur dosyaların üzerine yazılması gerektiğini belirtmek için bu özelliği ekleyin:
 
- `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
 
- Son işleme adımını özelleştirmediğiniz sürece, herhangi bir dosyanın üzerine yazıldığında, hata listesinde bir uyarı günlüğe kaydedilir.
+Son işleme adımını özelleştirmediğiniz sürece, herhangi bir dosyanın üzerine yazıldığında, hata listesinde bir uyarı günlüğe kaydedilir.
 
 ## <a name="customize-the-build-process"></a>Yapı işlemini özelleştirme
 
@@ -159,9 +159,9 @@ Oluşturma işleminde diğer görevlerden önce metin dönüştürme gerçekleş
 
 İçinde `AfterTransform`, dosyaların listelerine başvurabilirsiniz:
 
--   GeneratedFiles - işlem tarafından yazılan dosyaların listesi. Varolan salt okunur dosyaların üzerine yazan bu dosyalar için, %(GeneratedFiles.ReadOnlyFileOverwritten) doğru olacaktır. Bu dosyalar kaynak denetiminden denetlenebilir.
+- GeneratedFiles - işlem tarafından yazılan dosyaların listesi. Varolan salt okunur dosyaların üzerine yazan bu dosyalar için, %(GeneratedFiles.ReadOnlyFileOverwritten) doğru olacaktır. Bu dosyalar kaynak denetiminden denetlenebilir.
 
--   NonGeneratedFiles - üzerine yazılmamış, salt okunur dosyaların listesi.
+- NonGeneratedFiles - üzerine yazılmamış, salt okunur dosyaların listesi.
 
 Örneğin, GeneratedFiles'ı kullanıma almak için bir görev tanımlarsınız.
 
@@ -179,9 +179,9 @@ Bu özellikler yalnızca MSBuild tarafından kullanılır. Visual Studio'da kod 
 </ItemGroup>
 ```
 
- Yeniden yönlendirmek için kullanışlı bir klasör: `$(IntermediateOutputPath).`
+Yeniden yönlendirmek için kullanışlı bir klasör: `$(IntermediateOutputPath).`
 
- Dosya adını belirtir ve çıktısını alırsanız, şablonlardaki çıktı yönergesinde belirtilen uzantıdan öncelikli olur.
+Dosya adını belirtir ve çıktısını alırsanız, şablonlardaki çıktı yönergesinde belirtilen uzantıdan öncelikli olur.
 
 ```xml
 <ItemGroup>
@@ -193,7 +193,7 @@ Bu özellikler yalnızca MSBuild tarafından kullanılır. Visual Studio'da kod 
 </ItemGroup>
 ```
 
- Ayrıca tüm dönüştürme kullanarak ya da tek dosya oluşturucuyu çalıştırıyorsanız VS içinde şablonları dönüştürüyorsanız bir OutputFileName veya outputfilepath belirtmeniz önerilmez. Dönüştürme işlemini nasıl tetiklediğinizde bağlı olarak, farklı dosya yolları elde edebilirsiniz. Bu çok kafa karıştırıcı olabilir.
+Ayrıca tüm dönüştürme kullanarak ya da tek dosya oluşturucuyu çalıştırıyorsanız VS içinde şablonları dönüştürüyorsanız bir OutputFileName veya outputfilepath belirtmeniz önerilmez. Dönüştürme işlemini nasıl tetiklediğinizde bağlı olarak, farklı dosya yolları elde edebilirsiniz. Bu çok kafa karıştırıcı olabilir.
 
 ## <a name="add-reference-and-include-paths"></a>Başvuru ekleme ve yolları dahil etme
 
@@ -228,7 +228,7 @@ Proje dosyasında parametre değerlerini ayarlayabilirsiniz. Örneğin, geçireb
 </ItemGroup>
 ```
 
- Bir metin şablonunda ayarlanan `hostspecific` şablon yönergesinde. Kullanım [parametre](../modeling/t4-parameter-directive.md) yönergesi değerlerini almak için:
+Bir metin şablonunda ayarlanan `hostspecific` şablon yönergesinde. Kullanım [parametre](../modeling/t4-parameter-directive.md) yönergesi değerlerini almak için:
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -251,9 +251,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ##  <a name="msbuild"></a> Derlemede proje özelliklerini kullanmak ve ekleme yönergelerinde
 
-$(SolutionDir) gibi Visual Studio Makroları MSBuild içinde çalışmaz. Bunun yerine, proje özelliklerini kullanabilirsiniz.
+Visual Studio Makroları ister **$(SolutionDir)** MSBuild içinde çalışmaz. Bunun yerine, proje özelliklerini kullanabilirsiniz.
 
-Proje özelliği tanımlamak için .csproj veya .vbproj dosyanızı düzenleyin. Bu örnek adlı bir özellik tanımlar `myLibFolder`:
+Düzenleme, *.csproj* veya *.vbproj* dosya bir proje özelliği tanımlamak için. Bu örnek adlı bir özellik tanımlar **myLibFolder**:
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -276,27 +276,25 @@ Artık derlemede ve ekleme yönergelerinde proje özelliklerini kullanabilirsini
 <#@ include file="$(myLibFolder)\MyIncludeFile.t4" #>
 ```
 
- Bu yönergeler, hem MSBuild içinde hem de Visual Studio ana bilgisayarlarında T4parameterValues değerlerini alır.
+Bu yönergeler, hem MSBuild içinde hem de Visual Studio ana bilgisayarlarında T4parameterValues değerlerini alır.
 
 ## <a name="q--a"></a>Soru - Yanıt
 
- **Neden yapı sunucusunda şablonları dönüştürmek istiyor? Ben kodumu iade önce ben zaten Visual Studio şablonları dönüştürülür.**
+**Neden yapı sunucusunda şablonları dönüştürmek istiyor? Ben kodumu iade önce ben zaten Visual Studio şablonları dönüştürülür.**
 
- Eklenen bir dosyanın veya şablon tarafından Okunmuş başka bir dosyayı güncelleştirirseniz, Visual Studio dosyayı otomatik olarak dönüştürmez. Yapının bir parçası olarak şablonları dönüştürme her şeyin güncel durumda.
+Eklenen bir dosyanın veya şablon tarafından Okunmuş başka bir dosyayı güncelleştirirseniz, Visual Studio dosyayı otomatik olarak dönüştürmez. Yapının bir parçası olarak şablonları dönüştürme her şeyin güncel durumda.
 
- **Diğer seçenekler yok metin şablonlarını dönüştürmeyle ilgili nelerdir?**
+**Diğer seçenekler yok metin şablonlarını dönüştürmeyle ilgili nelerdir?**
 
--   [TextTransform yardımcı programı](../modeling/generating-files-with-the-texttransform-utility.md) komut dosyalarında kullanılabilir. Çoğu durumda, MSBuild kullanmak daha kolay olur.
+- [TextTransform yardımcı programı](../modeling/generating-files-with-the-texttransform-utility.md) komut dosyalarında kullanılabilir. Çoğu durumda, MSBuild kullanmak daha kolay olur.
 
--   [Bir VS Uzantısında Metin Dönüştürmeyi Çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Bir VS Uzantısında Metin Dönüştürmeyi Çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Tasarım zamanı metin şablonları](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio tarafından dönüştürülür.
+- [Tasarım zamanı metin şablonları](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio tarafından dönüştürülür.
 
--   [Çalıştırma zamanı metin şablonları](../modeling/run-time-text-generation-with-t4-text-templates.md) uygulamanızdaki çalışma zamanında dönüştürülür.
+- [Çalıştırma zamanı metin şablonları](../modeling/run-time-text-generation-with-t4-text-templates.md) uygulamanızdaki çalışma zamanında dönüştürülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- T4 MSbuild şablonundaki rehber oldukça kullanışlıdır: $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
-- [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)
-- [Oleg Sych: T4 tümleştirmeyi anlama](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
-- [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+- T4 MSbuild şablonundaki Rehber yoktur *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
+- [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md)

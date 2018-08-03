@@ -28,14 +28,14 @@
 #### [Power BI Pro ](vs-pbi.md)
 #### [TFS için Modern Gereksinimler](vs-modernreq.md)
 #### [Azure Kullandıkça Öde](vs-azure-payg.md)
-### Profesyonel Geliştirme
+### [Profesyonel Geliştirme](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University Eğitimi](vs-xamarin.md)
 #### [MSDN Magazine aboneliği](vs-msdn.md)
-### Destek Avantajları
+### [Destek Avantajları](technical-support.md)
 #### [Azure Danışmanı Sohbeti](vs-azure-advisory-chat.md)
 #### [Azure Topluluğu](vs-azure-community.md)
 #### [Teknik Destek](vs-tech-support.md)

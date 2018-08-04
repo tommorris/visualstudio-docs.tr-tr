@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924466"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512635"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Nasıl yapılır: temel doku oluşturma
 Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapılacağı açıklanır.
@@ -54,13 +54,13 @@ Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapı
 5.  Görüntü Düzenleyicisi araç çubuğunda **dolgu** aracı tuşuna basın ve basılı tutun **Shift** anahtar ve herhangi bir noktaya görüntüyü seçin. Kullanarak **Shift** anahtar görüntüde rengini değiştirmek için dolgu rengi alfa değeri neden olur; Aksi takdirde, alfa değeri dolgu rengi renk görüntünün birlikte karıştırmak için kullanılır.
 
     > [!IMPORTANT]
-    >  Bu adımda, önceki adımda, renk seçimi ile birlikte, temel görüntü için çizim "hedef merkezi" hedef dokuyu hazırlanır sağlar. Resmin saydam siyah doldurulur olduğunda — ve hedef kenarlığını siyah olduğundan — yumuşatma yapıt hedefi geçici bir çözüm olacaktır.
+    > Bu adımda, önceki adımda, renk seçimi ile birlikte, temel görüntü için çizim "hedef merkezi" hedef dokuyu hazırlanır sağlar. Resmin saydam siyah doldurulur olduğunda — ve hedef kenarlığını siyah olduğundan — yumuşatma yapıt hedefi geçici bir çözüm olacaktır.
 
 6.  Görüntü Düzenleyicisi araç çubuğunda **elipsin** aracı.
 
-7.  Ön plan rengini tamamen opak siyah olarak ayarlar. Değerlerini ayarlayın **R**, **G**, ve **B** özelliklerine `0` değeri **A** özelliğini `255`.
+7.  Ön plan rengi, tam olarak donuk siyah olarak ayarlar. Değerlerini ayarlayın **R**, **G**, ve **B** özelliklerine `0` değeri **A** özelliğini `255`.
 
-8.  Arka plan rengi tamamen opak beyaz olarak ayarlar. İçinde **özellikleri** penceresi içinde **renkleri** özellik grubu, select **arka plan**. Değerlerini ayarlayın **R**, **G**, **B**, ve **A** özelliklerine `255`.
+8.  Arka plan rengi ila tamamen opak beyaz olarak ayarlar. İçinde **özellikleri** penceresi içinde **renkleri** özellik grubu, select **arka plan**. Değerlerini ayarlayın **R**, **G**, **B**, ve **A** özelliklerine `255`.
 
 9. Elipsin ana hattın genişliği ayarlayın. İçinde **özellikleri** penceresi içinde **Görünüm** özellik grubu ayarlayın **genişliği** özelliğini `8`.
 
@@ -69,13 +69,13 @@ Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapı
 11. Kullanarak **elipsin** aracı, piksel Koordinattan bir daire çizin `(3, 3)` piksel koordinat için `(508, 508)`. Daire daha kolay çizmek için basın tutun ve **Shift** çizerken anahtar.
 
     > [!NOTE]
-    >  Geçerli işaretçisi konumunu piksel koordinatlarını görüntülenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] durum çubuğu.
+    > Geçerli işaretçisi konumunu piksel koordinatlarını görüntülenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] durum çubuğu.
 
 12. Arka plan rengini değiştirin. Ayarlama **R** için `44`, **G** için `165`, **B** için `211`, ve **A** için `255`.
 
 13. Piksel koordinat başka bir daire çizin `(64, 64)` piksel koordinat için `(448, 448)`.
 
-14. Tamamen opak beyaz arka plan rengini değiştirin. Ayarlama **R**, **G**, **B**, ve **A** için `255`.
+14. Tam opak beyaz arka plan rengini değiştirin. Ayarlama **R**, **G**, **B**, ve **A** için `255`.
 
 15. Piksel koordinat başka bir daire çizin `(128, 128)` piksel koordinat için `(384, 384)`.
 

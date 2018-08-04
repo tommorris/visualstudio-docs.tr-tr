@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079086"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512050"
 ---
 # <a name="image-service-and-catalog"></a>Görüntü hizmeti ve kataloğu
 Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti ve görüntü Visual Studio 2015'te tanıtılan Kataloğu'nu benimseme içerir.  
@@ -165,8 +165,9 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
 |||  
 |-|-|  
 |**Özniteliği**|**Tanım**|  
-|URI|[Gerekli] Gelen görüntü burada yüklenebilir tanımlayan URI. Aşağıdakilerden biri olabilir:<br /><br /> -A [paketi URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) kullanarak uygulama: / / / yetkilisi<br />-Bir mutlak bileşen kaynak başvurusu<br />-Yerel bir kaynak içeren bir dosya yolu|  
+|URI|[Gerekli] Gelen görüntü burada yüklenebilir tanımlayan URI. Aşağıdakilerden biri olabilir:<br /><br /> -A [paketi URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) kullanarak uygulama: / / / yetkilisi<br />-Bir mutlak bileşen kaynak başvurusu<br />-Yerel bir kaynak içeren bir dosya yolu|  
 |Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> *Açık:* kaynağı açık bir arka plan üzerinde kullanılabilir.<br /><br /> *Koyu:* kaynağı koyu renkli bir arka plan üzerinde kullanılabilir.<br /><br /> *Yüksek Karşıtlık:* kaynağı, yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastLight:* kaynağı, yüksek karşıtlık modunda açık bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastDark:* kaynağı, yüksek karşıtlık modunda koyu renkli arka plan üzerinde kullanılabilir.<br /><br /> Arka plan özniteliği belirtilmezse, kaynağı herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> Arka planda ise *ışık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman ters kaynağının renkler. Arka plan atlanırsa veya kümesine *Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenir **AllowColorInversion** özniteliği.|  
+
 |||  
   
  A \<kaynak > öğesi aşağıdaki isteğe bağlı alt öğeleri tam olarak birine sahip olabilir:  
@@ -651,7 +652,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Güncelleştirilmiş eşleme aracılığıyla bilinen adlar istemek için Görüntü hizmeti kullanmak için kodunuzu güncelleştirin. (Bu güncelleştirme gelebilir **CrispImages** yönetilen kod veya HBITMAPs veya HICONs görüntü Hizmeti'nden istiyor ve yerel kod için geçirme etrafında.)  
   
 ## <a name="testing-your-images"></a>Görüntülerinizin test etme  
- Görüntü kitaplığı Görüntüleyicisi aracı, her şeyin doğru şekilde yazılmadığından emin olmak için görüntü bildirimlerini test etmek için kullanabilirsiniz. Aracı bulabilirsiniz [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Bu araç ve diğerleri için belgeler bulunabilir [burada](http://aka.ms/VSImageThemeTools).  
+ Görüntü kitaplığı Görüntüleyicisi aracı, her şeyin doğru şekilde yazılmadığından emin olmak için görüntü bildirimlerini test etmek için kullanabilirsiniz. Aracı bulabilirsiniz [Visual Studio 2015 SDK](visual-studio-sdk.md). Bu araç ve diğerleri için belgeler bulunabilir [burada](http://aka.ms/VSImageThemeTools).  
   
 ## <a name="additional-resources"></a>Ek kaynaklar  
   

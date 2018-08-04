@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251211"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510496"
 ---
 # <a name="register-an-expression-evaluator"></a>İfade değerlendiricisi kaydetme
 > [!IMPORTANT]
@@ -104,7 +104,7 @@ namespace EEMC
  EE DLL uygulayan `DllRegisterServer` COM ortam yanı sıra Visual Studio kendisini kaydetmek için işlevi.  
   
 > [!NOTE]
->  Yoou MyCEE kod örnek kayıt defteri kod dosyasında bulabilirsiniz *dllentry.cpp*, VSIP yüklemesinde EnVSDK\MyCPkgs\MyCEE altında bulunur.  
+>  Örnek kayıt defteri kod MyCEE kod dosyasında bulabilirsiniz *dllentry.cpp*, VSIP yüklemesinde EnVSDK\MyCPkgs\MyCEE altında bulunur.  
   
 ### <a name="dll-server-process"></a>DLL sunucu işlemi  
  EE DLL sunucu kaydı sırasında:  

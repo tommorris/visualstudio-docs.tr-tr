@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef330d96306a6490cf59cde859817cdd4a46f8c4
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468352"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513406"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -41,7 +41,7 @@ Tamamlanma listesine dâhil C# ilgisiz belirteçleri filtrelemek ve bağlamına 
 
 ### <a name="code-snippets-in-completion-lists"></a>Kod parçacıkları tamamlanma listeleri
 
-C# kod parçacıkları, kod önceden tanımlanmış gövdeleri programınıza kolayca eklemenize yardımcı olmak için tamamlanma listesi içerir. Kod parçacığının olarak tamamlama listede görünür [kısayol metnini](../ide/code-snippets-schema-reference.md#shortcut). Varsayılan olarak C# ' ta kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).
+C# kod parçacıkları, kod önceden tanımlanmış gövdeleri programınıza kolayca eklemenize yardımcı olmak için tamamlanma listesi içerir. Kod parçacığının olarak tamamlama listede görünür [kısayol metnini](../ide/code-snippets-schema-reference.md#shortcut-element). Varsayılan olarak C# ' ta kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).
 
 ### <a name="language-keywords-in-completion-lists"></a>Tamamlanma listeleri dil anahtar sözcükleri
 

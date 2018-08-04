@@ -1,6 +1,6 @@
 ---
-title: Python paketlerini Yükleme Kılavuzu, 5. adım, çalışma
-description: 5. adım çekirdek kılavuzun Visual Studio'da Python ortamı paketlerinde yönetmek için Visual Studio'nun özellikleri gösteren, Python yeteneklerini.
+title: Python paketlerini yükleme öğreticisiyle 5. adım, çalışma
+description: 5. adımı çekirdek kılavuzun Visual Studio'da Python ortamı paketleri yönetmek için Visual Studio'nun özellikleri gösteren, Python özelliklerinin.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,44 +11,44 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: e2b4464e60b155a9c9ef7f35d24084ce3d38b2d9
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37055987"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513227"
 ---
-# <a name="step-5-install-packages-in-your-python-environment"></a>5. adım: Python ortamınıza paketleri yüklemek
+# <a name="step-5-install-packages-in-your-python-environment"></a>5. adım: Python ortamınızda paketleri yükleme
 
-**Önceki adımda: [Hata Ayıklayıcısı'ndaki kodu çalıştırma](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
+**Önceki adımda: [hata ayıklayıcıda kod çalıştırma](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
-Python Geliştirici topluluğu kendi projelere dahil edebilirsiniz yararlı paketleri binlerce üretilen. Visual Studio, Python ortamlarda paketlerini yönetmek için bir kullanıcı Arabirimi sağlar.
+Python Geliştirici topluluğu kendi projelerine birleştirebilirsiniz yararlı paketleri binlerce hazırlamıştır. Visual Studio için Python ortamlarınızda paketlerini yönetmek için bir kullanıcı Arabirimi sağlar.
 
-1. Seçin **Görünüm > Diğer Pencereler > Python ortamları** menü komutu. **Python ortamları** penceresi Çözüm Gezgini eşe olarak açılır ve kullanılabilir farklı ortamlar için gösterir. Liste, Visual Studio Yükleyicisi ve ayrı olarak yüklediyseniz kullanılarak yüklenen her iki ortama içerir. Kalın ortamında yeni projeler için kullanılan varsayılan ortamıdır.
+1. Seçin **görünümü** > **diğer Windows** > **Python ortamları** menü komutu. **Python ortamları** penceresi açılır bir eşler arası olarak **Çözüm Gezgini** ve farklı ortamlar için gösterilir. Bu liste, yüklediğiniz Visual Studio Yükleyicisi ve ayrı olarak yüklenenler kullanarak her iki ortama içerir. Yeni projeler için kullanılan varsayılan ortam kalın ortamıdır.
 
   ![Python ortamları penceresi](media/environments-default-view-blue.png)
 
-1. Ortam **genel bakış** sekmesi, ortam yükleme klasörü ve yorumlayıcılar yanı sıra bu ortamda etkileşimli bir pencere için hızlı erişim sağlar. Örneğin, seçin **açık etkileşimli pencere** ve Visual Studio'da, belirli bir ortamın etkileşimli bir pencere görüntülenir.
+1. Ortamın **genel bakış** sekmesi, hızlı erişim sağlar bir **etkileşimli** konusu ortamın ortam yükleme klasörü ve yorumlayıcılarını birlikte penceresi. Örneğin, **açık etkileşimli pencere** ve bir **etkileşimli** penceresi, belirli bir ortam için Visual Studio'da görünür.
 
-1. Seçin **paketleri** sekmesine tıkladığınızda ortamda yüklü olan paketleri listesini görürsünüz.
+1. Seçin **paketleri** sekmesine tıkladığınızda ortamda şu anda yüklü olan paketleri listesini görürsünüz.
 
-  ![Bir ortamda yüklü olan paketleri](media/environments-installed-packages-blue.png)
+  ![Bir ortamda yüklü paketler](media/environments-installed-packages-blue.png)
 
-1. Yükleme `matplotlib` arama alanına adı girerek, ardından seçin `pip install`
+1. Yükleme `matplotlib` arama alanına adı girerek, ardından **pip yükleme**
 
   ![Matplotlib ortama yükleme](media/environments-add-matplotlib1.png)
 
-1. Bunu yapmak isteyip istemediğiniz sorulduğunda yüksekliğe olursunuz.
+1. Bunu yapmak isteyip istemediğiniz sorulduğunda yükseltmesi için onay vermiş olursunuz.
 
-1. Paket yüklendikten sonra Python ortamları penceresinde görüntülenir. **X** paket sağındaki da kaldırır.
+1. Paket yüklendikten sonra görünür **Python ortamları** penceresi. **X** paket sağında da kaldırır.
 
-  ![Ortamında matplotlib yükleme tamamlama](media/environments-add-matplotlib2.png)
+  ![Ortamda matplotlib yükleme tamamlama](media/environments-add-matplotlib2.png)
 
-  Küçük ilerleme çubuğu, Visual Studio yeni yüklenmiş paket için IntelliSense veritabanını oluşturuyor belirtmek için ortam altında görüntülenebilir. **IntelliSense** sekmesi ayrıca gösterir daha ayrıntılı bilgi. Veritabanı işlemi tamamlanana kadar IntelliSense özellikleri otomatik tamamlama ve sözdizimi denetimi gibi Not düzenleyicisinde bu paket için etkin olmayacaktır.
+  Visual Studio yeni yüklenen paket için IntelliSense veritabanını oluşturuyor belirtmek için ortamı altındaki küçük ilerleme çubuğu görünür. **IntelliSense** sekme ayrıca gösterir daha ayrıntılı bilgiler. Veritabanı işlemi tamamlanana kadar IntelliSense özelliklerini otomatik tamamlama ve sözdizimi denetimi gibi Not Düzenleyici o paket için etkin olmayacaktır.
 
-  Unutmayın **Visual Studio 2017 sürüm 15,6** daha sonra IntelliSense ile çalışmak için farklı ve daha hızlı bir yöntem kullanır ve bunu belirten üzerinde bir ileti görüntüler **IntelliSense** sekmesi.
+  Unutmayın **Visual Studio 2017 sürüm 15.6** daha sonra IntelliSense ile çalışmak için farklı ve daha hızlı bir yöntemi kullanır ve açık belirlememişse bu bağlamda bir ileti görüntüler **IntelliSense** sekmesi.
 
-1. İle yeni bir proje oluşturun **Dosya > Yeni > Proje**, "Python uygulama" şablonu seçme. Görüntülenen kod dosyasında kosinüsünü wave gibi önceki öğretici adımlar, yalnızca grafik olarak çizilen bu saat oluşturur aşağıdaki kodu yapıştırın:
+1. Kullanarak yeni bir proje oluşturun **dosya** > **yeni** > **proje**u seçerek **Python uygulaması** şablonu. Görünen kod dosyasında, yalnızca bu kez grafik olarak çizilen bir cosine wave gibi önceki öğretici adımlarını oluşturan aşağıdaki kodu yapıştırın:
 
     ```python
     from math import radians
@@ -63,15 +63,15 @@ Python Geliştirici topluluğu kendi projelere dahil edebilirsiniz yararlı pake
     main()
     ```
 
-1. (F5) programla çalıştırma veya çıkış görmek için hata ayıklayıcı (Ctrl + F5) olmadan:
+1. Programı çalıştırın (**F5**) veya hata ayıklayıcı olmadan (**Ctrl**+**F5**) çıktıyı görmek için:
 
-  ![Matplotlib örnek çıkış](media/environments-add-matplotlib3.png)
+  ![Matplotlib örnek çıktısı](media/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Sonraki adım
 
 > [!div class="nextstepaction"]
 > [Git ile çalışma](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="go-deeper"></a>Derinlemesine
+## <a name="go-deeper"></a>Daha ayrıntılı şekilde inceleyin
 
 - [Python ortamları](managing-python-environments-in-visual-studio.md)

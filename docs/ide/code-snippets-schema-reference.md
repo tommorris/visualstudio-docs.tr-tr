@@ -15,22 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89008dbedfced5210211ed48b15b4bf85ac35ebb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7da0eda1a4b987697090371b6e435d7292e57171
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927132"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513487"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod parçacıkları şema başvurusu
 
-IntelliSense kod parçacıkları ile uygulamanıza eklenmeye hazır önceden yazılmış kod parçalarını olan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Yinelenen kodları yazmak veya örnekleri aramak için harcanan süreyi kısaltan kod parçacıkları sağlayarak üretkenliği artırabilirsiniz. IntelliSense kod parçacığı XML Şeması kendi kod parçacıkları oluşturmak ve bunları kod parçacıkları eklemek için kullanabileceğiniz, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zaten içerir.
+Visual Studio ile uygulamanıza eklenmeye hazır önceden yazılmış kod parçalarıdır IntelliSense kod parçacıkları verilmiştir. Yinelenen kodları yazmak veya örnekleri aramak için harcanan süreyi kısaltan kod parçacıkları sağlayarak üretkenliği artırabilirsiniz. Kendi kod parçacıklarınızı oluşturmak ve bunları Visual Studio zaten içeren Kod parçacıklarına eklemek için IntelliSense kod parçacığı XML şemasını kullanabilirsiniz.
 
-##  <a name="assembly"></a> Assembly öğesi
+## <a name="assembly-element"></a>Assembly öğesi
 
 Kod parçacığının başvurduğu derlemenin adını belirtir.
 
-Metin değerini **derleme** öğesidir derleme kolay metin adı gibi `System.dll`, ya da kendi güçlü ad gibi `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.
+Metin değeri **derleme** öğedir derlemenin kolay adı gibi `System.dll`, ya da tanımlayıcı gibi ad `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.
 
 ```xml
 <Assembly>
@@ -38,15 +38,15 @@ Metin değerini **derleme** öğesidir derleme kolay metin adı gibi `System.dll
 </Assembly>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Reference öğesi](../ide/code-snippets-schema-reference.md#reference)|Kod parçacığının gerek duyduğu derleme başvuruları hakkındaki bilgileri içerir.|
+|[Reference öğesi](../ide/code-snippets-schema-reference.md#reference-element)|Kod parçacığının gerek duyduğu derleme başvuruları hakkındaki bilgileri içerir.|
 
  Bir metin değeri gereklidir. Bu metin, kod parçacığının başvurduğu derlemeyi belirtir.
 
-##  <a name="author"></a> Yazar öğesi
+## <a name="author-element"></a>Author öğesi
 
-Kod parçacığı yazarının adını belirtir. **Kod parçacıkları Yöneticisi** depolanan adını görüntüler `Author` kod parçacığında öğesidir.
+Kod parçacığı yazarının adını belirtir. **Kod parçacıkları Yöneticisi** öğesinde depolanan adı görüntüler `Author` kod parçacığının öğesi.
 
 ```xml
 <Author>
@@ -54,47 +54,47 @@ Kod parçacığı yazarının adını belirtir. **Kod parçacıkları Yöneticis
 </Author>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Kod parçacığı hakkında genel bilgiler içerir.|
+|[Header öğesi](../ide/code-snippets-schema-reference.md#header-element)|Kod parçacığı hakkında genel bilgiler içerir.|
 
  Bir metin değeri gereklidir. Bu metin kod parçacığının yazarını belirtir.
 
-## <a name="a-namecode--code-element"></a><a name="code" /> Kod öğesi
+## <a name="code-element"></a>Kod öğesi
 
 Kısa kod blokları için bir kapsayıcı sağlar.
 
 ### <a name="keywords"></a>Anahtar Sözcükler
 
-İki ayrılmış sözcükler metninde kullanıma `Code` öğesi: `$end$` ve `$selected$`. `$end$` kod parçacığı eklendikten sonra imleci yerleştirmek için konumun işaretler. `$selected$` metin çalıştırıldığında kod parçacığını eklenecek belgede seçili temsil eder. Örneğin, içeren parçacık verilen:
+Metninde kullanılabilecek iki ayrılmış sözcük `Code` öğesi: `$end$` ve `$selected$`. `$end$` kod parçacığı eklendikten sonra imlecin yerleştirileceği konumu işaretler. `$selected$` çağrıldığında kod parçacığına eklenecek olan belgedeki seçili metni temsil eder. Örneğin, içeren bir kod parçacığı verilen:
 
 ```
 $selected$ is a great color.
 ```
 
-Kullanıcı şablonu çalıştırdığında "Mavi" word seçtiyseniz oluşur:
+Kullanıcı şablonu çağırdığında "Mavi" sözcüğü seçtiyseniz oluşur:
 
 ```
 Blue is a great color.
 ```
 
-Ya da kullanamazsınız `$end$` veya `$selected$` kod parçacığında bulunan bir kereden fazla. Bunu yaparsanız, yalnızca ikinci örneği tanınır. İçeren parçacık verilen:
+Ya da kullanamazsınız `$end$` veya `$selected$` birden fazla kez bir kod parçacığında. Bunu yaparsanız, yalnızca ikinci örneğini tanınır. İçeren bir kod parçacığı verilen:
 
 ```
 $selected$ is a great color. I love $selected$.
 ```
 
-"Mavi" word seçtiyseniz oluşur:
+"Mavi" sözcüğü seçtiyseniz oluşur:
 
 ```
  is a great color. I love Blue.
 ```
 
-İlk alanı arasında bir boşluk olduğundan görünür `$selected$` ve `is`.
+Arasında boşluk olmadığından ilk alanı görünür `$selected$` ve `is`.
 
 Diğer tüm `$` anahtar sözcükleri tanımlanmış dinamik olarak `<Literal>` ve `<Object>` etiketler.
 
-Kod öğesi yapısını aşağıdadır:
+Kod öğesinin yapısı şöyledir:
 
 ```xml
 <Code Language="Language"
@@ -104,13 +104,13 @@ Kod öğesi yapısını aşağıdadır:
 </Code>
 ```
 
-Bir metin değeri gereklidir. Bu metin değişmez değerleri ve bu kod parçacığını bir kod dosyaya eklendiğinde, kullanabileceğiniz nesneleri ile birlikte kod belirtir.
+Bir metin değeri gereklidir. Bu metin, değişmez değerler ve bu kod parçacığı bir kod dosyasına eklendiğinde kullanabileceğiniz nesneleri birlikte kodu belirtir.
 
 ### <a name="attributes"></a>Öznitelikler
 
-Kod öğesi için kullanılabilen üç özniteliği vardır:
+Kod öğesi için üç öznitelikleri vardır:
 
-- **Dil** - _gerekli_ kod parçacığında dil belirten özniteliği. Değerin aşağıdakilerden biri olabilir:
+- **Dil** - _gerekli_ özniteliği, kod parçacığının dilini belirtir. Değerin aşağıdakilerden biri olabilir:
 
    |Değer|Açıklama|
    |-----|-----------|
@@ -122,7 +122,7 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
    |`SQL`|Bir SQL kod parçacığını tanımlar.|
    |`HTML`|Bir HTML kod parçacığını tanımlar.|
 
-- **Tür** - _isteğe bağlı_ parçacığı içeren kodu ve hangi kod parçacığı girilmelidir kod parçacığını derlemek konum türünü belirten özniteliği. Değerin aşağıdakilerden biri olabilir:
+- **Tür** - _isteğe bağlı_ kod parçacığının içerdiği kod ve hangi kod parçacığı girilmelidir derlemek kod parçacığı için konumun türünü belirten özniteliği. Değerin aşağıdakilerden biri olabilir:
 
    |Değer|Açıklama|
    |-----|-----------|
@@ -132,15 +132,15 @@ Kod öğesi için kullanılabilen üç özniteliği vardır:
    |`file`|Kod parçacığının eksiksiz bir kod dosyası olduğunu belirtir. Bu kod parçacıkları tek başına bir kod dosyasının içine veya bir ad alanının içine eklenebilir.|
    |`any`|Kod parçacığının istenen yere eklenebileceğini belirtir. Bu etiket, açıklamalar gibi içeriğe bağımlı kod parçacıkları için kullanılır.|
 
-- **Sınırlayıcı** - _isteğe bağlı_ değişmez değerleri ve kod nesneleri tanımlamak için kullanılan sınırlayıcıyı belirten özniteliği. Varsayılan olarak sınırlayıcı olan `$`.
+- **Sınırlayıcı** - _isteğe bağlı_ değişmez değerler ve kod nesneleri tanımlamak için kullanılan sınırlayıcıyı belirten özniteliği. Varsayılan olarak sınırlayıcı olduğu `$`.
 
-### <a name="parent-element"></a>Üst öğesi
+### <a name="parent-element"></a>Üst öğe
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
+|[Snippet öğesi](../ide/code-snippets-schema-reference.md#snippet-element)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
 
-##  <a name="codesnippet"></a> CodeSnippet öğesi
+## <a name="codesnippet-element"></a>CodeSnippet öğesi
 
 Visual Studio kod dosyalarına ekleyebileceğiniz bir başlık ve birden fazla IntelliSense Kod Parçacığı belirtmenizi sağlar.
 
@@ -157,16 +157,16 @@ Visual Studio kod dosyalarına ekleyebileceğiniz bir başlık ve birden fazla I
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Gerekli öğe. Kod parçacığı hakkında genel bilgiler içerir. Koyulmalıdır tam olarak bir `Header` bir kod parçacığı öğesinde.|
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Gerekli öğe. Visual Studio tarafından eklenecek kodu içerir. Koyulmalıdır tam olarak bir `Snippet` bir kod parçacığı öğesinde.|
+|[Header öğesi](../ide/code-snippets-schema-reference.md#header-element)|Gerekli öğe. Kod parçacığı hakkında genel bilgiler içerir. Olmalıdır tam olarak bir `Header` öğesinde bir kod parçacığı.|
+|[Snippet öğesi](../ide/code-snippets-schema-reference.md#snippet-element)|Gerekli öğe. Visual Studio tarafından eklenecek kodu içerir. Olmalıdır tam olarak bir `Snippet` öğesinde bir kod parçacığı.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[CodeSnippets öğesi](../ide/code-snippets-schema-reference.md#codesnippets)|Kod parçacığı XML şemasının kök öğesi.|
+|[CodeSnippets öğesi](../ide/code-snippets-schema-reference.md#codesnippets-element)|Kod parçacığı XML şemasının kök öğesi.|
 
-##  <a name="codesnippets"></a> CodeSnippets öğesi
+## <a name="codesnippets-element"></a>CodeSnippets öğesi
 
-Grupları [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet) öğeleri. `CodeSnippets` Kod parçacığını XML şeması kök öğesinin bir öğedir.
+Grupları [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element) öğeleri. `CodeSnippets` Öğesi kod parçacığı XML şemasının kök öğesidir.
 
 ```xml
 <CodeSnippets>
@@ -178,7 +178,7 @@ Grupları [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet) ö
 |-------------------|-----------------|
 |[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|İsteğe bağlı öğe. Tüm kod parçacığı verisi için üst öğe. Sıfır veya daha fazla olabilir `CodeSnippet` öğelerinde bir `CodeSnippets` öğesi.|
 
-##  <a name="declarations"></a> Bildirimleri öğesi
+## <a name="declarations-element"></a>Declarations öğesi
 
 Bir kod parçacığının düzenleyebileceğiniz bölümlerini oluşturan değişmez değerleri ve nesneleri belirtir.
 
@@ -191,14 +191,14 @@ Bir kod parçacığının düzenleyebileceğiniz bölümlerini oluşturan deği�
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Değişmez değer öğesi](../ide/code-snippets-schema-reference.md#literal)|İsteğe bağlı öğe. Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini tanımlar. Sıfır veya daha fazla olabilir `Literal` öğelerinde bir `Declarations` öğesi.|
-|[Object öğesi](../ide/code-snippets-schema-reference.md#object)|İsteğe bağlı öğe. Kod parçacığının düzenleme yapabileceğiniz nesnelerini tanımlar. Sıfır veya daha fazla olabilir `Object` öğelerinde bir `Declarations` öğesi.|
+|[Literal öğesi](../ide/code-snippets-schema-reference.md#literal-element)|İsteğe bağlı öğe. Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini tanımlar. Sıfır veya daha fazla olabilir `Literal` öğelerinde bir `Declarations` öğesi.|
+|[Object öğesi](../ide/code-snippets-schema-reference.md#object-element)|İsteğe bağlı öğe. Kod parçacığının düzenleme yapabileceğiniz nesnelerini tanımlar. Sıfır veya daha fazla olabilir `Object` öğelerinde bir `Declarations` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
+|[Snippet öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
 
-##  <a name="default"></a> Varsayılan öğesi
+## <a name="default-element"></a>Default öğesi
 
 Bir IntelliSense Kod Parçacığı için değişmez değerin veya nesnenin varsayılan değerini belirtir.
 
@@ -208,14 +208,14 @@ Bir IntelliSense Kod Parçacığı için değişmez değerin veya nesnenin varsa
 </Default>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Değişmez değer öğesi](../ide/code-snippets-schema-reference.md#literal)|Kod parçacığının düzenleme yapabileceğiniz değişmez değer alanlarını tanımlar.|
-|[Object öğesi](../ide/code-snippets-schema-reference.md#object)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
+|[Literal öğesi](../ide/code-snippets-schema-reference.md#literal-element)|Kod parçacığının düzenleme yapabileceğiniz değişmez değer alanlarını tanımlar.|
+|[Object öğesi](../ide/code-snippets-schema-reference.md#object-element)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
 
  Bir metin değeri gereklidir. Bu metin, düzenleyebileceğiniz kod parçacığı alanlarını dolduran değişmez değerin veya nesnenin varsayılan değerini belirtir.
 
-##  <a name="description"></a> Description öğesi
+## <a name="description-element"></a>Description öğesi
 
 Bir IntelliSense Kod Parçacığı'nın içeriği hakkında açıklayıcı bilgileri belirtir.
 
@@ -225,18 +225,18 @@ Bir IntelliSense Kod Parçacığı'nın içeriği hakkında açıklayıcı bilgi
 </Description>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Kod parçacığı hakkında genel bilgiler içerir.|
+|[Header öğesi](../ide/code-snippets-schema-reference.md#header-element)|Kod parçacığı hakkında genel bilgiler içerir.|
 
  Bir metin değeri gereklidir. Bu metin kod parçacığını tanımlar.
 
-##  <a name="function"></a> İşlev öğesi
+## <a name="function-element"></a>Function öğesi
 
 Değişmez değer veya nesne Visual Studio'da odağa geldiğinde yürütülecek bir işlevi belirtir.
 
 > [!NOTE]
-> `Function` Öğesi yalnızca C# kod parçacıkları içinde desteklenir.
+> `Function` Öğesi yalnızca C# kod parçacıkları desteklenir.
 
 ```xml
 <Function>
@@ -244,14 +244,14 @@ Değişmez değer veya nesne Visual Studio'da odağa geldiğinde yürütülecek 
 </Function>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Değişmez değer öğesi](../ide/code-snippets-schema-reference.md#literal)|Kod parçacığının düzenleme yapabileceğiniz değişmez değer alanlarını tanımlar.|
-|[Object öğesi](../ide/code-snippets-schema-reference.md#object)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
+|[Literal öğesi](../ide/code-snippets-schema-reference.md#literal-element)|Kod parçacığının düzenleme yapabileceğiniz değişmez değer alanlarını tanımlar.|
+|[Object öğesi](../ide/code-snippets-schema-reference.md#object-element)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
 
  Bir metin değeri gereklidir. Bu metin, değişmez değer veya nesne alanı Visual Studio'da odağa geldiğinde yürütülecek bir işlevi belirtir.
 
-##  <a name="header"></a> Üstbilgi öğesi
+## <a name="header-element"></a>Header öğesi
 
 IntelliSense Kod Parçacığı hakkında genel bilgileri belirtir.
 
@@ -269,24 +269,24 @@ IntelliSense Kod Parçacığı hakkında genel bilgileri belirtir.
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Yazar öğesi](../ide/code-snippets-schema-reference.md#author)|İsteğe bağlı öğe. Kod parçacığını yazan kişinin veya şirketin adı. Sıfır veya bir olabilir `Author` öğelerinde bir `Header` öğesi.|
-|[Description öğesi](../ide/code-snippets-schema-reference.md#description)|İsteğe bağlı öğe. Kod parçacığının açıklaması. Sıfır veya bir olabilir `Description` öğelerinde bir `Header` öğesi.|
-|[HelpUrl öğesi](../ide/code-snippets-schema-reference.md#helpurl)|İsteğe bağlı öğe. Kod parçacığı hakkında daha fazla bilgi içeren URL. Sıfır veya bir olabilir `HelpURL` üstbilgi öğesi öğeler. **Not:** Visual Studio kullanmaz `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.|
-|[Anahtar sözcükler öğesi](../ide/code-snippets-schema-reference.md#keywords)|İsteğe bağlı öğe. Grupları `Keyword` öğeleri. Sıfır veya bir olabilir `Keywords` öğelerinde bir `Header` öğesi.|
-|[Kısayol öğesi](../ide/code-snippets-schema-reference.md#shortcut)|İsteğe bağlı öğe. Kod parçacığını eklemek için kullanılabilecek kısayol metnini belirtir. Sıfır veya bir olabilir `Shortcut` öğelerinde bir `Header` öğesi.|
-|[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes)|İsteğe bağlı öğe. Grupları `SnippetType` öğeleri. Sıfır veya bir olabilir `SnippetTypes` öğelerinde bir `Header` öğesi. Varsa hiçbir `SnippetTypes` öğeleri, kod parçacığında her zaman geçerli.|
-|[Title öğesi](../ide/code-snippets-schema-reference.md#title)|Gerekli öğe. Kod parçacığının kolay adı. Koyulmalıdır tam olarak bir `Title` öğesinde bir `Header` öğesi.|
+|[Author öğesi](../ide/code-snippets-schema-reference.md#author-element)|İsteğe bağlı öğe. Kod parçacığını yazan kişinin veya şirketin adı. Sıfır veya bir olabilir `Author` öğelerinde bir `Header` öğesi.|
+|[Description öğesi](../ide/code-snippets-schema-reference.md#description-element)|İsteğe bağlı öğe. Kod parçacığının açıklaması. Sıfır veya bir olabilir `Description` öğelerinde bir `Header` öğesi.|
+|[HelpUrl öğesi](../ide/code-snippets-schema-reference.md#helpurl-element)|İsteğe bağlı öğe. Kod parçacığı hakkında daha fazla bilgi içeren URL. Sıfır veya bir olabilir `HelpURL` bir Header öğesinde öğeleri. **Not:** Visual Studio kullanmayan `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.|
+|[Keywords öğesi](../ide/code-snippets-schema-reference.md#keywords-element)|İsteğe bağlı öğe. Grupları `Keyword` öğeleri. Sıfır veya bir olabilir `Keywords` öğelerinde bir `Header` öğesi.|
+|[Shortcut öğesi](../ide/code-snippets-schema-reference.md#shortcut-element)|İsteğe bağlı öğe. Kod parçacığını eklemek için kullanılabilecek kısayol metnini belirtir. Sıfır veya bir olabilir `Shortcut` öğelerinde bir `Header` öğesi.|
+|[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes-element)|İsteğe bağlı öğe. Grupları `SnippetType` öğeleri. Sıfır veya bir olabilir `SnippetTypes` öğelerinde bir `Header` öğesi. Varsa hiçbir `SnippetTypes` öğeleri, kod parçacığı her zaman geçerli.|
+|[Title öğesi](../ide/code-snippets-schema-reference.md#title-element)|Gerekli öğe. Kod parçacığının kolay adı. Olmalıdır tam olarak bir `Title` öğesinde bir `Header` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
 |[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|Tüm kod parçacığı verisi için üst öğe.|
 
-##  <a name="helpurl"></a> HelpUrl öğesi
+## <a name="helpurl-element"></a>HelpUrl öğesi
 
 Bir kod parçacığı hakkında daha fazla bilgi sağlayan URL'yi belirtir.
 
 > [!NOTE]
-> Visual Studio kullanmaz `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.
+> Visual Studio kullanmayan `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.
 
 ```xml
 <HelpUrl>
@@ -294,15 +294,15 @@ Bir kod parçacığı hakkında daha fazla bilgi sağlayan URL'yi belirtir.
 </HelpUrl>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Kod parçacığı hakkında genel bilgiler içerir.|
+|[Header öğesi](../ide/code-snippets-schema-reference.md#header-element)|Kod parçacığı hakkında genel bilgiler içerir.|
 
 Metin değeri isteğe bağlıdır. Bu metin, kod parçacığı hakkında daha fazla bilgi için ziyaret edilmesi gereken URL'yi belirtir.
 
-##  <a name="id"></a> ID öğesi
+## <a name="id-element"></a>ID öğesi
 
-İçin benzersiz bir tanımlayıcı belirtir bir `Literal` veya `Object` öğesi. Aynı metin değerine sahip iki değişmez değerleri ya da aynı kod parçacığında bulunan nesneleri kendi `ID` öğeleri. Değişmez değerler ve nesneleri içeremez bir `ID` bitiş değerini öğesi. Değer `$end$` ayrılmıştır ve kod parçacığında eklendikten sonra imleci yerleştirmek için konumun işaretlemek için kullanılır.
+İçin benzersiz bir tanımlayıcı belirtir bir `Literal` veya `Object` öğesi. Aynı değeri hiçbir iki değişmez değerler veya nesneler aynı kod parçacığında olabilir kendi `ID` öğeleri. Değişmez değerler ve nesneler içeremez bir `ID` bitiş değerini içeren öğe. Değer `$end$` ayrılmıştır ve kod parçacığı eklendikten sonra imlecin yerleştirileceği konumu işaretlemek için kullanılır.
 
 ```xml
 <ID>
@@ -310,14 +310,14 @@ Metin değeri isteğe bağlıdır. Bu metin, kod parçacığı hakkında daha fa
 </ID>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Değişmez değer öğesi](../ide/code-snippets-schema-reference.md#literal)|Kod parçacığının düzenleme yapabileceğiniz değişmez değer alanlarını tanımlar.|
-|[Object öğesi](../ide/code-snippets-schema-reference.md#object)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
+|[Literal öğesi](../ide/code-snippets-schema-reference.md#literal-element)|Kod parçacığının düzenleme yapabileceğiniz değişmez değer alanlarını tanımlar.|
+|[Object öğesi](../ide/code-snippets-schema-reference.md#object-element)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
 
 Bir metin değeri gereklidir. Bu metin, nesne veya değişmez değer için benzersiz tanımlayıcıyı belirtir.
 
-##  <a name="import"></a> İçeri aktarma öğesi
+## <a name="import-element"></a>İçeri aktarma öğesi
 
 Bir IntelliSense Kod Parçacığı tarafından kullanılan içeri aktarılan ad alanlarını belirtir.
 
@@ -332,15 +332,15 @@ Bir IntelliSense Kod Parçacığı tarafından kullanılan içeri aktarılan ad 
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Namespace öğesi](../ide/code-snippets-schema-reference.md#namespace)|Gerekli öğe. Kod parçacığı tarafından kullanılan ad alanını belirtir. Koyulmalıdır tam olarak bir `Namespace` öğesinde bir `Import` öğesi.|
+|[Namespace öğesi](../ide/code-snippets-schema-reference.md#namespace-element)|Gerekli öğe. Kod parçacığı tarafından kullanılan ad alanını belirtir. Olmalıdır tam olarak bir `Namespace` öğesinde bir `Import` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[İçeri aktarmalar öğesi](../ide/code-snippets-schema-reference.md#imports)|Grouping öğesi için **alma** öğeleri.|
+|[Imports öğesi](../ide/code-snippets-schema-reference.md#imports-element)|İçin gruplandırma öğesi **alma** öğeleri.|
 
-##  <a name="imports"></a> İçeri aktarmalar öğesi
+## <a name="imports-element"></a>Imports öğesi
 
-Gruplar tek tek `Import` öğeleri.
+Grupları tek tek `Import` öğeleri.
 
 > [!NOTE]
 > `Imports` Öğesi yalnızca Visual Basic projeleri için desteklenir.
@@ -348,18 +348,18 @@ Gruplar tek tek `Import` öğeleri.
 ```xml
 <Imports>
     <Import>... </Import>
-<Imports>
+</Imports>
 ```
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[İçeri aktarma öğesi](../ide/code-snippets-schema-reference.md#import)|İsteğe bağlı öğe. Kod parçacığı için içeri aktarılan ad alanlarını içerir. Sıfır veya daha fazla olabilir **alma** öğelerinde bir `Imports` öğesi.|
+|[İçeri aktarma öğesi](../ide/code-snippets-schema-reference.md#import-element)|İsteğe bağlı öğe. Kod parçacığı için içeri aktarılan ad alanlarını içerir. Sıfır veya daha fazla olabilir **alma** öğelerinde bir `Imports` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
+|[Snippet öğesi](../ide/code-snippets-schema-reference.md#snippet-element)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
 
-##  <a name="keyword"></a> Keyword öğesinde
+## <a name="keyword-element"></a>Keyword öğesi
 
 Kod parçacığı için özel bir anahtar sözcük belirtir. Kod parçacığı anahtar sözcükleri Visual Studio tarafından kullanılır ve çevrimiçi içerik sağlayıcılarının aramaya veya kategorilere ayırmaya yönelik özel anahtar sözcükler eklemek için kullandıkları standart bir yöntemi temsil eder.
 
@@ -369,36 +369,36 @@ Kod parçacığı için özel bir anahtar sözcük belirtir. Kod parçacığı a
 </Keyword>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Anahtar sözcükler öğesi](../ide/code-snippets-schema-reference.md#keywords)|Gruplar tek tek `Keyword` öğeleri.|
+|[Keywords öğesi](../ide/code-snippets-schema-reference.md#keywords-element)|Grupları tek tek `Keyword` öğeleri.|
 
 Bir metin değeri gereklidir. Kod parçacığı için anahtar sözcük.
 
-##  <a name="keywords"></a> Anahtar sözcükler öğesi
+## <a name="keywords-element"></a>Keywords öğesi
 
-Gruplar tek tek `Keyword` öğeleri. Kod parçacığı anahtar sözcükleri Visual Studio tarafından kullanılır ve çevrimiçi içerik sağlayıcılarının aramaya veya kategorilere ayırmaya yönelik özel anahtar sözcükler eklemek için kullandıkları standart bir yöntemi temsil eder
+Grupları tek tek `Keyword` öğeleri. Kod parçacığı anahtar sözcükleri Visual Studio tarafından kullanılır ve çevrimiçi içerik sağlayıcılarının aramaya veya kategorilere ayırmaya yönelik özel anahtar sözcükler eklemek için kullandıkları standart bir yöntemi temsil eder
 
 ```xml
 <Keywords>
     <Keyword>... </Keyword>
     <Keyword>... </Keyword>
-<Keywords>
+</Keywords>
 ```
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Keyword öğesinde](../ide/code-snippets-schema-reference.md#keyword)|İsteğe bağlı öğe. Kod parçacığı için tek tek anahtar sözcükleri içerir. Sıfır veya daha fazla olabilir `Keyword` öğelerinde bir `Keywords` öğesi.|
+|[Keyword öğesi](../ide/code-snippets-schema-reference.md#keyword-element)|İsteğe bağlı öğe. Kod parçacığı için tek tek anahtar sözcükleri içerir. Sıfır veya daha fazla olabilir `Keyword` öğelerinde bir `Keywords` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Kod parçacığı hakkında genel bilgiler içerir.|
+|[Header öğesi](../ide/code-snippets-schema-reference.md#header-element)|Kod parçacığı hakkında genel bilgiler içerir.|
 
-##  <a name="literal"></a> Değişmez değer öğesi
+## <a name="literal-element"></a>Literal öğesi
 
-Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini tanımlar. `Literal` Öğe koda eklendikten sonra paylaştırılabilen bir kod parçacığı ancak büyük olasılıkla içinde tamamen bulunan özelleştirilmesi için değiştirme tanımlamak için kullanılır. Örneğin, değişmez değer dizeleri, sayısal değerler ve bazı değişken adları değişmez değer olarak bildirilmelidir.
+Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini tanımlar. `Literal` Öğesi tamamen kod parçacığı, ancak büyük olasılıkla olacak içinde yer alan kod parçasını koda eklendikten sonra özelleştirilmesi yerine tanımlamak için kullanılır. Örneğin, değişmez değer dizeleri, sayısal değerler ve bazı değişken adları değişmez değer olarak bildirilmelidir.
 
-Değişmez değerler ve nesneleri içeremez bir **kimliği** değerini öğesi seçili veya bitemez. Değer `$selected$` çalıştırıldığında kod parçacığını eklenecek belgede seçili metin temsil eder. `$end$` kod parçacığı eklendikten sonra imleci yerleştirmek için konumun işaretler.
+Değişmez değerler ve nesneler içeremez bir **kimliği** öğe değerini selected veya end. Değer `$selected$` , çağrıldığında kod parçacığına eklenecek olan belgedeki seçili metni temsil eder. `$end$` kod parçacığı eklendikten sonra imlecin yerleştirileceği konumu işaretler.
 
 ```xml
 <Literal Editable="true/false">
@@ -411,22 +411,22 @@ Değişmez değerler ve nesneleri içeremez bir **kimliği** değerini öğesi s
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|`Editable`|İsteğe bağlı `Boolean` özniteliği. Kod parçacığı eklendikten sonra değişmez değerde düzenleme yapıp yapamayacağınızı belirtir. Bu özniteliğin varsayılan değer `true`.|
+|`Editable`|İsteğe bağlı `Boolean` özniteliği. Kod parçacığı eklendikten sonra değişmez değerde düzenleme yapıp yapamayacağınızı belirtir. Bu öznitelik varsayılan değeri `true`.|
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Varsayılan öğesi](../ide/code-snippets-schema-reference.md#default)|Gerekli öğe. Kod parçacığını eklediğinizde değişmez değerin alacağı varsayılan değeri belirtir. Koyulmalıdır tam olarak bir `Default` öğesinde bir `Literal` öğesi.|
-|[İşlev öğesi](../ide/code-snippets-schema-reference.md#function)|İsteğe bağlı öğe. Değişmez değer Visual Studio'da odağa geldiğinde yürütülecek bir işlevi belirtir. Sıfır veya bir olabilir `Function` öğelerinde bir `Literal` öğesi.|
-|[ID öğesi](../ide/code-snippets-schema-reference.md#id)|Gerekli öğe. Değişmez değer için benzersiz bir tanımlayıcı belirtir. Koyulmalıdır tam olarak bir `ID` öğesinde bir `Literal` öğesi.|
-|[Araç İpucu öğesi](../ide/code-snippets-schema-reference.md#tooltip)|İsteğe bağlı öğe. Değişmez değerin beklenen değerini ve kullanımını açıklar. Sıfır veya bir olabilir **araç ipucu** öğelerinde bir `Literal` öğesi.|
+|[Default öğesi](../ide/code-snippets-schema-reference.md#default-element)|Gerekli öğe. Kod parçacığını eklediğinizde değişmez değerin alacağı varsayılan değeri belirtir. Olmalıdır tam olarak bir `Default` öğesinde bir `Literal` öğesi.|
+|[Function öğesi](../ide/code-snippets-schema-reference.md#function-element)|İsteğe bağlı öğe. Değişmez değer Visual Studio'da odağa geldiğinde yürütülecek bir işlevi belirtir. Sıfır veya bir olabilir `Function` öğelerinde bir `Literal` öğesi.|
+|[ID öğesi](../ide/code-snippets-schema-reference.md#id-element)|Gerekli öğe. Değişmez değer için benzersiz bir tanımlayıcı belirtir. Olmalıdır tam olarak bir `ID` öğesinde bir `Literal` öğesi.|
+|[ToolTip öğesi](../ide/code-snippets-schema-reference.md#tooltip-element)|İsteğe bağlı öğe. Değişmez değerin beklenen değerini ve kullanımını açıklar. Sıfır veya bir olabilir **araç ipucu** öğelerinde bir `Literal` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Bildirimleri öğesi](../ide/code-snippets-schema-reference.md#declarations)|Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini ve nesnelerini içerir.|
+|[Declarations öğesi](../ide/code-snippets-schema-reference.md#declarations)|Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini ve nesnelerini içerir.|
 
-##  <a name="namespace"></a> Namespace öğesi
+## <a name="namespace-element"></a>Namespace öğesi
 
-Kod parçacığının derlenip çalışması için içeri aktarılması gereken ad alanını belirtir. Belirtilen ad alanı `Namespace` öğesi otomatik olarak eklenir bir `Imports` zaten yoksa, kodunun başında deyimi.
+Kod parçacığının derlenip çalışması için içeri aktarılması gereken ad alanını belirtir. Belirtilen ad alanı `Namespace` öğesi eklenen otomatik olarak bir `Imports` zaten yoksa, kod deyimi başında.
 
 > [!NOTE]
 > `Namespace` Öğesi yalnızca Visual Basic projeleri için desteklenir.
@@ -437,15 +437,15 @@ Kod parçacığının derlenip çalışması için içeri aktarılması gereken 
 </Namespace>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[İçeri aktarma öğesi](../ide/code-snippets-schema-reference.md#import)|Belirtilen ad alanını içeri aktarır.|
+|[İçeri aktarma öğesi](../ide/code-snippets-schema-reference.md#import-element)|Belirtilen ad alanını içeri aktarır.|
 
- Bir metin değeri gereklidir. Bu metin, kod parçacığının içeri aktarıldığını varsaydığı bir ad alanını belirtir.
+Bir metin değeri gereklidir. Bu metin, kod parçacığının içeri aktarıldığını varsaydığı bir ad alanını belirtir.
 
-##  <a name="object"></a> Object öğesi
+## <a name="object-element"></a>Object öğesi
 
-Kod parçacığının düzenleme yapabileceğiniz nesnelerini tanımlar. `Object` Öğesi tarafından kod parçacığını gereklidir ancak parçacığı dışında tanımlanmış olması olası bir öğeyi tanımlamak için kullanılır. Örneğin, Windows Forms denetimleri, ASP.NET denetimleri, nesne örnekleri ve tür örnekleri nesne olarak bildirilmelidir. Nesne bildirimleri gerektiren bir türü belirtilmesini ile yapılan `Type` öğesi.
+Kod parçacığının düzenleme yapabileceğiniz nesnelerini tanımlar. `Object` Öğesi, kod parçacığının gerek duyduğu, ancak büyük olasılıkla kod parçacığının kendisi dışında tanımlanacak bir öğeyi tanımlamak için kullanılır. Örneğin, Windows Forms denetimleri, ASP.NET denetimleri, nesne örnekleri ve tür örnekleri nesne olarak bildirilmelidir. Nesne bildirimi bir tür belirtilmesini gerektirir yapılır `Type` öğesi.
 
 ```xml
 <Object Editable="true/false">
@@ -459,21 +459,21 @@ Kod parçacığının düzenleme yapabileceğiniz nesnelerini tanımlar. `Object
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|`Editable`|İsteğe bağlı `Boolean` özniteliği. Kod parçacığı eklendikten sonra değişmez değerde düzenleme yapıp yapamayacağınızı belirtir. Bu özniteliğin varsayılan değer `true`.|
+|`Editable`|İsteğe bağlı `Boolean` özniteliği. Kod parçacığı eklendikten sonra değişmez değerde düzenleme yapıp yapamayacağınızı belirtir. Bu öznitelik varsayılan değeri `true`.|
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Varsayılan öğesi](../ide/code-snippets-schema-reference.md#default)|Gerekli öğe. Kod parçacığını eklediğinizde değişmez değerin alacağı varsayılan değeri belirtir. Koyulmalıdır tam olarak bir `Default` öğesinde bir `Literal` öğesi.|
-|[İşlev öğesi](../ide/code-snippets-schema-reference.md#function)|İsteğe bağlı öğe. Değişmez değer Visual Studio'da odağa geldiğinde yürütülecek bir işlevi belirtir. Sıfır veya bir olabilir `Function` öğelerinde bir `Literal` öğesi.|
-|[ID öğesi](../ide/code-snippets-schema-reference.md#id)|Gerekli öğe. Değişmez değer için benzersiz bir tanımlayıcı belirtir. Koyulmalıdır tam olarak bir `ID` öğesinde bir `Literal` öğesi.|
-|[Araç İpucu öğesi](../ide/code-snippets-schema-reference.md#tooltip)|İsteğe bağlı öğe. Değişmez değerin beklenen değerini ve kullanımını açıklar. Sıfır veya bir olabilir **araç ipucu** öğelerinde bir `Literal` öğesi.|
-|[Type öğesi](../ide/code-snippets-schema-reference.md#type)|Gerekli öğe. Nesnenin türünü belirtir. Koyulmalıdır tam olarak bir `Type` öğesinde bir `Object` öğesi.|
+|[Default öğesi](../ide/code-snippets-schema-reference.md#default-element)|Gerekli öğe. Kod parçacığını eklediğinizde değişmez değerin alacağı varsayılan değeri belirtir. Olmalıdır tam olarak bir `Default` öğesinde bir `Literal` öğesi.|
+|[Function öğesi](../ide/code-snippets-schema-reference.md#function-element)|İsteğe bağlı öğe. Değişmez değer Visual Studio'da odağa geldiğinde yürütülecek bir işlevi belirtir. Sıfır veya bir olabilir `Function` öğelerinde bir `Literal` öğesi.|
+|[ID öğesi](../ide/code-snippets-schema-reference.md#id-element)|Gerekli öğe. Değişmez değer için benzersiz bir tanımlayıcı belirtir. Olmalıdır tam olarak bir `ID` öğesinde bir `Literal` öğesi.|
+|[ToolTip öğesi](../ide/code-snippets-schema-reference.md#tooltip-element)|İsteğe bağlı öğe. Değişmez değerin beklenen değerini ve kullanımını açıklar. Sıfır veya bir olabilir **araç ipucu** öğelerinde bir `Literal` öğesi.|
+|[Type öğesi](../ide/code-snippets-schema-reference.md#type-element)|Gerekli öğe. Nesnenin türünü belirtir. Olmalıdır tam olarak bir `Type` öğesinde bir `Object` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Bildirimleri öğesi](../ide/code-snippets-schema-reference.md#declarations)|Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini ve nesnelerini içerir.|
+|[Declarations öğesi](../ide/code-snippets-schema-reference.md#declarations-element)|Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini ve nesnelerini içerir.|
 
-##  <a name="reference"></a> Reference öğesi
+## <a name="reference-element"></a>Reference öğesi
 
 Kod parçacığının gerek duyduğu derleme başvuruları hakkındaki bilgileri belirtir.
 
@@ -486,16 +486,16 @@ Kod parçacığının gerek duyduğu derleme başvuruları hakkındaki bilgileri
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Assembly öğesi](../ide/code-snippets-schema-reference.md#assembly)|Gerekli öğe. Kod parçacığının başvurduğu derlemenin adını içerir. Koyulmalıdır tam olarak bir `Assembly` öğesinde bir `Reference` öğesi.|
-|[URL öğesi](../ide/code-snippets-schema-reference.md#url)|İsteğe bağlı öğe. Başvurulan derleme hakkında daha fazla bilgi sağlayan bir URL içerir. Sıfır veya bir olabilir `Url` öğelerinde bir `Reference` öğesi.|
+|[Assembly öğesi](../ide/code-snippets-schema-reference.md#assembly-element)|Gerekli öğe. Kod parçacığının başvurduğu derlemenin adını içerir. Olmalıdır tam olarak bir `Assembly` öğesinde bir `Reference` öğesi.|
+|[URL öğesi](../ide/code-snippets-schema-reference.md#url-element)|İsteğe bağlı öğe. Başvurulan derleme hakkında daha fazla bilgi sağlayan bir URL içerir. Sıfır veya bir olabilir `Url` öğelerinde bir `Reference` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[References öğesi](../ide/code-snippets-schema-reference.md#references)|Grouping öğesi için `Reference` öğeleri.|
+|[References öğesi](../ide/code-snippets-schema-reference.md#references)|İçin gruplandırma öğesi `Reference` öğeleri.|
 
-##  <a name="references"></a> References öğesi
+## <a name="references-element"></a>References öğesi
 
-Gruplar tek tek `Reference` öğeleri.
+Grupları tek tek `Reference` öğeleri.
 
 ```xml
 <References>
@@ -505,18 +505,18 @@ Gruplar tek tek `Reference` öğeleri.
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Reference öğesi](../ide/code-snippets-schema-reference.md#reference)|İsteğe bağlı öğe. Kod parçacığı için derleme başvuruları hakkındaki bilgileri içerir. Sıfır veya daha fazla olabilir `Reference` öğelerinde bir `References` öğesi.|
+|[Reference öğesi](../ide/code-snippets-schema-reference.md#reference-element)|İsteğe bağlı öğe. Kod parçacığı için derleme başvuruları hakkındaki bilgileri içerir. Sıfır veya daha fazla olabilir `Reference` öğelerinde bir `References` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Kod parçacığında öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
+|[Snippet öğesi](../ide/code-snippets-schema-reference.md#snippet-element)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
 
-##  <a name="shortcut"></a> Kısayol öğesi
+## <a name="shortcut-element"></a>Shortcut öğesi
 
-Kod parçacığını eklemek için kullanılan kısayol metnini belirtir. Metin değeri bir `Shortcut` öğesi yalnızca alfasayısal karakterler içeren tireler (-) ve alt çizgi (_).
+Kod parçacığını eklemek için kullanılan kısayol metnini belirtir. Metin değerini bir `Shortcut` öğesi yalnızca alfasayısal karakterler içerebilir tire (-) ve alt çizgi (_).
 
 > [!CAUTION]
-> _ ve - C++ kod parçacığında kısayolları desteklenen karakter değildir.
+> _ ve - C++ kod parçacığı kısayollarında desteklenmeyen karakterlerdir değildir.
 
 ```xml
 <Shortcut>
@@ -524,13 +524,13 @@ Kod parçacığını eklemek için kullanılan kısayol metnini belirtir. Metin 
 </Shortcut>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Kod parçacığı hakkında genel bilgiler içerir.|
+|[Header öğesi](../ide/code-snippets-schema-reference.md#header-element)|Kod parçacığı hakkında genel bilgiler içerir.|
 
  Metin değeri isteğe bağlıdır. Bu metin, kod parçacığını eklemek için bir kısayol olarak kullanılır.
 
-##  <a name="snippet"></a> Kod parçacığında öğesi
+## <a name="snippet-element"></a>Snippet öğesi
 
 Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu belirtir.
 
@@ -545,73 +545,73 @@ Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kod
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[Kod öğesi](../ide/code-snippets-schema-reference.md#code)|Gerekli öğe. Bir belge dosyasına eklemek istediğiniz kodu belirtir. Koyulmalıdır tam olarak bir `Code` öğesinde bir `Snippet` öğesi.|
-|[Bildirimleri öğesi](../ide/code-snippets-schema-reference.md#declarations)|İsteğe bağlı öğe. Bir kod parçacığının düzenleyebileceğiniz bölümlerini oluşturan değişmez değerleri ve nesneleri belirtir. Sıfır veya bir olabilir `Declarations` öğelerinde bir `Snippet` öğesi.|
-|[İçeri aktarmalar öğesi](../ide/code-snippets-schema-reference.md#imports)|İsteğe bağlı öğe. Gruplar tek tek `Import` öğeleri. Sıfır veya bir olabilir `Imports` öğelerinde bir `Snippet` öğesi.|
-||İsteğe bağlı öğe. Gruplar tek tek `Reference` öğeleri. Sıfır veya bir olabilir `References` öğelerinde bir `Snippet` öğesi.|
+|[Kod öğesi](../ide/code-snippets-schema-reference.md#code-element)|Gerekli öğe. Bir belge dosyasına eklemek istediğiniz kodu belirtir. Olmalıdır tam olarak bir `Code` öğesinde bir `Snippet` öğesi.|
+|[Declarations öğesi](../ide/code-snippets-schema-reference.md#declarations-element)|İsteğe bağlı öğe. Bir kod parçacığının düzenleyebileceğiniz bölümlerini oluşturan değişmez değerleri ve nesneleri belirtir. Sıfır veya bir olabilir `Declarations` öğelerinde bir `Snippet` öğesi.|
+|[Imports öğesi](../ide/code-snippets-schema-reference.md#imports-element)|İsteğe bağlı öğe. Grupları tek tek `Import` öğeleri. Sıfır veya bir olabilir `Imports` öğelerinde bir `Snippet` öğesi.|
+||İsteğe bağlı öğe. Grupları tek tek `Reference` öğeleri. Sıfır veya bir olabilir `References` öğelerinde bir `Snippet` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|Visual Studio kod dosyalarına ekleyebileceğiniz bir başlık ve birden fazla IntelliSense Kod Parçacığı belirtmenizi sağlar.|
+|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet-element)|Visual Studio kod dosyalarına ekleyebileceğiniz bir başlık ve birden fazla IntelliSense Kod Parçacığı belirtmenizi sağlar.|
 
-##  <a name="snippettype"></a> SnippetType öğesi
+## <a name="snippettype-element"></a>SnippetType öğesi
 
 Visual Studio'nun kod parçacığını nasıl eklediğini belirtir.
 
 ```xml
 <SnippetType>
     SurroundsWith/Expansion
-<SnippetType>
+</SnippetType>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes)|Grupları `SnippetType` öğeleri.|
+|[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes-element)|Grupları `SnippetType` öğeleri.|
 
- Metin değeri şu değerlerden biri olmalıdır:
+Metin değeri şu değerlerden biri olmalıdır:
 
--   `SurroundsWith`: seçilen paylaştırılabilen bir kod yerleştirilecek kod parçacığını sağlar.
+-   `SurroundsWith`: kod parçacığının, seçilen bir kod parçasının etrafına yerleştirilmesini sağlar.
 
--   `Expansion`: kod parçacığı imlecin eklenmesini sağlar.
+-   `Expansion`: kod parçacığının imlece eklenmesini sağlar.
 
--   `Refactoring`: C# yeniden düzenleme sırasında kod parçacığında kullandığını belirtir. `Refactoring` özel kod parçacıkları kullanılamaz.
+-   `Refactoring`: kod parçacığının C# yeniden düzenlemesi sırasında kullanıldığını belirtir. `Refactoring` özel kod parçacıklarında kullanılamaz.
 
-##  <a name="snippettypes"></a> SnippetTypes öğesi
+## <a name="snippettypes-element"></a>SnippetTypes öğesi
 
-Gruplar tek tek `SnippetType` öğeleri. Varsa `SnippetTypes` öğesi mevcut değil, kod parçacığında kodda yere eklenebilir.
+Grupları tek tek `SnippetType` öğeleri. Varsa `SnippetTypes` öğesi yoksa, kod içinde kod parçacığının istenen yere eklenebileceğini.
 
 ```xml
 <SnippetTypes>
     <SnippetType>... </SnippetType>
     <SnippetType>... </SnippetType>
-<SnippetTypes>
+</SnippetTypes>
 ```
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[SnippetType öğesi](../ide/code-snippets-schema-reference.md#snippettype)|İsteğe bağlı öğe. Visual Studio'nun kod parçacığını kodun içine nasıl eklediğini belirtir. Sıfır veya daha fazla olabilir `SnippetType` öğelerinde bir `SnippetTypes` öğesi.|
+|[SnippetType öğesi](../ide/code-snippets-schema-reference.md#snippettype-element)|İsteğe bağlı öğe. Visual Studio'nun kod parçacığını kodun içine nasıl eklediğini belirtir. Sıfır veya daha fazla olabilir `SnippetType` öğelerinde bir `SnippetTypes` öğesi.|
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Kod parçacığı hakkında genel bilgiler belirtir.|
+|[Header öğesi](../ide/code-snippets-schema-reference.md#header-element)|Kod parçacığı hakkında genel bilgiler belirtir.|
 
-##  <a name="title"></a> Title öğesi
+## <a name="title-element"></a>Title öğesi
 
-Kod parçacığı için başlığı belirtir. Başlık depolanan `Title` kod parçacığında öğesi görünür **kod parçacığı Seçici** ve kod parçacığında 's açıklamasında **kod parçacıkları Yöneticisi**.
+Kod parçacığı için başlığı belirtir. Saklanan `Title` kod parçacığının öğesi görünür **kod parçacığı Seçici** ve kod parçacığının açıklamasında **kod parçacıkları Yöneticisi**.
 
 ```xml
 <Title>
     Code Snippet Title
-<Title>
+</Title>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Üstbilgi öğesi](../ide/code-snippets-schema-reference.md#header)|Kod parçacığı hakkında genel bilgiler belirtir.|
+|[Header öğesi](../ide/code-snippets-schema-reference.md#header-element)|Kod parçacığı hakkında genel bilgiler belirtir.|
 
  Bir metin değeri gereklidir. Bu metin kod parçacığının başlığını belirtir.
 
-##  <a name="tooltip"></a> Araç İpucu öğesi
+## <a name="tooltip-element"></a>ToolTip öğesi
 
 Kod parçacığındaki bir değişmez değerin veya nesnenin beklenen değerini ve kullanımını açıklar; Visual Studio, kod parçacığını bir projeye eklerken ToolTip öğesinde bunu görüntüler. ToolTip metni, kod parçacığı eklendikten sonra değişmez değerin veya nesnenin üzerine fare geldiğinde görüntülenir.
 
@@ -621,16 +621,16 @@ Kod parçacığındaki bir değişmez değerin veya nesnenin beklenen değerini 
 </ToolTip>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Değişmez değer öğesi](../ide/code-snippets-schema-reference.md#literal)|Kod parçacığının düzenleme yapabileceğiniz değişmez değer alanlarını tanımlar.|
-|[Object öğesi](../ide/code-snippets-schema-reference.md#object)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
+|[Literal öğesi](../ide/code-snippets-schema-reference.md#literal-element)|Kod parçacığının düzenleme yapabileceğiniz değişmez değer alanlarını tanımlar.|
+|[Object öğesi](../ide/code-snippets-schema-reference.md#object-element)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
 
  Bir metin değeri gereklidir. Bu metin, kod parçacığındaki nesne veya değişmez değer ile ilişkilendirilecek ToolTip açıklamasını belirtir.
 
-##  <a name="type"></a> Type öğesi
+## <a name="type-element"></a>Type öğesi
 
-Nesnenin türünü belirtir. `Object` Öğesi tarafından kod parçacığını gereklidir ancak parçacığı dışında tanımlanmış olması olası bir öğeyi tanımlamak için kullanılır. Örneğin, Windows Forms denetimleri, ASP.NET denetimleri, nesne örnekleri ve tür örnekleri nesne olarak bildirilmelidir. Nesne bildirimleri gerektiren bir türü belirtilmesini ile yapılan `Type` öğesi.
+Nesnenin türünü belirtir. `Object` Öğesi, kod parçacığının gerek duyduğu, ancak büyük olasılıkla kod parçacığının kendisi dışında tanımlanacak bir öğeyi tanımlamak için kullanılır. Örneğin, Windows Forms denetimleri, ASP.NET denetimleri, nesne örnekleri ve tür örnekleri nesne olarak bildirilmelidir. Nesne bildirimi bir tür belirtilmesini gerektirir yapılır `Type` öğesi.
 
 ```xml
 <Type>
@@ -638,13 +638,13 @@ Nesnenin türünü belirtir. `Object` Öğesi tarafından kod parçacığını g
 </Type>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Object öğesi](../ide/code-snippets-schema-reference.md#object)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
+|[Object öğesi](../ide/code-snippets-schema-reference.md#object-element)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
 
  Bir metin değeri gereklidir. Bu metin nesnenin türünü belirtir.
 
-##  <a name="url"></a> URL öğesi
+## <a name="url-element"></a>URL öğesi
 
 Başvurulan derleme hakkında daha fazla bilgi sağlayan bir URL'yi belirtir.
 
@@ -657,13 +657,13 @@ Başvurulan derleme hakkında daha fazla bilgi sağlayan bir URL'yi belirtir.
 </Url>
 ```
 
-|Üst öğesi|Açıklama|
+|Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Reference öğesi](../ide/code-snippets-schema-reference.md#reference)|Kod parçacığının gerek duyduğu derleme başvurularını belirtir.|
+|[Reference öğesi](../ide/code-snippets-schema-reference.md#reference-element)|Kod parçacığının gerek duyduğu derleme başvurularını belirtir.|
 
- Bir metin değeri gereklidir. Bu metin, başvurulan derleme hakkında daha fazla bilgi içeren bir URL'yi belirtir. Bu URL, başvuru projeye eklenemediğinde görüntülenir.
+Bir metin değeri gereklidir. Bu metin, başvurulan derleme hakkında daha fazla bilgi içeren bir URL'yi belirtir. Bu URL, başvuru projeye eklenemediğinde görüntülenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Kod parçacıkları](../ide/code-snippets.md)
-- [İzlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)
+- [İzlenecek Yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)

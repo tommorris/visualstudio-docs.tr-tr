@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180002"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512297"
 ---
 # <a name="using-the-tasks-window"></a>Görevleri Penceresini Kullanma
 
@@ -52,7 +52,7 @@ Sütunları **görevleri** penceresi, aşağıdaki bilgileri gösterir.
 |**bayrakları**|Hangi görevlerin işaretlenmiş gösterir ve bir görevi işaretleme veya işaretini kaldırma olanak tanır.|
 |**Simgeler**|Sarı bir ok, geçerli görev gösterir. Geçerli görev, geçerli iş parçacığı üzerinde en üstteki görevdir.<br /><br /> Bölme görevi, diğer bir deyişle, hata ayıklayıcı çağrıldığında geçerli bir beyaz bir ok gösterir.<br /><br /> Duraklatma simgesi, kullanıcı tarafından dondurulmuş bir görevi gösterir. Dondurma ve bir görev listesinde sağ tıklayarak Çöz.|
 |**ID**|Görev için sistem tarafından sağlanan bir sayı. Yerel kod halinde, bu görev adresidir.|
-|**Status**|Geçerli durumu (zamanlanmış, etkin, engellenmiş, kilitlenen, bekleniyor veya tamamlanmış) görev. Zamanlanmış bir görev henüz çalıştırılmadı ve bu nedenle, henüz bir çağrı yığını, atanan bir iş parçacığı veya ilgili bilgiler yok biridir.<br /><br /> Etkin görev kodu hata ayıklayıcıda kesmeden önce yürütülen biridir.<br /><br /> Bir bekleniyor veya engellenen sinyal bir olay, bir kilidi serbest bırakılması veya başka bir görevi tamamlamak için beklediği, engellenen bir görevdir.<br /><br /> Kilitlenen bir görevi başka bir iş parçacığıyla, iş parçacığı kilitlendiğini bekleyen bir görevdir.<br /><br /> Üzerine **durumu** hücre bloğu hakkında daha fazla bilgi kilitlenen veya bekleniyor bir görev için. **Uyarı:** **görevleri** penceresi bekleyin zinciri geçişi (WCT) tarafından desteklenen eşitleme temel kullanan bir engellenen görev için kilitlenme bildirir. Örneğin, bir kilitlenen <xref:System.Threading.Tasks.Task> WCT, hata ayıklayıcı raporları kullanan nesne **Awaiting kilitlendiğini**. Eşzamanlılık WCT kullanmaz, çalışma zamanı tarafından yönetilen kilitlenen bir görev için hata ayıklayıcı raporları **bekleyen**. WCT hakkında daha fazla bilgi için bkz: [bekleyin zinciri geçişi](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|
+|**Status**|Geçerli durumu (zamanlanmış, etkin, engellenmiş, kilitlenen, bekleniyor veya tamamlanmış) görev. Zamanlanmış bir görev henüz çalıştırılmadı ve bu nedenle, henüz bir çağrı yığını, atanan bir iş parçacığı veya ilgili bilgiler yok biridir.<br /><br /> Etkin görev kodu hata ayıklayıcıda kesmeden önce yürütülen biridir.<br /><br /> Bir bekleniyor veya engellenen sinyal bir olay, bir kilidi serbest bırakılması veya başka bir görevi tamamlamak için beklediği, engellenen bir görevdir.<br /><br /> Kilitlenen bir görevi başka bir iş parçacığıyla, iş parçacığı kilitlendiğini bekleyen bir görevdir.<br /><br /> Üzerine **durumu** hücre bloğu hakkında daha fazla bilgi kilitlenen veya bekleniyor bir görev için. **Uyarı:** **görevleri** penceresi bekleyin zinciri geçişi (WCT) tarafından desteklenen eşitleme temel kullanan bir engellenen görev için kilitlenme bildirir. Örneğin, bir kilitlenen <xref:System.Threading.Tasks.Task> WCT, hata ayıklayıcı raporları kullanan nesne **Awaiting kilitlendiğini**. Eşzamanlılık WCT kullanmaz, çalışma zamanı tarafından yönetilen kilitlenen bir görev için hata ayıklayıcı raporları **bekleyen**. WCT hakkında daha fazla bilgi için bkz: [bekleyin zinciri geçişi](/windows/desktop/Debug/wait-chain-traversal).|
 |**Başlangıç saati**|Saat, görev etkin hale geldi.|
 |**Süresi**|Görev etkin biçimde saniye sayısı.|
 |**Tamamlanma Zamanı**|Hangi görev tamamlanma zamanı.|

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433174"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510155"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map Oluşturma Çeşidi
 Mip eşlemeleri hedefleri işlenmeyebilir dokular üzerinde sağlar.  
@@ -28,11 +28,11 @@ Mip eşlemeleri hedefleri işlenmeyebilir dokular üzerinde sağlar.
  Bu değişken bir önemli bir performans kazancı gösteriyorsa, mip eşlemeleri etkinleştirme ve en iyi doku önbelleğe alma verilmemiş olmadan dokular kullandığınızı gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Mip-map oluşturma yapılan her çağrı üzerinde zorunlu `ID3D11Device::CreateTexture2D` kaynak doku oluşturur. Mip-map oluşturma D3D11_TEXTUR2D_DESC nesneden olduğunda özellikle zorlanır `pDesc` olan değişmeyen bir gölgelendirici kaynak; açıklar:  
+ Mip-map oluşturma yapılan her çağrı üzerinde zorunlu `ID3D11Device::CreateTexture2D` kaynak doku oluşturur. Mip-map oluşturma D3D11_TEXTURE2D_DESC nesneden olduğunda özellikle zorlanır `pDesc` olan değişmeyen bir gölgelendirici kaynak; açıklar:  
   
 -   Yalnızca D3D11_BIND_SHADER_RESOURCE bayrağı ayarlanmış BindFlags üye var.  
   
--   Kullanım üye D3D11_USAGE_DEFUALT ya da D3D11_USAGE_IMMUTABLE ayarlanır.  
+-   Kullanım üye D3D11_USAGE_DEFAULT ya da D3D11_USAGE_IMMUTABLE ayarlanır.  
   
 -   CPUAccessFlags üyesi (CPU erişim yok) 0 olarak ayarlanır.  
   

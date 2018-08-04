@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078384"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512964"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: görsel stiller etkinken WPF uygulaması yayımlama
 Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü etkinleştirin. El ile etkinleştirmeniz gerekir, böylece varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stillerin etkin değil. Ancak, bir WPF uygulaması için görsel stilleri etkinleştirme ve ardından çözüm yayımlama bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](/windows/desktop/Controls/visual-styles-overview). Hata iletisi hakkında daha fazla bilgi için bkz. [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -161,8 +161,9 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
  Bu adımları gerçekleştirdikten sonra yayımlanan dosyaları son kullanıcıların uygulamayı yüklemek istediğiniz konuma taşıyabilirsiniz. Çözüm sık sık güncelleştirme yapmak istiyorsanız, bir komut dosyasına bu komutları taşıyabilir ve her seferinde yeni bir sürüm yayımlayın betiği çalıştırın.  
   
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Görsel stiller genel bakış](/windows/desktop/Controls/visual-styles-overview)   
- [Görsel stilleri etkinleştirme](https://msdn.microsoft.com/library/bb773175.aspx)   
- [Komut istemleri](/dotnet/framework/tools/developer-command-prompt-for-vs)
+## <a name="see-also"></a>Ayrıca bkz.
+
+-[ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Görsel stiller genel bakış](/windows/desktop/Controls/visual-styles-overview)
+- [Görsel stilleri etkinleştirme](/windows/desktop/Controls/cookbook-overview)
+- [Komut İstemleri](/dotnet/framework/tools/developer-command-prompt-for-vs)

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529f4eb53c2da7af9115fab4b063100f6e5d0c6a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153819"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511415"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol:, Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma
 Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, müşteri geleneksel dağıtım bildirimini güncelleştir ve yeniden oturum oluşturdu. Çoğu durumda tercih edilen yöntem, hala olmakla birlikte, .NET Framework 3.5 oluşturmanızı sağlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yeni bir dağıtım bildirimi yeniden oluşturmak zorunda kalmadan, müşteriler tarafından dağıtılabilir dağıtımlar. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları için teslim etmeden test ve üretim sunucuları](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -159,4 +159,4 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Mage.exe (bildirim üretme ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)
+ [MakeCert](/windows/desktop/SecCrypto/makecert)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388195"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513279"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakış
 
@@ -104,12 +104,16 @@ Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin öne
 
 Visual Studio kullanıcı arabirimi ile tanışın özelliklerinin birkaçı adresindeki inceledik. Daha iyi keşfedilebilmesi için:
 
-- Visual Studio'nun daha kapsamlı bir tura katılın ve hatta hata ayıklama, buna dabble [Visual Studio IDE'ye genel bakış](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
 
-- Gözat **genel kullanıcı arabirimi öğeleri** pencereleri hakkında daha fazla derinlik gibi girmeyeceğini VS belgelerinin bölümü [hata listesi](../ide/reference/error-list-window.md), [çıkış penceresine](../ide/reference/output-window.md), [ Özellikler penceresi](../ide/reference/properties-window.md), ve [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: düzenleyicide kod yazma](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
-- [Hızlı Başlangıç: düzenleyicide kod yazma](../ide/quickstart-editor.md)
-- [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
+- [Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
+- [Visual Studio 2017'in özellikleri](../ide/advanced-feature-overview.md)

@@ -1,8 +1,8 @@
 ---
 layout: LandingPage
-title: Visual Studio'daki sürüm denetimi | VSTS & TFS
-description: Sürüm denetimi Viual Studio'da ile Başlarken için kılavuz
-keywords: VSTS, TFS, sürüm denetimi
+title: Visual Studio'da sürüm denetimi | VSTS ve TFS
+description: Sürüm denetimi Viual Studio'da ile Başlama Kılavuzu
+keywords: VSTS, TFS sürüm denetimi
 author: steved0x
 ms.manager: douge
 ms.author: sdanie
@@ -12,19 +12,19 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279923"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510828"
 ---
-# <a name="version-control-in-visual-studio"></a>Visual Studio'daki sürüm denetimi
+# <a name="version-control-in-visual-studio"></a>Visual Studio'da sürüm denetimi
 
-Sürüm denetim sistemleri zamanla kod değişiklikleri izlemenize yardımcı olur. Değişiklik yapmak gibi sürüm denetimi sistemi bir dosyalarınızın anlık görüntüsünü alır. Sürüm denetimi sistemi ihtiyacınız olursa, bunu daha sonra geri çağırma şekilde bu anlık görüntü kalıcı olarak kaydeder. Visual Studio sağlar [Git](/vsts/git/index) ve [Team Foundation sürüm denetimi (TFVC'yi)](/vsts/tfvc/index). İki sistem arasında karar vermek için bkz: [projeniz için doğru sürüm denetimi seçme](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json).
+Sürüm denetimi sistemleri, zaman içinde kod değişiklikleri izlemenize yardımcı olur. Yaptığınız gibi sürüm denetimi sistemi dosyalarınızın anlık görüntüsünü alır. Sürüm denetimi sistemi ihtiyacınız varsa, bunu daha sonra başvurmanız bu anlık görüntüyü kalıcı olarak kaydeder. Visual Studio sağlar [Git](/vsts/git/index) ve [Team Foundation sürüm denetimi (TFVC)](/vsts/tfvc/index). İki sistem arasında karar vermek için bkz: [projeniz için doğru sürüm denetimini seçme](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json).
 
 ## <a name="git"></a>Git
-Git en yaygın kullanılan sürüm denetimi sistemi bugün ise ve sürüm denetimi için standart hızla büyüyor. Git bir dağıtılmış sürüm denetim sistemi kodu yerel kopyasını bir tam sürüm denetimi depodur anlamına gelir. Çevrimdışı veya uzaktan çalışmak kolayca bu tam olarak işlevsel yerel depoları olun. Çalışmanızı yerel olarak kaydetmek ve depo kopyanızı sunucudaki kopyayla eşitleme. Bu örneği burada istemcileri kod bir sunucuyla kod yeni sürümlerini oluşturmadan önce eşitlenmelidir merkezi sürüm denetimi farklıdır.
+Git, günümüzde en yaygın şekilde kullanılan sürüm denetimi sistemi olan ve standart sürüm denetimi için hızla büyüyor. Yerel kod kopyanızın eksiksiz sürüm denetimi deposu olduğu anlamına gelen bir dağıtılmış sürüm denetim sistemi Git var. Bu tam işlevli yerel depolar, çevrimdışı veya uzaktan çalışmayı kolaydır olun. Çalışmanızı yerel olarak işleyin ve ardından depo kopyanızı sunucudaki kopyayla eşitleyin. Bu paradigma, burada istemciler kodu bir sunucuyla yeni kod sürümleri oluşturmadan önce eşitlemelidir merkezi sürüm denetiminden farklıdır.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -74,7 +74,7 @@ Git en yaygın kullanılan sürüm denetimi sistemi bugün ise ve sürüm deneti
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Var olan bir Git deposuna kopyalama</h3>
+                        <h3>Mevcut bir Git deposunu kopyalayın</h3>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@ Team Foundation Sürüm Denetimi (TFVC) merkezi sürüm denetim sistemidir. Gene
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>TFVC'yi öğrenin</h3>
+                        <h3>TFVC öğrenin</h3>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ Team Foundation Sürüm Denetimi (TFVC) merkezi sürüm denetim sistemidir. Gene
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio'da TFVC'yi kullanmaya başlama</h3>
+                        <h3>Visual Studio'da TFVC ile çalışmaya başlama</h3>
                     </div>
                 </div>
             </div>
@@ -147,6 +147,6 @@ Team Foundation Sürüm Denetimi (TFVC) merkezi sürüm denetim sistemidir. Gene
 
 ## <a name="resources"></a>Kaynaklar
 
-- [Pro Git rehberi](https://git-scm.com/book/en/v2)
-- [Git geçişinizi planlama](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
-- [TFVC'yi geçirmek için Git](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)
+- [Pro Git kitabı](https://git-scm.com/book/en/v2)
+- [Git için geçişiniz planlama](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
+- [TFVC'den Git'e geçme](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)

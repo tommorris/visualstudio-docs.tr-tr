@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Roslyn çözümleyicilerini yapılandırma ve kullanma
+title: Roslyn çözümleyicilerini yapılandırma ve kullanma
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204160"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512177"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Yapılandırma ve Roslyn çözümleyicisi kuralları kullanma
 
@@ -141,6 +141,31 @@ Bir veya daha çok tanılamadan gizleyebilirsiniz **hata listesi** bastırmak i�
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>Komut satırı kullanımı
+
+Komut satırında projenizi yapılandırdığınızda, aşağıdaki koşullar karşılandığında kural ihlalleri oluşturma çıktısında görüntülenir:
+
+- Çözümleyiciler, bir VSIX uzantısı değil de, bir Nuget paketi olarak yüklenir.
+
+- Bir veya daha fazla kural projenin kodda ihlal.
+
+- [Önem derecesi](#rule-severity) ihlal edilen kuralını ayarlandığından **uyarı**, bu durumda ihlalleri, derleme başarısız olmasına neden olmaz veya **hata**, bu durumda ihlalleri derleme başarısız olmasına neden.
+
+Kural ihlallerinin gösterilip gösterilmeyeceğini yapı çıkış ayrıntı etkilemez. Bile **sessiz** ayrıntı düzeyi, kural ihlalleri oluşturma çıktısında görüntülenir.
+
+> [!TIP]
+> Statik Kod Analizi ile komut satırı çalıştırma için alışkın değilseniz *FxCopCmd.exe* veya msbuild ile **RunCodeAnalysis** bayrak, Roslyn çözümleyicileriyle Bunu yapmak nasıl aşağıda verilmiştir.
+
+Msbuild kullanarak proje oluşturduğunuzda komut satırında Çözümleyicisi ihlalleri görmek için şunun gibi bir komut çalıştırın:
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+Aşağıdaki görüntüde Çözümleyicisi Kuralı ihlali içeren bir proje oluşturma komut satırı derleme çıktı gösterilmektedir:
+
+![MSBuild çıkışıyla kuralı ihlali](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da yerel bir değişken tanıtır
+title: Visual Studio'da bir yerel değişken ekleme
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05cf2d99f88fcf6d43674d837d62f2e6053470a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950471"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511007"
 ---
-# <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio'da yerel bir değişken tanıtır
+# <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio'da bir yerel değişken ekleme
 
 Bu kod oluşturma için geçerlidir:
 
@@ -24,17 +24,17 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen var olan bir ifade değiştirmek için yerel bir değişken oluşturmanıza olanak sağlar.
+**Ne:** hemen var olan bir ifade değiştirmek için bir yerel değişken oluşturmanıza olanak tanır.
 
-**Ne zaman:** yerel bir değişkende olsaydı, kolayca daha sonra yeniden koduna sahip.
+**Ne zaman:** yerel bir değişkende olsaydı, kolayca daha sonra yeniden kullanılabilen kodlarla koda sahip.
 
-**Neden:** kopyalayın ve yerel değişken throughought kullanın, bir yerel değişkende sonucu depolamak ve bir kez işlemi gerçekleştirmek daha iyi ancak kodu çeşitli yerlerde kullanmak için birden çok kez yapıştırın.
+**Neden:** kopyalayın ve sonra işlemi gerçekleştirmek, sonucu yerel bir değişkende depolar ve yerel bir değişken boyunca kullanmanız daha iyi ancak kodu çeşitli konumlarda kullanmak için birden çok kez yapıştırın.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
-1. Yeni yerel bir değişkene atamak istediğiniz ifade vurgulayın.
+1. Yeni bir yerel değişkene atamak istediğiniz ifade vurgulayın.
 
-   - C# ' TA:
+   - C# İÇİN:
 
     ![Vurgulanmış kodu C#](media/local-highlight-cs.png)
 
@@ -45,30 +45,30 @@ Bu kod oluşturma için geçerlidir:
 1. Ardından, aşağıdakilerden birini yapın:
 
    - **Klavye**
-     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
+     - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
-     - Sağ tıklatıp **hızlı Eylemler ve yapan yeniden düzenlemeler** menüsü.
-     - &nbsp; ![Ampul](media/bulb-cs.png) metin imleci kırmızı dalgalı satırıyla açıksa sol kenar boşluğunda görüntülenen simgesine.
+     - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+     - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise, sol kenar boşluğunda görünür simge.
 
-   ![Yerel Önizleme tanıtır](media/local-preview-cs.png)
+   ![Yerel Önizleme Ekle](media/local-preview-cs.png)
 
-1. Seçin **(tüm oluşumları için) yerel tanıtmak '*ifade*'** açılır menüsünden.
+1. Seçin **(tüm örnekleri için) bir yerel değişken Ekle '*ifade*'** aşağı açılan menüden.
 
    > [!TIP]
-   > Kullanım **Önizleme değişiklikleri** önizleme penceresinin altındaki bağlantıyı [tüm değişiklikleri görmek için](../../ide/preview-changes.md) , oluşturulacak seçiminizi yaptıktan önce.
+   > Kullanım **değişiklik önizlemesi** Önizleme pencerenin alt kısmındaki bağlantı [tüm değişiklikleri görmek için](../../ide/preview-changes.md) , oluşturulacak, seçim yapmadan önce.
 
-   Kendi kullanımdan çıkarımı yapılan tür yerel değişken oluşturulur. Yeni yerel değişken yeni bir ad verin.
+   Yerel değişken, kullanımdan çıkarılan türü ile oluşturulur. Yeni yerel değişkeni, yeni bir ad verin.
 
-   - C# ' TA:
+   - C# İÇİN:
 
-      ![Uygulama arabirimi sonuç C#](media/local-result-cs.png)
+      ![C# arabirimi sonucu uygulayın](media/local-result-cs.png)
 
    - Visual Basic:
 
-      ![Uygulama arabirimi sonuç VB](media/local-result-vb.png)
+      ![Uygulama arabirimi sonucu VB](media/local-result-vb.png)
 
    > [!NOTE]
-   > Kullanabileceğiniz **.. olan örnek...**  her seçili ifadesi, yalnızca özellikle vurgulanmış bir örneğini değiştirmek için menü seçeneği.
+   > Kullanabileceğiniz **.. .all tekrarlarını...**  menü seçeneğini seçili ifadesi, yalnızca özellikle vurgulanmış bir her örneğini değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

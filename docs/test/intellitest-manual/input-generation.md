@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341889"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511658"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Giriş generatation kullanılarak dinamik sembolik yürütme
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Dinamik sembolik yürütme kullanarak giriş oluşturma
 
 Intellitest oluşturur için girişler [parametreli birim testleri](test-generation.md#parameterized-unit-testing) programı dal koşulları analiz tarafından. Test girdileri olup programın yeni dal oluşturma davranışları tetikleyebilir göre seçilir. Analiz artımlı bir işlemdir. Bir koşul iyileştirir **s: ben -> {true, false}** giriş parametrelerini resmi test **miyim**. **q** Intellitest zaten gözlemlenen davranışların kümesini temsil eder. Başlangıçta **q: = false**, bu yana hiçbir şey henüz gözlenmiştir.
 
@@ -59,7 +59,7 @@ Intellitest kullanan [Z3](https://github.com/Z3Prover/z3/wiki) kısıtlama Çöz
 Bir yan etkisi olarak izleme çalışma zamanının, Intellitest dinamik kod kapsamı verilerini toplar. Bu adlandırılır *dinamik* Intellitest yürütülen kod hakkında bildiğinden, başka bir kapsamı araç normalde yaptığınız gibi bu nedenle, mutlak değerler kapsam için aynı şekilde veremez. 
 
 Intellitest 5/10 temel taşı olarak dinamik kapsam bildirdiğinde, örneğin, on dışında beş blokları, burada ele alındığını yani analiz tarafından şimdiye ulaştınız tüm yöntemleri bloklarında toplam sayısı (mevcut olan tüm yöntemleri aksine bir test edilen erleme) 10'dur.
-Daha sonra analiz, daha fazla erişilebilir yöntemleri olarak bulunan, hem pay (5'te bu eaxmple) ve (10) paydası artırabilir.
+Daha sonra analiz, daha fazla erişilebilir yöntemleri olarak bulunan, hem pay (Bu örnekte 5) ve (10) paydası artırabilir.
 
 <a name="integers-and-floats"></a>
 ## <a name="integers-and-floats"></a>Tamsayıları ve float

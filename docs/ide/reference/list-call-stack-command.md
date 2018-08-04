@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e04bb46d167478b85f4b6f8b4d6df903bd46e8b7
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: e809af75f0a4a47da6af30a3d93748401ca4609d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704622"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512011"
 ---
 # <a name="list-call-stack-command"></a>Çağrı Yığınını Listele Komutu
-Geçerli çağrı yığını görüntüler.
+Geçerli çağrı yığınını görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,11 +39,11 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  `index` İsteğe bağlı. Geçerli yığın çerçevesini ayarlar ve hiçbir çıktı görüntüler.
 
 ## <a name="switches"></a>Anahtarlar
- Her anahtar, formun tamamını veya bir kısa süreli kullanılarak çağrılabilir.
+ Her anahtar, formun tamamını veya bir kısa biçim kullanılarak çağrılabilir.
 
  / Sayısı:`number` [veya] / c:`number`
 
- İsteğe bağlı. Çağrı yığınları görüntülenecek maksimum sayısı. Sınırsız varsayılan değerdir.
+ İsteğe bağlı. Çağrı yığınlarını görüntülemek için en fazla sayısı. Varsayılan değer büyük/küçük harf sınırsızdır.
 
  / ShowTypes:`yes` &#124; `no` [veya] / t:`yes`&#124;`no`
 
@@ -53,17 +53,17 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  İsteğe bağlı. Parametre adları görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
 
- / ShowValues:`yes` &#124; `no` [veya] v:`yes`&#124;`no`
+ / ShowValues:`yes` &#124; `no` [veya] / v:`yes`&#124;`no`
 
- İsteğe bağlı. Parametre değerleri görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
+ İsteğe bağlı. Parametre değerlerini görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
 
  / ShowModule:`yes` &#124; `no` [veya] / m:`yes`&#124;`no`
 
  İsteğe bağlı. Modül adı görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
 
- / ShowLineOffset:`yes` &#124; `no` [veya] /#:`yes`&#124;`no`
+ / ShowLineOffset:`yes` &#124; `no` [veya] / #:`yes`&#124;`no`
 
- İsteğe bağlı. Satır uzaklığı görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `no`.
+ İsteğe bağlı. Satır sapması görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `no`.
 
  / ShowByteOffset:`yes` &#124; `no` [veya] / b:`yes`&#124;`no`
 
@@ -75,32 +75,32 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  / IncludeCallsAcrossThreads:`yes` &#124; `no` [veya] / i:`yes`&#124;`no`
 
- İsteğe bağlı. Çağrıları ya da diğer iş parçacıklarından dahil edilip edilmeyeceğini belirtir. Varsayılan değer `no`.
+ İsteğe bağlı. Çağrıları için veya diğer iş parçacıklarından eklenip eklenmeyeceğini belirtir. Varsayılan değer `no`.
 
  / ShowExternalCode:`yes`&#124;`no`
 
- İsteğe bağlı. Çağrı yığını için sadece kendi kodumu görüntülenip görüntülenmeyeceğini belirtir. Sadece kendi kodumu kapalıyken, tüm kullanıcı olmayan kodu görüntülenir. Sadece kendi kodumu açık olduğunda, kullanıcı olmayan kod olarak gösterilen `[external]` çağrı yığını çıkışı.
+ İsteğe bağlı. Çağrı yığını için yalnızca kendi kodum görüntülenip görüntülenmeyeceğini belirtir. Tüm kullanıcı olmayan kod, yalnızca kendi kodum kapalı olduğunda görüntülenir. Yalnızca kendi kodum etkin olduğunda, kullanıcı dışı kod olarak görüntülenen `[external]` çağrı yığını çıktı.
 
  İş parçacığı:`n`
 
- İsteğe bağlı. İş parçacığı için çağrı yığını görüntüler `n`. Hiçbir iş parçacığı belirtilirse, diplays geçerli iş parçacığı için çağrı yığını.
+ İsteğe bağlı. İş parçacığı için çağrı yığınını görüntüler `n`. İş parçacığı belirtilmemişse, geçerli iş parçacığı için çağrı yığınını görüntüler.
 
 ## <a name="remarks"></a>Açıklamalar
- Bağımsız değişken veya anahtarları yapılan değişiklikler için bu komutun gelecekteki etkinleştirmeleri uygulanır. Debug.ListCallStackby kendisini dağıttığınız tüm çağrı yığını görüntüler. Bir dizin örneğin belirtirseniz,
+ Bu komutun gelecekteki çağrılarına bağımsız değişkenler veya anahtarlarının yapılan değişiklikler uygulanır. Debug.ListCallStackby kendisini dağıttığınız bütün çağrı yığını görüntülenir. Örneğin bir dizin belirtmeniz durumunda
 
 ```cmd
 Debug.ListCallStack 2
 ```
 
- ardından bu çerçevede (Bu durumda, ikinci çerçevesi) için geçerli yığın çerçevesini ayarlayın.
+ Geçerli yığın çerçevesi (Bu durumda, ikinci çerçevesi) bu çerçevesine ayarlayın daha sonra.
 
- Ayrıca, önceden tanımlanmış diğer adı kullanarak bu komutu yazabilirsiniz kb. Örneğin, girin
+ Ayrıca, önceden tanımlanmış diğer adının, bu komutu yazabilirsiniz kb. Örneğin, girin
 
 ```cmd
 kb 2
 ```
 
- Geçerli yığın çerçevesi ikinci çerçevesi ayarlamak için.
+ Geçerli yığın çerçevesi ikinci çerçeveye ayarlamak için.
 
 ## <a name="example"></a>Örnek
 

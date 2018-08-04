@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079154"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511241"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Hızlı Başlangıç: Kod Düzenleyicisi'ni kullanın
 
@@ -157,14 +157,21 @@ Hiç kimse ilk kez kod sağ alır ve bir değişkeni veya yöntemin adını değ
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu Hızlı Başlangıç için Visual Studio Düzenleyicisi tamamladınız. Ardından, diğer hızlı Başlangıçlar Visual Studio geliştirme ortamı için bazılarını gibi deneyebilecekleriniz [hızlı başlangıç: projeler ve çözümler](../ide/quickstart-projects-solutions.md) veya [hızlı başlangıç: Visual Studio kişiselleştirme](../ide/quickstart-personalize-the-ide.md), hakkında daha fazla bilgi arayın yolları [koda gitmek](../ide/navigating-code.md), veya en incelemiştik özellikler hakkında daha fazla bilgi için bağlantıları gözden geçirin. Aksi takdirde, mutlu kodlama!
+Bu Hızlı Başlangıç için Visual Studio Düzenleyicisi tamamladınız. Ardından, diğer hızlı Başlangıçlar Visual Studio geliştirme ortamı için bazılarını deneyebilirsiniz.
+
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: Visual Studio'yu kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
-- [Hızlı Başlangıç: Visual Studio'yu kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
-- [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
 - [Kod parçacıkları](../ide/code-snippets.md)
+- [Kod gidin](../ide/navigating-code.md)
 - [Anahat Oluşturma](../ide/outlining.md)
 - [Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)
 - [Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)

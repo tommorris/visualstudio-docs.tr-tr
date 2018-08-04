@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781623"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511607"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Hızlı Başlangıç: Varolan koddan bir Python projesi oluşturma
 
@@ -27,7 +27,7 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. İsterseniz, Ctrl + F5'e basarak veya seçerek programı çalıştırın **hata ayıklama > hata ayıklama olmadan Başlat**.
+İsterseniz, tuşlarına basarak programı çalıştırın **Ctrl**+**F5** veya seçerek **hata ayıklama** > **ayıklamadanBaşla**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -36,6 +36,6 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [El ile var olan bir Python yorumlayıcısı tanımlayan](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Visual Studio 2015'te ve daha önce Python desteğini yükleme](installing-python-support-in-visual-studio.md).
-- [Yükleme konumlarını](installing-python-support-in-visual-studio.md#install-locations).
+- [El ile var olan bir Python yorumlayıcısı tanımlayın](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Visual Studio 2015'te ve daha önce Python desteğini yükleme](installing-python-support-in-visual-studio.md)
+- [Yükleme konumları](installing-python-support-in-visual-studio.md#install-locations)

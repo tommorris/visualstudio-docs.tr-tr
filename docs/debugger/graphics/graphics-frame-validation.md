@@ -12,29 +12,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9732cd3f3440448e5096e71f838d8ebcf20fb13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fee7e1db2716c2c7fedba41970ccfb0471e3d230
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473965"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511301"
 ---
 # <a name="graphics-frame-validation"></a>Grafik Çerçeve doğrulama
-<!-- VERSIONLESS -->
-Visual Studio 2017 ve daha fazla destek **çerçeve doğrulama** aracı.  Çerçeve doğrulama penceresi hataları ve Uyarıları olay listesiyle ilişkilendirilmiş görüntüler.  Bu pencereyi görüntülemek için seçin **Görünüm > Çerçeve doğrulama** menüsü.
+<!-- VERSIONLESS --> Visual Studio 2017 ve daha büyük Destek **çerçeve doğrulama** aracı.  Çerçeve doğrulama penceresi, hataları ve olay listesi ile ilişkili uyarıları görüntüler.  Bu pencereyi görüntülemek için seçin **Görüntüle > Çerçeve doğrulama** menüsü.
 
-![Çerçeve doğrulama](media/gfx_diag_frame_validation.png)
+![Çerçeve Doğrulama](media/gfx_diag_frame_validation.png)
 
-Tıklatın **doğrulama çalışması** analiz başlatmak için sol üst köşede düğmesini.  Çerçeve karmaşıklığına bağlı olarak tamamlanması birkaç dakika sürebilir.  İki kaynak bileşiminden İşte görüntülenen verileri: iletileri bu D3D kendisini ne zaman yayar [SDK katmanları](https://msdn.microsoft.com/library/windows/desktop/ff476881(v=vs.85).aspx) etkin ve izleme aracın kendi iç durumundan toplanan verileri. Tamamlandıktan sonra birkaç veri sütunlarının görürsünüz:
+Tıklayın **doğrulama çalışması** analiz başlatmak için sol üst köşedeki düğmesini.  Bu çerçeve karmaşıklığına bağlı olarak tamamlanması birkaç dakika sürebilir.  İki farklı kaynaktan gelen bir birleşimini aşağıdadır görüntülenen verileri: iletileri bu D3D kendisini ne zaman yayar [SDK katmanları](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) etkinleştirilmiş ve İzleme Aracı'nın kendi iç durumu toplanan verileri. İşlem tamamlandıktan sonra birkaç veri sütunlarının görürsünüz:
 
 **Sütun**|**Açıklama**
 ---|---
 Olay Kimliği | İçindeki bir girdiye eşleştiren kimliği [olay listesi](graphics-event-list.md) penceresi.
-Önem Derecesi | Bozulması, hata, uyarı, bilgi veya ileti.
-Kategori | Uygulama tanımlı, çeşitli, başlatma, temizleme, derleme, durum oluşturma, durum ayarı, durum alınıyor, yürütme, kaynak işleme, gölgelendirici, gereksiz ve kullanılmayan.
+Önem Derecesi | Bozulma, hata, uyarı, bilgi veya ileti.
+Kategori | Tanımlanmış, çeşitli uygulama başlatma, temizleme, derleme, durum oluşturma, durumu ayarı, durum alma, yürütme, kaynak düzenlemesi, gölgelendirici, gereksiz ve kullanılmayan.
 İleti | Olayla ilişkili ileti.
 Olay | Hata veya uyarı ile ilişkili olay.
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Grafik tanılama (hata ayıklama DirectX grafik)](visual-studio-graphics-diagnostics.md)   
+[Grafik tanılama (DirectX grafik hata ayıklama)](visual-studio-graphics-diagnostics.md)   
 <!-- /VERSIONLESS -->

@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174847"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513126"
 ---
 # <a name="step-2-write-and-run-code"></a>2. adım: Yazma ve kod çalıştırma
 
 **Önceki adımda: [yeni Python projesi oluşturma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Çözüm Gezgini'nde, proje dosyaları, yönettiğiniz olmasına rağmen *Düzenleyicisi* penceredir genellikle birlikte çalıştığınız *içeriği* dosyalarının kaynak kod gibi. Düzenleyici bağlam düzenlediğiniz, programlama dili (dosya uzantısına göre) gibi dosya türünü farkındadır ve teklifler özellikleri uygun söz dizimi renklendirme ve otomatik tamamlama gibi bu dil için IntelliSense kullanma.
+Ancak **Çözüm Gezgini** proje dosyaları, yönettiği yerdir *Düzenleyicisi* penceredir genellikle birlikte çalıştığınız *içeriği* dosyalarının kaynak kod gibi. Düzenleyici bağlam düzenlediğiniz, programlama dili (dosya uzantısına göre) gibi dosya türünü farkındadır ve teklifler özellikleri uygun söz dizimi renklendirme ve otomatik tamamlama gibi bu dil için IntelliSense kullanma.
 
-1. Yeni bir "Python uygulaması" proje oluşturduktan sonra varsayılan boş adlı dosya `PythonApplication1.py` Visual Studio Düzenleyicisi'nde açık.
+1. Yeni bir "Python uygulaması" proje oluşturduktan sonra varsayılan boş adlı dosya *PythonApplication1.py* Visual Studio Düzenleyicisi'nde açık.
 
-1. Düzenleyici'de yazmaya başlayın `print("Hello, Visual Studio")` ve Visual Studio IntelliSense otomatik tamamlama seçenekleri yol boyunca nasıl görüntülendiğine dikkat edin. Anahatları belirlenmiş açılır listede Tab tuşuna bastığınızda, kullanılan varsayılan tamamlama seçeneğidir. Tamamlamalar, en uzun ifadeleri veya tanımlayıcıları söz konusu olduğunda yararlıdır.
+1. Düzenleyici'de yazmaya başlayın `print("Hello, Visual Studio")` ve Visual Studio IntelliSense otomatik tamamlama seçenekleri yol boyunca nasıl görüntülendiğine dikkat edin. Aşağı açılan listede anahatları belirlenmiş seçeneği tuşuna bastığınızda, kullanılan varsayılan tamamlanmadan **sekmesini** anahtarı. Tamamlamalar, en uzun ifadeleri veya tanımlayıcıları söz konusu olduğunda yararlıdır.
 
     ![IntelliSense otomatik tamamlama açılan menüsü](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,11 +45,11 @@ ms.locfileid: "37174847"
     ![IntelliSense söz dizimi renklendirme ve hata vurgulama](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Birinin geliştirme ortamı çok kişisel bir konudur çünkü Visual Studio, Visual Studio'nun görünümünü ve davranışını üzerinde tam denetim sağlar. Seçin **Araçlar > Seçenekler** menü ayarları keşfedin ve komut **ortam** ve **metin düzenleyici** sekmeler. Varsayılan olarak yalnızca sınırlı sayıda seçenekleri görebilirsiniz; her programlama dili için tüm seçenekleri görmek için seçin **tüm ayarları göster** iletişim kutusunun alt kısmındaki. 
+    > Birinin geliştirme ortamı çok kişisel bir konudur çünkü Visual Studio, Visual Studio'nun görünümünü ve davranışını üzerinde tam denetim sağlar. Seçin **Araçları** > **seçenekleri** menü komutu ve ayarları keşfedin **ortam** ve **metin düzenleyici** Sekmeler. Varsayılan olarak yalnızca sınırlı sayıda seçenekleri görebilirsiniz; her programlama dili için tüm seçenekleri görmek için seçin **tüm ayarları göster** iletişim kutusunun alt kısmındaki. 
 
-1. Yazılan bu noktada Ctrl + F5'e basarak veya seçerek kodu çalıştırmak **hata ayıklama > hata ayıklama olmadan Başlat** menü öğesi. Visual Studio, kodunuzdaki hataları hala olup olmadığını sizi uyarır.
+1. Kodu, yazılan bu noktada tuşuna basarak çalıştırın **Ctrl**+**F5** veya seçerek **hata ayıklama** > **hata ayıklama olmadan Başlat**  menü öğesi. Visual Studio, kodunuzdaki hataları hala olup olmadığını sizi uyarır.
 
-1. Çalıştırıldığında programın sonuçlarını görüntüleyen bir konsol penceresi görünür alacağı bir Python yorumlayıcısı ile çalıştırın `PythonApplication1.py` komut satırından. Pencereyi kapatın ve Visual Studio Düzenleyicisi'ne dönmek için bir tuşa basın.
+1. Çalıştırıldığında programın sonuçlarını görüntüleyen bir konsol penceresi görünür alacağı bir Python yorumlayıcısı ile çalıştırın *PythonApplication1.py* komut satırından. Pencereyi kapatın ve Visual Studio Düzenleyicisi'ne dönmek için bir tuşa basın.
 
     ![İlk çalıştırma programının çıktısı](media/vs-getting-started-python-07-output.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "37174847"
     ```
 
     > [!Tip]
-    > Sözcükler, sözcük başlangıcında harf bölümlerini eşleşen yazın ve hatta karakter atlandı tamamlamaları alt dizeler ile çalışır. Bkz: [kod - tamamlamaları düzenleme](editing-python-code-in-visual-studio.md#completions) Ayrıntılar için.
+    > Sözcükler, sözcük başlangıcında harf bölümlerini eşleşen yazın ve hatta karakter atlandı tamamlamaları alt dizeler ile çalışır. Bkz: [kod - tamamlamaları Düzenle](editing-python-code-in-visual-studio.md#completions) Ayrıntılar için.
 
 1. 360 derece Kosinüs değerlerini yazdırmak için biraz daha fazla kod ekleyin:
 
@@ -84,7 +84,7 @@ ms.locfileid: "37174847"
         print(cos(radians(i)))
     ```
 
-1. Programı Ctrl + F5'e yeniden çalıştırın veya **hata ayıklama > hata ayıklama olmadan Başlat**. İşiniz bittiğinde çıktı penceresini kapatın.
+1. Programı yeniden çalıştırın **Ctrl**+**F5** veya **hata ayıklama** > **hata ayıklama olmadan Başlat**. İşiniz bittiğinde çıktı penceresini kapatın.
 
 ## <a name="next-step"></a>Sonraki adım
 

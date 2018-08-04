@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081432"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512154"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Başkalarının dağıtmak ClickOnce uygulamaları oluşturma
 Uygulamaları dağıtmak ClickOnce dağıtımı oluşturan tüm geliştiricilerin planlayın. Çoğu yalnızca ClickOnce kullanarak uygulama paketini ve ardından dosyaları kapatma gibi büyük bir kuruluşa bir müşteriye el. Müşteri, bir alt ağı üzerinde uygulamayı barındırmak için sorumlu olur. Bu konu, .NET Framework sürüm 3.5 önceki sürümlerinde bu tür dağıtımlarda devralınan sorunlardan bazılarını açıklar. Ardından, .NET Framework 3. 5'yeni "bildirimi için güven kullan" özelliğini kullanarak sağlanan yeni bir çözüm açıklanmaktadır. Son olarak, ClickOnce dağıtımları için yine de .NET Framework'ün eski sürümlerini kullanan müşteriler oluşturmak için önerilen stratejiler ile sonlanır.  
@@ -54,7 +54,7 @@ Uygulamaları dağıtmak ClickOnce dağıtımı oluşturan tüm geliştiricileri
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Müşteri dağıtımları için güven uygulama bildirimi kullanarak oluşturma  
  .NET Framework 3. 5'te, geliştiricilere ve müşterilere bildirimleri nasıl imzalanıp imzalanmayacağını, senaryosu için yeni bir çözüm sağlayan yeni bir özellik içerir. ClickOnce Uygulama bildirimi adlı yeni bir öğe destekler `<useManifestForTrust>` uygulama bildiriminin dijital imza ne güven kararları için kullanılması gereken olduğunu belirtmek bir geliştirici sağlar. Geliştirici ClickOnce paketleme araçlarını kullanan — gibi *Mage.exe*, *MageUI.exe*ve Visual Studio — bu öğe uygulama bildiriminde dahil olarak, her iki Yayımcı adı eklemek ve uygulama bildiriminde adı.  
   
- Kullanırken `<useManifestForTrust>`, dağıtım bildirimini bir sertifika yetkilisi tarafından verilen Authenticode sertifikası ile imzalanması gerekmez. Bunun yerine, otomatik olarak imzalanan bir sertifika bilinen ile imzalanabilir. Kendinden imzalı bir sertifika, standart .NET Framework SDK araçlarını kullanarak, müşteri veya geliştirici tarafından oluşturulan ve ardından standart ClickOnce dağıtım araçlarını kullanarak dağıtım bildirimine uygulanır. Daha fazla bilgi için [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Kullanırken `<useManifestForTrust>`, dağıtım bildirimini bir sertifika yetkilisi tarafından verilen Authenticode sertifikası ile imzalanması gerekmez. Bunun yerine, otomatik olarak imzalanan bir sertifika bilinen ile imzalanabilir. Kendinden imzalı bir sertifika, standart .NET Framework SDK araçlarını kullanarak, müşteri veya geliştirici tarafından oluşturulan ve ardından standart ClickOnce dağıtım araçlarını kullanarak dağıtım bildirimine uygulanır. Daha fazla bilgi için [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
  Dağıtım bildirimi için otomatik olarak imzalanan bir sertifika kullanarak çeşitli avantajlar sunar. İhtiyacını ortadan alın veya kendi Authenticode sertifikası oluşturmak üzere müşteri tarafından `<useManifestForTrust>` geliştiricinin aplikaci marka kendi kimlik korumasına izin verirken, müşteri dağıtımı kolaylaştırır. Sonuç daha güvenlidir ve benzersiz uygulama kimlikleri olan imzalı dağıtımları kümesidir. Bu, aynı uygulamanın birden çok müşteriyi dağıtması oluşabilecek olası çakışmaları ortadan kaldırır.  
   

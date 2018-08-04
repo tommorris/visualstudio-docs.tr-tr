@@ -18,22 +18,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1fb379322e44427384eb47811c585b00716f32
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952951"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513539"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Komut Diğer Adları
 
-Komut diğer adları, bir komut çalıştırmak istediğinizde daha az karakter yazın olanak tanır. Diğer adlar dikkate girin **Bul/komut** kutusunu veya **komutu** penceresi. Örneğin, girmek yerine `>File.OpenFile` görüntülemek için **açık dosya** iletişim kutusunda, önceden tanımlanmış diğer kullanabilirsiniz `>of`.
+Komut diğer adları daha az karakter, bir komut çalıştırmak istediğinizde yazmanıza olanak sağlar. Diğer adlar içine girdiğiniz **Bul/komut** kutusu veya **komut** penceresi. Örneğin, girmek yerine `>File.OpenFile` görüntülemek için **Dosya Aç** iletişim kutusu, önceden tanımlanmış diğer kullanabilirsiniz `>of`.
 
-Tür `alias` içinde **komutu** geçerli diğer adlar ve tanımları listesini görüntülemek için penceresi. Tür `>cls` içeriğini temizlemek için **komutu** penceresi. Belirli bir komut için bir diğer ad görmek istiyorsanız, yazın `alias <command name>`.
+Tür `alias` içinde **komut** geçerli diğer adlar ve tanımlarının listesini görüntülemek için pencere. Tür `>cls` içeriğini temizlemek için **komut** penceresi. Belirli bir komut için bir diğer ad görmek istiyorsanız, yazın `alias <command name>`.
 
-Visual Studio komutları biri için kendi diğer adı (veya ile bağımsız değişkenler olmadan) kolayca oluşturabilirsiniz. Örneğin, diğer ad sözdizimi `File.NewFile MyFile.txt` olan `alias MyAlias File.NewFile MyFile.txt`. Diğer adlarıyla birini silin `alias <alias name> /delete`
+Bir Visual Studio komutları için kendi bir diğer ad (ile veya bağımsız değişkenler olmadan) kolayca oluşturabilirsiniz. Örneğin, diğer ad kullanımı için söz dizimi `File.NewFile MyFile.txt` olduğu `alias MyAlias File.NewFile MyFile.txt`. Diğer adlar ile silebilirsiniz `alias <alias name> /delete`
 
-Aşağıdaki tabloda önceden tanımlanmış Visual Studio komut diğer adları listesini içerir. Bazı komut adları birden fazla önceden tanımlanmış diğer adı vardır. Komut adlarının doğru sözdizimi, bağımsız değişkenleri ve bu komutları anahtarları açıklayan ayrıntılı konularını görüntülemek için aşağıdaki bağlantıları tıklatın.
+Aşağıdaki tabloda, önceden tanımlanmış Visual Studio komut diğer adları listesini içerir. Bazı komut adları birden fazla önceden tanımlanmış diğer adı vardır. Komut adlarının doğru sözdizimi, bağımsız değişkenleri ve bu komutlara anahtarları açıklayan ayrıntılı konulara görüntülemek için aşağıdaki bağlantıları tıklatın.
 
 |Komut adı|Alias|Tam adı|
 |------------------|-----------|-------------------|
@@ -41,42 +41,42 @@ Aşağıdaki tabloda önceden tanımlanmış Visual Studio komut diğer adları 
 |[Hızlı Bakış Komutu](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Yeni Proje Ekle|AddProj|File.AddNewProject|
 |[Diğer Ad Komutu](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
-|Otomatik değişkenler penceresi|Otomatik değişkenler|Debug.Autos|
-|Kesme Noktaları penceresi|bl'yi denetlemeye|Debug.Breakpoints|
-|Kesme|BP|Debug.ToggleBreakPoint|
+|Otomatik değişkenler penceresi|İfade ve değişkenler|Debug.Autos|
+|Kesme Noktaları penceresi|Bl|Debug.Breakpoints|
+|İki durumlu kesme noktası|BP|Debug.ToggleBreakPoint|
 |Çağrı Yığını penceresi|Çağrı yığını|Debug.CallStack|
-|Yer işaretleri temizleyin|ClearBook|Edit.ClearBookmarks|
+|Yer işaretlerini Temizle|ClearBook|Edit.ClearBookmarks|
 |Close|Close|File.Close|
 |Tüm belgeleri kapatma|CloseAll|Window.CloseAllDocuments|
 |Tümünü temizle|CLS|Edit.ClearAll|
-|Komut modu|Cmd|View.CommandWindow|
-|Görünümü Kodu|kod|View.ViewCode|
+|Komut modu|cmd|View.CommandWindow|
+|Kodu Görüntüle|kod|View.ViewCode|
 |[Belleği Listele Komutu](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
-|[Liste belleği komutu](../../ide/reference/list-memory-command.md) ANSI olarak|da|Debug.ListMemory /Ansi|
-|[Liste belleği komutu](../../ide/reference/list-memory-command.md) bir baytlık biçimi|DB|Debug.ListMemory /Format:OneByte|
-|[Liste belleği komutu](../../ide/reference/list-memory-command.md) ANSI ile dört bayt olarak biçimlendirme|DC|Debug.ListMemory /Format:FourBytes /Ansi|
-|[Liste belleği komutu](../../ide/reference/list-memory-command.md) dört baytlık biçimi|Ekle|Debug.ListMemory /Format:FourBytes|
-|BOL'ye Sil|DelBOL|Edit.DeleteToBOL|
-|EOL için Sil|DelEOL|Edit.DeleteToEOL|
-|Yatay boşluk Sil|DelHSp|Edit.DeleteHorizontalWhitespace|
+|[Bellek komut listesi](../../ide/reference/list-memory-command.md) ANSI olarak|da|Debug.ListMemory /Ansi|
+|[Bellek komut listesi](../../ide/reference/list-memory-command.md) tek baytlık biçimi|DB|Debug.ListMemory /Format:OneByte|
+|[Bellek komut listesi](../../ide/reference/list-memory-command.md) ANSI ile dört bayt olarak Biçimlendir|DC|Debug.ListMemory /Format:FourBytes /Ansi|
+|[Bellek komut listesi](../../ide/reference/list-memory-command.md) dört bayt biçimi|Ekle|Debug.ListMemory /Format:FourBytes|
+|BOL'a kadar Sil|DelBOL|Edit.DeleteToBOL|
+|EOL'ye kadar Sil|DelEOL|Edit.DeleteToEOL|
+|Yatay boşluğu Sil|DelHSp|Edit.DeleteHorizontalWhitespace|
 |Görünüm Tasarımcısı|tasarımcı|View.ViewDesigner|
-|[Liste belleği komutu](../../ide/reference/list-memory-command.md) Float biçimi|DF|Debug.ListMemory/Format:Float|
+|[Bellek komut listesi](../../ide/reference/list-memory-command.md) kayan noktalı sayı biçimi|SD|Debug.ListMemory/Format:Float|
 |Ayrıştırma penceresi|dısasm|Debug.Disassembly|
-|[Liste belleği komutu](../../ide/reference/list-memory-command.md) sekiz baytlık biçimi|dq|Debug.ListMemory /Format:EightBytes|
-|[Liste belleği komutu](../../ide/reference/list-memory-command.md) Unicode olarak|DU|Debug.ListMemory / Unicode|
-|[Deyimi Değerlendir Komutu](../../ide/reference/evaluate-statement-command.md)|Değerlendirme sürümü|Debug.EvaluateStatement|
+|[Bellek komut listesi](../../ide/reference/list-memory-command.md) sekiz bayt biçimi|dq|Debug.ListMemory /Format:EightBytes|
+|[Bellek komut listesi](../../ide/reference/list-memory-command.md) Unicode|DU|Debug.ListMemory / Unicode|
+|[Deyimi Değerlendir Komutu](../../ide/reference/evaluate-statement-command.md)|Değerlendirme|Debug.EvaluateStatement|
 |Çık|Çık|File.Exit|
-|Biçim Seçimi|biçim|Edit.FormatSelection|
+|Seçimi Biçimlendir|biçim|Edit.FormatSelection|
 |Tam ekran|Tam ekran|View.FullScreen|
 |[Başlat Komutu](../../ide/reference/start-command.md)|G|Debug.Start|
 |[Git Komutu](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
-|Ayraca gidin|GotoBrace|Edit.GotoBrace|
+|Küme ayracına Git|GotoBrace|Edit.GotoBrace|
 |F1Help|Yardım|Help.F1Help|
 |Anlık mod|immed|Tools.ImmediateMode|
-|Dosya metin olarak Ekle|Insertfıle|Edit.InsertFileAsText|
+|Dosyayı metin olarak Ekle|Insertfile|Edit.InsertFileAsText|
 |[Çağrı Yığınını Listele Komutu](../../ide/reference/list-call-stack-command.md)|KB|Debug.ListCallStack|
-|Küçük harf olun|LCase|Edit.MakeLowercase|
-|Satır kesme|LineCut|Edit.LineCut|
+|Küçük harfe çevir|LCase|Edit.MakeLowercase|
+|Satırı Kes|LineCut|Edit.LineCut|
 |Satırı Sil|LineDel|Edit.LineDelete|
 |Üyeleri Listeleme|ListMembers|Edit.ListMembers|
 |Yerel öğeler penceresi|Yerel öğeler|Debug.Locals|
@@ -93,26 +93,26 @@ Aşağıdaki tabloda önceden tanımlanmış Visual Studio komut diğer adları 
 |Yeni Proje|NP NewProj|File.NewProject|
 |[Dosya Aç Komutu](../../ide/reference/open-file-command.md)|Açma|File.OpenFile|
 |[Proje Aç Komutu](../../ide/reference/open-project-command.md)|OP|File.OpenProject|
-|Tanımları/durdurma anahat oluşturma için Daralt|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|
-|Adımlama|P|Debug.StepOver|
+|Tanımları/durdurma anahat oluşturma için Daralt|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
+|Üzerinden adımla|p|Debug.StepOver|
 |Parametre bilgileri|Paramınfo|Edit.ParameterInfo|
-|Dışarı Adım|pr|Debug.StepOut|
+|Dışına adımla|çekme isteği|Debug.StepOut|
 |Önceki Yer İşareti|PrevBook|Edit.PreviousBookmark|
 |Dosya Yazdır|Yazdırma|File.Print|
-|Özellikler Penceresi|özellik|View.PropertiesWindow|
+|Özellikler Penceresi|Özellikler|View.PropertiesWindow|
 |Durdur|q|Debug.StopDebugging|
 |Yinele|Yinele|Edit.Redo|
 |Yazmaçlar penceresi|yazmaçlar|Debug.Registers|
-|İmleci çalıştırın|RTC|Debug.RunToCursor|
+|İmlece kadar Çalıştır|RTC|Debug.RunToCursor|
 |Seçili öğeleri Kaydet|Kaydet|File.SaveSelectedItems|
 |Tümünü Kaydet|SaveAll|File.SaveAll|
 |Farklı Kaydet|Farklı Kaydet|File.SaveSelectedItemsAs|
 |[Kabuk Komutu](../../ide/reference/shell-command.md)|kabuk|Tools.Shell|
-|Dosyalarda Bul Durdur|StopFind|Edit.findınfiles/stop|
-|Bağlantı değiştirme|SwapAnchor|Edit.SwapAnchor|
-|Girme|t|Debug.StepInto|
-|Seçim Sekmelere ayırma|sekmelere ayırma|Edit.TabifySelection|
-|Tasklist penceresi|TaskList|View.TaskList|
+|Dosyalar içinde aramayı Durdur|StopFind|Edit.findınfiles/stop|
+|Yer işaretini değiştir|SwapAnchor|Edit.SwapAnchor|
+|Adımla|t|Debug.StepInto|
+|Seçimi sekmeye Dönüştür|sekmelere ayırma|Edit.TabifySelection|
+|Görev Listesi penceresi|Görev listesi|View.TaskList|
 |İş Parçacıkları penceresi|İş Parçacıkları|Debug.Threads|
 |Yatay Döşe|TileH|Window.TileHorizontally|
 |Dikey Döşe|TileV|Window.TileVertically|
@@ -121,10 +121,10 @@ Aşağıdaki tabloda önceden tanımlanmış Visual Studio komut diğer adları 
 |[Ayrıştırılmış Kodu Listele Komutu](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Büyük Harf Yap|UCase|Edit.MakeUppercase|
 |Geri alma|Geri alma|Edit.Undo|
-|Seçim untabify|Untabify|Edit.UntabifySelection|
+|Seçimin sekmesini Kaldır|Sekmeye dönüştürme|Edit.UntabifySelection|
 |Gözcü penceresi|İzleme|Debug.WatchN|
-|Sözcük kaydırmayı değiştirme|WordWrap|Edit.ToggleWordWrap|
-|Liste işlemleri|&#124;|Debug.ListProcesses|
+|Sözcük kaydırmayı Aç/Kapat|WordWrap|Edit.ToggleWordWrap|
+|Süreçleri Listele|&#124;|Debug.ListProcesses|
 |[İş Parçacıklarını Listele Komutu](../../ide/reference/list-threads-command.md)|~ ~ * k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Ayrıca Bkz.

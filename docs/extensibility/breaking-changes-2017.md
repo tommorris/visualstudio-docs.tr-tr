@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231510"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512259"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlik değişiklikleri
 
@@ -97,7 +97,8 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
   * **HKLM\Software\Microsoft\VisualStudio\{sürüm}**: kayıt defteri anahtarlarını MSI yükleyiciler ve makine başına uzantılar tarafından oluşturuldu.
   * **HKCU\Software\Microsoft\VisualStudio\{sürüm}**: kullanıcıya özel ayarları depolamak için Visual Studio tarafından oluşturulan kayıt defteri anahtarları.
   * **HKCU\Software\Microsoft\VisualStudio\{sürüm} _Config**: kayıt defteri anahtarlarının yanı sıra Visual Studio HKLM anahtar yukarıdaki bir kopyasını birleştirme kaynağı *.pkgdef* uzantıları dosyaları.
-* Kayıt defteri üzerindeki etkiyi azaltmak için Visual Studio artık kullanır [RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx) kayıt defteri anahtarları altında özel ikili dosyaları depolamak için işlev *[VSAPPDATA]\privateregistry.bin*. Visual Studio özel anahtarlar yalnızca çok az sayıda sistem kayıt defterinde kalır.
+* Kayıt defteri üzerindeki etkiyi azaltmak için Visual Studio artık kullanır [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) kayıt defteri anahtarları altında özel ikili dosyaları depolamak için işlev *[VSAPPDATA]\privateregistry.bin*. Visual Studio özel anahtarlar yalnızca çok az sayıda sistem kayıt defterinde kalır.
+
 * Visual Studio işlemi içinde çalışan mevcut kod etkilenmez. Visual Studio, özel kayıt defterine HKCU Visual Studio özel anahtarı altındaki tüm kayıt defteri işlemlerini yönlendirir. Diğer kayıt defteri konumlara yazma ve okuma sistem kayıt defterine kullanmaya devam eder.
 * Dış kod yükleme ve bu dosyayı Visual Studio kayıt defteri girişleri için okuma gerekecektir.
 

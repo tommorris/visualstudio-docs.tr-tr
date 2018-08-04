@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f2fefe4a85d75573d96c7f7584913310bb5d267e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: c0b28ab5310f1be97ecf7b7acbcaa3360b29c480
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409751"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513526"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio'da Python desteğini yükleme
 
@@ -35,7 +35,7 @@ ms.locfileid: "39409751"
 
     ![Python geliştirme iş yüküyle Visual Studio](media/installation-python-workload.png)
 
-1. Python desteği, Visual Studio başlatma tuşuna hızlı bir şekilde test etmek için Alt + t Python etkileşimli penceresini açın ve girin `2+2`. Çıkışı görmüyorsanız `4`, adımlarınızı yeniden denetleyin.
+1. Python desteği, Visual Studio başlatma tuşuna hızlı bir şekilde test etmek için **Alt**+**miyim** açmak için **Python etkileşimli** penceresinde girin `2+2`. Çıkışı görmüyorsanız **4**, adımlarınızı yeniden denetleyin.
 
     ![Python etkileşimli penceresinde test etme](media/installation-interactive-test.png)
 
@@ -46,6 +46,6 @@ ms.locfileid: "39409751"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [El ile var olan bir Python yorumlayıcısı tanımlayan](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Visual Studio 2015'te ve daha önce Python desteğini yükleme](installing-python-support-in-visual-studio.md).
-- [Yükleme konumlarını](installing-python-support-in-visual-studio.md#install-locations).
+- [El ile var olan bir Python yorumlayıcısı tanımlayın](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Visual Studio 2015'te ve daha önce Python desteğini yükleme](installing-python-support-in-visual-studio.md)
+- [Yükleme konumları](installing-python-support-in-visual-studio.md#install-locations)

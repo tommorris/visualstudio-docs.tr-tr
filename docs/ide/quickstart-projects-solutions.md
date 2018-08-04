@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180278"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512310"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: Projeler ve çözümler
 
@@ -178,11 +178,17 @@ Birim testinizi çalıştığını denetlemek istiyorsanız seçin **Test** > **
 
 Bu hızlı başlangıcı tamamladığınızda Tebrikler! Ardından, bazı diğer hızlı Başlangıçlar, Visual Studio için keşfetmek ya da kullanma hakkında daha fazla bilgi edinmek isteyebilirsiniz [projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md).
 
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: Visual Studio'yu kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
-- [Hızlı Başlangıç: düzenleyici ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
-- [Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)
 - [Proje ve çözüm özelliklerini yönetme](../ide/managing-project-and-solution-properties.md)
 - [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)
 - [Visual Studio’da projeler veya çözümler olmadan kod geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

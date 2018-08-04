@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078448"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512190"
 ---
 # <a name="create-bootstrapper-packages"></a>Önyükleyici paketleri oluşturma
 Kurulum programı gibi Windows Installer yeniden dağıtılabilir bileşenleri yüklemek ve algılamak için yapılandırılabilen genel bir yükleyicidir (*.msi*) dosyaları ve yürütülebilir programlar. Yükleyici bir önyükleyici de denir. Bu bileşenin yüklenmesini yönetmek için meta verileri belirleyen XML bildirimleri kümesi programlanır.  Her yeniden dağıtılabilir bileşeni, ya da önkoşul, görünür **önkoşulları** iletişim kutusu için ClickOnce önyükleyici paketi olur. Bir önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyalarını içeren dosyaları grubudur. 
@@ -86,10 +86,10 @@ Aşağıdaki tablo önyükleyici tarafından otomatik olarak doldurulan özellik
 |--------------|-----------------|  
 |ApplicationName|Uygulamanın adı.|  
 |ProcessorArchitecture|İşlemci ve BITS başına word bir yürütülebilir dosya tarafından hedeflenen platformun. Değerler aşağıdakileri içerir:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95, Windows 98 veya Windows ME işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Windows Installer derlemesinin (msi.dll) yükleme sırasında çalıştırılacak sürümü.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Bu özellik, kullanıcının yönetici ayrıcalıkları varsa ayarlanır. Değerler şunlardır: true veya false.|  
+|[Version9x](/windows/desktop/Msi/version9x)|Microsoft Windows 95, Windows 98 veya Windows ME işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|Windows Installer derlemesinin (msi.dll) yükleme sırasında çalıştırılacak sürümü.|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|Bu özellik, kullanıcının yönetici ayrıcalıkları varsa ayarlanır. Değerler şunlardır: true veya false.|  
 |InstallMode|Yükleme modu bileşenin nereden yüklenmesi gereken yere gösterir. Değerler aşağıdakileri içerir:<br /><br /> -HomeSite - Önkoşullar satıcının Web sitesinden yüklenir.<br />-SpecificSite - Önkoşullar seçtiğiniz konumdan yüklenir.<br />-SameSite - Önkoşullar uygulama ile aynı konumdan yüklenir.|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>Uygulama yüklemelerini alanından ayrı yeniden dağıtılabilir  

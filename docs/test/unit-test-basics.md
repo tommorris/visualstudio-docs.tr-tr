@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f9f95b2e4aa6eda9b87c8f7b8d999d84b72c9a5
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d9c49816fb412a7c52e3d9e63fd0e4ec5675e7c3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468318"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511457"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -24,7 +24,7 @@ Kod oluşturma ve birim testleri çalıştırarak beklendiği gibi çalışıp �
 
 Yazılım geliştirme iş akışınızın bir parçası olduğunda birim testi kodunuzun kalitesini üzerinde en büyük etkiye sahiptir. Bir işlev veya diğer blok uygulama kodu yazdığınız hemen ardından standart, sınır ve giriş verisi hatalı durumda yanıt kodu davranışını doğrulayın ve kod tarafından yapılan açık veya örtülü varsayımlar kontrol birim testleri oluşturun. İle *test güdümlü geliştirme*, birim testleri tasarım belgeleri ve işlevsel özellikleri kullanmak için kod yazmadan önce birim testleri oluşturun.
 
-Test projelerini hızla oluşturmak ve kodunuzdan test yöntemleri veya ihtiyaç duyduğunuz gibi el ile testler oluşturun. .NET kodunuzu keşfetmek için Intellitest kullandığınızda, test verileri ve birim testleri paketi oluşturabilirsiniz. Koddaki her ifade için bir test girişi oluşturulur o ifadeyi yürütecek. Hakkında bilgi edinin [kodunuz için birim testleri oluşturma](http://msdn.microsoft.com/library/dn823749.aspx).
+Test projelerini hızla oluşturmak ve kodunuzdan test yöntemleri veya ihtiyaç duyduğunuz gibi el ile testler oluşturun. .NET kodunuzu keşfetmek için Intellitest kullandığınızda, test verileri ve birim testleri paketi oluşturabilirsiniz. Koddaki her ifade için bir test girişi oluşturulur o ifadeyi yürütecek. Hakkında bilgi edinin [kodunuz için birim testleri oluşturma](generate-unit-tests-for-your-code-with-intellitest.md).
 
 Test Gezgini, Test Gezgini eklentisi arabirimleri uyguladıysanız birim testi çerçevelerini üçüncü taraf ve açık kaynak da çalıştırabilirsiniz. Birçok Visual Studio Uzantı Yöneticisi ve Visual Studio Galerisi aracılığıyla bu çerçevesini ekleyebilirsiniz. Bkz: [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)
 

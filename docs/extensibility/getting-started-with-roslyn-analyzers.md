@@ -1,5 +1,5 @@
 ---
-title: Roslyn çözümleyiciler ile çalışmaya başlama | Microsoft Docs
+title: Roslyn Çözümleyicileriyle çalışmaya başlama | Microsoft Docs
 ms.date: 04/02/2018
 ms.technology: vs-ide-sdk
 ms.topic: conceptual
@@ -9,33 +9,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b887703343dab10f9cc1f0cbf8e2e2b37b0065b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12c1bba1d07ab695f265425d6aeae6806589dcd4
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126815"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497855"
 ---
-# <a name="getting-started-with-roslyn-analyzers"></a>Roslyn çözümleyiciler ile çalışmaya başlama
+# <a name="get-started-with-roslyn-analyzers"></a>Roslyn çözümleyicileriyle çalışmaya başlama
 
-Visual Studio'da canlı, proje tabanlı kod çözümleyicilerini ile API yazarlar kendi NuGet paketlerini bir parçası olarak etki alanına özgü kod analizi gönderebilirsiniz. Bu çözümleyiciler .NET derleme Platformu (kod adı "Roslyn") tarafından desteklenen olduğundan (daha fazla sorunları bulmak için kodunuzu oluşturmak için bekleniyor) satır bitirdikten sonra bile önce siz yazarken bunlar kodunuzda uyarılar oluşturabilir. Çözümleyiciler de otomatik kod düzeltme temiz kodunuzu hemen izin vermek için Visual Studio ampul istemi üzerinden yüzey.
+Visual Studio'da canlı, proje temelli kod çözümleyicileriyle API yazarlar, etki alanına özgü kod analizi NuGet paketlerinin bir parçası olarak gönderebilirsiniz. Bu Çözümleyicileri .NET derleyici Platformu (eskiden "Roslyn") tarafından desteklenen çünkü (daha fazla sorunları bulmak için kodunuzu derlemek için bekleniyor) satırı bitirdikten sonra bile önce yazdığınız sırada bunlar kodunuzdaki uyarılar oluşturabilir. Çözümleyiciler, ayrıca bir otomatik kod düzeltme temiz kodunuzu oluşturan hemen izin vermek için Visual Studio ampul istemi üzerinden ortaya çıkabilir.
 
-## <a name="getting-started"></a>Başlarken
+## <a name="get-started"></a>Kullanmaya başlayın
 
-[Roslyn Canlı kod çözümleyiciler giriş ve gözden geçirme](https://msdn.microsoft.com/magazine/dn879356.aspx)
+[Roslyn Canlı kod Çözümleyicileri giriş ve gözden geçirme](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
-[Kod gözden geçirme giderir ekleme: Kullanıcıların düzeltmeleri Çözümleyicisi sorunların belirtin](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Ekleme kodu düzeltir izlenecek yol: Çözümleyicisi sorunları için kullanıcıların düzeltmeleri sağlayabilir](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[Giriş ve gerçek dünya Çözümleyicisi konuşması kılavuz](http://channel9.msdn.com/events/Build/2015/3-725)
+[Giriş ve gerçek dünya Çözümleyicisi Kılavuzu](http://channel9.msdn.com/events/Build/2015/3-725)
 
-[Gerçek dünya Roslyn Çözümleyicisi](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) olarak izleyebileceğiniz bir [konuşun](http://channel9.msdn.com/events/Build/2015/3-725)
+[Gerçek dünya Roslyn çözümleyicinizi](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) olarak izleyebileceğiniz bir [konuşun](http://channel9.msdn.com/events/Build/2015/3-725)
 
-[Üç tür çözümleyiciler gruplandırılır github'da çeşitli örnekler](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[Üç tür Çözümleyicileri gruplandırılmış github'da çeşitli örnekleri](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[Giriş ve birkaç çözümleyiciler turu](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
+[Giriş ve birkaç Çözümleyicileri turu](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Roslyn çözümleyiciler genel bakış](../code-quality/roslyn-analyzers-overview.md)
-- [Daha fazla belgeler github OSS sitesinde](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-- [Github'da Roslyn çözümleyiciler ile uygulanan FxCop kuralları](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+- [Roslyn Çözümleyicileri genel bakış](../code-quality/roslyn-analyzers-overview.md)
+- [Github OSS sitesinde daha fazla belgeleri](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [Roslyn çözümleyicilerini github'da ile uygulanan FxCop kuralı](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

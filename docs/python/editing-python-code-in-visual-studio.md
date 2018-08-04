@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341839"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500127"
 ---
 # <a name="edit-python-code"></a>Python kodunu düzenleme
 
 Geliştiriciler harcama Kod düzenleyicisinde, zamanlarının çoğunu şekilde [Visual Studio'da Python desteği](installing-python-support-in-visual-studio.md) daha üretken olmanıza yardımcı olmak için işlevsellik sağlar. IntelliSense söz dizimi vurgulama, otomatik tamamlama, imza Yardımı, yöntemi geçersiz kılmalar, arama ve gezinti özellikleri içerir.
 
-Düzenleyici ile de tümleştirilen **etkileşimli** Visual Studio'daki kod ikisi arasındaki değişimi kolaylaştırın,. Bkz: [Öğreticisi 3. adım: etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) ve [etkileşimli penceresini - gönderme etkileşimli komutunu kullanma](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command) Ayrıntılar için.
+Düzenleyici ile de tümleştirilen **etkileşimli** Visual Studio'daki kod ikisi arasındaki değişimi kolaylaştırın,. Bkz: [Öğreticisi 3. adım: etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) ve [etkileşimli penceresini - gönderme etkileşimli komutunu kullanma](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) Ayrıntılar için.
 
 |   |   |
 |---|---|

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251939"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498973"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -154,8 +154,6 @@ Varsayılan olarak, hata ayıklayıcı, programınızın standart Python başlat
 | **Yorumlayıcı bağımsız değişkenleri** | Bu bağımsız komut dosyanız adının önünde Başlatıcısı komut satırına eklenir. Genel bağımsız değişkenler burada `-W ...` denetimi uyarılar için `-O` biraz programınızı iyileştirmek için ve `-u` arabellekten çıkarılan g/ç kullanılacak. IronPython kullanıcıları geçirmek için bu alan kullanması muhtemel `-X` gibi seçenekleri `-X:Frames` veya `-X:MTA`. |
 | **Cesta k İnterpretu** | Geçerli ortam ile ilişkili yolu geçersiz kılar. Değer bir standart yorumlayıcı komut dosyanızı başlatmak için yararlı olabilir. |
 | **Ortam Değişkenleri** | Bu çok satırlı metin kutusuna form girişlerini ekleme \<adı > =\<değer >. Bu ayar son olarak, var olan tüm genel ortam değişkenlerini ve sonra üstte uygulandığından `PYTHONPATH` ayarlanır arama yollarını ayarına göre bunu el ile bu bulunanlardan herhangi biri diğer değişkenlerini geçersiz kılmak için kullanılabilir. |
-
-<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Hemen ve etkileşimli windows
 

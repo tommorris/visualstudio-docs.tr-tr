@@ -1,5 +1,5 @@
 ---
-title: IDE GUID'ler | Microsoft Docs
+title: IDE GUID'leri | Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,16 +13,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbcf81c34cae9c2f2e4e76e995666b280092b29d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130277"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498190"
 ---
-# <a name="ide-guids"></a>IDE GUID'leri
+# <a name="ide-guids"></a>IDE GUID’leri
 
-<xref:Microsoft.VisualStudio.VSConstants> Sınıfı, aşağıdaki tabloda listelendiği gibi tümleşik geliştirme ortamı (IDE) bazı parçalarının GUID'ler yayımlar.
+<xref:Microsoft.VisualStudio.VSConstants> Sınıfı, aşağıdaki tabloda listelendiği gibi tümleşik geliştirme ortamının (IDE) bazı bölümlerinin GUID'leri yayımlar.
 
 ## <a name="core-systems"></a>Çekirdek sistemleri
 
@@ -49,7 +49,7 @@ ms.locfileid: "31130277"
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher>|e69cd190-1276-11d1-9f64-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Dosyaları, sanal ve fiziksel klasörler ve alt projeler
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Dosyaları, sanal ve fiziksel klasörleri ve projeler
 
 |Sabit|GUID|
 |--------------|----------|
@@ -85,7 +85,7 @@ ms.locfileid: "31130277"
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="command-sets-and-properties"></a>Komut kümelerini ve özellikleri
+## <a name="command-sets-and-properties"></a>Komutunu ayarlar ve Özellikler
 
 |Sabit|GUID|
 |--------------|----------|
@@ -114,7 +114,7 @@ ms.locfileid: "31130277"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>Bileşen Seçici sayfa GUID'leri
+## <a name="component-selector-page-guids"></a>Bileşen Seçici sayfası GUID'leri
 
 |Sabitler|GUID|
 |---------------|----------|
@@ -132,6 +132,6 @@ ms.locfileid: "31130277"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yönetilen Kodda COM Sabitleri](../extensibility/com-constants-in-managed-code.md)
-- [IDE Sabitleri](../extensibility/ide-constants.md)
-- [Proje Sistemlerini Genişletmeye Yönelik IDE Tanımlı Komutlar](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Yönetilen kodda COM sabitleri](../extensibility/com-constants-in-managed-code.md)
+- [IDE sabitleri](../extensibility/ide-constants.md)
+- [Proje s ystems genişletmeye yönelik IDE tanımlı komutlar](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

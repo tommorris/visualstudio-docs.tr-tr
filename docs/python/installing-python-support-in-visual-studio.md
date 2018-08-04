@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cffbdee3d1fc275e4bde54efda0cca5ac008155e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409728"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499909"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
@@ -92,7 +92,7 @@ Yüklerken veya Visual Studio'da Python çalıştırırken sorunlarla karşıla�
 
 1. Yükleyicide **Değiştir**.
 
-1. Seçin **programlama dilleri > Visual Studio için Python Araçları** ardından **sonraki**:
+1. Seçin **programlama dilleri** > **Visual Studio için Python Araçları** ardından **sonraki**:
 
     ![Visual Studio 2015 yükleyicisi PTVS seçeneği](media/installation-vs2015.png)
 

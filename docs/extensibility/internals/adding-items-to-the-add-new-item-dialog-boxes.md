@@ -13,75 +13,77 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b1287bfe04a16c1e610aa9044399fa7b936d383
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135072"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499870"
 ---
-# <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Öğeler ekleme yeni öğe Ekle iletişim kutuları
-Öğeler ekleme işlemi **Yeni Öğe Ekle** iletişim kutusu ile kayıt defteri anahtarlarını başlatır. Aşağıdaki kayıt defteri girdileri gösterildiği gibi AddItemTemplates bölüm içinde kullanılabilir hale hangi öğelerin dizininde adını ve yolunu içerir **Yeni Öğe Ekle** iletişim kutusu konur.  
+# <a name="add-items-to-the-add-new-item-dialog-box"></a>Yeni Öğe Ekle iletişim kutusu öğeleri Ekle
+Öğeler ekleme işlemi **Yeni Öğe Ekle** iletişim kutusu, kayıt defteri anahtarları ile başlar. Aşağıdaki kayıt defteri girdilerini gösterildiği gibi **AddItemTemplates** bölüm içeren yolu ve adı dizinde bulunan yapılan hangi öğelerin **Yeni Öğe Ekle** iletişim kutusu konur.  
   
 > [!NOTE]
->  Tablonun hemen kod kesimi aşağıdaki kayıt defteri girdisi hakkında ek bilgiler içerir.  
+>  Hemen kod kesimi aşağıdaki tabloda, kayıt defteri girişi hakkında ek bilgiler içerir.  
   
- Bu bölümde [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects] altında yer alır.  
+ Bu bölümde altında bulunan **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
   
- Bu tür projelerde CLSID ilk GUID'dir; İkinci GUID öğeleri Ekle şablonları için kayıtlı proje türünü belirtir.  
+ Bu tür projeleri için CLSID ilk GUID'dir; İkinci GUID Öğe Ekle şablonları için kayıtlı bir proje türü gösterir:  
+ 
+ **\\{C061DB26-5833-11D2-96F5-000000000000} \\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
   
- \\{C061DB26-5833-11D2-96F5-000000000000} \AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000} \1  
+ **@** #6 = 
   
- @="#6"  
+ **TemplatesDir** = \\&lt;Visual Studio SDK yükleme yolunu&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\ &lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
   
- "TemplatesDir"="\<Visual Studio SDK yükleme yolu\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
+ **SortPriority** dword:00000064 =
   
- "SortPriority" dword:00000064 =  
-  
-|Ad|Tür|Verilerden (.rgs dosyası)|Açıklama|  
+|Ad|Tür|Veri (gelen *.rgs* dosya)|Açıklama|  
 |----------|----------|-----------------------------|-----------------|  
-|@ (Varsayılan)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Kaynak kimliği için **Öğe Ekle** şablonları.|  
-|VAL TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|İletişim kutusunda görüntülenen proje öğeleri yolunu **Yeni Öğe Ekle** Sihirbazı.|  
-|VAL SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)])|Ağaç düğümünde görüntülenen dosyalar, sıralama düzeni belirler **Yeni Öğe Ekle** iletişim kutusu.|  
+|(Varsayılan) @|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Kaynak kimliği için **Öğe Ekle** şablonları.|  
+|VAL TemplatesDir|REG_SZ|TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;|Görüntülenen iletişim kutusu için proje öğelerinin yolu **Yeni Öğe Ekle** Sihirbazı.|  
+|VAL SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)])|Ağaç düğümünde görüntülenen dosyaların sıralama düzeni belirler **Yeni Öğe Ekle** iletişim kutusu.|  
   
 > [!NOTE]
->  Visual C# ve Visual Basic proje türleri GUID'LERİNİ aşağıdaki gibidir:[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+>  Visual C# ve Visual Basic proje türleri GUID'LERİNİ aşağıdaki gibidir: 
+- [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
+- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
- Dizini listelenen % TEMPLATE_PATH%\SomeProjectItems olan TemplateDirs sol tarafındaki düğümde için **Yeni Öğe Ekle** iletişim kutusu ağacı. Ek öğeler ağacında, kök dizini içinde alt dayanır. Projeye eklemek kullanılabilir öğeleri sağ bölmesinde dosyalardır **Yeni Öğe Ekle** iletişim kutusu.  
+ Listelenen directory **TemplatesDir**, olduğu *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, düğüm sol tarafındaki **Ekle Yeni öğe** iletişim kutusu ağaç. Ek öğeler ağacında, kök dizin içinde alt dizini temel alır. Dosyalar projeye eklenecek kullanılabilir maddelerinin sağ bölmede **Yeni Öğe Ekle** iletişim kutusu.  
   
- Genellikle, bu klasör bir şablon HTML veya .cpp dosyası gibi projeniz için şablon dosyalarını ve sihirbazları başlatma herhangi .vsz dosyaları içerir. Öğelerin nasıl görüntüleneceğini denetlemek için dizin adlarını ve simgeler yerelleştirme için .vsdir dosyaları da içerebilir. Yeni Öğe Ekle iletişim kutusu ağaçtaki bu düğümün temsil ettiği iletişim kutusunda görüntülenen açıklamalı alt yazı yerelleştirilmiş dizesidir.  
+ Genellikle, bu klasör gibi bir şablon HTML projeniz için şablon dosyalarını içerecek veya *.cpp* dosyasını ve tüm *.vsz* sihirbazları başlatmak için dosyaları. Öğelerin nasıl görüntüleneceğini denetlemenizi de ekleyebilirsiniz *.vsdir* dizin adları ve simgeleri yerelleştirme dosyaları. Yerelleştirilmiş dize arar: Bu düğümde temsil eden iletişim kutusunda görüntülenen başlıktır **Yeni Öğe Ekle** iletişim kutusu ağaç.  
   
- Bununla birlikte, her şeyi bir .vsdir dosyasında olması gerekmez. Dizindeki her öğe için bir .vsdir dosyası olabilir. Daha fazla bilgi için bkz: [Sihirbazı'nı (. Vsz) dosya](../../extensibility/internals/wizard-dot-vsz-file.md) ve [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Ancak, her şeyi birinde olması gerekmez *.vsdir* dosya. Bir sahip *.vsdir* dizindeki her öğe için dosya. Daha fazla bilgi için [sihirbaz (.vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md) ve [şablon dizin açıklaması (.vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
 > [!NOTE]
->  Şablon dizinlerini .vsdir dosyalarında isteğe bağlıdır. Yeni bir proje öğesi dizinde yerleştirin ve içinde görüntülemek istiyorsanız **Yeni Öğe Ekle** iletişim kutusu, TemplatesDir deyiminde belirtilen şablonları dizininde bu dosyayı koyabilir. Dosyayı sağ bölmesinde sonra görüntülenir **Yeni Öğe Ekle** proje iletişim kutusu. Ancak, dosya veya bir simge için yerelleştirilmiş bir resim yazısı görüntülemek istiyorsanız, şablonları dizinde en az bir .vsdir dosyası içermelidir.  
+>  *.Vsdir* şablon dizinlerde dosyaları isteğe bağlı. Yalnızca görüntüleyin ve bir proje öğesi koymak istiyorsanız **Yeni Öğe Ekle** iletişim kutusu, belirtilen şablonları dizininde bu dosyayı koyabilir **TemplatesDir** deyimi. Dosyayı daha sonra sağ bölmede görüntülenir **Yeni Öğe Ekle** iletişim kutusu için proje. Yerelleştirilmiş bir açıklamalı alt yazı dosyası veya bir simge görüntülemek istiyorsanız, ancak en az bir tane eklemeniz gerekir *.vsdir* şablonları dizinde dosya.  
   
-## <a name="grouping-project-items"></a>Proje öğeleri gruplandırma  
- Şablon grupları klasörlerdeki içeren isteyip istemediğinizi **Yeni Öğe Ekle** iletişim kutusu ağacında, bunların içinde alt dizinler öğelerle kök şablonu dizininin altında olması gerekir. Zaman **Yeni Öğe Ekle** iletişim kutusu, kullanıcılara görüntülenir, bunlar ayrıca alt klasörleri görebilir ve bunları proje öğelerini seçebilirsiniz.  
+## <a name="group-project-items"></a>Proje öğeleri gruplandırma  
+ Şablon grupları klasörlerdeki içermesini istiyorsanız **Yeni Öğe Ekle** iletişim kutusu ağacında, bunları öğelerle şablon dizin alt dizinler olması gerekir. Zaman **Yeni Öğe Ekle** kullanıcılara iletişim kutusu görüntülenir, bunlar ayrıca alt klasörleri görebilir ve bunları proje öğelerini seçebilirsiniz.  
   
- Bu şablon dizin ağacında diğer öğeleri ağaç düğümünün göre oluşturulacağı kod kesimi sıralama öncelik belirler. İçin **Yeni Öğe Ekle** iletişim kutusu, sıralama önceliktir eklemeniz gerekir ve böylece öğelerinizi doğru yerde iletişim kutusunda görüntülenen tüm.  
+ Bu şablon dizin ağacında uzlu stromu diğer öğeleri göre oluşturulacağı kod kesimi sıralama öncelik belirler. İçin **Yeni Öğe Ekle** iletişim kutusu, sıralama önceliği olan eklemeniz gerekir ve böylece öğelerinizi doğru konumda iletişim kutusunda görüntülenen tüm.  
   
- Ayrıca uygulayabilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> ne görüntülenen filtrelemek için arabirimi **Yeni Öğe Ekle** iletişim kutusu. Bu arabirim uygulayarak 50 şablonu ve Sihirbazı dosyaları içerir, örneğin, disk üzerinde tek bir şablonda dizini ayarlayabilirsiniz. Bu şekilde, bir proje türü, başka bir proje türe ait bir 30 dosyaları ve genel bir proje türünde kullanılabilen tüm dosyaları ait 20 dosyalarla farklı proje türleri olabilir. Bağlı olarak hangi proje şablonu oluşturulur, bu şekilde, farklı bir şablon dosyaları kümesini görüntüleyebilirsiniz.  
+ Ayrıca uygulayabilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> ne görüntülenen filtrelemek için arabirimi **Yeni Öğe Ekle** iletişim kutusu. Bu arabirimi uygulayan bir şablon dizini 50 şablonu ve sihirbaz dosyaları içerir, örneğin, diskte ayarlayabilirsiniz. Bu şekilde, bir proje türü, proje başka bir türe ait bir 30 dosyaları ve genel türde bir proje içinde kullanılabilir olan tüm dosyaları ait 20 dosyaları farklı proje türlerine sahip olabilir. Bağlı olarak hangi proje şablonu oluşturulur, bu şekilde, farklı bir şablon dosyaları kümesini görüntüleyebilirsiniz.  
   
- Örneğin, bir Visual Basic projesinde Web projeleri ve istemci projeler olabilir. Web forms istemci projesine eklemek için yararlı öğeleri değildir ve windows forms bir Web sunucusu projeye eklemek için yararlı öğeler değil. Bu nedenle, her iki proje türleri için tüm dosyaları içeren bir şablon dizin oluşturabilirsiniz. Ardından uygulayarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, proje veya proje ayarları proje türüne göre gösterilmesi öğeleri gizleyebilirsiniz.  
+ Örneğin, bir Visual Basic projesinde, Web projeleri ve istemci projeler olabilir. Web formları için bir istemci projesi eklemek için kullanışlı öğeleri değildir ve windows forms bir Web sunucusu projeye eklemek için kullanışlı öğeleri değildir. Bu nedenle, her iki türde bir proje için tüm dosyaları içeren bir şablon dizin oluşturabilirsiniz. Ardından, uygulama tarafından <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, proje veya proje ayarlarını proje türüne göre değil görüntülenmesi gereken öğeleri gizleyebilirsiniz.  
   
-## <a name="filtering-project-items"></a>Proje öğeleri filtreleme  
- `IVsFilterAddProjectItemDlg2` öğeleri ağaç (sol bölme) ve proje dosyalarını (sağ bölme), aşağıdaki yollarla filtreleme için sağlar:  
+## <a name="filter-project-items"></a>Proje öğeleri Filtrele  
+ `IVsFilterAddProjectItemDlg2` öğe ağacında (sol bölmede) ve proje dosyaları (sağ bölme) aşağıdaki yollarla filtreleme için sağlar:  
   
--   Yerelleştirilmiş adlar (.vsdir dosyasında yer alan iletişim kutusunda görüntülenen açıklamalı alt yazıları) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
+-   Yerelleştirilmiş adlarına göre (bulunan iletişim kutusunda görüntülenen açıklamalı alt yazılar *.vsdir* dosya) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
   
--   Dosya ve klasörleri diskteki gerçek adlarını tarafından (yerelleştirilmemiş — herhangi bir .vsdir dosyası) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
+-   Dosya ve klasörleri diskte gerçek adlarını tarafından (yerelleştirilmemiş — hiçbir *.vsdir* dosya) tarafından sağlanan `IVsFilterAddProjectItemDlg`.  
   
 -   Tarafından sağlanan kategoriye `IVsFilterAddProjectItemDlg2`.  
   
- Kategoriye göre filtre uygulamak için bir öğe .vsdir dosyasında "Web formu" gibi veya Visual Basic "istemci öğesi" kategorisi dizeye sağlar. İletişim kutusu kodu, ardından kategori sınıflandırma .vsdir dosyasından alır ve size geçirir. Uygulamanız için bu bilgileri geçirebilirsiniz `IVsFilterAddProjectItemDlg2` filtrelemek için **Yeni Öğe Ekle** kategorilere göre iletişim kutusu. Ayrıca, Web sayfaları için veya istemci Win32 uygulama çalışmaları olarak öğeleri filtre uygulayabilirsiniz. Ayrıca, tanımlayabilirsiniz [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] öğeleri Microsoft Foundation sınıfları (MFC) veya Etkin Şablon kitaplığı (ATL) öğeleri olarak etiketlenir. Bu öğeler tanımladığınızda, sistem kategorilerini ve sınıflandırmalarını göre filtrelenebilir proje sistemi kendi sınıflandırmaları tanımlayabilirsiniz.  
+ Kategoriye göre filtrelemek için bir kategori dize içindeki bir öğeyi sağlamak *.vsdir* gibi dosya *Web formu* veya *istemci öğesi* Visual Basic'te. İletişim kutusu kodu sonra kategori sınıflandırma alır *.vsdir* dosya ve size geçirir. Uygulamanız için bu bilgileri geçirebilirsiniz `IVsFilterAddProjectItemDlg2` filtrelemek için **Yeni Öğe Ekle** kategorilere göre iletişim kutusu. Ayrıca, Web sayfaları veya istemci Win32 uygulama çalışmaları olarak öğeleri filtreleyebilirsiniz. Ayrıca, tanımlayabilirsiniz [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] öğeleri Microsoft Foundation Classes (MFC) veya Etkin Şablon kitaplığı (ATL) öğeleri olarak etiketlenir. Bu öğeleri tespit ederken, proje sistemi sistem kategorilerini ve sınıflandırmalarını göre filtrelenebilir. böylece kendi sınıflandırmaları tanımlayabilirsiniz.  
   
- Bu filtre işlevselliği uygularsanız, gizli her öğenin bir tablo eşleme gerekmez. Yalnızca türlerine öğelerini sınıflandırmak ve sınıflandırmalar .vsdir dosya veya dosyalar yerleştirin. Ardından, belirli bir sınıflandırmada arabirimi uygulayarak sahip öğelerden herhangi birini gizleyebilirsiniz. Bu şekilde, öğeleri yapabileceğiniz **Yeni Öğe Ekle** projedeki durumu iletişim kutusu dinamik temel.  
+ Bu filtre işlevi uygularsanız, gizlenmelidir her öğenin bir tablo eşleme gerekmez. Yalnızca öğe türlerine sınıflandırmak ve sınıflandırmaları koymak *.vsdir* dosya veya dosyalar. Ardından arabirimi uygulanarak belirli bir sınıflandırma olan öğelerden biri gizleyebilirsiniz. Bu şekilde, öğeleri yapabileceğiniz **Yeni Öğe Ekle** iletişim kutusu dinamik tabanlı proje içindeki durumu.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [Proje ve öğe şablonları kaydediliyor](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Genellikle projeleri genişletmek için kullanılan nesneler için CATIDs](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   
+ [Proje ve öğe şablonlarını kaydetme](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Projeleri için genellikle kullanılan nesnelerin Catıdlerini](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   
  [Proje ve proje öğesi şablonları ekleme](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [Şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
- [Sihirbaz (.Vsz) Dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Şablon dizin açıklaması (.vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
+ [Sihirbaz (.vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081689"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499396"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
 
@@ -111,26 +111,6 @@ Bir dil hizmeti uzantısı bir LSP tabanlı dil sunucusu kullanarak oluşturmak 
 İleri giderek yeni bir boş VSIXProject oluşturma **dosya** > **yeni proje** > **Visual C#**  >   **Genişletilebilirlik** > **VSIX projesi**:
 
 ![VSIX projesi oluşturun](media/lsp-vsix-project.png)
-
-Önizleme sürümü için bir VSIX biçiminde LSP VS desteği olacaktır ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). LSP dil sunucuları kullanarak bir uzantı oluşturmak istediğiniz uzantısı geliştiriciler bu VSIX üzerinde bir bağımlılık gerçekleştirmeniz gerekir. Bu nedenle, bir dil sunucu uzantısını yüklemek isteyen müşteriler **dil sunucusu Protokolü istemci Önizleme VSIX yüklemelisiniz.**
-
-VSIX bağımlılık tanımlamak için VSIX için VSIX bildirim Tasarımcısı'nı açın (çift tıklayarak *source.extension.vsixmanifest* proje dosyasında) gidin **bağımlılıkları**:
-
-![Dil sunucusu Protokolü istemci başvuru ekleyin](media/lsp-reference-lsp-dependency.png)
-
-Aşağıdaki gibi yeni bir bağımlılık oluşturun:
-
-![Dil sunucusu Protokolü istemci bağımlılık tanımlama](media/lsp-define-lsp-dependency.png)
-
-* **Kaynak**: el ile tanımlanan
-* **Ad**: dil sunucusu Protokolü istemci Önizleme
-* **Tanımlayıcı**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **Sürüm aralığı**: [1.0,2.0)
-* **Nasıl Çözüldü bağımlılığıdır**: kullanıcı tarafından yüklenen
-* **İndirme URL'si**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> **İndirme URL'si** uzantınızı yükleyen kullanıcılar gerekli bağımlılık yükleme bilmesi doldurulması gerekir.
 
 ### <a name="language-server-and-runtime-installation"></a>Dil sunucusu ve çalışma zamanı yükleme
 

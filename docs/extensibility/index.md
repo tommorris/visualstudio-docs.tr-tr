@@ -8,16 +8,16 @@ title: Visual Studio genişletilebilirlik belgeleri | Microsoft Docs
 description: Visual Studio genişletilebilirlik hakkında bilgi edinin.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
-ms.locfileid: "27246553"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500303"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Visual Studio genişletilebilirlik belgeleri
 
-Visual Studio genişletilebilirlik seçenekleri büyük bir sağlar. Visual Studio kendisini genişletmek, "Roslyn" derleyici için kaynak kodu çözümleyiciler ekleyin veya bile kendi SDK'ları oluşturun.
+Visual Studio, çok sayıda seçenek genişletilebilirlik sağlar. Visual Studio'nun kendisi genişletmek, "Roslyn" derleyici için kaynak kod Çözümleyicileri eklemeniz veya hatta kendi SDK'ları oluşturabilirsiniz.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -49,7 +49,7 @@ Visual Studio genişletilebilirlik seçenekleri büyük bir sağlar. Visual Stud
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>.NET derleme Platform ("Roslyn") genişletilebilirliği</h3>
+                        <h3>.NET Derleyici Platformu ("Roslyn") Genişletilebilirliği</h3>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ Visual Studio genişletilebilirlik seçenekleri büyük bir sağlar. Visual Stud
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Bir yazılım geliştirme seti oluşturma</h3>
+                        <h3>Yazılık Geliştirme Seti Oluşturma</h3>
                     </div>
                 </div>
             </div>

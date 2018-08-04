@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa2378a7ccff3e767ef21443bce3f3e57640f689
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251760"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499025"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -44,7 +44,7 @@ Visual Studio, çeşitli uygulama yapılarının bir projeden varolan bir klasö
 
 Uygulamanızı geliştirirken, genellikle farklı türdeki yeni dosyalar projeye eklemeniz gerekir. Bu tür dosyaları ekleyerek yapılır projeyi sağ tıklatıp seçerek **Ekle** > **var olan öğe** eklemek bir dosya için Gözat ile veya **Ekle**  >  **Yeni öğe**, öğe şablonları çeşitli olan bir iletişim getirir. Üzerinde açıklandığı [öğe şablonları](python-item-templates.md) başvuru seçenekleriniz boş Python dosyaları, bir Python sınıfı, bir birim testi ve web uygulamaları için ilgili çeşitli dosyaları. Hangi Visual Studio sürümünde kullanılabilir olduğunu öğrenmek için bu seçenekler bir test projesi ile keşfedebilirsiniz.
 
-Kalın yazı tipinde gösterilen bir atanan başlangıç dosyasının her Python proje sahip **Çözüm Gezgini**. Başlangıç dosyası hata ayıklamaya başladığınızda çalıştırılan dosyasıdır (**F5** veya **hata ayıklama** > **hata ayıklamayı Başlat**) veya çalıştırdığınızda projenizi etkileşimli pencerede pencere (**Shift**+**Alt**+**F5** veya **hata ayıklama**  >  **Proje Python etkileşimli içinde Yürüt**). Bunu değiştirmek için yeni dosyaya sağ tıklayın ve seçin **başlangıç dosyası olarak ayarla**.
+Kalın yazı tipinde gösterilen bir atanan başlangıç dosyasının her Python proje sahip **Çözüm Gezgini**. Başlangıç dosyası hata ayıklamaya başladığınızda çalıştırılan dosyasıdır (**F5** veya **hata ayıklama** > **hata ayıklamayı Başlat**) veya proje içinde çalıştırdığınızda**Etkileşimli** penceresi (**Shift**+**Alt**+**F5** veya **hataayıklama**  >  **Proje Python etkileşimli içinde Yürüt**). Bunu değiştirmek için yeni dosyaya sağ tıklayın ve seçin **başlangıç dosyası olarak ayarla**.
 
 > [!Tip]
 > Seçilen başlangıç dosyasını projeden kaldırın ve yeni bir tane seçmeyin, Visual Studio projeyi çalıştırmak çalıştığınızda ne Python aşağıdaki başlamak dosya bilemezsiniz. Bu durumda, Visual Studio 2017 sürüm 15.6 ve daha sonra bir hata gösterir. önceki sürümlerinde çalışan Python yorumlayıcısı ile ya da bir çıktı penceresini açın veya çıkış penceresine bakın görünür ancak hemen kaybolur. Bu davranışların karşılaşırsanız, bir atanan başlangıç dosyası olduğunu denetleyin.

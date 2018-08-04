@@ -1,5 +1,5 @@
 ---
-title: Proje nesneleri gösterme | Microsoft Docs
+title: Proje nesnelerini kullanıma sunma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eaa2a5e8c5c153698069084b9f0cfe406cad7db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: MT
+ms.openlocfilehash: 23cc1db46870d77e6c137ab621c970e730b9cd0e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130459"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497147"
 ---
-# <a name="exposing-project-objects"></a>Proje nesneleri gösterme
-Özel proje türleri Otomasyon arabirimleri kullanarak proje erişmesine izin vermek için Otomasyon nesneleri sağlayabilir. Her proje türü standart sağlaması beklenir <xref:EnvDTE.Project> erişilen Otomasyon nesnesi <xref:EnvDTE.Solution>, IDE içinde açık olan tüm projeleri koleksiyonunu içerir. Proje içinde her öğe tarafından sunulan beklenen bir <xref:EnvDTE.ProjectItem> erişilen nesne `Project.ProjectItems`. Bu standart Otomasyon nesneleri ek olarak, projeye özgü Otomasyon nesneleri sunmak projeleri seçebilirsiniz.  
+# <a name="expose-project-objects"></a>Proje nesnelerini kullanıma sunma
+Özel proje türleri Otomasyon arabirimlerini kullanarak proje erişmesine izin vermek için Otomasyon nesneleri sağlar. Her proje türü standart sağlaması beklenir <xref:EnvDTE.Project> erişilen Otomasyon nesnesi <xref:EnvDTE.Solution>, IDE'de açık olan tüm projelerin bir koleksiyonunu içerir. Her proje öğesi tarafından kullanıma sunulan beklenen bir <xref:EnvDTE.ProjectItem> erişilen nesne `Project.ProjectItems`. Bu standart Otomasyon nesnelerin yanı sıra, projeye özgü Otomasyon nesneleri sunmak projeleri seçebilirsiniz.  
   
- Geç kök DTE nesne kullanımından bağlama erişebileceğiniz özel kök düzeyinde Otomasyon nesneleri oluşturabilirsiniz `DTE.<customeObjectName>` veya `DTE.GetObject("<customObjectName>")`. Örneğin, Visual C++ "DTE kullanarak erişebilirsiniz VCProjects" adlı C++ projesi özgü projesi koleksiyonu oluşturur. VCProjects veya DTE. GetObject("VCProjects"). Ayrıca, en çok türetilen nesne için ProjectItem.Object ve bir ProjectItem.FileCodeModel kullanıma sunan bir ProjectItem sorgulanabilir bir Project.CodeModel proje türü için benzersiz bir Project.Object oluşturabilirsiniz.  
+ Geç DTE nesnesini kullanarak kök bağlama erişebileceğiniz özel kök düzeyinde Otomasyon nesneleri oluşturabileceğiniz `DTE.<customeObjectName>` veya `DTE.GetObject("<customObjectName>")`. Örneğin, Visual C++ adlı C++ projeye özgü proje koleksiyonları oluşturur *VCProjects* kullanarak erişebileceğiniz `DTE.VCProjects` veya `DTE.GetObject("VCProjects")`. Ayrıca oluşturabilirsiniz bir `Project.Object`, proje türü için benzersiz olan bir `Project.CodeModel`, sorgulanabilen, en türetilmiş nesne için ve bir `ProjectItem`, kullanıma sunan `ProjectItem.Object` ve `ProjectItem.FileCodeModel`.  
   
- Bir özel, projeye özgü projesi koleksiyonu kullanıma sunmak projeleri için ortak bir kuraldır. Örneğin, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] sonra kullanarak erişebileceğiniz bir C++ belirli projesi koleksiyonu oluşturur `DTE.VCProjects` veya `DTE.GetObject("VCProjects")`. De oluşturabilirsiniz bir `Project.Object`, proje türü için benzersiz olan bir `Project.CodeModel`, hangi sorgulanan, en çok türetilen nesne için bir `ProjectItem`, hangi çıkarır `ProjectItem.Object`ve bir `ProjectItem.FileCodeModel`.  
+ Proje, projeye özgü özel proje koleksiyonu kullanıma sunmak için ortak bir kuraldır. Örneğin, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kullanarak daha sonra erişebileceğiniz bir C++ belirli proje koleksiyonu oluşturur `DTE.VCProjects` veya `DTE.GetObject("VCProjects")`. Ayrıca oluşturabilirsiniz bir `Project.Object`, proje türü için benzersiz olan bir `Project.CodeModel`, hangi sorgulanabilen, en türetilmiş nesne için bir `ProjectItem`, kullanıma sunan `ProjectItem.Object`ve `ProjectItem.FileCodeModel`.  
   
-### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Bir proje için bir VSPackage özgü nesne katkıda bulunma  
+## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>VSPackage özgü bir nesne için bir proje katkıda bulunma  
   
-1.  Uygun anahtarlara, VSPackage .pkgdef dosyasına ekleyin.  
+1.  Eklemek için uygun anahtarlara *.pkgdef* , VSPackage dosya.  
   
-     Örneğin, C++ dili projesinin .pkgdef ayarları şunlardır:  
+     Örneğin, işte *.pkgdef* C++ dil projesi ayarları:  
   
     ```  
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]  
@@ -41,7 +41,7 @@ ms.locfileid: "31130459"
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2.  Koda uygulanması <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> aşağıdaki örnekteki gibi yöntemi.  
+2.  Koda uygulanması <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> yöntemi, aşağıdaki örnekte olduğu gibi.  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  
@@ -71,7 +71,7 @@ ms.locfileid: "31130459"
     }   
     ```  
   
-     Kodda, `g_wszAutomationProjects` projeniz adıdır. `GetAutomationProjects` Yöntemi uygulayan bir nesne oluşturur `Projects` arabirimi ve döndürür bir `IDispatch` aşağıdaki kod örneğinde gösterildiği gibi çağıran nesne işaretçisi.  
+     Kodda, `g_wszAutomationProjects` projesi koleksiyonunuzun adı. `GetAutomationProjects` Yöntemini uygulayan bir nesne oluşturur `Projects` arabirimi ve döndürür bir `IDispatch` aşağıdaki kod örneğinde gösterildiği gibi çağrı nesnesi işaretçisi.  
   
     ```cpp  
     HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)  
@@ -89,9 +89,9 @@ ms.locfileid: "31130459"
     }  
     ```  
   
-     Otomasyon nesnesi için benzersiz bir ad seçmeniz gerekir. Ad çakışmaları öngörülemeyen ve birden çok proje türleri aynı adı kullanırsanız rasgele durum çakışan bir nesne adı çakışmaları neden olabilir. Şirket adınızı veya ürün adının Otomasyon nesnesi adına benzersiz bazı yönlerinin içermelidir.  
+     Otomasyon nesneniz için benzersiz bir ad seçin. Ad çakışmaları tahmin edilemez ve birden fazla proje türü adın aynısını kullanırsanız, rasgele oluşturulabilecek çakışan bir nesne adı Çarpışmaları neden. Şirket adınızı veya benzersiz bir unsurunu Otomasyon nesne adını, ürün adı içermesi gerekir.  
   
-     Özel `Projects` koleksiyon nesnesi proje Otomasyon modelinizi kalan kısmı için bir kolaylık giriş noktasıdır. Proje nesnenizin da erişilebilir <xref:EnvDTE.Solution> projesi koleksiyonu. Tüketicilerine ile ilgili kod ve kayıt defteri girdileri oluşturduktan sonra `Projects` koleksiyonu nesneleri, uygulamanız, standart nesneleri proje modeli için kalan sağlamalıdır. Daha fazla bilgi için bkz: [modelleme projesi](../../extensibility/internals/project-modeling.md).  
+     Özel `Projects` koleksiyon nesnesi, proje otomasyon modeli kalan kısmı için bir kolaylık giriş noktasıdır. Proje nesnenizin de erişilebilir <xref:EnvDTE.Solution> proje koleksiyonu. Tüketicileriyle sağlayan ilgili kod ve kayıt defteri girdileri oluşturduktan sonra `Projects` koleksiyon nesnelerini, uygulamanız, standart nesneleri proje modeli için kalan sağlamalıdır. Daha fazla bilgi için [proje modelleme](../../extensibility/internals/project-modeling.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

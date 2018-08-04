@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db564dfb019525d929b21d74cf521f7b82046445
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 2eeffea641fd6d571b8b682aebab7f7d0ff83a41
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468809"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499074"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python etkileşimli pencere ile çalışma
 
@@ -103,7 +103,6 @@ Girme `dir()` bir kapsamda işlev adlarını, sınıflar ve değişkenleri de da
 
 ![Etkileşimli pencerede importlib kapsamı](media/interactive-importlib-scope.png)
 
-<a name="send-code-to-interactive-command"></a>
 ## <a name="send-to-interactive-command"></a>Etkileşimli komutu Gönder
 
 İçinde yanı sıra **etkileşimli** penceresi doğrudan Kod Düzenleyicisi'nde seçebilirsiniz sağ tıklatın ve seçin **etkileşime Gönder** veya basın **Ctrl** + **Girin**.

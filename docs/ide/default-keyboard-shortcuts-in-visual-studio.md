@@ -15,36 +15,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd55fbe297e46fb448bbd2087f36df54a1d56c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927353"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513180"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
-Klavye erişilebilirlik hakkında daha fazla bilgi için bkz: [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md) ve [nasıl yapılır: klavyeyi özel olarak kullanma](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Klavye erişilebilirliği hakkında daha fazla bilgi için bkz: [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md) ve [nasıl yapılır: klavyeyi özel olarak kullanma](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-Uygun klavye kısayolu seçerek çeşitli komutlar ve Visual Studio'da Pencereleri erişebilirsiniz. Bu konu, Visual Studio yüklendiğinde seçmiş olabilirsiniz genel geliştirme profili için varsayılan kısayolları listeler. Seçtiğiniz profil olsun, bir komut için kısayol açarak tanımlayabilirsiniz **seçenekleri** iletişim kutusu, genişletme **ortam** düğümünü ve ardından seçme **klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
+Çeşitli komutlara ve pencerelere Visual Studio'da uygun klavye kısayolunu seçerek erişebilirsiniz. Bu konuda, Visual Studio'yu yüklerken tercih etmiş genel geliştirme profiline ilişkin varsayılan kısayollar listelenmektedir. Seçtiğiniz profilden bağımsız olarak açarak bir komutun kısayolunu belirleyebilirsiniz **seçenekleri** genişletme iletişim kutusu, **ortam** düğümünü ve ardından **klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
 
-Ortak klavye kısayolları ve diğer verimlilik bilgileri listesi için bkz: [varsayılan Visual Studio'daki sık kullanılan komutlar için klavye kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klavye ipuçları](../ide/tips-and-tricks-for-visual-studio.md), ve [ Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md).
+Ortak klavye kısayollarının ve diğer üretkenlik bilgilerinin bir listesi için bkz. [Visual Studio'daki sık kullanılan komutlar için klavye kısayolları varsayılan](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klavye ipuçları](../ide/tips-and-tricks-for-visual-studio.md), ve [ Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md).
 
 Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kısayollarını kullanarak erişim sağlayabilmeniz bakımından genel kabul edilen komutlar yer almaktadır:
 
 |||||
 |-|-|-|-|
-|[Çözümleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[düzenleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+|[Analiz edin](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Düzenle](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
 |[Mimari](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Düzenleyici bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Proje ve çözüm bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Test Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Derleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Dosya](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Yeniden düzenleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Araçlar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Sınıf Görünümü Bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Yardım](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Çözüm Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[Hata ayıklama](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Yük testi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Takım](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Pencere](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Hata ayıklayıcı bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Diğer bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
-|[Tanılama hub'ı](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
+|[Tanılama Merkezi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
 ##  <a name="bkmk_global"></a> Genel
 
-###  <a name="bkmk_analyze"></a> Çözümleme
+###  <a name="bkmk_analyze"></a> Analiz edin
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
@@ -77,22 +77,22 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
 |Debug.ApplyCodeChanges|**Alt + F10**|
-|Debug.Autos|**Ctrl + Alt + V A**|
+|Debug.Autos|**Ctrl + Alt + V, A**|
 |Debug.BreakAll|**Ctrl + Alt + Break**|
 |Debug.BreakatFunction|**CTRL + B**|
 |Debug.Breakpoints|**Ctrl + Alt + B**|
 |Debug.CallStack|**Ctrl + Alt + C**|
-|Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9**|
+|Debug.DeleteAllBreakpoints|**CTRL + SHIFT + F9**|
 |Debug.DiagnosticsHub.Launch|**Alt + F2**|
 |Debug.Disassembly|**Ctrl + Alt + D**|
-|Debug.DOMExplorer|**Ctrl + Alt + V D**|
+|Debug.DOMExplorer|**Ctrl + Alt + V, D**|
 |Debug.EnableBreakpoint|**CTRL + F9**|
 |Debug.Exceptions|**Ctrl + Alt + E**|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl + Shift + F11**|
-|Debug.Graphics.StartDiagnostics|**Alt + F5'e**|
+|Debug.Graphics.StartDiagnostics|**Alt + F5**|
 |Debug.Immediate|**Ctrl + Alt + ı**|
 |Debug.IntelliTraceCalls|**Ctrl + Alt + Y, T**|
-|Debug.IntelliTraceEvents|**Ctrl + Alt + E, F**|
+|Debug.IntelliTraceEvents|**Ctrl + Alt + Y, F**|
 |Debug.JavaScriptConsole|**Ctrl + Alt + V, C**|
 |Debug.Locals|**Ctrl + Alt + V, L**|
 |Debug.LocationToolbar.ProcessCombo|**CTRL + 5**|
@@ -105,19 +105,19 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Debug.Memory3|**Ctrl + Alt + M, 3**|
 |Debug.Memory4|**Ctrl + Alt + M, 4**|
 |Debug.Modules|**Ctrl + Alt + U**|
-|Debug.ParallelStacks|**Ctrl + Shift + D, S**|
-|Debug.ParallelWatch1|**Ctrl + Shift + D, 1**|
-|Debug.ParallelWatch2|**Ctrl + Shift + D, 2**|
-|Debug.ParallelWatch3|**Ctrl + Shift + D, 3**|
-|Debug.ParallelWatch4|**Ctrl + Shift + D, 4**|
+|Debug.ParallelStacks|**CTRL + SHIFT + D, S**|
+|Debug.ParallelWatch1|**CTRL + SHIFT + D, 1**|
+|Debug.ParallelWatch2|**CTRL + SHIFT + D, 2**|
+|Debug.ParallelWatch3|**CTRL + SHIFT + D, 3**|
+|Debug.ParallelWatch4|**CTRL + SHIFT + D, 4**|
 |Debug.Processes|**Ctrl + Alt + Z**|
-|Debug.QuickWatch|**ÜST KARAKTER + F9**<br /><br /> veya<br /><br /> **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**SHIFT + F9**<br /><br /> veya<br /><br /> **Ctrl + Alt + Q**|
 |Debug.RefreshWindowsapp|**Ctrl + Shift + R**|
 |Debug.Registers|**Ctrl + Alt + G**|
 |Debug.Restart|**Ctrl + Shift + F5**|
 |Debug.RunToCursor|**CTRL + F10**|
-|Debug.SetNextStatement|**CTRL + SHIFT + F10**|
-|Debug.ShowCallStackonCodeMap|**Ctrl + Shift +'**|
+|Debug.SetNextStatement|**Ctrl + Shift + F10**|
+|Debug.ShowCallStackonCodeMap|**CTRL + SHIFT +'**|
 |Debug.ShowNextStatement|**Alt + Num** *|
 |Debug.Start|**F5**|
 |Debug.StartWindowsPhoneApplicationAnalysis|**Alt + F1**|
@@ -126,12 +126,12 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Debug.StepIntoCurrentProcess|**Ctrl + Alt + F11**|
 |Debug.StepIntoSpecific|**Shift + Alt + F11**|
 |Debug.StepOut|**Shift+F11**|
-|Debug.StepOutCurrentProcess|**Ctrl + Shift + Alt + F11**|
+|Debug.StepOutCurrentProcess|**CTRL + SHIFT + Alt + F11**|
 |Debug.StepOver|**F10**|
 |Debug.StepOverCurrentProcess|**Ctrl + Alt + F10**|
-|Debug.StopDebugging|**Shift + F5'e**|
+|Debug.StopDebugging|**Shift + F5**|
 |Debug.StopPerformanceAnalysis|**Shift + Alt + F2**|
-|Debug.Tasks|**Ctrl + Shift + D, K**|
+|Debug.Tasks|**CTRL + SHIFT + D, K**|
 |Debug.Threads|**Ctrl + Alt + H**|
 |Debug.ToggleBreakpoint|**F9**|
 |Debug.ToggleDisassembly|**CTRL + F11**|
@@ -148,23 +148,23 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt + F9 A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt + F9 S**|
 
-###  <a name="bkmk_diagnostics"></a> Tanılama hub'ı
+###  <a name="bkmk_diagnostics"></a> Tanılama Merkezi
 
 |Komut|Klavye kısayolu|
 |-------------|-----------------------|
 |DiagnosticsHub.StopCollection|**Ctrl + Alt + F2**|
 
-###  <a name="bkmk_edit"></a> düzenleme
+###  <a name="bkmk_edit"></a> Düzenle
 
 |Komutlar|Klavye kısayolları|
 |--------------|-|
-|Edit.Copy|**CTRL + C**<br /><br /> veya<br /><br /> **CTRL + INS**|
-|Edit.Cut|**CTRL + X**<br /><br /> veya<br /><br /> **Shift + Sil**|
-|Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> veya<br /><br /> **Ctrl + Shift + INS**|
+|Edit.Copy|**CTRL + C**<br /><br /> veya<br /><br /> **CTRL + bileşenleri**|
+|Edit.Cut|**CTRL + X**<br /><br /> veya<br /><br /> **Shift + Delete**|
+|Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> veya<br /><br /> **Ctrl + Shift + bileşenleri**|
 |Edit.Delete|**Sil**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
-|Edit.FindinFiles|**Ctrl + Shift + F**|
+|Edit.FindinFiles|**CTRL + SHIFT + F**|
 |Edit.FindNext|**F3**|
 |Edit.FindNextSelected|**CTRL + F3**|
 |Edit.FindPrevious|**Shift + F3**|
@@ -189,26 +189,26 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl + Shift + G**|
-|Edit.Paste|**CTRL + V**<br /><br /> veya<br /><br /> **Üst karakter + INS**|
+|Edit.Paste|**CTRL + V**<br /><br /> veya<br /><br /> **Shift + bileşenleri**|
 |Edit.PreviousBookmark|**CTRL + K, Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + P**|
 |Edit.QuickFindSymbol|**Shift + Alt + F12**|
-|Edit.Redo|**CTRL + Y**<br /><br /> veya<br /><br /> **Ctrl + Shift + Z**<br /><br /> veya<br /><br /> **Shift + Alt + Geri Al**|
+|Edit.Redo|**CTRL + Y**<br /><br /> veya<br /><br /> **Ctrl + Shift + Z**<br /><br /> veya<br /><br /> **SHIFT + Alt + Backspace**|
 |Edit.RefreshRemoteReferences|**Ctrl + Shift + J**|
 |Edit.Replace|**CTRL + H**|
 |Edit.ReplaceinFiles|**Ctrl + Shift + H**|
 |Edit.SelectAll|**CTRL + A**|
-|Edit.SelectNextControl|**Sekmesi**|
-|Edit.SelectPreviousControl|**Üst karakter + sekme**|
+|Edit.SelectNextControl|**sekmesi**|
+|Edit.SelectPreviousControl|**Shift + Sekme**|
 |Edit.ShowTileGrid|**Girin**|
-|Edit.SizeControlDown|**Ctrl + Shift + aşağı ok**|
-|Edit.SizeControlDownGrid|**Shift + aşağı ok**|
-|Edit.SizeControlLeft|**Ctrl + Shift + Sol Ok**|
-|Edit.SizeControlLeftGrid|**Shift + Sol Ok**|
+|Edit.SizeControlDown|**CTRL + SHIFT + Aşağı Ok**|
+|Edit.SizeControlDownGrid|**SHIFT + Aşağı Ok**|
+|Edit.SizeControlLeft|**CTRL + SHIFT + Sol Ok**|
+|Edit.SizeControlLeftGrid|**SHIFT + Sol Ok**|
 |Edit.SizeControlRight|**Ctrl + Shift + sağ ok**|
-|Edit.SizeControlRightGrid|**Shift + sağ ok**|
-|Edit.SizeControlUp|**Ctrl + Shift + Yukarı Ok**|
-|Edit.SizeControlUpGrid|**Shift + Yukarı Ok**|
+|Edit.SizeControlRightGrid|**SHIFT + sağ ok**|
+|Edit.SizeControlUp|**CTRL + SHIFT + Yukarı Ok**|
+|Edit.SizeControlUpGrid|**SHIFT + Yukarı Ok**|
 |Edit.StopSearch|**Alt + F3, S**|
 |Edit.SurroundWith|**CTRL + K, Ctrl + S**|
 |Edit.Undo|**CTRL + Z**<br /><br /> veya<br /><br /> **Alt + Geri Al**|
@@ -265,10 +265,10 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
-|Project.AddExistingItem|**Shift + Alt + A**|
+|Project.AddExistingItem|**SHIFT + Alt + A**|
 |Project.AddNewItem|**Ctrl + Shift + A**|
-|Project.ClassWizard|**Ctrl + Shift + X**|
-|Project.Override|**Ctrl + Alt + INS**|
+|Project.ClassWizard|**CTRL + SHIFT + X**|
+|Project.Override|**Ctrl + Alt + Bileşenleri**|
 |Project.Previewchanges|**Alt +; Alt + C**|
 |Project.Publishselectedfiles|**Alt +; Alt + P**|
 |Project.Replaceselectedfilesfromserver|**Alt +; Alt + R**|
@@ -320,10 +320,10 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL + 0, Ctrl + P**<br /><br /> veya<br /><br /> **CTRL + 0, P**|
 |TeamFoundationContextMenus.Commands.GoToReports|**CTRL + 0, Ctrl + R**<br /><br /> veya<br /><br /> **CTRL + 0, R**|
 |TeamFoundationContextMenus.Commands.GoToSettings|**CTRL + 0, Ctrl + S**<br /><br /> veya<br /><br /> **CTRL + 0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0, Ctrl + A**<br /><br /> veya<br /><br /> **CTRL + 0 ' A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0, Ctrl + W**<br /><br /> veya<br /><br /> **CTRL + W 0**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0, Ctrl + A**<br /><br /> veya<br /><br /> **CTRL + 0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0, Ctrl + W**<br /><br /> veya<br /><br /> **CTRL + 0, W**|
 
-###  <a name="bkmk_test"></a> test etme
+###  <a name="bkmk_test"></a> Test
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
@@ -357,8 +357,8 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.ArchitectureExplorer|**CTRL +\\, Ctrl + R**|
 |View.Backward|**Alt + sol ok**|
 |View.BookmarkWindow|**CTRL + K, Ctrl + W**|
-|View.BrowseNext|**Ctrl + Shift + 1**|
-|View.BrowsePrevious|**Ctrl + Shift + 2**|
+|View.BrowseNext|**CTRL + SHIFT + 1**|
+|View.BrowsePrevious|**CTRL + SHIFT + 2**|
 |View.CallHierarchy|**Ctrl + Alt + K**|
 |View.ClassView|**Ctrl + Shift + C**|
 |View.ClassViewGoToSearchCombo|**CTRL + K, Ctrl + V**|
@@ -371,7 +371,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.F#Interactive|**Ctrl + Alt + F**|
 |View.FindSymbolResults|**Ctrl + Alt + F12**|
 |View.Forward|**Alt + sağ ok**|
-|View.ForwardBrowseContext|**Ctrl + Shift + 7**|
+|View.ForwardBrowseContext|**CTRL + SHIFT + 7**|
 |View.FullScreen|**Shift + Alt + Enter**|
 |View.NavigateBackward|**CTRL +-**|
 |View.NavigateForward|**Ctrl + Shift +-**|
@@ -380,10 +380,10 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL + K, Ctrl + R**|
 |View.Output|**Ctrl + Alt + O**|
-|View.PopBrowseContex|**Ctrl + Shift + 8**|
+|View.PopBrowseContex|**CTRL + SHIFT + 8**|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift + F4**|
-|View.ResourceView|**Ctrl + Shift + E**|
+|View.ResourceView|**CTRL + SHIFT + E**|
 |View.ServerExplorer|**Ctrl + Alt + S**|
 |View.ShowSmartTag|**Shift + Alt + F10**<br /><br /> veya<br /><br /> **Ctrl+.**|
 |View.SolutionExplorer|**Ctrl + Alt + L**|
@@ -395,8 +395,8 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.ViewCode|**F7**|
 |View.ViewDesigner|**Shift + F7**|
 |View.WebBrowser|**Ctrl + Alt + R**|
-|View.ZoomIn|**Ctrl + Shift +.**|
-|View.ZoomOut|**Ctrl + Shift +,**|
+|View.ZoomIn|**CTRL + SHIFT +.**|
+|View.ZoomOut|**CTRL + SHIFT +,**|
 
 ###  <a name="bkmk_window"></a> Pencere
 
@@ -414,7 +414,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Window.NextSplitPane|**F6**|
 |Window.NextTab|**Ctrl + Alt + PgDn**<br /><br /> veya<br /><br /> **CTRL + PgDn**|
 |Window.NextTabandAddtoSelection|**Ctrl + Shift + Alt + PgDn**|
-|Window.NextToolWindowNav|**Alt + F7**|
+|Window.NextToolWindowNav|**Alt + F7'ye**|
 |Window.PreviousDocumentWindow|**Ctrl + Shift + F6**|
 |Window.PreviousDocumentWindowNav|**Ctrl + Shift + Sekme**|
 |Window.PreviousPane|**Shift + Alt + F6**|
@@ -446,7 +446,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|**Alt + Home**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up|**Alt + Yukarı Ok**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5|**Alt + PgUp**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|**CTRL + R, R**|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|**CTRL + R R**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram|**Shift + Del**|
 |View.EntityDataModelBrowser|**CTRL + 1**|
 |View.EntityDataModelMappingDetails|**CTRL + 2**|
@@ -470,7 +470,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**CTRL + C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**Ctrl + Alt + D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**Shift + Alt + L**|
-|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**Ctrl + Shift + M**|
+|OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl|**Ctrl + Shift + L**|
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl + Alt + C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl + Shift + T**|
 
@@ -494,7 +494,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Diff.SideBySideView|**CTRL +\\, Ctrl + 2**|
 |Diff.SwitchBetweenLeftAndRight|**CTRL +\\, Ctrl + sekme**|
 |Diff.SynchronizeViewToggle|**CTRL +\\, Ctrl + aşağı ok**|
-|EditorContextMenus.CodeWindow.AddComment|**Ctrl + Shift + K**|
+|EditorContextMenus.CodeWindow.AddComment|**CTRL + SHIFT + K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl + Shift + P**|
 
 ##  <a name="dom-explorer"></a>DOM Gezgini
@@ -519,11 +519,11 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl + Shift + K**<br /><br /> veya<br /><br /> **Ctrl + E, C**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**CTRL + SHIFT + K**<br /><br /> veya<br /><br /> **Ctrl + E, C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Sil**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Grafik tanılama
+##  <a name="graphics-diagnostics"></a>Grafik tanılaması
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
@@ -551,7 +551,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.MoveControlUp|**CTRL + YUKARI OK**|
 |Format.Bold|**CTRL + B**|
 |Format.ConverttoHyperlink|**CTRL + L**|
-|Format.InsertBookmark|**Ctrl + Shift + M**|
+|Format.InsertBookmark|**Ctrl + Shift + L**|
 |Format.Italic|**CTRL + ı**|
 |Format.Underline|**CTRL + U**|
 |Project.AddContentPage|**CTRL + M, Ctrl + C**|
@@ -572,7 +572,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |--------------|------------------------|
 |OtherContextMenus.HTMLContext.GoToController|**CTRL + M, Ctrl + G**|
 |View.NextView|**CTRL + PgDn**|
-|View.SynchronizeViews|**Ctrl + Shift + Y**|
+|View.SynchronizeViews|**CTRL + SHIFT + Y**|
 |View.ViewDesigner|**Shift + F7**|
 |Window.PreviousTab|**CTRL + PgUp**|
 
@@ -580,7 +580,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 
 |Komut|Klavye kısayolu|
 |-------------|-----------------------|
-|Edit.Delete|**Shift + Sil**|
+|Edit.Delete|**Shift + Delete**|
 
 ##  <a name="managed-resources-editor"></a>Yönetilen Kaynaklar Düzenleyicisi
 
@@ -588,8 +588,8 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |--------------|------------------------|
 |Edit.EditCell|**F2**|
 |Edit.Remove|**Sil**|
-|Edit.RemoveRow|**CTRL + Sil**|
-|Edit.SelectionCancel|**Çıkış**|
+|Edit.RemoveRow|**CTRL + Delete**|
+|Edit.SelectionCancel|**Kaçış**|
 |Resources.Audio|**CTRL + 4**|
 |Resources.Files|**CTRL + 5**|
 |Resources.Icons|**CTRL + 3**|
@@ -597,7 +597,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Resources.Other|**CTRL + 6**|
 |Resources.Strings|**CTRL + 1**|
 
-##  <a name="merge-editor-window"></a>Düzenleyici penceresini birleştirme
+##  <a name="merge-editor-window"></a>Birleştirme Düzenleyicisi penceresi
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
@@ -624,7 +624,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |SQL.ExpandWildcards|**CTRL + R, E**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + E**|
 |SQL.FullyqualifyNames|**CTRL + R, Q**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + Q**|
 |SQL.MovetoSchema|**CTRL + R, M**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + M**|
-|SQL.Rename|**F2**<br /><br /> veya<br /><br /> **CTRL + R, R**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + R**|
+|SQL.Rename|**F2**<br /><br /> veya<br /><br /> **CTRL + R R**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + R**|
 |ViewFileInScriptPanel|**Shift + Alt + PgDn**|
 
 ##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Veri Araçları, T-SQL Düzenleyicisi
@@ -632,20 +632,20 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
 |CommitAllEdits|**Shift + Alt + U**|
-|SQL.ExecuteWithDebugger|**Alt + F5'e**|
+|SQL.ExecuteWithDebugger|**Alt + F5**|
 |SQL.ExpandWildcards|**CTRL + R, E**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + E**|
 |SQL.FullyqualifyNames|**CTRL + R, Q**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + Q**|
 |SQL.MovetoSchema|**CTRL + R, M**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + M**|
-|SQL.Rename|**F2**<br /><br /> veya<br /><br /> **CTRL + R, R**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + R**|
+|SQL.Rename|**F2**<br /><br /> veya<br /><br /> **CTRL + R R**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + R**|
 |SQL.TSqlEditorCancelQuery|**Alt + Break**|
-|SQL.TSqlEditorExecuteQuery|**Ctrl + Shift + E**|
+|SQL.TSqlEditorExecuteQuery|**CTRL + SHIFT + E**|
 |SQL.TSqlEditorResultsAsFile|**CTRL + D, F**|
 |SQL.TSqlEditorResultsAsGrid|**CTRL + D, G**|
 |SQL.TSqlEditorResultsAsText|**CTRL + D, T**|
 |SQL.TSqlEditorShowEstimatedPlan|**CTRL + D, E**|
 |SQL.TSqlEditorToggleExecutionPlan|**CTRL + D, A**|
 |SQL.TSqlEditorToggleResultsPane|**CTRL + D, R**|
-|TSqlEditorCloneQuery|**Ctrl + Alt + H**|
+|TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Shift + Alt + PgDn**|
 
 ##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Veri Araçları, T-SQL PDW Düzenleyicisi
@@ -653,14 +653,14 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
 |SQL.TSqlEditorCancelQuery|**Alt + Break**|
-|SQL.TSqlEditorExecuteQuery|**Ctrl + Shift + E**|
+|SQL.TSqlEditorExecuteQuery|**CTRL + SHIFT + E**|
 |SQL.TSqlEditorResultsAsFile|**CTRL + D, F**|
 |SQL.TSqlEditorResultsAsGrid|**CTRL + D, G**|
 |SQL.TSqlEditorResultsAsText|**CTRL + D, T**|
 |SQL.TSqlEditorShowEstimatedPlan|**CTRL + D, E**|
 |SQL.TSqlEditorToggleExecutionPlan|**CTRL + D, A**|
 |SQL.TSqlEditorToggleResultsPane|**CTRL + D, R**|
-|TSqlEditorCloneQuery|**Ctrl + Alt + H**|
+|TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Shift + Alt + PgDn**|
 
 ##  <a name="page-inspector"></a>Sayfa Denetçisi
@@ -696,24 +696,24 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |--------------|------------------------|
 |Edit.BreakLine|**Girin**|
 |Edit.CharLeft|**Sol Ok**|
-|Edit.CharLeftExtend|**Shift + Sol Ok**|
+|Edit.CharLeftExtend|**SHIFT + Sol Ok**|
 |Edit.CharRight|**Sağ ok**|
-|Edit.CharRightExtend|**Shift + sağ ok**|
-|Edit.InsertTab|**Sekmesi**|
+|Edit.CharRightExtend|**SHIFT + sağ ok**|
+|Edit.InsertTab|**sekmesi**|
 |Edit.LineDown|**Aşağı ok**|
-|Edit.LineDownExtend|**Shift + aşağı ok**|
+|Edit.LineDownExtend|**SHIFT + Aşağı Ok**|
 |Edit.LineUp|**Yukarı Ok**|
-|Edit.LineUpExtend|**Shift + Yukarı Ok**|
+|Edit.LineUpExtend|**SHIFT + Yukarı Ok**|
 |Edit.MoveControlDown|**CTRL + AŞAĞI OK**|
 |Edit.MoveControlLeft|**Ctrl + sol ok**|
 |Edit.MoveControlRight|**CTRL + sağ ok**|
 |Edit.MoveControlUp|**CTRL + YUKARI OK**|
 |Edit.SelectionCancel|**ESC**|
-|Edit.SizeControlDown|**Ctrl + Shift + aşağı ok**|
-|Edit.SizeControlLeft|**Ctrl + Shift + Sol Ok**|
+|Edit.SizeControlDown|**CTRL + SHIFT + Aşağı Ok**|
+|Edit.SizeControlLeft|**CTRL + SHIFT + Sol Ok**|
 |Edit.SizeControlRight|**Ctrl + Shift + sağ ok**|
-|Edit.SizeControlUp|**Ctrl + Shift + Yukarı Ok**|
-|Edit.TabLeft|**Üst karakter + sekme**|
+|Edit.SizeControlUp|**CTRL + SHIFT + Yukarı Ok**|
+|Edit.TabLeft|**Shift + Sekme**|
 |View.ReportData|**Ctrl + Alt + D**|
 
 ##  <a name="sequence-diagram"></a>Sıralı diyagram
@@ -728,7 +728,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
 |Edit.EditCell|**F2**|
-|Edit.RemoveRow|**CTRL + Sil**|
+|Edit.RemoveRow|**CTRL + Delete**|
 |Edit.SelectionCancel|**ESC**|
 |View.ViewCode|**F7**|
 
@@ -779,19 +779,19 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
-|Edit.BreakLine|**Girin**<br /><br /> veya<br /><br /> **Shift + girin**|
+|Edit.BreakLine|**Girin**<br /><br /> veya<br /><br /> **Shift + Enter**|
 |Edit.CharLeft|**Sol Ok**|
-|Edit.CharLeftExtend|**Shift + Sol Ok**|
+|Edit.CharLeftExtend|**SHIFT + Sol Ok**|
 |Edit.CharLeftExtendColumn|**Shift + Alt + Sol Ok**|
 |Edit.CharRight|**Sağ ok**|
-|Edit.CharRightExtend|**Shift + sağ ok**|
+|Edit.CharRightExtend|**SHIFT + sağ ok**|
 |Edit.CharRightExtendColumn|**Shift + Alt + sağ ok**|
 |Edit.CharTranspose|**Ctrl+T**|
 |Edit.ClearBookmarks|**CTRL + K, Ctrl + L**|
 |Edit.CollapseAllOutlining|**CTRL + M, Ctrl + A**|
 |Edit.CollapseCurrentRegion|**CTRL + M, Ctrl + S**|
 |Edit.CollapseTag|**CTRL + M, Ctrl + T**|
-|Edit.CollapsetoDefinitions|**CTRL + M, Ctrl + O**|
+|Edit.CollapseToDefinitions|**CTRL + M, Ctrl + O**|
 |Edit.CommentSelection|**CTRL + K, Ctrl + C**|
 |Edit.CompleteWord|**Ctrl + Ara çubuğu**<br /><br /> veya<br /><br /> **Alt + sağ ok**|
 |Edit.CopyParameterTip|**Ctrl + Shift + Alt + C**|
@@ -799,42 +799,42 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.DeleteBackwards|**Geri Al**<br /><br /> veya<br /><br /> **Shift + Bkspce**|
 |Edit.DeleteHorizontalWhiteSpace|**CTRL + K, Ctrl +\**|
 |Edit.DocumentEnd|**CTRL + End**|
-|Edit.DocumentEndExtend|**Ctrl + Shift + End**|
+|Edit.DocumentEndExtend|**CTRL + SHIFT + End**|
 |Edit.DocumentStart|**Ctrl + Home**|
-|Edit.DocumentStartExtend|**Ctrl + Shift + Home**|
+|Edit.DocumentStartExtend|**CTRL + SHIFT + Home**|
 |Edit.ExpandAllOutlining|**CTRL + M, Ctrl + X**|
 |Edit.ExpandCurrentRegion|**CTRL + M, Ctrl + E**|
 |Edit.FormatDocument|**CTRL + K, Ctrl + D**|
 |Edit.FormatSelection|**CTRL + K, Ctrl + F**|
 |Edit.GotoBrace|**CTRL +]**|
-|Edit.GotoBraceExtend|**Ctrl + Shift +]**|
+|Edit.GotoBraceExtend|**CTRL + SHIFT +]**|
 |Edit.HideSelection|**CTRL + M, Ctrl + H**|
 |Edit.IncreaseFilterLevel|**Alt +.**|
 |Edit.IncrementalSearch|**CTRL + ı**|
-|Edit.InsertTab|**Sekmesi**|
+|Edit.InsertTab|**sekmesi**|
 |Edit.LineCut|**CTRL + L**|
-|Edit.LineDelete|**Ctrl + Shift + M**|
+|Edit.LineDelete|**Ctrl + Shift + L**|
 |Edit.LineDown|**Aşağı ok**|
-|Edit.LineDownExtend|**Shift + aşağı ok**|
+|Edit.LineDownExtend|**SHIFT + Aşağı Ok**|
 |Edit.LineDownExtendColumn|**Shift + Alt + Aşağı Ok**|
-|Edit.LineEnd|**Bitiş**|
-|Edit.LineEndExtend|**Shift + End**|
+|Edit.LineEnd|**Son**|
+|Edit.LineEndExtend|**SHIFT + End**|
 |Edit.LineEndExtendColumn|**Shift + Alt + End**|
 |Edit.LineOpenAbove|**Ctrl + Enter**|
-|Edit.LineOpenBelow|**Ctrl + Shift + Enter**|
+|Edit.LineOpenBelow|**CTRL + SHIFT + Enter**|
 |Edit.LineStart|**Giriş**|
-|Edit.LineStartExtend|**Üst karakter + Home**|
+|Edit.LineStartExtend|**SHIFT + Home**|
 |Edit.LineStartExtendColumn|**Shift + Alt + Home**|
 |Edit.LineTranspose|**Shift + Alt + T**|
 |Edit.LineUp|**Yukarı Ok**|
-|Edit.LineUpExtend|**Shift + Yukarı Ok**|
+|Edit.LineUpExtend|**SHIFT + Yukarı Ok**|
 |Edit.LineUpExtendColumn|**Shift + Alt + Yukarı Ok**|
 |Edit.ListMembers|**CTRL + J**|
 |Edit.MakeLowercase|**CTRL + U**|
-|Edit.MakeUppercase|**Ctrl + Shift + U**|
+|Edit.MakeUppercase|**CTRL + SHIFT + U**|
 |Edit.MoveSelectedLinesDown|**Alt + Aşağı Ok**|
 |Edit.MoveSelectedLinesUp|**Alt + Yukarı Ok**|
-|Edit.NextHighlightedReference|**Ctrl + Shift + aşağı ok**|
+|Edit.NextHighlightedReference|**CTRL + SHIFT + Aşağı Ok**|
 |Edit.OvertypeMode|**Ekle**|
 |Edit.PageDown|**PgDn**|
 |Edit.PageDownExtend|**Shift + PgDn**|
@@ -845,19 +845,19 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.PeekBackward|**Ctrl + Alt +-**|
 |Edit.PeekDefinition|**Alt+F12**|
 |Edit.PeekForward|**Ctrl + Alt +=**|
-|Edit.PreviousHighlightedReference|**Ctrl + Shift + Yukarı Ok**|
+|Edit.PreviousHighlightedReference|**CTRL + SHIFT + Yukarı Ok**|
 |Edit.QuickInfo|**CTRL + K, Ctrl + ı**|
 |Edit.ReverseIncrementalSearch|**Ctrl + Shift + ı**|
 |Edit.ScrollLineDown|**CTRL + AŞAĞI OK**|
 |Edit.ScrollLineUp|**CTRL + YUKARI OK**|
 |Edit.SelectCurrentWord|**CTRL + W**|
-|Edit.SelectionCancel|**Çıkış**|
+|Edit.SelectionCancel|**Kaçış**|
 |Edit.SelectToLastGoBack|**CTRL +=**|
 |Edit.ShowCodeLensMenu|**Alt +'**|
 |Edit.StopHidingCurrent|**CTRL + M, Ctrl + U**|
 |Edit.StopOutlining|**CTRL + M, Ctrl + P**|
 |Edit.SwapAnchor|**CTRL + K, Ctrl + A**|
-|Edit.TabLeft|**Üst karakter + sekme**|
+|Edit.TabLeft|**Shift + Sekme**|
 |Edit.ToggleAllOutlining|**CTRL + M, Ctrl + L**|
 |Edit.ToggleBookmark|**CTRL + K, Ctrl + K**|
 |Edit.ToggleCompletionMode|**Ctrl + Alt + boşluk**|
@@ -870,13 +870,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.ViewTop|**CTRL + PgUp**|
 |Edit.ViewTopExtend|**Ctrl + Shift + PgUp**|
 |Edit.ViewWhiteSpace|**CTRL + R, Ctrl + W**|
-|Edit.WordDeleteToEnd|**CTRL + Sil**|
+|Edit.WordDeleteToEnd|**CTRL + Delete**|
 |Edit.WordDeleteToStart|**CTRL + Geri Al**|
 |Edit.WordNext|**CTRL + sağ ok**|
 |Edit.WordNextExtend|**Ctrl + Shift + sağ ok**|
 |Edit.WordNextExtendColumn|**Ctrl + Shift + Alt + sağ ok**|
 |Edit.WordPrevious|**Ctrl + sol ok**|
-|Edit.WordPreviousExtend|**Ctrl + Shift + Sol Ok**|
+|Edit.WordPreviousExtend|**CTRL + SHIFT + Sol Ok**|
 |Edit.WordPreviousExtendColumn|**Ctrl + Shift + Alt + Sol Ok**|
 |Edit.WordTranspose|**Ctrl + Shift + T**|
 |EditorContextMenus.CodeWindow.ExecuteInInteractive|**Alt + girin**|
@@ -928,19 +928,19 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.ScrollColumnRight|**CTRL + sağ ok**|
 |Edit.ScrollLineDown|**CTRL + AŞAĞI OK**|
 |Edit.ScrollLineUp|**CTRL + YUKARI OK**|
-|Edit.SizeControlDown|**Shift + aşağı ok**|
-|Edit.SizeControlLeft|**Shift + Sol Ok**|
-|Edit.SizeControlRight|**Shift + sağ ok**|
-|Edit.SizeControlUp|**Shift + Yukarı Ok**|
-|Format.AlignBottoms|**Ctrl + Shift + aşağı ok**|
-|Format.AlignCenters|**ÜST KARAKTER + F9**|
-|Format.AlignLefts|**Ctrl + Shift + Sol Ok**|
+|Edit.SizeControlDown|**SHIFT + Aşağı Ok**|
+|Edit.SizeControlLeft|**SHIFT + Sol Ok**|
+|Edit.SizeControlRight|**SHIFT + sağ ok**|
+|Edit.SizeControlUp|**SHIFT + Yukarı Ok**|
+|Format.AlignBottoms|**CTRL + SHIFT + Aşağı Ok**|
+|Format.AlignCenters|**SHIFT + F9**|
+|Format.AlignLefts|**CTRL + SHIFT + Sol Ok**|
 |Format.AlignMiddles|**F9**|
 |Format.AlignRights|**Ctrl + Shift + sağ ok**|
-|Format.AlignTops|**Ctrl + Shift + Yukarı Ok**|
+|Format.AlignTops|**CTRL + SHIFT + Yukarı Ok**|
 |Format.ButtonBottom|**CTRL + B**|
 |Format.ButtonRight|**CTRL + R**|
-|Format.CenterHorizontal|**Ctrl + Shift + F9**|
+|Format.CenterHorizontal|**CTRL + SHIFT + F9**|
 |Format.CenterVertical|**CTRL + F9**|
 |Format.CheckMnemonics|**CTRL + M**|
 |Format.SizetoContent|**Shift + F7**|
@@ -956,7 +956,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |--------------|------------------------|
 |Image.AirbrushTool|**CTRL + A**|
 |Image.BrushTool|**CTRL + B**|
-|Image.CopyandOutlineSelection|**Ctrl + Shift + U**|
+|Image.CopyandOutlineSelection|**CTRL + SHIFT + U**|
 |Image.DrawOpaque|**CTRL + J**|
 |Image.EllipseTool|**Alt + P**|
 |Image.EraseTool|**Ctrl + Shift + ı**|
@@ -972,13 +972,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Image.Magnify|**Ctrl+Shift+M**|
 |Image.NewImageType|**Ekle**|
 |Image.NextColor|**CTRL +]**<br /><br /> veya<br /><br /> **CTRL + sağ ok**|
-|Image.NextRightColor|**Ctrl + Shift +]**<br /><br /> veya<br /><br /> **Ctrl + Shift + sağ ok**|
+|Image.NextRightColor|**CTRL + SHIFT +]**<br /><br /> veya<br /><br /> **Ctrl + Shift + sağ ok**|
 |Image.OutlinedEllipseTool|**Shift + Alt + P**|
 |Image.OutlinedRectangleTool|**Shift + Alt + R**|
 |Image.OutlinedRoundedRectangleTool|**Shift + Alt + W**|
 |Image.PencilTool|**CTRL + ı**|
 |Image.PreviousColor|**CTRL + [**<br /><br /> veya<br /><br /> **Ctrl + sol ok**|
-|Image.PreviousRightColor|**Ctrl + Shift + [**<br /><br /> veya<br /><br /> **Ctrl + Shift + Sol Ok**|
+|Image.PreviousRightColor|**CTRL + SHIFT +[**<br /><br /> veya<br /><br /> **CTRL + SHIFT + Sol Ok**|
 |Image.RectangleSelectionTool|**Shift + Alt + S**|
 |Image.RectangleTool|**Alt + R**|
 |Image.Rotate90Degrees|**Ctrl + Shift + H**|
@@ -989,8 +989,8 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Image.SmallerBrush|**CTRL +-**|
 |Image.TextTool|**Ctrl+T**|
 |Image.UseSelectionasBrush|**CTRL + U**|
-|Image.ZoomIn|**Ctrl + Shift +.**<br /><br /> veya<br /><br /> **CTRL + YUKARI OK**|
-|Image.ZoomOut|**Ctrl + Shift +,**<br /><br /> veya<br /><br /> **CTRL + AŞAĞI OK**|
+|Image.ZoomIn|**CTRL + SHIFT +.**<br /><br /> veya<br /><br /> **CTRL + YUKARI OK**|
+|Image.ZoomOut|**CTRL + SHIFT +,**<br /><br /> veya<br /><br /> **CTRL + AŞAĞI OK**|
 
 ##  <a name="vc-string-editor"></a>VC Dize Düzenleyicisi
 
@@ -1023,28 +1023,28 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |--------------|------------------------|
 |Edit.BreakLine|**Girin**|
 |Edit.CharLeft|**Sol Ok**|
-|Edit.CharLeftExtend|**Shift + Sol Ok**|
+|Edit.CharLeftExtend|**SHIFT + Sol Ok**|
 |Edit.CharRight|**Sağ ok**|
-|Edit.CharRightExtend|**Shift + sağ ok**|
-|Edit.DocumentEnd|**Bitiş**|
-|Edit.DocumentEndExtend|**Shift + End**|
+|Edit.CharRightExtend|**SHIFT + sağ ok**|
+|Edit.DocumentEnd|**Son**|
+|Edit.DocumentEndExtend|**SHIFT + End**|
 |Edit.DocumentStart|**Giriş**|
-|Edit.DocumentStartExtend|**Üst karakter + Home**|
-|Edit.InsertTab|**Sekmesi**|
+|Edit.DocumentStartExtend|**SHIFT + Home**|
+|Edit.InsertTab|**sekmesi**|
 |Edit.LineDown|**Aşağı ok**|
-|Edit.LineDownExtend|**Shift + Yukarı Ok**|
+|Edit.LineDownExtend|**SHIFT + Yukarı Ok**|
 |Edit.LineUp|**Yukarı Ok**|
-|Edit.LineUpExtend|**Shift + aşağı ok**|
+|Edit.LineUpExtend|**SHIFT + Aşağı Ok**|
 |Edit.MoveControlDown|**CTRL + AŞAĞI OK**|
 |Edit.MoveControlLeft|**Ctrl + sol ok**|
 |Edit.MoveControlRight|**CTRL + sağ ok**|
 |Edit.MoveControlUp|**CTRL + YUKARI OK**|
-|Edit.SelectionCancel|**Çıkış**|
-|Edit.SizeControlDown|**Ctrl + Shift + aşağı ok**|
-|Edit.SizeControlLeft|**Ctrl + Shift + Sol Ok**|
+|Edit.SelectionCancel|**Kaçış**|
+|Edit.SizeControlDown|**CTRL + SHIFT + Aşağı Ok**|
+|Edit.SizeControlLeft|**CTRL + SHIFT + Sol Ok**|
 |Edit.SizeControlRight|**Ctrl + Shift + sağ ok**|
-|Edit.SizeControlUp|**Ctrl + Shift + Yukarı Ok**|
-|Edit.TabLeft|**Üst karakter + sekme**|
+|Edit.SizeControlUp|**CTRL + SHIFT + Yukarı Ok**|
+|Edit.TabLeft|**Shift + Sekme**|
 
 ##  <a name="work-item-editor"></a>Çalışma Öğesi Düzenleyicisi
 
@@ -1087,7 +1087,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.IncreaseFilterLevel|**Alt +.**|
 |Edit.ListMembers|**CTRL + K, L**<br /><br /> veya<br /><br /> **CTRL + K, Ctrl + L**<br /><br /> veya<br /><br /> **CTRL + J**|
 |Edit.ParameterInfo|**CTRL + K, P**<br /><br /> veya<br /><br /> **CTRL + K, Ctrl + P**<br /><br /> veya<br /><br /> **Ctrl + Shift + Ara çubuğu**|
-|Edit.QuickInfo|**CTRL + K, t**<br /><br /> veya<br /><br /> **CTRL + K, Ctrl + ı**|
+|Edit.QuickInfo|**CTRL + K, ı**<br /><br /> veya<br /><br /> **CTRL + K, Ctrl + ı**|
 |WorkflowDesigner.Collapse|**Ctrl + E, Ctrl + C**<br /><br /> veya<br /><br /> **Ctrl + E, C**|
 |WorkflowDesigner.CollapseAll|veya|
 |WorkflowDesigner.ConnectNodes|**Ctrl + E, Ctrl + F**<br /><br /> veya<br /><br /> **Ctrl + E, F**|
@@ -1099,7 +1099,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |WorkflowDesigner.NavigateThroughDesigner|**Ctrl + Alt + F6**|
 |WorkflowDesigner.Restore|**Ctrl + E, Ctrl + R**<br /><br /> veya<br /><br /> **Ctrl + E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl + E, Ctrl + A**<br /><br /> veya<br /><br /> **Ctrl + E, A**|
-|WorkflowDesigner.ShowHideImportsDesigner|**Ctrl + E, Ctrl + ı**<br /><br /> veya<br /><br /> **Ctrl + E, t**|
+|WorkflowDesigner.ShowHideImportsDesigner|**Ctrl + E, Ctrl + ı**<br /><br /> veya<br /><br /> **Ctrl + E, ı**|
 |WorkflowDesigner.ShowHideOverviewMap|**Ctrl + E, Ctrl + O**<br /><br /> veya<br /><br /> **Ctrl + E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**Ctrl + E, Ctrl + V**<br /><br /> veya<br /><br /> **Ctrl + E, V**|
 |WorkflowDesigner.ToggleSelection|**Ctrl + E, Ctrl + S**<br /><br /> veya<br /><br /> **Ctrl + E, S**|
@@ -1114,25 +1114,25 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**Ctrl + Alt +=**|
 |Design.ZoomOut|**Ctrl + Alt +-**|
-|Tasarımcı seçenekleri|**Ctrl + Shift +;**|
+|Tasarımcı seçenekleri|**CTRL + SHIFT +;**|
 |Format.EditText|**F2**|
 |Format.ResetLayout.All|**Ctrl + Shift + R**|
-|Proje kodu çalıştırma|**CTRL + F9**|
-|Timeline.Hide (yalnızca karışım)|**CTRL + H**|
-|Timeline.Lock (yalnızca karışım)|**CTRL + L**|
-|Timeline.Show (yalnızca karışım)|**Ctrl + Shift + H**|
-|Timeline.Unlock (yalnızca karışım)|**Ctrl + Shift + M**|
-|View.EdgeLeftMoveLeft|**Ctrl + Shift +,**|
-|View.EdgeLeftMoveRight|**Ctrl + Shift +.**|
-|View.EdgeRightMoveLeft|**Ctrl + Shift + Alt +,**|
-|View.EdgeRightMoveRight|**Ctrl + Shift + Alt +.**|
+|Proje kodunu Çalıştır|**CTRL + F9**|
+|Timeline.Hide (yalnızca Blend)|**CTRL + H**|
+|Timeline.Lock (yalnızca Blend)|**CTRL + L**|
+|Timeline.Show (yalnızca Blend)|**Ctrl + Shift + H**|
+|Timeline.Unlock (yalnızca Blend)|**Ctrl + Shift + L**|
+|View.EdgeLeftMoveLeft|**CTRL + SHIFT +,**|
+|View.EdgeLeftMoveRight|**CTRL + SHIFT +.**|
+|View.EdgeRightMoveLeft|**CTRL + SHIFT + Alt +,**|
+|View.EdgeRightMoveRight|**CTRL + SHIFT + Alt +.**|
 |View.ShowPropertyMarkerMenu|**Ctrl + Ara çubuğu**|
 
 ##  <a name="xml-text-editor"></a>XML (Metin) Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
-|XML.StartXSLTDebugging|**Alt + F5'e**|
+|XML.StartXSLTDebugging|**Alt + F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl + Alt + F5**|
 
 ##  <a name="xml-schema-designer"></a>XML Şema Tasarımcısı

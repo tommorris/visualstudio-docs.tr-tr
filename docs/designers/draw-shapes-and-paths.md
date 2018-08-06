@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923955"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513104"
 ---
 # <a name="draw-shapes-and-paths"></a>Şekiller ve yollar çizin
+
 XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtgen, daire veya elips. A *yolu* bir şekil daha esnek bir sürümüdür. Yeni şekil için bunları birleştirmek ya da bunları yeniden şekillendirmek gibi şeyler.
 
- Şekiller ve yollar iyi yüksek çözünürlüklü ekranlar için ölçeklendirme vektör grafik kullanın. Vektör grafikleri hakkında daha fazla bilgi edinmek istiyorsanız bkz [vektör grafikleri nelerdir](https://www.youtube.com/watch?v=MoCSwF0n-io) veya [vektör grafikleri](http://www.webopedia.com/TERM/V/vector_graphics.html).
-
- **Bu konuda:**
-
--   [Bir şekil çizme](#Shape)
-
--   [Bir yol çizin](#Path)
-
--   [Bir şekli bir yola Dönüştür](#Convert)
-
--   [Yolları Birleştir](#Combine)
-
--   [Bileşik yol Oluştur](#Compound)
-
--   [Bir kırpma yolunu oluşturun](#Clipping)
+Şekiller ve yollar iyi yüksek çözünürlüklü ekranlar için ölçeklendirme vektör grafik kullanın. Vektör grafikleri hakkında daha fazla bilgi edinmek istiyorsanız bkz [vektör grafikleri nelerdir](https://www.youtube.com/watch?v=MoCSwF0n-io) veya [vektör grafikleri](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
 ##  <a name="Shape"></a> Bir şekil çizme
  Şekillerde bulabilirsiniz **varlıklar** paneli.

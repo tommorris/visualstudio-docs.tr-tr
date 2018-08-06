@@ -28,28 +28,33 @@
   items:
     - name: Yönetilen kod için kod analizi
       items:
-        - name: Roslyn Çözümleyicilerini Yükleme
+        - name: FxCop’tan geçiş
+          href: fxcop-analyzers.yml
+          items:
+            - name: FxCop çözümleyicilerini yükleme
+              href: install-fxcop-analyzers.md
+        - name: Roslyn çözümleyicilerini yükleme
           href: install-roslyn-analyzers.md
-        - name: Roslyn Çözümleyicilerini Yapılandırma ve Kullanma
+        - name: Roslyn çözümleyicilerini yapılandırma ve kullanma
           href: use-roslyn-analyzers.md
-        - name: Otomatik Kod Analizini Etkinleştirme
+        - name: Otomatik kod analizini etkinleştirme
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-        - name: Tam Çözüm Analizini Etkinleştirme
+        - name: Tam çözüm analizini etkinleştirme
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Otomatik özelliği askıya alma
           href: automatic-feature-suspension.md
-        - name: Kod Analizini Elle Çalıştırma
+        - name: Kod analizini el ile çalıştırma
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: Uyarıları Gizleme
+        - name: Uyarıları gizleme
           href: in-source-suppression-overview.md
           items:
-            - name: Üretilen Kod İçin Kod Analizi Uyarılarını Gizleme
+            - name: Üretilen kod için kod analizi uyarılarını gizleme
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Kod Analizi Sözlüğünü Özelleştirme
+        - name: Kod analizi sözlüğünü özelleştirme
           href: how-to-customize-the-code-analysis-dictionary.md
-        - name: Anonim Metotlar ve Kod Çözümleme
+        - name: Anonim metotlar ve kod çözümleme
           href: anonymous-methods-and-code-analysis.md
-        - name: Yönetilen Kod Hatası için İş Öğesi Oluşturma
+        - name: Yönetilen kod hatası için iş öğesi oluşturma
           href: how-to-create-a-work-item-for-a-managed-code-defect.md
     - name: C/C++ için kod analizi
       items:

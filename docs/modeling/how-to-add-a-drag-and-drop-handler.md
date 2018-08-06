@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513513"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566635"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 
@@ -50,14 +50,13 @@ Yeni dosya için sürükleme işlemi yanıt vermelidir Şekil veya diyagram sın
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -Bu şekil veya diyagram fare işaretçisini ye dayanıyorsa sırasında kullanıcı fare düğmesi durumunda yayımlarsa bu yöntem çağrılır `OnDragOver(DiagramDragEventArgs e)` önceden ayarlanan `e.Effect` dışında bir değere `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ Yeni dosya için sürükleme işlemi yanıt vermelidir Şekil veya diyagram sın
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -Bu yöntem, kullanıcı bir şekil veya diyagram çift tıkladığında çağrılır.
@@ -76,7 +74,7 @@ Yeni dosya için sürükleme işlemi yanıt vermelidir Şekil veya diyagram sın
 
 Tanımlama `IsAcceptableDropItem(e)` sürüklenen öğe kabul edilebilir olup ve öğe bırakıldığında modelinizi güncelleştirilecek ProcessDragDropItem(e) belirlemek için. Bu yöntemler olay bağımsız değişkenlerini öğesi ilk ayıklamanız gerekir. Bunu nasıl yapacağınız hakkında daha fazla bilgi için bkz. [sürüklenen öğe için bir başvuru almak nasıl](#extracting).
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>MEF kullanarak hareket işleyicisi tanımlama
+## <a name="define-gesture-handlers-by-using-mef"></a>MEF kullanarak hareket işleyicileri tanımlayın
 
 DSL'nizi için kendi işleyicilerini tanımlamak için üçüncü taraf geliştiriciler istiyorsanız bu yöntemi kullanın. Kullanıcılar, bunlar DSL'nizi yükledikten sonra üçüncü taraf uzantıları yüklemeye seçebilirsiniz.
 
@@ -148,7 +146,6 @@ Sürükle kaynak bilgileri kullanılabildiği biçimleri bulmak için hata ayık
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      UML şekiller kabul etmek için deneme tarafından UML Şekil sınıfları GUID'lerini belirleyin. Olduğunu genellikle birden fazla öğe türüne ilişkin herhangi bir diyagram üzerindeki unutmayın. Ayrıca bir DSL veya UML diyagramından sürüklenen nesnenin şeklini, model öğesi olduğunu unutmayın.
@@ -163,7 +160,7 @@ Bir DSL öğesi sürüklenen öğe ise kaynak modeli açmak ve öğesine erişme
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Model veri yolu için bir DSL projesini hazırlama
 
-1.  DSL kaynak tarafından erişilebilir hale getirmeniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model veri yolu:
+1.  DSL kaynak Visual Studio Model veri yolu tarafından erişilebilir hale getirir:
 
     1.  İndirip Visual Studio Model veri yolu uzantı zaten yüklü değilse yükleyin. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=185579).
 

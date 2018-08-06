@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bba5579fd47a9cf50d175777d704b0f12e8cb298
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 76cef03a8ceac47e06fb0ca13c667002895c6ac4
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382610"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567057"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing sık sorulan sorular
 
@@ -77,13 +77,13 @@ Evet. Live Unit Testing, .NET Core ve .NET Framework ile çalışır. .NET Core 
 
 - Çözümünüzdeki en az bir proje, NuGet başvurusu veya xUnit, NUnit, doğrudan başvuru olmalıdır veya MSTest test çerçevesi. Bu projeye karşılık gelen bir Visual Studio test bağdaştırıcısı NuGet paketini de başvurmalıdır. Visual Studio test bağdaştırıcısı aracılığıyla da başvurulabilen bir *.runsettings* dosya. *.Runsettings* dosya, aşağıdaki örneğe benzer bir giriş olmalıdır:
 
-   ```xml
-    <RunSettings>
-       <RunConfiguration>
+```xml
+<RunSettings>
+    <RunConfiguration>
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
-       </RunConfiguration>
-    </RunSettings>
-   ```
+     </RunConfiguration>
+</RunSettings>
+```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Neden Visual Studio projelerinizde desteklenen sürümüne başvurulan test bağdaştırıcısı yükselttikten sonra Live Unit Testing yanlış kapsamı gösteriyor mu?
 

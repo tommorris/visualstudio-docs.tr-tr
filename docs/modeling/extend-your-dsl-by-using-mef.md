@@ -9,19 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 189e1020b3e96da4adf88793ba30cc78a25cd263
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381038"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567083"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF kullanarak DSL'nizi genişletme
+
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özgü dil (DSL) genişletebilirsiniz. Sizin veya diğer geliştiriciler DSL tanımını ve program kodunu değiştirmeden DSL için uzantıları yazmak mümkün olacaktır. Bu tür uzantılar, menü komutlarını, sürükle ve bırak işleyicisi ve doğrulama içerir. Kullanıcılar DSL'nizi yükleyin ve ardından isteğe bağlı olarak uzantıları yükleyebilmek için mümkün olacaktır.
 
- MEF DSL'nizi içinde etkinleştirdiğinizde, tüm DSL birlikte oluşturuldukları olsa bile ek olarak, bunu daha kolay bazı özellikler, DSL'nin, yazma için olabilir.
+MEF DSL'nizi içinde etkinleştirdiğinizde, tüm DSL birlikte oluşturuldukları olsa bile ek olarak, bunu daha kolay bazı özellikler, DSL'nin, yazma için olabilir.
 
- MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](/dotnet/framework/mef/index).
+MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>MEF tarafından genişletilmesi DSL'nizi etkinleştirmek için
 
@@ -30,7 +31,7 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
      Dosya adı: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
-    >  Bu dosyadaki DslPackage\GeneratedCode\Constants.tt içinde tanımlanan GUID CommandSetId aynı GUID'i ayarlayın
+    > Bu dosyadaki DslPackage\GeneratedCode\Constants.tt içinde tanımlanan GUID CommandSetId aynı GUID'i ayarlayın
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -43,30 +44,30 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-     Dosya adı: `CommandExtensionRegistrar.tt`
+    Dosya adı: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-     Dosya adı: `ValidationExtensionEnablement.tt`
+    Dosya adı: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-     Dosya adı: `ValidationExtensionRegistrar.tt`
+    Dosya adı: `ValidationExtensionRegistrar.tt`
 
-     Bu dosya eklerseniz, doğrulama DSL'nizi anahtarları en az birini kullanarak etkinleştirmelisiniz **EditorValidation** DSL Gezgini içinde.
+    Bu dosya eklerseniz, doğrulama DSL'nizi anahtarları en az birini kullanarak etkinleştirmelisiniz **EditorValidation** DSL Gezgini içinde.
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-     Dosya adı: `PackageExtensionEnablement.tt`
+    Dosya adı: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -82,14 +83,14 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-     Dosya adı: `GestureExtensionEnablement.tt`
+    Dosya adı: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-     Dosya adı: `GestureExtensionController.tt`
+    Dosya adı: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -98,17 +99,17 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
 
 3.  Adlı varolan dosyaya aşağıdaki satırı ekleyin **DslPackage\Commands.vsct**:
 
-    ```
+    ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-     Var olan sonra satır Ekle `<Include>` yönergesi.
+    Var olan sonra satır Ekle `<Include>` yönergesi.
 
-4.  `Open DslDefinition.dsl.`
+4.  Açık *DslDefinition.dsl*.
 
 5.  DSL Gezgini içinde seçin **Editor\Validation**.
 
-6.  Özellikler penceresinde özelliklerinden en az birini adlı emin **kullanır...**  olduğu `true`.
+6.  Özellikler penceresinde özelliklerinden en az birini adlı emin **kullanan** olduğu `true`.
 
 7.  İçinde **Çözüm Gezgini** araç çubuğunda tıklatın **tüm Şablonları Dönüştür**.
 
@@ -116,10 +117,11 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
 
 8.  Derleme ve hala çalıştığından emin olmak için çözümü çalıştırın.
 
- DSL'nizi MEF özellikli sunulmuştur. Menü komutları, hareket işleyicileri ve doğrulama kısıtlamalarını MEF uzantıları yazabilirsiniz. DSL çözümünüzdeki diğer özel kod ile birlikte bu uzantıları yazabilirsiniz. Ayrıca, sizin veya diğer geliştiriciler ayrı yazabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DSL'nizi genişletme uzantıları.
+DSL'nizi MEF özellikli sunulmuştur. Menü komutları, hareket işleyicileri ve doğrulama kısıtlamalarını MEF uzantıları yazabilirsiniz. DSL çözümünüzdeki diğer özel kod ile birlikte bu uzantıları yazabilirsiniz. Ayrıca, sizin veya diğer geliştiriciler DSL'nizi genişletme ayrı Visual Studio uzantıları yazabilirsiniz.
 
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>MEF özellikli bir DSL için uzantı oluşturma
- MEF özellikli kendinize veya başka bir kullanıcı tarafından oluşturulan bir DSL erişiminiz varsa, uzantıları için yazabilirsiniz. Uzantılar, menü komutlarını, hareket işleyicileri veya doğrulama kısıtlamalarını eklemek için kullanılabilir. Bu uzantıları yazmak için kullandığınız bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzantısı (VSIX) çözümü. Çözüm iki bölümden oluşur: bir sınıf kitaplığı projesi, kod derleme yapıları ve derleme paketleri bir VSIX projesi.
+
+MEF özellikli kendinize veya başka bir kullanıcı tarafından oluşturulan bir DSL erişiminiz varsa, uzantıları için yazabilirsiniz. Uzantılar, menü komutlarını, hareket işleyicileri veya doğrulama kısıtlamalarını eklemek için kullanılabilir. Bu uzantıları yazmak için Visual Studio Uzantısı (VSIX) çözümü kullanın. Çözüm iki bölümden oluşur: bir sınıf kitaplığı projesi, kod derleme yapıları ve derleme paketleri bir VSIX projesi.
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Bir DSL uzantısı VSIX oluşturmak için
 
@@ -161,23 +163,25 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
 
          Bu, kullanıcıların DSL ve uzantınızı aynı anda yüklemesine olanak sağlar. Uzantınızı yalnızca kullanıcı DSL yüklü değilse yüklenir.
 
-9. Gözden geçirmek ve güncelleştirmek, diğer alanları **source.extension.vsixmanifest**. Tıklayın **sürümleri seçin** doğrulayın doğru [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sürümleri ayarlanır.
+9. Gözden geçirmek ve güncelleştirmek, diğer alanları **source.extension.vsixmanifest**. Tıklayın **sürümleri seçin** ve Visual Studio sürümleri doğru ayarlandığından emin olun.
 
 10. Sınıf kitaplığı projesi için kod ekleyin. Örnekler sonraki bölümde bir kılavuz olarak kullanın.
 
      Komut ve hareket doğrulama sınıfları herhangi bir sayıda ekleyebilirsiniz.
 
-11. Uzantıyı test etmek için basın **F5**. Deneysel örneğinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]oluşturun veya bir örneğin DSL dosyası açın.
+11. Uzantıyı test etmek için basın **F5**. Visual Studio'nun deneysel örneğinde oluşturun veya bir örneğin DSL dosyası açın.
 
 ## <a name="writing-mef-extensions-for-dsls"></a>MEF uzantıları için DSL'ler yazma
- Ayrı bir DSL uzantısı çözümü derleme kod projesinde uzantıları yazabilirsiniz. DSL bir parçası olarak, komutlar ve hareketler doğrulama kodu yazmak için kullanışlı bir yol olarak DslPackage projenizde, MEF de kullanabilirsiniz.
+
+Ayrı bir DSL uzantısı çözümü derleme kod projesinde uzantıları yazabilirsiniz. DSL bir parçası olarak, komutlar ve hareketler doğrulama kodu yazmak için kullanışlı bir yol olarak DslPackage projenizde, MEF de kullanabilirsiniz.
 
 ### <a name="menu-commands"></a>Menü Komutları
- Bir menü komutu yazmak için uygulayan bir sınıf tanımlama <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> adlı DSL'nizi içinde tanımlanan özniteliğine sahip sınıf önek *YourDsl*`CommandExtension`. Birden fazla menü komutu sınıfı yazabilirsiniz.
 
- `QueryStatus()` Kullanıcı diyagramda sağ tıkladığı zaman çağrılır. Geçerli seçimi inceleyin ve ayarlayın gerekir `command.Enabled` komutu geçerli olduğunda belirtmek için.
+Bir menü komutu yazmak için uygulayan bir sınıf tanımlama <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> adlı DSL'nizi içinde tanımlanan özniteliğine sahip sınıf önek *YourDsl*`CommandExtension`. Birden fazla menü komutu sınıfı yazabilirsiniz.
 
-```
+`QueryStatus()` Kullanıcı diyagramda sağ tıkladığı zaman çağrılır. Geçerli seçimi inceleyin ve ayarlayın gerekir `command.Enabled` komutu geçerli olduğunda belirtmek için.
+
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl; // My DSL
@@ -239,16 +243,15 @@ namespace MyMefExtension
     }
   }
 }
-
 ```
 
 ### <a name="gesture-handlers"></a>Hareket işleyicileri
- Bir hareket işleyicisi içine veya dışına diyagram üzerine yerden sürüklediğiniz nesnelerle giderebilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki örnek, dosyaları Windows Gezgini'nden diyagram üzerine sürükleyin. kullanıcının olanak sağlar. Dosya adlarını içeren öğeleri oluşturur.
 
- Diğer DSL modelleri ve UML modelleri ile etkileyen dağıtılacak işleyiciler yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Hareket işleyici içinde her yerden veya Visual Studio dışında diyagramdan sürüklediğiniz nesnelerle giderebilirsiniz. Aşağıdaki örnek, dosyaları Windows Gezgini'nden diyagram üzerine sürükleyin. kullanıcının olanak sağlar. Dosya adlarını içeren öğeleri oluşturur.
 
-```
+Diğer DSL modelleri ve UML modelleri ile etkileyen dağıtılacak işleyiciler yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl;
@@ -316,15 +319,15 @@ namespace MefExtension
     }
   }
 }
-
 ```
 
 ### <a name="validation-constraints"></a>Doğrulama kısıtlamaları
- Doğrulama yöntemlerinin işaretlenmiş `ValidationExtension` DSL ve ayrıca tarafından oluşturulan öznitelik <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Yöntemi, bir öznitelik tarafından işaretlenmemiş herhangi bir sınıf içinde görünebilir.
 
- Daha fazla bilgi için [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).
+Doğrulama yöntemlerinin işaretlenmiş `ValidationExtension` DSL ve ayrıca tarafından oluşturulan öznitelik <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Yöntemi, bir öznitelik tarafından işaretlenmemiş herhangi bir sınıf içinde görünebilir.
 
-```
+Daha fazla bilgi için [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).
+
+```csharp
 using Company.MyDsl;
 using Company.MyDsl.ExtensionEnablement;
 using Microsoft.VisualStudio.Modeling.Validation;
@@ -369,10 +372,9 @@ namespace MefExtension
           // Element to highlight when user double-clicks error:
           , elementToValidate);
 } } } }
-
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio Uzantıları Gönderme](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

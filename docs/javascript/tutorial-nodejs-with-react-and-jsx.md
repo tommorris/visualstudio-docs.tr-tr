@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 88810c2e4958e96bd5487ce1a5b059897b725b45
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132013"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567148"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve React uygulaması oluşturma
 
@@ -26,7 +26,7 @@ Visual Studio, kolayca bir Node.js projesi oluşturma ve IntelliSense ve Node.js
 
 Bu öğreticide, şunların nasıl yapılır:
 > [!div class="checklist"]
-> * Bir Node.js projesi oluşturma
+> * Node.js projesi oluşturma
 > * Npm paketleri ekleme
 > * React kodu uygulamanıza ekleyin
 > * JSX derleyin
@@ -95,7 +95,7 @@ Bu uygulama düzgün şekilde çalışması için npm modüllerini sayısı gere
 
     Projenin *package.json* dosyasını, Paket sürümü dahil olmak üzere yeni paket bilgileriyle güncelleştirilir.
 
-1. İçin arama yapın ve paketleri geri kalanını eklemek için kullanıcı arabirimini kullanmak yerine teker teker yapıştırın aşağıdaki kodu package.json içinde. Değiştirin `dependencies` bölümü bu kod ile:
+1. İçin arama yapın ve paketleri geri kalanını eklemek için kullanıcı arabirimini kullanmak yerine teker teker yapıştırın aşağıdaki kodu package.json içinde. Bunu yapmak için değiştirin `dependencies` bölümü bu kod ile:
 
     ```js
     "dependencies": {
@@ -110,9 +110,11 @@ Bu uygulama düzgün şekilde çalışması için npm modüllerini sayısı gere
     }
     ```
 
+    Yoksa hiçbir `dependencies` bölümü boş şablonu, sürümünde, onu Değiştir yerine mevcut bölüme eklemeniz gerekir.
+
 1. Sağ **npm** projenizdeki düğüm ve **güncelleştirme npm paketleri**.
 
-    Seçin **çıkış** paketleri yükleme ilerleme durumunu görmek için penceresi. Yükleme birkaç dakika sürebilir ve sonuçları hemen göremeyebilirsiniz.
+    Alt bölmede seçin **çıkış** paketleri yükleme ilerleme durumunu görmek için penceresi. Yükleme birkaç dakika sürebilir ve sonuçları hemen göremeyebilirsiniz. Çok seçtiğinizden emin olun, bir çıktı görmeniz **Npm** içinde **çıktıyı Göster** alanındaki **çıkış** penceresi.
 
     Bunlar yüklendikten sonra Çözüm Gezgini içinde görülen npm modüllerini aşağıdadır.
 
@@ -144,7 +146,7 @@ Bu basit bir uygulama için proje kök dizininde yeni proje dosyalarını ekleyi
 
 ## <a name="add-app-code"></a>Uygulama kodu ekleyin
 
-1. Açık *server.js* kodu aşağıdaki kodla değiştirin:
+1. Açık *server.js* ve varolan kodu aşağıdaki kodla değiştirin:
 
     ```javascript
     'use strict';

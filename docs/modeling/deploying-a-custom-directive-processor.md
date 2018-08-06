@@ -11,16 +11,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d58df5836173993664c5b01c100c5102867866f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953368"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566833"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Özel Yönerge İşlemcisi Dağıtma
 
-Özel yönerge işlemcisi Visual Studio'da herhangi bir bilgisayarda kullanmak için bu konuda açıklanan yöntemlerden biri tarafından kaydetmeniz gerekir.
+Özel yönerge işlemcisi, herhangi bir bilgisayarda Visual Studio'da kullanmak için bu konuda açıklanan yöntemlerin biriyle kaydetmeniz gerekir.
 
 Diğer yöntemler şunlardır:
 
@@ -30,11 +30,11 @@ Diğer yöntemler şunlardır:
 
 -   Bir kayıt defteri anahtarı ayarlayın. Bu yöntemde, yönerge işlemcisi için bir kayıt defteri girdisini ekleyin.
 
-Yalnızca metin şablonunuzda Visual Studio veya MSBuild dönüştürmek istiyorsanız aşağıdaki yöntemlerden birini kullanmanız gerekir. Kendi uygulamanızda özel bir ana bilgisayar kullanıyorsanız, her yönerge için yönerge işlemcisi bulmak özel ana bilgisayarınızın sorumluluğundadır.
+Yalnızca, metin şablonunda Visual Studio veya MSBuild dönüştürmek istiyorsanız aşağıdaki yöntemlerden birini kullanmanız gerekir. Kendi uygulamanızda özel bir ana bilgisayar kullanıyorsanız, her yönerge için yönerge işlemcisi bulmak özel ana bilgisayarınızın sorumluluğundadır.
 
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX'te Yönerge İşlemcisini Dağıtma
 
-Özel yönerge işlemcisi için ekleyebileceğiniz bir [Visual Studio Uzantısı (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
+Özel bir yönerge işlemcisi ekleyebilirsiniz bir [Visual Studio Uzantısı (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
  Aşağıdaki iki öğenin .vsix dosyasında bulunduğundan emin olmanız gerekir:
 
@@ -50,31 +50,31 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
 
 1.  Visual Studio'da bir VSIX projesi oluşturun.
 
-    -   İçinde **yeni proje** iletişim kutusunda, genişletin **Visual Basic** veya **Visual C#**, ardından **genişletilebilirlik**. Tıklatın **VSIX proje**.
+    -   İçinde **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**, ardından **genişletilebilirlik**. Tıklayın **VSIX projesi**.
 
-2.  İçinde **source.extension.vsixmanifest**, içerik türü ayarlayın ve desteklenen sürümleri.
+2.  İçinde **source.extension.vsixmanifest**, içerik türü ve desteklenen sürümleri ayarlayın.
 
-    1.  İçinde VSIX içine üzerinde Düzenleyicisi, bildirim **varlıklar** sekmesinde, seçin **yeni** ve yeni öğenin özelliklerini ayarlayın:
+    1.  VSIX bildirim düzenleyicisinde **varlıklar** sekmesini, **yeni** ve yeni öğenin özelliklerini ayarlayın:
 
          **İçerik türü** = **VSPackage**
 
          **Kaynak proje** = \<*geçerli proje*>
 
-    2.  Tıklatın **seçili sürümleri** ve kullanılabilmesi için yönerge işlemcisi istediğiniz yükleme türleri kontrol edin.
+    2.  Tıklayın **seçilen sürümler** ve yönerge işlemcisinin kullanılabilir olmasını istediğiniz yükleme türlerini işaretleyin.
 
 3.  .pkgdef dosyası ekleyin ve özelliklerini VSIX'e dahil edecek şekilde ayarlayın.
 
     1.  Bir metin dosyası oluşturun ve adlandırın \< *assemblyName*> .pkgdef.
 
-         \<*assemblyName*> projesinin adı genellikle aynıdır.
+         \<*assemblyName*> genellikle projenin adı ile aynı olur.
 
     2.  Çözüm Gezgini'nde seçin ve özelliklerini aşağıdaki gibi ayarlayın:
 
-         **Derleme eylemi** = **içeriği**
+         **Derleme eylemi** = **içerik**
 
-         **Çıktı Dizinine Kopyala** = **her zaman Kopyala**
+         **Çıkış Dizinine Kopyala** = **her zaman Kopyala**
 
-         **İçinde VSIX içine dahil** = **True**
+         **VSIX'e Ekle** = **True**
 
     3.  VSIX'in adını ayarlayın ve kimliğin benzersiz olmasını sağlayın.
 
@@ -89,7 +89,7 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
     "CodeBase"="$PackageFolder$\AssemblyName.dll"
     ```
 
-     Aşağıdaki adları kendi adlarıyla değiştirin: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName`, `AssemblyName`.
+     Şu adları kendi adlarınızla değiştirin: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName`, `AssemblyName`.
 
 5.  Aşağıdaki başvuruları projeye ekleyin:
 
@@ -109,7 +109,7 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
 
 2.  Yönerge işlemcisini başka bir bilgisayara yüklemek isterseniz .vsix dosyasını başka bir bilgisayara kopyalayın.
 
-3.  .vsix dosyasına çift tıklatın. Visual Studio Uzantı Yükleyicisi görüntülenir.
+3.  .vsix dosyasına çift tıklatın. Visual Studio uzantısı yükleyicisi görüntülenir.
 
 4.  Visual Studio'yu yeniden başlatın. Artık, özel yönerge işlemcisine başvuran yönergeleri içeren metin şablonlarını çalıştırmak mümkün olacaktır. Her yönerge bu şekildedir:
 
@@ -117,18 +117,18 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Özel yönerge işlemcisini kaldırmak veya kalıcı olarak devre dışı bırakmak için
 
-1.  Visual Studio'da **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
+1.  Visual Studio **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
 
-2.  Yönerge işlemcisi içeren VSIX seçin ve ardından **kaldırma** veya **devre dışı**.
+2.  Yönerge işlemcisini içeren VSIX'i seçin ve ardından **kaldırma** veya **devre dışı**.
 
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>VSIX'te bir Yönerge İşlemcisine Sorun Giderme İşlemi Yapma
  Yönerge işlemcisi çalışmazsa şu öneriler yardımcı olabilir:
 
--   Özel yönergesinde belirttiğiniz işlemci adı eşleşmelidir `CustomDirectiveProcessorName` .pkgdef dosyasında belirtilen.
+-   Özel yönergede belirttiğiniz işlemci adının eşleşmesi gerekir `CustomDirectiveProcessorName` .pkgdef dosyasında belirttiğiniz.
 
--   `IsDirectiveSupported` Yöntemi döndürmelidir `true` zaman, geçirilen adını, `CustomDirective`.
+-   `IsDirectiveSupported` Yöntemi döndürmelidir `true` adını geçirildiğinde, `CustomDirective`.
 
--   Uzantı Yöneticisi'nde uzantısı göremez, ancak sistem yüklemeye izin vermez, uzantı silme **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .
+-   Uzantı Yöneticisi'nde uzantıyı göremiyorsanız, ancak sistem yüklemenizi izin vermez, uzantısını silin **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .
 
 -   .Vsix dosyasını açın ve içeriğini inceleyin. Açmak için, dosya adı uzantısını .zip olarak değiştirin. .dll, .pkgdef ve extension.vsixmanifest dosyalarını içerdiğini doğrulayın. .vsixmanifest uzantı dosyası SupportedProducts düğümü için uygun listeyi içermelidir ve buna ek olarak İçerik düğümü altında bir VsPackage düğümü içermelidir:
 
@@ -143,7 +143,7 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
 
  Paket sınıfınıza şu öznitelikleri yerleştirin:
 
-```
+```csharp
 [ProvideDirectiveProcessor(typeof(DirectiveProcessorClass), "DirectiveProcessorName", "Directive processor description.")]
 ```
 
@@ -152,9 +152,9 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
 
  .pkgdef dosyası projeyi oluşturduğunuzda oluşturulur. VSPackage'i yüklediğinizde, .pkgdef dosyası yönerge işlemcisini kaydeder.
 
- .pkgdef dosyasının, genellikle bin\Debug veya bin\Release olan yapı klasöründe göründüğünü doğrulayın. Görünmüyorsa, .csproj dosyasını bir metin düzenleyicisinde açın ve aşağıdaki düğüm kaldırın: `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.
+ .pkgdef dosyasının, genellikle bin\Debug veya bin\Release olan yapı klasöründe göründüğünü doğrulayın. Görünmezse, .csproj dosyasını bir metin düzenleyicisinde açın ve şu düğümü kaldırın: `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.
 
- Daha fazla bilgi için bkz: [VSPackages](../extensibility/internals/vspackages.md).
+ Daha fazla bilgi için [VSPackages](../extensibility/internals/vspackages.md).
 
 ## <a name="setting-a-registry-key"></a>Bir Kayıt Defteri Anahtarını Ayarlama
  Bu, özel bir yönerge işlemcisi yükleme yöntemi en az tercih edilir. Yönerge işlemcisini etkinleştirmek veya devre dışı bırakmak için uygun bir yol sağlamaz; yönerge işlemcisinin başka kullanıcılara dağıtılması yöntemini de sağlamaz.
@@ -168,13 +168,13 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
 
 2.  Regedit içinde şuraya gidin:
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+     **Hkey_local_machıne\software\microsoft\visualstudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Visual Studio Deneysel sürümünde yönerge işlemcisi yüklemek istiyorsanız, "Exp" "11.0 sonra" ekleyin.
+     Visual Studio Deneysel sürümüne yönerge işlemcisi eklemek isterseniz "11.0" "sonuna Exp" ekleyin.
 
 3.  Yönerge işlemcisi sınıfıyla aynı ada sahip bir kayıt defteri anahtarı ekleyin.
 
-    -   Kayıt defteri ağacında sağ **DirectiveProcessors** düğümünü sağ **yeni**ve ardından **anahtar**.
+    -   Kayıt defteri ağacında sağ **DirectiveProcessors** düğümüne **yeni**ve ardından **anahtar**.
 
 4.  Yeni düğümünde, Sınıf ve CodeBase veya Derleme için dize değerlerini aşağıdaki tablolara göre ekleyin.
 
@@ -190,15 +190,15 @@ Bir .vsix dosyası oluşturmanın birkaç yolu vardır. Aşağıdaki yordam bir 
 |----------|----------|----------|
 |(Varsayılan)|REG_SZ|(değer ayarlı değil)|
 |örneği|REG_SZ|**\<Namespace adı >. \<Sınıf adı >**|
-|CodeBase|REG_SZ|**\<Yolunuzu >\\< derleme adı\>**|
+|CodeBase|REG_SZ|**\<Path >\\< derleme adınız\>**|
 
  Derleme GAC'deyse, kayıt defteri alt anahtarları aşağıdaki tabloda gibi görünmelidir:
 
 |Ad|Tür|Veri|
 |----------|----------|----------|
 |(Varsayılan)|REG_SZ|(değer ayarlı değil)|
-|örneği|REG_SZ|\<**Tam sınıf adı**>|
-|Derleme|REG_SZ|\<**GAC, derleme adı**>|
+|örneği|REG_SZ|\<**Tam nitelikli sınıf adınız**>|
+|Derleme|REG_SZ|\<**GAC'deki derleme adınız**>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

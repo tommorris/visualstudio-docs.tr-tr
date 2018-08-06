@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382054"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567187"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus modellerini diğer araçlar ve modelleri arasında bağlantılar oluşturmak için bir yöntem sağlar. Örneğin, etki alanına özgü dil (DSL) modelleri ve UML modellerini bağlayabilirsiniz. DSL tümleşik bir dizi oluşturabilirsiniz.
@@ -182,7 +182,7 @@ ms.locfileid: "39382054"
 
  Başvuruları oluşturacağı kod dosyasında, genellikle aşağıdaki ad alanlarını içeri aktarın gerekecektir:
 
-```
+```csharp
 // The namespace of the DSL you want to reference:
 using Fabrikam.FamilyTree;  // Exposed DSL
 using Fabrikam.FamilyTree.ModelBusAdapters;
@@ -199,7 +199,7 @@ using System.Linq;
 > [!NOTE]
 >  İşiniz bittiğinde ile bir bağdaştırıcı dispose gerekir. Bunu yapmanın en kolay yolu olan bir `using` deyimi. Aşağıdaki örnek bunu göstermektedir.
 
-```
+```csharp
 // The file path of a model instance of the FamilyTree DSL:
 string targetModelFile = "TudorFamilyTree.ftree";
 // Get the ModelBus service:
@@ -235,7 +235,7 @@ using (FamilyTreeAdapter adapter =
 
  Kullanabilmelerini istiyorsanız `modelReference` daha sonra dış türüne sahip bir etki alanı özelliğinde depolayabilirsiniz `ModelBusReference`:
 
-```
+```csharp
 using Transaction t = this.Store.TransactionManager
     .BeginTransaction("keep reference"))
 {
@@ -249,7 +249,7 @@ using Transaction t = this.Store.TransactionManager
 ### <a name="to-create-a-reference-to-an-element"></a>Öğeye bir başvuru oluşturmak için
  Model için oluşturduğunuz bağdaştırıcısı oluşturmak ve başvuruları çözümlemek için kullanılabilir.
 
-```
+```csharp
 // person is an element in the FamilyTree model:
 ModelBusReference personReference =
   adapter.GetElementReference(person);
@@ -262,7 +262,7 @@ ModelBusReference personReference =
 
  Bir bağdaştırıcı bir MBR'yi oluşturabilirsiniz. Bağdaştırıcısından modelin kökü elde edebilirsiniz. Ayrıca, model içindeki belirli öğelere başvuran MBRs çözebilirsiniz.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Integration; ...
 ModelBusReference elementReference = ...;
 
@@ -342,7 +342,7 @@ using (FamilyTreeAdapter adapter =
 ## <a name="serializing-a-modelbusreference"></a>Bir ModelBusReference seri hale getirme
  Depolamak istiyorsanız bir `ModelBusReference` (MBR), seri dize biçiminde:
 
-```
+```csharp
 string serialized = modelBus.SerializeReference(elementReference);
 // Store it anywhere, then get it back again:
 ModelBusReference elementReferenceRestored =
@@ -356,7 +356,7 @@ ModelBusReference elementReferenceRestored =
 
  Göreli bir yol serileştirmek için:
 
-```
+```csharp
 elementReference.ReferenceContext.Add(
    ModelBusReferencePropertySerializer.FilePathSaveContextKey,
    currentProjectFilePath);
@@ -365,7 +365,7 @@ string serialized = modelBus.SerializeReference(elementReference);
 
  Dizeden başvuru almak için:
 
-```
+```csharp
 ReferenceContext context = new ReferenceContext();
 context.Add(ModelBusReferencePropertySerializer.FilePathLoadContextKey,
     currentProjectFilePath);
@@ -395,7 +395,7 @@ ModelBusReference elementReferenceRestored =
 
  Bu örnekte, Durum makinesi ' % s'hedef DSL adıdır. Birden fazla ad kendisinden model sınıfı adını ve ModelBusAdapter adı gibi türetilir.
 
-```
+```csharp
 using Fabrikam.StateMachine.ModelBusAdapters;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -447,7 +447,7 @@ using (StateMachineAdapter adapter =
 ## <a name="validating-references"></a>Başvuruları doğrulanıyor
  BrokenReferenceDetector ModelBusReferences tutabilen bir Store içinde yer alan tüm etki alanı özellikleri test eder. Eylemi çağırır, herhangi bir eylemde bulunduğu sağlayın. Bu doğrulama yöntemleri için özellikle yararlıdır. Aşağıdaki doğrulama yöntemi modeli kaydedin girişimi mağaza test eder ve bozuk başvurularda ise hatalar penceresinde raporları:
 
-```
+```csharp
 [ValidationMethod(ValidationCategories.Save)]
 public void ValidateModelBusReferences(ValidationContext context)
 {
@@ -489,7 +489,7 @@ private const string INVALID_REF_FORMAT =
 
 -   Birden çok CLR öznitelikleri etki alanı özelliğine eklenir. Özellikler penceresindeki özel öznitelikler alanında görebilirsiniz. İçinde **Dsl\GeneratedCode\DomainClasses.cs**, özellik bildiriminde öznitelikleri görebilirsiniz:
 
-    ```
+    ```csharp
     [System.ComponentModel.TypeConverter(typeof(
     Microsoft.VisualStudio.Modeling.Integration.ModelBusReferenceTypeConverter))]
     [System.ComponentModel.Editor(typeof(

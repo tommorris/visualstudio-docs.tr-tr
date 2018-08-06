@@ -1,232 +1,248 @@
 ---
-title: Visual Studio Abonelikteki öncelik desteği avantajı | Microsoft Docs
+title: Visual Studio aboneliği öncelikli destek teklifi | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 05/07/2018
 ms.topic: Get-Started-Article
-description: Visual Studio Aboneliklerde dahil öncelik desteği avantajı ile ilgili bilgi edinin.
+description: Visual Studio abonelikleri dahil öncelikli destek teklifi hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 776438935a2fdbc2e7f360d605cc2135ac02b9a0
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280409"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567161"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri öncelik desteği
+# <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri öncelikli destek
 
-Öncelik desteği avantajı yeni sorular sorar veya varolan postalar arayabileceğiniz destek topluluk forumları çeşitli erişim sağlar.  Topluluk sorunuzun iki gün içinde yanıt vermezse, Microsoft destek ekibi bir yanıt sağlar.
+Öncelikli destek avantajı, mevcut gönderileri arayabileceğiniz desteğine topluluk forumlarımız çeşitli erişim sağlar veya yeni sorular sorar.  Topluluk, sorunuzu iki gün içinde yanıt vermezse, Microsoft Destek ekibine bir yanıt sağlar.
 
-Seçili Visual Studio abonelikleri olan aboneler forumları çeşitli konularda kapsayan çok sayıda aracılığıyla öncelik destek almak uygundur.
+Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda çeşitli konularda ele alındığı forumları öncelikli destek almak uygundur.
 
 ## <a name="included-forums"></a>Dahil edilen forumları
 
 ### <a name="net-framework"></a>.NET Framework
-   - .NET framework Kurulum ve Bakım
+   - [.NET framework Kurulum ve Bakım](http://social.msdn.microsoft.com/Forums/en-US/netfxsetup/threads)
 
-   - Ortak dil çalışma zamanı iç Ayrıntılar ve mimarisi
+   - [Ortak dil çalışma zamanı iç işlevleri ve mimarisi](http://social.msdn.microsoft.com/Forums/en-US/clr/threads)
 
-   - .NET framework sınıf kitaplıkları
+   - [.NET framework sınıf kitaplıkları](http://social.msdn.microsoft.com/Forums/en-US/netfxbcl/threads)
 
-   - Windows Presentation Foundation (WPF)
+   - [Windows Presentation Foundation (WPF)](http://social.msdn.microsoft.com/Forums/en-US/wpf/threads)
 
-   - Windows Communication Foundation, seri hale getirme ve ağ oluşturma
+   - [Windows Communication Foundation, serileştirme ve ağ](http://social.msdn.microsoft.com/Forums/en-US/wcf/threads)
+
+### <a name="microsoft-azure"></a>Microsoft Azure
+   - [Bulut Hizmetleri (Web ve çalışan rolleri)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
+   
+   - [Azure SQL veritabanı](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Depolama](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=hdinsight)
+
+   - [Azure çok faktörlü kimlik doğrulaması](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazureactiveauthentication)
+
+   - [Azure Yönetim Portalı](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure sanal makineleri](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure ağ iletişimi (DNS, Traffic Manager, VPN, VNET)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Active Directory](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure API Management](https://social.msdn.microsoft.com/Forums/en-US/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)
+
+   - [Machine Learning](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=MachineLearning)
+
+   - [Visual Studio Team Services](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)
+
+   - [Azure RemoteApp](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureRemoteApp)
+
+   - [Azure Web siteleri](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)
+
+   - [Fiyatlandırma ve faturalama](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazurepurchasing)
+
 
 ### <a name="windows-forms-development"></a>Windows Forms geliştirme
-   - Windows Forms veri denetimleri ve veri bağlama
+   - [Windows Forms veri denetimleri ve veri bağlama](http://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads)
 
-   - Genel Windows Formları
+   - [Windows Forms genel](http://social.msdn.microsoft.com/Forums/en-US/winforms/threads)
 
-   - ClickOnce ve Kurulum & dağıtım projeleri
+   - [ClickOnce ve Kurulum ve dağıtım projeleri](http://social.msdn.microsoft.com/Forums/en-US/winformssetup/threads)
 
-   - Windows Form Tasarımcısı
+   - [Windows Form Tasarımcısı](http://social.msdn.microsoft.com/Forums/en-US/winformsdesigner/threads)
 
-   - Windows Forms örnek uygulamaları
+   - [Windows Forms örnek uygulamaları](http://social.msdn.microsoft.com/Forums/en-US/winformsapplications/threads)
 
 
-### <a name="windows-universal-apps"></a>Windows Evrensel uygulamaları
-   - Windows Evrensel uygulamaları geliştirme
+### <a name="windows-universal-apps"></a>Evrensel Windows uygulamaları
+   - [Evrensel Windows uygulamaları geliştirme](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/home?forum=wpdevelop)
 
 ### <a name="internet-of-things-iot"></a>Nesnelerin interneti (IOT)
-   - Windows 10 IOT
+   - [Windows 10 IOT](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WindowsIoT&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="office-development"></a>Office geliştirme
-   - Geliştiriciler için Microsoft Office
+   - [Geliştiriciler için Microsoft Office](http://social.msdn.microsoft.com/Forums/en-US/category/officedev)
 
-   - Excel geliştiricileri için
+   - [Geliştiriciler için Excel](http://social.msdn.microsoft.com/Forums/en-US/exceldev)
 
-   - Geliştiriciler için Word
+   - [Geliştiriciler için Word](http://social.msdn.microsoft.com/Forums/en-US/worddev)
 
-   - Geliştiriciler için Outlook
+   - [Geliştiriciler için Outlook](http://social.msdn.microsoft.com/Forums/en-US/outlookdev)
 
-   - Geliştiriciler için erişim
+   - [Geliştiriciler için Access](http://social.msdn.microsoft.com/Forums/en-US/accessdev)
 
-   - Office için Visual Studio Araçları
+   - [Office için Visual Studio Araçları](http://social.msdn.microsoft.com/Forums/en-US/vsto/threads)
 
-   - Open XML biçimi SDK
+   - [Open XML biçimi SDK'si](http://social.msdn.microsoft.com/Forums/en-US/oxmlsdk/threads)
 
-   - Visual Basic for Applications
+   - [Uygulamalar için Visual Basic](http://social.msdn.microsoft.com/Forums/en-US/isvvba/threads)
 
-   - Genel Office geliştirme
+   - [Genel Office geliştirme](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=officegeneral&filter=alltypes&sort=lastpostdesc)
 
-   - Office 2013 için uygulama geliştirme
+   - [Office 2013 için uygulama geliştirme](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=appsforoffice&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="sql-server"></a>SQL Server
-   - SQL Server ile çalışmaya başlama
+   - [SQL Server ile çalışmaya başlama](http://social.msdn.microsoft.com/Forums/en-US/sqlgetstarted/threads)
 
-   - SQL Server veri erişimi
+   - [SQL Server veri erişimi](http://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads)
 
-   - SQL Server Veritabanı Altyapısı
+   - [SQL Server veritabanı altyapısı](http://social.msdn.microsoft.com/Forums/en-US/sqldatabaseengine/threads)
 
-   - SQL Server veri ambarı
+   - [SQL Server veri ambarı](http://social.msdn.microsoft.com/Forums/en-US/sqldatawarehousing/threads)
 
-   - SQL Server Integration Services
+   - [SQL Server Integration Services](http://social.msdn.microsoft.com/Forums/en-US/sqlintegrationservices/threads)
 
-   - SQL Server Analysis Services
+   - [SQL Server Analysis Services](http://social.msdn.microsoft.com/Forums/en-US/sqlanalysisservices/threads)
 
-   - SQL Server Bildirim Hizmetleri
+   - [SQL Server Bildirim Hizmetleri](http://social.msdn.microsoft.com/Forums/en-US/sqlnotificationservices/threads)
 
-   - SQL Server Reporting Services
+   - [SQL Server Raporlama Hizmetleri](http://social.msdn.microsoft.com/Forums/en-US/sqlreportingservices/threads)
 
-   - Transact-SQL
+   - [Transact-SQL](http://social.msdn.microsoft.com/Forums/en-US/transactsql/threads)
 
-   - SQL Server çoğaltması
+   - [SQL Server çoğaltma](http://social.msdn.microsoft.com/Forums/en-US/sqlreplication/threads)
 
-   - SQL Server güvenlik
+   - [SQL Server Güvenliği](http://social.msdn.microsoft.com/Forums/en-US/sqlsecurity/threads)
 
-   - SQL Server Kurulum ve yükseltme
+   - [SQL Server Kurulum ve yükseltme](http://social.msdn.microsoft.com/Forums/en-US/sqlsetupandupgrade/threads)
 
-   - SQL Server Araçları Genel
+   - [SQL Server Araçları Genel](http://social.msdn.microsoft.com/Forums/en-US/sqltools/threads)
 
-   - SQL hizmet Aracısı
+   - [SQL hizmet Aracısı](http://social.msdn.microsoft.com/Forums/en-US/sqlservicebroker/threads)
 
-   - SQL Server Compact
+   - [SQL Server Compact](http://social.msdn.microsoft.com/Forums/en-US/sqlce/threads)
 
-   - SQL Server Express
+   - [SQL Server Express](http://social.msdn.microsoft.com/Forums/en-US/sqlexpress/threads)
 
-   - Veri araştırma
+   - [Veri araştırma](http://social.msdn.microsoft.com/Forums/en-US/sqldatamining/threads)
 
-   - .NET framework içinde SQL Server
+   - [.NET framework içinde SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlnetfx/threads)
 
 ### <a name="sharepoint"></a>SharePoint
-   - SharePoint 2013 – genel tartışmalara ve soruları
+   - [SharePoint 2013 – genel tartışmalar ve sorular](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointgeneral&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 için uygulama geliştirme
+   - [SharePoint 2013 için uygulama geliştirme](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=appsforsharepoint&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – geliştirme ve programlama
+   - [SharePoint 2013 – geliştirme ve programlama](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointdevelopment&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – Kurulum, yükseltme, yönetim ve işlemler
+   - [SharePoint 2013 – Kurulum, yükseltme, yönetim ve işlemler](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointadmin&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma
+   - [SharePoint 2013 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointcustomization&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 - arama
+   - [SharePoint 2013 - arama](http://social.msdn.microsoft.com/Forums/en-US/home?forum=sharepointsearch&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – Geliştirme ve programlama
+   - [SharePoint 2010 – Geliştirme ve programlama](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointdevelopmentprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – genel tartışmalara ve soruları
+   - [SharePoint 2010 – genel tartışmalar ve sorular](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointgeneralprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – kurulum, yükseltme, yönetim ve işlemler
+   - [SharePoint 2010 – kurulum, yükseltme, yönetim ve işlemler](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointadminprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma
+   - [SharePoint 2010 – SharePoint Designer, InfoPath ve diğer özelleştirmeleri kullanma](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointcustomizationprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 - arama
+   - [SharePoint 2010 - arama](http://social.msdn.microsoft.com/Forums/en-US/home?forum=sharepointsearchprevious&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio"></a>Visual Studio
-   - Visual Studio genel sorular
+   - [Visual Studio genel sorular](http://social.msdn.microsoft.com/Forums/en-US/visualstudiogeneral/threads)
 
-   - Visual Studio Kurulum ve yükleme
+   - [Visual Studio Kurulum ve yükleme](http://social.msdn.microsoft.com/Forums/en-US/vssetup/threads)
 
-   - Visual Studio 2010'u ve 2012'de test araçları
+   - [Visual Studio 2010 ve 2012'deki test araçları](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vstest&filter=alltypes&sort=lastpostdesc)
 
-   - Visual Studio Test Yöneticisi (MTM) ile test etme
+   - [Visual Studio Test Yöneticisi (MTM) ile test etme](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsmantest&filter=alltypes&sort=lastpostdesc)
 
-   - Visual Studio birim testi
+   - [Visual Studio birim testi](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsunittest&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio-team-foundation-server"></a>Visual Studio Team Foundation Server
-   - TFS – Kurulum ve yönetim
+   - [TFS – Kurulum ve yönetim](http://social.msdn.microsoft.com/Forums/en-US/tfsadmin/threads)
 
-   - TFS – genel
+   - [TFS – genel](http://social.msdn.microsoft.com/Forums/en-US/tfsgeneral/threads)
 
-   - TFS – kaynak ve sürüm denetimi
+   - [TFS – kaynak ve sürüm denetimi](http://social.msdn.microsoft.com/Forums/en-US/tfsversioncontrol/threads)
 
-   - TFS – derleme ve sürüm Yönetimi
+   - [TFS – derleme ve sürüm Yönetimi](http://social.msdn.microsoft.com/Forums/en-US/tfsbuild/threads)
 
-   - TFS – raporlama ve ambar
+   - [TFS – raporlama ve ambar](http://social.msdn.microsoft.com/Forums/en-US/tfsreporting/threads)
 
-   - TFS-Project yönetimi ve iş öğesi
+   - [TFS – proje yönetimi ve iş öğesi](http://social.msdn.microsoft.com/Forums/en-US/tfsworkitemtracking/threads)
 
-   - TFS – işlem şablonları
+   - [TFS – işlem şablonları](http://social.msdn.microsoft.com/Forums/en-US/tfsprocess/threads)
 
-   - TFS – geçiş ve tümleştirme
+   - [TFS – geçiş ve tümleştirme](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsintegration&filter=alltypes&sort=lastpostdesc)
 
-   - Visual Studio Team Services
+   - [Visual Studio Team Services](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio-languages"></a>Visual Studio dilleri
-   - Visual Basic
+   - [Visual Basic](http://social.msdn.microsoft.com/Forums/en-US/vbgeneral/threads)
 
-   - Visual C#
+   - [Visual C#](http://social.msdn.microsoft.com/Forums/en-US/csharpgeneral/threads)
 
-   - Visual C++
+   - [Visual C++](http://social.msdn.microsoft.com/Forums/en-US/vcgeneral/threads)
 
-   - Visual C++ standartları, uzantıları ve birlikte çalışma
+   - [Visual C++ Standards, Extensions ve Interop](http://social.msdn.microsoft.com/Forums/en-US/vclanguage/threads)
 
 
 ### <a name="biztalk"></a>BizTalk
-   - BizTalk Server genel
+   - [BizTalk Server genel](http://social.msdn.microsoft.com/Forums/en-US/biztalkgeneral/threads)
 
-   - BizTalk Server EDI ve AS2
+   - [BizTalk Server EDI ve AS2](http://social.msdn.microsoft.com/Forums/en-US/biztalkediandas2/threads)
 
 ### <a name="adospannet"></a>ADO<span>.NET
-   - ADO<span>.NET veri sağlayıcısı
+   - [ADO<span>.NET veri sağlayıcıları](http://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads)
 
-   - ADO<span>.NET veri kümesi
+   - [ADO<span>.NET veri kümesini](http://social.msdn.microsoft.com/Forums/en/adodotnetdataset/threads)
 
-   - LINQ - SQL
+   - [LINQ to SQL](http://social.msdn.microsoft.com/Forums/en/linqtosql/threads)
 
-   - ADO<span>.NET Entity Framework ve LINQ to Entities
+   - [ADO<span>.NET Entity Framework ve LINQ to Entities](http://social.msdn.microsoft.com/Forums/en/adodotnetentityframework/threads)
 
-   - WCF (ADO<span>.NET) Veri Hizmetleri
+   - [WCF (ADO<span>.NET) Veri Hizmetleri](http://social.msdn.microsoft.com/Forums/en/adodotnetdataservices/threads)
 
 ### <a name="xml"></a>XML
-   - XML ve .NET Framework
+   - [XML ve .NET Framework](http://social.msdn.microsoft.com/Forums/en-US/xmlandnetfx/threads)
 
-   - SQL Server XML
+   - [SQL Server XML](http://social.msdn.microsoft.com/Forums/en-US/sqlxml/threads)
 
-
-## <a name="activation-steps"></a>Etkinleştirme adımları
-Önceki desteklemek için erişim sağlama çok basit bir işlemdir.
-1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-
-2. Öncelik desteği döşeme destek bölümüne bulun.  Tıklayın **yardım alın**.
-
-    ![Öncelik desteği döşeme](_img/vs-priority-support/vs-priority-support-tile.png)
-
-3. Forum listesine göz ve istenen Forumu seçin.
-
-    ![Öncelik destek forumları](_img/vs-priority-support/vs-priority-support-forums.png)
-
-4. Son yanıtları okumak, önceki gönderileri arama veya yeni bir soru gönderin.
-
-    ![Öncelik desteği örneği](_img/vs-priority-support/vs-priority-support-example.png)
 
 ## <a name="eligibility"></a>Uygunluk
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | Dahil       |  Evet          |
-| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | Dahil                                                            |Evet |
-| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Dahil                                                            |Evet |
-| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Dahil                                                            |Evet |
-| Visual Studio Dev Essentials | Yok  | Dahil                                                            |Evet |
+| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Dahil edilen       |  Evet          |
+| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | Dahil edilen                                                            |Evet |
+| Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Dahil edilen                                                            |Evet |
+| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Dahil edilen                                                            |Evet |
+| Visual Studio Dev Essentials | Yok  | Dahil edilen                                                            |Evet |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: değil satışı için (NFR), FTE, Visual Studio Endüstri ortağı (VSIP) düşünün.  Dışlar: Microsoft iş ortağı ağı (MPN), MCT yazılım ve Hizmetleri, MCT yazılım ve Hizmetleri geliştirici, BizSpark, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD).*
+<sup>1</sup>*içerir: satılamaz (NFR), FTE, Visual Studio Endüstri ortağı (VSIP) düşünün.    Dışlar: Microsoft iş ortağı ağı (MPN), MCT yazılımı ve Hizmetleri, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).*
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
+Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

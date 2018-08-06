@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c1f94637ab5e16954bdfcf209d4cf342c54deb7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177107"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566774"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 Olan Değiştirilemezlik API'si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Görselleştirme ve modelleme SDK'sını okuyun ancak değiştirilmemiş kilit bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli için bir program sağlar. Bu salt okunur seçeneği, örneğin, bir kullanıcı iş arkadaşlarınızı Not ekleme ve bir DSL model gözden geçirmek isteyebilirsiniz ancak bunları özgün değiştirmesini engelleyebilirsiniz kullanılabilir.
@@ -31,7 +31,7 @@ Olan Değiştirilemezlik API'si [!INCLUDE[vsprvs](../code-quality/includes/vsprv
 ## <a name="setting-and-getting-locks"></a>Ayarlama ve alma kilitleri
  Kilit deposu, bölüm veya tek bir öğe ayarlayabilirsiniz. Örneğin, bu ifade, model öğesinin silinmesini önlemek ve değiştirilmesini özelliklerini de engeller:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
@@ -49,7 +49,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 ### <a name="locks-on-partitions-and-stores"></a>Bölümleri ve depoları kilitler
  Kilitleri, bölümler ve mağazası için uygulanabilir. Bölüm üzerinde ayarlanmış olan bir kilidi bölümündeki tüm öğelere uygulanır. Bu nedenle, örneğin, aşağıdaki deyim bir bölümdeki tüm öğeleri, kendi kilit durumlarını bağımsız olarak silinmesini engeller. Bununla birlikte, diğer gibi kilitler `Locks.Property` yine de ayrı ayrı öğeler üzerinde ayarlanabilir:
 
-```
+```csharp
 partition.SetLocks(Locks.Delete);
 ```
 
@@ -104,7 +104,7 @@ partition.SetLocks(Locks.Delete);
 ### <a name="to-define-a-locking-policy"></a>Kilitleme ilkesi tanımlama
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> Aşağıdaki tanımları içerir:
 
-```
+```csharp
 public interface ILockingPolicy
 {
   Locks RefineLocks(ModelElement element, Locks proposedLocks);
@@ -117,7 +117,7 @@ public interface ILockingPolicy
 
  Örneğin:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
@@ -156,7 +156,7 @@ namespace Company.YourDsl.DslPackage // Change
 ### <a name="to-make-your-policy-available-as-a-service"></a>İlkenizi hizmet olarak kullanılabilir hale getirmek için
  İçinde `DslPackage` projesinde, aşağıdaki örneğe benzeyen kod içeren yeni bir dosya ekleyin:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change

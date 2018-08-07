@@ -16,39 +16,39 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 571f90f31014dcc4d5686483bfc037e458f4a31e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139659"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586228"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>VSIX Dil Paketi 2.0 şema başvurusu
+# <a name="vsix-language-pack-schema-20-reference"></a>VSIX Dil Paketi Şeması 2.0 başvurusu
 
-VSIX Dil Paketi şema VSIX paket için yerelleştirilmiş yükleme bilgilerini sağlar. Bu şemayı 2.0 sürümünü ek yerelleştirme öğeleri destekler.
+VSIX Dil Paketi şeması VSIX paketlerini yerelleştirilmiş yükleme bilgilerini sağlar. Bu şema 2.0 sürümünü ek yerelleştirme öğeleri destekler.
 
 ## <a name="language-pack-schema"></a>Dil Paketi şeması
 
-Dil paketi dosyasının kök öğesinin `<PackageLanguagePackManifest>`, özniteliği ile `Version`, dil paketi biçimi sürümünü olduğu. Bu konu ayarlayarak bildiriminde belirtilen dil paketi biçiminde 2.0 sürümünü açıklar `Version` özniteliği değerine `Version="2.0.0"`. Tam olarak bir alt kök öğe içeriyor `<Metadata>` öğesi.
+Dil paketi dosyasının kök öğe `<PackageLanguagePackManifest>`, özniteliğine sahip `Version`, dil paketi biçimi sürümünü olduğu. Bu makalede ayarlayarak bildiriminde belirtilen dil paketi biçiminde 2.0 sürümünü `Version` öznitelik değerine `Version="2.0.0"`. Tam olarak bir alt öğesi kök öğe içeren `<Metadata>` öğesi.
 
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest öğesi
 
-İçinde `<PackageLanguagePackManifest>` öğesi öğesi bulunmalıdır:
+İçinde `<PackageLanguagePackManifest>` öğesi şu öğe bulunmalıdır:
 |Başlık|Açıklama|
 |-----------|-----------------|
-|`<Metadata>`| Tüm yerelleştirilmiş paket meta verileri içeren öğe
+|`<Metadata>`| Tüm yerelleştirilmiş paket meta verileri için kapsayıcı öğe
 
 ### <a name="metadata-element"></a>Meta veri öğesi
 
-İçinde `<Metadata>` öğesi şu öğeleri sahip olabilir:
+İçinde `<Metadata>` öğesi aşağıdaki öğelere sahip olabilir:
 |Başlık|Açıklama|
 |-----------|-----------------|
-|`<DisplayName>`|Yüklenecek uzantısı yerelleştirilmiş adı|
-|`<Description>`|Yüklenecek uzantısı yerelleştirilmiş açıklaması|
-|`<License>`| Uzantının lisans yerelleştirilmiş bir sürümün bir yolu|
-|`<MoreInfo>`| Uzantı hakkında yerelleştirilmiş bilgilere bağlantı|
-|`<ReleaseNotes>`| Bir yolu veya Sürüm notlarının yerelleştirilmiş bir sürümün Bağla|
-|`<Icon>`| Uzantıları simgesinin yerelleştirilmiş bir sürümün bir yolu|
+|`<DisplayName>`|Yerelleştirilmiş adı uzantısının yüklenmesi|
+|`<Description>`|Yerelleştirilmiş açıklama uzantısının yüklenmesi|
+|`<License>`| Uzantının lisans yerelleştirilmiş bir sürümünü bir yolu|
+|`<MoreInfo>`| Yerelleştirilmiş uzantısı hakkında bilgi almak için bir bağlantı|
+|`<ReleaseNotes>`| Bir yol veya sürüm notlarını yerelleştirilmiş bir sürümünü Bağla|
+|`<Icon>`| Uzantıları simgesi yerelleştirilmiş bir sürümünü bir yolu|
 
 ### <a name="sample-manifest"></a>Örnek bildirimi
 
@@ -66,10 +66,10 @@ Dil paketi dosyasının kök öğesinin `<PackageLanguagePackManifest>`, öznite
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[VSIX Paketlerini Yerelleştirme](../extensibility/localizing-vsix-packages.md)|VSIX paketi için yerelleştirilmiş yükleme desteği sağlamak üzere nasıl gösterir.|
-|[VSIX Uzantı Şeması 2.0 Başvurusu](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX bildirim kullanılarak yüklenmesi Visual Studio uzantısını etkinleştirir .vsix dağıtım dosyasının içeriğini açıklayan **Uzantılar ve güncelleştirmeler** iletişim kutusu.|
-|[Visual Studio Uzantıları’nı bulma ve kullanma](../ide/finding-and-using-visual-studio-extensions.md)|Nasıl kullanılacağını gösterir **Uzantılar ve güncelleştirmeler** yüklemek, kaldırmak, etkinleştirme ve uzantıları devre dışı bırakmak için iletişim kutusu.|
+|[VSIX paketlerini yerelleştirme](../extensibility/localizing-vsix-packages.md)|Bir VSIX paketi için yerelleştirilmiş yükleme desteğini sağlamak nasıl gösterir.|
+|[VSIX Uzantı Şeması 2.0 başvurusu](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX bildirim içeriğini açıklayan bir *.vsix* dağıtım dosyası. Dağıtım dosyası kullanarak bir Visual Studio uzantısı yüklemenizi sağlayan **Uzantılar ve güncelleştirmeler** iletişim kutusu.|
+|[Visual Studio uzantıları bulma ve kullanma](../ide/finding-and-using-visual-studio-extensions.md)|Nasıl kullanılacağını gösterir **Uzantılar ve güncelleştirmeler** yükleme, kaldırma, etkinleştirmek ve uzantıları devre dışı bırakmak için iletişim kutusu.|

@@ -16,26 +16,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f81ddd40a6de287fb40840c0473e5702d385793d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b851590cb8654a39ef55700bb62e912cbc6624c0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138317"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586241"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints öğesi
-VisibilityConstraints öğesi grupları komutları ve araç çubuklarını statik görünürlüğünü belirler. Görünürlüğü ilk tarafından denetlenen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage yüklenirken olmadan tümleşik geliştirme ortamı (IDE).  
+VisibilityConstraints öğesi gruplarını komutları ve araç çubukları statik görünürlüğünü belirler. Görünürlük varsayılan tarafından denetlenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage yükleme olmadan tümleşik geliştirme ortamı (IDE).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```xml  
 <VisibilityConstraints>  
   <VisibilityConstraint>... </VisibilityConstraint>  
   <VisibilityConstraint>... </VisibilityConstraint>  
 </VisibilityConstraint>  
 ```  
   
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
   
 ### <a name="attributes"></a>Öznitelikler  
@@ -44,28 +44,28 @@ VisibilityConstraints öğesi grupları komutları ve araç çubuklarını stati
 |---------------|-----------------|  
 |Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### <a name="child-elements"></a>Alt Öğeler  
+### <a name="child-elements"></a>Alt öğeleri  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[VisibilityItem Öğesi](../extensibility/visibilityitem-element.md)|Komutlar ve araç çubuklarını statik görünürlüğünü belirler.|  
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Komutlar ve araç çubuklarını grupları statik görünürlüğünü belirler.|  
+|[Visibilityıtem öğesi](../extensibility/visibilityitem-element.md)|Komutlar ve araç çubukları statik görünürlüğünü belirler.|  
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Komutlar ve araç çubukları grupları statik görünürlüğünü belirler.|  
   
-### <a name="parent-elements"></a>Üst Öğeler  
+### <a name="parent-elements"></a>Üst öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[CommandTable Öğesi](../extensibility/commandtable-element.md)|IDE bir VSPackage sağlayan komutlar (örneğin, menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları) temsil eden tüm öğeleri tanımlar.|  
+|[CommandTable öğesi](../extensibility/commandtable-element.md)|VSPackage sunar IDE'nin komutlarını (örneğin, menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları) temsil eden tüm öğeleri tanımlar.|  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```xml  
 <VisibilityConstraints>  
   <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
     context="guidNotViewSourceMode"/>  
 </VisibilityConstraints>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [VisibilityItem öğesi](../extensibility/visibilityitem-element.md)   
- [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Visibilityıtem öğesi](../extensibility/visibilityitem-element.md)   
+ [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

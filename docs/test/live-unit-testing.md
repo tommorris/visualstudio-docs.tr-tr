@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8541fd3a6f48ca6c2a1276265b7908e3ae50634
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382018"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586491"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 ile Live Unit Testing
 
@@ -102,7 +102,7 @@ Herhangi bir zamanda geçici olarak duraklatabilir veya tamamen Live Unit Testin
 
 - **Seçenekleri**, açan **seçenekleri** iletişim açıklanan [yapılandırma Live Unit Testing](#configure-live-unit-testing) bölümü.
 
-##  <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Siz yazarken kapsamı görselleştirme Düzenleyicisi'nde görüntüleyemezsiniz.
+## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Siz yazarken kapsamı görselleştirme Düzenleyicisi'nde görüntüleyemezsiniz.
 
 Etkinleştirildikten sonra Live Unit Testing güncelleştirmeler her kod yazdığınız olmadığını göstermek için Visual Studio düzenleyicisinde bir kod satırının, birim testleri ve yoksa onu kapsayan testleri geçiliyor mu tarafından ele alınmıştır.  Aşağıdaki şekilde, geçirme ve testleri gibi testler tarafından kapsanmaz kod satırlarını başarısız kod satırlarını gösterilmektedir. Yeşil "✓" ile düzenlenmiş satırları yalnızca testleri geçirerek ele alınmaktadır satırları "x" kırmızı ile donatılmış bir veya birden çok başarısız olan testler tarafından ele alınmaktadır ve mavi "➖" tarafından düzenlenmiş satırları tarafından herhangi bir test kapsamında değildir.
 
@@ -186,8 +186,8 @@ Live Unit Testing her bir yöntem hariç tutmak için de aşağıdaki öznitelik
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Test araçlarının kod](https://visualstudio.microsoft.com/vs/testing-tools/)
-[Live Unit Testing blog](https://go.microsoft.com/fwlink/?linkid=842514)
-[Live Unit Testing SSS](live-unit-testing-faq.md)
-[kanal 9 videosu: içinde Live Unit Testing Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Kod test araçları](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Live Unit Testing blogu](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Live Unit Testing SSS](live-unit-testing-faq.md)
+- [Kanal 9 videosu: Visual Studio 2017'de Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45e6f25f485503da31f763df33481d5b61029d6f
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3478e5b6156cdcf9c1aa6d814cb3cdd35e9579d1
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510890"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586511"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 
@@ -35,7 +35,7 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 1. Visual Studio görüntüler **sanal ortama ekleme** iletişim. Varsayılan değeri kabul edin ve seçin **Oluştur**, ardından tüm yükseltme isteklerinin için onay.
 
     > [!Tip]
-    > Bir projeye başladığınızda, yapmak için çoğu Visual Studio şablonları çağırdığınız gibi yüksek oranda hemen bir sanal ortam oluşturmak için önerilir. Kitaplıkları ekleyip kaldırırken sanal ortamlar projenizin tam gereksinimleri zamanla korur. Ardından, kolayca oluşturabilirsiniz bir *requirements.txt* (ne zaman kullanarak kaynak denetimi gibi) diğer geliştirme bilgisayarlarda bu bağımlılıkların yeniden yüklemek için kullanacağınız dosya ve proje için bir üretim sunucusu dağıtılırken. Sanal ortamlar ve avantajları hakkında daha fazla bilgi için bkz. [sanal ortamları kullanma](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) ve [requirements.txt ile gerekli paketleri yönetme](../python/managing-required-packages-with-requirements-txt.md).
+    > Bir projeye başladığınızda, yapmak için çoğu Visual Studio şablonları çağırdığınız gibi yüksek oranda hemen bir sanal ortam oluşturmak için önerilir. Kitaplıkları ekleyip kaldırırken sanal ortamlar projenizin tam gereksinimleri zamanla korur. Ardından, kolayca oluşturabilirsiniz bir *requirements.txt* (ne zaman kullanarak kaynak denetimi gibi) diğer geliştirme bilgisayarlarda bu bağımlılıkların yeniden yüklemek için kullanacağınız dosya ve proje için bir üretim sunucusu dağıtılırken. Sanal ortamlar ve avantajları hakkında daha fazla bilgi için bkz. [sanal ortamları kullanma](../python/selecting-a-python-environment-for-a-project.md#use-virtual-environments) ve [requirements.txt ile gerekli paketleri yönetme](../python/managing-required-packages-with-requirements-txt.md).
 
 1. Visual Studio bu ortamı oluşturduktan sonra konum **Çözüm Gezgini** sahip olduğunuzu görmek için bir *app.py* ile birlikte dosya *requirements.txt*. Açık *app.py* şablon gibi içinde kod ayarının görmek için [hızlı başlangıç - Flask ile web uygulaması oluşturma](../ide/quickstart-python.md), birkaç ek bölüm ile. Aşağıda gösterilen tüm kodları oluşturulur şablon tarafından hiçbir yapıştırmak zorunda kalmazsınız *app.py* kendiniz.
 

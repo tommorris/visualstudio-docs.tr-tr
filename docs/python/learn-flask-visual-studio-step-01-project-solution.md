@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dd6208c690190db3d50f35d661d6e2b53157aeee
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388273"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586410"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Öğretici: Visual Studio'da Flask web çerçevesi ile çalışmaya başlama
 
@@ -142,7 +142,7 @@ Projeniz için kaynak denetimi yapılandırdığınıza göre sanal ortamı gere
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Soru: Neden bir sanal ortam oluşturmak istiyorum?
 
-Yanıt: Sanal bir ortama uygulamanızın tam bağımlılıkları ayırmak için harika bir yoludur. Bu yalıtım global Python ortamı içinde çakışmaları önler ve test etme ve işbirliği kolaylık sağlar. Bir uygulama geliştirirken zaman içinde neredeyse şaşmaz biçimde birçok yararlı Python paketlerini getirin. Projeye özgü sanal bir ortamda paketleri tutarak, projenin kolayca güncelleştirebilirsiniz *requirements.txt* kaynak denetimine dahil bu ortamı tanımlayan dosya. Proje, derleme sunucuları, dağıtım sunucuları ve diğer geliştirme bilgisayarlar dahil olmak üzere diğer herhangi bir bilgisayar için kopyalanan yalnızca kullanarak ortama yeniden oluşturmak daha kolaydır *requirements.txt* (neden olduğu ortam kaynak denetiminde olması gerekmez). Daha fazla bilgi için [sanal ortamları kullanma](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Yanıt: Sanal bir ortama uygulamanızın tam bağımlılıkları ayırmak için harika bir yoludur. Bu yalıtım global Python ortamı içinde çakışmaları önler ve test etme ve işbirliği kolaylık sağlar. Bir uygulama geliştirirken zaman içinde neredeyse şaşmaz biçimde birçok yararlı Python paketlerini getirin. Projeye özgü sanal bir ortamda paketleri tutarak, projenin kolayca güncelleştirebilirsiniz *requirements.txt* kaynak denetimine dahil bu ortamı tanımlayan dosya. Proje, derleme sunucuları, dağıtım sunucuları ve diğer geliştirme bilgisayarlar dahil olmak üzere diğer herhangi bir bilgisayar için kopyalanan yalnızca kullanarak ortama yeniden oluşturmak daha kolaydır *requirements.txt* (neden olduğu ortam kaynak denetiminde olması gerekmez). Daha fazla bilgi için [sanal ortamları kullanma](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Soru: Kaynak denetimine zaten kararlıdır sanal bir ortama nasıl kaldırırım?
 

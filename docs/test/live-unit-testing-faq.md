@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76cef03a8ceac47e06fb0ca13c667002895c6ac4
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3fbe25acc776e6407a5f10bab78ff7affaef8d78
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567057"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586533"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing sık sorulan sorular
 
@@ -268,4 +268,4 @@ Daha ayrıntılı günlüklere toplamak için çeşitli şeyler yapabilirsiniz:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Canlı Birim Testi](live-unit-testing.md)
+- [Canlı Birim Testi](live-unit-testing.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341875"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586589"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio'da Python ortamlarını yönetme
 
@@ -46,7 +46,7 @@ Genel ortamları, bilgisayardaki tüm projeleri için kullanılabilir. Visual St
 
 Genel bir ortama yüklenmişse paketleri bu ortamda kullanan tüm projeler için kullanılabilir olmadığından, iki proje uyumsuz paketler veya aynı paketin farklı sürümlerini gerektiğinde çakışmaları oluşabilir. Sanal ortamlar bu gibi çakışmaları yorumlayıcı ve genel bir ortamdan standart Kitaplığı'nı kullanarak ancak kendi yalıtılmış klasörleri paket depolarında koruma kaçının.
 
-Visual Studio'da bir alt proje klasöründe depolanan belirli bir proje için sanal bir ortam oluşturabilirsiniz. Visual Studio sağlar oluşturmak için bir komutu bir *requirements.txt* dosyasından sanal ortam, diğer bilgisayarlardaki ortamı yeniden kolaylaştırır. Daha fazla bilgi için [sanal ortamları kullanma](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Visual Studio'da bir alt proje klasöründe depolanan belirli bir proje için sanal bir ortam oluşturabilirsiniz. Visual Studio sağlar oluşturmak için bir komutu bir *requirements.txt* dosyasından sanal ortam, diğer bilgisayarlardaki ortamı yeniden kolaylaştırır. Daha fazla bilgi için [sanal ortamları kullanma](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="conda-environments"></a>Conda ortamları
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251822"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586553"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -70,7 +70,7 @@ Tüm  **\<Framework > Web projesini** şablonları, seçilen framework bağıms�
 
 ## <a name="install-project-requirements"></a>Projenizin gereksinimlerini yükleyin
 
-Çerçeveye özgü şablondan bir proje oluştururken, pip kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](selecting-a-python-environment-for-a-project.md#using-virtual-environments) doğru bağımlılıklar dahil olacak şekilde, web projeleri için yayımladığınızda, web sitesi:
+Çerçeveye özgü şablondan bir proje oluştururken, pip kullanarak gerekli paketleri yüklemenize yardımcı olması için bir iletişim kutusu görüntülenir. Ayrıca kullanmanızı öneririz bir [sanal ortam](selecting-a-python-environment-for-a-project.md#use-virtual-environments) doğru bağımlılıklar dahil olacak şekilde, web projeleri için yayımladığınızda, web sitesi:
 
 ![Yükleyen iletişim için bir proje şablonu paketleri gerekli](media/template-web-requirements-txt-wizard.png)
 

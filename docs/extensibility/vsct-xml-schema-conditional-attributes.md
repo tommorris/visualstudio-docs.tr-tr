@@ -1,5 +1,5 @@
 ---
-title: VSCT XML Şeması koşullu öznitelikler | Microsoft Docs
+title: VSCT XML Şeması koşullu öznitelikleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,36 +14,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 975ca2f5fa6f070baf07b26cbfa0d8c3aa3b67d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b31b99e38eeec2ff1e5e31bc6bdaeed3d3be3d83
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138362"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586827"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML Şeması koşullu öznitelikler
-Koşullu öznitelikler tüm listeler ve öğeleri uygulanabilir. Mantıksal işleçler ve sembol genişletme ifadeler doğru veya yanlış olarak değerlendirin. TRUE ise, sonuçta elde edilen çıktı ilişkili liste veya öğesi içerir.  
+# <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML Şeması koşullu öznitelikleri
+Tüm listeleri ve öğeleri koşullu öznitelikleri uygulayabilirsiniz. Mantıksal işleçler ve sembol genişletme ifadeler true veya false olarak değerlendirin. TRUE ise sonuçta elde edilen çıktıda ilişkili liste veya öğe dahildir.  
   
- Belirteç genişletmeleri diğer belirteç genişletmeleri veya sabitleri karşı test edilmelidir. Defined() işlevi, hiçbir değer olsa bile belirli bir adı tanımlı olup olmadığını test etmek için kullanılır.  
+ Belirteç genişletmeleri diğer belirteç genişletmeleri veya sabitler karşı test edebilirsiniz. İşlev `Defined()` değere sahip olsa bile belirli bir adı tanımlı olup olmadığını sınar.  
   
- Bir koşul özniteliği bir listeye uygulandığında, koşul listesindeki her alt öğenin uygulanır. Bir alt öğesi koşul özniteliği içeriyorsa, koşul ve işlem tarafından üst ifade ile birleştirilir.  
+ Koşul özniteliği bir listesine uygulandığında, koşul listesindeki her alt öğenin uygulanır. Bir alt öğesi bir koşul özniteliğine içeriyorsa, onun koşulu bir AND işlemi tarafından üst ifade ile birleştirilir.  
   
- 1, '1' ve 'true' değerlerini doğru olarak değerlendirilir ve 0, '0' ve 'false' yanlış olarak değerlendirilir.  
+ Değerler 1, '1' ve 'true' true ' değerlendirilir ve 0, '0' ve 'false' false ' değerlendirilir.  
   
 ## <a name="operators"></a>İşleçler  
- Aşağıdaki işleçleri koşullu ifadeler değerlendirmek için kullanılabilir.  
+ Koşullu ifadeler değerlendirmek için aşağıdaki işleçleri kullanın.  
   
 |İşleç|Tanım|  
 |--------------|----------------|  
 |(,)|Gruplandırma|  
 |!|Mantıksal değil|  
 |\<, >, \<=, >=, ==, !=|İlişkisel ve eşitlik|  
-|and|Boole değeri|  
-|veya|Boole değeri|  
+|and|Boolean|  
+|veya|Boolean|  
   
 ## <a name="examples"></a>Örnekler  
   
-```  
+```xml  
 <Menu Condition="Defined(DEBUG)" ...  
 </Menu>  
   
@@ -72,5 +72,5 @@ and !Defined(DEBUG)">
 </Menus>  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

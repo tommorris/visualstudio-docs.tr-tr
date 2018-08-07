@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da bir birim testi projesi oluşturma
+title: Visual Studio'da birim testi projesi oluşturma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,49 +9,50 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235056"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586866"
 ---
 # <a name="create-a-unit-test-project"></a>Birim testi projesi oluşturma
 
-Birim testleri test altındaki kod yapısına genellikle yansıtır. Örneğin, birim testi projesi ürün içinde her kod projesi için oluşturulmuş. Oluşturduğunuz test projesinin üretim kodu olarak aynı çözüme olabilir veya ayrı bir çözümde de olabilir. Test projeleri bir çözümde birden çok birim olabilir.
+Birim testleri, test altındaki kod yapısına genellikle yansıtır. Örneğin, her kod projesini ürün için birim testi projesi oluşturulması. Ayrı bir çözümde de olabilir veya üretim kodu aynı çözümde test projesini olabilir. Test projeleri bir çözümde birden çok birim olabilir.
 
 > [!NOTE]
-> Yerel kod için birim konumunu sınar ve test proje yapısını bu konuda açıklanan yapısı farklı olabilir. Daha fazla bilgi için bkz: [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md).
+> Yerel kod için birim konumunu testleri ve test Proje yapısı bu konuda açıklanan yapısı farklı olabilir. Daha fazla bilgi için [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="to-create-a-unit-test-project"></a>Birim testi projesi oluşturmak için:
 
-1.  Üzerinde **dosya** menüsünde seçin **yeni** ve ardından **proje** (klavye **Ctrl**+**Shift** + **N**).
+1.  Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje** (klavye **Ctrl**+**Shift** + **N**).
 
-2.  İçinde **yeni proje** iletişim kutusunda, genişletin **yüklü** düğümü, test projeniz için kullanın ve ardından istediğiniz dili seçin **Test**.
+2.  İçinde **yeni proje** iletişim kutusunda **yüklü** düğümü, test projeniz için kullanın ve ardından istediğiniz dili seçin **Test**.
 
-3.  Microsoft birim test çerçevelerini birini kullanmayı da tercih **birim testi projesi** proje şablonları listesinden. Aksi takdirde, kullanmak istediğiniz test çerçevesi biriminin proje şablonu seçin. Bizim örneğimizde, hesapları projeyi test etmek için proje adı **AccountsTests**.
+3.  Microsoft birim testi çerçevelerini birini kullanmak üzere, **Birim Test projesi** proje şablonları listesinden. Aksi takdirde, kullanmak istediğiniz test çerçevesi biriminin proje şablonu seçin. Bizim örneğimizde, hesapları projeyi test etmek için projeyi garip gelse **AccountsTests**.
 
-4.  Birim testi projesi içinde test altındaki kodun bir başvuru ekleyin.  Aynı çözümde başvuru kod projesi oluşturmak nasıl şöyledir:
+4.  Birim test projenizde, test edilen kod bir başvuru ekleyin.  Aynı çözümdeki bir kod projesine başvuru oluşturmak nasıl aşağıda verilmiştir:
 
     1.  Projede seçin **Çözüm Gezgini**.
 
     2.  Üzerinde **proje** menüsünde seçin **Başvuru Ekle**.
 
-    3.  İçinde **başvuru Yöneticisi** açık iletişim kutusunu **çözüm** düğümü seçin **projeleri**. Kod projesi adını denetleyin ve iletişim kutusunu kapatın.
+    3.  İçinde **başvuru Yöneticisi** açık iletişim kutusunu **çözüm** düğüm ve **projeleri**. Kod projesi adını denetleyin ve iletişim kutusunu kapatın.
 
-5.  Başka bir konumda test etmek istediğiniz kod olup olmadığını [bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md) başvurular ekleme hakkında bilgi.
+5.  Test etmek istediğiniz kod başka bir konumda olup olmadığını, [bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md) başvurular ekleme hakkında daha fazla bilgi için.
 
 ## <a name="next-steps"></a>Sonraki adımlar
- **Birim testleri yazma**
 
  Aşağıdaki bölümlerden birine bakın:
 
--   [Birim testi kodunuz](../test/unit-test-your-code.md)
+**Birim testleri yazma**
 
--   [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)
+- [Birim testi kod](../test/unit-test-your-code.md)
 
--   [Birim testleri mstest'i framework kullanın](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)
 
- **Birim testleri**
+- [MSTest framework birim testleri kullanın](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**Birim testlerini çalıştırma**
 
 - [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)

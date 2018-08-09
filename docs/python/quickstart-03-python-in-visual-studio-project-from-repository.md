@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512822"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636830"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da Python kodu bir depoyu kopyalama
 
@@ -37,7 +37,7 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 1. Altında **yerel Git depoları**seçin **kopya** komutunu ve ardından girin `https://github.com/gregmalcolm/python_koans` kopyalanan dosyalar için bir klasör URL alanına girin ve seçin **kopya** düğmesi.
 
     > [!Tip]
-    > Takım Gezgini'nde belirttiğiniz klasör, kopyalanan dosyalar almak için tam bir klasördür. Farklı `git clone` komutunu, Ekip Gezgini'nde bir kopya oluşturma otomatik olarak oluşturmaz bir alt klasör deponun adını.
+    > Belirttiğiniz klasör **Takım Gezgini** kopyalanan dosyalar almak için tam klasördür. Farklı `git clone` bir klonda oluşturma komutu, **Takım Gezgini** depo adı ile otomatik olarak bir alt klasör oluşturmaz.
 
 1. Kopyalama tamamlandıktan sonra depo adı görünür **yerel Git depoları** listesi. Depo panoya gidin, adına çift tıklayarak **Takım Gezgini**.
 

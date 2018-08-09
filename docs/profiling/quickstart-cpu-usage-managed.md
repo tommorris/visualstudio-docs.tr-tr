@@ -2,7 +2,7 @@
 title: CPU kullanım verilerini (yönetilen kod için) çözümleme
 description: C# ve Visual Basic CPU kullanımı Tanılama aracını kullanarak uygulama performansını ölçmeye
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 88b9557c3713997e4c04aaa74078408437c03c43
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204563"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638944"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Hızlı Başlangıç: Visual Studio'da (yönetilen kod için) CPU kullanım verilerini çözümleme
 
@@ -31,6 +31,8 @@ Tanılama hub'ı, çok sayıda çalıştırın ve tanılama oturumunuzu yönetme
 1. Visual Studio'da **dosya** > **yeni proje**.
 
 2. Altında **Visual C#** veya **Visual Basic**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)**.
+
+    Görmüyorsanız **konsol uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
 3. Gibi bir ad yazın **MyProfilerApp** tıklatıp **Tamam**.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388299"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637623"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. adım: yoklamalar Flask Web projesi şablonunu kullanma
 
@@ -29,7 +29,7 @@ Bu adımda şunların nasıl yapılır:
 > [!div class="checklist"]
 > - Şablondan proje oluşturma ve veritabanı başlatılamıyor (adım 5 - 1)
 > - Veri modelleri (5-2. adım) Anlama
-> - (5-3. adım) ve yedekleme veri depoları anlama
+> - Yedekleme veri deposu (5-3. adım) Anlama
 > - Yoklama sonuçları ve ayrıntı görünümleri (5-4. adım) Anlama
 
 Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Jinja şablon oluşturma altyapısı için kullanır. "Windows Flask/Jade polls – Webový projekt" şablonu da sağlar. Ayrıntılar için bkz [adım 4 - Flask/Jade Web projesi şablonu](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
@@ -40,7 +40,7 @@ Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Ji
 
 1. Yeni Proje iletişim kutusunda, aramak ve seçmek **yoklamalar Flask Web projesi** şablon "FlaskPolls" proje arayın ve seçin **Tamam**.
 
-1. Diğer proje şablonları gibi Visual Studio'da, "Yoklamalar Flask Web projesi" şablonu içeren bir *requirements.txt* , Visual Studio istemi ister nerede bu bağımlılıkların yükleneceği dosya. Seçeneğini **sanal bir ortama yükleme**hem de **sanal ortama ekleme** iletişim kutusunda **Oluştur** Varsayılanları kabul etmek için. ("Yoklamalar Flask/Jade Web Proje" de pyjade gerekli; Bu şablon, Flask ve bunun yanı sıra azure depolama ve pymongo paketleri gerektirir.)
+1. Diğer proje şablonları gibi Visual Studio'da, "Yoklamalar Flask Web projesi" şablonu içeren bir *requirements.txt* dosya, Visual Studio bu bağımlılıkların yükleneceği sorar. Seçeneğini **sanal bir ortama yükleme**hem de **sanal ortama ekleme** iletişim kutusunda **Oluştur** Varsayılanları kabul etmek için. ("Yoklamalar Flask/Jade Web Proje" de pyjade gerektirir; bu şablon, Flask ve bunun yanı sıra azure depolama ve pymongo paketleri gerektirir.)
 
 1. Ayarlama **FlaskPolls** proje bu projeye sağ tıklayarak Visual Studio çözümü için varsayılan olarak **Çözüm Gezgini** seçerek **başlangıçprojesiolarakayarla**. Gösterilen başlangıç projesi içinde hata ayıklayıcısını başlattığınızda nelerin çalıştırılacağını kalın.
 

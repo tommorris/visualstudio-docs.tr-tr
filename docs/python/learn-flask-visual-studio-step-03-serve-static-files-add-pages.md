@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388143"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637649"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın
 
@@ -27,7 +27,7 @@ Bu öğreticinin önceki adımlarında müstakil HTML tek bir sayfayla en az bir
 Bu adımda, şunların nasıl yapılır:
 
 > [!div class="checklist"]
-> - Visual Studio öğe şablonları kullanışlı Demirbaş kod ile farklı türler hızla yeni dosyalar için kullanın (adım 3 - 1)
+> - Hızlı bir şekilde uygun Demirbaş kod ile farklı türdeki yeni dosyaları eklemek için Visual Studio öğe şablonları kullanın (adım 3 - 1)
 > - Kod (adım 3-2, isteğe bağlı) statik dosyaları işleme
 > - (3-3. adım) uygulamaya ek sayfalar ekleme
 > - (Adım 3-4) sayfalar arasında kullanılan bir üst bilgi ve gezinti çubuğu oluşturmak için şablon devralma kullanın
@@ -89,7 +89,7 @@ Her iki durumda da altındaki dosyaları düzenleyebilirsiniz *statik* istediği
 
 ### <a name="serve-a-static-file-from-code"></a>Statik bir kod dosyasından hizmet
 
-Flask çağrılan bir işlev sağlar `serve_static_file` projenin içinde herhangi bir dosyaya başvurmak için kodundan çağıran *statik* klasör. Aşağıdaki işlem statik veri dosyası döndüren basit bir API uç noktayı oluşturur).
+Flask çağrılan bir işlev sağlar `serve_static_file` projenin içinde herhangi bir dosyaya başvurmak için kodundan çağıran *statik* klasör. Aşağıdaki işlem, bir statik veri dosyası döndürür basit bir API uç noktası oluşturur.
 
 1. Henüz yapmadıysanız, oluşturun bir *statik* klasör: içinde **Çözüm Gezgini**, sağ **HelloFlask** seçin Visual Studio proje klasöründe **Ekle** > **yeni klasör**ve klasörünü adlandırın `static`.
 
@@ -188,7 +188,7 @@ Flask'ın şablon oluşturma sisteminin (varsayılan olarak Jinja) belirli öğe
 
 Her iki durumda da `<template_path>` uygulamanın göreli olan *şablonları* klasörü (`../` veya `./` de izin verilir).
 
-Bir temel şablon betimleyen *blokları* kullanarak `{% block <block_name> %}` ve `{% endblock %}` etiketler. Başvuran bir şablon daha sonra aynı blok ada sahip etiketler kullanılıyorsa, blok içeriği bu temel şablonu geçersiz.
+Bir temel şablon betimleyen *blokları* kullanarak `{% block <block_name> %}` ve `{% endblock %}` etiketler. Başvuran bir şablon daha sonra aynı blok ada sahip etiketler kullanılıyorsa, blok içeriği, temel şablon geçersiz kılar.
 
 Aşağıdaki adımlarda, devralma gösterilmektedir:
 

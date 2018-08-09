@@ -9,12 +9,12 @@ description: En iyi Visual Studio aboneliklerinizi dışında almayı öğrenin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380687"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637353"
 ---
 # <a name="managing-subscriptions"></a>Abonelikleri Yönetme
 
@@ -59,14 +59,14 @@ Visual Studio abonelikleri portalında tüm Visual Studio abonelikleri ve progra
 
 ### <a name="which-subscription-am-i-using"></a>Hangi aboneliği kullanıyorum?
 Avantajlar sayfasında, kullanımdaki abonelik göze çarpacak şekilde mavi renkli bir başlık görüntülenir.  Ayrıca,-sağ üst kısmındaki sayfası da görüntülenir.
-
-   ![Etkin aboneliği](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![Etkin aboneliği](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Abonelikler arasında geçiş yapmak için şunları yapabilirsiniz:
 - Sağ üst açılan tıklayın ve listeden aboneliği seçin
 - Abonelikler sekmesine tıklayın ve ardından istediğiniz aboneliğe tıklayın.
-
-   ![Abonelik geçiş](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Abonelik geçiş](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Aboneliğinizi görünür değilse...
 - Süresi olabilir.  Yalnızca etkin aboneliklere abone Portalı'nda görüntülenir.
@@ -102,7 +102,8 @@ Kişi bilgileri ve tercihleri profilinizde kolaylıkla değiştirebilirsiniz.
 3.  Üzerinde **hakkında** sekmesini değiştirebilirsiniz adı, e-posta, ülke/bölge, profil resmi ve iletişim tercihleri.  Üzerinde **tercihleri** sekmesi, tercih edilen dil, tarih ve saat düzenleri, saat dilimi ve kullanıcı arabirimi temasını seçin.  
 4.  Değişikliklerinizi getirdiğinizi, tıklayın **Kaydet**. 
 5.  Tarayıcınızın tıklayın **geri** düğmesi avantajları sayfaya geri dönün. 
-    ![Profil bilgilerini düzenleme](_img\manage-vs-subscriptions\edit-profile-resized.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Profil bilgilerini düzenleme](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Benim abonelik için mevcut bir VSTS veya Azure aboneliği bağlama
@@ -115,7 +116,8 @@ Alternatif hesap eklemek için:
 2. Tıklayarak **abonelikleri** sekmesi.
 3. Altında **ilgili bağlantılar**, seçin **alternatif hesap ekleme**.
 4. İş/Okul hesabımın e-posta adresinizi girip __iade **Ekle**. 
-    ![Alternatif hesap](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Alternatif hesap](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Alternatif hesap ekledikten sonra güncelleştirme veya tıklayarak dilediğiniz zaman Kaldır **abonelikleri** sekmesi ve uygun seçeneği seçerek **ilgili bağlantılar** bölümü.  
 

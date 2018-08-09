@@ -9,12 +9,12 @@ description: Yöneticiler abonelik atamaları düzenleme nasıl öğrenin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b986aa50f282ef6df985919ab5fb83934befcee8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d5d781f682372203e118fc6aaf1bfb51ea8bf652
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36325384"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638166"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Visual Studio aboneliği atamalarını düzenlemek
 
@@ -24,7 +24,8 @@ Bir abonelik Yöneticisi olarak kuruluşunuzdaki kişiler için atanan abonelik 
 Hataları düzeltin veya bilgileri güncelleştirmek için bir abonenin bilgileri düzenleyebilirsiniz. 
 
 Abone düzenlemek için abonenin e-posta adresi yanındaki fareyi üzerine geldiğinizde görüntülenen üç nokta (...) seçin. Açılan bir menüde görünecektir.  Seçin **Düzenle** abonenin ayrıntılarını değiştirmek için. Abonenin satırda kılavuzunda Düzenle açmak için çift tıklayabilirsiniz.
-    ![Düzenlemek için aboneyi Seç](_img\edit-license\select-subscriber.png)
+> [!div class="mx-imgBorder"]
+> ![Düzenlemek için aboneyi Seç](_img\edit-license\select-subscriber.png)
 
 Abonenin adı, Soyadı, ülke, dil ve yükleme güncelleştirebilirsiniz. Abonenin bilgileri düzenleyin ve ardından **Kaydet**.
 
@@ -41,12 +42,14 @@ Tek seferde toplu düzenleme işlemi kullanarak birden fazla aboneye düzenleyeb
 1.  Aynı anda birden çok aboneyi düzenleme aboneleri sekmesine gidin. Üstteki Şeritte tıklayın **toplu düzenleme**. 
 
 2.  Toplu düzenleme abone bilgisi düzenlemeleri için bir Excel şablonu kullanır. Toplu düzenleme kutusuna tıklayın **bu excel dışarı aktarma** aboneleri tüm bunların bilgileri dahil olmak üzere geçerli listesini indirmek için. 
-    ![Dışarı aktarma - lisans düzenleme toplu düzenlemeler listesi](_img\edit-license\edit-license-bulk-edit-export.png)
+    > [!div class="mx-imgBorder"]
+    > ![Dışarı aktarma - lisans düzenleme toplu düzenlemeler listesi](_img\edit-license\edit-license-bulk-edit-export.png)
 
 3.  Ardından, kolayca bulmak ve bunu karşıya yüklemeden önce gerekli değişiklikleri yapın dosyayı yerel olarak kaydedin. Başarılı bir karşıya yükleme emin olmak için **abonelik düzeyinde veya abonelik GUID'si düzenlemeyin** bunu yaparsanız bu nedenle karşıya yükleme başarısız olmasına neden olur. 
 
 4.  İade Visual Studio abonelikleri Yönetim Portalı ve toplu düzenleme iletişim kutusunda, tıklayın **Gözat**. Kaydettiğiniz Excel dosyasını seçin ve tıklayın **Tamam**. Ekranda, karşıya yükleme ilerleme durumunu görürsünüz.
-    ![Bir lisans - düzenleme toplu düzenlemeler karşıya dosya yükleme](_img\edit-license\edit-license-bulk-file-upload1.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Bir lisans - düzenleme toplu düzenlemeler karşıya dosya yükleme](_img\edit-license\edit-license-bulk-file-upload1.png)
 
 5.  Dosyayı yükledikten sonra size başarılı olduğunu bildiren bir bildirim görürsünüz. Bu noktada, yaptığınız düzenlemeleri abone bilgileri yansıtılır. 
 

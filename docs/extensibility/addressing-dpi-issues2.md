@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154336"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638671"
 ---
 # <a name="address-dpi-issues"></a>DPI sorunları
 Giderek artan sayıda cihazları "yüksek çözünürlüklü" ekranlarla yayımlayan. Bu ekranları genellikle 200'den fazla inç başına piksel (ppi) sahiptir. Uygulamanın bu bilgisayarlarda çalışmak bir cihaz için normal görüntülemeye uzaklıkta içeriği görüntüleme gereksinimlerini karşılayacak şekilde ölçeklenmesine olanak içerik gerektirir. 2014'ten itibaren yüksek yoğunluklu görüntüler için birincil hedef mobil cihazlar (tabletler, clamshell dizüstü bilgisayarları ve telefonları) bilgi işlem.  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  Başvurun <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> MSDN'de belgelerin.  
   
- Aşağıdaki tabloda, faktörleri ölçeklendirme örnekleri görüntüleri karşılık gelen DPI nasıl ölçeklendirilmesi gerektiğini gösterir. Yeşil görüntüleri bizim en iyi uygulama (% 100-%200 DPI ölçeklendirme) Visual Studio 2013'ten itibaren gösterin:  
+ Aşağıdaki tabloda, faktörleri ölçeklendirme örnekleri görüntüleri karşılık gelen DPI nasıl ölçeklendirilmesi gerektiğini gösterir. Müşterilerimizin en iyi uygulama (% 100-%200 DPI ölçeklendirme) Visual Studio 2013'ten itibaren turuncu renkte özetlenen görüntülerini gösterin:  
   
  ![Ölçeklendirme, DPI sorunlarını](../extensibility/media/dpi-issues-scaling.png "DPI sorunlarını ölçeklendirme")  
   

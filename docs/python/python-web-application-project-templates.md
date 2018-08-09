@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586553"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638719"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -88,7 +88,7 @@ Bir web projesi için hata ayıklama başladığında, Visual Studio rastgele bi
 
 İçinde **hata ayıklama** Grup:
 
-- **Arama yolları**, **betik bağımsız değişkenleri**, **yorumlayıcı bağımsız değişkenleri**, ve **cesta k İnterpretu**: Bu seçenekler aynıdır [normal hata ayıklama](debugging-python-in-visual-studio.md)
+- **Arama yolları**, **betik bağımsız değişkenleri**, **yorumlayıcı bağımsız değişkenleri**, ve **cesta k İnterpretu**: Bu seçenekler aynıdır [normal hata ayıklama](debugging-python-in-visual-studio.md).
 - **Başlatılacak URL**: tarayıcınızda açılır URL'sini belirtir. Varsayılan `localhost`.
 - **Bağlantı noktası numarası**: URL (bir otomatik olarak varsayılan Visual Studio seçer) hiçbiri belirtilmediği takdirde kullanılacak bağlantı noktası. Bu ayar varsayılan değerini geçersiz kılmanıza da olanak sağlar. `SERVER_PORT` şablonları tarafından kullanılan yerel hata ayıklama sunucunun dinlediği bağlantı noktasını yapılandırmak için ortam değişkeni.
 

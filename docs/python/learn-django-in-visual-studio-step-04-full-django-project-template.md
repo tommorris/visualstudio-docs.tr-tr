@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: a6cd0987b3ec1e7a393e54ac07ae93c873c1a996
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388182"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637607"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>4. adım: tam Django Web projesi şablonunu kullanma
 
@@ -31,7 +31,7 @@ Bu, artık. adım:
 > - Proje şablonu tarafından oluşturulan taban sayfası şablondan devralır üç sayfası oluşur sayfası şablonları ve görünümleri anlayın ve, jQuery ve önyükleme (4-2. adım) gibi statik JavaScript kitaplıklarını kullanır
 > - (4-3. adım) şablonu tarafından sağlanan URL yönlendirmeyi anlama
 
-Şablon, adım 5'te bahsedilen temel kimlik doğrulaması da sağlar.
+Şablon 5. adımda bahsedilen temel kimlik doğrulaması da sağlar.
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>4-1. adım: bir şablondan bir proje oluşturma
 

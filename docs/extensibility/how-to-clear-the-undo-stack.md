@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: geri alma yığını temizleyin | Microsoft Docs'
+title: 'Nasıl yapılır: geri alma yığını Clear | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2519d529da13366c706e940b78f57a6ad903de7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59f8d57c0ba0e84107cd0d0290b950b335e5f2b0
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126509"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639477"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Nasıl yapılır: geri alma yığını temizleyin
-Aşağıdaki yordama geri alma yığını temizleyin açıklanmaktadır.  
+# <a name="how-to-clear-the-undo-stack"></a>Nasıl yapılır: geri alma yığını Temizle
+Aşağıdaki yordam, geri alma yığını temizlemek açıklanmaktadır.  
   
-### <a name="to-clear-the-undo-stack"></a>Geri alma yığını temizlemek için  
+## <a name="to-clear-the-undo-stack"></a>Geri alma yığını temizlemek için  
   
-1.  Geri alma yığın kullanımı temizlemek için [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) yöntemi. Bunun bir örneği verilmiştir:  
+1.  Geri alma yığını kullanımını temizlemek için [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) yöntemi. Bunun bir örneği verilmiştir:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -45,5 +45,5 @@ Aşağıdaki yordama geri alma yığını temizleyin açıklanmaktadır.
     }  
     ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: uygulama geri alma yönetimi](../extensibility/how-to-implement-undo-management.md)

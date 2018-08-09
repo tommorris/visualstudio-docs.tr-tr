@@ -62,6 +62,7 @@
 ## [Unity Oyun Geliştirme](unity-tools.md)
 ### [Kurulum](setup-vsmac-tools-unity.md)
 ### [Unity Araçlarını Kullanma](using-vsmac-tools-unity.md)
+### [Değişiklik Günlüğü](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Erişilebilirlik](accessibility.md)
 

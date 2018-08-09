@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: bir Atom oluşturmak için özel Galerisi akışı | Microsoft Docs'
+title: 'Nasıl yapılır: bir Atom oluşturmak için özel bir galeriyi akış | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,32 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc39e4d11d826741239f11f62955fa4d2fb167cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127483"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638498"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: bir Atom oluşturmak için özel Galerisi akışı
-Bir Atom (uzantılarını içerir ve akışına ekleyen bir intranet konumu için RSS akışı) oluşturabileceğiniz **Uzantılar ve güncelleştirmeler** Özel Galeri olarak. Daha fazla bilgi için bkz: [özel galerileri](../extensibility/private-galleries.md).  
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: Atom akışı için özel bir galeri oluşturun
+Bir Atom (uzantıları içeren ve akışa ekleme bir intranet konumu için RSS akışı) oluşturabileceğiniz **Uzantılar ve güncelleştirmeler** özel bir galeri olarak. Daha fazla bilgi için [özel galeriler](../extensibility/private-galleries.md).  
   
-## <a name="creating-an-atom-feed"></a>Atom oluşturma akış  
- Atom akışı özel bir galeri oluşturmak için önce bir klasöre uzantılarınızın (.vsix dosyaları) toplamanız gerekir. İsterseniz, alt klasörler halinde düzenleyebilirsiniz. Aşağıdaki kaynaklar de gerekir:  
+## <a name="create-an-atom-feed"></a>Bir Atom akışı oluşturma  
+ Atom akışı özel bir galeri oluşturmak için öncelikle uzantılarınızı toplayın (*.vsix* dosyaları) bir klasöre kopyalar. İsterseniz, alt klasörler halinde düzenleyebilirsiniz. Ayrıca, aşağıdaki kaynakları gerekir:  
   
--   Uzantıları özel bir Galerisi tarafından kullanılabilmesini atom.xml dosyası. Atom.xml dosyasına bağlanma hakkında bilgi için **Uzantılar ve güncelleştirmeler**, bkz: [özel galerileri](../extensibility/private-galleries.md).  
+-   Bir *atom.xml* uzantıları özel bir galeride kullanıma sunduğu dosya. Bağlanma hakkında daha fazla bilgi için *atom.xml* dosyasını **Uzantılar ve güncelleştirmeler**, bkz: [özel galeriler](../extensibility/private-galleries.md).  
   
--   Uzantıları (örneğin, ekran görüntüleri) ayıklanmış tüm resim dosyaları içeren klasör. Kullanılabilir; böylece bu görüntüleri için göreli bağlantıları atom.xml dosyayı içeren **Uzantılar ve güncelleştirmeler**.  
+-   (Örneğin, ekran görüntüleri) extensions ayıklanan herhangi bir görüntü dosyalarını içeren bir klasör. *Atom.xml* dosya içeren görüntü yollarında göreli bağlantıları yer alır, böylece **Uzantılar ve güncelleştirmeler**.  
   
  Örneğin, bir klasöre toplanan aşağıdaki iki uzantıları varsayın:  
   
--   Template_Wizard_239.vsix boş bir VSIX proje şablonudur.  
+-   *Template_Wizard_239.vsix*, bu değer boş bir VSIX proje şablonu.  
   
--   SelectionHighlight.vsix Seçili sözcüğün tüm örneklerini vurgulamak için bir araçtır.  
+-   *SelectionHighlight.vsix*, seçili sözcüğün tüm örneklerinin vurgulamak için aracı.  
   
- Aşağıdaki örnek atom.xml dosyasının içeriğini benzeyecektir:  
+ İçeriğini *atom.xml* dosya, aşağıdaki örnekte benzer:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
 <feed xmlns="http://www.w3.org/2005/Atom">  
 <title type="text" />   
@@ -73,7 +73,7 @@ Bir Atom (uzantılarını içerir ve akışına ekleyen bir intranet konumu içi
 </feed>
 ```  
   
- Görüntüleri oluşturulan klasöründeki ekran görüntüleri iki bağlantı etiketlerini bildirim başvurun.  
+ Görüntüleri oluşturulan bir klasörde ekran görüntüleri için dikkat edin iki bağlantı etiketlerini bakın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel Galeriler](../extensibility/private-galleries.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Özel galeriler](../extensibility/private-galleries.md)

@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8004176fb64244aecde276226683a53c013d3b31
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513139"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639742"
 ---
-# <a name="registering-verbs-for-file-name-extensions"></a>Dosya Adı Uzantıları için Fiil Kaydetme
+# <a name="register-verbs-for-file-name-extensions"></a>Dosya adı uzantıları için fiil kaydetme
 Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıcı bir dosyayı çift tıkladığında gerçekleşen tercih edilen bir eylem vardır. Bu eyleme karşılık gelen bir fiil, örneğin açık eylem bağlandığı tercih edilir.  
   
- HKEY_CLASSES_ROOT bulunan Kabuk anahtarı kullanarak bir uzantı için bir programlı tanımlayıcısı (ProgID) ile ilişkili olan fiiller kaydedebilirsiniz\\*ProgID*\shell. Daha fazla bilgi için [dosya türleri](/windows/desktop/shell/fa-file-types).  
+ Kabuk anahtar kullanarak bir uzantı raporu için bir programlı tanımlayıcısı (ProgID) ile ilişkili fiilleri kaydedebilirsiniz **HKEY_CLASSES_ROOT\{ProgID} \shell**. Daha fazla bilgi için [dosya türleri](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
-## <a name="registering-standard-verbs"></a>Standart fiiller kaydediliyor  
+## <a name="register-standard-verbs"></a>Standart fiiller kaydetme  
  İşletim sistemi, aşağıdaki standart fiiller tanır:  
   
 -   Open  
@@ -38,7 +38,7 @@ Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıc�
   
 -   Önizleme  
   
- Mümkün olduğunda, standart bir fiil kaydedin. Açık bir fiil en yaygın seçenektir. Dosyayı açıp dosyayı düzenlemeye arasında NET bir fark varsa düzenleme fiili kullanın. Bir .htm dosyasının düzenleme bir HTML Düzenleyicisi başlatılır ancak örneğin, bir .htm dosyasının açma tarayıcı içinde görüntüler. Standart fiiller ile işletim sistemi yerel yerelleştirilmiştir.  
+ Mümkün olduğunda, standart bir fiil kaydedin. Açık bir fiil en yaygın seçenektir. Dosyayı açıp dosyayı düzenlemeye arasında NET bir fark varsa düzenleme fiili kullanın. Örneğin, açma bir *.htm* dosyayı görüntüler, tarayıcı içinde düzenleme ise bir *.htm* dosyasını bir HTML Düzenleyicisi'ni başlatır. Standart fiiller ile işletim sistemi yerel yerelleştirilmiştir.  
   
 > [!NOTE]
 >  Standart fiiller kaydederken açık anahtar için varsayılan değer ayarlı değil. Varsayılan değer menüsünde görüntü dizesini içerir. Bu dize standart fiiller için işletim sistemi sağlar.  
@@ -74,7 +74,7 @@ Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıc�
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""  
 ```  
   
- Mevcut bir örneğini içinde bir dosyayı açmaya [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], DDEEXEC anahtarını kaydedin. Standart fiili kayıt için aşağıdaki örnekte bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .cs dosyası.  
+ Mevcut bir örneğini içinde bir dosyayı açmaya [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], DDEEXEC anahtarını kaydedin. Standart fiili kayıt için aşağıdaki örnekte bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs* dosya.  
   
 ```  
 [HKEY_CLASSES_ROOT\.cs]  
@@ -108,11 +108,11 @@ Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıc�
 @="system"  
 ```  
   
-## <a name="setting-the-default-verb"></a>Varsayılan fiili ayarlama  
- Varsayılan fiili bir kullanıcı bir dosyayı Windows Gezgini'nde çift tıkladığında çalıştırılan bir eylemdir. Varsayılan fiili HKEY_CLASSES_ROOT için varsayılan değer olarak belirtilen eylem olan\\*ProgID*\Shell anahtarı. Hiçbir değer belirtilmemişse, varsayılan fiili HKEY_CLASSES_ROOT içinde belirtilen ilk fiil olan\\*ProgID*\Shell anahtar listesi.  
+## <a name="set-the-default-verb"></a>Varsayılan fiili ayarlayın  
+ Varsayılan fiili bir kullanıcı bir dosyayı Windows Gezgini'nde çift tıkladığında çalıştırılan bir eylemdir. İçin varsayılan değer olarak belirtilen eylem varsayılan eylem olan **HKEY_CLASSES_ROOT\\*ProgID*\Shell** anahtarı. Hiçbir değer belirtilmemişse, varsayılan eylem içinde belirtilen ilk fiili olan **HKEY_CLASSES_ROOT\\*ProgID*\Shell** anahtar listesi.  
   
 > [!NOTE]
 >  Varsayılan fiil için uzantı yan yana dağıtım olarak değiştirmeyi planlıyorsanız, yükleme ve kaldırma üzerindeki etkisini göz önünde bulundurun. Yükleme sırasında özgün varsayılan değerin üzerine yazılır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan Yana Dosya İlişkilendirmelerini Yönetme](../extensibility/managing-side-by-side-file-associations.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Yan yana dosya ilişkilendirmelerini yönetme](../extensibility/managing-side-by-side-file-associations.md)

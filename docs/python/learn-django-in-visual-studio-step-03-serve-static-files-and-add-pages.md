@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 4eb8603933046ba02af32c41d5b4a2552b6d5185
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388351"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639701"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın
 
@@ -27,7 +27,7 @@ Bu öğreticinin önceki adımlarında müstakil HTML tek bir sayfayla en az bir
 Bu adımda, şunların nasıl yapılır:
 
 > [!div class="checklist"]
-> - Visual Studio öğe şablonları kullanışlı Demirbaş kod ile farklı türler hızla yeni dosyalar için kullanın (adım 3 - 1)
+> - Hızlı bir şekilde uygun Demirbaş kod ile farklı türdeki yeni dosyaları eklemek için Visual Studio öğe şablonları kullanın (adım 3 - 1)
 > - (3-2. adım) statik dosyaları sunmak için Django projesi yapılandırma
 > - (3-3. adım) uygulamaya ek sayfalar ekleme
 > - (Adım 3-4) sayfalar arasında kullanılan bir üst bilgi ve gezinti çubuğu oluşturmak için şablon devralma kullanın
@@ -186,7 +186,7 @@ Bir temel şablon kullanımını engeller betimleyen `{% block <block_name> %}` 
 
 Aşağıdaki adımlarda, devralma gösterilmektedir:
 
-1. Uygulamanın *şablonları/HelloDjangoApp* klasöründe yeni bir HTML dosyası oluşturun (kullanarak **Ekle** > **yeni öğe** bağlam menüsü veya **Ekle**  >  **HTML sayfası**) olarak adlandırılan `layout.html`ve içeriğini biçimlendirme ile değiştirin. Bu şablon "içerik" adlı bir bloğu, tüm bu başvuran sayfalar ihtiyacı değiştirin, içerdiğini görebilirsiniz:
+1. Uygulamanın *şablonları/HelloDjangoApp* klasöründe yeni bir HTML dosyası oluşturun (kullanarak **Ekle** > **yeni öğe** bağlam menüsü veya **Ekle**  >  **HTML sayfası**) olarak adlandırılan *layout.html*ve içeriğini biçimlendirme ile değiştirin. Bu şablon "içerik" adlı bir bloğu, tüm bu başvuran sayfalar ihtiyacı değiştirin, içerdiğini görebilirsiniz:
 
     ```html
     <!DOCTYPE html>

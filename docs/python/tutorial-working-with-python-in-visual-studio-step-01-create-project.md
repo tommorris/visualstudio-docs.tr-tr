@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512089"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639438"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Öğretici: Visual Studio'da Python ile çalışma
 
@@ -36,7 +36,7 @@ Visual Studio, Python için birinci sınıf dil desteği sağlar. Bu öğreticid
 
 ## <a name="step-1-create-a-new-python-project"></a>1. adım: yeni Python projesi oluşturma
 
-A *proje* Visual Studio kaynak kodu, kaynaklar, yapılandırmaları vb. dahil olmak üzere tek bir uygulama oluşturmak için birlikte gelen tüm dosyaları nasıl yönettiği. Bir proje testini biçimlendirir ve tüm proje dosyaları yanı sıra birden çok proje arasında paylaşılan, dış kaynaklara arasındaki ilişkiyi tutar. Bu nedenle, proje uygulamanızın kolayca genişletin ve yalnızca geçici klasör, bir projenin ilişkileri yönetme komutlar daha çok daha kolay büyütün, metin dosyalarını ve hatta kendi fikrinizi sağlar.
+A *proje* Visual Studio kaynak kodu, kaynaklar, yapılandırmaları vb. dahil olmak üzere tek bir uygulama oluşturmak için birlikte gelen tüm dosyaları nasıl yönettiği. Bir proje testini biçimlendirir ve tüm proje dosyaları yanı sıra birden çok proje arasında paylaşılan, dış kaynaklara arasındaki ilişkiyi tutar. Bu nedenle, uygulamanızı kolayca genişletin ve yalnızca geçici klasör, bir projenin ilişkileri yönetme komutlar daha çok daha kolay büyütün, metin dosyaları ve hatta kendi fikrinizi projeleri sağlar.
 
 Bu öğreticide tek ve boş bir kod dosyasını içeren basit bir projeyle başlayın.
 

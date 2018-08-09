@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: ae6c08942c3dccc735104c6e5221989290c6afd4
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388260"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637568"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2. adım: görünümleri ve şablonların bir Django uygulaması oluşturma
 
@@ -129,7 +129,7 @@ Deneyin gibi çevrimiçi araçları farklı normal ifadeleriyle denemeler yapmak
 
 ## <a name="step-2-3-render-a-view-using-html"></a>2-3. adım: HTML kullanarak görünüm işlemek
 
-`index` Şu ana kadar sahip olduğunuz işlevi *views.py* sayfası için bir düz metin HTTP yanıt başka bir şey oluşturur. Çoğu gerçek web sayfaları, doğal olarak, genellikle canlı verileri bir araya getiren zengin HTML sayfaları ile yanıt verir. Sizin oluşturulan içeriğin dinamik olarak aslında bir işlevi kullanarak bir görünüm tanımlamak için birincil nedeni olduğundan.
+`index` Şu ana kadar sahip olduğunuz işlevi *views.py* sayfası için bir düz metin HTTP yanıt başka bir şey oluşturur. Çoğu gerçek web sayfaları, doğal olarak, genellikle canlı verileri bir araya getiren zengin HTML sayfaları ile yanıt verir. İçeriği dinamik olarak oluşturmak için gerçekten bir işlevi kullanarak bir görünüm tanımlamak için birincil nedenidir.
 
 Çünkü bağımsız değişkeni `HttpResponse` yalnızca bir dize ise, bir dize içinde istediğiniz herhangi bir HTML'kurmak oluşturabilirsiniz. Basit bir örnek olarak, değiştirin `index` işlevini aşağıdaki kodla (varolan tutma `from` deyimleri), sayfayı yenileyin her zaman, güncelleştirilen dinamik içerik kullanarak bir HTML yanıtını oluşturur:
 
@@ -149,7 +149,7 @@ def index(request):
 Gibi bir ileti yeniden görmek için projeyi Çalıştır "**Django Merhaba!** Pazartesi, 16 Nisan 2018 16:28:10 üzerinde ". Güncelleştirme zamanı ve içeriğin her bir istekle üretiliyor onaylamak için sayfayı yenileyin. İşiniz bittiğinde, sunucunun durdurun.
 
 > [!Tip]
-> Bir kısayolu project durdurup kullanmaktır **hata ayıklama** > **yeniden** menü komutu (**Ctrl**+**kaydırma**  + **F5**) veya hata ayıklama araç çubuğundaki yeniden Başlat düğmesi:
+> Bir kısayolu project durdurup kullanmaktır **hata ayıklama** > **yeniden** menü komutu (**Ctrl**+**kaydırma**  + **F5**) veya **yeniden** hata ayıklama araç çubuğu düğmesi:
 >
 > ![Visual Studio'da hata ayıklama araç çubuğundan yeniden başlatın](media/debugging-restart-toolbar-button.png)
 
@@ -209,7 +209,7 @@ Aşağıdaki adımlarda, şablonların kullanımı gösterilmektedir:
 
     İlk bağımsız değişkeni `render`görebileceğiniz gibi uygulamanın içinde şablon dosyasına göreli yol tarafından izlenen istek nesnesi *şablonları* klasör. Bir şablon dosyası destekliyorsa, görünüm için uygun olarak adlandırılır. Üçüncü bağımsız değişkeni `render` şablon başvurduğu değişkenlerin bir sözlük ise. Sözlükte nesneleri içerir, bu şablon bir değişkende durumda başvurabilir `{{ object.property }}`.
 
-1. Projeyi çalıştırın ve çıktıyı gözlemleyin. 2-2, şablon çalıştığını gösteren görülen bu adıma benzer bir ileti görmeniz gerekir.
+1. Projeyi çalıştırın ve çıktıyı gözlemleyin. Şablon çalıştığını gösteren adım 2-2 görülen benzer bir ileti görmeniz gerekir.
 
     Ancak, HTML olarak kullandığınız gözlemleyin `content` özelliği, çünkü yalnızca düz metin olarak işler `render` işlevi otomatik olarak bu HTML atlar. Kaçış otomatik ekleme saldırılarına karşı yanlışlıkla güvenlik açıklarını önlemeye: geliştiriciler genellikle bir sayfadan giriş toplayın ve şablon yer tutucu aracılığıyla başka bir değer olarak kullanın. Kaçış Ayrıca, yeniden HTML sayfası şablonu ve kodunun dışında tutmak en iyi olduğunu anımsatıcı işlevi görür. Neyse ki, bu ek değişkenleri oluşturmak üzere basit ayıklamadır gerektiğinde. Örneğin, değiştirme *templates/index.html* sayfa başlığı ve tutar sayfa şablonunun tüm biçimlendirme ekler aşağıdaki biçimlendirme eşleştirmek için:
 

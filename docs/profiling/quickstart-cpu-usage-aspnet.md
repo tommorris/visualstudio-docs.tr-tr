@@ -2,7 +2,7 @@
 title: CPU kullanım verilerini (ASP.NET) çözümleme
 description: CPU kullanımı Tanılama Aracı'nı kullanarak ASP.NET uygulamalarında uygulama performansını ölçmeye
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,24 +13,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: fef516a2eac8247d44956e098ca9cfd613c2259b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468578"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638768"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: CPU kullanım verileri, Visual Studio (ASP.NET) çözümleme
 
 Visual Studio, uygulamanızdaki performans sorunlarını analiz etmenize yardımcı olmak için çok sayıda güçlü özellikler sağlar. Bu konuda bazı temel özellikleri öğrenmek için hızlı bir yolunu sağlar. Burada, yüksek CPU kullanımından kaynaklanan performans sorunlarını tanımlamak için bir aracı atacağız. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
 
-Tanılama hub'ı, çok sayıda çalıştırın ve tanılama oturumunuzu yönetmek için diğer bir seçenek sunar. Varsa **CPU kullanımı** burada açıklanan aracı değil size gereksinim duyduğunuz verileri [diğer profil oluşturma araçları](../profiling/Profiling-Tools.md) farklı türde size yardımcı olabilecek bilgiler sağlar. Çoğu durumda, uygulamanızın performans sorunu, CPU, bellek, işleme kullanıcı Arabirimi veya ağ isteği süresi gibi dışında bir şey tarafından kaynaklanabilir.
+Tanılama hub'ı, çok sayıda çalıştırın ve tanılama oturumunuzu yönetmek için diğer bir seçenek sunar. Varsa **CPU kullanımı** burada açıklanan aracı değil size gereksinim duyduğunuz verileri [diğer profil oluşturma araçları](../profiling/profiling-feature-tour.md) farklı türde size yardımcı olabilecek bilgiler sağlar. Çoğu durumda, uygulamanızın performans sorunu, CPU, bellek, işleme kullanıcı Arabirimi veya ağ isteği süresi gibi dışında bir şey tarafından kaynaklanabilir.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
 1. Visual Studio'da **dosya** > **yeni proje**.
 
 1. Altında **Visual C#**, seçin **Web**seçip Ortadaki bölmeden **ASP.NET Web uygulaması (.NET Framework)**.
+
+    Görmüyorsanız **ASP.NET Web uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü, ardından **Değiştir**.
 
 1. Gibi bir ad yazın **MyProfilingApp_MVC** tıklatıp **Tamam**.
 

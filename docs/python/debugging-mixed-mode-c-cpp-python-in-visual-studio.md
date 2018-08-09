@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 899720242910b97bf4ffd9fc4a847b6902b7574a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341741"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008440"
 ---
 # <a name="debug-python-and-c-together"></a>Python ve C++ birlikte hata ayıklama
 
@@ -77,7 +77,7 @@ Bu yöntemi kullanarak, ayıklanamıyor kullanan *py.exe* Başlatıcısı kendis
 
 İçin tüm önceki sürümleri, Visual Studio'nun C/C++ projeleri yalnızca yerel hata ayıklayıcı kullandığından, yalnızca Visual Studio'da Python projesi başlatma sırasında doğrudan karışık mod hata ayıklama etkinleştirilir. Ancak, hata ayıklayıcı ayrı olarak eklediğiniz olabilir:
 
-1. C++ proje hata ayıklama olmadan Başlat (**hata ayıklama** > **ayıklamadan Başlat** veya **Ctrl**+**F5**) .
+1. C++ proje hata ayıklama olmadan Başlat (**hata ayıklama** > **hata ayıklama olmadan Başlat** veya **Ctrl**+**F5**) .
 1. Seçin **hata ayıklama** > **işleme**. Görüntülenen iletişim kutusunda, uygun işlemi seçin ve ardından kullanın **seçin** açmak için düğmeyi **kod türünü seç** seçin iletişim **Python**:
 
     ![Python hata ayıklayıcısı eklenirken hata ayıklama türü olarak seçme](media/mixed-mode-debugging-attach-type.png)

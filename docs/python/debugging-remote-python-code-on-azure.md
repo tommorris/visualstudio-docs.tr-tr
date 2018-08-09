@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341793"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008625"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>Azure'da Python kodu uzaktan hata ayıklama
 
@@ -48,7 +48,7 @@ Belirtildiği gibi gizli kod kullanarak bir URL oluşturun *web.debug.config*, p
 
 ![Bir Azure App Service'te hata ayıklayıcı uç nokta belirleniyor](media/azure-remote-debugging-secret.png)
 
-Şu an ayarlamalısınız biçiminde URL `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` burada değiştirin &lt;gizli&gt;ve &lt;site_name&gt; , belirli değerleri içeren bir dize içinde.
+Şu an ayarlamalısınız biçiminde URL `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` burada değiştirin &lt;gizli&gt; ve &lt;site_name&gt; , belirli değerleri içeren bir dize içinde.
 
 Hata ayıklayıcıyı iliştirmek için seçin **hata ayıklama** > **iliştirme**seçin **Python uzaktan hata ayıklama** içinde **aktarım**açılır listesinde, URL'sini girin **niteleyicisi textbox**basın **Enter**. Visual Studio App Service'e başarıyla bağlantı kurabiliyorsanız, tek bir Python işlem listesinde gösterilir. Seçin ve ardından **iliştirme** hata ayıklamayı başlatmak için:
 

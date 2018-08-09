@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277036"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008274"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook nesne modeline genel bakış
   Microsoft Office Outlook için VSTO eklentileri geliştirmek için Outlook nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilir. Outlook nesne modeline sınıflar ve kullanıcı arabirimi öğelerini temsil eden arabirim sağlar. Örneğin, <xref:Microsoft.Office.Interop.Outlook.Application> nesnesini temsil eder tüm uygulama <xref:Microsoft.Office.Interop.Outlook.Folder> nesne e-posta veya diğer öğeleri içeren bir klasörü temsil eder ve <xref:Microsoft.Office.Interop.Outlook.MailItem> nesnesi, bir e-posta iletisini temsil eder.  
@@ -59,7 +59,7 @@ ms.locfileid: "39277036"
 ### <a name="application-object"></a>Uygulama nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.Application> Nesnesini temsil eden Outlook uygulaması ve Outlook nesne modelinde en üst düzey nesnedir. Bu nesnenin en önemli üyeleri bazıları şunlardır:  
   
--   [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) bir e-posta iletisi, görev veya randevu gibi yeni bir öğe oluşturmak için kullanabileceğiniz yöntemi.  
+-   [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) bir e-posta iletisi, görev veya randevu gibi yeni bir öğe oluşturmak için kullanabileceğiniz yöntemi.  
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Özelliği Outlook kullanıcı arabiriminde (UI) görüntüleyen bir klasörün içeriğini windows erişmek için kullanabilirsiniz.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "39277036"
 ### <a name="taskitem-object"></a>TaskItem nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> Nesnesi belirtilen bir zaman çerçevesi içinde gerçekleştirilecek bir görevi temsil eder. <xref:Microsoft.Office.Interop.Outlook.TaskItem> nesneleri yerleştirilir **görevleri** klasör.  
   
- Bir görev oluşturmak için kullanın [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> nesne ve değer geçirmek <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> parametresi için.  
+ Bir görev oluşturmak için kullanın [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> nesne ve değer geçirmek <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> parametresi için.  
   
 ### <a name="contactitem-object"></a>ContactItem nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>Nesnesini temsil eden bir kişi **kişiler** klasör. <xref:Microsoft.Office.Interop.Outlook.ContactItem> iletişim bilgileri, adres, e-posta adresi ve telefon numaraları gibi temsil ettikleri kişiler için çeşitli nesneleri içerir.  

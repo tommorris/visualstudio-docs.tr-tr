@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dc2b4893906e5f3f8902ab6cc08d17d61a45133f
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498973"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008287"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -80,7 +80,7 @@ Bir kesme noktasında durduruldu sonra kodunuz içinde adım adım veya yeniden 
 | **Dışına adımla** | **Shift**+**F11** | Kod için çağırma deyimine adımları sonra geçerli işlevin sonuna kadar çalışır.  Bu komut, geçerli işlevin geri kalanında hata ayıklamak ihtiyacınız kalmadığında yararlıdır. |
 | **İmlece kadar Çalıştır** | **CTRL**+**F10** | Kod Düzenleyicisi'nde şapka konumuna çalıştırır. Bu komut bir parçası olduğundan, hata ayıklamak için ihtiyacınız olmayan kod üzerinde kolayca atlamanızı sağlar. |
 | **Sonraki deyimi belirle** | **CTRL**+**Shift**+**F10** | Giriş işareti konumuna kod noktası çalıştırma geçerli değiştirir. Bu komut, gibi bildiğiniz kodu bozuk veya istenmeyen bir yan etkisi üretir, çalıştırılan kodun bir parçasını atlamak sağlar. |
-| **Sonraki bildirimi Göster** | **Alt**+**Num**+**&#42;**| Sonraki deyimi çalıştırmak için döndürür. Bu komut, kodunuzda arıyorsunuz geçici bir çözüm ve hata ayıklayıcı durduğu hatırlamıyorum yararlıdır. |
+| **Sonraki bildirimi Göster** | **Alt**+**Num****&#42;**| Sonraki deyimi çalıştırmak için döndürür. Bu komut, kodunuzda arıyorsunuz geçici bir çözüm ve hata ayıklayıcı durduğu hatırlamıyorum yararlıdır. |
 
 ### <a name="inspect-and-modify-values"></a>Denetleme ve değerleri değiştirme
 
@@ -149,11 +149,11 @@ Varsayılan olarak, hata ayıklayıcı, programınızın standart Python başlat
 
 | Seçenek | Açıklama |
 | --- | --- |
-| **Arama yolları** | ' Nde projenin arama yollarını düğümünde gösterilen bu değerlerin eşleşmesi **Çözüm Gezgini**. Burada bu değeri değiştirebilirsiniz, ancak bunu daha kolay olan kullanın **Çözüm Gezgini** klasörlere göz atmanıza olanak tanır ve yolları göreli forma otomatik olarak dönüştürür. |
+| **Arama yolları** | Projenin içinde gösterilen bu değerlerin eşleşmesi **arama yollarını** düğümünde **Çözüm Gezgini**. Burada bu değeri değiştirebilirsiniz, ancak bunu daha kolay olan kullanın **Çözüm Gezgini** klasörlere göz atmanıza olanak tanır ve yolları göreli forma otomatik olarak dönüştürür. |
 | **Betik bağımsız değişkenleri** | Bu bağımsız değişkenler komut dosyanızın filename sonra görünen betiğinizi başlatmak için kullanılan komut eklenir. İlk öğe İşte betiğinizi kullanılabilir `sys.argv[1]`olarak ikinci `sys.argv[2]`ve benzeri. |
 | **Yorumlayıcı bağımsız değişkenleri** | Bu bağımsız komut dosyanız adının önünde Başlatıcısı komut satırına eklenir. Genel bağımsız değişkenler burada `-W ...` denetimi uyarılar için `-O` biraz programınızı iyileştirmek için ve `-u` arabellekten çıkarılan g/ç kullanılacak. IronPython kullanıcıları geçirmek için bu alan kullanması muhtemel `-X` gibi seçenekleri `-X:Frames` veya `-X:MTA`. |
 | **Cesta k İnterpretu** | Geçerli ortam ile ilişkili yolu geçersiz kılar. Değer bir standart yorumlayıcı komut dosyanızı başlatmak için yararlı olabilir. |
-| **Ortam Değişkenleri** | Bu çok satırlı metin kutusuna form girişlerini ekleme \<adı > =\<değer >. Bu ayar son olarak, var olan tüm genel ortam değişkenlerini ve sonra üstte uygulandığından `PYTHONPATH` ayarlanır arama yollarını ayarına göre bunu el ile bu bulunanlardan herhangi biri diğer değişkenlerini geçersiz kılmak için kullanılabilir. |
+| **Ortam Değişkenleri** | Bu çok satırlı metin kutusuna form girişlerini ekleme \<adı > =\<değer >. Bu ayar son olarak, var olan tüm genel ortam değişkenlerini ve sonra üstte uygulandığından `PYTHONPATH` göre ayarlanır **arama yollarını** ayarı, bu el ile bu bulunanlardan herhangi biri diğer değişkenlerini geçersiz kılmak için kullanılabilir. |
 
 ## <a name="immediate-and-interactive-windows"></a>Hemen ve etkileşimli windows
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341513"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008222"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Etkileşimli pencerede Ipython kullanın
 
@@ -81,7 +81,7 @@ Bu kılavuz için olmalıdır [Anaconda](https://www.continuum.io) Ipython ve ge
 
 Ipython kaçış sistem Kabuk değişkeni değiştirme gibi başka birçok yararlı özellik yakalama çıkış, vb. vardır. Başvurmak [Ipython belgeleri](http://ipython.org/documentation.html) daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 
 - Jupyter kolayca ve yükleme olmadan kullanmak için ücretsiz deneyin [Azure not defterleri barındırılan hizmet](https://notebooks.azure.com/) olanak tanıyan tutun ve not defterlerinizi başkalarıyla paylaşın.
 

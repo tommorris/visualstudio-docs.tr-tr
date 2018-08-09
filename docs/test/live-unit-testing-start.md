@@ -11,16 +11,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c86c2d92088a7e34699e5c2fd15aef5de3ef06a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586522"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008427"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio Live Unit Testing kullanmaya başlama
 
-Visual Studio çözümünde Live Unit Testing ' ı etkinleştirdiğinizde, Live Unit Testing görsel olarak test kapsamınızı ve testlerinizi durumunu gösterir. Kodunuzu değiştirmeniz olduğunda da dinamik testleri yürütür. Bu değişiklikler, kodunuzu kıran anında bildirim sağlar ve ek testleri gerekli alanları gösterir.
+Visual Studio çözümünde Live Unit Testing ' ı etkinleştirdiğinizde, Live Unit Testing görsel olarak test kapsamınızı ve testlerinizi durumunu gösterir. Bu, kodunuzu değiştirmeniz olduğunda da dinamik testleri yürütür ve hemen değişikliklerinizi testleri başarısız olmasına neden olduğunda size bildirir.
 
 Live Unit Testing .NET Framework veya .NET Core hedef çözümlerini test etmek için kullanılabilir. Bu öğreticide, Live Unit Testing hedefleyen .NET Standard basit sınıf kitaplığı oluşturarak öğreneceksiniz ve test etmek için .NET Core hedefleyen bir MSTest projesi oluşturacaksınız.
 
@@ -152,7 +152,7 @@ Sonraki adım, test etmek için birim test projesi oluşturmaktır `StringLibrar
 
    ![UTF-8 kodlaması seçme](media/lut-start/utf8-encoding.png)
 
-1. Birim test projesi tarafından derleme **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde.
+1. Birim test projesi seçerek derleyin **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
@@ -200,7 +200,7 @@ Bunun için bir sınıf kitaplığı ve bunun yanı sıra bazı birim testlerini
 
 Şimdiye, testler için yazdığınız rağmen `StringLibrary` sınıf kitaplığı, henüz yürütülen bunları. Etkinleştirdikten sonra Live Unit Testing bunları otomatik olarak yürütür. Bunu yapmak için aşağıdakileri yapın:
 
-1. İsteğe bağlı olarak, kodu içeren kod penceresi seçin `StringLibrary`. Bu *class1.cs* bir C# projesi için veya *Class1.vb* Visual Basic projesi için. (Bu adım, Live Unit Testing etkinleştirdikten sonra testlerinizi sonucunu ve kod kapsamınızla kapsamını görsel olarak incelemenize olanak.)
+1. İsteğe bağlı olarak, kodu içeren kod penceresi seçin `StringLibrary`. Bu *Class1.cs* bir C# projesi için veya *Class1.vb* Visual Basic projesi için. (Bu adım, Live Unit Testing etkinleştirdikten sonra testlerinizi sonucunu ve kod kapsamınızla kapsamını görsel olarak incelemenize olanak.)
 
 1. Seçin **Test** > **Live Unit Testing** > **Başlat** en üst düzey Visual Studio menüsünde.
 
@@ -284,7 +284,7 @@ Kod kapsamını genişletmek için `StartsWithLower` yöntemi, aşağıdakileri 
 
 Bazı durumlarda, başarılı testler **Test Gezgini** grileştirilmiş olabilir. Bir test şu anda yürütülmekte olan veya son yürütülen olduğundan test olduğundan, kod değişiklikleri yeniden çalıştırılamayan test erişememeleri gösterir.
 
-Şu ana kadar olan tüm testlerimiz başarılı. Sonraki bölümde, test hatası nasıl işleyebileceğini inceleyeceğiz.
+Şu ana kadar tüm yaptığımız testleri başarılı olduğunda. Sonraki bölümde, test hatası nasıl işleyebileceğini inceleyeceğiz.
 
 ## <a name="handle-a-test-failure"></a>Test hatası işleme
 
@@ -295,7 +295,9 @@ Bu bölümde, nasıl Live Unit Testing belirlemek, sorun giderme ve test hatalar
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
 
-1. Test yürütüldüğünde, Live Unit Testing belirten `TestHasEmbeddedSpaces` yöntemi başarısız olmuşsa, aşağıdaki şekilde gösterildiği gibi: ![Test Gezgini başarısız bir test bildirimi.](media/lut-start/test-failure.png)
+1. Test yürütüldüğünde, Live Unit Testing belirten `TestHasEmbeddedSpaces` yöntemi başarısız olmuşsa, aşağıdaki şekilde gösterildiği gibi:
+
+   ![Başarısız bir test bildirimi Test Gezgini.](media/lut-start/test-failure.png)
 
 1. Kitaplık kodu görüntüler penceresi seçin. Live Unit Testing kod kapsamı için genişletmiştir Not `HasEmbeddedSpaces` yöntemi. Kırmızı ekleyerek de test hatası raporları "🞩" testler başarısız tarafından kapsanan satırlar için.
 
@@ -336,7 +338,7 @@ Bu bölümde, nasıl Live Unit Testing belirlemek, sorun giderme ve test hatalar
 
    ![Live Unit Testing başarısız bir test hakkında bilgiler.](media/lut-start/test-failure-info-vb.png)
 
-1. Başarısız seçin **TestHasEmbeddedSpaces** test edin. Live Unit Testing sunar, birçok seçenek, tüm testler, select testleri çalıştırmak, tüm testlerde hata ayıklama ve hata ayıklama gibi testler, aşağıdaki şekilde seçtiğiniz gösterilir unutmayın:
+1. Başarısız seçin **TestHasEmbeddedSpaces** test edin. Live Unit Testing sunar, birçok seçenek, tüm testler, seçilen testleri çalıştırmak, tüm testlerde hata ayıklama ve hata ayıklama gibi testler, aşağıdaki şekilde seçtiğiniz gösterilir unutmayın:
 
    ![Live Unit Testing başarısız bir test için Seçenekler.](media/lut-start/test-failure-options.png)
 
@@ -356,7 +358,7 @@ Bu bölümde, nasıl Live Unit Testing belirlemek, sorun giderme ve test hatalar
 
 ---
 
-Bu hatanın bir ön araştırma için yeterli bilgi sağlar. Her iki `TestHasEmbeddedSpaces`, yanlış bir varsayım yapılan test yordamı veya `HasEmbeddedSpaces` doğru tüm gömülü boşluklar tanımıyor. Tanılama ve sorun gidermek için başlayın `StringLibrary.HasEmbeddedSpaces` yöntemi:
+Bu hatanın bir ön araştırma için yeterli bilgi sağlar. Her iki `TestHasEmbeddedSpaces` (test yordamı) yapılan yanlış bir varsayım veya `HasEmbeddedSpaces` doğru tüm gömülü boşluklar tanımıyor. Tanılama ve sorun gidermek için başlayın `StringLibrary.HasEmbeddedSpaces` yöntemi:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 1. Karşılaştırmada bakın `HasEmbeddedSpaces` yöntemi. Bunu, U + 0020 olmasını katıştırılmış bir boşluk olarak kabul eder. Ancak, Unicode standardı diğer boşluk karakterleri içerir. Bu, kitaplık kodu yanlış bir boşluk karakteri sınadığı önerir.

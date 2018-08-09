@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 046706cf5e36b9e32d6b102e167a55070fcc4a31
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 9a670a432db352b6a99ca68fa5ce2892c686677b
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993947"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008479"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -1287,7 +1287,7 @@ Bu kural, bir açık küme ayracı olup olmadığını işlemiyle ilgili `{` pro
 
 | Değer | Açıklama
 | ------------- |:-------------|
-| erişimciler anonymous_methods, anonymous_types, control_blocks, olaylar, dizin oluşturucular, lambda ifadeleri, local_functions, yöntemleri, object_collection, özellikleri, türleri.<br>(Birden çok tür için Ayır ','). | Belirtilen kod öğelerini ("Allman" stil olarak da bilinir) için yeni bir satırdsa olacak şekilde küme ayraçları gerektirin |
+| erişimciler anonymous_methods, anonymous_types, control_blocks, olaylar, dizin oluşturucular, lambda ifadeleri, local_functions, yöntemleri, object_collection_array_initializers, özellikleri, türleri.<br>(Birden çok tür için Ayır ','). | Belirtilen kod öğelerini ("Allman" stil olarak da bilinir) için yeni bir satırdsa olacak şekilde küme ayraçları gerektirin |
 | tüm | Tüm ifadeler ("Allman" stil) için yeni bir satırdsa olacak şekilde küme ayraçları gerektirin |
 | yok | Küme ayraçları ("K & R") tüm ifadeler için aynı satırda olmasını gerektirin |
 

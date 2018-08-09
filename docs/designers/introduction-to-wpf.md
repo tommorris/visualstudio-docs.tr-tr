@@ -13,22 +13,22 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978355"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008466"
 ---
-# <a name="introduction-to-wpf"></a>WPF'ye Giriş
+# <a name="wpf-overview"></a>WPF genel bakış
 
 Windows Presentation Foundation (WPF) masaüstü istemcisi, görsel olarak etkileyici kullanıcı deneyimleri ile Windows için uygulamalar oluşturmanıza olanak sağlar.
 
- ![Contoso sağlık hizmetleri kullanıcı Arabirimi örneği](../designers/media/wpfintrofigure24.png)
+![Contoso sağlık hizmetleri kullanıcı Arabirimi örneği](../designers/media/wpfintrofigure24.png)
 
- WPF setinin modern grafik donanımının yararlanmak için yerleşik bir çözüm bağımsız ve vektör tabanlı işleme altyapısıdır. WPF Extensible Application Markup Language (XAML), denetimleri, veri bağlama, düzen, 2D ve 3D grafikler, animasyon, stiller, şablonlar, belgeleri, medya, metin içeren bir uygulama geliştirme özellikleri kapsamlı bir dizi çekirdek genişletir ve Tipografi. WPF, .NET Framework, .NET Framework Sınıf Kitaplığı'nın diğer öğeleri bir araya getiren uygulamalar oluşturmanıza yardımcı olacak dahil edilir.
+WPF setinin modern grafik donanımının yararlanmak için yerleşik bir çözüm bağımsız ve vektör tabanlı işleme altyapısıdır. WPF Extensible Application Markup Language (XAML), denetimleri, veri bağlama, düzen, 2D ve 3D grafikler, animasyon, stiller, şablonlar, belgeleri, medya, metin içeren bir uygulama geliştirme özellikleri kapsamlı bir dizi çekirdek genişletir ve Tipografi. WPF, .NET Framework, .NET Framework Sınıf Kitaplığı'nın diğer öğeleri bir araya getiren uygulamalar oluşturmanıza yardımcı olacak dahil edilir.
 
- Bu genel bakışta yeni gelenlere yöneliktir ve temel işlevleri ve WPF kavramlarını ele alınmaktadır.
+Bu genel bakışta yeni gelenlere yöneliktir ve temel işlevleri ve WPF kavramlarını ele alınmaktadır.
 
 ## <a name="program-with-wpf"></a>WPF ile programı
 
@@ -50,7 +50,7 @@ WPF, her ikisini de kullanarak bir uygulama geliştirmenize olanak tanır *biçi
 
 XAML bildirime dayalı olarak bir uygulamanın görünümünü uygulayan bir XML-tabanlı işaretleme dilidir. Genellikle, windows, iletişim kutuları, sayfalar ve kullanıcı denetimleri oluşturma ve denetimleri, şekiller ve grafikler ile doldurmak için kullanırsınız.
 
- Aşağıdaki örnek, tek bir düğme içeren bir pencere görünümünü uygulamak için XAML kullanır.
+Aşağıdaki örnek, tek bir düğme içeren bir pencere görünümünü uygulamak için XAML kullanır.
 
 ```xaml
 <Window
@@ -64,13 +64,13 @@ XAML bildirime dayalı olarak bir uygulamanın görünümünü uygulayan bir XML
 </Window>
 ```
 
- Özellikle, bu XAML bir pencere ve bir düğmeyi kullanarak tanımlar `Window` ve `Button` öğeleri, sırasıyla. Her öğe gibi özniteliklerle yapılandırılmış `Window` öğenin `Title` pencerenin başlık çubuğu metni belirtmek için özniteliği. Çalışma zamanında WPF biçimlendirmesi WPF sınıfların örnekleri için tanımlanan öznitelikleri ve öğeleri dönüştürür. Örneğin, `Window` öğesi örneğine dönüştürülür <xref:System.Windows.Window> sınıfının <xref:System.Windows.Window.Title%2A> özelliği değerini `Title` özniteliği.
+Özellikle, bu XAML bir pencere ve bir düğmeyi kullanarak tanımlar `Window` ve `Button` öğeleri, sırasıyla. Her öğe gibi özniteliklerle yapılandırılmış `Window` öğenin `Title` pencerenin başlık çubuğu metni belirtmek için özniteliği. Çalışma zamanında WPF biçimlendirmesi WPF sınıfların örnekleri için tanımlanan öznitelikleri ve öğeleri dönüştürür. Örneğin, `Window` öğesi örneğine dönüştürülür <xref:System.Windows.Window> sınıfının <xref:System.Windows.Window.Title%2A> özelliği değerini `Title` özniteliği.
 
- Aşağıdaki şekilde, önceki örnekte XAML tarafından tanımlanan kullanıcı arabirimi (UI) gösterilmektedir.
+Aşağıdaki şekilde, önceki örnekte XAML tarafından tanımlanan kullanıcı arabirimi (UI) gösterilmektedir.
 
- ![Bir düğme içeren bir pencere](../designers/media/wpfintrofigure10.png)
+![Bir düğme içeren bir pencere](../designers/media/wpfintrofigure10.png)
 
- XAML XML tabanlı olduğundan, onu ile oluşturan kullanıcı Arabirimi olarak bilinen iç içe öğelerin bir hiyerarşideki derlendiğinden bir [öğe ağacı](/dotnet/framework/wpf/advanced/trees-in-wpf). Öğe ağacı oluşturmak ve kullanıcı arabirimleri yönetmek için mantıksal ve kullanımı kolay bir yol sağlar.
+XAML XML tabanlı olduğundan, onu ile oluşturan kullanıcı Arabirimi olarak bilinen iç içe öğelerin bir hiyerarşideki derlendiğinden bir [öğe ağacı](/dotnet/framework/wpf/advanced/trees-in-wpf). Öğe ağacı oluşturmak ve kullanıcı arabirimleri yönetmek için mantıksal ve kullanımı kolay bir yol sağlar.
 
 ### <a name="code-behind"></a>Arka plan kod
 
@@ -639,18 +639,18 @@ Bu noktada, ancak yeni bir denetim oluşturmak için üç WPF model birinin yara
 
 Aşağıdaki örnek bir özel sayısal gösterir yukarı/aşağı öğesinden türetilen denetim <xref:System.Windows.Controls.UserControl>.
 
- [!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
 
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
+[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
+[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
 
- Kullanıcı denetimine eklemek için gerekli olan XAML sonraki örnekte bir <xref:System.Windows.Window>.
+Kullanıcı denetimine eklemek için gerekli olan XAML sonraki örnekte bir <xref:System.Windows.Window>.
 
- [!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
 
- Aşağıdaki şekil gösterir `NumericUpDown` denetiminde barındırılan bir <xref:System.Windows.Window>.
+Aşağıdaki şekil gösterir `NumericUpDown` denetiminde barındırılan bir <xref:System.Windows.Window>.
 
- ![Özel bir UserControl](../designers/media/wpfintrofigure3.png)
+![Özel bir UserControl](../designers/media/wpfintrofigure3.png)
 
 Özel denetimler hakkında daha fazla bilgi için bkz. [denetim yazmaya genel bakış](/dotnet/framework/wpf/controls/control-authoring-overview).
 

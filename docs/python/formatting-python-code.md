@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341603"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008674"
 ---
 # <a name="format-python-code"></a>Python kodu biçimlendirme
 
@@ -45,41 +45,41 @@ Biçimlendirme seçenekleri varsayılan olarak ayarlanmış bir üst eşleştiri
 
 | Sınıf tanımları seçeneği | İşaretli | Temizlenmiş |
 | --- | --- | --- | 
-| Tabanları listesi ile bir sınıf bildirimin adı arasındaki boşluk Ekle | `class X (object): pass` | `class X(object): pass` | 
-| Tabanları listesi parantezlerinin içine boşluk Ekle | `class X( object ): pass` | `class X(object): pass` |
-| Boş tabanları listesi parantezlerinin içine boşluk Ekle | `class X( ): pass` | `class X(): pass` |
+| **Tabanları listesi ile bir sınıf bildirimin adı arasındaki boşluk Ekle** | `class X (object): pass` | `class X(object): pass` | 
+| **Tabanları listesi parantezlerinin içine boşluk Ekle** | `class X( object ): pass` | `class X(object): pass` |
+| **Boş tabanları listesi parantezlerinin içine boşluk Ekle** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | İşlev tanımları seçeneği | İşaretli | Temizlenmiş |
 | --- | --- | --- |
-| Bir işlev bildiriminin adı ve parametre listesi arasına boşluk Ekle | `def X (): pass` | `def X(): pass` | 
-| Parametre listesi parantezlerinin içine boşluk Ekle | `def X( a, b ): pass` | `def X(a, b): pass` |
-| Boş parametre listesi parantezlerinin içine boşluk Ekle | `def X( ): pass` | `def X(): pass` |
-| Varsayılan parametre değerlerini '=' çevresinde boşluk Ekle | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| Dönüş ek açıklama işleçlerden önce ve sonra boşluk Ekle | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Bir işlev bildiriminin adı ve parametre listesi arasına boşluk Ekle** | `def X (): pass` | `def X(): pass` | 
+| **Parametre listesi parantezlerinin içine boşluk Ekle** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **Boş parametre listesi parantezlerinin içine boşluk Ekle** | `def X( ): pass` | `def X(): pass` |
+| **Varsayılan parametre değerlerini '=' çevresinde boşluk Ekle** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Dönüş ek açıklama işleçlerden önce ve sonra boşluk Ekle** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | İşleçler seçeneği | İşaretli | Temizlenmiş |
 | --- | --- | --- |
-| İkili işleçler etrafına boşluklar Ekle | `a + b` | `a+b` |
-| Atamalar etrafına boşluklar Ekle | `a = b` | `a=b` |
+| **İkili işleçler etrafına boşluklar Ekle** | `a + b` | `a+b` |
+| **Atamalar etrafına boşluklar Ekle** | `a = b` | `a=b` |
 
 <br/>
 
 | İfade boşluk seçeneği | İşaretli | Temizlenmiş |
 | --- | --- | --- |
-| Bir işlev çağrısı kişinin adı ve bağımsız değişken listesinin arasına boşluk Ekle | `X ()` | `X()` |
-| Boş bağımsız değişken listesi parantezlerinin içine boşluk Ekle | `X( )` | `X()` |
-| Bağımsız değişken listesi parantezlerinin içine boşluk ekleyin | `X( a, b )` | `X(a, b)` |
-| İfade parantezlerinin içine boşluk ekleyin | `( a )` | `(a)` |
-| Boş demet parantezlerinin içine boşluk Ekle | `( )` | `()` |
-| Tanımlama grubu parantezlerinin içine boşluk Ekle | `( a, b )` | `(a, b)` |
-| Boş köşeli ayraçların içine boşluk Ekle | `[ ]` | `[]` |
-| Listelerin köşeli ayraçlar içine boşluk Ekle | `[ a, b ]` | `[a, b]` |
-| Açma köşeli ayraç önce boşluk Ekle | `x [i]` | `x[i]` |
-| Köşeli ayraçlar içine boşluk Ekle | `x[ i ]` | `x[i]` |
+| **Bir işlev çağrısı kişinin adı ve bağımsız değişken listesinin arasına boşluk Ekle** | `X ()` | `X()` |
+| **Boş bağımsız değişken listesi parantezlerinin içine boşluk Ekle** | `X( )` | `X()` |
+| **Bağımsız değişken listesi parantezlerinin içine boşluk ekleyin** | `X( a, b )` | `X(a, b)` |
+| **İfade parantezlerinin içine boşluk ekleyin** | `( a )` | `(a)` |
+| **Boş demet parantezlerinin içine boşluk Ekle** | `( )` | `()` |
+| **Tanımlama grubu parantezlerinin içine boşluk Ekle** | `( a, b )` | `(a, b)` |
+| **Boş köşeli ayraçların içine boşluk Ekle** | `[ ]` | `[]` |
+| **Listelerin köşeli ayraçlar içine boşluk Ekle** | `[ a, b ]` | `[a, b]` |
+| **Açma köşeli ayraç önce boşluk Ekle** | `x [i]` | `x[i]` |
+| **Köşeli ayraçlar içine boşluk Ekle** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Biçimlendirme seçenekleri varsayılan olarak ayarlanmış bir üst eşleştiri
 
 | Seçenek | Biçimlendirme önce | Biçimlendirme sonrasında |
 | --- | --- | --- |
-| İçeri aktarılan modülleri yeni satıra Yerleştir | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| Gereksiz noktalı Kaldır | `x = 42;` | `x = 42` |
-| Birden çok deyim yeni satırlara Yerleştir | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **İçeri aktarılan modülleri yeni satıra Yerleştir** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **Gereksiz noktalı Kaldır** | `x = 42;` | `x = 42` |
+| **Birden çok deyim yeni satırlara Yerleştir** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>Sarmalama
 

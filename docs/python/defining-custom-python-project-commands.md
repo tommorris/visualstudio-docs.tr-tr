@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341270"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008329"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python projeleri için özel komutlar tanımlayın
 
-Python projelerinizi çalışma sürecinde kendinizi özel komut dosyaları veya modülleri pip komutları çalıştırmak veya başka bir rastgele aracını çalıştırın, çalıştırılacak bir komut penceresine geçiş bulabilirsiniz. İş akışınızı geliştirmek için özel komutları ekleyebilirsiniz **Python** alt menüde Python proje bağlam menüsü. Bu komutları bir konsol penceresi veya Visual Studio çıktı penceresinde çalıştırabilirsiniz. Visual Studio hataları ve Uyarıları, komutun çıktısından ayrıştırmayı istemek için normal ifadeleri de kullanabilirsiniz.
+Python projelerinizi çalışma sürecinde kendinizi özel komut dosyaları veya modülleri pip komutları çalıştırmak veya başka bir rastgele aracını çalıştırın, çalıştırılacak bir komut penceresine geçiş bulabilirsiniz. İş akışınızı geliştirmek için özel komutları ekleyebilirsiniz **Python** alt menüde Python proje bağlam menüsü. Bir konsol penceresi veya Visual Studio komutları çalıştırabilirsiniz **çıkış** penceresi. Visual Studio hataları ve Uyarıları, komutun çıktısından ayrıştırmayı istemek için normal ifadeleri de kullanabilirsiniz.
 
 Varsayılan olarak, bu menü yalnızca tek içeren **çalıştırma PyLint** komutu:
 

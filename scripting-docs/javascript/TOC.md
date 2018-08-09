@@ -1,5 +1,0 @@
-# [JavaScript Dil Başvurusu](javascript-language-reference.md)
-# [Javascript'teki Yenilikler](what-s-new-in-javascript.md)
-# [Visual Studio 2017’de JavaScript](javascript-in-vs-2017.md)
-# [JavaScript Başvurusu](reference/TOC.md)
-## [Koşullu Derleme](advanced/TOC.md)

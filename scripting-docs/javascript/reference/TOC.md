@@ -1,5 +1,0 @@
-# [JavaScript Başvurusu](javascript-reference.md)
-## [Sürüm Bilgileri](javascript-version-information.md)
-## [JavaScript Hataları](javascript-errors.md)
-### [JavaScript Çalışma zamanı Hataları](javascript-run-time-errors.md)
-### [JavaScript Söz Dizimi Hataları](javascript-syntax-errors.md)

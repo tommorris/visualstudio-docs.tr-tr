@@ -19,108 +19,108 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4881aba0f8ac1ea0f634491d6549c72de74bf67a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120429"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626094"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>İzlenecek yol: özellik Olay alıcıları ekleme
-  Özellik Olay alıcıları özelliği ile ilgili aşağıdaki olaylardan biri SharePoint'te oluştuğunda, yürütme yöntemler şunlardır:  
-  
--   Bir özelliğin yüklenme biçimini.  
-  
--   Bir özelliği etkinleştirilir.  
-  
--   Bir özelliği devre dışı bırakılır.  
-  
--   Bir özellik kaldırılır.  
-  
- Bu kılavuz, bir SharePoint Proje özelliğinde olay alıcı eklemek gösterilmiştir. Aşağıdaki görevleri gösterir:  
-  
--   Boş bir proje ile özellik olay alıcısı oluşturma.  
-  
--   İşleme **FeatureDeactivating** yöntemi.  
-  
--   Duyuruyu Duyurular listesine eklemek için SharePoint Proje nesne modelini kullanarak.  
-  
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
-  
-## <a name="prerequisites"></a>Önkoşullar  
- Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
-  
--   Microsoft Windows ve SharePoint sürümleri desteklenir. Daha fazla bilgi için bkz: [SharePoint çözümleri geliştirmek için gereksinimler](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
-  
--   Visual Studio.  
-  
-## <a name="create-a-feature-event-receiver-project"></a>Bir özellik olay alıcı projesi oluşturma
- İlk olarak, özellik olay alıcısı içerecek şekilde bir proje oluşturun.  
-  
-#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Özellik olay alıcısı ile bir proje oluşturmak için  
-  
-1.  Menü çubuğunda seçin **dosya** > **yeni** > **proje** görüntülemek için **yeni proje** iletişim kutusu.  
-  
-2.  Genişletme **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.  
-  
-3.  İçinde **şablonları** bölmesinde seçin **SharePoint 2010 proje** şablonu.  
-  
-     Proje şablonu sahip oldukları için bu proje türü için özellik Olay alıcıları kullanın.  
-  
-4.  İçinde **adı** kutusuna **FeatureEvtTest**ve ardından **Tamam** görüntülemek için düğmesini **SharePoint Özelleştirme Sihirbazı'nı**.  
-  
-5.  Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtmek** sayfasında, yeni özel alan öğesi eklemek istediğiniz SharePoint server site için URL'yi girin veya varsayılan konumu kullanın (http://\<*sistem ad*> /).  
-  
-6.  İçinde **bu SharePoint çözüm için güven düzeyini nedir?** bölümünde, seçin **Grup çözümü olarak dağıtma** seçenek düğmesi.  
-  
-     Küme çözümleri karşı korumalı çözümler hakkında daha fazla bilgi için bkz: [Korumalı çözüm değerlendirmeleri](../sharepoint/sandboxed-solution-considerations.md).  
-  
-7.  Seçin **son** düğmesine tıklayın ve ardından Feature1 adlı bir özellik altında göründüğünü fark **özellikleri** düğümü.  
-  
-## <a name="add-an-event-receiver-to-the-feature"></a>Özelliği için olay alıcı ekleyin
- Ardından, olay alıcı özelliğini ekleyin ve özellik devre dışı bırakıldığında yürütülen kodu ekleyin.  
-  
-#### <a name="to-add-an-event-receiver-to-the-feature"></a>Özelliği için olay alıcı eklemek için  
-  
-1.  Özellikler düğümü için kısayol menüsünü açın ve ardından **Özellik Ekle** bir özellik oluşturmak için.  
-  
-2.  Altında **özellikleri** düğümü için kısayol menüsünü açın **Feature1**ve ardından **olay alıcısı Ekle** özelliği için olay alıcı eklemek için.  
-  
-     Bu kod dosyası Feature1 altında ekler. Bu durumda, bu da adlı *Feature1.EventReceiver.cs* veya *Feature1.EventReceiver.vb*projenizin geliştirme dilini bağlı olarak.  
-  
-3.  Projenizi yazılmışsa [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], zaten yoksa olay alıcısı en üstte aşağıdaki kodu ekleyin:  
-  
-     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]  
-  
-4.  Olay alıcısı sınıf olayları olarak hareket birkaç kılınan yöntemler içerir. Değiştir **FeatureDeactivating** aşağıdaki yöntemiyle:  
-  
+  Özellik Olay alıcıları SharePoint'te özelliği ile ilgili aşağıdaki olaylardan biri meydana geldiğinde yürütülen yöntemler şunlardır:
+
+-   Bir özelliği yüklenir.
+
+-   Bir özelliği etkinleştirilir.
+
+-   Bir özelliği devre dışı bırakılır.
+
+-   Bir özellik kaldırılır.
+
+ Bu yönerge, SharePoint projesindeki bir özellik için bir olay alıcısı ekleneceğini gösterir. Bunu, aşağıdaki görevleri gösterir:
+
+-   Boş bir proje özellik olayı alıcısını oluşturuluyor.
+
+-   İşleme **FeatureDeactivating** yöntemi.
+
+-   Duyuru duyuruları listesine eklemek için SharePoint Proje nesne modelini kullanma.
+
+ [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+
+## <a name="prerequisites"></a>Önkoşullar
+ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
+
+-   Microsoft Windows ve SharePoint sürümleri desteklenir.
+
+-   Visual Studio.
+
+## <a name="create-a-feature-event-receiver-project"></a>Bir özelliği olay alıcısı projesi oluşturma
+ İlk olarak, özellik olayı alıcısını içeren bir proje oluşturun.
+
+#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Özellik olayı alıcısını bir proje oluşturmak için
+
+1.  Menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje** iletişim kutusu.
+
+2.  Genişletin **SharePoint** ya da düğümünde **Visual C#** veya **Visual Basic**ve ardından **2010** düğümü.
+
+3.  İçinde **şablonları** bölmesinde seçin **SharePoint 2010 projesi** şablonu.
+
+     Hiçbir proje şablonu sahip oldukları özellik Olay alıcıları için bu proje türünü kullanın.
+
+4.  İçinde **adı** kutusuna **FeatureEvtTest**ve ardından **Tamam** görüntülemek için düğmeyi **SharePoint Özelleştirme Sihirbazı**.
+
+5.  Üzerinde **hata ayıklama için site ve güvenlik düzeyini belirtin** sayfasında, yeni özel alan öğesi eklemek istediğiniz sunucu için SharePoint sitesi URL'sini girin veya varsayılan konumu kullanın (http://\<*sistem adı*> /).
+
+6.  İçinde **bu SharePoint çözümünün güven düzeyi nedir?** bölümünde, seçin **Grup çözümü olarak Dağıt** seçenek düğmesini.
+
+     Grup çözümlerini karşı korumalı çözümler hakkında daha fazla bilgi için bkz. [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).
+
+7.  Seçin **son** düğmesini ve ardından özellik1 adlı bir özellik altında göründüğüne dikkat edin **özellikleri** düğümü.
+
+## <a name="add-an-event-receiver-to-the-feature"></a>Özelliği olay alıcısı Ekle
+ Ardından, özelliği olay alıcısı Ekle ve özellik devre dışı durumunda yürütülen kodu ekleyin.
+
+#### <a name="to-add-an-event-receiver-to-the-feature"></a>Bir olay alıcısı için bir özelliği eklemek için
+
+1.  Özellikler düğümü için kısayol menüsünü açın ve ardından **ekleme özelliği** bir özellik oluşturmak için.
+
+2.  Altında **özellikleri** düğümü için kısayol menüsünü açın **özellik1**ve ardından **olay alıcısı Ekle** özelliği olay alıcısı eklemek.
+
+     Bu, özellik1 altında bir kod dosyası ekler. Ya da bu durumda, isimlendirilmiştir *Feature1.EventReceiver.cs* veya *Feature1.EventReceiver.vb*projenizin geliştirme dilini bağlı olarak.
+
+3.  Projenizi yazılmışsa [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], zaten yoksa, olay alıcısı üstüne aşağıdaki kodu ekleyin:
+
+     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
+
+4.  Olay alıcısı sınıfına olay gibi davranan birçok kılınan yöntemleri içerir. Değiştirin **FeatureDeactivating** aşağıdaki yöntemi:
+
      [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
-     [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]  
-  
-## <a name="test-the-feature-event-receiver"></a>Özellik olay alıcısı test
- Ardından, test etmek için özellik devre dışı olup olmadığını **FeatureDeactivating** yöntemi duyuru SharePoint Duyurular listesine çıkarır.  
-  
-#### <a name="to-test-the-feature-event-receiver"></a>Özellik olay alıcısı sınamak için  
-  
-1.  Projenin değerini **etkin Dağıtım Yapılandırması** özelliğine **Hayır etkinleştirme**.  
-  
-     Bu özelliği ayarlamak, SharePoint'te etkinleştirme özelliği engeller ve özellik Olay alıcıları hata ayıklama olanak tanır. Daha fazla bilgi için bkz: [hata ayıklama SharePoint çözümlerini](../sharepoint/debugging-sharepoint-solutions.md).  
-  
-2.  Seçin **F5** projeyi çalıştırın ve SharePoint'e dağıtmak için anahtar.  
-  
-3.  SharePoint Web sayfanın en üstünde açık **Site eylemleri** menüsünde ve ardından **Site Ayarları**.  
-  
-4.  Altında **Site eylemleri** bölümünü **Site Ayarları** sayfasında, **site özelliklerini Yönet** bağlantı.  
-  
-5.  Üzerinde **özellikleri** sayfasında, **etkinleştirme** düğmesine **FeatureEvtTest Feature1** özelliği.  
-  
-6.  Üzerinde **özellikleri** sayfasında, **etkinliğini** düğmesine **FeatureEvtTest Feature1** özelliği ve ardından **bu özelliği devre dışı bırak**  özelliği devre dışı bırakmak için onay bağlantısı.  
-  
-7.  Seçin **giriş** düğmesi.  
-  
-     Duyuru görünür bildirimi **duyuruları** özelliği devre dışı bırakıldıktan sonra listeleyin.  
-  
+     [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
+
+## <a name="test-the-feature-event-receiver"></a>Test özelliği olay alıcısı
+ Ardından, test etmek için özellik devre dışı olup olmadığını **FeatureDeactivating** yöntemi bir duyuruyu SharePoint Duyurular listesi verir.
+
+#### <a name="to-test-the-feature-event-receiver"></a>Özellik olayı alıcısını test etmek için
+
+1.  Projenin değerini **etkin Dağıtım Yapılandırması** özelliğini **Hayır etkinleştirme**.
+
+     Bu özelliğin ayarlanması SharePoint'te etkinleştirmesini özellik engeller ve özellik Olay alıcıları hatalarını ayıklamanıza olanak tanır. Daha fazla bilgi için [hata ayıklama SharePoint çözümleri](../sharepoint/debugging-sharepoint-solutions.md).
+
+2.  Seçin **F5** projeyi çalıştırın ve SharePoint'e dağıtmak için anahtar.
+
+3.  SharePoint Web sayfasının en üstünde açın **Site eylemleri** menüsünü seçip **Site Ayarları**.
+
+4.  Altında **Site eylemleri** bölümünü **Site Ayarları** sayfasında **site özelliklerini Yönet** bağlantı.
+
+5.  Üzerinde **özellikleri** sayfasında **etkinleştirme** düğmesinin yanındaki **FeatureEvtTest özellik1** özelliği.
+
+6.  Üzerinde **özellikleri** sayfasında **devre dışı bırak** düğmesinin yanındaki **FeatureEvtTest özellik1** özelliği ve ardından **bu özelliği devre dışı bırak**  özelliği devre dışı bırakmak için onay bağlantısı.
+
+7.  Seçin **giriş** düğmesi.
+
+     Bir duyurunun göründüğüne dikkat edin **duyuruları** özelliği devre dışı bırakıldıktan sonra listesi.
+
 ## <a name="see-also"></a>Ayrıca bkz.
- [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
- [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  
+
+- [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)
+- [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)

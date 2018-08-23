@@ -23,142 +23,142 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7af8c68764b3a9ed85bf6a52a3a6c4a0568203
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572056"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626120"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 **Araçlar > Seçenekler > hata ayıklama > Genel** sayfasında bu makalede açıklanan seçenekler ayarlamanıza imkan sağlar.
 
-Varsayılan ayarları geri yüklemeniz gerekiyorsa, o kullanarak yapabilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları** > **tüm ayarlara**. Yalnızca bir alt kümesini ayarları sıfırlamak istiyorsanız, ayarlarınızı kaydetmek **içeri ve dışarı aktarım ayarları Sihirbazı** test etmek istediğiniz bir değişiklik yapmadan önce sonra kaydedilmiş ayarlarınızı daha sonra alabilirsiniz.
+Varsayılan ayarlarını geri yüklemeniz gerekirse, bu kullanarak yapabilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları** > **tüm ayarları Sıfırla**. Yalnızca bir alt kümesini ayarlarını sıfırlamak istiyorsanız, ayarlarınızı kaydedin **içeri ve dışarı aktarma ayarları Sihirbazı** test etmek istediğiniz değişiklik yapmadan önce sonra kaydedilmiş ayarlarınızı daha sonra içeri aktarın.
   
-**Tüm kesme noktaları silmeden önce sor** tamamlamadan önce onay gerektirir **silmek tüm kesme noktaları** komutu.  
+**Tüm kesme noktalarını silmeden önce sor** tamamlamadan önce onay gerektirir **tüm kesme noktalarını Sil** komutu.  
   
-**Tüm işlemler bir işlem böldüğünde bölün** aynı anda tüm işlemler için hata ayıklayıcı kullanıma açılmış, bir kesme oluştuğunda keser.  
+**Bir işlem kesildiğinde tüm işlemleri Kes** , hata ayıklayıcının bağlı, bir kesme oluştuğunda tüm işlemler aynı anda keser.  
   
-**Özel durumlar AppDomain veya yönetilen/yerel sınırları geçtiğinde bölün** yönetilen ya da karma modda hata ayıklama ortak dil çalışma zamanı uygulama etki alanı sınırları veya yönetilen/yerel sınırları arası özel durumları yakalamak, aşağıdaki koşullar geçerli olur:  
+**Özel durumlar, AppDomain veya yönetilen/yerel sınırları geçtiğinde Kes** yönetilen veya karma mod hata ayıklama ortak dil çalışma zamanı uygulama etki alanı sınırları veya yönetilen/yerel sınırları çapraz özel durumları yakalayabilir, aşağıdaki koşullar geçerli olur:  
   
-1\) zaman yerel kod COM birlikte çalışma kullanarak yönetilen kod çağırır ve yönetilen kod bir özel durum oluşturur. Bkz: [COM birlikte çalışma giriş](/dotnet/articles/visual-basic/programming-guide/com-interop/introduction-to-com-interop).  
+1\) yerel kod, COM birlikte çalışabilirliği kullanılarak yönetilen kodu çağırır ve yönetilen kod bir özel durum oluşturduğunda. Bkz: [COM birlikte çalışma'ya giriş](/dotnet/articles/visual-basic/programming-guide/com-interop/introduction-to-com-interop).  
   
-2\) zaman 1 uygulama etki alanında çalışan yönetilen kodu 2 uygulama etki alanında yönetilen kod çağırır ve uygulama etki alanı 2 kodda bir özel durum oluşturur. Bkz: [programlama uygulama etki alanları ile](/dotnet/articles/framework/app-domains/index).  
+2\) ne zaman 1 uygulama etki alanında çalışan yönetilen kod 2 uygulama etki alanındaki yönetilen kodu çağırır ve 2 uygulama etki alanındaki kod bir özel durum oluşturur. Bkz: [uygulama etki alanlarıyla programlama](/dotnet/articles/framework/app-domains/index).  
 
-3\) zaman kod yansıma kullanarak bir işlevi çağırır ve işlev bir özel durum oluşturur. Bkz: [yansıma](/dotnet/framework/reflection-and-codedom/reflection).  
+3\) zaman kod, yansıma kullanarak bir işlev çağırdığında ve işlev bir özel durum oluşturur. Bkz: [yansıma](/dotnet/framework/reflection-and-codedom/reflection).  
   
-Koşul 2 ve 3, özel durum bazen yönetilen kodda tarafından yakalanan `mscorlib` ortak dil çalışma zamanı yerine. Bu seçenek etkilemez tarafından yakalanan özel durumları kesme `mscorlib`.  
+2. ve 3 koşul içinde özel durum bazen yönetilen kod tarafından yakalandı `mscorlib` ortak dil çalışma zamanı yerine. Bu seçenek etkilemez tarafından yakalanan özel bozucu `mscorlib`.  
   
-**Adres düzeyi hata ayıklamayı etkinleştir** Gelişmiş adresi düzeyinde hata ayıklama özelliklerini etkinleştirir ( **ayrıştırılmış** penceresinde **kaydeder** penceresi ve adres kesme noktaları).  
+**Adres seviyesinde hata ayıklamayı** Gelişmiş adres düzeyinde hata ayıklama özellikleri etkinleştirir ( **ayrıştırılmış kodu** penceresinde **kaydeder** penceresi ve adres kesme noktaları).  
   
-- **Kaynak kullanılabilir değilse, ayrıştırılmış Göster** otomatik olarak gösterir **ayrıştırılmış** hangi kaynak kodda hata ayıklama çalıştığınızda penceresi kullanılamıyor.  
+- **Kaynak kullanılamıyorsa ayrıştırılmış Kodu Göster** otomatik olarak gösterir **ayrıştırılmış kodu** için hangi kaynak kod hata ayıklamayı denediğinizde penceresi kullanılamıyor.  
   
-**Kesme noktası filtrelerini etkinleştirin** yalnızca belirli işlemleri, iş parçacığı veya bilgisayarları etkileyeceğini kesme noktaları üzerinde filtreleri ayarlamanıza olanak sağlar.  
+**Kesme noktası filtrelerini etkinleştir** , böylece yalnızca belirli işlemleri, iş parçacıklarını veya bilgisayarları etkiler kesme noktalarında filtreler ayarlamanızı sağlar.  
  
-**Yeni özel durum Yardımcısı kullanmak** özel durum Yardımcısı değiştirir özel durum Yardımcısı (Visual Studio 2017) sağlar.
+**Yeni özel durum Yardımcısını Kullan** özel durum Yardımcısını değiştirir. özel durum Yardımcısı (Visual Studio 2017) sağlar.
   
 > [!NOTE]
-> Yönetilen kod için bu seçeneği önceden çağrıldı **özel durum Yardımcısı'nı etkinleştir** . 
+> Yönetilen kod için bu seçenek daha önceden çağrıldığından **özel durum Yardımcısını** . 
   
-**Sadece kendi kodumu etkinleştir** hata ayıklayıcı görüntüler ve adımları kullanıcı koda ("My kodu") yalnızca, sistem kodu ve optimize edilen veya, yok hata ayıklama simgeleri diğer kodu yoksayılıyor.
+**Sadece benim kodumu etkinleştir** hata ayıklayıcı görüntüler ve adımları kullanıcı kodu ("kodum") yalnızca, sistem kodunu ve en iyisi olan veya olmayan hata ayıklama simgeleri diğer kod yoksayılıyor.
 
-- **Hiçbir kullanıcı kodu yoksa, başlatılırken (sadece yönetilen) uyar** başlatır sadece kendi etkin kodumu ile hata ayıklama sırasında bu seçenek, hiçbir kullanıcı kodu ("My kodu") olup olmadığını sizi uyarır. 
+- **(Sadece yönetilen) hiç kullanıcı kodu yoksa uyar** yalnızca kendi kodum ile hata ayıklama başladığında, bu seçenek, kullanıcı kodu ("kodum") olup olmadığını sizi uyarır. 
 
-**.NET Framework etkinleştirmek kaynak atlama** .NET Framework kaynağına adım hata ayıklayıcı sağlar. Bu seçenek otomatik olarak etkinleştirme yalnızca My kod .NET simgeleri bir önbellek konumuna indirilir Framework devre dışı bırakır. Önbellek konumunu değiştirebilirsiniz **seçenekleri** iletişim kutusu, **hata ayıklama** kategorisi, **simgeleri** sayfası.  
+**Etkinleştirme .NET Framework kaynak Adımlamayı** hata ayıklayıcının .NET Framework kaynağına ilerlemesine olanak sağlar. Bu seçeneği etkinleştirmek otomatik olarak yalnızca My Code .NET sembolleri bir önbellek konumuna karşıdan yüklenir Framework'ü devre dışı bırakır. Önbellek konumunu değiştirebilirsiniz **seçenekleri** iletişim kutusu, **hata ayıklama** kategori **sembolleri** sayfası.  
   
-**Özellikleri ve işleçler (sadece yönetilen) Adımlama** özellikleri ve yönetilen kod işleçleri içine Adımlama hata ayıklayıcı engeller.  
+**Özellikler ve işleçler (sadece yönetilen) üzerinden adımla** hata ayıklayıcı, yönetilen kod içindeki özellikler ve işleçlerin içine adımlamasını engeller.  
   
-**Özellik değerlendirmesi ve diğer dolaylı işlev çağrılarını etkinleştirme** özellikleri ve dolaylı işlevi otomatik değerlendirme açar değişkenleri windows çağırır ve **QuickWatch** iletişim kutusu.  
+**Özellik değerlendirmesini ve diğer örtük işlev çağrılarını ekinleştir** özelliklerin ve örtülü işlev otomatik olarak değerlendirilmesini etkinleştirir değişkenler pencerelerinde çağırır ve **QuickWatch** iletişim kutusu.  
   
-- **Değişkenleri windows (C# ve JavaScript yalnızca) nesnelerde dize dönüştürme işlevini çağırın** değişkenleri windows nesneleri değerlendirirken örtük dize dönüştürme çağrısı yürütür. Sonuç türü adı yerine bir dize olarak görüntülenir. Yalnızca C# kodunda hata ayıklama sırasında uygulanır. Bu ayar DebuggerDisplay özniteliği tarafından geçersiz kılınmış olabilir (bakın [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md)).  
+- **(C# ve JavaScript yalnızca) değişken pencerelerindeki nesnelerde dize dönüştürme işlevini çağırma** değişken pencerelerinde nesneleri değerlendirirken bir örtük dize dönüştürmesi çağrısı yürütür. Sonuç tür adı yerine bir dize olarak görüntülenir. Yalnızca C# kodunda hata ayıklama sırasında uygulanır. Bu ayar DebuggerDisplay özniteliği tarafından geçersiz kılınmış olabilir (bakın [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Kaynak sunucu desteğini etkinleştir** SrcSrv uygulayan kaynak sunuculardan kaynak dosyaları almak için Visual Studio hata ayıklayıcısı söyler (`srcsrv.dll`) protokolü. Team Foundation Server ve Windows için hata ayıklama araçları protokolünü uygulayan iki kaynak sunucular olan. SrcSrv kurulumu hakkında daha fazla bilgi için bkz: [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) belgeleri. Ayrıca bkz [belirtin simge (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Kaynak sunucusu desteğini etkinleştir** Visual Studio hata ayıklayıcıya SrcSrv uygulayan kaynak sunuculardan kaynak dosyaları almak için (`srcsrv.dll`) protokolü. Team Foundation Server ve Windows için hata ayıklama araçları protokol uygulayan iki kaynak sunucular olan. SrcSrv kurulumu hakkında daha fazla bilgi için bkz. [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) belgeleri. Ayrıca bkz [belirtin sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  .Pdb dosyaları okuma rastgele kod dosyaları yürütebilir çünkü sunucu güvendiğinizden emin olun.  
+> Çünkü okuma *.pdb* dosyaları, dosyalarda rasgele kod yürütebilir, sunucunun güvenilir olduğundan emin olun.  
   
-- **Kaynak sunucu tanılama iletileri çıkış penceresine yazdırma** kaynak sunucu desteği etkinleştirildiğinde, tanılama ekranda bu ayarı kapatır.  
+- **Kaynak sunucusu tanılama iletilerini çıkış penceresine Yazdır** kaynak sunucu desteği etkinleştirildiğinde, bu ayar tanılama görüntüsünü etkinleştirir.  
   
-- **Kaynak sunucu için kısmi güven derlemeleri (sadece yönetilen) izin** kaynak sunucu desteği etkinleştirildiğinde, bu ayar kaynakları için kısmi güven derlemeleri almadığınızdan varsayılan davranışı geçersiz kılar.  
+- **Kısmi güven derlemeleri (sadece yönetilen) için kaynak sunucuya izin** kaynak sunucu desteği etkinleştirildiğinde, bu ayar kısmi güven derlemeleri için kaynakları almayarak varsayılan davranışını geçersiz kılar.  
 
-**Kaynak bağlantısı desteğini etkinleştirme** kaynak dosyalarını kaynağı bağlantı bilgilerini içeren .pdb dosyaları indirmek için Visual Studio hata ayıklayıcısı söyler. Kaynak bağlantısı hakkında daha fazla bilgi için bkz: [kaynak bağlantı belirtimi](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
+**Kaynak bağlantısı desteğini etkinleştir** kaynak bağlantı bilgilerini içeren .pdb dosyaları için kaynak dosyalarını indirmek üzere Visual Studio hata ayıklayıcıya bildirir. Kaynak bağlantısı hakkında daha fazla bilgi için bkz: [kaynak bağlantı belirtimi](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
     >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
-**Kesme noktaları ve geçerli deyimi (C++ yalnızca) için tüm satırı vurgulayın** bir kesme noktası ya da geçerli deyimi hata ayıklayıcı vurgular, tüm satırı vurgular.  
+**Kesme noktaları ve geçerli deyim (yalnızca C++) için satırın tamamını vurgulayın** hata ayıklayıcı bir kesme noktası veya geçerli ifadeyi Vurguladığında tüm satırı vurgular.  
   
-**Kaynak dosyaları tam olarak eşleşen özgün sürümü gerektiren** kaynak dosyasını ayıkladığınız yürütülebilir oluşturmak için kullanılan kaynak kodu sürümüyle eşleşen doğrulamak için hata ayıklayıcı söyler. Sürüm eşleşiyorsa, eşleşen bir kaynak bulmak için istenir. Eşleşen bir kaynak bulunmazsa, kaynak kodu hata ayıklama sırasında görüntülenmez. 
+**Özgün sürümle kaynak dosyaların uyuşmasını gerektir** bir kaynak dosyası hata ayıklamasını yaptığınız çalıştırılabilir dosyayı oluşturmak için kullanılan kaynak kodu sürümüyle eşleşen doğrulamak için hata ayıklayıcıya bildirir. Sürüm eşleşmiyorsa, eşleşen bir kaynak bulmanız istenir. Eşleşen bir kaynak bulunamıyorsa, kaynak kodu hata ayıklama sırasında görüntülenmez. 
   
-**Komut penceresi tüm çıktı penceresi metni yönlendirmek** tüm hata ayıklayıcı, normalde içinde görüneceği iletileri gönderir **çıkış** penceresine **hemen** penceresi yerine.  
+**Tüm çıkış penceresi metnini yürütme penceresine yeniden yönlendir** normalde içinde görünecek ileti tüm hata ayıklayıcı gönderir **çıkış** penceresine **hemen** penceresi yerine.  
   
-**Nesnelerin ham yapısı değişkenleri windows Göster** tüm nesne yapısı görünüm özelleştirmelerini devre dışı bırakır. Görünüm özelleştirmelerini hakkında daha fazla bilgi için bkz: [.managed nesnelerin özel görünümlerini oluşturma](../debugger/create-custom-views-of-dot-managed-objects.md).  
+**Nesnelerin ham yapısını değişkenler pencerelerinde Göster** tüm nesne yapısı görünümü özelleştirmelerini devre dışı bırakır. Görünüm özelleştirmeleri hakkında daha fazla bilgi için bkz. [.managed nesnelerin özel görünümlerini oluşturma](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
-**JIT iyileştirmesi modülü Yükü (sadece yönetilen) bastırmak** JIT iyileştirmesi yönetilen kodun bir modül yüklenir ve hata ayıklayıcısı ekli sırada JIT derlenmiş devre dışı bırakır. En iyi duruma getirme devre dışı bırakma bazı sorunlar hata ayıklamak performans rağmen ödün verme pahasına kolaylaştırabilir. Sadece kendi kodumu kullanıyorsanız, JIT gizleme kullanıcı kodu ("My kodu") görünmesi kullanıcı olmayan kod iyileştirme neden olabilir. Daha fazla bilgi için bkz: [JIT iyileştirmesi ve hata ayıklama](../debugger/jit-optimization-and-debugging.md).
+**Modül yükleme (sadece yönetilen) JIT iyileştirmesini bastır** hata ayıklayıcı JIT derlenmiş ve bir modül yüklendiğinde yönetilen kodun JIT iyileştirmesini devre dışı bırakır. İyileştirme devre dışı bırakma bazı sorunların hatalarını ayıklamak performans rağmen çoğaltamaz kolaylaştırabilir. Yalnızca kendi Kodum'u kullanıyorsanız, JIT gizleme kullanıcı kodu ("kodum") görüntülenecek kullanıcı olmayan kod iyileştirme neden olabilir. Daha fazla bilgi için [JIT iyileştirmesi ve hata ayıklama](../debugger/jit-optimization-and-debugging.md).
 
-**JavaScript, ASP.NET (Chrome ve IE) hata ayıklamayı etkinleştir** ASP.NET uygulamaları için komut dosyası hata ayıklayıcı sağlar. Chrome ilk kullanımda üzerinde yüklediğiniz Chrome uzantıları etkinleştirmek için ilk kullanımda tarayıcı oturumu açmak gerekebilir. Eski davranışa geri dönmek için bu seçeneği devre dışı bırakın.    
+**JavaScript (Chrome ve IE) ASP.NET için hata ayıklamayı** ASP.NET uygulamaları için betik hata ayıklayıcısı sağlar. Chrome'da ilk kez kullanıldığında, yüklemiş olduğunuz Chrome uzantıları etkinleştirmek için ilk kullanımda tarayıcıda oturum açmanız gerekebilir. Eski davranışa dönmek için bu seçeneği devre dışı bırakın.    
 
-**Dll dışarı aktarmaları yükleme** dll dışarı aktarma tabloları yükler. Dll dışarı aktarma tablolardan sembol bilgileri Windows iletileri, Windows yordamları (WindowProcs), COM nesneleri veya sıralama veya sembolleri olmayan herhangi bir dll ile çalışıyorsanız yararlı olabilir. DLL okuma bazı ek bilgi içerir. Bu nedenle, bu özellik varsayılan olarak kapalıdır.  
+**Dll dışarı aktarmaları Yükle** dll dışa aktarma tablolarını yükler. Dll dışa aktarma tablolarının sembol bilgilerini Windows iletileri, Windows yordamları (WindowProcs), COM nesneleri veya sıralama veya sembolleri olmayan herhangi bir dll ile çalışıyorsanız yararlı olabilir. Dışa aktarma bilgilerini okuma dll bazı ek okumalar içerir. Bu nedenle, bu özellik varsayılan olarak kapalıdır.  
   
-DLL'den dışarı aktarma tablosunda hangi simgeler kullanılabildiğinde görmek için `dumpbin /exports`. Simgeler herhangi bir 32-bit sistem dll için kullanılabilir. Okuyarak `dumpbin /exports` çıkışı, alfasayısal olmayan karakter dahil tam işlevi adını görebilirsiniz. Bu, bir işlev bir kesme noktası ayarlamak için yararlıdır. Dll dışarı aktarma tablolardan işlev adları başka bir yerde hata ayıklayıcıda kesilmiş görünebilir. Aramalar geçerli işlev en üstte (en yoğun şekilde iç içe geçmiş) olacak şekilde arama sırasıyla listelenir. Daha fazla bilgi için bkz: [DUMPBIN/dışarı aktarmalar](/cpp/build/reference/dash-exports).  
+Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek için `dumpbin /exports`. Semboller tüm 32-bit sistem dll için kullanılabilir. Okuyarak `dumpbin /exports` çıkışı, alfasayısal olmayan karakterler de dahil tam işlev adını görebilirsiniz. Bu, bir işlev bir kesme noktası ayarlamak için yararlıdır. Dll dışarı aktarma tablolarındaki işlev adları hata ayıklayıcıda başka bir yerde kesilmiş görünebilir. Aramalar geçerli işlev en üstte (en yoğun şekilde iç içe geçmiş) olacak şekilde arama sırasıyla listelenir. Daha fazla bilgi için [dumpbin/EXPORTS](/cpp/build/reference/dash-exports).  
   
-**Göster Paralel Yığınlar diyagramı aşağıdan yukarıya** içinde yığınları görüntülenir yönünü denetler **Paralel Yığınlar** penceresi.
+**Show Paralel Yığınlar diyagramını aşağıdan yukarıya** , görüntülenme yönünü denetler **Paralel Yığınlar** penceresi.
   
-**Yazılan veri değeri değiştirilmediyse GPU bellek erişimi özel durumları Yoksay** veri değiştirilmediyse hata ayıklama sırasında algılanan yarış durumları yoksayar. Daha fazla bilgi için bkz: [GPU kodunda hata ayıklama](../debugger/debugging-gpu-code.md).  
+**Yazılan veriler değeri değiştirmiyorsa GPU bellek erişimi özel durumlarını Yoksay** veri değişmediyse hata ayıklama sırasında algılanan yarış durumlarını yoksayar. Daha fazla bilgi için [GPU kodunda hata ayıklama](../debugger/debugging-gpu-code.md).  
   
-**Yönetilen Uyumluluk modunu kullanmak** altyapısı bu senaryoları etkinleştirmek için eski bir sürümü ile hata ayıklama varsayılan değiştirir:  
+**Yönetilen Uyumluluk modunu kullan** varsayılan hata ayıklama altyapısı bu senaryoları sağlamak için eski bir sürüm ile değiştirir:  
   
-- C#, VB ve F kendi ifade değerlendiricisi sağlayan # dışında bir .NET Framework dil kullanıyorsanız (Bu C + içerir +/ CLI).  
+- C#, VB veya F kendi ifade değerlendiricisi sağlayan # dışındaki bir .NET Framework dili kullanıyorsunuz (buna C + dahildir +/ CLI).  
   
-- Düzenle ve devam et C++ projeleri için karışık modda hata ayıklama sırasında etkinleştirmek istiyor.  
+- Karışık modda hata ayıklarken C++ projeleri için Düzenle ve Devam Et'i etkinleştirmek istediğiniz.  
   
 > [!NOTE]
-> Yönetilen uyumluluk seçme modunu altyapısı hata ayıklama varsayılan olarak uygulanan bazı özellikler devre dışı bırakır. 
+> Yönetilen uyumluluk modu yalnızca hata ayıklama altyapısı varsayılan uygulanan bazı özellikler devre dışı bırakır. 
 
-**Eski C# ve VB ifade değerlendiricisi kullanmak** hata ayıklayıcı yerine Visual Studio 2015 Roslyn tabanlı bir ifade değerlendiricisi Visual Studio 2013 C# /VB ifade değerlendiricisi kullanır.    
+**Eski C# ve VB ifade değerlendiricilerini kullan** hata ayıklayıcı, Visual Studio 2013'ün C# /VB ifade değerlendiricilerini yerine Visual Studio 2015 Roslyn tabanlı ifade değerlendiricilerini kullanacak.    
   
-**Özel hata ayıklayıcı görselleştiriciler olmayabilecek işlemleri (sadece yönetilen) karşı kullanırken uyar** Visual Studio sizi uyarır güvensiz çalıştırıyor çünkü kod ayıklayıcı işlemde çalıştırılıyor özel hata ayıklayıcı Görselleştirici kullanırken kod.  
+**(Sadece yönetilen) güvenli olmayan işlemlere karşı özel hata ayıklama görselleştiricileri kullanıldığında uyar** Visual Studio sizi uyarır, güvenli olmayan çalışıyor olabilir çünkü kod hata ayıklanan işlemde çalışan bir özel hata ayıklama görselleştiricisi kullanırken kodu.  
   
-**Windows hata ayıklama yığını ayırıcısı (yalnızca yerel) etkinleştirme** yığın tanılama artırmak windows hata ayıklama yığınını sağlar. Bu seçeneğin etkinleştirilmesi, hata ayıklama performansını etkiler.  
+**Windows hata ayıklama yığın ayırıcısını (yalnızca yerel) etkinleştirme** yığın tanılamayı geliştirme amacıyla windows hata ayıklama yığınındaki sağlar. Bu seçenek etkinleştirildiğinde, hata ayıklama performansını etkiler.  
   
-**XAML için kullanıcı Arabirimi hata ayıklama araçlarını etkinleştirme** desteklenen proje türü (F5) hata ayıklama başlattığınızda Canlı görsel ağaç ve dinamik özellik keşfedin windows görünür. Daha fazla bilgi için bkz: [hata ayıklama sırasında XAML incelemek özellikleri](../debugger/inspect-xaml-properties-while-debugging.md).  
+**XAML için UI hata ayıklama araçlarını etkinleştir** desteklenen proje türü (F5) hata ayıklaması başlattığınızda, Live Visual Tree ve Live özellik keşfedin windows görünür. Daha fazla bilgi için [hata ayıklama sırasında XAML İnceleme özellikleri](../debugger/inspect-xaml-properties-while-debugging.md).  
   
-- **Canlı görsel ağaç seçilen öğeleri Önizleme** bağlamı seçili XAML öğesi seçili de **Canlı görsel ağaç** penceresi.  
+- **Seçilen öğeleri Canlı görsel ağaç Önizleme** XAML öğesi bağlamı seçiliyse seçili ayrıca **Live Visual Tree** penceresi.  
   
-- **Uygulama çalışma zamanı araçlarını Göster** gösterir **Canlı görsel ağaç** ayıklanacak XAML uygulaması ana penceresinde bir araç komutları. Bu seçenek, Visual Studio 2015 güncelleştirme 2'de sunulmuştur. 
+- **Çalışma zamanı araçlarını uygulamada Göster** gösterir **Live Visual Tree** ayıklanmakta olan XAML uygulamanın ana pencere bir araç komutları. Bu seçenek, Visual Studio 2015 güncelleştirme 2'de sunulmuştur. 
 
-- **XAML Düzenle ve devam et etkinleştirmek** düzenleme kullanın ve XAML kodu için özellik devam sağlar. 
+- **XAML Düzenle ve Devam Et'i etkinleştir** düzenleme kullanın ve XAML kodu için özellik devam olanak tanır. 
   
-**Tanılama araçlarını hata ayıklama sırasında etkinleştirme** **tanılama araçları** hata ayıklarken penceresi görüntülenir.
+**Hata ayıklama sırasında tanılama araçları etkinleştirme** **tanılama araçları** ayıklarken penceresi görüntülenir.
   
-**Hata ayıklama sırasında geçen süre PerfTip Göster** ayıkladığınız verilen yöntem çağrısı geçen süre kod penceresi görüntülenir.  
+**Hata ayıklama sırasında PerfTip geçen süresini göster** hata ayıklaması yapıyorsanız Kod penceresi belirtilen yöntem çağrısının geçen süreyi görüntüler.  
   
-**Düzenle ve devam et etkinleştirmek** düzenleme ve hata ayıklama sırasında işlevselliği devam kullanabilirsiniz.  
+**Düzenle ve Devam Et'i etkinleştir** düzenleme ve hata ayıklama sırasında işlevselliği devam kullanabilirsiniz.  
   
-- **Yerel Düzenle ve devam et etkinleştirmek** düzenleme kullanın ve yerel C++ kod hata ayıklama sırasında işlevselliği devam edebilirsiniz. Daha fazla bilgi için bkz: [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+- **Yerel Düzenle ve Devam Et'i etkinleştir** düzenleme ve yerel C++ kodunu ayıklarken İşlevselliği devam kullanabilirsiniz. Daha fazla bilgi için [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
-- **Değişiklikleri uygulamak (yalnızca yerel) üzerinde devam** Visual Studio otomatik olarak derler ve sonu durumundan işlemine devam zaman yapmış olduğunuz bekleyen kod değişiklikleri uygular. Seçilmezse, hata ayıklama menüsünün altında "Kod değişiklikleri Uygula" öğesini kullanarak değişiklikleri uygulamak seçebilirsiniz.  
+- **Değişiklikleri Uygula (yalnızca yerel) üzerinde devam** Visual Studio otomatik olarak derler ve bir kesme durumundan işlemine devam etmek, yapmış olduğunuz bekleyen kod değişiklikleri uygular. Seçilmezse, hata ayıklama menüsünün altında "Kod değişikliklerini uygulama" öğesini kullanarak değişiklikleri uygulamak seçebilirsiniz.  
   
-- **Eski kod (yalnızca yerel) hakkında uyarmak** eski kod hakkında uyarı alın.    
+- **(Yalnızca yerel) eski kod hakkında uyar** eski kod hakkında uyarı alın.    
 
-**Hata ayıklama sırasında düğmesini Düzenleyicisi'nde çalışma Göster** bu seçenek belirlendiğinde, [tıklatın çalıştırmak](debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) düğmesi hata ayıklama sırasında gösterilecek.
+**Hata ayıklama sırasında düğmesini düzenleyicide çalışma Göster** bu seçenek belirlendiğinde, [tıklanan satıra kadar Çalıştır](debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) hata ayıklama sırasında düğmesi gösterilir.
 
 ## <a name="options-supported-in-older-versions-of-visual-studio"></a>Visual Studio'nun eski sürümlerinde desteklenen seçenekleri
 
-Visual Studio'nun daha eski bir sürümü kullanıyorsanız, bazı ek seçenekleri mevcut olabilir.
+Visual Studio'nun daha eski bir sürümü kullanıyorsanız, bazı ek seçenekler mevcut olabilir.
 
-**Özel durum Yardımcısı'nı etkinleştir** yönetilen kod için özel durum Yardımcısı etkin. Visual Studio 2017 ', özel durum Yardımcısı özel durum Yardımcısı değiştirildi.
+**Özel durum Yardımcısını** yönetilen kod için özel durum Yardımcısını etkin. Visual Studio 2017'de, özel durum Yardımcısını özel durum Yardımcısı değiştirildi.
 
-**İşlenmeyen özel durum çağrı yığınındaki bırakma** neden **çağrı yığını** işlenmeyen özel durum oluştu önce çağrı yığını noktasına geri almak için penceresi. 
+**Çağrı yığınını işlenmeyen özel durumlar üzerinde bırakma** neden **çağrı yığını** çağrı yığınını işlenmeyen özel durum oluşmadan önceki noktaya geri almak için penceresi. 
 
-**Simge, başlatılırken (yalnızca yerel) uyar** hata ayıklayıcı sembol bilgileri sahip bir program hata ayıklamak çalıştığınızda bir uyarı iletişim kutusu görüntüler. 
+**(Yalnızca yerel) sembol yoksa uyar** hata ayıklayıcı sembol bilgisi içermediği bir programdaki hataları ayıklamayı denediğinizde bir uyarı iletişim kutusu görüntüler. 
 
-**Komut dosyasında hata ayıklama başlatılırken devre dışı olup olmadığını uyar** devre dışı komut dosyası hata ayıklamaya hata ayıklayıcı başlatıldığında bir uyarı iletişim kutusu görüntüler.
+**Hata ayıklamayı başlatma sırasında devre dışı bırakılıp bırakılmadığını uyar** hata ayıklayıcı komut dosyası ile hata ayıklaması devre dışı olarak başlatıldığında bir uyarı iletişim kutusu görüntüler.
 
-**Yerel Uyumluluk modunu kullanmak** bu seçenek belirlendiğinde, hata ayıklayıcı yeni yerel hata ayıklayıcı yerine Visual Studio 2010 yerel hata ayıklayıcı kullanır.  
+**Yerel Uyumluluk modunu kullan** hata ayıklayıcı bu seçenek belirlendiğinde, yeni yerel hata ayıklayıcı yerine Visual Studio 2010 yerel hata ayıklayıcı kullanır.  
   
-.NET C++ kodu, hata ayıklama sırasında yeni bir hata ayıklama motoru değerlendirilirken .NET C++ ifadeleri desteklemediği için bu seçeneği kullanmanız gerekir. Ancak, çalışması için geçerli hata ayıklayıcı mantığınız bağımlı birçok özelliği yerel uyumluluk modu etkinleştirme devre dışı bırakır. Örneğin, yerleşik türler ister için eski altyapı birçok görselleştiriciler eksik `std::string` Visual Studio 2015 projelerinde.   Bu gibi durumlarda hata ayıklama en iyi deneyim için Visual Studio 2013 projelerini kullanın.
+.NET C++ kodunu ayıklarken yeni hata ayıklama motoru değerlendirilirken .NET C++ deyimleri desteklemediğinden, bu seçeneği kullanmanız gerekir. Ancak, çalışması için geçerli hata ayıklayıcı mantığınız bağımlı birçok özelliği yerel uyumluluk modu etkinleştirme devre dışı bırakır. Örneğin, yerleşik türler ister için eski motoru birçok görselleştiriciler eksik `std::string` Visual Studio 2015 projelerinde.   Visual Studio 2013 proje, bu gibi durumlarda en iyi hata ayıklama deneyimi için kullanır.
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio’da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)
+ [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)

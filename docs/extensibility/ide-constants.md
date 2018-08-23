@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23512005bed66550b4a1de0f0a2de830d9fb823b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4f2cf01bcc8b2854eb1e4c3c711af524a8480bdc
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498999"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635138"
 ---
 # <a name="ide-constants"></a>IDE sabitleri
 
@@ -54,30 +54,30 @@ ms.locfileid: "39498999"
 |Değer|Açıklama|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Zaman uyumsuz davranışı için arabirimleri tarafından döndürülen bir sabit olduğunda, söz konusu nesne zaten meşgul|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Özel HRESULT hatası [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "uyumsuz belge verileri" için.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Özel HRESULT hatası [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve "paketi yüklü değil." gösterir|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Özel HRESULT hatası [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve gösterir, "Projesi zaten var."|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Özel HRESULT hatası [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve belirten "proje yapılandırması başarısız oldu."|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Özel HRESULT hatası [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve "projesi yüklü değil." gösterir|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Özel HRESULT hatası [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve "Çözüm zaten açık." gösterir|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Özel HRESULT hatası [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve "Çözüm açık değil." gösterir|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|"Uyumsuz belge verileri için" Visual Studio'ya özel HRESULT hatası.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Visual Studio ve bu özel HRESULT hatası "paketi yüklü değil." gösterir|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Visual Studio ve bu özel HRESULT hatası belirten "Projesi zaten var."|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Visual Studio ve bu özel HRESULT hatası "proje yapılandırması başarısız oldu." gösterir.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Visual Studio ve bu özel HRESULT hatası "projesi yüklü değil." gösterir|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Visual Studio ve bu özel HRESULT hatası "Çözüm zaten açık." gösterir.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Visual Studio için özeldir ve "Çözüm açık değil." belirten HRESULT hatası|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|Bir diziden belirtmek için parametreleri olan yapı arabirimleri tarafından döndürülen <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> arabirimi, ancak uygulama yalnızca uygulayabileceğiniz yöntemi tüm çıktıları.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Yöntemi, belgede düzenleyicide açılan bir biçim varsa bu değeri döndürür.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Kullanıcı geri düğmesine basın gösteren HRESULT değerini bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Sihirbazı.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Kullanıcı bir Visual Studio sihirbazında geri düğmesine basın gösteren HRESULT değerini.|
 
 ## <a name="visual-studio-constants"></a>Visual Studio sabitleri
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Özel HRESULT hatası [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve "proje iletilen." gösterir|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Özel bir sabit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir "araç kutusu işaretleyici."|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Özel bir sabit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yayınlamak üzere bir bildirim iletisi aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> şekil başlangıcını gösteren yöntemi.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Özel bir sabit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yayınlamak üzere bir bildirim iletisi aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> şekil sonuna belirten yöntemi.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Özel bir sabit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yayınlamak üzere bir bildirim iletisi aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> komut çubuğu ölçümleri değiştiğini gösteren yöntemi.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Özel bir sabit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir tanımlama bilgisi ayarlanmamışsa gösterir.|
-|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir proje öğesi olmaması temsil eden öğe tanımlayıcısı. Bu değer, geçerli seçim yok olduğunda kullanılır.|
-|[VSITEMID. Kök](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje hiyerarşisi kökünü temsil eder ve tek bir öğe yerine tüm bir hiyerarşiye tanımlamak için kullanılan öğe tanımlayıcısı.|
-|[VSITEMID. Seçimi](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şu anda seçili öğenin veya hiyerarşisinin kökü içerebilen öğeleri temsil eden öğe tanımlayıcısı.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Visual Studio ve bu özel HRESULT hatası "proje iletilen." gösterir|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Bir "araç kutusu işaretçisi." Visual Studio için belirli bir sabiti|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> şekil başlangıcını gösteren yöntemi.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> şekil sonuna belirten yöntemi.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> komut çubuğu ölçümleri değiştiğini gösteren yöntemi.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Visual Studio için bir tanımlama bilgisi ayarlanmamışsa gösteren belirli bir sabit değer.|
+|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Bir proje öğesi olmaması temsil eden bir Visual Studio öğe tanımlayıcısı. Bu değer, geçerli seçim yok olduğunda kullanılır.|
+|[VSITEMID. Kök](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Bir proje hiyerarşisinin kökü temsil eder ve tek bir öğe yerine tüm bir hiyerarşiye tanımlamak için kullanılan bir Visual Studio öğe tanımlayıcısı.|
+|[VSITEMID. Seçimi](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Seçili öğenin veya hiyerarşisinin kökü içerebilen öğeleri temsil eden bir Visual Studio öğe tanımlayıcısı.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  IDE'nin hangi bileşen yalnızca, içinde seçildi açıklar bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> , örneğin çağırın.

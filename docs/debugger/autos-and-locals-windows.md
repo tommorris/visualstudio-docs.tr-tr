@@ -1,5 +1,5 @@
 ---
-title: Otomatik değişkenler ve yerel Windows değişkenler inceleyin. | Microsoft Docs
+title: Otolar ve yerel öğeler Windows değişkenler İnceleme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.technology: vs-ide-debug
@@ -16,27 +16,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454651"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626476"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Otomatik değişkenler değişkenleri ve Visual Studio Yereller Windows inceleyin.
-**Otomobiller** penceresi (hata ayıklama, **CTRL + ALT + V, A**, veya **hata ayıklama > Windows > otomobiller**) ve **Yereller** (hata ayıklama penceresi **CTRL + ALT + V, L**, veya **hata ayıklama > Windows > Yereller**) hata ayıklarken değişken değerleri görmek istediğinizde oldukça faydalıdır. **Yereller** penceresi, işlev veya şu anda yürütülmekte olan yöntem genellikle olan yerel kapsamda tanımlanan değişkenler görüntüler. **Otomobiller** penceresi geçerli satırında (hata ayıklayıcı durduğu koyun) kullanılan değişkenler görüntüler. Tam olarak hangi değişkenleri Bu pencerede görüntüler farklı dillerde farklıdır. Bkz: [değişkenleri otomobiller penceresinde görüntülenecek?](#bkmk_whatvariables) aşağıda.  
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Otolar değişkenleri ve Visual Studio'da yerel Windows inceleyin
+**Otolar** penceresini (hata ayıklarken, **CTRL + ALT + V, A**, veya **hata ayıklama > Windows > Otolar**) ve **Yereller** (hata ayıklama sırasında penceresi **CTRL + ALT + V, L**, veya **hata ayıklama > Windows > Yereller**) oldukça ayıklarken değişken değerleri görmek istediğinizde yararlıdır. **Yereller** genel işlev veya şu anda yürütülmekte olan bir yöntem olan yerel kapsamda tanımlanan değişkenler penceresinde görüntülenir. **Otolar** penceresi değişkenleri geçerli satırı (hata ayıklayıcı durduğu yeri) geçici olarak kullanılan görüntüler. Tam olarak hangi değişkenlerini Bu pencerede görüntülemek farklı dillerde farklı değildir. Bkz: [değişkenleri Otolar penceresinde görüntülenecek?](#bkmk_whatvariables) aşağıda.  
   
-Temel hata ayıklama hakkında daha fazla bilgiye ihtiyacınız varsa bkz [hata ayıklayıcısı ile çalışmaya başlama](../debugger/getting-started-with-the-debugger.md).  
+Temel hata ayıklama hakkında daha fazla bilgiye ihtiyacınız varsa bkz [hata ayıklayıcı ile çalışmaya başlama](../debugger/getting-started-with-the-debugger.md).  
   
-## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Otomatik değişkenler ve yerel Windows nesneleri bakarak  
-Diziler ve nesneleri otomatik değişkenler ve Yereller pencerelerinde ağaç denetimleri görüntülenir. Alanları ve özellikleri göstermek için Görünümü genişletmek için değişken adının solundaki oka tıklayın. Bir örneği burada verilmiştir bir [FILESTREAM](/dotnet/api/system.io.filestream) nesnesinde **Yereller** penceresi:  
+## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Otolar ve yerel öğeler pencerelerinde nesneleri bakarak  
+Diziler ve nesneler değişkenler ve yerel öğeler pencerelerinde ağaç denetimleri görüntülenir. Görünümü alanlar ve Özellikler'i gösterecek şekilde genişletmek için değişken adının sol tarafındaki oka tıklayın. İşte bir örnek bir <xref:System.IO.FileStream?displayProperty=fullName> nesnesine **Yereller** penceresi:  
   
 ![Yerel öğeler&#45;FILESTREAM](../debugger/media/locals-filestream.png "Yereller FILESTREAM")  
   
-## <a name="bkmk_whatvariables"></a> Otomatik değişkenler penceresi değişkenleri görüntülenecek?  
- Kullanabileceğiniz **otomobiller** C#, Visual Basic ve C++ kodu penceresinde. **Otomobiller** JavaScript veya F # penceresi desteklemez.  
+## <a name="bkmk_whatvariables"></a> Değişkenleri Otolar penceresinde görüntülenecek?  
+ Kullanabileceğiniz **Otolar** C#, Visual Basic ve C++ kod penceresinde. **Otolar** penceresi, JavaScript veya F # desteklemez.  
   
- C# ve Visual Basic **otomobiller** geçerli veya önceki satıra kullanılan herhangi bir değişken penceresinde görüntülenir. Örneğin, dört değişkenleri bildirin ve aşağıdaki gibi ayarlayın:
+ C# ve Visual Basic **Otolar** geçerli ya da önceki satırında kullanılan herhangi bir değişken penceresinde görüntülenir. Örneğin, dört değişkenleri tanımlayın ve bunları aşağıdaki gibi ayarlayın:
 
 ```csharp
     public static void Main()
@@ -49,13 +49,13 @@ Diziler ve nesneleri otomatik değişkenler ve Yereller pencerelerinde ağaç de
     }
 ```
 
- Satırında bir kesme noktası ayarlarsanız `c = 3`; çalıştırıp yürütme durduğunda hata ayıklayıcı **otomobiller** penceresi şöyle görünür:  
+ Satırına bir kesme noktası ayarlarsanız `c = 3`; ve hata ayıklayıcı yürütme durdurulduğunda çalıştırma **Otolar** penceresi şu şekilde görünür:  
 
- ![Otomatik değişkenler&#45;CSharp](../debugger/media/autos-csharp.png "otomobiller CSharp")  
+ ![Otolar&#45;CSharp](../debugger/media/autos-csharp.png "Otolar-CSharp")  
 
- Unutmayın değerini `c` 0, çünkü satır `c = 3` henüz yürütülmedi.  
+ Unutmayın değerini `c` 0, çünkü satır `c = 3` henüz çalıştırılmadı.  
 
- C++'ta **otomobiller** penceresinde değişkenleri kullanılan en az üç satır geçerli satır önce (yürütme durdurulduğunda satır). Altı Değişkenler bildirirseniz:
+ C++'ta **Otolar** penceresi değişkenleri kullanılan en az üç satır önce geçerli satırı görüntüler (yürütme durdurulduğunda satır). Altı değişken bildirirseniz:
 
 ```C++
     void main() {
@@ -69,18 +69,18 @@ Diziler ve nesneleri otomatik değişkenler ve Yereller pencerelerinde ağaç de
     }
 ```
 
- Satırında bir kesme noktası ayarlarsanız `e = 5;` çalıştırıp yürütme durduğunda hata ayıklayıcı **otomobiller** penceresi şöyle görünür:  
+ Satırına bir kesme noktası ayarlarsanız `e = 5;` ve hata ayıklayıcı yürütme durdurulduğunda çalıştırma **Otolar** penceresi şu şekilde görünür:  
   
- ![Otomatik değişkenler&#45;Cplus](../debugger/media/autos-cplus.png "otomobiller Cplus")  
+ ![Otolar&#45;Cplus](../debugger/media/autos-cplus.png "Otolar Cplus")  
   
- Değişken e başlatılmamış olduğundan Not kod satırında `e = 5;` henüz yürütülmedi.  
+ E değişkeni başlatılmamış olduğundan Not kod satırı `e = 5;` henüz çalıştırılmadı.  
   
- Dönüş değerleri işlevler ve bazı durumlarda yöntemler de görebilirsiniz. Bkz: [yöntem çağrılarının döndürülen değerlerini görüntüleme](#bkmk_returnValue) aşağıda.  
+ İşlevler ve bazı durumlarda yöntemlerinin dönüş değerlerini de görebilirsiniz. Bkz: [yöntem çağrılarının dönüş değerlerini görüntüleme](#bkmk_returnValue) aşağıda.  
   
-##  <a name="bkmk_returnValue"></a> Yöntem çağrılarının döndürülen değerlerini görüntüleme  
- .NET ve C++ kodu içinde veya dışında bir yöntem çağrısı adımı dönüş değerleri inceleyebilirsiniz. Bu işlevsellik, yöntem çağrısının sonucunu bir yöntemi, bir parametre veya başka bir yöntem dönüş değeri olarak kullanıldığında, örneğin bir yerel değişken depolanmaz yararlıdır.  
+##  <a name="bkmk_returnValue"></a> Yöntem çağrılarının dönüş değerlerini görüntüleme  
+ .NET ve C++ kodunda üzerinden veya bir yöntem çağrısının dışına adımladığınızda dönüş değerlerini inceleyebilirsiniz. Bu işlev, bir yöntem parametresi olarak veya başka bir yöntemin dönüş değeri olarak kullanılır, örneğin bir yerel değişken bir yöntem çağrısının sonucuna depolanmaz yararlıdır.  
   
- Aşağıdaki C# kod iki işlevlerin dönüş değerlerini ekler:  
+ Aşağıdaki C# kodu iki işlev dönüş değerlerini ekler:  
 
 ```csharp
 static void Main(string[] args)  
@@ -104,35 +104,35 @@ private static int subtractVars(int i, int j)
 }  
 ```
 
- Bir kesme noktası ayarlayın `int x = sumVars(a, b) + subtractVars(c, d);` satır.  
+ Bir kesme noktası ayarlamak `int x = sumVars(a, b) + subtractVars(c, d);` satır.  
   
- Hata ayıklama başlatın ve yürütme ilk kesme noktasında böldüğünde basın **F10 (Step Over)**. Aşağıda, görmelisiniz **otomobiller** penceresi:  
+ Hata ayıklamayı başlatmak ve ilk kesme noktasında yürütmeyi keserse basın **F10 (Step Over)**. Aşağıdaki görmelisiniz **Otolar** penceresi:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   
-## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Neden değişken değerleri, yerel ve otomatik değişkenler windows kırmızıyla misiniz?  
-Bir değişkenin değerini bazen de kırmızı olduğunu fark edebilirsiniz **Yereller** ve **otomobiller** windows. Bunlar son değerlendirme bu yana değişmiş olan değişken değerlerdir. Değişiklik önceki hata ayıklama oturumundan olabilir veya değer penceresinde değiştiğinden.  
+## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Neden değişken değerleri, Yereller ve Arabalar'da windows kırmızıyla misiniz?  
+Bir değişkenin değerini bazen de kırmızı olduğunu fark edebilirsiniz **Yereller** ve **Otolar** windows. Son Değerlendirme bu yana değişmiş olan değişken değerleri şunlardır. Değişiklik, bir önceki hata ayıklama oturumundan olabilir veya pencerede değeri değiştirildi.  
   
 ## <a name="changing-the-numeric-format-of-a-variable-window"></a>Bir değişken penceresinde sayısal biçimini değiştirme  
-Varsayılan sayısal biçim ondalık ancak onaltılı olarak değiştirebilirsiniz. İçinde sağ bir **Yereller** veya **otomobiller** penceresini açın ve seçin **onaltılı görüntü**. Değişiklik tüm hata ayıklayıcı pencerelerinin etkiler.  
+Varsayılan sayısal biçimi ondalık ancak onaltılı olarak değiştirebilirsiniz. İçinde sağ bir **Yereller** veya **Otolar** penceresi ve select **onaltılık gösterim**. Bu değişiklik tüm hata ayıklayıcı pencereleri etkiler.  
   
 ## <a name="editing-a-value-in-a-variable-window"></a>Bir değişken penceresinde değer düzenleme  
-Görünen çoğu değişkenlerin değerleri düzenleyebilirsiniz **otomobiller**, **Yereller**, **izleme**, ve **QuickWatch** windows. Hakkında bilgi için **izleme** ve **QuickWatch** windows için bkz: [izleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md). Yalnızca, değiştirmek ve yeni değer eklemek istediğiniz değeri çift tıklatın.  
+Görünen çoğu değişkenlerin değerlerini düzenleyebileceğiniz **Otolar**, **Yereller**, **Watch**, ve **QuickWatch** windows. Hakkında bilgi için **Watch** ve **QuickWatch** windows bkz [izleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md). Yalnızca değiştirmek ve yeni değer eklemek için istediğiniz değere çift tıklayın.  
   
-Örneğin bir ifadenin bir değer girebilirsiniz `a + b`. Hata ayıklayıcı en geçerli dili ifadeleri kabul eder.  
+Örneğin bir değer için bir ifade girin `a + b`. Hata ayıklayıcı en geçerli dili ifadelerini kabul eder.  
   
-Yerel C++ kodda bir değişken adı bağlamında nitelemek gerekebilir. Daha fazla bilgi için bkz: [bağlamı işleci (C++)](../debugger/context-operator-cpp.md).  
+Yerel C++ kod içinde bir değişken adının bağlamını nitelemeniz gerekebilir. Daha fazla bilgi için [bağlam işleci (C++)](../debugger/context-operator-cpp.md).  
  
 Ancak, değerlerini değiştirirken dikkatli olmanız gerekir. Olası bazı sorunlar şunlardır:  
   
--   Bazı ifadeleri değerlendirme bir değişkenin değerini değiştirebilir veya aksi halde, programın durumunu etkiler. Örneğin, değerlendirme `var1 = ++var2` değerini değiştirir `var1` ve `var2`.  
+-   Bazı ifadelerin değerlendirilmesi bir değişkenin değerini değiştirebilir veya aksi halde, programınızın durumunu etkileyebilir. Örneğin, değerlendirme `var1 = ++var2` değerini değiştirir `var1` ve `var2`.  
   
-     Verileri değiştirme ifadeler için denirse [yan etkileri](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), hangi beklenmeyen sonuçlar verebilir, bunları kullanan değilseniz. Bunu yapmadan önce bu tür bir değişiklik sonuçlarını anladığınızdan emin olun.  
+     Verileri değiştiren ifadelerin söylenebilir sağlamak için [yan etkileri](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), hangi beklenmeyen sonuçlar verebilir, bunları farkında değilseniz. Bunu yapmadan önce böyle bir değişiklik sonuçlarını anladığınızdan emin olun.  
   
 -   Kayan nokta değerlerini düzenlemek, kesirli bileşenlerin ondalıktan ikiliye dönüştürülmesi nedeniyle küçük yanlışlıklara neden olabilir. Zararsız görünen bir düzenleme bile, kayan nokta değişkenindeki en az önemli bitlerin bazılarının değişmesine neden olabilir.  
   
-## <a name="changing-the-window-context"></a>Pencere bağlamını değiştirme  
-Kullanabileceğiniz **hata ayıklama konumu** istenen işlevi, iş parçacığı veya değişken windows bağlamının değişiklikleri işlem seçmek için araç. Bir kesme noktası ayarlayın ve hata ayıklamayı Başlat. (Bu araç görmüyorsanız, bu araç çubuğu alanı boş bir parçası tıklayarak etkinleştirebilirsiniz. Araç çubukları listesini görmeniz gerekir; seçin **hata ayıklama konumu**). Kesme noktası isabet, yürütme durur ve aşağıdaki çizimde en alttaki hata ayıklama konumu araç görebilirsiniz.
+## <a name="changing-the-window-context"></a>Pencere bağlam değiştirme  
+Kullanabileceğiniz **hata ayıklama konumu** araç istenen işlevi, iş parçacığı veya değişken pencerelerini bağlamı değiştiren bir işlem seçin. Bir kesme noktası ayarlayın ve hata ayıklamaya başlayın. (Bu araç görmüyorsanız, araç çubuğu alanında boş bir bölümüne tıklayarak etkinleştirebilirsiniz. Araç çubukları listesini görmeniz gerekir; seçin **hata ayıklama konumu**). Kesme noktası isabet edildiğinde yürütme durur ve aşağıdaki çizimde en alt satırında olan hata ayıklama konumu araç çubuğunda görebilirsiniz.
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   

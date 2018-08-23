@@ -1,7 +1,6 @@
 ---
 title: Unity uygulamaları ile uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
@@ -10,20 +9,20 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: c356e5d9138c73d187f96775fbe6a09ed7e448e8
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232338"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634624"
 ---
-# <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity uygulamaları ile uygulama yaşam döngüsü yönetimi (ALM)
+# <a name="devops-with-unity-apps"></a>Unity uygulamaları ile DevOps
 
-Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok daha fazla etkinlik içerir. DevOps (geliştirme ve işlemler), uygulamanın tam yaşam döngüsü span ve planlama ve izleme çalışması, tasarlama ve uygulama kodu, kaynak kodu deposu, yönetme, çalışan sürekli tümleştirme yönetme dahil bu etkinlikleri, adlandırılan dağıtımlar, test etme (dahil, birim testleri ve UI testleri) çeşitli türleri Tanılama, hem geliştirme hem de üretim ortamlarında çalışan ve uygulama performansı ve kullanıcı davranışlarını gerçek zamanlı olarak telemetri ve analiz izleme.
+Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok daha fazla etkinlik içerir. DevOps (geliştirme + işlem), uygulamanın tam yaşam döngüsü span ve planlama ve izleme çalışması, tasarlama ve uygulama kodu, kaynak kodu deposu, yönetme, çalışan sürekli tümleştirme yönetme dahil olarak başvurulan, bu etkinlikler dağıtımlar, test etme (dahil, birim testleri ve UI testleri) çeşitli türleri Tanılama, hem geliştirme hem de üretim ortamlarında çalışan ve uygulama performansı ve kullanıcı davranışlarını gerçek zamanlı olarak telemetri ve analiz izleme.
 
- Visual Studio Team Services ve Team Foundation Server ile birlikte Visual Studio uygulama yaşam döngüsü yönetimi veya ALM da bilinir, DevOps özelliklerini çeşitli sağlar. Bunların çoğu oyunları ve Unity ile oluşturulan sürükleyici grafik uygulamaları dahil olmak üzere, platformlar arası projeler için geçerli olan — özellikle kullanarak C# bir komut dosyası dili. Ancak, kendi geliştirme ortamı ve çalışma zamanı altyapısı Unity sahip olduğundan, ALM özellikleri sayısı gibi diğer tür projelere Visual Studio'da yerleşik olarak için geçerli değildir.
+Visual Studio Team Services ve Team Foundation Server ile birlikte Visual Studio çeşitli DevOps özellikler sağlar. Bunların çoğu oyunları ve Unity ile oluşturulan sürükleyici grafik uygulamaları dahil olmak üzere, platformlar arası projeler için geçerli olan&mdash;özellikle kullanarak C# bir komut dosyası dili. Ancak, kendi geliştirme ortamı ve çalışma zamanı altyapısı Unity sahip olduğundan, DevOps özellikleri sayısı gibi diğer tür projelere Visual Studio'da yerleşik olarak için geçerli değildir.
 
- Aşağıdaki tablolarda, Visual Studio ALM özelliklerini nasıl uygulamak veya Unity ile çalışırken, uygulama tanımlar. Özellikleri hakkında daha fazla ayrıntı için bağlantılı belgelerine bakın.
+Aşağıdaki tablolarda, Visual Studio'da DevOps özellikleri nasıl uygulamak veya Unity ile çalışırken, uygulama belirleyin. Özellikleri hakkında daha fazla ayrıntı için bağlantılı belgelerine bakın.
 
 ## <a name="agile-tools"></a>Çevik Araçlar
 
@@ -66,26 +65,27 @@ Genel Açıklama: Bu tasarım özellikleri kodlama dili ya da bağımsız olduğ
 |[Kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)|Evet||
 |[Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)|Evet||
 
- Sürüm denetimi Unity ile ilgili özel konular:
+Sürüm denetimi Unity ile ilgili özel konular:
 
-1.  Unity oyun varlıklarını varsayılan olarak gizli bir tek ve donuk kitaplıkta hakkındaki meta verileri izler. Dosyaları ve meta verilerini eşitlemek için bu meta veriler görünür hale getirmek ve daha yönetilebilir yığınlar halinde depolamak için gereklidir. Ayrıntılar için başvurmak [kullanarak dış sürüm denetim sistemleri ile Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity belgeleri).
+1. Unity oyun varlıklarını varsayılan olarak gizli bir tek ve donuk kitaplıkta hakkındaki meta verileri izler. Dosyaları ve meta verilerini eşitlemek için bu meta veriler görünür hale getirmek ve daha yönetilebilir yığınlar halinde depolamak için gereklidir. Ayrıntılar için başvurmak [kullanarak dış sürüm denetim sistemleri ile Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity belgeleri).
 
-2.  Tüm dosya ve klasörleri Unity proje kaynak denetimi için yukarıdaki bağlantıya de açıklandığı gibi uygun değildir. Varlıklar ve ProjectSettings klasörleri eklenmesi gerekir, ancak kitaplığı ve Temp klasörleri barındırmamalıdır. Kaynak denetimine geçmeyecek oluşturulan dosyaları ek bir listesi için tartışmalara bakın [Unity3D kaynak denetimi için Git kullanma?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) StackOverflow üzerinde. Birçok geliştiricinin ayrıca işaretlerinize Bu konu üzerinde bağımsız olarak vardır.
+2. Tüm dosya ve klasörleri Unity proje kaynak denetimi için yukarıdaki bağlantıya de açıklandığı gibi uygun değildir. Varlıklar ve ProjectSettings klasörleri eklenmesi gerekir, ancak kitaplığı ve Temp klasörleri barındırmamalıdır. Kaynak denetimine geçmeyecek oluşturulan dosyaları ek bir listesi için tartışmalara bakın [Unity3D kaynak denetimi için Git kullanma?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) StackOverflow üzerinde. Birçok geliştiricinin ayrıca işaretlerinize Bu konu üzerinde bağımsız olarak vardır.
 
-3.  Unity proje ikili varlıkları — dokular ya da ses dosyaları gibi — büyük miktarda depolama alabilir. Değişiklik dosyasının yalnızca küçük bir bölümünü etkileyen çeşitli Git gibi kaynak denetimi sistemlerini yapılmış her değişiklik için bir dosyanın benzersiz bir kopyasını depolar. Bu, Git deposu bloated olacak neden olabilir. Bunu ele almak için Unity geliştiricileri genellikle yalnızca son varlıklar, depoya ekleyebilir ve kendi varlıklar, OneDrive, DropBox veya git-annex gibi çalışma geçmişini tutmak farklı bir yol seçin. Bu yaklaşım çalışır, çünkü bu tür varlıklar genellikle kaynak kodu değişiklikleri birlikte tutulan olmanız gerekmez. Geliştiriciler ayrıca genellikle zorla kaynak denetiminde birleştirmeleri izin veren ikili biçimi yerine metin Sahne dosyaları depolamak için metin proje Düzenleyicisi'nin varlık serileştirme modunu ayarlayın. Ayrıntılar için bkz [Düzenleyici ayarları](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity belgeleri).
+3. Unity proje ikili varlıkları — dokular ya da ses dosyaları gibi — büyük miktarda depolama alabilir. Değişiklik dosyasının yalnızca küçük bir bölümünü etkileyen çeşitli Git gibi kaynak denetimi sistemlerini yapılmış her değişiklik için bir dosyanın benzersiz bir kopyasını depolar. Bu, Git deposu bloated olacak neden olabilir. Bunu ele almak için Unity geliştiricileri genellikle yalnızca son varlıklar, depoya ekleyebilir ve kendi varlıklar, OneDrive, DropBox veya git-annex gibi çalışma geçmişini tutmak farklı bir yol seçin. Bu yaklaşım çalışır, çünkü bu tür varlıklar genellikle kaynak kodu değişiklikleri birlikte tutulan olmanız gerekmez. Geliştiriciler ayrıca genellikle zorla kaynak denetiminde birleştirmeleri izin veren ikili biçimi yerine metin Sahne dosyaları depolamak için metin proje Düzenleyicisi'nin varlık serileştirme modunu ayarlayın. Ayrıntılar için bkz [Düzenleyici ayarları](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity belgeleri).
 
 ## <a name="build"></a>Derleme
- Başvuru bağlantısı:  **[derleme ve yayın](/vsts/build-release/index)**
+
+Başvuru bağlantısı:  **[derleme ve yayın](/vsts/build-release/index)**
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
 |Şirket içi TFS sunucusu|Olası|Unity projeleri Unity ortamı üzerinden yerleşiktir ve Visual Studio aracılığıyla değil (Visual Studio Araçları içinde Unity betikleri derleme ancak bir yürütülebilir dosya üretmez oluşturma) sistem oluşturun. Filtrelenebilir [Unity projeleri komut satırından derleme](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity belgeleri), Unity kendisini yüklenmiş olması koşuluyla, bir TFS sunucusuna uygun Unity yürütmek için bir MSBuild işlemi yapılandırmak mümkün, komutları için Bu bilgisayar.<br /><br /> Unity sunduğu [Unity bulut yapı](https://build.cloud.unity3d.com/landing/), Git veya SVN deposu izler ve düzenli çalıştırmaları oluşturur. Şu anda, Team Foundation sürüm denetimi veya Visual Studio Team Services ile çalışmaz.|
-|Visual Studio Team Services bağlı şirket içi yapı sunucusu|Olası|Aynı koşullarda, daha fazla Visual Studio Team bir şirket içi TFS bilgisayarını kullanmayı Services tetiklenen derlemeler yönlendirmek mümkündür.  Bkz: [derleme ve yayın aracıları](/vsts/build-release/concepts/agents/agents) yönergeler için.|
+|Visual Studio Team Services bağlı şirket içi yapı sunucusu|Olası|Aynı koşullarda, daha fazla Visual Studio Team bir şirket içi TFS bilgisayarını kullanmayı Services tetiklenen derlemeler yönlendirmek mümkündür. Bkz: [derleme ve yayın aracıları](/vsts/build-release/concepts/agents/agents) yönergeler için.|
 |Visual Studio Team Services, barındırılan denetleyici hizmeti|Hayır|Unity derlemeleri şu anda desteklenmez.|
 |Tanımlarla öncesi ve sonrası betikleri oluşturun|Evet|Bir yapıyı çalıştırmak için Unity komut satırı kullanan özel bir yapı tanımı öncesi ve sonrası betikler için de yapılandırılabilir.|
 |Sürekli Tümleştirme dahil olmak üzere Geçitli iade|Evet|TFVC için Geçitli iade yalnızca Git iadeler yerine bir çekme isteği model üzerinde çalışır.|
 
-## <a name="testing"></a>Sınama
+## <a name="test"></a>Test
 
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|
 |-------------|--------------------------|-------------------------|
@@ -116,7 +116,7 @@ Başvuru bağlantısı: [derleme ve yayın genel bakış](/vsts/pipelines/overvi
 |-------------|--------------------------|-------------------------|
 |Sürüm işlemlerini yönetme|Evet||
 |Dağıtım için dışarıdan yükleme betikleri aracılığıyla sunucularına|Evet||
-|App Store'a yükle|Kısmi|Kullanılabilir uzantılar bazı uygulama mağazaları için bu işlemi otomatikleştirmek.  Bkz: [için Visual Studio Team Services uzantıları](https://marketplace.visualstudio.com/VSTS); Örneğin, [uzantısı için Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|App Store'a yükle|Kısmi|Kullanılabilir uzantılar bazı uygulama mağazaları için bu işlemi otomatikleştirmek. Bkz: [için Visual Studio Team Services uzantıları](https://marketplace.visualstudio.com/VSTS); Örneğin, [uzantısı için Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp ile izleme
 

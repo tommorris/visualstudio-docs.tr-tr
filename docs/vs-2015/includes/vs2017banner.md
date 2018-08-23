@@ -1,0 +1,1 @@
+Visual Studio belgeleri için yeni platformdur [Visual Studio 2017 belgeleri](http://docs.microsoft.com/visualstudio) docs.microsoft.com'da.

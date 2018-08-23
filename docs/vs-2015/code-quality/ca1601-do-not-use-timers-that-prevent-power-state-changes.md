@@ -1,0 +1,53 @@
+---
+title: 'CA1601: güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın | Microsoft Docs'
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- CA1601
+- DoNotUseTimersThatPreventPowerStateChanges
+helpviewer_keywords:
+- CA1601
+- DoNotUseTimersThatPreventPowerStateChanges
+ms.assetid: b8028c92-0696-4c54-9773-0028f29bda9a
+caps.latest.revision: 17
+author: gewarren
+ms.author: gewarren
+manager: wpickett
+ms.openlocfilehash: 4ee50f951dee24c8037829cdbd1311f3d477232f
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42677620"
+---
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1601: güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın](https://docs.microsoft.com/visualstudio/code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes).  
+  
+TypeName | DoNotUseTimersThatPreventPowerStateChanges |  
+| Checkıd | CA1601 |  
+| Kategori | Microsoft.Mobility|  
+| Yeni değişiklik | Bozucu |  
+  
+## <a name="cause"></a>Sebep  
+ Zamanlayıcı, saniye başına birden fazla kez gerçekleşecek şekilde ayarlanan bir aralığı vardır.  
+  
+## <a name="rule-description"></a>Kural Tanımı  
+ İkinci ya da birden daha sık gerçekleşmesine kullanım zamanlayıcılar başına bir kez daha sık yoklama değil saniye başına zaman. Yüksek frekanslı dönemsel faaliyet CPU'yu meşgul tutar ve sabit diski gösteren güç tasarruflu zamanlayıcılarla müdahale edilir.  
+  
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
+ Zamanlayıcı aralıkları saniyede saatten daha az bir kez gerçekleşecek şekilde ayarlayın.  
+  
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
+ Bu kural yalnızca saniye başına birden fazla kez Zamanlayıcı tetikleme gereklidir ve mobility konuları güvenle görmezden gelinebilir atlanması.
+
+
+

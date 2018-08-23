@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9e709c6c2c995fc8065cc5aaec28b7c13229b623
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36238401"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755707"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
@@ -206,7 +206,7 @@ Mevcut birim testleri, C# veya Visual Basic kodunuzda açmadan bulabilir **Test 
 
 1. İlişkili uygulama koduna gidin [birim testi kodu](../test/unit-test-your-code.md).
 
-2. Zaten varsa, test CodeLens Göstergeleri yüklemek için uygulamanızı oluşturun. Emin [bulma tarafından derlenen bütünleştirilmiş kodlar](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) açıktır.
+2. Zaten varsa, test CodeLens Göstergeleri yüklemek için uygulamanızı oluşturun. Emin [bulma tarafından derlenen bütünleştirilmiş kodlar](../test/test-explorer-faq.md#assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) açıktır.
 
 3. Kod için testleri tuşlarına basarak gözden **Alt**+**3**.
 
@@ -327,7 +327,7 @@ Klavyeyi kullanmak için:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>S: Alanım CodeLens test göstergeleri, artık çözümüm'ı ilk kez açtığınızda my dosyasında görünür. Bunları nasıl yüklenmesi miyim?
 
-**Y:** dosyanıza yüklemek için CodeLens test göstergeleri almak için projenizi yeniden derleyin. Emin [bulma tarafından derlenen bütünleştirilmiş kodlar](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) açıktır. Kod dosyalar yüklendiğinde performansını geliştirmek için Visual Studio artık test göstergeleri için kaynak bilgileri getirir. Test göstergeleri, bir derlemeden sonra veya bir testi içinde çift tıklayarak gittiğinizde yüklenir **Test Gezgini**.
+**Y:** dosyanıza yüklemek için CodeLens test göstergeleri almak için projenizi yeniden derleyin. Emin [bulma tarafından derlenen bütünleştirilmiş kodlar](../test/test-explorer-faq.md#assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) açıktır. Kod dosyalar yüklendiğinde performansını geliştirmek için Visual Studio artık test göstergeleri için kaynak bilgileri getirir. Test göstergeleri, bir derlemeden sonra veya bir testi içinde çift tıklayarak gittiğinizde yüklenir **Test Gezgini**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

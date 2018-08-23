@@ -2,14 +2,14 @@
 layout: HubPage
 hide_bc: true
 title: Visual Studio belgeleri | Microsoft Docs
-description: Uygulamaları, hizmetleri ve platformlar ve cihazlar için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio 2017 kullanmayı öğrenin.
+description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: hub-page
-ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 647220b0b2caa2efa99fb86cbca91cd78c59ab2d
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449071"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42756242"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -73,10 +73,162 @@ ms.locfileid: "34449071"
         </ul>
     </div>
     <div class="container">
-        <h1>Visual Studio belgeleri</h1>
+        <h1>Visual Studio Belgeleri</h1>
         <ul class="pivots">
             <li>
-                <a href="#features">Görevler</a>
+                <li>
+                <a href="#get-started">Başlarken</a>
+                <ul id="get-started">
+                    <li>
+                        <a href="#get-started1"></a>
+                        <ul id="get-started1" class="cardsL">
+                            <li>
+                               <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Visual Studio kullanmayı öğrenin</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />Kılavuzlu Turu Başlat</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="" />Yazma ve kod düzenleme</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="" />Kodunuzu oluşturun</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="" />Kodunuzdaki hataları ayıklamanıza</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="" />Kodunuzu test etme</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="" />Verilere yerel olarak veya bulutta</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Bir öğretici ile çalışmaya başlama</h3>
+                                                <h4>Bir programlama dili seçin</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">                                                    <li>
+                                                        <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>5 dakikalık Hızlı Başlangıç'ı deneyin</h3>
+                                                <h4>"Hello, World" tercih ettiğiniz dilde oluşturun.</h4>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-python">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     <div>
+                        <ul class="cardsL">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Veya geliştirmek istediğinizi seçin</h3>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Evrensel Windows uygulaması</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Windows masaüstü uygulaması</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/common/i_mobile-app-developement.svg" alt="">
+Mobil uygulama</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
+">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="">
+Unity oyununuzu</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.1">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt="">
+ASP.NET Core Web uygulaması</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <a href="#features">Görevleri</a>
                 <ul id="features">
                     <li>
                         <a href="#features1"> </a>
@@ -93,7 +245,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Geliştirme</h3>
-                                                    <p>Yazma ve kod düzenleyicisini kullanarak kodunuzu yönetin.</p>
+                                                    <p>Yazma ve Kod Düzenleyicisi'ni kullanarak kodunuzu yönetin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +264,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Derleme</h3>
-                                                    <p>Kaynak kodu oluşturma ve derleme.</p>
+                                                    <p>Derleme ve kaynak kodu oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -131,7 +283,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Hata ayıklama</h3>
-                                                    <p>Araştırın ve kodunuzu ilgili sorunları çözün.</p>
+                                                    <p>Araştırma ve kodunuzla ilgili sorunları giderin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,7 +302,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Test</h3>
-                                                    <p>Sınama işlemlerinizi düzenleyin.</p>
+                                                    <p>Test işlemlerinizi düzenleyin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,7 +321,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Dağıt</h3>
-                                                    <p>Web dağıtımı, InsallShield ve sürekli tümleştirme ve daha fazlasını kullanarak uygulamalarınızı paylaşın.</p>
+                                                    <p>Web dağıtımı, InstallShield ve sürekli tümleştirme ve daha fazlasını kullanarak uygulamalarınızı paylaşın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,7 +340,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Sürüm Denetimi</h3>
-                                                    <p>Sürüm denetimi teknolojileri Git ve TFVC'yi gibi kullanarak kod paylaşır.</p>
+                                                    <p>Gibi Git ve TFVC sürüm denetim teknolojilerini kullanarak kod paylaşın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -207,7 +359,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>Sürekli olarak oluşturmak ve uygulamalarınızı bulutta bırakın ve Çevik uygulamak VSTS yöntemlerle.</p>
+                                                    <p>Sürekli olarak Derle ve uygulamalarınızı bulutta bırakın ve Çevik uygulayan yöntemler VSTS ile.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -226,7 +378,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Performansı Artırma</h3>
-                                                    <p>Performans sorunlarını tanımlamak ve tanılama araçlarını kullanarak kod performansı en iyi duruma getirme.
+                                                    <p>Performans sorunlarını belirleme ve tanılama araçları ile kod performansını iyileştirin.
                                                     </p>
                                                 </div>
                                             </div>
@@ -246,7 +398,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Genişletme</h3>
-                                                    <p>Kendi işlevselliği geliştirme deneyiminizi geliştirmek için Visual Studio IDE ekleyin.</p>
+                                                    <p>Geliştirme deneyiminizi iyileştirmek için Visual Studio IDE kendi işlevselliği ekleyin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -284,7 +436,26 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>İşbirliği</h3>
-                                                    <p>Paylaşma, düzenleme ve işbirliği, gerçek zamanlı bir ortam kodda hata ayıklama. </p>
+                                                    <p>Paylaşma, düzenleme ve işbirliğine dayalı, gerçek zamanlı bir ortamda kodunda hata ayıklayın. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" src="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Kapsayıcılar ile geliştirin</h3>
+                                                    <p>Kapsayıcılar, modüler bileşenleri yalıtmak ve ölçeklenebilirliği artırmak için kullanın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -313,7 +484,7 @@ ms.locfileid: "34449071"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833062">
                                                     <h3>C#</h3>
-                                                    <p>Bir modern nesne odaklı programlama dili .NET platformu üzerinde herhangi bir uygulama oluşturmak için işlevsel programlama özelliklerine sahip.</p>
+                                                    <p>Bir modern nesne yönelimli programlama dili .NET platformu üzerinde herhangi bir uygulama oluşturmak için işlevsel programlama özelliklerine sahip.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -332,7 +503,7 @@ ms.locfileid: "34449071"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833060">
                                                     <h3>Visual Basic</h3>
-                                                    <p>Windows uygulamaları kolayca oluşturma modern, nesne odaklı programlama dili .NET platformu için öğrenin kolay odaklanır.</p>
+                                                    <p>Kolayca Windows uygulamaları oluşturma hakkında bilgi edinin, nesne yönelimli programlama dili .NET platformu için kolay bir modern odaklı.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -351,7 +522,7 @@ ms.locfileid: "34449071"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833063">
                                                     <h3>C++</h3>
-                                                    <p>Windows, Linux, iOS ve Android uygulamaları oluşturmak için bir güçlü ve esnek bir programlama dili ve geliştirme ortamı.</p>
+                                                    <p>Windows, Linux, iOS ve Android uygulamaları oluşturmak için güçlü ve esnek programlama dili ve geliştirme ortamı.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -370,7 +541,7 @@ ms.locfileid: "34449071"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833067">
                                                     <h3>F#</h3>
-                                                    <p>.NET platformu için nesne yönelimli özellikleriyle modern işlevsel programlama dili odaklı üzerinde herhangi bir görev için daha kolay hale işlevsel programlama.</p>
+                                                    <p>Modern işlevsel bir programlama dilidir işlevsel programlama herhangi bir görev için daha kolay hale getirmeye odaklanırken, .NET platformu için nesne yönelimli özelliği olan.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -389,7 +560,7 @@ ms.locfileid: "34449071"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833064">
                                                     <h3>JavaScript</h3>
-                                                    <p>Platformlar arası bir basit web sayfaları daha etkileşimli olmasına yardımcı olmak için sık kullanılan dilidir.</p>
+                                                    <p>Basit, platformlar arası web sayfalarını daha etkileşimli hale getirilmesine yardımcı olacak sık kullanılan dilidir.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -408,7 +579,7 @@ ms.locfileid: "34449071"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833066">
                                                     <h3>TypeScript</h3>
-                                                    <p>Düz JavaScript derler ve daha ölçeklenebilir kod oluşturmanıza olanak sağlayan JavaScript kümesi.</p>
+                                                    <p>Düz JavaScript derleyen ve daha ölçeklenebilir kod oluşturmanızı sağlayan JavaScript'in bir üst kümesi.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -427,7 +598,7 @@ ms.locfileid: "34449071"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
                                                     <h3>Python</h3>
-                                                    <p>Hızlı Uygulama Geliştirme için sık kullanılan bir dinamik Nesne yönelimli, üst düzey programlama dili.</p>
+                                                    <p>Hızlı Uygulama Geliştirme için sık kullanılan bir dinamik yüksek düzeyli, nesne yönelimli programlama dili.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -446,7 +617,7 @@ ms.locfileid: "34449071"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833070">
                                                     <h3>R</h3>
-                                                    <p>Genelde istatistiksel bilgi işlem ve grafikler için kullanılan bir Genişletilebilir programlama dili.</p>
+                                                    <p>Genellikle, istatistiksel bilgi işlem ve grafik için kullanılan bir Genişletilebilir programlama dili.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -465,7 +636,7 @@ ms.locfileid: "34449071"
                         <ul id="web" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Visual Studio ve güçlü açık araçları kullanarak modern web uygulamaları geliştirin.
+                                    <p>Visual Studio ile güçlü açık araçlarla modern web uygulamaları geliştirin.
                                     </p>
                                 </div>
                             </li>
@@ -481,7 +652,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Web geliştirme</h3>
-                                                    <p>ASP.NET ve HTML, JavaScript ve CSS gibi standartlara dayalı teknolojileri ile Web uygulamaları oluşturma.</p>
+                                                    <p>ASP.NET ve HTML, JavaScript ve CSS gibi standart tabanlı teknolojileri ile Web uygulamaları oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -500,7 +671,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure geliştirme ve yönetim</h3>
-                                                    <p>Kolayca derleme, test dağıtın ve ölçeklenebilir uygulamalar ve Microsoft bulut hizmetlerinde yönetin.</p>
+                                                    <p>Kolayca oluşturun, test dağıtın ve ölçeklenebilir uygulamalar ve Microsoft bulut Hizmetleri yönetin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -519,7 +690,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Python</h3>
-                                                    <p>Etkileşimli geliştirme Django ve Flask gibi bilinen çerçevelerini kullanarak Python uygulamaları için.</p>
+                                                    <p>Django ve Flask gibi tanıdık çerçeveleri kullanarak Python uygulamaları, etkileşimli geliştirme.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -538,7 +709,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Node.js</h3>
-                                                    <p>Node.js, bir zaman uyumsuz, olay denetimli JavaScript çalışma zamanı kullanarak Ölçeklenebilir Ağ uygulamaları oluşturun.</p>
+                                                    <p>Bir zaman uyumsuz, olay temelli JavaScript çalışma zamanı olan node.js kullanarak Ölçeklenebilir Ağ uygulamaları oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -557,7 +728,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Veri depolama ve işleme</h3>
-                                                    <p>Araçlar ve geliştirmek ve SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözümleri sınamak için çerçeveler.</p>
+                                                    <p>Araçları ve çerçeveleri geliştirin ve SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözümlerini test edin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -576,7 +747,7 @@ ms.locfileid: "34449071"
                                         </div>
                                           <div class="cardText">
                                             <h3>Veri bilimi ve analitik uygulamalar</h3>
-                                            <p>Diller ve Python, R ve F # gibi veri bilimi uygulamaları oluşturmak için araç.</p>
+                                            <p>Diller ve Python, R ve F # gibi veri bilimi uygulamaları oluşturmaya yönelik araçlar.</p>
                                         </div>
                                       </div>
                                     </div>
@@ -595,7 +766,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Office/SharePoint geliştirme</h3>
-                                                    <p>Office ve SharePoint eklentiler ve C#, Visual Basic ve JavaScript kullanan çözümler oluşturun.</p>
+                                                    <p>Office ve SharePoint eklentileri ve C#, Visual Basic ve JavaScript kullanan çözümler oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -609,7 +780,7 @@ ms.locfileid: "34449071"
                         <ul id="windows" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Uygulamaları ve oyunları Windows çalıştıran her bir aygıtı ulaşmak için Visual Studio kullanarak geliştirin.</p>
+                                    <p>Uygulama ve oyunları Windows çalıştıran tüm cihazlara ulaşmayı sağlayan Visual Studio kullanarak geliştirin.</p>
                                 </div>
                             </li>
                             <li>
@@ -624,7 +795,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Evrensel Windows platformu geliştirme</h3>
-                                                    <p>Evrensel Windows platformu ve C#, VB ya da C++ ile Windows 10 uygulamaları geliştirin.</p>
+                                                    <p>Evrensel Windows platformu ve C#, VB veya C++ ile Windows 10 için uygulamalar geliştirin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -643,7 +814,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>.NET masaüstü geliştirme</h3>
-                                                    <p>WPF, Windows Forms ve .NET Framework kullanılarak konsol uygulamaları oluşturma.</p>
+                                                    <p>WPF, Windows Forms ve konsol uygulamaları .NET Framework kullanarak oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -662,7 +833,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>C++ ile Windows geliştirme</h3>
-                                                    <p>MFC ve ATL Microsoft C++ araç takımını gücünü kullanarak Klasik Windows tabanlı uygulamalar oluşturun.</p>
+                                                    <p>MFC, ATL ve Microsoft C++ araç takımı gücünden yararlanarak Klasik Windows tabanlı uygulamalar oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -676,7 +847,7 @@ ms.locfileid: "34449071"
                         <ul id="mobile" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Hedef Android, iOS ve Windows yerel ya da karma mobil uygulamalar oluşturun.</p>
+                                    <p>Android, iOS ve Windows hedefleyen yerel veya karma mobil uygulamalar oluşturun.</p>
                                 </div>
                             </li>
                             <li>
@@ -691,7 +862,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>.NET ile Mobil Geliştirme</h3>
-                                                    <p>İOS, Android veya Xamarin kullanan Windows için platformlar arası uygulamalar oluşturun.</p>
+                                                    <p>İOS, Android veya Xamarin kullanarak Windows için platformlar arası uygulamalar oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -710,7 +881,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Unity ile oyun geliştirme</h3>
-                                                    <p>2B ve 3B oyunlar unity, güçlü bir platformlar arası geliştirme ortamı oluşturun.</p>
+                                                    <p>Güçlü bir platformlar arası geliştirme ortamı olan unity ile 2B ve 3B oyunlar oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -729,7 +900,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>JavaScript ile Mobil Geliştirme</h3>
-                                                    <p>İOS, Android ya da Apache Cordova framework ile Windows için platformlar arası uygulamalar oluşturmak.</p>
+                                                    <p>İOS, Android veya Windows Apache Cordova çerçevesini kullanarak platformlar arası uygulamalar oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -748,7 +919,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>C++ ile Mobil Geliştirme</h3>
-                                                    <p>Platformlar arası uygulamaları iOS, Android veya Windows C++ kullanarak oluşturun.</p>
+                                                    <p>İOS, Android veya C++ kullanarak Windows için platformlar arası uygulamalar oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -767,7 +938,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>C++ ile oyun geliştirme</h3>
-                                                    <p>C++ gücünü DirectX, gerçekleşmemiş hesabı ya da Cocos2D gücü profesyonel oyun oluşturmak için kullanın.</p>
+                                                    <p>DirectX, Unreal veya Cocos2D tarafından desteklenen profesyonel oyunlar oluşturmak için C++'ın gücünü kullanın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -777,7 +948,7 @@ ms.locfileid: "34449071"
                         </ul>
                     </li>
                     <li>
-                        <a href="#other">Diğer Toolsets</a>
+                        <a href="#other">Diğer araç takımları</a>
                         <ul id="other" class="cardsC">
                             <li>
                                 <a href="https://go.microsoft.com/fwlink/?linkid=834750">
@@ -791,7 +962,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio uzantısı geliştirme</h3>
-                                                    <p>Visual Studio komutları, kod Çözümleyicileri ve aracı windows gibi genişletmek eklentileri oluşturun.</p>
+                                                    <p>Visual Studio gibi komutlar, kod Çözümleyicileri ve araç pencerelerini genişletme eklentileri oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -809,8 +980,8 @@ ms.locfileid: "34449071"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>C++ ile Linux geliştirmesi</h3>
-                                                    <p>Oluşturun ve Linux ortamda çalışan uygulamalardaki hata ayıklama.</p>
+                                                    <h3>C++ ile Linux geliştirme</h3>
+                                                    <p>Oluşturun ve bir Linux ortamında çalışan uygulamalarda hata ayıklayın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -829,7 +1000,7 @@ ms.locfileid: "34449071"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>.NET core platformlar arası geliştirme</h3>
-                                                    <p>.NET Core, ASP.NET Core, HTML, JavaScript ve kapsayıcı geliştirme araçlarını kullanarak platformlar arası uygulamalar oluşturun.</p>
+                                                    <p>.NET Core, ASP.NET Core, HTML, JavaScript ve kapsayıcı Geliştirme Araçları'nı kullanarak platformlar arası uygulamalar oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -843,10 +1014,10 @@ ms.locfileid: "34449071"
         </ul>
     </div>
     <div class="container centered pageFooter">
-        <h2>Bizimle iletişime tutun</h2>
+        <h2>Bizle tutun</h2>
         <ul class="links">
            <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> Web günlüğü </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> blogu </a>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Twitter </a>
@@ -855,10 +1026,10 @@ ms.locfileid: "34449071"
                 <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Yığın Taşması </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=874480"> Sorun bildirimi </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=874480"> Sorun rapor etme </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> Kullanıcı sesi </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> Uservoice </a>
             </li>
         </ul>
     </div>

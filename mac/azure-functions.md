@@ -1,117 +1,166 @@
 ---
-title: Azure işlevleri giriş
-description: Azure işlevleri, Mac için Visual Studio kullanarak
-author: asb3993
-ms.author: amburns
+title: Azure işlevleri'ne giriş
+description: Mac için Visual Studio'daki Azure işlevleri'ni kullanarak
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 5d787efbd09ad7f2d4a1f5f72b8f1493d8c6c587
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: f014eb4782fabce6517009e448d5878dd66700c7
+ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33871088"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42624129"
 ---
-# <a name="introduction-to-azure-functions"></a>Azure işlevleri giriş
+# <a name="introduction-to-azure-functions"></a>Azure işlevleri'ne giriş
 
-Azure işlevleri oluşturmak ve – – işlevleri – – kod parçacıkları olay denetimli açıkça sağlamak veya altyapısını yönetmek zorunda kalmadan bulutta çalıştırmak için bir yoldur. Azure işlevleri hakkında daha fazla bilgi için bkz: [Azure işlevleri belgelerine](https://docs.microsoft.com/azure/azure-functions/).
+Azure işlevleri, bir şekilde oluşturun ve – – işlevleri – – kod parçacıkları olay temelli açıkça sağlamak veya altyapıyı yönetmek zorunda kalmadan bulutta çalıştırın. Azure işlevleri hakkında daha fazla bilgi için bkz. [Azure işlevleri belgelerinde](https://docs.microsoft.com/azure/azure-functions/).
 
 ## <a name="requirements"></a>Gereksinimler
 
-Azure işlevi araçları dahil edilmiştir **Mac 7.5 için Visual Studio**.
+Azure işlev araçları dahil edilecek **7.5 Mac için Visual Studio**.
 
-Oluşturup işlevleri dağıtmak için de kullanılabilir ücretsiz bir Azure aboneliğine ihtiyacınız [ https://azure.com/free ](https://azure.com/free).
+Oluşturma ve işlevleri dağıtmak için de kullanılabilir ücretsiz bir Azure aboneliğine ihtiyaç [ https://azure.com/free ](https://azure.com/free).
 
 ## <a name="creating-your-first-azure-functions-project"></a>İlk Azure işlevleri projenizi oluşturma
 
-1. Mac için Visual Studio'da seçin **Dosya > Yeni bir çözüm...** 
-2. Yeni Proje iletişim kutusundan altında Azure işlevleri şablonunu seçin **bulut > Genel** tıklatıp **sonraki**:
+1. Mac için Visual Studio'da **Dosya > Yeni çözüm...** . 
+2. Yeni Proje iletişim kutusundan altında Azure işlevleri şablonu **bulut > Genel** tıklatıp **sonraki**:
 
     ![Azure işlevleri seçeneğini gösteren yeni proje iletişim kutusu](media/azure-functions-image1.png)
 
-3. Girin bir **proje adı** seçip **oluşturma**.
+3. Kullanmak, işlev adınızı girin ve istediğiniz ilk Azure işlevleri şablonu **sonraki**. 
 
-Mac için Visual Studio .NET standart proje bir varsayılan HttpTrigger işlevine yer oluşturur. Ayrıca, çeşitli NuGet başvurular içerir **AzureWebJobs** paketleri, yanı sıra **Newtonsoft.Json** paket.
+    ![Azure işlevleri şablonları gösteren yeni proje iletişim kutusu](media/azure-functions-image2.png)
 
-![Visual Studio için yepyeni bir azure işlevi şablondan görüntüleme Mac Düzenleyicisi](media/azure-functions-newproj.png)
+    Seçtiğiniz işlev türüne bağlı olarak, aşağıdaki görüntüde gösterildiği gibi bir sonraki sayfada, erişim hakları gibi ayrıntılarını girin ister:
+
+    ![Ek seçeneğini gösteren yeni proje iletişim kutusu](media/azure-functions-image3.png)
+
+    Azure işlevleri şablonları ve her şablonu yapılandırmak için gereken bağlama özellikleri farklı türleri hakkında daha fazla bilgi için bkz. [kullanılabilir işlev şablonları](#available-function-templates) bölümü. Bu örnekte, erişim haklarını anonim olarak Ayarla ile bir Http tetikleyici kullanıyoruz.
+
+4. Parametreleri ayarladıktan sonra proje için konum seçin ve tıklayın **Oluştur**.
+
+Mac için Visual Studio .NET Standard projesine dahil olan bir varsayılan işlev oluşturur. Ayrıca çeşitli NuGet başvurularını içerir **AzureWebJobs** paketleri yanı sıra **Newtonsoft.Json** paket.
+
+![Visual Studio Mac Düzenleyicisi şablondan yeni bir azure işlevi görüntülemek için](media/azure-functions-newproj.png)
 
 Yeni Proje aşağıdaki dosyaları içerir:
 
-* **HttpTrigger.cs** – Bu sınıf, bir HTTP tetiklemeli işlevin Demirbaş kod içerir. İçerdiği bir **FunctionName** işlev adı ve bir tetikleyici özniteliği özniteliğiyle **HttpTrigger**, belirtir işlevi bir HTTP isteği tarafından tetiklenir. İşlev yöntemi hakkında daha fazla bilgi için başvurmak [Azure işlevleri C# Geliştirici Başvurusu](https://docs.microsoft.com/azure/azure-functions/functions-dotnet-class-library) makalesi.
-* **Host.JSON** – bu dosya işlevleri ana bilgisayar için genel yapılandırma seçeneklerini açıklar. Bir örnek dosyası ve bu dosya için kullanılabilen ayarlar hakkında bilgi için bkz: [host.json başvuru Azure işlevleri için](https://docs.microsoft.com/azure/azure-functions/functions-host-json).
-* **Local.Settings.JSON** – bu dosya işlevleri yerel olarak çalıştırmak için tüm ayarları içerir. Bu ayarlar Azure işlevleri çekirdek araçları tarafından kullanılır. Daha fazla bilgi için bkz: [yerel ayarları dosyasına](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#local-settings-file) Azure işlevleri çekirdek araçları makalede.
+* **işlev name.cs bilgisayarınızı** – Bu sınıf, ortak kod için seçtiğiniz işlevi içerir. İçerdiği bir **FunctionName** özniteliği işlev adı ile ve ne tetikler (örn. işlevi belirten bir tetikleyici özniteliği bir HTTP isteği). İşlev yöntemi hakkında daha fazla bilgi için başvurmak [Azure işlevleri C# Geliştirici Başvurusu](https://docs.microsoft.com/azure/azure-functions/functions-dotnet-class-library) makalesi.
+* **Host.JSON** – bu dosya işlevleri konak genel yapılandırma seçeneklerini açıklar. Bir örnek dosyası ve bu dosya için kullanılabilir ayarlar hakkında bilgi için bkz: [Azure işlevleri için host.json başvurusu](https://docs.microsoft.com/azure/azure-functions/functions-host-json).
+* **Local.Settings.JSON** – işlevleri yerel olarak çalıştırmak için bu dosya tüm ayarları içerir. Bu ayarlar, Azure işlevleri çekirdek araçları tarafından kullanılır. Daha fazla bilgi için [yerel ayarları dosyası](https://docs.microsoft.com/azure/azure-functions/functions-run-local#local-settings-file) Azure işlevleri çekirdek araçları makaledeki.
 
-Mac için Visual Studio'da yeni bir Azure işlevleri proje oluşturduğunuza göre yerel makinenizden varsayılan HTTP tetiklemeli işlevin test edebilirsiniz.
+Mac için Visual Studio'da yeni bir Azure işlevleri projesi oluşturdunuz, yerel makinenizden varsayılan HTTP ile tetiklenen işlevi test edebilirsiniz.
 
-<!--
-## Create an Azure storage account
+## <a name="testing-the-function-locally"></a>İşlevi yerel olarak test etme
 
-[Describe why this step is necessary and what it does]
+Mac için Visual Studio'da Azure işlevleri desteği ile test edin ve işleviniz yerel geliştirme bilgisayarınızda hata ayıklama.
 
-1. Log on to your account at [https://portal.azure.com](https://portal.azure.com).
-2. Under the **Favorites** section, located on the left of the screen, select **Storage Accounts**:
-    ![]()
-3. Select **Add** to create a new storage account:
-    ![]()
-4. Enter a globally unique name for the **Name** and reuse it for the **Resource group**. You can keep all the other items as their default.
-    ![]()
-5. Click **Create**. It might take a few minutes to create the storage account. You'll get a notification once it has been successfully created.
-6. Select the **Go to resource** button from the notification:
-    ![]()
--->
-
-## <a name="testing-the-function-locally"></a>İşlev yerel olarak test etme
-
-Mac için Azure işlevleri desteği Visual Studio'da test edin ve işlevinizi yerel geliştirme bilgisayarınızda hata ayıklama.
-
-1. İşlevinizi yerel olarak test için basın **çalıştırmak** Mac için Visual Studio düğmesini:
+1. İşleviniz yerel olarak test etmek için basın **çalıştırma** Mac için Visual Studio'da düğmesi:
 
     ![Düğme mac için visual Studio'da hata ayıklamayı Başlat](media/azure-functions-run.png)
 
-1. Proje çalışan Azure işlev hata ayıklama yerel başlar ve aşağıdaki görüntüde gösterildiği gibi yeni bir Terminal penceresi açılır: 
+1. Proje çalışan Azure işlev hata ayıklama yerel başlatır ve yeni bir Terminal penceresinde, aşağıdaki görüntüde gösterildiği gibi açılır: 
 
-    ![Terminal penceresi gösteren işlevi çıktı](media/azure-functions-terminal.png) 
+    ![Terminal penceresini gösteren işlev çıkışı](media/azure-functions-terminal.png) 
 
     URL çıktıdan kopyalayın.
 
-3. HTTP istek URL'sini tarayıcınızın adres çubuğuna yapıştırın. Sorgu dizesi eklemenize `?name=<yourname>` URL'nin sonuna ve istek yürütülemiyor. Aşağıdaki resimde, tarayıcıda işlev tarafından döndürülen yerel GET isteğine yanıt gösterilmektedir:
+3. HTTP isteğinin URL'sini tarayıcınızın adres çubuğuna yapıştırın. Sorgu dizesi eklemenize `?name=<yourname>` URL'nin sonuna ekleyip isteği yürütün. İşlevin döndürdüğü yerel GET isteğine tarayıcıda verilen yanıt aşağıda gösterilmiştir:
 
-    ![HTTP isteği tarayıcıda](media/azure-functions-httpreq.png)
+    ![tarayıcıda HTTP isteği](media/azure-functions-httpreq.png)
 
-## <a name="creating-a-new-function"></a>Yeni bir işlev oluşturma
+## <a name="adding-another-function-to-your-project"></a>Başka bir işleve projenize ekleme
 
-İşlev şablonları, yeni işlevler en yaygın tetikleyiciler ve şablonlar kullanarak hızlı bir şekilde oluşturmanızı sağlar. Yeni bir Azure işlevleri projesi oluşturduğunuzda, otomatik olarak bir HttpTrigger işlevi içerir. Başka türde bir işlev oluşturmak için aşağıdakileri yapın:
+İşlev Şablonları, en sık kullanılan tetikleyicileri ve şablonları kullanarak yeni işlevleri hızlıca oluşturmanızı sağlar. Başka türde bir işlev oluşturmak için aşağıdakileri yapın:
 
-1. Kaldırma **HttpTrigger.cs** sağ tıklayarak ve seçerek dosya **kaldırmak**. Aşağıdaki uyarıyı seçin **silmek** projenizden kaldırmak için:
+1. Yeni bir işlev eklemek için proje adını sağ tıklatın ve seçin **Ekle > işlev Ekle...** :
 
-    ![Dosya projeden kaldırmak için iletişim kutusu](media/azure-functions-remove.png)
+    ![Yeni işlev ekleme bağlamı eylemi](media/azure-functions-addnew.png)
 
-2. Yeni bir işlev eklemek için proje adına sağ tıklayın ve seçin **Ekle > işlev Ekle...** :
+2. Gelen **yeni Azure işlevi** iletişim kutusunda, ihtiyaç duyduğunuz işlevi seçin:
 
-    ![Yeni işlev eklemek için bağlam eylemi](media/azure-functions-addnew.png)
+    ![Yeni azure işlevini iletişim kutusu](media/azure-functions-image4.png)
 
-3. Gelen **yeni Azure işlevi** iletişim kutusunda, ihtiyaç duyduğunuz işlevi seçin:
+    Azure işlev şablonlarının bir listesi verilmiştir [kullanılabilir işlev şablonları](#available-function-templates) bölümü.
 
-    ![Yeni bir azure işlevi iletişim kutusu](media/azure-functions-newfunction.png)
+Daha fazla işlev, işlev uygulaması projenizi eklemek için yukarıdaki yordamı kullanabilirsiniz. Projedeki her işlevin farklı bir tetikleyici olabilir ancak bir işlev tam olarak bir tetikleyici olmalıdır. Daha fazla bilgi için [Azure işlevleri Tetikleyicileri ve bağlamaları kavramları](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
 
-    Bir Azure işlevi şablonlar listesi aşağıdaki bölümde sağlanır.
+## <a name="publish-to-azure"></a>Azure'da yayımlama
+
+1. Proje adına sağ tıklayıp **Yayımla > Azure'da Yayımla...** : ![Azure menü seçeneği Yayımla](media/azure-functions-image5.png)
+2. Önceden bağlandıysanız Azure hesabı için Visual Studio Mac için kullanılabilir uygulama hizmetleri görüntülenen bir listesi. Oturum açmadıysanız, sizden bunu yapmak için istenir.
+3. Gelen **Azure App Service'e yayımlama** iletişim kutusunda, var olan bir app service'ı seçebilir veya tıklayarak yeni bir tane oluşturun **yeni**.
+4. İçinde **yeni App Service Oluştur** iletişim kutusu, ayarlarınızı girin: ![azure menü seçeneği Yayımla](media/azure-functions-image7.png)
+
+    |Ayar  |Açıklama  |
+    |---------|---------|
+    |**App Service adı**|Yeni işlev uygulamanızı tanımlayan genel olarak benzersiz bir ad.|
+    |**Abonelik**|Kullanılacak Azure aboneliği.|
+    |**[Kaynak grubu](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)**|İşlev uygulamanızın oluşturulacağı kaynak grubunun adı. Seçin **+** yeni bir kaynak grubu oluşturmak için.|
+    |**[Hizmet planı](https://docs.microsoft.com/azure/azure-functions/functions-scale)**|Mevcut bir planı seçebilir veya özel bir plan oluşturun. İşlevleri erişiminizi erişeceği diğer hizmetlere ya da size yakın bir bölgede bir konum seçin.|
+
+    > [!CAUTION]
+    > Bir hata olduğunu 7.6 yayımlama bir özel hizmet planı oluşturmaya çalışırsanız, bir sağlama hatası ile başarısız olmasına neden olan Mac için Visual Studio sürümünde **fiyatlandırma** kümesine **tüketim**. Bu, sonraki hizmet sürümde düzeltilecektir.
+
+5. Tıklayın **sonraki** bir depolama hesabı oluşturmak için. İşlevler çalışma zamanı tarafından bir Azure depolama hesabı gereklidir. Tıklayın **özel** bir genel amaçlı depolama hesabı oluşturun veya var olanı kullanın:
+
+    ![Azure menü seçeneğine yayımlama](media/azure-functions-image8.png)
+
+6. Tıklayın **Oluştur** bir işlev uygulaması ve ilgili kaynakları şu ayarlarla oluşturacak ve işlev proje kodunuzu dağıtmak için.
+
+7. Yayımlama sırasında "Güncelleştirme işlevleri sürüm üzerinde Azure'a" bildiren bir iletişim kutusu ile istenebilir. Tıklayın **Evet**:
+ 
+    ![Azure menü seçeneğine yayımlama](media/azure-functions-image12.png)
+
+> [!CAUTION]
+> Mac için Visual Studio 7.6 sürümünde bir hata varsa burada `FUNCTIONS_EXTENSION_VERSION` "işlevinizi çalışmayabilir anlamı beta için" doğru şekilde ayarlanmadı. Bu sorunu gidermek için Git, [işlev uygulaması ayarları](#function-app-settings) ayarlayıp `FUNCTIONS_EXTENSION_VERSION` "beta" için "-1".
+
+## <a name="function-app-settings"></a>İşlev uygulaması ayarları
+
+Azure işlev uygulaması da local.settings.json içinde eklenen herhangi bir ayarı eklenmesi gerekir. Proje yayımladığınızda, bu ayarlar otomatik olarak karşıya yüklenmemiş.
+
+Adresinden azure portalında app ayarlarınız erişmek için Git [ https://ms.portal.azure.com/ ](https://ms.portal.azure.com/). Altında **işlev uygulamaları**seçin **işlev uygulamaları** ve değişken vurgulayabilirsiniz:
+
+![Azure işlevleri menüsü](media/azure-functions-image9.png)
+
+Gelen **genel bakış** sekmesinde **uygulama ayarları** altında **özellikler yapılandırıldı**:
+
+![Azure işlevinin bir sekmenin üzerine](media/azure-functions-image10.png)
+
+Buradan, yeni uygulama ayarlarını ekleyin veya var olanları düzenleyin işlev uygulaması için uygulama ayarlarını ayarlayabilirsiniz:
+
+![azure portal'ın uygulama ayarları alanı](media/azure-functions-image11.png)
+
+Ayarlanacak ihtiyacınız bir önemli ayar `FUNCTIONS_EXTENSION_VERSION`. Mac için Visual Studio'dan yayımlama sırasında bu değer ayarlanmalıdır **beta**.
 
 ## <a name="available-function-templates"></a>Kullanılabilir işlev şablonları
 
+- **GitHub tetikleyicisi** -GitHub depolarınızda gerçekleşen olaylara yanıt. Daha fazla bilgi için [Azure işlevleri makalede GitHub üzerindeki](https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function)
+    - Bir sorun veya çekme isteği için bir GitHub Web kancası aldığında ve yorum ekleyen Github'da yorum yapan – bu işlevi çalıştırılır.
+    - GitHub Web kancası aldığında, GitHub Web kancası – bu işlevi çalıştırılır.
+
 - **HTTP** – bir HTTP isteği kullanarak kodunuzun yürütülmesini tetikler. Açık şablonları için aşağıdaki HTTP Tetikleyicileri vardır:
+    - HTTP tetikleyicisi
     - HTTP GET CRUD
     - HTTP POST CRUD
-    - HTTP tetikleyicisini parametrelere sahip
-    - HTTP tetikleyici
-- **Zamanlayıcı** – önceden tanımlanmış bir zamanlamaya göre temizleme veya diğer toplu işlem görevlerini yürütün. Bu şablon iki alanlarını alır: bir ad ve altı alan CRON ifade bir zamanlama. Daha fazla bilgi için bkz: [Azure işlevleri makalesi saat](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function)
-- **GitHub tetikleyici** – GitHub depolarınızda gerçekleşen olaylara yanıt. Daha fazla bilgi için bkz: [github'da Azure işlevleri makale](https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - GitHub Web kancası için bir sorun veya çekme isteği alır ve bir açıklama ekler GitHub commenter – bu işlev çalışır.
-    - GitHub Web kancası aldığında, bu işlev GitHub Web kancası – çalıştırılır
-- **BLOB tetikleyici** – Azure Storage bloblarını bir kapsayıcıya eklendiğinde. İşlev adı yanı sıra bu şablon bir yol ve bağlantı özelliği de alır. Path özelliği tetikleyici izleyeceğiniz depolama hesabınızda yoludur. Bağlantı hesabı, depolama hesabı bağlantı dizesi içeren uygulama ayarının adıdır. Daha fazla bilgi için bkz: [Azure işlevleri Blob Storage makale](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-blob-triggered-function).
-- **Tetikleyici sıraya** – bu Azure Storage kuyruğuna geldiklerinde iletilere yanıt vereceği bir işlevdir. İşlev adı yanı sıra bu şablon geçen bir **yolu** (içinden ileti okunabilir sırasının adı) ve depolama hesabı **bağlantı** (depolama alanınızı içeren uygulama ayarı adı Hesap bağlantı dizesi). Daha fazla bilgi için bkz: [Azure işlevleri makale üzerinde kuyruk depolama](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-queue-triggered-function).
-- **Genel Web kancası** – bu Web kancalarını destekleyen herhangi bir hizmetinden bir istek aldığında, çalışacak, basit bir işlevdir. Daha fazla bilgi için bkz: [Azure işlevleri makale üzerinde genel Web kancaları](https://docs.microsoft.com/azure/azure-functions/functions-create-generic-webhook-triggered-function)
-- **Görüntü Boyutlandır** – bu işlev bir kapsayıcıya bir blob eklendiğinde yeniden boyutlandırılan görüntülerini oluşturur. Şablon tetikleyici, küçük resim çıkışı ve bir orta görüntü çıkış yolu ve bağlantı dizesini alır.
-- **SAS belirteci** – bu işlev belirli bir Azure depolama kapsayıcısı ve blob adı için bir SAS belirteci oluşturur. İşlev adı yanı sıra bu şablon bir yol ve bağlantı özelliği de alır. Path özelliği tetikleyici izleyeceğiniz depolama hesabınızda yoludur. Bağlantı hesabı, depolama hesabı bağlantı dizesi içeren uygulama ayarının adıdır. **Erişim hakları** de ayarlanması gerekir. Yetki düzeyini olup işlevi bir API anahtarı gerektirir ve kullanmak için hangi anahtarı denetler; Bir işlev tuşu işlevi kullanır; Yönetici, ana anahtarı kullanır. Daha fazla bilgi için bkz: [C# SAS belirteci oluşturmak için Azure işlevi](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) örnek.
-- **Dayanıklı işlevleri orchestration** – dayanıklı işlevleri sunucusuz bir ortamda durum bilgisi olan işlevler yazmanızı sağlar. Uzantı durumu, kontrol noktaları ve yeniden başlatmalar sizin için yönetir. Daha fazla bilgi için Azure işlevleri kılavuzlara bakın [dayanıklı işlevleri](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview)
+    - Parametrelerle HTTP tetikleyicisi
+
+
+- **Zamanlayıcı** – önceden tanımlanmış bir zamanlamaya göre temizleme veya diğer toplu işlem görevlerini yürütün. Bu şablon iki alanlarını alır: bir ad ve bir zamanlama altı alanı CRON ifadesidir. Daha fazla bilgi için [Azure işlevleri zamanında makalesi](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function)
+
+
+- **Kuyruk tetikleyicisi** – bunlar Azure Storage kuyruğuna geldiklerinde iletilere yanıt vereceğini bir işlev budur. İşlev adının yanı sıra bu şablon götüren bir **yolu** (ileti okuması Kuyruğun adı) ve depolama hesabı **bağlantı** (depolama alanınızı içeren uygulama ayarının adı hesabı bağlantı dizesi). Daha fazla bilgi için [Azure işlevleri kuyruk depolama üzerinde makale](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-queue-triggered-function).
+
+- **BLOB tetikleyicisi** – Azure Storage bloblarını bir kapsayıcıya eklendiğinde. İşlev adının yanı sıra bu şablonu ayrıca bir yol ve bağlantı özelliğini alır. Path özelliği depolama hesabınızda Tetikleyicinin izleyeceği yoludur. Bağlantı hesabı depolama hesabı bağlantı dizenizi içeren uygulama ayarının adıdır. Daha fazla bilgi için [Azure işlevleri Blob Depolama makale](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-blob-triggered-function).
+
+- **Genel Web kancası** – bu Web kancalarını destekleyen herhangi bir hizmeti isteği aldığında çalıştırılacak, basit bir işlevdir. Daha fazla bilgi için [Azure işlevleri üzerinde genel Web kancaları makale](https://docs.microsoft.com/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+
+- **Dayanıklı işlevler düzenleme** – dayanıklı İşlevler, durum bilgisi olan işlevleri, sunucusuz bir ortamda yazmanıza olanak tanır. Uzantı durumu ve kontrol noktaları yeniden sizin yerinize yönetir. Daha fazla bilgi için Azure işlevleri kılavuzlarına bakın [dayanıklı işlevler](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview).
+
+- **Görüntü Boyutlandırıcı** – bir kapsayıcıya bir blob eklendiğinde yeniden boyutlandırılmış görüntüler bu işlevi oluşturur. Şablon tetikleyicisi, küçük resmi çıkış ve orta görüntü çıkış yolu ve bağlantı dizesini alır.
+
+- **SAS belirteci** – bu işlev, belirtilen Azure depolama kapsayıcısı ve blob adı için SAS belirteci oluşturur. İşlev adının yanı sıra bu şablonu ayrıca bir yol ve bağlantı özelliğini alır. Path özelliği depolama hesabınızda Tetikleyicinin izleyeceği yoludur. Bağlantı hesabı depolama hesabı bağlantı dizenizi içeren uygulama ayarının adıdır. **Erişim hakları** de ayarlamanız gerekir. Yetkilendirme düzeyi, işlevin bir API anahtarı gerektirip ve kullanmak için hangi anahtarı denetler; İşlevi, bir işlev anahtarı kullanır; Yönetici ana anahtarınızı kullanır. Daha fazla bilgi için [C# SAS belirteçleri oluşturmak için Azure işlevi](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) örnek.

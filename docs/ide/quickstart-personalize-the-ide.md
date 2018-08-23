@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512567"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624186"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Hızlı Başlangıç: düzenleyici ve Visual Studio IDE'yi kişiselleştirme
 
-5-10 dakika Bu hızlı başlangıçta, size Visual Studio renk teması ve iki metin rengi ve metin düzenleyicisindeki özelleştireceksiniz.
+5-10 dakika Bu hızlı başlangıçta, size Visual Studio renk teması koyu tema seçerek özelleştireceksiniz. Biz de iki farklı türde metin düzenleyicisinde metin renklerini özelleştireceksiniz.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
@@ -97,19 +97,7 @@ Visual Studio 2017'in kullanıcı arabirimi için varsayılan renk teması adlı
 
 Biz, Visual Studio'daki renkler özelleştirme yalnızca birkaç yolu incelediniz. Diğer özelleştirme seçeneklerinin hakkında bilgi edineceksiniz umuyoruz **seçenekleri** iletişim kutusu, gerçek anlamda Visual Studio kendi yapma.
 
-## <a name="next-steps"></a>Sonraki adımlar
-
-> [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Hızlı Başlangıç: düzenleyicide kod yazma](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
 - [Düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md)
 - [Visual Studio IDE’ye Genel Bakış](../ide/visual-studio-ide.md)

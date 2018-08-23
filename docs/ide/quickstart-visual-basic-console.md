@@ -1,6 +1,6 @@
 ---
 title: "Hızlı Başlangıç: Visual Basic ile Visual Studio'da ilk Konsol uygulamanızı oluşturma"
-description: Visual Basic, adım adım ile Visual Studio'da bir basit bir konsol uygulaması oluşturmayı öğrenin.
+description: Visual Basic, adım adım ile Visual Studio'da basit bir Hello World konsol uygulaması oluşturmayı öğrenin.
 ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f88e305e7ece1bcdf9eecb920c4e2aa567f3439
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282352"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624290"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Hızlı Başlangıç: Visual Basic ile Visual Studio'da ilk Konsol uygulamanızı oluşturma
 
@@ -29,39 +29,39 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-İlk olarak, bir Visual Basic uygulama projesi oluşturacaksınız. Proje türü herhangi bir şey bile eklediğiniz önce ihtiyacınız vardır tüm şablonu dosyalarıyla birlikte verilir!
+İlk olarak, Visual Basic uygulama projesi oluşturacaksınız. Proje türü bile herhangi bir şey ekledik önce ihtiyacınız olacak tüm şablon dosyaları ile birlikte gelir!
 
-1. Visual Studio 2017'ni açın.
+1. Visual Studio 2017'yi açın.
 
-2. Üst menü çubuğundan seçin **dosya** > **yeni** > **proje**.
+2. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
-3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde **Visual Basic**ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Proje adı *HelloWorld*.
+3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde, **Visual Basic**ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Ardından Projeyi adlandırın *HelloWorld*.
 
-   ![Uygulama (.NET Core) proje şablonu Visual Studio IDE'de yeni proje iletişim kutusundaki konsol](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
+   ![Konsol uygulaması (.NET Core) proje şablonunu yeni proje iletişim kutusunda Visual Studio IDE](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
-     Görmüyorsanız, **konsol uygulaması (.NET Core)** proje şablonu, tıklatın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantı **yeni proje** iletişim kutusu.
+     Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu.
 
    ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantısına tıklayın](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
-     Visual Studio yükleyicisi başlatır. Seçin **.NET Core platformlar arası geliştirme** iş yükü ve ardından **Değiştir**.
+     Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
 
-     ![Visual Studio yükleyicisi .NET core platformlar arası geliştirme iş yükü](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Uygulama oluşturma
 
-Visual Basic proje şablonu seçin ve projenizin adı sonra Visual Studio sizin için basit bir "Hello World" uygulama oluşturur. Çağırır <xref:System.Console.WriteLine%2A> değişmez değer dize "Hello World!" görüntülenecek yöntemi Konsol penceresinde.
+Visual Basic projesi şablonu seçin ve projenizi adlandırın sonra Visual Studio sizin için basit bir "Hello World" uygulaması oluşturur. Çağrı <xref:System.Console.WriteLine%2A> "Hello World!" sabit dizesini görüntülemek için yöntemi Konsol penceresinde.
 
-![Şablonun varsayılan Hello World kodundan görüntüleyin](../ide/media/vb-console-helloworld-template.png)
+![Şablondan varsayılan Merhaba Dünya kodu görüntüleme](../ide/media/vb-console-helloworld-template.png)
 
-Tıklatırsanız **HelloWorld** düğmesi IDE içinde hata ayıklama modunda program çalışabilir.
+Tıklarsanız **HelloWorld** düğmesi IDE program hata ayıklama modunda çalıştırabilirsiniz.
 
-  ![Program hata ayıklama modunda çalıştırmak için Hello World düğmesini tıklatın](../ide/media/vb-console-hello-world-button.png)
+  ![Programın hata ayıklama modunda çalıştırmak için Merhaba Dünya düğmesine tıklayın](../ide/media/vb-console-hello-world-button.png)
 
-Bunu yaptığınızda, konsol penceresi kapanmadan önce yalnızca bir süre için görünür olur. Çünkü böyle `Main` yöntemi, tek bir deyimde yürütüldükten sonra ve uygulama sona şekilde sonlandırır.
+Bunu yaptığınızda, konsol penceresinde kapatılmadan önce yalnızca bir süre için görülebilir. Çünkü böyle `Main` yöntemi, tek bir deyim yürütüldükten sonra ve uygulama sona şekilde sonlandırır.
 
-### <a name="add-some-code"></a>Bazı kodlar ekleyin
+### <a name="add-some-code"></a>Kod ekleyin
 
-Uygulama duraklatma ve kullanıcı girdisi isteyin biraz kod ekleyelim.
+Uygulamayı duraklatmak ve ardından kullanıcı girdisi isteyin biraz kod ekleyelim.
 
 1. Çağırdıktan hemen sonra aşağıdaki kodu ekleyin <xref:System.Console.WriteLine%2A> yöntemi:
 
@@ -70,25 +70,25 @@ Uygulama duraklatma ve kullanıcı girdisi isteyin biraz kod ekleyelim.
    Console.ReadKey(true)
    ```
 
-    Bir tuşa basın kadar bu program duraklatır.
+    Bir tuşa basın kadar bu program duraklatılır.
 
-2. Menü çubuğunda seçin **yapı** > **yapı çözümü**.
+2. Menü çubuğunda, seçin **derleme** > **Çözümü Derle**.
 
-   Tam zamanında (JIT) derleyici tarafından ikili koda dönüştürülür bir ara dile (IL) programınızı derler.
+   Bu, just-in-time (JIT) derleyici tarafından ikili koda dönüştürülür bir ara dile (IL) programınızı derler.
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 
-1. Tıklatın **HelloWorld** araç çubuğunda.
+1. Tıklayın **HelloWorld** araç çubuğunda.
 
-   ![Araç çubuğundan programı çalıştırmak için Hello World düğmesini tıklatın](../ide/media/vb-console-hello-world-button.png)
+   ![Araç çubuğundan programı çalıştırmak için Merhaba Dünya düğmesine tıklayın](../ide/media/vb-console-hello-world-button.png)
 
 2. Konsol penceresini kapatmak için herhangi bir tuşa basın.
 
-   ![Hello World gösteren penceresi konsol ve devam etmek için herhangi bir tuşa basın](../ide/media/vb-console-hello-world-press-any-key.png)
+   ![Konsol penceresinde Hello World gösteren ve devam etmek için herhangi bir tuşa basın](../ide/media/vb-console-hello-world-press-any-key.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıç Tamamlanıyor Tebrikler! Visual Basic ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Daha fazla bilgi için aşağıdaki eğitici devam edin.
+Bu hızlı başlangıcı tamamladığınızda Tebrikler! Visual Basic ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Daha fazla bilgi için şu öğreticiyle devam edin.
 
 > [!div class="nextstepaction"]
-> [Visual Basic Visual Studio ile çalışmaya başlama](tutorial-visual-basic-console.md)
+> [Visual Studio'da Visual Basic ile çalışmaya başlama](tutorial-visual-basic-console.md)

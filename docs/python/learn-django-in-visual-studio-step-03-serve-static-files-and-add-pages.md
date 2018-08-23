@@ -1,7 +1,7 @@
 ---
 title: Öğretici - 3. adım Visual Studio'da Django öğrenin
 description: Visual Studio projeleri, özellikle statik dosyaları işleme, uygulamaya sayfaları ekleyin ve şablonu devralma gösterimi bağlamında Django temel bilgileri bir kılavuz
-ms.date: 06/27/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4eb8603933046ba02af32c41d5b4a2552b6d5185
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639701"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624124"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın
 
@@ -78,7 +78,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     }
     ```
 
-1. Uygulamanın içeriğini değiştirin *templates/HelloDjangoApp/index.html* değiştirir aşağıdaki kod ile dosya `<strong>` ile 2. adımda kullanılan öğe bir `<span>` başvuran `message` stil sınıf. Bu şekilde bir stil sınıfını kullanarak öğeyi stil çok daha fazla esneklik sağlar. (Henüz taşıdıysanız *index.html* içinde alt *şablonları*, başvurmak [şablon namespacing](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) 2. adımda.)
+1. Uygulamanın içeriğini değiştirin *templates/HelloDjangoApp/index.html* değiştirir aşağıdaki kod ile dosya `<strong>` ile 2. adımda kullanılan öğe bir `<span>` başvuran `message` stil sınıf. Bu şekilde bir stil sınıfını kullanarak öğeyi stil çok daha fazla esneklik sağlar. (Henüz taşıdıysanız *index.html* içinde alt *şablonları* VS 2017 15.7 kullanırken ve daha önce başvurmak [şablon namespacing](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) 2-4. adımda.)
 
     ```html
     <html>

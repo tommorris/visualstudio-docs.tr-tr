@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 289d22798b243a7276d74257b0d3b1f7213b3a32
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586568"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624077"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -48,7 +48,7 @@ Daha fazla bilgi için [destekleyen Visual Studio için Python yükleme](install
 
 1. Seçerek Visual Studio'da yeni Python projesi oluşturma **dosya** > **yeni** > **proje**. Seç "Python" için arama **Python uygulaması** şablonu, uygun bir ad ve konum verin ve seçin **Tamam**.
 
-1. C++ ile çalışmak bir 32 bit Python yorumlayıcısı (önerilen Python 3.6) kullanmanız gerekir. İçinde **Çözüm Gezgini** penceresi Visual Studio'nun proje düğümünü genişletin ve ardından genişletin **Python ortamları** düğümü. Varsayılan olarak 32-bit ortamından görmezseniz (kalın veya ile etiketlenmiş **genel varsayılan**), ardından yönergeleri izleyin [bir proje için bir Python ortamını seçin](selecting-a-python-environment-for-a-project.md). Yüklü bir 32-bit yorumlayıcı yoksa bkz [yüklemeniz Python yorumlayıcılarını](installing-python-interpreters.md).
+1. C++ ile çalışma gerektiren bir 32 bit Python yorumlayıcısı kullanın (Python 3.6 veya üzeri önerilir). İçinde **Çözüm Gezgini** penceresi Visual Studio'nun proje düğümünü genişletin ve ardından genişletin **Python ortamları** düğümü. Varsayılan olarak 32-bit ortamından görmezseniz (kalın veya ile etiketlenmiş **genel varsayılan**), ardından yönergeleri izleyin [bir proje için bir Python ortamını seçin](selecting-a-python-environment-for-a-project.md). Yüklü bir 32-bit yorumlayıcı yoksa bkz [yüklemeniz Python yorumlayıcılarını](installing-python-interpreters.md).
 
 1. Projenin *.py* dosya, hesaplama (matematik kitaplığı için daha kolay karşılaştırma kullanmadan uygulanan) bir hiperbolik tanjant benchmarks aşağıdaki kodu yapıştırın. El ile bazı deneyimi için kodu girin çekinmeyin [düzenleme özellikleri Python](editing-python-code-in-visual-studio.md).
 
@@ -120,7 +120,7 @@ Daha fazla bilgi için [destekleyen Visual Studio için Python yükleme](install
 
 1. Aşağıdaki tabloda açıklandığı gibi belirli özellikleri ayarlayın ve ardından **Tamam**.
 
-    | Sekme | Özellik | Değer |
+    | Tab | Özellik | Değer |
     | --- | --- | --- |
     | **Genel** | **Genel** > **hedef adı** | Python'da bir başvurduğu istediğiniz modül adını `from...import` deyimleri. Bu aynı adı için Python modülü tanımlarken, C++'ta kullanın. Modül adı projenin adı kullanmak istiyorsanız, varsayılan değerini bırakın **$(ProjectName)**. |
     | | **Genel** > **hedef uzantısı** | **.pyd** |

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fda6449e3302f6d77a04bb2985597b2781f1c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637477"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624291"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakış
 
@@ -105,15 +105,13 @@ Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin öne
 Visual Studio kullanıcı arabirimi ile tanışın özelliklerinin birkaçı adresindeki inceledik. Daha iyi keşfedilebilmesi için:
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
+> [Kod Düzenleyicisi hakkında bilgi edinin](../ide/quickstart-editor.md)
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: düzenleyicide kod yazma](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
+> [Projeler ve çözümler hakkında bilgi edinin](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
-- [Visual Studio 2017'in özellikleri](../ide/advanced-feature-overview.md)
+- [Visual Studio 2017'in daha fazla özellik](../ide/advanced-feature-overview.md)
+- [Tema ve yazı tipi renkleri değiştirme](../ide/quickstart-personalize-the-ide.md)

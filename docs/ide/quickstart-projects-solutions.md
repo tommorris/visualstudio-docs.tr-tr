@@ -1,5 +1,5 @@
 ---
-title: Projeler ve çözümler Visual Studio'da giriş
+title: Projeler ve çözümler giriş
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512310"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623998"
 ---
-# <a name="quickstart-projects-and-solutions"></a>Hızlı Başlangıç: Projeler ve çözümler
+# <a name="learn-about-projects-and-solutions"></a>Projeler ve çözümler hakkında bilgi edinin
 
-10 dakikalık bu hızlı başlangıçta şunları oluşturma ne demek keşfedeceğiz bir *çözüm* ve *proje* Visual Studio'da. Örneğin bir sınıf kitaplığı ve karşılık gelen proje test, bir çözüm bir veya daha fazla ilgili kod projelerini düzenlemek için kullanılan bir kapsayıcıdır. Bir proje özelliklerini ve bazı içerebileceği dosyalara göz atacağız. Ayrıca bir başvuru bir projeden diğerine oluşturacağız.
+Giriş niteliğindeki bu makalede şunları oluşturma ne demek keşfedeceğiz bir *çözüm* ve *proje* Visual Studio'da. Örneğin bir sınıf kitaplığı ve karşılık gelen proje test, bir çözüm bir veya daha fazla ilgili kod projelerini düzenlemek için kullanılan bir kapsayıcıdır. Bir proje özelliklerini ve bazı içerebileceği dosyalara göz atacağız. Ayrıca bir başvuru bir projeden diğerine oluşturacağız.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
@@ -176,19 +176,9 @@ Dosyadaki bir satır içeren C# kod <xref:System.Runtime.CompilerServices.Intern
 
 Birim testinizi çalıştığını denetlemek istiyorsanız seçin **Test** > **çalıştırma** > **tüm testleri** menü çubuğundan. Bir pencere olarak adlandırılan **Test Gezgini** açar, görmelisiniz, **TestGetCurrentDate** test geçer.
 
-Bu hızlı başlangıcı tamamladığınızda Tebrikler! Ardından, bazı diğer hızlı Başlangıçlar, Visual Studio için keşfetmek ya da kullanma hakkında daha fazla bilgi edinmek isteyebilirsiniz [projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md).
-
-> [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Visual Studio IDE ilk bakış](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Visual Studio'yu kişiselleştirme](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Hızlı Başlangıç: düzenleyicide kodlama](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md)
 - [Proje ve çözüm özelliklerini yönetme](../ide/managing-project-and-solution-properties.md)
 - [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)
 - [Visual Studio’da projeler veya çözümler olmadan kod geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

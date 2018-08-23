@@ -14,40 +14,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36945273c58211865eccf464d810fb276598b665
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448005"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624104"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide Sözcük Kaydırmayı Yönetme
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl yapılır: düzenleyicide sözcük kaydırmayı yönetme
 
-Ayarlayın ve temizleyin **sözcük kaydırma** seçeneği. Bu seçenek ayarlandığında, geçerli Kod Düzenleyicisi penceresini genişliğini aşan uzun bir satır kısmı sonraki satırında görüntülenir. Örneğin, numaralandırma, satır kullanımını kolaylaştırmak için bu seçeneği temizlenirse, uzun satırları uçlarından görmek için sağa kaydırma yapabilirsiniz.
+Ayarlayın ve silebileceği **sözcük kaydırmayı** seçeneği. Bu seçenek ayarlandığında, geçerli Kod Düzenleyicisi penceresinin genişliğini aşan bir uzun satır bölümü ve sonraki satırda görüntülenir. Örneğin, numaralandırma, satır kullanımını kolaylaştırmak için bu seçeneği temizlenirse, uzun satırları ucunda görmek için sağa kaydırma yapabilirsiniz.
 
-> [!NOTE]
-> İletişim kutuları ve menü komutlarını gördüğünüz içinde açıklanana değişebilir **yardımcı** etkin ayarlarınıza veya edition bağlı olarak. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+## <a name="to-set-word-wrap-preferences"></a>Sözcük kaydırmayı tercihleri ayarlamak için
 
-## <a name="procedure"></a>Yordam
+1.  Üzerinde **Araçları** menüsünde **seçenekleri**.
 
-### <a name="to-set-word-wrap-preferences"></a>Sözcük kaydırma tercihlerini ayarlamak için
-
-1.  Üzerinde **Araçları** menüsünde, select **seçenekleri**.
-
-2.  İçinde **metin düzenleyici** klasörünü seçin **genel** içinde seçenekleri **tüm diller** bu seçenek genel olarak ayarlamak için alt.
+2.  İçinde **metin düzenleyici** klasörü seçin **genel** seçeneklerini **tüm diller** genel olarak bu seçeneği ayarlamak için alt.
 
      — veya —
 
      Seçin **genel** alt programlama dili için Seçenekler.
 
-3.  Altında **ayarları**seçin veya temizleyin **sözcük kaydırma** seçeneği.
+3.  Altında **ayarları**seçin veya temizleyin **sözcük kaydırmayı** seçeneği.
 
-     Zaman **sözcük kaydırma** seçeneği seçildiğinde, **Göster sözcük kaydırma için görsel karakterlerinin** seçeneği etkinleşir.
+     Zaman **sözcük kaydırmayı** seçeneği belirlenmişse **sözcük kaydırma için görsel karakterleri Göster** seçeneği etkinleştirilir.
 
-4.  Seçin **Göster visual karakterlerin sözcük kaydırma için** burada uzun bir satır sarmalar ikinci bir satır başı oku göstergesi görüntülemek isterseniz seçeneği. Gösterge okları görüntülememek tercih ediyorsanız bu seçeneği temizleyin.
+4.  Seçin **sözcük kaydırma için görsel karakterleri Göster** burada bir uzun satır sarmalar ikinci satıra bir dönüş ok göstergesi görüntülenmesini isterseniz seçeneği. Gösterge oklar görüntülenmemesi isterseniz bu seçeneği temizleyin.
 
     > [!NOTE]
-    >  Bu anımsatıcı okları kodunuzu eklenmez: yalnızca görüntüleme amacıyla oldukları.
+    > Bu anımsatıcı okları kodunuza eklenmez; yalnızca görüntüleme amaçları için değildirler.
+
+## <a name="known-issues"></a>Bilinen sorunlar
+
+Burada Visual Studio için diğer düzenleyiciler farklı davranır sözcük kaydırmayı Not Defteri ++, Sublime Text veya Visual Studio Code biliyorsanız, aşağıdaki sorunlarından haberdar olmalı:
+
+* [Tüm satırı Üçlü seçmek değil](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
+* [Kes komutu tüm satırı silmez.](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
+* [End tuşuna basarak iki kez hareket sonlandırmak için imleci satırın](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

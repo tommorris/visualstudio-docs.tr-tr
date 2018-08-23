@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe18bcfdc4b90960abeae9ae88dcee8817780b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 533db5643359c245b2fc725e1eebcbb39487317b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388130"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624238"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakış
 
@@ -104,12 +104,13 @@ Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin öne
 
 Visual Studio kullanıcı arabirimi ile tanışın özelliklerinin birkaçı adresindeki inceledik. Daha iyi keşfedilebilmesi için:
 
-- Visual Studio'nun daha kapsamlı bir tura katılın ve hatta hata ayıklama, buna dabble [Visual Studio IDE'ye genel bakış](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Kod Düzenleyicisi hakkında bilgi edinin](../ide/quickstart-editor.md)
 
-- Gözat **genel kullanıcı arabirimi öğeleri** pencereleri hakkında daha fazla derinlik gibi girmeyeceğini VS belgelerinin bölümü [hata listesi](../ide/reference/error-list-window.md), [çıkış penceresine](../ide/reference/output-window.md), [ Özellikler penceresi](../ide/reference/properties-window.md), ve [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Projeler ve çözümler hakkında bilgi edinin](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hızlı Başlangıç: IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
-- [Hızlı Başlangıç: düzenleyicide kod yazma](../ide/quickstart-editor.md)
-- [Hızlı Başlangıç: Projeler ve çözümler](../ide/quickstart-projects-solutions.md)
+- [Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
+- [Tema ve yazı tipi renkleri değiştirme](../ide/quickstart-personalize-the-ide.md)

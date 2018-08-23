@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9ae697825d0d4a2c380c6f0d540153fbf06d4da4
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233093"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42623927"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin ortamınızı doğrulama
 
@@ -54,7 +54,7 @@ Bu Eylemler, dört projeyle bir çözümü oluşturun: paylaşılan bir .NET Sta
 
   ![Hata ayıklama hedefi olarak Android için Visual Studio öykünücüsü'nü seçin](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin doğrulayın 3")
 
-  Daha ayrıntılı bilgi için bkz. [Karşınızda Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blogu). Çalışmak için bkz öykünücü sorun karşılaşmanız halinde [Android için Visual Studio öykünücü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Seçerek ve öykünücüsü için yeni cihaz profilleri oluşturabilirsiniz **Araçlar > Android > Android öykünücü yöneticisi**.
+  Daha ayrıntılı bilgi için bkz. [Karşınızda Visual Studio Emulator for Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) Microsoft DevOps blogunda. Çalışmak için bkz öykünücü sorun karşılaşmanız halinde [Android için Visual Studio öykünücü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Seçerek ve öykünücüsü için yeni cihaz profilleri oluşturabilirsiniz **Araçlar > Android > Android öykünücü yöneticisi**.
 
 3. Tuşuna **F5** derlemek ve program Android cihazınıza veya öykünücünüze dağıtmak için.
 

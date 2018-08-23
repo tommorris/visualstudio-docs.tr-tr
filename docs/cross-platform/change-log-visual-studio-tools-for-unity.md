@@ -1,7 +1,7 @@
 ---
 title: Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,18 +10,91 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381061"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42623982"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
 
+## <a name="3804"></a>3.8.0.4
+ Yayın Tarihi: 14 Ağustos 2018
+ 
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Değerlendirme:**
+
+    -   İşaretçi değerleri için destek eklendi.
+    
+    -   Genel metotlar için desteği eklendi.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Birden çok proje ile akıllı yeniden değiştirildi.
+
+## <a name="3803"></a>3.8.0.3
+ 24 Temmuz 2018'de yayınlanan
+ 
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Proje oluşturma:**
+
+    -   Unity tarafından sabit bir Unity performans hatanın geçici çözümü geri alındı.
+
+## <a name="3802"></a>3.8.0.2
+ 7 Temmuz 2018'de yayınlanan
+ 
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Proje oluşturma:**
+
+    -   Unity performans hatanın geçici çözüm: projeleri oluştururken MonoIslands önbellek.
+    
+## <a name="3801"></a>3.8.0.1
+ 26 Haziran 2018'de yayınlanan
+ 
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Hata ayıklama:**
+
+    -   UserLog ve UserBreak komutları için destek eklendi.
+    
+    -   Eklenen lazy türü yükleme desteği (Ağ Yükü ve hata ayıklayıcı yanıt gecikme süresi en iyi duruma getirme).
+       
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Değerlendirme:**
+
+    -   İkili-işleç ifade değerlendirmesi ve yöntem arama geliştirildi.
+
+## <a name="3800"></a>3.8.0.0
+ 30 Mayıs 2018'de yayınlanan
+ 
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Hata ayıklama:**
+
+    -   Zaman uyumsuz yapılarında değişkenler görüntülemek için destek eklendi.
+    
+    -   İç içe geçmiş türler derleyici yapılarıyla uyarıları önlemek için kesme noktaları, ayarlarken işlemek için destek eklendi.
+    
+-   **Tümleştirme:**
+
+    -   İçin destek eklendi textmate dil bilgisi için gölgelendiriciler (C++ iş yükünde artık gölgelendirici kod coloration için gereklidir).
+    
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Proje oluşturma:**
+
+    -   Taşınabilir pdb mdb için artık yeni Unity çalışma zamanı kullanırken dönüştürmez.
+
 ## <a name="3701"></a>3.7.0.1
- Yayımlanan 2018-05-07
+ 7 Mayıs 2018'de yayınlanan
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -30,7 +103,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Deneysel kullanırken sabit bağımlılık sorun oluşturur.
 
 ## <a name="3700"></a>3.7.0.0
- Yayımlanan 2018-05-07
+ 7 Mayıs 2018'de yayınlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -59,7 +132,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Paket Yöneticisi derleme biriminden kuşaktan hariç tutun.
 
 ## <a name="3605"></a>3.6.0.5
- Yayımlanan 2018-03-13
+ 13 Mart 2018'de yayınlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -78,7 +151,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Sonraki deyimin ayarlanması düzeltildi.
 
 ## <a name="3604"></a>3.6.0.4
- Yayımlanan 2018-03-05
+ 5 Mart 2018'de yayınlanan
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -91,7 +164,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   2018.1 ile zamanlama sorunları düzeltildi ve eklentisini etkinleştirme.
 
 ## <a name="3603"></a>3.6.0.3
- Yayımlanan 2018-02-23
+ 23 Şubat 2018'de yayınlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -110,7 +183,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Sabit bozucu dışında usercode attığı özel durumları hakkında.
 
 ## <a name="3602"></a>3.6.0.2
- Yayımlanan 2018-02-07
+ 7 Şubat 2018'de yayınlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -125,7 +198,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Yalnızca dış değişiklik (azaltma ile) projeleri yeniden yükleyin.
 
 ## <a name="3601"></a>3.6.0.1
- Yayımlanan 2018-01-24
+ Yayın Tarihi: 24 Ocak 2018
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -136,7 +209,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Dizi boyutu değiştirilmeye çalışılırken Inspector'ı etkileyen EditorPrefs.GetBool sabit dolaylı çağrı.
 
 ## <a name="3600"></a>3.6.0.0'dan
- Yayımlanan 2018-01-10
+ 10 Ocak 2018'de yayınlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -171,7 +244,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Roslyn bağlam yöntemi eklemeden önce yenileyin.
 
 ## <a name="3503"></a>3.5.0.3
- Yayımlanan 2018-01-09
+ 9 Ocak 2018'de yayınlanan
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -180,7 +253,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Mdb hata ayıklama sembol dönüştürme sabit otomatik pdb.
 
 ## <a name="3502"></a>3.5.0.2
- Yayımlanan 2017-12-04
+ Yayın Tarihi: 4 Aralık 2017
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -213,7 +286,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Varsayılan 'true' olduğunda AllowAttachedDebuggingOfEditor Unity bayrağı zorlamaz.
 
 ## <a name="3402"></a>3.4.0.2
- Yayımlanan 2017-09-19
+ Yayın Tarihi: 19 Eylül 2017
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -244,7 +317,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Microsoft.CSharp sabit başvuru için 4,6 API düzeyi.
 
 ## <a name="3302"></a>3.3.0.2
- Yayımlanan 2017-08-15
+ Yayın Tarihi: 15 Ağustos 2017
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -253,7 +326,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Visual Studio çözümü oluşturma Unity 5.5 ve önceki sürümlerde düzeltildi.
 
 ## <a name="3300"></a>3.3.0.0
- Yayımlanan 2017-08-14
+ Yayın Tarihi: 14 Ağustos 2017
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -282,7 +355,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Sabit ile API düzeyleri tanımlar.
 
 ## <a name="3200"></a>3.2.0.0
- Yayımlanan 2017-05-10
+ Yayın Tarihi: 10 Mayıs 2017
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -299,7 +372,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Unity iletileri ile titremeyi düzeltildi.
 
 ## <a name="3100"></a>3.1.0.0
- Yayımlanan 2017-04-07
+ Yayın Tarihi: 7 Nisan 2017
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -328,12 +401,12 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Kaldırılan derleme sonrası işleme sürümü.
 
 ## <a name="3001"></a>3.0.0.1
- Yayımlanan 2017-03-07
+ Yayın Tarihi: 7 Mart 2017
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Bu sürümü, tüm yeni özellikler ve hata düzeltmeleri 2.8.x serisi ile sunulan içerir.
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 preview 3
- Yayımlanan 2017-01-25
+ 25 Ocak 2017 tarihinde yayımlandı
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -342,7 +415,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Burada eklenti projeleri iki kez başvurulan burada ilk olarak ikili bir DLL sonra bir proje olarak başvuruda gerilemesi düzeltildi.
 
 ## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 Önizleme 2
- Yayımlanan 2017-01-23
+ Yayın Tarihi: 23 Ocak 2017
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -369,7 +442,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Uzak Unity belgeleri hedeflemek için https olarak değiştirdi.
 
 ## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 Önizleme
- Yayımlanan 2016-11-17
+ 17 Kasım 2016 yayımlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -436,7 +509,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Bir web ile bir komut dosyası derlenirken derleme önleyen hata düzeltildi, dosya adı kodlanmış.
 
 ## <a name="2300"></a>2.3.0.0
- Yayımlanan 2016-07-14
+ Yayınlanma tarihi: 14 Temmuz 2016
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -471,7 +544,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Birden fazla ifade değerlendirme sorunları düzeltildi.
 
 ## <a name="2200"></a>2.2.0.0
- Yayımlanan 2016-02-04
+ Yayınlanma tarihi: 4 Şubat 2016
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -518,7 +591,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Visual Studio'nun birden çok farklı sürümleri için VSTU sürümüyle aynı sürümü yüklendiğinde VSTU kaldırılması ile sorunlar düzeltildi. Örneğin, VSTU **2015** 2.1.0.0 ve VSTU **2013** 2.1.0.0 hem takıldı.
 
 ## <a name="2100"></a>2.1.0.0
- Yayımlanan 2015-09-08
+ 8 Eylül 2015'i yayınladı
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -539,7 +612,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Visual Studio 2015'te sabit isabet sayısı kesme noktaları.
 
 ## <a name="2000"></a>2.0.0.0
- Yayımlanan 2015-07-20
+ 20 Temmuz 2015'i yayınladı
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -574,7 +647,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
     -   Boş bir dizi inceleyerek düzeltildi.
 
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 preview 2
- Yayımlanan 2015-04-02
+ 2 Nisan 2015'i yayınladı
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -663,7 +736,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   **Kullanıcı Arabirimi:** desteği Visual Studio temaları bağlam menüsü ve simgeler.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Önizlemesi
- Yayımlanan 2014-11-12
+ 12 Kasım 2014'te yayımlamıştır
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -702,7 +775,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   İçin yoksa, günlük geri kaydetmeyin.
 
 ## <a name="1920"></a>1.9.2.0
- Yayımlanan 2014-10-09
+ 9 Ekim 2014'te yayımlamıştır
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -725,7 +798,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Burada uzantı filtresi boşsa tüm varlıkları proje dosyalarında bulunan hatası düzeltildi.
 
 ## <a name="1910"></a>1.9.1.0
- Yayımlanan 2014-09-22
+ 22 Eylül 2014'te yayımlamıştır
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -770,7 +843,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Betikleri açma VSTU ile Unity 64 bit sürümlerinde düzeltin.
 
 ## <a name="1900"></a>1.9.0.0
- Yayımlanan 2014-07-29
+ 29 Temmuz 2014'te yayımlamıştır
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -818,7 +891,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 >  C# Unity ekosisteminde - yeni örnek varlıkları hakim dili olan C# ' de, Unity belgeleri varsayılan C# - C# deneyimi daha fazla odaklanması UnityScript ve hata için temel destek kaldırdık. Sonuç olarak, VSTU çözümleri artık yalnızca C# değildir ve yüklemek için daha hızlıdır.
 
 ## <a name="1820"></a>1.8.2.0
- Yayımlanan 2014-01-07
+ 7 Ocak 2014'te yayımlamıştır
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -845,7 +918,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Unity kilitlenme eşitlenmemiş, derleme sürüm özel oluşturulmuş engelleyin.
 
 ## <a name="1810"></a>1.8.1.0
- Yayımlanan 2013-11-21
+ Yayımlanan 21 Kasım 2013
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -878,7 +951,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   ALT + sekme sırasını Unity 4.2 ve üzeri karıştırmamaya Unity'de açılış betikleri düzeltildi.
 
 ## <a name="1800"></a>1.8.0.0
- Yayımlanan 2013-09-24
+ 24 Eylül 2013 yayımlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -919,7 +992,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Yerel görünümünde Boole değerleri, sabit değişen değerler.
 
 ## <a name="1220"></a>1.2.2.0
- Yayımlanan 2013-07-09
+ 9 Temmuz 2013 yayımlanan
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -942,7 +1015,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Unity 4.2 Beta derlemelerin sabit işleme.
 
 ## <a name="1210"></a>1.2.1.0
- Yayımlanan 2013-04-09
+ Yayımlanan 9 Nisan 2013
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -955,7 +1028,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Sabit bağlama dış bazı DLL'lerde kesme noktaları.
 
 ## <a name="1200"></a>1.2.0.0
- Yayımlanan 2013-03-25
+ Yayımlanan 25 Mart 2013
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -1022,10 +1095,10 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Hata düzeltildi UV'leri-11: Eş yordamlarda yerel öğeler.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - beta sürümü
- Yayımlanan 2014-10-09
+ Yayımlanan, 9 Mart 2013
 
 ## <a name="10130"></a>1.0.13.0
- Yayımlanan 2013-01-21
+ Yayımlanan Ocak 21 Şubat 2013
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -1048,7 +1121,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Sabit işleme için UnityVS Unity'de gönderilen uzun iletisi. Bundan önce uzun iletileri UnityVS Mesajlaşma bizim parçası kilitlenebiliyordu. Sonuç olarak, bazen UnityVS dosya Unity'de açın mıydı.
 
 ## <a name="10120"></a>1.0.12.0
- Yayımlanan 2013-01-03
+ 3 Ocak 2013'ün yayımlanan
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -1067,7 +1140,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Burada kullanıcı kodu içinde günlük geri çağırma işleyiciyi katılmamayı bir API sorun düzeltildi.
 
 ## <a name="10110"></a>1.0.11.0
- Yayımlanan 2012-11-28
+ 28 Kasım 2012 yayımlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -1098,7 +1171,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Size sunduğumuz simgesi Visual Studio durum çubuğunda eklenemiyor, sabit kilitlenme.
 
 ## <a name="10100"></a>1.0.10.0
- Yayımlanan 2012-10-09
+ Yayımlanan 9 Ekim 2012
 
 ### <a name="bug-fixes"></a>Hata Düzeltmeleri
 
@@ -1111,7 +1184,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Sabit dosyalar kilitlenmesini önlemek ve Unity yapı işlemi karıştırır Unity'de derlemeleri nasıl alınır.
 
 ## <a name="1090"></a>1.0.9.0
- Yayımlanan 2012-10-03
+ Yayımlanan 3 Ekim 2012
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -1130,7 +1203,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Hata düzeltildi UV'leri 21: Unity matematik API için bir yöntem çağırmayla hesaplanırken geçersiz işaretçi.
 
 ## <a name="1080"></a>1.0.8.0
- Yayımlanan 2012-09-26
+ 26 Eylül 2012 yayımlanan
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -1141,7 +1214,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Visual Studio 2010'da UnityVS nasıl kayıtlı düzeltildi.
 
 ## <a name="1070"></a>1.0.7.0
- Yayımlanan 2012-09-14
+ 14 Eylül 2012 yayımlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -1157,10 +1230,10 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 >  Visual Studio 2012 desteği nedeniyle birkaç dosyalarını yeniden adlandırın ve başka gezinme vardı. Unity içeri aktarmak için UnityVS paket artık UnityVS 2010 veya UnityVS 2012'de, sırasıyla Visual Studio 2010 ve Visual Studio 2012 için olarak adlandırılır. Bu sürüm ayrıca UnityVS proje dosyalarını yeniden oluşturulduğunu gerektirir.
 
 ## <a name="1060---internal-build"></a>1.0.6.0 - iç yapı
- Yayımlanan 2012-09-12
+ 12 Eylül 2012 yayımlanan
 
 ## <a name="1050"></a>1.0.5.0
- Yayımlanan 2012-09-10
+ 10 Eylül 2012 yayımlanan
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -1169,7 +1242,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Unity varlık sunucuya bağlanıldığında Unity örnekleri sabit algılanması. Bu, Unity ve Visual Studio hata ayıklayıcı otomatik bağlantısı dosyaları açmak için hataları tetiklenir.
 
 ## <a name="1040"></a>1.0.4.0
- Yayımlanan 2012-09-05
+ 5 Eylül 2012 yayımlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -1182,7 +1255,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Yöntemleri veya özellikleri içinde Unity tarafından oluşturulan özel durumları nedeniyle hata ayıklama sırasında UnityVS kilitlenme sorunu düzeltildi.
 
 ## <a name="1030"></a>1.0.3.0
- Yayımlanan 2012-09-04
+ 4 Eylül 2012 yayımlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -1197,7 +1270,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Çökme, özel durum çubuğu tarafından neden rastgele VS sabit.
 
 ## <a name="1020"></a>1.0.2.0
- Yayımlanan 2012-08-30
+ Yayımlanan 30 Ağustos 2012
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -1208,7 +1281,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Hata düzeltildi nasıl betik derlemelerde alınan Unity'de Unity 4 b7 ile.
 
 ## <a name="1010"></a>1.0.1.0
- Yayımlanan 2012-08-28
+ 28 Ağustos 2012 yayımlanan
 
 ### <a name="new-features"></a>Yeni Özellikler
 
@@ -1225,4 +1298,4 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   Dll içindeki varlık klasörünü sabit tamamlanmasını UnityScript ve hata.
 
 ## <a name="1000---initial-release"></a>1.0.0.0 - ilk yayın
- Yayımlanan 2012-08-22
+ 22 Ağustos 2012 yayımlanan

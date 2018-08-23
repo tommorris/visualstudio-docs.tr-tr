@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme h
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379742"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624101"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -53,21 +53,22 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 1.  Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Azure kutucuğu bulun Araçlar bölümünde avantajları hakkında sayfasında ve tıklayın **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.
-
-    ![Azure kutucuğu](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure kutucuğu](_img\vs-azure\vs-azure-tile.png)
 
 3.  Hüküm ve koşullarını kabul edin ve onay kutusuna tıklayın, Azure aboneliğinizi oluşturmak için gerekli bilgileri doldurun **kaydolun**:
-
-    ![Azure kaydolma](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure kaydolma](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Hesabınız hazır, (ayrı olarak satılan) bir Azure destek planı seçin veya Azure aboneliğinizle başlayın seçeneğine sahip olacaksınız.
-
-    ![Azure hazırlığı](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure hazırlığı](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  Azure Panosu yükler ve, ilk kez kullanıldığında, bir tura seçeneğine sahip olacaksınız.  Bir dizi nasıl çeşitli görevleri gerçekleştirmek ve ilgili bilgi çıkış işaret edeceği Ekran İpucu turu oluşur.  Azure Panosu, tamamlayarak veya turu kapatma görüntülenir.
 
 6.  Yer işareti [Azure portalı](https://portal.azure.com) gelecekte kolay erişim için.
-![Azure Panosu](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure Panosu](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>SSS
 

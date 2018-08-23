@@ -1,44 +1,44 @@
 ---
-title: Mac için Visual Studio ile ilgili bir sorun raporu
-description: Önerileri veya rapor sorunları deneyimli Mac için Visual Studio kullanırken yapma
+title: Mac için Visual Studio ile ilgili bir sorun bildirin
+description: Mac için Visual Studio kullanırken önerileri veya rapor sorunları deneyimli hale getirme
 ms.topic: troubleshooting
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 2bf296c54ff4978195427f86d1a59f64300650df
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 98b9b2f346c169d6b992f0d65a1454e3de9e814d
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884153"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624396"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Mac için Visual Studio'da bir sorun bildirme
 
-Mac için Visual Studio ile bir sorunla karşılaşırsanız, böylece biz tanılayın ve giderin hakkında bilmek isteriz. 
+Mac için Visual Studio ile bir sorunla karşılaşırsanız, böylece biz de tanılayın ve düzeltin bunu bilmek istiyoruz. 
 
 ## <a name="how-to-report-a-problem"></a>Bir sorun bildirme
 
-Mac için Visual Studio ile ilgili bir sorun bildirmek seçin **Yardım > bir sorun bildirmek** menü çubuğundan:
+Mac için Visual Studio ile ilgili bir sorun bildirmek için seçin **Yardım > bir sorun bildirmek** menü çubuğundan:
 
-![Rapor bir sorun bağlantı](media/report-problem-image1.png)
+![bir sorun bağlantı raporu](media/report-problem-image1.png)
 
-De kullanabilirsiniz **bir sorun bildirmek** bağlantı Hoş Geldiniz sayfasında bulunur.
+Ayrıca **sorun bildir** bağlantı Hoş Geldiniz sayfasında bulunur.
 
-Bu görüntüler **bir sorun bildirmek** web sayfası. Tüm mevcut sorunları görüntülemek, üzerinde benzer sorunlar oy verin ve başka insanlar tarafından bildirilen sorunların çözümleri göndermek için bu sayfayı kullanın:
+Bu görüntüler **sorun bildir** web sayfası. Mevcut tüm sorunları görüntülemek, benzer sorunları oylamak ve diğer kişiler tarafından bildirilen sorunların çözümlerini göndermek için bu sayfayı kullanabilirsiniz:
 
 ![Rapor bir sorun Web sayfası](media/report-problem-image2.png)
 
-Seçin **bir sorun bildirmek** web sayfasının düğmesini. 
+Seçin **sorun bildir** web sayfasında düğme. 
 
-Geliştirici topluluğu uygulamaya zaten oturum yapmadıysanız, bunu aşağıdaki sayfayı için istenir. Seçin **kabul** Geliştirici topluluğu uygulama Microsoft hesabınız için yetkilendirmek için düğmesi:
+Geliştirici topluluğu uygulamaya henüz oturum açmadıysanız bu sayfadan yapmaya istenir. Seçin **kabul** Geliştirici topluluğu Microsoft hesabınız için yetkilendirmek düğmesi:
 
 ![Rapor bir sorun Web sayfası](media/report-problem-image3.png)
 
-Sorun yararlı olabilecek düşünüyorsanız bu sorun hakkında ek bilgileri yanı sıra için açıklayıcı bir başlık verin. Bu bize anlamak ve mümkün olan en kısa sürede düzeltmek izin verdiği ölçüde mümkün olduğunda, lütfen bize çoğaltılması adımlara sağlayın.
+Sorun birlikte okunması düşünüyorsanız bu sorun hakkında ek bilgiler için açıklayıcı bir başlık verin. Bu anlamak ve mümkün olan en kısa sürede sorunu olanak tanır mümkün olduğunda, lütfen bize çoğaltılması adımları sağlar.
 
 ![Rapor bir sorun Web sayfası](media/report-problem-image4.png)
 
-## <a name="provide-a-suggestion"></a>Bir öneride bulunmak
+## <a name="provide-a-suggestion"></a>Öneri gönderin
 
-Kullanım **bir öneride bulunmak** Hoş Geldiniz sayfasında, doğrudan bağlantı [Mac'ın UserVoice sayfası için Visual Studio](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac). Buradan yeni istekler ekleyin veya mevcut isteklerinde oy verin.
+Kullanım **bir öneride** bağlantısını için yönlendirmek için Hoş Geldiniz sayfasında [UserVoice sayfası Mac için Visual Studio](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac). Buradan yeni istekler ekleyebilir veya var olan istekler için oy verin.

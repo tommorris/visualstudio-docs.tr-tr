@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500127"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623980"
 ---
 # <a name="edit-python-code"></a>Python kodunu düzenleme
 
@@ -34,7 +34,7 @@ Visual Studio ayrıca kullanabileceğiniz **Nesne Tarayıcısı** (**görünüm�
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense sağlar [tamamlamaları](#completions), [imza Yardımı](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Visual Studio 2017 sürüm 15.7 ve üzeri da destekler [tür ipuçlarını](#type-hints).
+IntelliSense sağlar [tamamlamaları](#completions), [imza Yardımı](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Visual Studio 2017 sürüm 15.7 ve üzeri da destek [tür ipuçlarını](#type-hints).
 
 IntelliSense, performansı artırmak için **Visual Studio 2017 sürüm 15.5** ve daha önce projenizdeki her Python ortamı için oluşturulan bir tamamlanma veritabanı bağlıdır. Veritabanları eklemek, kaldırmak veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu gösterilir **Python ortamları** penceresi (bir eşdüzeyi **Çözüm Gezgini**) üzerinde **IntelliSense** sekme (bkz [ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab)).
 

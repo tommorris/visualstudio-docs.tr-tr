@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Windows Geliştirici hesabı hak
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382457"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624347"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Windows Geliştirici hesabı
 
@@ -29,12 +29,12 @@ Bu işlem için bir "özel" tarayıcı penceresi oluşturmanızı öneririz.  Ö
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Windows Geliştirici hesabı kutucuk Araçlar bölümünde bulun ve tıklayarak **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.  Kodunu panonuza kopyalayın ve ardından tıklayın **etkinleştirme**.
-
-    ![Windows Geliştirici teklifi kutucuğu](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows Geliştirici teklifi kutucuğu](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2. Üzerinde [ https://developer.microsoft.com ](https://developer.microsoft.com) site kayıt işlemine başlayabilirsiniz.  Tıklayın **kaydolun** devam etmek için.
-
-    ![Windows Geliştirici teklifi kayıt](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows Geliştirici teklifi kayıt](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
 
 3. Aboneliğinizde oturum açın.  Birden çok hesabı varsa, Kurumsal aboneliğinizle ilişkili bir'ı seçin.
 4. Sonraki sayfada, yaşadığınız yerde veya işinizin bulunduğu ülke veya bölgeyi seçin ve ardından **sonraki**.
@@ -43,8 +43,8 @@ Bu işlem için bir "özel" tarayıcı penceresi oluşturmanızı öneririz.  Ö
 7. Tercih edilen e-posta dili ve ilgili kişi bilgilerini sağlayın, sonra tıklayın **sonraki**.
 8. Parolanızı doğrulamanız istenebilir.  Girip __iade **oturum**.
 9. Kayıt – ödeme sayfasında, promosyon kodu alanına daha önce kopyaladığınız kodu yapıştırın.  Sayfa, göstermek için güncelleştirilir *hiçbir ödenmelidir*.  **İleri**'ye tıklayın.
-
-    ![Windows Geliştirici teklifi kayıt](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows Geliştirici teklifi kayıt](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
 10. Hesap bilgilerinizi gözden geçirin, uygulama geliştiricisi sözleşmesini gözden geçirin ve hüküm ve koşulları kabulünüz belirten onay kutusuna tıklayın.  Ardından **son**.
 11. Tıklayın **panoya Git** Windows Geliştirici hesabınızı kullanmaya başlamak için!
@@ -59,7 +59,7 @@ Bu işlem için bir "özel" tarayıcı penceresi oluşturmanızı öneririz.  Ö
 | Visual Studio Dev Essentials | Yok  | Yok                                            |  Yok|
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satışıyla (NFR), FTE, Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri için değil.   Dışlar: Microsoft iş ortağı ağı (MPN), Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri.*
+<sup>1</sup>*içerir: satışıyla (NFR), FTE, Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri için değil. Dışlar: Microsoft iş ortağı ağı (MPN), Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri.*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

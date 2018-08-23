@@ -1,7 +1,7 @@
 ---
 title: Python kodunda hata ayıklama
 description: Visual Studio'da hata ayıklama özellikleri özellikle kesme noktaları ayarlama, Adımlama, değerler geçirerek, özel durumlar arama ve etkileşimli pencerede hata ayıklama da dahil olmak üzere Python kodu için bir kılavuz.
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc2b4893906e5f3f8902ab6cc08d17d61a45133f
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008287"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624295"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -192,48 +192,44 @@ Standart windows gibi hata ayıklayıcı, Not **işlemleri**, **iş parçacıkla
 
 ![Hata ayıklama etkileşimli penceresi seçenekleri](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>Deneysel hata ayıklayıcısını kullan
+<a name="use-the-experimental-debugger"></a>
 
-Visual Studio 2017 Preview 4.0 ile başlayarak, "4.1 + ptvsd sürümü temel Deneysel hata ayıklayıcısını" kullanarak tercih edebilirsiniz. Katılım için seçin **Araçları** > **seçenekleri** menü komutunu ve ardından gitmek **Python** > **Deneysel**Seçenekler iletişim kutusu seçip **Deneysel hata ayıklayıcısını**.
+## <a name="use-the-legacy-debugger"></a>Eski hata ayıklayıcıyı kullanın
 
-Deneysel hata ayıklayıcı, aşağıdaki tabloda açıklandığı gibi yalnızca sınırlı Python ortamları ile uyumludur:
+Visual Studio 2017 sürüm 15,8 ve daha sonra bir hata ayıklayıcısı ptvsd sürümüne 4.1 + dayanan kullanın. Ptvsd bu sürümü, Python 2.7 ve Python 3.5 + ile uyumludur. Python 2.6 3.1 için 3.4 kullanıyorsanız veya IronPython, Visual Studio hatayı gösterir **hata ayıklayıcı bu Python ortamı desteklemiyor**:
 
-| Python sürümü | Deneysel hata ayıklayıcısı ile uyumlu |
-| --- | --- |
-| 2.6 | Hayır |
-| 2.7 | Evet |
-| 3.1 için 3.4 | Hayır |
-| 3.5 ve sonraki sürümler | Evet |
-| IronPython | Hayır |
+![Hata ayıklayıcı hata ayıklayıcı kullanırken bu Python ortamı hatası desteklemiyor](media/debugging-experimental-incompatible-error.png)
 
-Deneysel hata ayıklayıcısı ile uyumlu bir ortam kullanmayı denerseniz, Visual Studio hatayı gösterir **hata ayıklayıcı bu ortamı ile uyumsuz**:
+Bu gibi durumlarda, daha eski hata ayıklayıcı (Visual Studio 2017 sürüm 15.7 ve önceki varsayılan olan) kullanmanız gerekir. Seçin **Araçları** > **seçenekleri** menü komutu, gitmek **Python** > **hata ayıklama**ve seçin **eski hata ayıklayıcısını** seçeneği.
 
-![Deneysel hata ayıklayıcısını kullanarak hata ayıklayıcı bu ortam hatası ile uyumlu değil](media/debugging-experimental-incompatible-error.png)
+Geçerli ortama (örneğin, önceki 4.0.x sürümü veya uzaktan hata ayıklama için gereken bir 3.x sürümü) ptvsd daha eski bir sürümünü yüklediyseniz Visual Studio bir hata veya uyarı gösterebilir.
 
-Seçin **Deneysel hata ayıklayıcısını devre dışı** komutu, hangi temizler **Deneysel hata ayıklayıcısını** seçeneği.
+Hata **hata ayıklayıcısı paket yüklenemedi**, ptvsd yüklediğiniz görüntülendiğinde 3.x:
 
-> [!Note]
-> Uyarı şu anda Python 3.3 ve 3.4 gösterilmez.
+![Hata ayıklayıcısı paket hata ayıklayıcı kullanırken yüklenen hata bulunamadı](media/debugging-experimental-version-error.png)
 
-Geçerli ortama (örneğin, bir önceki 4.0.x sürümü sürümü uzaktan hata ayıklama için gereken bir 3.x) ptvsd daha eski bir sürümünü yüklediyseniz Visual Studio ya da bir hatayı gösterir. **hata ayıklayıcısı paket yüklenemedi**, veya Uyarı **hata ayıklayıcı paketi güncel değil**:
+Bu örnekte **eski hata ayıklayıcısını** ayarlamak için **eski hata ayıklayıcısını** seçenek ve hata ayıklayıcıyı yeniden başlatın.
 
-![Hata ayıklayıcısı paket Deneysel hata ayıklayıcısını kullanarak yüklenen hata bulunamadı](media/debugging-experimental-version-error.png)
+Uyarı **hata ayıklayıcı paketi güncel değil**, önceki bir 4.x sürümünde ptvsd yüklediğiniz görünür:
 
-![Hata ayıklayıcısı paket Deneysel hata ayıklayıcısını kullanarak uyarı güncel değil](media/debugging-experimental-version-warning.png)
-
-Ptvsd yüklemenizi yönetmek için kullandığınız **paketleri** sekmesinde **Python ortamları** penceresi ya da komut satırından aşağıdaki komutları kullanın:
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![Hata ayıklayıcısı paket hata ayıklayıcı kullanırken uyarı güncel değil](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > Ptvsd'ün bazı sürümleri için bir uyarıyı yoksaymak seçebilirsiniz ancak Visual Studio doğru şekilde çalışmayabilir.
+
+Ptvsd yüklemenizi yönetmek için:
+
+1. Gidin **paketleri** sekmesinde **Python ortamları** penceresi.
+
+1. Arama kutusuna "ptvsd" ve ptvsd'ın yüklü sürümü inceleyin:
+
+    ![Python ortamları penceresinde ptvsd sürüm denetimi](media/debugging-experimental-check-ptvsd.png)
+
+1. Sürüm (sürüm, Visual Studio ile birlikte) 4.1.1a9 düşüktür, seçin **X** sağındaki paketin eski sürümü kaldırın. Visual Studio, ardından ile birlikte gelen sürümünü kullanır. (PowerShell kullanarak da kaldırabilirsiniz `pip uninstall ptvsd`.)
+
+1. Alternatif olarak, en yeni sürümü için ptvsd paketi güncelleştirebilirsiniz. Girin `ptvsd --upgrade -pre` seçip arama kutusuna **komutu çalıştırın: pip install komutunu ptvsd--yükseltme - öncesi**. (Ayrıca aynı PowerShell komutu kullanabilirsiniz.)
+
+    ![Python ortamları penceresinde yükseltme komut vererek](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

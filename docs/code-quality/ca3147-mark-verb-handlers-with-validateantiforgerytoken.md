@@ -1,5 +1,5 @@
 ---
-title: 'CA3147: fiil işleyicileri ValidateAntiForgeryToken ile işaretleyin'
+title: 'CA3147: ValidateAntiForgeryToken ile fiil işleyicilerini işaretleme'
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4369cfd310be9322d17b8bdbfe79880f2aa579
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40009054"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624399"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: fiil işleyicileri ValidateAntiForgeryToken ile işaretleyin
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: ValidateAntiForgeryToken ile fiil işleyicilerini işaretleme
 
 |||
 |-|-|
@@ -29,7 +29,7 @@ ms.locfileid: "40009054"
 
 ## <a name="cause"></a>Sebep
 
-Bir ASP.NET MVC denetleyici eylem yöntemi ile işaretlenmemiş <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute?displayProperty=fullName>, ya da HTTP fiili gibi belirten bir özniteliği <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute?displayProperty=fullName> veya <xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute?displayProperty=fullName>.
+Bir ASP.NET MVC denetleyici eylem yöntemi ile işaretlenmemiş [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)), ya da HTTP fiili gibi belirten bir özniteliği [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118)) veya [ AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -37,17 +37,17 @@ ASP.NET MVC denetleyicisi tasarlarken siteler arası istek sahteciliği saldır�
 
 Bu kural denetler, ASP.NET MVC denetleyici eylem yöntemleri ya da:
 
-- Sahip <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> ve HTTP GET içermeden, izin verilen HTTP fiilleri belirtin.
+- Sahip [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29) ve HTTP GET içermeden, izin verilen HTTP fiilleri belirtin.
 
 - HTTP GET, izin verilen bir fiili belirtin.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
-- HTTP GET isteklerini işleyen ve potansiyel olarak zararlı yan etkileri yoksa ASP.NET MVC denetleyici eylemleri için ekleme bir <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute> yöntemi.
+- HTTP GET isteklerini işleyen ve potansiyel olarak zararlı yan etkileri yoksa ASP.NET MVC denetleyici eylemleri için ekleme bir [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29) yöntemi.
 
    Bir ASP.NET MVC HTTP GET'ini işler denetleyici eylemi ister ve hassas verileri değiştirme gibi zararlı yan etkileri varsa, uygulamanızı siteler arası istek sahteciliği saldırılarına karşı savunmasız.  Hassas işlemleri yalnızca HTTP POST, PUT ve DELETE isteklerini gerçekleştirmek için uygulamanızı yeniden tasarlamanız gerekir.
 
-- HTTP POST işleyen, ASP.NET MVC denetleyici eylemleri için PUT veya DELETE istekleri, ekleme <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> ve izin verilen HTTP fiilleri belirten öznitelikler (<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPutAttribute>, veya <xref:Microsoft.AspNetCore.Mvc.HttpDeleteAttribute>). Ayrıca, çağırmanız gerekir <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.AntiForgeryToken%2A?displayProperty=nameWithType> MVC görünümü veya Razor web sayfası. Bir örnek için bkz. [düzenleme metotlarını inceleme ve düzenleme görünümü](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- HTTP POST işleyen, ASP.NET MVC denetleyici eylemleri için PUT veya DELETE istekleri, ekleme [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)) ve izin verilen HTTP fiilleri belirten öznitelikler ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29), veya [HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29)). Ayrıca, çağırmanız gerekir [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) MVC görünümü veya Razor web sayfası yöntemi. Bir örnek için bkz. [düzenleme metotlarını inceleme ve düzenleme görünümü](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 

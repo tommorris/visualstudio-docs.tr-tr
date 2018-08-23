@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978430"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624121"
 ---
 # <a name="model-editor"></a>Model düzenleyicisi
 
@@ -48,14 +48,14 @@ Bu bölümde, Visual Studio projenize bir 3B model eklemeyi açıklar ve kullanm
 
    ![Seçili 3B Sahne ile yeni öğesi ekleme](media/add-new-3d-scene.png)
 
-3. Girin **adı** model dosyasını ve ardından **Ekle**.
+   > [!NOTE]
+   > Görmüyorsanız **grafik** kategorisinde **Yeni Öğe Ekle** iletişim kutusunda, yüklemeniz gerekebilir **görüntü ve 3B model düzenleyicileri** bileşeni. İletişim kutusunu kapatın ve ardından **Araçları** > **araçları ve özellikleri Al** açmak için menü çubuğundan **Visual Studio yükleyicisi**. Seçin **tek tek bileşenler** sekmesine tıklayın ve ardından **görüntü ve 3B model düzenleyicileri** altındaki bileşen **oyunlar ve grafik** kategorisi. Seçin **değiştirme**.
+   >
+   > ![Görüntü ve 3B model düzenleyicileri bileşeni](media/image-3d-model-editors-component.png)
+   >
+   > Varsa **görüntü ve 3B model düzenleyicileri** bileşeni yüklü ve hala görmüyorum **grafik** şablon kategorisi, bu kategoriye yalnızca belirli proje türleri, örneğin, konsol göründüğüne dikkat edin uygulamalar.
 
-> [!NOTE]
-> Görmüyorsanız **grafik** kategorisinde **Yeni Öğe Ekle** iletişim kutusunda, yüklemeniz gerekebilir **görüntü ve 3B model düzenleyicileri** bileşeni. İletişim kutusunu kapatın ve ardından **Araçları** > **araçları ve özellikleri Al** açmak için menü çubuğundan **Visual Studio yükleyicisi**. Seçin **tek tek bileşenler** sekmesine tıklayın ve ardından **görüntü ve 3B model düzenleyicileri** altındaki bileşen **oyunlar ve grafik** kategorisi. Seçin **değiştirme**.
->
-> ![Görüntü ve 3B model düzenleyicileri bileşeni](media/image-3d-model-editors-component.png)
->
-> Varsa **görüntü ve 3B model düzenleyicileri** bileşeni yüklü ve hala görmüyorum **grafik** şablon kategorisi, bu kategoriye yalnızca belirli proje türleri, örneğin, konsol göründüğüne dikkat edin uygulamalar.
+3. Girin **adı** model dosyasını ve ardından **Ekle**.
 
 ### <a name="axis-orientation"></a>Eksen yönlendirme
 
@@ -93,7 +93,7 @@ Bu tabloda öğeleri açıklar **Model Düzenleyicisi modu** araç çubuğu gör
 |**Y eksenini Kilitle**|Nesne düzenlemesini y ekseni ile sınırlar. Yalnızca işleyici pencere öğesinin orta bölümünü kullandığınızda uygulanır.|
 |**X eksenini Kilitle**|Nesne düzenlemesini z ekseni ile sınırlar. Yalnızca işleyici pencere öğesinin orta bölümünü kullandığınızda uygulanır.|
 |**Çerçeve nesnesi**|Seçili nesneyi, görünümün ortasında yer alacak şekilde çerçeveler.|
-|**Görünümü**|Görünüm yönlendirmesini ayarlar. Kullanılabilir yönlendirmeler şunlardır:<br /><br /> **Ön**<br /> Görünümü sahnenin önüne yerleştirir.<br /><br /> **Geri**<br /> Görünümü sahnenin arkasına yerleştirir.<br /><br /> **Sol**<br /> Görünümü sahnenin soluna yerleştirir.<br /><br /> **Sağ**<br /> Görünümü sahnenin sağına yerleştirir.<br /><br /> **Sayfanın Üstü**<br /> Görünümü sahnenin yukarısına yerleştirir.<br /><br /> **alt**<br /> Görünümü sahnenin aşağısına yerleştirir. **Not:** görünüm yönünü değiştirmenin tek yolu budur olduğunda **Ortografik** projeksiyon etkinleştirildiğinde.|
+|**Görünümü**|Görünüm yönlendirmesini ayarlar. Kullanılabilir yönlendirmeler şunlardır:<br /><br /> **Ön**<br /> Görünümü sahnenin önüne yerleştirir.<br /><br /> **Geri**<br /> Görünümü sahnenin arkasına yerleştirir.<br /><br /> **Sol**<br /> Görünümü sahnenin soluna yerleştirir.<br /><br /> **sağ**<br /> Görünümü sahnenin sağına yerleştirir.<br /><br /> **Sayfanın Üstü**<br /> Görünümü sahnenin yukarısına yerleştirir.<br /><br /> **alt**<br /> Görünümü sahnenin aşağısına yerleştirir. **Not:** görünüm yönünü değiştirmenin tek yolu budur olduğunda **Ortografik** projeksiyon etkinleştirildiğinde.|
 |**Projeksiyon**|Sahneyi çizmek için kullanılan projeksiyonun türünü ayarlar. Kullanılabilir projeksiyonlar şunlardır:<br /><br /> **Perspektif**<br /> Perspektif projeksiyonunda, bakış açısından uzakta olan nesneler boyut olarak daha küçük görünür ve en sonunda uzaktaki bir noktaya doğru birleşir.<br /><br /> **Ortografik**<br /> Ortografik projeksiyonda, bakış açısına olan uzaklıklarına bakılmaksızın nesneler aynı boyutta görünür. Bir yakınlaşma görüntüsü olmaz. Zaman **Ortografik** projeksiyon etkinleştirildiğinde kullanamaz **Yörünge** görünümü konumlandırmak için modu.|
 |**Çizim Stili**|Sahnedeki nesnelerin işlenme yöntemini ayarlar. Kullanılabilir stiller şunlardır:<br /><br /> **Tel Çerçeve**<br /> Etkin olduğunda, nesneler tel çerçeve şeklinde işlenir.<br /><br /> **Overdraw**<br /> Etkin olduğunda, nesneler ek karıştırma kullanılarak işlenir. Görünümde, fazla çekme işleminin ne kadar yapıldığını görselleştirmek için bunu kullanabilirsiniz.<br /><br /> **Düz gölgelendirilmiş**<br /> Etkin olduğunda, nesneler temel ve düz gölgeli bir aydınlatma modeli kullanılarak işlenir. Bir nesnenin yüzeylerini daha kolay görmek için bunu kullanabilirsiniz.<br /><br /> Bu seçeneklerden hiçbiri etkin değilse, her nesne kendisine uygulanan malzeme kullanılarak işlenir.|
 |**Gerçek zamanlı işleme modu**|Hiçbir kullanıcı eylemi gerçekleştirilmediğinde bile Visual Studio gerçek zamanlı işleme etkin olduğunda, tasarım yüzeyini yeniden çizer. Bu mod, zamanla değişen gölgelendiriciler ile çalıştığınızda kullanışlıdır.|
@@ -321,7 +321,7 @@ Model Düzenleyicisi, ilk seçilen nesneyi (üst öğe haline gelen) tanımlamak
 |Yüz seçme moduna geçiş yap|**CTRL**+**L**, **Ctrl**+**3**|
 |Nesne seçme moduna geçiş yap|**CTRL**+**L**, **Ctrl**+**4**|
 |Yörünge (kamera) moduna geçiş yap|**CTRL**+**G**, **Ctrl**+**O**|
-|Sahnede sonraki nesneyi seç|**Sekmesi**|
+|Sahnede sonraki nesneyi seç|**sekmesi**|
 |Sahnede önceki nesneyi seç|**Shift**+**sekmesi**|
 |Geçerli araca bağlı olarak seçili nesneyi düzenle.|**Ok** anahtarları|
 |Geçerli işleyiciyi devre dışı bırak|**Q**|

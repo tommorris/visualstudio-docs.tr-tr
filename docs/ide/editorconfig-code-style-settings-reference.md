@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 9a670a432db352b6a99ca68fa5ce2892c686677b
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 04d8cd6f27f90d398d22b90f9c9bd432466fb3cd
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008479"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42624004"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -57,7 +57,8 @@ Olası önem derecesi değerlerini ve bunların etkileri aşağıdaki tabloda li
 
 Önem Derecesi | Efekt
 :------- | ------
-`none` veya `silent` | Bu kural ihlal edildiğinde herhangi bir şey kullanıcıya göstermez. Kod oluşturma özellikleri ancak bu stilde, kod oluşturur. İle kurallar `none` önem derecesi hiçbir zaman görünür *hızlı Eylemler ve yeniden düzenlemeler* menüsü. Çoğu durumda, bu "yoksayıldı" veya "devre dışı" olarak kabul edilir.
+`none` | Bu kural ihlal edildiğinde herhangi bir şey kullanıcıya göstermez. Kod oluşturma özellikleri kodu bu stilde, ancak oluşturma. İle kurallar `none` önem derecesi hiçbir zaman görünür **hızlı Eylemler ve yeniden düzenlemeler** menüsü. Çoğu durumda, bu "yoksayıldı" veya "devre dışı" olarak kabul edilir.
+`silent` (Ayrıca `refactoring` Visual Studio 2017 sürüm 15,8) | Bu kural ihlal edildiğinde herhangi bir şey kullanıcıya göstermez. Kod oluşturma özellikleri kodu bu stilde, ancak oluşturma. İle kurallar `silent` önem derecesi temizleme katılmak yanı sıra görünür **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
 `suggestion` | Bu stil kuralı ihlal edildiğinde kullanıcıya öneri olarak gösterir. Öneriler, ilk iki karakter altındaki gri üç nokta olarak görünür.
 `warning` | Bu stil kuralı ihlal edildiğinde bir derleyici uyarısı gösterir.
 `error` | Bu stil kuralı ihlal edildiğinde bir derleyici hatası gösterir.
@@ -78,6 +79,11 @@ Aşağıdaki listede verilen dil kuralı kuralları gösterir:
         - CSharp\_tercih edilen\_modifier_order
         - görsel\_temel\_tercih edilen\_modifier_order
         - DotNet\_stili\_salt okunur\_alan
+    - [Parantez tercihleri](#parentheses)
+        - DotNet\_stili\_parantez\_içinde\_aritmetik\_ikili\_işleçleri
+        - DotNet\_stili\_parantez\_içinde\_diğer\_ikili\_işleçleri
+        - DotNet\_stili\_parantez\_içinde\_diğer\_işleçleri
+        - DotNet\_stili\_parantez\_içinde\_ilişkisel\_ikili\_işleçleri
     - [İfade düzeyi tercihleri](#expression_level)
         - DotNet\_stili\_object_initializer
         - DotNet\_stili\_collection_initializer
@@ -310,7 +316,7 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama 
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_ accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:none | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, dahili, statik ve extern, yeni, virtual, abstract, korumalı, geçersiz kılma, salt okunur, güvenli, geçici, zaman uyumsuz: yok | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, genel, arkadaş NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeler, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölgeler, salt okunur, WriteOnly, boyutu, Const, WithEvents, daraltma, özel, genişletme Zaman uyumsuz: yok | 15.5 |
 | dotnet_style_readonly_field | IDE0044 | C# ve Visual Basic | TRUE: öneri | 15.7 |
@@ -410,6 +416,122 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
+#### <a name="parentheses"></a>Parantez tercihleri
+
+Bu bölümdeki Stil kurallarının parantez tercihleri, parantez aritmetik, ilişkisel, için ve diğer ikili işleçler kullanımı dahil olmak üzere uğraşmak.
+
+Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama dilleri, varsayılan değerleri ve Visual Studio'nun desteklenen ilk sürüm gösterilmektedir:
+
+| Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity: yok | 15,8 |
+| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity: yok | 15,8 |
+| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity: yok | 15,8 |
+| dotnet_style_parentheses_in_other_operators | IDE0047 | C# ve Visual Basic | never_if_unnecessary: yok | 15,8 |
+
+**DotNet\_stili\_parantez\_içinde\_aritmetik\_binary_operators**
+
+- Bu kural ayarlandığında **always_for_clarity**, aritmetik işleç açıklamak için parantezler tercih (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`) öncelik.
+- Bu kural ayarlandığında **never_if_unnecessary**, aritmetik, parantez almamayı tercih işleci (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`) öncelik belirgin.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+var v = a + (b * c);
+
+// dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
+var v = a + b * c;
+```
+
+```vb
+' dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+Dim v = a + (b * c)
+
+' dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
+Dim v = a + b * c
+```
+
+**DotNet\_stili\_parantez\_içinde\_ilişkisel\_binary_operators**
+
+- Bu kural ayarlandığında **always_for_clarity**, ilişkisel işleç açıklamak için parantezler tercih (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) öncelik.
+- Bu kural ayarlandığında **never_if_unnecessary**, ilişkisel olduğunda parantezler almamayı tercih işleci (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) öncelik belirgin.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+var v = (a < b) == (c > d);
+
+// dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary
+var v = a < b == c > d;
+```
+
+```vb
+' dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+Dim v = (a < b) = (c > d)
+
+' dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary
+Dim v = a < b = c > d
+```
+
+**DotNet\_stili\_parantez\_içinde\_diğer\_binary_operators**
+
+- Bu kural ayarlandığında **always_for_clarity**, tercih ettiğiniz diğer ikili işleç açıklamak için parantezler (`&&`, `||`, `??`) öncelik.
+- Bu kural ayarlandığında **never_if_unnecessary**, parantez almamayı tercih, diğer ikili işleç (`&&`, `||`, `??`) öncelik belirgin.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+var v = a || (b && c);
+
+// dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary
+var v = a || b && c;
+```
+
+```vb
+' dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+Dim v = a OrElse (b AndAlso c)
+
+' dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary
+Dim v = a OrElse b AndAlso c
+```
+
+**DotNet\_stili\_parantez\_içinde\_other_operators**
+
+- Bu kural ayarlandığında **always_for_clarity**, İşleç önceliği netleştirmek için parantez tercih edin.
+- Bu kural ayarlandığında **never_if_unnecessary**, İşleç önceliği belirgin olduğunda parantezler almamayı tercih ediyorsunuz.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_parentheses_in_other_operators = always_for_clarity
+var v = (a.b).Length;
+
+// dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+var v = a.b.Length;
+```
+
+```vb
+' dotnet_style_parentheses_in_other_operators = always_for_clarity
+Dim v = (a.b).Length
+
+' dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+Dim v = a.b.Length
+```
+
+Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:none
+```
+
 #### <a name="expression_level"></a>İfade düzeyi tercihleri
 
 Stil nesne başlatıcıları, koleksiyon başlatıcıları, açık veya çıkarsanan demet adları, kullanımı dahil olmak üzere bu bölümü endişe ifade düzeyi tercihlerinde kuralları ve anonim türler sonuçlandı.
@@ -425,6 +547,8 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama 
 | dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# ve Visual Basic | TRUE: öneri | 15.6 |
 | dotnet_style_prefer_auto_properties | IDE0032 | C# ve Visual Basic | TRUE: yok | 15.7 |
 | dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# ve Visual Basic | TRUE: öneri | 15.7 |
+| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# ve Visual Basic | TRUE: yok | 15,8 |
+| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# ve Visual Basic | TRUE: yok | 15,8 |
 
 **DotNet\_stili\_object_initializer**
 
@@ -621,6 +745,78 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
+
+
+**DotNet\_stili\_tercih\_koşullu\_ifade\_over_assignment**
+
+- Bu kural ayarlandığında **true**, Üçlü koşullu atamaları bir if-else deyimi tercih.
+- Bu kural ayarlandığında **false**, Üçlü koşullu bir if-else deyimi atamaları tercih.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_prefer_conditional_expression_over_assignment = true
+string s = expr ? "hello" : "world";
+
+// dotnet_style_prefer_conditional_expression_over_assignment = false
+string s;
+if (expr)
+{
+    s = "hello";
+}
+else
+{
+    s = "world";
+}
+```
+
+```vb
+' dotnet_style_prefer_conditional_expression_over_assignment = true
+Dim s As String = If(expr, "hello", "world")
+
+' dotnet_style_prefer_conditional_expression_over_assignment = false
+Dim s As String
+If expr Then
+    s = "hello"
+Else
+    s = "world"
+End If
+```
+
+**DotNet\_stili\_tercih\_koşullu\_ifade\_over_return**
+
+- Bu kural ayarlandığında **true**, Üçlü koşullu bir if-else deyimi kullanmak için dönüş deyimleri tercih edin.
+- Bu kural ayarlandığında **false**, Üçlü koşullu bir if-else deyimi kullanılacak dönüş deyimleri tercih et.
+
+Kod örnekleri:
+
+```csharp
+// dotnet_style_prefer_conditional_expression_over_return = true
+return expr ? "hello" : "world"
+
+// dotnet_style_prefer_conditional_expression_over_return = false
+if (expr)
+{
+    return "hello";
+}
+else
+{
+    return "world";
+}
+```
+
+```vb
+' dotnet_style_prefer_conditional_expression_over_return = true
+Return If(expr, "hello", "world")
+
+' dotnet_style_prefer_conditional_expression_over_return = false
+If expr Then
+    Return "hello"
+Else
+    Return "world"
+End If
+```
+
 Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
 ```EditorConfig
@@ -632,6 +828,8 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
+dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 ```
 
 #### <a name="null_checking"></a>Null denetimi tercihleri
@@ -1967,12 +2165,14 @@ csharp_preserve_single_line_blocks = true
 ```
 
 ## <a name="example-editorconfig-file"></a>EditorConfig dosyası örneği
+
 Başlamanıza yardımcı olmak için bir örnek aşağıdadır *.editorconfig* dosyasıyla varsayılan seçenekleri:
 
 ```EditorConfig
 ###############################
 # Core EditorConfig Options   #
 ###############################
+
 root = true
 
 # All files
@@ -1988,6 +2188,7 @@ charset = utf-8-bom
 ###############################
 # .NET Coding Conventions     #
 ###############################
+
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
@@ -2002,6 +2203,12 @@ dotnet_style_qualification_for_event = false:none
 dotnet_style_predefined_type_for_locals_parameters_members = true:none
 dotnet_style_predefined_type_for_member_access = true:none
 
+# Parentheses preferences
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+
 # Modifier preferences
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
 dotnet_style_readonly_field = true:suggestion
@@ -2012,10 +2219,12 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
-dotnet_style_prefer_is_null_check_over_reference_equality_method = true:none
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
-dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
+dotnet_prefer_inferred_tuple_names = true:suggestion
+dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
 
 ###############################
 # Naming Conventions          #
@@ -2035,6 +2244,7 @@ dotnet_naming_symbols.constant_fields.required_modifiers          = const
 ###############################
 # C# Coding Conventions       #
 ###############################
+
 [*.cs]
 # var preferences
 csharp_style_var_for_built_in_types = true:none
@@ -2070,6 +2280,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 ###############################
 # C# Formatting Rules         #
 ###############################
+
 # New line preferences
 csharp_new_line_before_open_brace = all
 csharp_new_line_before_else = true
@@ -2104,12 +2315,11 @@ csharp_preserve_single_line_blocks = true
 ###############################
 # VB Coding Conventions       #
 ###############################
+
 [*.vb]
 # Modifier preferences
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
-
 ```
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

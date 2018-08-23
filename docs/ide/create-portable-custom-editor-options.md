@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469060"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624165"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig ile taşınabilir, özel düzenleyici ayarları oluşturma
 
@@ -23,7 +23,7 @@ Visual Studio 2017'de eklediğiniz bir [EditorConfig](http://editorconfig.org/) 
 EditorConfig ayarlar, çok sayıda kod düzenleyici ve IDE'ler, Visual Studio da dahil olmak üzere tarafından desteklenir. Bu kodunuzla dolaşır ve Visual Studio dışında bile kodlama stillerini zorunlu kılabilir taşınabilir bir bileşendir.
 
 > [!NOTE]
-> Visual Studio projenize bir EditorConfig dosya eklediğinizde, belgeyi Biçimlendir sürece var olan kod biçimlendirme değişmez (**Düzenle** > **Gelişmiş**  >  **Belgeyi Biçimlendir** veya **Ctrl**+**K**, **Ctrl**+**D**). Ancak, yeni bir kod satırlarını EditorConfig ayarlarına göre biçimlendirilir.
+> Visual Studio projenize bir EditorConfig dosya eklediğinizde, belgeyi Biçimlendir sürece var olan kod biçimlendirme değişmez (**Düzenle** > **Gelişmiş**  >  **Belgeyi Biçimlendir** veya **Ctrl**+**K**, **Ctrl**+**D**varsayılan profilde). Ancak, yeni bir kod satırlarını EditorConfig ayarlarına göre biçimlendirilir. İstediğiniz hangi EditorConfig ayarlar tanımlayabilirsiniz **belgeyi Biçimlendir** uygulamak için [ **biçimlendirme** seçenekleri sayfasında](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Kodlama tutarlılık
 

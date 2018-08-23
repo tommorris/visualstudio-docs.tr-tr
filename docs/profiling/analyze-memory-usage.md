@@ -9,31 +9,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3cee40dd1dab8c3a9d9b57b84e6e299651bc5fc8
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624224"
 ---
-# <a name="analyze-memory-usage"></a>Bellek kullanımını çözümleme
-Hata ayıklayıcı tümleşik kullanmak **bellek kullanımı** bellek sızıntıları ve verimli bellek kullanımı bulmak için tanı aracı. Uygulamanız bir veya daha fazla bellek kullanımı araç sağlar *anlık görüntüleri* , yönetilen ve yerel bellek yığını. .NET, yerel ya da karma mod (.NET ve yerel) uygulamaları anlık görüntüleri toplayabilirsiniz.  
+# <a name="analyze-memory-usage"></a>Bellek kullanımını analiz etme
+Hata ayıklayıcıyla tümleştirilmiş kullanın **bellek kullanımı** Tanılama aracını bellek sızıntılarını ve verimsiz bellek kullanımını bulun. Bir veya daha fazla atmanız bellek kullanımı aracı sağlar *anlık görüntüleri* yönetilen ve yerel bellek yığın. .NET, yerel veya karma mod (.NET ve yerel) uygulamaları, anlık toplayabilirsiniz.  
   
 -   Nesne türlerinin bellek kullanımı üzerindeki göreli etkisini anlamak ve uygulamanızda belleği verimsiz kullanan kodu bulmak için tek bir anlık görüntüyü anailz edebilirsiniz.  
   
--   Zaman içinde artırmak bellek kullanımını neden (fark) iki anlık görüntüleri uygulama kodunuzda alanlar bulmak için de karşılaştırabilirsiniz.  
+-   Zaman içinde bellek kullanımı neden (fark) iki anlık görüntüsünü uygulama kodunuzda alanlar bulmak için de karşılaştırabilirsiniz.  
 
-Ayrıntılı yönergeler için bkz: [bellek kullanımını çözümleme](../profiling/memory-usage.md) Öğreticisi. Hata ayıklayıcı eklemeden bellek kullanımı çözümlemek için bkz: [bellek kullanımını hata ayıklayıcı olmadan](memory-usage-without-debugging2.md).
+Ayrıntılı yönergeler için bkz. [bellek kullanımını analiz etme](../profiling/memory-usage.md) öğretici. Haya ayıklayıcı eklemeden bellek kullanımını analiz etme hakkında bilgi için bkz: [hata ayıklayıcı olmadan bellek kullanımı](memory-usage-without-debugging2.md).
+
+Windows 7 ve daha sonra hata ayıklayıcı olmadan profil oluşturma araçları kullanabilirsiniz. Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çalıştırmak için gereklidir (**tanılama araçları** pencere).
   
 ## <a name="blogs-and-videos"></a>Bloglar ve videolar  
 
 |         |         |
 |---------|---------|
-|  ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin")  |    [Bir video izlemek](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) bellek kullanımı ve Visual Studio 2017 CPU kullanımı analiz etme gösterir tanılama araçlarını kullanma. |
+|  ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin")  |    [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) bellek kullanımı ve Visual Studio 2017'de CPU kullanımını analiz etme gösteren tanılama araçlarını kullanma. |
 
  [Hata ayıklama sırasında CPU ve bellek çözümleme](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
- [Visual C++ blog: Visual C++ 2015'te bellek profili oluşturma](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
+ [Visual C++ blogu: Visual C++ 2015'te bellek profili oluşturma](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)
+ [Visual Studio profil oluşturma](../profiling/index.md)  
+ [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

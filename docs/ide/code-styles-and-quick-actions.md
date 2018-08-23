@@ -12,30 +12,41 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd046fa8a01cde7abdc33484da3ff8227eda966
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063690"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624161"
 ---
 # <a name="code-style-preferences"></a>Kod stili tercihleri
 
-Kod stili Tercihler ayarlanabilir, C# ve Visual Basic projeleri için açarak **seçenekleri** iletişim kutusundan **Araçları** menüsü. Seçin **metin düzenleyici** > **C#** veya **temel** > **kod stili**  >   **Genel**. Bu pencerede seçenekleri yerel makineye geçerlidir.
+Kod stili tercihleri ayarlanabilir C# ve Visual Basic projeleri için açarak **seçenekleri** iletişim kutusundan **Araçları** menüsü. İçinde **seçenekleri** iletişim kutusunda **metin düzenleyici** > [**C#** veya **temel**] > **kod stili**  >  **Genel**. Bu pencerede seçenekleri, yalnızca yerel makine için geçerlidir.
 
-Listedeki her bir öğe seçildiğinde tercih önizlemesini gösterir:
+Listedeki her bir öğe seçildiğinde tercih önizlemesini sunar:
 
 ![Kod stili seçenekleri](media/code-style-quick-actions-dialog.png)
 
-## <a name="preference-and-severity"></a>Tercih ve önem derecesi
+## <a name="preference-and-severity"></a>Tercihi ve önem derecesi
 
-Her öğe için ayarladığınız **tercih** ve **önem** değerlerini aşağı açılan listeler her satırda kullanarak. Önem derecesi ayarlanabilir **hiçbiri**, **öneri**, **uyarı**, veya **hata**. Etkinleştirmek istiyorsanız, [hızlı Eylemler](../ide/quick-actions.md) emin olmak için bir kod stili, **önem** ayar için bir şeyler dışında **hiçbiri**. Hızlı Eylemler ampul simgesini ![küçük ampul simge](media/vs2015_lightbulbsmall.png) apspear tercih edilmeyen bir stili kullanıldığında ve otomatik olarak tercih edilen stili için kodu yeniden yazmanız için bir seçenek hızlı Eylemler listesinde seçebilirsiniz.
+Her öğe için ayarladığınız **tercih** ve **önem derecesi** açılan listeler, her satırda kullanarak değerleri. Önem derecesi ayarlanabilir **hiçbiri**, **öneri**, **uyarı**, veya **hata**. Etkinleştirmek istiyorsanız [hızlı Eylemler](../ide/quick-actions.md) emin olmak için bir kod stili **önem derecesi** ayarı için bir şey dışında **hiçbiri**. **Hızlı Eylemler** ampul ![küçük ampul](media/vs2015_lightbulbsmall.png) tercih edilmeyen bir stili kullanılır ve bir seçenek seçebileceğiniz görüntülendiğinde **hızlı Eylemler** için listeleyin otomatik olarak tercih edilen stili kodu yeniden yazın.
 
 ## <a name="editorconfig-files"></a>EditorConfig dosyaları
 
-.NET ile de yönetilebilir için stil ayarlarını kod bir [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) dosya. EditorConfig dosyasındaki ayarları önceliklidir seçili Seçenekler **seçenekleri** iletişim kutusu. Bir EditorConfig dosyası zorlamak ve tüm bağlantıların ya da proje kodlama stili yapılandırmak için kullanabilirsiniz.
+.NET ile de yönetilebilir için kod stili ayarları bir [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) dosya. EditorConfig dosyasındaki ayarları önceliklidir seçili Seçenekler **seçenekleri** iletişim kutusu. EditorConfig dosya zorlamak ve tüm depoyu veya proje için kodlama stili yapılandırmak için kullanabilirsiniz.
+
+## <a name="format-document-command"></a>Biçim belgesi komutu
+
+Visual Studio 2017 sürüm 15,8 ve daha sonra yapılandırdığınız **belgeyi Biçimlendir** komut (**Düzenle** > **Gelişmiş**  >  **Belgeyi Biçimlendir**) ek kod temizleme bir dosya üzerinde gerçekleştirilecek gibi kaldırın ve kullanımları sıralama veya kod stili tercihleri uygulayın. İstediğiniz hangi ayarların tanımlayabilirsiniz **belgeyi Biçimlendir** uygulamak için [biçimlendirme seçenekleri sayfasında](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+Kod temizleme uyar yapılandırılan ayarları bir *.editorconfig* dosya veya bu kuralı veya bu kümesindeki dosya eksik **Araçları** > **seçenekleri**  >  **Metin düzenleyici** > **C#** > [**kod stili** veya **biçimlendirme**].
+
+Tetiklenen ilk kez **belgeyi Biçimlendir** komutu Visual Studio 2017'de bir sarı bir bilgi çubuğu kod temizleme ayarlarınızı yapılandırmak ister.
+
+> [!TIP]
+> Yapılandırılan kuralları **hiçbiri** içinde bir *.editorconfig* dosya kodu temizleme katılmak yoktur, ancak ayrı ayrı aracılığıyla uygulanabilir **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Hızlı Eylemler](../ide/quick-actions.md)
-- [.NET EditorConfig kuralı ayarlarını kodlama](../ide/editorconfig-code-style-settings-reference.md)
+- [Kodlama kuralı ayarlarına EditorConfig için .NET](../ide/editorconfig-code-style-settings-reference.md)

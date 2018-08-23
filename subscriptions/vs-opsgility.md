@@ -9,12 +9,12 @@ description: Seçili Visual Studio aboneliğine dahildir avantajı eğitim Opsgi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380316"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624146"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Opsgility avantaj olarak Visual Studio abonelikleri
 
@@ -26,17 +26,17 @@ Seçili Visual Studio Abonelikleri, bir yıl isteğe bağlı eğitim erişim ve 
 2.  Opsgility kutucuğu Araçlar bölümünde avantajlar sayfasında bulun ve tıklatın **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.
 
 3.  Opsgility teklifinizi kullanmak için tıklayın **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.   Kupon kodu başarılı bir şekilde alınmış bir bildirim alacaksınız.  Tıklayın **etkinleştirme** devam etmek için.
-
-    ![Opsgility avantajı kutucuğu](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility avantajı kutucuğu](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  İçin yönlendirilirsiniz [Visual Studio Enterprise için çevrimiçi eğitim Opsgility](https://www.opsgility.com/vse) giriş sayfası.  (, Bir destek uzmanı ile bir sohbet oturumu başlatmak için bir fırsat sunulabilir.  Bir sohbet başlatmak istemiyorsanız, bu pencerenin en aza indirebilirsiniz.)  ' A tıklayın ve istenen kişi bilgileri doldurun **kaydetme**.
-
-    ![Opsgility avantajı giriş sayfası](_img\vs-opsgility\vs-opsgility-registration.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility avantajı giriş sayfası](_img\vs-opsgility\vs-opsgility-registration.png)
 
 5.  Tüm İşte bu kadar kolay!  Öğrenmeye başlayın hazırsınız demektir.  Başlamanıza yardımcı olmak için sayfanın sol tarafında sağlanan önerilen öğrenme parçaları bir listesi bulunur.  Keyfini çıkarın!
-
-    ![Opsgility avantajı giriş sayfası](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility avantajı giriş sayfası](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>Uygunluk
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |

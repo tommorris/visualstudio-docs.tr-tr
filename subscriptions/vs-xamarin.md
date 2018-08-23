@@ -1,91 +1,91 @@
 ---
-title: Visual Studio Aboneliklerde Xamarin University avantajı | Microsoft Docs
+title: Xamarin University avantaj olarak Visual Studio abonelikleri | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 05/16/2018
 ms.topic: Get-Started-Article
-description: Seçili Visual Studio abonelikle dahil Xamarin University eğitim aboneliği hakkında bilgi edinin.
+description: Seçili Visual Studio aboneliğine dahildir Xamarin University eğitimi aboneliği hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281150"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624346"
 ---
-# <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde Xamarin University eğitim avantajı
+# <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University eğitimi avantajı olarak Visual Studio abonelikleri
 
-Yerel iOS ve C# Android uygulamalarını mobil geliştirme uzmanlar tarafından Gelişmiş eğitim ile oluşturun.
+Yerel iOS ve Android uygulamaları C# ile Mobil Geliştirme uzmanları tarafından Gelişmiş alıştırma oluşturun.
 
-Visual Studio Enterprise aboneleri tam Xamarin University katalog sınırsız erişim altı ay alırsınız.  Visual Studio Professional aboneler erişim, üç ay alırsınız.
+Visual Studio Enterprise aboneleri, altı aylık sınırsız erişim tam Xamarin University kataloğuna alırsınız.  Visual Studio Professional aboneleri, üç ay boyunca erişim alırsınız.
 
-Visual Studio geliştirme Essentials üyeleri erişimi seçili ücretsiz kurslara, Konuk dersler, iki dinamik sınıf, Şimşek Ders kayıtları ve daha fazlasını içeren ücretsiz bir hesap oluşturmak uygundur.
+Visual Studio Dev Essentials üyeleri erişim seçili ücretsiz kurslar, Konuk eğitmen, iki Canlı sınıfları, ışık Ders kayıtları ve daha fazlasını içeren ücretsiz bir hesap oluşturmak uygundur.
 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 1.  Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Xamarin University eğitim döşeme Professional geliştirme bölümünde bulun ve tıklayın **etkinleştirme** avantajı döşemenin sol alt bağlantıda.
+2.  Xamarin University eğitimi kutucuk profesyonel geliştirme bölümünü bulun ve tıklayın **etkinleştirme** bağlantı avantajı kutucuk pencerenin sol konumunda.
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University eğitimi avantajı kutucuğu](_img/vs-xamarin/vs-xamarin-tile.png)
 
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
-
-3.  "Xamarin University mobil eğitim için Microsoft Visual Studio" başlıklı bir Xamarin University web sayfasına yönlendirilir.  Tıklatın **Aboneliğimi şimdi etkinleştirmek**.
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
-
-    > [!NOTE]
-    > Ekran çözünürlüğü ve yakınlaştırma düzeyinizi bağlı olarak, görmek için kaydırmanız gerekebilir **şimdi My aboneliği etkinleştir** düğmesi.
+3.  "Xamarin Üniversitesi mobil eğitimi için Microsoft Visual Studio" başlıklı bir Xamarin University web sayfasına yönlendirilirsiniz.  Tıklayın **artık Aboneliğimi etkinleştir**.
+    > [!div class="mx-imgBorder"]
+    > ![Aboneliğimi Şimdi etkinleştir](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
-    > Avantajı alınan kişi olarak imzalanmış bir hata alırsanız, şu adımları izleyin:
+    > Ekran çözünürlüğü ve yakınlaştırma düzeyinize bağlı olarak, görmek için aşağı kaydırmanız gerekebilir **artık My abonelik etkinleştirme** düğmesi.
+
+    > [!NOTE]
+    > Avantajı almış bir kişi olarak imzalanmış bir hata alırsanız, şu adımları izleyin:
     > 1. Xamarin University ile tarayıcı penceresini kapatın.
-    > 2. My.visualstudio.com Portalı'nda tıklatın **oturumu**.
+    > 2. My.visualstudio.com portalında **oturumunuzu**.
     > 3. Tüm tarayıcı pencerelerini kapatın.
-    > 4. Yeni bir tarayıcı açın ve bağlanmak [ https://my.visualstudio.com ](https://my.visualstudio.com).
-    > 5. Xamarin University eğitim avantajı yeniden etkinleştirin.
+    > 4. Yeni bir tarayıcı açın ve bağlanma [ https://my.visualstudio.com ](https://my.visualstudio.com).
+    > 5. Xamarin University eğitimi avantajı yeniden etkinleştirin.
 
-4.  Bir oturum açma sayfası, Xamarin en son Microsoft kimlik doğrulaması için taşınabilir bir bildirim görürsünüz.  Tıklatın **Microsoft ile bağlantı**.
+4.  Bir oturum açma sayfası, Xamarin, en son Microsoft kimlik doğrulamasını taşınan bir bildirim görürsünüz.  Tıklayın **ile Microsoft Connect**.
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft ile bağlanma](_img/vs-xamarin/vs-xamarin-connect.png)
 
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
-
-5. Ardından, oturum açma ve e-posta adresiniz ve temel profil erişim Xamarin University sağlamanız istenir.  Tıklatın **Evet** devam etmek için. İsterseniz, uygulama izinleri daha sonra değiştirebilirsiniz.
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+5. Ardından, Xamarin University, oturum açmak ve e-posta adresi ve temel profil erişmek izni istenir.  Tıklayın **Evet** devam etmek için. İsterseniz daha sonra uygulama izinleri değiştirebilirsiniz.
+    > [!div class="mx-imgBorder"]
+    > ![Erişimi onayla](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
-    > Oturum açma tıklatarak Xamarin University avantajını kullanmak için gerekli olduğundan **Hayır** önceki sayfaya döner ve eğitim devam etmek mümkün olmaz.
+    > Oturum açma tıklayarak Xamarin University avantajını kullanmak gerekli olduğundan **Hayır** önceki sayfasına döndürür ve eğitim için devam etmek mümkün olmayacaktır.
 
 
-6. Yeni hesabınızda bir Hoş Geldiniz iletisi görürsünüz.  Tıklatın **öğrenme Başlat**.
+6. Yeni hesabınıza Hoş Geldiniz iletisi görürsünüz.  Tıklayın **öğrenmeye başlayın**.
+    > [!div class="mx-imgBorder"]
+    > ![Hoş Geldiniz iletisi](_img/vs-xamarin/vs-xamarin-confirm.png)
 
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
-
-7. İşte bu kadar!  Xamarin University portal görürsünüz ve öğrenme başlamaya hazırsınız.
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+7. İşte bu kadar!  Xamarin University portalı görürsünüz ve öğrenme başlamaya hazırsınız.
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University portalı](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>Uygunluk
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet |
-| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | 3 ay       |  Evet |
-| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok        |
+| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet |
+| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | 3 ay       |  Evet |
+| Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok        |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                             |  Yok        |
-| Visual Studio Dev Essentials | Yok  | Ücretsiz planı                                             |  Evet        |
+| Visual Studio Dev Essentials | Yok  | Ücretsiz plan                                             |  Evet        |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satışı (NFR), Visual Studio Endüstri ortağı (VSIP) için değil.  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD) düşünün.   Dışlar: MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: Not for Resale (NFR), Visual Studio Endüstri ortağı (VSIP).  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD) düşünün.   Dışlar: MCT yazılım ve Hizmetleri.*
 
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
+Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
-### <a name="q--what-happens-when-my-free-subscription-expires"></a>S: ücretsiz Aboneliğimi süresi dolduğunda ne olur?
-Y: bilgisayarınızı Xamarin University hesabı ve ilerleme değişmeden kalır ancak aboneliğinizi ücretsiz, sınırlı bizim malzemeleri erişime bir hesaba geçer. Bir aboneliğin tüm avantajları tutmaya devam etmek istiyorsanız, şunları yapabilirsiniz [aylık bir abonelik satın](https://aka.ms/buy-xamarin-university).
+### <a name="q--what-happens-when-my-free-subscription-expires"></a>Hatırlayamazsam ücretsiz Aboneliğim sona erdiğinde ne olur?
+Y: Your Xamarin University hesabı ve ilerleme değişmeden kalır ancak aboneliğinizi ücretsiz malzemelerimizi erişimi sınırlı sahip bir hesaba geçiş yapacaktır. Bir aboneliğin tüm avantajlardan yararlanmaya devam etmek devam etmek istiyorsanız, [aylık aboneliği satın](https://aka.ms/buy-xamarin-university).
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Xamarin University ile ilgili Yardım gerekiyor?  Destek kaynakları çeşitli bulabilirsiniz [ https://university.xamarin.com/support ](https://university.xamarin.com/support).
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Xamarin University yardıma mı ihtiyacınız var?  Destek kaynakları çeşitli bulabilirsiniz [ https://university.xamarin.com/support ](https://university.xamarin.com/support).
+-  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

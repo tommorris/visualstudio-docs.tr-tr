@@ -1,103 +1,103 @@
 ---
-title: Mac için Visual Studio yükleme
-description: Mac ve platformlar arası geliştirme için gerekli ek bileşenleri için Visual Studio yükleme konusunda yönergeler.
-author: asb3993
-ms.author: amburns
+title: Mac için Visual Studio'yu yükleyin
+description: Mac ve platformlar arası geliştirme için gereken ek bileşenleri için Visual Studio yükleme hakkında yönergeler.
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 6c047be1c797c0304a71ae2c55f256bdc5325aaf
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280500"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624266"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Kurulum ve Mac için Visual Studio yükleme
 
 ## <a name="setup"></a>Kurulum
 
-Başlangıç yerel geliştirmek için Visual Studio için Mac var. yüklediğinizde platformlar arası uygulamaları yüklemek ve hazırlık ayarlamak şunları bulunur.
+Başlangıç yerel geliştirme için Visual Studio Mac için orada karşıdan yüklerken platformlar arası birkaç şey yükleyin ve hazırlık ayarlanan uygulamalardır.
 
-Visual Studio iOS ile çalışmak için şu gerekir:
+Visual Studio'da iOS ile çalışmak için şu bilgilere ihtiyacınız vardır:
 
-* bir Mac macOS Sierra 10,12 veya üzeri
-* Xcode 8.3 veya üstü. En yeni kararlı sürüm genellikle önerilir.
-* Bir Apple kimliği Bir Apple kimliği zaten yoksa, yeni bir tane oluşturabilirsiniz https://appleid.apple.com. Yükleme ve Xcode imzalamak için bir Apple kimliği sağlamak gereklidir.
+* bir Mac ile macOS Sierra 10.12 veya üzeri
+* Xcode 8.3 veya üzeri. En son kararlı sürüme genellikle önerilir.
+* Bir Apple kimliği Bir Apple kimliği yoksa, yeni bir hesap oluşturabilirsiniz https://appleid.apple.com. Yükleme ve Xcode ile imzalamak için bir Apple Kimliği gereklidir.
 
 ## <a name="install"></a>Yükleme
 
-1. Mac için Visual Studio indirme [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
+1. Mac için Visual Studio'yu indirin [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
-2. Yükleyici paketi İndirildikten sonra tıklatın **VisualStudioInstaller.dmg** yükleyici bağlamanız ve ardından çalıştırın logoyu tıklatarak tarafından aşağıdaki resimde gösterildiği gibi dosya:
+2. Yükleyici paketini indirdikten sonra tıklayın **VisualStudioInstaller.dmg** yükleyici bağlamanız ve ardından çalıştırın logoyu tıklatarak tarafından aşağıdaki görüntüde gösterildiği gibi dosya:
 
   ![Yükleyici iletişim](media/installer-image1.png)
 
-3. Aşağıdaki görüntüye benzer bir uyarı iletişim kutusuyla istenebilir. Bu durumda, tıklatın **açık**:
+3. Uyarı iletişim kutusu aşağıdaki görüntüye benzer istenebilir. Bu durumda, tıklayın **açık**:
 
   ![Uyarı iletişim kutusu](media/installer-image2.png)
 
-4. Yükleyici hangi bileşenlerin yüklenmesi veya güncelleştirilmesi gereken doğrulamak için sisteminizi inceler:
+4. Yükleyici hangi bileşenlerin yüklenmesi veya güncelleştirilmesi gereken doğrulamak için sisteminizi denetler:
 
-  ![Sisteminizin değerlendirme](media/installer-image3.png)
+  ![Sisteminizi değerlendiriliyor](media/installer-image3.png)
 
-5. Ardından gizlilik ve lisans koşullarını kabul isteyen bir uyarı iletişim kutusu ile sunulur. Tuşuna **devam** düğmesi koşulları kabul etmek için:
+5. Ardından gizlilik ve lisans koşullarını kabul etmek isteyen uyarı iletişim kutusu ile sunulur. Tuşuna **devam** düğmesini koşullarını kabul etmiş olursunuz:
 
   ![Lisans iletişim](media/installer-image4.png)
 
-6. Yükleyici, eksik ve, karşıdan yüklenip gerek gerekli bileşenleri listesini gösterir. Burada indirmek istediğiniz ürünleri seçin:
+6. Yükleyici, eksik olan ve indirilmesi ve yüklenmesi gereken gerekli bileşenlerin listesini gösterir. Burada indirmek istediğiniz ürünleri seçin:
 
   ![Öğeleri seçin](media/installer-image5.png)
 
-  Tüm platformlar yüklemek istiyor musunuz yüklemek için hangi platformlar karar vermenize yardımcı olması için aşağıdaki kılavuzu kullanın:
+  Tüm platformlara yüklemek istemiyorsanız, yüklemek için hangi platformların karar vermenize yardımcı olması için aşağıdaki kılavuzu kullanın:
 
   * **Xamarin kullanarak uygulamaları**:
-      - Xamarin.Forms – Select **Android** ve **iOS** platformlar.
-      - iOS yalnızca – seçin **iOS** platform (yüklemeniz gerekecek Not [ **Xcode**](https://developer.apple.com/xcode/)).
-      - Android yalnızca – seçin **Android** platform (ilgili bağımlılıkları da seçmelisiniz unutmayın).
-      - Mac yalnızca – seçin **macOS** platform (yüklemeniz gerekecek Not [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Xamarin.Forms – seçin **Android** ve **iOS** platformlar.
+      - iOS yalnızca – seçin **iOS** Platformu (yüklemeniz gerekecek Not [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Android yalnızca – seçin **Android** Platformu (ilgili bağımlılıkları da seçmeniz gerekir. Not).
+      - Mac yalnızca – seçin **macOS** Platformu (yüklemeniz gerekecek Not [ **Xcode**](https://developer.apple.com/xcode/)).
       - Tam olarak platformlar arası Xamarin uygulamaları – seçin **Android**, **iOS**, ve **macOS** platformlar.
   * **.NET core uygulamaları** – Select **.NET Core** platform.
   * **ASP.NET Core Web uygulamaları** – Select **.NET Core** platform.
-  * **Platformlar arası Unity oyununuzu geliştirme** – hiçbir ek platformlar Mac için Visual Studio yüklenmesi gerekmez Başvurmak [Unity kurulum kılavuzunu](setup-vsmac-tools-unity.md) Unity uzantısı yükleme hakkında daha fazla bilgi.
+  * **Platformlar arası Unity oyun geliştirme** – Mac için Visual Studio dışında yüklenecek hiçbir ek platform gerekiyor Başvurmak [Unity Kurulum Kılavuzu](setup-vsmac-tools-unity.md) Unity uzantının yüklenmesi hakkında daha fazla bilgi.
 
-  Bu yükleme ekranında, sürüm ve tek tek her bileşen boyutunu görüntüler. (Android için) bu bileşen için bağımlılıkları listesini görüntülemek için (.NET Core) yüklemeleri ek paketler Bkz her bileşene tıklayın veya (iOS ve macOS) gerekli ek uygulamaları görüntüleyin:
+  Bu yükleme ekranı, sürüm ve tek tek her bileşen boyutunu görüntüler. (.NET Core için) yüklemeleri ek paketler (Android için) söz konusu bileşen için bağımlılıkların bir listesini görüntülemek için bkz her bileşene tıklayın ya da (iOS ve macOS) gerekli ek uygulamaları görüntüleyin:
 
   ![Android ek bağımlılıklar](media/installer-image6.png)
 
-7. Seçiminiz ile Mutluluk duyuyoruz sonra seçeneğini **yükleme ve güncelleştirme** yükleme işlemini başlatmak için düğmesi.
+7. Seçiminizle memnun olduğunuzda seçin **yükleme ve güncelleştirme** yükleme işlemini başlatmak için düğme.
 
-8. Yükleyici yüklemeyi başlatır ve işlem seçilen öğelerin yükleyin:
+8. Yükleyici, indirme başlar ve yükleme işlemi, seçilen öğeler:
 
-  ![Yüklemesi başlatılıyor](media/installer-image7.png)
+  ![Yükleme başlatılıyor](media/installer-image7.png)
 
-  ![Xamarin.Mac yükleniyor](media/installer-image8.png)
+  ![Xamarin.Mac indiriliyor](media/installer-image8.png)
 
-  ![Yükleme tamamlanıyor](media/installer-image9.png)
+  ![Yükleme sonlandırılıyor](media/installer-image9.png)
 
-9. Yüklemeyi tamamlamak için gereken bileşenleri tek tek gerekli izinleri yükseltmesine istenebilir. Yükleme işlemine devam etmek için yönetici kimlik bilgilerinizi buraya girin:
+9. Yüklemeyi tamamlamak için gereken tek tek bileşenler için gerekli izinlere yükseltmesine istenebilir. Yükleme işlemine devam etmek için yönetici kimlik bilgilerinizi buraya girin:
 
   ![Yükleyici ile devam etmek için izinleri girin](media/installer-image10.png)
 
-10. Yükleme başarılı olduktan sonra tuşlarına basarak Visual Studio'daki uygulamaları geliştirmeye başlayabilirsiniz **Başlat**:
+10. Yükleme başarılı olduktan sonra tuşlarına basarak Visual Studio'da uygulamalarınızı geliştirmeye başlayabilirsiniz **Başlat**:
 
-  ![Açık Visual Studio](media/installer-image11.png)
+  ![Visual Studio'yu Aç](media/installer-image11.png)
 
 > [!NOTE]
-Öğesini yüklemeyin bir platform veya aracı özgün yükleme sırasında (bunu #6. adımda unselecting tarafından) seçerseniz, çalıştırmalısınız [yükleyici](https://visualstudio.microsoft.com/vs/) yeniden bileşenleri daha sonra eklemek istiyorsanız.
+Yüklemeyin bir platform veya aracı özgün yükleme sırasında (bunu #6. adımda seçimini tarafından) seçerseniz, çalıştırmalısınız [yükleyici](https://visualstudio.microsoft.com/vs/) yeniden bileşen daha sonra eklemek istiyorsanız.
 
 
-## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Visual Studio Mac için bir güvenlik duvarı veya proxy sunucunun arkasındaki yükleyin.
+## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Visual Studio Mac için bir güvenlik duvarı veya proxy sunucusunun arkasına yükleme
 
-Visual Studio Mac için bir güvenlik duvarının arkasında yüklemek için belirli uç noktaları, yazılım güncelleştirmeleri ve gerekli araçlar yüklemeleri izin vermek üzere erişilebilir yapılması gerekir.
+Güvenlik duvarının arkasında Mac için Visual Studio'yu yüklemek için belirli uç noktaları, yazılım güncelleştirmeleri ve gerekli araçları indirmeye izin ver için erişilebilir yapılması gerekir.
 
-Aşağıdaki konumlardan erişmesine izin vermek için ağınızı yapılandırın:
+Şu konumlardan erişime izin vermek için ağ yapılandırın:
 
 * [Visual Studio uç noktaları](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Mac için Visual Studio yükleme, uygulamalarınız için kod yazma başlatmanıza olanak verir. Aşağıdaki kılavuzlar, yazma ve projelerinizi dağıtma sonraki adımları boyunca size yol göstermesi için sağlanır.
+Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya olanak tanır. Aşağıdaki kılavuzlarda yazma ve projelerinizi dağıtma sonraki adımlarda size rehberlik sağlanmaktadır.
 
 ### <a name="ios"></a>iOS
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131875"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624148"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Yeni başlayanlar için hata ayıklama
 
@@ -25,7 +25,7 @@ Başarısız, biz geliştiricilerine yazma kod her zaman ne yapması beklenen ya
 
 Ne yazık ki bir hata ayıklayıcı Sihirli tüm sorunlar veya "hatalar" bizim kodu ortaya çıkarabilir, bir şey değildir. *Hata ayıklama* anlamına gelir, bir hata ayıklama aracı adım adım kodunuzu çalıştırmak için bir programlama hata burada yaptığınız tam noktasını bulmak için Visual Studio'yu, ister. Daha sonra kodunuzda yapmanız gereken hangi düzeltmeler anlamak ve hata ayıklama araçları genellikle programı çalıştırmaya devam etmek için geçici değişiklik yapmanızı sağlar.
 
-Bir hata ayıklayıcı etkili bir şekilde kullanarak da zaman ve bilgi edinmek için uygulama bir yetenek, ancak sonuçta temel bir görev için her yazılım geliştiricisinin. Bu makalede daha sonra hata ayıklama temel ilkelerini tanıtan ve başlamanıza yardımcı olmak için ipuçları sağlar.
+Bir hata ayıklayıcı etkili bir şekilde kullanarak, zaman ve bilgi edinmek için uygulama ancak sonuçta her yazılım geliştiricisinin için temel bir görevi bir yetenek olduğu. Bu makalede daha sonra hata ayıklama temel ilkelerini tanıtan ve başlamanıza yardımcı olmak için ipuçları sağlar.
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Sorunu doğru soruları kendinize sorarak açıklamak
 
@@ -92,7 +92,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
 
     .NET Core için de **yeni proje** iletişim kutusunda **Visual C#**, **.NET Core** Yüklü Şablonlar bölümünden ve Orta bölmede seçin  **Konsol uygulaması (.NET Core)**.
 
-    Bu şablon görmüyorsanız, uygun iş yükü yüklemeniz gerekir (önceki adımlara bakın).
+    Bu şablonlar görmüyorsanız, uygun iş yükü yüklemeniz gerekir (önceki adımlara bakın).
 
 1. İçinde **adı** alanına **ConsoleApp FirstApp** tıklatıp **Tamam**.
 
@@ -228,7 +228,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
 
 1. Tıklayın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama araç çubuğu düğmesini (**Ctrl** + **kaydırma**   +  **F5**).
 
-    Uygulama, ayarladığınız kesme noktasında duraklatır. Hata ayıklayıcı burada duraklatıldı sarı hightlighting gösterir (kod satırının sarı henüz çalıştırılmadı).
+    Uygulama, ayarladığınız kesme noktasında duraklatır. Sarı Vurgu, hata ayıklayıcı burada duraklatıldı belirtir (kod satırının sarı henüz çalıştırılmadı).
 
 1. Üzerine `GalaxyType` sağdaki ve ardından sol tarafındaki İngiliz anahtarı simgesine değişkeni genişletin `theGalaxy.GalaxyType`. Gördüğünüz `GalaxyType` bir özellik içeriyor `MyGType`, ve özellik değerini ayarlamak `Spiral`.
 
@@ -303,7 +303,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
 
     Koda baktığınızda, bir yazım yanlışı bkz `case 'l'` deyimi. Olmalıdır `case 'I'`.
 
-1. Tıklayın kodunda `case 'l'`, değiştirin ' case 'ı'.
+1. Tıklayın kodunda `case 'l'` değiştirin `case 'I'`.
 
 1. Kesme noktasına kaldırın ve ardından **yeniden** düğmesini uygulamayı yeniden başlatın.
 

@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586491"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624126"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 ile Live Unit Testing
 
@@ -59,29 +59,42 @@ Bazı durumlarda, açıkça için Live Unit Testing çalışmaya sırayla çöz�
 
 ## <a name="configure-live-unit-testing"></a>Live Unit Testing yapılandırın
 
-Live Unit Testing seçerek yapılandırabileceğiniz **Araçları** > **seçenekleri** üst düzey Visual Studio menü ve ardından seçerek **Live Unit Testing** içinde sol bölmesinde **seçenekleri** iletişim. Live Unit Testing yapılandırma seçenekleri iletişim kutusunda aşağıdaki şekilde gösterilmektedir.
+Live Unit Testing seçerek yapılandırabileceğiniz **Araçları** > **seçenekleri** en üst düzey Visual Studio menü çubuğunda, ve ardından seçerek **Live Unit Testing** sol bölmesinde **seçenekleri** iletişim.
+
+> [!TIP]
+> Live Unit Testing etkinleştirildikten sonra (sonraki bölüme bakın [başlatmak, duraklatmak ve Live Unit Testing durdurmak](#start-pause-and-stop-live-unit-testing)), da açabilirsiniz **seçenekleri** seçerek iletişim **Test**  >  **Live Unit Testing** > **seçenekleri**.
+
+Live Unit Testing yapılandırma seçenekleri iletişim kutusunda aşağıdaki şekilde gösterilmiştir:
 
   ![Görüntü](./media/lut-options.png)
 
 Yapılandırılabilir seçeneklerin şunlardır:
 
-- Bir çözüm oluşturulan ve hata ayıklama mı Live Unit Testing duraklatır
+- Bir çözüm oluşturulan ve hata ayıklama mı Live Unit Testing duraklatır.
 
 - Sistemin pili belirtilen eşiğin altına düştüğünde olup Live Unit Testing duraklatır.
+
 - Bir çözümü açtığınızda olup Live Unit Testing otomatik olarak çalıştırılır.
+
+- Etkinleştirilip etkinleştirilmeyeceğini sembol ve XML belgesi açıklama oluşturma hatalarını ayıklayın.
+
 - Kalıcı veri depolanacağı dizin.
-   **Kalıcı verileri Sil** düğmesi kalıcı tüm verileri silmenize olanak sağlar. Live Unit Testing, kalıcı verileri bozulmuş önerir öngörülemeyen ya da beklenmeyen şekilde davrandığından istediğinizde yararlıdır.
+
+- Tüm kalıcı veri silme yeteneği. Live Unit Testing, kalıcı verileri bozulmuş önerir öngörülemeyen ya da beklenmeyen şekilde davrandığından istediğinizde yararlıdır.
+   
 - Bir test çalışması sonra zaman aşımına Interval; Varsayılan değer 30 saniyedir.
+
 - Live Unit Testing oluşturan test işlemlerinin maksimum sayısı.
+
 - Live Unit Testing işler maksimum belleğin kullanabilir.
+
 - Live Unit Testing için yazılan bilgi düzeyini **çıkış** penceresi.
+
    Seçenekleriniz günlüğünü (**hiçbiri**), yalnızca hata iletileri (**hata**), hata ve bilgilendirici iletileri (**bilgileri**, varsayılan), ya da tüm ayrıntıları (**ayrıntılı** ).
 
-Live Unit Testing içinde ayrıntılı çıkış görüntüleyebilirsiniz **çıkış** değerini "1" adlı bir kullanıcı düzeyinde ortam değişkenine atayarak penceresi `VS_UTE_DIAGNOSTICS` ve Visual Studio'yu yeniden başlatmayı.
+   Live Unit Testing içinde ayrıntılı çıkış görüntüleyebilirsiniz **çıkış** değerini "1" adlı bir kullanıcı düzeyinde ortam değişkenine atayarak penceresi `VS_UTE_DIAGNOSTICS`ve ardından Visual Studio'yu yeniden başlatmayı.
 
-Ayrıntılı MSBuild günlük iletilerden Live Unit Testing dosyaya yakalamak için `LiveUnitTesting_BuildLog` kullanıcı düzeyinde ortam değişkenine günlük içerecek dosyanın adı.
-
-Live Unit Testing etkinleştirildikten sonra (sonraki bölüme bakın [başlatmak, duraklatmak ve Live Unit Testing durdurmak](#start-pause-and-stop-live-unit-testing), da açabilirsiniz **seçenekleri** seçerek iletişim **Test**  >  **Live Unit Testing** > **seçenekleri**.
+   Live Unit Testing dosyasındaki öğesinden ayrıntılı MSBuild günlük iletilerini yakalamak için `LiveUnitTesting_BuildLog` kullanıcı düzeyinde ortam değişkenine günlük içerecek dosyanın adı.
 
 ## <a name="start-pause-and-stop-live-unit-testing"></a>Başlatma, duraklatma ve Live Unit Testing Durdur
 

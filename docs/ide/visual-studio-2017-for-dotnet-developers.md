@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468279"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624349"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# üretkenlik Kılavuzu
 
@@ -46,12 +46,12 @@ Popüler Visual Studio kısayolları şunlardır:
 | **Ctrl**+**.** (Ayrıca **Alt**+**girin** profilindeki C#) | Hızlı Eylemler ve Yeniden Düzenlemeler | Hangi kod düzeltmeleri görmek için İmleç konumuna veya kod seçim sırasında kod oluşturma işlemleri, yeniden düzenlemeler veya diğer hızlı Eylemler kullanılabilir |
 | **Ctrl**+**D** | Satırı Yinele | İmlecin bulunduğu kod satırının çoğaltır (kullanılabilir **Visual Studio 2017 sürüm 15.6** ve üzeri) |
 | **Shift**+**Alt**+**+**/**-** | Seçimi Genişlet/Sözleşmesi | Genişletir ya da geçerli seçimi Düzenleyicisi'nde sözleşmeler (kullanılabilir **Visual Studio 2017 sürüm 15.5** ve üzeri) |
-| **Shift** + **Alt** + **bileşenleri** | Eşleşen bir sonraki giriş işareti Ekle | Seçim ve giriş işaretini geçerli seçimi ile eşleşen bir sonraki konumda ekler (kullanılabilir **Visual Studio 2017 sürüm 15,8** ve üzeri) |
+| **CTRL** + **Alt** + **.** | Eşleşen bir sonraki giriş işareti Ekle | Seçim ve giriş işaretini geçerli seçimi ile eşleşen bir sonraki konumda ekler (kullanılabilir **Visual Studio 2017 sürüm 15,8** ve üzeri) |
 | **CTRL**+**Q** | Hızlı Başlat | Tüm Visual Studio ayarları arama |
 | **F5** | Hata Ayıklamayı Başlat | Uygulamanızı hata ayıklamayı Başlat |
 | **CTRL**+**F5** | Hata ayıklama Çalıştır | Uygulamanızı yerel olarak hata ayıklama olmadan çalıştırma |
-| **CTRL**+**K**,**D** (varsayılan profili) veya **Ctrl**+**E**,**D**  (C# profili) | Belgeyi Biçimlendir | Yeni satır, aralık ve girintileme ayarlarını göre dosyanızdaki ihlalleri biçimlendirme temizler |
-| **CTRL**+**\\**,**E** (varsayılan profili) veya **Ctrl**+**W**, **E** (C# profili) | Hata Listesi görünümü | Belge, proje veya çözüm tüm hataları görmek |
+| **CTRL**+**K**,**D** (varsayılan profili) veya **Ctrl**+**E**,**D**  (C# profili) | [Belgeyi Biçimlendir](code-styles-and-quick-actions.md#format-document-command) | Yeni satır, aralık ve girintileme ayarlarını göre dosyanızdaki ihlalleri biçimlendirme temizler |
+| **CTRL**+**\\**,**Ctrl**+**E** (varsayılan profili) veya **Ctrl** + **W**,**E** (C# profili) | Hata Listesi görünümü | Belge, proje veya çözüm tüm hataları görmek |
 | **Alt** + **PgUp/PgDn** | Sonraki/önceki soruna gidin | Bağlantı Uyarısı, öneri, belgedeki önceki/sonraki hata için (kullanılabilir **Visual Studio 2017 sürüm 15,8** ve üzeri) |
 
 > [!NOTE]

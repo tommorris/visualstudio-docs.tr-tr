@@ -9,16 +9,16 @@ description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylı
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 99c03b19281ef9e53695b956a34b0682fb042f56
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e183b74e326efa65b810f7f46fd198e43aa796bf
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380609"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624435"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
-Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise abonelikleri](https://visualstudio.microsoft.com/subscriptions/) gelen [Visual Studio Market](https://marketplace.visualstudio.com). Bunlar, bulut abonelikleri olarak adlandırılır.
+Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise abonelikleri](https://visualstudio.microsoft.com/subscriptions/) gelen [Visual Studio Market](https://marketplace.visualstudio.com). Bunlar adlandırılır **"bulut abonelikleri"**.
 
 [Bulut abonelik avantajları ve fiyatlandırmayı karşılaştırarak](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -31,36 +31,41 @@ Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise a
 0.  Oturum [Visual Studio Market > abonelikler](https://marketplace.visualstudio.com/subscriptions).
 
 0.  Örneğin, satın almak istediğiniz aboneliği seçin:
-
-    <img alt="Buy a Visual Studio subscription" src="_img/buy-vs-subscriptions/buy-vs-sub-start.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Visual Studio aboneliği satın alın](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
 
 0.  Faturalama için kullanılacak Azure aboneliğini seçin. Yoksa, yeni bir Azure aboneliği oluşturabilirsiniz.
-
-    <img alt="Select Azure subscription for billing" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Faturalandırma için Azure aboneliğini seçin](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
 0.  Satın almak için abonelik sayısını seçin.
-
-    <img alt="Select number of subscriptions" src="_img/buy-vs-subscriptions/buy-vs-sub-users.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Abonelik sayısını seçin](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Kendinize atanan abonelik istemiyorsanız temizleyin **bu aboneliği Bana ata**.
 
 0.  Onayla ve satın alma işleminizi tamamlayabilirsiniz. Kendiniz için bir abonelik atanmış, ziyaret edebilirsiniz [Visual Studio abonelik portalı](https://my.visualstudio.com) yazılım indiriliyor ve diğer abonelik avantajlarını kullanarak başlatmak için.
 
-    <img alt="Finish purchase successfully" src="_img/buy-vs-subscriptions/buy-vs-sub-success.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Satın alma işlemi başarıyla](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
 
-    <img alt="Go to Visual Studio subscriber portal" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Visual Studio abonelik portalına gidin](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
-    Birden fazla aboneliği satın aldıysanız, devam [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com/) başkalarına abonelikleri atamak için.
+Birden fazla aboneliği satın aldıysanız, devam [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com) başkalarına abonelikleri atamak için.
 
-    <img alt="Assign subscriptions to others" src="_img/buy-vs-subscriptions/buy-vs-sub-success-many.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Abonelikleri başkalarına atayabilir](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
 
-    <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Abonelikleri görüntüle](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
 ## <a name="manage-subscriptions"></a>Bulut aboneliği satın aldığınız yenileme iptal et
 
 *   Satın alınan abonelik sayısını değiştirmek için:
 
-    <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Abonelikleri değiştirin](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
 *   Bu Abonelikleri iptal etmek için sıfır (0) abonelik sayısını azaltın. Bunlar ve sonraki faturalandırma döneminden (aylık bulut abonelikleri için bir sonraki ayın ilk günü; yıllık bulut abonelikleri için daha sonra 12 ay) başlangıcında yenileme olmaz.
 

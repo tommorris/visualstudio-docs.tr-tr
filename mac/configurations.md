@@ -1,67 +1,67 @@
 ---
 title: Derleme Yapılandırmalarını Anlama
-description: Bu makalede çeşitli Mac derleme yapılandırmaları Visual Studio'da
-author: asb3993
-ms.author: amburns
+description: Bu makalede, çeşitli Mac derleme yapılandırmalarını Visual Studio'da açıklanır.
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: fb1db4325aef6c5328646a5ad1123c88aa751481
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c6aa5de66551cd224713db60ce7be0d02b25b332
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957885"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623945"
 ---
 # <a name="understanding-build-configurations"></a>Derleme yapılandırmalarını anlama
 
 ## <a name="project-build-configurations"></a>Proje derleme yapılandırmaları 
 
-Projeleri birden çok yapılandırmaya sahip olma eğilimi gösterir ve bunlar arasında geçiş yapma derleme zamanında farklı çıkış izin verir. Örneğin, bir hata ayıklama yapılandırmasını işlev adları, parametreleri veya çöken bir uygulamanın yığın izlemesi değişkenlerinden gidermek hata ayıklayıcı izin vererek, hata ayıklama simgeleri çıkarır. Bu ek bilgiler geliştirme sırasında kullanışlı olsa da, bir inflated dosya boyutuna yol açar ve dağıtım için uygun değil.
+Projeleri birden çok yapılandırmalara sahip eğilimindedir ve bunlar arasında geçiş derleme zamanında farklı çıkış izin verir. Örneğin, bir hata ayıklama yapılandırması hata ayıklama sembolleri, işlev adları, parametrelerin veya çöken bir uygulamanın yığın izlemesi değişkenlerinden gidermek hata ayıklayıcı izin vererek çıkarır. Bu ek bilgiler geliştirme sırasında kullanışlı olsa da, bir inflated dosya boyutuna yol açar ve dağıtım için ideal değildir.
 
-Her platformun, derleme için belirli yapılandırmaları vardır. 
+Her platform için kendi yapı belirli yapılandırmasına sahip değil. 
 
 ## <a name="solution-configurations"></a>Çözüm yapılandırmaları
 
-Proje yapılandırmaları benzer çözüm yapılandırmaları tüm proje için özel yapılandırmalar oluşturmak için kullanılır. Kullanarak **yapılandırma eşlemeleri** altında sekmesinde **Yapı > yapılandırmaları** öğesi atayabilirsiniz her çözüm öğesi için bir hedef yapılandırma aşağıdaki görüntüde gösterildiği gibi:
+Proje yapılandırmaları yakındır çözüm yapılandırmaları bir projenin tamamı için özel yapılandırmalar oluşturmak için kullanılır. Kullanarak **yapılandırma eşlemeleri** sekmesinde altında **Yapı > yapılandırmaları** öğesi atayabilirsiniz hedef yapılandırma her çözüm öğesi için aşağıdaki görüntüde gösterildiği gibi:
 
 
  ![Yapılandırma eşleme seçenekleri](media/projects-and-solutions-image3.png)
 
-Yapılandırmaları hakkında daha fazla bilgi için bkz: [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) Ahmet Montemagno tarafından video.
+Yapılandırmaları hakkında daha fazla bilgi için bkz. [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) James Montemagno tarafından video.
 
-## <a name="run-configuration"></a>Çalışma yapılandırması
+## <a name="run-configuration"></a>Çalıştırma yapılandırma
 
-Xamarin Studio önceki sürümlerde projesi olarak ayarla seçeneğine seçebilirsiniz bir **başlangıç projesi**, Çalıştır/genel Çalıştır/Hata Ayıkla komutunu kullanırken hata proje olduğu. Bu projenin adı proje panelinde için kalın yazı tarafından belirtilir.
+Xamarin Studio önceki sürümlerinde, projesi olarak ayarla seçeneğine seçebilirsiniz bir **başlangıç projesi**, Çalıştır/genel Çalıştır/Hata Ayıkla komutunu kullanırken hataları ayıklanmakta proje olduğu. Bu proje panelindeki projenin adı için bir kalın yazı tarafından belirtilir.
 
-Visual Studio başlangıç projesi ayarlama yerine Mac için ayarlayabileceğiniz bir _yapılandırmasını çalıştırmak_. Çalıştırma yapılandırmaları araç, aşağıda gösterildiği gibi yapı yapılandırma Seçici yanında aşağı açılan listesinde sunulur:
+Bir başlangıç projesi ayarlama yerine Mac için Visual Studio'da ayarlayabileceğiniz bir _çalıştırma yapılandırmasını_. Çalıştırma yapılandırmaları, araç, aşağıda gösterildiği gibi yapı yapılandırması Seçici yanındaki aşağı açılan listede sunulur:
 
  ![Yapılandırma açılan çalıştırın](media/projects-and-solutions-image8.png)
 
-Çalışma yapılandırması, bir ad ve farklı amaçlar için bir proje tanımlanan birkaç yapılandırmaları ile yürütme seçeneklerini kümesidir. Çalıştırma yapılandırmaları proje düzeyinde tanımlanır ve kadar gerekli eklemek mümkün olmakla varsayılan otomatik olarak çalıştırılabilir her proje için oluşturulur. Belirli proje türleri ek çalıştırma yapılandırmaları otomatik olarak oluşturur. Örneğin, watchOS projeler oluşturabilir _bakışta ve bildirim yapılandırmaları._ 
+Bir çalıştırma yapılandırma, bir ad ve bir projede farklı amaçlar için tanımlanmış birkaç yapılandırma ile yürütme seçeneklerini kümesidir. Çalıştırma yapılandırmaları proje düzeyinde tanımlanmış ve kadar gerekli eklemek mümkündür ancak varsayılan otomatik olarak yürütülebilir her proje için oluşturulur. Belirli proje türleri otomatik olarak ek çalıştırma yapılandırmaları oluşturun. Örneğin, watchOS projelerine oluşturmak için kullanabileceğiniz _bakış ve bildirim yapılandırma._ 
  
-Yapılandırmaları (Bu durumda yapılandırmaları .csproj dosyanızda depolanır) diğer geliştiriciler paylaşılan veya (durumda .kullanıcı dosyasında depolanır yerel olarak) tutulur.
+Yapılandırmaları (Bu durumda yapılandırmaları .csproj dosyasında depolanır) diğer geliştiricilerle paylaşılan veya (durumda .user dosyasında depolanır yerel olarak) tutulur.
 
-### <a name="android-run-configurations"></a>Android yapılandırmaları çalıştırma
+### <a name="android-run-configurations"></a>Android çalışma yapılandırmaları
  
-Çalıştırma yapılandırmaları Android projeleri için hangi etkinlik, hizmet veya çalıştıran veya projenin hata ayıklamayı başlatmak için yayın alıcı belirtmenizi sağlar. Hedefi ek verileri geçirebilir ve bileşenlerinizin farklı başlatma koşullar altında test edebilmek için hedefi bayraklarını ayarlayın.
+Android projeleri için çalıştırma yapılandırmaları hangi etkinlik, hizmet veya çalıştırılırken veya hata ayıklanırken proje başlatmak için yayın alıcısı belirtmenizi sağlar. Intent ek verileri aktarmak ve bileşenlerinizin farklı başlatma koşulları altında test edebilmek için hedefi bayraklarını ayarlayın.
 
-Etkinlikler dışında `MainLauncher` gerekecek `Exported=true` fiziksel cihaz üzerindeki hata ayıklama için etkinlik özniteliği eklenecek veya hedefi filtreleri tanımlı sahip.
+Dışındaki etkinlikleri `MainLauncher` gerekecek `Exported=true` fiziksel bir cihazda hata ayıklama için etkinlik özniteliği eklenemiyor veya tanımladığınız amaç filtreleri.
 
-## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>Çalıştırma yapılandırmalarında dahil veri örnekleri
+## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>Çalışma yapılandırmaları bulunabilir veri örnekleri
 
-Aşağıdaki listede çalıştırma yapılandırmalarında dahil veri bazı örnekler verilmiştir:
+Aşağıdaki listede, içinde çalıştırma yapılandırmaları dahil edilebilir veri bazı örnekleri verilmiştir:
 
 * Normal .NET projesi
     * Farklı bir başlangıç uygulaması
-    * Bağımsız değişkenler Başlat
+    * Başlangıç bağımsız değişkenleri
     * Çalışma dizini
     * Ortam değişkenleri
-    * (Yalnızca Mono üzerinde çalışırken kullanılmak üzere) mono çalışma zamanı seçenekleri
+    * Mono çalışma zamanı seçenekleri (yalnızca üzerinde Mono çalıştırılırken kullanılması için)
 * Android projesi
     * Giriş noktası (etkinlik, hizmet, alıcı)
     * Hedefi bağımsız değişkenleri ve veri
 * iOS projesi
-    * Mod (Normal, arka planda getirmeye)
+    * Mod (Normal, arka planda getirme)
 * iOS uzantı projesi
     * Başlangıç uygulaması: varsayılan veya özel
 * WatchKit proje

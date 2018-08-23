@@ -9,18 +9,18 @@ description: Visual Studio abonelikleri dahil öncelikli destek teklifi hakkınd
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567161"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624002"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri öncelikli destek
 
 Öncelikli destek avantajı, mevcut gönderileri arayabileceğiniz desteğine topluluk forumlarımız çeşitli erişim sağlar veya yeni sorular sorar.  Topluluk, sorunuzu iki gün içinde yanıt vermezse, Microsoft Destek ekibine bir yanıt sağlar.
 
-Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda çeşitli konularda ele alındığı forumları öncelikli destek almak uygundur.
+Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda çeşitli konularda ele alındığı forumları öncelikli destek almak uygundur.  Bu foruma doğrudan gitmek için aşağıdaki bağlantılardan herhangi birine tıklayın.  
 
 ## <a name="included-forums"></a>Dahil edilen forumları
 
@@ -238,7 +238,7 @@ Seçili Visual Studio abonelikleri olan aboneler aracılığıyla çok sayıda �
 | Visual Studio Dev Essentials | Yok  | Dahil edilen                                                            |Evet |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satılamaz (NFR), FTE, Visual Studio Endüstri ortağı (VSIP) düşünün.    Dışlar: Microsoft iş ortağı ağı (MPN), MCT yazılımı ve Hizmetleri, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).*
+<sup>1</sup>*içerir: satılamaz (NFR), FTE, Visual Studio Endüstri ortağı (VSIP) düşünün.  Dışlar: Microsoft iş ortağı ağı (MPN), MCT yazılımı ve Hizmetleri, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

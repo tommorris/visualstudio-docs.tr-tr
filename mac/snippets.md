@@ -1,41 +1,41 @@
 ---
 title: Kod Parçacıkları
-description: Visual Studio'da Mac için verimli bir şekilde programlamak için kod parçacıklarını kullanma
-author: asb3993
-ms.author: amburns
+description: Mac için Visual Studio'da verimli bir şekilde programlanacağı kod parçacıkları kullanma
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 4ad96e79d3fdd3d22df696b95bc11b8074fbdede
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 864b39331944e881fe1bcdcfefa2dd7c1cebab09
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884456"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624428"
 ---
 # <a name="code-snippets"></a>Kod parçacıkları 
 
-Kod parçacıkları, genellikle olarak adlandırılan _kod şablonları_, ekleme izin verimli programlama için yararlı olan ve önceden yazılmış kod bloklarını düzenleme. Olduğunda geliştirici olarak yeni desenler bile öğrenmek için söz dizimi emin değilseniz veya kod parçacıkları ortak desenler hızla eklemek için özellikle kullanışlı olabilir. C#, F #, HTML, XML, Python ve Razor için sağlanan şablonları vardır.
+Kod parçacıkları, genellikle olarak adlandırılan _kod şablonları_önceden yazılmış kod bloklarını düzenleme ve bunlar eklemeye izin verecek şekilde etkili programlama için kullanışlıdır. Yeni desenler, geliştirici olarak da öğrenmeye yönelik da sözdizimi emin değilseniz veya kod parçacıkları ortak desenler hızlı bir şekilde eklemek için özellikle kullanışlı olabilir. C#, F #, HTML, XML, Python ve Razor için sağlanan şablonlar vardır.
 
-Bu bölümde, oluşturma, ekleme ve kod parçacıklarını kullanma anlatılmıştır.
+Bu bölümde oluşturma, ekleme ve kod parçacıkları kullanma açıklanmaktadır.
 
-## <a name="inserting-a-snippet"></a>Parçacık ekleme
+## <a name="inserting-a-snippet"></a>Bir kod parçacığı ekleme
 
-Kod parçacıkları, bazıları aşağıda açıklanmıştır eklemek için bazı farklı yolu vardır:
+Kod parçacıkları, bunlardan bazıları aşağıda açıklanmıştır eklemek için bazı farklı yolu vardır:
  
-* **Sekme genişletme** - şablon adını yazarak başlangıç listesi ve tuşuna seçin **sekmesini sekmesini** eklemek için:
+* **Sekme genişletme** - şablon adı yazmaya listesi ve ENTER tuşuna seçin **sekmesini sekmesini** eklemek için:
  
-  ![Kodda sekmesini genişletme](media/source-editor-image13.png)
+  ![Sekme genişletmeyi kod](media/source-editor-image13.png)
 
-* **Araç kutusu** -tüm kod parçacıkları listesini görüntülemek için araç takımını kullanın. Herhangi bir şablonu Araç Kutusu'ndan kaynak kodundaki doğru konuma sürükleyin:
+* **Araç kutusu** -tüm kod parçacıkları listesini görüntülemek için araç takımını kullanın. Herhangi bir şablon kaynak kodu doğru konumda araç kutusundan sürükleyin:
 
- ![Araç çubuğundaki kod parçacıkları](media/source-editor-image14.png)
+ ![Araç kutusu kod parçacıkları](media/source-editor-image14.png)
 
-* **Ekle şablonları komutu** -şu anda bir şablon eklemek için kümesi bağlama varsayılan anahtarı yok. Oluşturmak için Gözat **Visual Studio > tercihleri... > anahtar bağlamaları** arayın ve `template`. Bu bağlama düzen alanına istenen anahtar bağlama eklemeye izin verir, ardından **Uygula**:
+* **Şablonları komut Ekle** -şu anda bir şablon eklemek için set bağlama varsayılan anahtarı yok. Oluşturmak için Gözat **Visual Studio > tercihleri... > anahtar bağlamaları** araması `template`. Bu bağlama düzen alanına istenen anahtar bağlaması ekleniyor sağlar, ardından **Uygula**:
 
  ![İç Metin şablonu komutu](media/source-editor-image15.png)
 
-## <a name="creating-a-new-template"></a>Yeni bir şablon oluşturma
+## <a name="creating-a-new-template"></a>Yeni şablon oluşturma
 
-Birçok var olan şablonları kullanan ve düzenleme dilleri çeşitli olsa da, yeni şablonlar de giderek eklenebilir **Visual Studio > Tercihler > Metin Düzenleyicisi > kod parçacıkları**:
+Birçok var olan şablonu kullanın ve düzenleme dilleri çeşitli olsa da, yeni şablonlar da giderek eklenebilir **Visual Studio > Tercihler > Metin Düzenleyicisi > kod parçacıkları**:
 
-![İç metin yeni şablonu](media/source-editor-image12.png)
+![Yeni şablon iç](media/source-editor-image12.png)

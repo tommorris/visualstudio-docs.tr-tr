@@ -1,73 +1,73 @@
 ---
-title: WhiteSource Cıvata avantajı | Microsoft Docs
+title: WhiteSource Bolt avantajı | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/11/2017
 ms.topic: Get-Started-Article
-description: Visual Studio aboneliğinizde yer alan WhiteSource Cıvata abonelik etkinleştirme konusunda bilgi edinin.
+description: Visual Studio aboneliğinize dahil olan WhiteSource Bolt aboneliği etkinleştirmek öğrenin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 37b71d51a62ab83f604c084ec2b5a1fda7594c14
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280323"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624273"
 ---
-#  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio Aboneliklerde WhiteSource Cıvata
+#  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt, Visual Studio abonelikleri
 
-Bul ve açık kaynak güvenlik açıkları düzeltin ve yapı içinde tüm açık kaynak bileşenlerinin kapsamlı Envanter ve lisans raporları oluşturun. Visual Studio Abonelikleriniz altı ay ücretsiz erişim içerir.
+Bulun, açık kaynak güvenlik açıklarını düzeltin ve derlemenizdeki tüm açık kaynaklı bileşenlerin kapsamlı Envanter ve lisans raporlarını oluşturun. Bazı Visual Studio abonelikleri altı ay boyunca ücretsiz erişim içerir.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
-1.  WhiteSource Cıvata avantajı etkinleştirmek için oturumu [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
+1.  WhiteSource Bolt avantajınızı etkinleştirmek için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
 
-2.  Araçlar bölümünde WhiteSource Cıvata döşeme bulun ve tıklayın **kodunu Al** avantajı döşemenin altındaki bağlantıyı.
+2.  WhiteSource Bolt kutucuğu Araçlar bölümünde bulun ve tıklayarak **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource avantajı kutucuğu](_img\vs-whitesource\vs-whitesource-tile.png)
 
-    ![WhiteSource avantajı döşeme](_img\vs-whitesource\vs-whitesource-tile.png)
+2.  Etkinleştirme kodunuzu görüntüleyen bir bildirim alacaksınız.  **Kodunu panonuza kopyalayın**, ardından **etkinleştirme**.
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource avantajı kod ](_img\vs-whitesource\vs-whitesource-code.png)
 
-2.  Etkinleştirme kodunuzun görüntüleyen bir bildirim alırsınız.  **Kodunu panonuza kopyalayın**, ardından **etkinleştirme**.
+3.  WhiteSource web sayfasında tıklayarak **etkinleştirme** düğmesine veya doğru aşağı kaydırın **hesabınızı etkinleştirmek** sayfasının bölümünde.
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource avantajı etkinleştirin](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
 
-    ![WhiteSource avantajı kodu ](_img\vs-whitesource\vs-whitesource-code.png)
+4.  İçinde **hesabınızı etkinleştirmek** Bölümü sayfasının, dört adımı gösterilmesini:
 
-3.  WhiteSource web sayfasında tıklayın **etkinleştirme** düğmesini tıklatın veya aşağı kaydırın **hesabınızı etkinleştirmek** sayfasının bölümünde.
+    - [Yükleme](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) Microsoft Visual Studio Market'ten WhiteSource Bolt uzantısı. Uzantıları yüklemek için izinlere sahip değilseniz, bkz. [ücretsiz uzantıları yüklemek için VSTS](/vsts/marketplace/install-vsts-extension?view=vsts).
 
-    ![WhiteSource avantajı etkinleştir](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+    Yeşil tıklayın **yükleme** VSTS, kullanıyorsanız düğmesini veya **indirin** Team Foundation Server için düğme.  Bu örnekte, VSTS kullanacağız.
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource avantajı yükleme uzantısı](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-4.  İçinde **hesabınızı etkinleştirmek** bölüm sayfasının, dört adımlara destekli:
+    - Ardından,'e tıklayın, istediğiniz VSTS hesabı seçin **Onayla**.  (VSTS'yi henüz ayarlamadıysanız ziyaret [avantajları](https://my.visualstudio.com/benefits) sayfasında ve VSTS avantajınızı etkinleştirin.)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource teklifi, hesap onaylayın](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
-    - [Yükleme](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) Microsoft Visual Studio Marketi'nden WhiteSource Cıvata uzantısı. Uzantıları yüklemek için izinlere sahip değilseniz, bkz: [VSTS için ücretsiz uzantıları yükleme](/vsts/marketplace/install-vsts-extension?view=vsts).
+    - Uzantı yüklü ve kullanılmaya hazır bir onay alırsınız.  Tıklayın **başlama** WhiteSource Bolt sayfasına geri dönün ve devam etmek için.
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource avantajı yüklenmesi tamamlandı](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-    Yeşil tıklatın **yükleme** VSTS, kullanıyorsanız düğmesini veya **karşıdan** düğmesi Team Foundation Server için.  Bu örnekte, VSTS kullanacağız.
+5.  ' A tıklayın, Visual Studio Team Services (VSTS) Proje panosunu açın **derleme ve yayınlama** menüsünü seçip **WhiteSource Bolt**.
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource avantajı uzantı Ekle](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
-    ![WhiteSource avantajı yükleme uzantısı](_img\vs-whitesource\vs-whitesource-download-install.png)
+6. WhiteSource Bolt avantajı kutucuğundan etkinleştirme kodu yapıştırın ve tıklayın **etkinleştirme**. Her biri, etkinleştirme kodu yalnızca bir proje etkinleştirmek için kullanılabilir.
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource avantajı etkinleştirme kodu](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
 
-    - Ardından, önce kullanmak istediğiniz VSTS hesabı seçin **Onayla**.  (VSTS henüz ayarlamadıysanız ziyaret [avantajları](https://my.visualstudio.com/benefits) sayfasında ve VSTS avantajı etkinleştirin.)
+7.  Etkinleştirme tamamlanır ve 180 gün aboneliğinizde gerekir.
 
-    ![WhiteSource avantajı hesap onaylayın](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+8.  WhiteSource Bolt uzantısı derleme adımlarınızı biri olarak eklemeniz gerekecektir.  Bir video bulunur [WhiteSource Bolt sayfa](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) nasıl göstermek için.
 
-    - Uzantısı yüklü ve kullanıma hazır bir onay iletisi alırsınız.  Tıklatın **başlama** WhiteSource Cıvata sayfasına dönün ve devam edin.
-
-    ![WhiteSource avantajı yükleme tamamlandı](_img\vs-whitesource\vs-whitesource-install-complete.png)
-
-5.  Visual Studio Team Services (VSTS) proje panonuz açın, üzerinde **yapı & yayın** menü ve **WhiteSource Cıvata**.
-
-    ![WhiteSource avantajı uzantı Ekle](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
-
-6. WhiteSource Cıvata avantajı döşeme etkinleştirme kodu yapıştırın ve tıklatın **etkinleştirme**. Etkinleştirme kodunun her biri yalnızca bir proje etkinleştirmek için kullanılabilir.
-
-    ![WhiteSource avantajı etkinleştirme kodu](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
-
-7.  Etkinleştirme tamamlanmıştır ve aboneliğinizde 180 gün gerekir.
-
-8.  Derleme adımları biri olarak WhiteSource Cıvata uzantısı eklemeniz gerekir.  Bir video kullanılabilir [WhiteSource Cıvata sayfa](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) nasıl göstermek için.
-
-9. Yapınızın çalıştırdıktan sonra aşağıdaki kapsamlı raporlar ve panolar otomatik olarak oluşturulur:
+9. Derleme çalıştırdıktan sonra aşağıdaki kapsamlı raporlar ve panolar otomatik olarak oluşturulur:
     - Güvenlik açıklarını Panosu
     - Güvenlik açıklarını raporu
-    - Eski kitaplıkları raporu
+    - Güncel olmayan kitaplıklar raporu
     - Lisans riskleri ve uyumluluk Panosu
     - Envanter raporu
 
@@ -75,19 +75,19 @@ Bul ve açık kaynak güvenlik açıkları düzeltin ve yapı içinde tüm açı
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet          |
-| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | Mevcut değil                                                           |Yok         |
-| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok         |
+| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 6 ay       |  Evet          |
+| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | Kullanılabilir değil                                                           |Yok         |
+| Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              | Yok         |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).  Dışlar: Diğer değil Microsoft iş ortağı satışı (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve Hizmetleri geliştirici, BizSpark, Microsoft değerli iş ortağı (MVP), bölge Yöneticisi (RD), MCT yazılım ve hizmetlerini düşünün için (ağ Professional).*
+<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).    Dışlar: Diğer değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine için Microsoft iş ortağı ağ () Professional).*
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
+Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
 
--  Yardım WhiteSource Cıvata mı gerekiyor?  Sohbet WhiteSource Cıvata temsilcisi ile canlı https://www.whitesourcesoftware.com/vse_whitesource_bolt/
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  WhiteSource Bolt yardıma mı ihtiyacınız var?  WhiteSource Bolt temsilci ile Sohbet Canlı https://www.whitesourcesoftware.com/vse_whitesource_bolt/
+-  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

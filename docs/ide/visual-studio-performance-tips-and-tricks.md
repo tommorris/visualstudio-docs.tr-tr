@@ -1,21 +1,20 @@
 ---
-title: Visual Studio performans ipuçları ve püf noktaları
-ms.date: 08/31/2017
+title: Performansı iyileştirmeye yönelik ipuçları
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433541"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623949"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
@@ -40,7 +39,13 @@ Visual Studio bir sarı çubuk, önemli ölçüde daha yavaş yüklemek bir çö
 
 1. Üzerinde **proje ve çözüm** > **genel** sayfasında, seçimini **çözüm yükü belgelerde yeniden**.
 
-Otomatik dosya geri yükleme devre dışı bırakırsanız, açmak istediğiniz dosyaları bulmak için hızlı bir şekilde kullanmaktır [Git](../ide/go-to.md). Seçin **Düzenle** > **Git** > **tümüne Git**, veya basın **Ctrl**+**T** .
+Otomatik dosya geri yükleme devre dışı bırakırsanız, açmak istediğiniz dosyaları bulmak için hızlı bir şekilde birini kullanarak olan [Git](../ide/go-to.md) komutları:
+
+- Genel için **Git** işlevi, select **Düzenle** > **Git** > **tümüne Git**, veya tuşunabasın **CTRL**+**T**.
+
+- Visual Studio 2017 sürüm 15,8 ve daha sonra son bir çözüm kullanarak düzenleme konumu atlayabilirsiniz **Düzenle** > **Git** > **Git son Düzen konumuna**, veya basarak **Ctrl**+**Shift**+**geri**.
+
+- Visual Studio 2017'de 15,8 ve sonraki sürümleri kullanın **son dosya** bir çözümde en son ziyaret edilen dosyaların listesini görmek için. Seçin **Düzenle** > **Git** > **son dosya**, veya basın **Ctrl** + **1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Hata ayıklama seçeneklerini yapılandırma
 

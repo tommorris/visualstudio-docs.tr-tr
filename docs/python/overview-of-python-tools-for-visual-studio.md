@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468783"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623898"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -84,7 +84,7 @@ Visual Studio zamanla büyüdükçe, bir proje karmaşıklığını yönetmenize
 
 Proje ve öğe şablonlarını projeleri ve dosyaları farklı türleri ayarlama, değerli zaman tasarrufu sağlar ve karmaşık ve hatalara eğilimli ayrıntılarını yönetmesini oluşturma işlemini otomatik hale getirin. Visual Studio, web, Azure, veri bilimi, konsol ve projeleri, dosyaları Python sınıfları, birim testleri, Azure web yapılandırması, HTML ve hatta Django uygulamaları gibi şablonları yanı sıra diğer türleri için şablonlar sağlar.
 
-[![Visual Studio'da Python proje ve öğe şablonları](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+[![Visual Studio'da Python proje ve öğe şablonları](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Daha fazla bilgi için:
 
@@ -114,7 +114,7 @@ Daha fazla bilgi için:
 
 Profil oluşturma nasıl uygulamanızdaki zaman harcandığını keşfediyor. Visual Studio ile yorumlayıcılarını CPython tabanlı profil oluşturmayı destekler ve performans profil oluşturma farklı çalıştırma arasında karşılaştırma özelliğini içerir.
 
-[![Python projesi için Visual Studio profil oluşturucu sonuç](media/profiling-results.png)](media/profiling-results.png)
+[![Python projesi için Visual Studio profil oluşturucu sonuç](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Daha fazla bilgi için:
 

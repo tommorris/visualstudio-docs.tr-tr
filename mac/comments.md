@@ -1,34 +1,34 @@
 ---
 title: Açıklamalar
-description: Mac için Visual Studio kaynak düzenleyicisinde açıklamaları kullanılarak bu makalede
-author: asb3993
-ms.author: amburns
+description: Bu makalede, Mac için Visual Studio kaynak düzenleyicisinde açıklamalar kullanılarak açıklanır.
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 4a7dfd0daaddad9f91d461689a0174469dd253c2
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 28c02f7f6347da67133a82c1d0aa71d44a4309d2
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865393"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624237"
 ---
 # <a name="comments"></a>Açıklamalar
 
-Hata ayıklama veya koduyla denemeler, kod blokları ya da geçici olarak yorum yapmak veya uzun süreli yararlı olabilir. 
+Hata ayıklama veya kodla denemeler, kod bloklarını ya da geçici olarak açıklama satırı yapın veya uzun süreli yararlı olabilir. 
 
 Tüm bir kod bloğunu açıklama eklemek için:
 
-* Kod seçip **geçiş satırı yorumları** ve bağlam menüsünden
+* Kod seçip **geçiş _Satır** bağlam menüsünden
 
 VEYA
 
-* Kullanım `cmd + /` keybinding seçili kodu.
+* Kullanım `cmd + /` tuş üzerinde seçili kod.
 
-Bu yöntemler, açıklama ve kodun bölümlerine için kullanılabilir. C# dosyalarını, satır yorumlar ek düzeyleri, bölgeler açıklanmış ve uncommented sırasında hala koruma gerçek açıklamaları olması kodlarının sağlayan eklenebilir: 
+Bu yöntemler, açıklama ve kodun bölümlerine için kullanılabilir. C# dosyaları ek düzeyleri satırlı yorumlar, açıklanmış ve açıklamalı olmayan çalışırken yine de koruma gerçek yorumları kodlarının bölgeleri sağlayan eklenebilir: 
 
- ![birden çok düzeyli açıklamaları](media/source-editor-image8.png)
+ ![çok düzeyli açıklamaları](media/source-editor-image8.png)
 
-Açıklamalar, onunla etkileşimde bulunabilir gelecekteki geliştiriciler için kod belgeleme için faydalıdır. Bunlar genellikle şu şekilde her iki dilde eklenen çok satırlı yorumlar biçiminde gerçekleştirilir:
+Açıklamalar, panoyla etkileşim gelecekteki geliştiriciler için kod belgeleme için kullanışlıdır. Bunlar genellikle şu şekilde her dilde eklenen çok satırlı yorumlar biçiminde gerçekleştirilir:
 
 **C#**
 

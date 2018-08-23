@@ -9,12 +9,12 @@ description: Kuruluşunuzun Visual Studio abonelikleri Yönetici portalı ile y�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380824"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624220"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalını kullanma
 
@@ -68,9 +68,11 @@ Abonelikleri atadıktan sonra abonelerin sekmesini dahil olmak üzere abonelerin
 - İsteğe bağlı bir alan iletişimleri oturum açma amaçlarıyla kullanılan farklı bir e-posta adresi. 
 
 Bu sayfanın sol tarafındaki abonelik lisansları satın alınan, atanan ve kuruluşunuzdaki her anlaşma için hala kullanılabilir sayısı hakkında daha fazla bilgi görebilirsiniz.
-    ![Visual Studio abonelikleri Yönetim Portalı aboneleri sayfası](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio abonelikleri Yönetim Portalı aboneleri sayfası](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Ayrıntılar sayfası anlama
 Görüntülemekte olduğunuz Sözleşmesi hakkında daha fazla bilgi için Ayrıntılar sekmesini seçin. Sözleşme durumu gösteren, hesap, kuruluş ayrıntıları, birincil ilgili kişi (VLSC), süper yöneticilerin (varsa) ve diğer ilgili bilgileri satın alma.
-    ![Visual Studio abonelikleri Yönetim Portalı Ayrıntıları sayfası](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio abonelikleri Yönetim Portalı Ayrıntıları sayfası](_img/using-admin-portal/details-page.png)
 

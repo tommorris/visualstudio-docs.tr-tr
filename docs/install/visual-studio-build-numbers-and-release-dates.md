@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/02/2018
+ms.date: 08/20/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb4b85bff3b47bba9de15a16c8cf104482eb643
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 513b97d650efbe983d2fbe075532ecd45c2fa966
+ms.sourcegitcommit: d96d2888ee2d4a2a33c508c3787e259478134bae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499038"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42624081"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 derleme numaraları ve yayın tarihleri
 
@@ -25,6 +25,10 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.0 Önizleme 1 | Önizleme | 20 Ağustos 2018 | 15.9.28016.0 |
+| 15.8.1 | Sürüm | 17 Ağustos 2018 | 15.8.28010.2003 |
+| 15.8.0 | Sürüm | 14 Ağustos 2018 | 15.8.28010.0 |
+| 15.0.17 | Sürüm | 14 Ağustos 2018 | 15.0.26228.49 |
 | 15.7.6 | Sürüm | 2 Ağustos 2018 | 15.7.27703.2047 |
 | 15.0.16 | Sürüm | 2 Ağustos 2018 | 15.0.26228.48 |
 | 15.8.0 preview 5 | Önizleme | 26 Temmuz 2018 | 15.8.27924.0 |

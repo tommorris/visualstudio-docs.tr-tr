@@ -1,62 +1,62 @@
 ---
-title: Yapı yapılandırmaları oluşturma ve düzenleme
+title: Derleme yapılandırmaları oluşturma ve düzenleme
 description: Bu makalede Mac için Visual Studio'da oluşturma derleme yapılandırmaları
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: bf097924da2640faed75f4dcef0c82698078911b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 1aadff851c709141f37f89431403bce857bafdbe
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864765"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624073"
 ---
-# <a name="creating-and-editing-build-configurations"></a>Yapı yapılandırmaları oluşturma ve düzenleme
+# <a name="creating-and-editing-build-configurations"></a>Derleme yapılandırmaları oluşturma ve düzenleme
 
-Yapı yapılandırmaları tek tek projeler veya çözüm genelinde temelinde oluşturulabilir. Bu yapılandırmalar bir yapı üzerinde tam denetim verir.
+Derleme yapılandırmaları, tek tek projeler için veya bir çözüm çapında temelinde oluşturulabilir. Bu yapılandırmalar bir derleme üzerinde kesin denetim verir.
 
-Projeler ve çözümler için seçenekleri menüsü oluşturmak ve yeni ve mevcut yapılandırmaları düzenlemek için sahip bir alan sağlar.
+Seçenekler menüsünün hem projeler ve çözümler için yeni ve mevcut yapılandırmaları oluşturma ve düzenleme için ile bir alanı sağlar.
 
-## <a name="creating-a-project-build-configurations"></a>Proje derleme yapılandırmaları
+## <a name="creating-a-project-build-configurations"></a>Bir proje derlemesi yapılandırmaları oluşturma
 
-Proje derleme yapılandırması oluşturmak için aşağıdaki adımları uygulayın:
+Bir proje yapı yapılandırmasını oluşturmak için aşağıdaki adımları uygulayın:
 
-1. Proje düğümüne sağ tıklatıp **seçenekleri**.
+1. Proje düğümüne sağ tıklayıp **seçenekleri**.
 
-2. Proje Seçenekleri iletişim kutusunda seçin **Yapı > yapılandırmaları**:
+2. Proje Seçenekleri iletişim kutusunda, seçmek **Yapı > yapılandırmaları**:
 
     ![Yapılandırma Yöneticisi'nde proje seçenekleri](media/create-and-edit-configurations-image2.png)
 
-3. Yeni bir yapılandırma oluşturmak için seçin **Ekle**. Alternatif olarak, var olan yapılandırmalardan birine kopyalayabilirsiniz.
+3. Yeni bir yapılandırma oluşturmak için Seç **Ekle**. Alternatif olarak, mevcut yapılandırmalardan birini kopyalayabilirsiniz.
 
-Yapılandırma oluşturulduktan sonra kullanabileceğiniz **yapı** özelliklerini yapılandırmanıza uygun uyarlamak için Proje Seçenekleri bölümünde:
+Yapılandırma oluşturulduktan sonra kullanabileceğiniz **derleme** özelliklerini yapılandırmanıza uygun uyum sağlamak için Proje Seçenekleri bölümünde:
 
-![Derleme seçenekleri yapılandırın](media/create-and-edit-configurations-image3.png)
+![Yapı seçeneklerini yapılandırma](media/create-and-edit-configurations-image3.png)
 
-## <a name="creating-a-solution-build-configuration"></a>Çözüm derleme yapılandırması oluşturma
+## <a name="creating-a-solution-build-configuration"></a>Çözüm yapı yapılandırması oluşturma
 
-Çözüm derleme yapılandırması oluşturmak için aşağıdaki adımları uygulayın:
+Çözüm yapı yapılandırması oluşturmak için aşağıdaki adımları uygulayın:
 
 
-1. Çözüm düğümüne sağ tıklayın ve seçin **seçenekleri**.
+1. Çözüm düğümüne sağ tıklayıp **seçenekleri**.
 
-2. Çözüm Seçenekleri iletişim kutusunda seçin **Yapı > yapılandırmaları**:
+2. Çözüm Seçenekleri iletişim kutusunda, seçmek **Yapı > yapılandırmaları**:
     
     ![Yapılandırma Yöneticisi'nde çözüm seçenekleri](media/create-and-edit-configurations-image1.png)
 
-3. Yeni bir yapılandırma oluşturmak için seçin **Ekle**. Alternatif olarak, var olan yapılandırmalardan birine kopyalayabilirsiniz.
+3. Yeni bir yapılandırma oluşturmak için Seç **Ekle**. Alternatif olarak, mevcut yapılandırmalardan birini kopyalayabilirsiniz.
 
-Yapılandırma oluşturulduktan sonra kullanabileceğiniz **yapı** özelliklerini yapılandırmanıza uygun uyarlamak için her projenin Seçenekleri bölümünde:
+Yapılandırma oluşturulduktan sonra kullanabileceğiniz **derleme** özelliklerini yapılandırmanıza uygun uyum sağlamak için her projenin Seçenekleri bölümünde:
 
-![Derleme seçenekleri yapılandırın](media/create-and-edit-configurations-image3.png) 
+![Yapı seçeneklerini yapılandırma](media/create-and-edit-configurations-image3.png) 
 
-## <a name="editing-a-build-configuration"></a>Yapı yapılandırması düzenleme
+## <a name="editing-a-build-configuration"></a>Yapı yapılandırmasını düzenleme
 
-Bir yapılandırma yeniden adlandırmak için proje ve çözüm seçenekleri yapılandırma listeden seçin:
+Bir yapılandırma yeniden adlandırmak için proje veya çözüm seçenekleri yapılandırma listeden seçin:
 
 ![yapılandırma listesi](media/create-and-edit-configurations-image4.png) 
 
-Seçin **yeniden adlandırma** düğmesi.
+Seçin **Yeniden Adlandır** düğmesi.
 
-![iletişim yeniden adlandırma](media/create-and-edit-configurations-image5.png) 
+![yeniden adlandırma iletişim kutusu](media/create-and-edit-configurations-image5.png) 

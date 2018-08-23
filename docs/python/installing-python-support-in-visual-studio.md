@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499909"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623921"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
@@ -26,7 +26,7 @@ ms.locfileid: "39499909"
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 veya önceki](#visual-studio-2013-and-earlier)
 
-Visual Studio 2015 ve önceki sürümler için ayrı olarak etmeniz [bir Python yorumlayıcısını yükleyerek](installing-python-interpreters.md) tercih ettiğiniz (Python 3.5 ve daha önce; 3.6 desteklenmez ve ileti oluşturur **desteklenmeyen Python 3.6sürümü**). Aynı sayfayı, ayrıca var olan bir Python yorumlayıcısı Visual Studio 2017'ye ekleme yönergeleri içerir.
+Visual Studio 2015 ve önceki sürümler için ayrı olarak etmeniz [bir Python yorumlayıcısını yükleyerek](installing-python-interpreters.md) tercih ettiğiniz (Python 3.5 ve önceki; 3.6 + desteklenmiyor gibi bir ileti oluşturur **desteklenmeyen Python 3.6sürümü**). Aynı sayfayı, ayrıca var olan bir Python yorumlayıcısı Visual Studio 2017'ye ekleme yönergeleri içerir.
 
 Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test etmek için açık **Python etkileşimli** tuşuna basarak pencere **Alt**+**miyim** ve girme`2+2`. Çıkışı görmüyorsanız `4`, adımlarınızı yeniden denetleyin.
 

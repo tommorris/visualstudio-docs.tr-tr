@@ -1,65 +1,65 @@
 ---
-title: Visual Studio Abonelikteki Danışman sohbet avantajı | Microsoft Docs
+title: Visual Studio aboneliği Concierge Sohbeti avantajı | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/16/2018
 ms.topic: Get-Started-Article
-description: Visual Studio Aboneliklerde bulunan Danışman sohbet avantajı ile ilgili bilgi edinin.
+description: Visual Studio abonelikleri dahil Concierge Chat Avantajı hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 395b05d3b3caa7a800cc28ca1f93c944e6320d1e
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281881"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624292"
 ---
-# <a name="concierge-chat"></a>Danışman sohbet
+# <a name="concierge-chat"></a>Concierge Sohbeti
 
-Danışman sohbet hizmetleri sağlayan ürün bilgileri ve teknik belgeler bulma Yardım de olarak yardımcı Visual Studio abonelik Avantajlarınızı kullanarak.
+Concierge Chat hizmetleri sağlayan ürün bilgileri ve teknik belgeleri bulma Yardım de olarak yardımcı Visual Studio abonelik Avantajlarınızı kullanarak.
 
-Hizmet kullanılabilir 24/7'dir ve şu anda yalnızca (sorular için hesapları, faturalama ve abonelik dışında) İngilizce olarak sunulur.
+Hizmet kullanılabilir 24/7'dir ve şu anda yalnızca (sorular için hesapları, faturalandırma ve abonelik dışında) İngilizce olarak sunulur.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-Danışman sohbet hizmeti üzerinden Yardım alma çok kolaydır.
+Concierge Chat hizmeti aracılığıyla Yardım alma çok kolaydır.
 1. Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Danışman sohbet döşeme avantajları sayfasının destek bölümünü bulun ve tıklayın **Şimdi Sohbet**.
-
-    ![Danışman sohbet döşeme](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+2. Concierge Chat kutucuk avantajlar sayfasında destek bölümünü bulun ve tıklayarak **Şimdi Sohbet Et**.
+    > [!div class="mx-imgBorder"]
+    > ![Concierge Sohbeti kutucuğu](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
 3. 
               **Devam**'a tıklayın.
 
-4. Sohbet penceresi açılır ve konumunuzu sırasındaki gösteren bir sayaç görürsünüz.
+4. Sohbet penceresi açılır ve konumunuzu sırasındaki gösteren bir sayacı göreceksiniz.
 
-5. Bir aracı kullanılabilir olduğunda, sohbet başlar.
-
-    ![Danışman sohbet oturumu](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+5. Bir aracının kullanılabilir olduğunda, sohbet başlar.
+    > [!div class="mx-imgBorder"]
+    > ![Concierge Sohbeti oturumu](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Uygunluk
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, yıllık bulut)   | Toplu Lisans, Azure, perakende, seçili NFR<sup>1</sup> | Kullanılabilir       |  Evet          |
-| Visual Studio Professional (standart, yıllık bulut) | Toplu Lisans, Azure, perakende                                       | Kullanılabilir                                                            |  Evet          |
-| Visual Studio Test uzmanı (standart)                         | Toplu Lisans, perakende                                              | Kullanılabilir                                             |  Evet          |
+| Visual Studio Enterprise (standart, yıllık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Kullanılabilir       |  Evet          |
+| Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | Kullanılabilir                                                            |  Evet          |
+| Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Kullanılabilir                                             |  Evet          |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Kullanılabilir                                              |  Evet          |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir: değil satışı için (NFR), Visual Studio Endüstri ortağı (VSIP) eğitmen, BizSpark Microsoft Sertifikalı.  Dışlar: FTE, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN) düşünün.*
+<sup>1</sup>*içerir: satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft eğitmen, BizSpark sertifikası.    Dışlar: FTE, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN) düşünün.*
 
-Emin değil hangi abonelik kullanmakta olduğunuz?  Bağlanmak [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha farklı bir e-posta adresi için atanmış olabilir.  Bu abonelikleri görmek için bu e-posta adresinizle oturum açmanız gerekir.
+Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>S: Sohbet hizmeti birden çok dilde kullanılabilir mi?
-   A: hesapları, faturalama ve abonelik sorunlara birden çok dilde kullanılabilir.  Ürün bilgileri ve teknik belgeler bulma ile ilgili Yardım İngilizce'dir.
+### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>S: Sohbet hizmeti birden çok dilde kullanılabilir?
+   Y: Yardım hesapları, faturalandırma ve abonelik sorunları olan birden çok dilde kullanılabilir.  Ürün bilgileri ve teknik belgeleri bulma ile ilgili Yardım İngilizce olarak kullanılabilir.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Satış, abonelikler, hesapları ve Visual Studio abonelikler için faturalama daha fazla yardım için Visual Studio başvurun [abonelikleri Destek](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 
 

@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381178"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624339"
 ---
-# <a name="visual-studio-overview"></a>Visual Studio genel bakış
+# <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod oluşturmak için kullanın ve ardından bir uygulama yayımlama takımdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve daha birçok özellik içerir.
 
 Windows ve Mac için Visual Studio kullanılabilir [Mac için Visual Studio](/visualstudio/mac/) birçok Visual Studio 2017 aynı özelliklere sahiptir ve platformlar arası ve mobil uygulamalarını geliştirmek için optimize edilmiştir.
 
-Bu makalede, Windows için Visual Studio 2017'de odaklanır. Temel IDE özellikleri tanıtır. Visual Studio ile basit bir oluşturma gibi yapabileceğiniz bazı şeyleri gösterilecektir kullanan proje [IntelliSense](using-intellisense.md) bir kodlama Yardımı ve programın yürütülmesi sırasında bir değişkenin değerini görmek için bir uygulama hata ayıklama. Biz de çeşitli araç pencerelerine ilişkin tura katılın.
+Bu genel bakış makalesi, Windows için Visual Studio 2017'de odaklanır. Temel IDE özellikleri tanıtır. Visual Studio ile basit bir oluşturma gibi yapabileceğiniz bazı şeyleri gösterilecektir kullanan proje [IntelliSense](using-intellisense.md) bir kodlama Yardımı ve programın yürütülmesi sırasında bir değişkenin değerini görmek için bir uygulama hata ayıklama. Biz de çeşitli araç pencerelerine ilişkin tura katılın.
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE yükleyin
 
@@ -64,7 +64,7 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
 - [IntelliSense](../ide/using-intellisense.md)
 
-   IntelliSense, doğrudan düzenleyicide kod hakkında bilgi görüntülemek ve bazı durumlarda, küçük kod parçalarını sizin için yazma özellikleri kümesi için kullanılan bir terimdir. Bu temel belgeleri satır içi başka bir yerde türü bilgi aramak zorunda kalmaktan kurtarır düzenleyicisinde gibidir. IntelliSense özellikleri dile göre değişiklik gösterir. Daha fazla bilgi için [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), ve [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Aşağıdaki çizimde, IntelliSense üye listesi bir türü için nasıl görüntülediğini gösterir:
+   IntelliSense, doğrudan düzenleyicide kod hakkında bilgi görüntüler ve bazı durumlarda, küçük kod parçalarını sizin için yazma özellikleri kümesi için kullanılan bir terimdir. Bu temel belgeleri satır içi başka bir yerde türü bilgi aramak zorunda kalmaktan kurtarır düzenleyicisinde gibidir. IntelliSense özellikleri dile göre değişiklik gösterir. Daha fazla bilgi için [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), ve [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Aşağıdaki çizimde, IntelliSense üye listesi bir türü için nasıl görüntülediğini gösterir:
 
    ![Visual Studio üye listesi](../ide/media/intellisense-list-members.png)
 
@@ -256,21 +256,32 @@ Varsayılan renk temasını değiştirme dahil olmak üzere Visual Studio kullan
 
    IDE renk temasını tamamı için değişir **koyu**.
 
-   ![VS'de bir koyu tema](media/quickstart-personalize-dark-theme.png)
+   ![Visual Studio'da koyu tema](media/quickstart-personalize-dark-theme.png)
 
 IDE'yi kişiselleştirme diğer yollar hakkında bilgi edinmek için [kişiselleştirme Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="learn-more"></a>Daha fazla bilgi edinin
+## <a name="next-steps"></a>Sonraki adımlar
 
-Bir Android veya iOS telefon için uygulama oluşturmak istiyor? Peki 3D oyun veya Bulut özellikli bir uygulama? Bunlar ve diğer Visual Studio özellikleri hakkında bilgi edinmek için [Visual Studio 2017 özellikleri](../ide/advanced-feature-overview.md).
+Bu tanıtıcı makaleler biriyle boyunca izleyerek daha fazla Visual Studio'ı keşfedin:
 
-Yalnızca hemen kodlamaya başlamak istiyorsanız, hızlı başlangıç konuları, içindekiler tablosundan gibi birini [ilk ASP.NET Core web uygulamanızı oluşturma](quickstart-aspnet-core.md).
+- Kod Düzenleyicisi'nde ile tanışın [Kod Düzenleyicisi'ni kullanmayı öğrenin](quickstart-editor.md)
 
-Kullanılabilir ücretsiz Visual Studio kursları kullanıma de göz atabilirsiniz [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
+- Visual Studio kodu nasıl düzenler öğrenin [projeler ve çözümler hakkında bilgi edinin](quickstart-projects-solutions.md)
+
+Daha fazla kodlama içine dalmaya hazır değilseniz aşağıdaki dile özgü hızlı başlangıçları iyi bir sonraki adım biridir:
+
+- [İlk Python web uygulamanızı oluşturmak için Visual Studio](quickstart-python.md)
+
+- [İlk C# web uygulamanızı oluşturmak için Visual Studio](quickstart-aspnet-core.md)
+
+- [İlk Node.js uygulamanızı oluşturmak için Visual Studio](quickstart-nodejs.md)
+
+- [Visual Studio'da C++ kullanmaya başlama](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Daha fazla Visual Studio özellikleri](../ide/advanced-feature-overview.md)
-* [VisualStudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [Visual Studio blogu](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- Bulma [daha fazla Visual Studio özellikleri](../ide/advanced-feature-overview.md)
+- Ziyaret [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Okuma [Visual Studio blogu](https://blogs.msdn.microsoft.com/visualstudio/)
+- Ücretsiz Visual Studio kursları kullanıma [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)
+- Visual Studio'yu indirin [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

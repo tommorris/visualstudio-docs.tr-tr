@@ -1,7 +1,7 @@
 ---
 title: Öğretici - Django Visual Studio'da 2. adım bilgi edinin
 description: Visual Studio projeleri, özellikle bir uygulama oluşturma ve görünümleri ve şablonlar kullanma adımları bağlamında Django temel bilgileri bir kılavuz.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae6c08942c3dccc735104c6e5221989290c6afd4
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637568"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624125"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2. adım: görünümleri ve şablonların bir Django uygulaması oluşturma
 
@@ -52,7 +52,7 @@ Her iki yöntemi kullanarak, "HelloDjangoApp" adı ile bir uygulama oluşturun. 
 | --- | --- |
 | **\_\_init\_\_.py** | Uygulamayı bir paket olarak tanımlayan dosya. |
 | **Geçişleri** | Django ile hizalamak için veritabanını güncelleştiren komut dosyaları depolayan bir klasör için modelleri değiştirir. Geçerli modelleri eşleşmesi Django'nın Geçiş Araçları veritabanının önceki bir sürümüne sonra gerekli değişiklikleri uygulayın. Modellerinizi üzerinde odaklanma tutun migrations'ı kullanma ve temel alınan veritabanı şemasını işlemek Django olanak tanır. Geçişler, 6. adımda ele alınmıştır; şimdilik yalnızca klasörü içeren bir  *\_ \_init\_\_.py* dosyası (klasörü kendi Python paketini tanımlar gösterir). |
-| **Şablonları** | Django sayfası şablonlarını içeren tek bir dosya için bir klasör *index.html*. İçine bir sayfayı dinamik olarak oluşturmak için bilgi görünümleri ekleyebilirsiniz HTML bloklarını şablonlardır. Şablon "değişkenler," gibi sayfa `{{ content }}` içinde *index.html*, bu makalenin ilerleyen bölümlerinde (2. adım) açıklandığı gibi dinamik değerler için yer tutucular olan. Genellikle Django uygulamaları, uygulama adıyla eşleşen bir alt klasöre yerleştirerek, şablon için bir ad alanı oluşturun. |
+| **Şablonları** | Django sayfası şablonlarını içeren tek bir dosya için bir klasör *index.html* uygulama adıyla eşleşen bir klasör içinde. (Visual Studio 2017 15.7 ve önceki sürümlerinde, dosyanın doğrudan altında bulunan *şablonları* ve adım 2-4 bildirir, bir alt klasör oluşturun.) İçine bir sayfayı dinamik olarak oluşturmak için bilgi görünümleri ekleyebilirsiniz HTML bloklarını şablonlardır. Şablon "değişkenler," gibi sayfa `{{ content }}` içinde *index.html*, bu makalenin ilerleyen bölümlerinde (2. adım) açıklandığı gibi dinamik değerler için yer tutucular olan. Genellikle Django uygulamaları, uygulama adıyla eşleşen bir alt klasöre yerleştirerek, şablon için bir ad alanı oluşturun. |
 | **Admin.PY** | Uygulamayı genişletmek Python dosyası yönetim arabirimini görmek için kullanıldığı ve bir veritabanındaki verileri düzenleme (adım 6'ya bakın). Başlangıçta, bu dosya yalnızca deyimi içerir `from django.contrib import admin`. Varsayılan olarak, Django Django projesinin girişleri aracılığıyla standart bir yönetim arabirimi içerir *settings.py* uncommenting mevcut girişlere göre açabilirsiniz dosyasını *urls.py*. |
 | **Apps.PY** | (Bu tablodan sonraki, aşağıya bakın) uygulaması için bir yapılandırma sınıfı tanımlayan bir Python dosyası. |
 | **models.PY** | Veri nesneleri, işlevleri, görünümleri uygulamanın temel veritabanıyla etkileşim tarafından tanımlanan modelleridir (6. adıma bakın). Django veritabanı bağlantı katmanı sağladığından uygulamalar kendilerini bu ayrıntılarla ilgilendiriyor gerekmez. *Models.py* dosya bir varsayılan Modellerinizi oluşturulacağı yerdir ve başlangıçta yalnızca deyimi içeren `from django.db import models`. |
@@ -176,7 +176,7 @@ Aşağıdaki adımlarda, şablonların kullanımı gösterilmektedir:
     'APP_DIRS': True,
     ```
 
-1. İçinde *HelloDjangoApp* açık klasör *templates/index.html* tek bir değişken içeren gözlemlemek için sayfa şablon dosyası `{{ content }}`:
+1. İçinde *HelloDjangoApp* açık klasör *templates/HelloDjangoApp/index.html* sayfa şablon dosyası (veya *templates/index.html* VS 2017 15.7 ve önceki sürümler), tek bir değişken içeren gözlemleyin `{{ content }}`:
 
     ```html
     <html>
@@ -200,7 +200,8 @@ Aşağıdaki adımlarda, şablonların kullanımı gösterilmektedir:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
             }
@@ -211,7 +212,7 @@ Aşağıdaki adımlarda, şablonların kullanımı gösterilmektedir:
 
 1. Projeyi çalıştırın ve çıktıyı gözlemleyin. Şablon çalıştığını gösteren adım 2-2 görülen benzer bir ileti görmeniz gerekir.
 
-    Ancak, HTML olarak kullandığınız gözlemleyin `content` özelliği, çünkü yalnızca düz metin olarak işler `render` işlevi otomatik olarak bu HTML atlar. Kaçış otomatik ekleme saldırılarına karşı yanlışlıkla güvenlik açıklarını önlemeye: geliştiriciler genellikle bir sayfadan giriş toplayın ve şablon yer tutucu aracılığıyla başka bir değer olarak kullanın. Kaçış Ayrıca, yeniden HTML sayfası şablonu ve kodunun dışında tutmak en iyi olduğunu anımsatıcı işlevi görür. Neyse ki, bu ek değişkenleri oluşturmak üzere basit ayıklamadır gerektiğinde. Örneğin, değiştirme *templates/index.html* sayfa başlığı ve tutar sayfa şablonunun tüm biçimlendirme ekler aşağıdaki biçimlendirme eşleştirmek için:
+    Ancak, HTML olarak kullandığınız gözlemleyin `content` özelliği, çünkü yalnızca düz metin olarak işler `render` işlevi otomatik olarak bu HTML atlar. Kaçış otomatik ekleme saldırılarına karşı yanlışlıkla güvenlik açıklarını önlemeye: geliştiriciler genellikle bir sayfadan giriş toplayın ve şablon yer tutucu aracılığıyla başka bir değer olarak kullanın. Kaçış Ayrıca, yeniden HTML sayfası şablonu ve kodunun dışında tutmak en iyi olduğunu anımsatıcı işlevi görür. Neyse ki, bu ek değişkenleri oluşturmak üzere basit ayıklamadır gerektiğinde. Örneğin, değiştirme *index.html* ile *şablonları* sayfa başlığı ve tutar sayfa şablonunun tüm biçimlendirme ekler aşağıdaki biçimlendirme eşleştirmek için:
 
     ```html
     <html>
@@ -232,7 +233,8 @@ Aşağıdaki adımlarda, şablonların kullanımı gösterilmektedir:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'title' : "Hello Django",
                 'message' : "Hello Django!",
@@ -245,7 +247,7 @@ Aşağıdaki adımlarda, şablonların kullanımı gösterilmektedir:
 
     ![Şablon kullanarak çalışan uygulama](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Son adım olarak, şablonlarınızı bir ad alanı oluşturur ve projeye eklemiş olabileceğiniz diğer uygulamalarla olası çakışmaları ortadan kaldırır, uygulama, aynı adlı bir alt klasör içine taşıyın. Diğer bir deyişle, bir alt klasöre oluşturma *şablonları* adlı *HelloDjangoApp*, taşıma *index.html* o alt klasörü içine ve değiştirme `index` görüntülemek başvurmak için işlevi Şablonun yeni yolu *HelloDjangoApp/index.html*. Ardından projeyi çalıştırın, sayfanın düzgün bir şekilde oluşturulduğunu doğrulayın ve sunucuyu durdur.
+1. <a name="template-namespacing"></a>Visual Studio 2017 sürüm 15.7 ve önceki: son adım olarak, bir ad alanı oluşturur ve projeye eklemek diğer uygulamalarla olası çakışmaları ortadan kaldırır, uygulama, aynı adlı bir alt klasör içine şablonlarınızı taşıyın. (VS 2017'de 15,8 + şablonlarında sizin için otomatik olarak bunu.) Diğer bir deyişle, bir alt klasöre oluşturma *şablonları* adlı *HelloDjangoApp*, taşıma *index.html* o alt klasörü içine ve değiştirme `index` görüntülemek başvurmak için işlevi Şablonun yeni yolu *HelloDjangoApp/index.html*. Ardından projeyi çalıştırın, sayfanın düzgün bir şekilde oluşturulduğunu doğrulayın ve sunucuyu durdur.
 
 1. Kaynak denetimi ve uzak deponuz isterseniz altında açıklandığı gibi güncelleştirmek için değişikliklerinizi işleyin [2 2. adım](#commit-to-source-control).
 

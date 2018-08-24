@@ -1,7 +1,6 @@
 ---
 title: Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/21/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
@@ -10,24 +9,22 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0cce9882add1443c2d9187d65b26a25081aac75b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231862"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634947"
 ---
-# <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin uygulamalarıyla Uygulama Yaşam Döngüsü Yönetimi (ALM)
+# <a name="devops-with-xamarin-apps"></a>Xamarin uygulamaları ile DevOps
 
 Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen platformlar arası mobil uygulamalar oluşturmanıza olanak sağlar. Xamarin platformlarla yalnızca platforma özgü olmalarına gerek küçük bir yüzdesine arasında paylaşılan kod büyük bir kısmı sağlar. Xamarin kendisi hakkında daha fazla bilgi için bkz. [Visual Studio ve Xamarin](../cross-platform/visual-studio-and-xamarin.md).
 
 Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok daha fazla etkinlik içerir. DevOps (geliştirme + işlem), uygulamanın tam yaşam döngüsü span ve planlama ve izleme çalışması, tasarlama ve uygulama kodu, kaynak kodu deposu, yönetme, çalışan sürekli tümleştirme yönetme dahil olarak başvurulan, bu etkinlikler dağıtımlar, test etme (dahil, birim testleri ve UI testleri) çeşitli türleri Tanılama, hem geliştirme hem de üretim ortamlarında çalışan ve uygulama performansı ve kullanıcı davranışlarını gerçek zamanlı olarak telemetri ve analiz izleme.
 
-Visual Studio Team Services ve Team Foundation Server ile birlikte Visual Studio uygulama yaşam döngüsü yönetimi veya ALM da bilinir, DevOps özelliklerini çeşitli sağlar. Bunların çoğu, tamamen platformlar arası projeler için geçerlidir.
+Visual Studio Team Services ve Team Foundation Server ile birlikte Visual Studio çeşitli DevOps özellikler sağlar. Bunların çoğu, tamamen platformlar arası projeler için geçerlidir. C# ve .NET araçları bazı hangi DevOps oluşturulmuştur, ile tasarlanmaları nedeniyle bu Xamarin uygulamaları ile özellikle doğrudur. Diğer araçları, derleme ve çalışma zamanı ortamları ile sıkı tümleştirme gerektirir. Xamarin uygulamaları Windows dışı platformlarda çalıştırın ve Mono .NET uygulaması içerdiğinden, Xamarin, belirli özel araçlar gerekir sağlar.
 
-Bunlar C# ve .NET araçları bazı hangi ALM oluşturulmuştur, yerleşik olduğundan bu Xamarin uygulamaları ile özellikle doğrudur. Diğer araçları, derleme ve çalışma zamanı ortamları ile sıkı tümleştirme gerektirir. Xamarin uygulamaları Windows dışı platformlarda çalıştırın ve Mono .NET uygulaması içerdiğinden, Xamarin, belirli özel araçlar gerekir sağlar.
-
-Aşağıdaki tablolarda, Visual Studio ALM özellikleri tanımlayan bir Xamarin projesi ile düzgün çalışması bekleyebilirsiniz ve hangilerinin sınırlamaları vardır. Özellikleri hakkında daha fazla ayrıntı için bağlantılı belgelerine bakın.
+Aşağıdaki tablolarda, iyi bir Xamarin projesi ile çalışması bekleyebilirsiniz Visual Studio'da DevOps özellikleri ve sınırlamaları hangilerinin sahip belirleyin. Özellikleri hakkında daha fazla ayrıntı için bağlantılı belgelerine bakın.
 
 ## <a name="agile-tools"></a>Çevik Araçlar
 

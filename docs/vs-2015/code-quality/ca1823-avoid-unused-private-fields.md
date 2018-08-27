@@ -20,42 +20,44 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 306c587daa63089114d2bceefda42b064f8cc6fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfe51ab6c163c82d413c5c7cc74edc0b980abd85
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682420"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900326"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Kullanılmayan özel alanlardan kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1823: kullanılmayan özel alanlardan kaçının](https://docs.microsoft.com/visualstudio/code-quality/ca1823-avoid-unused-private-fields).  
-  
-TypeName | AvoidUnusedPrivateFields |  
-| Checkıd | CA1823 |  
-| Kategori | Microsoft.Performance|  
-| Yeni değişiklik | Bölünemez |  
-  
-## <a name="cause"></a>Sebep  
- Bu kural, kodunuzda bir özel alan var ancak herhangi bir kod yolu tarafından kullanılmayan bildirilir.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Derlemede erişimi görülmeyen özel alanlar algılandı.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için alanı kaldırın veya onu kullanan kodu ekleyin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan bir uyarıyı bastırmak güvenlidir.  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA1812: Örneklendirilmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
-  
- [CA1801: Kullanılmayan parametreleri gözden geçir](../code-quality/ca1801-review-unused-parameters.md)  
-  
- [CA1804: Kullanılmayan yerel öğeleri kaldırın](../code-quality/ca1804-remove-unused-locals.md)  
-  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1823: kullanılmayan özel alanlardan kaçının](https://docs.microsoft.com/visualstudio/code-quality/ca1823-avoid-unused-private-fields).
+
+|||
+|-|-|
+|TypeName|AvoidUnusedPrivateFields|
+|CheckId|CA1823|
+|Kategori|Microsoft.Performance|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Bu kural, kodunuzda bir özel alan var ancak herhangi bir kod yolu tarafından kullanılmayan bildirilir.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Derlemede erişimi görülmeyen özel alanlar algılandı.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için alanı kaldırın veya onu kullanan kodu ekleyin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan bir uyarıyı bastırmak güvenlidir.
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA1812: Örneklendirilmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+
+ [CA1801: Kullanılmayan parametreleri gözden geçir](../code-quality/ca1801-review-unused-parameters.md)
+
+ [CA1804: Kullanılmayan yerel öğeleri kaldırın](../code-quality/ca1804-remove-unused-locals.md)
+
  [CA1811: Çağrılmayan özel kodlardan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
 

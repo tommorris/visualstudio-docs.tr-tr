@@ -20,44 +20,46 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8c4e3af21672c77ba982b98f3d672149be76faa5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5edfdca7fe3834160a7120528b56a2770924bf83
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691465"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902987"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: İç içe türler görünebilir olmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1034: iç içe türler görünebilir olmamalıdır](https://docs.microsoft.com/visualstudio/code-quality/ca1034-nested-types-should-not-be-visible).  
-  
-TypeName | NestedTypesShouldNotBeVisible |  
-| Checkıd | CA1034 |  
-| Kategori | Microsoft.Design|  
-| Yeni değişiklik | Bozucu |  
-  
-## <a name="cause"></a>Sebep  
- Dışarıdan görünen tür dışarıdan görünen tür bildirimi içerir. İç içe geçmiş sabit listeleri ve korumalı türler, bu kuralın dışındadır.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- İç içe türü başka bir tür kapsamı içinde bildirilen bir türdür. İç içe geçmiş türler, içeren türde özel uygulama ayrıntılarını kapsüllemek için kullanışlıdır. Bu amaçla kullanılan, iç içe türün dışarıdan görünür olmaması gerekir.  
-  
- Dışarıdan görünen bir iç içe geçmiş türler, mantıksal gruplandırma veya ad çakışmalarını önlemek için kullanmayın; Bunun yerine, ad alanları kullanın.  
-  
- İç içe türler bazı programcılar açıkça anlaşılmıyor üye erişilebilirliği, kavramını içerir.  
-  
- Korumalı türler, alt sınıfların ve iç içe geçmiş türler Gelişmiş özelleştirme senaryolarda kullanılabilir.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- İç içe türün dışarıdan görünür olmasını düşünmüyorsanız, türün erişilebilirliği değiştirin. Aksi takdirde, iç içe türün üst öğesinden kaldırın. İç içe amacı, iç içe türün kategorilere ayırmak için ise, bunun yerine bir hiyerarşi oluşturmak için bir ad kullanın.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan uyarıyı bastırmayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek kuralını ihlal eden bir tür gösterir.  
-  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1034: iç içe türler görünebilir olmamalıdır](https://docs.microsoft.com/visualstudio/code-quality/ca1034-nested-types-should-not-be-visible).
+
+|||
+|-|-|
+|TypeName|NestedTypesShouldNotBeVisible|
+|CheckId|CA1034|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Dışarıdan görünen tür dışarıdan görünen tür bildirimi içerir. İç içe geçmiş sabit listeleri ve korumalı türler, bu kuralın dışındadır.
+
+## <a name="rule-description"></a>Kural Tanımı
+ İç içe türü başka bir tür kapsamı içinde bildirilen bir türdür. İç içe geçmiş türler, içeren türde özel uygulama ayrıntılarını kapsüllemek için kullanışlıdır. Bu amaçla kullanılan, iç içe türün dışarıdan görünür olmaması gerekir.
+
+ Dışarıdan görünen bir iç içe geçmiş türler, mantıksal gruplandırma veya ad çakışmalarını önlemek için kullanmayın; Bunun yerine, ad alanları kullanın.
+
+ İç içe türler bazı programcılar açıkça anlaşılmıyor üye erişilebilirliği, kavramını içerir.
+
+ Korumalı türler, alt sınıfların ve iç içe geçmiş türler Gelişmiş özelleştirme senaryolarda kullanılabilir.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ İç içe türün dışarıdan görünür olmasını düşünmüyorsanız, türün erişilebilirliği değiştirin. Aksi takdirde, iç içe türün üst öğesinden kaldırın. İç içe amacı, iç içe türün kategorilere ayırmak için ise, bunun yerine bir hiyerarşi oluşturmak için bir ad kullanın.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek kuralını ihlal eden bir tür gösterir.
+
  [!code-cpp[FxCop.Design.NestedTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.NestedTypes/cpp/FxCop.Design.NestedTypes.cpp#1)]
  [!code-csharp[FxCop.Design.NestedTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NestedTypes/cs/FxCop.Design.NestedTypes.cs#1)]
  [!code-vb[FxCop.Design.NestedTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.NestedTypes/vb/FxCop.Design.NestedTypes.vb#1)]

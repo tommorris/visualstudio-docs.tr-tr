@@ -20,36 +20,38 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e14dfd8aaa51d20cf8c8d5bbd21934b17225847
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f5a40d412b8ea9616dd75d7e0424ba447b5a185
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688249"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900781"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Dizeleri büyük harfe normalleştirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1308: dizeleri büyük harfe normalleştirin](https://docs.microsoft.com/visualstudio/code-quality/ca1308-normalize-strings-to-uppercase).  
-  
-TypeName | NormalizeStringsToUppercase |  
-| Checkıd | CA1308 |  
-| Kategori | Microsoft.Globalization|  
-| Yeni değişiklik | Bölünemez |  
-  
-## <a name="cause"></a>Sebep  
- Bir işlem, bir dizeyi küçük harfe normalleştirir.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Dizeler büyük harfe normalleştirilmeli. Küçük bir grup karakterlerin küçük harfe dönüştürülür, gidiş dönüş yapamaz. Gidiş dönüş yapmak dönüştürülmüş karakterlerinden özgün karakterler karakterleri bir yerel ayardan farklı karakter verileri temsil eden başka bir yerel ayar ve ardından için doğru bir şekilde dönüştürmek için yol alın.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Değiştirme dizelerini küçük harfe dönüştürmek ve böylece dizeleri dönüştürülür işlemleri yerine büyük. Örneğin, değiştirme `String.ToLower(CultureInfo.InvariantCulture)` için `String.ToUpper(CultureInfo.InvariantCulture)`.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- (Örneğin, kullanıcı Arabiriminde görüntülemekte olduğunuz) sonucuna dayalı güvenlik kararı yaparken değil, bir uyarı iletisi bastırmak güvenlidir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1308: dizeleri büyük harfe normalleştirin](https://docs.microsoft.com/visualstudio/code-quality/ca1308-normalize-strings-to-uppercase).
+
+|||
+|-|-|
+|TypeName|NormalizeStringsToUppercase|
+|CheckId|CA1308|
+|Kategori|Microsoft.Globalization|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Bir işlem, bir dizeyi küçük harfe normalleştirir.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Dizeler büyük harfe normalleştirilmeli. Küçük bir grup karakterlerin küçük harfe dönüştürülür, gidiş dönüş yapamaz. Gidiş dönüş yapmak dönüştürülmüş karakterlerinden özgün karakterler karakterleri bir yerel ayardan farklı karakter verileri temsil eden başka bir yerel ayar ve ardından için doğru bir şekilde dönüştürmek için yol alın.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Değiştirme dizelerini küçük harfe dönüştürmek ve böylece dizeleri dönüştürülür işlemleri yerine büyük. Örneğin, değiştirme `String.ToLower(CultureInfo.InvariantCulture)` için `String.ToUpper(CultureInfo.InvariantCulture)`.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ (Örneğin, kullanıcı Arabiriminde görüntülemekte olduğunuz) sonucuna dayalı güvenlik kararı yaparken değil, bir uyarı iletisi bastırmak güvenlidir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
  [Genelleştirme Uyarıları](../code-quality/globalization-warnings.md)
 
 

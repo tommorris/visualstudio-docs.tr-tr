@@ -20,46 +20,48 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 29ee7abca719af8fe1c4d38ee9f1e8756b1bf324
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43edecc9b5e5f4aa662f30dc1ac84a5e8c3b991e
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689831"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902850"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Görünür örnek alanlarını bildirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1051: görünür örnek alanlarını bildirmeyin](https://docs.microsoft.com/visualstudio/code-quality/ca1051-do-not-declare-visible-instance-fields).  
-  
-TypeName | DoNotDeclareVisibleInstanceFields |  
-| Checkıd | CA1051 |  
-| Kategori | Microsoft.Design|  
-| Yeni değişiklik | Bozucu |  
-  
-## <a name="cause"></a>Sebep  
- Dışarıdan görünen bir tür bir dışarıdan görünür örnek alanı vardır.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Bir alanın birincil kullanım alanının uygulama ayrıntısı olması gerekir. Alanlar olmalıdır `private` veya `internal` ve özelliklerini kullanmaya maruz kalması. Bir alana erişmek olduğu ve özellikleri türünde bozucu değişiklikler oluşturmaksızın genişlettikçe özellik erişimcileri kodda değiştirebilirsiniz bir özelliğe erişmek oldukça kolaydır. Yalnızca özel veya iç alan değerini döndüren özellikler, bir alana erişim özellik gerçekleştirmek için optimize edilmiş; çok az performans kazancı özellikler üzerinde dışarıdan görünen alanları kullanımı ile ilişkilidir.  
-  
- Dışarıdan görünen başvurduğu `public`, `protected`, ve `protected internal` (`Public`, `Protected`, ve `Protected Friend` Visual Basic'te) erişilebilirlik düzeyleri.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için alanın olmasını `private` veya `internal` ve dışarıdan görünen bir özelliğini kullanarak üzerinden kullanıma sunacaksınız.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan uyarıyı bastırmayın. Dışarıdan görünen alanlar, özellikler için kullanılabilir olan herhangi bir avantaj sağlamaz. Ayrıca, ortak alanları tarafından korunamaz [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Bkz: [CA2112: güvenli türler alanları kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir tür gösterir (`BadPublicInstanceFields`), bu kuralı ihlal ediyor. `GoodPublicInstanceFields` Düzeltilen kod gösterilmektedir.  
-  
- [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA2112: Güvenli türler alanları açığa çıkarmamalıdır](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1051: görünür örnek alanlarını bildirmeyin](https://docs.microsoft.com/visualstudio/code-quality/ca1051-do-not-declare-visible-instance-fields).
+
+|||
+|-|-|
+|TypeName|DoNotDeclareVisibleInstanceFields|
+|CheckId|CA1051|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Dışarıdan görünen bir tür bir dışarıdan görünür örnek alanı vardır.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Bir alanın birincil kullanım alanının uygulama ayrıntısı olması gerekir. Alanlar olmalıdır `private` veya `internal` ve özelliklerini kullanmaya maruz kalması. Bir alana erişmek olduğu ve özellikleri türünde bozucu değişiklikler oluşturmaksızın genişlettikçe özellik erişimcileri kodda değiştirebilirsiniz bir özelliğe erişmek oldukça kolaydır. Yalnızca özel veya iç alan değerini döndüren özellikler, bir alana erişim özellik gerçekleştirmek için optimize edilmiş; çok az performans kazancı özellikler üzerinde dışarıdan görünen alanları kullanımı ile ilişkilidir.
+
+ Dışarıdan görünen başvurduğu `public`, `protected`, ve `protected internal` (`Public`, `Protected`, ve `Protected Friend` Visual Basic'te) erişilebilirlik düzeyleri.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için alanın olmasını `private` veya `internal` ve dışarıdan görünen bir özelliğini kullanarak üzerinden kullanıma sunacaksınız.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın. Dışarıdan görünen alanlar, özellikler için kullanılabilir olan herhangi bir avantaj sağlamaz. Ayrıca, ortak alanları tarafından korunamaz [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Bkz: [CA2112: güvenli türler alanları kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bir tür gösterir (`BadPublicInstanceFields`), bu kuralı ihlal ediyor. `GoodPublicInstanceFields` Düzeltilen kod gösterilmektedir.
+
+ [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA2112: Güvenli türler alanları açığa çıkarmamalıdır](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
  [Bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
 
 

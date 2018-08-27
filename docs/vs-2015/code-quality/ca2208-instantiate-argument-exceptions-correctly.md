@@ -20,67 +20,69 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bc5c9240ee0e5955b669ba1951e0d0f52c210da0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba99cddfe42e1b6699dba4fa665302581aa68cdc
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633492"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902385"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Bağımsız değişken özel durumlarını doğru örnekleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2208: bağımsız değişken özel durumlarını doğru örnekleyin](https://docs.microsoft.com/visualstudio/code-quality/ca2208-instantiate-argument-exceptions-correctly).  
-  
-TypeName | InstantiateArgumentExceptionsCorrectly |  
-| Checkıd | CA2208 |  
-| Kategori | Microsoft.Usage|  
-| Yeni değişiklik | Olmayan yeni |  
-  
-## <a name="cause"></a>Sebep  
- Aşağıdaki durumlarda olası nedenler:  
-  
--   Varsayılan (parametresiz) kurucu veya [System.ArgumentException] türeyen bir özel durum türü için bir çağrı yapılır (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).  
-  
--   Bir hatalı dize bağımsız değişkeni parametreli bir kurucu veya [System.ArgumentException] türeyen bir özel durum türü iletilir (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Varsayılan oluşturucuyu çağırmak yerine sağlanması daha anlamlı bir özel durum iletisi veren oluşturucu aşırı yüklemeleri birini çağırın. Özel durum iletisi, geliştirici hedef ve hata durumu ve düzeltin veya özel durumdan kaçınmak nasıl NET bir şekilde açıklayın.  
-  
- Bir ve iki dize oluşturucular imzaları <xref:System.ArgumentException> ve türetilmiş türlerini ilişkilendirilebilmesi için tutarlı olmayan `message` ve `paramName` parametreleri. Bu oluşturucular doğru dize bağımsız değişkenlerle çağrılır emin olun. İmzaları aşağıdaki gibidir:  
-  
- <xref:System.ArgumentException>(string `message`)  
-  
- <xref:System.ArgumentException>(string `message`, dize `paramName`)  
-  
- <xref:System.ArgumentNullException>(string `paramName`)  
-  
- <xref:System.ArgumentNullException>(string `paramName`, dize `message`)  
-  
- <xref:System.ArgumentOutOfRangeException>(string `paramName`)  
-  
- <xref:System.ArgumentOutOfRangeException>(string `paramName`, dize `message`)  
-  
- <xref:System.DuplicateWaitObjectException>(string `parameterName`)  
-  
- <xref:System.DuplicateWaitObjectException>(string `parameterName`, dize `message`)  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için bir ileti, bir parametre adı veya her ikisini de alan bir oluşturucu çağırmak ve bağımsız değişken türü için uygun olduğundan emin olun <xref:System.ArgumentException> çağrılan.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Parametreli bir kurucu doğru dize bağımsız değişkenleri ile yalnızca çağrılması halinde bu kuraldan bir uyarıyı bastırmak güvenlidir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, yanlış ArgumentNullException türün bir örneğini başlatan bir oluşturucu gösterir.  
-  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA2208: bağımsız değişken özel durumlarını doğru örnekleyin](https://docs.microsoft.com/visualstudio/code-quality/ca2208-instantiate-argument-exceptions-correctly).
+
+|||
+|-|-|
+|TypeName|InstantiateArgumentExceptionsCorrectly|
+|CheckId|CA2208|
+|Kategori|Microsoft.Usage|
+|Yeni Değişiklik|Bozucu olmayan|
+
+## <a name="cause"></a>Sebep
+ Aşağıdaki durumlarda olası nedenler:
+
+-   Varsayılan (parametresiz) kurucu veya [System.ArgumentException] türeyen bir özel durum türü için bir çağrı yapılır (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).
+
+-   Bir hatalı dize bağımsız değişkeni parametreli bir kurucu veya [System.ArgumentException] türeyen bir özel durum türü iletilir (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
+
+## <a name="rule-description"></a>Kural Tanımı
+ Varsayılan oluşturucuyu çağırmak yerine sağlanması daha anlamlı bir özel durum iletisi veren oluşturucu aşırı yüklemeleri birini çağırın. Özel durum iletisi, geliştirici hedef ve hata durumu ve düzeltin veya özel durumdan kaçınmak nasıl NET bir şekilde açıklayın.
+
+ Bir ve iki dize oluşturucular imzaları <xref:System.ArgumentException> ve türetilmiş türlerini ilişkilendirilebilmesi için tutarlı olmayan `message` ve `paramName` parametreleri. Bu oluşturucular doğru dize bağımsız değişkenlerle çağrılır emin olun. İmzaları aşağıdaki gibidir:
+
+ <xref:System.ArgumentException>(string `message`)
+
+ <xref:System.ArgumentException>(string `message`, dize `paramName`)
+
+ <xref:System.ArgumentNullException>(string `paramName`)
+
+ <xref:System.ArgumentNullException>(string `paramName`, dize `message`)
+
+ <xref:System.ArgumentOutOfRangeException>(string `paramName`)
+
+ <xref:System.ArgumentOutOfRangeException>(string `paramName`, dize `message`)
+
+ <xref:System.DuplicateWaitObjectException>(string `parameterName`)
+
+ <xref:System.DuplicateWaitObjectException>(string `parameterName`, dize `message`)
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için bir ileti, bir parametre adı veya her ikisini de alan bir oluşturucu çağırmak ve bağımsız değişken türü için uygun olduğundan emin olun <xref:System.ArgumentException> çağrılan.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Parametreli bir kurucu doğru dize bağımsız değişkenleri ile yalnızca çağrılması halinde bu kuraldan bir uyarıyı bastırmak güvenlidir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, yanlış ArgumentNullException türün bir örneğini başlatan bir oluşturucu gösterir.
+
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/cpp/FxCop.Usage.InheritedPublic.cpp#1)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/cs/FxCop.Usage.InheritedPublic.cs#1)]
- [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/vb/FxCop.Usage.InstantiateArgumentExceptionsCorrectly.vb#1)]  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, oluşturucu bağımsız geçerek yukarıdaki ihlali düzeltir.  
-  
+ [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/vb/FxCop.Usage.InstantiateArgumentExceptionsCorrectly.vb#1)]
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, oluşturucu bağımsız geçerek yukarıdaki ihlali düzeltir.
+
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/cpp/FxCop.Usage.InheritedPublic.cpp#2)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/cs/FxCop.Usage.InheritedPublic.cs#2)]
  [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/vb/FxCop.Usage.InstantiateArgumentExceptionsCorrectly.vb#2)]

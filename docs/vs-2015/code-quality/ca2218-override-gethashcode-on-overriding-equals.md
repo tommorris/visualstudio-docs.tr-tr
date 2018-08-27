@@ -20,19 +20,24 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cf8fb22f5cfd6b5a9752077f11c47076b504b46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b952252b5b035242e69806e81b95884e05f862c5
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694926"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900732"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode'u Eşittir'i geçersiz kılarak geçersiz kılın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konuda en son sürümünü şu yolda bulunabilir: [CA2218: Gethashcode'u eşittir geçersiz kılma üzerinde geçersiz kılma](https://docs.microsoft.com/visualstudio/code-quality/ca2218-override-gethashcode-on-overriding-equals).
 
-TypeName | OverrideGetHashCodeOnOverridingEquals | | Checkıd | CA2218 | | Kategori | Microsoft.Usage| | Yeni değişiklik | Olmayan yeni |
+|||
+|-|-|
+|TypeName|OverrideGetHashCodeOnOverridingEquals|
+|CheckId|CA2218|
+|Kategori|Microsoft.Usage|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
  Geçersiz kılma genel bir türü <xref:System.Object.Equals%2A?displayProperty=fullName> ancak geçersiz <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.

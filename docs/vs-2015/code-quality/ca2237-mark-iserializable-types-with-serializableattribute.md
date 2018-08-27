@@ -20,54 +20,56 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8191ca3ca58bcdaaf182c6a5ee5310e2cea5b87f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2bcbca460c404a977b2172f17dfe98164dd52bf
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628779"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903008"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: ISerializable türleri SerializableAttribute ile işaretleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2237: işareti ISerializable türleri SerializableAttribute ile](https://docs.microsoft.com/visualstudio/code-quality/ca2237-mark-iserializable-types-with-serializableattribute).  
-  
-TypeName | MarkISerializableTypesWithSerializable |  
-| Checkıd | CA2237 |  
-| Kategori | Microsoft.Usage|  
-| Yeni değişiklik | Olmayan yeni |  
-  
-## <a name="cause"></a>Sebep  
- Dışarıdan görünen bir türün uyguladığı <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> arabirimi ve türü olarak işaretlenmemiş ile <xref:System.SerializableAttribute?displayProperty=fullName> özniteliği. Kural türetilen türler, temel türü seri hale getirilebilir değil yok sayar.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Ortak dil çalışma zamanı tarafından seri hale getirilebilir olarak tanınması için türleri ile işaretlenmelidir <xref:System.SerializableAttribute> bir uygulaması aracılığıyla özel seri hale getirme yordamı tür kullansa bile özniteliği <xref:System.Runtime.Serialization.ISerializable> arabirimi.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için geçerli <xref:System.SerializableAttribute> öznitelik türü için.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Uygulama etki alanları arasında düzgün çalışması için seri hale getirilebilir olması gerekir çünkü özel durum sınıfları için bu kuraldan bir uyarıyı bastırmayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek kuralını ihlal eden bir tür gösterir. Açıklamadan çıkarın <xref:System.SerializableAttribute> özniteliği kural karşılamak için satır.  
-  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA2237: işareti ISerializable türleri SerializableAttribute ile](https://docs.microsoft.com/visualstudio/code-quality/ca2237-mark-iserializable-types-with-serializableattribute).
+
+|||
+|-|-|
+|TypeName|MarkISerializableTypesWithSerializable|
+|CheckId|CA2237|
+|Kategori|Microsoft.Usage|
+|Yeni Değişiklik|Bozucu olmayan|
+
+## <a name="cause"></a>Sebep
+ Dışarıdan görünen bir türün uyguladığı <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> arabirimi ve türü olarak işaretlenmemiş ile <xref:System.SerializableAttribute?displayProperty=fullName> özniteliği. Kural türetilen türler, temel türü seri hale getirilebilir değil yok sayar.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Ortak dil çalışma zamanı tarafından seri hale getirilebilir olarak tanınması için türleri ile işaretlenmelidir <xref:System.SerializableAttribute> bir uygulaması aracılığıyla özel seri hale getirme yordamı tür kullansa bile özniteliği <xref:System.Runtime.Serialization.ISerializable> arabirimi.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için geçerli <xref:System.SerializableAttribute> öznitelik türü için.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Uygulama etki alanları arasında düzgün çalışması için seri hale getirilebilir olması gerekir çünkü özel durum sınıfları için bu kuraldan bir uyarıyı bastırmayın.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek kuralını ihlal eden bir tür gösterir. Açıklamadan çıkarın <xref:System.SerializableAttribute> özniteliği kural karşılamak için satır.
+
  [!code-csharp[FxCop.Usage.MarkSerializable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.MarkSerializable/cs/FxCop.Usage.MarkSerializable.cs#1)]
- [!code-vb[FxCop.Usage.MarkSerializable#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.MarkSerializable/vb/FxCop.Usage.MarkSerializable.vb#1)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA2236: ISerializable türler üzerinde taban sınıf yöntemlerini çağırın](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
-  
- [CA2240: ISerializable'ı doğru uygulayın](../code-quality/ca2240-implement-iserializable-correctly.md)  
-  
- [CA2229: Serileştirme oluşturucularını uygulayın](../code-quality/ca2229-implement-serialization-constructors.md)  
-  
- [CA2238: Serileştirme yöntemlerini doğru uygulama](../code-quality/ca2238-implement-serialization-methods-correctly.md)  
-  
- [CA2235: Tüm serileştirilebilir olmayan alanları işaretleyin](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
-  
- [CA2239: İsteğe bağlı alanlar için seri durumdan çıkarma metotları sağlayın](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
-  
+ [!code-vb[FxCop.Usage.MarkSerializable#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.MarkSerializable/vb/FxCop.Usage.MarkSerializable.vb#1)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA2236: ISerializable türler üzerinde taban sınıf yöntemlerini çağırın](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+
+ [CA2240: ISerializable'ı doğru uygulayın](../code-quality/ca2240-implement-iserializable-correctly.md)
+
+ [CA2229: Serileştirme oluşturucularını uygulayın](../code-quality/ca2229-implement-serialization-constructors.md)
+
+ [CA2238: Serileştirme yöntemlerini doğru uygulama](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+
+ [CA2235: Tüm serileştirilebilir olmayan alanları işaretleyin](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+
+ [CA2239: İsteğe bağlı alanlar için seri durumdan çıkarma metotları sağlayın](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+
  [CA2120: Serileştirme oluşturucularının güvenliğini sağlayın](../code-quality/ca2120-secure-serialization-constructors.md)
 
 

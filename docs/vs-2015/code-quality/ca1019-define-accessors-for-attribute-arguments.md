@@ -20,68 +20,70 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 84f528e33d6f904cf44d9c7b2cea9a8f364f8a9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2cda474d9f8b75ef228585ccec2759c998699f6
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695675"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900053"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Öznitelik bağımsız değişkenleri için erişimcileri tanımlayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1019: öznitelik bağımsız değişkenleri için erişimcileri tanımlayın](https://docs.microsoft.com/visualstudio/code-quality/ca1019-define-accessors-for-attribute-arguments).  
-  
-TypeName | DefineAccessorsForAttributeArguments |  
-| Checkıd | CA1019 |  
-| Kategori | Microsoft.Design|  
-| Yeni değişiklik | Bölünemez |  
-  
-## <a name="cause"></a>Sebep  
- Oluşturucusunda, karşılık gelen özelliklere sahip olmayan bağımsız değişkenler özniteliği tanımlar.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Öznitelikler özniteliği işaretlediğinizde özelleştirilen zorunlu bağımsız değişkenleri tanımlayabilir. Ayrıca bunlar konum parametreleri olarak öznitelik yapıcısına verildiğinden duruma bağlı bağımsız değişkenler olarak da bilinirler. Zorunlu her bağımsız değişken için bağımsız değişkenin değeri yürütme zamanından alınması gerektiğinden öznitelik ilgili salt okunur özelliği de sağlamalıdır. Bu kural her Oluşturucu parametresi için karşılık gelen özelliği tanımladığınız denetler.  
-  
- Öznitelikler adlandırılmış bağımsız değişkenler olarak bilinen duruma bağlı bağımsız değişkenler olarak da tanımlanabilir. Bu bağımsız öznitelik oluşturucular ad tarafından sağlanır ve karşılık gelen bir okuma/yazma özelliğine sahip olmalıdır.  
-  
- Ancak farklı büyük/küçük harf, kullanması gereken zorunlu ve isteğe bağlı bağımsız değişkenler, karşılık gelen özelliklere ve oluşturucu parametresi için aynı adı. Özelliklerini kullanma Pascal casing ve parametreleri kullanmak camel casing.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için bir sahip olmayan her Oluşturucu parametresi salt okunur bir özellik ekleyin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Alınabilir olması zorunlu bağımsız değişkenin değeri istemiyorsanız bu kuraldan bir uyarıyı gizler.  
-  
-## <a name="custom-attributes-example"></a>Özel öznitelikler örneği  
-  
-### <a name="description"></a>Açıklama  
- Aşağıdaki örnek, zorunlu (konumsal) parametresini tanımlama iki öznitelikleri gösterir. Öznitelik ilk uygulanması hatalı tanımlanmış. İkinci doğru uygulamasıdır.  
-  
-### <a name="code"></a>Kod  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1019: öznitelik bağımsız değişkenleri için erişimcileri tanımlayın](https://docs.microsoft.com/visualstudio/code-quality/ca1019-define-accessors-for-attribute-arguments).
+
+|||
+|-|-|
+|TypeName|DefineAccessorsForAttributeArguments|
+|CheckId|CA1019|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Oluşturucusunda, karşılık gelen özelliklere sahip olmayan bağımsız değişkenler özniteliği tanımlar.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Öznitelikler özniteliği işaretlediğinizde özelleştirilen zorunlu bağımsız değişkenleri tanımlayabilir. Ayrıca bunlar konum parametreleri olarak öznitelik yapıcısına verildiğinden duruma bağlı bağımsız değişkenler olarak da bilinirler. Zorunlu her bağımsız değişken için bağımsız değişkenin değeri yürütme zamanından alınması gerektiğinden öznitelik ilgili salt okunur özelliği de sağlamalıdır. Bu kural her Oluşturucu parametresi için karşılık gelen özelliği tanımladığınız denetler.
+
+ Öznitelikler adlandırılmış bağımsız değişkenler olarak bilinen duruma bağlı bağımsız değişkenler olarak da tanımlanabilir. Bu bağımsız öznitelik oluşturucular ad tarafından sağlanır ve karşılık gelen bir okuma/yazma özelliğine sahip olmalıdır.
+
+ Ancak farklı büyük/küçük harf, kullanması gereken zorunlu ve isteğe bağlı bağımsız değişkenler, karşılık gelen özelliklere ve oluşturucu parametresi için aynı adı. Özelliklerini kullanma Pascal casing ve parametreleri kullanmak camel casing.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için bir sahip olmayan her Oluşturucu parametresi salt okunur bir özellik ekleyin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Alınabilir olması zorunlu bağımsız değişkenin değeri istemiyorsanız bu kuraldan bir uyarıyı gizler.
+
+## <a name="custom-attributes-example"></a>Özel öznitelikler örneği
+
+### <a name="description"></a>Açıklama
+ Aşağıdaki örnek, zorunlu (konumsal) parametresini tanımlama iki öznitelikleri gösterir. Öznitelik ilk uygulanması hatalı tanımlanmış. İkinci doğru uygulamasıdır.
+
+### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.AttributeAccessors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessors/cs/FxCop.Design.AttributeAccessors.cs#1)]
- [!code-vb[FxCop.Design.AttributeAccessors#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessors/vb/FxCop.Design.AttributeAccessors.vb#1)]  
-  
-## <a name="positional-and-named-arguments"></a>Konumsal ve adlandırılmış bağımsız değişkenler  
-  
-### <a name="description"></a>Açıklama  
- Kitaplığınızı kullanan Tüketiciler, hangi bağımsız değişkenleri için öznitelik zorunludur ve hangi bağımsız değişkenleri isteğe bağlı olduğu için temizlemek konumsal ve adlandırılmış bağımsız değişkenler olun.  
-  
- Aşağıdaki örnek, adlandırılmış hem konumsal bağımsız değişkenlere sahip bir öznitelik uygulanışı gösterilmektedir.  
-  
-### <a name="code"></a>Kod  
- [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamed/cs/FxCop.Design.AttributeAccessorsNamed.cs#1)]  
-  
-### <a name="comments"></a>Açıklamalar  
- Aşağıdaki örnek, iki özellik için özel bir öznitelik uygulama gösterilmiştir.  
-  
-### <a name="code"></a>Kod  
- [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA1813: Korumasız özniteliklerden kaçının](../code-quality/ca1813-avoid-unsealed-attributes.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+ [!code-vb[FxCop.Design.AttributeAccessors#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessors/vb/FxCop.Design.AttributeAccessors.vb#1)]
+
+## <a name="positional-and-named-arguments"></a>Konumsal ve adlandırılmış bağımsız değişkenler
+
+### <a name="description"></a>Açıklama
+ Kitaplığınızı kullanan Tüketiciler, hangi bağımsız değişkenleri için öznitelik zorunludur ve hangi bağımsız değişkenleri isteğe bağlı olduğu için temizlemek konumsal ve adlandırılmış bağımsız değişkenler olun.
+
+ Aşağıdaki örnek, adlandırılmış hem konumsal bağımsız değişkenlere sahip bir öznitelik uygulanışı gösterilmektedir.
+
+### <a name="code"></a>Kod
+ [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamed/cs/FxCop.Design.AttributeAccessorsNamed.cs#1)]
+
+### <a name="comments"></a>Açıklamalar
+ Aşağıdaki örnek, iki özellik için özel bir öznitelik uygulama gösterilmiştir.
+
+### <a name="code"></a>Kod
+ [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA1813: Korumasız özniteliklerden kaçının](../code-quality/ca1813-avoid-unsealed-attributes.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
  [Öznitelikler](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
 
 

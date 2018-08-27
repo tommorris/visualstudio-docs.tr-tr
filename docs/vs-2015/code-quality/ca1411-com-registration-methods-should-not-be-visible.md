@@ -20,48 +20,48 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 40fa3f3a99df840dc38a0177a6a3dafa81a31722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 410531222f19632f6358bdbc320b95fe1254bafe
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631835"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901940"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: COM kayıt yöntemleri görünebilir olmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1411: COM kayıt yöntemleri görünebilir olmamalıdır](https://docs.microsoft.com/visualstudio/code-quality/ca1411-com-registration-methods-should-not-be-visible).  
-  
-TypeName | ComRegistrationMethodsShouldNotBeVisible |  
-| Checkıd | CA1411 |  
-| Kategori | Microsoft.Interoperability|  
-| Yeni değişiklik | Bozucu |  
-  
-## <a name="cause"></a>Sebep  
- İle işaretlenmiş bir yöntemi <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> veya <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> özniteliktir dışarıdan görünür.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Bir derlemeyi Bileşen Nesne Modeli (COM) ile kaydettiğinizde, kayıt defterine her derlemenin COM görünür türü için girişler eklenir. İle işaretlenmiş yöntemler <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> ve <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> öznitelikleri kayıt ve kayıt silme işlemleri sırasında sırasıyla kaydolmayı/kaydı kaldırmayı için bu tür özel kullanıcı kodu çalıştırmak için çağrılır. Bu kod, bu işlemlerin dışında çağrılmamalıdır.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için yöntemin erişilebilirliği değiştirme `private` veya `internal` (`Friend` içinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan uyarıyı bastırmayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, kural ihlal iki yöntem gösterir.  
-  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1411: COM kayıt yöntemleri görünebilir olmamalıdır](https://docs.microsoft.com/visualstudio/code-quality/ca1411-com-registration-methods-should-not-be-visible).
+
+|||
+|-|-|
+|TypeName|ComRegistrationMethodsShouldNotBeVisible|
+|CheckId|CA1411|
+|Kategori|Microsoft.Interoperability|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ İle işaretlenmiş bir yöntemi <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> veya <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> özniteliktir dışarıdan görünür.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Bir derlemeyi Bileşen Nesne Modeli (COM) ile kaydettiğinizde, kayıt defterine her derlemenin COM görünür türü için girişler eklenir. İle işaretlenmiş yöntemler <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> ve <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> öznitelikleri kayıt ve kayıt silme işlemleri sırasında sırasıyla kaydolmayı/kaydı kaldırmayı için bu tür özel kullanıcı kodu çalıştırmak için çağrılır. Bu kod, bu işlemlerin dışında çağrılmamalıdır.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için yöntemin erişilebilirliği değiştirme `private` veya `internal` (`Friend` içinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, kural ihlal iki yöntem gösterir.
+
  [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComRegistration2/cs/FxCop.Interoperability.ComRegistration2.cs#1)]
- [!code-vb[FxCop.Interoperability.ComRegistration2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComRegistration2/vb/FxCop.Interoperability.ComRegistration2.vb#1)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA1410: COM kayıt yöntemleri eşleşmelidir](../code-quality/ca1410-com-registration-methods-should-be-matched.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>   
- [Derlemeleri COM ile kaydetme](http://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551)   
- [Regasm.exe (Derleme Kayıt Aracı)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
+ [!code-vb[FxCop.Interoperability.ComRegistration2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComRegistration2/vb/FxCop.Interoperability.ComRegistration2.vb#1)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA1410: COM kayıt yöntemleri eşleşmelidir](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [Derlemeleri COM ile kaydetme](http://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm.exe (derleme kayıt aracı)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
 
 
 

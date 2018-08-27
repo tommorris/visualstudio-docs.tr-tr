@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978417"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901491"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
@@ -219,6 +219,7 @@ Test çalıştırması parametreleri, değişkenler ve testlere çalışma zaman
 public void HomePageTest()
 {
     string appURL = TestContext.Properties["webAppUrl"];
+}
 ```
 
 Test çalıştırması parametrelerini kullanmak için özel bir ekleme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> alan ve ortak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> test sınıfınıza özelliği.
@@ -234,7 +235,7 @@ Test çalıştırması parametrelerini kullanmak için özel bir ekleme <xref:Mi
     <AssemblyResolution>
       <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-</MSTest
+</MSTest>
 ```
 
 Bu ayarlar sahip test yöntemlerini çalıştıran test bağdaştırıcısına özgüdür <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> özniteliği.

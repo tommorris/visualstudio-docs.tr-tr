@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f137f5044c24ec9a187868c273b1dd752cd86a5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4228015287be7c2dd5c34fea29f16f2a581b8a62
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513110"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902629"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve Yapılandırma Özellikleri için Destek
 **Özellikleri** penceresinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) proje ve yapılandırma özelliklerini görüntüleyebilirsiniz. Kullanıcı, uygulamanın özelliklerini ayarlayabilirsiniz böylece, kendi proje türü için özellik sayfası sağlayabilirsiniz.  
   
  İçinde bir proje düğümü seçerek **Çözüm Gezgini** tıklayıp **özellikleri** üzerinde **proje** menüsünde, yapılandırma içeren bir iletişim kutusunu açabilirsiniz özellikleri. İçinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]ve proje sekmeli sayfa bu iletişim kutusu açılır, bu dillerden türetilmiş türleri [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md). Daha fazla bilgi için [derleme içinde değil: izlenecek yol: Proje oluşturma ve yapılandırma özellikleri (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
- Projeleri (MPFProj) için yönetilen paket çerçevesini oluşturmak ve yeni proje sistemi yönetmek için yardımcı sınıflar sağlar. Kaynak kod ve derleme yönergelerini bulabilirsiniz [projeler - Visual Studio 2013 için MPF](http://mpfproj12.codeplex.com/).  
+ Projeleri (MPFProj) için yönetilen paket çerçevesini oluşturmak ve yeni proje sistemi yönetmek için yardımcı sınıflar sağlar. Kaynak kod ve derleme yönergelerini bulabilirsiniz [projeler - Visual Studio 2013 için MPF](https://github.com/tunnelvisionlabs/MPFProj10).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Yapılandırma özellikleri ve proje kalıcılığı  
  Yapılandırma özellikleri, örneğin proje türüyle ilişkili dosya adı uzantısı, .csproj, .vbproj ve .myproj sahip bir proje dosyasında kalır. Dil projeleri genellikle proje dosyası oluşturmak için bir şablon dosyası kullanın. Ancak, gerçekte proje türleri ve şablonları ilişkilendirmek için çeşitli yollar vardır. Daha fazla bilgi için [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
@@ -84,7 +84,7 @@ ms.locfileid: "39513110"
  <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, Ve <xref:System.ComponentModel.DescriptionAttribute> öznitelikler düzeni, etiketleme ve açıklama genel özellik sayfası, proje ve yapılandırma özelliklerini belirler. Bu öznitelikler kategorisi belirlemek için sırasıyla görünen adı ve açıklaması seçeneği.  
   
 > [!NOTE]
->  Eşdeğer öznitelikleri, SRCategory LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve tanımlanan [projeler - Visual Studio 2013 için MPF](http://mpfproj12.codeplex.com/).  
+>  Eşdeğer öznitelikleri, SRCategory LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve tanımlanan [projeler - Visual Studio 2013 için MPF](https://github.com/tunnelvisionlabs/MPFProj10).  
   
  Aşağıdaki kod parçasını göz önünde bulundurun:  
   

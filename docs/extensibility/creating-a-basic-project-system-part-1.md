@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fee2a4480f3fe8e5439decfd4852a020a734ff
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232263"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902405"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>1. Bölüm temel proje sistemi oluşturma
 Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenlemek için geliştiricilerin kullanan kapsayıcılardır. Projeleri görünür çözümlerin alt öğeleri olarak **Çözüm Gezgini**. Projeleri, düzenleme, derleme, hata ayıklama ve kaynak kod dağıtma ve Web Hizmetleri, veritabanları ve diğer kaynaklara başvurular oluşturma olanak tanır.  
@@ -61,7 +61,7 @@ Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenle
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Ayrıca, kaynak kodu indirmeniz gerekir [projeleri için yönetilen paket çerçevesini](http://mpfproj12.codeplex.com/). Çözümü oluşturmak için oluşturacağınız erişilebilir bir konuma ayıklayın.  
+ Ayrıca, kaynak kodu indirmeniz gerekir [projeleri için yönetilen paket çerçevesini](https://github.com/tunnelvisionlabs/MPFProj10). Çözümü oluşturmak için oluşturacağınız erişilebilir bir konuma ayıklayın.  
   
 ## <a name="create-a-basic-project-type"></a>Temel Proje türü oluştur  
  Adlı bir C# VSIX projesi oluşturun **SimpleProject**. (**Dosya** > **yeni** > **proje** ardından **Visual C#**  >   **Genişletilebilirlik** > **VSIX projesi**). Visual Studio Paket projesi öğe şablonu Ekle (üzerinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**gidin **Genişletilebilirlik** > **Visual Studio paket**). Dosya adı *SimpleProjectPackage*.  

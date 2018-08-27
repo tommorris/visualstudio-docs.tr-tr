@@ -20,108 +20,108 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a4e0a79dc90eb7e0e79936071ba904de0adb8b14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2cb9dbf5f88921d20b4923c3800dd02d096034a8
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695128"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900435"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: İşlemler taşmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2233: işlemleri değil overflow](https://docs.microsoft.com/visualstudio/code-quality/ca2233-operations-should-not-overflow).  
-  
-TypeName | OperationsShouldNotOverflow |  
-| Checkıd | CA2233 |  
-| Kategori | Microsoft.Usage|  
-| Yeni değişiklik | Olmayan yeni |  
-  
-## <a name="cause"></a>Sebep  
- Bir yöntem, bir aritmetik işlemi gerçekleştirir ve önceden işlenen taşmayı engellemek için doğrulamaz.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Aritmetik işlemler işleminin sonucu dahil veri türleri için olası değerler aralığının dışında olduğundan emin olmak için önce işlenenleri doğrulamadan gerçekleştirilmemelidir. Yürütme bağlamı ve söz konusu veri türlerine bağlı olarak, aritmetik taşma ya da neden olabilir bir <xref:System.OverflowException?displayProperty=fullName> ya da sonucun en önemli bitleri atılır.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için işlem gerçekleştirmeden önce işlenenleri doğrulayın.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Olası değerler işlenenlerin aritmetik işlem taşma hiçbir zaman neden olacaksa, bu kuraldan bir uyarıyı bastırmak güvenlidir.  
-  
-## <a name="example-of-a-violation"></a>Bir ihlali örneği  
-  
-### <a name="description"></a>Açıklama  
- Aşağıdaki örnekte bir yöntem, bu kuralı ihlal eden bir tamsayı yönetir. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] gerektirir **Kaldır** tamsayı taşma seçeneği bu harekete geçirmek devre dışı.  
-  
-### <a name="code"></a>Kod  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA2233: işlemleri değil overflow](https://docs.microsoft.com/visualstudio/code-quality/ca2233-operations-should-not-overflow).
+
+|||
+|-|-|
+|TypeName|OperationsShouldNotOverflow|
+|CheckId|CA2233|
+|Kategori|Microsoft.Usage|
+|Yeni Değişiklik|Bozucu olmayan|
+
+## <a name="cause"></a>Sebep
+ Bir yöntem, bir aritmetik işlemi gerçekleştirir ve önceden işlenen taşmayı engellemek için doğrulamaz.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Aritmetik işlemler işleminin sonucu dahil veri türleri için olası değerler aralığının dışında olduğundan emin olmak için önce işlenenleri doğrulamadan gerçekleştirilmemelidir. Yürütme bağlamı ve söz konusu veri türlerine bağlı olarak, aritmetik taşma ya da neden olabilir bir <xref:System.OverflowException?displayProperty=fullName> ya da sonucun en önemli bitleri atılır.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için işlem gerçekleştirmeden önce işlenenleri doğrulayın.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Olası değerler işlenenlerin aritmetik işlem taşma hiçbir zaman neden olacaksa, bu kuraldan bir uyarıyı bastırmak güvenlidir.
+
+## <a name="example-of-a-violation"></a>Bir ihlali örneği
+
+### <a name="description"></a>Açıklama
+ Aşağıdaki örnekte bir yöntem, bu kuralı ihlal eden bir tamsayı yönetir. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] gerektirir **Kaldır** tamsayı taşma seçeneği bu harekete geçirmek devre dışı.
+
+### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
- [!code-vb[FxCop.Usage.OperationOverflow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/vb/FxCop.Usage.OperationOverflow.vb#1)]  
-  
-### <a name="comments"></a>Açıklamalar  
- Bu örnekte yöntemi iletilmezse <xref:System.Int32.MinValue?displayProperty=fullName>, işlem yetersiz kalması gerekir. Bu, atılması sonucun en önemli bite neden olur. Aşağıdaki kod nasıl gerçekleştirildiğini gösterir.  
-  
- [C#]  
-  
-```  
-public static void Main()  
-{  
-    int value = int.MinValue;    // int.MinValue is -2147483648   
-    value = Calculator.Decrement(value);   
-    Console.WriteLine(value);  
-}  
-```  
-  
- [VB]  
-  
-```  
-Public Shared Sub Main()       
-    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648   
-    value = Calculator.Decrement(value)   
-    Console.WriteLine(value)   
-End Sub  
-```  
-  
-### <a name="output"></a>Çıkış  
-  
-```  
-2147483647  
-```  
-  
-## <a name="fix-with-input-parameter-validation"></a>Giriş parametresi doğrulama ile düzeltin  
-  
-### <a name="description"></a>Açıklama  
- Aşağıdaki örnek, önceki ihlali Girişi değerini doğrulayarak düzeltir.  
-  
-### <a name="code"></a>Kod  
+ [!code-vb[FxCop.Usage.OperationOverflow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/vb/FxCop.Usage.OperationOverflow.vb#1)]
+
+### <a name="comments"></a>Açıklamalar
+ Bu örnekte yöntemi iletilmezse <xref:System.Int32.MinValue?displayProperty=fullName>, işlem yetersiz kalması gerekir. Bu, atılması sonucun en önemli bite neden olur. Aşağıdaki kod nasıl gerçekleştirildiğini gösterir.
+
+ [C#]
+
+```
+public static void Main()
+{
+    int value = int.MinValue;    // int.MinValue is -2147483648
+    value = Calculator.Decrement(value);
+    Console.WriteLine(value);
+}
+```
+
+ [VB]
+
+```
+Public Shared Sub Main()
+    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648
+    value = Calculator.Decrement(value)
+    Console.WriteLine(value)
+End Sub
+```
+
+### <a name="output"></a>Çıkış
+
+```
+2147483647
+```
+
+## <a name="fix-with-input-parameter-validation"></a>Giriş parametresi doğrulama ile düzeltin
+
+### <a name="description"></a>Açıklama
+ Aşağıdaki örnek, önceki ihlali Girişi değerini doğrulayarak düzeltir.
+
+### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowFixed/cs/FxCop.Usage.OperationOverflowFixed.cs#1)]
- [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowFixed/vb/FxCop.Usage.OperationOverflowFixed.vb#1)]  
-  
-## <a name="fix-with-a-checked-block"></a>İşaretli bir blok ile düzeltin  
-  
-### <a name="description"></a>Açıklama  
- Aşağıdaki örnek, önceki ihlali işlemi işaretli bir blok içinde sarmalama tarafından düzeltir. İşlemi bir taşma neden olursa bir <xref:System.OverflowException?displayProperty=fullName> oluşturulur.  
-  
- İşaretli blok içinde desteklenmeyen Not [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
-  
-### <a name="code"></a>Kod  
- [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]  
-  
-## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Aritmetik Taşma ve Alttaşmayı açma işaretli  
- İşaretli aritmetik taşma ve alttaşmayı C# üzerinde kapatırsanız, her bir tamsayı işleminin işaretli bir blok içinde kaydırma eşdeğerdir.  
-  
- **İşaretli aritmetik taşma ve alttaşmayı C# ' ta açılıp açılmayacağı**  
-  
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve seçin **özellikleri**.  
-  
-2.  Seçin **derleme** sekmesine **Gelişmiş**.  
-  
-3.  Seçin **aritmetik taşma ve alttaşmayı denetle** tıklatıp **Tamam**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- <xref:System.OverflowException?displayProperty=fullName>   
- [C# işleçleri](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)   
- [İşaretli ve İşaretsiz](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+ [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowFixed/vb/FxCop.Usage.OperationOverflowFixed.vb#1)]
+
+## <a name="fix-with-a-checked-block"></a>İşaretli bir blok ile düzeltin
+
+### <a name="description"></a>Açıklama
+ Aşağıdaki örnek, önceki ihlali işlemi işaretli bir blok içinde sarmalama tarafından düzeltir. İşlemi bir taşma neden olursa bir <xref:System.OverflowException?displayProperty=fullName> oluşturulur.
+
+ İşaretli blok içinde desteklenmeyen Not [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+
+### <a name="code"></a>Kod
+ [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
+
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Aritmetik Taşma ve Alttaşmayı açma işaretli
+ İşaretli aritmetik taşma ve alttaşmayı C# üzerinde kapatırsanız, her bir tamsayı işleminin işaretli bir blok içinde kaydırma eşdeğerdir.
+
+ **İşaretli aritmetik taşma ve alttaşmayı C# ' ta açılıp açılmayacağı**
+
+1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve seçin **özellikleri**.
+
+2.  Seçin **derleme** sekmesine **Gelişmiş**.
+
+3.  Seçin **aritmetik taşma ve alttaşmayı denetle** tıklatıp **Tamam**.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ <xref:System.OverflowException?displayProperty=fullName> [C# işleçleri](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked ve Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
 
 
 

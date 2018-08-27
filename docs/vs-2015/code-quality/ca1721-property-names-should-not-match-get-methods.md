@@ -20,47 +20,49 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9bf92ecc6d2502f905f72033d79c305b6e065ad7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78a87e13b7c97dbe3d6487a721b9b439892bae7f
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695002"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900881"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Tür adları alma metotlarıyla eşleşmemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [ca1721 tür: özellik adları get yöntemleri değil eşleşmelidir](https://docs.microsoft.com/visualstudio/code-quality/ca1721-property-names-should-not-match-get-methods).  
-  
-TypeName | PropertyNamesShouldNotMatchGetMethods |  
-| Checkıd | CA1721 TÜR |  
-| Kategori | Microsoft.Naming|  
-| Yeni değişiklik | Bozucu |  
-  
-## <a name="cause"></a>Sebep  
- Ortak veya korumalı bir üyenin adını 'Get' ile başlar ve aksi durumda ortak veya korumalı özellik adıyla eşleşen. Örneğin, 'GetColor' ve 'Color' adlı bir özellik adında bir yöntemi içeren bir tür, bu kuralı ihlal ediyor.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Get yöntemleri ve özellikleri, açıkça işlevlerinden ayırt edilebilen adları olması gerekir.  
-  
- Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni bir yazılım kitaplığı öğrenmek için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır süreyi azaltır.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- 'Get' önekli bir metot adı eşleşmiyor adı değiştirin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan uyarıyı bastırmayın.  
-  
+Bu konuda en son sürümünü şu yolda bulunabilir: [ca1721 tür: özellik adları get yöntemleri değil eşleşmelidir](https://docs.microsoft.com/visualstudio/code-quality/ca1721-property-names-should-not-match-get-methods).
+
+|||
+|-|-|
+|TypeName|PropertyNamesShouldNotMatchGetMethods|
+|CheckId|CA1721|
+|Kategori|Microsoft.Naming|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Ortak veya korumalı bir üyenin adını 'Get' ile başlar ve aksi durumda ortak veya korumalı özellik adıyla eşleşen. Örneğin, 'GetColor' ve 'Color' adlı bir özellik adında bir yöntemi içeren bir tür, bu kuralı ihlal ediyor.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Get yöntemleri ve özellikleri, açıkça işlevlerinden ayırt edilebilen adları olması gerekir.
+
+ Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni bir yazılım kitaplığı öğrenmek için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır süreyi azaltır.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ 'Get' önekli bir metot adı eşleşmiyor adı değiştirin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın.
+
 > [!NOTE]
->  Bu uyarı, Iextenderprovider arabirimi uygulayarak alma yöntemini neden oluyorsa atlanabilir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir yöntem ve bu kuralı ihlal ediyor özelliği içerir.  
-  
+>  Bu uyarı, Iextenderprovider arabirimi uygulayarak alma yöntemini neden oluyorsa atlanabilir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bir yöntem ve bu kuralı ihlal ediyor özelliği içerir.
+
  [!code-csharp[FxCop.Naming.GetMethod#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod/cs/FxCop.Naming.GetMethod.cs#1)]
- [!code-vb[FxCop.Naming.GetMethod#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod/vb/FxCop.Naming.GetMethod.vb#1)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
+ [!code-vb[FxCop.Naming.GetMethod#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod/vb/FxCop.Naming.GetMethod.vb#1)]
+
+## <a name="related-rules"></a>İlgili kuralları
  [CA1024: Uygun yerlerde özellikler kullanın](../code-quality/ca1024-use-properties-where-appropriate.md)
 
 

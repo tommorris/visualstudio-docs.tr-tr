@@ -20,45 +20,46 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 963fe3c5bea24aac6e46dfb66973e92a39352ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df933930489775db3373243a21c20d98f43ceb38
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684248"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900726"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Geçersiz kılan bağlantı talepleri taban ile özdeş olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2123: geçersiz kılma bağlantı talepleri taban ile özdeş](https://docs.microsoft.com/visualstudio/code-quality/ca2123-override-link-demands-should-be-identical-to-base).  
-  
-TypeName | OverrideLinkDemandsShouldBeIdenticalToBase |  
-| Checkıd | CA2123 |  
-| Kategori | Microsoft.Security|  
-| Yeni değişiklik | Bozucu |  
-  
-## <a name="cause"></a>Sebep  
- Ortak türde ortak veya korumalı bir yöntem bir yöntemini geçersiz kılan veya bir arabirim uygular ve aynı yok [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) arabirimi veya sanal bir yöntem.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Bu kural, arabirim ya da başka bir türdeki sanal yöntem olan temel yöntem ile başka bir yöntemi eşleştirir ve sonra her bir bağlantı talebini inceler. Bir ihlali, yöntemi veya taban yöntemi bağlantı talebi ve diğer yok bildirilir.  
-  
- Bu kural ihlal edilirse kötü niyetli arayan yalnızca güvenli olmayan bir yöntem çağırarak bağlantı talebi atlayabilirsiniz.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için aynı bağlantı talebi geçersiz kılma yöntemi veya uygulama için geçerlidir. Bu mümkün değilse tam talep yöntemi işaretlemek veya öznitelik tamamen kaldırın.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Bu kuraldan uyarıyı bastırmayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, çeşitli bu kural ihlalleri gösterir.  
-  
- [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.OverridesAndSecurity/cs/FxCop.Security.OverridesAndSecurity.cs#1)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)   
- [Bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA2123: geçersiz kılma bağlantı talepleri taban ile özdeş](https://docs.microsoft.com/visualstudio/code-quality/ca2123-override-link-demands-should-be-identical-to-base).
+
+|||
+|-|-|
+|TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
+|CheckId|CA2123|
+|Kategori|Microsoft.Security|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Ortak türde ortak veya korumalı bir yöntem bir yöntemini geçersiz kılan veya bir arabirim uygular ve aynı yok [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) arabirimi veya sanal bir yöntem.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Bu kural, arabirim ya da başka bir türdeki sanal yöntem olan temel yöntem ile başka bir yöntemi eşleştirir ve sonra her bir bağlantı talebini inceler. Bir ihlali, yöntemi veya taban yöntemi bağlantı talebi ve diğer yok bildirilir.
+
+ Bu kural ihlal edilirse kötü niyetli arayan yalnızca güvenli olmayan bir yöntem çağırarak bağlantı talebi atlayabilirsiniz.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için aynı bağlantı talebi geçersiz kılma yöntemi veya uygulama için geçerlidir. Bu mümkün değilse tam talep yöntemi işaretlemek veya öznitelik tamamen kaldırın.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, çeşitli bu kural ihlalleri gösterir.
+
+ [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.OverridesAndSecurity/cs/FxCop.Security.OverridesAndSecurity.cs#1)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+ [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
 
 
 

@@ -20,53 +20,55 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eced3b2d802fa3b2d6dce08da5178afbd8c83090
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3a9e2bb8030fe5273e70da03e6df14bb9dd5607
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687874"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901789"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Yerel kaynaklara sahip olan türler atılabilir olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1049: yerel kaynakları atılabilir türler](https://docs.microsoft.com/visualstudio/code-quality/ca1049-types-that-own-native-resources-should-be-disposable).  
-  
-TypeName | TypesThatOwnNativeResourcesShouldBeDisposable |  
-| Checkıd | CA1049 |  
-| Kategori | Microsoft.Design|  
-| Yeni değişiklik | Bölünemez |  
-  
-## <a name="cause"></a>Sebep  
- Bir türe başvuran bir <xref:System.IntPtr?displayProperty=fullName> alan, bir <xref:System.UIntPtr?displayProperty=fullName> alanın veya bir <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> alan, ancak uygulamıyor <xref:System.IDisposable?displayProperty=fullName>.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Bu kural, varsayar <xref:System.IntPtr>, <xref:System.UIntPtr>, ve <xref:System.Runtime.InteropServices.HandleRef> alanları yönetilmeyen kaynakları işaretçileri depolayın. Yönetilmeyen kaynakların tahsis türlerini uygulamanız gerekir <xref:System.IDisposable> bağlı kaynakları serbest bırakmak ve kaynakları tutan nesnelerin yaşam süreleri kısaltmak için arayanlara izin vermek için.  
-  
- Yönetilmeyen kaynakları temizlemek için önerilen tasarım desenini örtük ve kullanarak bu kaynakları serbest bırakmak için açık bir yol sağlamaktır <xref:System.Object.Finalize%2A?displayProperty=fullName> yöntemi ve <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yöntemi, sırasıyla. Çöp toplayıcı çağrıları <xref:System.Object.Finalize%2A> nesnenin artık erişilebilir olması belirlendikten sonra bazı belirsiz zaman bir nesnenin yöntemi. Sonra <xref:System.Object.Finalize%2A> çağrılır, ek bir çöp toplama, nesne için gereklidir. <xref:System.IDisposable.Dispose%2A> Yöntemi arayan açıkça bağlı kaynakları çöp Toplayıcıya bırakılırsa serbest bırakılır'den önceki kaynakları serbest bırakmak sağlar. Yönetilmeyen kaynakları temizler sonra <xref:System.IDisposable.Dispose%2A> çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> biliyor atıktoplayıcı olanak yöntemi <xref:System.Object.Finalize%2A> çağrılacak; artık sahip bu ek çöp toplama işlemine ihtiyacı ortadan kaldırır ve kısaltır nesne ömrü.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için uygulama <xref:System.IDisposable>.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Yönetilmeyen bir kaynağı türü başvurmuyorsa bu kuraldan bir uyarıyı bastırmak güvenlidir. Aksi takdirde, bu kuraldan bir uyarıyı çünkü bastırmayın uygulamak için hata <xref:System.IDisposable> yönetilmeyen kaynakları kullanılamıyor veya kapatacağı kilitlenmesine neden olabilir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, uygulayan bir tür gösterir <xref:System.IDisposable> bir yönetilmeyen kaynağı temizlemek için.  
-  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1049: yerel kaynakları atılabilir türler](https://docs.microsoft.com/visualstudio/code-quality/ca1049-types-that-own-native-resources-should-be-disposable).
+
+|||
+|-|-|
+|TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
+|CheckId|CA1049|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Bir türe başvuran bir <xref:System.IntPtr?displayProperty=fullName> alan, bir <xref:System.UIntPtr?displayProperty=fullName> alanın veya bir <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> alan, ancak uygulamıyor <xref:System.IDisposable?displayProperty=fullName>.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Bu kural, varsayar <xref:System.IntPtr>, <xref:System.UIntPtr>, ve <xref:System.Runtime.InteropServices.HandleRef> alanları yönetilmeyen kaynakları işaretçileri depolayın. Yönetilmeyen kaynakların tahsis türlerini uygulamanız gerekir <xref:System.IDisposable> bağlı kaynakları serbest bırakmak ve kaynakları tutan nesnelerin yaşam süreleri kısaltmak için arayanlara izin vermek için.
+
+ Yönetilmeyen kaynakları temizlemek için önerilen tasarım desenini örtük ve kullanarak bu kaynakları serbest bırakmak için açık bir yol sağlamaktır <xref:System.Object.Finalize%2A?displayProperty=fullName> yöntemi ve <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yöntemi, sırasıyla. Çöp toplayıcı çağrıları <xref:System.Object.Finalize%2A> nesnenin artık erişilebilir olması belirlendikten sonra bazı belirsiz zaman bir nesnenin yöntemi. Sonra <xref:System.Object.Finalize%2A> çağrılır, ek bir çöp toplama, nesne için gereklidir. <xref:System.IDisposable.Dispose%2A> Yöntemi arayan açıkça bağlı kaynakları çöp Toplayıcıya bırakılırsa serbest bırakılır'den önceki kaynakları serbest bırakmak sağlar. Yönetilmeyen kaynakları temizler sonra <xref:System.IDisposable.Dispose%2A> çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> biliyor atıktoplayıcı olanak yöntemi <xref:System.Object.Finalize%2A> çağrılacak; artık sahip bu ek çöp toplama işlemine ihtiyacı ortadan kaldırır ve kısaltır nesne ömrü.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için uygulama <xref:System.IDisposable>.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Yönetilmeyen bir kaynağı türü başvurmuyorsa bu kuraldan bir uyarıyı bastırmak güvenlidir. Aksi takdirde, bu kuraldan bir uyarıyı çünkü bastırmayın uygulamak için hata <xref:System.IDisposable> yönetilmeyen kaynakları kullanılamıyor veya kapatacağı kilitlenmesine neden olabilir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, uygulayan bir tür gösterir <xref:System.IDisposable> bir yönetilmeyen kaynağı temizlemek için.
+
  [!code-csharp[FxCop.Design.UnmanagedResources#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/cs/FxCop.Design.UnmanagedResources.cs#1)]
- [!code-vb[FxCop.Design.UnmanagedResources#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/vb/FxCop.Design.UnmanagedResources.vb#1)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA2115: Yerel kaynaklar kullanırken GC.KeepAlive'ı çağırın](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
-  
- [CA1816: GC.SuppressFinalize öğesini doğru çağırın](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
-  
- [CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
-  
- [CA1001: Atılabilir alanlara sahip olan türler atılabilir olmalıdır](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+ [!code-vb[FxCop.Design.UnmanagedResources#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/vb/FxCop.Design.UnmanagedResources.vb#1)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA2115: Yerel kaynaklar kullanırken GC.KeepAlive'ı çağırın](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+
+ [CA1816: GC.SuppressFinalize öğesini doğru çağırın](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+
+ [CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+
+ [CA1001: Atılabilir alanlara sahip olan türler atılabilir olmalıdır](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
   [Dispose Deseni](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
 
 

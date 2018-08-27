@@ -20,50 +20,52 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 99b12f24fa97d66dd763a89910e691b600e81adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98c32eb197bb644d0e540bccea10603217342642
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631313"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902984"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Win32 API'sının yönetilen eşdeğerlerini kullanın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA2205: Win32 API'sının eşdeğerleri yönetilen kullanımını](https://docs.microsoft.com/visualstudio/code-quality/ca2205-use-managed-equivalents-of-win32-api).  
-  
-TypeName | UseManagedEquivalentsOfWin32Api |  
-| Checkıd | CA2205 |  
-| Kategori | Microsoft.Usage|  
-| Yeni değişiklik | Olmayan yeni |  
-  
-## <a name="cause"></a>Sebep  
- Bir platform çağırma yöntemi tanımlanır ve eşdeğer bir işlevselliği olan bir yöntem bulunmaktadır [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sınıf kitaplığı.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Bir platform çağırma yöntemi kullanılarak tanımlanır ve yönetilmeyen bir DLL işlevini çağırmak için kullanılan <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği veya `Declare` Visual Basic'teki. Hatalı tanımlanmış bir platform çağırma yöntemi için çalışma zamanı özel durumları nedeniyle, parametre ve dönüş değeri veri türleri ve çağırma kuralı ve karakter gibi yanlış alan belirtimleri eşleme hatalı misnamed bir işlev gibi sorunlara neden olabilir ayarlayın. Varsa, daha basit ve daha az hataya tanımlayın ve yönetilmeyen yöntemi doğrudan çağırmanız eşdeğer yönetilen yöntemini çağırmak genelde olduğu. Platform çağırma yöntemi Çağır ele alınması gereken ek güvenlik sorunlarına da yol açabilir.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için yönetilmeyen işlev çağrısı yönetilen eşdeğerine çağrısı ile değiştirin.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Önerilen değiştirme yöntemi gerekli işlevleri sağlamıyorsa bu kuraldan bir uyarıyı gizler.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği bir platform kuralı ihlal yöntem tanımını çağırın. Ayrıca, platform çağrıları yöntemi çağırın ve eşdeğer Yönetilen yöntemi gösterilir.  
-  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA2205: Win32 API'sının eşdeğerleri yönetilen kullanımını](https://docs.microsoft.com/visualstudio/code-quality/ca2205-use-managed-equivalents-of-win32-api).
+
+|||
+|-|-|
+|TypeName|UseManagedEquivalentsOfWin32Api|
+|CheckId|CA2205|
+|Kategori|Microsoft.Usage|
+|Yeni Değişiklik|Bozucu olmayan|
+
+## <a name="cause"></a>Sebep
+ Bir platform çağırma yöntemi tanımlanır ve eşdeğer bir işlevselliği olan bir yöntem bulunmaktadır [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sınıf kitaplığı.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Bir platform çağırma yöntemi kullanılarak tanımlanır ve yönetilmeyen bir DLL işlevini çağırmak için kullanılan <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği veya `Declare` Visual Basic'teki. Hatalı tanımlanmış bir platform çağırma yöntemi için çalışma zamanı özel durumları nedeniyle, parametre ve dönüş değeri veri türleri ve çağırma kuralı ve karakter gibi yanlış alan belirtimleri eşleme hatalı misnamed bir işlev gibi sorunlara neden olabilir ayarlayın. Varsa, daha basit ve daha az hataya tanımlayın ve yönetilmeyen yöntemi doğrudan çağırmanız eşdeğer yönetilen yöntemini çağırmak genelde olduğu. Platform çağırma yöntemi Çağır ele alınması gereken ek güvenlik sorunlarına da yol açabilir.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için yönetilmeyen işlev çağrısı yönetilen eşdeğerine çağrısı ile değiştirin.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Önerilen değiştirme yöntemi gerekli işlevleri sağlamıyorsa bu kuraldan bir uyarıyı gizler.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnekte gösterildiği bir platform kuralı ihlal yöntem tanımını çağırın. Ayrıca, platform çağrıları yöntemi çağırın ve eşdeğer Yönetilen yöntemi gösterilir.
+
  [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/cs/FxCop.Usage.ManagedEquivalents.cs#1)]
- [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA1404: P/Invoke ardından hemen GetLastError çağırın](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)  
-  
- [CA1060: Taşıma P/Invokes öğesini NativeMethods sınıfına](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)  
-  
- [CA1400: P/Invoke giriş noktaları bulunmalıdır](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)  
-  
- [CA1401: P/Invoke'lar görünür olmamalıdır](../code-quality/ca1401-p-invokes-should-not-be-visible.md)  
-  
+ [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA1404: P/Invoke ardından hemen GetLastError çağırın](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+
+ [CA1060: P/Invokes öğesini NativeMethods sınıfına taşıyın](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+
+ [CA1400: P/Invoke giriş noktaları bulunmalıdır](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+
+ [CA1401: P/Invoke'lar görünür olmamalıdır](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+
  [CA2101: P/Invoke dize bağımsız değişkenleri için hazırlama belirtin](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 

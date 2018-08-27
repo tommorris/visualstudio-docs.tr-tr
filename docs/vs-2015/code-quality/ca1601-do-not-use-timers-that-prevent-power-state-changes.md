@@ -20,33 +20,35 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4ee50f951dee24c8037829cdbd1311f3d477232f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de1b5e943274b80d8a46d05dcd0cdb8fe8b2b82a
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677620"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900560"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1601: güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın](https://docs.microsoft.com/visualstudio/code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes).  
-  
-TypeName | DoNotUseTimersThatPreventPowerStateChanges |  
-| Checkıd | CA1601 |  
-| Kategori | Microsoft.Mobility|  
-| Yeni değişiklik | Bozucu |  
-  
-## <a name="cause"></a>Sebep  
- Zamanlayıcı, saniye başına birden fazla kez gerçekleşecek şekilde ayarlanan bir aralığı vardır.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- İkinci ya da birden daha sık gerçekleşmesine kullanım zamanlayıcılar başına bir kez daha sık yoklama değil saniye başına zaman. Yüksek frekanslı dönemsel faaliyet CPU'yu meşgul tutar ve sabit diski gösteren güç tasarruflu zamanlayıcılarla müdahale edilir.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Zamanlayıcı aralıkları saniyede saatten daha az bir kez gerçekleşecek şekilde ayarlayın.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1601: güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın](https://docs.microsoft.com/visualstudio/code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes).
+
+|||
+|-|-|
+|TypeName|DoNotUseTimersThatPreventPowerStateChanges|
+|CheckId|CA1601|
+|Kategori|Microsoft.Mobility|
+|Yeni Değişiklik|Yeni|
+
+## <a name="cause"></a>Sebep
+ Zamanlayıcı, saniye başına birden fazla kez gerçekleşecek şekilde ayarlanan bir aralığı vardır.
+
+## <a name="rule-description"></a>Kural Tanımı
+ İkinci ya da birden daha sık gerçekleşmesine kullanım zamanlayıcılar başına bir kez daha sık yoklama değil saniye başına zaman. Yüksek frekanslı dönemsel faaliyet CPU'yu meşgul tutar ve sabit diski gösteren güç tasarruflu zamanlayıcılarla müdahale edilir.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Zamanlayıcı aralıkları saniyede saatten daha az bir kez gerçekleşecek şekilde ayarlayın.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Bu kural yalnızca saniye başına birden fazla kez Zamanlayıcı tetikleme gereklidir ve mobility konuları güvenle görmezden gelinebilir atlanması.
 
 

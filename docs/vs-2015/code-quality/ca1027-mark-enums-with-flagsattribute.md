@@ -20,46 +20,48 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8beb872654d667fc26737dcc72a0b713bbd4e12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cad7b5916b87cd7e1e3fefb27c90672143dbca1c
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687011"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902223"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Numaralandırmaları FlagsAttribute ile işaretle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konuda en son sürümünü şu yolda bulunabilir: [CA1027: numaralandırmaları FlagsAttribute ile işaretle](https://docs.microsoft.com/visualstudio/code-quality/ca1027-mark-enums-with-flagsattribute).  
-  
-TypeName | MarkEnumsWithFlags |  
-| Checkıd | CA1027 |  
-| Kategori | Microsoft.Design|  
-| Yeni değişiklik | Bölünemez |  
-  
-## <a name="cause"></a>Sebep  
- Ortak bir numaralandırma değerlerini iki powers veya numaralandırmada tanımlanan diğer değerleri birleşimlerini ve <xref:System.FlagsAttribute?displayProperty=fullName> özniteliği mevcut değil. Hatalı pozitif sonuçları azaltmak için bu kuralı ihlal bitişik değerlere sahip sabit listeleri için raporlamaz.  
-  
-## <a name="rule-description"></a>Kural Tanımı  
- Bir numaralandırma ilişkili adlandırılmış sabitler kümesini tanımlayan değer türüdür. Uygulama <xref:System.FlagsAttribute> anlamsız atayamayacağına birleştirilebilir, bir sabit listesi. Örneğin, bir uygulamada hangi günün kaynaklar kullanılabilir izler haftanın günlerini numaralandırması göz önünde bulundurun. Her kaynak kullanılabilirliğini sahip numaralandırma kullanılarak kodlanır <xref:System.FlagsAttribute> yoksa, herhangi bir birleşimini gün gösterilebileceği. Öznitelik olmadan, yalnızca haftanın bir gününü temsil edilebilir.  
-  
- Combinable numaralandırmalar depolama alanları için tek tek numaralandırma değerlerinin bit alanına grupları olarak kabul edilir. Bu nedenle, bu tür alanlar olarak da adlandırılır *bit alanları*. Numaralandırma değerlerinin bit alanı depolama birleştirmek için koşullu Boole işleçlerini kullanın. Bir bit alanı, belirli bir sabit listesi değeri mevcut olup olmadığını belirlemek için test etmek için Boolean mantıksal işleçleri kullanın. Bir bit alanı birleşik numaralandırma değerlerinin doğru şekilde depolanıp numaralandırmada tanımlanan her bir değeri ikinin üssü olmalıdır. Bu olmadığı sürece, Boolean mantıksal işleçler alanında depolanan tek bir sabit listesi değerlerini ayıklamak mümkün olmayacaktır.  
-  
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
- Bu kural ihlalini düzeltmek için ekleme <xref:System.FlagsAttribute> için sabit listesi.  
-  
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında  
- Numaralandırma değerlerinin combinable olmasını istemiyorsanız bu kuraldan bir uyarıyı gizler.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, `DaysEnumNeedsFlags` kullanma gereksinimleri karşılayan bir sabit listesidir <xref:System.FlagsAttribute>, yok ancak. `ColorEnumShouldNotHaveFlag` Numaralandırma iki powers değerler yok, ancak yanlış belirtir <xref:System.FlagsAttribute>. Bu kuralı ihlal ediyor [CA2217: numaralandırmaları FlagsAttribute ile işaretlemeyin](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).  
-  
- [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]  
-  
-## <a name="related-rules"></a>İlgili kuralları  
- [CA2217: Numaralandırmaları FlagsAttribute ile işaretlemeyin](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Bu konuda en son sürümünü şu yolda bulunabilir: [CA1027: numaralandırmaları FlagsAttribute ile işaretle](https://docs.microsoft.com/visualstudio/code-quality/ca1027-mark-enums-with-flagsattribute).
+
+|||
+|-|-|
+|TypeName|MarkEnumsWithFlags|
+|CheckId|CA1027|
+|Kategori|Microsoft.Design|
+|Yeni Değişiklik|Bölünemez|
+
+## <a name="cause"></a>Sebep
+ Ortak bir numaralandırma değerlerini iki powers veya numaralandırmada tanımlanan diğer değerleri birleşimlerini ve <xref:System.FlagsAttribute?displayProperty=fullName> özniteliği mevcut değil. Hatalı pozitif sonuçları azaltmak için bu kuralı ihlal bitişik değerlere sahip sabit listeleri için raporlamaz.
+
+## <a name="rule-description"></a>Kural Tanımı
+ Bir numaralandırma ilişkili adlandırılmış sabitler kümesini tanımlayan değer türüdür. Uygulama <xref:System.FlagsAttribute> anlamsız atayamayacağına birleştirilebilir, bir sabit listesi. Örneğin, bir uygulamada hangi günün kaynaklar kullanılabilir izler haftanın günlerini numaralandırması göz önünde bulundurun. Her kaynak kullanılabilirliğini sahip numaralandırma kullanılarak kodlanır <xref:System.FlagsAttribute> yoksa, herhangi bir birleşimini gün gösterilebileceği. Öznitelik olmadan, yalnızca haftanın bir gününü temsil edilebilir.
+
+ Combinable numaralandırmalar depolama alanları için tek tek numaralandırma değerlerinin bit alanına grupları olarak kabul edilir. Bu nedenle, bu tür alanlar olarak da adlandırılır *bit alanları*. Numaralandırma değerlerinin bit alanı depolama birleştirmek için koşullu Boole işleçlerini kullanın. Bir bit alanı, belirli bir sabit listesi değeri mevcut olup olmadığını belirlemek için test etmek için Boolean mantıksal işleçleri kullanın. Bir bit alanı birleşik numaralandırma değerlerinin doğru şekilde depolanıp numaralandırmada tanımlanan her bir değeri ikinin üssü olmalıdır. Bu olmadığı sürece, Boolean mantıksal işleçler alanında depolanan tek bir sabit listesi değerlerini ayıklamak mümkün olmayacaktır.
+
+## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+ Bu kural ihlalini düzeltmek için ekleme <xref:System.FlagsAttribute> için sabit listesi.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+ Numaralandırma değerlerinin combinable olmasını istemiyorsanız bu kuraldan bir uyarıyı gizler.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnekte, `DaysEnumNeedsFlags` kullanma gereksinimleri karşılayan bir sabit listesidir <xref:System.FlagsAttribute>, yok ancak. `ColorEnumShouldNotHaveFlag` Numaralandırma iki powers değerler yok, ancak yanlış belirtir <xref:System.FlagsAttribute>. Bu kuralı ihlal ediyor [CA2217: numaralandırmaları FlagsAttribute ile işaretlemeyin](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+
+ [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
+
+## <a name="related-rules"></a>İlgili kuralları
+ [CA2217: Numaralandırmaları FlagsAttribute ile işaretlemeyin](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.FlagsAttribute?displayProperty=fullName>
 
 

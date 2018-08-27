@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639132"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902825"
 ---
 # <a name="extend-projects"></a>Projeleri genişletme
 Projeler ve çözümler, Visual Studio kodu ve kaynak dosyaları derleme ve dağıtım birimler halinde düzenler yöntemleri sunulmaktadır. Projeler hakkında daha fazla bilgi bulabilirsiniz [projeleri (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Visual Studio SDK'sı ve yönetilen paket çerçevesini adresinden indirebilirsiniz projeleri için kendi proje türleri oluşturma [projeleri için yönetilen paket çerçevesini](http://mpfproj12.codeplex.com/). Anlamak için özel projeler uygulanan edinmek bkz [yeni proje oluşturma: altyapı öğeleri, bir bölüm](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) ve [yeni proje oluşturma: altyapı öğeleri, bölüm iki](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Visual Studio SDK'sı ve yönetilen paket çerçevesini adresinden indirebilirsiniz projeleri için kendi proje türleri oluşturma [projeleri için yönetilen paket çerçevesini](https://github.com/tunnelvisionlabs/MPFProj10). Anlamak için özel projeler uygulanan edinmek bkz [yeni proje oluşturma: altyapı öğeleri, bir bölüm](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) ve [yeni proje oluşturma: altyapı öğeleri, bölüm iki](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Bu bölümdeki konular, özel Proje nasıl oluşturulacağını ve Visual Studio çözümünün farklı türlerini yönetme açıklar.  
   

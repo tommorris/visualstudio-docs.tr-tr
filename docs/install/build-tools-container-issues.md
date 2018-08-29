@@ -1,6 +1,6 @@
 ---
-title: Kapsayıcıları için bilinen sorunlar
-description: Visual Studio derleme araçları 2017 Windows kapsayıcıya yüklerken karşılaşabileceğiniz bilinen sorunlar hakkında daha fazla bilgi edinin.
+title: Kapsayıcılar için bilinen sorunlar
+description: Visual Studio derleme araçları 2017 Windows kapsayıcısına yükleme sırasında oluşabilecek bilinen sorunlar hakkında daha fazla bilgi edinin.
 ms.custom: ''
 ms.date: 04/18/2018
 ms.technology: vs-acquisition
@@ -12,46 +12,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06da94f4f2920aa7ce87822482a762a1451e9acb
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c94c6756e1272b08136f624e9cde63523d630b35
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282502"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139151"
 ---
-# <a name="known-issues-for-containers"></a>Kapsayıcıları için bilinen sorunlar
+# <a name="known-issues-for-containers"></a>Kapsayıcılar için bilinen sorunlar
 
-Visual Studio Docker kapsayıcıya yüklerken bazı sorunlar vardır.
+Visual Studio'yu bir Docker kapsayıcısına yüklerken birkaç sorun vardır.
 
-## <a name="windows-container"></a>Windows kapsayıcısı
+## <a name="windows-container"></a>Windows kapsayıcı
 
-Aşağıdaki bilinen sorunlar, Visual Studio derleme araçları 2017 Windows kapsayıcıya yüklediğinizde oluşur.
+Aşağıdaki bilinen sorunlar ortaya çıkar Visual Studio derleme araçları 2017 Windows kapsayıcısına yükleyin.
 
-* Görüntü microsoft/windowsservercore:10.0.14393.1593 üzerinde dayalı bir kapsayıcı Visual Studio yükleyemiyor. Daha eski veya yeni Windows sürümleri ile etiketlenmiş görüntü çalışması gerekir.
-* Windows SDK sürümleri 10.0.14393 eski yükleyemezsiniz. Bazı paketler yüklenemedi ve bu paketlere bağımlı iş yükleri çalışmaz.
-* Geçirmek `-m 2GB` (veya daha fazla) görüntüyü oluştururken. Bazı iş yükleri varsayılandan daha fazla bellek gerektirir 1 yüklendiğinde GB.
-* Varsayılandan daha büyük olan diskler kullanmak için Docker yapılandırma 20 GB.
-* Geçirmek `--norestart` komut satırında. Bu yazma olduğu gibi bir Windows kapsayıcı içinden yeniden başlatılmaya çalışılıyor kapsayıcı döndürür `ERROR_TOO_MANY_OPEN_FILES` ana bilgisayara.
-* Doğrudan microsoft/windowsservercore üzerinde görüntünüzü dayandırırsanız, .NET Framework yüklenemeyebilir ve hiçbir yükleme hatası gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ya da daha yeni. Örnek olarak, gibi MSBuild ile derleme yaparken bir hata görebilirsiniz:
+* Visual Studio görüntü microsoft/windowsservercore:10.0.14393.1593 alarak bir kapsayıcı içinde yükleyemezsiniz. Daha eski veya yeni Windows sürümleri ile etiketlenmiş resimleri çalışması gerekir.
+* Windows SDK sürümlerine 10.0.14393 eski yükleyemezsiniz. Bazı paketler yüklenemedi ve bu paketleri kullanan iş yükleri çalışmaz.
+* Geçirmek `-m 2GB` (veya daha fazlası) görüntü oluşturulurken. Bazı iş yükleri varsayılandan daha fazla belleğe ihtiyaç 1 yüklü olduğunda GB.
+* Docker varsayılandan daha büyük diskleri kullanacak şekilde yapılandırma 20 GB.
+* Geçirmek `--norestart` komut satırında. Bu yazma olduğu gibi bir Windows kapsayıcı içinden başlatmayı denemeden kapsayıcı döndürür `ERROR_TOO_MANY_OPEN_FILES` konağa.
+* Görüntünüzü doğrudan microsoft/windowsservercore üzerinde temel alıyorsa, .NET Framework düzgün yüklenmeyebilir ve herhangi bir yükleme hata gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ya da daha yeni. Örneğin, gibi MSBuild ile derleme yaparken bir hata görebilirsiniz:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): MSB6003 hata: Belirtilen görev yürütülebilir "csc.exe" çalıştırılamıyor. Dosya veya derleme yüklenemedi ' System.IO.FileSystem, sürüm 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a ' ya da bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): MSB6003 hata: "csc.exe" Belirtilen görev yürütülebilir dosya çalıştırılamadı. Dosya veya derleme yüklenemedi ' System.IO.FileSystem, sürüm 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a ' veya bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.
 
-## <a name="build-tools-container"></a>Araçlar kapsayıcı oluşturma
+## <a name="build-tools-container"></a>Araçlar kapsayıcısı oluşturun
 
-Derleme araçları kapsayıcı kullandığınızda, aşağıdaki bilinen sorunlar ortaya çıkabilir. Diğer bilinen bir sorun varsa ziyaret edin veya sorunlar giderildi olup olmadığını görmek için https://developercommunity.visualstudio.com.
+Bir derleme araçları kapsayıcı kullandığınızda, aşağıdaki bilinen sorunlar ortaya çıkabilir. Sorunları düzelttik olup olmadığını görmek için veya diğer bilinen bir sorun varsa ziyaret https://developercommunity.visualstudio.com.
 
-* IntelliTrace çalışmayabilir [bazı senaryolar](https://github.com/Microsoft/vstest/issues/940) bir kapsayıcıdaki.
+* IntelliTrace çalışmayabilir [bazı senaryolar](https://github.com/Microsoft/vstest/issues/940) bir kapsayıcı içinde.
 
-## <a name="get-support"></a>Destek alma
-
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Birkaç diğer destek seçenekleri şunlardır:
-
-* Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
-* Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

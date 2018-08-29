@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054578"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138949"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes araçları kullanmaya başlayın
 
-Visual Studio Kubernetes araçları Kubernetes hedefleyen kapsayıcılı uygulamaların geliştirilmesini kolaylaştıran yardımcı olur. Visual Studio, Kubernetes dağıtımı, dockerfile'ları ve Helm grafiklerini gibi desteklemek için gereken kod olarak yapılandırma dosyaları otomatik olarak oluşturabilirsiniz. Ayrıca, bir Azure Kubernetes Service (AKS) kümesine doğrudan Visual Studio'dan yayımlayabilirsiniz.
+Visual Studio Kubernetes araçları Kubernetes hedefleyen kapsayıcılı uygulamaların geliştirilmesini kolaylaştıran yardımcı olur. Visual Studio, Kubernetes dağıtımı, dockerfile'ları ve Helm grafiklerini gibi desteklemek için gereken kod olarak yapılandırma dosyaları otomatik olarak oluşturabilirsiniz. Azure geliştirme alanları kullanarak canlı bir Azure Kubernetes Service (AKS) kümesi kodunuzda hata ayıklamak veya bir AKS kümesi doğrudan yayımlamak Visual Studio içinde.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -28,7 +28,7 @@ Bu yeni işlevselliği yararlanmak için gerekir:
 
 - [Visual Studio için Kubernetes Araçları](https://aka.ms/get-vsk8stools), ayrı bir indirme olarak kullanılabilir.
 
-- [Windows için docker](https://store.docker.com/editions/community/docker-ce-desktop-windows) geliştirme iş istasyonunuzda yüklü (diğer bir deyişle, Visual Studio'yu çalıştırdığınız)
+- [Windows için docker](https://store.docker.com/editions/community/docker-ce-desktop-windows) geliştirme iş istasyonunuzda yüklü (diğer bir deyişle, Visual Studio'yu çalıştırdığınız), Docker görüntülerinizi oluşturmak istiyorsanız, yerel olarak çalışan Docker kapsayıcıları hata ayıklama veya AKS için yayımlayın.
 
 - AKS için Visual Studio'dan yayımlamak istiyorsanız:
 
@@ -74,7 +74,7 @@ Eklenen dosyalar şunlardır:
 
 - bir Helm grafiği ve bir *grafikleri* klasör. Helm grafiği için Kubernetes dağıtmak için kullanabileceğiniz uygulamanın bu yaml dosyaları oluşturur. Helm hakkında daha fazla bilgi için bkz. [ https://www.helm.sh ](https://www.helm.sh).
 
-- *azds.yaml*. Bu, Azure geliştirme alanları, Azure Kubernetes hizmetinde hızlı ve yinelemeli hata ayıklama deneyimi sağlayan yeni bir hizmet için ayarları içerir. Bu dosya şu anda kullanılmayan, ancak gelecekte kullanılmak üzere Azure geliştirme boşluk tarafından ayrılmış.
+- *azds.yaml*. Bu hızlı, yinelemeli bir hata ayıklama deneyimini Azure Kubernetes Service'teki sağlayan Azure geliştirme alanları için ayarları içerir. Daha fazla bilgi için lütfen başvuru [Azure geliştirme alanları belgelerine](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Azure Kubernetes Service'i (AKS) yayımlama
 

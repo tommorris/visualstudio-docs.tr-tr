@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 513b97d650efbe983d2fbe075532ecd45c2fa966
-ms.sourcegitcommit: d96d2888ee2d4a2a33c508c3787e259478134bae
+ms.openlocfilehash: ef62980f3e6eca10732502fa97c453628e4e33b1
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624081"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138473"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 derleme numaraları ve yayın tarihleri
 
@@ -144,16 +144,7 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 | 15.1 önizleme 1 | Önizleme | 7 Mart 2017 | 15.0.26304.0 |
 | 15.0.0 | Sürüm | 7 Mart 2017 | 15.0.26228.4 |
 
-## <a name="get-support"></a>Destek alın
-
-Bazı durumlarda sorunlar. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme, Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı (yalnızca İngilizce) yükleme Yardımı için canlı sohbet göre bize başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfasını](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Birkaç diğer destek seçenekleri şunlardır:
-
-* Ürün sorunları bize bildirebilirsiniz [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem de Visual Studio yükleyicisi Visual Studio IDE içinde görünen bir araç.
-* Üzerinde bir ürün önerisi bizimle paylaşabilirsiniz [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izlemek ve sorularınıza cevap bulun [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
-* ABD ve diğer Visual Studio geliştiricilere ile görüşebilirsiniz [Gitter Topluluğu'nda Visual Studio konuşma](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektirir bir [GitHub](https://github.com/) hesabı.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 5250166a1cccf0b46e533ad4ed22b28454c1ac33
-ms.sourcegitcommit: 2b1f8e5288582367af2bed20848ba556f146716e
+ms.openlocfilehash: 469444051956a766bd44d517dd59ec6d945039b0
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624406"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139294"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Visual Studio 2017 Desktop Express bileşen dizini
 
@@ -92,16 +92,7 @@ Bileşen kimliği | Ad | Sürüm
 --- | --- | ---
 yok | yok | yok
 
-## <a name="get-support"></a>Destek alın
-
-Bazı durumlarda sorunlar. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme, Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı (yalnızca İngilizce) yükleme Yardımı için canlı sohbet göre bize başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfasını](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Birkaç diğer destek seçenekleri şunlardır:
-
-* Ürün sorunları bize bildirebilirsiniz [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem de Visual Studio yükleyicisi Visual Studio IDE içinde görünen bir araç.
-* Üzerinde bir ürün önerisi bizimle paylaşabilirsiniz [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izlemek ve sorularınıza cevap bulun [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
-* ABD ve diğer Visual Studio geliştiricilere ile görüşebilirsiniz [Gitter Topluluğu'nda Visual Studio konuşma](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektirir bir [GitHub](https://github.com/) hesabı.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

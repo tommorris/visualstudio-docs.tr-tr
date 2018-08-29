@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca4246ed0e8c2f3b65b3cdb1bd644fcf4335b5e
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 70147dac62ad0aaa59a1c6823b321afe54b2d3a7
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624189"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139130"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio'yu çevrimdışı yükleme için gerekli sertifikaları yükleme
 
@@ -126,16 +126,7 @@ Sertifika adları içinde değilse **çıkarılan** sütunları yüklü olması 
 
 Sertifikalar'ı yükledikten sonra Visual Studio'nun dağıtım yönergeleri kullanarak devam edebilirsiniz [ağ yüklemesinden dağıtma](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) sayfası "oluşturma Visual Studio'nun bir ağ yükleme" bölümü.
 
-## <a name="get-support"></a>Destek alın
-
-Bazı durumlarda sorunlar. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme, Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı (yalnızca İngilizce) yükleme Yardımı için canlı sohbet göre bize başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfasını](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Birkaç diğer destek seçenekleri şunlardır:
-
-* Ürün sorunları bize bildirebilirsiniz [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem de Visual Studio yükleyicisi Visual Studio IDE içinde görünen bir araç.
-* Üzerinde bir ürün önerisi bizimle paylaşabilirsiniz [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izlemek ve sorularınıza cevap bulun [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
-* ABD ve diğer Visual Studio geliştiricilere ile görüşebilirsiniz [Gitter Topluluğu'nda Visual Studio konuşma](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektirir bir [GitHub](https://github.com/) hesabı.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

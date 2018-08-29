@@ -1,5 +1,5 @@
 ---
-title: Gelişmiş örnek kapsayıcıları için
+title: Kapsayıcılar için İleri düzey örnek
 description: ''
 ms.custom: ''
 ms.date: 04/18/2018
@@ -12,27 +12,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f708ca73efa4f166f701b4d488ccc609f86e7a4
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9b8d779dec88bf912f04dca6d8b736fb5f3e53dd
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283412"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139307"
 ---
-# <a name="advanced-example-for-containers"></a>Gelişmiş örnek kapsayıcıları için
+# <a name="advanced-example-for-containers"></a>Kapsayıcılar için İleri düzey örnek
 
-Dockerfile örnek içinde [bir kapsayıcı halinde derleme araçlarını yükleme](build-tools-container.md) her zaman kullanır [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) görüntü tabanlı en son microsoft/windowsservercore görüntü ve en son Visual Studio derleme araçları 2017 yükleyicisi. Bu görüntü yayımlarsanız bir [Docker kayıt defteri](https://azure.microsoft.com/services/container-registry) başkalarının çıkarmak bu görüntüyü birçok senaryo için uygun olabilir. Bununla birlikte, pratikte hangi temel görüntü hakkında belirli olması için daha yaygın bir durumdur ve yüklediğiniz sürümleri aracı, karşıdan, hangi ikili dosyaları kullanın.
+Örnek Dockerfile içinde [derleme araçlarını bir kapsayıcıya alın yükleme](build-tools-container.md) her zaman kullanır [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) görüntünün en son microsoft/windowsservercore görüntü ve en son Visual temel Studio derleme araçları 2017 yükleyicisi. Bu uyarı görüntüye yayımlarsanız bir [Docker kayıt defteri](https://azure.microsoft.com/services/container-registry) başkalarının çekmek bu görüntü birçok senaryo için uygun olabilir. Ancak, uygulamada hangi temel görüntü hakkında belirli olmasını daha yaygındır, indirdiğiniz, hangi ikili dosyalarını kullanmak ve Aracı sürümleri yüklemeniz.
 
-Aşağıdaki örnek Dockerfile belirli sürüm etiketi dotnet/microsoft-framework görüntünün kullanır. Belirli bir etiket için bir temel görüntü kullanarak sıradan bir hale ve bu binanın anımsaması kolay hale getirir ya da aynı temel sahip görüntüleri her zaman yeniden oluşturma.
+Aşağıdaki örnek Dockerfile dotnet/microsoft-framework görüntünün bir belirli sürüm etiketi kullanır. Belirli bir etiketi için temel bir görüntü kullanarak sıradan bir hale ve bu yapı unutmayın kolaylaştırır ya da aynı temel görüntüleri her zaman yeniden sahiptir.
 
 > [!NOTE]
-> Microsoft/windowsservercore:10.0.14393.1593 veya bir kapsayıcı yükleyicisinde başlatma sorunları bilinen temel alan herhangi bir görüntü Visual Studio yükleyemiyor. Daha fazla bilgi için bkz: [bilinen sorunlar](build-tools-container-issues.md).
+> Visual Studio microsoft/windowsservercore:10.0.14393.1593 ya da bunu temel alan herhangi bir kapsayıcıda yükleyicisi başlatılıyor sorunlara görüntüsüne yükleyemezsiniz. Daha fazla bilgi için [bilinen sorunlar](build-tools-container-issues.md).
 
-Aşağıdaki örnek derleme araçları 2017 en son sürümünü yükler. Derleme araçları yükleyebilirsiniz bir kapsayıcıya daha sonra eski bir sürümünü kullanmak istiyorsanız, öncelikle [oluşturma](create-an-offline-installation-of-visual-studio.md) ve [korumak](update-a-network-installation-of-visual-studio.md) bir düzeni.
+Aşağıdaki örnekte, derleme araçları 2017 en son sürümünü yükler. Derleme araçları yükleyebileceğiniz bir kapsayıcıya daha eski bir sürümünü kullanmak istiyorsanız, önce [oluşturma](create-an-offline-installation-of-visual-studio.md) ve [korumak](update-a-network-installation-of-visual-studio.md) düzeni.
 
-## <a name="install-script"></a>Komut dosyasını yükleyin
+## <a name="install-script"></a>Komut dosyası yükleme
 
-Yükleme hata oluştuğunda günlükleri toplamak için çalışma dizinini aşağıdaki içerik ile "Install.cmd" adlı bir toplu betik oluşturun:
+Yükleme hata oluştuğunda günlükleri toplamak için çalışma dizininde aşağıdaki içerikle "Install.cmd" adlı bir toplu betik oluşturun:
 
 ```shell
 @if not defined _echo echo off
@@ -53,7 +53,7 @@ if "%ERRORLEVEL%"=="3010" (
 
 ## <a name="dockerfile"></a>Dockerfile
 
-Çalışma dizini "Dockerfile" ile aşağıdaki içeriği oluşturun:
+Çalışma dizininde aşağıdaki içerikle "Dockerfile" oluşturun:
 
 ```dockerfile
 # escape=`
@@ -92,17 +92,17 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
-Geçerli çalışma dizini görüntüde oluşturmak için aşağıdaki komutu çalıştırın:
+Geçerli çalışma dizininde görüntüsünü oluşturmak için aşağıdaki komutu çalıştırın:
 
 ```shell
 docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 ```
 
-İsteğe bağlı olarak her ikisi de geçirmek `FROM_IMAGE` veya `CHANNEL_URL` kullanarak bağımsız değişkenleri `--build-arg` farklı bir temel görüntüsü veya bir sabit görüntü korumak için bir iç düzeni konumunu belirtmek için komut satırı anahtarı.
+İsteğe bağlı olarak veya her ikisi de geçirmek `FROM_IMAGE` veya `CHANNEL_URL` bağımsız değişkenleri kullanarak `--build-arg` farklı bir temel görüntü veya bir sabit görüntü korumak için bir iç düzen konumunu belirtmek için komut satırı anahtarı.
 
 ## <a name="diagnosing-install-failures"></a>Yükleme hatalarını tanılama
 
-Bu örnek, belirli araçları indirir ve karmaları eşleştiğini doğrular. Böylece bir yükleme hatası oluşursa, bu hatayı çözümlemek için konak makine günlükleri kopyalayabilirsiniz en son Visual Studio ve .NET günlük toplama yardımcı programının de yükler.
+Bu örnek, belirli araçları yükler ve karmalar eşleştiğini doğrular. Yükleme hatası oluşursa, hatayı çözümlemek için konak makinenizi günlükleri kopyalayabilirsiniz. böylece en son Visual Studio ve .NET günlük toplama yardımcı programının de yükler.
 
 ```shell
 > docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
@@ -117,16 +117,7 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 Son satırı yürütme sona erdikten sonra "% TEMP%\vslogs.zip" makinenizde açın veya sorun gönderme sırasında [Geliştirici topluluğu](https://developercommunity.visualstudio.com) web sitesi.
 
-## <a name="get-support"></a>Destek alma
-
-Bazı durumlarda, şeyler yanlış gidebilirsiniz. Visual Studio yükleme başarısız olursa bkz [sorun giderme Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı, bize yükleme Yardımı (yalnızca İngilizce) için canlı sohbet tarafından başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfası](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Birkaç diğer destek seçenekleri şunlardır:
-
-* Ürün sorunları bize bildirebilirsiniz [bir sorun bildirmek](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem Visual Studio Yükleyicisi ve Visual Studio IDE görünür aracı.
-* Üzerinde bir ürün önerisi bizimle paylaşın [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunlarını izlemek ve yanıtlar bulmak [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
-* ABD ve diğer Visual Studio geliştiriciler aracılığıyla devreye [Gitter topluluk Visual Studio konuşmada](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektiren bir [GitHub](https://github.com/) hesabı.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

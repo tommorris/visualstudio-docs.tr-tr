@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: b41dc38c7ab66449f7ce301f02fed4d3432619bb
-ms.sourcegitcommit: 2b1f8e5288582367af2bed20848ba556f146716e
+ms.openlocfilehash: fea55c6d67b2d33c5706176c0f542aa7cd35bab8
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624079"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139281"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 bileşen dizini
 
@@ -1063,16 +1063,7 @@ Microsoft.VisualStudio.Component.VC.Tools.14.13 | VC ++ 2017 sürüm 15.6 v14.13
 Microsoft.VisualStudio.Component.VC.Tools.14.14 | VC ++ 2017 sürüm 15.7 v14.14 araç takımı | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | ARM64 için Visual C++ Derleyicileri ve kitaplıkları | 15.6.27309.0
 
-## <a name="get-support"></a>Destek alın
-
-Bazı durumlarda sorunlar. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme, Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı (yalnızca İngilizce) yükleme Yardımı için canlı sohbet göre bize başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfasını](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Birkaç diğer destek seçenekleri şunlardır:
-
-* Ürün sorunları bize bildirebilirsiniz [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem de Visual Studio yükleyicisi Visual Studio IDE içinde görünen bir araç.
-* Üzerinde bir ürün önerisi bizimle paylaşabilirsiniz [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izlemek ve sorularınıza cevap bulun [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
-* ABD ve diğer Visual Studio geliştiricilere ile görüşebilirsiniz [Gitter Topluluğu'nda Visual Studio konuşma](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektirir bir [GitHub](https://github.com/) hesabı.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: 01727244844db4280978d4a3f79ba9551a88d410
-ms.sourcegitcommit: 2b1f8e5288582367af2bed20848ba556f146716e
+ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624441"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138785"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio geri bildirim istemcisi 2017 bileşen dizini
 
@@ -59,16 +59,7 @@ Bileşen kimliği | Ad | Sürüm
 --- | --- | ---
 yok | yok | yok
 
-## <a name="get-support"></a>Destek alın
-
-Bazı durumlarda sorunlar. Visual Studio yüklemenizin başarısız olursa bkz [sorun giderme, Visual Studio 2017 yükleme ve yükseltme sorunlarını](troubleshooting-installation-issues.md) sayfası. Sorun giderme adımlarını hiçbiri yardımcı (yalnızca İngilizce) yükleme Yardımı için canlı sohbet göre bize başvurabilirsiniz. Ayrıntılar için bkz [Visual Studio destek sayfasını](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Birkaç diğer destek seçenekleri şunlardır:
-
-* Ürün sorunları bize bildirebilirsiniz [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem de Visual Studio yükleyicisi Visual Studio IDE içinde görünen bir araç.
-* Üzerinde bir ürün önerisi bizimle paylaşabilirsiniz [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Ürün sorunları izlemek ve sorularınıza cevap bulun [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
-* ABD ve diğer Visual Studio geliştiricilere ile görüşebilirsiniz [Gitter Topluluğu'nda Visual Studio konuşma](https://gitter.im/Microsoft/VisualStudio). (Bu seçenek gerektirir bir [GitHub](https://github.com/) hesabı.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

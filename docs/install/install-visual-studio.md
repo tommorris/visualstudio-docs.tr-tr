@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3bf425aefae47e15efa99d5b24ad5e42ed0664c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624342"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225090"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
 
@@ -144,9 +144,8 @@ Daha fazla bilgi için [Visual Studio yükleme konumlarını değiştirme](chang
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio 2017 güncelleştirmesi](update-visual-studio.md)
-* [Visual Studio 2017'yi değiştirin](modify-visual-studio.md)
+* [Visual Studio 2017'yi Değiştirme](modify-visual-studio.md)
 * [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
 * [Visual Studio 2017'in çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
-* [Visual Studio 2017 Yönetici Kılavuzu](visual-studio-administrator-guide.md)
-  * [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma](use-command-line-parameters-to-install-visual-studio.md)
-* [Derleme Araçlarını Bir Kapsayıcıya Yükleme](build-tools-container.md)
+* [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma](use-command-line-parameters-to-install-visual-studio.md)
+* [Kurulum ve Mac için Visual Studio yükleme](/visualstudio/mac/installation)

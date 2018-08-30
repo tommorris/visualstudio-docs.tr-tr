@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d398d22944ae4c0e5be725169b9d7ceaadb0667d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945838"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225132"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Yerel Önerilen Kurallar kural kümesi
 
@@ -148,6 +148,9 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C26116](../code-quality/c26116.md)|Alınamıyor veya kilit|
 |[C26117](../code-quality/c26117.md)|Tutulmayan kilit bırakılıyor|
 |[C26140](../code-quality/c26140.md)|Eşzamanlılık SAL ek açıklama hatası|
+|[C26441](../code-quality/c26441.md)|NO_UNNAMED_GUARDS|
+|[C26444](../code-quality/c26444.md)|NO_UNNAMED_RAII_OBJECTS|
+|[C26498](../code-quality/c26498.md)|USE_CONSTEXPR_FOR_FUNCTIONCALL|
 |[C28020](../code-quality/c28020.md)|İfade bu çağrıda doğru değil|
 |[C28021](../code-quality/c28021.md)|Not eklenen parametrenin bir işaretçi olmalıdır|
 |[C28022](../code-quality/c28022.md)|Bu işlev üzerindeki işlev sınıfları, bunu tanımlamak için kullanılan typedef üzerindeki işlev sınıf eşleşmiyor.|

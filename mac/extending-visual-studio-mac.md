@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 84079e15a15f86527c15b28a05ba905bfeccad31
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624100"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224968"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac için Visual Studio'yu genişletme
 
@@ -56,7 +56,7 @@ Bunlara karşılık gelen aynı zamanda sahiptirler `assembly:AddinDependency ` 
 
 ## <a name="extensions-and-extension-points"></a>Uzantılar ve uzantı noktaları
 
-(Bir tür), bir veri yapısını tanımlayan yer tutucu bir uzantı noktasıdır istediğiniz uzantıyı noktasınca belirtilen bir yapıya uyan veriler uzantı tanımlar. Ne tür uzantısı kendi bildiriminde kabul edebilir, uzantı noktaları belirtin. Uzantılar, tür adları veya uzantı yolları kullanarak bildirilir. Bkz: [uzantı noktası başvuru](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots) ihtiyacınız uzantı noktası oluşturma hakkında daha ayrıntılı bir açıklama için.
+(Bir tür), bir veri yapısını tanımlayan yer tutucu bir uzantı noktasıdır istediğiniz uzantıyı noktasınca belirtilen bir yapıya uyan veriler uzantı tanımlar. Ne tür uzantısı kendi bildiriminde kabul edebilir, uzantı noktaları belirtin. Uzantılar, tür adları veya uzantı yolları kullanarak bildirilir. Bkz: [uzantı noktası başvuru](https://github.com/mono/mono-addins/wiki/Extension-Points) ihtiyacınız uzantı noktası oluşturma hakkında daha ayrıntılı bir açıklama için.
 
 Uzantı/uzantı noktası mimarisi, hızlı ve modüler bir Mac için Visual Studio geliştirme tutar. 
 

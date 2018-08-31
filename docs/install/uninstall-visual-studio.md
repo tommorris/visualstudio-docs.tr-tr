@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 592c2404d45619d313106526d051d4e18ffc8888
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: ad0b8d2de1cad4f4575ca9ee7f35713383149314
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138670"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43288989"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio'yu kaldırma
 
@@ -57,7 +57,6 @@ Tüm Visual Studio Yükleyicisi'nin yanı sıra, Visual Studio 2017 yüklemesini
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'yu yükleyin](install-visual-studio.md)
 * [Visual Studio 2017'yi Değiştirme](modify-visual-studio.md)
 * [Visual Studio’yu güncelleştirme](update-visual-studio.md)
-* [Visual Studio Kaldır](remove-visual-studio.md)
+* [Mac için Visual Studio'yu kaldırın](/visualstudio/mac/uninstall)

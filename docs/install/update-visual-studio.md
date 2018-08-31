@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859ad7abcab8f5599d205887feb73dc673112d
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139094"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43289286"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017 için en son sürüme güncelleştirme
 
@@ -150,7 +150,6 @@ Bir bildirim yoksaymayı seçerseniz, Visual Studio göstermeyi durdurur. Yoksay
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi Yükleme](install-visual-studio.md)
 * [Visual Studio 2017'yi Değiştirme](modify-visual-studio.md)
 * [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
-* [Visual Studio Yöneticiler Kılavuzu](visual-studio-administrator-guide.md)
+* [Mac için Visual Studio güncelleştirme](/visualstudio/mac/update)

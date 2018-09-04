@@ -12,21 +12,21 @@ ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
+ms.lasthandoff: 09/04/2018
 ms.locfileid: "34335713"
 ---
-# F1 Yardımı
+# <a name="f1-help"></a>F1 Yardımı
 
 Aradığınız ne bulamadık gibi görünüyor ve özür dileriz. Lütfen [geliştirmemize yardımcı olun](#help-us-improve-f1).
 
-## İmleç konumu
+## <a name="cursor-position"></a>İmleç konumu
 
 Bir anahtar sözcük veya API adı F1 Yardım arıyorsanız, imleç içinde veya yalnızca tuşlarına basarak önce word'ün sağa konumlandırılmış mutlaka **F1**. Bu halen işe yaramazsa, listeden [faydalı bağlantılar](#useful-links) listesini veya arama yapmak https://docs.microsoft.com.
 
-## Faydalı bağlantılar
+## <a name="useful-links"></a>Faydalı bağlantılar
 
 - Visual Studio hakkında genel bilgi için bkz. [Visual Studio genel bakış](../../ide/visual-studio-ide.md).
 - Visual Studio Metin Düzenleyicisi hakkında daha fazla yardım için bkz: [Kod Düzenleyicisi'ni](../../ide/writing-code-in-the-code-and-text-editor.md).
@@ -36,6 +36,6 @@ Bir anahtar sözcük veya API adı F1 Yardım arıyorsanız, imleç içinde veya
 - Python Yardım için bkz: [Visual Studio'da Python](../../python/overview-of-python-tools-for-visual-studio.md).
 - C++ Yardım için bkz: [Visual Studio'da C++](/cpp/visual-cpp-in-visual-studio).
 
-## F1 geliştirmemize yardımcı olun
+## <a name="help-us-improve-f1"></a>F1 geliştirmemize yardımcı olun
 
 Lütfen F1 Yardım Deneyimini geliştirmemize yardımcı olun. Ürün Yardımı sorunu tıklayarak oturum **ürün geribildirim verin** düğmeye. Ne zaman bastığınız konusunda yardım için aradığınızı dahil **F1**, örneğin, hangi sembol veya penceresi, imlecin bulunduğu üzerinde. Teşekkür ederiz!

@@ -13,25 +13,25 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "36325708"
 ---
-# Visual Studio kurtarılamaz işlem hatası
+# <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio kurtarılamaz işlemi hatası
 
-Visual Studio 2017 birkaç işlem dışı işlemler dinamik birim testi gibi gerekli arka plan görevleri çalıştırmak için çözümleyiciler kodunu kullanır. Bu işlemler çıkış uzun, kaynak yoğunluklu işler çalışırken daha hızlı yanıt Visual Studio etkinleştirme gibi Visual Studio performans avantajı vermek için işlem dışı çalıştırılır. Visual Studio 32 bitlik bir işlem olduğundan, ayrıca, işlemler,-işlem dışı çalışan bellek yoğun iş çalışılacak daha büyük bir bellek alanı sağlar.
+Visual Studio 2017 birçok işlem dışı işlem live unit testing gibi gerekli arka plan görevleri çalıştırmak, kod Çözümleyicileri ve daha fazlası için kullanır. Bu işlemler, çıkış, kaynak yoğunluklu işler çalışırken daha hızlı yanıt Visual Studio etkinleştirme gibi Visual Studio performans avantajlarını vermek için işlem dışı çalıştırılır. Visual Studio 32 bitlik bir işlem olduğundan, ayrıca, işlemler,-işlem dışı çalışan bellek kullanımı yoğun iş çalışacağı daha büyük bir bellek alanı sağlar.
 
-Varsa *ServiceHub.RoslynCodeAnalysisService.exe* veya *ServiceHub.RoslynCodeAnalysisService32.exe* işlem sona erer herhangi bir nedenle açılır bilgi çubuğu aşağıdaki ileti görüntülenir:
+Varsa *ServiceHub.RoslynCodeAnalysisService.exe* veya *ServiceHub.RoslynCodeAnalysisService32.exe* işlem sona erer herhangi bir nedenle açılır bilgi çubuğu ile aşağıdaki ileti görünür:
 
-**"Ne yazık ki, Visual Studio tarafından kullanılan bir işlem kurtarılamaz bir hatayla karşılaştı. Çalışmanızı ve ardından kapatarak ve Visual Studio'yu yeniden başlatmayı kaydetme öneririz."**
+**"Ne yazık ki Visual Studio tarafından kullanılan işlem kurtarılamaz bir hatayla karşılaştı. İş ve ardından kapatarak ve Visual Studio'yu yeniden başlatmayı kaydetme öneririz."**
 
-Bu iletiyi görürseniz, çalışmanızı kaydedin ve kapatın ve Visual Studio'yu yeniden başlatın.
+Bu iletiyi görürseniz, çalışmanızı kaydedin ve ardından kapatın ve Visual Studio'yu yeniden başlatın.
 
-## İşlemlerin listesi
+## <a name="list-of-processes"></a>İşlemlerin listesi
 
-Visual Studio tarafından kullanılan işlem dışı işlemlerin bir listesi verilmiştir. Bu listesi belirli iş akışları veya senaryolar başlatma işlemleri planlayacak ve böylece çoğu durumda bunlar tüm aynı anda çalıştırmıyor.
+Visual Studio tarafından kullanılan işlem dışı işlemlerin bir listesi verilmiştir. Bu listenin belirli iş akışları veya senaryo başlatma işlemleri tamamlanmıyorsa olduğunu ve bu nedenle çoğu durumda bunlar tümü aynı anda çalıştırmıyor.
 
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
@@ -47,4 +47,4 @@ Visual Studio tarafından kullanılan işlem dışı işlemlerin bir listesi ver
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe
 
-Bu işlemlerden biri sona ererse beklenmedik bir şekilde, Visual Studio içinde bazı işlevler çalışmayı durdurur. Bazı işlemler için işlev kaybı Önemsiz olabilir. Başkalarının, Visual Studio kararlılığını etkilenir ve bir hata iletisi görüntülenir.
+Bu işlemlerden biri sona ererse beklenmedik bir şekilde, Visual Studio içinde bazı işlevler çalışmaz. Bazı işlemler için işlevsellik kaybı Önemsiz olabilir. Diğer kullanıcıların, Visual Studio kararlılığını etkilenir ve bir hata iletisi görüntülenir.

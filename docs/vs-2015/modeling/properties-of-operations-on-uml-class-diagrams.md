@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 35f2209d970696fee775248d1a991bedf0284d2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632770"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774716"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki işlemlerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Bir UML sınıf diyagramı üzerinde eklediğiniz *işlemleri* sınıfları ve a
 |Özellik|Varsayılan|Açıklama|  
 |--------------|-------------|-----------------|  
 |**Ad**|(yeni ad)|Kapsayan türü içinde benzersiz olmalıdır.|  
-|**Parametreler**|(hiçbiri)|Forma sahip bir listeyi *adı ***:*** türü ***** *adı ***:*** türü ***,...** tıklayın **[...]**  listesini düzenlemek için.<br /><br /> Türler, ilkel türler veya modelde tanımlı türleri olabilir. Bu özelliği yeni bir tür için bir ad girin, bir tür eklenecek **belirtilmemiş türler** UML Model Gezgini bölümü.|  
+|**Parametreler**|(hiçbiri)|Forma sahip bir listeyi _adı_**:**_türü_**,** _adı_**:**  _Tür_**,...** Tıklayın **[...]**  listesini düzenlemek için.<br /><br /> Türler, ilkel türler veya modelde tanımlı türleri olabilir. Bu özelliği yeni bir tür için bir ad girin, bir tür eklenecek **belirtilmemiş türler** UML Model Gezgini bölümü.|  
 |**Dönüş Türü**|(hiçbiri)|**(hiçbiri)** , veya basit türü veya modelde tanımlı bir tür. Bu özelliği yeni bir tür için bir ad girin, bir tür eklenecek **belirtilmemiş türler** UML Model Gezgini bölümü.|  
 |**Koşul sonralarına**|(hiçbiri)|Önce ve sonra işlemin yürütülmesinin sistem durumunu arasında bir ilişki belirten isteğe bağlı koşul.|  
 |**Önkoşulları**|(hiçbiri)|Yürütme işleminden önce sistem durumu hakkındaki varsayımların belirten isteğe bağlı koşul başlar.|  
@@ -79,7 +79,7 @@ Bir UML sınıf diyagramı üzerinde eklediğiniz *işlemleri* sınıfları ve a
  [UML sınıf diyagramlarındaki türlerin özellikleri](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki İlişkilendirmelerin Özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)
+ [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)
 
 
 

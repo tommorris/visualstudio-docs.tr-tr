@@ -29,12 +29,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e958e19be0d3eb04cbc4786b7855f08c53f130f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c9b380c4a28beb50a2048eb00aa68f81bf27449
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694707"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775841"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Nasıl Yapılır: Düzenle ve Devam Et ile Kesme Modunda Düzenlemeleri Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Düzenle ve devam et, kesme modunda kodunuzu düzenleyin ve ardından durdurup y
   
 -   En iyi duruma getirilmiş kodda hata ayıklama.  
   
--   64 bitlik bir uygulama hedeflendiğinde, yönetilen kodda hata ayıklama. İsterseniz kullanım Düzenle ve devam et, hedef x86 için ayarlamanız gerekir. (* Proje ***özellikleri**, **derleme** sekmesinde **Gelişmiş derleyici** ayarı.).  
+-   64 bitlik bir uygulama hedeflendiğinde, yönetilen kodda hata ayıklama. İsterseniz kullanım Düzenle ve devam et, hedef x86 için ayarlamanız gerekir. (_Proje_**özellikleri**, **derleme** sekmesinde **Gelişmiş derleyici** ayarı.).  
   
 -   Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.  
   

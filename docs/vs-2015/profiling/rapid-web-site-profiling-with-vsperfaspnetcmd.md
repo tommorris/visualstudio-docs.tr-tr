@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62fad7a98fb6ae61fed40936673bfab9981db656
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e213f6c009ff5fdd5caa48a326c18026f02ec5e6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691366"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775291"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd ile Hızlı Web Sitesi Profili Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [VSPerfASPNETCmd ile Hızl�
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Ayrıntılı izleme metodunu kullanarak zamanlama verileri toplamak için  
  Dinamik olarak derlenmiş ayrıntılı zamanlama verileri toplamak için şu komut satırını kullanın [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması:  
   
- **vsperfaspnetcmd/Trace***websiteUrl*   
+ **vsperfaspnetcmd/Trace***websiteUrl*  
   
  Statik olarak derlenmiş bir .dll dosyaları Web uygulamanızın profilini oluşturmak istiyorsanız, kullanarak dosyaları işaretlemelidir [Vsınstr](../profiling/vsinstr.md) komut satırı aracı. Vsperfaspnetcmd/Trace komut dosyalarından izleme eklenmiş veriler içerir.  
   
@@ -87,14 +87,14 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [VSPerfASPNETCmd ile Hızl�
   
  Katman etkileşim verileri ile .NET bellek verileri toplamak için:  
   
- **vsperfaspnetcmd /memory**[**: ömür**] *  */ipucu *** websiteUrl*  
+ **vsperfaspnetcmd /memory**[**: ömür**] **/İpucu**_websiteUrl_  
   
 ##  <a name="UsingNoWait"></a> / Nowait seçeneğini kullanma  
  Varsayılan olarak, sonra Komut İstemi'ni döndürmeyen bir **vsperfaspnetcmd** komutu. Döndürülecek komut istemi zorlamak için aşağıdaki sözdizimi seçeneğini kullanabilirsiniz. Ardından, komut istemi penceresinde diğer işlemleri gerçekleştirebilirsiniz. Profil oluşturma sona erdirmek için kullanmak **/shutdown** seçeneği ayrı bir **vsperfaspnetcmd** komutu.  
   
  Profil oluşturma başlamak için:  
   
- **vsperfaspnetcmd** [*/Seçenekler*] *  */nowait *** websiteUrl*  
+ **vsperfaspnetcmd** [*/Seçenekler*] **/nowait**_websiteUrl_  
   
  Profil oluşturma sona erdirmek için:  
   

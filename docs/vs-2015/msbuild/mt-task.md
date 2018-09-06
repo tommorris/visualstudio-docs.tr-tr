@@ -30,12 +30,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38c9597b61bae381339330256183de522076678
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c4318ffe208810fc23fa7237a96118368d6da61
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632708"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775177"
 ---
 # <a name="mt-task"></a>MT Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ Microsoft bildirim aracı, sarmalar mt.exe. Daha fazla bilgi için "Mt.exe" bak�
 |**EnableDPIAwareness**|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, uygulamayı DPI kullanan olarak işaretleyen bildirim bilgileri ekler. DPI kullanan uygulama yazma, çok çeşitli yüksek DPI görüntü ayarları arasında tutarlı bir şekilde iyi görünen bir kullanıcı arabirimi sağlar.<br /><br /> Daha fazla bilgi için "Yüksek DPI" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**GenerateCatalogFiles**|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, katalog tanımı (.cdf) dosyaları oluşturur.<br /><br /> Daha fazla bilgi için **/makecdfs** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**GenerateCategoryTags**|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, Kategori etiketlerinin oluşturulmasını sağlar. Bu parametre `true`, **ManifestFromManagedAssemblyMT** görev parametresi de belirtilmelidir.<br /><br /> Daha fazla bilgi için **/Category** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
-|**InputResourceManifests**|İsteğe bağlı **dize** parametresi.<br /><br /> Bir belirtilen tanımlayıcıya sahip rt_manıfest türü kaynağı bildirim girişi. Bir kaynak formunun belirtin *\<dosyası >[***;***[***#***]<resource_id>]*, isteğe bağlı `resource_id` parametredir negatif olmayan, 16 bit sayısı.<br /><br /> Hayır ise `resource_id` belirtilirse, CREATEPROCESS_MANIFEST_RESOURCE varsayılan değeri (1) kullanılır.<br /><br /> Daha fazla bilgi için **/inputresource** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
+|**InputResourceManifests**|İsteğe bağlı **dize** parametresi.<br /><br /> Bir belirtilen tanımlayıcıya sahip rt_manıfest türü kaynağı bildirim girişi. Formunun bir kaynak belirtin  _\<Dosya > [_**;** _[_**#**_] < resource_id >]_, isteğe bağlı `resource_id` parametresi, negatif olmayan, 16-bit bir sayı.<br /><br /> Hayır ise `resource_id` belirtilirse, CREATEPROCESS_MANIFEST_RESOURCE varsayılan değeri (1) kullanılır.<br /><br /> Daha fazla bilgi için **/inputresource** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**ManifestFromManagedAssembly**|İsteğe bağlı **dize** parametresi.<br /><br /> Belirtilen yönetilen derlemeden bir bildirim oluşturur.<br /><br /> Daha fazla bilgi için **/managedassemblyname** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**ManifestToIgnore**|İsteğe bağlı **dize** parametresi.<br /><br /> (Kullanılmıyor.)|  
 |**OutputManifestFile**|İsteğe bağlı **dize** parametresi.<br /><br /> Çıkış bildirimi adını belirtir. Bu parametre atlanırsa ve yalnızca bir bildirim üzerinde işlem yapılan, bu bildirim bir yerde değiştirildi.<br /><br /> Daha fazla bilgi için **/out** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
-|**OutputResourceManifests**|İsteğe bağlı **dize** parametresi.<br /><br /> Bir belirtilen tanımlayıcıya sahip rt_manıfest türü kaynağı bildirim çıkışı. Kaynak, biçimidir *\<dosyası>[***;***[***#***]<resource_id >]*, isteğe bağlı `resource_id` parametredir negatif olmayan, 16 bit sayısı.<br /><br /> Hayır ise `resource_id` belirtilirse, CREATEPROCESS_MANIFEST_RESOURCE varsayılan değeri (1) kullanılır.<br /><br /> Daha fazla bilgi için **/outputresource** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
+|**OutputResourceManifests**|İsteğe bağlı **dize** parametresi.<br /><br /> Bir belirtilen tanımlayıcıya sahip rt_manıfest türü kaynağı bildirim çıkışı. Kaynak, biçimindedir  _\<Dosya > [_**;** _[_**#**_] < resource_id >]_, isteğe bağlı `resource_id` parametresi, negatif olmayan, 16-bit bir sayı.<br /><br /> Hayır ise `resource_id` belirtilirse, CREATEPROCESS_MANIFEST_RESOURCE varsayılan değeri (1) kullanılır.<br /><br /> Daha fazla bilgi için **/outputresource** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**RegistrarScriptFile**|İsteğe bağlı **dize** parametresi.<br /><br /> Kayıtsız COM bildirim desteği için kullanılacak Kaydedici betik (.rgs) dosyasının adını belirtir.<br /><br /> Daha fazla bilgi için **/rgs** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**ReplacementsFile**|İsteğe bağlı **dize** parametresi.<br /><br /> Kaydedici betik (.rgs) dosyasını değiştirilebilir dizelerin değerlerini içeren dosyayı belirtir.<br /><br /> Daha fazla bilgi için **/replacements** "Mt.exe içinde" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.|  
 |**ResourceOutputFileName**|İsteğe bağlı **dize** parametresi.<br /><br /> Bildirimi proje çıkışına katıştırmak için kullanılan çıkış kaynakları dosyasını belirtir.|  
@@ -82,7 +82,7 @@ Microsoft bildirim aracı, sarmalar mt.exe. Daha fazla bilgi için "Mt.exe" bak�
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

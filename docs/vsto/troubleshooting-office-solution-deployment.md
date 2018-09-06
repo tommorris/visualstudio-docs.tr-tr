@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40009055"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774671"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office çözümü dağıtımında sorunlarını giderme
   Bu konuda, Office çözümleri dağıtırken karşılaşabileceğiniz genel sorunları nasıl çözeceğinizi hakkında bilgi içerir.  
@@ -72,7 +72,7 @@ ms.locfileid: "40009055"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Önbelleğe alınan kopyaları yükleme yerine derlemeleri yüklemek için  
   
-1.  Menü çubuğunda, **proje**, * ProjectName ***özellikleri**.  
+1.  Menü çubuğunda, **proje**, _ProjectName_**özellikleri**.  
   
 2.  Üzerinde **uygulama** sayfasında **derleme bilgileri**.  
   

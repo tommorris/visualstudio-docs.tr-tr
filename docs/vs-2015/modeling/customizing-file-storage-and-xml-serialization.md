@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1084b1465de584289e8a14820ae21fb9662a7229
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687824"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775533"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
   
 1.  Emin olun **olduğu bilinen ad anahtarı** olduğu `false` sınıfı ve temel sınıfları, her etki alanı özelliği.  
   
-    1.  DSL Gezgini'nde **Xml serileştirme Behavior\Class verileri\\***\<etki alanı sınıfı >*** \Element veri**.  
+    1.  DSL Gezgini'nde **Xml serileştirme Behavior\Class verileri\\**_\<etki alanı sınıfı >_**\Element veri**.  
   
     2.  Doğrulayın **olduğu bilinen ad anahtarı** olduğu `false` her etki alanı özelliği.  
   
@@ -146,7 +146,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
   
 -   Ayarlama **olduğu bilinen ad anahtarı** var olan bir etki alanı sınıfı, bir etki alanı özelliği. Özelliğin türü olmalıdır `string`.  
   
-    1.  DSL Gezgini'nde **Xml serileştirme Behavior\Class verileri\\***\<etki alanı sınıfı >*** \Element veri**ve ardından etki alanı özelliği seçin.  
+    1.  DSL Gezgini'nde **Xml serileştirme Behavior\Class verileri\\**_\<etki alanı sınıfı >_**\Element veri**ve ardından seçin etki alanı özelliği.  
   
     2.  Özellikler penceresinde ayarlayın **olduğu bilinen ad anahtarı** için `true`.  
   

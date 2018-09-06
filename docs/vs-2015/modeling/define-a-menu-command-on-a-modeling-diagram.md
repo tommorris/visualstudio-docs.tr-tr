@@ -14,12 +14,12 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f0f6c114b6b06f81046df13af64e5fe71dbff98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684211"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775180"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Modelleme diyagramında menü komutu tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -254,7 +254,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
     1.  İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
   
-    2.  Dosyayı bulmak **bin\\\*\\***projeniz***.vsix**  
+    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
   
 2.  Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   

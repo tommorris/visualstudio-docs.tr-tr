@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924966"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776099"
 ---
 # <a name="unit-testing-in-nodejs"></a>Birim testi node.js'de
 
@@ -92,7 +92,7 @@ Tıklayarak testler çalıştırabilirsiniz **tümünü Çalıştır** Test Gezg
 > [!NOTE]
 > Şu anda testleri profil oluşturma veya kod kapsamı desteklemiyoruz.
 
-### <a name="run-tests-from-the-command-line"></a>Komut satırından testleri çalıştırma
+### <a name="run-tests-from-the-command-line"></a>Komut satırından test çalıştırma
 
 Testleri çalıştırdığınız [Geliştirici komut istemi](/dotnet/framework/tools/developer-command-prompt-for-vs) aşağıdaki komutu kullanarak Visual Studio 2017 için:
 
@@ -137,7 +137,7 @@ JavaScript kullanarak bulma ve yürütme mantığını uygulama tarafından ek t
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
 
-Aşağıdaki 2 işlevleri dışa aktarır. aynı ada sahip bir JavaScript dosyasını içermek üzere bu klasör içerir:
+Aşağıdaki iki işlevi dışarı aktarır. aynı ada sahip bir JavaScript dosyasını içermek üzere bu klasör içerir:
 
 * `find_tests`
 * `run_tests`
@@ -147,3 +147,24 @@ Aşağıdaki 2 işlevleri dışa aktarır. aynı ada sahip bir JavaScript dosyas
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 Kullanılabilir test çerçevesini bulma, Visual Studio başlangıcında gerçekleşir. Visual Studio çalışırken bir çerçeve eklenirse, framework algılamak için Visual Studio'yu yeniden başlatın. Ancak uygulamasına değişiklikler yaparken yeniden başlatmanız gerekmez.
+
+## <a name="unit-tests-in-other-project-types"></a>Birim testleri diğer proje türleri
+Node.js projelerinizde yalnızca birim testleri yazma için sınırlı değildir. Tüm C# veya VB projesi için TestFramework ve TestRoot özelliklerini eklediğinizde, bu testleri numaralandırılan ve bunları Test Gezgini penceresini kullanarak çalıştırabilirsiniz.
+
+Bunu etkinleştirmek için Çözüm Gezgini'nde proje düğümüne sağ tıklayın, **projeyi**ve ardından **Düzenle proje**. Ardından Proje dosyasında aşağıdaki iki öğeyi özellik grubuna ekleyin.
+
+> [!NOTE]
+> Öğelere ekliyoruz özellik grubunu belirtilen bir koşul sahip olmadığından emin olun.
+> Bu, beklenmeyen davranışlara neden olabilir.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+Ardından, testlerinizi belirttiğiniz test kök klasörüne ekleyin ve Test Gezgini penceresinden çalıştırmak kullanılabilir olacaktır. Başlangıçta görünmez, projeyi yeniden derleyin gerekebilir.
+
+> [!NOTE]
+> Bu, .NET Standard ve .NET Core projeleri için şu anda çalışmıyor.

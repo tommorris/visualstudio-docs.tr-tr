@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: d69ff5d5c3f6434c9230602ff422accbb2f82422
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e77ebf34cd56cee80040009cff3ebb2fee9befac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688147"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774683"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosyası
 Var olan bir ikili .cto dosyasından bir XML tabanlı .vsct dosyası oluşturabilirsiniz. Bunun yapılması, yeni komut tablosu derleyici biçimi yararlanmak sağlar. Bu işlem, .cto dosya .ctc dosyasından derlenen bile çalışır. Düzenle ve başka bir .cto dosyasına .vsct dosyası derleme.  
@@ -32,7 +32,7 @@ Var olan bir ikili .cto dosyasından bir XML tabanlı .vsct dosyası oluşturabi
   
 3.  Visual Studio komut isteminde .cto ve .ctsym dosyaları içeren dizine gidin.  
   
-4.  Tür **vsct.exe** *ctofilename *** .cto** * vsctfilename ***.vsct -S***symfilename ***.ctsym**.  
+4.  Tür **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**  _symfilename_**.ctsym**.  
   
      `ctofilename` .cto dosyanın adıdır `vsctfilename` oluşturmak istediğiniz vsct dosya adıdır ve `symfilename` .ctsym dosyanın adıdır.  
   

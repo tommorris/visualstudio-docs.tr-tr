@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ffa0228bd4a15a8de94c4799d9549a35ef2da048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d3be15009964272eb06118a0b9c01ec012164bc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691120"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775835"
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Genellikle bir öğeyi silme ilgili öğeleri de silinmesine neden olur. Tüm il
 >  Program kodu için DSL tanımını eklemek için ayrı bir kod dosyasında oluşturma **Dsl** proje ve oluşturulan kod klasörü sınıfları genişletmek için kısmi tanımları yazma. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Bir silme kapanış tanımlama  
- Silme işlemi sınıfını kullanır *YourModel***DeleteClosure** , bir başlangıç seçimi silmek için hangi öğelerin belirlemek için. Çağrı `ShouldVisitRelationship()` ve `ShouldVisitRolePlayer()` tekrar tekrar ilişkilerin grafik yürüyen. Bu yöntemleri geçersiz kılabilirsiniz. ShouldVisitRolePlayer bağlantı ve bağlantının rollerden biri öğe kimliği ile sağlanır. Aşağıdaki değerlerden birini döndürmesi gerekir:  
+ Silme işlemi sınıfın kullandığı _YourModel_**DeleteClosure** , bir başlangıç seçimi silmek için hangi öğelerin belirlemek için. Çağrı `ShouldVisitRelationship()` ve `ShouldVisitRolePlayer()` tekrar tekrar ilişkilerin grafik yürüyen. Bu yöntemleri geçersiz kılabilirsiniz. ShouldVisitRolePlayer bağlantı ve bağlantının rollerden biri öğe kimliği ile sağlanır. Aşağıdaki değerlerden birini döndürmesi gerekir:  
   
 -   **VisitorFilterResult.Yes**: öğenin silinmesi gerekir ve walker denemeye devam öğe kullanıcının diğer bağlantılar.  
   

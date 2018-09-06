@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcaca24d995c50e90f28b1faf161bee6fc2f8606
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691778"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774581"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Modelleme uzantısı tanımlama ve yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,12 +91,12 @@ Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu 
   
 |Uzantı türü|Konu|Her bileşenin nasıl genellikle bildirildi|  
 |--------------------|-----------|----------------------------------------------|  
-|Menü komutu|[Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|  
-|Sürükle ve bırak veya çift tıklatın|[Modelleme Diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|  
+|Menü komutu|[Modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|  
+|Sürükle ve bırak veya çift tıklatın|[Modelleme diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|  
 |Doğrulama kısıtlaması|[UML modelleri için doğrulama kısıtlamaları tanımlama](../modeling/define-validation-constraints-for-uml-models.md)|`[Export(typeof(     System.Action<ValidationContext, object>))]`<br /><br /> `[ValidationMethod(ValidationCategories.Save`<br /><br /> `&#124; ValidationCategories.Menu)]`<br /><br /> `public void ValidateSomething`<br /><br /> `(ValidationContext context, IClassifier elementToValidate)`<br /><br /> `{...}`|  
-|İş öğesi bağlantı olay işleyicisi|[Bir iş öğesi bağlantı işleyicisini tanımlama](../modeling/define-a-work-item-link-handler.md)|`[Export(typeof(ILinkedWorkItemExtension))]`<br /><br /> `public class MyWorkItemEventHandler : ILinkedWorkItemExtension`<br /><br /> `{...`|  
-|UML profili|[UML genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)|(Tanımlanması için)|  
-|Araç kutusu öğesi|[Özel tanımlama Modelleme araç kutusu öğesi](../modeling/define-a-custom-modeling-toolbox-item.md)|(Tanımlanması için)|  
+|İş öğesi bağlantı olay işleyicisi|[İş öğesi bağlantı işleyicisi tanımlama](../modeling/define-a-work-item-link-handler.md)|`[Export(typeof(ILinkedWorkItemExtension))]`<br /><br /> `public class MyWorkItemEventHandler : ILinkedWorkItemExtension`<br /><br /> `{...`|  
+|UML profili|[UML’yi genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)|(Tanımlanması için)|  
+|Araç kutusu öğesi|[Özel bir modelleme araç kutusu öğesi tanımlama](../modeling/define-a-custom-modeling-toolbox-item.md)|(Tanımlanması için)|  
   
 ## <a name="running-an-extension-during-its-development"></a>Uzantı, geliştirme sırasında çalışan  
   
@@ -121,7 +121,7 @@ Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu 
   
     1.  İçinde **Çözüm Gezgini**, projenizin kısayol menüsünden seçin **klasörü Windows Gezgini'nde Aç**.  
   
-    2.  Dosyayı bulmak **bin\\\*\\***projeniz***.vsix**  
+    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
   
 2.  Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   
@@ -149,7 +149,7 @@ Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu 
  [UML genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)   
  [Özel tanımlama Modelleme araç kutusu öğesi](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [UML modelleri için doğrulama kısıtlamaları tanımlama](../modeling/define-validation-constraints-for-uml-models.md)   
- [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 
 
 

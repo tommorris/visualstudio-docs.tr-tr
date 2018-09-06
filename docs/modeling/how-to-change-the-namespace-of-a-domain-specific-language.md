@@ -11,47 +11,47 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1963502f3940fd0d17c770f111e07de14207e687
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a237664a30dacf351edc048c82d8c9cdc304aa45
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948268"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775896"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dilin Ad Alanını Değiştirme
-Bir etki alanına özgü dil ad alanı değiştirebilirsiniz. Değişiklik yapmanız gereken **DSL Explorer**, Dsl paket proje özelliklerini ve derleme bilgileri.
+Etki alanına özgü bir dilin ad alanını değiştirebilirsiniz. Değişiklik yapmanız gereken **DSL Gezgini**, Dsl paket proje özelliklerinde ve derleme bilgileri.
 
-### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Bir etki alanına özgü dil ad alanı değiştirmek için
+### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Etki alanına özgü bir dilin ad alanını değiştirmek için
 
-1.  İçinde **DSL Explorer**, tıklatın **Dsl** düğümü.
+1.  İçinde **DSL Gezgini**, tıklayın **Dsl** düğümü.
 
-2.  İçinde **özellikleri** penceresinde, değişiklik **Namespace** özelliği.
+2.  İçinde **özellikleri** penceresinde değişiklik **Namespace** özelliği.
 
-3.  Çözüm kaydedin ve şablonları dönüştürme.
+3.  Çözüm kaydedin ve şablonlarını Dönüştür.
 
-4.  Üzerinde **proje** menüsünde tıklatın **Dsl özellikleri**.
+4.  Üzerinde **proje** menüsünü tıklatın **Dsl özellikleri**.
 
      Projeniz için Özellikler görünür.
 
-5.  Tıklatın **uygulama** sekmesi.
+5.  Tıklayın **uygulama** sekmesi.
 
-6.  Değişiklik **varsayılan ad alanı** özelliği için yeni ad alanı adı.
+6.  Değişiklik **varsayılan ad alanı** özelliğini yeni ad alanı adı.
 
-7.  Ayrıca derlemenin adını değiştirmek isterseniz, değiştirmek **derleme name özelliği.**
+7.  Derlemenin adı değiştirmek istiyorsanız, değişiklik **bütünleştirilmiş kodun ad özelliği.**
 
-8.  Derleme adı değişirse, DslPackage\Package.tt açın ve bu satırı güncelleştirin:
+8.  Derleme adı değişmişse DslPackage\Package.tt açın ve bu satırı güncelleştirin:
 
      `string dslAssembly = "YourDSLassembly.Dsl.dll";`
 
-9. Özel kod yazdıysanız, ad alanını ve sınıf başvurularını kod dosyalarında değiştirdiğinizden emin olun.
+9. Herhangi bir özel kod yazdığınız, kod dosyalarında ad alanını ve sınıf başvuruları değiştirdiğinizden emin olun.
 
 10. Visual Studio deneysel örneği sıfırlayın.
 
-    1.  Silme **\Users\\ ***{ad}*** \AppData\Local\Microsoft\VisualStudio\\\*Exp**
+    1.  Silme **\Users\\**_{adınız}_**\AppData\Local\Microsoft\VisualStudio\\\*üs**
 
-    2.  Windows **Başlat** menüsünde seçin **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, **Sıfırla Deneysel örneği**.
+    2.  Windows üzerinde **Başlat** menüsünde seçin **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, **Sıfırla Deneysel örneği**.
 
-11. Üzerinde **yapı** menüsünde seçin **çözümü yeniden derle**.
+11. Üzerinde **derleme** menüsünde seçin **çözümü yeniden derle**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

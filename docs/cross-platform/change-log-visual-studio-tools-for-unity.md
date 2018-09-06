@@ -10,15 +10,33 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
-ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
+ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42623982"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775390"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
+
+## <a name="3806"></a>3.8.0.6
+ Yayın Tarihi: 27 Ağustos 2018
+ 
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Proje ve çözüm yeniden düzeltildi.
+
+## <a name="3805"></a>3.8.0.5
+ Yayın Tarihi: 20 Ağustos 2018
+ 
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Abonelik elden izleme sabit bir proje.
 
 ## <a name="3804"></a>3.8.0.4
  Yayın Tarihi: 14 Ağustos 2018

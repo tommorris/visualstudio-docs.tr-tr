@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924951"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774611"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Visual Studio'da JavaScript ve TypeScript kodu çözümlerin veya projelerin olmadan geliştirin
 
@@ -58,3 +58,27 @@ Varsa bir *tsconfig.json* klasörde mevcut dosya, bir TypeScript dosyası bu Typ
 
 > [!NOTE]
 > Hakkında daha fazla bilgi bulabilirsiniz *tsconfig.json* içinde [tsconfig.json TypeScript el kitabı sayfası](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Birim testleri
+Bir test kök belirterek Visual Studio'da birim test tümleştirmesini etkinleştirebilirsiniz, *package.json*:
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+Test Çalıştırıcısını kullanmak için hangi test çerçevesini belirlemek için yerel olarak yüklü paketleri numaralandırır.
+Test Çalıştırıcısı desteklenen çerçeveler hiçbiri tanınır, varsayılan *ExportRunner*. Desteklenen diğer çerçeveler şunlardır:
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Bant ([github.com/substack/tape](https://github.com/substack/tape))
+
+Test Gezgini'ni açtıktan sonra (seçin **Test** > **Windows** > **Test Gezgini**), Visual Studio bulur ve testleri görüntüler.
+
+> [!NOTE]
+> Uygulamanız bu ilk uygulama oluşturmanızı sağlayacak TypeScript içinde yazılmışsa test Çalıştırıcısı yalnızca test kökü JavaScript dosyaları sıralar.

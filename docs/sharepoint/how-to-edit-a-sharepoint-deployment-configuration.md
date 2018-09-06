@@ -19,43 +19,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9640d98522c74fb33f8845e255511a807e03961e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120451"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774800"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme
-  Dağıtım Yapılandırması oluşturun veya var olan dağıtım yapılandırmasını değiştirin. Örneğin, tek bir adım çalıştırmak veya dağıtım işlemindeki adımları sırasını değiştirin. Oluşturmak veya yerleşik ve program aracılığıyla eklenen yapılandırmaları değiştiğinden dağıtım yapılandırmaları değiştirmek isteyebilirsiniz.  
+  Bir dağıtım yapılandırması oluşturun veya var olan bir dağıtım yapılandırmasını Değiştir. Örneğin, tek bir adım çalıştırın veya dağıtım işlemindeki adımları sırasını değiştirin. Yapılandırmaları oluşturmak veya yerleşik ve program aracılığıyla eklenen yapılandırmaları değiştirilemediğinden dağıtım değiştirmek isteyebilirsiniz.  
   
-## <a name="create-a-sharepoint-deployment-configuration"></a>Bir SharePoint dağıtım yapılandırması oluştur  
+## <a name="create-a-sharepoint-deployment-configuration"></a>SharePoint dağıtım yapılandırmasını oluşturma  
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>SharePoint dağıtım yapılandırmasını oluşturmak için  
   
-1.  İçinde **Çözüm Gezgini**, bir SharePoint proje seçin ve ardından, menü çubuğunda, **proje**, * ProjectName ***özellikleri**.  
+1.  İçinde **Çözüm Gezgini**, bir SharePoint proje seçin ve ardından, menü çubuğunda, **proje**, _ProjectName_**özellikleri**.  
   
-2.  Üzerinde **SharePoint** sekmesinde, seçin **yeni** düğmesi.  
+2.  Üzerinde **SharePoint** sekmesini, **yeni** düğmesi.  
   
      **Yeni dağıtım yapılandırması Ekle** iletişim kutusu görüntülenir.  
   
-3.  İçinde **adı** metin kutusuna, dağıtım yapılandırması için bir ad girin.  
+3.  İçinde **adı** metin kutusunda, dağıtım yapılandırması için bir ad girin.  
   
-4.  İçinde **kullanılabilir dağıtım adımları** bölmesinde, dağıtım yapılandırması eklemek için seçmek istediğiniz adımları seçin (**>**) düğmesine tıklayın ve ardından **Tamam** düğmesi.  
+4.  İçinde **kullanılabilir dağıtım adımları** bölmesinde için Dağıtım Yapılandırması Ekle öğesini istediğiniz adımları seçin (**>**) düğmesini ve ardından **Tamam** düğmesi.  
   
     > [!NOTE]  
-    >  Dağıtım öncesi komutu veya bir dağıtım sonrası komut yapılandırdıysanız, bu adımları yalnızca bir özelleştirilmiş dağıtım yapılandırması eklerseniz çalıştırın.  
+    >  Yalnızca bir özelleştirilmiş dağıtım yapılandırması için eklerseniz, dağıtım öncesi komutu veya dağıtım sonrası komutu yapılandırdıysanız, aşağıdaki adımları çalıştırın.  
   
-## <a name="change-the-active-deployment-configuration"></a>Etkin dağıtım yapılandırmasını değiştirme  
+## <a name="change-the-active-deployment-configuration"></a>Etkin dağıtım yapılandırması değiştirme  
   
 #### <a name="to-change-the-active-deployment-configuration"></a>Etkin dağıtım yapılandırmasını değiştirmek için  
   
-1.  İçinde **Çözüm Gezgini**, bir SharePoint proje seçin ve ardından, menü çubuğunda, **proje** > **\<*ProjectName*> Özellikler**.  
+1.  İçinde **Çözüm Gezgini**, bir SharePoint proje seçin ve ardından, menü çubuğunda, **proje** > **\<*ProjectName*> Özellikleri**.  
   
 2.  Seçin **SharePoint** sekmesi.  
   
-3.  İçinde **etkin Dağıtım Yapılandırması** liste kutusunda, kullanmak istediğiniz dağıtım yapılandırması adını seçin.  
+3.  İçinde **etkin Dağıtım Yapılandırması** liste kutusunda, kullanmak istediğiniz dağıtım yapılandırmasının adı seçin.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

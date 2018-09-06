@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ba47404f7206535aa86da2684a1f32ec230e4e20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9842dd41b01d10405c3e3cae0d0dde2a704ecdf3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630796"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775793"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL'nin MSI ve VSIX Dağıtımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
   
     1.  İçinde **Çözüm Gezgini**, sağ **DslPackage** proje ve ardından **klasörü Windows Gezgini'nde Aç**.  
   
-    2.  Dosyayı bulmak **bin\\\*\\***projeniz***. DslPackage.vsix**  
+    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**. DslPackage.vsix**  
   
 2.  Kopyalama **.vsix** DSL yüklemek istediğiniz hedef bilgisayara dosya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   

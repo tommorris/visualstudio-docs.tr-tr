@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f76dd78981eb7969fec9b62e0a2f3cfea24a4ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684239"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775611"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML modelleri için doğrulama kısıtlamaları tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -377,7 +377,7 @@ context.LogError(... , usecase);
   
     1.  İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
   
-    2.  Dosyayı bulmak **bin\\\*\\***projeniz***.vsix**  
+    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
   
 2.  Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   

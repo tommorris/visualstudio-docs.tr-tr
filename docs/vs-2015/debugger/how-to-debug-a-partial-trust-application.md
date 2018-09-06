@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b5f041163f0cf544fe953c24433e34ff0ed9e3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5880b375f15b189a2532ed750d87b95fea51f0df
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693451"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775113"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Nasıl Yapılır: Kısmen Güvenilen Uygulamada Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Windows ve konsol uygulamaları için geçerlidir.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Kısmi güven uygulamanız için bir bölge seçmek için  
   
-1.  Gelen **proje** menüsünde seçin * Projectname ***özellikleri**.  
+1.  Gelen **proje** menüsünde seçin _Projectname_**özellikleri**.  
   
 2.  İçinde *Projectname* özellik sayfaları, tıklayın **güvenlik** sayfası.  
   
@@ -80,7 +80,7 @@ Windows ve konsol uygulamaları için geçerlidir.
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Hata ayıklama sırasında eklenen ek izinleri görüntülemek için  
   
-1.  Gelen **proje** menüsünde seçin * Projectname ***özellikleri**.  
+1.  Gelen **proje** menüsünde seçin _Projectname_**özellikleri**.  
   
 2.  İçinde *Projectname* özellik sayfaları, tıklayın **güvenlik** sayfası.  
   
@@ -90,7 +90,7 @@ Windows ve konsol uygulamaları için geçerlidir.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)
+ [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
 
 
 

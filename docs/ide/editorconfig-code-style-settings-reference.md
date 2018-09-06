@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 04d8cd6f27f90d398d22b90f9c9bd432466fb3cd
-ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
+ms.openlocfilehash: 1870ab4b9b6fe001cb0d2ec309eecbeaad6a135c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42624004"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774980"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -92,6 +92,8 @@ Aşağıdaki listede verilen dil kuralı kuralları gösterir:
         - DotNet\_stili\_tercih\_çıkarılan\_anonim\_türü\_member_names
         - DotNet\_stili\_tercih\_otomatik\_özellikleri
         - DotNet\_stili\_tercih\_olduğu\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi
+        - DotNet\_stili\_tercih\_koşullu\_ifade\_üzerinden\_atama
+        - DotNet\_stili\_tercih\_koşullu\_ifade\_üzerinden\_döndürür
     - ["Null" Tercihler denetleniyor](#null_checking)
         - DotNet\_stili\_coalesce_expression
         - DotNet\_stili\_null_propagation
@@ -1084,7 +1086,7 @@ Kod örnekleri:
 
 ```csharp
 // csharp_style_expression_bodied_indexers = true
-public T this[int i] => _value[i];
+public T this[int i] => _values[i];
 
 // csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }

@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 680d2550b7d3f3e88e7291fea128ec81b77197fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 610f0216ce2481894f088e0a3da1df5e29953b43
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686591"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775425"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio'da Projeler ve Çözümler Oluşturma ve Temizleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Bu konudaki yordamları kullanarak, derleme, yeniden veya tüm veya bazı projel
   
 1.  İçinde **Çözüm Gezgini**, seçin veya projeyi açın.  
   
-2.  Menü çubuğunda, **derleme**seçin **derleme *** ProjectName* veya **yeniden *** ProjectName*.  
+2.  Menü çubuğunda, **derleme**seçin **derleme**_ProjectName_ veya **yeniden**_ProjectName_.  
   
-    -   Seçin **derleme *** ProjectName* en son derlemeden sonra değiştirilen bileşenleri bu proje yalnızca oluşturulacak.  
+    -   Seçin **derleme**_ProjectName_ en son derlemeden sonra değiştirilen bileşenleri bu proje yalnızca oluşturulacak.  
   
-    -   Seçin **yeniden *** ProjectName* "projeyi Temizle" ve ardından Proje dosyalarını ve tüm proje bileşenler oluşturun.  
+    -   Seçin **yeniden**_ProjectName_ "projeyi Temizle" ve ardından Proje dosyalarını ve tüm proje bileşenler oluşturun.  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Başlangıç projesi ve bağımlılıklarını oluşturma  
   
@@ -124,7 +124,7 @@ Bu konudaki yordamları kullanarak, derleme, yeniden veya tüm veya bazı projel
  [Hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
  [C/C++ oluşturma başvurusu](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)   
- [Projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)
+ [Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md)
 
 
 

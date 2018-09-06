@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0890b476fb83bc8b45ef44e2de3608683572ecb1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685752"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776165"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +143,7 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
   
  **Uzak makinede ipucu verileri toplama**  
   
- Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gereken **vs_profiler_***\<Platform >***_***\<dil >***.exe** dosyası gelen *%VSInstallDir%***\Team Araçlar\Performans Tools\Setups** Visual Studio klasörünü makine uzak bilgisayara ve yükleyin. Profil oluşturma araçları kullanamazsınız [Visual Studio uzak Araçları](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) paketini indirin.  
+ Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gereken **vs\_profil oluşturucu\_**_\<Platform >_ **\_**  _\<Dil >_**.exe** dosya _VSInstallDir %_**tools\performance Tools\Setups**klasöründe bir Visual Studio uzak bilgisayara makine ve yükleyin. Profil oluşturma araçları kullanamazsınız [Visual Studio uzak Araçları](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) paketini indirin.  
   
  Kullanabileceğiniz [VSPerfCmd](../profiling/vsperfcmd.md) veya [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) profil oluşturma verileri toplamak için.  
   
@@ -154,7 +154,7 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans Gezgini](../profiling/performance-explorer.md)   
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
- [Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Komut Satırından Profil Oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 
 

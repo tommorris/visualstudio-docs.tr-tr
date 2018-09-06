@@ -20,12 +20,12 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8511f988baace50a413176cc508c960f24f67a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 946d811792506cbe430aebba52ca2b7ca628253b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690368"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775145"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Belirtilen işlem için veri toplamayı durdurur.|  
 |[ThreadOn ve ThreadOff](../profiling/threadon-and-threadoff.md) **:** *TID*|Belirtilen işlem için bir çağrı tarafından profil oluşturma duraklatıldı sonra profil oluşturmayı devam ettirir **VSPerfCmdThreadOff**. Kullanım **ThreadOn** yalnızca cihaz atama yöntemi ile profili oluşturulurken.|  
 |[ThreadOn ve ThreadOff](../profiling/threadon-and-threadoff.md) **:** *TID*|Belirtilen iş parçacığı profil oluşturma duraklatır. Kullanım **ThreadOff** yalnızca cihaz atama yöntemi ile profili oluşturulurken.|  
-|[İşareti](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Profil oluşturma veri dosyasını, isteğe bağlı metinle bir işaret ekler.|  
+|[İşareti](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Profil oluşturma veri dosyasını, isteğe bağlı metinle bir işaret ekler.|  
   
 ## <a name="sampling-method-options"></a>Örnekleme yöntemi seçenekleri  
  Aşağıdaki seçenekler, yalnızca örnekleme profili oluşturma yöntemi kullanırken kullanılabilir.  
@@ -71,8 +71,8 @@ VSPerfCmd [/U] [/options]
 |[Başlatma](../profiling/launch.md) **:** *yürütülebilir dosya*|Belirtilen uygulamayı başlatır ve profil oluşturma başlar.|  
 |[Args](../profiling/args.md) **:** *bağımsız değişkenleri*|Başlatılan uygulamaya geçirilecek komut satırı bağımsız değişkenleri belirtir.|  
 |[Console](../profiling/console.md)|Belirtilen komut yeni bir komut istemi penceresinde başlatır.|  
-|[Ekleme](../profiling/attach.md) **:** *PID*[**, *** PID*]|Belirtilen işlemler için profil oluşturma başlar. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir.|  
-|[Ayırma](../profiling/detach.md)[**: *** PID*[,*PID*]]|Belirtilen işlemler profil oluşturmayı durdurur. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir. Hiçbir işlem belirtilmezse, profil oluşturma için tüm işlemler durdurulur.|  
+|[Ekleme](../profiling/attach.md) **:** *PID*[**,**_PID_]|Belirtilen işlemler için profil oluşturma başlar. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir.|  
+|[Ayırma](../profiling/detach.md)[**:**_PID_[,_PID_]]|Belirtilen işlemler profil oluşturmayı durdurur. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir. Hiçbir işlem belirtilmezse, profil oluşturma için tüm işlemler durdurulur.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**ayırma**`&#124;`**ömrü**}]|.NET bellek ayırma ve nesne yaşam süresi verisi toplar. Yalnızca kullanmak **VSPerfCmdLaunch** seçeneği.|  
   
 ### <a name="sampling-interval-options"></a>Örnekleme aralığı seçenekleri  
@@ -80,9 +80,9 @@ VSPerfCmd [/U] [/options]
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|[PF](../profiling/pf.md)[**: *** n*]|Her n. sayfa hatası örnekleri (varsayılan = 10).|  
-|[Sys](../profiling/sys-vsperfcmd.md)[**: *** n*]|Her n. Sistem çağrısında örnek (varsayılan = 10).|  
-|[Zamanlayıcı](../profiling/timer.md)[**: *** n*]|Her n. işlemci örnekleri döngüsü (varsayılan = 10000000).|  
+|[PF](../profiling/pf.md)[**:**_n_]|Her n. sayfa hatası örnekleri (varsayılan = 10).|  
+|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Her n. Sistem çağrısında örnek (varsayılan = 10).|  
+|[Zamanlayıcı](../profiling/timer.md)[**:**_n_]|Her n. işlemci örnekleri döngüsü (varsayılan = 10000000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Hizmet bileşeni ve çekirdek modu cihaz seçenekleri  
  Aşağıdaki yönetim seçenekleri, profil oluşturma hizmet bileşenleri veya kernel modlu cihaz sürücüleri destekler. Yönetim seçenekleri, profil oluşturma izinlerini ayarlama ve profili oluşturulan hizmeti veya aygıt sürücüsü denetimi.  

@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3112b4617beccd4f49fa24b4644da61d457e9980
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eefe7d8f2dd6e94b0081f10e32703d1f2f8958a1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697280"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775590"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Öykünücüde Windows Phone uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -222,7 +222,7 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Kare hızı sayaçları öykünücüsünde ekran görüntüleri yakalamayı önce devre dışı bırakmak için  
   
--   Visual Studio'da bir yayın yapısı belirtmek. Yayın derlemesi belirttikten sonra uygulamanızı seçerek başlatın. **Dağıt *[uygulama adı]***  bağlantısını **derleme** menüsü.  
+-   Visual Studio'da bir yayın yapısı belirtmek. Yayın derlemesi belirttikten sonra uygulamanızı seçerek başlatın. **Dağıt _[uygulama adı]_**  bağlantısını **derleme** menüsü.  
   
 -   Alternatif olarak, değerini ayarlar app.xaml.cs veya app.xaml.vb dosyasında kod satırı yorum yapabilecek `EnableFrameRateCounter` için `true`.
 

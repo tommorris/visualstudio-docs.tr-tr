@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3b7f736f370125a7e70316ddda04244ea62045d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f48bb0e1832ef92a4d03a775123a062090936090
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689990"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775724"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Yönetilen Kod için Kod Çözümlemesine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemel
   
  Bir projeyi derleme yaptığınızda Kod Analizi çalıştırmak için seçtiğiniz **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** projenin özellik sayfasında. Daha fazla bilgi için [nasıl yapılır: etkinleştirme ve devre dışı otomatik kod analizini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
- Kod analizini el ile bir proje üzerinde çalışma **Çözümle** menüsünde tıklayın **kod çözümlemeyi Çalıştır *** ProjectName*. Daha fazla bilgi için [nasıl yapılır: etkinleştirme ve devre dışı otomatik kod analizini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Kod analizini el ile bir proje üzerinde çalışma **Çözümle** menüsünde tıklatın **kod çözümlemeyi Çalıştır**_ProjectName_. Daha fazla bilgi için [nasıl yapılır: etkinleştirme ve devre dışı otomatik kod analizini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
 ## <a name="rule-sets"></a>Kural Kümeleri  
  Yönetilen kod için Kod Analizi kuralları halinde gruplanır *kural kümeleri*. Microsoft Standart kural kümelerinden birini kullanabilir veya belirli bir gereksinimi karşılamak için özel bir kural oluşturabilirsiniz. Daha fazla bilgi için [Kod Analizi kurallarını gruplandırmak için kural kümeleri kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
@@ -76,7 +76,7 @@ Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemel
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod Analizi kurallarını gruplandırmak için kural kullanarak ayarlar](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
- [Nasıl yapılır: Enable ve Disable otomatik kod çözümlemesini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+ [Nasıl Yapılır: Otomatik Kod Çözümlemesini Etkinleştirme ve Devre Dışı Bırakma](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
 
 
 

@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ca264dde1a05de9b03868223b7886f85cdf542a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 212109c37e1c85d5ddbc55413ab5a972edbfa337
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693809"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775196"
 ---
 # <a name="call-hierarchy"></a>Çağrı Hiyerarşisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [çağrı hiyerarşisi](htt
 ## <a name="using-call-hierarchy"></a>Çağrı hiyerarşisi kullanma  
  Görüntülenecek **çağrı hiyerarşisi** penceresinde bir yöntemi, özelliği veya oluşturucu çağrısı adına sağ tıklayın ve ardından **çağrı hiyerarşisini**.  
   
- Üye adı bir ağaç görünümü bölmesinde görünür **çağrı hiyerarşisi** penceresi. Üye düğümünü genişletirseniz **çağrıları için *** üye adı* ve **gelen çağrıları *** üye adı* düğümlerinde görünür. Bu düğümler aşağıdaki çizimde **çağrı hiyerarşisi** penceresi.  
+ Üye adı bir ağaç görünümü bölmesinde görünür **çağrı hiyerarşisi** penceresi. Üye düğümünü genişletirseniz **çağrıları için**_üye adı_ ve **gelen çağrıları**_üye adı_ düğümlerinde görünür. Bu düğümler aşağıdaki çizimde **çağrı hiyerarşisi** penceresi.  
   
  ![Çağrı hiyerarşisi açık bir düğümle](../../ide/reference/media/onenode.png "OneNode")  
 Çağrı hiyerarşisi penceresi  

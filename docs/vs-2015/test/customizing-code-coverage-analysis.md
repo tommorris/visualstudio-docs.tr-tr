@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 89e7e817454b3c546d2b6df2256be72fbf1129c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ddb6c43892c3cef3f45edb9096c3fb36297c51a3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694728"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774964"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Kod Kapsamı Çözümlemeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
 ### <a name="regular-expressions"></a>Normal ifadeler  
  Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakterler ile aynı değildir. Özellikle:  
   
-1.  **. \***  bir dizenin herhangi bir karakter ile eşleşir  
+1.  **\.\*** bir dizenin herhangi bir karakter ile eşleşir  
   
 2.  **\\.** eşleşen bir nokta ".")  
   

@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 893d851286002c9682e969dcb989be30ed350d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bf0581ac11e97bf5543c0d17e8f665091babbd7
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697145"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775174"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [Microsoft.VisualStudio.Tes
   
 Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` ad alanı.  
   
- Üstbilgi dosyaları bulunan *VisualStudio2012 [x 86] InstallFolder***\VC\UnitTest\include** klasör.  
+ Üstbilgi dosyalarında bulunan _[x 86] VisualStudio2012 InstallFolder_**\VC\UnitTest\include** klasör.  
   
- LIB dosyalar bulunur *VisualStudio2012 [x 86] InstallFolder***\VC\UnitTest\lib** klasör.  
+ LIB dosyaları bulunan _[x 86] VisualStudio2012 InstallFolder_**\VC\UnitTest\lib** klasör.  
   
 ##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  

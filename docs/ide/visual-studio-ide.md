@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3ac7f54e2295764694372119faf03ea72cff42de
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624339"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775990"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 
@@ -273,6 +273,8 @@ Daha fazla kodlama içine dalmaya hazır değilseniz aşağıdaki dile özgü h�
 - [İlk Python web uygulamanızı oluşturmak için Visual Studio](quickstart-python.md)
 
 - [İlk C# web uygulamanızı oluşturmak için Visual Studio](quickstart-aspnet-core.md)
+
+- [İlk F # web uygulamanızı oluşturmak için Visual Studio](quickstart-fsharp.md)
 
 - [İlk Node.js uygulamanızı oluşturmak için Visual Studio](quickstart-nodejs.md)
 

@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 86f2e360c924dd557c17cfdf41a3dc2723114af3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691858"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775796"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>UML’yi genişletmek için profil tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -352,7 +352,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
   
 2.  Her Takma adın form/ProfileName/nodename içinde olduğundan emin olun. ProfileName kök profil düğümündeki ad özniteliğinin değeridir. NodeName metaclass, externalType veya enumerationType ad özniteliğinin değeridir.  
   
-3.  Burada açıklandığı ve gösterildiği şekilde bir söz dizimi olduğundan emin olun * sürücü ***: \Program Visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\**.  
+3.  Burada açıklandığı ve gösterildiği şekilde bir söz dizimi olduğundan emin olun _sürücü_**: \Program Visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
 4.  Hatalı uzantıyı kaldırın. Üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.  
   

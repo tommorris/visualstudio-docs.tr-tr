@@ -2,7 +2,7 @@
 title: Visual Studio 2017'deki yenilikler
 description: Visual Studio 2017'de yeni özellikler hakkında bilgi edinin.
 ms.custom: ''
-ms.date: 08/21/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: 4c6c09c8431cb2a50c0d76ebf476e67730192966
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755515"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774993"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Hangi&#39;Visual Studio 2017'deki yenilikler
 
@@ -32,14 +32,14 @@ Visual Studio'nun önceki bir sürümden yükseltme mi istiyorsunuz? İşte ne V
 
 Önceki sürümden itibaren Visual Studio 2015 yapılan değişiklikler üst düzey bir özeti aşağıda verilmiştir:
 
-* **[Yeniden Temelleri](#redefined-fundamentals)**. Yeni bir kurulum deneyimi, daha hızlı bir şekilde yüklemek ve ihtiyacınız olduğunda istediğiniz yükleme anlamına gelir. Visual Studio, büyük çözümler ve projeler yüklemek ya da kod klasörleri veya hatta tek bir dosyayı kod çalışma isteyip istemediğinizi daha hızlı başlatılır. Ayrıca, Visual Studio, özellikle DevOps takımsanız büyük resmi üzerinde odaklanmanıza yardımcı olur.
-* **[Performans ve üretkenlik](#performance-and-productivity)**. Yeni ve modern mobil, Bulut ve masaüstü geliştirme özellikleri odaklanan. Ve genel edinme, performans, de geliştirdik ve genel Geliştirici üretkenliğini deneyimleri. Visual Studio daha hızlı başlatılan, daha hızlı ve daha az bellek önce kullanır.
+* **[Yeniden Temelleri](#redefined-fundamentals)**. Yeni bir kurulum deneyimi, daha hızlı bir şekilde yüklemek ve ihtiyacınız olduğunda istediğiniz yükleme anlamına gelir.
+* **[Performans ve üretkenlik](#performance-and-productivity)**. Yeni ve modern mobil, Bulut ve masaüstü geliştirme özellikleri odaklanan. Ve Visual Studio daha hızlı başlatılan, daha hızlı ve daha önce daha az bellek kullanır.
 * **[Bulut uygulaması geliştirme sürecini Azure ile](#cloud-app-development-with-azure)**. Bir yerleşik Azure araç paketi Microsoft Azure tarafından desteklenen bulut öncelikli uygulamaları kolayca oluşturmanıza olanak tanır. Visual Studio, yapılandırmak, derleme, hata ayıklama, paket ve uygulamalarınızı ve hizmetlerinizi azure'da dağıtmak kolaylaştırır.
-* **[Windows uygulama geliştirme](#windows-app-development)**. Tüm Windows 10 cihazlar için tek bir proje oluşturmak için Visual Studio 2017'deki UWP şablonlarını kullanma &ndash; PC, tablet, telefon, Xbox, HoloLens, Surface Hub ve daha fazla. Ardından, uygulama paketi üretmek ve uygulamanızı müşterilere ulaşmak için Visual Studio içinden Microsoft Store için gönderin.
-* **[Mobil uygulama geliştirme](#mobile-app-development)**. Visual Studio 2017'deki yenilik yapın ve ile hızlı Xamarin, bir çekirdek kod temeli ve yetenek kümesi kullanarak çok platformlu mobil gereksinimlerinizi birleştirir. sonuçlar elde edin. Var olan takımlar, teknoloji yatırımlarından ve zamanlamanın ve Bütçeyi aşmadan tüketici düzeyde deneyimler sunmak için C# kodu mobil gidin. Birinci sınıf kullanıcı deneyimleri sunmak için mobil yaşam döngüsünün her adımında veya iş açısından güç katan üretkenlik uygulamaları Portföyü hızlandırın. (Ve **15,8 yeni**: Hyper-V kullanan mobil uygulama geliştiricileri, her zaman en son Android API'leri ile Google Play Hizmetleri olarak çalışır destekler ve Android özelliklerinin tümünü destekler hızlı Android öykünücüsü'nü erişime sahip Kamera, coğrafi konum ve hızlı önyükleme gibi öykünücü.)
-* **[Platformlar arası geliştirme](#cross-platform-development)**. Sorunsuz bir şekilde hedeflenen her platforma yazılım sunun. SQL Server'a Redgate veri araçları aracılığıyla DevOps süreçlerini genişletin ve Visual Studio'dan veritabanı dağıtımlarını güvenle otomatikleştirin. Veya .NET Core uygulamaları ve Windows, Linux ve macOS işletim sistemleri arasında değiştirilmeden çalıştırılmasını kitaplıklar yazmak için kullanın. (Ve **15.3 yeni**: .NET Core 2.0 SDK'ları için yan yana desteğini alırsınız.)
-* **[Oyunlar geliştirme](#games-development)**. Visual Studio Araçları ile Unity (VSTU), oyun ve düzenleyici betikleri C# dilinde yazın ve ardından, güçlü bir hata ayıklayıcı hataları bulma ve düzeltme için Visual Studio kullanabilirsiniz. Sözdizimi renklendirme Unity'nın ShaderLab gölgelendirici dili ve daha iyi hata ayıklayıcı Görselleştirmelerini MonoBehavior Sihirbazı için geliştirilmiş kod oluşturma için VSTU en son sürümünü içerir. VSTU, Unity proje dosyalarınızı, konsol iletileri ve daha az zaman için ve Unity Düzenleyicisi'nden kod yazarken geçiş ayırmasına oyununuzu Visual Studio'ya başlatma özelliğini de getirir.
-* **[Yapay ZEKA geliştirme](#ai-development)**. AI için Visual Studio Araçları ile (**15.5 yeni**), yapay ZEKA yeniliği hızlandırmaya yönelik Visual Studio üretkenlik özelliklerini kullanabilirsiniz. Derleme, test etme ve derin öğrenme dağıtma / işlem hedeflerini sağlam deneme özellikleri, veri hazırlama ve şeffaf bir şekilde için farklı model eğitim işleri gönderme gibi Azure Machine Learning ile sorunsuz tümleştirme yapay ZEKA çözümleri. Ve yapay ZEKA için Visual Studio Araçları, özel ölçümler için destek sağlar ve çalıştırma geçmişini izleme, veri bilimi yeniden üretilebilirliğini ve denetim sağlar.
+* **[Windows uygulama geliştirme](#windows-app-development)**. Tüm Windows 10 cihazlar için tek bir proje oluşturmak için Visual Studio 2017'deki UWP şablonlarını kullanma &ndash; PC, tablet, telefon, Xbox, HoloLens, Surface Hub ve daha fazla.
+* **[Mobil uygulama geliştirme](#mobile-app-development)**. Yenilik yapın ve hızlı Xamarin, çok platformlu mobil gereksinimlerinizi bir çekirdek kod temeli ve becerileri kümesini birleştiren ile sonuçlar elde edin.
+* **[Platformlar arası geliştirme](#cross-platform-development)**. Sorunsuz bir şekilde hedeflenen her platforma yazılım sunun. SQL Server'a Redgate veri araçları aracılığıyla DevOps süreçlerini genişletin ve Visual Studio'dan veritabanı dağıtımlarını güvenle otomatikleştirin. Veya .NET Core uygulamaları ve Windows, Linux ve macOS işletim sistemleri arasında değiştirilmeden çalıştırılmasını kitaplıklar yazmak için kullanın.
+* **[Oyunlar geliştirme](#games-development)**. Visual Studio Araçları ile Unity (VSTU), oyun ve düzenleyici betikleri C# dilinde yazın ve ardından, güçlü bir hata ayıklayıcı hataları bulma ve düzeltme için Visual Studio kullanabilirsiniz. 
+* **[Yapay ZEKA geliştirme](#ai-development)**. AI için Visual Studio Araçları ile yapay ZEKA yeniliği hızlandırmaya yönelik Visual Studio üretkenlik özelliklerini kullanabilirsiniz. Derleme, test etme ve dağıtma derin öğrenme / AI çözümleri, sorunsuz şekilde tümleştirin Azure Machine Learning ile sağlam deneme özellikleri için.
 
 > [!NOTE]
 > Yeni özellikler ve işlevler Visual Studio 2017'de tam listesi için bkz: [geçerli sürüm notları](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). Ve gelecekteki özellik teklifleri bir bilgi için bkz: [Preview sürüm notları](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
@@ -106,11 +106,11 @@ Uzantı dolaşımı Yöneticisi yüklediğiniz uzantıları izler, ancak Dolaş�
 
 Uzantı dolaşımı Yöneticisi'ni kullandığınızda, listenizde üç simge türü vardır:
 
-* ![Dolaşıma açıldı simgesi](../ide/media/vs2017ide-roamedicon.png) ***dolaşıma***: uzantı dolaşımı bu listenin parçası, ancak makinenizde yüklü değil.
+* ![Dolaşıma açıldı simgesi](../ide/media/vs2017ide-roamedicon.png)  **_dolaşıma_**: uzantı dolaşımı bu listenin parçası, ancak makinenizde yüklü değil.
   (Bu kullanarak yükleyebileceğiniz **indirme** düğmesi.)
-* ![Dolaşıma açıldı ve yüklendi simgesi](../ide/media/vs2017ide-roamedinstalledicon.png) ***dolaşıma açıldı ve yüklü***: Bu gezici listesinin geliştirme ortamınızda yüklenen tüm uzantıları.
+* ![Dolaşıma açıldı ve yüklendi simgesi](../ide/media/vs2017ide-roamedinstalledicon.png)  **_dolaşıma açıldı ve yüklü_**: Bu gezici listesinin geliştirme ortamınızda yüklenen tüm uzantıları.
   (Dolaşımda olabilen istemediğiniz karar verirseniz, bu kullanarak kaldırabilirsiniz **dolaşımı Durdur** düğmesi.)
-* ![Yüklü simgesi](../ide/media/vs2017ide-installedicon.png) ***yüklü***: Bu ortamda yüklü, ancak Dolaşım listenize parçası olmayan tüm uzantıları.
+* ![Yüklü simgesi](../ide/media/vs2017ide-installedicon.png)  **_yüklü_**: Bu ortamda yüklü, ancak Dolaşım listenize parçası olmayan tüm uzantıları.
   (Kullanarak uzantılar Dolaşım listesine ekleyebilirsiniz **Başlat Dolaşım** düğmesi.)
 
 Oturumunuz sırasında indirdiğiniz herhangi bir uzantı listenize eklenir **dolaşıma açıldı ve yüklü**. Uzantı için herhangi bir makineden erişmenizi sağlar, dolaşım listenizin bir parçası olur.

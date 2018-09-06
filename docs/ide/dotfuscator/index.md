@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d3f061e095575e8692fc733e3f77f7c9b23e37c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468202"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775441"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -49,7 +49,7 @@ Dotfuscator güvenli yazılım geliştirme yaşam döngüsü içinde nasıl uygu
 
 ## <a name="about-dotfuscator-ce"></a>Dotfuscator CE'yi hakkında
 
-Kopyanızı Microsoft Visual Studio 2017'in bir kopyasını içeren  ***PreEmptive koruma - Dotfuscator* Community Edition**, Dotfuscator CE, kişisel kullanım için ücretsiz olarak da bilinir.
+Kopyanızı Microsoft Visual Studio 2017'in bir kopyasını içeren  **_PreEmptive koruma - Dotfuscator_ Community Edition**, Dotfuscator CE, kişisel kullanım için ücretsiz olarak da bilinir.
 Dotfuscator CE ile Visual Studio 2017 dahil sürümü yükleme hakkında yönergeler için bkz: [yükleme sayfasına][install].
 
 Dotfuscator CE sunan bir dizi [yazılım koruması ve sağlamlaştırma] [ software-protection] geliştiriciler, mimarlar ve test edenler için hizmetleri.

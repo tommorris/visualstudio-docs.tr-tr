@@ -31,12 +31,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1f2036ee8091377d96895aafec7e2996e3eb1dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcdcece820af764e627aafc43ef405c627724b68
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689869"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775970"
 ---
 # <a name="lib-task"></a>LIB Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Microsoft 32-Bit Kitaplık Yöneticisi aracını sarmalar lib.exe. Kitaplık Yö
 |---------------|-----------------|  
 |**AdditionalDependencies**|İsteğe bağlı **String []** parametresi.<br /><br /> Komut satırına eklenecek ek öğeleri belirtir.|  
 |**AdditionalLibraryDirectories**|İsteğe bağlı **String []** parametresi.<br /><br /> Kullanıcının ortam kitaplık yolunu geçersiz kılar. Bir dizin adı belirtin.<br /><br /> Daha fazla bilgi için [/Libpath (ek Libpath)](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba).|  
-|**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırında belirtilen lib.exe seçenekleri listesi. Örneğin, **"***/seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez lib.exe seçenekleri belirtmek için bu parametreyi kullanın **LIB** görev parametresi.<br /><br /> Daha fazla bilgi için [çalıştıran LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
+|**AdditionalOptions**|İsteğe bağlı **dize** parametresi.<br /><br /> Komut satırında belirtilen lib.exe seçenekleri listesi. Örneğin, ** "_/option1 /option2 /option#_". Diğer tarafından temsil edilmez lib.exe seçenekleri belirtmek için bu parametreyi kullanın **LIB** görev parametresi.<br /><br /> Daha fazla bilgi için [çalıştıran LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
 |**DisplayLibrary**|İsteğe bağlı **dize** parametresi.<br /><br /> Çıkış Kitaplığı hakkında bilgi görüntüler. Bilgiler bir dosyaya yeniden yönlendirmek için bir dosya adı belirtin. "Onayla" ya da nothing bilgileri konsola yeniden yönlendirmek için belirtin.<br /><br /> Bu parametre için karşılık gelen **/LIST** lib.exe seçeneği.|  
 |**ErrorReporting**|İsteğe bağlı **dize** parametresi.<br /><br /> Lib.exe çalışma zamanında başarısız olursa, iç hata bilgilerini Microsoft'a göndermek nasıl belirtir.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **NoErrorReport** -   **/errorreport: yok**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** - **okunmalı**<br /><br /> Daha fazla bilgi için **/errorreport** komut satırı seçeneği [çalıştıran LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
 |**ExportNamedFunctions**|İsteğe bağlı **String []** parametresi.<br /><br /> Dışarı aktarmak için bir veya daha fazla işlevi belirtir.<br /><br /> Bu parametre için karşılık gelen **/dışarı aktarma:** lib.exe seçeneği.|  
@@ -79,7 +79,7 @@ Microsoft 32-Bit Kitaplık Yöneticisi aracını sarmalar lib.exe. Kitaplık Yö
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

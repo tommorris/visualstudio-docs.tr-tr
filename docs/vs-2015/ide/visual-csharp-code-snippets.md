@@ -20,12 +20,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36ee2612fbee3cb346fcf1e2e78ef49fce3ff630
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694456"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775444"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# Kod Parçacıkları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Kod parçacıkları, kullanıma hazır, kodunuza hızla ekleyebilirsiniz kod par
 |mbox|Bir çağrı oluşturur <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. System.Windows.Forms.dll'e bir başvuru eklemeniz gerekebilir.|Bir yöntemi, bir dizin oluşturucu, bir özellik erişimcisi veya bir olay erişimcisi içinde.|  
 |ad alanı|Oluşturur bir [ad alanı](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) bildirimi.|(Genel ad alanı dahil) bir ad alanı içinde.|  
 |prop|Oluşturur bir [otomatik uygulanan özellik](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) bildirimi.|Bir sınıf veya yapı içinde.|  
-ropfull|Özellik bildiriminde get ile oluşturur ve erişimcileri ayarlayın.|Bir sınıf veya yapı içinde.|  
+|propfull|Özellik bildiriminde get ile oluşturur ve erişimcileri ayarlayın.|Bir sınıf veya yapı içinde.|  
 |propg|Salt okunur oluşturur [otomatik uygulanan özellik](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) ile özel bir "set" erişimcisi.|Bir sınıf veya yapı içinde.|  
 |SIM|Oluşturur bir [statik](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[int](http://msdn.microsoft.com/library/212447b4-5d2a-41aa-88ab-84fe710bdb52) ana yöntem bildirimi.|Bir sınıf veya yapı içinde.|  
 |struct |Oluşturur bir [yapı](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) bildirimi.|Bir ad alanı (genel ad alanı dahil), bir sınıf veya yapı içinde.|  
@@ -88,7 +88,7 @@ ropfull|Özellik bildiriminde get ile oluşturur ve erişimcileri ayarlayın.|Bi
  [Nasıl yapılır: değişiklik ile yeni bir kod parçacığı oluşturma](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Şablon parametreleri](../ide/template-parameters.md)   
  [Nasıl yapılır: Surround-with kod parçacıklarını kullanma](../ide/how-to-use-surround-with-code-snippets.md)   
- [Nasıl yapılır: geri C# yeniden düzenleme kod parçacıklarını](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Nasıl Yapılır: C# Yeniden Düzenleme Kod Parçacıklarını Geri Yükleme](../ide/how-to-restore-csharp-refactoring-snippets.md)
 
 
 

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382810"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775720"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer kullanarak Office çözümü dağıtma
 Office çözümünüz için bir Windows Installer kullanarak oluşturmayı öğrenin [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -141,7 +141,7 @@ Yapılandırdığınız **Officeaddınsetup** Office projenizin çıktısını d
   
 3. Sayfanın alt kısmında **proje Yardımcısı** sayfasında **uygulama dosyaları** aşağıdaki çizimin gösterdiği düğmesi.  
   
-   ![Uygulama dosyaları düğmesi. ] (../vsto/media/installshield-applicationfiles.png "Uygulama dosyaları düğmesini.")  
+   ![Uygulama dosyaları düğmesi. ](../vsto/media/installshield-applicationfiles.png "Uygulama dosyaları düğmesini.")  
   
 4. İçinde **uygulama dosyaları** sayfasında **proje çıktıları Ekle** düğmesi.  
   
@@ -161,7 +161,7 @@ Yapılandırdığınız **Officeaddınsetup** Office projenizin çıktısını d
   
    **Uygulama dosyaları** sayfası artık proje çıktı dosyasını, dağıtım bildirimini ve uygulama bildirimi aşağıdaki çizimde gösterildiği gibi içerir.  
   
-   ![Kurulum projenizin çıkış dosyaları. ] (../vsto/media/installshield-outputfiles.png "Kurulum projenizin çıktı dosyaları.")  
+   ![Kurulum projenizin çıkış dosyaları. ](../vsto/media/installshield-outputfiles.png "Kurulum projenizin çıktı dosyaları.")  
   
   
 ## <a name="Configure"></a>Bağımlı bileşenleri önkoşul olarak yapılandır  
@@ -252,7 +252,7 @@ Kurulum uygulamanız yalnızca aşağıdaki bileşenleri aynı çözümünüzün
   
 11. İçinde **yeniden dağıtılabilir** sayfa InstallShield projesinin seçin **Yenile** aşağıdaki çizimde gösterildiği gibi yeniden dağıtılabilir bileşenler listesini yenilemek için düğme.  
   
-   ![Yenile düğmesini. ] (../vsto/media/installshield-refreshbutton.png "Yenile düğmesini.")  
+   ![Yenile düğmesini. ](../vsto/media/installshield-refreshbutton.png "Yenile düğmesini.")  
   
 12. Yeniden dağıtılabilir bileşenler listesinde seçin **Office çalışma zamanı için Visual Studio 2010 Araçları** onay kutusu.  
   
@@ -309,7 +309,7 @@ Kullanıcı yüklemeleri Office ya da Windows sürümünden bağımsız olarak y
   
 2. Sayfanın alt kısmında **proje Yardımcısı** sayfasında **uygulama kayıt defteri** aşağıdaki çizimin gösterdiği düğmesi.  
   
-   ![Uygulama kayıt defteri düğmesi. ] (../vsto/media/installshield-applicationregistry.gif "Uygulama kayıt defteri düğmesi.")  
+   ![Uygulama kayıt defteri düğmesi. ](../vsto/media/installshield-applicationregistry.gif "Uygulama kayıt defteri düğmesi.")  
   
    **Uygulama kayıt defteri** sayfası görüntülenir.  
   
@@ -447,7 +447,7 @@ Belge düzeyi özelleştirmeleri, kayıt defteri anahtarlarını kullanmaz. Bunu
   
 3. Sayfanın alt kısmında **proje Yardımcısı** sayfasında **uygulama dosyaları** aşağıdaki çizimin gösterdiği düğmesi.  
   
-   ![Uygulama dosyaları düğmesi. ] (../vsto/media/installshield-applicationfiles.png "Uygulama dosyaları düğmesini.")  
+   ![Uygulama dosyaları düğmesi. ](../vsto/media/installshield-applicationfiles.png "Uygulama dosyaları düğmesini.")  
   
 4. İçinde **uygulama dosyaları** sayfasında **proje çıktıları Ekle** düğmesi.  
   
@@ -526,7 +526,7 @@ Belge düzeyi özelleştirmeleri, kayıt defteri anahtarlarını kullanmaz. Bunu
   
 9. Menü çubuğunda, **derleme** > **Officeaddınsetup**.  
   
-   Derleme tamamlandıktan sonra bulabilirsiniz *setup.exe* dosya **Officeaddınsetup** proje şu konumda: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\ Express\SingleImage\DiskImages\DISK1\**  
+   Derleme tamamlandıktan sonra bulabilirsiniz *setup.exe* dosya **Officeaddınsetup** proje şu konumda: _OfficeAddInSetupProjectRoot_ * *\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>Ayrıca bkz.  

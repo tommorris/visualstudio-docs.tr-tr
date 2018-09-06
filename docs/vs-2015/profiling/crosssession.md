@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45259d3a0605dde7164ec9fd98b7338b20c47122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c4306f89b41639ba70e581ed6b3b4ce70089c01
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692626"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775922"
 ---
 # <a name="crosssession"></a>CrossSession
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,10 +45,10 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Başlat:** `Method`  
  **Başlat** seçeneği belirtilen profil oluşturma metodu için profil oluşturucuyu başlatır.  
   
- **Ekleme:** *PID*[**, *** PID*]  
+ **Ekleme:** _PID_[**,**_PID_]  
  Belirtilen işlemler için profil oluşturma başlar.  
   
- **Ayırma**[**: *** PID*[,*PID*]]  
+ **Ayırma**[**:**_PID_[,_PID_]]  
  Belirtilen işlemler profil oluşturmayı durdurur.  
   
 ## <a name="example"></a>Örnek  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Attach:12345 /CS
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Profil Oluşturma Hizmetleri](../profiling/command-line-profiling-of-services.md)
 
 
 

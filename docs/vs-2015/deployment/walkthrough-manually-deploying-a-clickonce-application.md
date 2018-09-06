@@ -26,12 +26,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: fabaa757c39ccea3de545b6dde9483b1fbc854de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8f93b6d7f55659cc614969dcc1c8b8dd93ccf73
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693186"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775536"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../in
   
 17. Üzerinde **adı** sekmesinde, bu dağıtım için bir ad ve sürüm numarası belirtin (**1.0.0.0** Bu örnekte). Ayrıca belirtin **İşlemci** , uygulamanız için x86 gibi oluşturulmuştur.  
   
-18. Seçin **açıklama** sekmesini tıklatın ve değerlerini belirtin **yayımcı** ve **ürün *** t**. (**Ürün** uygulamanız çevrimdışı kullanım için bir istemci bilgisayara yüklendiğinde, uygulamanıza Windows Başlat menüsündeki verilen addır.)  
+18. Seçin **açıklama** sekmesini tıklatın ve değerlerini belirtin **yayımcı** ve **ürün**. (**Ürün** uygulamanız çevrimdışı kullanım için bir istemci bilgisayara yüklendiğinde, uygulamanıza Windows Başlat menüsündeki verilen addır.)  
   
 19. Seçin **dağıtım seçenekleri** sekmesinde ve **Başlat konumu** metin kutusunda, Web sunucusu veya paylaşımı uygulama bildiriminin konumu belirtin. Örneğin, \\\myServer\myShare\AppToDeploy.application.  
   

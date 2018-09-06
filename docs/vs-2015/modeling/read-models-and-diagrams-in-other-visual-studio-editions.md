@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5f7085276e4aeb01b464570be3ee3fdafcfd52b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4642086639fad8a5b39e4a03d4509b349807a9b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686521"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775599"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Diğer Visual Studio sürümlerindeki modelleri ve diyagramları okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Bir model oluşturmayı desteklemiyor Visual Studio sürümünde bir modeli açt
 -   İki dosyaları okumak için örneğin, istediğiniz diyagram için diyagram **MyDiagram.classdiagram ve MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Katman diyagramları için adlı bir dosya da olmalıdır * Diyagramım ***. layerdiagram.suppressions**.  
+    >  Katman diyagramları için adlı bir dosya da olmalıdır _Diyagramım_**. layerdiagram.suppressions**.  
   
 -   Modelleme Proje dosyası (**MyModel.modelproj**)  
   
@@ -64,12 +64,12 @@ Bir model oluşturmayı desteklemiyor Visual Studio sürümünde bir modeli açt
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md)|Bir katman diyagramı, mevcut ya da önerilen bir mimari yapısı gösterilmektedir. Kodu yazıldığında otomatik olarak bir katman diyagramına karşı doğrulanabilir.|  
-|[UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)|Etkinlik diyagramı, iş sürecini veya yazılım, iş akışı gösterir.|  
-|[UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)|Türleri ve ilişkiler kod, veritabanı şemaları, protokolleri veya iş etki alanını tanımlamak için kullanılan terimler sözlüğü gibi birçok bağlamlarda kullanılan bir sınıf diyagramı gösterir.|  
-|[UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)|Bir bileşen diyagramı ayrılabilir parçaların bir yazılım tasarımı ve arabirimlerini gösterir.|  
-|[UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)|Sıralı diyagram, yazılım tasarımı öğeler arasındaki etkileşimler gösterilmektedir.|  
-|[UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)|Bir kullanım durumu diyagramı, sistemi ve belirli hedeflere ulaşmak için gerçekleştirebileceği etkinlikleri kullanıcıları gösterir.|  
+|[Katman Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Bir katman diyagramı, mevcut ya da önerilen bir mimari yapısı gösterilmektedir. Kodu yazıldığında otomatik olarak bir katman diyagramına karşı doğrulanabilir.|  
+|[UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)|Etkinlik diyagramı, iş sürecini veya yazılım, iş akışı gösterir.|  
+|[UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|Türleri ve ilişkiler kod, veritabanı şemaları, protokolleri veya iş etki alanını tanımlamak için kullanılan terimler sözlüğü gibi birçok bağlamlarda kullanılan bir sınıf diyagramı gösterir.|  
+|[UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)|Bir bileşen diyagramı ayrılabilir parçaların bir yazılım tasarımı ve arabirimlerini gösterir.|  
+|[UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)|Sıralı diyagram, yazılım tasarımı öğeler arasındaki etkileşimler gösterilmektedir.|  
+|[UML Kullanım Durumu Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)|Bir kullanım durumu diyagramı, sistemi ve belirli hedeflere ulaşmak için gerçekleştirebileceği etkinlikleri kullanıcıları gösterir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)

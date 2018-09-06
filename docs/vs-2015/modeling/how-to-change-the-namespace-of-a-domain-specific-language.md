@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bda1db0b3c20cdbeeb35f8ce0af6478a2a4f62c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1407b0ca77ea6f19bc6f6f165d5524c305b69d0f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688439"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774722"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dilin Ad Alanını Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Etki alanına özgü bir dilin ad alanını değiştirebilirsiniz. Değişiklik 
   
 10. Visual Studio deneysel örneği sıfırlayın.  
   
-    1.  Silme **\Users\\ ***{adınız}*** \AppData\Local\Microsoft\VisualStudio\\\*üs**  
+    1.  Silme **\Users\\**_{adınız}_**\AppData\Local\Microsoft\VisualStudio\\\*üs**  
   
     2.  Windows üzerinde **Başlat** menüsünde seçin **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, **Sıfırla Deneysel örneği**.  
   

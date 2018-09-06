@@ -34,12 +34,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5de10e480548ec68e69d9dffc40d415d8a064357
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42687638"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774909"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Nasıl Yapılır: Çağrı Yığını Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Kullanarak **çağrı yığını** penceresinde yığında olan işlev veya yord
   
 ### <a name="to-change-the-optional-information-displayed"></a>Görüntülenen isteğe bağlı bilgileri değiştirmek için  
   
--   Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \< ***istediğiniz bilgilerin***>**.  
+-   Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  _istediğiniz bilgilerin_ **>**.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>Kullanıcı olmayan kod çerçevelerini çağrı yığını penceresinde görüntülemek için  
   
@@ -149,7 +149,7 @@ Kullanarak **çağrı yığını** penceresinde yığında olan işlev veya yord
  [Nasıl yapılır: hata ayıklayıcı Windows sayısal biçimini değiştirme](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
  [Sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Kesme noktaları kullanma](../debugger/using-breakpoints.md)
+ [Kesme Noktalarını Kullanma](../debugger/using-breakpoints.md)
 
 
 

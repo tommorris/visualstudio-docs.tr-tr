@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6882547752098c4c1be3736a02bac7a8fa740dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693436"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775517"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Görselleştirme ve modelleme SDK'sı, mağaza içi değişkenler, dosyalar, ba�
   
     -   `ElementDeleted` – bir model öğesini sonra tetiklenen, ilişki, Şekil veya bağlayıcının silindi. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olacaktır.  
   
-2.  İçin bir parçalı sınıf tanımı ekleyin *YourDsl *** DocData** ayrı bir kod dosyasında **DslPackage** proje.  
+2.  İçin bir parçalı sınıf tanımı ekleyin _YourDsl_**DocData** ayrı bir kod dosyasında **DslPackage** proje.  
   
 3.  Aşağıdaki örnekte olduğu gibi bir yöntem olarak olayın kodu yazın. Bu olabilir `static`erişmek istediğiniz sürece `DocData`.  
   

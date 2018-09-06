@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626006"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774594"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>İzlenecek yol: bir uygulama sayfasını bir iş akışına ekleme
   Bu izlenecek yol, bir iş akışı projesine bir iş akışından türetilen veriyi görüntüleyen bir uygulama sayfasını nasıl ekleneceğini gösterir. Bu konu başlığı altında açıklanan projede derlemeler [izlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -337,7 +337,7 @@ ms.locfileid: "42626006"
 
 14. Diğer belgelerle paylaşılan belgeler listesinde 11-13 adımları yineleyin. (Belgelerin tam sayı önemli değildir.)
 
-15. Aşağıdaki URL'ye bir Web tarayıcısında açarak harcama raporu Özet uygulama sayfası görüntüleme: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Aşağıdaki URL'ye bir Web tarayıcısında açarak harcama raporu Özet uygulama sayfası görüntüleme: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      Harcama raporu Özet sayfası, tüm ayrılan miktarı aşan gider raporlarını, tarafından aşıldı miktarını ve toplam tutarı tüm raporların listeler.
 

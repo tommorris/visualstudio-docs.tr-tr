@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe0d7877a68c34cd624d20834f553e9ec18d1df2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 341f5f40ff5c7274de9bbaf977464b15a56315a8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686079"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774829"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Bir Çözümde Birden Çok DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Bunlar birlikte yüklenir, böylece tek bir çözümün bir parçası birkaç DS
   
 2.  DSL VSIX bildirimlerini Birleştir:  
   
-    1.  Açık * YourVsixProject ***\source.extension.manifest**.  
+    1.  Açık _YourVsixProject_**\source.extension.manifest**.  
   
     2.  Her bir DSL seçin **İçerik Ekle** ekleyin:  
   
@@ -64,7 +64,7 @@ Bunlar birlikte yüklenir, böylece tek bir çözümün bir parçası birkaç DS
   
 3.  Çözümü oluşturun.  
   
- Sonuçta elde edilen VSIX hem DSL'ler yükler. F5 kullanarak test edebilir veya dağıtma * YourVsixProject ***\bin\Debug\\\*.vsix**.  
+ Sonuçta elde edilen VSIX hem DSL'ler yükler. F5 kullanarak test edebilir veya dağıtma _YourVsixProject_**\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

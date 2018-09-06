@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: deb4d216445dbede8b002b273d39613b37fc1c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 057bdb7073b1518e20ec0bee461d19478033e3b1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630944"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774639"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>.NET Bellek Ayırma ve Yaşam Süresi Verilerini Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,16 +59,16 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [toplama .NET bellek ayırm
   
 1.  İçinde **performans Gezgini**performans oturumu sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Üzerinde *performans oturumu *** özellik sayfaları** iletişim kutusu, tıklayın **genel** sekmesine tıklayın ve **toplamak .NET nesnesi ayırma bilgilerini** onay kutusu.  
+2.  Üzerinde _performans oturumu_**özellik sayfaları** iletişim kutusu, tıklayın **genel** sekmesine tıklayın ve **toplamak .NET nesnesi ayırma bilgilerini** onay kutusu.  
   
 3.  .NET nesnesi ömür verilerini toplamak için seçin **ayrıca .NET nesnesi ömür bilgilerini toplayın** onay kutusu.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
- Ek seçenekler belirtebilirsiniz *performans oturumu *** özellik sayfaları** performans oturumunun iletişim kutusu. Bu iletişim kutusunu açmak için:  
+ Ek seçenekler belirtebilirsiniz _performans oturumu_**özellik sayfaları** performans oturumunun iletişim kutusu. Bu iletişim kutusunu açmak için:  
   
 -   İçinde **performans Gezgini**performans oturumu adına sağ tıklayın ve ardından **özellikleri**.  
   
- Aşağıdaki tabloda görevler belirleyebilirsiniz seçenekleri açıklanmıştır *performans oturumu *** özellik sayfaları** .NET bellek verileri toplamak için iletişim kutusuna.  
+ Aşağıdaki tabloda görevler belirleyebilirsiniz seçenekleri açıklanmıştır _performans oturumu_**özellik sayfaları** .NET bellek verileri toplamak için iletişim kutusuna.  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
@@ -92,7 +92,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [toplama .NET bellek ayırm
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
  [Nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)   
- [Performans oturum özellikleri](../profiling/performance-session-properties.md)
+ [Performans Oturumu Özellikleri](../profiling/performance-session-properties.md)
 
 
 

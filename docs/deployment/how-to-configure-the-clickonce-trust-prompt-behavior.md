@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155103"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774813"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Nasıl yapılır: ClickOnce güven istemi davranışını yapılandırma
 Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları, konsol uygulamaları, WPF tarayıcısı gibi ClickOnce uygulamaları yükleme seçeneğine izin verilip verilmeyeceğini denetlemek için ClickOnce güven istemi yapılandırabilirsiniz. uygulamaları ve Office çözümleri. Güven istemi, her bir son kullanıcının bilgisayarında bulunan kayıt defteri anahtarlarını ayarlayarak yapılandırın.  
@@ -59,11 +59,11 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
     1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
-    2.  İçinde **açık** kutusuna `regedit32`ve ardından **Tamam**.  
+    2.  İçinde **açık** kutusuna `regedit`ve ardından **Tamam**.  
   
 2.  Aşağıdaki kayıt defteri anahtarını bulun:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Anahtar mevcut değilse oluşturun.  
   
@@ -122,7 +122,7 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
 2.  Aşağıdaki kayıt defteri anahtarını bulun:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Anahtar mevcut değilse oluşturun.  
   

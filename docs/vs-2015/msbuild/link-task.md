@@ -36,12 +36,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 624ec4709ab913e3e26bec8099f1e83c2c628862
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0aaf4d5f6862e2b5ef40b88e8041aa9ccc5a317
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685646"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775605"
 ---
 # <a name="link-task"></a>Bağlantı Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
      İsteğe bağlı **dize** parametresi.  
   
-     Belirtilen komut satırında bağlayıcı seçenekleri listesi. Örneğin, **"***/seçenek 1 /option2 /option#*". Diğer tarafından temsil edilmez bağlayıcı seçenekleri belirtmek için bu parametreyi kullanın **bağlantı** görev parametresi.  
+     Belirtilen komut satırında bağlayıcı seçenekleri listesi. Örneğin, **"**_/option1 /option2 /option#_". Diğer tarafından temsil edilmez bağlayıcı seçenekleri belirtmek için bu parametreyi kullanın **bağlantı** görev parametresi.  
   
      Daha fazla bilgi için [bağlayıcı seçenekleri](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
@@ -935,7 +935,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
      Daha fazla bilgi için [/VERSION (sürüm bilgileri)](http://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+ [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
 
 
 

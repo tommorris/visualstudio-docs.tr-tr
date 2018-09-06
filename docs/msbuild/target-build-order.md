@@ -1,7 +1,7 @@
 ---
 title: Hedef derleme sırası | Microsoft Docs
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178962"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774951"
 ---
 # <a name="target-build-order"></a>Hedef derleme sırası
 Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri sıralanmış olmaları gerekmektedir. Bu öznitelikler, hedef çalıştığı sırayı belirtmek için kullanabilirsiniz:  
@@ -114,7 +114,7 @@ Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri
 
     Koşullu hedef liste hedefleri `BeforeTargets` veya `AfterTargets` hala önceden belirlenmiş bir sırada yürütün
   
-4.  Bir hedef yürütülmeden önce kendi `DependsOnTargets` hedefleri çalıştırın.  
+4.  Bir hedef yürütülen veya atlandı ise önce kendi `Condition` özniteliği eksik veya için Değerlendirilmedi `false`, kendi `DependsOnTargets` hedefleri çalıştırın.  
   
 5.  Bir hedef yürütülen veya içinde listeler herhangi bir hedef atlandı önce bir `BeforeTargets` özniteliği çalıştırılır.  
   

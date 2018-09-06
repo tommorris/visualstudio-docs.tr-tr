@@ -32,12 +32,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bfacd5061cad5d737202748e2270281c81bef26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691798"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775447"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısında Simge (.pdb) ve Kaynak Dosyaları Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
   
 -   Arama yollarını değiştirmek için seçilmeyen bir yolu seçin veya **yeni** ve yeni bir yol girin. Seçin **yük** yolları tekrar aramak ve bulunursa sembol dosyasını yüklemek için.  
   
--   Seçin **Gözat ve Bul***yürütülebilir dosya adı***...**  herhangi bir sembol seçeneklerini geçersiz kılmak ve arama yollarını yeniden deneyin. Sembol dosyası bulunursa yüklenir veya sembol dosyasını el ile seçmeniz için bir Dosya Gezgini görüntülenir.  
+-   Seçin **Gözat ve Bul**_yürütülebilir dosya adı_**...**  herhangi bir sembol seçeneklerini geçersiz kılmak ve arama yollarını yeniden deneyin. Sembol dosyası bulunursa yüklenir veya sembol dosyasını el ile seçmeniz için bir Dosya Gezgini görüntülenir.  
   
 -   Seçin **sembol ayarlarını değiştir...**  görüntülenecek **hata ayıklama** / **sembolleri** VS Seçenekleri iletişim kutusu sayfası.  
   

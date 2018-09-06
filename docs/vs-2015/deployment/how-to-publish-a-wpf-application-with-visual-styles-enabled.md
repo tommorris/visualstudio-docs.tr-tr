@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c6b6c859c18dd1a3cf2aa8f2bc7d86e1ae6f961b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b93ea96bfaa03dc11cccf137c04e7d0cf3ca50ac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693275"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775259"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: Görsel Stiller Etkinken WPF Uygulaması Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Visual Basic projesinde bildirim dosyasını açmak için  
   
-    1.  Menü çubuğunda, **proje**, * ProjectName ***özellikleri**burada *ProjectName* WPF projenizin adıdır.  
+    1.  Menü çubuğunda, **proje**, _ProjectName_**özellikleri**burada *ProjectName* WPF projenizin adıdır.  
   
          WPF projeniz için özellik sayfaları görünür.  
   
@@ -64,7 +64,7 @@ Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Bir C# projesinde bildirim dosyasını açmak için  
   
-    1.  Menü çubuğunda, **proje**, * ProjectName ***özellikleri**burada *ProjectName* WPF projenizin adıdır.  
+    1.  Menü çubuğunda, **proje**, _ProjectName_**özellikleri**burada *ProjectName* WPF projenizin adıdır.  
   
          WPF projeniz için özellik sayfaları görünür.  
   

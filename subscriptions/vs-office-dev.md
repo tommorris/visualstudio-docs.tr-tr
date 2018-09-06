@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5adf9a2a91f3d40c3df04a365278d6d19e59e8a6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: b38d4cf27807cf2df8e85515033b98e3132f89e2
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624438"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995884"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -28,38 +28,36 @@ Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Gelişti
 
 3. Oturum açma işlemi tamamlandıktan sonra abonelik avantajlarını sayfası görmeniz gerekir.  Birden fazla aboneliğiniz varsa, sağ üst köşesinde, siyah Şeridin altında aşağı açılan oka tıklayarak abonelikler arasında geçiş yapabilirsiniz.  Office 365 Geliştirici aboneliği teklifi döşeme Araçları kategorisindedir.  Kutucuk satırının sağındaki oku, Office kutucuğuna görünene kadar kaydırın için kullanın.
 
-4. Office 365 Geliştirici aboneliği kutucuk Araçlar bölümünde bulun.  Tıklayarak **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.   Kod alınırken tıklayın **etkinleştirme**.
+4. Tıklayarak **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.   
     > [!div class="mx-imgBorder"]
     > ![Office 365 geliştirme avantajı kutucuğu](_img\vs-office-dev\vs-office-dev-tile.png)
 
-5.  Sonraki adım, bir hesap oluşturmaktır.  İletişim bilgilerinizi girin ve tıklatın **sonraki**.
+5.  Sonraki adım, bir hesap oluşturmaktır.  Ad ve oturum açma e-posta adresi görüntülenir.  
+- Ülkenizi seçin.
+- Şirketinizin adını girin. 
+- Hüküm ve koşulları kabul etmek için onay kutusuna tıklayın. 
+- **İleri**'ye tıklayın.
     > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme avantajı hesabı](_img\vs-office-dev\vs-office-dev-account-cropped.png)
-
-6.  Burada olması aboneliğinden ve ilgili tıklayın istenen bilgileri sağlayın **sonraki**.  Bilgiler, aboneliği kullanılabilirlik ve her türlü geçerli vergiyi belirlemek için kullanılır.
+    > ![Office 365 geliştirme kaydolma](_img\vs-office-dev\vs-office-dev-signup.png)
+    
+6.  Tercihlerinizi ve ilgi alanlarını belirtin ve tıklayın **bir aboneliği etkinleştirin**.   
     > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme avantajı iletişim bilgileri](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
+    > ![Office 365 geliştirme tercihleri](_img\vs-office-dev\vs-office-dev-preferences.png)
 
-7.  Kullanıcı adınızı ve hesap parolanızın oluşturun.
+7.  Ardından, ülkenizi/bölgenizi doğrulamak ve kullanıcı adınızı, etki alanı ve parola oluşturun.
     > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme avantajı kullanıcı adı](_img\vs-office-dev\vs-office-dev-username-cropped.png)
+    > ![Office 365 geliştirme kullanıcı adı ve etki alanı](_img\vs-office-dev\vs-office-dev-domain.png)
 
-8.  Bir telefon numarası sağlayın ve bir onay kodu ile telefon veya metin üzerinden almak isteyip istemediğinizi seçin.  Bu hesabı gerçek bir kişi tarafından oluşturulan olun yardımcı olur. Kodu alma ve tıklayın girin **sonraki**.
-
-9.  Bu noktada oturum açmanız istenebilir.  Office 365 oturum açma sayfasında gösterilen birden fazla hesabınız varsa, lütfen bu abonelikle ilişkili hesabı seçin.
-
-10. Sonraki sayfada, aboneliğinizin ücretsiz olarak kullanılabilir olduğunu onaylar.  Devam etmek için **İleri** 'ye tıklayın.
+8.  Telefon numaranızı girin ve tıklayın **kod Gönder**.  Bu hesabı gerçek bir kişi tarafından oluşturulan olun yardımcı olur. 
     > [!div class="mx-imgBorder"]
-    > ![Office 365 Geliştirici teklifi, bu görünüm nasıl yaptığını](_img\vs-office-dev\vs-office-dev-price.png)
+    > ![Office 365 geliştirme telefon doğrulama](_img\vs-office-dev\vs-office-dev-send-code.png)
 
-11. "3. adım" sonlandırılıyor içinde bir "ödeme yöntemini." seçin istenir.  İki ödeme seçeneği vardır.  Eklemek için ilk seçenek olacaktır bir **kredi kartı** (olarak görüntülenen aşağıda) ve ikinci seçeneği **fatura**.  Her iki durumda da 0,00 ABD Doları sipariş tıklayarak gönderilen **sipariş**.
-
-    > [!NOTE]
-    > Bir kredi kartı istemeyen aboneleri seçin **fatura** ödeme yöntemi.  Belirleyebilirsiniz **yıla göre ödeme** yılda bir kez faturalara kaydınızda sınırlamak için.
-
-12. Bu noktada, Office 365 Geliştirici aboneliği Avantajı'nızı başarıyla yararlandınız.  Numaralı Siparişiniz onaylayan bir sayfa görürsünüz.  Sayfanın bağlantısını sağlayacak [oturum açma sayfası](https://portal.office.com "Office 365 oturum açma sayfası").  Daha sonra kullanmak için sayfayı yer işareti ekleme öneririz.  Sayfada gösterilen kullanıcı Kimliğini kaydetmek isteyebilirsiniz.  (Ayrıca bir hesap oluşturduğunuzda sağladığınız adresten Hoş Geldiniz e-posta alırsınız.)  Tıklayın **Başlat Kurulum** devam etmek için.
+9.  Kodu alma ve tıklayın girin **ayarlanan**.
     > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme avantajı sipariş Onaylandı](_img\vs-office-dev\vs-office-dev-confirm.png)
+    > ![Office 365 geliştirme kod doğrulama](_img\vs-office-dev\vs-office-dev-setup.png)
+
+İşte bu kadar!  Tercihlerinize göre bilgi görüntüleyen bir sayfa görürsünüz.  Geliştirici aboneliğinize erişmek için şu adrese gidin [office.com](https://www.office.com) ve yeni oluşturduğunuz oturum kullanıcı kimliği ve parola.
+
 
 ## <a name="eligibility"></a>Uygunluk
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
@@ -75,64 +73,7 @@ Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Gelişti
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
-## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-### <a name="q--how-do-i-set-up-my-office-365-developer-subscription-once-its-been-activated"></a>S: etkin olduğu sonra Office 365 Geliştirici Aboneliğimi nasıl ayarlayabilirim?
-Y: Office 365 Geliştirici aboneliği teklifi ayarlama
-
-1. Office 365 Geliştirici aboneliği avantajınızı ayarlamak için "Siparişiniz için teşekkür eder" sayfasından başlayabilir veya Office portalında oturum ederek [ https://portal.office.com ](https://portal.office.com) daha sonra.  Bu durumda, seçtik **Başlat Kurulum** onay sayfasından sonra.
-
-    > [!NOTE]
-    > Oturum açmak için https://portal.office.com, yeni Office 365 Geliştirici aboneliği kullanıcı yukarıdaki adım 7'de oluşturduğunuz Kimliğinizi kullanmanız gerekecektir.
-
-2. ' I tıklattıktan sonra **Başlat Kurulum**, "1. adım" zaten sahip olduğunuz mevcut bir etki bağlama veya alma işlemi sırasında Kiracı kurulumunun kullanmaya devam etmek ister.  Aşağıdaki örnekte, biz bizim appsbyjane2017.onmicrosoft.com kullanmaya devam etmek için bıraktınız"etki alanı.
-    > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme avantajı Yönetim Merkezi](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
-
-
-3.  2. adım, yöneticilerin kullanıcı ekleme Office 365 hesabına izin verir.  İstenen kullanıcılarınızın ekleyin ve **sonraki**.
-
-4.  3. adım, Office uygulamaları yüklemenizi sağlar.  Şimdi yükleyebilir veya süre bekleyerek seçebilirsiniz.  Office Professional Plus veya Skype Kurumsal'ı yüklemek için karşılık gelen birine tıklamanız yeterlidir **Şimdi Yükle** düğmeleri.  Office 365 ProPlus aboneliğinize dahildir:
-    - Word
-    - Excel
-    - PowerPoint
-    - OneNote
-    - Access
-    - Yayımcı
-    - Outlook
-    - Skype Kurumsal
-    - OneDrive iş
-
-5.  Tercih ettiğiniz dili seçin ve tıklayın **yükleme**.
-    > [!div class="mx-imgBorder"]
-    > ![Office 365 geliştirme avantajı, uygulama yükleme](_img\vs-office-dev\vs-office-dev-install-cropped.png)
-
-
-6.  Tıklayın **çalıştırma** yüklemeyi hemen başlatmak veya **Kaydet** yükleme paketini bilgisayarınıza kaydedin ve daha sonra yüklemek için.
-
-7.  Kullanıcı Hesabı Denetimi iletişim kutusu göründüğünde tıklayın **Evet** bilgisayarınıza yüklemek Office izin vermek için.
-
-
-### <a name="q-how-do-i-update-the-number-of-users-from-the-office-365-admin-portal"></a>S: Office 365 Yönetici portalı'ndan kullanıcıların sayısı nasıl güncelleştirebilirim?
-Y: alma işlemi sırasında gerekli sayıda kullanıcı atamak ve daha sonraki bir zamanda bu sayıyı artırmak istiyorsanız olmadı durumunda, aşağıdaki adımları izleyin.
-
-1. Alma işlemi tamamlandıktan sonra kullanıcıların artırmak için ziyaret etmek ihtiyacınız olacak [ https://portal.office.com ](https://portal.office.com) ve "Kullanıcı Kiracı oluşturma adımları sırasında oluşturulan kimliği" oturum açın.
-
-    > [!NOTE]
-    > Oturum açma bilgileri bulma ile ilgili sorunlar yaşıyorsanız, "Microsoft Online Service ekibinden" konu ile birlikte gönderilen "Sipariş onayı" e-postanıza bakın "sipariş onayı: satın aldığınız için teşekkür ederiz".  Alternatif olarak, aynı zamanda için gelen kutunuza arayabilirsiniz "gövde: (Office 365 Kurumsal E3 Geliştirici MSDN)".
-
-2. Başarılı oturum açma işleminden seçin **yönetici** Döşe. "Yönetim merkezine" yönlendirilir.
-
-3. Sol taraftaki gezinti panelinde açılan için tıklayarak **faturalama** ve **abonelikleri**.
-
-4. Office 365 Kurumsal E3 Geliştirici MSDN abonelik bulun ve tıklatın **ekleme / çıkarma lisansları**.
-
-5. Artırma veya azaltma **toplam kullanıcılar** istenen değere (25 aşmayı değil) ve tıklayın **Gönder**.
-
-6. "Satın Al" değeri "Abonelikler" sayfasında belirtildiği gibi artık gönderilen değer ile eşleşmelidir.
-
-    > [!NOTE]
-    > 25 "toplam kullanıcı" değerini aşan bir hataya neden olur.
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Office geliştirici aboneliğinizle birlikte Yardım mı gerekiyor? Kullanıma [Destek](https://developer.microsoft.com/office/support) kaynaklardaki [Office Geliştirme Merkezi](https://developer.microsoft.com/office).

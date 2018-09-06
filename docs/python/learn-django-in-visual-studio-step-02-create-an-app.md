@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624125"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995969"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2. adım: görünümleri ve şablonların bir Django uygulaması oluşturma
 
@@ -53,7 +53,7 @@ Her iki yöntemi kullanarak, "HelloDjangoApp" adı ile bir uygulama oluşturun. 
 | **\_\_init\_\_.py** | Uygulamayı bir paket olarak tanımlayan dosya. |
 | **Geçişleri** | Django ile hizalamak için veritabanını güncelleştiren komut dosyaları depolayan bir klasör için modelleri değiştirir. Geçerli modelleri eşleşmesi Django'nın Geçiş Araçları veritabanının önceki bir sürümüne sonra gerekli değişiklikleri uygulayın. Modellerinizi üzerinde odaklanma tutun migrations'ı kullanma ve temel alınan veritabanı şemasını işlemek Django olanak tanır. Geçişler, 6. adımda ele alınmıştır; şimdilik yalnızca klasörü içeren bir  *\_ \_init\_\_.py* dosyası (klasörü kendi Python paketini tanımlar gösterir). |
 | **Şablonları** | Django sayfası şablonlarını içeren tek bir dosya için bir klasör *index.html* uygulama adıyla eşleşen bir klasör içinde. (Visual Studio 2017 15.7 ve önceki sürümlerinde, dosyanın doğrudan altında bulunan *şablonları* ve adım 2-4 bildirir, bir alt klasör oluşturun.) İçine bir sayfayı dinamik olarak oluşturmak için bilgi görünümleri ekleyebilirsiniz HTML bloklarını şablonlardır. Şablon "değişkenler," gibi sayfa `{{ content }}` içinde *index.html*, bu makalenin ilerleyen bölümlerinde (2. adım) açıklandığı gibi dinamik değerler için yer tutucular olan. Genellikle Django uygulamaları, uygulama adıyla eşleşen bir alt klasöre yerleştirerek, şablon için bir ad alanı oluşturun. |
-| **Admin.PY** | Uygulamayı genişletmek Python dosyası yönetim arabirimini görmek için kullanıldığı ve bir veritabanındaki verileri düzenleme (adım 6'ya bakın). Başlangıçta, bu dosya yalnızca deyimi içerir `from django.contrib import admin`. Varsayılan olarak, Django Django projesinin girişleri aracılığıyla standart bir yönetim arabirimi içerir *settings.py* uncommenting mevcut girişlere göre açabilirsiniz dosyasını *urls.py*. |
+| **Admin.PY** | Uygulamayı genişletmek Python dosyası yönetim arabirimi (6. adıma bakın), temel ve bir veritabanındaki verileri düzenlemek için kullanılır. Başlangıçta, bu dosya yalnızca deyimi içerir `from django.contrib import admin`. Varsayılan olarak, Django Django projesinin girişleri aracılığıyla standart bir yönetim arabirimi içerir *settings.py* uncommenting mevcut girişlere göre açabilirsiniz dosyasını *urls.py*. |
 | **Apps.PY** | (Bu tablodan sonraki, aşağıya bakın) uygulaması için bir yapılandırma sınıfı tanımlayan bir Python dosyası. |
 | **models.PY** | Veri nesneleri, işlevleri, görünümleri uygulamanın temel veritabanıyla etkileşim tarafından tanımlanan modelleridir (6. adıma bakın). Django veritabanı bağlantı katmanı sağladığından uygulamalar kendilerini bu ayrıntılarla ilgilendiriyor gerekmez. *Models.py* dosya bir varsayılan Modellerinizi oluşturulacağı yerdir ve başlangıçta yalnızca deyimi içeren `from django.db import models`. |
 | **Tests.PY** | Temel yapısını birim testleri içeren bir Python dosyası. |

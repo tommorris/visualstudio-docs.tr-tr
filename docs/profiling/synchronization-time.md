@@ -14,20 +14,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b968ead26d632c70f0b1adc8864600769629a90
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3236530c1a7b92fd1cba1bdd61e3e1c0973b58c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676897"
 ---
-# <a name="synchronization-time"></a>Eşitleme Zamanı
-Bu kesimler çizelgesinde eşitlemesi kategorilere kez engelleme ile ilişkilendirilir. Bir iş parçacığı eşitleme engellendi olarak işaretlendiğinde, bunlardan birini kapsanır:  
+# <a name="synchronization-time"></a>Eşitleme saati
+Bu segmentlerde faaliyet zaman çizelgesi, eşitleme sınıflandırılmış bir kez engelleme ile ilişkilidir. Bir iş parçacığı eşitlemede engellendi olarak işaretlendiğinde, bunlardan birini gösterilir:  
   
--   İş parçacığı yürütülmesi iyi bilinen iş parçacığı eşitleme API çağrıda gibi neden olmuş olabilir `EnterCriticalSection()` veya `WaitForSingleObject()`.  
+-   İş parçacığının yürütülmesini iyi bilinen bir iş parçacığı eşitleme API çağrısında gibi neden olmuş olabilir `EnterCriticalSection()` veya `WaitForSingleObject()`.  
   
--   API eşleştirme algoritması tamamen kapsamlı olamaz ve eşitleme olan ilkel engelleyen bir temel çekirdek ulaşıldığı çağrı çerçevede yığın çünkü sonunda bu nedenle diğer kategorilere eşleştirilebilir bazı API'leri de görünebilir Bu kategoriyi eşlenmiş.  
+-   API eşleştirme algoritmasını tamamen kapsamlı olamaz ve eşitleme, ilkel engelleyen bir temel çekirdek ulaştığından çağrısında bir çerçeve yığın çünkü sonunda bu nedenle diğer kategorilere eşleştirilebilir bazı API'leri de görünebilir Bu kategoriyi eşlendi.  
   
- Bir iş parçacığı engelleme olayı temel nedeni anlamak için profil raporları ve engelleme çağrı yığınları dikkatle inceleyin.  
+ Bir iş parçacığı engelleme olayı temel nedenini anlamak için engelleme çağrı yığınları ve profil raporlarını dikkatle inceleyin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: Performans çözümleme araçları veri | Microsoft Docs
+title: Performans analiz araçlarını veri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690858"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677818"
 ---
 # <a name="analyze-performance-tools-data"></a>Performans araçları verilerini analiz etme
-Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları görüntülemek ve uygulama performans sorunları çözümlemek etkinleştirin. Bu bölümde performans raporları ve performans verilerini incelemek için kullanılan görünümleri genel bakış sağlar.  
+Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları görüntüleyip uygulama performans sorunlarını analiz etmek etkinleştirin. Bu bölümde, performans verileri incelemek için kullanılabilir görünümleri ve performans raporları hakkında genel bir bakış sağlar.  
   
 ## <a name="common-tasks"></a>Ortak görevler  
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Hızlı bir şekilde sorunları belirlemek için performans kurallarını kullanın:** Profil Araçları performans kurallarını tanımlamak ortak sorunlar ve Yardım sorunu içeren kaynak koduna kolayca gidin. Ayrıntılı Yardım konuları genellikle bir çözüm önerebilir.|-   [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**Rapor Görünümü Ayrıntıları Anlama:** profil oluşturma Araçlar rapor görünümlerini işlemler, iş parçacıkları, modüller ve bir çalıştırma profil oluşturma işlevler için toplanan performans verilerini sağlar. Görüntülenen verileri verileri toplamak için kullanılan profil yöntemine bağlıdır.|-   [Performans rapor görünümleri](../profiling/performance-report-views.md)|  
-|**Yapılandırma, sıralama ve filtreleme rapor görünümleri:** belirtin ve bir rapor görüntülemek için Rapor satırları sıralama veri sütunları sıralama ve yalnızca belirttiğiniz bir zaman diliminin dahil edilecek verileri filtreleyin.|-   [Performans araçları rapor görünümlerini özelleştirme](../profiling/customizing-performance-tools-report-views.md)|  
+|**Sorunları hızlı bir şekilde tanımlamak için performans kurallarını kullanma:** sık karşılaşılan sorunlar ve sorunu içeren kaynak kod için kolayca gezinin Yardım Profil Araçları performans kuralları tanımlayın. Ayrıntılı Yardım konuları, genellikle bir çözüm önerebilir.|-   [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Rapor Görünümü ayrıntıları kavramanız gerekir:** profil oluşturma araçları rapor görünümlerini işlemler, iş parçacıkları, modüller ve işlevleri, bir profil oluşturma için toplanan performans verilerini sağlar. Görünen veriler veri toplamak için kullanılan profil oluşturma yöntemine bağlıdır.|-   [Performans raporu görünümleri](../profiling/performance-report-views.md)|  
+|**Yapılandırma, sıralama ve filtreleme rapor görünümlerini:** belirtin ve bir raporda görüntülemek için Rapor satırları sıralama veri sütunları sıralama ve verileri yalnızca belirttiğiniz süre kesimi içerecek şekilde filtreleyin.|-   [Performans araçları rapor görünümlerini özelleştirme](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>İlgili bölümler  
  [Performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md)  
@@ -43,5 +43,5 @@ Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Performans Gezgini](../profiling/performance-explorer.md)  
- [Visual Studio'da profil oluşturma](../profiling/index.md)  
- [Profil oluşturma özelliği turu](../profiling/profiling-feature-tour.md)
+ [Visual Studio profil oluşturma](../profiling/index.md)  
+ [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

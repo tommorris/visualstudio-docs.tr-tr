@@ -19,32 +19,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec80b70ea0433a7ede72fe9ca63a6abfdd07ead5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 87a4b490b7cc7b1942723e6033117571bf08cba6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257205"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676704"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Nasıl yapılır: aralıkları veya seçimleri program aracılığıyla daraltma
-  İle çalışıyorsanız bir <xref:Microsoft.Office.Interop.Word.Range> veya <xref:Microsoft.Office.Interop.Word.Selection> nesnesi, varolan metnin üzerine yazılmasını önlemek için bir metin eklemeden önce bir ekleme noktası seçimi değiştirmek isteyebilirsiniz. Hem <xref:Microsoft.Office.Interop.Word.Range> ve <xref:Microsoft.Office.Interop.Word.Selection> nesneler sahip kullanan bir Daralt yöntemi <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> numaralandırma değerlerinin:  
+  İle çalışıyorsanız bir <xref:Microsoft.Office.Interop.Word.Range> veya <xref:Microsoft.Office.Interop.Word.Selection> nesnesi, metnin üstüne yazarak önlemek için metin eklemeden önce bir ekleme noktasını seçimi değiştirmek isteyebilirsiniz. Hem <xref:Microsoft.Office.Interop.Word.Range> ve <xref:Microsoft.Office.Interop.Word.Selection> nesneleri kullanan bir Daralt yöntemi sahip <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> sabit listesi değerleri:  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Seçimi seçimi başlangıcına daraltır. Bir numaralandırma değeri belirtmezseniz, varsayılan değer budur.  
+-   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Seçimi seçimin başına daraltır. Bu, bir sabit listesi değeri belirtmezseniz varsayılan değerdir.  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> Seçimi seçimi sonuna daraltır.  
+-   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> Seçimi, seçim sonuna daraltır.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="to-collapse-a-range-and-insert-new-text"></a>Bir aralığı daraltmak ve yeni metin eklemek için  
   
-1.  Oluşturma bir <xref:Microsoft.Office.Interop.Word.Range> belgede ilk paragrafa oluşan nesne.  
+1.  Oluşturma bir <xref:Microsoft.Office.Interop.Word.Range> belgedeki ilk paragrafa içeren nesne.  
   
-     Aşağıdaki kod örneği bir belge düzeyi özelleştirmelerinde kullanılabilir.  
+     Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir.  
   
      [!code-vb[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#46)]
      [!code-csharp[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#46)]  
   
-     Aşağıdaki kod örneği, bir VSTO eklenti kullanılabilir. Bu kod, etkin belgeyi kullanır.  
+     Aşağıdaki kod örneği, VSTO eklentisi içinde kullanılabilir. Bu kod, etkin belgeyi kullanır.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#46)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#46)]  
@@ -64,27 +64,27 @@ ms.locfileid: "35257205"
      [!code-vb[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#49)]
      [!code-csharp[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#49)]  
   
- Kullanırsanız <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> numaralandırma değeri, metin, aşağıdaki paragraf başında eklenir.  
+ Kullanırsanız <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> numaralandırma değeri, metin, aşağıdaki paragraf başına eklenir.  
   
  [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
  [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
   
- Paragraf işaretçisini özgün aralık içerdiği için yeni bir cümle eklerken, paragraf işaretçisini, ancak durum önce başka bir deyişle ekleneceğini bekleyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: aralık oluştururken program aracılığıyla paragraf işaretlerini dışlama](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
+ Özgün aralığın paragraf işaretçisini içerdiğinden ekleyerek yeni bir cümle, paragraf işaretçisini, ancak durum önce diğer bir deyişle ekleneceğini bekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: aralık oluştururken program aracılığıyla hariç tutma paragraf işaretlerini](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
   
-## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirme örnek  
+## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirmesi örneği  
   
-### <a name="to-collapse-a-range-in-a-document-level-customization"></a>Belge düzeyi özelleştirmelerinde bir aralığı daraltmak için  
+### <a name="to-collapse-a-range-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesindeki bir aralığı daraltmak için  
   
-1.  Aşağıdaki örnek bir belge düzeyi özelleştirme için tam yöntemini gösterir. Bu kodu kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.  
+1.  Aşağıdaki örnek, bir belge düzeyi özelleştirmesi için ayrıntılı bir yöntemi gösterir. Bu kodu kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.  
   
      [!code-vb[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#45)]  
   
 ## <a name="vsto-add-in-example"></a>VSTO eklenti örneği  
   
-### <a name="to-collapse-a-range-in-an-vsto-add-in"></a>Bir VSTO eklenti bir aralıkta daraltmak için  
+### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>Bir VSTO eklentisi bir aralıktaki daraltmak için  
   
-1.  Aşağıdaki örnek, VSTO eklenti için tam yöntemi gösterir. Bu kodu kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.  
+1.  Aşağıdaki örnek, VSTO eklentisi için ayrıntılı bir yöntemi gösterir. Bu kodu kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]  
@@ -92,8 +92,8 @@ ms.locfileid: "35257205"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla aralıklardaki başlangıç ve bitiş karakterlerini alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Nasıl yapılır: aralık oluştururken program aracılığıyla paragraf işaretlerini dışlama](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
+ [Nasıl yapılır: program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Nasıl yapılır: program aracılığıyla paragraf işaretlerini aralık oluştururken hariç tutma](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
  [Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Nasıl yapılır: Word belgelerinde aralıkları'program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)  
   

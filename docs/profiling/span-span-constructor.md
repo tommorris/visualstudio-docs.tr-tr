@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd383dfd03a1e4e0a2ca9c377ce372d1586c738
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9fe89b289601775fad8c102e696e799edce1c50c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677888"
 ---
 # <a name="spanspan-constructor"></a>span::span Oluşturucusu
 Yeni bir örneğini başlatır `span` sınıfı.  
@@ -57,7 +58,7 @@ span(
  Geçerli işaret serisi bağlamı.  
   
  `_Format`  
- Metin içeren bileşik biçim dizesi bağımsız değişken listesinde nesnelere karşılık gelen, sıfır veya daha fazla biçimi öğeleri ile intermixed.  
+ Bağımsız değişken listesindeki nesnelere karşılık gelen sıfır veya daha fazla biçim öğeleri ile karıştırılmış, metin içeren bir bileşik biçimlendirme dizesi.  
   
  `_Importance`  
  Önem düzeyi.  
@@ -66,9 +67,9 @@ span(
  Kategori.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cvmarkersobj.h  
+ **Başlık:** *cvmarkersobj.h*  
   
  **Namespace:** Concurrency::diagnostic
  
- ## <a name="see-also"></a>Ayrıca Bkz.
- [span Sınıfı](../profiling/span-class.md)
+ ## <a name="see-also"></a>Ayrıca bkz.
+ [span sınıfı](../profiling/span-class.md)

@@ -9,47 +9,48 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676850"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ kurallarını belirtmek için kural kümeleri kullanma
 
-Visual Studio'da oluşturma ve özel bir değiştirme *kural kümesi* Kod Analizi ile ilişkilendirilmiş belirli proje gereksinimlerini karşılamak için. Varsayılan kural kümeleri depolanmış `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+Visual Studio'da oluşturma ve değiştirme özel *kural kümesi* Kod Analizi ile ilgili belirli proje gereksinimlerini karşılamak için. Varsayılan kural kümesi içinde depolanan `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 sürüm 15.7** Düzenleyici herhangi bir metin kullanarak özel kural kümeleri oluşturma ve bunları ne oluşturma sistemi kullanıyorsanız olsun komut satırı derlemeleri uygulayabilirsiniz. Daha fazla bilgi için bkz: [/ analyze: ruleset](/cpp/build/reference/analyze-code-quality).
+**Visual Studio 2017 sürüm 15.7** özel kural kümeleri kullanarak herhangi bir metin düzenleyicisi oluşturun ve bunları ne yapı sistemi kullandığınızdan bağımsız olarak komut satırı derlemeleri de uygulayabilirsiniz. Daha fazla bilgi için [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
 
-Visual Studio'da ayarlayın özel bir C++ kuralı oluşturmak için C/C++ projesi Visual Studio IDE içinde açık olması gerekir. Kural kümesi Düzenleyicisi'nde bir standart bir kural kümesi'ni açın ve ardından ekler veya belirli kuralları kaldırın ve isteğe bağlı olarak Kod Analizi kural ihlal ettiğini belirlediğinde gerçekleştirilen eylemleri değiştirebilirsiniz.
+Visual Studio'da bir özel C++ kural oluşturmak için C/C++ proje Visual Studio IDE'de açık olması gerekir. Ardından bir standart bir kural kümesi kural kümesi Düzenleyicisi'nde açın ve ardından ekleyin veya belirli kuralları kaldırın ve isteğe bağlı olarak Kod Analizi kural ihlal belirlediğinde, gerçekleşen eylemi değiştirebilirsiniz.
 
-Yeni özel bir kural oluşturmak için yeni bir dosya adı kullanarak kaydedin. Özel kural kümesi projeye otomatik olarak atanır.
+Yeni bir özel kural oluşturmak için yeni bir dosya adını kullanarak kaydedin. Özel kural kümesi, projeye otomatik olarak atanır.
 
-## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Tek bir var olan kural kümesinden özel bir kural oluşturmak için
+## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Var olan tek kural kümesinden özel bir kural oluşturmak için
 
 1. Çözüm Gezgini'nde, proje için kısayol menüsünü açın ve ardından **özellikleri**.
 
-2. Üzerinde **özellikleri** sekmesinde, seçin **Kod Analizi**.
+2. Üzerinde **özellikleri** sekmesini, **Kod Analizi**.
 
 3. İçinde **kural kümesi** aşağı açılan listesinde, aşağıdakilerden birini yapın:
 
-    - Özelleştirmek istediğiniz kural kümesini seçin.
+    - Özelleştirmek istediğiniz kural kümesi seçin.
 
      \- veya -
 
-    - Seçin  **\<Gözat... >** mevcut bir kuralı kümesini belirlemek için listede değil.
+    - Seçin  **\<Gözat … >** mevcut bir kuralı kümesini belirlemek için listesinde değil.
 
-4. Seçin **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülenecek.
+4. Seçin **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülemek için.
 
-## <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Bir kural değiştirmek için kural kümesi Düzenleyicisi'nde ayarlayın
+## <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Bir kuralı değiştirmek için kural kümesi Düzenleyicisi'nde ayarlayın.
 
-- Kural kümesi görünen adını değiştirmek için **Görünüm** menüsünde seçin **Özellikler penceresini**. Görünen ad girin **adı** kutusu. Görünen adı dosya adından farklı olabilir dikkat edin.
+- Kural kümesi görünen adını değiştirmek için **görünümü** menüsünde seçin **Özellikler penceresi**. Görünen ad girin **adı** kutusu. Görünen ad dosya adından farklı olabilir dikkat edin.
 
-- Grubun tüm kuralları bir özel kural kümesine eklemek için Grup onay kutusunu seçin. Grubun tüm kuralları kaldırmak için onay kutusunu temizleyin.
+- Özel kural kümesi için tüm Grup kurallarını eklemek için grubunun onay kutusunu seçin. Grubun tüm kuralları kaldırmak için onay kutusunu temizleyin.
 
-- Özel bir kural kümesi için belirli bir kural eklemek, kuralın onay kutusunu seçin. Kural kural kümesinden kaldırmak için onay kutusunu temizleyin.
+- Özel kural kümesi için belirli bir kural eklemek için kuralın onay kutusunu seçin. Kural kural kümesinden kaldırmak için onay kutusunu temizleyin.
 
-- Bir kod analizi kural ihlal edildiğinde gerçekleştirilecek eylemi değiştirmek için tercih **eylem** kural için alan ve aşağıdaki değerlerden birini seçin:
+- Bir kod analizi kural ihlal edildiğinde gerçekleştirilecek eylemi değiştirmek için seçin **eylem** kural için alan ve sonra aşağıdaki değerlerden birini seçin:
 
      **Uyar** -bir uyarı oluşturur.
 
@@ -57,31 +58,31 @@ Yeni özel bir kural oluşturmak için yeni bir dosya adı kullanarak kaydedin. 
 
      **Hiçbiri** -kural devre dışı bırakır. Bu eylem kural kümesi kuralı kaldırma aynıdır.
 
-## <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Gruplandırmak için filtre veya kural kümesi Düzenleyici araç çubuğunu kullanarak kural kümesi Düzenleyici alanları değiştirin
+## <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Gruplandırmak için filtre veya kural kümesi Düzenleyici'sini alanları, kural kümesi Düzenleyici araç kullanarak
 
 - Tüm grupları kurallarında genişletmek için seçin **Tümünü Genişlet**.
 
-- Tüm grupları kurallarında daraltmak için tercih **Daralt tüm**.
+- Tüm grupları kurallarında daraltmak için seçin **Daralt tüm**.
 
-- Kurallar tarafından gruplandırılır alanını değiştirmek için alanından seçin **Group By** listesi. Gruplanmamış kuralları görüntülemeyi seçebilir  **\<Hiçbiri >**.
+- Kurallar tarafından gruplandırılır alanını değiştirmek için alanı seçin **Group By** listesi. Gruplandırılmamış kuralları görüntülemeyi tercih  **\<yok >**.
 
-- Eklemek veya kural sütunlarında alanları kaldırmak istediğiniz **sütun seçenekleri**.
+- Alan kuralı sütunlar ekleyip için seçin **sütun seçenekleri**.
 
-- Geçerli çözüme uygulamayın kuralları gizlemek için seçin **Gizle geçerli çözüme uygulamayın kuralları**.
+- Geçerli çözüme geçerli olmayan kuralları gizlemek için seçin **Gizle geçerli çözüme geçerli olmayan kuralları**.
 
-- Gösterme ve gizleme hata eylemi atanmış olan kurallar arasında geçiş yapmak için tercih **Göster Kod Analizi hatalara neden olabilir kuralları**.
+- Hata eylemi atanmış olan kuralları gizleme ve gösterme arasında geçiş yapmak için seçin **kod analiz hataları verebilen kuralları göster**.
 
-- Gösterme ve gizleme uyarı eylemi atanmış olan kurallar arasında geçiş yapmak için tercih **Göster Kod Analizi uyarıları oluşturan kuralları**.
+- Uyarı eylemi atanmış olan kuralları gizleme ve gösterme arasında geçiş yapmak için seçin **kod analiz uyarıları üretebilen kuralları göster**.
 
-- Gösterme ve gizleme atanan kuralları arasında geçiş yapmak için **hiçbiri** eylemi seçin **Göster etkin olmayan kuralları**.
+- Atanan kuralları gizleme ve gösterme arasında geçiş yapmak için **hiçbiri** eylemi seçin **etkin olmayan kuralları göster**.
 
-- Eklemek veya varsayılan kural kümesi geçerli kural kümesinde Microsoft kaldırmak istediğiniz **ekleme veya kaldırma alt kural kümeleri**.
+- Varsayılan kural kümeleri geçerli kural kümesine Microsoft ekleyip için seçin **alt kural kümelerini Ekle veya Kaldır**.
 
-## <a name="to-create-a-rule-set-in-a-text-editor"></a>Bir kural oluşturmak için bir metin düzenleyicisinde ayarlama
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>Bir metin düzenleyicisinde bir kural oluşturmak için
 
-Özel bir kural kümesini bir metin düzenleyicisi oluşturun, herhangi bir konumda depolayın bir `.ruleset` uzantısı ve ile uygulama [/ analyze: ruleset](/cpp/build/reference/analyze-code-quality) derleyici seçeneği.
+Özel kural kümesi düzenleyici metin oluşturmak, herhangi bir konumda depolayın bir `.ruleset` uzantısı ve ile uygulama [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis) derleyici seçeneği.
 
-Aşağıdaki örnek, bir başlangıç noktası olarak kullanabileceğiniz dosyası temel bir kural kümesi gösterir:
+Aşağıdaki örnek, bir başlangıç noktası olarak kullanabileceğiniz dosyası temel bir kural kümesi gösterilmektedir:
 
 ```xml
 

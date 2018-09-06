@@ -15,26 +15,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 283fd069e0de72af92f7999871190c6c8a0d345b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db805aa1e00d672b4a0579e546a6827e9135b909
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676712"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
-  Hemen önce çağrılır yönetilen bir VSTO eklenti kaldırılır.  
+  Hemen önce çağrılır yönetilen bir VSTO eklentisi kaldırılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```c++
+```csharp
 HRESULT Unload();  
 ```  
   
 ## <a name="return-value"></a>Dönüş değeri  
- Yöntemi başarıyla tamamlanmış olup olmadığını belirten bir HRESULT değer.  
+ Yöntemi başarıyla tamamlanıp tamamlanmadığını belirten bir HRESULT değer.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, geçerli Microsoft Office sürümleri tarafından çağrılmaz. Bu yöntem, gelecekte kullanılmak üzere ayrılmış.  
+ Bu yöntem, geçerli Microsoft Office sürümleri tarafından çağrılmaz. Bu yöntem, gelecekte kullanılmak üzere ayrılmıştır.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md)   

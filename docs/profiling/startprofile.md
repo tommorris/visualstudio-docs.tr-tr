@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6aa365df2d7cdc1219ceea718594682685f2a759
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677214"
 ---
 # <a name="startprofile"></a>StartProfile
-`StartProfile` İşlevi 1 sayaç için belirtilen profil düzeyi (açık) ayarlar.  
+`StartProfile` İşlevi 1 sayaç için belirtilen profil oluşturma düzeyi (açık) ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,46 +33,46 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 #### <a name="parameters"></a>Parametreler  
  `Level`  
   
- Hangi performans veri toplama uygulanabilir profili düzeyini gösterir. Aşağıdaki **PROFILE_CONTROL_LEVEL** numaralandırmalar, hangi performans veri toplama uygulanabilir üç düzeylerinden birini belirtmek için kullanılabilir:  
+ Hangi performans veri toplama uygulanabilir profili düzeyini gösterir. Aşağıdaki **PROFILE_CONTROL_LEVEL** numaralandırıcılar, hangi performans veri toplama uygulanabilir üç düzeylerinden birini belirtmek için kullanılabilir:  
   
 |Numaralandırıcı|Açıklama|  
 |----------------|-----------------|  
-|PROFILE_GLOBALLEVEL|Genel düzeyi ayarı, tüm işlemler ve Çalıştır profil oluşturma iş parçacıkları etkiler.|  
-|PROFILE_PROCESSLEVEL|İşlem düzeyi ayarı belirtilen işleminin bir parçası olan tüm iş parçacıklarının etkiler.|  
-|PROFILE_THREADLEVEL|İş parçacığı düzeyi ayarı profil belirtilen iş parçacığı etkiler.|  
+|PROFILE_GLOBALLEVEL|Genel düzeyi ayarı tüm işlemleri ve profil oluşturma, iş parçacıklarını etkiler.|  
+|PROFILE_PROCESSLEVEL|İşlem düzeyi ayarı belirtilen işlemin bir parçası olan tüm iş parçacıklarını etkiler.|  
+|PROFILE_THREADLEVEL|İş parçacığı düzeyi ayarı profil oluşturma, belirtilen iş parçacığı etkiler.|  
   
  `dwId`  
   
  Sistem tarafından oluşturulan işlem veya iş parçacığı tanımlayıcısı.  
   
-## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri  
- Kullanarak işlevi başarısını veya başarısızlığını gösterir **PROFILE_COMMAND_STATUS** numaralandırması. Dönüş değeri aşağıdakilerden biri olabilir:  
+## <a name="property-valuereturn-value"></a>Özellik değeri/dönüş değeri  
+ İşlevi kullanarak başarısı veya başarısızlığı gösterir **PROFILE_COMMAND_STATUS** sabit listesi. Dönüş değeri aşağıdakilerden biri olabilir:  
   
 |Numaralandırıcı|Açıklama|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Profil oluşturma öğesi kimliği yok.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Düzey belirtilen profil yok.|  
-|PROFILE_ERROR_MODE_NEVER|Hiçbir zaman işlevi çağrıldığında profil oluşturma modu ayarlandı.|  
-|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Profil oluşturma işlev çağrısı, profil düzeyinde veya arama ve düzeyi birleşimi henüz uygulanmadı.|  
+|PROFILE_ERROR_MODE_NEVER|HİÇ işlev çağrıldığında profil oluşturma modunda ayarlandı.|  
+|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Profil oluşturma işlev çağrısı, profil oluşturma düzeyinde veya çağrı ve düzey henüz uygulanmadı.|  
 |PROFILE_OK|Çağrı başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- StartProfile ve StopProfile profil düzeyi Başlat/Durdur durumunu denetler. Başlat/Durdur varsayılan değeri 1'dir. Başlangıç değeri kayıt defterinde değiştirilebilir. Her çağrı StartProfile Başlat/Durdur 1 olarak ayarlar; her çağrı StopProfile 0 olarak ayarlanır.  
+ Profil oluşturma düzeyi için Başlat/Durdur durumu StartProfile ve StopProfile kontrol eder. Başlat/Durdur varsayılan değeri 1'dir. Başlangıç değeri kayıt defterinde değiştirilebilir. StartProfile yapılan her çağrı, başlatma/durdurma 1'e ayarlanır; her çağrı StopProfile 0 olarak ayarlar.  
   
- Başlat/Durdur 0'dan büyük Başlat/Durdur durumu düzeyi için açık olur. Küçük veya 0 değerine eşit olduğunda Başlat/Durdur durumu Kapalı'dır.  
+ Başlat/Durdur 0'dan büyük düzeyi için Başlat/Durdur durumu ON olur. Küçük veya 0'a eşit olduğunda Başlat/Durdur durumu Kapalı'dır.  
   
- Başlat/Durdur durumu ve askıya alma/sürdürme durumu hem de açık olduğunda, profil düzeyi için açık bir durumda. İş parçacığı olması için genel işlem profili ve iş parçacığı için iş parçacığı düzeyi durumları açık olması gerekir.  
+ Başlat/Durdur durumunda ve askıya alma/sürdürme durumu hem de açık olduğunda, profil oluşturma durumu düzeyi için açıktır. İş parçacığı olacak şekilde, genel işlem profili ve iş parçacığı için iş parçacığı düzeyi durumları açık olması gerekir.  
   
-## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri  
- Microsoft.VisualStudio.Profiler.dll  
+## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>İşlev bilgisi  
- Başlık: VSPerf.h içinde bildirilen  
+ Başlık: bildirilen *VSPerf.h*  
   
- İçeri aktarma kitaplığı: VSPerf.lib  
+ İçeri aktarma kitaplığı: *VSPerf.lib*  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek StartProfile işlev çağrısı gösterilmektedir.  
+ Aşağıdaki örnek StartProfile işlev çağrısı göstermektedir.  
   
 ```cpp  
 void ExerciseStartProfile()  
@@ -107,5 +108,5 @@ void ExerciseStartProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio profil oluşturucu API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)

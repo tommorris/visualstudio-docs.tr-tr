@@ -1,5 +1,5 @@
 ---
-title: Bir UWP uygulaması ile kodlanmış bir UI testi test etme
+title: Kodlanmış UI testi ile bir UWP uygulaması test
 ms.date: 05/31/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,38 +12,38 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694121"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677258"
 ---
-# <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Kodlanmış UI sınamak için bir UWP uygulaması oluşturma
+# <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Kodlanmış UI testi için test UWP uygulaması oluşturma
 
 Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış UI testi oluşturma açıklanmaktadır.
 
 ## <a name="create-a-uwp-app-to-test"></a>Test etmek için bir UWP uygulaması oluşturma
 
-İlk adım sınaması çalıştırmak için basit bir UWP uygulaması oluşturmaktır.
+İlk adım, testi karşı çalıştırmak için basit bir UWP uygulaması oluşturmaktır.
 
-1. Visual Studio'da kullanarak yeni bir proje oluşturma **boş uygulama (Evrensel Windows)** Visual C# veya Visual Basic için şablon.
+1. Visual Studio kullanarak yeni bir proje oluşturma **boş uygulama (Evrensel Windows)** Visual C# veya Visual Basic şablonu.
 
      ![Boş uygulama Evrensel Windows şablonu](../test/media/blank-uwp-app-template.png)
 
 1. İçinde **yeni evrensel Windows platformu projesi** iletişim kutusunda **Tamam** varsayılan platform sürümleri kabul etmek için.
 
-1. Gelen **Çözüm Gezgini**, açık *MainPage.xaml*.
+1. Gelen **Çözüm Gezgini**açın *MainPage.xaml*.
 
    Dosya açılır **XAML Tasarımcısı**.
 
-1. Düğme denetimi ve bir textbox denetimi sürükleyin **araç** tasarım yüzeyine.
+1. Bir düğme denetimi ve bir metin kutusu denetimi sürükleyin **araç kutusu** tasarım yüzeyine bırakın.
 
      ![UWP uygulaması tasarlama](../test/media/toolbox-controls.png)
 
-1. Denetimlere adlar verin. Textbox denetimi seçin ve ardından **özellikleri** penceresinde girin **textBox** içinde **adı** alan. Düğme denetimi seçin ve ardından **özellikleri** penceresinde girin **düğmesini** içinde **adı** alan.
+1. Denetimlere adlar verin. Textbox denetimi seçin ve ardından **özellikleri** penceresinde girin **textBox** içinde **adı** alan. Düğme denetimini seçin ve ardından **özellikleri** penceresinde girin **düğmesi** içinde **adı** alan.
 
-1. Düğme denetimi çift tıklayın ve gövdesi için aşağıdaki kodu ekleyin `Button_Click` yöntemi. Bu kod metni metin kutusuna yalnızca bize kodlanmış UI testi daha sonra oluşturacağız doğrulamak için bir şey vermek için düğme denetiminin adı için yalnızca ayarlar.
+1. Düğme denetimini çift tıklayın ve gövdesi için aşağıdaki kodu ekleyin `Button_Click` yöntemi. Bu kod, metin yalnızca metin kutusuna daha sonra oluşturacağımız kodlanmış UI testi ile doğrulamak için bir şey bulunun yalnızca düğme denetimi, adını ayarlar.
 
    ```csharp
    this.textBox.Text = this.button.Name;
@@ -53,58 +53,58 @@ Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış 
    Me.textBox.Text = Me.button.Name
    ```
 
-1. Tuşuna **Ctrl**+**F5** uygulamayı çalıştırmak için. Aşağıdakine benzer bir şey görmeniz gerekir:
+1. Tuşuna **Ctrl**+**F5** uygulamayı çalıştırmak için. Aşağıdaki gibi görmeniz gerekir:
 
-   ![UWP uygulama düğmesi ve metin kutusu](media/uwp-app.png)
+   ![UWP uygulamasında düğme ve metin kutusu](media/uwp-app.png)
 
 ## <a name="create-a-coded-ui-test"></a>Kodlanmış UI testi oluşturma
 
-1. Bir test projesi çözüme eklemek için çözüme sağ tıklayın **Çözüm Gezgini** ve **Ekle** > **yeni proje**.
+1. Bir test projesi çözüme eklemek için çözüme sağ **Çözüm Gezgini** ve **Ekle** > **yeni proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda **kodlanmış UI Test projesi (Evrensel Windows)** şablonu. Şablon altında bulabilirsiniz **Windows Evrensel** kategorisi altında **Visual C#** veya **Visual Basic**.
+1. İçinde **yeni proje** iletişim kutusunda, **kodlanmış UI Test projesi (Evrensel Windows)** şablonu. Şablon altında bulabilirsiniz **Windows Evrensel** kategorisi altında **Visual C#** veya **Visual Basic**.
 
      ![Yeni kodlanmış UI test projesi](../test/media/coded-ui-test-project-uwp-template.png)
 
    > [!NOTE]
-   > Görmüyorsanız, **kodlanmış UI Test projesine (Evrensel Windows)** şablonu, gereken [kodlanmış UI test bileşeni](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Görmüyorsanız **kodlanmış UI Test projesi (Evrensel Windows)** şablon gereken [kodlanmış UI test bileşeni](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. İçinde **kodlanmış UI testi için kod üret** iletişim kutusunda **el ile testi düzenleme**.
+1. İçinde **kodlanmış UI testi için kod üret** iletişim kutusunda **el ile testi düzenlemek**.
 
-     ![Kodlanmış UI test iletişim kutusu için kod oluşturma](../test/media/manually-edit-the-test.png)
+     ![Kodlanmış UI testi iletişim kutusu için kod oluşturma](../test/media/manually-edit-the-test.png)
 
-1. UWP uygulamanızı zaten çalışmıyorsa başlatın tuşlarına basarak **Ctrl**+**F5**.
+1. UWP uygulamanız zaten çalışmıyorsa başlatın tuşlarına basarak **Ctrl**+**F5**.
 
-1. Açık **kodlanmış UI Test derleyicisini** imleci yerleştirerek iletişim `CodedUITestMethod1` yöntemi ve ardından seçme **Test** > **kodlanmış UI testiiçinkoduoluştur**  >  **Kullanım kodlanmış UI Test derleyicisini**.
+1. Açık **kodlanmış UI Test Oluşturucusu** imleci yerleştirerek iletişim `CodedUITestMethod1` yöntemi ve seçerek **Test** > **KodlanmışUItestiiçinkodüret**  >  **Kullanım kodlanmış UI Testi Oluşturucusu**.
 
-1. Denetimler için kullanıcı Arabirimi denetim eşlemesi ekleyin. Kullanım **kodlanmış UI Test derleyicisini** artı şeklindeki aracı UWP uygulamasında düğme denetimi seçin. İçinde **eklemek onaylar** iletişim kutusunda, genişletin **UI denetim eşlemesi** bölmesinde gerekli ve ardından **UI denetim eşlemesine denetim eklemek**.
+1. Denetim UI kontrol Haritası'na ekleyin. Kullanım **kodlanmış UI Test Oluşturucusu** ince artı aracını UWP uygulamasında düğme denetimini seçin. İçinde **onaylama Ekle** iletişim kutusunda genişletin **UI kontrol haritasını** bölmesinde gerekli ve ardından **denetim UI kontrol Haritası'na ekleme**.
 
-     ![UI eşlemesine denetim ekleme](../test/media/add-control-to-ui-control-map.png)
+     ![UI haritasına denetim Ekle](../test/media/add-control-to-ui-control-map.png)
 
-1. Textbox denetimi UI denetim eşlemesine eklemek için önceki adımı yineleyin.
+1. Textbox denetimi UI kontrol Haritası'na eklemek için önceki adımı yineleyin.
 
-1. İçinde **kodlanmış UI Test derleyicisini** iletişim kutusunda **kodu oluştur** veya basın **Ctrl**+**G**. Ardından **Generate** değişiklikler UI denetim eşlemesi için kod oluşturmak için.
+1. İçinde **kodlanmış UI Test Oluşturucusu** iletişim kutusunda **kod üret** veya basın **Ctrl**+**G**. Ardından **Oluştur** UI kontrol haritasında değişiklikler için kod oluşturmak için.
 
-     ![UI eşlemesi için kod oluşturma](../test/media/generate-code-dialog.png)
+     ![UI haritasında için kod oluşturma](../test/media/generate-code-dialog.png)
 
-1. Metin olarak değiştiğini doğrulamak için **düğmesini** düğmesine tıklandığında düğmesini tıklatın.
+1. Metin metin kutusuna değiştiğini doğrulamak için **düğmesi** düğmesine tıklandığında, düğmeye tıklayın.
 
      ![Düğme denetimi TextBox değeri ayarlamak için tıklayın](../test/media/uwp-app-button-textbox.png)
 
-1. Textbox denetiminde metni doğrulamak için onayı ifade ekleyin. Textbox denetimi seçin ve ardından artı şeklindeki aracını kullanın **metin** özelliğinde **eklemek onaylar** iletişim. Ardından, seçin **onay Ekle** veya basın **Alt**+**A**. İçinde **onaylama hatası iletisi** kutusuna **Textbox değeri olması beklenmiyor.** ve ardından **Tamam**.
+1. Textbox denetiminde metni doğrulamak için bir onay ekleyin. Textbox denetimi seçin ve ardından seçmek için artı işareti aracını kullanın **metin** özelliğinde **onaylama Ekle** iletişim. Ardından, **onaylama Ekle** veya basın **Alt**+**A**. İçinde **onaylama başarısız iletisi** kutusuna **Textbox değeri olması beklenmiyor.** ve ardından **Tamam**.
 
-     ![Çapraz hedef kutusuyla seçin ve onaylama ekleyin](../test/media/add-assertion-for-text.png)
+     ![TextBox ile artı seçin ve onaylama Ekle](../test/media/add-assertion-for-text.png)
 
-1. Onaylama işlemi için test kodu oluşturur. İçinde **kodlanmış UI Test derleyicisini** iletişim kutusunda **kodu oluştur**. İçinde **kodu oluştur** iletişim kutusunda **Ekle ve Üret**.
+1. Onay için test kod oluşturur. İçinde **kodlanmış UI Test Oluşturucusu** iletişim kutusunda **kod üret**. İçinde **kod üret** iletişim kutusunda **Ekle ve Oluştur**.
 
      ![Textbox onaylama için kod oluşturma](../test/media/add-and-generate-assert-method.png)
 
-   İçinde **Çözüm Gezgini**, açık *UIMap.Designer.cs* assert yöntemini ve denetimler için eklenen kod görüntülemek için.
+   İçinde **Çözüm Gezgini**açın *UIMap.Designer.cs* onay yöntemi ve denetimler için eklenen kodu görüntülemek için.
 
    > [!TIP]
-   > Visual Basic kullanıyorsanız, açık *CodedUITest1.vb*. Ardından `CodedUITestMethod1()` assert yöntemini çağrısı sağ tıklayın, test yöntemi kodu `Me.UIMap.AssertMethod1()` ve **Tanıma Git**. *UIMap.Designer.vb* kod düzenleyicisini ve açılır assert yöntemini ve denetimler için eklenen kod görüntüleyebilirsiniz.
+   > Visual Basic kullanıyorsanız açın *Codeduıtest1.vb*. Ardından `CodedUITestMethod1()` test yöntemi kodu, onay yöntemi çağrısını sağ `Me.UIMap.AssertMethod1()` ve **tanıma**. *UIMap.Designer.vb* açılarak Kod Düzenleyicisi ve onay yöntemi ve denetimler için eklenen kodu görüntüleyebilirsiniz.
 
     > [!WARNING]
-    > Değişiklik yapmayın *UIMap.Designer.cs* veya *UIMap.Designer.vb* doğrudan dosyaları. Bunu yaparsanız, test oluşturulduğunda, değişikliklerin üzerine yazılır.
+    > Değişiklik yapmayın *UIMap.Designer.cs* veya *UIMap.Designer.vb* dosyalarını doğrudan. Bunu yaparsanız, testi oluşturulduğunda, değişikliklerin üzerine yazılır.
 
     Assert yöntemini şöyle görünür:
 
@@ -128,15 +128,15 @@ Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış 
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
-1. Ardından, elde etmek ihtiyacımız **Automationıd** UWP, [uygulama](#create-a-simple-universal-windows-app) , test etmek istiyoruz. Açık pencereleri **Başlat** menü bölme uygulama için bkz. Ardından, artı şeklindeki aracı sürükleyin ![hedef simgesini](media/target-icon.png) gelen **kodlanmış UI Test derleyicisini** döşemenin uygulamanız için iletişim kutusuna. Mavi bir kutu döşeme çevreleyen, farenizi serbest bırakın.
+1. Ardından, elde etmek ihtiyacımız **Automationıd** UWP, [uygulama](#create-a-uwp-app-to-test) , test etmek istiyoruz. Windows açın **Başlat** menüsünde uygulama kutucuğuna bakın. Ardından, ince artı aracını sürükleyin ![hedef simgesine](media/target-icon.png) gelen **kodlanmış UI Test Oluşturucusu** uygulamanız için bir kutucuk için iletişim. Kutucuk mavi bir kutu çevreleyen, farenizi serbest bırakın.
 
-   ![Çapraz hedef aracı](media/cross-hair-tool.png)
+   ![İnce artı aracını](media/cross-hair-tool.png)
 
-   **Eklemek onaylar** iletişim kutusu açılır ve görüntüler **Automationıd** uygulamanız için. Sağ **Automationıd** ve **Panoya Kopyala değeri**.
+   **Onaylama Ekle** iletişim kutusu açılır ve görüntüler **Automationıd** uygulamanız için. Sağ **Automationıd** ve **değeri Panoya Kopyala**.
 
-   ![Automationıd onay Ekle iletişim kutusunda](../test/media/automation-id.png)
+   ![Onaylama Ekle iletişim kutusunda Automationıd](../test/media/automation-id.png)
 
-1. Kodu UWP uygulamasını başlatmak için test yöntemine ekleyin. İçinde **Çözüm Gezgini**, açık *Codeduıtest1.cs* veya *CodedUITest1.vb*. Çağrı yukarıda `AssertMethod1`, UWP uygulamasını başlatmak için kodu ekleyin:
+1. UWP uygulamasını başlatmak için test yöntemi için kod ekleyin. İçinde **Çözüm Gezgini**açın *Codeduıtest1.cs* veya *Codeduıtest1.vb*. Yukarıdaki çağrı `AssertMethod1`, UWP uygulamasını başlatmak için kodu ekleyin:
 
    ```csharp
    XamlWindow.Launch("af5ecd75-f252-45a1-9e7e-c6f1d8f054ff_0q1pp7qrjexbp!App")
@@ -146,12 +146,12 @@ Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış 
    XamlWindow myAppWindow = XamlWindow.Launch("af5ecd75-f252-45a1-9e7e-c6f1d8f054ff_0q1pp7qrjexbp!App");
    ```
 
-   Örnek kod Otomasyon Kimliğinde panoya önceki adımda kopyaladığınız değeri değiştirin.
+   Otomasyon kimliği örnek kod, önceki adımda panoya kopyaladığınız değeriyle değiştirin.
 
    > [!IMPORTANT]
-   > Karakter gibi kaldırmak için Otomasyon kimliği başlangıcını kırpma **P ~**. Bu karakterleri kırpma yok, test döndürürse bir `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` zaman çalışır uygulamayı başlatmak.
+   > Karakterleri gibi kaldırmak için Otomasyon kimliği başına kesim **P ~**. Bu karakterleri kırpma yoksa, test oluşturur. bir `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` olduğunda çalışır uygulamayı başlatmak.
 
-1. Ardından, kod düğmesini tıklatarak test yöntemine ekleyin. Sonra satırındaki `XamlWindow.Launch`, düğme denetimi dokunmak hareketi ekleyin:
+1. Ardından, düğmesine tıklamanız test yöntemi için kod ekleyin. Sonra satırında `XamlWindow.Launch`, düğme denetimine dokunma hareketi ekleyin:
 
    ```csharp
    Gesture.Tap(this.UIMap.UIUWPAppWindow.UIButtonButton);
@@ -161,7 +161,7 @@ Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış 
    Gesture.Tap(Me.UIMap.UIUWPAppWindow.UIButtonButton)
    ```
 
-   Tam kod ekledikten sonra `CodedUITestMethod1` test yöntemi aşağıdaki gibi görünmelidir:
+   Tam kod ekledikten sonra `CodedUITestMethod1` test yöntemi şu şekilde görünmelidir:
 
    ```csharp
    [TestMethod]
@@ -193,29 +193,29 @@ Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış 
        End Sub
    ```
 
-1. Test projeyi oluşturun ve sonra açmak **Test Gezgini** seçerek **Test** > **Windows** > **Test Gezgini**.
+1. Test projesi oluşturmak ve ardından açın **Test Gezgini** seçerek **Test** > **Windows** > **Test Gezgini**.
 
 1. Seçin **tümünü Çalıştır** testi çalıştırmak için.
 
-   Uygulama açar, düğme dokunduğunuz ve textbox's **metin** özelliği doldurulur. Assert yöntemini textbox's doğrular **metin** özelliği.
+   Uygulama açılır, düğmeye dokunulduğunda ve metin kutusunun **metin** özelliği doldurulur. Assert yöntemini metin kutusunun doğrular **metin** özelliği.
 
-   Test tamamlandıktan sonra **Test Gezgini** test geçirilen görüntüler.
+   Test tamamlandıktan sonra **Test Gezgini** geçilen testleri gösterir.
 
-   ![Geçirilen test Test Gezgini'nde görüntüler](../test/media/test-explorer-coded-ui-test-passed.png)
+   ![Geçen test Test Gezgini'nde görüntüler.](../test/media/test-explorer-coded-ui-test-passed.png)
 
 ## <a name="q--a"></a>Soru - Yanıt
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Kodlanmış UI testi iletişim oluşturmak kodunda my kodlanmış UI testini kaydetme seçeneği neden göremiyorum?
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?
 
-**A**: kaydetme seçeneği UWP uygulamaları için desteklenmiyor.
+**A**: kaydedilecek seçenek UWP uygulamaları için desteklenmez.
 
-### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>S: kodlanmış UI testi için UWP uygulamalarım üzerinde WinJS oluşturabilirim?
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Kodlanmış UI testi için UWP uygulamalarım WinJS üzerinde oluşturabilirim miyim?
 
-**A**: Hayır, yalnızca XAML tabanlı uygulamaları desteklenmez.
+**A**: Hayır, yalnızca XAML tabanlı uygulamalar desteklenir.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>S: neden UIMap.Designer dosyasındaki kodu değiştirilemez?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>UIMap.Designer dosyasındaki kodu neden değiştiremiyorum?
 
-**A**: herhangi bir kod, yaptığınız değişiklikleri *UIMapDesigner.cs* dosyanın üzerine kod kullanarak oluşturduğunuz her zaman **kodlanmış UI Test derleyicisini**. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, kopyalayın *UIMap.cs* dosya ve yeniden adlandırın. *UIMap.cs* dosya, yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir *UIMapDesigner.cs* dosya. Özgün yönteminde başvurusunu kaldırın *CodedUITest.cs* dosya ve adlandırılan yöntem adıyla değiştirin.
+**A**: herhangi bir kod, yaptığınız değişiklikler *UIMapDesigner.cs* dosyanın üzerine kod kullanarak oluşturduğunuz her zaman **kodlanmış UI Test Oluşturucusu**. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, kopyalayın *UIMap.cs* dosya ve yeniden adlandırın. *UIMap.cs* dosya, yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir *UIMapDesigner.cs* dosya. Orijinal yönteme başvuruyu kaldırmak *CodedUITest.cs* dosya ve adlandırılan yöntem adıyla değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

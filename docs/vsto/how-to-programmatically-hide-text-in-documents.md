@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f90a467fcb8fa22a93774aa22427976e60875168
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257351"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677789"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Nasıl yapılır: belgelerde metni program aracılığıyla gizleme
-  Bir belgedeki metin ayarlayarak gizleyebilirsiniz <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> özelliği <xref:Microsoft.Office.Interop.Word.Range.Font%2A> belirli bir metin aralığını için.  
+  Bir belgede metin ayarlayarak gizleyebilirsiniz <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> özelliği <xref:Microsoft.Office.Interop.Word.Range.Font%2A> metin belirli bir dizi.  
   
- Örneğin, geçici olarak içindeki metni gizleyebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> (belge düzeyi özelleştirmelerinde) veya bir <xref:Microsoft.Office.Interop.Word.Bookmark> (eklentide bir VSTO) bir belgeyi yazıcıya göndermeden önce.  
+ İçinde bulunan metinde Örneğin, geçici olarak gizleyebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> (belge düzeyi özelleştirmesindeki) veya bir <xref:Microsoft.Office.Interop.Word.Bookmark> (içinde bir VSTO eklenti) bir belgeyi yazıcıya göndermeden önce.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Belge yazdırılırken bir yer işareti denetimi metni gizleme  
+## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Belgeyi yazdırılırken yer işareti denetimdeki metin gizlemek için  
   
-1.  Belirli bir aralıktaki tüm metni gizleyen bir yordam oluşturun.  
+1.  Belirtilen bir aralıktaki tüm metni gizleyen bir yordamı oluşturun.  
   
      [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
      [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]  
@@ -42,20 +42,20 @@ ms.locfileid: "35257351"
      [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
      [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]  
   
-3.  Bir yer işaretine aralığını geçirmek `HideText` yöntemi, belgeyi yazdırmayı ve daha sonra aynı aralığa geçirin `UnhideText` yöntemi.  
+3.  Yer işaretine aralığını geçirmek `HideText` yöntemi, belgeyi yazdır ve ardından aynı aralığa geçmesi `UnhideText` yöntemi.  
   
-     Aşağıdaki kod örneği bir belge düzeyi özelleştirmelerinde kullanılabilir. Bu örneği kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.  
+     Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir. Bu örneği kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.  
   
      [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]
      [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
   
-     Aşağıdaki kod örneği, bir VSTO eklenti kullanılabilir. Bu örnek etkin belgeyi kullanır. Örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.  
+     Aşağıdaki kod örneği, VSTO eklentisi içinde kullanılabilir. Bu örnek etkin belgeyi kullanır. Örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
   
 ## <a name="compile-the-code"></a>Kod derleme  
- Bu kod örneği belge içerdiğini varsayar bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi (belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Bookmark> adlı denetimi (VSTO eklenti) `bookmark1`.  
+ Bu kod örneği, belgenin içerdiğini varsaymaktadır bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi (belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Bookmark> adlı denetimi (bir VSTO eklenti) `bookmark1`.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: program aracılığıyla belgeleri yazdırma](../vsto/how-to-programmatically-print-documents.md)   

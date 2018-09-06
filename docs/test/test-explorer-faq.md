@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054562"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775110"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini hakkında SSS
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054562"
 
   Derleme tabanlı bulma içinde açık olduğundan emin olun ve projenizi **Araçları** > **seçenekleri** > **Test**.
 
-  [Gerçek zamanlı test bulma](https://go.microsoft.com/fwlink/?linkid=862824) kaynak tabanlı test bulma. Teoriler, özel bağdaştırıcı, özel özellikleri kullanan testler bulamaz `#ifdef` deyimleri, çalışma zamanında tanımlanmadığından vb. Bu testler doğru şekilde bulunmak bir derleme gereklidir. 15.6 Preview sürümlerinde, derleme tabanlı bulma (Geleneksel Bulucu) yalnızca derlemeler sonra çalışır. Bu ayar, while gibi çok testleri gerçek zamanlı Test bulma bulur anlamına gelir. düzenlemekte olduğunuz ve derleme tabanlı bulma dinamik olarak tanımlanan testleri, derleme sonrası görünmesini sağlar. Gerçek zamanlı Test bulma yanıt hızını artırır ancak durağan derleme sonrası tam ve doğru sonuçlar elde izin verir.
+  [Gerçek zamanlı test bulma](https://go.microsoft.com/fwlink/?linkid=862824) kaynak tabanlı test bulma. Teoriler, özel bağdaştırıcı, özel özellikleri kullanan testler bulamaz `#ifdef` deyimleri, çalışma zamanında tanımlanmış için vb. Bu testler doğru şekilde bulunmak bir derleme gereklidir. Visual Studio 2017 sürüm 15.6 ve daha sonra derleme tabanlı bulma (Geleneksel Bulucu) yalnızca derlemeler sonra çalışır. Bu ayar, gerçek zamanlı Test bulma bulur, while gibi çok testleri anlamına gelir düzenlediğiniz ve derleme tabanlı bulma dinamik olarak tanımlanan testleri, derleme sonrası görünmesini sağlar. Gerçek zamanlı Test bulma yanıt hızını artırır ancak durağan derleme sonrası tam ve doğru sonuçlar elde izin verir.
 
 ## <a name="test-explorer--plus-symbol"></a>Test Gezgini '+' (sembolü artı)
 **Ne yaptığını '+' (artı) Test Gezgini ortalama ilk satırda görünen simge?**
@@ -93,6 +93,31 @@ Tüm test projelerinde, .csproj dosyasında kendi .NET test bağdaştırıcısı
 **Test projesi {} herhangi bir .NET NuGet bağdaştırıcı başvurmuyor. Test bulma veya yürütme bu proje için çalışmayabilir. Her çözüm .NET test projesinde test bağdaştırıcısı, NuGet başvuru önerilir.**
 
 Test bağdaştırıcısı uzantılarından kullanmak yerine, projeleri test bağdaştırıcısı NuGet paketlerini kullanmak için gerekli değildir. Bu büyük ölçüde performansı artırır ve sürekli tümleştirme ile daha az sorunları neden olur. .NET Test bağdaştırıcısı uzantısı kullanımdan kaldırma hakkında daha fazla bilgiyi [sürüm notları](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+
+> [!NOTE]
+> NUnit 3 test bağdaştırıcısı'na yükseltemedi olan ve NUnit 2 Test bağdaştırıcısı kullanıyorsanız, bu yeni Visual Studio sürümünde 15,8 bulma davranışı kapatabilirsiniz **Araçları** > **seçenekleri**  >  **Test**. 
+
+  ![Araçlar seçeneklerinde Gezgini bağdaştırıcısı davranışını sınama](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>UWP TestContainer bulunamadı
+**UWP testlerimi artık Visual Studio 2017 sürüm 15.7 ve üzeri yürütülür.**
+
+Son UWP test projeleri, test uygulamaları tanımlamak için daha iyi performans sağlayan bir test platformu yapı özelliğini belirtin. Visual Studio sürüm 15.7 şu hatayla karşılaşabilirsiniz önce başlatılmış bir UWP test projesi varsa **çıkış** > **testleri**:
+
+**System.AggregateException: Bir veya daha fazla hata oluştu. System.InvalidOperationException--->: şu TestContainer bulunamadı {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider adresindeki <GetTestContainerAsync>d__61.MoveNext()**
+  
+Bu sorunu gidermek için:
+- Test proje derleme özelliklerini aşağıdaki gibi güncelleştirin:
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- TestPlatform SDK sürümü aşağıdaki gibi güncelleştirin:
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>Özellik bayraklarını kullanarak
 **Yeni test özellikleri denemek için özellik bayraklarını üzerinde nasıl kapatabilir miyim?**

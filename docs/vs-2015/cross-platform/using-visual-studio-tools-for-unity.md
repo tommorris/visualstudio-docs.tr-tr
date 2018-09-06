@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 95624aaf172000480bf9c3d4c2650e0e837272c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 036a3a8b3e3c055325f1062a39ad439160378684
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631017"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775539"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 |Hızlı MonoBehavior Sihirbazı'nı açın|**Ctrl+Shift+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
 |Unity proje Gezgini'ni açın|**Alt+Shift+E**|**View.UnityProjectExplorer**|  
 |Unity belgeleri erişimi|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|  
-|Unity (oynatıcı veya düzenleyici) hata ayıklayıcının|***Varsayılan yok***|**Debug.AttachUnityDebugger**|  
+|Unity (oynatıcı veya düzenleyici) hata ayıklayıcının|**_Varsayılan yok_**|**Debug.AttachUnityDebugger**|  
   
  Varsayılan beğenmezseniz kısayol tuş birleşimleri değiştirebilirsiniz. Bunun nasıl değiştirileceği hakkında daha fazla bilgi için bkz: [belirleme ve Visual Studio'daki klavye kısayollarını özelleştirme](https://msdn.microsoft.com/library/5zwses53.aspx).  
   

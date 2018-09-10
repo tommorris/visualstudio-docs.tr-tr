@@ -94,7 +94,7 @@
 ## [Çözüm Gezgini Filtresini Genişletme](extending-the-solution-explorer-filter.md)
 ## [Bir Çözümde Proje Yüklemeyi Yönetme](managing-project-loading-in-a-solution.md)
 # [Özel Proje ve Öğe Şablonları Oluşturma](creating-custom-project-and-item-templates.md)
-## [Visual Studio "15" için Özel Proje ve Öğe Şablonlarını Yükseltme](upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md)
+## [Visual Studio "15" için Özel Proje ve Öğe Şablonlarını Yükseltme](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
 ## [Nasıl Yapılır: Sihirbazları Proje Şablonlarıyla Kullanma](how-to-use-wizards-with-project-templates.md)
 ## [Visual Studio Şablon Şeması Başvurusu](visual-studio-template-schema-reference.md)
 ### [AppliesTo Öğesi (Visual Studio Şablonları)](appliesto-element-visual-studio-templates.md)

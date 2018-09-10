@@ -13,12 +13,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4888bc254f0b86332829db3d88e19095eafb35f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38281327c6a3d343418a74c85f61b9b1175b5d01
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631343"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124995"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Hangi&#39;'teki Visual Studio 2015 SDK'sı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Bu konuda en son sürümünü şu yolda bulunabilir: [ne&#39;yeni Visual Studio 
 Visual Studio SDK, Visual Studio 2015, Visual Studio 2015 güncelleştirme ve Visual Studio "15" için aşağıdaki yeni ve güncelleştirilmiş özelliklere sahiptir.  
   
 ## <a name="visual-studio-15-preview-2"></a>Visual Studio "15" Preview 2  
- Başlangıç Visual Studio "15" Preview 4, özel Proje ve öğe şablonları için tarama artık gerçekleştirilir. Bunun yerine, uzantı yükleme konumu olarak bu şablonları tanımlamak, şablon bildirim dosyalarını sağlamanız gerekir. Preview 2 yükleme VSIX uzantılarınızı güncelleştirmek için kullanabilirsiniz. Uzantınızı bir MSI kullanarak dağıtırsanız, şablon bildirim dosyalarını el ile oluşturmanız gerekir. Daha fazla bilgi için [özel Proje ve öğe şablonlarını yükseltme Visual Studio "15" için](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md). Şablon bildirim şeması belgelenen [Visual Studio şablon bildirim şeması başvurusu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
+ Başlangıç Visual Studio "15" Preview 4, özel Proje ve öğe şablonları için tarama artık gerçekleştirilir. Bunun yerine, uzantı yükleme konumu olarak bu şablonları tanımlamak, şablon bildirim dosyalarını sağlamanız gerekir. Preview 2 yükleme VSIX uzantılarınızı güncelleştirmek için kullanabilirsiniz. Uzantınızı bir MSI kullanarak dağıtırsanız, şablon bildirim dosyalarını el ile oluşturmanız gerekir. Daha fazla bilgi için [özel Proje ve öğe şablonlarını yükseltme Visual Studio "15" için](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Şablon bildirim şeması belgelenen [Visual Studio şablon bildirim şeması başvurusu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
 ## <a name="vs-2015-sdk-update-1"></a>VS 2015 SDK'sı güncelleştirme 1  
  Güncelleştirme 1 iyi renk temaları ve Visual Studio Görüntü hizmeti çalışma uzantınız yardımcı olacak araçlar içerir.  

@@ -2,7 +2,7 @@
 title: Bir Node.js ve React uygulaması oluşturma
 description: Bu öğreticide, Visual Studio için Node.js araçları kullanarak uygulama oluşturma
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 09/06/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567148"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44125008"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve React uygulaması oluşturma
 
@@ -31,6 +31,30 @@ Bu öğreticide, şunların nasıl yapılır:
 > * React kodu uygulamanıza ekleyin
 > * JSX derleyin
 > * Hata ayıklayıcının
+
+## <a name="before-you-begin"></a>Başlamadan önce
+
+İşte bazı temel kavramlara tanıtmak için hızlı bir SSS.
+
+### <a name="what-is-nodejs"></a>Node.js nedir?
+
+Node.js sunucu tarafı JavaScript yürüten bir sunucu tarafı JavaScript çalışma zamanı ortamıdır.
+
+### <a name="what-is-npm"></a>Npm nedir?
+
+npm Node.js için varsayılan paket yöneticisidir. Paket Yöneticisi yayımlamak ve Node.js kitaplıklarının kaynak kodu paylaşmak programcıları için kolaylaştırır ve yükleme, güncelleştirme ve kaldırma kitaplıklarının kolaylaştırmak için tasarlanmıştır.
+
+### <a name="what-is-react"></a>React nedir?
+
+React kullanıcı Arabirimi oluşturmak için ön uç bir çerçevedir.
+
+### <a name="what-is-jsx"></a>JSX nedir?
+
+JSX genellikle kullanıcı Arabirimi öğeleri tanımlamak için React ile kullanılan bir JavaScript söz dizimi bir uzantıdır. Bir tarayıcıda çalıştırmadan önce transpiled düz JavaScript için JSX kodu olmalıdır.
+
+### <a name="what-is-webpack"></a>Web nedir?
+
+Web paketleri JavaScript dosyaları, bir tarayıcıda çalıştırabilirsiniz. Ayrıca dönüştürün veya diğer kaynakları ve varlıklar paketi yükleyebilir. Genellikle, bir derleyici, TypeScript, ya da Fish gibi düz JavaScript'e derleyin JSX veya TypeScript kodu belirtmek için kullanılır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -62,13 +86,15 @@ Bu öğreticide, şunların nasıl yapılır:
 
     ![Çözüm Gezgini'nde node.js projesi](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * Kalın yazı tipinde vurgulanmış olduğu içinde verdiğiniz ad kullanarak projenize **yeni proje** iletişim kutusu. Dosya sisteminde, bu proje tarafından temsil edilen bir *.njsproj* proje klasörünüzdeki dosya. Özellikler ve projeye sağ tıklayıp seçerek projeyle ilişkili ortam değişkenlerini ayarlayabilirsiniz **özellikleri**. Proje dosyası Node.js projesi kaynağına özel değişiklikler yapmaz olduğundan diğer geliştirme araçlarıyla gidiş dönüşü yapabilirsiniz.
+    (1) vurgulanmış **kalın** olduğunu size verdiği adını kullanarak projenize **yeni proje** iletişim kutusu. Dosya sisteminde, bu proje tarafından temsil edilen bir *.njsproj* proje klasörünüzdeki dosya. Özellikler ve projeye sağ tıklayıp seçerek projeyle ilişkili ortam değişkenlerini ayarlayabilirsiniz **özellikleri**. Proje dosyası Node.js projesi kaynağına özel değişiklikler yapmaz çünkü diğer geliştirme araçlarıyla gidiş dönüşü yapabilirsiniz.
 
-    * En üst düzeyinde ve proje ile aynı ada sahip varsayılan bir çözümdür. Tarafından temsil edilen bir çözüm, bir *.sln* dosya diskte, bir veya daha fazla ilgili proje için bir kapsayıcıdır.
+    (2) en üst düzeyinde ve proje ile aynı ada sahip varsayılan bir çözümdür. Tarafından temsil edilen bir çözüm, bir *.sln* dosya diskte, bir veya daha fazla ilgili proje için bir kapsayıcıdır.
 
-    * Npm düğüm, tüm yüklü npm paketlerini gösterir. İçin arama yapın ve iletişim kutusunu kullanarak npm paketlerini yüklemek için npm düğümünü sağ tıklayabilirsiniz.
+    (3) npm düğüm tüm yüklü npm paketlerini gösterir. Npm için arama yapın ve bir iletişim kutusu veya yükleme kullanarak npm paketlerini yükle ve güncelleştirme ayarlarını kullanarak paketleri düğüme sağ tıklayabilirsiniz *package.json* ve npm düğümünde Seçenekleri'ne sağ tıklayın.
 
-    * Proje dosyaları gibi *server.js* proje düğümü altında gösterilir. *Server.js* proje başlangıç dosyasıdır.
+    (4) *package.json* tarafından npm Paket bağımlılıklarını ve yerel olarak yüklü paketler için paket sürümlerini yönetmek için kullanılan bir dosya. Bu dosya hakkında daha fazla bilgi için bkz. [package.json yapılandırma](../javascript/configure-packages-with-package-json.md)
+
+    (5) proje dosyaları gibi *server.js* proje düğümü altında gösterilir. *Server.js* proje başlangıç dosyasını ve diğer bir deyişle neden bunu görünür **kalın**. Başlangıç dosyası bir proje dosyasında sağ tıklatıp seçerek ayarlayabilirsiniz **Node.js başlangıç dosyası olarak ayarla**.
 
 ## <a name="add-npm-packages"></a>Npm paketleri ekleme
 
@@ -95,26 +121,26 @@ Bu uygulama düzgün şekilde çalışması için npm modüllerini sayısı gere
 
     Projenin *package.json* dosyasını, Paket sürümü dahil olmak üzere yeni paket bilgileriyle güncelleştirilir.
 
-1. İçin arama yapın ve paketleri geri kalanını eklemek için kullanıcı arabirimini kullanmak yerine teker teker yapıştırın aşağıdaki kodu package.json içinde. Bunu yapmak için değiştirin `dependencies` bölümü bu kod ile:
+1. İçin arama yapın ve paketleri geri kalanını eklemek için kullanıcı arabirimini kullanmak yerine teker teker yapıştırın aşağıdaki kodu package.json içinde. Bunu yapmak için bir `dependencies` bölümü bu kod ile:
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.3",
+      "path": "~0.12.7",
+      "react": "~16.4.2",
+      "react-dom": "~16.4.2",
+      "ts-loader": "~4.5.0",
+      "typescript": "~2.9.2",
+      "webpack": "~4.17.1",
+      "webpack-cli": "~2.1.5"
     }
     ```
 
-    Yoksa hiçbir `dependencies` bölümü boş şablonu, sürümünde, onu Değiştir yerine mevcut bölüme eklemeniz gerekir.
+    Zaten varsa bir `dependencies` yalnızca boş şablonu sürümünüz bölümde yukarıdaki JSON kod ile değiştirin. Bu dosyayı kullanma hakkında daha fazla bilgi için bkz. [package.json yapılandırma](../javascript/configure-packages-with-package-json.md)
 
 1. Sağ **npm** projenizdeki düğüm ve **güncelleştirme npm paketleri**.
 
-    Alt bölmede seçin **çıkış** paketleri yükleme ilerleme durumunu görmek için penceresi. Yükleme birkaç dakika sürebilir ve sonuçları hemen göremeyebilirsiniz. Çok seçtiğinizden emin olun, bir çıktı görmeniz **Npm** içinde **çıktıyı Göster** alanındaki **çıkış** penceresi.
+    Alt bölmede seçin **çıkış** paketleri yükleme ilerleme durumunu görmek için penceresi. Yükleme birkaç dakika sürebilir ve sonuçları hemen göremeyebilirsiniz. Çıktıyı görmek için seçtiğinizden emin olun **Npm** içinde **çıktıyı Göster** alanındaki **çıkış** penceresi.
 
     Bunlar yüklendikten sonra Çözüm Gezgini içinde görülen npm modüllerini aşağıdadır.
 
@@ -270,7 +296,7 @@ Bu basit bir uygulama için proje kök dizininde yeni proje dosyalarını ekleyi
 
     ![Web çalıştırın](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    Önceki çıkış yerine herhangi bir hata görürseniz, uygulamanızı çalışmadan önce çözmeniz gerekir. Npm Paket sürümü Bu öğreticide gösterilen sürümlerinden farklı ise, hataların bir kaynak olabilir. Hataları düzeltmek için bir önceki adımda gösterilen tam sürümünü kullanmaktır. Ayrıca, bir veya daha fazla bu paket sürümlerini kullanım dışıdır ve hata ile sonuçlanır, hataları düzeltmek için daha yeni bir sürümünü yüklemeniz gerekebilir.
+    Önceki çıkış yerine herhangi bir hata görürseniz, uygulamanızı çalışmadan önce çözmeniz gerekir. Npm Paket sürümü Bu öğreticide gösterilen sürümlerinden farklı ise, hataların bir kaynak olabilir. Hataları düzeltmek için bir önceki adımda gösterilen tam sürümünü kullanmaktır. Ayrıca, bir veya daha fazla bu paket sürümlerini kullanım dışıdır ve hata ile sonuçlanır, hataları düzeltmek için daha yeni bir sürümünü yüklemeniz gerekebilir. Kullanma hakkında bilgi için *package.json* npm paket sürümlerini denetlemek için bkz: [package.json yapılandırma](../javascript/configure-packages-with-package-json.md).
 
 1. Çözüm Gezgini'nde proje düğümünü sağ tıklatın ve seçin **Ekle** > **var olan bir klasörü**, ardından *dist* klasörü seçin  **Klasör seçin**.
 

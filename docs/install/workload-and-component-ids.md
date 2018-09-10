@@ -17,14 +17,16 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 5826191d4f963516d5645aec66e0fe76ba3f96e1
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 4565a757eb7f0f7362ec9710ffb5ca6ab7ba5695
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995936"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124937"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 iş yükü ve Bileşen kimlikleri
+
+**İçin güncelleştirilmiş [15,8 sürüm](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
 
 Sürüm adlarını aşağıdaki tabloda kullanılabilir iş yükü ve Bileşen kimlikleri komut satırını kullanarak Visual Studio'yu yükleyin veya bağımlılık VSIX bildirimi olarak belirtmek için gereksinim duyduğunuz görmek için tıklayın.
 

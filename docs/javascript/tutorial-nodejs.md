@@ -13,19 +13,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff8d28a0fa6b8889dcc90632126f8b4dd75b70dc
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132012"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124924"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve Express uygulaması oluşturma
 Bu öğreticide Node.js ve Express kullanarak Visual Studio geliştirme için basit bir Node.js web uygulaması oluşturma, kod ekleyin, bazı IDE özelliklerini ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://visualstudio.microsoft.com).
 
 Bu öğreticide, şunların nasıl yapılır:
 > [!div class="checklist"]
-> * Bir Node.js projesi oluşturma
+> * Node.js projesi oluşturma
 > * Kod ekleyin
 > * Kodu düzenleme için IntelliSense'i kullanın
 > * Uygulamayı çalıştırma
@@ -85,7 +85,7 @@ Bu öğreticide, Node.js ve express uygulaması için kod içeren basit bir proj
 
     (3) npm düğüm tüm yüklü npm paketlerini gösterir. Npm için arama yapın ve bir iletişim kutusu veya yükleme kullanarak npm paketlerini yükle ve güncelleştirme ayarlarını kullanarak paketleri düğüme sağ tıklayabilirsiniz *package.json* ve npm düğümünde Seçenekleri'ne sağ tıklayın.
 
-    (4) *package.json* tarafından npm Paket bağımlılıklarını ve yerel olarak yüklü paketler için paket sürümlerini yönetmek için kullanılan bir dosya.
+    (4) *package.json* tarafından npm Paket bağımlılıklarını ve yerel olarak yüklü paketler için paket sürümlerini yönetmek için kullanılan bir dosya. Bu dosya hakkında daha fazla bilgi için bkz. [package.json yapılandırma](../javascript/configure-packages-with-package-json.md)
 
     (5) proje dosyaları gibi *app.js* proje düğümü altında gösterilir. *app.js* proje başlangıç dosyasını ve diğer bir deyişle neden bunu görünür **kalın**. Başlangıç dosyası bir proje dosyasında sağ tıklatıp seçerek ayarlayabilirsiniz **Node.js başlangıç dosyası olarak ayarla**.
 

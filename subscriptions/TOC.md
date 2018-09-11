@@ -17,7 +17,7 @@
 ## Abone Avantajlarını Kullanma
 ### Araçlar
 #### [Visual Studio IDE ](vs-ide-benefit.md)
-#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure DevOps Services](vs-azure-devops.md)
 #### [Azure Kredisi](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft ](vs-parasoft.md)

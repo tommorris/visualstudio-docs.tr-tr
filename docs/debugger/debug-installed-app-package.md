@@ -21,54 +21,54 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059359"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279566"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Yüklü uygulama paketi, Visual Studio (UWP) hata ayıklama
 
-Tüm yüklü uygulama paketlerini tıklayarak ayıklayabilirsiniz **hata ayıklama > diğer hata ayıklama hedeflerini > yüklü uygulama paketi Debug**. Hata ayıklama bu yöntem, bu aygıtlar üzerinde Evrensel Windows uygulamaları (UWP) için kullanılabilir:
+Tıklayarak tüm yüklü uygulama paketinin hatalarını ayıklayabilir **hata ayıklama > diğer hata ayıklama hedefleri > yüklenen uygulama paketinin hatalarını ayıklama**. Hata ayıklama bu yöntem, bu cihazlara Evrensel Windows uygulamaları (UWP) için kullanılabilir:
 
 * Windows 10 (telefonlarda desteklenmez)
 * XBox
 * HoloLens
 * IOT
 
-Bu özellikler hakkında daha fazla bilgi için blog için güncelleştirmelerini gönderisine bakın [hata ayıklama, uygulama paketleri yüklü](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) ve üzerindeki posta [Evrensel Windows uygulamaları (UWP) oluşturma](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
+Bu özellikler hakkında daha fazla bilgi için güncelleştirmeler için blog gönderisine bakın [hata ayıklama yüklü uygulama paketleri](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) ve gönderi [Evrensel Windows uygulamaları (UWP) oluşturma](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
-## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>Bir uygulama paketi yüklü veya yerel makine ya da cihaz üzerinde çalışan uygulama hata ayıklama
+## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>Yüklü uygulama paketi ya da bir yerel makine veya cihazda çalışan uygulama hata ayıklama
 
-1. Visual Studio'da açıkken, UWP projesi ile tıklatın **hata ayıklama > diğer hata ayıklama hedeflerini > yüklü uygulama paketi Debug**.
+1. Visual Studio'da açın, UWP projesi ile tıklayın **hata ayıklama > diğer hata ayıklama hedefleri > yüklenen uygulama paketinin hatalarını ayıklama**.
 
-2. Şunlardan birini seçin **yerel makine** veya **aygıt**.
+2. Şunlardan birini seçin **yerel makine** veya **cihaz**.
 
-     Seçerseniz **aygıt**, bilgisayarınızın Windows 10 cihaz için fiziksel olarak bağlı olması gerekir.
+     Seçerseniz **cihaz**, bilgisayarınızın bir Windows 10 cihazına fiziksel olarak bağlı olması gerekir.
 
      ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
 
-     Şu anda çalışan yüklü altında uygulama paketleri gösteri **çalıştıran** düğümü. Göster altında çalışan olmayan uygulama paketlerinin yüklü **çalışmıyor**.
+     Yüklü uygulama paketleri gösterisini altında çalışmakta **çalıştıran** düğümü. Show altında çalışan olmayan uygulama paketlerinin yüklü **çalışmıyor**.
 
-3. Altında hata ayıklamak istediğiniz uygulamanın adını seçin **çalıştıran** veya **çalışmıyor** ve **Başlat** veya uygulama zaten çalışıyorsa seçin **Attach**.
+3. Altında hata ayıklamak istediğiniz uygulamanın adını seçin **çalıştıran** veya **çalışmıyor** ve **Başlat** veya uygulama zaten çalışıyorsa seçin **Ekle**.
 
-     Seçerseniz **değil başlatın, ancak başlatıldığında kodum hata ayıklama**, bu özel aynı anda başlattığında uygulamanıza eklemek Visual Studio hata ayıklayıcısı neden olur. Bu denetim yolları hata ayıklamak için etkili bir yoldur [farklı başlatma yöntemleri](/windows/uwp/xbox-apps/automate-launching-uwp-apps), özel parametrelerle Protokolü etkinleştirme gibi.
+     Seçerseniz **başlatma, ancak başlatıldığında kodumda Hata Ayıkla**, bu özel teker teker başlattığınızda uygulamanıza eklemek Visual Studio hata ayıklayıcı neden olur. Bu denetim yolları hata ayıklamak için etkili bir yoludur [farklı başlatma yöntemleri](/windows/uwp/xbox-apps/automate-launching-uwp-apps), özel parametrelerle protokolünü etkinleştirme gibi.
 
 > [!NOTE]
-> Visual Studio ayrıca iliştirebilirsiniz herhangi çalışan bir UWP uygulaması işlem seçerek **hata ayıklama**ve ardından **ekleme işlemi için**. Bir çalışan işlemine iliştirme özgün Visual Studio projesi gerektirmez, ancak işlemin simgeleri yüklenirken önemli ölçüde özgün kodunu sahip olmayan bir işlem hata ayıklama sırasında yardımcı olur.
+> Visual Studio ayrıca iliştirebilirsiniz çalışan bir UWP uygulaması işleme seçerek **hata ayıklama**, ardından **iliştirme**. Çalışan bir işleme iliştirilmeyi özgün Visual Studio projesini gerektirmez, ancak işlemin semboller yükleniyor önemli ölçüde için özgün koda sahip olmayan bir işlemin hatalarını ayıklamaya yardımcı.
   
 ## <a name="remote"></a> Uzak bir bilgisayarda yüklü olan veya çalışan uygulama hata ayıklama 
 
-İlk olarak uzak bir bilgisayarda yüklü uygulama paketi hata ayıklamasını yaparken, Visual Studio hedef cihaz için Uzak araçları doğru sürümünü yükler. Hedef aygıt, bir Windows 10 bilgisayarı, XBox, HoloLens ve IOT cihazı olmalıdır.
+Uzak bir bilgisayarda yüklü uygulama paketinin ilk kez hata ayıklaması yaparken, Visual Studio hedef cihazınız için Uzak Araçlar'ın doğru sürümü yükler. Hedef cihazınız Windows 10 bilgisayarı, XBox, HoloLens ve IOT cihazı olması gerekir.
 
-1. Windows 10 Cihazınızda etkinleştirmek [geliştirici modunu](/windows/uwp/get-started/enable-your-device-for-development).
+1. Windows 10 Cihazınızda etkinleştirmek [Geliştirici modu](/windows/uwp/get-started/enable-your-device-for-development).
 
-2. Pre-oluşturanın güncelleştirme sürümü Windows 10 çalıştıran ilk el ile bir uzak Bilgisayara bağlanıyorsanız [yükleyin ve uzaktan hata ayıklayıcı başlatın](../debugger/remote-debugging.md).
+2. Windows 10 güncelleştirme sürümü öncesi-oluşturanın önce el ile çalışan uzak bir Bilgisayara bağlanıyorsanız [yükleme ve uzaktan hata ayıklayıcıyı başlatma](../debugger/remote-debugging.md).
 
-     XBox, HoloLens ve IOT cihaz Windows 10 oluşturanın güncelleştirme çalıştıran ve Windows cihazları için uzaktan hata ayıklayıcı el ile yüklemeniz gerekmez. Uygulamayı dağıttığınızda uzak araçları otomatik olarak yüklenir.
+     Bir XBox, HoloLens ve IOT cihaz ve Windows 10 Creator'ın Update çalıştıran Windows cihazlar için uzaktan hata ayıklayıcı el ile yüklemeniz gerekmez. Uzak Araçlar, uygulamayı dağıttığınızda otomatik olarak yüklenir.
 
-3. Tıklatın **hata ayıklama > diğer hata ayıklama hedeflerini > hata ayıklama yüklü uygulama paketi**.
+3. Tıklayın **hata ayıklama > hata ayıklama hedefi sayısı diğer > yüklenen uygulama paketinin Hatalarını Ayıkla**.
 
 4. İlk açılan listeden seçin **uzak makine**.
 
@@ -76,27 +76,27 @@ Bu özellikler hakkında daha fazla bilgi için blog için güncelleştirmelerin
 
      ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
 
-     Bilgisayar adını kullanarak bağlanamıyorsa (seçtiğiniz sonra **Başlat**), IP adresi kullanın. IP adresi, XBox, HoloLens ve IOT cihazlar için kullanın.
+     Bilgisayar adını kullanarak bağlanamıyorsa (seçtiğiniz sonra **Başlat**), bunun yerine IP adresi kullanın. IP adresi, XBox, HoloLens ve IOT cihazlar için kullanın.
 
-5. Bir seçenek olarak seçerek kimlik doğrulaması yapmayı seçin **kimlik doğrulama modu**.
+5. Bir seçenek belirleyerek kimlik doğrulaması yapmayı seçin **kimlik doğrulama modu**.
 
-    Çoğu uygulamalar için varsayılan değeri tutmak **Evrensel (şifrelenmemiş Protokolü)**.
+    Çoğu uygulama için varsayılan değer tutmak **Evrensel (şifrelenmemiş Protokolü)**.
 
-6. Altında hata ayıklamak istediğiniz uygulamayı seçin ve **çalıştıran** veya **çalışmıyor** ve **Başlat** veya (çalışan uygulamalar) **Attach**.
+6. Altında hata ayıklamak istediğiniz uygulamanın adını seçin **çalıştıran** veya **çalışmıyor** ve **Başlat** veya (çalışan uygulamalar) **iliştirme**.
 
-     Seçerseniz **değil başlatın, ancak başlatıldığında kodum hata ayıklama**, bu özel aynı anda başlattığınızda, uygulama paketi eklemek Visual Studio hata ayıklayıcısı neden olur. Bu denetim yolları hata ayıklamak için etkili bir yoldur [farklı başlatma yöntemleri](/windows/uwp/xbox-apps/automate-launching-uwp-apps), özel parametrelerle Protokolü etkinleştirme gibi.
+     Seçerseniz **başlatma, ancak başlatıldığında kodumda Hata Ayıkla**, bu özel teker teker başlattığınızda, uygulama paketi için Visual Studio hata ayıklayıcısının neden olur. Bu denetim yolları hata ayıklamak için etkili bir yoludur [farklı başlatma yöntemleri](/windows/uwp/xbox-apps/automate-launching-uwp-apps), özel parametrelerle protokolünü etkinleştirme gibi.
 
-     İlk kez bağlı bir XBox, HoloLens ve IOT cihazda yüklü uygulama paketi hata ayıklamasını yaparken, Visual Studio uzaktan hata ayıklayıcı hedef cihazınız için doğru sürümünü yükler. Bu işlem biraz zaman alabilir ve bir ileti görürsünüz ``Starting remote debugger`` bu sürerken.
+     İlk kez bağlı bir XBox, HoloLens ve IOT cihazda yüklü uygulama paketinin hata ayıklaması yaparken, Visual Studio uzaktan hata ayıklayıcı hedef cihazınız için doğru sürümünü yükler. Bu işlem biraz zaman alabilir ve bir ileti görürsünüz ``Starting remote debugger`` bu gerçekleştiği sırada.
 
      > [!NOTE]
-> Sunmak, XBox veya HoloLens aygıt uygulama hata ayıklayıcısı ekli zaten çalışıyorsa, yeniden başlatılır.
+> Sunmak, XBox veya HoloLens cihaz uygulama zaten çalışıyorsa ayıklayıcıyı yeniden başlatılır.
 
 [Dağıtma ve hata ayıklama UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options). uzak dağıtımını UWP uygulamaları için Gelişmiş seçenekleri hakkında daha fazla bilgi için bkz. 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio’da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)  
- [Uzaktan hata ayıklama](../debugger/remote-debugging.md)  
- [Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
- [Uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md)  
- [Uzaktan hata ayıklama ve sorun giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)
+ [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)  
+ [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)  
+ [Windows Güvenlik Duvarı’nı Uzaktan Hata Ayıklama İçin Yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
+ [Uzaktan Hata Ayıklayıcı Bağlantı Noktası Atamaları](../debugger/remote-debugger-port-assignments.md)  
+ [Uzaktan Hata Ayıklama Hataları ve Sorun Giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)

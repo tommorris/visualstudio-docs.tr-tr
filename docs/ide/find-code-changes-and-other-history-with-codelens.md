@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c84314cf025652dac2670c19763ae069ea6865
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279769"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384207"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
@@ -66,7 +66,7 @@ Kodunuzun geçmişini, kodunuzu ne olduğunu görmek için inceleyin. Ya da önc
 
 - Team Foundation Server 2013 veya üzeri, Azure DevOps Services veya Git
 
-- [Skype Kurumsal'a](/skypeforbusiness/), veya Lync 2010 veya sonrası, kod düzenleyicisinden ekibinize başvurun
+- [Skype Kurumsal'a](/skypeforbusiness/) ekibinizin kod düzenleyicisinden başvurma
 
 Team Foundation sürüm denetimi (TFVC) veya Git ile depolanan C# veya Visual Basic kodu için sınıf ve yöntem düzeylerinde CodeLens ayrıntıları alın (*kod öğe düzeyinde* göstergeleri). Git deponuzu TfGit içinde barındırılıyorsa, aynı zamanda TFS iş öğelerinin bağlantılarını alın.
 
@@ -80,7 +80,7 @@ Team Foundation sürüm denetimi (TFVC) veya Git ile depolanan C# veya Visual Ba
 
 Yaptıkları kod öğe düzeyi göstergelerini kimin kodunuzu ve hangi değişiklikleri görmenize olanak tanır. C# ve Visual Basic kodu için kod öğesi düzeyi göstergelerini kullanılabilir.
 
-Team Foundation Server veya Azure DevOps Hizmetleri'ndeki Team Foundation sürüm denetimi (TFVC) kullandığınızda gördüğünüz budur: 
+Team Foundation Server veya Azure DevOps Hizmetleri'ndeki Team Foundation sürüm denetimi (TFVC) kullandığınızda gördüğünüz budur:
 
 ![CodeLens: Kodunuzu tfvc'de Get değişiklik geçmişi](../ide/media/codelens-code-changes.png)
 
@@ -257,13 +257,13 @@ CodeLens dosya düzeyi göstergelerini açma ve kapatma köşeli çift ayraç si
 
 - Kodunuzu TFS içinde depolanır, kod dizini oluşturma kullanarak açık olduğundan emin olun [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Yapılandırma komut](/tfs/server/ref/command-line/tfsconfig-cmd).
 
-- TFS ilişkili göstergeler yalnızca iş öğeleri koda bağlandığında ve bağlantılı iş öğelerini açmak için izniniz olduğunda görünür. Sahip olduğunuzu onaylamak [takım üyesi izinlerine](/vsts/work/scale/multiple-teams).
+- DevOps ile ilgili göstergeler, yalnızca bağlı iş öğesi için kod ve bağlı iş öğelerini açma izniniz olduğunda görünür. Sahip olduğunuzu onaylamak [takım üyesi izinlerine](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Birim test göstergeleri, uygulama kodu birim testlere sahip olmadığında görünmez. Test durumu göstergeleri test projesinde otomatik olarak görüntülenir. Uygulama kodunuzun birim testleri var, ancak test göstergeleri görünmüyorsa biliyorsanız, çözümü derlemeyi deneyin (**Ctrl**+**Shift**+**B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>S: işleme iş öğesi ayrıntılarını neden göremiyorum?
 
-**Y:** CodeLens TFS'de iş öğeleri bulamadığından gerçekleşebilir. Bu olan projesine bağlı değilseniz denetleyin, çalışma öğeleri ve bunları görme iznine sahip iş öğeleri. İş öğesi ayrıntılarını da değil işleme açıklama TFS'de iş öğesi kimlikleri hakkında yanlış bilgi varsa göstermeyebilir.
+**Y:** Azure panoları veya TFS iş öğeleri CodeLens bulamadığından gerçekleşebilir. Bu olan projesine bağlı değilseniz denetleyin, çalışma öğeleri ve bunları görme iznine sahip iş öğeleri. İş öğesi ayrıntıları, yürütme açıklama iş öğesi kimlikleri Azure panoları veya TFS yanlış bilgi olup olmadığını da göstermeyebilir.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>S: neden Skype göstergeleri göremiyorum?
 
@@ -315,7 +315,7 @@ Klavyeyi kullanmak için:
 
      ![CodeLens takım göstergeleri menü öğesi Yenile](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **Test**: [kodunuz için birim testleri bulmak](#Find-unit-tests-for-your-code) yenilemek için **Test** göstergesi.
+- **Test**: [kodunuz için birim testleri bulmak](#associated-unit-tests) yenilemek için **Test** göstergesi.
 
 ### <a name="q-whats-local-version"></a>S: "Yerel sürüm" nedir?
 

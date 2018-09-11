@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567219"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384311"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod parçacıkları şema başvurusu
 
@@ -176,7 +176,7 @@ Grupları [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-ele
 
 |Alt öğe|Açıklama|
 |-------------------|-----------------|
-|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|İsteğe bağlı öğe. Tüm kod parçacığı verisi için üst öğe. Sıfır veya daha fazla olabilir `CodeSnippet` öğelerinde bir `CodeSnippets` öğesi.|
+|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet-element)|İsteğe bağlı öğe. Tüm kod parçacığı verisi için üst öğe. Sıfır veya daha fazla olabilir `CodeSnippet` öğelerinde bir `CodeSnippets` öğesi.|
 
 ## <a name="declarations-element"></a>Declarations öğesi
 
@@ -196,7 +196,7 @@ Bir kod parçacığının düzenleyebileceğiniz bölümlerini oluşturan deği�
 
 |Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Snippet öğesi](../ide/code-snippets-schema-reference.md#snippet)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
+|[Snippet öğesi](../ide/code-snippets-schema-reference.md#snippet-element)|Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kodu içerir.|
 
 ## <a name="default-element"></a>Default öğesi
 
@@ -279,7 +279,7 @@ IntelliSense Kod Parçacığı hakkında genel bilgileri belirtir.
 
 |Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet)|Tüm kod parçacığı verisi için üst öğe.|
+|[CodeSnippet öğesi](../ide/code-snippets-schema-reference.md#codesnippet-element)|Tüm kod parçacığı verisi için üst öğe.|
 
 ## <a name="helpurl-element"></a>HelpUrl öğesi
 
@@ -422,7 +422,7 @@ Değişmez değerler ve nesneler içeremez bir **kimliği** öğe değerini sele
 
 |Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[Declarations öğesi](../ide/code-snippets-schema-reference.md#declarations)|Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini ve nesnelerini içerir.|
+|[Declarations öğesi](../ide/code-snippets-schema-reference.md#declarations-element)|Kod parçacığının düzenleme yapabileceğiniz değişmez değerlerini ve nesnelerini içerir.|
 
 ## <a name="namespace-element"></a>Namespace öğesi
 
@@ -491,7 +491,7 @@ Kod parçacığının gerek duyduğu derleme başvuruları hakkındaki bilgileri
 
 |Üst öğe|Açıklama|
 |--------------------|-----------------|
-|[References öğesi](../ide/code-snippets-schema-reference.md#references)|İçin gruplandırma öğesi `Reference` öğeleri.|
+|[References öğesi](../ide/code-snippets-schema-reference.md#references-element)|İçin gruplandırma öğesi `Reference` öğeleri.|
 
 ## <a name="references-element"></a>References öğesi
 

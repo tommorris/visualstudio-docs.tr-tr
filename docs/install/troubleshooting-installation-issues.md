@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: db85353830e1d86773a870a410797bfb5c60ccd7
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511697"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384129"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme sorunlarını giderme ve yükseltme sorunları
 
@@ -56,7 +56,7 @@ Visual Studio yükleyicisi önyükleyici, Visual Studio Yükleyicisi'nin rest y�
 
 Bozuk dosyalarla ilgili olanlar gibi bazı durumlarda olay olarak denetlenmesi sırasında sorunlar yaşayabilirsiniz. Yardımımıza katkıda yardımcı olmak için lütfen aşağıdakileri yapın:
 
-1. Uygulamanızın Kurulum günlükleri toplayın. Bkz: [Visual Studio yükleme günlüklerini almak nasıl](#how-to-get-the-visual-studio-installation-logs) Ayrıntılar için.
+1. Uygulamanızın Kurulum günlükleri toplayın. Bkz: [Visual Studio yükleme günlüklerini almak nasıl](#how-to-get-visual-studio-installation-logs) Ayrıntılar için.
 2. Visual Studio Yükleyicisi'ni açın ve ardından **sorun bildir** Visual Studio geri bildirim aracını açın.
 ![Geri bildirim aracını açmak için geri bildirim sağlamak düğmesine sekme](media/report-a-problem.png)
 3. Sorun raporunuza bir başlık verin ve ilgili ayrıntıları sağlayın. Tıklayın **sonraki** gitmek için **ekleri** bölümüne ve ardından oluşturulan günlük dosyasını ekleyin (dosya altındadır genellikle `%TEMP%\vslogs.zip`).

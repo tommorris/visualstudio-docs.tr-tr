@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225090"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384298"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
 
@@ -69,7 +69,7 @@ Ardından, Visual Studio Yükleyicisi'ni yüklemek için önyükleyici dosyasın
 
   Bir kullanıcı hesabı denetimi bildirim alırsanız tıklayın **Evet**.
 
-2. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://go.microsoft.com/fwlink/?LinkID=824704). 
+2. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://privacy.microsoft.com/privacystatement). 
               **Devam**'a tıklayın.
 
    ![Lisans koşullarını ve gizlilik bildirimini](media/vs2017-privacy-and-license-terms.PNG "Microsoft lisans koşulları ve gizlilik bildirimi")
@@ -139,7 +139,7 @@ Daha fazla bilgi için [Visual Studio yükleme konumlarını değiştirme](chang
    Örneğin, [bir C++ uygulaması derleme](../ide/getting-started-with-cpp-in-visual-studio.md), tıklayın **yüklü**, genişletme **Visual C++** ve sonra oluşturmak istediğiniz C++ proje türü seçin. <br><br>
    İçin [bir C# uygulaması derleme](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), tıklayın **yüklü**, genişletme **Visual C#** ve ardından oluşturmak istediğiniz C# proje türünü seçin.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d57aa718216b796cf5e7f008186abedc709d108
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177012"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384168"
 ---
 # <a name="toolbox-html-tab"></a>Araç kutusu, HTML sekmesi
 
@@ -117,7 +117,7 @@ Sürüklediğinizde **giriş (parola)** Tasarım görünümü yüzeyine HTML bi�
 ```
 
 > [!IMPORTANT]
-> Uygulamanızın kullanıcı adları ve parolalar gönderiyorsa, sitenizi iletim şifrelemek için Güvenli Yuva Katmanı (SSL) kullanmak için yapılandırmanız gerekir. Daha fazla bilgi için bkz: "Bağlantı SSL ile güvenli hale getirme" [IIS işlemler Kılavuzu](http://go.microsoft.com/fwlink/?linkid=47856). Ayrıca, tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [ASP.NET Web sayfaları (Razor) sitelerinde kullanıcı girişini doğrulama](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Uygulamanızın kullanıcı adları ve parolalar gönderiyorsa, sitenizi iletim şifrelemek için Güvenli Yuva Katmanı (SSL) kullanmak için yapılandırmanız gerekir. Daha fazla bilgi için [bağlantıların güvenliğini sağlama](/previous-versions/tn-archive/bb418917(v=technet.10)). Ayrıca, tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [ASP.NET Web sayfaları (Razor) sitelerinde kullanıcı girişini doğrulama](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
 **Giriş (onay kutusu)**
 

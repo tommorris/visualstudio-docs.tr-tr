@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 491b01d87e4f1a9980143e9ffcc501b3cda7c922
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a9867acf2a0877322b85d25c3af781ccfdd3f58c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39189306"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44343165"
 ---
 1.  Cihaz veya sunucu, hata ayıklamak istediğiniz makine (yerine Visual Studio çalıştıran makinenin), uzak Araçlar'ın doğru sürümü alın.
 
@@ -21,8 +21,8 @@ ms.locfileid: "39189306"
     |-|-|-|
     |Visual Studio 2017 (en son sürüm)|[Uzak Araçlar](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Uzak Araçlar'ın en son sürümü, tüm Visual Studio 2017 sürümleri ile uyumludur. Her zaman eşleştirme (x 86, x64 veya ARM64), cihaz işletim sistemi sürümü indirin. Windows Server'da bkz [dosya indirme engellemesini](../../debugger/remote-debugging-unblock-file-download.md) uzak araçları indirmek Yardım.|
     |Visual Studio 2015|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 için Uzak Araçlar, My.VisualStudio.com kullanılabilir. İstenirse, ücretsiz katılın [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) program ya da Visual Studio abonelik kimliğinizle oturum açın. Windows Server'da bkz [dosya indirme engellemesini](../../debugger/remote-debugging-unblock-file-download.md) uzak araçları indirmek Yardım.|
-    |Visual Studio 2013|[Uzak Araçlar](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2013 belgeleri sayfasında indirin|
-    |Visual Studio 2012|[Uzak Araçlar](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2012 belgeleri sayfasında indirin|
+    |Visual Studio 2013|[Uzak Araçlar](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#Installing_the_Remote_Tools)|Visual Studio 2013 belgeleri sayfasında indirin|
+    |Visual Studio 2012|[Uzak Araçlar](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#BKMK_Installing_the_Remote_Tools)|Visual Studio 2012 belgeleri sayfasında indirin|
 
 2.  İndirme sayfasında işletim sisteminiz (x86, ARM ve ARM64 x64) eşleşen araçları sürümünü seçin ve uzak araçları indirmek.
 

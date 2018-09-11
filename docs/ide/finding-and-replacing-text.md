@@ -33,16 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624246"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384246"
 ---
 # <a name="find-and-replace-text"></a>Metin bulma ve değiştirme
 
-Bul ve Visual Studio düzenleyicisinde metin değiştirmek [Bul ve Değiştir](#find-and-replace-control) veya [dosyalarda Bul/Değiştir](#find-replace-in-files). Yeni Visual Studio 2017 sürüm 15,8, bulma değiştirin ve *bazı* kullanarak bir desen örneklerini  *[birden çok giriş işaretini seçimi](#multi-caret-selection)*.
+Bul ve Visual Studio düzenleyicisinde metin değiştirmek [Bul ve Değiştir](#find-and-replace-control) veya [dosyalarda Bul/Değiştir](#find-in-files-and-replace-in-files). Yeni Visual Studio 2017 sürüm 15,8, bulma değiştirin ve *bazı* kullanarak bir desen örneklerini  *[birden çok giriş işaretini seçimi](#multi-caret-selection)*.
 
 > [!TIP]
 > Değişkenler ve yöntemler gibi kod simgeleri yeniden adlandırma, daha iyi *[yeniden düzenleme](../ide/reference/rename.md)* Bul ve Değiştir kullanımı çok bunları. Yeniden düzenleme, akıllı ve Bul ve Değiştir körüne tüm örnekleri değiştirir ancak kapsam anlar.

@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4e642f06777fd66a12ebffe5a7f9c9aedacc4e
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: a20e248ae13fa15442c753dfce85b56620505d7d
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131950"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384181"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio belgeleri
 
@@ -79,7 +79,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulamaları gelişti
     </li>
 </ul>
 
-<h2>5 dakikalık "hızlı başlangıçlar" Visual Studio deneyimi</h2>
+## <a name="experience-visual-studio-with-5-minute-quickstarts"></a>5 dakikalık "hızlı başlangıçlar" Visual Studio deneyimi
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -246,7 +246,7 @@ Visual Studio, çeşitli programlama dillerini kullanarak uygulamaları gelişti
     </li>
 </ul>
 
-<h2>Öğreticileri ile daha ayrıntılı bilgiler edinin</h2>
+## <a name="go-deeper-with-tutorials"></a>Öğreticileri ile daha ayrıntılı bilgiler edinin
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">

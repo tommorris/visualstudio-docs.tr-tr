@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c6c09c8431cb2a50c0d76ebf476e67730192966
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774993"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384194"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Hangi&#39;Visual Studio 2017'deki yenilikler
 
@@ -38,7 +38,7 @@ Visual Studio'nun önceki bir sürümden yükseltme mi istiyorsunuz? İşte ne V
 * **[Windows uygulama geliştirme](#windows-app-development)**. Tüm Windows 10 cihazlar için tek bir proje oluşturmak için Visual Studio 2017'deki UWP şablonlarını kullanma &ndash; PC, tablet, telefon, Xbox, HoloLens, Surface Hub ve daha fazla.
 * **[Mobil uygulama geliştirme](#mobile-app-development)**. Yenilik yapın ve hızlı Xamarin, çok platformlu mobil gereksinimlerinizi bir çekirdek kod temeli ve becerileri kümesini birleştiren ile sonuçlar elde edin.
 * **[Platformlar arası geliştirme](#cross-platform-development)**. Sorunsuz bir şekilde hedeflenen her platforma yazılım sunun. SQL Server'a Redgate veri araçları aracılığıyla DevOps süreçlerini genişletin ve Visual Studio'dan veritabanı dağıtımlarını güvenle otomatikleştirin. Veya .NET Core uygulamaları ve Windows, Linux ve macOS işletim sistemleri arasında değiştirilmeden çalıştırılmasını kitaplıklar yazmak için kullanın.
-* **[Oyunlar geliştirme](#games-development)**. Visual Studio Araçları ile Unity (VSTU), oyun ve düzenleyici betikleri C# dilinde yazın ve ardından, güçlü bir hata ayıklayıcı hataları bulma ve düzeltme için Visual Studio kullanabilirsiniz. 
+* **[Oyunlar geliştirme](#games-development)**. Visual Studio Araçları ile Unity (VSTU), oyun ve düzenleyici betikleri C# dilinde yazın ve ardından, güçlü bir hata ayıklayıcı hataları bulma ve düzeltme için Visual Studio kullanabilirsiniz.
 * **[Yapay ZEKA geliştirme](#ai-development)**. AI için Visual Studio Araçları ile yapay ZEKA yeniliği hızlandırmaya yönelik Visual Studio üretkenlik özelliklerini kullanabilirsiniz. Derleme, test etme ve dağıtma derin öğrenme / AI çözümleri, sorunsuz şekilde tümleştirin Azure Machine Learning ile sağlam deneme özellikleri için.
 
 > [!NOTE]
@@ -303,7 +303,7 @@ Ayrıca **15,8 yeni**: Xamarin.Android için tasarımcı deneyiminde önemli gel
 
 ![Xamarin.Adroid Designer Bölünmüş Görünüm Düzenleyicisi](../ide/media/android-designer-split-view.png)
 
-Daha fazla bilgi için [emulator performansını için donanım hızlandırma](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)
+Daha fazla bilgi için [emulator performansını için donanım hızlandırma](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 

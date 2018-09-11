@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624160"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384233"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Öğretici: Visual Studio kullanarak hata ayıklamayı öğrenin
 
@@ -31,7 +31,7 @@ Bu makalede, Visual Studio hata ayıklayıcı adım adım kılavuzda özellikler
 |---------|---------|
 |  ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin")  |    [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) hata ayıklamayı benzer adımları gösterilmektedir. |
 
-Tanıtım uygulamasını C# ve C++ olsa da, özellikleri, Visual Basic, JavaScript ve (belirtilenler dışında) Visual Studio tarafından desteklenen diğer diller için geçerlidir. Ekran görüntüleri C# ' de var. C# ve C++ örnek kod arasında geçiş yapmak için sayfanın sağ üst köşedeki dil filtresi kullanın.
+Tanıtım uygulamasını C# ve C++ olsa da, özellikleri, Visual Basic, JavaScript ve (belirtilenler dışında) Visual Studio tarafından desteklenen diğer diller için geçerlidir. Ekran görüntüleri C# ' de var. C# ve C++ bu makaledeki örnek kod arasında geçiş yapmak için bu sayfanın sağ üst köşedeki dil filtresi kullanın.
 
 Bu öğreticide şunları yapacaksınız:
 
@@ -286,9 +286,9 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Bir kesme noktası ayarlayın ve hata ayıklayıcıyı başlatın
 
-1. İçinde `foreach` , döngü `Main` işlevi (`for` C++ döngüde `main` işlevi), ilk kod satırının sol kenar boşluğunu tıklayarak kesme noktası ayarlayın.
+1. İçinde `foreach` , döngü `Main` işlevi (`for` C++ döngüde `main` işlevi), aşağıdaki kod satırının sol kenar boşluğunu tıklayarak kesme noktası ayarlayın:
 
-    ![Bir kesme noktası ayarlamak](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (veya `shape->Draw()` c++)
 
     Kesme noktasının ayarlandığı kırmızı bir daire görünür.
 
@@ -296,7 +296,7 @@ Bu öğreticide şunları yapacaksınız:
 
 6. Tuşuna **F5** veya **hata ayıklamayı Başlat** düğme, uygulama başlatılır ve hata ayıklayıcı, Kesme noktasının ayarlandığı kod satırına çalıştırır.
 
-    ![Bir kesme noktası isabet](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![Ayarlayın ve bir kesme noktası isabet](../debugger/media/get-started-set-breakpoint.gif)
 
     Sarı ok, aynı zamanda aynı noktayı (Bu bildirimi henüz çalıştırılmadı) uygulama yürütmeyi askıya alır, hata ayıklayıcı durduruldu, deyimi temsil eder.
 
@@ -308,9 +308,7 @@ Bu öğreticide şunları yapacaksınız:
 
 Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Burada, kullandığımız hata ayıklayıcı (komutları parantez içinde gösterilen eşdeğer komutları menüsü gibi) uygulamanız çalıştırma sırasında hızlı.
 
-1. Basın **F11** (veya tercih **hata ayıklama > içine adımla**) kez (birkaç kez de C#), duraklatma kadar `shape.Draw` yöntemi çağırın `Main` yöntemi (`shape->Draw` C++'ta).
-
-1. Tuşuna **F11** için koda daha çok kez ilerlemek için `Rectangle` sınıfı.
+1. İçinde duraklatıldığı sırada `shape.Draw` yöntemi çağırın `Main` yöntemi (`shape->Draw` C++'ta), basın **F11** (veya tercih **hata ayıklama > içine adımla**) için koda ilerlemek için `Rectangle` sınıf.
 
      ![İçine adımla kodu F11 kullanın](../debugger/media/get-started-f11.png "F11 adımla")
 
@@ -364,19 +362,19 @@ Tıklayın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.pn
 
 Bastığınızda **yeniden**, uygulama durdurup hata ayıklayıcı yerine zaman kaydeder. İlk kesme noktasına isabet kodu yürüterek, hata ayıklayıcı duraklatır.
 
-Hata ayıklayıcıyı yeniden de sizin ayarladığınız kesme noktasında durur `foreach` döngü (`for` C++ döngüde).
+Hata ayıklayıcıyı yeniden üzerinde sizin ayarladığınız kesme noktasında durur `shape.Draw()` yöntemi (`shape->Draw()` C++'ta).
 
 ## <a name="inspect-variables-with-data-tips"></a>Veri ipuçları değişkenlerle inceleyin
 
 Değişkenleri incelemek özellik hata ayıklayıcının en kullanışlı özellikler biridir ve bunu yapmanın farklı yolu vardır. Genellikle, hata ayıklama bir sorun açmayı denediğinde, belirli bir zamanda sahip olmalarını beklediğiniz değerleri değişkenleri olup depoladığını kullanıma bulmak çalışıyorsunuz.
 
-1. Üzerinde duraklatıldığı sırada `foreach` döngü (`for` C++ döngüde), basın **F11** sonra.
-
-1. Üzerine `shapes` nesne ve bkz varsayılan özellik değerine `Count` özelliği.
+1. Üzerinde duraklatıldığı sırada `shape.Draw()` yöntemi (`shape->Draw()` C++'ta), üzerine `shapes` nesne ve bkz varsayılan özellik değerine `Count` özelliği.
 
 1. Genişletin `shapes` tüm özelliklerini, dizinin ilk dizini gibi görmek için nesne `[0]`, değeri olan `Rectangle` (C#) veya bir bellek adresi (C++).
 
-     ![Bir veri ipucunda görüntülemek](../debugger/media/get-started-data-tip.png "bir veri ipucunda görüntüleyin")
+     ![Bir veri ipucunda görüntülemek](../debugger/media/get-started-data-tip.gif "bir veri ipucunda görüntüleyin")
+
+    Nesneleri gibi özelliklerini görüntülemek için daha da genişletebilirsiniz `Height` dikdörtgeninin özelliği.
 
     Genellikle, hata ayıklama sırasında istediğiniz nesnelerin özellik değerlerini denetlemek için hızlı bir yol ve veri ipuçları yapmak için iyi bir yoludur.
 

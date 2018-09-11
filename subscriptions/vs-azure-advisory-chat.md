@@ -9,12 +9,12 @@ description: Visual Studio aboneliklerine dahil edilen Azure Danışmanı Sohbet
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623948"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278900"
 ---
 # <a name="azure-advisory-chat"></a>Azure Danışmanı Sohbeti
 
@@ -46,7 +46,7 @@ Azure Danışmanı Sohbeti kullanarak kolay bir işlemdir.
 | Visual Studio Test Professional (standart)                         | Tümü                                              | Yok                                             |  Hayır          |
 | MSDN platformları (standart)                                          | Tümü                                              |Yok                                              |  Hayır          |
 | Visual Studio Dev Essentials                                          | Yok                                              |Yok                                              |  Hayır          |
-<sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft değerli ortak (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine, MCT* 
+<sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft değerli ortak (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine, MCT*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
@@ -57,4 +57,4 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

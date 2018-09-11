@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178393"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281539"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
 Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını ve sonra bir Windows Forms uygulamasından erişebilirsiniz.
@@ -106,7 +106,7 @@ Sonraki adımda oluşturduğunuz bir [!INCLUDE[adonet_edm](../data-tools/include
 7.  Üzerinde **sürümünüzü seçin** sayfasında **Entity Framework 5.0** seçenek düğmesini ve ardından **sonraki** düğmesi.
 
     > [!NOTE]
-    >  WCF hizmetleri ile Entity Framework 6 en son sürümünü kullanmak için WCF Veri Hizmetleri Entity Framework sağlayıcısı NuGet paketini yüklemeniz gerekir. Bkz: [kullanarak WCF Veri Hizmetleri 5.6.0 Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+    >  WCF hizmetleri ile Entity Framework 6 en son sürümünü kullanmak için WCF Veri Hizmetleri Entity Framework sağlayıcısı NuGet paketini yüklemeniz gerekir. Bkz: [kullanarak WCF Veri Hizmetleri 5.6.0 Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümünü **müşteriler** onay kutusunu işaretleyin ve ardından **son** düğmesi.
 
@@ -289,5 +289,5 @@ Sonraki isteğe bağlı adımda hizmetin döndürdüğü verileri filtreleme hak
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Nasıl yapılır: ekleme, güncelleştirme veya WCF veri hizmeti başvurusunu Kaldır](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

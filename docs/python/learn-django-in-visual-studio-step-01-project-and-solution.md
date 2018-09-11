@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624031"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280174"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğretici: Visual Studio'da Django web çerçevesi ile çalışmaya başlama
 
@@ -100,7 +100,7 @@ Seçtiğiniz çünkü **yeni Git deposu Oluştur** içinde **yeni proje** ileti�
 
     ![Var olan bir uzak depoya gönderilirken için Takım Gezgini penceresi](media/django/step01-push-to-github.png)
 
-    Varolan bir depo yoksa **GitHub Yayımla** ve **Visual Studio Team Services için anında iletme** seçenekleri bir doğrudan Visual Studio'dan oluşturmanıza izin veren.
+    Varolan bir depo yoksa **GitHub Yayımla** ve **Azure DevOps için anında iletme** seçenekleri sağlar, doğrudan Visual Studio içinde oluşturun.
 
 1. Bu öğreticide çalışırken, düzenli aralıklarla denetimlerini işlemeyi ve göndermeyi değişiklikler Visual Studio kullanarak önleminizi. Bu öğretici size uygun noktalarda anımsatır.
 

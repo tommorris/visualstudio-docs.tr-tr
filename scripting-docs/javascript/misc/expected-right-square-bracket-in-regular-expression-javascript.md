@@ -1,5 +1,5 @@
 ---
-title: Beklenen &#39;] &#39; Normal ifadede (JavaScript) | Microsoft Docs
+title: Beklenen &#39;]&#39; (JavaScript) normal ifadede | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,23 +20,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c59dcbeea91a1bc01e870d0a49fd22cace6562d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64ef929ba309f0b496e72f3cf740daf6970d08fb
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788840"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283723"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Beklenen &#39;] &#39; Normal ifade (JavaScript)
-Normal ifade eşleştirmesi için karakter sınıfı oluşturmaya çalıştı, ancak sağ köşeli ayraç içermiyordu. Tek tek değişmez değer karakter birleşimleri köşeli ayraç içinde koyarak karakter sınıflara birleştirilebilecek. Bir karakter sınıfı içerdiği herhangi bir karakterle eşleşir. Örneğin, / [abc] / "a", "b", eşleşen herhangi bir harf ya da "c".  
+# <a name="expected-3939-in-regular-expression-javascript"></a>Beklenen &#39;]&#39; normal ifadede (JavaScript)
+Bir karakter sınıfı için bir normal ifade eşleştirmesi oluşturulmaya çalışıldı, ancak sağ köşeli ayraç içermiyordu. Köşeli ayraçlar yerleştirerek tek değişmez bir karakter birleşimleri karakter sınıflara birleştirilebilecek. Bir karakter sınıfı, içerdiği herhangi bir karakterle eşleşir. Örneğin, / [abc] / "a", "b", herhangi bir harf ile eşleşir veya "c".  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Sağ köşeli ayraç normal ifadeye ekleyin.  
+-   Normal ifade sağ köşeli ayraç ekleyin.  
   
     > [!NOTE]
-    >  Tek bir köşeli ayraç eşleştirmek isterseniz, ters eğik çizgi ile - kaçış \\[- tarafından bir özel karakter olarak yorumlanmaz şekilde [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    >  Ters eğik çizgi ile - tek bir köşeli ayraç eşleştirmek istiyorsanız, atlatmak \\[- özel bir karakter olarak yorumlanmaz şekilde [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Normal ifade nesnesi](../../javascript/reference/regular-expression-object-javascript.md)   
- [Normal ifade sözdizimini (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Normal ifade söz dizimi (JavaScript)](https://msdn.microsoft.com/library/1400241x)

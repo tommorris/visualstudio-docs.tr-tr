@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380898"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321196"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Nasıl yapılır: tanılama veri bağdaştırıcısı oluşturma
 
@@ -257,7 +257,7 @@ Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kulla
     >
     > Yapılandırma dosyalarını, yükleme dizinine dayanan aşağıdaki yolda diğer örnekleri vardır: *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     Test ayarlarınızı testlerinizi çalıştırdığınızda kullanacağınız ortam için yapılandırma hakkında daha fazla bilgi için bkz. [el ile testler (VSTS), tanılama verilerini toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Test ayarlarınızı testlerinizi çalıştırdığınızda kullanacağınız ortam için yapılandırma hakkında daha fazla bilgi için bkz. [el ile testlerde (Azure Test planları) tanılama verilerini toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
      Yapılandırma dosyasını yükleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: özel tanılama veri bağdaştırıcısı yükleme](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
@@ -265,7 +265,7 @@ Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kulla
 
 13. Özel düzenleyicinizi yükleme hakkında daha fazla bilgi için bkz: [nasıl yapılır: özel tanılama veri bağdaştırıcısı yükleme](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
-14. Test ayarlarınızı testlerinizi çalıştırdığınızda kullanacağınız ortam için yapılandırma hakkında daha fazla bilgi için bkz. [el ile testler (VSTS), tanılama verilerini toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+14. Test ayarlarınızı testlerinizi çalıştırdığınızda kullanacağınız ortam için yapılandırma hakkında daha fazla bilgi için bkz. [el ile testlerde (Azure Test planları) tanılama verilerini toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 15. Tanılama veri bağdaştırıcınızı seçmek için önce varolan test ayarlarını seçin veya Microsoft Test Yöneticisi ya da Visual Studio yeni bir tane oluşturmanız gerekir. Bağdaştırıcı görüntülenir **veri ve tanılama** test ayarlarınızı sınıfa atadığınız yakın ad ile sekmesindeki.
 
@@ -285,6 +285,6 @@ Oluşturmak için bir *tanılama veri bağdaştırıcısı*, Visual Studio kulla
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [Test ayarlarını kullanarak tanılama bilgileri Topla](../test/collect-diagnostic-information-using-test-settings.md)
-- [El ile testler (VSTS), tanılama verilerini toplayın](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [(VSTS) test sırasında tanılama verilerini toplayın](/vsts/manual-test/collect-diagnostic-data)
+- [El ile testlerde (Azure Test planları) tanılama verilerini toplayın](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [(Azure Test planları) test sırasında tanılama verilerini toplayın](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Nasıl yapılır: tanılama veri bağdaştırıcınızın verileri için özel bir düzenleyici oluşturma](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

@@ -23,36 +23,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a46497e45acb4663822b1a7bc6e4ad5a4f09af11
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472500"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284178"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Kimin Yanlış Parametre Değeri Geçirdiğini Nasıl Bulabilirim?
 ## <a name="problem-description"></a>Sorun açıklaması  
- My işlevleri biri için yanlış parametre değeri geçirilir. Bu işlev dünyanın dört bir yanındaki yer çağrılır. Nasıl bulabilirim ne yanlış değer geçiyor çıkışı?  
+ Benim birine yanlış parametre değeri geçirilir. Bu işlev her yerden çağrılır. Nasıl öğrenebilirim kullanıma neyin yanlış değer geçiyor?  
   
 ## <a name="solution"></a>Çözüm  
   
 #### <a name="to-resolve-this-problem"></a>Bu sorunu gidermek için  
   
-1.  Konum kesme noktası işlevi başında ayarlayın.  
+1.  İşlevin başında bir konum kesme noktası ayarlayın.  
   
-2.  Kesme noktası sağ tıklatıp **koşul**.  
+2.  Kesme noktasına sağ tıklayıp **koşul**.  
   
-3.  İçinde **kesme noktası koşulu** iletişim kutusu, tıklatıldığında **koşulu** onay kutusunu. Bkz: [kesme noktaları Gelişmiş](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3.  İçinde **kesme noktası koşulu** iletişim kutusu, tıklayarak **koşul** onay kutusu. Bkz: [kesme noktalarının Gelişmiş](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
-4.  Bir ifade girin `Var==3`, metin kutusuna, burada `Var` hatalı değeri içeren parametre adı ve `3` hatalı değer geçirildi.  
+4.  Gibi bir ifade girin `Var==3`, metin kutusuna, burada `Var` hatalı değeri içeren parametrenin adıdır ve `3` ona iletilen hatalı değer.  
   
-5.  Seçin **true'dur** tıklayın ve radyo düğmesinin **Tamam** düğmesi.  
+5.  Seçin **true'dur** radyo düğmesini tıklatıp tıklayın **Tamam** düğmesi.  
   
-6.  Şimdi programı yeniden çalıştırın. Programın işlevi başında durdurmak kesme neden olduğunda `Var` parametre değeri içeriyor `3`.  
+6.  Şimdi programı yeniden çalıştırın. Kesme noktası programın işlevin başında durdurulmasına neden olduğunda `Var` parametresinin değeri `3`.  
   
-7.  Çağıran işlevi bulmak ve kendi kaynak koduna gezinmek için çağrı yığını penceresini kullanın. Daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını penceresinde kullanmak](../debugger/how-to-use-the-call-stack-window.md).  
+7.  Çağıran işlevi bulmak ve kaynak koduna gitmek için çağrı yığını penceresini kullanın. Daha fazla bilgi için [nasıl yapılır: çağrı yığını penceresinde kullanmak](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel kod hata ayıklaması SSS](../debugger/debugging-native-code-faqs.md)   
- [Kesme noktaları](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
+ [Kesme noktaları](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)

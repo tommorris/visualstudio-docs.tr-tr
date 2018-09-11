@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472fcda584db4bf6cd16c386fec4b3e668f44a9f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: d7ee37ddd9899b979d8440202c89d03284b26f48
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341682"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279082"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Derleme ve Visual Studio'da derleyin
 
@@ -28,7 +28,7 @@ Kodunuzu genellikle oluşturarak hızlı bir şekilde sözdizimi, yanlış yazı
 
 Başarılı bir derleme, aslında bir doğrulama uygulamanın kaynak kodunu doğru söz dizimini içerir ve kitaplıkları, derlemeler ve diğer bileşenleri için tüm statik başvuruları Çözüldü ' dir. Bunun ardından uygun her ikisinde de çalışması için test edilebilir çalıştırılabilir bir uygulamaya üreten bir [ortam hata ayıklama](../debugger/index.md) ve el ile ve otomatik testler için çeşitli [kod kalitesini doğrulamak](../test/improve-code-quality.md). Uygulamanın tam olarak test sonra müşterilerinize dağıtmak için bir yayın sürümünü ardından derleyebilirsiniz. Bu işlem, giriş için bkz. [izlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md).
 
-Visual Studio ürün ailesi içinde bir uygulama oluşturmak için kullanabileceğiniz üç yöntem vardır: Visual Studio IDE, MSBuild komut satırı araçları ve Team Foundation Yapısı Visual Studio Team Services üzerinde:
+Bir uygulama oluşturmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz: Visual Studio IDE, MSBuild komut satırı araçları, Team Foundation Build ve Azure DevOps Hizmetleri:
 
 | Derleme yöntemi | Yararları |
 | --- |--- | --- |
@@ -36,7 +36,7 @@ Visual Studio ürün ailesi içinde bir uygulama oluşturmak için kullanabilece
 | MSBuild komut satırı| -Visual Studio yüklemeden projeleri oluşturun.<br />-Çalışma birden çok işlemcili için tüm proje türleri oluşturur.<br />-Birçok alan yapı sisteminin özelleştirin.|
 | Team Foundation Derlemesi | -Bir sürekli tümleştirme/sürekli teslim işlem hattı bir parçası olarak yapı sürecinizi otomatik hale getirin.<br />-Her derleme ile otomatik testler için geçerlidir.<br />-Yapı işlemleri için neredeyse sınırsız bulut tabanlı kaynakların paylaşmayan kullanır.<br />-Yapı iş akışını değiştirin ve ayrıntılı bir şekilde özelleştirilmiş görevleri gerçekleştirmek için yapı etkinlikleri oluşturun.|
 
-Bu bölümdeki belgeler, daha fazla IDE tabanlı yapı işleminin ayrıntılarına gider. Diğer yöntemler hakkında daha fazla bilgi için bkz. [MSBuild](../msbuild/msbuild.md) ve [sürekli tümleştirme ve dağıtım](/vsts/pipelines/index?view=vsts)sırasıyla.
+Bu bölümdeki belgeler, daha fazla IDE tabanlı yapı işleminin ayrıntılarına gider. Diğer yöntemler hakkında daha fazla bilgi için bkz. [MSBuild](../msbuild/msbuild.md) ve [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts)sırasıyla.
 
 ## <a name="overview-of-building-from-the-ide"></a>IDE'den oluşturmaya genel bakış
 

@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio belgeleri | Microsoft Docs
 description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: hub-page
-ms.openlocfilehash: 6a287d934fd91fc7c042f5480bbbbecb82e6238b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: cfbfa4d355466e429831e4c07e2e74c72b6876ed
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225116"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281123"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -353,7 +353,7 @@ ASP.NET Core Web uygulaması</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=865130">
+                                <a href="/visualstudio/version-control/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -372,7 +372,7 @@ ASP.NET Core Web uygulaması</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts">
+                                <a href="/azure/devops/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -383,7 +383,7 @@ ASP.NET Core Web uygulaması</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>Sürekli olarak Derle ve uygulamalarınızı bulutta bırakın ve Çevik uygulayan yöntemler VSTS ile.</p>
+                                                    <p>Sürekli olarak Derle ve uygulamalarınızı bulutta bırakın ve Çevik uygulamak Azure DevOps hizmetleriyle yöntemler.</p>
                                                 </div>
                                             </div>
                                         </div>

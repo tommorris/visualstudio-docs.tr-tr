@@ -2,19 +2,19 @@
 layout: HubPage
 hide_bc: true
 title: Visual Studio belgeleri | Microsoft Docs
-description: Uygulamaları, hizmetleri ve platformlar ve cihazlar için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio 2017 kullanmayı öğrenin.
+description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 728091071a7e9409ac523ee078800915cba84814
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.openlocfilehash: 6baee6be451ba1997f44e24d5a1690f7b451c3a2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690604"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280980"
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Visual Studio ürünleri için belgeler</h1>
+        <h1>Visual Studio ürünleri için belgeleri</h1>
         <ul class="pivots">
             <li>
                 <a href="#products"></a>
@@ -34,7 +34,7 @@ ms.locfileid: "34690604"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio IDE</h3>
-                                                    <p>Uygulamaları ve oyunları, Windows, Android, iOS, Windows, web veya Bulut ile her bir aygıtı ulaşması kullanarak oluşturun.</p>
+                                                    <p>Uygulamaları ve oyunları, Windows, Android, iOS, Windows, web veya Bulut ile tüm cihazlara ulaşmayı sağlayan kullanarak oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -42,7 +42,7 @@ ms.locfileid: "34690604"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/vsts" title="Visual Studio Team Services">
+                                <a href="/azure/devops/" title="Azure DevOps Hizmetleri">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -52,8 +52,8 @@ ms.locfileid: "34690604"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Team Services</h3>
-                                                    <p>Çevik proje Araçlar ve raporlar takımı üretkenliği artırır. Derleme, test ve modern CI/CD araçları ile kaynak denetiminden projeleri dağıtın.</p>
+                                                    <h3>Azure DevOps Hizmetleri</h3>
+                                                    <p>Çevik proje araçları ve raporları takım üretkenliği artırın. Derleme, test ve projeleri modern CI/CD araçlarıyla kaynak denetiminden dağıtın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,7 +61,7 @@ ms.locfileid: "34690604"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/tfs" title="Team Foundation Server">
+                                <a href="/tfs/" title="Team Foundation Server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -72,7 +72,7 @@ ms.locfileid: "34690604"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Team Foundation Server</h3>
-                                                    <p>Yükleme, yükseltme ve şirket içi dağıtımlarınızı yönetebilirsiniz.</p>
+                                                    <p>Yüklemek, yükseltmek ve şirket içi dağıtımlarınızı yönetmek.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,7 +91,7 @@ ms.locfileid: "34690604"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio Code</h3>
-                                                    <p>Zengin düzenleme ve MacOS, Linux ve Windows dillerden yüzlerce içinde hata ayıklama</p>
+                                                    <p>Zengin düzenleme ve yüzlerce MacOS, Linux ve Windows dil hata ayıklama</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,7 +110,7 @@ ms.locfileid: "34690604"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Mac için Visual Studio</h3>
-                                                    <p>Uygulamaları ve oyunları, bulut, iOS, Android, macOS ve wearables için Mac kullanarak oluşturun.</p>
+                                                    <p>Uygulamaları ve oyunları, bulut, iOS, Android, macOS ve giyilebilir cihazlar için bir Mac kullanarak oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,7 +118,7 @@ ms.locfileid: "34690604"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Visual Studio Uygulama Merkezi">
+                                <a href="/appcenter/" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -128,8 +128,8 @@ ms.locfileid: "34690604"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Uygulama Merkezi</h3>
-                                                    <p>Sürekli tümleştirme, teslim ve Android, iOS, macOS ve Windows uygulamaları için öğrenme. 5 yıldız, daha yüksek kaliteli uygulamaları daha hızlı ve güvenle birlikte.</p>
+                                                    <h3>Visual Studio App Center</h3>
+                                                    <p>Sürekli tümleştirme, teslim ve öğrenme Android, iOS, macOS ve Windows uygulamaları için. Daha hızlı ve güvenle 5 yıldızlı, yüksek kaliteli uygulamalar gönderin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -137,7 +137,7 @@ ms.locfileid: "34690604"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Visual Studio Uygulama Merkezi">
+                                <a href="/subscriptions/" title="Visual Studio abonelikleri">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

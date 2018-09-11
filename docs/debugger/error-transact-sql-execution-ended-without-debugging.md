@@ -1,5 +1,5 @@
 ---
-title: 'Hata: Transact-SQL yürütmesi sonlandırıldı hata ayıklama olmadan | Microsoft Docs'
+title: 'Hata: Transact-SQL yürütmesi hata ayıklama olmadan bitti | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,38 +17,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccb86621295bb102738e5154f30bd45c6db358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e6ae81608ee476e3748fde6830dfaa11c119f7a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474017"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283138"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Hata: Transact-SQL yürütmesi hata ayıklaması yapılmadan sonlandı
-Bu hata, bir Transact-SQL veya SQLCLR yordamı hata ayıklama denediğiniz ve hata ayıklayıcısı hata ayıklama iletilerini SQL Server'dan almaz oluşur.  
+Hata ayıklayıcı hata ayıklama iletisi, SQL Server'dan almaz ve Transact-SQL veya SQLCLR yordam hata ayıklamaya çalıştığınız bu hata oluşur.  
   
- Bu ağ sorunları nedeniyle veya SQL Server üzerinde sorunları olabilir, ancak en olası nedeni izinler bir sorundur.  
+ Bu ağ sorunları nedeniyle veya SQL Server üzerinde sorunları olabilir, ancak en olası nedeni izinlerle ilgili bir sorun.  
   
- Söz konusu iki hesap vardır:  
+ Kullanılan iki hesap vardır:  
   
 -   Kullanıcı hesabı uygulama hesabıdır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] olarak çalışıyor.  
   
--   SQL sunucusuna bağlantı yapmak için kullanılan kimlik bağlantısı hesabıdır. Bu mutlaka bağlantı SQL kimlik doğrulaması kullanılıyorsa gibi Visual Studio çalıştıran kimliği ile aynı değildir.  
+-   Bağlantı hesabı SQL Server'a bağlantı kurmak için kullanılan kimliktir. Bu mutlaka bağlantı SQL kimlik doğrulaması kullanıyorsanız gibi Visual Studio çalıştıran kimliğin ile aynı değildir.  
   
- SQL hata ayıklama uygulama hesabı gerekir veya bağlantı hesabı eşleşen sysadmin olmasını gerektirir.  
+ SQL hata ayıklama, uygulama hesabı bağlantı hesapla eşleşmesi gerekir veya sysadmin olmanız gerekir.  
   
- Bir SQL oturum açma sa gibi kullanıyorsanız, uygulama hesabı kurulum SQL Server'da sysadmin olarak olmalıdır. Varsayılan olarak, yöneticiler makine SQL server üzerinde çalıştığı SQL Server sysadmins bulunur.  
+ Uygulama hesabı sa gibi bir SQL oturum açma kullanıyorsanız, kurulum SQL Server'da sysadmin olarak olması gerekir. Varsayılan olarak, yöneticiler makine SQL server üzerinde çalıştığı SQL Server Sistem bulunur.  
   
- Bu hatayı düzeltmek için ihtiyacınız:  
+ Bu hatayı düzeltmek için ihtiyacınız olabilecek:  
   
--   İzinleri ayarlarınızı doğrulayın. Daha fazla bilgi için bkz: [nasıl yapılır: hata ayıklama için SQL Server izinleri ayarlama](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+-   İzinleri ayarlarınızı doğrulayın. Daha fazla bilgi için [nasıl yapılır: hata ayıklama için SQL Server izinleri ayarlayın](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
--   SQL, hata ayıklama'ı doğru bir şekilde ayarlanan emin olun.  
+-   SQL hata ayıklamayı'ı doğru bir şekilde ayarlandığından emin olun.  
   
 -   Ağ veya veritabanı yöneticinize başvurun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SQL hata ayıklama Kurulumu ayarlama](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [SQL hata ayıklamayı kurma](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   
  [Nasıl yapılır: hata ayıklama için SQL Server izinleri ayarla](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
- [Uzaktan hata ayıklama](../debugger/remote-debugging.md)
+ [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)

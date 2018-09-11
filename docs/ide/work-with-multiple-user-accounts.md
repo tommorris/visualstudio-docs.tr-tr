@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179703"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283476"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 
@@ -59,9 +59,9 @@ Azure AD, son kullanıcı çoklu oturum açma ASP.NET MVC web uygulamaları veya
 
 ASP.NET kimlik doğrulaması farklı türleri hakkında daha fazla bilgi için bkz. [oluşturma ASP.NET web projeleri Visual Studio 2013'te](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (kimlik doğrulaması hakkında bilgi hala geçerli Visual Studio sürümleri için geçerlidir).
 
-### <a name="access-your-visual-studio-team-services-account"></a>Visual Studio Team Services hesabınıza erişme
+### <a name="access-your-team-foundation-server-tfs-organization"></a>Team Foundation Server (TFS) kuruluşunuz erişimi
 
-Ana menüden **takım** > **Team Foundation Server'a Bağlan** ortaya çıkarmak için **Takım Gezgini** penceresi. Tıklayarak **takım projeleri seçin**ve ardından liste kutusu altında **Team Foundation Server'ı seçin**, Visual Studio Team Services hesabınız için URL görmeniz gerekir. URL seçtiğinizde, kimlik bilgilerinizi yeniden girmek zorunda kalmadan oturumunuz açılır.
+Ana menüden **takım** > **Team Foundation Server'a Bağlan** ortaya çıkarmak için **Takım Gezgini** penceresi. Tıklayarak **projeleri seçin**ve ardından liste kutusu altında **Team Foundation Server'ı seçin**, TFS kuruluşunuz için URL görmeniz gerekir. URL seçtiğinizde, kimlik bilgilerinizi yeniden girmek zorunda kalmadan oturumunuz açılır.
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Visual Studio için ikinci bir kullanıcı hesabı Ekle
 

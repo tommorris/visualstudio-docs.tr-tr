@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078647"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280681"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Nasıl yapılır: yeniden, uygulama ve dağıtım bildirimlerini imzalama
 Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap) ya da Office çözümleri için uygulama bildiriminde dağıtım özelliklerini değişiklikleri yaptıktan sonra her iki uygulamayı yeniden imzalamanız gerekir ve dağıtım bildirimleri ile bir Sertifika. Bu işlem, değiştirilen dosyaların son kullanıcı bilgisayarlarında yüklenmediğinden garanti eder.  
@@ -33,7 +33,7 @@ Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap
  Burada bildirimlerini yeniden imzalama başka bir senaryo, kendi sertifika ile dağıtım bildirimleri ve uygulamayı imzalamak Müşterilerinizin istediği andır.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Uygulama ve dağıtım bildirimlerini yeniden imzalama  
- Bu yordam, uygulama bildirim dosyasına değişiklikler zaten yaptınız varsayar (*.manifest*). Daha fazla bilgi için [nasıl yapılır: dağıtım özelliklerini değiştirme](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Bu yordam, uygulama bildirim dosyasına değişiklikler zaten yaptınız varsayar (*.manifest*). Daha fazla bilgi için [nasıl yapılır: dağıtım özelliklerini değiştirme](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Uygulama ve dağıtım yeniden imzalamak için Mage.exe ile bildirimleri  
   

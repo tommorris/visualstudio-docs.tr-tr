@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil avantajları hakkında bilgi edi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381552"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282228"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio aboneliğinize dahil avantajları
 
@@ -23,7 +23,7 @@ Visual Studio Abonelikleri, en kapsamlı kaynaklar oluşturmanıza, dağıtmanı
 Avantajları üç kategorilere ayrılır:
 
 ## <a name="tools"></a>Araçlar
-Araçları kategoriye Gemisi avantajları gibi avantajlar, çeşitli erişim sağlayan [Visual Studio IDE](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md), ve [Azure](vs-azure.md) .  Abonelik düzeyinize bağlı olarak, Windows ve Office 365 Geliştirici hesapları, Visual Studio App Center ve avantajları WhiteSource Bolt ve ModernRequirements gibi iş ortaklarından de görürsünüz.
+Araçları kategoriye Gemisi avantajları gibi avantajlar, çeşitli erişim sağlayan [Visual Studio IDE](vs-ide-benefit.md), [Azure DevOps Hizmetleri](vs-azure-devops.md), ve [Azure](vs-azure.md).  Abonelik düzeyinize bağlı olarak, Windows ve Office 365 Geliştirici hesapları, Visual Studio App Center ve avantajları WhiteSource Bolt ve ModernRequirements gibi iş ortaklarından de görürsünüz.
 
 ## <a name="professional-development"></a>Profesyonel Geliştirme
 Sürekli olarak becerilerinizi geliştirin ve en son teknolojilerle takip edin yardımcı olması için erişimi bazı en iyi çevrimiçi eğitim kullanılabilir sektör liderlerinden sağlıyoruz. Kullanılabilir harika içerikler örnekleri şunlardır:

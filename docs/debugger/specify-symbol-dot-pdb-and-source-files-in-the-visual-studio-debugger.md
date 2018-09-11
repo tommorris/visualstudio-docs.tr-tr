@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c712114918f2e0feae2a0820ef9e90a6060e80ec
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780555"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281734"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtme
 Ayrıca bir sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası, kaynak kodu sınıfları, yöntemleri ve diğer tanımlayıcıları projenizin derlenen yürütülebilir kullanılan kodu için içinde oluşturduğunuz eşleştirir. .Pdb dosyası, kaynak kodundaki deyimleri yürütülebilir dosyalardaki yürütme yönergeleriyle de eşleştirir. Hata ayıklayıcı iki temel bilgi parçasını belirlemek için bu bilgileri kullanır:
@@ -255,6 +255,6 @@ Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek 
      Unutmayın hem **kısmi güven derlemeleri (sadece yönetilen) için kaynak sunucuya izin ver** ve **her zaman sormadan güvenilmeyen kaynak sunucu komutlarını Çalıştır** yukarıda açıklanan güvenlik risklerini artırabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Sembol dosyaları ve Visual Studio sembol Ayarları'nı anlama](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Sembol dosyaları ve Visual Studio sembol Ayarları'nı anlama](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[Visual Studio 2012 ve 2013 değişiklikleri yükleme .NET uzaktan sembolü](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+[Visual Studio 2012 ve 2013 değişiklikleri yükleme .NET uzaktan sembolü](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

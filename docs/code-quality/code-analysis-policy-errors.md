@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175897"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278926"
 ---
 # <a name="code-analysis-policy-errors"></a>Kod Çözümleme İlkesi Hataları
 Kod Analizi İlkesi iade aşamasında karşılanmıyor aşağıdaki hatalar oluşur:
 
  **Bir veya daha fazla proje için Kod Analizi ayarları Kod Analizi ilkesiyle uyumlu değildir.**
 
- Bir veya daha fazla kod projeleri için takım projesi kaynak denetimine iade Kod Analizi gereksinimleri karşılanmadı. Bu hata, bir veya daha fazla aşağıdaki koşullardan biri tarafından kaynaklanabilir:
+ Bir veya daha fazla kod projeleri için proje kaynak denetimine iade Kod Analizi gereksinimleri karşılanmadı. Bu hata, bir veya daha fazla aşağıdaki koşullardan biri tarafından kaynaklanabilir:
 
 1.  Tüm çözüm içindeki projeleri için derleme üzerinde kod analizi etkin değil.
 
-2.  Visual Studio'da proje daha az kısıtlayıcı için ayarlanmış yerel kural **eylem** takım proje kural gibi ayarlamak için bir kural kümesi daha ayarlama **eylem**=**hata**  sunucusunda sahip kendi **eylem** kümesine **uyarı** veya **hiçbiri** kuralında Visual Studio'da çalıştırılmasını ayarlayın).
+2.  Visual Studio'da proje daha az kısıtlayıcı için ayarlanmış yerel kural **eylem** proje kural gibi ayarlamak için bir kural kümesi daha ayarlama **eylem**=**hata** sunucusunda sahip kendi **eylem** kümesine **uyarı** veya **hiçbiri** kuralında Visual Studio'da çalıştırılmasını ayarlayın).
 
-3.  Kural kümesi Visual Studio'da belirtilen tüm kurallar kural kümesi içinde takım projesi için Kod Analizi iade ilkesi belirtilen belirtilen içermiyor.
+3.  Kural kümesi Visual Studio'da belirtilen tüm kurallar kural kümesi içinde proje için Kod Analizi iade ilkesi belirtilen belirtilen içermiyor.
 
  **Kod Analizi ilkesini başarısız oldu. Projede hata olmadığından {0} veya derleme güncel değil.**
 

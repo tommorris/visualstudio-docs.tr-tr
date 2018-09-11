@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176378"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283500"
 ---
 # <a name="codeindex-command"></a>Codeındex komutu
 
@@ -27,7 +27,7 @@ Kullanım **Codeındex** Team Foundation Server'ınızdaki kod dizin oluşturman
 
 ## <a name="required-permissions"></a>Gerekli izinler
 
-Kullanılacak **Codeındex** komutunu bir üyesi olmanız gerekir **Team Foundation Yöneticileri** güvenlik grubu. Bkz: [izinleri ve grupları Team Services ve TFS için tanımlanan](/vsts/organizations/security/permissions?view=vsts).
+Kullanılacak **Codeındex** komutunu bir üyesi olmanız gerekir **Team Foundation Yöneticileri** güvenlik grubu. Bkz: [izinleri ve grupları Azure DevOps Hizmetleri ve TFS için tanımlanan](/azure/devops/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
 > Yönetici kimlik bilgileriyle oturum açmış olsanız bile, bu komutu çalıştırmak için yükseltilmiş bir komut istemi penceresi açmanız gerekir. Ayrıca Team Foundation Uygulama katmanından bu komutunu da çalıştırmanız gerekir.
@@ -42,8 +42,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Bağımsız değişken**|**Açıklama**|
 |------------------|---------------------|
-|`CollectionName`|Takım projesi koleksiyonunun adını belirtir. Ad boşluk içeriyorsa, tırnak işaretleri, örneğin, "Fabrikam Web sitesi" adıyla alın.|
-|`CollectionId`|Takım projesi koleksiyonunun kimlik numarasını belirtir.|
+|`CollectionName`|Proje koleksiyonunun adını belirtir. Ad boşluk içeriyorsa, tırnak işaretleri, örneğin, "Fabrikam Web sitesi" adıyla alın.|
+|`CollectionId`|Proje koleksiyonunun kimlik numarasını belirtir.|
 |`ServerPath`|Bir kod dosyası yolunu belirtir.|
 
 |**Seçeneği**|**Açıklama**|
@@ -56,8 +56,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/noPrompt]**|Kod dizinini silin ve dizinlenen tüm veriyi kaldırın. Kullanırsanız, onay gerektirmez **/noprompt** seçeneği.|
 |**/temporaryDataSizeLimit**: [görünümü &#124; <`SizeInGBs`> &#124; devre dışı]|Değişiklik kümesi işleme CodeLens oluşturur ne kadar geçici veri denetimi. Varsayılan sınırı 2 GB'dir.<br /><br /> -   **Görünüm**: Geçerli boyut sınırını gösterir.<br />-   `SizeInGBs`: Boyut sınırını değiştirin.<br />-   **devre dışı**: boyut sınırını kaldırın.<br /><br /> Yeni bir değişiklik kümesi CodeLens işlemeden önce bu sınırı denetlenir. Geçici verileri bu sınırı aşarsa, CodeLens değil yenilerini değişiklik işleme duraklatılır. CodeLens, veriler temizlenir ve bu sınırın altına düştüğünde sonra işleme yeniden başlar. Temizleme, günde bir kez otomatik olarak çalıştırır. Başka bir deyişle, geçici verileri temizleme çalışan başlatana kadar bu sınırı aşan.|
 |**/indexHistoryPeriod**: [görünümü &#124; tüm &#124; <`NumberOfMonths`>]|Denetim, değişiklik geçmişini dizin ne kadar. Bu, ne kadar geçmiş CodeLens gösterir etkiler. 12 ay varsayılan sınırlıdır. Bu, yalnızca son 12 aya ait değişiklik geçmişinizi CodeLens gösterir anlamına gelir.<br /><br /> -   **Görünüm**: geçerli ay sayısını gösterir.<br />-   **tüm**: tüm değişiklik geçmişini dizin.<br />-   `NumberOfMonths`: Dizin değişiklik geçmişi için kullanılan ay sayısını değiştirin.|
-|**/ CollectionName:** `CollectionName`|Çalıştırılacağı takım projesi koleksiyonunun adını belirtir **Codeındex** komutu. Kullanmadığınızda gerekli **/CollectionId**.|
-|**/ CollectionId:** `CollectionId`|Çalıştırılacağı takım projesi koleksiyonunun kimlik numarasını belirtir **Codeındex** komutu. Kullanmadığınızda gerekli **CollectionName**.|
+|**/ CollectionName:** `CollectionName`|Çalıştırılacağı proje koleksiyonunun adını belirtir **Codeındex** komutu. Kullanmadığınızda gerekli **/CollectionId**.|
+|**/ CollectionId:** `CollectionId`|Çalıştırılacağı projesi koleksiyonunun kimlik numarasını belirtir **Codeındex** komutu. Kullanmadığınızda gerekli **CollectionName**.|
 
 ## <a name="examples"></a>Örnekler
 

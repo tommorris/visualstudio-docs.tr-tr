@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499396"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283463"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
 
@@ -230,7 +230,7 @@ Dil istemci sınıfınız uygulandıktan sonra iki öznitelik nasıl bu Visual S
 
 ### <a name="mef"></a>MEF
 
-Visual Studio kullanan [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Extensibility Framework, genişletilebilirlik noktaları yönetmek için yönetilen). [Dışarı](https://msdn.microsoft.com/library/system.componentmodel.composition.exportattribute(v=vs.110).aspx) özniteliği için Visual Studio bu sınıf verilecek bir uzantı noktası olarak toplanmış ve uygun zamanda yüklü olduğunu gösterir.
+Visual Studio kullanan [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Extensibility Framework, genişletilebilirlik noktaları yönetmek için yönetilen). [Dışarı](/dotnet/api/system.componentmodel.composition.exportattribute) özniteliği için Visual Studio bu sınıf verilecek bir uzantı noktası olarak toplanmış ve uygun zamanda yüklü olduğunu gösterir.
 
 MEF kullanmak için VSIX bildirimi bir varlığı olarak MEF tanımlamalısınız.
 

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231232"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320559"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: İlk Visual Studio'daki dağıtımı da bakın
 
@@ -45,7 +45,7 @@ Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son d
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish.png)
 
-- **Visual C++ çalışma zamanı**: Visual C++ çalışma zamanı yerel dağıtım ya da statik bağlama kullanarak dağıtabilirsiniz. Daha fazla bilgi için [yerel Masaüstü uygulamaları dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Visual C++ çalışma zamanı**: Visual C++ çalışma zamanı yerel dağıtım ya da statik bağlama kullanarak dağıtabilirsiniz. Daha fazla bilgi için [yerel Masaüstü uygulamaları dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Azure'da yayımlama
 
@@ -76,7 +76,7 @@ Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son d
 
     Ayrıca, ASP.NET uygulamaları ve Hizmetleri diğer çeşitli yollarla dağıtabilirsiniz. Daha fazla bilgi için [dağıtma ASP.NET web uygulamaları ve Hizmetleri](http://www.asp.net/aspnet/overview/deployment).
 
-- **Visual C++ çalışma zamanı**: merkezi dağıtım kullanarak Visual C++ çalışma zamanı dağıtabilirsiniz. Daha fazla bilgi için [yerel Masaüstü uygulamaları dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Visual C++ çalışma zamanı**: merkezi dağıtım kullanarak Visual C++ çalışma zamanı dağıtabilirsiniz. Daha fazla bilgi için [yerel Masaüstü uygulamaları dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows Masaüstü** Windows masaüstü uygulaması için bir web sunucusu veya ClickOnce dağıtımını kullanarak bir ağ dosya paylaşımına yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ve [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -114,7 +114,7 @@ Daha karmaşık geliştirme ve test uygulamalarınızı sanal ortamlara dağıta
 
 ## <a name="devops-deployment"></a>DevOps dağıtım
 
-Bir ekip ortamında, uygulamanızı sürekli dağıtımını etkinleştirmek için Visual Studio Team Services (VSTS) kullanabilirsiniz. Daha fazla bilgi için [derleme ve yayın](/vsts/build-release/index) ve [azure'a Dağıt](/vsts/deploy-azure/index).
+Bir ekip ortamında, uygulamanızı sürekli dağıtımını etkinleştirmek için Azure işlem hatları kullanabilirsiniz. Daha fazla bilgi için [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts) ve [azure'a Dağıt](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Diğer uygulama türleri için dağıtım
 
@@ -122,7 +122,7 @@ Bir ekip ortamında, uygulamanızı sürekli dağıtımını etkinleştirmek iç
 | --- | --- | --- |
 | **Office uygulama** | Bir eklenti Office Visual Studio'dan yayımlayabilirsiniz. | [Office eklentinizi yayımlama ve dağıtma](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF veya OData hizmeti**  | Diğer uygulamalar, web sunucusuna dağıttığınız WCF RIA hizmetlerini kullanabilir. | [Geliştirme ve WCF veri hizmetlerini dağıtma](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch, Visual Studio 2017'de artık desteklenmiyor, ancak yine de Visual Studio 2015 ve daha önce dağıtılabilir. | [LightSwitch uygulamalarını dağıtma](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch, Visual Studio 2017'de artık desteklenmiyor, ancak yine de Visual Studio 2015 ve daha önce dağıtılabilir. | [LightSwitch uygulamalarını dağıtma](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

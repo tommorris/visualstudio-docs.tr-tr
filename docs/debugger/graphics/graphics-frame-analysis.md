@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512063"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280085"
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
 Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalarda işleme performansını iyileştirmek için Visual Studio grafik Çözümleyicisi'nde kullanın.  
@@ -34,7 +34,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
   
  Çerçeve analizi öncelikle işleme daha hızlı performans elde etmenize yardımcı olmak amacıyla hazırlanmıştır olsa da, eşit olarak belirli performans hedefi için daha iyi görsel kaliteyi elde etmek veya GPU güç tüketimini azaltmak yardımcı olur.  
   
- Çerçeve analizi uygulamanız için neler yapabileceğinizi bir örnek görmek için izleyebilirsiniz [Visual Studio grafik çerçevesi analizi](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) Channel 9 video.  
+ Çerçeve analizi uygulamanız için neler yapabileceğinizi bir örnek görmek için izleyebilirsiniz [Visual Studio grafik çerçevesi analizi](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) Channel 9 video.  
   
 ## <a name="using-frame-analysis"></a>Çerçeve analizi kullanma  
  Çerçeve analizi kullanabilmeniz için önce çalıştığı bir grafik Çözümleyicisi araçlardan birini kullanırken yaptığınız gibi uygulamanızdan grafik bilgilerini yakalama gerekir. Ardından, grafik günlüğü (.vsglog) belge penceresinde **çerçeve analizi** sekmesi.  
@@ -72,14 +72,14 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 #### <a name="timeline"></a>Zaman Çizelgesi  
  Çizim çağrısı zamanlamalara göre başka bir genel bakış zaman çizelgesi gösterir. Daha büyük çubukları için daha uzun çizim süreleri karşılık geldiğinden en pahalı çekme çağrılarını çerçevede hızlıca bulmak için kullanabilirsiniz. Yakalanan çerçeve, çok sayıda çizim çağrıları içerdiğinde, bu toplam uzunluğu çubuğu biridir birden çok çizim çağrıları birleştirilir çağrıları çizin.  
   
- ![Çizim zaman çizelgesini gösterir&#45;maliyetleri çağırın. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![Çizim zaman çizelgesini gösterir&#45;maliyetleri çağırın. ](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  İşaretçi çubuk karşılık gelen çizim çağrısı olayı görmek için çubuğundaki yaslayabilirsiniz. Çubuğu seçerek, o olaya eşitlemek olay listesi neden olur.  
   
 #### <a name="table"></a>Tablo  
  Zaman Çizelgesi altındaki sayılar tablosunun her işleme değişken için her bir çizim çağrısı, uygulamanızın varsayılan işleme göre performanslarını gösterir. Farklı işleme değişken her sütunda görüntülenir ve her satırın en soldaki sütunda tanımlanan bir farklı çizim çağrısını temsil eder; Buradan, bir bağlantı grafik olay Listesi penceresinde olay takip edebilirsiniz.  
   
- ![Özet tablosunu farklı çeşitleri gösterir. ] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![Özet tablosunu farklı çeşitleri gösterir. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  Uygulamanızın temel işleme süresi Özet Tablonun ikinci en soldaki sütuna görüntüler — diğer bir deyişle, bu çizim çağrısı tamamlamak, uygulamanızın varsayılan işleme için geçen süre. Böylece performans geliştirildi olup olmadığını görmek daha kolay olur ve kalan sütunların her işleme değişken göreli performans taban çizgisi yüzdesi olarak gösterir. % 100'den daha büyük yüzde temel uzun sürdü — diğer bir deyişle, performansı düştü — ve yüzde 100'e daha az zaman aldı. daha küçük yüzdeleri — performans oluştu.  
   
@@ -88,7 +88,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 #### <a name="hot-draw-calls"></a>"Sıcak" Çizim çağrıları  
  Büyük bir kısmı tüketen çağrıları çizmek için dikkat getirmek için genel işleme süresini veya, önlenmiş, nedenlerden dolayı bu içeren satırı çok yavaş olabilir "Sık erişimli" bir çizim çağrıları olduğunda gölgeli kırmızı kendi temel zamanlama birden fazla Standart sapma ortalama temel zamanlama çerçevesindeki tüm çizim çağrıları daha uzun.  
   
- ![Bu DrawIndexed çağrı sıcak ve soğuk çeşitlemesi vardır. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![Bu DrawIndexed çağrı sıcak ve soğuk çeşitlemesi vardır. ](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>İstatistiksel önemi  
  Yüksek uygunluğa sahip çeşitlemeleri işleme için dikkat getirmek için çerçeve analizi istatistiksel önemi, her işleme değişken belirler ve önemli olanları kalın olarak görüntüler. Yeşil olarak performansı olanları ve kırmızı olarak performansı düşürebilir olanları gösterir. Bu, normal türü olarak istatistiksel olmayan sonuçlar görüntüler.  
@@ -103,12 +103,12 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Donanım sayaçları desteklemeyen platformları  
  Çoğu platformda donanım GPU sayaçları tam olarak desteklemeyen — bunlar, şu anda Intel, AMD ve NVIDIA tarafından sunulan tüm GPU içerir. Toplamak için donanım sayaç olduğunda, yalnızca bir Ayrıntıları tablosu görüntülenir ve tüm çeşitleri ortalama mutlak zamanlamasını içerir.  
   
- ![Ayrıntı tablosunda ve bazı kayıttan yürütme çeşitleri. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![Ayrıntı tablosunda ve bazı kayıttan yürütme çeşitleri. ](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Donanım sayaçları destekleyen platformlar  
  Donanım GPU sayaçları destekleyen platformlar için — örneğin, NVIDIA T40 SOC ve tüm Qualcomm SOC — çeşitli ayrıntıları tabloları görüntülenir, her değişken için bir tane. Her bir kullanılabilir donanım sayaç her işleme değişken için toplanır ve kendi ayrıntıları tabloda görüntülenir.  
   
- ![Donanım sayaçları desteklendiği durumlarda görüntülenir. ] (media/pix_frame.png "pix_frame")  
+ ![Donanım sayaçları desteklendiği durumlarda görüntülenir. ](media/pix_frame.png "pix_frame")  
   
  Donanım sayaç bilgileri, performans sorunlarına neden çok kesin olarak belirlemenize yardımcı olabilecek her çizim çağrısı için belirli donanım platformlar davranışı çok ayrıntılı bir görünümünü sağlar.  
   

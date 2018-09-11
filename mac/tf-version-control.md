@@ -1,31 +1,31 @@
 ---
-title: TF sürüm denetimi
-description: Team Foundation Server veya Visual Studio Team Services, Team Foundation sürüm denetimi ile bağlanma.
+title: Team Foundation sürüm denetimi (TFVC)
+description: Team Foundation Server veya Team Foundation sürüm denetimi (TFVC) Azure DevOps hizmetleriyle bağlanıyor.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/03/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624076"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279848"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation sürüm denetimine bağlama 
 
 > [!NOTE]
 > **Not**: Team Foundation sürüm denetimi desteği şu anda Önizleme aşamasındadır ve bazı işlevler henüz tam olarak çalışmıyor. Sizden geri bildirim herhangi bir sorun üzerinde isteriz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/41/index.html). Daha fazla değişiklik hala gelen üzeresiniz!
 
-Visual Studio Team Services (VSTS) ve Team Foundation Server (TFS), sürüm denetimi iki modeli sağlar: dağıtılan Git sürüm denetimi ve Team Foundation sürüm denetimi (olan TFVC), merkezi sürüm denetimi. Mac için Visual Studio Team Foundation sürüm denetimi kullanmak için bu makalede bir genel bakış ve bir başlangıç noktası sağlar
+Azure depoları, sürüm denetimi, iki modeli sağlar: dağıtılan Git sürüm denetimi ve Team Foundation sürüm denetimi (olan TFVC), merkezi sürüm denetimi. Mac için Visual Studio ile TFVC kullanmak için bu makalede bir genel bakış ve bir başlangıç noktası sağlar
 
 ## <a name="requirements"></a>Gereksinimler
 
 * Visual Studio Community, Professional veya Enterprise Mac 7.5 veya sonraki bir sürümü için.
-* Visual Studio Team Services veya Team Foundation Server 2013 ve üzeri sürümler.
-* Visual Studio Team Services veya Team Foundation Server, Team Foundation sürüm denetimi kullanmak üzere yapılandırılmış bir proje.
+* Azure DevOps Services veya Team Foundation Server 2013 ve üzeri sürümler.
+* Azure DevOps Services veya Team Foundation Server, Team Foundation sürüm denetimi kullanmak üzere yapılandırılmış bir proje.
 
 ## <a name="installation"></a>Yükleme
 
@@ -47,17 +47,19 @@ Her sürümdeki yenilikler hakkında daha fazla bilgi için bkz: [sürüm notlar
 
 ## <a name="using-the-add-in"></a>Eklenti kullanma
 
-Uzantıyı yükledikten sonra seçin **sürüm denetimi > TFS/VSTS > Uzak depodan açık** menü öğesi. 
+Uzantıyı yükledikten sonra seçin **sürüm denetimi > TFS/Azure DevOps > Uzak depodan açık** menü öğesi.
 
-Visual Studio Team Services veya Team Foundation Server kullanmaya başlayın ve basın seçin **devam**:
+  ![Uzantı açmak için menü öğesi](media/tfvc-source-control-explorer-devops.png)
 
-  ![Bir sunucuyla bağlanma](media/tfvc-choose-server-type.png)
+VSTS veya Team Foundation Server kullanmaya başlayın ve basın seçin **devam**:
 
-### <a name="vsts-authentication"></a>VSTS kimlik doğrulaması
+  ![Bir sunucuyla bağlanma](media/tfvc-choose-server-type-devops.png)
 
-VSTS üzerinde barındırılan bir proje seçtiğinizde, Microsoft hesabı ayrıntılarını girin istenir:
+### <a name="azure-repos-authentication"></a>Azure depoları kimlik doğrulaması
 
-  ![Bir VSTS Server'a bağlanma](media/tfvc-vsts-login.png)
+Azure depoları üzerinde barındırılan bir proje seçtiğinizde, Microsoft hesabı ayrıntılarını girin istenir:
+
+  ![Azure depoları ile bağlanma](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>TFS kimlik doğrulaması
 
@@ -73,10 +75,10 @@ Başarıyla kimlik doğrulaması yaptınız sonra hesabı ile ilişkili olan dep
 
 Bu iletişim kutusunda, aşağıdaki düğümleri düzenlenmiştir:
 
-- VSTS hesabı veya koleksiyon – oturum açtığınız Microsoft hesabı için bağlı olan tüm hesapları bu görüntüler.
-- Takım projeleri takım projelerine – her VSTS, bir dizi olabilir. Bir takım projesi, kaynak kodu, iş öğeleri ve otomatik yapılara barındırıldığı ' dir.
+- Azure DevOps hizmetler kuruluşundan veya koleksiyon – Bu, oturum açtığınız Microsoft hesabı bağlı tüm organizasyonlar görüntüler.
+- Her Kuruluş ve koleksiyon - projeleri projelerinin sayısına sahip olabilir. Kaynak kodu, iş öğeleri ve otomatik yapılara barındırıldığı bir projedir.
 
-Bu noktada, arama filtre ve bir proje veya hesap adı.
+Bu noktada, arama filtre ve bir proje veya kuruluş adına göre.
 
 ### <a name="adding-a-new-server"></a>Yeni bir sunucu ekleme
 
@@ -86,7 +88,7 @@ Listeye yeni bir sunucu eklemek için basın **konak Ekle** düğmesini **kaynak
 
 Listeden sağlayıcıyı seçin ve kimlik bilgilerinizi girin:
 
-![Kaynak denetimi sağlayıcısı için seçeneğini gösteren iletişim](media/tfvc-add-new-creds.png)
+![Kaynak denetimi sağlayıcısı için seçeneğini gösteren iletişim](media/tfvc-add-new-creds-devops.png)
 
 ## <a name="creating-a-new-workspace"></a>Yeni bir çalışma alanı oluşturma
 
@@ -102,9 +104,7 @@ Yeni bir çalışma alanınız için yerel yolunu ve adını ayarlar ve **çalı
 
 Bir çalışma alanı oluşturup projenizi eşlenen ile çalışmaya başlayabilir _kaynak kod Gezgini_.
 
-Kaynak kod gezginini açmak için seçmeniz **sürüm denetimi > TFS/VSTS > Kaynak Denetim Gezgini**:
-
-![Kaynak kod gezginini açmak için menü öğesi](media/tfvc-source-control-explorer.png)
+Kaynak kod gezginini açmak için seçmeniz **sürüm denetimi > TFS/Azure DevOps > Kaynak Denetim Gezgini** menü öğesi.
 
 Kaynak kod Gezgini eşlenen tüm projeler, dosyalar ve klasörler gitmenizi sağlar. Ayrıca gibi tüm temel kaynak denetim eylemleri gerçekleştirmenize olanak sağlar:
 
@@ -122,7 +122,7 @@ Bu eylemlerin çoğunu, projenin bağlam eylemleri aracılığıyla sunulur:
 
 ## <a name="managing-workspaces"></a>Çalışma alanlarını yönetme
 
-Henüz yapmadıysanız, açıklandığı bir çalışma alanı oluşturma [çalışma alanı oluşturma](#creating-a-new-workspace) bölümünde seçeneğinde kaynak kod Gezgini boştur:
+Açıklandığı zaten bir çalışma alanı oluşturmadıysanız, [çalışma alanı oluşturma](#creating-a-new-workspace) bölümünde seçeneğinde kaynak kod Gezgini boştur:
 
 ![boş bir kaynak kod Gezgini](media/tfvc-setup-empty-sce.png) 
 
@@ -134,11 +134,11 @@ Uzak bir yerel çalışma alanı projenizle ayarlamak için aşağıdaki adımla
     
     ![Varsayılan seçenekleri gösteren yeni bir çalışma alanı iletişim kutusu oluşturma](media/tfvc-workspace1.png) 
 
-1. Sunucunuzdaki tüm takım projeleri aynı çalışma alanına eşleme her bir proje seçin veya tıklayın "$" klasörü seçin **Tamam**:
+1. Sunucunuzdaki tüm projeleri aynı çalışma alanına eşleme her bir proje seçin veya tıklayın "$" klasörü seçin **Tamam**:
     
     ![Tüm projeler gösteren klasör iletişim kutusu için Gözat](media/tfvc-workspace2.png) 
 
-1. Mp projeleri için istediğiniz ve yerel makinenizdeki konumu seçin **Klasör Seç**.
+1. Yerel makinenizde ve projeleri için harita tıklayın istediğiniz konumu seçin **Klasör Seç**.
 1. Yeni çalışma alanı ayrıntılarını tuşlarına basarak onaylayın **Tamam**
     
     ![Eklenen çalışma klasörü ile yeni çalışma alanı iletişim kutusu oluşturma](media/tfvc-workspace3.png) 
@@ -157,10 +157,10 @@ Bir sunucunun kimliğini doğrulamak için aşağıdaki seçenekler kullanılabi
 - Temel
 - NTLM
 
-Bunu etkinleştirmek için gereken temel kimlik doğrulaması kullanacak şekilde **alternatif kimlik doğrulama bilgilerini** vsts'de aşağıdaki adımları izleyerek:
+Bunu etkinleştirmek için gereken temel kimlik doğrulaması kullanacak şekilde **alternatif kimlik doğrulama bilgilerini** aşağıdaki adımları izleyerek Azure DevOps Hizmetleri:
 
-1. VSTS hesabınız (https://{youraccount}.visualstudio.com) için hesap sahibi olarak oturum açın.
-2. Hesap, araç çubuğunda, dişli simgesini seçin ve seçin **ilke**:
+1. Azure DevOps Hizmetleri kuruluşunuza sahibi olarak oturum açın (https://dev.azure.com/{organization}/{project}).
+2. Kuruluş, araç çubuğunda, dişli simgesini seçin ve seçin **ilke**:
     
     ![Seçili İlkesi ayarları seçeneği](media/tfvc-auth2.png) 
 
@@ -172,7 +172,7 @@ Bunu etkinleştirmek için gereken temel kimlik doğrulaması kullanacak şekild
 
 Geliştirme makinenizde Team Foundation sürüm denetimi (TFVC) kurmak ayarlamak için **gerekir** açıklandığı bir çalışma alanı oluşturma [çalışma alanlarını yönetme](#managing-workspaces) bölümü.
 
-Kaynak denetimi Gezgini'nde basın **çalışma alanlarını yönet** düğmesi. Takım projesini geliştirme makinenizde bir klasörü eşlemek için adımları izleyin.
+Kaynak denetimi Gezgini'nde basın **çalışma alanlarını yönet** düğmesi. Projenin geliştirme makinenizde bir klasörü eşlemek için adımları izleyin.
 
 ### <a name="i-do-not-see-any--all-of-my-projects"></a>Göremiyorum / all, projelerim
 

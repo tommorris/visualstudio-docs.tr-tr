@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179248"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283216"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodu bir web performans testi için özel bir ayıklama kuralı
 
@@ -31,7 +31,7 @@ Kendi ayıklama kuralları oluşturabilirsiniz. Bunu yapmak için kendi kurallar
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Özel bir ayıklama kuralı oluşturmak için
 
-1.  Bir Test içeren bir web performans testi projesi açın.
+1.  Bir web performans testi içeren bir Test projesi açın.
 
 2.  (İsteğe bağlı) Ayıklama kuralı depolanacağı ayrı bir sınıf kitaplığı projesi oluşturun.
 
@@ -46,7 +46,7 @@ Kendi ayıklama kuralları oluşturabilirsiniz. Bunu yapmak için kendi kurallar
 
 6.  (İsteğe bağlı) Test projesinde özel bir ayıklama kuralı içeren sınıf kitaplığı projesine bir başvuru ekleyin.
 
-7.  Bir web performans testinde Test projesinde, açık **Web Performans Testi Düzenleyicisi**.
+7.  Bir web performans testinde Test projesinde açık **Web Performans Testi Düzenleyicisi**.
 
 8.  Özel ayıklama kuralı eklemek için bir web performans testi isteği seçin sağ tıklayın ve **Ayıklama Kuralı Ekle**.
 

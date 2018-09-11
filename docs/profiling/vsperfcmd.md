@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6895cc7a7b390f83f717158b78e65aa8336d8a98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774826"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320988"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* aracı, performans veri toplamayı başlatır ve durdurur için kullanılır. Aşağıdaki sözdizimini kullanır:  
@@ -83,7 +83,7 @@ VSPerfCmd [/U] [/options]
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**Admin:security** \< **izin&#124;REDDET**> *sağ*[ *sağ*] \< *kullanıcı*  &#124; *Grubu*>|Erişim izni verdiği veya belirtilen kullanıcı veya profil oluşturma hizmetleri için Grup erişimi engeller.<br /><br /> `Right` aşağıdakilerden biri olabilir:<br /><br /> CrossSession - hizmete profil oluşturma oturumunu kesecek şekilde kullanıcı erişimi sağlar.<br /><br /> SampleProfiling - kullanıcı erişim örnekleme profil oluşturmayı etkinleştirmek için bir sürücü için sağlar. İzleme profil oluşturma sırasında çekirdek geçiş bilgilere erişmek için de kullanılır.<br /><br /> FullAccess - kullanıcı verir CrossSession hem SampleProfiling erişim.|  
+|**Admin:security**, \< **izin&#124;REDDET**>, *sağ*[ *sağ*], \< *kullanıcı* &#124; *Grubu*>|Erişim izni verdiği veya belirtilen kullanıcı veya profil oluşturma hizmetleri için Grup erişimi engeller.<br /><br /> `Right` aşağıdakilerden biri olabilir:<br /><br /> CrossSession - hizmete profil oluşturma oturumunu kesecek şekilde kullanıcı erişimi sağlar.<br /><br /> SampleProfiling - kullanıcı erişim örnekleme profil oluşturmayı etkinleştirmek için bir sürücü için sağlar. İzleme profil oluşturma sırasında çekirdek geçiş bilgilere erişmek için de kullanılır.<br /><br /> FullAccess - kullanıcı verir CrossSession hem SampleProfiling erişim.|  
 |**Admin:Security, listesi**|Profil oluşturma hizmetleri geçerli durumunu listeler ve kullanıcı izinleri listeler.|  
 |**Yönetici:** \< *hizmet*&#124;*sürücü*>\<**Başlat**&#124;**Durdur**  &#124; **Yükleme**&#124;**Kaldır**>|Başlatır, durdurur, yükler veya profil oluşturma hizmet bileşenini (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) kaldırır.|  
 |**Yönetici:** \< *hizmet*&#124;*sürücü*>**AutoStart**\<**üzerinde** &#124; **Kapalı**>|Etkinleştirir veya yeniden başlatmadan sonra profil oluşturma hizmetinin (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) otomatik olarak başlatılmasını devre dışı bırakır.|  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233158"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283672"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 
@@ -84,7 +84,7 @@ Android için Visual Studio öykünücüsü Android cihaz öykünen bir masaüst
  Hedeflemek istediğiniz profilleri kümesine yükledikten sonra bu yeni profiller doğrudan Manager'dan yeşil tuşlarına basarak başlatabilirsiniz **Play** düğmesi. Bunlar herhangi bir Visual Studio platformlar arası mobil proje türünü hata ayıklama hedef açılır menüde görünür.  
   
 ##  <a name="FeaturesTest"></a> Öykünücüde test etme özellikleri  
- Öykünücüde test özellikleri hakkında ayrıntılı bilgi için bkz. Bu [blog gönderisi](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Öykünücüde test özellikleri hakkında ayrıntılı bilgi için bkz. Bu [blog gönderisi](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/).  
   
 ##  <a name="FeaturesNonTest"></a> Öykünücüde test etme özellikleri  
  Aşağıdaki listede Android platform özellikleri açıklar, **olamaz** öykünücüsünde test edin. Bu özellikler fiziksel bir cihaz üzerinde test gerekir.  

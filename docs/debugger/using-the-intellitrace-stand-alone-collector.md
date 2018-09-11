@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85f146d567f429c8104017ef9441676f9cf3209b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624080"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283749"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace tek başına toplayıcıyı kullanma
 **IntelliTrace collector** IntelliTrace Tanılama verilerini uygulamalarınız için üretim sunucularına ya da diğer ortamlarda hedef makinede Visual Studio yüklemeden ve değiştirmeden toplamanıza olanak tanır. Sistem ortam hedefleyin. IntelliTrace collector, web, SharePoint, WPF ve Windows Forms uygulamaları üzerinde çalışır. Veri toplama işiniz bittiğinde kaldırmak için toplayıcıyı silmeniz yeterlidir.
@@ -382,7 +382,7 @@ ms.locfileid: "42624080"
 
 -   Bir IntelliTrace hata ayıklama oturumu Visual Studio Enterprise, bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).
 
--   Microsoft Test Yöneticisi'nde bir test oturumdan, bkz: [nasıl yapılır: hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama](http://msdn.microsoft.com/Library/02b6716f-569e-4961-938a-e790a0c74b5c).
+-   Microsoft Test Yöneticisi'nde bir test oturumdan, bkz: [nasıl yapılır: hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
 
 ## <a name="where-can-i-get-more-information"></a>Daha fazla bilgiyi nereden bulabilirim?
  [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)

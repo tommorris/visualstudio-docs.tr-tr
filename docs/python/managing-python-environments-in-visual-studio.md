@@ -1,7 +1,7 @@
 ---
 title: Python ortamları ve yorumlayıcılarını yönetin
 description: Genel, sanal yönetmek için Python ortamları penceresi ve Python yorumlayıcılarını ve paketleri yükleme ve Visual Studio projelerine ortamları atama conda ortamları kullanın.
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586589"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320832"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio'da Python ortamlarını yönetme
 
@@ -38,7 +38,7 @@ Bir ortamda paketleri yüklemek isterseniz, başvurmak [paketleri sekmesinde ba�
 
 ### <a name="global-environments"></a>Genel ortam
 
-Her bir Python yükleme (örneğin, Python 2.7, Python 3.6, Anaconda 4.4.0, vs. bkz [yüklemeniz Python yorumlayıcılarını](installing-python-interpreters.md)) kendi genel ortam tutar. Her ortam, belirli bir Python yorumlayıcısı, kendi standart kitaplığı ve bir dizi önceden yüklenmiş paketler oluşur. Genel bir ortama bir paket yükleme o ortamı kullanarak tüm projeleri için kullanılabilir yapar. Ortamı bir dosya sistemini koruma alanında bulunuyorsa, (içinde *c:\program dosyaları*, örneğin), sonra da paketleri yüklemek için yönetici ayrıcalıkları gerekiyor.
+Her bir Python yükleme (örneğin, Python 2.7, Python 3.6, Python 3.7, Anaconda 4.4.0, vb. için bkz [yüklemeniz Python yorumlayıcılarını](installing-python-interpreters.md)) kendi genel ortam tutar. Her ortam, belirli bir Python yorumlayıcısı, kendi standart kitaplığı ve bir dizi önceden yüklenmiş paketler oluşur. Genel bir ortama bir paket yükleme o ortamı kullanarak tüm projeleri için kullanılabilir yapar. Ortamı bir dosya sistemini koruma alanında bulunuyorsa, (içinde *c:\program dosyaları*, örneğin), sonra da paketleri yüklemek için yönetici ayrıcalıkları gerekiyor.
 
 Genel ortamları, bilgisayardaki tüm projeleri için kullanılabilir. Visual Studio'da bir proje için başka bir özellikle seçmediğiniz sürece, tüm projeler için kullanılan varsayılan olarak genel bir ortam seçin. Daha fazla bilgi için [bir proje için bir ortam seçin](selecting-a-python-environment-for-a-project.md).
 
@@ -76,6 +76,9 @@ Conda ortamları içeren bir proje depolanmadığından bunlar genel ortamlara b
 Visual Studio 2017 sürüm 15.7 ve üzeri conda ortamları otomatik olarak algılar ve bunları görüntüler **Python ortamları** sonraki bölümde açıklandığı gibi penceresi.
 
 ## <a name="the-python-environments-window"></a>Python ortamları penceresi
+
+> [!Note]
+> Bu bölümde gösterilen ekran görüntüleri, Visual Studio 15,8 temsil eder. Visual Studio sürümünüze bağlı olarak biraz farklı kullanıcı Arabirimi görebilirsiniz.
 
 Visual Studio bildiği ortamlar görüntülenir **Python ortamları** penceresi. Pencereyi açmak için aşağıdaki yöntemlerden birini kullanın:
 

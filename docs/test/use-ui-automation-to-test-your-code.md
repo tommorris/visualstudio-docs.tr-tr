@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381165"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321209"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
@@ -35,7 +35,7 @@ Aşağıdaki çizimde gösterildiği gibi tipik geliştirme deneyimi biri, başl
 
 Kodlanmış UI testi oluşturmak kolaydır. Yalnızca el ile çalışırken test gerçekleştirmek **kodlanmış UI Test Oluşturucusu** arka planda çalışır. Ayrıca, hangi belirli alanlarla değerleri görünmelidir belirtebilirsiniz. **Kodlanmış UI Testi Oluşturucusu** eylemlerinizi kaydeder ve bunları kod oluşturur. Test oluşturulduktan sonra bir dizi eylem değiştirmenize olanak tanıyan özelleştirilmiş bir düzenleyici düzenleyebilirsiniz.
 
-Alternatif olarak, Microsoft Test Yöneticisi'nde kaydedildiği bir test çalışması'iniz varsa, kod üretebilirsiniz ekleyebilirsiniz. Daha fazla bilgi için [kayıt ve yürütme geri el ile testleri](/vsts/test/mtm/record-play-back-manual-tests).
+Alternatif olarak, Microsoft Test Yöneticisi'nde kaydedildiği bir test çalışması'iniz varsa, kod üretebilirsiniz ekleyebilirsiniz. Daha fazla bilgi için [kayıt ve yürütme geri el ile testleri](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts).
 
 Özelleştirilmiş **kodlanmış UI Test Oluşturucusu** bunu kolayca oluşturma ve düzenleme kodlanmış UI testleri, test yerine kodlama becerilerinizi ana yoğunlaşmıştır bile Düzenleyicisi yapın. Ancak, böylece kopyalayıp uyarlamak basit bir geliştirici ve test daha gelişmiş bir biçimde genişletmek istediğiniz kodu yapılandırılmıştır. Örneğin, bir Web sitesinden bir şey satın almak için bir testi kaydedin ve ardından öğe sayısını satın bir döngü eklemek için oluşturulan kodu düzenleyin.
 
@@ -441,7 +441,7 @@ Kodlanmış UI test günlüklerini kullanarak kodlanmış UI testlerini analiz e
 
 - [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)
 
-- [Yapı işleminizdeki testleri çalıştırın](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [Yapı işleminizdeki testleri çalıştırın](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Nasıl yapılır: test aracınızı masaüstüyle etkileşim kuran testleri çalıştırmak için ayarlama](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Kodlanmış UI test günlüklerini kullanarak kodlanmış UI testlerini analiz e
 
 - [Kodlanmış UI testleri ve eylem kayıtları genişletin](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Kodlanmış UI testleri genellikle el ile testleri otomatik hale getirmek için kullanılır. El ile testleri hakkında daha fazla bilgi için bkz. [Microsoft Test Yöneticisi ile el ile testler](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager). Otomatikleştirilmiş testleri hakkında daha fazla bilgi için bkz: [Visual Studio'daki Test Araçları](../test/improve-code-quality.md).
+Kodlanmış UI testleri genellikle el ile testleri otomatik hale getirmek için kullanılır. El ile testleri hakkında daha fazla bilgi için bkz. [Microsoft Test Yöneticisi ile el ile testler](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Otomatikleştirilmiş testleri hakkında daha fazla bilgi için bkz: [Visual Studio'daki Test Araçları](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

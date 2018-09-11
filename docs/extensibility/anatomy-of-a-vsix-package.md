@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0279ffaf8f1024b4c11fb0689eed03f577e25a6
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152454"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281763"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Bir VSIX paketinin anatomisi
 Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bir veya daha fazla Visual Studio uzantıları, Visual Studio meta verileri ile birlikte içeren bir dosya kullanır. Meta verilerin yer alan VSIX bildirimi içinde ve *[Content_Types] .xml* dosya. Bir VSIX paketi de bir veya daha fazla içerebilir *Extension.vsixlangpack* sağlamak üzere dosyaları Kurulum metninde yerelleştirilmiş ve bağımlılıklarını yüklemek için ek VSIX paketleri içerebilir.  
@@ -31,7 +31,7 @@ Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bi
 >  VSIX paketlerinde dosyalarının adlarını boşluklar içermemelidir ya da devre dışı olarak Tekdüzen Kaynak Tanımlayıcıları (URI) içinde ayrılmış karakterleri tanımlanan altında [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>VSIX bildirimi  
- VSIX bildirimi uzantının yüklenmesini ve aşağıdaki VSX şeması hakkında bilgi içerir. Daha fazla bilgi için [VSIX Uzantı Şeması 1.0 başvurusu](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Bir örnek VSIX bildirimi için bkz: [PackageManifest öğesi (kök öğe, VSX şema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+ VSIX bildirimi uzantının yüklenmesini ve aşağıdaki VSX şeması hakkında bilgi içerir. Daha fazla bilgi için [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Bir örnek VSIX bildirimi için bkz: [PackageManifest öğesi (kök öğe, VSX şema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
  VSIX bildirimi adlandırılmalıdır `extension.vsixmanifest` zaman bunu dahil bir ^ .vsix * dosya.  
   
@@ -46,7 +46,7 @@ Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bi
   
  Bir kullanıcı, bağımlılıklara sahip bir uzantıyı yüklemeye çalışırsa, yükleyici, gerekli derlemeleri kullanıcı sistemde yüklü olduğunu doğrular. Gerekli derlemeleri bulunmazsa, **Uzantılar ve güncelleştirmeler** eksik derlemelerin bir listesini görüntüler.  
   
- Bir veya daha fazla uzantı bildirimi içeriyorsa, [başvuru](http://msdn.microsoft.com/en-us/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) öğeleri **Uzantılar ve güncelleştirmeler** sistemde yüklü uzantıları her başvurunun bildirimi karşılaştırır ve yükler Başvurulan uzantı zaten yüklü değilse. Başvurulan uzantı önceki bir sürümü yüklüyse, yeni sürümü değiştirir.  
+ Bir veya daha fazla uzantı bildirimi içeriyorsa, [başvuru](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100)) öğeleri **Uzantılar ve güncelleştirmeler** sistemde yüklü uzantıları her başvurunun bildirimi karşılaştırır ve yükler Başvurulan uzantı zaten yüklü değilse. Başvurulan uzantı önceki bir sürümü yüklüyse, yeni sürümü değiştirir.  
   
  Birden çok proje çözümde bir proje, aynı çözümdeki başka bir projeye bir başvuru içeriyorsa, proje bağımlılıklarını VSIX paketini içerir. Başvuru iç projesi için ve ardından tıklayarak bu davranışı geçersiz kılabilirsiniz **özellikleri** ayarlama penceresinde **çıktı grupları dahil vsıx'te** özelliğini `BuiltProjectOutputGroup`.  
   
@@ -55,7 +55,7 @@ Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bi
 ## <a name="installation-location"></a>Yükleme konumu  
  Yükleme sırasında **Uzantılar ve güncelleştirmeler** altında bir klasöre VSIX paketinin içeriği arar *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- Varsayılan olarak, çünkü yalnızca geçerli kullanıcının yükleme uygular *% LocalAppData %* kullanıcıya özgü dizinidir. Ancak ayarlarsanız [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b) için bildirimin öğesi `True`, uzantı altında yüklü *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* ve bilgisayarın tüm kullanıcıları için kullanılabilir olacak.  
+ Varsayılan olarak, çünkü yalnızca geçerli kullanıcının yükleme uygular *% LocalAppData %* kullanıcıya özgü dizinidir. Ancak ayarlarsanız [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) için bildirimin öğesi `True`, uzantı altında yüklü *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* ve bilgisayarın tüm kullanıcıları için kullanılabilir olacak.  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* dosyayı genişletilmiş dosya türlerini tanımlayan *.vsix* dosya. Visual Studio Paket yüklemesi sırasında bu dosyayı kullanır ancak dosyayı yüklemez. Bu dosya hakkında daha fazla bilgi için bkz. [[Content_types] .xml dosyasının yapısı](the-structure-of-the-content-types-dot-xml-file.md).  

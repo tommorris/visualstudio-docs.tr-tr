@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ac45a535a3c9f3a8ec8a45e00d46a028db51b014
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775316"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283119"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile çalışmaya başlama
 
@@ -85,7 +85,7 @@ Visual Studio ile Unity 2018.1 başlayarak, varsayılan harici kod Düzenleyicis
 
 - Visual Studio 2015 Community, Visual Studio 2015 Professional veya Visual Studio 2015 Enterprise için:
 
-   [Unity için Visual Studio 2015 Araçları'nı indirin](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+   [Unity için Visual Studio 2015 Araçları'nı indirin](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
 > Unity için Visual Studio Araçları Unity 5.2 gerektirir ve yukarıdaki Visual Studio'nun sürümü yanı sıra Visual Studio Community, Professional, Premium veya Enterprise gibi uzantıları destekleyen. Unity için Visual Studio Araçları Unity yüklemenizde etkinleştirildiğini doğrulamak için **hakkında Unity** gelen **yardımcı** menü metni ara "Microsoft Visual Studio Araçları ve Unity için etkin" olarak sol alt iletişim.

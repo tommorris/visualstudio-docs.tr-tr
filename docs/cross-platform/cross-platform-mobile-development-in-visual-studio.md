@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: f47d5c013de34a64591100b8a459f6b18721e0b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0251dd1630ca20e13bcc2238acb32a50031dd122
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635609"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280330"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -82,7 +82,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 |[Evrensel Windows platformu giriş](/windows/uwp/get-started/universal-application-platform-guide)|
 |[İlk uygulamanızı oluşturma](/windows/uwp/get-started/your-first-app)|
 |[Evrensel Windows Platformu (UWP) için uygulama geliştirme](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Evrensel Windows Platformu (UWP) uygulamaları geçirme](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
+|[Evrensel Windows Platformu (UWP) uygulamaları geçirme](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a> Android, iOS ve Windows (HTML/JavaScript) için uygulama oluşturma
 
@@ -136,9 +136,9 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 |**Daha fazla bilgi edinin**|
 |--------------------|
 |[Visual Studio'yu indirin.](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Visual C++ platformlar arası mobil geliştirme araçlarını yükleyin.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Kitaplığı)|
+|[Visual C++ platformlar arası mobil geliştirme araçlarını yükleyin.](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Kitaplığı)|
 |[C++ birden çok platformu hedefleyecek şekilde kullanma hakkında daha fazla bilgi edinin.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Neleri gerekir ve ardından Android için bir yerel etkinlik uygulaması oluşturma yükleme](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Kitaplığı)|
+|[Neleri gerekir ve ardından Android için bir yerel etkinlik uygulaması oluşturma yükleme](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Kitaplığı)|
 |[C++ kodu ile Android ve Windows uygulamaları paylaşma hakkında daha fazla bilgi edinin](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[C++ platformlar arası mobil geliştirme örnekleri](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Kitaplığı)|
 |[C++ için ek platformlar arası mobil geliştirme örnekleri](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
@@ -158,12 +158,12 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 |[Unity Visual Studio ile oyun oluşturma hakkında daha fazla bilgi edinin](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Unity için Visual Studio Araçları hakkında daha fazla bilgi](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Unity için Visual Studio Araçları kullanmaya başlayın](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[Son geliştirmeler hakkında Unity 2.0 önizlemesi için Visual Studio Araçları okuma](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (Visual Studio blogu)|
+|[Son geliştirmeler hakkında Unity 2.0 önizlemesi için Visual Studio Araçları okuma](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio blogu)|
 |[Unity 2.0 önizlemesi için Visual Studio Araçları için bir tanıtım izleyin](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
 |[Unity hakkında bilgi edinin](http://unity3d.com/) (Unity Web sitesi)|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Office 365 API'lerini bir Visual Studio projesine ekleme](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Office 365 API'lerini bir Visual Studio projesine ekleme](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
 - [Azure uygulama hizmetleri - mobil uygulamalar](https://azure.microsoft.com/services/app-service/mobile/)
 - [Visual Studio App Center](https://docs.microsoft.com/appcenter)

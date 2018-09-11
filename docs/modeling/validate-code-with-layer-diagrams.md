@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567200"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321131"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -218,7 +218,7 @@ Visual Studio'nun bu sürümünde, bağımlılık doğrulaması gerçek zamanlı
 
  Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors). Hakkında daha fazla bilgi için [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], bkz:
 
--   [Derleme ve yayınlama](/vsts/build-release/index)
+-   [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts)
 
 -   [Yapı işleminiz için varsayılan şablonu kullanın](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

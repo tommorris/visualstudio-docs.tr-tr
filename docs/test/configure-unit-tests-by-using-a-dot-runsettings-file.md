@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901491"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280291"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
@@ -24,7 +24,7 @@ Kullanarak birim testlerini Visual Studio'da yapılandırılabilir bir *.runsett
 
 ## <a name="specify-a-run-settings-file"></a>Çalıştırma ayarları dosyasını belirtin
 
-Çalıştırma ayarları dosyaları, gelen çalıştırmak testlerini yapılandırma için kullanılabilir [komut satırı](vstest-console-options.md), IDE veya içinde bir [iş akışınızı oluşturma](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) Visual Studio Team Services (VSTS) veya Team Foundation Server (TFS) kullanarak.
+Çalıştırma ayarları dosyaları, gelen çalıştırmak testlerini yapılandırma için kullanılabilir [komut satırı](vstest-console-options.md), IDE veya içinde bir [iş akışınızı oluşturma](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) Azure Test planları veya Team Foundation Server (TFS) kullanarak.
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>IDE içinde çalıştırma ayarları dosyasını belirtin
 
@@ -256,4 +256,4 @@ Bu ayarlar sahip test yöntemlerini çalıştıran test bağdaştırıcısına �
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio test görevi (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio test görevi (Azure Test planları)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

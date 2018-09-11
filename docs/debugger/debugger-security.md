@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 640c127d9e82a78f629365141c5948d21eafcf3c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d7cc0e24255da8c9fdb8ab3e4e49f030d758d11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176001"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279576"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
 Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan hata ayıklama yapılırken erişemeyecek çok geniş powers sağlar. Kötü amaçlı bir hata ayıklayıcı hataları ayıklanmakta olan makinede yaygın zarar başını.  
@@ -59,7 +59,7 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
  Daha fazla bilgi için [uzaktan hata ayıklama](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Güvenlik hata ayıklamasını web Hizmetleri  
- Yerel olarak hata ayıklama daha güvenlidir, ancak sonra büyük olasılıkla sahip olmadığınız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] web sunucusunda yüklüyse, yerel hata ayıklama pratik olmayabilir. Genel olarak, Web hizmetlerinde hata ayıklama işlemi, uzaktan, geliştirme sırasında bu nedenle uzaktan hata ayıklama güvenlik önerilerini de hata ayıklama Web Hizmetleri için geçerli dışında gerçekleştirilir. Ek en iyi yöntemlerden bazıları aşağıda verilmiştir. Daha fazla bilgi için [hata ayıklama XML Web Hizmetleri](http://msdn.microsoft.com/en-us/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Yerel olarak hata ayıklama daha güvenlidir, ancak sonra büyük olasılıkla sahip olmadığınız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] web sunucusunda yüklüyse, yerel hata ayıklama pratik olmayabilir. Genel olarak, Web hizmetlerinde hata ayıklama işlemi, uzaktan, geliştirme sırasında bu nedenle uzaktan hata ayıklama güvenlik önerilerini de hata ayıklama Web Hizmetleri için geçerli dışında gerçekleştirilir. Ek en iyi yöntemlerden bazıları aşağıda verilmiştir. Daha fazla bilgi için [hata ayıklama XML Web Hizmetleri](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 -   Tehlikede bir Web sunucusunda hata ayıklama etkinleştirmeyin.  
   
@@ -83,4 +83,4 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)   
  [Güvenlik Uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Güvenlik Uyarısı: Hata Ayıklayıcı Güvenilmeyen Komut Yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

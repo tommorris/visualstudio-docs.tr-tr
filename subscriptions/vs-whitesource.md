@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil olan WhiteSource Bolt aboneliği
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624273"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279173"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt, Visual Studio abonelikleri
 
@@ -38,13 +38,15 @@ Bulun, açık kaynak güvenlik açıklarını düzeltin ve derlemenizdeki tüm a
 
 4.  İçinde **hesabınızı etkinleştirmek** Bölümü sayfasının, dört adımı gösterilmesini:
 
-    - [Yükleme](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) Microsoft Visual Studio Market'ten WhiteSource Bolt uzantısı. Uzantıları yüklemek için izinlere sahip değilseniz, bkz. [ücretsiz uzantıları yüklemek için VSTS](/vsts/marketplace/install-vsts-extension?view=vsts).
+    - [Yükleme](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) Microsoft Visual Studio Market'ten WhiteSource Bolt uzantısı. Uzantıları yüklemek için izinlere sahip değilseniz, bkz. [Azure DevOps Hizmetleri için ücretsiz uzantı yükleme](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
-    Yeşil tıklayın **yükleme** VSTS, kullanıyorsanız düğmesini veya **indirin** Team Foundation Server için düğme.  Bu örnekte, VSTS kullanacağız.
+
+    Yeşil tıklayın **yükleme** Azure DevOps Hizmetleri kullanıyorsanız düğmesini veya **indirin** Team Foundation Server için düğme.  Bu örnekte, Azure DevOps Hizmetleri kullanacağız.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource avantajı yükleme uzantısı](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Ardından,'e tıklayın, istediğiniz VSTS hesabı seçin **Onayla**.  (VSTS'yi henüz ayarlamadıysanız ziyaret [avantajları](https://my.visualstudio.com/benefits) sayfasında ve VSTS avantajınızı etkinleştirin.)
+    - Ardından,'e tıklayın, istediğiniz Azure DevOps hizmetler kuruluşundan seçin **Onayla**.  (Azure DevOps Hizmetleri henüz ayarlamadıysanız ziyaret [avantajları](https://my.visualstudio.com/benefits) sayfasında ve DevOps Hizmetleri Azure avantajınızı etkinleştirin.)
+
     > [!div class="mx-imgBorder"]
     > ![WhiteSource teklifi, hesap onaylayın](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
@@ -52,7 +54,7 @@ Bulun, açık kaynak güvenlik açıklarını düzeltin ve derlemenizdeki tüm a
     > [!div class="mx-imgBorder"]
     > ![WhiteSource avantajı yüklenmesi tamamlandı](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  ' A tıklayın, Visual Studio Team Services (VSTS) Proje panosunu açın **derleme ve yayınlama** menüsünü seçip **WhiteSource Bolt**.
+5.  Azure DevOps Hizmetleri Proje panonuzu açın, üzerinde **Azure işlem hatları** menü ve **WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource avantajı uzantı Ekle](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
@@ -82,7 +84,7 @@ Bulun, açık kaynak güvenlik açıklarını düzeltin ve derlemenizdeki tüm a
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).    Dışlar: Diğer değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine için Microsoft iş ortağı ağ () Professional).*
+<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).  Dışlar: Diğer değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine için Microsoft iş ortağı ağ () Professional).*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
@@ -90,4 +92,4 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 -  WhiteSource Bolt yardıma mı ihtiyacınız var?  WhiteSource Bolt temsilci ile Sohbet Canlı https://www.whitesourcesoftware.com/vse_whitesource_bolt/
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

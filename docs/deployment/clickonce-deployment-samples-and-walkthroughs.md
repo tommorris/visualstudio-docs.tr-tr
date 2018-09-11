@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 37ff64b5c1b5cec9a4b05f293bfc8c43ac7e1bb7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077571"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282280"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce Dağıtım örnekleri ve izlenecek yollar
 Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Windows Forms, WPF ve konsol uygulamaları dağıtmak için kullanılan teknikleri gösteren adım adım talimatları içerir.  
@@ -40,5 +40,5 @@ Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Windows
 |[API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Yalnızca ilk uygulama tarafından kullanıldıklarında uygulama derlemeleri indirileceğini açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio izlenecek yollar](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Visual Studio izlenecek yollar](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio Örnekleri](../ide/visual-studio-samples.md)

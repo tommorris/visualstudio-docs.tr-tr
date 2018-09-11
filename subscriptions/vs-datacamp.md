@@ -9,12 +9,12 @@ description: Seçili Visual Studio abonelikleriyle dahil DataCamp eğitim abonel
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0220bf4a5a07fac2e9ecda8f8c638d9c5f0a6145
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624434"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282422"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>DataCamp eğitim avantajı olarak Visual Studio abonelikleri
 
@@ -93,4 +93,4 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
     - [DataCamp Yardım Merkezi](https://support.datacamp.com/hc)burada destek konuları aramak ve isteği kullanıcı sorulara bakın.
     - [Bir destek isteği gönderin](https://support.datacamp.com/hc/requests/new)
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

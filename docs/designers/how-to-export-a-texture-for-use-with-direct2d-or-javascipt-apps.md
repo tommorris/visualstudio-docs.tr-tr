@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4666bbd295f32e9782e445661c1a4736ec6c06c1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 4fd6a2483ebd0255056f471a37744a5b358c185f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924046"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278822"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya JavaScript uygulamaları ile kullanmak için doku dışa aktarma
 Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile uyumlu dokular oluşturabilir. Bu tür dokular Direct2D kullanan uygulamalar ve JavaScript kullanılarak oluşturulan UWP uygulamalarında kullanım için uygundur.
@@ -53,7 +53,7 @@ Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile 
 
 2.  Doku dosyasını yapılandırarak, böylece görüntü içeriği ardışık düzeni tarafından işlenir. İçinde **Çözüm Gezgini**, yeni oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri** > **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**ve ardından  **Uygulama** düğmesi. **Görüntü içeriği ardışık düzeni** yapılandırma özellik sayfası görüntülenir.
 
-3.  Çıktı biçimini blok sıkıştırılmış biçimlerden birine ayarlayın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **sıkıştırma**özelliğini **BC3_UNORM sıkıştırma (/ compress: BC3_UNORM)**. Diğer BC1, BC2 veya BC3 biçimleri, gereksinimlerinize bağlı olarak seçebilirsiniz. Direct2D şu anda BC4, BC5, BC6 veya bc7 dokularını desteklemiyor. Farklı BC biçimleri hakkında daha fazla bilgi için bkz. [Block sıkıştırma (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).
+3.  Çıktı biçimini blok sıkıştırılmış biçimlerden birine ayarlayın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **sıkıştırma**özelliğini **BC3_UNORM sıkıştırma (/ compress: BC3_UNORM)**. Diğer BC1, BC2 veya BC3 biçimleri, gereksinimlerinize bağlı olarak seçebilirsiniz. Direct2D şu anda BC4, BC5, BC6 veya bc7 dokularını desteklemiyor. Farklı BC biçimleri hakkında daha fazla bilgi için bkz. [Block sıkıştırma (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
     > [!NOTE]
     >  Belirtilen sıkıştırma biçimi, görüntü içeriği ardışık düzeni tarafından üretilen dosyanın biçimini belirler. Bu farklıdır **biçimi** görüntü kaynak görüntü dosyasının biçimini diskte depolanan gibi belirleyen Düzenleyicisi'nde kaynak görüntü özelliği — diğer bir deyişle, *çalışma biçimi*. Genellikle, sıkıştırılmış bir çalışma biçimi istemezsiniz.

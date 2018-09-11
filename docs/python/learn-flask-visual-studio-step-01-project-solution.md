@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae096096c77ee1584d1799c85bda3e0b7b6e5d13
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775936"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283424"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Öğretici: Visual Studio'da Flask web çerçevesi ile çalışmaya başlama
 
@@ -95,7 +95,7 @@ Seçtiğiniz çünkü **yeni Git deposu Oluştur** içinde **yeni proje** ileti�
 
     ![Var olan bir uzak depoya gönderilirken için Takım Gezgini penceresi](media/flask/step01-push-to-github.png)
 
-    Varolan bir depo yoksa **GitHub Yayımla** ve **Visual Studio Team Services için anında iletme** seçenekleri bir doğrudan Visual Studio'dan oluşturmanıza izin veren.
+    Varolan bir depo yoksa **GitHub Yayımla** ve **Azure DevOps için anında iletme** seçenekleri sağlar, doğrudan Visual Studio içinde oluşturun.
 
 1. Bu öğreticide çalışırken, düzenli aralıklarla denetimlerini işlemeyi ve göndermeyi değişiklikler Visual Studio kullanarak önleminizi. Bu öğretici size uygun noktalarda anımsatır.
 

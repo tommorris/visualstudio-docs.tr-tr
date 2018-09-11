@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Parasoft Sanallaştırılacak/SO
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ce10ed292644179f348b2599898b04ae2679c9d6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 9636bd3a264cf3cdd364382ffdffb11c376f1598
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624122"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283164"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri de Parasoft Sanallaştırılacak/SOAtest Professional Desktop
 
@@ -82,7 +82,7 @@ Daha önce ve daha sık test edin.  Benzetimini gerçekleştirmek ve gelişen ku
 | Visual Studio Dev Essentials | Yok  | Yok|Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).    Dışlar: Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).  Dışlar: Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
 
 
@@ -91,4 +91,4 @@ Daha önce ve daha sık test edin.  Benzetimini gerçekleştirmek ve gelişen ku
     - Teknik Destek:  https://www.parasoft.com/support/
     - Parasoft Kaynak Merkezi:  https://www.parasoft.com/resources/
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

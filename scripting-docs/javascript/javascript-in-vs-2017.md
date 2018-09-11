@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008414"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280044"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017'de JavaScript
 
@@ -255,7 +255,7 @@ Bazen VSDocs adlandırılır, XML belge açıklamaları, daha önce kaynak kodun
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` Uzantıları
 
-Daha önce yazabilirsiniz [IntelliSense uzantıları](https://msdn.microsoft.com/en-us/library/hh874692.aspx) olduğu izin üçüncü taraf kitaplıklar için özel tamamlama sonuçlarını eklemek.
+Daha önce yazabilirsiniz [IntelliSense uzantıları](https://msdn.microsoft.com/library/hh874692.aspx) olduğu izin üçüncü taraf kitaplıklar için özel tamamlama sonuçlarını eklemek.
 Bu uzantılar, yazma ve yükleme için oldukça zor ve yeni dil hizmetini ileride bu dosyaları desteklemeyeceği için bunlara başvuran hantal,.
 Daha kolay bir alternatif olarak, eskisiyle aynı IntelliSense yararları sağlamak üzere bir TypeScript tanım dosyası yazabilirsiniz `.intellisense.js` uzantıları.
 Bildirimi hakkında daha fazla bilgi (`.d.ts`) dosyası yazma [burada](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624116"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320845"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Hızlı Başlangıç: Profil oluşturma araçları ilk bakış
 
@@ -155,16 +155,16 @@ Farklı araçlar sunan Visual Studio listeleyen bir tablo işte ve farklı proje
   
 |Performans aracı|Windows Masaüstü|UWP|ASP.NET/ASP.NET çekirdek| 
 |----------------------|---------------------|-------------|-------------|  
-|[Bellek kullanımı](../profiling/memory-usage.md)|Evet|Evet|Evet| 
-|[CPU kullanımı](../profiling/cpu-usage.md)|Evet (bkz. Not)|Evet|Evet (bkz. Not)|
-|[GPU kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok| 
-|[Uygulama zaman çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|
+|[Bellek Kullanımı](../profiling/memory-usage.md)|Evet|Evet|Evet| 
+|[CPU Kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Evet|
+|[GPU Kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok| 
+|[Uygulama Zaman Çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|
 |[PerfTips](../profiling/perftips.md)|Evet|XAML, HTML için Hayır için Evet|Evet|
 |[Performans Gezgini](../profiling/performance-explorer.md)|Evet|Yok|Evet|
 |[IntelliTrace](../debugger/intellitrace.md)|Yalnızca Visual Studio Enterprise ile .NET|Yalnızca Visual Studio Enterprise ile .NET|Yalnızca Visual Studio Enterprise ile .NET|
-|[Ağ kullanımı](../profiling/network-usage.md)|Yok|Evet|Yok|
-|[HTML kullanıcı Arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)|Yok|Evet, HTML için XAML için Hayır|Yok| 
-|[JavaScript bellek](../profiling/javascript-memory.md)|Yok|Evet, HTML için XAML için Hayır|Yok|
+|[Ağ Kullanımı](../profiling/network-usage.md)|Yok|Evet|Yok|
+|[HTML kullanıcı arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)|Yok|Evet, HTML için XAML için Hayır|Yok| 
+|[JavaScript Belleği](../profiling/javascript-memory.md)|Yok|Evet, HTML için XAML için Hayır|Yok|
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)

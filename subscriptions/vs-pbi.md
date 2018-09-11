@@ -9,12 +9,12 @@ description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneli
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c09035a14cf571523f7d5c757c9c41e807b0c86b
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 08e3fb3cc41ef7ada1acd984671150c1f61a0e05
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623953"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280473"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 
@@ -79,7 +79,7 @@ Power BI Pro kullanmak için mevcut bir hesabı kullanarak oturum açın veya bi
 | Visual Studio Dev Essentials | Yok  | Yok |Yok|
 | Visual Studio Enterprise (aylık bulut) | Azure                                       | Yok                                  |Yok|
 
-<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve hizmet için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).    Dışlar: Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
+<sup>1</sup>*içerir: değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve hizmet için Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  Dışlar: Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
 
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
@@ -101,4 +101,4 @@ C: Evet.
     - Kaydolma sorunları mı yaşıyorsunuz?  Kullanıma [Power BI bireysel olarak kaydolma](/power-bi/service-self-service-signup-for-power-bi)
     - En sık karşılaşılan sorunlar keşfedin, topluluktan yardım alın veya üzerinde bir destek bileti gönderin [destek sayfasını](https://powerbi.microsoft.com/support/).
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

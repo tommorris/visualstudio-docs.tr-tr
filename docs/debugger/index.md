@@ -1,22 +1,22 @@
 ---
 layout: LandingPage
-title: Visual Studio uygulamalarınızda hata ayıklama | Microsoft Docs
-description: Bilgi nasıl uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde hata ayıklamak için Visual Studio 2017 kullanın.
+title: Uygulamalarınızı Visual Studio'da hata ayıklama | Microsoft Docs
+description: Bilgi nasıl uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde hata ayıklamak için Visual Studio 2017'yi kullanın.
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: ba5cad803a49b97d193d156e46c6235d7c5f8312
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 1fd0777cdb30a5a458a0578129cf22607fd8c1e3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303302"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281214"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio'da Hata Ayıklama
 
-Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışını izlemek ve sorunlarını bulmanıza yardımcı olur. Hata ayıklayıcı tüm Visual Studio programlama dilleri ve bunların ilişkili kitaplıkları ile çalışır. Hata ayıklayıcısını kullanmaya kodunuzu inceleyin, inceleyin ve değişkenleri düzenleme, kayıtları görüntülemek için kaynak kodunuzdan oluşturulan yönergelere bakın, programın yürütülmesini bölün ve uygulamanız tarafından kullanılan bellek alanını görüntüleyin.
+Visual Studio hata ayıklayıcı, programınızın çalışma zamanı davranışını gözlemlemenize ve sorunları bulma yardımcı olur. Hata ayıklayıcı, tüm Visual Studio programlama dilleri ve bunların ilişkili kitaplıkları ile çalışır. Hata ayıklayıcı, programınızın kodunu incelemek, inceleyin ve değişkenleri düzenlemek, kayıt defterlerini görüntülemek, kaynak kodunuzdan oluşturulan yönergelere bakmak için programınızın yürütülmesini Kes ve uygulamanız tarafından kullanılan bellek alanını görüntüleyebilirsiniz.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -66,7 +66,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Hata ayıklama öğrenin</h3>
+                        <h3>Hata ayıklamayı öğrenin</h3>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Hata ayıklayıcıyı kullanma hakkında bir Video izleyin</h3>
+                        <h3>Hata ayıklayıcıyı kullanarak bir Video izleyin</h3>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>IntelliTrace anlık görüntüleri (Visual Studio Enterprise) görüntüleme</h3>
+                        <h3>IntelliTrace anlık görüntülerini (Visual Studio Enterprise) görüntüleme</h3>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Canlı Azure App Service uygulamalarda hata ayıklama</h3>
+                        <h3>Canlı Azure App Service uygulamalarında hata ayıklama</h3>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Hata ayıklayıcı ipuçları ve püf noktaları</h3>
+                        <h3>Hata ayıklayıcısı ipuçları ve püf noktaları</h3>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Çok iş parçacıklı uygulamalar hata ayıklama</h3>
+                        <h3>Çok iş parçacıklı uygulamaların hatalarını ayıklama</h3>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Gördükleri&#39;s Hata Ayıklayıcısı'deki yenilikler</h3>
+                        <h3>Gördükleri&#39;s Hata Ayıklayıcı'deki yenilikler</h3>
                     </div>
                 </div>
             </div>
@@ -206,7 +206,7 @@ Visual Studio hata ayıklayıcısı, programın çalışma zamanı davranışın
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
+        <a href="/visualstudio/debugger/api-reference-for-intellitrace-extensibility">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

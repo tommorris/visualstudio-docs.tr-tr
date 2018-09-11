@@ -9,12 +9,12 @@ description: Enterprise Mobility + Security avantajı, Visual Studio aboneliğin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624115"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283294"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security'nin (EMS), Visual Studio abonelikleri
 
@@ -61,7 +61,7 @@ EMS kullanmak için bir hesap oluşturabilir veya mevcut bir hesabı kullanarak 
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için değil.    Dışlar: Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine, Microsoft iş ortağı ağı (Professional).*
+<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için değil.  Dışlar: Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine, Microsoft iş ortağı ağı (Professional).*
 
 <sup>2</sup> *Microsoft iş ortağı ağı (Professional) dışlar*
 
@@ -71,4 +71,4 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 -  EMS yardıma mı ihtiyacınız var?  Çevrimiçi denetle [EMS belgeleri](/enterprise-mobility-security/).
 -  EMS herhangi bir bileşeni, teknik destek için lütfen https://support.microsoft.com/allproducts ve ürün seçin.
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

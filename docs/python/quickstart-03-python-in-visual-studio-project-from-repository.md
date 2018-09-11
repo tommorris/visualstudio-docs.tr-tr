@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18d967fd25dcaeb07ea0cc58babc0493c441a7bc
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996070"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281695"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da Python kodu bir depoyu kopyalama
 
@@ -30,9 +30,9 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 
 1. Visual Studio'yu başlatın.
 
-1. Seçin **görünümü** > **Takım Gezgini** açmak için **Takım Gezgini** içinde GitHub veya Visual Studio Team Services bağlanabilir, ya da kopyalama penceresi bir Depo. (Görmüyorsanız **Connect** gösterilen sayfası aşağıda, bu sayfasına götürür üst araç çubuğunda Tak simgeyi seçin.)
+1. Seçin **görünümü** > **Takım Gezgini** açmak için **Takım Gezgini** penceresi içinde GitHub ya da Azure depoları bağlanabilir, ya da bir depoyu kopyalayın. (Görmüyorsanız **Connect** gösterilen sayfası aşağıda, bu sayfasına götürür üst araç çubuğunda Tak simgeyi seçin.)
 
-    ![Visual Studio Team Services, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media/team-explorer.png)
+    ![Takım Gezgini penceresini gösteren Azure depoları, GitHub ve bir depoyu kopyalama](media/team-explorer.png)
 
 1. Altında **yerel Git depoları**seçin **kopya** komutunu ve ardından girin `https://github.com/gregmalcolm/python_koans` kopyalanan dosyalar için bir klasör URL alanına girin ve seçin **kopya** düğmesi.
 

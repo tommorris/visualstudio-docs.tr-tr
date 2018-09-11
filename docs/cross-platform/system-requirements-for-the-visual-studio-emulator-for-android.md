@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251555"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279407"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio öykünücüsü sistem gereksinimleri
 Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini Windows 8 ve sonraki sürümler için bir sanal makine olarak çalışır. Öykünücüyü çalıştırmak için bilgisayarınızda bu konuda açıklandığı gibi Hyper-V çalıştırma gereksinimlerini karşılaması gerekir.  
@@ -117,7 +117,7 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
   
 |Gereksinim|Denetleyin ve bu gereksinim etkinleştirme|  
 |-----------------|----------------------------------------------|  
-|Hyper-V yüklü olmalıdır|İçin kullanılan aynı yönergeleri izleyerek [Hyper-V için Windows Phone öykünücüsü'nü etkinleştirme](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx).<br /><br /> Durumunu **Hyper-V sanal makine Yönetimi** Hizmetler ek bileşeninde hizmet.|  
+|Hyper-V yüklü olmalıdır|İçin kullanılan aynı yönergeleri izleyerek [Hyper-V için Windows Phone öykünücüsü'nü etkinleştirme](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Durumunu **Hyper-V sanal makine Yönetimi** Hizmetler ek bileşeninde hizmet.|  
 |Hyper-V çalıştıran gerekir.|Hizmetleri yönetme hakkında daha fazla bilgi için aşağıdaki konulara bakın:<br /><br /> -   [Başlat, Durdur, duraklatma, sürdürme veya bir hizmetini yeniden başlatın](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Bir hizmetin nasıl başlatılacağını yapılandırın](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  Yerel Hyper-V Yöneticileri grubunun bir üyesi olmanız gerekir.  

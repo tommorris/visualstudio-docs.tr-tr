@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 0d5ee9379337f64b413b4d040f6ce5590baaeb41
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776203"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280928"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu
 
@@ -24,7 +24,7 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
 
  LIB dosyaları bulunan _[x 86] VisualStudio2012 InstallFolder_**\VC\UnitTest\lib** klasör.
 
-Üst bilgi ve LIB yolları, yerel bir Test projesinde otomatik olarak yapılandırılır.
+Üst bilgi ve LIB yolları yerel Test projesinde otomatik olarak yapılandırılır.
 
 ##  <a name="In_this_topic"></a> Bu konudaki
  [CppUnitTest.h](#cppUnitTest_h)

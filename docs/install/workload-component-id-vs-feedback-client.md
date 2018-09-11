@@ -1,6 +1,6 @@
 ---
 title: Visual Studio geri bildirim istemcisi 2017 iş yükü ve Bileşen kimlikleri
-description: Visual Studio Team Services veya Team Foundation Server için zengin geri bildirim sağlamak için Visual Studio iş yükü ve Bileşen kimlikleri kullanın
+description: Azure DevOps Services veya Team Foundation Server için zengin geri bildirim sağlamak için Visual Studio iş yükü ve Bileşen kimlikleri kullanın
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138785"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281565"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio geri bildirim istemcisi 2017 bileşen dizini
 
@@ -43,7 +43,7 @@ Bu kimliklerinin kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Açıklama:** Visual Studio Team Services veya Team Foundation Server için zengin geri bildirim sağlamak üzere proje katılımcılarına geri bildirim istemcisi sağlar.
+**Açıklama:** Azure DevOps Services veya Team Foundation Server için zengin geri bildirim sağlamak üzere proje katılımcılarına geri bildirim istemcisi sağlar.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 

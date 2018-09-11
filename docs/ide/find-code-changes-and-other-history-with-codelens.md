@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 86c84314cf025652dac2670c19763ae069ea6865
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054484"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279769"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
@@ -64,7 +64,7 @@ Kodunuzun geçmişini, kodunuzu ne olduğunu görmek için inceleyin. Ya da önc
 
 - Visual Studio Enterprise veya Visual Studio Professional
 
-- Team Foundation Server 2013 veya üzeri, Visual Studio Team Services veya Git
+- Team Foundation Server 2013 veya üzeri, Azure DevOps Services veya Git
 
 - [Skype Kurumsal'a](/skypeforbusiness/), veya Lync 2010 veya sonrası, kod düzenleyicisinden ekibinize başvurun
 
@@ -80,7 +80,7 @@ Team Foundation sürüm denetimi (TFVC) veya Git ile depolanan C# veya Visual Ba
 
 Yaptıkları kod öğe düzeyi göstergelerini kimin kodunuzu ve hangi değişiklikleri görmenize olanak tanır. C# ve Visual Basic kodu için kod öğesi düzeyi göstergelerini kullanılabilir.
 
-Team Foundation Server veya Visual Studio Team Services, Team Foundation sürüm denetimi (TFVC) kullandığınızda gördüğünüz budur:
+Team Foundation Server veya Azure DevOps Hizmetleri'ndeki Team Foundation sürüm denetimi (TFVC) kullandığınızda gördüğünüz budur: 
 
 ![CodeLens: Kodunuzu tfvc'de Get değişiklik geçmişi](../ide/media/codelens-code-changes.png)
 
@@ -263,7 +263,7 @@ CodeLens dosya düzeyi göstergelerini açma ve kapatma köşeli çift ayraç si
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>S: işleme iş öğesi ayrıntılarını neden göremiyorum?
 
-**Y:** CodeLens TFS'de iş öğeleri bulamadığından gerçekleşebilir. Bu olan takım projesine bağlı değilseniz denetleyin, çalışma öğeleri ve bunları görme iznine sahip iş öğeleri. İş öğesi ayrıntılarını da değil işleme açıklama TFS'de iş öğesi kimlikleri hakkında yanlış bilgi varsa göstermeyebilir.
+**Y:** CodeLens TFS'de iş öğeleri bulamadığından gerçekleşebilir. Bu olan projesine bağlı değilseniz denetleyin, çalışma öğeleri ve bunları görme iznine sahip iş öğeleri. İş öğesi ayrıntılarını da değil işleme açıklama TFS'de iş öğesi kimlikleri hakkında yanlış bilgi varsa göstermeyebilir.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>S: neden Skype göstergeleri göremiyorum?
 
@@ -295,7 +295,7 @@ Klavyeyi kullanmak için:
 
 4. Basın **sekmesini** gitmek için **ayarlarını göster** listelemek ve tuşuna **aşağı ok** seçmek için **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>S: CodeLens ekran göstergesi görüntüsünü taşıyabilir miyim?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>CodeLens taşıma s: `head`s yukarı görünen?
 
 **Y:** Evet, seçin ![Dock simgesi](../ide/media/codelensdockwindow.png) Codelens'i pencere olarak yerleştirmek için.
 

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138397"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281097"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio yüklediğinizde veya kullandığınızda ağ ile ilgili hataları giderme
 
@@ -73,7 +73,7 @@ Bu hata genellikle kullanıcılar bir ara sunucu üzerinden İnternet'e bağlı 
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Hata: "temel alınan bağlantı kapatıldı"
 
-Visual Studio, bir güvenlik duvarı özel bir ağda Visual Studio kullanıyorsanız, bazı ağ kaynaklarına bağlanmak mümkün olmayabilir. Bu kaynaklar, oturum açma ve lisans, NuGet ve Azure Hizmetleri için Visual Studio Team Services (VSTS) içerebilir. Bu kaynaklar birine bağlanmak Visual Studio başarısız olursa, aşağıdaki hata iletisini görebilirsiniz:
+Visual Studio, bir güvenlik duvarı özel bir ağda Visual Studio kullanıyorsanız, bazı ağ kaynaklarına bağlanmak mümkün olmayabilir. Azure DevOps Services oturum açma ve lisans, NuGet ve Azure Hizmetleri için bu kaynakları içerebilir. Bu kaynaklar birine bağlanmak Visual Studio başarısız olursa, aşağıdaki hata iletisini görebilirsiniz:
 
   **Temel alınan bağlantı kapatıldı: Gönder beklenmeyen bir hata oluştu**
 
@@ -103,7 +103,7 @@ Aşağıdaki URL'ler için bağlantılar sağlar:
 
 - CDN.vsassets.io (ana içerik teslim ağı veya CDN, içerik)
 
-- &#42;. gallerycdn.vsassets.io (konaklar VSTS uzantıları)
+- &#42;. gallerycdn.vsassets.io (ana Azure DevOps Hizmetleri uzantıları)
 
 - static2.sharepointonline.com (Office UI Fabric Seti'nde yazı tipleri gibi Visual Studio kullanan ana bilgisayar kaynakları)
 

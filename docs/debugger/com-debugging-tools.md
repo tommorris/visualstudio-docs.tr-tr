@@ -1,5 +1,5 @@
 ---
-title: Hata ayıklama araçları COM | Microsoft Docs
+title: COM hata ayıklama araçları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,30 +23,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d2cd73ece3129e4719b50e5d140481e9210edb
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 733ec7e74482a0243fef3355a02c8e125183ff87
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757194"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281019"
 ---
 # <a name="com-debugging-tools"></a>COM Hata Ayıklama Araçları
 
-Bu konu, test ve COM programları inceleyin yardımcı olan araçlar listeler.
+Bu konu, test ve COM programlar denetlemenize yardımcı olabilecek araçları listeler.
 
 OLE/COM Nesne Görüntüleyicisi
 
-OLEVIEW bilgisayarınızı ve destekledikleri arabirimleri yüklü ActiveX ve OLE nesneleri görüntüler. Ayrıca, kayıt defterini düzenlemeniz ve tür kitaplıklarının bakın sağlar.
+OLEVIEW bilgisayarınız ve destekledikleri arabirimleri yüklü ActiveX ve OLE nesneleri görüntüler. Ayrıca, kayıt defterini düzenlemek ve tür kitaplıklarını aramak sağlar.
 
-Microsoft Foundation Class örnekleri
+Microsoft Foundation sınıf örnekleri
 
-MFC ActiveX örnekleri OCLIENT ve SUPERPAD uygulamalarınızı karşı test etmek de kullanılabilir. Bu örnekler için tam kaynak kodu bulunur.
+MFC ActiveX örnekler OCLIENT ve SUPERPAD uygulamalarınızı karşı test etmek de kullanılabilir. Bu örnek için tam kaynak kodu bulunur.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 
-- [COM ve ActiveX hata ayıklaması](../debugger/com-and-activex-debugging.md)
-- [COM hata ayıklama araçları](../debugger/com-debugging-tools.md)
+- [COM ve ActiveX Hata Ayıklaması](../debugger/com-and-activex-debugging.md)
+- [COM Hata Ayıklama Araçları](../debugger/com-debugging-tools.md)
 - [Visual Studio’da hata ayıklama](../debugger/index.md)
-- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)
-- [OCLIENT örnek: Bir görsel kapsayıcı uygulama düzenleme gösterir](http://msdn.microsoft.com/en-us/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [SUPERPAD örnek: CEditView kullanarak metin düzenlemeleri sunucu düzenleme görsel gösterir](http://msdn.microsoft.com/en-us/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+- [OCLIENT örnek: Bir görsel kapsayıcı uygulaması gösterir.](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [SUPERPAD örneği: CEditView kullanarak metin düzenlemeleri sunucu düzenleyen Visual gösterir](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

@@ -9,16 +9,16 @@ description: Seçili Visual Studio Enterprise aboneliklerine dahil olan ürünle
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624319"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279030"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>MODERNRequirements4TFS avantaj olarak Visual Studio abonelikleri
 
-Seçili Visual Studio abonelikleri MODERNRequirements SmartOffice 4TFS ve ModernRequirements4TFS altı aylık abonelik içerir.  MODERNRequirements SmartOffice4TFS, TFS'nin veya Visual Studio Team Services ile Microsoft Word tabanlı raporlama ve hızlı, Basitleştirilmiş zengin metin yazma yeteneklerini genişletir.  ModernRequirements4TFS iş öğesi taban çizgisi oluşturma ve HTML5 benzetimi özellikleri sağlar.
+Seçili Visual Studio abonelikleri MODERNRequirements SmartOffice 4TFS ve ModernRequirements4TFS altı aylık abonelik içerir.  MODERNRequirements SmartOffice4TFS, TFS'nin veya Azure DevOps Hizmetleri özelliklerini Microsoft Word tabanlı raporlama ve hızlı, Basitleştirilmiş zengin metin yazma genişletir.  ModernRequirements4TFS iş öğesi taban çizgisi oluşturma ve HTML5 benzetimi özellikleri sağlar.
 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
@@ -94,11 +94,11 @@ Seçili Visual Studio abonelikleri MODERNRequirements SmartOffice 4TFS ve Modern
 | Visual Studio Dev Essentials | Yok  |Yok                                                          |Yok     |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), FTE için değil.    Dışlar: Microsoft iş ortağı ağı (Professional), MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), FTE için değil.  Dışlar: Microsoft iş ortağı ağı (Professional), MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  ModernRequirements ürünleri yardıma mı ihtiyacınız var?  Lütfen https://www.modernrequirements.com/support-2/.
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

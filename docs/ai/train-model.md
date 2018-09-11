@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: b9d66539d10fe97cefbba51295b43fcfa19be50a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379838"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278328"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI, yapay ZEKA modellerini eğitme
 
@@ -34,9 +34,9 @@ Dinamik olarak Azure eğitimi modellerini ölçeği genişletebilirsiniz için y
 
     ![Örnek Galerisi](media\train-model\batchai.png)
 
-3. Seçin **Görüntüle > Takım Gezgini...**  açmak için **Takım Gezgini** penceresi içinde GitHub veya Visual Studio Team Services bağlanabilir, ya da bir depoyu kopyalayın.
+3. Seçin **Görüntüle > Takım Gezgini...**  açmak için **Takım Gezgini** penceresi içinde GitHub veya Azure DevOps bağlanabilir, ya da bir depoyu kopyalayın.
 
-    ![Visual Studio Team Services, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media\train-model\team-explorer.png)
+    ![Azure DevOps, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media\train-model\team-explorer.png)
 
 4. Altında alanına **yerel Git depoları**, girin `https://github.com/Microsoft/samples-for-ai`, kopyalanan dosyalar için bir klasör girin ve seçin **kopya**.
 

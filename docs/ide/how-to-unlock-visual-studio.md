@@ -10,64 +10,64 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943124"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280629"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Nasıl yapılır: Visual Studio kilidini açma
 
-Visual Studio Ücretsiz 30 gün kadar değerlendirebilirsiniz. IDE içinde imzalama ve deneme süresi 90 gün için genişletir. Visual Studio kullanmaya devam etmek için ya da IDE kilidini:
+Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum imzalama için 90 günlük deneme süresi genişletir. Visual Studio kullanmaya devam etmek için ya da IDE kilidini:
 
-- çevrimiçi bir aboneliği kullanma
+- çevrimiçi bir abonelikle kullanma
 
 - Ürün anahtarı girme
 
-## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Visual Studio online aboneliğinden kilidini açmak için
+## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Kullanarak çevrimiçi bir abonelikle Visual Studio kilidini açmak için
 
-Visual Studio kilidini açmak için bir MSDN veya Visual Studio Team Services aboneliğinden bir Microsoft hesabı veya bir iş veya Okul hesabı ile ilişkili:
+Visual Studio aboneliği veya bir Microsoft hesabı veya bir iş veya Okul hesabı ile ilişkili Azure DevOps Hizmetleri kuruluş kullanarak Visual Studio kilidini açmak için:
 
-1. Tıklayın **oturum** IDE'nin sağ üst köşesindeki düğmesini (veya gitmek **dosya** > **hesap ayarlarını** açmak için **hesap ayarları**  iletişim ve tıklayarak **oturum** düğmesi).
+1. Tıklayarak **oturum** IDE'nin sağ üst köşesindeki düğme (veya Git **dosya** > **hesap ayarları** açmak için **hesap ayarları**  iletişim ve tıklayarak **oturum** düğmesi).
 
-1. Bir Microsoft hesabı veya bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, Visual Studio abonelik veya hesabınızla ilişkili Visual Studio Team Services abonelik bulur.
+1. Bir Microsoft hesabı ya da bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, Visual Studio aboneliği veya Azure DevOps Hizmetleri kuruluş hesabınızla ilişkili bulur.
 
 > [!IMPORTANT]
-> Visual Studio bir Visual Studio Team Services hesabından bağlandığınızda ilişkili çevrimiçi abonelikler için otomatik olarak arar **Takım Gezgini** araç penceresi. Bir Visual Studio Team Services hesabı bağladığınızda, hem Microsoft hem de iş kullanarak oturum açın veya Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir aboneliğiniz varsa, Visual Studio IDE sizin için kilidini otomatik.
+> Visual Studio bir Azure DevOps Hizmetleri kuruluştan bağlandığınızda ilişkili çevrimiçi abonelikler için otomatik olarak arar **Takım Gezgini** araç penceresi. Azure DevOps Hizmetleri kuruluşun bağlandığınızda, hem Microsoft hem de iş kullanarak oturum açın ya da Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir abonelikle varsa Visual Studio IDE sizin için kilidini otomatik.
 
-## <a name="to-unlock-visual-studio-with-a-product-key"></a>Visual Studio ürün anahtarı ile kilidini açmak için
+## <a name="to-unlock-visual-studio-with-a-product-key"></a>Visual Studio ürün anahtarı kullanarak kilidini açmak için
 
-1. Seçin **dosya** > **hesap ayarlarını** açmak için **hesap ayarlarını** iletişim ve tıklayarak **lisans ürün anahtarıyla**bağlantı.
+1. Seçin **dosya** > **hesap ayarları** açmak için **hesap ayarları** iletişim ve tıklayarak **lisans ürün anahtarıyla**bağlantı.
 
-Sağlanan alana ürün anahtarını girin.
+Ürün anahtarı, sağlanan alana girin.
 
 > [!TIP]
-> Visual Studio yayın öncesi sürümlerini ürün anahtarları yok. IDE yayın öncesi sürümlerini kullanan oturum gerekir.
+> Visual Studio'nun yayın öncesi sürümleri ürün anahtarları yoksa. IDE için yayın öncesi sürümleri kullanmak için oturum açmanız gerekir.
 
 ## <a name="address-license-problem-states"></a>Adres lisans sorun durumları
 
 ### <a name="update-stale-licenses"></a>Eski lisansları güncelleştirin
 
- Görmüşsünüzdür lisansınız okur, Visual Studio içinde eski geçiyor ileti aşağıda "lisansınız eski geçti ve güncelleştirilmesi gerekir."
+ Görmüşsünüzdür lisansınızı okur, Visual Studio içinde eski geçiyor ileti aşağıda "lisansınız eskimiş ve güncelleştirilmelidir."
 
  ![Visual Studio eski lisans iletisi](../ide/media/vs2017_stale-license.png)
 
- Bu ileti aboneliğinizin hala geçerli, aboneliğinizi güncel tutmak için belirteç Visual Studio kullanan lisans yenilendi olmamıştır ve aşağıdaki nedenlerden biri dolayısıyla eski geçti olabilir ancak gösterir:
+ Bu ileti aboneliğinizin hala geçerli, belirteç Visual Studio aboneliğinizi güncel tutmak için kullanır lisans yenilenmiş olmamıştır ve aşağıdakilerden biri nedeniyle süresi dolmuş olabilir ancak gösterir:
 
-- İnternet bağlantısı uzun bir süre beklendiğinden veya Visual Studio kullanılabilir değil.
+- Uzun bir süre için internet bağlantısı olması veya Visual Studio kullanılan değil.
 - Visual Studio dışında oturumunuz.
 
-Lisans belirteci eski geçmeden önce Visual Studio ilk kimlik bilgilerinizi yeniden girmek için isteyen bir uyarı iletisi gösterir.
+Lisans belirteci eski geçmeden önce Visual Studio, öncelikle kimlik bilgilerinizi yeniden girmeniz isteyen bir uyarı iletisi gösterir.
 
-Belirteç kimlik bilgilerinizi girmek değil, eski Git başlar ve **hesap ayarlarını** iletişim sol belirtecinizi tam olarak dolacak önce kaç gün bildirir. Belirtecinizin süresi dolduktan sonra Visual Studio kullanarak devam etmeden önce bu hesabı veya lisans için kimlik bilgilerinizi başka bir yöntem ile yeniden girmeniz gerekir.
+Belirteç kimlik bilgilerinizi girmek değil, eski Git başlar ve **hesap ayarları** iletişim sol belirtecinizi tamamen süresinin dolmasına kaç gün bildirir. Belirtecinizin süresi dolduktan sonra Visual Studio kullanmaya devam etmeden önce bu hesabınız veya lisansınız için kimlik bilgilerinizi başka bir yöntem ile yeniden girmeniz gerekir.
 
 > [!Important]
-> Sınırlı veya internet erişimi olan ortamlarda uzun süre boyunca Visual Studio kullanıyorsanız, kesintiye uğramaması için Visual Studio kilidini açmak için bir ürün anahtarı kullanmanız gerekir.
+> Sınırlı veya internet erişimi olan ortamlarda uzun süre boyunca Visual Studio kullanıyorsanız, kesintiye uğramasını önlemek için Visual Studio kilidini açmak için bir ürün anahtarı kullanmanız gerekir.
 
 ### <a name="update-expired-licenses"></a>Süresi dolan lisansları güncelleştirin
 
- Aboneliğinizi tamamen süresi doldu ve artık erişim hakları Visual Studio yüklüyse, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya** > **hesap ayarlarını** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkilendirilmiş başka bir aboneliğiniz varsa, bu hesaba ekleme **tüm hesapları** seçerek iletişim kutusunun sol tarafında listede **Hesap Ekle** bağlantı.
+ Artık Visual Studio için erişim hakkına sahip ve tamamen aboneliğinizin süresi, aboneliğinizi yenileyin veya bir aboneliğe sahip başka bir hesap ekleyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için şuraya gidin **dosya** > **hesap ayarları** ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın. Farklı bir hesap ile ilişkili başka bir abonelik varsa, bu hesaba ekleme **tüm hesapları** listesinde seçerek iletişim kutusunun sol tarafındaki **Hesap Ekle** bağlantı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

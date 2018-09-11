@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078933"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279667"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğelerle çalışma
 Öğeleri ekleyebilirsiniz; denetimler, düzenler ve şekiller — uygulamanıza XAML, kod veya XAML Tasarımcısını kullanarak. Bu konuda, Visual Studio veya Visual Studio için Blend, XAML Tasarımcısı'nda öğelerle çalışma açıklar.
 
 ## <a name="adding-an-element-to-a-layout"></a>Bir öğe için bir düzen ekleme
- *Düzen* boyutlandırma ve bir kullanıcı Arabiriminde öğelerin konumlandırmasını, işlemidir. Görsel öğeleri konumlandırmak için bunları bir düzende yerleştirmelisiniz [paneli](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). A `Panel` koleksiyonu olan bir alt özelliğine sahiptir, [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx) türleri. Çeşitli kullanabileceğiniz `Panel` alt öğeleri gibi [tuval](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx), ve [kılavuz](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), Düzen kapsayıcıları görev yapacak ve getirin ve öğeleri düzenlemek için bir sayfa üzerinde.
+ *Düzen* boyutlandırma ve bir kullanıcı Arabiriminde öğelerin konumlandırmasını, işlemidir. Görsel öğeleri konumlandırmak için bunları bir düzende yerleştirmelisiniz [paneli](/uwp/api/Windows.UI.Xaml.Controls.Panel). A `Panel` koleksiyonu olan bir alt özelliğine sahiptir, [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) türleri. Çeşitli kullanabileceğiniz `Panel` alt öğeleri gibi [tuval](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel), ve [kılavuz](/uwp/api/Windows.UI.Xaml.Controls.Grid), Düzen kapsayıcıları görev yapacak ve getirin ve öğeleri düzenlemek için bir sayfa üzerinde.
 
  Varsayılan olarak, bir `Grid` paneli sayfa veya form içinde üst düzey Düzen kapsayıcısı olarak kullanılır. Düzen bölmeleri, denetimleri veya diğer öğeleri içinde üst düzey sayfa düzeni ekleyebilirsiniz.
 
@@ -33,7 +33,7 @@ ms.locfileid: "39078933"
 
     -   Bir öğeyi sürükleyin **araç kutusu** çalışma yüzeyine.
 
-    -   İçinde **araç kutusu**, çizim araçlarından birini seçin (örneğin, [elipsin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) veya [dikdörtgen](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) ve sonra etkin panelindeki bir öğesi çizin.
+    -   İçinde **araç kutusu**, çizim araçlarından birini seçin (örneğin, [elipsin](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) veya [dikdörtgen](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)) ve sonra etkin panelindeki bir öğesi çizin.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Öğeleri katman sırasını değiştirme
  XAML Tasarımcısı'nda çalışma yüzeyine iki öğe olduğunda, bir öğe katman sırasını diğer önünde görünür. Öğe listesinin en altında belge anahat içinde en öndedir öğesi penceredir (ne zaman dışında **haritadaki** özelliği bir öğe için). Sayfa, form veya Düzen kapsayıcısı için bir öğe eklediğinizde, öğe otomatik olarak etkin kapsayıcı öğe diğer öğeleri önüne yerleştirilir. Öğelerin sırasını değiştirmek için kullanabileceğiniz **sipariş** komutları veya belge ana hattı penceresinin nesne ağacında öğeleri sürükleyin.
@@ -122,4 +122,4 @@ ms.locfileid: "39078933"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [XAML Tasarımcısı'nı kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [XAML Tasarımcısı’nı kullanarak bir kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

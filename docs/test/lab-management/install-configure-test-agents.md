@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204212"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320637"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
-Visual Studio ve Visual Studio Team Services (VSTS) veya Team Foundation Server (TFS) test senaryoları için bir test denetleyicisine ihtiyacınız yoktur. Visual Studio için Agents, VSTS veya TFS ile iletişim kurarak düzenleme işleyin. Bir senaryo, derleme için sürekli testleri çalıştırmak ve VSTS veya TFS akışlarında yayın olabilir.
+Visual Studio ve Azure Test planları veya Team Foundation Server (TFS) test senaryoları için bir test denetleyicisine ihtiyacınız yoktur. Visual Studio için Agents Azure Test planları veya TFS ile iletişim kurarak düzenleme işleyin. Bir senaryo, derleme için sürekli testleri çalıştırın ve Azure Test planları veya TFS akışlarında yayın olabilir.
 
 Kullanmak daha faydalı olup olmadığını düşünebilirsiniz [derleme veya sürüm Yönetimi](use-build-or-rm-instead-of-lab-management.md) Laboratuvar Yönetimi yerine.
 
@@ -58,13 +58,13 @@ TFS, Microsoft Test Yöneticisi (MTM), test denetleyicisi ve test aracısını f
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Visual Studio 2013'ün test aracılarını yükseltme
 
-Tüm yeni otomatikleştirilmiş test senaryolarına Visual Studio için agents kullanmanızı öneririz. Kullanabileceğiniz *Test aracıları dağıtmak* indirin ve makinenizde test aracılarını yüklemek için bir yapı tanımında görev.
+Tüm yeni otomatikleştirilmiş test senaryolarına Visual Studio için agents kullanmanızı öneririz. Kullanabileceğiniz *Test aracıları dağıtmak* indirin ve makinenizde test aracılarını yüklemek için bir derleme işlem hattı görevi.
 
-Aşağıdaki tabloda, Visual Studio 2013 için Agents ve Team Foundation Server (TFS) 2015 alternatifleri ve VSTS tarafından desteklenen senaryolarla gösterilmektedir:
+Aşağıdaki tabloda, aracıları tarafından Visual Studio 2013 ve alternatifleri için Team Foundation Server (TFS) 2015 ve Azure Test planları için desteklenen senaryolar gösterilmektedir:
 
-| Visual Studio 2013 için Agents tarafından desteklenen senaryoları | Diğer TFS ve VSTS |
+| Visual Studio 2013 için Agents tarafından desteklenen senaryoları | Diğer TFS ve Azure Test planları |
 | --- | --- |
-| Visual Studio yapı-dağıtma-Test iş akışı | Kullanıcılar bir [derleme tanımı](/vsts/build-release/) (XAML derleme değil) için derleme, dağıtma ve test senaryolarında TFS'de. |
+| Visual Studio yapı-dağıtma-Test iş akışı | Kullanıcılar bir [derleme işlem hattı](/azure/devops/pipelines/index?view=vsts) (XAML derleme değil) için derleme, dağıtma ve test senaryolarında TFS'de. |
 | Yük testi (performans testi) kullanarak uzak makinelere şirket | Kullanım Test denetleyicisi ve Test aracısı 2013 güncelleştirme 5 yük testlerini şirket içinde çalıştırmak için. |
 | Otomatik testler Microsoft Test laboratuvar ortamı kullanma yöneticisinden, uzaktan yürütme | Şu anda bu senaryo için bir alternatif yoktur. İşlevsel testleri çalıştırma görevini derlemede kullanma ve yayın tanımları (değil, bir XAML derleme) öneririz. testleri uzaktan yürütün. |
 | Geliştiriciler Visual Studio'da uzaktan testleri çalıştırma | Artık desteklenmiyor. |

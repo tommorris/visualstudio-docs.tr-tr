@@ -1,20 +1,20 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 68656a042ba76dba3cc534e707612f02d23f640c
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b97517b8b469e5518b3973239d1d5dc5008b6b6a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709108"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281591"
 ---
 # <a name="monitoring-gpu-utilization"></a>GPU kullanımı izleme
-Uzak Linux makineler GPU kullanımı izlemek için:
+Uzak Linux makineleri GPU kullanımını izlemek için:
 
-1. İçinde **Sunucu Gezgini**, genişletin **uzak makineler**
-2. **Sağ tıklayın** izlemek istediğiniz uzak makine
+1. İçinde **Sunucu Gezgini**, genişletme **uzak makinede**.
+2. **Sağ** izlemek istediğiniz uzak makine.
 
-    ![GPU heatmap](media\monitor-gpu\gpu-heatmap-0.png)
+    ![GPU ısı Haritası](media\monitor-gpu\gpu-heatmap-0.png)
 
-2. Tıklatın **Göster ısı Haritası**
+2. Tıklayın **Göster ısı Haritası**.
 
-    ![GPU heatmap](media\monitor-gpu\heatmap.png)
+    ![GPU ısı Haritası](media\monitor-gpu\heatmap.png)

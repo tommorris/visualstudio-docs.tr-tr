@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512259"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280577"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlik değişiklikleri
 
@@ -73,7 +73,7 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    Çalışma zamanında, Visual Studio pkgdef alt Visual Studio işlemin çalışma zamanı yapılandırma dosyasında bu girişleri birleştirecektir (altında *[VSAPPDATA]\devenv.exe.config*) olarak [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) öğeleri. Arama yolları yoklama aracılığıyla önlediği için derleme bulunamadı Visual Studio işlemini izin vermek için önerilen yöntem budur.
+    Çalışma zamanında, Visual Studio pkgdef alt Visual Studio işlemin çalışma zamanı yapılandırma dosyasında bu girişleri birleştirecektir (altında *[VSAPPDATA]\devenv.exe.config*) olarak [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) öğeleri. Arama yolları yoklama aracılığıyla önlediği için derleme bulunamadı Visual Studio işlemini izin vermek için önerilen yöntem budur.
 
 ### <a name="reacting-to-this-breaking-change"></a>Bu bozucu bir değişiklik tepki verme
 
@@ -87,7 +87,7 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
 
 ### <a name="global-com-registration"></a>Genel bir COM kayıt
 
-* Daha önce Visual Studio, birçok kayıt defteri anahtarlarını yerel COM kaydını desteklemek için HKEY_CLASSES_ROOT ve HKEY_LOCAL_MACHINE yığınlar yüklü. Bu etkiyi ortadan kaldırmak için Visual Studio artık kullanır [kayıtsız etkinleştirme için COM bileşenlerini](https://msdn.microsoft.com/en-us/library/ms973913.aspx).
+* Daha önce Visual Studio, birçok kayıt defteri anahtarlarını yerel COM kaydını desteklemek için HKEY_CLASSES_ROOT ve HKEY_LOCAL_MACHINE yığınlar yüklü. Bu etkiyi ortadan kaldırmak için Visual Studio artık kullanır [kayıtsız etkinleştirme için COM bileşenlerini](https://msdn.microsoft.com/library/ms973913.aspx).
 * Sonuç olarak, çoğu TLB / OLB / DLL dosyaları % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv altında artık Visual Studio tarafından varsayılan olarak yüklenir. Bu dosyalar Visual Studio ana bilgisayar işlemi tarafından kullanılan karşılık gelen Registration-Free COM bildirimleri ile [INSTALLDIR] altında artık yüklüdür.
 * Sonuç olarak, Visual Studio COM arabirimleri için genel bir COM kayıt dayanan dış kod artık bu kayıtları bulur. Visual Studio işlemi içinde çalışan kod, bir fark görmezsiniz.
 
@@ -106,5 +106,5 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
 
 * Kayıtsız etkinleştirme için COM bileşenlerini de kullanmak için dış kod dönüştürülmesi.
 * Dış bileşenler, Visual Studio konumu bulabilir [Buradaki yönergeleri izleyerek](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
-* Dış bileşenler kullanmanızı öneririz [dış ayarları Yöneticisi](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) yerine doğrudan Visual Studio kayıt defteri anahtarları için okuma/yazma.
+* Dış bileşenler kullanmanızı öneririz [dış ayarları Yöneticisi](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) yerine doğrudan Visual Studio kayıt defteri anahtarları için okuma/yazma.
 * Uzantınızı kullanarak bileşenlerini kaydı için başka bir teknik uyguladınız mı denetleyin. Örneğin, hata ayıklayıcı uzantılarını yeni yararlanmak çözebileceğiniz [msvsmon JSON dosyası COM kayıt](migrate-debugger-COM-registration.md).

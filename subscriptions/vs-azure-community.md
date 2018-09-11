@@ -9,12 +9,12 @@ description: Seçili Visual Studio aboneliklerine dahil edilen Azure topluluğu 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624052"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283736"
 ---
 # <a name="azure-community"></a>Azure topluluğu
 
@@ -60,7 +60,7 @@ Azure topluluğu avantajı kullanılabilirliğini, aşağıda gösterildiği gib
 | Visual Studio Enterprise (aylık bulut), Visual Studio Professional (aylık bulut), NFR<sup>1</sup>                                          | Tümü                                              |Yok                                              |  Hayır          |
 | Visual Studio Dev Essentials                                        | Yok                                              |Yok                                              |  Hayır          |
 |
-<sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft TZE'si, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine için Microsoft Eğitmen (MCT) sertifikası* 
+<sup>1</sup>*içerir: değil satışıyla (NFR), Microsoft TZE'si, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine için Microsoft Eğitmen (MCT) sertifikası*
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
@@ -68,4 +68,4 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 -  Diğer Azure topluluk kaynakları için lütfen Azure topluluğu ziyaret ederek [destek sayfasını](https://azure.microsoft.com/support/forums/).
 -  [Azure belgeleri](/azure/).
 -  Visual Studio abonelikleri için satış, abonelikler, hesaplar ve faturalandırma konusunda Yardım gerekiyor?  Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

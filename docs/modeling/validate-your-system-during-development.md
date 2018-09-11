@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624199"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283632"
 ---
 # <a name="validate-your-system-during-development"></a>Geliştirme sırasında sisteminizi doğrulama
 Visual Studio, yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri ile tutarlı korunmasına yardımcı olabilirsiniz.
@@ -42,8 +42,8 @@ Visual Studio, yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri ile
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Uygulamayı test etme](/vsts/test/overview?view=vsts)
+- [Uygulamayı test etme](/azure/devops/test/overview?view=vsts)
 - [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)
-- [Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)
+- [Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

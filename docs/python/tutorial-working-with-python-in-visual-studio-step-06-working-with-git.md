@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f21528571a929fe31e8eb8cf891918a32fe2dce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511333"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278732"
 ---
 # <a name="step-6-work-with-git"></a>6. adım: Git ile çalışma
 
 **Önceki adımda: [paketleri yükleyin ve Python ortamınızı yönetme](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio, Visual Studio Team Services ve GitHub gibi hizmetlerinin üzerinde yerel Git depoları ve uzak depolar ile doğrudan tümleştirme sağlar. Bir depo kopyalama, değişiklikleri yaptıktan ve dalların yönetiminin tümleştirmeyi içerir.
+Visual Studio, GitHub ve Azure depoları gibi hizmetleri yerel Git depoları ve uzak depolar ile doğrudan tümleştirme sağlar. Bir depo kopyalama, değişiklikleri yaptıktan ve dalların yönetiminin tümleştirmeyi içerir.
 
 Bu makalede, var olan bir proje için yerel bir Git deposu oluşturma ve kendiniz Visual Studio'nun Git ilgili özelliklerin bazıları hakkında bilgi edinme, temel bir genel bakış sağlar.
 
@@ -56,7 +56,7 @@ Bu makalede, var olan bir proje için yerel bir Git deposu oluşturma ve kendini
 
 Uzak bir Git deposundan proje oluşturma kısa kılavuzu için bkz [hızlı başlangıç: Python kodu Visual Studio'da bir depoyu kopyalamak](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Çekme istekleri, yeniden Temellendirme ve tek tek seçme değişiklikleri dallar arasındaki kod gözden geçirme, birleştirme çakışmalarını işleme dahil olmak üzere daha kapsamlı bir öğretici için bkz. [Git ve VSTS ile çalışmaya başlama](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
+Çekme istekleri, yeniden Temellendirme ve tek tek seçme değişiklikleri dallar arasındaki kod gözden geçirme, birleştirme çakışmalarını işleme dahil olmak üzere daha kapsamlı bir öğretici için bkz. [Azure depoları ve Git ile çalışmaya başlama](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
 
 ## <a name="tutorial-review"></a>Öğretici gözden geçirme
 

@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme h
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624101"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282319"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -97,7 +97,7 @@ Lütfen doğrudan bir abonelik satın alırsanız, aşağıdakilerden birini yap
 
 Tüm karşılaştırma [abonelikleri ve faydaları](https://visualstudio.microsoft.com/vs/pricing/).
 
-Başka bir etkin Visual Studio aboneliğiniz varsa **aynı** abonelik düzeyi bir Microsoft hesabı altında bu bu Azure'a bağlayabilirsiniz fayda ekleyerek bir [alternatif hesap](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions) Visual Studio Abonelik portalı. Bu işe yaramazsa, de deneyebilirsiniz [Azure avantajınızı aktarma](/azure/billing/billing-subscription-transfer/) etkin bir Visual Studio aboneliğiniz için.
+Başka bir etkin Visual Studio aboneliğiniz varsa **aynı** abonelik düzeyi bir Microsoft hesabı altında bu bu Azure'a bağlayabilirsiniz fayda ekleyerek bir [alternatif hesap](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions) Visual Studio Abonelik portalı. Bu işe yaramazsa, de deneyebilirsiniz [Azure avantajınızı aktarma](/azure/billing/billing-subscription-transfer/) etkin bir Visual Studio aboneliğiniz için.
 
 Başka bir etkin Visual Studio aboneliğiniz varsa bir **farklı** abonelik düzeyi ve bir Microsoft hesabı altında başvurun [Azure Destek](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) Yardım almak için.
 
@@ -113,4 +113,4 @@ Hata bu e-posta aldığınız düşünüyorsanız, lütfen iletişime geçin [Az
     - Teknik Destek: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure belgeleri](/azure/)
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

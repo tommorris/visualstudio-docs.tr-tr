@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624408"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321025"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
 
 - Kayıt belirli olayları
 
-     İlgili kodu, görünen verileri incelemek **Yereller** penceresi sırasında hata ayıklayıcı olayları ve çağrı bilgileri işlevi
+   İlgili kodu, görünen verileri incelemek **Yereller** penceresi sırasında hata ayıklayıcı olayları ve çağrı bilgileri işlevi
 
 - Yeniden oluşturulması zor olan veya dağıtımda gerçekleşen hataları hata ayıklama
 
@@ -46,7 +46,7 @@ IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Communit
 |||
 |-|-|
 |**Uygulamamın IntelliTrace ile hata ayıklama:**<br /><br /> -Geçmişteki olayları göster.<br />-Geçmiş olaylar ile ilgili çağrı bilgilerini göster.<br />-IntelliTrace Oturumumu Kaydet.<br />-Intellitrace'in topladığı verileri kontrol et.|- [İzlenecek yol: IntelliTrace'i kullanma](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace özellikleri](../debugger/intellitrace-features.md)<br />- [Geçmiş hata ayıklama](../debugger/historical-debugging.md)<br />- [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüleme](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Test Yöneticisi'nde bir sınama oturumu sırasında IntelliTrace verisi Topla**|- [El ile testlerde daha fazla tanılama verisi toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Test Yöneticisi'nde bir sınama oturumu sırasında IntelliTrace verisi Topla**|- [El ile testlerde daha fazla tanılama verisi toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Dağıtılmış uygulamalardan IntelliTrace verilerini toplama**|- [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Bir IntelliTrace günlük dosyasından (.iTrace dosyası) hata ayıklamayı başlatın.**|- [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ Bu kaynaklardan IntelliTrace verisi kaydedebilirsiniz:
 
 - Uygulamanız sınama bilgisayarında çöküyor ancak geliştirme bilgisayarında başarıyla çalışır.
 
-     Microsoft Test Yöneticisi'nden IntelliTrace verisi toplayabilir, verileri .iTrace dosyasına kaydedebilir ve bu dosyayı daha sonra incelemek için Team Foundation Server çalışma öğesine ekleyebilirsiniz. Bkz: [el ile testlerde daha fazla tanılama verisi toplama](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) ve [kullanım kaydedilen IntelliTrace verilerini](../debugger/using-saved-intellitrace-data.md).
+     Microsoft Test Yöneticisi'nden IntelliTrace verisi toplayabilir, verileri .iTrace dosyasına kaydedebilir ve bu dosyayı daha sonra incelemek için Team Foundation Server çalışma öğesine ekleyebilirsiniz. Bkz: [el ile testlerde daha fazla tanılama verisi toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) ve [kullanım kaydedilen IntelliTrace verilerini](../debugger/using-saved-intellitrace-data.md).
 
 - Dağıtılan bir uygulamada hata veya kilitlenme oluşur.
 
@@ -129,9 +129,7 @@ Varsayılan olarak, IntelliTrace yalnızca IntelliTrace olayları kaydeder: hata
 
 - **.NET framework olayları**
 
-     Varsayılan olarak, IntelliTrace en sık görülen .NET Framework olaylarını kaydeder. Örneğin:
-
-    - Bir Onay Kutusu Denetimi olayında IntelliTrace onay kutusunun durumunu ve metnini toplar.
+   Varsayılan olarak, IntelliTrace en sık görülen .NET Framework olaylarını kaydeder. Örneğin, bir onay kutusu denetimi olayında, IntelliTrace ror onay kutusunun durumunu ve metnini toplar.
 
 - **SharePoint 2010 ve SharePoint 2013 uygulama olayları**
 
@@ -179,9 +177,11 @@ Varsayılan olarak, IntelliTrace yalnızca seçili IntelliTrace olaylarının ve
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[IntelliTrace özellikleri](../debugger/intellitrace-features.md)
-[dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)
-[kaydedilmiş IntelliTrace verilerini kullan](../debugger/using-saved-intellitrace-data.md)
+[IntelliTrace Özellikleri](../debugger/intellitrace-features.md)
+
+[Dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)
+
+[Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>Bloglar
 

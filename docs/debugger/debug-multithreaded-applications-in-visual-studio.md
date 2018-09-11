@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677783"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279555"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio'da Çok İş Parçacıklı Uygulamalarda Hata Ayıklama
 Bir iş parçacığı, işletim sisteminin işlemci süresi ayırdığı yönergeler sırasıdır. İşletim sisteminde çalışan her işlem en az bir iş parçacığından oluşur. Birden fazla iş parçacığı bulunan işlemler birden çok iş parçacıklı çağrılır.  
@@ -95,7 +95,7 @@ Bir kullanıcı arabirimine sahip birden çok iş parçacıklı bir uygulamada h
  [İş parçacığı oluşturma](/dotnet/standard/threading/index)  
  İş parçacığı kavramları [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programlama, örnek kod dahil.  
   
- [Bileşenlerinde çoklu iş parçacığı kullanımı](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [Bileşenlerinde çoklu iş parçacığı kullanımı](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  Nasıl kullanılacağını parçacığı [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bileşenleri.  
   
  [Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  

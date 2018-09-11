@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3203382b33184edf5618daecd9d3dc9102e2ca6
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 7c87b3749c2ea63e89e2e8fb0caf773434a38df2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251656"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281396"
 ---
 # <a name="register-a-custom-debug-engine"></a>Bir özel hata ayıklama altyapısını kaydetme
 Hata ayıklama altyapısı gereken kendisini aşağıdaki COM kuralları bir sınıf üreteci kaydetmek yanı sıra Visual Studio kayıt defteri alt anahtarı Visual Studio ile kaydedin.  
   
 > [!NOTE]
->  Hata ayıklama altyapısının bir parçası olarak oluşturulan TextInterpreter örnek kaydetmek nasıl bir örnek bulabilirsiniz [Öğreticisi: ATL COM kullanarak bir hata ayıklama altyapısı oluşturma](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  Hata ayıklama altyapısının bir parçası olarak oluşturulan TextInterpreter örnek kaydetmek nasıl bir örnek bulabilirsiniz [Öğreticisi: ATL COM kullanarak bir hata ayıklama altyapısı oluşturma](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
 ## <a name="dll-server-process"></a>DLL sunucu işlemi  
  Hata ayıklama altyapısı genellikle kendi DLL'de bir COM sunucusu olarak ayarlanır. Visual Studio erişebilmeniz için önce bu nedenle, hata ayıklama altyapısı kendi sınıf üreteci CLSID değeri COM ile kaydetmeniz gerekir. Ardından, hata ayıklama altyapısı kendisini herhangi bir özelliği (Aksi ölçümler olarak bilinen) oluşturmak için Visual Studio ile hata ayıklama kaydetmelisiniz altyapısını destekler. Visual Studio kayıt defteri alt anahtarına yazılan ölçümler seçimi, hata ayıklama altyapısı destekler özelliklerine bağlıdır.  
@@ -54,4 +54,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Bir özel hata ayıklama altyapısı oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [Hata ayıklama için SDK Yardımcıları](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Öğretici: ATL COM kullanarak bir hata ayıklama altyapısı oluşturma](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [Öğretici: ATL COM kullanarak bir hata ayıklama altyapısı oluşturma](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

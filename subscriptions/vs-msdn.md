@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ea89d30c9174cc0bd3080131363edad4ef66eb77
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624191"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283593"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
 
@@ -57,7 +57,7 @@ Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
 |Visual Studio Enterprise, Visual Studio Professional (aylık bulut)   | Azure |Yok      |  Yok         |
 |Visual Studio Dev Essentials| Yok |Dijital sürüm       |  Evet|
 
-<sup>1</sup>*yazdırılan sürümü: yeniden satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, Microsoft iş ortağı ağı (Kurumsal) için Imagine (Premium).* 
+<sup>1</sup>*yazdırılan sürümü: yeniden satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, Microsoft iş ortağı ağı (Kurumsal) için Imagine (Premium).*
 
 *Dijital sürüm: MCT yazılım ve Hizmetleri, Microsoft değerli ortak (Professional), bölge Yöneticisi (RD).*
 
@@ -68,4 +68,4 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

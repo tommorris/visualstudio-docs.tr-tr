@@ -9,12 +9,12 @@ description: Bulut abonelikleri için faturalama soruları.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624269"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283309"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio bulut abonelikleri faturalandırma ile ilgili SSS
 
@@ -92,7 +92,7 @@ Satın alma işlemleri yapmadan önce gerekecektir [harcama limitinizi kaldırı
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>S: yıllık ve aylık bulut abonelikleri arasındaki fark nedir?
 
-Y: aylık bulut abonelikleri Visual Studio VSTS ve TFS bulunur. Yıllık bulut aboneliklerine bu çok var, ancak aynı zamanda Windows ve diğer Microsoft yazılımları yüklemek ve çalıştırmak için geliştirme için kullanılması ve test, bir aylık Azure kredisi, Azure hizmetlerini deneme ve yapmak için kullanmak üzere abone avantajları dahil geliştirme ve bulut, eğitim, destek ve daha fazlasını test.
+Y: aylık bulut abonelikleri Visual Studio, Azure DevOps hizmetlerin ve TFS bulunur. Yıllık bulut aboneliklerine bu çok var, ancak aynı zamanda Windows ve diğer Microsoft yazılımları yüklemek ve çalıştırmak için geliştirme için kullanılması ve test, bir aylık Azure kredisi, Azure hizmetlerini deneme ve yapmak için kullanmak üzere abone avantajları dahil geliştirme ve bulut, eğitim, destek ve daha fazlasını test.
 [Bulut abonelik avantajları ve fiyatlandırmayı karşılaştırarak](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Visual Studio bulut aboneliği satın almam varsa Visual Studio'nun yeni sürümleri almam s:?

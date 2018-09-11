@@ -24,52 +24,52 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5b9be1d03c8635b1d6b01556c8b4c3963db1d7a2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057180"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279355"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>İzlenecek Yol: Web Formunda Hata Ayıklama
-Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması, Web formu olarak da bilinir. Bunu başlatmak ve yürütme durdurmak, kesme noktalarını ayarlayın ve değişkenleri incelemek nasıl gösterir **izleme** penceresi.  
+Bu kılavuzda açıklanan adımları hatalarını nasıl ayıklayacağınız Göster bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması, Web formu olarak da bilinir. Başlat ve yürütmeyi durdurun, kesme noktaları ayarlayın ve değişkenleri incelemek nasıl gösterir **Watch** penceresi.  
   
 > [!NOTE]
->  Bu izlenecek yolu tamamlamak için sunucu bilgisayarında yönetici ayrıcalıkları olmalıdır. Varsayılan olarak, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] işleme, aspnet_wp.exe veya w3wp.exe olarak çalışan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] işlemi. Hata ayıklamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], bilgisayarda yönetici ayrıcalıklarına sahip olduğu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalıştırır. Daha fazla bilgi için bkz: [sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md).  
+>  Bu izlenecek yolu tamamlamak için sunucu bilgisayarında yönetici ayrıcalıkları olmalıdır. Varsayılan olarak, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] işlem aspnet_wp.exe veya w3wp.exe olarak çalışan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] işlem. Hata ayıklamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], bilgisayarda yönetici ayrıcalıklarına sahip olduğu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalıştırır. Daha fazla bilgi için [sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md).  
   
- İletişim kutuları ve menü komutlarını gördüğünüz açıklanana Yardım'da etkin ayarlarınıza veya sürümünüze bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
+ İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).  
   
-### <a name="to-create-the-web-form"></a>Web Form oluşturmak için  
+### <a name="to-create-the-web-form"></a>Web formu oluşturma  
   
-1.  Zaten açık bir çözüm varsa, kapatın.  
+1.  Açık bir çözüm zaten varsa, kapatın.  
   
 2.  Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **Web sitesi**.  
   
      **Yeni Web sitesi** iletişim kutusu görüntülenir.  
   
-3.  İçinde **şablonları** bölmesinde tıklatın **ASP.NET Web sitesi**.  
+3.  İçinde **şablonları** bölmesinde tıklayın **ASP.NET Web sitesi**.  
   
-4.  Üzerinde **konumu** satır, tıklatın **HTTP** listesinden ve metin kutusuna yazın **http://localhost/WebSite**.  
+4.  Üzerinde **konumu** satır, tıklayın **HTTP** listeden ve metin kutusuna yazın **http://localhost/WebSite**.  
   
-5.  İçinde **dil** tıklatın **Visual C#** veya **Visual Basic**.  
+5.  İçinde **dil** listesinde **Visual C#** veya **Visual Basic**.  
   
 6.  **Tamam**'ı tıklatın.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yeni bir proje oluşturur ve varsayılan HTML kaynak kodunu görüntüler. Ayrıca adlı yeni bir sanal dizin oluşturur **Web sitesi** altında **varsayılan Web sitesi** IIS'de.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yeni bir proje oluşturur ve varsayılan HTML kaynak kodunu gösterir. Ayrıca adlı yeni bir sanal dizin oluşturur **Web sitesi** altında **varsayılan Web sitesi** IIS'de.  
   
-7.  Tıklatın **tasarım** alt kenar boşluğu sekmesinde.  
+7.  Tıklayın **tasarım** sekmesinde alt kenar boşluğu.  
   
-8.  Tıklatın **araç** sekmesinde sol kenar boşluğu veya üzerinde seçin **Görünüm** menüsü.  
+8.  Tıklayın **araç kutusu** sekmesinde sol kenar boşluğu veya üzerinde seçin **görünümü** menüsü.  
   
-     **Araç** açar.  
+     **Araç kutusu** açılır.  
   
-9. İçinde **araç**, tıklatın **düğmesini** denetlemek ve ana tasarım yüzeyi Default.aspx ekleyin.  
+9. İçinde **araç kutusu**, tıklayın **düğmesi** denetlemek ve Default.aspx temel tasarım yüzeyine ekleyin.  
   
-10. İçinde **araç**, tıklatın **Textbox** denetlemek ve denetimi Default.aspx ana tasarım yüzeyine sürükleyin.  
+10. İçinde **araç kutusu**, tıklayın **Textbox** denetimi ekleyin ve denetimi Default.aspx, temel tasarım yüzeyine sürükleyin.  
   
-11. Bıraktığınız düğme denetimi çift tıklatın.  
+11. Bıraktığınız düğme denetimini çift tıklayın.  
   
-     Bu kod sayfasına götürür: C# veya Default.aspx.vb için Default.aspx.cs [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. İmleç işlevinde olmalıdır `Button1_Click`.  
+     Bu sizi kod sayfasına götürür: C# veya Default.aspx.vb için Default.aspx.cs [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. İmleç işlevi olmalıdır `Button1_Click`.  
   
 12. İçinde `Button1_Click` işlev, aşağıdaki kodu ekleyin:  
   
@@ -81,15 +81,15 @@ Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](.
     TextBox1.Text = "Button was clicked!";  
     ```  
   
-13. Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.  
+13. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
-     Proje derleme hataları.  
+     Projenin hatasız oluşturması gerekir.  
   
-     Şimdi, hata ayıklama başlatmaya hazırsınız.  
+     Artık, hata ayıklamaya başlamak hazırsınız.  
   
-### <a name="to-debug-the-web-form"></a>Web formunda hata ayıklamak için  
+### <a name="to-debug-the-web-form"></a>Web formu hata ayıklaması için  
   
-1.  Default.aspx.cs veya Default.aspx.vb penceresinde sol kenar boşluğu eklediğiniz metin olarak aynı satıra tıklayın:  
+1.  Default.aspx.cs veya Default.aspx.vb penceresinde, eklediğiniz metin ile aynı satırda sol kenar boşluğunu tıklatın:  
   
     ```vb  
     TextBox1.Text = "Button was clicked!"
@@ -99,49 +99,49 @@ Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](.
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz. Daha fazla bilgi için bkz: [kesme noktaları](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz. Daha fazla bilgi için [kesme noktaları](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Üzerinde **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Başlat**.  
+2.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
   
-3.  **Hata ayıklama etkin** iletişim kutusu görüntülenir. Seçin **hata ayıklamayı etkinleştirmek üzere Web.config dosyasında değişiklik** seçeneğini ve tıklayın **Tamam**.  
+3.  **Hata ayıklama etkin** iletişim kutusu görüntülenir. Seçin **hata ayıklamayı etkinleştirmek için Web.config dosyasını değiştirme** seçeneğini ve tıklayın **Tamam**.  
   
-     Internet Explorer başlatır ve yalnızca tasarlanmış sayfasını görüntüler.  
+     Internet Explorer, başlatılır ve yalnızca tasarlanmış sayfası görüntülenir.  
   
-4.  Internet Explorer'da düğmesini tıklatın.  
+4.  Internet Explorer'da düğmesine tıklayın.  
   
-     İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bu, satırı için kod sayfası Default.aspx.cs veya Default.aspx.vb isabetini belirlendiği alır. Bu satır, sarı ile vurgulanmış olmalıdır. Şimdi, uygulamanızda değişkenleri görüntüleyebilir ve yürütülmesini denetleyebilirsiniz. Uygulamanız yürütülmesi durdurulur ve, bir komutu bekler.  
+     İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bu sizi satırına kod sayfası Default.aspx.cs veya Default.aspx.vb kesme noktasına ayarlandığı götürür. Bu satır, sarı ile vurgulanmış olmalıdır. Şimdi, uygulamanızda değişkenleri görüntüleyebilir ve yürütülmesini denetleyebilirsiniz. Uygulamanızı çalıştırma durdurur ve sizden bir komutu bekler.  
   
-5.  Üzerinde **hata ayıklama** menüsünde tıklatın **Windows**, ardından **izleme**ve ardından **Watch1**.  
+5.  Üzerinde **hata ayıklama** menüsünde tıklayın **Windows**, ardından **izleme**ve ardından **Watch1**.  
   
-6.  İçinde **izleme** penceresinde, türü **TextBox1.Text**.  
+6.  İçinde **Watch** penceresinde, tür **TextBox1.Text**.  
   
-     **İzleme** penceresi gösterir değişkenin değeri olarak `TextBox1.Text`:  
+     **Watch** penceresi, değişkenin değerini gösterir `TextBox1.Text`:  
   
     '""' 
   
-7.  Üzerinde **hata ayıklama** menüsünde tıklatın **Step Over**.  
+7.  Üzerinde **hata ayıklama** menüsünü tıklatın **Step Over**.  
   
-     Değeri `TextBox1.Text` değişiklikleri **izleme** penceresi okumak için:  
+     Değerini `TextBox1.Text` değişiklikleri **Watch** okunacak penceresi:  
   
     `"Button was clicked!"`  
   
-8.  Üzerinde **hata ayıklama** menüsünde tıklatın **devam**.  
+8.  Üzerinde **hata ayıklama** menüsünü tıklatın **devam**.  
   
-9. Internet Explorer'da yeniden düğmesini tıklatın.  
+9. Internet Explorer'da düğmesine tekrar tıklayın.  
   
-     Yürütme kesme noktasında yeniden durur.  
+     Yürütme kesme noktasında yeniden durdurur.  
   
-10. Default.aspx.cs veya Default.aspx.vb pencerede, sol kenar boşluğunda kırmızı noktaya tıklayın.  
+10. Default.aspx.cs veya Default.aspx.vb penceresinde kırmızı nokta sol kenar boşluğunda tıklayın.  
   
-     Kesme noktası kaldırır.  
+     Bu kesme noktasını siler.  
   
-11. Üzerinde **hata ayıklama** menüsünde tıklatın **durdurma hata ayıklama**.  
+11. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Durdur**.  
   
-### <a name="to-attach-to-the-web-form-for-debugging"></a>Hata ayıklama için Web formu iliştirmek için  
+### <a name="to-attach-to-the-web-form-for-debugging"></a>Hata ayıklama için Web formu eklemek için  
   
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] içinde, hata ayıklayıcısını çalışan bir işleme ekleyebilirsiniz. En etkili hata ayıklama için yürütülebilir dosya simge (PDB) dosyaları ile hata ayıklama sürümü derler.  
+1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] içinde, hata ayıklayıcısını çalışan bir işleme ekleyebilirsiniz. En etkili hata ayıklama için yürütülebilir dosya, sembol (PDB) dosyaları ile bir hata ayıklama sürümü derleyin.  
   
-2.  Default.aspx.cs veya Default.aspx.vb penceresinde tekrar eklediğiniz satırında bir kesme noktası ayarlamak için sol kenar boşluğu'ı tıklatın:  
+2.  Default.aspx.cs veya Default.aspx.vb penceresinde tekrar, eklediğiniz satırda bir kesme noktası ayarlamak için sol kenar boşluğunda tıklayın:  
   
     ```vb  
     TextBox1.Text = "Button was clicked!"
@@ -151,17 +151,17 @@ Bu izlenecek adımları hata ayıklamak nasıl Göster bir [!INCLUDE[vstecasp](.
     textBox1.Text = "Button was clicked!";  
     ```  
   
-3.  Üzerinde **hata ayıklama** menüsünde tıklatın **hata ayıklama olmadan Başlat**.  
+3.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.  
   
-     Internet Explorer altında çalıştırmak için Web formu başlar, ancak hata ayıklayıcı iliştirilmemiş.  
+     Internet Explorer altında çalıştırmak Web formu başlatır, ancak hata ayıklayıcısı iliştirilmemiş.  
   
-4.  Ekleme [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] işlemi. Daha fazla bilgi için bkz: [dağıtılmış Web uygulamalarında hata ayıklama](../debugger/debugging-deployed-web-applications.md).  
+4.  Ekleme [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] işlem. Daha fazla bilgi için [dağıtılan Web uygulamaları hata ayıklama](../debugger/debugging-deployed-web-applications.md).  
   
-5.  Internet Explorer'da formunuzda düğmesini tıklatın.  
+5.  Internet Explorer'da formunuza düğmesine tıklayın.  
   
-     İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Default.aspx.cs, Default.aspx.vb veya Default.aspx kesme noktası isabet.  
+     İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Default.aspx.cs, Default.aspx.vb veya Default.aspx kesme noktasına isabet.  
   
-6.  İşiniz bittiğinde hata ayıklama, üzerinde **hata ayıklama** menüsünde tıklatın **durdurma hata ayıklama**.  
+6.  İşiniz bittiğinde hata ayıklama, üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Durdur**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

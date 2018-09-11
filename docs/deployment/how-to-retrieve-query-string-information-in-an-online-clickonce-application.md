@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 251f175112a03bbe158c529b669b56378913f020
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080434"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282458"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Nasıl yapılır: çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma
 *Sorgu dizesi* soru biçiminde rastgele bilgi içeren işareti (?) ile başlayan bir URL kısmıdır *ad = değer*. Sahip olduğunuz varsayalım bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] adlı uygulama `WindowsApp1` üzerinde barındıran `servername`, ve değişken için bir değer geçirmek istediğiniz `username` zaman uygulamasını başlatır. URL'niz aşağıdakine benzeyebilir:  
@@ -78,7 +78,7 @@ ms.locfileid: "39080434"
  Uygulamanız yalnızca çevrimiçi ise, her zaman bir URL aracılığıyla etkinleştirilir. Bu durumda bile, ancak uygulamanızı sorgu dizesi parametresi eksik veya bozuk olması durumunda düzgün şekilde çalışabilmesi için yazılmış olmalıdır.  
   
 ## <a name="net-framework-security"></a>.NET Framework güvenliği  
- URL parametreleri izin, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kullanmadan önce giriş kötü amaçlı karakter temizlemeyi düşünüyorsanız uygulama. Bir dize teklifleri, eğik çizgi veya noktalı virgül, örneğin katıştırılmış, rastgele veri işlemleri kullandıysanız bir veritabanında bir SQL sorgusunda filtrelenmemiş gerçekleştirebilir. Sorgu dizesi güvenliği hakkında daha fazla bilgi için bkz. [betik yararlanan genel bakış](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+ URL parametreleri izin, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kullanmadan önce giriş kötü amaçlı karakter temizlemeyi düşünüyorsanız uygulama. Bir dize teklifleri, eğik çizgi veya noktalı virgül, örneğin katıştırılmış, rastgele veri işlemleri kullandıysanız bir veritabanında bir SQL sorgusunda filtrelenmemiş gerçekleştirebilir. Sorgu dizesi güvenliği hakkında daha fazla bilgi için bkz. [betik yararlanan genel bakış](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)

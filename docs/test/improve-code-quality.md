@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180119"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321066"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
@@ -38,12 +38,11 @@ Visual Studio Test Araçları size yardımcı olabilir ve takımınızın geliş
 - [Yük testi](../test/quickstart-create-a-load-test-project.md) birim testleri ve web performans testleri çalıştırarak sunucu uygulaması üzerindeki yük benzetimini yapar.
 
 > [!NOTE]
-> Birim testi Visual Studio'nun tüm sürümlerinde kullanılabilir olan. Diğer test araçları gibi canlı birim testi, Intellitest, ve kodlanmış UI testleri yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz. [Visual Studio 2017 IDE'lerini karşılaştırın](https://visualstudio.microsoft.com/vs/compare/).
+> Birim testi Visual Studio'nun tüm sürümlerinde kullanılabilir. Diğer test araçları gibi canlı birim testi, Intellitest, ve kodlanmış UI testleri yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz. [Visual Studio 2017 IDE'lerini karşılaştırın](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>İlgili senaryolar
 
-* [Keşif & el ile test (VSTS)](/vsts/manual-test/)
-* [Yük testi (VSTS)](/vsts/load-test/index)
-* [Sürekli test etme (VSTS)](/vsts/build-release/test/index)
-* [Team Services ve TFS (VSTS) için DevOps genel bakış](/vsts/user-guide/devops-alm-overview)
+* [Keşif & el ile test (Azure Test planları)](/azure/devops/test/index?view=vsts)
+* [Yük testi (Azure Test planları)](/azure/devops/test/load-test/index?view=vsts)
+* [Sürekli test (Azure Test planları)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [Kod çözümleme araçları](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

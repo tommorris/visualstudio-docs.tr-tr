@@ -11,12 +11,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: db88545393eeda280df898ee896f54123f4a1627
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251548"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280811"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Evrensel Windows Platformu (UWP) için uygulama geliştirme
 Evrensel Windows platformu ve bizim bir Windows çekirdek ile masaüstlerine telefonlardan tüm Windows 10 cihazlarda aynı uygulamayı çalıştırabilirsiniz. Visual Studio ve evrensel Windows uygulaması geliştirme araçları ile bu evrensel Windows uygulamaları oluşturun.
@@ -47,7 +47,7 @@ Evrensel Windows platformu yeterlidir, sözleşmeler ve sürümleri koleksiyonud
 Bu yazılımı yükledikten sonra Windows 10 Cihazınızı geliştirme için etkinleştirmeniz gerekir. Bkz: [Cihazınızı geliştirme için etkinleştirme](/windows/uwp/get-started/enable-your-device-for-development). Artık her Windows 10 cihaz için bir geliştirici lisansı gereklidir.
 
 ## <a name="universal-windows-apps"></a>Evrensel Windows uygulamaları
-C#, Visual Basic, C++ veya JavaScript Windows 10 cihazları için bir evrensel Windows platformu uygulaması oluşturmak için tercih edilen geliştirme dilini seçin. Okuma [ilk uygulamanızı oluşturma](/windows/uwp/get-started/your-first-app) veya izleme [araçları için Windows 10 genel bakış](http://channel9.msdn.com/Series/ConnectOn-Demand/229) video.
+C#, Visual Basic, C++ veya JavaScript Windows 10 cihazları için bir evrensel Windows platformu uygulaması oluşturmak için tercih edilen geliştirme dilini seçin. Okuma [ilk uygulamanızı oluşturma](/windows/uwp/get-started/your-first-app) veya izleme [araçları için Windows 10 genel bakış](https://channel9.msdn.com/Series/ConnectOn-Demand/229) video.
 
 Mevcut Windows Store 8.1 uygulamaları, Windows Phone 8.1 uygulamaları veya Visual Studio 2015 ile oluşturulan Evrensel Windows uygulamalarını varsa, bu uygulamalar en son Evrensel Windows Platformu'nu kullanmak için bağlantı noktası gerekir. Bkz: [Windows çalışma zamanını şuradan taşımak için UWP 8.x](/windows/uwp/porting/w8x-to-uwp-root).
 

@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380371"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320910"
 ---
 # <a name="unit-test-your-code"></a>Birim testi kod
 
@@ -49,8 +49,8 @@ Birim testlerini anlamaya ve oluşturmaya yardımcı olmaları için aşağıdak
 |**Birim testleri C++ kodu**|-   [C++ için Microsoft birim testi çerçevesi ile C/C++ için birim testleri yazma](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Birim testlerini yalıtma**|-   [Microsoft Fakes ile test edilen kodu Ayır](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Proje kodunuzun ne oranda test edilen belirlemek için kod kapsamı kullanın:** Visual Studio Test araçlarının kod kapsamı özelliği hakkında bilgi edinin.|-   [Ne kadar kodun test edildiğini belirlemek için kod kapsamını kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Yük testlerini kullanarak stres ve performans analizleri gerçekleştirin:** yük testi oluşturma ve birim testlerinizi buna ekleyerek uygulamanızdaki performans ve stres sorularınızın yardımcı ekleyin.|-   [Test (VSTS ve TFS) yükleyin](/vsts/load-test/)|
-|**Kalite kapıları ayarlayın:** testleri kod iade edilmeden önce çalışmaya zorlamak için kodun kalitesini sağlamaya yardımcı olmak için kalite kapıları oluşturabilirsiniz.|-   [İade ilkeleri (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Yük testlerini kullanarak stres ve performans analizleri gerçekleştirin:** yük testi oluşturma ve birim testlerinizi buna ekleyerek uygulamanızdaki performans ve stres sorularınızın yardımcı ekleyin.|-   [Test (Azure Test planları ve TFS) yükleyin](/azure/devops/test/load-test/index?view=vsts)|
+|**Kalite kapıları ayarlayın:** testleri kod iade veya birleştirilmiş önce çalışmaya zorlamak için kodun kalitesini sağlamaya yardımcı olmak için kalite kapıları oluşturabilirsiniz.|-   [İade ilkeleri (Azure depoları TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Test seçeneklerini belirleyin:** örneğin test sonuçlarının nerede depolanacağını belirtebilirsiniz.|[.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API başvuru belgeleri

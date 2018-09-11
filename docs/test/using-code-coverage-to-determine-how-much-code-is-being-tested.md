@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381722"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279953"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Kod kapsamını kullanarak ne kadar kodun test edildiğini belirleme
 
@@ -249,9 +249,9 @@ Kod kapsamı analizi yüklenen derlemeler ve kendisi için gerçekleştirilen bi
 
 Üzerinde derlemeleri ve öğeleri seçili kod kapsamı çözümleme yazarak daha fazla denetimle alıştırma yapabilirsiniz bir *.runsettings* dosya. Örneğin, kendi sınıfları için öznitelikler eklemek zorunda kalmadan belirli tür derlemeleri hariç tutabilirsiniz. Daha fazla bilgi için [kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md).
 
-## <a name="analyze-code-coverage-in-the-build-service"></a>Yapı hizmetindeki kod kapsamını analiz etme
+## <a name="analyze-code-coverage-in-azure-pipelines"></a>Azure işlem hatları, kod kapsamını analiz etme
 
-Kodunuzda denetlediğinizde, testiniz diğer ekip üyelerinden gelen diğer tüm testlerle birlikte yapı sunucusunda çalışır. (, Zaten bu ayarları yapmadıysanız bkz [yapı işleminizde testler](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Tüm projeye en güncel ve en kapsamlı resmi sağladığından, kod kapsamını yapı hizmetinde çözümlemek yararlıdır. Otomatik Sistem testleri ve geliştirme makinelerinde genellikle çalıştırma kodlanmış diğer testleri de içerecektir.
+Kodunuzda denetlediğinizde, testiniz diğer ekip üyelerinden gelen diğer tüm testlerle birlikte yapı sunucusunda çalışır. (, Zaten bu ayarları yapmadıysanız bkz [yapı işleminizde testler](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Tüm projeye en güncel ve en kapsamlı resmi sağladığından, Azure işlem hatları, kod kapsamını analiz etmek kullanışlıdır. Otomatik Sistem testleri ve geliştirme makinelerinde genellikle çalıştırma kodlanmış diğer testleri de içerecektir.
 
 1. İçinde **Takım Gezgini**açın **yapılar**ve ardından eklemek veya bir yapı tanımını düzenleyin.
 

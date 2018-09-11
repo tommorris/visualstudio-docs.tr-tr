@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638671"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281175"
 ---
 # <a name="address-dpi-issues"></a>DPI sorunları
 Giderek artan sayıda cihazları "yüksek çözünürlüklü" ekranlarla yayımlayan. Bu ekranları genellikle 200'den fazla inç başına piksel (ppi) sahiptir. Uygulamanın bu bilgisayarlarda çalışmak bir cihaz için normal görüntülemeye uzaklıkta içeriği görüntüleme gereksinimlerini karşılayacak şekilde ölçeklenmesine olanak içerik gerektirir. 2014'ten itibaren yüksek yoğunluklu görüntüler için birincil hedef mobil cihazlar (tabletler, clamshell dizüstü bilgisayarları ve telefonları) bilgi işlem.  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Alma WebOC HDPI desteğini etkinleştirme  
  Varsayılan olarak, HDPI algılama ve destek alma WebOC denetimler (örneğin, WPF veya Iwebbrowser2 arabirimi WebBrowser denetimi) etkinleştirmeyin. Sonuç yüksek çözünürlüklü bir ekranda çok küçük görüntü içeriğe sahip katıştırılmış bir denetimi olacaktır. Belirli web alma WebOC örneğinde yüksek DPI desteğini nasıl etkinleştireceğinizi açıklar.  
   
- IDocHostUIHandler arabirimini uygular (MSDN makalesine bakın [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) arabirimi):  
+ IDocHostUIHandler arabirimini uygular (MSDN makalesine bakın [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- İsteğe bağlı olarak ICustomDoc arabirimini uygular (MSDN makalesine bakın [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) arabirimi):  
+ İsteğe bağlı olarak ICustomDoc arabirimini uygular (MSDN makalesine bakın [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

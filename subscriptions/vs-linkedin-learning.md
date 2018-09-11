@@ -9,12 +9,12 @@ description: Seçili Visual Studio abonelikleri dahil bir LinkedIn Premium abone
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: bb3611b485bd36b1268f12ca06b29d8962eab8ae
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: a1007f8cafe162f6afa09690bfa500f359793962
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624244"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278815"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning avantaj olarak Visual Studio abonelikleri
 
@@ -101,7 +101,7 @@ LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek i�
 | Visual Studio Dev Essentials | Yok  | 3 ay |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir: Not for Resale (NFR), Visual Studio Endüstri ortağı (VSIP).    Dışlar: Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: Not for Resale (NFR), Visual Studio Endüstri ortağı (VSIP).  Dışlar: Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli ortak (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
 
 
@@ -116,4 +116,4 @@ C: Hayır, LinkedIn Learning teklif, yalnızca yeni abonelere sunulmamaktadır.
     - Yardım [LinkedIn Learning kullanarak](https://www.linkedin.com/help/learning).
     - Genel sorular hakkında Yardım [LinkedIn](https://www.linkedin.com/help/linkedin) hesaplarını ve profillerini oluşturma ve ağınızı koruma gibi.
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

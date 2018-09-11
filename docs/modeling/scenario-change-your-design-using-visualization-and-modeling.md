@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623954"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321170"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -49,7 +49,7 @@ Bu izlenecek yol:
 
 Bu araçlar ve destekledikleri senaryolar hakkında daha fazla bilgi için bkz:
 
-- [Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)
+- [Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)
 
 - [Kodu görselleştirme](../modeling/visualize-code.md)
 
@@ -216,9 +216,9 @@ Planlama, yönetme ve çalışmayı daha kolay izlemek için visual Studio model
 
 Bkz.
 
-- [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Çevik araçları ve Çevik proje yönetimi hakkında](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [Grafikler, panolar ve pencere öğeleri (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [Grafikler, panolar ve pencere öğeleri (Azure DevOps Hizmetleri)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Tasks using Project ve biriktirme listesi oluşturma](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ Kodun tasarıma uymasını sağlamak için bağımlılık doğrulaması eklemek 
 
 Bkz.
 
-- [Uygulamayı test etme](/vsts/test/overview?view=vsts)
+- [Uygulamayı test etme](/azure/devops/test/overview?view=vsts)
 
 - [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)
 
 - [Sürüm denetimi kullanın](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Derleme ve yayınlama](/vsts/build-release/index)
+- [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Sistem Görselleştirme ve modelleme kullanarak güncelleştirme
 

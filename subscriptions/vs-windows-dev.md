@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Windows Geliştirici hesabı hak
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: c9d7bc13013d3dd98f675a22b5fb01ac46b2b134
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624347"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279329"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Windows Geliştirici hesabı
 
@@ -68,4 +68,4 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 * Windows Geliştirici hesabınızı kullanarak yardıma mı ihtiyacınız var?  Kullanıma [Destek](https://developer.microsoft.com/windows/support) kaynaklardaki [Windows Dev Center](https://developer.microsoft.com/windows).
 * [Windows Geliştirme](/windows/)
 * Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
-* Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+* Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

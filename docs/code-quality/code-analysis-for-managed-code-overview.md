@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131888"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320821"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Yönetilen kod için kod çözümlemesine genel bakış
 
@@ -44,7 +44,7 @@ Kod Analizi proje üzerinde el ile çalıştırmak için menü çubuğundan seç
 
 Yönetilen kod için Kod Analizi kuralları halinde gruplanır [kural kümeleri](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Microsoft Standart kural kümelerinden birini kullanabilir veya [bir özel kural kümesi oluşturma](../code-quality/how-to-create-a-custom-rule-set.md) belirli bir gereksinimi karşılamak için.
 
-## <a name="suppress-warnings"></a>Uyarıları bastırma
+## <a name="suppress-warnings"></a>Uyarıları gizleme
 
 Genellikle, geçerli olmayan bir uyarı olduğunu belirtmek kullanışlıdır. Bu geliştiriciye ve kodu daha sonra gözden geçirecek diğer kişilere bir uyarı araştırılması ve sonra da gizlenen veya yoksayıldı olduğunu bildirir.
 
@@ -71,14 +71,14 @@ Bir kuruluş olarak tüm iade etmelerin bazı ilkeleri karşılamasını zorunlu
 
 - Kod Analizi en son derlemenin bir parçası çalıştırılır.
 
-Bu iade etme ilkeleri belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için [takım projesi iade ilkeleriyle kod kalitesini geliştirme](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Bu iade etme ilkeleri belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için [projesi iade ilkeleriyle kod kalitesini geliştirme](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Ekip Oluşturma entegrasyonu
 
-Analiz aracı yapı işleminin bir parçası olarak çalıştırmak için derleme sisteminin tümleşik özelliklerini kullanabilirsiniz. Daha fazla bilgi için [derleme ve yayın (VSTS)](/vsts/build-release/index).
+Analiz aracı yapı işleminin bir parçası olarak çalıştırmak için derleme sisteminin tümleşik özelliklerini kullanabilirsiniz. Daha fazla bilgi için [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Roslyn çözümleyicilerini genel bakış](../code-quality/roslyn-analyzers-overview.md)
 - [Kod Analizi Kurallarını Gruplandırmak için Kural Kümeleri Kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Nasıl yapılır: Enable ve Disable otomatik kod çözümlemesini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Nasıl Yapılır: Otomatik Kod Çözümlemesini Etkinleştirme ve Devre Dışı Bırakma](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

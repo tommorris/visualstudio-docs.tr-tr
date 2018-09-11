@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203858"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321157"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama
 
@@ -110,7 +110,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi ve
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [(VSTS) test sırasında tanılama verilerini toplayın](/vsts/manual-test/collect-diagnostic-data)
-- [El ile testler (VSTS), tanılama verilerini toplayın](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [(Azure Test planları) test sırasında tanılama verilerini toplayın](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [El ile testlerde (Azure Test planları) tanılama verilerini toplayın](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Test ayarlarını kullanarak tanılama bilgileri Topla](../test/collect-diagnostic-information-using-test-settings.md)
 - [IntelliTrace verilerini toplama](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

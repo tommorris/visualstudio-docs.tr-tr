@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fca73f1ad91baa1f38ac73f1266616e0db37b1b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776190"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320975"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -38,6 +38,8 @@ Kullanmaya başlamak için:
 Visual Studio'nun **Python ortamları** penceresi (aşağıda bir geniş, Genişletilmiş görünümde gösterilen) tek bir yerde tüm genel Python ortamları, conda ortamları ve sanal ortamları yönetmenizi sağlar. Visual Studio otomatik olarak standart konumlarda Python yüklemelerini algılar ve özel yüklemeleri yapılandırmanıza olanak tanır. Her bir ortam ile kolayca paketleri yönetebilir, bu ortam için etkileşimli bir pencere açın ve ortam klasörlere erişim.
 
 ![Python ortamları penceresinin Genişletilmiş Görünümü](media/environments-expanded-view.png)
+
+Kullanım **açık etkileşimli pencere** Python etkileşimli olarak Visual Studio bağlamı içinde çalıştırmak için komutu. Kullanım **PowerShell'de açın** komutu seçili ortam klasöründe bir ayrı bir komut penceresi açın. Bu komut penceresinde herhangi bir python betiğini çalıştırabilirsiniz. 
 
 Daha fazla bilgi için:
 
@@ -62,7 +64,7 @@ Daha fazla bilgi için:
 
 ## <a name="interactive-window"></a>Etkileşimli pencere
 
-Bilinen Visual Studio için Python, her ortam için ayrı bir komut isteminde kullanmak yerine Visual Studio içinde doğrudan bir Python yorumlayıcısı için aynı etkileşimli (REPL) ortamı kolayca açabilirsiniz. De ortamlar arasında kolayca geçiş yapabilirsiniz.
+Bilinen Visual Studio için Python, her ortam için ayrı bir komut isteminde kullanmak yerine Visual Studio içinde doğrudan bir Python yorumlayıcısı için aynı etkileşimli (REPL) ortamı kolayca açabilirsiniz. De ortamlar arasında kolayca geçiş yapabilirsiniz. (Ayrı bir komut istemi açmak için istenen ortamınızda seçin **Python ortamları** penceresinde seçip **PowerShell'de açın** komutu altında daha önce açıklandığı gibi [desteği birden çok yorumlayıcılar için](#support-for-multiple=interpreters).)
 
 ![Visual Studio'da Python etkileşimli penceresi](media/interactive-window.png)
 

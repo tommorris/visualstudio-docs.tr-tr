@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512297"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280889"
 ---
 # <a name="using-the-tasks-window"></a>Görevleri Penceresini Kullanma
 
-**Görevleri** pencere benzeyen **iş parçacıkları** BT'nin hakkında bilgileri gösterir ancak pencere <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), veya [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) yerine her bir iş parçacığı nesneleri. İş parçacığı gibi görevleri aynı anda çalışabilecek zaman uyumsuz işlemleri temsil eder; Ancak, birden çok görev aynı iş parçacığı üzerinde çalışabilir.
+**Görevleri** pencere benzeyen **iş parçacıkları** BT'nin hakkında bilgileri gösterir ancak pencere <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), veya [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) yerine her bir iş parçacığı nesneleri. İş parçacığı gibi görevleri aynı anda çalışabilecek zaman uyumsuz işlemleri temsil eder; Ancak, birden çok görev aynı iş parçacığı üzerinde çalışabilir.
 
 Yönetilen kodda kullanabileceğiniz **görevleri** ile çalışırken penceresi <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri veya **await** ve **zaman uyumsuz** anahtar sözcükleri (**Await** ve **zaman uyumsuz** VisualBasic içinde). Yönetilen kodda görevleri hakkında daha fazla bilgi için bkz. [paralel programlama](/dotnet/standard/parallel-programming/index).
 
 Yerel kod halinde kullanabileceğiniz **görevleri** ile çalışırken penceresi [görev grupları](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralel algoritmalar](/cpp/parallel/concrt/parallel-algorithms), [zaman uyumsuz aracılar](/cpp/parallel/concrt/asynchronous-agents), ve [Basit görevler](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Yerel kodda görevleri hakkında daha fazla bilgi için bkz. [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime).
 
-JavaScript'te, promise ile çalışırken görevleri penceresini kullanabilirsiniz `.then` kod. Bkz: [JavaScript (UWP uygulamaları) zaman uyumsuz programlamada](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) daha fazla bilgi için.
+JavaScript'te, promise ile çalışırken görevleri penceresini kullanabilirsiniz `.then` kod. Bkz: [JavaScript (UWP uygulamaları) zaman uyumsuz programlamada](/previous-versions/windows/apps/hh700330(v=win.10)) daha fazla bilgi için.
 
 Kullanabileceğiniz **görevleri** hata ayıklayıcıya girdikten zaman penceresi. Şirket erişim **hata ayıklama** tıklayarak menü **Windows** tıklayıp **görevleri**. Aşağıdaki çizimde gösterildiği **görevleri** kendi varsayılan modunda penceresi.
 
@@ -96,9 +96,9 @@ Sütunları **görevleri** penceresi, aşağıdaki bilgileri gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md)
-- [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)
+- [Hata Ayıklayıcısı Temel Bilgileri](../debugger/getting-started-with-the-debugger.md)
+- [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
 - [Paralel Programlama](/dotnet/standard/parallel-programming/index)
 - [Eşzamanlılık Çalışma Zamanı](/cpp/parallel/concrt/concurrency-runtime)
-- [Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)
-- [İzlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Paralel Yığınlar Penceresini Kullanma](../debugger/using-the-parallel-stacks-window.md)
+- [İzlenecek Yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)

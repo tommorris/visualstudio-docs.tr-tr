@@ -9,12 +9,12 @@ description: Seçili Visual Studio aboneliğine dahildir Xamarin University eği
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624346"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280356"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University eğitimi avantajı olarak Visual Studio abonelikleri
 
@@ -88,4 +88,4 @@ Y: Your Xamarin University hesabı ve ilerleme değişmeden kalır ancak aboneli
 ## <a name="support-resources"></a>Destek kaynakları
 -  Xamarin University yardıma mı ihtiyacınız var?  Destek kaynakları çeşitli bulabilirsiniz [ https://university.xamarin.com/support ](https://university.xamarin.com/support).
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Visual Studio Team Services veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+-  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

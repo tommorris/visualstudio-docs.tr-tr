@@ -5,12 +5,12 @@ title: Visual Studio belgeleri | Microsoft Docs
 description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 6baee6be451ba1997f44e24d5a1690f7b451c3a2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: HT
+ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
+ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280980"
+ms.locfileid: "44339677"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -137,7 +137,7 @@ ms.locfileid: "44280980"
                                 </a>
                             </li>
                             <li>
-                                <a href="/subscriptions/" title="Visual Studio abonelikleri">
+                                <a href="/visualstudio/subscriptions/" title="Visual Studio abonelikleri">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138949"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701715"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes araçları kullanmaya başlayın
 
@@ -38,7 +38,7 @@ Bu yeni işlevselliği yararlanmak için gerekir:
 
     1.  Helm CLI geliştirme iş istasyonunuzda yüklü. Daha fazla bilgi için [yükleme Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Helm, AKS kümesinde yapılandırılmış. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Helm yapılandırma](/azure/aks/kubernetes-helm#configure-helm).
+    1.  AKS kümenizi karşı kullanılarak yapılandırılan helm `helm init` komutu. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Helm yapılandırma](/azure/aks/kubernetes-helm#configure-helm).
 
 ## <a name="create-a-new-kubernetes-project"></a>Yeni bir Kubernetes projesi oluşturma
 
@@ -82,7 +82,7 @@ Yalnızca zaman olduğu gibi tüm bu dosyaları yerinde, Visual Studio IDE yazma
 
 Bir AKS kümeye doğrudan Visual Studio'dan yayımlayabilirsiniz, istediğiniz şekilde çalışan, koda sahip olduğunuzda.
 
-Bunu yapmak için önce kapsayıcı görüntünüzü Azure Container Registry (ACR) yayımlayan bir yayımlama profili ayarlamanız gerekir. Ardından AKS ACR'den, kapsayıcı görüntüsü çekin ve kümeye dağıtın.
+Bunu yapmak için önce her şeyi açıklandığı yüklediğinizi sağlayamazsanız yapmanız [önkoşulları](#prerequisities) bölümünde yayımlamak için AKS öğesinin altındaki ve bağlantıları verilen tüm komut satırı adımlarını çalıştırın. Ardından, kapsayıcı görüntünüzü Azure Container Registry (ACR) yayımlayan bir yayımlama profili ayarlayın. Ardından AKS ACR'den, kapsayıcı görüntüsü çekin ve kümeye dağıtın.
 
 1. İçinde **Çözüm Gezgini**, sağ tıklayın, *proje* ve **Yayımla**.
 

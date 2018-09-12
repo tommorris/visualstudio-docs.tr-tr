@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil olan teknik destek teklifinizden
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624402"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701773"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, teknik destek teklifinizden etkinleştir
 
@@ -32,12 +32,13 @@ ms.locfileid: "42624402"
 3.  İşlemi tamamlamak için temsilcisiyle sağlamanız gerekir:
     - Aboneliğinizde oturum açmak için kullandığınız e-posta adresi
     - Üzerinde bulunan abonelik kimliği [abonelikleri](https://my.visualstudio.com/subscriptions) sekmesi.
+
     > [!div class="mx-imgBorder"]
     > ![Teknik Destek Teklifinizden abonelik kimliği bulunamadı](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > İngilizce dışında bir dil desteği hesabınızı etkinleştirmek için listeden ülkenizi seçin [bu liste](https://support.microsoft.com/help/14084/activate-support-contract).   
+> [!NOTE]
+> İngilizce dışında bir dil desteği hesabınızı etkinleştirmek için listeden ülkenizi seçin [bu liste](https://support.microsoft.com/help/14084/activate-support-contract).   
 
 
 ## <a name="how-to-submit-an-incident"></a>Bir olayı gönderme

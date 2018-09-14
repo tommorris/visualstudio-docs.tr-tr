@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcac11312b15049c743d596914b06819000801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915968"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550511"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Boş işlem önceliğini kullanmayın
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "31915968"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- İşlemler ayarlamak bu kural oluşur `ProcessPriorityClass.Idle`.
+ Bu kural işlemleri ayarlandığından oluşur `ProcessPriorityClass.Idle`.
 
-## <a name="rule-description"></a>Kural Tanımı
- İşlem önceliğini Boşta olarak ayarlamayın. Bulunan işlemlerin `System.Diagnostics.ProcessPriorityClass.Idle` Aksi takdirde boş olacaktır ve bu nedenle bekleme engeller CPU kaplar.
+## <a name="rule-description"></a>Kural açıklaması
+ İşlem önceliğini Boşta olarak ayarlamayın. Sahip işlemler `System.Diagnostics.ProcessPriorityClass.Idle` Aksi durumda boş olacak ve bu nedenle beklemeyi engeller, CPU dolduracaktır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Ayarlama işlemleri `ProcessPriorityClass.BelowNormal`.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural, yalnızca boş işlem önceliğini gereklidir ve mobility konuları güvenle yoksayılabilir gizlenen.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kural yalnızca boş işlem önceliğini gereklidir ve mobility konuları güvenle görmezden gelinebilir atlanması.

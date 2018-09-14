@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627347"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612759"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Yalnızca kendi kodum, Visual Studio kullanarak kullanıcı kodunda hata ayıklama belirtin
 Visual Studio'yu otomatik olarak sistemi, çerçeve ve diğer kullanıcı olmayan çağrılardan üzerinden adımla ve bu çağrıları çağrı yığını penceresinde daraltmak için yapılandırabilirsiniz. Bu davranışı devre dışı bırakır veya özelliğin adı *yalnızca kendi kodum*. Bu konu, yalnızca kendi kodum C#, Visual Basic, C++ ve JavaScript projelerinde kullanmayı açıklar.
@@ -37,6 +37,10 @@ Visual Studio'yu otomatik olarak sistemi, çerçeve ve diğer kullanıcı olmaya
   
 > [!NOTE]
 >  **Harici kodu Göster** ayarı için geçerli kullanıcının profil oluşturucu kaydedildi. Tüm dillerdeki kullanıcı tarafından açılan tüm projelere uygulanır.
+
+##  <a name="identify-user-code-while-debugging"></a>Hata ayıklama sırasında kullanıcı kodunu tanımlayın. 
+
+**Modülleri** penceresi, hata ayıklayıcı değerlendirmesini kullanıcı kodu veya kendi Kodum'u olarak sembol durumu modülü için yükleme gibi bilgilerle birlikte hangi kod modülleri öğrenebilirsiniz. Daha fazla bilgi için [Hata Ayıklayıcı'nın uygulamanıza nasıl ekleyen daha iyi tanımak](../debugger/debugger-tips-and-tricks.md#modules_window).
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework yalnızca kendi kodum  
   

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552103"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612746"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtme
 Ayrıca bir sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası, kaynak kodu sınıfları, yöntemleri ve diğer tanımlayıcıları projenizin derlenen yürütülebilir kullanılan kodu için içinde oluşturduğunuz eşleştirir. .Pdb dosyası, kaynak kodundaki deyimleri yürütülebilir dosyalardaki yürütme yönergeleriyle de eşleştirir. Hata ayıklayıcı iki temel bilgi parçasını belirlemek için bu bilgileri kullanır:
@@ -45,7 +45,11 @@ Ayrıca bir sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyas�
 Sembol dosyası ayrıca orijinal kaynak dosyası konumunu ve isteğe bağlı olarak, kaynak dosyasının alındığı kaynak sunucusunun konumunu içerir.
   
 > [!TIP]
-> Proje kaynak kodunuz dışında kod hatası ayıklamak istiyorsanız, Windows kod veya üçüncü taraf kodu gibi proje çağrılarınızda, konumunu .pdb (ve isteğe bağlı olarak, harici kod kaynak dosyalarını) belirtmeniz gerekir ve bu dosyaları t derleme tam olarak eşleşmesi gerekir He yürütülebilir.  
+> Proje kaynak kodunuz dışında kod hatası ayıklamak istiyorsanız, Windows kod veya üçüncü taraf kodu gibi proje çağrılarınızda, konumunu .pdb (ve isteğe bağlı olarak, harici kod kaynak dosyalarını) belirtmeniz gerekir ve bu dosyaları t derleme tam olarak eşleşmesi gerekir He yürütülebilir. 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>Sembol dosyaları ayıklarken nasıl yönetebilirim? 
+
+**Modülleri** penceresi, hata ayıklayıcı değerlendirmesini kullanıcı kodu veya My Code ve yükleme durumu modülü için sembol olarak hangi kod modülleri öğrenebilirsiniz. Ayrıca bu pencereyi hata ayıklama sırasında sembolleri yüklemek üzere de kullanabilirsiniz. Daha fazla bilgi için [Hata Ayıklayıcı'nın uygulamanıza nasıl ekleyen daha iyi tanımak](../debugger/debugger-tips-and-tricks.md#modules_window).
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> Burada, hata ayıklayıcı sembol dosyalarını aramak? 
   

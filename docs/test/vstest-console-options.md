@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279693"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612668"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe komut satırı seçenekleri
 
@@ -54,6 +54,10 @@ ms.locfileid: "44279693"
 |**/ ListSettingsProviders**|Yüklü test ayar sağlayıcılarını listeler.|
 |**/ Sorumlu**|Bunlar yürütüyorsunuz gibi testler izler ve test ana işlem kilitlenirse sıralarını yürütme testleri adları en fazla yayar ve kilitlenme zamanında çalıştıran belirli bir teste de dahil olmak üzere. Bu çıkış, sorunlu test yalıtmak ve daha iyi tanılamak kolaylaştırır. [Daha fazla bilgi](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/ Diag: [*dosya adı*]**|Belirtilen dosyaya Tanılama izleme günlüklerini yazar.|
+|**/ ResultsDirectory: [*yolu*]**|Test sonuçları dizinini belirtilen yolda oluşturulur Aksi takdirde bulunmaktadır.<br />Örnek: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ ParentProcessId: [*ParentProcessId*]**|Geçerli işlem başlatmaktan sorumlu üst işlemin işlem kimliği.|
+|**/ Bağlantı noktası: [*bağlantı noktası*]**|Yuva bağlantısı ve olay iletileri almak için bağlantı noktası.|
+|**/ Toplama: [*dataCollector friendlyName*]**|Test çalıştırması için veri toplayıcısını etkinleştirir. [Daha fazla bilgi](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Seçenekler ve değerler büyük küçük harfe duyarlı değildir.

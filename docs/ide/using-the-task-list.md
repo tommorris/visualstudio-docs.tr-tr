@@ -1,5 +1,5 @@
 ---
-title: Görev listesini kullanma
+title: Görev Listesini Kullanma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,44 +16,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336077"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612707"
 ---
-# <a name="use-the-task-list"></a>Görev listesini kullanma
+# <a name="use-the-task-list"></a>Görev Listesini Kullanma
 
-Kullanmak **görev listesi** belirteçleri gibi kullandığınız kod açıklamaları izlemek için `TODO` ve `HACK`, ya da özel belirteçler ve doğrudan kod önceden tanımlanmış bir konumda için uygulamanız kısayolları yönetmek için. Kaynak kodundaki konumuna gitmek için listedeki bir öğeyi tıklatın.
+Kullanma **görev listesi** gibi belirteçler kullanan kod açıklamaları izlemek için `TODO` ve `HACK`, ya da özel belirteçler ve önceden tanımlanmış bir kodun konumu için doğrudan kısayolları yönetmek için. Kaynak kodu konumuna gitmek için liste öğesine tıklayın.
 
 ## <a name="the-task-list-window"></a>Görev Listesi penceresi
 
-Zaman **görev listesi** olduğu açık, bu uygulama penceresinin alt kısmında görünür.
+Zaman **görev listesi** olan açık, uygulama penceresinin altında görünür.
 
-Açmak için **görev listesi**seçin **Görünüm** > **görev listesi**, veya klavye Press **Ctrl** + **\\**,**T**.
+Açmak için **görev listesi**seçin **görünümü** > **görev listesi**, veya klavye Press'ten **Ctrl** + **\\**,**T**.
 
 ![Görev Listesi penceresi](../ide/media/vs2015_task_list.png)
 
-Listedeki sıralama düzenini değiştirmek için herhangi bir sütun başlığını seçin. Daha fazla arama sonuçlarınızı daraltmak için basın **Shift** ve ikinci bir sütun başlığını tıklatın. Alternatif olarak, kısayol menüsünden seçin **sıralama ölçütü**ve ardından bir üstbilgi seçin. Daha fazla arama sonuçlarınızı daraltmak için basın **Shift** ve ikinci üstbilgi'i seçin.
+Listenin sıralama düzenini değiştirmek için herhangi bir sütun başlığını seçin. Arama sonuçlarınızı iyice daraltmak için basın **Shift** ve ikinci bir sütun başlığına tıklayın. Alternatif olarak, kısayol menüsünden seçin **sıralama ölçütü**, bir başlığı seçin. Arama sonuçlarınızı iyice daraltmak için basın **Shift** ve ikinci bir başlık seçin.
 
-Kısayol menüsünde, sütunları göster veya gizle tercih **sütunları göster**. Göstermek veya gizlemek istediğiniz sütunları seçin.
+Kısayol menüsünde sütunları göster veya gizle tercih **sütunları göster**. Göstermek veya gizlemek istediğiniz sütunları seçin.
 
-Sütunların sırasını değiştirmek için herhangi bir sütun başlığını istediğiniz yere sürükleyin.
+Sütunların sırasını değiştirmek için herhangi bir sütun başlığını istediğiniz konuma sürükleyin.
 
 ## <a name="user-tasks"></a>Kullanıcı görevleri
 
-Visual Studio 2015'te kullanıcı görev özelliği kaldırıldı. Visual Studio 2013'ten ve daha önce kullanıcı görev veri bulunduğu bir çözümü açtığınızda, kullanıcı görev verilerde, *.suo* dosya etkilenmez, ancak kullanıcı görevleri görev listesinde görüntülenmez.
+Visual Studio 2015'te kullanıcı görev özelliği kaldırıldı. Visual Studio 2013'ten ve daha önce kullanıcının Görev verileri içeren bir çözümü açtığınızda, kullanıcının Görev verileri, *.suo* dosya etkilenmez, ancak kullanıcı görevleri görev listesinde görüntülenmez.
 
-Erişim ve kullanıcı görev verilerinizi güncelleştirmek için Visual Studio 2013'te projeyi açın ve herhangi bir kullanıcı görevi içerik, tercih edilen proje yönetim aracı (örneğin, Team Foundation Server) kopyalayın devam etmek istiyorsanız.
+Erişim ve kullanıcı görev verilerinizi güncelleştirme, Visual Studio 2013'te projeyi açmak ve tercih edilen bir proje yönetim aracınızın (örneğin, Team Foundation Server) herhangi bir kullanıcı görevini içeriğini kopyalayın devam etmek istiyorsanız.
 
 ## <a name="tokens-and-comments"></a>Belirteçler ve açıklamalar
 
-Önceden tanımlanmış simge bir açıklama işaretçisi ile öncesinde, kodunuzda bir açıklama da görünür **görev listesi**. Örneğin, aşağıdaki C# açıklamasının üç ayrı bölümü vardır:
+Bir açıklamayı kodunuza açıklama işaretleyicisi ve önceden tanımlı belirteç tarafından öncesinde ayrıca şurada görünür **görev listesi**. Örneğin, aşağıdaki C# açıklamasının üç ayrı bölümü vardır:
 
-- Açıklama işaretçisi (`//`)
+- Açıklama işaretleyicisi (`//`)
 
-- Örneğin bir belirteç (`TODO`)
+- Örneğin, belirteci (`TODO`)
 
 - Açıklama (metnin geri kalanı)
 
@@ -61,13 +61,13 @@ Erişim ve kullanıcı görev verilerinizi güncelleştirmek için Visual Studio
 // TODO: Load state from previously suspended application
 ```
 
-Çünkü `TODO` önceden tanımlanmış olan olarak belirteç, bu açıklamanın görünür bir `TODO` listesinde görev.
+Çünkü `TODO` önceden tanımlanmış olan olarak belirteç, bu yorumun görünür bir `TODO` listesinde görev.
 
 ### <a name="custom-tokens"></a>Özel belirteçler
 
-Varsayılan olarak, Visual Studio aşağıdaki belirteçleri içerir: `HACK`, `TODO`, `UNDONE`, ve `NOTE`. Bunlar büyük küçük harfe duyarlı değildir.
+Varsayılan olarak, Visual Studio aşağıdaki belirteçleri içerir: `HACK`, `TODO`, `UNDONE`, ve `UnresolvedMergeConflict`. Bunlar büyük küçük harfe duyarlı değildir. Ayrıca kendi özel belirteçlerinizi de oluşturabilirsiniz.
 
-Ayrıca kendi özel belirteçlerinizi de oluşturabilirsiniz. Özel belirteç oluşturmak için:
+Özel bir belirteç oluşturmak için:
 
 1. Üzerinde **Araçları** menüsünde seçin **seçenekleri**.
 
@@ -77,27 +77,29 @@ Ayrıca kendi özel belirteçlerinizi de oluşturabilirsiniz. Özel belirteç ol
 
    ![Visual Studio görev listesi](../ide/media/vs2015_task_list_options.png)
 
-3. İçinde **belirteçleri** kategori, **adı** metin kutusunda, belirteç adınızı girin, örneğin **hata**.
+3. İçinde **adı** metin kutusunda, belirtecinizin adını girin, örneğin **hata**.
 
-4. İçinde **öncelik** aşağı açılan listesinde, yeni bir belirteç için varsayılan öncelik seçin. Seçin **Ekle** düğmesi.
+4. İçinde **öncelik** aşağı açılan listesinde, yeni belirteç için varsayılan bir öncelik seçin.
+
+5. Seçin **ekleme**.
 
 ### <a name="c-todo-comments"></a>C++ TODO açıklamaları
 
-C++ Yapılacaklar açıklamaları görüntülenen varsayılan olarak, **görev listesi**.
+C++ TODO açıklamaları görüntülenen varsayılan olarak, **görev listesi**.
 
-C++ Yapılacaklar açıklamaları devre dışı bırakmak için **Araçları** menüsünde seçin **seçenekleri** > **metin düzenleyici** > **C/C++**  >  **Görünüm** > **açıklama görevleri listeleme**ve değeri **false**.
+C++ TODO yorumları kapattı devre dışı bırakmak için **Araçları** menüsünde seçin **seçenekleri** > **metin düzenleyici** > **C/C++**  >  **Görünümü** > **açıklama görevlerini numaralandır**ve değerine **false**.
 
 ## <a name="shortcuts"></a>Kısayollar
 
-A *kısayol* izleneceğini kodda yer işareti **görev listesi**. Normal bir yer işareti daha farklı bir simgesi vardır. Kısayolu **görev listesi** kodda karşılık gelen konuma gitmek için.
+A *kısayol* izleneceğini kodda bir yer işareti **görev listesi**. Bu, normal bir yer işareti daha farklı bir simgesi vardır. Kısayoluna çift **görev listesi** kod içinde ilgili konuma gitmek için.
 
-![Visual Studio görev listesi kısayol simgesi](../ide/media/vs2015_task_list_bookmark.png)
+![Visual Studio görev listesi kısayolu simgesi](../ide/media/vs2015_task_list_bookmark.png)
 
-### <a name="create-a-shortcut"></a>Kısayol oluşturma
+### <a name="create-a-shortcut"></a>Bir kısayol oluşturma
 
-Kısayol oluşturmak için bir kısayol yerleştirmek istediğiniz koda işaretçinin ekleyin. Seçin **Düzenle** > **yer işaretleri** > **görev listesi kısayol Ekle** veya basın **Ctrl** + **K**, **Ctrl**+**H**.
+Bir kısayol oluşturmak için işaretçiyi kısayolu yerleştirmek istediğiniz kodu ekleyin. Seçin **Düzenle** > **yer işaretleri** > **görev listesi kısayolu Ekle** veya basın **Ctrl** + **K**, **Ctrl**+**H**.
 
-Kodda kısayolları gezinmek için listede bir kısayol seçin ve ardından **sonraki görev** veya **önceki görev** kısayol menüsünden.
+Kod içindeki kısayollar arasında gezinmek için listeden bir kısayol seçin ve ardından **sonraki görev** veya **önceki görev** kısayol menüsünden.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

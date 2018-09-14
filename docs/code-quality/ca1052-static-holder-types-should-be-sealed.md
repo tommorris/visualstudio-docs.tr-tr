@@ -14,16 +14,21 @@ ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d20ed9ab4ed7fc47d601fb6edd6d38675d0ccec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc264b9e47fe9169c0b1ad9d3257323c437620f7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897912"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550434"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Statik tutucu türleri mühürlenmelidir
+
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldBeSealed|
@@ -32,16 +37,16 @@ ms.locfileid: "31897912"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir genel ya da korumalı türü yalnızca statik üyeler içerir ve ile bildirilmemiş [korumalı](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) değiştiricisi.
+ Ortak veya korumalı tür yalnızca statik üyeleri içerir ve ile bildirilmedi [korumalı](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) değiştiricisi.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bu kural türü türetilen türde de kılınabilir herhangi bir işlevsellik sağlamadığından yalnızca statik üyeleri içeren bir türü devralınması için tasarlanmamıştır olduğunu varsayar. Devralma değiştirilmemelidir bir türü ile işaretlenmelidir `sealed` bir taban türü olarak kullanılmasını önlemek için değiştiricisi.
+## <a name="rule-description"></a>Kural açıklaması
+ Bu kural türü türetilmiş türde geçersiz kılınabilir herhangi bir işlevsellik sağlamaz çünkü yalnızca statik üyeleri içeren bir tür devralınacak şekilde tasarlanmamıştır olduğunu varsayar. Devralınan düşünülmemiştir bir tür ile işaretlenmelidir `sealed` değiştiricisi, bir taban türü olarak kullanılmasını önlemek için.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için türü olarak işaretlemek `sealed`. Hedefliyorsanız [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 veya sonraki sürümlerde, daha iyi bir tür olarak işaretlemek için yaklaşımdır `static`. Bu şekilde, sınıf oluşturulmasını önlemek için özel bir oluşturucuya bildirmek olmamasına özen gösterin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için türü olarak işaretlemek `sealed`. Hedefliyorsanız [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 veya sonraki türü olarak işaretlemek için iyi bir yaklaşım olup `static`. Bu şekilde, sınıf oluşturulmasını önlemek için bir özel yapıcı bildirmek olmamasına özen gösterin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Türü yalnızca devralınacak şekilde tasarlanmıştır, bu kural bir uyarıdan engelleyin. Yokluğu `sealed` değiştiricisi öneren türü temel tür olarak yararlıdır.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Türü yalnızca devralınacak şekilde tasarlanmıştır, bu kuraldan bir uyarıyı gizler. Olmaması `sealed` değiştiricisi önerir türü temel tür olarak kullanışlıdır.
 
 ## <a name="example-of-a-violation"></a>Bir ihlali örneği
 
@@ -53,10 +58,10 @@ ms.locfileid: "31897912"
  [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
  [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
 
-## <a name="fix-with-the-static-modifier"></a>Statik değiştirici ile Düzelt
+## <a name="fix-with-the-static-modifier"></a>Statik değiştirici ile düzeltin
 
 ### <a name="description"></a>Açıklama
- Aşağıdaki örnek türüyle işaretleyerek bu kural ihlal düzeltmek nasıl gösterir `static` değiştiricisi.
+ Aşağıdaki örnek, türü ile işaretleyerek bu kural ihlalini düzeltmek gösterilmektedir `static` değiştiricisi.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]

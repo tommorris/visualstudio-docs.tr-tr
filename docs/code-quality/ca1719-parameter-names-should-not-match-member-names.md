@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1174fa0533519b551e237c685f0a6fe67661752a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16b50ed49659891ae469f346afbf8a677bb059dc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915342"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546895"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Parametre adları üye adlarıyla eşleşmemelidir
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31915342"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Dışarıdan görünür bir üyenin adını, parametrelerinden birinin adını gibi büyük küçük harf duyarsız bir karşılaştırma içinde eşleşir.
+ Dışarıdan görünen bir üyenin adını, büyük küçük harf duyarsız karşılaştırma içinde parametrelerinden birinin adını eşleşir.
 
-## <a name="rule-description"></a>Kural Tanımı
+## <a name="rule-description"></a>Kural açıklaması
  Parametre adı parametrenin anlamıyla iletişim kurmalı ve üyenin adını üye anlamıyla iliştirmelidir. Bunların aynı olduğu yerlerde nadir bir tasarım olur. Aynı üye adıyla parametreyi adlandırma sezgisel değildir ve kütüphane kullanımını zorlaştırır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Üye adı eşleşmiyor bir parametre adı seçin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Üye adıyla eşleşmiyor bir parametre adı seçin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Yeni geliştirme, hiçbir bilinen senaryolar ortaya burada bu kuraldan bir uyarı bastırma gerekir. Kitaplıkları aktarma için bir uyarı bu kuraldan bastırmak gerekebilir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Yeni geliştirme, hiçbir bilinen senaryolar ortaya burada bu kuraldan bir uyarıyı bastırmak gerekir. Kitaplıkları sevk edilmesi için bu kuraldan bir uyarıyı bastırmak gerekebilir.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

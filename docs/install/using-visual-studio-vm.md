@@ -1,7 +1,7 @@
 ---
 title: Visual Studio kullanarak bir Azure sanal makinesinde
 description: Bir Azure sanal makinesinde Visual Studio kullanmayı öğrenin
-ms.date: 07/10/2018
+ms.date: 09/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa13718a27b2840ee027a20238702fccd2bc8f4
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 5061265467f7fab653e3266d5c25ccf0c9ef43da
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42624350"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550300"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 
@@ -34,9 +34,9 @@ En son ana sürümleri, Visual Studio 2017 ve Visual Studio 2015 için görünt�
 
 | Yayın sürümü                                              | Sürümler                     |     Ürün sürümü     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: En son (sürüm 15,8)                    |    Kurumsal ve topluluk     |      Sürüm 15.8.0     |
-| Visual Studio 2017: En son Önizleme (sürüm 15,8, Preview 5) |    Kurumsal ve topluluk     |      Sürüm 15.8.5     |
-|         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.17    |
+| Visual Studio 2017: En son (sürüm 15,8)                    |    Kurumsal ve topluluk     |      Sürüm 15.8.4     |
+| Visual Studio 2017: En son Önizleme (sürüm 15.9, Önizleme 2) |    Kurumsal ve topluluk     |      Sürüm 15.9       |
+|         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.18    |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Yok.             | (Bakım için süresi doldu) |
 

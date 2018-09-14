@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 2c7706e635cc159b7ae85274d46c2be762926ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320832"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551271"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio'da Python ortamlarını yönetme
 
@@ -78,7 +78,7 @@ Visual Studio 2017 sürüm 15.7 ve üzeri conda ortamları otomatik olarak algı
 ## <a name="the-python-environments-window"></a>Python ortamları penceresi
 
 > [!Note]
-> Bu bölümde gösterilen ekran görüntüleri, Visual Studio 15,8 temsil eder. Visual Studio sürümünüze bağlı olarak biraz farklı kullanıcı Arabirimi görebilirsiniz.
+> Bu bölümde gösterilen ekran görüntüleri, Visual Studio 15,8 temsil eder. Visual Studio sürümünüze bağlı olarak farklı kullanıcı Arabirimi görebilirsiniz.
 
 Visual Studio bildiği ortamlar görüntülenir **Python ortamları** penceresi. Pencereyi açmak için aşağıdaki yöntemlerden birini kullanın:
 

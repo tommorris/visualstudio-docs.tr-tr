@@ -1,5 +1,5 @@
 ---
-title: 'CA3077: API tasarımı, XML belgesi ve XML metin okuyucu güvensiz işlemede'
+title: 'CA3077: API Tasarımı, XML Belgesi ve XML Metin Okuyucusunda Güvensiz İşleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -10,39 +10,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21c7d4fcf2ec1e16a225879b7feceef2a61a8161
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae63583edac9b3ff6fefef416c8c1ce19d6e88f6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918018"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549095"
 ---
-# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: API tasarımı, XML belgesi ve XML metin okuyucu güvensiz işlemede
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: API Tasarımı, XML Belgesi ve XML Metin Okuyucusunda Güvensiz İşleme
 |||
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
 |CheckId|CA3077|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Bir API tasarlama XMLDocument ve XMLTextReader türetilmiş olduğunda, dikkatli olmanızı <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Güvenli olmayan DTDProcessing örnekleri başvuran veya dış varlık kaynakları çözme veya XML dosyasında güvenli olmayan değerleri ayarlama bilgileri açığa çıkmasına neden olabilir kullandığınızda.
+ Bir API tasarlamaya XMLDocument ve XMLTextReader türetilmiş olduğunda, dikkatli olmanızı <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Kullandığınızda güvensiz XmlReaderSettings örnekleri başvuran veya dış varlık kaynakları çözümleme XML'de güvenli olmayan değerleri ayarlama bilgileri açığa çıkmasına neden olabilir.
 
-## <a name="rule-description"></a>Kural Tanımı
- A *belge türü tanımı (DTD)* bir XML Ayrıştırıcı bir belgenin geçerlilik belirleyebilir iki yoldan biriyle tarafından tanımlanan olan [World Wide Web Konsorsiyumu (W3C) Genişletilebilir İşaretleme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural özelliklerini ve burada güvenilmeyen veri tarafından kabul edilir geliştiriciler olası hakkında uyarmak için örnekleri aradığı [bilgilerin açığa çıkmasına](/dotnet/framework/wcf/feature-details/information-disclosure) açabilir tehditleri [hizmet reddi (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları. Bu kuralın ne zaman tetikler:
+## <a name="rule-description"></a>Kural açıklaması
+ A *belge türü tanımı (DTD'nin)* bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](/dotnet/framework/wcf/feature-details/information-disclosure) açabilir tehditler [hizmet reddi (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları. Bu kuralın ne zaman tetikleyen:
 
--   <xref:System.Xml.XmlDocument> veya <xref:System.Xml.XmlTextReader> sınıflarını DTD işleme için varsayılan çözümleyici değerleri kullanın.
+- <xref:System.Xml.XmlDocument> veya <xref:System.Xml.XmlTextReader> sınıfları DTD işleme için varsayılan çözümleyici değerleri kullanın.
 
--   Oluşturucu yok XmlDocument için tanımlı değil veya XmlTextReader türetilmiş sınıfları veya güvenli bir değerle için kullanılan <xref:System.Xml.XmlResolver>.
+- XmlDocument için tanımlı hiçbir oluşturucu veya XmlTextReader türetilmiş sınıflar güvenli bir değerle için kullanılan <xref:System.Xml.XmlResolver>.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
--   Catch ve düzgün şekilde yolu bilgilerin açığa çıkmasına önlemek için tüm XmlTextReader özel durumları işler.
+- Catch ve doğru yolu bilgi açıklamalardan kaçınmak için tüm XmlTextReader özel durumları işler.
 
--   Kullanım <xref:System.Xml.XmlSecureResolver>XmlTextReader erişebileceği kaynakları sınırlamak için XmlResolver yerine.
+- Kullanım <xref:System.Xml.XmlSecureResolver>XmlTextReader erişebileceği kaynakları sınırlandırmak için XmlResolver yerine.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Giriş güvenilir bir kaynaktan olmadığı biliniyor emin değilseniz, bu uyarı kuralından bastırmak değil.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Giriş güvenilir bir kaynaktan olduğu biliniyorsa emin olmadığınız sürece, bir kuraldan bu uyarıyı bastırmayın.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 

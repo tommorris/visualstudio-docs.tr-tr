@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ce14b7da80775a9837b5e92f25d141276226cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73c52965d31d66f21cdf738816d7ea9c0a8afbdf
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900521"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549618"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin
 |||
@@ -32,18 +32,18 @@ ms.locfileid: "31900521"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Bir genel veya korumalı yöntemi genel türde birden fazla üç parametre vardır ve son üç parametreleri aynı türdeyse.
+ Ortak türde ortak veya korumalı bir yöntem üçten fazla parametre içeriyor ve son üç parametrelerini aynı türdedir.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bir parametre dizisi yerine yinelenen bağımsız değişken bağımsız değişken tam sayısı bilinmiyor ve değişken bağımsız değişkenleri aynı türde olan ya da aynı türde geçirilebilir kullanın. Örneğin, <xref:System.Console.WriteLine%2A> yöntemi sağlar herhangi bir sayıda kabul etmek için bir parametre dizisi kullanan bir genel amaçlı aşırı <xref:System.Object> bağımsız değişkenler.
+## <a name="rule-description"></a>Kural açıklaması
+ Bir parametre dizisi bağımsız değişken bir tam sayısı bilinmiyor ve değişken bağımsız değişkenler aynı türde olan ya da aynı türde geçirilebilir geçirilebileceğinde bağımsız değişkenleri kullanın. Örneğin, <xref:System.Console.WriteLine%2A> yöntemi herhangi bir sayıda kabul etmek için bir parametre dizisi kullanan bir genel amaçlı bir aşırı yüklemesini sağlar <xref:System.Object> bağımsız değişkenler.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için yinelenen bağımsız değişkenler bir parametre dizisi ile değiştirin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için yinelenen bağımsız değişken bir parametre dizisi ile değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Her zaman bir uyarı bu kuraldan gizlemek güvenlidir; Ancak, bu tasarım kullanılabilirlik sorunlara neden olabilir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan bir uyarıyı bastırmak her zaman güvenlidir; Ancak, bu tasarım, kullanılabilirlik sorunlara neden olabilir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bu kural ihlal eden bir tür gösterir.
+ Aşağıdaki örnek bu kuralı ihlal eden bir tür gösterir.
 
  [!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]

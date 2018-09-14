@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2131ef8cb0b8f0ba540d7403d7c5f8dbb8b89df
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 016b9f72567f6ff70b19bfa9e781e0f0d14cb702
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901102"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549358"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Genel listeleri gösterme
 |||
@@ -32,22 +32,22 @@ ms.locfileid: "31901102"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir türü olan bir harici olarak görünür üyeyi içeren bir <xref:System.Collections.Generic.List%601?displayProperty=fullName> türü, döndürür bir <xref:System.Collections.Generic.List%601?displayProperty=fullName> türü veya, imza içeren bir <xref:System.Collections.Generic.List%601?displayProperty=fullName> parametresi.
+ Bir türü olan dışarıdan görünen üye içeren bir <xref:System.Collections.Generic.List%601?displayProperty=fullName> türü, döndürür bir <xref:System.Collections.Generic.List%601?displayProperty=fullName> türü veya imzası içerir bir <xref:System.Collections.Generic.List%601?displayProperty=fullName> parametresi.
 
-## <a name="rule-description"></a>Kural Tanımı
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> Performans ve değil devralma için tasarlanmış genel bir koleksiyonudur. <xref:System.Collections.Generic.List%601?displayProperty=fullName> daha kolay devralınan bir sınıf davranışını değiştirmek için sanal üye içermiyor. Aşağıdaki genel koleksiyonlar için devralma tasarlanmıştır ve yerine açılmamalıdır <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+## <a name="rule-description"></a>Kural açıklaması
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> Performans ve değil devralma için tasarlanmış bir genel koleksiyondur. <xref:System.Collections.Generic.List%601?displayProperty=fullName> devralınan bir sınıf davranışını değiştirmek kolaylaştıran sanal üyeyi içermiyor. Aşağıdaki genel koleksiyonlar devralma için tasarlanmış ve yerine açılmamalıdır <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için değiştirme <xref:System.Collections.Generic.List%601?displayProperty=fullName> devralma için tasarlanmış genel koleksiyonlar birine türü.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için değiştirme <xref:System.Collections.Generic.List%601?displayProperty=fullName> devralma için tasarlanmış genel koleksiyonlar birine türü.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu uyarı vereceğini derleme yeniden kullanılabilir bir kitaplık düşünülmemiştir sürece bu kuraldan bir uyarı bastırma değil. Örneğin, bu performans avantajı genel listeleri kullanımdan burada elde ayarlanmış performans uygulamasında bu uyarıyı gizlemek güvenli olacaktır.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu uyarıyı oluşturan derleme yeniden kullanılabilir bir kitaplık tasarlanmamıştır sürece bu kuraldan bir uyarıyı bastırmayın. Örneğin, bunun bir performans kazancı genel listeleri kullanımdan burada elde ayarlanmış performans uygulamasında bu uyarının gösterilmemesi güvenli olur.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1005: Genel türlerde aşırı parametrelerden kaçının](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
@@ -64,5 +64,5 @@ ms.locfileid: "31901102"
 
  [CA1007: Uygun yerlerde genel türler kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Genel Türler](/dotnet/csharp/programming-guide/generics/index)

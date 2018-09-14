@@ -14,16 +14,21 @@ ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eaa68b6046fd2d3cfb6370b18de2b478b16db9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d44077dbe839fe6ce6b369f8d8b3b828bdb982a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898459"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549436"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Temel türleri parametre olarak geçirmeyi düşünün
+
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
@@ -32,27 +37,27 @@ ms.locfileid: "31898459"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Yalnızca parametresinin temel türü üyeleri yöntemini çağırır ve türetilmiş bir tür olan bir biçimsel parametresi bir yöntem bildirimi içerir.
+ Yalnızca parametrenin temel türün üyeleri yöntemini çağırır ve yöntem bildiriminde türetilmiş bir tür bir biçimsel parametre içerir.
 
-## <a name="rule-description"></a>Kural Tanımı
- Temel tür yöntem bildiriminde parametre olarak belirtildiğinde temel türünden türetilen herhangi bir tür yöntemine karşılık gelen bağımsız değişken olarak geçirilebilir. Bağımsız değişken yöntem gövdesi içinde kullanıldığında, yürütüldüğünde belirli yöntemi bağımsız değişkenin türüne bağlıdır. Türetilmiş türü tarafından sağlanan ek işlevsellik gerekli değilse, temel türü kullanımını yöntemi daha geniş kullanılmasına izin verir.
+## <a name="rule-description"></a>Kural açıklaması
+ Temel tür yöntem bildiriminde parametre olarak belirtildiğinde temel türünden türetilen herhangi bir tür yöntemine karşılık gelen bağımsız değişken olarak geçirilebilir. Bağımsız değişken bir yöntem gövdesi içinde kullanıldığında, yürütülen belirli yöntem bağımsız değişkenin türüne bağlıdır. Türetilmiş tür tarafından sağlanan ek işlevler gerekmiyorsa, temel tür kullanımı yöntemi daha geniş kullanımını sağlar.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için temel türünü parametrenin türünü değiştirin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için kendi temel türü için parametre türünü değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural bir uyarıdan gizlemek güvenlidir
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan bir uyarıyı bastırmak güvenlidir
 
--   yöntem türetilen türü tarafından sağlanan belirli işlevleri gerektiriyorsa
+- yöntem türetilmiş türü tarafından sağlanan belirli işlevleri gerektiriyorsa
 
      \- veya -
 
--   yalnızca türetilmiş bir tür ya da daha fazla türetilmiş bir tür, yönteme geçirilen zorlamak için.
+- yalnızca türetilmiş tür ya da daha fazla türetilmiş bir türü, yönteme geçirilen zorlamak için.
 
  Bu durumlarda, kod derleyici ve çalışma zamanı tarafından sağlanan güçlü tür denetimi nedeniyle daha sağlam olacaktır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bir yöntemi gösterir `ManipulateFileStream`, yalnızca kullanılabilir bir <xref:System.IO.FileStream> bu kuralını ihlal eden nesne. İkinci bir yöntem `ManipulateAnyStream`, kural değiştirerek karşılayan <xref:System.IO.FileStream> parametresini kullanarak bir <xref:System.IO.Stream>.
+ Aşağıdaki örnek bir yöntemi gösterir `ManipulateFileStream`, yalnızca ile kullanılabilecek bir <xref:System.IO.FileStream> bu kuralı ihlal nesnesidir. İkinci bir yöntem `ManipulateAnyStream`, kural değiştirerek karşılayan <xref:System.IO.FileStream> parametresi kullanılarak bir <xref:System.IO.Stream>.
 
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]

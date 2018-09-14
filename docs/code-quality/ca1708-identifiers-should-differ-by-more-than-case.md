@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c952d4cf2533034c12a287149404bee6d267214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915590"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552064"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır
 |||
@@ -32,21 +32,21 @@ ms.locfileid: "31915590"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Küçük harfe dönüştürüldüğünde iki tür, üyeler, parametreleri ya da tam ad alanları adlarını aynıdır.
+ İki tür, üye, parametre veya tam ad alanları adları, küçük harfe dönüştürüldüğünde aynıdır.
 
-## <a name="rule-description"></a>Kural Tanımı
- Ortak dil çalışma zamanı hedef dilleri büyük/küçük harf duyarlı olması gerekmediğinden ad alanları, türler, üyeler ve parametreler için tanımlayıcılar yalnızca büyük/küçük harfe göre farklılık göstermeyebilir. Örneğin, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] yaygın olarak kullanılan bir büyük küçük harf duyarsız dildir.
+## <a name="rule-description"></a>Kural açıklaması
+ Ortak dil çalışma zamanı hedef dilleri büyük/küçük harf duyarlı olması gerekmediğinden ad alanları, türler, üyeler ve parametreler için tanımlayıcılar yalnızca büyük/küçük harfe göre farklılık göstermeyebilir. Örneğin, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] yaygın olarak kullanılan bir büyük küçük harf duyarsız dilidir.
 
- Bu kural yalnızca herkese görünür üyelere ateşlenir.
+ Bu kural yalnızca herkese görünür üyelere tetikler.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Büyük küçük harf duyarsız bir biçimde diğer tanımlayıcıları ile karşılaştırıldığında, benzersiz bir ad seçin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Büyük küçük harf duyarlı bir şekilde diğer tanımlayıcılarla karşılaştırılır, benzersiz bir ad seçin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kuraldan uyarıyı bastırmayın. Kitaplık tüm kullanılabilir dilde kullanılamayabilir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın. Kitaplık tüm kullanılabilir dilde kullanılabilir olmayabilir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
 ## <a name="example-of-a-violation"></a>Bir ihlali örneği
- Aşağıdaki örnek, bu kural ihlal gösterir.
+ Aşağıdaki örnek, bu kural ihlalini gösterir.
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../code-quality/codesnippet/CSharp/ca1708-identifiers-should-differ-by-more-than-case_1.cs)]
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67cdfd3799b0ba3e1af53cb9e95bb426fec02ddf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920634"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549777"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: İşleçler simetrik aşırı yüklemelere sahip olmalıdır
 |||
@@ -29,20 +29,20 @@ ms.locfileid: "31920634"
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
 |Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
  Bir tür, eşitlik ya da eşitsizlik operatörünü uygular ve ters işleci uygulamaz.
 
-## <a name="rule-description"></a>Kural Tanımı
- Burada eşitlik veya eşitsizlik bir türün örneklerinin için geçerlidir ve ters işleci tanımsızdır hiçbir koşullar vardır. Türleri eksi değeri kadar çevrilerek eşitlik işleci döndürerek eşitsizlik işleci genellikle uygulayın.
+## <a name="rule-description"></a>Kural açıklaması
+ Burada da eşitlik ve eşitsizlik tür örnekleri için geçerlidir ve ters işleci tanımsızdır hiçbir koşullar vardır. Türleri eşitlik işlecini çevrilerek değeri döndürerek eşitsizlik işleci genellikle uygulayın.
 
- C# Derleyici bu kural ihlalleri için bir hata verir.
+ C# Derleyici, bu kural ihlalleri için bir hata verir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için eşitlik ve eşitsizlik işleçleri uygulamak veya mevcut bir kaldırın.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için eşitlik ve eşitsizlik işleçleri uygulayın veya var olanı kaldırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın. Türünüz ile tutarlı bir şekilde çalışmaz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
 ## <a name="related-rules"></a>İlgili kuralları

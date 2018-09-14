@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3944aba1a8b967e8da2bee007a4bbd4bacf4d6b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915834"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547574"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Tür Adları Ad Alanlarıyla Eşleşmemelidir
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "31915834"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir tür adıyla eşleşen bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ad alanı adları büyük küçük harf duyarsız bir karşılaştırma.
+ Bir tür adıyla eşleşen bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] büyük küçük harf duyarsız bir karşılaştırma ad alanı adları.
 
-## <a name="rule-description"></a>Kural Tanımı
- Tür adları tanımlanan ad alanları adlarını değil eşleşmelidir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıf kitaplığı. Bu kuralın ihlali kitaplığın kullanılabilirliğini azaltabilir.
+## <a name="rule-description"></a>Kural açıklaması
+ Tür adları içinde tanımlı ad alanlarının adları değil eşleşmelidir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıf kitaplığı. Bu kuralın ihlali kitaplığın kullanılabilirliğini azaltabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Adını eşleşmeyen bir tür adı seçin bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıf kitaplığı ad.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Belirleyin adı eşleşmiyor bir tür adı bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıf kitaplığı ad alanı.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Yeni geliştirme, hiçbir bilinen senaryolar ortaya burada bu kuraldan bir uyarı bastırma gerekir. Uyarı bastırma önce kullanıcılar kitaplığınızın eşleşen ada göre nasıl yanıltıcı dikkatlice düşünün. Kitaplıkları aktarma için bir uyarı bu kuraldan bastırmak gerekebilir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Yeni geliştirme, hiçbir bilinen senaryolar ortaya burada bu kuraldan bir uyarıyı bastırmak gerekir. Uyarının gösterilmemesi önce kitaplığınızın kullanıcılar tarafından eşleşen adı nasıl yanıltıcı dikkatlice düşünün. Kitaplıkları sevk edilmesi için bu kuraldan bir uyarıyı bastırmak gerekebilir.

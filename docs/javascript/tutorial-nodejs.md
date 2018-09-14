@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 619ea075394305d81d2ffddb8ea1047d2a306ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124924"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548224"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve Express uygulaması oluşturma
 Bu öğreticide Node.js ve Express kullanarak Visual Studio geliştirme için basit bir Node.js web uygulaması oluşturma, kod ekleyin, bazı IDE özelliklerini ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://visualstudio.microsoft.com).
@@ -195,6 +195,8 @@ Visual Studio hata ayıklayıcısı ekli uygulamayı çalıştırmak için sonra
 1. Hata ayıklama araç çubuğundaki hata ayıklama hedefi seçin.
 
     ![Hata ayıklama hedefi seçin](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    Chrome gibi bir farklı tarayıcı hedefi eklemek için seçin **şununla Gözat**.
 
 1. Tuşuna **F5** (**hata ayıklama** > **hata ayıklamayı Başlat**) uygulamayı çalıştırın.
 

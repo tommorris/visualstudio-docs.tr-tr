@@ -14,16 +14,20 @@ ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf38fde258a033fd4050e93d3ad69015f365dc60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5bff984d9ea11ba8fd7f2e42deb5898f04da7d44
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899993"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548496"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Ad alanlarında türleri bildirin
+
 |||
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
@@ -32,16 +36,16 @@ ms.locfileid: "31899993"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir genel ya da korumalı türü adlandırılmış bir ad alanı kapsamı dışında tanımlanır.
+ Ortak veya korumalı tür, adlandırılmış bir ad alanı kapsamı dışında tanımlanır.
 
-## <a name="rule-description"></a>Kural Tanımı
- Türleri ad çakışmaları önlemek için ad ve bir nesne hiyerarşisi ilgili türlerinde düzenlemek için bir yol olarak bildirilir. Herhangi bir adlandırılmış ad alanı dışında olan kodda başvurulamaz genel bir ad alanındaki türleridir.
+## <a name="rule-description"></a>Kural açıklaması
+ Türleri ad çakışmalarını önlemek için ad alanları ve ilgili türü bir nesne hiyerarşisine düzenlemek için bir yol olarak bildirilir. Herhangi bir adlandırılmış ad alanı dışında olan kod içinde başvurulan bir genel ad alanında türleridir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için bir ad alanındaki türü yerleştirin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için bir ad alanında tür yerleştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural bir uyarıdan gizlemek hiçbir zaman sahip olsa da derlemeyi hiçbir zaman diğer derlemeler ile birlikte kullanılması durumunda bunu yapmak güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan bir uyarıyı bastırmak hiçbir zaman sahip, ancak derleme hiçbir zaman diğer Derlemelerle birlikte kullanılması durumunda bunu yapmak güvenlidir.
 
 ## <a name="example"></a>Örnek
  Aşağıdaki örnek, hatalı bir ad alanı dışında bildirilen bir türe sahip bir kitaplık ve bir ad alanında bildirilen aynı ada sahip bir tür gösterir.
@@ -50,7 +54,7 @@ ms.locfileid: "31899993"
  [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
 
 ## <a name="example"></a>Örnek
- Aşağıdaki uygulama önceden tanımlanmış kitaplığını kullanır. Bir ad alanı dışında bildirilmiş türü ne zaman oluşturulduğunu unutmayın adı `Test` bir ad alanı tarafından yetkili değil. Erişim için ayrıca `Test` yazın `Goodspace`, ad alanı adı gereklidir.
+ Aşağıdaki uygulama önceden tanımlanmış kitaplığını kullanır. Bir ad dışında bildirilen tür ne zaman oluşturulduğunu unutmayın adı `Test` bir ad ile nitelenmiyor. Ayrıca erişmeye unutmayın `Test` yazın `Goodspace`, ad alanı adı gereklidir.
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

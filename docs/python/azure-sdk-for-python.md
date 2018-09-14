@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 6c7f38dbe58c5172c8480c88ae84c6e28f5d512b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341244"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545560"
 ---
 # <a name="azure-sdk-for-python"></a>Python için Azure SDK
 
@@ -39,7 +39,7 @@ De izleyebilirsiniz [yüklemeniz Python ve SDK'sı](https://docs.microsoft.com/a
 
 Belgeler bulunabilir [python.readthedocs.org için azure SDK'sı](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 
-[Python Geliştirici Merkezi için Azure SDK'sı](http://azure.microsoft.com/develop/python/) de faydalı kaynaklara, birçok öğretici dahil olmak üzere birçok vardır:
+[Python Geliştirici Merkezi için Azure SDK'sı](https://azure.microsoft.com/develop/python/) de faydalı kaynaklara, birçok öğretici dahil olmak üzere birçok vardır:
 
 - Web apps ile oluşturma [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app), ve [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
 - [BLOB Depolama](/azure/storage/storage-python-how-to-use-blob-storage)

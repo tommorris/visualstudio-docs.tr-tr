@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d6e0301894b23f4671e16b24ea0b34eac4904
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918500"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549410"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Kullanılmayan özel alanlardan kaçının
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31918500"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Bu kural, kodunuzda özel bir alan var, ancak hiçbir kod yolu tarafından kullanılmayan zaman bildirilir.
+ Bu kural, kodunuzda bir özel alan var ancak herhangi bir kod yolu tarafından kullanılmayan bildirilir.
 
-## <a name="rule-description"></a>Kural Tanımı
+## <a name="rule-description"></a>Kural açıklaması
  Derlemede erişimi görülmeyen özel alanlar algılandı.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için alanı kaldırın veya bu kullanan kodu ekleyin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için alanı kaldırın veya onu kullanan kodu ekleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural bir uyarıdan gizlemek güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan bir uyarıyı bastırmak güvenlidir.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1812: Örneklendirilmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

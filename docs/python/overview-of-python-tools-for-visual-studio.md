@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320975"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552116"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -64,7 +64,7 @@ Daha fazla bilgi için:
 
 ## <a name="interactive-window"></a>Etkileşimli pencere
 
-Bilinen Visual Studio için Python, her ortam için ayrı bir komut isteminde kullanmak yerine Visual Studio içinde doğrudan bir Python yorumlayıcısı için aynı etkileşimli (REPL) ortamı kolayca açabilirsiniz. De ortamlar arasında kolayca geçiş yapabilirsiniz. (Ayrı bir komut istemi açmak için istenen ortamınızda seçin **Python ortamları** penceresinde seçip **PowerShell'de açın** komutu altında daha önce açıklandığı gibi [desteği birden çok yorumlayıcılar için](#support-for-multiple=interpreters).)
+Bilinen Visual Studio için Python, her ortam için ayrı bir komut isteminde kullanmak yerine Visual Studio içinde doğrudan bir Python yorumlayıcısı için aynı etkileşimli (REPL) ortamı kolayca açabilirsiniz. De ortamlar arasında kolayca geçiş yapabilirsiniz. (Ayrı bir komut istemi açmak için istenen ortamınızda seçin **Python ortamları** penceresinde seçip **PowerShell'de açın** komutu altında daha önce açıklandığı gibi [desteği birden çok yorumlayıcılar için](#support-for-multipleiinterpreters).)
 
 ![Visual Studio'da Python etkileşimli penceresi](media/interactive-window.png)
 
@@ -161,11 +161,11 @@ BİR. Şu anda değil, ancak istek en fazla oy verebilirsiniz [UserVoice](https:
 
 **SORU. Python ile kullanıcı arabirimini derlemek için ne kullanabilirim?**
 
-BİR. Bu alandaki ana tekliftir [Qt proje](https://www.qt.io/qt-for-application-development/), bilinen Python için bağlamaları ile [PySide (resmi bağlama)](http://wiki.qt.io/PySide) (Ayrıca bkz: [PySide indirir](https://download.qt.io/official_releases/pyside/.)) ve [ PyQt](https://wiki.python.org/moin/PyQt). Şu anda, herhangi belirli kullanıcı Arabirimi geliştirme araçları Visual Studio'da Python desteği içermez.
+BİR. Bu alandaki ana tekliftir [Qt proje](https://www.qt.io/qt-for-application-development/), bilinen Python için bağlamaları ile [PySide (resmi bağlama)](https://wiki.qt.io/PySide) (Ayrıca bkz: [PySide indirir](https://download.qt.io/official_releases/pyside/.)) ve [ PyQt](https://wiki.python.org/moin/PyQt). Şu anda, herhangi belirli kullanıcı Arabirimi geliştirme araçları Visual Studio'da Python desteği içermez.
 
 **SORU. Tek başına yürütülebilir dosya bir Python projesi oluşturabilir?**
 
-BİR. Python ile isteğe bağlı olarak Visual Studio ve web sunucuları gibi uygun bir Python özellikli ortam kod çalıştırılır, yorumlanan bir dil genellikle var. Visual Studio'nun kendisi, aslında bir programla katıştırılmış bir Python yorumlayıcısı anlamına gelir bir tek başına yürütülebilir oluşturmak için Araçlar şu anda sağlamaz. Ancak, yürütülebilir dosyalar üzerinde açıklandığı gibi oluşturmak için farklı yollardan Python topluluk tarafından sağlanan [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir zip dosyası](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+BİR. Python ile isteğe bağlı olarak Visual Studio ve web sunucuları gibi uygun bir Python özellikli ortam kod çalıştırılır, yorumlanan bir dil genellikle var. Visual Studio'nun kendisi, aslında bir programla katıştırılmış bir Python yorumlayıcısı anlamına gelir bir tek başına yürütülebilir oluşturmak için Araçlar şu anda sağlamaz. Ancak, yürütülebilir dosyalar üzerinde açıklandığı gibi oluşturmak için farklı yollardan Python topluluk tarafından sağlanan [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir zip dosyası](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Özellik Matrisi
 
@@ -283,19 +283,19 @@ Visual Studio 2015 veya önceki kullanılabilir [visualstudio.microsoft.com/vs/o
 | Testte Hata Ayıkla | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 <br/>
 
-1. Visual Studio 2012 için Git desteği kullanılabilir Git uzantısı için Visual Studio Araçları'nda mevcuttur [Visual Studio Galerisi](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
+1. Visual Studio 2012 için Git desteği kullanılabilir Git uzantısı için Visual Studio Araçları'nda mevcuttur [Visual Studio Galerisi](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
-1. Dağıtım için Azure Web sitesi gerektirir [.NET 2.1 - Visual Studio 2010 SP1 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=313855). Sonraki sürümleri, Visual Studio 2010 desteklemez.
+1. Dağıtım için Azure Web sitesi gerektirir [.NET 2.1 - Visual Studio 2010 SP1 için Azure SDK'sı](https://go.microsoft.com/fwlink/?LinkId=313855). Sonraki sürümleri, Visual Studio 2010 desteklemez.
 
-1. Azure Web rolü ve çalışan rolü için destek gerektiren [.NET 2.3 - VS 2012 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=323511) veya üzeri.
+1. Azure Web rolü ve çalışan rolü için destek gerektiren [.NET 2.3 - VS 2012 için Azure SDK'sı](https://go.microsoft.com/fwlink/?LinkId=323511) veya üzeri.
 
-1. Azure Web rolü ve çalışan rolü için destek gerektiren [.NET 2.3 - VS 2013 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
+1. Azure Web rolü ve çalışan rolü için destek gerektiren [.NET 2.3 - VS 2013 için Azure SDK'sı](https://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
 
 1. Django şablonu Düzenleyicisi'nde Visual Studio 2013 güncelleştirme 2'yi yükleme ile çözümlendiği bazı bilinen sorunlar vardır.
 
-1. Windows 8 veya sonraki sürümünü gerektirir. Web için Visual Studio 2013 Express yoksa **iliştirme** iletişim, ancak Azure Web sitesi uzaktan hata ayıklama olmasına rağmen olası kullanarak **hata ayıklayıcısı ekleme (Python)** komutunu **sunucusu Explorer**. Uzaktan hata ayıklama gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
+1. Windows 8 veya sonraki sürümünü gerektirir. Web için Visual Studio 2013 Express yoksa **iliştirme** iletişim, ancak Azure Web sitesi uzaktan hata ayıklama olmasına rağmen olası kullanarak **hata ayıklayıcısı ekleme (Python)** komutunu **sunucusu Explorer**. Uzaktan hata ayıklama gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](https://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
 
-1. Windows 8 veya sonraki sürümünü gerektirir. **Hata ayıklayıcının (Python)** komutunu **Sunucu Gezgini** gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](http://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
+1. Windows 8 veya sonraki sürümünü gerektirir. **Hata ayıklayıcının (Python)** komutunu **Sunucu Gezgini** gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](https://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
 
 1. Windows 8 veya sonraki sürümünü gerektirir.
 

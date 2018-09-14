@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cbe35dbe14f89efdde1878a42fc1803254e9eb06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08e059955a6552323453e08882bc2bcebd0fc586
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683761"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552051"
 ---
 # <a name="getting-started-with-python"></a>Python’ı Kullanmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Python programlama dili olarak verilmiştir:
 
 Dili hakkında daha fazla bilgi edinmek için başlayın [yeni başlayanlar için Python](https://www.python.org/about/gettingstarted/) python.org üzerinde.
 
-Python kendisini yüklemek için ziyaret [ http://python.org/download/ ](http://python.org/download/).
+Python kendisini yüklemek için ziyaret [ https://www.python.org/download/ ](https://www.python.org/download/).
  
   
 ## <a name="python-tools-for-visual-studio"></a>Visual Studio için Python Araçları
@@ -83,26 +83,27 @@ Python ile bir kullanıcı Arabirimi oluşturmak için ana sunan [Qt proje](http
 Destekleyen Windows, Mac ve Linux, Python için Azure SDK'sını kullanmak ve Microsoft Azure hizmetlerini yönetmek kolay hale getirir. Ayrıntılar için aşağıdaki kaynaklara bakın: 
 
 - SDK yüklemek için kullanın [Python paket dizinini](https://pypi.python.org/pypi/azure) veya takip [yüklemeniz Python ve SDK'sı](https://azure.microsoft.com/documentation/articles/python-how-to-install/) Azure belgeleri. 
-- [Python Geliştirici Merkezi için Azure SDK'sı](http://azure.microsoft.com/en-us/develop/python/) yüklemesinden Yardım belgelerine öğreticiler ile çok sayıda sahiptir.  Bazı önemli noktalar izleyin:  
+- [Python Geliştirici Merkezi için Azure SDK'sı](https://azure.microsoft.com/develop/python/) yüklemesinden Yardım belgelerine öğreticiler ile çok sayıda sahiptir.  Bazı önemli noktalar izleyin:  
 - Nasıl yapılır kılavuzları:
-  - [Depolama blobu](http://azure.microsoft.com/en-us/develop/python/how-to-guides/blob-service/)  
-  - [Depolama kuyruğu](http://azure.microsoft.com/en-us/develop/python/how-to-guides/queue-service/)  
-  - [Depolama tablosu](http://azure.microsoft.com/en-us/develop/python/how-to-guides/table-service/)  
-  - [Hizmet veri yolu kuyrukları](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-bus-queues/)   - [hizmet veri yolu konuları/abonelikleri](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-bus-topics/) 
-  - [Hizmet Yönetimi](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-management/)  
- 
-  
-  
-## <a name="scientific-computing"></a>Bilimsel bilgi işleme  
+  - [Depolama blobu](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
+  - [Depolama kuyruğu](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
+  - [Depolama tablosu](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  
+  - [Service Bus kuyrukları](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
+  - [Hizmet veri yolu konuları/abonelikleri](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-topics/) 
+  - [Hizmet Yönetimi](https://azure.microsoft.com/develop/python/how-to-guides/service-management/)  
+
+## <a name="scientific-computing"></a>Bilimsel bilgi işleme
+
 Tüm Python veri Bilimcisi kitaplıklarına ek olarak, Visual Studio için Python araçları, Ipython ve Ipython not defterleri Azure'da barındırılan destekler.
 
 Ipython ve bilimsel hesaplama kitaplıkları (matplotlib, scipy, numpy, vb.) almakla öneririz [California Üniversitesi, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [PTVS kullanmaya Başlarken: Visual Studio'yu ayarlama](../python/getting-started-with-ptvs-setting-up-visual-studio.md)   
- [PTVS kullanmaya Başlarken: (Projeler) kodlamaya başlayın](../python/getting-started-with-ptvs-start-coding-projects.md)   
- [PTVS kullanmaya Başlarken: kod düzenleme](../python/getting-started-with-ptvs-editing-code.md)   
- [PTVS kullanmaya Başlarken: hata ayıklama](../python/getting-started-with-ptvs-debugging.md)   
- [PTVS kullanmaya Başlarken: etkileşimli Python](../python/getting-started-with-ptvs-interactive-python.md)   
- [PTVS kullanmaya Başlarken: azure'da bir Web sitesi oluşturma](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+
+[PTVS kullanmaya Başlarken: Visual Studio'yu ayarlama](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[PTVS ile çalışmaya başlama: Başlat (Projeler) kodlama](../python/getting-started-with-ptvs-start-coding-projects.md)
+[PTVS ile çalışmaya başlama: kod düzenleme](../python/getting-started-with-ptvs-editing-code.md) 
+ [PTVS kullanmaya Başlarken: hata ayıklama](../python/getting-started-with-ptvs-debugging.md)
+[PTVS kullanmaya Başlarken: etkileşimli Python](../python/getting-started-with-ptvs-interactive-python.md)
+[alma PTVS kullanmaya başladı: azure'da bir Web sitesi oluşturma](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
 

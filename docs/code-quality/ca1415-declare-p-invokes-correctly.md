@@ -1,5 +1,5 @@
 ---
-title: 'CA1415: P çağırır doğru bildirin'
+title: "CA1415: P-Invoke'ları doğru bildirin"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a690baeb804d3722d442c30077cc07d260a8952
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 603ba2448e9716a77ec7610a32d016dfc124c72c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915769"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548653"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: P/Invoke'ları doğru bildirin
 |||
@@ -29,24 +29,24 @@ ms.locfileid: "31915769"
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |Kategori|Microsoft.Interoperability|
-|Yeni Değişiklik|Bölünemez-P/Invoke parametresi bildiren derlemenin dışından görülemeyen durumunda. Bir parametre bildirdiğinden P/Invoke derlemenin dışından görülebilir varsa - kesiliyor.|
+|Yeni Değişiklik|P/Invoke, parametre bildirirse bölünemez - derlemenin dışından görülemez. P/Invoke parametresi bildiren derlemesi dışında görülebilir, - kesiliyor.|
 
 ## <a name="cause"></a>Sebep
  Bir platform çağırma yöntemi hatalı bildirilmiş.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bir platform yöntemi erişimleri yönetilmeyen kodu çağırma ve kullanılarak tanımlanmış `Declare` anahtar sözcük [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] veya <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Şu anda, bu kural için platform çağırma ÇAKIŞAN yapısı parametresi için bir işaretçi Win32 işlevleri hedef yöntem bildirimleri ve ilgili yönetilen parametresi için bir işaretçi değil benzeyen bir <xref:System.Threading.NativeOverlapped?displayProperty=fullName> yapısı.
+## <a name="rule-description"></a>Kural açıklaması
+ Bir platform yöntemi erişimleri yönetilmeyen kod çağırmak ve tarafından tanımlanan `Declare` anahtar sözcüğünü [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] veya <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Bu kural için platform çağırma işaretçiniz bir ÇAKIŞAN yapı parametresine Win32 işlevlerini hedef yöntem bildirimleri ve yönetilen bir işaretçi değil. şu anda görünür bir <xref:System.Threading.NativeOverlapped?displayProperty=fullName> yapısı.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için doğru platform bildirin yöntemini çağırma.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için doğru platform bildirin yöntemi çağır.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Platform çağırma kuralı ihlal ve kural karşılayan yöntemleri aşağıdaki örnekte gösterildiği.
+ Aşağıdaki örnekte gösterildiği platform çağırma kuralı ihlal ediyor ve kural karşılamak yöntemler.
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Yönetilmeyen Kod ile Birlikte Çalışma](/dotnet/framework/interop/index)

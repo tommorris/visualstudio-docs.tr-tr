@@ -1,5 +1,5 @@
 ---
-title: 'CA2101: P-Invoke dize bağımsız değişkenleri için sıralama belirtin'
+title: 'CA2101: P-Invoke dize bağımsız değişkenleri için hazırlama belirtin'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc32aedf38430ab3ce9657f3a7e4d8d9e416fa57
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b560f2be6cad77bd4381d9ca9968c42c37b462ab
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918863"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548355"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: P/Invoke dize bağımsız değişkenleri için hazırlama belirtin
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31918863"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Bir platform çağırma üye kısmen güvenilen arayanlara için sağlayan bir dize parametresi varsa ve açıkça dize sıralama değil.
+ Bir platform çağırma üyesi kısmen güvenilmeyen çağrıcılara izin verir. bir dize parametresine sahiptir ve dize açıkça sıralanmaz.
 
-## <a name="rule-description"></a>Kural Tanımı
- Unicode'dan ANSI için dönüştürme, belirli bir ANSI kod sayfası tüm Unicode karakterlerini gösterilebilir mümkündür. *En uygun eşlemeyi* bir karakteri temsil edilemeyen karakter getirilmesiyle bu sorunu çözmek çalışır. Bu özelliğin kullanımının, seçilen karakter denetleyemeyeceğiniz için olası bir güvenlik açığı neden olabilir. Örneğin, kötü amaçlı kod dosya sistemi özel karakterleri gibi dönüştürülür belirli kod sayfasında bulunmayan karakterler içeren bir UNICODE dizesi bilerek oluşturabilirsiniz '..' veya '/'. Ayrıca, dize için ANSI dönüştürülmeden önce güvenlik denetimlerini özel karakterler için sıklıkla oluşuyor olduğunu unutmayın.
+## <a name="rule-description"></a>Kural açıklaması
+ ANSI-Unicode dönüştürme yaptığınızda, tüm Unicode karakterleri belirli bir ANSI kod sayfasında temsil edilebilmesi mümkündür. *En iyi uyan eşlemeyi* temsil edilemeyen bir karakter için bir karakter değiştirerek bu sorunu çözmek çalışır. Bu özelliğin kullanımı, seçilen karakter denetleyemeyeceğiniz için olası bir güvenlik açığına neden olabilir. Örneğin, kötü amaçlı kod gibi dosya sistemi için özel karakterler dönüştürülen bir belirli kod sayfasında bulunan karakter içeren bir Unicode dize kasıtlı olarak oluşturabilirsiniz '..' veya '/'. Ayrıca dize için ANSI dönüştürülmeden önce özel karakterler için güvenlik denetimleri sık gerçekleşmesini unutmayın.
 
- En uygun eşlemeyi MB WChar yönetilmeyen dönüştürme için varsayılan değerdir. En uygun eşlemeyi açıkça devre dışı bırakmak sürece, kodunuzu bu sorun nedeniyle yararlanma güvenlik açığı içerebilir.
+ En iyi uyan eşlemeyi WChar MB için yönetilmeyen dönüştürme için varsayılandır. En iyi uyan eşlemeyi açıkça devre dışı sürece kodunuzun Bu sorun nedeniyle bir açıklardan güvenlik açığı içerebilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için açıkça dizesi veri türleriyle sıralama.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için açıkça dizesi veri türleriyle hazırlama.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bu kural ihlal ediyor ve ihlalin düzeltmek nasıl gösterir bir yöntemi gösterir.
+ Aşağıdaki örnek bu kuralı ihlal ediyor ve ihlali gidermek nasıl daha sonra gösterir bir yöntemi gösterir.
 
  [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

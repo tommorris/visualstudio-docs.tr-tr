@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 340b0e7deb12d4568a76d4871eabd49641926dcb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebb37743f9259390aba400a5d89d24b5f41a0d49
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920368"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546986"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Geçersiz kılan bağlantı talepleri taban ile özdeş olmalıdır
+
 |||
 |-|-|
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
@@ -32,23 +33,25 @@ ms.locfileid: "31920368"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak tür genel ya da korumalı yönteminde bir yöntemini geçersiz kılar veya bir arabirimini uygulayan ve aynı yok [bağlantı talepleri](/dotnet/framework/misc/link-demands) arabirimi ya da sanal bir yöntem olarak.
+ Ortak türde ortak veya korumalı bir yöntem bir yöntemini geçersiz kılan veya bir arabirim uygular ve aynı yok [bağlantı talepleri](/dotnet/framework/misc/link-demands) arabirimi veya sanal bir yöntem.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bu kural, arabirim ya da başka bir türdeki sanal yöntem olan temel yöntem ile başka bir yöntemi eşleştirir ve sonra her bir bağlantı talebini inceler. Bir ihlali yöntemi ya da temel yöntemi bir bağlantı isteği varsa ve diğer yok bildirilir.
+## <a name="rule-description"></a>Kural açıklaması
+ Bu kural, arabirim ya da başka bir türdeki sanal yöntem olan temel yöntem ile başka bir yöntemi eşleştirir ve sonra her bir bağlantı talebini inceler. Bir ihlali, yöntemi veya taban yöntemi bağlantı talebi ve diğer yok bildirilir.
 
- Bu kural ihlal edilirse, kötü amaçlı çağıran yalnızca güvenli olmayan yöntemini çağırarak bağlantı isteği atlayabilirsiniz.
+ Bu kural ihlal edilirse kötü niyetli arayan yalnızca güvenli olmayan bir yöntem çağırarak bağlantı talebi atlayabilirsiniz.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için aynı bağlantı isteği geçersiz kılma yöntemi veya uygulama için geçerlidir. Bu mümkün değilse, tam bir isteğe bağlı yöntemiyle işaretlemek veya öznitelik tamamen kaldırın.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için aynı bağlantı talebi aşırı yükleme yöntemini veya uygulama için geçerlidir. Bu mümkün değilse tam talep yöntemi işaretlemek veya öznitelik tamamen kaldırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bu kural çeşitli ihlalleri gösterir.
+ Aşağıdaki örnek, çeşitli bu kural ihlalleri gösterir.
 
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenli kodlama yönergeleri](/dotnet/standard/security/secure-coding-guidelines) [bağlantı talepleri](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Güvenli Kodlama Yönergeleri](/dotnet/standard/security/secure-coding-guidelines)
+- [Bağlantı talepleri](/dotnet/framework/misc/link-demands)

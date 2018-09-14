@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed9821d9b80309311a6fd108c4a29f52b2e882bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58a7df06d3707e0ed8c9bed9a04b79c3ea99dd04
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915027"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550641"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke bildirimleri taşınabilir olmalıdır
 |||
@@ -29,26 +29,26 @@ ms.locfileid: "31915027"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Kategori|Microsoft.Portability|
-|Yeni Değişiklik|P/Invoke derlemenin dışından görünür durumdaysa - kesiliyor. P/Invoke derlemenin dışından görünür değilse olmayan sonu -.|
+|Yeni Değişiklik|P/Invoke derlemenin dışında görünür olup olmadığını - kesiliyor. P/Invoke derlemenin dışında görünür değilse olmayan son -.|
 
 ## <a name="cause"></a>Sebep
- Bu kural her parametre boyutunu ve P/Invoke dönüş değerini değerlendirir ve 32-bit ve 64 bit platformlarda yönetilmeyen kod için sıralanmış zaman boyutlarına doğru olduğunu doğrular. Bu kural en yaygın ihlalinden, bir platforma bağımlı, işaretçi ölçekli değişkeni gerekli olduğu bir sabit boyutlu tamsayı geçirmektir.
+ Bu kural her parametresinin boyutu ve P/Invoke dönüş değeri değerlendirir ve bunların boyutu, 32-bit ve 64-bit platformlarda, yönetilmeyen kod sıralandığı zaman doğru olduğunu doğrular. Bu kural ihlalini en yaygın bir platforma bağımlı, işaretçi boyutlu değişken gerekli olduğu sabit boyutlu bir tamsayı geçirmektir.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bu kural aşağıdaki senaryolardan biri ihlal oluşur:
+## <a name="rule-description"></a>Kural açıklaması
+ Bu kuralı ihlal aşağıdaki senaryolardan biri gerçekleşir:
 
--   Olarak yazılmalıdır, parametre ve dönüş değeri bir sabit boyutlu tamsayı olarak yazılan bir `IntPtr`.
+- Olarak yazılmalıdır, parametre ve dönüş değeri bir sabit boyutlu tamsayı olarak yazılan bir `IntPtr`.
 
--   Dönüş değeri veya parametre olarak yazılan bir `IntPtr` zaman yazdığınız sabit boyutlu tamsayı olarak.
+- Parametre ve dönüş değeri olarak yazılmış bir `IntPtr` zaman yazdığınız sabit boyutlu bir tamsayı olarak.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Kullanarak bu ihlali düzeltebilirsiniz `IntPtr` veya `UIntPtr` yerine tanıtıcıları temsil etmek için `Int32` veya `UInt32`.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Kullanarak, bu ihlali düzeltebilirsiniz `IntPtr` veya `UIntPtr` yerine tanıtıcılarını temsil etmek için `Int32` veya `UInt32`.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu uyarı engelleme.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu uyarı göndermeme değil.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bu kural ihlal gösterir.
+ Aşağıdaki örnek, bu kural ihlalini gösterir.
 
 ```csharp
 internal class NativeMethods
@@ -59,7 +59,7 @@ internal class NativeMethods
 }
 ```
 
- Bu örnekte, `nIconIndex` parametre olarak bildirilen bir `IntPtr`, 32-bit platformu ve 8 bayt bir 64-bit platformda geniş geniş 4 bayt olduğu. Aşağıdaki yönetilmeyen bildiriminde görebilirsiniz `nIconIndex` tüm platformlarda 4-bayt işaretsiz tamsayı değil.
+ Bu örnekte, `nIconIndex` parametresi olarak bildirilmiş bir `IntPtr`, 4 bayt genişliğinde 32-bit bir platforma ve 8 baytlık bir 64-bit platformda geniş olduğu. Görürsünüz izleyen yönetilmeyen bildiriminde `nIconIndex` tüm platformlarda bir 4-bayt işaretsiz tamsayı.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -67,7 +67,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Örnek
- İhlali düzeltmek için bildirimi aşağıdaki gibi değiştirin:
+ İhlali gidermek için bildirimi aşağıdaki gibi değiştirin:
 
 ```csharp
 internal class NativeMethods{
@@ -77,5 +77,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Taşınabilirlik Uyarıları](../code-quality/portability-warnings.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70492152e75d3d257b63e014e854c4b0b431d2ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2dbb5ba3fe1f16f5a05d01d25040de39370cddc8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917724"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548360"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Değişken bağımsız değişkenler için params kullanın
 |||
@@ -32,23 +32,25 @@ ms.locfileid: "31917724"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir genel veya korumalı türünü kullanan bir ortak veya korumalı yöntem içeren `VarArgs` çağırma.
+ Ortak veya korumalı tür kullanan bir ortak veya korumalı yöntem içerir `VarArgs` çağırma kuralı.
 
-## <a name="rule-description"></a>Kural Tanımı
- `VarArgs` Çağırma parametreleri değişken sayıda ele belirli yöntemi tanımları ile kullanılır. Yöntemini kullanarak `VarArgs` çağırma ortak dil belirtimi (CLS) uyumlu değil ve programlama dilleri üzerinden erişilebilir olmayabilir.
+## <a name="rule-description"></a>Kural açıklaması
+ `VarArgs` Çağırma kuralı değişik sayıda parametreyi almayan belirli yöntemi tanımları ile kullanılır. Yöntemini kullanarak `VarArgs` çağırma kuralı, ortak dil belirtimi (CLS) uyumlu değil ve programlama dillerini erişilebilir olmayabilir.
 
- C# ' ta, `VarArgs` çağırma kullanılan bir yöntemin parametre listesi ile sona erdiğinde `__arglist` anahtar sözcüğü. Visual Basic desteklemiyor `VarArgs` elips kullanan yönetilmeyen kod içinde verir kullanımını çağırma kuralı ve Visual C++ `...` gösterimi.
+ C# ' ta, `VarArgs` çağırma kuralı kullanılan bir yöntemin parametre listesi ile sona erdiğinde `__arglist` anahtar sözcüğü. Visual Basic desteklemiyor `VarArgs` elipsin kullanan yönetilmeyen kod içinde sağlayan kullanımı çağırma kuralı ve Visual C++ `...` gösterimi.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal C# ' ta düzeltmek için kullanın [params](/dotnet/csharp/language-reference/keywords/params) anahtar sözcüğü yerine `__arglist`.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ C# ' de bu kural ihlalini düzeltmek için kullanın [params](/dotnet/csharp/language-reference/keywords/params) anahtar sözcüğü yerine `__arglist`.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnekte, iki yöntem, kural ihlal eden diğeri kural karşılayan gösterir.
+ Aşağıdaki örnek, iki yöntem, kural ihlal eden diğeri kural karşılayan gösterir.
 
  [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
- <xref:System.Reflection.CallingConventions?displayProperty=fullName> [Dil bağımsızlığı ve dilden bağımsız bileşenler](/dotnet/standard/language-independence-and-language-independent-components)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- <xref:System.Reflection.CallingConventions?displayProperty=fullName>
+- [Dil Bağımsızlığı ve Dilden Bağımsız Bileşenler](/dotnet/standard/language-independence-and-language-independent-components)

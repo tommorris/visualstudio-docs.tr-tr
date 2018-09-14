@@ -14,16 +14,20 @@ ms.assetid: dfc867bc-f4af-45d7-b071-db04a248f9fc
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6303cf96e3e8f6c4c0920336602cdbb76cc400a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5f7021de24ec9b0a6d7c31d53893528790f2cf2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901168"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548896"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Üye imzalarında genel türleri iç içe kullanmayın
+
 |||
 |-|-|
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
@@ -32,19 +36,19 @@ ms.locfileid: "31901168"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Dışarıdan görünür bir üye iç içe geçmiş tür bağımsız değişkeni içeren bir imza içeriyor.
+ Dışarıdan görünen bir üye iç içe geçmiş tür bağımsız değişkeni içeren bir imza içeriyor.
 
-## <a name="rule-description"></a>Kural Tanımı
+## <a name="rule-description"></a>Kural açıklaması
  Bir yuvalanmış bağımsız değişken aynı zamanda genel tip olan bir tip bağımsız değişkendir. Yuvalanmış tip bağımsız değişkeni içeren imzası olan bir üye çağırmak için, kullanıcı bir genel tipi örneklemeli ve bu tipi ikinci bir genel tipin yapıcısına geçirmelidir. Gerekli yordam ve sözdizimi karmaşıktır ve kaçınılmalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için iç içe geçmiş tür bağımsız değişkeni kaldırmak için tasarım değiştirin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için iç içe geçmiş tür bağımsız değişkeni kaldırmak için tasarım değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kuraldan uyarıyı bastırmayın. Genel türler anlamak ve kullanmak kolay bir sözdiziminde sağlama öğrenmek için gerekli olan ve yeni kitaplıklar benimseme oranı artırır süreyi azaltır.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın. Genel türler anlaşılması ve kullanımı kolay bir sözdizimindeki sağlama öğrenmek için gerekli olan ve yeni kitaplıkları benimseme oranını artırır süreyi azaltır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek kuralını ihlal eden bir yöntem ve ihlal eden yöntemini çağırmak için gerekli sözdizimi gösterilmektedir.
+ Aşağıdaki örnek kuralını ihlal eden bir yöntem ve ihlal eden yöntemini çağırmak için gerekli sözdizimi gösterilir.
 
  [!code-vb[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/VisualBasic/ca1006-do-not-nest-generic-types-in-member-signatures_1.vb)]
  [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]
@@ -64,5 +68,5 @@ ms.locfileid: "31901168"
 
  [CA1007: Uygun yerlerde genel türler kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Genel Türler](/dotnet/csharp/programming-guide/generics/index)

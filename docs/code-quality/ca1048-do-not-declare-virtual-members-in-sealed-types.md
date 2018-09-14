@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ba776cb423773ca6c5a4646bbf30531cd2d27f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59a1bd75ce2e9f437661fa2b2034f8e31f729ef9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897362"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546726"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Korumalı türlerde sanal üyeleri bildirme
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31897362"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak tür korumalı ve hem de bir yöntem bildirir `virtual` (`Overridable` Visual Basic'te) ve son değil. Bu kural ihlalleri bu deseni izlemelidir temsilci türleri için raporlamaz.
+ Ortak tür, korumalı ve hem de bir yöntem `virtual` (`Overridable` Visual Basic'te) ve son değil. Bu kural ihlalleri bu deseni izlemelidir temsilci türleri raporlamaz.
 
-## <a name="rule-description"></a>Kural Tanımı
- Türler yöntemi sanal olarak bildirir, böylece devralan türler sanal yöntemin uygulanmasını geçersiz kılabilir. Tanımı gereği, sanal bir yöntem korumalı türüne anlamsız yapmadan korumalı bir türden devralır olamaz.
+## <a name="rule-description"></a>Kural açıklaması
+ Türler yöntemi sanal olarak bildirir, böylece devralan türler sanal yöntemin uygulanmasını geçersiz kılabilir. Tanımı gereği, sanal yöntemi mühürlenmiş bir türde anlamsız hale getirme sealed türünden devralınamaz.
 
- Visual Basic ve C# Derleyicileri türleri bu kural ihlal izin vermez.
+ Visual Basic ve C# Derleyicileri türleri bu kuralı ihlal edilmesine izin vermez.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için yöntem sanal olmayan yaptığınızda veya türü devralınabilir.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için yöntemi sanal olmayan veya türü devralınabilir.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kuraldan uyarıyı bastırmayın. Türü geçerli durumunda bırakarak bakım sorunlara neden olabilir ve tüm avantajları sağlamaz.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan uyarıyı bastırmayın. Geçerli durumunda türü bırakarak bakım sorunlarına neden olabilir ve herhangi bir avantaj sağlamaz.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bu kural ihlal eden bir tür gösterir.
+ Aşağıdaki örnek bu kuralı ihlal eden bir tür gösterir.
 
  [!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]

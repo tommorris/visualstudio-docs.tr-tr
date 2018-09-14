@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774697"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549317"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux'ta Python kodu uzaktan hata ayıklama
 
@@ -99,7 +99,7 @@ Bu adımlarda, uzak işlemini durdurmak için basit bir kesme noktası ayarladı
 1. İçinde **bağlantı hedefi** alan (**niteleyicisi** daha eski sürümlerindeki), girin `tcp://<secret>@<ip_address>:5678` burada `<secret>` geçirilen bir dize `enable_attach` Python kodunda `<ip_address>` budur (Bu bir açık adresi ya da myvm.cloudapp.net gibi bir ad olabilir) uzak bilgisayar ve `:5678` uzaktan hata ayıklama bağlantı noktası numarası.
 
     > [!Warning]
-    > Genel internet üzerinden bağlantı yapıyorsanız, kullanılmalı `tcps` bunun yerine ve yönerge için aşağıdaki [hata ayıklayıcısı bağlantı SSL ile güvenli](#securing-the-debugger-connection-with-ssl).
+    > Genel internet üzerinden bağlantı yapıyorsanız, kullanılmalı `tcps` bunun yerine ve yönerge için aşağıdaki [hata ayıklayıcısı bağlantı SSL ile güvenli](#secure-the-debugger-connection-with-ssl).
 
 1. Tuşuna **Enter** o bilgisayardaki kullanılabilir ptvsd işlemlerin listesini doldurmak için:
 
@@ -148,7 +148,7 @@ Varsayılan olarak ptvsd uzaktan hata ayıklama sunucusuyla bağlantı yalnızca
 
     İstendiğinde, ana bilgisayar adı veya IP adresi (hangisi bağlanmak için kullandığınız) kullanılmak **ortak ad** openssl tarafından istendiğinde.
 
-    (Bkz [otomatik olarak imzalanan sertifikalar](http://docs.python.org/3/library/ssl.html#self-signed-certificates) python'da `ssl` modülü docs bakın. Bu docs komutta yalnızca tek bir birleştirilmiş dosya oluşturur unutmayın.)
+    (Bkz [otomatik olarak imzalanan sertifikalar](https://docs.python.org/3/library/ssl.html#self-signed-certificates) python'da `ssl` modülü docs bakın. Bu docs komutta yalnızca tek bir birleştirilmiş dosya oluşturur unutmayın.)
 
 1. Kod içinde çağrısını değiştirin `enable_attach` içerecek şekilde `certfile` ve `keyfile` dosya adlarını değerleri olarak kullanılarak bağımsız (Bu bağımsız değişkenler standart olduğu gibi aynı anlamları `ssl.wrap_socket` Python işlevi):
 

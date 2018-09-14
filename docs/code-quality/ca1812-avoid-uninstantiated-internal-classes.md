@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b59e9b0947c6d2b1cbb37cdc850a144976d495
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915603"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551775"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Örneklendirilmemiş iç sınıflardan kaçının
 |||
@@ -34,42 +34,42 @@ ms.locfileid: "31915603"
 ## <a name="cause"></a>Sebep
  Bir derleme düzeyi türünün örneği, derleme içindeki kod tarafından oluşturulmaz.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bu kural türü oluşturuculardan birine çağrısına bulmaya çalışır ve hiçbir çağrı bulunursa, bir ihlali raporlar.
+## <a name="rule-description"></a>Kural açıklaması
+ Bu kural, bir türü oluşturucular bir çağrı bulmaya çalışır ve hiçbir çağrı bulunursa bir ihlali bildirir.
 
- Bu kural tarafından aşağıdaki türlerden incelenmesi değil:
+ Aşağıdaki türleri bu kural tarafından incelenir değil:
 
--   Değer türleri
+- Değer türleri
 
--   Soyut türler
+- Soyut türler
 
--   Numaralandırmalar
+- Numaralandırmalar
 
--   Temsilciler
+- Temsilciler
 
--   Derleyici yayılan dizi türleri
+- Derleyici yayılan dizi türleri
 
--   Olamaz başlatılamaz ve tanımlayan türleri `static` (`Shared` Visual Basic'te) yalnızca yöntemleri.
+- Olamaz başlatılamaz ve tanımlayan türler `static` (`Shared` Visual Basic'te) yalnızca yöntemleri.
 
- Uygularsanız <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> analiz ediliyor. derlemeye olarak işaretlenmiş oluşturucular üzerinde bu kural gerçekleşmez `internal` bir alan bir başkası tarafından kullanılıp kullanılmadığını bildiremez çünkü `friend` derleme.
+ Uygularsanız, <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> analiz ediliyor. derlemeye olarak işaretlenmiş tüm oluşturucular üzerinde bu kural gerçekleşmez `internal` alana bir başkası tarafından kullanılıp kullanılmadığını bildiremez çünkü `friend` derleme.
 
- Bu sınırlamaya geçici çalışamaz olsa bile [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kod analizi, dış tek başına FxCop gerçekleşeceği iç oluşturucularda her varsa `friend` derlemedir analiz mevcut.
+ Visual Studio Kod Analizi bu sınırlamaya geçici bir çözüm çalışamaz olsa da, dış tek başına FxCop iç oluşturucularda her meydana gelir `friend` derlemesidir analiz mevcut.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için türünü kaldırmak veya onu kullanan kodu ekleyin. Türü yalnızca statik yöntemler içeriyorsa, varsayılan bir ortak örnek oluşturucu yayma derleyici önlemek için türü için aşağıdakilerden birini ekleyin:
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için türünü kaldırın veya onu kullanan kodu ekleyin. Tür yalnızca statik yöntemler içeriyorsa, derleyici varsayılan bir ortak örnek oluşturucusu yayma gelen önlemek için türü için aşağıdakilerden birini ekleyin:
 
--   İçin özel bir oluşturucu türleri hedefleyen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 1.0 ve 1.1 sürümleri.
+- İçin özel bir oluşturucu türleri hedefleyen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 1.0 ve 1.1 sürümleri.
 
--   `static` (`Shared` Visual Basic'te) değiştiricisi için türleri hedefleyen [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- `static` (`Shared` Visual Basic) değiştirici için türleri hedefleyen [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural bir uyarıdan gizlemek güvenlidir. Bu uyarı aşağıdaki durumlarda bastırmak öneririz:
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan bir uyarıyı bastırmak güvenlidir. Aşağıdaki durumlarda bu uyarının gösterilmemesi gerektiğini öneririz:
 
--   Sınıfı gibi geç bağlama yansıma yöntemleri ile oluşturulan <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Sınıfı gibi geç bağlanan yansıma yöntemleri ile oluşturulan <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   Sınıfı çalışma zamanı tarafından otomatik olarak oluşturulur veya [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Örneğin, uygulayan sınıflar <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> veya <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Sınıfı çalışma zamanı tarafından otomatik olarak oluşturulan veya [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Örneğin, uygulayan sınıflar <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> veya <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   Sınıfının yeni bir kısıtlamaya sahip bir genel tür parametresi olarak geçirilir. Örneğin, aşağıdaki örnekte, bu kural ortaya koyar.
+- Sınıfının yeni bir kısıtlamaya sahip bir genel tür parametresi geçirilir. Örneğin, aşağıdaki örnekte, bu kural oluşturacak.
 
     ```csharp
     internal class MyClass
@@ -90,7 +90,7 @@ ms.locfileid: "31915603"
     mc.Create();
     ```
 
- Bu durumda, bu uyarıyı gizlemek önerilir.
+ Bu durumda, bu uyarının gösterilmemesi önerilir.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1811: Çağrılmayan özel kodlardan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)

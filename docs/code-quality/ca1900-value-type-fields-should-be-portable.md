@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9add21d932f7685a2dee214f396b2cbda089a5a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4608812c85764125e9cf33dba0e4b0d0b80bbaed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917221"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550563"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Değer tür alanları taşınabilir olmalıdır
 |||
@@ -29,16 +29,16 @@ ms.locfileid: "31917221"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |Kategori|Microsoft.Portability|
-|Yeni Değişiklik|Alanın derleme görülebilir varsa - kesiliyor.<br /><br /> Bölünemez - alanın derleme görünür değilse.|
+|Yeni Değişiklik|Alan derlemesi dışında görülebilir, - kesiliyor.<br /><br /> Bölünemez - alanın derlemenin dışında görünür değilse.|
 
 ## <a name="cause"></a>Sebep
- Bu kural, açık düzeniyle bildirilen yapıları 64-bit işletim sistemlerinde yönetilmeyen kod için sıralanmış zaman doğru uyuşacağı denetler. IA-64 hizalanmamış bellek erişir ve bu ihlali düzeltilmezse işlemi kilitleniyor izin vermiyor.
+ Bu kural ile açık düzene bildirilen yapıları için 64-bit işletim sistemlerinde yönetilmeyen kod sıralandığı zaman doğru olarak hizalamayı denetler. IA-64 hizalanmamış bellek erişir ve bu ihlal düzeltilmezse süreci kilitlenecek izin vermez.
 
-## <a name="rule-description"></a>Kural Tanımı
- Yanlış hizalanmış alanları neden kilitlenme 64-bit işletim sistemlerinde içeren açık düzene sahip yapıları.
+## <a name="rule-description"></a>Kural açıklaması
+ Sahip 64 bit işletim sistemlerinde Çökmelere neden olur yanlış hizalanmış alanlar içeren açık Yerleşimli yapılar.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- 8 bayt'tan küçük tüm alanlar boyutlarına birden fazla olan uzaklıkları ve 8 bayt alanlar olmalıdır veya daha fazla 8 birden fazla olan uzaklıkları olması gerekir. Başka bir çözüm `LayoutKind.Sequential` yerine `LayoutKind.Explicit`makul durumunda.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ 8 bayttan küçük olan tüm alanlar, boyutunun bir katı olan uzaklık ve 8 bayt alanlar olmalıdır veya daha fazla 8'in katı olan uzaklık olması gerekir. Başka bir çözüm `LayoutKind.Sequential` yerine `LayoutKind.Explicit`makul verilebilir.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Yalnızca hata oluşursa, bu uyarıyı atlanması.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu uyarı yalnızca hata oluşursa atlanması.

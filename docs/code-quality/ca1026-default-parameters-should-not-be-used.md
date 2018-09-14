@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf28c16bc5457309c2de42d79574dbb64739d9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faced51a807a69ecc2e11a04e9ed5e292f4d3a19
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901653"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547613"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Varsayılan parametreler kullanılmamalıdır
 |||
@@ -32,26 +32,26 @@ ms.locfileid: "31901653"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Harici olarak görünen bir türü varsayılan bir parametre kullanan dışarıdan görünür yöntemi içerir.
+ Dışarıdan görünen bir tür kullanan bir varsayılan parametresi dışarıdan görünen bir yöntem içerir.
 
-## <a name="rule-description"></a>Kural Tanımı
- Varsayılan parametreleri kullanan yöntemleri ortak dil belirtimi (CLS) altında izin verilir; Ancak, bu parametreler için atanmış olan değerleri yok sayın derleyicileri CLS sağlar. Varsayılan parametre değerleri yok sayın derleyicileri için yazılan kod, açıkça her varsayılan parametresi için bağımsız değişkenleri belirtmeniz gerekir. Programlama dilleri arasında istediğiniz davranışı sağlamak için varsayılan parametreleri kullanan yöntemleri varsayılan parametreleri sağlamak yöntemi aşırı yüklemeleri ile değiştirilmelidir.
+## <a name="rule-description"></a>Kural açıklaması
+ Varsayılan parametreleri kullanan yöntemler, ortak dil belirtimi (CLS) altında izin verilir; Ancak, CLS derleyicileri Bu parametreler için atanmış değerleri yok saymasını sağlar. Varsayılan parametre değerlerini yoksay derleyicileri için yazılan kod her varsayılan parametresi için bağımsız değişkenleri açıkça belirtmeniz gerekir. Programlama dilleri arasında istediğiniz davranışı korumak için varsayılan parametreleri kullanan yöntemler varsayılan parametreleri sağlayan yöntem aşırı yüklemeleri ile değiştirilmelidir.
 
- Yönetilen kod eriştiğinde derleyici C++ için yönetilen uzantısı için varsayılan parametre değerlerini yoksayar. Visual Basic derleyici kullanan varsayılan parametrelere sahip yöntemlerini destekler [isteğe bağlı](/dotnet/visual-basic/language-reference/modifiers/optional) anahtar sözcüğü.
+ Yönetilen kod eriştiğinde derleyici C++ için yönetilen uzantısı için varsayılan parametre değerlerini yoksayar. Visual Basic Derleyicisi kullanan varsayılan parametreleri olan yöntemleri destekler [isteğe bağlı](/dotnet/visual-basic/language-reference/modifiers/optional) anahtar sözcüğü.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için varsayılan parametrelerini yöntemi aşırı yüklemeleri ile varsayılan parametreleri kullanan yöntem değiştirin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için varsayılan parametreleri tedarik yöntemi aşırı yüklemeleri ile varsayılan parametreleri kullanan yöntemi değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, varsayılan parametreleri kullanan bir yöntem, eşdeğer bir işlevselliği sağlayan ve aşırı yüklenmiş yöntemleri gösterir.
+ Aşağıdaki örnek, varsayılan parametreleri kullanan bir yöntem ve eşdeğer bir işlevselliği sağlayan bir aşırı yüklenmiş yöntemler gösterilmektedir.
 
  [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Dil Bağımsızlığı ve Dilden Bağımsız Bileşenler](/dotnet/standard/language-independence-and-language-independent-components)

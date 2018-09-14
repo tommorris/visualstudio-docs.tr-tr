@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a613ecfd339399b161292a75f7fb2abeb972d986
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57c23ea9c6afb27ee89886936fff690a4285f5c0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916683"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549918"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Aşırı sınıf bağlantısından kaçın
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
@@ -32,18 +33,20 @@ ms.locfileid: "31916683"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Türü veya yöntemi diğer birçok ile birleştirilmiştir.
+ Bir türün veya yöntemin birçok diğer türleri ile birleştirilmiştir.
 
-## <a name="rule-description"></a>Kural Tanımı
+## <a name="rule-description"></a>Kural açıklaması
  Bu kural türü veya yöntemini içeren benzersiz türde başvuru sayısı belirlenerek eşlenmesiyle sınıfı ölçer.
 
- Türleri ve sınıf yüksek derecede sahip yöntemleri korumak zor olabilir. Türler ve düşük bağ ve yüksek cohesion sergiler yöntemler için iyi bir uygulamadır.
+ Türler ve bir sınıf bağlantısı yüksek ölçüde içeren yöntemlerin bakımını yapmak zor olabilir. Türler ve düşük eşleştirme ve yüksek uyum göstermesi yöntemler için iyi bir uygulamadır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu ihlali düzeltmek için türü veya yöntemi bağlı türleri sayısını azaltmak için yeniden tasarlayabilir deneyin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu ihlali gidermek için tür veya yöntem bağlı türler sayısını azaltmak için yeniden tasarlayabilir deneyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu uyarı türü veya yöntemi yine, sayıda diğer türleri bağımlılıkları rağmen sürdürülebilir olarak kabul edildiğinde dışlayın.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu uyarı, tür veya yöntem hala rağmen bağımlılıklar diğer türleri üzerinde çok fazla sürdürülebilir edildiği durumlarda hariç tutun.
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Bakım uyarıları](../code-quality/maintainability-warnings.md) [ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Bakım Uyarıları](../code-quality/maintainability-warnings.md)
+- [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

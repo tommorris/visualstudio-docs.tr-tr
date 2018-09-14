@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 799d0d04f8620c07be0583869eeba5dd760c7f70
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3322b968266ad6fdfe1be2e5bdaac73aad32b9c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915545"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551918"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Lifleri iş parçacığı olarak görmeyin
+
 |||
 |-|-|
 |TypeName|DoNotTreatFibersAsThreads|
@@ -32,13 +33,17 @@ ms.locfileid: "31915545"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Yönetilen iş parçacığı bir Win32 iş parçacığı kabul edilir.
 
-## <a name="rule-description"></a>Kural Tanımı
- Yönetilen iş parçacığı bir Win32 iş parçacığı olduğunu varsayalım değil. Bu, bir fiber olur. Ortak dil çalışma zamanı (CLR), SQL tarafından sahip olunan gerçek iş parçacıkları bağlamında lifleri olarak yönetilen iş parçacığı çalıştırılır. Bu iş parçacıkları SQL Server işleminde appdomains oluşturuyor ve hatta veritabanları arasında paylaşılabilir. Yönetilen iş parçacığı yerel depolama çalışır kullanarak, ancak değil yönetilmeyen iş parçacığı yerel depolama kullanın veya kodunuzu geçerli işletim sistemi iş parçacığı üzerinde yeniden çalıştırılır varsayalım. İş parçacığı yerel gibi ayarlarını değiştirmeyin. Kilit girer iş parçacığı kilidi çıkmalı gerektirdiğinden CreateCriticalSection ya da P/Invoke aracılığıyla CreateMutex çağırmayın. Lifleri kullandığınızda, bu durum olmayacağından, Win32 kritik bölümler ve zaman uyumu sağlayıcılar SQL'de gereksiz olacaktır. Yönetilen bir System.Thread nesne üzerinde durumunun en güvenli bir şekilde kullanabilirsiniz. Yönetilen iş parçacığı yerel depolaması ve geçerli kullanıcı arabirimi (UI) kültürü iş parçacığının buna dahildir. Ancak, programlama modeli nedeni, SQL kullandığınızda geçerli bir iş parçacığı kültürünü değiştirmesi mümkün olmayacaktır; Bu yeni bir izin uygulanır.
+Yönetilen iş parçacığı bir Win32 iş parçacığı kabul edilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- İş parçacığı kullanımınızı inceleyin ve kodunuzu uygun şekilde değiştirin.
+## <a name="rule-description"></a>Kural açıklaması
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural engelleme.
+Yönetilen iş parçacığı bir Win32 iş parçacığı olan varsaymayın; Bu, bir fiber olur. Ortak dil çalışma zamanı (CLR) yönetilen iş parçacıklarını iyileştirmesini SQL tarafından sahip olunan gerçek iş parçacıkları bağlamında çalışır. Bu iş parçacıkları SQL Server işlemde uygulama etki alanları ve hatta veritabanları arasında paylaşılabilir. Kullanılarak yönetilen iş parçacığı yerel depolama çalışır, ancak değil yönetilmeyen iş parçacığı yerel depolama kullanan veya kodunuzu geçerli işletim sistemi iş parçacığı üzerinde yeniden çalışacağını varsayalım. İş parçacığı yerel ayarı gibi ayarları değiştirmeyin. Kilit girer iş parçacığı kilit çıkmalı gerektirdiğinden CreateCriticalSection veya P/Invoke aracılığıyla CreateMutex çağırmayın. Win32 kritik bölümler mutex'leri iyileştirmesini kullandığınızda kilit girdiği iş parçacığının bir kilidi çıkmak değil çünkü gereksiz SQL. Güvenli bir şekilde çoğu durumu üzerinde bir yönetilen kullanabilirsiniz <xref:System.Threading.Thread> yönetilen iş parçacığı yerel depolama ve iş parçacığının geçerli kullanıcı arabirimi (UI) kültürü dahil olmak üzere bir nesne. Ancak, model nedeniyle programlama için SQL kullanırken bir iş parçacığının geçerli kültürü değiştirmek mümkün olmayacaktır. Bu sınırlama ile yeni bir izin zorlanır.
+
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+
+İş parçacıkları kullanımınızı inceleyin ve kodunuzu buna göre değişir.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+
+Bu kural bastırmayın.

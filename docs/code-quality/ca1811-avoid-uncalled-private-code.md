@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37ef9cdc76b86d3ad3c18489f63fb5c340aa6a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41b5bce1878ae7d23c21aedd0a4cb1b24b66548d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918470"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550686"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Çağrılmayan özel kodlardan kaçının
 |||
@@ -32,26 +32,26 @@ ms.locfileid: "31918470"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Özel veya dahili (derleme düzeyi) üyesi arayanlar derlemede yok, ortak dil çalışma zamanı tarafından çağrılır ve temsilci tarafından çağrılır. Aşağıdaki üyeleri bu kural tarafından denetlenmez:
+ Özel veya iç (derleme düzeyi) üye Arayanların derlemede çağırıcısı değil, ortak dil çalışma zamanı tarafından çağrılan değildir ve temsilci tarafından çağrılan da değildir. Aşağıdaki üyeleri bu kural tarafından denetlenmez:
 
--   Açık arabirim üyeleri.
+- Açık arabirim üyeleri.
 
--   Statik oluşturucular.
+- Statik oluşturucular.
 
--   Serileştirme oluşturucularını uygulayın.
+- Serileştirme oluşturucularını uygulayın.
 
--   Yöntemleri ile işaretlenen <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> veya <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- İle işaretlenmiş yöntemler <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> veya <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
--   Geçersiz kılmaları olan üyeleri.
+- Geçersiz kılmalar olan üyeleri.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bu kural, giriş noktaları meydana gelirse hatalı pozitif sonuç kural mantığı tarafından şu anda tanımlanmamış bildirebilirsiniz. Ayrıca, bir derleyici noncallable kodu derlemeye yayabilir.
+## <a name="rule-description"></a>Kural açıklaması
+ Bu kural, giriş noktaları, gerçekleşirse, hatalı pozitif sonuçları kural mantığı tarafından şu anda belirtilmemiş bildirebilirsiniz. Ayrıca, derleyici bir derlemeye noncallable kod yayabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için noncallable kodunu kaldırmak veya onu çağıran kodu ekleyin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için noncallable kodunu kaldırmak veya onu çağıran kodu ekleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural bir uyarıdan gizlemek güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kuraldan bir uyarıyı bastırmak güvenlidir.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1812: Örneklendirilmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

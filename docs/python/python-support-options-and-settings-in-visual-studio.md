@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b158955c9730898c3624c9a832f5cc75c62ba338
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468663"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549657"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio'da Python için seçenekleri
 
@@ -46,7 +46,7 @@ Vardır ayrıca ek Python özgü seçenekler **metin düzenleyici** > **Python**
 | **Sanal ortamlar oluşturulurken çıkış penceresini göster**| Açık | Clear önlemek için **çıkış** görüntülenmesini penceresi. |
 | **Yüklerken veya paketlerini kaldırma çıkış penceresini göster** | Açık | Clear önlemek için **çıkış** görüntülenmesini penceresi. |
 | **Her zaman pip yönetici olarak çalıştır** | Kapalı | Her zaman yükseltir `pip install` işlemleri tüm ortamlar için. Ortamı gibi bir dosya sistemi korumalı alanda yer alıyorsa paketleri yüklenirken, Visual Studio için yönetici ayrıcalıkları ister *c:\Program dosyaları*. Her zaman yükseltmesine seçebilirsiniz, isteminde `pip install` bir o ortama ait. Bkz: [paketleri sekmesinde](python-environments-window-tab-reference.md#packages-tab). |
-| **Tamamlanma veritabanı ilk kullanımında otomatik olarak oluştur** | Açık | *Visual Studio 2017 sürüm 15.5 ve önceki ve sonraki sürümler için IntelliSense veritabanı kullanılırken geçerlidir.* Bunu kullanan kod yazarken tamamlama için bir kitaplık veritabanı önceliklendirir. Daha fazla bilgi için [ortam penceresi başvurusu - IntelliSense sekmesini](python-environments-window-tab-reference.md). |
+| **Tamamlanma veritabanı ilk kullanımında otomatik olarak oluştur** | Açık | *Visual Studio 2017 sürüm 15.5 ve önceki ve sonraki sürümler için IntelliSense veritabanı kullanılırken geçerlidir.* Bunu kullanan kod yazarken tamamlama için bir kitaplık veritabanı önceliklendirir. Daha fazla bilgi için [IntelliSense sekmesini](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Sistem genelinde ise PYTHONPATH değişkenleri yoksay** | Açık | Visual Studio ortamları ve projeleri arama yollarını belirtmek için daha doğrudan bir yolu sağladığından ise PYTHONPATH varsayılan olarak sayılır. Bkz: [arama yolları](search-paths.md) Ayrıntılar için. |
 | **Bağlantılı dosyaları eklerken güncelleştirme arama yolları** | Açık | Ayarlanırsa, ekleme, bir [bağlı dosya](managing-python-projects-in-visual-studio.md#linked-files) projeye güncelleştirmeleri [arama yolları](search-paths.md) böylece IntelliSense tamamlanma veritabanına bağlı dosya klasörünün içeriğini içerebilir. İçeriklerin tamamlama veritabanından hariç tutmak için bu seçeneği temizleyin. |
 | **İçeri aktarılan uyar, modül bulunamıyor** | Açık | Temiz bir içeri aktarılan modül bildiğinizde uyarıları bastırmak için bu seçeneği şu anda kullanılamıyor ancak Aksi takdirde kodu işlemi etkilemez. |
@@ -111,7 +111,7 @@ Vardır ayrıca ek Python özgü seçenekler **metin düzenleyici** > **Python**
 
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
-| **Aşağıdaki karakterleri yazarak işlendi** | **{}[]().,:; +-* / % &&#124;^ ~ = <> #@\\** | Bu karakterler bir karakter yazarak tamamlama kaydetmeye uygun olacak şekilde bir tamamlama listeden seçebilirsiniz. tanımlayıcı genellikle izleyin. Kaldırın veya belirli karakter istenen listesine ekleyin.  |
+| **Aşağıdaki karakterleri yazarak işlendi** | **{}\[\]().,:; +-* / % &&#124;^ ~ = <> #@\\** | Bu karakterler bir karakter yazarak tamamlama kaydetmeye uygun olacak şekilde bir tamamlama listeden seçebilirsiniz. tanımlayıcı genellikle izleyin. Kaldırın veya belirli karakter istenen listesine ekleyin.  |
 | **İşlemeler geçerli tamamlama girin** | Açık | Ayarlandığında, **Enter** anahtar seçer ve şu anda seçilmiş tamamlanma karakterler olarak yukarıdaki uygular (ancak Elbette, karakter için hiç **Enter** bu listesine doğrudan Git uygulanamadı şekilde!). |
 | **Yeni bir satır eklemek, tam yazılmış kelimenin sonuna enter** | Kapalı | Varsayılan olarak görünen tüm sözcük tamamlama açılır ve ENTER tuşuna yazarsanız **Enter**, o tamamlama işleyin. Tanımlayıcı yazmayı bitirdikten sonra bu seçeneği ayarlayarak, etkili bir şekilde tamamlamaları işleme gibi **Enter** yeni bir satır ekler. |
 

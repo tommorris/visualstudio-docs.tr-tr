@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e21ae36795d866be76c6caaf9d01388621348d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a30e3581101b1065f26d01e70657981a5220e56c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919376"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548750"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: Saydam metotlar yerel kod içine çağırmamalıdır
 |||
@@ -28,15 +28,15 @@ ms.locfileid: "31919376"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Yerel bir işleve yöntemi saplama P/Invoke gibi aracılığıyla bir yöntemi çağırır.
+ Bir yöntem aracılığıyla bir metot taslağı P/Invoke gibi yerel bir işlevi çağırır.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bu kural, örneğin P/Invoke gibi yerel kod içinde doğrudan çağıran herhangi bir saydam yöntemi tetikler. Bu kural ihlalleri neden bir <xref:System.MethodAccessException> Düzey 2 saydamlık modeli ve tam bir talep <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> düzey 1 saydamlık modeli.
+## <a name="rule-description"></a>Kural açıklaması
+ Bu kural doğrudan yerel kod içine, örneğin, bir P/Invoke çağıran herhangi bir saydam yöntemi tetikler. Bu kural ihlalleri neden bir <xref:System.MethodAccessException> Düzey 2 saydamlık modeli ve tam bir talep <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> düzey 1 saydamlık modeli içindeki.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için yerel kod ile çağıran yöntemi işaretlemek <xref:System.Security.SecurityCriticalAttribute> veya <xref:System.Security.SecuritySafeCriticalAttribute> özniteliği.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için yerel kod ile yöntemi işaretlemek <xref:System.Security.SecurityCriticalAttribute> veya <xref:System.Security.SecuritySafeCriticalAttribute> özniteliği.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek

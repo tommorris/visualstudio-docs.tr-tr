@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 63fa8e83fd94be5307541ca7e070d47c8fa04488
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586384"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551668"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Hangi Python ortamını bir proje için kullanılan atama
 
@@ -114,7 +114,7 @@ Görüntülenen girişler her zaman doğru olmayabilir ve yüklenmesi veya kald�
 Ayrıca Visual Studio kullanarak şu anda desteklemiyor Not `conda` conda ortamına paketlerini yükleyin. Kullanım `conda` komut satır yerine.
 
 > [!Tip]
-> Paket, kaynak kodu yerel bileşenlerin içerir. burada pip başarısız bir paketi yüklemek için ortak bir durum olduğunda  *\*.pyd* dosyaları. Yüklü Visual Studio gerekli sürümü, bu bileşenlerin pip derlenemiyor. Bu durumda görüntülenen hata iletisi **hata: vcvarsall.bat bulunamıyor**. `easy_install` önceden derlenmiş ikili dosyaları, genellikle indirebildiğini Python'dan eski sürümlerine yönelik bir uygun derleyici indirebilirsiniz [ http://aka.ms/VCPython27 ](http://aka.ms/VCPython27). Daha fazla ayrıntı için ["vcvarsallbat bulmak alınamıyor", sorunlu ile nasıl](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) üzerinde Python araçları ekip blogu.
+> Paket, kaynak kodu yerel bileşenlerin içerir. burada pip başarısız bir paketi yüklemek için ortak bir durum olduğunda  *\*.pyd* dosyaları. Yüklü Visual Studio gerekli sürümü, bu bileşenlerin pip derlenemiyor. Bu durumda görüntülenen hata iletisi **hata: vcvarsall.bat bulunamıyor**. `easy_install` önceden derlenmiş ikili dosyaları, genellikle indirebildiğini Python'dan eski sürümlerine yönelik bir uygun derleyici indirebilirsiniz [ https://aka.ms/VCPython27 ](https://aka.ms/VCPython27). Daha fazla ayrıntı için ["vcvarsallbat bulmak alınamıyor", sorunlu ile nasıl](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) üzerinde Python araçları ekip blogu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

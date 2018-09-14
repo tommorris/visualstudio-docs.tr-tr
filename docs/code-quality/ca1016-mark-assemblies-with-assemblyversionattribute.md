@@ -14,16 +14,21 @@ ms.assetid: 4340aed8-d92b-4cde-a398-cb6963c6da5a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3080b5a45f61010f322ed183a8b5a7c23390de33
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3a6ccdc84a2db30aab2352d65bd716936cb522e6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897424"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547600"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleme
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
@@ -32,33 +37,37 @@ ms.locfileid: "31897424"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Derleme sürüm numarası yok.
 
-## <a name="rule-description"></a>Kural Tanımı
- Derleme kimliğini aşağıdaki bilgilerden oluşur:
+Derleme sürüm numarası yok.
 
--   Derleme adı
+## <a name="rule-description"></a>Kural açıklaması
 
--   Sürüm numarası
+Bir derlemenin kimliğini aşağıdaki bilgilerden oluşur:
 
--   Kültür
+- Derleme adı
 
--   Ortak anahtarı (kesin adlandırılmış derlemeler).
+- Sürüm numarası
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Sürüm numarasını bütünleştirilmiş benzersiz şekilde tanımlamak için ve kesin adlandırılmış derlemelerindeki bağlamak için kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır.
+- Kültür
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için bir sürüm numarası derlemeye kullanarak eklemek <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> özniteliği. Aşağıdaki örnekte bakın.
+- Ortak anahtarı (için kesin adlandırılmış bütünleştirilmiş kodları).
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural bir uyarıdan, üçüncü taraflar tarafından veya bir üretim ortamında kullanılan derlemeler için engelleme.
+[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Derlemeyi benzersiz tanımlamada ve türleri güçlü derlemelere bağlamak için sürüm numarasını kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır.
+
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için bir sürüm numarası derlemeye kullanarak Ekle <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> özniteliği. Aşağıdaki örnekte bakın.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Üçüncü taraflar tarafından veya bir üretim ortamında kullanılan derlemeler için bu kuraldan bir uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bir derlemeye gösterir <xref:System.Reflection.AssemblyVersionAttribute> özniteliği uygulanmıştır.
+ Aşağıdaki örnek, bir derlemeye gösterir <xref:System.Reflection.AssemblyVersionAttribute> özniteliği uygulandı.
 
  [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
  [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Derleme sürümü oluşturma](/dotnet/framework/app-domains/assembly-versioning) [nasıl yapılır: Yayımcı ilkesi oluşturma](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Bütünleştirilmiş Kod Sürümü Oluşturma](/dotnet/framework/app-domains/assembly-versioning)
+- [Nasıl yapılır: Yayımcı İlkesi Oluşturma](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

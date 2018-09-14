@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125008"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548211"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve React uygulaması oluşturma
 
@@ -312,9 +312,11 @@ Her zaman yaptığınız değişiklikleri *app.tsx*, Web komutu çalıştırman�
 
 ## <a name="run-the-app"></a>Uygulamayı çalıştırma
 
-1. Chrome geçerli hata ayıklama hedefi seçildiğinden emin olun.
+1. Chrome, geçerli hata ayıklama hedefi seçin.
 
     ![Chrome hata ayıklama hedefi olarak seçin](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    Chrome makinenizde kullanılabilir, ancak bir seçenek olarak görünmez, seçin **şununla Gözat** hata ayıklama hedef açılır liste ve select Chrome varsayılan tarayıcı hedefi olarak (seçin **varsayılan olarak ayarla**).
 
 1. Uygulamayı çalıştırmak için basın **F5** (**hata ayıklama** > **hata ayıklamayı Başlat**) veya yeşil ok düğmesi.
 
@@ -361,6 +363,8 @@ Her zaman yaptığınız değişiklikleri *app.tsx*, Web komutu çalıştırman�
 1. Bir kesme noktası ayarlayın ve Visual Studio'ya *uygulama bundle.js* kod `render()` işlev aşağıdaki çizimde gösterildiği gibi:
 
     ![Bir kesme noktası ayarlayın](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+
+    Bulunacak `render()` işlevi *uygulama bundle.js*, kullanın **Ctrl**+**F** (**Düzenle**  >   **Bul ve Değiştir** > **Hızlı Bul**).
 
 1. Visual Studio'da hata ayıklama hedefi olarak seçilen Chrome ile basın **Ctrl**+**F5** (**hata ayıklama** > **hata ayıklama olmadan Başlat** ) tarayıcı içinde uygulamayı çalıştırmak için.
 

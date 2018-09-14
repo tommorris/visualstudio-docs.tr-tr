@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959ce5c3e108aa9a1aa339d33b7bad8243adfb7c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcb0bfe07c9e9fb843ea6c7a0960b96cc09339b9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915014"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549462"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Tanımlayıcıların önekleri yanlış olmamalıdır
 |||
@@ -32,19 +32,19 @@ ms.locfileid: "31915014"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Tanımlayıcı hatalı bir ön ekine sahip.
+ Bir tanımlayıcı yanlış bir ön eki vardır.
 
-## <a name="rule-description"></a>Kural Tanımı
+## <a name="rule-description"></a>Kural açıklaması
  Kural gereği, programlama öğelerinin belirli bir önek ile başlayan adları vardır.
 
- Tür adları belirli bir önek yoksa ve bir 'C' önüne değil. Bu kural ihlalleri 'CMyClass' gibi tür adları için raporlar ve 'Önbellek' gibi tür adları ihlali bildirmiyor.
+ Tür adları, belirli bir önek yoksa ve bir 'C' ön eki olmamalıdır değil. Bu kural ihlalleri 'CMyClass' gibi tür adları için raporları ve 'Önbellek' gibi tür adları ihlallerini raporlamaz.
 
- Adlandırma kuralları hedefleyen ortak dil çalışma zamanı kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığa sahip olan kişi tarafından geliştirilmiştir müşteri güvenini artırır öğrenme eğrisini azaltır.
+ Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu tutarlılık, yeni yazılım kitaplıkları için gerekli ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Önek tanımlayıcıdan kaldırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="related-rules"></a>İlgili kuralları

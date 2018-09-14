@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9349321319b8bab81a2d9e7b52e7f2d25e87f796
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900069"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547559"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Uygun yerlerde olaylar kullanın
 |||
@@ -32,23 +32,23 @@ ms.locfileid: "31900069"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Bir ortak, korumalı veya özel yöntem adı aşağıdakilerden biri ile başlar:
+ Genel, korumalı veya özel yöntem adı aşağıdakilerden biri ile başlar:
 
--   Eklentisi
+- Eklenti fiyatı
 
--   RemoveOn
+- RemoveOn
 
--   Yangın
+- Ateş
 
--   Yükselt
+- artırma
 
-## <a name="rule-description"></a>Kural Tanımı
- Bu kural, normalde olaylar için kullanılan adlara sahip yöntemleri algılar. Olayları gözlemci veya yayımlama-abone olma tasarım deseni izler; Bunlar, bir nesne durum değişikliği diğer nesnelere iletilmelidir olduğunda kullanılır. Yanıt açıkça tanımlanmış durumu değişikliği için bir yöntem olarak adlandırılan, bir olay işleyici tarafından yöntemi çağrılmalıdır. Yöntemi direkt olarak çağırmak yerine olayları yükselterek çağıran nesneler.
+## <a name="rule-description"></a>Kural açıklaması
+ Bu kural, normalde olaylar için kullanılan adlara sahip yöntemleri algılar. Olayları gözlemci ya da Yayımla-abone ol tasarım desenini izler; Bunlar, bir nesnede bir durum değişikliği diğer nesnelere iletileceği olduğunda kullanılır. Yanıt olarak açıkça tanımlanmış bir durum değişikliği bir yöntem çağrıldığında, bir olay işleyicisi tarafından yöntemin çağrılması gerekir. Yöntemi direkt olarak çağırmak yerine olayları yükselterek çağıran nesneler.
 
- Burada bir düğmeye tıklanması gibi bir kullanıcı eylemi yürütmek için kod kesimi neden olan kullanıcı arabirimi uygulamalarda olayları ortak bazı örnekleri bulunamadı. [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Olay modeli için kullanıcı arabirimleri sınırlı değildir; bu gerekir iletişim durumu değiştirir. bir veya daha fazla nesneye her yerden kullanılmalıdır.
+ Olayların bazı genel örnekleri burada bir düğmeye tıklanması gibi bir kullanıcı eylemi yürütmek için kod kesiminin neden olan kullanıcı arabirimi uygulamalarında bulunur. [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Olay modeli için kullanıcı arabirimleri sınırlı değil; bunu her yerden, iletişim kurması gereken durumu değiştirir. bir veya daha fazla nesneye kullanılmalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bir nesnenin durumunu değiştirdiğinde yöntemi çağrıldıysa kullanmak için tasarım değiştirme düşünmelisiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] olay modeli.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bir nesnenin durumu değiştiğinde yöntemi çağrılırsa, kullanılacak tasarım değiştirme düşünmelisiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] olay modeli.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Yöntemi ile çalışmıyorsa bu kuraldan bir uyarı bastırma [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] olay modeli.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Yöntem ile çalışmazsa bu kuraldan bir uyarıyı bastırmak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] olay modeli.

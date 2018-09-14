@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995982"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549475"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -100,6 +100,8 @@ Daha fazla bilgi için [destekleyen Visual Studio için Python yükleme](install
 ## <a name="create-the-core-c-projects"></a>Çekirdek C++ projeleri oluşturma
 
 "Superfastcode" ve "superfastcode2" adlı iki özdeş C++ projeleri oluşturmak için bu bölümdeki yönergeleri izleyin. Daha sonra Python için C++ kodu kullanıma sunmak için her bir projede farklı yollardan kullanacaksınız.
+
+1. Emin `PYTHONHOME` ortam değişkeninin ayarlı Python yorumlayıcınıza kullanmak istiyorsunuz. Visual Studio'da C++ projeleri gibi dosyalarını bulmak için bu değişkeni güvenin *python.h*, bir Python uzantısı oluşturulurken kullanılır.
 
 1. Çözüme sağ **Çözüm Gezgini** seçip **Ekle** > **yeni proje**. Visual Studio çözümü (Visual Studio için Python kullanmanın avantajlarını biridir) hem Python hem de C++ projeleri birlikte içerebilir.
 
@@ -263,9 +265,9 @@ Python 2.7 ile çalışıyorsanız, başvuracak [genişletme Python 2.7 C veya C
 
 C++ Modülü aşağıdaki nedenlerden dolayı derleme başarısız:
 
-- Bulunamıyor *Python.h* (**E1696: kaynak dosyası "Python.h" açılamıyor** ve/veya **C1083: açık dosya içeremez: "Python.h": Böyle bir dosya veya dizin**): doğrulayın yolda **C/C++** > **genel** > **ek içerik dizinleri** Python proje özellikleri işaret yüklemenin *dahil* klasör. 6. adım altında bkz [core C++ projesi oluşturma](#create-the-core-c-project).
+- Bulunamıyor *Python.h* (**E1696: kaynak dosyası "Python.h" açılamıyor** ve/veya **C1083: açık dosya içeremez: "Python.h": Böyle bir dosya veya dizin**): doğrulayın yolda **C/C++** > **genel** > **ek içerik dizinleri** Python proje özellikleri işaret yüklemenin *dahil* klasör. 6. adım altında bkz [core C++ projesi oluşturma](#create-the-core-c-projects).
 
-- Python kitaplıkları bulunamıyor: doğrulayın yolunda **bağlayıcı** > **genel** > **ek kitaplık dizinleri** projedeki Python yüklemenizi ait özellikler noktalarına *libs* klasör. 6. adım altında bkz [core C++ projesi oluşturma](#create-the-core-c-project).
+- Python kitaplıkları bulunamıyor: doğrulayın yolunda **bağlayıcı** > **genel** > **ek kitaplık dizinleri** projedeki Python yüklemenizi ait özellikler noktalarına *libs* klasör. 6. adım altında bkz [core C++ projesi oluşturma](#create-the-core-c-projects).
 
 - Bağlayıcı hatalarla ilgili için hedef mimari: C++ hedefin proje mimarisi Python yüklemenizi eşleşmesi için değiştirin. Örneğin, C++ proje x64 hedeflediğiniz Python yüklemenizi x86 varsa x86 hedeflemek için C++ projesi değiştirin.
 
@@ -406,7 +408,7 @@ Python uzantıları aşağıdaki tabloda açıklandığı gibi oluşturmak için
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Neredeyse her C++ derleyicisi ile çalışır. | Kitaplık paketi büyük ve karmaşık; eski derleyicileri için çok sayıda geçici çözümler içerir. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Hiçbir derleme geniş kullanılabilirlik. | Erişim ve C yapıları hantal ve hataya diziyi. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Tek seferde birçok dil için bağlamaları oluşturur. | Python yalnızca hedef ise aşırı yükü. |
-| cffi | 2013 | [şifreleme](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Tümleştirme, PyPy uyumluluk kolaylığı. | Yeni, daha az olgun. |
+| cffi | 2013 | [şifreleme](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Tümleştirme, PyPy uyumluluk kolaylığı. | Yeni, daha az olgun. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

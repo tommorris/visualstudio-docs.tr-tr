@@ -14,16 +14,20 @@ ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e605cb0188ca72cb74905e34ee5196a07f748cd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29bd98677715a8772143ab448206f2a5ccddd763
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899970"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551640"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Genel olay işleyici örnekleri kullan
+
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
@@ -32,25 +36,25 @@ ms.locfileid: "31899970"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir türü void döndüren, iki parametre (bir nesneye ilk ve ikinci bir EventArgs için atanabilir tür) ve içeren derleme hedefleri, imza içeren bir temsilci içerir [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Void döndüren, imzası iki parametre (Birincisi nesne ve ikincisi Eventargs'a atanamaz türü) ve içeren derleme hedefleri içeren bir temsilci türü içeren [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
-## <a name="rule-description"></a>Kural Tanımı
- Önce [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]olay işleyicisine özel bilgi aktarmak için yeni bir temsilci öğesinden türetilmiş bir sınıf belirtilen bildirilmesi gerekiyordu <xref:System.EventArgs?displayProperty=fullName> sınıfı. Bu artık geçerlidir [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], hangi sunulan <xref:System.EventHandler%601?displayProperty=fullName> temsilci. Bu genel temsilcisi türetilmiş herhangi bir sınıf sağlar <xref:System.EventArgs> olay işleyicisi ile birlikte kullanılacak.
+## <a name="rule-description"></a>Kural açıklaması
+ Önce [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]olay işleyicisine özel bilgi geçirmek için yeni bir temsilci öğesinden türetilen bir sınıf belirtilen bildirilmesi gerekiyordu <xref:System.EventArgs?displayProperty=fullName> sınıfı. Bu artık geçerlidir [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], sunulan <xref:System.EventHandler%601?displayProperty=fullName> temsilci. Bu genel temsilcinin türetilen herhangi bir sınıf sağlar <xref:System.EventArgs> olay işleyicisi ile birlikte kullanılacak.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için temsilci kaldırın ve kullanımını kullanarak değiştirin <xref:System.EventHandler%601?displayProperty=fullName> temsilci. Temsilci tarafından otomatik olarak ise [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] derleyicisi kullanmak için olay bildirimi sözdizimi değiştirmek <xref:System.EventHandler%601?displayProperty=fullName> temsilci.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için temsilci kaldırın ve kullanımını koyacağınız <xref:System.EventHandler%601?displayProperty=fullName> temsilci. Temsilci tarafından otomatik olarak oluşturulan ise [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] derleyici, olay bildirimi, kullanılacak söz dizimi değiştirilebilir <xref:System.EventHandler%601?displayProperty=fullName> temsilci.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek kuralını ihlal eden bir temsilci gösterir. İçinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] örnek, Yorumlar kural karşılamak için örnek değiştirme açıklanmaktadır. C# örnek için değiştirilen kodunu gösteren bir örnek izler.
+ Aşağıdaki örnek, kuralını ihlal eden bir temsilci gösterir. İçinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] örnek, Yorumlar kural karşılamak için örnek değiştirmek nasıl açıklanmaktadır. C# örnek için değiştirilen kodunu gösteren bir örnek izler.
 
  [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek kural karşılayan ve kullanımını değiştirir önceki örnek temsilci bildirimi kaldırır `ClassThatRaisesEvent` ve `ClassThatHandlesEvent` kullanarak yöntemleri <xref:System.EventHandler%601?displayProperty=fullName> temsilci.
+ Aşağıdaki örnek, önceki örnekte, kural karşılar ve kullanımını değiştirir temsilci bildirimi kaldırır. `ClassThatRaisesEvent` ve `ClassThatHandlesEvent` yöntemleri kullanarak <xref:System.EventHandler%601?displayProperty=fullName> temsilci.
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
@@ -69,5 +73,6 @@ ms.locfileid: "31899970"
 
  [CA1007: Uygun yerlerde genel türler kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Genel Türler](/dotnet/csharp/programming-guide/generics/index)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Genel Türler](/dotnet/csharp/programming-guide/generics/index)

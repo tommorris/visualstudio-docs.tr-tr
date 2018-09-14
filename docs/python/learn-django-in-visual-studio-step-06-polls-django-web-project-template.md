@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281071"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548237"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6. adım: yoklamalar Django Web projesi şablonu kullanın.
 
@@ -118,7 +118,7 @@ Seçim bir yoklama ilişkili `poll` alan, bir açıklama içeriyor `text`ve bu s
 
 Alan türlerinin tam listesi `CharField` (sınırlı metin) `TextField` (sınırsız metin), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey`, ve `ManyToMany`. Her alan, gibi bazı özniteliklerini alır. `max_length`. `blank=True` Özniteliği anlamına gelir Bu alan isteğe bağlıdır; olur `null=true` değeri isteğe bağlı olduğu anlamına gelir. Ayrıca bir `choices` veri gösterimini/değer tanımlama grubu, bir dizideki değerleri sınırlar özniteliği. (Bkz [Model alanı referansı](https://docs.djangoproject.com/en/2.0/ref/models/fields/) Django belgelerinde.)
 
-Tam olarak ne inceleyerek veritabanında depolanır onaylayabilirsiniz *db.sqlite3* gibi bir araç kullanarak proje dosyasında [SQLite tarayıcı](http://sqlitebrowser.org/). Veritabanında yabancı anahtar alanı gibi sağladığı bkz `poll` seçenek model olarak depolanan `poll_id`; Django işler eşlemeyi otomatik olarak.
+Tam olarak ne inceleyerek veritabanında depolanır onaylayabilirsiniz *db.sqlite3* gibi bir araç kullanarak proje dosyasında [SQLite tarayıcı](https://sqlitebrowser.org/). Veritabanında yabancı anahtar alanı gibi sağladığı bkz `poll` seçenek model olarak depolanan `poll_id`; Django işler eşlemeyi otomatik olarak.
 
 Genel olarak, Django veritabanınızda çalışmak Django sizin adınıza temel alınan veritabanı yönetebilmeniz için özel olarak modelleriyle çalışma anlamına gelir.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Etkisini görmek için hiçbir anketler, ilk görmek için uygulamayı çalıştırma henüz mevcut. Ardından "/ üretim" URL'sini ziyaret edin ve uygulama giriş sayfasına geri döndüğünde yoklamalar kullanılabilir duruma gelmiş görmeniz gerekir. Yeniden ham inceleyin rahatça *db.sqlite3* dosyası gibi bir araçla [SQLite tarayıcı](http://sqlitebrowser.org/).
+Etkisini görmek için hiçbir anketler, ilk görmek için uygulamayı çalıştırma henüz mevcut. Ardından "/ üretim" URL'sini ziyaret edin ve uygulama giriş sayfasına geri döndüğünde yoklamalar kullanılabilir duruma gelmiş görmeniz gerekir. Yeniden ham inceleyin rahatça *db.sqlite3* dosyası gibi bir araçla [SQLite tarayıcı](https://sqlitebrowser.org/).
 
 ![Kapsanan veritabanı içeren yoklamalar Django Web projesi uygulama](media/django/step06-app-with-seeded-database.png)
 

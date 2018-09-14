@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93cc4b36372d1e5ef6c81f16dc74285c336d08cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 297f6025cb8ea24ad333f9e6962d8659e78eb8d2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914581"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551881"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Yalnızca FlagsAttribute numaralandırmalarında çoğul adlar olmalıdır
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31914581"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Dışarıdan görünür numaralandırma adını çoğul Word'de sona erer ve numaralandırma ile işaretli olmayan <xref:System.FlagsAttribute?displayProperty=fullName> özniteliği.
+ Dışarıdan görünen bir sabit listesi adı çoğul Word'de sona erer ve numaralandırma ile işaretlenmemiş <xref:System.FlagsAttribute?displayProperty=fullName> özniteliği.
 
-## <a name="rule-description"></a>Kural Tanımı
- Adlandırma kuralları numaralandırması için çoğul ad numaralandırma birden fazla değer aynı anda belirtilebilir gösterir dikte. <xref:System.FlagsAttribute> Derleyicileri numaralandırma numaralandırma üzerinde bit düzeyinde işlemler sağlar bir bit alan olarak değerlendirilmesi gerektiğini bildirir.
+## <a name="rule-description"></a>Kural açıklaması
+ Adlandırma kuralları numaralandırma için adlandırma aynı anda birden fazla numaralandırma değeri belirtilebilir gösterir. <xref:System.FlagsAttribute> Derleyiciler sabit numaralandırma üzerinde bit düzeyinde işlemler sağlayan bir bit alanı olarak değerlendirilmesi gerektiğini söyler.
 
- Yalnızca aynı anda tek bir numaralandırma değeri belirtilebilir, numaralandırma adını tekil bir sözcük olmalıdır. Örneğin, haftanın günleri tanımlayan numaralandırma bir uygulamada kullanmak için birden fazla gün belirtebileceğiniz ayarlanmış olabilir. Bu numaralandırma olmalıdır <xref:System.FlagsAttribute> ve 'Gün' çağrılabilir. Belirtilmesi yalnızca tek bir günde imkan tanıyan benzer bir numaralandırma öznitelik sahip değil ve olabilir 'Day' çağrılır.
+ Bir kerede tek bir numaralandırma değeri belirtilebilir yalnızca, sabit listesi adı tekil bir sözcük olmalıdır. Örneğin, Haftanın günlerinin ingilizceleridir tanımlayan bir numaralandırma kullanılmak üzere bir uygulama birden çok gün belirleyebileceğiniz ayarlanmış olabilir. Bu numaralandırma olmalıdır <xref:System.FlagsAttribute> ve 'Gün' çağrılabilir. Belirtilecek yalnızca tek bir günde izin veren benzer bir sabit listesi özniteliğine sahip değil ve olabilir 'Day' denir.
 
- Adlandırma kuralları hedefleyen ortak dil çalışma zamanı kitaplıkları için genel bir bakış sağlar. Bu yeni bir yazılım kitaplığı öğrenmek için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığa sahip olan kişi tarafından geliştirilmiştir müşteri güvenini artırır süreyi azaltır.
+ Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni bir yazılım kitaplığı öğrenmek için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır süreyi azaltır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Ekleyin veya numaralandırma adını tekil bir sözcük olun <xref:System.FlagsAttribute>.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Sabit listesi adı tekil bir sözcük yapın veya ekleme <xref:System.FlagsAttribute>.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Adı bir tekil Word'de biterse bir kuraldan gizlemek güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Tekil bir sözcük adı sona ererse kuraldan bir uyarıyı bastırmak güvenlidir.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1714: Bayrak numaralandırmalarında çoğul adlar olmalıdır](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
@@ -54,5 +54,7 @@ ms.locfileid: "31914581"
 
  [CA2217: Numaralandırmaları FlagsAttribute ile işaretlemeyin](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
- <xref:System.FlagsAttribute?displayProperty=fullName> [Enum tasarım](/dotnet/standard/design-guidelines/enum)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- <xref:System.FlagsAttribute?displayProperty=fullName>
+- [Sabit Listesi Tasarımı](/dotnet/standard/design-guidelines/enum)

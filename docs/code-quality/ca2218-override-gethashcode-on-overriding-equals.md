@@ -16,61 +16,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ad4417551d45c55c3ea194e4b3b3f28ed04af96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dda8fd453ae36e11a4d8f20780caf60bf3c915f0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922752"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547795"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode'u Eşittir'i geçersiz kılarak geçersiz kılın
+
 |||
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
 |Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Ortak tür geçersiz kılmaları <xref:System.Object.Equals%2A?displayProperty=fullName> ancak geçersiz <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+ Geçersiz kılma genel bir türü <xref:System.Object.Equals%2A?displayProperty=fullName> ancak geçersiz <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
 
-## <a name="rule-description"></a>Kural Tanımı
- <xref:System.Object.GetHashCode%2A> karma algoritmaları ve veri yapıları gibi bir karma tablosu için uygun geçerli örnek, temel bir değer döndürür. Aynı türde olan ve eşit olan iki nesne türlerinden birini örnekleri düzgün çalışmasını sağlamak için aynı karma koda döndürmesi gerekir:
+## <a name="rule-description"></a>Kural açıklaması
+ <xref:System.Object.GetHashCode%2A> karma algoritmalar ve karma tablo gibi veri yapıları için uygun olan geçerli örneği temel alarak bir değeri döndürür. Aynı türdeki ve eşit olan iki nesne türlerinden birini örnekleri doğru şekilde çalıştığından emin olmak için aynı karma kodu döndürmesi gerekir:
 
--   <xref:System.Collections.Hashtable?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
--   Uygulama türleri <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Uygulayan türler <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için uygulama sağlayın <xref:System.Object.GetHashCode%2A>. Aynı türde nesneleri çifti için uygulama aynı değeri döndürdüğünü emin olmalısınız uygulamanıza <xref:System.Object.Equals%2A> döndürür `true` çifti için.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için bir uygulamasını sağlamak <xref:System.Object.GetHashCode%2A>. Nesnelerin aynı türden bir çift uygulama aynı değeri döndürdüğünü emin olmalısınız uygulamanıza <xref:System.Object.Equals%2A> döndürür `true` çifti için.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="class-example"></a>Sınıf örneği
 
 ### <a name="description"></a>Açıklama
- Aşağıdaki örnek, bu kural ihlal eden bir sınıfı (başvuru türü) gösterir.
+ Aşağıdaki örnek bu kuralı ihlal eden bir sınıf (başvuru türü) gösterir.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
 
 ### <a name="comments"></a>Açıklamalar
- Aşağıdaki örnek, geçersiz kılarak ihlali giderir <xref:System.Object.GetHashCode>.
+ Aşağıdaki örnek, geçersiz kılarak ihlali düzeltmeleri <xref:System.Object.GetHashCode>.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_2.cs)]
@@ -78,13 +79,13 @@ ms.locfileid: "31922752"
 ## <a name="structure-example"></a>Yapısı örneği
 
 ### <a name="description"></a>Açıklama
- Aşağıdaki örnek, bu kural ihlal eden bir yapı (değer türü) gösterir.
+ Aşağıdaki örnek bu kuralı ihlal eden bir yapı (değer türü) gösterir.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
 
 ### <a name="comments"></a>Açıklamalar
- Aşağıdaki örnek, geçersiz kılarak ihlali giderir <xref:System.Object.GetHashCode>.
+ Aşağıdaki örnek, geçersiz kılarak ihlali düzeltmeleri <xref:System.Object.GetHashCode>.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]
@@ -100,5 +101,9 @@ ms.locfileid: "31922752"
 
  [CA2231: ValueType.Equals değerini geçersiz kılmada eşittir işlecini aşırı yükle](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
- <xref:System.Object.Equals%2A?displayProperty=fullName> <xref:System.Object.GetHashCode%2A?displayProperty=fullName> <xref:System.Collections.Hashtable?displayProperty=fullName> [Eşitlik işleçleri](/dotnet/standard/design-guidelines/equality-operators)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
+- [Eşitlik İşleçleri](/dotnet/standard/design-guidelines/equality-operators)

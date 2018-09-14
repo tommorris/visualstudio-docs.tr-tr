@@ -16,35 +16,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d67c99a9c2b30461170b7e8b5090e0c08241ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917875"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551291"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Sonlandırıcılar korunmalıdır
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
 |Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Ortak tür ailesi (korumalı) erişim belirtmeyen bir sonlandırıcı uygular.
+ Bir genel tür ailesi (korumalı) erişim belirtmeyen bir sonlandırıcıyı uygular.
 
-## <a name="rule-description"></a>Kural Tanımı
+## <a name="rule-description"></a>Kural açıklaması
  Sonlandırıcılar aile erişim değiştiricisi kullanmalıdır. Bu kural, C#, Visual Basic ve Visual C++ Derleyicileri tarafından zorlanır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için aile erişilebilir olmasını sonlandırıcıyı değiştirin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için Sonlandırıcı ailesi erişilebilir olacak şekilde değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Bu kural, tüm üst düzey bir .NET dilinde ihlal olamaz; Microsoft Ara dile yazıyorsanız ihlal.
+ Bu kural, tüm üst düzey bir .NET dilinde ihlal olamaz; Microsoft Ara dili yazıyorsanız ihlal.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -79,5 +80,6 @@ ms.locfileid: "31917875"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Dispose Deseni](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Dispose Deseni](/dotnet/standard/design-guidelines/dispose-pattern)

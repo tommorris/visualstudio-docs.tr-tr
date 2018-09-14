@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281734"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552103"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtme
 Ayrıca bir sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası, kaynak kodu sınıfları, yöntemleri ve diğer tanımlayıcıları projenizin derlenen yürütülebilir kullanılan kodu için içinde oluşturduğunuz eşleştirir. .Pdb dosyası, kaynak kodundaki deyimleri yürütülebilir dosyalardaki yürütme yönergeleriyle de eşleştirir. Hata ayıklayıcı iki temel bilgi parçasını belirlemek için bu bilgileri kullanır:
@@ -215,7 +215,7 @@ Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek 
 4.  Modülün .pdb dosyasının kaynak bilgisi. Bu, modül oluşturulduğunda kaynak dosyanın konumu olabileceği gibi, bir kaynak sunucuya ilişkin komut da olabilir.  
   
 ###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Bilip yüklemenize Source/No sembol yüklenmedi sayfalarıyla kaynak dosyaları  
- Hata ayıklayıcı kaynak dosyasının olmadığı yerde yürütmeyi keserse, görüntüler **yüklü kaynak yok** veya **yüklü sembol yok** yardımcı olabilecek sayfaları kaynak dosyasını bulmaya. **Yüklü sembol yok** hata ayıklayıcı, arama işlemini tamamlamak üzere yürütülebilir dosya için bir simge (.pdb) dosyası bulamadığında görünür. Sembol Yok sayfası dosyayı aramak için seçenekler sağlar. Seçeneklerden birini çalıştırdıktan sonra .pdb bulunursa ve hata ayıklayıcı semboller dosyasındaki bilgileri kullanarak kaynak dosyayı alırsa, kaynak görüntülenir. Aksi takdirde, bir **yüklü kaynak yok** sorunu açıklayan sayfası görüntülenir. Sayfa, sorunu giderebilecek eylemleri gerçekleştirebilen seçenek bağlantıları görüntüler.  
+ Hata ayıklayıcı kaynak dosyasının olmadığı yerde yürütmeyi keserse, görüntüler **yüklü kaynak yok** veya **yüklü sembol yok** yardımcı olabilecek sayfaları kaynak dosyasını bulmaya. **Yüklü sembol yok** hata ayıklayıcı, arama işlemini tamamlamak üzere yürütülebilir dosya için bir simge (.pdb) dosyası bulamadığında görünür. Sembol Yok sayfası dosyayı aramak için seçenekler sağlar. Seçeneklerden birini yürütün ve hata ayıklayıcı semboller dosyasındaki bilgileri kullanarak kaynak dosyayı alabilir sonra .pdb bulunursa, kaynak görüntülenir. Aksi takdirde, bir **yüklü kaynak yok** sorunu açıklayan sayfası görüntülenir. Sayfa, sorunu giderebilecek eylemleri gerçekleştirebilen seçenek bağlantıları görüntüler.  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Kaynak dosyası arama yollarını çözüme ekleme  
  Kaynak dosyalarını aramak için ağ veya yerel dizin belirtebilirsiniz.  

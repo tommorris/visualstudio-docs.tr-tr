@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bd52efc61baa2dbdb6d458e87e663233ddd27a79
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996057"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548977"
 ---
 # <a name="install-python-interpreters"></a>Python yorumlayıcılarını yükleme
 
@@ -34,10 +34,10 @@ Visual Studio gösterir bilinen tüm ortamlarda [ **Python ortamları** ](managi
 
 | Yorumlayıcı | Açıklama |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Yerel" ve en yaygın olarak kullanılan Yorumlayıcı, 32-bit ve 64-bit sürümleri (32-bit önerilir) kullanılabilir. En son dil özellikleri, en yüksek Python paket uyumluluğu, tam hata ayıklama desteği ve birlikte çalışma içerir [Ipython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](http://wiki.python.org/moin/Python2orPython3). Visual Studio 2015 veya önceki Python 3.6 + desteklemez ve hatalar gibi verebilirsiniz Not **desteklenmeyen python 3.6 sürümünü**. Python 3.5 veya daha önceki kullanmak yerine. |
+| [CPython](https://www.python.org/) | "Yerel" ve en yaygın olarak kullanılan Yorumlayıcı, 32-bit ve 64-bit sürümleri (32-bit önerilir) kullanılabilir. En son dil özellikleri, en yüksek Python paket uyumluluğu, tam hata ayıklama desteği ve birlikte çalışma içerir [Ipython](http://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](https://wiki,python.org/moin/Python2orPython3). Visual Studio 2015 veya önceki Python 3.6 + desteklemez ve hatalar gibi verebilirsiniz Not **desteklenmeyen python 3.6 sürümünü**. Python 3.5 veya daha önceki kullanmak yerine. |
 | [V Ironpythonu](https://github.com/IronLanguages/ironpython2) | Bir .NET uygulaması sağlama C# /F #/ Visual Basic birlikte çalışabilirliği, Python, 32-bit ve 64 bit sürümlerde kullanılabilir olan erişim .NET API'leri, standart Python hata ayıklama (ancak değil C++ karışık mod hata ayıklama için) ve karma IronPython / C# hata ayıklama. Ancak, IronPython, sanal ortamları desteklemez. |
 | [Anaconda](https://www.continuum.io) | Bir açık veri bilimi platformu Python tarafından desteklenen ve CPython ve zor yükleme paketlerinin en son sürümünü içerir. Aksi takdirde karar veremez, öneririz. |
-| [PyPy](http://www.pypy.org/) | Yüksek performans izleme JIT uzun süre çalışan programlar ve performans tanımlamak burada durumlar için iyi bir Python uygulamasıdır verir ancak diğer çözümleri bulunamıyor. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |
+| [PyPy](https://www.pypy.org/) | Yüksek performans izleme JIT uzun süre çalışan programlar ve performans tanımlamak burada durumlar için iyi bir Python uygulamasıdır verir ancak diğer çözümleri bulunamıyor. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |
 | [Jython](http://www.jython.org/) | Java sanal makine'üzerinde (JVM) Python uygulaması. Benzer şekilde, IronPython, Jython içinde çalışan kod Java sınıfları ve kitaplıkları ile etkileşim kurabilir, ancak birçok kitaplıkları CPython için hedeflenen kullanmanız mümkün olmayabilir. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |
 
 Algılama Python ortamları için yeni form sağlamak isteyen geliştiriciler [PTVS Ortam Algılama](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com).

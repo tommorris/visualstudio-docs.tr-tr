@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5cda66d2a43ee3fde8e3e7b2d22a64a09655da3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 358910be4245c5c00541a7a4f686226b6250e902
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897149"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545706"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Dizeleri büyük harfe normalleştirin
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31897149"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Bir işlem, bir dizeyi küçük harfli normalleştirir.
+ Bir işlem, bir dizeyi küçük harfe normalleştirir.
 
-## <a name="rule-description"></a>Kural Tanımı
- Dizeler büyük harfe normalleştirilmeli. Küçük harfe, gidiş dönüş yapamazsınız karakterleri, küçük bir grubudur. Gidiş dönüş yapmaya karakterlerini bir yerel ayarını karakter verileri farklı temsil eden başka bir yerel ayar ve ardından için doğru şekilde dönüştürmek için anlamına gelir özgün karakterlerin dönüştürülen karakterlerinden alın.
+## <a name="rule-description"></a>Kural açıklaması
+ Dizeler büyük harfe normalleştirilmeli. Küçük bir grup karakterlerin küçük harfe dönüştürülür, gidiş dönüş yapamaz. Gidiş dönüş yapmak dönüştürülmüş karakterlerinden özgün karakterler karakterleri bir yerel ayardan farklı karakter verileri temsil eden başka bir yerel ayar ve ardından için doğru bir şekilde dönüştürmek için yol alın.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Değiştirme dizelerini küçük harfe dönüştürmek ve böylece bu dizeler dönüştürülür işlemleri bunun yerine büyük harfe. Örneğin, değiştirme `String.ToLower(CultureInfo.InvariantCulture)` için `String.ToUpper(CultureInfo.InvariantCulture)`.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Değiştirme dizelerini küçük harfe dönüştürmek ve böylece dizeleri dönüştürülür işlemleri yerine büyük. Örneğin, değiştirme `String.ToLower(CultureInfo.InvariantCulture)` için `String.ToUpper(CultureInfo.InvariantCulture)`.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Sonuç (örneğin, kullanıcı Arabiriminde görüntülenirken) bağlı güvenlik kararı vermeden değil olduğunda bir uyarı iletisi bastırmak güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ (Örneğin, kullanıcı Arabiriminde görüntülemekte olduğunuz) sonucuna dayalı güvenlik kararı yaparken değil, bir uyarı iletisi bastırmak güvenlidir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Genelleştirme Uyarıları](../code-quality/globalization-warnings.md)

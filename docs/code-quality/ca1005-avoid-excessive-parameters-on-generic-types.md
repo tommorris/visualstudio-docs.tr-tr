@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302ecdfaf4c621f0a9a34b0a5cba79ff652990a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8b13441c279254525c4ffd892e60ae2b018e39ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898044"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547709"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Genel türlerde aşırı parametrelerden kaçının
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31898044"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Dışarıdan görünür bir genel tür ikiden fazla tür parametresi var.
+ Dışarıdan görünen bir genel tür, ikiden fazla tür parametresine sahip.
 
-## <a name="rule-description"></a>Kural Tanımı
- Daha çok tip parametresi, genel tip içerir, bilmek daha zordur ve hangi tip parametrelerinin temsil ettiğini anımsamak zordur. Giriş olarak bir tür parametresi ile genellikle belirgin `List<T>`ve bazı durumlarda da olarak iki tür parametreleri ile `Dictionary<TKey, TValue>`. İkiden fazla tür parametreleri varsa zorluk çoğu kullanıcı için çok büyük olur (örneğin, `TooManyTypeParameters<T, K, V>` C# veya `TooManyTypeParameters(Of T, K, V)` içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+## <a name="rule-description"></a>Kural açıklaması
+ Daha çok tip parametresi, genel tip içerir, bilmek daha zordur ve hangi tip parametrelerinin temsil ettiğini anımsamak zordur. Bu genellikle görüldüğü tek tip parametre ile açıktır `List<T>`ve bazı durumlarda görüldüğü gibi iki tip parametre ile `Dictionary<TKey, TValue>`. İkiden fazla tür parametreleri varsa zorluk çoğu kullanıcı için çok büyük hale gelir (örneğin, `TooManyTypeParameters<T, K, V>` C# veya `TooManyTypeParameters(Of T, K, V)` içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için ikiden fazla tür parametreleri kullanmak için tasarımı değiştirin.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için ikiden fazla tür parametreleri kullanmak bir tasarım değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Tasarım kesinlikle ikiden fazla tür parametreleri gerektirmedikçe bu kuraldan bir uyarı bastırma değil. Genel türler anlamak ve kullanmak kolay bir sözdiziminde sağlama öğrenmek için gerekli olan ve yeni kitaplıklar benimseme oranı artırır süreyi azaltır.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Tasarım kesinlikle ikiden fazla tür parametreleri gerektirmediği sürece bu kuraldan bir uyarıyı bastırmayın. Genel türler anlaşılması ve kullanımı kolay bir sözdizimindeki sağlama öğrenmek için gerekli olan ve yeni kitaplıkları benimseme oranını artırır süreyi azaltır.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1010: Koleksiyonlar genel arabirim uygulamalıdır](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -58,5 +58,5 @@ ms.locfileid: "31898044"
 
  [CA1007: Uygun yerlerde genel türler kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Genel Türler](/dotnet/csharp/programming-guide/generics/index)

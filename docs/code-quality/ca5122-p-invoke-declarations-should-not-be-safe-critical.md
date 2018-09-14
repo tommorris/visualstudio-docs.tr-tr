@@ -1,5 +1,5 @@
 ---
-title: CA5122 P-Invoke bildirimleri güvenli olmamalıdır kritik
+title: CA5122 P-Invoke bildirimleri güvenli kritik olmamalıdır
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e73af173dd7e82a139c204051c72480a50e38fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 371f027782c4cf598bb234107e94aaea2bc896fc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920763"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549848"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke bildirimleri güvenli kritik olmamalıdır
 |||
@@ -41,12 +41,12 @@ public class C
 
 ```
 
- Bu örnekte, `C.Beep(...)` güvenlik güvenli kritik yöntemi olarak işaretlendi.
+ Bu örnekte, `C.Beep(...)` güvenlik bir güvenli kritik yöntem işaretlenmiştir.
 
-## <a name="rule-description"></a>Kural Tanımı
+## <a name="rule-description"></a>Kural açıklaması
  Güvenlik duyarlı işlem gerçekleştirildiğinde yöntemler SecuritySafeCritical olarak işaretlenir ancak saydam mod kullanılarak da güvenli olur. Güvenlik saydamlık modelinin temel kurallarından biri saydam kod P/Invoke aracılığıyla yerel koda hiçbir zaman doğrudan çağırmaz. Bu nedenle, P/Invoke güvenlik güvenli kritik olarak işaretleme çağırmak için saydam kodu etkinleştirmez ve güvenlik çözümlemesi için yanıltıcıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  P/Invoke saydam kodu kullanılabilir yapmak için güvenlik güvenli kritik sarmalayıcı yöntemini kullanır:
 
 ```csharp
@@ -67,5 +67,5 @@ class C
 
 ```
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.

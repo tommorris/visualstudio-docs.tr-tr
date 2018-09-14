@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008440"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552090"
 ---
 # <a name="debug-python-and-c-together"></a>Python ve C++ birlikte hata ayıklama
 
@@ -104,7 +104,7 @@ Herhangi bir çağrı çerçevesi çift etkin hale getirir ve uygun kaynak kodu,
 
 ### <a name="step-between-python-and-native-code"></a>Python ve yerel kod arasında adımla
 
-Kullanırken **içine adımla** (**F11**) veya **Step Out** (**Shift**+**F11**) komutları karışık mod hata ayıklayıcı kod türü arasındaki değişiklikleri doğru olarak işler. Python C'de uygulandığı bir türün bir yöntemi çağırdığında, örneğin, bir çağrıda yöntemi yerel işlev yöntemi uygulama başlangıcında durdurur Adımlama. Benzer şekilde, ne zaman yerel kod çağrılmakta olan Python kodunda sonuçlanan bazı Python API işlevi çağırır. Örneğin, içine Adımlama bir `PyObject_CallObject` Python'da tanımlanmış bir işlevi değer Python işlevin başında durur. Python'dan yerel Adımlama de desteklenir python'dan çağrılan yerel işlevler için [ctypes](http://docs.python.org/3/library/ctypes.html).
+Kullanırken **içine adımla** (**F11**) veya **Step Out** (**Shift**+**F11**) komutları karışık mod hata ayıklayıcı kod türü arasındaki değişiklikleri doğru olarak işler. Python C'de uygulandığı bir türün bir yöntemi çağırdığında, örneğin, bir çağrıda yöntemi yerel işlev yöntemi uygulama başlangıcında durdurur Adımlama. Benzer şekilde, ne zaman yerel kod çağrılmakta olan Python kodunda sonuçlanan bazı Python API işlevi çağırır. Örneğin, içine Adımlama bir `PyObject_CallObject` Python'da tanımlanmış bir işlevi değer Python işlevin başında durur. Python'dan yerel Adımlama de desteklenir python'dan çağrılan yerel işlevler için [ctypes](https://docs.python.org/3/library/ctypes.html).
 
 ### <a name="pyobject-values-view-in-native-code"></a>Yerel kodda PyObject değerlerini görüntüleme
 
@@ -137,7 +137,7 @@ C türleri gösteren **[Python Görünüm]** (etkinse) düğümleri:
 
 Python 2.x, ancak her nesne türü, genellikle üstbilgisi satır içi alanlar koleksiyonu olarak bildirir ve özel yazılan türler arasında ilişkilendirme yok ve `PyObject` tür sistem düzeyinde C/C++ kod. Etkinleştirmek için **[Python Görünüm]** upravit uzly gibi özel türler için *PythonDkm.natvis* dosyası [Python araçları yükleme dizininin](installing-python-support-in-visual-studio.md#install-locations)ve XML için başka bir öğe ekleyin struct C veya C++ sınıfı.
 
-Bir alternatif (ve daha iyi) seçeneği izlemektir [CESARETLENDİRİCİ 3123](http://www.python.org/dev/peps/pep-3123/) ve açık bir `PyObject ob_base;` alan yerine `PyObject_HEAD`, ancak bu her zaman geriye dönük uyumluluk açısından mümkün olmayabilir.
+Bir alternatif (ve daha iyi) seçeneği izlemektir [CESARETLENDİRİCİ 3123](https://www.python.org/dev/peps/pep-3123/) ve açık bir `PyObject ob_base;` alan yerine `PyObject_HEAD`, ancak bu her zaman geriye dönük uyumluluk açısından mümkün olmayabilir.
 
 ### <a name="native-values-view-in-python-code"></a>Python kodu yerel değerleri görünümü
 

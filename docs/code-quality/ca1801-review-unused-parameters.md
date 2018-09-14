@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 142ed6bca0513022b8edd1a062c443aa50d08191
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 708d2175afe8d1b0e6bec7c7ec419eac1ee4821f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918627"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551970"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Kullanılmayan parametreleri gözden geçir
 |||
@@ -30,36 +30,36 @@ ms.locfileid: "31918627"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Üye yaptığınız değişiklikler bakılmaksızın derleme dışına görünür değilse olmayan sonu -.<br /><br /> Üye parametre kendi gövdesi içinde kullanmak üzere değiştirirseniz olmayan sonu -.<br /><br /> -Parametresini kaldırın ve derleme dışında görünür ise kesiliyor.|
+|Yeni Değişiklik|Üyesi yaptığınız değişiklikler ne olursa olsun derlemenin dışında görünür değilse olmayan son -.<br /><br /> Üye kendi gövdesi içindeki bir parametre kullanmak için değiştirmeniz halinde olmayan en son -.<br /><br /> -Parametresini kaldırın ve derlemenin dışında görünür olup olmadığını kesiliyor.|
 
 ## <a name="cause"></a>Sebep
- Yöntem imzası, yöntemin gövdesinde kullanılmayan bir parametre içerir. Bu kural, aşağıdaki yöntemlerden inceleyin değil:
+ Yöntem imzası, yöntemin gövdesinde kullanılmayan bir parametre içerir. Bu kural, aşağıdaki yöntemlerden incelemez:
 
--   Temsilci tarafından başvurulan yöntemleri.
+- Temsilci tarafından başvurulan yöntemleri.
 
--   Olay işleyicileri olarak kullanılan yöntemleri.
+- Olay işleyicileri kullanılan yöntemleri.
 
--   Yöntemleri bildirilen ile `abstract` (`MustOverride` Visual Basic'te) değiştiricisi.
+- Yöntemleri ile bildirilmiş `abstract` (`MustOverride` Visual Basic) değiştirici.
 
--   Yöntemleri bildirilen ile `virtual` (`Overridable` Visual Basic'te) değiştiricisi.
+- Yöntemleri ile bildirilmiş `virtual` (`Overridable` Visual Basic) değiştirici.
 
--   Yöntemleri bildirilen ile `override` (`Overrides` Visual Basic'te) değiştiricisi.
+- Yöntemleri ile bildirilmiş `override` (`Overrides` Visual Basic) değiştirici.
 
--   Yöntemleri bildirilen ile `extern` (`Declare` Visual Basic'de deyimini) değiştiricisi.
+- Yöntemleri ile bildirilmiş `extern` (`Declare` deyimi Visual Basic) değiştirici.
 
-## <a name="rule-description"></a>Kural Tanımı
- Yöntem gövdesinde hiçbir doğruluk bunlara erişmek için hatayı çözebilirsiniz olduğundan emin olmak için kullanılmayan sanal olmayan yöntemler parametreleri gözden geçirin. Kullanılmayan parametreleri Bakım ve performans maliyetler doğurur.
+## <a name="rule-description"></a>Kural açıklaması
+ Parametreleri onlara erişmek için hata doğruluk hiçbir olduğundan emin olmak için yöntemin gövdesinde kullanılmayan sanal olmayan yöntemlerde gözden geçirin. Kullanılmayan parametreler Bakım ve performans ücret yansıtılmaz.
 
- Bazı durumlarda bu kuralı ihlal yöntemin bir uygulaması hata işaret edebilir. Örneğin, parametre yöntemi gövdesinde kullanılmış. Geriye dönük uyumluluk nedeniyle bulunmasını parametresi varsa, bu kural için uyarıları gizler.
+ Bazen bu kuralın ihlalini yöntemi bir uygulama hatasını işaret edebilir. Örneğin, bir parametre yöntemin gövdesinde kullanılmış. Parametre geriye dönük uyumluluk nedeniyle zorundaysa bu kuralın uyarılarını gizle.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için kullanılmayan parametresini (önemli bir değişiklik) kaldırın veya yöntem gövdesi (bölünemez değiştirin) parametresini kullanın.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için kullanılmayan (önemli bir değişiklik) parametreyi kaldırın veya yöntem gövdesi (bir hataya neden olmayan değişiklik) parametresini kullanın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bir düzeltme önemli bir değişiklik olacak önceden sevk edilen kodu için bu kuraldan gizlemek güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Daha önce sevk edilen kod düzeltme bir değişiklik olur için bu kuraldan bir uyarıyı bastırmak güvenlidir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnekte, iki yöntem gösterilmektedir. Bir yöntem kuralını ihlal ediyor ve başka bir yöntem kuralı karşılar.
+ Aşağıdaki örnek, iki yöntem gösterir. Bir yöntem kuralı ihlal etmektedir ve kural başka bir yöntem karşılar.
 
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 

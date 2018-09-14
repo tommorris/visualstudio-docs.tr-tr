@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab1900cf9eda3fccf7606a6a645ace986bcd21d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9c00d4e8ebb385b987bb49a44af8b241883a566b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512835"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550979"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Bozuk Şifreleme Algoritmaları Kullanmayın
+
 |||
 |-|-|
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
@@ -26,67 +27,69 @@ ms.locfileid: "39512835"
 |Yeni Değişiklik|Bozucu olmayan|
 
 > [!NOTE]
->  Bu uyarı, Kasım 2015 tarihinde güncelleştirildiği.
+> Bu uyarı, Kasım 2015 tarihinde güncelleştirildiği.
 
 ## <a name="cause"></a>Sebep
- İşlevleri gibi karma <xref:System.Security.Cryptography.MD5> ve şifreleme algoritmaları gibi <xref:System.Security.Cryptography.DES> ve <xref:System.Security.Cryptography.RC2> önemli risk getirebilir ve önemsiz saldırı teknikleri üzerinden hassas bilgiler açığa yanılma saldırıları gibi sonuçlanabilir ve karma çakışmaları.
 
- Bilinen bir şifreleme saldırılarına maruz aşağıdaki şifreleme algoritmaları listede var. Şifreleme karma algoritması <xref:System.Security.Cryptography.MD5> karma çakışma saldırılarına maruz olduğu.  Kullanımınıza bağlı olarak, bir karma çakışması kimliğe bürünme, değiştirilmesine veya diğer tür saldırıları, bir karma işlevi şifreleme benzersiz çıktısını kullanan sistemlerinde neden olabilir. Şifreleme algoritmaları <xref:System.Security.Cryptography.DES> ve <xref:System.Security.Cryptography.RC2> şifrelenmiş verilerin istenmeyen açıklanmasıyla sonuçlanabilir şifreleme saldırılara maruz şunlardır.
+İşlevleri gibi karma <xref:System.Security.Cryptography.MD5> ve şifreleme algoritmaları gibi <xref:System.Security.Cryptography.DES> ve <xref:System.Security.Cryptography.RC2> önemli risk getirebilir ve önemsiz saldırı teknikleri üzerinden hassas bilgiler açığa yanılma saldırıları gibi sonuçlanabilir ve karma çakışmaları.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bozuk şifreleme algoritmaları güvenli kabul edilmeyen ve bunların kullanılması önerilmez. Belirli güvenlik açığı kullanım bağlam göre farklılık gösterir ancak MD5 karma algoritması bilinen çakışma saldırılara açıktır.  (Örneğin, dosya imzası veya dijital sertifika) veri bütünlüğünü sağlamak için kullanılan karma algoritmaları özellikle savunmasızdır.  Zararsız veri kötü amaçlı veri ile karma değeri değiştirme veya ilişkili bir dijital imza geçersiz kılmalarını yerine kullanılabileceği gibi bu bağlamda, verilerinizin iki ayrı parçaları saldırganlar oluşturabilir.
+Bilinen bir şifreleme saldırılarına maruz aşağıdaki şifreleme algoritmaları listede var. Şifreleme karma algoritması <xref:System.Security.Cryptography.MD5> karma çakışma saldırılarına maruz olduğu.  Kullanımınıza bağlı olarak, bir karma çakışması kimliğe bürünme, değiştirilmesine veya diğer tür saldırıları, bir karma işlevi şifreleme benzersiz çıktısını kullanan sistemlerinde neden olabilir. Şifreleme algoritmaları <xref:System.Security.Cryptography.DES> ve <xref:System.Security.Cryptography.RC2> şifrelenmiş verilerin istenmeyen açıklanmasıyla sonuçlanabilir şifreleme saldırılara maruz şunlardır.
 
- Şifreleme algoritmaları için:
+## <a name="rule-description"></a>Kural açıklaması
 
--   <xref:System.Security.Cryptography.DES> Şifreleme, daha az bir gün içinde deneme yanılma yoluyla yapılan zorla olabilir küçük bir anahtar boyutu içerir.
+Bozuk şifreleme algoritmaları güvenli kabul edilmeyen ve bunların kullanılması önerilmez. Belirli güvenlik açığı kullanım bağlam göre farklılık gösterir ancak MD5 karma algoritması bilinen çakışma saldırılara açıktır.  (Örneğin, dosya imzası veya dijital sertifika) veri bütünlüğünü sağlamak için kullanılan karma algoritmaları özellikle savunmasızdır.  Zararsız veri kötü amaçlı veri ile karma değeri değiştirme veya ilişkili bir dijital imza geçersiz kılmalarını yerine kullanılabileceği gibi bu bağlamda, verilerinizin iki ayrı parçaları saldırganlar oluşturabilir.
 
--   <xref:System.Security.Cryptography.RC2> Şifreleme ilgili anahtar saldırısına maruz burada saldırganın tüm anahtar değerleri matematiksel ilişkilerini bulur.
+Şifreleme algoritmaları için:
 
- Bu kural kaynak kodunda yukarıdaki şifreleme işlevlerden herhangi birinin bulur ve kullanıcı için bir uyarı oluşturduğunda tetiklenir.
+- <xref:System.Security.Cryptography.DES> Şifreleme, daha az bir gün içinde deneme yanılma yoluyla yapılan zorla olabilir küçük bir anahtar boyutu içerir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Şifreleme bakımından daha güçlü seçenekleri kullanın:
+- <xref:System.Security.Cryptography.RC2> Şifreleme ilgili anahtar saldırısına maruz burada saldırganın tüm anahtar değerleri matematiksel ilişkilerini bulur.
 
--   MD5 karmaları kullanın [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) ailesi (örneğin <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+Bu kural kaynak kodunda yukarıdaki şifreleme işlevlerden herhangi birinin bulur ve kullanıcı için bir uyarı oluşturduğunda tetiklenir.
 
--   DES ve RC2 <xref:System.Security.Cryptography.Aes> şifreleme.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu şifreleme bir uzmana göre gözden geçirilir sürece bu kuraldan bir uyarıyı bastırmayın.
+Şifreleme bakımından daha güçlü seçenekleri kullanın:
 
-## <a name="pseudo-code-example"></a>Sözde kod örneği
- Aşağıdaki sözde kod örneği, bu kural ve olası alternatifler tarafından algılanan düzeni göstermektedir.
+- MD5 karmaları kullanın [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) ailesi (örneğin, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+
+- DES ve RC2 <xref:System.Security.Cryptography.Aes> şifreleme.
+
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+
+Bu şifreleme bir uzmana göre gözden geçirilir sürece bu kuraldan bir uyarıyı bastırmayın.
+
+## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
+
+Bu kural ve olası alternatifler tarafından algılanan düzeni aşağıdaki sözde kod örneklerini göstermektedir.
 
 ### <a name="md5-hashing-violation"></a>MD5 Karma ihlali
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = MD5.Create();
-
 ```
 
-### <a name="solution"></a>Çözüm
+Çözüm:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA256.Create();
-
 ```
 
 ### <a name="rc2-encryption-violation"></a>RC2 Şifreleme ihlali
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 RC2 encAlg = RC2.Create();
-
 ```
 
-### <a name="solution"></a>Çözüm
+Çözüm:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 using (AesManaged encAlg = new AesManaged())
@@ -95,18 +98,17 @@ using (AesManaged encAlg = new AesManaged())
 }
 ```
 
-### <a name="des-br-br-encryption-violation"></a>DES <br /><br />Şifreleme ihlali
+### <a name="des-encryption-violation"></a>DES şifrelemesi ihlali
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 DES encAlg = DES.Create();
-
 ```
 
-### <a name="solution"></a>Çözüm
+Çözüm:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 using (AesManaged encAlg = new AesManaged())

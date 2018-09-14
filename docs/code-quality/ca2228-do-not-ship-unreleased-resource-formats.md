@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f444779fc5db725c090f96ec51a86d8427a14d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2823933e4792dd6127ffbd4b1bfe5dfe1b71a0c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919187"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547561"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Yayımlanmamış kaynak biçimlerini yollamayın
 |||
@@ -29,16 +29,16 @@ ms.locfileid: "31919187"
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |CheckId|CA2228|
 |Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Kaynak dosyası bir sürümü kullanılarak oluşturuldu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , şu anda desteklenmiyor.
+ Bir kaynak dosyası bir sürümü kullanılarak oluşturulmuş [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , şu anda desteklenmiyor.
 
-## <a name="rule-description"></a>Kural Tanımı
- Yayın öncesi sürümleri kullanılarak oluşturulan kaynak dosyaların [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .NET Framework'ün desteklenen sürümleri tarafından kullanılamayabilir.
+## <a name="rule-description"></a>Kural açıklaması
+ Yayın öncesi sürümlerini kullanarak oluşturulan kaynak dosyaları [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] desteklenen .NET Framework sürümleri tarafından kullanılamayabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlal düzeltmek için desteklenen bir sürümünü kullanarak kaynak yapı [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kural ihlalini düzeltmek için desteklenen bir sürümünü kullanarak kaynak oluşturma [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.

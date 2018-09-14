@@ -16,44 +16,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c299652e779476f2936c193a8bdb646e7b655dd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 738c214e845cb962bc6c28aa63806dee2858c295
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916153"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551246"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Savunmasız sonunda yan tümcelerini dış deneme içine sarmalayın
+
 |||
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- 1.0 ve 1.1 sürümlerinde [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], bir ortak veya korumalı yöntemi içeren bir `try` / `catch` / `finally` bloğu. `finally` Blok güvenlik durumunu sıfırlamak için görünür ve içinde içine alınmamış bir `finally` bloğu.
+ 1.0 ve 1.1 sürümlerinde [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], bir ortak veya korumalı yöntem içerir bir `try` / `catch` / `finally` blok. `finally` Blok güvenlik durumunu sıfırlamak için görünür ve sınırlanan değil bir `finally` blok.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bu kural bulur `try` / `finally` 1.0 ve 1.1 sürümleri hedefleyen kodda engeller [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] çağrı yığınında mevcut kötü amaçlı bir özel durum filtreleri karşı savunmasız olun. Kimliğe bürünme gibi hassas işlemler try bloğunda oluşur ve bir özel durum, filtre önce yürütebilir `finally` bloğu. Kimliğe bürünme örneği için bu filtre Kimliğine bürünülen kullanıcı yürütmesine anlamına gelir. Filtreler yalnızca Visual Basic'te şu anda implementable.
+## <a name="rule-description"></a>Kural açıklaması
+ Bu kural bulur `try` / `finally` 1.0 ve 1.1 sürümlerini hedefleyen kodda engeller [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] olabilecek kötü amaçlı bir özel durum filtreleri çağrı yığınında mevcut açıktır. Kimliğe bürünme gibi hassas işlemler try bloğunda oluşur ve bir özel durum, filtre önce yürütebilir `finally` blok. Kimliğe bürünme örneği için bu filtrenin bürünülen kullanıcıyla yürütmesine anlamına gelir. Şu anda yalnızca Visual Basic'te implementable filtrelerdir.
 
-> [!WARNING]
->  **Not** 2.0 ve sonraki sürümlerde [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], çalışma zamanı otomatik olarak koruyan bir `try` / `catch` /  `finally` sıfırlama oluşursa kötü amaçlı bir özel durum filtreleri, engelle doğrudan içinde yöntemi özel durum bloğu içerir.
+> [!NOTE]
+> 2.0 ve sonraki sürümlerinde [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], çalışma zamanı otomatik olarak koruyan bir `try` / `catch` /  `finally` sıfırlama doğrudan yöntemi içinde ortaya çıkarsa kötü amaçlı bir özel durum filtrelerden engelleme, özel durum bloğu içerir.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Sarmalanmamış yerleştirin `try` / `finally` bir dış try bloğundaki. Aşağıdaki ikinci örneğe bakın. Bu zorlar `finally` filtre kodundan önce yürütülecek.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Sarmalanmış halden yerleştirin `try` / `finally` bir dış try bloğu içinde. Aşağıdaki ikinci örneğe bakın. Bu zorlar `finally` filtre kodundan önce yürütülecek.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="pseudo-code-example"></a>Sözde kod örneği
 
 ### <a name="description"></a>Açıklama
- Bu kural tarafından algılanan desen aşağıdaki sözde kodu gösterilmektedir.
 
-### <a name="code"></a>Kod
+Bu kural tarafından algılanan düzeni aşağıdaki sözde kod göstermektedir.
 
-```
+```csharp
 try {
    // Do some work.
    Impersonator imp = new Impersonator("John Doe");
@@ -65,10 +65,9 @@ finally {
 }
 ```
 
-## <a name="example"></a>Örnek
- Aşağıdaki sözde kod kodunuzu korumak ve bu kural karşılamak için kullanabileceğiniz düzeni gösterir.
+Aşağıdaki sözde kod kodunuzu koruyun ve bu kural karşılamak için kullanabileceğiniz desenini gösterir.
 
-```
+```csharp
 try {
      try {
         // Do some work.

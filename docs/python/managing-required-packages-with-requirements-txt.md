@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468251"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548798"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerekli paketleri requirements.txt ile yönetme
 
-Proje yapı sistemini kullanarak başkalarıyla paylaşmaya ya da planladığınız [Microsoft Azure'a yayımlama](python-azure-cloud-service-project-template.md), proje gerektiren dış paketleri belirtmeniz gerekir. Kullanmak için önerilen yaklaşımdır bir [requirements.txt dosyasını](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) yükleyen gerekli sürümlerinden birini bağımlı paketler pip komutların listesini içerir.
+Proje yapı sistemini kullanarak başkalarıyla paylaşmaya ya da planladığınız [Microsoft Azure'a yayımlama](python-azure-cloud-service-project-template.md), proje gerektiren dış paketleri belirtmeniz gerekir. Kullanmak için önerilen yaklaşımdır bir [requirements.txt dosyasını](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) yükleyen gerekli sürümlerinden birini bağımlı paketler pip komutların listesini içerir.
 
 Teknik olarak, herhangi bir dosya adının gereksinimlerini izlemek için kullanılabilir (kullanarak `-r <full path to file>` paketi yüklerken), Visual Studio için belirli destek sağlar, ancak *requirements.txt*:
 
@@ -38,7 +38,7 @@ Teknik olarak, herhangi bir dosya adının gereksinimlerini izlemek için kullan
 
 Çünkü *requirements.txt* dosyaları, bir ortamın gereksinimleri dondurmak için yöneliktir, tüm yüklü paketleri kesin sürümleri ile yazılır. Kesin sürümlerini kullanan başka bir bilgisayardaki ortamınızı kolayca üretebileceği sağlar. Başka bir paketin, bağımlılık olarak bir sürüm aralığı veya pip dışındaki bir yükleyici ile yüklenmiş olan bile paketleri dahil edilir.
 
-Bir paket pip tarafından yüklenemez ve görünür bir *requirements.txt* dosyası, tüm yükleme başarısız olur. Bu durumda, bu paketi hariç tutmak için ya da kullanılacak dosyayı el ile düzenlemeniz [pip'ın seçenekleri](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) paket yüklenebilir bir sürümünü başvurmak için. Örneğin, kullanmayı tercih edebilirsiniz [ `pip wheel` ](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) bağımlılığı derlemek ve eklemek için `--find-links <path>` seçeneği, *requirements.txt*:
+Bir paket pip tarafından yüklenemez ve görünür bir *requirements.txt* dosyası, tüm yükleme başarısız olur. Bu durumda, bu paketi hariç tutmak için ya da kullanılacak dosyayı el ile düzenlemeniz [pip'ın seçenekleri](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) paket yüklenebilir bir sürümünü başvurmak için. Örneğin, kullanmayı tercih edebilirsiniz [ `pip wheel` ](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) bağımlılığı derlemek ve eklemek için `--find-links <path>` seçeneği, *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure

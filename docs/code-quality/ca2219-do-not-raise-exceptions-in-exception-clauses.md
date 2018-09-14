@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d90e56eee9c68ff94b18204928ecaeeeb55ae0a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e80409a1837da3e82e375561341f4fb4c3da9c28
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919540"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548252"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Özel durum yan tümceleri içinde özel durum harekete geçirmeyin
 |||
@@ -29,26 +29,26 @@ ms.locfileid: "31919540"
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
 |Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Sonu olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan bölme|
 
 ## <a name="cause"></a>Sebep
- Gelen bir özel durum bir `finally`, filtre veya hataya yan tümcesi.
+ Bir özel durum bir `finally`, filtre ya da arıza yan tümcesi.
 
-## <a name="rule-description"></a>Kural Tanımı
- Bir özel durum yan tümcesinde bir özel durum oluştuğunda, hata ayıklama zorluk büyük ölçüde artırır.
+## <a name="rule-description"></a>Kural açıklaması
+ Bir özel durum yan tümcesinde bir özel durum oluştuğunda, hata ayıklamayı büyük ölçüde artırır.
 
- Ne zaman bir özel durum oluşturulur içinde bir `finally` veya hataya yan tümcesi, yeni özel durum gizler etkin özel durum varsa. Bu özgün hata algılamak ve hata ayıklama zor hale getirir.
+ Ne zaman bir neden bir `finally` ya da arıza yan tümcesine yeni istisna aktif istisnayı, varsa. Bu özgün hata algılama ve hata ayıklamayı sabit hale getirir.
 
- Bir filtre yan tümcesi içinde bir özel durum oluştuğunda, çalışma zamanı sessizce özel yakalar ve false olarak değerlendirmek filtre neden olur. False ve filtresi throw olan bir özel durum filtresi değerlendirme arasındaki farkı bildirmek için bir yolu yoktur. Bu, algılamak ve filtrenin mantık hataları hata ayıklamak sabit kolaylaştırır.
+ Filtre yan tümcesinde bir özel durum oluştuğunda, çalışma zamanı sessizce özel durumu yakalar ve filtre false olarak değerlendirilecek neden olur. False ve filtresi throw olan bir özel durum filtresi değerlendirme arasındaki farkı bildirmek için hiçbir yolu yoktur. Bu algılama ve filtre mantığındaki hataların hata ayıklamayı zorlaştırır.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural bu ihlal düzeltmek için açıkça bir özel durumundan yükseltmeyin bir `finally`, filtre veya hataya yan tümcesi.
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+ Bu kuralın ihlalini düzeltmek için açıkça adresinden bir özel durum harekete geçirmeyin bir `finally`, filtre ya da arıza yan tümcesi.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kural için bir uyarı bastırma değil. Altında bir özel durum yan tümcesinde yükseltilmiş bir özel durum yürütülen kod fayda sağlayan hiçbir senaryo vardır.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Bu kural için bir uyarıyı bastırmayın. Altında oluşturulan bir özel durum yan tümcesinde bir özel durum kodu yürütürken bir avantaj sağlayan senaryo vardır.
 
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1065: Beklenmedik konumlarda özel durumlar tetiklemeyin](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [Tasarım Uyarıları](../code-quality/design-warnings.md)

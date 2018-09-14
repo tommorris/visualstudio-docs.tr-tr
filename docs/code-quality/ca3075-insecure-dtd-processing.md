@@ -1,5 +1,5 @@
 ---
-title: 'CA3075: Güvensiz DTD işleme'
+title: 'CA3075: Güvensiz DTD İşleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -10,68 +10,68 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 821a2a3f50f94808482d50a8e1e36feefb184173
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a0305c15e4230313cbe51d64a3a798d03eb3937e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922435"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546793"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD işleme
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD İşleme
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Güvenli olmayan kullanırsanız <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> örneği veya giriş ve saldırganlar için hassas bilgileri ifşa güvenilmeyen Dış varlık kaynakları, ayrıştırıcı kabul başvurusu.
+ Güvenli olmayan kullanırsanız <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> örnekleri veya giriş ve saldırganlar için hassas bilgileri ifşa güvenilmeyen Dış varlık kaynakları, ayrıştırıcının kabul başvurusu.
 
-## <a name="rule-description"></a>Kural Tanımı
- A *belge türü tanımı (DTD)* bir XML Ayrıştırıcı bir belgenin geçerlilik belirleyebilir iki yoldan biriyle tarafından tanımlanan olan [World Wide Web Konsorsiyumu (W3C) Genişletilebilir İşaretleme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural özelliklerini ve burada güvenilmeyen veri tarafından kabul edilir geliştiriciler olası hakkında uyarmak için örnekleri aradığı [bilgilerin açığa çıkmasına](/dotnet/framework/wcf/feature-details/information-disclosure) açabilir tehditleri [hizmet reddi (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları. Bu kuralın ne zaman tetikler:
+## <a name="rule-description"></a>Kural açıklaması
+ A *belge türü tanımı (DTD'nin)* bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](/dotnet/framework/wcf/feature-details/information-disclosure) açabilir tehditler [hizmet reddi (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları. Bu kuralın ne zaman tetikleyen:
 
--   DtdProcessing etkin <xref:System.Xml.XmlReader> kullanarak dış XML varlıkları çözümler örneği <xref:System.Xml.XmlUrlResolver>.
+- XmlReaderSettings üzerinde etkin <xref:System.Xml.XmlReader> kullanarak dış XML varlıkları çözümler örneği <xref:System.Xml.XmlUrlResolver>.
 
--   <xref:System.Xml.XmlNode.InnerXml%2A> XML özelliği ayarlanmış.
+- <xref:System.Xml.XmlNode.InnerXml%2A> XML özelliğinde ayarlanır.
 
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> özelliği için ayrıştırma ayarlanır.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> özellik ayrıştırma için ayarlanır.
 
--   Giriş kullanılarak işlenir güvenilmeyen <xref:System.Xml.XmlResolver> yerine <xref:System.Xml.XmlSecureResolver> .
+- Giriş kullanılarak işlenir güvenilmeyen <xref:System.Xml.XmlResolver> yerine <xref:System.Xml.XmlSecureResolver> .
 
--   XmlReader.<xref:System.Xml.XmlReader.Create%2A> yöntemi, bir güvenli çağrılır <xref:System.Xml.XmlReaderSettings> örneği veya hiç örneği yok.
+- XmlReader.<xref:System.Xml.XmlReader.Create%2A> yöntemi çağrıldığında bir güvenli <xref:System.Xml.XmlReaderSettings> örneği veya hiç bir örneği yok.
 
--   <xref:System.Xml.XmlReader> Güvenli varsayılan ayarları veya değerleri ile oluşturulur.
+- <xref:System.Xml.XmlReader> Güvenli varsayılan ayarları veya değerleri ile oluşturulur.
 
- Her durumda, sonucu aynıdır: XML işleneceği makineden dosya sistemi veya ağ paylaşımları içeriğini DoS vektör olarak kullanılabilir saldırgana gösterilir.
+ Her durumda, sonuç aynıdır: XML işleneceği makinesinden dosya sistemi veya ağ paylaşımları içeriğinden DoS vektörü olarak kullanılabilir saldırgan için kullanıma sunulacak.
 
-## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
--   Catch ve düzgün şekilde yolu bilgilerin açığa çıkmasına önlemek için tüm XmlTextReader özel durumları işler.
+- Catch ve doğru yolu bilgi açıklamalardan kaçınmak için tüm XmlTextReader özel durumları işler.
 
--   Kullanım <xref:System.Xml.XmlSecureResolver> XmlTextReader erişebileceği kaynakları sınırlamak için.
+- Kullanım <xref:System.Xml.XmlSecureResolver> XmlTextReader erişebildiği kaynakları sınırlandırmak için.
 
--   İzin verme <xref:System.Xml.XmlReader> ayarlayarak herhangi bir dış kaynağa açmak için <xref:System.Xml.XmlResolver> özelliğine **null**.
+- İzin verme <xref:System.Xml.XmlReader> ayarlayarak herhangi bir dış kaynağa açmak için <xref:System.Xml.XmlResolver> özelliğini **null**.
 
--   Emin <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> özelliği <xref:System.Data.DataViewManager> güvenilir bir kaynaktan atanır.
+- Emin <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> özelliği <xref:System.Data.DataViewManager> güvenilir bir kaynaktan atanır.
 
- .NET 3.5 ve önceki sürümleri
+ .NET 3.5 ve önceki sürümler
 
--   DTD ayarlayarak güvenilmeyen kaynakları ile çalışıyorsanız, işleme devre dışı <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> özelliğine **doğru** .
+- Güvenilmeyen kaynaklarıyla ayarlayarak uğraşıyorsanız DTD işlemeyi devre dışı <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> özelliğini **true** .
 
--   XmlTextReader sınıfı tam güven devralma talebe sahip.
+- Tam güven devralma talebi XmlTextReader sınıfı vardır.
 
  .NET 4 ve üzeri
 
--   Ayarlayarak güvenilmeyen kaynaklarıyla ilgili varsa DtdProcessing etkinleştirmemeye dikkat edin <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> özelliğine **yasakla** veya **Yoksay**.
+- Güvenilmeyen kaynaklarıyla ayarlayarak ilgilenme, XmlReaderSettings etkinleştirmemeye <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> özelliğini **yasakla** veya **Yoksay**.
 
--   Load() yöntemi tüm InnerXml durumlarda XmlReader örneği alır emin olun.
+- Load() yöntem tüm sınıfının InnerXml durumlarda XmlReader örneği alır emin olun.
 
 > [!NOTE]
->  Bu kural hatalı pozitif sonuç bazı geçerli XmlSecureResolver örneklerinde bildirebilir. Mid 2016'da bu sorunu çözme üzerinde çalışıyoruz.
+>  Bu kural, hatalı pozitif sonuçları bazı geçerli XmlSecureResolver örneklerinde bildirebilir. Mid 2016 tarafından bu sorunu çözmeye çalışıyoruz.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Giriş güvenilir bir kaynaktan olmadığı biliniyor emin değilseniz, bu uyarı kuralından bastırmak değil.
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+ Giriş güvenilir bir kaynaktan olduğu biliniyorsa emin olmadığınız sürece, bir kuraldan bu uyarıyı bastırmayın.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 

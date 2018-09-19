@@ -1,5 +1,5 @@
 ---
-title: Birim testi ile birim testleri Oluştur komutu yöntemi saplamalar oluşturma
+title: Intellitest giriş
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,28 +11,28 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 72bba467bae5528333b520bdb40f5f4593982df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 37246d3dc612a44057c21f41145414f60bac0860
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966506"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135479"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Microsoft IntelliTest ile çalışmaya başlama
 
-* Bu, ilk kez Intellitest ise:
-  * Gözcü [Channel 9 video](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
-  * Bu okuma [MSDN dergisi bir genel bakış](https://msdn.microsoft.com/magazine/dn904672.aspx)
+* Intellitest ile ilk kez varsa:
+  * İzleme [kanal 9 videosu](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
+  * Bu okuma [MSDN dergisi genel bakış](https://msdn.microsoft.com/magazine/dn904672.aspx)
   * Okuma bizim [belgeleri](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
-* Sorular [yığın taşması](http://stackoverflow.com/questions/tagged/intellitest)
-* Bu başvuru el ile geri kalanı okuma
-* Hızlı başvuru için bu sayfayı yazdırmanız
+* Sorularınızı sorabilirsiniz [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)
+* Bu başvuru el ile geri kalanını okuyun
+* Hızlı başvuru için bu sayfayı yazdır
 
 ## <a name="important-attributes"></a>Önemli öznitelikleri
 
 * [PexClass](attribute-glossary.md#pexclass) işaretler türünü içeren **yerleştirin**
-* [PexMethod](attribute-glossary.md#pexmethod) işaretleri bir **YERLEŞTİRME**
-* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) bir null olmayan parametre işaretler
+* [PexMethod](attribute-glossary.md#pexmethod) işaretleri bir **yerleştirin**
+* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) null olmayan bir parametre işaretler
 
 ```csharp
 using Microsoft.Pex.Framework;
@@ -46,8 +46,8 @@ public partial class FooTest {
 }
 ```
 
-* [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) test projesinin bir projesine bağlar
-* [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) gereç bir derlemeye belirtir
+* [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) bağlayan bir test projesi için bir proje
+* [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) aracına bir derleme belirtir
 
 ```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")] // also instruments "MyAssembly"
@@ -58,8 +58,8 @@ public partial class FooTest {
 
 * [PexAssume](static-helper-classes.md#pexassume) (giriş filtreleme) varsayımlar değerlendirir
 * [PexAssert](static-helper-classes.md#pexassert) onaylar değerlendirir
-* [PexChoose](static-helper-classes.md#pexchoose) yeni seçenekleri (ek girdileri) oluşturur
-* [PexObserve](static-helper-classes.md#pexobserve) dinamik değerler için oluşturulan testleri günlüğe kaydeder
+* [PexChoose](static-helper-classes.md#pexchoose) yeni seçenekleri (ek girdileri) oluşturur.
+* [PexObserve](static-helper-classes.md#pexobserve) dinamik değerler için üretilen testler günlüğe kaydeder.
 
 ```csharp
 [PexMethod]
@@ -76,4 +76,4 @@ void StaticHelpers(Foo target) {
 
 ## <a name="got-feedback"></a>Geri bildirim var mı?
 
-Fikirlerinizi sonrası ve özellik istekleri [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Fikirlerinizi gönderin ve özellik istekleri [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

@@ -1,5 +1,5 @@
 ---
-title: Derleme veya yayın yönetimini otomatik Visual Studio'da Test için kullanın.
+title: Otomatik test için derleme veya yayın yönetimini kullanma
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320624"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135622"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Derleme ve sürüm yönetimi, otomatik test için Laboratuvar Yönetimi yerine kullanma
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Azure Test planları yerine Laboratuvar Yönetimi otomatik test için kullanma
 
 Yapı-dağıtma-test Otomasyonu veya otomatikleştirilmiş test için Microsoft Test Yöneticisi (MTM) ve Laboratuvar Yönetimi kullanırsanız, bu konuda, aynı hedef kullanarak nasıl elde açıklanmaktadır [derleme ve yayın](/azure/devops/pipelines/index?view=vsts) Team Foundation özellikleri Server (TFS) ve Azure Test planları.
 
@@ -64,7 +64,7 @@ Ancak, daha zengin ortak ve özel bulut gelişimi yönetim sistemleri gibi veril
 | Makinelere bağlanın. | Laboratuvar ortamı, Ortam Görüntüleyicisi'nde açın. | Sanal makinelere doğrudan bağlanmak için SCVMM Yönetim konsolunu kullanın. Alternatif olarak, uzak masaüstü oturumları açmak için sanal makinelerin DNS adları ve IP adresi kullanın. |
 | Bir ortamın bir denetim noktası almak veya bir ortam için temiz bir denetim noktası geri yükleyin. | Laboratuvar ortamı, Ortam Görüntüleyicisi'nde açın. Bir denetim noktası almak veya önceki kontrol noktasına geri yüklemek için seçeneği belirleyin. | SCVMM Yönetim konsolunda, doğrudan sanal makineler bu işlemleri gerçekleştirmek için kullanın. Ya da daha büyük bir Otomasyon bir parçası olarak bu adımları gerçekleştirmek için denetim noktası görevler dahil [SCVMM Tümleştirme Uzantısı](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) bir yayın tanımı ortamının bir parçası olarak. |
 
-## <a name="creation-of-network-isolated-environments"></a>Ağ yalıtımlı ortam oluşturma
+## <a name="create-network-isolated-environments"></a>Ağ yalıtımlı ortam oluşturma
 
 Bir ağ yalıtılmış laboratuvar ortamı, ağ çakışmalarına neden olmadan güvenli bir şekilde kopyalanabilir SCVMM sanal makine grubudur. Bu, MTM içinde bir dizi bir dizi sanal makinelerin özel bir ağda yapılandırmak için ağ arabirim kartları ve ağ arabirim kartları başka bir dizi ortak ağdaki sanal makinelerin yapılandırmak için kullanılan yönergeleri kullanarak yapıldı.
 

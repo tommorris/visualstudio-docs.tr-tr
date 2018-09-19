@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Enterprise ve Visual Studio Professional bulut abonelikleri satın alma
+title: Visual Studio bulut abonelikleri satın alma
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
@@ -9,12 +9,12 @@ description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylı
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e183b74e326efa65b810f7f46fd198e43aa796bf
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 51f349b28fa944cf1ca0691d45836dc74f9ecf68
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624435"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135571"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 

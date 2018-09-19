@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'nun çevrimdışı yüklemesini oluşturma
+title: Visual Studio’nun çevrimdışı yüklemesini oluşturma
 description: Visual Studio bir güvenilir bir internet bağlantısı veya düşük bant genişliğine sahip olduğunuzda çevrimdışı yüklemeyi öğrenin.
 ms.custom: ''
 ms.date: 08/28/2018
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b43fae1bb43fef7ca56e7967e6631920df6f0a
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: 987584be6d2d0a2ee794622e64e989de9ea80334
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43370957"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135584"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017'in çevrimdışı yüklemesini oluşturma
 

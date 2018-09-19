@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 128326b869f9a1e09ffb28118af1073b1a7e57b1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 97e5fbd68a82a74112f884a8091992c1fd6ba6ae
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638639"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370750"
 ---
 # <a name="error-handling-and-return-values"></a>Hata işleme ve dönüş değerleri
 VSPackages ve COM aynı mimariye hataları için kullanın. `SetErrorInfo` Ve `GetErrorInfo` işlevleri Win32 uygulama programlama arabirimi (API) bir parçasıdır. Tümleşik geliştirme ortamında (IDE) herhangi bir VSPackage alırken bir hata bildirimi, bu genel Win32 API'ları zengin hata bilgileri kaydetmek için çağırabilirsiniz. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Hata bilgilerini yönetmek için birlikte çalışma derlemelerini sağlar.  
@@ -58,6 +58,6 @@ VSPackages ve COM aynı mimariye hataları için kullanın. `SetErrorInfo` Ve `G
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Seterrorınfo (Bileşen Otomasyonu)](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [Seterrorınfo (Bileşen Otomasyonu)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)   
  [Geterrorınfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)   
  [ISupportErrorInfo arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo)

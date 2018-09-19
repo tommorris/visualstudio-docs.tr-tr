@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498921"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370724"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Proje üreteçlerini kullanarak proje örnekleri oluşturma
 Proje türlerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanan bir *proje fabrikası* proje nesnelerin örneklerini oluşturmak için. Bir proje fabrikası cocreatable COM nesneleri için bir standart sınıf üreteci benzer. Ancak, proje nesnelerini cocreatable değildir; Bunlar, bir proje fabrikası kullanarak yalnızca oluşturulabilir.  
@@ -28,7 +28,7 @@ Proje türlerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] k
   
  Uygulayabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> projenizdeki bir sınıf içinde arabirim. Genellikle, kendi modülünde yer alıyor.  
   
- Uygulaması örneği için `IVsProjectFactory` arabirim için bkz: *PrjFac.cpp*, içinde bulunan [temel proje](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) örnek dizin.  
+ Uygulaması örneği için `IVsProjectFactory` arabirim için bkz: *PrjFac.cpp*, içinde bulunan [temel proje](https://www.microsoft.com/download/details.aspx?id=55984) örnek dizin.  
   
  Bir sahibi tarafından toplanan destekleyen projeler, proje dosyasında bir sahibi anahtarı kalıcı gerekir. Zaman <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> yöntemi bir sahibi anahtara sahip bir proje üzerinde çağrılır, sahip olunan proje sahibi anahtarıyla GUID sonra çağıran bir proje fabrikası dönüştürür `CreateProject` gerçek oluşturma yapmak için bu proje fabrika yöntemi.  
   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637061"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370555"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Tasarımcı başlatma ve meta verileri yapılandırma
 Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filtre özniteliklerini işleme uygulamalarının farklı işlemek için kullanılan araçlar tarafından belirli bir tasarımcı tanımlamak bir mekanizma sağlar <xref:System.Type> nesne (örneğin, veri yapıları sınıflar, veya grafik varlıkları) Tasarımcı kullanılabilir olduğunda ve Visual Studio IDE Tasarımcı destekleyecek şekilde nasıl yapılandırıldığını (örnek, **araç kutusu** kategori veya sekme bulunur).  
@@ -100,4 +100,4 @@ Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filt
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [DDesign zamanı desteğini genişletmek](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Tasarım zamanı desteğini genişletmek](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

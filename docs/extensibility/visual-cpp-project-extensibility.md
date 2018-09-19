@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552523"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135665"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
-*Visual C++ proje sistemi* .vcxproj dosyaları tarafından kullanılır. Dayanır [Visual Studio ortak proje System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ve ek, yeni araç takımları, derleme mimarileri ve Hedef platformlar kolay tümleştirme için C++ özgü genişletilebilirlik noktaları sağlar. 
+*Visual C++ proje sistemi* .vcxproj dosyaları için kullanılır. Dayanır [Visual Studio ortak proje System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ve ek, yeni araç takımları, derleme mimarileri ve Hedef platformlar kolay tümleştirme için C++ özgü genişletilebilirlik noktaları sağlar. 
 
 ## <a name="c-msbuild-targets-structure"></a>C++ MSBuild hedefleri yapısı
 
@@ -227,13 +227,13 @@ Hedef gibi görünüyorsa `_ClCompile`, doğrudan başlarına hiçbir şey yapma
 </Target>
 ```
 
-`ClCompile` ve diğer yapı araç-özel hedefleri Microsoft.CppBuild.targets bulunan boş hedefler olarak tanımlanır:
+`ClCompile` ve diğer yapı araç-özel hedefleri boş hedef olarak tanımlanan *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-Çünkü `ClCompile` hedef boş bir hedef olarak tanımlanmış olan *Microsoft.CppBuild.targets*, bir araç takımı tarafından geçersiz kılınmadığı sürece, herhangi bir gerçek derleme eylemi gerçekleştirilir. Araç takımı hedefleri geçersiz kılabilirsiniz `ClCompile` hedef, diğer bir deyişle, başka bir içerebilir `ClCompile` tanımı içeri aktardıktan sonra *Microsoft.CppBuild.targets*: 
+Çünkü `ClCompile` hedef boşsa, araç takımı tarafından geçersiz kılınmadığı sürece, herhangi bir gerçek derleme eylemi gerçekleştirilir. Araç takımı hedefleri geçersiz kılabilirsiniz `ClCompile` hedef, diğer bir deyişle, başka bir içerebilir `ClCompile` tanımı içeri aktardıktan sonra *Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ Hedef gibi görünüyorsa `_ClCompile`, doğrudan başlarına hiçbir şey yapma
 </Target>
 ```
 
-Adına rağmen `ClCompile`, Visual Studio'nun platformlar arası destek uygulanan önce oluşturulan `ClCompile` hedef CL.exe çağırmak yok. Bu ayrıca Clang, gcc ve diğer derleyiciler uygun MSBuild görevleri kullanarak çağırabilirsiniz.
+Visual Studio'nun platformlar arası destek uygulanmadı önce oluşturulduğu, adına rağmen `ClCompile` hedef CL.exe çağırmak yok. Bu ayrıca Clang, gcc ve diğer derleyiciler uygun MSBuild görevleri kullanarak çağırabilirsiniz.
 
 `ClCompile` Hedef dışında herhangi bir bağımlılık olmamalıdır `SelectClCompile` IDE içinde çalışma için tek dosyalı derleme komutu için gerekli olan hedef.
 
@@ -289,7 +289,7 @@ Bir derleme aracı için yeni bir görev oluşturmanız gerekiyorsa, aşağıdak
 
 1. Daha iyi görev performans istediğiniz veya daha karmaşık işlevselliği yeterlidir, normal Msbuild'i kullanma [görev yazma](../msbuild/task-writing.md) işlem.
 
-   Tüm girişler ve çıkışlar aracının aracı komut satırında olarak listeleniyorsa `CL`, `MIDL`, ve `RC` durumlarda ve otomatik girdi ve çıktı dosya izleme ve .tlog dosya oluşturma istiyorsanız, bir görevden türetilen `TrackedVCToolTask`.
+   Tüm girişler ve çıkışlar aracının aracı komut satırında olarak listeleniyorsa `CL`, `MIDL`, ve `RC` durumlarda ve otomatik girdi ve çıktı dosya izleme ve .tlog dosya oluşturma istiyorsanız, görev türetilen`Microsoft.Build.CPPTasks.TrackedVCToolTask`sınıfı. Şu an için temel belgelere varken [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) örnekler veya ayrıntılar için sınıf `TrackedVCToolTask` sınıfı. İlginizi çeken olacaksa, kendi sesinizi üzerinde ekleyin [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Artımlı derlemeleri ve güncel denetimleri
 
@@ -428,7 +428,7 @@ Kullanılacak `Task.HostObject` kaydedilmemiş kaynak dosyaların içeriğini al
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE'de proje genişletilebilirliği
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE, Visual C++ proje genişletilebilirliği
 
 Visual C++ proje sistemi dayanır [VS proje sistemi](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)ve onun genişletilebilirlik noktaları kullanır. Ancak, proje hiyerarşisi uygulama Visual C++'a özgüdür ve CPS alarak değil, bu nedenle hiyerarşi genişletilebilirlik proje öğeleri için sınırlıdır.
 
@@ -656,6 +656,6 @@ VSIX dosyaları oluşturma hakkında daha fazla bilgi için bkz: [sevkiyat Visua
 
 Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) proje dosyaları için derleme altyapısı ve XML tabanlı Genişletilebilir biçimi sağlar. Tanımanız gerekir basic ile [MSBuild kavramları](../msbuild/msbuild-concepts.md) ile nasıl [Visual C++ için MSBuild](/cpp/build/msbuild-visual-cpp-overview) proje sistemi Visual C++ genişletebilmek için çalışır.
 
-Yönetilen Genişletilebilirlik Çerçevesi ([MEF](/dotnet/framework/mef/)) uzantı CPS ve Visual C++ proje sistemi tarafından kullanılan API'ler sağlar. MEF CPS tarafından nasıl kullanıldığını genel bakış için bkz: [MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
+Yönetilen Genişletilebilirlik Çerçevesi ([MEF](/dotnet/framework/mef/)) uzantı CPS ve Visual C++ proje sistemi tarafından kullanılan API'ler sağlar. MEF CPS tarafından nasıl kullanıldığını genel bakış için bkz: [CPS ve MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) içinde [MEF VSProjectSystem bakış](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
 Derleme adımları veya yeni bir dosya türleri eklemek için var olan yapı sistemi özelleştirebilirsiniz. Daha fazla bilgi için [MSBuild (Visual C++) genel bakış](/cpp/build/msbuild-visual-cpp-overview) ve [Working with project properties](/cpp/ide/working-with-project-properties).

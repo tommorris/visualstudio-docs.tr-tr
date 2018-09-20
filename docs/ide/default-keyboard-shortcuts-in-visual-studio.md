@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513180"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371166"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -161,7 +161,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.Copy|**CTRL + C**<br /><br /> veya<br /><br /> **CTRL + bileşenleri**|
 |Edit.Cut|**CTRL + X**<br /><br /> veya<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> veya<br /><br /> **Ctrl + Shift + bileşenleri**|
-|Edit.Delete|**Sil**|
+|Edit.Delete|**Delete**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**CTRL + SHIFT + F**|
@@ -460,7 +460,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.Delete|**Ctrl + Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift + Alt + B**|
 |Edit.NavigateToLollipop|**Shift + Alt + L**|
-|Edit.RemovefromDiagram|**Sil**|
+|Edit.RemovefromDiagram|**Delete**|
 |View.ViewCode|**Girin**|
 
 ##  <a name="coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi
@@ -520,7 +520,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**CTRL + SHIFT + K**<br /><br /> veya<br /><br /> **Ctrl + E, C**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Sil**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Delete**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
 ##  <a name="graphics-diagnostics"></a>Grafik tanılaması
@@ -587,7 +587,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Komutlar|Klavye kısayolları|
 |--------------|------------------------|
 |Edit.EditCell|**F2**|
-|Edit.Remove|**Sil**|
+|Edit.Remove|**Delete**|
 |Edit.RemoveRow|**CTRL + Delete**|
 |Edit.SelectionCancel|**Kaçış**|
 |Resources.Audio|**CTRL + 4**|
@@ -742,7 +742,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 
 |Komut|Klavye Kısayolu|
 |-------------|-----------------------|
-|Edit.Delete|**Sil**|
+|Edit.Delete|**Delete**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt + Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt + Aşağı Ok**|
@@ -761,12 +761,6 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**Alt + sağ ok**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**Shift + Alt + C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift + Alt + L**|
-|View.Refresh|**F5**|
-
-##  <a name="team-foundation-build-detail-editor"></a>Team Foundation Yapı Ayrıntı Düzenleyicisi
-
-|Komut|Klavye kısayolu|
-|-------------|-----------------------|
 |View.Refresh|**F5**|
 
 ##  <a name="test-explorer"></a>Test Gezgini
@@ -978,7 +972,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Image.OutlinedRoundedRectangleTool|**Shift + Alt + W**|
 |Image.PencilTool|**CTRL + ı**|
 |Image.PreviousColor|**CTRL + [**<br /><br /> veya<br /><br /> **Ctrl + sol ok**|
-|Image.PreviousRightColor|**CTRL + SHIFT +[**<br /><br /> veya<br /><br /> **CTRL + SHIFT + Sol Ok**|
+|Image.PreviousRightColor|**CTRL + SHIFT + [**<br /><br /> veya<br /><br /> **CTRL + SHIFT + Sol Ok**|
 |Image.RectangleSelectionTool|**Shift + Alt + S**|
 |Image.RectangleTool|**Alt + R**|
 |Image.Rotate90Degrees|**Ctrl + Shift + H**|
@@ -1143,7 +1137,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |GraphView.LefttoRight|**Alt + sağ ok**|
 |GraphView.RighttoLeft|**Alt + sol ok**|
 |GraphView.ToptoBottom|**Alt + Aşağı Ok**|
-|OtherContextMenus.GraphView.RemovefromWorkspace|**Sil**|
+|OtherContextMenus.GraphView.RemovefromWorkspace|**Delete**|
 |XsdDesigner.ShowContentModelView|**CTRL + 2**|
 |XsdDesigner.ShowGraphView|**CTRL + 3**|
 |XsdDesigner.ShowStartView|**CTRL + 1**|

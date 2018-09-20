@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321131"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371068"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -52,16 +52,14 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
 
 -   Visual Studio
 
--   Kodu Team Foundation Yapısı ile otomatik olarak doğrulamak için visual Studio Team Foundation Yapı sunucunuzda
-
 -   Bir bağımlılık diyagram ile bir modelleme projesi olan çözüm. Bu bağımlılık diyagramı, doğrulamak istediğiniz C# veya Visual Basic projelerinde yapılara bağlı olmalıdır. Bkz: [kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md).
 
- Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Kodu Visual Studio'da açık bir bağımlılık diyagramından el ile veya komut isteminde doğrulayabilirsiniz. Ayrıca yerel yapıları veya Team Foundation Yapısı'nı çalıştırırken kodu otomatik olarak doğrulayabilirsiniz. Bkz: [kanal 9 videosu: tasarım ve bağımlılık diyagramlarını kullanarak Mimarinizi doğrulama](http://go.microsoft.com/fwlink/?LinkID=252073).
+Kodu Visual Studio'da açık bir bağımlılık diyagramından el ile veya komut isteminde doğrulayabilirsiniz. Yerel yapıları veya Azure işlem hatları çalıştıran oluşturduğunda otomatik olarak kod da doğrulayabilirsiniz. Bkz: [kanal 9 videosu: tasarım ve bağımlılık diyagramlarını kullanarak Mimarinizi doğrulama](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Team Foundation Yapısı ile katman doğrulaması çalıştırmak istiyorsanız, yapı sunucunuzda ayrıca Visual Studio'nun aynı sürümünü yüklemeniz gerekir.
+> Team Foundation Server'ı kullanarak katman doğrulaması çalıştırmak istiyorsanız, yapı sunucunuzda ayrıca Visual Studio'nun aynı sürümünü yüklemeniz gerekir.
 
 -   [Bir öğenin doğrulamayı destekleyip desteklemediğini görme](#SupportsValidation)
 
@@ -182,51 +180,32 @@ Visual Studio'nun bu sürümünde, bağımlılık doğrulaması gerçek zamanlı
 |Tüm gizlenmiş Hataları Gizle **hata listesi** penceresi|Herhangi bir yere sağ **hata listesi** penceresi **doğrulama hatalarını Yönet**ve ardından **tüm gizlenmiş Hataları Gizle**.|
 
 ##  <a name="ValidateAuto"></a> Kodu otomatik olarak doğrulama
- Her yerel bir yapı çalıştırışınızda katman doğrulama gerçekleştirebilirsiniz. Takınınız Team Foundation Yapısı kullanıyorsa, özel bir MSBuild görevi oluşturarak belirtebileceğiniz geçitli iadelerle katman doğrulaması gerçekleştirebilir ve doğrulama hatalarını toplamak için yapı raporları kullanabilirsiniz. Geçitli iade yapıları oluşturmak için bkz [değişiklikleri doğrulamak için geçişli iade derleme işlemi kullanın](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+
+Her yerel bir yapı çalıştırışınızda katman doğrulama gerçekleştirebilirsiniz. Azure DevOps takımınızın kullandığı ile Geçitli iade etme doğrulama hatalarını toplamak için yapı raporları kullanabilirsiniz ve özel bir MSBuild görevi oluşturarak belirtebileceğiniz işlemleri, katman doğrulama gerçekleştirebilirsiniz. Geçitli iade yapıları oluşturmak için bkz [değişiklikleri doğrulamak için geçişli iade derleme işlemi kullanın](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Kodu yerel yapı sırasında otomatik olarak doğrulamak için
 
--   Modelleme projesi (.modelproj) dosyası açmak için metin düzenleyicisi kullanın ve ardından aşağıdaki özelliği ekleyin:
+Modelleme projesi (.modelproj) dosyası açmak için metin düzenleyicisi kullanın ve ardından aşağıdaki özelliği ekleyin:
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- veya -
+\- veya -
 
 1.  İçinde **Çözüm Gezgini**bağımlılık diyagramı veya diyagramları içeren modelleme projesine sağ tıklayın ve ardından **özellikleri**.
 
 2.  İçinde **özellikleri** penceresinde modelleme projesinin ayarlayın **Mimariyi Doğrula** özelliğini **True**.
 
-     Bu, doğrulama işlemi içinde modelleme projesini içerir.
+    Bu, doğrulama işlemi içinde modelleme projesini içerir.
 
 3.  İçinde **Çözüm Gezgini**, doğrulama için kullanmak istediğiniz bağımlılık diyagramı (.layerdiagram) dosyasına tıklayın.
 
 4.  İçinde **özellikleri** penceresinde emin olun diyagramın **derleme eylemi** özelliği **doğrulama**.
 
-     Bu bağımlılık diyagramı doğrulama işlemindeki içerir.
+    Bu bağımlılık diyagramı doğrulama işlemindeki içerir.
 
- Hata Listesi penceresindeki hataları yönetmek için bkz: [doğrulama hatalarını Yönet](#ManageErrors).
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Kodu Team Foundation Yapısı sırasında otomatik olarak doğrulamak için
-
-1.  İçinde **Takım Gezgini**yapı tanımına çift tıklayın ve ardından **işlem**.
-
-2.  Altında **yapı işlemi parametreleri**, genişletme **derleme**ve aşağıdakileri yazın **MSBuild bağımsız değişkenleri** parametresi:
-
-     `/p:ValidateArchitecture=true`
-
- Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors). Hakkında daha fazla bilgi için [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], bkz:
-
--   [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts)
-
--   [Yapı işleminiz için varsayılan şablonu kullanın](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [UpgradeTemplate.xaml temelindeki bir eski yapı değiştirme](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [Yapı işlemi şablonunuzu özelleştirme](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [Bir çalışan yapı ilerlemesini izleme](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+Hata Listesi penceresindeki hataları yönetmek için bkz: [doğrulama hatalarını Yönet](#ManageErrors).
 
 ##  <a name="TroubleshootingValidation"></a> Katman doğrulama sorunlarını giderme
  Aşağıdaki tabloda katman doğrulama sorunları ve bunların çözümü açıklanmaktadır. Bu sorunlar, kod ve tasarım arasındaki çakışmalarla sonuçlanan hatalardan ayrılır. Bu hatalar hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).

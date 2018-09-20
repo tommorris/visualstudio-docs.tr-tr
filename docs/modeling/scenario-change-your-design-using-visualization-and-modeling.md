@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321170"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371101"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -182,7 +182,7 @@ Ekipler yaptıkları değişiklikleri kaydetmeden önce bağımlılık doğrulam
 
  **Bağımlılık diyagramı**
 
-Kod geliştirme sırasında tasarımla çakışmaların gerçekleşmez emin olmak için takımlar kullandığı bağımlılık doğrulaması yapılar, Team Foundation Build üzerinde çalıştırılır. Bunlar ayrıca, iade etme işlemlerini bağımlılık doğrulaması gerektirmek için özel bir MSBuild görevi oluşturur. Bunlar doğrulama hatalarını toplamak için yapı raporları kullanır.
+Kod geliştirme sırasında tasarımla çakışmaların gerçekleşmez emin olmak için takımlar kullandığı bağımlılık doğrulaması yapılar Azure DevOps üzerinde çalışır. Bunlar ayrıca, iade etme işlemlerini bağımlılık doğrulaması gerektirmek için özel bir MSBuild görevi oluşturur. Bunlar doğrulama hatalarını toplamak için yapı raporları kullanır.
 
 Bkz.
 
@@ -234,7 +234,7 @@ Takımlar her bir görevi tamamladıkça, Team Foundation sürüm denetiminde ke
 
 Şimdi Akşam Yemeği neredeyse tümü halen uygulanabilir olduğu için Lucerne bunları yeniden kullanabilir, otomatik testleri büyük koleksiyonu vardır. Lucerne Ayrıca bu testleri geliştirebilir ve yeni işlevsellikler yenilerini ekleyin. Hem de Visual Studio el ile testler çalıştırmak için kullanın.
 
-Kodun tasarıma uymasını sağlamak için bağımlılık doğrulaması eklemek için Team Foundation derlemesi, takımlar yapılarına yapılandırın. Herhangi bir çakışma oluşursa, ayrıntılarla bir rapor oluşturulur.
+Kodun tasarıma uymasını sağlamak için takımlar yapılarına DevOps bağımlılık doğrulama eklemek için Azure yapılandırın. Herhangi bir çakışma oluşursa, ayrıntılarla bir rapor oluşturulur.
 
 Bkz.
 

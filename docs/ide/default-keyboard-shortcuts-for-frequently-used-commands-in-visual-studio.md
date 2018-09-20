@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512554"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370984"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio'daki sık kullanılan komutlar için varsayılan klavye kısayolları
 
@@ -150,7 +150,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 |View.ObjectBrowser|**Ctrl + Alt + J** [genel]|
 |View.Output|**Ctrl + Alt + O** [genel]|
 |View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Ekip Gezgini, Team Foundation Yapı ayrıntı Düzenleyicisi]|
+|View.Refresh|**F5** [Ekip Gezgini]|
 |View.ServerExplorer|**Ctrl + Alt + S** [genel]|
 |View.ShowSmartTag|**Ctrl+.** [Genel]<br /><br /> veya **Shift + Alt + F10** [genel, HTML düzenleyicisi Tasarım görünümü]|
 |View.SolutionExplorer|**Ctrl + Alt + L** [genel]|

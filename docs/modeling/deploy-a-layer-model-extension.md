@@ -12,65 +12,65 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0ec537ec070188c967c2db02548cf487180c0bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949442"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370919"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Katman modeli uzantısı dağıtma
-Diğer kullanıcılar için Visual Studio, Visual Studio kullanarak oluşturduğunuz uzantıları modelleme katman yükleyebilirsiniz.
 
-## <a name="installing-your-extension"></a>Uzantınızı yükleme
- Uzantınızı diğer bilgisayarlara yükleyebilirsiniz bir dosyaya VSIX derlenir. Uzantıyı Visual Studio ana örneğinde kullanılabilmesi için geliştirme bilgisayarınızda da yükleyebilirsiniz.
+Visual Studio'nun diğer kullanıcıların katman modelleme uzantıları Visual Studio kullanarak oluşturduğunuz yükleyebilirsiniz.
 
-#### <a name="to-install-the-extension"></a>Uzantıyı yüklemek için
+## <a name="install-your-extension"></a>Uzantınızı yükleyin
 
-1.  İçeren projedeki **source.vsix.manifest**, açık **bin\\ \***  dosya Gezgini'nde.
+Uzantınız, diğer bilgisayarlara yükleyebileceğiniz bir VSIX dosyasına derlenir. Uzantı Visual Studio ana örneğinde kullanılabilir hale getirmek için geliştirme bilgisayarınızdaki de yükleyebilirsiniz.
 
-2.  Kopya  **\*.vsix** uzantıyı yüklemek istediğiniz bilgisayara dosya.
+### <a name="to-install-the-extension"></a>Uzantıyı yüklemek için
 
-3.  Hedef bilgisayarda *.vsix dosyasına Windows Gezgini'nde çift tıklayın.
+1.  İçeren projede **source.vsix.manifest**açın **bin\\ \***  dosya Gezgini'nde.
+
+2.  Kopyalama  **\*.vsix** uzantıyı yüklemek istediğiniz bilgisayarın dosyasına.
+
+3.  Hedef bilgisayarda, Windows Gezgini'nde *.vsix dosyasını çift tıklatın.
 
      VSIX yükleyici açılır.
 
-#### <a name="to-uninstall-the-extension"></a>Uzantıyı kaldırmak için
+### <a name="to-uninstall-the-extension"></a>Uzantıyı kaldırmak için
 
-1.  Visual Studio'da üzerinde **Araçları** menüsünde tıklatın **Uzantılar ve güncelleştirmeler**.
+1.  Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.
 
-2.  Uzantı adına tıklayın ve ardından **kaldırma**.
+2.  Uzantının adını tıklatın ve ardından **kaldırma**.
 
-## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Team Foundation Yapı sunucuda uzantı yükleme
- [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] Sunucu normal olarak Visual Studio yüklü değil ve çift tıklatarak VSIX şekilde yükleyemezsiniz. Yüklemesini [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] bazı bileşenleri içeren bir VSIX uzantısının çalışması için izin verilir, ancak uzantı el ile yüklemeniz gerekir.
+## <a name="install-an-extension-on-team-foundation-server"></a>Team Foundation Server'da bir uzantı yükleyin
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Katman uzantınızı yüklemek için bir [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] sunucusu
+Team Foundation Server sunucuları normalde Visual Studio yüklü olmayan ve çift tıklayarak VSIX kadar yükleyemez. Uzantıyı el ile yüklemeniz gerekir.
 
-1.  Kopya **.vsix** geliştirme bilgisayarınıza dosyalarından [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] bilgisayar.
+### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>Katman uzantınızı bir Team Foundation Server sunucuya yüklemek için
 
-     VSIX dosyasını aşağıdaki konumlardan birinde koyun:
+1.  Kopyalama **.vsix** dosyalarını Geliştirme bilgisayarınızdan Team Foundation Server (TFS) bilgisayarda.
 
-    -   Tüm kullanıcılar ve hizmetlerini yüklemek için:
+     VSIX dosyasını şu konumlardan birinde yerleştirin:
+
+    -   Tüm kullanıcılar ve hizmetler için yüklemek için:
 
          %ProgramFiles%\Microsoft visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft
 
-    -   Çalıştıran ağ hizmeti için yüklemek için [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]:
+    -   Yapı çalıştıran ağ hizmeti için yüklemek için:
 
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
-    -   Yapılandırdıysanız [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] belirli bir kullanıcı olarak etkileşimli modda çalıştırmak için o kullanıcı için yükleyebilirsiniz:
+    -   Belirli bir kullanıcı olarak etkileşimli modda çalıştırmak için yapıyı yapılandırdıysanız yalnızca bu kullanıcı için yükleyebilirsiniz:
 
          %LocalAppData%\Microsoft\VisualStudio\\[sürüm] \Extensions\Microsoft
 
-        > [!NOTE]
-        >  % LocalAppData olan genellikle *DriveName*: kullanıcıların*kullanıcıadı*AppDataLocal.
-
-2.  Aynı konumda bir klasöre her VSIX dosyasını genişletin:
+2.  Her VSIX dosyasını aynı konumdaki bir klasöre genişletin:
 
     1.  Dosya adı uzantısını değiştirmek **.vsix** için **.zip**.
 
-    2.  .zip dosyasını bir klasöre içeriğini ayıklayın.
+    2.  Bir klasöre .zip dosyasının içeriğini ayıklayın.
 
-    3.  .Zip dosyasını silin
+    3.  .Zip dosyasını sil
 
-3.  Yeniden [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)].
+3.  TFS yeniden başlatın.

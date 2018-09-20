@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320637"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370971"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
@@ -36,7 +36,7 @@ Visual Studio 2017 için test aracısı veya test denetleyicisi yüklemek için 
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Test denetleyicisi ve test aracılarını yükleme
 
-Aracılar için Visual Studio 2017'den indirebilirsiniz [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Sayfanın alt kısmına kaydırın ve Ara *Visual Studio 2017 için Agents*. Şunlardan birini seçin *aracı* veya *denetleyicisi*ve ardından *indirme*. Denetleyici ve test aracısını yüklemek için indirdiğiniz yürütebilen dosyayı çalıştırın.
+Aracılar için Visual Studio 2017'den indirebilirsiniz [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Ara *Visual Studio 2017 için Agents*, şunlardan birini seçin *aracı* veya *denetleyicisi*ve ardından *indirme*. Denetleyici ve test aracısını yüklemek için indirdiğiniz yürütebilen dosyayı çalıştırın.
 
 Visual Studio 2015 ve Visual Studio 2013 için agents indirebilirsiniz [eski indirmeler](https://visualstudio.microsoft.com/vs/older-downloads/) sayfası.
 
@@ -63,7 +63,7 @@ Tüm yeni otomatikleştirilmiş test senaryolarına Visual Studio için agents k
 Aşağıdaki tabloda, aracıları tarafından Visual Studio 2013 ve alternatifleri için Team Foundation Server (TFS) 2015 ve Azure Test planları için desteklenen senaryolar gösterilmektedir:
 
 | Visual Studio 2013 için Agents tarafından desteklenen senaryoları | Diğer TFS ve Azure Test planları |
-| --- | --- |
+| - | - |
 | Visual Studio yapı-dağıtma-Test iş akışı | Kullanıcılar bir [derleme işlem hattı](/azure/devops/pipelines/index?view=vsts) (XAML derleme değil) için derleme, dağıtma ve test senaryolarında TFS'de. |
 | Yük testi (performans testi) kullanarak uzak makinelere şirket | Kullanım Test denetleyicisi ve Test aracısı 2013 güncelleştirme 5 yük testlerini şirket içinde çalıştırmak için. |
 | Otomatik testler Microsoft Test laboratuvar ortamı kullanma yöneticisinden, uzaktan yürütme | Şu anda bu senaryo için bir alternatif yoktur. İşlevsel testleri çalıştırma görevini derlemede kullanma ve yayın tanımları (değil, bir XAML derleme) öneririz. testleri uzaktan yürütün. |

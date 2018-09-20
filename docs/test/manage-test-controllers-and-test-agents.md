@@ -1,6 +1,6 @@
 ---
 title: Visual Studio'da test aracılarını ve test denetleyicilerini Yönet
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279981"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371036"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Test denetleyicilerini ve test aracılarını yönetme
 
@@ -41,17 +41,15 @@ Farklı test denetleyicisine test aracısı eklemek isteyebilirsiniz veya yükl�
     > [!NOTE]
     > Bir test aracısı test denetleyicisine eklemek için zaten yüklü olması gerekir. Bir test aracısı yükleme hakkında daha fazla bilgi için bkz. [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
 
-2. Şeklini değiştirmek isterseniz, test aracısın çalışma öğesini **Çalıştırma Seçenekleri**.
+2. Test aracısını nasıl çalıştırılabilir için iki seçenek sunulur:
 
-     Çalıştırılacak test aracısını nasıl kolaylaştıracağını için iki seçenek sunulur:
+   - **Hizmet**: Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak zorunda değilsiniz gibi kodlanmış UI testleri veya test, altında çalıştığında bir video kaydı oluşturmak, **test aracısını farklı çalıştır**seçin **hizmeti**. Test aracısı hizmet olarak başlatılacak. Seçin **sonraki**.
 
-     **Hizmet**: Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak zorunda değilsiniz gibi kodlanmış UI testleri veya test, altında çalıştığında bir video kaydı oluşturmak, **test aracısını farklı çalıştır**seçin **hizmeti**. Test aracısı hizmet olarak başlatılacak. Seçin **sonraki**.
+      Artık test aracısı hizmet olarak başladığında kullanıcı hakkındaki ayrıntıları girebilirsiniz.
 
-     Artık test aracısı hizmet olarak başladığında kullanıcı hakkındaki ayrıntıları girebilirsiniz.
+      1. Adı girin **kullanıcı adı**.
 
-    1. Adı girin **kullanıcı adı**.
-
-    2. Parolayı girin **parola**.
+      2. Parolayı girin **parola**.
 
         |**Önemli kullanıcı hesabı bilgileri**|
         |--------------------------------------------|
@@ -60,27 +58,20 @@ Farklı test denetleyicisine test aracısı eklemek isteyebilirsiniz veya yükl�
         |-Aracı kullanıcı adı Aracı hizmeti içinde değilse, bunu eklemek test denetleyicisi üzerinde izinler gerektirir dener.|
         |-Test denetleyicisini kullanmaya çalışan kullanıcı test denetleyicisinin kullanıcı hesabında olmalıdır ya da denetleyiciye karşı testleri çalıştırmak mümkün olmayacaktır.|
 
-     **Etkileşimli işlem**: Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak istiyorsanız, aşağıdaki gibi kodlanmış UI testleri veya testiniz çalıştığında bir video kaydı oluşturma, seçin **etkileşimli işlem**. Test aracısı hizmet yerine etkileşimli bir işlem olarak başlatılacak.
+   - **Etkileşimli işlem**: Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak istiyorsanız, aşağıdaki gibi kodlanmış UI testleri veya testiniz çalıştığında bir video kaydı oluşturma, seçin **etkileşimli işlem**. Test aracısı hizmet yerine etkileşimli bir işlem olarak başlatılacak.
 
-     Sonraki sayfada, test aracısını bir işlem ve diğer seçenekleri başladığında kullanıcı hakkındaki ayrıntıları girin.
+      Sonraki sayfada, test aracısını bir işlem ve diğer seçenekleri başladığında kullanıcı hakkındaki ayrıntıları girin.
 
-    1. Adı girin **kullanıcı adı**.
+      1. Adı girin **kullanıcı adı**.
 
-    2. Parolayı girin **parola**.
+      2. Parolayı girin **parola**.
 
         > [!NOTE]
         > Şu anda etkin kullanıcı olmayan farklı bir kullanıcı ile interaktif bir süreç olarak çalıştırmak için test aracını yapılandırırsanız, bilgisayarı yeniden başlatın ve aracıyı başlatabilmek bu farklı bir kullanıcı oturum açın. Ayrıca, null parolalar kullanıcı hesapları için desteklenmez. IntelliTrace collector ya da ağ öykünmesini kullanmak istiyorsanız, kullanıcı hesabının Yöneticiler grubunun bir üyesi olması gerekir.
 
-        |**Önemli kullanıcı hesabı bilgileri**|
-        |--------------------------------------------|
-        |-Null parolalar kullanıcı hesapları için desteklenmez.|
-        |IntelliTrace'i veya ağ öykünmesi veri ve tanılama bağdaştırıcısını kullanmak istiyorsanız, kullanıcı hesabının Yöneticiler grubunun bir üyesi olmalıdır. Test aracısını çalıştıran makine en az ayrıcalıklı kullanıcı hesabı olan bir işletim sistemi varsa, bu yönetici olarak da çalıştırmanız gerekir (yükseltilmiş).|
-        |-Aracı kullanıcı adı Aracı hizmeti içinde değilse, bunu eklemek test denetleyicisi üzerinde izinler gerektirir dener.|
-        |-Test denetleyicisini kullanmaya çalışan kullanıcı test denetleyicisinin kullanıcı hesabında olmalıdır ya da denetleyiciye karşı testleri çalıştırmak mümkün olmayacaktır.|
+      3. Bir test aracısı olan bilgisayarın yeniden başlattıktan sonra testleri çalıştıracağından emin olmak için bilgisayarı otomatik olarak test aracısı olarak oturumu açması için ayarlayabilirsiniz. Seçin **otomatik olarak oturum açma**. Bu kullanıcı adını ve parolasını şifrelenmiş bir biçimde kayıt defterinde depolar.
 
-    3. Bir test aracısı olan bilgisayarın yeniden başlattıktan sonra testleri çalıştıracağından emin olmak için bilgisayarı otomatik olarak test aracısı olarak oturumu açması için ayarlayabilirsiniz. Seçin **otomatik olarak oturum açma**. Bu kullanıcı adını ve parolasını şifrelenmiş bir biçimde kayıt defterinde depolar.
-
-    4. Masaüstüyle etkileşimde olması gereken otomatikleştirilmiş testleri engelleyebilmesi yüzünden ekran koruyucunun devre dışı bırakıldığından emin olmak için seçin **olun ekran koruyucu devre dışı**.
+      4. Masaüstüyle etkileşimde olması gereken otomatikleştirilmiş testleri engelleyebilmesi yüzünden ekran koruyucunun devre dışı bırakıldığından emin olmak için seçin **olun ekran koruyucu devre dışı**.
 
         > [!WARNING]
         > Otomatik olarak oturum açın veya ekran koruyucuyu devre dışı güvenlik riskleri vardır. Otomatik oturum açmayı etkinleştirerek, diğer kullanıcıların bilgisayarı başlatmasını ve otomatik olarak oturum hesabını kullanabilmelerini sağlar. Ekran koruyucu devre dışı bırakırsanız, bilgisayar kullanıcının oturum açmak bilgisayarın kilidini açmak istemeyebilir. Bu, herkesin bilgisayara fiziksel erişimi olan makineye erişmesine olanak tanır. Bu özellikleri bir bilgisayarda etkinleştirirseniz, bu bilgisayarların fiziksel olarak güvenli olduğundan emin olun. Örneğin, bu bilgisayarların fiziksel olarak güvenli laboratuarda bulunur. (Silerseniz **olun ekran koruyucu devre dışı**, bu ekran koruyucunuzu etkinleştirmez.)
@@ -160,7 +151,7 @@ Değişiklikleri hemen yürürlüğe girer fakat çalışan testleri etkilemez A
 (İsteğe bağlı) Bir test aracısı durumunu değiştirmek için listedeki aracıyı seçin ve ardından aracının geçerli duruma dayanarak kullanılabilir seçeneklerden eylemini seçin.
 
 > [!NOTE]
-> Test aracısını bir işlem olarak çalışıyorsa, test aracısının yüklü olduğu bilgisayarda çalışan bildirim alanında simgesinden test aracısın durumu yönetin. Bu test aracısı durumunu gösterir. Başlat, Durdur veya bu aracı kullanarak bir işlem olarak çalışıyorsa aracıyı yeniden başlatın. Çalışır durumda değilse test aracısını bir işlem olarak başlatmak için seçin **Başlat** > **tüm programlar** > **Microsoft Visual Studio**  >  **Microsoft Visual Studio Test aracısı**. Bu bildirim alanı simgesini ekler.
+> Test aracısını bir işlem olarak çalışıyorsa, test aracısının yüklü olduğu bilgisayarda çalışan bildirim alanında simgesinden test aracısın durumu yönetin. Bu test aracısı durumunu gösterir. Başlat, Durdur veya bu aracı kullanarak bir işlem olarak çalışıyorsa aracıyı yeniden başlatın.
 
 ## <a name="configure-a-test-controller"></a>Bir test denetleyicisi yapılandırın
 
@@ -173,7 +164,7 @@ Test denetleyiciniz, Team Foundation Server Proje koleksiyonu ile kaydetmek isti
 
 ### <a name="to-configure-a-test-controller"></a>Bir test denetleyicisini yapılandırmak için
 
-1. Test denetleyicinizi istediğiniz zaman yeniden yapılandırmak üzere aracı çalıştırmak için seçin **Başlat** > **tüm programlar** >  **Microsoft Visual Studio**  >  **Microsoft Visual Studio Test denetleyicisi yapılandırma aracı**.
+1. Test denetleyicinizi istediğiniz zaman yeniden yapılandırmak üzere aracı çalıştırmak için seçin **Başlat** > **Test denetleyicisi yapılandırma aracı**.
 
      **Test denetleyicisini Yapılandır** iletişim kutusu görüntülenir.
 
@@ -182,9 +173,9 @@ Test denetleyiciniz, Team Foundation Server Proje koleksiyonu ile kaydetmek isti
     > [!NOTE]
     > Null parolalar kullanıcı hesapları için desteklenmez.
 
-4. (İsteğe bağlı) Test denetleyicinizi bir laboratuar ortamında kullanmak istiyor musunuz, ancak yalnızca çalıştırmak için Visual Studio'dan Temizle testleri **projesi koleksiyonuyla Kaydet**.
+4. (İsteğe bağlı) Test denetleyicinizi bir laboratuar ortamında kullanmak istiyor musunuz, ancak yalnızca çalıştırmak için Visual Studio'dan Temizle testleri **kaydı test denetleyicisi takım projesi koleksiyonuyla**.
 
-5. (İsteğe bağlı) Yük testi için test denetleyicisi yapılandırmak için seçin **yükleme testi Yapılandır**. SQL Server örneğinizi yazın **Oluştur yük testi sonuçları veritabanında aşağıdaki SQL Server örneğinde**.
+5. (İsteğe bağlı) Yük testi için test denetleyicisi yapılandırmak için seçin **yük testi için test denetleyicisini Yapılandır**. SQL Server örneği girmeniz **Oluştur yük testi sonuçları veritabanında aşağıdaki SQL Server örneğinde**.
 
 > [!NOTE]
 > Daha fazla sorun giderme test denetleyicileri hakkında daha fazla bilgi için bkz. [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).

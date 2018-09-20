@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29592f7956177a4894967d7f393605a54f7ec07b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513167"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495290"
 ---
 # <a name="vspackage-registration"></a>VSPackage Kaydı
 VSPackage gerekir öneri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yüklenir ve gereken yüklendi. Bu işlem, kayıt defterine bilgi yazma tarafından gerçekleştirilir. Tipik bir iş yükleyicinin olmasıdır.  
@@ -60,4 +60,4 @@ VSPackage gerekir öneri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Installer](/windows/desktop/Msi/windows-installer-portal)   
- [Yönetilen paket kaydı](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Yönetilen paket kaydı](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4228015287be7c2dd5c34fea29f16f2a581b8a62
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: c36ee7332f896ed3228166b2c729a4bc2a4df03c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902629"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496044"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve Yapılandırma Özellikleri için Destek
 **Özellikleri** penceresinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) proje ve yapılandırma özelliklerini görüntüleyebilirsiniz. Kullanıcı, uygulamanın özelliklerini ayarlayabilirsiniz böylece, kendi proje türü için özellik sayfası sağlayabilirsiniz.  
   
- İçinde bir proje düğümü seçerek **Çözüm Gezgini** tıklayıp **özellikleri** üzerinde **proje** menüsünde, yapılandırma içeren bir iletişim kutusunu açabilirsiniz özellikleri. İçinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]ve proje sekmeli sayfa bu iletişim kutusu açılır, bu dillerden türetilmiş türleri [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md). Daha fazla bilgi için [derleme içinde değil: izlenecek yol: Proje oluşturma ve yapılandırma özellikleri (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ İçinde bir proje düğümü seçerek **Çözüm Gezgini** tıklayıp **özellikleri** üzerinde **proje** menüsünde, yapılandırma içeren bir iletişim kutusunu açabilirsiniz özellikleri. İçinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]ve proje sekmeli sayfa bu iletişim kutusu açılır, bu dillerden türetilmiş türleri [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md). Daha fazla bilgi için [derleme içinde değil: izlenecek yol: Proje oluşturma ve yapılandırma özellikleri (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Projeleri (MPFProj) için yönetilen paket çerçevesini oluşturmak ve yeni proje sistemi yönetmek için yardımcı sınıflar sağlar. Kaynak kod ve derleme yönergelerini bulabilirsiniz [projeler - Visual Studio 2013 için MPF](https://github.com/tunnelvisionlabs/MPFProj10).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Yapılandırma özellikleri ve proje kalıcılığı  
  Yapılandırma özellikleri, örneğin proje türüyle ilişkili dosya adı uzantısı, .csproj, .vbproj ve .myproj sahip bir proje dosyasında kalır. Dil projeleri genellikle proje dosyası oluşturmak için bir şablon dosyası kullanın. Ancak, gerçekte proje türleri ve şablonları ilişkilendirmek için çeşitli yollar vardır. Daha fazla bilgi için [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Yapılandırma özellikleri, şablon dosyasına öğeleri ekleyerek oluşturulur. Bu özellikler, ardından bu şablonu kullanan proje türü kullanılarak oluşturulan projeler için kullanılabilir. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projeler ve ikisi de MPFProj [derleme içinde değil: MSBuild'e genel bakış](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) şablon dosyaları için şema. Bu dosyalar her yapılandırma için bir PropertyGroup bölüm içerir. Proje Özellikleri bölümünde bir yapılandırma bağımsız değişken boş bir dize olarak ayarlanmış olan ilk PropertyGroup genellikle kalıcıdır.  
+ Yapılandırma özellikleri, şablon dosyasına öğeleri ekleyerek oluşturulur. Bu özellikler, ardından bu şablonu kullanan proje türü kullanılarak oluşturulan projeler için kullanılabilir. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projeler ve ikisi de MPFProj [derleme içinde değil: MSBuild'e genel bakış](/previous-versions/visualstudio/visual-studio-2008/ms171452(v=vs.90)) şablon dosyaları için şema. Bu dosyalar her yapılandırma için bir PropertyGroup bölüm içerir. Proje Özellikleri bölümünde bir yapılandırma bağımsız değişken boş bir dize olarak ayarlanmış olan ilk PropertyGroup genellikle kalıcıdır.  
   
  Aşağıdaki kod, temel bir MSBuild proje dosyası başlangıcını gösterir.  
   

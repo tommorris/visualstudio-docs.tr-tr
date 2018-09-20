@@ -9,12 +9,12 @@ description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylı
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 51f349b28fa944cf1ca0691d45836dc74f9ecf68
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 878a335f5b576ee3ccf439b35e8a8adc861a9864
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135571"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495667"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
@@ -25,6 +25,9 @@ Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise a
 ## <a name="before-you-start"></a>Başlamadan önce
 
 *   Satın alma işlemlerinizi faturalamak için ihtiyacınız bir [Azure aboneliği](https://azure.microsoft.com/pricing/purchase-options/). Yapabilecekleriniz [kaydolun](https://portal.azure.com) ilk satın alma işleminiz öncesinde veya Visual Studio Market'te ilk satın alma işleminiz sırasında.
+
+## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Kimlerin Visual Studio bulut abonelikleri satın alabilir?
+Hiç kimseyle [sahibi veya katkıda bulunan erişimi](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) bulut abonelikleri Azure aboneliği satın alabilirsiniz.  
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Bulut abonelikleri satın alma
 

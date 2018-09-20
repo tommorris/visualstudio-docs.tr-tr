@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef69ac45a090aa4395aa15d1395cff1665255b51
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cc742fecbbe03ff3d3aa0fb3f8d61a9c5f09254b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639119"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495277"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Uzantıları Windows Installer dağıtımı için hazırlama
 Bir Windows Installer paketi (MSI), bir VSIX paketi dağıtmak için kullanamazsınız. Ancak, bir VSIX paketi MSI dağıtım içeriğini ayıklayabilirsiniz. Bu belge, bir kurulum projesi eklenmek üzere bir VSIX paketi varsayılan çıktısı bir projesini Hazırlama işlemi gösterilmektedir.  
@@ -58,5 +58,5 @@ Bir Windows Installer paketi (MSI), bir VSIX paketi dağıtmak için kullanamazs
 5.  Kalan dosyaları kurulum projenize ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio Installer dağıtımı](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [İzlenecek yol: özel bir eylem oluşturur.](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)
+ [Visual Studio Installer dağıtımı](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [İzlenecek yol: özel bir eylem oluşturur.](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

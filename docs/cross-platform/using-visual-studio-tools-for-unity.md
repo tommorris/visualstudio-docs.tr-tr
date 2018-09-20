@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283346"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496070"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları’nı Kullanma
 
@@ -94,14 +94,6 @@ Boş MonoBehavior yöntemi tanımları MonoBehavior Sihirbazı'nı kullanarak ol
 - Ana Visual Studio menüsünde **Görüntüle > Unity Proje Gezgini**. Klavye kısayolu: **Alt**+**Shift**+**E**
 
      ![Unity Proje Gezgini penceresini görüntüleyin. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Unity hata listesini
-
- Bir Unity örneğine bağlı olduğunda, Visual Studio'nun içinde Unity konsolundan gelen iletileri görüntüleyebilirsiniz. Bu, hataları ve Uyarıları unity'den içerir. Visual Studio'nun iletilerinin görüntülenip **hata listesi** penceresi; hata Unity iletileri görüntülenir **hataları** sekmesi uyarı iletileri üzerinde **uyarıları** sekmesinde ve diğer iletiler — Örneğin, Debug.Log Unity API kullanılarak gönderilen iletileri — görüntülenir **iletileri** sekmesi.
-
- İletileri görmek için Unity projeniz için Visual Studio açıklandığı bağlanmalıdır [Unity hata ayıklama](#unity-debugging) bölümü.
-
- Hataları, uyarıları ve Visual Studio'nun içinde Unity iletileri görmek istemiyorsanız **hata listesi** penceresinde devre dışı bırakabilirsiniz bunları yapılandırma menüde.
 
 ## <a name="unity-debugging"></a>Unity hata ayıklama
 

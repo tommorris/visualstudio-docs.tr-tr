@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc947f68dc5c220ec0bd1ecd035e2089881a80ea
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3ee391ce1200cce03e83f80b6f345ead4cd03199
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498678"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495251"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>İzlenecek yol: bir çekirdek Düzenleyicisi ve bir düzenleyici dosya türü kayıt oluşturma
 Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi ile bir dosya *.myext* dosya adı uzantısı yüklenir.  
@@ -37,7 +37,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
 ### <a name="to-create-the-vspackage"></a>VSPackage'ı oluşturmak için  
   
--   Başlangıç [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oluşturup bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] adlı VSPackage `MyPackage`açıklandığı gibi [izlenecek yol: bir VSPackage menü komutu oluşturmak](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+-   Başlangıç [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oluşturup bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] adlı VSPackage `MyPackage`açıklandığı gibi [izlenecek yol: bir VSPackage menü komutu oluşturmak](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Düzenleyici üreteci eklemek için  
   

@@ -9,12 +9,12 @@ description: Satın alma ve müşterileriniz için Visual Studio bulut abonelikl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a455e645629266be28e50718ae5fffde309b3dd9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282293"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495810"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Satın alma ve müşterileriniz için Visual Studio bulut Abonelikleri Yönetme
 
@@ -28,6 +28,8 @@ ms.locfileid: "44282293"
 
 [Daha fazla bilgi edinin](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
+## <a name="who-can-buy-visual-studio-subscriptions"></a>Kimlerin Visual Studio abonelikleri satın alabilir?
+Hiç kimseyle [sahibi veya katkıda bulunan erişimi](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) Azure abonelik Visual Studio abonelikleri satın alabilir. 
 
 ## <a name="how-to-buy"></a>Satın alma
 

@@ -3,38 +3,36 @@ title: Opsgility avantaj olarak Visual Studio abonelikleri | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 09/19/2018
 ms.topic: Get-Started-Article
-description: Seçili Visual Studio aboneliğine dahildir avantajı eğitim Opsgility öğrenin.
+description: Seçili Visual Studio aboneliğine dahildir Opsgility eğitimi Avantajı hakkında bilgi edinin.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d27e3a10e60a22a026824fe5eae7f7f64bd07414
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280902"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495537"
 ---
-# <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Opsgility avantaj olarak Visual Studio abonelikleri
+# <a name="the-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Opsgility eğitimi avantaja Visual Studio abonelikleri
 
-Seçili Visual Studio Abonelikleri, bir yıl isteğe bağlı eğitim erişim ve Eğitmen tarafından yönetilen eğitim % 15 indirim içerir yanı sıra uygulamalı laboratuvarlar, sertifika yollarına ve daha fazlası için erişim.
+Seçili Visual Studio Abonelikleri, en fazla altı ay erişimle uzman, isteğe bağlı eğitim için laboratuvar ortamlarını ve öğrenme yolları sertifika Canlı içerir.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 1.  Oturum [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Opsgility kutucuğu Araçlar bölümünde avantajlar sayfasında bulun ve tıklatın **etkinleştirme** avantajı kutucuğun alt kısmındaki bağlantı.
-
-3.  Opsgility teklifinizi kullanmak için tıklayın **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.   Kupon kodu başarılı bir şekilde alınmış bir bildirim alacaksınız.  Tıklayın **etkinleştirme** devam etmek için.
+2.  Beceri bana yukarı teklifinizi kullanmak için tıklayın **kodunu Al** avantajı kutucuğun alt kısmındaki bağlantı.   Kupon kodu başarılı bir şekilde alınmış bir bildirim alacaksınız.  Tıklayın **etkinleştirme** devam etmek için.
     > [!div class="mx-imgBorder"]
     > ![Opsgility avantajı kutucuğu](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
-4.  İçin yönlendirilirsiniz [Visual Studio Enterprise için çevrimiçi eğitim Opsgility](https://www.opsgility.com/vse) giriş sayfası.  (, Bir destek uzmanı ile bir sohbet oturumu başlatmak için bir fırsat sunulabilir.  Bir sohbet başlatmak istemiyorsanız, bu pencerenin en aza indirebilirsiniz.)  ' A tıklayın ve istenen kişi bilgileri doldurun **kaydetme**.
+3.  İçin yönlendirilirsiniz [Visual Studio Enterprise için çevrimiçi eğitim Opsgility](https://www.opsgility.com/vse) giriş sayfası.  (, Bir destek uzmanı ile bir sohbet oturumu başlatmak için bir fırsat sunulabilir.  Bir sohbet başlatmak istemiyorsanız, bu pencerenin en aza indirebilirsiniz.)  ' A tıklayın ve istenen kişi bilgileri doldurun **kaydetme**.
     > [!div class="mx-imgBorder"]
     > ![Opsgility avantajı giriş sayfası](_img\vs-opsgility\vs-opsgility-registration.png)
 
-5.  Tüm İşte bu kadar kolay!  Öğrenmeye başlayın hazırsınız demektir.  Başlamanıza yardımcı olmak için sayfanın sol tarafında sağlanan önerilen öğrenme parçaları bir listesi bulunur.  Keyfini çıkarın!
+4.  Tüm İşte bu kadar kolay!  Öğrenmeye başlayın hazırsınız demektir.  Başlamanıza yardımcı olmak için sayfanın sol tarafında sağlanan önerilen öğrenme parçaları bir listesi bulunur.  Keyfini çıkarın!
     > [!div class="mx-imgBorder"]
     > ![Opsgility avantajı giriş sayfası](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
@@ -45,7 +43,7 @@ Seçili Visual Studio Abonelikleri, bir yıl isteğe bağlı eğitim erişim ve 
 | Visual Studio Professional (standart, yıllık bulut) | VL, Azure, perakende                                       | 6 ay                                                            |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | 6 ay                                             |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 6 ay                                              | Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
-| Visual Studio Dev Essentials | Yok  | 3 ay |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir |
+| Visual Studio Dev Essentials | Yok  | 3 ay | Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir  |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
 *Dışlar: Microsoft iş ortağı ağı (MPN), Microsoft değerli ortak (MVP), Microsoft eğitmen, BizSpark, Imagine, NFR, FTE sertifikalı*

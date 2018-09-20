@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace özellikleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 608b183333d3561f9db586955142f94a8371c055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279539"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495732"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace Özellikleri
 
@@ -42,21 +42,21 @@ Intellitrace'in açık olduğunu doğrulamak için açık **Araçlar > Seçenekl
 > [!NOTE]
 > Tüm ayarlar kapsamını **IntelliTrace** seçenekler sayfası olan Visual Studio bir bütün, bunları ayrı projeler veya çözümler. Bu ayarlar bir değişiklik, Visual Studio, tüm hata ayıklama oturumları ve tüm projeler veya çözümlerden tüm örneklerine uygulanır.
 
-## <a name="ChooseEvents"></a> Intellitrace'in kaydettiği olayları seçin
+## <a name="ChooseEvents"></a> (Yalnızca yönetilen kod) Intellitrace'in kaydettiği olayları seçin
 
 Veya belirli IntelliTrace olaylarının kaydı devre dışı bırakabilirsiniz.
 
 Hata ayıklama, hata ayıklamayı durdurun. Git **Araçlar > Seçenekler > IntelliTrace > IntelliTrace olayları**. Intellitrace'in kaydedeceği olayları seçin.
 
-## <a name="Snapshots"></a> Olayları ve anlık görüntüleri toplayın
+## <a name="Snapshots"></a> Anlık görüntüleri toplama
 
-Bu varsayılan olarak etkin değildir ancak IntelliTrace anlık görüntüleri uygulamanızın her bir kesme noktası ve hata ayıklayıcı adım olayı yakalayabilir ve bu anlık görüntüler Geçmiş hata ayıklama oturumunda görüntüleyebilirsiniz. Anlık görüntü, tam uygulama durumu görünümünü verir. Anlık görüntüleri yakalamayı etkinleştirme için Git **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace olaylarını ve anlık görüntüleri**. Daha fazla bilgi için [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüle](../debugger/how-to-use-intellitrace-step-back.md)
+Bu varsayılan olarak etkin değildir ancak IntelliTrace anlık görüntüleri uygulamanızın her bir kesme noktası ve hata ayıklayıcı adım olayı yakalayabilir ve bu anlık görüntüler Geçmiş hata ayıklama oturumunda görüntüleyebilirsiniz. Anlık görüntü, tam uygulama durumu görünümünü verir. Anlık görüntü yakalama özelliğini etkinleştirmek için Git **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace anlık görüntülerini (yönetilen ve yerel)**. Daha fazla bilgi için [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüle](../debugger/how-to-use-intellitrace-step-back.md)
 
-Anlık görüntü Visual Studio Enterprise 2017 sürüm 15.5 ve üzeri ve Windows 10 Yıldönümü güncelleştirmesi gerektirir veya üzeri.  .NET Core ve ASP.NET Core uygulamaları için Visual Studio Enterprise 2017 sürüm 15.7 Önizleme 1 gereklidir.
+Anlık görüntü Visual Studio Enterprise 2017 sürüm 15.5 ve üzeri ve Windows 10 Yıldönümü güncelleştirmesi gerektirir veya üzeri.  .NET Core ve ASP.NET Core uygulamaları için Visual Studio Enterprise 2017 sürüm 15.7 gereklidir. Windows, Visual Studio Enterprise 2017 sürümü 15.9 hedefleyen yerel uygulamalar için Önizleme 2 gereklidir.
 
-## <a name="GoingFurther"></a> IntelliTrace olaylarını toplamak ve çağrı bilgileri
+## <a name="GoingFurther"></a> IntelliTrace olaylarını toplamak ve çağrı bilgileri (yalnızca yönetilen kod)
 
-Bu, varsayılan olarak etkin değildir, ancak IntelliTrace yöntemi çağrılarını olaylarla birlikte kaydedebilir. Yöntem çağrıları Git toplanmasını etkinleştirmek için **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace olayları ve arama bilgileri**.
+Bu, varsayılan olarak etkin değildir, ancak IntelliTrace yöntemi çağrılarını olaylarla birlikte kaydedebilir. Yöntem çağrıları Git toplanmasını etkinleştirmek için **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace olayları ve arama bilgileri (sadece yönetilen)**.
 
 .NET Core ve ASP.NET Core uygulamaları için çağrı bilgileri şu anda kullanılamıyor. 
 

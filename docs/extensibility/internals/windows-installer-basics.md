@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513432"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495550"
 ---
 # <a name="windows-installer-basics"></a>Temel Windows Installer Bilgileri
 Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullanıcının bilgisayarında Windows Yükleyici bileşenlerini (bazen WICs veya yalnızca bileşenleri olarak adlandırılır) olarak adlandırılan birimler içinde bu görevleri gerçekleştirmeye kaldırır. Bir GUID, yükleme ve başvuru sayımı Windows Installer kullanarak ayarları için temel birimdir her WIC tanımlar.  
@@ -75,4 +75,4 @@ Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullan
 -   Tutulan kaynak hiç olmadığı kadar içinde birden fazla WIC sevk etmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bileşen kuralları bozuk olması durumunda ne olur?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Bileşen kuralları bozuk olması durumunda ne olur?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

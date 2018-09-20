@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638036"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495459"
 ---
 # <a name="localize-menu-commands"></a>Menü komutlarını yerelleştirme
 Yerelleştirilmiş oluşturarak menü ve araç çubuğu komutlarını yerelleştirilmiş metin sağlayabilir *.vsct* dosyaları ve yerelleştirilmiş *.resx* dosyaları, VSPackage'ı ve ardından Proje dosyalarını güncelleştirme eklemek için değiştirir.  
@@ -37,7 +37,7 @@ Yerelleştirilmiş oluşturarak menü ve araç çubuğu komutlarını yerelleşt
   
 2.  Bir kopyasını *filename.en US.vsct* her biri için yerelleştirme dili.  
   
-     Her kopya adı *filename. { Yerel ayar} .vsct*burada *{yerel ayarı}* belirli bir kültür adı. Kültür adı değerleri listesi için bkz. [Microsoft tarafından atanan yerel kimlikler](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Her kopya adı *filename. { Yerel ayar} .vsct*burada *{yerel ayarı}* belirli bir kültür adı. Kültür adı değerleri listesi için bkz. [Microsoft tarafından atanan yerel kimlikler](/windows/uwp/publish/supported-languages).  
   
      Bunlar *dosya adı. Locale.vsct* paketiniz için menüsü yerelleştirilmiş metin dosyaları içerir.  
   

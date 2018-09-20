@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77bc0df07520fd2ffab11054e4720bb50ee01903
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dc86619ae769aa9e947d308eca61004e130c0b2a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637756"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495849"
 ---
 # <a name="manage-universal-windows-projects"></a>Evrensel Windows projeleri yönetme
-Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, geliştiricilerin kod ve diğer varlıkları hem de platformlarda kullanmasına izin vererek hem hedef uygulamalardır. Ayrı projeler, bir Windows ve Windows Phone için diğer kaynakları ve platforma özgü kod tutulur ancak paylaşılan kod ve kaynakları bir paylaşılan projede tutulur. Evrensel Windows uygulamaları hakkında daha fazla bilgi için bkz. [Evrensel Windows uygulamaları](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Projeleri Yönetme visual Studio uzantıları Evrensel Windows uygulaması projeleri tek platform uygulamalardan farklı bir yapı olduğunu bilmeniz gerekir. Bu izlenecek yol, paylaşılan proje gidin ve paylaşılan öğelerini yönetmek nasıl gösterir.  
+Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, geliştiricilerin kod ve diğer varlıkları hem de platformlarda kullanmasına izin vererek hem hedef uygulamalardır. Ayrı projeler, bir Windows ve Windows Phone için diğer kaynakları ve platforma özgü kod tutulur ancak paylaşılan kod ve kaynakları bir paylaşılan projede tutulur. Evrensel Windows uygulamaları hakkında daha fazla bilgi için bkz. [Evrensel Windows uygulamaları](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Projeleri Yönetme visual Studio uzantıları Evrensel Windows uygulaması projeleri tek platform uygulamalardan farklı bir yapı olduğunu bilmeniz gerekir. Bu izlenecek yol, paylaşılan proje gidin ve paylaşılan öğelerini yönetmek nasıl gösterir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

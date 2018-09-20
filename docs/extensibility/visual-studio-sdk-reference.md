@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586814"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495693"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK başvurusu
 Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio ad alanları, ilgili ad alanları ve diğer ilgi hakkında bilgi içerir.  
@@ -223,7 +223,7 @@ Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio a
  <xref:Microsoft.VisualStudio.Threading>  
  Visual Studio iş parçacığı için kullanılır.  
   
- [Microsoft.VisualStudio.ConnectedServices Namespace](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) Visual Studio bağlı Hizmetleri için kullanılır.  
+ [Microsoft.VisualStudio.ConnectedServices Namespace](/dotnet/api/microsoft.visualstudio.connectedservices) Visual Studio bağlı Hizmetleri için kullanılır.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) numaralandırması  
  IntelliSense konak bayrakları belirtir.  
@@ -231,7 +231,7 @@ Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio a
  [VSCT XML Şeması Başvurusu](../extensibility/vsct-xml-schema-reference.md)  
  Visual Studio komut tablosu şema öğelerinin bir tablo ile izin verilen alt öğeler ve öznitelikler için her sağlar.  
   
- [GUID'ler ve sabitler](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
+ [GUID'ler ve Sabitler](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  SDK boyunca kullanılan GUID'ler listesi verir.  
   
  [Yönetilen Kodda COM Sabitleri](../extensibility/com-constants-in-managed-code.md)  
@@ -240,7 +240,7 @@ Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio a
  [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)  
  Kaynak Denetimi Eklentisi API konulara bağlantılar.  
   
- [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md)  
+ [Komut Satırı Anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md)  
  Geliştiriciler komut satırından çeşitli görevleri nasıl otomatik hale getirebilirsiniz açıklayan konulara bağlantılar.  
   
  [Hata İşleme ve Dönüş Değerleri](../extensibility/error-handling-and-return-values.md)  

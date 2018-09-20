@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9ef7d4b190a9b2c1a487fb70df33726ca9b3ed4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: dcd2bf5768b26237c5bc9301de9480b549ce01de
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586280"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495368"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow nesnesi
 Bir veya daha fazla metin görünümleri genellikle içerebilir bir özel belge penceresi bir kod penceredir <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> nesne.  
@@ -38,4 +38,4 @@ Bir veya daha fazla metin görünümleri genellikle içerebilir bir özel belge 
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
- [Şekil Düzenle](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Şekil Düzenle](https://www.microsoft.com/download/details.aspx?id=55984)

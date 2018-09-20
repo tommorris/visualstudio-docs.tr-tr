@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8f58e1d576a738c17095b6306261964e448651
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637727"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495927"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler için
 
 [.NET derleyici platformu](https://github.com/dotnet/roslyn) ("Roslyn") kullanan kod kitaplıkları oluşturmanıza yardımcı olur.  Bir kod algılayan kitaplık en iyi şekilde veya hatalarını önlemek için kullanabileceğiniz işlevsellik ve kitaplığı kullanmanıza yardımcı olması için (Roslyn Çözümleyicileri) araçları sağlar.  Bu konuda kullanırken sık karşılaşılan hataları yakalamak için gerçek dünya Roslyn çözümleyicinizi oluşturma gösterilmektedir [gt;System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable) NuGet paketi.  Örnek ayrıca çözümleyici tarafından bulunan bir kodu sorun için bir kod düzeltme sağlamak nasıl gösterir.  Kullanıcılar, Visual Studio ampul UI içinde kod düzeltmeleri görmek ve bir düzeltme kod için otomatik olarak uygulanabilir.
 
-## <a name="get-started"></a>Kullanmaya başlayın
+## <a name="get-started"></a>Başlarken
 
 Bu örneği oluşturmak için gerekenler:
 
@@ -307,13 +307,13 @@ Artık basabilirsiniz **F5** , Çözümleyicisi Visual Studio ikinci bir örneğ
 
 ## <a name="talk-video-and-finish-code-project"></a>Video konuşacak ve bunları kod proje bitiş
 
-Bu örnekte, ele alınan ve geliştirilmiş görebilirsiniz daha ayrıntılı olarak [bu konuşmada](http://channel9.msdn.com/events/Build/2015/3-725).  Konuşma çalışma Çözümleyicisi gösterir ve oluşturma sürecinde size yol gösterir.
+Bu örnekte, ele alınan ve geliştirilmiş görebilirsiniz daha ayrıntılı olarak [bu konuşmada](https://channel9.msdn.com/events/Build/2015/3-725).  Konuşma çalışma Çözümleyicisi gösterir ve oluşturma sürecinde size yol gösterir.
 
 Tüm tamamlanan kodu gördüğünüz [burada](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers).  Alt klasörleri *DoNotUseImmutableArrayCollectionInitializer* ve *DoNotUseImmutableArrayCtor* her sorunları bulmak için bir C# dosyası olması ve kod uygulayan bir C# dosyası gösteren giderir Visual Studio ampul kullanıcı Arabirimi.  Unutmayın, tamamlanan kodu sahip Immutablearray getirilirken önlemek için biraz daha fazla soyutlama\<T > nesnesi tekrar tekrar yazın.  İç içe geçmiş kayıtlı eylemleri kullanılabilir bir bağlamda tür nesnesi kaydetmek için kullandığı her alt işlemleri (nesne oluşturma analiz ve toplama başlatmalar analiz) yürütün.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [\\\Build 2015 konuşma](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\\Build 2015 konuşma](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Tamamlanan kodu github'da](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Üç tür Çözümleyicileri gruplandırılmış github'da çeşitli örnekleri](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [GitHub OSS sitesindeki diğer belgeler](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

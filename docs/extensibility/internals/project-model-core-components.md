@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd3bf8f3f31b914debc6dab4eb5c4f6e7b27086
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512229"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495992"
 ---
 # <a name="project-model-core-components"></a>Proje Modeli Çekirdek Bileşenleri
 Aşağıdaki tablolarda, proje modeli üzerinde genişletin. Tabloları kısa açıklamaları arabirimleri ve model ve arabirimleri ve belirli nesneleri ile ilişkili hizmetleri tanımlanan hizmetleri sunar. Ayrıca, proje oluşturma ve belirli proje türünüzü gereksinimlerine bağlı olarak bakım isteğe bağlı olan diğer arabirimleri tabloları ayrıntılarını gösterir.  
@@ -105,6 +105,6 @@ Aşağıdaki tablolarda, proje modeli üzerinde genişletin. Tabloları kısa a�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Derleme içinde değil: bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanma](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Derleme içinde değil: bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanma](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Sembol tarama araçlarını destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Proje Modeli Öğeleri](../../extensibility/internals/elements-of-a-project-model.md)

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc6691e1b9cd4bd778f70e9b8f4acee3d16601c0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: d5b0b6e640f4fef6cf9508747cff010ff5b5ad6c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586853"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495420"
 ---
 # <a name="vstextview-object"></a>VSTextView nesnesi
 Metin görünümünü görüntülemek ve metin arabelleğini Unicode metni düzenlemek kullanıcıların olanak sağlayan bir penceredir. Esas olarak, hangi kullanıcıların çoğu düzenleyici olarak başvurmak görünümüdür. Görünüm arabellekteki çeşitli metin katmanları (sözcük kaydırma, anahat oluşturma metin ve benzeri) ayrılmış olduğundan, görünüm arabellekteki metni tam bir temsilini olmasını garanti edilmez. Metin görünümü hakkında daha fazla bilgi için bkz. [erişimcisinde görünümü eski API'yi kullanarak erişme](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
@@ -30,7 +30,7 @@ Metin görünümünü görüntülemek ve metin arabelleğini Unicode metni düze
   
 |Arabirim|Açıklama|  
 |---------------|-----------------|  
-|[IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071)|Standart OLE arabirimidir.|  
+|[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|Standart OLE arabirimidir.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|Standart OLE arabirimidir.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Standart OLE arabirimidir.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Standart OLE arabirimidir.|  
@@ -41,6 +41,6 @@ Metin görünümünü görüntülemek ve metin arabelleğini Unicode metni düze
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Farklı bir iş parçacığından görünümü işlemleri gerçekleştirir.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Şekil Düzenle](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+ [Şekil Düzenle](https://www.microsoft.com/download/details.aspx?id=55984)   
  [VSTextBuffer nesnesi](../extensibility/vstextbuffer-object.md)   
  [Eski API'yi kullanarak erişen erişimcisinde görüntüle](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

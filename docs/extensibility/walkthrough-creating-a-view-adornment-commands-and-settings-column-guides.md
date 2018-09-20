@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499997"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496109"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek yol: görünüm kenarlığı, komutlar ve ayarlar (sütun kılavuzları) oluşturma
 Visual Studio metin/Kod Düzenleyicisi komutları ve görünüm efektleriyle genişletebilirsiniz. Bu makalede, bir popüler uzantısı özelliği, sütun kılavuzları ile çalışmaya başlama işlemini göstermektedir. Sütun, kodunuzda belirli sütun genişliklerini yönetmenize yardımcı olmak için metin düzenleyici görünümünde görsel olarak ışık çizgileri kılavuzlardır. Özellikle, biçimlendirilmiş kod belgeleri, blog gönderileri, dahil etmek veya hata raporları örnekleri için önemli olabilir.  
@@ -35,11 +35,11 @@ Visual Studio metin/Kod Düzenleyicisi komutları ve görünüm efektleriyle gen
   
 -   Visual Studio komut penceresinde komutlar yürütmesini desteği eklendi  
   
- Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
  **Not**: Bu kılavuzda, bazı dosyalara Visual Studio uzantı şablonları tarafından oluşturulan büyük miktarda kod yapıştırın. Ancak, yakında bu kılavuzda github'da diğer uzantı örnekleriyle tamamlanmış bir çözümdür başvuracaktır. Tamamlanan kodu generictemplate simgeler kullanmak yerine gerçek komut simgeleri sahip, biraz farklıdır.  
   
-## <a name="get-started"></a>Kullanmaya başlayın  
+## <a name="get-started"></a>Başlarken  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik eklemiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="set-up-the-solution"></a>Çözümü ayarlama  
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>Tamamlanmış kod projesini  
  Bir github projesini Visual Studio genişletilebilirliği örnekleri yakında ve projeyi olacak. Bu makalede, bu durum oluştuğunda var. işaret edecek şekilde güncelleştirilir. Tamamlanan örnek proje, farklı GUID'leri olabilir ve farklı bit eşlemler Şerit komut simgeler için gerekir.  
   
- Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Düzenleyicinin içinde](../extensibility/inside-the-editor.md)   

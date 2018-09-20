@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510672"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495940"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage Kurulum Senaryoları
 
@@ -31,7 +31,7 @@ Bu konuda tartışılan senaryoların yalnızca seçimlerinizi değildir ancak o
 
 ### <a name="make-your-components-independent"></a>Bileşenlerinizin bağımsız olun
 
-Tanımlamak ve doldurmak bir bileşen sonra Ata bir `GUID`ve bileşen dağıtmak, kendi bileşim değiştiremezsiniz. Bir bileşenin bileşim değiştirirseniz, yeni bir bileşen yeni bir sonuç bileşeni olmalıdır `GUID`. Bu bilgiler verildiğinde, her bileşen birimini bağımsız ve kendi sağlayarak en büyük sürüm oluşturma esnekliği gösterilen. Bileşenleri yöneten kurallar hakkında daha fazla bilgi için bkz: [bileşeni kodunun değiştirilmesi](/windows/desktop/Msi/changing-the-component-code) ve [ne olur bileşen kuralları bozuk olduğu?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).
+Tanımlamak ve doldurmak bir bileşen sonra Ata bir `GUID`ve bileşen dağıtmak, kendi bileşim değiştiremezsiniz. Bir bileşenin bileşim değiştirirseniz, yeni bir bileşen yeni bir sonuç bileşeni olmalıdır `GUID`. Bu bilgiler verildiğinde, her bileşen birimini bağımsız ve kendi sağlayarak en büyük sürüm oluşturma esnekliği gösterilen. Bileşenleri yöneten kurallar hakkında daha fazla bilgi için bkz: [bileşeni kodunun değiştirilmesi](/windows/desktop/Msi/changing-the-component-code) ve [ne olur bileşen kuralları bozuk olduğu?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Bir bileşen içinde paylaşılan ve özel kaynakları karıştırmamanızı
 
@@ -77,7 +77,7 @@ Bu durumda, genel derleme önbelleğinde (GAC) yüklü yönetilen VSPackage VSPa
 
 ![VS Yan Yana VS paket güncelleştirme yükleyicisi](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Yan yana derlemelerin dağıtımı hakkında daha fazla bilgi için bkz. [dağıtım basitleştirme ve .NET Framework ile çözme DLL cehennemi](http://msdn.microsoft.com/library/ms973843.aspx).
+Yan yana derlemelerin dağıtımı hakkında daha fazla bilgi için bkz. [dağıtım basitleştirme ve .NET Framework ile çözme DLL cehennemi](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

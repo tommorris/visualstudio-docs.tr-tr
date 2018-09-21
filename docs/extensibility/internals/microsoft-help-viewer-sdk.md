@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513380"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496005"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 Bu makale, Visual Studio Yardım Görüntüleyicisi Tümleştiriciler için aşağıdaki görevleri içerir:  
@@ -439,12 +439,12 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 |-|-|  
 |Özelliği:|**CollapsibleArea**|  
 |Kullanım:|Daraltır içerik denetimi metni Genişlet|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |ExpandText|Genişletin|  
 |CollapseText|Daralt|  
 |Özelliği:|**CodeSnippet**|  
 |Kullanım:|Kod parçacığı denetim metin.  Not: Alanı için kod parçacığı içerik "Bölünemez" alanı ile değiştirilir.|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |CopyToClipboard|Panoya kopyala|  
 |ViewColorizedText|Renkli görüntüle|  
 |CombinedVBTabDisplayLanguage|Visual Basic (örnek)|  
@@ -452,7 +452,7 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 |VBUsage|Kullanım|  
 |Özelliği:|**Geri bildirim, altbilgi ve logosu**|  
 |Kullanım:|Müşteri e-posta yoluyla geçerli konu hakkında geri bildirim sağlamak için bir geri bildirim denetimi sağlar.  Telif Hakkı metin içeriği.  Logo tanımı.|  
-|**Öğesi**|**Değer (Bu dizeler içerik benimseyen gereksinime uygun şekilde değiştirilebilir.)**|  
+|**Öğe**|**Değer (Bu dizeler içerik benimseyen gereksinime uygun şekilde değiştirilebilir.)**|  
 |Telif Hakkı|© 2013 Microsoft Corporation. Tüm hakları saklıdır.|  
 |SendFeedback|\<bir href = "{0}" {1}> geri bildirim gönder\</a > Bu konuda Microsoft'a.|  
 |FeedbackLink||  
@@ -461,7 +461,7 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 |LogoFileNameHC|vs_logo_wh.gif|  
 |Özelliği:|**Sorumluluk reddi**|  
 |Kullanım:|Büyük/küçük harf belirli bildirimleri makine için bir dizi içerik çevrilebilir.|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |MT_Editable|Bu makale makine çevirisi oldu. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin.|  
 |MT_NonEditable|Bu makale makine çevirisi oldu. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin.|  
 |MT_QualityEditable|Bu makalede el ile çevrilmiştir. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin.|  
@@ -470,14 +470,14 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 |MT_BetaRecycledContents|Bu makalede, bir ön sürüm için el ile çevrilmiştir. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin.|  
 |Özelliği:|**LinkTable**|  
 |Kullanım:|Çevrimiçi konusuna bağlantılar için destek|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |LinkTableTitle|Bağlantı tablosu|  
 |TopicEnuLinkText|İngilizce sürümünü görüntülemek\</a > bilgisayarınızda mevcut olan bu konu başlığının.|  
 |TopicOnlineLinkText|Bu konuda görüntülemek \<bir href = "{0}" {1}> Çevrimiçi\</a >|  
 |OnlineText|Çevrimiçi|  
 |Özelliği:|**Video ses denetimi**|  
 |Kullanım:|Öğeleri ve video içeriği için metin görüntüleme|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |MultiMediaNotSupported|Internet Explorer 9 veya üstü yüklü olmalıdır destekleyecek şekilde {0} içeriği.|  
 |VideoText|video görüntüleme|  
 |AudioText|ses akışı|  
@@ -485,25 +485,25 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 |OnlineAudioLinkText|\<p > Bu konu ile ilgili sesi dinlemek için tıklatın {0} \<bir href = "{1}" >{2}burada\</a >.\< /p >|  
 |Özelliği:|**İçerik denetimi yüklü değil**|  
 |Kullanım:|Contentnotinstalled.htm işlemek için kullanılan metin öğelerini (dize)|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |ContentNotInstalledTitle|Bilgisayarınızda hiçbir içerik bulunamadı.|  
 |ContentNotInstalledDownloadContentText|\<p > içeriği bilgisayarınıza indirmek için \<bir href = "{0}" {1}> Yönet sekmesini tıklatın\</a >.\< /p >|  
 |ContentNotInstalledText|\<p > bilgisayarınızda hiçbir içerik yüklenir. Lütfen yerel Yardım içerik yükleme için yöneticinize başvurun. \</p >|  
 |Özelliği:|**Konu denetim bulunamadı**|  
 |Kullanım:|Topicnotfound.htm işlemek için kullanılan metin öğelerini (dize)|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |TopicNotFoundTitle|İstenen konu bilgisayarınızda bulunamıyor.|  
 |TopicNotFoundViewOnlineText|\<p > istediğiniz konu bilgisayarınızda bulunamadı, ancak yapabilecekleriniz \<bir href = "{0}" {1}> konuyu çevrimiçi gör\</a >.\< /p >|  
 |TopicNotFoundDownloadContentText|\<p > benzer konular için Gezinti bölmesine bakın veya \<bir href = "{0}" {1}> Yönet sekmesini tıklatın\</a > bilgisayarınıza içerik indirilemedi.\< /p >|  
 |TopicNotFoundText|\<p > istediğiniz konu bilgisayarınızda bulunamadı. \</p >|  
 |Özelliği:|**Konu bozuk denetimi**|  
 |Kullanım:|Topiccorrupted.htm işlemek için kullanılan metin öğelerini (dize)|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |TopicCorruptedTitle|İstenen konu görüntülenemiyor.|  
 |TopicCorruptedViewOnlineText|\<p > Yardım Görüntüleyiciyi istenen konuyu görüntüleyemiyor. Konunun içeriğinde veya temel bir sistem bağımlılık bir hata olabilir. \</p >|  
 |Özelliği:|**Giriş sayfası denetimi**|  
 |Kullanım:|Yardım Görüntüleyicisi üst düzey düğüm içerik görünümü destekleyen metin.|  
-|**Öğesi**|**Değer**|  
+|**Öğe**|**Değer**|  
 |HomePageTitle|Yardım Görüntüleyicisi giriş sayfası|  
 |HomePageIntroduction|\<p > Microsoft Yardım Görüntüleyici, temel bir kaynağı olan Microsoft araçları, ürünleri, teknolojileri ve hizmetleri kullanan herkes için daha fazla bilgi için Hoş Geldiniz. Nasıl yapılır ve başvuru bilgileri, örnek kod, teknik makaleler ve daha fazla bilgi için Yardım Görüntüleyici erişmenizi sağlar. İçindekilere göz atın, ihtiyacınız olan içeriği bulmak için tam metin araması kullanın veya içerikte anahtar kelime dizinini kullanarak gezinin. \</p >|  
 |HomePageContentInstallText|\<p >\<br / > kullanım \<bir href = "{0}" {1}> İçeriği Yönet\</a > sekmesini aşağıdakileri yapmak için:\<ul >\<li > bilgisayarınıza içerik ekleyin.\< /li >\<li > yerel içerik güncelleştirmelerini denetleyin.\< /li >\<li > bilgisayarınızdan içerik kaldırın.\< /li >\</ul >\</p >|  
@@ -822,13 +822,13 @@ Dağıtılmışsa, bunu test etmek için:
 ### <a name="additional-resources"></a>Ek Kaynaklar  
 Çalışma zamanı API için bkz: [Windows Yardımı API](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
-Yardım API'SİNDEN yararlanarak hakkında ek bilgi için bkz. [Yardım Görüntüleyicisi kod örnekleri](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+Yardım API'SİNDEN yararlanarak hakkında ek bilgi için bkz. [Yardım Görüntüleyicisi kod örnekleri](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 Bu bileşenler hakkında geri bildirim sağlamak için kullanın [Microsoft Connect](http://connect.microsoft.com/).  
   
 Özellik önerileri için lütfen Gönder [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-Ek Yardım almak için deneyin [MSDN Geliştirici belgeleri ve Yardım sistemi forumları](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+Ek Yardım almak için deneyin [MSDN Geliştirici belgeleri ve Yardım sistemi forumları](https://social.msdn.microsoft.com/Forums)  
   
 Sorun, bozucu üzerinde güncelleştirmeleri Lütfen görmek [Yardım Görüntüleyicisi Benioku](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   

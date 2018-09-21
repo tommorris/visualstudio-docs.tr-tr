@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320741"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542513"
 ---
-# <a name="diagnose-problems-after-deployment"></a>Dağıtımdan sonra sorunları tanılama
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama
 
 IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunları tanılamak için Visual Studio otomatik olarak doğru kaynak dosyalarını ve hata ayıklama IntelliTrace günlüğü için gerekli olan simge dosyalarını Bul izin vermek için sürümle yapı bilgilerini içerir.
 
@@ -27,48 +27,27 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
 
  **Şunları yapmanız gerekir:**
 
--   Visual Studio 2017, Visual Studio 2015 veya Team Foundation Server 2017, 2015, 2013, 2012 veya 2010 'un yapınızı kurun
+-   Visual Studio, Azure DevOps veya Team Foundation Server 2017, 2015, 2013, 2012 veya 2010 'un yapınızı kurun
 
 -   Microsoft Monitoring Agent'ı uygulama ve kayıt tanılama verilerinizi izlemek için
 
 -   Tanılama verilerini gözden geçirmek ve kodunuzu IntelliTrace ile hata ayıklamak için Visual Studio Enterprise'ı (ancak Professional veya Community sürümlerini)
 
 ##  <a name="SetUpBuild"></a> 1. adım: Dahil, sürüm bilgileri oluşturun
- Web projeniz için bir derleme bildirimi (Buildınfo.config dosyası) oluşturmak için yapı işleminizi ayarlayın ve sürümünüzü ile bu bildirimi içerir. Bu bildirimi, proje, kaynak denetimi ve belirli bir yapı oluşturmak için kullanılan derleme sistemi hakkında bilgi içerir. Bu bilgiler, kayıtlı olayları gözden geçirmek için IntelliTrace günlük açtıktan sonra eşleşen kaynak ve simgeleri bulmak Visual Studio yardımcı olur.
+ Bir derleme bildirimi oluşturmak için yapı işleminizi ayarlayın (*Buildınfo.config* dosya) web için proje ve sürümünüzü ile bu bildirimi içerir. Bu bildirimi, proje, kaynak denetimi ve belirli bir yapı oluşturmak için kullanılan derleme sistemi hakkında bilgi içerir. Bu bilgiler, kayıtlı olayları gözden geçirmek için IntelliTrace günlük açtıktan sonra eşleşen kaynak ve simgeleri bulmak Visual Studio yardımcı olur.
 
 ###  <a name="AutomatedBuild"></a> Team Foundation Server kullanarak otomatik bir yapı için derleme bildirimi oluşturma
 
  Team Foundation sürüm denetimi veya Git kullanıp aşağıdaki adımları izleyin.
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps ve Team Foundation Server 2017
 
- Derleme bildirimi (Buildınfo.config dosyası) için kaynak, yapı ve simge konumları eklemek için derleme işlem hattı ayarlayın. Team Foundation Yapısı otomatik olarak bu dosyayı oluşturur ve projenizin çıkış klasörüne yerleştirir.
+Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kaldırılan dosya. Dağıtımdan sonra ASP.NET web uygulamalarında hata ayıklamak için aşağıdaki yöntemlerden birini kullanın:
 
-1.  ASP.NET Core (.NET Framework) şablonu kullanarak bir derleme işlem hattı zaten varsa, aşağıdakilerden birini yapabilirsiniz [derleme işlem hattınızı düzenleyebilir veya yeni bir derleme işlem hattı oluşturursunuz.](/azure/devops/pipelines/get-started-designer?view=vsts)
+* Azure'a dağıtım için kullanmak [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
 
-     ![Derleme işlem hattı TFS 2017'de görüntüle](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* IntelliTrace kullanmanız gerekirse, projeyi Visual Studio'da açın ve eşleşen derlemeden sembol dosyalarını yükleyin. Sembol dosyaları yükleyebilir **modülleri** penceresi veya sembolleri yapılandırma **Araçları** > **seçenekleri** > **hata ayıklama**   >  **Sembolleri**.
 
-2.  Yeni bir şablon oluşturursanız, ASP.NET Core (.NET Framework) şablonu seçin.
-
-     ![Derleme işlem şablonu seçme &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  Sembol (PDB) dosyası, kaynağınız otomatik olarak endeksleyen kaydedileceği yeri belirtin.
-
-     Özel bir şablon kullanırsanız, şablonun kaynağınızı dizinleyecek bir aktivitesi olduğundan emin olun. Daha sonra semboller dosyalarının kaydedileceği yeri belirtmek için bir MSBuild bağımsız değişkeni de ekleyeceksiniz.
-
-     ![Derleme işlem hattı TFS 2017 içindeki semboller yolu ayarlama](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     Simgeler hakkında daha fazla bilgi için bkz. [sembol verilerini yayımlama](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
-
-4.  Yapı bildirim dosyası, TFS ve simge konumları eklemek için bu MSBuild bağımsız değişkenini ekleyin:
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     Web sunucunuza erişebilen herkes bu konumlar derleme bildiriminde görebilirsiniz. Kaynak sunucunuzun güvenli olduğundan emin olun.
-
-6.  Yeni bir yapı çalıştırın.
-
-    Git [2. adım: uygulamanızı dağıtın](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Derleme bildirimi (Buildınfo.config dosyası) için kaynak, yapı ve simge konumları eklemek için derleme işlem hattı ayarlayın. Team Foundation Yapısı otomatik olarak bu dosyayı oluşturur ve projenizin çıkış klasörüne yerleştirir.

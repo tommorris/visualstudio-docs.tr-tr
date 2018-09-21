@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433460"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542449"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Hata Ayıklayıcısı'ndaki yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ Hata ayıklayıcı bu yeni özellikler içerir:
 
     ![Geri ve İleri düğmelerini adım](../debugger/media/intellitrace-step-back-icons-description.png  "adım geri ve İleri düğmelerini")
 
-    Daha fazla bilgi için [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüle](../debugger/how-to-use-intellitrace-step-back.md) sayfası.
+    Daha fazla bilgi için [IntelliTrace kullanarak önceki uygulama durumlarını İnceleme](../debugger/view-historical-application-state.md) sayfası.
 
 - **Özel durum Yardımcısı** özel durum Yardımcısı'nı değiştirir ve hatanın oluştuğu kalıcı olmayan iletişim kutusunda görüntülenir. **Özel durum Yardımcısı** herhangi bir iç özel durumlar, hata ayıklayıcı (varsa) tarafından ek çözümleme için daha hızlı erişim ve anında erişim sağlayan **özel durum ayarları** özel durum için. Görmek için gereken bir şey engelleyip engellemediğini özel durum Yardımcısı de kayan görünümüne sürüklenebilir.
 

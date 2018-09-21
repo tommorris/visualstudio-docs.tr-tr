@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284191"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542500"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma
 
@@ -36,7 +36,7 @@ Oturum açtığınızda, Visual Studio deneyimini zenginleştirin. Örneğin, ot
 
 - **Visual Studio deneme süresini uzatmak** -gündür bir ek 90 30 günlük deneme süresiyle sınırlı kalmak yerine, Visual Studio Professional veya Visual Studio Enterprise kullanabilirsiniz.
 
-- **Visual Studio aboneliği veya Azure DevOps Hizmetleri kuruluş ile ilişkili bir hesap kullanırsanız Visual Studio'nun kilidini**. Bkz: [Visual Studio kilidini açma](../ide/how-to-unlock-visual-studio.md).
+- **Visual Studio aboneliği veya Azure DevOps kuruluş ile ilişkili bir hesap kullanırsanız Visual Studio'nun kilidini**. Bkz: [Visual Studio kilidini açma](../ide/how-to-unlock-visual-studio.md).
 
 - **Azure ve Azure DevOps Hizmetleri gibi hizmetleri otomatik olarak bağlanmak** IDE'de sormadan yeniden aynı hesap için kimlik bilgileri.
 

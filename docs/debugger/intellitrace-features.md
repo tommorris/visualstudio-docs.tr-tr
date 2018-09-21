@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495732"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542474"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace Özellikleri
 
@@ -50,7 +50,7 @@ Hata ayıklama, hata ayıklamayı durdurun. Git **Araçlar > Seçenekler > Intel
 
 ## <a name="Snapshots"></a> Anlık görüntüleri toplama
 
-Bu varsayılan olarak etkin değildir ancak IntelliTrace anlık görüntüleri uygulamanızın her bir kesme noktası ve hata ayıklayıcı adım olayı yakalayabilir ve bu anlık görüntüler Geçmiş hata ayıklama oturumunda görüntüleyebilirsiniz. Anlık görüntü, tam uygulama durumu görünümünü verir. Anlık görüntü yakalama özelliğini etkinleştirmek için Git **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace anlık görüntülerini (yönetilen ve yerel)**. Daha fazla bilgi için [IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüle](../debugger/how-to-use-intellitrace-step-back.md)
+Bu varsayılan olarak etkin değildir ancak IntelliTrace anlık görüntüleri uygulamanızın her bir kesme noktası ve hata ayıklayıcı adım olayı yakalayabilir ve bu anlık görüntüler Geçmiş hata ayıklama oturumunda görüntüleyebilirsiniz. Anlık görüntü, tam uygulama durumu görünümünü verir. Anlık görüntü yakalama özelliğini etkinleştirmek için Git **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace anlık görüntülerini (yönetilen ve yerel)**. Daha fazla bilgi için [IntelliTrace kullanarak önceki uygulama durumlarını İnceleme](../debugger/view-historical-application-state.md)
 
 Anlık görüntü Visual Studio Enterprise 2017 sürüm 15.5 ve üzeri ve Windows 10 Yıldönümü güncelleştirmesi gerektirir veya üzeri.  .NET Core ve ASP.NET Core uygulamaları için Visual Studio Enterprise 2017 sürüm 15.7 gereklidir. Windows, Visual Studio Enterprise 2017 sürümü 15.9 hedefleyen yerel uygulamalar için Önizleme 2 gereklidir.
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280629"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542383"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Nasıl yapılır: Visual Studio kilidini açma
 
@@ -27,14 +27,14 @@ Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum im
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Kullanarak çevrimiçi bir abonelikle Visual Studio kilidini açmak için
 
-Visual Studio aboneliği veya bir Microsoft hesabı veya bir iş veya Okul hesabı ile ilişkili Azure DevOps Hizmetleri kuruluş kullanarak Visual Studio kilidini açmak için:
+Visual Studio aboneliği veya bir Microsoft hesabı veya bir iş veya Okul hesabı ile ilişkili Azure DevOps kuruluş kullanarak Visual Studio kilidini açmak için:
 
 1. Tıklayarak **oturum** IDE'nin sağ üst köşesindeki düğme (veya Git **dosya** > **hesap ayarları** açmak için **hesap ayarları**  iletişim ve tıklayarak **oturum** düğmesi).
 
-1. Bir Microsoft hesabı ya da bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, Visual Studio aboneliği veya Azure DevOps Hizmetleri kuruluş hesabınızla ilişkili bulur.
+1. Bir Microsoft hesabı ya da bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, Visual Studio aboneliği veya Azure DevOps kuruluş hesabınızla ilişkili bulur.
 
 > [!IMPORTANT]
-> Visual Studio bir Azure DevOps Hizmetleri kuruluştan bağlandığınızda ilişkili çevrimiçi abonelikler için otomatik olarak arar **Takım Gezgini** araç penceresi. Azure DevOps Hizmetleri kuruluşun bağlandığınızda, hem Microsoft hem de iş kullanarak oturum açın ya da Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir abonelikle varsa Visual Studio IDE sizin için kilidini otomatik.
+> Visual Studio bir Azure DevOps kuruluştan bağlandığınızda ilişkili çevrimiçi abonelikler için otomatik olarak arar **Takım Gezgini** araç penceresi. Azure DevOps kuruluşun bağlandığınızda, hem Microsoft hem de iş kullanarak oturum açın ya da Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir abonelikle varsa Visual Studio IDE sizin için kilidini otomatik.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Visual Studio ürün anahtarı kullanarak kilidini açmak için
 

@@ -7,14 +7,14 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279848"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542450"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Team Foundation sürüm denetimine bağlama 
+# <a name="connecting-to-team-foundation-version-control"></a>Team Foundation sürüm denetimine bağlama
 
 > [!NOTE]
 > **Not**: Team Foundation sürüm denetimi desteği şu anda Önizleme aşamasındadır ve bazı işlevler henüz tam olarak çalışmıyor. Sizden geri bildirim herhangi bir sorun üzerinde isteriz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/41/index.html). Daha fazla değişiklik hala gelen üzeresiniz!
@@ -31,7 +31,7 @@ Azure depoları, sürüm denetimi, iki modeli sağlar: dağıtılan Git sürüm 
 
 Mac için Visual Studio'da **Visual Studio > uzantılar...**  menüsünde. İçinde **galeri** sekmesinde **sürüm denetimi > Team Foundation sürüm denetimi için TFS ve VSTS** tıklatıp **yükle...** :
 
-  ![Uzantı Yöneticisi](media/tfvc-install.png) 
+  ![Uzantı Yöneticisi](media/tfvc-install.png)
 
 Uzantıyı yüklemek için istemleri izleyin. Yüklendikten sonra IDE yeniden başlatın.
 
@@ -39,7 +39,7 @@ Uzantıyı yüklemek için istemleri izleyin. Yüklendikten sonra IDE yeniden ba
 
 TFVC uzantı güncelleştirmeleri düzenli olarak gerçekleştirilir. Güncelleştirmeleri erişmek, seçin **Visual Studio > uzantılar...**  seçin ve menüden **güncelleştirmeleri** sekmesi. Uzantı listesi ve ENTER tuşuna seçin **güncelleştirme** düğmesi:
 
-  ![Uzantı Yöneticisi'ni gösteren güncelleştirme](media/tfvc-update.png) 
+  ![Uzantı Yöneticisi'ni gösteren güncelleştirme](media/tfvc-update.png)
 
 Tuşuna **yükleme** sonraki iletişim kutusunda eski paketi kaldırın ve yenisini yükleyin.
 
@@ -63,7 +63,7 @@ Azure depoları üzerinde barındırılan bir proje seçtiğinizde, Microsoft he
 
 ### <a name="tfs-authentication"></a>TFS kimlik doğrulaması
 
-TFS'ye bağlanmak için sunucu ayrıntıları ve hesap kimlik bilgilerinizi girin. Aksi takdirde temel kimlik doğrulaması kullanmak için boş bırakın, NTLM kimlik doğrulaması kullanmak için bir etki alanını girin. Seçin **sunucusu ekleme**: 
+TFS'ye bağlanmak için sunucu ayrıntıları ve hesap kimlik bilgilerinizi girin. Aksi takdirde temel kimlik doğrulaması kullanmak için boş bırakın, NTLM kimlik doğrulaması kullanmak için bir etki alanını girin. Seçin **sunucusu ekleme**:
 
 ![Bir TFS sunucusuna oturum açın](media/tfvc-login.png)
 
@@ -75,7 +75,7 @@ Başarıyla kimlik doğrulaması yaptınız sonra hesabı ile ilişkili olan dep
 
 Bu iletişim kutusunda, aşağıdaki düğümleri düzenlenmiştir:
 
-- Azure DevOps hizmetler kuruluşundan veya koleksiyon – Bu, oturum açtığınız Microsoft hesabı bağlı tüm organizasyonlar görüntüler.
+- Azure DevOps kuruluş veya koleksiyon – Bu, oturum açtığınız Microsoft hesabı bağlı tüm organizasyonlar görüntüler.
 - Her Kuruluş ve koleksiyon - projeleri projelerinin sayısına sahip olabilir. Kaynak kodu, iş öğeleri ve otomatik yapılara barındırıldığı bir projedir.
 
 Bu noktada, arama filtre ve bir proje veya kuruluş adına göre.
@@ -124,24 +124,24 @@ Bu eylemlerin çoğunu, projenin bağlam eylemleri aracılığıyla sunulur:
 
 Açıklandığı zaten bir çalışma alanı oluşturmadıysanız, [çalışma alanı oluşturma](#creating-a-new-workspace) bölümünde seçeneğinde kaynak kod Gezgini boştur:
 
-![boş bir kaynak kod Gezgini](media/tfvc-setup-empty-sce.png) 
+![boş bir kaynak kod Gezgini](media/tfvc-setup-empty-sce.png)
 
 Uzak bir yerel çalışma alanı projenizle ayarlamak için aşağıdaki adımları kullanın:
 
 1. Seçin **sunucu** Açılır kutudan.
 1. Yerel yol "Eşlenmemiş" ise ve "çalışma alanı" olduğunu unutmayın. Seçin **eşlenmedi** görüntülemek için bağlantıyı **yeni çalışma alanı oluşturma** iletişim.
 1. Çalışma alanı için bir ad belirtin ve ardından **çalışma klasörü Ekle** bilgisayarınızdaki bir yerel klasör proje eşlemek için:
-    
-    ![Varsayılan seçenekleri gösteren yeni bir çalışma alanı iletişim kutusu oluşturma](media/tfvc-workspace1.png) 
+
+    ![Varsayılan seçenekleri gösteren yeni bir çalışma alanı iletişim kutusu oluşturma](media/tfvc-workspace1.png)
 
 1. Sunucunuzdaki tüm projeleri aynı çalışma alanına eşleme her bir proje seçin veya tıklayın "$" klasörü seçin **Tamam**:
-    
-    ![Tüm projeler gösteren klasör iletişim kutusu için Gözat](media/tfvc-workspace2.png) 
+
+    ![Tüm projeler gösteren klasör iletişim kutusu için Gözat](media/tfvc-workspace2.png)
 
 1. Yerel makinenizde ve projeleri için harita tıklayın istediğiniz konumu seçin **Klasör Seç**.
 1. Yeni çalışma alanı ayrıntılarını tuşlarına basarak onaylayın **Tamam**
-    
-    ![Eklenen çalışma klasörü ile yeni çalışma alanı iletişim kutusu oluşturma](media/tfvc-workspace3.png) 
+
+    ![Eklenen çalışma klasörü ile yeni çalışma alanı iletişim kutusu oluşturma](media/tfvc-workspace3.png)
 
 Çalışma alanınızı ayarladıktan sonra onu değiştirilebilir ya tıklayarak kaldırıldı **çalışma alanlarını yönet** düğmesi kaynak kod gezginindedir.
 
@@ -159,14 +159,15 @@ Bir sunucunun kimliğini doğrulamak için aşağıdaki seçenekler kullanılabi
 
 Bunu etkinleştirmek için gereken temel kimlik doğrulaması kullanacak şekilde **alternatif kimlik doğrulama bilgilerini** aşağıdaki adımları izleyerek Azure DevOps Hizmetleri:
 
-1. Azure DevOps Hizmetleri kuruluşunuza sahibi olarak oturum açın (https://dev.azure.com/{organization}/{project}).
+1. Azure DevOps kuruluşunuza sahibi olarak oturum açın (https://dev.azure.com/{organization}/{project}).
+
 2. Kuruluş, araç çubuğunda, dişli simgesini seçin ve seçin **ilke**:
-    
-    ![Seçili İlkesi ayarları seçeneği](media/tfvc-auth2.png) 
+
+    ![Seçili İlkesi ayarları seçeneği](media/tfvc-auth2.png)
 
 3. Uygulama bağlantı ayarlarınızı gözden geçirin. Güvenlik ilkelerine bağlı olarak, bu ayarları değiştirin:
-    
-    ![Seçili İlkesi ayarları seçeneği](media/tfvc-auth.png)  
+
+    ![Seçili İlkesi ayarları seçeneği](media/tfvc-auth.png)
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>Tfvc'de herhangi bir şey göremiyorum
 

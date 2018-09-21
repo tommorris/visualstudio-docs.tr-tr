@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil olan WhiteSource Bolt aboneliği
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279173"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542357"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt, Visual Studio abonelikleri
 
@@ -45,7 +45,7 @@ Bulun, açık kaynak güvenlik açıklarını düzeltin ve derlemenizdeki tüm a
     > [!div class="mx-imgBorder"]
     > ![WhiteSource avantajı yükleme uzantısı](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Ardından,'e tıklayın, istediğiniz Azure DevOps hizmetler kuruluşundan seçin **Onayla**.  (Azure DevOps Hizmetleri henüz ayarlamadıysanız ziyaret [avantajları](https://my.visualstudio.com/benefits) sayfasında ve DevOps Hizmetleri Azure avantajınızı etkinleştirin.)
+    - Ardından,'e tıklayın, istediğiniz Azure DevOps kuruluş seçin **Onayla**.  (Azure DevOps Hizmetleri henüz ayarlamadıysanız ziyaret [avantajları](https://my.visualstudio.com/benefits) sayfasında ve DevOps Hizmetleri Azure avantajınızı etkinleştirin.)
 
     > [!div class="mx-imgBorder"]
     > ![WhiteSource teklifi, hesap onaylayın](_img\vs-whitesource\vs-whitesource-confirm-account.png)
@@ -54,7 +54,7 @@ Bulun, açık kaynak güvenlik açıklarını düzeltin ve derlemenizdeki tüm a
     > [!div class="mx-imgBorder"]
     > ![WhiteSource avantajı yüklenmesi tamamlandı](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Azure DevOps Hizmetleri Proje panonuzu açın, üzerinde **Azure işlem hatları** menü ve **WhiteSource Bolt**.
+5.  Azure DevOps projesi panonuzu açın, üzerinde **Azure işlem hatları** menü ve **WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource avantajı uzantı Ekle](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 

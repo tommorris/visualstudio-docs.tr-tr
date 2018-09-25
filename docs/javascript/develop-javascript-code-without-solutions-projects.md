@@ -2,7 +2,7 @@
 title: Bir çözüm veya proje Visual Studio'da JavaScript kodu yazma
 description: Visual Studio kodu olmadan bir proje dosyası veya çözüm dosyası bir bağımlılık oluşturmak için destek sağlar.
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774611"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168337"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Visual Studio'da JavaScript ve TypeScript kodu çözümlerin veya projelerin olmadan geliştirin
 
@@ -28,7 +28,7 @@ Bu özelliklerin yanı sıra, Visual Studio için Node.js araçları npm betikle
 Başlamak için seçin **klasörünü Aç** Başlat beliren sayfasından Visual Studio'yu açın veya seçebilirsiniz **dosya** > **açın**  >  **Klasör** araç çubuğundan. Çözüm Gezgini tüm dosyaları klasöründe görüntüler ve düzenlemeye başlamak için dosyalardan birini açın. Arka planda, Visual Studio hata ayıklama özelliklerini etkinleştirme npm ve derleme dosyaları dizinler.
 
 > [!IMPORTANT]
-> Npm tümleştirmesi dahil olmak üzere bu makaledeki özelliklerin çoğu Visual Studio 2017 sürüm 15,8 gerektiren Preview 3.
+> Birçok npm tümleştirmesi dahil olmak üzere bu makalede açıklanan özellikler, Visual Studio 2017 sürüm 15,8 gerektirir.
 
 ## <a name="npm-integration"></a>npm tümleştirmesi
 

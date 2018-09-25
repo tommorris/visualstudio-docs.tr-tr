@@ -1,7 +1,7 @@
 ---
 title: Tam zamanında hata ayıklayıcı ile hata ayıklama | Microsoft Docs
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176447"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168402"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Tam zamanında hata ayıklayıcı, Visual Studio kullanarak hata ayıklama
 Visual Studio dışında çalışan bir uygulamada bir özel durum veya kilitlenme oluştuğunda just-In-Time hata ayıklama Visual Studio otomatik olarak başlatır. Bu, Visual Studio çalışmadığı zamanlarda uygulamanızı test edin ve bir sorun ortaya çıktığında, Visual Studio ile hata ayıklamayı başlatmak sağlar.
@@ -48,6 +48,8 @@ Etkinleştirebilir veya tam zamanında Visual Studio'dan hata ayıklama devre d�
 4.  İçinde **temizleyintypes bu tür kod hata ayıklama** kutusunda seçin veya ilgili program türünü: **yönetilen**, **yerel**, veya **betik**.
 
 5.  **Tamam**'ı tıklatın.
+
+    Just-ın-Time etkinleştirirseniz, hata ayıklayıcı, ancak yoksa bkz: Bu bir uygulama kilitlenme veya özel durum [Just-ın-Time hata ayıklama](#jit_errors).
 
 Visual Studio artık bilgisayarınızda yüklü olsa bile just-In-Time hata ayıklamayı hala etkin. Visual Studio yüklü değil, tam zamanında Visual Studio'dan hata ayıklama devre dışı bırakamazsınız **seçenekleri** iletişim kutusu. Bu durumda, tam zamanında hata ayıklama Windows kayıt defterini düzenleyerek devre dışı bırakabilirsiniz.
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  Bu noktada hata ayıklama başlayabilirsiniz. Bu gerçek bir uygulama varsa, kodu özel neden durum bulmak gerekir.
 
-## <a name="just-in-time-debugging-errors"></a>Just-In-Time hata ayıklama hataları
- program çöktüğünde iletişim görmüyorsanız Bu bilgisayarınızdaki Windows hata bildirimi ayarları nedeniyle olabilir. Daha fazla bilgi için [. WER ayarları](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).
+## <a name="jit_errors"></a> Just-In-Time hata ayıklama hataları
+ Program Kilitlenmeler ve özelliği etkinleştirmek gerektiğinde iletişim görmüyorsanız Bu bilgisayarınızdaki Windows hata bildirimi ayarları nedeniyle olabilir. Eklediğinizden emin olun bir **devre dışı bırakılmış** değer aşağıdaki kayıt defteri anahtarları ve değeri 1 olarak ayarlayın:
 
- Just-ın-Time ile ilişkili aşağıdaki hata iletilerinden görebileceğiniz hata ayıklama.
+* HKLM\Software\Microsoft\Windows\Windows hata raporlama
+* HKLM\Software\WOW6432Node\Microsoft\Windows\Windows hata raporlama
+ 
+Bu ayarlar hakkında daha fazla bilgi için bkz. [. WER ayarları](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 
--   **Kilitlenen işleme iliştirilemiyor. Belirtilen program Windows veya bir MS-DOS programı değil.**
+Ayrıca, Just-ın-Time ile ilişkili aşağıdaki hata iletilerinden görebileceğiniz hata ayıklama.
 
-     Başka bir kullanıcı olarak çalışan bir işleme eklemeyi denediğinizde, bu hata oluşur.
+- **Kilitlenen işleme iliştirilemiyor. Belirtilen program Windows veya bir MS-DOS programı değil.**
 
-     Bu soruna geçici bir çözüm, Visual Studio, başlangıç açmak **iliştirme** iletişim kutusundan **hata ayıklama** menü ve hata ayıklamak istediğiniz bulma işlemi **kullanılabilir işlemler**listesi. İşlemin adını bilmiyorsanız, bakmak **Visual Studio anlık hata ayıklayıcısı** iletişim ve Not işlem kimliği İşlemi seçin **kullanılabilir işlemler** listelemek ve tıklayın **iliştirme**. İçinde **Visual Studio anlık hata ayıklayıcısı** iletişim kutusunda, tıklayın **Hayır** iletişim kutusunu kapatın.
+    Başka bir kullanıcı olarak çalışan bir işleme eklemeyi denediğinizde, bu hata oluşur.
 
--   **Hiçbir kullanıcı giriş yapmadığından hata ayıklayıcı başlatılamadı.**
+    Bu soruna geçici bir çözüm, Visual Studio, başlangıç açmak **iliştirme** iletişim kutusundan **hata ayıklama** menü ve hata ayıklamak istediğiniz bulma işlemi **kullanılabilir işlemler**listesi. İşlemin adını bilmiyorsanız, bakmak **Visual Studio anlık hata ayıklayıcısı** iletişim ve Not işlem kimliği İşlemi seçin **kullanılabilir işlemler** listelemek ve tıklayın **iliştirme**. İçinde **Visual Studio anlık hata ayıklayıcısı** iletişim kutusunda, tıklayın **Hayır** iletişim kutusunu kapatın.
 
-     Just-ın-Time olduğunda bu hata oluşur çalışır bir makinede Visual Studio'yu başlatmak hata ayıklama konsolda oturum açmış hiçbir kullanıcı olduğu. Hiçbir kullanıcı oturum açmadığından, Just-ın-Time görüntülemek için bir kullanıcı oturumu var. hata ayıklama iletişim kutusu.
+- **Hiçbir kullanıcı giriş yapmadığından hata ayıklayıcı başlatılamadı.**
 
-     Bu sorunu gidermek için makinede oturum açın.
+    Just-ın-Time olduğunda bu hata oluşur çalışır bir makinede Visual Studio'yu başlatmak hata ayıklama konsolda oturum açmış hiçbir kullanıcı olduğu. Hiçbir kullanıcı oturum açmadığından, Just-ın-Time görüntülemek için bir kullanıcı oturumu var. hata ayıklama iletişim kutusu.
 
--   **Sınıf kayıtlı değil.**
+    Bu sorunu gidermek için makinede oturum açın.
 
-     Bu hata, hata ayıklayıcının, büyük olasılıkla bir yükleme sorunu nedeniyle kayıtlı olmayan bir COM sınıfı oluşturmayı denediğini gösterir.
+- **Sınıf kayıtlı değil.**
 
-     Bu sorunu gidermek için Visual Studio yüklemenizi onarın veya yeniden yüklemek için kurulum diskini kullanın.
+    Bu hata, hata ayıklayıcının, büyük olasılıkla bir yükleme sorunu nedeniyle kayıtlı olmayan bir COM sınıfı oluşturmayı denediğini gösterir.
+
+    Bu sorunu gidermek için Visual Studio yüklemenizi onarın veya yeniden yüklemek için kurulum diskini kullanın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Hata ayıklayıcı, güvenlik](../debugger/debugger-security.md) [hata ayıklayıcı temel bilgileri](../debugger/getting-started-with-the-debugger.md) [Just-ın-hata ayıklama, Time, Seçenekler iletişim kutusu](../debugger/just-in-time-debugging-options-dialog-box.md) [güvenlik uyarısı: güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme olabilir tehlikeli. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

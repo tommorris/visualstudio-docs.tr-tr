@@ -1,7 +1,7 @@
 ---
 title: Python desteğini yükleme
 description: Python Tools için Visual Studio (PTVS) Visual Studio 2017, 2015, 2013, 2012 ve 2010, seçeneklerini ve yükleme konumlarını dahil olmak üzere kurulur.
-ms.date: 06/26/2018
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623921"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168376"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
@@ -25,8 +25,6 @@ ms.locfileid: "42623921"
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 veya önceki](#visual-studio-2013-and-earlier)
-
-Visual Studio 2015 ve önceki sürümler için ayrı olarak etmeniz [bir Python yorumlayıcısını yükleyerek](installing-python-interpreters.md) tercih ettiğiniz (Python 3.5 ve önceki; 3.6 + desteklenmiyor gibi bir ileti oluşturur **desteklenmeyen Python 3.6sürümü**). Aynı sayfayı, ayrıca var olan bir Python yorumlayıcısı Visual Studio 2017'ye ekleme yönergeleri içerir.
 
 Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test etmek için açık **Python etkileşimli** tuşuna basarak pencere **Alt**+**miyim** ve girme`2+2`. Çıkışı görmüyorsanız `4`, adımlarınızı yeniden denetleyin.
 
@@ -96,7 +94,7 @@ Yüklerken veya Visual Studio'da Python çalıştırırken sorunlarla karşıla�
 
     ![Visual Studio 2015 yükleyicisi PTVS seçeneği](media/installation-vs2015.png)
 
-1. Visual Studio Kurulum tamamlandıktan sonra [tercih ettiğiniz bir Python yorumlayıcısını yükleyerek](installing-python-interpreters.md). Bir yorumlayıcı yüklü ve Visual Studio zaten yüklüyse olmayan otomatik olarak algıla bkz [el ile bir ortamı tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+1. Visual Studio Kurulum tamamlandıktan sonra [tercih ettiğiniz bir Python yorumlayıcısını yükleyerek](installing-python-interpreters.md). Visual Studio 2015 yalnızca Python 3.5 ve önceki destekler; sonraki sürüm oluşturma gibi bir ileti **desteklenmeyen Python 3.6 sürümünü**). Bir yorumlayıcı yüklü ve Visual Studio zaten yüklüyse olmayan otomatik olarak algıla bkz [el ile bir ortamı tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 veya önceki
 

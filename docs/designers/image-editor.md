@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624320"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029127"
 ---
 # <a name="image-editor"></a>Görüntü düzenleyicisi
 
@@ -53,8 +53,6 @@ Bu bölümde, Visual Studio projenize bir görüntü ekleyin ve gereksinimlerini
    > Görmüyorsanız **grafik** kategorisinde **Yeni Öğe Ekle** iletişim kutusunda, yüklemeniz gerekebilir **görüntü ve 3B model düzenleyicileri** bileşeni. İletişim kutusunu kapatın ve ardından **Araçları** > **araçları ve özellikleri Al** açmak için menü çubuğundan **Visual Studio yükleyicisi**. Seçin **tek tek bileşenler** sekmesine tıklayın ve ardından **görüntü ve 3B model düzenleyicileri** altındaki bileşen **oyunlar ve grafik** kategorisi. Seçin **değiştirme**.
    >
    > ![Görüntü ve 3B model düzenleyicileri bileşeni](media/image-3d-model-editors-component.png)
-   >
-   > Varsa **görüntü ve 3B model düzenleyicileri** bileşeni yüklü ve hala görmüyorum **grafik** şablon kategorisi, bu kategoriye yalnızca belirli proje türleri, örneğin, konsol göründüğüne dikkat edin uygulamalar.
 
    Gereksinimlerinize göre bir dosya biçimini seçme konusunda daha fazla bilgi için bkz: [görüntü biçimi seçin](#choose-the-image-format).
 
@@ -252,7 +250,7 @@ Aşağıdaki tabloda, araç özellikleri açıklanmaktadır:
 |Geçiş **yakınlaştırma** modu|**Z**|
 |Geçiş **Pan** modu|**K**|
 |Tümünü seç|**CTRL**+**A**|
-|Geçerli seçimi sil|**Sil**|
+|Geçerli seçimi sil|**Delete**|
 |Geçerli seçimi iptal et|**ESC** (çıkış)|
 |Yakınlaştır|**CTRL**+**fare tekerleği ileriye doğru**<br /><br /> **CTRL**+**PageUp**<br /><br /> Artı işareti (**+**)|
 |Uzaklaştır|**CTRL**-**fare tekerleği geriye doğru**<br /><br /> **CTRL**-**PageDown**<br /><br /> Eksi işareti (**-**)|

@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384194"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029114"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Hangi&#39;Visual Studio 2017'deki yenilikler
 
-**İçin güncelleştirilmiş [15,8 sürüm](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
+**İçin güncelleştirilmiş [15,8 sürüm](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Visual Studio'nun önceki bir sürümden yükseltme mi istiyorsunuz? İşte ne Visual Studio 2017, sunabileceğiniz: herhangi bir geliştirme, herhangi bir uygulama ve tüm platformlar için eşsiz üretkenlik. Android, iOS, Windows, Linux, web ve bulut için uygulamalar geliştirmek için Visual Studio 2017'yi kullanın. Hızlı kod yazın, kolayca hata ayıklama ve tanılama yapın, sık sık test edin ve güvenle kullanıma sunun. Ayrıca, kendi uzantılarınızı oluşturarak Visual Studio’yu özelleştirebilir ve kapsamını genişletebilirsiniz. Sürüm denetimi kullanın, Çevik ve bu sürümle birlikte verimli bir şekilde işbirliği yapın!
 
@@ -42,7 +42,7 @@ Visual Studio'nun önceki bir sürümden yükseltme mi istiyorsunuz? İşte ne V
 * **[Yapay ZEKA geliştirme](#ai-development)**. AI için Visual Studio Araçları ile yapay ZEKA yeniliği hızlandırmaya yönelik Visual Studio üretkenlik özelliklerini kullanabilirsiniz. Derleme, test etme ve dağıtma derin öğrenme / AI çözümleri, sorunsuz şekilde tümleştirin Azure Machine Learning ile sağlam deneme özellikleri için.
 
 > [!NOTE]
-> Yeni özellikler ve işlevler Visual Studio 2017'de tam listesi için bkz: [geçerli sürüm notları](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). Ve gelecekteki özellik teklifleri bir bilgi için bkz: [Preview sürüm notları](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
+> Yeni özellikler ve işlevler Visual Studio 2017'de tam listesi için bkz: [geçerli sürüm notları](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Ve gelecekteki özellik teklifleri bir bilgi için bkz: [Preview sürüm notları](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
 Bazı en önemli geliştirmeler ve Visual Studio 2017'de yeni özellikler hakkında daha ayrıntılı bilgi aşağıda verilmiştir.
 
@@ -50,7 +50,7 @@ Bazı en önemli geliştirmeler ve Visual Studio 2017'de yeni özellikler hakkı
 
 ### <a name="a-new-setup-experience"></a>Yeni bir kurulum deneyimi
 
-[Visual Studio 2017'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya [denetleyin Visual Studio sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Visual Studio 2017'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya [denetleyin Visual Studio sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
 
  Visual Studio, daha kolay ve yalnızca ihtiyacınız olduğunda, ihtiyacınız olan özellikleri yüklemek için daha hızlı bir şekilde getirir. Ve iz bırakmadan, çok kaldırılır.
 
@@ -381,7 +381,7 @@ Nasıl size Visual Studio geliştirmek, veya ürün destek seçenekleri hakkınd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017 sürüm notları](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Visual Studio 2017 sürüm notları](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Visual C++ yenilikleri](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# Yenilikleri](/dotnet/csharp/whats-new)
 * [Team Foundation Server için yenilikler nelerdir?](/tfs/server/whats-new?view=vsts)

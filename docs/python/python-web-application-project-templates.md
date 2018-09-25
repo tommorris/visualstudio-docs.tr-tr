@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638719"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029033"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -44,7 +44,7 @@ Tüm **boş \<framework > Web projesini** şablonları ile daha fazla bir proje 
 | --- | --- |
 | **Boş Bottle Web projesi** | En az bir uygulama oluşturur *app.py* bir ana sayfası ile `/` ve `/hello/<name>` yankılayan sayfa `<name>` çok kısa bir satır içi sayfası şablonu kullanarak. |
 | **Boş Django Web projesi** | Bir çekirdek Django site yapısı ancak hiçbir Django uygulamaları ile Django projesi oluşturur. Daha fazla bilgi için [Django şablonları](python-django-web-application-project-template.md) ve [Django adımı 1 bilgi](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Boş bir Flask Web projesi** | Bir tek "Hello World!" ile en az bir uygulama oluşturur. için sayfa `/`. Bu uygulamanın ayrıntılı anlatılan adımları izleyerek sonucunu benzer [hızlı başlangıç: ilk Python web uygulamanızı oluşturmak için Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default). Ayrıca bkz: [Flask adımı 1 bilgi](learn-flask-visual-studio-step-01-project-solution.md).
+| **Boş bir Flask Web projesi** | Bir tek "Hello World!" ile en az bir uygulama oluşturur. için sayfa `/`. Bu uygulamanın ayrıntılı anlatılan adımları izleyerek sonucunu benzer [hızlı başlangıç: ilk Python web uygulamanızı oluşturmak için Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Ayrıca bkz: [Flask adımı 1 bilgi](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Web grubu
 

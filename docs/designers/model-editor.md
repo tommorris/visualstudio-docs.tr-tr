@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624121"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029140"
 ---
 # <a name="model-editor"></a>Model düzenleyicisi
 
-Bu belge görüntüleme, oluşturma ve 3B modelleri değiştirmek için Visual Studio Model Düzenleyicisi ile çalışacak şekilde açıklar.
+Bu belge, Visual Studio ile çalışmaya açıklar **Model Düzenleyicisi** görüntülemek için oluşturma ve 3B modelleri değiştirin.
 
-Sıfırdan temel 3B modeller oluşturmak veya görüntülemek ve tam özellikli 3B modelleme araçları kullanılarak oluşturulmuş daha karmaşık 3B modelleri değiştirmek için Model Düzenleyicisi'ni kullanabilirsiniz. Model Düzenleyicisi, DirectX uygulaması geliştirmede kullanılan çeşitli 3B model biçimlerini destekler.
+Kullanabileceğiniz **Model Düzenleyicisi** sıfırdan temel 3B model oluşturma veya görüntüleyebilir ve tam özellikli 3B modelleme araçları kullanılarak oluşturulmuş daha karmaşık 3B modelleri değiştirebilirsiniz.
 
 ## <a name="supported-formats"></a>Desteklenen biçimler
 
-Model Düzenleyicisi şu model biçimlerini destekler:
+**Model Düzenleyicisi** DirectX uygulaması geliştirmede kullanılan çeşitli 3B model biçimlerini destekler:
 
 |Biçim Adı|Dosya Uzantısı|Desteklenen İşlemler (Görüntüleme, Düzenleme, Oluşturma)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -38,24 +38,31 @@ Model Düzenleyicisi şu model biçimlerini destekler:
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 
-Bu bölümde, Visual Studio projenize bir 3B model eklemeyi açıklar ve kullanmaya başlamak ihtiyacınız olan temel bilgiler sağlanır.
+Bu bölümde, Visual Studio C++ projenize bir 3B model eklemeyi açıklar ve yardımcı olacak diğer temel bilgi başlama.
+
+> [!NOTE]
+> 3B Sahne (.fbx dosyaları) gibi grafik öğelerinin otomatik derleme tümleştirmesi yalnızca C++ projeleri için desteklenir.
 
 ### <a name="to-add-a-3d-model-to-your-project"></a>Projenize bir 3B model eklemek için
 
-1. İçinde **Çözüm Gezgini**, görüntü ekleyin ve ardından istediğiniz proje için kısayol menüsünü açın **Ekle** > **yeni öğe**.
+1. Grafiklerle gerektiğini bileşeni yüklü gerekli Visual Studio olduğundan emin olun. Bileşen çağrılır **görüntü ve 3B model düzenleyicileri**.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunun **grafik** kategorisi, select **3B Sahne (.fbx)**.
+   Yüklemek için Visual Studio yükleyicisi seçerek açın **Araçları** > **araçları ve özellikleri Al** çubuğu ve ardından menüden **tek tek bileşenler**sekmesi. Seçin **görüntü ve 3B model düzenleyicileri** altındaki bileşen **oyunlar ve grafik** kategori tıklayın ve ardından **Değiştir**.
+
+   ![Görüntü ve 3B model düzenleyicileri bileşeni](media/image-3d-model-editors-component.png)
+
+   Bileşeni yükleme başlar.
+
+2. İçinde **Çözüm Gezgini**, görüntüye eklemek ve ardından istediğiniz C++ projesi için kısayol menüsünü açın **Ekle** > **yeni öğe**.
+
+3. İçinde **Yeni Öğe Ekle** iletişim kutusunun **grafik** kategorisi, select **3B Sahne (.fbx)**.
 
    ![Seçili 3B Sahne ile yeni öğesi ekleme](media/add-new-3d-scene.png)
 
    > [!NOTE]
-   > Görmüyorsanız **grafik** kategorisinde **Yeni Öğe Ekle** iletişim kutusunda, yüklemeniz gerekebilir **görüntü ve 3B model düzenleyicileri** bileşeni. İletişim kutusunu kapatın ve ardından **Araçları** > **araçları ve özellikleri Al** açmak için menü çubuğundan **Visual Studio yükleyicisi**. Seçin **tek tek bileşenler** sekmesine tıklayın ve ardından **görüntü ve 3B model düzenleyicileri** altındaki bileşen **oyunlar ve grafik** kategorisi. Seçin **değiştirme**.
-   >
-   > ![Görüntü ve 3B model düzenleyicileri bileşeni](media/image-3d-model-editors-component.png)
-   >
-   > Varsa **görüntü ve 3B model düzenleyicileri** bileşeni yüklü ve hala görmüyorum **grafik** şablon kategorisi, bu kategoriye yalnızca belirli proje türleri, örneğin, konsol göründüğüne dikkat edin uygulamalar.
+   > Görmüyorsanız **grafik** kategorisinde **Yeni Öğe Ekle** iletişim ve **görüntü ve 3B model düzenleyicileri** bileşeni yüklü, grafik öğeleri desteklenmez Proje türü için.
 
-3. Girin **adı** model dosyasını ve ardından **Ekle**.
+4. Girin **adı** model dosyasını ve ardından **Ekle**.
 
 ### <a name="axis-orientation"></a>Eksen yönlendirme
 
@@ -159,7 +166,7 @@ Yapabilecekleriniz *dönüştürme* değiştirerek bir nesneyi kendi **döndürm
 
 Modelleme araçlarını kullanarak veya özellikleri ayarlayarak bir nesneyi dönüştürebilirsiniz.
 
-#### <a name="to-transform-an-object-by-using-modeling-tools"></a>Modelleme araçlarını kullanarak bir nesneyi dönüştürmek için
+#### <a name="transform-an-object-by-using-modeling-tools"></a>Modelleme araçlarını kullanarak bir nesne dönüştürme
 
 1. İçinde **seçin** modunda, dönüştürmek istediğiniz nesneyi seçin. Tel çerçeve yer paylaşımı nesnenin seçili olduğunu gösterir.
 
@@ -167,7 +174,7 @@ Modelleme araçlarını kullanarak veya özellikleri ayarlayarak bir nesneyi dö
 
 3. Dönüştürmeyi gerçekleştirmek için işleyiciyi kullanın. Çeviri ve ölçeklendirme dönüşümlerinde işleyici bir eksen göstergesidir. Bir kerede bir eksen değiştirebilir veya göstergenin ortasındaki beyaz küpü kullanarak aynı anda tüm eksenleri değiştirebilirsiniz. Döndürme için işleyici x eksenine (kırmızı), y eksenine (yeşil) ve z eksenine (mavi) karşılık gelen renk kodlu dairelerden oluşan bir küredir. İstediğiniz döndürmeyi oluşturmak için her ekseni tek tek değiştirmeniz gerekir.
 
-#### <a name="to-transform-an-object-by-setting-its-properties"></a>Özelliklerini ayarlayarak bir nesneyi dönüştürmek için
+#### <a name="transform-an-object-by-setting-its-properties"></a>Nesne özelliklerini ayarlayarak dönüştürme
 
 1. İçinde **seçin** modunda, dönüştürmek istediğiniz nesneyi seçin. Tel çerçeve yer paylaşımı nesnenin seçili olduğunu gösterir.
 
@@ -196,7 +203,7 @@ Pivot noktasının nasıl kullanıldığını gösteren bir örnek için bkz. [n
 
 Taşıma veya kendi köşelerini, kenarlarını ve yüzeylerini silerek bir 3B nesnenin şeklini değiştirebilirsiniz. Varsayılan olarak, Model Düzenleyicisi bulunduğu *nesne modu*, böylece seçebilir ve tüm nesneleri dönüştürme. Noktaları, kenarları veya yüzeyleri seçmek için uygun seçim modunu seçin. Üzerinde **Model Düzenleyicisi modu** araç seçin **seçim modları**ve ardından istediğiniz modu seçin.
 
- Çıkarmayla veya alt bölümlere ayırmayla ek köşeler oluşturabilirsiniz. Çıkarma bir yüzün köşelerini (aynı düzlemli bir yüzler kümesi) çoğaltır ve yüz çoğaltılmış köşelerle bağlı kalır. Alt bölümlere ayırma, önceden bir tane olan yüzeyden birçok yüzey oluşturmak için köşeler ekler. Yeni yüzler oluşturmak için, biri özgün yüzün ortasına ve biri de her bir kenarın ortasına olmak üzere yeni köşeler eklenir ve sonra bunlar orijinal köşelerle birleştirilir. Eklenen yüzlerin sayısı, orijinal yüzdeki köşelerin sayısına eşittir. Her iki durumda da, nesnenin geometrisini değiştirmek için yeni köşeleri çevirebilir, döndürebilir ve ölçeklendirebilirsiniz.
+Çıkarmayla veya alt bölümlere ayırmayla ek köşeler oluşturabilirsiniz. Çıkarma bir yüzün köşelerini (aynı düzlemli bir yüzler kümesi) çoğaltır ve yüz çoğaltılmış köşelerle bağlı kalır. Alt bölümlere ayırma, önceden bir tane olan yüzeyden birçok yüzey oluşturmak için köşeler ekler. Yeni yüzler oluşturmak için, biri özgün yüzün ortasına ve biri de her bir kenarın ortasına olmak üzere yeni köşeler eklenir ve sonra bunlar orijinal köşelerle birleştirilir. Eklenen yüzlerin sayısı, orijinal yüzdeki köşelerin sayısına eşittir. Her iki durumda da, nesnenin geometrisini değiştirmek için yeni köşeleri çevirebilir, döndürebilir ve ölçeklendirebilirsiniz.
 
 #### <a name="to-extrude-a-face-from-an-object"></a>Bir nesneden bir yüzü çıkarmak için
 
@@ -210,21 +217,21 @@ Taşıma veya kendi köşelerini, kenarlarını ve yüzeylerini silerek bir 3B n
 
 2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri** > **Araçları** > **Ayır**.
 
- Ayrıca yüzeyleri üçgenlere bölebilir, nesneleri birleştirebilir ve çokgen seçimlerini yeni nesnelere dönüştürebilirsiniz. Üçgenlere bölme, üçgen olmayan bir yüz, en uygun sayıda üçgene dönüştürülecek şekilde ek kenarlar oluşturur; ancak ek geometrik ayrıntı sağlamaz. Birleştirme işlemi, seçili nesneleri tek bir nesne halinde birleştirir. Yeni nesneler bir çokgen seçiminden oluşturulabilir.
+Ayrıca yüzeyleri üçgenlere bölebilir, nesneleri birleştirebilir ve çokgen seçimlerini yeni nesnelere dönüştürebilirsiniz. Üçgenlere bölme, üçgen olmayan bir yüz, en uygun sayıda üçgene dönüştürülecek şekilde ek kenarlar oluşturur; ancak ek geometrik ayrıntı sağlamaz. Birleştirme işlemi, seçili nesneleri tek bir nesne halinde birleştirir. Yeni nesneler bir çokgen seçiminden oluşturulabilir.
 
-#### <a name="to-triangulate-a-face"></a>Bir yüzü üçgenlere bölmek için
+#### <a name="triangulate-a-face"></a>Bir yüzü üçgenlere bölmek
 
 1. Yüz seçimi modunda, üçgenlere bölmek istediğiniz yüzü seçin.
 
 2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri** > **Araçları** > **üçgenlere**.
 
-#### <a name="to-merge-objects"></a>Nesneleri birleştirmek için
+#### <a name="merge-objects"></a>Nesneleri Birleştir
 
 1. Nesne seçimi modunda, birleştirmek istediğiniz nesneleri seçin.
 
 2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri** > **Araçları** > **nesneleri Birleştir**.
 
-#### <a name="to-create-an-object-from-a-polygon-selection"></a>Çokgen seçiminden bir nesne oluşturmak için
+#### <a name="create-an-object-from-a-polygon-selection"></a>Çokgen seçiminden bir nesne oluşturma
 
 1. Yüz seçimi modunda yeni bir nesne oluşturmak istediğiniz yüzleri seçin.
 
@@ -268,13 +275,13 @@ Kullanabileceğiniz **belge anahattı** görünüm hiyerarşisini görüntüleme
 
 Gerek birini diğerlerinin üst öğesi yaparak, gerekse üst öğe gibi davranan bir yer tutucu düğümünün altında eşdüzeyler olarak birlikte gruplandırarak nesnelerin bir hiyerarşisini oluşturabilirsiniz.
 
-#### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Üst nesnesi olan bir hiyerarşi oluşturmak için
+#### <a name="create-a-hierarchy-that-has-a-parent-object"></a>Bir üst nesnenin sahip bir hiyerarşi oluşturun
 
 1. İçinde **seçin** modu, iki veya daha fazla nesneleri seçebilir. İlk seçtiğiniz öğe üst nesne olur.
 
 2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri** > **Sahne Yönetimi** > **eklemek için üst**.
 
-#### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Eşdüzeyli nesnelerin hiyerarşisini oluşturmak için
+#### <a name="create-a-hierarchy-of-sibling-objects"></a>Hiyerarşi eşdüzeyin nesneleri oluşturma
 
 1. İçinde **seçin** modu, iki veya daha fazla nesneleri seçebilir. Bir yer tutucu nesne oluşturulur ve onların üst nesnesi haline gelir.
 
@@ -292,7 +299,7 @@ Model Düzenleyicisi, ilk seçilen nesneyi (üst öğe haline gelen) tanımlamak
 |Geçiş **yakınlaştırma** modu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Geçiş **Pan** modu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Tümünü seç|**CTRL**+**A**|
-|Geçerli seçimi sil|**Sil**|
+|Geçerli seçimi sil|**Delete**|
 |Geçerli seçimi iptal et|**Kaçış** (**Esc**)|
 |Yakınlaştır|**Fare tekerleği ileriye doğru**<br /><br /> **CTRL**+**fare tekerleği ileriye doğru**<br /><br /> **Shift**+**fare tekerleği ileriye doğru**<br /><br /> **CTRL**+**PageUp**<br /><br /> Artı işareti (**+**)|
 |Uzaklaştır|**Fare tekerleği geriye doğru**<br /><br /> **CTRL**+**fare tekerleği geriye doğru**<br /><br /> **Shift**+**fare tekerleği geriye doğru**<br /><br /> **CTRL**+**PageDown**<br /><br /> Eksi işareti (**-**)|

@@ -2,7 +2,7 @@
 title: C# ASP.NET Core web uygulaması oluşturmak için Visual Studio
 description: Visual Studio'da C# ve ASP.NET Core, adım adım ile basit bir Hello World web uygulaması oluşturmayı öğrenin.
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135623"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028942"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: Kullanım ilk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio
 
@@ -39,9 +39,9 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 1. İçinde **yeni ASP.NET Core Web uygulaması** iletişim kutusunda, doğrulayın **ASP.NET Core 2.0** üstteki açılan menüde görünür. Ardından, **Web uygulaması** ve **Tamam**.
 
-  ![Visual Studio'da C# ASP.NET Core projesi oluşturma işlemini gösterir animasyonlu .gif dosyasını görüntüleyin](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Visual Studio'da C# ASP.NET Core projesi oluşturma işlemini gösterir animasyonlu .gif dosyasını görüntüleyin](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Hemen sonra Visual Studio proje dosyanızı açar.
+   Hemen sonra Visual Studio proje dosyanızı açar.
 
    > [!NOTE]
    > Görmüyorsanız **.NET Core** projesinin şablon kategorisi **açık Visual Studio yükleyicisi** sol bölmede bağlantı.
@@ -58,13 +58,15 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 Ardından, oluşturun ve "Hello World" web uygulamanızı çalıştırın. İşte nasıl.
 
-1. İçinde **Çözüm Gezgini**, genişletme **sayfaları** klasörünü ve ardından **About.cshtml**.
+1. Visual Studio içinde **Çözüm Gezgini**, genişletme **sayfaları** klasör. Ardından, **About.cshtml**.
 
-   Bu dosya adında bir sayfaya karşılık gelen **hakkında** web uygulaması.
+   ![Çözüm Gezgini'nden About.cshtml dosyayı seçin](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   Bu dosya adında bir sayfaya karşılık gelen **hakkında** web uygulamasında, bir web tarayıcısında çalışan.
 
    ![Web uygulaması hakkında sayfası](../ide/media/csharp-aspnet-about-page.png)
 
-1. Okunacak "ek bilgileri" metni değiştirme "**Merhaba Dünya!**".
+1. Visual Studio Kod Düzenleyicisi'nde okumak için "ek bilgileri" metni değiştirme "**Merhaba Dünya!**".
 
 1. İçinde **Çözüm Gezgini**, genişletme **About.cshtml**ve ardından **About.cshtml.cs**.
 
@@ -72,12 +74,12 @@ Ardından, oluşturun ve "Hello World" web uygulamanızı çalıştırın. İşt
 
 1. Seçin **IIS Express** veya basın **Ctrl**+**F5** uygulamayı çalıştırın ve bir web tarayıcısında açın.
 
-  ![Oluşturmayı ve Visual Studio'da C# ASP.NET Core web uygulaması çalıştırmayı gösteren animasyon .gif dosyasını görüntüleyin](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Oluşturmayı ve Visual Studio'da C# ASP.NET Core web uygulaması çalıştırmayı gösteren animasyon .gif dosyasını görüntüleyin](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Yazan bir hata iletisi alırsanız **web sunucusu için 'IIS Express' bağlanılamıyor**, Visual Studio'yu kapatın ve ardından kullanarak açın **yönetici olarak çalıştır** sağ tıklayın veya bağlam menüsünde seçenek. Ardından, uygulamayı yeniden çalıştırın.
 
-1. Doğrulayın **hakkında** sayfa güncelleştirilmiş metni içerir.
+1. Web tarayıcısında doğrulayın **hakkında** sayfa güncelleştirilmiş metni içerir.
 
 1. Web tarayıcısını kapatın.
 

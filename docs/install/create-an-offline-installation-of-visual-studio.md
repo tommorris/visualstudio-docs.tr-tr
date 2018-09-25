@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 987584be6d2d0a2ee794622e64e989de9ea80334
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135584"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028955"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017'in çevrimdışı yüklemesini oluşturma
 
@@ -34,7 +34,7 @@ Biz, Visual Studio 2017'de ağ ve bilgisayar yapılandırmalarını çeşitli i�
 
 ## <a name="use-the-download-all-then-install-feature"></a>Kullanım "tümünü indir ve Yükle" özelliği
 
-[**Yeni 15,8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&view=vs-2017#install
+[**Yeni 15,8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
 ): web yükleyiciyi indirdikten sonra yeni seçin **tümünü indir ve Yükle** Visual Studio Yükleyicisi'nden seçeneği. Ardından, yükleme işlemine devam.
 
    !["Tümünü indir ve Yükle" seçeneği](media/download-all-then-install.png)

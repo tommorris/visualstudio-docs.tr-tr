@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c42e87d6dcf4767621cafdb246294b8a45d0e4a7
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: a1824b9ce04b8a45c011561b73654ac3ccd49f03
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468676"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228922"
 ---
 # <a name="publish-to-azure-app-service"></a>Azure App Service’e yayımlama
 
 > [!Important]
-> Azure App Service'e Python uygulamaları dağıtımı Linux için Visual Studio şu anda desteklenmiyor. Microsoft, Windows üzerinde App Service'te Python kullanımdan kaldırmaya planlamaktadır. Güncelleştirmeler kullanılabilir olduğunda bu makalede yayımlanacak. Bu arada, kapsayıcıları kullanarak Linux üzerinde App Service'e dağıtabilirsiniz. Daha fazla bilgi için [kapsayıcılar için Web App'e bir Python web uygulaması dağıtma](/azure/app-service/containers/quickstart-python).
+> Azure App Service'e Python uygulamaları dağıtımı Linux için Visual Studio şu anda desteklenmiyor. Microsoft, Windows üzerinde App Service'te Python kullanımdan kaldırmaya planlamaktadır. Güncelleştirmeler kullanılabilir olduğunda bu makalede yayımlanacak. Bu arada, kapsayıcıları kullanarak Linux üzerinde App Service'e dağıtabilirsiniz. Daha fazla bilgi için [Linux üzerinde Azure App Service'te bir Python web uygulaması oluşturma](/azure/app-service/containers/quickstart-python).
 
 Visual Studio, doğrudan Azure App Service'e Python web uygulaması yayımlama olanağı sağlar. Azure App Service'e yayımlama anlamına gelir sunucuya gerekli dosyaları kopyalanıyor ve uygun bir ayar *web.config* uygulamanızı başlatmak nasıl web sunucusuna yönlendiren dosya.
 

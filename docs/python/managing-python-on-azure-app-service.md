@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 96c3ce9a8272493b66607ab9513ce1bb7f46817e
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468721"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228909"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Azure App Service'te bir Python ortamını kurma
 
 > [!Important]
-> Microsoft, Python uzantıları için App Service Linux üzerinde App Service'e bir doğrudan dağıtım yerine bu makalede açıklanan şekilde kullanımdan kaldırmaya planlamaktadır. Uzantılar, yine de sırada çalışmaya devam eder. Linux üzerinde App Service'e dağıtmak için bkz. [kapsayıcılar için Web App'e bir Python web uygulaması dağıtma](/azure/app-service/containers/quickstart-python).
+> Microsoft, Python uzantıları için App Service Linux üzerinde App Service'e bir doğrudan dağıtım yerine bu makalede açıklanan şekilde kullanımdan kaldırmaya planlamaktadır. Uzantılar, yine de sırada çalışmaya devam eder. Linux üzerinde App Service'e dağıtmak için bkz. [Linux üzerinde Azure App Service'te bir Python web uygulaması oluşturma](/azure/app-service/containers/quickstart-python).
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) REST API'leri kullanarak kendi istemciler veya olayla tetiklenen işlem tarafından kullanılan bir tarayıcı aracılığıyla erişilen siteleri oldukları olup, hizmet olarak platform sunan web uygulamaları için. App Service uygulamaları uygulamak için Python'ı kullanarak tam olarak destekler.
 

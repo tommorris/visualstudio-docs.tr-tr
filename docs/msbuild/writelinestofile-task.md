@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile görevi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341816"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228844"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile görevi
 Belirtilen öğe yolları, belirtilen bir metin dosyasına yazar.  
@@ -39,7 +39,8 @@ Belirtilen öğe yolları, belirtilen bir metin dosyasına yazar.
 |`Lines`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Dosyaya yazmak için öğeleri belirtir.|  
 |`Overwrite`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, görev dosyasındaki varolan içeriğin üzerine yazar.|  
 |`Encoding`|İsteğe bağlı `String` parametresi.<br /><br /> Örneğin, "Unicode" kodlama karakter seçer.  Ayrıca bkz: <xref:System.Text.Encoding>.|  
-  
+|`WriteOnlyWhenDifferent`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, hedef dosya varsa, belirtilen görev ne yazardı karşı Karşılaştırılacak ilk okunacak. Aynı dosyaya yazılan değil, disk ve zaman damgası korunur.|  
+
 ## <a name="remarks"></a>Açıklamalar  
  Varsa `Overwrite` olduğu `true`, yeni bir dosya oluşturur, içeriği dosyaya yazın ve ardından dosyayı kapatır. Hedef dosya zaten varsa üzerine yazılır. Varsa `Overwrite` olduğu `false`, dosyaya içerik ekler, hedef dosya zaten yoksa, oluşturma.  
   

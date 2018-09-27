@@ -1,7 +1,7 @@
 ---
 title: Python için Azure SDK
 description: Python için Azure SDK'sı, Microsoft Azure hizmetlerinden herhangi bir platformda çalışan Python uygulamaları kullanmasını kolaylaştırır.
-ms.date: 06/26/2018
+ms.date: 09/56/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 6c7f38dbe58c5172c8480c88ae84c6e28f5d512b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0a68027e975357a404cd7b4f29c837767c60e015
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545560"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228818"
 ---
 # <a name="azure-sdk-for-python"></a>Python için Azure SDK
 
@@ -37,17 +37,21 @@ De izleyebilirsiniz [yüklemeniz Python ve SDK'sı](https://docs.microsoft.com/a
 
 ## <a name="documentation"></a>Belgeler
 
-Belgeler bulunabilir [python.readthedocs.org için azure SDK'sı](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
+Tüm belgeler bulundu [Azure Python Geliştirici Merkezi için](https://docs.microsoft.com/en-us/python/azure/?view=azure-python). Qucik deneyimi için bkz: [Python kullanarak bulut geliştirmeye başlayın](/python/azure/python-sdk-azure-get-started?view=azure-python).
 
-[Python Geliştirici Merkezi için Azure SDK'sı](https://azure.microsoft.com/develop/python/) de faydalı kaynaklara, birçok öğretici dahil olmak üzere birçok vardır:
+Ayrıca bkz. Bu öğreticiler için diğer Azure Hizmetleri ile Python kullanarak:
 
-- Web apps ile oluşturma [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app), ve [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
-- [BLOB Depolama](/azure/storage/storage-python-how-to-use-blob-storage)
-- [Tablo depolama](/azure/storage/storage-python-how-to-use-table-storage)
-- [Kuyruk depolama](/azure/storage/storage-python-how-to-use-queue-storage)
-- [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
-- [Service Bus kuyrukları](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-- [Hizmet veri yolu konuları/abonelikleri](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- Azure uygulama hizmeti:
+  - [Web uygulamaları oluşturma](/azure/app-service/containers/quickstart-python)
+  - [Azure'da Docker Python ve PostgreSQL web uygulaması oluşturma](/azure/app-service/containers/tutorial-docker-python-postgresql-app)
+- Azure Depolama:
+  - [BLOB Depolama](/azure/storage/blobs/storage-quickstart-blobs-python)
+  - [Tablo depolama ve Cosmos DB](/azure/cosmos-db/table-storage-how-to-use-python)
+  - [Kuyruk depolama](/azure/storage/queues/storage-python-how-to-use-queue-storage)
+  - [Flask ve Cosmos DB](/azure/cosmos-db/sql-api-python-application)
+- Hizmet veri yolu
+  - [Service Bus kuyrukları](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
+  - [Hizmet veri yolu konuları/abonelikleri](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Hizmet Yönetimi](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Belgeler olmadan ortak API'ler için birim testleri içindeki [SDK'sı GitHub deposu](https://github.com/Azure/azure-sdk-for-python) iyi bir bilgi kaynağı olan:
@@ -58,6 +62,6 @@ Belgeler olmadan ortak API'ler için birim testleri içindeki [SDK'sı GitHub de
 
 ## <a name="support"></a>Destek
 
-Git deposu için SDK'sı şu konumdadır [ https://github.com/Azure/azure-sdk-for-python ](https://github.com/Azure/azure-sdk-for-python).
+SDK'sı GitHub deposunu şu konumdadır [ https://github.com/Azure/azure-sdk-for-python ](https://github.com/Azure/azure-sdk-for-python).
 
 [Deponun sorunlar dosya](https://github.com/Azure/azure-sdk-for-python/issues) problemleri bulun ya da SDK'sının kullanım ile ilgili sorularınız varsa.

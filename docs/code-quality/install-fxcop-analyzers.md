@@ -1,5 +1,5 @@
 ---
-title: FxCop Çözümleyicileri yükleyin
+title: FxCop çözümleyicilerini yükleme
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c03387c20601b8d0af79067d7ff8dc1ce7bc599
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 117bf47fb5a733dfba02da98b5cae610a0aab5c7
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513647"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228863"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio'da FxCop Çözümleyicileri yükleyin
 
@@ -26,7 +26,7 @@ Bir NuGet paketi olarak veya Visual Studio bir VSIX uzantısı, bu FxCop Çözü
 
 ## <a name="to-install-fxcop-analyzers-as-a-nuget-package"></a>FxCop Çözümleyicileri bir NuGet paketi olarak yüklemek için
 
-1. [Hangi Çözümleyicisi paket sürümünü](#analyzer-package-versions) yüklemek için Visual Studio sürümünüze bağlı.
+1. [Hangi Çözümleyicisi paket sürümünü](#fxcopanalyzers-package-versions) yüklemek için Visual Studio sürümünüze bağlı.
 
 1. Visual Studio kullanarak kullanarak paketi yükleyin [Paket Yöneticisi Konsolu](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) veya [Paket Yöneticisi UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
@@ -45,7 +45,7 @@ Visual Studio sürümünüz için yüklenecek FxCop Çözümleyicileri paketini 
 
 |Visual Studio sürümü|FxCop Çözümleyicisi Paket sürümü|
 |-|-|
-|Visual Studio 2017 sürüm 15.5 ve üzeri|Örneğin, 2.6.1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.1|
+|Visual Studio 2017 sürüm 15.5 ve üzeri|2.6.2, örneğin https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2|
 |Visual Studio 2017 sürüm 15.3 için 15.4|Örneğin, 2.3.0-Beta1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1|
 |Visual Studio 2017 sürüm 15.0 için 15.2|Örneğin, 2.0.0-Beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2|
 |Visual Studio 2015 güncelleştirme 2 ve 3|Örneğin, sürüm 1.2.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2|

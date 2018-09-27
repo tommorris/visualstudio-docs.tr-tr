@@ -1,7 +1,7 @@
 ---
 title: Python kodunda hata ayıklama
 description: Visual Studio'da hata ayıklama özellikleri özellikle kesme noktaları ayarlama, Adımlama, değerler geçirerek, özel durumlar arama ve etkileşimli pencerede hata ayıklama da dahil olmak üzere Python kodu için bir kılavuz.
-ms.date: 08/14/2018
+ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: fa331093e6085179a20638b1314200f65deb6a61
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624295"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228948"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -74,7 +74,7 @@ Bir kesme noktasında durduruldu sonra kodunuz içinde adım adım veya yeniden 
 
 | Özellik | Tuş vuruşu | Açıklama |
 | --- | --- | --- |
-| **Devam et** | **F5** | Kod, sonraki kesme noktasına ulaşılıncaya kadar çalışır. |
+| **Continue** | **F5** | Kod, sonraki kesme noktasına ulaşılıncaya kadar çalışır. |
 | **Adımla** | **F11** | Sonraki deyimi çalıştırır ve durdurur. Sonraki ifade bir işlev çağrısı ise, hata ayıklayıcı çağrılan işlevin ilk satırına durdurur. |
 | **Üzerinden adımla** | **F10** | (Çalışan tüm kodun) bir işlev çağrısını yapmadan dahil olmak üzere, sonraki deyimi çalıştırır ve herhangi bir dönüş değeri uygulanıyor. Üzerinden Adımlama kolayca hata ayıklama gerekmez işlevleri atlamanızı sağlar. |
 | **Dışına adımla** | **Shift**+**F11** | Kod için çağırma deyimine adımları sonra geçerli işlevin sonuna kadar çalışır.  Bu komut, geçerli işlevin geri kalanında hata ayıklamak ihtiyacınız kalmadığında yararlıdır. |
@@ -227,9 +227,45 @@ Ptvsd yüklemenizi yönetmek için:
 
 1. Sürüm (sürüm, Visual Studio ile birlikte) 4.1.1a9 düşüktür, seçin **X** sağındaki paketin eski sürümü kaldırın. Visual Studio, ardından ile birlikte gelen sürümünü kullanır. (PowerShell kullanarak da kaldırabilirsiniz `pip uninstall ptvsd`.)
 
-1. Alternatif olarak, en yeni sürümü için ptvsd paketi güncelleştirebilirsiniz. Girin `ptvsd --upgrade -pre` seçip arama kutusuna **komutu çalıştırın: pip install komutunu ptvsd--yükseltme - öncesi**. (Ayrıca aynı PowerShell komutu kullanabilirsiniz.)
+1. En yeni sürümü için'ndaki yönergeleri takip ederek ptvsd paket alternatif olarak, güncelleştirebilirsiniz [sorun giderme](#troubleshooting) bölümü.
 
-    ![Python ortamları penceresinde yükseltme komut vererek](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>Sorun giderme
+
+Hata ayıklayıcısı ile sorun yaşarsanız, ilk gibi ptvsd sürümünüzü yükseltin:
+
+1. Gidin **paketleri** sekmesinde **Python ortamları** penceresi.
+
+1. Girin `ptvsd --upgrade` seçip arama kutusuna **komutu çalıştırın: pip install komutunu ptvsd--yükseltme**. (Ayrıca aynı PowerShell komutu kullanabilirsiniz.)
+
+    ![Python ortamları penceresinde ptvsd yükseltme komut vererek](media/debugging-experimental-upgrade-ptvsd.png)
+
+Sorunlar devam ederse lütfen sorunu üzerinde dosya [PTVS GitHub deposu](https://github.com/Microsoft/ptvs/issues).
+
+### <a name="enable-debugger-logging"></a>Hata ayıklayıcı günlüğü etkinleştir
+
+Bir hata ayıklayıcı sorunu araştırmaya sırasında Microsoft, etkinleştirmek ve tanılama aşamasında yardımcı hata ayıklayıcı günlükleri toplamak için isteyebilir.
+
+Aşağıdaki adımlar, geçerli Visual Studio oturumunda hata ayıklamayı etkinleştir:
+
+1. Visual Studio kullanarak bir komut penceresi açın **görünümü** > **diğer Windows** > **komut penceresi** menü komutu.
+
+1. Aşağıdaki komutu girin:
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. Hata ayıklamayı başlatmak ve tüm adımları sorununuzu yeniden oluşturmak için gerekli olan aracılığıyla gidin. Bu süre boyunca, hata ayıklama günlükleri görünür **çıkış** penceresinin altında **hata ayıklama bağdaştırıcısı konağı günlüğü**. Ardından, günlükleri pencereden kopyalayın ve bir GitHub sorunu, e-posta, vb. yapıştırın.
+
+    ![Hata ayıklayıcı çıkış penceresinde günlük çıktısı](media/debugger-logging-output.png)
+
+1. Visual Studio kilitleniyor veya aksi halde erişmeye değilsiniz **çıkış** penceresinde, Visual Studio'yu yeniden başlatın, bir komut penceresi açın ve aşağıdaki komutu girin:
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. Hata ayıklamayı başlatmak ve sorunu yeniden oluşturun. Hata ayıklayıcı günlükleri ardından bulunabilir `%temp%\DebugAdapterHostLog.txt`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

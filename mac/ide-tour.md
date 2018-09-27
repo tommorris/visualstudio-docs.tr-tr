@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 337badd0f32dad5c6bbf87dd981dc47de0cb87d3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624219"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228870"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio için Mac turu
 
@@ -97,7 +97,7 @@ Mac için Visual Studio, Git, Subversion kaynak denetimi sistemleriyle tümleşt
 
 ![Kaynak denetimi altında proje belirtmek için dal adı](media/ide-tour-image22.png)
 
-Değişen dosyaları ile kaydedilmemiş bir ek açıklama simgelerine çözüm bölmesinde, aşağıdaki görüntüde gösterildiği gibi vardır:
+Dosyaları kaydedilmemiş değişikliklerle bir ek açıklama simgelerine çözüm bölmesinde üzerinde aşağıdaki görüntüde gösterildiği gibi sahiptir:
 
 ![Çözüm panelinde kaydedilmemiş dosyaları](media/ide-tour-image23.png)
 

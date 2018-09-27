@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f154afe78d01fb7f139308c09f669528b645859
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280100"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228896"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. adım: yoklamalar Flask Web projesi şablonunu kullanma
 
@@ -359,4 +359,4 @@ Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulamayı müşt
 - Azure işlem hatları gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (Azure depoları, GitHub veya başka bir yerde) ile çalışma ek olarak, Azure otomatik olarak birim testlerinizi yayın için bir önkoşul olarak çalıştırın ve ayrıca önce ek testler için bir hazırlık sunucusu dağıtmak için işlem hattı yapılandırın Test planları olabilir Üretim dağıtımı. Ayrıca, Azure DevOps Hizmetleri izleme App Insights gibi çözümleri ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için bkz.:
 
   - [Azure DevOps projeleri ile Python için CI/CD işlem hattı oluşturma](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Visual Studio Team Services (video, 11m 21s) ile azure'da Python geliştirme](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
+  - [Azure DevOps (video, 11m 21s) ile azure'da Python geliştirme](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

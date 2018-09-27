@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 0d08a3fda756a1800b943cf02183187a2c180c20
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204134"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228883"
 ---
 # <a name="msbuild-items"></a>MSBuild öğeleri
 MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder (dosyaları belirtilen `Include` özniteliği). Öğeleri öğesi adlarına dayalı öğe türlerine gruplanır. Öğe türleri parametre olarak görevleri için kullanılabilir öğe listeleri içeren adlandırılır. Görevler, derleme işleminin adımları gerçekleştirmek için öğe değerlerini kullanın.  
@@ -35,7 +35,7 @@ MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder
 </ItemGroup>  
 ```  
   
- Öğe *file2.cs* öğesi kaldırmayacağına *file1.cs*; bunun yerine, dosya adı için değerleri listesine eklenir `Compile` öğe türü. Bir yapının değerlendirme aşamasında bir öğe türünden bir öğe kaldırılamıyor.  
+ Öğe *file2.cs* öğesi kaldırmayacağına *file1.cs*; bunun yerine, dosya adı için değerleri listesine eklenir `Compile` öğe türü.
   
  Aşağıdaki XML bir her iki dosyada bildirerek aynı öğe türü oluşturur. `Include` özniteliği. Dosya adları noktalı virgülle ayrılır dikkat edin.  
   
@@ -180,7 +180,7 @@ Joker karakterler hakkında daha fazla bilgi için bkz: [nasıl yapılır: derle
  .NET Framework 3.5, başlangıç `Target` öğeleri [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğeler içerebilir öğeler öğesi. Bu bölümdeki öznitelikleri bir öğe için belirtilen geçerli bir `ItemGroup` olan bir `Target`.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Öznitelik Kaldır  
- Öğeler bir `ItemGroup` hedefi içerebilir `Remove` özniteliği öğesi türünden belirli öğeler (dosyalar) kaldırır. Bu öznitelik, .NET Framework 3. 5 ' sunulmuştur.  
+ `Remove` Öznitelik öğesi türünden belirli öğeler (dosyalar) kaldırır. Bu öznitelik .NET Framework 3. 5 ' kullanıma sunulmuştur, ancak yalnızca içinde hedefleri MSBuild 15.0 kadar destekleniyordu.
   
  Aşağıdaki örnek kaldırır her *.config* dosyasından derleme öğe türü.  
   

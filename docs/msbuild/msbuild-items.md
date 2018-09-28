@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d08a3fda756a1800b943cf02183187a2c180c20
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228883"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443603"
 ---
 # <a name="msbuild-items"></a>MSBuild öğeleri
 MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder (dosyaları belirtilen `Include` özniteliği). Öğeleri öğesi adlarına dayalı öğe türlerine gruplanır. Öğe türleri parametre olarak görevleri için kullanılabilir öğe listeleri içeren adlandırılır. Görevler, derleme işleminin adımları gerçekleştirmek için öğe değerlerini kullanın.  
@@ -60,25 +60,26 @@ MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder
  Genişletildiğinde, varsayılan olarak, bir öğe türünün öğeleri noktalı virgülle (;) ayrılır. Kullanabileceğiniz sözdizimi @(\<Itemtype >, '\<ayırıcı >') varsayılan dışındaki bir ayırıcı belirtmek için. Daha fazla bilgi için [nasıl yapılır: virgülle ayrılmış bir öğe listesini görüntüleme](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Joker karakter öğelerini belirtmek için kullanın  
- Kullanabileceğiniz **, \*, ve? her dosyayı ayrı ayrı listelemek yerine bir yapı için girdi olarak bir dosya grubu belirtmek için joker karakterler.  
-  
--   ? joker karakter, bir tek karakterle eşleşir.  
-  
--   * Joker karakter, sıfır veya daha fazla karakter ile eşleşir.  
-  
--   ** Joker karakter dizisi ile eşleşen bir kısmi yol.  
 
-Örneğin, tüm belirtebilirsiniz *.cs* projesini içeren bir dizindeki dosyaları dosya proje dosyanızda aşağıdaki öğesini kullanarak.  
+Kullanabileceğiniz `**`, `*`, ve `?` her dosyayı ayrı ayrı listelemek yerine bir yapı için girdi olarak bir dosya grubu belirtmek için joker karakter.
+  
+- `?` Joker karakter, bir tek karakterle eşleşir.
+- `*` Joker karakter, sıfır veya daha fazla karakter ile eşleşir.
+- `**` Joker karakter dizisi ile eşleşen bir kısmi yol.
+
+Örneğin, tüm belirtebilirsiniz `.cs` projesini içeren bir dizindeki dosyaları dosya proje dosyanızda aşağıdaki öğesini kullanarak.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-Şu öğe tüm seçer *.vb* dosya çubuğunda *D:* sürücü:  
+Şu öğe tüm seçer `.vb` dosya çubuğunda `D:` sürücü:
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+Dahil etmek değişmez değer isterseniz `*` veya `?` joker karakter genişletmesi olmadan bir öğe karakterleriyle gerekir [joker karakterleri kaçış](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 Joker karakterler hakkında daha fazla bilgi için bkz: [nasıl yapılır: derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md).  
 

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b492f0dca9df9e5ef78cb261df325599e9e895
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 022eef30e7e067ca622650a2f5e702cd9a8168b9
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125060"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443499"
 ---
 # <a name="common-quick-actions"></a>Yaygın Hızlı Eylemler
 
@@ -31,7 +31,7 @@ Hızlı Eylemler Bu bölümde, bir derleme başarısız olmasına neden olan kod
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Doğru yanlış yazılmış sembol veya anahtar sözcüğü
 
-Bir tür veya Visual Studio'da anahtar sözcüğü yanlışlıkla yazarsanız, bu hızlı işlem otomatik olarak bunu sizin için düzeltir. Ampul menüsü bu öğeleri görürsünüz **"değişiklik '*yanlış word*'to'*düzeltmek word*'**.  Örneğin:
+Bir tür veya Visual Studio'da anahtar sözcüğü yanlışlıkla yazarsanız, bu hızlı işlem otomatik olarak bunu sizin için düzeltir. Ampul menüsü bu öğeleri görürsünüz **"değişiklik '*yanlış word*'to'*düzeltmek word*'**. Örneğin:
 
 ```csharp
 // Before
@@ -100,49 +100,11 @@ private void MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# ve Visual Basic | Visual Studio 2017 sürüm 15.3 |
 
-### <a name="make-method-asynchronous"></a>Zaman uyumsuz yöntem yapın
-
-Kullanırken `await` veya `Await` anahtar sözcüğü bir yöntem içinde bu yöntem ile işaretlenmiş beklenmektedir `async` veya `Async` anahtar sözcüğü.  Ancak, bu durumda değilse, hızlı bir eylem, zaman uyumsuz hale getirdiğini görünür. Kullanım **yöntemi/işlev zaman uyumsuz hale getirin** hızlı Eylemler menüsünden seçeneği.
-
-```csharp
-// Before
-int MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-
-// Make method asynchronous
-
-// After
-async Task<int> MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-```
-
-```vb
-' Before
-Function MyAsyncMethod() as Integer
-    Return  Await Task.Run(...)
-End Function
-
-' Make method asynchronous
-
-' After
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return Await Task.Run(...)
-End Function
-```
-
-|  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
-| ------- | -------------------- | ----------------  |
-| CS4032, BC37057 | C# ve Visual Basic | Visual Studio 2017 |
-
 ## <a name="actions-that-remove-unnecessary-code"></a>Gereksiz kodu Kaldır eylemleri
 
 ### <a name="remove-unnecessary-usingsimports"></a>Gereksiz using deyimlerini/içeri aktarmaları Kaldır
 
-**Kaldırma gereksiz kullanımları/Imports** hızlı eylem kaldırır kullanılmayan `using` ve `Import` deyimleri geçerli dosya için.  Bu öğeyi seçin, kullanılmayan ad alanı içeri aktarmaları kaldırılır.
+**Kaldırma gereksiz kullanımları/Imports** hızlı eylem kaldırır kullanılmayan `using` ve `Import` deyimleri geçerli dosya için. Bu öğeyi seçin, kullanılmayan ad alanı içeri aktarmaları kaldırılır.
 
 |  Geçerli diller |  Desteklenen sürüm |
 |  -------------------- | ----------------  |
@@ -150,7 +112,7 @@ End Function
 
 ### <a name="remove-unnecessary-cast"></a>Gereksiz tür dönüştürmeyi Kaldır
 
-Bir tür dönüştürme gerektirmeyen başka bir türünü türüne, **gereksiz tür dönüştürmeyi Kaldır** gereksiz tür dönüştürmeyi hızlı eylem öğeyi kaldırır.
+Bir tür dönüştürme gerektirmeyen başka bir tür türüne, **gereksiz tür dönüştürmeyi Kaldır** gereksiz tür dönüştürmeyi hızlı eylem öğeyi kaldırır.
 
 ```csharp
 // before
@@ -496,7 +458,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Enterpolasyonlu dizeye Dönüştür
 
-[İlişkilendirilmiş dizeler](/dotnet/csharp/language-reference/keywords/interpolated-strings) dizeleri gömülü değişkenleri, benzer şekilde ifade etmek için kolay bir yoludur **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** yöntemi.  Bu hızlı eylem birleştirilmiş ya da kullanarak dizeleri olduğu durumları algılar **String.Format**, kullanım için bir aradeğerlendirme dizesinde değiştirir.
+[İlişkilendirilmiş dizeler](/dotnet/csharp/language-reference/keywords/interpolated-strings) dizeleri gömülü değişkenleri, benzer şekilde ifade etmek için kolay bir yoludur **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** yöntemi. Bu hızlı eylem birleştirilmiş ya da kullanarak dizeleri olduğu durumları algılar **String.Format**, kullanım için bir aradeğerlendirme dizesinde değiştirir.
 
 ```csharp
 // Before
@@ -528,7 +490,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 ### <a name="use-object-initializers"></a>Nesne başlatıcıları kullanın
 
-Bu hızlı eylem kullanmanızı sağlayan [nesne başlatıcılarda](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) tne oluşturucusu ve sahip ek atama deyimleri satırları çağırmak yerine.
+Bu hızlı eylem kullanmanızı sağlayan [nesne başlatıcılarda](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) yapıcıyı ve ek atama deyimleri satırları sahip olmak yerine.
 
 ```csharp
 // Before
@@ -923,7 +885,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Yöntem zaman uyumlu yapın
 
-Kullanırken `async` veya `Async` anahtar sözcüğü bir yöntem, bu, bu yöntem içinde beklenen `await` veya `Await` anahtar sözcüğü de kullanılır.  Bu durumda değilse, ancak hızlı eylem kaldırarak yöntem zaman uyumlu yaptığı görünür `async` veya `Async` anahtar sözcüğü ve dönüş türünü değiştirme. Kullanım **yöntem zaman uyumlu hale getirin** hızlı Eylemler menüsünden seçeneği.
+Kullanırken `async` veya `Async` anahtar sözcüğü bir yöntem, bu, bu yöntem içinde beklenen `await` veya `Await` anahtar sözcüğü de kullanılır. Bu durumda değilse, ancak hızlı eylem kaldırarak yöntem zaman uyumlu yaptığı görünür `async` veya `Async` anahtar sözcüğü ve dönüş türünü değiştirme. Kullanım **yöntem zaman uyumlu hale getirin** hızlı Eylemler menüsünden seçeneği.
 
 ```csharp
 // Before
@@ -958,6 +920,44 @@ End Function
 |  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
 | ------- | -------------------- | ----------------  |
 | CS1998, BC42356 | C# ve Visual Basic | Visual Studio 2015 Güncelleştirme 2 |
+
+### <a name="make-method-asynchronous"></a>Zaman uyumsuz yöntem yapın
+
+Kullanırken `await` veya `Await` anahtar sözcüğü bir yöntem içinde bu yöntem ile işaretlenmiş beklenmektedir `async` veya `Async` anahtar sözcüğü. Ancak, bu durumda değilse, hızlı bir eylem, zaman uyumsuz hale getirdiğini görüntülenir. Kullanım **yöntemi/işlev zaman uyumsuz hale getirin** hızlı Eylemler menüsünden seçeneği.
+
+```csharp
+// Before
+int MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+
+// Make method asynchronous
+
+// After
+async Task<int> MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+```
+
+```vb
+' Before
+Function MyAsyncMethod() as Integer
+    Return  Await Task.Run(...)
+End Function
+
+' Make method asynchronous
+
+' After
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return Await Task.Run(...)
+End Function
+```
+
+|  Hata Kimliği | Geçerli diller |  Desteklenen sürüm |
+| ------- | -------------------- | ----------------  |
+| CS4032, BC37057 | C# ve Visual Basic | Visual Studio 2017 |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

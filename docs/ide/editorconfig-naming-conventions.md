@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624436"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443590"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig için .NET adlandırma kuralları
 
@@ -88,11 +88,14 @@ Değiştiriciler adlandırma kuralı uygulamak istediğiniz simgeleri tanımlama
 
 Aşağıdaki listede, izin verilen değerler gösterilir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
 
-- soyut veya must_inherit
-- async
-- const
-- readonly
-- statik veya paylaşılan
+- `abstract` veya `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` veya `shared`
+
+   > [!NOTE]
+   > İçin bir adlandırma kuralı varsa `static` veya `shared` simgeler, ayrıca uygulanan `const` örtük olarak statik olduğundan semboller. İstemiyorsanız `static` uygulamak için adlandırma kuralı `const` sembolleri oluşturmak için ayrı bir adlandırma kuralı `const` semboller.
 
 `required_modifiers` İsteğe bağlı bir özelliktir. Adlandırma kuralınıza, bu özelliği atarsanız, tüm değiştiricilere için geçerli olacaktır.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Yönetilen Kod İçin Otomatik Kod Çözümlemesini Etkinleştirme ve Devre Dışı Bırakma'
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,23 +9,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6786d3f93c1ab7026c8a6bde25f5c43cb999e08a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3113143b07ccb6f765cd0cf1735b34be6e952c72
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919511"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443551"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Nasıl yapılır: etkinleştirme ve yönetilen kod için otomatik kod analizini devre dışı
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Nasıl yapılır: yönetilen kod için otomatik kod analizini devre
 
-Her bir yönetilen kod projesi derleme sonrası çalıştırmak için Kod Analizi yapılandırabilirsiniz. Farklı bir kod çözümleme özellikleri her yapı yapılandırması için ayarlayabilirsiniz.
+Yönetilen kod projesi, her yapıdan sonra çalıştırmak için Kod Analizi yapılandırabilirsiniz. Farklı kod analizi özelliklerini her derleme yapılandırması ayarlayın, örneğin, hata ayıklama ve yayın.
 
-## <a name="to-enable-or-disable-automatic-code-analysis"></a>Etkinleştirme veya devre dışı otomatik kod çözümleme
+## <a name="to-enable-or-disable-automatic-code-analysis"></a>Etkinleştirme veya devre dışı otomatik kod çözümlemesini
 
-1. İçinde **Çözüm Gezgini**projeye sağ tıklayın ve ardından **özellikleri**.
+1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.
 
-1. Proje Özellikleri iletişim kutusunda seçin **Kod Analizi**.
+1. Proje Özellikleri iletişim kutusunda seçin **Kod Analizi** sekmesi.
 
-1. Yapı türünde belirtin **yapılandırma** ve hedef platform **Platform**.
+1. İçinde derleme türünü belirtmeniz **yapılandırma** ve hedef platform **Platform**.
 
-1. Etkinleştirmek veya otomatik kod analizini devre dışı bırakmak için seçin veya temizleyin **etkinleştirmek Kod Analizi derlemede** onay kutusu.
+1. Etkinleştirmek veya otomatik kod analizini devre dışı bırakmak için seçin veya temizleyin **derlemede kod analizini etkinleştir** onay kutusu.
+
+> [!NOTE]
+> **Derlemede kod analizini etkinleştir** onay kutusu yalnızca statik kod analizi etkiler. Bu etkilemez [Roslyn kod Çözümleyicileri](roslyn-analyzers-overview.md), bir NuGet paketi olarak yüklü değilse derleme sırasında her zaman yürütün. Çözümleyici hataları temizlemek istiyorsanız **hata listesi**, seçerek geçerli tüm ihlalleri gizleyebilirsiniz **Çözümle** > **kod analizini Çalıştır ve etkin gösterme Sorunları** menü çubuğundaki. Daha fazla bilgi için [ihlallerini gösterme](use-roslyn-analyzers.md#suppress-violations).

@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029250"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443421"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Hızlı Başlangıç: Kullanımı, ilk C# konsol uygulaması oluşturmak için Visual Studio
 
@@ -39,9 +39,9 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
    ![Konsol uygulaması (.NET Core) proje şablonunu yeni proje iletişim kutusunda Visual Studio IDE](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu.
+     Görmüyorsanız **konsol uygulaması (.NET Core)** projesinin şablon **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu.
 
-   ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantısına tıklayın](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantıyı seçin](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
 
@@ -75,9 +75,9 @@ Tuşuna kadar konsol penceresini kapatmaz, böylece uygulamayı duraklatmak içi
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırın
 
-1. Tıklayın **HelloWorld** uygulamayı hata ayıklama modunda çalıştırmak için araç çubuğunda. (Ya da basabilirsiniz **F5**.)
+1. Seçin **HelloWorld** uygulamayı hata ayıklama modunda çalıştırmak için araç çubuğunda. (Ya da basabilirsiniz **F5**.)
 
-   ![Araç çubuğundan programı çalıştırmak için Merhaba Dünya düğmesine tıklayın](../ide/media/csharp-console-hello-world-button.png)
+   ![Araç çubuğunda uygulamayı çalıştırmak için Hello World düğmesini seçin](../ide/media/csharp-console-hello-world-button.png)
 
 1. Uygulamanız konsol penceresinde görüntüleyin.
 
@@ -98,4 +98,4 @@ Tuşuna kadar konsol penceresini kapatmaz, böylece uygulamayı duraklatmak içi
 Bu hızlı başlangıcı tamamladığınızda Tebrikler! C# ve Visual Studio IDE hakkında biraz öğrenilen umuyoruz. Daha fazla bilgi için şu öğretici ile devam edin.
 
 > [!div class="nextstepaction"]
-> [C# Eğitmenleri](/dotnet/csharp/tutorials/)
+> [Visual Studio'da C# konsol uygulaması ile çalışmaya başlama](tutorial-csharp-console.md)

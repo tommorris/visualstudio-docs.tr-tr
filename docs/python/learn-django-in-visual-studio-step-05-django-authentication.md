@@ -198,9 +198,9 @@ Aşağıdaki adımlar, kimlik doğrulaması akışı alıştırma ve söz konusu
 
 1. Tüm işiniz bittiğinde, sunucunun durdurun ve yeniden kaynak denetimi yaptığınız değişiklikleri kaydedin.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Soru: Amacı nedir {% crsf_token %} etiket görünür \<form\> öğeleri?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Soru: Amacı nedir {% csrf_token %} etiket görünür \<form\> öğeleri?
 
-Yanıt: `{% crsf_token %}` etiketi içeren Django'nın yerleşik [siteler arası istek sahteciliği (crsf) koruma](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django belgeleri). Genellikle, POST, PUT ve DELETE isteği gibi yöntemleri bir form içeren herhangi bir öğeye bu etiketi ekleyin. Şablon işleme işlevi (`render`) sonra gerekli korumayı ekler.
+Yanıt: `{% csrf_token %}` etiketi içeren Django'nın yerleşik [siteler arası istek sahteciliği (csrf) koruma](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django belgeleri). Genellikle, POST, PUT ve DELETE isteği gibi yöntemleri bir form içeren herhangi bir öğeye bu etiketi ekleyin. Şablon işleme işlevi (`render`) sonra gerekli korumayı ekler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
